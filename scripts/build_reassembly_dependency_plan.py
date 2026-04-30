@@ -154,6 +154,9 @@ def build_procurement_decisions(
 
         status = (row.get("status") or "").strip().lower()
         procurement_stage = (row.get("procurement_stage") or "").strip().lower()
+        delivery_status = (row.get("delivery_status") or "").strip().lower()
+        if status == "cancelled" or delivery_status == "not_required" or procurement_stage.startswith("not_required"):
+            continue
         if status in {"installed", "received", "credited"} or procurement_stage in {"received", "completed"}:
             continue
 

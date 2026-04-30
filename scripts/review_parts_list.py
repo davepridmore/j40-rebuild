@@ -45,7 +45,10 @@ def load_parts_rows() -> list[dict[str, str]]:
 def action_bucket(row: dict[str, str]) -> str:
     procurement_stage = (row.get("procurement_stage") or "").strip().lower()
     status = (row.get("status") or "").strip().lower()
+    delivery_status = (row.get("delivery_status") or "").strip().lower()
 
+    if status == "cancelled" or delivery_status == "not_required" or procurement_stage.startswith("not_required"):
+        return "cancelled_or_not_required"
     if status in {"installed", "received", "credited"} or procurement_stage in {"completed", "received"}:
         return "completed_or_received"
     if procurement_stage == "ordered_pending_delivery" or status == "ordered":
@@ -110,6 +113,8 @@ def build_overlap_rows(review_rows: list[dict[str, str]]) -> list[dict[str, str]
     for row in review_rows:
         group_id = row["overlap_group_id"]
         if not group_id:
+            continue
+        if row["action_bucket"] in {"completed_or_received", "cancelled_or_not_required"}:
             continue
         grouped[group_id].append(row)
         labels[group_id] = row["overlap_group_label"]

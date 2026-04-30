@@ -18,12 +18,16 @@
     activeWorkstreamId: data.workstreams && data.workstreams.length ? data.workstreams[0].id : "",
     photoOverrides: loadPhotoOverrides(),
     lightboxImageBase: null,
+    itemDetailRow: null,
     recategorizeOpen: false,
   };
 
   const imageRegistry = new Map();
+  const itemRegistry = new Map();
   let imageKeyCounter = 0;
+  let itemKeyCounter = 0;
   const lightbox = createLightbox();
+  const itemDetail = createItemDetail();
 
   if (generatedAtNode) {
     generatedAtNode.textContent = `Generated: ${formatDateTime(data.generated_at)}`;
@@ -37,26 +41,45 @@
       }
       state.activeView = nextView;
       tabButtons.forEach((node) => node.classList.toggle("is-active", node === button));
+      if (state.lightboxImageBase) {
+        closeLightbox();
+      }
+      if (state.itemDetailRow) {
+        closeItemDetail();
+      }
       render();
     });
   });
 
   root.addEventListener("click", (event) => {
     const imageTrigger = event.target.closest("[data-image-key]");
-    if (!imageTrigger) {
+    if (imageTrigger) {
+      const imageKey = imageTrigger.getAttribute("data-image-key");
+      if (!imageKey) {
+        return;
+      }
+      event.preventDefault();
+      openLightbox(imageKey);
       return;
     }
-    const imageKey = imageTrigger.getAttribute("data-image-key");
-    if (!imageKey) {
+
+    const itemTrigger = event.target.closest("[data-item-key]");
+    if (!itemTrigger) {
+      return;
+    }
+    const itemKey = itemTrigger.getAttribute("data-item-key");
+    if (!itemKey) {
       return;
     }
     event.preventDefault();
-    openLightbox(imageKey);
+    openItemDetail(itemKey);
   });
 
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && state.lightboxImageBase) {
       closeLightbox();
+    } else if (event.key === "Escape" && state.itemDetailRow) {
+      closeItemDetail();
     }
   });
 
@@ -537,11 +560,32 @@
     imageKeyCounter = 0;
   }
 
+  function resetItemRegistry() {
+    itemRegistry.clear();
+    itemKeyCounter = 0;
+  }
+
   function registerImage(baseMeta) {
     imageKeyCounter += 1;
     const imageKey = `img_${imageKeyCounter}`;
     imageRegistry.set(imageKey, baseMeta);
     return imageKey;
+  }
+
+  function registerItem(row) {
+    itemKeyCounter += 1;
+    const itemKey = `item_${itemKeyCounter}`;
+    itemRegistry.set(itemKey, row);
+    return itemKey;
+  }
+
+  function renderItemButton(row) {
+    const itemKey = registerItem(row);
+    return `
+      <button type="button" class="item-detail-btn" data-item-key="${escapeHtml(itemKey)}">
+        ${escapeHtml(row.item || "-")}
+      </button>
+    `;
   }
 
   function prepareImage(image, fallbackCaption) {
@@ -1151,7 +1195,7 @@
                           ${renderInventoryImageCell(row, row.item || "Part image")}
                           <td>${escapeHtml(row.priority)}</td>
                           <td>${escapeHtml(formatToken(row.workstream))}</td>
-                          <td>${escapeHtml(row.item)}</td>
+                          <td>${renderItemButton(row)}</td>
                           <td>${escapeHtml(formatToken(row.next_action))}</td>
                           <td>${statusChip(row.status)}</td>
                         </tr>
@@ -1495,7 +1539,7 @@
                               (row) => `
                                 <tr>
                                   ${renderInventoryImageCell(row, row.item || "Inventory image")}
-                                  <td>${escapeHtml(row.item)}</td>
+                                  <td>${renderItemButton(row)}</td>
                                   <td>${statusChip(row.status_group || "-")}</td>
                                   <td>${escapeHtml(formatToken(row.source || "-"))}</td>
                                   <td>${escapeHtml(formatToken(row.workstream || "-"))}</td>
@@ -1563,7 +1607,7 @@
                         <tr>
                           ${renderInventoryImageCell(row, row.item || "Part image")}
                           <td>${escapeHtml(row.priority)}</td>
-                          <td>${escapeHtml(row.item)}</td>
+                          <td>${renderItemButton(row)}</td>
                           <td>${escapeHtml(formatToken(row.workstream))}</td>
                           <td>${escapeHtml(formatToken(row.next_action))}</td>
                           <td>${escapeHtml(formatToken(row.procurement_stage))}</td>
@@ -1600,7 +1644,7 @@
                       (row) => `
                         <tr>
                           ${renderInventoryImageCell(row, row.item || "Part image")}
-                          <td>${escapeHtml(row.item)}</td>
+                          <td>${renderItemButton(row)}</td>
                           <td>${escapeHtml(formatToken(row.workstream))}</td>
                           <td>${statusChip(row.payment_status)}</td>
                           <td>${statusChip(row.delivery_status)}</td>
@@ -1666,7 +1710,7 @@
                       (row) => `
                         <tr>
                           ${renderInventoryImageCell(row, row.item || "Part image")}
-                          <td>${escapeHtml(row.item)}</td>
+                          <td>${renderItemButton(row)}</td>
                           <td>${escapeHtml(formatToken(row.workstream))}</td>
                           <td>${statusChip(row.status)}</td>
                           <td>${escapeHtml(formatToken(row.procurement_stage))}</td>
@@ -1706,7 +1750,7 @@
                         <tr>
                           ${renderInventoryImageCell(row, row.item || "Inventory image")}
                           <td>${escapeHtml(formatToken(row.supply_type))}</td>
-                          <td>${escapeHtml(row.item)}</td>
+                          <td>${renderItemButton(row)}</td>
                           <td>${escapeHtml(formatToken(row.source))}</td>
                           <td>${escapeHtml(formatToken(row.workstream || "-"))}</td>
                           <td>${escapeHtml(formatToken(row.status_detail || row.procurement_stage || "-"))}</td>
@@ -1745,7 +1789,7 @@
                         <tr>
                           ${renderInventoryImageCell(row, row.item || "Inventory image")}
                           <td>${escapeHtml(formatToken(row.supply_type))}</td>
-                          <td>${escapeHtml(row.item)}</td>
+                          <td>${renderItemButton(row)}</td>
                           <td>${escapeHtml(formatToken(row.source))}</td>
                           <td>${escapeHtml(formatToken(row.workstream || "-"))}</td>
                           <td>${escapeHtml(formatToken(row.procurement_stage || row.status_detail || "-"))}</td>
@@ -1782,7 +1826,7 @@
                         <tr>
                           ${renderInventoryImageCell(row, row.item || "Inventory image")}
                           <td>${escapeHtml(formatToken(row.supply_type))}</td>
-                          <td>${escapeHtml(row.item)}</td>
+                          <td>${renderItemButton(row)}</td>
                           <td>${escapeHtml(formatToken(row.source))}</td>
                           <td>${escapeHtml(formatToken(row.workstream || "-"))}</td>
                           <td>${escapeHtml(formatToken(row.status_detail || "received"))}</td>
@@ -1832,6 +1876,112 @@
           .join("")}
       </section>
     `;
+  }
+
+  function createItemDetail() {
+    const wrapper = document.createElement("div");
+    wrapper.className = "lightbox item-detail is-hidden";
+    wrapper.setAttribute("aria-hidden", "true");
+    wrapper.innerHTML = `
+      <div class="lightbox-backdrop" data-item-detail-close="1"></div>
+      <section class="item-detail-panel" role="dialog" aria-modal="true" aria-label="Item detail">
+        <button type="button" class="lightbox-close" data-item-detail-close="1" aria-label="Close item detail">×</button>
+        <div id="item-detail-media" class="item-detail-media"></div>
+        <aside class="item-detail-sidebar">
+          <h3 id="item-detail-title" class="section-title" style="margin-top:0;">Item Detail</h3>
+          <p id="item-detail-subtitle" class="small-muted"></p>
+          <dl id="item-detail-meta" class="meta-grid"></dl>
+          <p id="item-detail-notes" class="small-muted"></p>
+        </aside>
+      </section>
+    `;
+    document.body.appendChild(wrapper);
+    wrapper.addEventListener("click", (event) => {
+      if (event.target.closest("[data-item-detail-close]")) {
+        closeItemDetail();
+      }
+    });
+    return {
+      root: wrapper,
+      media: wrapper.querySelector("#item-detail-media"),
+      title: wrapper.querySelector("#item-detail-title"),
+      subtitle: wrapper.querySelector("#item-detail-subtitle"),
+      meta: wrapper.querySelector("#item-detail-meta"),
+      notes: wrapper.querySelector("#item-detail-notes"),
+    };
+  }
+
+  function itemAmountLabel(row) {
+    const amount = cleanString(row.amount);
+    if (!amount) {
+      return "";
+    }
+    return [amount, cleanString(row.currency)].filter(Boolean).join(" ");
+  }
+
+  function renderItemMetaRow(label, value, options = {}) {
+    const normalized = cleanString(value);
+    if (!normalized && !options.keepEmpty) {
+      return "";
+    }
+    const displayValue = normalized || "-";
+    return `<dt>${escapeHtml(label)}</dt><dd>${escapeHtml(displayValue)}</dd>`;
+  }
+
+  function renderItemDetail() {
+    const row = state.itemDetailRow;
+    if (!row) {
+      return;
+    }
+    const prepared = prepareImage(row.image || {}, row.item || "Item image");
+    itemDetail.title.textContent = cleanString(row.item) || "Item Detail";
+    itemDetail.subtitle.textContent = [
+      formatToken(row.supply_type || row.inventory_group || "part"),
+      formatToken(row.workstream || row.source || ""),
+    ].filter(Boolean).join(" · ");
+    itemDetail.media.innerHTML =
+      prepared.mediaType === "video"
+        ? `<video class="item-detail-image" controls preload="metadata" playsinline src="${escapeHtml(prepared.path)}"></video>`
+        : `<img class="item-detail-image" src="${escapeHtml(prepared.path)}" alt="${escapeHtml(prepared.caption)}">`;
+    itemDetail.meta.innerHTML = [
+      renderItemMetaRow("Status Group", formatToken(row.status_group || ""), { keepEmpty: true }),
+      renderItemMetaRow("Status", formatToken(row.status || row.status_detail || "")),
+      renderItemMetaRow("Procurement Stage", formatToken(row.procurement_stage || "")),
+      renderItemMetaRow("Payment", formatToken(row.payment_status || "")),
+      renderItemMetaRow("Delivery", formatToken(row.delivery_status || "")),
+      renderItemMetaRow("Expected", row.expected_delivery_date || ""),
+      renderItemMetaRow("Priority", row.priority || ""),
+      renderItemMetaRow("Next Action", formatToken(row.next_action || "")),
+      renderItemMetaRow("Source", [formatToken(row.source || ""), row.source_ref || row.entry_id || ""].filter(Boolean).join(" · ")),
+      renderItemMetaRow("Vendor", row.vendor || row.company || ""),
+      renderItemMetaRow("Amount", itemAmountLabel(row)),
+      renderItemMetaRow("Evidence", row.evidence_ref || ""),
+      renderItemMetaRow("Image Match", formatToken(prepared.effective.match_basis || "")),
+    ].join("");
+    itemDetail.notes.textContent = cleanString(row.notes) ? `Notes: ${cleanString(row.notes)}` : "";
+  }
+
+  function openItemDetail(itemKey) {
+    const row = itemRegistry.get(itemKey);
+    if (!row) {
+      return;
+    }
+    if (state.lightboxImageBase) {
+      closeLightbox();
+    }
+    state.itemDetailRow = row;
+    renderItemDetail();
+    itemDetail.root.classList.remove("is-hidden");
+    itemDetail.root.setAttribute("aria-hidden", "false");
+    document.body.classList.add("lightbox-open");
+  }
+
+  function closeItemDetail() {
+    state.itemDetailRow = null;
+    itemDetail.root.classList.add("is-hidden");
+    itemDetail.root.setAttribute("aria-hidden", "true");
+    itemDetail.media.innerHTML = "";
+    document.body.classList.remove("lightbox-open");
   }
 
   function createLightbox() {
@@ -2073,6 +2223,9 @@
     if (!baseMeta) {
       return;
     }
+    if (state.itemDetailRow) {
+      closeItemDetail();
+    }
     state.lightboxImageBase = baseMeta;
     state.recategorizeOpen = false;
     setLightboxStatus("", "info");
@@ -2241,6 +2394,7 @@
 
   function render() {
     resetImageRegistry();
+    resetItemRegistry();
     if (state.activeView === "workstreams") {
       renderWorkstreams();
       return;

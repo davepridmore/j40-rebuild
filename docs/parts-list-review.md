@@ -1,24 +1,23 @@
 # Parts List Review
 
-- Generated: 2026-05-01 01:05:44
-- Source: `data/manual/expenses.csv` (`bucket=parts`) -> 62 rows
+- Generated: 2026-05-01 01:41:29
+- Source: `data/manual/expenses.csv` (`bucket=parts`) -> 57 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
 
 ## Action Buckets
 
-- `buy_now`: 24
-- `completed_or_received`: 15
-- `deferred`: 7
+- `buy_now`: 21
+- `completed_or_received`: 18
+- `deferred`: 6
 - `next_phase`: 7
-- `ordered_waiting_arrival`: 5
-- `quote_decision_ready`: 1
-- `researching`: 3
+- `ordered_waiting_arrival`: 4
+- `researching`: 1
 
 ## Workstream Split
 
-- `electrical_reset`: 21
 - `mechanical_baseline`: 16
+- `electrical_reset`: 16
 - `body_chassis`: 14
 - `steering_brakes_suspension`: 5
 - `interior_weatherproofing`: 4
@@ -26,8 +25,8 @@
 
 ## Price Coverage
 
-- `has_confirmed_amount=yes`: 15
-- `has_confirmed_amount=no`: 47
+- `has_confirmed_amount=yes`: 11
+- `has_confirmed_amount=no`: 46
 
 ## Buy-Now / Quote-Ready Missing Price
 
@@ -40,9 +39,6 @@
 - `part_firewall_grommet_set_large_power` [electrical_reset] Additional firewall grommet set IDs 16/20/25 mm
 - `part_firewall_grommet_set_small_medium` [electrical_reset] Additional firewall grommet set IDs 6/8/10/12 mm
 - `part_horn_relay` [electrical_reset] Horn relay
-- `part_split_conduit_braided_sleeve_large` [electrical_reset] Split conduit / braided sleeve - Large
-- `part_split_conduit_braided_sleeve_medium` [electrical_reset] Split conduit / braided sleeve - Medium
-- `part_split_conduit_braided_sleeve_small` [electrical_reset] Split conduit / braided sleeve - Small
 - `part_star_washers` [electrical_reset] Star washers (bite into metal)
 - `part_mech_accessory_belt_set` [mechanical_baseline] Accessory belt set
 - `part_mech_distributor_cap_rotor_tuneup` [mechanical_baseline] Distributor cap rotor and ignition tune-up consumables
@@ -58,13 +54,11 @@
 
 ## Buy-Now / Quote-Ready With Confirmed Price
 
-- `quote_pet_braided_sleeving` [electrical_reset] PET expandable braided sleeving (100ft 1/4 inch) (7414)
+- None
 
 ## Overlap Groups
 
 - `floor_finish_stack` (5 rows): Floor/interior finish stack [action buckets: buy_now|deferred|next_phase]
-- `grommet_options` (4 rows): Grommet options [action buckets: buy_now|completed_or_received|deferred]
+- `grommet_options` (3 rows): Grommet options [action buckets: buy_now|deferred]
 - `primer_system_stack` (5 rows): Primer system stack [action buckets: buy_now|next_phase|ordered_waiting_arrival]
-- `switch_options` (5 rows): Switch inventory [action buckets: buy_now|completed_or_received|deferred|next_phase|ordered_waiting_arrival]
-- `wire_sleeving_options` (6 rows): Wire sleeving options [action buckets: buy_now|completed_or_received|quote_decision_ready]
-- `wiring_kit_options` (4 rows): Wiring kit options [action buckets: completed_or_received|deferred|researching]
+- `switch_options` (3 rows): Switch inventory [action buckets: buy_now|deferred|next_phase]

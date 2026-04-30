@@ -103,12 +103,12 @@ def update_build_plan(workbook) -> None:
         [
             "work_package",
             "WP04C",
-            "Suspension Setup: OME Dampers + Local Springs",
+            "Suspension Setup: Ironman Foamcell Ordered Kit",
             "steering_brakes_suspension",
             "queued",
             "WP01B",
-            "Local front/rear leaf packs and OME dampers installed and aligned.",
-            "Use local leaf springs for cost and serviceability; retain OME damping and bushing/hardware refresh.",
+            "Ironman Foamcell kit received, contents-checked, installed, and aligned.",
+            "Track main kit shipment plus separate front 24635FE damper shipment; no alternate suspension buys.",
         ]
     )
 
@@ -137,6 +137,9 @@ def update_build_plan(workbook) -> None:
 
 
 def update_procurement_pass2(workbook) -> None:
+    if "Procurement_Pass2" not in workbook.sheetnames:
+        return
+
     ws = workbook["Procurement_Pass2"]
     headers = [ws.cell(1, c).value for c in range(1, 12)]
     rows = []
@@ -150,52 +153,38 @@ def update_procurement_pass2(workbook) -> None:
     def upsert(record: list[object]) -> None:
         by_id[str(record[0])] = record
 
-    # Activate OME shock path.
-    upsert(
-        [
-            "part_old_man_emu_shocks",
-            "steering_brakes_suspension",
-            "Old Man Emu Nitrocharger shocks (front + rear)",
-            "research_compare_then_select",
-            "local_4x4_or_arb",
-            "pre_tub_refit",
-            "lock_vendor_then_buy_for_reassembly",
-            "planned_upgrade_now",
-            "basket_suspension_refit_bundle",
-            "Use ARB/OME dealer or trusted local 4x4 suspension source.",
-            "User decision: include OME dampers in current build phase before tub refit.",
-        ]
-    )
+    for retired_id in {"part_local_leaf_springs_front", "part_local_leaf_springs_rear"}:
+        by_id.pop(retired_id, None)
 
-    # New local spring + tub mount interface rows.
+    # Track the ordered Ironman kit as two shipments.
     upsert(
         [
-            "part_local_leaf_springs_front",
+            "part_ironman_foamcell_suspension_kit",
             "steering_brakes_suspension",
-            "Local front leaf spring pack",
-            "new_item",
-            "local_suspension_workshop",
-            "pre_tub_refit",
-            "measure_then_order_local",
-            "local_bundle_buy",
-            "basket_suspension_refit_bundle",
-            "Use local spring maker with load/ride-height brief and bushing compatibility check.",
-            "Chosen for cost control and local serviceability while keeping OME dampers.",
+            "Ironman Foamcell suspension kit - main shipment",
+            "track_ordered_delivery",
+            "import_or_specialty",
+            "in_flight_now",
+            "track_in_flight_order",
+            "delivery_tracking",
+            "basket_in_flight_tracking",
+            "Track supplier shipment; do not rebuy suspension alternatives.",
+            "Ordered 2026-05-01 for PKR 575000 after discount; front dampers tracked separately.",
         ]
     )
     upsert(
         [
-            "part_local_leaf_springs_rear",
+            "part_ironman_front_dampers_separate_shipment",
             "steering_brakes_suspension",
-            "Local rear leaf spring pack",
-            "new_item",
-            "local_suspension_workshop",
-            "pre_tub_refit",
-            "measure_then_order_local",
-            "local_bundle_buy",
-            "basket_suspension_refit_bundle",
-            "Use local spring maker with load/ride-height brief and anti-inversion compatibility check.",
-            "Chosen for cost control and local serviceability while keeping OME dampers.",
+            "Ironman Foamcell front damper pair - separate shipment (24635FE x2)",
+            "track_ordered_delivery",
+            "import_or_specialty",
+            "in_flight_now",
+            "track_in_flight_order",
+            "delivery_tracking",
+            "basket_in_flight_tracking",
+            "Track separate front-damper shipment; amount included in main kit total.",
+            "Verify 24635FE x2 on receipt before closing suspension procurement.",
         ]
     )
     upsert(
@@ -274,6 +263,9 @@ def update_procurement_pass2(workbook) -> None:
 
 
 def update_parts_estimates(workbook) -> None:
+    if "Parts_Estimates" not in workbook.sheetnames:
+        return
+
     ws = workbook["Parts_Estimates"]
     header = [ws.cell(1, c).value for c in range(1, 9)]
     rows = []
@@ -282,11 +274,11 @@ def update_parts_estimates(workbook) -> None:
         if any(v not in (None, "") for v in vals):
             rows.append(vals)
 
-    # Remove old all-in OME kit line to avoid double counting.
+    # Remove superseded suspension estimate lines to avoid double counting.
     filtered = []
     for row in rows:
         item = str(row[2] or "").strip().lower()
-        if item == "old man emu suspension kit":
+        if any(token in item for token in {"old man emu", "local fabricated leaf springs", "nitrocharger"}):
             continue
         filtered.append(row)
     rows = filtered
@@ -310,24 +302,12 @@ def update_parts_estimates(workbook) -> None:
     upsert_by_item(
         [
             "Suspension",
-            "Dampers",
-            "Old Man Emu Nitrocharger shocks (front + rear set)",
-            "1 set",
-            "ARB / OME supplier",
-            "110000-220000",
-            "170000",
-            "High",
-        ]
-    )
-    upsert_by_item(
-        [
-            "Suspension",
-            "Leaf Springs",
-            "Local fabricated leaf springs (front + rear)",
-            "1 set",
-            "Local spring maker / suspension workshop",
-            "70000-180000",
-            "120000",
+            "Ordered Kit",
+            "Ironman Foamcell suspension kit",
+            "1 kit",
+            "Ironman 4x4 supplier",
+            "575000",
+            "575000",
             "High",
         ]
     )
@@ -368,26 +348,24 @@ def update_parts_estimates(workbook) -> None:
 
 
 def update_suspension_sheet(workbook) -> None:
+    if "Suspension" not in workbook.sheetnames:
+        return
+
     ws = workbook["Suspension"]
-    ws.cell(2, 1).value = "Front Leaf Springs"
-    ws.cell(2, 2).value = "LOCAL-FJ40-FRONT-LEAF"
-    ws.cell(2, 3).value = 2
-    ws.cell(2, 4).value = "Local fabricated pack; tune ride height after tub refit trial fit."
+    for row_idx in range(2, 12):
+        for col_idx in range(1, 5):
+            ws.cell(row_idx, col_idx).value = None
 
-    ws.cell(3, 1).value = "Rear Leaf Springs"
-    ws.cell(3, 2).value = "LOCAL-FJ40-REAR-LEAF"
-    ws.cell(3, 3).value = 2
-    ws.cell(3, 4).value = "Local fabricated pack; tuned for load and anti-wrap behavior."
-
-    ws.cell(4, 1).value = "Front Shocks"
-    ws.cell(4, 2).value = "OME-60097"
-    ws.cell(4, 3).value = 2
-    ws.cell(4, 4).value = "Old Man Emu Nitrocharger Sport front shocks."
-
-    ws.cell(5, 1).value = "Rear Shocks"
-    ws.cell(5, 2).value = "OME-63064"
-    ws.cell(5, 3).value = 2
-    ws.cell(5, 4).value = "Old Man Emu Nitrocharger Sport rear shocks."
+    rows = [
+        ("Kit", "IRONMAN-FOAMCELL", 1, "Ordered kit; main shipment tracked separately from front dampers."),
+        ("Front Dampers", "24635FE", 2, "Separate shipment; verify both units on receipt."),
+        ("Rear Dampers", "24636FE", 2, "Verify part numbers during main shipment content check."),
+        ("Front Leaf Springs", "TOY001B", 2, "Verify spring orientation and center pins before install."),
+        ("Rear Leaf Springs", "TOY002B", 2, "Verify spring orientation and final ride height after settling."),
+    ]
+    for offset, row in enumerate(rows, start=2):
+        for col_idx, value in enumerate(row, start=1):
+            ws.cell(offset, col_idx).value = value
 
 
 def write_tub_off_refit_plan_sheet(workbook) -> None:
@@ -398,7 +376,7 @@ def write_tub_off_refit_plan_sheet(workbook) -> None:
 
     ws.append(["Tub-Off To Refit Control Plan"])
     ws.append(["Generated", datetime.now().isoformat(timespec="seconds")])
-    ws.append(["Intent", "Control welding + engine-access service + correct tub reattachment + OME dampers with local spring packs."])
+    ws.append(["Intent", "Control welding + engine-access service + correct tub reattachment + ordered Ironman Foamcell suspension kit."])
     ws.append([])
     ws.append(
         [
@@ -458,11 +436,11 @@ def write_tub_off_refit_plan_sheet(workbook) -> None:
         [
             "TO5",
             "steering_brakes_suspension",
-            "Suspension install path: OME dampers + local leaf packs",
+            "Suspension install path: ordered Ironman Foamcell kit",
             "TO3",
             "Validate spring arch, shackle angle, pinion/caster behavior after trial load.",
-            "OME shocks, local front/rear springs, bushings, U-bolts, shims",
-            "Do not final-torque suspension until ride-height and alignment checks pass.",
+            "Ironman main kit shipment; separate front damper shipment (24635FE x2)",
+            "Do not final-torque suspension until both shipments are received, contents-checked, and ride-height/alignment checks pass.",
             "Suspension geometry check signed off.",
         ],
         [
@@ -508,15 +486,15 @@ def write_report(path: Path) -> None:
 - Keep welding scope separate, but lock interface control now.
 - During tub-off, run a focused engine-access inspection and buy condition-based parts only.
 - Before tub goes back, complete mount-point mapping, mount repairs, and trial fit using correct rubbers/hardware/shims.
-- Suspension path is now fixed to: OME dampers plus local front/rear leaf spring packs.
+- Suspension path is now fixed to: ordered Ironman Foamcell kit, with front dampers in a separate shipment.
 
 ## Key Procurement Adds
 
 - Body-to-chassis mount rubber kit
 - Body mount hardware and captive-nut repair provision
 - Body mount shim/spacer alignment pack
-- Local front and rear leaf spring packs
-- OME Nitrocharger shock set (activated from deferred state)
+- Ironman Foamcell suspension kit main shipment
+- Ironman Foamcell front damper pair (`24635FE` x2), separate shipment
 - Gearbox top-cover service items (condition-based)
 
 ## Gates

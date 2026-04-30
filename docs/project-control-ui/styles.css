@@ -389,6 +389,24 @@ th {
   font-size: 0.68rem;
 }
 
+.item-detail-btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--accent-2);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  line-height: 1.35;
+  padding: 0;
+  text-align: left;
+}
+
+.item-detail-btn:hover,
+.item-detail-btn:focus-visible {
+  text-decoration: underline;
+}
+
 .table-wrap {
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -471,6 +489,40 @@ code {
 }
 
 .lightbox-sidebar {
+  background: #f7f2e8;
+  border-left: 1px solid var(--line);
+  padding: 0.85rem;
+  overflow: auto;
+}
+
+.item-detail-panel {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.8fr);
+  width: min(1120px, 96vw);
+  max-height: 94vh;
+  background: var(--surface);
+  border: 1px solid #bfb5a5;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.item-detail-media {
+  background: #171f1d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+}
+
+.item-detail-image {
+  display: block;
+  max-width: 100%;
+  max-height: 94vh;
+  object-fit: contain;
+}
+
+.item-detail-sidebar {
   background: #f7f2e8;
   border-left: 1px solid var(--line);
   padding: 0.85rem;
@@ -600,7 +652,13 @@ code {
     max-height: 96vh;
   }
 
-  .lightbox-sidebar {
+  .item-detail-panel {
+    grid-template-columns: 1fr;
+    max-height: 96vh;
+  }
+
+  .lightbox-sidebar,
+  .item-detail-sidebar {
     border-left: 0;
     border-top: 1px solid var(--line);
   }

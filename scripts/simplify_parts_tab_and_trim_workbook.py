@@ -15,8 +15,6 @@ ACTIVE_DECISIONS = {
     "measure_then_buy_with_trial_fit",
     "grade_spec_then_buy",
     "prepare_before_trial_fit",
-    "measure_then_order_local",
-    "lock_vendor_then_buy_for_reassembly",
     "bundle_local_toyota_buy_after_inspection",
     "inspect_then_local_decide",
     "track_in_flight_order",
@@ -24,7 +22,6 @@ ACTIVE_DECISIONS = {
 
 LEGACY_PLANNED_ITEMS = [
     ("Carpets/Mats", "post_baseline_only", "defer_until_scope_review", "Legacy planned interior item retained for visibility."),
-    ("shackle reversal", "post_baseline_only", "defer_until_scope_review", "Legacy planned suspension option retained for visibility."),
     ("Electrical power steering", "pre_tub_refit", "plan_and_buy_when_ready", "Legacy planned item retained; EPS path remains in scope."),
     ("Steering bushings", "post_tub_off_inspection", "inspect_then_local_decide", "Legacy planned steering service item retained for visibility."),
     ("Hidden evaporator/heater/defrost unit, compact Mini-size", "post_baseline_only", "defer_until_scope_review", "Legacy planned HVAC stack item retained for visibility."),

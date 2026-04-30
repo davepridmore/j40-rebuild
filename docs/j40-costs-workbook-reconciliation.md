@@ -1,25 +1,24 @@
 # J40 Costs Workbook Reconciliation
 
-- Generated: 2026-05-01 01:05:31
+- Generated: 2026-05-01 01:39:47
 - Workbook: `/Users/davidpridmore/Documents/J40_Costs.xlsx`
-- Extracted rows: 285
-- Line-item rows: 177
-- Section-header rows: 108
+- Extracted rows: 280
+- Line-item rows: 176
+- Section-header rows: 104
 - Workbook rows CSV: `data/manual/j40_costs_workbook_rows.csv`
 - Reconciliation CSV: `data/manual/j40_costs_expenses_reconciliation.csv`
 
 ## Extracted Rows By Sheet
 
-- `Parts`: 238
+- `Parts`: 233
 - `Tools`: 47
 
 ## Match Status
 
-- `matched_exact_item`: 21
-- `matched_exact_item_vendor`: 2
-- `matched_fuzzy`: 1
-- `no_match`: 152
-- `not_applicable`: 109
+- `matched_exact_item`: 20
+- `matched_exact_item_vendor`: 4
+- `no_match`: 151
+- `not_applicable`: 105
 
 ## Priority Workbook Rows Still Unmatched
 

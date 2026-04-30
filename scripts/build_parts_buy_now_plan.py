@@ -30,9 +30,9 @@ class OverlapDecision:
 OVERLAP_DECISIONS: tuple[OverlapDecision, ...] = (
     OverlapDecision(
         group_id="wiring_kit_options",
-        chosen_entries=("quote_hot_rod_wiring",),
+        chosen_entries=(),
         deferred_entries=("quote_wiring_harness", "quote_universal_21_circuit_kit", "part_wiring_kit"),
-        rationale="Hot-rod path is already installed per user update; keep alternatives deferred unless rewiring scope reopens.",
+        rationale="Harness and hot-rod wiring quote paths were dropped; wiring is being handled as separate stock and connector work.",
     ),
     OverlapDecision(
         group_id="grommet_options",
@@ -46,19 +46,20 @@ OVERLAP_DECISIONS: tuple[OverlapDecision, ...] = (
     ),
     OverlapDecision(
         group_id="wire_sleeving_options",
-        chosen_entries=("quote_pet_braided_sleeving", "part_cable_sleeve_protection"),
-        deferred_entries=(
+        chosen_entries=(
+            "part_cable_sleeve_protection",
             "part_split_conduit_braided_sleeve_small",
             "part_split_conduit_braided_sleeve_medium",
             "part_split_conduit_braided_sleeve_large",
         ),
-        rationale="Use braided sleeving as the primary finish path; keep already-received sleeves as stock.",
+        deferred_entries=("quote_pet_braided_sleeving",),
+        rationale="Workbook inventory already shows sleeve stock received/paid; suppress the PET quote unless a physical count shows a shortage.",
     ),
     OverlapDecision(
         group_id="switch_options",
-        chosen_entries=("part_horn_relay", "part_h4_ceramic_headlight_connector_high"),
+        chosen_entries=("part_horn_relay",),
         deferred_entries=("part_spotlight_switch", "part_toggle_switch", "part_winch_switch"),
-        rationale="Prioritize baseline safety/lighting electricals; defer optional accessory controls.",
+        rationale="Prioritize baseline safety electricals; H4 connectors are already complete and optional accessory controls stay deferred.",
     ),
     OverlapDecision(
         group_id="floor_finish_stack",
@@ -202,7 +203,10 @@ def write_markdown(resolution_rows: list[dict[str, str]], buy_now_rows: list[dic
     lines.append("## Overlap Decisions Applied")
     lines.append("")
     for row in resolution_rows:
-        lines.append(f"- `{row['overlap_group_id']}`: keep `{row['chosen_entries'] or '-'}`; defer `{row['deferred_entries'] or '-'}`")
+        lines.append(
+            f"- `{row['overlap_group_id']}`: keep `{row['chosen_entries'] or 'none'}`; "
+            f"defer `{row['deferred_entries'] or 'none'}`"
+        )
     lines.append("")
     lines.append("## Immediate Actions")
     lines.append("")

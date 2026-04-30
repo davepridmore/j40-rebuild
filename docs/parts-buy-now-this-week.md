@@ -1,35 +1,32 @@
 # Parts Buy-Now Plan (This Week)
 
-- Generated: 2026-05-01 01:05:44
+- Generated: 2026-05-01 01:42:17
 - Source ledger: `data/manual/expenses.csv` (`bucket=parts`)
 - Overlap resolution table: `data/manual/parts_overlap_resolution.csv`
 - This-week list: `data/manual/parts_buy_now_this_week.csv`
 
 ## This-Week Counts
 
-- Rows in this-week list: 27
+- Rows in this-week list: 25
 - `confirm_price_then_order`: 21
-- `order_from_selected_quote`: 1
-- `track_delivery`: 5
+- `track_delivery`: 4
 
 ## Priority Split
 
-- `P0`: 14
+- `P0`: 12
 - `P1`: 13
 
 ## Overlap Decisions Applied
 
-- `wiring_kit_options`: keep `quote_hot_rod_wiring`; defer `quote_wiring_harness|quote_universal_21_circuit_kit|part_wiring_kit`
+- `wiring_kit_options`: keep `none`; defer `none`
 - `grommet_options`: keep `part_rubber_grommet_set|part_firewall_grommet_set_small_medium|part_firewall_grommet_set_large_power`; defer `quote_rubber_grommet_set_chat`
-- `wire_sleeving_options`: keep `quote_pet_braided_sleeving|part_cable_sleeve_protection`; defer `part_split_conduit_braided_sleeve_small|part_split_conduit_braided_sleeve_medium|part_split_conduit_braided_sleeve_large`
-- `switch_options`: keep `part_horn_relay|part_h4_ceramic_headlight_connector_high`; defer `part_spotlight_switch|part_winch_switch`
+- `wire_sleeving_options`: keep `part_cable_sleeve_protection|part_split_conduit_braided_sleeve_small|part_split_conduit_braided_sleeve_medium|part_split_conduit_braided_sleeve_large`; defer `none`
+- `switch_options`: keep `part_horn_relay`; defer `part_spotlight_switch|part_winch_switch`
 - `floor_finish_stack`: keep `part_bedliner_sprays`; defer `part_bed_lining|part_sound_dampening_sheets|part_foam|part_carpet`
-- `primer_system_stack`: keep `part_primer|part_self_etching_primer|part_epoxy_primer|part_seam_sealer|part_wax_and_grease_remover`; defer `-`
+- `primer_system_stack`: keep `part_primer|part_self_etching_primer|part_epoxy_primer|part_seam_sealer|part_wax_and_grease_remover`; defer `none`
 
 ## Immediate Actions
 
-- `order_from_selected_quote` (1):
-  - `quote_pet_braided_sleeving` [P0] PET expandable braided sleeving (100ft 1/4 inch) (price: 7414 PKR; order_date: 2026-03-18; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
 - `confirm_price_then_order` (21):
   - `part_bedliner_sprays` [P0] Bedliner sprays (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_body_mount_hardware_kit` [P0] Body mount hardware kit bolts sleeves washers (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
@@ -52,9 +49,8 @@
   - `part_mech_spark_plugs_set` [P1] Spark plugs set (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_vacuum_hose_refresh` [P1] Vacuum hose refresh kit (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_brake_flex_hose_set` [P1] Brake flexible hose set front and rear (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
-- `track_delivery` (5):
+- `track_delivery` (4):
   - `part_nylon_fiber_wool_polishing_disc_sets_2x` [P0] Nylon fiber polishing disc and wool buffing polishing disc set (3pcs) plus drill adapter and grinder nut for metals x2 (price: 2188 PKR; order_date: 2026-04-24; delivery_eta: 2026-04-29; delivery_status: pending_delivery; payment_status: paid)
   - `part_seam_sealer` [P0] Seam sealer (price: 7696 PKR; order_date: 2026-03-21; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: unknown)
-  - `part_h4_ceramic_headlight_connector_high` [P0] H4 Ceramic Headlight Connector - H4 - High (price: 1350 PKR; order_date: 2026-03-21; delivery_eta: delivery_date_tbd; delivery_status: needs_confirmation; payment_status: unknown)
+  - `part_ironman_foamcell_suspension_kit` [P1] Ironman Foamcell suspension kit - main shipment (front dampers separate) (price: 575000 PKR; order_date: 2026-05-01; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: unknown)
   - `part_ironman_front_dampers_separate_shipment` [P1] Ironman Foamcell front damper pair - separate shipment (24635FE x2) (price: price_tbd; order_date: 2026-05-01; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: unknown)
-  - `part_old_man_emu_shocks` [P1] Ironman Foamcell suspension kit - main shipment (front dampers separate) (price: 575000 PKR; order_date: 2026-05-01; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: unknown)

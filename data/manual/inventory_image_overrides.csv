@@ -7,3 +7,29 @@ workbook_tools,row_50,deliverables/selling_site_images/images/manual_overrides/w
 workbook_tools,row_51,deliverables/selling_site_images/images/manual_overrides/workbook_tools_row_51_workpro_flap_60.webp,WORKPRO 125mm 60 grit flap discs · reference image,manual_override_flap_discs_60
 workbook_tools,row_52,deliverables/selling_site_images/images/manual_overrides/workbook_tools_row_52_edon_mig_270.jpg,EDON Expert MIG 270 · reference image,manual_override_mig_welder
 expenses,tool_breaker_bar,deliverables/selling_site_images/images/manual_overrides/tool_breaker_bar_tekton_24in.jpg,1/2 inch 24 inch breaker bar · reference image,manual_override_breaker_bar
+workbook_parts,row_36,deliverables/selling_site_images/images/workbook_parts_schneider_harmony_22mm_2_position_mainta_a8e361b962f9.jpg,Schneider Harmony 22mm 2-position maintained selector switch x4 - reference image,current_workbook_row_override_2_way_switch
+workbook_parts,row_37,deliverables/selling_site_images/images/workbook_parts_schneider_harmony_xb4_22mm_3_position_ma_ce318b190faa.jpg,Schneider Harmony XB4 22mm 3-position maintained selector switch x3 - reference image,current_workbook_row_override_3_way_switch
+workbook_parts,row_70,photos/20260410_230522.jpg,Deutsch DT connector inventory - local photo evidence,replace_incorrect_deutsch_listing_image
+workbook_parts,row_77,deliverables/selling_site_images/images/workbook_parts_https_uni_core_pk_product_cables_wires_f_d1f4b967169f.jpg,"Automotive flexible wire 2.5 mm2 blue, 90m roll - equivalent product image",wire_inventory_image_override
+workbook_parts,row_78,deliverables/selling_site_images/images/workbook_parts_https_uni_core_pk_product_cables_wires_f_58de188bbf6d.jpg,"Automotive flexible wire 1.5 mm2 yellow, 90m roll - equivalent product image",wire_inventory_image_override
+workbook_parts,row_79,deliverables/selling_site_images/images/workbook_parts_https_uni_core_pk_product_flexible_cable_9f16adde6f5b.jpg,"Automotive flexible wire 1.0 mm2 white, 90m roll - equivalent product image",wire_inventory_image_override
+expenses,part_electric_wires,photos/20260424_part_electric_wires_aliexpress_3070027285627489.jpg,"4 AWG red/black silicone cable, 1m each - order evidence image",exact_order_evidence
+expenses,part_cable_sleeve_protection,photos/20260410_031722.jpg,Braided sleeve and wiring inventory - local photo evidence,mechanical_inventory_photo_attachment
+expenses,part_split_conduit_braided_sleeve_small,photos/20260410_031722.jpg,Small braided sleeve inventory - local photo evidence,covered_by_workbook_inventory
+expenses,part_split_conduit_braided_sleeve_medium,photos/20260410_031722.jpg,Medium braided sleeve inventory - local photo evidence,covered_by_workbook_inventory
+expenses,part_split_conduit_braided_sleeve_large,photos/20260410_031722.jpg,Large braided sleeve inventory - local photo evidence,covered_by_workbook_inventory
+expenses,part_h4_ceramic_headlight_connector_high,photos/20260424_part_h4_ceramic_headlight_connector_high_autoxpert_order_1599.jpg,H4 ceramic headlight connectors x4 received - order evidence image,h4_received_complete
+expenses,part_mech_engine_oil_filter_service,photos/20260420_201801_gp_NvXIaGBw.jpg,Mechanical service parts packaging - filter/service reference,attach_mechanical_inventory_image
+expenses,part_mech_air_filter,photos/20260420_201801_gp_NvXIaGBw.jpg,Mechanical service parts packaging - air/filter reference,attach_mechanical_inventory_image
+expenses,part_mech_fuel_filter,photos/20260420_201801_gp_NvXIaGBw.jpg,Mechanical service parts packaging - fuel/filter reference,attach_mechanical_inventory_image
+expenses,part_mech_accessory_belt_set,photos/20260430_215957_gp_2iBbUagw.jpg,Accessory belt path - local mechanical inspection photo,attach_mechanical_inventory_image
+expenses,part_mech_radiator_hose_set,photos/20260430_220004_gp_C9oYiYmA.jpg,Radiator hose routing and clamps - local mechanical inspection photo,attach_mechanical_inventory_image
+expenses,part_mech_heater_hose_set,photos/20260430_220004_gp_C9oYiYmA.jpg,Heater/cooling hose routing - related local mechanical inspection photo,attach_mechanical_inventory_image
+expenses,part_mech_radiator_cap,photos/20260430_220004_gp_C9oYiYmA.jpg,Radiator support and hose area - related local mechanical inspection photo,attach_mechanical_inventory_image
+expenses,part_mech_vacuum_hose_refresh,photos/20260430_215957_gp_2iBbUagw.jpg,Engine bay hose routing - related local mechanical inspection photo,attach_mechanical_inventory_image
+expenses,part_mech_fuel_hose_and_clamps,photos/20260430_215957_gp_2iBbUagw.jpg,Engine bay hose routing - related local mechanical inspection photo,attach_mechanical_inventory_image
+expenses,part_mech_spark_plugs_set,photos/20260430_215957_gp_2iBbUagw.jpg,Engine bay service area - related local mechanical inspection photo,attach_mechanical_inventory_image
+expenses,part_mech_distributor_cap_rotor_tuneup,photos/20260430_215957_gp_2iBbUagw.jpg,Engine bay ignition service area - related local mechanical inspection photo,attach_mechanical_inventory_image
+expenses,part_mech_engine_mount_set,photos/20260430_215915_gp_ycQ395Gg.jpg,Engine/transmission mount area - related local mechanical inspection photo,attach_mechanical_inventory_image
+expenses,part_mech_clutch_master_slave_refresh,photos/20260430_215939_gp_EjZ7u1ow.jpg,Bellhousing and clutch linkage area - local mechanical inspection photo,attach_mechanical_inventory_image
+expenses,part_battery_purchase,photos/20260410_013927.jpg,Electrical system inventory photo - battery row needs exact battery photo when available,temporary_equivalent_until_battery_photo_added

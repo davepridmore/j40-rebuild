@@ -18,7 +18,14 @@ PRIORITY_ORDER = {"high": 0, "medium": 1, "low": 2}
 def load_goods_rows() -> list[dict[str, str]]:
     with EXPENSES_PATH.open(newline="", encoding="utf-8") as handle:
         rows = list(csv.DictReader(handle))
-    return [row for row in rows if (row.get("bucket", "").strip().lower() in GOODS_BUCKETS)]
+    return [
+        row
+        for row in rows
+        if (row.get("bucket", "").strip().lower() in GOODS_BUCKETS)
+        and (row.get("status", "").strip().lower() != "cancelled")
+        and (row.get("delivery_status", "").strip().lower() != "not_required")
+        and not (row.get("procurement_stage", "").strip().lower().startswith("not_required"))
+    ]
 
 
 def quoted_terms(*values: str) -> str:

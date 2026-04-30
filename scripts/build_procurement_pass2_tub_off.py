@@ -114,7 +114,7 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
             "Body chemistry stack should be bought as one bundle after rust map and weld scope are finalized.",
         )
 
-    if entry_id in {"quote_hot_rod_wiring", "quote_pet_braided_sleeving"}:
+    if entry_id == "quote_hot_rod_wiring":
         return (
             "scope_audit_before_order",
             "pre_order_audit",

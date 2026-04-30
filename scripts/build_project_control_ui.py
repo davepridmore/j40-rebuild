@@ -688,7 +688,7 @@ def normalize_media_stem(value: str) -> str:
         return ""
     candidate = candidate.split("?", 1)[0].split("#", 1)[0]
     stem = Path(candidate).stem or candidate
-    stem = re.sub(r"_gp_[a-zA-Z0-9]+$", "", stem)
+    stem = re.sub(r"_gp_[a-zA-Z0-9]+(?:_\d+)?$", "", stem)
     stem = re.sub(r"_exported_\d+$", "", stem)
     return stem.lower()
 
@@ -2240,10 +2240,47 @@ def inventory_reference_token_is_low_signal(token: str) -> bool:
 
 CHASSIS_RUBBERS_IMAGE_SIGNAL_TOKENS: tuple[str, ...] = (
     "body_mount",
-    "rubber",
     "shim",
     "sleeve",
     "isolator",
+)
+
+CHASSIS_RUBBERS_SPECIFIC_COMPONENTS: set[str] = {
+    "body_mount_and_crossmember_detail",
+    "floor_seam_and_body_mount_rust",
+    "frame_rail_body_mount_and_hard_line_detail",
+}
+
+CHASSIS_FIXING_SPECIFIC_COMPONENTS: set[str] = {
+    "body_mount_and_crossmember_detail",
+    "engine_bay_chassis_interface",
+    "frame_and_mount_points",
+    "frame_floor_underside_and_lines",
+    "frame_rail_body_mount_and_hard_line_detail",
+    "front_frame_horns_bumper_and_radiator_support",
+    "full_chassis_frame_overview",
+    "rear_axle_and_leaf_springs",
+    "rear_axle_spring_hanger_and_crossmember",
+    "rear_frame_crossmember_and_mounts",
+    "rear_shock_and_crossmember_view",
+    "steering_and_suspension_linkages",
+    "suspension_or_linkage_mount",
+    "transmission_crossmember_and_driveline_mounts",
+}
+
+CHASSIS_FIXING_IMAGE_SIGNAL_TOKENS: tuple[str, ...] = (
+    "body_mount",
+    "bracket",
+    "chassis",
+    "crossmember",
+    "frame",
+    "frame_horn",
+    "hanger",
+    "hard_line",
+    "leaf_spring",
+    "mount",
+    "rail",
+    "spring_hanger",
 )
 
 EPS_IMAGE_SIGNAL_TOKENS: tuple[str, ...] = (
@@ -2282,13 +2319,32 @@ def text_has_any(text: str, tokens: tuple[str, ...]) -> bool:
     return any(token in text for token in tokens)
 
 
+def is_chassis_fixing_photo(row: dict[str, str], text_blob: str) -> bool:
+    if norm(row.get("component_group")) != "chassis_underside":
+        return False
+    specific_component = norm(row.get("specific_component"))
+    if specific_component in CHASSIS_FIXING_SPECIFIC_COMPONENTS:
+        return True
+    return text_has_any(text_blob, CHASSIS_FIXING_IMAGE_SIGNAL_TOKENS)
+
+
+def is_chassis_rubbers_photo(row: dict[str, str], text_blob: str) -> bool:
+    specific_component = norm(row.get("specific_component"))
+    if specific_component in CHASSIS_RUBBERS_SPECIFIC_COMPONENTS:
+        return True
+    return text_has_any(text_blob, CHASSIS_RUBBERS_IMAGE_SIGNAL_TOKENS)
+
+
 def workstream_row_is_excluded(workstream_id: str, row: dict[str, str], text_blob: str) -> bool:
     workstream_key = norm(workstream_id)
     if workstream_key == "stripdown_cataloguing" and is_dashboard_workstream_photo(row):
         return True
 
+    if workstream_key == "chassis_fixing":
+        return not is_chassis_fixing_photo(row, text_blob)
+
     if workstream_key == "chassis_rubbers":
-        return not text_has_any(text_blob, CHASSIS_RUBBERS_IMAGE_SIGNAL_TOKENS)
+        return not is_chassis_rubbers_photo(row, text_blob)
 
     if workstream_key == "eps_vitz_upgrade":
         return not text_has_any(text_blob, EPS_IMAGE_SIGNAL_TOKENS)
@@ -2811,6 +2867,31 @@ def choose_inventory_image(
     if whatsapp_image is not None:
         return whatsapp_image
 
+    workstream_key = norm(workstream)
+    default_image = workstream_default_images.get(workstream_key)
+    if default_image is not None:
+        selected = dict(default_image)
+        selected["caption"] = f"{item} · related {humanize_token(workstream_key)} evidence"
+        selected["match_basis"] = "workstream_fallback"
+        selected["match_score"] = 0
+        return selected
+
+    fallback_row: dict[str, str] | None = None
+    for row in photo_rows:
+        if not is_inventory_reference_photo_row(row):
+            continue
+        if norm(row.get("component_group")) == "procurement_inventory":
+            fallback_row = row
+            break
+        if fallback_row is None:
+            fallback_row = row
+    if fallback_row is not None:
+        selected = image_payload(fallback_row, [])
+        selected["caption"] = f"{item} · equivalent inventory reference"
+        selected["match_basis"] = "inventory_fallback"
+        selected["match_score"] = 0
+        return selected
+
     return placeholder_image()
 
 
@@ -2899,7 +2980,14 @@ def build_dashboard_data() -> dict[str, Any]:
             electrical_spec_layout
         )
     expense_by_entry_id = {clean(row.get("entry_id")): row for row in expense_rows}
-    part_rows = [row for row in expense_rows if norm(row.get("bucket")) == "parts"]
+    part_rows = [
+        row
+        for row in expense_rows
+        if norm(row.get("bucket")) == "parts"
+        and norm(row.get("status")) != "cancelled"
+        and norm(row.get("delivery_status")) != "not_required"
+        and not norm(row.get("procurement_stage")).startswith("not_required")
+    ]
     part_rows_by_workstream: dict[str, list[dict[str, str]]] = defaultdict(list)
     for row in part_rows:
         ws_id = split_legacy_steering_brakes_workstream(
