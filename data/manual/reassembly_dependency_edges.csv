@@ -1,0 +1,10 @@
+dependency_type,from_work_package,to_work_package,rationale
+hard,WP01,WP02,Panel/seal fit-up follows floor/body closure.
+hard,WP01,WP05,Interior weatherproofing must follow structural repair + sealing.
+hard,WP02,WP06,Body panels/windows/seals must be available for final fit.
+hard,WP03,WP06,Electrical baseline must pass before integration validation.
+hard,WP04,WP06,Mechanical safety baseline must close before road validation.
+hard,WP05,WP06,Interior finish closes before final integration.
+parallel,WP01,WP03,Body rust work and baseline wiring can run in parallel.
+parallel,WP01,WP04,Body closure and mechanical service can run in parallel.
+parallel,WP02,WP03,Panel refurbish return tracking can run while electrical finalization continues.

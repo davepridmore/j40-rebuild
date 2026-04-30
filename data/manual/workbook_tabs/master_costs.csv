@@ -1,0 +1,43 @@
+excel_row,col_1,col_2,col_3
+1,Master Costs Summary,,
+2,Generated,2026-04-15 05:40:43,
+4,TOOLS,,
+5,Tool line items,43,
+6,Tool total (numeric PKR),423733,
+7,Tool procured/on-hand (PKR),343285,
+8,Tool pending/planned (PKR),80448,
+10,PARTS INVENTORY,,
+11,Parts inventory line items,250,
+12,Parts total (numeric PKR),490337,
+13,Parts procured/on-hand (PKR),294412,
+14,Parts ordered/in-flight (PKR),31900,
+15,Parts planned/open (PKR),164025,
+16,Parts deferred/optional (PKR),0,
+17,Parts estimate-only (PKR),0,
+19,OVERALL,,
+20,Committed cost (tools procured + parts procured + parts in-flight),669597,
+21,Potential total (tools + parts numeric totals),914070,
+23,PARTS PURCHASE PRIORITY SUMMARY,,
+24,Priority,Line count,Numeric PKR total
+25,Done / On hand,71,294412
+26,In progress - bodywork,2,0
+27,P1 - In flight / immediate,5,31900
+28,P2 - Buy before refit,24,0
+29,P3 - Audit then buy,16,44629
+30,P4 - Post inspection,20,21000
+31,P5 - Later phase,11,58696
+32,P6 - Deferred / optional,36,0
+33,P7 - Estimate only,63,0
+34,Cancelled,2,39700
+36,NEW VS REFRESH DECISION SUMMARY,,
+37,Decision,Line count,Numeric PKR total
+38,BUY_NEW,98,358712
+39,REFRESH_EXISTING,12,0
+40,INSPECT_THEN_DECIDE,101,73325
+41,DEFER_DECISION,37,18600
+42,CANCELLED,2,39700
+44,LEAD TIME RISK SUMMARY (PARTS),,
+45,Lead_Time_Risk,Line count,
+46,high,12,
+47,low,237,
+48,medium,1,

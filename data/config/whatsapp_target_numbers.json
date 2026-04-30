@@ -1,0 +1,14 @@
+{
+  "numbers": [
+    {
+      "server": "whatsapp-number-1",
+      "label": "primary",
+      "phone_e164": "+447456457005"
+    },
+    {
+      "server": "whatsapp-number-2",
+      "label": "secondary",
+      "phone_e164": "+923099351940"
+    }
+  ]
+}

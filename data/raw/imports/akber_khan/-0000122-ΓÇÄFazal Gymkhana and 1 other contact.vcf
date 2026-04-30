@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Gymkhana;Fazal;;;
+FN:Fazal Gymkhana
+TEL;type=Mobile;waid=923334927275:+92 333 4927275
+END:VCARD_$!<VCard-Separator>!$_BEGIN:VCARD
+VERSION:3.0
+N:Gymkhana;Imran;Snooker;;
+FN:Imran Snooker Gymkhana
+TEL;type=Mobile;waid=923004165795:+92 300 4165795
+END:VCARD

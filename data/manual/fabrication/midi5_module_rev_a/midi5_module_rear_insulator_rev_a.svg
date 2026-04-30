@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270mm" height="205mm" viewBox="0 0 270 205">
+  <style>
+    .cut { fill: none; stroke: #111; stroke-width: 0.6; }
+    .aux { fill: none; stroke: #666; stroke-width: 0.35; }
+    .bend { stroke: #0b5fff; stroke-width: 0.4; stroke-dasharray: 3 2; }
+    .title { font: 700 9px monospace; fill: #111; }
+    .note { font: 6px monospace; fill: #111; }
+  </style>
+  <text x="25" y="14" class="title">midi5_module_rear_insulator_rev_a  |  units: mm</text>
+  <g transform="translate(25,25)">
+  <polygon class="cut" points="0,0 220,0 220,100 0,100" />
+  
+  <circle class="cut" cx="20" cy="5" r="2.25" />
+  <circle class="cut" cx="110" cy="5" r="2.25" />
+  <circle class="cut" cx="200" cy="5" r="2.25" />
+  <circle class="cut" cx="20" cy="95" r="2.25" />
+  <circle class="cut" cx="110" cy="95" r="2.25" />
+  <circle class="cut" cx="200" cy="95" r="2.25" />
+  <circle class="cut" cx="28" cy="68" r="12.5" />
+  <circle class="cut" cx="55" cy="25" r="8" />
+  <circle class="cut" cx="90" cy="25" r="8" />
+  <circle class="cut" cx="125" cy="25" r="8" />
+  <circle class="cut" cx="160" cy="25" r="8" />
+  <circle class="cut" cx="195" cy="25" r="8" />
+  
+  </g>
+  <text x="25" y="170" class="note">Rear insulator panel: 3.0 mm ABS, HDPE, or polypropylene. Do not make this part from bare metal.</text><text x="25" y="182" class="note">One larger grommet hole is for the single bus-bar feed into the linked MIDI bank.</text><text x="25" y="194" class="note">Five smaller grommet holes are for the separated fused branch outputs leaving the module.</text><text x="25" y="206" class="note">Grommet-hole diameters are provisional in Rev A and can be opened up to match the final cable and grommet sizes.</text>
+</svg>

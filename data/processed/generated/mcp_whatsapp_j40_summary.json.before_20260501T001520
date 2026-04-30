@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-04-27T00:12:27+00:00",
+  "profiles": [
+    {
+      "profile_server": "whatsapp-number-1",
+      "profile_label": "primary",
+      "target_number": "+447456457005",
+      "status": "disconnected",
+      "total_chats": 0,
+      "selected_chats": 2,
+      "messages_imported": 1172,
+      "media_imported": 165,
+      "images_imported": 131,
+      "videos_imported": 19
+    },
+    {
+      "profile_server": "whatsapp-number-2",
+      "profile_label": "secondary",
+      "target_number": "+923099351940",
+      "status": "disconnected",
+      "total_chats": 456,
+      "selected_chats": 7,
+      "messages_imported": 1062,
+      "media_imported": 0,
+      "images_imported": 0,
+      "videos_imported": 0
+    }
+  ],
+  "totals": {
+    "chat_candidates": 458,
+    "selected_chats": 9,
+    "messages_imported": 2234,
+    "media_imported": 165,
+    "images_imported": 131,
+    "videos_imported": 19
+  },
+  "outputs": {
+    "chat_candidates_csv": "data/manual/whatsapp_j40_chat_candidates.csv",
+    "messages_json": "data/processed/generated/mcp_whatsapp_j40_messages.json",
+    "messages_csv": "data/processed/generated/mcp_whatsapp_j40_messages.csv",
+    "media_index_csv": "data/processed/generated/mcp_whatsapp_j40_media_index.csv"
+  }
+}

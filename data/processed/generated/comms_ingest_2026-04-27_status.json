@@ -1,0 +1,46 @@
+{
+  "run_date_utc": "2026-04-27",
+  "email": {
+    "new_messages_query": "after:2026/04/24",
+    "new_messages_result_size_estimate": 123,
+    "project_relevance_rules": {
+      "include_if": [
+        "supplier/order references tied to J40 restoration procurement",
+        "messages containing known project part numbers or tool references"
+      ],
+      "exclude_if": [
+        "banking alerts and OTP-only payment emails",
+        "tax/compliance/corporate admin emails",
+        "generic promotions and non-project ecommerce campaigns"
+      ]
+    },
+    "categorized_records_written": 3,
+    "excluded_non_project_records": 120,
+    "output_csv": "data/processed/generated/comms_ingest_2026-04-27_categorized.csv",
+    "high_signal_procurement_refs": [
+      "Order #TM25430 (ToolsMart)",
+      "ToolsMart cart reminder (THT91386/TAC410221)",
+      "Order #TM25240 review request (ToolsMart)"
+    ],
+    "part_numbers_extracted": [
+      "THT91386",
+      "TAC410221",
+      "TW220069"
+    ]
+  },
+  "whatsapp": {
+    "attempted_import_script": "python3 scripts/import_whatsapp_mcp_j40.py",
+    "result": "blocked",
+    "failure_reason": "Timed out waiting for WhatsApp API; wweb-mcp startup error 'Execution context was destroyed, most likely because of a navigation.'",
+    "fallback_dataset_used": "data/processed/generated/mcp_whatsapp_j40_messages.csv",
+    "fallback_dataset_last_generated_at": "2026-04-24T10:37:59+00:00",
+    "fallback_latest_message_timestamp": "2026-03-18T15:12:01",
+    "delta_vs_previous_snapshot": {
+      "before_file": "data/processed/generated/mcp_whatsapp_j40_messages.before_20260427.csv",
+      "after_file": "data/processed/generated/mcp_whatsapp_j40_messages.csv",
+      "changed": false,
+      "new_messages_ingested": 0
+    },
+    "next_action_required": "Repair WhatsApp MCP session and rerun scripts/import_whatsapp_mcp_j40.py for live delta capture"
+  }
+}

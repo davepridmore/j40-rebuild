@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="190mm" height="190mm" viewBox="0 0 190 190">
+  <style>
+    .cut { fill: none; stroke: #111; stroke-width: 0.6; }
+    .aux { fill: none; stroke: #666; stroke-width: 0.35; }
+    .bend { stroke: #0b5fff; stroke-width: 0.4; stroke-dasharray: 3 2; }
+    .title { font: 700 9px monospace; fill: #111; }
+    .note { font: 6px monospace; fill: #111; }
+  </style>
+  <text x="25" y="14" class="title">midi5_holder_subplate_rev_c  |  units: mm</text>
+  <g transform="translate(25,25)">
+  <polygon class="cut" points="0,0 140,0 140,85 0,85" />
+  
+  <circle class="cut" cx="11" cy="20" r="2.25" />
+  <circle class="cut" cx="31.2" cy="20" r="2.25" />
+  <circle class="cut" cx="51.4" cy="20" r="2.25" />
+  <circle class="cut" cx="71.6" cy="20" r="2.25" />
+  <circle class="cut" cx="91.8" cy="20" r="2.25" />
+  <circle class="cut" cx="21" cy="64" r="2.25" />
+  <circle class="cut" cx="41.2" cy="64" r="2.25" />
+  <circle class="cut" cx="61.4" cy="64" r="2.25" />
+  <circle class="cut" cx="81.6" cy="64" r="2.25" />
+  <circle class="cut" cx="101.8" cy="64" r="2.25" />
+  <circle class="cut" cx="15" cy="10" r="2.75" />
+  <circle class="cut" cx="70" cy="10" r="2.75" />
+  <circle class="cut" cx="125" cy="10" r="2.75" />
+  <circle class="cut" cx="15" cy="75" r="2.75" />
+  <circle class="cut" cx="70" cy="75" r="2.75" />
+  <circle class="cut" cx="125" cy="75" r="2.75" />
+  
+  </g>
+  <text x="25" y="155" class="note">Holder subplate: 5.0 mm HDPE, ABS, G10, or phenolic. This board carries the five linked MIDI holders.</text><text x="25" y="167" class="note">Ten holder fixing holes are photo-derived from your measured linked-holder pack: about 20.2 mm pitch, about 44 mm row separation, about 10 mm row stagger.</text><text x="25" y="179" class="note">The six larger holes are for the standoffs that mount this board to the aluminium plate.</text><text x="25" y="191" class="note">Because the holder ears are already slotted, these can stay as round holes on the board.</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="330mm" height="290mm" viewBox="0 0 330 290">
+  <style>
+    .cut { fill: none; stroke: #111; stroke-width: 0.6; }
+    .aux { fill: none; stroke: #666; stroke-width: 0.35; }
+    .bend { stroke: #0b5fff; stroke-width: 0.4; stroke-dasharray: 3 2; }
+    .title { font: 700 9px monospace; fill: #111; }
+    .note { font: 6px monospace; fill: #111; }
+  </style>
+  <text x="25" y="14" class="title">relay_rear_guard_rev_c  |  units: mm</text>
+  <g transform="translate(25,25)">
+  <polygon class="cut" points="0,0 280,0 280,185 200,185 200,160 80,160 80,185 0,185" />
+  
+  <circle class="cut" cx="15" cy="20" r="2.75" />
+  <circle class="cut" cx="120" cy="20" r="2.75" />
+  <circle class="cut" cx="225" cy="20" r="2.75" />
+  <circle class="cut" cx="15" cy="140" r="2.75" />
+  <circle class="cut" cx="120" cy="140" r="2.75" />
+  <circle class="cut" cx="225" cy="140" r="2.75" />
+  
+  </g>
+  <text x="25" y="255" class="note">Rear splash guard: 3.0 mm ABS, HDPE, or polypropylene. This sits behind the relay box on spacers.</text><text x="25" y="267" class="note">Open lower center section gives loom drop room and leaves a drain path; this guard is not meant to fully seal the relay-box rear.</text><text x="25" y="279" class="note">Guard-to-carrier holes match the six spacer locations in the aluminium carrier when the guard is centered on the carrier face.</text><text x="25" y="291" class="note">If you want more side splash coverage later, that should be added as simple clipped side flaps rather than sealing this panel in.</text>
+</svg>

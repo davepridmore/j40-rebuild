@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>J40 Project Control UI</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-title-wrap">
+      <p class="eyebrow">J40 Rebuild Control</p>
+      <h1>Project Operations Dashboard</h1>
+      <p class="subtitle">Workstreams, part ordering, guided steps, and image evidence in one place.</p>
+    </div>
+    <div class="header-meta" id="generated-at">Loading tracker data...</div>
+  </header>
+
+  <nav class="tabs" aria-label="Primary navigation">
+    <button class="tab is-active" data-view="overview" type="button">Overview</button>
+    <button class="tab" data-view="workstreams" type="button">Workstreams</button>
+    <button class="tab" data-view="parts" type="button">Ordering + Inventory</button>
+    <button class="tab" data-view="steps" type="button">Project Steps</button>
+  </nav>
+
+  <main id="view-root" class="view-root" aria-live="polite"></main>
+
+  <footer class="app-footer">
+    <p>Sources: <code>data/manual/workstream_status.csv</code>, <code>data/manual/reassembly_work_packages.csv</code>, <code>data/manual/expenses.csv</code>, <code>data/manual/photo_inventory.csv</code></p>
+  </footer>
+
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

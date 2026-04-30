@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-05-01T00:17:27",
+  "source_messages_csv": "data/processed/generated/mcp_whatsapp_j40_messages.csv",
+  "source_media_csv": "data/processed/generated/mcp_whatsapp_j40_media_index.csv",
+  "baseline_messages_csv": "data/processed/generated/mcp_whatsapp_j40_messages.csv.before_20260501T001520",
+  "messages": {
+    "project_rows_total": 423,
+    "project_rows_new_since_rerun": 9,
+    "categories": {
+      "product_purchase": 18,
+      "payment_detail": 33,
+      "status_update": 70,
+      "additional_task": 79,
+      "parts_specification": 25,
+      "project_update": 151,
+      "supplier_communication": 47
+    }
+  },
+  "examples_media": {
+    "rows_total": 47,
+    "photos": 28,
+    "videos": 19
+  },
+  "exclusions": {
+    "strong_exclusion_terms": [
+      "band transactions",
+      "bank transaction entry",
+      "business hours",
+      "companies house",
+      "company hours",
+      "company house",
+      "corporation tax",
+      "hmrc",
+      "hsbc",
+      "opening hours",
+      "self assessment",
+      "tax return",
+      "vat return"
+    ],
+    "soft_exclusion_terms": [
+      "credit card payment",
+      "mortgage",
+      "payroll",
+      "salary",
+      "statement entry",
+      "utility bill"
+    ]
+  },
+  "outputs": {
+    "project_messages_csv": "data/processed/generated/whatsapp_project_relevant_2026-05-01.csv",
+    "examples_media_csv": "data/processed/generated/whatsapp_examples_media_2026-05-01.csv"
+  }
+}

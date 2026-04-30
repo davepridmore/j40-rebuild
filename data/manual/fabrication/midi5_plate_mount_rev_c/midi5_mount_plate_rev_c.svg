@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240mm" height="255mm" viewBox="0 0 240 255">
+  <style>
+    .cut { fill: none; stroke: #111; stroke-width: 0.6; }
+    .aux { fill: none; stroke: #666; stroke-width: 0.35; }
+    .bend { stroke: #0b5fff; stroke-width: 0.4; stroke-dasharray: 3 2; }
+    .title { font: 700 9px monospace; fill: #111; }
+    .note { font: 6px monospace; fill: #111; }
+  </style>
+  <text x="25" y="14" class="title">midi5_mount_plate_rev_c  |  units: mm</text>
+  <g transform="translate(25,25)">
+  <polygon class="cut" points="0,0 190,0 190,150 0,150" />
+  <polygon class="cut" points="10,14 10.08,13.22 10.3,12.47 10.67,11.78 11.17,11.17 11.78,10.67 12.47,10.3 13.22,10.08 14,10 24,10 24.78,10.08 25.53,10.3 26.22,10.67 26.83,11.17 27.33,11.78 27.7,12.47 27.92,13.22 28,14 28,14 27.92,14.78 27.7,15.53 27.33,16.22 26.83,16.83 26.22,17.33 25.53,17.7 24.78,17.92 24,18 14,18 13.22,17.92 12.47,17.7 11.78,17.33 11.17,16.83 10.67,16.22 10.3,15.53 10.08,14.78 10,14" />
+  <polygon class="cut" points="162,14 162.08,13.22 162.3,12.47 162.67,11.78 163.17,11.17 163.78,10.67 164.47,10.3 165.22,10.08 166,10 176,10 176.78,10.08 177.53,10.3 178.22,10.67 178.83,11.17 179.33,11.78 179.7,12.47 179.92,13.22 180,14 180,14 179.92,14.78 179.7,15.53 179.33,16.22 178.83,16.83 178.22,17.33 177.53,17.7 176.78,17.92 176,18 166,18 165.22,17.92 164.47,17.7 163.78,17.33 163.17,16.83 162.67,16.22 162.3,15.53 162.08,14.78 162,14" />
+  <polygon class="cut" points="10,136 10.08,135.22 10.3,134.47 10.67,133.78 11.17,133.17 11.78,132.67 12.47,132.3 13.22,132.08 14,132 24,132 24.78,132.08 25.53,132.3 26.22,132.67 26.83,133.17 27.33,133.78 27.7,134.47 27.92,135.22 28,136 28,136 27.92,136.78 27.7,137.53 27.33,138.22 26.83,138.83 26.22,139.33 25.53,139.7 24.78,139.92 24,140 14,140 13.22,139.92 12.47,139.7 11.78,139.33 11.17,138.83 10.67,138.22 10.3,137.53 10.08,136.78 10,136" />
+  <polygon class="cut" points="162,136 162.08,135.22 162.3,134.47 162.67,133.78 163.17,133.17 163.78,132.67 164.47,132.3 165.22,132.08 166,132 176,132 176.78,132.08 177.53,132.3 178.22,132.67 178.83,133.17 179.33,133.78 179.7,134.47 179.92,135.22 180,136 180,136 179.92,136.78 179.7,137.53 179.33,138.22 178.83,138.83 178.22,139.33 177.53,139.7 176.78,139.92 176,140 166,140 165.22,139.92 164.47,139.7 163.78,139.33 163.17,138.83 162.67,138.22 162.3,137.53 162.08,136.78 162,136" />
+  
+  <circle class="cut" cx="32.5" cy="37.5" r="2.75" />
+  <circle class="cut" cx="95" cy="37.5" r="2.75" />
+  <circle class="cut" cx="157.5" cy="37.5" r="2.75" />
+  <circle class="cut" cx="32.5" cy="112.5" r="2.75" />
+  <circle class="cut" cx="95" cy="112.5" r="2.75" />
+  <circle class="cut" cx="157.5" cy="112.5" r="2.75" />
+  <circle class="cut" cx="18" cy="30" r="3.25" />
+  <circle class="cut" cx="18" cy="70" r="3.25" />
+  <circle class="cut" cx="18" cy="110" r="3.25" />
+  <circle class="cut" cx="172" cy="35" r="3.25" />
+  <circle class="cut" cx="172" cy="115" r="3.25" />
+  
+  </g>
+  <text x="25" y="220" class="note">Open mount plate: 3.0 mm 5052-H32 aluminium. No rear box. This is intentional so the MIDI cables can leave in-plane without a forced rearward bend.</text><text x="25" y="232" class="note">Use 10-12 mm nylon or aluminium spacers between this plate and the holder subplate.</text><text x="25" y="244" class="note">The small 6.5 mm holes near the cable sides are for optional P-clips or saddle clamps to support heavy cables after they leave the holders.</text><text x="25" y="256" class="note">Corner mount slots remain site-fit because the truck-side support structure is still being repaired and located.</text>
+</svg>

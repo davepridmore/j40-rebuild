@@ -1,0 +1,72 @@
+excel_row,col_1,col_2,col_3,col_4,col_5,col_6,col_7,col_8,col_9
+1,Electrical Master - Clear Tracker (As-Built + Remaining Work),,,,,,,,
+2,Last updated: 2026-04-15 05:48 | Purpose: one-page wiring progress + locked standards + quick lookup,,,,,,,,
+4,1) Wiring Progress Tracker,,,,,,,,
+5,Priority,Area,Task,Status,Done,Current State / Evidence,Next Action,Dependency,Parts/Tools Impact
+6,A,Power Corner,Main shut-off path to MIDI fuse block and relay feeds assembled,Done,Yes,Built in current loom: battery -> breaker -> junction -> MIDI/relay feeds.,Re-torque and inspect during final reassembly.,Tub-off + final assembly,No new parts required
+7,A,Relay Feeds,Branches into relay power/control entries terminated,Done,Yes,Primary relay bank power and control entry branches are wired.,Final continuity check before wrap.,Post-weld validation,No new parts required
+8,A,Connectors,"Deutsch connectors fitted at power-bay and loom interfaces (X1, X2, X3, X4, X5, X6, X7, X8, X10)",Done,Yes,Connector system installed and mapped to loom IDs.,Pin-by-pin continuity + retention pull check.,Post-weld validation,No new parts required
+9,A,Coding,Relay/wire code combinations locked to available coloured heat-shrink set,Done,Yes,Two-band code scheme is the best practical option with current local colour availability.,Keep as-is; only document any unavoidable substitutions.,None,No additional heat-shrink redesign
+10,B,Documentation,"Loom layout, wire requirements, wire summary, routing, Deutsch pinout, heat-shrink key, connector plan, relay assignment reconciled",Done,Yes,Design references consolidated into this master with quick-look tables below.,Update only on physical change.,Change control discipline,No new parts required
+11,B,Relay Plan,"Relay assignment baseline frozen (T1-T5 active, B1-B2 active, B3-B5 spare)",Done,Yes,Functional mapping is agreed for current build scope.,Use spare relays only when adding future circuits.,Feature additions only,No new parts required
+12,B,Fuse Plan,"Dash and MIDI fuse sizing reconciled (incl. EPS 60A, Glow 50A)",Done,Yes,Fuse sizing documented for current electrical load plan.,Verify against final accessory additions.,Any major load change,Only if load changes
+13,A,Switch Panel,"Install 7 Schneider selectors (4 right cluster, 2 AC cluster, 1 fuel-stop/control)",In Progress,Partial,Switches purchased; install layout agreed.,Complete mounting and terminate switch wiring.,Dash panel machining complete,Tools for hole sizing / panel work
+14,A,Dash Fabrication,Machine/enlarge dashboard holes to 22 mm and confirm cluster spacing,Pending,No,Panel prep is required for new selector footprint.,Complete drilling/cutting and edge finishing.,Tooling availability,Chuck + correct bit/cutter in Tools tab
+15,A,Fuel Stop Control,Ensure ignition OFF reliably cuts diesel fuel-stop; retain manual cable backup,Pending,No,Manual cutoff retained; ignition-linked behavior must be finalized.,Wire and test shutdown behavior with engine running.,Switch panel + ignition wiring final,No major new parts expected
+16,B,Security,Upgrade ignition/key security (current keying not secure),Pending,No,Current lock/key setup can be defeated too easily.,Select and install improved barrel/key solution.,Mechanical lock choice,Likely parts purchase in Parts tab
+17,B,Grounding,"Verify battery/chassis, engine/chassis, and dash grounds after tub-off work",In Progress,Partial,Ground architecture defined; needs post-work physical validation.,"Clean points, torque, and coat after final fit.",Tub/chassis work completion,Ground straps/hardware if needed
+18,A,Continuity Test,End-to-end continuity test on all active circuits,Pending,No,Build is advanced but must be re-validated after structural work.,Run full continuity matrix and log pass/fail.,Welding/tub refit complete,No parts; testing time
+19,A,Load Test,"Live load checks on high-current circuits (EPS, glow, blower, spot)",Pending,No,High-current branches need voltage-drop and thermal confirmation.,Run engine-on load test and record voltage drops.,Continuity test pass,No parts; test equipment
+20,A,Functional Test,"Operational test: lights, indicators, wipers, horn, AC, reverse, brake, hazards",Pending,No,System test required before interior close-out.,Execute checklist and clear defects.,Load test pass,Minor consumables possible
+21,B,Final Protection,"Final loom securing, abrasion sleeves, grommet checks, heat shielding",Pending,No,Protection should be finalized after all rework risk is gone.,Finish wraps/clips/sleeves as last electrical step.,All functional tests complete,Clips/sleeves/grommets from Parts tab
+22,C,Change Control,Record any field reroute or pin change in this sheet before final wrap,In Progress,Partial,Process defined; needs strict use during reassembly.,Update tracker immediately on any wiring change.,Team discipline,No parts required
+24,2) Locked As-Built Standards (Do not redesign unless required),,,,,,,,
+25,Standard,Decision,Why This Is Locked,Revisit Trigger,,,,,
+26,Relay/wire heat-shrink coding,Use current two-band combinations from available colours only,Local material availability is limited; current codes are already workable and implemented.,Only revisit if full colour inventory becomes available and relabel effort is justified.,,,,,
+27,"Relay positions (T1-T5, B1-B5)",Keep current relay position/function map,Physical layout and wiring branches are already built to this map.,Only revisit if adding/removing major circuits.,,,,,
+28,Connector IDs (X1-X10),Keep current connector naming and branch pairing,As-built pinout and loom labels depend on these IDs.,Only revisit if connector hardware changes.,,,,,
+29,"Loom IDs (HD1, L2, L3, L4, L5A, L5B, L6)",Keep existing loom labels and routes,"Routing, branch references, and diagnostics depend on this naming.",Only revisit if loom is rebuilt.,,,,,
+30,Heavy cables >=10 mm²,Keep on lugs/rings; do not route through Deutsch DT connectors,Current-current capacity and serviceability requirements.,Only revisit if using higher-current connector family.,,,,,
+31,Fuel stop architecture,Ignition-linked stop + manual diesel cutoff cable retained as backup,Preserves safe shutdown and redundancy.,Revisit only after proving ignition-linked stop reliability.,,,,,
+33,3) Relay Quick Lookup,,,,,,,,
+34,Relay Pos,Function,Relay Colour,Power Code,Power Loom,Wire Size,Control Loom,Implementation Status,
+35,T1,Low beam,Yellow,Yellow + Blue,Front Trunk,2.5 mm²,Left Branch,Active / as-built,
+36,T2,High beam,Green,Yellow + Green,Front Trunk,2.5 mm²,Left Branch,Active / as-built,
+37,T3,Horn,White,Yellow + Red,Front Trunk,2.5 mm²,Left Branch,Active / as-built,
+38,T4,Condenser fan,Orange,Blue + Green,Front Trunk,2.5 mm²,VC,Active / as-built,
+39,T5,Spot lamps,Red,Blue + Red,Front Trunk,2.5 mm²,Left Branch,Active / as-built,
+40,B1,A/C clutch,Blue,Green + Red,Front Trunk,1.5 mm²,VC,Active / as-built,
+41,B2,Aux switched accessory,Brown,Yellow + Yellow,Front Right Branch,2.5 mm²,Front Right Branch,Available / optional use,
+42,B3,Rear work / spare accessory,Gray,Blue + Blue,Rear Loom,1.5 mm²,Front Right Branch,Spare / currently not required,
+43,B4,Spare,Yellow-Green,Green + Green,—,—,—,Spare,
+44,B5,Spare,Purple,Red + Red,—,—,—,Spare,
+46,4) Connector Quick Lookup,,,,,,,,
+47,Connector,Type,Loom / Branch,Terminated Circuits,Status,Notes,,,
+48,X1,8-way Deutsch pair,Front trunk,FR-01..FR-08,Installed,Front trunk main disconnect at power corner,,,
+49,X2,8-way Deutsch pair,Rear loom A,RR-01..RR-08,Installed,Rear loom main disconnect A,,,
+50,X3,8-way Deutsch pair,Left branch,LB-01..LB-08,Installed,Left branch dash disconnect,,,
+51,X4,8-way Deutsch pair,Right branch,RB-01..RB-08,Installed,Right branch dash disconnect,,,
+52,X5,6-way Deutsch pair,Ignition loom,IGN-02..IGN-07,Installed,Ignition small-wire disconnect,,,
+53,X6,6-way Deutsch pair,Rear loom B,RR-09..RR-13 (+1 spare),Installed,Rear secondary disconnect B,,,
+54,X7,3-way Deutsch pair,VC,VC-01..VC-03,Installed,VC service disconnect A,,,
+55,X8,3-way Deutsch pair,VC,VC-04 (+2 spare),Installed,VC service disconnect B,,,
+56,X9,2-way Deutsch pair,Rear sender branch,"RR-04, RR-05",Installed,Fuel sender service disconnect,,,
+57,X10,2-way Deutsch pair,Right branch aux,RB-09 (+1 spare),Installed,Right branch auxiliary disconnect,,,
+58,Heavy lugs / rings,Stud/ring terminations,HD1 heavy cables,PWR-* and GND-*,Installed,Heavy-current cables kept off DT connectors,,,
+60,5) Loom Quick Lookup,,,,,,,,
+61,Loom ID,Loom Name,Build Makeup,Primary Role,Status,,,,
+62,HD1,Heavy / Discrete Cables,Heavy discrete cables only,Main power + heavy feeds,Built / verify after tub work,,,,
+63,L2,front trunk,"5 x 2.5, 1 x 1.5, 2 x 1.0 mm²",Front devices and lighting trunk,Built / verify after tub work,,,,
+64,L3,rear loom,"2 x 2.5, 3 x 1.5, 8 x 1.0 mm²",Rear lighting and sender trunk,Built / verify after tub work,,,,
+65,L4,ignition,"1 x 10 main, 1 x 2.5, 5 x 1.5 mm²",Dash power and ignition distribution,Built / verify after tub work,,,,
+66,L5A,left branch,"1 x 2.5, 3 x 1.5, 4 x 1.0 mm²",Column + left-dash branch,Built / verify after tub work,,,,
+67,L5B,right branch,"2 x 2.5, 3 x 1.5, 4 x 1.0 mm²",Right-dash + cabin branch,Built / verify after tub work,,,,
+68,L6,VC,"Approx. 1.0 m, 3 x 1.5, 1 x 1.0 mm²",Firewall/gearbox service loom,Built / verify after tub work,,,,
+70,6) Minimum Electrical Gate Before Tub Reinstall,,,,,,,,
+71,Step,Action,Target Stage,Status,,,,,
+72,1,Lock body/tub mount points and final body-earth points to factory locations,Before tub goes back on,Pending,,,,,
+73,2,Confirm all required body-mount rubbers/grommets are in Parts tab and physically in hand,Before tub refit hardware install,Pending,,,,,
+74,3,Complete dash switch panel machining and Schneider switch installation,Before dash close-out,In Progress,,,,,
+75,4,Run continuity + insulation checks after welding/structural work,"After welding, before interior reassembly",Pending,,,,,
+76,5,Run live functional test and sign off electrical checklist,Before final interior trim and road use,Pending,,,,,
+77,A,Wire Rework,Trim overlength heavy feed wire into 3 serviceable segments (instead of one full-length run),Pending,No,User-requested correction: previous long run should be split for cleaner routing and serviceability.,Cut/terminate as 3 segments with proper lugs + heat-shrink labels; continuity + voltage-drop test after crimping.,Before final loom wrap,No major new parts; may need extra lugs/heat-shrink if short

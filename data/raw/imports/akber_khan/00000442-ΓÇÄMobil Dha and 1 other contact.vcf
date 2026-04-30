@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Dha;Mobil;;;
+FN:Mobil Dha
+TEL;type=Mobile:+92 42 35891769
+END:VCARD_$!<VCard-Separator>!$_BEGIN:VCARD
+VERSION:3.0
+N:1;Omar Malik;Mobile;;
+FN:Omar Malik Mobile 1
+TEL;type=Mobile;waid=923229444888:+92 322 9444888
+END:VCARD

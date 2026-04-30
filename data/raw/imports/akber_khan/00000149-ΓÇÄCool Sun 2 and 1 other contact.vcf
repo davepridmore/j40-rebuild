@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:2;Cool;Sun;;
+FN:Cool Sun 2
+TEL;type=Mobile:+92 320 1210723
+END:VCARD_$!<VCard-Separator>!$_BEGIN:VCARD
+VERSION:3.0
+N:;Coolsun;;;
+FN:Coolsun
+TEL;type=Mobile;waid=923214111104:+92 321 4111104
+END:VCARD

@@ -1,0 +1,4 @@
+channel,message_id,date_utc,category,subcategory,source,subject_or_ref,product_or_topic,part_number_or_code,amount_pkr,status,action_required,notes
+email,19dcb2f888abafa3,2026-04-26T19:06:22Z,product,purchase_confirmed,ToolsMart.pk,Order #TM25430,Round steel file 200mm x2; Bi-metal Hole saw 22mm x2,THT91386|TAC410221,4390,order_received,yes,Project-relevant confirmed order; awaiting shipment/dispatch update.
+email,19dc7e6bfacd94db,2026-04-26T03:48:01Z,product,cart_status,ToolsMart.pk,You left items in your cart,Round steel file 200mm x1; Bi-metal Hole saw 22mm x1,THT91386|TAC410221,0,cart_reminder,no,Project-relevant cart reminder from same supplier and same part codes.
+email,19dbdd660bbcfbee,2026-04-24T04:53:56Z,discussion,post_purchase_feedback,Toolsmart,Order #TM25240 feedback request,Total Inverter MMA welding machine,TW220069,0,feedback_requested,no,Project-relevant post-purchase discussion signal only.

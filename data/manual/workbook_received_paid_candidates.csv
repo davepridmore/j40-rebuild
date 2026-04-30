@@ -1,0 +1,14 @@
+source_sheet,source_row,workbook_item,vendor,received_flag,paid_flag,suggested_entry_id,suggested_expense_item,suggested_company,expense_status,expense_procurement_stage,match_overlap_tokens,match_ratio,match_score
+Parts,76,H4 Ceramic Headlight Connector,Auto Xpert,Y,Y,part_h4_ceramic_headlight_connector_high,H4 Ceramic Headlight Connector - H4 - High,Auto Xpert Pakistan,ordered,needs_confirmation,3,0.882,2.682
+Parts,105,Dielectric Grease,AliExpress,,Y,part_dielectric_grease,Dielectric grease,Adenwalla & Sons,received,received,2,1.000,2.200
+Parts,50,8mm Nylon Braided Sleeve x 5,electronicsstore.pk,Y,Y,part_split_conduit_braided_sleeve_small,Split conduit / braided sleeve - Small,,planned,purchase_ready,2,0.613,1.813
+Parts,51,10mm Nylon Braided Sleeve x 5,electronicsstore.pk,Y,Y,part_split_conduit_braided_sleeve_small,Split conduit / braided sleeve - Small,,planned,purchase_ready,2,0.603,1.803
+Parts,52,16mm Nylon Braided Sleeve x 5,electronicsstore.pk,Y,Y,part_split_conduit_braided_sleeve_small,Split conduit / braided sleeve - Small,,planned,purchase_ready,2,0.603,1.803
+Tools,16,Harden Pro Grease Gun 500CC,ToolsMart.pk,Y,Y,tool_grease_gun,Grease gun,Toolsmart,received,received,2,0.541,1.741
+Parts,53,10mm Nylon Braided sleeve Price in Pakistan × 5,electronicsstore.pk,Y,Y,part_split_conduit_braided_sleeve_large,Split conduit / braided sleeve - Large,,planned,purchase_ready,2,0.532,1.732
+Parts,54,14mm Nylon Braided Sleeve price in Pakistan × 5,electronicsstore.pk,Y,Y,part_split_conduit_braided_sleeve_large,Split conduit / braided sleeve - Large,,planned,purchase_ready,2,0.532,1.732
+Parts,57,14mm Nylon Braided Sleeve price in Pakistan × 5,electronicsstore.pk,Y,Y,part_split_conduit_braided_sleeve_large,Split conduit / braided sleeve - Large,,planned,purchase_ready,2,0.532,1.732
+Parts,59,10mm Nylon Braided sleeve Price in Pakistan × 5,,Y,Y,part_split_conduit_braided_sleeve_large,Split conduit / braided sleeve - Large,,planned,purchase_ready,2,0.532,1.732
+Parts,55,20mmn Nylon Braided Sleeve Price in Paklistan × 5,electronicsstore.pk,Y,Y,part_split_conduit_braided_sleeve_small,Split conduit / braided sleeve - Small,,planned,purchase_ready,2,0.519,1.719
+Parts,58,20mmn Nylon Braided Sleeve Price in Paklistan × 5,,Y,Y,part_split_conduit_braided_sleeve_small,Split conduit / braided sleeve - Small,,planned,purchase_ready,2,0.519,1.719
+Tools,12,"Harden 1/2"" Torque Wrench Set 30-210N.m × 1",ToolsMart.pk,Y,Y,tool_torque_wrench,Torque wrench,ToolsMart.pk,received,received,2,0.491,1.691

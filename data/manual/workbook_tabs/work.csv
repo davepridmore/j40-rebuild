@@ -1,0 +1,23 @@
+excel_row,col_1,col_2,col_3,col_4
+1,Type,Part,Info,Reason
+2,Remove,Pedal Assembly,clutch + brake + bracket,For chroming
+3,Remove,Handbrake assembly,lever + bracket,For chroming
+4,Remove,Gear level base plate,mounting plate,For chroming
+5,Remove,Left Step,,For chroming
+6,Remove,Right Step,,For chroming
+7,Remove,Roof,,For restore
+8,Remove,Sides,,For restore
+9,Remove,Air Filter,,For tub removal
+10,Remove,Battery and cables,,For tub removal
+11,Remove,Cooling System,"Radiator, hoses and overflow hose",For tub removal
+12,Remove,Brake and clutch hydraulics,,For tub removal
+13,Remove,Brake booster vacuum host,,For tub removal
+14,Remove,Throttle linkage / diesel stop cable,,For tub removal
+15,Remove,Heater hoses,,For tub removal
+16,Remove,AC Unit,,For tub removal
+21,Repair,Chassis,"Repair, clean, seal, paint",
+22,Install,Suspension,OME,
+24,Refit,Body,,
+25,Install,EPS,,
+27,Install,Rewire,,
+29,Install,Sealing,,

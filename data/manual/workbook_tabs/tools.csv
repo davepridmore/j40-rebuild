@@ -1,0 +1,49 @@
+excel_row,col_1,col_2,col_3,col_4,col_5,col_6,col_7
+1,Item,Price,Vendor,Received,Paid,Reconciled_Status,Reconciled_Note
+2,"Black Cable Ties (pack of 100) - 4"" × 1",390,ToolsMart.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+3,"Black Cable Ties (pack of 100) - 14"" × 1",1150,ToolsMart.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+4,"Black Cable Ties (pack of 100) - 8"" × 1",620,ToolsMart.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+5,Harden 32Pcs Screw Tap × 1,11940,ToolsMart.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+6,Ingco Wire cup brush 50mm WB30501 × 1,510,ToolsMart.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+7,"Gaocheng Angle Grinder 125MM, 1500W GC-AG150H × 1",11400,ToolsMart.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+8,,18500,ToolsMart.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+9,"Total 1/2‰Û Flexible Handle 15"" THTFX12151 × 1",2310,ToolsMart.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+10,"LICOTA MADE IN TAIWAN 3/4"" DR. IMPACT SOCKET 6PT 41mm CR-MO BLACK × 1",3340,ToolsMart.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+11,"LICOTA MADE IN TAIWAN 1"" DR. IMPACT SOCKET 6PT 36mm CR-MO BLACK × 1",4170,ToolsMart.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+12,"Harden 1/2"" Torque Wrench Set 30-210N.m × 1",19380,ToolsMart.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+13,LICOTA MADE IN TAIWAN 90Pcs Socket and Tools Set × 1,73460,ToolsMart.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+14,Harden 10Pcs 18x100mm Knife Blade,480,ToolsMart.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+15,Harden Folding knife,1520,ToolsMart.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+16,Harden Pro Grease Gun 500CC,4790,ToolsMart.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+17,Ingco Heat gun 2000w HG200078,6770,ToolsMart.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+18,Harden 12pcs Tap and Die Set 12pcs,7940,ToolsMart.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+19,Ratchet crimping plier 9″ THCPL1506 | Company: Total | Origin: China,2600,totaltool.pk,Y,Y,planned_or_open,Open item with no procurement evidence yet.
+20,Labels,,,,,section_header,Label/group row.
+21,“1/2 inch 24 inch breaker bar — heavy duty”,,,Y,Y,section_header,Label/group row.
+22,Electric Clamp Meter Multimeter Tester Pen Kit ANENG ST170+B15 600V AC/DC Voltage with 24V-250V AC Voltage Tester Home DIY Tools,8811,AliExpress,No,No,not_procured,No confirmed order evidence yet; keep as not ordered until proof appears.
+23,YTH -803 AUTOMATIC WIRE STRIPPER & CRIPMER,1650,fiaz.com.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+24,Side Cutter Bosi Black in Pakistan,650,fiaz.com.pk,No,No,not_procured,No clear order/receipt evidence and user reports not received.
+25,Bosi Nose Plier 6'' Black A+ Quality in Pakistan,650,fiaz.com.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+26,INGCO Air compressor - ACS112501 × 1,57000,almirajtrading.com.pk,,N,not_procured,Explicitly not purchased/received yet.
+27,Total Abrasive metal Cutting Disc Set 50 Pcs,3999,ngcotool.pk,Y,Y,planned_or_open,Open item with no procurement evidence yet.
+28,Tolsen 79646 Heavy Duty Bench Grinder 6,13999,ngcotool.pk,No,No,not_required,Currently considered not required for this project.
+29,10 meter hose for ar compressINGCO Air hose - AH1151 × 1or,2850,almirajtrading.com.pk,M,N,not_procured,Explicitly not purchased/received yet.
+30,Jumnp Leads,,,Y,Y,section_header,Label/group row.
+31,Jacks and stands,,,,,section_header,Label/group row.
+41,Ar-CO2 Canister,42362,pakoxygen,No,Y,ordered_in_flight,Paid and awaiting arrival.
+42,E7018 Fortrex Electodes,2325,pakoxygen,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+43,E7018 Fortrex Electodes - x2,8500,pakoxygen,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+44,E6013 Zodian,2248,pakoxygen,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+45,E6013 Zodian,3120,pakoxygen,Y,Y,duplicate,Duplicate line item of row 44 pending explicit second-order evidence.
+46,Saffire™ MIG Welding Wire x 2,16800,pakoxygen,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+47,Saffire™ MIG Welding Wire,8025,pakoxygen,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
+48,"MIG WELDING FLUX CORE WIRE, 1KG, 0.8MM",2516,Daraaz,Y,,procured_or_on_hand,Evidence indicates purchased/received.
+49,10pcs Male Female red Insulated Bullet Connecto x 4,1920,Daraaz,Y,,procured_or_on_hand,Evidence indicates purchased/received.
+50,"German Imported WORKPRO 125mm 40 Grit Flap Discs - Premium Aluminium Grinding Disc for Removing Deburr, Rust, Polishing, Finishing x 4",4000,Daraaz,Y,,procured_or_on_hand,Evidence indicates purchased/received.
+51,"German Imported WORKPRO Flap Discs 60 Grit, 125mm x 22.2mm, Angle Grinder Discs x 3",3000,Daraaz,Y,,procured_or_on_hand,Evidence indicates purchased/received.
+52,EDON Expert MIG 270 (15Kg) (Single Phase) BUILTIN WIRE FEEDER (GAS OR GASLESS),76500,toolshub,No,Y,ordered_in_flight,Paid for but not yet received.
+53,Drill chuck (compatible with existing drill spindle/arbor),,Local hardware/tools market,Y,,procured_or_on_hand,Acquired; user reports Aamir shared image evidence.
+54,22mm step drill bit (metal panel capable),,Local hardware/tools market,No,,planned_or_open,Primary tool to open existing pull-switch holes toward 22mm.
+55,22mm chassis punch or precision hole cutter,,Local hardware/tools market,No,,ordered_in_flight,Recently ordered; awaiting arrival confirmation.
+56,Deburring tool / round file set for panel holes,,Local hardware/tools market,No,,planned_or_open,Required for clean switch fit and paint-edge protection.
+57,Digital caliper (hole/spacing verification),,Local hardware/tools market,No,,planned_or_open,Used to validate hole diameter and center spacing before cutting.

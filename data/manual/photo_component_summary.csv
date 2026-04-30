@@ -1,0 +1,60 @@
+component_group,specific_component,file_count,stages_seen,date_range,example_file
+body_exterior,body_shell_with_doors_removed,1,removed_parts_cataloguing,2026-03-23,20260323_201950.jpg
+body_exterior,exterior_badge_or_emblem_detail,2,baseline_walkaround,2026-03-29,20260329_122723.jpg
+body_exterior,front_panel_headlamp_surround,1,hardware_refinish,2026-04-12,20260412_223534.jpg
+body_exterior,front_panel_lighting_mount_area,1,removed_parts_cataloguing,2026-04-12,20260412_223216.jpg
+body_exterior,fuel_filler_side_panel,2,baseline_walkaround,2026-03-14,20260314_180058.jpg
+body_exterior,hood_and_front_windshield_overview,2,baseline_walkaround,2026-03-17,20260317_165030.jpg
+body_exterior,panel_detail_and_markings,3,baseline_walkaround,2026-03-29,20260329_051759_gp_xEzrDYhQ.jpg
+body_exterior,rear_side_opening,1,removed_parts_cataloguing,2026-03-23,20260323_201957.jpg
+body_exterior,wing_mirror_set,1,hardware_refinish,2026-04-12,20260412_223539.jpg
+body_exterior,wing_removal_and_body_lift_prep,36,stripdown_cataloguing,2026-04-19 to 2026-04-21,20260419_190643_gp_UM5SilTQ.jpg
+body_floor,floor_pan_rust_zones,30,rust_assessment,2026-04-13 to 2026-04-23,20260413_005435.jpg
+body_floor,floor_seam_and_body_mount_rust,1,rust_assessment,2026-04-05,20260405_234652.jpg
+body_floor,rear_cargo_floor,2,stripdown_cataloguing,2026-03-23 to 2026-04-13,20260323_202016.jpg
+chassis_underside,body_mount_and_crossmember_detail,1,underside_inspection,2026-04-05,20260405_234546.jpg
+chassis_underside,frame_and_mount_points,9,underside_inspection,2026-04-05 to 2026-04-23,20260405_234542_gp_hucEa1CQ.jpg
+chassis_underside,frame_floor_underside_and_lines,87,underside_inspection,2026-03-31 to 2026-04-22,20260331_030439_gp_Hm0ga9nQ.jpg
+chassis_underside,rear_axle_and_leaf_springs,10,underside_inspection,2026-03-24,20260324_004815_gp_Q9G5DYGw.jpg
+chassis_underside,rear_frame_crossmember_and_mounts,1,underside_inspection,2026-04-05,20260405_234541.jpg
+chassis_underside,rear_shock_and_crossmember_view,1,underside_inspection,2026-04-05,20260405_234811.jpg
+chassis_underside,steering_and_suspension_linkages,7,underside_inspection,2026-04-06 to 2026-04-23,20260406_030839_gp_VYKBhRNA.jpg
+chassis_underside,suspension_or_linkage_mount,2,underside_inspection,2026-04-11,20260411_220207.jpg
+documentation_reference,electrical_reference_document,2,reference_material,2026-04-03,20260403_202907.jpg
+documentation_reference,electrical_wiring_diagram,2,reference_material,2026-04-03,20260403_202920.jpg
+documentation_reference,handwritten_notes,3,reference_material,2026-04-01,20260401_111029_gp_6ebGjXdw.jpg
+documentation_reference,off_vehicle_workstation_reference_video,2,reference_material,2026-03-29 to 2026-04-23,20260329_095138.mp4
+documentation_reference,pakwheels_listing_screenshot,1,reference_material,2026-03-13,Screenshot_20260313_054936_PakWheels.jpg
+documentation_reference,reference_media,14,reference_material,2026-04-14 to 2026-04-23,20260414_000833_gp_7PzMcRKw.jpg
+electrical_system,driver_footwell_firewall_pass_through,1,stripdown_cataloguing,2026-03-24,20260324_004812.jpg
+electrical_system,firewall_and_dash_wiring,10,electrical_rework,2026-03-20,20260320_191834.jpg
+electrical_system,pedal_box_wiring,5,electrical_rework,2026-03-28,20260328_053638_gp_t6Q3oCTA.jpg
+engine_bay,bellhousing_clutch_linkage_and_gearbox_case,3,mechanical_inspection,2026-04-30,20260430_215915_gp_ycQ395Gg.jpg
+engine_bay,cooling_hoses_fan_belt_and_radiator_support,2,mechanical_inspection,2026-04-30,20260430_215957_gp_2iBbUagw.jpg
+engine_bay,engine_bay_overview,15,baseline_walkaround|stripdown_cataloguing,2026-03-17 to 2026-04-23,20260317_235150.jpg
+engine_bay,engine_interior_and_stripdown_detail,33,stripdown_cataloguing,2026-04-20,20260420_005132_gp_MgOMVKpQ.jpeg
+interior_cabin,cabin_overview,16,baseline_walkaround,2026-03-17,20260317_165113.jpg
+interior_cabin,cabin_view_through_glass,2,baseline_walkaround,2026-03-29,20260329_122855.jpg
+interior_cabin,dashboard_and_cabin_stripdown,19,stripdown_cataloguing,2026-03-23,20260323_180218.jpg
+interior_cabin,dashboard_lower_structure,1,stripdown_cataloguing,2026-03-23,20260323_190005.jpg
+interior_cabin,dashboard_shell_and_cabin,1,stripdown_cataloguing,2026-04-13,20260413_040719.jpg
+interior_cabin,dashboard_switch_and_control_hardware,2,electrical_rework,2026-04-21,20260421_192813_gp_0jvYAo8g.jpg
+interior_cabin,driver_footwell_firewall_and_wiring,1,stripdown_cataloguing,2026-03-21,20260321_235600.jpg
+interior_cabin,floor_pan_and_firewall,7,stripdown_cataloguing,2026-03-21,20260321_235436.jpg
+interior_cabin,front_door_card,2,baseline_walkaround,2026-03-17,20260317_165203.jpg
+procurement_inventory,fuse_distribution_and_power_hardware,14,procurement_reconciliation,2026-04-11,20260411_065030.jpg
+procurement_inventory,fuse_distribution_and_wiring,2,procurement_reconciliation,2026-04-05,20260405_010322.jpg
+procurement_inventory,hidden_diesel_cutoff_switch_hardware,1,procurement_reconciliation,2026-04-20,20260420_221819_gp_YV69fbvA.jpg
+procurement_inventory,service_parts_and_order_confirmations,2,procurement_reconciliation,2026-04-20,20260420_201801_gp_NvXIaGBw.jpg
+procurement_inventory,wiring_harness_and_connectors,62,procurement_reconciliation,2026-04-10,20260410_013927.jpg
+procurement_inventory,wiring_harness_and_fuse_distribution,35,procurement_reconciliation,2026-04-03 to 2026-04-04,20260403_004136.jpg
+removable_panels,detached_body_panels_and_doors,15,removed_parts_cataloguing,2026-04-08 to 2026-04-23,20260408_211754.jpg
+removable_panels,detached_doors_and_panels,4,removed_parts_cataloguing,2026-03-19 to 2026-04-23,20260319_182448.jpg
+removable_panels,rear_hatch_inner_panel,1,removed_parts_cataloguing,2026-03-28,IMG-20260328-WA0017.jpeg
+removable_panels,refinished_hinges_brackets_and_trim,16,hardware_refinish,2026-04-12,20260412_010626_gp_4bK3TOAg.jpg
+removable_panels,refinished_seat_or_mount_bracket,1,hardware_refinish,2026-04-12,20260412_010623.jpg
+removable_panels,wiper_arm_or_linkage_hardware,1,hardware_refinish,2026-04-12,20260412_010713.jpg
+roof_and_gutters,roof_gutter_and_window_channel,5,removed_parts_cataloguing|rust_assessment,2026-03-23 to 2026-04-23,20260323_210944.jpg
+rubbers_and_seals,window_rubber_seals_and_frames,2,removed_parts_cataloguing,2026-03-29,20260329_051754.jpg
+wheels_and_tires,wheel_and_tire_detail,1,underside_inspection,2026-03-24,20260324_004830.jpg
+window_hardware,rear_hatch_window_latch_mechanisms,1,removed_parts_cataloguing,2026-04-08,20260408_212832.jpg
