@@ -6,8 +6,8 @@ Source workbook: `/Users/davidpridmore/Documents/J40_Costs.xlsx` (`Parts` tab)
 Detailed size matrix: `bilal-ganj-detailed-size-specs.md`
 
 Important:
-- Springs are listed in **Section B** (rows `15` and `16`).
-- Age/condition acceptance rules are in `bilal-ganj-detailed-size-specs.md`.
+- Suspension shopping alternatives have been superseded by the ordered Ironman Foamcell kit.
+- Section B is now receipt tracking only; do not source alternate suspension parts from this list.
 
 ## A) Buy / Book Now (Core)
 
@@ -25,33 +25,27 @@ Core expected subtotal:
 - Avg: `219,000 PKR`
 - High: `347,000 PKR`
 
-## B) Suspension (Get Quotes / Buy If Dimensions Match)
+## B) Suspension (Ordered - Do Not Source Alternatives)
+
+| Item | Status | Cost Treatment | Receipt Check |
+| --- | --- | --- | --- |
+| Ironman Foamcell suspension kit - main shipment | Ordered 2026-05-01 | 575,000 confirmed | Confirm complete kit contents against supplier part list before install |
+| Ironman Foamcell front damper pair (`24635FE` x2) | Ordered as separate shipment | Included in main kit total | Verify both front dampers arrive before final suspension install/sign-off |
+
+Suspension instruction:
+- Do not buy alternate springs, shocks, shackles, bushes, or U-bolts from this list.
+- Use this section only to track shipment receipt, content check, and install readiness.
+
+## C) Steering Condition Quote
 
 | Row | Item | Expected Price (PKR) | What to Ask | Sample Photo(s) |
 | --- | --- | --- | --- | --- |
-| 15 | Local front leaf spring pack x2 | 35,000-90,000 (avg 60,000) | Front pack fabrication/replacement quote by measured dimensions | `20260324_004852.jpg`, `20260411_220207.jpg` |
-| 16 | Local rear leaf spring pack x2 | 35,000-90,000 (avg 60,000) | Rear pack fabrication/replacement quote by measured dimensions | `20260324_004852.jpg`, `20260411_220214.jpg` |
-
-Local spring expected subtotal:
-- Low: `70,000 PKR`
-- Avg: `120,000 PKR`
-- High: `180,000 PKR`
-
-## C) OME/EMU Benchmark Quotes (No Commit Today)
-
-| Row | Item | Expected Price (PKR) | What to Ask | Sample Photo(s) |
-| --- | --- | --- | --- | --- |
-| 33 | OME Nitrocharger shocks (front+rear set) | 110,000-220,000 (avg 170,000) | Availability and genuine part-number quote | `20260324_004852.jpg`, `20260411_220207.jpg` |
-| 44 | OMEGS8 greasable shackle kit (front) | 25,000-60,000 (avg 40,000) | Quote with pin diameter and bushing compatibility | `20260411_220207.jpg` |
-| 45 | OMEGS9 greasable shackle kit (rear) | 25,000-65,000 (avg 45,000) | Quote with pin diameter and bushing compatibility | `20260411_220214.jpg` |
-| 46 | OMESB30 bushing kit x4 | 28,000-60,000 (avg 42,000) | Full set quantity + hardness/spec confirmation | `20260324_004852.jpg` |
-| 47 | OMEU59A U-bolt kit x7 | 42,000-98,000 (avg 65,000) | Thread, leg length, and diameter match quote | `20260411_220207.jpg` |
 | 230 | Steering bushings | 3,000-12,000 (avg 10,000) | Condition-based replacement quote | `20260406_031010.jpg` |
 
-OME benchmark expected subtotal:
-- Low: `233,000 PKR`
-- Avg: `372,000 PKR`
-- High: `515,000 PKR`
+Steering expected subtotal:
+- Low: `3,000 PKR`
+- Avg: `10,000 PKR`
+- High: `12,000 PKR`
 
 ## D) Quick Pickup Consumables (Add-On)
 
@@ -76,5 +70,5 @@ OME benchmark expected subtotal:
 
 ## Price Notes
 
-- Rows `15,16,44,45,46,47` are provisional quote bands (used for on-site negotiation bands).
-- Commit purchases primarily on Section A; Section B only if measured fit matches; Section C is benchmark-only unless you decide to proceed.
+- Suspension alternatives have been removed from the active shopping path.
+- Commit purchases primarily on Section A; Section B is receipt tracking for the ordered Ironman kit.

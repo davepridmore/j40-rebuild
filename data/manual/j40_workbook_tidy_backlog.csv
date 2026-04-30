@@ -12,10 +12,10 @@ high,Engine_Transmission_Comparison,unnamed_columns,"Structured data has unnamed
 medium,Engine_Transmission_Comparison,mixed_price_cells,63 price cells contain numeric values mixed with text.,Split numeric amount into amount column and move text into notes/status columns.
 low,Engine_Transmission_Comparison,non_numeric_price_cells,20 price cells contain no numeric value.,Fill missing amounts or mark as amount_status=missing.
 high,Hardware_Budget_Dedup,inconsistent_status_tokens,Unexpected status tokens: NOT_PURCHASED,"Map status values to canonical tokens (Y, N, ?, COD, CANCELLED, HAVE TO CHECK)."
-medium,Hardware_Budget_Dedup,mixed_price_cells,38 price cells contain numeric values mixed with text.,Split numeric amount into amount column and move text into notes/status columns.
+medium,Hardware_Budget_Dedup,mixed_price_cells,36 price cells contain numeric values mixed with text.,Split numeric amount into amount column and move text into notes/status columns.
 high,Rubbers_Exact_Online,unnamed_columns,Structured data has unnamed columns at positions: 12,Name all active columns and move free-form notes into an explicit notes column.
 high,Rubbers_Exact_Online,inconsistent_status_tokens,"Unexpected status tokens: NOT_PURCHASED, PARTIAL (ONE GROMMET SET APPEARS PROCURED)","Map status values to canonical tokens (Y, N, ?, COD, CANCELLED, HAVE TO CHECK)."
 medium,Rubbers_Exact_Online,mixed_price_cells,21 price cells contain numeric values mixed with text.,Split numeric amount into amount column and move text into notes/status columns.
 medium,Rubbers_Kit_Buy,mixed_price_cells,9 price cells contain numeric values mixed with text.,Split numeric amount into amount column and move text into notes/status columns.
 low,Rubbers_Kit_Buy,non_numeric_price_cells,2 price cells contain no numeric value.,Fill missing amounts or mark as amount_status=missing.
-low,PK_Buy_Clean_Direct,non_numeric_price_cells,19 price cells contain no numeric value.,Fill missing amounts or mark as amount_status=missing.
+low,PK_Buy_Clean_Direct,non_numeric_price_cells,14 price cells contain no numeric value.,Fill missing amounts or mark as amount_status=missing.

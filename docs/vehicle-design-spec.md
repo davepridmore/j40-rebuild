@@ -90,14 +90,14 @@ Target:
 
 Proposed design hierarchy:
 1. steering rebuild and wear-item correction
-2. damper and brake baseline
-3. power steering conversion if justified by packaging and budget
-4. shock upgrade
-5. only then consider shackle reversal or deeper chassis-side modifications
+2. ordered Ironman Foamcell kit content check and suspension installation
+3. brake baseline
+4. power steering conversion if justified by packaging and budget
+5. final ride-height, caster, and alignment validation
 
 Design interpretation:
 - power steering is a real design goal, not just a repair item
-- Bilstein / OME shocks are aligned with the design direction
+- the Ironman Foamcell kit is now the suspension baseline
 - front disc brakes fit the “usable classic” direction
 - full spring / 4-link conversion is explicitly outside the baseline design
 
@@ -194,7 +194,7 @@ In practical terms, that means:
 | Engine | Keep current engine pending inspection evidence | `proposed` |
 | Steering | Rebuild baseline, likely pursue power steering path | `proposed` |
 | Brakes | Upgrade toward more confidence-inspiring road use | `proposed` |
-| Shocks | Bilstein / OME style upgrade fits target | `proposed` |
+| Suspension | Ironman Foamcell kit ordered; track two shipments and validate fitment | `ordered` |
 | Full suspension conversion | Out of baseline scope | `deferred` |
 | Wiring | Full clean rewire / respin with documented architecture | `proposed` |
 | Lighting | Relay-based clean lighting, better headlight performance | `proposed` |

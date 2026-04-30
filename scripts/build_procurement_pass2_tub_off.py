@@ -36,9 +36,13 @@ def get_wiring_stock_signal() -> tuple[int, int]:
     wiring_rows = [
         row
         for row in rows
-        if row.get("source_sheet", "").strip().lower() == "wiring"
-        and row.get("row_disposition") == "line_item"
+        if row.get("row_disposition") == "line_item"
         and (row.get("received_status") == "yes" or row.get("paid_status") in {"yes", "cod"})
+        and (
+            row.get("source_sheet", "").strip().lower() == "wiring"
+            or "wiring_material" in f"{row.get('item', '')} {row.get('extra_notes', '')}".lower()
+            or "migrated from wiring" in f"{row.get('item', '')} {row.get('extra_notes', '')}".lower()
+        )
     ]
     connector_rows = [
         row

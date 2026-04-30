@@ -99,6 +99,16 @@ def load_workbook_stock_rows() -> list[dict[str, str]]:
     ]
 
 
+def is_electrical_stock_row(row: dict[str, str]) -> bool:
+    source_sheet = (row.get("source_sheet") or "").strip().lower()
+    text = f"{row.get('item', '')} {row.get('extra_notes', '')}".lower()
+    return (
+        source_sheet == "wiring"
+        or "wiring_material" in text
+        or "migrated from wiring" in text
+    )
+
+
 def best_stock_match(item: str, stock_rows: list[dict[str, str]]) -> tuple[float, int, dict[str, str] | None]:
     best_score = 0.0
     best_overlap = 0
@@ -135,7 +145,7 @@ def build_procurement_decisions(
     overlap_decisions: dict[str, str],
 ) -> list[dict[str, str]]:
     week_action_map = {row.get("entry_id", ""): row.get("next_action", "") for row in week_rows}
-    electrical_stock_count = sum(1 for row in stock_rows if (row.get("source_sheet") or "").strip().lower() == "wiring")
+    electrical_stock_count = sum(1 for row in stock_rows if is_electrical_stock_row(row))
 
     decisions: list[dict[str, str]] = []
     for row in expenses_rows:

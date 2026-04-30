@@ -139,37 +139,32 @@ Fitment capture at stall:
 - Output spline diameter/count: `________`
 - Column body OD / mount bracket spacing: `________`
 
-## 6) Local Springs (Rows 15, 16) - Measure Before Order
+## 6) Ironman Foamcell Suspension Kit - Receipt Check
 
-Record front and rear separately.
+The ordered Ironman Foamcell kit replaces the previous local-spring and imported-suspension quote paths.
 
-| Dimension | Front | Rear |
+| Shipment | Expected Contents | Check |
 | --- | --- | --- |
-| Eye-to-eye length | ___ mm | ___ mm |
-| Pack width | ___ mm | ___ mm |
-| Main leaf thickness | ___ mm | ___ mm |
-| Leaf count | ___ | ___ |
-| Arch height (unloaded) | ___ mm | ___ mm |
-| Center pin position (A/B) | ___/___ mm | ___/___ mm |
-| Bush ID | ___ mm | ___ mm |
-| Eye width | ___ mm | ___ mm |
+| Main shipment | Kit contents from supplier list, including springs, rear dampers, U-bolts, pins/shackles/bushes, and related hardware | Count every part before install and photograph the laid-out kit |
+| Separate front-damper shipment | `24635FE` x2 | Confirm both front dampers arrive before final suspension install/sign-off |
 
-Legacy note from previous suspension references:
-- OMEGS8 front shackle note references pre-1980 setup with 15mm pin.
+Receipt capture:
+- Main shipment arrival date: `________`
+- Front-damper shipment arrival date: `________`
+- Missing/damaged items: `________`
 
-## 7) OME/EMU Quote Specs (Rows 33, 44, 45, 46, 47)
+## 7) Suspension Install Validation
 
-| Part | Qty | Check |
-| --- | ---: | --- |
-| OME-60097 (front shock) | 2 | part number stamping + closed/open length from vendor sheet |
-| OME-63064 (rear shock) | 2 | part number stamping + closed/open length from vendor sheet |
-| OMEGS8 greasable shackle kit (front) | 1 | pin diameter and bush compatibility |
-| OMEGS9 greasable shackle kit (rear) | 1 | pin diameter and bush compatibility |
-| OMESB30 bushing kit | 4 | full bush count per spring eye set |
-| OMEU59A U-bolt kit | 7 | rod dia, inside width, leg length, thread pitch |
+| Check | Result |
+| --- | --- |
+| Kit complete before install | `________` |
+| Spring orientation and center pins verified | `________` |
+| Shackle angle acceptable at vehicle weight | `________` |
+| U-bolts torqued after settling/recheck | `________` |
+| Ride height and axle alignment signed off | `________` |
 
-Quote rule:
-- Collect written quote + lead time + packaging photo for each OME part.
+Rule:
+- Do not quote or buy alternate suspension parts unless the Ironman kit is incomplete and the replacement need is confirmed after receipt inspection.
 
 ## 8) Wire Rework Instruction (Non-purchase Task)
 

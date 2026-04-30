@@ -112,6 +112,9 @@ def tidy_workbook(workbook_path: Path) -> list[dict[str, str]]:
     tidy_rows: list[dict[str, str]] = []
 
     for sheet_name in COST_SHEETS:
+        if sheet_name not in workbook.sheetnames:
+            continue
+
         ws = workbook[sheet_name]
         header_row, indexes = detect_header_indexes(ws)
         item_col = indexes.get("item", 1)

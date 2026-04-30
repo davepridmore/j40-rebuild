@@ -1,6 +1,6 @@
 # J40 Workbook Tabs: Understanding + Tidy Plan
 
-- Generated: 2026-05-01 00:59:18
+- Generated: 2026-05-01 01:05:30
 - Workbook: `/Users/davidpridmore/Documents/J40_Costs.xlsx`
 - Sheet count: 17
 - Sheet profile CSV: `data/manual/j40_workbook_sheet_profiles.csv`
@@ -47,9 +47,9 @@
 - `Engine_Transmission_Comparison` [mixed_reference] rows=91, cols=14, nonempty_rows=80, structured_rows=72
 - `Tub_Off_Refit_Plan` [mechanical_spec] rows=13, cols=8, nonempty_rows=12, structured_rows=4
 - `Electrical_Master` [electrical_spec] rows=77, cols=9, nonempty_rows=71, structured_rows=64
-- `Hardware_Budget_Dedup` [cost_tracker] rows=40, cols=10, nonempty_rows=40, structured_rows=39
+- `Hardware_Budget_Dedup` [cost_tracker] rows=38, cols=10, nonempty_rows=38, structured_rows=37
 - `Rubbers_Exact_Online` [cost_tracker] rows=24, cols=12, nonempty_rows=24, structured_rows=23
 - `Rubbers_Kit_Buy` [mixed_reference] rows=16, cols=9, nonempty_rows=15, structured_rows=14
 - `Rubbers_All_Replace_Links` [mixed_reference] rows=23, cols=7, nonempty_rows=23, structured_rows=22
 - `PK_Quality_Path` [mixed_reference] rows=18, cols=12, nonempty_rows=18, structured_rows=17
-- `PK_Buy_Clean_Direct` [cost_tracker] rows=23, cols=12, nonempty_rows=23, structured_rows=22
+- `PK_Buy_Clean_Direct` [cost_tracker] rows=18, cols=12, nonempty_rows=18, structured_rows=17
