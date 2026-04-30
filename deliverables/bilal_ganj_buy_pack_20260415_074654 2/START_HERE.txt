@@ -1,0 +1,5 @@
+Bilal Ganj Buy Pack
+1) Open bilal-ganj-p2-buy-sheet.md for specs and buying rules
+2) Open p2_market_list.csv for a compact purchase list
+3) Show photos in images/ to vendors for fit/style confirmation
+Included images: 20260411_065030.jpg, 20260411_143135.jpg, 20260405_234546.jpg, 20260405_234802.jpg, 20260405_234652.jpg, 20260323_180218.jpg, 20260412_223534.jpg

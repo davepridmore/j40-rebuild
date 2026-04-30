@@ -1,0 +1,6 @@
+Bilal Ganj Master Market Pack
+1) Use bilal-ganj-master-shopping-list.md for full shopping list with prices
+2) Use bilal-ganj-mechanic-checklist.md for on-site checks
+3) Use eps-bilal-ganj-kit-checklist.md before any EPS payment
+4) Use bilal_ganj_market_list.csv for a compact tracker
+5) Show images from images/ while negotiating
