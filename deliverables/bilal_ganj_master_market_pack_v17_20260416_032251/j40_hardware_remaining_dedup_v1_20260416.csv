@@ -1,0 +1,41 @@
+item,quantity,source_rows,expected_price,price_min_pkr,price_max_pkr,price_mid_pkr,parts_tab_procured,status,notes
+Body mount rubber - OEM-style body mount insulator set,Full set,12,PKR 15000-60000,15000,60000,37500,no,NOT_PURCHASED,AS_LISTED
+Cloth harness loom tape (Tesa-style),5 rolls,SUB-23,PKR 2500-9000,2500,9000,5750,no,NOT_PURCHASED,AS_LISTED
+"Electrical tape (automotive PVC, 19mm x 18-20m)",10 rolls,SUB-17,PKR 1500-4500,1500,4500,3000,no,NOT_PURCHASED,AS_LISTED
+Firewall grommet assortment,1 kit,SUB-11,PKR 2000-7000,2000,7000,4500,no,NOT_PURCHASED,AS_LISTED
+Fuse box - Compact covered ATO/ATC fuse block 6-way,3 identical,186,PKR 11100-21000,11100,21000,16050,no,NOT_PURCHASED,AS_LISTED
+Heat plugs / glow plugs - Diesel glow plug set (thread/reach/voltage per engine code),Full set,29,PKR 12000-36000,12000,36000,24000,no,NOT_PURCHASED,AS_LISTED
+Kit A nut - M10 nyloc/all-metal mix,24 (+20% spare),244,PKR 1200-2400,1200,2400,1800,no,NOT_PURCHASED,AS_LISTED
+Kit A nut - M12 nut,6 (+20% spare),244,PKR 500-1100,500,1100,800,no,NOT_PURCHASED,AS_LISTED
+Kit A sleeve/spacer - Sleeve for M10 mount points,16,244,PKR 1200-3200,1200,3200,2200,no,NOT_PURCHASED,AS_LISTED
+Kit A spring washer - M10 spring washer,20 (+20% spare),244,PKR 300-650,300,650,475,no,NOT_PURCHASED,AS_LISTED
+Kit A spring washer - M12 spring washer,6 (+20% spare),244,PKR 150-350,150,350,250,no,NOT_PURCHASED,AS_LISTED
+Kit A washer - M10 flat washer,40 (+20% spare),244,PKR 400-900,400,900,650,no,NOT_PURCHASED,AS_LISTED
+Kit A washer - M12 flat washer,12 (+20% spare),244,PKR 200-500,200,500,350,no,NOT_PURCHASED,AS_LISTED
+Kit B bolt - M6x1.0 class 8.8 hex bolts lengths 12/16/20/25mm,220 total,245,PKR 6000-13000,6000,13000,9500,no,NOT_PURCHASED,AS_LISTED
+Kit B bolt - M8x1.25 class 8.8 bolts lengths 16/20/25/30mm,120 total,245,PKR 4800-10800,4800,10800,7800,no,NOT_PURCHASED,AS_LISTED
+Kit B nuts - M6 flange nuts,80,245,PKR 1200-2800,1200,2800,2000,no,NOT_PURCHASED,AS_LISTED
+Kit B nuts - M6 nyloc,160,245,PKR 3200-6400,3200,6400,4800,no,NOT_PURCHASED,AS_LISTED
+Kit B nuts - M8 flange nuts,40,245,PKR 1000-2200,1000,2200,1600,no,NOT_PURCHASED,AS_LISTED
+Kit B nuts - M8 nyloc,90,245,PKR 2700-6300,2700,6300,4500,no,NOT_PURCHASED,AS_LISTED
+Kit B spring washers - M6 spring washers,140,245,PKR 600-1700,600,1700,1150,no,NOT_PURCHASED,AS_LISTED
+Kit B spring washers - M8 spring washers,90,245,PKR 600-1600,600,1600,1100,no,NOT_PURCHASED,AS_LISTED
+Kit B washers - M6 flat washers,300,245,PKR 900-2400,900,2400,1650,no,NOT_PURCHASED,AS_LISTED
+Kit B washers - M8 flat washers,180,245,PKR 900-2500,900,2500,1700,no,NOT_PURCHASED,AS_LISTED
+Kit C captive nut - M6 captive/clip nuts,120,246,PKR 1800-4200,1800,4200,3000,no,NOT_PURCHASED,AS_LISTED
+Kit C captive nut - M8 captive/clip nuts,60,246,PKR 1500-3300,1500,3300,2400,no,NOT_PURCHASED,AS_LISTED
+Kit C rivnut - M6 steel rivnuts,30,246,PKR 900-2100,900,2100,1500,no,NOT_PURCHASED,AS_LISTED
+Kit C rivnut - M8 steel rivnuts,20,246,PKR 900-2200,900,2200,1550,no,NOT_PURCHASED,AS_LISTED
+Kit C weld nut - M6 weld nuts,30,246,PKR 600-1500,600,1500,1050,no,NOT_PURCHASED,AS_LISTED
+Kit C weld nut - M8 weld nuts,20,246,PKR 700-1600,700,1600,1150,no,NOT_PURCHASED,AS_LISTED
+Kit D flange nut - M6 serrated flange nut,40,247,PKR 800-1800,800,1800,1300,no,NOT_PURCHASED,AS_LISTED
+Kit D flange nut - M8 serrated flange nut,20,247,PKR 700-1500,700,1500,1100,no,NOT_PURCHASED,AS_LISTED
+Kit D star washer - M10 star/serrated washer,40,247,PKR 700-1700,700,1700,1200,no,NOT_PURCHASED,AS_LISTED
+Kit D star washer - M6 star/serrated washer,120,247,PKR 700-1800,700,1800,1250,no,NOT_PURCHASED,AS_LISTED
+Kit D star washer - M8 star/serrated washer,80,247,PKR 800-2200,800,2200,1500,no,NOT_PURCHASED,AS_LISTED
+"Local front leaf spring pack (new, custom to measured dimensions)",2 packs,15,PKR 35000-90000,35000,90000,62500,no,NOT_PURCHASED,MEASURE_FIRST_THEN_BUY
+"Local rear leaf spring pack (new, custom to measured dimensions)",2 packs,16,PKR 35000-90000,35000,90000,62500,no,NOT_PURCHASED,MEASURE_FIRST_THEN_BUY
+Rear anti-inversion kit - FK08 (spring flip prevention),1 kit,SUS-10,PKR 12000-35000,12000,35000,23500,no,NOT_PURCHASED,BUY_ONLY_IF_INVERSION_RISK
+Shims/spacers - M10/M12 shim pack thickness 1/2/3/5mm,Assorted full pack,13,PKR 3000-12000,3000,12000,7500,no,NOT_PURCHASED,AS_LISTED
+"Shock absorbers (new genuine, Pakistan high-quality path)",1 full set (front+rear),SUS-11,"PKR 25,000-80,000 (quote by exact model fitment)",25000,80000,52500,no,NOT_PURCHASED,QUOTE_FIRST_THEN_BUY
+Steering bushings - Steering linkage bush set,1 set,230,PKR 3000-12000,3000,12000,7500,no,NOT_PURCHASED,BUY_ONLY_IF_PLAY_FOUND

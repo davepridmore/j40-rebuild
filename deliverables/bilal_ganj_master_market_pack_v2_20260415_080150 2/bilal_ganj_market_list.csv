@@ -1,0 +1,19 @@
+Action,Row,Item,Expected_Range_PKR,Expected_Avg_PKR,Plan_Decision,Priority,Stall_Type,Sample_Photos
+BUY_NOW,11,"Body mount bolts, washers, sleeves, captive-nut repairs",12000-35000,22000,grade_spec_then_buy,P2 - Buy before refit,Fastener lanes,20260405_234546.jpg; 20260405_234802.jpg
+BUY_NOW,12,Body-to-chassis mount rubber kit,15000-60000,30000,measure_then_buy_with_trial_fit,P2 - Buy before refit,Rubber/mount shops,20260405_234546.jpg; 20260405_234652.jpg
+BUY_NOW,13,Body mount shims/spacers alignment pack,3000-12000,7000,prepare_before_trial_fit,P2 - Buy before refit,Fabricator + washer shops,20260405_234652.jpg
+BUY_NOW,244,"Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves",15000-35000,24000,buy_local_grade_spec_kit,P2 - Buy before refit,Fastener lanes,20260405_234546.jpg; 20260405_234802.jpg
+BUY_NOW,245,"Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers",18000-40000,28000,buy_local_grade_spec_kit,P2 - Buy before refit,Fastener lanes,20260405_234546.jpg
+BUY_NOW,246,Fastener Kit C: Captive nuts/clip nuts assortment - M6/M8 with anti-corrosion finish,7000-18000,12000,buy_local_grade_spec_kit,P2 - Buy before refit,Clip/rivnut shops,20260405_234546.jpg
+BUY_NOW,247,Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points,5000-12000,8000,buy_local_grade_spec_kit,P2 - Buy before refit,Electrical+fastener lanes,20260411_065030.jpg
+BUY_NOW,41,Ignition lock security fix (new barrel + matched keys OR full locksmith re-key),4000-25000,12000,mandatory_security_fix_before_refit,P2 - Buy before refit,Locksmith/lock stalls,20260323_180218.jpg; 20260323_190047.jpg
+BUY_NOW,186,Internal compact covered blade fuse box (OEM-style) x3,11100-21000,15000,buy_3_compact_covered_oem_style_fuse_boxes_bilal_ganj_first,P2 - Buy before refit,Auto electrical stalls,20260411_065030.jpg; 20260411_143135.jpg
+BUY_NOW,229,Electrical power steering,54000-136000,90000,buy_complete_eps_column_kit_bilal_ganj_with_inclusion_checklist,P2 - Buy before refit,EPS/kabli steering stalls,20260321_235600.jpg; 20260406_031010.jpg
+MEASURE_THEN_BUY,15,Local front leaf spring pack (LOCAL-FJ40-FRONT-LEAF) x2,35000-90000,60000,measure_then_quote_local_then_order,P2 - Buy before refit,Suspension/spring workshops,20260324_004852.jpg; 20260411_220207.jpg
+MEASURE_THEN_BUY,16,Local rear leaf spring pack (LOCAL-FJ40-REAR-LEAF) x2,35000-90000,60000,measure_then_quote_local_then_order,P2 - Buy before refit,Suspension/spring workshops,20260324_004852.jpg; 20260411_220214.jpg
+QUOTE_ONLY,33,Old Man Emu Nitrocharger shocks (OME-60097 x2 front + OME-63064 x2 rear),110000-220000,170000,quote_and_validate_before_commit,P4 - Post inspection,4x4 import/OME reseller,20260324_004852.jpg
+QUOTE_ONLY,44,OMEGS8 greasable shackle kit (front) x1,25000-60000,40000,quote_and_validate_before_commit,P4 - Post inspection,4x4 import/OME reseller,20260411_220207.jpg
+QUOTE_ONLY,45,OMEGS9 greasable shackle kit (rear) x1,25000-65000,45000,quote_and_validate_before_commit,P4 - Post inspection,4x4 import/OME reseller,20260411_220214.jpg
+QUOTE_ONLY,46,OMESB30 bushing kit x4,28000-60000,42000,quote_and_validate_before_commit,P4 - Post inspection,4x4 import/OME reseller,20260324_004852.jpg
+QUOTE_ONLY,47,OMEU59A U-bolt kit x7,42000-98000,65000,quote_and_validate_before_commit,P4 - Post inspection,4x4 import/OME reseller,20260411_220207.jpg
+QUOTE_ONLY,230,Steering bushings,3000-12000,10000,inspect_then_local_decide,P4 - Post inspection,Suspension bush shops,20260406_031010.jpg

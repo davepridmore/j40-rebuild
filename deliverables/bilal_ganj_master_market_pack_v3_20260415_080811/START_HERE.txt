@@ -1,0 +1,5 @@
+Bilal Ganj Master Market Pack v3
+- Includes age/condition acceptance rules
+- Includes heat plugs NEW_ONLY line
+- Includes springs (rows 15,16) as measure-then-buy
+- Includes wire rework task: split to 3 segments

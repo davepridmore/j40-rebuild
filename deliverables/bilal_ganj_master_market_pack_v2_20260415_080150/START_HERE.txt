@@ -1,0 +1,6 @@
+Bilal Ganj Master Market Pack v2 (Detailed Sizes)
+1) bilal-ganj-detailed-size-specs.md = exact size matrix
+2) bilal_ganj_detailed_size_list.csv = line-by-line vendor sheet
+3) bilal-ganj-mechanic-checklist.md = inspection gates
+4) eps-bilal-ganj-kit-checklist.md = EPS mandatory checks
+5) images/ = reference photos
