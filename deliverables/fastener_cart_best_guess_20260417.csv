@@ -1,0 +1,26 @@
+item,current_cart_qty,recommended_order_qty,source,note
+SCREW M10 X20MM,20,20,Millat exact,Keep as-is.
+NUT M10,30,30,Millat exact,Keep as-is.
+NYLON NUT M10,10,10,Millat exact,Keep as-is.
+M10 flat washers,0,40,Millat exact,Add to complete Kit A.
+M10 spring washers,0,20,Millat exact / local fallback,Add to complete Kit A.
+BOLT M12 L. 55,6,6,Millat exact,Keep as-is.
+BOLT M12 L. 70,6,6,Millat exact,Keep as-is.
+NUT M12,8,8,Millat exact,Keep as-is.
+M12 flat washers,0,12,Millat exact,Add to complete Kit A.
+M12 spring washers,0,6,Local fallback,Add to complete Kit A.
+NUT HEX M6,160,240,Millat exact,Buy more; cheap and used widely.
+SCREW M6 X 12MM,120,120,Millat exact,Keep as-is; already generous.
+SCREW M6X16,20,60,Millat exact,Increase to give enough short M6 stock.
+M6 X 20 bolts,0,50,Local fastener market,No clean Millat page found.
+SCREW M6X25,0,70,Millat exact,Add because it is a clean Millat match.
+M6 flat washers,0,300,Millat exact,Add to complete Kit B.
+M6 spring washers,0,140,Local fastener market,No clean Millat page found.
+NUT M8,100,140,Millat exact,Buy more; cheap and widely used.
+SCREW M8X16MM,50,60,Millat exact,Increase slightly for margin.
+BOLT M-8 X 20,50,60,Millat exact,Increase slightly for margin.
+M8 X 25 bolts,0,30,Local fastener market,No clean Millat page found.
+BOLT M-8 X 30,16,20,Millat exact,Small top-up only.
+M8 flat washers,0,180,Millat exact,Add to complete Kit B.
+M8 spring washers,0,90,Local fastener market,No clean Millat page found.
+BOLT M-8 X 45,150,0,Remove,Not part of the verified split; drop this line.

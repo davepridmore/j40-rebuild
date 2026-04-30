@@ -1,0 +1,47 @@
+Action,Row,Sub_Item,Size_Spec,Qty,Age_Condition_Acceptance,Expected_Range_PKR,Mechanic_Check,Photo_Refs
+BUY_NOW,244,Kit A bolt,M10x1.25 class 8.8 hex bolt,16 (+20% spare),NEW_ONLY,15000-35000,"Head mark 8.8, pitch-gauge check, length by sample",20260405_234546.jpg;20260405_234802.jpg
+BUY_NOW,244,Kit A nut,M10 nyloc/all-metal mix,24 (+20% spare),NEW_ONLY,15000-35000,Thread fit and lock quality,20260405_234546.jpg
+BUY_NOW,244,Kit A washer,M10 flat washer,40 (+20% spare),NEW_ONLY,15000-35000,ID/OD match cups and bolt,20260405_234546.jpg
+BUY_NOW,244,Kit A spring washer,M10 spring washer,20 (+20% spare),NEW_ONLY,15000-35000,"No cracks, consistent spring",20260405_234546.jpg
+BUY_NOW,244,Kit A sleeve/spacer,Sleeve for M10 mount points,16,NEW_ONLY,15000-35000,ID/OD/length match stack,20260405_234652.jpg
+BUY_NOW,244,Kit A bolt,M12 class 8.8 hex bolt,4 (+20% spare),NEW_ONLY,15000-35000,"Head mark 8.8, length by sample",20260405_234802.jpg
+BUY_NOW,244,Kit A nut,M12 nut,6 (+20% spare),NEW_ONLY,15000-35000,"Thread clean, pitch match",20260405_234802.jpg
+BUY_NOW,244,Kit A washer,M12 flat washer,12 (+20% spare),NEW_ONLY,15000-35000,ID/OD match,20260405_234802.jpg
+BUY_NOW,244,Kit A spring washer,M12 spring washer,6 (+20% spare),NEW_ONLY,15000-35000,Consistent tension,20260405_234802.jpg
+BUY_NOW,245,Kit B bolt,M6x1.0 class 8.8 hex bolts lengths 12/16/20/25mm,220 total,NEW_ONLY,18000-40000,Confirm mix by length,20260405_234546.jpg
+BUY_NOW,245,Kit B nuts,M6 nyloc,160,NEW_ONLY,18000-40000,Nylon insert quality,20260405_234546.jpg
+BUY_NOW,245,Kit B nuts,M6 flange nuts,80,NEW_ONLY,18000-40000,Flange face true,20260405_234546.jpg
+BUY_NOW,245,Kit B washers,M6 flat washers,300,NEW_ONLY,18000-40000,Consistent thickness,20260405_234546.jpg
+BUY_NOW,245,Kit B spring washers,M6 spring washers,140,NEW_ONLY,18000-40000,No cracks,20260405_234546.jpg
+BUY_NOW,245,Kit B bolt,M8x1.25 class 8.8 bolts lengths 16/20/25/30mm,120 total,NEW_ONLY,18000-40000,Confirm mix by length,20260405_234546.jpg
+BUY_NOW,245,Kit B nuts,M8 nyloc,90,NEW_ONLY,18000-40000,Nylon insert quality,20260405_234546.jpg
+BUY_NOW,245,Kit B nuts,M8 flange nuts,40,NEW_ONLY,18000-40000,Flange face true,20260405_234546.jpg
+BUY_NOW,245,Kit B washers,M8 flat washers,180,NEW_ONLY,18000-40000,Consistent thickness,20260405_234546.jpg
+BUY_NOW,245,Kit B spring washers,M8 spring washers,90,NEW_ONLY,18000-40000,No cracks,20260405_234546.jpg
+BUY_NOW,246,Kit C captive nut,M6 captive/clip nuts,120,NEW_ONLY,7000-18000,Plating + thread quality,20260405_234546.jpg
+BUY_NOW,246,Kit C captive nut,M8 captive/clip nuts,60,NEW_ONLY,7000-18000,Plating + thread quality,20260405_234546.jpg
+BUY_NOW,246,Kit C weld nut,M6 weld nuts,30,NEW_ONLY,7000-18000,Thread quality,20260405_234546.jpg
+BUY_NOW,246,Kit C weld nut,M8 weld nuts,20,NEW_ONLY,7000-18000,Thread quality,20260405_234546.jpg
+BUY_NOW,246,Kit C rivnut,M6 steel rivnuts,30,NEW_ONLY,7000-18000,Wall/knurl quality,20260405_234546.jpg
+BUY_NOW,246,Kit C rivnut,M8 steel rivnuts,20,NEW_ONLY,7000-18000,Wall/knurl quality,20260405_234546.jpg
+BUY_NOW,247,Kit D star washer,M6 star/serrated washer,120,NEW_ONLY,5000-12000,Sharp serrations,20260411_065030.jpg
+BUY_NOW,247,Kit D star washer,M8 star/serrated washer,80,NEW_ONLY,5000-12000,Sharp serrations,20260411_065030.jpg
+BUY_NOW,247,Kit D star washer,M10 star/serrated washer,40,NEW_ONLY,5000-12000,Sharp serrations,20260411_065030.jpg
+BUY_NOW,247,Kit D flange nut,M6 serrated flange nut,40,NEW_ONLY,5000-12000,Serrations intact,20260411_065030.jpg
+BUY_NOW,247,Kit D flange nut,M8 serrated flange nut,20,NEW_ONLY,5000-12000,Serrations intact,20260411_065030.jpg
+BUY_NOW,247,Kit D paste,Conductive anti-corrosion paste,1 tube,NEW_ONLY,5000-12000,Electrical-ground suitable,20260411_065030.jpg
+BUY_NOW,12,Body mount rubber,OEM-style body mount insulator set,Full set,NEW_ONLY,15000-60000,Match sleeve ID/OD/length + stack,20260405_234546.jpg;20260405_234652.jpg
+BUY_NOW,13,Shims/spacers,M10/M12 shim pack thickness 1/2/3/5mm,Assorted full pack,NEW_ONLY,3000-12000,Use for tub leveling,20260405_234652.jpg
+BUY_NOW,41,Ignition barrel,Matched key ignition lock set or re-key service,1 set,SERVICE_OR_NEW,4000-25000,"ACC/IGN/START smooth, minimal play",20260323_180218.jpg;20260323_190047.jpg
+BUY_NOW,186,Fuse box,Compact covered ATO/ATC fuse block 6-way,3 identical,NEW_ONLY,11100-21000,"Covered body, firm lid, strong terminals",20260411_065030.jpg;20260411_143135.jpg
+BUY_NOW,229,EPS kit,"Complete EPS column kit with ECU, shafts, U-joints, couplers, brackets, connectors",1 complete kit,USED_TESTED_OK_MAX_15Y,54000-136000,Bench-test smooth assist; no lash/noise; pigtails >=150mm,20260321_235600.jpg;20260406_031010.jpg
+BUY_IF_ENGINE_CODE_MATCH,29,Heat plugs / glow plugs,Diesel glow plug set (thread/reach/voltage per engine code),Full set,NEW_ONLY,12000-36000,New only; no used/refurbished plugs,20260317_235150.jpg
+MEASURE_THEN_BUY,15,Front leaf spring pack,"Measure eye-eye, width, arch, center pin, bush ID, eye width",2 packs,NEW_FABRICATED_ONLY,35000-90000,Buy only after measured fit confirmation,20260324_004852.jpg;20260411_220207.jpg
+MEASURE_THEN_BUY,16,Rear leaf spring pack,"Measure eye-eye, width, arch, center pin, bush ID, eye width",2 packs,NEW_FABRICATED_ONLY,35000-90000,Buy only after measured fit confirmation,20260324_004852.jpg;20260411_220214.jpg
+QUOTE_ONLY,33,OME shocks,OME-60097 x2 + OME-63064 x2,1 set,NEW_GENUINE_ONLY,110000-220000,Quote + packaging photo + lead time,20260324_004852.jpg;20260411_220207.jpg
+QUOTE_ONLY,44,OME shackle front,"OMEGS8 (front, legacy note: pre-1980/15mm pin)",1 kit,NEW_GENUINE_ONLY,25000-60000,Confirm pin dia and compatibility,20260411_220207.jpg
+QUOTE_ONLY,45,OME shackle rear,OMEGS9 (rear),1 kit,NEW_GENUINE_ONLY,25000-65000,Confirm pin dia and compatibility,20260411_220214.jpg
+QUOTE_ONLY,46,OME bush kit,OMESB30,4 kits,NEW_GENUINE_ONLY,28000-60000,Confirm bush count per spring-eye set,20260324_004852.jpg
+QUOTE_ONLY,47,OME U-bolt kit,OMEU59A,7 kits,NEW_GENUINE_ONLY,42000-98000,"Confirm rod dia, width, leg length, pitch",20260411_220207.jpg
+QUOTE_ONLY,230,Steering bushings,Steering linkage bush set,1 set,NEW_ONLY,3000-12000,Condition-based quote,20260406_031010.jpg
+WORKSHOP_TASK,Electrical_Master,Wire rework,Split overlength heavy feed wire into 3 serviceable segments,3 segments,N/A,N/A,Cut+terminate+heat-shrink+continuity/voltage-drop test,20260411_065030.jpg;20260321_235600.jpg

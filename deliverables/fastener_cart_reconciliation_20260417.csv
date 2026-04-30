@@ -1,0 +1,21 @@
+bucket,item,required_qty,cart_qty,action,millat_link,note
+Kit A,M10 screw M10 x20,20,20,keep,https://parts.millat.com.pk/product/screw-m10-x20mm/,Exact Millat match.
+Kit A,M10 nut mix (plain + nylon),24,40,trim future order,https://parts.millat.com.pk/product/nut-m10/ | https://parts.millat.com.pk/product/nylon-nut-m10/,Cart has 30 plain + 10 nyloc. The kit only needs 24 total nuts, so this is over by 16.
+Kit A,M12 bolt L55,6,6,keep,https://parts.millat.com.pk/product/bolt-m12-l-55/,Exact Millat match.
+Kit A,M12 bolt L70,6,6,keep,https://parts.millat.com.pk/product/bolt-m12-l-70/,Exact Millat match.
+Kit A,M12 nut,8,8,keep,https://parts.millat.com.pk/product/nut-m12/,Exact Millat match.
+Kit B,M6 x12 bolts,59,70,keep,https://parts.millat.com.pk/product/screw-m6-x-12/,Exact Millat page exists; cart is 11 over the current best-guess split.
+Kit B,M6 x16 bolts,51,20,add 31,https://parts.millat.com.pk/product/bolt-m6-x-16/ | https://parts.millat.com.pk/product/screw-m6x16/,Exact Millat page exists. Use the bolt page when the head style matches the removed part.
+Kit B,M6 x20 bolts,42,0,add locally,No exact Millat page found,No exact Millat page found. Closest Millat substitutes are M6 x16 or M6 x25, depending on depth and thread engagement.
+Kit B,M6 x25 bolts,68,0,add,https://parts.millat.com.pk/product/screw-m6x25/,Exact Millat page exists and should be added.
+Kit B,M6 nuts total,240,160,add 80 of correct locking/flange type,https://parts.millat.com.pk/product/nut-hex-m6/,Millat exposes the plain hex nut only; the matching nyloc/flange nut pages were not exposed cleanly.
+Kit B,M6 flat washers,300,0,add,https://parts.millat.com.pk/product/washer-flat-m6-2/,Missing from cart.
+Kit B,M6 spring washers,140,0,add locally,No exact Millat page found,Use local spring washers or a lock-washer substitute only where appropriate.
+Kit B,M8 x16 bolts,42,50,keep,https://parts.millat.com.pk/product/screw-m8x16/,Exact Millat page exists; cart is 8 over the current best-guess split.
+Kit B,M8 x20 bolts,36,45,keep,https://parts.millat.com.pk/product/bolt-m-8-x-20-339123x1/,Exact Millat page exists; cart is 9 over the current best-guess split.
+Kit B,M8 x25 bolts,30,0,add locally,No exact Millat page found,Closest Millat substitutes are M8 x20 or M8 x30, depending on stack thickness.
+Kit B,M8 x30 bolts,12,16,keep,https://parts.millat.com.pk/product/bolt-m-8-x-30/,Exact Millat page exists; cart is 4 over the current best-guess split.
+Kit B,M8 nuts total,130,100,add 30 of correct locking/flange type,https://parts.millat.com.pk/product/nut-m8/,Millat exposes the plain nut only; the matching locking/flange nut pages were not exposed cleanly.
+Kit B,M8 flat washers,180,0,add,https://parts.millat.com.pk/product/washer-flat-m8/,Missing from cart.
+Kit B,M8 spring washers,90,0,add locally,No exact Millat page found,Use local spring washers or a lock-washer substitute only where appropriate.
+Kit B,M8 x45 bolts,0,150,remove from this order,No exact Millat page found,This length is not part of the verified split. Remove the cart line.

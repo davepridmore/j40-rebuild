@@ -1,0 +1,6 @@
+Decision Area,Active Path,Status,Expected Price (PKR),Mechanic Check,Notes
+Front suspension springing,Local front leaf spring pack (fabricated/new),ACTIVE PATH,"35,000-90,000",Yes,"Measure first: eye-eye, width, arch, center pin, bush ID, eye width."
+Rear suspension springing,Local rear leaf spring pack (fabricated/new),ACTIVE PATH,"35,000-90,000",Yes,Measure first; check inversion risk and ride height.
+OME/EMU shocks + shackles + bush + U-bolts,"Optional upgrade package (OME-60097/63064, OMEGS8/9, OMESB30, OMEU59A)",ALTERNATIVE ONLY (NOT NOW),"175,000-393,000",Yes,Keep in separate branch to avoid duplication/confusion.
+Grease-injection parts,Only if greasable shackles selected,CONDITIONAL,"1,000-4,500",Yes,"If shackle kit includes nipples/caps, separate purchase not required."
+Rear anti-inversion kit FK08,Only if rear spring inversion tendency appears,CONDITIONAL,"12,000-35,000",Yes,Defer unless required after spring setup test.
