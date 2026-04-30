@@ -56,7 +56,7 @@ def sourcing_mode(item: str, workstream: str) -> str:
     item_lower = item.lower()
     if re.search(r"hot rod|21-circuit|harness|deutsch|relay box|fuse block", item_lower):
         return "import_or_specialty"
-    if re.search(r"filter|belt|hose|spark|thermostat|radiator cap|engine mount|clutch|brake flexible", item_lower):
+    if re.search(r"filter|belt|hose|spark|glow|heat plug|thermostat|radiator cap|engine mount|clutch|brake flexible", item_lower):
         return "local_toyota_common"
     if re.search(r"washer|bolt|nut|grommet|relay|connector|wire|sleev|fuse", item_lower):
         return "local_electrical_common"
@@ -71,6 +71,16 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
     workstream = row.get("workstream", "")
     prior = row.get("decision", "")
     overlap_status = row.get("overlap_status", "")
+    status = row.get("status", "").strip().lower()
+    procurement_stage = row.get("procurement_stage", "").strip().lower()
+
+    if status == "cancelled" or procurement_stage.startswith("not_required") or prior.startswith("not_required"):
+        return (
+            prior or "not_required",
+            "not_required",
+            "not_required",
+            "Entry is cancelled or not required in the active baseline.",
+        )
 
     if prior in {"defer_duplicate_overlap", "defer_optional"} or overlap_status == "deferred":
         return (
@@ -205,6 +215,8 @@ def basket_id_for_row(decision: str, mode: str, workstream: str) -> str:
     if decision == "track_in_flight_order":
         return "basket_in_flight_tracking"
     if decision in {"defer_as_non_baseline", "defer_until_baseline_closure", "hold_until_post_weld_primer"}:
+        return "basket_deferred"
+    if decision.startswith("not_required"):
         return "basket_deferred"
     if mode == "import_or_specialty":
         return "basket_specialty_after_audit"

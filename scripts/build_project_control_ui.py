@@ -2386,6 +2386,16 @@ def placeholder_image() -> dict[str, str]:
 
 
 def inventory_override_payload(row: dict[str, str], item: str) -> dict[str, Any] | None:
+    notes = norm(row.get("notes"))
+    source_ref = clean(row.get("source_ref"))
+    if any(token in notes for token in ("image_disputed", "incorrect_image", "suppress_image")):
+        payload = placeholder_image()
+        payload["caption"] = clean(row.get("caption")) or f"{item} · image disputed - exact photo required"
+        payload["matched_tokens"] = [source_ref] if source_ref else []
+        payload["match_basis"] = "manual_image_disputed"
+        payload["match_score"] = 999
+        return payload
+
     image_path = clean(row.get("image_path")) or clean(row.get("path")) or clean(row.get("local_path"))
     if not image_path:
         return None

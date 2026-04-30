@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-01T01:41:31+05:00",
+  "generated_at": "2026-05-01T03:27:27+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -16,11 +16,11 @@ window.J40_DASHBOARD_DATA = {
   "summary": {
     "workstreams_in_scope": 13,
     "workstreams_active": 7,
-    "workstream_evidence_images": 521,
+    "workstream_evidence_images": 520,
     "parts_open_rows": 39,
     "parts_ordered_pending_delivery": 4,
     "urgent_part_actions": 14,
-    "supply_rows_tracked": 322,
+    "supply_rows_tracked": 328,
     "selling_site_images_loaded": 183,
     "whatsapp_j40_selected_chats": 8,
     "whatsapp_j40_media_items": 165,
@@ -2455,9 +2455,9 @@ window.J40_DASHBOARD_DATA = {
             "stage": "reference_material",
             "media_id": "20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938",
             "matched_tokens": [
+              "20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938",
               "20260424",
               "241938794080938",
-              "20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938",
               "nylon",
               "fiber",
               "polishing",
@@ -2496,8 +2496,8 @@ window.J40_DASHBOARD_DATA = {
             "stage": "reference_material",
             "media_id": "20260424_part_seam_sealer_autohub_order_1761310",
             "matched_tokens": [
-              "20260424",
               "1761310",
+              "20260424",
               "20260424_part_seam_sealer_autohub_order_1761310",
               "seam",
               "sealer",
@@ -12343,22 +12343,20 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
           "notes": "Replace all tub mounts before final body refit torque",
           "image": {
-            "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
-            "caption": "Rubber Grommet Assortment \u00b7 Procurement Reconciliation \u00b7 2026-04-22",
-            "captured_date": "2026-04-22",
-            "captured_time": "03:43:58",
+            "path": "../../photos/20260405_234652.jpg",
+            "caption": "Body-to-chassis mount rubber kit \u00b7 related Chassis Rubbers evidence",
+            "captured_date": "2026-04-05",
+            "captured_time": "23:46:52",
             "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "rubber_grommet_assortment",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260422_034358_gp_Bg6nSlPw",
+            "component_group": "body_floor",
+            "specific_component": "floor_seam_and_body_mount_rust",
+            "stage": "rust_assessment",
+            "media_id": "20260405_234652",
             "matched_tokens": [
-              "chassis",
-              "rubber",
-              "2026"
+              "20260405_234652"
             ],
-            "match_basis": "inventory_match",
-            "match_score": 44
+            "match_basis": "workstream_fallback",
+            "match_score": 0
           }
         }
       ],
@@ -14883,18 +14881,6 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": []
         },
         {
-          "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
-          "caption": "Rubber Grommet Assortment \u00b7 Procurement Reconciliation \u00b7 2026-04-22",
-          "captured_date": "2026-04-22",
-          "captured_time": "03:43:58",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_grommet_assortment",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260422_034358_gp_Bg6nSlPw",
-          "matched_tokens": []
-        },
-        {
           "path": "../../photos/20260420_221819_gp_YV69fbvA_2.jpg",
           "caption": "Hidden Diesel Cutoff Switch Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-20",
           "captured_date": "2026-04-20",
@@ -16186,18 +16172,6 @@ window.J40_DASHBOARD_DATA = {
               "matched_tokens": []
             },
             {
-              "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
-              "caption": "Rubber Grommet Assortment \u00b7 Procurement Reconciliation \u00b7 2026-04-22",
-              "captured_date": "2026-04-22",
-              "captured_time": "03:43:58",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_grommet_assortment",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260422_034358_gp_Bg6nSlPw",
-              "matched_tokens": []
-            },
-            {
               "path": "../../photos/20260420_221819_gp_YV69fbvA_2.jpg",
               "caption": "Hidden Diesel Cutoff Switch Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-20",
               "captured_date": "2026-04-20",
@@ -16212,7 +16186,7 @@ window.J40_DASHBOARD_DATA = {
           ]
         }
       ],
-      "image_count": 108,
+      "image_count": 107,
       "reference_token_count": 5,
       "linked_packages": [
         {
@@ -16720,28 +16694,23 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_rubber_grommet_set",
-          "evidence_ref": "user_seed|akber_khan-00489|akber_khan-00497|fj40-00276|fj40-00282|user_update_2026-04-22_grommet_received",
-          "notes": "User confirmed this grommet set was received; exact product link: https://www.aliexpress.com/i/1005008318051049.html",
+          "evidence_ref": "user_seed|akber_khan-00489|akber_khan-00497|fj40-00276|fj40-00282|user_update_2026-04-22_grommet_received|user_update_2026-05-01_grommet_image_wrong",
+          "notes": "User confirmed this grommet set was received; exact product link: https://www.aliexpress.com/i/1005008318051049.html. User correction 2026-05-01: current tracker image is incorrect; require exact order/received photo before treating image as evidence.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/expenses_rubber_grommet_set_5b9d248b95f1.webp",
-            "caption": "Rubber grommet set \u00b7 AliExpress \u00b7 Selling Site Image",
+            "path": "./assets/image-needed.svg",
+            "caption": "Rubber grommet set image disputed - exact AliExpress order or received-set image required",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
-            "stage": "procurement_reconciliation",
+            "component_group": "",
+            "specific_component": "",
+            "stage": "",
             "media_id": "",
             "matched_tokens": [
-              "part_rubber_grommet_set",
-              "https://www.aliexpress.com/i/1005008318051049.html",
-              "1005008318051049",
-              "rubber",
-              "grommet",
-              "aliexpress"
+              "part_rubber_grommet_set"
             ],
-            "match_basis": "selling_site_match",
-            "match_score": 229
+            "match_basis": "manual_image_disputed",
+            "match_score": 999
           }
         },
         {
@@ -17652,7 +17621,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack and document defects before upgrades.",
-          "blocker_summary": "11 mechanical safety/service rows need pricing + order.",
+          "blocker_summary": "10 mechanical safety/service rows need pricing + order.",
           "gate_to_close": "Cooling/fuel/ignition/service baseline complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; keep inspect-then-replace items gated to inspection findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack rows prepared"
@@ -17689,7 +17658,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack and document defects before upgrades. Blocker: 11 mechanical safety/service rows need pricing + order. Procurement: Batch-buy must-replace consumables; keep inspect-then-replace items gated to inspection findings. Gate: Cooling/fuel/ignition/service baseline complete with leak-free checks."
+          "detail": "Execute reliability service pack and document defects before upgrades. Blocker: 10 mechanical safety/service rows need pricing + order. Procurement: Batch-buy must-replace consumables; keep inspect-then-replace items gated to inspection findings. Gate: Cooling/fuel/ignition/service baseline complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -17699,7 +17668,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
           "status": "in_progress",
-          "detail": "10 part rows still require price confirmation/order placement."
+          "detail": "9 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
@@ -17708,8 +17677,8 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Procurement \u00b7 resolve ambiguous stock/receipt rows",
-          "status": "completed",
-          "detail": "0 rows still need confirmation before closeout."
+          "status": "in_progress",
+          "detail": "1 rows still need confirmation before closeout."
         },
         {
           "label": "Close workstream exit gate",
@@ -17718,40 +17687,6 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "involved_parts": [
-        {
-          "entry_id": "credit_old_battery_return",
-          "workstream": "mechanical_baseline",
-          "item": "Old battery return credit",
-          "status": "credited",
-          "procurement_stage": "completed",
-          "payment_status": "received",
-          "delivery_status": "completed",
-          "amount": "-4000",
-          "amount_status": "confirmed",
-          "currency": "PKR",
-          "vendor": "Ghazi Road",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "credit_old_battery_return",
-          "evidence_ref": "akber_khan-00760",
-          "notes": "PKR 4,000 return value received against the old battery; net new-battery cost is PKR 16,000.",
-          "image": {
-            "path": "../../photos/20260422_004412_gp_OclpaTdg_2.jpg",
-            "caption": "Old battery return credit \u00b7 related Mechanical Baseline evidence",
-            "captured_date": "2026-04-22",
-            "captured_time": "00:44:12",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "engine_bay_chassis_interface",
-            "stage": "underside_inspection",
-            "media_id": "20260422_004412_gp_OclpaTdg_2",
-            "matched_tokens": [
-              "engine_bay"
-            ],
-            "match_basis": "workstream_fallback",
-            "match_score": 0
-          }
-        },
         {
           "entry_id": "part_battery_purchase",
           "workstream": "mechanical_baseline",
@@ -17784,6 +17719,43 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "manual_override",
             "match_score": 999
+          }
+        },
+        {
+          "entry_id": "credit_old_battery_return",
+          "workstream": "mechanical_baseline",
+          "item": "Old battery return credit",
+          "status": "needs_confirmation",
+          "procurement_stage": "needs_confirmation",
+          "payment_status": "unknown",
+          "delivery_status": "needs_confirmation",
+          "amount": "",
+          "amount_status": "disputed",
+          "currency": "PKR",
+          "vendor": "Ghazi Road",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "credit_old_battery_return",
+          "evidence_ref": "akber_khan-00760|user_update_2026-05-01_battery_credit_wrong",
+          "notes": "User correction 2026-05-01: previous PKR 4,000 old-battery return credit is wrong. Removed from confirmed totals until corrected amount/source is provided.",
+          "image": {
+            "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
+            "caption": "Disputed Grommet Set Reference \u00b7 Reference Material \u00b7 2026-04-22",
+            "captured_date": "2026-04-22",
+            "captured_time": "03:43:58",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "disputed_grommet_set_reference",
+            "stage": "reference_material",
+            "media_id": "20260422_034358_gp_Bg6nSlPw",
+            "matched_tokens": [
+              "2026-05-01:",
+              "user",
+              "correction",
+              "2026"
+            ],
+            "match_basis": "inventory_match",
+            "match_score": 72
           }
         },
         {
@@ -17855,6 +17827,40 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
+          "entry_id": "part_mech_heat_glow_plugs_set",
+          "workstream": "mechanical_baseline",
+          "item": "Heat/glow plugs set - diesel 2H",
+          "status": "new_only_planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_mech_heat_glow_plugs_set",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_diesel_correction",
+          "notes": "Diesel baseline item. Buy NEW only; confirm fitted engine code plus current plug voltage/thread/reach or old plug part number before payment.",
+          "image": {
+            "path": "../../photos/20260422_004412_gp_OclpaTdg_2.jpg",
+            "caption": "Heat/glow plugs set - diesel 2H \u00b7 related Mechanical Baseline evidence",
+            "captured_date": "2026-04-22",
+            "captured_time": "00:44:12",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "engine_bay_chassis_interface",
+            "stage": "underside_inspection",
+            "media_id": "20260422_004412_gp_OclpaTdg_2",
+            "matched_tokens": [
+              "engine_bay"
+            ],
+            "match_basis": "workstream_fallback",
+            "match_score": 0
+          }
+        },
+        {
           "entry_id": "part_mech_accessory_belt_set",
           "workstream": "mechanical_baseline",
           "item": "Accessory belt set",
@@ -17883,40 +17889,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_mech_accessory_belt_set"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
-          }
-        },
-        {
-          "entry_id": "part_mech_distributor_cap_rotor_tuneup",
-          "workstream": "mechanical_baseline",
-          "item": "Distributor cap rotor and ignition tune-up consumables",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_mech_distributor_cap_rotor_tuneup",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH BASELINE MUST REPLACE during full restore if distributor ignition remains",
-          "image": {
-            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
-            "caption": "Engine bay ignition service area - related local mechanical inspection photo",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_mech_distributor_cap_rotor_tuneup"
             ],
             "match_basis": "manual_override",
             "match_score": 999
@@ -18005,8 +17977,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_mech_fuel_hose_and_clamps",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH BASELINE MUST REPLACE old soft fuel lines during full restore",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
+          "notes": "Spec: diesel-rated SAE J30R9/J30R14T2 or DIN 73379-3E hose; 8 mm feed, 6 mm return/bleed, 3.2-3.5 mm injector leak-off only after measuring actual nipples. Use fuel-injection clamps. Do not fabricate high-pressure injector pipes.",
           "image": {
             "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
             "caption": "Engine bay hose routing - related local mechanical inspection photo",
@@ -18039,8 +18011,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_mech_heater_hose_set",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH BASELINE MUST REPLACE during full restore",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
+          "notes": "Spec: front heater hoses Toyota 99552-30500 L=400 and 99552-30300 L=280 or EPDM SAE J20R3 heater hose matched to heater/engine nipples, expected 16 mm / 5/8 inch ID after measurement. Include clamps and confirm whether rear heater circuit exists.",
           "image": {
             "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
             "caption": "Heater/cooling hose routing - related local mechanical inspection photo",
@@ -18073,8 +18045,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_mech_radiator_cap",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH BASELINE MUST REPLACE during full restore",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
+          "notes": "Spec: Toyota radiator cap 16401-41021 or exact pressure-equivalent cap for the fitted radiator neck; replace with coolant hose service.",
           "image": {
             "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
             "caption": "Radiator support and hose area - related local mechanical inspection photo",
@@ -18107,8 +18079,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_mech_radiator_hose_set",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH BASELINE MUST REPLACE during full restore",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
+          "notes": "Spec: 2H/HJ47 molded EPDM coolant hoses, upper Toyota 16571-68020 and lower Toyota 16572-68020; clamp refs 90460-50016/96111-10500 plus lower outlet 96111-10560. Verify actual radiator and thermostat housing geometry before payment.",
           "image": {
             "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
             "caption": "Radiator hose routing and clamps - local mechanical inspection photo",
@@ -18121,40 +18093,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_mech_radiator_hose_set"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
-          }
-        },
-        {
-          "entry_id": "part_mech_spark_plugs_set",
-          "workstream": "mechanical_baseline",
-          "item": "Spark plugs set",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_mech_spark_plugs_set",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH BASELINE MUST REPLACE during full restore",
-          "image": {
-            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
-            "caption": "Engine bay service area - related local mechanical inspection photo",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_mech_spark_plugs_set"
             ],
             "match_basis": "manual_override",
             "match_score": 999
@@ -18175,8 +18113,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_mech_vacuum_hose_refresh",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH BASELINE MUST REPLACE old brittle vacuum lines during full restore",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
+          "notes": "Spec: reinforced vacuum hose matched to actual barbs; brake booster/vacuum pump hose must not collapse. 2H vacuum-pump oil outlet hose OEM 90923-02079 if that hose is fitted. Replace suspect check valves and clips.",
           "image": {
             "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
             "caption": "Engine bay hose routing - related local mechanical inspection photo",
@@ -18652,20 +18590,22 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "user_update_2026-05-01_ironman_foamcell_order|image_2026-05-01_ironman_foamcell_parts_list",
           "notes": "User update 2026-05-01: Ironman Foamcell suspension kit ordered from attached parts list; PKR 600000 less PKR 25000 discount = PKR 575000 total. Track as main shipment plus a separate front damper shipment. Supplier list shows part numbers 24635FE, 24636FE, TOY001B, TOY002B, 415UBK, 713UK, 343LH, 343RH, 3523, 346. All previous local spring, OME/Bilstein, separate bushing, shackle, and U-bolt alternatives removed from active parts list.",
           "image": {
-            "path": "../../photos/20260331_224423.jpg",
-            "caption": "Ironman Foamcell suspension kit - main shipment (front dampers separate) \u00b7 related Brake System evidence",
-            "captured_date": "2026-03-31",
-            "captured_time": "22:44:23",
+            "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
+            "caption": "Disputed Grommet Set Reference \u00b7 Reference Material \u00b7 2026-04-22",
+            "captured_date": "2026-04-22",
+            "captured_time": "03:43:58",
             "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_floor_underside_and_lines",
-            "stage": "underside_inspection",
-            "media_id": "20260331_224423",
+            "component_group": "documentation_reference",
+            "specific_component": "disputed_grommet_set_reference",
+            "stage": "reference_material",
+            "media_id": "20260422_034358_gp_Bg6nSlPw",
             "matched_tokens": [
-              "20260331_224423"
+              "2026-05-01:",
+              "user",
+              "2026"
             ],
-            "match_basis": "workstream_fallback",
-            "match_score": 0
+            "match_basis": "inventory_match",
+            "match_score": 68
           }
         },
         {
@@ -20289,7 +20229,7 @@ window.J40_DASHBOARD_DATA = {
         "steering_brakes_suspension"
       ],
       "evidence_signal": "engine_bay baseline evidence present; service pack rows prepared",
-      "blocker_summary": "11 mechanical safety/service rows need pricing + order.",
+      "blocker_summary": "10 mechanical safety/service rows need pricing + order.",
       "gate_to_close": "Cooling/fuel/ignition/service baseline complete with leak-free checks.",
       "key_procurement_actions": "Batch-buy must-replace consumables; keep inspect-then-replace items gated to inspection findings.",
       "image": {
@@ -20363,7 +20303,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Confirm price and place purchase-ready orders",
         "status": "in_progress",
-        "detail": "21 rows still in purchase_ready."
+        "detail": "20 rows still in purchase_ready."
       },
       {
         "label": "Place selected quote orders",
@@ -20386,6 +20326,10 @@ window.J40_DASHBOARD_DATA = {
         "count": 3
       },
       {
+        "stage": "needs_confirmation",
+        "count": 1
+      },
+      {
         "stage": "next_phase_purchase",
         "count": 7
       },
@@ -20395,7 +20339,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "purchase_ready",
-        "count": 21
+        "count": 20
       },
       {
         "stage": "researching",
@@ -20405,7 +20349,7 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_next_action": [
       {
         "next_action": "confirm_price_then_order",
-        "count": 21
+        "count": 20
       },
       {
         "next_action": "track_delivery",
@@ -20493,9 +20437,9 @@ window.J40_DASHBOARD_DATA = {
           "stage": "reference_material",
           "media_id": "20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938",
           "matched_tokens": [
+            "20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938",
             "20260424",
             "241938794080938",
-            "20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938",
             "nylon",
             "fiber",
             "polishing",
@@ -20558,8 +20502,8 @@ window.J40_DASHBOARD_DATA = {
           "stage": "reference_material",
           "media_id": "20260424_part_seam_sealer_autohub_order_1761310",
           "matched_tokens": [
-            "20260424",
             "1761310",
+            "20260424",
             "20260424_part_seam_sealer_autohub_order_1761310",
             "seam",
             "sealer",
@@ -20643,22 +20587,20 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
         "notes": "Replace all tub mounts before final body refit torque",
         "image": {
-          "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
-          "caption": "Rubber Grommet Assortment \u00b7 Procurement Reconciliation \u00b7 2026-04-22",
-          "captured_date": "2026-04-22",
-          "captured_time": "03:43:58",
+          "path": "../../photos/20260405_234652.jpg",
+          "caption": "Body-to-chassis mount rubber kit \u00b7 related Chassis Rubbers evidence",
+          "captured_date": "2026-04-05",
+          "captured_time": "23:46:52",
           "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_grommet_assortment",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260422_034358_gp_Bg6nSlPw",
+          "component_group": "body_floor",
+          "specific_component": "floor_seam_and_body_mount_rust",
+          "stage": "rust_assessment",
+          "media_id": "20260405_234652",
           "matched_tokens": [
-            "chassis",
-            "rubber",
-            "2026"
+            "20260405_234652"
           ],
-          "match_basis": "inventory_match",
-          "match_score": 44
+          "match_basis": "workstream_fallback",
+          "match_score": 0
         }
       },
       {
@@ -20787,20 +20729,22 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "user_update_2026-05-01_ironman_foamcell_order|image_2026-05-01_ironman_foamcell_parts_list",
         "notes": "User update 2026-05-01: Ironman Foamcell suspension kit ordered from attached parts list; PKR 600000 less PKR 25000 discount = PKR 575000 total. Track as main shipment plus a separate front damper shipment. Supplier list shows part numbers 24635FE, 24636FE, TOY001B, TOY002B, 415UBK, 713UK, 343LH, 343RH, 3523, 346. All previous local spring, OME/Bilstein, separate bushing, shackle, and U-bolt alternatives removed from active parts list.",
         "image": {
-          "path": "../../photos/20260331_224423.jpg",
-          "caption": "Ironman Foamcell suspension kit - main shipment (front dampers separate) \u00b7 related Brake System evidence",
-          "captured_date": "2026-03-31",
-          "captured_time": "22:44:23",
+          "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
+          "caption": "Disputed Grommet Set Reference \u00b7 Reference Material \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "03:43:58",
           "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "frame_floor_underside_and_lines",
-          "stage": "underside_inspection",
-          "media_id": "20260331_224423",
+          "component_group": "documentation_reference",
+          "specific_component": "disputed_grommet_set_reference",
+          "stage": "reference_material",
+          "media_id": "20260422_034358_gp_Bg6nSlPw",
           "matched_tokens": [
-            "20260331_224423"
+            "2026-05-01:",
+            "user",
+            "2026"
           ],
-          "match_basis": "workstream_fallback",
-          "match_score": 0
+          "match_basis": "inventory_match",
+          "match_score": 68
         }
       },
       {
@@ -20856,9 +20800,9 @@ window.J40_DASHBOARD_DATA = {
           "stage": "reference_material",
           "media_id": "20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938",
           "matched_tokens": [
+            "20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938",
             "20260424",
             "241938794080938",
-            "20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938",
             "nylon",
             "fiber",
             "polishing",
@@ -20892,8 +20836,8 @@ window.J40_DASHBOARD_DATA = {
           "stage": "reference_material",
           "media_id": "20260424_part_seam_sealer_autohub_order_1761310",
           "matched_tokens": [
-            "20260424",
             "1761310",
+            "20260424",
             "20260424_part_seam_sealer_autohub_order_1761310",
             "seam",
             "sealer",
@@ -20916,20 +20860,22 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "user_update_2026-05-01_ironman_foamcell_order|image_2026-05-01_ironman_foamcell_parts_list",
         "notes": "User update 2026-05-01: Ironman Foamcell suspension kit ordered from attached parts list; PKR 600000 less PKR 25000 discount = PKR 575000 total. Track as main shipment plus a separate front damper shipment. Supplier list shows part numbers 24635FE, 24636FE, TOY001B, TOY002B, 415UBK, 713UK, 343LH, 343RH, 3523, 346. All previous local spring, OME/Bilstein, separate bushing, shackle, and U-bolt alternatives removed from active parts list.",
         "image": {
-          "path": "../../photos/20260331_224423.jpg",
-          "caption": "Ironman Foamcell suspension kit - main shipment (front dampers separate) \u00b7 related Brake System evidence",
-          "captured_date": "2026-03-31",
-          "captured_time": "22:44:23",
+          "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
+          "caption": "Disputed Grommet Set Reference \u00b7 Reference Material \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "03:43:58",
           "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "frame_floor_underside_and_lines",
-          "stage": "underside_inspection",
-          "media_id": "20260331_224423",
+          "component_group": "documentation_reference",
+          "specific_component": "disputed_grommet_set_reference",
+          "stage": "reference_material",
+          "media_id": "20260422_034358_gp_Bg6nSlPw",
           "matched_tokens": [
-            "20260331_224423"
+            "2026-05-01:",
+            "user",
+            "2026"
           ],
-          "match_basis": "workstream_fallback",
-          "match_score": 0
+          "match_basis": "inventory_match",
+          "match_score": 68
         }
       },
       {
@@ -21069,9 +21015,9 @@ window.J40_DASHBOARD_DATA = {
           "stage": "reference_material",
           "media_id": "20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938",
           "matched_tokens": [
+            "20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938",
             "20260424",
             "241938794080938",
-            "20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938",
             "nylon",
             "fiber",
             "polishing",
@@ -21106,8 +21052,8 @@ window.J40_DASHBOARD_DATA = {
           "stage": "reference_material",
           "media_id": "20260424_part_seam_sealer_autohub_order_1761310",
           "matched_tokens": [
-            "20260424",
             "1761310",
+            "20260424",
             "20260424_part_seam_sealer_autohub_order_1761310",
             "seam",
             "sealer",
@@ -21215,20 +21161,22 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "user_update_2026-05-01_ironman_foamcell_order|image_2026-05-01_ironman_foamcell_parts_list",
         "notes": "User update 2026-05-01: Ironman Foamcell suspension kit ordered from attached parts list; PKR 600000 less PKR 25000 discount = PKR 575000 total. Track as main shipment plus a separate front damper shipment. Supplier list shows part numbers 24635FE, 24636FE, TOY001B, TOY002B, 415UBK, 713UK, 343LH, 343RH, 3523, 346. All previous local spring, OME/Bilstein, separate bushing, shackle, and U-bolt alternatives removed from active parts list.",
         "image": {
-          "path": "../../photos/20260331_224423.jpg",
-          "caption": "Ironman Foamcell suspension kit - main shipment (front dampers separate) \u00b7 related Brake System evidence",
-          "captured_date": "2026-03-31",
-          "captured_time": "22:44:23",
+          "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
+          "caption": "Disputed Grommet Set Reference \u00b7 Reference Material \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "03:43:58",
           "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "frame_floor_underside_and_lines",
-          "stage": "underside_inspection",
-          "media_id": "20260331_224423",
+          "component_group": "documentation_reference",
+          "specific_component": "disputed_grommet_set_reference",
+          "stage": "reference_material",
+          "media_id": "20260422_034358_gp_Bg6nSlPw",
           "matched_tokens": [
-            "20260331_224423"
+            "2026-05-01:",
+            "user",
+            "2026"
           ],
-          "match_basis": "workstream_fallback",
-          "match_score": 0
+          "match_basis": "inventory_match",
+          "match_score": 68
         }
       },
       {
@@ -21335,22 +21283,20 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
         "notes": "Replace all tub mounts before final body refit torque",
         "image": {
-          "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
-          "caption": "Rubber Grommet Assortment \u00b7 Procurement Reconciliation \u00b7 2026-04-22",
-          "captured_date": "2026-04-22",
-          "captured_time": "03:43:58",
+          "path": "../../photos/20260405_234652.jpg",
+          "caption": "Body-to-chassis mount rubber kit \u00b7 related Chassis Rubbers evidence",
+          "captured_date": "2026-04-05",
+          "captured_time": "23:46:52",
           "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_grommet_assortment",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260422_034358_gp_Bg6nSlPw",
+          "component_group": "body_floor",
+          "specific_component": "floor_seam_and_body_mount_rust",
+          "stage": "rust_assessment",
+          "media_id": "20260405_234652",
           "matched_tokens": [
-            "chassis",
-            "rubber",
-            "2026"
+            "20260405_234652"
           ],
-          "match_basis": "inventory_match",
-          "match_score": 44
+          "match_basis": "workstream_fallback",
+          "match_score": 0
         }
       },
       {
@@ -21690,6 +21636,39 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "credit_old_battery_return",
+        "workstream": "mechanical_baseline",
+        "item": "Old battery return credit",
+        "status": "needs_confirmation",
+        "procurement_stage": "needs_confirmation",
+        "payment_status": "unknown",
+        "delivery_status": "needs_confirmation",
+        "amount": "",
+        "amount_status": "disputed",
+        "supply_type": "part",
+        "evidence_ref": "akber_khan-00760|user_update_2026-05-01_battery_credit_wrong",
+        "notes": "User correction 2026-05-01: previous PKR 4,000 old-battery return credit is wrong. Removed from confirmed totals until corrected amount/source is provided.",
+        "image": {
+          "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
+          "caption": "Disputed Grommet Set Reference \u00b7 Reference Material \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "03:43:58",
+          "media_type": "photo",
+          "component_group": "documentation_reference",
+          "specific_component": "disputed_grommet_set_reference",
+          "stage": "reference_material",
+          "media_id": "20260422_034358_gp_Bg6nSlPw",
+          "matched_tokens": [
+            "2026-05-01:",
+            "user",
+            "correction",
+            "2026"
+          ],
+          "match_basis": "inventory_match",
+          "match_score": 72
+        }
+      },
+      {
         "entry_id": "part_mech_clutch_master_slave_refresh",
         "workstream": "mechanical_baseline",
         "item": "Clutch master and slave cylinder refresh kit",
@@ -21780,36 +21759,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_mech_distributor_cap_rotor_tuneup",
-        "workstream": "mechanical_baseline",
-        "item": "Distributor cap rotor and ignition tune-up consumables",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH BASELINE MUST REPLACE during full restore if distributor ignition remains",
-        "image": {
-          "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
-          "caption": "Engine bay ignition service area - related local mechanical inspection photo",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_mech_distributor_cap_rotor_tuneup"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
-        }
-      },
-      {
         "entry_id": "part_mech_engine_oil_filter_service",
         "workstream": "mechanical_baseline",
         "item": "Engine oil + oil filter service pack",
@@ -21880,8 +21829,8 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH BASELINE MUST REPLACE old soft fuel lines during full restore",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
+        "notes": "Spec: diesel-rated SAE J30R9/J30R14T2 or DIN 73379-3E hose; 8 mm feed, 6 mm return/bleed, 3.2-3.5 mm injector leak-off only after measuring actual nipples. Use fuel-injection clamps. Do not fabricate high-pressure injector pipes.",
         "image": {
           "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
           "caption": "Engine bay hose routing - related local mechanical inspection photo",
@@ -21900,6 +21849,36 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "part_mech_heat_glow_plugs_set",
+        "workstream": "mechanical_baseline",
+        "item": "Heat/glow plugs set - diesel 2H",
+        "status": "new_only_planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "supply_type": "part",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_diesel_correction",
+        "notes": "Diesel baseline item. Buy NEW only; confirm fitted engine code plus current plug voltage/thread/reach or old plug part number before payment.",
+        "image": {
+          "path": "../../photos/20260422_004412_gp_OclpaTdg_2.jpg",
+          "caption": "Heat/glow plugs set - diesel 2H \u00b7 related Mechanical Baseline evidence",
+          "captured_date": "2026-04-22",
+          "captured_time": "00:44:12",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "engine_bay_chassis_interface",
+          "stage": "underside_inspection",
+          "media_id": "20260422_004412_gp_OclpaTdg_2",
+          "matched_tokens": [
+            "engine_bay"
+          ],
+          "match_basis": "workstream_fallback",
+          "match_score": 0
+        }
+      },
+      {
         "entry_id": "part_mech_heater_hose_set",
         "workstream": "mechanical_baseline",
         "item": "Heater hose set with clamps",
@@ -21910,8 +21889,8 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH BASELINE MUST REPLACE during full restore",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
+        "notes": "Spec: front heater hoses Toyota 99552-30500 L=400 and 99552-30300 L=280 or EPDM SAE J20R3 heater hose matched to heater/engine nipples, expected 16 mm / 5/8 inch ID after measurement. Include clamps and confirm whether rear heater circuit exists.",
         "image": {
           "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
           "caption": "Heater/cooling hose routing - related local mechanical inspection photo",
@@ -21940,8 +21919,8 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH BASELINE MUST REPLACE during full restore",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
+        "notes": "Spec: Toyota radiator cap 16401-41021 or exact pressure-equivalent cap for the fitted radiator neck; replace with coolant hose service.",
         "image": {
           "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
           "caption": "Radiator support and hose area - related local mechanical inspection photo",
@@ -21970,8 +21949,8 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH BASELINE MUST REPLACE during full restore",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
+        "notes": "Spec: 2H/HJ47 molded EPDM coolant hoses, upper Toyota 16571-68020 and lower Toyota 16572-68020; clamp refs 90460-50016/96111-10500 plus lower outlet 96111-10560. Verify actual radiator and thermostat housing geometry before payment.",
         "image": {
           "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
           "caption": "Radiator hose routing and clamps - local mechanical inspection photo",
@@ -21990,36 +21969,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_mech_spark_plugs_set",
-        "workstream": "mechanical_baseline",
-        "item": "Spark plugs set",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH BASELINE MUST REPLACE during full restore",
-        "image": {
-          "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
-          "caption": "Engine bay service area - related local mechanical inspection photo",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_mech_spark_plugs_set"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
-        }
-      },
-      {
         "entry_id": "part_mech_vacuum_hose_refresh",
         "workstream": "mechanical_baseline",
         "item": "Vacuum hose refresh kit",
@@ -22030,8 +21979,8 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH BASELINE MUST REPLACE old brittle vacuum lines during full restore",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
+        "notes": "Spec: reinforced vacuum hose matched to actual barbs; brake booster/vacuum pump hose must not collapse. 2H vacuum-pump oil outlet hose OEM 90923-02079 if that hose is fitted. Replace suspect check valves and clips.",
         "image": {
           "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
           "caption": "Engine bay hose routing - related local mechanical inspection photo",
@@ -22228,19 +22177,6 @@ window.J40_DASHBOARD_DATA = {
       }
     ],
     "procurement_evidence_images": [
-      {
-        "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
-        "caption": "Rubber Grommet Assortment \u00b7 Procurement Reconciliation \u00b7 2026-04-22",
-        "captured_date": "2026-04-22",
-        "captured_time": "03:43:58",
-        "media_type": "photo",
-        "component_group": "procurement_inventory",
-        "specific_component": "rubber_grommet_assortment",
-        "stage": "procurement_reconciliation",
-        "media_id": "20260422_034358_gp_Bg6nSlPw",
-        "matched_tokens": [],
-        "match_basis": "procurement_reconciliation"
-      },
       {
         "path": "../../photos/20260422_003700_gp_gFb0LBcw.jpg",
         "caption": "Rust Remover Container \u00b7 Procurement Reconciliation \u00b7 2026-04-22",
@@ -23059,6 +22995,19 @@ window.J40_DASHBOARD_DATA = {
         "media_id": "20260410_031735_gp_kiTH5tGA",
         "matched_tokens": [],
         "match_basis": "procurement_reconciliation"
+      },
+      {
+        "path": "../../photos/20260410_031723_gp_NA7IGHnA.jpg",
+        "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+        "captured_date": "2026-04-10",
+        "captured_time": "03:17:23",
+        "media_type": "photo",
+        "component_group": "procurement_inventory",
+        "specific_component": "wiring_harness_and_connectors",
+        "stage": "procurement_reconciliation",
+        "media_id": "20260410_031723_gp_NA7IGHnA",
+        "matched_tokens": [],
+        "match_basis": "procurement_reconciliation"
       }
     ]
   },
@@ -23067,9 +23016,9 @@ window.J40_DASHBOARD_DATA = {
       {
         "supply_type": "tool",
         "previously": 34,
-        "in_process": 3,
+        "in_process": 11,
         "still_required": 9,
-        "total": 46
+        "total": 54
       },
       {
         "supply_type": "substance",
@@ -23080,10 +23029,10 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "supply_type": "part",
-        "previously": 89,
-        "in_process": 6,
-        "still_required": 166,
-        "total": 261
+        "previously": 88,
+        "in_process": 7,
+        "still_required": 164,
+        "total": 259
       }
     ],
     "rows_by_status": {
@@ -23864,24 +23813,20 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 27 into Parts inventory.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_internal_compact_covered_blade_fuse_box__8d4fd7a1f9a4.png",
-            "caption": "Internal compact covered blade fuse box (OEM-style) x3 \u00b7 Selling Site Image",
+            "path": "./assets/image-needed.svg",
+            "caption": "MIDI fuse block image disputed - exact order or received image required",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
-            "stage": "procurement_reconciliation",
+            "component_group": "",
+            "specific_component": "",
+            "stage": "",
             "media_id": "",
             "matched_tokens": [
-              "way",
-              "car",
-              "fuse",
-              "box",
-              "row"
+              "row_54"
             ],
-            "match_basis": "selling_site_match",
-            "match_score": 75
+            "match_basis": "manual_image_disputed",
+            "match_score": 999
           }
         },
         {
@@ -24373,18 +24318,24 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 51 into Parts inventory. | User update 2026-05-01: 4 H4 connectors received; 2 required for H4 headlights, 2 spare; no top-up required.",
           "image": {
-            "path": "../../photos/20260403_004136.jpg",
-            "caption": "H4 ceramic headlight connectors - x4 received \u00b7 equivalent inventory reference",
-            "captured_date": "2026-04-03",
-            "captured_time": "00:41:36",
+            "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
+            "caption": "Disputed Grommet Set Reference \u00b7 Reference Material \u00b7 2026-04-22",
+            "captured_date": "2026-04-22",
+            "captured_time": "03:43:58",
             "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "wiring_harness_and_fuse_distribution",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260403_004136",
-            "matched_tokens": [],
-            "match_basis": "inventory_fallback",
-            "match_score": 0
+            "component_group": "documentation_reference",
+            "specific_component": "disputed_grommet_set_reference",
+            "stage": "reference_material",
+            "media_id": "20260422_034358_gp_Bg6nSlPw",
+            "matched_tokens": [
+              "2026-05-01:",
+              "received",
+              "evidence",
+              "inventory",
+              "user"
+            ],
+            "match_basis": "inventory_match",
+            "match_score": 88
           }
         },
         {
@@ -24526,23 +24477,20 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 34 into Parts inventory.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_internal_compact_covered_blade_fuse_box__8d4fd7a1f9a4.png",
-            "caption": "Internal compact covered blade fuse box (OEM-style) x3 \u00b7 Selling Site Image",
+            "path": "./assets/image-needed.svg",
+            "caption": "MIDI/498 30A fuse image disputed - exact order or received image required",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
-            "stage": "procurement_reconciliation",
+            "component_group": "",
+            "specific_component": "",
+            "stage": "",
             "media_id": "",
             "matched_tokens": [
-              "automotive",
-              "fuse",
-              "auto",
-              "row"
+              "row_58"
             ],
-            "match_basis": "selling_site_match",
-            "match_score": 63
+            "match_basis": "manual_image_disputed",
+            "match_score": 999
           }
         },
         {
@@ -24563,23 +24511,20 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 35 into Parts inventory.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_internal_compact_covered_blade_fuse_box__8d4fd7a1f9a4.png",
-            "caption": "Internal compact covered blade fuse box (OEM-style) x3 \u00b7 Selling Site Image",
+            "path": "./assets/image-needed.svg",
+            "caption": "MIDI/498 50A fuse image disputed - exact order or received image required",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
-            "stage": "procurement_reconciliation",
+            "component_group": "",
+            "specific_component": "",
+            "stage": "",
             "media_id": "",
             "matched_tokens": [
-              "automotive",
-              "fuse",
-              "auto",
-              "row"
+              "row_59"
             ],
-            "match_basis": "selling_site_match",
-            "match_score": 63
+            "match_basis": "manual_image_disputed",
+            "match_score": 999
           }
         },
         {
@@ -24600,23 +24545,20 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 36 into Parts inventory.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_internal_compact_covered_blade_fuse_box__8d4fd7a1f9a4.png",
-            "caption": "Internal compact covered blade fuse box (OEM-style) x3 \u00b7 Selling Site Image",
+            "path": "./assets/image-needed.svg",
+            "caption": "MIDI/498 50A fuse image disputed - exact order or received image required",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
-            "stage": "procurement_reconciliation",
+            "component_group": "",
+            "specific_component": "",
+            "stage": "",
             "media_id": "",
             "matched_tokens": [
-              "automotive",
-              "fuse",
-              "auto",
-              "row"
+              "row_60"
             ],
-            "match_basis": "selling_site_match",
-            "match_score": 63
+            "match_basis": "manual_image_disputed",
+            "match_score": 999
           }
         },
         {
@@ -24637,23 +24579,20 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 37 into Parts inventory.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_internal_compact_covered_blade_fuse_box__8d4fd7a1f9a4.png",
-            "caption": "Internal compact covered blade fuse box (OEM-style) x3 \u00b7 Selling Site Image",
+            "path": "./assets/image-needed.svg",
+            "caption": "MIDI/498 60A fuse image disputed - exact order or received image required",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
-            "stage": "procurement_reconciliation",
+            "component_group": "",
+            "specific_component": "",
+            "stage": "",
             "media_id": "",
             "matched_tokens": [
-              "automotive",
-              "fuse",
-              "auto",
-              "row"
+              "row_61"
             ],
-            "match_basis": "selling_site_match",
-            "match_score": 63
+            "match_basis": "manual_image_disputed",
+            "match_score": 999
           }
         },
         {
@@ -24736,7 +24675,7 @@ window.J40_DASHBOARD_DATA = {
           "inventory_group": "electrical",
           "item": "New battery purchase - installed",
           "vendor": "Ghazi Road",
-          "amount": "16000",
+          "amount": "20000",
           "currency": "PKR",
           "workstream": "",
           "status_group": "previously",
@@ -24745,20 +24684,25 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "Y",
           "delivery_status": "Y",
           "evidence_ref": "",
-          "notes": "New battery is already purchased and installed. Gross PKR 20,000 less old battery return credit PKR 4,000 equals net PKR 16,000.",
+          "notes": "New battery is already purchased and installed. Gross PKR 20,000 retained. User correction 2026-05-01: old battery return credit is disputed and is no longer netted against this row.",
           "image": {
-            "path": "../../photos/20260403_004136.jpg",
-            "caption": "New battery purchase - installed \u00b7 equivalent inventory reference",
-            "captured_date": "2026-04-03",
-            "captured_time": "00:41:36",
+            "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
+            "caption": "Disputed Grommet Set Reference \u00b7 Reference Material \u00b7 2026-04-22",
+            "captured_date": "2026-04-22",
+            "captured_time": "03:43:58",
             "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "wiring_harness_and_fuse_distribution",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260403_004136",
-            "matched_tokens": [],
-            "match_basis": "inventory_fallback",
-            "match_score": 0
+            "component_group": "documentation_reference",
+            "specific_component": "disputed_grommet_set_reference",
+            "stage": "reference_material",
+            "media_id": "20260422_034358_gp_Bg6nSlPw",
+            "matched_tokens": [
+              "2026-05-01:",
+              "user",
+              "correction",
+              "2026"
+            ],
+            "match_basis": "inventory_match",
+            "match_score": 72
           }
         },
         {
@@ -25855,28 +25799,23 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "received",
           "payment_status": "paid",
           "delivery_status": "received",
-          "evidence_ref": "user_seed|akber_khan-00489|akber_khan-00497|fj40-00276|fj40-00282|user_update_2026-04-22_grommet_received",
-          "notes": "User confirmed this grommet set was received; exact product link: https://www.aliexpress.com/i/1005008318051049.html",
+          "evidence_ref": "user_seed|akber_khan-00489|akber_khan-00497|fj40-00276|fj40-00282|user_update_2026-04-22_grommet_received|user_update_2026-05-01_grommet_image_wrong",
+          "notes": "User confirmed this grommet set was received; exact product link: https://www.aliexpress.com/i/1005008318051049.html. User correction 2026-05-01: current tracker image is incorrect; require exact order/received photo before treating image as evidence.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/expenses_rubber_grommet_set_5b9d248b95f1.webp",
-            "caption": "Rubber grommet set \u00b7 AliExpress \u00b7 Selling Site Image",
+            "path": "./assets/image-needed.svg",
+            "caption": "Rubber grommet set image disputed - exact AliExpress order or received-set image required",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
-            "stage": "procurement_reconciliation",
+            "component_group": "",
+            "specific_component": "",
+            "stage": "",
             "media_id": "",
             "matched_tokens": [
-              "part_rubber_grommet_set",
-              "https://www.aliexpress.com/i/1005008318051049.html",
-              "1005008318051049",
-              "rubber",
-              "grommet",
-              "aliexpress"
+              "part_rubber_grommet_set"
             ],
-            "match_basis": "selling_site_match",
-            "match_score": 229
+            "match_basis": "manual_image_disputed",
+            "match_score": 999
           }
         },
         {
@@ -26047,40 +25986,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "manual_override",
             "match_score": 999
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "credit_old_battery_return",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Old battery return credit",
-          "vendor": "Ghazi Road",
-          "amount": "-4000",
-          "currency": "PKR",
-          "workstream": "mechanical_baseline",
-          "status_group": "previously",
-          "status_detail": "credited",
-          "procurement_stage": "completed",
-          "payment_status": "received",
-          "delivery_status": "completed",
-          "evidence_ref": "akber_khan-00760",
-          "notes": "PKR 4,000 return value received against the old battery; net new-battery cost is PKR 16,000.",
-          "image": {
-            "path": "../../photos/20260422_004412_gp_OclpaTdg_2.jpg",
-            "caption": "Old battery return credit \u00b7 related Mechanical Baseline evidence",
-            "captured_date": "2026-04-22",
-            "captured_time": "00:44:12",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "engine_bay_chassis_interface",
-            "stage": "underside_inspection",
-            "media_id": "20260422_004412_gp_OclpaTdg_2",
-            "matched_tokens": [
-              "engine_bay"
-            ],
-            "match_basis": "workstream_fallback",
-            "match_score": 0
           }
         },
         {
@@ -27620,18 +27525,22 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "User update 2026-05-01: ordered Ironman Foamcell kit for PKR 575000 after discount; front dampers tracked as separate shipment.",
           "image": {
-            "path": "../../photos/20260403_004136.jpg",
-            "caption": "Ironman Foamcell suspension kit - main shipment (front dampers separate) \u00b7 equivalent inventory reference",
-            "captured_date": "2026-04-03",
-            "captured_time": "00:41:36",
+            "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
+            "caption": "Disputed Grommet Set Reference \u00b7 Reference Material \u00b7 2026-04-22",
+            "captured_date": "2026-04-22",
+            "captured_time": "03:43:58",
             "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "wiring_harness_and_fuse_distribution",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260403_004136",
-            "matched_tokens": [],
-            "match_basis": "inventory_fallback",
-            "match_score": 0
+            "component_group": "documentation_reference",
+            "specific_component": "disputed_grommet_set_reference",
+            "stage": "reference_material",
+            "media_id": "20260422_034358_gp_Bg6nSlPw",
+            "matched_tokens": [
+              "2026-05-01:",
+              "user",
+              "2026"
+            ],
+            "match_basis": "inventory_match",
+            "match_score": 68
           }
         },
         {
@@ -27689,20 +27598,22 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "user_update_2026-05-01_ironman_foamcell_order|image_2026-05-01_ironman_foamcell_parts_list",
           "notes": "User update 2026-05-01: Ironman Foamcell suspension kit ordered from attached parts list; PKR 600000 less PKR 25000 discount = PKR 575000 total. Track as main shipment plus a separate front damper shipment. Supplier list shows part numbers 24635FE, 24636FE, TOY001B, TOY002B, 415UBK, 713UK, 343LH, 343RH, 3523, 346. All previous local spring, OME/Bilstein, separate bushing, shackle, and U-bolt alternatives removed from active parts list.",
           "image": {
-            "path": "../../photos/20260331_224423.jpg",
-            "caption": "Ironman Foamcell suspension kit - main shipment (front dampers separate) \u00b7 related Brake System evidence",
-            "captured_date": "2026-03-31",
-            "captured_time": "22:44:23",
+            "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
+            "caption": "Disputed Grommet Set Reference \u00b7 Reference Material \u00b7 2026-04-22",
+            "captured_date": "2026-04-22",
+            "captured_time": "03:43:58",
             "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_floor_underside_and_lines",
-            "stage": "underside_inspection",
-            "media_id": "20260331_224423",
+            "component_group": "documentation_reference",
+            "specific_component": "disputed_grommet_set_reference",
+            "stage": "reference_material",
+            "media_id": "20260422_034358_gp_Bg6nSlPw",
             "matched_tokens": [
-              "20260331_224423"
+              "2026-05-01:",
+              "user",
+              "2026"
             ],
-            "match_basis": "workstream_fallback",
-            "match_score": 0
+            "match_basis": "inventory_match",
+            "match_score": 68
           }
         },
         {
@@ -27735,6 +27646,43 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [],
             "match_basis": "inventory_fallback",
             "match_score": 0
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "credit_old_battery_return",
+          "supply_type": "part",
+          "inventory_group": "electrical",
+          "item": "Old battery return credit",
+          "vendor": "Ghazi Road",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "mechanical_baseline",
+          "status_group": "in_process",
+          "status_detail": "needs_confirmation",
+          "procurement_stage": "needs_confirmation",
+          "payment_status": "unknown",
+          "delivery_status": "needs_confirmation",
+          "evidence_ref": "akber_khan-00760|user_update_2026-05-01_battery_credit_wrong",
+          "notes": "User correction 2026-05-01: previous PKR 4,000 old-battery return credit is wrong. Removed from confirmed totals until corrected amount/source is provided.",
+          "image": {
+            "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
+            "caption": "Disputed Grommet Set Reference \u00b7 Reference Material \u00b7 2026-04-22",
+            "captured_date": "2026-04-22",
+            "captured_time": "03:43:58",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "disputed_grommet_set_reference",
+            "stage": "reference_material",
+            "media_id": "20260422_034358_gp_Bg6nSlPw",
+            "matched_tokens": [
+              "2026-05-01:",
+              "user",
+              "correction",
+              "2026"
+            ],
+            "match_basis": "inventory_match",
+            "match_score": 72
           }
         },
         {
@@ -27797,9 +27745,9 @@ window.J40_DASHBOARD_DATA = {
             "stage": "reference_material",
             "media_id": "20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938",
             "matched_tokens": [
+              "20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938",
               "20260424",
               "241938794080938",
-              "20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938",
               "nylon",
               "fiber",
               "polishing",
@@ -27838,8 +27786,8 @@ window.J40_DASHBOARD_DATA = {
             "stage": "reference_material",
             "media_id": "20260424_part_seam_sealer_autohub_order_1761310",
             "matched_tokens": [
-              "20260424",
               "1761310",
+              "20260424",
               "20260424_part_seam_sealer_autohub_order_1761310",
               "seam",
               "sealer",
@@ -27945,6 +27893,262 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "manual_override",
             "match_score": 999
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_harden_3ton_trolley_jack_730213",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Harden 3Ton Hydraulic Trolley Jack 730213",
+          "vendor": "Toolsmart.pk",
+          "amount": "54450",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order",
+          "notes": "Paid Toolsmart order dated 2026-05-01; primary 3T trolley jack for lifting before supporting chassis on stands.",
+          "image": {
+            "path": "../../photos/20260403_004136.jpg",
+            "caption": "Harden 3Ton Hydraulic Trolley Jack 730213 \u00b7 equivalent inventory reference",
+            "captured_date": "2026-04-03",
+            "captured_time": "00:41:36",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "wiring_harness_and_fuse_distribution",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260403_004136",
+            "matched_tokens": [],
+            "match_basis": "inventory_fallback",
+            "match_score": 0
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_harden_spring_clamp_set_4in_6pc",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Harden 6Pc x 4 inch Spring Clamp Set",
+          "vendor": "Toolsmart.pk",
+          "amount": "1200",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order",
+          "notes": "Paid Toolsmart order dated 2026-05-01; clamp set for holding pads, small parts, and temporary setup during cleaning/bodywork.",
+          "image": {
+            "path": "../../photos/20260403_004136.jpg",
+            "caption": "Harden 6Pc x 4 inch Spring Clamp Set \u00b7 equivalent inventory reference",
+            "captured_date": "2026-04-03",
+            "captured_time": "00:41:36",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "wiring_harness_and_fuse_distribution",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260403_004136",
+            "matched_tokens": [],
+            "match_basis": "inventory_fallback",
+            "match_score": 0
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_harden_white_rubber_mallet_700g_590437",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Harden White Rubber Mallet with Fiberglass Handle 700g 590437",
+          "vendor": "Toolsmart.pk",
+          "amount": "2380",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order",
+          "notes": "Paid Toolsmart order dated 2026-05-01; soft mallet for non-marring persuasion and aluminium/bodywork shaping.",
+          "image": {
+            "path": "../../photos/20260403_004136.jpg",
+            "caption": "Harden White Rubber Mallet with Fiberglass Handle 700g 590437 \u00b7 equivalent inventory reference",
+            "captured_date": "2026-04-03",
+            "captured_time": "00:41:36",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "wiring_harness_and_fuse_distribution",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260403_004136",
+            "matched_tokens": [],
+            "match_basis": "inventory_fallback",
+            "match_score": 0
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_ingco_dead_blow_mallet_2lb_hdbm08028",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Ingco Dead blow mallet 2lb HDBM08028",
+          "vendor": "Toolsmart.pk",
+          "amount": "2050",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order",
+          "notes": "Paid Toolsmart order dated 2026-05-01; dead blow mallet for controlled non-rebound strikes during suspension/bodywork setup.",
+          "image": {
+            "path": "../../photos/20260403_004136.jpg",
+            "caption": "Ingco Dead blow mallet 2lb HDBM08028 \u00b7 equivalent inventory reference",
+            "captured_date": "2026-04-03",
+            "captured_time": "00:41:36",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "wiring_harness_and_fuse_distribution",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260403_004136",
+            "matched_tokens": [],
+            "match_basis": "inventory_fallback",
+            "match_score": 0
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_total_jack_stands_3ton_thjs0301_2pairs",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Total Jack stand 3Ton THJS0301 - 2 pairs",
+          "vendor": "Toolsmart.pk",
+          "amount": "19200",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order",
+          "notes": "Paid Toolsmart order dated 2026-05-01; quantity 2 pairs at PKR 9600 each, four stands total for chassis support.",
+          "image": {
+            "path": "../../photos/20260403_004136.jpg",
+            "caption": "Total Jack stand 3Ton THJS0301 - 2 pairs \u00b7 equivalent inventory reference",
+            "captured_date": "2026-04-03",
+            "captured_time": "00:41:36",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "wiring_harness_and_fuse_distribution",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260403_004136",
+            "matched_tokens": [],
+            "match_basis": "inventory_fallback",
+            "match_score": 0
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_total_wrecking_bar_600mm_tht431242",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Total Wrecking bar 600mm THT431242",
+          "vendor": "Toolsmart.pk",
+          "amount": "2860",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order",
+          "notes": "Paid Toolsmart order dated 2026-05-01; one of 9 physical items in PKR 94510 order for chassis lift/clean/suspension work.",
+          "image": {
+            "path": "../../photos/20260403_004136.jpg",
+            "caption": "Total Wrecking bar 600mm THT431242 \u00b7 equivalent inventory reference",
+            "captured_date": "2026-04-03",
+            "captured_time": "00:41:36",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "wiring_harness_and_fuse_distribution",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260403_004136",
+            "matched_tokens": [],
+            "match_basis": "inventory_fallback",
+            "match_score": 0
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_wadfow_body_fender_hammer_set_whz1d07",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Wadfow 7 Pcs Body And Fender Hammer Set WHZ1D07",
+          "vendor": "Toolsmart.pk",
+          "amount": "9870",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order",
+          "notes": "Paid Toolsmart order dated 2026-05-01; hammer and dolly set for aluminium/body panel shaping.",
+          "image": {
+            "path": "../../photos/20260403_004136.jpg",
+            "caption": "Wadfow 7 Pcs Body And Fender Hammer Set WHZ1D07 \u00b7 equivalent inventory reference",
+            "captured_date": "2026-04-03",
+            "captured_time": "00:41:36",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "wiring_harness_and_fuse_distribution",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260403_004136",
+            "matched_tokens": [],
+            "match_basis": "inventory_fallback",
+            "match_score": 0
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_wadfow_pressure_sprayer_wrs1550",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Wadfow Pressure sprayer WRS1550",
+          "vendor": "Toolsmart.pk",
+          "amount": "2500",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order",
+          "notes": "Paid Toolsmart order dated 2026-05-01; 5L sprayer for water-based degreaser application during chassis/engine/transmission cleaning.",
+          "image": {
+            "path": "../../photos/20260403_004136.jpg",
+            "caption": "Wadfow Pressure sprayer WRS1550 \u00b7 equivalent inventory reference",
+            "captured_date": "2026-04-03",
+            "captured_time": "00:41:36",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "wiring_harness_and_fuse_distribution",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260403_004136",
+            "matched_tokens": [],
+            "match_basis": "inventory_fallback",
+            "match_score": 0
           }
         }
       ],
@@ -28584,22 +28788,18 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Active required purchase item from Procurement_Pass2. | Tub refit locked to original OEM mount locations; no custom offset mounting. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: prioritize as low-risk, locally available buy-first item. | Price basis 2026-04-15: body mount rubber set, local pattern if correct hardness and sleeve fit verified. | Age/condition rule: NEW_ONLY body mount rubbers/sleeves.",
           "image": {
-            "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
-            "caption": "Rubber Grommet Assortment \u00b7 Procurement Reconciliation \u00b7 2026-04-22",
-            "captured_date": "2026-04-22",
-            "captured_time": "03:43:58",
+            "path": "../../photos/20260403_004136.jpg",
+            "caption": "Body-to-chassis mount rubber kit \u00b7 equivalent inventory reference",
+            "captured_date": "2026-04-03",
+            "captured_time": "00:41:36",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "rubber_grommet_assortment",
+            "specific_component": "wiring_harness_and_fuse_distribution",
             "stage": "procurement_reconciliation",
-            "media_id": "20260422_034358_gp_Bg6nSlPw",
-            "matched_tokens": [
-              "chassis",
-              "rubber",
-              "procurement"
-            ],
-            "match_basis": "inventory_match",
-            "match_score": 36
+            "media_id": "20260403_004136",
+            "matched_tokens": [],
+            "match_basis": "inventory_fallback",
+            "match_score": 0
           }
         },
         {
@@ -29147,38 +29347,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "selling_site_match",
             "match_score": 176
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_21",
-          "supply_type": "part",
-          "inventory_group": "parts",
-          "item": "Distributor cap rotor and ignition tune-up consumables",
-          "vendor": "Use local Toyota/common parts markets; buy as one batch after inspection.",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "",
-          "evidence_ref": "",
-          "notes": "Active required purchase item from Procurement_Pass2. | RR action=Use local Toyota/common parts markets; buy as one batch after inspection.; evidence=Common Toyota service items should be bought as a local bundle after tub-off inspection confirms exact spec.",
-          "image": {
-            "path": "../../photos/20260403_004136.jpg",
-            "caption": "Distributor cap rotor and ignition tune-up consumables \u00b7 equivalent inventory reference",
-            "captured_date": "2026-04-03",
-            "captured_time": "00:41:36",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "wiring_harness_and_fuse_distribution",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260403_004136",
-            "matched_tokens": [],
-            "match_basis": "inventory_fallback",
-            "match_score": 0
           }
         },
         {
@@ -30267,21 +30435,20 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "6mm PLUSE Switch10 Amp 16mm Latching Push Button Switch 12V and 24v Angel Eye LED Waterproof Stainless Steel Round (16mm, Red) Price in Pakistan | Open item with no procurement evidence yet. | Migrated from Wiring row 129 into Parts inventory.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_internal_compact_covered_blade_fuse_box__8d4fd7a1f9a4.png",
-            "caption": "Internal compact covered blade fuse box (OEM-style) x3 \u00b7 Selling Site Image",
+            "path": "./assets/image-needed.svg",
+            "caption": "Hazard red latching pushbutton image disputed - exact 12V hazard switch image required",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
-            "stage": "procurement_reconciliation",
+            "component_group": "",
+            "specific_component": "",
+            "stage": "",
             "media_id": "",
             "matched_tokens": [
-              "red",
-              "automotive"
+              "row_96"
             ],
-            "match_basis": "selling_site_match",
-            "match_score": 48
+            "match_basis": "manual_image_disputed",
+            "match_score": 999
           }
         },
         {
@@ -30744,9 +30911,9 @@ window.J40_DASHBOARD_DATA = {
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
+              "https://www.daraz.pk/products/6-ways-12-24v-automotive-circuit-blade-fuse-box-for-car-truck-vehicle-i486699111.html",
               "486699111",
               "oem-style",
-              "https://www.daraz.pk/products/6-ways-12-24v-automotive-circuit-blade-fuse-box-for-car-truck-vehicle-i486699111.html",
               "internal",
               "compact",
               "covered",
@@ -31002,21 +31169,18 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Migrated from Parts_Estimates; needs buy/restore decision before ordering.",
           "image": {
-            "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
-            "caption": "Rubber Grommet Assortment \u00b7 Procurement Reconciliation \u00b7 2026-04-22",
-            "captured_date": "2026-04-22",
-            "captured_time": "03:43:58",
+            "path": "../../photos/20260403_004136.jpg",
+            "caption": "New rubber mountings between chassis and body \u00b7 equivalent inventory reference",
+            "captured_date": "2026-04-03",
+            "captured_time": "00:41:36",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "rubber_grommet_assortment",
+            "specific_component": "wiring_harness_and_fuse_distribution",
             "stage": "procurement_reconciliation",
-            "media_id": "20260422_034358_gp_Bg6nSlPw",
-            "matched_tokens": [
-              "rubber",
-              "chassis"
-            ],
-            "match_basis": "inventory_match",
-            "match_score": 32
+            "media_id": "20260403_004136",
+            "matched_tokens": [],
+            "match_basis": "inventory_fallback",
+            "match_score": 0
           }
         },
         {
@@ -32620,22 +32784,20 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
           "notes": "Replace all tub mounts before final body refit torque",
           "image": {
-            "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
-            "caption": "Rubber Grommet Assortment \u00b7 Procurement Reconciliation \u00b7 2026-04-22",
-            "captured_date": "2026-04-22",
-            "captured_time": "03:43:58",
+            "path": "../../photos/20260405_234652.jpg",
+            "caption": "Body-to-chassis mount rubber kit \u00b7 related Chassis Rubbers evidence",
+            "captured_date": "2026-04-05",
+            "captured_time": "23:46:52",
             "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "rubber_grommet_assortment",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260422_034358_gp_Bg6nSlPw",
+            "component_group": "body_floor",
+            "specific_component": "floor_seam_and_body_mount_rust",
+            "stage": "rust_assessment",
+            "media_id": "20260405_234652",
             "matched_tokens": [
-              "chassis",
-              "rubber",
-              "2026"
+              "20260405_234652"
             ],
-            "match_basis": "inventory_match",
-            "match_score": 44
+            "match_basis": "workstream_fallback",
+            "match_score": 0
           }
         },
         {
@@ -33028,40 +33190,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_mech_distributor_cap_rotor_tuneup",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Distributor cap rotor and ignition tune-up consumables",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "mechanical_baseline",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH BASELINE MUST REPLACE during full restore if distributor ignition remains",
-          "image": {
-            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
-            "caption": "Engine bay ignition service area - related local mechanical inspection photo",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_mech_distributor_cap_rotor_tuneup"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_mech_engine_mount_set",
           "supply_type": "part",
           "inventory_group": "mechanical",
@@ -33143,8 +33271,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH BASELINE MUST REPLACE old soft fuel lines during full restore",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
+          "notes": "Spec: diesel-rated SAE J30R9/J30R14T2 or DIN 73379-3E hose; 8 mm feed, 6 mm return/bleed, 3.2-3.5 mm injector leak-off only after measuring actual nipples. Use fuel-injection clamps. Do not fabricate high-pressure injector pipes.",
           "image": {
             "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
             "caption": "Engine bay hose routing - related local mechanical inspection photo",
@@ -33164,6 +33292,40 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "part_mech_heat_glow_plugs_set",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Heat/glow plugs set - diesel 2H",
+          "vendor": "",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "mechanical_baseline",
+          "status_group": "still_required",
+          "status_detail": "new_only_planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_diesel_correction",
+          "notes": "Diesel baseline item. Buy NEW only; confirm fitted engine code plus current plug voltage/thread/reach or old plug part number before payment.",
+          "image": {
+            "path": "../../photos/20260422_004412_gp_OclpaTdg_2.jpg",
+            "caption": "Heat/glow plugs set - diesel 2H \u00b7 related Mechanical Baseline evidence",
+            "captured_date": "2026-04-22",
+            "captured_time": "00:44:12",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "engine_bay_chassis_interface",
+            "stage": "underside_inspection",
+            "media_id": "20260422_004412_gp_OclpaTdg_2",
+            "matched_tokens": [
+              "engine_bay"
+            ],
+            "match_basis": "workstream_fallback",
+            "match_score": 0
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "part_mech_heater_hose_set",
           "supply_type": "part",
           "inventory_group": "mechanical",
@@ -33177,8 +33339,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH BASELINE MUST REPLACE during full restore",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
+          "notes": "Spec: front heater hoses Toyota 99552-30500 L=400 and 99552-30300 L=280 or EPDM SAE J20R3 heater hose matched to heater/engine nipples, expected 16 mm / 5/8 inch ID after measurement. Include clamps and confirm whether rear heater circuit exists.",
           "image": {
             "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
             "caption": "Heater/cooling hose routing - related local mechanical inspection photo",
@@ -33211,8 +33373,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH BASELINE MUST REPLACE during full restore",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
+          "notes": "Spec: Toyota radiator cap 16401-41021 or exact pressure-equivalent cap for the fitted radiator neck; replace with coolant hose service.",
           "image": {
             "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
             "caption": "Radiator support and hose area - related local mechanical inspection photo",
@@ -33245,8 +33407,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH BASELINE MUST REPLACE during full restore",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
+          "notes": "Spec: 2H/HJ47 molded EPDM coolant hoses, upper Toyota 16571-68020 and lower Toyota 16572-68020; clamp refs 90460-50016/96111-10500 plus lower outlet 96111-10560. Verify actual radiator and thermostat housing geometry before payment.",
           "image": {
             "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
             "caption": "Radiator hose routing and clamps - local mechanical inspection photo",
@@ -33259,40 +33421,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_mech_radiator_hose_set"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_mech_spark_plugs_set",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Spark plugs set",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "mechanical_baseline",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH BASELINE MUST REPLACE during full restore",
-          "image": {
-            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
-            "caption": "Engine bay service area - related local mechanical inspection photo",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_mech_spark_plugs_set"
             ],
             "match_basis": "manual_override",
             "match_score": 999
@@ -33313,8 +33441,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH BASELINE MUST REPLACE old brittle vacuum lines during full restore",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
+          "notes": "Spec: reinforced vacuum hose matched to actual barbs; brake booster/vacuum pump hose must not collapse. 2H vacuum-pump oil outlet hose OEM 90923-02079 if that hose is fitted. Replace suspect check valves and clips.",
           "image": {
             "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
             "caption": "Engine bay hose routing - related local mechanical inspection photo",
@@ -33901,9 +34029,9 @@ window.J40_DASHBOARD_DATA = {
             "stage": "reference_material",
             "media_id": "20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489",
             "matched_tokens": [
-              "3070231697877489",
-              "20260424",
               "20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489",
+              "20260424",
+              "3070231697877489",
               "electrical",
               "test",
               "2026",
@@ -33959,6 +34087,43 @@ window.J40_DASHBOARD_DATA = {
     "all_rows": [
       {
         "source": "expenses",
+        "source_ref": "credit_old_battery_return",
+        "supply_type": "part",
+        "inventory_group": "electrical",
+        "item": "Old battery return credit",
+        "vendor": "Ghazi Road",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "mechanical_baseline",
+        "status_group": "in_process",
+        "status_detail": "needs_confirmation",
+        "procurement_stage": "needs_confirmation",
+        "payment_status": "unknown",
+        "delivery_status": "needs_confirmation",
+        "evidence_ref": "akber_khan-00760|user_update_2026-05-01_battery_credit_wrong",
+        "notes": "User correction 2026-05-01: previous PKR 4,000 old-battery return credit is wrong. Removed from confirmed totals until corrected amount/source is provided.",
+        "image": {
+          "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
+          "caption": "Disputed Grommet Set Reference \u00b7 Reference Material \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "03:43:58",
+          "media_type": "photo",
+          "component_group": "documentation_reference",
+          "specific_component": "disputed_grommet_set_reference",
+          "stage": "reference_material",
+          "media_id": "20260422_034358_gp_Bg6nSlPw",
+          "matched_tokens": [
+            "2026-05-01:",
+            "user",
+            "correction",
+            "2026"
+          ],
+          "match_basis": "inventory_match",
+          "match_score": 72
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_ironman_front_dampers_separate_shipment",
         "supply_type": "part",
         "inventory_group": "mechanical",
@@ -34007,20 +34172,22 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "user_update_2026-05-01_ironman_foamcell_order|image_2026-05-01_ironman_foamcell_parts_list",
         "notes": "User update 2026-05-01: Ironman Foamcell suspension kit ordered from attached parts list; PKR 600000 less PKR 25000 discount = PKR 575000 total. Track as main shipment plus a separate front damper shipment. Supplier list shows part numbers 24635FE, 24636FE, TOY001B, TOY002B, 415UBK, 713UK, 343LH, 343RH, 3523, 346. All previous local spring, OME/Bilstein, separate bushing, shackle, and U-bolt alternatives removed from active parts list.",
         "image": {
-          "path": "../../photos/20260331_224423.jpg",
-          "caption": "Ironman Foamcell suspension kit - main shipment (front dampers separate) \u00b7 related Brake System evidence",
-          "captured_date": "2026-03-31",
-          "captured_time": "22:44:23",
+          "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
+          "caption": "Disputed Grommet Set Reference \u00b7 Reference Material \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "03:43:58",
           "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "frame_floor_underside_and_lines",
-          "stage": "underside_inspection",
-          "media_id": "20260331_224423",
+          "component_group": "documentation_reference",
+          "specific_component": "disputed_grommet_set_reference",
+          "stage": "reference_material",
+          "media_id": "20260422_034358_gp_Bg6nSlPw",
           "matched_tokens": [
-            "20260331_224423"
+            "2026-05-01:",
+            "user",
+            "2026"
           ],
-          "match_basis": "workstream_fallback",
-          "match_score": 0
+          "match_basis": "inventory_match",
+          "match_score": 68
         }
       },
       {
@@ -34041,18 +34208,22 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "User update 2026-05-01: ordered Ironman Foamcell kit for PKR 575000 after discount; front dampers tracked as separate shipment.",
         "image": {
-          "path": "../../photos/20260403_004136.jpg",
-          "caption": "Ironman Foamcell suspension kit - main shipment (front dampers separate) \u00b7 equivalent inventory reference",
-          "captured_date": "2026-04-03",
-          "captured_time": "00:41:36",
+          "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
+          "caption": "Disputed Grommet Set Reference \u00b7 Reference Material \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "03:43:58",
           "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "wiring_harness_and_fuse_distribution",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260403_004136",
-          "matched_tokens": [],
-          "match_basis": "inventory_fallback",
-          "match_score": 0
+          "component_group": "documentation_reference",
+          "specific_component": "disputed_grommet_set_reference",
+          "stage": "reference_material",
+          "media_id": "20260422_034358_gp_Bg6nSlPw",
+          "matched_tokens": [
+            "2026-05-01:",
+            "user",
+            "2026"
+          ],
+          "match_basis": "inventory_match",
+          "match_score": 68
         }
       },
       {
@@ -34184,9 +34355,9 @@ window.J40_DASHBOARD_DATA = {
           "stage": "reference_material",
           "media_id": "20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938",
           "matched_tokens": [
+            "20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938",
             "20260424",
             "241938794080938",
-            "20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938",
             "nylon",
             "fiber",
             "polishing",
@@ -34225,8 +34396,8 @@ window.J40_DASHBOARD_DATA = {
           "stage": "reference_material",
           "media_id": "20260424_part_seam_sealer_autohub_order_1761310",
           "matched_tokens": [
-            "20260424",
             "1761310",
+            "20260424",
             "20260424_part_seam_sealer_autohub_order_1761310",
             "seam",
             "sealer",
@@ -34332,6 +34503,262 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "manual_override",
           "match_score": 999
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_harden_3ton_trolley_jack_730213",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Harden 3Ton Hydraulic Trolley Jack 730213",
+        "vendor": "Toolsmart.pk",
+        "amount": "54450",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order",
+        "notes": "Paid Toolsmart order dated 2026-05-01; primary 3T trolley jack for lifting before supporting chassis on stands.",
+        "image": {
+          "path": "../../photos/20260403_004136.jpg",
+          "caption": "Harden 3Ton Hydraulic Trolley Jack 730213 \u00b7 equivalent inventory reference",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:41:36",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_004136",
+          "matched_tokens": [],
+          "match_basis": "inventory_fallback",
+          "match_score": 0
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_harden_spring_clamp_set_4in_6pc",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Harden 6Pc x 4 inch Spring Clamp Set",
+        "vendor": "Toolsmart.pk",
+        "amount": "1200",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order",
+        "notes": "Paid Toolsmart order dated 2026-05-01; clamp set for holding pads, small parts, and temporary setup during cleaning/bodywork.",
+        "image": {
+          "path": "../../photos/20260403_004136.jpg",
+          "caption": "Harden 6Pc x 4 inch Spring Clamp Set \u00b7 equivalent inventory reference",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:41:36",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_004136",
+          "matched_tokens": [],
+          "match_basis": "inventory_fallback",
+          "match_score": 0
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_harden_white_rubber_mallet_700g_590437",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Harden White Rubber Mallet with Fiberglass Handle 700g 590437",
+        "vendor": "Toolsmart.pk",
+        "amount": "2380",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order",
+        "notes": "Paid Toolsmart order dated 2026-05-01; soft mallet for non-marring persuasion and aluminium/bodywork shaping.",
+        "image": {
+          "path": "../../photos/20260403_004136.jpg",
+          "caption": "Harden White Rubber Mallet with Fiberglass Handle 700g 590437 \u00b7 equivalent inventory reference",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:41:36",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_004136",
+          "matched_tokens": [],
+          "match_basis": "inventory_fallback",
+          "match_score": 0
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_ingco_dead_blow_mallet_2lb_hdbm08028",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Ingco Dead blow mallet 2lb HDBM08028",
+        "vendor": "Toolsmart.pk",
+        "amount": "2050",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order",
+        "notes": "Paid Toolsmart order dated 2026-05-01; dead blow mallet for controlled non-rebound strikes during suspension/bodywork setup.",
+        "image": {
+          "path": "../../photos/20260403_004136.jpg",
+          "caption": "Ingco Dead blow mallet 2lb HDBM08028 \u00b7 equivalent inventory reference",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:41:36",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_004136",
+          "matched_tokens": [],
+          "match_basis": "inventory_fallback",
+          "match_score": 0
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_total_jack_stands_3ton_thjs0301_2pairs",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Total Jack stand 3Ton THJS0301 - 2 pairs",
+        "vendor": "Toolsmart.pk",
+        "amount": "19200",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order",
+        "notes": "Paid Toolsmart order dated 2026-05-01; quantity 2 pairs at PKR 9600 each, four stands total for chassis support.",
+        "image": {
+          "path": "../../photos/20260403_004136.jpg",
+          "caption": "Total Jack stand 3Ton THJS0301 - 2 pairs \u00b7 equivalent inventory reference",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:41:36",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_004136",
+          "matched_tokens": [],
+          "match_basis": "inventory_fallback",
+          "match_score": 0
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_total_wrecking_bar_600mm_tht431242",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Total Wrecking bar 600mm THT431242",
+        "vendor": "Toolsmart.pk",
+        "amount": "2860",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order",
+        "notes": "Paid Toolsmart order dated 2026-05-01; one of 9 physical items in PKR 94510 order for chassis lift/clean/suspension work.",
+        "image": {
+          "path": "../../photos/20260403_004136.jpg",
+          "caption": "Total Wrecking bar 600mm THT431242 \u00b7 equivalent inventory reference",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:41:36",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_004136",
+          "matched_tokens": [],
+          "match_basis": "inventory_fallback",
+          "match_score": 0
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_wadfow_body_fender_hammer_set_whz1d07",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Wadfow 7 Pcs Body And Fender Hammer Set WHZ1D07",
+        "vendor": "Toolsmart.pk",
+        "amount": "9870",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order",
+        "notes": "Paid Toolsmart order dated 2026-05-01; hammer and dolly set for aluminium/body panel shaping.",
+        "image": {
+          "path": "../../photos/20260403_004136.jpg",
+          "caption": "Wadfow 7 Pcs Body And Fender Hammer Set WHZ1D07 \u00b7 equivalent inventory reference",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:41:36",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_004136",
+          "matched_tokens": [],
+          "match_basis": "inventory_fallback",
+          "match_score": 0
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_wadfow_pressure_sprayer_wrs1550",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Wadfow Pressure sprayer WRS1550",
+        "vendor": "Toolsmart.pk",
+        "amount": "2500",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order",
+        "notes": "Paid Toolsmart order dated 2026-05-01; 5L sprayer for water-based degreaser application during chassis/engine/transmission cleaning.",
+        "image": {
+          "path": "../../photos/20260403_004136.jpg",
+          "caption": "Wadfow Pressure sprayer WRS1550 \u00b7 equivalent inventory reference",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:41:36",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_004136",
+          "matched_tokens": [],
+          "match_basis": "inventory_fallback",
+          "match_score": 0
         }
       },
       {
@@ -35110,24 +35537,20 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 27 into Parts inventory.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_internal_compact_covered_blade_fuse_box__8d4fd7a1f9a4.png",
-          "caption": "Internal compact covered blade fuse box (OEM-style) x3 \u00b7 Selling Site Image",
+          "path": "./assets/image-needed.svg",
+          "caption": "MIDI fuse block image disputed - exact order or received image required",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "selling_site_listing_reference",
-          "stage": "procurement_reconciliation",
+          "component_group": "",
+          "specific_component": "",
+          "stage": "",
           "media_id": "",
           "matched_tokens": [
-            "way",
-            "car",
-            "fuse",
-            "box",
-            "row"
+            "row_54"
           ],
-          "match_basis": "selling_site_match",
-          "match_score": 75
+          "match_basis": "manual_image_disputed",
+          "match_score": 999
         }
       },
       {
@@ -35651,18 +36074,24 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 51 into Parts inventory. | User update 2026-05-01: 4 H4 connectors received; 2 required for H4 headlights, 2 spare; no top-up required.",
         "image": {
-          "path": "../../photos/20260403_004136.jpg",
-          "caption": "H4 ceramic headlight connectors - x4 received \u00b7 equivalent inventory reference",
-          "captured_date": "2026-04-03",
-          "captured_time": "00:41:36",
+          "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
+          "caption": "Disputed Grommet Set Reference \u00b7 Reference Material \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "03:43:58",
           "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "wiring_harness_and_fuse_distribution",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260403_004136",
-          "matched_tokens": [],
-          "match_basis": "inventory_fallback",
-          "match_score": 0
+          "component_group": "documentation_reference",
+          "specific_component": "disputed_grommet_set_reference",
+          "stage": "reference_material",
+          "media_id": "20260422_034358_gp_Bg6nSlPw",
+          "matched_tokens": [
+            "2026-05-01:",
+            "received",
+            "evidence",
+            "inventory",
+            "user"
+          ],
+          "match_basis": "inventory_match",
+          "match_score": 88
         }
       },
       {
@@ -35804,23 +36233,20 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 34 into Parts inventory.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_internal_compact_covered_blade_fuse_box__8d4fd7a1f9a4.png",
-          "caption": "Internal compact covered blade fuse box (OEM-style) x3 \u00b7 Selling Site Image",
+          "path": "./assets/image-needed.svg",
+          "caption": "MIDI/498 30A fuse image disputed - exact order or received image required",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "selling_site_listing_reference",
-          "stage": "procurement_reconciliation",
+          "component_group": "",
+          "specific_component": "",
+          "stage": "",
           "media_id": "",
           "matched_tokens": [
-            "automotive",
-            "fuse",
-            "auto",
-            "row"
+            "row_58"
           ],
-          "match_basis": "selling_site_match",
-          "match_score": 63
+          "match_basis": "manual_image_disputed",
+          "match_score": 999
         }
       },
       {
@@ -35841,23 +36267,20 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 35 into Parts inventory.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_internal_compact_covered_blade_fuse_box__8d4fd7a1f9a4.png",
-          "caption": "Internal compact covered blade fuse box (OEM-style) x3 \u00b7 Selling Site Image",
+          "path": "./assets/image-needed.svg",
+          "caption": "MIDI/498 50A fuse image disputed - exact order or received image required",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "selling_site_listing_reference",
-          "stage": "procurement_reconciliation",
+          "component_group": "",
+          "specific_component": "",
+          "stage": "",
           "media_id": "",
           "matched_tokens": [
-            "automotive",
-            "fuse",
-            "auto",
-            "row"
+            "row_59"
           ],
-          "match_basis": "selling_site_match",
-          "match_score": 63
+          "match_basis": "manual_image_disputed",
+          "match_score": 999
         }
       },
       {
@@ -35878,23 +36301,20 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 36 into Parts inventory.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_internal_compact_covered_blade_fuse_box__8d4fd7a1f9a4.png",
-          "caption": "Internal compact covered blade fuse box (OEM-style) x3 \u00b7 Selling Site Image",
+          "path": "./assets/image-needed.svg",
+          "caption": "MIDI/498 50A fuse image disputed - exact order or received image required",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "selling_site_listing_reference",
-          "stage": "procurement_reconciliation",
+          "component_group": "",
+          "specific_component": "",
+          "stage": "",
           "media_id": "",
           "matched_tokens": [
-            "automotive",
-            "fuse",
-            "auto",
-            "row"
+            "row_60"
           ],
-          "match_basis": "selling_site_match",
-          "match_score": 63
+          "match_basis": "manual_image_disputed",
+          "match_score": 999
         }
       },
       {
@@ -35915,23 +36335,20 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 37 into Parts inventory.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_internal_compact_covered_blade_fuse_box__8d4fd7a1f9a4.png",
-          "caption": "Internal compact covered blade fuse box (OEM-style) x3 \u00b7 Selling Site Image",
+          "path": "./assets/image-needed.svg",
+          "caption": "MIDI/498 60A fuse image disputed - exact order or received image required",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "selling_site_listing_reference",
-          "stage": "procurement_reconciliation",
+          "component_group": "",
+          "specific_component": "",
+          "stage": "",
           "media_id": "",
           "matched_tokens": [
-            "automotive",
-            "fuse",
-            "auto",
-            "row"
+            "row_61"
           ],
-          "match_basis": "selling_site_match",
-          "match_score": 63
+          "match_basis": "manual_image_disputed",
+          "match_score": 999
         }
       },
       {
@@ -35975,7 +36392,7 @@ window.J40_DASHBOARD_DATA = {
         "inventory_group": "electrical",
         "item": "New battery purchase - installed",
         "vendor": "Ghazi Road",
-        "amount": "16000",
+        "amount": "20000",
         "currency": "PKR",
         "workstream": "",
         "status_group": "previously",
@@ -35984,20 +36401,25 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "Y",
         "delivery_status": "Y",
         "evidence_ref": "",
-        "notes": "New battery is already purchased and installed. Gross PKR 20,000 less old battery return credit PKR 4,000 equals net PKR 16,000.",
+        "notes": "New battery is already purchased and installed. Gross PKR 20,000 retained. User correction 2026-05-01: old battery return credit is disputed and is no longer netted against this row.",
         "image": {
-          "path": "../../photos/20260403_004136.jpg",
-          "caption": "New battery purchase - installed \u00b7 equivalent inventory reference",
-          "captured_date": "2026-04-03",
-          "captured_time": "00:41:36",
+          "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
+          "caption": "Disputed Grommet Set Reference \u00b7 Reference Material \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "03:43:58",
           "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "wiring_harness_and_fuse_distribution",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260403_004136",
-          "matched_tokens": [],
-          "match_basis": "inventory_fallback",
-          "match_score": 0
+          "component_group": "documentation_reference",
+          "specific_component": "disputed_grommet_set_reference",
+          "stage": "reference_material",
+          "media_id": "20260422_034358_gp_Bg6nSlPw",
+          "matched_tokens": [
+            "2026-05-01:",
+            "user",
+            "correction",
+            "2026"
+          ],
+          "match_basis": "inventory_match",
+          "match_score": 72
         }
       },
       {
@@ -36080,40 +36502,6 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "selling_site_match",
           "match_score": 99
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "credit_old_battery_return",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "Old battery return credit",
-        "vendor": "Ghazi Road",
-        "amount": "-4000",
-        "currency": "PKR",
-        "workstream": "mechanical_baseline",
-        "status_group": "previously",
-        "status_detail": "credited",
-        "procurement_stage": "completed",
-        "payment_status": "received",
-        "delivery_status": "completed",
-        "evidence_ref": "akber_khan-00760",
-        "notes": "PKR 4,000 return value received against the old battery; net new-battery cost is PKR 16,000.",
-        "image": {
-          "path": "../../photos/20260422_004412_gp_OclpaTdg_2.jpg",
-          "caption": "Old battery return credit \u00b7 related Mechanical Baseline evidence",
-          "captured_date": "2026-04-22",
-          "captured_time": "00:44:12",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "engine_bay_chassis_interface",
-          "stage": "underside_inspection",
-          "media_id": "20260422_004412_gp_OclpaTdg_2",
-          "matched_tokens": [
-            "engine_bay"
-          ],
-          "match_basis": "workstream_fallback",
-          "match_score": 0
         }
       },
       {
@@ -36208,28 +36596,23 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "received",
         "payment_status": "paid",
         "delivery_status": "received",
-        "evidence_ref": "user_seed|akber_khan-00489|akber_khan-00497|fj40-00276|fj40-00282|user_update_2026-04-22_grommet_received",
-        "notes": "User confirmed this grommet set was received; exact product link: https://www.aliexpress.com/i/1005008318051049.html",
+        "evidence_ref": "user_seed|akber_khan-00489|akber_khan-00497|fj40-00276|fj40-00282|user_update_2026-04-22_grommet_received|user_update_2026-05-01_grommet_image_wrong",
+        "notes": "User confirmed this grommet set was received; exact product link: https://www.aliexpress.com/i/1005008318051049.html. User correction 2026-05-01: current tracker image is incorrect; require exact order/received photo before treating image as evidence.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/expenses_rubber_grommet_set_5b9d248b95f1.webp",
-          "caption": "Rubber grommet set \u00b7 AliExpress \u00b7 Selling Site Image",
+          "path": "./assets/image-needed.svg",
+          "caption": "Rubber grommet set image disputed - exact AliExpress order or received-set image required",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "selling_site_listing_reference",
-          "stage": "procurement_reconciliation",
+          "component_group": "",
+          "specific_component": "",
+          "stage": "",
           "media_id": "",
           "matched_tokens": [
-            "part_rubber_grommet_set",
-            "https://www.aliexpress.com/i/1005008318051049.html",
-            "1005008318051049",
-            "rubber",
-            "grommet",
-            "aliexpress"
+            "part_rubber_grommet_set"
           ],
-          "match_basis": "selling_site_match",
-          "match_score": 229
+          "match_basis": "manual_image_disputed",
+          "match_score": 999
         }
       },
       {
@@ -39299,21 +39682,20 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "6mm PLUSE Switch10 Amp 16mm Latching Push Button Switch 12V and 24v Angel Eye LED Waterproof Stainless Steel Round (16mm, Red) Price in Pakistan | Open item with no procurement evidence yet. | Migrated from Wiring row 129 into Parts inventory.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_internal_compact_covered_blade_fuse_box__8d4fd7a1f9a4.png",
-          "caption": "Internal compact covered blade fuse box (OEM-style) x3 \u00b7 Selling Site Image",
+          "path": "./assets/image-needed.svg",
+          "caption": "Hazard red latching pushbutton image disputed - exact 12V hazard switch image required",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "selling_site_listing_reference",
-          "stage": "procurement_reconciliation",
+          "component_group": "",
+          "specific_component": "",
+          "stage": "",
           "media_id": "",
           "matched_tokens": [
-            "red",
-            "automotive"
+            "row_96"
           ],
-          "match_basis": "selling_site_match",
-          "match_score": 48
+          "match_basis": "manual_image_disputed",
+          "match_score": 999
         }
       },
       {
@@ -39479,9 +39861,9 @@ window.J40_DASHBOARD_DATA = {
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
+            "https://www.daraz.pk/products/6-ways-12-24v-automotive-circuit-blade-fuse-box-for-car-truck-vehicle-i486699111.html",
             "486699111",
             "oem-style",
-            "https://www.daraz.pk/products/6-ways-12-24v-automotive-circuit-blade-fuse-box-for-car-truck-vehicle-i486699111.html",
             "internal",
             "compact",
             "covered",
@@ -40034,22 +40416,20 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
         "notes": "Replace all tub mounts before final body refit torque",
         "image": {
-          "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
-          "caption": "Rubber Grommet Assortment \u00b7 Procurement Reconciliation \u00b7 2026-04-22",
-          "captured_date": "2026-04-22",
-          "captured_time": "03:43:58",
+          "path": "../../photos/20260405_234652.jpg",
+          "caption": "Body-to-chassis mount rubber kit \u00b7 related Chassis Rubbers evidence",
+          "captured_date": "2026-04-05",
+          "captured_time": "23:46:52",
           "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "rubber_grommet_assortment",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260422_034358_gp_Bg6nSlPw",
+          "component_group": "body_floor",
+          "specific_component": "floor_seam_and_body_mount_rust",
+          "stage": "rust_assessment",
+          "media_id": "20260405_234652",
           "matched_tokens": [
-            "chassis",
-            "rubber",
-            "2026"
+            "20260405_234652"
           ],
-          "match_basis": "inventory_match",
-          "match_score": 44
+          "match_basis": "workstream_fallback",
+          "match_score": 0
         }
       },
       {
@@ -40342,40 +40722,6 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [],
           "match_basis": "inventory_fallback",
           "match_score": 0
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_mech_distributor_cap_rotor_tuneup",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Distributor cap rotor and ignition tune-up consumables",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "mechanical_baseline",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH BASELINE MUST REPLACE during full restore if distributor ignition remains",
-        "image": {
-          "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
-          "caption": "Engine bay ignition service area - related local mechanical inspection photo",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_mech_distributor_cap_rotor_tuneup"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
         }
       },
       {
@@ -40690,8 +41036,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH BASELINE MUST REPLACE old soft fuel lines during full restore",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
+        "notes": "Spec: diesel-rated SAE J30R9/J30R14T2 or DIN 73379-3E hose; 8 mm feed, 6 mm return/bleed, 3.2-3.5 mm injector leak-off only after measuring actual nipples. Use fuel-injection clamps. Do not fabricate high-pressure injector pipes.",
         "image": {
           "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
           "caption": "Engine bay hose routing - related local mechanical inspection photo",
@@ -40839,6 +41185,40 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "part_mech_heat_glow_plugs_set",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Heat/glow plugs set - diesel 2H",
+        "vendor": "",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "mechanical_baseline",
+        "status_group": "still_required",
+        "status_detail": "new_only_planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_diesel_correction",
+        "notes": "Diesel baseline item. Buy NEW only; confirm fitted engine code plus current plug voltage/thread/reach or old plug part number before payment.",
+        "image": {
+          "path": "../../photos/20260422_004412_gp_OclpaTdg_2.jpg",
+          "caption": "Heat/glow plugs set - diesel 2H \u00b7 related Mechanical Baseline evidence",
+          "captured_date": "2026-04-22",
+          "captured_time": "00:44:12",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "engine_bay_chassis_interface",
+          "stage": "underside_inspection",
+          "media_id": "20260422_004412_gp_OclpaTdg_2",
+          "matched_tokens": [
+            "engine_bay"
+          ],
+          "match_basis": "workstream_fallback",
+          "match_score": 0
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_mech_heater_hose_set",
         "supply_type": "part",
         "inventory_group": "mechanical",
@@ -40852,8 +41232,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH BASELINE MUST REPLACE during full restore",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
+        "notes": "Spec: front heater hoses Toyota 99552-30500 L=400 and 99552-30300 L=280 or EPDM SAE J20R3 heater hose matched to heater/engine nipples, expected 16 mm / 5/8 inch ID after measurement. Include clamps and confirm whether rear heater circuit exists.",
         "image": {
           "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
           "caption": "Heater/cooling hose routing - related local mechanical inspection photo",
@@ -40982,8 +41362,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH BASELINE MUST REPLACE during full restore",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
+        "notes": "Spec: Toyota radiator cap 16401-41021 or exact pressure-equivalent cap for the fitted radiator neck; replace with coolant hose service.",
         "image": {
           "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
           "caption": "Radiator support and hose area - related local mechanical inspection photo",
@@ -41048,8 +41428,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH BASELINE MUST REPLACE during full restore",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
+        "notes": "Spec: 2H/HJ47 molded EPDM coolant hoses, upper Toyota 16571-68020 and lower Toyota 16572-68020; clamp refs 90460-50016/96111-10500 plus lower outlet 96111-10560. Verify actual radiator and thermostat housing geometry before payment.",
         "image": {
           "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
           "caption": "Radiator hose routing and clamps - local mechanical inspection photo",
@@ -41196,40 +41576,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "source": "expenses",
-        "source_ref": "part_mech_spark_plugs_set",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Spark plugs set",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "mechanical_baseline",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH BASELINE MUST REPLACE during full restore",
-        "image": {
-          "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
-          "caption": "Engine bay service area - related local mechanical inspection photo",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_mech_spark_plugs_set"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
-        }
-      },
-      {
         "source": "workbook_parts",
         "source_ref": "workbook_parts#row_145",
         "supply_type": "part",
@@ -41372,8 +41718,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH BASELINE MUST REPLACE old brittle vacuum lines during full restore",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
+        "notes": "Spec: reinforced vacuum hose matched to actual barbs; brake booster/vacuum pump hose must not collapse. 2H vacuum-pump oil outlet hose OEM 90923-02079 if that hose is fitted. Replace suspect check valves and clips.",
         "image": {
           "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
           "caption": "Engine bay hose routing - related local mechanical inspection photo",
@@ -41891,22 +42237,18 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Active required purchase item from Procurement_Pass2. | Tub refit locked to original OEM mount locations; no custom offset mounting. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: prioritize as low-risk, locally available buy-first item. | Price basis 2026-04-15: body mount rubber set, local pattern if correct hardness and sleeve fit verified. | Age/condition rule: NEW_ONLY body mount rubbers/sleeves.",
         "image": {
-          "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
-          "caption": "Rubber Grommet Assortment \u00b7 Procurement Reconciliation \u00b7 2026-04-22",
-          "captured_date": "2026-04-22",
-          "captured_time": "03:43:58",
+          "path": "../../photos/20260403_004136.jpg",
+          "caption": "Body-to-chassis mount rubber kit \u00b7 equivalent inventory reference",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:41:36",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "rubber_grommet_assortment",
+          "specific_component": "wiring_harness_and_fuse_distribution",
           "stage": "procurement_reconciliation",
-          "media_id": "20260422_034358_gp_Bg6nSlPw",
-          "matched_tokens": [
-            "chassis",
-            "rubber",
-            "procurement"
-          ],
-          "match_basis": "inventory_match",
-          "match_score": 36
+          "media_id": "20260403_004136",
+          "matched_tokens": [],
+          "match_basis": "inventory_fallback",
+          "match_score": 0
         }
       },
       {
@@ -42185,38 +42527,6 @@ window.J40_DASHBOARD_DATA = {
         "image": {
           "path": "../../photos/20260403_004136.jpg",
           "caption": "Custom U-joints / intermediate shafts \u00b7 equivalent inventory reference",
-          "captured_date": "2026-04-03",
-          "captured_time": "00:41:36",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "wiring_harness_and_fuse_distribution",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260403_004136",
-          "matched_tokens": [],
-          "match_basis": "inventory_fallback",
-          "match_score": 0
-        }
-      },
-      {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_21",
-        "supply_type": "part",
-        "inventory_group": "parts",
-        "item": "Distributor cap rotor and ignition tune-up consumables",
-        "vendor": "Use local Toyota/common parts markets; buy as one batch after inspection.",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "",
-        "evidence_ref": "",
-        "notes": "Active required purchase item from Procurement_Pass2. | RR action=Use local Toyota/common parts markets; buy as one batch after inspection.; evidence=Common Toyota service items should be bought as a local bundle after tub-off inspection confirms exact spec.",
-        "image": {
-          "path": "../../photos/20260403_004136.jpg",
-          "caption": "Distributor cap rotor and ignition tune-up consumables \u00b7 equivalent inventory reference",
           "captured_date": "2026-04-03",
           "captured_time": "00:41:36",
           "media_type": "photo",
@@ -43251,21 +43561,18 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Migrated from Parts_Estimates; needs buy/restore decision before ordering.",
         "image": {
-          "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
-          "caption": "Rubber Grommet Assortment \u00b7 Procurement Reconciliation \u00b7 2026-04-22",
-          "captured_date": "2026-04-22",
-          "captured_time": "03:43:58",
+          "path": "../../photos/20260403_004136.jpg",
+          "caption": "New rubber mountings between chassis and body \u00b7 equivalent inventory reference",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:41:36",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "rubber_grommet_assortment",
+          "specific_component": "wiring_harness_and_fuse_distribution",
           "stage": "procurement_reconciliation",
-          "media_id": "20260422_034358_gp_Bg6nSlPw",
-          "matched_tokens": [
-            "rubber",
-            "chassis"
-          ],
-          "match_basis": "inventory_match",
-          "match_score": 32
+          "media_id": "20260403_004136",
+          "matched_tokens": [],
+          "match_basis": "inventory_fallback",
+          "match_score": 0
         }
       },
       {
@@ -44726,9 +45033,9 @@ window.J40_DASHBOARD_DATA = {
           "stage": "reference_material",
           "media_id": "20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489",
           "matched_tokens": [
-            "3070231697877489",
-            "20260424",
             "20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489",
+            "20260424",
+            "3070231697877489",
             "electrical",
             "test",
             "2026",
@@ -45184,6 +45491,7 @@ window.J40_DASHBOARD_DATA = {
       "dashboard_switch_and_control_hardware",
       "detached_body_panels_and_doors",
       "detached_doors_and_panels",
+      "disputed_grommet_set_reference",
       "driver_footwell_firewall_and_wiring",
       "driver_footwell_firewall_pass_through",
       "electrical_reference_document",
@@ -45225,7 +45533,6 @@ window.J40_DASHBOARD_DATA = {
       "refinished_hinges_brackets_and_trim",
       "refinished_seat_or_mount_bracket",
       "roof_gutter_and_window_channel",
-      "rubber_grommet_assortment",
       "rust_remover_container",
       "service_parts_and_order_confirmations",
       "steering_and_suspension_linkages",
@@ -45259,6 +45566,7 @@ window.J40_DASHBOARD_DATA = {
       "control_hardware_test_fit",
       "corrosion_visible",
       "doors_removed",
+      "image_disputed",
       "inspection_in_progress",
       "panel_removed",
       "partially_disassembled",
@@ -52198,13 +52506,13 @@ window.J40_DASHBOARD_DATA = {
       "captured_date": "2026-04-22",
       "captured_time": "03:43:58",
       "media_type": "photo",
-      "component_group": "procurement_inventory",
-      "specific_component": "rubber_grommet_assortment",
-      "stage": "procurement_reconciliation",
-      "observed_state": "received_or_on_hand",
-      "confidence": "high",
-      "tags": "rubber|grommet|inventory",
-      "notes": "Rubber grommet assortment package; not chassis evidence."
+      "component_group": "documentation_reference",
+      "specific_component": "disputed_grommet_set_reference",
+      "stage": "reference_material",
+      "observed_state": "image_disputed",
+      "confidence": "low",
+      "tags": "rubber|grommet|inventory|disputed",
+      "notes": "User correction 2026-05-01: this is not the grommet set image; do not use as received-item evidence."
     },
     "20260422_054711_gp_V1EgU9oQ": {
       "media_id": "20260422_054711_gp_V1EgU9oQ",

@@ -33,3 +33,10 @@ expenses,part_mech_distributor_cap_rotor_tuneup,photos/20260430_215957_gp_2iBbUa
 expenses,part_mech_engine_mount_set,photos/20260430_215915_gp_ycQ395Gg.jpg,Engine/transmission mount area - related local mechanical inspection photo,attach_mechanical_inventory_image
 expenses,part_mech_clutch_master_slave_refresh,photos/20260430_215939_gp_EjZ7u1ow.jpg,Bellhousing and clutch linkage area - local mechanical inspection photo,attach_mechanical_inventory_image
 expenses,part_battery_purchase,photos/20260410_013927.jpg,Electrical system inventory photo - battery row needs exact battery photo when available,temporary_equivalent_until_battery_photo_added
+workbook_parts,row_54,,MIDI fuse block image disputed - exact order or received image required,user_reported_incorrect_image_2026-05-01|image_disputed|suppress_image
+workbook_parts,row_58,,MIDI/498 30A fuse image disputed - exact order or received image required,user_reported_incorrect_image_2026-05-01|image_disputed|suppress_image
+workbook_parts,row_59,,MIDI/498 50A fuse image disputed - exact order or received image required,user_reported_incorrect_image_2026-05-01|image_disputed|suppress_image
+workbook_parts,row_60,,MIDI/498 50A fuse image disputed - exact order or received image required,user_reported_incorrect_image_2026-05-01|image_disputed|suppress_image
+workbook_parts,row_61,,MIDI/498 60A fuse image disputed - exact order or received image required,user_reported_incorrect_image_2026-05-01|image_disputed|suppress_image
+workbook_parts,row_96,,Hazard red latching pushbutton image disputed - exact 12V hazard switch image required,user_reported_incorrect_image_2026-05-01|image_disputed|suppress_image
+expenses,part_rubber_grommet_set,,Rubber grommet set image disputed - exact AliExpress order or received-set image required,user_reported_incorrect_image_2026-05-01|image_disputed|suppress_image

@@ -1,20 +1,20 @@
 # Parts Buy-Now Plan (This Week)
 
-- Generated: 2026-05-01 01:42:17
+- Generated: 2026-05-01 03:27:25
 - Source ledger: `data/manual/expenses.csv` (`bucket=parts`)
 - Overlap resolution table: `data/manual/parts_overlap_resolution.csv`
 - This-week list: `data/manual/parts_buy_now_this_week.csv`
 
 ## This-Week Counts
 
-- Rows in this-week list: 25
-- `confirm_price_then_order`: 21
+- Rows in this-week list: 24
+- `confirm_price_then_order`: 20
 - `track_delivery`: 4
 
 ## Priority Split
 
 - `P0`: 12
-- `P1`: 13
+- `P1`: 12
 
 ## Overlap Decisions Applied
 
@@ -27,7 +27,7 @@
 
 ## Immediate Actions
 
-- `confirm_price_then_order` (21):
+- `confirm_price_then_order` (20):
   - `part_bedliner_sprays` [P0] Bedliner sprays (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_body_mount_hardware_kit` [P0] Body mount hardware kit bolts sleeves washers (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_body_mount_rubber_kit` [P0] Body-to-chassis mount rubber kit (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
@@ -39,14 +39,13 @@
   - `part_horn_relay` [P0] Horn relay (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_star_washers` [P0] Star washers (bite into metal) (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_accessory_belt_set` [P1] Accessory belt set (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_mech_distributor_cap_rotor_tuneup` [P1] Distributor cap rotor and ignition tune-up consumables (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_engine_oil_filter_service` [P1] Engine oil + oil filter service pack (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_fuel_filter` [P1] Fuel filter (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_fuel_hose_and_clamps` [P1] Fuel-rated rubber hose and clamp kit (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
+  - `part_mech_heat_glow_plugs_set` [P1] Heat/glow plugs set - diesel 2H (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_heater_hose_set` [P1] Heater hose set with clamps (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_radiator_cap` [P1] Radiator cap (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_radiator_hose_set` [P1] Radiator hose set upper plus lower with clamps (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_mech_spark_plugs_set` [P1] Spark plugs set (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_vacuum_hose_refresh` [P1] Vacuum hose refresh kit (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_brake_flex_hose_set` [P1] Brake flexible hose set front and rear (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
 - `track_delivery` (4):

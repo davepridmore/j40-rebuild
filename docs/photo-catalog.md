@@ -1,6 +1,6 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-05-01 00:28:55
+- Generated: 2026-05-01 01:39:31
 - Total media files indexed: 508 (497 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
@@ -16,15 +16,15 @@
 | Stage | File Count |
 | --- | ---: |
 | `baseline_walkaround` | 34 |
-| `electrical_rework` | 17 |
+| `electrical_rework` | 18 |
 | `hardware_refinish` | 20 |
 | `mechanical_inspection` | 5 |
-| `procurement_reconciliation` | 116 |
-| `reference_material` | 24 |
+| `procurement_reconciliation` | 119 |
+| `reference_material` | 25 |
 | `removed_parts_cataloguing` | 27 |
-| `rust_assessment` | 35 |
-| `stripdown_cataloguing` | 111 |
-| `underside_inspection` | 119 |
+| `rust_assessment` | 51 |
+| `stripdown_cataloguing` | 110 |
+| `underside_inspection` | 99 |
 
 ## Component Summary
 
@@ -39,18 +39,26 @@
 | `body_exterior` | `panel_detail_and_markings` | 3 | 2026-03-29 | `20260329_051759_gp_xEzrDYhQ.jpg` |
 | `body_exterior` | `rear_side_opening` | 1 | 2026-03-23 | `20260323_201957.jpg` |
 | `body_exterior` | `wing_mirror_set` | 1 | 2026-04-12 | `20260412_223539.jpg` |
-| `body_exterior` | `wing_removal_and_body_lift_prep` | 36 | 2026-04-19 to 2026-04-21 | `20260419_190643_gp_UM5SilTQ.jpg` |
+| `body_exterior` | `wing_removal_and_body_lift_prep` | 35 | 2026-04-19 to 2026-04-21 | `20260419_190643_gp_UM5SilTQ.jpg` |
+| `body_floor` | `body_off_shell_floor_and_bulkhead` | 16 | 2026-04-22 | `20260422_004449_gp_ZzlGoYsQ.jpg` |
 | `body_floor` | `floor_pan_rust_zones` | 30 | 2026-04-13 to 2026-04-23 | `20260413_005435.jpg` |
 | `body_floor` | `floor_seam_and_body_mount_rust` | 1 | 2026-04-05 | `20260405_234652.jpg` |
 | `body_floor` | `rear_cargo_floor` | 2 | 2026-03-23 to 2026-04-13 | `20260323_202016.jpg` |
 | `chassis_underside` | `body_mount_and_crossmember_detail` | 1 | 2026-04-05 | `20260405_234546.jpg` |
+| `chassis_underside` | `engine_bay_chassis_interface` | 6 | 2026-04-22 | `20260422_004347_gp_WIy0j6zw.jpg` |
 | `chassis_underside` | `frame_and_mount_points` | 9 | 2026-04-05 to 2026-04-23 | `20260405_234542_gp_hucEa1CQ.jpg` |
-| `chassis_underside` | `frame_floor_underside_and_lines` | 87 | 2026-03-31 to 2026-04-22 | `20260331_030439_gp_Hm0ga9nQ.jpg` |
+| `chassis_underside` | `frame_floor_underside_and_lines` | 40 | 2026-03-31 | `20260331_030439_gp_Hm0ga9nQ.jpg` |
+| `chassis_underside` | `frame_rail_body_mount_and_hard_line_detail` | 6 | 2026-04-22 | `20260422_004306_gp_vGlNr2UA.jpg` |
+| `chassis_underside` | `front_frame_horns_bumper_and_radiator_support` | 6 | 2026-04-22 | `20260422_004423_gp_B1N5ThVw.jpg` |
+| `chassis_underside` | `full_chassis_frame_overview` | 2 | 2026-04-22 | `20260422_004241_gp_hASLbowg.jpg` |
 | `chassis_underside` | `rear_axle_and_leaf_springs` | 10 | 2026-03-24 | `20260324_004815_gp_Q9G5DYGw.jpg` |
+| `chassis_underside` | `rear_axle_spring_hanger_and_crossmember` | 3 | 2026-04-22 | `20260422_004254_gp_SplHLSYA.jpg` |
 | `chassis_underside` | `rear_frame_crossmember_and_mounts` | 1 | 2026-04-05 | `20260405_234541.jpg` |
 | `chassis_underside` | `rear_shock_and_crossmember_view` | 1 | 2026-04-05 | `20260405_234811.jpg` |
 | `chassis_underside` | `steering_and_suspension_linkages` | 7 | 2026-04-06 to 2026-04-23 | `20260406_030839_gp_VYKBhRNA.jpg` |
 | `chassis_underside` | `suspension_or_linkage_mount` | 2 | 2026-04-11 | `20260411_220207.jpg` |
+| `chassis_underside` | `transmission_crossmember_and_driveline_mounts` | 4 | 2026-04-22 | `20260422_004319_gp_Ttqz46Sw.jpg` |
+| `documentation_reference` | `aftermarket_chassis_reference_image` | 1 | 2026-04-22 | `20260422_015512_gp_BmYsVZ6w.jpg` |
 | `documentation_reference` | `electrical_reference_document` | 2 | 2026-04-03 | `20260403_202907.jpg` |
 | `documentation_reference` | `electrical_wiring_diagram` | 2 | 2026-04-03 | `20260403_202920.jpg` |
 | `documentation_reference` | `handwritten_notes` | 3 | 2026-04-01 | `20260401_111029_gp_6ebGjXdw.jpg` |
@@ -63,19 +71,22 @@
 | `engine_bay` | `bellhousing_clutch_linkage_and_gearbox_case` | 3 | 2026-04-30 | `20260430_215915_gp_ycQ395Gg.jpg` |
 | `engine_bay` | `cooling_hoses_fan_belt_and_radiator_support` | 2 | 2026-04-30 | `20260430_215957_gp_2iBbUagw.jpg` |
 | `engine_bay` | `engine_bay_overview` | 15 | 2026-03-17 to 2026-04-23 | `20260317_235150.jpg` |
-| `engine_bay` | `engine_interior_and_stripdown_detail` | 33 | 2026-04-20 | `20260420_005132_gp_MgOMVKpQ.jpeg` |
+| `engine_bay` | `engine_interior_and_stripdown_detail` | 32 | 2026-04-20 | `20260420_005132_gp_MgOMVKpQ.jpeg` |
 | `interior_cabin` | `cabin_overview` | 16 | 2026-03-17 | `20260317_165113.jpg` |
 | `interior_cabin` | `cabin_view_through_glass` | 2 | 2026-03-29 | `20260329_122855.jpg` |
 | `interior_cabin` | `dashboard_and_cabin_stripdown` | 19 | 2026-03-23 | `20260323_180218.jpg` |
 | `interior_cabin` | `dashboard_lower_structure` | 1 | 2026-03-23 | `20260323_190005.jpg` |
+| `interior_cabin` | `dashboard_shell_and_bulkhead` | 1 | 2026-04-22 | `20260422_074709_gp_o4wiXyjA.jpg` |
 | `interior_cabin` | `dashboard_shell_and_cabin` | 1 | 2026-04-13 | `20260413_040719.jpg` |
-| `interior_cabin` | `dashboard_switch_and_control_hardware` | 2 | 2026-04-21 | `20260421_192813_gp_0jvYAo8g.jpg` |
+| `interior_cabin` | `dashboard_switch_and_control_hardware` | 3 | 2026-04-21 | `20260421_192813_gp_0jvYAo8g.jpg` |
 | `interior_cabin` | `driver_footwell_firewall_and_wiring` | 1 | 2026-03-21 | `20260321_235600.jpg` |
 | `interior_cabin` | `floor_pan_and_firewall` | 7 | 2026-03-21 | `20260321_235436.jpg` |
 | `interior_cabin` | `front_door_card` | 2 | 2026-03-17 | `20260317_165203.jpg` |
 | `procurement_inventory` | `fuse_distribution_and_power_hardware` | 14 | 2026-04-11 | `20260411_065030.jpg` |
 | `procurement_inventory` | `fuse_distribution_and_wiring` | 2 | 2026-04-05 | `20260405_010322.jpg` |
-| `procurement_inventory` | `hidden_diesel_cutoff_switch_hardware` | 1 | 2026-04-20 | `20260420_221819_gp_YV69fbvA.jpg` |
+| `procurement_inventory` | `hidden_diesel_cutoff_switch_hardware` | 2 | 2026-04-20 | `20260420_221819_gp_YV69fbvA.jpg` |
+| `procurement_inventory` | `rubber_grommet_assortment` | 1 | 2026-04-22 | `20260422_034358_gp_Bg6nSlPw.jpg` |
+| `procurement_inventory` | `rust_remover_container` | 1 | 2026-04-22 | `20260422_003700_gp_gFb0LBcw.jpg` |
 | `procurement_inventory` | `service_parts_and_order_confirmations` | 2 | 2026-04-20 | `20260420_201801_gp_NvXIaGBw.jpg` |
 | `procurement_inventory` | `wiring_harness_and_connectors` | 62 | 2026-04-10 | `20260410_013927.jpg` |
 | `procurement_inventory` | `wiring_harness_and_fuse_distribution` | 35 | 2026-04-03 to 2026-04-04 | `20260403_004136.jpg` |

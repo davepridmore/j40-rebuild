@@ -232,12 +232,13 @@ DATE_DEFAULTS: dict[str, Classification] = {
         ("body_lift", "body_shell", "stripdown"),
     ),
     "20260422": c(
-        "chassis_underside",
-        "frame_floor_underside_and_lines",
-        "underside_inspection",
-        "inspection_in_progress",
+        "body_floor",
+        "body_off_shell_floor_and_bulkhead",
+        "rust_assessment",
+        "corrosion_visible",
         "medium",
-        ("body_off", "chassis", "frame", "inspection"),
+        ("body_off", "body_shell", "floor_pan", "bulkhead", "inspection"),
+        "Body-off shell/floor photos from this date are not chassis evidence unless explicitly overridden.",
     ),
     "other": c(
         "documentation_reference",
@@ -870,6 +871,205 @@ FILE_OVERRIDES: dict[str, Classification] = {
 }
 
 
+CHASSIS_20260422_OVERRIDES: dict[str, Classification] = {
+    "20260422_004241_gp_hASLbowg.jpg": c(
+        "chassis_underside",
+        "full_chassis_frame_overview",
+        "underside_inspection",
+        "body_removed_for_chassis_access",
+        "high",
+        ("body_off", "chassis", "frame", "overview"),
+        "Full-length body-off chassis/frame overview.",
+    ),
+    "20260422_004254_gp_SplHLSYA.jpg": c(
+        "chassis_underside",
+        "rear_axle_spring_hanger_and_crossmember",
+        "underside_inspection",
+        "body_removed_for_chassis_access",
+        "high",
+        ("body_off", "chassis", "rear_axle", "spring_hanger", "crossmember"),
+        "Close-up of rear frame, axle, spring hanger, and crossmember area.",
+    ),
+    "20260422_004257_gp_cxEZbZoQ.jpg": c(
+        "chassis_underside",
+        "rear_axle_spring_hanger_and_crossmember",
+        "underside_inspection",
+        "body_removed_for_chassis_access",
+        "high",
+        ("body_off", "chassis", "rear_axle", "spring_hanger", "crossmember"),
+        "Rear chassis detail with axle, spring hanger, and crossmember visible.",
+    ),
+    "20260422_004301_gp_SU89hisw.jpg": c(
+        "chassis_underside",
+        "rear_axle_spring_hanger_and_crossmember",
+        "underside_inspection",
+        "body_removed_for_chassis_access",
+        "high",
+        ("body_off", "chassis", "rear_axle", "leaf_spring", "crossmember"),
+        "Rear axle and chassis rail/crossmember close-up.",
+    ),
+    "20260422_004306_gp_vGlNr2UA.jpg": c(
+        "chassis_underside",
+        "frame_rail_body_mount_and_hard_line_detail",
+        "underside_inspection",
+        "body_removed_for_chassis_access",
+        "high",
+        ("body_off", "chassis", "frame_rail", "body_mount", "hard_lines"),
+        "Frame rail, body mount, and hard-line routing detail.",
+    ),
+    "20260422_004311_gp_994KQ0Pw.jpg": c(
+        "chassis_underside",
+        "frame_rail_body_mount_and_hard_line_detail",
+        "underside_inspection",
+        "body_removed_for_chassis_access",
+        "high",
+        ("body_off", "chassis", "frame_rail", "body_mount", "hard_lines"),
+        "Close-up of chassis rail and nearby hard-line/bracket routing.",
+    ),
+    "20260422_004319_gp_Ttqz46Sw.jpg": c(
+        "chassis_underside",
+        "transmission_crossmember_and_driveline_mounts",
+        "underside_inspection",
+        "body_removed_for_chassis_access",
+        "high",
+        ("body_off", "chassis", "transmission_crossmember", "driveline_mounts"),
+        "Driveline and transmission-crossmember interface on exposed chassis.",
+    ),
+    "20260422_004323_gp_JD88KuWQ.jpg": c(
+        "chassis_underside",
+        "frame_rail_body_mount_and_hard_line_detail",
+        "underside_inspection",
+        "body_removed_for_chassis_access",
+        "high",
+        ("body_off", "chassis", "frame_rail", "body_mount", "crossmember"),
+        "Frame rail and body-mount pedestal close-up.",
+    ),
+    "20260422_004332_gp_7d5uYWQQ.jpg": c(
+        "chassis_underside",
+        "frame_rail_body_mount_and_hard_line_detail",
+        "underside_inspection",
+        "body_removed_for_chassis_access",
+        "high",
+        ("body_off", "chassis", "frame_rail", "body_mount", "crossmember"),
+        "Central frame rail and mount/crossmember detail.",
+    ),
+    "20260422_004338_gp_35uwfApA.jpg": c(
+        "chassis_underside",
+        "transmission_crossmember_and_driveline_mounts",
+        "underside_inspection",
+        "body_removed_for_chassis_access",
+        "high",
+        ("body_off", "chassis", "transmission", "crossmember", "mounts"),
+        "Transmission and chassis crossmember area with body removed.",
+    ),
+    "20260422_004347_gp_WIy0j6zw.jpg": c(
+        "chassis_underside",
+        "engine_bay_chassis_interface",
+        "underside_inspection",
+        "body_removed_for_chassis_access",
+        "high",
+        ("body_off", "chassis", "front_frame", "engine_mount_area", "hard_lines"),
+        "Front chassis and engine-bay frame interface detail.",
+    ),
+    "20260422_004356_gp_vTFgPfAQ.jpg": c(
+        "chassis_underside",
+        "engine_bay_chassis_interface",
+        "underside_inspection",
+        "body_removed_for_chassis_access",
+        "high",
+        ("body_off", "chassis", "front_frame", "engine_mount_area", "hard_lines"),
+        "Front frame/engine interface detail with body removed.",
+    ),
+    "20260422_004412_gp_OclpaTdg.jpg": c(
+        "chassis_underside",
+        "engine_bay_chassis_interface",
+        "underside_inspection",
+        "body_removed_for_chassis_access",
+        "high",
+        ("body_off", "chassis", "front_frame", "engine_mount_area", "steering"),
+        "Wide front chassis and engine-interface view.",
+    ),
+    "20260422_004423_gp_B1N5ThVw.jpg": c(
+        "chassis_underside",
+        "front_frame_horns_bumper_and_radiator_support",
+        "underside_inspection",
+        "body_removed_for_chassis_access",
+        "high",
+        ("body_off", "chassis", "front_frame_horns", "bumper", "radiator_support"),
+        "Front frame horns and bumper/radiator-support area.",
+    ),
+    "20260422_004429_gp_4emWbTrA.jpg": c(
+        "chassis_underside",
+        "front_frame_horns_bumper_and_radiator_support",
+        "underside_inspection",
+        "body_removed_for_chassis_access",
+        "high",
+        ("body_off", "chassis", "front_frame_horns", "bumper", "radiator_support"),
+        "Front chassis overview from bumper/frame-horn end.",
+    ),
+    "20260422_004436_gp_yjCPMWTg.jpg": c(
+        "chassis_underside",
+        "front_frame_horns_bumper_and_radiator_support",
+        "underside_inspection",
+        "body_removed_for_chassis_access",
+        "high",
+        ("body_off", "chassis", "front_frame_horns", "bumper", "front_crossmember"),
+        "Front bumper, frame horns, and front crossmember detail.",
+    ),
+    "20260422_054711_gp_V1EgU9oQ.jpg": c(
+        "chassis_underside",
+        "full_chassis_frame_overview",
+        "underside_inspection",
+        "body_removed_for_chassis_access",
+        "high",
+        ("body_off", "chassis", "frame", "overview"),
+        "Full-length chassis overview after body removal.",
+    ),
+}
+
+FILE_OVERRIDES.update(CHASSIS_20260422_OVERRIDES)
+FILE_OVERRIDES.update(
+    {
+        "20260422_003700_gp_gFb0LBcw.jpg": c(
+            "procurement_inventory",
+            "rust_remover_container",
+            "procurement_reconciliation",
+            "received_or_on_hand",
+            "high",
+            ("rust_remover", "container", "inventory"),
+            "Product/container photo; not chassis evidence.",
+        ),
+        "20260422_015512_gp_BmYsVZ6w.jpg": c(
+            "documentation_reference",
+            "aftermarket_chassis_reference_image",
+            "reference_material",
+            "reference_only",
+            "high",
+            ("reference", "aftermarket", "chassis"),
+            "Reference image only; not current-vehicle chassis evidence.",
+        ),
+        "20260422_034358_gp_Bg6nSlPw.jpg": c(
+            "documentation_reference",
+            "disputed_grommet_set_reference",
+            "reference_material",
+            "image_disputed",
+            "low",
+            ("rubber", "grommet", "inventory", "disputed"),
+            "User correction 2026-05-01: this is not the grommet set image; do not use as received-item evidence.",
+        ),
+        "20260422_074709_gp_o4wiXyjA.jpg": c(
+            "interior_cabin",
+            "dashboard_shell_and_bulkhead",
+            "stripdown_cataloguing",
+            "body_removed_for_chassis_access",
+            "high",
+            ("dashboard", "bulkhead", "cabin", "body_off"),
+            "Interior/dashboard shell view; not chassis evidence.",
+        ),
+    }
+)
+
+
 TIMESTAMP_RE = re.compile(r"^(?P<date>\d{8})_(?P<time>\d{6})")
 IMG_DATE_RE = re.compile(r"^IMG-(?P<date>\d{8})-")
 SCREENSHOT_DATE_RE = re.compile(r"^Screenshot_(?P<date>\d{8})_")
@@ -892,7 +1092,7 @@ def detect_date_key(file_name: str) -> str:
 
 def canonical_media_stem(file_name: str) -> str:
     stem = Path(file_name).stem
-    stem = re.sub(r"_gp_[a-zA-Z0-9]+$", "", stem)
+    stem = re.sub(r"_gp_[a-zA-Z0-9]+(?:_\d+)?$", "", stem)
     stem = re.sub(r"_exported_\d+$", "", stem)
     return stem
 

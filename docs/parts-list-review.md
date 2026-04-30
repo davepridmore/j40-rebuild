@@ -1,22 +1,24 @@
 # Parts List Review
 
-- Generated: 2026-05-01 01:41:29
-- Source: `data/manual/expenses.csv` (`bucket=parts`) -> 57 rows
+- Generated: 2026-05-01 03:27:25
+- Source: `data/manual/expenses.csv` (`bucket=parts`) -> 58 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
 
 ## Action Buckets
 
-- `buy_now`: 21
-- `completed_or_received`: 18
+- `buy_now`: 20
+- `cancelled_or_not_required`: 2
+- `completed_or_received`: 17
 - `deferred`: 6
+- `needs_confirmation`: 1
 - `next_phase`: 7
 - `ordered_waiting_arrival`: 4
 - `researching`: 1
 
 ## Workstream Split
 
-- `mechanical_baseline`: 16
+- `mechanical_baseline`: 17
 - `electrical_reset`: 16
 - `body_chassis`: 14
 - `steering_brakes_suspension`: 5
@@ -25,8 +27,8 @@
 
 ## Price Coverage
 
-- `has_confirmed_amount=yes`: 11
-- `has_confirmed_amount=no`: 46
+- `has_confirmed_amount=yes`: 10
+- `has_confirmed_amount=no`: 48
 
 ## Buy-Now / Quote-Ready Missing Price
 
@@ -41,14 +43,13 @@
 - `part_horn_relay` [electrical_reset] Horn relay
 - `part_star_washers` [electrical_reset] Star washers (bite into metal)
 - `part_mech_accessory_belt_set` [mechanical_baseline] Accessory belt set
-- `part_mech_distributor_cap_rotor_tuneup` [mechanical_baseline] Distributor cap rotor and ignition tune-up consumables
 - `part_mech_engine_oil_filter_service` [mechanical_baseline] Engine oil + oil filter service pack
 - `part_mech_fuel_filter` [mechanical_baseline] Fuel filter
 - `part_mech_fuel_hose_and_clamps` [mechanical_baseline] Fuel-rated rubber hose and clamp kit
+- `part_mech_heat_glow_plugs_set` [mechanical_baseline] Heat/glow plugs set - diesel 2H
 - `part_mech_heater_hose_set` [mechanical_baseline] Heater hose set with clamps
 - `part_mech_radiator_cap` [mechanical_baseline] Radiator cap
 - `part_mech_radiator_hose_set` [mechanical_baseline] Radiator hose set upper plus lower with clamps
-- `part_mech_spark_plugs_set` [mechanical_baseline] Spark plugs set
 - `part_mech_vacuum_hose_refresh` [mechanical_baseline] Vacuum hose refresh kit
 - `part_mech_brake_flex_hose_set` [steering_brakes_suspension] Brake flexible hose set front and rear
 

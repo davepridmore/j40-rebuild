@@ -88,7 +88,7 @@
 
 ### Mechanical Replacement Pack (Full Restore)
 
-- `MUST REPLACE (baseline service + reliability)`: engine oil and filter, air filter, fuel filter, spark plugs, distributor cap/rotor tune-up consumables (if distributor ignition remains), accessory belts, radiator upper/lower hoses, heater hoses, thermostat and gasket, radiator cap, vacuum hoses, fuel-rated rubber lines with clamps, and brake flexible hose set.
+- `MUST REPLACE (baseline service + reliability)`: engine oil and filter, air filter, fuel filter, diesel heat/glow plugs after exact engine-code/plug confirmation, accessory belts, radiator upper/lower hoses, heater hoses, thermostat and gasket, radiator cap, vacuum hoses, fuel-rated rubber lines with clamps, and brake flexible hose set.
 - `INSPECT THEN REPLACE`: engine mounts, clutch master/slave hydraulics, and any additional cooling-system wear items found during pressure testing.
 - `Decision rule`: keep these baseline replacements independent from optional upgrades (power steering conversion, premium shocks, audio, etc.) so reliability and safety close first.
 
