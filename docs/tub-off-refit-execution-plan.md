@@ -3,7 +3,7 @@
 - Keep welding scope separate, but lock interface control now.
 - During tub-off, run a focused engine-access inspection and buy condition-based parts only.
 - Before tub goes back, complete mount-point mapping, mount repairs, and trial fit using correct rubbers/hardware/shims.
-- Suspension path is now fixed to: OME dampers plus local front/rear leaf spring packs.
+- Suspension path is now fixed to the ordered Ironman Foamcell kit. Track it as two shipments: main kit plus separate front damper pair.
 
 ## Key Procurement Adds
 
@@ -11,8 +11,8 @@
 - Separate front support rubber / pad pair for the nose side extensions
 - Body mount hardware and captive-nut repair provision
 - Body mount shim/spacer alignment pack
-- Local front and rear leaf spring packs
-- OME Nitrocharger shock set (activated from deferred state)
+- Ironman Foamcell suspension kit main shipment
+- Ironman Foamcell front damper pair separate shipment (`24635FE x2`)
 - Gearbox top-cover service items (condition-based)
 
 ## Chassis Fixing Mount-Control Requirements

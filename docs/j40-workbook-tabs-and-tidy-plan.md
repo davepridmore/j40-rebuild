@@ -1,6 +1,6 @@
 # J40 Workbook Tabs: Understanding + Tidy Plan
 
-- Generated: 2026-04-27 04:25:17
+- Generated: 2026-05-01 00:59:18
 - Workbook: `/Users/davidpridmore/Documents/J40_Costs.xlsx`
 - Sheet count: 17
 - Sheet profile CSV: `data/manual/j40_workbook_sheet_profiles.csv`
@@ -39,7 +39,7 @@
 - `Work` [mixed_reference] rows=29, cols=4, nonempty_rows=22, structured_rows=21
 - `Bodywork` [status_tracking] rows=31, cols=6, nonempty_rows=31, structured_rows=30
 - `Tools` [cost_tracker] rows=57, cols=7, nonempty_rows=48, structured_rows=47
-- `Parts` [cost_tracker] rows=253, cols=29, nonempty_rows=253, structured_rows=252
+- `Parts` [cost_tracker] rows=239, cols=29, nonempty_rows=239, structured_rows=238
 - `Fabrication` [notes_checklist] rows=13, cols=2, nonempty_rows=9, structured_rows=0
 - `Electrical Templates` [mixed_reference] rows=20, cols=14, nonempty_rows=6, structured_rows=0
 - `Master_Costs` [mixed_reference] rows=48, cols=3, nonempty_rows=42, structured_rows=40
@@ -47,9 +47,9 @@
 - `Engine_Transmission_Comparison` [mixed_reference] rows=91, cols=14, nonempty_rows=80, structured_rows=72
 - `Tub_Off_Refit_Plan` [mechanical_spec] rows=13, cols=8, nonempty_rows=12, structured_rows=4
 - `Electrical_Master` [electrical_spec] rows=77, cols=9, nonempty_rows=71, structured_rows=64
-- `Hardware_Budget_Dedup` [cost_tracker] rows=42, cols=10, nonempty_rows=42, structured_rows=41
+- `Hardware_Budget_Dedup` [cost_tracker] rows=40, cols=10, nonempty_rows=40, structured_rows=39
 - `Rubbers_Exact_Online` [cost_tracker] rows=24, cols=12, nonempty_rows=24, structured_rows=23
 - `Rubbers_Kit_Buy` [mixed_reference] rows=16, cols=9, nonempty_rows=15, structured_rows=14
 - `Rubbers_All_Replace_Links` [mixed_reference] rows=23, cols=7, nonempty_rows=23, structured_rows=22
-- `PK_Quality_Path` [mixed_reference] rows=22, cols=12, nonempty_rows=22, structured_rows=21
+- `PK_Quality_Path` [mixed_reference] rows=18, cols=12, nonempty_rows=18, structured_rows=17
 - `PK_Buy_Clean_Direct` [cost_tracker] rows=23, cols=12, nonempty_rows=23, structured_rows=22

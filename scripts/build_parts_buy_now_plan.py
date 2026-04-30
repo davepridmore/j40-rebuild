@@ -67,12 +67,6 @@ OVERLAP_DECISIONS: tuple[OverlapDecision, ...] = (
         rationale="Buy only rust-protection floor coating now; defer comfort layers until body closure is complete.",
     ),
     OverlapDecision(
-        group_id="shock_options",
-        chosen_entries=("part_old_man_emu_shocks",),
-        deferred_entries=("part_bilstein_shocks",),
-        rationale="OME path is active for the current tub-off rebuild and Bilstein stays as deferred alternative.",
-    ),
-    OverlapDecision(
         group_id="primer_system_stack",
         chosen_entries=("part_primer", "part_self_etching_primer", "part_epoxy_primer", "part_seam_sealer", "part_wax_and_grease_remover"),
         deferred_entries=(),

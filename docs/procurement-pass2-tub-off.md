@@ -1,6 +1,6 @@
 # Procurement Pass 2 (Tub-Off, Pakistan Cost Reality)
 
-- Generated: 2026-04-26 03:50:30
+- Generated: 2026-05-01 00:56:09
 - Input matrix: `data/manual/procurement_decision_matrix.csv`
 - Pass-2 matrix: `data/manual/procurement_decision_matrix_pass2.csv`
 - Basket plan: `data/manual/procurement_local_baskets_pass2.csv`
@@ -13,32 +13,37 @@
 
 ## Decision Counts
 
-- `bundle_local_toyota_buy_after_inspection`: 16
+- `bundle_local_toyota_buy_after_inspection`: 11
 - `buy_minimum_qty_now`: 2
 - `confirm_order_state`: 1
 - `confirm_price_then_buy`: 3
-- `defer_as_non_baseline`: 15
+- `defer_as_non_baseline`: 14
 - `defer_until_baseline_closure`: 1
-- `do_not_buy_separately`: 2
 - `hold_until_post_weld_primer`: 1
 - `inspect_then_local_decide`: 2
-- `post_rust_map_body_stack_bundle`: 4
+- `post_rust_map_body_stack_bundle`: 3
 - `scope_audit_before_order`: 1
-- `stock_audit_then_local_topup`: 5
+- `stock_audit_then_local_topup`: 4
+- `track_in_flight_order`: 4
 
 ## Timing Windows
 
-- `post_baseline_only`: 16
-- `post_rust_repair`: 5
-- `post_tub_off_inspection`: 18
-- `pre_order_audit`: 6
-- `review`: 6
+- `in_flight_now`: 4
+- `post_baseline_only`: 15
+- `post_rust_repair`: 4
+- `post_tub_off_inspection`: 13
+- `pre_order_audit`: 5
+- `review`: 4
 - `tub_off_immediate`: 2
 
 ## Immediate Actions (Now)
 
 - `part_metal_protection` Metal protection and restoration products -> buy_minimum_qty_now
 - `part_primer` Primer -> buy_minimum_qty_now
+- `part_nylon_fiber_wool_polishing_disc_sets_2x` Nylon fiber polishing disc and wool buffing polishing disc set (3pcs) plus drill adapter and grinder nut for metals x2 -> track_in_flight_order
+- `part_seam_sealer` Seam sealer -> track_in_flight_order
+- `part_ironman_front_dampers_separate_shipment` Ironman Foamcell front damper pair - separate shipment (24635FE x2) -> track_in_flight_order
+- `part_old_man_emu_shocks` Ironman Foamcell suspension kit - main shipment (front dampers separate) -> track_in_flight_order
 
 ## Practical Outcome
 

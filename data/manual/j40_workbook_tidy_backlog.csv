@@ -1,9 +1,9 @@
 priority,sheet_name,issue_type,issue_detail,recommended_action
 high,Bodywork,inconsistent_status_tokens,Unexpected status tokens: 1,"Map status values to canonical tokens (Y, N, ?, COD, CANCELLED, HAVE TO CHECK)."
-high,Tools,inconsistent_status_tokens,"Unexpected status tokens: M, NOT_PROCURED, PLANNED_OR_OPEN, PROCURED_OR_ON_HAND, SECTION_HEADER","Map status values to canonical tokens (Y, N, ?, COD, CANCELLED, HAVE TO CHECK)."
+high,Tools,inconsistent_status_tokens,"Unexpected status tokens: DUPLICATE, M, NOT_PROCURED, NOT_REQUIRED, ORDERED_IN_FLIGHT, PLANNED_OR_OPEN, PROCURED_OR_ON_HAND, SECTION_HEADER","Map status values to canonical tokens (Y, N, ?, COD, CANCELLED, HAVE TO CHECK)."
 medium,Tools,duplicate_item_with_different_prices,1 items appear with multiple prices.,Keep one active row per item and move alternatives/history into quotes or notes.
 high,Parts,mixed_schema_rows,1 rows do not fit the Item/Price/Vendor/Received/Paid schema.,Move those rows to the correct sheet (for example suspension/spec tabs) and keep this tab cost-only.
-high,Parts,inconsistent_status_tokens,"Unexpected status tokens: 9200 COD, DE_SCOPED_KEEP_RECORD, ESTIMATE_ONLY, NEEDS CHECK, NEEDS_CONFIRMATION, PLANNED_OR_OPEN, PROCURED_OR_ON_HAND, REUSE_EXISTING, SECTION_HEADER, SELECTED_PRIMARY_PATH","Map status values to canonical tokens (Y, N, ?, COD, CANCELLED, HAVE TO CHECK)."
+high,Parts,inconsistent_status_tokens,"Unexpected status tokens: 9200 COD, ESTIMATE_ONLY, NEEDS CHECK, NEEDS_CONFIRMATION, ORDERED_PENDING_DELIVERY, PLANNED_OR_OPEN, PROCURED_OR_ON_HAND, REUSE_EXISTING, SECTION_HEADER","Map status values to canonical tokens (Y, N, ?, COD, CANCELLED, HAVE TO CHECK)."
 medium,Parts,mixed_price_cells,3 price cells contain numeric values mixed with text.,Split numeric amount into amount column and move text into notes/status columns.
 low,Parts,non_numeric_price_cells,12 price cells contain no numeric value.,Fill missing amounts or mark as amount_status=missing.
 medium,Parts,duplicate_item_with_different_prices,1 items appear with multiple prices.,Keep one active row per item and move alternatives/history into quotes or notes.
@@ -12,7 +12,7 @@ high,Engine_Transmission_Comparison,unnamed_columns,"Structured data has unnamed
 medium,Engine_Transmission_Comparison,mixed_price_cells,63 price cells contain numeric values mixed with text.,Split numeric amount into amount column and move text into notes/status columns.
 low,Engine_Transmission_Comparison,non_numeric_price_cells,20 price cells contain no numeric value.,Fill missing amounts or mark as amount_status=missing.
 high,Hardware_Budget_Dedup,inconsistent_status_tokens,Unexpected status tokens: NOT_PURCHASED,"Map status values to canonical tokens (Y, N, ?, COD, CANCELLED, HAVE TO CHECK)."
-medium,Hardware_Budget_Dedup,mixed_price_cells,40 price cells contain numeric values mixed with text.,Split numeric amount into amount column and move text into notes/status columns.
+medium,Hardware_Budget_Dedup,mixed_price_cells,38 price cells contain numeric values mixed with text.,Split numeric amount into amount column and move text into notes/status columns.
 high,Rubbers_Exact_Online,unnamed_columns,Structured data has unnamed columns at positions: 12,Name all active columns and move free-form notes into an explicit notes column.
 high,Rubbers_Exact_Online,inconsistent_status_tokens,"Unexpected status tokens: NOT_PURCHASED, PARTIAL (ONE GROMMET SET APPEARS PROCURED)","Map status values to canonical tokens (Y, N, ?, COD, CANCELLED, HAVE TO CHECK)."
 medium,Rubbers_Exact_Online,mixed_price_cells,21 price cells contain numeric values mixed with text.,Split numeric amount into amount column and move text into notes/status columns.

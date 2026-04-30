@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-04-29T03:51:55+05:00",
+  "generated_at": "2026-05-01T00:59:24+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -17,12 +17,12 @@ window.J40_DASHBOARD_DATA = {
     "workstreams_in_scope": 13,
     "workstreams_active": 7,
     "workstream_evidence_images": 526,
-    "parts_open_rows": 53,
-    "parts_ordered_pending_delivery": 2,
-    "urgent_part_actions": 14,
-    "supply_rows_tracked": 348,
-    "selling_site_images_loaded": 189,
-    "whatsapp_j40_selected_chats": 9,
+    "parts_open_rows": 47,
+    "parts_ordered_pending_delivery": 4,
+    "urgent_part_actions": 16,
+    "supply_rows_tracked": 329,
+    "selling_site_images_loaded": 183,
+    "whatsapp_j40_selected_chats": 8,
     "whatsapp_j40_media_items": 165,
     "whatsapp_j40_media_images": 131,
     "whatsapp_j40_media_videos": 19
@@ -17310,9 +17310,9 @@ window.J40_DASHBOARD_DATA = {
             "stage": "reference_material",
             "media_id": "20260424_part_dielectric_grease_aliexpress_order_3070231697777489",
             "matched_tokens": [
-              "20260424",
               "20260424_part_dielectric_grease_aliexpress_order_3070231697777489",
               "3070231697777489",
+              "20260424",
               "dielectric",
               "grease",
               "aliexpress"
@@ -17389,8 +17389,8 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_rubber_grommet_set",
-              "https://www.aliexpress.com/i/1005008318051049.html",
               "1005008318051049",
+              "https://www.aliexpress.com/i/1005008318051049.html",
               "rubber",
               "grommet",
               "aliexpress"
@@ -17427,9 +17427,9 @@ window.J40_DASHBOARD_DATA = {
             "stage": "reference_material",
             "media_id": "20260424_part_electric_wires_aliexpress_3070027285627489",
             "matched_tokens": [
-              "20260424",
               "3070027285627489",
               "20260424_part_electric_wires_aliexpress_3070027285627489",
+              "20260424",
               "electric",
               "wires"
             ],
@@ -19206,8 +19206,8 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
-          "status": "completed",
-          "detail": "0 part rows are ordered and awaiting delivery."
+          "status": "in_progress",
+          "detail": "1 part rows are ordered and awaiting delivery."
         },
         {
           "label": "Procurement \u00b7 resolve ambiguous stock/receipt rows",
@@ -19221,6 +19221,37 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "involved_parts": [
+        {
+          "entry_id": "part_old_man_emu_shocks",
+          "workstream": "brake_system",
+          "item": "Ironman Foamcell suspension kit - main shipment (front dampers separate)",
+          "status": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "unknown",
+          "delivery_status": "pending_delivery",
+          "amount": "575000",
+          "amount_status": "confirmed",
+          "currency": "PKR",
+          "vendor": "Ironman 4x4 supplier",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_old_man_emu_shocks",
+          "evidence_ref": "user_update_2026-05-01_ironman_foamcell_order|image_2026-05-01_ironman_foamcell_parts_list",
+          "notes": "User update 2026-05-01: Ironman Foamcell suspension kit ordered from attached parts list; PKR 600000 less PKR 25000 discount = PKR 575000 total. Track as main shipment plus a separate front damper shipment. Supplier list shows part numbers 24635FE, 24636FE, TOY001B, TOY002B, 415UBK, 713UK, 343LH, 343RH, 3523, 346. All previous local spring, OME/Bilstein, separate bushing, shackle, and U-bolt alternatives removed from active parts list.",
+          "image": {
+            "path": "./assets/image-needed.svg",
+            "caption": "Image required - add photo evidence",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "",
+            "specific_component": "",
+            "stage": "",
+            "media_id": "",
+            "matched_tokens": [],
+            "match_basis": "placeholder"
+          }
+        },
         {
           "entry_id": "part_mech_brake_flex_hose_set",
           "workstream": "brake_system",
@@ -19464,9 +19495,9 @@ window.J40_DASHBOARD_DATA = {
       "depends_on": [
         "chassis_fixing"
       ],
-      "next_action": "Freeze Ironman foam cell medium suspension spec and procurement set from measured baseline",
+      "next_action": "Track ordered Ironman Foamcell kit as two shipments: main kit plus separate front damper pair",
       "exit_gate": "Upgraded suspension is installed aligned and road-tested with no safety-critical defects",
-      "notes": "Major project track: selected kit includes greasable shackles and greasable pins; avoid duplicate buys.",
+      "notes": "User update 2026-05-01: Ironman Foamcell kit ordered for PKR 575000 total; front 24635FE dampers arrive in a separate shipment. Old local/OME/Bilstein alternatives are removed from active parts tracking.",
       "evidence_source": [
         "whatsapp_akber",
         "akber_khan-00855",
@@ -19733,10 +19764,10 @@ window.J40_DASHBOARD_DATA = {
           "lane": "suspension_upgrade",
           "current_state": "queued",
           "objective": "Install and validate Ironman foam cell medium suspension with matched hardware refresh.",
-          "blocker_summary": "Kit lock and geometry checks must close before final torque.",
+          "blocker_summary": "Both Ironman shipments must be received and contents-checked before suspension install.",
           "gate_to_close": "Ironman foam cell medium suspension with greasable shackles and greasable pins installed and aligned.",
-          "key_procurement_actions": "Lock Ironman medium kit procurement and avoid duplicate separate shackle/pin buys included in the kit.",
-          "evidence_signal": "suspension_geometry_validation_pending"
+          "key_procurement_actions": "Track main kit shipment and separate front 24635FE damper shipment; verify contents against supplier parts list before final torque.",
+          "evidence_signal": "Ironman order logged 2026-05-01; front dampers separate shipment"
         },
         {
           "work_package_id": "WP08",
@@ -19744,10 +19775,10 @@ window.J40_DASHBOARD_DATA = {
           "lane": "suspension_upgrade",
           "current_state": "queued",
           "objective": "Upgrade suspension components from measured baseline and validate ride/clearance/alignment under load.",
-          "blocker_summary": "Ironman medium kit is selected; full procurement lock and fitment scheduling are pending baseline inspection outcomes.",
+          "blocker_summary": "Fitment scheduling waits on both Ironman shipments and baseline suspension geometry inspection.",
           "gate_to_close": "Suspension upgrade completes with safe handling and no unresolved chassis or brake conflicts.",
-          "key_procurement_actions": "Order the Ironman medium kit as one locked set and only add non-included bushes/hardware after measurement confirmation.",
-          "evidence_signal": "Upgrade direction set to Ironman foam cell medium kit with matching hardware"
+          "key_procurement_actions": "Do not buy alternate suspension parts; receive, inspect, and reconcile the ordered kit contents first.",
+          "evidence_signal": "Ironman Foamcell kit ordered; front damper pair bifurcated for shipment tracking"
         }
       ],
       "component_jobs": [
@@ -19773,7 +19804,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Execute current workstream action",
           "status": "queued",
-          "detail": "Freeze Ironman foam cell medium suspension spec and procurement set from measured baseline"
+          "detail": "Track ordered Ironman Foamcell kit as two shipments: main kit plus separate front damper pair"
         },
         {
           "label": "Capture measured suspension baseline",
@@ -19798,12 +19829,12 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04C \u00b7 Suspension Setup: Ironman Foam Cell Medium Kit",
           "status": "queued",
-          "detail": "Install and validate Ironman foam cell medium suspension with matched hardware refresh. Blocker: Kit lock and geometry checks must close before final torque. Procurement: Lock Ironman medium kit procurement and avoid duplicate separate shackle/pin buys included in the kit. Gate: Ironman foam cell medium suspension with greasable shackles and greasable pins installed and aligned."
+          "detail": "Install and validate Ironman foam cell medium suspension with matched hardware refresh. Blocker: Both Ironman shipments must be received and contents-checked before suspension install. Procurement: Track main kit shipment and separate front 24635FE damper shipment; verify contents against supplier parts list before final torque. Gate: Ironman foam cell medium suspension with greasable shackles and greasable pins installed and aligned."
         },
         {
           "label": "WP08 \u00b7 Suspension Upgrade Execution",
           "status": "queued",
-          "detail": "Upgrade suspension components from measured baseline and validate ride/clearance/alignment under load. Blocker: Ironman medium kit is selected; full procurement lock and fitment scheduling are pending baseline inspection outcomes. Procurement: Order the Ironman medium kit as one locked set and only add non-included bushes/hardware after measurement confirmation. Gate: Suspension upgrade completes with safe handling and no unresolved chassis or brake conflicts."
+          "detail": "Upgrade suspension components from measured baseline and validate ride/clearance/alignment under load. Blocker: Fitment scheduling waits on both Ironman shipments and baseline suspension geometry inspection. Procurement: Do not buy alternate suspension parts; receive, inspect, and reconcile the ordered kit contents first. Gate: Suspension upgrade completes with safe handling and no unresolved chassis or brake conflicts."
         },
         {
           "label": "Issue checks",
@@ -19822,13 +19853,13 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
-          "status": "in_progress",
-          "detail": "5 part rows still require price confirmation/order placement."
+          "status": "completed",
+          "detail": "0 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
-          "status": "completed",
-          "detail": "0 part rows are ordered and awaiting delivery."
+          "status": "in_progress",
+          "detail": "1 part rows are ordered and awaiting delivery."
         },
         {
           "label": "Procurement \u00b7 resolve ambiguous stock/receipt rows",
@@ -19843,239 +19874,22 @@ window.J40_DASHBOARD_DATA = {
       ],
       "involved_parts": [
         {
-          "entry_id": "part_bilstein_shocks",
+          "entry_id": "part_ironman_front_dampers_separate_shipment",
           "workstream": "suspension_upgrade",
-          "item": "Bilstein 5100 / 5160 shocks",
-          "status": "planned",
-          "procurement_stage": "deferred_optional",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
+          "item": "Ironman Foamcell front damper pair - separate shipment (24635FE x2)",
+          "status": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "unknown",
+          "delivery_status": "pending_delivery",
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "",
+          "vendor": "Ironman 4x4 supplier",
           "supply_type": "part",
           "source": "expenses",
-          "source_ref": "part_bilstein_shocks",
-          "evidence_ref": "user_seed|akber_khan-00857|akber_khan-00858|user_plan_2026-04-22_tub_off_update",
-          "notes": "Alternative shock path deferred while OME path is active for current build",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "entry_id": "part_omegs8_shackle_kit_front",
-          "workstream": "suspension_upgrade",
-          "item": "Greasable shackle kit front (included in Ironman medium kit)",
-          "status": "planned",
-          "procurement_stage": "included_in_selected_kit",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_omegs8_shackle_kit_front",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_bilal-ganj-master-shopping-list",
-          "notes": "Do not buy separately unless Ironman kit receipt confirms the front shackles are missing",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "entry_id": "part_omegs9_shackle_kit_rear",
-          "workstream": "suspension_upgrade",
-          "item": "Greasable shackle kit rear (included in Ironman medium kit)",
-          "status": "planned",
-          "procurement_stage": "included_in_selected_kit",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_omegs9_shackle_kit_rear",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_bilal-ganj-master-shopping-list",
-          "notes": "Do not buy separately unless Ironman kit receipt confirms the rear shackles are missing",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "entry_id": "part_old_man_emu_shocks",
-          "workstream": "suspension_upgrade",
-          "item": "Ironman foam cell suspension - medium kit",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_old_man_emu_shocks",
-          "evidence_ref": "user_seed|akber_khan-00857|akber_khan-00858|user_plan_2026-04-22_tub_off_update",
-          "notes": "Selected suspension path updated to Ironman foam cell medium kit",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "entry_id": "part_suspension_u_bolt_nut_plate_kit",
-          "workstream": "suspension_upgrade",
-          "item": "Leaf spring U-bolt and nut plate kit front+rear",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_suspension_u_bolt_nut_plate_kit",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update",
-          "notes": "Mandatory replacement hardware whenever leaf springs are replaced",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "entry_id": "part_local_leaf_springs_front",
-          "workstream": "suspension_upgrade",
-          "item": "Local front leaf spring pack x2",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_local_leaf_springs_front",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-          "notes": "Replace front packs during tub-off suspension refresh for reliability",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "entry_id": "part_local_leaf_springs_rear",
-          "workstream": "suspension_upgrade",
-          "item": "Local rear leaf spring pack x2",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_local_leaf_springs_rear",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-          "notes": "Replace rear packs during tub-off suspension refresh for reliability",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "entry_id": "part_omesb30_bushing_kit",
-          "workstream": "suspension_upgrade",
-          "item": "OMESB30 suspension bushing kit",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_omesb30_bushing_kit",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_bilal-ganj-master-shopping-list",
-          "notes": "Replace spring and shackle bushes during suspension rebuild",
+          "source_ref": "part_ironman_front_dampers_separate_shipment",
+          "evidence_ref": "user_update_2026-05-01_front_dampers_separate_shipment|image_2026-05-01_ironman_foamcell_parts_list|ironman_24635FE_front_reference",
+          "notes": "Bifurcated shipment tracker for the front damper pair arriving separately from the rest of the Ironman kit. Amount is included in the main Ironman kit total to avoid double-counting. Verify 24635FE x2 on receipt before closing suspension procurement.",
           "image": {
             "path": "./assets/image-needed.svg",
             "caption": "Image required - add photo evidence",
@@ -21340,10 +21154,10 @@ window.J40_DASHBOARD_DATA = {
       "linked_workstreams": [
         "suspension_upgrade"
       ],
-      "evidence_signal": "suspension_geometry_validation_pending",
-      "blocker_summary": "Kit lock and geometry checks must close before final torque.",
+      "evidence_signal": "Ironman order logged 2026-05-01; front dampers separate shipment",
+      "blocker_summary": "Both Ironman shipments must be received and contents-checked before suspension install.",
       "gate_to_close": "Ironman foam cell medium suspension with greasable shackles and greasable pins installed and aligned.",
-      "key_procurement_actions": "Lock Ironman medium kit procurement and avoid duplicate separate shackle/pin buys included in the kit.",
+      "key_procurement_actions": "Track main kit shipment and separate front 24635FE damper shipment; verify contents against supplier parts list before final torque.",
       "image": {
         "path": "../../photos/20260324_004921_gp_bHLJcrEw.jpg",
         "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
@@ -21458,10 +21272,10 @@ window.J40_DASHBOARD_DATA = {
       "linked_workstreams": [
         "suspension_upgrade"
       ],
-      "evidence_signal": "Upgrade direction set to Ironman foam cell medium kit with matching hardware",
-      "blocker_summary": "Ironman medium kit is selected; full procurement lock and fitment scheduling are pending baseline inspection outcomes.",
+      "evidence_signal": "Ironman Foamcell kit ordered; front damper pair bifurcated for shipment tracking",
+      "blocker_summary": "Fitment scheduling waits on both Ironman shipments and baseline suspension geometry inspection.",
       "gate_to_close": "Suspension upgrade completes with safe handling and no unresolved chassis or brake conflicts.",
-      "key_procurement_actions": "Order the Ironman medium kit as one locked set and only add non-included bushes/hardware after measurement confirmation.",
+      "key_procurement_actions": "Do not buy alternate suspension parts; receive, inspect, and reconcile the ordered kit contents first.",
       "image": {
         "path": "../../photos/20260324_004921_gp_bHLJcrEw.jpg",
         "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
@@ -21481,7 +21295,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Confirm price and place purchase-ready orders",
         "status": "in_progress",
-        "detail": "30 rows still in purchase_ready."
+        "detail": "25 rows still in purchase_ready."
       },
       {
         "label": "Place selected quote orders",
@@ -21491,21 +21305,17 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Track paid / in-flight deliveries",
         "status": "in_progress",
-        "detail": "2 rows ordered and waiting to arrive."
+        "detail": "4 rows ordered and waiting to arrive."
       }
     ],
     "counts_by_procurement_stage": [
       {
         "stage": "deferred_optional",
-        "count": 5
+        "count": 4
       },
       {
         "stage": "deferred_until_body_closed",
         "count": 3
-      },
-      {
-        "stage": "included_in_selected_kit",
-        "count": 2
       },
       {
         "stage": "needs_confirmation",
@@ -21517,11 +21327,11 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "ordered_pending_delivery",
-        "count": 2
+        "count": 4
       },
       {
         "stage": "purchase_ready",
-        "count": 30
+        "count": 25
       },
       {
         "stage": "researching",
@@ -21531,7 +21341,7 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_next_action": [
       {
         "next_action": "confirm_price_then_order",
-        "count": 26
+        "count": 21
       },
       {
         "next_action": "order_from_selected_quote",
@@ -21539,7 +21349,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "next_action": "track_delivery",
-        "count": 3
+        "count": 5
       }
     ],
     "urgent_actions": [
@@ -21947,6 +21757,60 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [],
           "match_basis": "placeholder"
         }
+      },
+      {
+        "priority": "P1",
+        "entry_id": "part_old_man_emu_shocks",
+        "workstream": "brake_system",
+        "item": "Ironman Foamcell suspension kit - main shipment (front dampers separate)",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "next_action": "track_delivery",
+        "amount": "575000",
+        "amount_status": "confirmed",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-01_ironman_foamcell_order|image_2026-05-01_ironman_foamcell_parts_list",
+        "notes": "User update 2026-05-01: Ironman Foamcell suspension kit ordered from attached parts list; PKR 600000 less PKR 25000 discount = PKR 575000 total. Track as main shipment plus a separate front damper shipment. Supplier list shows part numbers 24635FE, 24636FE, TOY001B, TOY002B, 415UBK, 713UK, 343LH, 343RH, 3523, 346. All previous local spring, OME/Bilstein, separate bushing, shackle, and U-bolt alternatives removed from active parts list.",
+        "image": {
+          "path": "./assets/image-needed.svg",
+          "caption": "Image required - add photo evidence",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "",
+          "specific_component": "",
+          "stage": "",
+          "media_id": "",
+          "matched_tokens": [],
+          "match_basis": "placeholder"
+        }
+      },
+      {
+        "priority": "P1",
+        "entry_id": "part_ironman_front_dampers_separate_shipment",
+        "workstream": "suspension_upgrade",
+        "item": "Ironman Foamcell front damper pair - separate shipment (24635FE x2)",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "next_action": "track_delivery",
+        "amount": "",
+        "amount_status": "missing",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-01_front_dampers_separate_shipment|image_2026-05-01_ironman_foamcell_parts_list|ironman_24635FE_front_reference",
+        "notes": "Bifurcated shipment tracker for the front damper pair arriving separately from the rest of the Ironman kit. Amount is included in the main Ironman kit total to avoid double-counting. Verify 24635FE x2 on receipt before closing suspension procurement.",
+        "image": {
+          "path": "./assets/image-needed.svg",
+          "caption": "Image required - add photo evidence",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "",
+          "specific_component": "",
+          "stage": "",
+          "media_id": "",
+          "matched_tokens": [],
+          "match_basis": "placeholder"
+        }
       }
     ],
     "ordered_pending_delivery": [
@@ -22018,6 +21882,58 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "inventory_match",
           "match_score": 132
+        }
+      },
+      {
+        "entry_id": "part_old_man_emu_shocks",
+        "workstream": "brake_system",
+        "item": "Ironman Foamcell suspension kit - main shipment (front dampers separate)",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "expected_delivery_date": "",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-01_ironman_foamcell_order|image_2026-05-01_ironman_foamcell_parts_list",
+        "notes": "User update 2026-05-01: Ironman Foamcell suspension kit ordered from attached parts list; PKR 600000 less PKR 25000 discount = PKR 575000 total. Track as main shipment plus a separate front damper shipment. Supplier list shows part numbers 24635FE, 24636FE, TOY001B, TOY002B, 415UBK, 713UK, 343LH, 343RH, 3523, 346. All previous local spring, OME/Bilstein, separate bushing, shackle, and U-bolt alternatives removed from active parts list.",
+        "image": {
+          "path": "./assets/image-needed.svg",
+          "caption": "Image required - add photo evidence",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "",
+          "specific_component": "",
+          "stage": "",
+          "media_id": "",
+          "matched_tokens": [],
+          "match_basis": "placeholder"
+        }
+      },
+      {
+        "entry_id": "part_ironman_front_dampers_separate_shipment",
+        "workstream": "suspension_upgrade",
+        "item": "Ironman Foamcell front damper pair - separate shipment (24635FE x2)",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "expected_delivery_date": "",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-01_front_dampers_separate_shipment|image_2026-05-01_ironman_foamcell_parts_list|ironman_24635FE_front_reference",
+        "notes": "Bifurcated shipment tracker for the front damper pair arriving separately from the rest of the Ironman kit. Amount is included in the main Ironman kit total to avoid double-counting. Verify 24635FE x2 on receipt before closing suspension procurement.",
+        "image": {
+          "path": "./assets/image-needed.svg",
+          "caption": "Image required - add photo evidence",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "",
+          "specific_component": "",
+          "stage": "",
+          "media_id": "",
+          "matched_tokens": [],
+          "match_basis": "placeholder"
         }
       }
     ],
@@ -22242,6 +22158,33 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00800|akber_khan-00819",
         "notes": "Listed by the user as still needed; chat ties primer to floor spot-weld work and later product research",
+        "image": {
+          "path": "./assets/image-needed.svg",
+          "caption": "Image required - add photo evidence",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "",
+          "specific_component": "",
+          "stage": "",
+          "media_id": "",
+          "matched_tokens": [],
+          "match_basis": "placeholder"
+        }
+      },
+      {
+        "entry_id": "part_old_man_emu_shocks",
+        "workstream": "brake_system",
+        "item": "Ironman Foamcell suspension kit - main shipment (front dampers separate)",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "amount": "575000",
+        "amount_status": "confirmed",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-01_ironman_foamcell_order|image_2026-05-01_ironman_foamcell_parts_list",
+        "notes": "User update 2026-05-01: Ironman Foamcell suspension kit ordered from attached parts list; PKR 600000 less PKR 25000 discount = PKR 575000 total. Track as main shipment plus a separate front damper shipment. Supplier list shows part numbers 24635FE, 24636FE, TOY001B, TOY002B, 415UBK, 713UK, 343LH, 343RH, 3523, 346. All previous local spring, OME/Bilstein, separate bushing, shackle, and U-bolt alternatives removed from active parts list.",
         "image": {
           "path": "./assets/image-needed.svg",
           "caption": "Image required - add photo evidence",
@@ -23289,207 +23232,18 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_bilstein_shocks",
+        "entry_id": "part_ironman_front_dampers_separate_shipment",
         "workstream": "suspension_upgrade",
-        "item": "Bilstein 5100 / 5160 shocks",
-        "status": "planned",
-        "procurement_stage": "deferred_optional",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
+        "item": "Ironman Foamcell front damper pair - separate shipment (24635FE x2)",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
         "amount": "",
         "amount_status": "missing",
         "supply_type": "part",
-        "evidence_ref": "user_seed|akber_khan-00857|akber_khan-00858|user_plan_2026-04-22_tub_off_update",
-        "notes": "Alternative shock path deferred while OME path is active for current build",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "entry_id": "part_omegs8_shackle_kit_front",
-        "workstream": "suspension_upgrade",
-        "item": "Greasable shackle kit front (included in Ironman medium kit)",
-        "status": "planned",
-        "procurement_stage": "included_in_selected_kit",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_bilal-ganj-master-shopping-list",
-        "notes": "Do not buy separately unless Ironman kit receipt confirms the front shackles are missing",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "entry_id": "part_omegs9_shackle_kit_rear",
-        "workstream": "suspension_upgrade",
-        "item": "Greasable shackle kit rear (included in Ironman medium kit)",
-        "status": "planned",
-        "procurement_stage": "included_in_selected_kit",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_bilal-ganj-master-shopping-list",
-        "notes": "Do not buy separately unless Ironman kit receipt confirms the rear shackles are missing",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "entry_id": "part_old_man_emu_shocks",
-        "workstream": "suspension_upgrade",
-        "item": "Ironman foam cell suspension - medium kit",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "supply_type": "part",
-        "evidence_ref": "user_seed|akber_khan-00857|akber_khan-00858|user_plan_2026-04-22_tub_off_update",
-        "notes": "Selected suspension path updated to Ironman foam cell medium kit",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "entry_id": "part_suspension_u_bolt_nut_plate_kit",
-        "workstream": "suspension_upgrade",
-        "item": "Leaf spring U-bolt and nut plate kit front+rear",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update",
-        "notes": "Mandatory replacement hardware whenever leaf springs are replaced",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "entry_id": "part_local_leaf_springs_front",
-        "workstream": "suspension_upgrade",
-        "item": "Local front leaf spring pack x2",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-        "notes": "Replace front packs during tub-off suspension refresh for reliability",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "entry_id": "part_local_leaf_springs_rear",
-        "workstream": "suspension_upgrade",
-        "item": "Local rear leaf spring pack x2",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-        "notes": "Replace rear packs during tub-off suspension refresh for reliability",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "entry_id": "part_omesb30_bushing_kit",
-        "workstream": "suspension_upgrade",
-        "item": "OMESB30 suspension bushing kit",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_bilal-ganj-master-shopping-list",
-        "notes": "Replace spring and shackle bushes during suspension rebuild",
+        "evidence_ref": "user_update_2026-05-01_front_dampers_separate_shipment|image_2026-05-01_ironman_foamcell_parts_list|ironman_24635FE_front_reference",
+        "notes": "Bifurcated shipment tracker for the front damper pair arriving separately from the rest of the Ironman kit. Amount is included in the main Ironman kit total to avoid double-counting. Verify 24635FE x2 on receipt before closing suspension procurement.",
         "image": {
           "path": "./assets/image-needed.svg",
           "caption": "Image required - add photo evidence",
@@ -23557,22 +23311,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "workstream": "suspension_upgrade",
-        "open_count": 8,
-        "image": {
-          "path": "../../photos/20260324_004921_gp_bHLJcrEw.jpg",
-          "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
-          "captured_date": "2026-03-24",
-          "captured_time": "00:49:21",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "rear_axle_and_leaf_springs",
-          "stage": "underside_inspection",
-          "media_id": "20260324_004921_gp_bHLJcrEw",
-          "matched_tokens": []
-        }
-      },
-      {
         "workstream": "interior_weatherproofing",
         "open_count": 4,
         "image": null
@@ -23597,7 +23335,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "brake_system",
-        "open_count": 1,
+        "open_count": 2,
         "image": {
           "path": "../../photos/20260331_224423.jpg",
           "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
@@ -23622,6 +23360,22 @@ window.J40_DASHBOARD_DATA = {
         "workstream": "optional_upgrades",
         "open_count": 1,
         "image": null
+      },
+      {
+        "workstream": "suspension_upgrade",
+        "open_count": 1,
+        "image": {
+          "path": "../../photos/20260324_004921_gp_bHLJcrEw.jpg",
+          "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+          "captured_date": "2026-03-24",
+          "captured_time": "00:49:21",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "rear_axle_and_leaf_springs",
+          "stage": "underside_inspection",
+          "media_id": "20260324_004921_gp_bHLJcrEw",
+          "matched_tokens": []
+        }
       }
     ],
     "procurement_evidence_images": [
@@ -24477,17 +24231,17 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "supply_type": "part",
-        "previously": 85,
-        "in_process": 5,
-        "still_required": 197,
-        "total": 287
+        "previously": 84,
+        "in_process": 10,
+        "still_required": 174,
+        "total": 268
       }
     ],
     "rows_by_status": {
       "previously": [
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_90",
+          "source_ref": "workbook_parts#row_84",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "10 mm\u00b2",
@@ -24518,7 +24272,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_91",
+          "source_ref": "workbook_parts#row_85",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "10 mm\u00b2",
@@ -24534,22 +24288,26 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Black | Evidence indicates purchased/received. | Migrated from Wiring row 79 into Parts inventory.",
           "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_https_uni_core_pk_product_cables_wires_f_d1f4b967169f.jpg",
+            "caption": "https://uni-core.pk/product/cables-wires/flexible-cables/2-5mmsq-flexible-cable/ - blue \u00b7 uni-core.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
             "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
+            "matched_tokens": [
+              "row_85",
+              "row"
+            ],
+            "match_basis": "selling_site_match",
+            "match_score": 167
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_95",
+          "source_ref": "workbook_parts#row_89",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "10.8 x 4",
@@ -24580,7 +24338,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_59",
+          "source_ref": "workbook_parts#row_53",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "100A Circuit Breaker Resettable Fuse Car Marine Boat Automotive Protector",
@@ -24618,7 +24376,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_50",
+          "source_ref": "workbook_parts#row_44",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "10mm Nylon Braided Sleeve x 5",
@@ -24649,7 +24407,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_52",
+          "source_ref": "workbook_parts#row_46",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "10mm Nylon Braided sleeve Price in Pakistan \u00d7 5",
@@ -24680,7 +24438,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_58",
+          "source_ref": "workbook_parts#row_52",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "10mm Nylon Braided sleeve Price in Pakistan \u00d7 5",
@@ -24711,7 +24469,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_53",
+          "source_ref": "workbook_parts#row_47",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "14mm Nylon Braided Sleeve price in Pakistan \u00d7 5",
@@ -24742,7 +24500,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_56",
+          "source_ref": "workbook_parts#row_50",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "14mm Nylon Braided Sleeve price in Pakistan \u00d7 5",
@@ -24773,7 +24531,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_92",
+          "source_ref": "workbook_parts#row_86",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "16 mm\u00b2",
@@ -24789,22 +24547,26 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Red | Evidence indicates purchased/received. | Migrated from Wiring row 80 into Parts inventory.",
           "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_https_uni_core_pk_product_cables_wires_f_d1f4b967169f.jpg",
+            "caption": "https://uni-core.pk/product/flexible-cables/1-5mmsq-flexible-cable/ - yellow \u00b7 uni-core.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
             "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
+            "matched_tokens": [
+              "row_86",
+              "row"
+            ],
+            "match_basis": "selling_site_match",
+            "match_score": 167
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_96",
+          "source_ref": "workbook_parts#row_90",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "16.1 x 4",
@@ -24835,7 +24597,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_51",
+          "source_ref": "workbook_parts#row_45",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "16mm Nylon Braided Sleeve x 5",
@@ -24866,7 +24628,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_83",
+          "source_ref": "workbook_parts#row_77",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "1m, 4 AWG, Red",
@@ -24897,7 +24659,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_62",
+          "source_ref": "workbook_parts#row_56",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "1x 100A LITTEL FUSE ANL Car Fuse MEGA Bolt-on",
@@ -24932,7 +24694,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_54",
+          "source_ref": "workbook_parts#row_48",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "20mmn Nylon Braided Sleeve Price in Paklistan \u00d7 5",
@@ -24963,7 +24725,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_57",
+          "source_ref": "workbook_parts#row_51",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "20mmn Nylon Braided Sleeve Price in Paklistan \u00d7 5",
@@ -24994,7 +24756,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_93",
+          "source_ref": "workbook_parts#row_87",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "25 mm\u00b2",
@@ -25010,22 +24772,26 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Red | Evidence indicates purchased/received. | Migrated from Wiring row 81 into Parts inventory.",
           "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_https_uni_core_pk_product_flexible_cable_9f16adde6f5b.jpg",
+            "caption": "https://uni-core.pk/product/flexible-cables/1mmsq-flexible-cable/ - white \u00b7 uni-core.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
             "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
+            "matched_tokens": [
+              "row_87",
+              "row"
+            ],
+            "match_basis": "selling_site_match",
+            "match_score": 167
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_97",
+          "source_ref": "workbook_parts#row_91",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "25.1 x 4",
@@ -25056,7 +24822,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_98",
+          "source_ref": "workbook_parts#row_92",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "35.1 x 4",
@@ -25087,7 +24853,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_94",
+          "source_ref": "workbook_parts#row_88",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "35mm\u00b2",
@@ -25118,7 +24884,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_87",
+          "source_ref": "workbook_parts#row_81",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "4 mm\u00b2",
@@ -25134,26 +24900,22 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Green | Evidence indicates purchased/received. | Migrated from Wiring row 75 into Parts inventory.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_https_uni_core_pk_product_flexible_cable_9f16adde6f5b.jpg",
-            "caption": "https://uni-core.pk/product/flexible-cables/1mmsq-flexible-cable/ - white \u00b7 uni-core.pk \u00b7 Selling Site Image",
+            "path": "./assets/image-needed.svg",
+            "caption": "Image required - add photo evidence",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
-            "stage": "procurement_reconciliation",
+            "component_group": "",
+            "specific_component": "",
+            "stage": "",
             "media_id": "",
-            "matched_tokens": [
-              "row_87",
-              "row"
-            ],
-            "match_basis": "selling_site_match",
-            "match_score": 167
+            "matched_tokens": [],
+            "match_basis": "placeholder"
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_68",
+          "source_ref": "workbook_parts#row_62",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "5 Pin 40A Car Relay 12V x 6",
@@ -25184,7 +24946,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_101",
+          "source_ref": "workbook_parts#row_95",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "555 Black Red Terminal M8 Blocks Power Supply Terminals Welding Machine Inverter Post Connector x 10",
@@ -25220,7 +24982,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_60",
+          "source_ref": "workbook_parts#row_54",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "6 Way Distribution Block Car Midi Fuse Box Block Holder 200A Bolt",
@@ -25258,7 +25020,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_88",
+          "source_ref": "workbook_parts#row_82",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "6 mm\u00b2",
@@ -25289,7 +25051,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_78",
+          "source_ref": "workbook_parts#row_72",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "6pcs Ratchet Crimping Tool Set",
@@ -25305,22 +25067,27 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 54 into Parts inventory.",
           "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
+            "path": "../../deliverables/selling_site_images/images/workbook_tools_bosi_nose_plier_6_black_a_quality_in_pak_678a1070aa44.jpg",
+            "caption": "O-type Blue Insulated Thimble/ Cable Lug 2.5mm \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
             "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
+            "matched_tokens": [
+              "row_72",
+              "tool",
+              "row"
+            ],
+            "match_basis": "selling_site_match",
+            "match_score": 178
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_99",
+          "source_ref": "workbook_parts#row_93",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "70.12 x 10",
@@ -25351,7 +25118,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_89",
+          "source_ref": "workbook_parts#row_83",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "8 mm\u00b2",
@@ -25382,7 +25149,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_49",
+          "source_ref": "workbook_parts#row_43",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "8mm Nylon Braided Sleeve x 5",
@@ -25413,7 +25180,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_100",
+          "source_ref": "workbook_parts#row_94",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Bare Copper Braid Tape",
@@ -25444,7 +25211,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_77",
+          "source_ref": "workbook_parts#row_71",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Classification of Deutsch DT Series Connectors, Size 16 Stamped Contacts, Automotive Electrical Connectors, 188pcs x 2",
@@ -25475,7 +25242,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_118",
+          "source_ref": "workbook_parts#row_112",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Contact Cleaner 400ML \u00d7 1",
@@ -25491,8 +25258,8 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Evidence indicates purchased/received. | Migrated from Substances row 22 into Parts inventory.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_lithium_grease_ptfe_400ml_1_042867c89dc9.webp",
-            "caption": "Lithium Grease + PTFE 400ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_contact_cleaner_400ml_1_fe67e17f6de8.webp",
+            "caption": "Contact Cleaner 400ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -25501,18 +25268,19 @@ window.J40_DASHBOARD_DATA = {
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "row_118",
+              "contact",
+              "cleaner",
               "400ml",
               "toolsmart",
               "row"
             ],
             "match_basis": "selling_site_match",
-            "match_score": 185
+            "match_score": 69
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_69",
+          "source_ref": "workbook_parts#row_63",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Copper Cable Lug 16mm cable 8mm Bolt Hole Pakistan \u00d7 10",
@@ -25553,7 +25321,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_104",
+          "source_ref": "workbook_parts#row_98",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Dielectric Grease",
@@ -25584,7 +25352,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_48",
+          "source_ref": "workbook_parts#row_42",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Grommet Set",
@@ -25615,7 +25383,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_75",
+          "source_ref": "workbook_parts#row_69",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "H4 Ceramic Headlight Connector",
@@ -25631,26 +25399,27 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 51 into Parts inventory.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_o_type_yellow_insulated_thimble_cable_lu_b2648b58083c.jpg",
-            "caption": "O-type Yellow Insulated Thimble/ Cable Lug 4mm (6mm hole) \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
+            "path": "../../photos/20260424_part_h4_ceramic_headlight_connector_high_autoxpert_order_1599.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 ",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260424_part_h4_ceramic_headlight_connector_high_autoxpert_order_1599",
             "matched_tokens": [
-              "row_75",
-              "row"
+              "ceramic",
+              "headlight",
+              "connector"
             ],
-            "match_basis": "selling_site_match",
-            "match_score": 167
+            "match_basis": "inventory_match",
+            "match_score": 26
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_72",
+          "source_ref": "workbook_parts#row_66",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Insulated Thimbles Male lug 2.5mm Blue in Pakistan \u00d7 1",
@@ -25666,8 +25435,8 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 48 into Parts inventory.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_o_type_blue_insulated_thimble_cable_lug__263a833854ad.jpg",
-            "caption": "O-type Blue Insulated Thimble/ Cable Lug 2.5mm \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_insulated_thimbles_female_lug_2_5mm_blue_d8be9389f045.jpg",
+            "caption": "Insulated Thimbles female lug 2.5mm Blue in Pakistan \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -25676,22 +25445,22 @@ window.J40_DASHBOARD_DATA = {
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "row_72",
               "insulated",
+              "thimbles",
+              "male",
               "lug",
               "5mm",
               "blue",
-              "fiaz",
-              "com",
-              "row"
+              "pakistan",
+              "fiaz"
             ],
             "match_basis": "selling_site_match",
-            "match_score": 227
+            "match_score": 99
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_73",
+          "source_ref": "workbook_parts#row_67",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Insulated Thimbles female lug 2.5mm Blue in Pakistan \u00d7 1",
@@ -25707,8 +25476,8 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 49 into Parts inventory.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_tools_bosi_nose_plier_6_black_a_quality_in_pak_680434c634c4.jpg",
-            "caption": "Insulated Thimbles Male lug 2.5mm Blue in Pakistan \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_insulated_thimbles_female_lug_2_5mm_blue_d8be9389f045.jpg",
+            "caption": "Insulated Thimbles female lug 2.5mm Blue in Pakistan \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -25717,9 +25486,9 @@ window.J40_DASHBOARD_DATA = {
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "row_73",
               "insulated",
               "thimbles",
+              "female",
               "lug",
               "5mm",
               "blue",
@@ -25727,12 +25496,12 @@ window.J40_DASHBOARD_DATA = {
               "fiaz"
             ],
             "match_basis": "selling_site_match",
-            "match_score": 238
+            "match_score": 99
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_117",
+          "source_ref": "workbook_parts#row_111",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Lithium Grease + PTFE 400ML \u00d7 1",
@@ -25748,8 +25517,8 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Evidence indicates purchased/received. | Migrated from Substances row 21 into Parts inventory.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_loctite_290_medium_high_strength_wicking_f2b2f60d13c7.jpg",
-            "caption": "Loctite 290 \u2013 Medium/High Strength Wicking Grade Threadlocker \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_lithium_grease_ptfe_400ml_1_042867c89dc9.webp",
+            "caption": "Lithium Grease + PTFE 400ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -25758,17 +25527,20 @@ window.J40_DASHBOARD_DATA = {
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "row_117",
+              "lithium",
+              "grease",
+              "ptfe",
+              "400ml",
               "toolsmart",
               "row"
             ],
             "match_basis": "selling_site_match",
-            "match_score": 173
+            "match_score": 81
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_64",
+          "source_ref": "workbook_parts#row_58",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Littelfuse Bolt-down Automotive Fuse MIDI/498 Auto Fuse 30A x2",
@@ -25805,7 +25577,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_65",
+          "source_ref": "workbook_parts#row_59",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Littelfuse Bolt-down Automotive Fuse MIDI/498 Auto Fuse 50A",
@@ -25842,7 +25614,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_66",
+          "source_ref": "workbook_parts#row_60",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Littelfuse Bolt-down Automotive Fuse MIDI/498 Auto Fuse 50A",
@@ -25879,7 +25651,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_67",
+          "source_ref": "workbook_parts#row_61",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Littelfuse Bolt-down Automotive Fuse MIDI/498 Auto Fuse 60A",
@@ -25916,7 +25688,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_116",
+          "source_ref": "workbook_parts#row_110",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Loctite 290 \u2013 Medium/High Strength Wicking Grade Threadlocker \u00d7 1",
@@ -25932,8 +25704,8 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Evidence indicates purchased/received. | Migrated from Substances row 20 into Parts inventory.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_vmd_brake_and_clutch_cleaner_400ml_1_0475e490aa86.webp",
-            "caption": "VMD Brake and Clutch Cleaner 400ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_loctite_290_medium_high_strength_wicking_f2b2f60d13c7.jpg",
+            "caption": "Loctite 290 \u2013 Medium/High Strength Wicking Grade Threadlocker \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -25942,12 +25714,17 @@ window.J40_DASHBOARD_DATA = {
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "row_116",
-              "toolsmart",
-              "row"
+              "loctite",
+              "290",
+              "medium",
+              "high",
+              "strength",
+              "wicking",
+              "grade",
+              "threadlocker"
             ],
             "match_basis": "selling_site_match",
-            "match_score": 173
+            "match_score": 93
           }
         },
         {
@@ -25983,7 +25760,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_71",
+          "source_ref": "workbook_parts#row_65",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "O-type Blue Insulated Thimble/ Cable Lug 2.5mm \u00d7 1",
@@ -26024,7 +25801,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_74",
+          "source_ref": "workbook_parts#row_68",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "O-type Yellow Insulated Thimble/ Cable Lug 4mm (6mm hole) \u00d7 1",
@@ -26040,8 +25817,8 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 50 into Parts inventory.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_insulated_thimbles_female_lug_2_5mm_blue_d8be9389f045.jpg",
-            "caption": "Insulated Thimbles female lug 2.5mm Blue in Pakistan \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_o_type_blue_insulated_thimble_cable_lug__263a833854ad.jpg",
+            "caption": "O-type Blue Insulated Thimble/ Cable Lug 2.5mm \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -26050,22 +25827,22 @@ window.J40_DASHBOARD_DATA = {
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "row_74",
               "type",
               "insulated",
               "thimble",
+              "cable",
               "lug",
               "fiaz",
               "com",
               "row"
             ],
             "match_basis": "selling_site_match",
-            "match_score": 227
+            "match_score": 99
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_111",
+          "source_ref": "workbook_parts#row_105",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Permatex Copper Anti Seize Lubricant Premium Quality in Pakistan",
@@ -26103,7 +25880,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_63",
+          "source_ref": "workbook_parts#row_57",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Portable 12-Way Car Fuse Box Universal Automotive Box Holder with Led Indicator",
@@ -26142,7 +25919,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_112",
+          "source_ref": "workbook_parts#row_106",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "RAPTOR LINER TINTABLE STANDARD 3.8L KIT",
@@ -26173,7 +25950,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_110",
+          "source_ref": "workbook_parts#row_104",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "ROST FLASH PRO",
@@ -26204,7 +25981,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_61",
+          "source_ref": "workbook_parts#row_55",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Relay Box 12V 10 Way Relay Block and 10 Way ATC/ATO Blade Fuse Pane",
@@ -26242,7 +26019,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_37",
+          "source_ref": "workbook_parts#row_36",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Schneider Harmony 22mm 2-position maintained selector switch (1NO, black) x 4",
@@ -26279,47 +26056,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "selling_site_match",
             "match_score": 105
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_38",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Schneider Harmony XB4 22mm 3-position maintained selector switch (2NO, long handle) x 3",
-          "vendor": "purchaser.com.pk | https://purchaser.com.pk/schneider-selector-switch-harmony-xb4-metal-black-22mm-long-handle-3positions-stay-put-2no/",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "previously",
-          "status_detail": "received",
-          "procurement_stage": "",
-          "payment_status": "Y",
-          "delivery_status": "Y",
-          "evidence_ref": "",
-          "notes": "3-way Schneider switches arrived (user update 2026-04-28). Combined order total previously tracked against both selector lines.",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_schneider_harmony_22mm_2_position_mainta_a8e361b962f9.jpg",
-            "caption": "Schneider Harmony 22mm 2-position maintained selector switch (1NO, black) x 4 \u00b7 purchaser.com.pk | https://purchaser.com.pk/schneider-harmony-22mm-push-button-2-position-selector-switch-black-maintained-1-no-600-v/ \u00b7 Selling Site Image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "row_38",
-              "schneider",
-              "harmony",
-              "xb4",
-              "22mm",
-              "position",
-              "maintained",
-              "selector"
-            ],
-            "match_basis": "selling_site_match",
-            "match_score": 245
           }
         },
         {
@@ -26386,7 +26122,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_79",
+          "source_ref": "workbook_parts#row_73",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Universal 4-inch Switch Panel 3pcs",
@@ -26402,22 +26138,25 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Rocker Switches | Evidence indicates purchased/received. | Migrated from Wiring row 57 into Parts inventory.",
           "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
+            "path": "../../deliverables/selling_site_images/images/workbook_tools_bosi_nose_plier_6_black_a_quality_in_pak_680434c634c4.jpg",
+            "caption": "Insulated Thimbles Male lug 2.5mm Blue in Pakistan \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
             "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
+            "matched_tokens": [
+              "row_73"
+            ],
+            "match_basis": "selling_site_match",
+            "match_score": 163
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_115",
+          "source_ref": "workbook_parts#row_109",
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "VMD Brake and Clutch Cleaner 400ML \u00d7 1",
@@ -26433,8 +26172,8 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Evidence indicates purchased/received. | Migrated from Substances row 19 into Parts inventory.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_vmd_unlocking_protective_lubricating_age_2ccc07ba16d3.webp",
-            "caption": "VMD Unlocking Protective Lubricating Agent 200ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_vmd_brake_and_clutch_cleaner_400ml_1_0475e490aa86.webp",
+            "caption": "VMD Brake and Clutch Cleaner 400ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -26443,18 +26182,21 @@ window.J40_DASHBOARD_DATA = {
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "row_115",
               "vmd",
+              "brake",
+              "clutch",
+              "cleaner",
+              "400ml",
               "toolsmart",
               "row"
             ],
             "match_basis": "selling_site_match",
-            "match_score": 185
+            "match_score": 93
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_114",
+          "source_ref": "workbook_parts#row_108",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "VMD Unlocking Protective Lubricating Agent 200ML \u00d7 1",
@@ -26495,7 +26237,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_113",
+          "source_ref": "workbook_parts#row_107",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "WD-40 Multi-Use Product Handy Can 200ml (Pack Of 3)",
@@ -26531,7 +26273,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_102",
+          "source_ref": "workbook_parts#row_96",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Wire Insulation Heat Shrink Tubes",
@@ -26562,7 +26304,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_130",
+          "source_ref": "workbook_parts#row_124",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "body_floor",
@@ -26593,7 +26335,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_125",
+          "source_ref": "workbook_parts#row_119",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "body_sections",
@@ -26609,22 +26351,25 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "RR action=confirm_vendor_scope_and_return_condition; evidence=akber_khan-00796 | Lower body section repair/refinish in progress; no new panel buy unless weld inspection finds non-repairable areas.",
           "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_contact_cleaner_400ml_1_fe67e17f6de8.webp",
+            "caption": "Contact Cleaner 400ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
             "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
+            "matched_tokens": [
+              "row_119"
+            ],
+            "match_basis": "selling_site_match",
+            "match_score": 164
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_122",
+          "source_ref": "workbook_parts#row_116",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "doors",
@@ -26640,22 +26385,25 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "RR action=confirm_vendor_scope_and_return_condition; evidence=fj40-00229|akber_khan-00568|akber_khan-00705|akber_khan-00796 | Doors repainted; reuse existing unless hidden damage appears at final fit-up.",
           "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_vmd_brake_and_clutch_cleaner_400ml_1_0475e490aa86.webp",
+            "caption": "VMD Brake and Clutch Cleaner 400ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
             "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
+            "matched_tokens": [
+              "row_116"
+            ],
+            "match_basis": "selling_site_match",
+            "match_score": 164
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_129",
+          "source_ref": "workbook_parts#row_123",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "electrical_accessories",
@@ -26686,7 +26434,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_55",
+          "source_ref": "workbook_parts#row_49",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "heat shrink tubing (various sizes) x 2",
@@ -26717,7 +26465,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_124",
+          "source_ref": "workbook_parts#row_118",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "hood",
@@ -26733,22 +26481,25 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "RR action=confirm_vendor_scope_and_return_condition; evidence=akber_khan-00796 | Retain refresh path; buy only if post-weld/post-paint inspection finds non-repairable damage.",
           "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_lithium_grease_ptfe_400ml_1_042867c89dc9.webp",
+            "caption": "Lithium Grease + PTFE 400ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
             "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
+            "matched_tokens": [
+              "row_118"
+            ],
+            "match_basis": "selling_site_match",
+            "match_score": 164
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_84",
+          "source_ref": "workbook_parts#row_78",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "https://uni-core.pk/product/cables-wires/flexible-cables/2-5mmsq-flexible-cable/ - blue",
@@ -26789,7 +26540,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_85",
+          "source_ref": "workbook_parts#row_79",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "https://uni-core.pk/product/flexible-cables/1-5mmsq-flexible-cable/ - yellow",
@@ -26815,22 +26566,22 @@ window.J40_DASHBOARD_DATA = {
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "row_85",
               "https",
               "uni",
               "core",
               "product",
               "flexible",
               "cables",
-              "5mmsq"
+              "5mmsq",
+              "cable"
             ],
             "match_basis": "selling_site_match",
-            "match_score": 239
+            "match_score": 99
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_86",
+          "source_ref": "workbook_parts#row_80",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "https://uni-core.pk/product/flexible-cables/1mmsq-flexible-cable/ - white",
@@ -26847,7 +26598,7 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 74 into Parts inventory.",
           "image": {
             "path": "../../deliverables/selling_site_images/images/workbook_parts_https_uni_core_pk_product_cables_wires_f_d1f4b967169f.jpg",
-            "caption": "https://uni-core.pk/product/flexible-cables/1-5mmsq-flexible-cable/ - yellow \u00b7 uni-core.pk \u00b7 Selling Site Image",
+            "caption": "https://uni-core.pk/product/cables-wires/flexible-cables/2-5mmsq-flexible-cable/ - blue \u00b7 uni-core.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -26856,22 +26607,22 @@ window.J40_DASHBOARD_DATA = {
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "row_86",
               "https",
               "uni",
               "core",
               "product",
               "flexible",
               "cables",
-              "cable"
+              "cable",
+              "row"
             ],
             "match_basis": "selling_site_match",
-            "match_score": 239
+            "match_score": 99
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_128",
+          "source_ref": "workbook_parts#row_122",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "interior",
@@ -26902,7 +26653,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_121",
+          "source_ref": "workbook_parts#row_115",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "roof",
@@ -26918,22 +26669,25 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "RR action=confirm_vendor_scope_and_return_condition; evidence=fj40-00133|fj40-00229|akber_khan-00796 | Retain roof refresh path with channel repair; replace only if repair scope fails.",
           "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_vmd_unlocking_protective_lubricating_age_2ccc07ba16d3.webp",
+            "caption": "VMD Unlocking Protective Lubricating Agent 200ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
             "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
+            "matched_tokens": [
+              "row_115"
+            ],
+            "match_basis": "selling_site_match",
+            "match_score": 164
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_127",
+          "source_ref": "workbook_parts#row_121",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "rubbers_and_seals",
@@ -26964,7 +26718,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_126",
+          "source_ref": "workbook_parts#row_120",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "window_hardware",
@@ -26995,7 +26749,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_123",
+          "source_ref": "workbook_parts#row_117",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "windows",
@@ -27011,17 +26765,20 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "RR action=confirm_vendor_scope_and_return_condition; evidence=akber_khan-00568|akber_khan-00796 | Glass/frame retained; inspect seals at final fit-up before buying replacements.",
           "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_loctite_290_medium_high_strength_wicking_f2b2f60d13c7.jpg",
+            "caption": "Loctite 290 \u2013 Medium/High Strength Wicking Grade Threadlocker \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
             "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
+            "matched_tokens": [
+              "row_117"
+            ],
+            "match_basis": "selling_site_match",
+            "match_score": 164
           }
         },
         {
@@ -27083,9 +26840,9 @@ window.J40_DASHBOARD_DATA = {
             "stage": "reference_material",
             "media_id": "20260424_part_electric_wires_aliexpress_3070027285627489",
             "matched_tokens": [
-              "20260424",
               "3070027285627489",
               "20260424_part_electric_wires_aliexpress_3070027285627489",
+              "20260424",
               "electric",
               "wires"
             ],
@@ -27199,8 +26956,8 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_rubber_grommet_set",
-              "https://www.aliexpress.com/i/1005008318051049.html",
               "1005008318051049",
+              "https://www.aliexpress.com/i/1005008318051049.html",
               "rubber",
               "grommet",
               "aliexpress"
@@ -27519,9 +27276,9 @@ window.J40_DASHBOARD_DATA = {
             "stage": "reference_material",
             "media_id": "20260424_part_dielectric_grease_aliexpress_order_3070231697777489",
             "matched_tokens": [
-              "20260424",
               "20260424_part_dielectric_grease_aliexpress_order_3070231697777489",
               "3070231697777489",
+              "20260424",
               "dielectric",
               "grease",
               "aliexpress"
@@ -28772,7 +28529,69 @@ window.J40_DASHBOARD_DATA = {
       "in_process": [
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_106",
+          "source_ref": "workbook_parts#row_16",
+          "supply_type": "part",
+          "inventory_group": "parts",
+          "item": "Ironman Foamcell front damper pair - separate shipment (24635FE x2)",
+          "vendor": "Ironman 4x4 supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "",
+          "status_group": "in_process",
+          "status_detail": "ordered_or_paid",
+          "procurement_stage": "",
+          "payment_status": "Unknown",
+          "delivery_status": "",
+          "evidence_ref": "",
+          "notes": "Bifurcated shipment row. Amount is included in main Ironman kit total; verify 24635FE x2 when received.",
+          "image": {
+            "path": "./assets/image-needed.svg",
+            "caption": "Image required - add photo evidence",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "",
+            "specific_component": "",
+            "stage": "",
+            "media_id": "",
+            "matched_tokens": [],
+            "match_basis": "placeholder"
+          }
+        },
+        {
+          "source": "workbook_parts",
+          "source_ref": "workbook_parts#row_15",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Ironman Foamcell suspension kit - main shipment (front dampers separate)",
+          "vendor": "Ironman 4x4 supplier",
+          "amount": "575000",
+          "currency": "PKR",
+          "workstream": "",
+          "status_group": "in_process",
+          "status_detail": "ordered_or_paid",
+          "procurement_stage": "",
+          "payment_status": "Unknown",
+          "delivery_status": "",
+          "evidence_ref": "",
+          "notes": "User update 2026-05-01: ordered Ironman Foamcell kit for PKR 575000 after discount; front dampers tracked as separate shipment.",
+          "image": {
+            "path": "./assets/image-needed.svg",
+            "caption": "Image required - add photo evidence",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "",
+            "specific_component": "",
+            "stage": "",
+            "media_id": "",
+            "matched_tokens": [],
+            "match_basis": "placeholder"
+          }
+        },
+        {
+          "source": "workbook_parts",
+          "source_ref": "workbook_parts#row_100",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "PERMATEX 81150 DIE ELECTRIC TUNE UP GREASE 0.33 OZ",
@@ -28805,6 +28624,78 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "inventory_match",
             "match_score": 40
+          }
+        },
+        {
+          "source": "workbook_parts",
+          "source_ref": "workbook_parts#row_37",
+          "supply_type": "part",
+          "inventory_group": "electrical",
+          "item": "Schneider Harmony XB4 22mm 3-position maintained selector switch (2NO, long handle) x 3",
+          "vendor": "purchaser.com.pk | https://purchaser.com.pk/schneider-selector-switch-harmony-xb4-metal-black-22mm-long-handle-3positions-stay-put-2no/",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "",
+          "status_group": "in_process",
+          "status_detail": "ordered_or_paid",
+          "procurement_stage": "",
+          "payment_status": "Included in combined total",
+          "delivery_status": "No",
+          "evidence_ref": "",
+          "notes": "3-way Schneider switches are being sent / in transit (user update 2026-04-27); awaiting receipt confirmation.",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_schneider_harmony_22mm_2_position_mainta_a8e361b962f9.jpg",
+            "caption": "Schneider Harmony 22mm 2-position maintained selector switch (1NO, black) x 4 \u00b7 purchaser.com.pk | https://purchaser.com.pk/schneider-harmony-22mm-push-button-2-position-selector-switch-black-maintained-1-no-600-v/ \u00b7 Selling Site Image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "schneider",
+              "harmony",
+              "xb4",
+              "22mm",
+              "position",
+              "maintained",
+              "selector",
+              "switch"
+            ],
+            "match_basis": "selling_site_match",
+            "match_score": 105
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_old_man_emu_shocks",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Ironman Foamcell suspension kit - main shipment (front dampers separate)",
+          "vendor": "Ironman 4x4 supplier",
+          "amount": "575000",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "unknown",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "user_update_2026-05-01_ironman_foamcell_order|image_2026-05-01_ironman_foamcell_parts_list",
+          "notes": "User update 2026-05-01: Ironman Foamcell suspension kit ordered from attached parts list; PKR 600000 less PKR 25000 discount = PKR 575000 total. Track as main shipment plus a separate front damper shipment. Supplier list shows part numbers 24635FE, 24636FE, TOY001B, TOY002B, 415UBK, 713UK, 343LH, 343RH, 3523, 346. All previous local spring, OME/Bilstein, separate bushing, shackle, and U-bolt alternatives removed from active parts list.",
+          "image": {
+            "path": "./assets/image-needed.svg",
+            "caption": "Image required - add photo evidence",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "",
+            "specific_component": "",
+            "stage": "",
+            "media_id": "",
+            "matched_tokens": [],
+            "match_basis": "placeholder"
           }
         },
         {
@@ -28938,6 +28829,37 @@ window.J40_DASHBOARD_DATA = {
           "delivery_status": "researching",
           "evidence_ref": "user_seed|fj40-00006|fj40-00263|akber_khan-00346|akber_khan-00858",
           "notes": "Upgrade path under consideration; leave behind the steering decision gate until the baseline inspection is complete",
+          "image": {
+            "path": "./assets/image-needed.svg",
+            "caption": "Image required - add photo evidence",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "",
+            "specific_component": "",
+            "stage": "",
+            "media_id": "",
+            "matched_tokens": [],
+            "match_basis": "placeholder"
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_ironman_front_dampers_separate_shipment",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Ironman Foamcell front damper pair - separate shipment (24635FE x2)",
+          "vendor": "Ironman 4x4 supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "suspension_upgrade",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "unknown",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "user_update_2026-05-01_front_dampers_separate_shipment|image_2026-05-01_ironman_foamcell_parts_list|ironman_24635FE_front_reference",
+          "notes": "Bifurcated shipment tracker for the front damper pair arriving separately from the rest of the Ironman kit. Amount is included in the main Ironman kit total to avoid double-counting. Verify 24635FE x2 on receipt before closing suspension procurement.",
           "image": {
             "path": "./assets/image-needed.svg",
             "caption": "Image required - add photo evidence",
@@ -29132,7 +29054,7 @@ window.J40_DASHBOARD_DATA = {
       "still_required": [
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_81",
+          "source_ref": "workbook_parts#row_75",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "12mm split wiring pipe / loom pipe",
@@ -29148,29 +29070,26 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Open item with no procurement evidence yet. | Migrated from Wiring row 62 into Parts inventory.",
           "image": {
-            "path": "../../photos/20260410_202228_gp_oYEtAYJQ.jpg",
-            "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
-            "captured_date": "2026-04-10",
-            "captured_time": "20:22:28",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_o_type_yellow_insulated_thimble_cable_lu_b2648b58083c.jpg",
+            "caption": "O-type Yellow Insulated Thimble/ Cable Lug 4mm (6mm hole) \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
+            "captured_date": "",
+            "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "wiring_harness_and_connectors",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "20260410_202228_gp_oYEtAYJQ",
+            "media_id": "",
             "matched_tokens": [
-              "wiring",
-              "loom",
-              "procurement",
-              "yet",
-              "inventory"
+              "row_75",
+              "row"
             ],
-            "match_basis": "inventory_match",
-            "match_score": 48
+            "match_basis": "selling_site_match",
+            "match_score": 167
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_82",
+          "source_ref": "workbook_parts#row_76",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "16mm split wiring pipe / loom pipe",
@@ -29208,7 +29127,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_233",
+          "source_ref": "workbook_parts#row_220",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "2.5-inch duct hose and defrost hose kit",
@@ -29239,7 +29158,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_108",
+          "source_ref": "workbook_parts#row_102",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "3mm Sound Damping Sheet / Deadening Pad",
@@ -29270,7 +29189,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_80",
+          "source_ref": "workbook_parts#row_74",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "8mm split wiring pipe / loom pipe",
@@ -29286,29 +29205,26 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Open item with no procurement evidence yet. | Migrated from Wiring row 61 into Parts inventory.",
           "image": {
-            "path": "../../photos/20260410_202228_gp_oYEtAYJQ.jpg",
-            "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
-            "captured_date": "2026-04-10",
-            "captured_time": "20:22:28",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_insulated_thimbles_female_lug_2_5mm_blue_d8be9389f045.jpg",
+            "caption": "Insulated Thimbles female lug 2.5mm Blue in Pakistan \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
+            "captured_date": "",
+            "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "wiring_harness_and_connectors",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "20260410_202228_gp_oYEtAYJQ",
+            "media_id": "",
             "matched_tokens": [
-              "wiring",
-              "loom",
-              "procurement",
-              "yet",
-              "inventory"
+              "row_74",
+              "row"
             ],
-            "match_basis": "inventory_match",
-            "match_score": 48
+            "match_basis": "selling_site_match",
+            "match_score": 167
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_180",
+          "source_ref": "workbook_parts#row_168",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "A/C compressor",
@@ -29401,7 +29317,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_205",
+          "source_ref": "workbook_parts#row_193",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "All coolant hoses",
@@ -29432,7 +29348,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_186",
+          "source_ref": "workbook_parts#row_174",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Alternator / regulator check or replacement",
@@ -29448,26 +29364,22 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Migrated from Parts_Estimates; needs buy/restore decision before ordering.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_internal_compact_covered_blade_fuse_box__8d4fd7a1f9a4.png",
-            "caption": "Internal compact covered blade fuse box (OEM-style) x3 \u00b7 Selling Site Image",
+            "path": "./assets/image-needed.svg",
+            "caption": "Image required - add photo evidence",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
-            "stage": "procurement_reconciliation",
+            "component_group": "",
+            "specific_component": "",
+            "stage": "",
             "media_id": "",
-            "matched_tokens": [
-              "row_186",
-              "parts"
-            ],
-            "match_basis": "selling_site_match",
-            "match_score": 167
+            "matched_tokens": [],
+            "match_basis": "placeholder"
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_220",
+          "source_ref": "workbook_parts#row_208",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Anti-seize compound",
@@ -29498,7 +29410,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_238",
+          "source_ref": "workbook_parts#row_225",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Barrier hose and fittings",
@@ -29529,7 +29441,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_181",
+          "source_ref": "workbook_parts#row_169",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Barrier hoses and fittings",
@@ -29560,7 +29472,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_131",
+          "source_ref": "workbook_parts#row_125",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Bedliner sprays",
@@ -29575,37 +29487,6 @@ window.J40_DASHBOARD_DATA = {
           "delivery_status": "",
           "evidence_ref": "",
           "notes": "RR action=Prefer local sourcing first, then online if unavailable.; evidence=Bedliner belongs after weld/rust closure and primer, not at tub-lift start.",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_150",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Bilstein 5100 / 5160 shocks",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "",
-          "evidence_ref": "",
-          "notes": "RR action=No supplier action now.; evidence=Upgrade/option item should wait until baseline reassembly scope is closed. | Decision 2026-04-17: de-scoped by user. Use local-new serviceable suspension path (new local leaf packs + new local genuine shocks + new bushes/U-bolts/shackles).",
           "image": {
             "path": "./assets/image-needed.svg",
             "caption": "Image required - add photo evidence",
@@ -29653,7 +29534,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_169",
+          "source_ref": "workbook_parts#row_157",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Body mount hardware set",
@@ -29684,7 +29565,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_167",
+          "source_ref": "workbook_parts#row_155",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Body mount shim/spacer set",
@@ -29746,7 +29627,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_217",
+          "source_ref": "workbook_parts#row_205",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Body shims / spacers",
@@ -29839,7 +29720,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_187",
+          "source_ref": "workbook_parts#row_175",
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Brake master cylinder",
@@ -29870,7 +29751,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_191",
+          "source_ref": "workbook_parts#row_179",
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Brake shoes / pads",
@@ -29901,7 +29782,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_163",
+          "source_ref": "workbook_parts#row_153",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Bump stops",
@@ -29932,7 +29813,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_215",
+          "source_ref": "workbook_parts#row_203",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Captive nuts / clip nuts",
@@ -29963,7 +29844,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_197",
+          "source_ref": "workbook_parts#row_185",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Clevis pins / clips",
@@ -29994,7 +29875,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_196",
+          "source_ref": "workbook_parts#row_184",
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Clutch flex hose / hard line",
@@ -30056,7 +29937,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_194",
+          "source_ref": "workbook_parts#row_182",
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Clutch master cylinder",
@@ -30087,7 +29968,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_195",
+          "source_ref": "workbook_parts#row_183",
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Clutch slave cylinder",
@@ -30118,7 +29999,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_179",
+          "source_ref": "workbook_parts#row_167",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Compact condenser",
@@ -30149,7 +30030,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_174",
+          "source_ref": "workbook_parts#row_162",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Complete new set of locks",
@@ -30180,7 +30061,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_184",
+          "source_ref": "workbook_parts#row_172",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Condenser fan and relay",
@@ -30211,7 +30092,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_241",
+          "source_ref": "workbook_parts#row_228",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Condenser fan if required",
@@ -30242,7 +30123,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_210",
+          "source_ref": "workbook_parts#row_198",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Coolant overflow bottle / recovery setup",
@@ -30273,7 +30154,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_153",
+          "source_ref": "workbook_parts#row_146",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Custom U-joints / intermediate shafts",
@@ -30304,7 +30185,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_39",
+          "source_ref": "workbook_parts#row_38",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Dashboard fascia / auxiliary switch panel (if OEM holes are insufficient)",
@@ -30320,8 +30201,8 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Only buy/fabricate if right+mid cluster hole count/spacing/depth cannot safely host all required controls. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: fabricate only if OEM holes cannot safely fit required controls.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_schneider_harmony_xb4_22mm_3_position_ma_0c2b25595c0a.jpg",
-            "caption": "Schneider Harmony XB4 22mm 3-position maintained selector switch (2NO, long handle) x 3 \u00b7 purchaser.com.pk | https://purchaser.com.pk/schneider-selector-switch-harmony-xb4-metal-black-22mm-long-handle-3positions-stay-put-2no/ \u00b7 Selling Site Image",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_schneider_harmony_22mm_2_position_mainta_a8e361b962f9.jpg",
+            "caption": "Schneider Harmony 22mm 2-position maintained selector switch (1NO, black) x 4 \u00b7 purchaser.com.pk | https://purchaser.com.pk/schneider-harmony-22mm-push-button-2-position-selector-switch-black-maintained-1-no-600-v/ \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -30330,12 +30211,11 @@ window.J40_DASHBOARD_DATA = {
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "row_39",
-              "switch",
-              "metal"
+              "row_38",
+              "switch"
             ],
             "match_basis": "selling_site_match",
-            "match_score": 182
+            "match_score": 176
           }
         },
         {
@@ -30371,7 +30251,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_170",
+          "source_ref": "workbook_parts#row_158",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Door weatherstrips",
@@ -30402,7 +30282,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_234",
+          "source_ref": "workbook_parts#row_221",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Drain hose and mounting kit",
@@ -30433,7 +30313,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_155",
+          "source_ref": "workbook_parts#row_148",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "EPS mounting bracket",
@@ -30464,7 +30344,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_144",
+          "source_ref": "workbook_parts#row_138",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Electric wires",
@@ -30495,7 +30375,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_228",
+          "source_ref": "workbook_parts#row_215",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Electrical power steering",
@@ -30562,7 +30442,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_211",
+          "source_ref": "workbook_parts#row_199",
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Engine mounts",
@@ -30661,7 +30541,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_182",
+          "source_ref": "workbook_parts#row_170",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Evaporator drain hose",
@@ -30692,7 +30572,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_213",
+          "source_ref": "workbook_parts#row_201",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Exhaust hangers / rubbers",
@@ -30723,38 +30603,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_47",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "FK08 rear anti-inversion kit x1",
-          "vendor": "ARB/OME dealer or trusted 4x4 suspension source.",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "",
-          "evidence_ref": "",
-          "notes": "Suspension procurement migrated from Suspension tab. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: OME line held for post-inspection cost/risk review before purchase commit. | Decision 2026-04-17: de-scoped by user. Use local-new serviceable suspension path (new local leaf packs + new local genuine shocks + new bushes/U-bolts/shackles).",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_208",
+          "source_ref": "workbook_parts#row_196",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Fan belt / accessory belts",
@@ -30785,7 +30634,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_243",
+          "source_ref": "workbook_parts#row_230",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves",
@@ -30816,7 +30665,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_244",
+          "source_ref": "workbook_parts#row_231",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers",
@@ -30847,7 +30696,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_245",
+          "source_ref": "workbook_parts#row_232",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Fastener Kit C: Captive nuts/clip nuts assortment - M6/M8 with anti-corrosion finish",
@@ -30878,7 +30727,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_246",
+          "source_ref": "workbook_parts#row_233",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points",
@@ -30909,7 +30758,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_247",
+          "source_ref": "workbook_parts#row_234",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Fastener Kit E: Stainless interior/trim screw set (non-structural) + cup washers",
@@ -30940,7 +30789,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_224",
+          "source_ref": "workbook_parts#row_212",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Firewall boots for cables and lines",
@@ -30971,7 +30820,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_239",
+          "source_ref": "workbook_parts#row_226",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Firewall bulkhead fittings",
@@ -31002,7 +30851,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_189",
+          "source_ref": "workbook_parts#row_177",
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Flexible brake hoses",
@@ -31033,7 +30882,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_173",
+          "source_ref": "workbook_parts#row_161",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Floor plugs / drain plugs",
@@ -31095,7 +30944,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_198",
+          "source_ref": "workbook_parts#row_186",
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Fuel tank clean / repair items",
@@ -31111,17 +30960,21 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Migrated from Parts_Estimates; needs buy/restore decision before ordering.",
           "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_internal_compact_covered_blade_fuse_box__8d4fd7a1f9a4.png",
+            "caption": "Internal compact covered blade fuse box (OEM-style) x3 \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
             "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
+            "matched_tokens": [
+              "row_186",
+              "parts"
+            ],
+            "match_basis": "selling_site_match",
+            "match_score": 167
           }
         },
         {
@@ -31157,7 +31010,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_42",
+          "source_ref": "workbook_parts#row_41",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Fuel-stop ignition-control hardware top-up (relay/fuse/terminals only if stock short)",
@@ -31173,27 +31026,26 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Implements reliable key-off engine shutdown while retaining manual diesel cutoff cable as backup. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: existing relay/fuse/terminal inventory is substantial; no immediate purchase unless counted short.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_new_genuine_local_shock_absorbers_path_a_92786c957ef6.jpg",
-            "caption": "New genuine local shock absorbers path (Agriauto or equivalent OEM-grade local brand) \u00b7 Agriauto distributor network (primary) / TJM local dealers (backup) \u00b7 Selling Site Image",
-            "captured_date": "",
-            "captured_time": "",
+            "path": "../../photos/20260411_065030.jpg",
+            "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+            "captured_date": "2026-04-11",
+            "captured_time": "06:50:30",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
+            "specific_component": "fuse_distribution_and_power_hardware",
             "stage": "procurement_reconciliation",
-            "media_id": "",
+            "media_id": "20260411_065030",
             "matched_tokens": [
-              "stop",
-              "top",
-              "local"
+              "hardware",
+              "fuse"
             ],
-            "match_basis": "selling_site_match",
-            "match_score": 60
+            "match_basis": "inventory_match",
+            "match_score": 32
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_214",
+          "source_ref": "workbook_parts#row_202",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Full set of new nuts and bolts",
@@ -31224,7 +31076,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_212",
+          "source_ref": "workbook_parts#row_200",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Gearbox / transfer case mounts",
@@ -31286,7 +31138,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_219",
+          "source_ref": "workbook_parts#row_207",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Grease nipples / zerks",
@@ -31317,7 +31169,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_76",
+          "source_ref": "workbook_parts#row_70",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "H4 Ceramic Headlight Connector - H4 - High",
@@ -31333,28 +31185,26 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Open item with no procurement evidence yet. | Migrated from Wiring row 52 into Parts inventory. | RR action=Use Montgomery Road / local electrical markets for small top-ups after stock count.; evidence=Workbook shows substantial wiring stock already received/paid; top up only missing sizes/connectors.",
           "image": {
-            "path": "../../photos/20260424_part_h4_ceramic_headlight_connector_high_autoxpert_order_1599.jpg",
-            "caption": "Reference Media \u00b7 Reference Material \u00b7 ",
+            "path": "../../deliverables/selling_site_images/images/workbook_tools_bosi_nose_plier_6_black_a_quality_in_pak_680434c634c4.jpg",
+            "caption": "Copper Cable Lug 16mm cable 8mm Bolt Hole Pakistan \u00d7 10 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "documentation_reference",
-            "specific_component": "reference_media",
-            "stage": "reference_material",
-            "media_id": "20260424_part_h4_ceramic_headlight_connector_high_autoxpert_order_1599",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
             "matched_tokens": [
-              "ceramic",
-              "headlight",
-              "connector",
-              "high"
+              "row_70",
+              "row"
             ],
-            "match_basis": "inventory_match",
-            "match_score": 38
+            "match_basis": "selling_site_match",
+            "match_score": 166
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_109",
+          "source_ref": "workbook_parts#row_103",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "HB BODY - U900 CAVITY WAX SPRAY U900 - 400ML",
@@ -31385,7 +31235,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_107",
+          "source_ref": "workbook_parts#row_101",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "HB BODY 999 SEAM SEALER 300ML CARTR",
@@ -31416,7 +31266,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_192",
+          "source_ref": "workbook_parts#row_180",
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Handbrake hardware / cables",
@@ -31447,7 +31297,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_190",
+          "source_ref": "workbook_parts#row_178",
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Hard brake lines",
@@ -31478,7 +31328,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_103",
+          "source_ref": "workbook_parts#row_97",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Hazard: 1 \u00d7 red latching pushbutton, panel-mount, automotive 12V",
@@ -31575,7 +31425,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_206",
+          "source_ref": "workbook_parts#row_194",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Heater hoses",
@@ -31606,7 +31456,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_230",
+          "source_ref": "workbook_parts#row_217",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Hidden evaporator/heater/defrost unit, compact Mini-size",
@@ -31637,7 +31487,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_145",
+          "source_ref": "workbook_parts#row_139",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Horn relay",
@@ -31668,7 +31518,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_133",
+          "source_ref": "workbook_parts#row_127",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Hot rod wiring quote",
@@ -31703,7 +31553,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_175",
+          "source_ref": "workbook_parts#row_163",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Ignition barrel / switch",
@@ -31734,7 +31584,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_40",
+          "source_ref": "workbook_parts#row_39",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Ignition lock security fix (new barrel + matched keys OR full locksmith re-key)",
@@ -31750,22 +31600,25 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Current key security reported weak; complete matched-key security fix before final refit. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: prioritize as low-risk, locally available buy-first item. | Price basis 2026-04-15: locksmith re-key/local lock solution preferred; exact FJ40 imported set costs higher.",
           "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_schneider_harmony_xb4_22mm_3_position_ma_0c2b25595c0a.jpg",
+            "caption": "Schneider Harmony XB4 22mm 3-position maintained selector switch (2NO, long handle) x 3 \u00b7 purchaser.com.pk | https://purchaser.com.pk/schneider-selector-switch-harmony-xb4-metal-black-22mm-long-handle-3positions-stay-put-2no/ \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
             "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
+            "matched_tokens": [
+              "row_39"
+            ],
+            "match_basis": "selling_site_match",
+            "match_score": 164
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_70",
+          "source_ref": "workbook_parts#row_64",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Insulated Thimbles Male lug 4mm Yellow in Pakistan \u00d7 1",
@@ -31781,8 +31634,8 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Open item with no procurement evidence yet. | Migrated from Wiring row 46 into Parts inventory.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_tools_bosi_nose_plier_6_black_a_quality_in_pak_680434c634c4.jpg",
-            "caption": "Copper Cable Lug 16mm cable 8mm Bolt Hole Pakistan \u00d7 10 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_insulated_thimbles_female_lug_2_5mm_blue_d8be9389f045.jpg",
+            "caption": "Insulated Thimbles female lug 2.5mm Blue in Pakistan \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -31791,18 +31644,20 @@ window.J40_DASHBOARD_DATA = {
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "row_70",
+              "insulated",
+              "thimbles",
+              "male",
               "lug",
               "pakistan",
               "row"
             ],
             "match_basis": "selling_site_match",
-            "match_score": 190
+            "match_score": 87
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_250",
+          "source_ref": "workbook_parts#row_237",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Interior conversion: Bench mounting reinforcement plates + class 8.8 hardware",
@@ -31837,7 +31692,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_251",
+          "source_ref": "workbook_parts#row_238",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Interior conversion: Side bench cushion+upholstery set (slim folded thickness)",
@@ -31868,7 +31723,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_249",
+          "source_ref": "workbook_parts#row_236",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Interior conversion: Side bench hinge+latch kit with positive lock (up and down positions)",
@@ -31899,7 +31754,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_248",
+          "source_ref": "workbook_parts#row_235",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Interior conversion: Side bench seat frame set LH+RH (fold-up profile below window line)",
@@ -31930,7 +31785,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_252",
+          "source_ref": "workbook_parts#row_239",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Interior conversion: Side bench seatbelt anchors + belts (compliant hardware set)",
@@ -31966,7 +31821,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_185",
+          "source_ref": "workbook_parts#row_173",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Internal compact covered blade fuse box (OEM-style) x3",
@@ -31993,8 +31848,8 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "oem-style",
-              "https://www.daraz.pk/products/6-ways-12-24v-automotive-circuit-blade-fuse-box-for-car-truck-vehicle-i486699111.html",
               "486699111",
+              "https://www.daraz.pk/products/6-ways-12-24v-automotive-circuit-blade-fuse-box-for-car-truck-vehicle-i486699111.html",
               "internal",
               "compact",
               "covered",
@@ -32038,100 +31893,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_165",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Local fabricated leaf springs (front + rear)",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "",
-          "evidence_ref": "",
-          "notes": "Migrated from Parts_Estimates; needs buy/restore decision before ordering.",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_15",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Local front leaf spring pack (LOCAL-FJ40-FRONT-LEAF) x2",
-          "vendor": "Local spring maker with ride-height/load brief + bushing compatibility check.",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "",
-          "evidence_ref": "",
-          "notes": "Suspension procurement moved under Parts; quantity/spec migrated from Suspension tab. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: local spring path retained; order only after measured quote confirmation. | Quote-band set from local fabricated front+rear spring baseline (row 166) split 50/50; confirm with measured eye-eye, pack width and arch. | Age/condition rule: NEW_FABRICATED_ONLY springs; do not install unknown-used packs. | Decision 2026-04-17: selected as primary suspension path (new local fabricated leaf packs; quality-first, easy local replacement).",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_16",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Local rear leaf spring pack (LOCAL-FJ40-REAR-LEAF) x2",
-          "vendor": "Local spring maker with load/ride-height brief + anti-wrap compatibility check.",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "",
-          "evidence_ref": "",
-          "notes": "Suspension procurement moved under Parts; quantity/spec migrated from Suspension tab. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: local spring path retained; order only after measured quote confirmation. | Quote-band set from local fabricated front+rear spring baseline (row 166) split 50/50; confirm with measured eye-eye, pack width and arch. | Age/condition rule: NEW_FABRICATED_ONLY springs; do not install unknown-used packs. | Decision 2026-04-17: selected as primary suspension path (new local fabricated leaf packs; quality-first, easy local replacement).",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_35",
+          "source_ref": "workbook_parts#row_34",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "M6 star / lock washer",
@@ -32162,7 +31924,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_36",
+          "source_ref": "workbook_parts#row_35",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "M8 star / lock washer",
@@ -32259,7 +32021,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_120",
+          "source_ref": "workbook_parts#row_114",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "New Battery",
@@ -32290,7 +32052,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_242",
+          "source_ref": "workbook_parts#row_229",
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "New O-rings, refrigerant oil, and full R134a charge setup",
@@ -32321,38 +32083,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_161",
-          "supply_type": "part",
-          "inventory_group": "parts",
-          "item": "New U-bolts",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "",
-          "evidence_ref": "",
-          "notes": "Migrated from Parts_Estimates; needs buy/restore decision before ordering.",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_201",
+          "source_ref": "workbook_parts#row_189",
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "New fuel hoses",
@@ -32383,48 +32114,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_253",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "New genuine local shock absorbers path (Agriauto or equivalent OEM-grade local brand)",
-          "vendor": "Agriauto distributor network (primary) / TJM local dealers (backup)",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "",
-          "evidence_ref": "",
-          "notes": "Decision 2026-04-17: OME dropped; use new locally serviceable shocks only. Verify fitment length/mount type, warranty/invoice, and matching pair damping.",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_new_genuine_local_shock_absorbers_path_a_92786c957ef6.jpg",
-            "caption": "New genuine local shock absorbers path (Agriauto or equivalent OEM-grade local brand) \u00b7 Agriauto distributor network (primary) / TJM local dealers (backup) \u00b7 Selling Site Image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "new",
-              "genuine",
-              "local",
-              "shock",
-              "absorbers",
-              "path",
-              "agriauto",
-              "equivalent"
-            ],
-            "match_basis": "selling_site_match",
-            "match_score": 105
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_168",
+          "source_ref": "workbook_parts#row_156",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "New rubber mountings between chassis and body",
@@ -32455,162 +32145,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_43",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "OMEGS8 greasable shackle kit (front) x1",
-          "vendor": "ARB/OME dealer or trusted 4x4 suspension source.",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "",
-          "evidence_ref": "",
-          "notes": "Suspension procurement migrated from Suspension tab. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: OME line held for post-inspection cost/risk review before purchase commit. | Provisional quote band from international OME anchors + local importer/market variance; verify part stamping and pin size before commit. | Age/condition rule: NEW_GENUINE_ONLY (avoid used shackles). | Decision 2026-04-17: de-scoped by user. Use local-new serviceable suspension path (new local leaf packs + new local genuine shocks + new bushes/U-bolts/shackles).",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_44",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "OMEGS9 greasable shackle kit (rear) x1",
-          "vendor": "ARB/OME dealer or trusted 4x4 suspension source.",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "",
-          "evidence_ref": "",
-          "notes": "Suspension procurement migrated from Suspension tab. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: OME line held for post-inspection cost/risk review before purchase commit. | Provisional quote band from international OME anchors + local importer/market variance; verify part stamping and pin size before commit. | Age/condition rule: NEW_GENUINE_ONLY (avoid used shackles). | Decision 2026-04-17: de-scoped by user. Use local-new serviceable suspension path (new local leaf packs + new local genuine shocks + new bushes/U-bolts/shackles).",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_45",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "OMESB30 bushing kit x4",
-          "vendor": "ARB/OME dealer or trusted 4x4 suspension source.",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "",
-          "evidence_ref": "",
-          "notes": "Suspension procurement migrated from Suspension tab. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: OME line held for post-inspection cost/risk review before purchase commit. | Provisional quote band derived from OMESB30 per-pack anchors and required quantity (x4); verify complete bush count per leaf pack. | Age/condition rule: NEW_GENUINE_ONLY (avoid used bush kits). | Decision 2026-04-17: de-scoped by user. Use local-new serviceable suspension path (new local leaf packs + new local genuine shocks + new bushes/U-bolts/shackles).",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_46",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "OMEU59A U-bolt kit x7",
-          "vendor": "ARB/OME dealer or trusted 4x4 suspension source.",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "",
-          "evidence_ref": "",
-          "notes": "Suspension procurement migrated from Suspension tab. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: OME line held for post-inspection cost/risk review before purchase commit. | Provisional quote band derived from OMEU59A per-unit anchors and required quantity (x7); confirm thread/pitch/length against spring stack. | Age/condition rule: NEW_GENUINE_ONLY (avoid used U-bolts). | Decision 2026-04-17: de-scoped by user. Use local-new serviceable suspension path (new local leaf packs + new local genuine shocks + new bushes/U-bolts/shackles).",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_164",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Old Man Emu Nitrocharger shocks (front + rear set)",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "",
-          "evidence_ref": "",
-          "notes": "Migrated from Parts_Estimates; needs buy/restore decision before ordering. | Decision 2026-04-17: de-scoped by user. Use local-new serviceable suspension path (new local leaf packs + new local genuine shocks + new bushes/U-bolts/shackles).",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_235",
+          "source_ref": "workbook_parts#row_222",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Parallel-flow condenser sized to your core support",
@@ -32641,7 +32176,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_222",
+          "source_ref": "workbook_parts#row_210",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Pedal rubbers",
@@ -32672,7 +32207,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_151",
+          "source_ref": "workbook_parts#row_144",
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Power steering upgrade",
@@ -32703,7 +32238,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_34",
+          "source_ref": "workbook_parts#row_33",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Primer",
@@ -32734,7 +32269,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_202",
+          "source_ref": "workbook_parts#row_190",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Proper hose clamps",
@@ -32827,7 +32362,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_209",
+          "source_ref": "workbook_parts#row_197",
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Radiator mounts and pads",
@@ -32858,7 +32393,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_204",
+          "source_ref": "workbook_parts#row_192",
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Radiator recore or replacement",
@@ -32889,7 +32424,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_176",
+          "source_ref": "workbook_parts#row_164",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Rear door / tailgate / glovebox locks",
@@ -32920,7 +32455,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_236",
+          "source_ref": "workbook_parts#row_223",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Receiver-drier",
@@ -32951,7 +32486,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_240",
+          "source_ref": "workbook_parts#row_227",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Relay/fuse/wiring for blower, clutch, and fan",
@@ -32986,7 +32521,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_119",
+          "source_ref": "workbook_parts#row_113",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Remove old LEDS",
@@ -33002,26 +32537,22 @@ window.J40_DASHBOARD_DATA = {
           "evidence_ref": "",
           "notes": "Open item with no procurement evidence yet. | Migrated from Service row 2 into Parts inventory.",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_contact_cleaner_400ml_1_fe67e17f6de8.webp",
-            "caption": "Contact Cleaner 400ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
+            "path": "./assets/image-needed.svg",
+            "caption": "Image required - add photo evidence",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
-            "stage": "procurement_reconciliation",
+            "component_group": "",
+            "specific_component": "",
+            "stage": "",
             "media_id": "",
-            "matched_tokens": [
-              "row_119",
-              "row"
-            ],
-            "match_basis": "selling_site_match",
-            "match_score": 167
+            "matched_tokens": [],
+            "match_basis": "placeholder"
           }
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_193",
+          "source_ref": "workbook_parts#row_181",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Reservoir hoses / caps / seals",
@@ -33052,7 +32583,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_203",
+          "source_ref": "workbook_parts#row_191",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Return-line hose",
@@ -33114,7 +32645,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_221",
+          "source_ref": "workbook_parts#row_209",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Sealants / gasket makers",
@@ -33145,7 +32676,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_199",
+          "source_ref": "workbook_parts#row_187",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Sender seal",
@@ -33176,7 +32707,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_232",
+          "source_ref": "workbook_parts#row_219",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Separate 3-knob control panel",
@@ -33207,38 +32738,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_160",
-          "supply_type": "part",
-          "inventory_group": "parts",
-          "item": "Shackle bushes",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "",
-          "evidence_ref": "",
-          "notes": "Migrated from Parts_Estimates; needs buy/restore decision before ordering.",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_162",
+          "source_ref": "workbook_parts#row_152",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Shackles / pins",
@@ -33269,7 +32769,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_154",
+          "source_ref": "workbook_parts#row_147",
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Shaft support bearing",
@@ -33300,7 +32800,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_231",
+          "source_ref": "workbook_parts#row_218",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Slim under-dash louver outlet panel",
@@ -33331,7 +32831,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_178",
+          "source_ref": "workbook_parts#row_166",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Slimline under-dash AC unit",
@@ -33362,7 +32862,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_218",
+          "source_ref": "workbook_parts#row_206",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Split pins / cotter pins",
@@ -33393,7 +32893,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_216",
+          "source_ref": "workbook_parts#row_204",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Spring / serrated / star washers",
@@ -33424,38 +32924,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_159",
-          "supply_type": "part",
-          "inventory_group": "parts",
-          "item": "Spring eye bushes",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "",
-          "evidence_ref": "",
-          "notes": "Migrated from Parts_Estimates; needs buy/restore decision before ordering.",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_166",
+          "source_ref": "workbook_parts#row_154",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Spring setup, shims, and alignment labor",
@@ -33486,7 +32955,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_135",
+          "source_ref": "workbook_parts#row_129",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Star washers (bite into metal)",
@@ -33517,7 +32986,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_41",
+          "source_ref": "workbook_parts#row_40",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Starter interrupt security relay path (relay + base + concealed arm/disarm switch)",
@@ -33552,7 +33021,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_157",
+          "source_ref": "workbook_parts#row_150",
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Steering box service kit",
@@ -33583,7 +33052,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_229",
+          "source_ref": "workbook_parts#row_216",
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Steering bushings",
@@ -33614,7 +33083,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_156",
+          "source_ref": "workbook_parts#row_149",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Steering column firewall seal / grommet",
@@ -33645,7 +33114,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_158",
+          "source_ref": "workbook_parts#row_151",
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Steering damper / stabilizer",
@@ -33676,7 +33145,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_177",
+          "source_ref": "workbook_parts#row_165",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Striker pins / latch rebuild parts",
@@ -33707,7 +33176,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_200",
+          "source_ref": "workbook_parts#row_188",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Tank straps / pads / rubbers",
@@ -33769,7 +33238,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_152",
+          "source_ref": "workbook_parts#row_145",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Toyota Vitz SCP90 (1.3L) EPS column complete set",
@@ -33800,7 +33269,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_237",
+          "source_ref": "workbook_parts#row_224",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Trinary switch",
@@ -33893,7 +33362,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_172",
+          "source_ref": "workbook_parts#row_160",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Vent / flap seals",
@@ -33924,7 +33393,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_183",
+          "source_ref": "workbook_parts#row_171",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Vents / louver panel / control pod",
@@ -33955,7 +33424,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_207",
+          "source_ref": "workbook_parts#row_195",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Water pump",
@@ -33986,7 +33455,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_132",
+          "source_ref": "workbook_parts#row_126",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Wax and grease remover",
@@ -34017,7 +33486,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_188",
+          "source_ref": "workbook_parts#row_176",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Wheel cylinders / caliper rebuild parts",
@@ -34048,7 +33517,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_171",
+          "source_ref": "workbook_parts#row_159",
           "supply_type": "part",
           "inventory_group": "parts",
           "item": "Windscreen rubber",
@@ -34079,7 +33548,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_223",
+          "source_ref": "workbook_parts#row_211",
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Wiper grommets and small rubber parts",
@@ -34094,37 +33563,6 @@ window.J40_DASHBOARD_DATA = {
           "delivery_status": "",
           "evidence_ref": "",
           "notes": "Migrated from Parts_Estimates; needs buy/restore decision before ordering.",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_227",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "shackle reversal",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "",
-          "evidence_ref": "",
-          "notes": "Legacy planned suspension option retained for visibility.",
           "image": {
             "path": "./assets/image-needed.svg",
             "caption": "Image required - add photo evidence",
@@ -35111,254 +34549,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_bilstein_shocks",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Bilstein 5100 / 5160 shocks",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "suspension_upgrade",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "deferred_optional",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_seed|akber_khan-00857|akber_khan-00858|user_plan_2026-04-22_tub_off_update",
-          "notes": "Alternative shock path deferred while OME path is active for current build",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_omegs8_shackle_kit_front",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Greasable shackle kit front (included in Ironman medium kit)",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "suspension_upgrade",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "included_in_selected_kit",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_bilal-ganj-master-shopping-list",
-          "notes": "Do not buy separately unless Ironman kit receipt confirms the front shackles are missing",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_omegs9_shackle_kit_rear",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Greasable shackle kit rear (included in Ironman medium kit)",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "suspension_upgrade",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "included_in_selected_kit",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_bilal-ganj-master-shopping-list",
-          "notes": "Do not buy separately unless Ironman kit receipt confirms the rear shackles are missing",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_old_man_emu_shocks",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Ironman foam cell suspension - medium kit",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "suspension_upgrade",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_seed|akber_khan-00857|akber_khan-00858|user_plan_2026-04-22_tub_off_update",
-          "notes": "Selected suspension path updated to Ironman foam cell medium kit",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_suspension_u_bolt_nut_plate_kit",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Leaf spring U-bolt and nut plate kit front+rear",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "suspension_upgrade",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update",
-          "notes": "Mandatory replacement hardware whenever leaf springs are replaced",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_local_leaf_springs_front",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Local front leaf spring pack x2",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "suspension_upgrade",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-          "notes": "Replace front packs during tub-off suspension refresh for reliability",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_local_leaf_springs_rear",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Local rear leaf spring pack x2",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "suspension_upgrade",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-          "notes": "Replace rear packs during tub-off suspension refresh for reliability",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_omesb30_bushing_kit",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "OMESB30 suspension bushing kit",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "suspension_upgrade",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_bilal-ganj-master-shopping-list",
-          "notes": "Replace spring and shackle bushes during suspension rebuild",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Image required - add photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_bedliner_sprays",
           "supply_type": "substance",
           "inventory_group": "substances",
@@ -35885,9 +35075,9 @@ window.J40_DASHBOARD_DATA = {
             "stage": "reference_material",
             "media_id": "20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489",
             "matched_tokens": [
-              "20260424",
-              "20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489",
               "3070231697877489",
+              "20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489",
+              "20260424",
               "electrical",
               "test",
               "2026",
@@ -35982,6 +35172,47 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "source": "workbook_parts",
+        "source_ref": "workbook_parts#row_37",
+        "supply_type": "part",
+        "inventory_group": "electrical",
+        "item": "Schneider Harmony XB4 22mm 3-position maintained selector switch (2NO, long handle) x 3",
+        "vendor": "purchaser.com.pk | https://purchaser.com.pk/schneider-selector-switch-harmony-xb4-metal-black-22mm-long-handle-3positions-stay-put-2no/",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "",
+        "status_group": "in_process",
+        "status_detail": "ordered_or_paid",
+        "procurement_stage": "",
+        "payment_status": "Included in combined total",
+        "delivery_status": "No",
+        "evidence_ref": "",
+        "notes": "3-way Schneider switches are being sent / in transit (user update 2026-04-27); awaiting receipt confirmation.",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_schneider_harmony_22mm_2_position_mainta_a8e361b962f9.jpg",
+          "caption": "Schneider Harmony 22mm 2-position maintained selector switch (1NO, black) x 4 \u00b7 purchaser.com.pk | https://purchaser.com.pk/schneider-harmony-22mm-push-button-2-position-selector-switch-black-maintained-1-no-600-v/ \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "schneider",
+            "harmony",
+            "xb4",
+            "22mm",
+            "position",
+            "maintained",
+            "selector",
+            "switch"
+          ],
+          "match_basis": "selling_site_match",
+          "match_score": 105
+        }
+      },
+      {
         "source": "expenses",
         "source_ref": "quote_universal_21_circuit_kit",
         "supply_type": "part",
@@ -36057,6 +35288,99 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "part_ironman_front_dampers_separate_shipment",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Ironman Foamcell front damper pair - separate shipment (24635FE x2)",
+        "vendor": "Ironman 4x4 supplier",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "suspension_upgrade",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "user_update_2026-05-01_front_dampers_separate_shipment|image_2026-05-01_ironman_foamcell_parts_list|ironman_24635FE_front_reference",
+        "notes": "Bifurcated shipment tracker for the front damper pair arriving separately from the rest of the Ironman kit. Amount is included in the main Ironman kit total to avoid double-counting. Verify 24635FE x2 on receipt before closing suspension procurement.",
+        "image": {
+          "path": "./assets/image-needed.svg",
+          "caption": "Image required - add photo evidence",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "",
+          "specific_component": "",
+          "stage": "",
+          "media_id": "",
+          "matched_tokens": [],
+          "match_basis": "placeholder"
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_old_man_emu_shocks",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Ironman Foamcell suspension kit - main shipment (front dampers separate)",
+        "vendor": "Ironman 4x4 supplier",
+        "amount": "575000",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "user_update_2026-05-01_ironman_foamcell_order|image_2026-05-01_ironman_foamcell_parts_list",
+        "notes": "User update 2026-05-01: Ironman Foamcell suspension kit ordered from attached parts list; PKR 600000 less PKR 25000 discount = PKR 575000 total. Track as main shipment plus a separate front damper shipment. Supplier list shows part numbers 24635FE, 24636FE, TOY001B, TOY002B, 415UBK, 713UK, 343LH, 343RH, 3523, 346. All previous local spring, OME/Bilstein, separate bushing, shackle, and U-bolt alternatives removed from active parts list.",
+        "image": {
+          "path": "./assets/image-needed.svg",
+          "caption": "Image required - add photo evidence",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "",
+          "specific_component": "",
+          "stage": "",
+          "media_id": "",
+          "matched_tokens": [],
+          "match_basis": "placeholder"
+        }
+      },
+      {
+        "source": "workbook_parts",
+        "source_ref": "workbook_parts#row_15",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Ironman Foamcell suspension kit - main shipment (front dampers separate)",
+        "vendor": "Ironman 4x4 supplier",
+        "amount": "575000",
+        "currency": "PKR",
+        "workstream": "",
+        "status_group": "in_process",
+        "status_detail": "ordered_or_paid",
+        "procurement_stage": "",
+        "payment_status": "Unknown",
+        "delivery_status": "",
+        "evidence_ref": "",
+        "notes": "User update 2026-05-01: ordered Ironman Foamcell kit for PKR 575000 after discount; front dampers tracked as separate shipment.",
+        "image": {
+          "path": "./assets/image-needed.svg",
+          "caption": "Image required - add photo evidence",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "",
+          "specific_component": "",
+          "stage": "",
+          "media_id": "",
+          "matched_tokens": [],
+          "match_basis": "placeholder"
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_power_steering_upgrade",
         "supply_type": "part",
         "inventory_group": "mechanical",
@@ -36088,7 +35412,38 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_106",
+        "source_ref": "workbook_parts#row_16",
+        "supply_type": "part",
+        "inventory_group": "parts",
+        "item": "Ironman Foamcell front damper pair - separate shipment (24635FE x2)",
+        "vendor": "Ironman 4x4 supplier",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "",
+        "status_group": "in_process",
+        "status_detail": "ordered_or_paid",
+        "procurement_stage": "",
+        "payment_status": "Unknown",
+        "delivery_status": "",
+        "evidence_ref": "",
+        "notes": "Bifurcated shipment row. Amount is included in main Ironman kit total; verify 24635FE x2 when received.",
+        "image": {
+          "path": "./assets/image-needed.svg",
+          "caption": "Image required - add photo evidence",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "",
+          "specific_component": "",
+          "stage": "",
+          "media_id": "",
+          "matched_tokens": [],
+          "match_basis": "placeholder"
+        }
+      },
+      {
+        "source": "workbook_parts",
+        "source_ref": "workbook_parts#row_100",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "PERMATEX 81150 DIE ELECTRIC TUNE UP GREASE 0.33 OZ",
@@ -36301,7 +35656,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_90",
+        "source_ref": "workbook_parts#row_84",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "10 mm\u00b2",
@@ -36332,7 +35687,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_91",
+        "source_ref": "workbook_parts#row_85",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "10 mm\u00b2",
@@ -36348,22 +35703,26 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Black | Evidence indicates purchased/received. | Migrated from Wiring row 79 into Parts inventory.",
         "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_https_uni_core_pk_product_cables_wires_f_d1f4b967169f.jpg",
+          "caption": "https://uni-core.pk/product/cables-wires/flexible-cables/2-5mmsq-flexible-cable/ - blue \u00b7 uni-core.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
           "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
+          "matched_tokens": [
+            "row_85",
+            "row"
+          ],
+          "match_basis": "selling_site_match",
+          "match_score": 167
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_95",
+        "source_ref": "workbook_parts#row_89",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "10.8 x 4",
@@ -36394,7 +35753,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_59",
+        "source_ref": "workbook_parts#row_53",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "100A Circuit Breaker Resettable Fuse Car Marine Boat Automotive Protector",
@@ -36432,7 +35791,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_50",
+        "source_ref": "workbook_parts#row_44",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "10mm Nylon Braided Sleeve x 5",
@@ -36463,7 +35822,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_52",
+        "source_ref": "workbook_parts#row_46",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "10mm Nylon Braided sleeve Price in Pakistan \u00d7 5",
@@ -36494,7 +35853,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_58",
+        "source_ref": "workbook_parts#row_52",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "10mm Nylon Braided sleeve Price in Pakistan \u00d7 5",
@@ -36525,7 +35884,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_53",
+        "source_ref": "workbook_parts#row_47",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "14mm Nylon Braided Sleeve price in Pakistan \u00d7 5",
@@ -36556,7 +35915,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_56",
+        "source_ref": "workbook_parts#row_50",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "14mm Nylon Braided Sleeve price in Pakistan \u00d7 5",
@@ -36587,7 +35946,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_92",
+        "source_ref": "workbook_parts#row_86",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "16 mm\u00b2",
@@ -36603,22 +35962,26 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Red | Evidence indicates purchased/received. | Migrated from Wiring row 80 into Parts inventory.",
         "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_https_uni_core_pk_product_cables_wires_f_d1f4b967169f.jpg",
+          "caption": "https://uni-core.pk/product/flexible-cables/1-5mmsq-flexible-cable/ - yellow \u00b7 uni-core.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
           "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
+          "matched_tokens": [
+            "row_86",
+            "row"
+          ],
+          "match_basis": "selling_site_match",
+          "match_score": 167
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_96",
+        "source_ref": "workbook_parts#row_90",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "16.1 x 4",
@@ -36649,7 +36012,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_51",
+        "source_ref": "workbook_parts#row_45",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "16mm Nylon Braided Sleeve x 5",
@@ -36680,7 +36043,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_83",
+        "source_ref": "workbook_parts#row_77",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "1m, 4 AWG, Red",
@@ -36711,7 +36074,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_62",
+        "source_ref": "workbook_parts#row_56",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "1x 100A LITTEL FUSE ANL Car Fuse MEGA Bolt-on",
@@ -36746,7 +36109,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_54",
+        "source_ref": "workbook_parts#row_48",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "20mmn Nylon Braided Sleeve Price in Paklistan \u00d7 5",
@@ -36777,7 +36140,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_57",
+        "source_ref": "workbook_parts#row_51",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "20mmn Nylon Braided Sleeve Price in Paklistan \u00d7 5",
@@ -36808,7 +36171,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_93",
+        "source_ref": "workbook_parts#row_87",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "25 mm\u00b2",
@@ -36824,22 +36187,26 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Red | Evidence indicates purchased/received. | Migrated from Wiring row 81 into Parts inventory.",
         "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_https_uni_core_pk_product_flexible_cable_9f16adde6f5b.jpg",
+          "caption": "https://uni-core.pk/product/flexible-cables/1mmsq-flexible-cable/ - white \u00b7 uni-core.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
           "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
+          "matched_tokens": [
+            "row_87",
+            "row"
+          ],
+          "match_basis": "selling_site_match",
+          "match_score": 167
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_97",
+        "source_ref": "workbook_parts#row_91",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "25.1 x 4",
@@ -36870,7 +36237,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_98",
+        "source_ref": "workbook_parts#row_92",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "35.1 x 4",
@@ -36901,7 +36268,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_94",
+        "source_ref": "workbook_parts#row_88",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "35mm\u00b2",
@@ -36932,7 +36299,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_87",
+        "source_ref": "workbook_parts#row_81",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "4 mm\u00b2",
@@ -36948,26 +36315,22 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Green | Evidence indicates purchased/received. | Migrated from Wiring row 75 into Parts inventory.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_https_uni_core_pk_product_flexible_cable_9f16adde6f5b.jpg",
-          "caption": "https://uni-core.pk/product/flexible-cables/1mmsq-flexible-cable/ - white \u00b7 uni-core.pk \u00b7 Selling Site Image",
+          "path": "./assets/image-needed.svg",
+          "caption": "Image required - add photo evidence",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "selling_site_listing_reference",
-          "stage": "procurement_reconciliation",
+          "component_group": "",
+          "specific_component": "",
+          "stage": "",
           "media_id": "",
-          "matched_tokens": [
-            "row_87",
-            "row"
-          ],
-          "match_basis": "selling_site_match",
-          "match_score": 167
+          "matched_tokens": [],
+          "match_basis": "placeholder"
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_68",
+        "source_ref": "workbook_parts#row_62",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "5 Pin 40A Car Relay 12V x 6",
@@ -36998,7 +36361,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_101",
+        "source_ref": "workbook_parts#row_95",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "555 Black Red Terminal M8 Blocks Power Supply Terminals Welding Machine Inverter Post Connector x 10",
@@ -37034,7 +36397,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_60",
+        "source_ref": "workbook_parts#row_54",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "6 Way Distribution Block Car Midi Fuse Box Block Holder 200A Bolt",
@@ -37072,7 +36435,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_88",
+        "source_ref": "workbook_parts#row_82",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "6 mm\u00b2",
@@ -37103,7 +36466,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_78",
+        "source_ref": "workbook_parts#row_72",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "6pcs Ratchet Crimping Tool Set",
@@ -37119,22 +36482,27 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 54 into Parts inventory.",
         "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
+          "path": "../../deliverables/selling_site_images/images/workbook_tools_bosi_nose_plier_6_black_a_quality_in_pak_678a1070aa44.jpg",
+          "caption": "O-type Blue Insulated Thimble/ Cable Lug 2.5mm \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
           "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
+          "matched_tokens": [
+            "row_72",
+            "tool",
+            "row"
+          ],
+          "match_basis": "selling_site_match",
+          "match_score": 178
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_99",
+        "source_ref": "workbook_parts#row_93",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "70.12 x 10",
@@ -37165,7 +36533,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_89",
+        "source_ref": "workbook_parts#row_83",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "8 mm\u00b2",
@@ -37196,7 +36564,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_49",
+        "source_ref": "workbook_parts#row_43",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "8mm Nylon Braided Sleeve x 5",
@@ -37227,7 +36595,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_100",
+        "source_ref": "workbook_parts#row_94",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Bare Copper Braid Tape",
@@ -37289,7 +36657,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_77",
+        "source_ref": "workbook_parts#row_71",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Classification of Deutsch DT Series Connectors, Size 16 Stamped Contacts, Automotive Electrical Connectors, 188pcs x 2",
@@ -37320,7 +36688,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_69",
+        "source_ref": "workbook_parts#row_63",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Copper Cable Lug 16mm cable 8mm Bolt Hole Pakistan \u00d7 10",
@@ -37387,9 +36755,9 @@ window.J40_DASHBOARD_DATA = {
           "stage": "reference_material",
           "media_id": "20260424_part_electric_wires_aliexpress_3070027285627489",
           "matched_tokens": [
-            "20260424",
             "3070027285627489",
             "20260424_part_electric_wires_aliexpress_3070027285627489",
+            "20260424",
             "electric",
             "wires"
           ],
@@ -37399,7 +36767,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_48",
+        "source_ref": "workbook_parts#row_42",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Grommet Set",
@@ -37430,7 +36798,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_75",
+        "source_ref": "workbook_parts#row_69",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "H4 Ceramic Headlight Connector",
@@ -37446,21 +36814,22 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 51 into Parts inventory.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_o_type_yellow_insulated_thimble_cable_lu_b2648b58083c.jpg",
-          "caption": "O-type Yellow Insulated Thimble/ Cable Lug 4mm (6mm hole) \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
+          "path": "../../photos/20260424_part_h4_ceramic_headlight_connector_high_autoxpert_order_1599.jpg",
+          "caption": "Reference Media \u00b7 Reference Material \u00b7 ",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "selling_site_listing_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
+          "component_group": "documentation_reference",
+          "specific_component": "reference_media",
+          "stage": "reference_material",
+          "media_id": "20260424_part_h4_ceramic_headlight_connector_high_autoxpert_order_1599",
           "matched_tokens": [
-            "row_75",
-            "row"
+            "ceramic",
+            "headlight",
+            "connector"
           ],
-          "match_basis": "selling_site_match",
-          "match_score": 167
+          "match_basis": "inventory_match",
+          "match_score": 26
         }
       },
       {
@@ -37542,7 +36911,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_72",
+        "source_ref": "workbook_parts#row_66",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Insulated Thimbles Male lug 2.5mm Blue in Pakistan \u00d7 1",
@@ -37558,8 +36927,8 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 48 into Parts inventory.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_o_type_blue_insulated_thimble_cable_lug__263a833854ad.jpg",
-          "caption": "O-type Blue Insulated Thimble/ Cable Lug 2.5mm \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_insulated_thimbles_female_lug_2_5mm_blue_d8be9389f045.jpg",
+          "caption": "Insulated Thimbles female lug 2.5mm Blue in Pakistan \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -37568,22 +36937,22 @@ window.J40_DASHBOARD_DATA = {
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "row_72",
             "insulated",
+            "thimbles",
+            "male",
             "lug",
             "5mm",
             "blue",
-            "fiaz",
-            "com",
-            "row"
+            "pakistan",
+            "fiaz"
           ],
           "match_basis": "selling_site_match",
-          "match_score": 227
+          "match_score": 99
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_73",
+        "source_ref": "workbook_parts#row_67",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Insulated Thimbles female lug 2.5mm Blue in Pakistan \u00d7 1",
@@ -37599,8 +36968,8 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 49 into Parts inventory.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_tools_bosi_nose_plier_6_black_a_quality_in_pak_680434c634c4.jpg",
-          "caption": "Insulated Thimbles Male lug 2.5mm Blue in Pakistan \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_insulated_thimbles_female_lug_2_5mm_blue_d8be9389f045.jpg",
+          "caption": "Insulated Thimbles female lug 2.5mm Blue in Pakistan \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -37609,9 +36978,9 @@ window.J40_DASHBOARD_DATA = {
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "row_73",
             "insulated",
             "thimbles",
+            "female",
             "lug",
             "5mm",
             "blue",
@@ -37619,12 +36988,12 @@ window.J40_DASHBOARD_DATA = {
             "fiaz"
           ],
           "match_basis": "selling_site_match",
-          "match_score": 238
+          "match_score": 99
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_64",
+        "source_ref": "workbook_parts#row_58",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Littelfuse Bolt-down Automotive Fuse MIDI/498 Auto Fuse 30A x2",
@@ -37661,7 +37030,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_65",
+        "source_ref": "workbook_parts#row_59",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Littelfuse Bolt-down Automotive Fuse MIDI/498 Auto Fuse 50A",
@@ -37698,7 +37067,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_66",
+        "source_ref": "workbook_parts#row_60",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Littelfuse Bolt-down Automotive Fuse MIDI/498 Auto Fuse 50A",
@@ -37735,7 +37104,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_67",
+        "source_ref": "workbook_parts#row_61",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Littelfuse Bolt-down Automotive Fuse MIDI/498 Auto Fuse 60A",
@@ -37803,7 +37172,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_71",
+        "source_ref": "workbook_parts#row_65",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "O-type Blue Insulated Thimble/ Cable Lug 2.5mm \u00d7 1",
@@ -37844,7 +37213,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_74",
+        "source_ref": "workbook_parts#row_68",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "O-type Yellow Insulated Thimble/ Cable Lug 4mm (6mm hole) \u00d7 1",
@@ -37860,8 +37229,8 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 50 into Parts inventory.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_insulated_thimbles_female_lug_2_5mm_blue_d8be9389f045.jpg",
-          "caption": "Insulated Thimbles female lug 2.5mm Blue in Pakistan \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_o_type_blue_insulated_thimble_cable_lug__263a833854ad.jpg",
+          "caption": "O-type Blue Insulated Thimble/ Cable Lug 2.5mm \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -37870,17 +37239,17 @@ window.J40_DASHBOARD_DATA = {
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "row_74",
             "type",
             "insulated",
             "thimble",
+            "cable",
             "lug",
             "fiaz",
             "com",
             "row"
           ],
           "match_basis": "selling_site_match",
-          "match_score": 227
+          "match_score": 99
         }
       },
       {
@@ -37916,7 +37285,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_63",
+        "source_ref": "workbook_parts#row_57",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Portable 12-Way Car Fuse Box Universal Automotive Box Holder with Led Indicator",
@@ -37955,7 +37324,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_61",
+        "source_ref": "workbook_parts#row_55",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Relay Box 12V 10 Way Relay Block and 10 Way ATC/ATO Blade Fuse Pane",
@@ -38020,8 +37389,8 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_rubber_grommet_set",
-            "https://www.aliexpress.com/i/1005008318051049.html",
             "1005008318051049",
+            "https://www.aliexpress.com/i/1005008318051049.html",
             "rubber",
             "grommet",
             "aliexpress"
@@ -38032,7 +37401,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_37",
+        "source_ref": "workbook_parts#row_36",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Schneider Harmony 22mm 2-position maintained selector switch (1NO, black) x 4",
@@ -38073,48 +37442,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_38",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "Schneider Harmony XB4 22mm 3-position maintained selector switch (2NO, long handle) x 3",
-        "vendor": "purchaser.com.pk | https://purchaser.com.pk/schneider-selector-switch-harmony-xb4-metal-black-22mm-long-handle-3positions-stay-put-2no/",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "previously",
-        "status_detail": "received",
-        "procurement_stage": "",
-        "payment_status": "Y",
-        "delivery_status": "Y",
-        "evidence_ref": "",
-        "notes": "3-way Schneider switches arrived (user update 2026-04-28). Combined order total previously tracked against both selector lines.",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_schneider_harmony_22mm_2_position_mainta_a8e361b962f9.jpg",
-          "caption": "Schneider Harmony 22mm 2-position maintained selector switch (1NO, black) x 4 \u00b7 purchaser.com.pk | https://purchaser.com.pk/schneider-harmony-22mm-push-button-2-position-selector-switch-black-maintained-1-no-600-v/ \u00b7 Selling Site Image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "selling_site_listing_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "row_38",
-            "schneider",
-            "harmony",
-            "xb4",
-            "22mm",
-            "position",
-            "maintained",
-            "selector"
-          ],
-          "match_basis": "selling_site_match",
-          "match_score": 245
-        }
-      },
-      {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_79",
+        "source_ref": "workbook_parts#row_73",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Universal 4-inch Switch Panel 3pcs",
@@ -38130,22 +37458,25 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Rocker Switches | Evidence indicates purchased/received. | Migrated from Wiring row 57 into Parts inventory.",
         "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
+          "path": "../../deliverables/selling_site_images/images/workbook_tools_bosi_nose_plier_6_black_a_quality_in_pak_680434c634c4.jpg",
+          "caption": "Insulated Thimbles Male lug 2.5mm Blue in Pakistan \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
           "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
+          "matched_tokens": [
+            "row_73"
+          ],
+          "match_basis": "selling_site_match",
+          "match_score": 163
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_102",
+        "source_ref": "workbook_parts#row_96",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Wire Insulation Heat Shrink Tubes",
@@ -38176,7 +37507,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_129",
+        "source_ref": "workbook_parts#row_123",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "electrical_accessories",
@@ -38207,7 +37538,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_55",
+        "source_ref": "workbook_parts#row_49",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "heat shrink tubing (various sizes) x 2",
@@ -38238,7 +37569,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_84",
+        "source_ref": "workbook_parts#row_78",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "https://uni-core.pk/product/cables-wires/flexible-cables/2-5mmsq-flexible-cable/ - blue",
@@ -38279,7 +37610,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_85",
+        "source_ref": "workbook_parts#row_79",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "https://uni-core.pk/product/flexible-cables/1-5mmsq-flexible-cable/ - yellow",
@@ -38305,22 +37636,22 @@ window.J40_DASHBOARD_DATA = {
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "row_85",
             "https",
             "uni",
             "core",
             "product",
             "flexible",
             "cables",
-            "5mmsq"
+            "5mmsq",
+            "cable"
           ],
           "match_basis": "selling_site_match",
-          "match_score": 239
+          "match_score": 99
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_86",
+        "source_ref": "workbook_parts#row_80",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "https://uni-core.pk/product/flexible-cables/1mmsq-flexible-cable/ - white",
@@ -38337,7 +37668,7 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 74 into Parts inventory.",
         "image": {
           "path": "../../deliverables/selling_site_images/images/workbook_parts_https_uni_core_pk_product_cables_wires_f_d1f4b967169f.jpg",
-          "caption": "https://uni-core.pk/product/flexible-cables/1-5mmsq-flexible-cable/ - yellow \u00b7 uni-core.pk \u00b7 Selling Site Image",
+          "caption": "https://uni-core.pk/product/cables-wires/flexible-cables/2-5mmsq-flexible-cable/ - blue \u00b7 uni-core.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -38346,17 +37677,17 @@ window.J40_DASHBOARD_DATA = {
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "row_86",
             "https",
             "uni",
             "core",
             "product",
             "flexible",
             "cables",
-            "cable"
+            "cable",
+            "row"
           ],
           "match_basis": "selling_site_match",
-          "match_score": 239
+          "match_score": 99
         }
       },
       {
@@ -38454,7 +37785,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_115",
+        "source_ref": "workbook_parts#row_109",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "VMD Brake and Clutch Cleaner 400ML \u00d7 1",
@@ -38470,8 +37801,8 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Evidence indicates purchased/received. | Migrated from Substances row 19 into Parts inventory.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_vmd_unlocking_protective_lubricating_age_2ccc07ba16d3.webp",
-          "caption": "VMD Unlocking Protective Lubricating Agent 200ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_vmd_brake_and_clutch_cleaner_400ml_1_0475e490aa86.webp",
+          "caption": "VMD Brake and Clutch Cleaner 400ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -38480,18 +37811,21 @@ window.J40_DASHBOARD_DATA = {
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "row_115",
             "vmd",
+            "brake",
+            "clutch",
+            "cleaner",
+            "400ml",
             "toolsmart",
             "row"
           ],
           "match_basis": "selling_site_match",
-          "match_score": 185
+          "match_score": 93
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_118",
+        "source_ref": "workbook_parts#row_112",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Contact Cleaner 400ML \u00d7 1",
@@ -38507,8 +37841,8 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Evidence indicates purchased/received. | Migrated from Substances row 22 into Parts inventory.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_lithium_grease_ptfe_400ml_1_042867c89dc9.webp",
-          "caption": "Lithium Grease + PTFE 400ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_contact_cleaner_400ml_1_fe67e17f6de8.webp",
+          "caption": "Contact Cleaner 400ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -38517,18 +37851,19 @@ window.J40_DASHBOARD_DATA = {
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "row_118",
+            "contact",
+            "cleaner",
             "400ml",
             "toolsmart",
             "row"
           ],
           "match_basis": "selling_site_match",
-          "match_score": 185
+          "match_score": 69
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_104",
+        "source_ref": "workbook_parts#row_98",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Dielectric Grease",
@@ -38559,7 +37894,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_117",
+        "source_ref": "workbook_parts#row_111",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Lithium Grease + PTFE 400ML \u00d7 1",
@@ -38575,8 +37910,8 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Evidence indicates purchased/received. | Migrated from Substances row 21 into Parts inventory.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_loctite_290_medium_high_strength_wicking_f2b2f60d13c7.jpg",
-          "caption": "Loctite 290 \u2013 Medium/High Strength Wicking Grade Threadlocker \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_lithium_grease_ptfe_400ml_1_042867c89dc9.webp",
+          "caption": "Lithium Grease + PTFE 400ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -38585,17 +37920,20 @@ window.J40_DASHBOARD_DATA = {
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "row_117",
+            "lithium",
+            "grease",
+            "ptfe",
+            "400ml",
             "toolsmart",
             "row"
           ],
           "match_basis": "selling_site_match",
-          "match_score": 173
+          "match_score": 81
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_116",
+        "source_ref": "workbook_parts#row_110",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Loctite 290 \u2013 Medium/High Strength Wicking Grade Threadlocker \u00d7 1",
@@ -38611,8 +37949,8 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Evidence indicates purchased/received. | Migrated from Substances row 20 into Parts inventory.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_vmd_brake_and_clutch_cleaner_400ml_1_0475e490aa86.webp",
-          "caption": "VMD Brake and Clutch Cleaner 400ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_loctite_290_medium_high_strength_wicking_f2b2f60d13c7.jpg",
+          "caption": "Loctite 290 \u2013 Medium/High Strength Wicking Grade Threadlocker \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -38621,17 +37959,22 @@ window.J40_DASHBOARD_DATA = {
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "row_116",
-            "toolsmart",
-            "row"
+            "loctite",
+            "290",
+            "medium",
+            "high",
+            "strength",
+            "wicking",
+            "grade",
+            "threadlocker"
           ],
           "match_basis": "selling_site_match",
-          "match_score": 173
+          "match_score": 93
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_111",
+        "source_ref": "workbook_parts#row_105",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Permatex Copper Anti Seize Lubricant Premium Quality in Pakistan",
@@ -38700,7 +38043,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_112",
+        "source_ref": "workbook_parts#row_106",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "RAPTOR LINER TINTABLE STANDARD 3.8L KIT",
@@ -38731,7 +38074,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_110",
+        "source_ref": "workbook_parts#row_104",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "ROST FLASH PRO",
@@ -38824,7 +38167,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_114",
+        "source_ref": "workbook_parts#row_108",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "VMD Unlocking Protective Lubricating Agent 200ML \u00d7 1",
@@ -38865,7 +38208,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_113",
+        "source_ref": "workbook_parts#row_107",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "WD-40 Multi-Use Product Handy Can 200ml (Pack Of 3)",
@@ -38901,7 +38244,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_130",
+        "source_ref": "workbook_parts#row_124",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "body_floor",
@@ -38932,7 +38275,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_125",
+        "source_ref": "workbook_parts#row_119",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "body_sections",
@@ -38948,22 +38291,25 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "RR action=confirm_vendor_scope_and_return_condition; evidence=akber_khan-00796 | Lower body section repair/refinish in progress; no new panel buy unless weld inspection finds non-repairable areas.",
         "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_contact_cleaner_400ml_1_fe67e17f6de8.webp",
+          "caption": "Contact Cleaner 400ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
           "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
+          "matched_tokens": [
+            "row_119"
+          ],
+          "match_basis": "selling_site_match",
+          "match_score": 164
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_122",
+        "source_ref": "workbook_parts#row_116",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "doors",
@@ -38979,22 +38325,25 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "RR action=confirm_vendor_scope_and_return_condition; evidence=fj40-00229|akber_khan-00568|akber_khan-00705|akber_khan-00796 | Doors repainted; reuse existing unless hidden damage appears at final fit-up.",
         "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_vmd_brake_and_clutch_cleaner_400ml_1_0475e490aa86.webp",
+          "caption": "VMD Brake and Clutch Cleaner 400ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
           "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
+          "matched_tokens": [
+            "row_116"
+          ],
+          "match_basis": "selling_site_match",
+          "match_score": 164
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_124",
+        "source_ref": "workbook_parts#row_118",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "hood",
@@ -39010,22 +38359,25 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "RR action=confirm_vendor_scope_and_return_condition; evidence=akber_khan-00796 | Retain refresh path; buy only if post-weld/post-paint inspection finds non-repairable damage.",
         "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_lithium_grease_ptfe_400ml_1_042867c89dc9.webp",
+          "caption": "Lithium Grease + PTFE 400ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
           "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
+          "matched_tokens": [
+            "row_118"
+          ],
+          "match_basis": "selling_site_match",
+          "match_score": 164
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_128",
+        "source_ref": "workbook_parts#row_122",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "interior",
@@ -39056,7 +38408,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_121",
+        "source_ref": "workbook_parts#row_115",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "roof",
@@ -39072,22 +38424,25 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "RR action=confirm_vendor_scope_and_return_condition; evidence=fj40-00133|fj40-00229|akber_khan-00796 | Retain roof refresh path with channel repair; replace only if repair scope fails.",
         "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_vmd_unlocking_protective_lubricating_age_2ccc07ba16d3.webp",
+          "caption": "VMD Unlocking Protective Lubricating Agent 200ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
           "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
+          "matched_tokens": [
+            "row_115"
+          ],
+          "match_basis": "selling_site_match",
+          "match_score": 164
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_127",
+        "source_ref": "workbook_parts#row_121",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "rubbers_and_seals",
@@ -39118,7 +38473,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_126",
+        "source_ref": "workbook_parts#row_120",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "window_hardware",
@@ -39149,7 +38504,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_123",
+        "source_ref": "workbook_parts#row_117",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "windows",
@@ -39165,17 +38520,20 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "RR action=confirm_vendor_scope_and_return_condition; evidence=akber_khan-00568|akber_khan-00796 | Glass/frame retained; inspect seals at final fit-up before buying replacements.",
         "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_loctite_290_medium_high_strength_wicking_f2b2f60d13c7.jpg",
+          "caption": "Loctite 290 \u2013 Medium/High Strength Wicking Grade Threadlocker \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
           "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
+          "matched_tokens": [
+            "row_117"
+          ],
+          "match_basis": "selling_site_match",
+          "match_score": 164
         }
       },
       {
@@ -39268,9 +38626,9 @@ window.J40_DASHBOARD_DATA = {
           "stage": "reference_material",
           "media_id": "20260424_part_dielectric_grease_aliexpress_order_3070231697777489",
           "matched_tokens": [
-            "20260424",
             "20260424_part_dielectric_grease_aliexpress_order_3070231697777489",
             "3070231697777489",
+            "20260424",
             "dielectric",
             "grease",
             "aliexpress"
@@ -40584,7 +39942,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_81",
+        "source_ref": "workbook_parts#row_75",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "12mm split wiring pipe / loom pipe",
@@ -40600,29 +39958,26 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Open item with no procurement evidence yet. | Migrated from Wiring row 62 into Parts inventory.",
         "image": {
-          "path": "../../photos/20260410_202228_gp_oYEtAYJQ.jpg",
-          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
-          "captured_date": "2026-04-10",
-          "captured_time": "20:22:28",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_o_type_yellow_insulated_thimble_cable_lu_b2648b58083c.jpg",
+          "caption": "O-type Yellow Insulated Thimble/ Cable Lug 4mm (6mm hole) \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "wiring_harness_and_connectors",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "20260410_202228_gp_oYEtAYJQ",
+          "media_id": "",
           "matched_tokens": [
-            "wiring",
-            "loom",
-            "procurement",
-            "yet",
-            "inventory"
+            "row_75",
+            "row"
           ],
-          "match_basis": "inventory_match",
-          "match_score": 48
+          "match_basis": "selling_site_match",
+          "match_score": 167
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_82",
+        "source_ref": "workbook_parts#row_76",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "16mm split wiring pipe / loom pipe",
@@ -40660,7 +40015,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_80",
+        "source_ref": "workbook_parts#row_74",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "8mm split wiring pipe / loom pipe",
@@ -40676,24 +40031,21 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Open item with no procurement evidence yet. | Migrated from Wiring row 61 into Parts inventory.",
         "image": {
-          "path": "../../photos/20260410_202228_gp_oYEtAYJQ.jpg",
-          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
-          "captured_date": "2026-04-10",
-          "captured_time": "20:22:28",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_insulated_thimbles_female_lug_2_5mm_blue_d8be9389f045.jpg",
+          "caption": "Insulated Thimbles female lug 2.5mm Blue in Pakistan \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "wiring_harness_and_connectors",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "20260410_202228_gp_oYEtAYJQ",
+          "media_id": "",
           "matched_tokens": [
-            "wiring",
-            "loom",
-            "procurement",
-            "yet",
-            "inventory"
+            "row_74",
+            "row"
           ],
-          "match_basis": "inventory_match",
-          "match_score": 48
+          "match_basis": "selling_site_match",
+          "match_score": 167
         }
       },
       {
@@ -40760,7 +40112,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_186",
+        "source_ref": "workbook_parts#row_174",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Alternator / regulator check or replacement",
@@ -40776,26 +40128,22 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Migrated from Parts_Estimates; needs buy/restore decision before ordering.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_internal_compact_covered_blade_fuse_box__8d4fd7a1f9a4.png",
-          "caption": "Internal compact covered blade fuse box (OEM-style) x3 \u00b7 Selling Site Image",
+          "path": "./assets/image-needed.svg",
+          "caption": "Image required - add photo evidence",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "selling_site_listing_reference",
-          "stage": "procurement_reconciliation",
+          "component_group": "",
+          "specific_component": "",
+          "stage": "",
           "media_id": "",
-          "matched_tokens": [
-            "row_186",
-            "parts"
-          ],
-          "match_basis": "selling_site_match",
-          "match_score": 167
+          "matched_tokens": [],
+          "match_basis": "placeholder"
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_184",
+        "source_ref": "workbook_parts#row_172",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Condenser fan and relay",
@@ -40826,7 +40174,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_39",
+        "source_ref": "workbook_parts#row_38",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Dashboard fascia / auxiliary switch panel (if OEM holes are insufficient)",
@@ -40842,8 +40190,8 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Only buy/fabricate if right+mid cluster hole count/spacing/depth cannot safely host all required controls. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: fabricate only if OEM holes cannot safely fit required controls.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_schneider_harmony_xb4_22mm_3_position_ma_0c2b25595c0a.jpg",
-          "caption": "Schneider Harmony XB4 22mm 3-position maintained selector switch (2NO, long handle) x 3 \u00b7 purchaser.com.pk | https://purchaser.com.pk/schneider-selector-switch-harmony-xb4-metal-black-22mm-long-handle-3positions-stay-put-2no/ \u00b7 Selling Site Image",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_schneider_harmony_22mm_2_position_mainta_a8e361b962f9.jpg",
+          "caption": "Schneider Harmony 22mm 2-position maintained selector switch (1NO, black) x 4 \u00b7 purchaser.com.pk | https://purchaser.com.pk/schneider-harmony-22mm-push-button-2-position-selector-switch-black-maintained-1-no-600-v/ \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -40852,17 +40200,16 @@ window.J40_DASHBOARD_DATA = {
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "row_39",
-            "switch",
-            "metal"
+            "row_38",
+            "switch"
           ],
           "match_basis": "selling_site_match",
-          "match_score": 182
+          "match_score": 176
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_144",
+        "source_ref": "workbook_parts#row_138",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Electric wires",
@@ -40893,7 +40240,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_228",
+        "source_ref": "workbook_parts#row_215",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Electrical power steering",
@@ -40960,7 +40307,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_246",
+        "source_ref": "workbook_parts#row_233",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points",
@@ -40991,7 +40338,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_42",
+        "source_ref": "workbook_parts#row_41",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Fuel-stop ignition-control hardware top-up (relay/fuse/terminals only if stock short)",
@@ -41007,27 +40354,26 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Implements reliable key-off engine shutdown while retaining manual diesel cutoff cable as backup. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: existing relay/fuse/terminal inventory is substantial; no immediate purchase unless counted short.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_new_genuine_local_shock_absorbers_path_a_92786c957ef6.jpg",
-          "caption": "New genuine local shock absorbers path (Agriauto or equivalent OEM-grade local brand) \u00b7 Agriauto distributor network (primary) / TJM local dealers (backup) \u00b7 Selling Site Image",
-          "captured_date": "",
-          "captured_time": "",
+          "path": "../../photos/20260411_065030.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "06:50:30",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "selling_site_listing_reference",
+          "specific_component": "fuse_distribution_and_power_hardware",
           "stage": "procurement_reconciliation",
-          "media_id": "",
+          "media_id": "20260411_065030",
           "matched_tokens": [
-            "stop",
-            "top",
-            "local"
+            "hardware",
+            "fuse"
           ],
-          "match_basis": "selling_site_match",
-          "match_score": 60
+          "match_basis": "inventory_match",
+          "match_score": 32
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_214",
+        "source_ref": "workbook_parts#row_202",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Full set of new nuts and bolts",
@@ -41058,7 +40404,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_76",
+        "source_ref": "workbook_parts#row_70",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "H4 Ceramic Headlight Connector - H4 - High",
@@ -41074,28 +40420,26 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Open item with no procurement evidence yet. | Migrated from Wiring row 52 into Parts inventory. | RR action=Use Montgomery Road / local electrical markets for small top-ups after stock count.; evidence=Workbook shows substantial wiring stock already received/paid; top up only missing sizes/connectors.",
         "image": {
-          "path": "../../photos/20260424_part_h4_ceramic_headlight_connector_high_autoxpert_order_1599.jpg",
-          "caption": "Reference Media \u00b7 Reference Material \u00b7 ",
+          "path": "../../deliverables/selling_site_images/images/workbook_tools_bosi_nose_plier_6_black_a_quality_in_pak_680434c634c4.jpg",
+          "caption": "Copper Cable Lug 16mm cable 8mm Bolt Hole Pakistan \u00d7 10 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "documentation_reference",
-          "specific_component": "reference_media",
-          "stage": "reference_material",
-          "media_id": "20260424_part_h4_ceramic_headlight_connector_high_autoxpert_order_1599",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
           "matched_tokens": [
-            "ceramic",
-            "headlight",
-            "connector",
-            "high"
+            "row_70",
+            "row"
           ],
-          "match_basis": "inventory_match",
-          "match_score": 38
+          "match_basis": "selling_site_match",
+          "match_score": 166
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_103",
+        "source_ref": "workbook_parts#row_97",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Hazard: 1 \u00d7 red latching pushbutton, panel-mount, automotive 12V",
@@ -41161,7 +40505,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_145",
+        "source_ref": "workbook_parts#row_139",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Horn relay",
@@ -41192,7 +40536,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_133",
+        "source_ref": "workbook_parts#row_127",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Hot rod wiring quote",
@@ -41227,7 +40571,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_175",
+        "source_ref": "workbook_parts#row_163",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Ignition barrel / switch",
@@ -41258,7 +40602,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_70",
+        "source_ref": "workbook_parts#row_64",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Insulated Thimbles Male lug 4mm Yellow in Pakistan \u00d7 1",
@@ -41274,8 +40618,8 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Open item with no procurement evidence yet. | Migrated from Wiring row 46 into Parts inventory.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_tools_bosi_nose_plier_6_black_a_quality_in_pak_680434c634c4.jpg",
-          "caption": "Copper Cable Lug 16mm cable 8mm Bolt Hole Pakistan \u00d7 10 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_insulated_thimbles_female_lug_2_5mm_blue_d8be9389f045.jpg",
+          "caption": "Insulated Thimbles female lug 2.5mm Blue in Pakistan \u00d7 1 \u00b7 fiaz.com.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -41284,18 +40628,20 @@ window.J40_DASHBOARD_DATA = {
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "row_70",
+            "insulated",
+            "thimbles",
+            "male",
             "lug",
             "pakistan",
             "row"
           ],
           "match_basis": "selling_site_match",
-          "match_score": 190
+          "match_score": 87
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_185",
+        "source_ref": "workbook_parts#row_173",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Internal compact covered blade fuse box (OEM-style) x3",
@@ -41322,8 +40668,8 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "oem-style",
-            "https://www.daraz.pk/products/6-ways-12-24v-automotive-circuit-blade-fuse-box-for-car-truck-vehicle-i486699111.html",
             "486699111",
+            "https://www.daraz.pk/products/6-ways-12-24v-automotive-circuit-blade-fuse-box-for-car-truck-vehicle-i486699111.html",
             "internal",
             "compact",
             "covered",
@@ -41336,7 +40682,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_35",
+        "source_ref": "workbook_parts#row_34",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "M6 star / lock washer",
@@ -41367,7 +40713,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_36",
+        "source_ref": "workbook_parts#row_35",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "M8 star / lock washer",
@@ -41398,7 +40744,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_120",
+        "source_ref": "workbook_parts#row_114",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "New Battery",
@@ -41460,7 +40806,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_240",
+        "source_ref": "workbook_parts#row_227",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Relay/fuse/wiring for blower, clutch, and fan",
@@ -41650,7 +40996,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_135",
+        "source_ref": "workbook_parts#row_129",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Star washers (bite into metal)",
@@ -41681,7 +41027,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_41",
+        "source_ref": "workbook_parts#row_40",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Starter interrupt security relay path (relay + base + concealed arm/disarm switch)",
@@ -41716,7 +41062,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_156",
+        "source_ref": "workbook_parts#row_149",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Steering column firewall seal / grommet",
@@ -41747,7 +41093,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_237",
+        "source_ref": "workbook_parts#row_224",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Trinary switch",
@@ -41840,7 +41186,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_223",
+        "source_ref": "workbook_parts#row_211",
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Wiper grommets and small rubber parts",
@@ -41954,68 +41300,6 @@ window.J40_DASHBOARD_DATA = {
         "delivery_status": "",
         "evidence_ref": "",
         "notes": "Active required purchase item from Procurement_Pass2. | RR action=Use local Toyota/common parts markets; buy as one batch after inspection.; evidence=Common Toyota service items should be bought as a local bundle after tub-off inspection confirms exact spec.",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_bilstein_shocks",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Bilstein 5100 / 5160 shocks",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "suspension_upgrade",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "deferred_optional",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_seed|akber_khan-00857|akber_khan-00858|user_plan_2026-04-22_tub_off_update",
-        "notes": "Alternative shock path deferred while OME path is active for current build",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_150",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Bilstein 5100 / 5160 shocks",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "",
-        "evidence_ref": "",
-        "notes": "RR action=No supplier action now.; evidence=Upgrade/option item should wait until baseline reassembly scope is closed. | Decision 2026-04-17: de-scoped by user. Use local-new serviceable suspension path (new local leaf packs + new local genuine shocks + new bushes/U-bolts/shackles).",
         "image": {
           "path": "./assets/image-needed.svg",
           "caption": "Image required - add photo evidence",
@@ -42187,7 +41471,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_187",
+        "source_ref": "workbook_parts#row_175",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Brake master cylinder",
@@ -42218,7 +41502,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_191",
+        "source_ref": "workbook_parts#row_179",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Brake shoes / pads",
@@ -42249,7 +41533,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_196",
+        "source_ref": "workbook_parts#row_184",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Clutch flex hose / hard line",
@@ -42342,7 +41626,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_194",
+        "source_ref": "workbook_parts#row_182",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Clutch master cylinder",
@@ -42373,7 +41657,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_195",
+        "source_ref": "workbook_parts#row_183",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Clutch slave cylinder",
@@ -42497,7 +41781,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_211",
+        "source_ref": "workbook_parts#row_199",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Engine mounts",
@@ -42596,38 +41880,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_47",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "FK08 rear anti-inversion kit x1",
-        "vendor": "ARB/OME dealer or trusted 4x4 suspension source.",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "",
-        "evidence_ref": "",
-        "notes": "Suspension procurement migrated from Suspension tab. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: OME line held for post-inspection cost/risk review before purchase commit. | Decision 2026-04-17: de-scoped by user. Use local-new serviceable suspension path (new local leaf packs + new local genuine shocks + new bushes/U-bolts/shackles).",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_189",
+        "source_ref": "workbook_parts#row_177",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Flexible brake hoses",
@@ -42720,7 +41973,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_198",
+        "source_ref": "workbook_parts#row_186",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Fuel tank clean / repair items",
@@ -42736,17 +41989,21 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Migrated from Parts_Estimates; needs buy/restore decision before ordering.",
         "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_internal_compact_covered_blade_fuse_box__8d4fd7a1f9a4.png",
+          "caption": "Internal compact covered blade fuse box (OEM-style) x3 \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
           "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
+          "matched_tokens": [
+            "row_186",
+            "parts"
+          ],
+          "match_basis": "selling_site_match",
+          "match_score": 167
         }
       },
       {
@@ -42812,70 +42069,8 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "source": "expenses",
-        "source_ref": "part_omegs8_shackle_kit_front",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Greasable shackle kit front (included in Ironman medium kit)",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "suspension_upgrade",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "included_in_selected_kit",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_bilal-ganj-master-shopping-list",
-        "notes": "Do not buy separately unless Ironman kit receipt confirms the front shackles are missing",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_omegs9_shackle_kit_rear",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Greasable shackle kit rear (included in Ironman medium kit)",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "suspension_upgrade",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "included_in_selected_kit",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_bilal-ganj-master-shopping-list",
-        "notes": "Do not buy separately unless Ironman kit receipt confirms the rear shackles are missing",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_192",
+        "source_ref": "workbook_parts#row_180",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Handbrake hardware / cables",
@@ -42906,7 +42101,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_190",
+        "source_ref": "workbook_parts#row_178",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Hard brake lines",
@@ -42998,225 +42193,8 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "source": "expenses",
-        "source_ref": "part_old_man_emu_shocks",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Ironman foam cell suspension - medium kit",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "suspension_upgrade",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_seed|akber_khan-00857|akber_khan-00858|user_plan_2026-04-22_tub_off_update",
-        "notes": "Selected suspension path updated to Ironman foam cell medium kit",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_suspension_u_bolt_nut_plate_kit",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Leaf spring U-bolt and nut plate kit front+rear",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "suspension_upgrade",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update",
-        "notes": "Mandatory replacement hardware whenever leaf springs are replaced",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_165",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Local fabricated leaf springs (front + rear)",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "",
-        "evidence_ref": "",
-        "notes": "Migrated from Parts_Estimates; needs buy/restore decision before ordering.",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_15",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Local front leaf spring pack (LOCAL-FJ40-FRONT-LEAF) x2",
-        "vendor": "Local spring maker with ride-height/load brief + bushing compatibility check.",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "",
-        "evidence_ref": "",
-        "notes": "Suspension procurement moved under Parts; quantity/spec migrated from Suspension tab. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: local spring path retained; order only after measured quote confirmation. | Quote-band set from local fabricated front+rear spring baseline (row 166) split 50/50; confirm with measured eye-eye, pack width and arch. | Age/condition rule: NEW_FABRICATED_ONLY springs; do not install unknown-used packs. | Decision 2026-04-17: selected as primary suspension path (new local fabricated leaf packs; quality-first, easy local replacement).",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_local_leaf_springs_front",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Local front leaf spring pack x2",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "suspension_upgrade",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-        "notes": "Replace front packs during tub-off suspension refresh for reliability",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_16",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Local rear leaf spring pack (LOCAL-FJ40-REAR-LEAF) x2",
-        "vendor": "Local spring maker with load/ride-height brief + anti-wrap compatibility check.",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "",
-        "evidence_ref": "",
-        "notes": "Suspension procurement moved under Parts; quantity/spec migrated from Suspension tab. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: local spring path retained; order only after measured quote confirmation. | Quote-band set from local fabricated front+rear spring baseline (row 166) split 50/50; confirm with measured eye-eye, pack width and arch. | Age/condition rule: NEW_FABRICATED_ONLY springs; do not install unknown-used packs. | Decision 2026-04-17: selected as primary suspension path (new local fabricated leaf packs; quality-first, easy local replacement).",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_local_leaf_springs_rear",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Local rear leaf spring pack x2",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "suspension_upgrade",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-        "notes": "Replace rear packs during tub-off suspension refresh for reliability",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_242",
+        "source_ref": "workbook_parts#row_229",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "New O-rings, refrigerant oil, and full R134a charge setup",
@@ -43247,7 +42225,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_201",
+        "source_ref": "workbook_parts#row_189",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "New fuel hoses",
@@ -43278,234 +42256,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_253",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "New genuine local shock absorbers path (Agriauto or equivalent OEM-grade local brand)",
-        "vendor": "Agriauto distributor network (primary) / TJM local dealers (backup)",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "",
-        "evidence_ref": "",
-        "notes": "Decision 2026-04-17: OME dropped; use new locally serviceable shocks only. Verify fitment length/mount type, warranty/invoice, and matching pair damping.",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_new_genuine_local_shock_absorbers_path_a_92786c957ef6.jpg",
-          "caption": "New genuine local shock absorbers path (Agriauto or equivalent OEM-grade local brand) \u00b7 Agriauto distributor network (primary) / TJM local dealers (backup) \u00b7 Selling Site Image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "selling_site_listing_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "new",
-            "genuine",
-            "local",
-            "shock",
-            "absorbers",
-            "path",
-            "agriauto",
-            "equivalent"
-          ],
-          "match_basis": "selling_site_match",
-          "match_score": 105
-        }
-      },
-      {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_43",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "OMEGS8 greasable shackle kit (front) x1",
-        "vendor": "ARB/OME dealer or trusted 4x4 suspension source.",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "",
-        "evidence_ref": "",
-        "notes": "Suspension procurement migrated from Suspension tab. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: OME line held for post-inspection cost/risk review before purchase commit. | Provisional quote band from international OME anchors + local importer/market variance; verify part stamping and pin size before commit. | Age/condition rule: NEW_GENUINE_ONLY (avoid used shackles). | Decision 2026-04-17: de-scoped by user. Use local-new serviceable suspension path (new local leaf packs + new local genuine shocks + new bushes/U-bolts/shackles).",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_44",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "OMEGS9 greasable shackle kit (rear) x1",
-        "vendor": "ARB/OME dealer or trusted 4x4 suspension source.",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "",
-        "evidence_ref": "",
-        "notes": "Suspension procurement migrated from Suspension tab. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: OME line held for post-inspection cost/risk review before purchase commit. | Provisional quote band from international OME anchors + local importer/market variance; verify part stamping and pin size before commit. | Age/condition rule: NEW_GENUINE_ONLY (avoid used shackles). | Decision 2026-04-17: de-scoped by user. Use local-new serviceable suspension path (new local leaf packs + new local genuine shocks + new bushes/U-bolts/shackles).",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_45",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "OMESB30 bushing kit x4",
-        "vendor": "ARB/OME dealer or trusted 4x4 suspension source.",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "",
-        "evidence_ref": "",
-        "notes": "Suspension procurement migrated from Suspension tab. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: OME line held for post-inspection cost/risk review before purchase commit. | Provisional quote band derived from OMESB30 per-pack anchors and required quantity (x4); verify complete bush count per leaf pack. | Age/condition rule: NEW_GENUINE_ONLY (avoid used bush kits). | Decision 2026-04-17: de-scoped by user. Use local-new serviceable suspension path (new local leaf packs + new local genuine shocks + new bushes/U-bolts/shackles).",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_omesb30_bushing_kit",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "OMESB30 suspension bushing kit",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "suspension_upgrade",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_bilal-ganj-master-shopping-list",
-        "notes": "Replace spring and shackle bushes during suspension rebuild",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_46",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "OMEU59A U-bolt kit x7",
-        "vendor": "ARB/OME dealer or trusted 4x4 suspension source.",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "",
-        "evidence_ref": "",
-        "notes": "Suspension procurement migrated from Suspension tab. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: OME line held for post-inspection cost/risk review before purchase commit. | Provisional quote band derived from OMEU59A per-unit anchors and required quantity (x7); confirm thread/pitch/length against spring stack. | Age/condition rule: NEW_GENUINE_ONLY (avoid used U-bolts). | Decision 2026-04-17: de-scoped by user. Use local-new serviceable suspension path (new local leaf packs + new local genuine shocks + new bushes/U-bolts/shackles).",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_164",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Old Man Emu Nitrocharger shocks (front + rear set)",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "",
-        "evidence_ref": "",
-        "notes": "Migrated from Parts_Estimates; needs buy/restore decision before ordering. | Decision 2026-04-17: de-scoped by user. Use local-new serviceable suspension path (new local leaf packs + new local genuine shocks + new bushes/U-bolts/shackles).",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_151",
+        "source_ref": "workbook_parts#row_144",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Power steering upgrade",
@@ -43660,7 +42411,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_209",
+        "source_ref": "workbook_parts#row_197",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Radiator mounts and pads",
@@ -43691,7 +42442,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_204",
+        "source_ref": "workbook_parts#row_192",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Radiator recore or replacement",
@@ -43722,7 +42473,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_154",
+        "source_ref": "workbook_parts#row_147",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Shaft support bearing",
@@ -43784,7 +42535,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_157",
+        "source_ref": "workbook_parts#row_150",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Steering box service kit",
@@ -43815,7 +42566,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_229",
+        "source_ref": "workbook_parts#row_216",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Steering bushings",
@@ -43846,7 +42597,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_158",
+        "source_ref": "workbook_parts#row_151",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Steering damper / stabilizer",
@@ -43939,38 +42690,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_227",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "shackle reversal",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "",
-        "evidence_ref": "",
-        "notes": "Legacy planned suspension option retained for visibility.",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_233",
+        "source_ref": "workbook_parts#row_220",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "2.5-inch duct hose and defrost hose kit",
@@ -44001,7 +42721,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_108",
+        "source_ref": "workbook_parts#row_102",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "3mm Sound Damping Sheet / Deadening Pad",
@@ -44032,7 +42752,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_180",
+        "source_ref": "workbook_parts#row_168",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "A/C compressor",
@@ -44094,7 +42814,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_205",
+        "source_ref": "workbook_parts#row_193",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "All coolant hoses",
@@ -44159,7 +42879,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_220",
+        "source_ref": "workbook_parts#row_208",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Anti-seize compound",
@@ -44190,7 +42910,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_238",
+        "source_ref": "workbook_parts#row_225",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Barrier hose and fittings",
@@ -44221,7 +42941,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_181",
+        "source_ref": "workbook_parts#row_169",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Barrier hoses and fittings",
@@ -44252,7 +42972,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_131",
+        "source_ref": "workbook_parts#row_125",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Bedliner sprays",
@@ -44314,7 +43034,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_169",
+        "source_ref": "workbook_parts#row_157",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Body mount hardware set",
@@ -44345,7 +43065,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_167",
+        "source_ref": "workbook_parts#row_155",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Body mount shim/spacer set",
@@ -44407,7 +43127,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_217",
+        "source_ref": "workbook_parts#row_205",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Body shims / spacers",
@@ -44469,7 +43189,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_163",
+        "source_ref": "workbook_parts#row_153",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Bump stops",
@@ -44500,7 +43220,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_215",
+        "source_ref": "workbook_parts#row_203",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Captive nuts / clip nuts",
@@ -44562,7 +43282,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_197",
+        "source_ref": "workbook_parts#row_185",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Clevis pins / clips",
@@ -44593,7 +43313,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_179",
+        "source_ref": "workbook_parts#row_167",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Compact condenser",
@@ -44624,7 +43344,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_174",
+        "source_ref": "workbook_parts#row_162",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Complete new set of locks",
@@ -44655,7 +43375,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_241",
+        "source_ref": "workbook_parts#row_228",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Condenser fan if required",
@@ -44686,7 +43406,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_210",
+        "source_ref": "workbook_parts#row_198",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Coolant overflow bottle / recovery setup",
@@ -44717,7 +43437,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_153",
+        "source_ref": "workbook_parts#row_146",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Custom U-joints / intermediate shafts",
@@ -44779,7 +43499,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_170",
+        "source_ref": "workbook_parts#row_158",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Door weatherstrips",
@@ -44810,7 +43530,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_234",
+        "source_ref": "workbook_parts#row_221",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Drain hose and mounting kit",
@@ -44841,7 +43561,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_155",
+        "source_ref": "workbook_parts#row_148",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "EPS mounting bracket",
@@ -44872,7 +43592,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_182",
+        "source_ref": "workbook_parts#row_170",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Evaporator drain hose",
@@ -44903,7 +43623,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_213",
+        "source_ref": "workbook_parts#row_201",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Exhaust hangers / rubbers",
@@ -44934,7 +43654,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_208",
+        "source_ref": "workbook_parts#row_196",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Fan belt / accessory belts",
@@ -44965,7 +43685,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_243",
+        "source_ref": "workbook_parts#row_230",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves",
@@ -44996,7 +43716,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_244",
+        "source_ref": "workbook_parts#row_231",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers",
@@ -45027,7 +43747,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_245",
+        "source_ref": "workbook_parts#row_232",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Fastener Kit C: Captive nuts/clip nuts assortment - M6/M8 with anti-corrosion finish",
@@ -45058,7 +43778,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_247",
+        "source_ref": "workbook_parts#row_234",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Fastener Kit E: Stainless interior/trim screw set (non-structural) + cup washers",
@@ -45089,7 +43809,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_224",
+        "source_ref": "workbook_parts#row_212",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Firewall boots for cables and lines",
@@ -45120,7 +43840,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_239",
+        "source_ref": "workbook_parts#row_226",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Firewall bulkhead fittings",
@@ -45151,7 +43871,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_173",
+        "source_ref": "workbook_parts#row_161",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Floor plugs / drain plugs",
@@ -45213,7 +43933,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_212",
+        "source_ref": "workbook_parts#row_200",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Gearbox / transfer case mounts",
@@ -45275,7 +43995,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_219",
+        "source_ref": "workbook_parts#row_207",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Grease nipples / zerks",
@@ -45306,7 +44026,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_109",
+        "source_ref": "workbook_parts#row_103",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "HB BODY - U900 CAVITY WAX SPRAY U900 - 400ML",
@@ -45337,7 +44057,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_107",
+        "source_ref": "workbook_parts#row_101",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "HB BODY 999 SEAM SEALER 300ML CARTR",
@@ -45399,7 +44119,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_206",
+        "source_ref": "workbook_parts#row_194",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Heater hoses",
@@ -45430,7 +44150,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_230",
+        "source_ref": "workbook_parts#row_217",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Hidden evaporator/heater/defrost unit, compact Mini-size",
@@ -45461,7 +44181,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_40",
+        "source_ref": "workbook_parts#row_39",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Ignition lock security fix (new barrel + matched keys OR full locksmith re-key)",
@@ -45477,22 +44197,25 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Current key security reported weak; complete matched-key security fix before final refit. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: prioritize as low-risk, locally available buy-first item. | Price basis 2026-04-15: locksmith re-key/local lock solution preferred; exact FJ40 imported set costs higher.",
         "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_schneider_harmony_xb4_22mm_3_position_ma_0c2b25595c0a.jpg",
+          "caption": "Schneider Harmony XB4 22mm 3-position maintained selector switch (2NO, long handle) x 3 \u00b7 purchaser.com.pk | https://purchaser.com.pk/schneider-selector-switch-harmony-xb4-metal-black-22mm-long-handle-3positions-stay-put-2no/ \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
           "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
+          "matched_tokens": [
+            "row_39"
+          ],
+          "match_basis": "selling_site_match",
+          "match_score": 164
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_250",
+        "source_ref": "workbook_parts#row_237",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Interior conversion: Bench mounting reinforcement plates + class 8.8 hardware",
@@ -45527,7 +44250,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_251",
+        "source_ref": "workbook_parts#row_238",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Interior conversion: Side bench cushion+upholstery set (slim folded thickness)",
@@ -45558,7 +44281,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_249",
+        "source_ref": "workbook_parts#row_236",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Interior conversion: Side bench hinge+latch kit with positive lock (up and down positions)",
@@ -45589,7 +44312,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_248",
+        "source_ref": "workbook_parts#row_235",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Interior conversion: Side bench seat frame set LH+RH (fold-up profile below window line)",
@@ -45620,7 +44343,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_252",
+        "source_ref": "workbook_parts#row_239",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Interior conversion: Side bench seatbelt anchors + belts (compliant hardware set)",
@@ -45753,38 +44476,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_161",
-        "supply_type": "part",
-        "inventory_group": "parts",
-        "item": "New U-bolts",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "",
-        "evidence_ref": "",
-        "notes": "Migrated from Parts_Estimates; needs buy/restore decision before ordering.",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_168",
+        "source_ref": "workbook_parts#row_156",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "New rubber mountings between chassis and body",
@@ -45815,7 +44507,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_235",
+        "source_ref": "workbook_parts#row_222",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Parallel-flow condenser sized to your core support",
@@ -45846,7 +44538,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_222",
+        "source_ref": "workbook_parts#row_210",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Pedal rubbers",
@@ -45877,7 +44569,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_34",
+        "source_ref": "workbook_parts#row_33",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Primer",
@@ -45908,7 +44600,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_202",
+        "source_ref": "workbook_parts#row_190",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Proper hose clamps",
@@ -45939,7 +44631,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_176",
+        "source_ref": "workbook_parts#row_164",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Rear door / tailgate / glovebox locks",
@@ -45970,7 +44662,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_236",
+        "source_ref": "workbook_parts#row_223",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Receiver-drier",
@@ -46001,7 +44693,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_119",
+        "source_ref": "workbook_parts#row_113",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Remove old LEDS",
@@ -46017,26 +44709,22 @@ window.J40_DASHBOARD_DATA = {
         "evidence_ref": "",
         "notes": "Open item with no procurement evidence yet. | Migrated from Service row 2 into Parts inventory.",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_contact_cleaner_400ml_1_fe67e17f6de8.webp",
-          "caption": "Contact Cleaner 400ML \u00d7 1 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
+          "path": "./assets/image-needed.svg",
+          "caption": "Image required - add photo evidence",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "selling_site_listing_reference",
-          "stage": "procurement_reconciliation",
+          "component_group": "",
+          "specific_component": "",
+          "stage": "",
           "media_id": "",
-          "matched_tokens": [
-            "row_119",
-            "row"
-          ],
-          "match_basis": "selling_site_match",
-          "match_score": 167
+          "matched_tokens": [],
+          "match_basis": "placeholder"
         }
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_193",
+        "source_ref": "workbook_parts#row_181",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Reservoir hoses / caps / seals",
@@ -46067,7 +44755,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_203",
+        "source_ref": "workbook_parts#row_191",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Return-line hose",
@@ -46129,7 +44817,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_221",
+        "source_ref": "workbook_parts#row_209",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Sealants / gasket makers",
@@ -46160,7 +44848,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_199",
+        "source_ref": "workbook_parts#row_187",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Sender seal",
@@ -46191,7 +44879,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_232",
+        "source_ref": "workbook_parts#row_219",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Separate 3-knob control panel",
@@ -46222,38 +44910,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_160",
-        "supply_type": "part",
-        "inventory_group": "parts",
-        "item": "Shackle bushes",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "",
-        "evidence_ref": "",
-        "notes": "Migrated from Parts_Estimates; needs buy/restore decision before ordering.",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_162",
+        "source_ref": "workbook_parts#row_152",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Shackles / pins",
@@ -46284,7 +44941,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_231",
+        "source_ref": "workbook_parts#row_218",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Slim under-dash louver outlet panel",
@@ -46315,7 +44972,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_178",
+        "source_ref": "workbook_parts#row_166",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Slimline under-dash AC unit",
@@ -46377,7 +45034,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_218",
+        "source_ref": "workbook_parts#row_206",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Split pins / cotter pins",
@@ -46408,7 +45065,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_216",
+        "source_ref": "workbook_parts#row_204",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Spring / serrated / star washers",
@@ -46439,38 +45096,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_159",
-        "supply_type": "part",
-        "inventory_group": "parts",
-        "item": "Spring eye bushes",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "",
-        "evidence_ref": "",
-        "notes": "Migrated from Parts_Estimates; needs buy/restore decision before ordering.",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Image required - add photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_166",
+        "source_ref": "workbook_parts#row_154",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Spring setup, shims, and alignment labor",
@@ -46501,7 +45127,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_177",
+        "source_ref": "workbook_parts#row_165",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Striker pins / latch rebuild parts",
@@ -46532,7 +45158,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_200",
+        "source_ref": "workbook_parts#row_188",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Tank straps / pads / rubbers",
@@ -46563,7 +45189,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_152",
+        "source_ref": "workbook_parts#row_145",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Toyota Vitz SCP90 (1.3L) EPS column complete set",
@@ -46625,7 +45251,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_172",
+        "source_ref": "workbook_parts#row_160",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Vent / flap seals",
@@ -46656,7 +45282,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_183",
+        "source_ref": "workbook_parts#row_171",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Vents / louver panel / control pod",
@@ -46687,7 +45313,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_207",
+        "source_ref": "workbook_parts#row_195",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Water pump",
@@ -46718,7 +45344,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_132",
+        "source_ref": "workbook_parts#row_126",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Wax and grease remover",
@@ -46749,7 +45375,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_188",
+        "source_ref": "workbook_parts#row_176",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Wheel cylinders / caliper rebuild parts",
@@ -46780,7 +45406,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_171",
+        "source_ref": "workbook_parts#row_159",
         "supply_type": "part",
         "inventory_group": "parts",
         "item": "Windscreen rubber",
@@ -47297,9 +45923,9 @@ window.J40_DASHBOARD_DATA = {
           "stage": "reference_material",
           "media_id": "20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489",
           "matched_tokens": [
-            "20260424",
-            "20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489",
             "3070231697877489",
+            "20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489",
+            "20260424",
             "electrical",
             "test",
             "2026",
@@ -47414,9 +46040,9 @@ window.J40_DASHBOARD_DATA = {
         "chat_name": "Support Engineer Placement",
         "chat_id": "120363406007289586@g.us",
         "chat_type": "group",
-        "relevance_score": "13",
+        "relevance_score": "11",
         "messages_fetched": "true",
-        "messages_count": "95",
+        "messages_count": "96",
         "media_count": "13",
         "messages_fetch_error": ""
       },
@@ -47439,18 +46065,7 @@ window.J40_DASHBOARD_DATA = {
         "relevance_score": "10",
         "messages_fetched": "true",
         "messages_count": "350",
-        "media_count": "25",
-        "messages_fetch_error": ""
-      },
-      {
-        "profile_server": "whatsapp-number-2",
-        "chat_name": "Uk David",
-        "chat_id": "923099351940@c.us",
-        "chat_type": "direct_cus",
-        "relevance_score": "10",
-        "messages_fetched": "true",
-        "messages_count": "235",
-        "media_count": "92",
+        "media_count": "31",
         "messages_fetch_error": ""
       },
       {
@@ -47751,10 +46366,12 @@ window.J40_DASHBOARD_DATA = {
       "window_hardware"
     ],
     "specific_components": [
+      "bellhousing_clutch_linkage_and_gearbox_case",
       "body_mount_and_crossmember_detail",
       "body_shell_with_doors_removed",
       "cabin_overview",
       "cabin_view_through_glass",
+      "cooling_hoses_fan_belt_and_radiator_support",
       "dashboard_and_cabin_stripdown",
       "dashboard_lower_structure",
       "dashboard_shell_and_cabin",
@@ -47812,6 +46429,7 @@ window.J40_DASHBOARD_DATA = {
       "baseline_walkaround",
       "electrical_rework",
       "hardware_refinish",
+      "mechanical_inspection",
       "procurement_reconciliation",
       "reference_material",
       "removed_parts_cataloguing",
@@ -55176,6 +53794,81 @@ window.J40_DASHBOARD_DATA = {
       "confidence": "low",
       "tags": "reference",
       "notes": ""
+    },
+    "20260430_215915_gp_ycQ395Gg": {
+      "media_id": "20260430_215915_gp_ycQ395Gg",
+      "file_name": "20260430_215915_gp_ycQ395Gg.jpg",
+      "path": "../../photos/20260430_215915_gp_ycQ395Gg.jpg",
+      "captured_date": "2026-04-30",
+      "captured_time": "21:59:15",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+      "stage": "mechanical_inspection",
+      "observed_state": "inspection_in_progress",
+      "confidence": "high",
+      "tags": "engine|transmission|bellhousing|clutch_linkage|inspection",
+      "notes": "Close inspection of gearbox/bellhousing casing and clutch linkage area."
+    },
+    "20260430_215939_gp_EjZ7u1ow": {
+      "media_id": "20260430_215939_gp_EjZ7u1ow",
+      "file_name": "20260430_215939_gp_EjZ7u1ow.jpg",
+      "path": "../../photos/20260430_215939_gp_EjZ7u1ow.jpg",
+      "captured_date": "2026-04-30",
+      "captured_time": "21:59:39",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+      "stage": "mechanical_inspection",
+      "observed_state": "inspection_in_progress",
+      "confidence": "high",
+      "tags": "engine|transmission|bellhousing|clutch_linkage|wiring|inspection",
+      "notes": "Close inspection of bellhousing/gearbox casing, linkage, and nearby wiring."
+    },
+    "20260430_215957_gp_2iBbUagw": {
+      "media_id": "20260430_215957_gp_2iBbUagw",
+      "file_name": "20260430_215957_gp_2iBbUagw.jpg",
+      "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
+      "captured_date": "2026-04-30",
+      "captured_time": "21:59:57",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
+      "stage": "mechanical_inspection",
+      "observed_state": "inspection_in_progress",
+      "confidence": "high",
+      "tags": "engine|cooling|radiator_hose|fan_belt|front_support|inspection",
+      "notes": "Front engine bay inspection showing accessory belt path, hose routing, and radiator support condition."
+    },
+    "20260430_220004_gp_C9oYiYmA": {
+      "media_id": "20260430_220004_gp_C9oYiYmA",
+      "file_name": "20260430_220004_gp_C9oYiYmA.jpg",
+      "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
+      "captured_date": "2026-04-30",
+      "captured_time": "22:00:04",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
+      "stage": "mechanical_inspection",
+      "observed_state": "inspection_in_progress",
+      "confidence": "high",
+      "tags": "engine|cooling|radiator_hose|fan_belt|front_support|inspection",
+      "notes": "Front engine bay inspection showing upper hose routing, hose clamps, fan belt, and radiator support area."
+    },
+    "20260430_233755_gp_DO69MLAA": {
+      "media_id": "20260430_233755_gp_DO69MLAA",
+      "file_name": "20260430_233755_gp_DO69MLAA.jpg",
+      "path": "../../photos/20260430_233755_gp_DO69MLAA.jpg",
+      "captured_date": "2026-04-30",
+      "captured_time": "23:37:55",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+      "stage": "mechanical_inspection",
+      "observed_state": "inspection_in_progress",
+      "confidence": "medium",
+      "tags": "engine|transmission|bellhousing|clutch_linkage|inspection",
+      "notes": "Additional detail view of gearbox/bellhousing casing and nearby linkage hardware."
     },
     "IMG-20260328-WA0017": {
       "media_id": "IMG-20260328-WA0017",

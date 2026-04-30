@@ -34,10 +34,8 @@ excel_row,col_1,col_2,col_3,col_4,col_5,col_6,col_7,col_8,col_9,col_10
 33,Kit D star washer - M10 star/serrated washer,40,247,PKR 700-1700,700,1700,1200,no,NOT_PURCHASED,AS_LISTED
 34,Kit D star washer - M6 star/serrated washer,120,247,PKR 700-1800,700,1800,1250,no,NOT_PURCHASED,AS_LISTED
 35,Kit D star washer - M8 star/serrated washer,80,247,PKR 800-2200,800,2200,1500,no,NOT_PURCHASED,AS_LISTED
-36,"Local front leaf spring pack (new, custom to measured dimensions)",2 packs,15,PKR 35000-90000,35000,90000,62500,no,NOT_PURCHASED,MEASURE_FIRST_THEN_BUY
-37,"Local rear leaf spring pack (new, custom to measured dimensions)",2 packs,16,PKR 35000-90000,35000,90000,62500,no,NOT_PURCHASED,MEASURE_FIRST_THEN_BUY
-38,Rear anti-inversion kit - FK08 (spring flip prevention),1 kit,SUS-10,PKR 12000-35000,12000,35000,23500,no,NOT_PURCHASED,BUY_ONLY_IF_INVERSION_RISK
-39,Shims/spacers - M10/M12 shim pack thickness 1/2/3/5mm,Assorted full pack,13,PKR 3000-12000,3000,12000,7500,no,NOT_PURCHASED,AS_LISTED
-40,"Shock absorbers (new genuine, Pakistan high-quality path)",1 full set (front+rear),SUS-11,"PKR 25,000-80,000 (quote by exact model fitment)",25000,80000,52500,no,NOT_PURCHASED,QUOTE_FIRST_THEN_BUY
-41,Steering bushings - Steering linkage bush set,1 set,230,PKR 3000-12000,3000,12000,7500,no,NOT_PURCHASED,BUY_ONLY_IF_PLAY_FOUND
-42,TOTAL,,,,,,,,,
+36,Rear anti-inversion kit - FK08 (spring flip prevention),1 kit,SUS-10,PKR 12000-35000,12000,35000,23500,no,NOT_PURCHASED,BUY_ONLY_IF_INVERSION_RISK
+37,Shims/spacers - M10/M12 shim pack thickness 1/2/3/5mm,Assorted full pack,13,PKR 3000-12000,3000,12000,7500,no,NOT_PURCHASED,AS_LISTED
+38,"Shock absorbers (new genuine, Pakistan high-quality path)",1 full set (front+rear),SUS-11,"PKR 25,000-80,000 (quote by exact model fitment)",25000,80000,52500,no,NOT_PURCHASED,QUOTE_FIRST_THEN_BUY
+39,Steering bushings - Steering linkage bush set,1 set,230,PKR 3000-12000,3000,12000,7500,no,NOT_PURCHASED,BUY_ONLY_IF_PLAY_FOUND
+40,TOTAL,,,,,,,,,

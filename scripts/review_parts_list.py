@@ -30,7 +30,7 @@ OVERLAP_RULES: tuple[OverlapRule, ...] = (
     OverlapRule("grommet_options", "Grommet options", re.compile(r"grommet", re.I)),
     OverlapRule("wire_sleeving_options", "Wire sleeving options", re.compile(r"sleev|conduit|pet expandable braided", re.I)),
     OverlapRule("primer_system_stack", "Primer system stack", re.compile(r"\bprimer\b|etching|epoxy|seam sealer|wax and grease", re.I)),
-    OverlapRule("floor_finish_stack", "Floor/interior finish stack", re.compile(r"bedliner|bed lining|sound dampening|foam|carpet", re.I)),
+    OverlapRule("floor_finish_stack", "Floor/interior finish stack", re.compile(r"bedliner|bed lining|sound dampening|\bfoam\b|carpet", re.I)),
     OverlapRule("shock_options", "Shock options", re.compile(r"shock|nitrocharger|bilstein", re.I)),
     OverlapRule("switch_options", "Switch inventory", re.compile(r"switch|relay|headlight connector", re.I)),
 )

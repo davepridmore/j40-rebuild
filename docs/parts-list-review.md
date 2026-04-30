@@ -1,34 +1,33 @@
 # Parts List Review
 
-- Generated: 2026-04-26 03:48:27
-- Source: `data/manual/expenses.csv` (`bucket=parts`) -> 66 rows
+- Generated: 2026-05-01 00:55:54
+- Source: `data/manual/expenses.csv` (`bucket=parts`) -> 62 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
 
 ## Action Buckets
 
-- `buy_now`: 29
-- `completed_or_received`: 13
-- `deferred`: 8
+- `buy_now`: 24
+- `completed_or_received`: 15
+- `deferred`: 7
 - `next_phase`: 7
-- `ordered_waiting_arrival`: 3
+- `ordered_waiting_arrival`: 5
 - `quote_decision_ready`: 1
 - `researching`: 3
-- `unclear`: 2
 
 ## Workstream Split
 
 - `electrical_reset`: 21
 - `mechanical_baseline`: 16
-- `body_chassis`: 12
-- `steering_brakes_suspension`: 11
+- `body_chassis`: 14
+- `steering_brakes_suspension`: 5
 - `interior_weatherproofing`: 4
 - `optional_upgrades`: 2
 
 ## Price Coverage
 
-- `has_confirmed_amount=yes`: 12
-- `has_confirmed_amount=no`: 54
+- `has_confirmed_amount=yes`: 15
+- `has_confirmed_amount=no`: 47
 
 ## Buy-Now / Quote-Ready Missing Price
 
@@ -55,12 +54,7 @@
 - `part_mech_radiator_hose_set` [mechanical_baseline] Radiator hose set upper plus lower with clamps
 - `part_mech_spark_plugs_set` [mechanical_baseline] Spark plugs set
 - `part_mech_vacuum_hose_refresh` [mechanical_baseline] Vacuum hose refresh kit
-- `part_local_leaf_springs_front` [steering_brakes_suspension] Local front leaf spring pack x2
-- `part_local_leaf_springs_rear` [steering_brakes_suspension] Local rear leaf spring pack x2
 - `part_mech_brake_flex_hose_set` [steering_brakes_suspension] Brake flexible hose set front and rear
-- `part_old_man_emu_shocks` [steering_brakes_suspension] Ironman foam cell suspension - medium kit
-- `part_omesb30_bushing_kit` [steering_brakes_suspension] OMESB30 suspension bushing kit
-- `part_suspension_u_bolt_nut_plate_kit` [steering_brakes_suspension] Leaf spring U-bolt and nut plate kit front+rear
 
 ## Buy-Now / Quote-Ready With Confirmed Price
 
@@ -68,7 +62,7 @@
 
 ## Overlap Groups
 
-- `floor_finish_stack` (6 rows): Floor/interior finish stack [action buckets: buy_now|deferred|next_phase]
+- `floor_finish_stack` (5 rows): Floor/interior finish stack [action buckets: buy_now|deferred|next_phase]
 - `grommet_options` (4 rows): Grommet options [action buckets: buy_now|completed_or_received|deferred]
 - `primer_system_stack` (5 rows): Primer system stack [action buckets: buy_now|next_phase|ordered_waiting_arrival]
 - `switch_options` (5 rows): Switch inventory [action buckets: buy_now|completed_or_received|deferred|next_phase|ordered_waiting_arrival]
