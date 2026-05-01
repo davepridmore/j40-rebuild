@@ -18,6 +18,9 @@ WORKSTREAM_STATUS_PATH = MANUAL_DIR / "workstream_status.csv"
 REASSEMBLY_PACKAGES_PATH = MANUAL_DIR / "reassembly_work_packages.csv"
 COMPONENT_JOBS_PATH = MANUAL_DIR / "component_jobs.csv"
 PHOTO_INVENTORY_PATH = MANUAL_DIR / "photo_inventory.csv"
+REPLACEMENT_PIPE_SPECS_PATH = MANUAL_DIR / "replacement_pipe_ordering_specs.csv"
+CHASSIS_RUBBER_REQUIREMENTS_PATH = MANUAL_DIR / "chassis_rubber_requirements.csv"
+BRAKE_SYSTEM_REQUIREMENTS_PATH = MANUAL_DIR / "brake_system_requirements.csv"
 EXPENSES_PATH = MANUAL_DIR / "expenses.csv"
 BUY_NOW_PATH = MANUAL_DIR / "parts_buy_now_this_week.csv"
 WORKBOOK_TOOLS_PATH = MANUAL_DIR / "workbook_tabs" / "tools.csv"
@@ -32,6 +35,12 @@ PAINT_REFINISH_MEDIA_QUEUE_PATH = MANUAL_DIR / "paint_refinish_media_queue.csv"
 PAINT_REFINISH_WHATSAPP_MEDIA_QUEUE_PATH = MANUAL_DIR / "paint_refinish_whatsapp_media_queue.csv"
 INVENTORY_IMAGE_OVERRIDES_PATH = MANUAL_DIR / "inventory_image_overrides.csv"
 OUTPUT_DATA_JS_PATH = UI_DIR / "data.js"
+LOCAL_ORDER_IMAGE_DIRS: tuple[Path, ...] = (
+    ROOT / "photos",
+    ROOT / "deliverables" / "selling_site_images" / "images",
+)
+LOCAL_ORDER_IMAGE_EXTENSIONS: set[str] = {".jpg", ".jpeg", ".png", ".webp"}
+LOCAL_ORDER_IMAGE_INDEX: dict[str, Path] | None = None
 
 PRIMARY_WORKSTREAM_IDS: tuple[str, ...] = (
     "stripdown_cataloguing",
@@ -42,6 +51,7 @@ PRIMARY_WORKSTREAM_IDS: tuple[str, ...] = (
     "interior_controls",
     "electrical_reset",
     "mechanical_baseline",
+    "replacement_pipes",
     "brake_system",
     "eps_vitz_upgrade",
     "suspension_upgrade",
@@ -55,6 +65,7 @@ WORKSTREAM_TITLE_OVERRIDES: dict[str, str] = {
     "interior_controls": "Dashboard",
     "interior_weatherproofing": "Interior",
     "paint_refinish": "Paint",
+    "replacement_pipes": "Replacement Pipes",
     "eps_vitz_upgrade": "Steering (EPS)",
     "suspension_upgrade": "Suspension",
 }
@@ -82,7 +93,7 @@ WORKSTREAM_IMAGE_PROFILES: dict[str, dict[str, set[str]]] = {
     },
     "chassis_fixing": {
         "component_groups": {"chassis_underside"},
-        "stages": {"underside_inspection"},
+        "stages": {"underside_inspection", "chassis_fixing"},
         "keywords": {"frame", "crossmember", "chassis", "mount", "steering", "bracket", "line", "hanger"},
     },
     "chassis_rubbers": {
@@ -111,8 +122,34 @@ WORKSTREAM_IMAGE_PROFILES: dict[str, dict[str, set[str]]] = {
     },
     "mechanical_baseline": {
         "component_groups": {"engine_bay", "chassis_underside"},
-        "stages": {"baseline_walkaround", "underside_inspection"},
+        "stages": {"baseline_walkaround", "underside_inspection", "mechanical_inspection", "mechanical_cleaning"},
         "keywords": {"engine", "service", "cooling", "maintenance", "hose", "bay", "mechanical"},
+    },
+    "replacement_pipes": {
+        "component_groups": {"engine_bay", "chassis_underside"},
+        "stages": {
+            "mechanical_baseline",
+            "mechanical_inspection",
+            "mechanical_cleaning",
+            "underside_inspection",
+        },
+        "keywords": {
+            "pipe",
+            "hose",
+            "tube",
+            "cooling",
+            "radiator_hose",
+            "metal_pipe",
+            "fuel",
+            "brake",
+            "clutch",
+            "vacuum",
+            "breather",
+            "hard_line",
+            "hard_lines",
+            "made_to_order",
+            "measurement",
+        },
     },
     "brake_system": {
         "component_groups": {"chassis_underside", "procurement_inventory"},
@@ -149,6 +186,7 @@ WORKSTREAM_MIN_IMAGE_SCORE: dict[str, int] = {
     "body_chassis": 18,
     "paint_refinish": 18,
     "mechanical_baseline": 18,
+    "replacement_pipes": 18,
     "brake_system": 18,
     "eps_vitz_upgrade": 18,
     "suspension_upgrade": 18,
@@ -166,6 +204,7 @@ WORKSTREAM_MIN_KEYWORD_HITS: dict[str, int] = {
     "chassis_rubbers": 1,
     "electrical_reset": 1,
     "mechanical_baseline": 2,
+    "replacement_pipes": 1,
     "brake_system": 2,
     "eps_vitz_upgrade": 2,
     "suspension_upgrade": 2,
@@ -180,6 +219,7 @@ WORKSTREAM_ALLOW_STAGE_COMPONENT_FALLBACK: dict[str, bool] = {
     "chassis_rubbers": False,
     "electrical_reset": True,
     "mechanical_baseline": True,
+    "replacement_pipes": True,
     "brake_system": False,
     "eps_vitz_upgrade": False,
     "suspension_upgrade": False,
@@ -187,6 +227,42 @@ WORKSTREAM_ALLOW_STAGE_COMPONENT_FALLBACK: dict[str, bool] = {
     "final_assembly_validation": True,
 }
 WORKBOOK_SECTION_HEADING_RE = re.compile(r"^\d+\)\s+")
+
+REPLACEMENT_PIPE_MADE_TO_ORDER_MEDIA_IDS: tuple[str, ...] = (
+    "20260502_004044_gp_Hx4Yo0Qg",
+    "20260502_004106_gp_wlYlUahA",
+    "20260502_004120_gp_7Jw9Zyrg",
+    "20260502_004133_gp_ZEpqmARA",
+    "20260502_004139_gp_jt1dGw4A",
+    "20260502_004145_gp_e8soxsyA",
+)
+REPLACEMENT_PIPE_INSTALLED_LOCATION_MEDIA_IDS: tuple[str, ...] = (
+    "20260430_220004_gp_C9oYiYmA",
+    "20260430_215957_gp_2iBbUagw",
+    "20260422_004306_gp_vGlNr2UA",
+    "20260422_004311_gp_994KQ0Pw",
+    "20260430_215939_gp_EjZ7u1ow",
+)
+REPLACEMENT_PIPE_SAMPLE_SORTING_MEDIA_IDS: tuple[str, ...] = (
+    "20260502_005740_gp_Qiat03EQ",
+)
+REPLACEMENT_PIPE_CURATED_MEDIA_IDS: tuple[str, ...] = (
+    *REPLACEMENT_PIPE_MADE_TO_ORDER_MEDIA_IDS,
+    *REPLACEMENT_PIPE_INSTALLED_LOCATION_MEDIA_IDS,
+    *REPLACEMENT_PIPE_SAMPLE_SORTING_MEDIA_IDS,
+)
+REAR_BRAKE_CABLE_LINE_MEDIA_IDS: tuple[str, ...] = (
+    "20260501_194305_gp_EllBGvXA",
+    "20260501_194313_gp_lfUqLibA",
+    "20260501_194322_gp_XuRtjN4w",
+    "20260324_004852",
+    "20260324_004906",
+    "20260324_004918",
+    "20260324_004921_gp_bHLJcrEw",
+    "20260422_004254_gp_SplHLSYA",
+    "20260422_004257_gp_cxEZbZoQ",
+    "20260422_004301_gp_SU89hisw",
+)
 DASHBOARD_ELECTRICAL_FOCUS_KEYWORDS: tuple[str, ...] = (
     "switch",
     "dash",
@@ -261,6 +337,12 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
         ("Log post-service defects", "Record any unresolved mechanical issues for gated follow-up."),
         ("Close baseline gate before upgrades", "Do not start optional upgrades until baseline reliability is signed off."),
     ],
+    "replacement_pipes": [
+        ("Lock the replacement locations", "Keep only vehicle places where pipes, hoses, or hard lines will be replaced; exclude body rubbers and generic context photos."),
+        ("Attach direct pipe photos", "Use curated pipe/location photos only, and mark missing close-ups explicitly for the next photo pass."),
+        ("Fill recreation specs", "Record OD/ID, barb or flare style, route length, bend/template needs, material, and source reference before ordering or fabrication."),
+        ("Dry-fit and pressure-test replacements", "Confirm routing, clearance, clip support, and leak-free operation before closing the pipe replacement track."),
+    ],
     "brake_system": [
         ("Confirm installed brake architecture", "Verify front/rear hardware family and capture evidence before ordering."),
         ("Close hydraulic refresh scope", "Freeze hoses, cylinders, and fluid-service items from condition evidence."),
@@ -291,6 +373,989 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
         ("Execute full functional checks", "Validate electrical, mechanical, and chassis functions end-to-end."),
         ("Close road-validation gate", "Road-check and log residual defects before declaring baseline complete."),
     ],
+}
+
+WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
+    "stripdown_cataloguing": {
+        "title": "Stripdown Control",
+        "summary": "Part removal, tagging, storage, and vendor movement controls for the stripped vehicle.",
+        "default_tools": [
+            "Phone/camera with battery charged",
+            "Permanent marker or label printer",
+            "Socket/spanner set and trim tools",
+            "Small trays for fasteners",
+        ],
+        "default_supplies": [
+            "Masking labels or tie-on tags",
+            "Zip bags in multiple sizes",
+            "Cable ties",
+            "Light oil or rust inhibitor for stored bare metal",
+        ],
+        "subtasks": [
+            {
+                "title": "Tag And Photograph Every Removed Part",
+                "priority": "P0",
+                "remaining": "active until stripdown closes",
+                "instruction": "Every part comes off with a photo, label, and fastener bag before it leaves the vehicle area.",
+                "process_steps": [
+                    "Photograph the part installed from enough angles to show side, orientation, hardware, and routing.",
+                    "Remove one component group at a time; do not mix unrelated fasteners in the same tray.",
+                    "Create a label using workstream, component name, side, and sequence number.",
+                    "Bag fasteners with the part label and note any broken, missing, or non-original hardware.",
+                    "Take a final photo of the part, label, and fastener bag together before storage.",
+                ],
+                "tools": ["Camera", "Permanent marker", "Socket/spanner set", "Trim tools"],
+                "supplies": ["Tie-on tags", "Zip bags", "Masking tape", "Cable ties"],
+                "hold_point": "No removed part is allowed into storage without a visible label and matching photo.",
+                "image_tokens": ["stripdown", "removed", "door", "panel", "dashboard", "cabin"],
+            },
+            {
+                "title": "Record Storage Location",
+                "priority": "P0",
+                "remaining": "all loose items",
+                "instruction": "Make storage searchable by component group before more parts come off.",
+                "process_steps": [
+                    "Group parts by workstream and physical location: shelf, crate, tray, or vendor box.",
+                    "Write the storage location on the label and in the dashboard/source tracker.",
+                    "Photograph each filled crate or shelf face with labels visible.",
+                    "Separate reusable hardware, replacement-needed hardware, and unknown items.",
+                    "Move fragile trim, glass, and electrical items away from welding/grinding dust.",
+                ],
+                "tools": ["Camera", "Marker", "Storage bins", "Parts trays"],
+                "supplies": ["Storage labels", "Zip bags", "Bubble wrap or cloth wrap", "Desiccant where useful"],
+                "hold_point": "A mechanic should be able to find each item from the dashboard entry alone.",
+                "image_tokens": ["storage", "cataloguing", "removed", "parts"],
+            },
+            {
+                "title": "Track Outbound Vendor Jobs",
+                "priority": "P1",
+                "remaining": "all painter/refurbisher/vendor items",
+                "instruction": "Anything leaving the workspace needs a manifest, condition photo, vendor, and return gate.",
+                "process_steps": [
+                    "Lay out the outbound batch and photograph every item before packing.",
+                    "Record vendor name, date sent, expected return, and agreed work.",
+                    "Mark each item with a temporary ID that survives handling.",
+                    "On return, photograph condition before storage and compare against the outbound manifest.",
+                    "Record defects immediately, while vendor correction is still possible.",
+                ],
+                "tools": ["Camera", "Manifest/checklist", "Marker", "Measuring tape where fit is relevant"],
+                "supplies": ["Tags", "Packing wrap", "Tape", "Vendor job sheet"],
+                "hold_point": "Close only after returned condition and storage location are recorded.",
+                "image_tokens": ["sent", "returned", "painter", "vendor", "refinish"],
+            },
+            {
+                "title": "Reconcile Orphan Items",
+                "priority": "P1",
+                "remaining": "until no unknown loose items remain",
+                "instruction": "Unknown parts must be identified or explicitly quarantined before final assembly.",
+                "process_steps": [
+                    "Collect all unlabelled items into one quarantine tray.",
+                    "Photograph each item with scale and any markings visible.",
+                    "Compare against removed-area photos and component jobs.",
+                    "Assign the item to a workstream, storage location, or discard decision.",
+                    "Update the tracker and mark any missing counterpart items.",
+                ],
+                "tools": ["Camera", "Calipers", "Magnet", "Reference photo set"],
+                "supplies": ["Quarantine tray", "Labels", "Zip bags"],
+                "hold_point": "Final assembly cannot begin with unknown structural, brake, steering, or electrical hardware loose.",
+                "image_tokens": ["orphan", "unknown", "hardware", "fastener", "cataloguing"],
+            },
+        ],
+    },
+    "body_chassis": {
+        "title": "Body And Welding Closure",
+        "summary": "Body-off rust repair, fabrication, weld closure, and immediate corrosion protection.",
+        "default_tools": [
+            "MIG welder and welding PPE",
+            "Angle grinder with cutting, grinding, and flap discs",
+            "Clamps, magnets, and straight edge",
+            "Body hammer/dolly set",
+        ],
+        "default_supplies": [
+            "Sheet steel matched to repaired panel thickness",
+            "Weld-through primer where joint design requires it",
+            "2K epoxy primer system",
+            "Seam sealer and cavity wax",
+        ],
+        "subtasks": [
+            {
+                "title": "Map And Freeze Weld Boundaries",
+                "priority": "P0",
+                "remaining": "all active rust zones",
+                "instruction": "Mark repair limits before cutting so structural interfaces and refit points stay controlled.",
+                "process_steps": [
+                    "Clean the zone enough to see spot welds, seam edges, and the true corrosion boundary.",
+                    "Probe suspect areas and mark cut lines outside weak metal, not through it.",
+                    "Photograph the marked boundary before cutting.",
+                    "Record mount points, brackets, holes, and edges that must not move.",
+                    "Confirm repair order so adjacent panels are not weakened at the same time.",
+                ],
+                "tools": ["Inspection light", "Pick/probe", "Marker", "Straight edge", "Camera"],
+                "supplies": ["Masking tape", "Panel markers", "Rust reference photos"],
+                "hold_point": "No cut is made until the photo-marked boundary and refit interfaces are recorded.",
+                "image_tokens": ["floor", "rust", "gutter", "body", "weld", "cut"],
+            },
+            {
+                "title": "Cut, Fit, And Weld",
+                "priority": "P0",
+                "remaining": "zone by zone",
+                "instruction": "Remove weak metal, fit repair pieces tightly, and weld with heat control.",
+                "process_steps": [
+                    "Cut only the approved zone and deburr the edge.",
+                    "Template the patch, transfer to steel, and test fit with an even gap suitable for welding.",
+                    "Prepare mating faces and apply weld-through primer only where it belongs inside a lap or closed joint.",
+                    "Tack across the patch, skip around to control heat, then close the welds gradually.",
+                    "Grind only enough to inspect the weld; do not thin surrounding metal.",
+                    "Check pinholes with light/air and rework before primer.",
+                ],
+                "tools": ["Cut-off wheel", "MIG welder", "Welding clamps", "Hammer/dolly", "Flap disc"],
+                "supplies": ["Sheet steel", "Welding wire", "Shielding gas", "Weld-through primer", "Grinding discs"],
+                "hold_point": "Patch is fully welded, pinhole checked, and photographed before coating.",
+                "image_tokens": ["floor", "body", "panel", "welding", "rust"],
+            },
+            {
+                "title": "Close Corrosion Stack Same Window",
+                "priority": "P0",
+                "remaining": "after each welded zone",
+                "instruction": "Do not leave newly repaired metal unprotected after welding and cleaning.",
+                "process_steps": [
+                    "Remove weld dust, loose scale, and surface contamination.",
+                    "Use wax and grease remover after the panel is dry and cool.",
+                    "Apply compatible 2K epoxy primer to bare approved metal.",
+                    "Apply seam sealer after primer where the product system requires it.",
+                    "Apply topcoat, liner, or cavity wax in the planned order after cure windows are met.",
+                ],
+                "tools": ["Blow gun", "Solvent-safe wipes", "Primer gun or aerosol system", "Seam-sealer gun"],
+                "supplies": ["Wax and grease remover", "2K epoxy primer", "Seam sealer", "Topcoat or bedliner", "Cavity wax"],
+                "hold_point": "No moisture, uncured converter, loose rust, or sanding dust is trapped under primer.",
+                "image_tokens": ["primer", "sealer", "floor", "rust", "bodywork"],
+            },
+            {
+                "title": "Capture Refit Interface Evidence",
+                "priority": "P1",
+                "remaining": "before tub refit",
+                "instruction": "Prove that body mounts, holes, and panel interfaces are ready before the tub goes back on.",
+                "process_steps": [
+                    "Photograph repaired mount pads, captive nuts, and body-to-chassis interfaces.",
+                    "Test threads and chase only where necessary.",
+                    "Trial-fit critical bolts, sleeves, and brackets before paint hides access.",
+                    "Measure shim needs and record any non-standard correction.",
+                    "Update open issues for any interface that does not align cleanly.",
+                ],
+                "tools": ["Thread chasers/taps", "Calipers", "Torque wrench for trial checks", "Camera"],
+                "supplies": ["Body mount hardware kit", "Anti-seize", "Temporary bolts", "Labels"],
+                "hold_point": "The body can be lowered without discovering hidden thread, alignment, or missing-hardware problems.",
+                "image_tokens": ["body_mount", "mount", "floor", "chassis", "refit"],
+            },
+        ],
+    },
+    "paint_refinish": {
+        "title": "Paint And Refinish Control",
+        "summary": "Panel send-out, in-process paint evidence, returned-parts reconciliation, and finish quality signoff.",
+        "default_tools": ["Camera", "Paint quality checklist", "Panel tags", "Inspection light"],
+        "default_supplies": ["Panel labels", "Masking tape", "Protective wrap", "Clean storage blankets"],
+        "subtasks": [
+            {
+                "title": "Lock Outbound Panel Manifest",
+                "priority": "P0",
+                "remaining": "every painter batch",
+                "instruction": "Every panel or hardware item sent to paint must be listed and photographed before handoff.",
+                "process_steps": [
+                    "Lay out the batch and photograph front, back, edges, existing damage, and label.",
+                    "Record item name, side, current condition, required finish, and vendor batch.",
+                    "Tag small hardware separately so it does not disappear in the paint shop.",
+                    "Agree which dents, rust, holes, and filler areas the painter owns.",
+                    "Keep a copy of the manifest with the vehicle records.",
+                ],
+                "tools": ["Camera", "Checklist", "Marker", "Inspection light"],
+                "supplies": ["Tags", "Masking tape", "Packing wrap", "Vendor manifest sheet"],
+                "hold_point": "No item leaves without a dashboard-visible before photo and batch entry.",
+                "image_tokens": ["sent", "panel", "door", "wing", "paint", "painter"],
+            },
+            {
+                "title": "Capture In-Process Painter Evidence",
+                "priority": "P1",
+                "remaining": "until primer/prep is verified",
+                "instruction": "Track sanding, filler, primer, and correction work while the parts are still at the painter.",
+                "process_steps": [
+                    "Request photos or videos after stripping/sanding before filler hides defects.",
+                    "Confirm rust, pinholes, and previous repairs are corrected before primer.",
+                    "Capture primer stage and guide-coat/sanding progress where available.",
+                    "Record any scope changes immediately with the affected item ID.",
+                    "Keep progress media linked to the same outbound batch.",
+                ],
+                "tools": ["Phone/camera", "Paint defect checklist", "Shared media folder"],
+                "supplies": ["Painter-approved primer/filler system", "Guide coat", "Masking materials"],
+                "hold_point": "Primer/topcoat signoff waits until visible prep defects are either fixed or explicitly accepted.",
+                "image_tokens": ["progress", "primer", "paint", "sanding", "filler", "painter"],
+            },
+            {
+                "title": "Reconcile Returned Painted Parts",
+                "priority": "P0",
+                "remaining": "each returned batch",
+                "instruction": "Return intake must catch missing items, paint defects, and storage risks immediately.",
+                "process_steps": [
+                    "Compare returned items against the outbound manifest before the vendor leaves.",
+                    "Inspect edges, holes, hinge areas, fastener holes, and undersides.",
+                    "Photograph any runs, chips, dry spray, poor coverage, or missed repairs.",
+                    "Tag the returned item and move it to protected storage.",
+                    "Update return status and open correction rows for defects.",
+                ],
+                "tools": ["Inspection light", "Camera", "Manifest", "Clean gloves"],
+                "supplies": ["Soft wrap", "Foam/cardboard separators", "Labels", "Touch-up defect tags"],
+                "hold_point": "No returned part is stacked or stored bare against another painted surface.",
+                "image_tokens": ["returned", "painted", "refinished", "hinge", "bracket", "trim"],
+            },
+            {
+                "title": "Close Paint Quality Gate",
+                "priority": "P1",
+                "remaining": "before refit",
+                "instruction": "Finish quality must be accepted before painted parts go back onto the vehicle.",
+                "process_steps": [
+                    "Confirm all paint-scope items are returned or explicitly deferred.",
+                    "Check visible face, hidden face, edges, and mounting points.",
+                    "Confirm bolt holes are not clogged with paint where hardware must seat.",
+                    "Record touch-up or correction needs before assembly damage can confuse responsibility.",
+                    "Approve storage and refit readiness in the dashboard.",
+                ],
+                "tools": ["Inspection light", "Thread picks", "Camera", "Checklist"],
+                "supplies": ["Touch-up plan", "Protective tape for refit edges", "Clean gloves"],
+                "hold_point": "Refit starts only after finish defects and missing items are closed or accepted.",
+                "image_tokens": ["returned", "quality", "paint", "refinish", "panel"],
+            },
+        ],
+    },
+    "interior_controls": {
+        "title": "Dashboard And Controls",
+        "summary": "Dash switch cataloguing, function assignment, fit-up, and electrical integration.",
+        "default_tools": ["Multimeter", "Continuity tester", "Crimper", "Step drill", "Calipers"],
+        "default_supplies": ["Heat shrink", "Terminals", "Loom tape", "Labels", "Grommets"],
+        "subtasks": [
+            {
+                "title": "Classify And Tag Control Hardware",
+                "priority": "P0",
+                "remaining": "all dash controls",
+                "instruction": "Identify each switch, knob, warning lamp, and control before drilling or wiring.",
+                "process_steps": [
+                    "Lay out all dashboard/control hardware and photograph labels, pins, and mounting hardware.",
+                    "Assign each item a control ID and intended function.",
+                    "Record hole diameter, mounting depth, connector type, and current condition.",
+                    "Separate confirmed controls from unknown, duplicate, or optional controls.",
+                    "Bag each control with its nut, bezel, and connector parts.",
+                ],
+                "tools": ["Camera", "Calipers", "Multimeter", "Marker"],
+                "supplies": ["Labels", "Zip bags", "Contact cleaner", "Small parts tray"],
+                "hold_point": "No dashboard holes or wiring branches are finalized for unknown controls.",
+                "image_tokens": ["switch", "control", "dashboard", "button", "knob"],
+            },
+            {
+                "title": "Define Switch Function Map",
+                "priority": "P0",
+                "remaining": "before harness build",
+                "instruction": "Lock what each control does and which circuit it belongs to.",
+                "process_steps": [
+                    "List each required function: ignition, lights, hazards, wipers, heater, fuel stop/security, and accessories.",
+                    "Assign one physical control to each function and mark optional controls as deferred.",
+                    "Confirm switch rating, pinout, illumination behavior, and fuse/relay need.",
+                    "Update the wiring tracker with wire size, fuse value source, and connector plan.",
+                    "Label the control and matching loom branch with the same ID.",
+                ],
+                "tools": ["Multimeter", "Power supply/test battery with fuse", "Wiring tracker"],
+                "supplies": ["Labels", "Heat shrink ID sleeves", "Fuses/relays as planned", "Connector housings"],
+                "hold_point": "A circuit cannot be wired until its switch function, protection, and connector are defined.",
+                "image_tokens": ["switch", "wiring", "dash", "control", "connector"],
+            },
+            {
+                "title": "Complete Dash Fit And Mounting Checks",
+                "priority": "P1",
+                "remaining": "before fascia closeout",
+                "instruction": "Check physical fit before paint, trim, or wiring makes rework expensive.",
+                "process_steps": [
+                    "Mock the switch/control layout in the actual dash panel or template.",
+                    "Check rear clearance for wiring, nuts, heater ducts, column, and glovebox/trim.",
+                    "Drill or file holes only after layout is approved.",
+                    "Deburr, prime exposed metal edges, and fit grommets or edge protection where needed.",
+                    "Install controls finger-tight and photograph final allocation.",
+                ],
+                "tools": ["Step drill", "Files", "Deburring tool", "Calipers", "Inspection mirror"],
+                "supplies": ["Edge primer", "Grommets", "Control nuts/washers", "Protective tape"],
+                "hold_point": "Controls mount without forcing, twisting wiring, or fouling the dash structure.",
+                "image_tokens": ["dashboard", "fascia", "switch", "control", "fit"],
+            },
+            {
+                "title": "Wire, Label, And Function Test",
+                "priority": "P0",
+                "remaining": "after harness branch build",
+                "instruction": "Integrate controls into protected, labelled circuits and test before closeout.",
+                "process_steps": [
+                    "Build each branch with strain relief, heat shrink, and service loop.",
+                    "Crimp with the correct die and tug-test each terminal.",
+                    "Route wiring away from sharp edges, heater movement, pedals, and column movement.",
+                    "Test continuity, switch function, fuse behavior, and relay operation.",
+                    "Photograph final routing and label positions before trim covers them.",
+                ],
+                "tools": ["Ratchet crimper", "Heat gun", "Multimeter", "Test lamp", "Fuse-protected test lead"],
+                "supplies": ["Automotive wire", "Terminals", "Heat shrink", "Loom sleeve", "Loom tape", "Labels"],
+                "hold_point": "Every fitted control must work and be labelled before dash closure.",
+                "image_tokens": ["wiring", "dashboard", "loom", "connector", "switch"],
+            },
+        ],
+    },
+    "chassis_rubbers": {
+        "title": "Body Mount Rubber Stack",
+        "summary": "Body-mount rubber, sleeve, washer, shim, and front-support isolation work.",
+        "default_tools": ["Calipers", "Jack and axle stands", "Pry bars", "Socket set", "Torque wrench"],
+        "default_supplies": ["Penetrating oil", "Rubber grease", "Anti-seize", "Temporary alignment bolts"],
+        "subtasks": [
+            {
+                "title": "Capture Removed Mount Samples",
+                "priority": "P0",
+                "remaining": "all mount positions",
+                "instruction": "Old rubbers and sleeves are measurement evidence, not scrap, until the new stack is locked.",
+                "process_steps": [
+                    "Remove one mount position at a time and keep upper/lower pieces together.",
+                    "Photograph stack order, washers, sleeves, shims, and bolt orientation.",
+                    "Measure outside diameter, height, sleeve length, bolt size, and hole condition.",
+                    "Label the sample by vehicle position and side.",
+                    "Record any crushed, missing, or mismatched pieces.",
+                ],
+                "tools": ["Calipers", "Camera", "Socket set", "Pry bar"],
+                "supplies": ["Labels", "Zip bags", "Penetrating oil"],
+                "hold_point": "No sample is discarded until replacement dimensions are confirmed.",
+                "image_tokens": ["rubber", "body_mount", "mount", "sleeve", "shim"],
+            },
+            {
+                "title": "Freeze Rubber, Sleeve, And Shim Specification",
+                "priority": "P0",
+                "remaining": "before order/fabrication",
+                "instruction": "Define the full stack by position so the body returns to the intended height and alignment.",
+                "process_steps": [
+                    "Build a position-by-position table for rubbers, sleeves, cup washers, bolts, and shims.",
+                    "Use docs/rubber-recreation-fabrication-spec-20260502.md as the fabrication handoff and close its hold dimensions.",
+                    "Use data/manual/rubber_recreation_toyota_oe_cross_reference.csv to reconcile Toyota NO.1-NO.5 station rows, OE part numbers, bolt families, and published shim/spacer thicknesses.",
+                    "Compare old samples against chassis/body hole condition.",
+                    "Specify rubber hardness/source and sleeve material before purchase.",
+                    "Define shim pack thickness range and where adjustment is allowed.",
+                    "Record any captive nut or mount repair needed before dry fit.",
+                ],
+                "tools": ["Calipers", "Straight edge", "Mount map", "Thread gauge"],
+                "supplies": ["Spec sheet", "OE cross-reference", "Sample rubbers", "Shim material", "Sleeve stock if fabricating"],
+                "hold_point": "Final order or fabrication starts only after every mount position has a complete stack definition and the Toyota OE station rows have been reconciled against the physical vehicle.",
+                "image_tokens": ["body_mount", "rubber", "shim", "sleeve", "mount"],
+            },
+            {
+                "title": "Lock Sourcing Path",
+                "priority": "P1",
+                "remaining": "avoid duplicate buys",
+                "instruction": "Choose purchased kit, local fabrication, or mixed route before spending more.",
+                "process_steps": [
+                    "Check whether an available kit covers all required positions and sleeves.",
+                    "Price any missing sleeves, washers, and shims separately.",
+                    "Reject used/salvage rubber for structural body mounts.",
+                    "Record vendor, delivery status, and expected fit risk.",
+                    "Keep old samples available for supplier comparison until receipt check closes.",
+                ],
+                "tools": ["Parts list", "Camera", "Calipers"],
+                "supplies": ["Body mount rubbers", "Sleeves", "Cup washers", "Shim pack", "Class-marked fasteners"],
+                "hold_point": "Do not close procurement until the kit/fabrication route covers every mount position.",
+                "image_tokens": ["rubber", "procurement", "inventory", "mount"],
+            },
+            {
+                "title": "Dry-Fit Interface Check",
+                "priority": "P0",
+                "remaining": "before final body fastening",
+                "instruction": "Trial-fit the mount stack before final paint-protected fastening.",
+                "process_steps": [
+                    "Clean mount faces and confirm primer/topcoat cure before fitting rubbers.",
+                    "Install rubbers, sleeves, and temporary bolts without forcing the body into position.",
+                    "Check bolt engagement, sleeve crush control, and washer seating.",
+                    "Measure door/opening alignment and body level before final torque.",
+                    "Mark required shims and update the final fastener list.",
+                ],
+                "tools": ["Jack/stands", "Alignment pins", "Torque wrench", "Measuring tape"],
+                "supplies": ["New mount stack", "Temporary bolts", "Rubber grease", "Anti-seize"],
+                "hold_point": "Final body fastening waits until the body sits naturally on the mount stack.",
+                "image_tokens": ["body_mount", "chassis", "mount", "refit", "rubber"],
+            },
+        ],
+    },
+    "electrical_reset": {
+        "title": "Electrical Baseline",
+        "summary": "Baseline circuit scope, grounds, pass-through protection, fuse/relay function checks, and final loom routing.",
+        "default_tools": ["Multimeter", "Test lamp", "Ratchet crimper", "Heat gun", "Fuse-protected test lead"],
+        "default_supplies": ["Automotive wire", "Terminals", "Heat shrink", "Fuses and relays", "Loom sleeve"],
+        "subtasks": [
+            {
+                "title": "Freeze Baseline Circuit Scope",
+                "priority": "P0",
+                "remaining": "before optional accessories",
+                "instruction": "Separate must-work factory/baseline circuits from deferred accessories.",
+                "process_steps": [
+                    "List required baseline circuits: start, charge, ignition/fuel stop, lights, horn, wiper, gauges, brake lights, and grounds.",
+                    "Mark accessories and audio as deferred unless required for safety or legal operation.",
+                    "Assign each circuit to a fuse, relay, wire size, connector, and loom branch.",
+                    "Check existing wires for brittle insulation, heat damage, bad splices, and unsupported routing.",
+                    "Update the electrical tracker before buying optional parts.",
+                ],
+                "tools": ["Electrical tracker", "Multimeter", "Inspection light", "Camera"],
+                "supplies": ["Labels", "Wire-size reference", "Fuse/relay plan"],
+                "hold_point": "No optional circuit is added until the baseline circuit list is stable.",
+                "image_tokens": ["wiring", "fuse", "relay", "dashboard", "firewall"],
+            },
+            {
+                "title": "Verify Grounds And Pass-Throughs",
+                "priority": "P0",
+                "remaining": "all chassis/body grounds",
+                "instruction": "Clean earth points and protect every body/firewall pass-through before loom closure.",
+                "process_steps": [
+                    "Identify battery, engine, chassis, body, dash, rear lighting, and accessory ground points.",
+                    "Remove paint/rust only under the contact pad, then protect the surrounding metal.",
+                    "Use star/serrated washers where a biting ground is required.",
+                    "Fit grommets or bulkhead fittings at every firewall/body pass-through.",
+                    "Voltage-drop test major grounds under load where possible.",
+                ],
+                "tools": ["Multimeter", "Wire brush", "Crimper", "Socket set"],
+                "supplies": ["Star washers", "Ground straps", "Conductive anti-corrosion paste", "Grommets", "Heat shrink"],
+                "hold_point": "No loom is tied down until grounds and pass-through protection are verified.",
+                "image_tokens": ["ground", "firewall", "wiring", "grommet", "pass"],
+            },
+            {
+                "title": "Run Fuse And Relay Function Checks",
+                "priority": "P0",
+                "remaining": "before battery-live closeout",
+                "instruction": "Validate protection and switching before trim hides the loom.",
+                "process_steps": [
+                    "Check each fuse feed, fused output, relay trigger, and relay load wire separately.",
+                    "Use a fuse-protected test feed for first energizing.",
+                    "Confirm switch logic and relay orientation before connecting final loads.",
+                    "Test lights, horn, wipers, charging warning, starter trigger, and fuel-stop/security behavior.",
+                    "Record any warm wires, intermittent connections, or unexpected voltage drop.",
+                ],
+                "tools": ["Multimeter", "Test lamp", "Fuse-protected test lead", "Relay puller"],
+                "supplies": ["Correct fuses", "Relays", "Spare terminals", "Contact cleaner"],
+                "hold_point": "Circuits are not wrapped permanently until fuse and relay behavior is proven.",
+                "image_tokens": ["fuse", "relay", "wiring", "switch", "connector"],
+            },
+            {
+                "title": "Close Loom Routing And Labeling",
+                "priority": "P1",
+                "remaining": "after testing",
+                "instruction": "Protect wiring from heat, abrasion, water, and future confusion.",
+                "process_steps": [
+                    "Route looms away from exhaust heat, sharp edges, pedals, steering movement, and water traps.",
+                    "Add clips/P-clamps at sensible intervals without crushing the loom.",
+                    "Wrap only after testing and after branch labels are fitted.",
+                    "Leave service loops where switches, gauges, and fuse panels need future access.",
+                    "Photograph final route before panels and trim cover it.",
+                ],
+                "tools": ["Crimper", "Heat gun", "Clip pliers", "Camera"],
+                "supplies": ["Split conduit or braided sleeve", "Loom tape", "P-clamps", "Labels", "Cable ties"],
+                "hold_point": "Final electrical closeout requires labelled, supported, and photographed routing.",
+                "image_tokens": ["loom", "wiring", "connector", "dashboard", "firewall"],
+            },
+        ],
+    },
+    "mechanical_baseline": {
+        "title": "Engine And Mechanical Baseline",
+        "summary": "Controlled cleaning, stripped-access service work, leak inspection, defect logging, and baseline gate closure.",
+        "default_tools": ["Socket/spanner set", "Drain pans", "Inspection light", "Torque wrench", "Pressure sprayer"],
+        "default_supplies": ["DISS/APC cleaner", "GREZ OFF degreaser", "Rags", "Fluids", "Filters"],
+        "subtasks": [
+            {
+                "title": "Clean Engine Bay And Powertrain Baseline",
+                "priority": "P0",
+                "remaining": "May 1 engine set queued",
+                "instruction": "Clean enough to inspect leaks without forcing water into electrics, breathers, intake, or open lines.",
+                "process_steps": [
+                    "Photograph current oily and dusty areas before cleaning so leak paths are not lost.",
+                    "Cover open intake, exposed electrics, alternator, fuse/relay areas, and open fluid ports.",
+                    "Apply DISS/APC broadly with the Wadfow WRS1550 pressure sprayer; use GREZ OFF only on oily deposits.",
+                    "Agitate with brushes, then rinse with controlled low to medium pressure and distance.",
+                    "Blow dry seams, connectors, linkages, and low pockets; leave fully dry before starting or painting.",
+                    "Re-photograph clean surfaces so new leaks can be identified after running.",
+                ],
+                "tools": ["Wadfow WRS1550 pressure sprayer", "Detail brushes", "Controlled pressure rinse", "Compressed air/blower"],
+                "supplies": ["DISS/APC cleaner 5L", "GREZ OFF HD degreaser", "Masking plastic", "Rags", "Nitrile gloves"],
+                "hold_point": "Engine is not run until water is cleared from electrics, breathers, and connector pockets.",
+                "image_tokens": ["engine", "cleaning", "bay", "gearbox", "transmission"],
+            },
+            {
+                "title": "Execute Must-Replace Service Pack",
+                "priority": "P0",
+                "remaining": "stripped-access service",
+                "instruction": "Complete baseline consumables while access is open, before upgrades distract the work.",
+                "process_steps": [
+                    "Drain and inspect fluids for contamination before replacing them.",
+                    "Replace filters, belts, suspect coolant hoses, fuel hose sections, clamps, and radiator cap as scoped.",
+                    "Use hose sizes and ratings recorded in the engine hose specification; measure actual nipples before cutting hose.",
+                    "Refill with correct fluids and bleed cooling/fuel systems as required.",
+                    "Mark service date, fluids, parts used, and unresolved findings.",
+                ],
+                "tools": ["Drain pans", "Hose pick", "Clamp pliers", "Torque wrench", "Funnel"],
+                "supplies": ["Engine oil", "Coolant", "Filters", "Fuel-rated hose/clamps", "Vacuum hose", "Radiator cap"],
+                "hold_point": "Do not fabricate or replace high-pressure injector pipes with generic tube.",
+                "image_tokens": ["engine", "hose", "cooling", "fuel", "service"],
+            },
+            {
+                "title": "Run Leak And Condition Checks",
+                "priority": "P0",
+                "remaining": "after cleaning/service",
+                "instruction": "Use the clean baseline to separate old grime from active faults.",
+                "process_steps": [
+                    "Pressure-test cooling system where equipment and access allow.",
+                    "Inspect fuel feed, return, leak-off, filter, lift pump, and injector areas for wetness.",
+                    "Check oil leaks around rocker cover, timing/front cover, sump, gearbox, and transfer case.",
+                    "Check vacuum hoses, brake booster hose, and check valves for collapse or cracking.",
+                    "Run the engine only after fluid levels and water-sensitive areas are safe, then recheck with bright light.",
+                ],
+                "tools": ["Cooling pressure tester", "Inspection light", "Mirror", "UV dye only if appropriate"],
+                "supplies": ["Clean rags", "Hose clamps", "Replacement suspect hoses", "Leak marking tags"],
+                "hold_point": "Active fuel, brake vacuum, coolant, or oil leaks become defect rows before refit.",
+                "image_tokens": ["engine", "leak", "cooling", "fuel", "vacuum"],
+            },
+            {
+                "title": "Log Post-Service Defects",
+                "priority": "P1",
+                "remaining": "after first run/check",
+                "instruction": "Keep new findings visible as defects rather than burying them in general notes.",
+                "process_steps": [
+                    "Photograph each leak, damaged hose, noisy bearing, broken bracket, or missing clip.",
+                    "Assign severity: safety hold, must fix before body, can fix after refit, or monitor.",
+                    "Link each defect to a part, supply, or labor decision.",
+                    "Order only confirmed baseline items; keep upgrade decisions separate.",
+                    "Close defects with after-repair photos.",
+                ],
+                "tools": ["Camera", "Inspection light", "Defect checklist"],
+                "supplies": ["Tags", "Paint marker", "Parts request list"],
+                "hold_point": "No unresolved safety or access-critical mechanical defect is hidden by body refit.",
+                "image_tokens": ["engine", "defect", "hose", "leak", "bracket"],
+            },
+            {
+                "title": "Close Baseline Gate Before Upgrades",
+                "priority": "P0",
+                "remaining": "before optional upgrades",
+                "instruction": "Baseline reliability must be known before power, steering, or accessory upgrades consume time and budget.",
+                "process_steps": [
+                    "Confirm fluids are filled, bled, and leak-checked.",
+                    "Confirm service parts are installed or explicitly deferred with reason.",
+                    "Confirm engine starts, idles, charges, and reaches temperature without new leaks.",
+                    "Record residual defects and whether they block road validation.",
+                    "Only then release optional mechanical upgrades.",
+                ],
+                "tools": ["Checklist", "Temperature gauge/IR thermometer", "Multimeter", "Camera"],
+                "supplies": ["Fluid top-up stock", "Spare clamps", "Labels"],
+                "hold_point": "Baseline closeout requires clean post-service evidence and an open-defect list.",
+                "image_tokens": ["engine", "baseline", "service", "cleaning"],
+            },
+        ],
+    },
+    "brake_system": {
+        "title": "Brake Safety Work",
+        "summary": "Brake architecture confirmation, hydraulic refresh, bias/safety checks, and final brake gate.",
+        "default_tools": ["Jack stands", "Brake line spanners", "Bleeder kit", "Torque wrench", "Inspection light"],
+        "default_supplies": ["Brake cleaner", "Correct brake fluid", "Copper grease", "New copper washers", "Rags"],
+        "subtasks": [
+            {
+                "title": "Confirm Installed Brake Architecture",
+                "priority": "P0",
+                "remaining": "before ordering more brake parts",
+                "instruction": "Verify the actual front/rear hardware on the vehicle instead of ordering by assumption.",
+                "process_steps": [
+                    "Safely support the vehicle and remove wheels as needed.",
+                    "Photograph front calipers/discs and rear drums/backing plates from both sides.",
+                    "Record hose routing, hard-line condition, bleed screw access, and parking-brake linkage.",
+                    "Identify pad/shoe type, cylinder/caliper family, and any missing hardware.",
+                    "Update the parts list before buying pads, shoes, hoses, or cylinders.",
+                ],
+                "tools": ["Jack stands", "Wheel tools", "Inspection light", "Camera"],
+                "supplies": ["Brake cleaner", "Paint marker", "Labels"],
+                "hold_point": "No brake order is closed until hardware family is positively identified.",
+                "image_tokens": ["brake", "disc", "drum", "caliper", "rear_axle"],
+            },
+            {
+                "title": "Close Hydraulic Refresh Scope",
+                "priority": "P0",
+                "remaining": "safety-critical wear items",
+                "instruction": "Replace age-critical hydraulic parts and any worn friction hardware during open access.",
+                "process_steps": [
+                    "Inspect flex hoses for cracking, swelling, chafing, and date/age risk.",
+                    "Inspect hard lines for corrosion, flattening, poor clips, and wet unions.",
+                    "Inspect pads/shoes, calipers/wheel cylinders, master cylinder, and fluid condition.",
+                    "Replace confirmed hoses, copper washers, suspect cylinders, and friction material as scoped.",
+                    "Bleed in the correct sequence using clean fluid and protect painted surfaces from spills.",
+                ],
+                "tools": ["Flare-nut spanners", "Bleeder bottle/vacuum bleeder", "Brake spring tools", "Torque wrench"],
+                "supplies": ["Brake flex hose set", "Correct brake fluid", "Brake pads/shoes as confirmed", "Copper washers", "Copper grease"],
+                "hold_point": "Any soft hose, leak, blocked bleeder, or uncertain cylinder/caliper keeps the brake gate open.",
+                "image_tokens": ["brake", "hose", "hydraulic", "caliper", "drum"],
+            },
+            {
+                "title": "Lock Brake-Bias Safety Path",
+                "priority": "P1",
+                "remaining": "after hardware baseline",
+                "instruction": "Only change bias or conversion parts from evidence, not preference.",
+                "process_steps": [
+                    "Record current front/rear setup and tire/suspension changes that affect braking.",
+                    "Inspect any proportioning/bias valve or factory balance hardware.",
+                    "After hydraulic refresh, perform controlled low-speed brake checks.",
+                    "Escalate to bias correction only if lockup, pull, or imbalance is observed.",
+                    "Document the approved correction path before buying conversion parts.",
+                ],
+                "tools": ["Brake test checklist", "Pressure gauges if available", "Camera"],
+                "supplies": ["Bias valve only if approved", "Line fittings only if scoped", "Brake fluid"],
+                "hold_point": "No rear disc or bias modification proceeds without baseline brake behavior evidence.",
+                "image_tokens": ["brake", "bias", "line", "rear", "front"],
+            },
+            {
+                "title": "Close Brake Safety Gate",
+                "priority": "P0",
+                "remaining": "before road validation",
+                "instruction": "Brakes must be leak-free, bled, adjusted, and proven before road use.",
+                "process_steps": [
+                    "Torque wheel and brake fasteners to workshop-manual spec.",
+                    "Confirm firm pedal, no fluid drop, no visible leaks, and correct reservoir level.",
+                    "Adjust rear drums/parking brake where applicable.",
+                    "Run static hold, low-speed stop, pull check, and reinspection.",
+                    "Photograph final hose routing, unions, and brake hardware before signoff.",
+                ],
+                "tools": ["Torque wrench", "Bleeder kit", "Inspection light", "Wheel chocks"],
+                "supplies": ["Brake fluid", "Cleaner", "Paint marker", "Spare bleed caps"],
+                "hold_point": "Any leak, pulling, soft pedal, seized adjuster, or uncertain torque blocks road validation.",
+                "image_tokens": ["brake", "hose", "line", "wheel", "axle"],
+            },
+        ],
+    },
+    "eps_vitz_upgrade": {
+        "title": "Vitz EPS Conversion",
+        "summary": "Donor EPS baseline, mount/shaft geometry, protected electrical integration, and steering safety validation.",
+        "default_tools": ["Calipers", "Angle finder", "Welder/fabrication tools", "Torque wrench", "Multimeter"],
+        "default_supplies": ["Steel plate/brackets", "Class-marked fasteners", "Fused power cable", "Relays", "Loom protection"],
+        "subtasks": [
+            {
+                "title": "Capture Donor EPS Hardware Baseline",
+                "priority": "P0",
+                "remaining": "before fabrication",
+                "instruction": "Record donor column, motor, ECU, spline, and connector facts before cutting anything.",
+                "process_steps": [
+                    "Photograph the EPS motor, column sections, ECU, connectors, and labels.",
+                    "Measure shaft lengths, spline counts, U-joint positions, and mounting points.",
+                    "Record connector pinout references and which donor plugs are available.",
+                    "Check motor clearance against pedals, dash, heater, and firewall.",
+                    "Mark missing donor pieces before fabrication starts.",
+                ],
+                "tools": ["Calipers", "Angle finder", "Camera", "Marker"],
+                "supplies": ["Labels", "Zip bags", "Reference pinout sheet"],
+                "hold_point": "Fabrication waits until shaft, mount, and connector facts are recorded.",
+                "image_tokens": ["eps", "vitz", "steering", "column", "motor"],
+            },
+            {
+                "title": "Freeze Mount And Shaft Adapter Geometry",
+                "priority": "P0",
+                "remaining": "fabrication gate",
+                "instruction": "Hold alignment, shaft phasing, and collapse/clearance as the main safety constraints.",
+                "process_steps": [
+                    "Mock the EPS position with the steering wheel, pedals, dash, and firewall clearance in place.",
+                    "Keep U-joint angles reasonable and phase joints correctly.",
+                    "Design brackets with service access and no flex at steering load.",
+                    "Use class-marked fasteners and reinforcement where the body/firewall cannot carry load alone.",
+                    "Trial-turn lock-to-lock before welding final brackets.",
+                ],
+                "tools": ["Welder", "Drill", "Angle finder", "Straight edge", "Torque wrench"],
+                "supplies": ["Steel plate/tube", "Class 8.8 or better hardware", "Paint/primer for brackets", "Threadlocker"],
+                "hold_point": "No final welding or cutting until lock-to-lock motion is smooth without binding.",
+                "image_tokens": ["steering", "column", "mount", "adapter", "firewall"],
+            },
+            {
+                "title": "Lock EPS Electrical Integration",
+                "priority": "P0",
+                "remaining": "after electrical baseline",
+                "instruction": "EPS power and control must be fused, relay-controlled, grounded, and serviceable.",
+                "process_steps": [
+                    "Define battery feed, main fuse location, relay/ignition trigger, ground point, and wire size.",
+                    "Keep EPS supply separate from weak old circuits.",
+                    "Protect cable through bulkheads and near metal edges.",
+                    "Mount ECU away from water, heat, and pedal/foot interference.",
+                    "Test ignition-on behavior and fail-safe steering without assist.",
+                ],
+                "tools": ["Multimeter", "Crimper", "Heat gun", "Fuse-protected test lead"],
+                "supplies": ["Heavy-gauge power cable", "Main fuse", "Relay", "Ground strap", "Heat shrink", "Loom sleeve"],
+                "hold_point": "EPS cannot be energized permanently until fuse, relay, ground, and routing are documented.",
+                "image_tokens": ["eps", "wiring", "relay", "fuse", "ground"],
+            },
+            {
+                "title": "Run Assist Validation And Safety Checks",
+                "priority": "P0",
+                "remaining": "before road use",
+                "instruction": "Validate steering mechanically and electrically before road testing.",
+                "process_steps": [
+                    "With front axle safely supported, turn lock-to-lock and check for binding, wire stretch, and contact.",
+                    "Repeat with suspension at ride height and wheels on the ground.",
+                    "Confirm steering returns consistently and assist is smooth without notchiness.",
+                    "Check all fasteners after initial operation.",
+                    "Road-test progressively only after manual fallback steering and braking are safe.",
+                ],
+                "tools": ["Jack stands", "Torque wrench", "Inspection light", "Checklist"],
+                "supplies": ["Torque paint", "Threadlocker", "Spare fuses"],
+                "hold_point": "Any bind, loose bracket, wiring strain, or unpredictable assist blocks road validation.",
+                "image_tokens": ["steering", "eps", "linkage", "column", "suspension"],
+            },
+        ],
+    },
+    "suspension_upgrade": {
+        "title": "Ironman Suspension Install",
+        "summary": "Receipt check, baseline measurements, installation, loaded torque, alignment, and road validation for the ordered Ironman kit.",
+        "default_tools": ["Jack and axle stands", "Torque wrench", "Breaker bar", "Pry bars", "Angle finder"],
+        "default_supplies": ["Penetrating oil", "Anti-seize", "Threadlocker where specified", "Torque paint", "Marking tape"],
+        "subtasks": [
+            {
+                "title": "Capture Measured Suspension Baseline",
+                "priority": "P0",
+                "remaining": "before parts removal",
+                "instruction": "Record ride height and geometry before the Ironman kit changes the vehicle stance.",
+                "process_steps": [
+                    "Park on level ground and record tire pressure, fuel/load condition, and wheel/tire size.",
+                    "Measure hub-to-arch or fixed chassis reference heights at all four corners.",
+                    "Photograph shackle angles, spring pack condition, shock mounts, U-bolts, bump stops, and brake hose slack.",
+                    "Check hanger holes for ovaling and cracks while the chassis prep photos are still fresh.",
+                    "Record any existing lean, seized fasteners, or bent brackets.",
+                ],
+                "tools": ["Tape measure", "Angle finder", "Camera", "Inspection light"],
+                "supplies": ["Paint marker", "Penetrating oil", "Measurement sheet"],
+                "hold_point": "Do not remove springs until baseline heights and hanger condition are recorded.",
+                "image_tokens": ["suspension", "leaf", "spring", "shackle", "shock"],
+            },
+            {
+                "title": "Receive And Lock Complete Ironman Kit",
+                "priority": "P0",
+                "remaining": "main kit plus front dampers",
+                "instruction": "Treat the Ironman order as incomplete until the main kit and separate front 24635FE dampers are counted.",
+                "process_steps": [
+                    "Lay out the shipment and photograph every box, label, part number, and hardware bag.",
+                    "Check main kit contents against supplier list: springs, rear dampers, bushes, shackles/pins, U-bolts, and hardware.",
+                    "Confirm separate front damper shipment includes 24635FE x2.",
+                    "Reject duplicate alternate spring/shock buys unless the Ironman kit is confirmed incomplete.",
+                    "Record missing/damaged pieces before starting installation.",
+                ],
+                "tools": ["Camera", "Parts checklist", "Calipers if hardware size is uncertain"],
+                "supplies": ["Ironman Foamcell main kit", "Ironman 24635FE front dampers x2", "Labels", "Storage trays"],
+                "hold_point": "Install waits until the complete kit and all hardware are physically verified.",
+                "image_tokens": ["ironman", "suspension", "shock", "leaf", "procurement"],
+            },
+            {
+                "title": "Install With Loaded-Torque Procedure",
+                "priority": "P0",
+                "remaining": "workshop install",
+                "instruction": "Install safely and final-torque rubber pivot hardware only at loaded ride height.",
+                "process_steps": [
+                    "Support chassis and axle independently; never rely on a jack alone.",
+                    "Soak old fasteners, remove shocks, release U-bolts, then remove one axle end/side in a controlled sequence.",
+                    "Clean hanger and perch faces; repair cracks, oval holes, or damaged threads before new parts go in.",
+                    "Install springs, bushes, shackles/pins, U-bolts, and shocks loosely according to the Ironman orientation instructions.",
+                    "Set the vehicle on its weight, bounce/settle suspension, then torque pivots, U-bolts, and shocks to workshop-manual/Ironman spec.",
+                    "Mark torqued fasteners and plan a re-torque after initial settling.",
+                ],
+                "tools": ["Jack stands", "Floor jack", "Torque wrench", "Breaker bar", "Pry bars", "Impact gun if available"],
+                "supplies": ["Ironman springs/shocks/bushes/hardware", "Anti-seize", "Threadlocker only where specified", "Torque paint"],
+                "hold_point": "Do not final-torque spring eye/shackle bushes while the axle is hanging.",
+                "image_tokens": ["suspension", "leaf", "hanger", "u-bolt", "shock"],
+            },
+            {
+                "title": "Close Alignment And Road Validation Gate",
+                "priority": "P0",
+                "remaining": "after body is on",
+                "instruction": "Alignment is deliberately after body refit, but safety checks happen immediately after install.",
+                "process_steps": [
+                    "Immediately after install, check brake hose slack, steering/linkage clearance, shock travel, U-bolt seating, and shackle movement.",
+                    "Recheck ride height after the vehicle settles and after the body is back on.",
+                    "Complete professional alignment after body refit and loaded condition are stable.",
+                    "Road-test progressively: slow steering/brake checks first, then short local drive, then re-torque inspection.",
+                    "Log any lean, vibration, pull, clunk, or brake-hose strain as a defect.",
+                ],
+                "tools": ["Torque wrench", "Alignment booking/check sheet", "Inspection light", "Camera"],
+                "supplies": ["Torque paint", "Spare split pins/clips if used", "Replacement brake hose/clip if stretch is found"],
+                "hold_point": "Road validation cannot close until alignment, re-torque, and clearance checks are complete.",
+                "image_tokens": ["suspension", "alignment", "shock", "leaf", "steering"],
+            },
+        ],
+    },
+    "interior_weatherproofing": {
+        "title": "Interior Weatherproofing",
+        "summary": "Dry shell confirmation, sealing order, dampening/trim stack, and cabin weatherproof gate.",
+        "default_tools": ["Scraper", "Wire brush", "Seam roller", "Heat gun", "Caulking gun"],
+        "default_supplies": ["Epoxy primer", "Seam sealer", "Sound deadener", "Closed-cell foam", "Bed/floor lining"],
+        "subtasks": [
+            {
+                "title": "Confirm Floor And Shell Are Dry And Sealed",
+                "priority": "P0",
+                "remaining": "blocked by body closure",
+                "instruction": "No insulation or trim goes over damp, rusty, or unsealed metal.",
+                "process_steps": [
+                    "Inspect floor, firewall, roof/gutters, window channels, and drain paths after body repair.",
+                    "Confirm primer, seam sealer, and topcoat/liner have cured as required.",
+                    "Water-test likely leak paths only after coatings are ready for exposure.",
+                    "Dry fully and photograph any leak, pinhole, or unsealed seam.",
+                    "Close body defects before installing deadener or trim.",
+                ],
+                "tools": ["Inspection light", "Moisture check by touch/cloth", "Camera", "Air blower"],
+                "supplies": ["Clean rags", "Masking tape", "Leak marking tags"],
+                "hold_point": "Weatherproofing remains blocked until the body shell is sealed and dry.",
+                "image_tokens": ["floor", "firewall", "gutter", "rust", "cabin"],
+            },
+            {
+                "title": "Apply Weatherproofing Layer Order",
+                "priority": "P0",
+                "remaining": "after primer/topcoat cure",
+                "instruction": "Use the correct order so water cannot be trapped under finish materials.",
+                "process_steps": [
+                    "Clean and solvent-wipe only after coatings are cured and dry.",
+                    "Apply seam sealer where specified, then allow cure.",
+                    "Apply bed/floor lining or topcoat where planned.",
+                    "Keep drains and bolt holes open; mask threads and captive nuts.",
+                    "Photograph layer completion before sound deadening hides it.",
+                ],
+                "tools": ["Caulking gun", "Seam spreader", "Roller/brush", "Masking tools"],
+                "supplies": ["Seam sealer", "Bed/floor lining", "Masking tape", "Solvent wipes"],
+                "hold_point": "Sound deadener starts only after sealing and lining layers are finished and cured.",
+                "image_tokens": ["sealer", "bed", "floor", "interior", "weatherproof"],
+            },
+            {
+                "title": "Install Dampening And Trim Stack",
+                "priority": "P1",
+                "remaining": "after leak gate",
+                "instruction": "Install noise and trim materials without blocking service access or drains.",
+                "process_steps": [
+                    "Apply sound deadener only to clean, dry, cured surfaces.",
+                    "Roll each sheet firmly and avoid bridging over seams or water traps.",
+                    "Use closed-cell foam where moisture resistance is needed; avoid absorbent foam on floors.",
+                    "Keep seat, belt, drain, and access holes open.",
+                    "Trial-fit carpet/vinyl/trim before adhesive finalization.",
+                ],
+                "tools": ["Seam roller", "Utility knife", "Heat gun", "Trim tools"],
+                "supplies": ["Sound deadener", "Closed-cell foam", "Carpet/vinyl", "Adhesive suitable for automotive trim"],
+                "hold_point": "No absorbent material is installed where future leaks could trap moisture.",
+                "image_tokens": ["interior", "floor", "trim", "weatherproof", "cabin"],
+            },
+            {
+                "title": "Close Cabin Weatherproof Gate",
+                "priority": "P1",
+                "remaining": "before final trim signoff",
+                "instruction": "Document finished cabin condition before seats, belts, and trim obscure the work.",
+                "process_steps": [
+                    "Photograph finished floor, firewall, rear cargo area, and seams.",
+                    "Confirm drains, seat/belt mounts, wiring grommets, and inspection points remain accessible.",
+                    "Check for adhesive squeeze-out, loose edges, blocked holes, or sharp trim edges.",
+                    "Record residual leak risks and later checks after rain/wash exposure.",
+                    "Mark cabin ready for final assembly only after defects close.",
+                ],
+                "tools": ["Camera", "Inspection light", "Trim tools"],
+                "supplies": ["Touch-up adhesive", "Edge tape", "Replacement clips"],
+                "hold_point": "Final trim waits until sealing evidence and access points are confirmed.",
+                "image_tokens": ["interior", "cabin", "floor", "trim", "weatherproof"],
+            },
+        ],
+    },
+    "final_assembly_validation": {
+        "title": "Final Assembly And Validation",
+        "summary": "Punch-list creation, controlled reassembly, full function checks, and road validation closeout.",
+        "default_tools": ["Torque wrench", "Multimeter", "Inspection light", "Camera", "Checklists"],
+        "default_supplies": ["Class-marked fasteners", "Anti-seize", "Threadlocker", "Fluids", "Labels"],
+        "subtasks": [
+            {
+                "title": "Build Full Punch-List",
+                "priority": "P0",
+                "remaining": "before reassembly starts",
+                "instruction": "Collect all open defects and dependencies before parts go back on.",
+                "process_steps": [
+                    "Export open workstream steps, issue jobs, and unresolved procurement rows.",
+                    "Sort by dependency: body/chassis, mechanical, electrical, brake, suspension, interior, trim.",
+                    "Flag safety blockers and access blockers separately.",
+                    "Assign each item an owner, required part/tool, and closeout evidence requirement.",
+                    "Freeze what is deferred so it does not block baseline completion later.",
+                ],
+                "tools": ["Dashboard checklist", "Camera", "Marker"],
+                "supplies": ["Labels", "Fastener trays", "Defect tags"],
+                "hold_point": "Reassembly starts only with a visible punch-list and known blockers.",
+                "image_tokens": ["overview", "validation", "body", "engine", "frame"],
+            },
+            {
+                "title": "Run Controlled Reassembly",
+                "priority": "P0",
+                "remaining": "dependency order",
+                "instruction": "Reassemble in a sequence that preserves access for torque, wiring, fluids, and defect checks.",
+                "process_steps": [
+                    "Start with access-critical chassis/body interfaces and protected routing.",
+                    "Install components loosely where alignment is still being set.",
+                    "Use new class-marked hardware where structural fasteners were scoped for replacement.",
+                    "Torque to workshop-manual/spec sheet values and mark completed fasteners.",
+                    "Photograph hidden interfaces before they are covered.",
+                ],
+                "tools": ["Torque wrench", "Socket/spanner set", "Alignment pins", "Camera"],
+                "supplies": ["Fastener kits", "Anti-seize", "Threadlocker where specified", "Torque paint"],
+                "hold_point": "Covered areas need photo and torque signoff before the next layer goes on.",
+                "image_tokens": ["assembly", "body", "chassis", "mount", "engine"],
+            },
+            {
+                "title": "Execute Full Functional Checks",
+                "priority": "P0",
+                "remaining": "before road test",
+                "instruction": "Validate systems statically before the vehicle moves under its own power.",
+                "process_steps": [
+                    "Check lights, horn, wipers, gauges, charging, start, fuel stop/security, and accessories.",
+                    "Check engine fluids, cooling cycle, leaks, throttle return, clutch/gear selection, and idle behavior.",
+                    "Check brake pedal, parking brake, steering lock-to-lock, suspension clearance, and wheel torque.",
+                    "Check doors, latches, seats, belts, glass, and weather seals.",
+                    "Record failures as punch-list items and retest after correction.",
+                ],
+                "tools": ["Multimeter", "Test lamp", "Torque wrench", "Inspection light", "Fluid pressure/bleed tools"],
+                "supplies": ["Spare fuses", "Fluids", "Cleaner/rags", "Labels"],
+                "hold_point": "Road test is blocked by any brake, steering, fuel leak, cooling, charging, or wheel-fastener fault.",
+                "image_tokens": ["validation", "engine", "wiring", "brake", "steering"],
+            },
+            {
+                "title": "Close Road-Validation Gate",
+                "priority": "P0",
+                "remaining": "after controlled road checks",
+                "instruction": "Use staged road checks and reinspections before declaring baseline complete.",
+                "process_steps": [
+                    "Start with static and yard-speed brake/steering checks.",
+                    "Run a short local drive and listen for clunks, vibration, pull, heat, smells, or fluid leaks.",
+                    "Recheck wheel torque, suspension fasteners, brake leaks, fluid levels, and electrical charging.",
+                    "Complete alignment confirmation and suspension re-torque where required.",
+                    "Log residual defects and only close baseline when safety-critical items are clear.",
+                ],
+                "tools": ["Torque wrench", "Inspection light", "Road-test checklist", "Camera"],
+                "supplies": ["Fluid top-ups", "Torque paint", "Spare fuses", "Defect tags"],
+                "hold_point": "Baseline is complete only after road check and post-road inspection are recorded.",
+                "image_tokens": ["validation", "road", "suspension", "brake", "engine"],
+            },
+        ],
+    },
+}
+
+SUBTASK_IMAGE_STOPWORDS: set[str] = {
+    "and",
+    "the",
+    "for",
+    "with",
+    "from",
+    "this",
+    "that",
+    "before",
+    "after",
+    "where",
+    "each",
+    "until",
+    "only",
+    "work",
+    "tool",
+    "tools",
+    "supply",
+    "supplies",
+    "process",
+    "check",
+    "checks",
+    "close",
+    "gate",
 }
 
 SUPPLY_STATUS_ORDER: tuple[str, ...] = ("previously", "in_process", "still_required")
@@ -797,6 +1862,82 @@ def image_payload(row: dict[str, str], matched_tokens: list[str]) -> dict[str, A
     }
 
 
+def rows_for_media_ids(photo_rows: list[dict[str, str]], media_ids: tuple[str, ...]) -> list[dict[str, str]]:
+    rows_by_media_id = {
+        clean(row.get("media_id")): row
+        for row in photo_rows
+        if is_photo_row(row) and clean(row.get("media_id"))
+    }
+    return [rows_by_media_id[media_id] for media_id in media_ids if media_id in rows_by_media_id]
+
+
+def photo_rows_by_media_id(photo_rows: list[dict[str, str]]) -> dict[str, dict[str, str]]:
+    rows_by_id: dict[str, dict[str, str]] = {}
+    for row in photo_rows:
+        if not is_photo_row(row):
+            continue
+        media_id = clean(row.get("media_id"))
+        file_stem = Path(clean(row.get("file_name"))).stem
+        if media_id:
+            rows_by_id[media_id] = row
+        if file_stem:
+            rows_by_id[file_stem] = row
+    return rows_by_id
+
+
+def build_workstream_requirements(
+    requirement_rows: list[dict[str, str]],
+    photo_rows: list[dict[str, str]],
+) -> list[dict[str, Any]]:
+    rows_by_id = photo_rows_by_media_id(photo_rows)
+    requirements: list[dict[str, Any]] = []
+    for row in requirement_rows:
+        evidence_ids = split_pipe(row.get("photo_evidence", ""))
+        evidence_images = [
+            image_payload(rows_by_id[media_id], [])
+            for media_id in evidence_ids
+            if media_id in rows_by_id
+        ]
+        requirement_id = clean(row.get("requirement_id")) or clean(row.get("pipe_id")) or clean(row.get("part_id"))
+        requirement_name = (
+            clean(row.get("requirement_name"))
+            or clean(row.get("pipe_or_line"))
+            or clean(row.get("part_name"))
+        )
+        requirements.append(
+            {
+                "requirement_id": requirement_id,
+                "requirement_name": requirement_name,
+                "pipe_id": clean(row.get("pipe_id")),
+                "vehicle_location": clean(row.get("vehicle_location")),
+                "pipe_or_line": clean(row.get("pipe_or_line")),
+                "replace_scope": clean(row.get("replace_scope")),
+                "quantity": clean(row.get("quantity")) or clean(row.get("qty")),
+                "photo_evidence": evidence_ids,
+                "photo_status": clean(row.get("photo_status")),
+                "spec_status": clean(row.get("spec_status")),
+                "acquisition_status": clean(row.get("acquisition_status")),
+                "installation_status": clean(row.get("installation_status")),
+                "current_action": clean(row.get("current_action")),
+                "exact_recreation_spec": clean(row.get("exact_recreation_spec")),
+                "material_spec": clean(row.get("material_spec")),
+                "critical_measurements": clean(row.get("critical_measurements")),
+                "fit_and_test": clean(row.get("fit_and_test")),
+                "source_ref": clean(row.get("source_ref")),
+                "notes": clean(row.get("notes")),
+                "evidence_images": dedupe_payload_images(evidence_images),
+            }
+        )
+    return requirements
+
+
+def build_replacement_pipe_requirements(
+    requirement_rows: list[dict[str, str]],
+    photo_rows: list[dict[str, str]],
+) -> list[dict[str, Any]]:
+    return build_workstream_requirements(requirement_rows, photo_rows)
+
+
 def build_procurement_evidence_images(photo_rows: list[dict[str, str]], max_images: int = 64) -> list[dict[str, Any]]:
     candidates = [
         row
@@ -1287,6 +2428,52 @@ def build_workstream_evidence_sets(
             paint_whatsapp_rows,
         )
 
+    if workstream_id == "replacement_pipes":
+        all_pipe_rows = rows_for_media_ids(photo_rows, REPLACEMENT_PIPE_CURATED_MEDIA_IDS)
+        made_to_order_rows = rows_for_media_ids(photo_rows, REPLACEMENT_PIPE_MADE_TO_ORDER_MEDIA_IDS)
+        installed_location_rows = rows_for_media_ids(photo_rows, REPLACEMENT_PIPE_INSTALLED_LOCATION_MEDIA_IDS)
+        sample_sorting_rows = rows_for_media_ids(photo_rows, REPLACEMENT_PIPE_SAMPLE_SORTING_MEDIA_IDS)
+
+        primary_images = dedupe_payload_images(
+            [image_payload(row, row_token_matches(row, reference_tokens)) for row in all_pipe_rows]
+        )
+        evidence_sets = [
+            {
+                "key": "curated_pipe_photos",
+                "title": "Curated Pipe Photos",
+                "description": "Only photos that show replacement-pipe locations or the made-to-order pipe sample; body rubbers and generic mechanical images are intentionally excluded.",
+                "images": primary_images,
+            },
+            {
+                "key": "made_to_order_coolant_pipe",
+                "title": "Made-To-Order Coolant Pipe Sample",
+                "description": "Selected May 2 photos for recreating the formed metal coolant/radiator pipe from the physical sample.",
+                "images": dedupe_payload_images(
+                    [image_payload(row, row_token_matches(row, reference_tokens)) for row in made_to_order_rows]
+                ),
+            },
+            {
+                "key": "installed_pipe_locations",
+                "title": "Installed Pipe Locations",
+                "description": "Current vehicle locations with visible hoses, hard lines, or hydraulic line routing that need measurement close-ups.",
+                "images": dedupe_payload_images(
+                    [image_payload(row, row_token_matches(row, reference_tokens)) for row in installed_location_rows]
+                ),
+            },
+            {
+                "key": "sample_sorting_photos",
+                "title": "Loose Pipe Sample Sorting",
+                "description": "Loose pipe/hose sample evidence that must be assigned to a vehicle location and measured before acquisition or fabrication.",
+                "images": dedupe_payload_images(
+                    [image_payload(row, row_token_matches(row, reference_tokens)) for row in sample_sorting_rows]
+                ),
+            },
+        ]
+        return {
+            "primary_images": primary_images,
+            "evidence_sets": evidence_sets,
+        }
+
     profile = WORKSTREAM_IMAGE_PROFILES.get(workstream_id, DEFAULT_IMAGE_PROFILE)
     stripdown_paint_owned_media_ids: set[str] = set()
     if workstream_id == "stripdown_cataloguing":
@@ -1422,6 +2609,72 @@ def build_workstream_evidence_sets(
         },
     ]
 
+    if workstream_id == "chassis_fixing":
+        may1_images = dedupe_payload_images(
+            [image_payload(row, row_token_matches(row, reference_tokens)) for row in may1_chassis_status_rows(photo_rows)]
+        )
+        if may1_images:
+            evidence_sets.insert(
+                0,
+                {
+                    "key": "may1_chassis_status",
+                    "title": "May 1 Chassis Status - All Images",
+                    "description": "Complete May 1 chassis fixing set after wire brushing; use this before primer decisions.",
+                    "images": may1_images,
+                },
+            )
+
+    if workstream_id == "chassis_rubbers":
+        rubber_recreation_images = dedupe_payload_images(
+            [
+                image_payload(row, row_token_matches(row, reference_tokens))
+                for row in rubber_recreation_candidate_rows(photo_rows)
+            ]
+        )
+        if rubber_recreation_images:
+            evidence_sets.insert(
+                0,
+                {
+                    "key": "rubber_recreation_candidates_20260502",
+                    "title": "Rubber Recreation Candidate Photos - May 2",
+                    "description": "Starter review collection for recreating body-mount/front-support rubbers, sleeves, shims, and sample stacks.",
+                    "images": rubber_recreation_images,
+                },
+            )
+
+    if workstream_id == "brake_system":
+        rear_brake_images = dedupe_payload_images(
+            [
+                image_payload(row, row_token_matches(row, reference_tokens))
+                for row in rows_for_media_ids(photo_rows, REAR_BRAKE_CABLE_LINE_MEDIA_IDS)
+            ]
+        )
+        if rear_brake_images:
+            evidence_sets.insert(
+                0,
+                {
+                    "key": "rear_brake_cables_lines",
+                    "title": "Rear Brake Cables And Lines",
+                    "description": "Rear axle evidence for drum brakes, parking-brake cable/linkage, axle hard lines, center flex hose, and retaining clips.",
+                    "images": rear_brake_images,
+                },
+            )
+
+    if workstream_id == "mechanical_baseline":
+        may1_engine_images = dedupe_payload_images(
+            [image_payload(row, row_token_matches(row, reference_tokens)) for row in may1_engine_cleaning_rows(photo_rows)]
+        )
+        if may1_engine_images:
+            evidence_sets.insert(
+                0,
+                {
+                    "key": "may1_engine_cleaning",
+                    "title": "May 1 Engine And Powertrain Cleaning Baseline",
+                    "description": "Complete May 1 engine/gearbox/transfer cleaning baseline before degreasing and leak inspection.",
+                    "images": may1_engine_images,
+                },
+            )
+
     return {
         "primary_images": primary_images,
         "evidence_sets": evidence_sets,
@@ -1532,9 +2785,22 @@ def split_legacy_steering_brakes_workstream(
     category_key = norm(category)
     text_blob = " ".join([category_key, norm(item), norm(notes)])
 
+    def text_contains_term(term: str) -> bool:
+        term_key = norm(term)
+        if not term_key:
+            return False
+        variants = {term_key, term_key.replace("_", " "), term_key.replace("-", " ")}
+        for variant in variants:
+            if " " in variant:
+                if variant in text_blob.replace("_", " ").replace("-", " "):
+                    return True
+            elif re.search(rf"(?<![a-z0-9]){re.escape(variant)}(?![a-z0-9])", text_blob):
+                return True
+        return False
+
     if workstream_key == "body_chassis":
         if category_key == "body_mounts" or any(
-            token in text_blob
+            text_contains_term(token)
             for token in ("body mount", "body_mount", "rubber kit", "shim", "sleeve", "isolator")
         ):
             return "chassis_rubbers"
@@ -1543,19 +2809,19 @@ def split_legacy_steering_brakes_workstream(
         return workstream_value
 
     if category_key == "brakes" or any(
-        token in text_blob
+        text_contains_term(token)
         for token in ("brake", "disc", "drum", "caliper", "master", "cylinder", "hydraulic", "bleed")
     ):
         return "brake_system"
 
     if category_key == "suspension" or any(
-        token in text_blob
+        text_contains_term(token)
         for token in ("suspension", "leaf", "shackle", "shock", "spring", "bush", "u-bolt", "ubolt", "ironman", "ome")
     ):
         return "suspension_upgrade"
 
     if category_key == "steering" or any(
-        token in text_blob
+        text_contains_term(token)
         for token in ("steering", "eps", "vitz", "column", "u-joint", "ujoint", "assist", "power steering")
     ):
         return "eps_vitz_upgrade"
@@ -1856,6 +3122,7 @@ def infer_inventory_group(
 
     mechanical_workstreams = {
         "mechanical_baseline",
+        "replacement_pipes",
         "chassis_rubbers",
         "brake_system",
         "eps_vitz_upgrade",
@@ -2256,12 +3523,15 @@ CHASSIS_FIXING_SPECIFIC_COMPONENTS: set[str] = {
     "engine_bay_chassis_interface",
     "frame_and_mount_points",
     "frame_floor_underside_and_lines",
+    "frame_rail_body_mount_and_crossmember_detail",
     "frame_rail_body_mount_and_hard_line_detail",
     "front_frame_horns_bumper_and_radiator_support",
+    "front_frame_horns_bumper_and_steering_area",
     "full_chassis_frame_overview",
     "rear_axle_and_leaf_springs",
     "rear_axle_spring_hanger_and_crossmember",
     "rear_frame_crossmember_and_mounts",
+    "rear_mid_frame_rail_and_hard_line_detail",
     "rear_shock_and_crossmember_view",
     "steering_and_suspension_linkages",
     "suspension_or_linkage_mount",
@@ -2288,8 +3558,11 @@ EPS_IMAGE_SIGNAL_TOKENS: tuple[str, ...] = (
     "vitz",
     "electric power steering",
     "assist",
+    "steering",
     "steering column",
+    "steering_and_suspension_linkages",
     "column",
+    "linkage",
     "u-joint",
     "ujoint",
     "adapter",
@@ -2369,6 +3642,578 @@ def is_row_workstream_match(photo_row: dict[str, str], workstream_id: str) -> bo
     return component_group in profile["component_groups"] or stage in profile["stages"]
 
 
+def may1_chassis_status_rows(photo_rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    return sorted(
+        [
+            row
+            for row in photo_rows
+            if is_photo_row(row)
+            and clean(row.get("captured_date")) == "2026-05-01"
+            and norm(row.get("component_group")) == "chassis_underside"
+            and norm(row.get("stage")) == "chassis_fixing"
+        ],
+        key=lambda row: (
+            clean(row.get("specific_component")),
+            clean(row.get("captured_time")),
+            clean(row.get("file_name")),
+        ),
+    )
+
+
+def may1_engine_cleaning_rows(photo_rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    return sorted(
+        [
+            row
+            for row in photo_rows
+            if is_photo_row(row)
+            and clean(row.get("captured_date")) == "2026-05-01"
+            and norm(row.get("component_group")) == "engine_bay"
+            and norm(row.get("stage")) == "mechanical_cleaning"
+        ],
+        key=lambda row: (
+            clean(row.get("captured_time")),
+            clean(row.get("file_name")),
+        ),
+    )
+
+
+def rubber_recreation_candidate_rows(photo_rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    return sorted(
+        [
+            row
+            for row in photo_rows
+            if is_photo_row(row)
+            and norm(row.get("specific_component")) == "rubber_parts_recreation_samples"
+            and clean(row.get("captured_date")) == "2026-05-02"
+        ],
+        key=lambda row: (
+            clean(row.get("captured_time")),
+            clean(row.get("file_name")),
+        ),
+    )
+
+
+def build_chassis_prime_readiness_panel(photo_rows: list[dict[str, str]]) -> dict[str, Any]:
+    chassis_rows = may1_chassis_status_rows(photo_rows)
+    counts_by_component = Counter(clean(row.get("specific_component")) for row in chassis_rows)
+    return {
+        "key": "chassis_prime_readiness",
+        "title": "Before Primer",
+        "summary": "Chassis is not ready for primer. May 1 evidence shows large exterior rail faces partly brushed, but edges, brackets, hard-line clips, mounts, and hidden faces still need detail cleanup and signoff.",
+        "metrics": [
+            {"label": "May 1 chassis images", "value": str(len(chassis_rows))},
+            {"label": "Primer status", "value": "hold"},
+            {"label": "Main blocker", "value": "detail prep"},
+        ],
+        "zones": [
+            {
+                "area": "Visible flat exterior rail faces",
+                "remaining": "20-30%",
+                "status": "in_progress",
+                "work_required": "Feather chipped coating, remove loose rust and dust, leave hard-bonded paint in place where sound.",
+                "evidence_count": str(sum(counts_by_component[name] for name in ("frame_rail_body_mount_and_crossmember_detail", "rear_mid_frame_rail_and_hard_line_detail"))),
+            },
+            {
+                "area": "Top flanges, lower edges, holes, and seams",
+                "remaining": "50-60%",
+                "status": "pending_detail_brush",
+                "work_required": "Wire-cup and hand-brush rail edges, holes, seam lips, and pitted edges until no loose corrosion remains.",
+                "evidence_count": str(len(chassis_rows)),
+            },
+            {
+                "area": "Brackets, weld toes, spring/shackle hangers, body mounts",
+                "remaining": "50-60%",
+                "status": "pending_detail_brush",
+                "work_required": "Clean bracket roots and weld toes; inspect spring hangers, shackle mounts, body-mount pads, captive threads, and crossmember junctions.",
+                "evidence_count": str(sum(counts_by_component[name] for name in ("rear_axle_spring_hanger_and_crossmember", "frame_rail_body_mount_and_crossmember_detail", "front_frame_horns_bumper_and_steering_area"))),
+            },
+            {
+                "area": "Behind hard lines, clips, wiring, and steering/linkage obstructions",
+                "remaining": "60-70%",
+                "status": "access_limited",
+                "work_required": "Release clips or move lines only where safe, then inspect under contact points before coating.",
+                "evidence_count": str(counts_by_component["rear_mid_frame_rail_and_hard_line_detail"] + counts_by_component["front_frame_horns_bumper_and_steering_area"]),
+            },
+            {
+                "area": "Front frame horns, bumper/winch brackets, steering-box area",
+                "remaining": "50-60%",
+                "status": "pending_inspection",
+                "work_required": "Finish brushing and crack-check steering-box mount, front horns, bumper/winch brackets, and nearby crossmember joints.",
+                "evidence_count": str(counts_by_component["front_frame_horns_bumper_and_steering_area"]),
+            },
+            {
+                "area": "Rear axle, diff housing, leaf clamps, U-bolt zones",
+                "remaining": "40-50% if coated now",
+                "status": "scope_decision",
+                "work_required": "Decide whether these are included in this coating cycle; if yes, brush and degrease them before primer/topcoat.",
+                "evidence_count": str(counts_by_component["rear_axle_spring_hanger_and_crossmember"]),
+            },
+        ],
+        "steps": [
+            {
+                "label": "Finish detail brushing",
+                "status": "in_progress",
+                "detail": "Complete edges, brackets, weld toes, body mounts, spring hangers, crossmember ends, steering-box area, hard-line clips, and holes.",
+            },
+            {
+                "label": "Degrease and controlled rinse",
+                "status": "queued",
+                "detail": "Use DISS/APC for general grime and GREZ OFF for oily deposits; rinse carefully and avoid driving water into bearings, electrics, breathers, or open line ends.",
+            },
+            {
+                "label": "Dry and inspect",
+                "status": "queued",
+                "detail": "Blow dry and leave fully dry; inspect with bright light and probe suspect pitting, cracks, soft metal, ovalized holes, and clip contact points.",
+            },
+            {
+                "label": "Resolve defects before coating",
+                "status": "queued",
+                "detail": "Repair or explicitly approve steering-box mount, spring hangers, body mounts, crossmembers, and hard-line brackets before primer.",
+            },
+            {
+                "label": "Treat only remaining rust",
+                "status": "queued",
+                "detail": "Use Evapo-Rust where practical or compatible converter only in remaining pits/seams; remove residue and do not convert clean steel unnecessarily.",
+            },
+            {
+                "label": "Solvent wipe, epoxy prime, topcoat, cavity wax",
+                "status": "queued",
+                "detail": "Wax-and-grease wipe only after dry/cure; apply compatible 2K epoxy primer, then topcoat/chassis black, then cavity wax last.",
+            },
+        ],
+        "materials": {
+            "available": [
+                "Evapo-Rust 5L",
+                "DISS/APC cleaner 5L",
+                "GREZ OFF HD degreaser",
+                "Wadfow WRS1550 pressure sprayer ordered/pending delivery",
+            ],
+            "missing": [
+                "Wax and grease remover",
+                "2K epoxy primer system",
+                "Compatible chassis topcoat/chassis black",
+                "Seam sealer where lap joints need sealing",
+                "Cavity wax with wand/nozzle",
+                "Extra brushes, strip/flap discs, masking plugs/tape, solvent wipes",
+            ],
+        },
+    }
+
+
+def rows_by_specific_component(rows: list[dict[str, str]]) -> dict[str, list[dict[str, str]]]:
+    grouped: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in rows:
+        grouped[clean(row.get("specific_component"))].append(row)
+    return grouped
+
+
+def image_payloads_for_components(
+    rows_by_component: dict[str, list[dict[str, str]]],
+    components: tuple[str, ...],
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, str]] = []
+    for component in components:
+        rows.extend(rows_by_component.get(component, []))
+    rows = sorted(
+        rows,
+        key=lambda row: (
+            clean(row.get("captured_time")),
+            clean(row.get("file_name")),
+        ),
+    )
+    return dedupe_payload_images([image_payload(row, []) for row in rows])
+
+
+def slugify_task_id(value: str) -> str:
+    slug = re.sub(r"[^a-z0-9]+", "_", norm(value)).strip("_")
+    return slug or "subtask"
+
+
+def unique_text_items(items: list[str]) -> list[str]:
+    output: list[str] = []
+    seen: set[str] = set()
+    for item in items:
+        item_clean = clean(item)
+        if not item_clean:
+            continue
+        item_key = norm(item_clean)
+        if item_key in seen:
+            continue
+        seen.add(item_key)
+        output.append(item_clean)
+    return output
+
+
+def subtask_search_tokens(subtask: dict[str, Any]) -> set[str]:
+    text_parts: list[str] = []
+    for key in ("id", "title", "instruction", "hold_point", "remaining"):
+        text_parts.append(clean(subtask.get(key)))
+    for key in ("process_steps", "tools", "supplies", "parts", "image_tokens"):
+        value = subtask.get(key)
+        if isinstance(value, list):
+            text_parts.extend(clean(item) for item in value)
+    text = " ".join(text_parts)
+    tokens = {
+        token
+        for token in re.findall(r"[a-z0-9]+", norm(text))
+        if len(token) >= 4 and token not in SUBTASK_IMAGE_STOPWORDS
+    }
+    return tokens
+
+
+def payload_blob(image: dict[str, Any]) -> str:
+    return " ".join(
+        [
+            norm(image.get("caption")),
+            norm(image.get("path")),
+            norm(image.get("component_group")),
+            norm(image.get("specific_component")),
+            norm(image.get("stage")),
+            norm(image.get("media_id")),
+        ]
+    )
+
+
+def select_subtask_images_from_payloads(
+    images: list[dict[str, Any]],
+    tokens: set[str],
+    *,
+    max_images: int = 6,
+) -> list[dict[str, Any]]:
+    scored: list[tuple[int, str, str, dict[str, Any]]] = []
+    for image in images:
+        blob = payload_blob(image)
+        if not blob:
+            continue
+        score = 0
+        for token in tokens:
+            if token in blob:
+                score += 3 if token in norm(image.get("specific_component")) else 1
+        if score <= 0:
+            continue
+        scored.append(
+            (
+                score,
+                clean(image.get("captured_date")),
+                clean(image.get("captured_time")),
+                image,
+            )
+        )
+
+    scored.sort(key=lambda item: (item[0], item[1], item[2]), reverse=True)
+    selected = [item[3] for item in scored[:max_images]]
+    if not selected:
+        selected = images[:max_images]
+    return dedupe_payload_images(selected)
+
+
+def fallback_workstream_images_from_photo_rows(
+    workstream_id: str,
+    photo_rows: list[dict[str, str]],
+    *,
+    max_images: int = 36,
+) -> list[dict[str, Any]]:
+    profile = WORKSTREAM_IMAGE_PROFILES.get(workstream_id, DEFAULT_IMAGE_PROFILE)
+    candidates: list[tuple[int, str, str, dict[str, str]]] = []
+    for row in photo_rows:
+        if not is_photo_row(row):
+            continue
+        text_blob = row_text_blob(row)
+        if workstream_row_is_excluded(workstream_id, row, text_blob):
+            continue
+        component_match = norm(row.get("component_group")) in profile["component_groups"]
+        stage_match = norm(row.get("stage")) in profile["stages"]
+        keyword_hits = sum(1 for keyword in profile["keywords"] if keyword in text_blob)
+        if not component_match and not stage_match and keyword_hits <= 0:
+            continue
+        score = (12 if component_match else 0) + (8 if stage_match else 0) + min(keyword_hits, 5) * 3
+        candidates.append(
+            (
+                score,
+                clean(row.get("captured_date")),
+                clean(row.get("captured_time")),
+                row,
+            )
+        )
+
+    candidates.sort(key=lambda item: (item[0], item[1], item[2]), reverse=True)
+    return dedupe_payload_images([image_payload(row, []) for _, _, _, row in candidates[:max_images]])
+
+
+def registered_item_lines_for_subtask(
+    part_rows: list[dict[str, str]],
+    tokens: set[str],
+    *,
+    limit: int = 6,
+) -> list[str]:
+    if not part_rows or not tokens:
+        return []
+    scored: list[tuple[int, str, str]] = []
+    for row in part_rows:
+        item = clean(row.get("item"))
+        if not item:
+            continue
+        blob = " ".join(
+            [
+                norm(item),
+                norm(row.get("category")),
+                norm(row.get("notes")),
+                norm(row.get("evidence_ref")),
+                norm(row.get("procurement_stage")),
+                norm(row.get("delivery_status")),
+            ]
+        )
+        score = sum(1 for token in tokens if token in blob)
+        if score <= 0:
+            continue
+        status = clean(row.get("procurement_stage")) or clean(row.get("status")) or "tracked"
+        delivery = clean(row.get("delivery_status"))
+        amount_status = clean(row.get("amount_status"))
+        detail_bits = [status]
+        if delivery:
+            detail_bits.append(f"delivery {delivery}")
+        if amount_status:
+            detail_bits.append(f"amount {amount_status}")
+        scored.append((score, item, f"{item} ({'; '.join(detail_bits)})"))
+    scored.sort(key=lambda item: (-item[0], item[1]))
+    return [line for _, _, line in scored[:limit]]
+
+
+def build_standard_workstream_subtask_group(
+    workstream_id: str,
+    workstream_row: dict[str, str],
+    evidence_images: list[dict[str, Any]],
+    part_rows_for_workstream: list[dict[str, str]],
+) -> dict[str, Any] | None:
+    guide = WORKSTREAM_SUBTASK_GUIDES.get(workstream_id)
+    if not guide:
+        return None
+
+    subtasks: list[dict[str, Any]] = []
+    current_status = clean(workstream_row.get("current_status"))
+    default_tools = list(guide.get("default_tools") or [])
+    default_supplies = list(guide.get("default_supplies") or [])
+    for index, source_subtask in enumerate(guide.get("subtasks") or []):
+        subtask = dict(source_subtask)
+        subtask_id = clean(subtask.get("id")) or slugify_task_id(clean(subtask.get("title")))
+        subtask["id"] = subtask_id
+        subtask["status"] = clean(subtask.get("status")) or template_step_status(current_status, index)
+        subtask["priority"] = clean(subtask.get("priority")) or clean(workstream_row.get("priority")) or "P1"
+        subtask["process_steps"] = list(subtask.get("process_steps") or [])
+        subtask_tools = list(subtask.get("tools") or []) or default_tools
+        subtask_supplies = list(subtask.get("supplies") or []) or default_supplies
+        subtask["tools"] = unique_text_items(subtask_tools)
+        subtask["supplies"] = unique_text_items(subtask_supplies)
+        subtask["parts"] = unique_text_items(list(subtask.get("parts") or []))
+        tokens = subtask_search_tokens(subtask)
+        subtask["images"] = select_subtask_images_from_payloads(evidence_images, tokens)
+        subtask["registered_items"] = registered_item_lines_for_subtask(part_rows_for_workstream, tokens)
+        subtasks.append(subtask)
+
+    return {
+        "key": slugify_task_id(clean(guide.get("title")) or workstream_id),
+        "title": clean(guide.get("title")) or "Operation Sub-Tasks",
+        "summary": clean(guide.get("summary")),
+        "subtasks": subtasks,
+    }
+
+
+def build_workstream_subtask_groups(
+    workstream_id: str,
+    workstream_row: dict[str, str],
+    evidence_images: list[dict[str, Any]],
+    photo_rows: list[dict[str, str]],
+    part_rows_for_workstream: list[dict[str, str]],
+) -> list[dict[str, Any]]:
+    if workstream_id == "chassis_fixing":
+        return [build_chassis_before_primer_subtask_group(photo_rows)]
+
+    image_pool = evidence_images or fallback_workstream_images_from_photo_rows(workstream_id, photo_rows)
+    group = build_standard_workstream_subtask_group(
+        workstream_id,
+        workstream_row,
+        image_pool,
+        part_rows_for_workstream,
+    )
+    return [group] if group else []
+
+
+def build_chassis_before_primer_subtask_group(photo_rows: list[dict[str, str]]) -> dict[str, Any]:
+    chassis_rows = may1_chassis_status_rows(photo_rows)
+    grouped = rows_by_specific_component(chassis_rows)
+    side_rail_components = ("frame_rail_body_mount_and_crossmember_detail",)
+    front_components = ("front_frame_horns_bumper_and_steering_area",)
+    rear_mid_components = ("rear_mid_frame_rail_and_hard_line_detail",)
+    rear_axle_components = ("rear_axle_spring_hanger_and_crossmember",)
+
+    subtasks = [
+        {
+            "id": "side_rails_body_mounts_crossmembers",
+            "title": "Side Rails, Body Mounts, Crossmember Detail",
+            "priority": "P0",
+            "status": "in_progress",
+            "remaining": "20-30% flats; 50-60% edges/brackets",
+            "instruction": "Feather sound paint, remove loose rust, wire-cup rail top/lower flanges, clean mount-pad perimeters, bolt holes, bracket roots, and crossmember joints.",
+            "process_steps": [
+                "Dry-brush loose dust first so the wire cup is working on metal/coating, not packed dirt.",
+                "Use wire cup on rail faces and lower lips; switch to hand brushes or small wire wheels at bracket roots and tight holes.",
+                "Feather sound paint edges without chasing every bonded coating patch to bare steel.",
+                "Probe pitted mount pads, bracket roots, and crossmember seams after brushing.",
+                "Blow out holes and seams, then take close-up signoff photos before any wet cleaning.",
+            ],
+            "tools": [
+                "Angle grinder with wire cup",
+                "Drill with small wire wheels",
+                "Hand wire brushes and picks",
+                "Inspection light",
+                "Compressed air or blower",
+            ],
+            "supplies": [
+                "Dust mask/respirator and eye protection",
+                "Rags",
+                "Masking plugs/tape for threads and holes",
+                "Rust marking pen",
+            ],
+            "hold_point": "Each body-mount pad and bracket root has a close-up signoff photo after final dry brushing; captive threads are checked before primer.",
+            "images": image_payloads_for_components(grouped, side_rail_components),
+        },
+        {
+            "id": "front_horns_steering_box_bumper",
+            "title": "Front Horns, Bumper/Winch Mounts, Steering Area",
+            "priority": "P0",
+            "status": "pending_inspection",
+            "remaining": "50-60%",
+            "instruction": "Clean steering-box mount and nearby hanger weld toes to inspection condition, then wire-cup front horns, bumper/winch brackets, bolt holes, and crossmember laps.",
+            "process_steps": [
+                "Degrease only if oil is hiding cracks; otherwise finish dry brushing before wet work.",
+                "Detail-clean steering-box mount faces, bolt holes, weld toes, and nearby hanger roots.",
+                "Clean front horn inner and outer faces, bumper/winch bracket laps, and crossmember ends.",
+                "Inspect with bright light for cracks, oval holes, bent brackets, or thin metal.",
+                "Mark any defect directly on the chassis and open/retain the issue row before coating.",
+            ],
+            "tools": [
+                "Wire cup and narrow wire wheel",
+                "Pick/probe",
+                "Inspection mirror",
+                "Bright inspection light",
+                "Socket/thread-check tools",
+            ],
+            "supplies": [
+                "DISS/APC for dirt if needed",
+                "GREZ OFF only for oily deposits",
+                "Rags",
+                "Paint marker",
+                "Thread masking plugs",
+            ],
+            "hold_point": "Steering-box mount, front hanger roots, front horn brackets, and any elongated/cracked holes are inspected and repair decisions are marked.",
+            "images": image_payloads_for_components(grouped, front_components),
+        },
+        {
+            "id": "rear_mid_rail_hard_lines",
+            "title": "Rear/Mid Rail, Hard-Line Clips, Crossmember Edges",
+            "priority": "P0",
+            "status": "access_limited",
+            "remaining": "50-70%",
+            "instruction": "Mark every hard-line clip, release or lift clips only where safe, hand-brush under/around lines, wire-cup crossmember ends and lower rail lips, then probe for thinning.",
+            "process_steps": [
+                "Photograph current hard-line routing and clip positions before moving anything.",
+                "Mark clips and only release/lift lines where it will not kink or stress them.",
+                "Hand-brush under clips and behind lines; do not force a power wheel against hard lines.",
+                "Wire-cup crossmember ends, lower rail lips, and visible bracket edges.",
+                "Probe under-clip contact points and replace/log weak clips or suspect lines.",
+                "After wet cleaning, blow dry under clips and between line/contact faces.",
+            ],
+            "tools": [
+                "Hand wire brushes",
+                "Small picks",
+                "Line/clip tools",
+                "Narrow wire wheel for open areas",
+                "Compressed air or blower",
+            ],
+            "supplies": [
+                "Rubber-lined P-clips if old clips fail",
+                "Masking labels",
+                "DISS/APC cleaner",
+                "Rags",
+                "Rust marking pen",
+            ],
+            "hold_point": "Under-clip contact areas are inspected, weak lines/clips are logged or replaced, and no wet cleaner remains trapped under clips before primer.",
+            "images": image_payloads_for_components(grouped, rear_mid_components),
+        },
+        {
+            "id": "rear_axle_spring_hangers",
+            "title": "Rear Axle, Rear Spring Hangers, Leaf Mounts",
+            "priority": "P1",
+            "status": "scope_decision",
+            "remaining": "40-50% if coated now",
+            "instruction": "Clean rear spring hanger roots enough for crack/deformation inspection; decide whether axle/diff/leaf hardware is included in this coating cycle or deferred to suspension work.",
+            "process_steps": [
+                "Brush hanger roots, shackle areas, and nearby crossmember welds enough for inspection.",
+                "Check spring/shackle holes for ovaling before the Ironman suspension install window.",
+                "Inspect axle tube, U-bolt, and leaf clamp areas for leaks or trapped scale.",
+                "Decide whether axle/spring hardware is coated now or deferred until suspension removal improves access.",
+                "If deferred, protect only the chassis-ready surfaces and document the deferred axle/spring scope.",
+            ],
+            "tools": [
+                "Wire cup",
+                "Hand brushes",
+                "Pick/probe",
+                "Inspection light",
+                "Angle finder/tape for suspension baseline if available",
+            ],
+            "supplies": [
+                "Penetrating oil for future suspension fasteners",
+                "DISS/APC cleaner",
+                "GREZ OFF only for oily axle deposits",
+                "Paint marker",
+            ],
+            "hold_point": "Rear hanger roots and shackle/spring holes are checked; no primer/topcoat is applied over active axle/brake leaks or inaccessible U-bolt areas.",
+            "images": image_payloads_for_components(grouped, rear_axle_components),
+        },
+        {
+            "id": "degrease_dry_rust_treatment_gate",
+            "title": "Degrease, Dry, Rust Treatment, Primer Gate",
+            "priority": "P0",
+            "status": "queued",
+            "remaining": "not started",
+            "instruction": "After dry brushing, apply DISS/APC broadly and GREZ OFF only on oily zones, agitate, rinse with controlled pressure, blow dry seams/holes/clips, then treat only remaining rust in pits.",
+            "process_steps": [
+                "Confirm all dry brushing, probing, and defect decisions are complete before wet cleaning.",
+                "Apply DISS/APC from bottom upward for general dirt; apply GREZ OFF only to oily deposits.",
+                "Agitate with brushes and rinse with controlled pressure, avoiding bearings, breathers, electrics, and open line ends.",
+                "Blow dry seams, clips, holes, boxed edges, and line contact areas; allow full dry time.",
+                "Use Evapo-Rust where practical or compatible converter only in remaining pits; remove residue after cure.",
+                "Wax/grease wipe, mask threads/holes, then apply the selected compatible 2K epoxy primer/topcoat/cavity-wax stack.",
+            ],
+            "tools": [
+                "Wadfow WRS1550 pressure sprayer for cleaner application",
+                "Controlled pressure rinse",
+                "Detail brushes",
+                "Compressed air or blower",
+                "Solvent-safe wipes",
+            ],
+            "supplies": [
+                "DISS/APC cleaner 5L - received",
+                "GREZ OFF HD degreaser - received",
+                "Evapo-Rust 5L - received",
+                "Wax and grease remover - still required",
+                "2K epoxy primer system - still required",
+                "Compatible chassis topcoat/chassis black - still required",
+                "Seam sealer and cavity wax - still required for final stack",
+            ],
+            "hold_point": "Chassis is fully dry, repair decisions are closed, converter residue is removed, wax/grease wipe is done, and compatible 2K epoxy primer/topcoat/cavity-wax stack is selected.",
+            "images": dedupe_payload_images([image_payload(row, []) for row in chassis_rows]),
+        },
+    ]
+
+    return {
+        "key": "before_primer",
+        "title": "Before Primer",
+        "summary": "Sub-tasks that must be completed before chassis primer. Each sub-task is backed by the May 1 photo evidence for that area.",
+        "subtasks": subtasks,
+    }
+
+
 def placeholder_image() -> dict[str, str]:
     return {
         "path": PLACEHOLDER_IMAGE_PATH,
@@ -2400,6 +4245,11 @@ def inventory_override_payload(row: dict[str, str], item: str) -> dict[str, Any]
     if not image_path:
         return None
     caption = clean(row.get("caption")) or f"{item} · Manual image override"
+    match_basis = "manual_override"
+    if any(token in notes for token in ("exact_order_evidence", "order_evidence", "order_contactsheet")):
+        match_basis = "exact_order_evidence"
+    elif any(token in notes for token in ("local_received", "local_actual", "local_project")):
+        match_basis = "local_inventory_evidence"
     return {
         "path": path_for_ui(image_path),
         "caption": caption,
@@ -2411,7 +4261,7 @@ def inventory_override_payload(row: dict[str, str], item: str) -> dict[str, Any]
         "stage": "procurement_reconciliation",
         "media_id": "",
         "matched_tokens": [clean(row.get("source_ref"))] if clean(row.get("source_ref")) else [],
-        "match_basis": "manual_override",
+        "match_basis": match_basis,
         "match_score": 999,
     }
 
@@ -2435,6 +4285,145 @@ def normalize_source_ref(value: str) -> str:
     if "#" in token:
         token = token.split("#")[-1]
     return token
+
+
+def add_local_order_image_index_key(index: dict[str, Path], key: str, path: Path) -> None:
+    normalized = clean(key).lower().strip().strip("()[]{}\"'")
+    if not normalized:
+        return
+    normalized = normalized.replace("\\", "/")
+    index.setdefault(normalized, path)
+    if normalized.startswith("photo_") and len(normalized) > 8:
+        index.setdefault(normalized.removeprefix("photo_"), path)
+    if "/photo_" in normalized:
+        index.setdefault(normalized.replace("/photo_", "/"), path)
+
+
+def local_order_image_keys(path: Path) -> set[str]:
+    try:
+        relative_path = path.relative_to(ROOT).as_posix()
+    except ValueError:
+        relative_path = path.as_posix()
+    relative_path = relative_path.lower()
+    filename = path.name.lower()
+    stem = path.stem.lower()
+    keys = {
+        relative_path,
+        relative_path.rsplit(".", 1)[0],
+        filename,
+        stem,
+        f"photo_{filename}",
+        f"photo_{stem}",
+    }
+    if relative_path.startswith("photos/"):
+        without_photos = relative_path.removeprefix("photos/")
+        keys.add(without_photos)
+        keys.add(without_photos.rsplit(".", 1)[0])
+        keys.add(f"photo_{without_photos}")
+        keys.add(f"photo_{without_photos.rsplit('.', 1)[0]}")
+    return {key for key in keys if key}
+
+
+def build_local_order_image_index() -> dict[str, Path]:
+    global LOCAL_ORDER_IMAGE_INDEX
+    if LOCAL_ORDER_IMAGE_INDEX is not None:
+        return LOCAL_ORDER_IMAGE_INDEX
+
+    index: dict[str, Path] = {}
+    for directory in LOCAL_ORDER_IMAGE_DIRS:
+        if not directory.exists():
+            continue
+        for path in sorted(directory.rglob("*")):
+            if not path.is_file() or path.suffix.lower() not in LOCAL_ORDER_IMAGE_EXTENSIONS:
+                continue
+            for key in local_order_image_keys(path):
+                add_local_order_image_index_key(index, key, path)
+    LOCAL_ORDER_IMAGE_INDEX = index
+    return index
+
+
+def local_order_image_reference_tokens(values: list[str]) -> list[str]:
+    tokens: list[str] = []
+    seen: set[str] = set()
+    for value in values:
+        text = clean(value)
+        if not text:
+            continue
+        for raw_token in re.split(r"[|,\s]+", text):
+            token = raw_token.strip().strip("()[]{}\"'")
+            if not token:
+                continue
+            token = token.split("?", 1)[0].split("#", 1)[0].replace("\\", "/").lower()
+            candidates = {token}
+            if token.endswith(tuple(LOCAL_ORDER_IMAGE_EXTENSIONS)):
+                candidates.add(token.rsplit(".", 1)[0])
+            basename = token.rsplit("/", 1)[-1]
+            if basename and basename != token:
+                candidates.add(basename)
+                candidates.add(basename.rsplit(".", 1)[0])
+            for candidate in list(candidates):
+                if candidate.startswith("photo_") and len(candidate) > 8:
+                    candidates.add(candidate.removeprefix("photo_"))
+                elif (
+                    candidate.endswith(tuple(LOCAL_ORDER_IMAGE_EXTENSIONS))
+                    or re.search(r"\d{6,}", candidate)
+                ):
+                    candidates.add(f"photo_{candidate}")
+
+            for candidate in candidates:
+                if len(candidate) < 6:
+                    continue
+                if candidate not in seen:
+                    seen.add(candidate)
+                    tokens.append(candidate)
+    tokens.sort(key=len, reverse=True)
+    return tokens
+
+
+def exact_order_image_payload(
+    path: Path,
+    *,
+    item: str,
+    vendor: str,
+    matched_token: str,
+) -> dict[str, Any]:
+    try:
+        relative_path = path.relative_to(ROOT).as_posix()
+    except ValueError:
+        relative_path = path.as_posix()
+    caption = f"{item} · exact order evidence" if item else "Exact order evidence"
+    if vendor:
+        caption = f"{caption} · {vendor}"
+    return {
+        "path": path_for_ui(relative_path),
+        "caption": caption,
+        "captured_date": "",
+        "captured_time": "",
+        "media_type": "photo",
+        "component_group": "procurement_inventory",
+        "specific_component": "exact_order_evidence",
+        "stage": "procurement_reconciliation",
+        "media_id": path.stem,
+        "matched_tokens": [matched_token],
+        "match_basis": "exact_order_evidence",
+        "match_score": 980,
+    }
+
+
+def choose_exact_order_image(
+    *,
+    item: str,
+    vendor: str,
+    evidence_ref: str,
+    notes: str,
+    source_ref: str,
+) -> dict[str, Any] | None:
+    image_index = build_local_order_image_index()
+    for token in local_order_image_reference_tokens([evidence_ref, notes, source_ref]):
+        path = image_index.get(token)
+        if path is not None:
+            return exact_order_image_payload(path, item=item, vendor=vendor, matched_token=token)
+    return None
 
 
 def selling_site_image_payload(row: dict[str, str], matched_tokens: list[str]) -> dict[str, Any]:
@@ -2777,6 +4766,16 @@ def choose_inventory_image(
         if override_payload is not None:
             return override_payload
 
+    exact_order_image = choose_exact_order_image(
+        item=item,
+        vendor=vendor,
+        evidence_ref=evidence_ref,
+        notes=notes,
+        source_ref=source_ref,
+    )
+    if exact_order_image is not None:
+        return exact_order_image
+
     selling_site_image = choose_selling_site_image(
         selling_site_manifest_rows,
         item=item,
@@ -2877,32 +4876,10 @@ def choose_inventory_image(
     if whatsapp_image is not None:
         return whatsapp_image
 
-    workstream_key = norm(workstream)
-    default_image = workstream_default_images.get(workstream_key)
-    if default_image is not None:
-        selected = dict(default_image)
-        selected["caption"] = f"{item} · related {humanize_token(workstream_key)} evidence"
-        selected["match_basis"] = "workstream_fallback"
-        selected["match_score"] = 0
-        return selected
-
-    fallback_row: dict[str, str] | None = None
-    for row in photo_rows:
-        if not is_inventory_reference_photo_row(row):
-            continue
-        if norm(row.get("component_group")) == "procurement_inventory":
-            fallback_row = row
-            break
-        if fallback_row is None:
-            fallback_row = row
-    if fallback_row is not None:
-        selected = image_payload(fallback_row, [])
-        selected["caption"] = f"{item} · equivalent inventory reference"
-        selected["match_basis"] = "inventory_fallback"
-        selected["match_score"] = 0
-        return selected
-
-    return placeholder_image()
+    selected = placeholder_image()
+    if item:
+        selected["caption"] = f"{item} · exact inventory image required"
+    return selected
 
 
 def attach_inventory_images(
@@ -2973,6 +4950,9 @@ def build_dashboard_data() -> dict[str, Any]:
     package_rows = load_csv(REASSEMBLY_PACKAGES_PATH)
     component_rows = load_csv(COMPONENT_JOBS_PATH)
     photo_rows = load_csv(PHOTO_INVENTORY_PATH)
+    replacement_pipe_requirement_rows = load_csv_optional(REPLACEMENT_PIPE_SPECS_PATH)
+    chassis_rubber_requirement_rows = load_csv_optional(CHASSIS_RUBBER_REQUIREMENTS_PATH)
+    brake_system_requirement_rows = load_csv_optional(BRAKE_SYSTEM_REQUIREMENTS_PATH)
     paint_refinish_queue_rows = load_csv_optional(PAINT_REFINISH_MEDIA_QUEUE_PATH)
     paint_refinish_whatsapp_rows = load_csv_optional(PAINT_REFINISH_WHATSAPP_MEDIA_QUEUE_PATH)
     selling_site_manifest_rows = load_csv_optional(SELLING_SITE_MANIFEST_PATH)
@@ -3091,6 +5071,25 @@ def build_dashboard_data() -> dict[str, Any]:
                 norm(item.get("item")),
             ),
         )
+        operation_panels = []
+        subtask_groups = build_workstream_subtask_groups(
+            ws_id,
+            row,
+            images,
+            photo_rows,
+            parts_for_workstream,
+        )
+        requirements = []
+        if ws_id == "replacement_pipes":
+            requirements = build_replacement_pipe_requirements(replacement_pipe_requirement_rows, photo_rows)
+        elif ws_id == "chassis_rubbers":
+            requirements = build_workstream_requirements(chassis_rubber_requirement_rows, photo_rows)
+        elif ws_id == "brake_system":
+            requirements = build_workstream_requirements(brake_system_requirement_rows, photo_rows)
+        pipe_requirements = requirements if ws_id == "replacement_pipes" else []
+        chassis_rubber_requirements = requirements if ws_id == "chassis_rubbers" else []
+        if ws_id == "chassis_fixing":
+            operation_panels.append(build_chassis_prime_readiness_panel(photo_rows))
 
         workstreams.append(
             {
@@ -3110,6 +5109,9 @@ def build_dashboard_data() -> dict[str, Any]:
                 "evidence_sets": evidence_sets,
                 "image_count": len(images),
                 "reference_token_count": len(reference_tokens),
+                "requirements": requirements,
+                "pipe_requirements": pipe_requirements,
+                "chassis_rubber_requirements": chassis_rubber_requirements,
                 "linked_packages": [
                     {
                         "work_package_id": clean(package.get("work_package_id")),
@@ -3148,6 +5150,8 @@ def build_dashboard_data() -> dict[str, Any]:
                 ],
                 "steps": workstream_steps(row, linked_packages, jobs, issues, parts_for_workstream),
                 "involved_parts": involved_parts_rows,
+                "operation_panels": operation_panels,
+                "subtask_groups": subtask_groups,
                 "electrical_spec_layout": electrical_spec_layout_by_workstream.get(ws_id),
             }
         )
@@ -3452,6 +5456,9 @@ def build_dashboard_data() -> dict[str, Any]:
             "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
             "component_jobs": "data/manual/component_jobs.csv",
             "photo_inventory": "data/manual/photo_inventory.csv",
+            "brake_system_requirements": "data/manual/brake_system_requirements.csv",
+            "chassis_rubber_requirements": "data/manual/chassis_rubber_requirements.csv",
+            "replacement_pipe_ordering_specs": "data/manual/replacement_pipe_ordering_specs.csv",
             "expenses": "data/manual/expenses.csv",
             "parts_buy_now_this_week": "data/manual/parts_buy_now_this_week.csv",
             "workbook_electrical_master": "data/manual/workbook_tabs/electrical_master.csv",

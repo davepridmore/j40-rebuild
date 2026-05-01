@@ -39,6 +39,9 @@ Only chat content related to this build should be included. The importer treats 
 - `data/manual/procurement_decision_matrix.csv`: buy-now vs verify-stock vs defer decisions for open parts rows
 - `data/manual/procurement_decision_matrix_pass2.csv`: tub-off-focused second-pass procurement decisions (minimize immediate spend)
 - `data/manual/procurement_local_baskets_pass2.csv`: local bundle strategy (rust-minimum, electrical top-up, mechanical Toyota-common bundle)
+- `data/manual/brake_system_requirements.csv`: rear brake cable, hard-line, hose, drum, and retaining-clip replacement matrix
+- `data/manual/chassis_rubber_requirements.csv`: acquisition/fabrication status matrix for body-mount rubbers, sleeves, cups, shims, and mount hardware
+- `data/manual/replacement_pipe_ordering_specs.csv`: curated location/photo/spec matrix for replacement pipes, hoses, hard lines, and the made-to-order coolant pipe sample
 - `data/manual/workbook_tabs/`: per-tab CSV exports for quick review outside Excel
 - `data/manual/j40-master-tracker.xlsx`: single Excel workbook generated from `expenses.csv` with `Initial Price`, `Purchase Registration`, `Purchase of Goods`, and `Purchase of Services` tabs
 - `data/manual/legal_statuses.csv`: current legal/admin tracker
@@ -62,6 +65,7 @@ Only chat content related to this build should be included. The importer treats 
 - `docs/j40-costs-tidy-extract.md`: normalized cost-tab tidy summary
 - `docs/reassembly-dependency-procurement-plan.md`: integrated reassembly sequencing + dependency split + procurement actions
 - `docs/procurement-pass2-tub-off.md`: second-pass procurement simplification for tub-off stage and local Pakistan sourcing assumptions
+- `docs/replacement-pipes-workstream.md`: start-here tracker for replacement pipes, hoses, hard lines, and made-to-order pipe samples
 - `photos/index/`: generated lookup folders by component group, specific component, and stage
 - `scripts/import_whatsapp.py`: parses chats, extracts media, filters relevance
 - `scripts/import_whatsapp_mcp_j40.py`: discovers J40 chats from WhatsApp MCP profiles and exports normalized chat/message/media indexes

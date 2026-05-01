@@ -1,6 +1,6 @@
 # Photo Ingest Automation Status
 
-- Updated: 2026-04-20 07:21:00 +0500
+- Updated: 2026-05-02 01:41:24 +0500
 - Personal OAuth client configured: `project 975499870450` (`perception-website`)
 - Enabled APIs on personal project:
   - `photospicker.googleapis.com`
@@ -8,13 +8,13 @@
 - Primary mode: `on-demand personal picker import + analysis refresh`
 - Full-library mode: `Google Takeout archive ingest`
 - Latest personal picker run:
-  - Session: `f5b4324e-a576-4529-a33e-6fc4e71c295a`
-  - Picker items selected: `256`
-  - Downloaded: `256`
-  - Car-related kept after filter: `247`
-  - Moved to `photos/non_car_review`: `9`
-  - Current indexed media count: `411`
-  - Date coverage now reaches: `2026-04-20`
+  - Run ID: `20260502T013759`
+  - Picker items selected: `14`
+  - Downloaded: `14`
+  - Car-related kept after filter: `14`
+  - Moved to `photos/non_car_review`: `0`
+  - Current indexed media count: `572`
+  - Date coverage now reaches: `2026-05-02`
 
 ## Primary Flow (Personal On-Demand)
 

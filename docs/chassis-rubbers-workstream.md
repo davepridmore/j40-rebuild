@@ -24,6 +24,10 @@ This workstream is not for:
 - Working basis is locked to the early pre-`1/79` `BJ40/FJ40` tub pattern.
 - The exact numeric dimensions of the old samples are still open and must be captured with calipers before any local reproduction order is treated as closed.
 - The stored photos below are the best current evidence of the original mount rubbers, but they are context-only and not measurement-grade.
+- May 2 Google Photos picker import `20260502T013759` starts a dedicated selection set for rubber recreation: [rubber-recreation-photo-selection-20260502.md](rubber-recreation-photo-selection-20260502.md).
+- May 2 fabricator handoff spec is now drafted from the tape-measure photos: [rubber-recreation-fabrication-spec-20260502.md](rubber-recreation-fabrication-spec-20260502.md).
+- UI requirements table source: [chassis_rubber_requirements.csv](../data/manual/chassis_rubber_requirements.csv). This is the acquisition/fabrication status tracker for each rubber, sleeve, cup, shim, and hardware requirement.
+- Toyota OE/EPC-style control rows are now captured in [rubber_recreation_toyota_oe_cross_reference.csv](../data/manual/rubber_recreation_toyota_oe_cross_reference.csv). They confirm part numbers, station IDs, bolt families, and several shim/spacer thicknesses, but not rubber cushion OD/ID/free-height.
 
 ## Original Rubber Evidence
 
@@ -71,6 +75,7 @@ Evidence note:
 | Front support isolators / pads | `2` positions | Separate front support rubber/pad set for the nose side extensions | `NEW_ONLY`; keep left/right as matched pair | Must match the front support sample style and installed height; do not assume tub rubbers fit |
 | Front support shims / pads | `2` | Separate shim/pad pieces to suit the front support pair | Flat and stable; not improvised stacks | Must align front clip height without forcing the tub |
 | Captive-thread repair pack | `2` nuts + `2` tabs minimum | `M10 x 1.25` weld nuts / repair nuts plus `3 mm` steel repair tabs | New repair material only | Use only if cleaning shows damaged threads or weak pedestal repair metal |
+| OE station map | `1` reconciliation sheet | Toyota `NO.1` to `NO.5` body-mount rows against vehicle-side positions | Must agree with physical samples before production | Use the OE cross-reference plus direct vehicle labels; do not infer from catalog alone |
 
 ## Exact Measurement Fields To Capture From Sample
 
@@ -104,3 +109,5 @@ Fill this in from the removed old parts before any local fabrication order is tr
 3. Confirm actual thread pitch and final bolt length at each main tub station.
 4. Preserve original shim packs by `FL`, `FR`, `ML`, `MR`, `RL`, `RR`.
 5. Only then close the order with Bilal Ganj or a local rubber fabricator.
+6. Use the May 2 fabrication spec as the quote/prototype sheet, then close its hold dimensions with calipers before production.
+7. Reconcile the physical vehicle stations against Toyota `NO.1` to `NO.5` rows before changing the rubber count or approving production.

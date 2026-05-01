@@ -23,6 +23,8 @@ class EvidenceRule:
     direct_specific_components: tuple[str, ...]
     indirect_specific_components: tuple[str, ...]
     notes: str = ""
+    direct_media_ids: tuple[str, ...] = ()
+    indirect_media_ids: tuple[str, ...] = ()
 
 
 RULES: dict[str, EvidenceRule] = {
@@ -119,44 +121,51 @@ RULES: dict[str, EvidenceRule] = {
         notes="In-progress workshop videos and panel-handling shots track painting/bodywork activity between send-out and return.",
     ),
     "chassis_frame_and_crossmembers": EvidenceRule(
-        direct_specific_components=("frame_floor_underside_and_lines", "frame_and_mount_points", "rear_frame_crossmember_and_mounts"),
-        indirect_specific_components=("rear_axle_and_leaf_springs", "steering_and_suspension_linkages"),
-        notes="Body-off underside shots provide direct evidence for rails/crossmembers and supporting suspension context.",
+        direct_specific_components=(
+            "frame_floor_underside_and_lines",
+            "frame_and_mount_points",
+            "rear_frame_crossmember_and_mounts",
+            "frame_rail_body_mount_and_crossmember_detail",
+            "front_frame_horns_bumper_and_steering_area",
+            "rear_mid_frame_rail_and_hard_line_detail",
+        ),
+        indirect_specific_components=("rear_axle_and_leaf_springs", "rear_axle_spring_hanger_and_crossmember", "steering_and_suspension_linkages"),
+        notes="Body-off underside shots and May 1 post-brushing photos provide direct evidence for rails/crossmembers and supporting suspension context.",
     ),
     "body_mount_points_and_captive_nuts": EvidenceRule(
-        direct_specific_components=("body_mount_and_crossmember_detail", "frame_and_mount_points"),
+        direct_specific_components=("body_mount_and_crossmember_detail", "frame_and_mount_points", "frame_rail_body_mount_and_crossmember_detail"),
         indirect_specific_components=("frame_floor_underside_and_lines",),
         notes="Mount pedestal and frame-mount photos support thread/captive-nut condition checks before refit.",
     ),
     "chassis_hard_lines_and_brackets": EvidenceRule(
-        direct_specific_components=("frame_floor_underside_and_lines",),
-        indirect_specific_components=("rear_axle_and_leaf_springs", "steering_and_suspension_linkages"),
-        notes="Underbody routing photos give direct visibility to line paths/brackets and nearby support hardware.",
+        direct_specific_components=("frame_floor_underside_and_lines", "rear_mid_frame_rail_and_hard_line_detail"),
+        indirect_specific_components=("rear_axle_and_leaf_springs", "front_frame_horns_bumper_and_steering_area", "steering_and_suspension_linkages"),
+        notes="Underbody routing photos and May 1 hard-line/rail shots give direct visibility to line paths/brackets and nearby support hardware.",
     ),
     "issue_steering_box_mount_crack_check": EvidenceRule(
-        direct_specific_components=("steering_and_suspension_linkages",),
+        direct_specific_components=("steering_and_suspension_linkages", "front_frame_horns_bumper_and_steering_area"),
         indirect_specific_components=("suspension_or_linkage_mount", "frame_and_mount_points"),
         notes="Steering linkage and nearby mount photos are the baseline evidence set for steering-box mount crack checks.",
     ),
     "issue_front_spring_hanger_crack_check": EvidenceRule(
-        direct_specific_components=("rear_axle_and_leaf_springs", "suspension_or_linkage_mount"),
+        direct_specific_components=("rear_axle_and_leaf_springs", "rear_axle_spring_hanger_and_crossmember", "suspension_or_linkage_mount"),
         indirect_specific_components=("frame_and_mount_points",),
         notes="Spring and hanger views provide direct evidence for crack/deformation checks around hanger brackets.",
     ),
     "issue_crossmember_end_thinning_check": EvidenceRule(
-        direct_specific_components=("rear_frame_crossmember_and_mounts", "body_mount_and_crossmember_detail"),
-        indirect_specific_components=("frame_and_mount_points", "frame_floor_underside_and_lines"),
+        direct_specific_components=("rear_frame_crossmember_and_mounts", "body_mount_and_crossmember_detail", "frame_rail_body_mount_and_crossmember_detail", "rear_mid_frame_rail_and_hard_line_detail"),
+        indirect_specific_components=("frame_and_mount_points", "frame_floor_underside_and_lines", "front_frame_horns_bumper_and_steering_area"),
         notes="Crossmember and mount-detail photos are used to inspect end-wall thinning and edge corrosion.",
     ),
     "issue_body_mount_captive_thread_repair": EvidenceRule(
-        direct_specific_components=("body_mount_and_crossmember_detail", "frame_and_mount_points"),
+        direct_specific_components=("body_mount_and_crossmember_detail", "frame_and_mount_points", "frame_rail_body_mount_and_crossmember_detail"),
         indirect_specific_components=("frame_floor_underside_and_lines",),
         notes="Body-mount pedestal and mount-point photos cover captive-nut and sleeve/thread repair planning.",
     ),
     "issue_brake_fuel_line_clip_corrosion": EvidenceRule(
-        direct_specific_components=("frame_floor_underside_and_lines",),
-        indirect_specific_components=("rear_axle_and_leaf_springs", "steering_and_suspension_linkages"),
-        notes="Underbody line-routing photos are the primary evidence for clip/bracket corrosion and hard-line condition checks.",
+        direct_specific_components=("frame_floor_underside_and_lines", "rear_mid_frame_rail_and_hard_line_detail"),
+        indirect_specific_components=("rear_axle_and_leaf_springs", "front_frame_horns_bumper_and_steering_area", "steering_and_suspension_linkages"),
+        notes="Underbody line-routing photos and May 1 rail/hard-line details are the primary evidence for clip/bracket corrosion and hard-line condition checks.",
     ),
     "brake_system_evidence_pack": EvidenceRule(
         direct_specific_components=(
@@ -184,9 +193,48 @@ RULES: dict[str, EvidenceRule] = {
         notes="Hard-line routing photos are direct evidence for hose/line refresh planning, with axle-end hardware views supporting brake-bias and wear decisions.",
     ),
     "issue_chassis_ground_points_refresh": EvidenceRule(
-        direct_specific_components=("frame_floor_underside_and_lines",),
-        indirect_specific_components=("steering_and_suspension_linkages", "driver_footwell_firewall_and_wiring"),
+        direct_specific_components=("frame_floor_underside_and_lines", "frame_rail_body_mount_and_crossmember_detail"),
+        indirect_specific_components=("front_frame_horns_bumper_and_steering_area", "steering_and_suspension_linkages", "driver_footwell_firewall_and_wiring"),
         notes="Frame and lower bay views provide context for grounding point cleanup and re-termination planning.",
+    ),
+    "chassis_wire_brush_status_20260501": EvidenceRule(
+        direct_specific_components=(
+            "frame_rail_body_mount_and_crossmember_detail",
+            "front_frame_horns_bumper_and_steering_area",
+            "rear_axle_spring_hanger_and_crossmember",
+            "rear_mid_frame_rail_and_hard_line_detail",
+        ),
+        indirect_specific_components=("engine_powertrain_cleaning_baseline",),
+        notes="May 1 photos directly document the current post-wire-brushing chassis state and the remaining rust-prep closeout zones.",
+    ),
+    "engine_powertrain_cleaning_20260501": EvidenceRule(
+        direct_specific_components=("engine_powertrain_cleaning_baseline",),
+        indirect_specific_components=("front_frame_horns_bumper_and_steering_area", "rear_mid_frame_rail_and_hard_line_detail"),
+        notes="May 1 engine, gearbox, transfer, steering, and driveline photos directly document the cleaning baseline before degreasing and leak inspection.",
+    ),
+    "engine_cooling_pipe_fabrication_samples": EvidenceRule(
+        direct_specific_components=("cooling_pipe_fabrication_samples",),
+        indirect_specific_components=("cooling_hoses_fan_belt_and_radiator_support", "engine_powertrain_cleaning_baseline"),
+        notes="May 2 selected pipe photos directly document the made-to-order cooling pipe sample set; engine-bay routing photos provide supporting context.",
+    ),
+    "replacement_pipe_ordering_matrix": EvidenceRule(
+        direct_specific_components=(),
+        indirect_specific_components=(),
+        notes="Replacement pipe ordering is limited to selected pipe sample photos and close pipe/hose/line location evidence; body rubbers and broad chassis/mechanical context are excluded.",
+        direct_media_ids=(
+            "20260502_004044_gp_Hx4Yo0Qg",
+            "20260502_004106_gp_wlYlUahA",
+            "20260502_004120_gp_7Jw9Zyrg",
+            "20260502_004133_gp_ZEpqmARA",
+            "20260502_004139_gp_jt1dGw4A",
+            "20260502_004145_gp_e8soxsyA",
+            "20260430_220004_gp_C9oYiYmA",
+            "20260430_215957_gp_2iBbUagw",
+            "20260422_004306_gp_vGlNr2UA",
+            "20260422_004311_gp_994KQ0Pw",
+            "20260430_215939_gp_EjZ7u1ow",
+            "20260502_005740_gp_Qiat03EQ",
+        ),
     ),
     "tub_refit_rubber_hardware_shim_stack": EvidenceRule(
         direct_specific_components=("body_mount_and_crossmember_detail", "floor_seam_and_body_mount_rust"),
@@ -219,8 +267,15 @@ def reconcile() -> list[dict[str, str]]:
     ]
 
     by_specific: dict[str, list[dict[str, str]]] = defaultdict(list)
+    by_media_id: dict[str, dict[str, str]] = {}
     for row in photo_rows:
         by_specific[row["specific_component"]].append(row)
+        media_id = row.get("media_id", "").strip()
+        file_stem = Path(row.get("file_name", "")).stem
+        if media_id:
+            by_media_id[media_id] = row
+        if file_stem:
+            by_media_id[file_stem] = row
 
     output_rows: list[dict[str, str]] = []
     for job in component_jobs:
@@ -234,6 +289,14 @@ def reconcile() -> list[dict[str, str]]:
             direct_matches.extend(by_specific.get(component, []))
         for component in rule.indirect_specific_components:
             indirect_matches.extend(by_specific.get(component, []))
+        for media_id in rule.direct_media_ids:
+            row = by_media_id.get(media_id)
+            if row:
+                direct_matches.append(row)
+        for media_id in rule.indirect_media_ids:
+            row = by_media_id.get(media_id)
+            if row:
+                indirect_matches.append(row)
 
         direct_unique = {row["file_name"]: row for row in direct_matches}
         # Remove indirect duplicates that already appear in direct.

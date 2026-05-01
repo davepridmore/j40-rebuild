@@ -14,11 +14,23 @@ workbook_parts,row_77,deliverables/selling_site_images/images/workbook_parts_htt
 workbook_parts,row_78,deliverables/selling_site_images/images/workbook_parts_https_uni_core_pk_product_cables_wires_f_58de188bbf6d.jpg,"Automotive flexible wire 1.5 mm2 yellow, 90m roll - equivalent product image",wire_inventory_image_override
 workbook_parts,row_79,deliverables/selling_site_images/images/workbook_parts_https_uni_core_pk_product_flexible_cable_9f16adde6f5b.jpg,"Automotive flexible wire 1.0 mm2 white, 90m roll - equivalent product image",wire_inventory_image_override
 expenses,part_electric_wires,photos/20260424_part_electric_wires_aliexpress_3070027285627489.jpg,"4 AWG red/black silicone cable, 1m each - order evidence image",exact_order_evidence
+expenses,part_dielectric_grease,photos/20260424_part_dielectric_grease_aliexpress_order_3070231697777489.jpg,Dielectric grease - AliExpress order evidence image,exact_order_evidence
+expenses,tool_electrical_test_kit,photos/20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489.jpg,Electrical test kit - AliExpress order evidence image,exact_order_evidence
+expenses,part_seam_sealer,photos/20260424_part_seam_sealer_autohub_order_1761310.jpg,HB BODY 999 seam sealer x3 - Autohub order evidence image,exact_order_evidence
+expenses,part_nylon_fiber_wool_polishing_disc_sets_2x,photos/20260424_part_nylon_fiber_wool_polishing_disc_sets_2x_daraz_241938794080938.jpg,Nylon fiber and wool polishing disc sets x2 - Daraz order evidence image,exact_order_evidence
+expenses,tool_total_wrecking_bar_600mm_tht431242,deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg,Total Wrecking bar 600mm THT431242 - Toolsmart order contact sheet,order_contactsheet_exact_row
+expenses,tool_wadfow_pressure_sprayer_wrs1550,deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg,Wadfow Pressure sprayer WRS1550 - Toolsmart order contact sheet,order_contactsheet_exact_row
+expenses,tool_harden_spring_clamp_set_4in_6pc,deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg,Harden 6Pc x 4 inch Spring Clamp Set - Toolsmart order contact sheet,order_contactsheet_exact_row
+expenses,tool_harden_white_rubber_mallet_700g_590437,deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg,Harden White Rubber Mallet 700g 590437 - Toolsmart order contact sheet,order_contactsheet_exact_row
+expenses,tool_ingco_dead_blow_mallet_2lb_hdbm08028,deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg,Ingco Dead blow mallet 2lb HDBM08028 - Toolsmart order contact sheet,order_contactsheet_exact_row
+expenses,tool_wadfow_body_fender_hammer_set_whz1d07,deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg,Wadfow 7 Pcs Body And Fender Hammer Set WHZ1D07 - Toolsmart order contact sheet,order_contactsheet_exact_row
+expenses,tool_total_jack_stands_3ton_thjs0301_2pairs,deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg,Total Jack stand 3Ton THJS0301 - 2 pairs - Toolsmart order contact sheet,order_contactsheet_exact_row
+expenses,tool_harden_3ton_trolley_jack_730213,deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg,Harden 3Ton Hydraulic Trolley Jack 730213 - Toolsmart order contact sheet,order_contactsheet_exact_row
 expenses,part_cable_sleeve_protection,photos/20260410_031722.jpg,Braided sleeve and wiring inventory - local photo evidence,mechanical_inventory_photo_attachment
 expenses,part_split_conduit_braided_sleeve_small,photos/20260410_031722.jpg,Small braided sleeve inventory - local photo evidence,covered_by_workbook_inventory
 expenses,part_split_conduit_braided_sleeve_medium,photos/20260410_031722.jpg,Medium braided sleeve inventory - local photo evidence,covered_by_workbook_inventory
 expenses,part_split_conduit_braided_sleeve_large,photos/20260410_031722.jpg,Large braided sleeve inventory - local photo evidence,covered_by_workbook_inventory
-expenses,part_h4_ceramic_headlight_connector_high,photos/20260424_part_h4_ceramic_headlight_connector_high_autoxpert_order_1599.jpg,H4 ceramic headlight connectors x4 received - order evidence image,h4_received_complete
+expenses,part_h4_ceramic_headlight_connector_high,photos/20260424_part_h4_ceramic_headlight_connector_high_autoxpert_order_1599.jpg,H4 ceramic headlight connectors x4 received - order evidence image,exact_order_evidence_h4_received_complete
 expenses,part_mech_engine_oil_filter_service,photos/20260420_201801_gp_NvXIaGBw.jpg,Mechanical service parts packaging - filter/service reference,attach_mechanical_inventory_image
 expenses,part_mech_air_filter,photos/20260420_201801_gp_NvXIaGBw.jpg,Mechanical service parts packaging - air/filter reference,attach_mechanical_inventory_image
 expenses,part_mech_fuel_filter,photos/20260420_201801_gp_NvXIaGBw.jpg,Mechanical service parts packaging - fuel/filter reference,attach_mechanical_inventory_image
@@ -33,10 +45,10 @@ expenses,part_mech_distributor_cap_rotor_tuneup,photos/20260430_215957_gp_2iBbUa
 expenses,part_mech_engine_mount_set,photos/20260430_215915_gp_ycQ395Gg.jpg,Engine/transmission mount area - related local mechanical inspection photo,attach_mechanical_inventory_image
 expenses,part_mech_clutch_master_slave_refresh,photos/20260430_215939_gp_EjZ7u1ow.jpg,Bellhousing and clutch linkage area - local mechanical inspection photo,attach_mechanical_inventory_image
 expenses,part_battery_purchase,photos/20260410_013927.jpg,Electrical system inventory photo - battery row needs exact battery photo when available,temporary_equivalent_until_battery_photo_added
-workbook_parts,row_54,,MIDI fuse block image disputed - exact order or received image required,user_reported_incorrect_image_2026-05-01|image_disputed|suppress_image
-workbook_parts,row_58,,MIDI/498 30A fuse image disputed - exact order or received image required,user_reported_incorrect_image_2026-05-01|image_disputed|suppress_image
-workbook_parts,row_59,,MIDI/498 50A fuse image disputed - exact order or received image required,user_reported_incorrect_image_2026-05-01|image_disputed|suppress_image
-workbook_parts,row_60,,MIDI/498 50A fuse image disputed - exact order or received image required,user_reported_incorrect_image_2026-05-01|image_disputed|suppress_image
-workbook_parts,row_61,,MIDI/498 60A fuse image disputed - exact order or received image required,user_reported_incorrect_image_2026-05-01|image_disputed|suppress_image
-workbook_parts,row_96,,Hazard red latching pushbutton image disputed - exact 12V hazard switch image required,user_reported_incorrect_image_2026-05-01|image_disputed|suppress_image
-expenses,part_rubber_grommet_set,,Rubber grommet set image disputed - exact AliExpress order or received-set image required,user_reported_incorrect_image_2026-05-01|image_disputed|suppress_image
+workbook_parts,row_54,photos/20260411_143135.jpg,MIDI fuse holder bank - local project photo evidence,local_actual_photo_override_2026-05-01
+workbook_parts,row_58,photos/20260411_143135.jpg,MIDI/498 30A fuse position - local project photo evidence,local_actual_photo_override_2026-05-01
+workbook_parts,row_59,photos/20260411_143135.jpg,MIDI/498 50A fuse position - local project photo evidence,local_actual_photo_override_2026-05-01
+workbook_parts,row_60,photos/20260411_143135.jpg,MIDI/498 50A fuse position - local project photo evidence,local_actual_photo_override_2026-05-01
+workbook_parts,row_61,photos/20260411_143135.jpg,MIDI/498 60A fuse position - local project photo evidence,local_actual_photo_override_2026-05-01
+workbook_parts,row_96,deliverables/selling_site_images/images/manual_overrides/hazard_red_latching_pushbutton_electronicstore.webp,Hazard 16mm red latching pushbutton - Electronic Store product reference,electronicstore_product_reference_image_2026-05-01
+expenses,part_rubber_grommet_set,photos/20260422_034358_gp_Bg6nSlPw.jpg,Rubber grommet assortment - local received photo evidence,local_received_photo_override_2026-05-01

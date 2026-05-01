@@ -36,18 +36,7 @@
   tabButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const nextView = button.getAttribute("data-view");
-      if (!nextView || nextView === state.activeView) {
-        return;
-      }
-      state.activeView = nextView;
-      tabButtons.forEach((node) => node.classList.toggle("is-active", node === button));
-      if (state.lightboxImageBase) {
-        closeLightbox();
-      }
-      if (state.itemDetailRow) {
-        closeItemDetail();
-      }
-      render();
+      switchView(nextView);
     });
   });
 
@@ -60,6 +49,17 @@
       }
       event.preventDefault();
       openLightbox(imageKey);
+      return;
+    }
+
+    const workstreamTrigger = event.target.closest("[data-open-workstream-id]");
+    if (workstreamTrigger) {
+      const workstreamId = workstreamTrigger.getAttribute("data-open-workstream-id");
+      if (!workstreamId) {
+        return;
+      }
+      event.preventDefault();
+      openWorkstream(workstreamId);
       return;
     }
 
@@ -90,6 +90,36 @@
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&#039;");
+  }
+
+  function switchView(nextView) {
+    if (!nextView || nextView === state.activeView) {
+      return;
+    }
+    state.activeView = nextView;
+    tabButtons.forEach((node) => {
+      node.classList.toggle("is-active", node.getAttribute("data-view") === nextView);
+    });
+    if (state.lightboxImageBase) {
+      closeLightbox();
+    }
+    if (state.itemDetailRow) {
+      closeItemDetail();
+    }
+    render();
+  }
+
+  function openWorkstream(workstreamId) {
+    const targetId = cleanString(workstreamId);
+    if (!targetId) {
+      return;
+    }
+    state.activeWorkstreamId = targetId;
+    if (state.activeView === "workstreams") {
+      renderWorkstreams();
+      return;
+    }
+    switchView("workstreams");
   }
 
   function formatToken(value) {
@@ -152,8 +182,26 @@
 
   function toneForStatus(status) {
     const key = String(status || "").toLowerCase();
-    if (["completed", "closed", "received", "installed", "done", "previously"].includes(key)) {
+    if (["completed", "closed", "received", "installed", "done", "previously", "properly_specced", "acquired"].includes(key)) {
       return "good";
+    }
+    if ([
+      "not_acquired",
+      "not_installed",
+      "needs_measurement",
+      "needs_physical_measurement",
+      "needs_close_photo",
+      "needs_brake_close_photos",
+      "needs_template_trace",
+      "needs_station_reconciliation",
+      "needs_thread_length_confirmation",
+      "needs_cable_end_identification",
+      "needs_thread_flare_confirmation",
+      "needs_fitting_identification",
+      "needs_drum_opening",
+      "needs_clip_count",
+    ].includes(key)) {
+      return "warn";
     }
     if (["blocked"].includes(key)) {
       return "bad";
@@ -431,6 +479,9 @@
         paint_issue_tracking: 30,
         paint_progress_media: 40,
         paint_progress_videos: 50,
+        rear_brake_cables_lines: 45,
+        may1_chassis_status: 50,
+        may1_engine_cleaning: 50,
         primary: 60,
         all_paint_media: 90,
       };
@@ -645,15 +696,159 @@
     `;
   }
 
+  function inventoryImageMatchLabel(matchBasis) {
+    const basis = cleanString(matchBasis);
+    const labels = {
+      exact_order_evidence: "Order evidence",
+      local_inventory_evidence: "Local photo",
+      manual_override: "Pinned image",
+      manual_image_disputed: "Image disputed",
+      selling_site_match: "Listing image",
+      inventory_match: "Matched photo",
+      whatsapp_evidence_match: "WhatsApp",
+      workstream_fallback: "Workstream fallback",
+      inventory_fallback: "Fallback",
+      placeholder: "Image required",
+    };
+    return labels[basis] || formatToken(basis);
+  }
+
   function renderInventoryImageCell(row, fallbackCaption) {
     const prepared = prepareImage(row.image || {}, fallbackCaption);
-    const needsImage = prepared.effective.match_basis === "placeholder";
+    const label = inventoryImageMatchLabel(prepared.effective.match_basis);
     return `
       <td class="table-image-cell">
         ${renderPreparedMedia(prepared, "table-image-btn", "table-image")}
-        ${needsImage ? '<span class="table-image-note">Image required</span>' : ""}
+        ${label ? `<span class="table-image-note">${escapeHtml(label)}</span>` : ""}
       </td>
     `;
+  }
+
+  function renderRequirementEvidenceImages(requirement) {
+    const images = Array.isArray(requirement.evidence_images) ? requirement.evidence_images : [];
+    if (!images.length) {
+      return `<span class="small-muted">${escapeHtml(formatToken(requirement.photo_status || "photo_needed"))}</span>`;
+    }
+    const fallbackCaption = requirement.requirement_name || requirement.pipe_or_line || requirement.part_name || "Requirement evidence";
+    return `
+      <div class="requirement-evidence-grid">
+        ${images
+          .slice(0, 4)
+          .map((image) => {
+            const prepared = prepareImage(image, fallbackCaption);
+            return `
+              <div class="requirement-evidence-item">
+                ${renderPreparedMedia(prepared, "table-image-btn", "table-image")}
+                <span class="table-image-note">${escapeHtml(prepared.effective.media_id || "")}</span>
+              </div>
+            `;
+          })
+          .join("")}
+      </div>
+      ${images.length > 4 ? `<span class="table-image-note">+${escapeHtml(images.length - 4)} more</span>` : ""}
+    `;
+  }
+
+  function renderRequirementTable(requirements, options = {}) {
+    const rows = Array.isArray(requirements) ? requirements : [];
+    if (!rows.length) {
+      return "";
+    }
+    const properlySpecced = rows.filter((row) => cleanString(row.spec_status) === "properly_specced").length;
+    const acquired = rows.filter((row) => cleanString(row.acquisition_status) === "acquired").length;
+    const installed = rows.filter((row) => cleanString(row.installation_status) === "installed").length;
+    const title = options.title || "Requirements";
+    const summary = options.summary || "Exact make/buy/fabrication requirements with status gates for specification, acquisition, and installation.";
+    return `
+      <article class="card pipe-requirements-card">
+        <div class="detail-header">
+          <h3>${escapeHtml(title)}</h3>
+          <div class="chip-row">
+            ${chip(`${properlySpecced}/${rows.length} Spec'd`)}
+            ${chip(`${acquired}/${rows.length} Acquired`)}
+            ${chip(`${installed}/${rows.length} Installed`)}
+          </div>
+        </div>
+        <p class="small-muted">${escapeHtml(summary)}</p>
+        <div class="table-wrap requirement-table-wrap">
+          <table class="requirement-table">
+            <thead>
+              <tr>
+                <th>Evidence</th>
+                <th>Requirement</th>
+                <th>Status Gates</th>
+                <th>Make / Buy Spec</th>
+                <th>Measurements Required</th>
+                <th>Install Gate</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${rows
+                .map((row) => {
+                  const requirementId = row.requirement_id || row.pipe_id || row.part_id || "";
+                  const requirementName = row.requirement_name || row.pipe_or_line || row.part_name || "";
+                  const quantity = cleanString(row.quantity || row.qty);
+                  return `
+                    <tr>
+                      <td class="requirement-evidence-cell">${renderRequirementEvidenceImages(row)}</td>
+                      <td>
+                        <strong>${escapeHtml(requirementId)} · ${escapeHtml(requirementName)}</strong>
+                        <div class="small-muted">${escapeHtml(row.vehicle_location || "")}</div>
+                        ${quantity ? `<div class="small-muted">Qty: ${escapeHtml(quantity)}</div>` : ""}
+                        <div class="small-muted">Scope: ${escapeHtml(formatToken(row.replace_scope || ""))}</div>
+                        ${row.current_action ? `<div class="requirement-action"><strong>Now:</strong> ${escapeHtml(row.current_action)}</div>` : ""}
+                      </td>
+                      <td>
+                        <div class="status-stack">
+                          ${statusChip(row.spec_status || "needs_measurement")}
+                          ${statusChip(row.acquisition_status || "not_acquired")}
+                          ${statusChip(row.installation_status || "not_installed")}
+                        </div>
+                      </td>
+                      <td>
+                        ${escapeHtml(row.exact_recreation_spec || "")}
+                        ${row.material_spec ? `<div class="small-muted requirement-material">${escapeHtml(row.material_spec)}</div>` : ""}
+                      </td>
+                      <td>${escapeHtml(row.critical_measurements || "")}</td>
+                      <td>
+                        ${escapeHtml(row.fit_and_test || "")}
+                        ${row.notes ? `<div class="small-muted requirement-material">${escapeHtml(row.notes)}</div>` : ""}
+                      </td>
+                    </tr>
+                  `;
+                })
+                .join("")}
+            </tbody>
+          </table>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderWorkstreamRequirements(workstream) {
+    const active = workstream || {};
+    const rows = Array.isArray(active.requirements) && active.requirements.length
+      ? active.requirements
+      : active.pipe_requirements;
+    if (active.id === "chassis_rubbers") {
+      return renderRequirementTable(rows, {
+        title: "Chassis Rubber Requirements",
+        summary: "Exact rubber, sleeve, cup, shim, and hardware requirements with status gates for specification, acquisition, and installation.",
+      });
+    }
+    if (active.id === "replacement_pipes") {
+      return renderRequirementTable(rows, {
+        title: "Replacement Pipe Requirements",
+        summary: "Exact make/buy/fabrication requirements with status gates for specification, acquisition, and installation.",
+      });
+    }
+    if (active.id === "brake_system") {
+      return renderRequirementTable(rows, {
+        title: "Rear Brake Cable / Line Requirements",
+        summary: "Rear axle brake cable, hard-line, hose, drum, and retaining-clip actions with removal guidance and replacement-order gates.",
+      });
+    }
+    return renderRequirementTable(rows);
   }
 
   function canonicalMediaStem(value) {
@@ -782,6 +977,198 @@
           )
           .join("")}
       </ol>
+    `;
+  }
+
+  function renderOperationPanels(panels) {
+    const sourcePanels = Array.isArray(panels) ? panels : [];
+    if (!sourcePanels.length) {
+      return "";
+    }
+    return sourcePanels
+      .map((panel) => {
+        const metrics = Array.isArray(panel.metrics) ? panel.metrics : [];
+        const zones = Array.isArray(panel.zones) ? panel.zones : [];
+        const steps = Array.isArray(panel.steps) ? panel.steps : [];
+        const materials = panel.materials || {};
+        const available = Array.isArray(materials.available) ? materials.available : [];
+        const missing = Array.isArray(materials.missing) ? materials.missing : [];
+        return `
+          <article class="card">
+            <div class="detail-header">
+              <h3>${escapeHtml(panel.title || "Operations")}</h3>
+              ${chip(panel.key || "operation")}
+            </div>
+            <p>${escapeHtml(panel.summary || "")}</p>
+            ${
+              metrics.length
+                ? `<div class="chip-row">${metrics.map((metric) => chip(`${metric.label}: ${metric.value}`)).join("")}</div>`
+                : ""
+            }
+            ${
+              zones.length
+                ? `
+                  <h4>Still Needs Work</h4>
+                  <div class="table-wrap">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Area</th>
+                          <th>Remaining</th>
+                          <th>Status</th>
+                          <th>Work Required</th>
+                          <th>Evidence</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        ${zones
+                          .map(
+                            (zone) => `
+                              <tr>
+                                <td><strong>${escapeHtml(zone.area || "")}</strong></td>
+                                <td>${escapeHtml(zone.remaining || "")}</td>
+                                <td>${statusChip(zone.status || "pending")}</td>
+                                <td>${escapeHtml(zone.work_required || "")}</td>
+                                <td>${escapeHtml(zone.evidence_count || "0")}</td>
+                              </tr>
+                            `
+                          )
+                          .join("")}
+                      </tbody>
+                    </table>
+                  </div>
+                `
+                : ""
+            }
+            ${
+              steps.length
+                ? `
+                  <h4>Steps Before Primer</h4>
+                  ${renderStepsList(steps)}
+                `
+                : ""
+            }
+            ${
+              available.length || missing.length
+                ? `
+                  <div class="operation-materials">
+                    <div>
+                      <h4>Available</h4>
+                      ${renderPlainList(available)}
+                    </div>
+                    <div>
+                      <h4>Still Missing / Lock</h4>
+                      ${renderPlainList(missing)}
+                    </div>
+                  </div>
+                `
+                : ""
+            }
+          </article>
+        `;
+      })
+      .join("");
+  }
+
+  function renderSubtaskGroups(groups) {
+    const sourceGroups = Array.isArray(groups) ? groups : [];
+    if (!sourceGroups.length) {
+      return "";
+    }
+    return sourceGroups
+      .map((group) => {
+        const subtasks = Array.isArray(group.subtasks) ? group.subtasks : [];
+        return `
+          <article class="card">
+            <div class="detail-header">
+              <h3>${escapeHtml(group.title || "Sub-Tasks")}</h3>
+              ${chip(`${subtasks.length} sub-tasks`)}
+            </div>
+            <p>${escapeHtml(group.summary || "")}</p>
+            ${
+              subtasks.length
+                ? `
+                  <div class="subtask-grid">
+                    ${subtasks.map((subtask) => renderSubtaskCard(subtask)).join("")}
+                  </div>
+                `
+                : '<p class="small-muted">No sub-tasks mapped yet.</p>'
+            }
+          </article>
+        `;
+      })
+      .join("");
+  }
+
+  function renderSubtaskListSection(title, items) {
+    const sourceItems = Array.isArray(items) ? items.filter((item) => cleanString(item)) : [];
+    if (!sourceItems.length) {
+      return "";
+    }
+    return `
+      <div class="subtask-section">
+        <h5>${escapeHtml(title)}</h5>
+        ${renderPlainList(sourceItems)}
+      </div>
+    `;
+  }
+
+  function renderSubtaskCard(subtask) {
+    const images = dedupeImages(Array.isArray(subtask.images) ? subtask.images : []);
+    const processSteps = Array.isArray(subtask.process_steps) ? subtask.process_steps.filter((item) => cleanString(item)) : [];
+    const tools = Array.isArray(subtask.tools) ? subtask.tools.filter((item) => cleanString(item)) : [];
+    const supplies = Array.isArray(subtask.supplies) ? subtask.supplies.filter((item) => cleanString(item)) : [];
+    const parts = Array.isArray(subtask.parts) ? subtask.parts.filter((item) => cleanString(item)) : [];
+    const registeredItems = Array.isArray(subtask.registered_items)
+      ? subtask.registered_items.filter((item) => cleanString(item))
+      : [];
+    const safety = Array.isArray(subtask.safety) ? subtask.safety.filter((item) => cleanString(item)) : [];
+    return `
+      <section class="subtask-card">
+        <div class="detail-header">
+          <h4>${escapeHtml(subtask.title || "Sub-task")}</h4>
+          ${statusChip(subtask.status || "pending")}
+        </div>
+        <div class="chip-row">
+          ${subtask.priority ? chip(`Priority: ${subtask.priority}`) : ""}
+          ${subtask.remaining ? chip(`Remaining: ${subtask.remaining}`) : ""}
+          ${chip(`${images.length} images`)}
+        </div>
+        ${subtask.instruction ? `<p><strong>Instruction:</strong> ${escapeHtml(subtask.instruction || "")}</p>` : ""}
+        ${
+          processSteps.length
+            ? `
+              <div class="subtask-process">
+                <h5>Process</h5>
+                <ol>
+                  ${processSteps.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+                </ol>
+              </div>
+            `
+            : ""
+        }
+        <div class="subtask-sections">
+          ${renderSubtaskListSection("Tools", tools)}
+          ${renderSubtaskListSection("Supplies", supplies)}
+          ${renderSubtaskListSection("Parts", parts)}
+          ${renderSubtaskListSection("Registered Items", registeredItems)}
+          ${renderSubtaskListSection("Safety", safety)}
+        </div>
+        ${subtask.hold_point ? `<p class="small-muted"><strong>Hold:</strong> ${escapeHtml(subtask.hold_point || "")}</p>` : ""}
+        ${images.length ? renderGallery(images) : '<p class="small-muted">No images linked to this sub-task.</p>'}
+      </section>
+    `;
+  }
+
+  function renderPlainList(items) {
+    const sourceItems = Array.isArray(items) ? items : [];
+    if (!sourceItems.length) {
+      return '<p class="small-muted">None recorded.</p>';
+    }
+    return `
+      <ul class="plain-list">
+        ${sourceItems.map((item) => `<li class="plain-item">${escapeHtml(item || "")}</li>`).join("")}
+      </ul>
     `;
   }
 
@@ -1128,10 +1515,13 @@
           .map((ws) => {
             const leadImage = chooseWorkstreamLeadImage(ws);
             return `
-              <article class="card">
+              <article class="card overview-workstream-card" data-open-workstream-id="${escapeHtml(ws.id)}">
                 <div class="detail-header">
                   <h3>${escapeHtml(ws.title)}</h3>
-                  ${statusChip(ws.status)}
+                  <div class="overview-card-actions">
+                    ${statusChip(ws.status)}
+                    <button class="overview-open-btn" data-open-workstream-id="${escapeHtml(ws.id)}" type="button" aria-label="Open ${escapeHtml(ws.title)} workstream">Open</button>
+                  </div>
                 </div>
                 <p class="small-muted">${chip(`Priority: ${formatToken(ws.priority)}`)} ${chip(`Phase: ${formatToken(ws.phase)}`)}</p>
                 <p><strong>Next:</strong> ${escapeHtml(ws.next_action || "No action recorded")}</p>
@@ -1282,11 +1672,16 @@
         <p class="small-muted">${escapeHtml(active.notes || "")}</p>
       </article>
 
+      ${renderWorkstreamRequirements(active)}
+
       <article class="card">
         <h3>Evidence Media</h3>
         <p class="small-muted">${escapeHtml(filteredEvidenceCount || 0)} unique media items across evidence sets${filteredVideoCount ? ` (${escapeHtml(filteredVideoCount)} videos)` : ""}.</p>
         ${renderEvidenceSets(filteredEvidenceSets)}
       </article>
+
+      ${renderSubtaskGroups(active.subtask_groups)}
+      ${active.subtask_groups && active.subtask_groups.length ? "" : renderOperationPanels(active.operation_panels)}
 
       <article class="card">
         <h3>Guided Steps</h3>

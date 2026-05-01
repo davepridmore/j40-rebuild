@@ -1027,7 +1027,208 @@ CHASSIS_20260422_OVERRIDES: dict[str, Classification] = {
     ),
 }
 
+CHASSIS_20260501_ENGINE_CLEANING_FILES = (
+    "20260501_194535_gp_mZ25Ou4A.jpg",
+    "20260501_194508_gp_aSPxPLDw.jpg",
+    "20260501_194458_gp_wd1x56gQ.jpg",
+    "20260501_194451_gp_gDugUCjQ.jpg",
+    "20260501_194435_gp_ewUJAfPA.jpg",
+    "20260501_194427_gp_QjfOBtTQ.jpg",
+    "20260501_194421_gp_toAeFYqg.jpg",
+    "20260501_194414_gp_gdDllc8Q.jpg",
+    "20260501_194402_gp_W9J4rcsw.jpg",
+    "20260501_194344_gp_V7P0qatA.jpg",
+    "20260501_194338_gp_81Nj4SVA.jpg",
+    "20260501_194330_gp_CogcrEXA.jpg",
+    "20260501_220352_gp_ZpTWaO5Q.jpg",
+    "20260501_215603_gp_p8KX4pAw.jpg",
+)
+
+CHASSIS_20260501_REAR_AXLE_FILES = (
+    "20260501_194322_gp_XuRtjN4w.jpg",
+    "20260501_194313_gp_lfUqLibA.jpg",
+    "20260501_194305_gp_EllBGvXA.jpg",
+)
+
+CHASSIS_20260501_REAR_MID_FRAME_FILES = (
+    "20260501_194203_gp_9nXwy2XQ.jpg",
+    "20260501_194151_gp_NqgqjDEQ.jpg",
+    "20260501_194144_gp_P5PojIhw.jpg",
+    "20260501_194137_gp_S1qvWECw.jpg",
+    "20260501_194106_gp_e4CETkdg.jpg",
+    "20260501_194101_gp_3xKjQSsQ.jpg",
+    "20260501_194056_gp_p1erpz8w.jpg",
+    "20260501_194041_gp_6zRIFJUw.jpg",
+    "20260501_194026_gp_gjPjhxdA.jpg",
+)
+
+CHASSIS_20260501_FRONT_FRAME_FILES = (
+    "20260501_194014_gp_nWBXweFA.jpg",
+    "20260501_194006_gp_AU1Lw9GQ.jpg",
+    "20260501_193958_gp_yhnX0HAQ.jpg",
+    "20260501_193953_gp_XQtysikA.jpg",
+    "20260501_193944_gp_smzZc4nw.jpg",
+    "20260501_193935_gp_FPwZZHZA.jpg",
+    "20260501_193924_gp_KK717O7g.jpg",
+    "20260501_193915_gp_lII00tCA.jpg",
+    "20260501_193904_gp_GgWYRulA.jpg",
+    "20260501_193856_gp_M78kWBlQ.jpg",
+    "20260501_193847_gp_uHWO7Bdw.jpg",
+    "20260501_193841_gp_ZwpHFiMA.jpg",
+)
+
+CHASSIS_20260501_BODY_MOUNT_RAIL_FILES = (
+    "20260501_193833_gp_Slpuijyg.jpg",
+    "20260501_193826_gp_Qhz88J4g.jpg",
+    "20260501_193811_gp_uv8kwbxw.jpg",
+    "20260501_193805_gp_VgTc8wYQ.jpg",
+    "20260501_193624_gp_ocLE7cMQ.jpg",
+    "20260501_193755_gp_cuaY6sgg.jpg",
+    "20260501_193618_gp_EFciJdww.jpg",
+    "20260501_193609_gp_f5PDj87Q.jpg",
+    "20260501_193554_gp_EU4bmOlg.jpg",
+    "20260501_193603_gp_9zd2mD6w.jpg",
+    "20260501_193542_gp_U7e0J0iA.jpg",
+    "20260501_193533_gp_sDErdvGw.jpg",
+)
+
+RUBBER_RECREATION_20260502_FILES = (
+    "20260502_004201_gp_zfUSmKJg.jpg",
+    "20260502_004215_gp_evgCLjSw.jpg",
+    "20260502_004222_gp_PKRe5HSQ.jpg",
+    "20260502_004231_gp_CfosvPIg.jpg",
+    "20260502_004254_gp_Hm9RR5DQ.jpg",
+    "20260502_004314_gp_wuzpgNrA.jpg",
+    "20260502_004337_gp_m2OagYpg.jpg",
+    "20260502_004345_gp_yK8VYzMQ.jpg",
+    "20260502_004401_gp_otUSjgGA.jpg",
+    "20260502_004413_gp_Qno8OVRg.jpg",
+    "20260502_004419_gp_ZPXJRBzg.jpg",
+    "20260502_004429_gp_KJHxGcCA.jpg",
+    "20260502_004437_gp_f1TySzww.jpg",
+    "20260502_004442_gp_7WcFHjLQ.jpg",
+)
+
+PIPE_FABRICATION_20260502_FILES = (
+    "20260502_004044_gp_Hx4Yo0Qg.jpg",
+    "20260502_004106_gp_wlYlUahA.jpg",
+    "20260502_004120_gp_7Jw9Zyrg.jpg",
+    "20260502_004133_gp_ZEpqmARA.jpg",
+    "20260502_004139_gp_jt1dGw4A.jpg",
+    "20260502_004145_gp_e8soxsyA.jpg",
+)
+
+PIPE_SAMPLE_SORTING_20260502_FILES = (
+    "20260502_005740_gp_Qiat03EQ.jpg",
+)
+
+CHASSIS_20260501_OVERRIDES: dict[str, Classification] = {
+    **{
+        file_name: c(
+            "engine_bay",
+            "engine_powertrain_cleaning_baseline",
+            "mechanical_cleaning",
+            "dirty_cleaning_required",
+            "high",
+            ("body_off", "engine", "transmission", "cleaning", "pressure_sprayer_plan"),
+            "May 1 body-off engine/powertrain baseline before degreaser, controlled pressure cleaning, leak check, and service inspection.",
+        )
+        for file_name in CHASSIS_20260501_ENGINE_CLEANING_FILES
+    },
+    **{
+        file_name: c(
+            "chassis_underside",
+            "rear_axle_spring_hanger_and_crossmember",
+            "chassis_fixing",
+            "wire_brushed_partial_cleaning_in_progress",
+            "high",
+            ("body_off", "chassis", "rear_axle", "leaf_spring", "wire_brushed", "rust_prep"),
+            "May 1 status photo after wire brushing; rear axle, spring hanger, and crossmember detail still need edge and bracket cleanup before coating.",
+        )
+        for file_name in CHASSIS_20260501_REAR_AXLE_FILES
+    },
+    **{
+        file_name: c(
+            "chassis_underside",
+            "rear_mid_frame_rail_and_hard_line_detail",
+            "chassis_fixing",
+            "wire_brushed_partial_cleaning_in_progress",
+            "high",
+            ("body_off", "chassis", "frame_rail", "hard_lines", "crossmember", "wire_brushed", "rust_prep"),
+            "May 1 status photo after wire brushing; rear/mid rail flats are partly cleaned but edges, weld toes, holes, and hard-line brackets remain inspection priorities.",
+        )
+        for file_name in CHASSIS_20260501_REAR_MID_FRAME_FILES
+    },
+    **{
+        file_name: c(
+            "chassis_underside",
+            "front_frame_horns_bumper_and_steering_area",
+            "chassis_fixing",
+            "wire_brushed_partial_cleaning_in_progress",
+            "high",
+            ("body_off", "chassis", "front_frame_horns", "bumper", "steering", "wire_brushed", "rust_prep"),
+            "May 1 status photo after wire brushing; front horns, steering area, bumper/winch brackets, and crossmember junctions need final detail cleanup and inspection.",
+        )
+        for file_name in CHASSIS_20260501_FRONT_FRAME_FILES
+    },
+    **{
+        file_name: c(
+            "chassis_underside",
+            "frame_rail_body_mount_and_crossmember_detail",
+            "chassis_fixing",
+            "wire_brushed_partial_cleaning_in_progress",
+            "high",
+            ("body_off", "chassis", "frame_rail", "body_mount", "crossmember", "wire_brushed", "rust_prep"),
+            "May 1 status photo after wire brushing; outer rail faces are mostly exposed, with remaining rust/dust concentrated at top flanges, lower edges, brackets, and body-mount pads.",
+        )
+        for file_name in CHASSIS_20260501_BODY_MOUNT_RAIL_FILES
+    },
+}
+
 FILE_OVERRIDES.update(CHASSIS_20260422_OVERRIDES)
+FILE_OVERRIDES.update(CHASSIS_20260501_OVERRIDES)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "procurement_inventory",
+            "rubber_parts_recreation_samples",
+            "procurement_reconciliation",
+            "candidate_selection",
+            "high",
+            ("rubber", "body_mount", "sample", "sleeve", "shim", "recreation", "fabrication"),
+            "May 2 starter collection for recreating body-mount/front-support rubber parts; user-selected candidate photo pending final selection and measurement tagging.",
+        )
+        for file_name in RUBBER_RECREATION_20260502_FILES
+    }
+)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "engine_bay",
+            "cooling_pipe_fabrication_samples",
+            "mechanical_baseline",
+            "fabrication_spec_capture",
+            "high",
+            ("cooling", "pipe", "radiator_hose", "metal_pipe", "sample", "fabrication", "made_to_order", "measurement"),
+            "May 2 selected pipe fabrication sample set; use for made-to-order cooling/engine pipe spec with physical measurement hold points.",
+        )
+        for file_name in PIPE_FABRICATION_20260502_FILES
+    }
+)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "engine_bay",
+            "replacement_pipe_hose_sample_sorting",
+            "mechanical_baseline",
+            "sample_sorting_for_acquisition",
+            "high",
+            ("pipe", "hose", "sample", "replacement_pipe", "acquisition", "fabrication", "measurement"),
+            "May 2 additional loose pipe/hose sample photo for replacement-pipes sorting; use only with physical measurement and installed-location assignment.",
+        )
+        for file_name in PIPE_SAMPLE_SORTING_20260502_FILES
+    }
+)
 FILE_OVERRIDES.update(
     {
         "20260422_003700_gp_gFb0LBcw.jpg": c(
@@ -1049,13 +1250,13 @@ FILE_OVERRIDES.update(
             "Reference image only; not current-vehicle chassis evidence.",
         ),
         "20260422_034358_gp_Bg6nSlPw.jpg": c(
-            "documentation_reference",
-            "disputed_grommet_set_reference",
-            "reference_material",
-            "image_disputed",
-            "low",
-            ("rubber", "grommet", "inventory", "disputed"),
-            "User correction 2026-05-01: this is not the grommet set image; do not use as received-item evidence.",
+            "procurement_inventory",
+            "rubber_grommet_assortment",
+            "procurement_reconciliation",
+            "received_item_evidence",
+            "high",
+            ("rubber", "grommet", "inventory", "received"),
+            "User correction 2026-05-01: use as actual grommet assortment photo evidence, not a disputed placeholder.",
         ),
         "20260422_074709_gp_o4wiXyjA.jpg": c(
             "interior_cabin",
