@@ -22,6 +22,7 @@ data/raw/imports/**/api_key*
 node_modules/
 tools/wweb-mcp-local/node_modules/
 **/__pycache__/
+.deploy/
 
 # Local staging inboxes and transient working files.
 data/inbox/photos/

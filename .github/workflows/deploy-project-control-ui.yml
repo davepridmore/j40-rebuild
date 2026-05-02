@@ -1,0 +1,105 @@
+name: Deploy Project Control UI
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/deploy-project-control-ui.yml"
+      - "data/manual/**"
+      - "data/processed/generated/**"
+      - "deliverables/selling_site_images/images/**"
+      - "deliverables/selling_site_images/manifest.csv"
+      - "docs/project-control-ui/**"
+      - "photos/**"
+      - "scripts/build_project_control_ui.py"
+      - "scripts/stage_project_control_ui_deploy.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+env:
+  AWS_REGION: ap-southeast-1
+  S3_BUCKET: j40-rebuild-dashboard
+  STAGE_DIR: .deploy/project-control-ui-site
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Rebuild dashboard data
+        run: python3 scripts/build_project_control_ui.py
+
+      - name: Stage public dashboard artifact
+        run: python3 scripts/stage_project_control_ui_deploy.py --output-dir "$STAGE_DIR"
+
+      - name: Create or update S3 website bucket
+        run: |
+          set -euo pipefail
+
+          if aws s3api head-bucket --bucket "$S3_BUCKET" 2>/dev/null; then
+            echo "Using existing bucket: $S3_BUCKET"
+          else
+            echo "Creating bucket: $S3_BUCKET"
+            if [ "$AWS_REGION" = "us-east-1" ]; then
+              aws s3api create-bucket --bucket "$S3_BUCKET" --region "$AWS_REGION"
+            else
+              aws s3api create-bucket \
+                --bucket "$S3_BUCKET" \
+                --region "$AWS_REGION" \
+                --create-bucket-configuration LocationConstraint="$AWS_REGION"
+            fi
+          fi
+
+          aws s3api put-bucket-tagging \
+            --bucket "$S3_BUCKET" \
+            --tagging "TagSet=[{Key=Owner,Value=private-pridmoredave},{Key=Project,Value=J40},{Key=ManagedBy,Value=GitHubActions}]"
+
+          aws s3api put-public-access-block \
+            --bucket "$S3_BUCKET" \
+            --public-access-block-configuration \
+              BlockPublicAcls=false,IgnorePublicAcls=false,BlockPublicPolicy=false,RestrictPublicBuckets=false
+
+          aws s3api put-bucket-policy \
+            --bucket "$S3_BUCKET" \
+            --policy "{
+              \"Version\":\"2012-10-17\",
+              \"Statement\":[{
+                \"Sid\":\"PublicReadDashboardSite\",
+                \"Effect\":\"Allow\",
+                \"Principal\":\"*\",
+                \"Action\":\"s3:GetObject\",
+                \"Resource\":\"arn:aws:s3:::$S3_BUCKET/*\"
+              }]
+            }"
+
+          aws s3api put-bucket-website \
+            --bucket "$S3_BUCKET" \
+            --website-configuration '{
+              "IndexDocument": {"Suffix": "index.html"},
+              "ErrorDocument": {"Key": "index.html"}
+            }'
+
+      - name: Deploy staged files
+        run: |
+          set -euo pipefail
+          aws s3 sync "$STAGE_DIR" "s3://$S3_BUCKET" \
+            --delete \
+            --only-show-errors \
+            --cache-control "public,max-age=300"
+
+      - name: Print website URL
+        run: |
+          echo "Project Control UI:"
+          echo "http://${S3_BUCKET}.s3-website-${AWS_REGION}.amazonaws.com/docs/project-control-ui/"
