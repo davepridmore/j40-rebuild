@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-02T15:17:56+05:00",
+  "generated_at": "2026-05-02T15:41:37+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -3117,10 +3117,10 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_primer",
+              "556870547",
+              "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
               "zinc-rich",
               "two-pack",
-              "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-              "556870547",
               "build",
               "zinc",
               "rich"
@@ -20639,9 +20639,9 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_daraz_jubilee_hose_clip_assortment_30pc",
-              "645582306",
               "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
               "3011629985",
+              "645582306",
               "jubilee",
               "hose",
               "clip",
@@ -29212,10 +29212,10 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_primer",
+            "556870547",
+            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
             "zinc-rich",
             "two-pack",
-            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-            "556870547",
             "build",
             "zinc",
             "rich"
@@ -29436,9 +29436,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_daraz_jubilee_hose_clip_assortment_30pc",
-            "645582306",
             "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
             "3011629985",
+            "645582306",
             "jubilee",
             "hose",
             "clip",
@@ -29695,10 +29695,10 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_primer",
+            "556870547",
+            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
             "zinc-rich",
             "two-pack",
-            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-            "556870547",
             "build",
             "zinc",
             "rich"
@@ -29857,9 +29857,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_daraz_jubilee_hose_clip_assortment_30pc",
-            "645582306",
             "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
             "3011629985",
+            "645582306",
             "jubilee",
             "hose",
             "clip",
@@ -30114,10 +30114,10 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_primer",
+            "556870547",
+            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
             "zinc-rich",
             "two-pack",
-            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-            "556870547",
             "build",
             "zinc",
             "rich"
@@ -30936,9 +30936,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_daraz_jubilee_hose_clip_assortment_30pc",
-            "645582306",
             "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
             "3011629985",
+            "645582306",
             "jubilee",
             "hose",
             "clip",
@@ -33978,8 +33978,8 @@ window.J40_DASHBOARD_DATA = {
     "summary_by_type": [
       {
         "supply_type": "tool",
-        "previously": 38,
-        "in_process": 21,
+        "previously": 41,
+        "in_process": 18,
         "still_required": 5,
         "total": 64
       },
@@ -38391,6 +38391,164 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "tool_harden_50lb_magnetic_welding_holder_765050",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Harden 50LB Magnetic Welding Holder 765050",
+          "vendor": "Toolsmart.pk",
+          "amount": "4760",
+          "currency": "PKR",
+          "workstream": "body_chassis",
+          "status_group": "previously",
+          "status_detail": "received",
+          "procurement_stage": "received",
+          "payment_status": "paid",
+          "delivery_status": "received",
+          "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7|user_update_2026-05-02_toolsmart_tm25240_welding_items_received",
+          "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 4 line total PKR 4760. Fulfillment/review emails exist but local receipt photo is still not attached. User confirmed received on 2026-05-02.",
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/harden-50lb-magnetic-welding-holder-765050",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/765050.avif?v=1759317690",
+              "label": "toolsmart.pk"
+            }
+          ],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/expenses_harden_50lb_magnetic_welding_holder_7650_bdc4cf32ea58.webp",
+            "caption": "Harden 50LB Magnetic Welding Holder 765050 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "tool_harden_50lb_magnetic_welding_holder_765050",
+              "harden",
+              "50lb",
+              "magnetic",
+              "welding",
+              "holder",
+              "765050",
+              "toolsmart"
+            ],
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/harden-50lb-magnetic-welding-holder-765050",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/765050.avif?v=1759317690",
+            "match_score": 233
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_total_inverter_mma_welding_machine_tw220069",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Total Inverter MMA welding machine TW220069",
+          "vendor": "Toolsmart.pk",
+          "amount": "55100",
+          "currency": "PKR",
+          "workstream": "body_chassis",
+          "status_group": "previously",
+          "status_detail": "received",
+          "procurement_stage": "received",
+          "payment_status": "paid",
+          "delivery_status": "received",
+          "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_msg_19dbdd660bbcfbee|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7|user_update_2026-05-02_toolsmart_tm25240_welding_items_received",
+          "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 1 line total PKR 55100. Review email 2026-04-24 references this exact item; local receipt photo is still not attached. User confirmed received on 2026-05-02.",
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/total-inverter-mma-welding-machine-tw220069",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/TW220069.jpg?v=1762431147",
+              "label": "toolsmart.pk"
+            }
+          ],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/expenses_total_inverter_mma_welding_machine_tw220_b08f8cecc7af.jpg",
+            "caption": "Total Inverter MMA welding machine TW220069 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "tool_total_inverter_mma_welding_machine_tw220069",
+              "total",
+              "inverter",
+              "mma",
+              "welding",
+              "machine",
+              "tw220069",
+              "toolsmart"
+            ],
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/total-inverter-mma-welding-machine-tw220069",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/TW220069.jpg?v=1762431147",
+            "match_score": 233
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_total_welding_leather_gloves_16_tsp15161",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Total Welding leather gloves 16\" TSP15161",
+          "vendor": "Toolsmart.pk",
+          "amount": "5280",
+          "currency": "PKR",
+          "workstream": "body_chassis",
+          "status_group": "previously",
+          "status_detail": "received",
+          "procurement_stage": "received",
+          "payment_status": "paid",
+          "delivery_status": "received",
+          "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_msg_19ddcc60fed835a5|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7|user_update_2026-05-02_toolsmart_tm25240_welding_items_received",
+          "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 2 line total PKR 5280. Review email 2026-04-30 references this exact item; local receipt photo is still not attached. User confirmed received on 2026-05-02.",
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/total-welding-leather-gloves-16-tsp15161",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/TSP15161.jpg?v=1735978616",
+              "label": "toolsmart.pk"
+            }
+          ],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/expenses_total_welding_leather_gloves_16_tsp15161_5256bf447fe3.webp",
+            "caption": "Total Welding leather gloves 16\" TSP15161 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "tool_total_welding_leather_gloves_16_tsp15161",
+              "total",
+              "welding",
+              "leather",
+              "gloves",
+              "tsp15161",
+              "toolsmart"
+            ],
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/total-welding-leather-gloves-16-tsp15161",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/TSP15161.jpg?v=1735978616",
+            "match_score": 233
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "tool_electrical_test_kit",
           "supply_type": "tool",
           "inventory_group": "tools",
@@ -38896,9 +39054,9 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_daraz_jubilee_hose_clip_assortment_30pc",
-              "645582306",
               "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
               "3011629985",
+              "645582306",
               "jubilee",
               "hose",
               "clip",
@@ -39126,10 +39284,10 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_primer",
+              "556870547",
+              "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
               "zinc-rich",
               "two-pack",
-              "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-              "556870547",
               "build",
               "zinc",
               "rich"
@@ -39248,59 +39406,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "tool_harden_50lb_magnetic_welding_holder_765050",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "Harden 50LB Magnetic Welding Holder 765050",
-          "vendor": "Toolsmart.pk",
-          "amount": "4760",
-          "currency": "PKR",
-          "workstream": "body_chassis",
-          "status_group": "in_process",
-          "status_detail": "ordered",
-          "procurement_stage": "ordered_pending_delivery",
-          "payment_status": "paid",
-          "delivery_status": "pending_delivery",
-          "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
-          "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 4 line total PKR 4760. Fulfillment/review emails exist but local receipt photo is still not attached.",
-          "links": [
-            {
-              "url": "https://www.toolsmart.pk/products/harden-50lb-magnetic-welding-holder-765050",
-              "label": "toolsmart.pk"
-            },
-            {
-              "url": "http://www.toolsmart.pk/cdn/shop/files/765050.avif?v=1759317690",
-              "label": "toolsmart.pk"
-            }
-          ],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/expenses_harden_50lb_magnetic_welding_holder_7650_bdc4cf32ea58.webp",
-            "caption": "Harden 50LB Magnetic Welding Holder 765050 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "tool_harden_50lb_magnetic_welding_holder_765050",
-              "harden",
-              "50lb",
-              "magnetic",
-              "welding",
-              "holder",
-              "765050",
-              "toolsmart"
-            ],
-            "match_basis": "selling_site_match",
-            "listing_url": "https://www.toolsmart.pk/products/harden-50lb-magnetic-welding-holder-765050",
-            "image_url": "http://www.toolsmart.pk/cdn/shop/files/765050.avif?v=1759317690",
-            "match_score": 233
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "tool_harden_cup_wire_brush_100mm_m14",
           "supply_type": "tool",
           "inventory_group": "tools",
@@ -39349,111 +39454,6 @@ window.J40_DASHBOARD_DATA = {
             "match_basis": "selling_site_match",
             "listing_url": "https://www.toolsmart.pk/products/harden-cup-wire-brush-with-nutsize100mm-x-m14x2-0",
             "image_url": "https://www.toolsmart.pk/cdn/shop/products/611503.jpg?v=1714544620&width=620",
-            "match_score": 233
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "tool_total_inverter_mma_welding_machine_tw220069",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "Total Inverter MMA welding machine TW220069",
-          "vendor": "Toolsmart.pk",
-          "amount": "55100",
-          "currency": "PKR",
-          "workstream": "body_chassis",
-          "status_group": "in_process",
-          "status_detail": "ordered",
-          "procurement_stage": "ordered_pending_delivery",
-          "payment_status": "paid",
-          "delivery_status": "pending_delivery",
-          "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_msg_19dbdd660bbcfbee|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
-          "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 1 line total PKR 55100. Review email 2026-04-24 references this exact item; local receipt photo is still not attached.",
-          "links": [
-            {
-              "url": "https://www.toolsmart.pk/products/total-inverter-mma-welding-machine-tw220069",
-              "label": "toolsmart.pk"
-            },
-            {
-              "url": "http://www.toolsmart.pk/cdn/shop/files/TW220069.jpg?v=1762431147",
-              "label": "toolsmart.pk"
-            }
-          ],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/expenses_total_inverter_mma_welding_machine_tw220_b08f8cecc7af.jpg",
-            "caption": "Total Inverter MMA welding machine TW220069 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "tool_total_inverter_mma_welding_machine_tw220069",
-              "total",
-              "inverter",
-              "mma",
-              "welding",
-              "machine",
-              "tw220069",
-              "toolsmart"
-            ],
-            "match_basis": "selling_site_match",
-            "listing_url": "https://www.toolsmart.pk/products/total-inverter-mma-welding-machine-tw220069",
-            "image_url": "http://www.toolsmart.pk/cdn/shop/files/TW220069.jpg?v=1762431147",
-            "match_score": 233
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "tool_total_welding_leather_gloves_16_tsp15161",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "Total Welding leather gloves 16\" TSP15161",
-          "vendor": "Toolsmart.pk",
-          "amount": "5280",
-          "currency": "PKR",
-          "workstream": "body_chassis",
-          "status_group": "in_process",
-          "status_detail": "ordered",
-          "procurement_stage": "ordered_pending_delivery",
-          "payment_status": "paid",
-          "delivery_status": "pending_delivery",
-          "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_msg_19ddcc60fed835a5|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
-          "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 2 line total PKR 5280. Review email 2026-04-30 references this exact item; local receipt photo is still not attached.",
-          "links": [
-            {
-              "url": "https://www.toolsmart.pk/products/total-welding-leather-gloves-16-tsp15161",
-              "label": "toolsmart.pk"
-            },
-            {
-              "url": "http://www.toolsmart.pk/cdn/shop/files/TSP15161.jpg?v=1735978616",
-              "label": "toolsmart.pk"
-            }
-          ],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/expenses_total_welding_leather_gloves_16_tsp15161_5256bf447fe3.webp",
-            "caption": "Total Welding leather gloves 16\" TSP15161 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "tool_total_welding_leather_gloves_16_tsp15161",
-              "total",
-              "welding",
-              "leather",
-              "gloves",
-              "tsp15161",
-              "toolsmart"
-            ],
-            "match_basis": "selling_site_match",
-            "listing_url": "https://www.toolsmart.pk/products/total-welding-leather-gloves-16-tsp15161",
-            "image_url": "http://www.toolsmart.pk/cdn/shop/files/TSP15161.jpg?v=1735978616",
             "match_score": 233
           }
         },
@@ -39602,9 +39602,9 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "tool_daraz_mini_wire_brush_set_x2",
-              "192752152",
               "https://www.daraz.pk/products/i192752152-s1385484991.html?urlflag=true&mp=1",
               "1385484991",
+              "192752152",
               "mini",
               "wire",
               "brush",
@@ -39993,9 +39993,9 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "tool_daraz_safety_goggles_cleanup",
-              "3029400460",
               "649346371",
               "https://www.daraz.pk/products/i649346371-s3029400460.html?urlflag=true&mp=1",
+              "3029400460",
               "safety",
               "goggles",
               "protective",
@@ -42599,9 +42599,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_daraz_jubilee_hose_clip_assortment_30pc",
-            "645582306",
             "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
             "3011629985",
+            "645582306",
             "jubilee",
             "hose",
             "clip",
@@ -42863,10 +42863,10 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_primer",
+            "556870547",
+            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
             "zinc-rich",
             "two-pack",
-            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-            "556870547",
             "build",
             "zinc",
             "rich"
@@ -42951,9 +42951,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "tool_daraz_mini_wire_brush_set_x2",
-            "192752152",
             "https://www.daraz.pk/products/i192752152-s1385484991.html?urlflag=true&mp=1",
             "1385484991",
+            "192752152",
             "mini",
             "wire",
             "brush",
@@ -43175,59 +43175,6 @@ window.J40_DASHBOARD_DATA = {
           "listing_url": "https://www.toolsmart.pk/products/harden-3ton-hydraulic-trolley-jack-730213",
           "image_url": "http://www.toolsmart.pk/cdn/shop/files/images_9e4d235e-59e1-4a48-b776-36c68bddae3f.jpg?v=1759321292",
           "match_score": 239
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "tool_harden_50lb_magnetic_welding_holder_765050",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "Harden 50LB Magnetic Welding Holder 765050",
-        "vendor": "Toolsmart.pk",
-        "amount": "4760",
-        "currency": "PKR",
-        "workstream": "body_chassis",
-        "status_group": "in_process",
-        "status_detail": "ordered",
-        "procurement_stage": "ordered_pending_delivery",
-        "payment_status": "paid",
-        "delivery_status": "pending_delivery",
-        "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
-        "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 4 line total PKR 4760. Fulfillment/review emails exist but local receipt photo is still not attached.",
-        "links": [
-          {
-            "url": "https://www.toolsmart.pk/products/harden-50lb-magnetic-welding-holder-765050",
-            "label": "toolsmart.pk"
-          },
-          {
-            "url": "http://www.toolsmart.pk/cdn/shop/files/765050.avif?v=1759317690",
-            "label": "toolsmart.pk"
-          }
-        ],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/expenses_harden_50lb_magnetic_welding_holder_7650_bdc4cf32ea58.webp",
-          "caption": "Harden 50LB Magnetic Welding Holder 765050 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "selling_site_listing_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "tool_harden_50lb_magnetic_welding_holder_765050",
-            "harden",
-            "50lb",
-            "magnetic",
-            "welding",
-            "holder",
-            "765050",
-            "toolsmart"
-          ],
-          "match_basis": "selling_site_match",
-          "listing_url": "https://www.toolsmart.pk/products/harden-50lb-magnetic-welding-holder-765050",
-          "image_url": "http://www.toolsmart.pk/cdn/shop/files/765050.avif?v=1759317690",
-          "match_score": 233
         }
       },
       {
@@ -43519,9 +43466,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "tool_daraz_safety_goggles_cleanup",
-            "3029400460",
             "649346371",
             "https://www.daraz.pk/products/i649346371-s3029400460.html?urlflag=true&mp=1",
+            "3029400460",
             "safety",
             "goggles",
             "protective",
@@ -43531,59 +43478,6 @@ window.J40_DASHBOARD_DATA = {
           "listing_url": "https://www.daraz.pk/products/i649346371-s3029400460.html?urlFlag=true&mp=1",
           "image_url": "https://static-01.daraz.pk/p/6988bc488aa6f8214912cc5a51ec3f92.png",
           "match_score": 291
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "tool_total_inverter_mma_welding_machine_tw220069",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "Total Inverter MMA welding machine TW220069",
-        "vendor": "Toolsmart.pk",
-        "amount": "55100",
-        "currency": "PKR",
-        "workstream": "body_chassis",
-        "status_group": "in_process",
-        "status_detail": "ordered",
-        "procurement_stage": "ordered_pending_delivery",
-        "payment_status": "paid",
-        "delivery_status": "pending_delivery",
-        "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_msg_19dbdd660bbcfbee|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
-        "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 1 line total PKR 55100. Review email 2026-04-24 references this exact item; local receipt photo is still not attached.",
-        "links": [
-          {
-            "url": "https://www.toolsmart.pk/products/total-inverter-mma-welding-machine-tw220069",
-            "label": "toolsmart.pk"
-          },
-          {
-            "url": "http://www.toolsmart.pk/cdn/shop/files/TW220069.jpg?v=1762431147",
-            "label": "toolsmart.pk"
-          }
-        ],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/expenses_total_inverter_mma_welding_machine_tw220_b08f8cecc7af.jpg",
-          "caption": "Total Inverter MMA welding machine TW220069 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "selling_site_listing_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "tool_total_inverter_mma_welding_machine_tw220069",
-            "total",
-            "inverter",
-            "mma",
-            "welding",
-            "machine",
-            "tw220069",
-            "toolsmart"
-          ],
-          "match_basis": "selling_site_match",
-          "listing_url": "https://www.toolsmart.pk/products/total-inverter-mma-welding-machine-tw220069",
-          "image_url": "http://www.toolsmart.pk/cdn/shop/files/TW220069.jpg?v=1762431147",
-          "match_score": 233
         }
       },
       {
@@ -43637,58 +43531,6 @@ window.J40_DASHBOARD_DATA = {
           "listing_url": "https://www.toolsmart.pk/products/total-jack-stand-3ton-thjs0301",
           "image_url": "http://www.toolsmart.pk/cdn/shop/files/THJS0301-2.jpg?v=1693506770",
           "match_score": 236
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "tool_total_welding_leather_gloves_16_tsp15161",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "Total Welding leather gloves 16\" TSP15161",
-        "vendor": "Toolsmart.pk",
-        "amount": "5280",
-        "currency": "PKR",
-        "workstream": "body_chassis",
-        "status_group": "in_process",
-        "status_detail": "ordered",
-        "procurement_stage": "ordered_pending_delivery",
-        "payment_status": "paid",
-        "delivery_status": "pending_delivery",
-        "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_msg_19ddcc60fed835a5|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
-        "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 2 line total PKR 5280. Review email 2026-04-30 references this exact item; local receipt photo is still not attached.",
-        "links": [
-          {
-            "url": "https://www.toolsmart.pk/products/total-welding-leather-gloves-16-tsp15161",
-            "label": "toolsmart.pk"
-          },
-          {
-            "url": "http://www.toolsmart.pk/cdn/shop/files/TSP15161.jpg?v=1735978616",
-            "label": "toolsmart.pk"
-          }
-        ],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/expenses_total_welding_leather_gloves_16_tsp15161_5256bf447fe3.webp",
-          "caption": "Total Welding leather gloves 16\" TSP15161 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "selling_site_listing_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "tool_total_welding_leather_gloves_16_tsp15161",
-            "total",
-            "welding",
-            "leather",
-            "gloves",
-            "tsp15161",
-            "toolsmart"
-          ],
-          "match_basis": "selling_site_match",
-          "listing_url": "https://www.toolsmart.pk/products/total-welding-leather-gloves-16-tsp15161",
-          "image_url": "http://www.toolsmart.pk/cdn/shop/files/TSP15161.jpg?v=1735978616",
-          "match_score": 233
         }
       },
       {
@@ -47951,6 +47793,59 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "source": "expenses",
+        "source_ref": "tool_harden_50lb_magnetic_welding_holder_765050",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Harden 50LB Magnetic Welding Holder 765050",
+        "vendor": "Toolsmart.pk",
+        "amount": "4760",
+        "currency": "PKR",
+        "workstream": "body_chassis",
+        "status_group": "previously",
+        "status_detail": "received",
+        "procurement_stage": "received",
+        "payment_status": "paid",
+        "delivery_status": "received",
+        "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7|user_update_2026-05-02_toolsmart_tm25240_welding_items_received",
+        "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 4 line total PKR 4760. Fulfillment/review emails exist but local receipt photo is still not attached. User confirmed received on 2026-05-02.",
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/harden-50lb-magnetic-welding-holder-765050",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/765050.avif?v=1759317690",
+            "label": "toolsmart.pk"
+          }
+        ],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/expenses_harden_50lb_magnetic_welding_holder_7650_bdc4cf32ea58.webp",
+          "caption": "Harden 50LB Magnetic Welding Holder 765050 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "tool_harden_50lb_magnetic_welding_holder_765050",
+            "harden",
+            "50lb",
+            "magnetic",
+            "welding",
+            "holder",
+            "765050",
+            "toolsmart"
+          ],
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/harden-50lb-magnetic-welding-holder-765050",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/765050.avif?v=1759317690",
+          "match_score": 233
+        }
+      },
+      {
         "source": "workbook_tools",
         "source_ref": "workbook_tools#row_15",
         "supply_type": "tool",
@@ -48538,6 +48433,59 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "tool_total_inverter_mma_welding_machine_tw220069",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Total Inverter MMA welding machine TW220069",
+        "vendor": "Toolsmart.pk",
+        "amount": "55100",
+        "currency": "PKR",
+        "workstream": "body_chassis",
+        "status_group": "previously",
+        "status_detail": "received",
+        "procurement_stage": "received",
+        "payment_status": "paid",
+        "delivery_status": "received",
+        "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_msg_19dbdd660bbcfbee|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7|user_update_2026-05-02_toolsmart_tm25240_welding_items_received",
+        "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 1 line total PKR 55100. Review email 2026-04-24 references this exact item; local receipt photo is still not attached. User confirmed received on 2026-05-02.",
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/total-inverter-mma-welding-machine-tw220069",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/TW220069.jpg?v=1762431147",
+            "label": "toolsmart.pk"
+          }
+        ],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/expenses_total_inverter_mma_welding_machine_tw220_b08f8cecc7af.jpg",
+          "caption": "Total Inverter MMA welding machine TW220069 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "tool_total_inverter_mma_welding_machine_tw220069",
+            "total",
+            "inverter",
+            "mma",
+            "welding",
+            "machine",
+            "tw220069",
+            "toolsmart"
+          ],
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/total-inverter-mma-welding-machine-tw220069",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/TW220069.jpg?v=1762431147",
+          "match_score": 233
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "tool_total_round_steel_file_200mm_tht91386",
         "supply_type": "tool",
         "inventory_group": "tools",
@@ -48586,6 +48534,58 @@ window.J40_DASHBOARD_DATA = {
           "match_basis": "selling_site_match",
           "listing_url": "https://www.toolsmart.pk/products/total-round-steel-file-tht91386",
           "image_url": "http://www.toolsmart.pk/cdn/shop/products/THT91386.jpg?v=1621065864",
+          "match_score": 233
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_total_welding_leather_gloves_16_tsp15161",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Total Welding leather gloves 16\" TSP15161",
+        "vendor": "Toolsmart.pk",
+        "amount": "5280",
+        "currency": "PKR",
+        "workstream": "body_chassis",
+        "status_group": "previously",
+        "status_detail": "received",
+        "procurement_stage": "received",
+        "payment_status": "paid",
+        "delivery_status": "received",
+        "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_msg_19ddcc60fed835a5|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7|user_update_2026-05-02_toolsmart_tm25240_welding_items_received",
+        "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 2 line total PKR 5280. Review email 2026-04-30 references this exact item; local receipt photo is still not attached. User confirmed received on 2026-05-02.",
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/total-welding-leather-gloves-16-tsp15161",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/TSP15161.jpg?v=1735978616",
+            "label": "toolsmart.pk"
+          }
+        ],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/expenses_total_welding_leather_gloves_16_tsp15161_5256bf447fe3.webp",
+          "caption": "Total Welding leather gloves 16\" TSP15161 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "tool_total_welding_leather_gloves_16_tsp15161",
+            "total",
+            "welding",
+            "leather",
+            "gloves",
+            "tsp15161",
+            "toolsmart"
+          ],
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/total-welding-leather-gloves-16-tsp15161",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/TSP15161.jpg?v=1735978616",
           "match_score": 233
         }
       },
