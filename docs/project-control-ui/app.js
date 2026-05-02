@@ -1013,6 +1013,184 @@
     `;
   }
 
+  function renderReplacementPipeOrderReleaseTable(rows) {
+    const source = Array.isArray(rows) ? rows : [];
+    if (!source.length) {
+      return "";
+    }
+    const specReady = source.filter((row) => isSpecReadyStatus(row.spec_status || row.order_release_state)).length;
+    return `
+      <article class="card pipe-requirements-card">
+        <div class="detail-header">
+          <h3>Replacement Pipe Order Release</h3>
+          <div class="chip-row">
+            ${chip(`${specReady}/${source.length} Spec Ready`)}
+            ${chip(`${source.length} Order Lines`)}
+          </div>
+        </div>
+        <p class="small-muted">Exact order and fabrication lines for coolant, fuel, vacuum, breather, brake, clutch, and support-clip pipe work.</p>
+        <div class="table-wrap requirement-table-wrap">
+          <table class="requirement-table replacement-pipe-order-table">
+            <thead>
+              <tr>
+                <th>Line</th>
+                <th>Qty</th>
+                <th>Status</th>
+                <th>Exact Spec</th>
+                <th>Release Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${source
+                .map((row) => `
+                  <tr>
+                    <td>
+                      <strong>${escapeHtml(row.order_line_id || "")} · ${escapeHtml(row.item || "")}</strong>
+                      <div class="small-muted">${escapeHtml(row.part_number_or_code || "")}</div>
+                      <div class="small-muted">${escapeHtml(formatToken(row.route || ""))}</div>
+                    </td>
+                    <td>
+                      <div>Required: ${escapeHtml(row.qty_required || "-")}</div>
+                      <div class="small-muted">Order: ${escapeHtml(row.qty_to_order || "-")}</div>
+                    </td>
+                    <td>
+                      <div class="status-stack">
+                        ${statusChip(row.spec_status || "spec_ready")}
+                        ${statusChip(row.order_release_state || "spec_ready")}
+                      </div>
+                    </td>
+                    <td>
+                      ${escapeHtml(row.exact_order_spec || "")}
+                      ${row.material_spec ? `<div class="small-muted requirement-material">${escapeHtml(row.material_spec)}</div>` : ""}
+                      ${row.source_basis ? `<div class="small-muted requirement-material">Source: ${escapeHtml(row.source_basis)}</div>` : ""}
+                    </td>
+                    <td>
+                      ${escapeHtml(row.user_action_required || "")}
+                      ${row.do_not_order_if ? `<div class="requirement-action"><strong>Do not order if:</strong> ${escapeHtml(row.do_not_order_if)}</div>` : ""}
+                      ${row.notes ? `<div class="small-muted requirement-material">${escapeHtml(row.notes)}</div>` : ""}
+                    </td>
+                  </tr>
+                `)
+                .join("")}
+            </tbody>
+          </table>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderReplacementPipeReleaseActions(rows) {
+    const source = Array.isArray(rows) ? rows : [];
+    if (!source.length) {
+      return "";
+    }
+    const open = source.filter((row) => cleanString(row.status).toLowerCase() !== "closed").length;
+    return `
+      <article class="card pipe-requirements-card">
+        <div class="detail-header">
+          <h3>Replacement Pipe Release Actions</h3>
+          <div class="chip-row">
+            ${chip(`${open}/${source.length} Open`)}
+          </div>
+        </div>
+        <p class="small-muted">Physical checks that must close before held pipe, hose, hydraulic, and fabricated-line orders are released.</p>
+        <div class="table-wrap requirement-table-wrap">
+          <table class="requirement-table replacement-pipe-actions-table">
+            <thead>
+              <tr>
+                <th>Action</th>
+                <th>Status</th>
+                <th>Blocks</th>
+                <th>Record In</th>
+                <th>Reason</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${source
+                .map((row) => `
+                  <tr>
+                    <td>
+                      <strong>${escapeHtml(row.action_id || "")}</strong>
+                      <div>${escapeHtml(row.action || "")}</div>
+                      <div class="small-muted">${escapeHtml(formatToken(row.priority || ""))} · ${escapeHtml(formatToken(row.owner || ""))}</div>
+                    </td>
+                    <td>${statusChip(row.status || "open")}</td>
+                    <td>${escapeHtml(row.blocks_order_lines || "")}</td>
+                    <td>${escapeHtml(row.record_result_in || "")}</td>
+                    <td>${escapeHtml(row.why_it_matters || "")}</td>
+                  </tr>
+                `)
+                .join("")}
+            </tbody>
+          </table>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderReplacementPipeCircuitClosure(rows) {
+    const source = Array.isArray(rows) ? rows : [];
+    if (!source.length) {
+      return "";
+    }
+    const released = source.filter((row) => cleanString(row.release_status).toLowerCase() === "released").length;
+    return `
+      <article class="card pipe-requirements-card">
+        <div class="detail-header">
+          <h3>Replacement Pipe Circuit Closure</h3>
+          <div class="chip-row">
+            ${chip(`${released}/${source.length} Released`)}
+            ${chip(`${source.length} Circuits`)}
+          </div>
+        </div>
+        <p class="small-muted">Circuit-by-circuit closure sheet for final hose IDs, tube dimensions, threads/flares, templates, supports, and release status.</p>
+        <div class="table-wrap requirement-table-wrap">
+          <table class="requirement-table replacement-pipe-circuit-table">
+            <thead>
+              <tr>
+                <th>Circuit</th>
+                <th>Order Lines</th>
+                <th>Ends / Length</th>
+                <th>Tube / Fitting Detail</th>
+                <th>Status / Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${source
+                .map((row) => `
+                  <tr>
+                    <td>
+                      <strong>${escapeHtml(row.circuit_id || "")} · ${escapeHtml(row.pipe_or_line || "")}</strong>
+                      <div class="small-muted">${escapeHtml(row.vehicle_location || "")}</div>
+                      <div class="small-muted">${escapeHtml(formatToken(row.photo_status || ""))}</div>
+                    </td>
+                    <td>${escapeHtml(row.order_lines || "")}</td>
+                    <td>
+                      <div>A: ${escapeHtml(row.barb_or_fitting_a || "-")}</div>
+                      <div class="small-muted">B: ${escapeHtml(row.barb_or_fitting_b || "-")}</div>
+                      <div class="small-muted">Length: ${escapeHtml(row.route_length_mm || "-")}</div>
+                    </td>
+                    <td>
+                      <div>${escapeHtml(row.tube_or_hose_od_id || "")}</div>
+                      <div class="small-muted">Thread/flare: ${escapeHtml(row.thread_or_flare || "-")}</div>
+                      <div class="small-muted">Template: ${escapeHtml(row.bend_template_status || "-")}</div>
+                      <div class="small-muted">Support: ${escapeHtml(row.clip_support_status || "-")}</div>
+                    </td>
+                    <td>
+                      ${statusChip(row.release_status || "open")}
+                      <div class="small-muted">${escapeHtml(row.action_required || "")}</div>
+                      ${row.notes ? `<div class="small-muted requirement-material">${escapeHtml(row.notes)}</div>` : ""}
+                    </td>
+                  </tr>
+                `)
+                .join("")}
+            </tbody>
+          </table>
+        </div>
+      </article>
+    `;
+  }
+
   function renderWorkstreamRequirements(workstream) {
     const active = workstream || {};
     const rows = Array.isArray(active.requirements) && active.requirements.length
@@ -1030,10 +1208,15 @@
       ].join("");
     }
     if (active.id === "replacement_pipes") {
-      return renderRequirementTable(rows, {
-        title: "Replacement Pipe Requirements",
-        summary: "Exact make/buy/fabrication requirements with status gates for specification, acquisition, and installation.",
-      });
+      return [
+        renderRequirementTable(rows, {
+          title: "Replacement Pipe Requirements",
+          summary: "Exact make/buy/fabrication requirements with status gates for specification, acquisition, and installation.",
+        }),
+        renderReplacementPipeOrderReleaseTable(active.replacement_pipe_order_release_specs),
+        renderReplacementPipeReleaseActions(active.replacement_pipe_release_actions),
+        renderReplacementPipeCircuitClosure(active.replacement_pipe_circuit_closure),
+      ].join("");
     }
     if (active.id === "brake_system") {
       return renderRequirementTable(rows, {

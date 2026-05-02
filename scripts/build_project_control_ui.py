@@ -19,6 +19,9 @@ REASSEMBLY_PACKAGES_PATH = MANUAL_DIR / "reassembly_work_packages.csv"
 COMPONENT_JOBS_PATH = MANUAL_DIR / "component_jobs.csv"
 PHOTO_INVENTORY_PATH = MANUAL_DIR / "photo_inventory.csv"
 REPLACEMENT_PIPE_SPECS_PATH = MANUAL_DIR / "replacement_pipe_ordering_specs.csv"
+REPLACEMENT_PIPE_ORDER_RELEASE_SPECS_PATH = MANUAL_DIR / "replacement_pipe_order_release_specs.csv"
+REPLACEMENT_PIPE_RELEASE_ACTIONS_PATH = MANUAL_DIR / "replacement_pipe_release_actions.csv"
+REPLACEMENT_PIPE_CIRCUIT_CLOSURE_PATH = MANUAL_DIR / "replacement_pipe_circuit_closure_sheet.csv"
 CHASSIS_RUBBER_REQUIREMENTS_PATH = MANUAL_DIR / "chassis_rubber_requirements.csv"
 RUBBER_ORDERING_SPECS_PATH = MANUAL_DIR / "rubber_ordering_specs.csv"
 BODY_MOUNT_ORDER_RELEASE_SPECS_PATH = MANUAL_DIR / "body_mount_order_release_specs.csv"
@@ -344,7 +347,8 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
     "replacement_pipes": [
         ("Lock the replacement locations", "Keep only vehicle places where pipes, hoses, or hard lines will be replaced; exclude body rubbers and generic context photos."),
         ("Attach direct pipe photos", "Use curated pipe/location photos only, and mark missing close-ups explicitly for the next photo pass."),
-        ("Fill recreation specs", "Record OD/ID, barb or flare style, route length, bend/template needs, material, and source reference before ordering or fabrication."),
+        ("Fill recreation specs", "Use replacement_pipe_order_release_specs.csv for exact order lines, then record OD/ID, barb or flare style, route length, bend/template needs, material, and source reference before release."),
+        ("Close circuit release holds", "Complete replacement_pipe_release_actions.csv and replacement_pipe_circuit_closure_sheet.csv before buying or fabricating held pipe lines."),
         ("Dry-fit and pressure-test replacements", "Confirm routing, clearance, clip support, and leak-free operation before closing the pipe replacement track."),
     ],
     "brake_system": [
@@ -1950,6 +1954,70 @@ def build_replacement_pipe_requirements(
     photo_rows: list[dict[str, str]],
 ) -> list[dict[str, Any]]:
     return build_workstream_requirements(requirement_rows, photo_rows)
+
+
+def replacement_pipe_order_release_payload(rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    payload: list[dict[str, str]] = []
+    for row in rows:
+        release_state = clean(row.get("order_release_state"))
+        payload.append(
+            {
+                "order_line_id": clean(row.get("order_line_id")),
+                "route": clean(row.get("route")),
+                "item": clean(row.get("item")),
+                "part_number_or_code": clean(row.get("part_number_or_code")),
+                "qty_required": clean(row.get("qty_required")),
+                "qty_to_order": clean(row.get("qty_to_order")),
+                "spec_status": "spec_ready",
+                "order_release_state": release_state or "spec_ready",
+                "exact_order_spec": clean(row.get("exact_order_spec")),
+                "material_spec": clean(row.get("material_spec")),
+                "source_basis": clean(row.get("source_basis")),
+                "user_action_required": clean(row.get("user_action_required")),
+                "do_not_order_if": clean(row.get("do_not_order_if")),
+                "notes": clean(row.get("notes")),
+            }
+        )
+    return payload
+
+
+def replacement_pipe_release_action_payload(rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    return [
+        {
+            "action_id": clean(row.get("action_id")),
+            "priority": clean(row.get("priority")),
+            "owner": clean(row.get("owner")),
+            "action": clean(row.get("action")),
+            "status": clean(row.get("status")),
+            "blocks_order_lines": clean(row.get("blocks_order_lines")),
+            "record_result_in": clean(row.get("record_result_in")),
+            "why_it_matters": clean(row.get("why_it_matters")),
+        }
+        for row in rows
+    ]
+
+
+def replacement_pipe_circuit_closure_payload(rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    return [
+        {
+            "circuit_id": clean(row.get("circuit_id")),
+            "vehicle_location": clean(row.get("vehicle_location")),
+            "pipe_or_line": clean(row.get("pipe_or_line")),
+            "order_lines": clean(row.get("order_lines")),
+            "photo_status": clean(row.get("photo_status")),
+            "barb_or_fitting_a": clean(row.get("barb_or_fitting_a")),
+            "barb_or_fitting_b": clean(row.get("barb_or_fitting_b")),
+            "route_length_mm": clean(row.get("route_length_mm")),
+            "tube_or_hose_od_id": clean(row.get("tube_or_hose_od_id")),
+            "thread_or_flare": clean(row.get("thread_or_flare")),
+            "bend_template_status": clean(row.get("bend_template_status")),
+            "clip_support_status": clean(row.get("clip_support_status")),
+            "release_status": clean(row.get("release_status")),
+            "action_required": clean(row.get("action_required")),
+            "notes": clean(row.get("notes")),
+        }
+        for row in rows
+    ]
 
 
 def body_mount_order_release_payload(rows: list[dict[str, str]]) -> list[dict[str, str]]:
@@ -5074,6 +5142,9 @@ def build_dashboard_data() -> dict[str, Any]:
     component_rows = load_csv(COMPONENT_JOBS_PATH)
     photo_rows = load_csv(PHOTO_INVENTORY_PATH)
     replacement_pipe_requirement_rows = load_csv_optional(REPLACEMENT_PIPE_SPECS_PATH)
+    replacement_pipe_order_release_rows = load_csv_optional(REPLACEMENT_PIPE_ORDER_RELEASE_SPECS_PATH)
+    replacement_pipe_release_action_rows = load_csv_optional(REPLACEMENT_PIPE_RELEASE_ACTIONS_PATH)
+    replacement_pipe_circuit_closure_rows = load_csv_optional(REPLACEMENT_PIPE_CIRCUIT_CLOSURE_PATH)
     chassis_rubber_requirement_rows = load_csv_optional(CHASSIS_RUBBER_REQUIREMENTS_PATH)
     body_mount_order_release_rows = load_csv_optional(BODY_MOUNT_ORDER_RELEASE_SPECS_PATH)
     body_mount_release_action_rows = load_csv_optional(BODY_MOUNT_RELEASE_ACTIONS_PATH)
@@ -5213,6 +5284,21 @@ def build_dashboard_data() -> dict[str, Any]:
         elif ws_id == "brake_system":
             requirements = build_workstream_requirements(brake_system_requirement_rows, photo_rows)
         pipe_requirements = requirements if ws_id == "replacement_pipes" else []
+        replacement_pipe_order_release_specs = (
+            replacement_pipe_order_release_payload(replacement_pipe_order_release_rows)
+            if ws_id == "replacement_pipes"
+            else []
+        )
+        replacement_pipe_release_actions = (
+            replacement_pipe_release_action_payload(replacement_pipe_release_action_rows)
+            if ws_id == "replacement_pipes"
+            else []
+        )
+        replacement_pipe_circuit_closure = (
+            replacement_pipe_circuit_closure_payload(replacement_pipe_circuit_closure_rows)
+            if ws_id == "replacement_pipes"
+            else []
+        )
         chassis_rubber_requirements = requirements if ws_id == "chassis_rubbers" else []
         body_mount_order_release_specs = (
             body_mount_order_release_payload(body_mount_order_release_rows)
@@ -5252,6 +5338,9 @@ def build_dashboard_data() -> dict[str, Any]:
                 "reference_token_count": len(reference_tokens),
                 "requirements": requirements,
                 "pipe_requirements": pipe_requirements,
+                "replacement_pipe_order_release_specs": replacement_pipe_order_release_specs,
+                "replacement_pipe_release_actions": replacement_pipe_release_actions,
+                "replacement_pipe_circuit_closure": replacement_pipe_circuit_closure,
                 "chassis_rubber_requirements": chassis_rubber_requirements,
                 "body_mount_order_release_specs": body_mount_order_release_specs,
                 "body_mount_release_actions": body_mount_release_actions,
@@ -5612,6 +5701,9 @@ def build_dashboard_data() -> dict[str, Any]:
             "body_mount_release_actions": "data/manual/body_mount_release_actions.csv",
             "body_mount_station_closure_sheet": "data/manual/body_mount_station_closure_sheet.csv",
             "replacement_pipe_ordering_specs": "data/manual/replacement_pipe_ordering_specs.csv",
+            "replacement_pipe_order_release_specs": "data/manual/replacement_pipe_order_release_specs.csv",
+            "replacement_pipe_release_actions": "data/manual/replacement_pipe_release_actions.csv",
+            "replacement_pipe_circuit_closure_sheet": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
             "expenses": "data/manual/expenses.csv",
             "parts_buy_now_this_week": "data/manual/parts_buy_now_this_week.csv",
             "workbook_electrical_master": "data/manual/workbook_tabs/electrical_master.csv",

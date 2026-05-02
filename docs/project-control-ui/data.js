@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-02T05:17:30+05:00",
+  "generated_at": "2026-05-02T05:23:42+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -12,6 +12,9 @@ window.J40_DASHBOARD_DATA = {
     "body_mount_release_actions": "data/manual/body_mount_release_actions.csv",
     "body_mount_station_closure_sheet": "data/manual/body_mount_station_closure_sheet.csv",
     "replacement_pipe_ordering_specs": "data/manual/replacement_pipe_ordering_specs.csv",
+    "replacement_pipe_order_release_specs": "data/manual/replacement_pipe_order_release_specs.csv",
+    "replacement_pipe_release_actions": "data/manual/replacement_pipe_release_actions.csv",
+    "replacement_pipe_circuit_closure_sheet": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
     "expenses": "data/manual/expenses.csv",
     "parts_buy_now_this_week": "data/manual/parts_buy_now_this_week.csv",
     "workbook_electrical_master": "data/manual/workbook_tabs/electrical_master.csv",
@@ -981,6 +984,9 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 4,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_order_release_specs": [],
+      "replacement_pipe_release_actions": [],
+      "replacement_pipe_circuit_closure": [],
       "chassis_rubber_requirements": [],
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
@@ -2579,6 +2585,9 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 11,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_order_release_specs": [],
+      "replacement_pipe_release_actions": [],
+      "replacement_pipe_circuit_closure": [],
       "chassis_rubber_requirements": [],
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
@@ -10668,6 +10677,9 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 11,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_order_release_specs": [],
+      "replacement_pipe_release_actions": [],
+      "replacement_pipe_circuit_closure": [],
       "chassis_rubber_requirements": [],
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
@@ -14602,6 +14614,9 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 12,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_order_release_specs": [],
+      "replacement_pipe_release_actions": [],
+      "replacement_pipe_circuit_closure": [],
       "chassis_rubber_requirements": [],
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
@@ -17322,6 +17337,9 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "pipe_requirements": [],
+      "replacement_pipe_order_release_specs": [],
+      "replacement_pipe_release_actions": [],
+      "replacement_pipe_circuit_closure": [],
       "chassis_rubber_requirements": [
         {
           "requirement_id": "CR-MAIN-001",
@@ -20208,6 +20226,9 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 9,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_order_release_specs": [],
+      "replacement_pipe_release_actions": [],
+      "replacement_pipe_circuit_closure": [],
       "chassis_rubber_requirements": [],
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
@@ -23839,6 +23860,9 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 5,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_order_release_specs": [],
+      "replacement_pipe_release_actions": [],
+      "replacement_pipe_circuit_closure": [],
       "chassis_rubber_requirements": [],
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
@@ -26483,6 +26507,9 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 6,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_order_release_specs": [],
+      "replacement_pipe_release_actions": [],
+      "replacement_pipe_circuit_closure": [],
       "chassis_rubber_requirements": [],
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
@@ -26555,7 +26582,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
           "status": "in_progress",
-          "detail": "9 part rows still require price confirmation/order placement."
+          "detail": "5 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
@@ -26848,74 +26875,6 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_mech_fuel_hose_and_clamps",
-          "workstream": "mechanical_baseline",
-          "item": "Fuel-rated rubber hose and clamp kit",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_mech_fuel_hose_and_clamps",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
-          "notes": "Spec: diesel-rated SAE J30R9/J30R14T2 or DIN 73379-3E hose; 8 mm feed, 6 mm return/bleed, 3.2-3.5 mm injector leak-off only after measuring actual nipples. Use fuel-injection clamps. Do not fabricate high-pressure injector pipes.",
-          "image": {
-            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
-            "caption": "Engine bay hose routing - related local mechanical inspection photo",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_mech_fuel_hose_and_clamps"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
-          }
-        },
-        {
-          "entry_id": "part_mech_heater_hose_set",
-          "workstream": "mechanical_baseline",
-          "item": "Heater hose set with clamps",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_mech_heater_hose_set",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
-          "notes": "Spec: front heater hoses Toyota 99552-30500 L=400 and 99552-30300 L=280 or EPDM SAE J20R3 heater hose matched to heater/engine nipples, expected 16 mm / 5/8 inch ID after measurement. Include clamps and confirm whether rear heater circuit exists.",
-          "image": {
-            "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
-            "caption": "Heater/cooling hose routing - related local mechanical inspection photo",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_mech_heater_hose_set"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
-          }
-        },
-        {
           "entry_id": "part_mech_radiator_cap",
           "workstream": "mechanical_baseline",
           "item": "Radiator cap",
@@ -26944,74 +26903,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_mech_radiator_cap"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
-          }
-        },
-        {
-          "entry_id": "part_mech_radiator_hose_set",
-          "workstream": "mechanical_baseline",
-          "item": "Radiator hose set upper plus lower with clamps",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_mech_radiator_hose_set",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
-          "notes": "Spec: 2H/HJ47 molded EPDM coolant hoses, upper Toyota 16571-68020 and lower Toyota 16572-68020; clamp refs 90460-50016/96111-10500 plus lower outlet 96111-10560. Verify actual radiator and thermostat housing geometry before payment.",
-          "image": {
-            "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
-            "caption": "Radiator hose routing and clamps - local mechanical inspection photo",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_mech_radiator_hose_set"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
-          }
-        },
-        {
-          "entry_id": "part_mech_vacuum_hose_refresh",
-          "workstream": "mechanical_baseline",
-          "item": "Vacuum hose refresh kit",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_mech_vacuum_hose_refresh",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
-          "notes": "Spec: reinforced vacuum hose matched to actual barbs; brake booster/vacuum pump hose must not collapse. 2H vacuum-pump oil outlet hose OEM 90923-02079 if that hose is fitted. Replace suspect check valves and clips.",
-          "image": {
-            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
-            "caption": "Engine bay hose routing - related local mechanical inspection photo",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_mech_vacuum_hose_refresh"
             ],
             "match_basis": "manual_override",
             "match_score": 999
@@ -27080,6 +26971,142 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [],
             "match_basis": "placeholder"
+          }
+        },
+        {
+          "entry_id": "part_mech_fuel_hose_and_clamps",
+          "workstream": "mechanical_baseline",
+          "item": "Fuel-rated rubber hose and clamp kit",
+          "status": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_mech_fuel_hose_and_clamps",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+          "notes": "Spec ready: order lines RPO-FUEL-001A through RPO-FUEL-001C define diesel-rated SAE J30R9/J30R14T2 or DIN 73379-3E hose; 8 mm feed x3 m, 6 mm return x2 m, 3.2-3.5 mm leak-off x1 m. Complete RPA-002/RPA-004 before payment. Do not fabricate high-pressure injector pipes.",
+          "image": {
+            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
+            "caption": "Engine bay hose routing - related local mechanical inspection photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "part_mech_fuel_hose_and_clamps"
+            ],
+            "match_basis": "manual_override",
+            "match_score": 999
+          }
+        },
+        {
+          "entry_id": "part_mech_heater_hose_set",
+          "workstream": "mechanical_baseline",
+          "item": "Heater hose set with clamps",
+          "status": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_mech_heater_hose_set",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+          "notes": "Spec ready: order lines RPO-COOL-004A and RPO-COOL-004B define Toyota 99552-30500 L=400 and 99552-30300 L=280 or EPDM SAE J20R3 local hose, expected 16 mm / 5/8 inch ID. Complete RPA-002 nipple measurements and rear-heater check before payment.",
+          "image": {
+            "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
+            "caption": "Heater/cooling hose routing - related local mechanical inspection photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "part_mech_heater_hose_set"
+            ],
+            "match_basis": "manual_override",
+            "match_score": 999
+          }
+        },
+        {
+          "entry_id": "part_mech_radiator_hose_set",
+          "workstream": "mechanical_baseline",
+          "item": "Radiator hose set upper plus lower with clamps",
+          "status": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_mech_radiator_hose_set",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+          "notes": "Spec ready: order lines RPO-COOL-001 and RPO-COOL-002 define 2H/HJ47 molded EPDM coolant hoses, upper Toyota 16571-68020 / Dayco DMH1342 or CH1342 and lower Toyota 16572-68020. Complete RPA-002 neck measurements before payment.",
+          "image": {
+            "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
+            "caption": "Radiator hose routing and clamps - local mechanical inspection photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "part_mech_radiator_hose_set"
+            ],
+            "match_basis": "manual_override",
+            "match_score": 999
+          }
+        },
+        {
+          "entry_id": "part_mech_vacuum_hose_refresh",
+          "workstream": "mechanical_baseline",
+          "item": "Vacuum hose refresh kit",
+          "status": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_mech_vacuum_hose_refresh",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+          "notes": "Spec ready: order lines RPO-VAC-001A through RPO-VAC-001C define reinforced 10-12 mm vacuum hose working basis",
+          "image": {
+            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
+            "caption": "Engine bay hose routing - related local mechanical inspection photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "part_mech_vacuum_hose_refresh"
+            ],
+            "match_basis": "manual_override",
+            "match_score": 999
           }
         }
       ],
@@ -27217,8 +27244,8 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Clutch master and slave cylinder refresh kit (next_phase_purchase; delivery not_ordered; amount missing)",
+                "Fuel-rated rubber hose and clamp kit (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Engine mount set (next_phase_purchase; delivery not_ordered; amount missing)",
-                "Fuel-rated rubber hose and clamp kit (purchase_ready; delivery not_ordered; amount missing)",
                 "Heat/glow plugs set - diesel 2H (purchase_ready; delivery not_ordered; amount missing)",
                 "Accessory belt set (purchase_ready; delivery not_ordered; amount missing)",
                 "Engine oil + oil filter service pack (purchase_ready; delivery not_ordered; amount missing)"
@@ -27351,12 +27378,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Fuel-rated rubber hose and clamp kit (purchase_ready; delivery not_ordered; amount missing)",
-                "Radiator hose set upper plus lower with clamps (purchase_ready; delivery not_ordered; amount missing)",
-                "Heater hose set with clamps (purchase_ready; delivery not_ordered; amount missing)",
+                "Fuel-rated rubber hose and clamp kit (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Radiator hose set upper plus lower with clamps (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Heater hose set with clamps (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Radiator cap (purchase_ready; delivery not_ordered; amount missing)",
-                "Vacuum hose refresh kit (purchase_ready; delivery not_ordered; amount missing)",
-                "Engine oil + oil filter service pack (purchase_ready; delivery not_ordered; amount missing)"
+                "Engine oil + oil filter service pack (purchase_ready; delivery not_ordered; amount missing)",
+                "Accessory belt set (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -27483,12 +27510,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Fuel-rated rubber hose and clamp kit (purchase_ready; delivery not_ordered; amount missing)",
-                "Vacuum hose refresh kit (purchase_ready; delivery not_ordered; amount missing)",
-                "Heater hose set with clamps (purchase_ready; delivery not_ordered; amount missing)",
+                "Fuel-rated rubber hose and clamp kit (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Radiator hose set upper plus lower with clamps (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Radiator cap (purchase_ready; delivery not_ordered; amount missing)",
-                "Radiator hose set upper plus lower with clamps (purchase_ready; delivery not_ordered; amount missing)",
-                "Fuel filter (purchase_ready; delivery not_ordered; amount missing)"
+                "Fuel filter (purchase_ready; delivery not_ordered; amount missing)",
+                "Heater hose set with clamps (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Accessory belt set (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -27615,10 +27642,10 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Accessory belt set (purchase_ready; delivery not_ordered; amount missing)",
                 "Engine oil + oil filter service pack (purchase_ready; delivery not_ordered; amount missing)",
+                "Fuel-rated rubber hose and clamp kit (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Heat/glow plugs set - diesel 2H (purchase_ready; delivery not_ordered; amount missing)",
-                "Vacuum hose refresh kit (purchase_ready; delivery not_ordered; amount missing)",
                 "Fuel filter (purchase_ready; delivery not_ordered; amount missing)",
-                "Fuel-rated rubber hose and clamp kit (purchase_ready; delivery not_ordered; amount missing)"
+                "Heater hose set with clamps (spec_ready_release_hold; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -27746,9 +27773,9 @@ window.J40_DASHBOARD_DATA = {
                 "Accessory belt set (purchase_ready; delivery not_ordered; amount missing)",
                 "Engine oil + oil filter service pack (purchase_ready; delivery not_ordered; amount missing)",
                 "Heat/glow plugs set - diesel 2H (purchase_ready; delivery not_ordered; amount missing)",
-                "Heater hose set with clamps (purchase_ready; delivery not_ordered; amount missing)",
                 "Air filter element (received; delivery received; amount missing)",
-                "Clutch master and slave cylinder refresh kit (next_phase_purchase; delivery not_ordered; amount missing)"
+                "Clutch master and slave cylinder refresh kit (next_phase_purchase; delivery not_ordered; amount missing)",
+                "Fuel filter (purchase_ready; delivery not_ordered; amount missing)"
               ]
             }
           ]
@@ -28328,7 +28355,7 @@ window.J40_DASHBOARD_DATA = {
             "20260430_220004_gp_C9oYiYmA"
           ],
           "photo_status": "direct_photo",
-          "spec_status": "properly_specced",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -28336,8 +28363,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "EPDM coolant hose, SAE J20R4 or molded equivalent",
           "critical_measurements": "Thermostat housing neck OD, radiator upper neck OD, hose OD for clamps, installed bend clearance to fan/belt/radiator support",
           "fit_and_test": "Dry-fit with engine movement allowance; no fan/belt rub; pressure-test cooling system after fill",
-          "source_ref": "docs_engine_hose_tube_replacement_specs",
-          "notes": "Use the photo only for current routing and condition; final purchase needs neck measurements.",
+          "source_ref": "docs_engine_hose_tube_replacement_specs|data_replacement_pipe_order_release_specs",
+          "notes": "Spec ready with release hold: use order line RPO-COOL-001; final purchase needs neck measurements.",
           "evidence_images": [
             {
               "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
@@ -28366,7 +28393,7 @@ window.J40_DASHBOARD_DATA = {
             "20260430_220004_gp_C9oYiYmA"
           ],
           "photo_status": "direct_photo",
-          "spec_status": "properly_specced",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -28374,8 +28401,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "EPDM coolant hose, SAE J20R4 or molded equivalent",
           "critical_measurements": "Radiator lower outlet OD, engine inlet OD, hose OD for clamps, bend clearance to fan/belt/front crossmember",
           "fit_and_test": "Dry-fit without kinks or rubbing; pressure-test cooling system after fill",
-          "source_ref": "docs_engine_hose_tube_replacement_specs",
-          "notes": "Replace as a pair with the upper hose.",
+          "source_ref": "docs_engine_hose_tube_replacement_specs|data_replacement_pipe_order_release_specs",
+          "notes": "Spec ready with release hold: use order line RPO-COOL-002; replace as a pair with the upper hose.",
           "evidence_images": [
             {
               "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
@@ -28415,7 +28442,7 @@ window.J40_DASHBOARD_DATA = {
             "photo_needed"
           ],
           "photo_status": "needs_close_photo",
-          "spec_status": "needs_measurement",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -28423,8 +28450,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Small EPDM coolant/overflow hose",
           "critical_measurements": "Radiator overflow nipple OD, reserve bottle nipple OD, finished route length",
           "fit_and_test": "Route downhill/cleanly with no kinks and no sharp edge contact",
-          "source_ref": "docs_engine_hose_tube_replacement_specs",
-          "notes": "Needs a close photo of the overflow nipple and bottle route.",
+          "source_ref": "docs_engine_hose_tube_replacement_specs|data_replacement_pipe_order_release_specs",
+          "notes": "Spec ready with release hold: use order line RPO-COOL-003; needs a close photo of the overflow nipple and bottle route.",
           "evidence_images": []
         },
         {
@@ -28439,7 +28466,7 @@ window.J40_DASHBOARD_DATA = {
             "photo_needed"
           ],
           "photo_status": "needs_close_photo",
-          "spec_status": "needs_measurement",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -28447,8 +28474,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "EPDM heater hose, SAE J20R3 or better",
           "critical_measurements": "Engine heater nipple OD, heater core nipple OD, route length for inlet and outlet, clamp OD, confirmation whether rear-heater circuit exists",
           "fit_and_test": "Dry-fit through firewall/heater path without tight bends, exhaust contact, or chafe",
-          "source_ref": "docs_engine_hose_tube_replacement_specs",
-          "notes": "Expected ID is usually 16 mm / 5/8 in, but measurement controls.",
+          "source_ref": "docs_engine_hose_tube_replacement_specs|data_replacement_pipe_order_release_specs",
+          "notes": "Spec ready with release hold: use order lines RPO-COOL-004A and RPO-COOL-004B; expected ID is usually 16 mm / 5/8 in, but measurement controls.",
           "evidence_images": []
         },
         {
@@ -28468,7 +28495,7 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004145_gp_e8soxsyA"
           ],
           "photo_status": "direct_template_photos",
-          "spec_status": "needs_physical_measurement",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -28476,8 +28503,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Mild steel/aluminized steel or 304 stainless coolant-compatible tube; target wall 1.2-1.6 mm after fabricator confirmation",
           "critical_measurements": "Tube OD, hose ID, wall thickness, bend centerlines/radii/clocking, bead height, clamp land length, clearance to fan/belts/radiator/body",
           "fit_and_test": "Bench pressure-test before coating; dry-fit on vehicle; coat only after fit and pressure test",
-          "source_ref": "docs_pipe_fabrication_spec_20260502|data_pipe_fabrication_specs",
-          "notes": "This is the current made-to-order pipe with a photo template set.",
+          "source_ref": "docs_pipe_fabrication_spec_20260502|data_pipe_fabrication_specs|data_replacement_pipe_order_release_specs",
+          "notes": "Spec ready with physical-template hold: use order line RPO-COOL-005; photos are not production dimensions.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004044_gp_Hx4Yo0Qg.jpg",
@@ -28566,7 +28593,7 @@ window.J40_DASHBOARD_DATA = {
             "20260502_005740_gp_Qiat03EQ"
           ],
           "photo_status": "direct_location_and_sample_photo",
-          "spec_status": "properly_specced",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -28574,8 +28601,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Diesel-rated SAE J30R9, SAE J30R14T2, or DIN 73379-3E hose; braided diesel leak-off hose for injectors",
           "critical_measurements": "Fuel filter barb OD, injection pump feed/return barb OD, injector leak-off nipple OD, route lengths, hose OD for fuel-injection clamps; read any markings on the submitted red/black sample hoses",
           "fit_and_test": "No leaks, no air ingress, no rubbing on belts/exhaust, use rolled-edge fuel-injection clamps",
-          "source_ref": "docs_engine_hose_tube_replacement_specs",
-          "notes": "New loose sample photo is evidence for fuel hose matching; final ID/barb measurement still controls.",
+          "source_ref": "docs_engine_hose_tube_replacement_specs|data_replacement_pipe_order_release_specs",
+          "notes": "Spec ready with release hold: use order lines RPO-FUEL-001A through RPO-FUEL-001C; final ID/barb measurement still controls.",
           "evidence_images": [
             {
               "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
@@ -28616,7 +28643,7 @@ window.J40_DASHBOARD_DATA = {
             "20260422_004311_gp_994KQ0Pw"
           ],
           "photo_status": "direct_location_photo",
-          "spec_status": "needs_measurement",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -28624,8 +28651,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Automotive bundy steel or CuNi/Cunifer tube; no bare copper",
           "critical_measurements": "Tube OD, full or section length, bend pattern, end flare/union style, clip positions, pass-through protection",
           "fit_and_test": "Rubber-lined P-clips every 300-400 mm; no chafe; leak-test after fuel prime",
-          "source_ref": "docs_engine_hose_tube_replacement_specs|chassis_hard_lines_and_brackets",
-          "notes": "Current photos show location, not enough for production bends.",
+          "source_ref": "docs_engine_hose_tube_replacement_specs|chassis_hard_lines_and_brackets|data_replacement_pipe_order_release_specs",
+          "notes": "Spec ready with inspection hold: use order lines RPO-FUEL-002A and RPO-FUEL-002B; current photos show location, not enough for production bends.",
           "evidence_images": [
             {
               "path": "../../photos/20260422_004306_gp_vGlNr2UA.jpg",
@@ -28665,7 +28692,7 @@ window.J40_DASHBOARD_DATA = {
             "photo_needed"
           ],
           "photo_status": "needs_close_photo",
-          "spec_status": "needs_measurement",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -28673,8 +28700,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Reinforced oil-resistant vacuum hose; NBR or fuel/oil-rated hose for breather; OEM molded hose where shape is specific",
           "critical_measurements": "Vacuum pump barb OD, booster/check-valve OD, check-valve direction, breather spigot OD, route length, heat/chafe exposure",
           "fit_and_test": "Verify brake assist vacuum, check-valve operation, and no hose collapse or oil swelling",
-          "source_ref": "docs_engine_hose_tube_replacement_specs",
-          "notes": "Needs close photos of the vacuum pump, booster hose, and breather routing.",
+          "source_ref": "docs_engine_hose_tube_replacement_specs|data_replacement_pipe_order_release_specs",
+          "notes": "Spec ready with release hold: use order lines RPO-VAC-001A through RPO-VAC-001C; needs close photos of the vacuum pump, booster hose, and breather routing.",
           "evidence_images": []
         },
         {
@@ -28689,7 +28716,7 @@ window.J40_DASHBOARD_DATA = {
             "photo_needed"
           ],
           "photo_status": "needs_brake_close_photos",
-          "spec_status": "needs_measurement",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -28697,8 +28724,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Brake-fluid-compatible flex hoses; bundy steel or CuNi/Cunifer brake tube with brake-rated fittings; no bare copper",
           "critical_measurements": "Caliper/wheel-cylinder fittings, master/proportioning fittings, tube OD, flare standard, union thread, route length, full-droop slack",
           "fit_and_test": "Pressure bleed and leak-test; verify no stretch at full droop and no tire/suspension contact",
-          "source_ref": "docs_brake_workstream|brake_hydraulic_refresh_and_bias_decision",
-          "notes": "Existing photos prove brake architecture generally, but replacement-pipe workstream needs close line/fitting photos before fabrication.",
+          "source_ref": "docs_brake_workstream|brake_hydraulic_refresh_and_bias_decision|data_replacement_pipe_order_release_specs",
+          "notes": "Spec ready with brake close-photo hold: use order lines RPO-BRAKE-001A and RPO-BRAKE-001B; needs close line/fitting photos before fabrication.",
           "evidence_images": []
         },
         {
@@ -28713,7 +28740,7 @@ window.J40_DASHBOARD_DATA = {
             "20260430_215939_gp_EjZ7u1ow"
           ],
           "photo_status": "direct_location_photo",
-          "spec_status": "needs_measurement",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -28721,8 +28748,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Brake/clutch hydraulic-rated flex hose or brake-rated hard line",
           "critical_measurements": "Master/slave port thread, flare style, hard-line OD, route length, flex hose length, movement clearance",
           "fit_and_test": "Bleed clutch hydraulics; verify no leak and no tension through drivetrain movement",
-          "source_ref": "part_mech_clutch_master_slave_refresh|photo_bellhousing_clutch_linkage",
-          "notes": "Photo shows location context; final spec needs fitting close-ups.",
+          "source_ref": "part_mech_clutch_master_slave_refresh|photo_bellhousing_clutch_linkage|data_replacement_pipe_order_release_specs",
+          "notes": "Spec ready with measurement hold: use order lines RPO-CLUTCH-001A and RPO-CLUTCH-001B; final spec needs fitting close-ups.",
           "evidence_images": [
             {
               "path": "../../photos/20260430_215939_gp_EjZ7u1ow.jpg",
@@ -28752,7 +28779,7 @@ window.J40_DASHBOARD_DATA = {
             "20260430_220004_gp_C9oYiYmA"
           ],
           "photo_status": "direct_photo",
-          "spec_status": "properly_specced",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -28760,8 +28787,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "EPDM coolant hose, SAE J20R4 or molded equivalent",
           "critical_measurements": "Thermostat housing neck OD, radiator upper neck OD, hose OD for clamps, installed bend clearance to fan/belt/radiator support",
           "fit_and_test": "Dry-fit with engine movement allowance; no fan/belt rub; pressure-test cooling system after fill",
-          "source_ref": "docs_engine_hose_tube_replacement_specs",
-          "notes": "Use the photo only for current routing and condition; final purchase needs neck measurements.",
+          "source_ref": "docs_engine_hose_tube_replacement_specs|data_replacement_pipe_order_release_specs",
+          "notes": "Spec ready with release hold: use order line RPO-COOL-001; final purchase needs neck measurements.",
           "evidence_images": [
             {
               "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
@@ -28790,7 +28817,7 @@ window.J40_DASHBOARD_DATA = {
             "20260430_220004_gp_C9oYiYmA"
           ],
           "photo_status": "direct_photo",
-          "spec_status": "properly_specced",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -28798,8 +28825,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "EPDM coolant hose, SAE J20R4 or molded equivalent",
           "critical_measurements": "Radiator lower outlet OD, engine inlet OD, hose OD for clamps, bend clearance to fan/belt/front crossmember",
           "fit_and_test": "Dry-fit without kinks or rubbing; pressure-test cooling system after fill",
-          "source_ref": "docs_engine_hose_tube_replacement_specs",
-          "notes": "Replace as a pair with the upper hose.",
+          "source_ref": "docs_engine_hose_tube_replacement_specs|data_replacement_pipe_order_release_specs",
+          "notes": "Spec ready with release hold: use order line RPO-COOL-002; replace as a pair with the upper hose.",
           "evidence_images": [
             {
               "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
@@ -28839,7 +28866,7 @@ window.J40_DASHBOARD_DATA = {
             "photo_needed"
           ],
           "photo_status": "needs_close_photo",
-          "spec_status": "needs_measurement",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -28847,8 +28874,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Small EPDM coolant/overflow hose",
           "critical_measurements": "Radiator overflow nipple OD, reserve bottle nipple OD, finished route length",
           "fit_and_test": "Route downhill/cleanly with no kinks and no sharp edge contact",
-          "source_ref": "docs_engine_hose_tube_replacement_specs",
-          "notes": "Needs a close photo of the overflow nipple and bottle route.",
+          "source_ref": "docs_engine_hose_tube_replacement_specs|data_replacement_pipe_order_release_specs",
+          "notes": "Spec ready with release hold: use order line RPO-COOL-003; needs a close photo of the overflow nipple and bottle route.",
           "evidence_images": []
         },
         {
@@ -28863,7 +28890,7 @@ window.J40_DASHBOARD_DATA = {
             "photo_needed"
           ],
           "photo_status": "needs_close_photo",
-          "spec_status": "needs_measurement",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -28871,8 +28898,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "EPDM heater hose, SAE J20R3 or better",
           "critical_measurements": "Engine heater nipple OD, heater core nipple OD, route length for inlet and outlet, clamp OD, confirmation whether rear-heater circuit exists",
           "fit_and_test": "Dry-fit through firewall/heater path without tight bends, exhaust contact, or chafe",
-          "source_ref": "docs_engine_hose_tube_replacement_specs",
-          "notes": "Expected ID is usually 16 mm / 5/8 in, but measurement controls.",
+          "source_ref": "docs_engine_hose_tube_replacement_specs|data_replacement_pipe_order_release_specs",
+          "notes": "Spec ready with release hold: use order lines RPO-COOL-004A and RPO-COOL-004B; expected ID is usually 16 mm / 5/8 in, but measurement controls.",
           "evidence_images": []
         },
         {
@@ -28892,7 +28919,7 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004145_gp_e8soxsyA"
           ],
           "photo_status": "direct_template_photos",
-          "spec_status": "needs_physical_measurement",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -28900,8 +28927,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Mild steel/aluminized steel or 304 stainless coolant-compatible tube; target wall 1.2-1.6 mm after fabricator confirmation",
           "critical_measurements": "Tube OD, hose ID, wall thickness, bend centerlines/radii/clocking, bead height, clamp land length, clearance to fan/belts/radiator/body",
           "fit_and_test": "Bench pressure-test before coating; dry-fit on vehicle; coat only after fit and pressure test",
-          "source_ref": "docs_pipe_fabrication_spec_20260502|data_pipe_fabrication_specs",
-          "notes": "This is the current made-to-order pipe with a photo template set.",
+          "source_ref": "docs_pipe_fabrication_spec_20260502|data_pipe_fabrication_specs|data_replacement_pipe_order_release_specs",
+          "notes": "Spec ready with physical-template hold: use order line RPO-COOL-005; photos are not production dimensions.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004044_gp_Hx4Yo0Qg.jpg",
@@ -28990,7 +29017,7 @@ window.J40_DASHBOARD_DATA = {
             "20260502_005740_gp_Qiat03EQ"
           ],
           "photo_status": "direct_location_and_sample_photo",
-          "spec_status": "properly_specced",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -28998,8 +29025,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Diesel-rated SAE J30R9, SAE J30R14T2, or DIN 73379-3E hose; braided diesel leak-off hose for injectors",
           "critical_measurements": "Fuel filter barb OD, injection pump feed/return barb OD, injector leak-off nipple OD, route lengths, hose OD for fuel-injection clamps; read any markings on the submitted red/black sample hoses",
           "fit_and_test": "No leaks, no air ingress, no rubbing on belts/exhaust, use rolled-edge fuel-injection clamps",
-          "source_ref": "docs_engine_hose_tube_replacement_specs",
-          "notes": "New loose sample photo is evidence for fuel hose matching; final ID/barb measurement still controls.",
+          "source_ref": "docs_engine_hose_tube_replacement_specs|data_replacement_pipe_order_release_specs",
+          "notes": "Spec ready with release hold: use order lines RPO-FUEL-001A through RPO-FUEL-001C; final ID/barb measurement still controls.",
           "evidence_images": [
             {
               "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
@@ -29040,7 +29067,7 @@ window.J40_DASHBOARD_DATA = {
             "20260422_004311_gp_994KQ0Pw"
           ],
           "photo_status": "direct_location_photo",
-          "spec_status": "needs_measurement",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -29048,8 +29075,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Automotive bundy steel or CuNi/Cunifer tube; no bare copper",
           "critical_measurements": "Tube OD, full or section length, bend pattern, end flare/union style, clip positions, pass-through protection",
           "fit_and_test": "Rubber-lined P-clips every 300-400 mm; no chafe; leak-test after fuel prime",
-          "source_ref": "docs_engine_hose_tube_replacement_specs|chassis_hard_lines_and_brackets",
-          "notes": "Current photos show location, not enough for production bends.",
+          "source_ref": "docs_engine_hose_tube_replacement_specs|chassis_hard_lines_and_brackets|data_replacement_pipe_order_release_specs",
+          "notes": "Spec ready with inspection hold: use order lines RPO-FUEL-002A and RPO-FUEL-002B; current photos show location, not enough for production bends.",
           "evidence_images": [
             {
               "path": "../../photos/20260422_004306_gp_vGlNr2UA.jpg",
@@ -29089,7 +29116,7 @@ window.J40_DASHBOARD_DATA = {
             "photo_needed"
           ],
           "photo_status": "needs_close_photo",
-          "spec_status": "needs_measurement",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -29097,8 +29124,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Reinforced oil-resistant vacuum hose; NBR or fuel/oil-rated hose for breather; OEM molded hose where shape is specific",
           "critical_measurements": "Vacuum pump barb OD, booster/check-valve OD, check-valve direction, breather spigot OD, route length, heat/chafe exposure",
           "fit_and_test": "Verify brake assist vacuum, check-valve operation, and no hose collapse or oil swelling",
-          "source_ref": "docs_engine_hose_tube_replacement_specs",
-          "notes": "Needs close photos of the vacuum pump, booster hose, and breather routing.",
+          "source_ref": "docs_engine_hose_tube_replacement_specs|data_replacement_pipe_order_release_specs",
+          "notes": "Spec ready with release hold: use order lines RPO-VAC-001A through RPO-VAC-001C; needs close photos of the vacuum pump, booster hose, and breather routing.",
           "evidence_images": []
         },
         {
@@ -29113,7 +29140,7 @@ window.J40_DASHBOARD_DATA = {
             "photo_needed"
           ],
           "photo_status": "needs_brake_close_photos",
-          "spec_status": "needs_measurement",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -29121,8 +29148,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Brake-fluid-compatible flex hoses; bundy steel or CuNi/Cunifer brake tube with brake-rated fittings; no bare copper",
           "critical_measurements": "Caliper/wheel-cylinder fittings, master/proportioning fittings, tube OD, flare standard, union thread, route length, full-droop slack",
           "fit_and_test": "Pressure bleed and leak-test; verify no stretch at full droop and no tire/suspension contact",
-          "source_ref": "docs_brake_workstream|brake_hydraulic_refresh_and_bias_decision",
-          "notes": "Existing photos prove brake architecture generally, but replacement-pipe workstream needs close line/fitting photos before fabrication.",
+          "source_ref": "docs_brake_workstream|brake_hydraulic_refresh_and_bias_decision|data_replacement_pipe_order_release_specs",
+          "notes": "Spec ready with brake close-photo hold: use order lines RPO-BRAKE-001A and RPO-BRAKE-001B; needs close line/fitting photos before fabrication.",
           "evidence_images": []
         },
         {
@@ -29137,7 +29164,7 @@ window.J40_DASHBOARD_DATA = {
             "20260430_215939_gp_EjZ7u1ow"
           ],
           "photo_status": "direct_location_photo",
-          "spec_status": "needs_measurement",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -29145,8 +29172,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Brake/clutch hydraulic-rated flex hose or brake-rated hard line",
           "critical_measurements": "Master/slave port thread, flare style, hard-line OD, route length, flex hose length, movement clearance",
           "fit_and_test": "Bleed clutch hydraulics; verify no leak and no tension through drivetrain movement",
-          "source_ref": "part_mech_clutch_master_slave_refresh|photo_bellhousing_clutch_linkage",
-          "notes": "Photo shows location context; final spec needs fitting close-ups.",
+          "source_ref": "part_mech_clutch_master_slave_refresh|photo_bellhousing_clutch_linkage|data_replacement_pipe_order_release_specs",
+          "notes": "Spec ready with measurement hold: use order lines RPO-CLUTCH-001A and RPO-CLUTCH-001B; final spec needs fitting close-ups.",
           "evidence_images": [
             {
               "path": "../../photos/20260430_215939_gp_EjZ7u1ow.jpg",
@@ -29161,6 +29188,586 @@ window.J40_DASHBOARD_DATA = {
               "matched_tokens": []
             }
           ]
+        }
+      ],
+      "replacement_pipe_order_release_specs": [
+        {
+          "order_line_id": "RPO-COOL-001",
+          "route": "BUY_MOLDED",
+          "item": "Upper radiator hose",
+          "part_number_or_code": "Toyota 16571-68020 / Dayco DMH1342 / CH1342",
+          "qty_required": "1",
+          "qty_to_order": "1",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_measure_necks",
+          "exact_order_spec": "Molded coolant hose for Toyota Land Cruiser HJ47 2H upper radiator route; buy as molded hose unless the fitted radiator or thermostat housing proves non-standard.",
+          "material_spec": "EPDM coolant hose, SAE J20R4 or molded equivalent",
+          "source_basis": "RP-COOL-001",
+          "user_action_required": "Measure thermostat housing neck OD, radiator upper neck OD, hose OD for clamps, and fan/belt/radiator support clearance.",
+          "do_not_order_if": "Measured necks or fitted radiator geometry do not match the HJ47 2H molded hose route.",
+          "notes": "Order with correct smooth-band or constant-tension clamps; dry-fit before filling coolant."
+        },
+        {
+          "order_line_id": "RPO-COOL-002",
+          "route": "BUY_MOLDED",
+          "item": "Lower radiator hose",
+          "part_number_or_code": "Toyota 16572-68020",
+          "qty_required": "1",
+          "qty_to_order": "1",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_measure_necks",
+          "exact_order_spec": "Molded coolant hose for Toyota Land Cruiser HJ47 2H lower radiator route; buy as molded hose unless fitted radiator or engine inlet geometry differs.",
+          "material_spec": "EPDM coolant hose, SAE J20R4 or molded equivalent",
+          "source_basis": "RP-COOL-002",
+          "user_action_required": "Measure radiator lower outlet OD, engine/water-pump inlet OD, hose OD for clamps, and lower bend clearance.",
+          "do_not_order_if": "Lower outlet, engine inlet, or front crossmember clearance proves non-standard.",
+          "notes": "Replace as a pair with the upper radiator hose and pressure-test after fill."
+        },
+        {
+          "order_line_id": "RPO-COOL-003",
+          "route": "CUT_BY_LENGTH",
+          "item": "Radiator overflow hose",
+          "part_number_or_code": "Toyota 90445-12078 L=600",
+          "qty_required": "1",
+          "qty_to_order": "1 m hose or OE length",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_needs_close_photo",
+          "exact_order_spec": "Small coolant overflow hose cut to route from radiator neck to overflow/reserve bottle; Toyota reference length L=600.",
+          "material_spec": "Small EPDM coolant/overflow hose",
+          "source_basis": "RP-COOL-003",
+          "user_action_required": "Photograph radiator overflow nipple and bottle nipple; measure both nipple ODs and finished route length.",
+          "do_not_order_if": "Overflow bottle, radiator neck, or routing is missing or changed from the planned route.",
+          "notes": "Order by meter locally if OE length is not available; route without kinks or sharp-edge contact."
+        },
+        {
+          "order_line_id": "RPO-COOL-004A",
+          "route": "CUT_BY_LENGTH",
+          "item": "Heater inlet hose",
+          "part_number_or_code": "Toyota 99552-30500 L=400 / 99556-30500",
+          "qty_required": "1",
+          "qty_to_order": "400 mm cut length or 1 m local hose",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_needs_nipple_measurement",
+          "exact_order_spec": "Front heater inlet hose equivalent to Toyota 99552-30500 L=400; expected 16 mm / 5/8 in ID but measured nipple OD controls.",
+          "material_spec": "EPDM heater hose, SAE J20R3 or better",
+          "source_basis": "RP-COOL-004",
+          "user_action_required": "Measure engine heater nipple OD, heater-core nipple OD, clamp OD, and inlet route length; confirm rear-heater presence.",
+          "do_not_order_if": "Measured nipples require a different ID, molded shape, or rear-heater branch not covered by this line.",
+          "notes": "Cut only after route is confirmed; avoid exhaust heat, firewall chafe, and tight bends."
+        },
+        {
+          "order_line_id": "RPO-COOL-004B",
+          "route": "CUT_BY_LENGTH",
+          "item": "Heater outlet hose",
+          "part_number_or_code": "Toyota 99552-30300 L=280 / 99556-30300",
+          "qty_required": "1",
+          "qty_to_order": "280 mm cut length or 1 m local hose",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_needs_nipple_measurement",
+          "exact_order_spec": "Front heater outlet hose equivalent to Toyota 99552-30300 L=280; expected 16 mm / 5/8 in ID but measured nipple OD controls.",
+          "material_spec": "EPDM heater hose, SAE J20R3 or better",
+          "source_basis": "RP-COOL-004",
+          "user_action_required": "Measure engine/heater-core nipple ODs, clamp OD, and outlet route length; confirm rear-heater presence.",
+          "do_not_order_if": "Measured nipples require a different ID, molded shape, or rear-heater branch not covered by this line.",
+          "notes": "Cut only after route is confirmed; hot-run leak check after installation."
+        },
+        {
+          "order_line_id": "RPO-COOL-005",
+          "route": "FABRICATE_TEMPLATE",
+          "item": "Formed metal coolant/radiator pipe assembly",
+          "part_number_or_code": "RP-COOL-005",
+          "qty_required": "1",
+          "qty_to_order": "1 fabricated pipe",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_physical_template_hold",
+          "exact_order_spec": "Fabricate from the physical sample; match tube OD, wall thickness, centerline length, bend radii, bend clocking, offsets, beaded ends, clamp lands, hose overlap, and mounting relationship.",
+          "material_spec": "Mild steel/aluminized steel or 304 stainless coolant-compatible tube; target wall 1.2-1.6 mm after fabricator confirmation",
+          "source_basis": "RP-COOL-005|docs/pipe-fabrication-spec-20260502.md",
+          "user_action_required": "Flat-lay physical sample with tape; measure tube OD, hose ID, wall, bend centerlines/radii, clocking, bead height, clamp land length, and installed clearances.",
+          "do_not_order_if": "The original pipe is too distorted to template, end beads are unknown, or vehicle dry-fit cannot be performed before coating.",
+          "notes": "Bench pressure-test before coating; coat only after vehicle dry-fit passes."
+        },
+        {
+          "order_line_id": "RPO-FUEL-001A",
+          "route": "BUY_BY_METER",
+          "item": "Diesel feed hose",
+          "part_number_or_code": "8 mm ID diesel hose",
+          "qty_required": "3 m",
+          "qty_to_order": "3 m",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_measure_barbs",
+          "exact_order_spec": "Low-pressure diesel feed hose working basis 8 mm ID x 3 m; confirm every barb before purchase or cutting.",
+          "material_spec": "Diesel-rated SAE J30R9, SAE J30R14T2, or DIN 73379-3E hose",
+          "source_basis": "RP-FUEL-001",
+          "user_action_required": "Measure fuel filter barb OD, injection pump feed barb OD, route lengths, and hose OD for fuel-injection clamps.",
+          "do_not_order_if": "Any section is high-pressure injector pipe, or measured barb size does not match 8 mm hose.",
+          "notes": "Use rolled-edge fuel-injection clamps; do not use generic worm clamps on injection-feed rubber hose."
+        },
+        {
+          "order_line_id": "RPO-FUEL-001B",
+          "route": "BUY_BY_METER",
+          "item": "Diesel return/bleed hose",
+          "part_number_or_code": "6 mm ID diesel hose",
+          "qty_required": "2 m",
+          "qty_to_order": "2 m",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_measure_barbs",
+          "exact_order_spec": "Low-pressure diesel return/bleed hose working basis 6 mm ID x 2 m; confirm every barb before purchase or cutting.",
+          "material_spec": "Diesel-rated SAE J30R9, SAE J30R14T2, or DIN 73379-3E hose",
+          "source_basis": "RP-FUEL-001",
+          "user_action_required": "Measure injection pump return barb OD, filter/return barb OD, route lengths, and hose OD for clamps.",
+          "do_not_order_if": "Measured return/bleed barbs do not match 6 mm hose or the route uses a molded section.",
+          "notes": "Use rolled-edge fuel-injection clamps; avoid air-ingress points and sharp bends."
+        },
+        {
+          "order_line_id": "RPO-FUEL-001C",
+          "route": "BUY_BY_METER",
+          "item": "Injector leak-off hose",
+          "part_number_or_code": "3.2-3.5 mm ID braided diesel leak-off hose",
+          "qty_required": "1 m",
+          "qty_to_order": "1 m",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_measure_nipples",
+          "exact_order_spec": "Injector leak-off hose working basis 3.2-3.5 mm ID x 1 m; match injector nipple OD and cap/end arrangement.",
+          "material_spec": "Braided diesel leak-off hose rated for diesel return service",
+          "source_basis": "RP-FUEL-001",
+          "user_action_required": "Measure injector leak-off nipple OD and read markings on the loose red/black sample hoses if present.",
+          "do_not_order_if": "Injector return arrangement differs from the planned leak-off hose type.",
+          "notes": "Do not substitute vacuum or coolant hose for diesel leak-off service."
+        },
+        {
+          "order_line_id": "RPO-FUEL-002A",
+          "route": "FABRICATE_IF_CORRODED",
+          "item": "Low-pressure fuel hard line feed",
+          "part_number_or_code": "8 mm OD feed tube",
+          "qty_required": "section length TBD",
+          "qty_to_order": "5 m coil or measured sections",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_inspection_hold",
+          "exact_order_spec": "Replace weak or corroded low-pressure feed hard-line sections only after inspection; working basis 8 mm OD tube; match original route, end style, bends, and clips.",
+          "material_spec": "Automotive bundy steel or CuNi/Cunifer tube; no bare copper",
+          "source_basis": "RP-FUEL-002",
+          "user_action_required": "Inspect under clips, measure tube OD, full/section length, bend pattern, end flare/union style, clip positions, and pass-through protection.",
+          "do_not_order_if": "Existing line is sound after cleaning or fitting/thread style cannot be identified.",
+          "notes": "Use rubber-lined P-clips every 300-400 mm and leak-test after fuel prime."
+        },
+        {
+          "order_line_id": "RPO-FUEL-002B",
+          "route": "FABRICATE_IF_CORRODED",
+          "item": "Low-pressure fuel hard line return",
+          "part_number_or_code": "6 mm OD return tube",
+          "qty_required": "section length TBD",
+          "qty_to_order": "5 m coil or measured sections",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_inspection_hold",
+          "exact_order_spec": "Replace weak or corroded low-pressure return hard-line sections only after inspection; working basis 6 mm OD tube; match original route, end style, bends, and clips.",
+          "material_spec": "Automotive bundy steel or CuNi/Cunifer tube; no bare copper",
+          "source_basis": "RP-FUEL-002",
+          "user_action_required": "Inspect under clips, measure tube OD, full/section length, bend pattern, end flare/union style, clip positions, and pass-through protection.",
+          "do_not_order_if": "Existing line is sound after cleaning or fitting/thread style cannot be identified.",
+          "notes": "Use rubber-lined P-clips every 300-400 mm and leak-test after fuel prime."
+        },
+        {
+          "order_line_id": "RPO-VAC-001A",
+          "route": "BUY_BY_METER",
+          "item": "Brake booster/vacuum hose",
+          "part_number_or_code": "10-12 mm ID reinforced vacuum hose",
+          "qty_required": "route length TBD",
+          "qty_to_order": "2 m",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_needs_close_photo",
+          "exact_order_spec": "Reinforced vacuum hose that will not collapse; working basis 10-12 mm ID, but measured pump/booster/check-valve barbs control final size.",
+          "material_spec": "Reinforced oil-resistant vacuum hose",
+          "source_basis": "RP-VAC-001",
+          "user_action_required": "Photograph vacuum pump, booster hose, and check valve; measure pump barb OD, booster/check-valve OD, direction, route length, heat and chafe exposure.",
+          "do_not_order_if": "Vacuum route uses an OEM molded hose or measured barbs fall outside 10-12 mm working basis.",
+          "notes": "Verify brake assist vacuum and check-valve operation after installation."
+        },
+        {
+          "order_line_id": "RPO-VAC-001B",
+          "route": "BUY_BY_METER",
+          "item": "Breather/oil mist hose",
+          "part_number_or_code": "16-19 mm ID oil-resistant hose",
+          "qty_required": "route length TBD",
+          "qty_to_order": "1 m",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_needs_close_photo",
+          "exact_order_spec": "Oil-resistant breather/oil mist hose; working basis 16-19 mm ID, but measured spigot OD and route control final size.",
+          "material_spec": "NBR or fuel/oil-rated hose for breather/oil mist exposure",
+          "source_basis": "RP-VAC-001",
+          "user_action_required": "Photograph crankcase/breather spigots and route; measure spigot OD, route length, and heat/chafe exposure.",
+          "do_not_order_if": "Breather route requires a molded shape or measured spigots fall outside 16-19 mm working basis.",
+          "notes": "Do not use coolant-only hose where oil mist exposure can swell the material."
+        },
+        {
+          "order_line_id": "RPO-VAC-001C",
+          "route": "VERIFY_FITTED",
+          "item": "2H vacuum pump oil outlet hose",
+          "part_number_or_code": "Toyota/OEM 90923-02079 if fitted",
+          "qty_required": "1 if fitted",
+          "qty_to_order": "1",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_verify_fitted",
+          "exact_order_spec": "If the fitted engine uses the 2H vacuum pump oil outlet hose, source Toyota/OEM 90923-02079 or exact equivalent.",
+          "material_spec": "Oil-compatible molded hose or OEM equivalent",
+          "source_basis": "RP-VAC-001",
+          "user_action_required": "Confirm whether this hose is fitted on the engine; photograph both ends and measure if sourcing local.",
+          "do_not_order_if": "The hose is not fitted on this engine or routing differs from the OEM item.",
+          "notes": "Do not order until fitted presence is confirmed."
+        },
+        {
+          "order_line_id": "RPO-BRAKE-001A",
+          "route": "BUY_ASSEMBLY",
+          "item": "Brake flex hose set",
+          "part_number_or_code": "Vehicle-specific front/rear brake flex hoses",
+          "qty_required": "3 assemblies working count",
+          "qty_to_order": "front left + front right + rear center after count",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_brake_close_photo_hold",
+          "exact_order_spec": "Brake flex hoses must match current front-disc/rear-drum hardware, fitting thread/banjo style, bracket retention, and full-droop length.",
+          "material_spec": "Brake-fluid-compatible flex hoses meeting DOT/SAE J1401 or OEM-equivalent rating",
+          "source_basis": "RP-BRAKE-001|docs/brake-workstream.md",
+          "user_action_required": "Capture close-ups of caliper/wheel-cylinder/master/proportioning fittings; identify thread/banjo/flare style and full-droop slack.",
+          "do_not_order_if": "Fittings, banjo style, or full-droop length cannot be confirmed from old hose and vehicle hardware.",
+          "notes": "Bleed and pressure-test; verify no stretch at full droop and no tire/suspension contact."
+        },
+        {
+          "order_line_id": "RPO-BRAKE-001B",
+          "route": "FABRICATE_SAFETY_LINE",
+          "item": "Brake hard line tube and fittings",
+          "part_number_or_code": "3/16 in / 4.75 mm brake tube working basis",
+          "qty_required": "lengths and fittings TBD",
+          "qty_to_order": "coil plus fittings after identification",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_fitting_identification_hold",
+          "exact_order_spec": "Brake hard lines must match tube OD, flare type, union thread, original route, clip positions, and bracket pass-throughs; working basis is 3/16 in / 4.75 mm until measured.",
+          "material_spec": "Bundy steel or CuNi/Cunifer brake tube with brake-rated fittings; no bare copper",
+          "source_basis": "RP-BRAKE-001|docs/brake-workstream.md",
+          "user_action_required": "Measure tube OD, flare standard, union thread, fitting seat, route lengths, bend templates, and clip positions before fabrication.",
+          "do_not_order_if": "Thread/flare standard is unknown, old line is unavailable as a template, or brake-rated fittings are not available.",
+          "notes": "This is a safety circuit: pressure bleed and leak-test before any road validation."
+        },
+        {
+          "order_line_id": "RPO-CLUTCH-001A",
+          "route": "BUY_ASSEMBLY",
+          "item": "Clutch flex hose",
+          "part_number_or_code": "Vehicle-specific clutch flex hose",
+          "qty_required": "1 if worn/leaking",
+          "qty_to_order": "1 if required",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_measure_ports",
+          "exact_order_spec": "Replace clutch flex hose if cracked, swollen, corroded, or leaking; match master/slave ports, end style, free length, and drivetrain movement allowance.",
+          "material_spec": "Brake/clutch hydraulic-rated flexible hose",
+          "source_basis": "RP-CLUTCH-001",
+          "user_action_required": "Photograph and measure master/slave port thread, flare/seat style, flex free length, bracket retention, and movement clearance.",
+          "do_not_order_if": "Existing hose is sound and not part of the active replacement scope, or port/end style is unknown.",
+          "notes": "Bleed clutch hydraulics and verify no leak or tension through drivetrain movement."
+        },
+        {
+          "order_line_id": "RPO-CLUTCH-001B",
+          "route": "FABRICATE_IF_NEEDED",
+          "item": "Clutch hard line",
+          "part_number_or_code": "Brake/clutch hydraulic hard line",
+          "qty_required": "section length TBD",
+          "qty_to_order": "measured section if required",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_measure_ports",
+          "exact_order_spec": "Replace clutch hard line only if corroded or leaking; match hard-line OD, flare/thread style, route, clips, and movement transition to flex hose.",
+          "material_spec": "Brake/clutch-rated bundy steel or CuNi/Cunifer tube with hydraulic-rated fittings",
+          "source_basis": "RP-CLUTCH-001",
+          "user_action_required": "Measure hard-line OD, master/slave port thread, flare style, route length, clips, and movement clearance.",
+          "do_not_order_if": "Existing line is sound after inspection or fitting/flare standard is unknown.",
+          "notes": "Bleed clutch hydraulics after installation and check for leaks."
+        },
+        {
+          "order_line_id": "RPO-CLIP-001",
+          "route": "SUPPORT_HARD_LINES",
+          "item": "Rubber-lined P-clips and line protection",
+          "part_number_or_code": "P-clips matched to 4.75 / 6 / 8 mm lines",
+          "qty_required": "pack",
+          "qty_to_order": "20 clip mixed pack plus fasteners",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_order_ready",
+          "exact_order_spec": "Rubber-lined P-clips and edge/pass-through protection for brake, fuel, and clutch hard lines; size clips to measured line OD.",
+          "material_spec": "Rubber-lined plated or stainless P-clips, corrosion-protected fasteners, grommet or sleeve protection at pass-throughs",
+          "source_basis": "RP-FUEL-002|RP-BRAKE-001|RP-CLUTCH-001",
+          "user_action_required": "Count original support points and confirm clip sizes against actual line ODs during route inspection.",
+          "do_not_order_if": "Existing line supports are sound and reusable, or clip sizes cannot be matched to measured line ODs.",
+          "notes": "Use support spacing around 300-400 mm on hard lines; do not substitute cable ties for permanent hydraulic/fuel line support."
+        }
+      ],
+      "replacement_pipe_release_actions": [
+        {
+          "action_id": "RPA-001",
+          "priority": "P0",
+          "owner": "workshop",
+          "action": "Photograph and label every replacement pipe, hose, and hard-line route by circuit before removal or ordering.",
+          "status": "open",
+          "blocks_order_lines": "all",
+          "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+          "why_it_matters": "Prevents mixing coolant, fuel, brake, clutch, vacuum, and breather requirements into one generic hose order."
+        },
+        {
+          "action_id": "RPA-002",
+          "priority": "P0",
+          "owner": "workshop",
+          "action": "Measure all coolant, heater, overflow, fuel, vacuum, and breather barbs/nipples with calipers; record route length and clamp outside diameter.",
+          "status": "open",
+          "blocks_order_lines": "RPO-COOL-001|RPO-COOL-002|RPO-COOL-003|RPO-COOL-004A|RPO-COOL-004B|RPO-FUEL-001A|RPO-FUEL-001B|RPO-FUEL-001C|RPO-VAC-001A|RPO-VAC-001B",
+          "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+          "why_it_matters": "The published part basis is ready, but the fitted vehicle dimensions control final hose ID and clamp size."
+        },
+        {
+          "action_id": "RPA-003",
+          "priority": "P0",
+          "owner": "workshop",
+          "action": "For the formed metal coolant pipe, flat-lay the physical sample with a tape and measure tube OD, wall, centerlines, bend radii, clocking, beads, clamp lands, and hose overlap.",
+          "status": "open",
+          "blocks_order_lines": "RPO-COOL-005",
+          "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+          "why_it_matters": "The fabricator needs production dimensions from the physical sample, not photo-estimated dimensions."
+        },
+        {
+          "action_id": "RPA-004",
+          "priority": "P1",
+          "owner": "workshop",
+          "action": "Read and photograph markings on the loose red/black hose samples, then confirm ID, OD, rating, and whether each sample belongs to fuel, coolant, vacuum, or breather service.",
+          "status": "open",
+          "blocks_order_lines": "RPO-FUEL-001A|RPO-FUEL-001B|RPO-FUEL-001C|RPO-VAC-001A|RPO-VAC-001B",
+          "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+          "why_it_matters": "Prevents accidental use of wrong rubber chemistry on diesel, oil mist, coolant, or vacuum circuits."
+        },
+        {
+          "action_id": "RPA-005",
+          "priority": "P0",
+          "owner": "workshop",
+          "action": "Inspect chassis fuel hard lines under clips; decide keep, section repair, or full replacement; record tube OD, route length, bends, pass-through protection, and clip spacing.",
+          "status": "open",
+          "blocks_order_lines": "RPO-FUEL-002A|RPO-FUEL-002B|RPO-CLIP-001",
+          "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+          "why_it_matters": "Hidden corrosion under clips is the reason to replace hard lines before coating and body refit."
+        },
+        {
+          "action_id": "RPA-006",
+          "priority": "P0",
+          "owner": "workshop",
+          "action": "Capture brake hydraulic close-ups at calipers/wheel cylinders, master/proportioning valve, unions, brackets, banjos, flare nuts, and full-droop hose slack.",
+          "status": "open",
+          "blocks_order_lines": "RPO-BRAKE-001A|RPO-BRAKE-001B|RPO-CLIP-001",
+          "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+          "why_it_matters": "Brake hoses and tubes are safety parts and cannot be ordered from general architecture photos alone."
+        },
+        {
+          "action_id": "RPA-007",
+          "priority": "P0",
+          "owner": "workshop",
+          "action": "Confirm brake hard-line tube OD, flare standard, union thread, fitting seat, and old-line bend template before fabrication.",
+          "status": "open",
+          "blocks_order_lines": "RPO-BRAKE-001B",
+          "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+          "why_it_matters": "Wrong flare or thread can leak under pressure even when the line visually fits."
+        },
+        {
+          "action_id": "RPA-008",
+          "priority": "P1",
+          "owner": "workshop",
+          "action": "Confirm clutch master/slave fitting thread, flare/seat type, flex length, hard-line OD, route, and drivetrain movement clearance.",
+          "status": "open",
+          "blocks_order_lines": "RPO-CLUTCH-001A|RPO-CLUTCH-001B",
+          "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+          "why_it_matters": "The clutch line is hydraulic and needs the same thread/flare discipline as brake plumbing."
+        },
+        {
+          "action_id": "RPA-009",
+          "priority": "P1",
+          "owner": "workshop",
+          "action": "Confirm vacuum pump, booster, check-valve direction, breather routing, and oil exposure before buying vacuum or breather hose.",
+          "status": "open",
+          "blocks_order_lines": "RPO-VAC-001A|RPO-VAC-001B|RPO-VAC-001C",
+          "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+          "why_it_matters": "Vacuum hose must not collapse, and breather hose must resist oil swelling."
+        },
+        {
+          "action_id": "RPA-010",
+          "priority": "P0",
+          "owner": "workshop",
+          "action": "Dry-fit and test by circuit: cooling pressure test, fuel prime leak test, brake bleed/pressure test, clutch bleed, vacuum assist check, and final chafe inspection.",
+          "status": "open",
+          "blocks_order_lines": "all",
+          "record_result_in": "dashboard closeout photos",
+          "why_it_matters": "A replacement is not closed until routing, support, clearance, and leak-free operation are proven."
+        }
+      ],
+      "replacement_pipe_circuit_closure": [
+        {
+          "circuit_id": "RP-COOL-001",
+          "vehicle_location": "Front top of engine bay between thermostat housing and radiator",
+          "pipe_or_line": "Upper radiator hose",
+          "order_lines": "RPO-COOL-001",
+          "photo_status": "direct_photo",
+          "barb_or_fitting_a": "thermostat_neck_od_tbd",
+          "barb_or_fitting_b": "radiator_upper_neck_od_tbd",
+          "route_length_mm": "tbd",
+          "tube_or_hose_od_id": "hose_id_by_molded_part_and_neck_od",
+          "thread_or_flare": "not_applicable",
+          "bend_template_status": "not_applicable",
+          "clip_support_status": "clamps_tbd",
+          "release_status": "release_hold",
+          "action_required": "Measure both neck ODs and confirm molded route clearance before payment",
+          "notes": "Toyota 16571-68020 / Dayco DMH1342 basis is ready."
+        },
+        {
+          "circuit_id": "RP-COOL-002",
+          "vehicle_location": "Front lower engine bay between radiator lower outlet and water pump/engine inlet",
+          "pipe_or_line": "Lower radiator hose",
+          "order_lines": "RPO-COOL-002",
+          "photo_status": "direct_photo",
+          "barb_or_fitting_a": "radiator_lower_outlet_od_tbd",
+          "barb_or_fitting_b": "engine_inlet_od_tbd",
+          "route_length_mm": "tbd",
+          "tube_or_hose_od_id": "hose_id_by_molded_part_and_neck_od",
+          "thread_or_flare": "not_applicable",
+          "bend_template_status": "not_applicable",
+          "clip_support_status": "clamps_tbd",
+          "release_status": "release_hold",
+          "action_required": "Measure both neck ODs and confirm lower bend clearance before payment",
+          "notes": "Toyota 16572-68020 basis is ready."
+        },
+        {
+          "circuit_id": "RP-COOL-003",
+          "vehicle_location": "Radiator neck to overflow/reserve bottle",
+          "pipe_or_line": "Radiator overflow / breather hose",
+          "order_lines": "RPO-COOL-003",
+          "photo_status": "needs_close_photo",
+          "barb_or_fitting_a": "radiator_overflow_nipple_od_tbd",
+          "barb_or_fitting_b": "bottle_nipple_od_tbd",
+          "route_length_mm": "600_working_basis",
+          "tube_or_hose_od_id": "small_epdm_overflow_hose_id_tbd",
+          "thread_or_flare": "not_applicable",
+          "bend_template_status": "not_applicable",
+          "clip_support_status": "clip_or_clamp_tbd",
+          "release_status": "release_hold",
+          "action_required": "Capture close photo and measure nipple ODs plus route length",
+          "notes": "Buy 1 m if cutting locally."
+        },
+        {
+          "circuit_id": "RP-COOL-004",
+          "vehicle_location": "Firewall/heater core and engine heater nipples",
+          "pipe_or_line": "Front heater water inlet and outlet hoses",
+          "order_lines": "RPO-COOL-004A|RPO-COOL-004B",
+          "photo_status": "needs_close_photo",
+          "barb_or_fitting_a": "engine_heater_nipple_od_tbd",
+          "barb_or_fitting_b": "heater_core_nipple_od_tbd",
+          "route_length_mm": "400_inlet_280_outlet_working_basis",
+          "tube_or_hose_od_id": "expected_16_mm_or_5_8_in_id_after_measurement",
+          "thread_or_flare": "not_applicable",
+          "bend_template_status": "not_applicable",
+          "clip_support_status": "clamps_tbd",
+          "release_status": "release_hold",
+          "action_required": "Measure nipple ODs and confirm whether rear heater circuit exists",
+          "notes": "Heater hose spec is ready but nipple size controls local hose ID."
+        },
+        {
+          "circuit_id": "RP-COOL-005",
+          "vehicle_location": "Loose May 2 sample for front engine cooling route",
+          "pipe_or_line": "Formed metal coolant/radiator pipe assembly",
+          "order_lines": "RPO-COOL-005",
+          "photo_status": "direct_template_photos",
+          "barb_or_fitting_a": "pipe_end_a_od_and_bead_tbd",
+          "barb_or_fitting_b": "pipe_end_b_od_and_bead_tbd",
+          "route_length_mm": "tbd",
+          "tube_or_hose_od_id": "tube_od_wall_and_hose_id_tbd",
+          "thread_or_flare": "not_applicable",
+          "bend_template_status": "physical_sample_required",
+          "clip_support_status": "clamp_lands_tbd",
+          "release_status": "release_hold",
+          "action_required": "Flat-lay physical sample and record tube dimensions bend geometry beads clamp lands and installed clearances",
+          "notes": "Send old pipe plus six May 2 photos to fabricator after measurements are recorded."
+        },
+        {
+          "circuit_id": "RP-FUEL-001",
+          "vehicle_location": "Engine bay fuel filter / injection pump / injector return area",
+          "pipe_or_line": "Diesel feed return and injector leak-off rubber hoses",
+          "order_lines": "RPO-FUEL-001A|RPO-FUEL-001B|RPO-FUEL-001C",
+          "photo_status": "direct_location_and_sample_photo",
+          "barb_or_fitting_a": "filter_and_pump_barbs_tbd",
+          "barb_or_fitting_b": "injector_leakoff_nipples_tbd",
+          "route_length_mm": "3m_feed_2m_return_1m_leakoff_working_basis",
+          "tube_or_hose_od_id": "8mm_feed_6mm_return_3_2_to_3_5mm_leakoff_working_basis",
+          "thread_or_flare": "not_applicable",
+          "bend_template_status": "not_applicable",
+          "clip_support_status": "fuel_injection_clamps_tbd",
+          "release_status": "release_hold",
+          "action_required": "Measure every barb and read sample hose markings before purchase",
+          "notes": "Diesel-rated hose only; no high-pressure injector pipe fabrication."
+        },
+        {
+          "circuit_id": "RP-FUEL-002",
+          "vehicle_location": "Chassis rail low-pressure fuel line route",
+          "pipe_or_line": "Low-pressure fuel hard lines - feed and return",
+          "order_lines": "RPO-FUEL-002A|RPO-FUEL-002B|RPO-CLIP-001",
+          "photo_status": "direct_location_photo",
+          "barb_or_fitting_a": "line_end_fitting_a_tbd",
+          "barb_or_fitting_b": "line_end_fitting_b_tbd",
+          "route_length_mm": "tbd",
+          "tube_or_hose_od_id": "8mm_feed_6mm_return_working_basis",
+          "thread_or_flare": "end_style_tbd",
+          "bend_template_status": "old_line_or_route_template_needed",
+          "clip_support_status": "pclip_spacing_300_400mm",
+          "release_status": "release_hold",
+          "action_required": "Inspect under clips and measure OD length bends end style and clip positions before deciding replace vs keep",
+          "notes": "Use bundy steel or CuNi/Cunifer only; no bare copper."
+        },
+        {
+          "circuit_id": "RP-VAC-001",
+          "vehicle_location": "Vacuum pump / brake booster / crankcase breather area",
+          "pipe_or_line": "Vacuum hose and breather/oil mist hose",
+          "order_lines": "RPO-VAC-001A|RPO-VAC-001B|RPO-VAC-001C",
+          "photo_status": "needs_close_photo",
+          "barb_or_fitting_a": "vacuum_pump_or_breather_spigot_tbd",
+          "barb_or_fitting_b": "booster_checkvalve_or_breather_end_tbd",
+          "route_length_mm": "tbd",
+          "tube_or_hose_od_id": "10_12mm_vacuum_and_16_19mm_breather_working_basis",
+          "thread_or_flare": "not_applicable",
+          "bend_template_status": "not_applicable",
+          "clip_support_status": "clamps_tbd",
+          "release_status": "release_hold",
+          "action_required": "Capture close photos and measure barbs spigots check-valve direction and oil exposure",
+          "notes": "Confirm whether Toyota/OEM 90923-02079 hose is fitted before ordering it."
+        },
+        {
+          "circuit_id": "RP-BRAKE-001",
+          "vehicle_location": "Frame and axle brake hydraulic routes",
+          "pipe_or_line": "Brake flex hoses and hard brake lines",
+          "order_lines": "RPO-BRAKE-001A|RPO-BRAKE-001B|RPO-CLIP-001",
+          "photo_status": "needs_brake_close_photos",
+          "barb_or_fitting_a": "caliper_wheel_cylinder_or_union_tbd",
+          "barb_or_fitting_b": "master_proportioning_or_axle_tbd",
+          "route_length_mm": "tbd",
+          "tube_or_hose_od_id": "3_16in_4_75mm_working_basis_until_measured",
+          "thread_or_flare": "thread_flare_banjo_tbd",
+          "bend_template_status": "old_line_template_required",
+          "clip_support_status": "pclip_and_retaining_clip_tbd",
+          "release_status": "release_hold",
+          "action_required": "Capture fitting close-ups and confirm tube OD flare standard union thread fitting seat and full-droop slack before ordering or fabrication",
+          "notes": "Safety circuit; pressure bleed and leak-test required."
+        },
+        {
+          "circuit_id": "RP-CLUTCH-001",
+          "vehicle_location": "Bellhousing / clutch slave / master-to-slave route",
+          "pipe_or_line": "Clutch flex hose and hard line",
+          "order_lines": "RPO-CLUTCH-001A|RPO-CLUTCH-001B",
+          "photo_status": "direct_location_photo",
+          "barb_or_fitting_a": "master_port_thread_or_line_end_tbd",
+          "barb_or_fitting_b": "slave_port_thread_or_line_end_tbd",
+          "route_length_mm": "tbd",
+          "tube_or_hose_od_id": "hard_line_od_and_flex_length_tbd",
+          "thread_or_flare": "thread_flare_seat_tbd",
+          "bend_template_status": "old_line_or_route_template_if_replacing",
+          "clip_support_status": "clips_tbd",
+          "release_status": "release_hold",
+          "action_required": "Photograph close-ups and measure port threads flare style flex length hard-line OD and drivetrain movement clearance",
+          "notes": "Inspect first; replace only if cracked corroded swollen or leaking."
         }
       ],
       "chassis_rubber_requirements": [],
@@ -29206,7 +29813,12 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Fill recreation specs",
           "status": "queued",
-          "detail": "Record OD/ID, barb or flare style, route length, bend/template needs, material, and source reference before ordering or fabrication."
+          "detail": "Use replacement_pipe_order_release_specs.csv for exact order lines, then record OD/ID, barb or flare style, route length, bend/template needs, material, and source reference before release."
+        },
+        {
+          "label": "Close circuit release holds",
+          "status": "queued",
+          "detail": "Complete replacement_pipe_release_actions.csv and replacement_pipe_circuit_closure_sheet.csv before buying or fabricating held pipe lines."
         },
         {
           "label": "Dry-fit and pressure-test replacements",
@@ -30071,6 +30683,9 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "pipe_requirements": [],
+      "replacement_pipe_order_release_specs": [],
+      "replacement_pipe_release_actions": [],
+      "replacement_pipe_circuit_closure": [],
       "chassis_rubber_requirements": [],
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
@@ -30177,8 +30792,8 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
-          "status": "in_progress",
-          "detail": "1 part rows still require price confirmation/order placement."
+          "status": "completed",
+          "detail": "0 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
@@ -30263,37 +30878,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 980
-          }
-        },
-        {
-          "entry_id": "part_mech_brake_flex_hose_set",
-          "workstream": "brake_system",
-          "item": "Brake flexible hose set front and rear",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_mech_brake_flex_hose_set",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH SAFETY MUST REPLACE during full restore before final road validation",
-          "image": {
-            "path": "./assets/image-needed.svg",
-            "caption": "Brake flexible hose set front and rear \u00b7 exact inventory image required",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "",
-            "specific_component": "",
-            "stage": "",
-            "media_id": "",
-            "matched_tokens": [],
-            "match_basis": "placeholder"
           }
         },
         {
@@ -30462,6 +31046,37 @@ window.J40_DASHBOARD_DATA = {
             "match_basis": "local_inventory_evidence",
             "match_score": 980
           }
+        },
+        {
+          "entry_id": "part_mech_brake_flex_hose_set",
+          "workstream": "brake_system",
+          "item": "Brake flexible hose set front and rear",
+          "status": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_mech_brake_flex_hose_set",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+          "notes": "Spec ready: order line RPO-BRAKE-001A defines brake-fluid-rated flex hoses matched to current front/rear fittings and full-droop length. Complete RPA-006 fitting photos and full-droop slack check before payment.",
+          "image": {
+            "path": "./assets/image-needed.svg",
+            "caption": "Brake flexible hose set front and rear \u00b7 exact inventory image required",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "",
+            "specific_component": "",
+            "stage": "",
+            "media_id": "",
+            "matched_tokens": [],
+            "match_basis": "placeholder"
+          }
         }
       ],
       "operation_panels": [],
@@ -30597,7 +31212,7 @@ window.J40_DASHBOARD_DATA = {
                 "Rear wheel cylinders pair with bleed screws (inspect_then_buy; delivery not_ordered; amount missing)",
                 "Rear axle hard brake lines and fittings (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear brake line clips and parking-brake cable retainers (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear center frame-to-axle flexible brake hose (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Brake flexible hose set front and rear (spec_ready_release_hold; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -30726,7 +31341,7 @@ window.J40_DASHBOARD_DATA = {
                 "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)",
                 "Rear wheel cylinders pair with bleed screws (inspect_then_buy; delivery not_ordered; amount missing)",
                 "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Brake flexible hose set front and rear (purchase_ready; delivery not_ordered; amount missing)",
+                "Brake flexible hose set front and rear (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Rear axle hard brake lines and fittings (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear center frame-to-axle flexible brake hose (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
@@ -30851,8 +31466,8 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Brake flexible hose set front and rear (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Brake flexible hose set front and rear (purchase_ready; delivery not_ordered; amount missing)",
                 "Rear axle hard brake lines and fittings (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)",
                 "Rear brake line clips and parking-brake cable retainers (spec_needed_before_order; delivery not_ordered; amount missing)",
@@ -30983,7 +31598,7 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)",
                 "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Brake flexible hose set front and rear (purchase_ready; delivery not_ordered; amount missing)",
+                "Brake flexible hose set front and rear (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Rear brake line clips and parking-brake cable retainers (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear axle hard brake lines and fittings (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear center frame-to-axle flexible brake hose (spec_needed_before_order; delivery not_ordered; amount missing)"
@@ -31055,6 +31670,9 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 2,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_order_release_specs": [],
+      "replacement_pipe_release_actions": [],
+      "replacement_pipe_circuit_closure": [],
       "chassis_rubber_requirements": [],
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
@@ -31698,6 +32316,9 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 2,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_order_release_specs": [],
+      "replacement_pipe_release_actions": [],
+      "replacement_pipe_circuit_closure": [],
       "chassis_rubber_requirements": [],
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
@@ -32355,6 +32976,9 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 2,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_order_release_specs": [],
+      "replacement_pipe_release_actions": [],
+      "replacement_pipe_circuit_closure": [],
       "chassis_rubber_requirements": [],
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
@@ -33616,6 +34240,9 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 1,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_order_release_specs": [],
+      "replacement_pipe_release_actions": [],
+      "replacement_pipe_circuit_closure": [],
       "chassis_rubber_requirements": [],
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
@@ -34311,12 +34938,12 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Close spec-ready release holds",
         "status": "in_progress",
-        "detail": "3 spec-ready rows still need release actions before purchase."
+        "detail": "8 spec-ready rows still need release actions before purchase."
       },
       {
         "label": "Confirm price and place purchase-ready orders",
         "status": "in_progress",
-        "detail": "17 rows still in purchase_ready."
+        "detail": "12 rows still in purchase_ready."
       },
       {
         "label": "Place selected quote orders",
@@ -34356,7 +34983,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "purchase_ready",
-        "count": 17
+        "count": 12
       },
       {
         "stage": "researching",
@@ -34368,7 +34995,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "spec_ready_release_hold",
-        "count": 3
+        "count": 8
       }
     ],
     "counts_by_next_action": [
@@ -34377,8 +35004,12 @@ window.J40_DASHBOARD_DATA = {
         "count": 3
       },
       {
+        "next_action": "complete_replacement_pipe_release_actions_then_order",
+        "count": 5
+      },
+      {
         "next_action": "confirm_price_then_order",
-        "count": 17
+        "count": 12
       },
       {
         "next_action": "track_delivery",
@@ -35191,33 +35822,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_mech_brake_flex_hose_set",
-        "workstream": "brake_system",
-        "item": "Brake flexible hose set front and rear",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH SAFETY MUST REPLACE during full restore before final road validation",
-        "image": {
-          "path": "./assets/image-needed.svg",
-          "caption": "Brake flexible hose set front and rear \u00b7 exact inventory image required",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "",
-          "specific_component": "",
-          "stage": "",
-          "media_id": "",
-          "matched_tokens": [],
-          "match_basis": "placeholder"
-        }
-      },
-      {
         "entry_id": "part_rear_axle_hard_brake_lines",
         "workstream": "brake_system",
         "item": "Rear axle hard brake lines and fittings",
@@ -35335,6 +35939,33 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 980
+        }
+      },
+      {
+        "entry_id": "part_mech_brake_flex_hose_set",
+        "workstream": "brake_system",
+        "item": "Brake flexible hose set front and rear",
+        "status": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "supply_type": "part",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+        "notes": "Spec ready: order line RPO-BRAKE-001A defines brake-fluid-rated flex hoses matched to current front/rear fittings and full-droop length. Complete RPA-006 fitting photos and full-droop slack check before payment.",
+        "image": {
+          "path": "./assets/image-needed.svg",
+          "caption": "Brake flexible hose set front and rear \u00b7 exact inventory image required",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "",
+          "specific_component": "",
+          "stage": "",
+          "media_id": "",
+          "matched_tokens": [],
+          "match_basis": "placeholder"
         }
       },
       {
@@ -35941,36 +36572,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_mech_fuel_hose_and_clamps",
-        "workstream": "mechanical_baseline",
-        "item": "Fuel-rated rubber hose and clamp kit",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
-        "notes": "Spec: diesel-rated SAE J30R9/J30R14T2 or DIN 73379-3E hose; 8 mm feed, 6 mm return/bleed, 3.2-3.5 mm injector leak-off only after measuring actual nipples. Use fuel-injection clamps. Do not fabricate high-pressure injector pipes.",
-        "image": {
-          "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
-          "caption": "Engine bay hose routing - related local mechanical inspection photo",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_mech_fuel_hose_and_clamps"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
-        }
-      },
-      {
         "entry_id": "part_mech_heat_glow_plugs_set",
         "workstream": "mechanical_baseline",
         "item": "Heat/glow plugs set - diesel 2H",
@@ -35995,36 +36596,6 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [],
           "match_basis": "placeholder"
-        }
-      },
-      {
-        "entry_id": "part_mech_heater_hose_set",
-        "workstream": "mechanical_baseline",
-        "item": "Heater hose set with clamps",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
-        "notes": "Spec: front heater hoses Toyota 99552-30500 L=400 and 99552-30300 L=280 or EPDM SAE J20R3 heater hose matched to heater/engine nipples, expected 16 mm / 5/8 inch ID after measurement. Include clamps and confirm whether rear heater circuit exists.",
-        "image": {
-          "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
-          "caption": "Heater/cooling hose routing - related local mechanical inspection photo",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_mech_heater_hose_set"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
         }
       },
       {
@@ -36058,18 +36629,78 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_mech_radiator_hose_set",
+        "entry_id": "part_mech_fuel_hose_and_clamps",
         "workstream": "mechanical_baseline",
-        "item": "Radiator hose set upper plus lower with clamps",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
+        "item": "Fuel-rated rubber hose and clamp kit",
+        "status": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "amount": "",
         "amount_status": "missing",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
-        "notes": "Spec: 2H/HJ47 molded EPDM coolant hoses, upper Toyota 16571-68020 and lower Toyota 16572-68020; clamp refs 90460-50016/96111-10500 plus lower outlet 96111-10560. Verify actual radiator and thermostat housing geometry before payment.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+        "notes": "Spec ready: order lines RPO-FUEL-001A through RPO-FUEL-001C define diesel-rated SAE J30R9/J30R14T2 or DIN 73379-3E hose; 8 mm feed x3 m, 6 mm return x2 m, 3.2-3.5 mm leak-off x1 m. Complete RPA-002/RPA-004 before payment. Do not fabricate high-pressure injector pipes.",
+        "image": {
+          "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
+          "caption": "Engine bay hose routing - related local mechanical inspection photo",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_mech_fuel_hose_and_clamps"
+          ],
+          "match_basis": "manual_override",
+          "match_score": 999
+        }
+      },
+      {
+        "entry_id": "part_mech_heater_hose_set",
+        "workstream": "mechanical_baseline",
+        "item": "Heater hose set with clamps",
+        "status": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "supply_type": "part",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+        "notes": "Spec ready: order lines RPO-COOL-004A and RPO-COOL-004B define Toyota 99552-30500 L=400 and 99552-30300 L=280 or EPDM SAE J20R3 local hose, expected 16 mm / 5/8 inch ID. Complete RPA-002 nipple measurements and rear-heater check before payment.",
+        "image": {
+          "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
+          "caption": "Heater/cooling hose routing - related local mechanical inspection photo",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_mech_heater_hose_set"
+          ],
+          "match_basis": "manual_override",
+          "match_score": 999
+        }
+      },
+      {
+        "entry_id": "part_mech_radiator_hose_set",
+        "workstream": "mechanical_baseline",
+        "item": "Radiator hose set upper plus lower with clamps",
+        "status": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "supply_type": "part",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+        "notes": "Spec ready: order lines RPO-COOL-001 and RPO-COOL-002 define 2H/HJ47 molded EPDM coolant hoses, upper Toyota 16571-68020 / Dayco DMH1342 or CH1342 and lower Toyota 16572-68020. Complete RPA-002 neck measurements before payment.",
         "image": {
           "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
           "caption": "Radiator hose routing and clamps - local mechanical inspection photo",
@@ -36091,15 +36722,15 @@ window.J40_DASHBOARD_DATA = {
         "entry_id": "part_mech_vacuum_hose_refresh",
         "workstream": "mechanical_baseline",
         "item": "Vacuum hose refresh kit",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
+        "status": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "amount": "",
         "amount_status": "missing",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
-        "notes": "Spec: reinforced vacuum hose matched to actual barbs; brake booster/vacuum pump hose must not collapse. 2H vacuum-pump oil outlet hose OEM 90923-02079 if that hose is fitted. Replace suspect check valves and clips.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+        "notes": "Spec ready: order lines RPO-VAC-001A through RPO-VAC-001C define reinforced 10-12 mm vacuum hose working basis",
         "image": {
           "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
           "caption": "Engine bay hose routing - related local mechanical inspection photo",
@@ -44967,9 +45598,9 @@ window.J40_DASHBOARD_DATA = {
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "486699111",
-              "oem-style",
               "https://www.daraz.pk/products/6-ways-12-24v-automotive-circuit-blade-fuse-box-for-car-truck-vehicle-i486699111.html",
+              "oem-style",
+              "486699111",
               "internal",
               "compact",
               "covered",
@@ -46686,12 +47317,12 @@ window.J40_DASHBOARD_DATA = {
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
+          "status_detail": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH SAFETY MUST REPLACE during full restore before final road validation",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+          "notes": "Spec ready: order line RPO-BRAKE-001A defines brake-fluid-rated flex hoses matched to current front/rear fittings and full-droop length. Complete RPA-006 fitting photos and full-droop slack check before payment.",
           "image": {
             "path": "./assets/image-needed.svg",
             "caption": "Brake flexible hose set front and rear \u00b7 exact inventory image required",
@@ -47474,12 +48105,12 @@ window.J40_DASHBOARD_DATA = {
           "currency": "PKR",
           "workstream": "mechanical_baseline",
           "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
+          "status_detail": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
-          "notes": "Spec: diesel-rated SAE J30R9/J30R14T2 or DIN 73379-3E hose; 8 mm feed, 6 mm return/bleed, 3.2-3.5 mm injector leak-off only after measuring actual nipples. Use fuel-injection clamps. Do not fabricate high-pressure injector pipes.",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+          "notes": "Spec ready: order lines RPO-FUEL-001A through RPO-FUEL-001C define diesel-rated SAE J30R9/J30R14T2 or DIN 73379-3E hose; 8 mm feed x3 m, 6 mm return x2 m, 3.2-3.5 mm leak-off x1 m. Complete RPA-002/RPA-004 before payment. Do not fabricate high-pressure injector pipes.",
           "image": {
             "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
             "caption": "Engine bay hose routing - related local mechanical inspection photo",
@@ -47539,12 +48170,12 @@ window.J40_DASHBOARD_DATA = {
           "currency": "PKR",
           "workstream": "mechanical_baseline",
           "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
+          "status_detail": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
-          "notes": "Spec: front heater hoses Toyota 99552-30500 L=400 and 99552-30300 L=280 or EPDM SAE J20R3 heater hose matched to heater/engine nipples, expected 16 mm / 5/8 inch ID after measurement. Include clamps and confirm whether rear heater circuit exists.",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+          "notes": "Spec ready: order lines RPO-COOL-004A and RPO-COOL-004B define Toyota 99552-30500 L=400 and 99552-30300 L=280 or EPDM SAE J20R3 local hose, expected 16 mm / 5/8 inch ID. Complete RPA-002 nipple measurements and rear-heater check before payment.",
           "image": {
             "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
             "caption": "Heater/cooling hose routing - related local mechanical inspection photo",
@@ -47607,12 +48238,12 @@ window.J40_DASHBOARD_DATA = {
           "currency": "PKR",
           "workstream": "mechanical_baseline",
           "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
+          "status_detail": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
-          "notes": "Spec: 2H/HJ47 molded EPDM coolant hoses, upper Toyota 16571-68020 and lower Toyota 16572-68020; clamp refs 90460-50016/96111-10500 plus lower outlet 96111-10560. Verify actual radiator and thermostat housing geometry before payment.",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+          "notes": "Spec ready: order lines RPO-COOL-001 and RPO-COOL-002 define 2H/HJ47 molded EPDM coolant hoses, upper Toyota 16571-68020 / Dayco DMH1342 or CH1342 and lower Toyota 16572-68020. Complete RPA-002 neck measurements before payment.",
           "image": {
             "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
             "caption": "Radiator hose routing and clamps - local mechanical inspection photo",
@@ -47641,12 +48272,12 @@ window.J40_DASHBOARD_DATA = {
           "currency": "PKR",
           "workstream": "mechanical_baseline",
           "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
+          "status_detail": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
-          "notes": "Spec: reinforced vacuum hose matched to actual barbs; brake booster/vacuum pump hose must not collapse. 2H vacuum-pump oil outlet hose OEM 90923-02079 if that hose is fitted. Replace suspect check valves and clips.",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+          "notes": "Spec ready: order lines RPO-VAC-001A through RPO-VAC-001C define reinforced 10-12 mm vacuum hose working basis",
           "image": {
             "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
             "caption": "Engine bay hose routing - related local mechanical inspection photo",
@@ -53979,9 +54610,9 @@ window.J40_DASHBOARD_DATA = {
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "486699111",
-            "oem-style",
             "https://www.daraz.pk/products/6-ways-12-24v-automotive-circuit-blade-fuse-box-for-car-truck-vehicle-i486699111.html",
+            "oem-style",
+            "486699111",
             "internal",
             "compact",
             "covered",
@@ -54589,12 +55220,12 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
+        "status_detail": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH SAFETY MUST REPLACE during full restore before final road validation",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+        "notes": "Spec ready: order line RPO-BRAKE-001A defines brake-fluid-rated flex hoses matched to current front/rear fittings and full-droop length. Complete RPA-006 fitting photos and full-droop slack check before payment.",
         "image": {
           "path": "./assets/image-needed.svg",
           "caption": "Brake flexible hose set front and rear \u00b7 exact inventory image required",
@@ -55162,12 +55793,12 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "workstream": "mechanical_baseline",
         "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
+        "status_detail": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
-        "notes": "Spec: diesel-rated SAE J30R9/J30R14T2 or DIN 73379-3E hose; 8 mm feed, 6 mm return/bleed, 3.2-3.5 mm injector leak-off only after measuring actual nipples. Use fuel-injection clamps. Do not fabricate high-pressure injector pipes.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+        "notes": "Spec ready: order lines RPO-FUEL-001A through RPO-FUEL-001C define diesel-rated SAE J30R9/J30R14T2 or DIN 73379-3E hose; 8 mm feed x3 m, 6 mm return x2 m, 3.2-3.5 mm leak-off x1 m. Complete RPA-002/RPA-004 before payment. Do not fabricate high-pressure injector pipes.",
         "image": {
           "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
           "caption": "Engine bay hose routing - related local mechanical inspection photo",
@@ -55351,12 +55982,12 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "workstream": "mechanical_baseline",
         "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
+        "status_detail": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
-        "notes": "Spec: front heater hoses Toyota 99552-30500 L=400 and 99552-30300 L=280 or EPDM SAE J20R3 heater hose matched to heater/engine nipples, expected 16 mm / 5/8 inch ID after measurement. Include clamps and confirm whether rear heater circuit exists.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+        "notes": "Spec ready: order lines RPO-COOL-004A and RPO-COOL-004B define Toyota 99552-30500 L=400 and 99552-30300 L=280 or EPDM SAE J20R3 local hose, expected 16 mm / 5/8 inch ID. Complete RPA-002 nipple measurements and rear-heater check before payment.",
         "image": {
           "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
           "caption": "Heater/cooling hose routing - related local mechanical inspection photo",
@@ -55543,12 +56174,12 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "workstream": "mechanical_baseline",
         "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
+        "status_detail": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
-        "notes": "Spec: 2H/HJ47 molded EPDM coolant hoses, upper Toyota 16571-68020 and lower Toyota 16572-68020; clamp refs 90460-50016/96111-10500 plus lower outlet 96111-10560. Verify actual radiator and thermostat housing geometry before payment.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+        "notes": "Spec ready: order lines RPO-COOL-001 and RPO-COOL-002 define 2H/HJ47 molded EPDM coolant hoses, upper Toyota 16571-68020 / Dayco DMH1342 or CH1342 and lower Toyota 16572-68020. Complete RPA-002 neck measurements before payment.",
         "image": {
           "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
           "caption": "Radiator hose routing and clamps - local mechanical inspection photo",
@@ -55995,12 +56626,12 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "workstream": "mechanical_baseline",
         "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
+        "status_detail": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec",
-        "notes": "Spec: reinforced vacuum hose matched to actual barbs; brake booster/vacuum pump hose must not collapse. 2H vacuum-pump oil outlet hose OEM 90923-02079 if that hose is fitted. Replace suspect check valves and clips.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+        "notes": "Spec ready: order lines RPO-VAC-001A through RPO-VAC-001C define reinforced 10-12 mm vacuum hose working basis",
         "image": {
           "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
           "caption": "Engine bay hose routing - related local mechanical inspection photo",
