@@ -26,7 +26,7 @@ MANIFEST_PATH = OUTPUT_DIR / "manifest.csv"
 SUMMARY_PATH = OUTPUT_DIR / "summary.md"
 
 URL_PATTERN = re.compile(r"https?://[^\s<>()\"']+")
-IMAGE_URL_HINT = re.compile(r"\.(?:jpg|jpeg|png|webp|gif|bmp)(?:\?|$)", re.IGNORECASE)
+IMAGE_URL_HINT = re.compile(r"\.(?:jpg|jpeg|png|webp|gif|bmp|avif)(?:\?|$)", re.IGNORECASE)
 HTML_IMAGE_PATTERN = re.compile(r"<img[^>]+src=[\"']([^\"']+)[\"']", re.IGNORECASE)
 JSON_IMAGE_PATTERN = re.compile(r'"image"\s*:\s*"(https?://[^"]+)"', re.IGNORECASE)
 JSON_IMAGE_LIST_PATTERN = re.compile(r'"image"\s*:\s*\[(.*?)\]', re.IGNORECASE | re.DOTALL)
@@ -147,6 +147,102 @@ SOURCE_URL_OVERRIDES: dict[tuple[str, str], tuple[str, ...]] = {
         "tool_daraz_75mm_knotted_cup_wire_brush_x2",
     ): (
         "https://static-01.daraz.pk/p/850e2884182b055b50caab1236d83335.jpg",
+    ),
+    (
+        "expenses",
+        "tool_total_wrecking_bar_600mm_tht431242",
+    ): (
+        "https://www.toolsmart.pk/products/total-wrecking-bar-600mm-tht431242",
+    ),
+    (
+        "expenses",
+        "tool_wadfow_pressure_sprayer_wrs1550",
+    ): (
+        "https://www.toolsmart.pk/products/wadfow-pressure-sprayer-wrs1550",
+    ),
+    (
+        "expenses",
+        "tool_harden_spring_clamp_set_4in_6pc",
+    ): (
+        "https://www.toolsmart.pk/products/harden-6pc-x-4-spring-clamp-set",
+    ),
+    (
+        "expenses",
+        "tool_harden_white_rubber_mallet_700g_590437",
+    ): (
+        "https://www.toolsmart.pk/products/harden-white-rubber-mallet-with-firbregalss-handle-700g-590437",
+    ),
+    (
+        "expenses",
+        "tool_ingco_dead_blow_mallet_2lb_hdbm08028",
+    ): (
+        "https://www.toolsmart.pk/products/ingco-dead-blow-mallet-2lb-hdbm08028",
+    ),
+    (
+        "expenses",
+        "tool_wadfow_body_fender_hammer_set_whz1d07",
+    ): (
+        "https://www.toolsmart.pk/products/wadfow-7-pcs-body-and-fender-hammer-set-whz1d07",
+    ),
+    (
+        "expenses",
+        "tool_total_jack_stands_3ton_thjs0301_2pairs",
+    ): (
+        "https://www.toolsmart.pk/products/total-jack-stand-3ton-thjs0301",
+    ),
+    (
+        "expenses",
+        "tool_harden_3ton_trolley_jack_730213",
+    ): (
+        "https://www.toolsmart.pk/products/harden-3ton-hydraulic-trolley-jack-730213",
+    ),
+    (
+        "expenses",
+        "tool_total_round_steel_file_200mm_tht91386",
+    ): (
+        "https://www.toolsmart.pk/products/total-round-steel-file-tht91386",
+    ),
+    (
+        "expenses",
+        "tool_total_bi_metal_hole_saw_22mm_tac410221",
+    ): (
+        "https://www.toolsmart.pk/products/total-bi-metal-hole-saw-tac410221",
+    ),
+    (
+        "expenses",
+        "tool_harden_cup_wire_brush_100mm_m14",
+    ): (
+        "https://www.toolsmart.pk/products/harden-cup-wire-brush-with-nutsize100mm-x-m14x2-0",
+    ),
+    (
+        "expenses",
+        "tool_wadfow_abrasive_metal_grinding_disc_wac1353",
+    ): (
+        "https://www.toolsmart.pk/products/wadfow-abrasive-metal-grinding-disc-wac1353",
+    ),
+    (
+        "expenses",
+        "tool_harden_50lb_magnetic_welding_holder_765050",
+    ): (
+        "https://www.toolsmart.pk/products/harden-50lb-magnetic-welding-holder-765050",
+    ),
+    (
+        "expenses",
+        "tool_total_welding_leather_gloves_16_tsp15161",
+    ): (
+        "https://www.toolsmart.pk/products/total-welding-leather-gloves-16-tsp15161",
+    ),
+    (
+        "expenses",
+        "tool_wadfow_auto_darkening_welding_helmet_wwh3503",
+    ): (
+        "https://www.toolsmart.pk/products/wadfow-auto-darkening-welding-helmet-wwh3503",
+    ),
+    (
+        "expenses",
+        "tool_total_inverter_mma_welding_machine_tw220069",
+    ): (
+        "https://www.toolsmart.pk/products/total-inverter-mma-welding-machine-tw220069",
     ),
 }
 

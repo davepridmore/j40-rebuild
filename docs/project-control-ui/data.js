@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-02T09:17:05+05:00",
+  "generated_at": "2026-05-02T15:02:28+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -37,8 +37,8 @@ window.J40_DASHBOARD_DATA = {
     "parts_open_rows": 41,
     "parts_ordered_pending_delivery": 10,
     "urgent_part_actions": 12,
-    "supply_rows_tracked": 221,
-    "selling_site_images_loaded": 61,
+    "supply_rows_tracked": 229,
+    "selling_site_images_loaded": 85,
     "whatsapp_j40_selected_chats": 7,
     "whatsapp_j40_media_items": 165,
     "whatsapp_j40_media_images": 131,
@@ -2958,23 +2958,36 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
               "label": "autohub.pk"
+            },
+            {
+              "url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
+              "label": "multimedia.3m.com"
             }
           ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-            "caption": "3M Prep Solvent-70 1 gallon / wax and grease remover \u00b7 cleaner/degreaser reference image",
+            "path": "../../deliverables/selling_site_images/images/expenses_3m_prep_solvent_70_1_gallon_wax_and_grea_06ccd44e8c5f.webp",
+            "caption": "3M Prep Solvent-70 1 gallon / wax and grease remover \u00b7 Autohub \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "wax_grease_remover",
+            "media_id": "",
             "matched_tokens": [
-              "cleaner"
+              "part_wax_and_grease_remover",
+              "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+              "prep",
+              "solvent",
+              "gallon",
+              "wax",
+              "grease",
+              "remover"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "selling_site_match",
+            "listing_url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+            "image_url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
+            "match_score": 257
           }
         },
         {
@@ -3033,24 +3046,36 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
               "label": "autohub.pk"
+            },
+            {
+              "url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
+              "label": "autohub.pk"
             }
           ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/cavity_wax.jpg",
-            "caption": "HB Body U900 cavity wax spray 400ml \u00b7 cavity wax reference image",
+            "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_24d52c190fc8.webp",
+            "caption": "HB Body U900 cavity wax spray 400ml \u00b7 Autohub \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "cavity_wax",
+            "media_id": "",
             "matched_tokens": [
+              "part_cavity_wax",
+              "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+              "body",
+              "u900",
               "cavity",
-              "wax"
+              "wax",
+              "spray",
+              "400ml"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "selling_site_match",
+            "listing_url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+            "image_url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
+            "match_score": 263
           }
         },
         {
@@ -3074,23 +3099,36 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
               "label": "daraz.pk"
+            },
+            {
+              "url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
+              "label": "pk-live-21.slatic.net"
             }
           ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/primer.jpg",
-            "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 primer reference image",
+            "path": "../../deliverables/selling_site_images/images/expenses_hi_build_zinc_rich_epoxy_primer_ec_11_tw_2b4211f7f73b.png",
+            "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 Daraz / ICI Industrial Coatings \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "primer",
+            "media_id": "",
             "matched_tokens": [
-              "primer"
+              "part_primer",
+              "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+              "zinc-rich",
+              "two-pack",
+              "556870547",
+              "build",
+              "zinc",
+              "rich"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+            "image_url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
+            "match_score": 325
           }
         },
         {
@@ -20601,9 +20639,9 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_daraz_jubilee_hose_clip_assortment_30pc",
-              "645582306",
-              "3011629985",
               "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
+              "3011629985",
+              "645582306",
               "jubilee",
               "hose",
               "clip",
@@ -29020,23 +29058,36 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
             "label": "autohub.pk"
+          },
+          {
+            "url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
+            "label": "multimedia.3m.com"
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-          "caption": "3M Prep Solvent-70 1 gallon / wax and grease remover \u00b7 cleaner/degreaser reference image",
+          "path": "../../deliverables/selling_site_images/images/expenses_3m_prep_solvent_70_1_gallon_wax_and_grea_06ccd44e8c5f.webp",
+          "caption": "3M Prep Solvent-70 1 gallon / wax and grease remover \u00b7 Autohub \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "wax_grease_remover",
+          "media_id": "",
           "matched_tokens": [
-            "cleaner"
+            "part_wax_and_grease_remover",
+            "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+            "prep",
+            "solvent",
+            "gallon",
+            "wax",
+            "grease",
+            "remover"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "selling_site_match",
+          "listing_url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+          "image_url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
+          "match_score": 257
         }
       },
       {
@@ -29091,24 +29142,36 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
             "label": "autohub.pk"
+          },
+          {
+            "url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
+            "label": "autohub.pk"
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/cavity_wax.jpg",
-          "caption": "HB Body U900 cavity wax spray 400ml \u00b7 cavity wax reference image",
+          "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_24d52c190fc8.webp",
+          "caption": "HB Body U900 cavity wax spray 400ml \u00b7 Autohub \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "cavity_wax",
+          "media_id": "",
           "matched_tokens": [
+            "part_cavity_wax",
+            "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+            "body",
+            "u900",
             "cavity",
-            "wax"
+            "wax",
+            "spray",
+            "400ml"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "selling_site_match",
+          "listing_url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+          "image_url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
+          "match_score": 263
         }
       },
       {
@@ -29130,23 +29193,36 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
             "label": "daraz.pk"
+          },
+          {
+            "url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
+            "label": "pk-live-21.slatic.net"
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/primer.jpg",
-          "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 primer reference image",
+          "path": "../../deliverables/selling_site_images/images/expenses_hi_build_zinc_rich_epoxy_primer_ec_11_tw_2b4211f7f73b.png",
+          "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 Daraz / ICI Industrial Coatings \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "primer",
+          "media_id": "",
           "matched_tokens": [
-            "primer"
+            "part_primer",
+            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+            "zinc-rich",
+            "two-pack",
+            "556870547",
+            "build",
+            "zinc",
+            "rich"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+          "image_url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
+          "match_score": 325
         }
       },
       {
@@ -29359,9 +29435,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_daraz_jubilee_hose_clip_assortment_30pc",
-            "645582306",
-            "3011629985",
             "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
+            "3011629985",
+            "645582306",
             "jubilee",
             "hose",
             "clip",
@@ -29462,23 +29538,36 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
             "label": "autohub.pk"
+          },
+          {
+            "url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
+            "label": "multimedia.3m.com"
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-          "caption": "3M Prep Solvent-70 1 gallon / wax and grease remover \u00b7 cleaner/degreaser reference image",
+          "path": "../../deliverables/selling_site_images/images/expenses_3m_prep_solvent_70_1_gallon_wax_and_grea_06ccd44e8c5f.webp",
+          "caption": "3M Prep Solvent-70 1 gallon / wax and grease remover \u00b7 Autohub \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "wax_grease_remover",
+          "media_id": "",
           "matched_tokens": [
-            "cleaner"
+            "part_wax_and_grease_remover",
+            "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+            "prep",
+            "solvent",
+            "gallon",
+            "wax",
+            "grease",
+            "remover"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "selling_site_match",
+          "listing_url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+          "image_url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
+          "match_score": 257
         }
       },
       {
@@ -29535,24 +29624,36 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
             "label": "autohub.pk"
+          },
+          {
+            "url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
+            "label": "autohub.pk"
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/cavity_wax.jpg",
-          "caption": "HB Body U900 cavity wax spray 400ml \u00b7 cavity wax reference image",
+          "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_24d52c190fc8.webp",
+          "caption": "HB Body U900 cavity wax spray 400ml \u00b7 Autohub \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "cavity_wax",
+          "media_id": "",
           "matched_tokens": [
+            "part_cavity_wax",
+            "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+            "body",
+            "u900",
             "cavity",
-            "wax"
+            "wax",
+            "spray",
+            "400ml"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "selling_site_match",
+          "listing_url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+          "image_url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
+          "match_score": 263
         }
       },
       {
@@ -29575,23 +29676,36 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
             "label": "daraz.pk"
+          },
+          {
+            "url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
+            "label": "pk-live-21.slatic.net"
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/primer.jpg",
-          "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 primer reference image",
+          "path": "../../deliverables/selling_site_images/images/expenses_hi_build_zinc_rich_epoxy_primer_ec_11_tw_2b4211f7f73b.png",
+          "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 Daraz / ICI Industrial Coatings \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "primer",
+          "media_id": "",
           "matched_tokens": [
-            "primer"
+            "part_primer",
+            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+            "zinc-rich",
+            "two-pack",
+            "556870547",
+            "build",
+            "zinc",
+            "rich"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+          "image_url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
+          "match_score": 325
         }
       },
       {
@@ -29742,9 +29856,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_daraz_jubilee_hose_clip_assortment_30pc",
-            "645582306",
-            "3011629985",
             "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
+            "3011629985",
+            "645582306",
             "jubilee",
             "hose",
             "clip",
@@ -29846,23 +29960,36 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
             "label": "autohub.pk"
+          },
+          {
+            "url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
+            "label": "multimedia.3m.com"
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-          "caption": "3M Prep Solvent-70 1 gallon / wax and grease remover \u00b7 cleaner/degreaser reference image",
+          "path": "../../deliverables/selling_site_images/images/expenses_3m_prep_solvent_70_1_gallon_wax_and_grea_06ccd44e8c5f.webp",
+          "caption": "3M Prep Solvent-70 1 gallon / wax and grease remover \u00b7 Autohub \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "wax_grease_remover",
+          "media_id": "",
           "matched_tokens": [
-            "cleaner"
+            "part_wax_and_grease_remover",
+            "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+            "prep",
+            "solvent",
+            "gallon",
+            "wax",
+            "grease",
+            "remover"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "selling_site_match",
+          "listing_url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+          "image_url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
+          "match_score": 257
         }
       },
       {
@@ -29917,24 +30044,36 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
             "label": "autohub.pk"
+          },
+          {
+            "url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
+            "label": "autohub.pk"
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/cavity_wax.jpg",
-          "caption": "HB Body U900 cavity wax spray 400ml \u00b7 cavity wax reference image",
+          "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_24d52c190fc8.webp",
+          "caption": "HB Body U900 cavity wax spray 400ml \u00b7 Autohub \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "cavity_wax",
+          "media_id": "",
           "matched_tokens": [
+            "part_cavity_wax",
+            "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+            "body",
+            "u900",
             "cavity",
-            "wax"
+            "wax",
+            "spray",
+            "400ml"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "selling_site_match",
+          "listing_url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+          "image_url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
+          "match_score": 263
         }
       },
       {
@@ -29956,23 +30095,36 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
             "label": "daraz.pk"
+          },
+          {
+            "url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
+            "label": "pk-live-21.slatic.net"
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/primer.jpg",
-          "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 primer reference image",
+          "path": "../../deliverables/selling_site_images/images/expenses_hi_build_zinc_rich_epoxy_primer_ec_11_tw_2b4211f7f73b.png",
+          "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 Daraz / ICI Industrial Coatings \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "primer",
+          "media_id": "",
           "matched_tokens": [
-            "primer"
+            "part_primer",
+            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+            "zinc-rich",
+            "two-pack",
+            "556870547",
+            "build",
+            "zinc",
+            "rich"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+          "image_url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
+          "match_score": 325
         }
       },
       {
@@ -30783,9 +30935,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_daraz_jubilee_hose_clip_assortment_30pc",
-            "645582306",
-            "3011629985",
             "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
+            "3011629985",
+            "645582306",
             "jubilee",
             "hose",
             "clip",
@@ -33825,9 +33977,9 @@ window.J40_DASHBOARD_DATA = {
       {
         "supply_type": "tool",
         "previously": 36,
-        "in_process": 15,
+        "in_process": 23,
         "still_required": 8,
-        "total": 59
+        "total": 67
       },
       {
         "supply_type": "substance",
@@ -38637,9 +38789,9 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_daraz_jubilee_hose_clip_assortment_30pc",
-              "645582306",
-              "3011629985",
               "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
+              "3011629985",
+              "645582306",
               "jubilee",
               "hose",
               "clip",
@@ -38743,23 +38895,36 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
               "label": "autohub.pk"
+            },
+            {
+              "url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
+              "label": "multimedia.3m.com"
             }
           ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-            "caption": "3M Prep Solvent-70 1 gallon / wax and grease remover \u00b7 cleaner/degreaser reference image",
+            "path": "../../deliverables/selling_site_images/images/expenses_3m_prep_solvent_70_1_gallon_wax_and_grea_06ccd44e8c5f.webp",
+            "caption": "3M Prep Solvent-70 1 gallon / wax and grease remover \u00b7 Autohub \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "wax_grease_remover",
+            "media_id": "",
             "matched_tokens": [
-              "cleaner"
+              "part_wax_and_grease_remover",
+              "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+              "prep",
+              "solvent",
+              "gallon",
+              "wax",
+              "grease",
+              "remover"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "selling_site_match",
+            "listing_url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+            "image_url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
+            "match_score": 257
           }
         },
         {
@@ -38783,24 +38948,36 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
               "label": "autohub.pk"
+            },
+            {
+              "url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
+              "label": "autohub.pk"
             }
           ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/cavity_wax.jpg",
-            "caption": "HB Body U900 cavity wax spray 400ml \u00b7 cavity wax reference image",
+            "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_24d52c190fc8.webp",
+            "caption": "HB Body U900 cavity wax spray 400ml \u00b7 Autohub \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "cavity_wax",
+            "media_id": "",
             "matched_tokens": [
+              "part_cavity_wax",
+              "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+              "body",
+              "u900",
               "cavity",
-              "wax"
+              "wax",
+              "spray",
+              "400ml"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "selling_site_match",
+            "listing_url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+            "image_url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
+            "match_score": 263
           }
         },
         {
@@ -38824,23 +39001,36 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
               "label": "daraz.pk"
+            },
+            {
+              "url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
+              "label": "pk-live-21.slatic.net"
             }
           ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/primer.jpg",
-            "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 primer reference image",
+            "path": "../../deliverables/selling_site_images/images/expenses_hi_build_zinc_rich_epoxy_primer_ec_11_tw_2b4211f7f73b.png",
+            "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 Daraz / ICI Industrial Coatings \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "primer",
+            "media_id": "",
             "matched_tokens": [
-              "primer"
+              "part_primer",
+              "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+              "zinc-rich",
+              "two-pack",
+              "556870547",
+              "build",
+              "zinc",
+              "rich"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+            "image_url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
+            "match_score": 325
           }
         },
         {
@@ -38951,6 +39141,323 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "tool_harden_50lb_magnetic_welding_holder_765050",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Harden 50LB Magnetic Welding Holder 765050",
+          "vendor": "Toolsmart.pk",
+          "amount": "4760",
+          "currency": "PKR",
+          "workstream": "body_chassis",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
+          "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 4 line total PKR 4760. Fulfillment/review emails exist but local receipt photo is still not attached.",
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/harden-50lb-magnetic-welding-holder-765050",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/765050.avif?v=1759317690",
+              "label": "toolsmart.pk"
+            }
+          ],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/expenses_harden_50lb_magnetic_welding_holder_7650_bdc4cf32ea58.webp",
+            "caption": "Harden 50LB Magnetic Welding Holder 765050 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "tool_harden_50lb_magnetic_welding_holder_765050",
+              "harden",
+              "50lb",
+              "magnetic",
+              "welding",
+              "holder",
+              "765050",
+              "toolsmart"
+            ],
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/harden-50lb-magnetic-welding-holder-765050",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/765050.avif?v=1759317690",
+            "match_score": 233
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_harden_cup_wire_brush_100mm_m14",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Harden Cup Wire Brush With NutSize100mm x M14x2.0",
+          "vendor": "Toolsmart.pk",
+          "amount": "2920",
+          "currency": "PKR",
+          "workstream": "body_chassis",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
+          "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 2 line total PKR 2920. Fulfillment/review emails exist but local receipt photo is still not attached.",
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/harden-cup-wire-brush-with-nutsize100mm-x-m14x2-0",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "https://www.toolsmart.pk/cdn/shop/products/611503.jpg?v=1714544620&width=620",
+              "label": "toolsmart.pk"
+            }
+          ],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/expenses_harden_cup_wire_brush_with_nutsize100mm__3a8ab7f53262.webp",
+            "caption": "Harden Cup Wire Brush With NutSize100mm x M14x2.0 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "tool_harden_cup_wire_brush_100mm_m14",
+              "harden",
+              "cup",
+              "wire",
+              "brush",
+              "nutsize100mm",
+              "m14x2",
+              "toolsmart"
+            ],
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/harden-cup-wire-brush-with-nutsize100mm-x-m14x2-0",
+            "image_url": "https://www.toolsmart.pk/cdn/shop/products/611503.jpg?v=1714544620&width=620",
+            "match_score": 233
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_total_inverter_mma_welding_machine_tw220069",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Total Inverter MMA welding machine TW220069",
+          "vendor": "Toolsmart.pk",
+          "amount": "55100",
+          "currency": "PKR",
+          "workstream": "body_chassis",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_msg_19dbdd660bbcfbee|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
+          "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 1 line total PKR 55100. Review email 2026-04-24 references this exact item; local receipt photo is still not attached.",
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/total-inverter-mma-welding-machine-tw220069",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/TW220069.jpg?v=1762431147",
+              "label": "toolsmart.pk"
+            }
+          ],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/expenses_total_inverter_mma_welding_machine_tw220_b08f8cecc7af.jpg",
+            "caption": "Total Inverter MMA welding machine TW220069 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "tool_total_inverter_mma_welding_machine_tw220069",
+              "total",
+              "inverter",
+              "mma",
+              "welding",
+              "machine",
+              "tw220069",
+              "toolsmart"
+            ],
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/total-inverter-mma-welding-machine-tw220069",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/TW220069.jpg?v=1762431147",
+            "match_score": 233
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_total_welding_leather_gloves_16_tsp15161",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Total Welding leather gloves 16\" TSP15161",
+          "vendor": "Toolsmart.pk",
+          "amount": "5280",
+          "currency": "PKR",
+          "workstream": "body_chassis",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_msg_19ddcc60fed835a5|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
+          "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 2 line total PKR 5280. Review email 2026-04-30 references this exact item; local receipt photo is still not attached.",
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/total-welding-leather-gloves-16-tsp15161",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/TSP15161.jpg?v=1735978616",
+              "label": "toolsmart.pk"
+            }
+          ],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/expenses_total_welding_leather_gloves_16_tsp15161_5256bf447fe3.webp",
+            "caption": "Total Welding leather gloves 16\" TSP15161 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "tool_total_welding_leather_gloves_16_tsp15161",
+              "total",
+              "welding",
+              "leather",
+              "gloves",
+              "tsp15161",
+              "toolsmart"
+            ],
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/total-welding-leather-gloves-16-tsp15161",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/TSP15161.jpg?v=1735978616",
+            "match_score": 233
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_wadfow_abrasive_metal_grinding_disc_wac1353",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Wadfow Abrasive metal grinding disc WAC1353",
+          "vendor": "Toolsmart.pk",
+          "amount": "1440",
+          "currency": "PKR",
+          "workstream": "body_chassis",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
+          "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 3 line total PKR 1440. Fulfillment/review emails exist but local receipt photo is still not attached.",
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/wadfow-abrasive-metal-grinding-disc-wac1353",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/26d1d02f-3b32-4da1-bcf1-2eb315371f72.webp?v=1765177291",
+              "label": "toolsmart.pk"
+            }
+          ],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/expenses_wadfow_abrasive_metal_grinding_disc_wac1_71c77b82d6ab.webp",
+            "caption": "Wadfow Abrasive metal grinding disc WAC1353 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "tool_wadfow_abrasive_metal_grinding_disc_wac1353",
+              "wadfow",
+              "abrasive",
+              "metal",
+              "grinding",
+              "disc",
+              "wac1353",
+              "toolsmart"
+            ],
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/wadfow-abrasive-metal-grinding-disc-wac1353",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/26d1d02f-3b32-4da1-bcf1-2eb315371f72.webp?v=1765177291",
+            "match_score": 233
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_wadfow_auto_darkening_welding_helmet_wwh3503",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Wadfow Auto-darkening welding helmet WWH3503",
+          "vendor": "Toolsmart.pk",
+          "amount": "8710",
+          "currency": "PKR",
+          "workstream": "body_chassis",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_msg_19dcd4fe9fa2eeee|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
+          "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 1 line total PKR 8710. Review email 2026-04-27 references this exact item; local receipt photo is still not attached.",
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/wadfow-auto-darkening-welding-helmet-wwh3503",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/wadfow-auto-darkening-welding-helmet-wwh3503-105890644.webp?v=1765185273",
+              "label": "toolsmart.pk"
+            }
+          ],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/expenses_wadfow_auto_darkening_welding_helmet_wwh_c420943e6d64.webp",
+            "caption": "Wadfow Auto-darkening welding helmet WWH3503 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "tool_wadfow_auto_darkening_welding_helmet_wwh3503",
+              "wadfow",
+              "auto",
+              "darkening",
+              "welding",
+              "helmet",
+              "wwh3503",
+              "toolsmart"
+            ],
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/wadfow-auto-darkening-welding-helmet-wwh3503",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/wadfow-auto-darkening-welding-helmet-wwh3503-105890644.webp?v=1765185273",
+            "match_score": 233
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "tool_daraz_mini_wire_brush_set_x2",
           "supply_type": "tool",
           "inventory_group": "tools",
@@ -38988,9 +39495,9 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "tool_daraz_mini_wire_brush_set_x2",
-              "1385484991",
-              "https://www.daraz.pk/products/i192752152-s1385484991.html?urlflag=true&mp=1",
               "192752152",
+              "https://www.daraz.pk/products/i192752152-s1385484991.html?urlflag=true&mp=1",
+              "1385484991",
               "mini",
               "wire",
               "brush",
@@ -39107,22 +39614,40 @@ window.J40_DASHBOARD_DATA = {
           "delivery_status": "pending_delivery",
           "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493",
           "notes": "Paid Toolsmart order dated 2026-05-01; primary 3T trolley jack for lifting before supporting chassis on stands. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order.",
-          "links": [],
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/harden-3ton-hydraulic-trolley-jack-730213",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/images_9e4d235e-59e1-4a48-b776-36c68bddae3f.jpg?v=1759321292",
+              "label": "toolsmart.pk"
+            }
+          ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg",
-            "caption": "Harden 3Ton Hydraulic Trolley Jack 730213 - Toolsmart order contact sheet",
+            "path": "../../deliverables/selling_site_images/images/expenses_harden_3ton_hydraulic_trolley_jack_73021_2b3d61b17144.jpg",
+            "caption": "Harden 3Ton Hydraulic Trolley Jack 730213 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "tool_harden_3ton_trolley_jack_730213"
+              "tool_harden_3ton_trolley_jack_730213",
+              "harden",
+              "3ton",
+              "hydraulic",
+              "trolley",
+              "jack",
+              "730213",
+              "toolsmart"
             ],
-            "match_basis": "exact_order_evidence",
-            "match_score": 999
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/harden-3ton-hydraulic-trolley-jack-730213",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/images_9e4d235e-59e1-4a48-b776-36c68bddae3f.jpg?v=1759321292",
+            "match_score": 239
           }
         },
         {
@@ -39142,22 +39667,38 @@ window.J40_DASHBOARD_DATA = {
           "delivery_status": "pending_delivery",
           "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493",
           "notes": "Paid Toolsmart order dated 2026-05-01; clamp set for holding pads, small parts, and temporary setup during cleaning/bodywork. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order.",
-          "links": [],
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/harden-6pc-x-4-spring-clamp-set",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/600354-600356_1.jpg?v=1714481582",
+              "label": "toolsmart.pk"
+            }
+          ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg",
-            "caption": "Harden 6Pc x 4 inch Spring Clamp Set - Toolsmart order contact sheet",
+            "path": "../../deliverables/selling_site_images/images/expenses_harden_6pc_x_4_inch_spring_clamp_set_2f93aa0ae118.webp",
+            "caption": "Harden 6Pc x 4 inch Spring Clamp Set \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "tool_harden_spring_clamp_set_4in_6pc"
+              "tool_harden_spring_clamp_set_4in_6pc",
+              "harden",
+              "6pc",
+              "spring",
+              "clamp",
+              "toolsmart"
             ],
-            "match_basis": "exact_order_evidence",
-            "match_score": 999
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/harden-6pc-x-4-spring-clamp-set",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/600354-600356_1.jpg?v=1714481582",
+            "match_score": 224
           }
         },
         {
@@ -39177,22 +39718,40 @@ window.J40_DASHBOARD_DATA = {
           "delivery_status": "pending_delivery",
           "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493",
           "notes": "Paid Toolsmart order dated 2026-05-01; soft mallet for non-marring persuasion and aluminium/bodywork shaping. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order.",
-          "links": [],
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/harden-white-rubber-mallet-with-firbregalss-handle-700g-590437",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/590432-590437_1_7605032c-08ca-4b57-b3c9-d7acac647a3c.jpg?v=1714591407",
+              "label": "toolsmart.pk"
+            }
+          ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg",
-            "caption": "Harden White Rubber Mallet 700g 590437 - Toolsmart order contact sheet",
+            "path": "../../deliverables/selling_site_images/images/expenses_harden_white_rubber_mallet_with_fibergla_b6959448f5fb.webp",
+            "caption": "Harden White Rubber Mallet with Fiberglass Handle 700g 590437 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "tool_harden_white_rubber_mallet_700g_590437"
+              "tool_harden_white_rubber_mallet_700g_590437",
+              "harden",
+              "white",
+              "rubber",
+              "mallet",
+              "fiberglass",
+              "handle",
+              "700g"
             ],
-            "match_basis": "exact_order_evidence",
-            "match_score": 999
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/harden-white-rubber-mallet-with-firbregalss-handle-700g-590437",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/590432-590437_1_7605032c-08ca-4b57-b3c9-d7acac647a3c.jpg?v=1714591407",
+            "match_score": 236
           }
         },
         {
@@ -39252,22 +39811,40 @@ window.J40_DASHBOARD_DATA = {
           "delivery_status": "pending_delivery",
           "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493",
           "notes": "Paid Toolsmart order dated 2026-05-01; dead blow mallet for controlled non-rebound strikes during suspension/bodywork setup. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order.",
-          "links": [],
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/ingco-dead-blow-mallet-2lb-hdbm08028",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/HDBM08028.webp?v=1758958119",
+              "label": "toolsmart.pk"
+            }
+          ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg",
-            "caption": "Ingco Dead blow mallet 2lb HDBM08028 - Toolsmart order contact sheet",
+            "path": "../../deliverables/selling_site_images/images/expenses_ingco_dead_blow_mallet_2lb_hdbm08028_1b59de657edc.webp",
+            "caption": "Ingco Dead blow mallet 2lb HDBM08028 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "tool_ingco_dead_blow_mallet_2lb_hdbm08028"
+              "tool_ingco_dead_blow_mallet_2lb_hdbm08028",
+              "ingco",
+              "dead",
+              "blow",
+              "mallet",
+              "2lb",
+              "hdbm08028",
+              "toolsmart"
             ],
-            "match_basis": "exact_order_evidence",
-            "match_score": 999
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/ingco-dead-blow-mallet-2lb-hdbm08028",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/HDBM08028.webp?v=1758958119",
+            "match_score": 242
           }
         },
         {
@@ -39309,9 +39886,9 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "tool_daraz_safety_goggles_cleanup",
-              "3029400460",
-              "649346371",
               "https://www.daraz.pk/products/i649346371-s3029400460.html?urlflag=true&mp=1",
+              "649346371",
+              "3029400460",
               "safety",
               "goggles",
               "protective",
@@ -39321,6 +39898,59 @@ window.J40_DASHBOARD_DATA = {
             "listing_url": "https://www.daraz.pk/products/i649346371-s3029400460.html?urlFlag=true&mp=1",
             "image_url": "https://static-01.daraz.pk/p/6988bc488aa6f8214912cc5a51ec3f92.png",
             "match_score": 291
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_total_bi_metal_hole_saw_22mm_tac410221",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Total Bi-metal Hole saw 22mm TAC410221",
+          "vendor": "Toolsmart.pk",
+          "amount": "2040",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "gmail_msg_19dcb2f888abafa3|gmail_order_TM25430|shopify_order_50e287a9a7fd20d219a1e7572eb18e62",
+          "notes": "Toolsmart order #TM25430 confirmed 2026-04-27 local time from Shopify order link 50e287a9a7fd20d219a1e7572eb18e62; quantity 2 line total PKR 2040 plus shared order shipping.",
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/total-bi-metal-hole-saw-tac410221",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/products/TAC410221.jpg?v=1620922078",
+              "label": "toolsmart.pk"
+            }
+          ],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/expenses_total_bi_metal_hole_saw_22mm_tac410221_efb1b5c2fa22.webp",
+            "caption": "Total Bi-metal Hole saw 22mm TAC410221 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "tool_total_bi_metal_hole_saw_22mm_tac410221",
+              "total",
+              "metal",
+              "hole",
+              "saw",
+              "22mm",
+              "tac410221",
+              "toolsmart"
+            ],
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/total-bi-metal-hole-saw-tac410221",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/products/TAC410221.jpg?v=1620922078",
+            "match_score": 233
           }
         },
         {
@@ -39340,22 +39970,93 @@ window.J40_DASHBOARD_DATA = {
           "delivery_status": "pending_delivery",
           "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493",
           "notes": "Paid Toolsmart order dated 2026-05-01; quantity 2 pairs at PKR 9600 each, four stands total for chassis support. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order.",
-          "links": [],
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/total-jack-stand-3ton-thjs0301",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/THJS0301-2.jpg?v=1693506770",
+              "label": "toolsmart.pk"
+            }
+          ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg",
-            "caption": "Total Jack stand 3Ton THJS0301 - 2 pairs - Toolsmart order contact sheet",
+            "path": "../../deliverables/selling_site_images/images/expenses_total_jack_stand_3ton_thjs0301_2_pairs_f216d4c0ca00.webp",
+            "caption": "Total Jack stand 3Ton THJS0301 - 2 pairs \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "tool_total_jack_stands_3ton_thjs0301_2pairs"
+              "tool_total_jack_stands_3ton_thjs0301_2pairs",
+              "total",
+              "jack",
+              "stand",
+              "3ton",
+              "thjs0301",
+              "pairs",
+              "toolsmart"
             ],
-            "match_basis": "exact_order_evidence",
-            "match_score": 999
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/total-jack-stand-3ton-thjs0301",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/THJS0301-2.jpg?v=1693506770",
+            "match_score": 236
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_total_round_steel_file_200mm_tht91386",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Total Round steel file 200mm THT91386",
+          "vendor": "Toolsmart.pk",
+          "amount": "2000",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "gmail_msg_19dcb2f888abafa3|gmail_order_TM25430|shopify_order_50e287a9a7fd20d219a1e7572eb18e62",
+          "notes": "Toolsmart order #TM25430 confirmed 2026-04-27 local time from Shopify order link 50e287a9a7fd20d219a1e7572eb18e62; quantity 2 line total PKR 2000 plus shared order shipping.",
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/total-round-steel-file-tht91386",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/products/THT91386.jpg?v=1621065864",
+              "label": "toolsmart.pk"
+            }
+          ],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/expenses_total_round_steel_file_200mm_tht91386_a8a9d7fbabe7.webp",
+            "caption": "Total Round steel file 200mm THT91386 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "tool_total_round_steel_file_200mm_tht91386",
+              "total",
+              "round",
+              "steel",
+              "file",
+              "200mm",
+              "tht91386",
+              "toolsmart"
+            ],
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/total-round-steel-file-tht91386",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/products/THT91386.jpg?v=1621065864",
+            "match_score": 233
           }
         },
         {
@@ -39375,22 +40076,39 @@ window.J40_DASHBOARD_DATA = {
           "delivery_status": "pending_delivery",
           "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493",
           "notes": "Paid Toolsmart order dated 2026-05-01; one of 9 physical items in PKR 94510 order for chassis lift/clean/suspension work. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order.",
-          "links": [],
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/total-wrecking-bar-600mm-tht431242",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/THT431242.webp?v=1735984407",
+              "label": "toolsmart.pk"
+            }
+          ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg",
-            "caption": "Total Wrecking bar 600mm THT431242 - Toolsmart order contact sheet",
+            "path": "../../deliverables/selling_site_images/images/expenses_total_wrecking_bar_600mm_tht431242_f9cdea648a0e.webp",
+            "caption": "Total Wrecking bar 600mm THT431242 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "tool_total_wrecking_bar_600mm_tht431242"
+              "tool_total_wrecking_bar_600mm_tht431242",
+              "total",
+              "wrecking",
+              "bar",
+              "600mm",
+              "tht431242",
+              "toolsmart"
             ],
-            "match_basis": "exact_order_evidence",
-            "match_score": 999
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/total-wrecking-bar-600mm-tht431242",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/THT431242.webp?v=1735984407",
+            "match_score": 233
           }
         },
         {
@@ -39410,22 +40128,39 @@ window.J40_DASHBOARD_DATA = {
           "delivery_status": "pending_delivery",
           "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493",
           "notes": "Paid Toolsmart order dated 2026-05-01; hammer and dolly set for aluminium/body panel shaping. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order.",
-          "links": [],
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/wadfow-7-pcs-body-and-fender-hammer-set-whz1d07",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/WHZ1D07_1024x_21b7b624-2106-445c-9cec-7cc22dd76217.webp?v=1765474506",
+              "label": "toolsmart.pk"
+            }
+          ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg",
-            "caption": "Wadfow 7 Pcs Body And Fender Hammer Set WHZ1D07 - Toolsmart order contact sheet",
+            "path": "../../deliverables/selling_site_images/images/expenses_wadfow_7_pcs_body_and_fender_hammer_set__7e637e79f6ab.webp",
+            "caption": "Wadfow 7 Pcs Body And Fender Hammer Set WHZ1D07 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "tool_wadfow_body_fender_hammer_set_whz1d07"
+              "tool_wadfow_body_fender_hammer_set_whz1d07",
+              "wadfow",
+              "body",
+              "fender",
+              "hammer",
+              "whz1d07",
+              "toolsmart"
             ],
-            "match_basis": "exact_order_evidence",
-            "match_score": 999
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/wadfow-7-pcs-body-and-fender-hammer-set-whz1d07",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/WHZ1D07_1024x_21b7b624-2106-445c-9cec-7cc22dd76217.webp?v=1765474506",
+            "match_score": 236
           }
         },
         {
@@ -39445,22 +40180,38 @@ window.J40_DASHBOARD_DATA = {
           "delivery_status": "pending_delivery",
           "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493",
           "notes": "Paid Toolsmart order dated 2026-05-01; 5L sprayer for water-based degreaser application during chassis/engine/transmission cleaning. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order.",
-          "links": [],
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/wadfow-pressure-sprayer-wrs1550",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/WRS1550.jpg?v=1765789902",
+              "label": "toolsmart.pk"
+            }
+          ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg",
-            "caption": "Wadfow Pressure sprayer WRS1550 - Toolsmart order contact sheet",
+            "path": "../../deliverables/selling_site_images/images/expenses_wadfow_pressure_sprayer_wrs1550_edab47c58665.webp",
+            "caption": "Wadfow Pressure sprayer WRS1550 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "tool_wadfow_pressure_sprayer_wrs1550"
+              "tool_wadfow_pressure_sprayer_wrs1550",
+              "wadfow",
+              "pressure",
+              "sprayer",
+              "wrs1550",
+              "toolsmart"
             ],
-            "match_basis": "exact_order_evidence",
-            "match_score": 999
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/wadfow-pressure-sprayer-wrs1550",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/WRS1550.jpg?v=1765789902",
+            "match_score": 224
           }
         }
       ],
@@ -39693,23 +40444,40 @@ window.J40_DASHBOARD_DATA = {
           "delivery_status": "No",
           "evidence_ref": "",
           "notes": "Only buy/fabricate if right+mid cluster hole count/spacing/depth cannot safely host all required controls. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: fabricate only if OEM holes cannot safely fit required controls.",
-          "links": [],
+          "links": [
+            {
+              "url": "https://www.crescentelectric.com/product/609291/selector-switch-harmony-xb4-black-22mm-2-position-stay-put-1-no",
+              "label": "crescentelectric.com"
+            },
+            {
+              "url": "https://www.crescentelectric.com/globalassets/catalogs/crescentelectric.com/8/8d2/8d2f7/8d2f7471-02d8-496d-a295-354b84db82/8d2f7471-02d8-496d-a295-354b84db82ba/sqd-xb4as1-1.jpg?width=542&height=542&rmode=Pad&bgcolor=fff",
+              "label": "crescentelectric.com"
+            }
+          ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/switch_panel.jpg",
-            "caption": "Dashboard fascia / auxiliary switch panel (if OEM holes are insufficient) \u00b7 switch panel reference image",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_dashboard_fascia_auxiliary_switch_panel__a8e361b962f9.jpg",
+            "caption": "Dashboard fascia / auxiliary switch panel (if OEM holes are insufficient) \u00b7 Local sheet-metal/fabrication shop \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "switch_panel",
+            "media_id": "",
             "matched_tokens": [
+              "row_38",
+              "dashboard",
+              "fascia",
+              "auxiliary",
               "switch",
-              "panel"
+              "panel",
+              "oem",
+              "holes"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.crescentelectric.com/product/609291/selector-switch-harmony-xb4-black-22mm-2-position-stay-put-1-no",
+            "image_url": "https://www.crescentelectric.com/globalassets/catalogs/crescentelectric.com/8/8d2/8d2f7/8d2f7471-02d8-496d-a295-354b84db82/8d2f7471-02d8-496d-a295-354b84db82ba/sqd-xb4as1-1.jpg?width=542&height=542&rmode=Pad&bgcolor=fff",
+            "match_score": 245
           }
         },
         {
@@ -39974,22 +40742,40 @@ window.J40_DASHBOARD_DATA = {
           "delivery_status": "No",
           "evidence_ref": "",
           "notes": "Current key security reported weak; complete matched-key security fix before final refit. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: prioritize as low-risk, locally available buy-first item. | Price basis 2026-04-15: locksmith re-key/local lock solution preferred; exact FJ40 imported set costs higher.",
-          "links": [],
+          "links": [
+            {
+              "url": "https://www.crescentelectric.com/product/60230/selector-switch-harmony-xb4-metal-black-22mm-long-handle-3positions-stay-put-2no",
+              "label": "crescentelectric.com"
+            },
+            {
+              "url": "https://www.crescentelectric.com/globalassets/catalogs/crescentelectric.com/c/c89/c895e/c895eb5f-ec49-4ef4-a471-285c6e90da665/c895eb5f-ec49-4ef4-a471-285c6e90da66532/sqd-xb4bj33-5.jpg?width=140&height=140&rmode=Pad&bgcolor=fff",
+              "label": "crescentelectric.com"
+            }
+          ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/lockset.jpg",
-            "caption": "Ignition lock security fix (new barrel + matched keys OR full locksmith re-key) \u00b7 lock set reference image",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_ignition_lock_security_fix_new_barrel_ma_0c2b25595c0a.jpg",
+            "caption": "Ignition lock security fix (new barrel + matched keys OR full locksmith re-key) \u00b7 Local locksmith + lockset supplier \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "lockset",
+            "media_id": "",
             "matched_tokens": [
-              "lock"
+              "row_39",
+              "ignition",
+              "lock",
+              "security",
+              "fix",
+              "new",
+              "barrel",
+              "matched"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.crescentelectric.com/product/60230/selector-switch-harmony-xb4-metal-black-22mm-long-handle-3positions-stay-put-2no",
+            "image_url": "https://www.crescentelectric.com/globalassets/catalogs/crescentelectric.com/c/c89/c895e/c895eb5f-ec49-4ef4-a471-285c6e90da665/c895eb5f-ec49-4ef4-a471-285c6e90da66532/sqd-xb4bj33-5.jpg?width=140&height=140&rmode=Pad&bgcolor=fff",
+            "match_score": 254
           }
         },
         {
@@ -41952,9 +42738,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_daraz_jubilee_hose_clip_assortment_30pc",
-            "645582306",
-            "3011629985",
             "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
+            "3011629985",
+            "645582306",
             "jubilee",
             "hose",
             "clip",
@@ -42092,23 +42878,36 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
             "label": "autohub.pk"
+          },
+          {
+            "url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
+            "label": "multimedia.3m.com"
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-          "caption": "3M Prep Solvent-70 1 gallon / wax and grease remover \u00b7 cleaner/degreaser reference image",
+          "path": "../../deliverables/selling_site_images/images/expenses_3m_prep_solvent_70_1_gallon_wax_and_grea_06ccd44e8c5f.webp",
+          "caption": "3M Prep Solvent-70 1 gallon / wax and grease remover \u00b7 Autohub \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "wax_grease_remover",
+          "media_id": "",
           "matched_tokens": [
-            "cleaner"
+            "part_wax_and_grease_remover",
+            "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+            "prep",
+            "solvent",
+            "gallon",
+            "wax",
+            "grease",
+            "remover"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "selling_site_match",
+          "listing_url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+          "image_url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
+          "match_score": 257
         }
       },
       {
@@ -42132,24 +42931,36 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
             "label": "autohub.pk"
+          },
+          {
+            "url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
+            "label": "autohub.pk"
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/cavity_wax.jpg",
-          "caption": "HB Body U900 cavity wax spray 400ml \u00b7 cavity wax reference image",
+          "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_24d52c190fc8.webp",
+          "caption": "HB Body U900 cavity wax spray 400ml \u00b7 Autohub \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "cavity_wax",
+          "media_id": "",
           "matched_tokens": [
+            "part_cavity_wax",
+            "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+            "body",
+            "u900",
             "cavity",
-            "wax"
+            "wax",
+            "spray",
+            "400ml"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "selling_site_match",
+          "listing_url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+          "image_url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
+          "match_score": 263
         }
       },
       {
@@ -42173,23 +42984,36 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
             "label": "daraz.pk"
+          },
+          {
+            "url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
+            "label": "pk-live-21.slatic.net"
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/primer.jpg",
-          "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 primer reference image",
+          "path": "../../deliverables/selling_site_images/images/expenses_hi_build_zinc_rich_epoxy_primer_ec_11_tw_2b4211f7f73b.png",
+          "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 Daraz / ICI Industrial Coatings \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "primer",
+          "media_id": "",
           "matched_tokens": [
-            "primer"
+            "part_primer",
+            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+            "zinc-rich",
+            "two-pack",
+            "556870547",
+            "build",
+            "zinc",
+            "rich"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+          "image_url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
+          "match_score": 325
         }
       },
       {
@@ -42266,9 +43090,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "tool_daraz_mini_wire_brush_set_x2",
-            "1385484991",
-            "https://www.daraz.pk/products/i192752152-s1385484991.html?urlflag=true&mp=1",
             "192752152",
+            "https://www.daraz.pk/products/i192752152-s1385484991.html?urlflag=true&mp=1",
+            "1385484991",
             "mini",
             "wire",
             "brush",
@@ -42456,22 +43280,93 @@ window.J40_DASHBOARD_DATA = {
         "delivery_status": "pending_delivery",
         "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493",
         "notes": "Paid Toolsmart order dated 2026-05-01; primary 3T trolley jack for lifting before supporting chassis on stands. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order.",
-        "links": [],
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/harden-3ton-hydraulic-trolley-jack-730213",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/images_9e4d235e-59e1-4a48-b776-36c68bddae3f.jpg?v=1759321292",
+            "label": "toolsmart.pk"
+          }
+        ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg",
-          "caption": "Harden 3Ton Hydraulic Trolley Jack 730213 - Toolsmart order contact sheet",
+          "path": "../../deliverables/selling_site_images/images/expenses_harden_3ton_hydraulic_trolley_jack_73021_2b3d61b17144.jpg",
+          "caption": "Harden 3Ton Hydraulic Trolley Jack 730213 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "tool_harden_3ton_trolley_jack_730213"
+            "tool_harden_3ton_trolley_jack_730213",
+            "harden",
+            "3ton",
+            "hydraulic",
+            "trolley",
+            "jack",
+            "730213",
+            "toolsmart"
           ],
-          "match_basis": "exact_order_evidence",
-          "match_score": 999
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/harden-3ton-hydraulic-trolley-jack-730213",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/images_9e4d235e-59e1-4a48-b776-36c68bddae3f.jpg?v=1759321292",
+          "match_score": 239
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_harden_50lb_magnetic_welding_holder_765050",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Harden 50LB Magnetic Welding Holder 765050",
+        "vendor": "Toolsmart.pk",
+        "amount": "4760",
+        "currency": "PKR",
+        "workstream": "body_chassis",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
+        "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 4 line total PKR 4760. Fulfillment/review emails exist but local receipt photo is still not attached.",
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/harden-50lb-magnetic-welding-holder-765050",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/765050.avif?v=1759317690",
+            "label": "toolsmart.pk"
+          }
+        ],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/expenses_harden_50lb_magnetic_welding_holder_7650_bdc4cf32ea58.webp",
+          "caption": "Harden 50LB Magnetic Welding Holder 765050 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "tool_harden_50lb_magnetic_welding_holder_765050",
+            "harden",
+            "50lb",
+            "magnetic",
+            "welding",
+            "holder",
+            "765050",
+            "toolsmart"
+          ],
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/harden-50lb-magnetic-welding-holder-765050",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/765050.avif?v=1759317690",
+          "match_score": 233
         }
       },
       {
@@ -42491,22 +43386,91 @@ window.J40_DASHBOARD_DATA = {
         "delivery_status": "pending_delivery",
         "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493",
         "notes": "Paid Toolsmart order dated 2026-05-01; clamp set for holding pads, small parts, and temporary setup during cleaning/bodywork. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order.",
-        "links": [],
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/harden-6pc-x-4-spring-clamp-set",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/600354-600356_1.jpg?v=1714481582",
+            "label": "toolsmart.pk"
+          }
+        ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg",
-          "caption": "Harden 6Pc x 4 inch Spring Clamp Set - Toolsmart order contact sheet",
+          "path": "../../deliverables/selling_site_images/images/expenses_harden_6pc_x_4_inch_spring_clamp_set_2f93aa0ae118.webp",
+          "caption": "Harden 6Pc x 4 inch Spring Clamp Set \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "tool_harden_spring_clamp_set_4in_6pc"
+            "tool_harden_spring_clamp_set_4in_6pc",
+            "harden",
+            "6pc",
+            "spring",
+            "clamp",
+            "toolsmart"
           ],
-          "match_basis": "exact_order_evidence",
-          "match_score": 999
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/harden-6pc-x-4-spring-clamp-set",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/600354-600356_1.jpg?v=1714481582",
+          "match_score": 224
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_harden_cup_wire_brush_100mm_m14",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Harden Cup Wire Brush With NutSize100mm x M14x2.0",
+        "vendor": "Toolsmart.pk",
+        "amount": "2920",
+        "currency": "PKR",
+        "workstream": "body_chassis",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
+        "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 2 line total PKR 2920. Fulfillment/review emails exist but local receipt photo is still not attached.",
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/harden-cup-wire-brush-with-nutsize100mm-x-m14x2-0",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "https://www.toolsmart.pk/cdn/shop/products/611503.jpg?v=1714544620&width=620",
+            "label": "toolsmart.pk"
+          }
+        ],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/expenses_harden_cup_wire_brush_with_nutsize100mm__3a8ab7f53262.webp",
+          "caption": "Harden Cup Wire Brush With NutSize100mm x M14x2.0 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "tool_harden_cup_wire_brush_100mm_m14",
+            "harden",
+            "cup",
+            "wire",
+            "brush",
+            "nutsize100mm",
+            "m14x2",
+            "toolsmart"
+          ],
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/harden-cup-wire-brush-with-nutsize100mm-x-m14x2-0",
+          "image_url": "https://www.toolsmart.pk/cdn/shop/products/611503.jpg?v=1714544620&width=620",
+          "match_score": 233
         }
       },
       {
@@ -42526,22 +43490,40 @@ window.J40_DASHBOARD_DATA = {
         "delivery_status": "pending_delivery",
         "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493",
         "notes": "Paid Toolsmart order dated 2026-05-01; soft mallet for non-marring persuasion and aluminium/bodywork shaping. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order.",
-        "links": [],
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/harden-white-rubber-mallet-with-firbregalss-handle-700g-590437",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/590432-590437_1_7605032c-08ca-4b57-b3c9-d7acac647a3c.jpg?v=1714591407",
+            "label": "toolsmart.pk"
+          }
+        ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg",
-          "caption": "Harden White Rubber Mallet 700g 590437 - Toolsmart order contact sheet",
+          "path": "../../deliverables/selling_site_images/images/expenses_harden_white_rubber_mallet_with_fibergla_b6959448f5fb.webp",
+          "caption": "Harden White Rubber Mallet with Fiberglass Handle 700g 590437 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "tool_harden_white_rubber_mallet_700g_590437"
+            "tool_harden_white_rubber_mallet_700g_590437",
+            "harden",
+            "white",
+            "rubber",
+            "mallet",
+            "fiberglass",
+            "handle",
+            "700g"
           ],
-          "match_basis": "exact_order_evidence",
-          "match_score": 999
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/harden-white-rubber-mallet-with-firbregalss-handle-700g-590437",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/590432-590437_1_7605032c-08ca-4b57-b3c9-d7acac647a3c.jpg?v=1714591407",
+          "match_score": 236
         }
       },
       {
@@ -42601,22 +43583,40 @@ window.J40_DASHBOARD_DATA = {
         "delivery_status": "pending_delivery",
         "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493",
         "notes": "Paid Toolsmart order dated 2026-05-01; dead blow mallet for controlled non-rebound strikes during suspension/bodywork setup. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order.",
-        "links": [],
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/ingco-dead-blow-mallet-2lb-hdbm08028",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/HDBM08028.webp?v=1758958119",
+            "label": "toolsmart.pk"
+          }
+        ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg",
-          "caption": "Ingco Dead blow mallet 2lb HDBM08028 - Toolsmart order contact sheet",
+          "path": "../../deliverables/selling_site_images/images/expenses_ingco_dead_blow_mallet_2lb_hdbm08028_1b59de657edc.webp",
+          "caption": "Ingco Dead blow mallet 2lb HDBM08028 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "tool_ingco_dead_blow_mallet_2lb_hdbm08028"
+            "tool_ingco_dead_blow_mallet_2lb_hdbm08028",
+            "ingco",
+            "dead",
+            "blow",
+            "mallet",
+            "2lb",
+            "hdbm08028",
+            "toolsmart"
           ],
-          "match_basis": "exact_order_evidence",
-          "match_score": 999
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/ingco-dead-blow-mallet-2lb-hdbm08028",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/HDBM08028.webp?v=1758958119",
+          "match_score": 242
         }
       },
       {
@@ -42658,9 +43658,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "tool_daraz_safety_goggles_cleanup",
-            "3029400460",
-            "649346371",
             "https://www.daraz.pk/products/i649346371-s3029400460.html?urlflag=true&mp=1",
+            "649346371",
+            "3029400460",
             "safety",
             "goggles",
             "protective",
@@ -42670,6 +43670,112 @@ window.J40_DASHBOARD_DATA = {
           "listing_url": "https://www.daraz.pk/products/i649346371-s3029400460.html?urlFlag=true&mp=1",
           "image_url": "https://static-01.daraz.pk/p/6988bc488aa6f8214912cc5a51ec3f92.png",
           "match_score": 291
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_total_bi_metal_hole_saw_22mm_tac410221",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Total Bi-metal Hole saw 22mm TAC410221",
+        "vendor": "Toolsmart.pk",
+        "amount": "2040",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "gmail_msg_19dcb2f888abafa3|gmail_order_TM25430|shopify_order_50e287a9a7fd20d219a1e7572eb18e62",
+        "notes": "Toolsmart order #TM25430 confirmed 2026-04-27 local time from Shopify order link 50e287a9a7fd20d219a1e7572eb18e62; quantity 2 line total PKR 2040 plus shared order shipping.",
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/total-bi-metal-hole-saw-tac410221",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/products/TAC410221.jpg?v=1620922078",
+            "label": "toolsmart.pk"
+          }
+        ],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/expenses_total_bi_metal_hole_saw_22mm_tac410221_efb1b5c2fa22.webp",
+          "caption": "Total Bi-metal Hole saw 22mm TAC410221 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "tool_total_bi_metal_hole_saw_22mm_tac410221",
+            "total",
+            "metal",
+            "hole",
+            "saw",
+            "22mm",
+            "tac410221",
+            "toolsmart"
+          ],
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/total-bi-metal-hole-saw-tac410221",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/products/TAC410221.jpg?v=1620922078",
+          "match_score": 233
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_total_inverter_mma_welding_machine_tw220069",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Total Inverter MMA welding machine TW220069",
+        "vendor": "Toolsmart.pk",
+        "amount": "55100",
+        "currency": "PKR",
+        "workstream": "body_chassis",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_msg_19dbdd660bbcfbee|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
+        "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 1 line total PKR 55100. Review email 2026-04-24 references this exact item; local receipt photo is still not attached.",
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/total-inverter-mma-welding-machine-tw220069",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/TW220069.jpg?v=1762431147",
+            "label": "toolsmart.pk"
+          }
+        ],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/expenses_total_inverter_mma_welding_machine_tw220_b08f8cecc7af.jpg",
+          "caption": "Total Inverter MMA welding machine TW220069 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "tool_total_inverter_mma_welding_machine_tw220069",
+            "total",
+            "inverter",
+            "mma",
+            "welding",
+            "machine",
+            "tw220069",
+            "toolsmart"
+          ],
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/total-inverter-mma-welding-machine-tw220069",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/TW220069.jpg?v=1762431147",
+          "match_score": 233
         }
       },
       {
@@ -42689,22 +43795,145 @@ window.J40_DASHBOARD_DATA = {
         "delivery_status": "pending_delivery",
         "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493",
         "notes": "Paid Toolsmart order dated 2026-05-01; quantity 2 pairs at PKR 9600 each, four stands total for chassis support. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order.",
-        "links": [],
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/total-jack-stand-3ton-thjs0301",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/THJS0301-2.jpg?v=1693506770",
+            "label": "toolsmart.pk"
+          }
+        ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg",
-          "caption": "Total Jack stand 3Ton THJS0301 - 2 pairs - Toolsmart order contact sheet",
+          "path": "../../deliverables/selling_site_images/images/expenses_total_jack_stand_3ton_thjs0301_2_pairs_f216d4c0ca00.webp",
+          "caption": "Total Jack stand 3Ton THJS0301 - 2 pairs \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "tool_total_jack_stands_3ton_thjs0301_2pairs"
+            "tool_total_jack_stands_3ton_thjs0301_2pairs",
+            "total",
+            "jack",
+            "stand",
+            "3ton",
+            "thjs0301",
+            "pairs",
+            "toolsmart"
           ],
-          "match_basis": "exact_order_evidence",
-          "match_score": 999
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/total-jack-stand-3ton-thjs0301",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/THJS0301-2.jpg?v=1693506770",
+          "match_score": 236
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_total_round_steel_file_200mm_tht91386",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Total Round steel file 200mm THT91386",
+        "vendor": "Toolsmart.pk",
+        "amount": "2000",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "gmail_msg_19dcb2f888abafa3|gmail_order_TM25430|shopify_order_50e287a9a7fd20d219a1e7572eb18e62",
+        "notes": "Toolsmart order #TM25430 confirmed 2026-04-27 local time from Shopify order link 50e287a9a7fd20d219a1e7572eb18e62; quantity 2 line total PKR 2000 plus shared order shipping.",
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/total-round-steel-file-tht91386",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/products/THT91386.jpg?v=1621065864",
+            "label": "toolsmart.pk"
+          }
+        ],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/expenses_total_round_steel_file_200mm_tht91386_a8a9d7fbabe7.webp",
+          "caption": "Total Round steel file 200mm THT91386 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "tool_total_round_steel_file_200mm_tht91386",
+            "total",
+            "round",
+            "steel",
+            "file",
+            "200mm",
+            "tht91386",
+            "toolsmart"
+          ],
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/total-round-steel-file-tht91386",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/products/THT91386.jpg?v=1621065864",
+          "match_score": 233
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_total_welding_leather_gloves_16_tsp15161",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Total Welding leather gloves 16\" TSP15161",
+        "vendor": "Toolsmart.pk",
+        "amount": "5280",
+        "currency": "PKR",
+        "workstream": "body_chassis",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_msg_19ddcc60fed835a5|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
+        "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 2 line total PKR 5280. Review email 2026-04-30 references this exact item; local receipt photo is still not attached.",
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/total-welding-leather-gloves-16-tsp15161",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/TSP15161.jpg?v=1735978616",
+            "label": "toolsmart.pk"
+          }
+        ],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/expenses_total_welding_leather_gloves_16_tsp15161_5256bf447fe3.webp",
+          "caption": "Total Welding leather gloves 16\" TSP15161 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "tool_total_welding_leather_gloves_16_tsp15161",
+            "total",
+            "welding",
+            "leather",
+            "gloves",
+            "tsp15161",
+            "toolsmart"
+          ],
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/total-welding-leather-gloves-16-tsp15161",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/TSP15161.jpg?v=1735978616",
+          "match_score": 233
         }
       },
       {
@@ -42724,22 +43953,39 @@ window.J40_DASHBOARD_DATA = {
         "delivery_status": "pending_delivery",
         "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493",
         "notes": "Paid Toolsmart order dated 2026-05-01; one of 9 physical items in PKR 94510 order for chassis lift/clean/suspension work. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order.",
-        "links": [],
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/total-wrecking-bar-600mm-tht431242",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/THT431242.webp?v=1735984407",
+            "label": "toolsmart.pk"
+          }
+        ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg",
-          "caption": "Total Wrecking bar 600mm THT431242 - Toolsmart order contact sheet",
+          "path": "../../deliverables/selling_site_images/images/expenses_total_wrecking_bar_600mm_tht431242_f9cdea648a0e.webp",
+          "caption": "Total Wrecking bar 600mm THT431242 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "tool_total_wrecking_bar_600mm_tht431242"
+            "tool_total_wrecking_bar_600mm_tht431242",
+            "total",
+            "wrecking",
+            "bar",
+            "600mm",
+            "tht431242",
+            "toolsmart"
           ],
-          "match_basis": "exact_order_evidence",
-          "match_score": 999
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/total-wrecking-bar-600mm-tht431242",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/THT431242.webp?v=1735984407",
+          "match_score": 233
         }
       },
       {
@@ -42759,22 +44005,145 @@ window.J40_DASHBOARD_DATA = {
         "delivery_status": "pending_delivery",
         "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493",
         "notes": "Paid Toolsmart order dated 2026-05-01; hammer and dolly set for aluminium/body panel shaping. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order.",
-        "links": [],
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/wadfow-7-pcs-body-and-fender-hammer-set-whz1d07",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/WHZ1D07_1024x_21b7b624-2106-445c-9cec-7cc22dd76217.webp?v=1765474506",
+            "label": "toolsmart.pk"
+          }
+        ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg",
-          "caption": "Wadfow 7 Pcs Body And Fender Hammer Set WHZ1D07 - Toolsmart order contact sheet",
+          "path": "../../deliverables/selling_site_images/images/expenses_wadfow_7_pcs_body_and_fender_hammer_set__7e637e79f6ab.webp",
+          "caption": "Wadfow 7 Pcs Body And Fender Hammer Set WHZ1D07 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "tool_wadfow_body_fender_hammer_set_whz1d07"
+            "tool_wadfow_body_fender_hammer_set_whz1d07",
+            "wadfow",
+            "body",
+            "fender",
+            "hammer",
+            "whz1d07",
+            "toolsmart"
           ],
-          "match_basis": "exact_order_evidence",
-          "match_score": 999
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/wadfow-7-pcs-body-and-fender-hammer-set-whz1d07",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/WHZ1D07_1024x_21b7b624-2106-445c-9cec-7cc22dd76217.webp?v=1765474506",
+          "match_score": 236
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_wadfow_abrasive_metal_grinding_disc_wac1353",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Wadfow Abrasive metal grinding disc WAC1353",
+        "vendor": "Toolsmart.pk",
+        "amount": "1440",
+        "currency": "PKR",
+        "workstream": "body_chassis",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
+        "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 3 line total PKR 1440. Fulfillment/review emails exist but local receipt photo is still not attached.",
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/wadfow-abrasive-metal-grinding-disc-wac1353",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/26d1d02f-3b32-4da1-bcf1-2eb315371f72.webp?v=1765177291",
+            "label": "toolsmart.pk"
+          }
+        ],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/expenses_wadfow_abrasive_metal_grinding_disc_wac1_71c77b82d6ab.webp",
+          "caption": "Wadfow Abrasive metal grinding disc WAC1353 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "tool_wadfow_abrasive_metal_grinding_disc_wac1353",
+            "wadfow",
+            "abrasive",
+            "metal",
+            "grinding",
+            "disc",
+            "wac1353",
+            "toolsmart"
+          ],
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/wadfow-abrasive-metal-grinding-disc-wac1353",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/26d1d02f-3b32-4da1-bcf1-2eb315371f72.webp?v=1765177291",
+          "match_score": 233
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_wadfow_auto_darkening_welding_helmet_wwh3503",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Wadfow Auto-darkening welding helmet WWH3503",
+        "vendor": "Toolsmart.pk",
+        "amount": "8710",
+        "currency": "PKR",
+        "workstream": "body_chassis",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "gmail_msg_19d852aa76c4a57e|gmail_msg_19dcd4fe9fa2eeee|gmail_order_TM25240|shopify_order_d0c25d9c64d70f2d5bef2c20a55fa3e7",
+        "notes": "Toolsmart order #TM25240 confirmed 2026-04-13 from Shopify order link d0c25d9c64d70f2d5bef2c20a55fa3e7; quantity 1 line total PKR 8710. Review email 2026-04-27 references this exact item; local receipt photo is still not attached.",
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/wadfow-auto-darkening-welding-helmet-wwh3503",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/wadfow-auto-darkening-welding-helmet-wwh3503-105890644.webp?v=1765185273",
+            "label": "toolsmart.pk"
+          }
+        ],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/expenses_wadfow_auto_darkening_welding_helmet_wwh_c420943e6d64.webp",
+          "caption": "Wadfow Auto-darkening welding helmet WWH3503 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "tool_wadfow_auto_darkening_welding_helmet_wwh3503",
+            "wadfow",
+            "auto",
+            "darkening",
+            "welding",
+            "helmet",
+            "wwh3503",
+            "toolsmart"
+          ],
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/wadfow-auto-darkening-welding-helmet-wwh3503",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/wadfow-auto-darkening-welding-helmet-wwh3503-105890644.webp?v=1765185273",
+          "match_score": 233
         }
       },
       {
@@ -42794,22 +44163,38 @@ window.J40_DASHBOARD_DATA = {
         "delivery_status": "pending_delivery",
         "evidence_ref": "user_update_2026-05-01_toolsmart_chassis_lift_clean_suspension_order|gmail_msg_19de060f62c307f7|gmail_order_TM25493",
         "notes": "Paid Toolsmart order dated 2026-05-01; 5L sprayer for water-based degreaser application during chassis/engine/transmission cleaning. Gmail order #TM25493 confirms this line item as part of the PKR 94510 Toolsmart order.",
-        "links": [],
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/wadfow-pressure-sprayer-wrs1550",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/WRS1550.jpg?v=1765789902",
+            "label": "toolsmart.pk"
+          }
+        ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/.tmp_toolsmart_order_contactsheet.jpg",
-          "caption": "Wadfow Pressure sprayer WRS1550 - Toolsmart order contact sheet",
+          "path": "../../deliverables/selling_site_images/images/expenses_wadfow_pressure_sprayer_wrs1550_edab47c58665.webp",
+          "caption": "Wadfow Pressure sprayer WRS1550 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "tool_wadfow_pressure_sprayer_wrs1550"
+            "tool_wadfow_pressure_sprayer_wrs1550",
+            "wadfow",
+            "pressure",
+            "sprayer",
+            "wrs1550",
+            "toolsmart"
           ],
-          "match_basis": "exact_order_evidence",
-          "match_score": 999
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/wadfow-pressure-sprayer-wrs1550",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/WRS1550.jpg?v=1765789902",
+          "match_score": 224
         }
       },
       {
@@ -47606,23 +48991,40 @@ window.J40_DASHBOARD_DATA = {
         "delivery_status": "No",
         "evidence_ref": "",
         "notes": "Only buy/fabricate if right+mid cluster hole count/spacing/depth cannot safely host all required controls. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: fabricate only if OEM holes cannot safely fit required controls.",
-        "links": [],
+        "links": [
+          {
+            "url": "https://www.crescentelectric.com/product/609291/selector-switch-harmony-xb4-black-22mm-2-position-stay-put-1-no",
+            "label": "crescentelectric.com"
+          },
+          {
+            "url": "https://www.crescentelectric.com/globalassets/catalogs/crescentelectric.com/8/8d2/8d2f7/8d2f7471-02d8-496d-a295-354b84db82/8d2f7471-02d8-496d-a295-354b84db82ba/sqd-xb4as1-1.jpg?width=542&height=542&rmode=Pad&bgcolor=fff",
+            "label": "crescentelectric.com"
+          }
+        ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/switch_panel.jpg",
-          "caption": "Dashboard fascia / auxiliary switch panel (if OEM holes are insufficient) \u00b7 switch panel reference image",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_dashboard_fascia_auxiliary_switch_panel__a8e361b962f9.jpg",
+          "caption": "Dashboard fascia / auxiliary switch panel (if OEM holes are insufficient) \u00b7 Local sheet-metal/fabrication shop \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "switch_panel",
+          "media_id": "",
           "matched_tokens": [
+            "row_38",
+            "dashboard",
+            "fascia",
+            "auxiliary",
             "switch",
-            "panel"
+            "panel",
+            "oem",
+            "holes"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.crescentelectric.com/product/609291/selector-switch-harmony-xb4-black-22mm-2-position-stay-put-1-no",
+          "image_url": "https://www.crescentelectric.com/globalassets/catalogs/crescentelectric.com/8/8d2/8d2f7/8d2f7471-02d8-496d-a295-354b84db82/8d2f7471-02d8-496d-a295-354b84db82ba/sqd-xb4as1-1.jpg?width=542&height=542&rmode=Pad&bgcolor=fff",
+          "match_score": 245
         }
       },
       {
@@ -48947,22 +50349,40 @@ window.J40_DASHBOARD_DATA = {
         "delivery_status": "No",
         "evidence_ref": "",
         "notes": "Current key security reported weak; complete matched-key security fix before final refit. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: prioritize as low-risk, locally available buy-first item. | Price basis 2026-04-15: locksmith re-key/local lock solution preferred; exact FJ40 imported set costs higher.",
-        "links": [],
+        "links": [
+          {
+            "url": "https://www.crescentelectric.com/product/60230/selector-switch-harmony-xb4-metal-black-22mm-long-handle-3positions-stay-put-2no",
+            "label": "crescentelectric.com"
+          },
+          {
+            "url": "https://www.crescentelectric.com/globalassets/catalogs/crescentelectric.com/c/c89/c895e/c895eb5f-ec49-4ef4-a471-285c6e90da665/c895eb5f-ec49-4ef4-a471-285c6e90da66532/sqd-xb4bj33-5.jpg?width=140&height=140&rmode=Pad&bgcolor=fff",
+            "label": "crescentelectric.com"
+          }
+        ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/lockset.jpg",
-          "caption": "Ignition lock security fix (new barrel + matched keys OR full locksmith re-key) \u00b7 lock set reference image",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_ignition_lock_security_fix_new_barrel_ma_0c2b25595c0a.jpg",
+          "caption": "Ignition lock security fix (new barrel + matched keys OR full locksmith re-key) \u00b7 Local locksmith + lockset supplier \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "lockset",
+          "media_id": "",
           "matched_tokens": [
-            "lock"
+            "row_39",
+            "ignition",
+            "lock",
+            "security",
+            "fix",
+            "new",
+            "barrel",
+            "matched"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.crescentelectric.com/product/60230/selector-switch-harmony-xb4-metal-black-22mm-long-handle-3positions-stay-put-2no",
+          "image_url": "https://www.crescentelectric.com/globalassets/catalogs/crescentelectric.com/c/c89/c895e/c895eb5f-ec49-4ef4-a471-285c6e90da665/c895eb5f-ec49-4ef4-a471-285c6e90da66532/sqd-xb4bj33-5.jpg?width=140&height=140&rmode=Pad&bgcolor=fff",
+          "match_score": 254
         }
       },
       {
