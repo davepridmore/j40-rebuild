@@ -181,6 +181,94 @@
     return escapeHtml(amountStatus ? formatToken(amountStatus) : "-");
   }
 
+  function extractLinksFromText(value) {
+    const text = cleanString(value);
+    if (!text) {
+      return [];
+    }
+    return Array.from(text.matchAll(/https?:\/\/[^\s<>()"']+/g)).map((match) => match[0].replace(/[.,;:)\]}>]+$/g, ""));
+  }
+
+  function linkLabel(url, index) {
+    try {
+      return new URL(url).hostname.replace(/^www\./, "") || `Link ${index + 1}`;
+    } catch (error) {
+      return `Link ${index + 1}`;
+    }
+  }
+
+  function normalizeRowLinks(row) {
+    const links = [];
+    const seen = new Set();
+    const addLink = (candidate, label = "") => {
+      const url = cleanString(candidate);
+      if (!url || seen.has(url)) {
+        return;
+      }
+      seen.add(url);
+      links.push({ url, label: cleanString(label) || linkLabel(url, links.length) });
+    };
+
+    if (Array.isArray(row && row.links)) {
+      row.links.forEach((link) => {
+        if (typeof link === "string") {
+          addLink(link);
+        } else if (link && typeof link === "object") {
+          addLink(link.url || link.href, link.label || link.title);
+        }
+      });
+    }
+
+    [
+      row && row.link,
+      row && row.url,
+      row && row.listing_url,
+      row && row.image_url,
+      row && row.image && row.image.listing_url,
+      row && row.image && row.image.image_url,
+    ].forEach((value) => addLink(value));
+
+    [
+      row && row.notes,
+      row && row.evidence_ref,
+      row && row.vendor,
+      row && row.company,
+      row && row.source_ref,
+    ].forEach((value) => extractLinksFromText(value).forEach((url) => addLink(url)));
+
+    return links;
+  }
+
+  function renderLinksCell(row) {
+    const links = normalizeRowLinks(row);
+    if (!links.length) {
+      return "-";
+    }
+    const visible = links.slice(0, 2);
+    return `
+      <div class="item-links">
+        ${visible
+          .map((link, index) => `<a class="item-link" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.label || `Link ${index + 1}`)}</a>`)
+          .join("")}
+        ${links.length > visible.length ? `<span class="table-image-note">+${escapeHtml(links.length - visible.length)} more</span>` : ""}
+      </div>
+    `;
+  }
+
+  function renderLinksPanel(row) {
+    const links = normalizeRowLinks(row);
+    if (!links.length) {
+      return "";
+    }
+    return `
+      <div class="item-detail-links">
+        ${links
+          .map((link, index) => `<a class="item-link" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.label || `Link ${index + 1}`)}</a>`)
+          .join("")}
+      </div>
+    `;
+  }
+
   function mediaTypeFromPath(path) {
     const normalizedPath = cleanString(path).toLowerCase();
     const match = normalizedPath.match(/\.([a-z0-9]+)(?:[?#].*)?$/);
@@ -530,14 +618,11 @@
       const explicitOrder = {
         sent_to_painter: 10,
         returned_from_painter: 20,
-        paint_issue_tracking: 30,
-        paint_progress_media: 40,
         paint_progress_videos: 50,
         rear_brake_cables_lines: 45,
         may1_chassis_status: 50,
         may1_engine_cleaning: 50,
         primary: 60,
-        all_paint_media: 90,
       };
       if (Object.prototype.hasOwnProperty.call(explicitOrder, key)) {
         return explicitOrder[key];
@@ -1082,7 +1167,7 @@
                 <th>Line</th>
                 <th>Qty</th>
                 <th>Status</th>
-                <th>Exact Spec</th>
+                <th>Spec / Dimensions</th>
                 <th>Release Action</th>
               </tr>
             </thead>
@@ -1092,7 +1177,7 @@
                   <tr>
                     <td>
                       <strong>${escapeHtml(row.order_line_id || "")} · ${escapeHtml(row.item || "")}</strong>
-                      <div class="small-muted">${escapeHtml(row.part_number_or_code || "")}</div>
+                      ${row.part_number_or_code ? `<div class="small-muted">Reference: ${escapeHtml(row.part_number_or_code || "")}</div>` : ""}
                       <div class="small-muted">${escapeHtml(formatToken(row.route || ""))}</div>
                     </td>
                     <td>
@@ -1106,6 +1191,7 @@
                       </div>
                     </td>
                     <td>
+                      ${row.dimension_spec_mm ? `<div><strong>Dimensions:</strong> ${escapeHtml(row.dimension_spec_mm)}</div>` : ""}
                       ${escapeHtml(row.exact_order_spec || "")}
                       ${row.material_spec ? `<div class="small-muted requirement-material">${escapeHtml(row.material_spec)}</div>` : ""}
                       ${row.source_basis ? `<div class="small-muted requirement-material">Source: ${escapeHtml(row.source_basis)}</div>` : ""}
@@ -1928,6 +2014,10 @@
           <p class="metric-value">${escapeHtml(summary.whatsapp_j40_media_videos ?? 0)}</p>
           <p class="metric-label">WhatsApp Videos</p>
         </article>
+        <article class="card">
+          <p class="metric-value">${escapeHtml(summary.other_build_reference_images ?? 0)}</p>
+          <p class="metric-label">Other-Build Reference Images</p>
+        </article>
       </section>
 
       <h2 class="section-title">Core Workstreams</h2>
@@ -2251,6 +2341,7 @@
     const openRows = parts.open_rows || [];
     const workstreamCards = parts.open_counts_by_workstream || [];
     const procurementEvidence = buildProcurementEvidenceImages(parts.procurement_evidence_images || []);
+    const workbookSourceLinks = parts.workbook_source_links || [];
     const supplySummary = supplies.summary_by_type || [];
     const supplyRowsByStatus = supplies.rows_by_status || {};
     const allSupplyRows = supplies.all_rows || [];
@@ -2347,6 +2438,7 @@
                       <th>Workstream</th>
                       <th>Supplier</th>
                       <th>Cost</th>
+                      <th>Links</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -2363,11 +2455,12 @@
                                   <td>${escapeHtml(formatToken(row.workstream || "-"))}</td>
                                   <td>${tableSupplierCell(row)}</td>
                                   <td>${tableCostCell(row)}</td>
+                                  <td>${renderLinksCell(row)}</td>
                                 </tr>
                               `
                             )
                             .join("")
-                        : `<tr><td colspan="7">No ${escapeHtml(groupKey)} inventory rows found.</td></tr>`
+                        : `<tr><td colspan="8">No ${escapeHtml(groupKey)} inventory rows found.</td></tr>`
                     }
                   </tbody>
                 </table>
@@ -2387,6 +2480,44 @@
         <p class="small-muted">${escapeHtml(procurementEvidence.length)} images currently tagged for package/part-number reconciliation.</p>
         ${renderGallery(procurementEvidence)}
       </section>
+
+      <h3 class="section-title">Workbook Source Links</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>System</th>
+              <th>Item</th>
+              <th>Source</th>
+              <th>Stage / Decision</th>
+              <th>Cost</th>
+              <th>Links</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${
+              workbookSourceLinks.length
+                ? workbookSourceLinks
+                    .map(
+                      (row) => `
+                        <tr>
+                          <td>${escapeHtml(formatToken(row.system || "-"))}</td>
+                          <td>${escapeHtml(row.item || "-")}</td>
+                          <td>${escapeHtml(row.source_sheet || "-")}</td>
+                          <td>${escapeHtml([formatToken(row.stage || ""), formatToken(row.decision || "")].filter(Boolean).join(" / ") || "-")}</td>
+                          <td>${escapeHtml(row.cost || "-")}</td>
+                          <td>${renderLinksCell(row)}</td>
+                          <td>${escapeHtml(truncateText(row.notes || "", 140) || "-")}</td>
+                        </tr>
+                      `
+                    )
+                    .join("")
+                : '<tr><td colspan="7">No workbook source links found.</td></tr>'
+            }
+          </tbody>
+        </table>
+      </div>
 
       <section class="split">
         <article class="card">
@@ -2413,6 +2544,7 @@
               <th>Item</th>
               <th>Supplier</th>
               <th>Cost</th>
+              <th>Links</th>
               <th>Workstream</th>
               <th>Next Action</th>
               <th>Stage</th>
@@ -2431,6 +2563,7 @@
                           <td>${renderItemButton(row)}</td>
                           <td>${tableSupplierCell(row)}</td>
                           <td>${tableCostCell(row)}</td>
+                          <td>${renderLinksCell(row)}</td>
                           <td>${escapeHtml(formatToken(row.workstream))}</td>
                           <td>${escapeHtml(formatToken(row.next_action))}</td>
                           <td>${escapeHtml(formatToken(row.procurement_stage))}</td>
@@ -2439,7 +2572,7 @@
                       `
                     )
                     .join("")
-                : '<tr><td colspan="9">No urgent action rows.</td></tr>'
+                : '<tr><td colspan="10">No urgent action rows.</td></tr>'
             }
           </tbody>
         </table>
@@ -2454,6 +2587,7 @@
               <th>Item</th>
               <th>Supplier</th>
               <th>Cost</th>
+              <th>Links</th>
               <th>Workstream</th>
               <th>Payment</th>
               <th>Delivery</th>
@@ -2472,6 +2606,7 @@
                           <td>${renderItemButton(row)}</td>
                           <td>${tableSupplierCell(row)}</td>
                           <td>${tableCostCell(row)}</td>
+                          <td>${renderLinksCell(row)}</td>
                           <td>${escapeHtml(formatToken(row.workstream))}</td>
                           <td>${statusChip(row.payment_status)}</td>
                           <td>${statusChip(row.delivery_status)}</td>
@@ -2481,7 +2616,7 @@
                       `
                     )
                     .join("")
-                : '<tr><td colspan="9">No in-flight delivery rows.</td></tr>'
+                : '<tr><td colspan="10">No in-flight delivery rows.</td></tr>'
             }
           </tbody>
         </table>
@@ -2524,6 +2659,7 @@
               <th>Item</th>
               <th>Supplier</th>
               <th>Cost</th>
+              <th>Links</th>
               <th>Workstream</th>
               <th>Status</th>
               <th>Stage</th>
@@ -2542,6 +2678,7 @@
                           <td>${renderItemButton(row)}</td>
                           <td>${tableSupplierCell(row)}</td>
                           <td>${tableCostCell(row)}</td>
+                          <td>${renderLinksCell(row)}</td>
                           <td>${escapeHtml(formatToken(row.workstream))}</td>
                           <td>${statusChip(row.status)}</td>
                           <td>${escapeHtml(formatToken(row.procurement_stage))}</td>
@@ -2551,7 +2688,7 @@
                       `
                     )
                     .join("")
-                : '<tr><td colspan="9">No open parts.</td></tr>'
+                : '<tr><td colspan="10">No open parts.</td></tr>'
             }
           </tbody>
         </table>
@@ -2567,6 +2704,7 @@
               <th>Item</th>
               <th>Supplier</th>
               <th>Cost</th>
+              <th>Links</th>
               <th>Source</th>
               <th>Workstream</th>
               <th>Status Detail</th>
@@ -2586,6 +2724,7 @@
                           <td>${renderItemButton(row)}</td>
                           <td>${tableSupplierCell(row)}</td>
                           <td>${tableCostCell(row)}</td>
+                          <td>${renderLinksCell(row)}</td>
                           <td>${escapeHtml(formatToken(row.source))}</td>
                           <td>${escapeHtml(formatToken(row.workstream || "-"))}</td>
                           <td>${escapeHtml(formatToken(row.status_detail || row.procurement_stage || "-"))}</td>
@@ -2595,7 +2734,7 @@
                       `
                     )
                     .join("")
-                : '<tr><td colspan="10">No in-process supply rows.</td></tr>'
+                : '<tr><td colspan="11">No in-process supply rows.</td></tr>'
             }
           </tbody>
         </table>
@@ -2614,6 +2753,7 @@
               <th>Procurement Stage</th>
               <th>Supplier</th>
               <th>Cost</th>
+              <th>Links</th>
             </tr>
           </thead>
           <tbody>
@@ -2631,11 +2771,12 @@
                           <td>${escapeHtml(formatToken(row.procurement_stage || row.status_detail || "-"))}</td>
                           <td>${tableSupplierCell(row)}</td>
                           <td>${tableCostCell(row)}</td>
+                          <td>${renderLinksCell(row)}</td>
                         </tr>
                       `
                     )
                     .join("")
-                : '<tr><td colspan="8">No still-required supply rows.</td></tr>'
+                : '<tr><td colspan="9">No still-required supply rows.</td></tr>'
             }
           </tbody>
         </table>
@@ -2651,6 +2792,7 @@
               <th>Item</th>
               <th>Supplier</th>
               <th>Cost</th>
+              <th>Links</th>
               <th>Source</th>
               <th>Workstream</th>
               <th>Status</th>
@@ -2668,6 +2810,7 @@
                           <td>${renderItemButton(row)}</td>
                           <td>${tableSupplierCell(row)}</td>
                           <td>${tableCostCell(row)}</td>
+                          <td>${renderLinksCell(row)}</td>
                           <td>${escapeHtml(formatToken(row.source))}</td>
                           <td>${escapeHtml(formatToken(row.workstream || "-"))}</td>
                           <td>${escapeHtml(formatToken(row.status_detail || "received"))}</td>
@@ -2675,7 +2818,7 @@
                       `
                     )
                     .join("")
-                : '<tr><td colspan="8">No previously-procured supply rows.</td></tr>'
+                : '<tr><td colspan="9">No previously-procured supply rows.</td></tr>'
             }
           </tbody>
         </table>
@@ -2719,6 +2862,91 @@
     `;
   }
 
+  function renderSectionLinks(links) {
+    const rows = Array.isArray(links) ? links : [];
+    if (!rows.length) {
+      return "";
+    }
+    return `
+      <div class="item-links reference-links">
+        ${rows
+          .map((link, index) => {
+            const url = cleanString(link && (link.url || link.href));
+            if (!url) {
+              return "";
+            }
+            return `<a class="item-link" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(cleanString(link.label || link.title) || `Link ${index + 1}`)}</a>`;
+          })
+          .join("")}
+      </div>
+    `;
+  }
+
+  function renderOtherBuilds() {
+    const otherBuilds = data.other_builds || {};
+    const summary = otherBuilds.summary || {};
+    const sections = Array.isArray(otherBuilds.sections) ? otherBuilds.sections : [];
+    root.innerHTML = `
+      <h2 class="section-title">Other Builds</h2>
+      <p class="section-subtitle">Outside-build references, archived listing images, WhatsApp samples, and sample/fabrication reference media.</p>
+
+      <section class="metrics-grid">
+        <article class="card">
+          <p class="metric-value">${escapeHtml(summary.total_images ?? 0)}</p>
+          <p class="metric-label">Reference Images</p>
+        </article>
+        <article class="card">
+          <p class="metric-value">${escapeHtml(summary.drop_zone_images ?? 0)}</p>
+          <p class="metric-label">Drop-Zone Images</p>
+        </article>
+        <article class="card">
+          <p class="metric-value">${escapeHtml(summary.manual_reference_images ?? 0)}</p>
+          <p class="metric-label">Curated WhatsApp Images</p>
+        </article>
+        <article class="card">
+          <p class="metric-value">${escapeHtml(summary.sample_reference_images ?? 0)}</p>
+          <p class="metric-label">Sample References</p>
+        </article>
+        <article class="card">
+          <p class="metric-value">${escapeHtml(summary.market_pack_images ?? 0)}</p>
+          <p class="metric-label">Build-Pack Samples</p>
+        </article>
+      </section>
+
+      <section class="card reference-drop-card">
+        <div class="detail-header">
+          <h3>Reference Image Drop Zone</h3>
+          ${chip(summary.drop_zone_images ? `${summary.drop_zone_images} images` : "Empty")}
+        </div>
+        <p class="small-muted"><code>${escapeHtml(otherBuilds.drop_zone || "data/reference/other_j40_builds")}</code></p>
+      </section>
+
+      <section class="reference-section-list">
+        ${
+          sections.length
+            ? sections
+                .map((section) => {
+                  const images = Array.isArray(section.images) ? section.images : [];
+                  return `
+                    <article class="card reference-section-card">
+                      <div class="detail-header">
+                        <h3>${escapeHtml(section.title || "Reference Images")}</h3>
+                        ${chip(`${images.length} images`)}
+                      </div>
+                      <p class="small-muted">${escapeHtml(section.description || "")}</p>
+                      ${section.source_path ? `<p class="small-muted"><strong>Source:</strong> <code>${escapeHtml(section.source_path)}</code></p>` : ""}
+                      ${renderSectionLinks(section.links)}
+                      ${renderGallery(images)}
+                    </article>
+                  `;
+                })
+                .join("")
+            : '<article class="card">No other-build reference sections found.</article>'
+        }
+      </section>
+    `;
+  }
+
   function createItemDetail() {
     const wrapper = document.createElement("div");
     wrapper.className = "lightbox item-detail is-hidden";
@@ -2732,6 +2960,7 @@
           <h3 id="item-detail-title" class="section-title" style="margin-top:0;">Item Detail</h3>
           <p id="item-detail-subtitle" class="small-muted"></p>
           <dl id="item-detail-meta" class="meta-grid"></dl>
+          <div id="item-detail-links"></div>
           <p id="item-detail-notes" class="small-muted"></p>
         </aside>
       </section>
@@ -2748,6 +2977,7 @@
       title: wrapper.querySelector("#item-detail-title"),
       subtitle: wrapper.querySelector("#item-detail-subtitle"),
       meta: wrapper.querySelector("#item-detail-meta"),
+      links: wrapper.querySelector("#item-detail-links"),
       notes: wrapper.querySelector("#item-detail-notes"),
     };
   }
@@ -2795,6 +3025,7 @@
       renderItemMetaRow("Evidence", row.evidence_ref || ""),
       renderItemMetaRow("Image Match", formatToken(prepared.effective.match_basis || "")),
     ].join("");
+    itemDetail.links.innerHTML = renderLinksPanel(row);
     itemDetail.notes.textContent = cleanString(row.notes) ? `Notes: ${cleanString(row.notes)}` : "";
   }
 
@@ -2818,6 +3049,7 @@
     itemDetail.root.classList.add("is-hidden");
     itemDetail.root.setAttribute("aria-hidden", "true");
     itemDetail.media.innerHTML = "";
+    itemDetail.links.innerHTML = "";
     document.body.classList.remove("lightbox-open");
   }
 
@@ -3242,6 +3474,10 @@
     }
     if (state.activeView === "steps") {
       renderProjectSteps();
+      return;
+    }
+    if (state.activeView === "other-builds") {
+      renderOtherBuilds();
       return;
     }
     renderOverview();

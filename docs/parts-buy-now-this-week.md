@@ -1,22 +1,20 @@
 # Parts Buy-Now Plan (This Week)
 
-- Generated: 2026-05-01 03:27:25
+- Generated: 2026-05-02 06:33:16
 - Source ledger: `data/manual/expenses.csv` (`bucket=parts`)
 - Overlap resolution table: `data/manual/parts_overlap_resolution.csv`
 - This-week list: `data/manual/parts_buy_now_this_week.csv`
 
 ## This-Week Counts
 
-- Rows in this-week list: 24
-- `complete_body_mount_release_actions_then_order`: 3
-- `complete_replacement_pipe_release_actions_then_order`: 5
+- Rows in this-week list: 16
 - `confirm_price_then_order`: 12
 - `track_delivery`: 4
 
 ## Priority Split
 
-- `P0`: 12
-- `P1`: 12
+- `P0`: 8
+- `P1`: 8
 
 ## Overlap Decisions Applied
 
@@ -29,18 +27,6 @@
 
 ## Immediate Actions
 
-- `complete_body_mount_release_actions_then_order` (3):
-  - `part_body_mount_hardware_kit` [P0] Body mount hardware kit bolts sleeves washers (status: spec_ready; procurement_stage: spec_ready_release_hold; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_body_mount_rubber_kit` [P0] Body-to-chassis mount rubber kit (status: spec_ready; procurement_stage: spec_ready_release_hold; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_body_mount_shim_pack` [P0] Body mount shim and spacer pack (status: spec_ready; procurement_stage: spec_ready_release_hold; delivery_status: not_ordered; payment_status: not_paid)
-    - Release control: use `data/manual/body_mount_order_release_specs.csv` for quantities and `data/manual/body_mount_release_actions.csv` for the remaining measurements/route decision before committing the body-mount order.
-- `complete_replacement_pipe_release_actions_then_order` (5):
-  - `part_mech_brake_flex_hose_set` [P1] Brake flexible hose set front and rear (status: spec_ready; procurement_stage: spec_ready_release_hold; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_mech_fuel_hose_and_clamps` [P1] Fuel-rated rubber hose and clamp kit (status: spec_ready; procurement_stage: spec_ready_release_hold; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_mech_heater_hose_set` [P1] Heater hose set with clamps (status: spec_ready; procurement_stage: spec_ready_release_hold; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_mech_radiator_hose_set` [P1] Radiator hose set upper plus lower with clamps (status: spec_ready; procurement_stage: spec_ready_release_hold; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_mech_vacuum_hose_refresh` [P1] Vacuum hose refresh kit (status: spec_ready; procurement_stage: spec_ready_release_hold; delivery_status: not_ordered; payment_status: not_paid)
-    - Release control: use `data/manual/replacement_pipe_order_release_specs.csv` for exact quantities and `data/manual/replacement_pipe_release_actions.csv` plus `data/manual/replacement_pipe_circuit_closure_sheet.csv` for final measurements before committing the pipe/hose order.
 - `confirm_price_then_order` (12):
   - `part_bedliner_sprays` [P0] Bedliner sprays (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_metal_protection` [P0] Metal protection and restoration products (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
@@ -55,7 +41,7 @@
   - `part_mech_heat_glow_plugs_set` [P1] Heat/glow plugs set - diesel 2H (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_radiator_cap` [P1] Radiator cap (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
 - `track_delivery` (4):
-  - `part_nylon_fiber_wool_polishing_disc_sets_2x` [P0] Nylon fiber polishing disc and wool buffing polishing disc set (3pcs) plus drill adapter and grinder nut for metals x2 (price: 2188 PKR; order_date: 2026-04-24; delivery_eta: 2026-04-29; delivery_status: pending_delivery; payment_status: paid)
   - `part_seam_sealer` [P0] Seam sealer (price: 7696 PKR; order_date: 2026-03-21; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: unknown)
+  - `part_daraz_jubilee_hose_clip_assortment_30pc` [P1] Jubilee hose clip assortment - 10 pc fuel line/diesel/petrol/coolant clamp packs x3 (price: 2390 PKR; order_date: 2026-05-02; delivery_eta: 2026-05-08; delivery_status: pending_delivery; payment_status: paid)
   - `part_ironman_foamcell_suspension_kit` [P1] Ironman Foamcell suspension kit - main shipment (front dampers separate) (price: 575000 PKR; order_date: 2026-05-01; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: unknown)
   - `part_ironman_front_dampers_separate_shipment` [P1] Ironman Foamcell front damper pair - separate shipment (24635FE x2) (price: price_tbd; order_date: 2026-05-01; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: unknown)

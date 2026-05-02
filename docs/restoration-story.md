@@ -6,10 +6,10 @@
 - Relevant chat messages indexed: 590
 - Relevant media items indexed: 79
 - Evidence sources in use: Akber Khan (383), Fj40 (207)
-- Confirmed restoration spend so far: PKR 16,000
+- Confirmed restoration spend so far: PKR 746,206
 - Confirmed admin spend tracked separately: PKR 16,365
-- Quoted but not confirmed as purchased: PKR 121,103
-- Purchased / planned items still missing prices: 37
+- Quoted but not confirmed as purchased: PKR 7,860
+- Purchased / planned items still missing prices: 46
 
 ## Main Workstreams
 
@@ -63,15 +63,33 @@
 
 - 2026-03-12 `admin` Excise challan: PKR 11,365
 - 2026-03-12 `admin` Vehicle inspection: PKR 5,000
-- 2026-03-16 `parts` New battery purchase: PKR 20,000
-- 2026-03-16 `parts` Old battery return credit: PKR -4,000
+- 2026-03-16 `parts` New battery purchase - installed: PKR 20,000
+- Unknown date `parts` Dielectric grease: PKR 5,609
+- 2026-03-18 `parts` Electric wire inventory - 4 AWG red/black silicone cable, 1m each (approx 21 mm2): PKR 11,529
+- 2026-03-22 `tools` Electrical test kit: PKR 8,811
+- 2026-03-21 `parts` Seam sealer: PKR 7,696
+- 2026-05-01 `parts` Ironman Foamcell suspension kit - main shipment (front dampers separate): PKR 575,000
+- 2026-03-21 `parts` H4 ceramic headlight connectors - x4 received: PKR 1,350
+- 2026-04-24 `parts` Nylon fiber polishing disc and wool buffing polishing disc set (3pcs) plus drill adapter and grinder nut for metals x2: PKR 2,188
+- 2026-04-27 `parts` GREZ OFF HD DEGREASER - Spray Nine (32 oz.): PKR 3,250
+- 2026-04-27 `parts` DISS (APC) All Purpose Cleaner 5L: PKR 4,999
+- 2026-05-01 `tools` Total Wrecking bar 600mm THT431242: PKR 2,860
+- 2026-05-01 `tools` Wadfow Pressure sprayer WRS1550: PKR 2,500
+- 2026-05-01 `tools` Harden 6Pc x 4 inch Spring Clamp Set: PKR 1,200
+- 2026-05-01 `tools` Harden White Rubber Mallet with Fiberglass Handle 700g 590437: PKR 2,380
+- 2026-05-01 `tools` Ingco Dead blow mallet 2lb HDBM08028: PKR 2,050
+- 2026-05-01 `tools` Wadfow 7 Pcs Body And Fender Hammer Set WHZ1D07: PKR 9,870
+- 2026-05-01 `tools` Total Jack stand 3Ton THJS0301 - 2 pairs: PKR 19,200
+- 2026-05-01 `tools` Harden 3Ton Hydraulic Trolley Jack 730213: PKR 54,450
+- 2026-05-02 `tools` INGCO WB30501 Wire Cup Brush x3: PKR 1,065
+- 2026-05-02 `tools` Engine/detailing brush bundle - tire sidewall brush, large detailing brush, 5 pc detailing brush set: PKR 2,588
+- 2026-05-02 `tools` 75mm 3 inch steel knotted cup rotary wire brush for angle grinder x2: PKR 3,896
+- 2026-05-02 `tools` 3 pc mini wire brush set - brass, nylon, stainless steel bristles x2: PKR 561
+- 2026-05-02 `tools` Safety goggles / protective glasses for grinding and cleaning: PKR 764
+- 2026-05-02 `parts` Jubilee hose clip assortment - 10 pc fuel line/diesel/petrol/coolant clamp packs x3: PKR 2,390
 
 ## Quote Watchlist
 
-- 2026-03-15 Wiring harness quote: PKR 34,249
-- 2026-03-15 Universal 21-circuit wiring kit quote: PKR 43,570
-- 2026-03-15 Hot rod wiring quote: PKR 28,010
-- 2026-03-18 PET expandable braided sleeving (100ft 1/4 inch): PKR 7,414
 - 2026-03-18 Electrical wire grommet set (200pcs): PKR 7,860
 
 ## Unpriced Items To Backfill
@@ -79,14 +97,10 @@
 - `received` Grease gun
 - `received` Torque wrench
 - `received` Car cover
-- `received` Bench grinder
 - `received` Tap set
-- `received` Cable sleeve protection
-- `received` Dielectric grease
+- `received` Braided sleeve inventory - 8/10/14/16/20 mm sleeves, 5m lengths received
 - `received` Copper grease for brakes
-- `planned` Wiring kit
-- `planned` Electric wires
-- `planned` Electrical test kit
+- `received` Rubber grommet set
 - `planned` Android unit
 - `received` Piano hinge
 - `planned` Bedliner sprays
@@ -95,8 +109,12 @@
 - `planned` Wax and grease remover
 - `planned` Self etching primer
 - `planned` Epoxy primer
-- `planned` Seam sealer
-- Plus 17 more items in `data/manual/expenses.csv`
+- `planned` Bed lining
+- `planned` Sound dampening sheets
+- `planned` Foam
+- `planned` Carpet
+- `planned` 1/2 inch 24 inch breaker bar, heavy duty
+- Plus 26 more items in `data/manual/expenses.csv`
 
 ## Notes
 

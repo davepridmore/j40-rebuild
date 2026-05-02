@@ -1,6 +1,6 @@
 # J40 Workbook Tabs: Understanding + Tidy Plan
 
-- Generated: 2026-05-01 01:39:47
+- Generated: 2026-05-02 06:35:28
 - Workbook: `/Users/davidpridmore/Documents/J40_Costs.xlsx`
 - Sheet count: 17
 - Sheet profile CSV: `data/manual/j40_workbook_sheet_profiles.csv`

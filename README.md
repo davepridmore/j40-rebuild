@@ -51,11 +51,13 @@ Only chat content related to this build should be included. The importer treats 
 - `data/manual/whatsapp_j40_chat_candidates.csv`: WhatsApp MCP-discovered J40 chat candidates (by profile, score, and fetch status)
 - `data/manual/design_decisions.csv`: structured vehicle-design decisions and open design reviews
 - `data/manual/photo_inventory.csv`: per-media inventory with component, stage, and confidence tags
+- `data/manual/other_build_reference_media.csv`: curated other-build and workshop-sample image manifest for the dashboard
 - `data/manual/photo_component_summary.csv`: grouped component summary from the photo inventory
 - `data/inbox/photos/`: drop extra project photos here
 - `data/raw/imports/`: extracted WhatsApp exports and media
 - `data/processed/generated/`: generated message indexes, media indexes, and cost candidates
 - `data/pakwheels/<listing_id>/`: listing-gallery snapshots, run history, and archived gallery images
+- `data/reference/other_j40_builds/`: drop-zone for images from other J40 builds used as references
 - `docs/master-project-plan.md`: the working master plan for the rebuild
 - `docs/vehicle-design-spec.md`: the intended end-state of the vehicle itself
 - `docs/restoration-story.md`: generated draft story / timeline
@@ -83,15 +85,17 @@ Only chat content related to this build should be included. The importer treats 
 - `scripts/update_tub_off_refit_and_suspension_plan.py`: writes tub-off to tub-refit control plan, activates OME+local-springs path, and syncs related workbook tabs
 - `scripts/move_wiring_fasteners_to_parts.py`: moves nut/bolt/washer-style rows from `Wiring` into `Parts` so parts tracking stays centralized
 - `scripts/track_pakwheels_gallery.py`: snapshots a PakWheels listing gallery and tracks image additions/removals over time
-- `scripts/build_project_control_ui.py`: builds `docs/project-control-ui/data.js` for the local project dashboard (workstreams, part ordering, and project-step status)
+- `scripts/build_project_control_ui.py`: builds `docs/project-control-ui/data.js` for the local project dashboard (workstreams, part ordering, project-step status, WhatsApp samples, and other-build references)
 - `scripts/build_paint_refinish_whatsapp_media_queue.py`: extracts paint-refinish photos/videos from WhatsApp media index into send/return/in-progress queues
 - `scripts/auth_whatsapp_mcp.sh`: QR-auth helper for WhatsApp MCP profiles (`1` and `2`)
 
 ## How To Use
 
 1. Drop extra loose photos into `data/inbox/photos/`.
-2. Update `data/manual/expenses.csv` whenever you buy, quote, receive, install, refund, or defer anything that changes project cost.
-3. Set `procurement_stage` in `data/manual/expenses.csv` so each line item stays operationally visible:
+2. Drop reference photos from other J40 builds into `data/reference/other_j40_builds/`.
+3. Add curated WhatsApp or workshop sample images to `data/manual/other_build_reference_media.csv`.
+4. Update `data/manual/expenses.csv` whenever you buy, quote, receive, install, refund, or defer anything that changes project cost.
+5. Set `procurement_stage` in `data/manual/expenses.csv` so each line item stays operationally visible:
    - `purchase_ready`: ready to order now
    - `ordered_pending_delivery`: order has been placed and is waiting to arrive
    - `needs_confirmation`: user says it may already be ordered or delivered, but proof still needs to be reconciled
@@ -101,11 +105,11 @@ Only chat content related to this build should be included. The importer treats 
    - `deferred_until_body_closed`: do not buy until body/floor work reaches the right point
    - `deferred_optional`: non-baseline upgrades or nice-to-haves
    - `received` / `completed`: no longer belongs in the active queue
-4. Use `data/manual/procurement_queue.csv` as the working buy list and reconciliation list.
-5. Update `data/manual/legal_statuses.csv` whenever a legal/admin step changes state.
-6. Update `data/manual/workstream_status.csv` whenever a phase actually moves or gets blocked.
-7. Update `data/manual/component_jobs.csv` whenever a removable component is tagged, sent out, returned, stored, or reinstalled.
-8. Rebuild the local photo catalog and lookup folders whenever you add files into `photos/`:
+6. Use `data/manual/procurement_queue.csv` as the working buy list and reconciliation list.
+7. Update `data/manual/legal_statuses.csv` whenever a legal/admin step changes state.
+8. Update `data/manual/workstream_status.csv` whenever a phase actually moves or gets blocked.
+9. Update `data/manual/component_jobs.csv` whenever a removable component is tagged, sent out, returned, stored, or reinstalled.
+10. Rebuild the local photo catalog and lookup folders whenever you add files into `photos/`:
 
 ```bash
 python3 scripts/build_photo_inventory.py

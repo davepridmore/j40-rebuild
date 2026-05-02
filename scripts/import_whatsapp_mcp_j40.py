@@ -104,6 +104,9 @@ ARCHIVE_SOURCE_BY_CHAT_NAME = {
     "akber khan": "Akber Khan",
 }
 
+HIDDEN_CHAT_NAMES = {"support engineer placement"}
+HIDDEN_CHAT_IDS = {"120363406007289586@g.us"}
+
 
 @dataclass
 class Profile:
@@ -127,6 +130,12 @@ def norm(value: Any) -> str:
 
 def clean_text(value: Any) -> str:
     return " ".join(clean(value).replace("\u200e", " ").split())
+
+
+def is_hidden_chat(row: dict[str, Any]) -> bool:
+    chat_name = norm(row.get("chat_name") or row.get("source_name") or row.get("name"))
+    chat_id = clean(row.get("chat_id") or row.get("id"))
+    return chat_name in HIDDEN_CHAT_NAMES or chat_id in HIDDEN_CHAT_IDS
 
 
 def slugify(value: str) -> str:
@@ -596,6 +605,8 @@ def main() -> None:
 
             candidate_rows: list[dict[str, Any]] = []
             for chat in chats_payload:
+                if is_hidden_chat(chat):
+                    continue
                 score, reasons = score_chat(chat, chat_keywords)
                 selected = score >= 8 or "seed_name" in reasons
                 candidate_rows.append(
@@ -837,6 +848,8 @@ def main() -> None:
             if message_count == 0 and chats_request_error:
                 previous_messages = previous_messages_by_profile.get(profile.server, [])
                 previous_media = previous_media_by_profile.get(profile.server, [])
+                previous_messages = [row for row in previous_messages if not is_hidden_chat(row)]
+                previous_media = [row for row in previous_media if not is_hidden_chat(row)]
                 if previous_messages:
                     all_message_rows.extend(previous_messages)
                     all_media_rows.extend(previous_media)
@@ -893,6 +906,10 @@ def main() -> None:
         finally:
             if started_here:
                 stop_server(process)
+
+    all_chat_rows = [row for row in all_chat_rows if not is_hidden_chat(row)]
+    all_message_rows = [row for row in all_message_rows if not is_hidden_chat(row)]
+    all_media_rows = [row for row in all_media_rows if not is_hidden_chat(row)]
 
     all_message_rows = dedupe_rows(all_message_rows, "message_id")
     all_media_rows = dedupe_rows(all_media_rows, "media_id")

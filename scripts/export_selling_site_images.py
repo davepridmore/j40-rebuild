@@ -36,9 +36,10 @@ USER_AGENT = (
     "AppleWebKit/537.36 (KHTML, like Gecko) "
     "Chrome/124.0.0.0 Safari/537.36"
 )
-REQUEST_TIMEOUT_SECONDS = 20
+REQUEST_TIMEOUT_SECONDS = 8
 MAX_HTML_BYTES = 2_000_000
-MAX_IMAGES_PER_LISTING = 3
+MAX_IMAGES_PER_LISTING = 1
+ENABLE_DERIVED_VENDOR_SEARCH = False
 
 LOCAL_CAPTURE_PATTERNS = (
     "blue_sea_5035*.jpg",
@@ -68,7 +69,53 @@ VENDOR_SEARCH_STOPWORDS = {
     "x",
 }
 
+EXACT_PRODUCT_PATH_HINTS = (
+    "/product/",
+    "/products/",
+    "/item/",
+    "/itm/",
+    ".html",
+)
+
+SEARCH_OR_COLLECTION_HINTS = (
+    "/catalog/",
+    "/search",
+    "/items/q",
+    "/collections/",
+    "/accessories-spare-parts/search",
+)
+
 SOURCE_URL_OVERRIDES: dict[tuple[str, str], tuple[str, ...]] = {
+    (
+        "workbook_parts",
+        "row_64",
+    ): (
+        "https://fiaz.com.pk/wp-content/uploads/2024/12/i-y.jpeg.webp",
+    ),
+    (
+        "workbook_parts",
+        "row_65",
+    ): (
+        "https://fiaz.com.pk/wp-content/uploads/2024/12/ob.jpeg",
+    ),
+    (
+        "workbook_parts",
+        "row_66",
+    ): (
+        "https://fiaz.com.pk/wp-content/uploads/2024/12/i-b.jpeg",
+    ),
+    (
+        "workbook_parts",
+        "row_67",
+    ): (
+        "https://fiaz.com.pk/wp-content/uploads/2022/08/Insulated-Thimbles-female-lug.jpg",
+    ),
+    (
+        "workbook_parts",
+        "row_68",
+    ): (
+        "https://fiaz.com.pk/wp-content/uploads/2024/12/oc.jpeg",
+    ),
     (
         "workbook_parts",
         "row_38",
@@ -80,6 +127,26 @@ SOURCE_URL_OVERRIDES: dict[tuple[str, str], tuple[str, ...]] = {
         "row_39",
     ): (
         "https://www.crescentelectric.com/product/60230/selector-switch-harmony-xb4-metal-black-22mm-long-handle-3positions-stay-put-2no",
+    ),
+    (
+        "expenses",
+        "tool_powerhouse_ingco_wb30501_wire_cup_brush_x3",
+    ): (
+        "https://cdn.shopify.com/s/files/1/0726/3541/6891/files/ingco-wb30501-wire-cup-brush_compact_cropped.webp?v=1746223167",
+    ),
+    (
+        "expenses",
+        "tool_autohub_engine_detailing_brush_bundle_62191",
+    ): (
+        "https://cdn.shopify.com/s/files/1/0424/5433/products/images_41_medium.jpg?v=1628100978",
+        "https://cdn.shopify.com/s/files/1/0424/5433/products/Detailing_Brush_313_medium.jpg?v=1579554135",
+        "https://cdn.shopify.com/s/files/1/0424/5433/products/7691c2b9ca8b7d66b6c449e414abf235_medium.jpg?v=1574452742",
+    ),
+    (
+        "expenses",
+        "tool_daraz_75mm_knotted_cup_wire_brush_x2",
+    ): (
+        "https://static-01.daraz.pk/p/850e2884182b055b50caab1236d83335.jpg",
     ),
 }
 
@@ -97,6 +164,10 @@ class SourceRow:
 
 def clean(value: object) -> str:
     return str(value or "").strip()
+
+
+def clean_error(value: object) -> str:
+    return str(value or "").rstrip()
 
 
 def slugify(value: str) -> str:
@@ -125,6 +196,18 @@ def extract_urls(text: str) -> list[str]:
         seen.add(candidate)
         urls.append(candidate)
     return urls
+
+
+def is_likely_exact_product_url(url: str) -> bool:
+    parsed = urllib.parse.urlparse(clean(url))
+    path = parsed.path.lower()
+    if not parsed.scheme or not parsed.netloc:
+        return False
+    if IMAGE_URL_HINT.search(url):
+        return True
+    if any(hint in path for hint in SEARCH_OR_COLLECTION_HINTS):
+        return False
+    return any(hint in path for hint in EXACT_PRODUCT_PATH_HINTS)
 
 
 def extract_ebay_reference_urls(page_text: str) -> list[str]:
@@ -220,11 +303,43 @@ def read_source_rows() -> list[SourceRow]:
             )
         )
 
+    link_tab_configs = (
+        ("pk_buy_clean_direct", "col_2"),
+        ("pk_quality_path", "col_2"),
+        ("rubbers_exact_online", "col_1"),
+        ("rubbers_kit_buy", "col_1"),
+        ("rubbers_all_replace_links", "col_1"),
+    )
+    for source_table, item_column in link_tab_configs:
+        for row in load_csv(WORKBOOK_TABS_DIR / f"{source_table}.csv"):
+            item = clean(row.get(item_column))
+            if not item or item.lower() in {"item", "item_group", "kit_name"}:
+                continue
+            values = [clean(value) for value in row.values()]
+            exact_urls = [url for url in extract_urls(" | ".join(values)) if is_likely_exact_product_url(url)]
+            if not exact_urls:
+                continue
+            rows.append(
+                SourceRow(
+                    item_type="part",
+                    item=item,
+                    vendor="workbook_link",
+                    source_table=source_table,
+                    source_ref=f"row_{clean(row.get('excel_row'))}",
+                    text_blob=" | ".join(values),
+                    explicit_urls=exact_urls,
+                )
+            )
+
     expenses = load_csv(MANUAL_DIR / "expenses.csv")
+    expense_source_refs: set[str] = set()
     for row in expenses:
         bucket = clean(row.get("bucket")).lower()
         if bucket not in {"tools", "parts"}:
             continue
+        entry_id = clean(row.get("entry_id"))
+        if entry_id:
+            expense_source_refs.add(entry_id)
         values = [clean(value) for value in row.values()]
         rows.append(
             SourceRow(
@@ -232,13 +347,16 @@ def read_source_rows() -> list[SourceRow]:
                 item=clean(row.get("item")),
                 vendor=clean(row.get("company")),
                 source_table="expenses",
-                source_ref=clean(row.get("entry_id")),
+                source_ref=entry_id,
                 text_blob=" | ".join(values),
             )
         )
 
     procurement_queue = load_csv(MANUAL_DIR / "procurement_queue.csv")
     for row in procurement_queue:
+        entry_id = clean(row.get("entry_id"))
+        if entry_id in expense_source_refs:
+            continue
         item = clean(row.get("item"))
         if not item:
             continue
@@ -248,7 +366,7 @@ def read_source_rows() -> list[SourceRow]:
                 item=item,
                 vendor=clean(row.get("company")),
                 source_table="procurement_queue",
-                source_ref=clean(row.get("entry_id")),
+                source_ref=entry_id,
                 text_blob=" | ".join(clean(value) for value in row.values()),
             )
         )
@@ -315,7 +433,7 @@ def build_request(url: str) -> urllib.request.Request:
         url=url,
         headers={
             "User-Agent": USER_AGENT,
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/png,image/jpeg,*/*;q=0.8",
             "Accept-Language": "en-US,en;q=0.9",
         },
     )
@@ -381,6 +499,20 @@ def score_image_url(url: str) -> tuple[int, int]:
         score += 8
     if any(token in lowered for token in ("logo", "icon", "sprite", "avatar", "placeholder")):
         score -= 16
+    if any(
+        token in lowered
+        for token in (
+            "facebook",
+            "youtube",
+            "google-play",
+            "qr",
+            "qrcode",
+            "cropped-",
+            "favicon",
+            "social",
+        )
+    ):
+        score -= 28
     return score, -len(lowered)
 
 
@@ -412,7 +544,24 @@ def resolve_listing_image_urls(listing_url: str) -> tuple[list[str], str]:
     return candidates[:MAX_IMAGES_PER_LISTING], "html_extract"
 
 
-def extension_for_content_type(content_type: str, fallback_url: str) -> str:
+def sniff_image_extension(payload: bytes) -> str:
+    if payload.startswith(b"\xff\xd8\xff"):
+        return ".jpg"
+    if payload.startswith(b"\x89PNG\r\n\x1a\n"):
+        return ".png"
+    if payload.startswith(b"GIF87a") or payload.startswith(b"GIF89a"):
+        return ".gif"
+    if payload.startswith(b"RIFF") and payload[8:12] == b"WEBP":
+        return ".webp"
+    if b"ftypavif" in payload[:32]:
+        return ".avif"
+    return ""
+
+
+def extension_for_content_type(content_type: str, fallback_url: str, payload: bytes = b"") -> str:
+    sniffed = sniff_image_extension(payload)
+    if sniffed:
+        return sniffed
     lowered = clean(content_type).lower()
     if "image/jpeg" in lowered:
         return ".jpg"
@@ -422,6 +571,8 @@ def extension_for_content_type(content_type: str, fallback_url: str) -> str:
         return ".webp"
     if "image/gif" in lowered:
         return ".gif"
+    if "image/avif" in lowered:
+        return ".avif"
     parsed = urllib.parse.urlparse(fallback_url)
     suffix = Path(parsed.path).suffix.lower()
     if suffix in {".jpg", ".jpeg", ".png", ".webp", ".gif", ".bmp"}:
@@ -466,7 +617,7 @@ def copy_local_capture_images() -> list[dict[str, str]]:
     return records
 
 
-def write_manifest(records: list[dict[str, str]]) -> None:
+def write_manifest(records: list[dict[str, str]]) -> list[dict[str, str]]:
     fieldnames = [
         "item_type",
         "item",
@@ -479,10 +630,19 @@ def write_manifest(records: list[dict[str, str]]) -> None:
         "status",
         "error",
     ]
+    deduped_records: list[dict[str, str]] = []
+    seen: set[tuple[str, ...]] = set()
+    for row in records:
+        key = tuple(clean(row.get(fieldname)) for fieldname in fieldnames)
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped_records.append(row)
     with MANIFEST_PATH.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
         writer.writeheader()
-        writer.writerows(records)
+        writer.writerows(deduped_records)
+    return deduped_records
 
 
 def write_summary(records: list[dict[str, str]], source_row_count: int, unique_url_count: int) -> None:
@@ -515,8 +675,6 @@ def write_summary(records: list[dict[str, str]], source_row_count: int, unique_u
 
 
 def main() -> int:
-    if OUTPUT_DIR.exists():
-        shutil.rmtree(OUTPUT_DIR)
     OUTPUT_IMAGE_DIR.mkdir(parents=True, exist_ok=True)
 
     source_rows = read_source_rows()
@@ -525,8 +683,8 @@ def main() -> int:
         urls = row.explicit_urls if row.explicit_urls is not None else extract_urls(row.text_blob)
         override_urls = SOURCE_URL_OVERRIDES.get((row.source_table, row.source_ref), ())
         if override_urls:
-            urls = list(dict.fromkeys([*urls, *override_urls]))
-        if not urls:
+            urls = list(dict.fromkeys(override_urls))
+        if not urls and ENABLE_DERIVED_VENDOR_SEARCH:
             urls = derived_vendor_urls(row)
         for url in urls:
             listing_contexts[url].append(row)
@@ -556,7 +714,7 @@ def main() -> int:
                         "image_url": "",
                         "local_path": "",
                         "status": "resolve_failed",
-                        "error": str(error),
+                        "error": clean_error(error),
                     }
                 )
 
@@ -617,7 +775,7 @@ def main() -> int:
                 if payload_hash in content_hash_to_saved_path:
                     saved_rel = content_hash_to_saved_path[payload_hash]
                 else:
-                    ext = extension_for_content_type(content_type, image_url)
+                    ext = extension_for_content_type(content_type, image_url, payload)
                     contexts_slug = slugify(contexts[0].item)[:40]
                     source_slug = slugify(contexts[0].source_table)
                     name = f"{source_slug}_{contexts_slug}_{payload_hash[:12]}{ext}"
@@ -655,7 +813,7 @@ def main() -> int:
                             "image_url": image_url,
                             "local_path": "",
                             "status": "download_failed",
-                            "error": str(error),
+                            "error": clean_error(error),
                         }
                     )
 
@@ -670,7 +828,7 @@ def main() -> int:
             row["image_url"],
         )
     )
-    write_manifest(records)
+    records = write_manifest(records)
     write_summary(records, source_row_count=len(source_rows), unique_url_count=len(listing_contexts))
 
     print(f"Wrote images folder: {OUTPUT_IMAGE_DIR.relative_to(ROOT)}")

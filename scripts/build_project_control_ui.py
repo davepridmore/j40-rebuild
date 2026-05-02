@@ -29,24 +29,36 @@ BODY_MOUNT_RELEASE_ACTIONS_PATH = MANUAL_DIR / "body_mount_release_actions.csv"
 BODY_MOUNT_STATION_CLOSURE_PATH = MANUAL_DIR / "body_mount_station_closure_sheet.csv"
 BRAKE_SYSTEM_REQUIREMENTS_PATH = MANUAL_DIR / "brake_system_requirements.csv"
 EXPENSES_PATH = MANUAL_DIR / "expenses.csv"
+EXPENSES_RECONCILIATION_PATH = MANUAL_DIR / "j40_costs_expenses_reconciliation.csv"
 BUY_NOW_PATH = MANUAL_DIR / "parts_buy_now_this_week.csv"
 WORKBOOK_TOOLS_PATH = MANUAL_DIR / "workbook_tabs" / "tools.csv"
 WORKBOOK_PARTS_PATH = MANUAL_DIR / "workbook_tabs" / "parts.csv"
 WORKBOOK_SUBSTANCES_PATH = MANUAL_DIR / "workbook_tabs" / "substances.csv"
 WORKBOOK_ELECTRICAL_MASTER_PATH = MANUAL_DIR / "workbook_tabs" / "electrical_master.csv"
 WORKBOOK_ELECTRICAL_TEMPLATES_PATH = MANUAL_DIR / "workbook_tabs" / "electrical_templates.csv"
+WORKBOOK_RUBBERS_EXACT_ONLINE_PATH = MANUAL_DIR / "workbook_tabs" / "rubbers_exact_online.csv"
+WORKBOOK_RUBBERS_KIT_BUY_PATH = MANUAL_DIR / "workbook_tabs" / "rubbers_kit_buy.csv"
+WORKBOOK_RUBBERS_ALL_REPLACE_LINKS_PATH = MANUAL_DIR / "workbook_tabs" / "rubbers_all_replace_links.csv"
+WORKBOOK_PK_QUALITY_PATH = MANUAL_DIR / "workbook_tabs" / "pk_quality_path.csv"
+WORKBOOK_PK_BUY_CLEAN_DIRECT_PATH = MANUAL_DIR / "workbook_tabs" / "pk_buy_clean_direct.csv"
 SELLING_SITE_MANIFEST_PATH = ROOT / "deliverables" / "selling_site_images" / "manifest.csv"
 WHATSAPP_J40_CHAT_CANDIDATES_PATH = MANUAL_DIR / "whatsapp_j40_chat_candidates.csv"
 WHATSAPP_J40_MEDIA_INDEX_PATH = ROOT / "data" / "processed" / "generated" / "mcp_whatsapp_j40_media_index.csv"
+WHATSAPP_HIDDEN_CHAT_NAMES = {"support engineer placement"}
+WHATSAPP_HIDDEN_CHAT_IDS = {"120363406007289586@g.us"}
 PAINT_REFINISH_MEDIA_QUEUE_PATH = MANUAL_DIR / "paint_refinish_media_queue.csv"
 PAINT_REFINISH_WHATSAPP_MEDIA_QUEUE_PATH = MANUAL_DIR / "paint_refinish_whatsapp_media_queue.csv"
 INVENTORY_IMAGE_OVERRIDES_PATH = MANUAL_DIR / "inventory_image_overrides.csv"
+OTHER_BUILD_REFERENCE_MEDIA_PATH = MANUAL_DIR / "other_build_reference_media.csv"
+OTHER_J40_BUILDS_DIR = ROOT / "data" / "reference" / "other_j40_builds"
+PAKWHEELS_DIR = ROOT / "data" / "pakwheels"
 OUTPUT_DATA_JS_PATH = UI_DIR / "data.js"
 LOCAL_ORDER_IMAGE_DIRS: tuple[Path, ...] = (
     ROOT / "photos",
     ROOT / "deliverables" / "selling_site_images" / "images",
 )
 LOCAL_ORDER_IMAGE_EXTENSIONS: set[str] = {".jpg", ".jpeg", ".png", ".webp"}
+REFERENCE_IMAGE_EXTENSIONS: set[str] = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
 LOCAL_ORDER_IMAGE_INDEX: dict[str, Path] | None = None
 
 PRIMARY_WORKSTREAM_IDS: tuple[str, ...] = (
@@ -79,9 +91,9 @@ WORKSTREAM_TITLE_OVERRIDES: dict[str, str] = {
 
 WORKSTREAM_IMAGE_PROFILES: dict[str, dict[str, set[str]]] = {
     "stripdown_cataloguing": {
-        "component_groups": {"removable_panels", "interior_cabin", "engine_bay", "body_exterior", "body_floor"},
+        "component_groups": {"removable_panels", "interior_cabin", "body_exterior", "body_floor"},
         "stages": {"stripdown_cataloguing"},
-        "keywords": {"stripdown", "removed", "panel", "interior", "tagged", "dashboard", "cabin", "door"},
+        "keywords": {"stripdown", "removed", "panel", "interior", "tagged", "cabin", "door", "floor", "shell"},
     },
     "body_chassis": {
         "component_groups": {"body_floor", "body_exterior", "roof_and_gutters", "removable_panels"},
@@ -234,6 +246,60 @@ WORKSTREAM_ALLOW_STAGE_COMPONENT_FALLBACK: dict[str, bool] = {
     "final_assembly_validation": True,
 }
 WORKBOOK_SECTION_HEADING_RE = re.compile(r"^\d+\)\s+")
+URL_PATTERN = re.compile(r"https?://[^\s<>()\"']+")
+
+STRIPDOWN_CURATED_MEDIA_IDS: tuple[str, ...] = (
+    "20260323_201950",
+    "20260321_235605",
+    "20260321_235600",
+    "20260323_201957",
+    "20260323_202016",
+    "20260324_004812",
+    "20260319_182448",
+    "20260412_223216",
+    "20260413_040659",
+)
+STRIPDOWN_ENGINE_REASSEMBLY_MEDIA_IDS: tuple[str, ...] = (
+    "20260317_235150",
+    "20260317_235201",
+    "20260317_235216",
+    "20260317_235229",
+    "20260321_235501",
+    "20260323_185920",
+    "20260412_215136",
+    "20260412_215152",
+    "20260413_040739",
+    "20260420_021209_gp_udHV0fWQ",
+    "20260420_021227_gp_iHBRfJDA",
+    "20260420_021237_gp_dXycbsEg",
+    "20260420_021610_gp_zVUpSdRQ",
+    "20260420_021622_gp_jcdpj1IA",
+    "20260430_215915_gp_ycQ395Gg",
+    "20260430_215939_gp_EjZ7u1ow",
+    "20260430_215957_gp_2iBbUagw",
+    "20260430_220004_gp_C9oYiYmA",
+)
+STRIPDOWN_WIRING_REASSEMBLY_MEDIA_IDS: tuple[str, ...] = (
+    "20260320_191834",
+    "20260320_191846",
+    "20260320_192143",
+    "20260320_192148",
+    "20260320_192153",
+    "20260328_053638_gp_t6Q3oCTA",
+    "20260328_174655_gp_uKQXWNAg",
+    "20260328_232207",
+    "20260321_235600",
+    "20260324_004812",
+)
+STRIPDOWN_DASH_REASSEMBLY_MEDIA_IDS: tuple[str, ...] = (
+    "20260323_180218",
+    "20260323_190005",
+    "20260323_190047",
+    "20260323_201952_gp_Jms9V7Ew",
+    "20260323_210946_gp_0UMDdELw",
+    "20260413_040719",
+    "20260422_074709_gp_o4wiXyjA",
+)
 
 REPLACEMENT_PIPE_MADE_TO_ORDER_MEDIA_IDS: tuple[str, ...] = (
     "20260502_004044_gp_Hx4Yo0Qg",
@@ -269,6 +335,64 @@ REAR_BRAKE_CABLE_LINE_MEDIA_IDS: tuple[str, ...] = (
     "20260422_004254_gp_SplHLSYA",
     "20260422_004257_gp_cxEZbZoQ",
     "20260422_004301_gp_SU89hisw",
+)
+PAINT_BEFORE_ATTACHED_OR_BATCH_MEDIA_IDS: tuple[str, ...] = (
+    "20260314_180058",
+    "20260314_180059_gp_x5fsOjjA",
+    "20260317_165030",
+    "20260317_165030_gp_j49pTsog",
+    "20260319_182448",
+    "20260319_182449_gp_ttDAl3iw",
+    "20260323_201950",
+    "20260323_201957",
+    "IMG-20260328-WA0017",
+    "20260329_051759_gp_xEzrDYhQ",
+    "20260329_051805_gp_oRw8XV8Q",
+)
+PAINT_AFTER_RETURNED_PART_MEDIA_IDS: tuple[str, ...] = (
+    "20260408_211754",
+    "20260408_211756_gp_UFEU6uIA",
+    "20260408_211804",
+    "20260408_211806_gp_TbbCJsoQ",
+    "20260408_211812",
+    "20260408_211814_gp_hJ3szRKQ",
+    "20260408_212832",
+    "20260408_212835_gp_nwY1TOwQ",
+    "20260408_212839",
+    "20260408_212841_gp_y9GxLOZg",
+    "20260408_212846",
+    "20260408_212849_gp_VJjse8gw",
+    "20260412_010623",
+    "20260412_010626_gp_4bK3TOAg",
+    "20260412_010633",
+    "20260412_010635_gp_rhjZ65YA",
+    "20260412_010644",
+    "20260412_010646_gp_vrcJK3ow",
+    "20260412_010652",
+    "20260412_010653_gp_jaxzr7Eg",
+    "20260412_010657",
+    "20260412_010659_gp_6XtGS3yA",
+    "20260412_010713",
+    "20260412_010714_gp_EVZz4yGw",
+    "20260412_223218_gp_fqniQhNQ",
+    "20260412_223534",
+    "20260412_223537_gp_kVu8OFJA",
+    "20260412_223539",
+    "20260412_223541_gp_QFRecOgQ",
+    "20260423_183408_gp_eCiJmZnA",
+    "20260423_183448_gp_9MQfbmvQ",
+    "20260423_183514_gp_DyztXKcw",
+    "20260423_183521_gp_pjVN2Ujw",
+    "20260423_183540_gp_bhRdLpMg",
+    "20260423_183628_gp_SpWIfUnw",
+    "20260423_183648_gp_ltd3AKwg",
+)
+PAINT_WORK_VIDEO_MEDIA_IDS: tuple[str, ...] = (
+    "20260421_000440_gp_mHfhDt5Q",
+    "20260421_000442_gp_BwZ9MrsQ",
+    "20260421_000445_gp_NZmyXtiA",
+    "20260421_000447_gp_i5bdcJiQ",
+    "20260421_000450_gp_6V9noMHA",
 )
 DASHBOARD_ELECTRICAL_FOCUS_KEYWORDS: tuple[str, ...] = (
     "switch",
@@ -1389,6 +1513,12 @@ def norm(value: Any) -> str:
     return clean(value).lower()
 
 
+def is_hidden_whatsapp_chat(row: dict[str, Any]) -> bool:
+    chat_name = norm(row.get("chat_name") or row.get("source_name"))
+    chat_id = clean(row.get("chat_id"))
+    return chat_name in WHATSAPP_HIDDEN_CHAT_NAMES or chat_id in WHATSAPP_HIDDEN_CHAT_IDS
+
+
 def split_pipe(value: str) -> list[str]:
     return [token.strip() for token in clean(value).split("|") if token.strip()]
 
@@ -1399,6 +1529,40 @@ def first_non_empty(row: dict[str, str], keys: list[str]) -> str:
         if value:
             return value
     return ""
+
+
+def extract_urls(*values: Any) -> list[str]:
+    urls: list[str] = []
+    seen: set[str] = set()
+    for value in values:
+        if isinstance(value, (list, tuple, set)):
+            candidates = value
+        else:
+            candidates = [value]
+        for candidate_value in candidates:
+            text = clean(candidate_value)
+            if not text:
+                continue
+            for match in URL_PATTERN.findall(text):
+                url = match.strip().rstrip(".,;:)]}>")
+                if not url or url in seen:
+                    continue
+                seen.add(url)
+                urls.append(url)
+    return urls
+
+
+def link_domain(url: str) -> str:
+    match = re.match(r"https?://(?:www\.)?([^/?#]+)", clean(url), flags=re.IGNORECASE)
+    return match.group(1) if match else "link"
+
+
+def link_payloads(*values: Any) -> list[dict[str, str]]:
+    return [{"url": url, "label": link_domain(url)} for url in extract_urls(*values)]
+
+
+def row_text_values(row: dict[str, str]) -> list[str]:
+    return [clean(value) for value in row.values() if clean(value)]
 
 
 def humanize_token(value: str) -> str:
@@ -1664,6 +1828,13 @@ def path_for_ui(relative_path: str) -> str:
     return f"../../{normalized}"
 
 
+def repo_relative_path(path: Path) -> str:
+    try:
+        return path.relative_to(ROOT).as_posix()
+    except ValueError:
+        return path.as_posix()
+
+
 def image_caption(row: dict[str, str]) -> str:
     component = humanize_token(row.get("specific_component", ""))
     stage = humanize_token(row.get("stage", ""))
@@ -1705,6 +1876,7 @@ DASHBOARD_STRICT_SPECIFIC_COMPONENTS: set[str] = {
     "dashboard_switch_and_control_hardware",
     "dashboard_fascia_trim",
     "dashboard_shell_and_cabin",
+    "dashboard_shell_and_bulkhead",
     "dashboard_lower_structure",
     "dashboard_and_cabin_stripdown",
 }
@@ -1966,6 +2138,7 @@ def replacement_pipe_order_release_payload(rows: list[dict[str, str]]) -> list[d
                 "route": clean(row.get("route")),
                 "item": clean(row.get("item")),
                 "part_number_or_code": clean(row.get("part_number_or_code")),
+                "dimension_spec_mm": clean(row.get("dimension_spec_mm")),
                 "qty_required": clean(row.get("qty_required")),
                 "qty_to_order": clean(row.get("qty_to_order")),
                 "spec_status": "spec_ready",
@@ -2190,6 +2363,286 @@ def dedupe_payload_images(images: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return deduped
 
 
+def reference_image_file_payload(
+    path: Path,
+    *,
+    caption: str,
+    specific_component: str,
+    source_label: str,
+    source_path: str,
+    notes: str = "",
+) -> dict[str, Any]:
+    relative_path = repo_relative_path(path)
+    return {
+        "path": path_for_ui(relative_path),
+        "caption": caption,
+        "captured_date": "",
+        "captured_time": "",
+        "media_type": "photo",
+        "component_group": "documentation_reference",
+        "specific_component": specific_component,
+        "stage": "reference_material",
+        "media_id": path.stem,
+        "matched_tokens": [],
+        "match_basis": "other_build_reference",
+        "source_label": source_label,
+        "source_path": source_path,
+        "notes": notes,
+    }
+
+
+def scan_reference_image_files(directory: Path) -> list[Path]:
+    if not directory.exists():
+        return []
+    return sorted(
+        [
+            path
+            for path in directory.rglob("*")
+            if path.is_file()
+            and path.suffix.lower() in REFERENCE_IMAGE_EXTENSIONS
+            and not path.name.startswith(".")
+        ],
+        key=lambda path: repo_relative_path(path).lower(),
+    )
+
+
+def build_drop_zone_reference_images() -> list[dict[str, Any]]:
+    images: list[dict[str, Any]] = []
+    for path in scan_reference_image_files(OTHER_J40_BUILDS_DIR):
+        try:
+            local_group = path.parent.relative_to(OTHER_J40_BUILDS_DIR).as_posix()
+        except ValueError:
+            local_group = ""
+        group_label = humanize_token(local_group.replace("/", " ")) if local_group and local_group != "." else "Other J40 Build"
+        images.append(
+            reference_image_file_payload(
+                path,
+                caption=f"{group_label} · {path.stem}",
+                specific_component="other_j40_build_drop_zone",
+                source_label=group_label,
+                source_path=repo_relative_path(path.parent),
+            )
+        )
+    return dedupe_payload_images(images)
+
+
+def load_json_optional(path: Path) -> dict[str, Any]:
+    if not path.exists():
+        return {}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
+def build_pakwheels_reference_sections() -> list[dict[str, Any]]:
+    if not PAKWHEELS_DIR.exists():
+        return []
+
+    sections: list[dict[str, Any]] = []
+    for listing_dir in sorted([path for path in PAKWHEELS_DIR.iterdir() if path.is_dir()], key=lambda path: path.name):
+        latest_snapshot = load_json_optional(listing_dir / "latest_snapshot.json")
+        listing_id = clean(latest_snapshot.get("listing_id")) or listing_dir.name
+        listing_url = clean(latest_snapshot.get("listing_url"))
+        run_time = clean(latest_snapshot.get("run_time"))
+
+        image_dir = listing_dir / "jpg"
+        if not image_dir.exists():
+            image_dir = listing_dir / "archive"
+        images = [
+            reference_image_file_payload(
+                path,
+                caption=f"PakWheels reference build {listing_id} · {path.stem}",
+                specific_component="pakwheels_reference_build",
+                source_label=f"PakWheels {listing_id}",
+                source_path=repo_relative_path(listing_dir),
+                notes=f"Snapshot {run_time}" if run_time else "",
+            )
+            for path in scan_reference_image_files(image_dir)
+        ]
+        images = dedupe_payload_images(images)
+        if not images:
+            continue
+        sections.append(
+            {
+                "key": f"pakwheels_{listing_id}",
+                "title": f"PakWheels Reference Build {listing_id}",
+                "description": "Archived J40 listing gallery used as outside-build visual reference.",
+                "source_path": repo_relative_path(listing_dir),
+                "links": [{"url": listing_url, "label": "PakWheels listing"}] if listing_url else [],
+                "images": images,
+            }
+        )
+    return sections
+
+
+def build_manual_other_build_reference_sections() -> list[dict[str, Any]]:
+    rows = load_csv_optional(OTHER_BUILD_REFERENCE_MEDIA_PATH)
+    sections_by_key: dict[str, dict[str, Any]] = {}
+
+    for index, row in enumerate(rows):
+        relative_path = clean(first_non_empty(row, ["source_path", "relative_path", "path"]))
+        if not relative_path:
+            continue
+
+        path = ROOT / relative_path
+        if not path.exists() or path.suffix.lower() not in REFERENCE_IMAGE_EXTENSIONS:
+            continue
+
+        section_key = clean(row.get("section_key")) or "curated_other_build_references"
+        section_title = clean(row.get("section_title")) or "Curated Other-Build References"
+        section = sections_by_key.setdefault(
+            section_key,
+            {
+                "key": section_key,
+                "title": section_title,
+                "description": clean(row.get("section_description")),
+                "source_path": repo_relative_path(OTHER_BUILD_REFERENCE_MEDIA_PATH),
+                "links": [],
+                "images": [],
+            },
+        )
+
+        caption = clean(row.get("caption")) or f"{section_title} · {path.stem}"
+        source_label = clean(row.get("source_label")) or section_title
+        specific_component = clean(row.get("specific_component")) or section_key
+        image = reference_image_file_payload(
+            path,
+            caption=caption,
+            specific_component=specific_component,
+            source_label=source_label,
+            source_path=relative_path,
+            notes=clean(row.get("notes")),
+        )
+        image["sort_order"] = index
+        section["images"].append(image)
+
+    sections: list[dict[str, Any]] = []
+    for section in sections_by_key.values():
+        images = sorted(section["images"], key=lambda image: image.get("sort_order", 0))
+        for image in images:
+            image.pop("sort_order", None)
+        section["images"] = dedupe_payload_images(images)
+        if section["images"]:
+            sections.append(section)
+    return sections
+
+
+def build_market_pack_reference_images() -> list[dict[str, Any]]:
+    images: list[dict[str, Any]] = []
+    deliverables_dir = ROOT / "deliverables"
+    if not deliverables_dir.exists():
+        return images
+
+    for image_dir in sorted(deliverables_dir.glob("*/images"), key=lambda path: repo_relative_path(path).lower()):
+        if "selling_site_images" in image_dir.parts:
+            continue
+        for path in scan_reference_image_files(image_dir):
+            pack_name = image_dir.parent.name
+            images.append(
+                reference_image_file_payload(
+                    path,
+                    caption=f"Build pack sample · {path.stem}",
+                    specific_component="market_pack_sample_image",
+                    source_label=pack_name,
+                    source_path=repo_relative_path(image_dir.parent),
+                    notes="Generated market-pack reference image.",
+                )
+            )
+    return dedupe_payload_images(images)
+
+
+def build_current_sample_reference_images(photo_rows: list[dict[str, str]]) -> list[dict[str, Any]]:
+    sample_rows = [
+        row
+        for row in photo_rows
+        if is_photo_row(row)
+        and (
+            "sample" in norm(row.get("specific_component"))
+            or "sample" in norm(row.get("stage"))
+            or "sample" in norm(row.get("tags"))
+            or "fabrication" in norm(row.get("specific_component"))
+            or "recreation" in norm(row.get("specific_component"))
+        )
+    ]
+    sample_rows = sorted(
+        sample_rows,
+        key=lambda row: (
+            clean(row.get("captured_date")),
+            clean(row.get("captured_time")),
+            clean(row.get("file_name")),
+        ),
+        reverse=True,
+    )
+    images = []
+    for row in sample_rows:
+        payload = image_payload(row, [])
+        payload["match_basis"] = "sample_reference"
+        payload["source_label"] = "Current build samples"
+        payload["source_path"] = clean(row.get("relative_path"))
+        images.append(payload)
+    return dedupe_payload_images(images)
+
+
+def build_other_builds_reference(photo_rows: list[dict[str, str]]) -> dict[str, Any]:
+    drop_zone_images = build_drop_zone_reference_images()
+    manual_reference_sections = build_manual_other_build_reference_sections()
+    sample_reference_images = build_current_sample_reference_images(photo_rows)
+    market_pack_images = build_market_pack_reference_images()
+
+    sections: list[dict[str, Any]] = [
+        {
+            "key": "drop_zone",
+            "title": "Other J40 Build Drop Zone",
+            "description": "Reference photos placed here are kept separate from this vehicle's evidence inventory.",
+            "source_path": repo_relative_path(OTHER_J40_BUILDS_DIR),
+            "links": [],
+            "images": drop_zone_images,
+        }
+    ]
+    sections.extend(build_pakwheels_reference_sections())
+    sections.extend(manual_reference_sections)
+    if sample_reference_images:
+        sections.append(
+            {
+                "key": "sample_reference",
+                "title": "Samples And Fabrication References",
+                "description": "Current sample, fabrication, and recreation evidence gathered into one reference group.",
+                "source_path": "data/manual/photo_inventory.csv",
+                "links": [],
+                "images": sample_reference_images,
+            }
+        )
+    if market_pack_images:
+        sections.append(
+            {
+                "key": "market_pack_samples",
+                "title": "Generated Build Pack Sample Images",
+                "description": "Deduped image set carried forward from generated market and buy packs.",
+                "source_path": "deliverables/*/images",
+                "links": [],
+                "images": market_pack_images,
+            }
+        )
+
+    total_images = sum(len(section.get("images") or []) for section in sections)
+    manual_reference_images = sum(len(section.get("images") or []) for section in manual_reference_sections)
+    return {
+        "drop_zone": repo_relative_path(OTHER_J40_BUILDS_DIR),
+        "summary": {
+            "section_count": len(sections),
+            "total_images": total_images,
+            "drop_zone_images": len(drop_zone_images),
+            "manual_reference_images": manual_reference_images,
+            "pakwheels_sections": sum(1 for section in sections if clean(section.get("key")).startswith("pakwheels_")),
+            "sample_reference_images": len(sample_reference_images),
+            "market_pack_images": len(market_pack_images),
+        },
+        "sections": sections,
+    }
+
+
 def parse_timestamp_parts(timestamp: str) -> tuple[str, str]:
     value = clean(timestamp)
     if "T" in value:
@@ -2325,207 +2778,51 @@ def build_paint_workstream_evidence_sets(
     paint_queue_rows: list[dict[str, str]],
     paint_whatsapp_rows: list[dict[str, str]],
 ) -> dict[str, Any]:
-    paint_stages = {"removed_parts_cataloguing", "hardware_refinish", "rust_assessment"}
-    paint_component_groups = {"removable_panels", "body_exterior", "roof_and_gutters", "body_floor"}
-    removed_specific = {
-        "detached_body_panels_and_doors",
-        "detached_doors_and_panels",
-        "rear_hatch_inner_panel",
-        "body_shell_with_doors_removed",
-        "rear_side_opening",
-    }
-    returned_specific = {
-        "refinished_hinges_brackets_and_trim",
-        "refinished_seat_or_mount_bracket",
-        "wiper_arm_or_linkage_hardware",
-        "dashboard_fascia_trim",
+    rows_by_id = {
+        clean(row.get("media_id")): row
+        for row in photo_rows
+        if clean(row.get("media_id")) and clean(row.get("relative_path"))
     }
 
-    local_candidates: list[dict[str, str]] = []
-    for row in photo_rows:
-        if not is_photo_row(row):
-            continue
-        stage = norm(row.get("stage"))
-        component_group = norm(row.get("component_group"))
-        specific_component = norm(row.get("specific_component"))
+    def curated_payloads(media_ids: tuple[str, ...]) -> list[dict[str, Any]]:
+        return [
+            image_payload(rows_by_id[media_id], row_token_matches(rows_by_id[media_id], reference_tokens))
+            for media_id in media_ids
+            if media_id in rows_by_id
+        ]
 
-        include_row = False
-        if stage in paint_stages:
-            include_row = True
-        elif component_group in paint_component_groups and stage in {"reference_material"}:
-            include_row = True
-
-        if include_row:
-            local_candidates.append(row)
-
-    local_candidates = sorted(
-        local_candidates,
-        key=lambda row: (
-            clean(row.get("captured_date")),
-            clean(row.get("captured_time")),
-            clean(row.get("file_name")),
-        ),
-        reverse=True,
-    )
-
-    local_all_images = [image_payload(row, row_token_matches(row, reference_tokens)) for row in local_candidates]
-    local_send_images = [
-        image_payload(row, row_token_matches(row, reference_tokens))
-        for row in local_candidates
-        if norm(row.get("stage")) == "removed_parts_cataloguing"
-        and (
-            norm(row.get("specific_component")) in removed_specific
-            or norm(row.get("component_group")) == "removable_panels"
-        )
-    ]
-    local_returned_images = [
-        image_payload(row, row_token_matches(row, reference_tokens))
-        for row in local_candidates
-        if norm(row.get("stage")) == "hardware_refinish"
-        or norm(row.get("specific_component")) in returned_specific
-    ]
-    local_issue_images = [
-        image_payload(row, row_token_matches(row, reference_tokens))
-        for row in local_candidates
-        if norm(row.get("stage")) == "rust_assessment"
-        or "corrosion" in norm(row.get("observed_state"))
-    ]
-    local_progress_images = [
-        image_payload(row, row_token_matches(row, reference_tokens))
-        for row in local_candidates
-        if norm(row.get("stage")) == "stripdown_cataloguing"
-    ]
-
-    queue_all_media: list[dict[str, Any]] = []
-    queue_send_media: list[dict[str, Any]] = []
-    queue_returned_media: list[dict[str, Any]] = []
-    queue_issue_media: list[dict[str, Any]] = []
-    queue_progress_media: list[dict[str, Any]] = []
-    queue_progress_videos: list[dict[str, Any]] = []
-    for row in paint_queue_rows:
-        if not clean(row.get("relative_path")):
-            continue
-        media_type = norm(row.get("media_type"))
-        if media_type not in {"photo", "video"}:
-            continue
-        evidence_bucket = norm(row.get("evidence_bucket"))
-        component_group = norm(row.get("component_group"))
-        stage = norm(row.get("stage"))
-        if evidence_bucket == "in_progress_photo" and (
-            component_group not in {"removable_panels", "body_exterior", "roof_and_gutters"}
-            and stage != "hardware_refinish"
-        ):
-            continue
-        if evidence_bucket == "in_progress_video" and (
-            component_group not in {"removable_panels", "body_exterior", "roof_and_gutters", "documentation_reference"}
-        ):
-            continue
-        payload = image_payload(row, row_token_matches(row, reference_tokens))
-        queue_all_media.append(payload)
-
-        if evidence_bucket == "prepared_for_send_out":
-            queue_send_media.append(payload)
-        elif evidence_bucket == "returned_from_painter":
-            queue_returned_media.append(payload)
-        elif evidence_bucket == "issue_tracking":
-            queue_issue_media.append(payload)
-        else:
-            queue_progress_media.append(payload)
-
-        if media_type == "video":
-            queue_progress_videos.append(payload)
-
-    whatsapp_send_images: list[dict[str, Any]] = []
-    whatsapp_returned_images: list[dict[str, Any]] = []
-    whatsapp_progress_images: list[dict[str, Any]] = []
-    whatsapp_progress_videos: list[dict[str, Any]] = []
-    for row in paint_whatsapp_rows:
-        if not paint_whatsapp_row_is_relevant(row):
-            continue
-        media_type = norm(row.get("media_type"))
-        if media_type not in {"photo", "video"}:
-            continue
-        evidence_bucket = clean(row.get("evidence_bucket"))
-        specific_component, stage = paint_whatsapp_component_bucket(evidence_bucket)
-        payload = whatsapp_media_image_payload(
-            row,
-            paint_reference_tokens_from_row(row),
-            match_basis=f"paint_whatsapp_{norm(evidence_bucket) or 'unclassified'}",
-            match_score=0,
-            component_group="paint_refinish_whatsapp",
-            specific_component=specific_component,
-            stage=stage,
-        )
-        if media_type == "video":
-            whatsapp_progress_videos.append(payload)
-            continue
-        bucket = norm(evidence_bucket)
-        if bucket == "prepared_for_send_out":
-            whatsapp_send_images.append(payload)
-        elif bucket == "returned_from_painter":
-            whatsapp_returned_images.append(payload)
-        else:
-            whatsapp_progress_images.append(payload)
-
-    all_media = dedupe_payload_images(
-        local_all_images
-        + queue_all_media
-        + whatsapp_send_images
-        + whatsapp_returned_images
-        + whatsapp_progress_images
-        + whatsapp_progress_videos
-    )
-    sent_media = dedupe_payload_images(local_send_images + queue_send_media + whatsapp_send_images)
-    returned_media = dedupe_payload_images(local_returned_images + queue_returned_media + whatsapp_returned_images)
-    issue_media = dedupe_payload_images(local_issue_images + queue_issue_media)
-    progress_media = dedupe_payload_images(local_progress_images + queue_progress_media + whatsapp_progress_images + whatsapp_progress_videos)
-    progress_video_media = dedupe_payload_images(queue_progress_videos + whatsapp_progress_videos)
+    sent_media = dedupe_payload_images(curated_payloads(PAINT_BEFORE_ATTACHED_OR_BATCH_MEDIA_IDS))
+    returned_media = dedupe_payload_images(curated_payloads(PAINT_AFTER_RETURNED_PART_MEDIA_IDS))
+    progress_video_media = dedupe_payload_images(curated_payloads(PAINT_WORK_VIDEO_MEDIA_IDS))
+    primary_media = dedupe_payload_images(sent_media + returned_media + progress_video_media)
 
     evidence_sets: list[dict[str, Any]] = [
         {
-            "key": "all_paint_media",
-            "title": "All Paint Media",
-            "description": "Complete paint/refinish media set (photos + videos) across local and WhatsApp sources.",
-            "images": all_media,
-        },
-        {
             "key": "sent_to_painter",
-            "title": "Sent To Painter",
-            "description": "Media showing parts/panels detached and sent/prepared for painter batches.",
+            "title": "Before Paint - Attached Or Batch Photos",
+            "description": "Curated before photos from original attached context or consolidated outbound batch shots only.",
             "images": sent_media,
         },
         {
             "key": "returned_from_painter",
-            "title": "Returned From Painter",
-            "description": "Media showing refinished/returned parts and hardware after paint/refinish work.",
+            "title": "After Paint - Returned From Painter",
+            "description": "Curated photos of returned painted/refinished parts, including the April 8 and April 23 wall-shot panel batches.",
             "images": returned_media,
-        },
-        {
-            "key": "paint_issue_tracking",
-            "title": "Paint Issues / Defects",
-            "description": "Issue-focused media (rust/corrosion/problem areas) used to track paint-prep defects.",
-            "images": issue_media,
-        },
-        {
-            "key": "paint_progress_media",
-            "title": "Paint Progress Media",
-            "description": "In-progress painter/bodywork media while work is underway.",
-            "images": progress_media,
         },
     ]
     if progress_video_media:
         evidence_sets.append(
             {
                 "key": "paint_progress_videos",
-                "title": "Paint Progress Videos",
-                "description": "WhatsApp video references captured during painter/bodywork progress.",
+                "title": "Work Videos",
+                "description": "Videos of the paint/bodywork activity while the work is underway.",
                 "images": progress_video_media,
             }
         )
     evidence_sets = [set_row for set_row in evidence_sets if set_row["images"]]
 
     return {
-        "primary_images": all_media,
+        "primary_images": primary_media,
         "evidence_sets": evidence_sets,
     }
 
@@ -2576,6 +2873,55 @@ def build_workstream_evidence_sets(
             paint_queue_rows,
             paint_whatsapp_rows,
         )
+
+    if workstream_id == "stripdown_cataloguing":
+        curated_rows = rows_for_media_ids(photo_rows, STRIPDOWN_CURATED_MEDIA_IDS)
+        engine_rows = rows_for_media_ids(photo_rows, STRIPDOWN_ENGINE_REASSEMBLY_MEDIA_IDS)
+        wiring_rows = rows_for_media_ids(photo_rows, STRIPDOWN_WIRING_REASSEMBLY_MEDIA_IDS)
+        dash_rows = rows_for_media_ids(photo_rows, STRIPDOWN_DASH_REASSEMBLY_MEDIA_IDS)
+        curated_images = dedupe_payload_images(
+            [image_payload(row, row_token_matches(row, reference_tokens)) for row in curated_rows]
+        )
+        engine_images = dedupe_payload_images(
+            [image_payload(row, row_token_matches(row, reference_tokens)) for row in engine_rows]
+        )
+        wiring_images = dedupe_payload_images(
+            [image_payload(row, row_token_matches(row, reference_tokens)) for row in wiring_rows]
+        )
+        dash_images = dedupe_payload_images(
+            [image_payload(row, row_token_matches(row, reference_tokens)) for row in dash_rows]
+        )
+        primary_images = dedupe_payload_images(curated_images + engine_images + wiring_images + dash_images)
+        if curated_images:
+            return {
+                "primary_images": primary_images,
+                "evidence_sets": [
+                    {
+                        "key": "curated_stripdown_photos",
+                        "title": "Curated Stripdown Photos",
+                        "description": "Lead shell, floor, wiring pass-through, and removed-panel evidence for stripdown cataloguing.",
+                        "images": curated_images,
+                    },
+                    {
+                        "key": "stripdown_engine_reassembly_reference",
+                        "title": "Engine Bay Plug-Back Reference",
+                        "description": "Engine bay, cooling, bellhousing, and stripped-access photos useful for reconnecting lines, hoses, brackets, and nearby wiring.",
+                        "images": engine_images,
+                    },
+                    {
+                        "key": "stripdown_wiring_firewall_reference",
+                        "title": "Firewall And Wiring Reference",
+                        "description": "Firewall, pedal-box, and dash-side wiring photos for routing, pass-through, and connector placement during refit.",
+                        "images": wiring_images,
+                    },
+                    {
+                        "key": "stripdown_dash_cabin_reference",
+                        "title": "Dash And Cabin Reference",
+                        "description": "Dashboard shell, controls, and cabin stripdown photos retained as reassembly reference without leading the Stripdown overview card.",
+                        "images": dash_images,
+                    },
+                ],
+            }
 
     if workstream_id == "replacement_pipes":
         all_pipe_rows = rows_for_media_ids(photo_rows, REPLACEMENT_PIPE_CURATED_MEDIA_IDS)
@@ -3417,6 +3763,7 @@ def load_workbook_supply_rows(path: Path, supply_type: str, source_name: str) ->
         status_note = first_non_empty(row, ["col_12", "col_7"])
         inventory_token = first_non_empty(row, ["col_9", "col_8", "col_10"])
         status_group = workbook_supply_status_group(received, paid, status_token, status_note)
+        workbook_values = row_text_values(row)
         normalized_rows.append(
             {
                 "source": source_name,
@@ -3442,9 +3789,161 @@ def load_workbook_supply_rows(path: Path, supply_type: str, source_name: str) ->
                 "delivery_status": received,
                 "evidence_ref": "",
                 "notes": status_note or status_token,
+                "links": link_payloads(workbook_values),
             }
         )
     return normalized_rows
+
+
+def workbook_supply_ref_from_reconciliation(row: dict[str, str]) -> str:
+    sheet = norm(row.get("source_sheet"))
+    source_row = clean(row.get("source_row"))
+    if not source_row:
+        return ""
+    source_name_by_sheet = {
+        "tools": "workbook_tools",
+        "parts": "workbook_parts",
+        "substances": "workbook_substances",
+    }
+    source_name = source_name_by_sheet.get(sheet)
+    if not source_name:
+        return ""
+    return f"{source_name}#row_{source_row}"
+
+
+def load_expense_matched_workbook_supply_refs(path: Path) -> set[str]:
+    matched_refs: set[str] = set()
+    for row in load_csv_optional(path):
+        if norm(row.get("workbook_row_type")) != "line_item":
+            continue
+        if not clean(row.get("matched_entry_id")):
+            continue
+        source_ref = workbook_supply_ref_from_reconciliation(row)
+        if source_ref:
+            matched_refs.add(norm(source_ref))
+    return matched_refs
+
+
+def source_link_row(
+    *,
+    source_sheet: str,
+    source_ref: str,
+    item: str,
+    system: str = "",
+    stage: str = "",
+    decision: str = "",
+    cost: str = "",
+    notes: str = "",
+    values: list[str] | None = None,
+) -> dict[str, Any] | None:
+    links = link_payloads(values or [])
+    if not links:
+        return None
+    return {
+        "source_sheet": source_sheet,
+        "source_ref": source_ref,
+        "system": system,
+        "item": item,
+        "stage": stage,
+        "decision": decision,
+        "cost": cost,
+        "notes": notes,
+        "links": links,
+    }
+
+
+def build_workbook_source_links() -> list[dict[str, Any]]:
+    output: list[dict[str, Any]] = []
+
+    for row in load_csv_optional(WORKBOOK_PK_BUY_CLEAN_DIRECT_PATH):
+        if norm(row.get("col_1")) == "system":
+            continue
+        candidate = source_link_row(
+            source_sheet="PK_Buy_Clean_Direct",
+            source_ref=f"pk_buy_clean_direct#row_{clean(row.get('excel_row'))}",
+            system=clean(row.get("col_1")),
+            item=clean(row.get("col_2")),
+            stage=clean(row.get("col_5")),
+            cost=clean(row.get("col_8")),
+            notes=clean(row.get("col_11")) or clean(row.get("col_12")),
+            values=row_text_values(row),
+        )
+        if candidate:
+            output.append(candidate)
+
+    for row in load_csv_optional(WORKBOOK_PK_QUALITY_PATH):
+        if norm(row.get("col_1")) == "system":
+            continue
+        candidate = source_link_row(
+            source_sheet="PK_Quality_Path",
+            source_ref=f"pk_quality_path#row_{clean(row.get('excel_row'))}",
+            system=clean(row.get("col_1")),
+            item=clean(row.get("col_2")),
+            decision=clean(row.get("col_12")) or clean(row.get("col_4")),
+            cost=clean(row.get("col_8")),
+            notes=clean(row.get("col_11")),
+            values=row_text_values(row),
+        )
+        if candidate:
+            output.append(candidate)
+
+    for row in load_csv_optional(WORKBOOK_RUBBERS_EXACT_ONLINE_PATH):
+        if norm(row.get("col_1")) == "item_group":
+            continue
+        candidate = source_link_row(
+            source_sheet="Rubbers_Exact_Online",
+            source_ref=f"rubbers_exact_online#row_{clean(row.get('excel_row'))}",
+            system="Rubbers",
+            item=clean(row.get("col_1")),
+            decision=clean(row.get("col_11")) or clean(row.get("col_5")),
+            cost=clean(row.get("col_7")) or clean(row.get("col_6")),
+            notes=clean(row.get("col_10")),
+            values=row_text_values(row),
+        )
+        if candidate:
+            output.append(candidate)
+
+    for row in load_csv_optional(WORKBOOK_RUBBERS_KIT_BUY_PATH):
+        if norm(row.get("col_1")) == "kit_name":
+            continue
+        candidate = source_link_row(
+            source_sheet="Rubbers_Kit_Buy",
+            source_ref=f"rubbers_kit_buy#row_{clean(row.get('excel_row'))}",
+            system="Rubbers",
+            item=clean(row.get("col_1")),
+            stage=clean(row.get("col_3")),
+            cost=clean(row.get("col_4")),
+            notes=clean(row.get("col_8")) or clean(row.get("col_9")),
+            values=row_text_values(row),
+        )
+        if candidate:
+            output.append(candidate)
+
+    for row in load_csv_optional(WORKBOOK_RUBBERS_ALL_REPLACE_LINKS_PATH):
+        if norm(row.get("col_1")) == "item_group":
+            continue
+        candidate = source_link_row(
+            source_sheet="Rubbers_All_Replace_Links",
+            source_ref=f"rubbers_all_replace_links#row_{clean(row.get('excel_row'))}",
+            system="Rubbers",
+            item=clean(row.get("col_1")),
+            decision=clean(row.get("col_6")),
+            cost=clean(row.get("col_2")),
+            notes=clean(row.get("col_7")) or clean(row.get("col_3")),
+            values=row_text_values(row),
+        )
+        if candidate:
+            output.append(candidate)
+
+    seen: set[tuple[str, str]] = set()
+    deduped: list[dict[str, Any]] = []
+    for row in output:
+        key = (norm(row.get("source_ref")), norm(row.get("item")))
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped.append(row)
+    return sorted(deduped, key=lambda row: (row.get("system", ""), row.get("item", ""), row.get("source_sheet", "")))
 
 
 def build_supplies_inventory(expense_rows: list[dict[str, str]]) -> dict[str, Any]:
@@ -3486,6 +3985,7 @@ def build_supplies_inventory(expense_rows: list[dict[str, str]]) -> dict[str, An
                 "delivery_status": clean(row.get("delivery_status")),
                 "evidence_ref": clean(row.get("evidence_ref")),
                 "notes": clean(row.get("notes")),
+                "links": link_payloads(row_text_values(row)),
             }
         )
 
@@ -3493,6 +3993,13 @@ def build_supplies_inventory(expense_rows: list[dict[str, str]]) -> dict[str, An
     workbook_rows.extend(load_workbook_supply_rows(WORKBOOK_TOOLS_PATH, "tool", "workbook_tools"))
     workbook_rows.extend(load_workbook_supply_rows(WORKBOOK_PARTS_PATH, "part", "workbook_parts"))
     workbook_rows.extend(load_workbook_supply_rows(WORKBOOK_SUBSTANCES_PATH, "substance", "workbook_substances"))
+    expense_matched_workbook_refs = load_expense_matched_workbook_supply_refs(EXPENSES_RECONCILIATION_PATH)
+    if expense_matched_workbook_refs:
+        workbook_rows = [
+            row
+            for row in workbook_rows
+            if norm(row.get("source_ref")) not in expense_matched_workbook_refs
+        ]
 
     all_rows = expense_supply_rows + workbook_rows
     all_rows = [row for row in all_rows if clean(row.get("item"))]
@@ -4056,6 +4563,43 @@ def select_subtask_images_from_payloads(
     return dedupe_payload_images(selected)
 
 
+def paint_refinish_subtask_image_pool(subtask_id: str, images: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    if subtask_id == "lock_outbound_panel_manifest":
+        candidates = [image for image in images if norm(image.get("stage")) != "hardware_refinish"]
+    elif subtask_id in {"reconcile_returned_painted_parts", "close_paint_quality_gate"}:
+        candidates = [image for image in images if norm(image.get("stage")) == "hardware_refinish"]
+    elif subtask_id == "capture_in_process_painter_evidence":
+        candidates = [
+            image
+            for image in images
+            if norm(image.get("media_type")) == "video" or norm(image.get("stage")) == "stripdown_cataloguing"
+        ]
+    else:
+        candidates = images
+    return candidates or images
+
+
+def select_workstream_subtask_images(
+    workstream_id: str,
+    subtask_id: str,
+    images: list[dict[str, Any]],
+    tokens: set[str],
+) -> list[dict[str, Any]]:
+    candidate_images = (
+        paint_refinish_subtask_image_pool(subtask_id, images) if workstream_id == "paint_refinish" else images
+    )
+    selected = select_subtask_images_from_payloads(candidate_images, tokens)
+    if workstream_id == "paint_refinish" and subtask_id == "reconcile_returned_painted_parts":
+        returned_panel_images = [
+            image
+            for image in candidate_images
+            if norm(image.get("specific_component")) == "detached_body_panels_and_doors"
+        ]
+        if returned_panel_images:
+            selected = dedupe_payload_images(returned_panel_images + selected)[:6]
+    return selected
+
+
 def fallback_workstream_images_from_photo_rows(
     workstream_id: str,
     photo_rows: list[dict[str, str]],
@@ -4155,7 +4699,7 @@ def build_standard_workstream_subtask_group(
         subtask["supplies"] = unique_text_items(subtask_supplies)
         subtask["parts"] = unique_text_items(list(subtask.get("parts") or []))
         tokens = subtask_search_tokens(subtask)
-        subtask["images"] = select_subtask_images_from_payloads(evidence_images, tokens)
+        subtask["images"] = select_workstream_subtask_images(workstream_id, subtask_id, evidence_images, tokens)
         subtask["registered_items"] = registered_item_lines_for_subtask(part_rows_for_workstream, tokens)
         subtasks.append(subtask)
 
@@ -4637,6 +5181,8 @@ def selling_site_image_payload(row: dict[str, str], matched_tokens: list[str]) -
         "media_id": "",
         "matched_tokens": matched_tokens,
         "match_basis": "selling_site_match",
+        "listing_url": clean(row.get("listing_url")),
+        "image_url": clean(row.get("image_url")),
     }
 
 
@@ -5106,6 +5652,12 @@ def attach_inventory_images(
             source_table=source_table,
             source_ref=source_ref,
         )
+        image_links = link_payloads(updated["image"].get("listing_url", ""), updated["image"].get("image_url", ""))
+        if image_links:
+            existing_urls = {clean(link.get("url")) for link in updated.get("links", []) if isinstance(link, dict)}
+            updated["links"] = list(updated.get("links", [])) + [
+                link for link in image_links if clean(link.get("url")) not in existing_urls
+            ]
         output.append(updated)
     return output
 
@@ -5133,6 +5685,7 @@ def workstream_part_row_payload(row: dict[str, str]) -> dict[str, Any]:
         "source_ref": clean(row.get("entry_id")),
         "evidence_ref": clean(row.get("evidence_ref")),
         "notes": clean(row.get("notes")),
+        "links": link_payloads(row_text_values(row)),
     }
 
 
@@ -5155,10 +5708,13 @@ def build_dashboard_data() -> dict[str, Any]:
     selling_site_manifest_rows = load_csv_optional(SELLING_SITE_MANIFEST_PATH)
     whatsapp_j40_chat_rows = load_csv_optional(WHATSAPP_J40_CHAT_CANDIDATES_PATH)
     whatsapp_j40_media_rows = load_csv_optional(WHATSAPP_J40_MEDIA_INDEX_PATH)
+    whatsapp_j40_chat_rows = [row for row in whatsapp_j40_chat_rows if not is_hidden_whatsapp_chat(row)]
+    whatsapp_j40_media_rows = [row for row in whatsapp_j40_media_rows if not is_hidden_whatsapp_chat(row)]
     inventory_image_overrides = load_inventory_image_overrides(INVENTORY_IMAGE_OVERRIDES_PATH)
     expense_rows = load_csv(EXPENSES_PATH)
     buy_now_rows = load_csv(BUY_NOW_PATH)
     supplies_inventory = build_supplies_inventory(expense_rows)
+    workbook_source_links = build_workbook_source_links()
     electrical_spec_layout = load_electrical_spec_layout()
     electrical_spec_layout_by_workstream: dict[str, dict[str, Any]] = {}
     if electrical_spec_layout:
@@ -5538,6 +6094,7 @@ def build_dashboard_data() -> dict[str, Any]:
                 "supply_type": "part",
                 "evidence_ref": clean(row.get("evidence_ref")) or clean(expense_by_entry_id.get(clean(row.get("entry_id")), {}).get("evidence_ref")),
                 "notes": clean(expense_by_entry_id.get(clean(row.get("entry_id")), {}).get("notes")),
+                "links": link_payloads(row_text_values(row), row_text_values(expense_by_entry_id.get(clean(row.get("entry_id")), {}))),
             }
             for row in buy_now_rows
             if clean(row.get("priority")) == "P0" or clean(row.get("next_action")) in {"order_from_selected_quote", "track_delivery"}
@@ -5567,6 +6124,7 @@ def build_dashboard_data() -> dict[str, Any]:
                 "supply_type": "part",
                 "evidence_ref": clean(row.get("evidence_ref")),
                 "notes": clean(row.get("notes")),
+                "links": link_payloads(row_text_values(row)),
             }
             for row in open_part_rows
         ],
@@ -5596,6 +6154,7 @@ def build_dashboard_data() -> dict[str, Any]:
                 "supply_type": "part",
                 "evidence_ref": clean(row.get("evidence_ref")),
                 "notes": clean(row.get("notes")),
+                "links": link_payloads(row_text_values(row)),
             }
             for row in ordered_pending_rows
         ],
@@ -5663,6 +6222,7 @@ def build_dashboard_data() -> dict[str, Any]:
             }
         )
     procurement_evidence_images = build_procurement_evidence_images(photo_rows)
+    other_builds_reference = build_other_builds_reference(photo_rows)
 
     whatsapp_selected_chats = [
         row
@@ -5716,9 +6276,16 @@ def build_dashboard_data() -> dict[str, Any]:
             "parts_buy_now_this_week": "data/manual/parts_buy_now_this_week.csv",
             "workbook_electrical_master": "data/manual/workbook_tabs/electrical_master.csv",
             "workbook_electrical_templates": "data/manual/workbook_tabs/electrical_templates.csv",
+            "workbook_rubbers_exact_online": "data/manual/workbook_tabs/rubbers_exact_online.csv",
+            "workbook_rubbers_kit_buy": "data/manual/workbook_tabs/rubbers_kit_buy.csv",
+            "workbook_rubbers_all_replace_links": "data/manual/workbook_tabs/rubbers_all_replace_links.csv",
+            "workbook_pk_quality_path": "data/manual/workbook_tabs/pk_quality_path.csv",
+            "workbook_pk_buy_clean_direct": "data/manual/workbook_tabs/pk_buy_clean_direct.csv",
             "selling_site_manifest": "deliverables/selling_site_images/manifest.csv",
             "whatsapp_j40_chat_candidates": "data/manual/whatsapp_j40_chat_candidates.csv",
             "whatsapp_j40_media_index": "data/processed/generated/mcp_whatsapp_j40_media_index.csv",
+            "other_build_reference_media": "data/manual/other_build_reference_media.csv",
+            "other_j40_builds_drop_zone": "data/reference/other_j40_builds",
         },
         "summary": {
             "workstreams_in_scope": len(workstreams),
@@ -5733,6 +6300,9 @@ def build_dashboard_data() -> dict[str, Any]:
             "whatsapp_j40_media_items": len(whatsapp_j40_media_rows),
             "whatsapp_j40_media_images": whatsapp_media_counts_by_type.get("photo", 0),
             "whatsapp_j40_media_videos": whatsapp_media_counts_by_type.get("video", 0),
+            "other_build_reference_images": other_builds_reference["summary"]["total_images"],
+            "other_build_drop_zone_images": other_builds_reference["summary"]["drop_zone_images"],
+            "other_build_manual_reference_images": other_builds_reference["summary"]["manual_reference_images"],
         },
         "workstreams": workstreams,
         "project_steps": project_steps,
@@ -5749,8 +6319,10 @@ def build_dashboard_data() -> dict[str, Any]:
             "open_rows": open_rows_for_table,
             "open_counts_by_workstream": parts_workstream_cards,
             "procurement_evidence_images": procurement_evidence_images,
+            "workbook_source_links": workbook_source_links,
         },
         "supplies": supplies_inventory,
+        "other_builds": other_builds_reference,
         "whatsapp_j40": {
             "selected_chats": sorted(
                 [

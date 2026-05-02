@@ -161,7 +161,7 @@ def stage_static_ui(output_dir: Path) -> None:
     index_path = target_ui_dir / "index.html"
     index_html = index_path.read_text(encoding="utf-8")
     index_html = index_html.replace(
-        '    <p>Sources: <code>data/manual/workstream_status.csv</code>, <code>data/manual/reassembly_work_packages.csv</code>, <code>data/manual/expenses.csv</code>, <code>data/manual/photo_inventory.csv</code></p>',
+        '    <p>Sources: <code>data/manual/workstream_status.csv</code>, <code>data/manual/reassembly_work_packages.csv</code>, <code>data/manual/expenses.csv</code>, <code>data/manual/photo_inventory.csv</code>, <code>data/manual/other_build_reference_media.csv</code>, <code>data/reference/other_j40_builds/</code></p>',
         "    <p>Published dashboard snapshot.</p>",
     )
     index_path.write_text(index_html, encoding="utf-8")

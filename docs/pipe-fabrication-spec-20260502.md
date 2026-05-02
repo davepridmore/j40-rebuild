@@ -42,25 +42,29 @@ Visible photo basis:
 - Formed metal tube with two hose-connected ends and at least one tight bend/offset.
 - Rubber hose overlap at both ends retained by worm-drive clamps.
 - Working visible envelope from tape references: roughly `400` vertical height and `250-300` upper offset. Treat these as planning values only.
+- Orderable tube blank length: `750 mm` minimum before bending and trimming.
+- Final pipe centerline length: measure from the physical sample after marking the bend centerlines; do not use the `750 mm` blank allowance as the finished length.
 - Clamp lands must be straight, round, smooth, and long enough for hose overlap plus clamp width.
 
 Fabrication requirement:
 
-1. Use the original pipe as the master template.
-2. Measure tube OD and matching hose ID with calipers.
-3. Measure wall thickness and confirm whether the old part is mild steel, plated steel, aluminium, or stainless.
-4. Mark bend centerlines, bend radii, end clocking, and any offset from the physical sample.
-5. Mandrel-bend matching tube where possible.
-6. If cut/weld fabrication is required, keep the internal bore smooth and free of weld intrusion.
-7. Add rolled or beaded hose-retention ends to both hose connections.
-8. Deburr, clean internally, and pressure-test before paint/coating.
-9. Dry-fit on the vehicle before final coating.
+1. Start with a `750 mm` minimum tube blank.
+2. Use the original pipe as the master template.
+3. Measure the final centerline length from the physical sample.
+4. Measure tube OD and matching hose ID with calipers.
+5. Measure wall thickness and confirm whether the old part is mild steel, plated steel, aluminium, or stainless.
+6. Mark bend centerlines, bend radii, end clocking, and any offset from the physical sample.
+7. Mandrel-bend matching tube where possible.
+8. If cut/weld fabrication is required, keep the internal bore smooth and free of weld intrusion.
+9. Add rolled or beaded hose-retention ends to both hose connections.
+10. Deburr, clean internally, and pressure-test before paint/coating.
+11. Dry-fit on the vehicle before final coating.
 
 ## Material Standard
 
 Preferred material: mild steel/aluminized steel or 304 stainless tube compatible with engine coolant.
 
-Wall target: `1.2-1.6`, after fabricator confirmation.
+Wall target: `1.2-1.6 mm`, after fabricator confirmation.
 
 Finish:
 
@@ -75,6 +79,7 @@ Finish:
 | --- | --- |
 | Tube OD to hose fit | confirmed OD, `+0.0/-0.5` |
 | Centerline length | `+/-2.0` |
+| Tube blank length | `750 mm` minimum before trimming |
 | Bend clocking | `+/-2 deg` |
 | Bead height | `1.5-2.0` unless old sample proves otherwise |
 | Clamp land straightness | hose must seat fully with no rocking or ovality |
@@ -84,6 +89,7 @@ Finish:
 | Hold | Why | Must Be Confirmed With |
 | --- | --- | --- |
 | Pipe OD and hose ID | Controls hose sealing and clamp load | Calipers on old pipe and matched hose |
+| Final pipe centerline length | Controls stock cut length before bending and trimming | Tape along physical pipe centerline |
 | Wall thickness | Controls strength and bendability | Calipers or tube gauge |
 | Bend centerlines/radii/clocking | Controls engine/radiator fit and hose angle | Physical pipe template and vehicle dry-fit |
 | End bead/flare geometry | Prevents hose blow-off under pressure | Old pipe end or new bead sample |
@@ -95,4 +101,4 @@ Finish:
 
 Send the six selected photos, the old pipe, and this instruction:
 
-> Recreate this pipe from the physical sample. Match OD, bends, end beads, hose clamp lands, and clocking. Use coolant-compatible tube, smooth internal transitions, and pressure-test before coating. Do not rely on photo dimensions where calipers or vehicle dry-fit can be used.
+> Recreate this pipe from the physical sample. Start with a 750 mm minimum tube blank, then measure and trim to the physical sample's final centerline length. Match OD, bends, end beads, hose clamp lands, and clocking. Use coolant-compatible tube, smooth internal transitions, and pressure-test before coating. Do not rely on photo dimensions where calipers or vehicle dry-fit can be used.

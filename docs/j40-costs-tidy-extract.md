@@ -1,6 +1,6 @@
 # J40 Costs Workbook Tidy Extract
 
-- Generated: 2026-05-01 01:39:48
+- Generated: 2026-05-02 06:35:27
 - Workbook: `/Users/davidpridmore/Documents/J40_Costs.xlsx`
 - Output: `data/manual/j40_costs_cost_tabs_tidy.csv`
 - Total extracted rows: 280
