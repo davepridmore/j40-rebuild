@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-02T15:10:55+05:00",
+  "generated_at": "2026-05-02T15:17:56+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -37,7 +37,7 @@ window.J40_DASHBOARD_DATA = {
     "parts_open_rows": 41,
     "parts_ordered_pending_delivery": 10,
     "urgent_part_actions": 12,
-    "supply_rows_tracked": 228,
+    "supply_rows_tracked": 225,
     "selling_site_images_loaded": 85,
     "whatsapp_j40_selected_chats": 7,
     "whatsapp_j40_media_items": 165,
@@ -3117,9 +3117,9 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_primer",
-              "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-              "two-pack",
               "zinc-rich",
+              "two-pack",
+              "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
               "556870547",
               "build",
               "zinc",
@@ -20639,9 +20639,9 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_daraz_jubilee_hose_clip_assortment_30pc",
-              "3011629985",
               "645582306",
               "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
+              "3011629985",
               "jubilee",
               "hose",
               "clip",
@@ -29212,9 +29212,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_primer",
-            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-            "two-pack",
             "zinc-rich",
+            "two-pack",
+            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
             "556870547",
             "build",
             "zinc",
@@ -29436,9 +29436,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_daraz_jubilee_hose_clip_assortment_30pc",
-            "3011629985",
             "645582306",
             "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
+            "3011629985",
             "jubilee",
             "hose",
             "clip",
@@ -29695,9 +29695,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_primer",
-            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-            "two-pack",
             "zinc-rich",
+            "two-pack",
+            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
             "556870547",
             "build",
             "zinc",
@@ -29857,9 +29857,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_daraz_jubilee_hose_clip_assortment_30pc",
-            "3011629985",
             "645582306",
             "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
+            "3011629985",
             "jubilee",
             "hose",
             "clip",
@@ -30114,9 +30114,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_primer",
-            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-            "two-pack",
             "zinc-rich",
+            "two-pack",
+            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
             "556870547",
             "build",
             "zinc",
@@ -30936,9 +30936,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_daraz_jubilee_hose_clip_assortment_30pc",
-            "3011629985",
             "645582306",
             "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
+            "3011629985",
             "jubilee",
             "hose",
             "clip",
@@ -33978,10 +33978,10 @@ window.J40_DASHBOARD_DATA = {
     "summary_by_type": [
       {
         "supply_type": "tool",
-        "previously": 36,
-        "in_process": 23,
-        "still_required": 8,
-        "total": 67
+        "previously": 38,
+        "in_process": 21,
+        "still_required": 5,
+        "total": 64
       },
       {
         "supply_type": "substance",
@@ -37328,42 +37328,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_tools",
-          "source_ref": "workbook_tools#row_55",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "22mm chassis punch or precision hole cutter",
-          "vendor": "Local hardware/tools market",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "previously",
-          "status_detail": "received",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "Y",
-          "evidence_ref": "",
-          "notes": "On hand per user_update_2026-05-02_dashboard_switch_lcd_update; use for cleaner 22mm switch holes after layout and pilot verification.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/hole_cutter.jpg",
-            "caption": "22mm chassis punch or precision hole cutter \u00b7 hole cutter reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "hole_cutter",
-            "matched_tokens": [
-              "hole",
-              "cutter"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "workbook_tools",
           "source_ref": "workbook_tools#row_54",
           "supply_type": "tool",
           "inventory_group": "tools",
@@ -38427,6 +38391,41 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "tool_electrical_test_kit",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Electrical test kit",
+          "vendor": "AliExpress",
+          "amount": "8811",
+          "currency": "PKR",
+          "workstream": "electrical_reset",
+          "status_group": "previously",
+          "status_detail": "received",
+          "procurement_stage": "received",
+          "payment_status": "paid",
+          "delivery_status": "received",
+          "evidence_ref": "user_seed|akber_khan-00489|akber_khan-00638|gmail_msg_19d146a9c4d6e8c9|gmail_msg_19d7678e0f8b0da0|gmail_msg_19d7b9f19fa4f39f|gmail_order_3070231697877489|photo_20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489.jpg|user_update_2026-05-02_electrical_test_kit_received",
+          "notes": "AliExpress order 3070231697877489 was ordered and arrived; prior 2026-04-27 uncertainty closed from Gmail/order evidence plus user confirmation on 2026-05-02.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489.jpg",
+            "caption": "Electrical test kit - AliExpress order evidence image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "tool_electrical_test_kit"
+            ],
+            "match_basis": "exact_order_evidence",
+            "match_score": 999
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "tool_cover",
           "supply_type": "tool",
           "inventory_group": "tools",
@@ -38565,6 +38564,112 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_total_bi_metal_hole_saw_22mm_tac410221",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Total Bi-metal Hole saw 22mm TAC410221",
+          "vendor": "Toolsmart.pk",
+          "amount": "2040",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "previously",
+          "status_detail": "received",
+          "procurement_stage": "received",
+          "payment_status": "paid",
+          "delivery_status": "received",
+          "evidence_ref": "gmail_msg_19dcb2f888abafa3|gmail_order_TM25430|shopify_order_50e287a9a7fd20d219a1e7572eb18e62|user_update_2026-05-02_toolsmart_tm25430_received",
+          "notes": "Toolsmart order #TM25430 confirmed 2026-04-27 local time from Shopify order link 50e287a9a7fd20d219a1e7572eb18e62; quantity 2 line total PKR 2040 plus shared order shipping. User confirmed received on 2026-05-02.",
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/total-bi-metal-hole-saw-tac410221",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/products/TAC410221.jpg?v=1620922078",
+              "label": "toolsmart.pk"
+            }
+          ],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/expenses_total_bi_metal_hole_saw_22mm_tac410221_efb1b5c2fa22.webp",
+            "caption": "Total Bi-metal Hole saw 22mm TAC410221 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "tool_total_bi_metal_hole_saw_22mm_tac410221",
+              "total",
+              "metal",
+              "hole",
+              "saw",
+              "22mm",
+              "tac410221",
+              "toolsmart"
+            ],
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/total-bi-metal-hole-saw-tac410221",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/products/TAC410221.jpg?v=1620922078",
+            "match_score": 233
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_total_round_steel_file_200mm_tht91386",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Total Round steel file 200mm THT91386",
+          "vendor": "Toolsmart.pk",
+          "amount": "2000",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "previously",
+          "status_detail": "received",
+          "procurement_stage": "received",
+          "payment_status": "paid",
+          "delivery_status": "received",
+          "evidence_ref": "gmail_msg_19dcb2f888abafa3|gmail_order_TM25430|shopify_order_50e287a9a7fd20d219a1e7572eb18e62|user_update_2026-05-02_toolsmart_tm25430_received",
+          "notes": "Toolsmart order #TM25430 confirmed 2026-04-27 local time from Shopify order link 50e287a9a7fd20d219a1e7572eb18e62; quantity 2 line total PKR 2000 plus shared order shipping. User confirmed received on 2026-05-02.",
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/total-round-steel-file-tht91386",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/products/THT91386.jpg?v=1621065864",
+              "label": "toolsmart.pk"
+            }
+          ],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/expenses_total_round_steel_file_200mm_tht91386_a8a9d7fbabe7.webp",
+            "caption": "Total Round steel file 200mm THT91386 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "tool_total_round_steel_file_200mm_tht91386",
+              "total",
+              "round",
+              "steel",
+              "file",
+              "200mm",
+              "tht91386",
+              "toolsmart"
+            ],
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/total-round-steel-file-tht91386",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/products/THT91386.jpg?v=1621065864",
+            "match_score": 233
           }
         }
       ],
@@ -38791,9 +38896,9 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_daraz_jubilee_hose_clip_assortment_30pc",
-              "3011629985",
               "645582306",
               "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
+              "3011629985",
               "jubilee",
               "hose",
               "clip",
@@ -39021,9 +39126,9 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_primer",
-              "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-              "two-pack",
               "zinc-rich",
+              "two-pack",
+              "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
               "556870547",
               "build",
               "zinc",
@@ -39497,9 +39602,9 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "tool_daraz_mini_wire_brush_set_x2",
-              "1385484991",
-              "https://www.daraz.pk/products/i192752152-s1385484991.html?urlflag=true&mp=1",
               "192752152",
+              "https://www.daraz.pk/products/i192752152-s1385484991.html?urlflag=true&mp=1",
+              "1385484991",
               "mini",
               "wire",
               "brush",
@@ -39888,9 +39993,9 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "tool_daraz_safety_goggles_cleanup",
-              "https://www.daraz.pk/products/i649346371-s3029400460.html?urlflag=true&mp=1",
               "3029400460",
               "649346371",
+              "https://www.daraz.pk/products/i649346371-s3029400460.html?urlflag=true&mp=1",
               "safety",
               "goggles",
               "protective",
@@ -39900,59 +40005,6 @@ window.J40_DASHBOARD_DATA = {
             "listing_url": "https://www.daraz.pk/products/i649346371-s3029400460.html?urlFlag=true&mp=1",
             "image_url": "https://static-01.daraz.pk/p/6988bc488aa6f8214912cc5a51ec3f92.png",
             "match_score": 291
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "tool_total_bi_metal_hole_saw_22mm_tac410221",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "Total Bi-metal Hole saw 22mm TAC410221",
-          "vendor": "Toolsmart.pk",
-          "amount": "2040",
-          "currency": "PKR",
-          "workstream": "site_setup",
-          "status_group": "in_process",
-          "status_detail": "ordered",
-          "procurement_stage": "ordered_pending_delivery",
-          "payment_status": "paid",
-          "delivery_status": "pending_delivery",
-          "evidence_ref": "gmail_msg_19dcb2f888abafa3|gmail_order_TM25430|shopify_order_50e287a9a7fd20d219a1e7572eb18e62",
-          "notes": "Toolsmart order #TM25430 confirmed 2026-04-27 local time from Shopify order link 50e287a9a7fd20d219a1e7572eb18e62; quantity 2 line total PKR 2040 plus shared order shipping.",
-          "links": [
-            {
-              "url": "https://www.toolsmart.pk/products/total-bi-metal-hole-saw-tac410221",
-              "label": "toolsmart.pk"
-            },
-            {
-              "url": "http://www.toolsmart.pk/cdn/shop/products/TAC410221.jpg?v=1620922078",
-              "label": "toolsmart.pk"
-            }
-          ],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/expenses_total_bi_metal_hole_saw_22mm_tac410221_efb1b5c2fa22.webp",
-            "caption": "Total Bi-metal Hole saw 22mm TAC410221 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "tool_total_bi_metal_hole_saw_22mm_tac410221",
-              "total",
-              "metal",
-              "hole",
-              "saw",
-              "22mm",
-              "tac410221",
-              "toolsmart"
-            ],
-            "match_basis": "selling_site_match",
-            "listing_url": "https://www.toolsmart.pk/products/total-bi-metal-hole-saw-tac410221",
-            "image_url": "http://www.toolsmart.pk/cdn/shop/products/TAC410221.jpg?v=1620922078",
-            "match_score": 233
           }
         },
         {
@@ -40006,59 +40058,6 @@ window.J40_DASHBOARD_DATA = {
             "listing_url": "https://www.toolsmart.pk/products/total-jack-stand-3ton-thjs0301",
             "image_url": "http://www.toolsmart.pk/cdn/shop/files/THJS0301-2.jpg?v=1693506770",
             "match_score": 236
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "tool_total_round_steel_file_200mm_tht91386",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "Total Round steel file 200mm THT91386",
-          "vendor": "Toolsmart.pk",
-          "amount": "2000",
-          "currency": "PKR",
-          "workstream": "site_setup",
-          "status_group": "in_process",
-          "status_detail": "ordered",
-          "procurement_stage": "ordered_pending_delivery",
-          "payment_status": "paid",
-          "delivery_status": "pending_delivery",
-          "evidence_ref": "gmail_msg_19dcb2f888abafa3|gmail_order_TM25430|shopify_order_50e287a9a7fd20d219a1e7572eb18e62",
-          "notes": "Toolsmart order #TM25430 confirmed 2026-04-27 local time from Shopify order link 50e287a9a7fd20d219a1e7572eb18e62; quantity 2 line total PKR 2000 plus shared order shipping.",
-          "links": [
-            {
-              "url": "https://www.toolsmart.pk/products/total-round-steel-file-tht91386",
-              "label": "toolsmart.pk"
-            },
-            {
-              "url": "http://www.toolsmart.pk/cdn/shop/products/THT91386.jpg?v=1621065864",
-              "label": "toolsmart.pk"
-            }
-          ],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/expenses_total_round_steel_file_200mm_tht91386_a8a9d7fbabe7.webp",
-            "caption": "Total Round steel file 200mm THT91386 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "selling_site_listing_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "tool_total_round_steel_file_200mm_tht91386",
-              "total",
-              "round",
-              "steel",
-              "file",
-              "200mm",
-              "tht91386",
-              "toolsmart"
-            ],
-            "match_basis": "selling_site_match",
-            "listing_url": "https://www.toolsmart.pk/products/total-round-steel-file-tht91386",
-            "image_url": "http://www.toolsmart.pk/cdn/shop/products/THT91386.jpg?v=1621065864",
-            "match_score": 233
           }
         },
         {
@@ -42263,42 +42262,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_tools",
-          "source_ref": "workbook_tools#row_56",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "Deburring tool / round file set for panel holes",
-          "vendor": "Local hardware/tools market",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "No",
-          "evidence_ref": "",
-          "notes": "Required for clean switch fit and paint-edge protection.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/switch_panel.jpg",
-            "caption": "Deburring tool / round file set for panel holes \u00b7 switch panel reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "switch_panel",
-            "matched_tokens": [
-              "switch",
-              "panel"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "workbook_tools",
           "source_ref": "workbook_tools#row_57",
           "supply_type": "tool",
           "inventory_group": "tools",
@@ -42330,41 +42293,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
-          }
-        },
-        {
-          "source": "workbook_tools",
-          "source_ref": "workbook_tools#row_22",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "Electric Clamp Meter Multimeter Tester Pen Kit ANENG ST170+B15 600V AC/DC Voltage with 24V-250V AC Voltage Tester Home DIY Tools",
-          "vendor": "AliExpress",
-          "amount": "8811",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "No",
-          "delivery_status": "No",
-          "evidence_ref": "",
-          "notes": "No confirmed order evidence yet; keep as not ordered until proof appears.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/workbook_tools_row_22_aneng_st170.jpg",
-            "caption": "ANENG ST170+B15 clamp meter kit \u00b7 reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "row_22"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
           }
         },
         {
@@ -42435,41 +42363,6 @@ window.J40_DASHBOARD_DATA = {
               "row_24"
             ],
             "match_basis": "manual_override",
-            "match_score": 999
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "tool_electrical_test_kit",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "Electrical test kit",
-          "vendor": "AliExpress",
-          "amount": "8811",
-          "currency": "PKR",
-          "workstream": "electrical_reset",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "next_phase_purchase",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_seed|akber_khan-00489|akber_khan-00638|gmail_msg_19d146a9c4d6e8c9|gmail_msg_19d7678e0f8b0da0|gmail_msg_19d7b9f19fa4f39f|gmail_order_3070231697877489|photo_20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489.jpg",
-          "notes": "User update 2026-04-27: no reliable order evidence for ANENG ST170 test kit; keep as unconfirmed/not ordered until explicit proof is found.",
-          "links": [],
-          "image": {
-            "path": "../../photos/20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489.jpg",
-            "caption": "Electrical test kit - AliExpress order evidence image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "tool_electrical_test_kit"
-            ],
-            "match_basis": "exact_order_evidence",
             "match_score": 999
           }
         },
@@ -42706,9 +42599,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_daraz_jubilee_hose_clip_assortment_30pc",
-            "3011629985",
             "645582306",
             "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
+            "3011629985",
             "jubilee",
             "hose",
             "clip",
@@ -42970,9 +42863,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_primer",
-            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-            "two-pack",
             "zinc-rich",
+            "two-pack",
+            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
             "556870547",
             "build",
             "zinc",
@@ -43058,9 +42951,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "tool_daraz_mini_wire_brush_set_x2",
-            "1385484991",
-            "https://www.daraz.pk/products/i192752152-s1385484991.html?urlflag=true&mp=1",
             "192752152",
+            "https://www.daraz.pk/products/i192752152-s1385484991.html?urlflag=true&mp=1",
+            "1385484991",
             "mini",
             "wire",
             "brush",
@@ -43626,9 +43519,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "tool_daraz_safety_goggles_cleanup",
-            "https://www.daraz.pk/products/i649346371-s3029400460.html?urlflag=true&mp=1",
             "3029400460",
             "649346371",
+            "https://www.daraz.pk/products/i649346371-s3029400460.html?urlflag=true&mp=1",
             "safety",
             "goggles",
             "protective",
@@ -43638,59 +43531,6 @@ window.J40_DASHBOARD_DATA = {
           "listing_url": "https://www.daraz.pk/products/i649346371-s3029400460.html?urlFlag=true&mp=1",
           "image_url": "https://static-01.daraz.pk/p/6988bc488aa6f8214912cc5a51ec3f92.png",
           "match_score": 291
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "tool_total_bi_metal_hole_saw_22mm_tac410221",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "Total Bi-metal Hole saw 22mm TAC410221",
-        "vendor": "Toolsmart.pk",
-        "amount": "2040",
-        "currency": "PKR",
-        "workstream": "site_setup",
-        "status_group": "in_process",
-        "status_detail": "ordered",
-        "procurement_stage": "ordered_pending_delivery",
-        "payment_status": "paid",
-        "delivery_status": "pending_delivery",
-        "evidence_ref": "gmail_msg_19dcb2f888abafa3|gmail_order_TM25430|shopify_order_50e287a9a7fd20d219a1e7572eb18e62",
-        "notes": "Toolsmart order #TM25430 confirmed 2026-04-27 local time from Shopify order link 50e287a9a7fd20d219a1e7572eb18e62; quantity 2 line total PKR 2040 plus shared order shipping.",
-        "links": [
-          {
-            "url": "https://www.toolsmart.pk/products/total-bi-metal-hole-saw-tac410221",
-            "label": "toolsmart.pk"
-          },
-          {
-            "url": "http://www.toolsmart.pk/cdn/shop/products/TAC410221.jpg?v=1620922078",
-            "label": "toolsmart.pk"
-          }
-        ],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/expenses_total_bi_metal_hole_saw_22mm_tac410221_efb1b5c2fa22.webp",
-          "caption": "Total Bi-metal Hole saw 22mm TAC410221 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "selling_site_listing_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "tool_total_bi_metal_hole_saw_22mm_tac410221",
-            "total",
-            "metal",
-            "hole",
-            "saw",
-            "22mm",
-            "tac410221",
-            "toolsmart"
-          ],
-          "match_basis": "selling_site_match",
-          "listing_url": "https://www.toolsmart.pk/products/total-bi-metal-hole-saw-tac410221",
-          "image_url": "http://www.toolsmart.pk/cdn/shop/products/TAC410221.jpg?v=1620922078",
-          "match_score": 233
         }
       },
       {
@@ -43797,59 +43637,6 @@ window.J40_DASHBOARD_DATA = {
           "listing_url": "https://www.toolsmart.pk/products/total-jack-stand-3ton-thjs0301",
           "image_url": "http://www.toolsmart.pk/cdn/shop/files/THJS0301-2.jpg?v=1693506770",
           "match_score": 236
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "tool_total_round_steel_file_200mm_tht91386",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "Total Round steel file 200mm THT91386",
-        "vendor": "Toolsmart.pk",
-        "amount": "2000",
-        "currency": "PKR",
-        "workstream": "site_setup",
-        "status_group": "in_process",
-        "status_detail": "ordered",
-        "procurement_stage": "ordered_pending_delivery",
-        "payment_status": "paid",
-        "delivery_status": "pending_delivery",
-        "evidence_ref": "gmail_msg_19dcb2f888abafa3|gmail_order_TM25430|shopify_order_50e287a9a7fd20d219a1e7572eb18e62",
-        "notes": "Toolsmart order #TM25430 confirmed 2026-04-27 local time from Shopify order link 50e287a9a7fd20d219a1e7572eb18e62; quantity 2 line total PKR 2000 plus shared order shipping.",
-        "links": [
-          {
-            "url": "https://www.toolsmart.pk/products/total-round-steel-file-tht91386",
-            "label": "toolsmart.pk"
-          },
-          {
-            "url": "http://www.toolsmart.pk/cdn/shop/products/THT91386.jpg?v=1621065864",
-            "label": "toolsmart.pk"
-          }
-        ],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/expenses_total_round_steel_file_200mm_tht91386_a8a9d7fbabe7.webp",
-          "caption": "Total Round steel file 200mm THT91386 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "selling_site_listing_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "tool_total_round_steel_file_200mm_tht91386",
-            "total",
-            "round",
-            "steel",
-            "file",
-            "200mm",
-            "tht91386",
-            "toolsmart"
-          ],
-          "match_basis": "selling_site_match",
-          "listing_url": "https://www.toolsmart.pk/products/total-round-steel-file-tht91386",
-          "image_url": "http://www.toolsmart.pk/cdn/shop/products/THT91386.jpg?v=1621065864",
-          "match_score": 233
         }
       },
       {
@@ -47493,42 +47280,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_tools",
-        "source_ref": "workbook_tools#row_55",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "22mm chassis punch or precision hole cutter",
-        "vendor": "Local hardware/tools market",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "previously",
-        "status_detail": "received",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "Y",
-        "evidence_ref": "",
-        "notes": "On hand per user_update_2026-05-02_dashboard_switch_lcd_update; use for cleaner 22mm switch holes after layout and pilot verification.",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/hole_cutter.jpg",
-          "caption": "22mm chassis punch or precision hole cutter \u00b7 hole cutter reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "hole_cutter",
-          "matched_tokens": [
-            "hole",
-            "cutter"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "workbook_tools",
         "source_ref": "workbook_tools#row_54",
         "supply_type": "tool",
         "inventory_group": "tools",
@@ -47880,6 +47631,41 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_electrical_test_kit",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Electrical test kit",
+        "vendor": "AliExpress",
+        "amount": "8811",
+        "currency": "PKR",
+        "workstream": "electrical_reset",
+        "status_group": "previously",
+        "status_detail": "received",
+        "procurement_stage": "received",
+        "payment_status": "paid",
+        "delivery_status": "received",
+        "evidence_ref": "user_seed|akber_khan-00489|akber_khan-00638|gmail_msg_19d146a9c4d6e8c9|gmail_msg_19d7678e0f8b0da0|gmail_msg_19d7b9f19fa4f39f|gmail_order_3070231697877489|photo_20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489.jpg|user_update_2026-05-02_electrical_test_kit_received",
+        "notes": "AliExpress order 3070231697877489 was ordered and arrived; prior 2026-04-27 uncertainty closed from Gmail/order evidence plus user confirmation on 2026-05-02.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489.jpg",
+          "caption": "Electrical test kit - AliExpress order evidence image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "tool_electrical_test_kit"
+          ],
+          "match_basis": "exact_order_evidence",
+          "match_score": 999
         }
       },
       {
@@ -48695,6 +48481,112 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_total_bi_metal_hole_saw_22mm_tac410221",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Total Bi-metal Hole saw 22mm TAC410221",
+        "vendor": "Toolsmart.pk",
+        "amount": "2040",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "previously",
+        "status_detail": "received",
+        "procurement_stage": "received",
+        "payment_status": "paid",
+        "delivery_status": "received",
+        "evidence_ref": "gmail_msg_19dcb2f888abafa3|gmail_order_TM25430|shopify_order_50e287a9a7fd20d219a1e7572eb18e62|user_update_2026-05-02_toolsmart_tm25430_received",
+        "notes": "Toolsmart order #TM25430 confirmed 2026-04-27 local time from Shopify order link 50e287a9a7fd20d219a1e7572eb18e62; quantity 2 line total PKR 2040 plus shared order shipping. User confirmed received on 2026-05-02.",
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/total-bi-metal-hole-saw-tac410221",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/products/TAC410221.jpg?v=1620922078",
+            "label": "toolsmart.pk"
+          }
+        ],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/expenses_total_bi_metal_hole_saw_22mm_tac410221_efb1b5c2fa22.webp",
+          "caption": "Total Bi-metal Hole saw 22mm TAC410221 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "tool_total_bi_metal_hole_saw_22mm_tac410221",
+            "total",
+            "metal",
+            "hole",
+            "saw",
+            "22mm",
+            "tac410221",
+            "toolsmart"
+          ],
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/total-bi-metal-hole-saw-tac410221",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/products/TAC410221.jpg?v=1620922078",
+          "match_score": 233
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_total_round_steel_file_200mm_tht91386",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Total Round steel file 200mm THT91386",
+        "vendor": "Toolsmart.pk",
+        "amount": "2000",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "previously",
+        "status_detail": "received",
+        "procurement_stage": "received",
+        "payment_status": "paid",
+        "delivery_status": "received",
+        "evidence_ref": "gmail_msg_19dcb2f888abafa3|gmail_order_TM25430|shopify_order_50e287a9a7fd20d219a1e7572eb18e62|user_update_2026-05-02_toolsmart_tm25430_received",
+        "notes": "Toolsmart order #TM25430 confirmed 2026-04-27 local time from Shopify order link 50e287a9a7fd20d219a1e7572eb18e62; quantity 2 line total PKR 2000 plus shared order shipping. User confirmed received on 2026-05-02.",
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/total-round-steel-file-tht91386",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/products/THT91386.jpg?v=1621065864",
+            "label": "toolsmart.pk"
+          }
+        ],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/expenses_total_round_steel_file_200mm_tht91386_a8a9d7fbabe7.webp",
+          "caption": "Total Round steel file 200mm THT91386 \u00b7 Toolsmart.pk \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "tool_total_round_steel_file_200mm_tht91386",
+            "total",
+            "round",
+            "steel",
+            "file",
+            "200mm",
+            "tht91386",
+            "toolsmart"
+          ],
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/total-round-steel-file-tht91386",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/products/THT91386.jpg?v=1621065864",
+          "match_score": 233
         }
       },
       {
@@ -50812,42 +50704,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_tools",
-        "source_ref": "workbook_tools#row_56",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "Deburring tool / round file set for panel holes",
-        "vendor": "Local hardware/tools market",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "No",
-        "evidence_ref": "",
-        "notes": "Required for clean switch fit and paint-edge protection.",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/switch_panel.jpg",
-          "caption": "Deburring tool / round file set for panel holes \u00b7 switch panel reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "switch_panel",
-          "matched_tokens": [
-            "switch",
-            "panel"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "workbook_tools",
         "source_ref": "workbook_tools#row_57",
         "supply_type": "tool",
         "inventory_group": "tools",
@@ -50879,76 +50735,6 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
-        }
-      },
-      {
-        "source": "workbook_tools",
-        "source_ref": "workbook_tools#row_22",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "Electric Clamp Meter Multimeter Tester Pen Kit ANENG ST170+B15 600V AC/DC Voltage with 24V-250V AC Voltage Tester Home DIY Tools",
-        "vendor": "AliExpress",
-        "amount": "8811",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "No",
-        "delivery_status": "No",
-        "evidence_ref": "",
-        "notes": "No confirmed order evidence yet; keep as not ordered until proof appears.",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/workbook_tools_row_22_aneng_st170.jpg",
-          "caption": "ANENG ST170+B15 clamp meter kit \u00b7 reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "row_22"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "tool_electrical_test_kit",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "Electrical test kit",
-        "vendor": "AliExpress",
-        "amount": "8811",
-        "currency": "PKR",
-        "workstream": "electrical_reset",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "next_phase_purchase",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_seed|akber_khan-00489|akber_khan-00638|gmail_msg_19d146a9c4d6e8c9|gmail_msg_19d7678e0f8b0da0|gmail_msg_19d7b9f19fa4f39f|gmail_order_3070231697877489|photo_20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489.jpg",
-        "notes": "User update 2026-04-27: no reliable order evidence for ANENG ST170 test kit; keep as unconfirmed/not ordered until explicit proof is found.",
-        "links": [],
-        "image": {
-          "path": "../../photos/20260424_tool_electrical_test_kit_aliexpress_order_3070231697877489.jpg",
-          "caption": "Electrical test kit - AliExpress order evidence image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "tool_electrical_test_kit"
-          ],
-          "match_basis": "exact_order_evidence",
-          "match_score": 999
         }
       },
       {

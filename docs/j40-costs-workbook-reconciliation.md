@@ -1,6 +1,6 @@
 # J40 Costs Workbook Reconciliation
 
-- Generated: 2026-05-02 09:05:48
+- Generated: 2026-05-02 15:17:56
 - Workbook: `/Users/davidpridmore/Documents/J40_Costs.xlsx`
 - Extracted rows: 280
 - Line-item rows: 176
@@ -18,7 +18,8 @@
 - `matched_exact_item`: 22
 - `matched_exact_item_vendor`: 4
 - `matched_fuzzy`: 1
-- `no_match`: 148
+- `matched_semantic`: 3
+- `no_match`: 145
 - `not_applicable`: 105
 
 ## Priority Workbook Rows Still Unmatched
@@ -40,7 +41,6 @@
 - `Tools#17` Ingco Heat gun 2000w HG200078 (price=6770, vendor=ToolsMart.pk)
 - `Tools#18` Harden 12pcs Tap and Die Set 12pcs (price=7940, vendor=ToolsMart.pk)
 - `Tools#19` Ratchet crimping plier 9″ THCPL1506 | Company: Total | Origin: China (price=2600, vendor=totaltool.pk)
-- `Tools#22` Electric Clamp Meter Multimeter Tester Pen Kit ANENG ST170+B15 600V AC/DC Voltage with 24V-250V AC Voltage Tester Home DIY Tools (price=8811, vendor=AliExpress)
 - `Tools#23` YTH -803 AUTOMATIC WIRE STRIPPER & CRIPMER (price=1650, vendor=fiaz.com.pk)
 - `Tools#24` Side Cutter Bosi Black in Pakistan (price=650, vendor=fiaz.com.pk)
 - `Tools#25` Bosi Nose Plier 6'' Black A+ Quality in Pakistan (price=650, vendor=fiaz.com.pk)

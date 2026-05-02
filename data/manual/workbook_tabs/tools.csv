@@ -20,7 +20,7 @@ excel_row,col_1,col_2,col_3,col_4,col_5,col_6,col_7
 19,Ratchet crimping plier 9″ THCPL1506 | Company: Total | Origin: China,2600,totaltool.pk,Y,Y,planned_or_open,Open item with no procurement evidence yet.
 20,Labels,,,,,section_header,Label/group row.
 21,“1/2 inch 24 inch breaker bar — heavy duty”,,,Y,Y,section_header,Label/group row.
-22,Electric Clamp Meter Multimeter Tester Pen Kit ANENG ST170+B15 600V AC/DC Voltage with 24V-250V AC Voltage Tester Home DIY Tools,8811,AliExpress,No,No,not_procured,No confirmed order evidence yet; keep as not ordered until proof appears.
+22,Electric Clamp Meter Multimeter Tester Pen Kit ANENG ST170+B15 600V AC/DC Voltage with 24V-250V AC Voltage Tester Home DIY Tools,8811,AliExpress,Y,Y,procured_or_on_hand,AliExpress order 3070231697877489 was ordered and arrived; matched to active expense row tool_electrical_test_kit.
 23,YTH -803 AUTOMATIC WIRE STRIPPER & CRIPMER,1650,fiaz.com.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
 24,Side Cutter Bosi Black in Pakistan,650,fiaz.com.pk,No,No,not_procured,No clear order/receipt evidence and user reports not received.
 25,Bosi Nose Plier 6'' Black A+ Quality in Pakistan,650,fiaz.com.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
@@ -44,6 +44,6 @@ excel_row,col_1,col_2,col_3,col_4,col_5,col_6,col_7
 52,EDON Expert MIG 270 (15Kg) (Single Phase) BUILTIN WIRE FEEDER (GAS OR GASLESS),76500,toolshub,No,Y,ordered_in_flight,Paid for but not yet received.
 53,Drill chuck (compatible with existing drill spindle/arbor),,Local hardware/tools market,Y,,procured_or_on_hand,Acquired; user reports Aamir shared image evidence.
 54,22mm step drill bit (metal panel capable),,Local hardware/tools market,Y,,procured_or_on_hand,On hand per user_update_2026-05-02_dashboard_switch_lcd_update; primary tool to open existing pull-switch holes toward 22mm.
-55,22mm chassis punch or precision hole cutter,,Local hardware/tools market,Y,,procured_or_on_hand,On hand per user_update_2026-05-02_dashboard_switch_lcd_update; use for cleaner 22mm switch holes after layout and pilot verification.
-56,Deburring tool / round file set for panel holes,,Local hardware/tools market,No,,planned_or_open,Required for clean switch fit and paint-edge protection.
+55,22mm chassis punch or precision hole cutter,,Toolsmart.pk,Y,Y,procured_or_on_hand,Toolsmart TM25430 Total Bi-metal Hole saw 22mm TAC410221 arrived; use for cleaner 22mm switch holes after layout and pilot verification.
+56,Deburring tool / round file set for panel holes,,Toolsmart.pk,Y,Y,procured_or_on_hand,Toolsmart TM25430 Total Round steel file 200mm THT91386 arrived; use for deburring switch and panel holes.
 57,Digital caliper (hole/spacing verification),,Local hardware/tools market,No,,planned_or_open,Used to validate hole diameter and center spacing before cutting.

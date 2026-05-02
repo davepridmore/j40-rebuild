@@ -19,7 +19,7 @@ Tools,18,Harden 12pcs Tap and Die Set 12pcs,7940,ToolsMart.pk,Y,Y,line_item,no_m
 Tools,19,Ratchet crimping plier 9″ THCPL1506 | Company: Total | Origin: China,2600,totaltool.pk,Y,Y,line_item,no_match,,,,,,,,
 Tools,20,Labels,,,,,section_header,not_applicable,,,,,,,,
 Tools,21,“1/2 inch 24 inch breaker bar — heavy duty”,,,Y,Y,line_item,matched_exact_item,1.0,tool_breaker_bar,"1/2 inch 24 inch breaker bar, heavy duty",local,tools,00_site_setup,site_setup,next_phase_purchase
-Tools,22,Electric Clamp Meter Multimeter Tester Pen Kit ANENG ST170+B15 600V AC/DC Voltage with 24V-250V AC Voltage Tester Home DIY Tools,8811,AliExpress,No,No,line_item,no_match,,,,,,,,
+Tools,22,Electric Clamp Meter Multimeter Tester Pen Kit ANENG ST170+B15 600V AC/DC Voltage with 24V-250V AC Voltage Tester Home DIY Tools,8811,AliExpress,Y,Y,line_item,matched_semantic,0.95,tool_electrical_test_kit,Electrical test kit,AliExpress,tools,04_electrical_reset,electrical_reset,received
 Tools,23,YTH -803 AUTOMATIC WIRE STRIPPER & CRIPMER,1650,fiaz.com.pk,Y,Y,line_item,no_match,,,,,,,,
 Tools,24,Side Cutter Bosi Black in Pakistan,650,fiaz.com.pk,No,No,line_item,no_match,,,,,,,,
 Tools,25,Bosi Nose Plier 6'' Black A+ Quality in Pakistan,650,fiaz.com.pk,Y,Y,line_item,no_match,,,,,,,,
@@ -43,8 +43,8 @@ Tools,51,"German Imported WORKPRO Flap Discs 60 Grit, 125mm x 22.2mm, Angle Grin
 Tools,52,EDON Expert MIG 270 (15Kg) (Single Phase) BUILTIN WIRE FEEDER (GAS OR GASLESS),76500,toolshub,No,Y,line_item,no_match,,,,,,,,
 Tools,53,Drill chuck (compatible with existing drill spindle/arbor),,Local hardware/tools market,Y,,line_item,no_match,,,,,,,,
 Tools,54,22mm step drill bit (metal panel capable),,Local hardware/tools market,No,,line_item,no_match,,,,,,,,
-Tools,55,22mm chassis punch or precision hole cutter,,Local hardware/tools market,No,,line_item,no_match,,,,,,,,
-Tools,56,Deburring tool / round file set for panel holes,,Local hardware/tools market,No,,line_item,no_match,,,,,,,,
+Tools,55,22mm chassis punch or precision hole cutter,,Toolsmart.pk,Y,Y,line_item,matched_semantic,0.95,tool_total_bi_metal_hole_saw_22mm_tac410221,Total Bi-metal Hole saw 22mm TAC410221,Toolsmart.pk,tools,00_site_setup,site_setup,received
+Tools,56,Deburring tool / round file set for panel holes,,Toolsmart.pk,Y,Y,line_item,matched_semantic,0.95,tool_total_round_steel_file_200mm_tht91386,Total Round steel file 200mm THT91386,Toolsmart.pk,tools,00_site_setup,site_setup,received
 Tools,57,Digital caliper (hole/spacing verification),,Local hardware/tools market,No,,line_item,no_match,,,,,,,,
 Parts,2,Toyota Land Cruiser FJ40 Neoprene Top Cover - Model 1960-1984,11500,Autozcare,Y,Y,line_item,no_match,,,,,,,,
 Parts,3,Maximus Under Seat Subwoofer Box With Built in Amplifier - Compact Active Bass Woofer for Cars,25100,SehgalMotors.PK,,Cancelled?,line_item,no_match,,,,,,,,
