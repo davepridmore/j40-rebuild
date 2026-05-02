@@ -28,6 +28,7 @@ BODY_MOUNT_ORDER_RELEASE_SPECS_PATH = MANUAL_DIR / "body_mount_order_release_spe
 BODY_MOUNT_RELEASE_ACTIONS_PATH = MANUAL_DIR / "body_mount_release_actions.csv"
 BODY_MOUNT_STATION_CLOSURE_PATH = MANUAL_DIR / "body_mount_station_closure_sheet.csv"
 BRAKE_SYSTEM_REQUIREMENTS_PATH = MANUAL_DIR / "brake_system_requirements.csv"
+FABRICATION_HANDOFF_REQUIREMENTS_PATH = MANUAL_DIR / "fabrication_handoff_requirements.csv"
 EXPENSES_PATH = MANUAL_DIR / "expenses.csv"
 EXPENSES_RECONCILIATION_PATH = MANUAL_DIR / "j40_costs_expenses_reconciliation.csv"
 BUY_NOW_PATH = MANUAL_DIR / "parts_buy_now_this_week.csv"
@@ -67,8 +68,9 @@ PRIMARY_WORKSTREAM_IDS: tuple[str, ...] = (
     "paint_refinish",
     "chassis_fixing",
     "chassis_rubbers",
-    "interior_controls",
     "electrical_reset",
+    "fabrication_handoff",
+    "interior_controls",
     "mechanical_baseline",
     "replacement_pipes",
     "brake_system",
@@ -81,6 +83,7 @@ PRIMARY_WORKSTREAM_IDS: tuple[str, ...] = (
 WORKSTREAM_TITLE_OVERRIDES: dict[str, str] = {
     "brake_system": "Brakes",
     "chassis_rubbers": "Chassis Rubbers",
+    "fabrication_handoff": "Fabrication",
     "interior_controls": "Dashboard",
     "interior_weatherproofing": "Interior",
     "paint_refinish": "Paint",
@@ -138,6 +141,11 @@ WORKSTREAM_IMAGE_PROFILES: dict[str, dict[str, set[str]]] = {
             "distribution",
             "power",
         },
+    },
+    "fabrication_handoff": {
+        "component_groups": {"procurement_inventory"},
+        "stages": {"procurement_reconciliation"},
+        "keywords": {"fabrication", "rubber", "body_mount", "relay", "fuse", "midi", "wiring", "sample"},
     },
     "mechanical_baseline": {
         "component_groups": {"engine_bay", "chassis_underside"},
@@ -202,6 +210,7 @@ WORKSTREAM_MIN_IMAGE_SCORE: dict[str, int] = {
     "electrical_reset": 22,
     "chassis_fixing": 20,
     "chassis_rubbers": 18,
+    "fabrication_handoff": 24,
     "body_chassis": 18,
     "paint_refinish": 18,
     "mechanical_baseline": 18,
@@ -222,6 +231,7 @@ WORKSTREAM_MIN_KEYWORD_HITS: dict[str, int] = {
     "chassis_fixing": 2,
     "chassis_rubbers": 1,
     "electrical_reset": 1,
+    "fabrication_handoff": 1,
     "mechanical_baseline": 2,
     "replacement_pipes": 1,
     "brake_system": 2,
@@ -436,8 +446,15 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
     "electrical_reset": [
         ("Freeze baseline circuit scope", "Confirm exact baseline circuits before optional accessories are added."),
         ("Verify grounds and pass-throughs", "Clean earth points and confirm firewall passes are protected and grommeted."),
+        ("Fabricate fuse and relay mounts", "Use the controlled electrical DXF/PDF packages before permanent loom routing."),
         ("Run fuse/relay function checks", "Validate start, charge, lights, horn, and wiper baseline behavior."),
         ("Close loom routing and labeling", "Finalize harness protection, routing clamps, and identification labels."),
+    ],
+    "fabrication_handoff": [
+        ("Publish package links in the UI", "Keep the fabrication index, PDFs, DXFs, SVGs, cut lists, and inspection sheets visible from the dashboard."),
+        ("Send rubber recreation Rev A for quote/first article", "Use the rubber package but keep final production blocked by measurement closure."),
+        ("Send current electrical fabrication packages", "Track the three electrical requirements: electrical modules Rev A, MIDI plate Rev C, and relay mount Rev C."),
+        ("Close first-article inspection", "Accept parts only after dimensional, material, fit, and release-status checks are recorded."),
     ],
     "mechanical_baseline": [
         ("Execute must-replace service pack", "Complete fluids, filters, ignition and cooling consumables on stripped access."),
@@ -990,6 +1007,84 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "supplies": ["Split conduit or braided sleeve", "Loom tape", "P-clamps", "Labels", "Cable ties"],
                 "hold_point": "Final electrical closeout requires labelled, supported, and photographed routing.",
                 "image_tokens": ["loom", "wiring", "connector", "dashboard", "firewall"],
+            },
+        ],
+    },
+    "fabrication_handoff": {
+        "title": "Fabrication Handoff",
+        "summary": "Controlled send-out, quote, first-article, and release tracking for DXF/SVG/PDF fabrication packages.",
+        "default_tools": ["Calipers", "Printer or PDF viewer", "CAD/DXF viewer", "Marker", "Camera"],
+        "default_supplies": ["Fabrication handoff index", "Package PDFs", "DXF files", "SVG visual references", "Inspection checklist"],
+        "subtasks": [
+            {
+                "title": "Keep Package Index Current",
+                "priority": "P0",
+                "remaining": "before any shop send-out",
+                "instruction": "Use one controlled package list so suppliers do not receive superseded or partial drawing sets.",
+                "process_steps": [
+                    "Use docs/fabrication-handoff-index.md as the human send-out index.",
+                    "Use data/manual/fabrication_handoff_requirements.csv as the UI-facing package requirement list.",
+                    "Confirm every current package has a README, primary PDF, and all expected DXF/SVG files.",
+                    "Mark superseded packages as reference only instead of deleting them.",
+                    "Use the CloudFront dashboard links when sharing files externally.",
+                ],
+                "tools": ["Dashboard", "PDF viewer", "DXF viewer"],
+                "supplies": ["Fabrication handoff index", "Fabrication requirements CSV"],
+                "hold_point": "No supplier package is sent until the current package row and release status are visible in the Fabrication workstream.",
+                "image_tokens": ["fabrication", "drawing", "dxf", "package"],
+            },
+            {
+                "title": "Release Rubber Package For Quote",
+                "priority": "P0",
+                "remaining": "quote and first article",
+                "instruction": "Send the rubber Rev A package for quote and first article while keeping final production holds explicit.",
+                "process_steps": [
+                    "Send data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf for drawing review.",
+                    "Send all rubber Rev A DXFs and matching SVG visual references.",
+                    "Include fabricator_cut_list.csv and inspection_checklist.csv with the job.",
+                    "Tell the shop that circular cushions, cup blanks, and oval pad are quote/first-article ready.",
+                    "Tell the shop that strip files are quote/template blanks and need physical tracing before production cutting.",
+                    "Keep final batch blocked until data/manual/rubber_recreation_measurement_closure.csv is completed.",
+                ],
+                "tools": ["Calipers", "DXF viewer", "Camera"],
+                "supplies": ["Rubber Rev A PDF", "Rubber Rev A DXFs", "Fabricator cut list", "Inspection checklist"],
+                "hold_point": "Final rubber batch cannot be approved from photo-derived dimensions alone.",
+                "image_tokens": ["rubber", "body_mount", "fabrication", "dxf"],
+            },
+            {
+                "title": "Release Electrical Fabrication Packages",
+                "priority": "P0",
+                "remaining": "before permanent under-bonnet loom routing",
+                "instruction": "Track the three defined electrical fabrication requirements as separate package rows.",
+                "process_steps": [
+                    "Use data/manual/fabrication/electrical_modules_rev_a/ as the reference/provisional combined-module requirement.",
+                    "Use data/manual/fabrication/midi5_plate_mount_rev_c/ as the current MIDI holder plate requirement.",
+                    "Use data/manual/fabrication/relay_mount_rev_c/ as the current relay carrier and rear-guard requirement.",
+                    "Send each package PDF for review and its DXFs for cutting.",
+                    "Keep SVGs with the job for visual checking.",
+                    "Trial-fit electrical parts with spacers, cable exits, relay box, and MIDI holders before tying down the loom.",
+                ],
+                "tools": ["DXF viewer", "Drill", "Files", "Deburring tool", "Calipers"],
+                "supplies": ["Electrical module PDF/DXFs", "MIDI plate PDF/DXFs", "Relay mount PDF/DXFs", "Aluminium sheet", "Insulator sheet", "Spacers"],
+                "hold_point": "Final loom routing waits until relay and MIDI mounts fit without forcing cable bend radius or leaving live studs exposed.",
+                "image_tokens": ["relay", "fuse", "midi", "fabrication", "battery"],
+            },
+            {
+                "title": "Inspect First Articles",
+                "priority": "P1",
+                "remaining": "after supplier samples",
+                "instruction": "Accept fabricated parts by inspection and fit evidence, not by delivery alone.",
+                "process_steps": [
+                    "Check material and thickness against the package README.",
+                    "Measure critical dimensions against the package PDF.",
+                    "Deburr and corrosion-protect metal parts after forming where required.",
+                    "Dry-fit rubber stacks, relay mount, and MIDI mount before batch approval.",
+                    "Photograph accepted first articles and record any rework before batch manufacture.",
+                ],
+                "tools": ["Calipers", "Straight edge", "Camera", "Deburring tool"],
+                "supplies": ["Inspection checklist", "Primer or plating plan", "Fasteners", "Spacers"],
+                "hold_point": "Fabrication closes only after first articles pass dimensional, material, and fit checks.",
+                "image_tokens": ["fabrication", "inspection", "rubber", "relay", "midi"],
             },
         ],
     },
@@ -1558,6 +1653,29 @@ def link_payloads(*values: Any) -> list[dict[str, str]]:
     return [{"url": url, "label": link_domain(url)} for url in extract_urls(*values)]
 
 
+def public_repo_url(repo_path: str) -> str:
+    path = clean(repo_path).replace("\\", "/").lstrip("/")
+    if not path:
+        return ""
+    if path.startswith(("http://", "https://")):
+        return path
+    return f"../../{path}"
+
+
+def file_link(repo_path: str, label: str = "") -> dict[str, str] | None:
+    path = clean(repo_path).replace("\\", "/")
+    if not path:
+        return None
+    return {"url": public_repo_url(path), "label": clean(label) or Path(path).name}
+
+
+def package_relative_file_link(package_dir: str, filename: str) -> dict[str, str] | None:
+    name = clean(filename)
+    if not name:
+        return None
+    return file_link(f"{package_dir.rstrip('/')}/{name}", name)
+
+
 def row_text_values(row: dict[str, str]) -> list[str]:
     return [clean(value) for value in row.values() if clean(value)]
 
@@ -2123,6 +2241,66 @@ def build_replacement_pipe_requirements(
     photo_rows: list[dict[str, str]],
 ) -> list[dict[str, Any]]:
     return build_workstream_requirements(requirement_rows, photo_rows)
+
+
+def fabrication_package_payload(row: dict[str, str]) -> dict[str, Any]:
+    package_id = clean(row.get("package_id"))
+    readme_path = clean(row.get("readme"))
+    package_dir = str(Path(readme_path).parent).replace("\\", "/") if readme_path else f"data/manual/fabrication/{package_id}"
+
+    primary_links: list[dict[str, str]] = []
+    for field, label in (
+        ("readme", "README"),
+        ("primary_pdf", "PDF"),
+        ("cut_list", "Cut list"),
+        ("inspection_checklist", "Inspection checklist"),
+        ("source_spec", "Source spec"),
+    ):
+        link = file_link(clean(row.get(field)), label)
+        if link is not None:
+            primary_links.append(link)
+
+    dxf_links = [
+        link
+        for link in (package_relative_file_link(package_dir, filename) for filename in split_pipe(row.get("dxf_files", "")))
+        if link is not None
+    ]
+    svg_links = [
+        link
+        for link in (package_relative_file_link(package_dir, filename) for filename in split_pipe(row.get("svg_files", "")))
+        if link is not None
+    ]
+
+    return {
+        "requirement_id": clean(row.get("requirement_id")),
+        "system": clean(row.get("system")),
+        "package_id": package_id,
+        "title": clean(row.get("title")),
+        "current_status": clean(row.get("current_status")),
+        "release_position": clean(row.get("release_position")),
+        "notes": clean(row.get("notes")),
+        "package_dir": package_dir,
+        "primary_links": primary_links,
+        "dxf_links": dxf_links,
+        "svg_links": svg_links,
+        "file_count": len(primary_links) + len(dxf_links) + len(svg_links),
+    }
+
+
+def fabrication_packages_for_workstream(
+    ws_id: str,
+    fabrication_rows: list[dict[str, str]],
+) -> list[dict[str, Any]]:
+    if ws_id == "fabrication_handoff":
+        selected_rows = fabrication_rows
+    elif ws_id == "electrical_reset":
+        selected_rows = [row for row in fabrication_rows if clean(row.get("system")) == "electrical_reset"]
+    elif ws_id == "chassis_rubbers":
+        selected_rows = [row for row in fabrication_rows if clean(row.get("system")) == "chassis_rubbers"]
+    else:
+        selected_rows = []
+
+    return [fabrication_package_payload(row) for row in selected_rows]
 
 
 def replacement_pipe_order_release_payload(rows: list[dict[str, str]]) -> list[dict[str, str]]:
@@ -6026,6 +6204,7 @@ def build_dashboard_data() -> dict[str, Any]:
     body_mount_release_action_rows = load_csv_optional(BODY_MOUNT_RELEASE_ACTIONS_PATH)
     body_mount_station_closure_rows = load_csv_optional(BODY_MOUNT_STATION_CLOSURE_PATH)
     brake_system_requirement_rows = load_csv_optional(BRAKE_SYSTEM_REQUIREMENTS_PATH)
+    fabrication_requirement_rows = load_csv_optional(FABRICATION_HANDOFF_REQUIREMENTS_PATH)
     paint_refinish_queue_rows = load_csv_optional(PAINT_REFINISH_MEDIA_QUEUE_PATH)
     paint_refinish_whatsapp_rows = load_csv_optional(PAINT_REFINISH_WHATSAPP_MEDIA_QUEUE_PATH)
     selling_site_manifest_rows = load_csv_optional(SELLING_SITE_MANIFEST_PATH)
@@ -6196,6 +6375,7 @@ def build_dashboard_data() -> dict[str, Any]:
         )
         if ws_id == "chassis_fixing":
             operation_panels.append(build_chassis_prime_readiness_panel(photo_rows))
+        fabrication_packages = fabrication_packages_for_workstream(ws_id, fabrication_requirement_rows)
 
         workstreams.append(
             {
@@ -6224,6 +6404,7 @@ def build_dashboard_data() -> dict[str, Any]:
                 "body_mount_order_release_specs": body_mount_order_release_specs,
                 "body_mount_release_actions": body_mount_release_actions,
                 "body_mount_station_closure": body_mount_station_closure,
+                "fabrication_packages": fabrication_packages,
                 "linked_packages": [
                     {
                         "work_package_id": clean(package.get("work_package_id")),
@@ -6586,6 +6767,7 @@ def build_dashboard_data() -> dict[str, Any]:
             "component_jobs": "data/manual/component_jobs.csv",
             "photo_inventory": "data/manual/photo_inventory.csv",
             "brake_system_requirements": "data/manual/brake_system_requirements.csv",
+            "fabrication_handoff_requirements": "data/manual/fabrication_handoff_requirements.csv",
             "chassis_rubber_requirements": "data/manual/chassis_rubber_requirements.csv",
             "rubber_ordering_specs": "data/manual/rubber_ordering_specs.csv",
             "body_mount_order_release_specs": "data/manual/body_mount_order_release_specs.csv",

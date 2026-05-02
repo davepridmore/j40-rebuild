@@ -577,6 +577,16 @@ th {
   margin: 0.5rem 0 0.35rem;
 }
 
+.fabrication-link-group {
+  display: grid;
+  gap: 0.25rem;
+  margin: 0 0 0.55rem;
+}
+
+.fabrication-link-group:last-child {
+  margin-bottom: 0;
+}
+
 .item-link {
   border: 1px solid var(--line);
   border-radius: 999px;

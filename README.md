@@ -42,6 +42,7 @@ Only chat content related to this build should be included. The importer treats 
 - `data/manual/brake_system_requirements.csv`: rear brake cable, hard-line, hose, drum, and retaining-clip replacement matrix
 - `data/manual/chassis_rubber_requirements.csv`: acquisition/fabrication status matrix for body-mount rubbers, sleeves, cups, shims, and mount hardware
 - `data/manual/replacement_pipe_ordering_specs.csv`: curated location/photo/spec matrix for replacement pipes, hoses, hard lines, and the made-to-order coolant pipe sample
+- `data/manual/fabrication_handoff_requirements.csv`: UI-facing package list for rubber and electrical fabrication PDF/DXF/SVG handoff
 - `data/manual/fabrication/`: ready-to-send DXF/SVG/PDF fabrication packages for rubber recreation and electrical mounting parts
 - `data/manual/workbook_tabs/`: per-tab CSV exports for quick review outside Excel
 - `data/manual/j40-master-tracker.xlsx`: single Excel workbook generated from `expenses.csv` with `Initial Price`, `Purchase Registration`, `Purchase of Goods`, and `Purchase of Services` tabs

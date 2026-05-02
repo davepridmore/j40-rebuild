@@ -19,6 +19,7 @@ STAGED_MEDIA_PATH = "assets/dashboard-media"
 MISSING_MEDIA_FALLBACK = "./assets/image-needed.svg"
 PUBLIC_FABRICATION_DIR = ROOT / "data" / "manual" / "fabrication"
 PUBLIC_FABRICATION_DOCS = (
+    ROOT / "data" / "manual" / "fabrication_handoff_requirements.csv",
     ROOT / "docs" / "fabrication-handoff-index.md",
     ROOT / "docs" / "rubber-recreation-fabrication-spec-20260502.md",
 )

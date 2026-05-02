@@ -1359,6 +1359,86 @@
     return renderRequirementTable(rows);
   }
 
+  function renderPackageLinks(title, links) {
+    const rows = Array.isArray(links) ? links.filter((link) => cleanString(link && link.url)) : [];
+    if (!rows.length) {
+      return "";
+    }
+    return `
+      <div class="fabrication-link-group">
+        <strong>${escapeHtml(title)}</strong>
+        <div class="item-links">
+          ${rows
+            .map(
+              (link, index) =>
+                `<a class="item-link" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(cleanString(link.label) || `File ${index + 1}`)}</a>`
+            )
+            .join("")}
+        </div>
+      </div>
+    `;
+  }
+
+  function renderFabricationPackages(packages) {
+    const rows = Array.isArray(packages) ? packages : [];
+    if (!rows.length) {
+      return "";
+    }
+    const currentRows = rows.filter((row) => cleanString(row.current_status) === "current_release").length;
+    const quoteRows = rows.filter((row) => cleanString(row.current_status) === "quote_first_article_ready").length;
+    return `
+      <article class="card fabrication-packages-card">
+        <div class="detail-header">
+          <h3>Fabrication Packages</h3>
+          <div class="chip-row">
+            ${chip(`${rows.length} Packages`)}
+            ${chip(`${currentRows} Current`)}
+            ${chip(`${quoteRows} Quote/First Article`)}
+          </div>
+        </div>
+        <p class="small-muted">Clickable shop package links for PDF review, DXF cutting files, SVG visual checks, cut lists, and inspection sheets.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Requirement</th>
+                <th>Status</th>
+                <th>Release Position</th>
+                <th>Files</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${rows
+                .map(
+                  (row) => `
+                    <tr>
+                      <td>
+                        <strong>${escapeHtml(row.requirement_id || "")} · ${escapeHtml(row.title || "")}</strong>
+                        <div class="small-muted">${escapeHtml(formatToken(row.system || ""))} / ${escapeHtml(row.package_id || "")}</div>
+                      </td>
+                      <td>${statusChip(row.current_status || "unknown")}</td>
+                      <td>${escapeHtml(row.release_position || "")}</td>
+                      <td>
+                        ${renderPackageLinks("Primary", row.primary_links)}
+                        ${renderPackageLinks("DXF", row.dxf_links)}
+                        ${renderPackageLinks("SVG", row.svg_links)}
+                      </td>
+                      <td>
+                        ${escapeHtml(row.notes || "")}
+                        <div class="small-muted">${escapeHtml(row.file_count || 0)} linked files</div>
+                      </td>
+                    </tr>
+                  `
+                )
+                .join("")}
+            </tbody>
+          </table>
+        </div>
+      </article>
+    `;
+  }
+
   function canonicalMediaStem(value) {
     const raw = cleanString(value).toLowerCase();
     if (!raw) {
@@ -2185,6 +2265,7 @@
       </article>
 
       ${renderWorkstreamRequirements(active)}
+      ${renderFabricationPackages(active.fabrication_packages)}
 
       <article class="card">
         <h3>Evidence Media</h3>

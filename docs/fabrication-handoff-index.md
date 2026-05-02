@@ -4,6 +4,8 @@ Purpose: one send-out index for the ready-to-run fabrication packages in this re
 
 All package dimensions are in `mm`. For each package, send the package PDF for human review plus the listed `DXF` files for cutting. Keep the matching `SVG` files with the job if the shop wants a quick visual reference.
 
+Dashboard UI: open the `Fabrication` workstream in `docs/project-control-ui/` for clickable package links, status gates, and first-article steps.
+
 ## Rubber Recreation - Rev A
 
 Directory: [data/manual/fabrication/rubber_recreation_rev_a](../data/manual/fabrication/rubber_recreation_rev_a/README.md)

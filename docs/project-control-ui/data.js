@@ -1,11 +1,12 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-02T16:00:43+05:00",
+  "generated_at": "2026-05-02T16:33:32+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
     "component_jobs": "data/manual/component_jobs.csv",
     "photo_inventory": "data/manual/photo_inventory.csv",
     "brake_system_requirements": "data/manual/brake_system_requirements.csv",
+    "fabrication_handoff_requirements": "data/manual/fabrication_handoff_requirements.csv",
     "chassis_rubber_requirements": "data/manual/chassis_rubber_requirements.csv",
     "rubber_ordering_specs": "data/manual/rubber_ordering_specs.csv",
     "body_mount_order_release_specs": "data/manual/body_mount_order_release_specs.csv",
@@ -31,9 +32,9 @@ window.J40_DASHBOARD_DATA = {
     "other_j40_builds_drop_zone": "data/reference/other_j40_builds"
   },
   "summary": {
-    "workstreams_in_scope": 14,
-    "workstreams_active": 9,
-    "workstream_evidence_images": 466,
+    "workstreams_in_scope": 15,
+    "workstreams_active": 10,
+    "workstream_evidence_images": 572,
     "parts_open_rows": 41,
     "parts_ordered_pending_delivery": 10,
     "urgent_part_actions": 12,
@@ -1142,6 +1143,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
+      "fabrication_packages": [],
       "linked_packages": [
         {
           "work_package_id": "WP02",
@@ -2743,6 +2745,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
+      "fabrication_packages": [],
       "linked_packages": [
         {
           "work_package_id": "WP01",
@@ -4642,6 +4645,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
+      "fabrication_packages": [],
       "linked_packages": [],
       "component_jobs": [
         {
@@ -8579,6 +8583,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
+      "fabrication_packages": [],
       "linked_packages": [],
       "component_jobs": [
         {
@@ -12801,7 +12806,114 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Use only if layout proves the vehicle has more than the six current working main stations."
         }
       ],
-      "linked_packages": [],
+      "fabrication_packages": [
+        {
+          "requirement_id": "FAB-RUB-001",
+          "system": "chassis_rubbers",
+          "package_id": "rubber_recreation_rev_a",
+          "title": "Rubber recreation Rev A",
+          "current_status": "quote_first_article_ready",
+          "release_position": "Body-mount circular cushions, cup washer blanks, and oval front-support pad are ready for quote and first article; strip files are template blanks only.",
+          "notes": "Final production remains gated by caliper closure and small-mount one-piece vs split-stack decision.",
+          "package_dir": "data/manual/fabrication/rubber_recreation_rev_a",
+          "primary_links": [
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/README.md",
+              "label": "README"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
+              "label": "PDF"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
+              "label": "Cut list"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/inspection_checklist.csv",
+              "label": "Inspection checklist"
+            },
+            {
+              "url": "../../docs/rubber-recreation-fabrication-spec-20260502.md",
+              "label": "Source spec"
+            }
+          ],
+          "dxf_links": [
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf",
+              "label": "bm_sm_body_mount_cushion_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.dxf",
+              "label": "bm_lg_body_mount_cushion_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf",
+              "label": "bm_cup_small_seat_washer_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf",
+              "label": "bm_cup_large_seat_washer_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf",
+              "label": "fs_oval_front_support_pad_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf",
+              "label": "fs_strip_left_template_blank_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf",
+              "label": "fs_strip_right_template_blank_rev_a.dxf"
+            }
+          ],
+          "svg_links": [
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.svg",
+              "label": "bm_sm_body_mount_cushion_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.svg",
+              "label": "bm_lg_body_mount_cushion_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.svg",
+              "label": "bm_cup_small_seat_washer_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.svg",
+              "label": "bm_cup_large_seat_washer_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.svg",
+              "label": "fs_oval_front_support_pad_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg",
+              "label": "fs_strip_left_template_blank_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg",
+              "label": "fs_strip_right_template_blank_rev_a.svg"
+            }
+          ],
+          "file_count": 19
+        }
+      ],
+      "linked_packages": [
+        {
+          "work_package_id": "WP03F",
+          "title": "Fabrication Drawing Handoff",
+          "lane": "fabrication",
+          "current_state": "in_progress",
+          "objective": "Send and track the rubber recreation and electrical mount fabrication packages.",
+          "blocker_summary": "Rubber final batch still has measurement holds; electrical combined-module route is reference/provisional.",
+          "gate_to_close": "Fabricator has the current package files and first articles are accepted before batch production or loom/body closeout.",
+          "key_procurement_actions": "Use the Fabrication workstream package links; do not fabricate superseded electrical routes unless deliberately reopened.",
+          "evidence_signal": "4 fabrication package rows with PDF/DXF/SVG outputs"
+        }
+      ],
       "component_jobs": [
         {
           "component_job_id": "tub_refit_rubber_hardware_shim_stack",
@@ -12840,6 +12952,11 @@ window.J40_DASHBOARD_DATA = {
           "detail": "Trial-fit the tub mount stack before final body fastening."
         },
         {
+          "label": "WP03F \u00b7 Fabrication Drawing Handoff",
+          "status": "in_progress",
+          "detail": "Send and track the rubber recreation and electrical mount fabrication packages. Blocker: Rubber final batch still has measurement holds; electrical combined-module route is reference/provisional. Procurement: Use the Fabrication workstream package links; do not fabricate superseded electrical routes unless deliberately reopened. Gate: Fabricator has the current package files and first articles are accepted before batch production or loom/body closeout."
+        },
+        {
           "label": "Issue checks",
           "status": "completed",
           "detail": "No issue-specific checks are recorded for this workstream."
@@ -12866,8 +12983,8 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Close workstream exit gate",
-          "status": "queued",
-          "detail": "No linked package rows found. Exit gate: Main tub and nose-support rubber system is sample-locked, sourced or fabrication-ready, and ready for dry trial fit"
+          "status": "in_progress",
+          "detail": "Linked package execution is active. Exit gate: Main tub and nose-support rubber system is sample-locked, sourced or fabrication-ready, and ready for dry trial fit"
         }
       ],
       "involved_parts": [
@@ -13512,1677 +13629,6 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "electrical_spec_layout": null
-    },
-    {
-      "id": "interior_controls",
-      "title": "Dashboard",
-      "phase": "04a_interior_controls",
-      "status": "in_progress",
-      "priority": "high",
-      "primary_location": "home",
-      "owner_mode": "owner_led",
-      "depends_on": [
-        "electrical_reset"
-      ],
-      "next_action": "Use the on-hand 7 Schneider selectors and 22 mm hole-enlarging tools to machine/test-fit dash switch positions; keep the purchased needle fuel-stop and hazards as separate controls and record exact 9 inch LCD candidate before fascia closeout",
-      "exit_gate": "All 7 Schneider selectors (mixed 2-position and 3-position) are on hand, dash hole-enlarging tooling is available, and the hazard switch is separate from the selector count; current allocation still uses the purchased needle fuel-stop switch, so final selector/function map and LCD packaging remain open",
-      "notes": "Driven by Build_Plan WP03A/WP03B: switch fit-up and diesel cutoff/ignition security integration. User update 2026-05-02 confirms 7 selectors, hole-enlarging tools, separate hazard switch, and a recommended specific 9 inch LCD panel candidate.",
-      "evidence_source": [
-        "photo_inventory",
-        "20260421_192813_gp_0jvYAo8g",
-        "20260421_194401_gp_1dY3fLdw",
-        "20260420_221819_gp_YV69fbvA",
-        "user_update_2026-05-02_dashboard_switch_lcd_update"
-      ],
-      "images": [
-        {
-          "path": "../../photos/20260422_074709_gp_o4wiXyjA.jpg",
-          "caption": "Dashboard Shell And Bulkhead \u00b7 Stripdown Cataloguing \u00b7 2026-04-22",
-          "captured_date": "2026-04-22",
-          "captured_time": "07:47:09",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_shell_and_bulkhead",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260422_074709_gp_o4wiXyjA",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260421_194401_gp_1dY3fLdw.jpeg",
-          "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
-          "captured_date": "2026-04-21",
-          "captured_time": "19:44:01",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_switch_and_control_hardware",
-          "stage": "electrical_rework",
-          "media_id": "20260421_194401_gp_1dY3fLdw",
-          "matched_tokens": [
-            "20260421_194401_gp_1dy3fldw"
-          ]
-        },
-        {
-          "path": "../../photos/20260421_192813_gp_0jvYAo8g_2.jpg",
-          "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
-          "captured_date": "2026-04-21",
-          "captured_time": "19:28:13",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_switch_and_control_hardware",
-          "stage": "electrical_rework",
-          "media_id": "20260421_192813_gp_0jvYAo8g_2",
-          "matched_tokens": [
-            "20260421_192813_gp_0jvyao8g"
-          ]
-        },
-        {
-          "path": "../../photos/20260413_040719.jpg",
-          "caption": "Dashboard Shell And Cabin \u00b7 Stripdown Cataloguing \u00b7 2026-04-13",
-          "captured_date": "2026-04-13",
-          "captured_time": "04:07:19",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_shell_and_cabin",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260413_040719",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260329_122855_gp_B94NpLbg.jpg",
-          "caption": "Cabin View Through Glass \u00b7 Baseline Walkaround \u00b7 2026-03-29",
-          "captured_date": "2026-03-29",
-          "captured_time": "12:28:55",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "cabin_view_through_glass",
-          "stage": "baseline_walkaround",
-          "media_id": "20260329_122855_gp_B94NpLbg",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260323_211028_gp_7IYxU7Wg.jpg",
-          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-          "captured_date": "2026-03-23",
-          "captured_time": "21:10:28",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_and_cabin_stripdown",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260323_211028_gp_7IYxU7Wg",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260323_211006_gp_lhopOh5A.jpg",
-          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-          "captured_date": "2026-03-23",
-          "captured_time": "21:10:06",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_and_cabin_stripdown",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260323_211006_gp_lhopOh5A",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260323_210956_gp_xTOMHTiA.jpg",
-          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-          "captured_date": "2026-03-23",
-          "captured_time": "21:09:56",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_and_cabin_stripdown",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260323_210956_gp_xTOMHTiA",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260323_210946_gp_0UMDdELw.jpg",
-          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-          "captured_date": "2026-03-23",
-          "captured_time": "21:09:46",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_and_cabin_stripdown",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260323_210946_gp_0UMDdELw",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260323_202020_gp_2a0rVClA.jpg",
-          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-          "captured_date": "2026-03-23",
-          "captured_time": "20:20:20",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_and_cabin_stripdown",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260323_202020_gp_2a0rVClA",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260323_202000_gp_HvImDixA.jpg",
-          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-          "captured_date": "2026-03-23",
-          "captured_time": "20:20:00",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_and_cabin_stripdown",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260323_202000_gp_HvImDixA",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260323_201952_gp_Jms9V7Ew.jpg",
-          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-          "captured_date": "2026-03-23",
-          "captured_time": "20:19:52",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_and_cabin_stripdown",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260323_201952_gp_Jms9V7Ew",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260323_190048_gp_MSH3WpmQ.jpg",
-          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-          "captured_date": "2026-03-23",
-          "captured_time": "19:00:48",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_and_cabin_stripdown",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260323_190048_gp_MSH3WpmQ",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260323_190047.jpg",
-          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-          "captured_date": "2026-03-23",
-          "captured_time": "19:00:47",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_and_cabin_stripdown",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260323_190047",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260323_190038_gp_i9KuGptA.jpg",
-          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-          "captured_date": "2026-03-23",
-          "captured_time": "19:00:38",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_and_cabin_stripdown",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260323_190038_gp_i9KuGptA",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260323_190037.jpg",
-          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-          "captured_date": "2026-03-23",
-          "captured_time": "19:00:37",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_and_cabin_stripdown",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260323_190037",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260323_190006_gp_xzDpzXmg.jpg",
-          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-          "captured_date": "2026-03-23",
-          "captured_time": "19:00:06",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_and_cabin_stripdown",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260323_190006_gp_xzDpzXmg",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260323_190005.jpg",
-          "caption": "Dashboard Lower Structure \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-          "captured_date": "2026-03-23",
-          "captured_time": "19:00:05",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_lower_structure",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260323_190005",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260323_185949_gp_bRW3C2Ng.jpg",
-          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-          "captured_date": "2026-03-23",
-          "captured_time": "18:59:49",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_and_cabin_stripdown",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260323_185949_gp_bRW3C2Ng",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260323_185947.jpg",
-          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-          "captured_date": "2026-03-23",
-          "captured_time": "18:59:47",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_and_cabin_stripdown",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260323_185947",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260323_185922_gp_XWQyq7dw.jpg",
-          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-          "captured_date": "2026-03-23",
-          "captured_time": "18:59:22",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_and_cabin_stripdown",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260323_185922_gp_XWQyq7dw",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260323_180316_gp_65cSGRyQ.jpg",
-          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-          "captured_date": "2026-03-23",
-          "captured_time": "18:03:16",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_and_cabin_stripdown",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260323_180316_gp_65cSGRyQ",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260323_180314.jpg",
-          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-          "captured_date": "2026-03-23",
-          "captured_time": "18:03:14",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_and_cabin_stripdown",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260323_180314",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260323_180220_gp_R3uBBhUw.jpg",
-          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-          "captured_date": "2026-03-23",
-          "captured_time": "18:02:20",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_and_cabin_stripdown",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260323_180220_gp_R3uBBhUw",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260323_180218.jpg",
-          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-          "captured_date": "2026-03-23",
-          "captured_time": "18:02:18",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "dashboard_and_cabin_stripdown",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260323_180218",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260321_235600.jpg",
-          "caption": "Driver Footwell Firewall And Wiring \u00b7 Stripdown Cataloguing \u00b7 2026-03-21",
-          "captured_date": "2026-03-21",
-          "captured_time": "23:56:00",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "driver_footwell_firewall_and_wiring",
-          "stage": "stripdown_cataloguing",
-          "media_id": "20260321_235600",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260317_165157_gp_r5zl6uag.jpg",
-          "caption": "Cabin Overview \u00b7 Baseline Walkaround \u00b7 2026-03-17",
-          "captured_date": "2026-03-17",
-          "captured_time": "16:51:57",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "cabin_overview",
-          "stage": "baseline_walkaround",
-          "media_id": "20260317_165157_gp_r5zl6uag",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260317_165114_gp_meA0ZqNA.jpg",
-          "caption": "Cabin Overview \u00b7 Baseline Walkaround \u00b7 2026-03-17",
-          "captured_date": "2026-03-17",
-          "captured_time": "16:51:14",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "cabin_overview",
-          "stage": "baseline_walkaround",
-          "media_id": "20260317_165114_gp_meA0ZqNA",
-          "matched_tokens": []
-        },
-        {
-          "path": "../../photos/20260317_165113.jpg",
-          "caption": "Cabin Overview \u00b7 Baseline Walkaround \u00b7 2026-03-17",
-          "captured_date": "2026-03-17",
-          "captured_time": "16:51:13",
-          "media_type": "photo",
-          "component_group": "interior_cabin",
-          "specific_component": "cabin_overview",
-          "stage": "baseline_walkaround",
-          "media_id": "20260317_165113",
-          "matched_tokens": []
-        }
-      ],
-      "evidence_sets": [
-        {
-          "key": "all_dashboard_images",
-          "title": "All Dashboard Images",
-          "description": "Complete dashboard image set from the imported photo inventory.",
-          "images": [
-            {
-              "path": "../../photos/20260422_074709_gp_o4wiXyjA.jpg",
-              "caption": "Dashboard Shell And Bulkhead \u00b7 Stripdown Cataloguing \u00b7 2026-04-22",
-              "captured_date": "2026-04-22",
-              "captured_time": "07:47:09",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_shell_and_bulkhead",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260422_074709_gp_o4wiXyjA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260421_194401_gp_1dY3fLdw.jpeg",
-              "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
-              "captured_date": "2026-04-21",
-              "captured_time": "19:44:01",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_switch_and_control_hardware",
-              "stage": "electrical_rework",
-              "media_id": "20260421_194401_gp_1dY3fLdw",
-              "matched_tokens": [
-                "20260421_194401_gp_1dy3fldw"
-              ]
-            },
-            {
-              "path": "../../photos/20260421_192813_gp_0jvYAo8g_2.jpg",
-              "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
-              "captured_date": "2026-04-21",
-              "captured_time": "19:28:13",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_switch_and_control_hardware",
-              "stage": "electrical_rework",
-              "media_id": "20260421_192813_gp_0jvYAo8g_2",
-              "matched_tokens": [
-                "20260421_192813_gp_0jvyao8g"
-              ]
-            },
-            {
-              "path": "../../photos/20260413_040719.jpg",
-              "caption": "Dashboard Shell And Cabin \u00b7 Stripdown Cataloguing \u00b7 2026-04-13",
-              "captured_date": "2026-04-13",
-              "captured_time": "04:07:19",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_shell_and_cabin",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260413_040719",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260329_122855_gp_B94NpLbg.jpg",
-              "caption": "Cabin View Through Glass \u00b7 Baseline Walkaround \u00b7 2026-03-29",
-              "captured_date": "2026-03-29",
-              "captured_time": "12:28:55",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "cabin_view_through_glass",
-              "stage": "baseline_walkaround",
-              "media_id": "20260329_122855_gp_B94NpLbg",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260323_211028_gp_7IYxU7Wg.jpg",
-              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-              "captured_date": "2026-03-23",
-              "captured_time": "21:10:28",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_and_cabin_stripdown",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260323_211028_gp_7IYxU7Wg",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260323_211006_gp_lhopOh5A.jpg",
-              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-              "captured_date": "2026-03-23",
-              "captured_time": "21:10:06",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_and_cabin_stripdown",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260323_211006_gp_lhopOh5A",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260323_210956_gp_xTOMHTiA.jpg",
-              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-              "captured_date": "2026-03-23",
-              "captured_time": "21:09:56",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_and_cabin_stripdown",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260323_210956_gp_xTOMHTiA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260323_210946_gp_0UMDdELw.jpg",
-              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-              "captured_date": "2026-03-23",
-              "captured_time": "21:09:46",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_and_cabin_stripdown",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260323_210946_gp_0UMDdELw",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260323_202020_gp_2a0rVClA.jpg",
-              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-              "captured_date": "2026-03-23",
-              "captured_time": "20:20:20",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_and_cabin_stripdown",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260323_202020_gp_2a0rVClA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260323_202000_gp_HvImDixA.jpg",
-              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-              "captured_date": "2026-03-23",
-              "captured_time": "20:20:00",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_and_cabin_stripdown",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260323_202000_gp_HvImDixA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260323_201952_gp_Jms9V7Ew.jpg",
-              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-              "captured_date": "2026-03-23",
-              "captured_time": "20:19:52",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_and_cabin_stripdown",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260323_201952_gp_Jms9V7Ew",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260323_190048_gp_MSH3WpmQ.jpg",
-              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-              "captured_date": "2026-03-23",
-              "captured_time": "19:00:48",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_and_cabin_stripdown",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260323_190048_gp_MSH3WpmQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260323_190047.jpg",
-              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-              "captured_date": "2026-03-23",
-              "captured_time": "19:00:47",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_and_cabin_stripdown",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260323_190047",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260323_190038_gp_i9KuGptA.jpg",
-              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-              "captured_date": "2026-03-23",
-              "captured_time": "19:00:38",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_and_cabin_stripdown",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260323_190038_gp_i9KuGptA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260323_190037.jpg",
-              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-              "captured_date": "2026-03-23",
-              "captured_time": "19:00:37",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_and_cabin_stripdown",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260323_190037",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260323_190006_gp_xzDpzXmg.jpg",
-              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-              "captured_date": "2026-03-23",
-              "captured_time": "19:00:06",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_and_cabin_stripdown",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260323_190006_gp_xzDpzXmg",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260323_190005.jpg",
-              "caption": "Dashboard Lower Structure \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-              "captured_date": "2026-03-23",
-              "captured_time": "19:00:05",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_lower_structure",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260323_190005",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260323_185949_gp_bRW3C2Ng.jpg",
-              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-              "captured_date": "2026-03-23",
-              "captured_time": "18:59:49",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_and_cabin_stripdown",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260323_185949_gp_bRW3C2Ng",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260323_185947.jpg",
-              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-              "captured_date": "2026-03-23",
-              "captured_time": "18:59:47",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_and_cabin_stripdown",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260323_185947",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260323_185922_gp_XWQyq7dw.jpg",
-              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-              "captured_date": "2026-03-23",
-              "captured_time": "18:59:22",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_and_cabin_stripdown",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260323_185922_gp_XWQyq7dw",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260323_180316_gp_65cSGRyQ.jpg",
-              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-              "captured_date": "2026-03-23",
-              "captured_time": "18:03:16",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_and_cabin_stripdown",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260323_180316_gp_65cSGRyQ",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260323_180314.jpg",
-              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-              "captured_date": "2026-03-23",
-              "captured_time": "18:03:14",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_and_cabin_stripdown",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260323_180314",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260323_180220_gp_R3uBBhUw.jpg",
-              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-              "captured_date": "2026-03-23",
-              "captured_time": "18:02:20",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_and_cabin_stripdown",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260323_180220_gp_R3uBBhUw",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260323_180218.jpg",
-              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-              "captured_date": "2026-03-23",
-              "captured_time": "18:02:18",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "dashboard_and_cabin_stripdown",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260323_180218",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260321_235600.jpg",
-              "caption": "Driver Footwell Firewall And Wiring \u00b7 Stripdown Cataloguing \u00b7 2026-03-21",
-              "captured_date": "2026-03-21",
-              "captured_time": "23:56:00",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "driver_footwell_firewall_and_wiring",
-              "stage": "stripdown_cataloguing",
-              "media_id": "20260321_235600",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260317_165157_gp_r5zl6uag.jpg",
-              "caption": "Cabin Overview \u00b7 Baseline Walkaround \u00b7 2026-03-17",
-              "captured_date": "2026-03-17",
-              "captured_time": "16:51:57",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "cabin_overview",
-              "stage": "baseline_walkaround",
-              "media_id": "20260317_165157_gp_r5zl6uag",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260317_165114_gp_meA0ZqNA.jpg",
-              "caption": "Cabin Overview \u00b7 Baseline Walkaround \u00b7 2026-03-17",
-              "captured_date": "2026-03-17",
-              "captured_time": "16:51:14",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "cabin_overview",
-              "stage": "baseline_walkaround",
-              "media_id": "20260317_165114_gp_meA0ZqNA",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260317_165113.jpg",
-              "caption": "Cabin Overview \u00b7 Baseline Walkaround \u00b7 2026-03-17",
-              "captured_date": "2026-03-17",
-              "captured_time": "16:51:13",
-              "media_type": "photo",
-              "component_group": "interior_cabin",
-              "specific_component": "cabin_overview",
-              "stage": "baseline_walkaround",
-              "media_id": "20260317_165113",
-              "matched_tokens": []
-            }
-          ]
-        }
-      ],
-      "image_count": 29,
-      "reference_token_count": 10,
-      "requirements": [],
-      "pipe_requirements": [],
-      "replacement_pipe_order_release_specs": [],
-      "replacement_pipe_release_actions": [],
-      "replacement_pipe_circuit_closure": [],
-      "chassis_rubber_requirements": [],
-      "body_mount_order_release_specs": [],
-      "body_mount_release_actions": [],
-      "body_mount_station_closure": [],
-      "linked_packages": [
-        {
-          "work_package_id": "WP03",
-          "title": "Electrical Baseline Finalization",
-          "lane": "electrical",
-          "current_state": "queued",
-          "objective": "Complete baseline harness termination, grounding, and fuse/relay validation.",
-          "blocker_summary": "1 electrical buy rows still open; 2 rows should be stock-verified before re-buy.",
-          "gate_to_close": "Start/charge/lights/horn/wipers/gauges baseline passes functional checks.",
-          "key_procurement_actions": "Order selected harness/sleeving path; verify on-hand connectors/relays before duplicate buys.",
-          "evidence_signal": "electrical_rework_photos=18"
-        },
-        {
-          "work_package_id": "WP05",
-          "title": "Interior Weatherproofing Stack",
-          "lane": "interior",
-          "current_state": "blocked",
-          "objective": "Apply sealing/lining/dampening/foam/carpet in moisture-safe sequence.",
-          "blocker_summary": "Interior finish materials are deferred until floor/body sealing gate closes.",
-          "gate_to_close": "Cabin sealed and dry before trim/final fit.",
-          "key_procurement_actions": "Do not buy full interior finish stack early; release purchases by phase gate.",
-          "evidence_signal": "deferred rows indicate intentional hold until body closure"
-        }
-      ],
-      "component_jobs": [
-        {
-          "component_job_id": "body_rubbers",
-          "component_group": "rubbers_and_seals",
-          "current_status": "planned_separate_service",
-          "planned_action": "Separate, tag, and clean, service, or replace",
-          "evidence_ref": "akber_khan-00796|akber_khan-00797",
-          "notes": "Covers window rubbers and auxiliary rubber pieces removed during strip-down"
-        },
-        {
-          "component_job_id": "eps_vitz_control_wiring_and_safety",
-          "component_group": "electrical_accessories",
-          "current_status": "planned_scope_lock",
-          "planned_action": "Define EPS power feed fuse relay ignition trigger and fail-safe behavior; map wiring integration into baseline harness plan",
-          "evidence_ref": "whatsapp_akber|akber_khan-00858|user_plan_2026-04-22_tub_off_update",
-          "notes": "Major project: EPS electrical integration should remain isolated and testable."
-        },
-        {
-          "component_job_id": "interior",
-          "component_group": "interior",
-          "current_status": "planned_strip",
-          "planned_action": "Pull most of the interior and store under tagged covered conditions",
-          "evidence_ref": "akber_khan-00793|akber_khan-00796|akber_khan-00808",
-          "notes": "Use cartons and cheap covers for removed interior pieces kept in the driveway"
-        },
-        {
-          "component_job_id": "interior_dash_switch_fitup",
-          "component_group": "interior_cabin",
-          "current_status": "in_progress",
-          "planned_action": "Machine/enlarge existing dash holes to 22 mm, allocate dash controls to final positions, verify cutout clearances, and complete mounting with labels",
-          "evidence_ref": "20260421_192813_gp_0jvYAo8g|20260421_194401_gp_1dY3fLdw|20260420_221819_gp_YV69fbvA|user_update_2026-05-02_dashboard_switch_lcd_update",
-          "notes": "Build_Plan WP03A control-fit gate; 7 Schneider selectors and hole-enlarging tools are now available. Spot lamps already have a switch allocation, fuel-stop uses the purchased needle switch, hazards stay separate, and exact recommended 9 inch LCD model/link remains to be captured."
-        },
-        {
-          "component_job_id": "interior_diesel_cutoff_ignition_security",
-          "component_group": "electrical_accessories",
-          "current_status": "queued",
-          "planned_action": "Integrate purchased needle-type fuel stop switch, key-off diesel cutoff, and starter interrupt path; validate fallback/manual stop behavior",
-          "evidence_ref": "20260420_221819_gp_YV69fbvA|20260421_194401_gp_1dY3fLdw|whatsapp_akber|akber_khan-00858",
-          "notes": "Build_Plan WP03B security integration gate."
-        },
-        {
-          "component_job_id": "old_accessory_wiring",
-          "component_group": "electrical_accessories",
-          "current_status": "partially_removed",
-          "planned_action": "Remove nonstandard LEDs speakers light bars and extra wiring",
-          "evidence_ref": "fj40-00251",
-          "notes": "Chat explicitly says LEDs speakers front and back light bars and extra wiring were removed"
-        },
-        {
-          "component_job_id": "window_mechanisms",
-          "component_group": "window_hardware",
-          "current_status": "planned_separate_service",
-          "planned_action": "Separate mechanisms and send to relevant service locations",
-          "evidence_ref": "akber_khan-00796",
-          "notes": "Track mechanisms separately from glass and panels"
-        }
-      ],
-      "issue_jobs": [],
-      "steps": [
-        {
-          "label": "Execute current workstream action",
-          "status": "in_progress",
-          "detail": "Use the on-hand 7 Schneider selectors and 22 mm hole-enlarging tools to machine/test-fit dash switch positions; keep the purchased needle fuel-stop and hazards as separate controls and record exact 9 inch LCD candidate before fascia closeout"
-        },
-        {
-          "label": "Classify and tag interior control hardware",
-          "status": "in_progress",
-          "detail": "All dash switches, knobs, and control items should be tagged and catalogued."
-        },
-        {
-          "label": "Define switch function map",
-          "status": "queued",
-          "detail": "Each control needs a confirmed function, label text, and circuit assignment."
-        },
-        {
-          "label": "Complete dash-fit and mounting checks",
-          "status": "queued",
-          "detail": "Confirm hole sizes, clearances, and mechanical fit before final mounting."
-        },
-        {
-          "label": "Close wiring integration and test",
-          "status": "queued",
-          "detail": "Wire each control into the final harness plan and verify operation."
-        },
-        {
-          "label": "WP03 \u00b7 Electrical Baseline Finalization",
-          "status": "queued",
-          "detail": "Complete baseline harness termination, grounding, and fuse/relay validation. Blocker: 1 electrical buy rows still open; 2 rows should be stock-verified before re-buy. Procurement: Order selected harness/sleeving path; verify on-hand connectors/relays before duplicate buys. Gate: Start/charge/lights/horn/wipers/gauges baseline passes functional checks."
-        },
-        {
-          "label": "WP05 \u00b7 Interior Weatherproofing Stack",
-          "status": "blocked",
-          "detail": "Apply sealing/lining/dampening/foam/carpet in moisture-safe sequence. Blocker: Interior finish materials are deferred until floor/body sealing gate closes. Procurement: Do not buy full interior finish stack early; release purchases by phase gate. Gate: Cabin sealed and dry before trim/final fit."
-        },
-        {
-          "label": "Issue checks",
-          "status": "completed",
-          "detail": "No issue-specific checks are recorded for this workstream."
-        },
-        {
-          "label": "Component Task \u00b7 Interior Dash Switch Fitup",
-          "status": "in_progress",
-          "detail": "Machine/enlarge existing dash holes to 22 mm, allocate dash controls to final positions, verify cutout clearances, and complete mounting with labels Notes: Build_Plan WP03A control-fit gate; 7 Schneider selectors and hole-enlarging tools are now available. Spot lamps already have a switch allocation, fuel-stop uses the purchased needle switch, hazards stay separate, and exact recommended 9 inch LCD model/link remains to be captured."
-        },
-        {
-          "label": "Component Task \u00b7 Old Accessory Wiring",
-          "status": "partially_removed",
-          "detail": "Remove nonstandard LEDs speakers light bars and extra wiring Notes: Chat explicitly says LEDs speakers front and back light bars and extra wiring were removed"
-        },
-        {
-          "label": "Component Task \u00b7 Eps Vitz Control Wiring And Safety",
-          "status": "planned_scope_lock",
-          "detail": "Define EPS power feed fuse relay ignition trigger and fail-safe behavior; map wiring integration into baseline harness plan Notes: Major project: EPS electrical integration should remain isolated and testable."
-        },
-        {
-          "label": "Component Task \u00b7 Body Rubbers",
-          "status": "planned_separate_service",
-          "detail": "Separate, tag, and clean, service, or replace Notes: Covers window rubbers and auxiliary rubber pieces removed during strip-down"
-        },
-        {
-          "label": "Component Task \u00b7 Window Mechanisms",
-          "status": "planned_separate_service",
-          "detail": "Separate mechanisms and send to relevant service locations Notes: Track mechanisms separately from glass and panels"
-        },
-        {
-          "label": "Component Task \u00b7 Interior",
-          "status": "planned_strip",
-          "detail": "Pull most of the interior and store under tagged covered conditions Notes: Use cartons and cheap covers for removed interior pieces kept in the driveway"
-        },
-        {
-          "label": "Component Task \u00b7 Interior Diesel Cutoff Ignition Security",
-          "status": "queued",
-          "detail": "Integrate purchased needle-type fuel stop switch, key-off diesel cutoff, and starter interrupt path; validate fallback/manual stop behavior Notes: Build_Plan WP03B security integration gate."
-        },
-        {
-          "label": "Procurement \u00b7 release purchase-ready rows",
-          "status": "completed",
-          "detail": "0 part rows still require price confirmation/order placement."
-        },
-        {
-          "label": "Procurement \u00b7 track in-flight deliveries",
-          "status": "completed",
-          "detail": "0 part rows are ordered and awaiting delivery."
-        },
-        {
-          "label": "Procurement \u00b7 resolve ambiguous stock/receipt rows",
-          "status": "completed",
-          "detail": "0 rows still need confirmation before closeout."
-        },
-        {
-          "label": "Close workstream exit gate",
-          "status": "blocked",
-          "detail": "At least one linked package is blocked. Exit gate: All 7 Schneider selectors (mixed 2-position and 3-position) are on hand, dash hole-enlarging tooling is available, and the hazard switch is separate from the selector count; current allocation still uses the purchased needle fuel-stop switch, so final selector/function map and LCD packaging remain open"
-        }
-      ],
-      "involved_parts": [
-        {
-          "entry_id": "part_hidden_diesel_cutoff_switch",
-          "workstream": "electrical_reset",
-          "item": "Fuel stop switch / hidden diesel cutoff (needle-type switch)",
-          "status": "received",
-          "procurement_stage": "received",
-          "payment_status": "paid",
-          "delivery_status": "received",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_hidden_diesel_cutoff_switch",
-          "evidence_ref": "user_image_2026-03-21_electrical_leftovers|photo_20260420_221819_gp_YV69fbvA|photo_20260421_194401_gp_1dY3fLdw|user_update_2026-05-02_parts_review",
-          "notes": "User confirmed the fuel stop switch is already purchased; simple needle-type switch visible in the April 20/21 control photos. Treat this as the on-hand hidden kill/starter-interrupt arm-disarm switch unless final wiring proves a separate control is needed.",
-          "links": [],
-          "image": {
-            "path": "../../photos/20260420_221819_gp_YV69fbvA.jpg",
-            "caption": "Fuel stop switch / hidden diesel cutoff (needle-type switch) \u00b7 local inventory photo",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260420_221819_gp_YV69fbvA",
-            "matched_tokens": [
-              "photo_20260420_221819_gp_yv69fbva"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
-          }
-        }
-      ],
-      "operation_panels": [],
-      "subtask_groups": [
-        {
-          "key": "dashboard_and_controls",
-          "title": "Dashboard And Controls",
-          "summary": "Dash switch cataloguing, function assignment, fit-up, and electrical integration.",
-          "subtasks": [
-            {
-              "title": "Classify And Tag Control Hardware",
-              "priority": "P0",
-              "remaining": "all dash controls",
-              "instruction": "Identify each switch, knob, warning lamp, and control before drilling or wiring.",
-              "process_steps": [
-                "Lay out all dashboard/control hardware and photograph labels, pins, and mounting hardware.",
-                "Assign each item a control ID and intended function.",
-                "Record hole diameter, mounting depth, connector type, and current condition.",
-                "Separate confirmed controls from unknown, duplicate, or optional controls.",
-                "Bag each control with its nut, bezel, and connector parts."
-              ],
-              "tools": [
-                "Camera",
-                "Calipers",
-                "Multimeter",
-                "Marker"
-              ],
-              "supplies": [
-                "Labels",
-                "Zip bags",
-                "Contact cleaner",
-                "Small parts tray"
-              ],
-              "hold_point": "No dashboard holes or wiring branches are finalized for unknown controls.",
-              "image_tokens": [
-                "switch",
-                "control",
-                "dashboard",
-                "button",
-                "knob"
-              ],
-              "id": "classify_and_tag_control_hardware",
-              "status": "in_progress",
-              "parts": [],
-              "images": [
-                {
-                  "path": "../../photos/20260421_194401_gp_1dY3fLdw.jpeg",
-                  "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
-                  "captured_date": "2026-04-21",
-                  "captured_time": "19:44:01",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_switch_and_control_hardware",
-                  "stage": "electrical_rework",
-                  "media_id": "20260421_194401_gp_1dY3fLdw",
-                  "matched_tokens": [
-                    "20260421_194401_gp_1dy3fldw"
-                  ]
-                },
-                {
-                  "path": "../../photos/20260421_192813_gp_0jvYAo8g_2.jpg",
-                  "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
-                  "captured_date": "2026-04-21",
-                  "captured_time": "19:28:13",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_switch_and_control_hardware",
-                  "stage": "electrical_rework",
-                  "media_id": "20260421_192813_gp_0jvYAo8g_2",
-                  "matched_tokens": [
-                    "20260421_192813_gp_0jvyao8g"
-                  ]
-                },
-                {
-                  "path": "../../photos/20260422_074709_gp_o4wiXyjA.jpg",
-                  "caption": "Dashboard Shell And Bulkhead \u00b7 Stripdown Cataloguing \u00b7 2026-04-22",
-                  "captured_date": "2026-04-22",
-                  "captured_time": "07:47:09",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_shell_and_bulkhead",
-                  "stage": "stripdown_cataloguing",
-                  "media_id": "20260422_074709_gp_o4wiXyjA",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260413_040719.jpg",
-                  "caption": "Dashboard Shell And Cabin \u00b7 Stripdown Cataloguing \u00b7 2026-04-13",
-                  "captured_date": "2026-04-13",
-                  "captured_time": "04:07:19",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_shell_and_cabin",
-                  "stage": "stripdown_cataloguing",
-                  "media_id": "20260413_040719",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260323_211028_gp_7IYxU7Wg.jpg",
-                  "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-                  "captured_date": "2026-03-23",
-                  "captured_time": "21:10:28",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_and_cabin_stripdown",
-                  "stage": "stripdown_cataloguing",
-                  "media_id": "20260323_211028_gp_7IYxU7Wg",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260323_211006_gp_lhopOh5A.jpg",
-                  "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-                  "captured_date": "2026-03-23",
-                  "captured_time": "21:10:06",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_and_cabin_stripdown",
-                  "stage": "stripdown_cataloguing",
-                  "media_id": "20260323_211006_gp_lhopOh5A",
-                  "matched_tokens": []
-                }
-              ],
-              "registered_items": [
-                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)"
-              ]
-            },
-            {
-              "title": "Define Switch Function Map",
-              "priority": "P0",
-              "remaining": "before harness build",
-              "instruction": "Lock what each control does and which circuit it belongs to.",
-              "process_steps": [
-                "List each required function: ignition, lights, hazards, wipers, heater, fuel stop/security, and accessories.",
-                "Assign one physical control to each function and mark optional controls as deferred.",
-                "Confirm switch rating, pinout, illumination behavior, and fuse/relay need.",
-                "Update the wiring tracker with wire size, fuse value source, and connector plan.",
-                "Label the control and matching loom branch with the same ID."
-              ],
-              "tools": [
-                "Multimeter",
-                "Power supply/test battery with fuse",
-                "Wiring tracker"
-              ],
-              "supplies": [
-                "Labels",
-                "Heat shrink ID sleeves",
-                "Fuses/relays as planned",
-                "Connector housings"
-              ],
-              "hold_point": "A circuit cannot be wired until its switch function, protection, and connector are defined.",
-              "image_tokens": [
-                "switch",
-                "wiring",
-                "dash",
-                "control",
-                "connector"
-              ],
-              "id": "define_switch_function_map",
-              "status": "queued",
-              "parts": [],
-              "images": [
-                {
-                  "path": "../../photos/20260421_194401_gp_1dY3fLdw.jpeg",
-                  "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
-                  "captured_date": "2026-04-21",
-                  "captured_time": "19:44:01",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_switch_and_control_hardware",
-                  "stage": "electrical_rework",
-                  "media_id": "20260421_194401_gp_1dY3fLdw",
-                  "matched_tokens": [
-                    "20260421_194401_gp_1dy3fldw"
-                  ]
-                },
-                {
-                  "path": "../../photos/20260421_192813_gp_0jvYAo8g_2.jpg",
-                  "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
-                  "captured_date": "2026-04-21",
-                  "captured_time": "19:28:13",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_switch_and_control_hardware",
-                  "stage": "electrical_rework",
-                  "media_id": "20260421_192813_gp_0jvYAo8g_2",
-                  "matched_tokens": [
-                    "20260421_192813_gp_0jvyao8g"
-                  ]
-                },
-                {
-                  "path": "../../photos/20260422_074709_gp_o4wiXyjA.jpg",
-                  "caption": "Dashboard Shell And Bulkhead \u00b7 Stripdown Cataloguing \u00b7 2026-04-22",
-                  "captured_date": "2026-04-22",
-                  "captured_time": "07:47:09",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_shell_and_bulkhead",
-                  "stage": "stripdown_cataloguing",
-                  "media_id": "20260422_074709_gp_o4wiXyjA",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260413_040719.jpg",
-                  "caption": "Dashboard Shell And Cabin \u00b7 Stripdown Cataloguing \u00b7 2026-04-13",
-                  "captured_date": "2026-04-13",
-                  "captured_time": "04:07:19",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_shell_and_cabin",
-                  "stage": "stripdown_cataloguing",
-                  "media_id": "20260413_040719",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260323_211028_gp_7IYxU7Wg.jpg",
-                  "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-                  "captured_date": "2026-03-23",
-                  "captured_time": "21:10:28",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_and_cabin_stripdown",
-                  "stage": "stripdown_cataloguing",
-                  "media_id": "20260323_211028_gp_7IYxU7Wg",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260323_211006_gp_lhopOh5A.jpg",
-                  "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-                  "captured_date": "2026-03-23",
-                  "captured_time": "21:10:06",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_and_cabin_stripdown",
-                  "stage": "stripdown_cataloguing",
-                  "media_id": "20260323_211006_gp_lhopOh5A",
-                  "matched_tokens": []
-                }
-              ],
-              "registered_items": [
-                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)"
-              ]
-            },
-            {
-              "title": "Complete Dash Fit And Mounting Checks",
-              "priority": "P1",
-              "remaining": "before fascia closeout",
-              "instruction": "Check physical fit before paint, trim, or wiring makes rework expensive.",
-              "process_steps": [
-                "Mock the switch/control layout in the actual dash panel or template.",
-                "Check rear clearance for wiring, nuts, heater ducts, column, and glovebox/trim.",
-                "Drill or file holes only after layout is approved.",
-                "Deburr, prime exposed metal edges, and fit grommets or edge protection where needed.",
-                "Install controls finger-tight and photograph final allocation."
-              ],
-              "tools": [
-                "Step drill",
-                "Files",
-                "Deburring tool",
-                "Calipers",
-                "Inspection mirror"
-              ],
-              "supplies": [
-                "Edge primer",
-                "Grommets",
-                "Control nuts/washers",
-                "Protective tape"
-              ],
-              "hold_point": "Controls mount without forcing, twisting wiring, or fouling the dash structure.",
-              "image_tokens": [
-                "dashboard",
-                "fascia",
-                "switch",
-                "control",
-                "fit"
-              ],
-              "id": "complete_dash_fit_and_mounting_checks",
-              "status": "queued",
-              "parts": [],
-              "images": [
-                {
-                  "path": "../../photos/20260421_194401_gp_1dY3fLdw.jpeg",
-                  "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
-                  "captured_date": "2026-04-21",
-                  "captured_time": "19:44:01",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_switch_and_control_hardware",
-                  "stage": "electrical_rework",
-                  "media_id": "20260421_194401_gp_1dY3fLdw",
-                  "matched_tokens": [
-                    "20260421_194401_gp_1dy3fldw"
-                  ]
-                },
-                {
-                  "path": "../../photos/20260421_192813_gp_0jvYAo8g_2.jpg",
-                  "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
-                  "captured_date": "2026-04-21",
-                  "captured_time": "19:28:13",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_switch_and_control_hardware",
-                  "stage": "electrical_rework",
-                  "media_id": "20260421_192813_gp_0jvYAo8g_2",
-                  "matched_tokens": [
-                    "20260421_192813_gp_0jvyao8g"
-                  ]
-                },
-                {
-                  "path": "../../photos/20260323_190005.jpg",
-                  "caption": "Dashboard Lower Structure \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-                  "captured_date": "2026-03-23",
-                  "captured_time": "19:00:05",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_lower_structure",
-                  "stage": "stripdown_cataloguing",
-                  "media_id": "20260323_190005",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260422_074709_gp_o4wiXyjA.jpg",
-                  "caption": "Dashboard Shell And Bulkhead \u00b7 Stripdown Cataloguing \u00b7 2026-04-22",
-                  "captured_date": "2026-04-22",
-                  "captured_time": "07:47:09",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_shell_and_bulkhead",
-                  "stage": "stripdown_cataloguing",
-                  "media_id": "20260422_074709_gp_o4wiXyjA",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260413_040719.jpg",
-                  "caption": "Dashboard Shell And Cabin \u00b7 Stripdown Cataloguing \u00b7 2026-04-13",
-                  "captured_date": "2026-04-13",
-                  "captured_time": "04:07:19",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_shell_and_cabin",
-                  "stage": "stripdown_cataloguing",
-                  "media_id": "20260413_040719",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260323_211028_gp_7IYxU7Wg.jpg",
-                  "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-                  "captured_date": "2026-03-23",
-                  "captured_time": "21:10:28",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_and_cabin_stripdown",
-                  "stage": "stripdown_cataloguing",
-                  "media_id": "20260323_211028_gp_7IYxU7Wg",
-                  "matched_tokens": []
-                }
-              ],
-              "registered_items": [
-                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)"
-              ]
-            },
-            {
-              "title": "Wire, Label, And Function Test",
-              "priority": "P0",
-              "remaining": "after harness branch build",
-              "instruction": "Integrate controls into protected, labelled circuits and test before closeout.",
-              "process_steps": [
-                "Build each branch with strain relief, heat shrink, and service loop.",
-                "Crimp with the correct die and tug-test each terminal.",
-                "Route wiring away from sharp edges, heater movement, pedals, and column movement.",
-                "Test continuity, switch function, fuse behavior, and relay operation.",
-                "Photograph final routing and label positions before trim covers them."
-              ],
-              "tools": [
-                "Ratchet crimper",
-                "Heat gun",
-                "Multimeter",
-                "Test lamp",
-                "Fuse-protected test lead"
-              ],
-              "supplies": [
-                "Automotive wire",
-                "Terminals",
-                "Heat shrink",
-                "Loom sleeve",
-                "Loom tape",
-                "Labels"
-              ],
-              "hold_point": "Every fitted control must work and be labelled before dash closure.",
-              "image_tokens": [
-                "wiring",
-                "dashboard",
-                "loom",
-                "connector",
-                "switch"
-              ],
-              "id": "wire_label_and_function_test",
-              "status": "queued",
-              "parts": [],
-              "images": [
-                {
-                  "path": "../../photos/20260421_194401_gp_1dY3fLdw.jpeg",
-                  "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
-                  "captured_date": "2026-04-21",
-                  "captured_time": "19:44:01",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_switch_and_control_hardware",
-                  "stage": "electrical_rework",
-                  "media_id": "20260421_194401_gp_1dY3fLdw",
-                  "matched_tokens": [
-                    "20260421_194401_gp_1dy3fldw"
-                  ]
-                },
-                {
-                  "path": "../../photos/20260421_192813_gp_0jvYAo8g_2.jpg",
-                  "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
-                  "captured_date": "2026-04-21",
-                  "captured_time": "19:28:13",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_switch_and_control_hardware",
-                  "stage": "electrical_rework",
-                  "media_id": "20260421_192813_gp_0jvYAo8g_2",
-                  "matched_tokens": [
-                    "20260421_192813_gp_0jvyao8g"
-                  ]
-                },
-                {
-                  "path": "../../photos/20260422_074709_gp_o4wiXyjA.jpg",
-                  "caption": "Dashboard Shell And Bulkhead \u00b7 Stripdown Cataloguing \u00b7 2026-04-22",
-                  "captured_date": "2026-04-22",
-                  "captured_time": "07:47:09",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_shell_and_bulkhead",
-                  "stage": "stripdown_cataloguing",
-                  "media_id": "20260422_074709_gp_o4wiXyjA",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260413_040719.jpg",
-                  "caption": "Dashboard Shell And Cabin \u00b7 Stripdown Cataloguing \u00b7 2026-04-13",
-                  "captured_date": "2026-04-13",
-                  "captured_time": "04:07:19",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_shell_and_cabin",
-                  "stage": "stripdown_cataloguing",
-                  "media_id": "20260413_040719",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260323_211028_gp_7IYxU7Wg.jpg",
-                  "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-                  "captured_date": "2026-03-23",
-                  "captured_time": "21:10:28",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_and_cabin_stripdown",
-                  "stage": "stripdown_cataloguing",
-                  "media_id": "20260323_211028_gp_7IYxU7Wg",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260323_211006_gp_lhopOh5A.jpg",
-                  "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
-                  "captured_date": "2026-03-23",
-                  "captured_time": "21:10:06",
-                  "media_type": "photo",
-                  "component_group": "interior_cabin",
-                  "specific_component": "dashboard_and_cabin_stripdown",
-                  "stage": "stripdown_cataloguing",
-                  "media_id": "20260323_211006_gp_lhopOh5A",
-                  "matched_tokens": []
-                }
-              ],
-              "registered_items": [
-                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)"
-              ]
-            }
-          ]
-        }
-      ],
-      "electrical_spec_layout": {
-        "scope": "dashboard_focus",
-        "title": "Electrical Master - Clear Tracker (As-Built + Remaining Work)",
-        "last_updated": "2026-04-15 05:48",
-        "purpose": "one-page wiring progress + locked standards + quick lookup",
-        "source_refs": [
-          "data/manual/workbook_tabs/electrical_master.csv",
-          "data/manual/workbook_tabs/electrical_templates.csv"
-        ],
-        "layout_templates": [
-          {
-            "label": "NAL Drill Template (300mm x 200mm, 1:1)",
-            "source_ref": "workbook_electrical_templates#row_16"
-          },
-          {
-            "label": "FUSE BOX",
-            "source_ref": "workbook_electrical_templates#row_17"
-          },
-          {
-            "label": "RELAY ROW (5x)",
-            "source_ref": "workbook_electrical_templates#row_18"
-          },
-          {
-            "label": "CENTRAL LOCKING",
-            "source_ref": "workbook_electrical_templates#row_19"
-          },
-          {
-            "label": "MAIN LOOM EXIT",
-            "source_ref": "workbook_electrical_templates#row_20"
-          }
-        ],
-        "wiring_progress_tracker": [
-          {
-            "priority": "B",
-            "area": "Fuse Plan",
-            "task": "Dash and MIDI fuse sizing reconciled (incl. EPS 60A, Glow 50A)",
-            "status": "Done",
-            "done": "Yes",
-            "current_state": "Fuse sizing documented for current electrical load plan.",
-            "next_action": "Verify against final accessory additions.",
-            "dependency": "Any major load change",
-            "parts_tools_impact": "Only if load changes"
-          },
-          {
-            "priority": "A",
-            "area": "Switch Panel",
-            "task": "Install Schneider selector controls and separate needle fuel-stop switch",
-            "status": "In Progress",
-            "done": "Yes - all 7 Schneider received",
-            "current_state": "All 7 Schneider selectors are received. Current allocation uses selectors for wipers, lights, spot lamps, aux/spare, blower, and A/C clutch; fuel-stop uses the purchased needle-type switch.",
-            "next_action": "Mount assigned selectors and the needle fuel-stop switch; confirm spare/aux use.",
-            "dependency": "Dash panel machining complete",
-            "parts_tools_impact": "No new switch purchase; tools for hole sizing / panel work"
-          },
-          {
-            "priority": "A",
-            "area": "Dash Fabrication",
-            "task": "Machine/enlarge dashboard holes to 22 mm and confirm cluster spacing",
-            "status": "In Progress",
-            "done": "Partial",
-            "current_state": "Hole-enlarging tools are now available; panel prep can move from procurement wait to controlled machining/test-fit.",
-            "next_action": "Open one sample hole or existing pull-switch hole to 22 mm, deburr/protect edges, then confirm center spacing and rear clearance before completing all holes.",
-            "dependency": "Switch allocation and careful measurement",
-            "parts_tools_impact": "22 mm step drill/chassis punch/precision cutter on hand"
-          },
-          {
-            "priority": "A",
-            "area": "Fuel Stop Control",
-            "task": "Ensure ignition OFF reliably cuts diesel fuel-stop; retain manual cable backup",
-            "status": "Pending",
-            "done": "No",
-            "current_state": "Needle-type fuel-stop/hidden cutoff switch is already purchased and photographed; ignition-linked behavior still needs final wiring.",
-            "next_action": "Wire and test shutdown behavior with engine running.",
-            "dependency": "Switch panel + ignition wiring final",
-            "parts_tools_impact": "Use on-hand needle-type switch; no new switch buy"
-          },
-          {
-            "priority": "B",
-            "area": "Security",
-            "task": "Upgrade ignition/key security (current keying not secure)",
-            "status": "Pending",
-            "done": "No",
-            "current_state": "Current lock/key setup can be defeated too easily.",
-            "next_action": "Select and install improved barrel/key solution.",
-            "dependency": "Mechanical lock choice",
-            "parts_tools_impact": "Likely parts purchase in Parts tab"
-          },
-          {
-            "priority": "B",
-            "area": "Grounding",
-            "task": "Verify battery/chassis, engine/chassis, and dash grounds after tub-off work",
-            "status": "In Progress",
-            "done": "Partial",
-            "current_state": "Ground architecture defined; needs post-work physical validation.",
-            "next_action": "Clean points, torque, and coat after final fit.",
-            "dependency": "Tub/chassis work completion",
-            "parts_tools_impact": "Ground straps/hardware if needed"
-          }
-        ],
-        "locked_as_built_standards": [
-          {
-            "standard": "Relay/wire heat-shrink coding",
-            "decision": "Use current two-band combinations from available colours only",
-            "why_locked": "Local material availability is limited; current codes are already workable and implemented.",
-            "revisit_trigger": "Only revisit if full colour inventory becomes available and relabel effort is justified."
-          },
-          {
-            "standard": "Relay positions (T1-T5, B1-B5)",
-            "decision": "Keep current relay position/function map",
-            "why_locked": "Physical layout and wiring branches are already built to this map.",
-            "revisit_trigger": "Only revisit if adding/removing major circuits."
-          },
-          {
-            "standard": "Connector IDs (X1-X10)",
-            "decision": "Keep current connector naming and branch pairing",
-            "why_locked": "As-built pinout and loom labels depend on these IDs.",
-            "revisit_trigger": "Only revisit if connector hardware changes."
-          },
-          {
-            "standard": "Loom IDs (HD1, L2, L3, L4, L5A, L5B, L6)",
-            "decision": "Keep existing loom labels and routes",
-            "why_locked": "Routing, branch references, and diagnostics depend on this naming.",
-            "revisit_trigger": "Only revisit if loom is rebuilt."
-          }
-        ],
-        "relay_quick_lookup": [
-          {
-            "relay_pos": "T1",
-            "function": "Low beam",
-            "relay_colour": "Yellow",
-            "power_code": "Yellow + Blue",
-            "power_loom": "Front Trunk",
-            "wire_size": "2.5 mm\u00b2",
-            "control_loom": "Left Branch",
-            "implementation_status": "Active / as-built"
-          },
-          {
-            "relay_pos": "T2",
-            "function": "High beam",
-            "relay_colour": "Green",
-            "power_code": "Yellow + Green",
-            "power_loom": "Front Trunk",
-            "wire_size": "2.5 mm\u00b2",
-            "control_loom": "Left Branch",
-            "implementation_status": "Active / as-built"
-          },
-          {
-            "relay_pos": "T3",
-            "function": "Horn",
-            "relay_colour": "White",
-            "power_code": "Yellow + Red",
-            "power_loom": "Front Trunk",
-            "wire_size": "2.5 mm\u00b2",
-            "control_loom": "Left Branch",
-            "implementation_status": "Active / as-built; no duplicate relay buy"
-          },
-          {
-            "relay_pos": "T4",
-            "function": "Condenser fan",
-            "relay_colour": "Orange",
-            "power_code": "Blue + Green",
-            "power_loom": "Front Trunk",
-            "wire_size": "2.5 mm\u00b2",
-            "control_loom": "VC",
-            "implementation_status": "Active / as-built"
-          }
-        ],
-        "connector_quick_lookup": [
-          {
-            "connector": "X3",
-            "type": "8-way Deutsch pair",
-            "loom_or_branch": "Left branch",
-            "terminated_circuits": "LB-01..LB-08",
-            "status": "Installed",
-            "notes": "Left branch dash disconnect"
-          },
-          {
-            "connector": "X4",
-            "type": "8-way Deutsch pair",
-            "loom_or_branch": "Right branch",
-            "terminated_circuits": "RB-01..RB-08",
-            "status": "Installed",
-            "notes": "Right branch dash disconnect"
-          },
-          {
-            "connector": "X5",
-            "type": "6-way Deutsch pair",
-            "loom_or_branch": "Ignition loom",
-            "terminated_circuits": "IGN-02..IGN-07",
-            "status": "Installed",
-            "notes": "Ignition small-wire disconnect"
-          }
-        ],
-        "loom_quick_lookup": [
-          {
-            "loom_id": "L4",
-            "loom_name": "ignition",
-            "build_makeup": "1 x 10 main, 1 x 2.5, 5 x 1.5 mm\u00b2",
-            "primary_role": "Dash power and ignition distribution",
-            "status": "Built / verify after tub work"
-          },
-          {
-            "loom_id": "L5A",
-            "loom_name": "left branch",
-            "build_makeup": "1 x 2.5, 3 x 1.5, 4 x 1.0 mm\u00b2",
-            "primary_role": "Column + left-dash branch",
-            "status": "Built / verify after tub work"
-          },
-          {
-            "loom_id": "L5B",
-            "loom_name": "right branch",
-            "build_makeup": "2 x 2.5, 3 x 1.5, 4 x 1.0 mm\u00b2",
-            "primary_role": "Right-dash + cabin branch",
-            "status": "Built / verify after tub work"
-          }
-        ],
-        "minimum_electrical_gate": [
-          {
-            "step": "3",
-            "action": "Complete dash switch panel machining and Schneider switch installation",
-            "target_stage": "Before dash close-out",
-            "status": "In Progress"
-          }
-        ]
-      }
     },
     {
       "id": "electrical_reset",
@@ -17820,6 +16266,151 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
+      "fabrication_packages": [
+        {
+          "requirement_id": "FAB-ELEC-001",
+          "system": "electrical_reset",
+          "package_id": "electrical_modules_rev_a",
+          "title": "Electrical modules Rev A",
+          "current_status": "reference_provisional",
+          "release_position": "Earlier combined under-bonnet relay/power module route with relay tray, power module box, and rear insulator.",
+          "notes": "Keep as reference/provisional unless the combined module route is deliberately reopened.",
+          "package_dir": "data/manual/fabrication/electrical_modules_rev_a",
+          "primary_links": [
+            {
+              "url": "../../data/manual/fabrication/electrical_modules_rev_a/README.md",
+              "label": "README"
+            },
+            {
+              "url": "../../data/manual/fabrication/electrical_modules_rev_a/j40_electrical_modules_rev_a_dimension_sheet.pdf",
+              "label": "PDF"
+            },
+            {
+              "url": "../../data/manual/fabrication/electrical_modules_rev_a/README.md",
+              "label": "Source spec"
+            }
+          ],
+          "dxf_links": [
+            {
+              "url": "../../data/manual/fabrication/electrical_modules_rev_a/relay_module_tray_rev_a.dxf",
+              "label": "relay_module_tray_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/electrical_modules_rev_a/power_module_box_rev_a.dxf",
+              "label": "power_module_box_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/electrical_modules_rev_a/power_module_rear_insulator_rev_a.dxf",
+              "label": "power_module_rear_insulator_rev_a.dxf"
+            }
+          ],
+          "svg_links": [
+            {
+              "url": "../../data/manual/fabrication/electrical_modules_rev_a/relay_module_tray_rev_a.svg",
+              "label": "relay_module_tray_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/electrical_modules_rev_a/power_module_box_rev_a.svg",
+              "label": "power_module_box_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/electrical_modules_rev_a/power_module_rear_insulator_rev_a.svg",
+              "label": "power_module_rear_insulator_rev_a.svg"
+            }
+          ],
+          "file_count": 9
+        },
+        {
+          "requirement_id": "FAB-ELEC-002",
+          "system": "electrical_reset",
+          "package_id": "midi5_plate_mount_rev_c",
+          "title": "MIDI 5-way plate mount Rev C",
+          "current_status": "current_release",
+          "release_position": "Current recommended open MIDI holder mount: aluminium plate plus non-conductive holder subplate.",
+          "notes": "Use 10-12 mm spacers and add cable support after final routing is known.",
+          "package_dir": "data/manual/fabrication/midi5_plate_mount_rev_c",
+          "primary_links": [
+            {
+              "url": "../../data/manual/fabrication/midi5_plate_mount_rev_c/README.md",
+              "label": "README"
+            },
+            {
+              "url": "../../data/manual/fabrication/midi5_plate_mount_rev_c/j40_midi5_plate_mount_rev_c_dimension_sheet.pdf",
+              "label": "PDF"
+            },
+            {
+              "url": "../../data/manual/fabrication/midi5_plate_mount_rev_c/README.md",
+              "label": "Source spec"
+            }
+          ],
+          "dxf_links": [
+            {
+              "url": "../../data/manual/fabrication/midi5_plate_mount_rev_c/midi5_mount_plate_rev_c.dxf",
+              "label": "midi5_mount_plate_rev_c.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/midi5_plate_mount_rev_c/midi5_holder_subplate_rev_c.dxf",
+              "label": "midi5_holder_subplate_rev_c.dxf"
+            }
+          ],
+          "svg_links": [
+            {
+              "url": "../../data/manual/fabrication/midi5_plate_mount_rev_c/midi5_mount_plate_rev_c.svg",
+              "label": "midi5_mount_plate_rev_c.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/midi5_plate_mount_rev_c/midi5_holder_subplate_rev_c.svg",
+              "label": "midi5_holder_subplate_rev_c.svg"
+            }
+          ],
+          "file_count": 7
+        },
+        {
+          "requirement_id": "FAB-ELEC-003",
+          "system": "electrical_reset",
+          "package_id": "relay_mount_rev_c",
+          "title": "Relay mount Rev C",
+          "current_status": "current_release",
+          "release_position": "Current recommended relay-box carrier and rear guard package for the DAIER prewired 10-way relay/fuse box.",
+          "notes": "Keep the loom opening downward and do not fully seal the relay box rear.",
+          "package_dir": "data/manual/fabrication/relay_mount_rev_c",
+          "primary_links": [
+            {
+              "url": "../../data/manual/fabrication/relay_mount_rev_c/README.md",
+              "label": "README"
+            },
+            {
+              "url": "../../data/manual/fabrication/relay_mount_rev_c/j40_relay_mount_rev_c_dimension_sheet.pdf",
+              "label": "PDF"
+            },
+            {
+              "url": "../../data/manual/fabrication/relay_mount_rev_c/README.md",
+              "label": "Source spec"
+            }
+          ],
+          "dxf_links": [
+            {
+              "url": "../../data/manual/fabrication/relay_mount_rev_c/relay_carrier_rev_c.dxf",
+              "label": "relay_carrier_rev_c.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/relay_mount_rev_c/relay_rear_guard_rev_c.dxf",
+              "label": "relay_rear_guard_rev_c.dxf"
+            }
+          ],
+          "svg_links": [
+            {
+              "url": "../../data/manual/fabrication/relay_mount_rev_c/relay_carrier_rev_c.svg",
+              "label": "relay_carrier_rev_c.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/relay_mount_rev_c/relay_rear_guard_rev_c.svg",
+              "label": "relay_rear_guard_rev_c.svg"
+            }
+          ],
+          "file_count": 7
+        }
+      ],
       "linked_packages": [
         {
           "work_package_id": "WP03",
@@ -17831,6 +16422,17 @@ window.J40_DASHBOARD_DATA = {
           "gate_to_close": "Start/charge/lights/horn/wipers/gauges baseline passes functional checks.",
           "key_procurement_actions": "Order selected harness/sleeving path; verify on-hand connectors/relays before duplicate buys.",
           "evidence_signal": "electrical_rework_photos=18"
+        },
+        {
+          "work_package_id": "WP03F",
+          "title": "Fabrication Drawing Handoff",
+          "lane": "fabrication",
+          "current_state": "in_progress",
+          "objective": "Send and track the rubber recreation and electrical mount fabrication packages.",
+          "blocker_summary": "Rubber final batch still has measurement holds; electrical combined-module route is reference/provisional.",
+          "gate_to_close": "Fabricator has the current package files and first articles are accepted before batch production or loom/body closeout.",
+          "key_procurement_actions": "Use the Fabrication workstream package links; do not fabricate superseded electrical routes unless deliberately reopened.",
+          "evidence_signal": "4 fabrication package rows with PDF/DXF/SVG outputs"
         }
       ],
       "component_jobs": [
@@ -17861,6 +16463,11 @@ window.J40_DASHBOARD_DATA = {
           "detail": "Clean earth points and confirm firewall passes are protected and grommeted."
         },
         {
+          "label": "Fabricate fuse and relay mounts",
+          "status": "queued",
+          "detail": "Use the controlled electrical DXF/PDF packages before permanent loom routing."
+        },
+        {
           "label": "Run fuse/relay function checks",
           "status": "queued",
           "detail": "Validate start, charge, lights, horn, and wiper baseline behavior."
@@ -17874,6 +16481,11 @@ window.J40_DASHBOARD_DATA = {
           "label": "WP03 \u00b7 Electrical Baseline Finalization",
           "status": "queued",
           "detail": "Complete baseline harness termination, grounding, and fuse/relay validation. Blocker: 1 electrical buy rows still open; 2 rows should be stock-verified before re-buy. Procurement: Order selected harness/sleeving path; verify on-hand connectors/relays before duplicate buys. Gate: Start/charge/lights/horn/wipers/gauges baseline passes functional checks."
+        },
+        {
+          "label": "WP03F \u00b7 Fabrication Drawing Handoff",
+          "status": "in_progress",
+          "detail": "Send and track the rubber recreation and electrical mount fabrication packages. Blocker: Rubber final batch still has measurement holds; electrical combined-module route is reference/provisional. Procurement: Use the Fabrication workstream package links; do not fabricate superseded electrical routes unless deliberately reopened. Gate: Fabricator has the current package files and first articles are accepted before batch production or loom/body closeout."
         },
         {
           "label": "Issue checks",
@@ -17902,8 +16514,8 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Close workstream exit gate",
-          "status": "queued",
-          "detail": "Linked package execution is queued. Exit gate: Base electrical system is clean documented and functional"
+          "status": "in_progress",
+          "detail": "Linked package execution is active. Exit gate: Base electrical system is clean documented and functional"
         }
       ],
       "involved_parts": [
@@ -19519,6 +18131,5018 @@ window.J40_DASHBOARD_DATA = {
       }
     },
     {
+      "id": "fabrication_handoff",
+      "title": "Fabrication",
+      "phase": "04b_fabrication_handoff",
+      "status": "in_progress",
+      "priority": "high",
+      "primary_location": "home_and_workshop",
+      "owner_mode": "mixed",
+      "depends_on": [
+        "chassis_rubbers",
+        "electrical_reset"
+      ],
+      "next_action": "Use the ready-to-run DXF/SVG/PDF packages as the controlled send-out set for rubber recreation and electrical mounts",
+      "exit_gate": "Fabrication packages are visible in the UI, sent out with PDF/DXF/SVG files, first articles are tracked, and superseded routes are not accidentally fabricated",
+      "notes": "Dedicated fabrication handoff track for drawing packages, supplier send-out, first-article review, and release holds. Includes rubber recreation plus the three defined electrical fabrication requirements.",
+      "evidence_source": [
+        "docs_fabrication_handoff_index",
+        "data_manual_fabrication",
+        "rubber_recreation_rev_a",
+        "midi5_plate_mount_rev_c",
+        "relay_mount_rev_c",
+        "electrical_modules_rev_a"
+      ],
+      "images": [
+        {
+          "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:44:42",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004442_gp_7WcFHjLQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:44:37",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004437_gp_f1TySzww",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:44:29",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004429_gp_KJHxGcCA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:44:19",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004419_gp_ZPXJRBzg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:44:13",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004413_gp_Qno8OVRg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004401_gp_otUSjgGA.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:44:01",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004401_gp_otUSjgGA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:43:45",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004345_gp_yK8VYzMQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004337_gp_m2OagYpg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:43:37",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004337_gp_m2OagYpg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004314_gp_wuzpgNrA.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:43:14",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004314_gp_wuzpgNrA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004254_gp_Hm9RR5DQ.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:42:54",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004254_gp_Hm9RR5DQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:42:31",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004231_gp_CfosvPIg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:42:22",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004222_gp_PKRe5HSQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004215_gp_evgCLjSw.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:42:15",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004215_gp_evgCLjSw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:42:01",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004201_gp_zfUSmKJg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260405_010322_gp_0chs4MQg.jpg",
+          "caption": "Fuse Distribution And Wiring \u00b7 Procurement Reconciliation \u00b7 2026-04-05",
+          "captured_date": "2026-04-05",
+          "captured_time": "01:03:22",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_wiring",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260405_010322_gp_0chs4MQg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260404_192619_gp_jsR1m0RQ.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+          "captured_date": "2026-04-04",
+          "captured_time": "19:26:19",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260404_192619_gp_jsR1m0RQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260404_192618.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+          "captured_date": "2026-04-04",
+          "captured_time": "19:26:18",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260404_192618",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260404_192614.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+          "captured_date": "2026-04-04",
+          "captured_time": "19:26:14",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260404_192614",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260404_192608_gp_GvlqkRrw.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+          "captured_date": "2026-04-04",
+          "captured_time": "19:26:08",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260404_192608_gp_GvlqkRrw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260404_095838_gp_oiOOHmHA.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+          "captured_date": "2026-04-04",
+          "captured_time": "09:58:38",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260404_095838_gp_oiOOHmHA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260404_095833_gp_S7uQMzXA.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+          "captured_date": "2026-04-04",
+          "captured_time": "09:58:33",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260404_095833_gp_S7uQMzXA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260404_040022_gp_E6EzzfuQ.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+          "captured_date": "2026-04-04",
+          "captured_time": "04:00:22",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260404_040022_gp_E6EzzfuQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_234817_gp_83HD1ieg.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "23:48:17",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_234817_gp_83HD1ieg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_210548_gp_lQR2yH2Q.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "21:05:48",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_210548_gp_lQR2yH2Q",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_205909_gp_BdIDB36A.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "20:59:09",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_205909_gp_BdIDB36A",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_204223_gp_TuNmq2PA.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "20:42:23",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_204223_gp_TuNmq2PA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_204222.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "20:42:22",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_204222",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_202319_gp_dmuZGYEg.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "20:23:19",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_202319_gp_dmuZGYEg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_195524_gp_vSsn2KuA.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "19:55:24",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_195524_gp_vSsn2KuA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_005114_gp_muIt66Fw.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:51:14",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_005114_gp_muIt66Fw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_005113.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:51:13",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_005113",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_005109_gp_ffAv1oWQ.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:51:09",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_005109_gp_ffAv1oWQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_005107.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:51:07",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_005107",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_005102_gp_5ND0cbQA.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:51:02",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_005102_gp_5ND0cbQA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_005101.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:51:01",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_005101",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_005052_gp_F1otrVZA.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:50:52",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_005052_gp_F1otrVZA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_005051.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:50:51",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_005051",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_004146_gp_eN3BHWzQ.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:41:46",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_004146_gp_eN3BHWzQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_004145.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:41:45",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_004145",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_004142_gp_2wmxtb3A.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:41:42",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_004142_gp_2wmxtb3A",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_004136_gp_K59gVoXw.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:41:36",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_004136_gp_K59gVoXw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
+          "caption": "Rubber Grommet Assortment \u00b7 Procurement Reconciliation \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "03:43:58",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_grommet_assortment",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260422_034358_gp_Bg6nSlPw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_220217_gp_dpH3Q75A.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "22:02:17",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_220217_gp_dpH3Q75A",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_220210_gp_YR8onehw.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "22:02:10",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_220210_gp_YR8onehw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_143143_gp_kXn8JZ0w.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "14:31:43",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_143143_gp_kXn8JZ0w",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_143141.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "14:31:41",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_143141",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_143136_gp_jEpok4ng.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "14:31:36",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_143136_gp_jEpok4ng",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_143135.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "14:31:35",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_143135",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_143127_gp_ZKLRVwVw.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "14:31:27",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_143127_gp_ZKLRVwVw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_143125.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "14:31:25",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_143125",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_071159_gp_3matxuBg.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "07:11:59",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_071159_gp_3matxuBg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_071157.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "07:11:57",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_071157",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_071155_gp_vFGJ415w.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "07:11:55",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_071155_gp_vFGJ415w",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_071153.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "07:11:53",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_071153",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_065032_gp_nShQBqwA.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "06:50:32",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_065032_gp_nShQBqwA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_065030.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "06:50:30",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_065030",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_230529_gp_S6Puwnqg.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "23:05:29",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_230529_gp_S6Puwnqg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_230527.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "23:05:27",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_230527",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_230524_gp_6KKNNmDA.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "23:05:24",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_230524_gp_6KKNNmDA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_230522.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "23:05:22",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_230522",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_212305_gp_OSz8RLcQ.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "21:23:05",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_212305_gp_OSz8RLcQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_212304.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "21:23:04",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_212304",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_202237_gp_3ukqdjnQ.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "20:22:37",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_202237_gp_3ukqdjnQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_202235.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "20:22:35",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_202235",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_202228_gp_oYEtAYJQ.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "20:22:28",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_202228_gp_oYEtAYJQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_202224_gp_WdlDKm8Q.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "20:22:24",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_202224_gp_WdlDKm8Q",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_202220_gp_U3QfMT6Q.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "20:22:20",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_202220_gp_U3QfMT6Q",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_201518_gp_cmbHWXsQ.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "20:15:18",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_201518_gp_cmbHWXsQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_185920_gp_5azmXxKA.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "18:59:20",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_185920_gp_5azmXxKA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_185919.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "18:59:19",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_185919",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_185331_gp_1xsXqb1w.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "18:53:31",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_185331_gp_1xsXqb1w",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_185330.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "18:53:30",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_185330",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_185326_gp_sU4VoiEw.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "18:53:26",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_185326_gp_sU4VoiEw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_185317_gp_ZE6FscRQ.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "18:53:17",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_185317_gp_ZE6FscRQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_184352_gp_EonAOl1Q.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "18:43:52",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_184352_gp_EonAOl1Q",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_184310_gp_iUReC6rw.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "18:43:10",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_184310_gp_iUReC6rw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_183545_gp_6REyweSw.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "18:35:45",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_183545_gp_6REyweSw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_183145_gp_8T8rNHbA.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "18:31:45",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_183145_gp_8T8rNHbA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_182825_gp_Sma4A1tw.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "18:28:25",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_182825_gp_Sma4A1tw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_182733_gp_53YGQ88w.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "18:27:33",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_182733_gp_53YGQ88w",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_182424_gp_48iqI43w.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "18:24:24",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_182424_gp_48iqI43w",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_182349_gp_GkTmsROg.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "18:23:49",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_182349_gp_GkTmsROg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_181153_gp_qrlIG9Jg.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "18:11:53",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_181153_gp_qrlIG9Jg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_181145_gp_trqziD9w.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "18:11:45",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_181145_gp_trqziD9w",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_181127_gp_JYj0kBtA.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "18:11:27",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_181127_gp_JYj0kBtA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_181117_gp_VkazaU8g.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "18:11:17",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_181117_gp_VkazaU8g",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_181110_gp_GeFF0hyg.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "18:11:10",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_181110_gp_GeFF0hyg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_181010_gp_ERldjiWQ.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "18:10:10",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_181010_gp_ERldjiWQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_171211_gp_Uu2biaEA.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "17:12:11",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_171211_gp_Uu2biaEA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_161919_gp_xnE3W9nQ.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "16:19:19",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_161919_gp_xnE3W9nQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_161558_gp_3odCNgEQ.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "16:15:58",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_161558_gp_3odCNgEQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_161521_gp_OdsV8Jfg.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "16:15:21",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_161521_gp_OdsV8Jfg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_152305_gp_VY7q0OAg.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "15:23:05",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_152305_gp_VY7q0OAg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_152246_gp_1F9KqbNg.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "15:22:46",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_152246_gp_1F9KqbNg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_152241_gp_aPA056wg.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "15:22:41",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_152241_gp_aPA056wg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_152230_gp_tEpRYrgw.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "15:22:30",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_152230_gp_tEpRYrgw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_152224_gp_Si6xm2xQ.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "15:22:24",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_152224_gp_Si6xm2xQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_031816_gp_cR0vVAUg.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "03:18:16",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_031816_gp_cR0vVAUg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_031815.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "03:18:15",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_031815",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_031744_gp_30vw5Qdg.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "03:17:44",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_031744_gp_30vw5Qdg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_031735_gp_kiTH5tGA.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "03:17:35",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_031735_gp_kiTH5tGA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_031723_gp_NA7IGHnA.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "03:17:23",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_031723_gp_NA7IGHnA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_031722.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "03:17:22",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_031722",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_022406_gp_WYXg14Mg.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "02:24:06",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_022406_gp_WYXg14Mg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_013928_gp_rqj3LuUw.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "01:39:28",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_013928_gp_rqj3LuUw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260410_013927.jpg",
+          "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+          "captured_date": "2026-04-10",
+          "captured_time": "01:39:27",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_connectors",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260410_013927",
+          "matched_tokens": []
+        }
+      ],
+      "evidence_sets": [
+        {
+          "key": "primary",
+          "title": "Primary Evidence Set",
+          "description": "Best-matched photos for this workstream from component/stage mapping and evidence references.",
+          "images": [
+            {
+              "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:42",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004442_gp_7WcFHjLQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:37",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004437_gp_f1TySzww",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:29",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004429_gp_KJHxGcCA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:19",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004419_gp_ZPXJRBzg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:13",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004413_gp_Qno8OVRg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004401_gp_otUSjgGA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:01",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004401_gp_otUSjgGA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:43:45",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004345_gp_yK8VYzMQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004337_gp_m2OagYpg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:43:37",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004337_gp_m2OagYpg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004314_gp_wuzpgNrA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:43:14",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004314_gp_wuzpgNrA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004254_gp_Hm9RR5DQ.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:54",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004254_gp_Hm9RR5DQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:31",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004231_gp_CfosvPIg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:22",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004222_gp_PKRe5HSQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004215_gp_evgCLjSw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:15",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004215_gp_evgCLjSw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:01",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004201_gp_zfUSmKJg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260405_010322_gp_0chs4MQg.jpg",
+              "caption": "Fuse Distribution And Wiring \u00b7 Procurement Reconciliation \u00b7 2026-04-05",
+              "captured_date": "2026-04-05",
+              "captured_time": "01:03:22",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_wiring",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260405_010322_gp_0chs4MQg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260404_192619_gp_jsR1m0RQ.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+              "captured_date": "2026-04-04",
+              "captured_time": "19:26:19",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260404_192619_gp_jsR1m0RQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260404_192618.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+              "captured_date": "2026-04-04",
+              "captured_time": "19:26:18",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260404_192618",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260404_192614.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+              "captured_date": "2026-04-04",
+              "captured_time": "19:26:14",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260404_192614",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260404_192608_gp_GvlqkRrw.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+              "captured_date": "2026-04-04",
+              "captured_time": "19:26:08",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260404_192608_gp_GvlqkRrw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260404_095838_gp_oiOOHmHA.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+              "captured_date": "2026-04-04",
+              "captured_time": "09:58:38",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260404_095838_gp_oiOOHmHA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260404_095833_gp_S7uQMzXA.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+              "captured_date": "2026-04-04",
+              "captured_time": "09:58:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260404_095833_gp_S7uQMzXA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260404_040022_gp_E6EzzfuQ.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+              "captured_date": "2026-04-04",
+              "captured_time": "04:00:22",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260404_040022_gp_E6EzzfuQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_234817_gp_83HD1ieg.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "23:48:17",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_234817_gp_83HD1ieg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_210548_gp_lQR2yH2Q.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "21:05:48",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_210548_gp_lQR2yH2Q",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_205909_gp_BdIDB36A.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "20:59:09",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_205909_gp_BdIDB36A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_204223_gp_TuNmq2PA.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "20:42:23",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_204223_gp_TuNmq2PA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_204222.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "20:42:22",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_204222",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_202319_gp_dmuZGYEg.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "20:23:19",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_202319_gp_dmuZGYEg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_195524_gp_vSsn2KuA.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "19:55:24",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_195524_gp_vSsn2KuA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_005114_gp_muIt66Fw.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:51:14",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_005114_gp_muIt66Fw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_005113.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:51:13",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_005113",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_005109_gp_ffAv1oWQ.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:51:09",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_005109_gp_ffAv1oWQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_005107.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:51:07",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_005107",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_005102_gp_5ND0cbQA.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:51:02",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_005102_gp_5ND0cbQA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_005101.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:51:01",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_005101",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_005052_gp_F1otrVZA.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:50:52",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_005052_gp_F1otrVZA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_005051.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:50:51",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_005051",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_004146_gp_eN3BHWzQ.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:41:46",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_004146_gp_eN3BHWzQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_004145.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:41:45",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_004145",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_004142_gp_2wmxtb3A.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:41:42",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_004142_gp_2wmxtb3A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_004136_gp_K59gVoXw.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:41:36",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_004136_gp_K59gVoXw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
+              "caption": "Rubber Grommet Assortment \u00b7 Procurement Reconciliation \u00b7 2026-04-22",
+              "captured_date": "2026-04-22",
+              "captured_time": "03:43:58",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_grommet_assortment",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260422_034358_gp_Bg6nSlPw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_220217_gp_dpH3Q75A.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "22:02:17",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_220217_gp_dpH3Q75A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_220210_gp_YR8onehw.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "22:02:10",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_220210_gp_YR8onehw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_143143_gp_kXn8JZ0w.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "14:31:43",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_143143_gp_kXn8JZ0w",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_143141.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "14:31:41",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_143141",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_143136_gp_jEpok4ng.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "14:31:36",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_143136_gp_jEpok4ng",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_143135.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "14:31:35",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_143135",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_143127_gp_ZKLRVwVw.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "14:31:27",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_143127_gp_ZKLRVwVw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_143125.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "14:31:25",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_143125",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_071159_gp_3matxuBg.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "07:11:59",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_071159_gp_3matxuBg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_071157.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "07:11:57",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_071157",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_071155_gp_vFGJ415w.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "07:11:55",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_071155_gp_vFGJ415w",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_071153.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "07:11:53",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_071153",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_065032_gp_nShQBqwA.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "06:50:32",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_065032_gp_nShQBqwA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_065030.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "06:50:30",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_065030",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_230529_gp_S6Puwnqg.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "23:05:29",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_230529_gp_S6Puwnqg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_230527.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "23:05:27",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_230527",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_230524_gp_6KKNNmDA.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "23:05:24",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_230524_gp_6KKNNmDA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_230522.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "23:05:22",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_230522",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_212305_gp_OSz8RLcQ.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "21:23:05",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_212305_gp_OSz8RLcQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_212304.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "21:23:04",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_212304",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_202237_gp_3ukqdjnQ.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "20:22:37",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_202237_gp_3ukqdjnQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_202235.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "20:22:35",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_202235",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_202228_gp_oYEtAYJQ.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "20:22:28",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_202228_gp_oYEtAYJQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_202224_gp_WdlDKm8Q.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "20:22:24",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_202224_gp_WdlDKm8Q",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_202220_gp_U3QfMT6Q.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "20:22:20",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_202220_gp_U3QfMT6Q",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_201518_gp_cmbHWXsQ.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "20:15:18",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_201518_gp_cmbHWXsQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_185920_gp_5azmXxKA.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "18:59:20",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_185920_gp_5azmXxKA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_185919.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "18:59:19",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_185919",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_185331_gp_1xsXqb1w.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "18:53:31",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_185331_gp_1xsXqb1w",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_185330.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "18:53:30",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_185330",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_185326_gp_sU4VoiEw.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "18:53:26",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_185326_gp_sU4VoiEw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_185317_gp_ZE6FscRQ.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "18:53:17",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_185317_gp_ZE6FscRQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_184352_gp_EonAOl1Q.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "18:43:52",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_184352_gp_EonAOl1Q",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_184310_gp_iUReC6rw.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "18:43:10",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_184310_gp_iUReC6rw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_183545_gp_6REyweSw.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "18:35:45",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_183545_gp_6REyweSw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_183145_gp_8T8rNHbA.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "18:31:45",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_183145_gp_8T8rNHbA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_182825_gp_Sma4A1tw.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "18:28:25",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_182825_gp_Sma4A1tw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_182733_gp_53YGQ88w.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "18:27:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_182733_gp_53YGQ88w",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_182424_gp_48iqI43w.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "18:24:24",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_182424_gp_48iqI43w",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_182349_gp_GkTmsROg.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "18:23:49",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_182349_gp_GkTmsROg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_181153_gp_qrlIG9Jg.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "18:11:53",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_181153_gp_qrlIG9Jg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_181145_gp_trqziD9w.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "18:11:45",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_181145_gp_trqziD9w",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_181127_gp_JYj0kBtA.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "18:11:27",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_181127_gp_JYj0kBtA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_181117_gp_VkazaU8g.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "18:11:17",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_181117_gp_VkazaU8g",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_181110_gp_GeFF0hyg.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "18:11:10",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_181110_gp_GeFF0hyg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_181010_gp_ERldjiWQ.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "18:10:10",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_181010_gp_ERldjiWQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_171211_gp_Uu2biaEA.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "17:12:11",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_171211_gp_Uu2biaEA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_161919_gp_xnE3W9nQ.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "16:19:19",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_161919_gp_xnE3W9nQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_161558_gp_3odCNgEQ.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "16:15:58",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_161558_gp_3odCNgEQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_161521_gp_OdsV8Jfg.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "16:15:21",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_161521_gp_OdsV8Jfg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_152305_gp_VY7q0OAg.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "15:23:05",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_152305_gp_VY7q0OAg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_152246_gp_1F9KqbNg.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "15:22:46",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_152246_gp_1F9KqbNg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_152241_gp_aPA056wg.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "15:22:41",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_152241_gp_aPA056wg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_152230_gp_tEpRYrgw.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "15:22:30",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_152230_gp_tEpRYrgw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_152224_gp_Si6xm2xQ.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "15:22:24",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_152224_gp_Si6xm2xQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_031816_gp_cR0vVAUg.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "03:18:16",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_031816_gp_cR0vVAUg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_031815.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "03:18:15",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_031815",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_031744_gp_30vw5Qdg.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "03:17:44",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_031744_gp_30vw5Qdg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_031735_gp_kiTH5tGA.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "03:17:35",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_031735_gp_kiTH5tGA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_031723_gp_NA7IGHnA.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "03:17:23",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_031723_gp_NA7IGHnA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_031722.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "03:17:22",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_031722",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_022406_gp_WYXg14Mg.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "02:24:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_022406_gp_WYXg14Mg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_013928_gp_rqj3LuUw.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "01:39:28",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_013928_gp_rqj3LuUw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260410_013927.jpg",
+              "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
+              "captured_date": "2026-04-10",
+              "captured_time": "01:39:27",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_connectors",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260410_013927",
+              "matched_tokens": []
+            }
+          ]
+        }
+      ],
+      "image_count": 106,
+      "reference_token_count": 5,
+      "requirements": [],
+      "pipe_requirements": [],
+      "replacement_pipe_order_release_specs": [],
+      "replacement_pipe_release_actions": [],
+      "replacement_pipe_circuit_closure": [],
+      "chassis_rubber_requirements": [],
+      "body_mount_order_release_specs": [],
+      "body_mount_release_actions": [],
+      "body_mount_station_closure": [],
+      "fabrication_packages": [
+        {
+          "requirement_id": "FAB-RUB-001",
+          "system": "chassis_rubbers",
+          "package_id": "rubber_recreation_rev_a",
+          "title": "Rubber recreation Rev A",
+          "current_status": "quote_first_article_ready",
+          "release_position": "Body-mount circular cushions, cup washer blanks, and oval front-support pad are ready for quote and first article; strip files are template blanks only.",
+          "notes": "Final production remains gated by caliper closure and small-mount one-piece vs split-stack decision.",
+          "package_dir": "data/manual/fabrication/rubber_recreation_rev_a",
+          "primary_links": [
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/README.md",
+              "label": "README"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
+              "label": "PDF"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
+              "label": "Cut list"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/inspection_checklist.csv",
+              "label": "Inspection checklist"
+            },
+            {
+              "url": "../../docs/rubber-recreation-fabrication-spec-20260502.md",
+              "label": "Source spec"
+            }
+          ],
+          "dxf_links": [
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf",
+              "label": "bm_sm_body_mount_cushion_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.dxf",
+              "label": "bm_lg_body_mount_cushion_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf",
+              "label": "bm_cup_small_seat_washer_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf",
+              "label": "bm_cup_large_seat_washer_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf",
+              "label": "fs_oval_front_support_pad_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf",
+              "label": "fs_strip_left_template_blank_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf",
+              "label": "fs_strip_right_template_blank_rev_a.dxf"
+            }
+          ],
+          "svg_links": [
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.svg",
+              "label": "bm_sm_body_mount_cushion_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.svg",
+              "label": "bm_lg_body_mount_cushion_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.svg",
+              "label": "bm_cup_small_seat_washer_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.svg",
+              "label": "bm_cup_large_seat_washer_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.svg",
+              "label": "fs_oval_front_support_pad_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg",
+              "label": "fs_strip_left_template_blank_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg",
+              "label": "fs_strip_right_template_blank_rev_a.svg"
+            }
+          ],
+          "file_count": 19
+        },
+        {
+          "requirement_id": "FAB-ELEC-001",
+          "system": "electrical_reset",
+          "package_id": "electrical_modules_rev_a",
+          "title": "Electrical modules Rev A",
+          "current_status": "reference_provisional",
+          "release_position": "Earlier combined under-bonnet relay/power module route with relay tray, power module box, and rear insulator.",
+          "notes": "Keep as reference/provisional unless the combined module route is deliberately reopened.",
+          "package_dir": "data/manual/fabrication/electrical_modules_rev_a",
+          "primary_links": [
+            {
+              "url": "../../data/manual/fabrication/electrical_modules_rev_a/README.md",
+              "label": "README"
+            },
+            {
+              "url": "../../data/manual/fabrication/electrical_modules_rev_a/j40_electrical_modules_rev_a_dimension_sheet.pdf",
+              "label": "PDF"
+            },
+            {
+              "url": "../../data/manual/fabrication/electrical_modules_rev_a/README.md",
+              "label": "Source spec"
+            }
+          ],
+          "dxf_links": [
+            {
+              "url": "../../data/manual/fabrication/electrical_modules_rev_a/relay_module_tray_rev_a.dxf",
+              "label": "relay_module_tray_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/electrical_modules_rev_a/power_module_box_rev_a.dxf",
+              "label": "power_module_box_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/electrical_modules_rev_a/power_module_rear_insulator_rev_a.dxf",
+              "label": "power_module_rear_insulator_rev_a.dxf"
+            }
+          ],
+          "svg_links": [
+            {
+              "url": "../../data/manual/fabrication/electrical_modules_rev_a/relay_module_tray_rev_a.svg",
+              "label": "relay_module_tray_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/electrical_modules_rev_a/power_module_box_rev_a.svg",
+              "label": "power_module_box_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/electrical_modules_rev_a/power_module_rear_insulator_rev_a.svg",
+              "label": "power_module_rear_insulator_rev_a.svg"
+            }
+          ],
+          "file_count": 9
+        },
+        {
+          "requirement_id": "FAB-ELEC-002",
+          "system": "electrical_reset",
+          "package_id": "midi5_plate_mount_rev_c",
+          "title": "MIDI 5-way plate mount Rev C",
+          "current_status": "current_release",
+          "release_position": "Current recommended open MIDI holder mount: aluminium plate plus non-conductive holder subplate.",
+          "notes": "Use 10-12 mm spacers and add cable support after final routing is known.",
+          "package_dir": "data/manual/fabrication/midi5_plate_mount_rev_c",
+          "primary_links": [
+            {
+              "url": "../../data/manual/fabrication/midi5_plate_mount_rev_c/README.md",
+              "label": "README"
+            },
+            {
+              "url": "../../data/manual/fabrication/midi5_plate_mount_rev_c/j40_midi5_plate_mount_rev_c_dimension_sheet.pdf",
+              "label": "PDF"
+            },
+            {
+              "url": "../../data/manual/fabrication/midi5_plate_mount_rev_c/README.md",
+              "label": "Source spec"
+            }
+          ],
+          "dxf_links": [
+            {
+              "url": "../../data/manual/fabrication/midi5_plate_mount_rev_c/midi5_mount_plate_rev_c.dxf",
+              "label": "midi5_mount_plate_rev_c.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/midi5_plate_mount_rev_c/midi5_holder_subplate_rev_c.dxf",
+              "label": "midi5_holder_subplate_rev_c.dxf"
+            }
+          ],
+          "svg_links": [
+            {
+              "url": "../../data/manual/fabrication/midi5_plate_mount_rev_c/midi5_mount_plate_rev_c.svg",
+              "label": "midi5_mount_plate_rev_c.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/midi5_plate_mount_rev_c/midi5_holder_subplate_rev_c.svg",
+              "label": "midi5_holder_subplate_rev_c.svg"
+            }
+          ],
+          "file_count": 7
+        },
+        {
+          "requirement_id": "FAB-ELEC-003",
+          "system": "electrical_reset",
+          "package_id": "relay_mount_rev_c",
+          "title": "Relay mount Rev C",
+          "current_status": "current_release",
+          "release_position": "Current recommended relay-box carrier and rear guard package for the DAIER prewired 10-way relay/fuse box.",
+          "notes": "Keep the loom opening downward and do not fully seal the relay box rear.",
+          "package_dir": "data/manual/fabrication/relay_mount_rev_c",
+          "primary_links": [
+            {
+              "url": "../../data/manual/fabrication/relay_mount_rev_c/README.md",
+              "label": "README"
+            },
+            {
+              "url": "../../data/manual/fabrication/relay_mount_rev_c/j40_relay_mount_rev_c_dimension_sheet.pdf",
+              "label": "PDF"
+            },
+            {
+              "url": "../../data/manual/fabrication/relay_mount_rev_c/README.md",
+              "label": "Source spec"
+            }
+          ],
+          "dxf_links": [
+            {
+              "url": "../../data/manual/fabrication/relay_mount_rev_c/relay_carrier_rev_c.dxf",
+              "label": "relay_carrier_rev_c.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/relay_mount_rev_c/relay_rear_guard_rev_c.dxf",
+              "label": "relay_rear_guard_rev_c.dxf"
+            }
+          ],
+          "svg_links": [
+            {
+              "url": "../../data/manual/fabrication/relay_mount_rev_c/relay_carrier_rev_c.svg",
+              "label": "relay_carrier_rev_c.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/relay_mount_rev_c/relay_rear_guard_rev_c.svg",
+              "label": "relay_rear_guard_rev_c.svg"
+            }
+          ],
+          "file_count": 7
+        }
+      ],
+      "linked_packages": [
+        {
+          "work_package_id": "WP03F",
+          "title": "Fabrication Drawing Handoff",
+          "lane": "fabrication",
+          "current_state": "in_progress",
+          "objective": "Send and track the rubber recreation and electrical mount fabrication packages.",
+          "blocker_summary": "Rubber final batch still has measurement holds; electrical combined-module route is reference/provisional.",
+          "gate_to_close": "Fabricator has the current package files and first articles are accepted before batch production or loom/body closeout.",
+          "key_procurement_actions": "Use the Fabrication workstream package links; do not fabricate superseded electrical routes unless deliberately reopened.",
+          "evidence_signal": "4 fabrication package rows with PDF/DXF/SVG outputs"
+        }
+      ],
+      "component_jobs": [],
+      "issue_jobs": [],
+      "steps": [
+        {
+          "label": "Execute current workstream action",
+          "status": "in_progress",
+          "detail": "Use the ready-to-run DXF/SVG/PDF packages as the controlled send-out set for rubber recreation and electrical mounts"
+        },
+        {
+          "label": "Publish package links in the UI",
+          "status": "in_progress",
+          "detail": "Keep the fabrication index, PDFs, DXFs, SVGs, cut lists, and inspection sheets visible from the dashboard."
+        },
+        {
+          "label": "Send rubber recreation Rev A for quote/first article",
+          "status": "queued",
+          "detail": "Use the rubber package but keep final production blocked by measurement closure."
+        },
+        {
+          "label": "Send current electrical fabrication packages",
+          "status": "queued",
+          "detail": "Track the three electrical requirements: electrical modules Rev A, MIDI plate Rev C, and relay mount Rev C."
+        },
+        {
+          "label": "Close first-article inspection",
+          "status": "queued",
+          "detail": "Accept parts only after dimensional, material, fit, and release-status checks are recorded."
+        },
+        {
+          "label": "WP03F \u00b7 Fabrication Drawing Handoff",
+          "status": "in_progress",
+          "detail": "Send and track the rubber recreation and electrical mount fabrication packages. Blocker: Rubber final batch still has measurement holds; electrical combined-module route is reference/provisional. Procurement: Use the Fabrication workstream package links; do not fabricate superseded electrical routes unless deliberately reopened. Gate: Fabricator has the current package files and first articles are accepted before batch production or loom/body closeout."
+        },
+        {
+          "label": "Issue checks",
+          "status": "completed",
+          "detail": "No issue-specific checks are recorded for this workstream."
+        },
+        {
+          "label": "Close workstream exit gate",
+          "status": "in_progress",
+          "detail": "Linked package execution is active. Exit gate: Fabrication packages are visible in the UI, sent out with PDF/DXF/SVG files, first articles are tracked, and superseded routes are not accidentally fabricated"
+        }
+      ],
+      "involved_parts": [],
+      "operation_panels": [],
+      "subtask_groups": [
+        {
+          "key": "fabrication_handoff",
+          "title": "Fabrication Handoff",
+          "summary": "Controlled send-out, quote, first-article, and release tracking for DXF/SVG/PDF fabrication packages.",
+          "subtasks": [
+            {
+              "title": "Keep Package Index Current",
+              "priority": "P0",
+              "remaining": "before any shop send-out",
+              "instruction": "Use one controlled package list so suppliers do not receive superseded or partial drawing sets.",
+              "process_steps": [
+                "Use docs/fabrication-handoff-index.md as the human send-out index.",
+                "Use data/manual/fabrication_handoff_requirements.csv as the UI-facing package requirement list.",
+                "Confirm every current package has a README, primary PDF, and all expected DXF/SVG files.",
+                "Mark superseded packages as reference only instead of deleting them.",
+                "Use the CloudFront dashboard links when sharing files externally."
+              ],
+              "tools": [
+                "Dashboard",
+                "PDF viewer",
+                "DXF viewer"
+              ],
+              "supplies": [
+                "Fabrication handoff index",
+                "Fabrication requirements CSV"
+              ],
+              "hold_point": "No supplier package is sent until the current package row and release status are visible in the Fabrication workstream.",
+              "image_tokens": [
+                "fabrication",
+                "drawing",
+                "dxf",
+                "package"
+              ],
+              "id": "keep_package_index_current",
+              "status": "in_progress",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:42",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004442_gp_7WcFHjLQ",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:37",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004437_gp_f1TySzww",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:29",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004429_gp_KJHxGcCA",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:19",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004419_gp_ZPXJRBzg",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:13",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004413_gp_Qno8OVRg",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004401_gp_otUSjgGA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:01",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004401_gp_otUSjgGA",
+                  "matched_tokens": []
+                }
+              ],
+              "registered_items": []
+            },
+            {
+              "title": "Release Rubber Package For Quote",
+              "priority": "P0",
+              "remaining": "quote and first article",
+              "instruction": "Send the rubber Rev A package for quote and first article while keeping final production holds explicit.",
+              "process_steps": [
+                "Send data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf for drawing review.",
+                "Send all rubber Rev A DXFs and matching SVG visual references.",
+                "Include fabricator_cut_list.csv and inspection_checklist.csv with the job.",
+                "Tell the shop that circular cushions, cup blanks, and oval pad are quote/first-article ready.",
+                "Tell the shop that strip files are quote/template blanks and need physical tracing before production cutting.",
+                "Keep final batch blocked until data/manual/rubber_recreation_measurement_closure.csv is completed."
+              ],
+              "tools": [
+                "Calipers",
+                "DXF viewer",
+                "Camera"
+              ],
+              "supplies": [
+                "Rubber Rev A PDF",
+                "Rubber Rev A DXFs",
+                "Fabricator cut list",
+                "Inspection checklist"
+              ],
+              "hold_point": "Final rubber batch cannot be approved from photo-derived dimensions alone.",
+              "image_tokens": [
+                "rubber",
+                "body_mount",
+                "fabrication",
+                "dxf"
+              ],
+              "id": "release_rubber_package_for_quote",
+              "status": "queued",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:42",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004442_gp_7WcFHjLQ",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:37",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004437_gp_f1TySzww",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:29",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004429_gp_KJHxGcCA",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:19",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004419_gp_ZPXJRBzg",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:13",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004413_gp_Qno8OVRg",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004401_gp_otUSjgGA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:01",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004401_gp_otUSjgGA",
+                  "matched_tokens": []
+                }
+              ],
+              "registered_items": []
+            },
+            {
+              "title": "Release Electrical Fabrication Packages",
+              "priority": "P0",
+              "remaining": "before permanent under-bonnet loom routing",
+              "instruction": "Track the three defined electrical fabrication requirements as separate package rows.",
+              "process_steps": [
+                "Use data/manual/fabrication/electrical_modules_rev_a/ as the reference/provisional combined-module requirement.",
+                "Use data/manual/fabrication/midi5_plate_mount_rev_c/ as the current MIDI holder plate requirement.",
+                "Use data/manual/fabrication/relay_mount_rev_c/ as the current relay carrier and rear-guard requirement.",
+                "Send each package PDF for review and its DXFs for cutting.",
+                "Keep SVGs with the job for visual checking.",
+                "Trial-fit electrical parts with spacers, cable exits, relay box, and MIDI holders before tying down the loom."
+              ],
+              "tools": [
+                "DXF viewer",
+                "Drill",
+                "Files",
+                "Deburring tool",
+                "Calipers"
+              ],
+              "supplies": [
+                "Electrical module PDF/DXFs",
+                "MIDI plate PDF/DXFs",
+                "Relay mount PDF/DXFs",
+                "Aluminium sheet",
+                "Insulator sheet",
+                "Spacers"
+              ],
+              "hold_point": "Final loom routing waits until relay and MIDI mounts fit without forcing cable bend radius or leaving live studs exposed.",
+              "image_tokens": [
+                "relay",
+                "fuse",
+                "midi",
+                "fabrication",
+                "battery"
+              ],
+              "id": "release_electrical_fabrication_packages",
+              "status": "queued",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:42",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004442_gp_7WcFHjLQ",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:37",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004437_gp_f1TySzww",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:29",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004429_gp_KJHxGcCA",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:19",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004419_gp_ZPXJRBzg",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:13",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004413_gp_Qno8OVRg",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004401_gp_otUSjgGA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:01",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004401_gp_otUSjgGA",
+                  "matched_tokens": []
+                }
+              ],
+              "registered_items": []
+            },
+            {
+              "title": "Inspect First Articles",
+              "priority": "P1",
+              "remaining": "after supplier samples",
+              "instruction": "Accept fabricated parts by inspection and fit evidence, not by delivery alone.",
+              "process_steps": [
+                "Check material and thickness against the package README.",
+                "Measure critical dimensions against the package PDF.",
+                "Deburr and corrosion-protect metal parts after forming where required.",
+                "Dry-fit rubber stacks, relay mount, and MIDI mount before batch approval.",
+                "Photograph accepted first articles and record any rework before batch manufacture."
+              ],
+              "tools": [
+                "Calipers",
+                "Straight edge",
+                "Camera",
+                "Deburring tool"
+              ],
+              "supplies": [
+                "Inspection checklist",
+                "Primer or plating plan",
+                "Fasteners",
+                "Spacers"
+              ],
+              "hold_point": "Fabrication closes only after first articles pass dimensional, material, and fit checks.",
+              "image_tokens": [
+                "fabrication",
+                "inspection",
+                "rubber",
+                "relay",
+                "midi"
+              ],
+              "id": "inspect_first_articles",
+              "status": "queued",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:42",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004442_gp_7WcFHjLQ",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:37",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004437_gp_f1TySzww",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:29",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004429_gp_KJHxGcCA",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:19",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004419_gp_ZPXJRBzg",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:13",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004413_gp_Qno8OVRg",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004401_gp_otUSjgGA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:01",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004401_gp_otUSjgGA",
+                  "matched_tokens": []
+                }
+              ],
+              "registered_items": []
+            }
+          ]
+        }
+      ],
+      "electrical_spec_layout": null
+    },
+    {
+      "id": "interior_controls",
+      "title": "Dashboard",
+      "phase": "04a_interior_controls",
+      "status": "in_progress",
+      "priority": "high",
+      "primary_location": "home",
+      "owner_mode": "owner_led",
+      "depends_on": [
+        "electrical_reset"
+      ],
+      "next_action": "Use the on-hand 7 Schneider selectors and 22 mm hole-enlarging tools to machine/test-fit dash switch positions; keep the purchased needle fuel-stop and hazards as separate controls and record exact 9 inch LCD candidate before fascia closeout",
+      "exit_gate": "All 7 Schneider selectors (mixed 2-position and 3-position) are on hand, dash hole-enlarging tooling is available, and the hazard switch is separate from the selector count; current allocation still uses the purchased needle fuel-stop switch, so final selector/function map and LCD packaging remain open",
+      "notes": "Driven by Build_Plan WP03A/WP03B: switch fit-up and diesel cutoff/ignition security integration. User update 2026-05-02 confirms 7 selectors, hole-enlarging tools, separate hazard switch, and a recommended specific 9 inch LCD panel candidate.",
+      "evidence_source": [
+        "photo_inventory",
+        "20260421_192813_gp_0jvYAo8g",
+        "20260421_194401_gp_1dY3fLdw",
+        "20260420_221819_gp_YV69fbvA",
+        "user_update_2026-05-02_dashboard_switch_lcd_update"
+      ],
+      "images": [
+        {
+          "path": "../../photos/20260422_074709_gp_o4wiXyjA.jpg",
+          "caption": "Dashboard Shell And Bulkhead \u00b7 Stripdown Cataloguing \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "07:47:09",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_shell_and_bulkhead",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260422_074709_gp_o4wiXyjA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260421_194401_gp_1dY3fLdw.jpeg",
+          "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
+          "captured_date": "2026-04-21",
+          "captured_time": "19:44:01",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_switch_and_control_hardware",
+          "stage": "electrical_rework",
+          "media_id": "20260421_194401_gp_1dY3fLdw",
+          "matched_tokens": [
+            "20260421_194401_gp_1dy3fldw"
+          ]
+        },
+        {
+          "path": "../../photos/20260421_192813_gp_0jvYAo8g_2.jpg",
+          "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
+          "captured_date": "2026-04-21",
+          "captured_time": "19:28:13",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_switch_and_control_hardware",
+          "stage": "electrical_rework",
+          "media_id": "20260421_192813_gp_0jvYAo8g_2",
+          "matched_tokens": [
+            "20260421_192813_gp_0jvyao8g"
+          ]
+        },
+        {
+          "path": "../../photos/20260413_040719.jpg",
+          "caption": "Dashboard Shell And Cabin \u00b7 Stripdown Cataloguing \u00b7 2026-04-13",
+          "captured_date": "2026-04-13",
+          "captured_time": "04:07:19",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_shell_and_cabin",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260413_040719",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260329_122855_gp_B94NpLbg.jpg",
+          "caption": "Cabin View Through Glass \u00b7 Baseline Walkaround \u00b7 2026-03-29",
+          "captured_date": "2026-03-29",
+          "captured_time": "12:28:55",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "cabin_view_through_glass",
+          "stage": "baseline_walkaround",
+          "media_id": "20260329_122855_gp_B94NpLbg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260323_211028_gp_7IYxU7Wg.jpg",
+          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+          "captured_date": "2026-03-23",
+          "captured_time": "21:10:28",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_and_cabin_stripdown",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260323_211028_gp_7IYxU7Wg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260323_211006_gp_lhopOh5A.jpg",
+          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+          "captured_date": "2026-03-23",
+          "captured_time": "21:10:06",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_and_cabin_stripdown",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260323_211006_gp_lhopOh5A",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260323_210956_gp_xTOMHTiA.jpg",
+          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+          "captured_date": "2026-03-23",
+          "captured_time": "21:09:56",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_and_cabin_stripdown",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260323_210956_gp_xTOMHTiA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260323_210946_gp_0UMDdELw.jpg",
+          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+          "captured_date": "2026-03-23",
+          "captured_time": "21:09:46",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_and_cabin_stripdown",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260323_210946_gp_0UMDdELw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260323_202020_gp_2a0rVClA.jpg",
+          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+          "captured_date": "2026-03-23",
+          "captured_time": "20:20:20",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_and_cabin_stripdown",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260323_202020_gp_2a0rVClA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260323_202000_gp_HvImDixA.jpg",
+          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+          "captured_date": "2026-03-23",
+          "captured_time": "20:20:00",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_and_cabin_stripdown",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260323_202000_gp_HvImDixA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260323_201952_gp_Jms9V7Ew.jpg",
+          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+          "captured_date": "2026-03-23",
+          "captured_time": "20:19:52",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_and_cabin_stripdown",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260323_201952_gp_Jms9V7Ew",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260323_190048_gp_MSH3WpmQ.jpg",
+          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+          "captured_date": "2026-03-23",
+          "captured_time": "19:00:48",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_and_cabin_stripdown",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260323_190048_gp_MSH3WpmQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260323_190047.jpg",
+          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+          "captured_date": "2026-03-23",
+          "captured_time": "19:00:47",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_and_cabin_stripdown",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260323_190047",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260323_190038_gp_i9KuGptA.jpg",
+          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+          "captured_date": "2026-03-23",
+          "captured_time": "19:00:38",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_and_cabin_stripdown",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260323_190038_gp_i9KuGptA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260323_190037.jpg",
+          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+          "captured_date": "2026-03-23",
+          "captured_time": "19:00:37",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_and_cabin_stripdown",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260323_190037",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260323_190006_gp_xzDpzXmg.jpg",
+          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+          "captured_date": "2026-03-23",
+          "captured_time": "19:00:06",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_and_cabin_stripdown",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260323_190006_gp_xzDpzXmg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260323_190005.jpg",
+          "caption": "Dashboard Lower Structure \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+          "captured_date": "2026-03-23",
+          "captured_time": "19:00:05",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_lower_structure",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260323_190005",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260323_185949_gp_bRW3C2Ng.jpg",
+          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+          "captured_date": "2026-03-23",
+          "captured_time": "18:59:49",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_and_cabin_stripdown",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260323_185949_gp_bRW3C2Ng",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260323_185947.jpg",
+          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+          "captured_date": "2026-03-23",
+          "captured_time": "18:59:47",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_and_cabin_stripdown",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260323_185947",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260323_185922_gp_XWQyq7dw.jpg",
+          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+          "captured_date": "2026-03-23",
+          "captured_time": "18:59:22",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_and_cabin_stripdown",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260323_185922_gp_XWQyq7dw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260323_180316_gp_65cSGRyQ.jpg",
+          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+          "captured_date": "2026-03-23",
+          "captured_time": "18:03:16",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_and_cabin_stripdown",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260323_180316_gp_65cSGRyQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260323_180314.jpg",
+          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+          "captured_date": "2026-03-23",
+          "captured_time": "18:03:14",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_and_cabin_stripdown",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260323_180314",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260323_180220_gp_R3uBBhUw.jpg",
+          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+          "captured_date": "2026-03-23",
+          "captured_time": "18:02:20",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_and_cabin_stripdown",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260323_180220_gp_R3uBBhUw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260323_180218.jpg",
+          "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+          "captured_date": "2026-03-23",
+          "captured_time": "18:02:18",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "dashboard_and_cabin_stripdown",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260323_180218",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260321_235600.jpg",
+          "caption": "Driver Footwell Firewall And Wiring \u00b7 Stripdown Cataloguing \u00b7 2026-03-21",
+          "captured_date": "2026-03-21",
+          "captured_time": "23:56:00",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "driver_footwell_firewall_and_wiring",
+          "stage": "stripdown_cataloguing",
+          "media_id": "20260321_235600",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260317_165157_gp_r5zl6uag.jpg",
+          "caption": "Cabin Overview \u00b7 Baseline Walkaround \u00b7 2026-03-17",
+          "captured_date": "2026-03-17",
+          "captured_time": "16:51:57",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "cabin_overview",
+          "stage": "baseline_walkaround",
+          "media_id": "20260317_165157_gp_r5zl6uag",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260317_165114_gp_meA0ZqNA.jpg",
+          "caption": "Cabin Overview \u00b7 Baseline Walkaround \u00b7 2026-03-17",
+          "captured_date": "2026-03-17",
+          "captured_time": "16:51:14",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "cabin_overview",
+          "stage": "baseline_walkaround",
+          "media_id": "20260317_165114_gp_meA0ZqNA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260317_165113.jpg",
+          "caption": "Cabin Overview \u00b7 Baseline Walkaround \u00b7 2026-03-17",
+          "captured_date": "2026-03-17",
+          "captured_time": "16:51:13",
+          "media_type": "photo",
+          "component_group": "interior_cabin",
+          "specific_component": "cabin_overview",
+          "stage": "baseline_walkaround",
+          "media_id": "20260317_165113",
+          "matched_tokens": []
+        }
+      ],
+      "evidence_sets": [
+        {
+          "key": "all_dashboard_images",
+          "title": "All Dashboard Images",
+          "description": "Complete dashboard image set from the imported photo inventory.",
+          "images": [
+            {
+              "path": "../../photos/20260422_074709_gp_o4wiXyjA.jpg",
+              "caption": "Dashboard Shell And Bulkhead \u00b7 Stripdown Cataloguing \u00b7 2026-04-22",
+              "captured_date": "2026-04-22",
+              "captured_time": "07:47:09",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_shell_and_bulkhead",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260422_074709_gp_o4wiXyjA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260421_194401_gp_1dY3fLdw.jpeg",
+              "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
+              "captured_date": "2026-04-21",
+              "captured_time": "19:44:01",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_switch_and_control_hardware",
+              "stage": "electrical_rework",
+              "media_id": "20260421_194401_gp_1dY3fLdw",
+              "matched_tokens": [
+                "20260421_194401_gp_1dy3fldw"
+              ]
+            },
+            {
+              "path": "../../photos/20260421_192813_gp_0jvYAo8g_2.jpg",
+              "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
+              "captured_date": "2026-04-21",
+              "captured_time": "19:28:13",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_switch_and_control_hardware",
+              "stage": "electrical_rework",
+              "media_id": "20260421_192813_gp_0jvYAo8g_2",
+              "matched_tokens": [
+                "20260421_192813_gp_0jvyao8g"
+              ]
+            },
+            {
+              "path": "../../photos/20260413_040719.jpg",
+              "caption": "Dashboard Shell And Cabin \u00b7 Stripdown Cataloguing \u00b7 2026-04-13",
+              "captured_date": "2026-04-13",
+              "captured_time": "04:07:19",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_shell_and_cabin",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260413_040719",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260329_122855_gp_B94NpLbg.jpg",
+              "caption": "Cabin View Through Glass \u00b7 Baseline Walkaround \u00b7 2026-03-29",
+              "captured_date": "2026-03-29",
+              "captured_time": "12:28:55",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "cabin_view_through_glass",
+              "stage": "baseline_walkaround",
+              "media_id": "20260329_122855_gp_B94NpLbg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260323_211028_gp_7IYxU7Wg.jpg",
+              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+              "captured_date": "2026-03-23",
+              "captured_time": "21:10:28",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_and_cabin_stripdown",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260323_211028_gp_7IYxU7Wg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260323_211006_gp_lhopOh5A.jpg",
+              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+              "captured_date": "2026-03-23",
+              "captured_time": "21:10:06",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_and_cabin_stripdown",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260323_211006_gp_lhopOh5A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260323_210956_gp_xTOMHTiA.jpg",
+              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+              "captured_date": "2026-03-23",
+              "captured_time": "21:09:56",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_and_cabin_stripdown",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260323_210956_gp_xTOMHTiA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260323_210946_gp_0UMDdELw.jpg",
+              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+              "captured_date": "2026-03-23",
+              "captured_time": "21:09:46",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_and_cabin_stripdown",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260323_210946_gp_0UMDdELw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260323_202020_gp_2a0rVClA.jpg",
+              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+              "captured_date": "2026-03-23",
+              "captured_time": "20:20:20",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_and_cabin_stripdown",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260323_202020_gp_2a0rVClA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260323_202000_gp_HvImDixA.jpg",
+              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+              "captured_date": "2026-03-23",
+              "captured_time": "20:20:00",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_and_cabin_stripdown",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260323_202000_gp_HvImDixA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260323_201952_gp_Jms9V7Ew.jpg",
+              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+              "captured_date": "2026-03-23",
+              "captured_time": "20:19:52",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_and_cabin_stripdown",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260323_201952_gp_Jms9V7Ew",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260323_190048_gp_MSH3WpmQ.jpg",
+              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+              "captured_date": "2026-03-23",
+              "captured_time": "19:00:48",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_and_cabin_stripdown",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260323_190048_gp_MSH3WpmQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260323_190047.jpg",
+              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+              "captured_date": "2026-03-23",
+              "captured_time": "19:00:47",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_and_cabin_stripdown",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260323_190047",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260323_190038_gp_i9KuGptA.jpg",
+              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+              "captured_date": "2026-03-23",
+              "captured_time": "19:00:38",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_and_cabin_stripdown",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260323_190038_gp_i9KuGptA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260323_190037.jpg",
+              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+              "captured_date": "2026-03-23",
+              "captured_time": "19:00:37",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_and_cabin_stripdown",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260323_190037",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260323_190006_gp_xzDpzXmg.jpg",
+              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+              "captured_date": "2026-03-23",
+              "captured_time": "19:00:06",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_and_cabin_stripdown",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260323_190006_gp_xzDpzXmg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260323_190005.jpg",
+              "caption": "Dashboard Lower Structure \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+              "captured_date": "2026-03-23",
+              "captured_time": "19:00:05",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_lower_structure",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260323_190005",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260323_185949_gp_bRW3C2Ng.jpg",
+              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+              "captured_date": "2026-03-23",
+              "captured_time": "18:59:49",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_and_cabin_stripdown",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260323_185949_gp_bRW3C2Ng",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260323_185947.jpg",
+              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+              "captured_date": "2026-03-23",
+              "captured_time": "18:59:47",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_and_cabin_stripdown",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260323_185947",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260323_185922_gp_XWQyq7dw.jpg",
+              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+              "captured_date": "2026-03-23",
+              "captured_time": "18:59:22",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_and_cabin_stripdown",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260323_185922_gp_XWQyq7dw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260323_180316_gp_65cSGRyQ.jpg",
+              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+              "captured_date": "2026-03-23",
+              "captured_time": "18:03:16",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_and_cabin_stripdown",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260323_180316_gp_65cSGRyQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260323_180314.jpg",
+              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+              "captured_date": "2026-03-23",
+              "captured_time": "18:03:14",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_and_cabin_stripdown",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260323_180314",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260323_180220_gp_R3uBBhUw.jpg",
+              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+              "captured_date": "2026-03-23",
+              "captured_time": "18:02:20",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_and_cabin_stripdown",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260323_180220_gp_R3uBBhUw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260323_180218.jpg",
+              "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+              "captured_date": "2026-03-23",
+              "captured_time": "18:02:18",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "dashboard_and_cabin_stripdown",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260323_180218",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260321_235600.jpg",
+              "caption": "Driver Footwell Firewall And Wiring \u00b7 Stripdown Cataloguing \u00b7 2026-03-21",
+              "captured_date": "2026-03-21",
+              "captured_time": "23:56:00",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "driver_footwell_firewall_and_wiring",
+              "stage": "stripdown_cataloguing",
+              "media_id": "20260321_235600",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260317_165157_gp_r5zl6uag.jpg",
+              "caption": "Cabin Overview \u00b7 Baseline Walkaround \u00b7 2026-03-17",
+              "captured_date": "2026-03-17",
+              "captured_time": "16:51:57",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "cabin_overview",
+              "stage": "baseline_walkaround",
+              "media_id": "20260317_165157_gp_r5zl6uag",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260317_165114_gp_meA0ZqNA.jpg",
+              "caption": "Cabin Overview \u00b7 Baseline Walkaround \u00b7 2026-03-17",
+              "captured_date": "2026-03-17",
+              "captured_time": "16:51:14",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "cabin_overview",
+              "stage": "baseline_walkaround",
+              "media_id": "20260317_165114_gp_meA0ZqNA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260317_165113.jpg",
+              "caption": "Cabin Overview \u00b7 Baseline Walkaround \u00b7 2026-03-17",
+              "captured_date": "2026-03-17",
+              "captured_time": "16:51:13",
+              "media_type": "photo",
+              "component_group": "interior_cabin",
+              "specific_component": "cabin_overview",
+              "stage": "baseline_walkaround",
+              "media_id": "20260317_165113",
+              "matched_tokens": []
+            }
+          ]
+        }
+      ],
+      "image_count": 29,
+      "reference_token_count": 10,
+      "requirements": [],
+      "pipe_requirements": [],
+      "replacement_pipe_order_release_specs": [],
+      "replacement_pipe_release_actions": [],
+      "replacement_pipe_circuit_closure": [],
+      "chassis_rubber_requirements": [],
+      "body_mount_order_release_specs": [],
+      "body_mount_release_actions": [],
+      "body_mount_station_closure": [],
+      "fabrication_packages": [],
+      "linked_packages": [
+        {
+          "work_package_id": "WP03",
+          "title": "Electrical Baseline Finalization",
+          "lane": "electrical",
+          "current_state": "queued",
+          "objective": "Complete baseline harness termination, grounding, and fuse/relay validation.",
+          "blocker_summary": "1 electrical buy rows still open; 2 rows should be stock-verified before re-buy.",
+          "gate_to_close": "Start/charge/lights/horn/wipers/gauges baseline passes functional checks.",
+          "key_procurement_actions": "Order selected harness/sleeving path; verify on-hand connectors/relays before duplicate buys.",
+          "evidence_signal": "electrical_rework_photos=18"
+        },
+        {
+          "work_package_id": "WP05",
+          "title": "Interior Weatherproofing Stack",
+          "lane": "interior",
+          "current_state": "blocked",
+          "objective": "Apply sealing/lining/dampening/foam/carpet in moisture-safe sequence.",
+          "blocker_summary": "Interior finish materials are deferred until floor/body sealing gate closes.",
+          "gate_to_close": "Cabin sealed and dry before trim/final fit.",
+          "key_procurement_actions": "Do not buy full interior finish stack early; release purchases by phase gate.",
+          "evidence_signal": "deferred rows indicate intentional hold until body closure"
+        }
+      ],
+      "component_jobs": [
+        {
+          "component_job_id": "body_rubbers",
+          "component_group": "rubbers_and_seals",
+          "current_status": "planned_separate_service",
+          "planned_action": "Separate, tag, and clean, service, or replace",
+          "evidence_ref": "akber_khan-00796|akber_khan-00797",
+          "notes": "Covers window rubbers and auxiliary rubber pieces removed during strip-down"
+        },
+        {
+          "component_job_id": "eps_vitz_control_wiring_and_safety",
+          "component_group": "electrical_accessories",
+          "current_status": "planned_scope_lock",
+          "planned_action": "Define EPS power feed fuse relay ignition trigger and fail-safe behavior; map wiring integration into baseline harness plan",
+          "evidence_ref": "whatsapp_akber|akber_khan-00858|user_plan_2026-04-22_tub_off_update",
+          "notes": "Major project: EPS electrical integration should remain isolated and testable."
+        },
+        {
+          "component_job_id": "interior",
+          "component_group": "interior",
+          "current_status": "planned_strip",
+          "planned_action": "Pull most of the interior and store under tagged covered conditions",
+          "evidence_ref": "akber_khan-00793|akber_khan-00796|akber_khan-00808",
+          "notes": "Use cartons and cheap covers for removed interior pieces kept in the driveway"
+        },
+        {
+          "component_job_id": "interior_dash_switch_fitup",
+          "component_group": "interior_cabin",
+          "current_status": "in_progress",
+          "planned_action": "Machine/enlarge existing dash holes to 22 mm, allocate dash controls to final positions, verify cutout clearances, and complete mounting with labels",
+          "evidence_ref": "20260421_192813_gp_0jvYAo8g|20260421_194401_gp_1dY3fLdw|20260420_221819_gp_YV69fbvA|user_update_2026-05-02_dashboard_switch_lcd_update",
+          "notes": "Build_Plan WP03A control-fit gate; 7 Schneider selectors and hole-enlarging tools are now available. Spot lamps already have a switch allocation, fuel-stop uses the purchased needle switch, hazards stay separate, and exact recommended 9 inch LCD model/link remains to be captured."
+        },
+        {
+          "component_job_id": "interior_diesel_cutoff_ignition_security",
+          "component_group": "electrical_accessories",
+          "current_status": "queued",
+          "planned_action": "Integrate purchased needle-type fuel stop switch, key-off diesel cutoff, and starter interrupt path; validate fallback/manual stop behavior",
+          "evidence_ref": "20260420_221819_gp_YV69fbvA|20260421_194401_gp_1dY3fLdw|whatsapp_akber|akber_khan-00858",
+          "notes": "Build_Plan WP03B security integration gate."
+        },
+        {
+          "component_job_id": "old_accessory_wiring",
+          "component_group": "electrical_accessories",
+          "current_status": "partially_removed",
+          "planned_action": "Remove nonstandard LEDs speakers light bars and extra wiring",
+          "evidence_ref": "fj40-00251",
+          "notes": "Chat explicitly says LEDs speakers front and back light bars and extra wiring were removed"
+        },
+        {
+          "component_job_id": "window_mechanisms",
+          "component_group": "window_hardware",
+          "current_status": "planned_separate_service",
+          "planned_action": "Separate mechanisms and send to relevant service locations",
+          "evidence_ref": "akber_khan-00796",
+          "notes": "Track mechanisms separately from glass and panels"
+        }
+      ],
+      "issue_jobs": [],
+      "steps": [
+        {
+          "label": "Execute current workstream action",
+          "status": "in_progress",
+          "detail": "Use the on-hand 7 Schneider selectors and 22 mm hole-enlarging tools to machine/test-fit dash switch positions; keep the purchased needle fuel-stop and hazards as separate controls and record exact 9 inch LCD candidate before fascia closeout"
+        },
+        {
+          "label": "Classify and tag interior control hardware",
+          "status": "in_progress",
+          "detail": "All dash switches, knobs, and control items should be tagged and catalogued."
+        },
+        {
+          "label": "Define switch function map",
+          "status": "queued",
+          "detail": "Each control needs a confirmed function, label text, and circuit assignment."
+        },
+        {
+          "label": "Complete dash-fit and mounting checks",
+          "status": "queued",
+          "detail": "Confirm hole sizes, clearances, and mechanical fit before final mounting."
+        },
+        {
+          "label": "Close wiring integration and test",
+          "status": "queued",
+          "detail": "Wire each control into the final harness plan and verify operation."
+        },
+        {
+          "label": "WP03 \u00b7 Electrical Baseline Finalization",
+          "status": "queued",
+          "detail": "Complete baseline harness termination, grounding, and fuse/relay validation. Blocker: 1 electrical buy rows still open; 2 rows should be stock-verified before re-buy. Procurement: Order selected harness/sleeving path; verify on-hand connectors/relays before duplicate buys. Gate: Start/charge/lights/horn/wipers/gauges baseline passes functional checks."
+        },
+        {
+          "label": "WP05 \u00b7 Interior Weatherproofing Stack",
+          "status": "blocked",
+          "detail": "Apply sealing/lining/dampening/foam/carpet in moisture-safe sequence. Blocker: Interior finish materials are deferred until floor/body sealing gate closes. Procurement: Do not buy full interior finish stack early; release purchases by phase gate. Gate: Cabin sealed and dry before trim/final fit."
+        },
+        {
+          "label": "Issue checks",
+          "status": "completed",
+          "detail": "No issue-specific checks are recorded for this workstream."
+        },
+        {
+          "label": "Component Task \u00b7 Interior Dash Switch Fitup",
+          "status": "in_progress",
+          "detail": "Machine/enlarge existing dash holes to 22 mm, allocate dash controls to final positions, verify cutout clearances, and complete mounting with labels Notes: Build_Plan WP03A control-fit gate; 7 Schneider selectors and hole-enlarging tools are now available. Spot lamps already have a switch allocation, fuel-stop uses the purchased needle switch, hazards stay separate, and exact recommended 9 inch LCD model/link remains to be captured."
+        },
+        {
+          "label": "Component Task \u00b7 Old Accessory Wiring",
+          "status": "partially_removed",
+          "detail": "Remove nonstandard LEDs speakers light bars and extra wiring Notes: Chat explicitly says LEDs speakers front and back light bars and extra wiring were removed"
+        },
+        {
+          "label": "Component Task \u00b7 Eps Vitz Control Wiring And Safety",
+          "status": "planned_scope_lock",
+          "detail": "Define EPS power feed fuse relay ignition trigger and fail-safe behavior; map wiring integration into baseline harness plan Notes: Major project: EPS electrical integration should remain isolated and testable."
+        },
+        {
+          "label": "Component Task \u00b7 Body Rubbers",
+          "status": "planned_separate_service",
+          "detail": "Separate, tag, and clean, service, or replace Notes: Covers window rubbers and auxiliary rubber pieces removed during strip-down"
+        },
+        {
+          "label": "Component Task \u00b7 Window Mechanisms",
+          "status": "planned_separate_service",
+          "detail": "Separate mechanisms and send to relevant service locations Notes: Track mechanisms separately from glass and panels"
+        },
+        {
+          "label": "Component Task \u00b7 Interior",
+          "status": "planned_strip",
+          "detail": "Pull most of the interior and store under tagged covered conditions Notes: Use cartons and cheap covers for removed interior pieces kept in the driveway"
+        },
+        {
+          "label": "Component Task \u00b7 Interior Diesel Cutoff Ignition Security",
+          "status": "queued",
+          "detail": "Integrate purchased needle-type fuel stop switch, key-off diesel cutoff, and starter interrupt path; validate fallback/manual stop behavior Notes: Build_Plan WP03B security integration gate."
+        },
+        {
+          "label": "Procurement \u00b7 release purchase-ready rows",
+          "status": "completed",
+          "detail": "0 part rows still require price confirmation/order placement."
+        },
+        {
+          "label": "Procurement \u00b7 track in-flight deliveries",
+          "status": "completed",
+          "detail": "0 part rows are ordered and awaiting delivery."
+        },
+        {
+          "label": "Procurement \u00b7 resolve ambiguous stock/receipt rows",
+          "status": "completed",
+          "detail": "0 rows still need confirmation before closeout."
+        },
+        {
+          "label": "Close workstream exit gate",
+          "status": "blocked",
+          "detail": "At least one linked package is blocked. Exit gate: All 7 Schneider selectors (mixed 2-position and 3-position) are on hand, dash hole-enlarging tooling is available, and the hazard switch is separate from the selector count; current allocation still uses the purchased needle fuel-stop switch, so final selector/function map and LCD packaging remain open"
+        }
+      ],
+      "involved_parts": [
+        {
+          "entry_id": "part_hidden_diesel_cutoff_switch",
+          "workstream": "electrical_reset",
+          "item": "Fuel stop switch / hidden diesel cutoff (needle-type switch)",
+          "status": "received",
+          "procurement_stage": "received",
+          "payment_status": "paid",
+          "delivery_status": "received",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_hidden_diesel_cutoff_switch",
+          "evidence_ref": "user_image_2026-03-21_electrical_leftovers|photo_20260420_221819_gp_YV69fbvA|photo_20260421_194401_gp_1dY3fLdw|user_update_2026-05-02_parts_review",
+          "notes": "User confirmed the fuel stop switch is already purchased; simple needle-type switch visible in the April 20/21 control photos. Treat this as the on-hand hidden kill/starter-interrupt arm-disarm switch unless final wiring proves a separate control is needed.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260420_221819_gp_YV69fbvA.jpg",
+            "caption": "Fuel stop switch / hidden diesel cutoff (needle-type switch) \u00b7 local inventory photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260420_221819_gp_YV69fbvA",
+            "matched_tokens": [
+              "photo_20260420_221819_gp_yv69fbva"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        }
+      ],
+      "operation_panels": [],
+      "subtask_groups": [
+        {
+          "key": "dashboard_and_controls",
+          "title": "Dashboard And Controls",
+          "summary": "Dash switch cataloguing, function assignment, fit-up, and electrical integration.",
+          "subtasks": [
+            {
+              "title": "Classify And Tag Control Hardware",
+              "priority": "P0",
+              "remaining": "all dash controls",
+              "instruction": "Identify each switch, knob, warning lamp, and control before drilling or wiring.",
+              "process_steps": [
+                "Lay out all dashboard/control hardware and photograph labels, pins, and mounting hardware.",
+                "Assign each item a control ID and intended function.",
+                "Record hole diameter, mounting depth, connector type, and current condition.",
+                "Separate confirmed controls from unknown, duplicate, or optional controls.",
+                "Bag each control with its nut, bezel, and connector parts."
+              ],
+              "tools": [
+                "Camera",
+                "Calipers",
+                "Multimeter",
+                "Marker"
+              ],
+              "supplies": [
+                "Labels",
+                "Zip bags",
+                "Contact cleaner",
+                "Small parts tray"
+              ],
+              "hold_point": "No dashboard holes or wiring branches are finalized for unknown controls.",
+              "image_tokens": [
+                "switch",
+                "control",
+                "dashboard",
+                "button",
+                "knob"
+              ],
+              "id": "classify_and_tag_control_hardware",
+              "status": "in_progress",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260421_194401_gp_1dY3fLdw.jpeg",
+                  "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
+                  "captured_date": "2026-04-21",
+                  "captured_time": "19:44:01",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_switch_and_control_hardware",
+                  "stage": "electrical_rework",
+                  "media_id": "20260421_194401_gp_1dY3fLdw",
+                  "matched_tokens": [
+                    "20260421_194401_gp_1dy3fldw"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260421_192813_gp_0jvYAo8g_2.jpg",
+                  "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
+                  "captured_date": "2026-04-21",
+                  "captured_time": "19:28:13",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_switch_and_control_hardware",
+                  "stage": "electrical_rework",
+                  "media_id": "20260421_192813_gp_0jvYAo8g_2",
+                  "matched_tokens": [
+                    "20260421_192813_gp_0jvyao8g"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260422_074709_gp_o4wiXyjA.jpg",
+                  "caption": "Dashboard Shell And Bulkhead \u00b7 Stripdown Cataloguing \u00b7 2026-04-22",
+                  "captured_date": "2026-04-22",
+                  "captured_time": "07:47:09",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_shell_and_bulkhead",
+                  "stage": "stripdown_cataloguing",
+                  "media_id": "20260422_074709_gp_o4wiXyjA",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260413_040719.jpg",
+                  "caption": "Dashboard Shell And Cabin \u00b7 Stripdown Cataloguing \u00b7 2026-04-13",
+                  "captured_date": "2026-04-13",
+                  "captured_time": "04:07:19",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_shell_and_cabin",
+                  "stage": "stripdown_cataloguing",
+                  "media_id": "20260413_040719",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260323_211028_gp_7IYxU7Wg.jpg",
+                  "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+                  "captured_date": "2026-03-23",
+                  "captured_time": "21:10:28",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_and_cabin_stripdown",
+                  "stage": "stripdown_cataloguing",
+                  "media_id": "20260323_211028_gp_7IYxU7Wg",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260323_211006_gp_lhopOh5A.jpg",
+                  "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+                  "captured_date": "2026-03-23",
+                  "captured_time": "21:10:06",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_and_cabin_stripdown",
+                  "stage": "stripdown_cataloguing",
+                  "media_id": "20260323_211006_gp_lhopOh5A",
+                  "matched_tokens": []
+                }
+              ],
+              "registered_items": [
+                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)"
+              ]
+            },
+            {
+              "title": "Define Switch Function Map",
+              "priority": "P0",
+              "remaining": "before harness build",
+              "instruction": "Lock what each control does and which circuit it belongs to.",
+              "process_steps": [
+                "List each required function: ignition, lights, hazards, wipers, heater, fuel stop/security, and accessories.",
+                "Assign one physical control to each function and mark optional controls as deferred.",
+                "Confirm switch rating, pinout, illumination behavior, and fuse/relay need.",
+                "Update the wiring tracker with wire size, fuse value source, and connector plan.",
+                "Label the control and matching loom branch with the same ID."
+              ],
+              "tools": [
+                "Multimeter",
+                "Power supply/test battery with fuse",
+                "Wiring tracker"
+              ],
+              "supplies": [
+                "Labels",
+                "Heat shrink ID sleeves",
+                "Fuses/relays as planned",
+                "Connector housings"
+              ],
+              "hold_point": "A circuit cannot be wired until its switch function, protection, and connector are defined.",
+              "image_tokens": [
+                "switch",
+                "wiring",
+                "dash",
+                "control",
+                "connector"
+              ],
+              "id": "define_switch_function_map",
+              "status": "queued",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260421_194401_gp_1dY3fLdw.jpeg",
+                  "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
+                  "captured_date": "2026-04-21",
+                  "captured_time": "19:44:01",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_switch_and_control_hardware",
+                  "stage": "electrical_rework",
+                  "media_id": "20260421_194401_gp_1dY3fLdw",
+                  "matched_tokens": [
+                    "20260421_194401_gp_1dy3fldw"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260421_192813_gp_0jvYAo8g_2.jpg",
+                  "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
+                  "captured_date": "2026-04-21",
+                  "captured_time": "19:28:13",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_switch_and_control_hardware",
+                  "stage": "electrical_rework",
+                  "media_id": "20260421_192813_gp_0jvYAo8g_2",
+                  "matched_tokens": [
+                    "20260421_192813_gp_0jvyao8g"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260422_074709_gp_o4wiXyjA.jpg",
+                  "caption": "Dashboard Shell And Bulkhead \u00b7 Stripdown Cataloguing \u00b7 2026-04-22",
+                  "captured_date": "2026-04-22",
+                  "captured_time": "07:47:09",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_shell_and_bulkhead",
+                  "stage": "stripdown_cataloguing",
+                  "media_id": "20260422_074709_gp_o4wiXyjA",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260413_040719.jpg",
+                  "caption": "Dashboard Shell And Cabin \u00b7 Stripdown Cataloguing \u00b7 2026-04-13",
+                  "captured_date": "2026-04-13",
+                  "captured_time": "04:07:19",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_shell_and_cabin",
+                  "stage": "stripdown_cataloguing",
+                  "media_id": "20260413_040719",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260323_211028_gp_7IYxU7Wg.jpg",
+                  "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+                  "captured_date": "2026-03-23",
+                  "captured_time": "21:10:28",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_and_cabin_stripdown",
+                  "stage": "stripdown_cataloguing",
+                  "media_id": "20260323_211028_gp_7IYxU7Wg",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260323_211006_gp_lhopOh5A.jpg",
+                  "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+                  "captured_date": "2026-03-23",
+                  "captured_time": "21:10:06",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_and_cabin_stripdown",
+                  "stage": "stripdown_cataloguing",
+                  "media_id": "20260323_211006_gp_lhopOh5A",
+                  "matched_tokens": []
+                }
+              ],
+              "registered_items": [
+                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)"
+              ]
+            },
+            {
+              "title": "Complete Dash Fit And Mounting Checks",
+              "priority": "P1",
+              "remaining": "before fascia closeout",
+              "instruction": "Check physical fit before paint, trim, or wiring makes rework expensive.",
+              "process_steps": [
+                "Mock the switch/control layout in the actual dash panel or template.",
+                "Check rear clearance for wiring, nuts, heater ducts, column, and glovebox/trim.",
+                "Drill or file holes only after layout is approved.",
+                "Deburr, prime exposed metal edges, and fit grommets or edge protection where needed.",
+                "Install controls finger-tight and photograph final allocation."
+              ],
+              "tools": [
+                "Step drill",
+                "Files",
+                "Deburring tool",
+                "Calipers",
+                "Inspection mirror"
+              ],
+              "supplies": [
+                "Edge primer",
+                "Grommets",
+                "Control nuts/washers",
+                "Protective tape"
+              ],
+              "hold_point": "Controls mount without forcing, twisting wiring, or fouling the dash structure.",
+              "image_tokens": [
+                "dashboard",
+                "fascia",
+                "switch",
+                "control",
+                "fit"
+              ],
+              "id": "complete_dash_fit_and_mounting_checks",
+              "status": "queued",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260421_194401_gp_1dY3fLdw.jpeg",
+                  "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
+                  "captured_date": "2026-04-21",
+                  "captured_time": "19:44:01",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_switch_and_control_hardware",
+                  "stage": "electrical_rework",
+                  "media_id": "20260421_194401_gp_1dY3fLdw",
+                  "matched_tokens": [
+                    "20260421_194401_gp_1dy3fldw"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260421_192813_gp_0jvYAo8g_2.jpg",
+                  "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
+                  "captured_date": "2026-04-21",
+                  "captured_time": "19:28:13",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_switch_and_control_hardware",
+                  "stage": "electrical_rework",
+                  "media_id": "20260421_192813_gp_0jvYAo8g_2",
+                  "matched_tokens": [
+                    "20260421_192813_gp_0jvyao8g"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260323_190005.jpg",
+                  "caption": "Dashboard Lower Structure \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+                  "captured_date": "2026-03-23",
+                  "captured_time": "19:00:05",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_lower_structure",
+                  "stage": "stripdown_cataloguing",
+                  "media_id": "20260323_190005",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260422_074709_gp_o4wiXyjA.jpg",
+                  "caption": "Dashboard Shell And Bulkhead \u00b7 Stripdown Cataloguing \u00b7 2026-04-22",
+                  "captured_date": "2026-04-22",
+                  "captured_time": "07:47:09",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_shell_and_bulkhead",
+                  "stage": "stripdown_cataloguing",
+                  "media_id": "20260422_074709_gp_o4wiXyjA",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260413_040719.jpg",
+                  "caption": "Dashboard Shell And Cabin \u00b7 Stripdown Cataloguing \u00b7 2026-04-13",
+                  "captured_date": "2026-04-13",
+                  "captured_time": "04:07:19",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_shell_and_cabin",
+                  "stage": "stripdown_cataloguing",
+                  "media_id": "20260413_040719",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260323_211028_gp_7IYxU7Wg.jpg",
+                  "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+                  "captured_date": "2026-03-23",
+                  "captured_time": "21:10:28",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_and_cabin_stripdown",
+                  "stage": "stripdown_cataloguing",
+                  "media_id": "20260323_211028_gp_7IYxU7Wg",
+                  "matched_tokens": []
+                }
+              ],
+              "registered_items": [
+                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)"
+              ]
+            },
+            {
+              "title": "Wire, Label, And Function Test",
+              "priority": "P0",
+              "remaining": "after harness branch build",
+              "instruction": "Integrate controls into protected, labelled circuits and test before closeout.",
+              "process_steps": [
+                "Build each branch with strain relief, heat shrink, and service loop.",
+                "Crimp with the correct die and tug-test each terminal.",
+                "Route wiring away from sharp edges, heater movement, pedals, and column movement.",
+                "Test continuity, switch function, fuse behavior, and relay operation.",
+                "Photograph final routing and label positions before trim covers them."
+              ],
+              "tools": [
+                "Ratchet crimper",
+                "Heat gun",
+                "Multimeter",
+                "Test lamp",
+                "Fuse-protected test lead"
+              ],
+              "supplies": [
+                "Automotive wire",
+                "Terminals",
+                "Heat shrink",
+                "Loom sleeve",
+                "Loom tape",
+                "Labels"
+              ],
+              "hold_point": "Every fitted control must work and be labelled before dash closure.",
+              "image_tokens": [
+                "wiring",
+                "dashboard",
+                "loom",
+                "connector",
+                "switch"
+              ],
+              "id": "wire_label_and_function_test",
+              "status": "queued",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260421_194401_gp_1dY3fLdw.jpeg",
+                  "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
+                  "captured_date": "2026-04-21",
+                  "captured_time": "19:44:01",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_switch_and_control_hardware",
+                  "stage": "electrical_rework",
+                  "media_id": "20260421_194401_gp_1dY3fLdw",
+                  "matched_tokens": [
+                    "20260421_194401_gp_1dy3fldw"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260421_192813_gp_0jvYAo8g_2.jpg",
+                  "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
+                  "captured_date": "2026-04-21",
+                  "captured_time": "19:28:13",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_switch_and_control_hardware",
+                  "stage": "electrical_rework",
+                  "media_id": "20260421_192813_gp_0jvYAo8g_2",
+                  "matched_tokens": [
+                    "20260421_192813_gp_0jvyao8g"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260422_074709_gp_o4wiXyjA.jpg",
+                  "caption": "Dashboard Shell And Bulkhead \u00b7 Stripdown Cataloguing \u00b7 2026-04-22",
+                  "captured_date": "2026-04-22",
+                  "captured_time": "07:47:09",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_shell_and_bulkhead",
+                  "stage": "stripdown_cataloguing",
+                  "media_id": "20260422_074709_gp_o4wiXyjA",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260413_040719.jpg",
+                  "caption": "Dashboard Shell And Cabin \u00b7 Stripdown Cataloguing \u00b7 2026-04-13",
+                  "captured_date": "2026-04-13",
+                  "captured_time": "04:07:19",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_shell_and_cabin",
+                  "stage": "stripdown_cataloguing",
+                  "media_id": "20260413_040719",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260323_211028_gp_7IYxU7Wg.jpg",
+                  "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+                  "captured_date": "2026-03-23",
+                  "captured_time": "21:10:28",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_and_cabin_stripdown",
+                  "stage": "stripdown_cataloguing",
+                  "media_id": "20260323_211028_gp_7IYxU7Wg",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260323_211006_gp_lhopOh5A.jpg",
+                  "caption": "Dashboard And Cabin Stripdown \u00b7 Stripdown Cataloguing \u00b7 2026-03-23",
+                  "captured_date": "2026-03-23",
+                  "captured_time": "21:10:06",
+                  "media_type": "photo",
+                  "component_group": "interior_cabin",
+                  "specific_component": "dashboard_and_cabin_stripdown",
+                  "stage": "stripdown_cataloguing",
+                  "media_id": "20260323_211006_gp_lhopOh5A",
+                  "matched_tokens": []
+                }
+              ],
+              "registered_items": [
+                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)"
+              ]
+            }
+          ]
+        }
+      ],
+      "electrical_spec_layout": {
+        "scope": "dashboard_focus",
+        "title": "Electrical Master - Clear Tracker (As-Built + Remaining Work)",
+        "last_updated": "2026-04-15 05:48",
+        "purpose": "one-page wiring progress + locked standards + quick lookup",
+        "source_refs": [
+          "data/manual/workbook_tabs/electrical_master.csv",
+          "data/manual/workbook_tabs/electrical_templates.csv"
+        ],
+        "layout_templates": [
+          {
+            "label": "NAL Drill Template (300mm x 200mm, 1:1)",
+            "source_ref": "workbook_electrical_templates#row_16"
+          },
+          {
+            "label": "FUSE BOX",
+            "source_ref": "workbook_electrical_templates#row_17"
+          },
+          {
+            "label": "RELAY ROW (5x)",
+            "source_ref": "workbook_electrical_templates#row_18"
+          },
+          {
+            "label": "CENTRAL LOCKING",
+            "source_ref": "workbook_electrical_templates#row_19"
+          },
+          {
+            "label": "MAIN LOOM EXIT",
+            "source_ref": "workbook_electrical_templates#row_20"
+          }
+        ],
+        "wiring_progress_tracker": [
+          {
+            "priority": "B",
+            "area": "Fuse Plan",
+            "task": "Dash and MIDI fuse sizing reconciled (incl. EPS 60A, Glow 50A)",
+            "status": "Done",
+            "done": "Yes",
+            "current_state": "Fuse sizing documented for current electrical load plan.",
+            "next_action": "Verify against final accessory additions.",
+            "dependency": "Any major load change",
+            "parts_tools_impact": "Only if load changes"
+          },
+          {
+            "priority": "A",
+            "area": "Switch Panel",
+            "task": "Install Schneider selector controls and separate needle fuel-stop switch",
+            "status": "In Progress",
+            "done": "Yes - all 7 Schneider received",
+            "current_state": "All 7 Schneider selectors are received. Current allocation uses selectors for wipers, lights, spot lamps, aux/spare, blower, and A/C clutch; fuel-stop uses the purchased needle-type switch.",
+            "next_action": "Mount assigned selectors and the needle fuel-stop switch; confirm spare/aux use.",
+            "dependency": "Dash panel machining complete",
+            "parts_tools_impact": "No new switch purchase; tools for hole sizing / panel work"
+          },
+          {
+            "priority": "A",
+            "area": "Dash Fabrication",
+            "task": "Machine/enlarge dashboard holes to 22 mm and confirm cluster spacing",
+            "status": "In Progress",
+            "done": "Partial",
+            "current_state": "Hole-enlarging tools are now available; panel prep can move from procurement wait to controlled machining/test-fit.",
+            "next_action": "Open one sample hole or existing pull-switch hole to 22 mm, deburr/protect edges, then confirm center spacing and rear clearance before completing all holes.",
+            "dependency": "Switch allocation and careful measurement",
+            "parts_tools_impact": "22 mm step drill/chassis punch/precision cutter on hand"
+          },
+          {
+            "priority": "A",
+            "area": "Fuel Stop Control",
+            "task": "Ensure ignition OFF reliably cuts diesel fuel-stop; retain manual cable backup",
+            "status": "Pending",
+            "done": "No",
+            "current_state": "Needle-type fuel-stop/hidden cutoff switch is already purchased and photographed; ignition-linked behavior still needs final wiring.",
+            "next_action": "Wire and test shutdown behavior with engine running.",
+            "dependency": "Switch panel + ignition wiring final",
+            "parts_tools_impact": "Use on-hand needle-type switch; no new switch buy"
+          },
+          {
+            "priority": "B",
+            "area": "Security",
+            "task": "Upgrade ignition/key security (current keying not secure)",
+            "status": "Pending",
+            "done": "No",
+            "current_state": "Current lock/key setup can be defeated too easily.",
+            "next_action": "Select and install improved barrel/key solution.",
+            "dependency": "Mechanical lock choice",
+            "parts_tools_impact": "Likely parts purchase in Parts tab"
+          },
+          {
+            "priority": "B",
+            "area": "Grounding",
+            "task": "Verify battery/chassis, engine/chassis, and dash grounds after tub-off work",
+            "status": "In Progress",
+            "done": "Partial",
+            "current_state": "Ground architecture defined; needs post-work physical validation.",
+            "next_action": "Clean points, torque, and coat after final fit.",
+            "dependency": "Tub/chassis work completion",
+            "parts_tools_impact": "Ground straps/hardware if needed"
+          }
+        ],
+        "locked_as_built_standards": [
+          {
+            "standard": "Relay/wire heat-shrink coding",
+            "decision": "Use current two-band combinations from available colours only",
+            "why_locked": "Local material availability is limited; current codes are already workable and implemented.",
+            "revisit_trigger": "Only revisit if full colour inventory becomes available and relabel effort is justified."
+          },
+          {
+            "standard": "Relay positions (T1-T5, B1-B5)",
+            "decision": "Keep current relay position/function map",
+            "why_locked": "Physical layout and wiring branches are already built to this map.",
+            "revisit_trigger": "Only revisit if adding/removing major circuits."
+          },
+          {
+            "standard": "Connector IDs (X1-X10)",
+            "decision": "Keep current connector naming and branch pairing",
+            "why_locked": "As-built pinout and loom labels depend on these IDs.",
+            "revisit_trigger": "Only revisit if connector hardware changes."
+          },
+          {
+            "standard": "Loom IDs (HD1, L2, L3, L4, L5A, L5B, L6)",
+            "decision": "Keep existing loom labels and routes",
+            "why_locked": "Routing, branch references, and diagnostics depend on this naming.",
+            "revisit_trigger": "Only revisit if loom is rebuilt."
+          }
+        ],
+        "relay_quick_lookup": [
+          {
+            "relay_pos": "T1",
+            "function": "Low beam",
+            "relay_colour": "Yellow",
+            "power_code": "Yellow + Blue",
+            "power_loom": "Front Trunk",
+            "wire_size": "2.5 mm\u00b2",
+            "control_loom": "Left Branch",
+            "implementation_status": "Active / as-built"
+          },
+          {
+            "relay_pos": "T2",
+            "function": "High beam",
+            "relay_colour": "Green",
+            "power_code": "Yellow + Green",
+            "power_loom": "Front Trunk",
+            "wire_size": "2.5 mm\u00b2",
+            "control_loom": "Left Branch",
+            "implementation_status": "Active / as-built"
+          },
+          {
+            "relay_pos": "T3",
+            "function": "Horn",
+            "relay_colour": "White",
+            "power_code": "Yellow + Red",
+            "power_loom": "Front Trunk",
+            "wire_size": "2.5 mm\u00b2",
+            "control_loom": "Left Branch",
+            "implementation_status": "Active / as-built; no duplicate relay buy"
+          },
+          {
+            "relay_pos": "T4",
+            "function": "Condenser fan",
+            "relay_colour": "Orange",
+            "power_code": "Blue + Green",
+            "power_loom": "Front Trunk",
+            "wire_size": "2.5 mm\u00b2",
+            "control_loom": "VC",
+            "implementation_status": "Active / as-built"
+          }
+        ],
+        "connector_quick_lookup": [
+          {
+            "connector": "X3",
+            "type": "8-way Deutsch pair",
+            "loom_or_branch": "Left branch",
+            "terminated_circuits": "LB-01..LB-08",
+            "status": "Installed",
+            "notes": "Left branch dash disconnect"
+          },
+          {
+            "connector": "X4",
+            "type": "8-way Deutsch pair",
+            "loom_or_branch": "Right branch",
+            "terminated_circuits": "RB-01..RB-08",
+            "status": "Installed",
+            "notes": "Right branch dash disconnect"
+          },
+          {
+            "connector": "X5",
+            "type": "6-way Deutsch pair",
+            "loom_or_branch": "Ignition loom",
+            "terminated_circuits": "IGN-02..IGN-07",
+            "status": "Installed",
+            "notes": "Ignition small-wire disconnect"
+          }
+        ],
+        "loom_quick_lookup": [
+          {
+            "loom_id": "L4",
+            "loom_name": "ignition",
+            "build_makeup": "1 x 10 main, 1 x 2.5, 5 x 1.5 mm\u00b2",
+            "primary_role": "Dash power and ignition distribution",
+            "status": "Built / verify after tub work"
+          },
+          {
+            "loom_id": "L5A",
+            "loom_name": "left branch",
+            "build_makeup": "1 x 2.5, 3 x 1.5, 4 x 1.0 mm\u00b2",
+            "primary_role": "Column + left-dash branch",
+            "status": "Built / verify after tub work"
+          },
+          {
+            "loom_id": "L5B",
+            "loom_name": "right branch",
+            "build_makeup": "2 x 2.5, 3 x 1.5, 4 x 1.0 mm\u00b2",
+            "primary_role": "Right-dash + cabin branch",
+            "status": "Built / verify after tub work"
+          }
+        ],
+        "minimum_electrical_gate": [
+          {
+            "step": "3",
+            "action": "Complete dash switch panel machining and Schneider switch installation",
+            "target_stage": "Before dash close-out",
+            "status": "In Progress"
+          }
+        ]
+      }
+    },
+    {
       "id": "mechanical_baseline",
       "title": "Mechanical Baseline",
       "phase": "05_engine_maintenance_stripped",
@@ -20525,6 +24149,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
+      "fabrication_packages": [],
       "linked_packages": [
         {
           "work_package_id": "WP04",
@@ -23857,6 +27482,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
+      "fabrication_packages": [],
       "linked_packages": [],
       "component_jobs": [
         {
@@ -24773,6 +28399,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
+      "fabrication_packages": [],
       "linked_packages": [],
       "component_jobs": [
         {
@@ -25775,6 +29402,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
+      "fabrication_packages": [],
       "linked_packages": [],
       "component_jobs": [
         {
@@ -26425,6 +30053,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
+      "fabrication_packages": [],
       "linked_packages": [],
       "component_jobs": [
         {
@@ -27128,6 +30757,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
+      "fabrication_packages": [],
       "linked_packages": [
         {
           "work_package_id": "WP05",
@@ -28408,6 +32038,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
+      "fabrication_packages": [],
       "linked_packages": [
         {
           "work_package_id": "WP06",
@@ -29008,6 +32639,38 @@ window.J40_DASHBOARD_DATA = {
         "specific_component": "wiring_harness_and_fuse_distribution",
         "stage": "procurement_reconciliation",
         "media_id": "20260404_192619_gp_jsR1m0RQ",
+        "matched_tokens": []
+      }
+    },
+    {
+      "work_package_id": "WP03F",
+      "title": "Fabrication Drawing Handoff",
+      "lane": "fabrication",
+      "objective": "Send and track the rubber recreation and electrical mount fabrication packages.",
+      "current_state": "in_progress",
+      "depends_on": [
+        "WP01",
+        "WP03"
+      ],
+      "linked_workstreams": [
+        "fabrication_handoff",
+        "chassis_rubbers",
+        "electrical_reset"
+      ],
+      "evidence_signal": "4 fabrication package rows with PDF/DXF/SVG outputs",
+      "blocker_summary": "Rubber final batch still has measurement holds; electrical combined-module route is reference/provisional.",
+      "gate_to_close": "Fabricator has the current package files and first articles are accepted before batch production or loom/body closeout.",
+      "key_procurement_actions": "Use the Fabrication workstream package links; do not fabricate superseded electrical routes unless deliberately reopened.",
+      "image": {
+        "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
+        "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+        "captured_date": "2026-05-02",
+        "captured_time": "00:44:42",
+        "media_type": "photo",
+        "component_group": "procurement_inventory",
+        "specific_component": "rubber_parts_recreation_samples",
+        "stage": "procurement_reconciliation",
+        "media_id": "20260502_004442_gp_7WcFHjLQ",
         "matched_tokens": []
       }
     },
@@ -61175,8 +64838,9 @@ window.J40_DASHBOARD_DATA = {
       "paint_refinish",
       "chassis_fixing",
       "chassis_rubbers",
-      "interior_controls",
       "electrical_reset",
+      "fabrication_handoff",
+      "interior_controls",
       "mechanical_baseline",
       "replacement_pipes",
       "brake_system",
@@ -61337,6 +65001,24 @@ window.J40_DASHBOARD_DATA = {
           "power",
           "relay",
           "switch",
+          "wiring"
+        ]
+      },
+      "fabrication_handoff": {
+        "component_groups": [
+          "procurement_inventory"
+        ],
+        "stages": [
+          "procurement_reconciliation"
+        ],
+        "keywords": [
+          "body_mount",
+          "fabrication",
+          "fuse",
+          "midi",
+          "relay",
+          "rubber",
+          "sample",
           "wiring"
         ]
       },
