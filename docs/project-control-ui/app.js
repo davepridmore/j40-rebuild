@@ -92,6 +92,10 @@
       .replace(/'/g, "&#039;");
   }
 
+  function escapeRegExp(value) {
+    return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
+
   function switchView(nextView) {
     if (!nextView || nextView === state.activeView) {
       return;
@@ -133,6 +137,48 @@
 
   function cleanString(value) {
     return String(value ?? "").trim();
+  }
+
+  function supplierLabel(row) {
+    return cleanString(row && (row.supplier || row.vendor || row.company));
+  }
+
+  function formatMoneyAmount(value) {
+    const raw = cleanString(value);
+    const normalized = raw.replace(/,/g, "");
+    if (/^-?\d+(?:\.\d+)?$/.test(normalized)) {
+      const parsed = Number(normalized);
+      if (Number.isFinite(parsed)) {
+        return parsed.toLocaleString();
+      }
+    }
+    return raw;
+  }
+
+  function costLabel(row) {
+    const amount = cleanString(row && (row.cost || row.amount));
+    if (!amount) {
+      return "";
+    }
+    const amountText = formatMoneyAmount(amount);
+    const currency = cleanString(row && row.currency);
+    if (!currency || new RegExp(`\\b${escapeRegExp(currency)}\\b`, "i").test(amountText) || /\bPKR\b|Rs\.?/i.test(amountText)) {
+      return amountText;
+    }
+    return `${currency} ${amountText}`;
+  }
+
+  function tableSupplierCell(row) {
+    return escapeHtml(supplierLabel(row) || "-");
+  }
+
+  function tableCostCell(row) {
+    const cost = costLabel(row);
+    if (cost) {
+      return escapeHtml(cost);
+    }
+    const amountStatus = cleanString(row && row.amount_status);
+    return escapeHtml(amountStatus ? formatToken(amountStatus) : "-");
   }
 
   function mediaTypeFromPath(path) {
@@ -2299,7 +2345,8 @@
                       <th>Status Group</th>
                       <th>Source</th>
                       <th>Workstream</th>
-                      <th>Vendor</th>
+                      <th>Supplier</th>
+                      <th>Cost</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -2314,12 +2361,13 @@
                                   <td>${statusChip(row.status_group || "-")}</td>
                                   <td>${escapeHtml(formatToken(row.source || "-"))}</td>
                                   <td>${escapeHtml(formatToken(row.workstream || "-"))}</td>
-                                  <td>${escapeHtml(row.vendor || "-")}</td>
+                                  <td>${tableSupplierCell(row)}</td>
+                                  <td>${tableCostCell(row)}</td>
                                 </tr>
                               `
                             )
                             .join("")
-                        : `<tr><td colspan="6">No ${escapeHtml(groupKey)} inventory rows found.</td></tr>`
+                        : `<tr><td colspan="7">No ${escapeHtml(groupKey)} inventory rows found.</td></tr>`
                     }
                   </tbody>
                 </table>
@@ -2363,6 +2411,8 @@
               <th>Image</th>
               <th>Priority</th>
               <th>Item</th>
+              <th>Supplier</th>
+              <th>Cost</th>
               <th>Workstream</th>
               <th>Next Action</th>
               <th>Stage</th>
@@ -2379,6 +2429,8 @@
                           ${renderInventoryImageCell(row, row.item || "Part image")}
                           <td>${escapeHtml(row.priority)}</td>
                           <td>${renderItemButton(row)}</td>
+                          <td>${tableSupplierCell(row)}</td>
+                          <td>${tableCostCell(row)}</td>
                           <td>${escapeHtml(formatToken(row.workstream))}</td>
                           <td>${escapeHtml(formatToken(row.next_action))}</td>
                           <td>${escapeHtml(formatToken(row.procurement_stage))}</td>
@@ -2387,7 +2439,7 @@
                       `
                     )
                     .join("")
-                : '<tr><td colspan="7">No urgent action rows.</td></tr>'
+                : '<tr><td colspan="9">No urgent action rows.</td></tr>'
             }
           </tbody>
         </table>
@@ -2400,6 +2452,8 @@
             <tr>
               <th>Image</th>
               <th>Item</th>
+              <th>Supplier</th>
+              <th>Cost</th>
               <th>Workstream</th>
               <th>Payment</th>
               <th>Delivery</th>
@@ -2416,6 +2470,8 @@
                         <tr>
                           ${renderInventoryImageCell(row, row.item || "Part image")}
                           <td>${renderItemButton(row)}</td>
+                          <td>${tableSupplierCell(row)}</td>
+                          <td>${tableCostCell(row)}</td>
                           <td>${escapeHtml(formatToken(row.workstream))}</td>
                           <td>${statusChip(row.payment_status)}</td>
                           <td>${statusChip(row.delivery_status)}</td>
@@ -2425,7 +2481,7 @@
                       `
                     )
                     .join("")
-                : '<tr><td colspan="7">No in-flight delivery rows.</td></tr>'
+                : '<tr><td colspan="9">No in-flight delivery rows.</td></tr>'
             }
           </tbody>
         </table>
@@ -2466,6 +2522,8 @@
             <tr>
               <th>Image</th>
               <th>Item</th>
+              <th>Supplier</th>
+              <th>Cost</th>
               <th>Workstream</th>
               <th>Status</th>
               <th>Stage</th>
@@ -2482,6 +2540,8 @@
                         <tr>
                           ${renderInventoryImageCell(row, row.item || "Part image")}
                           <td>${renderItemButton(row)}</td>
+                          <td>${tableSupplierCell(row)}</td>
+                          <td>${tableCostCell(row)}</td>
                           <td>${escapeHtml(formatToken(row.workstream))}</td>
                           <td>${statusChip(row.status)}</td>
                           <td>${escapeHtml(formatToken(row.procurement_stage))}</td>
@@ -2491,7 +2551,7 @@
                       `
                     )
                     .join("")
-                : '<tr><td colspan="7">No open parts.</td></tr>'
+                : '<tr><td colspan="9">No open parts.</td></tr>'
             }
           </tbody>
         </table>
@@ -2505,6 +2565,8 @@
               <th>Image</th>
               <th>Type</th>
               <th>Item</th>
+              <th>Supplier</th>
+              <th>Cost</th>
               <th>Source</th>
               <th>Workstream</th>
               <th>Status Detail</th>
@@ -2522,6 +2584,8 @@
                           ${renderInventoryImageCell(row, row.item || "Inventory image")}
                           <td>${escapeHtml(formatToken(row.supply_type))}</td>
                           <td>${renderItemButton(row)}</td>
+                          <td>${tableSupplierCell(row)}</td>
+                          <td>${tableCostCell(row)}</td>
                           <td>${escapeHtml(formatToken(row.source))}</td>
                           <td>${escapeHtml(formatToken(row.workstream || "-"))}</td>
                           <td>${escapeHtml(formatToken(row.status_detail || row.procurement_stage || "-"))}</td>
@@ -2531,7 +2595,7 @@
                       `
                     )
                     .join("")
-                : '<tr><td colspan="8">No in-process supply rows.</td></tr>'
+                : '<tr><td colspan="10">No in-process supply rows.</td></tr>'
             }
           </tbody>
         </table>
@@ -2548,7 +2612,8 @@
               <th>Source</th>
               <th>Workstream</th>
               <th>Procurement Stage</th>
-              <th>Vendor</th>
+              <th>Supplier</th>
+              <th>Cost</th>
             </tr>
           </thead>
           <tbody>
@@ -2564,12 +2629,13 @@
                           <td>${escapeHtml(formatToken(row.source))}</td>
                           <td>${escapeHtml(formatToken(row.workstream || "-"))}</td>
                           <td>${escapeHtml(formatToken(row.procurement_stage || row.status_detail || "-"))}</td>
-                          <td>${escapeHtml(row.vendor || "-")}</td>
+                          <td>${tableSupplierCell(row)}</td>
+                          <td>${tableCostCell(row)}</td>
                         </tr>
                       `
                     )
                     .join("")
-                : '<tr><td colspan="7">No still-required supply rows.</td></tr>'
+                : '<tr><td colspan="8">No still-required supply rows.</td></tr>'
             }
           </tbody>
         </table>
@@ -2583,6 +2649,8 @@
               <th>Image</th>
               <th>Type</th>
               <th>Item</th>
+              <th>Supplier</th>
+              <th>Cost</th>
               <th>Source</th>
               <th>Workstream</th>
               <th>Status</th>
@@ -2598,6 +2666,8 @@
                           ${renderInventoryImageCell(row, row.item || "Inventory image")}
                           <td>${escapeHtml(formatToken(row.supply_type))}</td>
                           <td>${renderItemButton(row)}</td>
+                          <td>${tableSupplierCell(row)}</td>
+                          <td>${tableCostCell(row)}</td>
                           <td>${escapeHtml(formatToken(row.source))}</td>
                           <td>${escapeHtml(formatToken(row.workstream || "-"))}</td>
                           <td>${escapeHtml(formatToken(row.status_detail || "received"))}</td>
@@ -2605,7 +2675,7 @@
                       `
                     )
                     .join("")
-                : '<tr><td colspan="6">No previously-procured supply rows.</td></tr>'
+                : '<tr><td colspan="8">No previously-procured supply rows.</td></tr>'
             }
           </tbody>
         </table>
@@ -2683,11 +2753,7 @@
   }
 
   function itemAmountLabel(row) {
-    const amount = cleanString(row.amount);
-    if (!amount) {
-      return "";
-    }
-    return [amount, cleanString(row.currency)].filter(Boolean).join(" ");
+    return costLabel(row);
   }
 
   function renderItemMetaRow(label, value, options = {}) {
@@ -2724,8 +2790,8 @@
       renderItemMetaRow("Priority", row.priority || ""),
       renderItemMetaRow("Next Action", formatToken(row.next_action || "")),
       renderItemMetaRow("Source", [formatToken(row.source || ""), row.source_ref || row.entry_id || ""].filter(Boolean).join(" · ")),
-      renderItemMetaRow("Vendor", row.vendor || row.company || ""),
-      renderItemMetaRow("Amount", itemAmountLabel(row)),
+      renderItemMetaRow("Supplier", supplierLabel(row)),
+      renderItemMetaRow("Cost", itemAmountLabel(row)),
       renderItemMetaRow("Evidence", row.evidence_ref || ""),
       renderItemMetaRow("Image Match", formatToken(prepared.effective.match_basis || "")),
     ].join("");
