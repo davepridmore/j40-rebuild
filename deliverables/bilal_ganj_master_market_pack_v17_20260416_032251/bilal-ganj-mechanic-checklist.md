@@ -53,11 +53,15 @@ Priority reminder:
 ### EPS Kit (Row 229)
 
 - Use full checklist in `eps-bilal-ganj-kit-checklist.md`.
+- Ask specifically for a complete 2005-2011 Toyota Vitz/Yaris 90-series column-assist EPS set, chassis code SCP90 or NCP90.
+- Do not accept Corolla/Axio/Prius EPS as a buy item, hydraulic power steering parts, loose motors, missing ECUs, missing shafts, or cut-flush connectors.
 - Mandatory in-person checks:
-  - Complete kit presence (column motor unit, ECU/control, shafts/U-joints, couplers, brackets, connectors).
+  - Donor year/chassis confirmation: 2005-2011 SCP90 or NCP90.
+  - Complete matched kit presence (column motor unit, matching ECU/control, shafts/U-joints, couplers, brackets, connectors, pigtails).
   - Bench assist smoothness (no jerks/grinding).
   - Input/output play check (no major backlash).
-  - Confirm connector pigtails are present.
+  - Confirm connector pigtails are present and at least 150mm long.
+  - Photograph labels, splines, connectors, brackets, and bench-test video.
 
 ### Heat Plugs / Glow Plugs (Row 29)
 

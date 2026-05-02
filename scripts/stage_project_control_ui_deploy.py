@@ -23,6 +23,12 @@ PUBLIC_FABRICATION_DOCS = (
     ROOT / "docs" / "fabrication-handoff-index.md",
     ROOT / "docs" / "rubber-recreation-fabrication-spec-20260502.md",
 )
+PUBLIC_MARKET_DOCS = (
+    ROOT / "docs" / "eps-bilal-ganj-kit-checklist.md",
+    ROOT / "docs" / "bilal-ganj-detailed-size-specs.md",
+    ROOT / "docs" / "bilal-ganj-master-shopping-list.md",
+    ROOT / "docs" / "bilal-ganj-mechanic-checklist.md",
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -203,6 +209,16 @@ def stage_public_fabrication_assets(output_dir: Path) -> int:
     return copied
 
 
+def stage_public_market_docs(output_dir: Path) -> int:
+    copied = 0
+    for source in PUBLIC_MARKET_DOCS:
+        if not source.exists():
+            continue
+        copy_file(source, output_dir / source.relative_to(ROOT))
+        copied += 1
+    return copied
+
+
 def staged_media_name(relative_ui_path: str, source: Path) -> str:
     digest = hashlib.sha1(relative_ui_path.encode("utf-8")).hexdigest()[:16]
     suffix = source.suffix.lower() or ".bin"
@@ -238,11 +254,13 @@ def main() -> None:
     data = prune_dashboard_data(load_dashboard_data())
     stage_static_ui(output_dir)
     copied_fabrication_assets = stage_public_fabrication_assets(output_dir)
+    copied_market_docs = stage_public_market_docs(output_dir)
     data, copied_assets, missing_assets = stage_referenced_assets(data, output_dir)
     write_dashboard_data(data, output_dir)
 
     print(f"Staged Project Control UI: {output_dir}")
     print(f"Copied fabrication assets: {copied_fabrication_assets}")
+    print(f"Copied market docs: {copied_market_docs}")
     print(f"Copied referenced media/assets: {copied_assets}")
     if missing_assets:
         print(f"Missing referenced media/assets: {len(missing_assets)}")

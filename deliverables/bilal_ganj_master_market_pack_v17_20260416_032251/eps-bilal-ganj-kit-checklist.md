@@ -3,16 +3,28 @@
 Date: 2026-04-15  
 Vehicle context: Toyota Land Cruiser J40 build, electrical architecture already prepared for EPS feed.
 
+## What To Ask For
+
+Plain stall request: **"I need a complete 2005-2011 Toyota Vitz/Yaris 90-series electric EPS steering column set, chassis code SCP90 or NCP90, with matching computer/ECU, original plugs with wiring tails, shafts, U-joints, couplers, and brackets, tested working."**
+
+Ask for **one complete 2005-2011 Toyota Vitz/Yaris 90-series electric column-assist EPS conversion set**, chassis code **SCP90 or NCP90**. Corolla/Axio, Prius, and other Toyota EPS columns are not buy candidates for this build unless explicitly approved later; collect quote/photos only if no SCP90/NCP90 set is found.
+
+This is not hydraulic power steering. Do not buy pumps, racks, hydraulic steering boxes, hoses, or a loose EPS motor by itself.
+
+The set must be a matched donor set: column, controller/ECU, connectors, shafts, U-joints, couplers, and brackets from the same donor family. Do not accept a random ECU paired with an unrelated column unless the seller demonstrates the exact pair working on the bench.
+
 ## Accept/Reject Checklist (On-Site)
 
 Use this as a hard gate before payment.
 
 | Item | Required | Check |
 | --- | --- | --- |
+| 2005-2011 Toyota Vitz/Yaris 90-series donor, SCP90 or NCP90 | Yes | ☐ |
 | EPS motorized steering column assembly | Yes | ☐ |
 | Torque sensor integrated in column | Yes | ☐ |
 | EPS ECU/controller (or verified integrated control) | Yes | ☐ |
-| Main EPS connectors with pigtails (>=150mm) | Yes | ☐ |
+| Main EPS connectors with pigtails (>=150mm, not cut flush) | Yes | ☐ |
+| Power/ground and ignition-trigger wires identifiable | Yes | ☐ |
 | Upper intermediate shaft section | Yes | ☐ |
 | Lower intermediate shaft section | Yes | ☐ |
 | U-joints (good condition, no notchiness) | Yes | ☐ |
@@ -21,6 +33,7 @@ Use this as a hard gate before payment.
 | Firewall support bracket/plate | Yes | ☐ |
 | 60A feed provision + ignition trigger wiring path info | Yes | ☐ |
 | Fasteners for brackets/couplers | Yes | ☐ |
+| Readable column and ECU part-number labels | Yes | ☐ |
 
 ## Bench Test (Mandatory)
 
@@ -29,22 +42,47 @@ Use this as a hard gate before payment.
 - Check for backlash/play at output shaft.
 - Verify smooth return and consistent assist both directions.
 - Confirm manual steering remains possible with assist disabled.
+- If the seller cannot bench-test it, quote only. Do not buy.
+
+## Reject Immediately If
+
+- ECU/controller is missing and the unit is not proven integrated.
+- Connectors are missing, cut flush, melted, or badly repaired.
+- Motor housing, column tube, mounting ears, or gearbox casting is cracked.
+- Shaft has visible bend, accident damage, heavy rust, or excessive play.
+- Seller offers only a motor, only an ECU, or only a column without shafts/connectors.
+- Unit is noisy, jerky, notchy, or cannot be demonstrated.
 
 ## Fitment Capture (Write Down Before Leaving)
 
 - Donor vehicle/model claimed by seller: `________________`
+- Donor year claimed by seller: `________________`
+- Donor chassis code, must be SCP90 or NCP90: `________________`
 - EPS unit part number label: `________________`
+- ECU/controller part number label: `________________`
 - Input spline/shaft details: `________________`
 - Output spline/shaft details: `________________`
+- Overall column length, shaft end to shaft end: `________________`
+- Motor/gearbox widest clearance envelope: `________________`
+- Column body OD / bracket spacing: `________________`
 - Connector pin count (main + signal): `________________`
 - Warranty/return window (days): `________________`
 - Seller contact + stall location: `________________`
+
+## Required Photos / Video
+
+- Full kit laid out together.
+- Column label and ECU/controller label.
+- Every connector and pigtail.
+- Input and output spline ends.
+- Brackets/firewall support.
+- Short bench-test video showing assisted rotation both directions.
 
 ## Price Guidance
 
 - Target range for complete usable kit: `PKR 54,000 - 136,000`
 - Working midpoint for negotiation: `PKR 90,000`
-- Reject partial kits unless price is reduced to reflect missing parts.
+- Reject partial kits for this build unless explicitly approved after quote; do not pay complete-kit price for missing shafts, brackets, ECU, or connectors.
 
 ## Notes Specific To This Build
 

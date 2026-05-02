@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-02T16:54:09+05:00",
+  "generated_at": "2026-05-02T17:08:08+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -30014,7 +30014,7 @@ window.J40_DASHBOARD_DATA = {
         "chassis_fixing",
         "electrical_reset"
       ],
-      "next_action": "Define donor Vitz EPS hardware scope and mount/adaptor geometry before cutting or welding",
+      "next_action": "Define 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS hardware scope and mount/adaptor geometry before cutting or welding",
       "exit_gate": "EPS hardware is mounted without binding and provides stable assisted steering through full lock and suspension travel",
       "notes": "Major project track: donor Vitz EPS integration with clear mechanical and electrical gates.",
       "evidence_source": [
@@ -30086,7 +30086,7 @@ window.J40_DASHBOARD_DATA = {
           "component_job_id": "eps_vitz_donor_column_and_mounts",
           "component_group": "steering_upgrade",
           "current_status": "planned_scope_lock",
-          "planned_action": "Capture donor Vitz EPS unit dimensions and define steering-column/shaft mount geometry with bracket and adapter strategy before fabrication",
+          "planned_action": "Capture 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS unit dimensions and define steering-column/shaft mount geometry with bracket and adapter strategy before fabrication",
           "evidence_ref": "whatsapp_fj40|fj40-00263|whatsapp_akber|akber_khan-00858",
           "notes": "Major project: geometry lock gate before irreversible cuts/welds."
         }
@@ -30096,12 +30096,12 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Execute current workstream action",
           "status": "queued",
-          "detail": "Define donor Vitz EPS hardware scope and mount/adaptor geometry before cutting or welding"
+          "detail": "Define 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS hardware scope and mount/adaptor geometry before cutting or welding"
         },
         {
           "label": "Capture donor EPS hardware baseline",
           "status": "queued",
-          "detail": "Record donor Vitz EPS unit dimensions, spline details, and connector/pinout references."
+          "detail": "Record 2005-2011 Vitz/Yaris 90-series SCP90/NCP90 EPS unit dimensions, spline details, and connector/pinout references."
         },
         {
           "label": "Freeze mount and shaft adapter geometry",
@@ -30131,7 +30131,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Component Task \u00b7 Eps Vitz Donor Column And Mounts",
           "status": "planned_scope_lock",
-          "detail": "Capture donor Vitz EPS unit dimensions and define steering-column/shaft mount geometry with bracket and adapter strategy before fabrication Notes: Major project: geometry lock gate before irreversible cuts/welds."
+          "detail": "Capture 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS unit dimensions and define steering-column/shaft mount geometry with bracket and adapter strategy before fabrication Notes: Major project: geometry lock gate before irreversible cuts/welds."
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
@@ -30194,15 +30194,15 @@ window.J40_DASHBOARD_DATA = {
       "operation_panels": [],
       "subtask_groups": [
         {
-          "key": "vitz_eps_conversion",
-          "title": "Vitz EPS Conversion",
-          "summary": "Donor EPS baseline, mount/shaft geometry, protected electrical integration, and steering safety validation.",
+          "key": "vitz_yaris_scp90_ncp90_eps_conversion",
+          "title": "Vitz/Yaris SCP90/NCP90 EPS Conversion",
+          "summary": "2005-2011 Vitz/Yaris 90-series SCP90/NCP90 donor EPS baseline, mount/shaft geometry, protected electrical integration, and steering safety validation.",
           "subtasks": [
             {
               "title": "Capture Donor EPS Hardware Baseline",
               "priority": "P0",
               "remaining": "before fabrication",
-              "instruction": "Record donor column, motor, ECU, spline, and connector facts before cutting anything.",
+              "instruction": "Record 2005-2011 Vitz/Yaris 90-series SCP90/NCP90 donor column, motor, ECU, spline, and connector facts before cutting anything.",
               "process_steps": [
                 "Photograph the EPS motor, column sections, ECU, connectors, and labels.",
                 "Measure shaft lengths, spline counts, U-joint positions, and mounting points.",
@@ -36877,11 +36877,11 @@ window.J40_DASHBOARD_DATA = {
         "source_sheet": "PK_Quality_Path",
         "source_ref": "pk_quality_path#row_3",
         "system": "EPS",
-        "item": "Vitz EPS ECU/controller (matching column family)",
+        "item": "Vitz/Yaris 2005-2011 SCP90/NCP90 EPS ECU/controller (matching column family)",
         "stage": "",
         "decision": "BUY_WITH_COLUMN_AS_SET",
         "cost": "40000",
-        "notes": "Same donor family as EPS column; test assist behavior before install.",
+        "notes": "Same 2005-2011 SCP90/NCP90 donor family as EPS column; test assist behavior before install.",
         "links": [
           {
             "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_vitz+eps+computer/",
@@ -36897,7 +36897,7 @@ window.J40_DASHBOARD_DATA = {
         "source_sheet": "PK_Buy_Clean_Direct",
         "source_ref": "pk_buy_clean_direct#row_3",
         "system": "EPS",
-        "item": "Vitz EPS ECU/controller (matching generation)",
+        "item": "Vitz/Yaris 2005-2011 SCP90/NCP90 EPS ECU/controller (matching generation)",
         "stage": "pre_tub_refit",
         "decision": "",
         "cost": "40000",
@@ -36917,7 +36917,7 @@ window.J40_DASHBOARD_DATA = {
         "source_sheet": "PK_Buy_Clean_Direct",
         "source_ref": "pk_buy_clean_direct#row_2",
         "system": "EPS",
-        "item": "Vitz EPS column complete set (motor+torque sensor+housing)",
+        "item": "Vitz/Yaris 2005-2011 SCP90/NCP90 EPS column complete set (motor+torque sensor+housing)",
         "stage": "pre_tub_refit",
         "decision": "",
         "cost": "100000",
@@ -36937,11 +36937,11 @@ window.J40_DASHBOARD_DATA = {
         "source_sheet": "PK_Quality_Path",
         "source_ref": "pk_quality_path#row_2",
         "system": "EPS",
-        "item": "Vitz SCP90 EPS column complete set (motor+torque sensor+reduction housing)",
+        "item": "Vitz/Yaris 2005-2011 SCP90/NCP90 EPS column complete set (motor+torque sensor+reduction housing)",
         "stage": "",
         "decision": "BUY_AFTER_PHYSICAL_TEST",
         "cost": "100000",
-        "notes": "Bench test under load; no play/noise; matching splines for shaft plan.",
+        "notes": "Bench test under load; confirm donor label/year/chassis 2005-2011 SCP90/NCP90; no play/noise; matching splines for shaft plan.",
         "links": [
           {
             "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_vitz+eps+column/",

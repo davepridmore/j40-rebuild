@@ -14,7 +14,7 @@ Use with: `bilal-ganj-master-shopping-list.md` + `bilal-ganj-mechanic-checklist.
 | 33, 44, 45, 46, 47 | OME/EMU quote items | `NEW_GENUINE_ONLY` |
 | 41 | Ignition lock security | `SERVICE_OR_NEW` (no worn loose used lock) |
 | 186 | Cabin fuse boxes | `NEW_ONLY` |
-| 229 | EPS kit | `USED_TESTED_OK_MAX_15Y` (bench test mandatory) |
+| 229 | EPS kit | `USED_TESTED_2005_2011_SCP90_NCP90_ONLY` (bench test mandatory) |
 | 230 | Steering bushings | `NEW_ONLY` |
 
 ## 1) Fastener Kits (Exact Purchase Spec)
@@ -121,23 +121,71 @@ Shim/spacer target pack:
 | Terminals | Screw/stud terminals, firm clamping |
 | Mounting | Integrated mounting tabs |
 
-## 5) EPS Kit (Row 229) - Included Parts Must Match
+## 5) EPS Kit (Row 229) - Market Scout Buying Spec
 
-| Required Included Part | Spec Gate |
+Plain stall request: **"I need a complete 2005-2011 Toyota Vitz/Yaris 90-series electric EPS steering column set, chassis code SCP90 or NCP90, with matching computer/ECU, original plugs with wiring tails, shafts, U-joints, couplers, and brackets, tested working."**
+
+Ask for: **one complete 2005-2011 Toyota Vitz/Yaris 90-series electric column-assist EPS conversion set**, chassis code **SCP90 or NCP90**. Corolla/Axio, Prius, and other Toyota EPS columns are **not buy candidates** for this build unless explicitly approved later; collect quote/photos only if no SCP90/NCP90 set is found. This is **not** hydraulic power steering; do not buy pumps, steering racks, hydraulic boxes, hoses, or incomplete loose motors.
+
+Buy only a matched set from one donor vehicle. Do not mix a column from one car with an ECU/controller from another car unless the seller can prove the pair works together on the bench.
+
+| Must Be Included In The Kit | Scout Check |
 | --- | --- |
-| EPS column motor assembly | Motor + torque sensor + reduction unit present |
-| EPS controller | Separate ECU or integrated module present |
-| Connectors and pigtails | Matching connectors, pigtail >=150mm |
-| Shaft sections | Upper + lower intermediate shafts included |
-| U-joints | Included and smooth (no notchiness) |
-| Couplers/adapters | Output/input couplers for steering linkage adaptation |
-| Brackets | Column mount clamp + firewall support bracket |
-| Power path compatibility | Supports 60A fused feed, ignition trigger input |
+| Donor family | 2005-2011 Toyota Vitz/Yaris 90-series, chassis code SCP90 or NCP90 |
+| EPS motorized column assembly | Column-assist unit with motor, torque sensor, and reduction gearbox present |
+| Matching EPS ECU/controller | Separate ECU included, or integrated controller clearly verified on the unit |
+| Main EPS plugs and wiring pigtails | All matching connectors included with at least 150mm wire tail; no chopped flush plugs |
+| Power and signal wiring identification | Seller can identify heavy power/ground, ignition trigger, and signal/control plugs |
+| Upper intermediate shaft section | Included with usable spline/coupler end |
+| Lower intermediate shaft section | Included with usable spline/coupler end |
+| U-joints | Included, smooth through full rotation, no tight spots or notchiness |
+| Input/output couplers or spline adapters | Included where available; useful for adapting to J40 steering linkage |
+| Column mounting clamp/bracket set | Included; no cracked castings or broken tabs |
+| Firewall support bracket/plate | Included if donor setup has one; photograph if missing |
+| Fasteners/clamps supplied with donor column | Keep with kit if available |
+| Part-number labels | Column and ECU labels readable enough to photograph |
+
+Mandatory bench test before payment:
+- Power the unit and rotate lock-to-lock both directions.
+- Assist must be smooth and consistent, with no jerks, grinding, severe whine, or cut-out.
+- Output shaft must not have excessive backlash/play.
+- U-joints must rotate smoothly without binding.
+- Steering must still be mechanically connected if assist is off.
+- If the seller cannot bench-test it, treat it as quote-only and do not buy.
+
+Reject immediately if:
+- ECU/controller is missing and the unit is not proven integrated.
+- Connectors are missing, cut flush, melted, or badly repaired.
+- Motor housing, column tube, mounting ears, or gearbox casting is cracked.
+- Shaft has visible bend, accident damage, heavy rust, or excessive play.
+- Seller offers only a motor, only an ECU, or only a column without shafts/connectors.
+- Unit is noisy, jerky, notchy, or cannot be demonstrated.
 
 Fitment capture at stall:
+- Donor vehicle/model/year claimed by seller: `________`
+- Donor chassis code, must be SCP90 or NCP90: `________`
+- Column part number label: `________`
+- ECU/controller part number label: `________`
 - Input spline diameter/count: `________`
 - Output spline diameter/count: `________`
+- Overall column length, shaft end to shaft end: `________`
+- Motor/gearbox widest clearance envelope: `________`
 - Column body OD / mount bracket spacing: `________`
+- Connector count and pin count: `________`
+- Seller stall/contact and return window: `________`
+
+Photos/video required before buying:
+- Full kit laid out together
+- Column label and ECU label
+- Every connector/pigtail
+- Input and output spline ends
+- Brackets/firewall support
+- Short bench-test video showing assisted rotation both directions
+
+Price guidance:
+- Target complete working kit range: `PKR 54,000-136,000`
+- Working negotiation midpoint: `PKR 90,000`
+- Missing brackets/shafts/connectors reduce value sharply; do not pay complete-kit price for a partial bundle.
 
 ## 6) Local Springs (Rows 15, 16) - Measure Before Order
 

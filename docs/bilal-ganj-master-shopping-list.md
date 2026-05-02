@@ -17,7 +17,7 @@ Important:
 | 12 | Body-to-chassis mount rubber kit | 15,000-60,000 (avg 30,000) | OEM-style mount biscuits/insulators, sleeves/cup washers, full mount-point set | `20260405_234546.jpg`, `20260405_234652.jpg` |
 | 41 | Ignition lock security fix | 4,000-25,000 (avg 12,000) | Re-key barrel + matched keys, or complete compatible lock/barrel set | `20260323_180218.jpg`, `20260323_190047.jpg` |
 | 186 | Internal compact covered fuse box x3 | 11,100-21,000 (avg 15,000) | Compact covered ATO/ATC fuse boxes, 3 identical units | `20260411_065030.jpg`, `20260411_143135.jpg` |
-| 229 | EPS complete kit | 54,000-136,000 (avg 90,000) | Complete EPS conversion kit only (see EPS checklist) | `20260321_235600.jpg`, `20260406_031010.jpg` |
+| 229 | EPS complete kit | 54,000-136,000 (avg 90,000) | Complete 2005-2011 Toyota Vitz/Yaris 90-series EPS set, SCP90 or NCP90 only: matched column + ECU/control + connectors/pigtails + shafts/U-joints + couplers + brackets; bench-tested only | `20260321_235600.jpg`, `20260406_031010.jpg` |
 | 29 | Heat plugs (glow plugs) set | 12,000-36,000 (avg 22,000) | Diesel glow/heat plugs, exact engine-code spec (new only) | `20260317_235150.jpg` |
 
 Core expected subtotal:

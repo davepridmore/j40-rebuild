@@ -477,7 +477,7 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
         ("Close brake safety gate", "Do not progress to final validation until brake function is verified."),
     ],
     "eps_vitz_upgrade": [
-        ("Capture donor EPS hardware baseline", "Record donor Vitz EPS unit dimensions, spline details, and connector/pinout references."),
+        ("Capture donor EPS hardware baseline", "Record 2005-2011 Vitz/Yaris 90-series SCP90/NCP90 EPS unit dimensions, spline details, and connector/pinout references."),
         ("Freeze mount and shaft adapter geometry", "Confirm bracket positions, shaft phasing, and firewall/interior clearance before fabrication."),
         ("Lock EPS electrical integration strategy", "Define power feed, fuse/relay protection, ignition trigger, and fail-safe fallback behavior."),
         ("Run assist validation and safety checks", "Verify smooth steering assist across full lock, bump travel, and road-test conditions."),
@@ -1260,8 +1260,8 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
         ],
     },
     "eps_vitz_upgrade": {
-        "title": "Vitz EPS Conversion",
-        "summary": "Donor EPS baseline, mount/shaft geometry, protected electrical integration, and steering safety validation.",
+        "title": "Vitz/Yaris SCP90/NCP90 EPS Conversion",
+        "summary": "2005-2011 Vitz/Yaris 90-series SCP90/NCP90 donor EPS baseline, mount/shaft geometry, protected electrical integration, and steering safety validation.",
         "default_tools": ["Calipers", "Angle finder", "Welder/fabrication tools", "Torque wrench", "Multimeter"],
         "default_supplies": ["Steel plate/brackets", "Class-marked fasteners", "Fused power cable", "Relays", "Loom protection"],
         "subtasks": [
@@ -1269,7 +1269,7 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "title": "Capture Donor EPS Hardware Baseline",
                 "priority": "P0",
                 "remaining": "before fabrication",
-                "instruction": "Record donor column, motor, ECU, spline, and connector facts before cutting anything.",
+                "instruction": "Record 2005-2011 Vitz/Yaris 90-series SCP90/NCP90 donor column, motor, ECU, spline, and connector facts before cutting anything.",
                 "process_steps": [
                     "Photograph the EPS motor, column sections, ECU, connectors, and labels.",
                     "Measure shaft lengths, spline counts, U-joint positions, and mounting points.",
