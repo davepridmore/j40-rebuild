@@ -19,6 +19,7 @@ REASSEMBLY_PACKAGES_PATH = MANUAL_DIR / "reassembly_work_packages.csv"
 COMPONENT_JOBS_PATH = MANUAL_DIR / "component_jobs.csv"
 PHOTO_INVENTORY_PATH = MANUAL_DIR / "photo_inventory.csv"
 REPLACEMENT_PIPE_SPECS_PATH = MANUAL_DIR / "replacement_pipe_ordering_specs.csv"
+REPLACEMENT_PIPE_PHOTO_INTAKE_PATH = MANUAL_DIR / "replacement_pipe_photo_intake.csv"
 REPLACEMENT_PIPE_ORDER_RELEASE_SPECS_PATH = MANUAL_DIR / "replacement_pipe_order_release_specs.csv"
 REPLACEMENT_PIPE_RELEASE_ACTIONS_PATH = MANUAL_DIR / "replacement_pipe_release_actions.csv"
 REPLACEMENT_PIPE_CIRCUIT_CLOSURE_PATH = MANUAL_DIR / "replacement_pipe_circuit_closure_sheet.csv"
@@ -2366,6 +2367,38 @@ def replacement_pipe_circuit_closure_payload(rows: list[dict[str, str]]) -> list
         }
         for row in rows
     ]
+
+
+def replacement_pipe_photo_intake_payload(
+    rows: list[dict[str, str]],
+    photo_rows: list[dict[str, str]],
+) -> list[dict[str, Any]]:
+    rows_by_id = photo_rows_by_media_id(photo_rows)
+    payload: list[dict[str, Any]] = []
+    for row in rows:
+        media_ids = split_pipe(row.get("media_ids", ""))
+        evidence_images = [
+            image_payload(rows_by_id[media_id], [])
+            for media_id in media_ids
+            if media_id in rows_by_id
+        ]
+        payload.append(
+            {
+                "shot_id": clean(row.get("shot_id")),
+                "pipe_id": clean(row.get("pipe_id")),
+                "order_lines": clean(row.get("order_lines")),
+                "exact_name": clean(row.get("exact_name")),
+                "vehicle_placement": clean(row.get("vehicle_placement")),
+                "shot_required": clean(row.get("shot_required")),
+                "measurement_targets_mm": split_pipe(row.get("measurement_targets_mm", "")),
+                "photo_status": clean(row.get("photo_status")),
+                "media_ids": media_ids,
+                "placement_notes": clean(row.get("placement_notes")),
+                "release_use": clean(row.get("release_use")),
+                "evidence_images": dedupe_payload_images(evidence_images),
+            }
+        )
+    return payload
 
 
 def body_mount_order_release_payload(rows: list[dict[str, str]]) -> list[dict[str, str]]:
@@ -6196,6 +6229,7 @@ def build_dashboard_data() -> dict[str, Any]:
     component_rows = load_csv(COMPONENT_JOBS_PATH)
     photo_rows = load_csv(PHOTO_INVENTORY_PATH)
     replacement_pipe_requirement_rows = load_csv_optional(REPLACEMENT_PIPE_SPECS_PATH)
+    replacement_pipe_photo_intake_rows = load_csv_optional(REPLACEMENT_PIPE_PHOTO_INTAKE_PATH)
     replacement_pipe_order_release_rows = load_csv_optional(REPLACEMENT_PIPE_ORDER_RELEASE_SPECS_PATH)
     replacement_pipe_release_action_rows = load_csv_optional(REPLACEMENT_PIPE_RELEASE_ACTIONS_PATH)
     replacement_pipe_circuit_closure_rows = load_csv_optional(REPLACEMENT_PIPE_CIRCUIT_CLOSURE_PATH)
@@ -6342,6 +6376,11 @@ def build_dashboard_data() -> dict[str, Any]:
         elif ws_id == "brake_system":
             requirements = build_workstream_requirements(brake_system_requirement_rows, photo_rows)
         pipe_requirements = requirements if ws_id == "replacement_pipes" else []
+        replacement_pipe_photo_intake = (
+            replacement_pipe_photo_intake_payload(replacement_pipe_photo_intake_rows, photo_rows)
+            if ws_id == "replacement_pipes"
+            else []
+        )
         replacement_pipe_order_release_specs = (
             replacement_pipe_order_release_payload(replacement_pipe_order_release_rows)
             if ws_id == "replacement_pipes"
@@ -6397,6 +6436,7 @@ def build_dashboard_data() -> dict[str, Any]:
                 "reference_token_count": len(reference_tokens),
                 "requirements": requirements,
                 "pipe_requirements": pipe_requirements,
+                "replacement_pipe_photo_intake": replacement_pipe_photo_intake,
                 "replacement_pipe_order_release_specs": replacement_pipe_order_release_specs,
                 "replacement_pipe_release_actions": replacement_pipe_release_actions,
                 "replacement_pipe_circuit_closure": replacement_pipe_circuit_closure,
@@ -6774,6 +6814,7 @@ def build_dashboard_data() -> dict[str, Any]:
             "body_mount_release_actions": "data/manual/body_mount_release_actions.csv",
             "body_mount_station_closure_sheet": "data/manual/body_mount_station_closure_sheet.csv",
             "replacement_pipe_ordering_specs": "data/manual/replacement_pipe_ordering_specs.csv",
+            "replacement_pipe_photo_intake": "data/manual/replacement_pipe_photo_intake.csv",
             "replacement_pipe_order_release_specs": "data/manual/replacement_pipe_order_release_specs.csv",
             "replacement_pipe_release_actions": "data/manual/replacement_pipe_release_actions.csv",
             "replacement_pipe_circuit_closure_sheet": "data/manual/replacement_pipe_circuit_closure_sheet.csv",

@@ -1,7 +1,7 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-05-02 03:09:36
-- Total media files indexed: 579 (568 photos, 11 videos)
+- Generated: 2026-05-02 16:53:47
+- Total media files indexed: 585 (574 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
 
@@ -18,13 +18,13 @@
 | `baseline_walkaround` | 34 |
 | `chassis_fixing` | 36 |
 | `electrical_rework` | 18 |
-| `hardware_refinish` | 20 |
-| `mechanical_baseline` | 7 |
+| `hardware_refinish` | 23 |
+| `mechanical_baseline` | 13 |
 | `mechanical_cleaning` | 14 |
 | `mechanical_inspection` | 5 |
 | `procurement_reconciliation` | 133 |
 | `reference_material` | 25 |
-| `removed_parts_cataloguing` | 27 |
+| `removed_parts_cataloguing` | 24 |
 | `rust_assessment` | 51 |
 | `stripdown_cataloguing` | 110 |
 | `underside_inspection` | 99 |
@@ -80,7 +80,7 @@
 | `engine_bay` | `engine_bay_overview` | 15 | 2026-03-17 to 2026-04-23 | `20260317_235150.jpg` |
 | `engine_bay` | `engine_interior_and_stripdown_detail` | 32 | 2026-04-20 | `20260420_005132_gp_MgOMVKpQ.jpeg` |
 | `engine_bay` | `engine_powertrain_cleaning_baseline` | 14 | 2026-05-01 | `20260501_194330_gp_CogcrEXA.jpg` |
-| `engine_bay` | `replacement_pipe_hose_sample_sorting` | 1 | 2026-05-02 | `20260502_005740_gp_Qiat03EQ.jpg` |
+| `engine_bay` | `replacement_pipe_hose_sample_sorting` | 7 | 2026-05-02 | `20260502_005740_gp_Qiat03EQ.jpg` |
 | `interior_cabin` | `cabin_overview` | 16 | 2026-03-17 | `20260317_165113.jpg` |
 | `interior_cabin` | `cabin_view_through_glass` | 2 | 2026-03-29 | `20260329_122855.jpg` |
 | `interior_cabin` | `dashboard_and_cabin_stripdown` | 19 | 2026-03-23 | `20260323_180218.jpg` |

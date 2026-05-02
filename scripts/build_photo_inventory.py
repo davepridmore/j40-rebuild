@@ -1149,6 +1149,15 @@ PIPE_SAMPLE_SORTING_20260502_FILES = (
     "20260502_005740_gp_Qiat03EQ.jpg",
 )
 
+PIPE_SAMPLE_SORTING_20260502_LENGTH_FILES = (
+    "20260502_160754_gp_Zd9UeENg.jpg",
+    "20260502_160855_gp_w3sghS8Q.jpg",
+    "20260502_160929_gp_exms2QzQ.jpg",
+    "20260502_160950_gp_5KW8RnDQ.jpg",
+    "20260502_161055_gp_lS8VRrWg.jpg",
+    "20260502_161214_gp_zc3zwXlg.jpg",
+)
+
 CHASSIS_20260501_OVERRIDES: dict[str, Classification] = {
     **{
         file_name: c(
@@ -1254,6 +1263,20 @@ FILE_OVERRIDES.update(
             "May 2 additional loose pipe/hose sample photo for replacement-pipes sorting; use only with physical measurement and installed-location assignment.",
         )
         for file_name in PIPE_SAMPLE_SORTING_20260502_FILES
+    }
+)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "engine_bay",
+            "replacement_pipe_hose_sample_sorting",
+            "mechanical_baseline",
+            "sample_length_and_route_identification",
+            "high",
+            ("pipe", "hose", "sample", "replacement_pipe", "sample_sorting", "measurement", "length", "rating_check"),
+            "May 2 loose red/black pipe-hose sample length set; attach to replacement-pipes intake but keep release held until vehicle placement, ID/OD, and rating markings are confirmed.",
+        )
+        for file_name in PIPE_SAMPLE_SORTING_20260502_LENGTH_FILES
     }
 )
 FILE_OVERRIDES.update(

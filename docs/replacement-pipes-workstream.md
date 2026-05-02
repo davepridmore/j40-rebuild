@@ -6,6 +6,8 @@ Primary tracker: `replacement_pipes` in `data/manual/workstream_status.csv`.
 
 Curated spec matrix: `data/manual/replacement_pipe_ordering_specs.csv`.
 
+Photo intake checklist: `data/manual/replacement_pipe_photo_intake.csv`.
+
 Order release matrix: `data/manual/replacement_pipe_order_release_specs.csv`.
 
 Release actions: `data/manual/replacement_pipe_release_actions.csv`.
@@ -16,9 +18,9 @@ Order release handoff: `docs/replacement-pipe-order-release-plan-20260502.md`.
 
 Made-to-order coolant pipe handoff: `docs/pipe-fabrication-spec-20260502.md`.
 
-Latest pipe photo import: Google Photos run `20260502T030647`, file `photos/20260502_005740_gp_Qiat03EQ.jpg`.
+Latest pipe photo import: Google Photos run `20260502T164944`, six loose sample length photos for red/black hose or pipe sorting.
 
-Dashboard table: open `Replacement Pipes` in `docs/project-control-ui/index.html`; the UI now shows requirements, order release lines, release actions, and circuit closure with `spec_status`, `acquisition_status`, `installation_status`, and release-hold gates.
+Dashboard table: open `Replacement Pipes` in `docs/project-control-ui/index.html`; the UI now shows requirements, photo intake shots, order release lines, release actions, and circuit closure with `spec_status`, `acquisition_status`, `installation_status`, and release-hold gates.
 
 ## Scope
 
@@ -33,6 +35,8 @@ It excludes body-mount rubbers, window rubbers, grommet assortments, clamp-only 
 ## Curated Pipe Locations
 
 The full editable table is `data/manual/replacement_pipe_ordering_specs.csv`.
+
+The import-facing shot list is `data/manual/replacement_pipe_photo_intake.csv`. Each imported pipe/hose photo should be attached there first by `media_id`, then promoted into `replacement_pipe_ordering_specs.csv` or `replacement_pipe_circuit_closure_sheet.csv` once the exact placement and measurement target are confirmed.
 
 Status columns:
 
@@ -94,8 +98,14 @@ Installed pipe locations:
 Loose pipe/hose sample sorting:
 
 - `photos/20260502_005740_gp_Qiat03EQ.jpg`
+- `photos/20260502_160754_gp_Zd9UeENg.jpg`
+- `photos/20260502_160855_gp_w3sghS8Q.jpg`
+- `photos/20260502_160929_gp_exms2QzQ.jpg`
+- `photos/20260502_160950_gp_5KW8RnDQ.jpg`
+- `photos/20260502_161055_gp_lS8VRrWg.jpg`
+- `photos/20260502_161214_gp_zc3zwXlg.jpg`
 
-The loose-sample photo is not a fabrication release by itself. It must be sorted against the vehicle location rows above, then each hose/pipe needs a flat-lay photo with a ruler/tape, both ends visible, and any printed hose markings readable.
+The loose-sample photos are not a fabrication or purchase release by themselves. They must be sorted against the vehicle location rows above, then each hose/pipe needs ID/OD measurement, both ends visible, and any printed hose markings readable.
 
 ## Measurement Rules
 

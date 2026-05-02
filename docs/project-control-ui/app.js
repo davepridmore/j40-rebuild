@@ -1323,6 +1323,70 @@
     `;
   }
 
+  function renderReplacementPipePhotoIntake(rows) {
+    const source = Array.isArray(rows) ? rows : [];
+    if (!source.length) {
+      return "";
+    }
+    const captured = source.filter((row) => Array.isArray(row.media_ids) && row.media_ids.length).length;
+    return `
+      <article class="card pipe-requirements-card">
+        <div class="detail-header">
+          <h3>Replacement Pipe Photo Intake</h3>
+          <div class="chip-row">
+            ${chip(`${captured}/${source.length} Captured`)}
+            ${chip(`${source.length} Required Shots`)}
+          </div>
+        </div>
+        <p class="small-muted">Shot-by-shot intake list for naming each pipe or hose, recording its placement, and linking the imported media IDs that release exact measurements.</p>
+        <div class="table-wrap requirement-table-wrap">
+          <table class="requirement-table replacement-pipe-intake-table">
+            <thead>
+              <tr>
+                <th>Evidence</th>
+                <th>Shot</th>
+                <th>Placement</th>
+                <th>Measurements</th>
+                <th>Release Use</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${source
+                .map((row) => `
+                  <tr>
+                    <td class="requirement-evidence-cell">${renderRequirementEvidenceImages({
+                      evidence_images: row.evidence_images,
+                      photo_status: row.photo_status,
+                      requirement_name: row.exact_name,
+                    })}</td>
+                    <td>
+                      <strong>${escapeHtml(row.shot_id || "")} · ${escapeHtml(row.exact_name || "")}</strong>
+                      <div class="small-muted">${escapeHtml(row.pipe_id || "")}${row.order_lines ? ` / ${escapeHtml(row.order_lines)}` : ""}</div>
+                      <div class="requirement-action"><strong>Take:</strong> ${escapeHtml(row.shot_required || "")}</div>
+                      ${statusChip(row.photo_status || "capture_pending")}
+                    </td>
+                    <td>
+                      ${escapeHtml(row.vehicle_placement || "")}
+                      ${row.placement_notes ? `<div class="small-muted">${escapeHtml(row.placement_notes)}</div>` : ""}
+                    </td>
+                    <td>
+                      <div class="item-links">
+                        ${(Array.isArray(row.measurement_targets_mm) ? row.measurement_targets_mm : [])
+                          .map((target) => `<span class="item-link">${escapeHtml(formatToken(target))}</span>`)
+                          .join("")}
+                      </div>
+                    </td>
+                    <td>${escapeHtml(row.release_use || "")}</td>
+                  </tr>
+                `)
+                .join("")}
+            </tbody>
+          </table>
+        </div>
+      </article>
+    `;
+  }
+
   function renderWorkstreamRequirements(workstream) {
     const active = workstream || {};
     const rows = Array.isArray(active.requirements) && active.requirements.length
@@ -1345,6 +1409,7 @@
           title: "Replacement Pipe Requirements",
           summary: "Exact make/buy/fabrication requirements with status gates for specification, acquisition, and installation.",
         }),
+        renderReplacementPipePhotoIntake(active.replacement_pipe_photo_intake),
         renderReplacementPipeOrderReleaseTable(active.replacement_pipe_order_release_specs),
         renderReplacementPipeReleaseActions(active.replacement_pipe_release_actions),
         renderReplacementPipeCircuitClosure(active.replacement_pipe_circuit_closure),

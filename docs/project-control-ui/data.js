@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-02T16:33:32+05:00",
+  "generated_at": "2026-05-02T16:54:09+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -13,6 +13,7 @@ window.J40_DASHBOARD_DATA = {
     "body_mount_release_actions": "data/manual/body_mount_release_actions.csv",
     "body_mount_station_closure_sheet": "data/manual/body_mount_station_closure_sheet.csv",
     "replacement_pipe_ordering_specs": "data/manual/replacement_pipe_ordering_specs.csv",
+    "replacement_pipe_photo_intake": "data/manual/replacement_pipe_photo_intake.csv",
     "replacement_pipe_order_release_specs": "data/manual/replacement_pipe_order_release_specs.csv",
     "replacement_pipe_release_actions": "data/manual/replacement_pipe_release_actions.csv",
     "replacement_pipe_circuit_closure_sheet": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
@@ -44,7 +45,7 @@ window.J40_DASHBOARD_DATA = {
     "whatsapp_j40_media_items": 165,
     "whatsapp_j40_media_images": 131,
     "whatsapp_j40_media_videos": 19,
-    "other_build_reference_images": 74,
+    "other_build_reference_images": 80,
     "other_build_drop_zone_images": 0,
     "other_build_manual_reference_images": 32
   },
@@ -1136,6 +1137,7 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 4,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_photo_intake": [],
       "replacement_pipe_order_release_specs": [],
       "replacement_pipe_release_actions": [],
       "replacement_pipe_circuit_closure": [],
@@ -2738,6 +2740,7 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 10,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_photo_intake": [],
       "replacement_pipe_order_release_specs": [],
       "replacement_pipe_release_actions": [],
       "replacement_pipe_circuit_closure": [],
@@ -4638,6 +4641,7 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 16,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_photo_intake": [],
       "replacement_pipe_order_release_specs": [],
       "replacement_pipe_release_actions": [],
       "replacement_pipe_circuit_closure": [],
@@ -8576,6 +8580,7 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 12,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_photo_intake": [],
       "replacement_pipe_order_release_specs": [],
       "replacement_pipe_release_actions": [],
       "replacement_pipe_circuit_closure": [],
@@ -11300,6 +11305,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "pipe_requirements": [],
+      "replacement_pipe_photo_intake": [],
       "replacement_pipe_order_release_specs": [],
       "replacement_pipe_release_actions": [],
       "replacement_pipe_circuit_closure": [],
@@ -16259,6 +16265,7 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 5,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_photo_intake": [],
       "replacement_pipe_order_release_specs": [],
       "replacement_pipe_release_actions": [],
       "replacement_pipe_circuit_closure": [],
@@ -20712,6 +20719,7 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 5,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_photo_intake": [],
       "replacement_pipe_order_release_specs": [],
       "replacement_pipe_release_actions": [],
       "replacement_pipe_circuit_closure": [],
@@ -22210,6 +22218,7 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 10,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_photo_intake": [],
       "replacement_pipe_order_release_specs": [],
       "replacement_pipe_release_actions": [],
       "replacement_pipe_circuit_closure": [],
@@ -24142,6 +24151,7 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 6,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_photo_intake": [],
       "replacement_pipe_order_release_specs": [],
       "replacement_pipe_release_actions": [],
       "replacement_pipe_circuit_closure": [],
@@ -26879,6 +26889,663 @@ window.J40_DASHBOARD_DATA = {
           ]
         }
       ],
+      "replacement_pipe_photo_intake": [
+        {
+          "shot_id": "RPI-COOL-001-A",
+          "pipe_id": "RP-COOL-001",
+          "order_lines": "RPO-COOL-001",
+          "exact_name": "Upper radiator hose - thermostat housing end",
+          "vehicle_placement": "Front top engine bay at thermostat housing",
+          "shot_required": "Close photo square to neck with old hose/clamp visible",
+          "measurement_targets_mm": [
+            "thermostat_neck_od",
+            "hose_od_for_clamp",
+            "clamp_band_width"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Engine-side end of upper hose",
+          "release_use": "Releases molded upper radiator hose neck measurement",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-COOL-001-B",
+          "pipe_id": "RP-COOL-001",
+          "order_lines": "RPO-COOL-001",
+          "exact_name": "Upper radiator hose - radiator upper neck end",
+          "vehicle_placement": "Front top engine bay at radiator upper inlet",
+          "shot_required": "Close photo square to radiator neck with clamp land visible",
+          "measurement_targets_mm": [
+            "radiator_upper_neck_od",
+            "hose_od_for_clamp",
+            "clamp_band_width"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Radiator-side end of upper hose",
+          "release_use": "Releases molded upper radiator hose radiator-side measurement",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-COOL-001-C",
+          "pipe_id": "RP-COOL-001",
+          "order_lines": "RPO-COOL-001",
+          "exact_name": "Upper radiator hose - full route",
+          "vehicle_placement": "Front top route between thermostat housing and radiator",
+          "shot_required": "Wide photo showing complete molded route and fan/belt/radiator support clearance",
+          "measurement_targets_mm": [
+            "old_hose_free_length",
+            "route_clearance_to_fan_belt_support"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Include both end positions in one frame if possible",
+          "release_use": "Checks route and rub clearance before ordering",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-COOL-002-A",
+          "pipe_id": "RP-COOL-002",
+          "order_lines": "RPO-COOL-002",
+          "exact_name": "Lower radiator hose - radiator outlet end",
+          "vehicle_placement": "Front lower engine bay at radiator lower outlet",
+          "shot_required": "Close photo of lower radiator outlet neck and clamp land",
+          "measurement_targets_mm": [
+            "radiator_lower_outlet_od",
+            "hose_od_for_clamp",
+            "clamp_band_width"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Radiator-side lower hose end",
+          "release_use": "Releases molded lower radiator hose radiator-side measurement",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-COOL-002-B",
+          "pipe_id": "RP-COOL-002",
+          "order_lines": "RPO-COOL-002",
+          "exact_name": "Lower radiator hose - engine inlet end",
+          "vehicle_placement": "Front lower engine bay at water pump or engine inlet",
+          "shot_required": "Close photo of engine inlet neck and hose/clamp relationship",
+          "measurement_targets_mm": [
+            "engine_inlet_od",
+            "hose_od_for_clamp",
+            "clamp_band_width"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Engine-side lower hose end",
+          "release_use": "Releases molded lower radiator hose engine-side measurement",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-COOL-002-C",
+          "pipe_id": "RP-COOL-002",
+          "order_lines": "RPO-COOL-002",
+          "exact_name": "Lower radiator hose - full route",
+          "vehicle_placement": "Front lower route between radiator and engine inlet",
+          "shot_required": "Wide photo showing full lower bend and clearance to belt/fan/crossmember",
+          "measurement_targets_mm": [
+            "old_hose_free_length",
+            "lower_bend_clearance"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Show bend shape and any squeeze points",
+          "release_use": "Checks molded route before ordering",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-COOL-003-A",
+          "pipe_id": "RP-COOL-003",
+          "order_lines": "RPO-COOL-003",
+          "exact_name": "Radiator overflow hose - radiator nipple",
+          "vehicle_placement": "Radiator neck overflow nipple",
+          "shot_required": "Close photo of overflow nipple with ruler or caliper",
+          "measurement_targets_mm": [
+            "nipple_od",
+            "clamp_or_clip_size"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Small nipple at radiator neck",
+          "release_use": "Releases overflow hose ID",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-COOL-003-B",
+          "pipe_id": "RP-COOL-003",
+          "order_lines": "RPO-COOL-003",
+          "exact_name": "Radiator overflow hose - bottle route",
+          "vehicle_placement": "Overflow bottle and hose route",
+          "shot_required": "Photo from radiator nipple to reserve bottle plus close bottle nipple",
+          "measurement_targets_mm": [
+            "bottle_nipple_od",
+            "finished_route_length",
+            "hose_od_for_clip"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Show routing path and support points",
+          "release_use": "Releases overflow cut length",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-COOL-004-A",
+          "pipe_id": "RP-COOL-004",
+          "order_lines": "RPO-COOL-004A|RPO-COOL-004B",
+          "exact_name": "Front heater hoses - firewall/heater core ends",
+          "vehicle_placement": "Firewall heater core nipple area",
+          "shot_required": "Close photo of heater core inlet/outlet nipples and clamps",
+          "measurement_targets_mm": [
+            "heater_core_nipple_od",
+            "hose_od_for_clamps",
+            "inlet_outlet_identification"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Mark inlet versus outlet if visible",
+          "release_use": "Releases heater hose ID at firewall",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-COOL-004-B",
+          "pipe_id": "RP-COOL-004",
+          "order_lines": "RPO-COOL-004A|RPO-COOL-004B",
+          "exact_name": "Front heater hoses - engine nipple ends",
+          "vehicle_placement": "Engine heater nipple area",
+          "shot_required": "Close photo of engine-side heater nipples and hose/clamp relationship",
+          "measurement_targets_mm": [
+            "engine_heater_nipple_od",
+            "hose_od_for_clamps"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Show both engine-side fittings if present",
+          "release_use": "Releases heater hose ID at engine",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-COOL-004-C",
+          "pipe_id": "RP-COOL-004",
+          "order_lines": "RPO-COOL-004A|RPO-COOL-004B",
+          "exact_name": "Front heater hoses - route and lengths",
+          "vehicle_placement": "Engine bay firewall heater hose routing",
+          "shot_required": "Wide route photo with tape along inlet and outlet paths",
+          "measurement_targets_mm": [
+            "inlet_route_length",
+            "outlet_route_length",
+            "exhaust_clearance"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Include firewall pass-through and heat exposure",
+          "release_use": "Releases 400 mm and 280 mm cut-length confirmation",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-COOL-005-A",
+          "pipe_id": "RP-COOL-005",
+          "order_lines": "RPO-COOL-005",
+          "exact_name": "Formed metal coolant pipe - full flat-lay sample",
+          "vehicle_placement": "Loose formed coolant pipe sample on flat surface",
+          "shot_required": "Flat-lay full pipe with tape along centerline and both ends visible",
+          "measurement_targets_mm": [
+            "centerline_length",
+            "visible_envelope_height",
+            "offset",
+            "tube_od"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Use physical sample not installed route only",
+          "release_use": "Releases fabrication template geometry",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-COOL-005-B",
+          "pipe_id": "RP-COOL-005",
+          "order_lines": "RPO-COOL-005",
+          "exact_name": "Formed metal coolant pipe - beaded ends and clamp lands",
+          "vehicle_placement": "Loose formed coolant pipe both hose ends",
+          "shot_required": "Close photos of both ends showing bead/flare and clamp lands",
+          "measurement_targets_mm": [
+            "tube_od",
+            "hose_id",
+            "bead_height",
+            "clamp_land_length",
+            "hose_overlap"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Capture each end separately if needed",
+          "release_use": "Releases bead and hose retention spec",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-COOL-005-C",
+          "pipe_id": "RP-COOL-005",
+          "order_lines": "RPO-COOL-005",
+          "exact_name": "Formed metal coolant pipe - installed clearance",
+          "vehicle_placement": "Front engine cooling route dry-fit position",
+          "shot_required": "Installed or held-in-place photo showing fan/belt/radiator/body clearance",
+          "measurement_targets_mm": [
+            "clearance_to_fan",
+            "clearance_to_belts",
+            "clearance_to_radiator",
+            "clearance_to_body"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Needed before coating fabricated pipe",
+          "release_use": "Releases dry-fit and pressure-test gate",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-FUEL-001-A",
+          "pipe_id": "RP-FUEL-001",
+          "order_lines": "RPO-FUEL-001A",
+          "exact_name": "Diesel feed hose - filter and injection pump feed",
+          "vehicle_placement": "Engine bay fuel filter to injection pump feed route",
+          "shot_required": "Close photos of filter barb and pump feed barb with hose route",
+          "measurement_targets_mm": [
+            "filter_barb_od",
+            "pump_feed_barb_od",
+            "feed_route_length",
+            "hose_od_for_clamps"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Low-pressure diesel feed only",
+          "release_use": "Releases 8 mm feed hose cut lengths",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-FUEL-001-B",
+          "pipe_id": "RP-FUEL-001",
+          "order_lines": "RPO-FUEL-001B",
+          "exact_name": "Diesel return and bleed hose",
+          "vehicle_placement": "Injection pump return/bleed and filter return area",
+          "shot_required": "Close photos of return barbs and route back to return line",
+          "measurement_targets_mm": [
+            "pump_return_barb_od",
+            "return_route_length",
+            "hose_od_for_clamps"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Do not include high-pressure injector pipes as replacement hose",
+          "release_use": "Releases 6 mm return hose cut lengths",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-FUEL-001-C",
+          "pipe_id": "RP-FUEL-001",
+          "order_lines": "RPO-FUEL-001C",
+          "exact_name": "Injector leak-off hose and sample markings",
+          "vehicle_placement": "Injector tops and loose red/black hose samples",
+          "shot_required": "Close photos of injector nipples plus readable hose markings",
+          "measurement_targets_mm": [
+            "injector_leakoff_nipple_od",
+            "sample_hose_id",
+            "sample_hose_od",
+            "rating_markings"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Confirm diesel-rated leak-off material",
+          "release_use": "Releases 3.2-3.5 mm leak-off hose",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-SAMPLE-BLACK-001",
+          "pipe_id": "RP-FUEL-001|RP-VAC-001",
+          "order_lines": "RPO-FUEL-001A|RPO-FUEL-001B|RPO-VAC-001A|RPO-VAC-001B",
+          "exact_name": "Loose black hose or pipe sample - unassigned circuit",
+          "vehicle_placement": "Loose sample bench with tape reference",
+          "shot_required": "Full-length sample photos showing route shape and both ends where visible",
+          "measurement_targets_mm": [
+            "sample_free_length",
+            "hose_or_pipe_od",
+            "end_id",
+            "rating_markings",
+            "vehicle_route_match"
+          ],
+          "photo_status": "length_photo_imported_id_marking_pending",
+          "media_ids": [
+            "20260502_160754_gp_Zd9UeENg",
+            "20260502_160855_gp_w3sghS8Q",
+            "20260502_160929_gp_exms2QzQ",
+            "20260502_160950_gp_5KW8RnDQ"
+          ],
+          "placement_notes": "Not yet matched to installed vehicle placement",
+          "release_use": "Supports sample sorting only until circuit and material are confirmed",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260502_160754_gp_Zd9UeENg.jpg",
+              "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "16:07:54",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "replacement_pipe_hose_sample_sorting",
+              "stage": "mechanical_baseline",
+              "media_id": "20260502_160754_gp_Zd9UeENg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_160855_gp_w3sghS8Q.jpg",
+              "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "16:08:55",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "replacement_pipe_hose_sample_sorting",
+              "stage": "mechanical_baseline",
+              "media_id": "20260502_160855_gp_w3sghS8Q",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_160929_gp_exms2QzQ.jpg",
+              "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "16:09:29",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "replacement_pipe_hose_sample_sorting",
+              "stage": "mechanical_baseline",
+              "media_id": "20260502_160929_gp_exms2QzQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_160950_gp_5KW8RnDQ.jpg",
+              "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "16:09:50",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "replacement_pipe_hose_sample_sorting",
+              "stage": "mechanical_baseline",
+              "media_id": "20260502_160950_gp_5KW8RnDQ",
+              "matched_tokens": []
+            }
+          ]
+        },
+        {
+          "shot_id": "RPI-SAMPLE-RED-001",
+          "pipe_id": "RP-FUEL-001|RP-VAC-001",
+          "order_lines": "RPO-FUEL-001A|RPO-FUEL-001B|RPO-VAC-001A|RPO-VAC-001B",
+          "exact_name": "Loose red hose or line sample - unassigned circuit",
+          "vehicle_placement": "Loose sample bench with tape reference",
+          "shot_required": "Full-length sample photos showing route shape and both ends where visible",
+          "measurement_targets_mm": [
+            "sample_free_length",
+            "hose_or_pipe_od",
+            "end_id",
+            "rating_markings",
+            "vehicle_route_match"
+          ],
+          "photo_status": "length_photo_imported_id_marking_pending",
+          "media_ids": [
+            "20260502_161055_gp_lS8VRrWg",
+            "20260502_161214_gp_zc3zwXlg"
+          ],
+          "placement_notes": "Not yet matched to installed vehicle placement",
+          "release_use": "Supports sample sorting only until circuit and material are confirmed",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260502_161055_gp_lS8VRrWg.jpg",
+              "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "16:10:55",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "replacement_pipe_hose_sample_sorting",
+              "stage": "mechanical_baseline",
+              "media_id": "20260502_161055_gp_lS8VRrWg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_161214_gp_zc3zwXlg.jpg",
+              "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "16:12:14",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "replacement_pipe_hose_sample_sorting",
+              "stage": "mechanical_baseline",
+              "media_id": "20260502_161214_gp_zc3zwXlg",
+              "matched_tokens": []
+            }
+          ]
+        },
+        {
+          "shot_id": "RPI-FUEL-002-A",
+          "pipe_id": "RP-FUEL-002",
+          "order_lines": "RPO-FUEL-002A|RPO-FUEL-002B",
+          "exact_name": "Low-pressure fuel hard lines - forward chassis run",
+          "vehicle_placement": "Chassis rail forward fuel feed/return route",
+          "shot_required": "Wide and close photos of feed/return lines along forward rail",
+          "measurement_targets_mm": [
+            "tube_od_feed",
+            "tube_od_return",
+            "section_length",
+            "bend_pattern"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Inspect under clips before deciding replacement",
+          "release_use": "Releases hard-line keep/replace decision",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-FUEL-002-B",
+          "pipe_id": "RP-FUEL-002",
+          "order_lines": "RPO-FUEL-002A|RPO-FUEL-002B",
+          "exact_name": "Low-pressure fuel hard lines - rear/tank run",
+          "vehicle_placement": "Chassis rail rear fuel line and tank end area",
+          "shot_required": "Wide and close photos of rear route and end fittings",
+          "measurement_targets_mm": [
+            "end_style",
+            "section_length",
+            "bend_pattern",
+            "tank_end_fitting"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Include any transition hose or union",
+          "release_use": "Releases rear section dimensions",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-FUEL-002-C",
+          "pipe_id": "RP-FUEL-002",
+          "order_lines": "RPO-FUEL-002A|RPO-FUEL-002B|RPO-CLIP-001",
+          "exact_name": "Low-pressure fuel hard lines - clips and protection",
+          "vehicle_placement": "Chassis rail clip points and pass-through areas",
+          "shot_required": "Close photos under clips and through brackets/grommets",
+          "measurement_targets_mm": [
+            "clip_spacing",
+            "clip_id",
+            "line_od",
+            "pass_through_protection"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Look for hidden corrosion at support points",
+          "release_use": "Releases P-clip and protection sizes",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-VAC-001-A",
+          "pipe_id": "RP-VAC-001",
+          "order_lines": "RPO-VAC-001A",
+          "exact_name": "Brake booster vacuum hose - pump end",
+          "vehicle_placement": "Vacuum pump outlet and hose start",
+          "shot_required": "Close photo of vacuum pump barb and hose end",
+          "measurement_targets_mm": [
+            "pump_barb_od",
+            "hose_id",
+            "hose_od_for_clamp"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Confirm vacuum hose not oil outlet hose",
+          "release_use": "Releases 10-12 mm vacuum hose ID",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-VAC-001-B",
+          "pipe_id": "RP-VAC-001",
+          "order_lines": "RPO-VAC-001A",
+          "exact_name": "Brake booster vacuum hose - booster and check valve",
+          "vehicle_placement": "Brake booster/check-valve area",
+          "shot_required": "Close photo showing check-valve direction and booster fitting",
+          "measurement_targets_mm": [
+            "booster_checkvalve_od",
+            "checkvalve_direction",
+            "route_length"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Direction arrow must be readable if present",
+          "release_use": "Releases vacuum route and check-valve orientation",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-VAC-001-C",
+          "pipe_id": "RP-VAC-001",
+          "order_lines": "RPO-VAC-001B|RPO-VAC-001C",
+          "exact_name": "Breather and oil-mist hose route",
+          "vehicle_placement": "Crankcase breather/vacuum pump oil outlet area",
+          "shot_required": "Close and route photos of breather/oil-mist hose and spigots",
+          "measurement_targets_mm": [
+            "breather_spigot_od",
+            "route_length",
+            "hose_id",
+            "oil_exposure"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Separate breather/oil hose from coolant and vacuum hose",
+          "release_use": "Releases oil-resistant hose spec",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-BRAKE-001-A",
+          "pipe_id": "RP-BRAKE-001",
+          "order_lines": "RPO-BRAKE-001A",
+          "exact_name": "Front brake flex hoses",
+          "vehicle_placement": "Front caliper flex hose ends and brackets",
+          "shot_required": "Close photos of both ends plus full-droop/free-length reference",
+          "measurement_targets_mm": [
+            "end_thread_or_banjo",
+            "free_length",
+            "full_droop_slack",
+            "bracket_retention"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Safety circuit photo set",
+          "release_use": "Releases front flex hose identification",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-BRAKE-001-B",
+          "pipe_id": "RP-BRAKE-001",
+          "order_lines": "RPO-BRAKE-001A",
+          "exact_name": "Rear centre brake flex hose",
+          "vehicle_placement": "Rear frame-to-axle flex hose and brackets",
+          "shot_required": "Close photos of frame end axle end bracket retention and slack",
+          "measurement_targets_mm": [
+            "end_thread_or_seat",
+            "free_length",
+            "full_droop_slack",
+            "bracket_retention"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Show axle at normal and droop if possible",
+          "release_use": "Releases rear centre flex hose identification",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-BRAKE-001-C",
+          "pipe_id": "RP-BRAKE-001",
+          "order_lines": "RPO-BRAKE-001B|RPO-CLIP-001",
+          "exact_name": "Brake hard lines and unions",
+          "vehicle_placement": "Frame and axle brake hard-line routes",
+          "shot_required": "Close photos of unions flare nuts tube routing and clips",
+          "measurement_targets_mm": [
+            "tube_od",
+            "flare_standard",
+            "union_thread",
+            "route_length",
+            "clip_spacing"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Old lines should be templates before fabrication",
+          "release_use": "Releases brake hard-line fabrication inputs",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-CLUTCH-001-A",
+          "pipe_id": "RP-CLUTCH-001",
+          "order_lines": "RPO-CLUTCH-001A|RPO-CLUTCH-001B",
+          "exact_name": "Clutch master line and fitting",
+          "vehicle_placement": "Clutch master cylinder outlet and hard-line start",
+          "shot_required": "Close photo of port/fitting and first bend",
+          "measurement_targets_mm": [
+            "master_port_thread",
+            "flare_or_seat",
+            "hard_line_od"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Hydraulic line identification",
+          "release_use": "Releases clutch master-side fitting spec",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-CLUTCH-001-B",
+          "pipe_id": "RP-CLUTCH-001",
+          "order_lines": "RPO-CLUTCH-001A|RPO-CLUTCH-001B",
+          "exact_name": "Clutch slave flex/hard-line transition",
+          "vehicle_placement": "Bellhousing clutch slave cylinder area",
+          "shot_required": "Close photos of slave port flex hose hard-line transition and bracket",
+          "measurement_targets_mm": [
+            "slave_port_thread",
+            "flex_free_length",
+            "hard_line_od",
+            "bracket_retention"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Show movement transition near drivetrain",
+          "release_use": "Releases clutch slave-side fitting spec",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-CLUTCH-001-C",
+          "pipe_id": "RP-CLUTCH-001",
+          "order_lines": "RPO-CLUTCH-001B",
+          "exact_name": "Clutch hydraulic route and movement clearance",
+          "vehicle_placement": "Master-to-slave route along bellhousing/firewall",
+          "shot_required": "Wide route photo with tape or old line template",
+          "measurement_targets_mm": [
+            "final_route_length",
+            "movement_clearance",
+            "clip_positions"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Replace only if worn leaking or corroded",
+          "release_use": "Releases 1500 mm hard-line blank decision",
+          "evidence_images": []
+        }
+      ],
       "replacement_pipe_order_release_specs": [
         {
           "order_line_id": "RPO-COOL-001",
@@ -27240,10 +27907,10 @@ window.J40_DASHBOARD_DATA = {
           "priority": "P1",
           "owner": "workshop",
           "action": "Read and photograph markings on the loose red/black hose samples, then confirm ID, OD, rating, and whether each sample belongs to fuel, coolant, vacuum, or breather service.",
-          "status": "open",
+          "status": "in_progress",
           "blocks_order_lines": "RPO-FUEL-001A|RPO-FUEL-001B|RPO-FUEL-001C|RPO-VAC-001A|RPO-VAC-001B",
           "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
-          "why_it_matters": "Prevents accidental use of wrong rubber chemistry on diesel, oil mist, coolant, or vacuum circuits."
+          "why_it_matters": "Length photos imported 2026-05-02; still needs readable markings, ID/OD, and vehicle-circuit assignment before material release."
         },
         {
           "action_id": "RPA-005",
@@ -28392,6 +29059,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "pipe_requirements": [],
+      "replacement_pipe_photo_intake": [],
       "replacement_pipe_order_release_specs": [],
       "replacement_pipe_release_actions": [],
       "replacement_pipe_circuit_closure": [],
@@ -29395,6 +30063,7 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 2,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_photo_intake": [],
       "replacement_pipe_order_release_specs": [],
       "replacement_pipe_release_actions": [],
       "replacement_pipe_circuit_closure": [],
@@ -30046,6 +30715,7 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 2,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_photo_intake": [],
       "replacement_pipe_order_release_specs": [],
       "replacement_pipe_release_actions": [],
       "replacement_pipe_circuit_closure": [],
@@ -30750,6 +31420,7 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 2,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_photo_intake": [],
       "replacement_pipe_order_release_specs": [],
       "replacement_pipe_release_actions": [],
       "replacement_pipe_circuit_closure": [],
@@ -32031,6 +32702,7 @@ window.J40_DASHBOARD_DATA = {
       "reference_token_count": 1,
       "requirements": [],
       "pipe_requirements": [],
+      "replacement_pipe_photo_intake": [],
       "replacement_pipe_order_release_specs": [],
       "replacement_pipe_release_actions": [],
       "replacement_pipe_circuit_closure": [],
@@ -54603,11 +55275,11 @@ window.J40_DASHBOARD_DATA = {
     "drop_zone": "data/reference/other_j40_builds",
     "summary": {
       "section_count": 7,
-      "total_images": 74,
+      "total_images": 80,
       "drop_zone_images": 0,
       "manual_reference_images": 32,
       "pakwheels_sections": 1,
-      "sample_reference_images": 21,
+      "sample_reference_images": 27,
       "market_pack_images": 14
     },
     "sections": [
@@ -55291,6 +55963,96 @@ window.J40_DASHBOARD_DATA = {
         "source_path": "data/manual/photo_inventory.csv",
         "links": [],
         "images": [
+          {
+            "path": "../../photos/20260502_161214_gp_zc3zwXlg.jpg",
+            "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "16:12:14",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "replacement_pipe_hose_sample_sorting",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_161214_gp_zc3zwXlg",
+            "matched_tokens": [],
+            "match_basis": "sample_reference",
+            "source_label": "Current build samples",
+            "source_path": "photos/20260502_161214_gp_zc3zwXlg.jpg"
+          },
+          {
+            "path": "../../photos/20260502_161055_gp_lS8VRrWg.jpg",
+            "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "16:10:55",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "replacement_pipe_hose_sample_sorting",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_161055_gp_lS8VRrWg",
+            "matched_tokens": [],
+            "match_basis": "sample_reference",
+            "source_label": "Current build samples",
+            "source_path": "photos/20260502_161055_gp_lS8VRrWg.jpg"
+          },
+          {
+            "path": "../../photos/20260502_160950_gp_5KW8RnDQ.jpg",
+            "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "16:09:50",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "replacement_pipe_hose_sample_sorting",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_160950_gp_5KW8RnDQ",
+            "matched_tokens": [],
+            "match_basis": "sample_reference",
+            "source_label": "Current build samples",
+            "source_path": "photos/20260502_160950_gp_5KW8RnDQ.jpg"
+          },
+          {
+            "path": "../../photos/20260502_160929_gp_exms2QzQ.jpg",
+            "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "16:09:29",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "replacement_pipe_hose_sample_sorting",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_160929_gp_exms2QzQ",
+            "matched_tokens": [],
+            "match_basis": "sample_reference",
+            "source_label": "Current build samples",
+            "source_path": "photos/20260502_160929_gp_exms2QzQ.jpg"
+          },
+          {
+            "path": "../../photos/20260502_160855_gp_w3sghS8Q.jpg",
+            "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "16:08:55",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "replacement_pipe_hose_sample_sorting",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_160855_gp_w3sghS8Q",
+            "matched_tokens": [],
+            "match_basis": "sample_reference",
+            "source_label": "Current build samples",
+            "source_path": "photos/20260502_160855_gp_w3sghS8Q.jpg"
+          },
+          {
+            "path": "../../photos/20260502_160754_gp_Zd9UeENg.jpg",
+            "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "16:07:54",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "replacement_pipe_hose_sample_sorting",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_160754_gp_Zd9UeENg",
+            "matched_tokens": [],
+            "match_basis": "sample_reference",
+            "source_label": "Current build samples",
+            "source_path": "photos/20260502_160754_gp_Zd9UeENg.jpg"
+          },
           {
             "path": "../../photos/20260502_005740_gp_Qiat03EQ.jpg",
             "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
@@ -56298,6 +57060,7 @@ window.J40_DASHBOARD_DATA = {
       "reference_only",
       "refinished_off_vehicle",
       "removed_from_vehicle",
+      "sample_length_and_route_identification",
       "sample_sorting_for_acquisition",
       "trim_removed",
       "under_rework",
@@ -62502,8 +63265,8 @@ window.J40_DASHBOARD_DATA = {
       "stage": "procurement_reconciliation",
       "observed_state": "bench_prep",
       "confidence": "high",
-      "tags": "electrical|switch|hidden_diesel_cutoff|fuel_stop|needle_switch|package|order_confirmation",
-      "notes": "Needle-type fuel stop / hidden diesel cutoff switch order part, received and awaiting installation."
+      "tags": "electrical|switch|hidden_diesel_cutoff|package|order_confirmation",
+      "notes": "Hidden diesel cutoff switch order part, received and awaiting installation."
     },
     "20260420_221819_gp_YV69fbvA_2": {
       "media_id": "20260420_221819_gp_YV69fbvA_2",
@@ -62517,8 +63280,8 @@ window.J40_DASHBOARD_DATA = {
       "stage": "procurement_reconciliation",
       "observed_state": "bench_prep",
       "confidence": "high",
-      "tags": "electrical|switch|hidden_diesel_cutoff|fuel_stop|needle_switch|package|order_confirmation",
-      "notes": "Needle-type fuel stop / hidden diesel cutoff switch order part, received and awaiting installation."
+      "tags": "electrical|switch|hidden_diesel_cutoff|package|order_confirmation",
+      "notes": "Hidden diesel cutoff switch order part, received and awaiting installation."
     },
     "20260421_192813_gp_0jvYAo8g": {
       "media_id": "20260421_192813_gp_0jvYAo8g",
@@ -64784,6 +65547,96 @@ window.J40_DASHBOARD_DATA = {
       "confidence": "high",
       "tags": "pipe|hose|sample|replacement_pipe|acquisition|fabrication|measurement",
       "notes": "May 2 additional loose pipe/hose sample photo for replacement-pipes sorting; use only with physical measurement and installed-location assignment."
+    },
+    "20260502_160754_gp_Zd9UeENg": {
+      "media_id": "20260502_160754_gp_Zd9UeENg",
+      "file_name": "20260502_160754_gp_Zd9UeENg.jpg",
+      "path": "../../photos/20260502_160754_gp_Zd9UeENg.jpg",
+      "captured_date": "2026-05-02",
+      "captured_time": "16:07:54",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "replacement_pipe_hose_sample_sorting",
+      "stage": "mechanical_baseline",
+      "observed_state": "sample_length_and_route_identification",
+      "confidence": "high",
+      "tags": "pipe|hose|sample|replacement_pipe|sample_sorting|measurement|length|rating_check",
+      "notes": "May 2 loose red/black pipe-hose sample length set; attach to replacement-pipes intake but keep release held until vehicle placement, ID/OD, and rating markings are confirmed."
+    },
+    "20260502_160855_gp_w3sghS8Q": {
+      "media_id": "20260502_160855_gp_w3sghS8Q",
+      "file_name": "20260502_160855_gp_w3sghS8Q.jpg",
+      "path": "../../photos/20260502_160855_gp_w3sghS8Q.jpg",
+      "captured_date": "2026-05-02",
+      "captured_time": "16:08:55",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "replacement_pipe_hose_sample_sorting",
+      "stage": "mechanical_baseline",
+      "observed_state": "sample_length_and_route_identification",
+      "confidence": "high",
+      "tags": "pipe|hose|sample|replacement_pipe|sample_sorting|measurement|length|rating_check",
+      "notes": "May 2 loose red/black pipe-hose sample length set; attach to replacement-pipes intake but keep release held until vehicle placement, ID/OD, and rating markings are confirmed."
+    },
+    "20260502_160929_gp_exms2QzQ": {
+      "media_id": "20260502_160929_gp_exms2QzQ",
+      "file_name": "20260502_160929_gp_exms2QzQ.jpg",
+      "path": "../../photos/20260502_160929_gp_exms2QzQ.jpg",
+      "captured_date": "2026-05-02",
+      "captured_time": "16:09:29",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "replacement_pipe_hose_sample_sorting",
+      "stage": "mechanical_baseline",
+      "observed_state": "sample_length_and_route_identification",
+      "confidence": "high",
+      "tags": "pipe|hose|sample|replacement_pipe|sample_sorting|measurement|length|rating_check",
+      "notes": "May 2 loose red/black pipe-hose sample length set; attach to replacement-pipes intake but keep release held until vehicle placement, ID/OD, and rating markings are confirmed."
+    },
+    "20260502_160950_gp_5KW8RnDQ": {
+      "media_id": "20260502_160950_gp_5KW8RnDQ",
+      "file_name": "20260502_160950_gp_5KW8RnDQ.jpg",
+      "path": "../../photos/20260502_160950_gp_5KW8RnDQ.jpg",
+      "captured_date": "2026-05-02",
+      "captured_time": "16:09:50",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "replacement_pipe_hose_sample_sorting",
+      "stage": "mechanical_baseline",
+      "observed_state": "sample_length_and_route_identification",
+      "confidence": "high",
+      "tags": "pipe|hose|sample|replacement_pipe|sample_sorting|measurement|length|rating_check",
+      "notes": "May 2 loose red/black pipe-hose sample length set; attach to replacement-pipes intake but keep release held until vehicle placement, ID/OD, and rating markings are confirmed."
+    },
+    "20260502_161055_gp_lS8VRrWg": {
+      "media_id": "20260502_161055_gp_lS8VRrWg",
+      "file_name": "20260502_161055_gp_lS8VRrWg.jpg",
+      "path": "../../photos/20260502_161055_gp_lS8VRrWg.jpg",
+      "captured_date": "2026-05-02",
+      "captured_time": "16:10:55",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "replacement_pipe_hose_sample_sorting",
+      "stage": "mechanical_baseline",
+      "observed_state": "sample_length_and_route_identification",
+      "confidence": "high",
+      "tags": "pipe|hose|sample|replacement_pipe|sample_sorting|measurement|length|rating_check",
+      "notes": "May 2 loose red/black pipe-hose sample length set; attach to replacement-pipes intake but keep release held until vehicle placement, ID/OD, and rating markings are confirmed."
+    },
+    "20260502_161214_gp_zc3zwXlg": {
+      "media_id": "20260502_161214_gp_zc3zwXlg",
+      "file_name": "20260502_161214_gp_zc3zwXlg.jpg",
+      "path": "../../photos/20260502_161214_gp_zc3zwXlg.jpg",
+      "captured_date": "2026-05-02",
+      "captured_time": "16:12:14",
+      "media_type": "photo",
+      "component_group": "engine_bay",
+      "specific_component": "replacement_pipe_hose_sample_sorting",
+      "stage": "mechanical_baseline",
+      "observed_state": "sample_length_and_route_identification",
+      "confidence": "high",
+      "tags": "pipe|hose|sample|replacement_pipe|sample_sorting|measurement|length|rating_check",
+      "notes": "May 2 loose red/black pipe-hose sample length set; attach to replacement-pipes intake but keep release held until vehicle placement, ID/OD, and rating markings are confirmed."
     },
     "IMG-20260328-WA0017": {
       "media_id": "IMG-20260328-WA0017",
