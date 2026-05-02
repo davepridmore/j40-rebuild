@@ -8,7 +8,8 @@
 ## This-Week Counts
 
 - Rows in this-week list: 24
-- `confirm_price_then_order`: 20
+- `complete_body_mount_release_actions_then_order`: 3
+- `confirm_price_then_order`: 17
 - `track_delivery`: 4
 
 ## Priority Split
@@ -27,11 +28,13 @@
 
 ## Immediate Actions
 
-- `confirm_price_then_order` (20):
+- `complete_body_mount_release_actions_then_order` (3):
+  - `part_body_mount_hardware_kit` [P0] Body mount hardware kit bolts sleeves washers (status: spec_ready; procurement_stage: spec_ready_release_hold; delivery_status: not_ordered; payment_status: not_paid)
+  - `part_body_mount_rubber_kit` [P0] Body-to-chassis mount rubber kit (status: spec_ready; procurement_stage: spec_ready_release_hold; delivery_status: not_ordered; payment_status: not_paid)
+  - `part_body_mount_shim_pack` [P0] Body mount shim and spacer pack (status: spec_ready; procurement_stage: spec_ready_release_hold; delivery_status: not_ordered; payment_status: not_paid)
+    - Release control: use `data/manual/body_mount_order_release_specs.csv` for quantities and `data/manual/body_mount_release_actions.csv` for the remaining measurements/route decision before committing the body-mount order.
+- `confirm_price_then_order` (17):
   - `part_bedliner_sprays` [P0] Bedliner sprays (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_body_mount_hardware_kit` [P0] Body mount hardware kit bolts sleeves washers (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_body_mount_rubber_kit` [P0] Body-to-chassis mount rubber kit (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_body_mount_shim_pack` [P0] Body mount shim and spacer pack (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_metal_protection` [P0] Metal protection and restoration products (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_primer` [P0] Primer (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_firewall_grommet_set_large_power` [P0] Additional firewall grommet set IDs 16/20/25 mm (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)

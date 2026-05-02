@@ -27,7 +27,10 @@ This workstream is not for:
 - May 2 Google Photos picker import `20260502T013759` starts a dedicated selection set for rubber recreation: [rubber-recreation-photo-selection-20260502.md](rubber-recreation-photo-selection-20260502.md).
 - May 2 fabricator handoff spec is now drafted from the tape-measure photos: [rubber-recreation-fabrication-spec-20260502.md](rubber-recreation-fabrication-spec-20260502.md).
 - UI requirements table source: [chassis_rubber_requirements.csv](../data/manual/chassis_rubber_requirements.csv). This is the acquisition/fabrication status tracker for each rubber, sleeve, cup, shim, and hardware requirement.
+- Consolidated rubber order source: [rubber_ordering_specs.csv](../data/manual/rubber_ordering_specs.csv) and [rubber-ordering-spec-20260502.md](rubber-ordering-spec-20260502.md). These control the buy-now, inspect-first, and defer gates across all rubber categories so chassis rubbers are not confused with weatherstrip, suspension, hose, or HVAC rubber.
+- Body-mount release pack: [body_mount_order_release_specs.csv](../data/manual/body_mount_order_release_specs.csv), [body_mount_release_actions.csv](../data/manual/body_mount_release_actions.csv), [body_mount_station_closure_sheet.csv](../data/manual/body_mount_station_closure_sheet.csv), and [body-mount-order-release-plan-20260502.md](body-mount-order-release-plan-20260502.md). This is the order-line and user-action control for quantities, OE/reproduction candidates, local fabrication specs, shims, sleeves, and bolts.
 - Toyota OE/EPC-style control rows are now captured in [rubber_recreation_toyota_oe_cross_reference.csv](../data/manual/rubber_recreation_toyota_oe_cross_reference.csv). They confirm part numbers, station IDs, bolt families, and several shim/spacer thicknesses, but not rubber cushion OD/ID/free-height.
+- Aftermarket thickness cross-checks and the final caliper closure sheet are now captured in [rubber_recreation_aftermarket_dimension_crosscheck.csv](../data/manual/rubber_recreation_aftermarket_dimension_crosscheck.csv) and [rubber_recreation_measurement_closure.csv](../data/manual/rubber_recreation_measurement_closure.csv).
 
 ## Original Rubber Evidence
 
@@ -76,6 +79,7 @@ Evidence note:
 | Front support shims / pads | `2` | Separate shim/pad pieces to suit the front support pair | Flat and stable; not improvised stacks | Must align front clip height without forcing the tub |
 | Captive-thread repair pack | `2` nuts + `2` tabs minimum | `M10 x 1.25` weld nuts / repair nuts plus `3 mm` steel repair tabs | New repair material only | Use only if cleaning shows damaged threads or weak pedestal repair metal |
 | OE station map | `1` reconciliation sheet | Toyota `NO.1` to `NO.5` body-mount rows against vehicle-side positions | Must agree with physical samples before production | Use the OE cross-reference plus direct vehicle labels; do not infer from catalog alone |
+| Exact release measurements | `1` closure sheet | Final OD, height, bore/register, sleeve, cup, and split-stack fields | Caliper-locked before production | Use `rubber_recreation_measurement_closure.csv`; photos are quote/prototype evidence only |
 
 ## Exact Measurement Fields To Capture From Sample
 
@@ -111,3 +115,6 @@ Fill this in from the removed old parts before any local fabrication order is tr
 5. Only then close the order with Bilal Ganj or a local rubber fabricator.
 6. Use the May 2 fabrication spec as the quote/prototype sheet, then close its hold dimensions with calipers before production.
 7. Reconcile the physical vehicle stations against Toyota `NO.1` to `NO.5` rows before changing the rubber count or approving production.
+8. Confirm whether the small circular mounts are one-piece `22 mm` stack-equivalent cushions or a split medium-bushing plus seat stack before asking the fabricator to cut final pieces.
+9. Use the consolidated rubber ordering matrix to keep body mounts, suspension bushes, hoses, weatherstrip, and HVAC rubber in their correct order gates.
+10. Complete the open `BMA-*` actions in `body_mount_release_actions.csv`; anything not blocked there can be quoted or ordered from `body_mount_order_release_specs.csv`.

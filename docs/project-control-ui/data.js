@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-02T03:53:45+05:00",
+  "generated_at": "2026-05-02T05:17:30+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -7,6 +7,10 @@ window.J40_DASHBOARD_DATA = {
     "photo_inventory": "data/manual/photo_inventory.csv",
     "brake_system_requirements": "data/manual/brake_system_requirements.csv",
     "chassis_rubber_requirements": "data/manual/chassis_rubber_requirements.csv",
+    "rubber_ordering_specs": "data/manual/rubber_ordering_specs.csv",
+    "body_mount_order_release_specs": "data/manual/body_mount_order_release_specs.csv",
+    "body_mount_release_actions": "data/manual/body_mount_release_actions.csv",
+    "body_mount_station_closure_sheet": "data/manual/body_mount_station_closure_sheet.csv",
     "replacement_pipe_ordering_specs": "data/manual/replacement_pipe_ordering_specs.csv",
     "expenses": "data/manual/expenses.csv",
     "parts_buy_now_this_week": "data/manual/parts_buy_now_this_week.csv",
@@ -978,6 +982,9 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "chassis_rubber_requirements": [],
+      "body_mount_order_release_specs": [],
+      "body_mount_release_actions": [],
+      "body_mount_station_closure": [],
       "linked_packages": [
         {
           "work_package_id": "WP02",
@@ -2573,6 +2580,9 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "chassis_rubber_requirements": [],
+      "body_mount_order_release_specs": [],
+      "body_mount_release_actions": [],
+      "body_mount_station_closure": [],
       "linked_packages": [
         {
           "work_package_id": "WP01",
@@ -10659,6 +10669,9 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "chassis_rubber_requirements": [],
+      "body_mount_order_release_specs": [],
+      "body_mount_release_actions": [],
+      "body_mount_station_closure": [],
       "linked_packages": [],
       "component_jobs": [
         {
@@ -14590,6 +14603,9 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "chassis_rubber_requirements": [],
+      "body_mount_order_release_specs": [],
+      "body_mount_release_actions": [],
+      "body_mount_station_closure": [],
       "linked_packages": [],
       "component_jobs": [
         {
@@ -16624,7 +16640,7 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004442_gp_7WcFHjLQ"
           ],
           "photo_status": "direct_template_photos",
-          "spec_status": "properly_specced",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -16632,8 +16648,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5; no tyre rubber, crumb rubber, or mixed offcuts",
           "critical_measurements": "Confirm OD, free height, central bore/register, register depth, and final installed stack height against the least-crushed old sample; confirm station count against Toyota NO.1-NO.5 map",
           "fit_and_test": "Dry-fit with cup washers and sleeves; body height must return without over-crushing rubber or forcing tub alignment",
-          "source_ref": "data_rubber_recreation_fabrication_specs|docs_rubber_recreation_fabrication_spec_20260502",
-          "notes": "Image-derived dimensions are good for quote/prototype; caliper confirmation controls production release.",
+          "source_ref": "data_rubber_recreation_fabrication_specs|docs_rubber_recreation_fabrication_spec_20260502|data_body_mount_order_release_specs",
+          "notes": "Spec is ready for quote/order route control; BMA-005 split-stack confirmation controls final production release.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
@@ -16726,7 +16742,7 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004442_gp_7WcFHjLQ"
           ],
           "photo_status": "direct_template_photos",
-          "spec_status": "properly_specced",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -16734,8 +16750,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5; same batch/hardness as small cushions where possible",
           "critical_measurements": "Confirm the large-pair station from old mount map; confirm OD, height, bore/register, and installed stack height before production",
           "fit_and_test": "Dry-fit as a pair on the correct stations; no side-to-side height mismatch after tub alignment",
-          "source_ref": "data_rubber_recreation_fabrication_specs|docs_rubber_recreation_fabrication_spec_20260502",
-          "notes": "Matches the current early pre-1/79 working count of two large pieces.",
+          "source_ref": "data_rubber_recreation_fabrication_specs|docs_rubber_recreation_fabrication_spec_20260502|data_body_mount_order_release_specs",
+          "notes": "Spec is ready for quote/prototype; BMA-004 caliper check controls final production release.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
@@ -16825,16 +16841,16 @@ window.J40_DASHBOARD_DATA = {
             "20260405_234652"
           ],
           "photo_status": "direct_and_context_photos",
-          "spec_status": "needs_physical_measurement",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Steel sleeve ID 10.8-11.0 mm for M10 bolt; OD must suit final rubber bore/cup register; length equals completed free rubber stack minus 3-4 mm target compression",
+          "exact_recreation_spec": "Steel sleeve ID 10.8-11.0 mm for M10 bolt; OD must suit final rubber bore/cup register; length equals completed free rubber stack minus 3-4 mm target compression; order 8 blanks before final cut",
           "material_spec": "Steel tube, zinc plated or painted after cutting; square-cut and deburred",
           "critical_measurements": "Measure old sleeve OD and length with calipers; confirm bolt diameter/thread; confirm cup/rubber stack height by station",
           "fit_and_test": "Sleeve must prevent over-crush at final torque; M10 bolt must pass freely; no loose sleeve rattle after assembly",
-          "source_ref": "data_rubber_recreation_fabrication_specs|docs_chassis_rubbers_workstream_20260427",
-          "notes": "Do not infer sleeve OD/length from photos only; sleeve length controls clamp load and final body height.",
+          "source_ref": "data_body_mount_order_release_specs|data_body_mount_release_actions|data_rubber_recreation_fabrication_specs|docs_chassis_rubbers_workstream_20260427",
+          "notes": "Spec is ready for blank/tube order; BMA-006 dry-stack measurement controls final cut length.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
@@ -16889,16 +16905,16 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004442_gp_7WcFHjLQ"
           ],
           "photo_status": "direct_template_photos",
-          "spec_status": "properly_specced",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Small cup OD 64 mm or matched to CR-MAIN-001; large cup OD 78 mm or matched to CR-MAIN-002; M10 clearance hole 11 mm; dish/register depth 2-3 mm; steel thickness 2.5-3.0 mm",
+          "exact_recreation_spec": "Small cup OD 64 mm or matched to CR-MAIN-001; large cup OD 78 mm or matched to CR-MAIN-002; M10 clearance hole 11 mm; dish/register depth 2-3 mm; steel thickness 2.5-3.0 mm; order 14 if locally fabricating",
           "material_spec": "Steel cup/seat washers, plated or epoxy primed; reuse originals only if flat, not thinned, and not cracked",
           "critical_measurements": "Confirm actual cup OD against body/chassis landing surfaces; confirm which original cups can be reused; confirm hole clearance and dish depth",
           "fit_and_test": "Rubber must seat fully in cup without rocking; no thin generic washer substitution; dry-fit before final coating",
-          "source_ref": "data_rubber_recreation_fabrication_specs|docs_chassis_rubbers_workstream_20260427",
-          "notes": "Rubber dimensions are not safe without the seat style; this row tracks cups separately from rubber cushions.",
+          "source_ref": "data_body_mount_order_release_specs|data_rubber_recreation_fabrication_specs|docs_chassis_rubbers_workstream_20260427",
+          "notes": "Spec is ready; BMA-003/BMA-004 confirm physical seat match before committing the route.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
@@ -16963,7 +16979,7 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004345_gp_yK8VYzMQ"
           ],
           "photo_status": "direct_template_photos",
-          "spec_status": "properly_specced",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -16971,8 +16987,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5; reproduce or reuse steel insert if the original design uses one",
           "critical_measurements": "Confirm hole centre spacing, thickness, and insert OD directly from sample; confirm whether insert is bonded, loose, or part of washer stack",
           "fit_and_test": "Dry-fit front support with both pads as matched pair; front clip height must align without forcing tub or nose extension",
-          "source_ref": "data_rubber_recreation_fabrication_specs|docs_rubber_recreation_fabrication_spec_20260502",
-          "notes": "Separate from the six main tub stations; do not replace with circular tub cushions.",
+          "source_ref": "data_body_mount_order_release_specs|data_rubber_recreation_fabrication_specs|docs_rubber_recreation_fabrication_spec_20260502",
+          "notes": "Spec is ready for quote/prototype; BMA-010 confirms final fastener diameter/pitch.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
@@ -17017,7 +17033,7 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004401_gp_otUSjgGA"
           ],
           "photo_status": "direct_template_photos",
-          "spec_status": "needs_template_trace",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -17025,8 +17041,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Black EPDM or NR/SBR sheet rubber, Shore A 60 +/-5; rubber-to-metal bond adhesive if carrier is reused",
           "critical_measurements": "Trace physical left old strip and metal carrier; mark hole centres from carrier, not distorted rubber; confirm slot shape and handedness",
           "fit_and_test": "Cut/punch from physical template; bond to cleaned carrier if required; dry-fit without stretch, twist, or hole misalignment",
-          "source_ref": "data_rubber_recreation_fabrication_specs|docs_rubber_recreation_fabrication_spec_20260502",
-          "notes": "Photos are enough for stock/quote, not final cut pattern because the old strip is curled and torn.",
+          "source_ref": "data_body_mount_order_release_specs|data_body_mount_release_actions|data_rubber_recreation_fabrication_specs|docs_rubber_recreation_fabrication_spec_20260502",
+          "notes": "Spec is ready for material/quote; BMA-009 physical trace controls final cut pattern.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
@@ -17119,7 +17135,7 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004401_gp_otUSjgGA"
           ],
           "photo_status": "direct_template_photos",
-          "spec_status": "needs_template_trace",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -17127,8 +17143,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Black EPDM or NR/SBR sheet rubber, Shore A 60 +/-5; same material batch as left strip",
           "critical_measurements": "Trace physical right old strip and metal carrier; confirm left/right handedness on vehicle; confirm hole centres from carrier",
           "fit_and_test": "Cut/punch from physical template; make both sides in one batch; dry-fit with front support before acceptance",
-          "source_ref": "data_rubber_recreation_fabrication_specs|docs_rubber_recreation_fabrication_spec_20260502",
-          "notes": "Do not assume symmetry until the right-side physical sample and vehicle holes are checked.",
+          "source_ref": "data_body_mount_order_release_specs|data_body_mount_release_actions|data_rubber_recreation_fabrication_specs|docs_rubber_recreation_fabrication_spec_20260502",
+          "notes": "Spec is ready for material/quote; BMA-009 physical trace controls final cut pattern.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
@@ -17217,16 +17233,16 @@ window.J40_DASHBOARD_DATA = {
             "20260405_234652"
           ],
           "photo_status": "context_photos",
-          "spec_status": "needs_station_reconciliation",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Flat steel shim/spacer pack by station; Toyota references include 52212-90310 T=10 mm, 52216-90310 T=5.0 mm, 52217-90310 T=15 mm, 52033-90301 T=22.8 mm, 52033-90304 T=27.8 mm; also keep 1/2/3/5 mm adjustment shims for trial fit",
+          "exact_recreation_spec": "Flat steel shim/spacer pack by station; thin pack 1/2/3/5 mm x12 each; thick control pack 5/10/15 mm x4 each; Toyota references include 52212-90310 T=10 mm, 52216-90310 T=5.0 mm, 52217-90310 T=15 mm, 52033-90301 T=22.8 mm, 52033-90304 T=27.8 mm",
           "material_spec": "Flat steel shims/spacers only; corrosion protected; no random washer stacks inside the rubber sandwich",
           "critical_measurements": "Preserve and measure original shim packs by FL/FR/ML/MR/RL/RR; reconcile Toyota NO.1-NO.5/cowl/rear rows to vehicle stations before final selection",
           "fit_and_test": "Shim only at original metal-to-metal interfaces; tub doors/gaps and front clip alignment must settle without forced bolts",
-          "source_ref": "data_rubber_recreation_toyota_oe_cross_reference|docs_chassis_rubbers_workstream_20260427",
-          "notes": "This controls body height and alignment; do not treat generic washers as shims.",
+          "source_ref": "data_body_mount_order_release_specs|data_body_mount_station_closure_sheet|data_rubber_recreation_toyota_oe_cross_reference|docs_chassis_rubbers_workstream_20260427",
+          "notes": "Spec is ready for shim pack order; BMA-008 station measurement controls final shim use.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234546.jpg",
@@ -17261,22 +17277,22 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Main tub body-mount fasteners and captive-thread interfaces",
           "pipe_or_line": "",
           "replace_scope": "buy_new_inspect_repair_if_needed",
-          "quantity": "6_installed_buy_8_plus_2_repairs",
+          "quantity": "6_installed_buy_16_trial_pack",
           "photo_evidence": [
             "20260405_234546",
             "20260405_234652"
           ],
           "photo_status": "context_photos",
-          "spec_status": "needs_thread_length_confirmation",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Working hardware basis M10 x 1.25 class 8.8 minimum; Toyota references show 90105-10053 for NO.1-NO.3 and 90101-10463 for NO.4-NO.5; buy 8 bolts once length is confirmed; keep 2 M10 x 1.25 weld nuts and 3 mm repair tabs for damaged captive threads",
+          "exact_recreation_spec": "Working hardware basis M10 x 1.25 class 8.8 minimum; trial-fit pack 70/80/90/100 mm x4 each; M10 all-metal nuts x12; M10 nyloc nuts x12; M10 flat washers x40; M10 spring washers x20; M10 x 1.25 weld nuts x4; 3 mm repair tabs x4",
           "material_spec": "Marked structural steel fasteners, class 8.8 minimum; anti-seize at final assembly; repair tabs in 3 mm steel",
           "critical_measurements": "Confirm thread pitch, installed bolt length by station, washer/cup stack thickness, and captive nut condition after cleanup",
           "fit_and_test": "Bolts must thread by hand before torque; no spinning captive nuts; final torque only after tub alignment and shim stack are accepted",
-          "source_ref": "data_rubber_recreation_toyota_oe_cross_reference|docs_chassis_rubbers_workstream_20260427",
-          "notes": "Hardware is tracked with rubbers because bolt length and sleeve length close the rubber stack together.",
+          "source_ref": "data_body_mount_order_release_specs|data_body_mount_station_closure_sheet|data_rubber_recreation_toyota_oe_cross_reference|docs_chassis_rubbers_workstream_20260427",
+          "notes": "Spec is ready for local trial pack order; BMA-007 controls final installed bolt length.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234546.jpg",
@@ -17324,7 +17340,7 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004442_gp_7WcFHjLQ"
           ],
           "photo_status": "direct_template_photos",
-          "spec_status": "properly_specced",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -17332,8 +17348,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5; no tyre rubber, crumb rubber, or mixed offcuts",
           "critical_measurements": "Confirm OD, free height, central bore/register, register depth, and final installed stack height against the least-crushed old sample; confirm station count against Toyota NO.1-NO.5 map",
           "fit_and_test": "Dry-fit with cup washers and sleeves; body height must return without over-crushing rubber or forcing tub alignment",
-          "source_ref": "data_rubber_recreation_fabrication_specs|docs_rubber_recreation_fabrication_spec_20260502",
-          "notes": "Image-derived dimensions are good for quote/prototype; caliper confirmation controls production release.",
+          "source_ref": "data_rubber_recreation_fabrication_specs|docs_rubber_recreation_fabrication_spec_20260502|data_body_mount_order_release_specs",
+          "notes": "Spec is ready for quote/order route control; BMA-005 split-stack confirmation controls final production release.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
@@ -17426,7 +17442,7 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004442_gp_7WcFHjLQ"
           ],
           "photo_status": "direct_template_photos",
-          "spec_status": "properly_specced",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -17434,8 +17450,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5; same batch/hardness as small cushions where possible",
           "critical_measurements": "Confirm the large-pair station from old mount map; confirm OD, height, bore/register, and installed stack height before production",
           "fit_and_test": "Dry-fit as a pair on the correct stations; no side-to-side height mismatch after tub alignment",
-          "source_ref": "data_rubber_recreation_fabrication_specs|docs_rubber_recreation_fabrication_spec_20260502",
-          "notes": "Matches the current early pre-1/79 working count of two large pieces.",
+          "source_ref": "data_rubber_recreation_fabrication_specs|docs_rubber_recreation_fabrication_spec_20260502|data_body_mount_order_release_specs",
+          "notes": "Spec is ready for quote/prototype; BMA-004 caliper check controls final production release.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
@@ -17525,16 +17541,16 @@ window.J40_DASHBOARD_DATA = {
             "20260405_234652"
           ],
           "photo_status": "direct_and_context_photos",
-          "spec_status": "needs_physical_measurement",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Steel sleeve ID 10.8-11.0 mm for M10 bolt; OD must suit final rubber bore/cup register; length equals completed free rubber stack minus 3-4 mm target compression",
+          "exact_recreation_spec": "Steel sleeve ID 10.8-11.0 mm for M10 bolt; OD must suit final rubber bore/cup register; length equals completed free rubber stack minus 3-4 mm target compression; order 8 blanks before final cut",
           "material_spec": "Steel tube, zinc plated or painted after cutting; square-cut and deburred",
           "critical_measurements": "Measure old sleeve OD and length with calipers; confirm bolt diameter/thread; confirm cup/rubber stack height by station",
           "fit_and_test": "Sleeve must prevent over-crush at final torque; M10 bolt must pass freely; no loose sleeve rattle after assembly",
-          "source_ref": "data_rubber_recreation_fabrication_specs|docs_chassis_rubbers_workstream_20260427",
-          "notes": "Do not infer sleeve OD/length from photos only; sleeve length controls clamp load and final body height.",
+          "source_ref": "data_body_mount_order_release_specs|data_body_mount_release_actions|data_rubber_recreation_fabrication_specs|docs_chassis_rubbers_workstream_20260427",
+          "notes": "Spec is ready for blank/tube order; BMA-006 dry-stack measurement controls final cut length.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
@@ -17589,16 +17605,16 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004442_gp_7WcFHjLQ"
           ],
           "photo_status": "direct_template_photos",
-          "spec_status": "properly_specced",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Small cup OD 64 mm or matched to CR-MAIN-001; large cup OD 78 mm or matched to CR-MAIN-002; M10 clearance hole 11 mm; dish/register depth 2-3 mm; steel thickness 2.5-3.0 mm",
+          "exact_recreation_spec": "Small cup OD 64 mm or matched to CR-MAIN-001; large cup OD 78 mm or matched to CR-MAIN-002; M10 clearance hole 11 mm; dish/register depth 2-3 mm; steel thickness 2.5-3.0 mm; order 14 if locally fabricating",
           "material_spec": "Steel cup/seat washers, plated or epoxy primed; reuse originals only if flat, not thinned, and not cracked",
           "critical_measurements": "Confirm actual cup OD against body/chassis landing surfaces; confirm which original cups can be reused; confirm hole clearance and dish depth",
           "fit_and_test": "Rubber must seat fully in cup without rocking; no thin generic washer substitution; dry-fit before final coating",
-          "source_ref": "data_rubber_recreation_fabrication_specs|docs_chassis_rubbers_workstream_20260427",
-          "notes": "Rubber dimensions are not safe without the seat style; this row tracks cups separately from rubber cushions.",
+          "source_ref": "data_body_mount_order_release_specs|data_rubber_recreation_fabrication_specs|docs_chassis_rubbers_workstream_20260427",
+          "notes": "Spec is ready; BMA-003/BMA-004 confirm physical seat match before committing the route.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
@@ -17663,7 +17679,7 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004345_gp_yK8VYzMQ"
           ],
           "photo_status": "direct_template_photos",
-          "spec_status": "properly_specced",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -17671,8 +17687,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5; reproduce or reuse steel insert if the original design uses one",
           "critical_measurements": "Confirm hole centre spacing, thickness, and insert OD directly from sample; confirm whether insert is bonded, loose, or part of washer stack",
           "fit_and_test": "Dry-fit front support with both pads as matched pair; front clip height must align without forcing tub or nose extension",
-          "source_ref": "data_rubber_recreation_fabrication_specs|docs_rubber_recreation_fabrication_spec_20260502",
-          "notes": "Separate from the six main tub stations; do not replace with circular tub cushions.",
+          "source_ref": "data_body_mount_order_release_specs|data_rubber_recreation_fabrication_specs|docs_rubber_recreation_fabrication_spec_20260502",
+          "notes": "Spec is ready for quote/prototype; BMA-010 confirms final fastener diameter/pitch.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
@@ -17717,7 +17733,7 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004401_gp_otUSjgGA"
           ],
           "photo_status": "direct_template_photos",
-          "spec_status": "needs_template_trace",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -17725,8 +17741,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Black EPDM or NR/SBR sheet rubber, Shore A 60 +/-5; rubber-to-metal bond adhesive if carrier is reused",
           "critical_measurements": "Trace physical left old strip and metal carrier; mark hole centres from carrier, not distorted rubber; confirm slot shape and handedness",
           "fit_and_test": "Cut/punch from physical template; bond to cleaned carrier if required; dry-fit without stretch, twist, or hole misalignment",
-          "source_ref": "data_rubber_recreation_fabrication_specs|docs_rubber_recreation_fabrication_spec_20260502",
-          "notes": "Photos are enough for stock/quote, not final cut pattern because the old strip is curled and torn.",
+          "source_ref": "data_body_mount_order_release_specs|data_body_mount_release_actions|data_rubber_recreation_fabrication_specs|docs_rubber_recreation_fabrication_spec_20260502",
+          "notes": "Spec is ready for material/quote; BMA-009 physical trace controls final cut pattern.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
@@ -17819,7 +17835,7 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004401_gp_otUSjgGA"
           ],
           "photo_status": "direct_template_photos",
-          "spec_status": "needs_template_trace",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
@@ -17827,8 +17843,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Black EPDM or NR/SBR sheet rubber, Shore A 60 +/-5; same material batch as left strip",
           "critical_measurements": "Trace physical right old strip and metal carrier; confirm left/right handedness on vehicle; confirm hole centres from carrier",
           "fit_and_test": "Cut/punch from physical template; make both sides in one batch; dry-fit with front support before acceptance",
-          "source_ref": "data_rubber_recreation_fabrication_specs|docs_rubber_recreation_fabrication_spec_20260502",
-          "notes": "Do not assume symmetry until the right-side physical sample and vehicle holes are checked.",
+          "source_ref": "data_body_mount_order_release_specs|data_body_mount_release_actions|data_rubber_recreation_fabrication_specs|docs_rubber_recreation_fabrication_spec_20260502",
+          "notes": "Spec is ready for material/quote; BMA-009 physical trace controls final cut pattern.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
@@ -17917,16 +17933,16 @@ window.J40_DASHBOARD_DATA = {
             "20260405_234652"
           ],
           "photo_status": "context_photos",
-          "spec_status": "needs_station_reconciliation",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Flat steel shim/spacer pack by station; Toyota references include 52212-90310 T=10 mm, 52216-90310 T=5.0 mm, 52217-90310 T=15 mm, 52033-90301 T=22.8 mm, 52033-90304 T=27.8 mm; also keep 1/2/3/5 mm adjustment shims for trial fit",
+          "exact_recreation_spec": "Flat steel shim/spacer pack by station; thin pack 1/2/3/5 mm x12 each; thick control pack 5/10/15 mm x4 each; Toyota references include 52212-90310 T=10 mm, 52216-90310 T=5.0 mm, 52217-90310 T=15 mm, 52033-90301 T=22.8 mm, 52033-90304 T=27.8 mm",
           "material_spec": "Flat steel shims/spacers only; corrosion protected; no random washer stacks inside the rubber sandwich",
           "critical_measurements": "Preserve and measure original shim packs by FL/FR/ML/MR/RL/RR; reconcile Toyota NO.1-NO.5/cowl/rear rows to vehicle stations before final selection",
           "fit_and_test": "Shim only at original metal-to-metal interfaces; tub doors/gaps and front clip alignment must settle without forced bolts",
-          "source_ref": "data_rubber_recreation_toyota_oe_cross_reference|docs_chassis_rubbers_workstream_20260427",
-          "notes": "This controls body height and alignment; do not treat generic washers as shims.",
+          "source_ref": "data_body_mount_order_release_specs|data_body_mount_station_closure_sheet|data_rubber_recreation_toyota_oe_cross_reference|docs_chassis_rubbers_workstream_20260427",
+          "notes": "Spec is ready for shim pack order; BMA-008 station measurement controls final shim use.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234546.jpg",
@@ -17961,22 +17977,22 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Main tub body-mount fasteners and captive-thread interfaces",
           "pipe_or_line": "",
           "replace_scope": "buy_new_inspect_repair_if_needed",
-          "quantity": "6_installed_buy_8_plus_2_repairs",
+          "quantity": "6_installed_buy_16_trial_pack",
           "photo_evidence": [
             "20260405_234546",
             "20260405_234652"
           ],
           "photo_status": "context_photos",
-          "spec_status": "needs_thread_length_confirmation",
+          "spec_status": "spec_ready",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Working hardware basis M10 x 1.25 class 8.8 minimum; Toyota references show 90105-10053 for NO.1-NO.3 and 90101-10463 for NO.4-NO.5; buy 8 bolts once length is confirmed; keep 2 M10 x 1.25 weld nuts and 3 mm repair tabs for damaged captive threads",
+          "exact_recreation_spec": "Working hardware basis M10 x 1.25 class 8.8 minimum; trial-fit pack 70/80/90/100 mm x4 each; M10 all-metal nuts x12; M10 nyloc nuts x12; M10 flat washers x40; M10 spring washers x20; M10 x 1.25 weld nuts x4; 3 mm repair tabs x4",
           "material_spec": "Marked structural steel fasteners, class 8.8 minimum; anti-seize at final assembly; repair tabs in 3 mm steel",
           "critical_measurements": "Confirm thread pitch, installed bolt length by station, washer/cup stack thickness, and captive nut condition after cleanup",
           "fit_and_test": "Bolts must thread by hand before torque; no spinning captive nuts; final torque only after tub alignment and shim stack are accepted",
-          "source_ref": "data_rubber_recreation_toyota_oe_cross_reference|docs_chassis_rubbers_workstream_20260427",
-          "notes": "Hardware is tracked with rubbers because bolt length and sleeve length close the rubber stack together.",
+          "source_ref": "data_body_mount_order_release_specs|data_body_mount_station_closure_sheet|data_rubber_recreation_toyota_oe_cross_reference|docs_chassis_rubbers_workstream_20260427",
+          "notes": "Spec is ready for local trial pack order; BMA-007 controls final installed bolt length.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234546.jpg",
@@ -18003,6 +18019,810 @@ window.J40_DASHBOARD_DATA = {
               "matched_tokens": []
             }
           ]
+        }
+      ],
+      "body_mount_order_release_specs": [
+        {
+          "order_line_id": "BM-OE-001",
+          "route": "OE_PURCHASE_CANDIDATE",
+          "item": "Body mount cushion NO.1",
+          "part_number_or_code": "52201-90300",
+          "qty_required": "4",
+          "qty_to_order": "4",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_verify_station_count",
+          "exact_order_spec": "Order Toyota/OE-style cushion 52201-90300, quantity 4, only as part of the complete matched OE/reproduction body mount package.",
+          "material_spec": "OE-style automotive body-mount rubber",
+          "source_basis": "WhatsApp quote candidate 2026-04-17; cross-check against Toyota body-mount station references",
+          "user_action_required": "Confirm the vehicle actually uses this OE package before purchase by laying out old parts by station.",
+          "do_not_order_if": "Do not order if choosing local fabrication route from BM-FAB lines.",
+          "notes": "Candidate list has 16 cushion/seat rubber pieces; current photo-derived custom package has 12 circular cushions plus front support pieces, so route choice must be explicit."
+        },
+        {
+          "order_line_id": "BM-OE-002",
+          "route": "OE_PURCHASE_CANDIDATE",
+          "item": "Body mount cushion NO.2",
+          "part_number_or_code": "52202-90300",
+          "qty_required": "4",
+          "qty_to_order": "4",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_verify_station_count",
+          "exact_order_spec": "Order Toyota/OE-style cushion 52202-90300, quantity 4, only as part of the complete matched OE/reproduction body mount package.",
+          "material_spec": "OE-style automotive body-mount rubber",
+          "source_basis": "WhatsApp quote candidate 2026-04-17",
+          "user_action_required": "Confirm part count against old upper/lower stacks.",
+          "do_not_order_if": "Do not order if choosing local fabrication route from BM-FAB lines.",
+          "notes": "Do not mix OE/repro cushions with locally fabricated cushions in the same mount family."
+        },
+        {
+          "order_line_id": "BM-OE-003",
+          "route": "OE_PURCHASE_CANDIDATE",
+          "item": "Body mount cushion NO.3",
+          "part_number_or_code": "52203-90300",
+          "qty_required": "2",
+          "qty_to_order": "2",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_verify_station_count",
+          "exact_order_spec": "Order Toyota/OE-style cushion 52203-90300, quantity 2, only as part of the complete matched OE/reproduction body mount package.",
+          "material_spec": "OE-style automotive body-mount rubber",
+          "source_basis": "WhatsApp quote candidate 2026-04-17",
+          "user_action_required": "Confirm whether this station exists on the current early tub layout.",
+          "do_not_order_if": "Do not order if choosing local fabrication route from BM-FAB lines.",
+          "notes": "Verify against current body station map before spending."
+        },
+        {
+          "order_line_id": "BM-OE-004",
+          "route": "OE_PURCHASE_CANDIDATE",
+          "item": "Body mount cushion NO.4",
+          "part_number_or_code": "52204-90300",
+          "qty_required": "2",
+          "qty_to_order": "2",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_verify_station_count",
+          "exact_order_spec": "Order Toyota/OE-style cushion 52204-90300, quantity 2, only as part of the complete matched OE/reproduction body mount package.",
+          "material_spec": "OE-style automotive body-mount rubber",
+          "source_basis": "WhatsApp quote candidate 2026-04-17",
+          "user_action_required": "Confirm whether this station exists on the current early tub layout.",
+          "do_not_order_if": "Do not order if choosing local fabrication route from BM-FAB lines.",
+          "notes": "ToyotaPartsDeal also shows 52204-35010 as a NO.1 lower reference on a 1978 listing; verify by station, not only name."
+        },
+        {
+          "order_line_id": "BM-OE-005",
+          "route": "OE_PURCHASE_CANDIDATE",
+          "item": "Body mount cushion NO.5",
+          "part_number_or_code": "52208-90300",
+          "qty_required": "4",
+          "qty_to_order": "4",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_verify_station_count",
+          "exact_order_spec": "Order Toyota/OE-style cushion 52208-90300, quantity 4, only as part of the complete matched OE/reproduction body mount package.",
+          "material_spec": "OE-style automotive body-mount rubber",
+          "source_basis": "WhatsApp quote candidate 2026-04-17",
+          "user_action_required": "Confirm actual rear/cowl station count before purchase.",
+          "do_not_order_if": "Do not order if choosing local fabrication route from BM-FAB lines.",
+          "notes": "Candidate list describes this as NO.5; older cleaned chat text also mentions NO.3 upper, so verify with supplier diagram."
+        },
+        {
+          "order_line_id": "BM-OE-006",
+          "route": "OE_PURCHASE_CANDIDATE",
+          "item": "Body mount collar",
+          "part_number_or_code": "90540-17045",
+          "qty_required": "2",
+          "qty_to_order": "2",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_verify_station_count",
+          "exact_order_spec": "Order collar 90540-17045, quantity 2, if OE/repro route is selected and station map confirms it.",
+          "material_spec": "OE-style collar/spacer interface piece",
+          "source_basis": "WhatsApp quote candidate; ToyotaPartsDeal 1978 body-mount listing includes 90540-17045 as a cushion reference",
+          "user_action_required": "Match old part before buying because the same number appears as a cushion/collar reference in different source wording.",
+          "do_not_order_if": "Do not order if existing collars are reusable and local fabrication route supplies correct sleeves.",
+          "notes": "Keep old collars until dry fit closes."
+        },
+        {
+          "order_line_id": "BM-OE-007",
+          "route": "OE_PURCHASE_CANDIDATE",
+          "item": "Body mount stopper or seat",
+          "part_number_or_code": "52023-60010",
+          "qty_required": "4",
+          "qty_to_order": "4",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_verify_station_count",
+          "exact_order_spec": "Order stopper/seat 52023-60010, quantity 4, if OE/repro route is selected and physical pieces match.",
+          "material_spec": "OE-style rubber stopper/seat",
+          "source_basis": "WhatsApp quote candidate; ToyotaPartsDeal 1978 listing references 52023-60010 as body mount lower cushion at NO.3/NO.4",
+          "user_action_required": "Measure current stopper/seat OD, ID, height, and dish before purchase.",
+          "do_not_order_if": "Do not order blindly if these are actually included in a complete body mount kit.",
+          "notes": "This is probably what the current measured stops should be matched against."
+        },
+        {
+          "order_line_id": "BM-OE-008",
+          "route": "OE_PURCHASE_CANDIDATE",
+          "item": "Washer or seat",
+          "part_number_or_code": "90560-12009",
+          "qty_required": "6",
+          "qty_to_order": "6",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_verify_station_count",
+          "exact_order_spec": "Order washer/seat 90560-12009, quantity 6, if OE/repro route is selected and sample shape matches.",
+          "material_spec": "OE-style washer/seat",
+          "source_basis": "WhatsApp quote candidate 2026-04-17",
+          "user_action_required": "Measure current washer/seat OD, ID, dish depth, and steel/rubber thickness.",
+          "do_not_order_if": "Do not order if local cups are being fabricated to BM-HW-002 spec.",
+          "notes": "Supplier must confirm this is the correct seat/washer for the exact body-mount kit being supplied."
+        },
+        {
+          "order_line_id": "BM-OE-009",
+          "route": "OE_PURCHASE_CANDIDATE",
+          "item": "Washer or seat",
+          "part_number_or_code": "90560-12233",
+          "qty_required": "4",
+          "qty_to_order": "4",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_verify_station_count",
+          "exact_order_spec": "Order washer/seat 90560-12233, quantity 4, if OE/repro route is selected and sample shape matches.",
+          "material_spec": "OE-style washer/seat",
+          "source_basis": "WhatsApp quote candidate; ToyotaPartsDeal 1978 listing references 90560-12233 as spacer for body mount NO.3/NO.4",
+          "user_action_required": "Measure current washer/seat OD, ID, dish depth, and steel/rubber thickness.",
+          "do_not_order_if": "Do not order if local cups are being fabricated to BM-HW-002 spec.",
+          "notes": "Part-number wording varies between spacer and washer/seat; physical shape controls."
+        },
+        {
+          "order_line_id": "BM-OE-010",
+          "route": "OE_PURCHASE_CANDIDATE",
+          "item": "Body mount spacer",
+          "part_number_or_code": "52228-22010",
+          "qty_required": "6",
+          "qty_to_order": "6",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_verify_station_count",
+          "exact_order_spec": "Order body mount spacer 52228-22010, quantity 6, if OE/repro route is selected and the old spacer/holder profile matches.",
+          "material_spec": "OE-style spacer/holder",
+          "source_basis": "WhatsApp quote candidate; ToyotaPartsDeal shows 52228-30010 replaced by 52228-22010 for holder rows",
+          "user_action_required": "Measure old spacer/holder thickness, hole size, OD/profile, and station location.",
+          "do_not_order_if": "Do not order if sleeves/spacers will be fabricated locally after stack measurement.",
+          "notes": "This may correspond to the holder/spacer rows, not a simple tube sleeve."
+        },
+        {
+          "order_line_id": "BM-OE-011",
+          "route": "OE_PURCHASE_CANDIDATE",
+          "item": "Body mount bolt",
+          "part_number_or_code": "90109-10039",
+          "qty_required": "2",
+          "qty_to_order": "2",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_verify_thread_length",
+          "exact_order_spec": "Order bolt 90109-10039, quantity 2, only if OE/repro route and station map confirm this bolt family.",
+          "material_spec": "Toyota OE-style structural bolt; class/grade to be confirmed by supplier",
+          "source_basis": "WhatsApp quote candidate 2026-04-17",
+          "user_action_required": "Confirm pitch and length against old bolt/captive nut before ordering expensive OE bolts.",
+          "do_not_order_if": "Do not order if using local graded hardware pack BM-HW-003.",
+          "notes": "Bolt dimensions were not found in open OE listings; do not rely on part number alone for local substitute length."
+        },
+        {
+          "order_line_id": "BM-OE-012",
+          "route": "OE_PURCHASE_CANDIDATE",
+          "item": "Body mount bolt",
+          "part_number_or_code": "90105-10053",
+          "qty_required": "2",
+          "qty_to_order": "2",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_verify_thread_length",
+          "exact_order_spec": "Order bolt 90105-10053, quantity 2, only if OE/repro route and station map confirm this bolt family.",
+          "material_spec": "Toyota OE-style structural bolt; class/grade to be confirmed by supplier",
+          "source_basis": "WhatsApp quote candidate; ToyotaPartsDeal 1978 listing also references 90105-10053 on NO.1-NO.3 body-mount bolt rows",
+          "user_action_required": "Confirm pitch and length against old bolt/captive nut before ordering expensive OE bolts.",
+          "do_not_order_if": "Do not order if using local graded hardware pack BM-HW-003.",
+          "notes": "ToyotaPartsDeal station quantity differs from the quote candidate, so station map controls."
+        },
+        {
+          "order_line_id": "BM-OE-013",
+          "route": "OE_PURCHASE_CANDIDATE",
+          "item": "Body mount bolt",
+          "part_number_or_code": "90119-10123",
+          "qty_required": "4",
+          "qty_to_order": "4",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_verify_thread_length",
+          "exact_order_spec": "Order bolt 90119-10123, quantity 4, only if OE/repro route and station map confirm this bolt family.",
+          "material_spec": "Toyota OE-style structural bolt; class/grade to be confirmed by supplier",
+          "source_basis": "WhatsApp quote candidate 2026-04-17",
+          "user_action_required": "Confirm pitch and length against old bolt/captive nut before ordering expensive OE bolts.",
+          "do_not_order_if": "Do not order if using local graded hardware pack BM-HW-003.",
+          "notes": "Likely needed for one station family in the candidate kit; verify on supplier diagram."
+        },
+        {
+          "order_line_id": "BM-OE-014",
+          "route": "OE_PURCHASE_CANDIDATE",
+          "item": "Body mount bolt",
+          "part_number_or_code": "90101-10463",
+          "qty_required": "2",
+          "qty_to_order": "2",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_verify_thread_length",
+          "exact_order_spec": "Order bolt 90101-10463, quantity 2, only if OE/repro route and station map confirm this bolt family.",
+          "material_spec": "Toyota OE-style structural bolt; class/grade to be confirmed by supplier",
+          "source_basis": "WhatsApp quote candidate; ToyotaPartsDeal 1978 listing references 90101-10463 on NO.4-NO.5 body-mount bolt rows",
+          "user_action_required": "Confirm pitch and length against old bolt/captive nut before ordering expensive OE bolts.",
+          "do_not_order_if": "Do not order if using local graded hardware pack BM-HW-003.",
+          "notes": "Open listing confirms identity use but not length."
+        },
+        {
+          "order_line_id": "BM-FAB-001",
+          "route": "LOCAL_FABRICATION",
+          "item": "Large circular body-mount cushion",
+          "part_number_or_code": "BM-LG",
+          "qty_required": "2",
+          "qty_to_order": "2",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_final_caliper_hold",
+          "exact_order_spec": "OD 78 mm; free height 24 mm; central bore/register 32 mm; centre register OD 46 mm x depth 2 mm; outside edge radius R2-R3; make as matched pair.",
+          "material_spec": "Black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5",
+          "source_basis": "May 2 tape-measure photos; Energy 4144 thickness cross-check 24.13 mm",
+          "user_action_required": "Caliper-confirm OD, bore/register, and final stack before full production.",
+          "do_not_order_if": "Do not order if complete OE/repro package BM-OE lines is selected.",
+          "notes": "Ready for fabricator quote/prototype; final production release still needs physical caliper confirmation."
+        },
+        {
+          "order_line_id": "BM-FAB-002",
+          "route": "LOCAL_FABRICATION",
+          "item": "Small circular body-mount cushion",
+          "part_number_or_code": "BM-SM",
+          "qty_required": "10",
+          "qty_to_order": "10",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_split_stack_hold",
+          "exact_order_spec": "OD 64 mm; working free height 22 mm if one-piece; central bore/register 32 mm; centre register OD 46 mm x depth 2 mm; outside edge radius R2-R3; make all 10 as one batch.",
+          "material_spec": "Black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5",
+          "source_basis": "May 2 tape-measure photos; Energy medium+seat cross-check suggests 11.43+8.64=20.07 mm split stack",
+          "user_action_required": "Disassemble/measure one old small stack and confirm whether it is one-piece 22 mm or split bushing plus seat.",
+          "do_not_order_if": "Do not order if complete OE/repro package BM-OE lines is selected.",
+          "notes": "This is the main hold point. Quote is OK; production waits for split-stack decision."
+        },
+        {
+          "order_line_id": "BM-FAB-003",
+          "route": "LOCAL_FABRICATION",
+          "item": "Front support two-hole oval isolator pad",
+          "part_number_or_code": "FS-OVAL",
+          "qty_required": "2",
+          "qty_to_order": "2",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_final_caliper_hold",
+          "exact_order_spec": "Overall length 96 mm; max width 64 mm; free thickness 15 mm; two 12 mm holes; hole centre spacing 64 mm; rectangular relief 36 x 18 mm with R3 corners; top metal insert/boss OD 29 mm.",
+          "material_spec": "Black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5; reuse/bond insert if original design uses one",
+          "source_basis": "May 2 tape-measure photos",
+          "user_action_required": "Caliper-confirm hole spacing, insert OD, thickness, and whether insert is bonded or loose.",
+          "do_not_order_if": "Do not substitute circular tub cushions for front support pads.",
+          "notes": "Front support pads are separate from the six main tub stations."
+        },
+        {
+          "order_line_id": "BM-FAB-004",
+          "route": "LOCAL_FABRICATION",
+          "item": "Front support left strip or bonded liner",
+          "part_number_or_code": "FS-STRIP-L",
+          "qty_required": "1",
+          "qty_to_order": "1",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_template_trace_required",
+          "exact_order_spec": "Working quote spec: trace length 165 mm; width 38-42 mm; base sheet thickness 8 mm; raised/load pad height 14 mm; end/tab holes M10 clearance 11 mm or slot 11 x 16 mm where shown.",
+          "material_spec": "Black EPDM or NR/SBR sheet rubber, Shore A 60 +/-5; rubber-to-metal bond adhesive if carrier is reused",
+          "source_basis": "May 2 tape-measure photos",
+          "user_action_required": "Trace physical left strip and carrier on card/acetate; mark hole centres from carrier, not distorted rubber.",
+          "do_not_order_if": "Do not final-cut from photos only.",
+          "notes": "Cut as a handed piece."
+        },
+        {
+          "order_line_id": "BM-FAB-005",
+          "route": "LOCAL_FABRICATION",
+          "item": "Front support right strip or bonded liner",
+          "part_number_or_code": "FS-STRIP-R",
+          "qty_required": "1",
+          "qty_to_order": "1",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_template_trace_required",
+          "exact_order_spec": "Mirror FS-STRIP-L unless physical right-side sample proves asymmetric; use same material and batch.",
+          "material_spec": "Black EPDM or NR/SBR sheet rubber, Shore A 60 +/-5; rubber-to-metal bond adhesive if carrier is reused",
+          "source_basis": "May 2 tape-measure photos",
+          "user_action_required": "Trace physical right strip and carrier; confirm handedness on vehicle.",
+          "do_not_order_if": "Do not assume symmetry until checked.",
+          "notes": "Cut both sides together after trace."
+        },
+        {
+          "order_line_id": "BM-HW-001",
+          "route": "LOCAL_HARDWARE",
+          "item": "Main body mount steel sleeve or crush tube",
+          "part_number_or_code": "BM-SLV",
+          "qty_required": "6",
+          "qty_to_order": "8",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_measurement_before_cut",
+          "exact_order_spec": "Sleeve ID 10.8-11.0 mm for M10 bolt; sleeve OD to match measured rubber bore/cup register; sleeve length equals completed free rubber/cup stack minus 3-4 mm target compression.",
+          "material_spec": "Steel tube, square cut, deburred, zinc plated or painted after cutting",
+          "source_basis": "Derived from mount-stack clamp rule and existing chassis_rubber_requirements",
+          "user_action_required": "Measure old sleeve OD and length; dry-stack final rubber/cup pieces before cutting length.",
+          "do_not_order_if": "Do not cut final sleeves until BM-SM split-stack decision is closed.",
+          "notes": "Order 8 blanks or enough tube for 8 sleeves, but cut final length only after stack release."
+        },
+        {
+          "order_line_id": "BM-HW-002",
+          "route": "LOCAL_HARDWARE",
+          "item": "Body mount cup or seat washer set",
+          "part_number_or_code": "BM-CUP",
+          "qty_required": "12",
+          "qty_to_order": "14",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_with_sample_match",
+          "exact_order_spec": "Small cups: 64 mm OD to support BM-SM, qty 10 plus 2 spare if fabricating locally. Large cups: 78 mm OD to support BM-LG, qty 2. Hole ID 11 mm for M10 clearance; dish/register depth 2-3 mm; steel thickness 2.5-3.0 mm.",
+          "material_spec": "Steel cup/seat washers, plated or epoxy primed; reuse originals only if flat, not thinned, and not cracked",
+          "source_basis": "May 2 tape-measure photos; chassis_rubber_requirements CR-MAIN-004",
+          "user_action_required": "Measure old cup OD, hole ID, dish depth, and thickness before approving local batch.",
+          "do_not_order_if": "Do not order if OE washer/seat lines BM-OE-008/009 are bought and match the vehicle.",
+          "notes": "Qty to order 14 assumes 12 installed plus 2 local spares."
+        },
+        {
+          "order_line_id": "BM-HW-003",
+          "route": "LOCAL_HARDWARE",
+          "item": "M10 body mount bolt trial-fit pack",
+          "part_number_or_code": "BM-BOLT-M10",
+          "qty_required": "6_installed_or_10_if_OE_station_map",
+          "qty_to_order": "16",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_as_local_assortment",
+          "exact_order_spec": "M10 x 1.25 class 8.8 minimum hex/flange bolts. Trial-fit length pack: 70 mm x4, 80 mm x4, 90 mm x4, 100 mm x4. Use the shortest bolt that gives full thread engagement without bottoming in captive nut.",
+          "material_spec": "Class-marked structural steel fasteners, zinc plated preferred",
+          "source_basis": "Derived from existing Kit A plus M10x1.25 working basis",
+          "user_action_required": "Thread-gauge old bolts/captive nuts; measure captive nut depth and dry-stack thickness to choose final installed length.",
+          "do_not_order_if": "Do not use unmarked bolts or coarse pitch if captive nut proves fine pitch.",
+          "notes": "This replaces expensive OE bolts only if thread and length are verified locally."
+        },
+        {
+          "order_line_id": "BM-HW-004",
+          "route": "LOCAL_HARDWARE",
+          "item": "M10 nuts washers and repair hardware",
+          "part_number_or_code": "BM-M10-ANCILLARY",
+          "qty_required": "repair_and_trial_pack",
+          "qty_to_order": "1_pack",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready",
+          "exact_order_spec": "M10 x 1.25 all-metal nuts x12; M10 x 1.25 nyloc nuts x12; M10 flat washers x40; M10 spring washers x20; M10 x 1.25 weld nuts x4; 3 mm mild-steel repair tabs x4.",
+          "material_spec": "Class-marked or structural-grade hardware; repair tabs in weldable mild steel",
+          "source_basis": "Existing Kit A plus captive-thread repair contingency",
+          "user_action_required": "Confirm whether stations are captive-nut or through-bolt before using nuts.",
+          "do_not_order_if": "Do not install nyloc where heat/welding or factory captive nut setup makes it inappropriate.",
+          "notes": "Pack covers trial fit and repair contingency."
+        },
+        {
+          "order_line_id": "BM-HW-005",
+          "route": "LOCAL_HARDWARE",
+          "item": "M12 front support or repair bolt pack",
+          "part_number_or_code": "BM-BOLT-M12",
+          "qty_required": "conditional",
+          "qty_to_order": "hold_until_pitch_verified",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_measurement_before_order",
+          "exact_order_spec": "Only buy if physical front support or prior repair proves M12. Required checks: diameter, pitch, length, washer OD, and clearance through FS-OVAL holes.",
+          "material_spec": "Class 8.8 minimum structural fasteners",
+          "source_basis": "Existing Kit A listed M12 hardware as conditional front-support/repair allowance",
+          "user_action_required": "Measure front support fasteners with gauge; confirm M12 x 1.25 or M12 x 1.5 before buying.",
+          "do_not_order_if": "Do not buy M12 pack on assumption; FS-OVAL hole size alone does not prove bolt thread.",
+          "notes": "If verified, order M12 bolts x4, nuts x6, flat washers x12, spring washers x6 in the measured pitch and length."
+        },
+        {
+          "order_line_id": "BM-SHIM-001",
+          "route": "LOCAL_SHIM_PACK",
+          "item": "Thin body mount alignment shim pack",
+          "part_number_or_code": "BM-SHIM-THIN",
+          "qty_required": "trial_fit_pack",
+          "qty_to_order": "1_pack",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready",
+          "exact_order_spec": "Flat slotted steel shims for M10 mount bolts: 1 mm x12, 2 mm x12, 3 mm x12, 5 mm x12. Slot width 11-12 mm; plate footprint must fully support the mount pedestal/contact patch.",
+          "material_spec": "Flat steel, deburred, zinc plated or epoxy primed; no washer stacks",
+          "source_basis": "Derived from existing chassis shim plan and Bilal Ganj specs",
+          "user_action_required": "Measure and preserve original shim stack by station before adding new shims.",
+          "do_not_order_if": "Do not put shims inside the rubber sandwich.",
+          "notes": "These are adjustment shims for trial alignment, not random washers."
+        },
+        {
+          "order_line_id": "BM-SHIM-002",
+          "route": "LOCAL_SHIM_PACK",
+          "item": "Thick OE-style spacer control pack",
+          "part_number_or_code": "BM-SHIM-THICK",
+          "qty_required": "conditional_trial_pack",
+          "qty_to_order": "1_pack",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_with_station_gate",
+          "exact_order_spec": "OE-style thick spacers for controlled trial fit: 5 mm x4, 10 mm x4, 15 mm x4. Also record OE reference thicknesses 22.8 mm and 27.8 mm, but buy/cut those only if original station map proves they are required.",
+          "material_spec": "Flat steel spacer plates, corrosion protected",
+          "source_basis": "ToyotaPartsDeal/MegaZip/EPC-style station references show 52216 T=5, 52212 T=10, 52217 T=15, and some 52033 rows at 22.8/27.8 mm",
+          "user_action_required": "Measure original thick spacers by station; confirm whether cowl/rear station requires 22.8/27.8 mm before cutting those.",
+          "do_not_order_if": "Do not replace thick OE spacer with washer tower.",
+          "notes": "This pack gives controlled adjustment without improvisation."
+        },
+        {
+          "order_line_id": "BM-PWR-001",
+          "route": "POWERTRAIN_MOUNTS",
+          "item": "Engine mount rubber for 2H diesel",
+          "part_number_or_code": "12361-87311",
+          "qty_required": "2",
+          "qty_to_order": "2",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_inspect_then_buy",
+          "exact_order_spec": "Order 12361-87311 engine mount rubber, quantity 2, only after confirming 2H diesel bracket pattern and sample match.",
+          "material_spec": "Oil-resistant bonded rubber-metal engine mount",
+          "source_basis": "WhatsApp quote candidate 2026-04-17",
+          "user_action_required": "Inspect current mounts under load; confirm stud/thread pattern and height.",
+          "do_not_order_if": "Do not order if installed engine/brackets differ from 2H diesel assumption.",
+          "notes": "Included here because the quote list grouped it with rubber order lines."
+        },
+        {
+          "order_line_id": "BM-PWR-002",
+          "route": "POWERTRAIN_MOUNTS",
+          "item": "Gearbox/trans rear mount insulator",
+          "part_number_or_code": "12371-68010",
+          "qty_required": "1",
+          "qty_to_order": "1",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_inspect_then_buy",
+          "exact_order_spec": "Order 12371-68010 gearbox/trans rear mount insulator, quantity 1, only after confirming gearbox/transfer mount style.",
+          "material_spec": "Oil-resistant bonded rubber-metal transmission mount",
+          "source_basis": "WhatsApp quote candidate 2026-04-17",
+          "user_action_required": "Inspect after degreasing; confirm bracket spacing, stud/thread pattern, and height.",
+          "do_not_order_if": "Do not order if installed transmission/transfer mount differs.",
+          "notes": "Included here because the quote list grouped it with rubber order lines."
+        }
+      ],
+      "body_mount_release_actions": [
+        {
+          "action_id": "BMA-001",
+          "priority": "P0",
+          "owner": "David_or_mechanic",
+          "action": "Lay out every removed body-mount rubber, stopper/seat, washer/cup, sleeve, shim, and bolt on a board by vehicle position: front-left, front-right, middle-left, middle-right, rear-left, rear-right, plus separate front-support left/right.",
+          "status": "open",
+          "blocks_order_lines": "BM-OE-001 to BM-OE-014; BM-FAB-001 to BM-FAB-005; BM-HW-001 to BM-HW-005; BM-SHIM-001 to BM-SHIM-002",
+          "record_result_in": "data/manual/body_mount_station_closure_sheet.csv; photos; data/manual/rubber_recreation_measurement_closure.csv",
+          "why_it_matters": "The current OE candidate list has 16 cushion/seat rubber pieces while the photo-derived custom package has 12 circular cushions plus front support pieces. The route cannot be released until the actual vehicle count is clear."
+        },
+        {
+          "action_id": "BMA-002",
+          "priority": "P0",
+          "owner": "David_or_mechanic",
+          "action": "Decide the route after the layout: complete OE/reproduction package, or local fabrication from the measured samples. Mark the rejected route as do-not-order.",
+          "status": "open",
+          "blocks_order_lines": "BM-OE-001 to BM-OE-014; BM-FAB-001 to BM-FAB-005",
+          "record_result_in": "data/manual/body_mount_order_release_specs.csv notes or data/manual/body_mount_station_closure_sheet.csv",
+          "why_it_matters": "Buying both routes duplicates expensive rubber and can create mixed hardness/height problems."
+        },
+        {
+          "action_id": "BMA-003",
+          "priority": "P0",
+          "owner": "David_or_mechanic",
+          "action": "For the current stopper/seat pieces, measure OD, centre hole/ID, total height, dish/register depth, and steel/rubber thickness. Photograph each one beside a ruler and label station.",
+          "status": "open",
+          "blocks_order_lines": "BM-OE-007 to BM-OE-009; BM-HW-002; BM-FAB-002",
+          "record_result_in": "data/manual/rubber_recreation_measurement_closure.csv",
+          "why_it_matters": "The stopper/seat pieces are the likely link between the OE part-number list and the custom 64 mm small cushion stack."
+        },
+        {
+          "action_id": "BMA-004",
+          "priority": "P0",
+          "owner": "David_or_mechanic",
+          "action": "Measure one best large circular cushion and one best small circular cushion with calipers: three OD readings, centre bore/register, register OD/depth, and four height readings.",
+          "status": "open",
+          "blocks_order_lines": "BM-FAB-001; BM-FAB-002; BM-HW-001; BM-HW-002",
+          "record_result_in": "data/manual/rubber_recreation_measurement_closure.csv",
+          "why_it_matters": "The tape-measure dimensions are good enough for quote/prototype, but final fabrication needs caliper release."
+        },
+        {
+          "action_id": "BMA-005",
+          "priority": "P0",
+          "owner": "David_or_mechanic",
+          "action": "Disassemble or inspect one small circular mount stack and decide whether it is one 22 mm cushion or a split medium bushing plus seat stack.",
+          "status": "open",
+          "blocks_order_lines": "BM-FAB-002; BM-HW-001; BM-SHIM-001",
+          "record_result_in": "data/manual/rubber_recreation_measurement_closure.csv",
+          "why_it_matters": "This controls small rubber height, sleeve length, and installed body height."
+        },
+        {
+          "action_id": "BMA-006",
+          "priority": "P0",
+          "owner": "David_or_mechanic",
+          "action": "Measure old sleeve/crush tube ID, OD, and length at each station. If no sleeve survives, dry-stack rubber/cups and derive sleeve length from final stack height minus 3-4 mm compression.",
+          "status": "open",
+          "blocks_order_lines": "BM-HW-001; BM-HW-003",
+          "record_result_in": "data/manual/rubber_recreation_measurement_closure.csv",
+          "why_it_matters": "Sleeve length prevents over-crushing the rubber and determines the bolt clamped stack."
+        },
+        {
+          "action_id": "BMA-007",
+          "priority": "P0",
+          "owner": "David_or_mechanic",
+          "action": "Thread-gauge every old body-mount bolt and captive nut. Confirm M10 x 1.25 or record the actual pitch. Measure usable captive nut depth and old bolt under-head length.",
+          "status": "open",
+          "blocks_order_lines": "BM-OE-011 to BM-OE-014; BM-HW-003; BM-HW-004",
+          "record_result_in": "data/manual/body_mount_station_closure_sheet.csv",
+          "why_it_matters": "The catalog confirms bolt identities but not usable length. Wrong pitch or bottomed bolts will damage captive nuts."
+        },
+        {
+          "action_id": "BMA-008",
+          "priority": "P0",
+          "owner": "David_or_mechanic",
+          "action": "Preserve and measure original shim/spacer packs by station. Record each thickness and whether it sat metal-to-metal or inside the rubber stack.",
+          "status": "open",
+          "blocks_order_lines": "BM-SHIM-001; BM-SHIM-002",
+          "record_result_in": "data/manual/body_mount_station_closure_sheet.csv",
+          "why_it_matters": "Shim thickness controls tub height and panel gaps. Shims must not be replaced by random washer stacks."
+        },
+        {
+          "action_id": "BMA-009",
+          "priority": "P1",
+          "owner": "David_or_mechanic",
+          "action": "Trace left and right front-support strip rubbers/carriers on card or acetate and mark hole centres from the metal carrier, not from torn rubber.",
+          "status": "open",
+          "blocks_order_lines": "BM-FAB-004; BM-FAB-005",
+          "record_result_in": "template_trace_photos; data/manual/rubber_recreation_measurement_closure.csv",
+          "why_it_matters": "The strip pieces are curled/torn in photos, so final cut patterns must come from a trace."
+        },
+        {
+          "action_id": "BMA-010",
+          "priority": "P1",
+          "owner": "David_or_mechanic",
+          "action": "Check front-support fastener diameter and pitch directly. Confirm whether the 12 mm holes use M10 clearance, M12 bolts, or a prior repair.",
+          "status": "open",
+          "blocks_order_lines": "BM-FAB-003; BM-HW-005",
+          "record_result_in": "data/manual/body_mount_station_closure_sheet.csv",
+          "why_it_matters": "Hole diameter alone does not prove bolt thread. Do not buy M12 hardware until this is known."
+        },
+        {
+          "action_id": "BMA-011",
+          "priority": "P1",
+          "owner": "David_or_mechanic",
+          "action": "Dry-stack one large station, one small station, and one front-support station with rubber, cup/seat, sleeve, shim, and temporary bolt. Confirm body-side and chassis-side faces sit flat.",
+          "status": "open",
+          "blocks_order_lines": "BM-HW-001; BM-HW-003; BM-SHIM-001; BM-SHIM-002",
+          "record_result_in": "data/manual/body_mount_station_closure_sheet.csv; photos",
+          "why_it_matters": "This is the final check before cutting sleeves or choosing final bolt lengths."
+        }
+      ],
+      "body_mount_station_closure": [
+        {
+          "station_id": "MAIN-FL",
+          "vehicle_position": "front_left_main_body_mount",
+          "working_position_type": "main_tub_station",
+          "candidate_toyota_station": "TBD_from_layout",
+          "expected_rubber_family": "BM-LG_or_BM-SM",
+          "expected_rubber_qty_at_position": "2_rubber_pieces_per_stack",
+          "old_parts_present": "TBD",
+          "shim_or_spacer_thickness_mm": "TBD",
+          "sleeve_id_mm": "TBD",
+          "sleeve_od_mm": "TBD",
+          "sleeve_length_mm": "TBD",
+          "bolt_pitch": "TBD",
+          "bolt_under_head_length_mm": "TBD",
+          "captive_nut_depth_mm": "TBD",
+          "final_bolt_length_mm": "TBD",
+          "release_status": "open_layout_required",
+          "action_required": "BMA-001 BMA-004 BMA-006 BMA-007 BMA-008 BMA-011",
+          "notes": "Label physical parts before mapping to Toyota NO.1-NO.5."
+        },
+        {
+          "station_id": "MAIN-FR",
+          "vehicle_position": "front_right_main_body_mount",
+          "working_position_type": "main_tub_station",
+          "candidate_toyota_station": "TBD_from_layout",
+          "expected_rubber_family": "BM-LG_or_BM-SM",
+          "expected_rubber_qty_at_position": "2_rubber_pieces_per_stack",
+          "old_parts_present": "TBD",
+          "shim_or_spacer_thickness_mm": "TBD",
+          "sleeve_id_mm": "TBD",
+          "sleeve_od_mm": "TBD",
+          "sleeve_length_mm": "TBD",
+          "bolt_pitch": "TBD",
+          "bolt_under_head_length_mm": "TBD",
+          "captive_nut_depth_mm": "TBD",
+          "final_bolt_length_mm": "TBD",
+          "release_status": "open_layout_required",
+          "action_required": "BMA-001 BMA-004 BMA-006 BMA-007 BMA-008 BMA-011",
+          "notes": "Keep left/right stacks separate."
+        },
+        {
+          "station_id": "MAIN-ML",
+          "vehicle_position": "middle_left_main_body_mount",
+          "working_position_type": "main_tub_station",
+          "candidate_toyota_station": "TBD_from_layout",
+          "expected_rubber_family": "BM-SM_expected",
+          "expected_rubber_qty_at_position": "2_rubber_pieces_per_stack",
+          "old_parts_present": "TBD",
+          "shim_or_spacer_thickness_mm": "TBD",
+          "sleeve_id_mm": "TBD",
+          "sleeve_od_mm": "TBD",
+          "sleeve_length_mm": "TBD",
+          "bolt_pitch": "TBD",
+          "bolt_under_head_length_mm": "TBD",
+          "captive_nut_depth_mm": "TBD",
+          "final_bolt_length_mm": "TBD",
+          "release_status": "open_layout_required",
+          "action_required": "BMA-001 BMA-003 BMA-005 BMA-006 BMA-007 BMA-008 BMA-011",
+          "notes": "Small-stack split vs one-piece decision likely applies here."
+        },
+        {
+          "station_id": "MAIN-MR",
+          "vehicle_position": "middle_right_main_body_mount",
+          "working_position_type": "main_tub_station",
+          "candidate_toyota_station": "TBD_from_layout",
+          "expected_rubber_family": "BM-SM_expected",
+          "expected_rubber_qty_at_position": "2_rubber_pieces_per_stack",
+          "old_parts_present": "TBD",
+          "shim_or_spacer_thickness_mm": "TBD",
+          "sleeve_id_mm": "TBD",
+          "sleeve_od_mm": "TBD",
+          "sleeve_length_mm": "TBD",
+          "bolt_pitch": "TBD",
+          "bolt_under_head_length_mm": "TBD",
+          "captive_nut_depth_mm": "TBD",
+          "final_bolt_length_mm": "TBD",
+          "release_status": "open_layout_required",
+          "action_required": "BMA-001 BMA-003 BMA-005 BMA-006 BMA-007 BMA-008 BMA-011",
+          "notes": "Small-stack split vs one-piece decision likely applies here."
+        },
+        {
+          "station_id": "MAIN-RL",
+          "vehicle_position": "rear_left_main_body_mount",
+          "working_position_type": "main_tub_station",
+          "candidate_toyota_station": "TBD_from_layout",
+          "expected_rubber_family": "BM-SM_expected",
+          "expected_rubber_qty_at_position": "2_rubber_pieces_per_stack",
+          "old_parts_present": "TBD",
+          "shim_or_spacer_thickness_mm": "TBD",
+          "sleeve_id_mm": "TBD",
+          "sleeve_od_mm": "TBD",
+          "sleeve_length_mm": "TBD",
+          "bolt_pitch": "TBD",
+          "bolt_under_head_length_mm": "TBD",
+          "captive_nut_depth_mm": "TBD",
+          "final_bolt_length_mm": "TBD",
+          "release_status": "open_layout_required",
+          "action_required": "BMA-001 BMA-003 BMA-005 BMA-006 BMA-007 BMA-008 BMA-011",
+          "notes": "Confirm whether rear/cowl OE shim rows apply."
+        },
+        {
+          "station_id": "MAIN-RR",
+          "vehicle_position": "rear_right_main_body_mount",
+          "working_position_type": "main_tub_station",
+          "candidate_toyota_station": "TBD_from_layout",
+          "expected_rubber_family": "BM-SM_expected",
+          "expected_rubber_qty_at_position": "2_rubber_pieces_per_stack",
+          "old_parts_present": "TBD",
+          "shim_or_spacer_thickness_mm": "TBD",
+          "sleeve_id_mm": "TBD",
+          "sleeve_od_mm": "TBD",
+          "sleeve_length_mm": "TBD",
+          "bolt_pitch": "TBD",
+          "bolt_under_head_length_mm": "TBD",
+          "captive_nut_depth_mm": "TBD",
+          "final_bolt_length_mm": "TBD",
+          "release_status": "open_layout_required",
+          "action_required": "BMA-001 BMA-003 BMA-005 BMA-006 BMA-007 BMA-008 BMA-011",
+          "notes": "Confirm whether rear/cowl OE shim rows apply."
+        },
+        {
+          "station_id": "FRONT-SUPPORT-L",
+          "vehicle_position": "left_front_support_or_nose_extension",
+          "working_position_type": "front_support_station",
+          "candidate_toyota_station": "not_main_tub_station",
+          "expected_rubber_family": "FS-OVAL_plus_FS-STRIP-L",
+          "expected_rubber_qty_at_position": "1_oval_pad_plus_1_strip",
+          "old_parts_present": "TBD",
+          "shim_or_spacer_thickness_mm": "TBD",
+          "sleeve_id_mm": "TBD",
+          "sleeve_od_mm": "TBD",
+          "sleeve_length_mm": "TBD",
+          "bolt_pitch": "TBD",
+          "bolt_under_head_length_mm": "TBD",
+          "captive_nut_depth_mm": "TBD",
+          "final_bolt_length_mm": "TBD",
+          "release_status": "open_trace_required",
+          "action_required": "BMA-001 BMA-009 BMA-010 BMA-011",
+          "notes": "Do not substitute circular body mount rubber here."
+        },
+        {
+          "station_id": "FRONT-SUPPORT-R",
+          "vehicle_position": "right_front_support_or_nose_extension",
+          "working_position_type": "front_support_station",
+          "candidate_toyota_station": "not_main_tub_station",
+          "expected_rubber_family": "FS-OVAL_plus_FS-STRIP-R",
+          "expected_rubber_qty_at_position": "1_oval_pad_plus_1_strip",
+          "old_parts_present": "TBD",
+          "shim_or_spacer_thickness_mm": "TBD",
+          "sleeve_id_mm": "TBD",
+          "sleeve_od_mm": "TBD",
+          "sleeve_length_mm": "TBD",
+          "bolt_pitch": "TBD",
+          "bolt_under_head_length_mm": "TBD",
+          "captive_nut_depth_mm": "TBD",
+          "final_bolt_length_mm": "TBD",
+          "release_status": "open_trace_required",
+          "action_required": "BMA-001 BMA-009 BMA-010 BMA-011",
+          "notes": "Do not assume strip symmetry until traced."
+        },
+        {
+          "station_id": "OE-EXTRA-01",
+          "vehicle_position": "additional_body_mount_position_if_found",
+          "working_position_type": "possible_oe_station",
+          "candidate_toyota_station": "TBD_from_layout",
+          "expected_rubber_family": "TBD",
+          "expected_rubber_qty_at_position": "TBD",
+          "old_parts_present": "TBD",
+          "shim_or_spacer_thickness_mm": "TBD",
+          "sleeve_id_mm": "TBD",
+          "sleeve_od_mm": "TBD",
+          "sleeve_length_mm": "TBD",
+          "bolt_pitch": "TBD",
+          "bolt_under_head_length_mm": "TBD",
+          "captive_nut_depth_mm": "TBD",
+          "final_bolt_length_mm": "TBD",
+          "release_status": "conditional_only",
+          "action_required": "BMA-001 BMA-002",
+          "notes": "Use only if layout proves the vehicle has more than the six current working main stations."
+        },
+        {
+          "station_id": "OE-EXTRA-02",
+          "vehicle_position": "additional_body_mount_position_if_found",
+          "working_position_type": "possible_oe_station",
+          "candidate_toyota_station": "TBD_from_layout",
+          "expected_rubber_family": "TBD",
+          "expected_rubber_qty_at_position": "TBD",
+          "old_parts_present": "TBD",
+          "shim_or_spacer_thickness_mm": "TBD",
+          "sleeve_id_mm": "TBD",
+          "sleeve_od_mm": "TBD",
+          "sleeve_length_mm": "TBD",
+          "bolt_pitch": "TBD",
+          "bolt_under_head_length_mm": "TBD",
+          "captive_nut_depth_mm": "TBD",
+          "final_bolt_length_mm": "TBD",
+          "release_status": "conditional_only",
+          "action_required": "BMA-001 BMA-002",
+          "notes": "Use only if layout proves the vehicle has more than the six current working main stations."
+        },
+        {
+          "station_id": "OE-EXTRA-03",
+          "vehicle_position": "additional_body_mount_position_if_found",
+          "working_position_type": "possible_oe_station",
+          "candidate_toyota_station": "TBD_from_layout",
+          "expected_rubber_family": "TBD",
+          "expected_rubber_qty_at_position": "TBD",
+          "old_parts_present": "TBD",
+          "shim_or_spacer_thickness_mm": "TBD",
+          "sleeve_id_mm": "TBD",
+          "sleeve_od_mm": "TBD",
+          "sleeve_length_mm": "TBD",
+          "bolt_pitch": "TBD",
+          "bolt_under_head_length_mm": "TBD",
+          "captive_nut_depth_mm": "TBD",
+          "final_bolt_length_mm": "TBD",
+          "release_status": "conditional_only",
+          "action_required": "BMA-001 BMA-002",
+          "notes": "Use only if layout proves the vehicle has more than the six current working main stations."
+        },
+        {
+          "station_id": "OE-EXTRA-04",
+          "vehicle_position": "additional_body_mount_position_if_found",
+          "working_position_type": "possible_oe_station",
+          "candidate_toyota_station": "TBD_from_layout",
+          "expected_rubber_family": "TBD",
+          "expected_rubber_qty_at_position": "TBD",
+          "old_parts_present": "TBD",
+          "shim_or_spacer_thickness_mm": "TBD",
+          "sleeve_id_mm": "TBD",
+          "sleeve_od_mm": "TBD",
+          "sleeve_length_mm": "TBD",
+          "bolt_pitch": "TBD",
+          "bolt_under_head_length_mm": "TBD",
+          "captive_nut_depth_mm": "TBD",
+          "final_bolt_length_mm": "TBD",
+          "release_status": "conditional_only",
+          "action_required": "BMA-001 BMA-002",
+          "notes": "Use only if layout proves the vehicle has more than the six current working main stations."
         }
       ],
       "linked_packages": [],
@@ -18055,8 +18875,8 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
-          "status": "in_progress",
-          "detail": "3 part rows still require price confirmation/order placement."
+          "status": "completed",
+          "detail": "0 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
@@ -18079,8 +18899,8 @@ window.J40_DASHBOARD_DATA = {
           "entry_id": "part_body_mount_hardware_kit",
           "workstream": "chassis_rubbers",
           "item": "Body mount hardware kit bolts sleeves washers",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
+          "status": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "amount": "",
@@ -18090,8 +18910,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_body_mount_hardware_kit",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-          "notes": "New graded hardware required for reliable tub refit",
+          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+          "notes": "Spec ready: sleeves 8 blanks; cups 14; M10 trial bolts 16; nuts washers and repair pack defined. Complete BMA-006/BMA-007 before final sleeve cutting and bolt length selection.",
           "image": {
             "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
             "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -18104,20 +18924,18 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "20260502_004201_gp_zfUSmKJg",
             "matched_tokens": [
               "body",
-              "mount",
-              "user",
-              "2026"
+              "mount"
             ],
             "match_basis": "inventory_match",
-            "match_score": 48
+            "match_score": 40
           }
         },
         {
           "entry_id": "part_body_mount_shim_pack",
           "workstream": "chassis_rubbers",
           "item": "Body mount shim and spacer pack",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
+          "status": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "amount": "",
@@ -18127,8 +18945,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_body_mount_shim_pack",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-          "notes": "Shim set needed for mount alignment during trial fit",
+          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+          "notes": "Spec ready: thin shim pack 1/2/3/5 mm x12 each plus thick control pack 5/10/15 mm x4 each. Complete BMA-008 station measurement before final use.",
           "image": {
             "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
             "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -18142,20 +18960,18 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "body",
               "mount",
-              "shim",
-              "user",
-              "2026"
+              "shim"
             ],
             "match_basis": "inventory_match",
-            "match_score": 68
+            "match_score": 56
           }
         },
         {
           "entry_id": "part_body_mount_rubber_kit",
           "workstream": "chassis_rubbers",
           "item": "Body-to-chassis mount rubber kit",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
+          "status": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "amount": "",
@@ -18165,8 +18981,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_body_mount_rubber_kit",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-          "notes": "Replace all tub mounts before final body refit torque",
+          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+          "notes": "Spec ready with quantities in body_mount_order_release_specs.csv; complete BMA-001/BMA-002 route decision before committing purchase.",
           "image": {
             "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
             "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -18180,13 +18996,10 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "body",
               "mount",
-              "rubber",
-              "final",
-              "user",
-              "2026"
+              "rubber"
             ],
             "match_basis": "inventory_match",
-            "match_score": 68
+            "match_score": 60
           }
         }
       ],
@@ -18306,9 +19119,9 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Body mount hardware kit bolts sleeves washers (purchase_ready; delivery not_ordered; amount missing)",
-                "Body mount shim and spacer pack (purchase_ready; delivery not_ordered; amount missing)",
-                "Body-to-chassis mount rubber kit (purchase_ready; delivery not_ordered; amount missing)"
+                "Body mount hardware kit bolts sleeves washers (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Body mount shim and spacer pack (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Body-to-chassis mount rubber kit (spec_ready_release_hold; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -18319,7 +19132,13 @@ window.J40_DASHBOARD_DATA = {
               "process_steps": [
                 "Build a position-by-position table for rubbers, sleeves, cup washers, bolts, and shims.",
                 "Use docs/rubber-recreation-fabrication-spec-20260502.md as the fabrication handoff and close its hold dimensions.",
+                "Use data/manual/rubber_ordering_specs.csv as the cross-category rubber ordering matrix so body mounts, hoses, suspension bushes, weatherstrip, and HVAC rubber stay in the correct buy gates.",
+                "Use data/manual/body_mount_order_release_specs.csv for exact body-mount order lines, quantities, OE/reproduction candidates, local fabrication specs, shim packs, sleeves, and bolt packs.",
+                "Complete the open items in data/manual/body_mount_release_actions.csv before releasing any held order line.",
+                "Record station-by-station measurements and release status in data/manual/body_mount_station_closure_sheet.csv.",
                 "Use data/manual/rubber_recreation_toyota_oe_cross_reference.csv to reconcile Toyota NO.1-NO.5 station rows, OE part numbers, bolt families, and published shim/spacer thicknesses.",
+                "Use data/manual/rubber_recreation_aftermarket_dimension_crosscheck.csv as an external thickness sanity check, especially for tall, medium, seat, and short bushing construction.",
+                "Fill data/manual/rubber_recreation_measurement_closure.csv with caliper release values before final fabrication.",
                 "Compare old samples against chassis/body hole condition.",
                 "Specify rubber hardness/source and sleeve material before purchase.",
                 "Define shim pack thickness range and where adjustment is allowed.",
@@ -18333,12 +19152,17 @@ window.J40_DASHBOARD_DATA = {
               ],
               "supplies": [
                 "Spec sheet",
+                "Rubber ordering matrix",
+                "Body mount order release sheet",
+                "Body mount action sheet",
                 "OE cross-reference",
+                "Aftermarket thickness cross-check",
+                "Measurement closure sheet",
                 "Sample rubbers",
                 "Shim material",
                 "Sleeve stock if fabricating"
               ],
-              "hold_point": "Final order or fabrication starts only after every mount position has a complete stack definition and the Toyota OE station rows have been reconciled against the physical vehicle.",
+              "hold_point": "Final order or fabrication starts only after every mount position has a complete stack definition, the Toyota OE station rows have been reconciled against the physical vehicle, and the small-mount one-piece vs split-stack construction is resolved.",
               "image_tokens": [
                 "body_mount",
                 "rubber",
@@ -18424,9 +19248,9 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Body mount hardware kit bolts sleeves washers (purchase_ready; delivery not_ordered; amount missing)",
-                "Body mount shim and spacer pack (purchase_ready; delivery not_ordered; amount missing)",
-                "Body-to-chassis mount rubber kit (purchase_ready; delivery not_ordered; amount missing)"
+                "Body mount hardware kit bolts sleeves washers (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Body mount shim and spacer pack (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Body-to-chassis mount rubber kit (spec_ready_release_hold; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -18435,9 +19259,12 @@ window.J40_DASHBOARD_DATA = {
               "remaining": "avoid duplicate buys",
               "instruction": "Choose purchased kit, local fabrication, or mixed route before spending more.",
               "process_steps": [
+                "Check data/manual/rubber_ordering_specs.csv before any rubber purchase to confirm whether the item is buy-now, inspect-first, or deferred.",
+                "For body mounts, choose exactly one route in data/manual/body_mount_order_release_specs.csv: OE/reproduction purchase or local fabrication.",
                 "Check whether an available kit covers all required positions and sleeves.",
                 "Price any missing sleeves, washers, and shims separately.",
                 "Reject used/salvage rubber for structural body mounts.",
+                "Do not buy separate spring eye or shackle bushes here; those are gated by the Ironman kit receipt check.",
                 "Record vendor, delivery status, and expected fit risk.",
                 "Keep old samples available for supplier comparison until receipt check closes."
               ],
@@ -18538,9 +19365,9 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Body mount hardware kit bolts sleeves washers (purchase_ready; delivery not_ordered; amount missing)",
-                "Body mount shim and spacer pack (purchase_ready; delivery not_ordered; amount missing)",
-                "Body-to-chassis mount rubber kit (purchase_ready; delivery not_ordered; amount missing)"
+                "Body mount hardware kit bolts sleeves washers (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Body-to-chassis mount rubber kit (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Body mount shim and spacer pack (spec_ready_release_hold; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -18657,9 +19484,9 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Body mount hardware kit bolts sleeves washers (purchase_ready; delivery not_ordered; amount missing)",
-                "Body-to-chassis mount rubber kit (purchase_ready; delivery not_ordered; amount missing)",
-                "Body mount shim and spacer pack (purchase_ready; delivery not_ordered; amount missing)"
+                "Body mount hardware kit bolts sleeves washers (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Body mount shim and spacer pack (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Body-to-chassis mount rubber kit (spec_ready_release_hold; delivery not_ordered; amount missing)"
               ]
             }
           ]
@@ -19382,6 +20209,9 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "chassis_rubber_requirements": [],
+      "body_mount_order_release_specs": [],
+      "body_mount_release_actions": [],
+      "body_mount_station_closure": [],
       "linked_packages": [
         {
           "work_package_id": "WP03",
@@ -23010,6 +23840,9 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "chassis_rubber_requirements": [],
+      "body_mount_order_release_specs": [],
+      "body_mount_release_actions": [],
+      "body_mount_station_closure": [],
       "linked_packages": [
         {
           "work_package_id": "WP03",
@@ -25651,6 +26484,9 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "chassis_rubber_requirements": [],
+      "body_mount_order_release_specs": [],
+      "body_mount_release_actions": [],
+      "body_mount_station_closure": [],
       "linked_packages": [
         {
           "work_package_id": "WP04",
@@ -28328,6 +29164,9 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "chassis_rubber_requirements": [],
+      "body_mount_order_release_specs": [],
+      "body_mount_release_actions": [],
+      "body_mount_station_closure": [],
       "linked_packages": [],
       "component_jobs": [
         {
@@ -29233,6 +30072,9 @@ window.J40_DASHBOARD_DATA = {
       ],
       "pipe_requirements": [],
       "chassis_rubber_requirements": [],
+      "body_mount_order_release_specs": [],
+      "body_mount_release_actions": [],
+      "body_mount_station_closure": [],
       "linked_packages": [],
       "component_jobs": [
         {
@@ -29374,18 +30216,18 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Order shoes, return springs, hold-down springs, adjusters, and retainers after drum diameter, shoe width, and backing-plate family are confirmed.",
           "image": {
             "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-            "caption": "Rear brake shoes and spring hardware set \u00b7 exact order evidence",
+            "caption": "Rear brake shoes and spring hardware set \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "exact_order_evidence",
+            "specific_component": "local_inventory_evidence",
             "stage": "procurement_reconciliation",
             "media_id": "20260501_194322_gp_XuRtjN4w",
             "matched_tokens": [
               "photo_20260501_194322_gp_xurtjn4w"
             ],
-            "match_basis": "exact_order_evidence",
+            "match_basis": "local_inventory_evidence",
             "match_score": 980
           }
         },
@@ -29408,18 +30250,18 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Buy as a left/right pair after drum opening confirms cylinder bore, port thread, mounting pattern, and pushrod style.",
           "image": {
             "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-            "caption": "Rear wheel cylinders pair with bleed screws \u00b7 exact order evidence",
+            "caption": "Rear wheel cylinders pair with bleed screws \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "exact_order_evidence",
+            "specific_component": "local_inventory_evidence",
             "stage": "procurement_reconciliation",
             "media_id": "20260501_194322_gp_XuRtjN4w",
             "matched_tokens": [
               "photo_20260501_194322_gp_xurtjn4w"
             ],
-            "match_basis": "exact_order_evidence",
+            "match_basis": "local_inventory_evidence",
             "match_score": 980
           }
         },
@@ -29504,18 +30346,18 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Recreate left/right rear axle lines in brake-rated 3/16 in / 4.75 mm tube after flare standard, fitting threads, bend templates, and clip positions are confirmed.",
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear axle hard brake lines and fittings \u00b7 exact order evidence",
+            "caption": "Rear axle hard brake lines and fittings \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "exact_order_evidence",
+            "specific_component": "local_inventory_evidence",
             "stage": "procurement_reconciliation",
             "media_id": "20260501_194305_gp_EllBGvXA",
             "matched_tokens": [
               "photo_20260501_194305_gp_ellbgvxa"
             ],
-            "match_basis": "exact_order_evidence",
+            "match_basis": "local_inventory_evidence",
             "match_score": 980
           }
         },
@@ -29538,18 +30380,18 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Count and replace corroded or missing brake-line clips, cable retainers, rubber sleeves, grommets, and rubber-lined P-clips before final rear axle routing.",
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear brake line clips and parking-brake cable retainers \u00b7 exact order evidence",
+            "caption": "Rear brake line clips and parking-brake cable retainers \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "exact_order_evidence",
+            "specific_component": "local_inventory_evidence",
             "stage": "procurement_reconciliation",
             "media_id": "20260501_194305_gp_EllBGvXA",
             "matched_tokens": [
               "photo_20260501_194305_gp_ellbgvxa"
             ],
-            "match_basis": "exact_order_evidence",
+            "match_basis": "local_inventory_evidence",
             "match_score": 980
           }
         },
@@ -29572,18 +30414,18 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Replace rear center hose once chassis-side and axle-side fitting threads/end styles and full-droop slack are confirmed.",
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear center frame-to-axle flexible brake hose \u00b7 exact order evidence",
+            "caption": "Rear center frame-to-axle flexible brake hose \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "exact_order_evidence",
+            "specific_component": "local_inventory_evidence",
             "stage": "procurement_reconciliation",
             "media_id": "20260501_194305_gp_EllBGvXA",
             "matched_tokens": [
               "photo_20260501_194305_gp_ellbgvxa"
             ],
-            "match_basis": "exact_order_evidence",
+            "match_basis": "local_inventory_evidence",
             "match_score": 980
           }
         },
@@ -29606,18 +30448,18 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Replace the rear handbrake/parking-brake cable system as a safety baseline; order only after cable end types, lengths, equalizer hardware, and backing-plate levers are confirmed from the removed samples.",
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear parking brake cable set with clips and equalizer hardware \u00b7 exact order evidence",
+            "caption": "Rear parking brake cable set with clips and equalizer hardware \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "exact_order_evidence",
+            "specific_component": "local_inventory_evidence",
             "stage": "procurement_reconciliation",
             "media_id": "20260501_194305_gp_EllBGvXA",
             "matched_tokens": [
               "photo_20260501_194305_gp_ellbgvxa"
             ],
-            "match_basis": "exact_order_evidence",
+            "match_basis": "local_inventory_evidence",
             "match_score": 980
           }
         }
@@ -30214,6 +31056,9 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "chassis_rubber_requirements": [],
+      "body_mount_order_release_specs": [],
+      "body_mount_release_actions": [],
+      "body_mount_station_closure": [],
       "linked_packages": [],
       "component_jobs": [
         {
@@ -30854,6 +31699,9 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "chassis_rubber_requirements": [],
+      "body_mount_order_release_specs": [],
+      "body_mount_release_actions": [],
+      "body_mount_station_closure": [],
       "linked_packages": [],
       "component_jobs": [
         {
@@ -31134,6 +31982,7 @@ window.J40_DASHBOARD_DATA = {
                 "Lay out the shipment and photograph every box, label, part number, and hardware bag.",
                 "Check main kit contents against supplier list: springs, rear dampers, bushes, shackles/pins, U-bolts, and hardware.",
                 "Confirm separate front damper shipment includes 24635FE x2.",
+                "Close the RUB-007 ordering gate by confirming whether spring eye and shackle bushes are complete in the Ironman kit.",
                 "Reject duplicate alternate spring/shock buys unless the Ironman kit is confirmed incomplete.",
                 "Record missing/damaged pieces before starting installation."
               ],
@@ -31507,6 +32356,9 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "chassis_rubber_requirements": [],
+      "body_mount_order_release_specs": [],
+      "body_mount_release_actions": [],
+      "body_mount_station_closure": [],
       "linked_packages": [
         {
           "work_package_id": "WP05",
@@ -32765,6 +33617,9 @@ window.J40_DASHBOARD_DATA = {
       "requirements": [],
       "pipe_requirements": [],
       "chassis_rubber_requirements": [],
+      "body_mount_order_release_specs": [],
+      "body_mount_release_actions": [],
+      "body_mount_station_closure": [],
       "linked_packages": [
         {
           "work_package_id": "WP06",
@@ -33454,9 +34309,14 @@ window.J40_DASHBOARD_DATA = {
   "parts": {
     "steps": [
       {
+        "label": "Close spec-ready release holds",
+        "status": "in_progress",
+        "detail": "3 spec-ready rows still need release actions before purchase."
+      },
+      {
         "label": "Confirm price and place purchase-ready orders",
         "status": "in_progress",
-        "detail": "20 rows still in purchase_ready."
+        "detail": "17 rows still in purchase_ready."
       },
       {
         "label": "Place selected quote orders",
@@ -33496,7 +34356,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "purchase_ready",
-        "count": 20
+        "count": 17
       },
       {
         "stage": "researching",
@@ -33505,12 +34365,20 @@ window.J40_DASHBOARD_DATA = {
       {
         "stage": "spec_needed_before_order",
         "count": 4
+      },
+      {
+        "stage": "spec_ready_release_hold",
+        "count": 3
       }
     ],
     "counts_by_next_action": [
       {
+        "next_action": "complete_body_mount_release_actions_then_order",
+        "count": 3
+      },
+      {
         "next_action": "confirm_price_then_order",
-        "count": 20
+        "count": 17
       },
       {
         "next_action": "track_delivery",
@@ -33664,14 +34532,14 @@ window.J40_DASHBOARD_DATA = {
         "entry_id": "part_body_mount_hardware_kit",
         "workstream": "chassis_rubbers",
         "item": "Body mount hardware kit bolts sleeves washers",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "next_action": "confirm_price_then_order",
+        "status": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
+        "next_action": "complete_body_mount_release_actions_then_order",
         "amount": "",
         "amount_status": "missing",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-        "notes": "New graded hardware required for reliable tub refit",
+        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+        "notes": "Spec ready: sleeves 8 blanks; cups 14; M10 trial bolts 16; nuts washers and repair pack defined. Complete BMA-006/BMA-007 before final sleeve cutting and bolt length selection.",
         "image": {
           "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
           "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -33684,12 +34552,10 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "20260502_004201_gp_zfUSmKJg",
           "matched_tokens": [
             "body",
-            "mount",
-            "user",
-            "2026"
+            "mount"
           ],
           "match_basis": "inventory_match",
-          "match_score": 48
+          "match_score": 40
         }
       },
       {
@@ -33697,14 +34563,14 @@ window.J40_DASHBOARD_DATA = {
         "entry_id": "part_body_mount_shim_pack",
         "workstream": "chassis_rubbers",
         "item": "Body mount shim and spacer pack",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "next_action": "confirm_price_then_order",
+        "status": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
+        "next_action": "complete_body_mount_release_actions_then_order",
         "amount": "",
         "amount_status": "missing",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-        "notes": "Shim set needed for mount alignment during trial fit",
+        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+        "notes": "Spec ready: thin shim pack 1/2/3/5 mm x12 each plus thick control pack 5/10/15 mm x4 each. Complete BMA-008 station measurement before final use.",
         "image": {
           "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
           "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -33718,12 +34584,10 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "body",
             "mount",
-            "shim",
-            "user",
-            "2026"
+            "shim"
           ],
           "match_basis": "inventory_match",
-          "match_score": 68
+          "match_score": 56
         }
       },
       {
@@ -33731,14 +34595,14 @@ window.J40_DASHBOARD_DATA = {
         "entry_id": "part_body_mount_rubber_kit",
         "workstream": "chassis_rubbers",
         "item": "Body-to-chassis mount rubber kit",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "next_action": "confirm_price_then_order",
+        "status": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
+        "next_action": "complete_body_mount_release_actions_then_order",
         "amount": "",
         "amount_status": "missing",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-        "notes": "Replace all tub mounts before final body refit torque",
+        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+        "notes": "Spec ready with quantities in body_mount_order_release_specs.csv; complete BMA-001/BMA-002 route decision before committing purchase.",
         "image": {
           "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
           "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -33752,13 +34616,10 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "body",
             "mount",
-            "rubber",
-            "final",
-            "user",
-            "2026"
+            "rubber"
           ],
           "match_basis": "inventory_match",
-          "match_score": 68
+          "match_score": 60
         }
       },
       {
@@ -34284,18 +35145,18 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Order shoes, return springs, hold-down springs, adjusters, and retainers after drum diameter, shoe width, and backing-plate family are confirmed.",
         "image": {
           "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-          "caption": "Rear brake shoes and spring hardware set \u00b7 exact order evidence",
+          "caption": "Rear brake shoes and spring hardware set \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "exact_order_evidence",
+          "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
           "media_id": "20260501_194322_gp_XuRtjN4w",
           "matched_tokens": [
             "photo_20260501_194322_gp_xurtjn4w"
           ],
-          "match_basis": "exact_order_evidence",
+          "match_basis": "local_inventory_evidence",
           "match_score": 980
         }
       },
@@ -34314,18 +35175,18 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Buy as a left/right pair after drum opening confirms cylinder bore, port thread, mounting pattern, and pushrod style.",
         "image": {
           "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-          "caption": "Rear wheel cylinders pair with bleed screws \u00b7 exact order evidence",
+          "caption": "Rear wheel cylinders pair with bleed screws \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "exact_order_evidence",
+          "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
           "media_id": "20260501_194322_gp_XuRtjN4w",
           "matched_tokens": [
             "photo_20260501_194322_gp_xurtjn4w"
           ],
-          "match_basis": "exact_order_evidence",
+          "match_basis": "local_inventory_evidence",
           "match_score": 980
         }
       },
@@ -34371,18 +35232,18 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Recreate left/right rear axle lines in brake-rated 3/16 in / 4.75 mm tube after flare standard, fitting threads, bend templates, and clip positions are confirmed.",
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear axle hard brake lines and fittings \u00b7 exact order evidence",
+          "caption": "Rear axle hard brake lines and fittings \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "exact_order_evidence",
+          "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
           "media_id": "20260501_194305_gp_EllBGvXA",
           "matched_tokens": [
             "photo_20260501_194305_gp_ellbgvxa"
           ],
-          "match_basis": "exact_order_evidence",
+          "match_basis": "local_inventory_evidence",
           "match_score": 980
         }
       },
@@ -34401,18 +35262,18 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Count and replace corroded or missing brake-line clips, cable retainers, rubber sleeves, grommets, and rubber-lined P-clips before final rear axle routing.",
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear brake line clips and parking-brake cable retainers \u00b7 exact order evidence",
+          "caption": "Rear brake line clips and parking-brake cable retainers \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "exact_order_evidence",
+          "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
           "media_id": "20260501_194305_gp_EllBGvXA",
           "matched_tokens": [
             "photo_20260501_194305_gp_ellbgvxa"
           ],
-          "match_basis": "exact_order_evidence",
+          "match_basis": "local_inventory_evidence",
           "match_score": 980
         }
       },
@@ -34431,18 +35292,18 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Replace rear center hose once chassis-side and axle-side fitting threads/end styles and full-droop slack are confirmed.",
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear center frame-to-axle flexible brake hose \u00b7 exact order evidence",
+          "caption": "Rear center frame-to-axle flexible brake hose \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "exact_order_evidence",
+          "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
           "media_id": "20260501_194305_gp_EllBGvXA",
           "matched_tokens": [
             "photo_20260501_194305_gp_ellbgvxa"
           ],
-          "match_basis": "exact_order_evidence",
+          "match_basis": "local_inventory_evidence",
           "match_score": 980
         }
       },
@@ -34461,18 +35322,18 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Replace the rear handbrake/parking-brake cable system as a safety baseline; order only after cable end types, lengths, equalizer hardware, and backing-plate levers are confirmed from the removed samples.",
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear parking brake cable set with clips and equalizer hardware \u00b7 exact order evidence",
+          "caption": "Rear parking brake cable set with clips and equalizer hardware \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "exact_order_evidence",
+          "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
           "media_id": "20260501_194305_gp_EllBGvXA",
           "matched_tokens": [
             "photo_20260501_194305_gp_ellbgvxa"
           ],
-          "match_basis": "exact_order_evidence",
+          "match_basis": "local_inventory_evidence",
           "match_score": 980
         }
       },
@@ -34480,15 +35341,15 @@ window.J40_DASHBOARD_DATA = {
         "entry_id": "part_body_mount_hardware_kit",
         "workstream": "chassis_rubbers",
         "item": "Body mount hardware kit bolts sleeves washers",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
+        "status": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "amount": "",
         "amount_status": "missing",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-        "notes": "New graded hardware required for reliable tub refit",
+        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+        "notes": "Spec ready: sleeves 8 blanks; cups 14; M10 trial bolts 16; nuts washers and repair pack defined. Complete BMA-006/BMA-007 before final sleeve cutting and bolt length selection.",
         "image": {
           "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
           "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -34501,27 +35362,25 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "20260502_004201_gp_zfUSmKJg",
           "matched_tokens": [
             "body",
-            "mount",
-            "user",
-            "2026"
+            "mount"
           ],
           "match_basis": "inventory_match",
-          "match_score": 48
+          "match_score": 40
         }
       },
       {
         "entry_id": "part_body_mount_shim_pack",
         "workstream": "chassis_rubbers",
         "item": "Body mount shim and spacer pack",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
+        "status": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "amount": "",
         "amount_status": "missing",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-        "notes": "Shim set needed for mount alignment during trial fit",
+        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+        "notes": "Spec ready: thin shim pack 1/2/3/5 mm x12 each plus thick control pack 5/10/15 mm x4 each. Complete BMA-008 station measurement before final use.",
         "image": {
           "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
           "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -34535,27 +35394,25 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "body",
             "mount",
-            "shim",
-            "user",
-            "2026"
+            "shim"
           ],
           "match_basis": "inventory_match",
-          "match_score": 68
+          "match_score": 56
         }
       },
       {
         "entry_id": "part_body_mount_rubber_kit",
         "workstream": "chassis_rubbers",
         "item": "Body-to-chassis mount rubber kit",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
+        "status": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "amount": "",
         "amount_status": "missing",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-        "notes": "Replace all tub mounts before final body refit torque",
+        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+        "notes": "Spec ready with quantities in body_mount_order_release_specs.csv; complete BMA-001/BMA-002 route decision before committing purchase.",
         "image": {
           "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
           "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -34569,13 +35426,10 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "body",
             "mount",
-            "rubber",
-            "final",
-            "user",
-            "2026"
+            "rubber"
           ],
           "match_basis": "inventory_match",
-          "match_score": 68
+          "match_score": 60
         }
       },
       {
@@ -44113,9 +44967,9 @@ window.J40_DASHBOARD_DATA = {
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "https://www.daraz.pk/products/6-ways-12-24v-automotive-circuit-blade-fuse-box-for-car-truck-vehicle-i486699111.html",
-              "oem-style",
               "486699111",
+              "oem-style",
+              "https://www.daraz.pk/products/6-ways-12-24v-automotive-circuit-blade-fuse-box-for-car-truck-vehicle-i486699111.html",
               "internal",
               "compact",
               "covered",
@@ -45871,18 +46725,18 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Recreate left/right rear axle lines in brake-rated 3/16 in / 4.75 mm tube after flare standard, fitting threads, bend templates, and clip positions are confirmed.",
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear axle hard brake lines and fittings \u00b7 exact order evidence",
+            "caption": "Rear axle hard brake lines and fittings \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "exact_order_evidence",
+            "specific_component": "local_inventory_evidence",
             "stage": "procurement_reconciliation",
             "media_id": "20260501_194305_gp_EllBGvXA",
             "matched_tokens": [
               "photo_20260501_194305_gp_ellbgvxa"
             ],
-            "match_basis": "exact_order_evidence",
+            "match_basis": "local_inventory_evidence",
             "match_score": 980
           }
         },
@@ -45905,18 +46759,18 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Count and replace corroded or missing brake-line clips, cable retainers, rubber sleeves, grommets, and rubber-lined P-clips before final rear axle routing.",
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear brake line clips and parking-brake cable retainers \u00b7 exact order evidence",
+            "caption": "Rear brake line clips and parking-brake cable retainers \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "exact_order_evidence",
+            "specific_component": "local_inventory_evidence",
             "stage": "procurement_reconciliation",
             "media_id": "20260501_194305_gp_EllBGvXA",
             "matched_tokens": [
               "photo_20260501_194305_gp_ellbgvxa"
             ],
-            "match_basis": "exact_order_evidence",
+            "match_basis": "local_inventory_evidence",
             "match_score": 980
           }
         },
@@ -45939,18 +46793,18 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Order shoes, return springs, hold-down springs, adjusters, and retainers after drum diameter, shoe width, and backing-plate family are confirmed.",
           "image": {
             "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-            "caption": "Rear brake shoes and spring hardware set \u00b7 exact order evidence",
+            "caption": "Rear brake shoes and spring hardware set \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "exact_order_evidence",
+            "specific_component": "local_inventory_evidence",
             "stage": "procurement_reconciliation",
             "media_id": "20260501_194322_gp_XuRtjN4w",
             "matched_tokens": [
               "photo_20260501_194322_gp_xurtjn4w"
             ],
-            "match_basis": "exact_order_evidence",
+            "match_basis": "local_inventory_evidence",
             "match_score": 980
           }
         },
@@ -45973,18 +46827,18 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Replace rear center hose once chassis-side and axle-side fitting threads/end styles and full-droop slack are confirmed.",
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear center frame-to-axle flexible brake hose \u00b7 exact order evidence",
+            "caption": "Rear center frame-to-axle flexible brake hose \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "exact_order_evidence",
+            "specific_component": "local_inventory_evidence",
             "stage": "procurement_reconciliation",
             "media_id": "20260501_194305_gp_EllBGvXA",
             "matched_tokens": [
               "photo_20260501_194305_gp_ellbgvxa"
             ],
-            "match_basis": "exact_order_evidence",
+            "match_basis": "local_inventory_evidence",
             "match_score": 980
           }
         },
@@ -46007,18 +46861,18 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Replace the rear handbrake/parking-brake cable system as a safety baseline; order only after cable end types, lengths, equalizer hardware, and backing-plate levers are confirmed from the removed samples.",
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear parking brake cable set with clips and equalizer hardware \u00b7 exact order evidence",
+            "caption": "Rear parking brake cable set with clips and equalizer hardware \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "exact_order_evidence",
+            "specific_component": "local_inventory_evidence",
             "stage": "procurement_reconciliation",
             "media_id": "20260501_194305_gp_EllBGvXA",
             "matched_tokens": [
               "photo_20260501_194305_gp_ellbgvxa"
             ],
-            "match_basis": "exact_order_evidence",
+            "match_basis": "local_inventory_evidence",
             "match_score": 980
           }
         },
@@ -46041,18 +46895,18 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Buy as a left/right pair after drum opening confirms cylinder bore, port thread, mounting pattern, and pushrod style.",
           "image": {
             "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-            "caption": "Rear wheel cylinders pair with bleed screws \u00b7 exact order evidence",
+            "caption": "Rear wheel cylinders pair with bleed screws \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "exact_order_evidence",
+            "specific_component": "local_inventory_evidence",
             "stage": "procurement_reconciliation",
             "media_id": "20260501_194322_gp_XuRtjN4w",
             "matched_tokens": [
               "photo_20260501_194322_gp_xurtjn4w"
             ],
-            "match_basis": "exact_order_evidence",
+            "match_basis": "local_inventory_evidence",
             "match_score": 980
           }
         },
@@ -46067,12 +46921,12 @@ window.J40_DASHBOARD_DATA = {
           "currency": "PKR",
           "workstream": "chassis_rubbers",
           "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
+          "status_detail": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-          "notes": "New graded hardware required for reliable tub refit",
+          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+          "notes": "Spec ready: sleeves 8 blanks; cups 14; M10 trial bolts 16; nuts washers and repair pack defined. Complete BMA-006/BMA-007 before final sleeve cutting and bolt length selection.",
           "image": {
             "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
             "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -46085,12 +46939,10 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "20260502_004201_gp_zfUSmKJg",
             "matched_tokens": [
               "body",
-              "mount",
-              "user",
-              "2026"
+              "mount"
             ],
             "match_basis": "inventory_match",
-            "match_score": 48
+            "match_score": 40
           }
         },
         {
@@ -46104,12 +46956,12 @@ window.J40_DASHBOARD_DATA = {
           "currency": "PKR",
           "workstream": "chassis_rubbers",
           "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
+          "status_detail": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-          "notes": "Shim set needed for mount alignment during trial fit",
+          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+          "notes": "Spec ready: thin shim pack 1/2/3/5 mm x12 each plus thick control pack 5/10/15 mm x4 each. Complete BMA-008 station measurement before final use.",
           "image": {
             "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
             "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -46123,12 +46975,10 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "body",
               "mount",
-              "shim",
-              "user",
-              "2026"
+              "shim"
             ],
             "match_basis": "inventory_match",
-            "match_score": 68
+            "match_score": 56
           }
         },
         {
@@ -46142,12 +46992,12 @@ window.J40_DASHBOARD_DATA = {
           "currency": "PKR",
           "workstream": "chassis_rubbers",
           "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
+          "status_detail": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-          "notes": "Replace all tub mounts before final body refit torque",
+          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+          "notes": "Spec ready with quantities in body_mount_order_release_specs.csv; complete BMA-001/BMA-002 route decision before committing purchase.",
           "image": {
             "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
             "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -46161,13 +47011,10 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "body",
               "mount",
-              "rubber",
-              "final",
-              "user",
-              "2026"
+              "rubber"
             ],
             "match_basis": "inventory_match",
-            "match_score": 68
+            "match_score": 60
           }
         },
         {
@@ -53132,9 +53979,9 @@ window.J40_DASHBOARD_DATA = {
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "https://www.daraz.pk/products/6-ways-12-24v-automotive-circuit-blade-fuse-box-for-car-truck-vehicle-i486699111.html",
-            "oem-style",
             "486699111",
+            "oem-style",
+            "https://www.daraz.pk/products/6-ways-12-24v-automotive-circuit-blade-fuse-box-for-car-truck-vehicle-i486699111.html",
             "internal",
             "compact",
             "covered",
@@ -53226,18 +54073,18 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Count and replace corroded or missing brake-line clips, cable retainers, rubber sleeves, grommets, and rubber-lined P-clips before final rear axle routing.",
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear brake line clips and parking-brake cable retainers \u00b7 exact order evidence",
+          "caption": "Rear brake line clips and parking-brake cable retainers \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "exact_order_evidence",
+          "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
           "media_id": "20260501_194305_gp_EllBGvXA",
           "matched_tokens": [
             "photo_20260501_194305_gp_ellbgvxa"
           ],
-          "match_basis": "exact_order_evidence",
+          "match_basis": "local_inventory_evidence",
           "match_score": 980
         }
       },
@@ -53635,12 +54482,12 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "workstream": "chassis_rubbers",
         "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
+        "status_detail": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-        "notes": "New graded hardware required for reliable tub refit",
+        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+        "notes": "Spec ready: sleeves 8 blanks; cups 14; M10 trial bolts 16; nuts washers and repair pack defined. Complete BMA-006/BMA-007 before final sleeve cutting and bolt length selection.",
         "image": {
           "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
           "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -53653,12 +54500,10 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "20260502_004201_gp_zfUSmKJg",
           "matched_tokens": [
             "body",
-            "mount",
-            "user",
-            "2026"
+            "mount"
           ],
           "match_basis": "inventory_match",
-          "match_score": 48
+          "match_score": 40
         }
       },
       {
@@ -53672,12 +54517,12 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "workstream": "chassis_rubbers",
         "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
+        "status_detail": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-        "notes": "Shim set needed for mount alignment during trial fit",
+        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+        "notes": "Spec ready: thin shim pack 1/2/3/5 mm x12 each plus thick control pack 5/10/15 mm x4 each. Complete BMA-008 station measurement before final use.",
         "image": {
           "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
           "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -53691,12 +54536,10 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "body",
             "mount",
-            "shim",
-            "user",
-            "2026"
+            "shim"
           ],
           "match_basis": "inventory_match",
-          "match_score": 68
+          "match_score": 56
         }
       },
       {
@@ -53710,12 +54553,12 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "workstream": "chassis_rubbers",
         "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
+        "status_detail": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan",
-        "notes": "Replace all tub mounts before final body refit torque",
+        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+        "notes": "Spec ready with quantities in body_mount_order_release_specs.csv; complete BMA-001/BMA-002 route decision before committing purchase.",
         "image": {
           "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
           "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -53729,13 +54572,10 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "body",
             "mount",
-            "rubber",
-            "final",
-            "user",
-            "2026"
+            "rubber"
           ],
           "match_basis": "inventory_match",
-          "match_score": 68
+          "match_score": 60
         }
       },
       {
@@ -54838,18 +55678,18 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Recreate left/right rear axle lines in brake-rated 3/16 in / 4.75 mm tube after flare standard, fitting threads, bend templates, and clip positions are confirmed.",
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear axle hard brake lines and fittings \u00b7 exact order evidence",
+          "caption": "Rear axle hard brake lines and fittings \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "exact_order_evidence",
+          "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
           "media_id": "20260501_194305_gp_EllBGvXA",
           "matched_tokens": [
             "photo_20260501_194305_gp_ellbgvxa"
           ],
-          "match_basis": "exact_order_evidence",
+          "match_basis": "local_inventory_evidence",
           "match_score": 980
         }
       },
@@ -54872,18 +55712,18 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Order shoes, return springs, hold-down springs, adjusters, and retainers after drum diameter, shoe width, and backing-plate family are confirmed.",
         "image": {
           "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-          "caption": "Rear brake shoes and spring hardware set \u00b7 exact order evidence",
+          "caption": "Rear brake shoes and spring hardware set \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "exact_order_evidence",
+          "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
           "media_id": "20260501_194322_gp_XuRtjN4w",
           "matched_tokens": [
             "photo_20260501_194322_gp_xurtjn4w"
           ],
-          "match_basis": "exact_order_evidence",
+          "match_basis": "local_inventory_evidence",
           "match_score": 980
         }
       },
@@ -54906,18 +55746,18 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Replace rear center hose once chassis-side and axle-side fitting threads/end styles and full-droop slack are confirmed.",
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear center frame-to-axle flexible brake hose \u00b7 exact order evidence",
+          "caption": "Rear center frame-to-axle flexible brake hose \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "exact_order_evidence",
+          "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
           "media_id": "20260501_194305_gp_EllBGvXA",
           "matched_tokens": [
             "photo_20260501_194305_gp_ellbgvxa"
           ],
-          "match_basis": "exact_order_evidence",
+          "match_basis": "local_inventory_evidence",
           "match_score": 980
         }
       },
@@ -54940,18 +55780,18 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Replace the rear handbrake/parking-brake cable system as a safety baseline; order only after cable end types, lengths, equalizer hardware, and backing-plate levers are confirmed from the removed samples.",
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear parking brake cable set with clips and equalizer hardware \u00b7 exact order evidence",
+          "caption": "Rear parking brake cable set with clips and equalizer hardware \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "exact_order_evidence",
+          "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
           "media_id": "20260501_194305_gp_EllBGvXA",
           "matched_tokens": [
             "photo_20260501_194305_gp_ellbgvxa"
           ],
-          "match_basis": "exact_order_evidence",
+          "match_basis": "local_inventory_evidence",
           "match_score": 980
         }
       },
@@ -54974,18 +55814,18 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Buy as a left/right pair after drum opening confirms cylinder bore, port thread, mounting pattern, and pushrod style.",
         "image": {
           "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-          "caption": "Rear wheel cylinders pair with bleed screws \u00b7 exact order evidence",
+          "caption": "Rear wheel cylinders pair with bleed screws \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "exact_order_evidence",
+          "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
           "media_id": "20260501_194322_gp_XuRtjN4w",
           "matched_tokens": [
             "photo_20260501_194322_gp_xurtjn4w"
           ],
-          "match_basis": "exact_order_evidence",
+          "match_basis": "local_inventory_evidence",
           "match_score": 980
         }
       },

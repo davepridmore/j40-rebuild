@@ -20,6 +20,10 @@ COMPONENT_JOBS_PATH = MANUAL_DIR / "component_jobs.csv"
 PHOTO_INVENTORY_PATH = MANUAL_DIR / "photo_inventory.csv"
 REPLACEMENT_PIPE_SPECS_PATH = MANUAL_DIR / "replacement_pipe_ordering_specs.csv"
 CHASSIS_RUBBER_REQUIREMENTS_PATH = MANUAL_DIR / "chassis_rubber_requirements.csv"
+RUBBER_ORDERING_SPECS_PATH = MANUAL_DIR / "rubber_ordering_specs.csv"
+BODY_MOUNT_ORDER_RELEASE_SPECS_PATH = MANUAL_DIR / "body_mount_order_release_specs.csv"
+BODY_MOUNT_RELEASE_ACTIONS_PATH = MANUAL_DIR / "body_mount_release_actions.csv"
+BODY_MOUNT_STATION_CLOSURE_PATH = MANUAL_DIR / "body_mount_station_closure_sheet.csv"
 BRAKE_SYSTEM_REQUIREMENTS_PATH = MANUAL_DIR / "brake_system_requirements.csv"
 EXPENSES_PATH = MANUAL_DIR / "expenses.csv"
 BUY_NOW_PATH = MANUAL_DIR / "parts_buy_now_this_week.csv"
@@ -732,15 +736,21 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "process_steps": [
                     "Build a position-by-position table for rubbers, sleeves, cup washers, bolts, and shims.",
                     "Use docs/rubber-recreation-fabrication-spec-20260502.md as the fabrication handoff and close its hold dimensions.",
+                    "Use data/manual/rubber_ordering_specs.csv as the cross-category rubber ordering matrix so body mounts, hoses, suspension bushes, weatherstrip, and HVAC rubber stay in the correct buy gates.",
+                    "Use data/manual/body_mount_order_release_specs.csv for exact body-mount order lines, quantities, OE/reproduction candidates, local fabrication specs, shim packs, sleeves, and bolt packs.",
+                    "Complete the open items in data/manual/body_mount_release_actions.csv before releasing any held order line.",
+                    "Record station-by-station measurements and release status in data/manual/body_mount_station_closure_sheet.csv.",
                     "Use data/manual/rubber_recreation_toyota_oe_cross_reference.csv to reconcile Toyota NO.1-NO.5 station rows, OE part numbers, bolt families, and published shim/spacer thicknesses.",
+                    "Use data/manual/rubber_recreation_aftermarket_dimension_crosscheck.csv as an external thickness sanity check, especially for tall, medium, seat, and short bushing construction.",
+                    "Fill data/manual/rubber_recreation_measurement_closure.csv with caliper release values before final fabrication.",
                     "Compare old samples against chassis/body hole condition.",
                     "Specify rubber hardness/source and sleeve material before purchase.",
                     "Define shim pack thickness range and where adjustment is allowed.",
                     "Record any captive nut or mount repair needed before dry fit.",
                 ],
                 "tools": ["Calipers", "Straight edge", "Mount map", "Thread gauge"],
-                "supplies": ["Spec sheet", "OE cross-reference", "Sample rubbers", "Shim material", "Sleeve stock if fabricating"],
-                "hold_point": "Final order or fabrication starts only after every mount position has a complete stack definition and the Toyota OE station rows have been reconciled against the physical vehicle.",
+                "supplies": ["Spec sheet", "Rubber ordering matrix", "Body mount order release sheet", "Body mount action sheet", "OE cross-reference", "Aftermarket thickness cross-check", "Measurement closure sheet", "Sample rubbers", "Shim material", "Sleeve stock if fabricating"],
+                "hold_point": "Final order or fabrication starts only after every mount position has a complete stack definition, the Toyota OE station rows have been reconciled against the physical vehicle, and the small-mount one-piece vs split-stack construction is resolved.",
                 "image_tokens": ["body_mount", "rubber", "shim", "sleeve", "mount"],
             },
             {
@@ -749,9 +759,12 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "remaining": "avoid duplicate buys",
                 "instruction": "Choose purchased kit, local fabrication, or mixed route before spending more.",
                 "process_steps": [
+                    "Check data/manual/rubber_ordering_specs.csv before any rubber purchase to confirm whether the item is buy-now, inspect-first, or deferred.",
+                    "For body mounts, choose exactly one route in data/manual/body_mount_order_release_specs.csv: OE/reproduction purchase or local fabrication.",
                     "Check whether an available kit covers all required positions and sleeves.",
                     "Price any missing sleeves, washers, and shims separately.",
                     "Reject used/salvage rubber for structural body mounts.",
+                    "Do not buy separate spring eye or shackle bushes here; those are gated by the Ironman kit receipt check.",
                     "Record vendor, delivery status, and expected fit risk.",
                     "Keep old samples available for supplier comparison until receipt check closes.",
                 ],
@@ -1133,6 +1146,7 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                     "Lay out the shipment and photograph every box, label, part number, and hardware bag.",
                     "Check main kit contents against supplier list: springs, rear dampers, bushes, shackles/pins, U-bolts, and hardware.",
                     "Confirm separate front damper shipment includes 24635FE x2.",
+                    "Close the RUB-007 ordering gate by confirming whether spring eye and shackle bushes are complete in the Ironman kit.",
                     "Reject duplicate alternate spring/shock buys unless the Ironman kit is confirmed incomplete.",
                     "Record missing/damaged pieces before starting installation.",
                 ],
@@ -1936,6 +1950,73 @@ def build_replacement_pipe_requirements(
     photo_rows: list[dict[str, str]],
 ) -> list[dict[str, Any]]:
     return build_workstream_requirements(requirement_rows, photo_rows)
+
+
+def body_mount_order_release_payload(rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    payload: list[dict[str, str]] = []
+    for row in rows:
+        release_state = clean(row.get("order_release_state"))
+        payload.append(
+            {
+                "order_line_id": clean(row.get("order_line_id")),
+                "route": clean(row.get("route")),
+                "item": clean(row.get("item")),
+                "part_number_or_code": clean(row.get("part_number_or_code")),
+                "qty_required": clean(row.get("qty_required")),
+                "qty_to_order": clean(row.get("qty_to_order")),
+                "spec_status": "spec_ready",
+                "order_release_state": release_state or "spec_ready",
+                "exact_order_spec": clean(row.get("exact_order_spec")),
+                "material_spec": clean(row.get("material_spec")),
+                "source_basis": clean(row.get("source_basis")),
+                "user_action_required": clean(row.get("user_action_required")),
+                "do_not_order_if": clean(row.get("do_not_order_if")),
+                "notes": clean(row.get("notes")),
+            }
+        )
+    return payload
+
+
+def body_mount_release_action_payload(rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    return [
+        {
+            "action_id": clean(row.get("action_id")),
+            "priority": clean(row.get("priority")),
+            "owner": clean(row.get("owner")),
+            "action": clean(row.get("action")),
+            "status": clean(row.get("status")),
+            "blocks_order_lines": clean(row.get("blocks_order_lines")),
+            "record_result_in": clean(row.get("record_result_in")),
+            "why_it_matters": clean(row.get("why_it_matters")),
+        }
+        for row in rows
+    ]
+
+
+def body_mount_station_closure_payload(rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    return [
+        {
+            "station_id": clean(row.get("station_id")),
+            "vehicle_position": clean(row.get("vehicle_position")),
+            "working_position_type": clean(row.get("working_position_type")),
+            "candidate_toyota_station": clean(row.get("candidate_toyota_station")),
+            "expected_rubber_family": clean(row.get("expected_rubber_family")),
+            "expected_rubber_qty_at_position": clean(row.get("expected_rubber_qty_at_position")),
+            "old_parts_present": clean(row.get("old_parts_present")),
+            "shim_or_spacer_thickness_mm": clean(row.get("shim_or_spacer_thickness_mm")),
+            "sleeve_id_mm": clean(row.get("sleeve_id_mm")),
+            "sleeve_od_mm": clean(row.get("sleeve_od_mm")),
+            "sleeve_length_mm": clean(row.get("sleeve_length_mm")),
+            "bolt_pitch": clean(row.get("bolt_pitch")),
+            "bolt_under_head_length_mm": clean(row.get("bolt_under_head_length_mm")),
+            "captive_nut_depth_mm": clean(row.get("captive_nut_depth_mm")),
+            "final_bolt_length_mm": clean(row.get("final_bolt_length_mm")),
+            "release_status": clean(row.get("release_status")),
+            "action_required": clean(row.get("action_required")),
+            "notes": clean(row.get("notes")),
+        }
+        for row in rows
+    ]
 
 
 def build_procurement_evidence_images(photo_rows: list[dict[str, str]], max_images: int = 64) -> list[dict[str, Any]]:
@@ -4386,12 +4467,14 @@ def exact_order_image_payload(
     item: str,
     vendor: str,
     matched_token: str,
+    match_basis: str,
 ) -> dict[str, Any]:
     try:
         relative_path = path.relative_to(ROOT).as_posix()
     except ValueError:
         relative_path = path.as_posix()
-    caption = f"{item} · exact order evidence" if item else "Exact order evidence"
+    evidence_label = "exact order evidence" if match_basis == "exact_order_evidence" else "local inventory photo"
+    caption = f"{item} · {evidence_label}" if item else humanize_token(evidence_label)
     if vendor:
         caption = f"{caption} · {vendor}"
     return {
@@ -4401,13 +4484,40 @@ def exact_order_image_payload(
         "captured_time": "",
         "media_type": "photo",
         "component_group": "procurement_inventory",
-        "specific_component": "exact_order_evidence",
+        "specific_component": match_basis,
         "stage": "procurement_reconciliation",
         "media_id": path.stem,
         "matched_tokens": [matched_token],
-        "match_basis": "exact_order_evidence",
+        "match_basis": match_basis,
         "match_score": 980,
     }
+
+
+def direct_inventory_photo_match_basis(
+    path: Path,
+    *,
+    matched_token: str,
+    evidence_ref: str,
+    notes: str,
+    vendor: str,
+) -> str:
+    del notes
+    blob = norm(" ".join([path.name, matched_token, evidence_ref, vendor]))
+    if any(
+        token in blob
+        for token in (
+            "order",
+            "receipt",
+            "gmail_order",
+            "aliexpress",
+            "daraz",
+            "autohub",
+            "autoxpert",
+            "auto_xpert",
+        )
+    ):
+        return "exact_order_evidence"
+    return "local_inventory_evidence"
 
 
 def choose_exact_order_image(
@@ -4422,7 +4532,20 @@ def choose_exact_order_image(
     for token in local_order_image_reference_tokens([evidence_ref, notes, source_ref]):
         path = image_index.get(token)
         if path is not None:
-            return exact_order_image_payload(path, item=item, vendor=vendor, matched_token=token)
+            match_basis = direct_inventory_photo_match_basis(
+                path,
+                matched_token=token,
+                evidence_ref=evidence_ref,
+                notes=notes,
+                vendor=vendor,
+            )
+            return exact_order_image_payload(
+                path,
+                item=item,
+                vendor=vendor,
+                matched_token=token,
+                match_basis=match_basis,
+            )
     return None
 
 
@@ -4952,6 +5075,9 @@ def build_dashboard_data() -> dict[str, Any]:
     photo_rows = load_csv(PHOTO_INVENTORY_PATH)
     replacement_pipe_requirement_rows = load_csv_optional(REPLACEMENT_PIPE_SPECS_PATH)
     chassis_rubber_requirement_rows = load_csv_optional(CHASSIS_RUBBER_REQUIREMENTS_PATH)
+    body_mount_order_release_rows = load_csv_optional(BODY_MOUNT_ORDER_RELEASE_SPECS_PATH)
+    body_mount_release_action_rows = load_csv_optional(BODY_MOUNT_RELEASE_ACTIONS_PATH)
+    body_mount_station_closure_rows = load_csv_optional(BODY_MOUNT_STATION_CLOSURE_PATH)
     brake_system_requirement_rows = load_csv_optional(BRAKE_SYSTEM_REQUIREMENTS_PATH)
     paint_refinish_queue_rows = load_csv_optional(PAINT_REFINISH_MEDIA_QUEUE_PATH)
     paint_refinish_whatsapp_rows = load_csv_optional(PAINT_REFINISH_WHATSAPP_MEDIA_QUEUE_PATH)
@@ -5088,6 +5214,21 @@ def build_dashboard_data() -> dict[str, Any]:
             requirements = build_workstream_requirements(brake_system_requirement_rows, photo_rows)
         pipe_requirements = requirements if ws_id == "replacement_pipes" else []
         chassis_rubber_requirements = requirements if ws_id == "chassis_rubbers" else []
+        body_mount_order_release_specs = (
+            body_mount_order_release_payload(body_mount_order_release_rows)
+            if ws_id == "chassis_rubbers"
+            else []
+        )
+        body_mount_release_actions = (
+            body_mount_release_action_payload(body_mount_release_action_rows)
+            if ws_id == "chassis_rubbers"
+            else []
+        )
+        body_mount_station_closure = (
+            body_mount_station_closure_payload(body_mount_station_closure_rows)
+            if ws_id == "chassis_rubbers"
+            else []
+        )
         if ws_id == "chassis_fixing":
             operation_panels.append(build_chassis_prime_readiness_panel(photo_rows))
 
@@ -5112,6 +5253,9 @@ def build_dashboard_data() -> dict[str, Any]:
                 "requirements": requirements,
                 "pipe_requirements": pipe_requirements,
                 "chassis_rubber_requirements": chassis_rubber_requirements,
+                "body_mount_order_release_specs": body_mount_order_release_specs,
+                "body_mount_release_actions": body_mount_release_actions,
+                "body_mount_station_closure": body_mount_station_closure,
                 "linked_packages": [
                     {
                         "work_package_id": clean(package.get("work_package_id")),
@@ -5261,6 +5405,11 @@ def build_dashboard_data() -> dict[str, Any]:
     counts_by_next_action = Counter(clean(row.get("next_action")) or "unspecified" for row in buy_now_rows)
 
     parts_steps = [
+        {
+            "label": "Close spec-ready release holds",
+            "status": "in_progress" if counts_by_stage.get("spec_ready_release_hold", 0) > 0 else "completed",
+            "detail": f"{counts_by_stage.get('spec_ready_release_hold', 0)} spec-ready rows still need release actions before purchase.",
+        },
         {
             "label": "Confirm price and place purchase-ready orders",
             "status": "in_progress" if counts_by_stage.get("purchase_ready", 0) > 0 else "completed",
@@ -5458,6 +5607,10 @@ def build_dashboard_data() -> dict[str, Any]:
             "photo_inventory": "data/manual/photo_inventory.csv",
             "brake_system_requirements": "data/manual/brake_system_requirements.csv",
             "chassis_rubber_requirements": "data/manual/chassis_rubber_requirements.csv",
+            "rubber_ordering_specs": "data/manual/rubber_ordering_specs.csv",
+            "body_mount_order_release_specs": "data/manual/body_mount_order_release_specs.csv",
+            "body_mount_release_actions": "data/manual/body_mount_release_actions.csv",
+            "body_mount_station_closure_sheet": "data/manual/body_mount_station_closure_sheet.csv",
             "replacement_pipe_ordering_specs": "data/manual/replacement_pipe_ordering_specs.csv",
             "expenses": "data/manual/expenses.csv",
             "parts_buy_now_this_week": "data/manual/parts_buy_now_this_week.csv",

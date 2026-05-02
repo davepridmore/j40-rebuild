@@ -182,8 +182,11 @@
 
   function toneForStatus(status) {
     const key = String(status || "").toLowerCase();
-    if (["completed", "closed", "received", "installed", "done", "previously", "properly_specced", "acquired"].includes(key)) {
+    if (["completed", "closed", "received", "installed", "done", "previously", "properly_specced", "spec_ready", "acquired"].includes(key)) {
       return "good";
+    }
+    if (key.startsWith("spec_ready")) {
+      return "info";
     }
     if ([
       "not_acquired",
@@ -215,6 +218,11 @@
   function statusChip(status) {
     const tone = toneForStatus(status);
     return `<span class="chip ${tone}">${escapeHtml(formatToken(status || "unknown"))}</span>`;
+  }
+
+  function isSpecReadyStatus(status) {
+    const key = cleanString(status).toLowerCase();
+    return key === "properly_specced" || key === "spec_ready" || key.startsWith("spec_ready");
   }
 
   function chip(text) {
@@ -754,7 +762,7 @@
     if (!rows.length) {
       return "";
     }
-    const properlySpecced = rows.filter((row) => cleanString(row.spec_status) === "properly_specced").length;
+    const properlySpecced = rows.filter((row) => isSpecReadyStatus(row.spec_status)).length;
     const acquired = rows.filter((row) => cleanString(row.acquisition_status) === "acquired").length;
     const installed = rows.filter((row) => cleanString(row.installation_status) === "installed").length;
     const title = options.title || "Requirements";
@@ -825,16 +833,201 @@
     `;
   }
 
+  function renderBodyMountOrderReleaseTable(rows) {
+    const source = Array.isArray(rows) ? rows : [];
+    if (!source.length) {
+      return "";
+    }
+    const specReady = source.filter((row) => isSpecReadyStatus(row.spec_status || row.order_release_state)).length;
+    return `
+      <article class="card pipe-requirements-card">
+        <div class="detail-header">
+          <h3>Body Mount Order Release</h3>
+          <div class="chip-row">
+            ${chip(`${specReady}/${source.length} Spec Ready`)}
+            ${chip(`${source.length} Order Lines`)}
+          </div>
+        </div>
+        <p class="small-muted">Exact order lines, quantities, route controls, and release holds for body-mount rubbers, stops/seats, sleeves, cups, shims, bolts, engine mounts, and gearbox mount.</p>
+        <div class="table-wrap requirement-table-wrap">
+          <table class="requirement-table body-mount-order-table">
+            <thead>
+              <tr>
+                <th>Line</th>
+                <th>Qty</th>
+                <th>Status</th>
+                <th>Exact Spec</th>
+                <th>Release Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${source
+                .map((row) => `
+                  <tr>
+                    <td>
+                      <strong>${escapeHtml(row.order_line_id || "")} · ${escapeHtml(row.item || "")}</strong>
+                      <div class="small-muted">${escapeHtml(row.part_number_or_code || "")}</div>
+                      <div class="small-muted">${escapeHtml(formatToken(row.route || ""))}</div>
+                    </td>
+                    <td>
+                      <div>Required: ${escapeHtml(row.qty_required || "-")}</div>
+                      <div class="small-muted">Order: ${escapeHtml(row.qty_to_order || "-")}</div>
+                    </td>
+                    <td>
+                      <div class="status-stack">
+                        ${statusChip(row.spec_status || "spec_ready")}
+                        ${statusChip(row.order_release_state || "spec_ready")}
+                      </div>
+                    </td>
+                    <td>
+                      ${escapeHtml(row.exact_order_spec || "")}
+                      ${row.material_spec ? `<div class="small-muted requirement-material">${escapeHtml(row.material_spec)}</div>` : ""}
+                      ${row.source_basis ? `<div class="small-muted requirement-material">Source: ${escapeHtml(row.source_basis)}</div>` : ""}
+                    </td>
+                    <td>
+                      ${escapeHtml(row.user_action_required || "")}
+                      ${row.do_not_order_if ? `<div class="requirement-action"><strong>Do not order if:</strong> ${escapeHtml(row.do_not_order_if)}</div>` : ""}
+                      ${row.notes ? `<div class="small-muted requirement-material">${escapeHtml(row.notes)}</div>` : ""}
+                    </td>
+                  </tr>
+                `)
+                .join("")}
+            </tbody>
+          </table>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderBodyMountReleaseActions(rows) {
+    const source = Array.isArray(rows) ? rows : [];
+    if (!source.length) {
+      return "";
+    }
+    const open = source.filter((row) => cleanString(row.status).toLowerCase() !== "closed").length;
+    return `
+      <article class="card pipe-requirements-card">
+        <div class="detail-header">
+          <h3>Body Mount Release Actions</h3>
+          <div class="chip-row">
+            ${chip(`${open}/${source.length} Open`)}
+          </div>
+        </div>
+        <p class="small-muted">These are the remaining physical checks before held body-mount order lines move from spec-ready to released.</p>
+        <div class="table-wrap requirement-table-wrap">
+          <table class="requirement-table body-mount-actions-table">
+            <thead>
+              <tr>
+                <th>Action</th>
+                <th>Status</th>
+                <th>Blocks</th>
+                <th>Record In</th>
+                <th>Reason</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${source
+                .map((row) => `
+                  <tr>
+                    <td>
+                      <strong>${escapeHtml(row.action_id || "")}</strong>
+                      <div>${escapeHtml(row.action || "")}</div>
+                      <div class="small-muted">${escapeHtml(formatToken(row.priority || ""))} · ${escapeHtml(formatToken(row.owner || ""))}</div>
+                    </td>
+                    <td>${statusChip(row.status || "open")}</td>
+                    <td>${escapeHtml(row.blocks_order_lines || "")}</td>
+                    <td>${escapeHtml(row.record_result_in || "")}</td>
+                    <td>${escapeHtml(row.why_it_matters || "")}</td>
+                  </tr>
+                `)
+                .join("")}
+            </tbody>
+          </table>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderBodyMountStationClosure(rows) {
+    const source = Array.isArray(rows) ? rows : [];
+    if (!source.length) {
+      return "";
+    }
+    const released = source.filter((row) => cleanString(row.release_status).toLowerCase() === "released").length;
+    return `
+      <article class="card pipe-requirements-card">
+        <div class="detail-header">
+          <h3>Body Mount Station Closure</h3>
+          <div class="chip-row">
+            ${chip(`${released}/${source.length} Released`)}
+            ${chip(`${source.length} Stations`)}
+          </div>
+        </div>
+        <p class="small-muted">Station-by-station measurement sheet for final rubber, sleeve, shim, and bolt release.</p>
+        <div class="table-wrap requirement-table-wrap">
+          <table class="requirement-table body-mount-station-table">
+            <thead>
+              <tr>
+                <th>Station</th>
+                <th>Expected Parts</th>
+                <th>Measurements</th>
+                <th>Bolt</th>
+                <th>Status / Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${source
+                .map((row) => `
+                  <tr>
+                    <td>
+                      <strong>${escapeHtml(row.station_id || "")}</strong>
+                      <div class="small-muted">${escapeHtml(formatToken(row.vehicle_position || ""))}</div>
+                      <div class="small-muted">${escapeHtml(row.candidate_toyota_station || "")}</div>
+                    </td>
+                    <td>
+                      <div>${escapeHtml(row.expected_rubber_family || "")}</div>
+                      <div class="small-muted">${escapeHtml(row.expected_rubber_qty_at_position || "")}</div>
+                      <div class="small-muted">Old parts: ${escapeHtml(row.old_parts_present || "")}</div>
+                    </td>
+                    <td>
+                      <div>Shim: ${escapeHtml(row.shim_or_spacer_thickness_mm || "-")}</div>
+                      <div class="small-muted">Sleeve ID/OD/L: ${escapeHtml(row.sleeve_id_mm || "-")} / ${escapeHtml(row.sleeve_od_mm || "-")} / ${escapeHtml(row.sleeve_length_mm || "-")}</div>
+                    </td>
+                    <td>
+                      <div>Pitch: ${escapeHtml(row.bolt_pitch || "-")}</div>
+                      <div class="small-muted">Old/final length: ${escapeHtml(row.bolt_under_head_length_mm || "-")} / ${escapeHtml(row.final_bolt_length_mm || "-")}</div>
+                      <div class="small-muted">Nut depth: ${escapeHtml(row.captive_nut_depth_mm || "-")}</div>
+                    </td>
+                    <td>
+                      ${statusChip(row.release_status || "open")}
+                      <div class="small-muted">${escapeHtml(row.action_required || "")}</div>
+                      ${row.notes ? `<div class="small-muted requirement-material">${escapeHtml(row.notes)}</div>` : ""}
+                    </td>
+                  </tr>
+                `)
+                .join("")}
+            </tbody>
+          </table>
+        </div>
+      </article>
+    `;
+  }
+
   function renderWorkstreamRequirements(workstream) {
     const active = workstream || {};
     const rows = Array.isArray(active.requirements) && active.requirements.length
       ? active.requirements
       : active.pipe_requirements;
     if (active.id === "chassis_rubbers") {
-      return renderRequirementTable(rows, {
-        title: "Chassis Rubber Requirements",
-        summary: "Exact rubber, sleeve, cup, shim, and hardware requirements with status gates for specification, acquisition, and installation.",
-      });
+      return [
+        renderRequirementTable(rows, {
+          title: "Chassis Rubber Requirements",
+          summary: "Exact rubber, sleeve, cup, shim, and hardware requirements with status gates for specification, acquisition, and installation.",
+        }),
+        renderBodyMountOrderReleaseTable(active.body_mount_order_release_specs),
+        renderBodyMountReleaseActions(active.body_mount_release_actions),
+        renderBodyMountStationClosure(active.body_mount_station_closure),
+      ].join("");
     }
     if (active.id === "replacement_pipes") {
       return renderRequirementTable(rows, {
