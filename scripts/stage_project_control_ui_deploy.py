@@ -17,6 +17,11 @@ DATA_SUFFIX = ";"
 UI_FILES = ("index.html", "app.js", "styles.css")
 STAGED_MEDIA_PATH = "assets/dashboard-media"
 MISSING_MEDIA_FALLBACK = "./assets/image-needed.svg"
+PUBLIC_FABRICATION_DIR = ROOT / "data" / "manual" / "fabrication"
+PUBLIC_FABRICATION_DOCS = (
+    ROOT / "docs" / "fabrication-handoff-index.md",
+    ROOT / "docs" / "rubber-recreation-fabrication-spec-20260502.md",
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -181,6 +186,22 @@ def stage_static_ui(output_dir: Path) -> None:
     (output_dir / "index.html").write_text(redirect, encoding="utf-8")
 
 
+def stage_public_fabrication_assets(output_dir: Path) -> int:
+    copied = 0
+    if PUBLIC_FABRICATION_DIR.exists():
+        target = output_dir / PUBLIC_FABRICATION_DIR.relative_to(ROOT)
+        shutil.copytree(PUBLIC_FABRICATION_DIR, target, dirs_exist_ok=True)
+        copied += sum(1 for path in target.rglob("*") if path.is_file())
+
+    for source in PUBLIC_FABRICATION_DOCS:
+        if not source.exists():
+            continue
+        copy_file(source, output_dir / source.relative_to(ROOT))
+        copied += 1
+
+    return copied
+
+
 def staged_media_name(relative_ui_path: str, source: Path) -> str:
     digest = hashlib.sha1(relative_ui_path.encode("utf-8")).hexdigest()[:16]
     suffix = source.suffix.lower() or ".bin"
@@ -215,10 +236,12 @@ def main() -> None:
 
     data = prune_dashboard_data(load_dashboard_data())
     stage_static_ui(output_dir)
+    copied_fabrication_assets = stage_public_fabrication_assets(output_dir)
     data, copied_assets, missing_assets = stage_referenced_assets(data, output_dir)
     write_dashboard_data(data, output_dir)
 
     print(f"Staged Project Control UI: {output_dir}")
+    print(f"Copied fabrication assets: {copied_fabrication_assets}")
     print(f"Copied referenced media/assets: {copied_assets}")
     if missing_assets:
         print(f"Missing referenced media/assets: {len(missing_assets)}")

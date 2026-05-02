@@ -11,6 +11,8 @@ on:
       - "deliverables/selling_site_images/images/**"
       - "deliverables/selling_site_images/manifest.csv"
       - "docs/project-control-ui/**"
+      - "docs/fabrication-handoff-index.md"
+      - "docs/rubber-recreation-fabrication-spec-20260502.md"
       - "photos/**"
       - "scripts/build_project_control_ui.py"
       - "scripts/stage_project_control_ui_deploy.py"
