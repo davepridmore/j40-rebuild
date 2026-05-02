@@ -24,6 +24,7 @@ env:
   AWS_REGION: ap-southeast-1
   S3_BUCKET: j40-rebuild-dashboard
   STAGE_DIR: .deploy/project-control-ui-site
+  CLOUDFRONT_DISTRIBUTION_ID: ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}
 
 jobs:
   deploy:
@@ -99,7 +100,20 @@ jobs:
             --only-show-errors \
             --cache-control "public,max-age=300"
 
+      - name: Invalidate CloudFront
+        if: env.CLOUDFRONT_DISTRIBUTION_ID != ''
+        run: |
+          set -euo pipefail
+          aws cloudfront create-invalidation \
+            --distribution-id "$CLOUDFRONT_DISTRIBUTION_ID" \
+            --paths "/*" \
+            --query 'Invalidation.[Id,Status]' \
+            --output text
+
       - name: Print website URL
         run: |
           echo "Project Control UI:"
           echo "http://${S3_BUCKET}.s3-website-${AWS_REGION}.amazonaws.com/docs/project-control-ui/"
+          if [ -n "${CLOUDFRONT_DISTRIBUTION_ID:-}" ]; then
+            echo "CloudFront HTTPS distribution: ${CLOUDFRONT_DISTRIBUTION_ID}"
+          fi

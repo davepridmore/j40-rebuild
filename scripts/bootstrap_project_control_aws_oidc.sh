@@ -83,6 +83,17 @@ cat >"$POLICY_DOC" <<JSON
         "s3:PutObject"
       ],
       "Resource": "arn:aws:s3:::${BUCKET_NAME}/*"
+    },
+    {
+      "Sid": "InvalidateDashboardCloudFront",
+      "Effect": "Allow",
+      "Action": [
+        "cloudfront:CreateInvalidation",
+        "cloudfront:GetDistribution",
+        "cloudfront:GetInvalidation",
+        "cloudfront:ListDistributions"
+      ],
+      "Resource": "arn:aws:cloudfront::${ACCOUNT_ID}:distribution/*"
     }
   ]
 }

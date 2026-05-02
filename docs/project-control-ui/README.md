@@ -45,6 +45,12 @@ Required GitHub secret:
 AWS_ROLE_ARN
 ```
 
+Required GitHub variable for CloudFront cache invalidation:
+
+```text
+CLOUDFRONT_DISTRIBUTION_ID
+```
+
 That role should belong to the private AWS account used for this project. The
 private account email is not stored in the workflow. The role needs to allow S3
 bucket creation, bucket website configuration, bucket tagging, bucket policy
@@ -68,4 +74,10 @@ The S3 website URL is:
 
 ```text
 http://j40-rebuild-dashboard.s3-website-ap-southeast-1.amazonaws.com/docs/project-control-ui/
+```
+
+The public HTTPS URL is served through CloudFront:
+
+```text
+https://dbvg4yfpnc4tj.cloudfront.net/docs/project-control-ui/
 ```
