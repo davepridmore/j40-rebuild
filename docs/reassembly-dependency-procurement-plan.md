@@ -1,6 +1,6 @@
 # Reassembly, Dependency, and Procurement Plan
 
-- Generated: 2026-05-02 06:33:21
+- Generated: 2026-05-02 09:05:53
 - Work packages: `data/manual/reassembly_work_packages.csv`
 - Dependency edges: `data/manual/reassembly_dependency_edges.csv`
 - Component disposition: `data/manual/component_disposition_plan.csv`
@@ -23,15 +23,14 @@
 
 ## Procurement Decisions
 
-- `confirm_price_then_buy`: 9
-- `defer_duplicate_overlap`: 7
+- `confirm_price_then_buy`: 6
+- `defer_duplicate_overlap`: 5
 - `defer_optional`: 1
 - `inspect_then_buy`: 2
-- `next_phase_gate`: 3
 - `research_compare_then_select`: 1
 - `review`: 14
-- `track_ordered_delivery`: 4
-- `verify_stock_before_buy`: 3
+- `track_ordered_delivery`: 10
+- `verify_stock_before_buy`: 2
 
 ## Component Reuse/Refurbish Decisions
 
@@ -45,6 +44,6 @@
 ## Immediate Execution Focus
 
 - Close `WP01` + `WP03` in parallel: body rust closure and electrical baseline finalization are both active and should keep moving.
-- Run `WP04` procurement now: 5 mechanical rows still require buy execution.
-- Avoid duplicate buys: 3 rows are flagged as likely already on hand and should be physically stock-checked first.
+- Run `WP04` procurement now: 6 mechanical rows still require buy execution.
+- Avoid duplicate buys: 2 rows are flagged as likely already on hand and should be physically stock-checked first.
 - Keep interior stack gated: bed lining/sound/foam/carpet stay blocked until body sealing gate is formally closed.

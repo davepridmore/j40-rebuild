@@ -8,6 +8,8 @@ Action sheet: [body_mount_release_actions.csv](../data/manual/body_mount_release
 
 Station closure sheet: [body_mount_station_closure_sheet.csv](../data/manual/body_mount_station_closure_sheet.csv)
 
+Manufacturing requirements sheet: [rubber_recreation_manufacturing_requirements.csv](../data/manual/rubber_recreation_manufacturing_requirements.csv)
+
 ## Route Decision
 
 There are two valid routes. Do not buy both.
@@ -58,6 +60,8 @@ These are ready for quote/prototype. Production release still needs the marked p
 | `FS-STRIP-R` | Front support right strip/liner | `1` | mirror `FS-STRIP-L` unless physical carrier proves asymmetry |
 
 Material for all local rubber pieces: black automotive mount-grade `EPDM` or `NR/SBR`, Shore A `60 +/-5`, no tyre rubber, crumb rubber, mixed offcuts, or old salvage rubber.
+
+Local fabrication also requires the first-article, material, process, inspection, rejection, and packaging controls in [rubber_recreation_manufacturing_requirements.csv](../data/manual/rubber_recreation_manufacturing_requirements.csv). The fabricator must provide a material declaration and a one-page inspection report before the batch is accepted.
 
 Main production hold: `BM-SM` must be confirmed as either one `22 mm` piece or a split bushing plus seat stack.
 

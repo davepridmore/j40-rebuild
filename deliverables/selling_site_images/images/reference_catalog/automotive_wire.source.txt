@@ -1,0 +1,3 @@
+query: automotive primary wire rolls red yellow white blue image
+image_url: https://cdn.shopify.com/s/files/1/0059/8332/files/Top_Logo_01_1024x1024.png?v=1624363718
+page_url: https://bluewireautomotive.com/collections/automotive-wire-rolls-6mm

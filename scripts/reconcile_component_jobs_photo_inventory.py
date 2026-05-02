@@ -101,14 +101,23 @@ RULES: dict[str, EvidenceRule] = {
         notes="Fuel tank-out context and tank-area access are documented in filler-side and rear-floor images.",
     ),
     "front_wings": EvidenceRule(
-        direct_specific_components=("wing_removal_and_body_lift_prep",),
-        indirect_specific_components=("front_panel_lighting_mount_area", "hood_and_front_windshield_overview"),
-        notes="Front wing removal state is directly documented in the body-lift prep photo set.",
+        direct_specific_components=(),
+        indirect_specific_components=("wing_removal_and_body_lift_prep", "front_panel_lighting_mount_area", "hood_and_front_windshield_overview"),
+        notes="Front wings are tracked to paint from the April 23 send-day detached-parts batch; wing-removal photos are supporting context only.",
+        direct_media_ids=(
+            "20260423_183408_gp_eCiJmZnA",
+            "20260423_183448_gp_9MQfbmvQ",
+            "20260423_183514_gp_DyztXKcw",
+            "20260423_183521_gp_pjVN2Ujw",
+            "20260423_183540_gp_bhRdLpMg",
+            "20260423_183628_gp_SpWIfUnw",
+        ),
     ),
     "paint_sendout_panels_manifest": EvidenceRule(
         direct_specific_components=("detached_body_panels_and_doors", "detached_doors_and_panels", "rear_hatch_inner_panel"),
-        indirect_specific_components=("wing_removal_and_body_lift_prep", "body_shell_with_doors_removed", "rear_side_opening"),
-        notes="Detached panel/door batches provide direct send-out readiness evidence for painting.",
+        indirect_specific_components=("body_shell_with_doors_removed", "rear_side_opening"),
+        notes="Detached panel/door batches and the April 23 roof image provide direct send-out evidence for painting.",
+        direct_media_ids=("20260423_183648_gp_ltd3AKwg",),
     ),
     "paint_returned_panels_refinished": EvidenceRule(
         direct_specific_components=("refinished_hinges_brackets_and_trim", "refinished_seat_or_mount_bracket", "wiper_arm_or_linkage_hardware"),
@@ -116,9 +125,9 @@ RULES: dict[str, EvidenceRule] = {
         notes="Off-vehicle refinished hardware/panel photos provide direct evidence of returned painted parts.",
     ),
     "paint_workshop_progress_media": EvidenceRule(
-        direct_specific_components=("wing_removal_and_body_lift_prep", "panel_detail_and_markings", "off_vehicle_workstation_reference_video"),
+        direct_specific_components=("panel_detail_and_markings", "off_vehicle_workstation_reference_video"),
         indirect_specific_components=("detached_body_panels_and_doors", "detached_doors_and_panels"),
-        notes="In-progress workshop videos and panel-handling shots track painting/bodywork activity between send-out and return.",
+        notes="In-progress workshop videos and panel-handling shots track painting/bodywork activity between send-out and return; stripdown wing-removal photos are not direct paint evidence.",
     ),
     "chassis_frame_and_crossmembers": EvidenceRule(
         direct_specific_components=(

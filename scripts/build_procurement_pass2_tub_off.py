@@ -54,6 +54,8 @@ def get_wiring_stock_signal() -> tuple[int, int]:
 
 def sourcing_mode(item: str, workstream: str) -> str:
     item_lower = item.lower()
+    if re.search(r"wood|timber|cribbing|chock|support block", item_lower):
+        return "local_hardware_common"
     if re.search(r"hot rod|21-circuit|harness|deutsch|relay box|fuse block", item_lower):
         return "import_or_specialty"
     if re.search(r"filter|belt|hose|spark|glow|heat plug|thermostat|radiator cap|engine mount|clutch|brake flexible", item_lower):
@@ -147,6 +149,14 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
             "Treat as local electrical top-up, not full fresh purchase.",
         )
 
+    if entry_id == "part_suspension_wooden_cribbing_blocks":
+        return (
+            "buy_before_suspension_work",
+            "pre_suspension_setup",
+            "safety_support_buy",
+            "Needed before the Ironman suspension swap so the chassis and axle can be supported safely with rated stands plus cribbing.",
+        )
+
     if workstream in {"mechanical_baseline", "steering_brakes_suspension"} and prior in {"confirm_price_then_buy", "buy_now"}:
         return (
             "bundle_local_toyota_buy_after_inspection",
@@ -194,6 +204,8 @@ def supplier_hint(mode: str, decision: str) -> str:
         return "Use Montgomery Road / local electrical markets for small top-ups after stock count."
     if mode == "local_toyota_common":
         return "Use local Toyota/common parts markets; buy as one batch after inspection."
+    if mode == "local_hardware_common":
+        return "Use local timber or hardware supplier; confirm sound hardwood/timber dimensions before purchase."
     if mode == "local_electrical_common":
         return "Use local electrical markets first; avoid duplicate online orders."
     if mode == "import_or_specialty":
@@ -214,6 +226,8 @@ def basket_id_for_row(decision: str, mode: str, workstream: str) -> str:
         return "basket_condition_based_after_inspection"
     if decision == "track_in_flight_order":
         return "basket_in_flight_tracking"
+    if decision == "buy_before_suspension_work":
+        return "basket_suspension_setup"
     if decision in {"defer_as_non_baseline", "defer_until_baseline_closure", "hold_until_post_weld_primer"}:
         return "basket_deferred"
     if decision.startswith("not_required"):
@@ -261,6 +275,7 @@ def build_baskets(rows: list[dict[str, str]]) -> list[dict[str, str]]:
         "basket_electrical_stock_audit_topup": ("Electrical Stock-Audit Top-Up", "Count existing wiring stock first; buy only shortages."),
         "basket_mechanical_local_bundle": ("Mechanical Local Bundle", "Single local Toyota/common supplier batch after inspection."),
         "basket_condition_based_after_inspection": ("Condition-Based Replacements", "Buy only failed/worn parts after inspection."),
+        "basket_suspension_setup": ("Suspension Setup Support", "Buy support/cribbing items before suspension disassembly."),
         "basket_specialty_after_audit": ("Specialty/Import After Audit", "Order only if local/on-hand cannot cover."),
         "basket_in_flight_tracking": ("In-Flight Orders", "No rebuy; only track delivery/quality."),
         "basket_deferred": ("Deferred Scope", "Not baseline now."),

@@ -337,31 +337,18 @@ REAR_BRAKE_CABLE_LINE_MEDIA_IDS: tuple[str, ...] = (
     "20260422_004301_gp_SU89hisw",
 )
 PAINT_BEFORE_ATTACHED_OR_BATCH_MEDIA_IDS: tuple[str, ...] = (
-    "20260314_180058",
-    "20260314_180059_gp_x5fsOjjA",
-    "20260317_165030",
-    "20260317_165030_gp_j49pTsog",
-    "20260319_182448",
-    "20260319_182449_gp_ttDAl3iw",
-    "20260323_201950",
-    "20260323_201957",
-    "IMG-20260328-WA0017",
-    "20260329_051759_gp_xEzrDYhQ",
-    "20260329_051805_gp_oRw8XV8Q",
+    "20260423_183408_gp_eCiJmZnA",
+    "20260423_183448_gp_9MQfbmvQ",
+    "20260423_183514_gp_DyztXKcw",
+    "20260423_183521_gp_pjVN2Ujw",
+    "20260423_183540_gp_bhRdLpMg",
+    "20260423_183628_gp_SpWIfUnw",
+    "20260423_183648_gp_ltd3AKwg",
 )
 PAINT_AFTER_RETURNED_PART_MEDIA_IDS: tuple[str, ...] = (
     "20260408_211754",
     "20260408_211756_gp_UFEU6uIA",
-    "20260408_211804",
-    "20260408_211806_gp_TbbCJsoQ",
-    "20260408_211812",
-    "20260408_211814_gp_hJ3szRKQ",
-    "20260408_212832",
     "20260408_212835_gp_nwY1TOwQ",
-    "20260408_212839",
-    "20260408_212841_gp_y9GxLOZg",
-    "20260408_212846",
-    "20260408_212849_gp_VJjse8gw",
     "20260412_010623",
     "20260412_010626_gp_4bK3TOAg",
     "20260412_010633",
@@ -374,26 +361,16 @@ PAINT_AFTER_RETURNED_PART_MEDIA_IDS: tuple[str, ...] = (
     "20260412_010659_gp_6XtGS3yA",
     "20260412_010713",
     "20260412_010714_gp_EVZz4yGw",
+    "20260412_215049_gp_gEiIZKzg",
+    "20260412_215138_gp_F42aBJGg",
+    "20260412_215154_gp_hDRTkV1A",
     "20260412_223218_gp_fqniQhNQ",
     "20260412_223534",
     "20260412_223537_gp_kVu8OFJA",
     "20260412_223539",
     "20260412_223541_gp_QFRecOgQ",
-    "20260423_183408_gp_eCiJmZnA",
-    "20260423_183448_gp_9MQfbmvQ",
-    "20260423_183514_gp_DyztXKcw",
-    "20260423_183521_gp_pjVN2Ujw",
-    "20260423_183540_gp_bhRdLpMg",
-    "20260423_183628_gp_SpWIfUnw",
-    "20260423_183648_gp_ltd3AKwg",
 )
-PAINT_WORK_VIDEO_MEDIA_IDS: tuple[str, ...] = (
-    "20260421_000440_gp_mHfhDt5Q",
-    "20260421_000442_gp_BwZ9MrsQ",
-    "20260421_000445_gp_NZmyXtiA",
-    "20260421_000447_gp_i5bdcJiQ",
-    "20260421_000450_gp_6V9noMHA",
-)
+PAINT_WORK_VIDEO_MEDIA_IDS: tuple[str, ...] = ()
 DASHBOARD_ELECTRICAL_FOCUS_KEYWORDS: tuple[str, ...] = (
     "switch",
     "dash",
@@ -2799,14 +2776,14 @@ def build_paint_workstream_evidence_sets(
     evidence_sets: list[dict[str, Any]] = [
         {
             "key": "sent_to_painter",
-            "title": "Before Paint - Attached Or Batch Photos",
-            "description": "Curated before photos from original attached context or consolidated outbound batch shots only.",
+            "title": "Sent To Painter - Parts Batch Photos",
+            "description": "Curated outbound parts photos, including the April 23 send-day panel batch and roof image.",
             "images": sent_media,
         },
         {
             "key": "returned_from_painter",
             "title": "After Paint - Returned From Painter",
-            "description": "Curated photos of returned painted/refinished parts, including the April 8 and April 23 wall-shot panel batches.",
+            "description": "Curated photos of returned painted/refinished parts and hardware after painter/refinish work.",
             "images": returned_media,
         },
     ]
@@ -3752,7 +3729,13 @@ def load_workbook_supply_rows(path: Path, supply_type: str, source_name: str) ->
                 norm(row.get("col_12")),
             ]
         )
-        if any(token in marker_blob for token in ("section_header", "duplicate", "not_required")):
+        received_flag = workbook_flag_value(clean(row.get("col_4")))
+        paid_flag = workbook_flag_value(clean(row.get("col_5")))
+        if (
+            any(token in marker_blob for token in ("section_header", "duplicate", "not_required", "cancelled"))
+            or received_flag == "cancelled"
+            or paid_flag == "cancelled"
+        ):
             continue
 
         amount = parse_numeric_text(clean(row.get("col_2")))
@@ -3814,7 +3797,13 @@ def workbook_supply_ref_from_reconciliation(row: dict[str, str]) -> str:
 def load_expense_matched_workbook_supply_refs(path: Path) -> set[str]:
     matched_refs: set[str] = set()
     for row in load_csv_optional(path):
-        if norm(row.get("workbook_row_type")) != "line_item":
+        row_type = norm(row.get("workbook_row_type"))
+        if row_type == "section_header":
+            source_ref = workbook_supply_ref_from_reconciliation(row)
+            if source_ref:
+                matched_refs.add(norm(source_ref))
+            continue
+        if row_type != "line_item":
             continue
         if not clean(row.get("matched_entry_id")):
             continue
@@ -3952,7 +3941,11 @@ def build_supplies_inventory(expense_rows: list[dict[str, str]]) -> dict[str, An
         bucket = norm(row.get("bucket"))
         if bucket not in {"parts", "tools"}:
             continue
-        if norm(row.get("status")) == "cancelled" or norm(row.get("delivery_status")) == "not_required":
+        if (
+            norm(row.get("status")) in {"cancelled", "not_required"}
+            or norm(row.get("delivery_status")) == "not_required"
+            or norm(row.get("procurement_stage")).startswith("not_required")
+        ):
             continue
         supply_type = supply_type_from_expense(row)
         mapped_workstream = split_legacy_steering_brakes_workstream(
@@ -5027,6 +5020,8 @@ def build_local_order_image_index() -> dict[str, Path]:
         if not directory.exists():
             continue
         for path in sorted(directory.rglob("*")):
+            if "reference_catalog" in path.parts:
+                continue
             if not path.is_file() or path.suffix.lower() not in LOCAL_ORDER_IMAGE_EXTENSIONS:
                 continue
             for key in local_order_image_keys(path):
@@ -5186,6 +5181,297 @@ def selling_site_image_payload(row: dict[str, str], matched_tokens: list[str]) -
     }
 
 
+def reference_image_payload(asset_name: str, caption: str, matched_tokens: list[str]) -> dict[str, Any]:
+    return {
+        "path": path_for_ui(f"deliverables/selling_site_images/images/reference_catalog/{asset_name}.jpg"),
+        "caption": caption,
+        "captured_date": "",
+        "captured_time": "",
+        "media_type": "photo",
+        "component_group": "procurement_inventory",
+        "specific_component": "semantic_reference_image",
+        "stage": "procurement_reconciliation",
+        "media_id": asset_name,
+        "matched_tokens": matched_tokens,
+        "match_basis": "semantic_reference_image",
+        "match_score": 700,
+    }
+
+
+def choose_supply_reference_image(
+    *,
+    item: str,
+    vendor: str,
+    notes: str,
+    inventory_group: str,
+    supply_type: str,
+) -> dict[str, Any] | None:
+    item_key = norm(item)
+    blob = " ".join([item_key, norm(vendor), norm(notes), norm(inventory_group), norm(supply_type)])
+
+    def has(*tokens: str) -> bool:
+        return all(token in blob for token in tokens)
+
+    def has_any(*tokens: str) -> bool:
+        return any(token in blob for token in tokens)
+
+    def ref(asset_name: str, caption: str, *tokens: str) -> dict[str, Any]:
+        return reference_image_payload(asset_name, caption, [token for token in tokens if token])
+
+    if has_any("cable ties", "zip ties"):
+        return ref("cable_ties", f"{item} · cable tie reference image", "cable", "ties")
+    if has_any("bullet connector", "bullet connecto"):
+        return ref("bullet_connectors", f"{item} · bullet connector reference image", "bullet", "connector")
+    if has_any("needle nose", "nose plier", "nose pliers", "crimping plier", "crimping tool", "crimper"):
+        return ref("pliers", f"{item} · pliers reference image", "pliers")
+    if has_any("socket and tools set", "socket 6pt", "impact socket"):
+        return ref("socket_set", f"{item} · socket/tool set reference image", "socket")
+    if has("torque", "wrench"):
+        return ref("torque_wrench", f"{item} · torque wrench reference image", "torque", "wrench")
+    if has_any("tap and die", "screw tap", "tap set"):
+        return ref("tap_die_set", f"{item} · tap/die set reference image", "tap")
+    if has("grease", "gun"):
+        return ref("grease_gun", f"{item} · grease gun reference image", "grease", "gun")
+    if has("heat", "gun"):
+        return ref("heat_gun", f"{item} · heat gun reference image", "heat", "gun")
+    if has("wire", "cup", "brush"):
+        return ref("wire_cup_brush", f"{item} · wire cup brush reference image", "wire", "brush")
+    if has("cutting", "disc"):
+        return ref("cutting_disc", f"{item} · cutting disc reference image", "cutting", "disc")
+    if has_any("e6013", "e7018", "electrode", "electodes"):
+        return ref("welding_electrodes", f"{item} · welding electrode reference image", "electrode")
+    if has("mig", "welding", "wire"):
+        return ref("mig_welding_wire", f"{item} · MIG wire reference image", "mig", "wire")
+    if has_any("ar-co2", "argon", "co2 canister"):
+        return ref("argon_co2_cylinder", f"{item} · welding gas cylinder reference image", "argon", "co2")
+    if has("air", "compressor"):
+        return ref("air_compressor", f"{item} · air compressor reference image", "air", "compressor")
+    if has("air", "hose"):
+        return ref("air_hose", f"{item} · air hose reference image", "air", "hose")
+    if has("drill", "chuck"):
+        return ref("drill_chuck", f"{item} · drill chuck reference image", "drill", "chuck")
+    if has("digital", "caliper"):
+        return ref("digital_caliper", f"{item} · digital caliper reference image", "caliper")
+    if has_any("chassis punch", "hole cutter"):
+        return ref("hole_cutter", f"{item} · hole cutter reference image", "hole", "cutter")
+    if has("car", "cover"):
+        return ref("car_cover", f"{item} · car cover reference image", "cover")
+    if has_any("neoprene top cover", "top cover"):
+        return ref("car_cover", f"{item} · vehicle cover reference image", "cover")
+
+    if "suspension kit" in item_key:
+        return ref("suspension_kit", f"{item} · suspension kit reference image", "suspension")
+    if has("ironman", "front", "damper") or has("front", "damper", "24635"):
+        return ref("shock_absorber", f"{item} · front damper reference image", "front", "damper")
+    if has_any("ironman", "foamcell", "foam cell") or has("suspension", "kit"):
+        return ref("suspension_kit", f"{item} · suspension kit reference image", "suspension")
+    if has("steering", "damper") or has("stabilizer"):
+        return ref("steering_damper", f"{item} · steering damper reference image", "steering", "damper")
+    if has_any("shackle", "shackles", "spring setup", "leaf spring"):
+        return ref("leaf_shackle", f"{item} · leaf spring/shackle reference image", "shackle")
+    if has("bump", "stop"):
+        return ref("bump_stop", f"{item} · bump stop reference image", "bump", "stop")
+    if has_any("eps", "electrical power steering") or has("power", "steering") or has("vitz", "column"):
+        return ref("eps_column", f"{item} · EPS column reference image", "eps")
+
+    if has("body", "mount", "rubber") or has("rubber", "mountings", "chassis"):
+        return ref("body_mount_kit", f"{item} · body mount rubber reference image", "body", "mount")
+    if has_any("body mount shim", "body shims", "shim/spacer", "shims/spacers", "shim and spacer"):
+        return ref("body_shims", f"{item} · body shim/spacer reference image", "shim", "spacer")
+    if has_any("fastener kit", "body mount hardware", "body mount bolts", "full set of new nuts", "spring washers"):
+        return ref("graded_fasteners", f"{item} · fastener kit reference image", "fastener")
+    if has_any("captive nuts", "clip nuts", "rivnuts"):
+        return ref("clip_nuts", f"{item} · captive/clip nut reference image", "clip", "nuts")
+    if has_any("star washers", "serrated washers", "grounding hardware"):
+        return ref("graded_fasteners", f"{item} · grounding washer hardware reference image", "washers")
+    if has_any("split pins", "cotter pins"):
+        return ref("clip_nuts", f"{item} · split pin hardware reference image", "pins")
+    if has_any("grease nipples", "zerks"):
+        return ref("copper_lugs", f"{item} · small hardware reference image", "hardware")
+
+    if has("braided", "sleeve") or has("braided", "sleeving"):
+        return ref("braided_sleeve", f"{item} · braided sleeve reference image", "braided", "sleeve")
+    if has_any("split conduit", "split wiring pipe", "loom pipe", "split loom"):
+        return ref("split_loom", f"{item} · split loom reference image", "loom")
+    if has("heat", "shrink"):
+        return ref("heat_shrink", f"{item} · heat shrink reference image", "heat", "shrink")
+    if has_any("wiring_material", "electrical_accessories") or re.fullmatch(r"\d+(?:\.\d+)?\s*x\s*\d+", item_key):
+        return ref("electrical_accessories", f"{item} · electrical accessory reference image", "electrical")
+    if has("copper", "braid"):
+        return ref("copper_lugs", f"{item} · copper braid/terminal reference image", "copper")
+    if has_any("battery cable", "4 awg", "heavy feed") or re.search(r"\b(?:4|6|8|10|16|25|35)\s*mm", item_key):
+        return ref("heavy_battery_cable", f"{item} · automotive cable reference image", "cable")
+    if has_any("electric wire", "automotive flexible wire") or has("wire", "roll"):
+        return ref("automotive_wire", f"{item} · automotive wire reference image", "wire")
+    if has_any("lug", "thimble", "ring terminal", "cable lug"):
+        return ref("copper_lugs", f"{item} · cable lug/reference terminal image", "lug")
+    if has_any("terminal block", "power supply terminals", "inverter post connector"):
+        return ref("terminal_block", f"{item} · power terminal block reference image", "terminal")
+    if has("circuit", "breaker"):
+        return ref("circuit_breaker", f"{item} · circuit breaker reference image", "breaker")
+    if has("anl", "fuse"):
+        return ref("anl_fuse", f"{item} · ANL fuse reference image", "anl", "fuse")
+    if has_any("toggle switch", "spotlight switch", "winch switch", "hidden diesel cutoff", "starter interrupt", "kill switch"):
+        return ref("toggle_switch", f"{item} · automotive switch reference image", "switch")
+    if has("relay", "box") or has("relay", "block"):
+        return ref("relay_fuse_box", f"{item} · relay/fuse box reference image", "relay", "box")
+    if has("fuse", "box") or has("blade", "fuse"):
+        return ref("fuse_box", f"{item} · fuse box reference image", "fuse", "box")
+    if has_any("horn relay", "5 pin", "relay"):
+        return ref("relay", f"{item} · automotive relay reference image", "relay")
+    if has("grommet"):
+        return ref("rubber_grommets", f"{item} · rubber grommet reference image", "grommet")
+    if has("switch", "panel"):
+        return ref("switch_panel", f"{item} · switch panel reference image", "switch", "panel")
+
+    if has("radiator", "hose") or has("coolant", "hose") or has("all coolant hoses"):
+        return ref("radiator_hose", f"{item} · radiator/coolant hose reference image", "radiator", "hose")
+    if has("heater", "hose"):
+        return ref("heater_hose", f"{item} · heater hose reference image", "heater", "hose")
+    if has("radiator", "cap"):
+        return ref("radiator_cap", f"{item} · radiator cap reference image", "radiator", "cap")
+    if has("radiator"):
+        return ref("radiator", f"{item} · radiator reference image", "radiator")
+    if has("water", "pump"):
+        return ref("water_pump", f"{item} · water pump reference image", "water", "pump")
+    if has("thermostat"):
+        return ref("thermostat_gasket", f"{item} · thermostat/gasket reference image", "thermostat")
+    if has_any("glow plugs", "heat plugs"):
+        return ref("glow_plugs", f"{item} · diesel glow plug reference image", "glow", "plugs")
+    if has_any("air filter", "oil filter", "fuel filter", "filter service"):
+        return ref("filter_service", f"{item} · filter/service reference image", "filter")
+    if has_any("accessory belt", "fan belt"):
+        return ref("accessory_belt", f"{item} · accessory belt reference image", "belt")
+    if has_any("fuel hose", "fuel-rated", "diesel-rated hose", "rubber hose and clamp", "return-line hose", "new fuel hoses", "proper hose clamps", "hose clamps", "jubilee hose", "vacuum hose"):
+        return ref("fuel_hose", f"{item} · fuel hose/clamp reference image", "fuel", "hose")
+    if has_any("fuel tank", "sender seal", "tank straps"):
+        return ref("fuel_tank_parts", f"{item} · fuel tank service reference image", "fuel", "tank")
+    if has("engine", "mount"):
+        return ref("engine_mount", f"{item} · engine mount reference image", "engine", "mount")
+    if has_any("gearbox / transfer case mounts", "transmission mount", "powertrain mount"):
+        return ref("engine_mount", f"{item} · powertrain mount reference image", "mount")
+    if has_any("clutch master", "clutch slave", "clutch cylinder"):
+        return ref("brake_master", f"{item} · clutch/brake cylinder reference image", "clutch")
+    if has("clutch") and has_any("hose", "line"):
+        return ref("brake_hose_line", f"{item} · clutch/brake line reference image", "clutch", "line")
+    if has("brake", "master"):
+        return ref("brake_master", f"{item} · brake master cylinder reference image", "brake", "master")
+    if has("wheel", "cylinder"):
+        return ref("wheel_cylinder", f"{item} · wheel cylinder reference image", "wheel", "cylinder")
+    if has("brake", "shoes") or has("brake", "pads"):
+        return ref("brake_shoes", f"{item} · brake shoes/pads reference image", "brake", "shoes")
+    if has_any("parking brake cable", "handbrake hardware", "handbrake", "parking-brake"):
+        return ref("parking_brake_cable", f"{item} · parking brake cable reference image", "parking", "brake")
+    if has("brake") and has_any("hose", "line", "hard lines", "clips"):
+        return ref("brake_hose_line", f"{item} · brake line/hose reference image", "brake", "line")
+    if has("exhaust", "hanger"):
+        return ref("exhaust_hanger", f"{item} · exhaust hanger reference image", "exhaust")
+    if has_any("spark plugs", "spark plug"):
+        return ref("spark_plugs", f"{item} · spark plug reference image", "spark", "plug")
+    if has_any("distributor cap", "rotor and ignition", "ignition tune-up", "ignition tune up"):
+        return ref("distributor_cap", f"{item} · ignition tune-up reference image", "ignition")
+    if has("alternator") or has("regulator"):
+        return ref("alternator", f"{item} · alternator/regulator reference image", "alternator")
+    if has_any("compressor bracket", "a/c compressor", "ac compressor") or has("compressor"):
+        return ref("ac_compressor", f"{item} · AC compressor reference image", "compressor")
+    if has_any("custom u-joints", "intermediate shafts", "u-joints"):
+        return ref("u_joint_shaft", f"{item} · steering shaft/U-joint reference image", "u-joint")
+    if has("shaft", "support", "bearing"):
+        return ref("shaft_bearing", f"{item} · shaft bearing reference image", "bearing")
+    if has("steering", "box", "service"):
+        return ref("steering_box_kit", f"{item} · steering box service reference image", "steering", "box")
+    if has("steering", "bush"):
+        return ref("steering_box_kit", f"{item} · steering service reference image", "steering")
+    if has("coolant", "overflow"):
+        return ref("coolant_overflow", f"{item} · coolant overflow reference image", "coolant")
+    if has_any("reservoir hoses", "reservoir caps", "reservoir hoses / caps"):
+        return ref("reservoir_caps", f"{item} · reservoir hose/cap reference image", "reservoir")
+    if has("clevis", "pins"):
+        return ref("clip_nuts", f"{item} · clevis pin/clip reference image", "clevis")
+
+    if has_any("bedliner", "bed lining", "raptor liner"):
+        return ref("bedliner", f"{item} · bedliner reference image", "bedliner")
+    if has_any("primer", "self etching", "epoxy primer"):
+        return ref("primer", f"{item} · primer reference image", "primer")
+    if has("wax", "grease") or has("degreaser") or has("cleaner"):
+        return ref("wax_grease_remover", f"{item} · cleaner/degreaser reference image", "cleaner")
+    if has("cavity", "wax"):
+        return ref("cavity_wax", f"{item} · cavity wax reference image", "cavity", "wax")
+    if has_any("sound damping", "sound deadening", "dampening sheets"):
+        return ref("sound_deadening", f"{item} · sound deadening reference image", "sound")
+    if has_any("seam sealer", "sealants", "gasket makers", "anti-seize", "anti seize", "threadlocker", "loctite", "dielectric grease", "die electric", "lithium grease", "wd-40", "wd 40", "rost flash", "lubricant", "ptfe"):
+        return ref("generic_substance", f"{item} · automotive chemical reference image", "substance")
+    if has_any("metal protection", "rust", "evapo"):
+        return ref("wax_grease_remover", f"{item} · rust/metal treatment reference image", "rust")
+
+    if has_any("carpets", "carpet", "mats"):
+        return ref("carpet_mats", f"{item} · carpet/mats reference image", "carpet")
+    if has("steering", "wheel"):
+        return ref("steering_wheel", f"{item} · steering wheel reference image", "steering", "wheel")
+    if has_any("android unit", "android lcd", "head unit"):
+        return ref("android_head_unit", f"{item} · Android head unit reference image", "android")
+    if has_any("speaker", "speakers"):
+        return ref("car_speaker", f"{item} · speaker reference image", "speaker")
+    if has_any("subwoofer"):
+        return ref("underseat_subwoofer", f"{item} · under-seat subwoofer reference image", "subwoofer")
+    if has_any("under-dash ac", "evaporator", "defrost unit", "heater/defrost"):
+        return ref("ac_evaporator", f"{item} · HVAC evaporator reference image", "evaporator")
+    if has("condenser"):
+        return ref("ac_condenser", f"{item} · AC condenser reference image", "condenser")
+    if has("receiver", "drier"):
+        return ref("receiver_drier", f"{item} · receiver-drier reference image", "receiver")
+    if has("trinary", "switch"):
+        return ref("trinary_switch", f"{item} · AC trinary switch reference image", "trinary")
+    if has_any("vents", "louver", "control pod", "3-knob control"):
+        return ref("ac_vents", f"{item} · vent/control panel reference image", "vents")
+    if has("barrier", "hose") or has("bulkhead", "fittings") or has("drain hose") or has("o-rings"):
+        return ref("ac_barrier_hose", f"{item} · AC hose/fittings reference image", "barrier", "hose")
+    if has_any("duct hose", "defrost hose"):
+        return ref("duct_hose", f"{item} · duct/defrost hose reference image", "duct")
+
+    if has_any("lock", "locks", "lockset", "re-key"):
+        return ref("lockset", f"{item} · lock set reference image", "lock")
+    if has_any("ignition barrel", "ignition switch"):
+        return ref("ignition_barrel", f"{item} · ignition barrel reference image", "ignition")
+    if has_any("side bench", "bench seat"):
+        return ref("side_bench", f"{item} · side bench reference image", "bench")
+    if has_any("seatbelt", "seat belt"):
+        return ref("seat_belt", f"{item} · seat belt hardware reference image", "seatbelt")
+    if has_any("cushion", "upholstery"):
+        return ref("upholstery_cushion", f"{item} · upholstery/cushion reference image", "upholstery")
+    if item_key == "interior":
+        return ref("upholstery_cushion", f"{item} · interior trim reference image", "interior")
+    if item_key == "foam":
+        return ref("foam_sheet", f"{item} · foam sheet reference image", "foam")
+
+    if has_any("weatherstrip", "door weatherstrips", "rubbers_and_seals", "vent / flap seals", "vent seals", "flap seals"):
+        return ref("weatherstrip", f"{item} · weatherstrip reference image", "weatherstrip")
+    if has_any("windscreen", "windshield"):
+        return ref("weatherstrip", f"{item} · windscreen rubber reference image", "windshield")
+    if has_any("floor plugs", "drain plugs"):
+        return ref("floor_plugs", f"{item} · floor plug reference image", "floor", "plugs")
+    if has_any("wiper grommets", "firewall boots", "pedal rubbers"):
+        return ref("wiper_grommets", f"{item} · small rubber reference image", "rubber")
+    if has_any("roof", "doors", "windows", "hood", "window_hardware"):
+        return ref("roof_door_window", f"{item} · body/glass hardware reference image", "body")
+    if has_any("body_sections", "body_floor", "body panel", "striker pins", "latch rebuild"):
+        return ref("body_panel", f"{item} · body panel/hardware reference image", "body")
+    if has_any("remove old leds", "old leds"):
+        return ref("electrical_accessories", f"{item} · electrical accessory reference image", "electrical")
+    if has_any("piano hinge", "hinge"):
+        return ref("piano_hinge", f"{item} · hinge reference image", "hinge")
+    if has_any("reinforcement plates", "mounting reinforcement"):
+        return ref("graded_fasteners", f"{item} · reinforcement/hardware reference image", "hardware")
+    if has("battery"):
+        return ref("battery", f"{item} · battery reference image", "battery")
+
+    if supply_type == "tool":
+        return ref("generic_tool", f"{item} · tool reference image", "tool")
+    if supply_type == "substance":
+        return ref("generic_substance", f"{item} · automotive substance reference image", "substance")
+    return ref("generic_part", f"{item} · automotive part reference image", "part")
+
+
 def is_inventory_reference_photo_row(row: dict[str, str]) -> bool:
     if not is_photo_row(row):
         return False
@@ -5207,6 +5493,7 @@ def choose_selling_site_image(
     supply_type: str,
     source_table: str,
     source_ref: str,
+    exact_source_only: bool = False,
 ) -> dict[str, Any] | None:
     source_table_key = norm(source_table)
     source_ref_key = normalize_source_ref(source_ref)
@@ -5263,7 +5550,7 @@ def choose_selling_site_image(
                 exact_source_match = True
                 strong_reference_hits += 1
                 matches.append(source_ref_key)
-        elif source_ref_key and row_source_ref == source_ref_key:
+        elif source_ref_key and row_source_ref == source_ref_key and (not source_table_key or not row_source_table):
             score += 120
             source_match = True
             exact_source_match = True
@@ -5322,6 +5609,9 @@ def choose_selling_site_image(
         if not source_match and strong_reference_hits == 0 and item_hits < 2:
             continue
         if not source_match and strong_reference_hits == 0 and item_hits >= 2 and not non_generic_item_hits:
+            continue
+
+        if exact_source_only and not exact_source_match:
             continue
 
         if status == "downloaded":
@@ -5491,6 +5781,7 @@ def choose_inventory_image(
     vendor: str,
     source_table: str,
     source_ref: str,
+    inventory_group: str,
 ) -> dict[str, Any]:
     source_table_key = norm(source_table)
     source_ref_key = normalize_source_ref(source_ref)
@@ -5522,9 +5813,20 @@ def choose_inventory_image(
         supply_type=supply_type,
         source_table=source_table,
         source_ref=source_ref,
+        exact_source_only=True,
     )
     if selling_site_image is not None:
         return selling_site_image
+
+    reference_image = choose_supply_reference_image(
+        item=item,
+        vendor=vendor,
+        notes=notes,
+        inventory_group=inventory_group,
+        supply_type=supply_type,
+    )
+    if reference_image is not None:
+        return reference_image
 
     reference_tokens = extract_inventory_reference_tokens([evidence_ref, notes])
     item_tokens = search_tokens([item], max_tokens=12)
@@ -5651,6 +5953,7 @@ def attach_inventory_images(
             vendor=clean(row.get("vendor")),
             source_table=source_table,
             source_ref=source_ref,
+            inventory_group=clean(row.get("inventory_group")),
         )
         image_links = link_payloads(updated["image"].get("listing_url", ""), updated["image"].get("image_url", ""))
         if image_links:

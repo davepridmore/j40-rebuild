@@ -343,7 +343,7 @@
     if (["blocked"].includes(key)) {
       return "bad";
     }
-    if (["in_progress", "in_process", "pending_work", "inspection_pending", "ordered", "ordered_pending_delivery"].includes(key)) {
+    if (["in_progress", "in_process", "pending_work", "inspection_pending", "sent_to_painter", "ordered", "ordered_pending_delivery"].includes(key)) {
       return "info";
     }
     return "warn";

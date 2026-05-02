@@ -1,0 +1,3 @@
+query: automotive AC trinary pressure switch image
+image_url: https://supercool.ac/wp-content/uploads/2020/09/26418.jpg
+page_url: https://supercool.ac/product/trinary-pressure-switch/

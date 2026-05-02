@@ -76,15 +76,15 @@ Parts,28,Radiator hose set upper plus lower with clamps,,Use local Toyota/common
 Parts,29,Heat plugs (glow plugs) set - diesel engine (NEW only),,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,no_match,,,,,,,,
 Parts,30,Thermostat plus gasket,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_thermostat_gasket,Thermostat plus gasket,,parts,05_mechanical_baseline,mechanical_baseline,received
 Parts,31,Vacuum hose refresh kit,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_vacuum_hose_refresh,Vacuum hose refresh kit,,parts,05_mechanical_baseline,mechanical_baseline,spec_ready_release_hold
-Parts,32,Metal protection and restoration products,,"Prefer local sourcing first, then online if unavailable.",,,line_item,matched_exact_item,1.0,part_metal_protection,Metal protection and restoration products,Daraz,parts,03_body_chassis,body_chassis,purchase_ready
-Parts,33,Primer,,"Prefer local sourcing first, then online if unavailable.",,,line_item,matched_exact_item,1.0,part_primer,Primer,,parts,03_body_chassis,body_chassis,purchase_ready
+Parts,32,Metal protection and restoration products,,"Prefer local sourcing first, then online if unavailable.",,,line_item,matched_exact_item,1.0,part_metal_protection,Metal protection and restoration products,Daraz,parts,03_body_chassis,body_chassis,not_required_covered_by_epoxy_wax
+Parts,33,Primer,,"Prefer local sourcing first, then online if unavailable.",,,line_item,no_match,,,,,,,,
 Parts,34,M6 star / lock washer,,Montgomery Road (Lahore),,,line_item,no_match,,,,,,,,
 Parts,35,M8 star / lock washer,,Montgomery Road (Lahore),,,line_item,no_match,,,,,,,,
 Parts,36,"Schneider Harmony 22mm 2-position maintained selector switch (1NO, black) x 4",31900,purchaser.com.pk | https://purchaser.com.pk/schneider-harmony-22mm-push-button-2-position-selector-switch-black-maintained-1-no-600-v/,Y,Y,line_item,no_match,,,,,,,,
 Parts,37,"Schneider Harmony XB4 22mm 3-position maintained selector switch (2NO, long handle) x 3",,purchaser.com.pk | https://purchaser.com.pk/schneider-selector-switch-harmony-xb4-metal-black-22mm-long-handle-3positions-stay-put-2no/,Y,Y,line_item,no_match,,,,,,,,
 Parts,38,Dashboard fascia / auxiliary switch panel (if OEM holes are insufficient),,Local sheet-metal/fabrication shop,No,,line_item,no_match,,,,,,,,
 Parts,39,Ignition lock security fix (new barrel + matched keys OR full locksmith re-key),,Local locksmith + lockset supplier,No,,line_item,no_match,,,,,,,,
-Parts,40,Starter interrupt security relay path (relay + base + concealed arm/disarm switch),,Local electrical market / automotive relay supplier,No,,line_item,no_match,,,,,,,,
+Parts,40,Starter interrupt / hidden kill switch path (covered by purchased needle-type switch),,On-hand purchased kill/fuel-stop switch + existing relay hardware,Y,Y,line_item,manual_match,0.98,part_hidden_diesel_cutoff_switch,Fuel stop switch / hidden diesel cutoff (needle-type switch),,parts,04_electrical_reset,electrical_reset,received
 Parts,41,Fuel-stop ignition-control hardware top-up (relay/fuse/terminals only if stock short),,Use on-hand stock first; local top-up only if needed,No,,line_item,no_match,,,,,,,,
 Parts,42,Grommet Set,18600,starshop.pk,Y,9200 COD,line_item,no_match,,,,,,,,
 Parts,43,8mm Nylon Braided Sleeve x 5,800,electronicsstore.pk,Y,Y,line_item,no_match,,,,,,,,
@@ -146,7 +146,7 @@ Parts,98,Dielectric Grease,11529,adenwalla.net,Needs check,Y,line_item,matched_e
 Parts,99,PERMATEX 81150 DIE ELECTRIC TUNE UP GREASE 0.33 OZ,1288,Adenwalla & Sons,,COD,line_item,no_match,,,,,,,,
 Parts,100,HB BODY 999 SEAM SEALER 300ML CARTR,7696,autohub,,,line_item,no_match,,,,,,,,
 Parts,101,3mm Sound Damping Sheet / Deadening Pad,29500,megamotorsports,,,line_item,no_match,,,,,,,,
-Parts,102,HB BODY - U900 CAVITY WAX SPRAY U900 - 400ML,2250,autohub,,,line_item,no_match,,,,,,,,
+Parts,102,HB BODY - U900 CAVITY WAX SPRAY U900 - 400ML,2250,autohub,,,line_item,matched_fuzzy,0.933,part_cavity_wax,HB Body U900 cavity wax spray 400ml,Autohub,parts,03_body_chassis,body_chassis,ordered_pending_delivery
 Parts,103,ROST FLASH PRO,1365,adenwalla,Y,Y,line_item,no_match,,,,,,,,
 Parts,104,Permatex Copper Anti Seize Lubricant Premium Quality in Pakistan,11000,Pakistan Power Tool,Y,Y,line_item,no_match,,,,,,,,
 Parts,105,RAPTOR LINER TINTABLE STANDARD 3.8L KIT,39900,adenwalla,Y,Y,line_item,no_match,,,,,,,,
@@ -269,10 +269,10 @@ Parts,221,Firewall bulkhead fittings,,,,,section_header,not_applicable,,,,,,,,
 Parts,222,"Relay/fuse/wiring for blower, clutch, and fan",,,,,section_header,not_applicable,,,,,,,,
 Parts,223,Condenser fan if required,,,,,section_header,not_applicable,,,,,,,,
 Parts,224,"New O-rings, refrigerant oil, and full R134a charge setup",,,,,section_header,not_applicable,,,,,,,,
-Parts,225,"Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves",,,No,,line_item,no_match,,,,,,,,
-Parts,226,"Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers",,,No,,line_item,no_match,,,,,,,,
+Parts,225,"Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves",,,No,,line_item,matched_exact_item,1.0,part_fastener_kit_a_millat,"Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves",MTL Parts,parts,03_body_chassis,body_chassis,ordered_pending_delivery
+Parts,226,"Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers",,,No,,line_item,matched_exact_item,1.0,part_fastener_kit_b_millat,"Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers",MTL Parts,parts,03_body_chassis,body_chassis,ordered_pending_delivery
 Parts,227,Fastener Kit C: Captive nuts/clip nuts assortment - M6/M8 with anti-corrosion finish,,,No,,line_item,no_match,,,,,,,,
-Parts,228,Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points,,,No,,line_item,no_match,,,,,,,,
+Parts,228,Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points,,,No,,line_item,matched_exact_item,1.0,part_fastener_kit_d_millat,Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points,MTL Parts,parts,04_electrical_reset,electrical_reset,ordered_pending_delivery
 Parts,229,Fastener Kit E: Stainless interior/trim screw set (non-structural) + cup washers,,,No,,line_item,no_match,,,,,,,,
 Parts,230,Interior conversion: Side bench seat frame set LH+RH (fold-up profile below window line),,,No,,line_item,no_match,,,,,,,,
 Parts,231,Interior conversion: Side bench hinge+latch kit with positive lock (up and down positions),,,No,,line_item,no_match,,,,,,,,

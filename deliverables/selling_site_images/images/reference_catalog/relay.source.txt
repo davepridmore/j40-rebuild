@@ -1,0 +1,3 @@
+query: 5 pin 40A automotive relay 12V image
+image_url: https://canary.contestimg.wish.com/api/webimage/6448d5e1d88463b86a3ed841-large.jpg?cache_buster=c53219b7bbf7f8a6b1c3a77c1ae79f98
+page_url: https://www.wish.com/product/waterproof-automotive-relay-12v-5-pin-5p-40a-car-relay-with-copper-terminal-auto-relay-with-relay-socket-for-motor-headlight-6448d5e1d88463b86a3ed841

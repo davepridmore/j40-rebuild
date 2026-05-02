@@ -43,7 +43,7 @@ excel_row,col_1,col_2,col_3,col_4,col_5,col_6,col_7
 51,"German Imported WORKPRO Flap Discs 60 Grit, 125mm x 22.2mm, Angle Grinder Discs x 3",3000,Daraaz,Y,,procured_or_on_hand,Evidence indicates purchased/received.
 52,EDON Expert MIG 270 (15Kg) (Single Phase) BUILTIN WIRE FEEDER (GAS OR GASLESS),76500,toolshub,No,Y,ordered_in_flight,Paid for but not yet received.
 53,Drill chuck (compatible with existing drill spindle/arbor),,Local hardware/tools market,Y,,procured_or_on_hand,Acquired; user reports Aamir shared image evidence.
-54,22mm step drill bit (metal panel capable),,Local hardware/tools market,No,,planned_or_open,Primary tool to open existing pull-switch holes toward 22mm.
-55,22mm chassis punch or precision hole cutter,,Local hardware/tools market,No,,ordered_in_flight,Recently ordered; awaiting arrival confirmation.
+54,22mm step drill bit (metal panel capable),,Local hardware/tools market,Y,,procured_or_on_hand,On hand per user_update_2026-05-02_dashboard_switch_lcd_update; primary tool to open existing pull-switch holes toward 22mm.
+55,22mm chassis punch or precision hole cutter,,Local hardware/tools market,Y,,procured_or_on_hand,On hand per user_update_2026-05-02_dashboard_switch_lcd_update; use for cleaner 22mm switch holes after layout and pilot verification.
 56,Deburring tool / round file set for panel holes,,Local hardware/tools market,No,,planned_or_open,Required for clean switch fit and paint-edge protection.
 57,Digital caliper (hole/spacing verification),,Local hardware/tools market,No,,planned_or_open,Used to validate hole diameter and center spacing before cutting.

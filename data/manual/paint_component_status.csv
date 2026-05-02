@@ -1,6 +1,6 @@
 specific_component,sent_images,returned_images,issue_images,derived_status,latest_image_date,sample_media_id
 floor_pan_rust_zones,0,0,30,issues_open,2026-04-23,20260423_183704_gp_a5qmyeOA
-roof_gutter_and_window_channel,1,0,4,issues_open,2026-04-23,20260423_183648_gp_ltd3AKwg
+roof_gutter_and_window_channel,1,0,4,sent_not_returned,2026-04-23,20260423_183648_gp_ltd3AKwg
 floor_seam_and_body_mount_rust,0,0,1,issues_open,2026-04-05,20260405_234652
 whatsapp_paint_returned_media,0,57,0,returned,2026-03-16,mcp_whatsapp_number_1_archive_fj40_00259::00003264-PHOTO-2026-03-16-18-15-24.jpg
 refinished_hinges_brackets_and_trim,0,16,0,returned,2026-04-12,20260412_010626_gp_4bK3TOAg

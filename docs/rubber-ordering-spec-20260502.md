@@ -12,6 +12,7 @@ Related source lists:
 - [body_mount_order_release_specs.csv](../data/manual/body_mount_order_release_specs.csv)
 - [body_mount_release_actions.csv](../data/manual/body_mount_release_actions.csv)
 - [body_mount_station_closure_sheet.csv](../data/manual/body_mount_station_closure_sheet.csv)
+- [rubber_recreation_manufacturing_requirements.csv](../data/manual/rubber_recreation_manufacturing_requirements.csv)
 
 ## Ordering Position
 
@@ -62,6 +63,7 @@ Use `data/manual/rubber_ordering_specs.csv` as the current source of truth for o
 - Coolant and heater hoses must be EPDM coolant/heater hose, not fuel, vacuum, washer, or generic water hose.
 - A/C O-rings must be refrigerant-compatible, normally HNBR for an `R134a` system.
 - Body mount rubber must be one matched automotive mount-grade batch. Do not mix old/new, rubber/polyurethane, or different hardnesses side to side.
+- Locally recreated body/front-support rubbers must include first articles, material declaration, Shore A check, critical-dimension report, dry-stack check, and labeled packaging per [rubber_recreation_manufacturing_requirements.csv](../data/manual/rubber_recreation_manufacturing_requirements.csv).
 - Do not order separate leaf spring or shackle bushes until the Ironman kit is physically counted.
 
 ## Measurement Pack To Take To Supplier
@@ -78,6 +80,7 @@ For body mounts specifically, take the fabrication sheet and closure table:
 - [body_mount_release_actions.csv](../data/manual/body_mount_release_actions.csv)
 - [body_mount_station_closure_sheet.csv](../data/manual/body_mount_station_closure_sheet.csv)
 - [rubber_recreation_fabrication_specs.csv](../data/manual/rubber_recreation_fabrication_specs.csv)
+- [rubber_recreation_manufacturing_requirements.csv](../data/manual/rubber_recreation_manufacturing_requirements.csv)
 - [rubber_recreation_measurement_closure.csv](../data/manual/rubber_recreation_measurement_closure.csv)
 - [rubber_recreation_toyota_oe_cross_reference.csv](../data/manual/rubber_recreation_toyota_oe_cross_reference.csv)
 

@@ -57,9 +57,9 @@ OVERLAP_DECISIONS: tuple[OverlapDecision, ...] = (
     ),
     OverlapDecision(
         group_id="switch_options",
-        chosen_entries=("part_horn_relay",),
-        deferred_entries=("part_spotlight_switch", "part_toggle_switch", "part_winch_switch"),
-        rationale="Prioritize baseline safety electricals; H4 connectors are already complete and optional accessory controls stay deferred.",
+        chosen_entries=(),
+        deferred_entries=("part_horn_relay", "part_spotlight_switch", "part_toggle_switch", "part_winch_switch"),
+        rationale="No standalone switch/relay buy now: spot lamps already have a switch allocation, winch control is identified on the 3rd lever, and horn relay is duplicated by the as-built relay plan.",
     ),
     OverlapDecision(
         group_id="floor_finish_stack",

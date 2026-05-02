@@ -1,11 +1,13 @@
 category,qty_type,function,proposed_location,notes
-switch,1 x 3-way maintained,Wipers (OFF/LOW/HIGH),Right dash cluster (hole 1),Use maintained selector
-switch,1 x 3-way maintained,Lights (OFF/PARK/HEAD),Right dash cluster (hole 2),Use maintained selector
-switch,1 x 2-way maintained,Spot lamps (OFF/ON),Right dash cluster (hole 3),Linked to relay T5
-switch,1 x 2-way maintained,Aux accessory (OFF/ON),Right dash cluster (hole 4),Linked to relay B2 optional use
-switch,1 x 3-way maintained,Blower speed (OFF/LOW/HIGH),Mid AC cluster (hole 1),Use maintained selector
-switch,1 x 2-way maintained,A/C clutch enable (OFF/ON),Mid AC cluster (hole 2),Linked to relay B1
-switch,1 x 2-way maintained,Diesel fuel-stop control (RUN/STOP),Dedicated single position near ignition (or fascia overflow),Keep manual diesel cutoff cable as backup
+switch,1 x 3-way maintained,Wipers (OFF/LOW/HIGH),Right dash cluster (hole 1),Use received 3-position maintained Schneider selector
+switch,1 x 3-way maintained,Lights (OFF/PARK/HEAD),Right dash cluster (hole 2),Use received 3-position maintained Schneider selector
+switch,1 x 2-way maintained,Spot lamps (OFF/ON),Right dash cluster (hole 3),Use received 2-position maintained Schneider selector; linked to relay T5
+switch,1 x 2-way maintained,Aux accessory / spare (OFF/ON),Right dash cluster (hole 4),Use received 2-position maintained Schneider selector; linked to relay B2 optional use
+switch,1 x 3-way maintained,Blower speed (OFF/LOW/HIGH),Mid AC cluster (hole 1),Use received 3-position maintained Schneider selector
+switch,1 x 2-way maintained,A/C clutch enable (OFF/ON),Mid AC cluster (hole 2),Use received 2-position maintained Schneider selector; linked to relay B1
+switch,1 x 2-way maintained,Reserved spare selector (OFF/ON),TBD / fascia overflow,Received 4th 2-position Schneider selector; do not drill final hole until need and LCD packaging are confirmed
+switch,Purchased needle-type ON/OFF switch,Diesel fuel-stop control (RUN/STOP),Dedicated concealed/single position near ignition,Already purchased and photographed; not one of the 7 Schneider selectors; keep manual diesel cutoff cable as backup
+winch_control,Lever-mounted control (verify),Winch control,Existing lever/winch control area,No standalone dash switch purchase until lever-mounted control is confirmed missing
 indicator_control,OEM stalk,Turn indicators (left/right),Steering column stalk,Not one of the 7 Schneider selectors
-indicator_control,1 x latching pushbutton,Hazards,Main dash easy-reach position,Separate red latching pushbutton
+indicator_control,1 x latching pushbutton,Hazards,Main dash easy-reach position,Separate red latching pushbutton; not part of the 7 Schneider selector count
 indicator_telltale,Cluster tell-tales,Turn/high beam indicator lamps,Gauge cluster,No extra selector switch required

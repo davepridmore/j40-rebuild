@@ -1,6 +1,6 @@
 # J40 Costs Workbook Reconciliation
 
-- Generated: 2026-05-02 06:35:28
+- Generated: 2026-05-02 09:05:48
 - Workbook: `/Users/davidpridmore/Documents/J40_Costs.xlsx`
 - Extracted rows: 280
 - Line-item rows: 176
@@ -15,9 +15,10 @@
 
 ## Match Status
 
-- `matched_exact_item`: 20
+- `matched_exact_item`: 22
 - `matched_exact_item_vendor`: 4
-- `no_match`: 151
+- `matched_fuzzy`: 1
+- `no_match`: 148
 - `not_applicable`: 105
 
 ## Priority Workbook Rows Still Unmatched

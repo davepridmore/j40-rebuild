@@ -12,6 +12,8 @@ Aftermarket dimension cross-check: `data/manual/rubber_recreation_aftermarket_di
 
 Exact measurement closure table: `data/manual/rubber_recreation_measurement_closure.csv`.
 
+Manufacturing requirements table: `data/manual/rubber_recreation_manufacturing_requirements.csv`.
+
 ## Release Position
 
 This is the fabricator handoff spec for quotation, prototype cutting, and sample preparation.
@@ -22,6 +24,78 @@ Toyota-style catalog data has been checked and added as a control reference. It 
 
 All dimensions are in `mm`.
 
+## Manufacturing Release Requirements
+
+Use this section as the fabrication purchase-order language. The dimension tables below still control the nominal geometry, but production acceptance also requires the material, process, inspection, packaging, and rejection controls in this section and in `data/manual/rubber_recreation_manufacturing_requirements.csv`.
+
+### Fabricator Deliverables
+
+Before full production, the fabricator must provide:
+
+1. A written quote listing each part ID, quantity, material, hardness, process route, and whether the part is cut, moulded, bonded, or formed.
+2. A first-article set: one `BM-SM`, one `BM-LG`, one `FS-OVAL`, and one left/right strip trial if the strip route is used.
+3. A material declaration or supplier datasheet for the rubber compound, including base polymer family and Shore A hardness.
+4. A one-page inspection report with part ID, quantity, key dimensions, durometer readings, visual result, date, and fabricator contact.
+5. Labeled bags for every part family and side/station where applicable.
+6. Return of all old samples, templates, and metal carriers after fabrication.
+
+Do not approve the final batch until the first articles pass dimensional check, durometer check, bench dry-stack, and vehicle/carrier trial fit.
+
+### Material Controls
+
+Rubber pieces must be new black solid automotive mount-grade rubber. The acceptable base compound is `EPDM` or `NR/SBR` unless a measured original sample proves a different compound. Do not use tyre rubber, crumb/recycled rubber, sponge foam, mixed offcuts, old salvage rubber, or unidentified compound.
+
+Required material targets:
+
+| Property | Acceptance Requirement | Verification |
+| --- | --- | --- |
+| Hardness | Shore A `60 +/-5`; preferred matched family target `58-62` | Durometer check using ASTM `D2240` as the reference method |
+| Compression set | Target `<=25%`; reject `>30%` after `22 h` at `70 C` and `25%` deflection | ASTM `D395` Method B certificate or same-compound supplier data |
+| Tensile strength | Minimum `8 MPa` | ASTM `D412` certificate or rubber stock datasheet |
+| Elongation at break | Minimum `250%` | ASTM `D412` certificate or rubber stock datasheet |
+| Heat aging | No cracking/tackiness; hardness change within `+/-10` Shore A points after `70 h` at `70 C`; retain at least `70%` tensile/elongation where data is available | ASTM `D573` certificate, supplier data, or same-compound heated sample check |
+| Ozone/weather resistance | Exterior automotive/mount-grade compound with antiozonant package; no visible cracking on supplier's stretched-sample data where available | ASTM `D1149` certificate where available or written compound declaration |
+
+If the fabricator cannot perform the laboratory tests, require a compound supplier datasheet or written declaration. A local shop saying the rubber is "hard" or "good quality" is not enough for final release.
+
+### Process Controls
+
+- Keep each matched family from one compound batch and one cure/cutting setup: `BM-SM` set, `BM-LG` pair, `FS-OVAL` pair, and `FS-STRIP-L/R` pair.
+- Measure finished rubber after curing, trimming, drilling/punching, and at least `24 h` relaxation at room temperature.
+- Circular cushions must have flat, parallel faces; face parallelism must be `<=0.5`, and bore/register concentricity must be `<=1.0`.
+- Functional holes and slots must be punched, bored, or waterjet cut. Do not burn, tear, or rough hand-knife the holes.
+- External load edges must be smooth. Circular cushion outer edges stay `R2-R3`; `FS-OVAL` relief corners stay `R3`; seating-face flash must be `<=0.5`.
+- Steel sleeves, cups, shims, and inserts must be deburred and corrosion protected after cutting/forming.
+- Sleeve final length is held until the rubber/cup stack is released. Cut sleeves to the released free stack height minus `3-4` target compression unless dry-fit proves another value.
+- Cup/seat washers must be real formed seats, not thin generic flat washers.
+
+### Bonded Parts
+
+If either strip rubber or the `FS-OVAL` insert is bonded to metal:
+
+1. Remove old rubber, rust, paint, oil, and loose adhesive from the carrier.
+2. Blast or sand to clean metal, then degrease before primer.
+3. Use a rubber-to-metal bonding system such as Chemlok `205/220` or local equivalent, applied per adhesive maker instructions.
+4. Clamp the part flat through cure.
+5. Reject visible edge lift, bubbles, loose corners, or glue-over repairs.
+
+ASTM `D429` is the reference method if the fabricator or compound supplier can provide rubber-to-metal adhesion data. For this small local batch, a clean process record plus edge-lift inspection is acceptable if no lab coupon is available.
+
+### Inspection And Rejection
+
+Inspect every part visually and record critical dimensions. For this small batch, `100%` visual inspection is practical and required.
+
+Reject any piece with:
+
+- Cracks, cuts, tearing, delamination, or tacky/undercured surface.
+- Voids larger than `1 mm` on a load face.
+- Oily bleed, strong uncured smell, embedded metal/debris, or visible crumb/filler lumps.
+- Rough functional holes, off-centre holes, or torn hole edges.
+- Mixed hardness across a matched family.
+- Wrong material, wrong side/hand, wrong thickness, or unapproved substitution.
+
+The fabricator may not substitute material, hardness, split-stack construction, sleeve length, hole pattern, or bonding method without written approval before manufacture.
+
 ## Toyota OE / EPC Controls
 
 Sources checked:
@@ -29,6 +103,7 @@ Sources checked:
 - [1978 Toyota Land Cruiser Cab Mounting & Body Mounting listing](https://www.toyotapartsdeal.com/parts-list/1978-toyota-land_cruiser/body/cab_mounting_body_mounting.html). This is an OEM dealer/EPC-style listing, not a factory drawing.
 - [Energy Suspension / EnergySuspensionParts `8.18105` reference page](https://www.energysuspensionparts.com/8.18105), which lists the `8.4104` body-mount set component thicknesses and counts. This is an aftermarket polyurethane reference, not Toyota rubber.
 - Local downloaded historical scan: `docs/_tmp/toyota_oe/ToyotaLandCruiserFJ40-PartsCatalog-Nov1967-opt.pdf`. The scan has no usable text layer, so it is retained only as a historical reference unless manually reviewed page by page.
+- ASTM reference pages checked for manufacturing controls: [`D2000`](https://store.astm.org/standards/d2000), [`D2240`](https://store.astm.org/standards/d2240), [`D395`](https://store.astm.org/standards/d395), [`D412`](https://store.astm.org/standards/d412), [`D573`](https://store.astm.org/Standards/d573.htm), [`D1149`](https://store.astm.org/standards/d1149), [`D3767`](https://store.astm.org/standards/d3767.htm), and [`D429`](https://store.astm.org/Standards/D429.htm).
 
 Usable OE controls:
 
@@ -243,6 +318,9 @@ Hold before production:
 ## Quality Gate
 
 Before accepting the batch:
+- Confirm the fabricator supplied the material declaration and inspection report.
+- Confirm every bag is labeled by part ID, quantity, batch/date, and side/station where applicable.
+- Confirm the first-article set passed before full production was released.
 - Check every OD, ID, and height against the table.
 - Check hardness on at least one piece from each rubber family.
 - Test each sleeve through the rubber and cup with an M10 bolt.

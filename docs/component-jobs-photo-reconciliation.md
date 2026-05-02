@@ -1,6 +1,6 @@
 # Component Jobs vs Photo Inventory Reconciliation
 
-- Generated: 2026-05-02 03:10:37
+- Generated: 2026-05-02 07:39:16
 - Source component jobs: `data/manual/component_jobs.csv`
 - Source photo inventory: `data/manual/photo_inventory.csv`
 - Output CSV: `data/manual/component_jobs_photo_reconciliation.csv`
@@ -9,7 +9,7 @@
 
 - `direct_photo_evidence`: 33
 - `indirect_photo_evidence_only`: 0
-- `no_photo_evidence`: 6
+- `no_photo_evidence`: 7
 
 ## Per-Component Results
 
@@ -19,6 +19,7 @@
 | `eps_vitz_donor_column_and_mounts` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `interior_dash_switch_fitup` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `interior_diesel_cutoff_ignition_security` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
+| `rear_brake_cable_line_refresh` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `suspension_upgrade_fitment_and_alignment` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `suspension_upgrade_spec_and_kit_lock` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `back_cabin` | `direct_photo_evidence` | 5 | 15 | `body_shell_with_doors_removed|dashboard_shell_and_cabin|rear_cargo_floor|rear_side_opening` | Rear cabin/body section is directly visible in multiple strip-down shots. |
@@ -35,7 +36,7 @@
 | `floor_pan` | `direct_photo_evidence` | 38 | 42 | `floor_pan_and_firewall|floor_pan_rust_zones|floor_seam_and_body_mount_rust` | Floor pan rust/condition is directly evidenced with dedicated close-ups. |
 | `front_brake_disc_baseline` | `direct_photo_evidence` | 7 | 11 | `steering_and_suspension_linkages` | Steering-linkage underside photos are the closest grouped direct evidence, with frame/mount shots providing supporting context for the current front disc inference. |
 | `front_windows` | `direct_photo_evidence` | 2 | 18 | `hood_and_front_windshield_overview` | Front windshield is explicitly captured in dedicated front overview shots. |
-| `front_wings` | `direct_photo_evidence` | 35 | 3 | `wing_removal_and_body_lift_prep` | Front wing removal state is directly documented in the body-lift prep photo set. |
+| `front_wings` | `direct_photo_evidence` | 6 | 38 | `detached_body_panels_and_doors|detached_doors_and_panels` | Front wings are tracked to paint from the April 23 send-day detached-parts batch; wing-removal photos are supporting context only. |
 | `hood` | `direct_photo_evidence` | 2 | 16 | `hood_and_front_windshield_overview` | Hood panel/latches are explicitly visible in front overview shots. |
 | `interior` | `direct_photo_evidence` | 47 | 4 | `cabin_overview|dashboard_and_cabin_stripdown|dashboard_lower_structure|dashboard_shell_and_cabin|driver_footwell_firewall_and_wiring|floor_pan_and_firewall|rear_cargo_floor` | Interior strip-down and cabin state are well documented. |
 | `issue_body_mount_captive_thread_repair` | `direct_photo_evidence` | 22 | 40 | `body_mount_and_crossmember_detail|frame_and_mount_points|frame_rail_body_mount_and_crossmember_detail` | Body-mount pedestal and mount-point photos cover captive-nut and sleeve/thread repair planning. |
@@ -46,8 +47,8 @@
 | `issue_steering_box_mount_crack_check` | `direct_photo_evidence` | 19 | 11 | `front_frame_horns_bumper_and_steering_area|steering_and_suspension_linkages` | Steering linkage and nearby mount photos are the baseline evidence set for steering-box mount crack checks. |
 | `old_accessory_wiring` | `direct_photo_evidence` | 17 | 4 | `driver_footwell_firewall_and_wiring|driver_footwell_firewall_pass_through|firewall_and_dash_wiring|pedal_box_wiring` | Accessory/electrical removal and rebuild work has strong direct photo coverage. |
 | `paint_returned_panels_refinished` | `direct_photo_evidence` | 18 | 4 | `refinished_hinges_brackets_and_trim|refinished_seat_or_mount_bracket|wiper_arm_or_linkage_hardware` | Off-vehicle refinished hardware/panel photos provide direct evidence of returned painted parts. |
-| `paint_sendout_panels_manifest` | `direct_photo_evidence` | 20 | 37 | `detached_body_panels_and_doors|detached_doors_and_panels|rear_hatch_inner_panel` | Detached panel/door batches provide direct send-out readiness evidence for painting. |
-| `paint_workshop_progress_media` | `direct_photo_evidence` | 40 | 19 | `off_vehicle_workstation_reference_video|panel_detail_and_markings|wing_removal_and_body_lift_prep` | In-progress workshop videos and panel-handling shots track painting/bodywork activity between send-out and return. |
+| `paint_sendout_panels_manifest` | `direct_photo_evidence` | 21 | 2 | `detached_body_panels_and_doors|detached_doors_and_panels|rear_hatch_inner_panel|roof_gutter_and_window_channel` | Detached panel/door batches and the April 23 roof image provide direct send-out evidence for painting. |
+| `paint_workshop_progress_media` | `direct_photo_evidence` | 5 | 19 | `off_vehicle_workstation_reference_video|panel_detail_and_markings` | In-progress workshop videos and panel-handling shots track painting/bodywork activity between send-out and return; stripdown wing-removal photos are not direct paint evidence. |
 | `rear_brake_drum_baseline` | `direct_photo_evidence` | 10 | 40 | `rear_axle_and_leaf_springs` | Rear axle underside shots are the main evidence set for drum hardware and parking-brake linkage condition. |
 | `rear_fuel_tank` | `direct_photo_evidence` | 4 | 40 | `fuel_filler_side_panel|rear_cargo_floor` | Fuel tank-out context and tank-area access are documented in filler-side and rear-floor images. |
 | `replacement_pipe_ordering_matrix` | `direct_photo_evidence` | 12 | 0 | `bellhousing_clutch_linkage_and_gearbox_case|cooling_hoses_fan_belt_and_radiator_support|cooling_pipe_fabrication_samples|frame_rail_body_mount_and_hard_line_detail|replacement_pipe_hose_sample_sorting` | Replacement pipe ordering is limited to selected pipe sample photos and close pipe/hose/line location evidence; body rubbers and broad chassis/mechanical context are excluded. |
