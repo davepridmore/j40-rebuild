@@ -69,9 +69,9 @@ OVERLAP_DECISIONS: tuple[OverlapDecision, ...] = (
     ),
     OverlapDecision(
         group_id="primer_system_stack",
-        chosen_entries=("part_primer", "part_self_etching_primer", "part_epoxy_primer", "part_seam_sealer", "part_wax_and_grease_remover"),
-        deferred_entries=(),
-        rationale="Treat primer stack as complementary stages, not mutually exclusive alternatives.",
+        chosen_entries=("part_primer", "part_seam_sealer", "part_wax_and_grease_remover"),
+        deferred_entries=("part_self_etching_primer", "part_epoxy_primer"),
+        rationale="Use the selected zinc-rich epoxy primer system with prep solvent and seam sealer; suppress self-etch and duplicate epoxy-primer placeholders.",
     ),
 )
 
@@ -205,7 +205,7 @@ def write_markdown(resolution_rows: list[dict[str, str]], buy_now_rows: list[dic
     for row in resolution_rows:
         lines.append(
             f"- `{row['overlap_group_id']}`: keep `{row['chosen_entries'] or 'none'}`; "
-            f"defer `{row['deferred_entries'] or 'none'}`"
+            f"defer/suppress `{row['deferred_entries'] or 'none'}`"
         )
     lines.append("")
     lines.append("## Immediate Actions")

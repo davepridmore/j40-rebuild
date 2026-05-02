@@ -70,6 +70,7 @@ Only chat content related to this build should be included. The importer treats 
 - `docs/j40-costs-tidy-extract.md`: normalized cost-tab tidy summary
 - `docs/reassembly-dependency-procurement-plan.md`: integrated reassembly sequencing + dependency split + procurement actions
 - `docs/procurement-pass2-tub-off.md`: second-pass procurement simplification for tub-off stage and local Pakistan sourcing assumptions
+- `docs/suspension-workstream.md`: start-here tracker and installation control sheet for the incoming Ironman Foam Cell suspension set
 - `docs/replacement-pipes-workstream.md`: start-here tracker for replacement pipes, hoses, hard lines, and made-to-order pipe samples
 - `docs/fabrication-handoff-index.md`: send-out index for rubber and electrical fabrication packages
 - `photos/index/`: generated lookup folders by component group, specific component, and stage
@@ -86,7 +87,7 @@ Only chat content related to this build should be included. The importer treats 
 - `scripts/sync_planning_into_cost_workbook.py`: writes all reconciled planning outputs back into `J40_Costs.xlsx` as managed tabs
 - `scripts/reconcile_full_cost_workbook.py`: full in-place workbook reconciliation pass (header fixes, mixed-tab splits, tab cleanup, consolidated planning tabs)
 - `scripts/build_engine_transmission_comparison.py`: models current-engine vs engine-swap completion costs (including transmission paths) and writes results into `J40_Costs.xlsx`
-- `scripts/update_tub_off_refit_and_suspension_plan.py`: writes tub-off to tub-refit control plan, activates OME+local-springs path, and syncs related workbook tabs
+- `scripts/update_tub_off_refit_and_suspension_plan.py`: writes tub-off to tub-refit control plan, activates the ordered Ironman Foam Cell suspension path, and syncs related workbook tabs
 - `scripts/move_wiring_fasteners_to_parts.py`: moves nut/bolt/washer-style rows from `Wiring` into `Parts` so parts tracking stays centralized
 - `scripts/track_pakwheels_gallery.py`: snapshots a PakWheels listing gallery and tracks image additions/removals over time
 - `scripts/build_project_control_ui.py`: builds `docs/project-control-ui/data.js` for the local project dashboard (workstreams, part ordering, project-step status, WhatsApp samples, and other-build references)
@@ -267,7 +268,7 @@ python3 scripts/reconcile_full_cost_workbook.py --workbook /Users/davidpridmore/
 python3 scripts/build_engine_transmission_comparison.py --workbook /Users/davidpridmore/Documents/J40_Costs.xlsx
 ```
 
-16. Sync tub-off/refit execution control, mount/rubber procurement, and OME + local-spring suspension decisions:
+16. Sync tub-off/refit execution control, mount/rubber procurement, and ordered Ironman Foam Cell suspension decisions:
 
 ```bash
 python3 scripts/update_tub_off_refit_and_suspension_plan.py --workbook /Users/davidpridmore/Documents/J40_Costs.xlsx

@@ -21,9 +21,9 @@
 - Strip-down is underway or imminent: roof, doors, hood, back cabin, and interior components are being discussed as removable work packages.
 - The current operating split is body and electrical at home, with heavier mechanical work expected through workshop contacts.
 - Electrical reset is a live workstream. Multiple harness options, grommets, sleeving, fuse hardware, and audio-related line items have already appeared in chat evidence.
-- Body and rust work is also live. Primer, seam sealer, bed lining, sound deadening, and floor repair materials are already on the shopping list.
+- Body and rust work is also live. Primer, prep solvent, seam sealer, cavity wax, and floor repair materials are on the active list; Raptor bedliner is tracked as on hand, and generic bed-lining/sound/foam/carpet buys stay gated until body closure.
 - New photo evidence through `2026-04-20` shows wing removal/body-lift prep and underside access are mature enough to run body-off welding as an active track, with dedicated chassis and stripped-engine tracks in parallel.
-- Steering feel is a known problem, but major steering or suspension upgrades should stay behind a decision gate until the mechanical baseline is inspected.
+- Steering feel remains a known problem. The suspension path is no longer hypothetical: the Ironman Foam Cell kit is ordered and must now be managed as an incoming safety-critical installation workstream with receipt, fitment, torque, alignment, and road-validation gates.
 
 ## Operating Rules
 
@@ -44,7 +44,7 @@
 | `03b_chassis_fixing` | `in_progress` | Chassis track (active after tub separation): clean and inspect rails/crossmembers/mounts, then execute frame repairs and protection closeout. | Chassis structural repairs are closed or explicitly approved with no unknowns remaining. |
 | `04_electrical_reset` | `in_progress` | Remove junk wiring, define final architecture, buy only the core electrical materials, and install a documented harness. | Starting, charging, lights, horn, wipers, gauges, and required accessories work from a clean, documented loom. |
 | `05_mechanical_baseline` | `in_progress` | Engine-while-stripped track: run service/inspection tasks while access is open (leaks, cooling, hoses, fluids, tune consumables). | Engine baseline maintenance is complete and post-service defects are logged. |
-| `06_steering_brakes_suspension` | `queued` | Resolve steering slack, brakes, shocks, axle-side wear, and only then decide on power steering and other upgrades. | Steering and braking are safe, and any upgrade path is chosen with the baseline data in hand. |
+| `06_steering_brakes_suspension` | `queued` | Resolve steering slack and brake baseline while receiving and installing the ordered Ironman Foam Cell suspension set under controlled gates. | Steering and braking are safe; Ironman suspension is contents-checked, installed, aligned, road-tested, and rechecked after settling. |
 | `07_interior_weatherproofing` | `queued` | Floor sealing, bed lining, sound deadening, foam, carpet, and interior refit only after leaks and rust are handled. | Cabin is sealed, quieter, and ready for final trim without trapping moisture. |
 | `08_final_assembly_validation` | `queued` | Reassemble, close punch-list items, validate drivability, and tie all evidence back to the project archive. | Reassembled truck passes road and function checks with open defects logged or closed. |
 | `09_optional_upgrades` | `backlog` | Android unit, audio, premium shocks, and other non-essential extras that should not distort the baseline budget. | Optional work is approved only after baseline completion and explicit budget sign-off. |
@@ -84,18 +84,23 @@
 ### Mechanical Baseline (Engine While Stripped)
 
 - Use stripped access to do high-value baseline maintenance first (hoses, leaks, cooling, service points, mounts inspection).
+- Current baseline keeps the engine installed. Do not buy an engine lift/hoist unless a later approved job actually requires engine support/removal.
 - Keep a written fault list with measured findings; hold upgrades until baseline reliability is closed.
 
 ### Mechanical Replacement Pack (Full Restore)
 
 - `MUST REPLACE (baseline service + reliability)`: engine oil and filter, air filter, fuel filter, diesel heat/glow plugs after exact engine-code/plug confirmation, accessory belts, radiator upper/lower hoses, heater hoses, thermostat and gasket, radiator cap, vacuum hoses, fuel-rated rubber lines with clamps, and brake flexible hose set.
-- `INSPECT THEN REPLACE`: engine mounts, clutch master/slave hydraulics, and any additional cooling-system wear items found during pressure testing.
+- `INSPECT THEN REPLACE`: clutch master/slave hydraulics and any additional cooling-system wear items found during pressure testing.
+- `INSPECT IN PLACE / DEFER`: engine mounts. Photograph and check them after degreasing and under load; buy mounts only if cracked, sagged, separated, oil-soaked, or if another approved job already requires safely supporting/lifting the engine.
 - `Decision rule`: keep these baseline replacements independent from optional upgrades (power steering conversion, premium shocks, audio, etc.) so reliability and safety close first.
 
 ### Steering, Brakes, and Suspension
 
-- Resolve the current steering play and brake baseline before deciding on power steering conversion style or shock upgrades.
-- Treat full suspension conversion as off-plan unless the project objective changes materially.
+- Use `docs/suspension-workstream.md` as the start-here control sheet for the Ironman Foam Cell install.
+- Track the kit as two shipments: main Ironman set plus separate `24635FE x2` front damper pair.
+- Do not buy alternate local/OME/Bilstein spring, shock, bush, shackle, or U-bolt options unless the Ironman receipt check proves a missing or incorrect item.
+- Resolve brake hose slack, parking-brake cable route, breather slack, steering damper clearance, shackle angle, ride height, alignment, and post-install torque checks before road use.
+- Current EPS route remains column-assist, not hydraulic, and does not require engine removal.
 
 ### Interior and Weatherproofing
 
@@ -107,7 +112,7 @@
 - `Harness strategy gate`: baseline starting point is now the hot rod 21-circuit harness path; only reopen the loom decision if strip-down exposes a hard compatibility problem.
 - `Body repair gate`: lock the corrosion-protection stack only after a rust map exists.
 - `Power steering gate`: choose retain/rebuild/manual versus conversion only after steering wear and mechanical packaging are inspected.
-- `Shock/suspension gate`: shocks and steering refresh are baseline candidates; full suspension conversion is deferred unless a new project brief explicitly approves it.
+- `Suspension installation gate`: Ironman kit is the approved path. No install starts without both shipments, receipt check, supplier/OEM torque sheet, clean hanger inspection, safe support gear, and brake/steering clearance plan.
 - `Audio/android gate`: do not commit until the base wiring is working and the dash/interior design is frozen.
 
 ## Legal/Admin Control Model
@@ -140,6 +145,7 @@
 6. Capture body-mount pedestal/captive-thread condition and lock shim + rubber + hardware refit plan before tub return.
 7. Run the electrical reset track in parallel: baseline harness termination, grounding, and fuse/relay validation only.
 8. Run stripped-engine maintenance in parallel with chassis access and log post-service defects.
-9. Keep procurement gated by phase: immediate rust-control buys now, defer interior and optional upgrade buys.
-10. Record exact prices for already received tools and consumables that are still missing amounts.
-11. Re-run the story and summary scripts after each meaningful ledger or evidence update so the archive stays current.
+9. Track Ironman suspension delivery and do only receipt/instruction prep until the complete kit and front damper pair are present.
+10. Keep procurement gated by phase: immediate rust-control buys now, defer interior and optional upgrade buys.
+11. Record exact prices for already received tools and consumables that are still missing amounts.
+12. Re-run the story and summary scripts after each meaningful ledger or evidence update so the archive stays current.

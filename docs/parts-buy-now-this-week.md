@@ -1,33 +1,34 @@
 # Parts Buy-Now Plan (This Week)
 
-- Generated: 2026-05-02 19:58:58
+- Generated: 2026-05-03 04:49:20
 - Source ledger: `data/manual/expenses.csv` (`bucket=parts`)
 - Overlap resolution table: `data/manual/parts_overlap_resolution.csv`
 - This-week list: `data/manual/parts_buy_now_this_week.csv`
 
 ## This-Week Counts
 
-- Rows in this-week list: 18
-- `confirm_price_then_order`: 8
+- Rows in this-week list: 19
+- `confirm_price_then_order`: 9
 - `track_delivery`: 10
 
 ## Priority Split
 
-- `P0`: 9
+- `P0`: 10
 - `P1`: 9
 
 ## Overlap Decisions Applied
 
-- `wiring_kit_options`: keep `none`; defer `none`
-- `grommet_options`: keep `part_rubber_grommet_set|part_firewall_grommet_set_small_medium|part_firewall_grommet_set_large_power`; defer `quote_rubber_grommet_set_chat`
-- `wire_sleeving_options`: keep `part_cable_sleeve_protection|part_split_conduit_braided_sleeve_small|part_split_conduit_braided_sleeve_medium|part_split_conduit_braided_sleeve_large`; defer `none`
-- `switch_options`: keep `none`; defer `part_horn_relay|part_spotlight_switch|part_winch_switch`
-- `floor_finish_stack`: keep `part_bedliner_sprays`; defer `part_bed_lining|part_sound_dampening_sheets|part_foam|part_carpet`
-- `primer_system_stack`: keep `part_primer|part_self_etching_primer|part_epoxy_primer|part_seam_sealer|part_wax_and_grease_remover`; defer `none`
+- `wiring_kit_options`: keep `none`; defer/suppress `none`
+- `grommet_options`: keep `part_rubber_grommet_set|part_firewall_grommet_set_small_medium|part_firewall_grommet_set_large_power`; defer/suppress `quote_rubber_grommet_set_chat`
+- `wire_sleeving_options`: keep `part_cable_sleeve_protection|part_split_conduit_braided_sleeve_small|part_split_conduit_braided_sleeve_medium|part_split_conduit_braided_sleeve_large`; defer/suppress `none`
+- `switch_options`: keep `none`; defer/suppress `part_horn_relay|part_spotlight_switch|part_winch_switch`
+- `floor_finish_stack`: keep `part_bedliner_sprays`; defer/suppress `part_bed_lining|part_sound_dampening_sheets|part_foam|part_carpet`
+- `primer_system_stack`: keep `part_primer|part_seam_sealer|part_wax_and_grease_remover`; defer/suppress `part_self_etching_primer|part_epoxy_primer`
 
 ## Immediate Actions
 
-- `confirm_price_then_order` (8):
+- `confirm_price_then_order` (9):
+  - `part_cabin_compact_fuse_boxes` [P0] Compact covered cabin blade fuse boxes - likely 3 identical units (price: price_tbd; order_date: 2026-05-03; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_firewall_grommet_set_large_power` [P0] Additional firewall grommet set IDs 16/20/25 mm (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_firewall_grommet_set_small_medium` [P0] Additional firewall grommet set IDs 6/8/10/12 mm (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_accessory_belt_set` [P1] Accessory belt set (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)

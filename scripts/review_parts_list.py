@@ -61,7 +61,7 @@ def action_bucket(row: dict[str, str]) -> str:
         return "researching"
     if procurement_stage == "next_phase_purchase":
         return "next_phase"
-    if procurement_stage in {"deferred_until_body_closed", "deferred_optional"}:
+    if procurement_stage.startswith("deferred") or procurement_stage in {"deferred_until_body_closed", "deferred_optional"}:
         return "deferred"
     if procurement_stage in {"needs_confirmation", "received_candidate"}:
         return "needs_confirmation"

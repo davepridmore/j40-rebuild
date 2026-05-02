@@ -3,7 +3,7 @@
 - Keep welding scope separate, but lock interface control now.
 - During tub-off, run a focused engine-access inspection and buy condition-based parts only.
 - Before tub goes back, complete mount-point mapping, mount repairs, and trial fit using correct rubbers/hardware/shims.
-- Suspension path is now fixed to the ordered Ironman Foamcell kit. Track it as two shipments: main kit plus separate front damper pair.
+- Suspension path is now fixed to the ordered Ironman Foamcell kit. Track it as two shipments: main kit plus separate front damper pair, with `docs/suspension-workstream.md` controlling receipt, installation, torque, alignment, and recheck instructions.
 
 ## Key Procurement Adds
 

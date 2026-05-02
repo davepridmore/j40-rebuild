@@ -30,6 +30,7 @@ All dimensions are in `mm`.
 | Part ID | Part | Qty | Status |
 | --- | --- | ---: | --- |
 | `CP-2H-COOLANT-001` | Formed metal coolant/radiator pipe assembly | `1` | Template and quote |
+| `CP-2H-COOLANT-002` | Rubber connector/coupler hoses for the formed pipe | `2` | Template and measure before order |
 
 ## Working Specification
 
@@ -41,6 +42,7 @@ Visible photo basis:
 
 - Formed metal tube with two hose-connected ends and at least one tight bend/offset.
 - Rubber hose overlap at both ends retained by worm-drive clamps.
+- Two short rubber connector/coupler hoses are part of the service package, even though the metal pipe remains the primary fabrication item.
 - Working visible envelope from tape references: roughly `400` vertical height and `250-300` upper offset. Treat these as planning values only.
 - Orderable tube blank length: `750 mm` minimum before bending and trimming.
 - Final pipe centerline length: measure from the physical sample after marking the bend centerlines; do not use the `750 mm` blank allowance as the finished length.
@@ -59,6 +61,14 @@ Fabrication requirement:
 9. Add rolled or beaded hose-retention ends to both hose connections.
 10. Deburr, clean internally, and pressure-test before paint/coating.
 11. Dry-fit on the vehicle before final coating.
+
+Connector hose requirement:
+
+1. Keep both old rubber connector hoses with the pipe sample until measured.
+2. Measure each connector's free/cut length, ID, OD, hose overlap, clamp band width, pipe-end OD/bead, mating spigot OD, bend/offset, and installed kink clearance in `mm`.
+3. Use straight EPDM coolant hose only if the dry-fit route stays round and unstressed.
+4. If straight hose kinks or twists, sample-match a molded EPDM coolant connector.
+5. Fit new smooth-band or constant-tension clamps matched to measured hose OD.
 
 ## Material Standard
 
@@ -94,6 +104,7 @@ Finish:
 | Bend centerlines/radii/clocking | Controls engine/radiator fit and hose angle | Physical pipe template and vehicle dry-fit |
 | End bead/flare geometry | Prevents hose blow-off under pressure | Old pipe end or new bead sample |
 | Clamp land length | Prevents leaks and hose damage | Measured hose overlap and clamp width |
+| Connector hose dimensions | Prevents reusing aged coolant couplers or ordering the wrong ID | Old rubber couplers, pipe-end ODs, mating spigots, and vehicle dry-fit |
 | Clearance | Avoids rubbing on fan, belts, radiator, body, or brackets | Dry-fit with engine movement allowance |
 | Pressure integrity | Confirms fabrication quality before coating | Bench pressure test |
 
@@ -101,4 +112,4 @@ Finish:
 
 Send the six selected photos, the old pipe, and this instruction:
 
-> Recreate this pipe from the physical sample. Start with a 750 mm minimum tube blank, then measure and trim to the physical sample's final centerline length. Match OD, bends, end beads, hose clamp lands, and clocking. Use coolant-compatible tube, smooth internal transitions, and pressure-test before coating. Do not rely on photo dimensions where calipers or vehicle dry-fit can be used.
+> Recreate this pipe from the physical sample. Start with a 750 mm minimum tube blank, then measure and trim to the physical sample's final centerline length. Match OD, bends, end beads, hose clamp lands, and clocking. Also measure and replace both rubber connector hoses by ID, cut length, overlap, clamp OD, and mating spigot OD; use molded EPDM connectors if straight hose kinks. Use coolant-compatible tube, smooth internal transitions, and pressure-test before coating. Do not rely on photo dimensions where calipers or vehicle dry-fit can be used.

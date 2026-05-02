@@ -23,8 +23,10 @@ def load_goods_rows() -> list[dict[str, str]]:
         for row in rows
         if (row.get("bucket", "").strip().lower() in GOODS_BUCKETS)
         and (row.get("status", "").strip().lower() != "cancelled")
+        and (row.get("status", "").strip().lower() != "deferred")
         and (row.get("delivery_status", "").strip().lower() != "not_required")
         and not (row.get("procurement_stage", "").strip().lower().startswith("not_required"))
+        and not (row.get("procurement_stage", "").strip().lower().startswith("deferred"))
     ]
 
 

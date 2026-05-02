@@ -100,6 +100,17 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
             "Already ordered; do not rebuy.",
         )
 
+    if entry_id == "part_mech_engine_mount_set" or prior == "defer_until_mount_failure_or_engine_lift_scope":
+        return (
+            "defer_until_mount_failure_or_engine_lift_scope",
+            "no_engine_lift_baseline",
+            "deferred_conditional",
+            (
+                "No engine-lift baseline: inspect mounts in place; defer purchase unless failed or "
+                "engine is already being supported/lifted for another approved job. EPS column conversion does not require engine removal."
+            ),
+        )
+
     if entry_id == "part_bedliner_sprays":
         return (
             "hold_until_post_weld_primer",
@@ -132,6 +143,14 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
             "pre_order_audit",
             "audit_then_order",
             "Electrical work is already advanced; verify current loom coverage before ordering more.",
+        )
+
+    if entry_id == "part_cabin_compact_fuse_boxes":
+        return (
+            "buy_compact_cabin_fuse_boxes",
+            "electrical_closeout",
+            "baseline_electrical_buy",
+            "Cabin fuse boxes are not ordered stock; buy likely 3 compact covered blade-fuse boxes after final fit check.",
         )
 
     if workstream == "electrical_reset" and prior in {"confirm_price_then_buy", "verify_stock_before_buy", "buy_now"}:
@@ -198,8 +217,14 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
 
 
 def supplier_hint(mode: str, decision: str) -> str:
-    if decision in {"defer_as_non_baseline", "defer_until_baseline_closure"}:
+    if decision in {
+        "defer_as_non_baseline",
+        "defer_until_baseline_closure",
+        "defer_until_mount_failure_or_engine_lift_scope",
+    }:
         return "No supplier action now."
+    if decision == "buy_compact_cabin_fuse_boxes":
+        return "Use local electrical markets; require compact covered ATO/ATC blade-fuse boxes with secure lids."
     if decision in {"stock_audit_then_local_topup", "local_topup_buy"}:
         return "Use Montgomery Road / local electrical markets for small top-ups after stock count."
     if mode == "local_toyota_common":
@@ -220,10 +245,14 @@ def basket_id_for_row(decision: str, mode: str, workstream: str) -> str:
         return "basket_body_stack_after_rustmap"
     if decision in {"stock_audit_then_local_topup", "local_topup_buy", "scope_audit_before_order"} and workstream == "electrical_reset":
         return "basket_electrical_stock_audit_topup"
+    if decision == "buy_compact_cabin_fuse_boxes":
+        return "basket_compact_cabin_fuse_boxes"
     if decision == "bundle_local_toyota_buy_after_inspection":
         return "basket_mechanical_local_bundle"
     if decision == "inspect_then_local_decide":
         return "basket_condition_based_after_inspection"
+    if decision == "defer_until_mount_failure_or_engine_lift_scope":
+        return "basket_engine_mounts_later_if_failed"
     if decision == "track_in_flight_order":
         return "basket_in_flight_tracking"
     if decision == "buy_before_suspension_work":
@@ -273,8 +302,10 @@ def build_baskets(rows: list[dict[str, str]]) -> list[dict[str, str]]:
         "basket_tub_off_rust_minimum": ("Tub-Off Rust Minimum", "Immediate bare-metal stabilization only."),
         "basket_body_stack_after_rustmap": ("Body Stack After Rust Map", "Buy epoxy/etch/sealer/wax stack after repair scope is confirmed."),
         "basket_electrical_stock_audit_topup": ("Electrical Stock-Audit Top-Up", "Count existing wiring stock first; buy only shortages."),
+        "basket_compact_cabin_fuse_boxes": ("Compact Cabin Fuse Boxes", "Buy compact covered cabin fuse boxes; likely three matching units."),
         "basket_mechanical_local_bundle": ("Mechanical Local Bundle", "Single local Toyota/common supplier batch after inspection."),
         "basket_condition_based_after_inspection": ("Condition-Based Replacements", "Buy only failed/worn parts after inspection."),
+        "basket_engine_mounts_later_if_failed": ("Engine Mounts Later If Failed", "No engine lift in baseline; inspect in place before any purchase."),
         "basket_suspension_setup": ("Suspension Setup Support", "Buy support/cribbing items before suspension disassembly."),
         "basket_specialty_after_audit": ("Specialty/Import After Audit", "Order only if local/on-hand cannot cover."),
         "basket_in_flight_tracking": ("In-Flight Orders", "No rebuy; only track delivery/quality."),

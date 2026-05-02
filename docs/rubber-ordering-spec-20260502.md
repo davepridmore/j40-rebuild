@@ -13,6 +13,7 @@ Related source lists:
 - [body_mount_release_actions.csv](../data/manual/body_mount_release_actions.csv)
 - [body_mount_station_closure_sheet.csv](../data/manual/body_mount_station_closure_sheet.csv)
 - [rubber_recreation_manufacturing_requirements.csv](../data/manual/rubber_recreation_manufacturing_requirements.csv)
+- [rubber_hose_component_audit.csv](../data/manual/rubber_hose_component_audit.csv)
 
 ## Ordering Position
 
@@ -27,13 +28,14 @@ Use `data/manual/rubber_ordering_specs.csv` as the current source of truth for o
 | `RUB-003` | Firewall/column/wiper/rear wiring grommet top-up | Audit existing grommet kit, then top up by measured hole sizes | Do not buy another bulk kit until existing inventory is matched |
 | `RUB-009` | Brake flexible hose set | Buy new safety assemblies | Confirm end fittings and hose length with Ironman lift/droop clearance in mind |
 | `RUB-011` | Fuel feed/return/vent hoses and clamps | Buy new fuel-rated hose and clamps | Measure ID/lengths; do not substitute coolant, vacuum, or generic hose |
+| `RUB-028` | Formed coolant pipe connector/coupler hoses | Replace with the formed pipe assembly | Measure both connector IDs/ODs, pipe-end ODs, mating spigots, cut lengths, overlap, clamp ODs, and kink clearance |
 
 ## Inspect Before Buying
 
 | Order ID | Item | Action | Gate |
 | --- | --- | --- | --- |
 | `RUB-004` | Steering column firewall boot/seal | Buy or fabricate only if current seal fails | Trial-fit column/firewall first |
-| `RUB-005` | Engine mounts | Inspect under load, then buy diesel-compatible mounts by bracket pattern | Reject gasoline-only listings unless physically identical |
+| `RUB-005` | Engine mounts | Inspect in place; defer purchase under the no-engine-lift baseline | Buy only if failed or if another approved job already supports/lifts the engine |
 | `RUB-006` | Gearbox/transfer mounts and top-cover rubbers | Inspect after degreasing, then sample-match | Confirm transmission/transfer combination |
 | `RUB-007` | Leaf spring eye and shackle bushes | Do not order separately yet | Count Ironman kit contents first |
 | `RUB-008` | Steering bushings | Buy only if measurable play/cracking remains | Diagnose play source first |
@@ -42,6 +44,7 @@ Use `data/manual/rubber_ordering_specs.csv` as the current source of truth for o
 | `RUB-013` to `RUB-016` | Heater/coolant/reservoir/vacuum hoses | Buy by condition, routing, and diameter | Confirm engine, radiator, heater, and vacuum routing |
 | `RUB-022` | Exhaust hanger rubbers | Buy by dimension if failed | Measure pin diameter and hole spacing |
 | `RUB-026` | Bump stops | Inspect during Ironman work | Confirm loaded ride height and axle travel |
+| `RUB-027` | Engine air-cleaner intake duct/couplers | Inspect and sample-match only if failed | Measure air-cleaner outlet OD, intake inlet OD, free length, offset, accordion travel, branch OD, and clamp OD |
 
 ## Defer Until Body Or HVAC Stage
 
@@ -61,6 +64,7 @@ Use `data/manual/rubber_ordering_specs.csv` as the current source of truth for o
 - Brake hoses must be complete crimped hydraulic brake hose assemblies, `DOT/SAE J1401` or OEM-equivalent. Do not fabricate from generic rubber hose.
 - Fuel hoses must be diesel/fuel rated. Use `SAE J30 R9` where possible for feed/pressure exposure; use lower-pressure hose only where the circuit is confirmed low-pressure return/vent.
 - Coolant and heater hoses must be EPDM coolant/heater hose, not fuel, vacuum, washer, or generic water hose.
+- Engine air-intake ducting must be oil-mist resistant intake/air-duct rubber or reinforced air duct, not coolant/fuel/vacuum hose.
 - A/C O-rings must be refrigerant-compatible, normally HNBR for an `R134a` system.
 - Body mount rubber must be one matched automotive mount-grade batch. Do not mix old/new, rubber/polyurethane, or different hardnesses side to side.
 - Locally recreated body/front-support rubbers must include first articles, material declaration, Shore A check, critical-dimension report, dry-stack check, and labeled packaging per [rubber_recreation_manufacturing_requirements.csv](../data/manual/rubber_recreation_manufacturing_requirements.csv).

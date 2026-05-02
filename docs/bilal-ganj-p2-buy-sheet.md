@@ -3,7 +3,7 @@
 Date: 2026-04-15  
 Source of truth: `J40_Costs.xlsx` (`Parts` tab, P2 rows)
 
-Note: relay/fuse hardware already bought is recorded in the workbook as received/paid wiring inventory. This sheet no longer lists a separate interior/cabin fuse-box purchase.
+Note: the 10-way relay/fuse block is already bought and remains valid as specified. The separate cabin/interior car fuse boxes are not ordered; buy compact covered blade-fuse boxes separately.
 
 ## What To Buy First (De-duplicated)
 
@@ -36,7 +36,18 @@ Note: relay/fuse hardware already bought is recorded in the workbook as received
      - Alternative: 40-series style ignition barrel + key set (ACC/IGN/START switch positions).
    - **Estimated price (PKR)**: `4,000 - 25,000` (avg `12,000`)
 
-4. **Electrical power steering (EPS) complete conversion kit**
+4. **Compact cabin fuse boxes**
+   - Ledger entry: `part_cabin_compact_fuse_boxes`
+   - Workbook correction: row `57` / `INV-0081` is a wrong generic listing and is **not** purchased stock.
+   - **Exact spec**:
+     - Target quantity: **3 identical compact covered automotive blade-fuse boxes**.
+     - Fuse type: ATO/ATC blade fuse format.
+     - Body: compact/OEM-style, covered, secure lid, strong terminals, no heat damage if donor.
+     - Use for cabin/interior car fuse circuits only; do not substitute the already-bought relay block.
+     - Reject large open universal blocks and anything sold as `Portable 12-Way Car Fuse Box Universal Automotive Box Holder with Led Indicator`.
+   - **Estimated price (PKR)**: `11,100 - 21,000` (avg `15,000`)
+
+5. **Electrical power steering (EPS) complete conversion kit**
    - Workbook row: `210`
    - **Exact spec (must be included in one kit)**:
      - Column-assist EPS unit: motor + torque sensor + reduction gear
@@ -47,6 +58,7 @@ Note: relay/fuse hardware already bought is recorded in the workbook as received
      - Column mount/clamp bracket set + firewall support bracket
      - 60A fused feed path hardware + ignition trigger lead
      - Fail-safe manual steering operation when assist is off
+     - Column-assist conversion only; engine stays installed, with no engine lift or hydraulic pump hardware in this scope.
    - **Bench test before payment**:
      - No motor grinding noise
      - No jerky or delayed assist on smooth wheel rotation
@@ -56,14 +68,14 @@ Note: relay/fuse hardware already bought is recorded in the workbook as received
 ## Estimated Total
 
 - **Core P2-A + P2-B pack (without EPS)**
-  - Low: `64,000 PKR`
-  - Average: `114,000 PKR`
-  - High: `190,000 PKR`
+  - Low: `75,100 PKR`
+  - Average: `129,000 PKR`
+  - High: `211,000 PKR`
 
 - **Core pack + EPS**
-  - Low: `118,000 PKR`
-  - Average: `204,000 PKR`
-  - High: `326,000 PKR`
+  - Low: `129,100 PKR`
+  - Average: `219,000 PKR`
+  - High: `347,000 PKR`
 
 ## Local Photos To Take On Phone (Your Car References)
 
@@ -91,5 +103,5 @@ Note: relay/fuse hardware already bought is recorded in the workbook as received
 - Confirm **metric thread pitch** with nut gauge: `M10x1.25` and `M8x1.25` where specified.
 - Reject structural bolts without clear class marking (`8.8` minimum for these kits).
 - For rubber mounts, buy only after physical sample fit (ID/OD/height + sleeve length).
-- Do not add a cabin/interior fuse-box purchase unless the workbook is explicitly updated with new evidence.
+- Buy the compact cabin fuse boxes as a separate open item; do not count the relay block or wrong `Portable 12-Way` listing as cabin fuse-box stock.
 - Do not double-buy duplicates: row `11` and detailed rows `225-228` cover the fastener kits; row `12` covers the rubber kit; row `13` covers shims/spacers.

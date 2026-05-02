@@ -1,6 +1,6 @@
 # Reassembly, Dependency, and Procurement Plan
 
-- Generated: 2026-05-02 09:05:53
+- Generated: 2026-05-03 04:49:30
 - Work packages: `data/manual/reassembly_work_packages.csv`
 - Dependency edges: `data/manual/reassembly_dependency_edges.csv`
 - Component disposition: `data/manual/component_disposition_plan.csv`
@@ -23,10 +23,11 @@
 
 ## Procurement Decisions
 
-- `confirm_price_then_buy`: 6
-- `defer_duplicate_overlap`: 5
+- `confirm_price_then_buy`: 7
+- `defer_duplicate_overlap`: 4
 - `defer_optional`: 1
-- `inspect_then_buy`: 2
+- `defer_until_mount_failure_or_engine_lift_scope`: 1
+- `inspect_then_buy`: 1
 - `research_compare_then_select`: 1
 - `review`: 14
 - `track_ordered_delivery`: 10
@@ -46,4 +47,4 @@
 - Close `WP01` + `WP03` in parallel: body rust closure and electrical baseline finalization are both active and should keep moving.
 - Run `WP04` procurement now: 6 mechanical rows still require buy execution.
 - Avoid duplicate buys: 2 rows are flagged as likely already on hand and should be physically stock-checked first.
-- Keep interior stack gated: bed lining/sound/foam/carpet stay blocked until body sealing gate is formally closed.
+- Keep interior finish gated: bedliner application/sound/foam/carpet stay blocked until body sealing gate is formally closed, with no extra bed-lining purchase in the baseline.

@@ -13,10 +13,22 @@ Use with: `bilal-ganj-master-shopping-list.md` + `bilal-ganj-mechanic-checklist.
 | 29 | Heat plugs (glow plugs) | `NEW_ONLY` |
 | 33, 44, 45, 46, 47 | OME/EMU quote items | `NEW_GENUINE_ONLY` |
 | 39 | Ignition lock security | `SERVICE_OR_NEW` (no worn loose used lock) |
+| part_cabin_compact_fuse_boxes | Compact cabin fuse boxes | `NEW_ONLY` or clean donor OEM-style only if terminals/lid are perfect |
 | 210 | EPS kit | `USED_TESTED_2005_2011_SCP90_NCP90_ONLY` (bench test mandatory) |
 | 211 | Steering bushings | `NEW_ONLY` |
 
-Relay/fuse hardware already bought remains in the received/paid workbook inventory; this market spec has no separate cabin/interior fuse-box buy item.
+Relay/fuse hardware already bought remains valid for the relay block only. Cabin/interior car fuse boxes are a separate open buy item.
+
+## 0A) Compact Cabin Fuse Boxes
+
+| Spec | Requirement |
+| --- | --- |
+| Quantity | Likely 3 identical compact units; confirm final circuit split before payment |
+| Type | Covered automotive blade-fuse box, ATO/ATC fuse format |
+| Form factor | Compact/OEM-style with secure lid and strong terminals |
+| Use | Cabin/interior car fuse circuits only |
+| Reject | Already-bought relay block, large open universal blocks, loose relay/fuse combo boxes, and anything sold as `Portable 12-Way Car Fuse Box Universal Automotive Box Holder with Led Indicator` |
+| Condition | New preferred; donor acceptable only if compact, covered, terminals are tight, lid clips securely, and there is no heat damage |
 
 ## 1) Fastener Kits (Exact Purchase Spec)
 

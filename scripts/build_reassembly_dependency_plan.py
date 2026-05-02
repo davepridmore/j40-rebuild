@@ -269,6 +269,33 @@ def build_procurement_decisions(
             action = "physically_check_stock_then_buy_if_missing"
             reason = "Wiring stock tab already shows substantial received material; validate on-hand quantity before rebuy."
 
+        if entry_id == "part_cabin_compact_fuse_boxes":
+            decision = "confirm_price_then_buy"
+            dependency_gate = "baseline_electrical"
+            action = "confirm_compact_model_quantity_then_buy"
+            reason = "Cabin fuse boxes are not ordered stock; buy likely 3 compact covered blade-fuse boxes after final fit check."
+        elif entry_id == "part_mech_engine_mount_set":
+            decision = "defer_until_mount_failure_or_engine_lift_scope"
+            dependency_gate = "in_place_mount_inspection"
+            action = "inspect_in_place_no_engine_lift_purchase"
+            reason = (
+                "No engine-lift baseline: inspect mounts in place; defer purchase unless failed or "
+                "another approved job already supports/lifts the engine. EPS column conversion does not require engine removal."
+            )
+        elif entry_id == "part_power_steering_upgrade":
+            decision = "research_compare_then_select"
+            dependency_gate = "market_scout"
+            action = "complete_pre_payment_check"
+            reason = "Quote and buy/no-buy decision only; use the SCP90/NCP90 EPS market scout spec."
+        elif entry_id == "part_suspension_wooden_cribbing_blocks":
+            decision = "confirm_price_then_buy"
+            dependency_gate = "baseline_execution"
+            action = "quote_against_wood_cut_list"
+            reason = (
+                "Merchant-facing cut list is ready; confirm price for 8 x 12x6x3 in hardwood blocks "
+                "plus 4 tapered 8x4x3 in wedge chocks."
+            )
+
         decisions.append(
             {
                 "entry_id": entry_id,
@@ -339,6 +366,9 @@ def build_component_disposition(
             reuse_decision = "reuse_after_repair_and_seal"
             pre_reassembly_action = "close_floor_rust_map_and_repair_scope"
             dependency_lane = "body_structure"
+        elif status == "planned_scope_lock" and row.get("storage_or_vendor", "") == "market_scout":
+            pre_reassembly_action = "confirm_market_evidence"
+            dependency_lane = "procurement"
 
         output.append(
             {
@@ -425,7 +455,7 @@ def build_work_packages(
             evidence_signal=f"rust_assessment_photos={rust_photos}, stripdown_photos={stripdown_photos}",
             blocker_summary=f"{body_buy_now} body material rows still need buy execution.",
             gate_to_close="Rust map signed off and repaired zones primed.",
-            key_procurement_actions="Confirm price/order for primer + bedliner + metal protection stack.",
+            key_procurement_actions="Track primer/prep/seam-sealer/cavity-wax deliveries; use on-hand Raptor bedliner; no generic metal-protection or bed-lining duplicate buy.",
         ),
         WorkPackage(
             work_package_id="WP02",
@@ -563,7 +593,7 @@ def write_report(
         f"- Avoid duplicate buys: {decision_counts.get('verify_stock_before_buy', 0)} rows are flagged as likely already on hand and should be physically stock-checked first."
     )
     lines.append(
-        "- Keep interior stack gated: bed lining/sound/foam/carpet stay blocked until body sealing gate is formally closed."
+        "- Keep interior finish gated: bedliner application/sound/foam/carpet stay blocked until body sealing gate is formally closed, with no extra bed-lining purchase in the baseline."
     )
 
     REPORT_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")

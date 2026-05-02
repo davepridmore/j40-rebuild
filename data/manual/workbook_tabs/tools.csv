@@ -43,7 +43,7 @@ excel_row,col_1,col_2,col_3,col_4,col_5,col_6,col_7
 51,"German Imported WORKPRO Flap Discs 60 Grit, 125mm x 22.2mm, Angle Grinder Discs x 3",3000,Daraaz,Y,,procured_or_on_hand,Evidence indicates purchased/received.
 52,EDON Expert MIG 270 (15Kg) (Single Phase) BUILTIN WIRE FEEDER (GAS OR GASLESS),76500,toolshub,No,Y,ordered_in_flight,Paid for but not yet received.
 53,Drill chuck (compatible with existing drill spindle/arbor),,Local hardware/tools market,Y,,procured_or_on_hand,Acquired; user reports Aamir shared image evidence.
-54,22mm step drill bit (metal panel capable),,Local hardware/tools market,No,,planned_or_open,Primary tool to open existing pull-switch holes toward 22mm.
-55,22mm chassis punch or precision hole cutter,,Local hardware/tools market,No,,ordered_in_flight,Recently ordered; awaiting arrival confirmation.
-56,Deburring tool / round file set for panel holes,,Local hardware/tools market,No,,planned_or_open,Required for clean switch fit and paint-edge protection.
+54,22mm step drill bit (metal panel capable),,Toolsmart.pk,Y,Y,procured_or_on_hand,Received; Toolsmart TM25430 22mm bi-metal hole saw now covers the 22mm panel-hole cutting need.
+55,22mm chassis punch or precision hole cutter,,Toolsmart.pk,Y,Y,procured_or_on_hand,Received; fulfilled by Toolsmart TM25430 Total Bi-metal Hole saw 22mm TAC410221.
+56,Deburring tool / round file set for panel holes,,Toolsmart.pk,Y,Y,procured_or_on_hand,Received; fulfilled by Toolsmart TM25430 Total Round steel file 200mm THT91386 for switch-panel hole cleanup.
 57,Digital caliper (hole/spacing verification),,Local hardware/tools market,No,,planned_or_open,Used to validate hole diameter and center spacing before cutting.

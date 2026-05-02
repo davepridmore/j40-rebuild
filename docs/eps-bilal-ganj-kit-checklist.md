@@ -13,6 +13,8 @@ Quantity: **1 complete matched EPS kit**. Do not split the column, ECU/controlle
 
 This is not hydraulic power steering. Do not buy pumps, racks, hydraulic steering boxes, hoses, or a loose EPS motor by itself.
 
+Scope clarification: the current EPS route is column-assist with the engine left installed. It does not require engine removal, an engine lift, hydraulic pump brackets, crank pulleys, or power-steering hoses.
+
 The set must be a matched donor set: column, controller/ECU, connectors, shafts, U-joints, couplers, and brackets from the same donor family. Do not accept a random ECU paired with an unrelated column unless the seller demonstrates the exact pair working on the bench.
 
 ## Accept/Reject Checklist (On-Site)
