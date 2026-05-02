@@ -1,6 +1,6 @@
 # Parts Buy-Now Plan (This Week)
 
-- Generated: 2026-05-02 09:16:14
+- Generated: 2026-05-02 18:04:00
 - Source ledger: `data/manual/expenses.csv` (`bucket=parts`)
 - Overlap resolution table: `data/manual/parts_overlap_resolution.csv`
 - This-week list: `data/manual/parts_buy_now_this_week.csv`
@@ -35,7 +35,7 @@
   - `part_mech_fuel_filter` [P1] Fuel filter (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_heat_glow_plugs_set` [P1] Heat/glow plugs set - diesel 2H (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_radiator_cap` [P1] Radiator cap (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_suspension_wooden_cribbing_blocks` [P1] Hardwood cribbing / wooden support blocks for suspension replacement - 12 piece working set (price: price_tbd; order_date: 2026-05-02; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
+  - `part_suspension_wooden_cribbing_blocks` [P1] Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks (price: price_tbd; order_date: 2026-05-02; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
 - `track_delivery` (10):
   - `part_cavity_wax` [P0] HB Body U900 cavity wax spray 400ml (price: price_tbd; order_date: 2026-05-02; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: paid)
   - `part_fastener_kit_a_millat` [P0] Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves (price: price_tbd; order_date: 2026-04-18; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: paid)

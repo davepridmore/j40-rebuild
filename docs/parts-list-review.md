@@ -1,6 +1,6 @@
 # Parts List Review
 
-- Generated: 2026-05-02 09:16:10
+- Generated: 2026-05-02 18:04:41
 - Source: `data/manual/expenses.csv` (`bucket=parts`) -> 69 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
@@ -40,7 +40,7 @@
 - `part_mech_fuel_filter` [mechanical_baseline] Fuel filter
 - `part_mech_heat_glow_plugs_set` [mechanical_baseline] Heat/glow plugs set - diesel 2H
 - `part_mech_radiator_cap` [mechanical_baseline] Radiator cap
-- `part_suspension_wooden_cribbing_blocks` [steering_brakes_suspension] Hardwood cribbing / wooden support blocks for suspension replacement - 12 piece working set
+- `part_suspension_wooden_cribbing_blocks` [steering_brakes_suspension] Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks
 
 ## Buy-Now / Quote-Ready With Confirmed Price
 
