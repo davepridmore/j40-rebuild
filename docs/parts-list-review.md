@@ -1,6 +1,6 @@
 # Parts List Review
 
-- Generated: 2026-05-02 18:04:41
+- Generated: 2026-05-02 19:58:58
 - Source: `data/manual/expenses.csv` (`bucket=parts`) -> 69 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
@@ -13,8 +13,7 @@
 - `deferred`: 5
 - `next_phase`: 3
 - `ordered_waiting_arrival`: 10
-- `researching`: 1
-- `unclear`: 14
+- `unclear`: 15
 
 ## Workstream Split
 
