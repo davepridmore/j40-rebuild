@@ -30075,7 +30075,8 @@ window.J40_DASHBOARD_DATA = {
           "id": "eps_scp90_ncp90_market_scout",
           "title": "EPS Market Scout Spec",
           "scope": "Pre-purchase only",
-          "plain_stall_request": "I need a complete 2005-2011 Toyota Vitz/Yaris 90-series electric EPS steering column set, chassis code SCP90 or NCP90, with matching computer/ECU, original plugs with wiring tails, shafts, U-joints, couplers, and brackets, tested working.",
+          "quantity": "1 complete matched EPS kit",
+          "plain_stall_request": "I need one complete 2005-2011 Toyota Vitz/Yaris 90-series electric EPS steering column set, chassis code SCP90 or NCP90, with matching computer/ECU, original plugs with wiring tails, shafts, U-joints, couplers, and brackets, tested working.",
           "buy_target": "Buy candidate is only a 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 column-assist EPS set. Corolla, Axio, Prius, hydraulic steering parts, loose motors, loose ECUs, and mixed-family sets are quote/photo only.",
           "must_include": [
             "Motorized EPS steering column with torque sensor and reduction housing.",
@@ -30110,7 +30111,8 @@ window.J40_DASHBOARD_DATA = {
             "Full kit photo with every included shaft, U-joint, coupler, bracket, and fastener visible."
           ],
           "price_guidance": {
-            "target_range": "PKR 54,000-136,000",
+            "unit_price_range": "PKR 54,000-136,000",
+            "total_value_range": "PKR 54,000-136,000",
             "negotiation_midpoint": "PKR 90,000",
             "rule": "Do not pay complete-kit price for missing ECU/controller, plugs, shafts, U-joints, couplers, or brackets."
           },
@@ -36905,6 +36907,8 @@ window.J40_DASHBOARD_DATA = {
         "stage": "pre_payment_market_check",
         "decision": "",
         "cost": "30000",
+        "quantity": "included in matched kit",
+        "total_value": "included in complete kit total",
         "notes": "Quote support range",
         "links": [
           {
@@ -36945,6 +36949,8 @@ window.J40_DASHBOARD_DATA = {
         "stage": "pre_payment_market_check",
         "decision": "",
         "cost": "40000",
+        "quantity": "included in matched kit",
+        "total_value": "included in complete kit total",
         "notes": "Market listing range",
         "links": [
           {
@@ -36964,7 +36970,9 @@ window.J40_DASHBOARD_DATA = {
         "item": "Vitz/Yaris 2005-2011 SCP90/NCP90 EPS column complete set (motor+torque sensor+housing)",
         "stage": "pre_payment_market_check",
         "decision": "",
-        "cost": "100000",
+        "cost": "90000",
+        "quantity": "1 complete matched EPS kit",
+        "total_value": "90000",
         "notes": "Market listing range",
         "links": [
           {
@@ -36984,7 +36992,7 @@ window.J40_DASHBOARD_DATA = {
         "item": "Vitz/Yaris 2005-2011 SCP90/NCP90 EPS column complete set (motor+torque sensor+reduction housing)",
         "stage": "",
         "decision": "BUY_AFTER_PHYSICAL_TEST",
-        "cost": "100000",
+        "cost": "90000",
         "notes": "Bench test before payment; confirm donor label/year/chassis 2005-2011 SCP90/NCP90; no play/noise; matching kit contents visible.",
         "links": [
           {
@@ -38483,7 +38491,8 @@ window.J40_DASHBOARD_DATA = {
         "id": "eps_scp90_ncp90_market_scout",
         "title": "EPS Market Scout Spec",
         "scope": "Pre-purchase only",
-        "plain_stall_request": "I need a complete 2005-2011 Toyota Vitz/Yaris 90-series electric EPS steering column set, chassis code SCP90 or NCP90, with matching computer/ECU, original plugs with wiring tails, shafts, U-joints, couplers, and brackets, tested working.",
+        "quantity": "1 complete matched EPS kit",
+        "plain_stall_request": "I need one complete 2005-2011 Toyota Vitz/Yaris 90-series electric EPS steering column set, chassis code SCP90 or NCP90, with matching computer/ECU, original plugs with wiring tails, shafts, U-joints, couplers, and brackets, tested working.",
         "buy_target": "Buy candidate is only a 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 column-assist EPS set. Corolla, Axio, Prius, hydraulic steering parts, loose motors, loose ECUs, and mixed-family sets are quote/photo only.",
         "must_include": [
           "Motorized EPS steering column with torque sensor and reduction housing.",
@@ -38518,7 +38527,8 @@ window.J40_DASHBOARD_DATA = {
           "Full kit photo with every included shaft, U-joint, coupler, bracket, and fastener visible."
         ],
         "price_guidance": {
-          "target_range": "PKR 54,000-136,000",
+          "unit_price_range": "PKR 54,000-136,000",
+          "total_value_range": "PKR 54,000-136,000",
           "negotiation_midpoint": "PKR 90,000",
           "rule": "Do not pay complete-kit price for missing ECU/controller, plugs, shafts, U-joints, couplers, or brackets."
         },

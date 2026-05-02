@@ -123,9 +123,11 @@ Shim/spacer target pack:
 
 ## 5) EPS Kit (Row 229) - Market Scout Buying Spec
 
-Plain stall request: **"I need a complete 2005-2011 Toyota Vitz/Yaris 90-series electric EPS steering column set, chassis code SCP90 or NCP90, with matching computer/ECU, original plugs with wiring tails, shafts, U-joints, couplers, and brackets, tested working."**
+Plain stall request: **"I need one complete 2005-2011 Toyota Vitz/Yaris 90-series electric EPS steering column set, chassis code SCP90 or NCP90, with matching computer/ECU, original plugs with wiring tails, shafts, U-joints, couplers, and brackets, tested working."**
 
 Ask for: **one complete 2005-2011 Toyota Vitz/Yaris 90-series electric column-assist EPS set**, chassis code **SCP90 or NCP90**. Corolla/Axio, Prius, and other Toyota EPS columns are **not buy candidates** for this build unless explicitly approved later; collect quote/photos only if no SCP90/NCP90 set is found. This is **not** hydraulic power steering; do not buy pumps, steering racks, hydraulic boxes, hoses, or incomplete loose motors.
+
+Quantity: **1 complete matched EPS kit**. Do not split the column, ECU/controller, plugs, pigtails, shafts, U-joints, couplers, brackets, support plates, or donor fasteners into separate buy items.
 
 Buy only a matched set from one donor vehicle. Do not mix a column from one car with an ECU/controller from another car unless the seller can prove the pair works together on the bench.
 
@@ -183,8 +185,10 @@ Photos/video required before buying:
 - Short bench-test video showing assisted rotation both directions
 
 Price guidance:
-- Target complete working kit range: `PKR 54,000-136,000`
-- Working negotiation midpoint: `PKR 90,000`
+- Unit price range for complete working kit: `PKR 54,000-136,000`
+- Quantity: `1 complete matched EPS kit`
+- Total value range: `PKR 54,000-136,000`
+- Working negotiation midpoint / total target: `PKR 90,000`
 - Missing brackets/shafts/connectors reduce value sharply; do not pay complete-kit price for a partial bundle.
 
 ## 6) Ironman Foamcell Suspension Kit - Receipt Check

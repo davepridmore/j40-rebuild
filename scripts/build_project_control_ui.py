@@ -97,8 +97,9 @@ EPS_MARKET_SCOUT_SPEC: dict[str, Any] = {
     "id": "eps_scp90_ncp90_market_scout",
     "title": "EPS Market Scout Spec",
     "scope": "Pre-purchase only",
+    "quantity": "1 complete matched EPS kit",
     "plain_stall_request": (
-        "I need a complete 2005-2011 Toyota Vitz/Yaris 90-series electric EPS steering column set, "
+        "I need one complete 2005-2011 Toyota Vitz/Yaris 90-series electric EPS steering column set, "
         "chassis code SCP90 or NCP90, with matching computer/ECU, original plugs with wiring tails, "
         "shafts, U-joints, couplers, and brackets, tested working."
     ),
@@ -139,7 +140,8 @@ EPS_MARKET_SCOUT_SPEC: dict[str, Any] = {
         "Full kit photo with every included shaft, U-joint, coupler, bracket, and fastener visible.",
     ],
     "price_guidance": {
-        "target_range": "PKR 54,000-136,000",
+        "unit_price_range": "PKR 54,000-136,000",
+        "total_value_range": "PKR 54,000-136,000",
         "negotiation_midpoint": "PKR 90,000",
         "rule": "Do not pay complete-kit price for missing ECU/controller, plugs, shafts, U-joints, couplers, or brackets.",
     },
@@ -4124,13 +4126,15 @@ def source_link_row(
     stage: str = "",
     decision: str = "",
     cost: str = "",
+    quantity: str = "",
+    total_value: str = "",
     notes: str = "",
     values: list[str] | None = None,
 ) -> dict[str, Any] | None:
     links = link_payloads(values or [])
     if not links:
         return None
-    return {
+    payload = {
         "source_sheet": source_sheet,
         "source_ref": source_ref,
         "system": system,
@@ -4141,6 +4145,33 @@ def source_link_row(
         "notes": notes,
         "links": links,
     }
+    if clean(quantity):
+        payload["quantity"] = quantity
+    if clean(total_value):
+        payload["total_value"] = total_value
+    return payload
+
+
+def first_number(value: str) -> float | None:
+    match = re.search(r"\d+(?:\.\d+)?", clean(value).replace(",", ""))
+    if not match:
+        return None
+    return float(match.group(0))
+
+
+def workbook_total_value(cost: str, quantity: str) -> str:
+    cost_text = clean(cost)
+    quantity_text = clean(quantity)
+    if not cost_text or not quantity_text:
+        return ""
+    if "included" in norm(quantity_text):
+        return "included in complete kit total"
+    qty = first_number(quantity_text)
+    unit_cost = first_number(cost_text)
+    if qty is None or unit_cost is None:
+        return ""
+    total = qty * unit_cost
+    return str(int(total)) if total.is_integer() else f"{total:g}"
 
 
 def build_workbook_source_links() -> list[dict[str, Any]]:
@@ -4149,13 +4180,17 @@ def build_workbook_source_links() -> list[dict[str, Any]]:
     for row in load_csv_optional(WORKBOOK_PK_BUY_CLEAN_DIRECT_PATH):
         if norm(row.get("col_1")) == "system":
             continue
+        quantity = clean(row.get("col_3"))
+        cost = clean(row.get("col_8"))
         candidate = source_link_row(
             source_sheet="PK_Buy_Clean_Direct",
             source_ref=f"pk_buy_clean_direct#row_{clean(row.get('excel_row'))}",
             system=clean(row.get("col_1")),
             item=clean(row.get("col_2")),
             stage=clean(row.get("col_5")),
-            cost=clean(row.get("col_8")),
+            cost=cost,
+            quantity=quantity,
+            total_value=workbook_total_value(cost, quantity),
             notes=clean(row.get("col_11")) or clean(row.get("col_12")),
             values=row_text_values(row),
         )

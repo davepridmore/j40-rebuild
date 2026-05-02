@@ -5,9 +5,11 @@ Scope: Market scouting and pre-payment buy/no-buy decision only.
 
 ## What To Ask For
 
-Plain stall request: **"I need a complete 2005-2011 Toyota Vitz/Yaris 90-series electric EPS steering column set, chassis code SCP90 or NCP90, with matching computer/ECU, original plugs with wiring tails, shafts, U-joints, couplers, and brackets, tested working."**
+Plain stall request: **"I need one complete 2005-2011 Toyota Vitz/Yaris 90-series electric EPS steering column set, chassis code SCP90 or NCP90, with matching computer/ECU, original plugs with wiring tails, shafts, U-joints, couplers, and brackets, tested working."**
 
 Ask for **one complete 2005-2011 Toyota Vitz/Yaris 90-series electric column-assist EPS set**, chassis code **SCP90 or NCP90**. Corolla/Axio, Prius, and other Toyota EPS columns are not buy candidates for this build unless explicitly approved later; collect quote/photos only if no SCP90/NCP90 set is found.
+
+Quantity: **1 complete matched EPS kit**. Do not split the column, ECU/controller, plugs, pigtails, shafts, U-joints, couplers, brackets, support plates, or donor fasteners into separate buy items.
 
 This is not hydraulic power steering. Do not buy pumps, racks, hydraulic steering boxes, hoses, or a loose EPS motor by itself.
 
@@ -53,7 +55,7 @@ Use this as a hard gate before payment.
 - Seller offers only a motor, only an ECU, or only a column without shafts/connectors.
 - Unit is noisy, jerky, notchy, or cannot be demonstrated.
 
-## Fitment Capture (Write Down Before Leaving)
+## Market Capture (Write Down Before Leaving)
 
 - Donor vehicle/model claimed by seller: `________________`
 - Donor year claimed by seller: `________________`
@@ -80,8 +82,10 @@ Use this as a hard gate before payment.
 
 ## Price Guidance
 
-- Target range for complete usable kit: `PKR 54,000 - 136,000`
-- Working midpoint for negotiation: `PKR 90,000`
+- Unit price range for complete usable kit: `PKR 54,000 - 136,000`
+- Quantity: `1 complete matched EPS kit`
+- Total value range: `PKR 54,000 - 136,000`
+- Working midpoint / total target for negotiation: `PKR 90,000`
 - Reject partial kits for this build unless explicitly approved after quote; do not pay complete-kit price for missing shafts, brackets, ECU, or connectors.
 
 ## Pre-Payment Notes

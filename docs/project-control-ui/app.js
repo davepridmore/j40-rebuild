@@ -1897,9 +1897,12 @@
     return sourceSpecs
       .map((spec) => {
         const price = spec.price_guidance || {};
+        const quantity = cleanString(spec.quantity || price.quantity);
         const priceBits = [
-          price.target_range ? `Target range: ${price.target_range}` : "",
+          quantity ? `Quantity: ${quantity}` : "",
+          price.unit_price_range ? `Unit price range: ${price.unit_price_range}` : price.target_range ? `Unit price range: ${price.target_range}` : "",
           price.negotiation_midpoint ? `Negotiation midpoint: ${price.negotiation_midpoint}` : "",
+          price.total_value_range ? `Total value: ${price.total_value_range}` : "",
           price.rule || "",
         ].filter((item) => cleanString(item));
         return `
@@ -1910,6 +1913,7 @@
             </div>
             ${spec.plain_stall_request ? `<p class="market-spec-callout"><strong>Plain stall request:</strong> ${escapeHtml(spec.plain_stall_request)}</p>` : ""}
             ${spec.buy_target ? `<p><strong>Buy Target:</strong> ${escapeHtml(spec.buy_target)}</p>` : ""}
+            ${quantity ? `<p><strong>Quantity:</strong> ${escapeHtml(quantity)}</p>` : ""}
             <div class="market-spec-grid">
               ${renderMarketSpecList("Must Include", spec.must_include)}
               ${renderMarketSpecList("Bench Test", spec.bench_test)}
@@ -2740,6 +2744,8 @@
               <th>Source</th>
               <th>Stage / Decision</th>
               <th>Cost</th>
+              <th>Qty</th>
+              <th>Total Value</th>
               <th>Links</th>
               <th>Notes</th>
             </tr>
@@ -2756,13 +2762,15 @@
                           <td>${escapeHtml(row.source_sheet || "-")}</td>
                           <td>${escapeHtml([formatToken(row.stage || ""), formatToken(row.decision || "")].filter(Boolean).join(" / ") || "-")}</td>
                           <td>${escapeHtml(row.cost || "-")}</td>
+                          <td>${escapeHtml(row.quantity || "-")}</td>
+                          <td>${escapeHtml(row.total_value || "-")}</td>
                           <td>${renderLinksCell(row)}</td>
                           <td>${escapeHtml(truncateText(row.notes || "", 140) || "-")}</td>
                         </tr>
                       `
                     )
                     .join("")
-                : '<tr><td colspan="7">No workbook source links found.</td></tr>'
+                : '<tr><td colspan="9">No workbook source links found.</td></tr>'
             }
           </tbody>
         </table>
