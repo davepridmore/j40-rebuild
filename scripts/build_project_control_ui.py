@@ -5303,7 +5303,9 @@ def choose_supply_reference_image(
         return ref("heavy_battery_cable", f"{item} · automotive cable reference image", "cable")
     if has_any("electric wire", "automotive flexible wire") or has("wire", "roll"):
         return ref("automotive_wire", f"{item} · automotive wire reference image", "wire")
-    if has_any("lug", "thimble", "ring terminal", "cable lug"):
+    if has_any("glow plugs", "heat plugs", "glow plug", "heat plug"):
+        return ref("glow_plugs", f"{item} · diesel glow plug reference image", "glow", "plugs")
+    if has_any("thimble", "ring terminal", "cable lug") or re.search(r"\blugs?\b", blob):
         return ref("copper_lugs", f"{item} · cable lug/reference terminal image", "lug")
     if has_any("terminal block", "power supply terminals", "inverter post connector"):
         return ref("terminal_block", f"{item} · power terminal block reference image", "terminal")
@@ -5336,8 +5338,6 @@ def choose_supply_reference_image(
         return ref("water_pump", f"{item} · water pump reference image", "water", "pump")
     if has("thermostat"):
         return ref("thermostat_gasket", f"{item} · thermostat/gasket reference image", "thermostat")
-    if has_any("glow plugs", "heat plugs"):
-        return ref("glow_plugs", f"{item} · diesel glow plug reference image", "glow", "plugs")
     if has_any("air filter", "oil filter", "fuel filter", "filter service"):
         return ref("filter_service", f"{item} · filter/service reference image", "filter")
     if has_any("accessory belt", "fan belt"):

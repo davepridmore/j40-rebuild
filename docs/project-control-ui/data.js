@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-02T15:02:28+05:00",
+  "generated_at": "2026-05-02T15:10:55+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -37,7 +37,7 @@ window.J40_DASHBOARD_DATA = {
     "parts_open_rows": 41,
     "parts_ordered_pending_delivery": 10,
     "urgent_part_actions": 12,
-    "supply_rows_tracked": 229,
+    "supply_rows_tracked": 228,
     "selling_site_images_loaded": 85,
     "whatsapp_j40_selected_chats": 7,
     "whatsapp_j40_media_items": 165,
@@ -3118,8 +3118,8 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "part_primer",
               "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-              "zinc-rich",
               "two-pack",
+              "zinc-rich",
               "556870547",
               "build",
               "zinc",
@@ -20639,9 +20639,9 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_daraz_jubilee_hose_clip_assortment_30pc",
-              "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
               "3011629985",
               "645582306",
+              "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
               "jubilee",
               "hose",
               "clip",
@@ -20672,17 +20672,18 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Diesel baseline item. Buy NEW only; confirm fitted engine code plus current plug voltage/thread/reach or old plug part number before payment.",
           "links": [],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/copper_lugs.jpg",
-            "caption": "Heat/glow plugs set - diesel 2H \u00b7 cable lug/reference terminal image",
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/glow_plugs.jpg",
+            "caption": "Heat/glow plugs set - diesel 2H \u00b7 diesel glow plug reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "semantic_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "copper_lugs",
+            "media_id": "glow_plugs",
             "matched_tokens": [
-              "lug"
+              "glow",
+              "plugs"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -29212,8 +29213,8 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "part_primer",
             "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-            "zinc-rich",
             "two-pack",
+            "zinc-rich",
             "556870547",
             "build",
             "zinc",
@@ -29435,9 +29436,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_daraz_jubilee_hose_clip_assortment_30pc",
-            "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
             "3011629985",
             "645582306",
+            "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
             "jubilee",
             "hose",
             "clip",
@@ -29695,8 +29696,8 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "part_primer",
             "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-            "zinc-rich",
             "two-pack",
+            "zinc-rich",
             "556870547",
             "build",
             "zinc",
@@ -29856,9 +29857,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_daraz_jubilee_hose_clip_assortment_30pc",
-            "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
             "3011629985",
             "645582306",
+            "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
             "jubilee",
             "hose",
             "clip",
@@ -30114,8 +30115,8 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "part_primer",
             "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-            "zinc-rich",
             "two-pack",
+            "zinc-rich",
             "556870547",
             "build",
             "zinc",
@@ -30935,9 +30936,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_daraz_jubilee_hose_clip_assortment_30pc",
-            "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
             "3011629985",
             "645582306",
+            "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
             "jubilee",
             "hose",
             "clip",
@@ -31065,17 +31066,18 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Diesel baseline item. Buy NEW only; confirm fitted engine code plus current plug voltage/thread/reach or old plug part number before payment.",
         "links": [],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/copper_lugs.jpg",
-          "caption": "Heat/glow plugs set - diesel 2H \u00b7 cable lug/reference terminal image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/glow_plugs.jpg",
+          "caption": "Heat/glow plugs set - diesel 2H \u00b7 diesel glow plug reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "copper_lugs",
+          "media_id": "glow_plugs",
           "matched_tokens": [
-            "lug"
+            "glow",
+            "plugs"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -33992,8 +33994,8 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "previously": 86,
         "in_process": 8,
-        "still_required": 55,
-        "total": 149
+        "still_required": 54,
+        "total": 148
       }
     ],
     "rows_by_status": {
@@ -38789,9 +38791,9 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_daraz_jubilee_hose_clip_assortment_30pc",
-              "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
               "3011629985",
               "645582306",
+              "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
               "jubilee",
               "hose",
               "clip",
@@ -39020,8 +39022,8 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "part_primer",
               "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-              "zinc-rich",
               "two-pack",
+              "zinc-rich",
               "556870547",
               "build",
               "zinc",
@@ -39495,9 +39497,9 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "tool_daraz_mini_wire_brush_set_x2",
-              "192752152",
-              "https://www.daraz.pk/products/i192752152-s1385484991.html?urlflag=true&mp=1",
               "1385484991",
+              "https://www.daraz.pk/products/i192752152-s1385484991.html?urlflag=true&mp=1",
+              "192752152",
               "mini",
               "wire",
               "brush",
@@ -39887,8 +39889,8 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "tool_daraz_safety_goggles_cleanup",
               "https://www.daraz.pk/products/i649346371-s3029400460.html?urlflag=true&mp=1",
-              "649346371",
               "3029400460",
+              "649346371",
               "safety",
               "goggles",
               "protective",
@@ -40685,41 +40687,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "generic_substance",
             "matched_tokens": [
               "substance"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_29",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Heat plugs (glow plugs) set - diesel engine (NEW only)",
-          "vendor": "Use local Toyota/common parts markets; buy as one batch after inspection.",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "",
-          "evidence_ref": "",
-          "notes": "Active required purchase item from Procurement_Pass2. | RR action=Use local Toyota/common parts markets; buy as one batch after inspection.; evidence=Common Toyota service items should be bought as a local bundle after tub-off inspection confirms exact spec. | User rule 2026-04-15: heat/glow plugs are NEW ONLY; no used/refurbished plugs accepted.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/copper_lugs.jpg",
-            "caption": "Heat plugs (glow plugs) set - diesel engine (NEW only) \u00b7 cable lug/reference terminal image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "copper_lugs",
-            "matched_tokens": [
-              "lug"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -41957,17 +41924,18 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Diesel baseline item. Buy NEW only; confirm fitted engine code plus current plug voltage/thread/reach or old plug part number before payment.",
           "links": [],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/copper_lugs.jpg",
-            "caption": "Heat/glow plugs set - diesel 2H \u00b7 cable lug/reference terminal image",
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/glow_plugs.jpg",
+            "caption": "Heat/glow plugs set - diesel 2H \u00b7 diesel glow plug reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "semantic_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "copper_lugs",
+            "media_id": "glow_plugs",
             "matched_tokens": [
-              "lug"
+              "glow",
+              "plugs"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -42738,9 +42706,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_daraz_jubilee_hose_clip_assortment_30pc",
-            "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
             "3011629985",
             "645582306",
+            "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
             "jubilee",
             "hose",
             "clip",
@@ -43003,8 +42971,8 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "part_primer",
             "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-            "zinc-rich",
             "two-pack",
+            "zinc-rich",
             "556870547",
             "build",
             "zinc",
@@ -43090,9 +43058,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "tool_daraz_mini_wire_brush_set_x2",
-            "192752152",
-            "https://www.daraz.pk/products/i192752152-s1385484991.html?urlflag=true&mp=1",
             "1385484991",
+            "https://www.daraz.pk/products/i192752152-s1385484991.html?urlflag=true&mp=1",
+            "192752152",
             "mini",
             "wire",
             "brush",
@@ -43659,8 +43627,8 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "tool_daraz_safety_goggles_cleanup",
             "https://www.daraz.pk/products/i649346371-s3029400460.html?urlflag=true&mp=1",
-            "649346371",
             "3029400460",
+            "649346371",
             "safety",
             "goggles",
             "protective",
@@ -49628,41 +49596,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_29",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Heat plugs (glow plugs) set - diesel engine (NEW only)",
-        "vendor": "Use local Toyota/common parts markets; buy as one batch after inspection.",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "",
-        "evidence_ref": "",
-        "notes": "Active required purchase item from Procurement_Pass2. | RR action=Use local Toyota/common parts markets; buy as one batch after inspection.; evidence=Common Toyota service items should be bought as a local bundle after tub-off inspection confirms exact spec. | User rule 2026-04-15: heat/glow plugs are NEW ONLY; no used/refurbished plugs accepted.",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/copper_lugs.jpg",
-          "caption": "Heat plugs (glow plugs) set - diesel engine (NEW only) \u00b7 cable lug/reference terminal image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "copper_lugs",
-          "matched_tokens": [
-            "lug"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
         "source": "expenses",
         "source_ref": "part_mech_heat_glow_plugs_set",
         "supply_type": "part",
@@ -49681,17 +49614,18 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Diesel baseline item. Buy NEW only; confirm fitted engine code plus current plug voltage/thread/reach or old plug part number before payment.",
         "links": [],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/copper_lugs.jpg",
-          "caption": "Heat/glow plugs set - diesel 2H \u00b7 cable lug/reference terminal image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/glow_plugs.jpg",
+          "caption": "Heat/glow plugs set - diesel 2H \u00b7 diesel glow plug reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "copper_lugs",
+          "media_id": "glow_plugs",
           "matched_tokens": [
-            "lug"
+            "glow",
+            "plugs"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
