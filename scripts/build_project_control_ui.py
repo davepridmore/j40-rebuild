@@ -841,6 +841,8 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "process_steps": [
                     "Build a position-by-position table for rubbers, sleeves, cup washers, bolts, and shims.",
                     "Use docs/rubber-recreation-fabrication-spec-20260502.md as the fabrication handoff and close its hold dimensions.",
+                    "Use data/manual/fabrication/rubber_recreation_rev_a/ as the ready-to-run DXF/SVG/PDF package for quote and first article.",
+                    "Use docs/fabrication-handoff-index.md as the shared send-out index for rubber and electrical fabrication packages.",
                     "Use data/manual/rubber_ordering_specs.csv as the cross-category rubber ordering matrix so body mounts, hoses, suspension bushes, weatherstrip, and HVAC rubber stay in the correct buy gates.",
                     "Use data/manual/body_mount_order_release_specs.csv for exact body-mount order lines, quantities, OE/reproduction candidates, local fabrication specs, shim packs, sleeves, and bolt packs.",
                     "Complete the open items in data/manual/body_mount_release_actions.csv before releasing any held order line.",
@@ -854,7 +856,7 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                     "Record any captive nut or mount repair needed before dry fit.",
                 ],
                 "tools": ["Calipers", "Straight edge", "Mount map", "Thread gauge"],
-                "supplies": ["Spec sheet", "Rubber ordering matrix", "Body mount order release sheet", "Body mount action sheet", "OE cross-reference", "Aftermarket thickness cross-check", "Measurement closure sheet", "Sample rubbers", "Shim material", "Sleeve stock if fabricating"],
+                "supplies": ["Spec sheet", "Rubber fabrication DXF/PDF pack", "Fabrication handoff index", "Rubber ordering matrix", "Body mount order release sheet", "Body mount action sheet", "OE cross-reference", "Aftermarket thickness cross-check", "Measurement closure sheet", "Sample rubbers", "Shim material", "Sleeve stock if fabricating"],
                 "hold_point": "Final order or fabrication starts only after every mount position has a complete stack definition, the Toyota OE station rows have been reconciled against the physical vehicle, and the small-mount one-piece vs split-stack construction is resolved.",
                 "image_tokens": ["body_mount", "rubber", "shim", "sleeve", "mount"],
             },
@@ -936,6 +938,24 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "supplies": ["Star washers", "Ground straps", "Conductive anti-corrosion paste", "Grommets", "Heat shrink"],
                 "hold_point": "No loom is tied down until grounds and pass-through protection are verified.",
                 "image_tokens": ["ground", "firewall", "wiring", "grommet", "pass"],
+            },
+            {
+                "title": "Fabricate Fuse And Relay Mounts",
+                "priority": "P1",
+                "remaining": "before permanent under-bonnet loom routing",
+                "instruction": "Use the drawing packages for the relay and MIDI mounts instead of improvising bracket shapes during wiring.",
+                "process_steps": [
+                    "Use docs/fabrication-handoff-index.md as the shop send-out index for electrical fabrication files.",
+                    "Use data/manual/fabrication/relay_mount_rev_c/ for the current relay carrier and rear guard DXF/SVG/PDF package.",
+                    "Use data/manual/fabrication/midi5_plate_mount_rev_c/ for the current 5-way MIDI holder plate and insulated subplate package.",
+                    "Keep data/manual/fabrication/electrical_modules_rev_a/ as the reference/provisional combined-module package only if that older route is reopened.",
+                    "Send the package PDFs for drawing review and the DXFs for cutting; keep SVGs with the job for visual checking.",
+                    "Trial-fit the fabricated pieces, spacers, relay box, MIDI holders, and cable exits before wrapping or tying down the under-bonnet loom.",
+                ],
+                "tools": ["Drill", "Files", "Deburring tool", "Rivet nut tool or spanners", "Calipers"],
+                "supplies": ["Electrical fabrication DXF/PDF pack", "3.0 mm 5052-H32 aluminium", "HDPE/ABS/G10 sheet", "Spacers", "P-clips", "Fasteners"],
+                "hold_point": "Final loom routing waits until relay and MIDI mounts fit without forcing cable bend radius or leaving live studs exposed.",
+                "image_tokens": ["relay", "fuse", "midi", "wiring", "battery"],
             },
             {
                 "title": "Run Fuse And Relay Function Checks",
@@ -2009,7 +2029,7 @@ def row_token_matches(row: dict[str, str], reference_tokens: set[str]) -> list[s
         return []
     blob = row_text_blob(row)
     matches = [token for token in reference_tokens if token in blob]
-    matches.sort(key=len, reverse=True)
+    matches.sort(key=lambda token: (-len(token), token))
     return matches[:6]
 
 
@@ -5557,7 +5577,7 @@ def choose_selling_site_image(
             strong_reference_hits += 1
             matches.append(source_ref_key)
 
-        for token in reference_tokens:
+        for token in sorted(reference_tokens, key=lambda value: (-len(value), value)):
             if not token:
                 continue
             if inventory_reference_token_is_low_signal(token):
@@ -5715,7 +5735,7 @@ def choose_whatsapp_inventory_image(
         matches: list[str] = []
         reference_hits = 0
 
-        for token in reference_tokens:
+        for token in sorted(reference_tokens, key=lambda value: (-len(value), value)):
             if inventory_reference_token_is_low_signal(token):
                 continue
             if token and token in blob:
@@ -5844,7 +5864,7 @@ def choose_inventory_image(
         matches: list[str] = []
 
         reference_hits = 0
-        for token in reference_tokens:
+        for token in sorted(reference_tokens, key=lambda value: (-len(value), value)):
             if inventory_reference_token_is_low_signal(token):
                 continue
             if token in blob:

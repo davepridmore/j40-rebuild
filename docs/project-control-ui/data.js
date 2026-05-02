@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-02T15:41:37+05:00",
+  "generated_at": "2026-05-02T16:00:43+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -3117,8 +3117,8 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_primer",
-              "556870547",
               "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+              "556870547",
               "zinc-rich",
               "two-pack",
               "build",
@@ -13144,6 +13144,8 @@ window.J40_DASHBOARD_DATA = {
               "process_steps": [
                 "Build a position-by-position table for rubbers, sleeves, cup washers, bolts, and shims.",
                 "Use docs/rubber-recreation-fabrication-spec-20260502.md as the fabrication handoff and close its hold dimensions.",
+                "Use data/manual/fabrication/rubber_recreation_rev_a/ as the ready-to-run DXF/SVG/PDF package for quote and first article.",
+                "Use docs/fabrication-handoff-index.md as the shared send-out index for rubber and electrical fabrication packages.",
                 "Use data/manual/rubber_ordering_specs.csv as the cross-category rubber ordering matrix so body mounts, hoses, suspension bushes, weatherstrip, and HVAC rubber stay in the correct buy gates.",
                 "Use data/manual/body_mount_order_release_specs.csv for exact body-mount order lines, quantities, OE/reproduction candidates, local fabrication specs, shim packs, sleeves, and bolt packs.",
                 "Complete the open items in data/manual/body_mount_release_actions.csv before releasing any held order line.",
@@ -13164,6 +13166,8 @@ window.J40_DASHBOARD_DATA = {
               ],
               "supplies": [
                 "Spec sheet",
+                "Rubber fabrication DXF/PDF pack",
+                "Fabrication handoff index",
                 "Rubber ordering matrix",
                 "Body mount order release sheet",
                 "Body mount action sheet",
@@ -18609,6 +18613,128 @@ window.J40_DASHBOARD_DATA = {
                 "Electric wire inventory - 4 AWG red/black silicone cable, 1m each (approx 21 mm2) (received; delivery received; amount confirmed)",
                 "Electrical wire grommet set (200pcs) (deferred_optional; delivery not_ordered; amount confirmed)",
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)"
+              ]
+            },
+            {
+              "title": "Fabricate Fuse And Relay Mounts",
+              "priority": "P1",
+              "remaining": "before permanent under-bonnet loom routing",
+              "instruction": "Use the drawing packages for the relay and MIDI mounts instead of improvising bracket shapes during wiring.",
+              "process_steps": [
+                "Use docs/fabrication-handoff-index.md as the shop send-out index for electrical fabrication files.",
+                "Use data/manual/fabrication/relay_mount_rev_c/ for the current relay carrier and rear guard DXF/SVG/PDF package.",
+                "Use data/manual/fabrication/midi5_plate_mount_rev_c/ for the current 5-way MIDI holder plate and insulated subplate package.",
+                "Keep data/manual/fabrication/electrical_modules_rev_a/ as the reference/provisional combined-module package only if that older route is reopened.",
+                "Send the package PDFs for drawing review and the DXFs for cutting; keep SVGs with the job for visual checking.",
+                "Trial-fit the fabricated pieces, spacers, relay box, MIDI holders, and cable exits before wrapping or tying down the under-bonnet loom."
+              ],
+              "tools": [
+                "Drill",
+                "Files",
+                "Deburring tool",
+                "Rivet nut tool or spanners",
+                "Calipers"
+              ],
+              "supplies": [
+                "Electrical fabrication DXF/PDF pack",
+                "3.0 mm 5052-H32 aluminium",
+                "HDPE/ABS/G10 sheet",
+                "Spacers",
+                "P-clips",
+                "Fasteners"
+              ],
+              "hold_point": "Final loom routing waits until relay and MIDI mounts fit without forcing cable bend radius or leaving live studs exposed.",
+              "image_tokens": [
+                "relay",
+                "fuse",
+                "midi",
+                "wiring",
+                "battery"
+              ],
+              "id": "fabricate_fuse_and_relay_mounts",
+              "status": "queued",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260403_005052_gp_F1otrVZA.jpg",
+                  "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+                  "captured_date": "2026-04-03",
+                  "captured_time": "00:50:52",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "wiring_harness_and_fuse_distribution",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260403_005052_gp_F1otrVZA",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260405_010322_gp_0chs4MQg.jpg",
+                  "caption": "Fuse Distribution And Wiring \u00b7 Procurement Reconciliation \u00b7 2026-04-05",
+                  "captured_date": "2026-04-05",
+                  "captured_time": "01:03:22",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "fuse_distribution_and_wiring",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260405_010322_gp_0chs4MQg",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260404_192619_gp_jsR1m0RQ.jpg",
+                  "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+                  "captured_date": "2026-04-04",
+                  "captured_time": "19:26:19",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "wiring_harness_and_fuse_distribution",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260404_192619_gp_jsR1m0RQ",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260404_192618.jpg",
+                  "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+                  "captured_date": "2026-04-04",
+                  "captured_time": "19:26:18",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "wiring_harness_and_fuse_distribution",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260404_192618",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260404_192614.jpg",
+                  "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+                  "captured_date": "2026-04-04",
+                  "captured_time": "19:26:14",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "wiring_harness_and_fuse_distribution",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260404_192614",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260404_192608_gp_GvlqkRrw.jpg",
+                  "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+                  "captured_date": "2026-04-04",
+                  "captured_time": "19:26:08",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "wiring_harness_and_fuse_distribution",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260404_192608_gp_GvlqkRrw",
+                  "matched_tokens": []
+                }
+              ],
+              "registered_items": [
+                "Additional firewall grommet set IDs 6/8/10/12 mm (purchase_ready; delivery not_ordered; amount missing)",
+                "Additional firewall grommet set IDs 16/20/25 mm (purchase_ready; delivery not_ordered; amount missing)",
+                "Electric wire inventory - 4 AWG red/black silicone cable, 1m each (approx 21 mm2) (received; delivery received; amount confirmed)",
+                "Dielectric grease (received; delivery received; amount confirmed)",
+                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
+                "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points (ordered_pending_delivery; delivery pending_delivery; amount missing)"
               ]
             },
             {
@@ -29212,8 +29338,8 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_primer",
-            "556870547",
             "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+            "556870547",
             "zinc-rich",
             "two-pack",
             "build",
@@ -29695,8 +29821,8 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_primer",
-            "556870547",
             "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+            "556870547",
             "zinc-rich",
             "two-pack",
             "build",
@@ -30114,8 +30240,8 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_primer",
-            "556870547",
             "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+            "556870547",
             "zinc-rich",
             "two-pack",
             "build",
@@ -39284,8 +39410,8 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_primer",
-              "556870547",
               "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+              "556870547",
               "zinc-rich",
               "two-pack",
               "build",
@@ -39993,9 +40119,9 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "tool_daraz_safety_goggles_cleanup",
-              "649346371",
               "https://www.daraz.pk/products/i649346371-s3029400460.html?urlflag=true&mp=1",
               "3029400460",
+              "649346371",
               "safety",
               "goggles",
               "protective",
@@ -42863,8 +42989,8 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_primer",
-            "556870547",
             "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+            "556870547",
             "zinc-rich",
             "two-pack",
             "build",
@@ -43466,9 +43592,9 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "tool_daraz_safety_goggles_cleanup",
-            "649346371",
             "https://www.daraz.pk/products/i649346371-s3029400460.html?urlflag=true&mp=1",
             "3029400460",
+            "649346371",
             "safety",
             "goggles",
             "protective",

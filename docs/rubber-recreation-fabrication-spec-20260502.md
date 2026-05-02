@@ -24,6 +24,32 @@ Toyota-style catalog data has been checked and added as a control reference. It 
 
 All dimensions are in `mm`.
 
+## Fabrication Drawing Package
+
+Ready-to-run Rev A drawing package: `data/manual/fabrication/rubber_recreation_rev_a/`.
+
+Send these files to the rubber/steel fabricator:
+
+1. `j40_rubber_recreation_rev_a_dimension_sheet.pdf` - human-readable drawing pack.
+2. `fabricator_cut_list.csv` - part, quantity, material, file, and release-status list.
+3. `inspection_checklist.csv` - receiving and first-article inspection checks.
+4. All `*.dxf` files in the package - CAD/CAM cut geometry.
+5. Matching `*.svg` files - visual reference copies.
+
+Package contents:
+
+| Part | DXF | Release Use |
+| --- | --- | --- |
+| `BM-SM` small circular cushion | `bm_sm_body_mount_cushion_rev_a.dxf` | Quote/first article; final production waits for one-piece vs split-stack closure |
+| `BM-LG` large circular cushion | `bm_lg_body_mount_cushion_rev_a.dxf` | Quote/first article; caliper-confirm station and final stack |
+| `BM-CUP` small cup washer blank | `bm_cup_small_seat_washer_rev_a.dxf` | Quote/first article; confirm cup reuse and dish depth |
+| `BM-CUP` large cup washer blank | `bm_cup_large_seat_washer_rev_a.dxf` | Quote/first article; confirm cup reuse and dish depth |
+| `FS-OVAL` front-support pad | `fs_oval_front_support_pad_rev_a.dxf` | Quote/first article; confirm holes, thickness, and insert/boss |
+| `FS-STRIP-L` strip blank | `fs_strip_left_template_blank_rev_a.dxf` | Quote/template blank only; physical trace required |
+| `FS-STRIP-R` strip blank | `fs_strip_right_template_blank_rev_a.dxf` | Quote/template blank only; physical trace required |
+
+Common handoff index: `docs/fabrication-handoff-index.md`.
+
 ## Manufacturing Release Requirements
 
 Use this section as the fabrication purchase-order language. The dimension tables below still control the nominal geometry, but production acceptance also requires the material, process, inspection, packaging, and rejection controls in this section and in `data/manual/rubber_recreation_manufacturing_requirements.csv`.

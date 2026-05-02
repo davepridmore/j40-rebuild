@@ -26,6 +26,7 @@ This workstream is not for:
 - The stored photos below are the best current evidence of the original mount rubbers, but they are context-only and not measurement-grade.
 - May 2 Google Photos picker import `20260502T013759` starts a dedicated selection set for rubber recreation: [rubber-recreation-photo-selection-20260502.md](rubber-recreation-photo-selection-20260502.md).
 - May 2 fabricator handoff spec is now drafted from the tape-measure photos: [rubber-recreation-fabrication-spec-20260502.md](rubber-recreation-fabrication-spec-20260502.md).
+- Ready-to-send DXF/SVG/PDF fabrication output is now in [rubber_recreation_rev_a](../data/manual/fabrication/rubber_recreation_rev_a/README.md), indexed from [fabrication-handoff-index.md](fabrication-handoff-index.md).
 - UI requirements table source: [chassis_rubber_requirements.csv](../data/manual/chassis_rubber_requirements.csv). This is the acquisition/fabrication status tracker for each rubber, sleeve, cup, shim, and hardware requirement.
 - Consolidated rubber order source: [rubber_ordering_specs.csv](../data/manual/rubber_ordering_specs.csv) and [rubber-ordering-spec-20260502.md](rubber-ordering-spec-20260502.md). These control the buy-now, inspect-first, and defer gates across all rubber categories so chassis rubbers are not confused with weatherstrip, suspension, hose, or HVAC rubber.
 - Body-mount release pack: [body_mount_order_release_specs.csv](../data/manual/body_mount_order_release_specs.csv), [body_mount_release_actions.csv](../data/manual/body_mount_release_actions.csv), [body_mount_station_closure_sheet.csv](../data/manual/body_mount_station_closure_sheet.csv), and [body-mount-order-release-plan-20260502.md](body-mount-order-release-plan-20260502.md). This is the order-line and user-action control for quantities, OE/reproduction candidates, local fabrication specs, shims, sleeves, and bolts.
@@ -113,7 +114,7 @@ Fill this in from the removed old parts before any local fabrication order is tr
 3. Confirm actual thread pitch and final bolt length at each main tub station.
 4. Preserve original shim packs by `FL`, `FR`, `ML`, `MR`, `RL`, `RR`.
 5. Only then close the order with Bilal Ganj or a local rubber fabricator.
-6. Use the May 2 fabrication spec as the quote/prototype sheet, then close its hold dimensions with calipers before production.
+6. Send the Rev A fabrication package from `data/manual/fabrication/rubber_recreation_rev_a/` for quote/first article, then close its hold dimensions with calipers before production.
 7. Reconcile the physical vehicle stations against Toyota `NO.1` to `NO.5` rows before changing the rubber count or approving production.
 8. Confirm whether the small circular mounts are one-piece `22 mm` stack-equivalent cushions or a split medium-bushing plus seat stack before asking the fabricator to cut final pieces.
 9. Use the consolidated rubber ordering matrix to keep body mounts, suspension bushes, hoses, weatherstrip, and HVAC rubber in their correct order gates.

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112mm" height="184mm" viewBox="0 0 112 184">
+  <style>
+    .cut { fill: none; stroke: #111; stroke-width: 0.5; }
+    .drill { fill: none; stroke: #111; stroke-width: 0.5; }
+    .relief { fill: none; stroke: #111; stroke-width: 0.5; }
+    .form { fill: none; stroke: #0b5fff; stroke-width: 0.4; stroke-dasharray: 4 3; }
+    .mark { fill: none; stroke: #8a5a00; stroke-width: 0.4; stroke-dasharray: 3 2; }
+    .template { fill: none; stroke: #7a1f8a; stroke-width: 0.45; stroke-dasharray: 5 3; }
+    .center { stroke: #777; stroke-width: 0.25; stroke-dasharray: 2 2; }
+    .title { font: 700 7px monospace; fill: #111; }
+    .note { font: 4.8px monospace; fill: #111; }
+  </style>
+  <text x="24" y="14" class="title">BM-SM small circular body-mount cushion | qty 10 | units: mm</text>
+  <g transform="translate(24,24)">
+  <circle class="cut" cx="32" cy="32" r="32" /><circle class="cut" cx="32" cy="32" r="16" /><circle class="form" cx="32" cy="32" r="23" /><line class="center" x1="32" y1="0" x2="32" y2="64" /><line class="center" x1="0" y1="32" x2="64" y2="32" />
+  </g>
+  <text x="24" y="130" class="note">Finished free height: 22 mm stack-equivalent; split-stack hold remains open. The DXF is the top cut profile only; height is controlled by the PDF and cut list.</text><text x="24" y="140" class="note">Central through bore is 32 mm. The 46 mm register circle is a recess/seat control mark, not a through cut unless the physical sample proves otherwise.</text><text x="24" y="150" class="note">Outer load edge radius target R2-R3. Faces flat and parallel within 0.5 mm. Bore/register concentricity &lt;=1.0 mm.</text><text x="24" y="160" class="note">Use same rubber compound batch for each matched family. Reject tyre rubber, crumb rubber, sponge, or unmarked offcuts.</text>
+</svg>

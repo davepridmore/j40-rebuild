@@ -76,6 +76,8 @@ For each rubber order, take:
 5. Quantity and required side/station labels.
 
 For body mounts specifically, take the fabrication sheet and closure table:
+- [fabrication-handoff-index.md](fabrication-handoff-index.md)
+- [rubber_recreation_rev_a fabrication package](../data/manual/fabrication/rubber_recreation_rev_a/README.md)
 - [body_mount_order_release_specs.csv](../data/manual/body_mount_order_release_specs.csv)
 - [body_mount_release_actions.csv](../data/manual/body_mount_release_actions.csv)
 - [body_mount_station_closure_sheet.csv](../data/manual/body_mount_station_closure_sheet.csv)

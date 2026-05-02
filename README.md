@@ -42,6 +42,7 @@ Only chat content related to this build should be included. The importer treats 
 - `data/manual/brake_system_requirements.csv`: rear brake cable, hard-line, hose, drum, and retaining-clip replacement matrix
 - `data/manual/chassis_rubber_requirements.csv`: acquisition/fabrication status matrix for body-mount rubbers, sleeves, cups, shims, and mount hardware
 - `data/manual/replacement_pipe_ordering_specs.csv`: curated location/photo/spec matrix for replacement pipes, hoses, hard lines, and the made-to-order coolant pipe sample
+- `data/manual/fabrication/`: ready-to-send DXF/SVG/PDF fabrication packages for rubber recreation and electrical mounting parts
 - `data/manual/workbook_tabs/`: per-tab CSV exports for quick review outside Excel
 - `data/manual/j40-master-tracker.xlsx`: single Excel workbook generated from `expenses.csv` with `Initial Price`, `Purchase Registration`, `Purchase of Goods`, and `Purchase of Services` tabs
 - `data/manual/legal_statuses.csv`: current legal/admin tracker
@@ -68,6 +69,7 @@ Only chat content related to this build should be included. The importer treats 
 - `docs/reassembly-dependency-procurement-plan.md`: integrated reassembly sequencing + dependency split + procurement actions
 - `docs/procurement-pass2-tub-off.md`: second-pass procurement simplification for tub-off stage and local Pakistan sourcing assumptions
 - `docs/replacement-pipes-workstream.md`: start-here tracker for replacement pipes, hoses, hard lines, and made-to-order pipe samples
+- `docs/fabrication-handoff-index.md`: send-out index for rubber and electrical fabrication packages
 - `photos/index/`: generated lookup folders by component group, specific component, and stage
 - `scripts/import_whatsapp.py`: parses chats, extracts media, filters relevance
 - `scripts/import_whatsapp_mcp_j40.py`: discovers J40 chats from WhatsApp MCP profiles and exports normalized chat/message/media indexes
@@ -88,6 +90,8 @@ Only chat content related to this build should be included. The importer treats 
 - `scripts/build_project_control_ui.py`: builds `docs/project-control-ui/data.js` for the local project dashboard (workstreams, part ordering, project-step status, WhatsApp samples, and other-build references)
 - `scripts/build_paint_refinish_whatsapp_media_queue.py`: extracts paint-refinish photos/videos from WhatsApp media index into send/return/in-progress queues
 - `scripts/auth_whatsapp_mcp.sh`: QR-auth helper for WhatsApp MCP profiles (`1` and `2`)
+- `tools/generate_rubber_recreation_fabrication_pack.py`: generates the rubber recreation DXF/SVG/PDF fabrication package
+- `tools/generate_electrical_module_drawings.py`, `tools/generate_midi5_plate_mount_rev_c.py`, `tools/generate_relay_mount_rev_c.py`: generate the electrical mounting DXF/SVG/PDF fabrication packages
 
 ## How To Use
 

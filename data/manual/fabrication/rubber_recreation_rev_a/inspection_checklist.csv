@@ -1,0 +1,7 @@
+part_id,inspect_features,acceptance
+BM-SM,"OD, height, bore, register OD/depth, hardness",OD/ID +/-1.0; height +/-0.5; Shore A 55-65
+BM-LG,"OD, height, bore, register OD/depth, hardness",OD/ID +/-1.0; height +/-0.5; Shore A 55-65
+BM-CUP-SM,"OD, 11 mm hole, dish/register depth, steel thickness",OD +/-1.0; hole +0.3/-0.0; dish 2-3
+BM-CUP-LG,"OD, 11 mm hole, dish/register depth, steel thickness",OD +/-1.0; hole +0.3/-0.0; dish 2-3
+FS-OVAL,"overall length/width, thickness, hole spacing, insert OD, hardness",outer +/-1.0; holes +/-0.5; thickness +/-0.5
+FS-STRIP-L/R,"template match, thickness, hole/slot centres, bond quality",physical template controls final cut
