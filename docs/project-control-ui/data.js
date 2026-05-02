@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-02T17:42:19+05:00",
+  "generated_at": "2026-05-02T18:25:33+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -39,8 +39,8 @@ window.J40_DASHBOARD_DATA = {
     "parts_open_rows": 41,
     "parts_ordered_pending_delivery": 10,
     "urgent_part_actions": 12,
-    "supply_rows_tracked": 225,
-    "selling_site_images_loaded": 85,
+    "supply_rows_tracked": 236,
+    "selling_site_images_loaded": 83,
     "whatsapp_j40_selected_chats": 7,
     "whatsapp_j40_media_items": 165,
     "whatsapp_j40_media_images": 131,
@@ -17714,24 +17714,24 @@ window.J40_DASHBOARD_DATA = {
           {
             "priority": "A",
             "area": "Switch Panel",
-            "task": "Install Schneider selector controls and separate needle fuel-stop switch",
+            "task": "Install 7 Schneider selectors (4 right cluster, 2 AC cluster, 1 fuel-stop/control)",
             "status": "In Progress",
-            "done": "Yes - all 7 Schneider received",
-            "current_state": "All 7 Schneider selectors are received. Current allocation uses selectors for wipers, lights, spot lamps, aux/spare, blower, and A/C clutch; fuel-stop uses the purchased needle-type switch.",
-            "next_action": "Mount assigned selectors and the needle fuel-stop switch; confirm spare/aux use.",
+            "done": "Yes - all 7 received",
+            "current_state": "All 7 Schneider selectors are now received: 4x 2-way and 3x 3-way. Installation remains in progress until panel mounting and termination are complete.",
+            "next_action": "Complete mounting and terminate switch wiring.",
             "dependency": "Dash panel machining complete",
-            "parts_tools_impact": "No new switch purchase; tools for hole sizing / panel work"
+            "parts_tools_impact": "Tools for hole sizing / panel work"
           },
           {
             "priority": "A",
             "area": "Dash Fabrication",
             "task": "Machine/enlarge dashboard holes to 22 mm and confirm cluster spacing",
-            "status": "In Progress",
-            "done": "Partial",
-            "current_state": "Hole-enlarging tools are now available; panel prep can move from procurement wait to controlled machining/test-fit.",
-            "next_action": "Open one sample hole or existing pull-switch hole to 22 mm, deburr/protect edges, then confirm center spacing and rear clearance before completing all holes.",
-            "dependency": "Switch allocation and careful measurement",
-            "parts_tools_impact": "22 mm step drill/chassis punch/precision cutter on hand"
+            "status": "Pending",
+            "done": "No",
+            "current_state": "Panel prep is required for new selector footprint.",
+            "next_action": "Complete drilling/cutting and edge finishing.",
+            "dependency": "Tooling availability",
+            "parts_tools_impact": "Chuck + correct bit/cutter in Tools tab"
           },
           {
             "priority": "A",
@@ -17739,10 +17739,10 @@ window.J40_DASHBOARD_DATA = {
             "task": "Ensure ignition OFF reliably cuts diesel fuel-stop; retain manual cable backup",
             "status": "Pending",
             "done": "No",
-            "current_state": "Needle-type fuel-stop/hidden cutoff switch is already purchased and photographed; ignition-linked behavior still needs final wiring.",
+            "current_state": "Manual cutoff retained; ignition-linked behavior must be finalized.",
             "next_action": "Wire and test shutdown behavior with engine running.",
             "dependency": "Switch panel + ignition wiring final",
-            "parts_tools_impact": "Use on-hand needle-type switch; no new switch buy"
+            "parts_tools_impact": "No major new parts expected"
           },
           {
             "priority": "B",
@@ -17855,8 +17855,8 @@ window.J40_DASHBOARD_DATA = {
           },
           {
             "standard": "Fuel stop architecture",
-            "decision": "Ignition-linked stop + purchased needle-type fuel-stop switch with manual diesel cutoff cable retained as backup",
-            "why_locked": "Preserves safe shutdown and avoids duplicate switch buying.",
+            "decision": "Ignition-linked stop + manual diesel cutoff cable retained as backup",
+            "why_locked": "Preserves safe shutdown and redundancy.",
             "revisit_trigger": "Revisit only after proving ignition-linked stop reliability."
           }
         ],
@@ -17889,7 +17889,7 @@ window.J40_DASHBOARD_DATA = {
             "power_loom": "Front Trunk",
             "wire_size": "2.5 mm\u00b2",
             "control_loom": "Left Branch",
-            "implementation_status": "Active / as-built; no duplicate relay buy"
+            "implementation_status": "Active / as-built"
           },
           {
             "relay_pos": "T4",
@@ -17909,7 +17909,7 @@ window.J40_DASHBOARD_DATA = {
             "power_loom": "Front Trunk",
             "wire_size": "2.5 mm\u00b2",
             "control_loom": "Left Branch",
-            "implementation_status": "Active / as-built; switch allocated"
+            "implementation_status": "Active / as-built"
           },
           {
             "relay_pos": "B1",
@@ -22966,24 +22966,24 @@ window.J40_DASHBOARD_DATA = {
           {
             "priority": "A",
             "area": "Switch Panel",
-            "task": "Install Schneider selector controls and separate needle fuel-stop switch",
+            "task": "Install 7 Schneider selectors (4 right cluster, 2 AC cluster, 1 fuel-stop/control)",
             "status": "In Progress",
-            "done": "Yes - all 7 Schneider received",
-            "current_state": "All 7 Schneider selectors are received. Current allocation uses selectors for wipers, lights, spot lamps, aux/spare, blower, and A/C clutch; fuel-stop uses the purchased needle-type switch.",
-            "next_action": "Mount assigned selectors and the needle fuel-stop switch; confirm spare/aux use.",
+            "done": "Yes - all 7 received",
+            "current_state": "All 7 Schneider selectors are now received: 4x 2-way and 3x 3-way. Installation remains in progress until panel mounting and termination are complete.",
+            "next_action": "Complete mounting and terminate switch wiring.",
             "dependency": "Dash panel machining complete",
-            "parts_tools_impact": "No new switch purchase; tools for hole sizing / panel work"
+            "parts_tools_impact": "Tools for hole sizing / panel work"
           },
           {
             "priority": "A",
             "area": "Dash Fabrication",
             "task": "Machine/enlarge dashboard holes to 22 mm and confirm cluster spacing",
-            "status": "In Progress",
-            "done": "Partial",
-            "current_state": "Hole-enlarging tools are now available; panel prep can move from procurement wait to controlled machining/test-fit.",
-            "next_action": "Open one sample hole or existing pull-switch hole to 22 mm, deburr/protect edges, then confirm center spacing and rear clearance before completing all holes.",
-            "dependency": "Switch allocation and careful measurement",
-            "parts_tools_impact": "22 mm step drill/chassis punch/precision cutter on hand"
+            "status": "Pending",
+            "done": "No",
+            "current_state": "Panel prep is required for new selector footprint.",
+            "next_action": "Complete drilling/cutting and edge finishing.",
+            "dependency": "Tooling availability",
+            "parts_tools_impact": "Chuck + correct bit/cutter in Tools tab"
           },
           {
             "priority": "A",
@@ -22991,10 +22991,10 @@ window.J40_DASHBOARD_DATA = {
             "task": "Ensure ignition OFF reliably cuts diesel fuel-stop; retain manual cable backup",
             "status": "Pending",
             "done": "No",
-            "current_state": "Needle-type fuel-stop/hidden cutoff switch is already purchased and photographed; ignition-linked behavior still needs final wiring.",
+            "current_state": "Manual cutoff retained; ignition-linked behavior must be finalized.",
             "next_action": "Wire and test shutdown behavior with engine running.",
             "dependency": "Switch panel + ignition wiring final",
-            "parts_tools_impact": "Use on-hand needle-type switch; no new switch buy"
+            "parts_tools_impact": "No major new parts expected"
           },
           {
             "priority": "B",
@@ -23074,7 +23074,7 @@ window.J40_DASHBOARD_DATA = {
             "power_loom": "Front Trunk",
             "wire_size": "2.5 mm\u00b2",
             "control_loom": "Left Branch",
-            "implementation_status": "Active / as-built; no duplicate relay buy"
+            "implementation_status": "Active / as-built"
           },
           {
             "relay_pos": "T4",
@@ -24281,7 +24281,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_mech_clutch_master_slave_refresh",
           "workstream": "mechanical_baseline",
-          "item": "Clutch master and slave cylinder refresh kit",
+          "item": "Clutch hydraulic refresh - master/slave plus flex hose and 1500 mm hard-line allowance if needed",
           "status": "planned",
           "procurement_stage": "next_phase_purchase",
           "payment_status": "not_paid",
@@ -24294,20 +24294,21 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_clutch_master_slave_refresh",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH INSPECT THEN REPLACE if leakage pedal sink or seized seals",
+          "notes": "MECH INSPECT THEN REPLACE if leakage, pedal sink, or seized seals. If the clutch line is cracked, corroded, swollen, or leaking, use RPO-CLUTCH-001A/B: match master/slave port thread, flare/seat, flex length, hard-line OD, and route length; 1500 mm brake/clutch-rated hard-line blank allowance if replaced.",
           "links": [],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_master.jpg",
-            "caption": "Clutch master and slave cylinder refresh kit \u00b7 clutch/brake cylinder reference image",
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+            "caption": "Clutch hydraulic refresh - master/slave plus flex hose and 1500 mm hard-line allowance if needed \u00b7 clutch/brake line reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "semantic_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "brake_master",
+            "media_id": "brake_hose_line",
             "matched_tokens": [
-              "clutch"
+              "clutch",
+              "line"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -24658,81 +24659,9 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_mech_fuel_hose_and_clamps",
-          "workstream": "mechanical_baseline",
-          "item": "Fuel-rated rubber hose and clamp kit",
-          "status": "spec_ready",
-          "procurement_stage": "spec_ready_release_hold",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_mech_fuel_hose_and_clamps",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready: order lines RPO-FUEL-001A through RPO-FUEL-001C define diesel-rated hose: 8 mm ID x 3000 mm feed, 6 mm ID x 2000 mm return, 3.2-3.5 mm ID x 1000 mm leak-off. Complete RPA-002/RPA-004 before payment. Do not fabricate high-pressure injector pipes.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
-            "caption": "Fuel-rated rubber hose and clamp kit \u00b7 fuel hose/clamp reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "fuel_hose",
-            "matched_tokens": [
-              "fuel",
-              "hose"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_mech_heater_hose_set",
-          "workstream": "mechanical_baseline",
-          "item": "Heater hose set with clamps",
-          "status": "spec_ready",
-          "procurement_stage": "spec_ready_release_hold",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_mech_heater_hose_set",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready: order lines RPO-COOL-004A and RPO-COOL-004B define EPDM SAE J20R3 heater hose, 400 mm inlet and 280 mm outlet cut lengths, expected 16 mm / 5/8 inch ID. Complete RPA-002 nipple measurements and rear-heater check before payment.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/heater_hose.jpg",
-            "caption": "Heater hose set with clamps \u00b7 heater hose reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "heater_hose",
-            "matched_tokens": [
-              "heater",
-              "hose"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
           "entry_id": "part_mech_radiator_hose_set",
           "workstream": "mechanical_baseline",
-          "item": "Radiator hose set upper plus lower with clamps",
+          "item": "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe",
           "status": "spec_ready",
           "procurement_stage": "spec_ready_release_hold",
           "payment_status": "not_paid",
@@ -24745,11 +24674,11 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_radiator_hose_set",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready: order lines RPO-COOL-001 and RPO-COOL-002 define spec-led molded EPDM coolant hoses; Toyota/Dayco numbers are cross-references only. Record old-hose free lengths plus neck and clamp ODs in mm before payment.",
+          "notes": "Spec ready via RPO-COOL-001/002/003/005: molded EPDM upper and lower radiator hoses for HJ47/2H route; small EPDM overflow hose 1000 mm local buy length cut to measured radiator-to-bottle route; formed coolant/radiator pipe from 750 mm minimum tube blank using the physical sample. Toyota/Dayco references are cross-references only. Release hold: measure thermostat/radiator/engine neck ODs, hose OD for clamps, old-hose free lengths, overflow nipple ODs, and formed-pipe tube OD/wall/centerline/bends/beads before payment or fabrication.",
           "links": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg",
-            "caption": "Radiator hose set upper plus lower with clamps \u00b7 radiator/coolant hose reference image",
+            "caption": "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe \u00b7 radiator/coolant hose reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -24766,9 +24695,80 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
+          "entry_id": "part_mech_fuel_hose_and_clamps",
+          "workstream": "mechanical_baseline",
+          "item": "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines",
+          "status": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_mech_fuel_hose_and_clamps",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+          "notes": "Spec ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: diesel-rated 8 mm ID x 3000 mm feed hose, 6 mm ID x 2000 mm return/bleed hose, 3.2-3.5 mm ID x 1000 mm injector leak-off hose, plus conditional 8 mm OD x 5000 mm feed and 6 mm OD x 5000 mm return hard-line allowances if corrosion inspection requires replacement. Use rolled-edge fuel-injection clamps. Release hold: measure every barb/line OD, hose OD for clamps, route lengths, and flare/union style if hard lines are replaced. Do not fabricate high-pressure injector pipes.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/heavy_battery_cable.jpg",
+            "caption": "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines \u00b7 automotive cable reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "heavy_battery_cable",
+            "matched_tokens": [
+              "cable"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "entry_id": "part_mech_heater_hose_set",
+          "workstream": "mechanical_baseline",
+          "item": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID",
+          "status": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_mech_heater_hose_set",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+          "notes": "Spec ready via RPO-COOL-004A/B: EPDM SAE J20R3 or better heater hose, 400 mm inlet and 280 mm outlet cut lengths, expected 16 mm / 5/8 in ID. Release hold: measure engine/heater-core nipple ODs, clamp OD, route lengths, rear-heater branch presence, and clearance from exhaust/firewall chafe before payment.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+            "caption": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID \u00b7 air hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "air_hose",
+            "matched_tokens": [
+              "air",
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
           "entry_id": "part_mech_vacuum_hose_refresh",
           "workstream": "mechanical_baseline",
-          "item": "Vacuum hose refresh kit",
+          "item": "Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather",
           "status": "spec_ready",
           "procurement_stage": "spec_ready_release_hold",
           "payment_status": "not_paid",
@@ -24781,11 +24781,11 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_vacuum_hose_refresh",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready: order lines RPO-VAC-001A through RPO-VAC-001C define 10-12 mm ID x 2000 mm reinforced vacuum hose, 16-19 mm ID x 1000 mm oil-resistant breather hose, and oil-outlet molded hose only if fitted. Complete RPA-009 before payment.",
+          "notes": "Spec ready via RPO-VAC-001A/B/C: reinforced 10-12 mm ID x 2000 mm brake-booster/vacuum hose, oil-resistant 16-19 mm ID x 1000 mm breather hose, plus 2H vacuum pump oil-outlet molded hose only if fitted. Release hold: confirm pump/booster/check-valve barbs, breather spigot OD, route lengths, oil exposure, and check-valve direction.",
           "links": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
-            "caption": "Vacuum hose refresh kit \u00b7 fuel hose/clamp reference image",
+            "caption": "Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather \u00b7 fuel hose/clamp reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -24935,8 +24935,8 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Clutch master and slave cylinder refresh kit (next_phase_purchase; delivery not_ordered; amount missing)",
-                "Fuel-rated rubber hose and clamp kit (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Clutch hydraulic refresh - master/slave plus flex hose and 1500 mm hard-line allowance if needed (next_phase_purchase; delivery not_ordered; amount missing)",
                 "Engine mount set (next_phase_purchase; delivery not_ordered; amount missing)",
                 "Heat/glow plugs set - diesel 2H (purchase_ready; delivery not_ordered; amount missing)",
                 "Accessory belt set (purchase_ready; delivery not_ordered; amount missing)",
@@ -25070,11 +25070,11 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Fuel-rated rubber hose and clamp kit (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Jubilee hose clip assortment - 10 pc fuel line/diesel/petrol/coolant clamp packs x3 (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
-                "Radiator hose set upper plus lower with clamps (spec_ready_release_hold; delivery not_ordered; amount missing)",
-                "Heater hose set with clamps (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Radiator cap (purchase_ready; delivery not_ordered; amount missing)",
+                "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Engine oil + oil filter service pack (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
@@ -25202,12 +25202,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Fuel-rated rubber hose and clamp kit (spec_ready_release_hold; delivery not_ordered; amount missing)",
-                "Radiator hose set upper plus lower with clamps (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Clutch hydraulic refresh - master/slave plus flex hose and 1500 mm hard-line allowance if needed (next_phase_purchase; delivery not_ordered; amount missing)",
+                "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Radiator cap (purchase_ready; delivery not_ordered; amount missing)",
-                "Fuel filter (purchase_ready; delivery not_ordered; amount missing)",
-                "Heater hose set with clamps (spec_ready_release_hold; delivery not_ordered; amount missing)",
-                "Jubilee hose clip assortment - 10 pc fuel line/diesel/petrol/coolant clamp packs x3 (ordered_pending_delivery; delivery pending_delivery; amount confirmed)"
+                "Fuel filter (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -25332,12 +25332,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Accessory belt set (purchase_ready; delivery not_ordered; amount missing)",
                 "Engine oil + oil filter service pack (purchase_ready; delivery not_ordered; amount missing)",
-                "Fuel-rated rubber hose and clamp kit (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Heat/glow plugs set - diesel 2H (purchase_ready; delivery not_ordered; amount missing)",
                 "Jubilee hose clip assortment - 10 pc fuel line/diesel/petrol/coolant clamp packs x3 (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
-                "Fuel filter (purchase_ready; delivery not_ordered; amount missing)"
+                "Clutch hydraulic refresh - master/slave plus flex hose and 1500 mm hard-line allowance if needed (next_phase_purchase; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -25462,12 +25462,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Accessory belt set (purchase_ready; delivery not_ordered; amount missing)",
                 "Engine oil + oil filter service pack (purchase_ready; delivery not_ordered; amount missing)",
                 "Heat/glow plugs set - diesel 2H (purchase_ready; delivery not_ordered; amount missing)",
-                "Radiator hose set upper plus lower with clamps (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Air filter element (received; delivery received; amount missing)",
-                "Clutch master and slave cylinder refresh kit (next_phase_purchase; delivery not_ordered; amount missing)"
+                "Clutch hydraulic refresh - master/slave plus flex hose and 1500 mm hard-line allowance if needed (next_phase_purchase; delivery not_ordered; amount missing)"
               ]
             }
           ]
@@ -29296,7 +29296,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_rear_axle_hard_brake_lines",
           "workstream": "brake_system",
-          "item": "Rear axle hard brake lines and fittings",
+          "item": "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread",
           "status": "planned",
           "procurement_stage": "spec_needed_before_order",
           "payment_status": "not_paid",
@@ -29309,46 +29309,11 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_rear_axle_hard_brake_lines",
           "evidence_ref": "BR-REAR-002|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-          "notes": "Recreate left/right rear axle lines in brake-rated 3/16 in / 4.75 mm tube after flare standard, fitting threads, bend templates, and clip positions are confirmed.",
+          "notes": "Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube only after flare standard, fitting threads/seats, bend templates, route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
           "links": [],
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear axle hard brake lines and fittings \u00b7 local inventory photo",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260501_194305_gp_EllBGvXA",
-            "matched_tokens": [
-              "photo_20260501_194305_gp_ellbgvxa"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
-          }
-        },
-        {
-          "entry_id": "part_rear_brake_line_cable_clips",
-          "workstream": "brake_system",
-          "item": "Rear brake line clips and parking-brake cable retainers",
-          "status": "planned",
-          "procurement_stage": "spec_needed_before_order",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_rear_brake_line_cable_clips",
-          "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-          "notes": "Count and replace corroded or missing brake-line clips, cable retainers, rubber sleeves, grommets, and rubber-lined P-clips before final rear axle routing.",
-          "links": [],
-          "image": {
-            "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear brake line clips and parking-brake cable retainers \u00b7 local inventory photo",
+            "caption": "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -29366,7 +29331,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_rear_center_brake_flex_hose",
           "workstream": "brake_system",
-          "item": "Rear center frame-to-axle flexible brake hose",
+          "item": "Rear center frame-to-axle brake flex hose - by end fittings and full-droop length",
           "status": "planned",
           "procurement_stage": "spec_needed_before_order",
           "payment_status": "not_paid",
@@ -29379,11 +29344,46 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_rear_center_brake_flex_hose",
           "evidence_ref": "BR-REAR-003|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-          "notes": "Replace rear center hose once chassis-side and axle-side fitting threads/end styles and full-droop slack are confirmed.",
+          "notes": "Replace rear center hose only after chassis-side and axle-side fitting thread/end style bracket retention free length and full-droop slack are measured; brake-fluid-rated hose only; verify no stretch or suspension/tire contact at full droop.",
           "links": [],
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear center frame-to-axle flexible brake hose \u00b7 local inventory photo",
+            "caption": "Rear center frame-to-axle brake flex hose - by end fittings and full-droop length \u00b7 local inventory photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260501_194305_gp_EllBGvXA",
+            "matched_tokens": [
+              "photo_20260501_194305_gp_ellbgvxa"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "entry_id": "part_rear_brake_line_cable_clips",
+          "workstream": "brake_system",
+          "item": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips",
+          "status": "planned",
+          "procurement_stage": "spec_needed_before_order",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_rear_brake_line_cable_clips",
+          "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
+          "notes": "Count and replace corroded or missing rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD. Use permanent supports, not cable ties, before final rear axle routing.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
+            "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -29436,7 +29436,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_mech_brake_flex_hose_set",
           "workstream": "brake_system",
-          "item": "Brake flexible hose set front and rear",
+          "item": "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance",
           "status": "spec_ready",
           "procurement_stage": "spec_ready_release_hold",
           "payment_status": "not_paid",
@@ -29449,11 +29449,11 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_brake_flex_hose_set",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready: order line RPO-BRAKE-001A defines brake-fluid-rated flex hoses matched to current front/rear fittings plus free/full-droop length in mm. Complete RPA-006 fitting photos and full-droop slack check before payment.",
+          "notes": "Spec ready via RPO-BRAKE-001A/B: front/rear brake flex hoses by current fitting thread/banjo/seat, bracket retention, free length and full-droop length; brake hard-line stock 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with brake-rated fittings. Release hold: close fitting photos, flare/thread/seat confirmation, route lengths, bend templates, and full-droop slack before payment/fabrication.",
           "links": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
-            "caption": "Brake flexible hose set front and rear \u00b7 brake line/hose reference image",
+            "caption": "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance \u00b7 brake line/hose reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -29600,10 +29600,10 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)",
+                "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear wheel cylinders pair with bleed screws (inspect_then_buy; delivery not_ordered; amount missing)",
-                "Rear axle hard brake lines and fittings (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear brake line clips and parking-brake cable retainers (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Brake flexible hose set front and rear (spec_ready_release_hold; delivery not_ordered; amount missing)"
+                "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -29729,12 +29729,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)",
                 "Rear wheel cylinders pair with bleed screws (inspect_then_buy; delivery not_ordered; amount missing)",
                 "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Brake flexible hose set front and rear (spec_ready_release_hold; delivery not_ordered; amount missing)",
-                "Rear axle hard brake lines and fittings (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear center frame-to-axle flexible brake hose (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Rear center frame-to-axle brake flex hose - by end fittings and full-droop length (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -29857,12 +29857,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Brake flexible hose set front and rear (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Rear center frame-to-axle brake flex hose - by end fittings and full-droop length (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear axle hard brake lines and fittings (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)",
-                "Rear brake line clips and parking-brake cable retainers (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear wheel cylinders pair with bleed screws (inspect_then_buy; delivery not_ordered; amount missing)"
+                "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -29987,12 +29987,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Brake flexible hose set front and rear (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)",
                 "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear brake line clips and parking-brake cable retainers (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear axle hard brake lines and fittings (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear center frame-to-axle flexible brake hose (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Rear center frame-to-axle brake flex hose - by end fittings and full-droop length (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             }
           ]
@@ -30925,7 +30925,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_suspension_wooden_cribbing_blocks",
           "workstream": "suspension_upgrade",
-          "item": "Hardwood cribbing / wooden support blocks for suspension replacement - 12 piece working set",
+          "item": "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks",
           "status": "planned",
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
@@ -30933,25 +30933,25 @@ window.J40_DASHBOARD_DATA = {
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "local timber / hardware supplier",
+          "vendor": "local timber / wood merchant",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_suspension_wooden_cribbing_blocks",
-          "evidence_ref": "user_update_2026-05-02_suspension_wooden_blocks",
-          "notes": "Add for Ironman suspension replacement support setup. Working order: 12 solid hardwood/timber pieces total, expected as 8 cribbing blocks plus 4 wedge chocks or equivalent mechanic-approved mix. Use only sound, dry, square-cut hardwood/timber with broad bearing faces; reject cracked, soft, split, oily, or uneven offcuts. These supplement jack stands and axle support during leaf spring/shock work and are not a substitute for rated stands. Confirm final dimensions with the workshop before purchase.",
+          "evidence_ref": "user_update_2026-05-02_suspension_wooden_blocks|data/manual/suspension_wood_cribbing_order_specs.csv|docs/suspension-wood-cribbing-merchant-spec.md",
+          "notes": "Merchant-ready cut list: 12 total seasoned solid hardwood pieces: 8 rectangular cribbing blocks 12 x 6 x 3 in (approx 300 x 150 x 75 mm) plus 4 wedge chocks cut from 8 x 4 x 3 in blanks (approx 200 x 100 x 75 mm), tapering from 75 mm to 20-25 mm. Accept sheesham/shisham, kikar/acacia, oak, ash, or equivalent dense dry hardwood. Require flat parallel faces, square ends, grain along length, no rocking, and raw unfinished wood. Reject wet/green wood, softwood, plywood, MDF, chipboard, laminated boards, cracked/split/oily/painted offcuts, rounded branches, or large knots on bearing faces. These supplement rated jack stands and axle support during leaf spring/shock work; not a substitute for rated stands.",
           "links": [],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/suspension_kit.jpg",
-            "caption": "Hardwood cribbing / wooden support blocks for suspension replacement - 12 piece working set \u00b7 suspension kit reference image",
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/leaf_shackle.jpg",
+            "caption": "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks \u00b7 leaf spring/shackle reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "semantic_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "suspension_kit",
+            "media_id": "leaf_shackle",
             "matched_tokens": [
-              "suspension"
+              "shackle"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -31075,7 +31075,7 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Ironman Foamcell suspension kit - main shipment (front dampers separate) (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
-                "Hardwood cribbing / wooden support blocks for suspension replacement - 12 piece working set (purchase_ready; delivery not_ordered; amount missing)",
+                "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks (purchase_ready; delivery not_ordered; amount missing)",
                 "Ironman Foamcell front damper pair - separate shipment (24635FE x2) (ordered_pending_delivery; delivery pending_delivery; amount missing)"
               ]
             },
@@ -31191,7 +31191,7 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Ironman Foamcell suspension kit - main shipment (front dampers separate) (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Ironman Foamcell front damper pair - separate shipment (24635FE x2) (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "Hardwood cribbing / wooden support blocks for suspension replacement - 12 piece working set (purchase_ready; delivery not_ordered; amount missing)"
+                "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -31307,7 +31307,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Hardwood cribbing / wooden support blocks for suspension replacement - 12 piece working set (purchase_ready; delivery not_ordered; amount missing)",
+                "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks (purchase_ready; delivery not_ordered; amount missing)",
                 "Ironman Foamcell suspension kit - main shipment (front dampers separate) (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Ironman Foamcell front damper pair - separate shipment (24635FE x2) (ordered_pending_delivery; delivery pending_delivery; amount missing)"
               ]
@@ -31421,7 +31421,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Hardwood cribbing / wooden support blocks for suspension replacement - 12 piece working set (purchase_ready; delivery not_ordered; amount missing)",
+                "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks (purchase_ready; delivery not_ordered; amount missing)",
                 "Ironman Foamcell suspension kit - main shipment (front dampers separate) (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Ironman Foamcell front damper pair - separate shipment (24635FE x2) (ordered_pending_delivery; delivery pending_delivery; amount missing)"
               ]
@@ -34737,7 +34737,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_rear_axle_hard_brake_lines",
         "workstream": "brake_system",
-        "item": "Rear axle hard brake lines and fittings",
+        "item": "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread",
         "status": "planned",
         "procurement_stage": "spec_needed_before_order",
         "payment_status": "not_paid",
@@ -34748,44 +34748,11 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "BR-REAR-002|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-        "notes": "Recreate left/right rear axle lines in brake-rated 3/16 in / 4.75 mm tube after flare standard, fitting threads, bend templates, and clip positions are confirmed.",
+        "notes": "Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube only after flare standard, fitting threads/seats, bend templates, route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
         "links": [],
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear axle hard brake lines and fittings \u00b7 local inventory photo",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260501_194305_gp_EllBGvXA",
-          "matched_tokens": [
-            "photo_20260501_194305_gp_ellbgvxa"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
-        }
-      },
-      {
-        "entry_id": "part_rear_brake_line_cable_clips",
-        "workstream": "brake_system",
-        "item": "Rear brake line clips and parking-brake cable retainers",
-        "status": "planned",
-        "procurement_stage": "spec_needed_before_order",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-        "notes": "Count and replace corroded or missing brake-line clips, cable retainers, rubber sleeves, grommets, and rubber-lined P-clips before final rear axle routing.",
-        "links": [],
-        "image": {
-          "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear brake line clips and parking-brake cable retainers \u00b7 local inventory photo",
+          "caption": "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -34803,7 +34770,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_rear_center_brake_flex_hose",
         "workstream": "brake_system",
-        "item": "Rear center frame-to-axle flexible brake hose",
+        "item": "Rear center frame-to-axle brake flex hose - by end fittings and full-droop length",
         "status": "planned",
         "procurement_stage": "spec_needed_before_order",
         "payment_status": "not_paid",
@@ -34814,11 +34781,44 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "BR-REAR-003|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-        "notes": "Replace rear center hose once chassis-side and axle-side fitting threads/end styles and full-droop slack are confirmed.",
+        "notes": "Replace rear center hose only after chassis-side and axle-side fitting thread/end style bracket retention free length and full-droop slack are measured; brake-fluid-rated hose only; verify no stretch or suspension/tire contact at full droop.",
         "links": [],
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear center frame-to-axle flexible brake hose \u00b7 local inventory photo",
+          "caption": "Rear center frame-to-axle brake flex hose - by end fittings and full-droop length \u00b7 local inventory photo",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260501_194305_gp_EllBGvXA",
+          "matched_tokens": [
+            "photo_20260501_194305_gp_ellbgvxa"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "entry_id": "part_rear_brake_line_cable_clips",
+        "workstream": "brake_system",
+        "item": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips",
+        "status": "planned",
+        "procurement_stage": "spec_needed_before_order",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "",
+        "supply_type": "part",
+        "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
+        "notes": "Count and replace corroded or missing rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD. Use permanent supports, not cable ties, before final rear axle routing.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
+          "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -34869,7 +34869,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_mech_brake_flex_hose_set",
         "workstream": "brake_system",
-        "item": "Brake flexible hose set front and rear",
+        "item": "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance",
         "status": "spec_ready",
         "procurement_stage": "spec_ready_release_hold",
         "payment_status": "not_paid",
@@ -34880,11 +34880,11 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready: order line RPO-BRAKE-001A defines brake-fluid-rated flex hoses matched to current front/rear fittings plus free/full-droop length in mm. Complete RPA-006 fitting photos and full-droop slack check before payment.",
+        "notes": "Spec ready via RPO-BRAKE-001A/B: front/rear brake flex hoses by current fitting thread/banjo/seat, bracket retention, free length and full-droop length; brake hard-line stock 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with brake-rated fittings. Release hold: close fitting photos, flare/thread/seat confirmation, route lengths, bend templates, and full-droop slack before payment/fabrication.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
-          "caption": "Brake flexible hose set front and rear \u00b7 brake line/hose reference image",
+          "caption": "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance \u00b7 brake line/hose reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -35334,7 +35334,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_mech_clutch_master_slave_refresh",
         "workstream": "mechanical_baseline",
-        "item": "Clutch master and slave cylinder refresh kit",
+        "item": "Clutch hydraulic refresh - master/slave plus flex hose and 1500 mm hard-line allowance if needed",
         "status": "planned",
         "procurement_stage": "next_phase_purchase",
         "payment_status": "not_paid",
@@ -35345,20 +35345,21 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH INSPECT THEN REPLACE if leakage pedal sink or seized seals",
+        "notes": "MECH INSPECT THEN REPLACE if leakage, pedal sink, or seized seals. If the clutch line is cracked, corroded, swollen, or leaking, use RPO-CLUTCH-001A/B: match master/slave port thread, flare/seat, flex length, hard-line OD, and route length; 1500 mm brake/clutch-rated hard-line blank allowance if replaced.",
         "links": [],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_master.jpg",
-          "caption": "Clutch master and slave cylinder refresh kit \u00b7 clutch/brake cylinder reference image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+          "caption": "Clutch hydraulic refresh - master/slave plus flex hose and 1500 mm hard-line allowance if needed \u00b7 clutch/brake line reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "brake_master",
+          "media_id": "brake_hose_line",
           "matched_tokens": [
-            "clutch"
+            "clutch",
+            "line"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -35625,77 +35626,9 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_mech_fuel_hose_and_clamps",
-        "workstream": "mechanical_baseline",
-        "item": "Fuel-rated rubber hose and clamp kit",
-        "status": "spec_ready",
-        "procurement_stage": "spec_ready_release_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready: order lines RPO-FUEL-001A through RPO-FUEL-001C define diesel-rated hose: 8 mm ID x 3000 mm feed, 6 mm ID x 2000 mm return, 3.2-3.5 mm ID x 1000 mm leak-off. Complete RPA-002/RPA-004 before payment. Do not fabricate high-pressure injector pipes.",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
-          "caption": "Fuel-rated rubber hose and clamp kit \u00b7 fuel hose/clamp reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "fuel_hose",
-          "matched_tokens": [
-            "fuel",
-            "hose"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_mech_heater_hose_set",
-        "workstream": "mechanical_baseline",
-        "item": "Heater hose set with clamps",
-        "status": "spec_ready",
-        "procurement_stage": "spec_ready_release_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready: order lines RPO-COOL-004A and RPO-COOL-004B define EPDM SAE J20R3 heater hose, 400 mm inlet and 280 mm outlet cut lengths, expected 16 mm / 5/8 inch ID. Complete RPA-002 nipple measurements and rear-heater check before payment.",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/heater_hose.jpg",
-          "caption": "Heater hose set with clamps \u00b7 heater hose reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "heater_hose",
-          "matched_tokens": [
-            "heater",
-            "hose"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
         "entry_id": "part_mech_radiator_hose_set",
         "workstream": "mechanical_baseline",
-        "item": "Radiator hose set upper plus lower with clamps",
+        "item": "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe",
         "status": "spec_ready",
         "procurement_stage": "spec_ready_release_hold",
         "payment_status": "not_paid",
@@ -35706,11 +35639,11 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready: order lines RPO-COOL-001 and RPO-COOL-002 define spec-led molded EPDM coolant hoses; Toyota/Dayco numbers are cross-references only. Record old-hose free lengths plus neck and clamp ODs in mm before payment.",
+        "notes": "Spec ready via RPO-COOL-001/002/003/005: molded EPDM upper and lower radiator hoses for HJ47/2H route; small EPDM overflow hose 1000 mm local buy length cut to measured radiator-to-bottle route; formed coolant/radiator pipe from 750 mm minimum tube blank using the physical sample. Toyota/Dayco references are cross-references only. Release hold: measure thermostat/radiator/engine neck ODs, hose OD for clamps, old-hose free lengths, overflow nipple ODs, and formed-pipe tube OD/wall/centerline/bends/beads before payment or fabrication.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg",
-          "caption": "Radiator hose set upper plus lower with clamps \u00b7 radiator/coolant hose reference image",
+          "caption": "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe \u00b7 radiator/coolant hose reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -35727,9 +35660,9 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_mech_vacuum_hose_refresh",
+        "entry_id": "part_mech_fuel_hose_and_clamps",
         "workstream": "mechanical_baseline",
-        "item": "Vacuum hose refresh kit",
+        "item": "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines",
         "status": "spec_ready",
         "procurement_stage": "spec_ready_release_hold",
         "payment_status": "not_paid",
@@ -35740,11 +35673,78 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready: order lines RPO-VAC-001A through RPO-VAC-001C define 10-12 mm ID x 2000 mm reinforced vacuum hose, 16-19 mm ID x 1000 mm oil-resistant breather hose, and oil-outlet molded hose only if fitted. Complete RPA-009 before payment.",
+        "notes": "Spec ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: diesel-rated 8 mm ID x 3000 mm feed hose, 6 mm ID x 2000 mm return/bleed hose, 3.2-3.5 mm ID x 1000 mm injector leak-off hose, plus conditional 8 mm OD x 5000 mm feed and 6 mm OD x 5000 mm return hard-line allowances if corrosion inspection requires replacement. Use rolled-edge fuel-injection clamps. Release hold: measure every barb/line OD, hose OD for clamps, route lengths, and flare/union style if hard lines are replaced. Do not fabricate high-pressure injector pipes.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/heavy_battery_cable.jpg",
+          "caption": "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines \u00b7 automotive cable reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "heavy_battery_cable",
+          "matched_tokens": [
+            "cable"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_mech_heater_hose_set",
+        "workstream": "mechanical_baseline",
+        "item": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID",
+        "status": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "",
+        "supply_type": "part",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+        "notes": "Spec ready via RPO-COOL-004A/B: EPDM SAE J20R3 or better heater hose, 400 mm inlet and 280 mm outlet cut lengths, expected 16 mm / 5/8 in ID. Release hold: measure engine/heater-core nipple ODs, clamp OD, route lengths, rear-heater branch presence, and clearance from exhaust/firewall chafe before payment.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+          "caption": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID \u00b7 air hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "air_hose",
+          "matched_tokens": [
+            "air",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_mech_vacuum_hose_refresh",
+        "workstream": "mechanical_baseline",
+        "item": "Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather",
+        "status": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "",
+        "supply_type": "part",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+        "notes": "Spec ready via RPO-VAC-001A/B/C: reinforced 10-12 mm ID x 2000 mm brake-booster/vacuum hose, oil-resistant 16-19 mm ID x 1000 mm breather hose, plus 2H vacuum pump oil-outlet molded hose only if fitted. Release hold: confirm pump/booster/check-valve barbs, breather spigot OD, route lengths, oil exposure, and check-valve direction.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
-          "caption": "Vacuum hose refresh kit \u00b7 fuel hose/clamp reference image",
+          "caption": "Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather \u00b7 fuel hose/clamp reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -35863,7 +35863,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_suspension_wooden_cribbing_blocks",
         "workstream": "suspension_upgrade",
-        "item": "Hardwood cribbing / wooden support blocks for suspension replacement - 12 piece working set",
+        "item": "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks",
         "status": "planned",
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
@@ -35871,23 +35871,23 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "local timber / hardware supplier",
+        "vendor": "local timber / wood merchant",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-02_suspension_wooden_blocks",
-        "notes": "Add for Ironman suspension replacement support setup. Working order: 12 solid hardwood/timber pieces total, expected as 8 cribbing blocks plus 4 wedge chocks or equivalent mechanic-approved mix. Use only sound, dry, square-cut hardwood/timber with broad bearing faces; reject cracked, soft, split, oily, or uneven offcuts. These supplement jack stands and axle support during leaf spring/shock work and are not a substitute for rated stands. Confirm final dimensions with the workshop before purchase.",
+        "evidence_ref": "user_update_2026-05-02_suspension_wooden_blocks|data/manual/suspension_wood_cribbing_order_specs.csv|docs/suspension-wood-cribbing-merchant-spec.md",
+        "notes": "Merchant-ready cut list: 12 total seasoned solid hardwood pieces: 8 rectangular cribbing blocks 12 x 6 x 3 in (approx 300 x 150 x 75 mm) plus 4 wedge chocks cut from 8 x 4 x 3 in blanks (approx 200 x 100 x 75 mm), tapering from 75 mm to 20-25 mm. Accept sheesham/shisham, kikar/acacia, oak, ash, or equivalent dense dry hardwood. Require flat parallel faces, square ends, grain along length, no rocking, and raw unfinished wood. Reject wet/green wood, softwood, plywood, MDF, chipboard, laminated boards, cracked/split/oily/painted offcuts, rounded branches, or large knots on bearing faces. These supplement rated jack stands and axle support during leaf spring/shock work; not a substitute for rated stands.",
         "links": [],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/suspension_kit.jpg",
-          "caption": "Hardwood cribbing / wooden support blocks for suspension replacement - 12 piece working set \u00b7 suspension kit reference image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/leaf_shackle.jpg",
+          "caption": "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks \u00b7 leaf spring/shackle reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "suspension_kit",
+          "media_id": "leaf_shackle",
           "matched_tokens": [
-            "suspension"
+            "shackle"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -36863,18 +36863,18 @@ window.J40_DASHBOARD_DATA = {
         "source_sheet": "PK_Quality_Path",
         "source_ref": "pk_quality_path#row_5",
         "system": "EPS",
-        "item": "Donor clamp brackets and support plates included with EPS kit",
+        "item": "Bracket/support fabrication + column alignment",
         "stage": "",
-        "decision": "CHECK_WITH_COLUMN_SET",
+        "decision": "FABRICATE_AFTER_TRIAL_FIT",
         "cost": "27500",
-        "notes": "No cracked tabs broken ears missing fasteners or unidentified loose bracket pieces.",
+        "notes": "Column axis alignment and weld quality inspection before final paint.",
         "links": [
           {
-            "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_vitz+eps+column/",
+            "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_fabrication+shop+lahore/",
             "label": "pakwheels.com"
           },
           {
-            "url": "https://www.olx.com.pk/items/q-vitz-parts",
+            "url": "https://www.olx.com.pk/items/q-automotive-fabrication",
             "label": "olx.com.pk"
           }
         ]
@@ -36883,11 +36883,11 @@ window.J40_DASHBOARD_DATA = {
         "source_sheet": "PK_Quality_Path",
         "source_ref": "pk_quality_path#row_4",
         "system": "EPS",
-        "item": "Intermediate shaft + U-joints + couplers included with EPS kit",
+        "item": "Intermediate shaft + U-joints + couplers",
         "stage": "",
-        "decision": "CHECK_WITH_COLUMN_SET",
+        "decision": "MEASURE_THEN_BUY",
         "cost": "30000",
-        "notes": "No notchiness seized joints bent shafts missing couplers or unknown spline ends.",
+        "notes": "No binding through full steering sweep; proper phasing and lock-to-lock clearance.",
         "links": [
           {
             "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_steering+u+joint+toyota/",
@@ -36903,13 +36903,11 @@ window.J40_DASHBOARD_DATA = {
         "source_sheet": "PK_Buy_Clean_Direct",
         "source_ref": "pk_buy_clean_direct#row_4",
         "system": "EPS",
-        "item": "Steering U-joints/couplers/intermediate shaft pieces included with EPS kit",
-        "stage": "pre_payment_market_check",
+        "item": "Steering U-joints/couplers/intermediate shaft materials",
+        "stage": "pre_tub_refit",
         "decision": "",
         "cost": "30000",
-        "quantity": "included in matched kit",
-        "total_value": "included in complete kit total",
-        "notes": "Quote support range",
+        "notes": "Fabrication market range",
         "links": [
           {
             "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_steering+u+joint+toyota/",
@@ -36919,17 +36917,19 @@ window.J40_DASHBOARD_DATA = {
             "url": "https://www.daraz.pk/catalog/?q=steering+u+joint",
             "label": "daraz.pk"
           }
-        ]
+        ],
+        "quantity": "1 conversion set",
+        "total_value": "30000"
       },
       {
         "source_sheet": "PK_Quality_Path",
         "source_ref": "pk_quality_path#row_3",
         "system": "EPS",
-        "item": "Vitz/Yaris 2005-2011 SCP90/NCP90 EPS ECU/controller (matching column family)",
+        "item": "Vitz EPS ECU/controller (matching column family)",
         "stage": "",
         "decision": "BUY_WITH_COLUMN_AS_SET",
         "cost": "40000",
-        "notes": "Same 2005-2011 SCP90/NCP90 donor family as EPS column; bench-test as a matched set before payment.",
+        "notes": "Same donor family as EPS column; test assist behavior before install.",
         "links": [
           {
             "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_vitz+eps+computer/",
@@ -36945,12 +36945,10 @@ window.J40_DASHBOARD_DATA = {
         "source_sheet": "PK_Buy_Clean_Direct",
         "source_ref": "pk_buy_clean_direct#row_3",
         "system": "EPS",
-        "item": "Vitz/Yaris 2005-2011 SCP90/NCP90 EPS ECU/controller (matching generation)",
-        "stage": "pre_payment_market_check",
+        "item": "Vitz EPS ECU/controller (matching generation)",
+        "stage": "pre_tub_refit",
         "decision": "",
         "cost": "40000",
-        "quantity": "included in matched kit",
-        "total_value": "included in complete kit total",
         "notes": "Market listing range",
         "links": [
           {
@@ -36961,18 +36959,18 @@ window.J40_DASHBOARD_DATA = {
             "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_power+steering+ecu+toyota/",
             "label": "pakwheels.com"
           }
-        ]
+        ],
+        "quantity": "1",
+        "total_value": "40000"
       },
       {
         "source_sheet": "PK_Buy_Clean_Direct",
         "source_ref": "pk_buy_clean_direct#row_2",
         "system": "EPS",
-        "item": "Vitz/Yaris 2005-2011 SCP90/NCP90 EPS column complete set (motor+torque sensor+housing)",
-        "stage": "pre_payment_market_check",
+        "item": "Vitz EPS column complete set (motor+torque sensor+housing)",
+        "stage": "pre_tub_refit",
         "decision": "",
-        "cost": "90000",
-        "quantity": "1 complete matched EPS kit",
-        "total_value": "90000",
+        "cost": "100000",
         "notes": "Market listing range",
         "links": [
           {
@@ -36983,17 +36981,19 @@ window.J40_DASHBOARD_DATA = {
             "url": "https://www.olx.com.pk/items/q-vitz-parts",
             "label": "olx.com.pk"
           }
-        ]
+        ],
+        "quantity": "1 set",
+        "total_value": "100000"
       },
       {
         "source_sheet": "PK_Quality_Path",
         "source_ref": "pk_quality_path#row_2",
         "system": "EPS",
-        "item": "Vitz/Yaris 2005-2011 SCP90/NCP90 EPS column complete set (motor+torque sensor+reduction housing)",
+        "item": "Vitz SCP90 EPS column complete set (motor+torque sensor+reduction housing)",
         "stage": "",
         "decision": "BUY_AFTER_PHYSICAL_TEST",
-        "cost": "90000",
-        "notes": "Bench test before payment; confirm donor label/year/chassis 2005-2011 SCP90/NCP90; no play/noise; matching kit contents visible.",
+        "cost": "100000",
+        "notes": "Bench test under load; no play/noise; matching splines for shaft plan.",
         "links": [
           {
             "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_vitz+eps+column/",
@@ -37023,7 +37023,9 @@ window.J40_DASHBOARD_DATA = {
             "url": "https://www.daraz.pk/catalog/?q=toyota+engine+mount+rubber",
             "label": "daraz.pk"
           }
-        ]
+        ],
+        "quantity": "1 set",
+        "total_value": "32500"
       },
       {
         "source_sheet": "PK_Quality_Path",
@@ -37063,7 +37065,9 @@ window.J40_DASHBOARD_DATA = {
             "url": "https://www.daraz.pk/catalog/?q=toyota+diesel+fuel+filter",
             "label": "daraz.pk"
           }
-        ]
+        ],
+        "quantity": "1",
+        "total_value": "7500"
       },
       {
         "source_sheet": "PK_Quality_Path",
@@ -37123,7 +37127,9 @@ window.J40_DASHBOARD_DATA = {
             "url": "https://www.daraz.pk/catalog/?q=fuel+hose+clamp",
             "label": "daraz.pk"
           }
-        ]
+        ],
+        "quantity": "1 bundle",
+        "total_value": "23500"
       },
       {
         "source_sheet": "PK_Buy_Clean_Direct",
@@ -37143,7 +37149,9 @@ window.J40_DASHBOARD_DATA = {
             "url": "https://www.daraz.pk/catalog/?q=gearbox+mount+rubber+toyota",
             "label": "daraz.pk"
           }
-        ]
+        ],
+        "quantity": "1 set",
+        "total_value": "28500"
       },
       {
         "source_sheet": "PK_Quality_Path",
@@ -37183,7 +37191,9 @@ window.J40_DASHBOARD_DATA = {
             "url": "https://www.daraz.pk/catalog/?q=toyota+glow+plug",
             "label": "daraz.pk"
           }
-        ]
+        ],
+        "quantity": "1 set",
+        "total_value": "24000"
       },
       {
         "source_sheet": "PK_Quality_Path",
@@ -37223,7 +37233,9 @@ window.J40_DASHBOARD_DATA = {
             "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_heater+hose+toyota/",
             "label": "pakwheels.com"
           }
-        ]
+        ],
+        "quantity": "1 set",
+        "total_value": "10000"
       },
       {
         "source_sheet": "PK_Buy_Clean_Direct",
@@ -37243,7 +37255,9 @@ window.J40_DASHBOARD_DATA = {
             "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_toyota+oil+filter+diesel/",
             "label": "pakwheels.com"
           }
-        ]
+        ],
+        "quantity": "1",
+        "total_value": "5500"
       },
       {
         "source_sheet": "PK_Quality_Path",
@@ -37283,7 +37297,9 @@ window.J40_DASHBOARD_DATA = {
             "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_radiator+hose+toyota/",
             "label": "pakwheels.com"
           }
-        ]
+        ],
+        "quantity": "1 set",
+        "total_value": "16500"
       },
       {
         "source_sheet": "Rubbers_All_Replace_Links",
@@ -37403,7 +37419,9 @@ window.J40_DASHBOARD_DATA = {
             "url": "https://www.daraz.pk/catalog/?q=m12+shim+washer",
             "label": "daraz.pk"
           }
-        ]
+        ],
+        "quantity": "1 pack",
+        "total_value": "7000"
       },
       {
         "source_sheet": "Rubbers_Kit_Buy",
@@ -37443,7 +37461,9 @@ window.J40_DASHBOARD_DATA = {
             "url": "https://www.daraz.pk/catalog/?q=body+mount+bushing+toyota",
             "label": "daraz.pk"
           }
-        ]
+        ],
+        "quantity": "1 kit",
+        "total_value": "39000"
       },
       {
         "source_sheet": "Rubbers_All_Replace_Links",
@@ -37843,7 +37863,9 @@ window.J40_DASHBOARD_DATA = {
             "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_rubber+grommet+kit/",
             "label": "pakwheels.com"
           }
-        ]
+        ],
+        "quantity": "1 set",
+        "total_value": "4000"
       },
       {
         "source_sheet": "PK_Quality_Path",
@@ -38550,24 +38572,24 @@ window.J40_DASHBOARD_DATA = {
     "summary_by_type": [
       {
         "supply_type": "tool",
-        "previously": 41,
-        "in_process": 18,
-        "still_required": 5,
-        "total": 64
+        "previously": 40,
+        "in_process": 19,
+        "still_required": 8,
+        "total": 67
       },
       {
         "supply_type": "substance",
         "previously": 7,
         "in_process": 4,
-        "still_required": 2,
-        "total": 13
+        "still_required": 4,
+        "total": 15
       },
       {
         "supply_type": "part",
-        "previously": 86,
+        "previously": 85,
         "in_process": 8,
-        "still_required": 54,
-        "total": 148
+        "still_required": 61,
+        "total": 154
       }
     ],
     "rows_by_status": {
@@ -38696,20 +38718,20 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Jazzcash | Evidence indicates purchased/received. | Migrated from Wiring row 23 into Parts inventory.",
           "links": [],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/circuit_breaker.jpg",
-            "caption": "100A Circuit Breaker Resettable Fuse Car Marine Boat Automotive Protector \u00b7 circuit breaker reference image",
+            "path": "../../photos/20260411_071153.jpg",
+            "caption": "100A resettable circuit breaker and relay/fuse power hardware - local received photo evidence",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "manual_override_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "circuit_breaker",
+            "media_id": "",
             "matched_tokens": [
-              "breaker"
+              "row_53"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "local_inventory_evidence",
+            "match_score": 999
           }
         },
         {
@@ -39405,8 +39427,8 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 27 into Parts inventory.",
           "links": [],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/littelfuse_midi_498_holder_littelfuse.jpg",
-            "caption": "Littelfuse 498 MIDI fuse holder - reference image",
+            "path": "../../photos/20260411_143135.jpg",
+            "caption": "6-way MIDI fuse holder bank - local received photo evidence",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -39417,7 +39439,7 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "row_54"
             ],
-            "match_basis": "manual_override",
+            "match_basis": "local_inventory_evidence",
             "match_score": 999
           }
         },
@@ -39475,20 +39497,20 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 54 into Parts inventory.",
           "links": [],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/pliers.jpg",
-            "caption": "6pcs Ratchet Crimping Tool Set \u00b7 pliers reference image",
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/workbook_parts_row_71_ratchet_crimping_tool_set_6pcs.jpg",
+            "caption": "6pcs Ratchet Crimping Tool Set - ratchet crimper and interchangeable dies reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "manual_override_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "pliers",
+            "media_id": "",
             "matched_tokens": [
-              "pliers"
+              "row_71"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "manual_override",
+            "match_score": 999
           }
         },
         {
@@ -39875,41 +39897,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_96",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Hazard: 1 \u00d7 red latching pushbutton, panel-mount, automotive 12V",
-          "vendor": "electronicstore.pk",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "previously",
-          "status_detail": "received",
-          "procurement_stage": "",
-          "payment_status": "Y",
-          "delivery_status": "Y",
-          "evidence_ref": "",
-          "notes": "Separate hazard switch confirmed by user update 2026-05-02; not part of the 7 Schneider selector count. Previous candidate: 6mm PLUSE Switch10 Amp 16mm Latching Push Button Switch 12V/24V Angel Eye LED Waterproof Stainless Steel Round (16mm, Red).",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/hazard_red_latching_pushbutton_electronicstore.webp",
-            "caption": "Hazard 16mm red latching pushbutton - Electronic Store product reference",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "row_96"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
           }
         },
         {
@@ -40352,21 +40339,20 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 33 into Parts inventory.",
           "links": [],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/fuse_box.jpg",
-            "caption": "Portable 12-Way Car Fuse Box Universal Automotive Box Holder with Led Indicator \u00b7 fuse box reference image",
+            "path": "../../photos/20260411_071153.jpg",
+            "caption": "12-way fuse block and power hardware - local received photo evidence",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "manual_override_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "fuse_box",
+            "media_id": "",
             "matched_tokens": [
-              "fuse",
-              "box"
+              "row_57"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "local_inventory_evidence",
+            "match_score": 999
           }
         },
         {
@@ -40458,21 +40444,20 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 28 into Parts inventory.",
           "links": [],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/relay_fuse_box.jpg",
-            "caption": "Relay Box 12V 10 Way Relay Block and 10 Way ATC/ATO Blade Fuse Pane \u00b7 relay/fuse box reference image",
+            "path": "../../photos/20260411_143125.jpg",
+            "caption": "10-way relay/fuse block - local received photo evidence",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "manual_override_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "relay_fuse_box",
+            "media_id": "",
             "matched_tokens": [
-              "relay",
-              "box"
+              "row_55"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "local_inventory_evidence",
+            "match_score": 999
           }
         },
         {
@@ -41893,42 +41878,6 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "bullet",
               "connector"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "workbook_tools",
-          "source_ref": "workbook_tools#row_54",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "22mm step drill bit (metal panel capable)",
-          "vendor": "Local hardware/tools market",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "previously",
-          "status_detail": "received",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "Y",
-          "evidence_ref": "",
-          "notes": "On hand per user_update_2026-05-02_dashboard_switch_lcd_update; primary tool to open existing pull-switch holes toward 22mm.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/switch_panel.jpg",
-            "caption": "22mm step drill bit (metal panel capable) \u00b7 switch panel reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "switch_panel",
-            "matched_tokens": [
-              "switch",
-              "panel"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -43907,6 +43856,42 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_tools",
+          "source_ref": "workbook_tools#row_55",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "22mm chassis punch or precision hole cutter",
+          "vendor": "Local hardware/tools market",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "",
+          "status_group": "in_process",
+          "status_detail": "ordered_or_paid",
+          "procurement_stage": "",
+          "payment_status": "",
+          "delivery_status": "No",
+          "evidence_ref": "",
+          "notes": "Recently ordered; awaiting arrival confirmation.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/hole_cutter.jpg",
+            "caption": "22mm chassis punch or precision hole cutter \u00b7 hole cutter reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "hole_cutter",
+            "matched_tokens": [
+              "hole",
+              "cutter"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "workbook_tools",
           "source_ref": "workbook_tools#row_41",
           "supply_type": "tool",
           "inventory_group": "tools",
@@ -45002,6 +44987,77 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
+          "source_ref": "workbook_parts#row_19",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Brake flexible hose set front and rear",
+          "vendor": "Use local Toyota/common parts markets; buy as one batch after inspection.",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "",
+          "status_group": "still_required",
+          "status_detail": "needs_buy_or_check",
+          "procurement_stage": "",
+          "payment_status": "",
+          "delivery_status": "",
+          "evidence_ref": "",
+          "notes": "Active required purchase item from Procurement_Pass2. | RR action=Use local Toyota/common parts markets; buy as one batch after inspection.; evidence=Common Toyota service items should be bought as a local bundle after tub-off inspection confirms exact spec.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+            "caption": "Brake flexible hose set front and rear \u00b7 brake line/hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "brake_hose_line",
+            "matched_tokens": [
+              "brake",
+              "line"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "workbook_parts",
+          "source_ref": "workbook_parts#row_20",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Clutch master and slave cylinder refresh kit",
+          "vendor": "Use local Toyota/common parts markets; buy as one batch after inspection.",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "",
+          "status_group": "still_required",
+          "status_detail": "needs_buy_or_check",
+          "procurement_stage": "",
+          "payment_status": "",
+          "delivery_status": "",
+          "evidence_ref": "",
+          "notes": "Condition-based item: inspect first, then buy only if required. | RR action=Use local Toyota/common parts markets; buy as one batch after inspection.; evidence=Condition-dependent item; inspect first then buy local only if required.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_master.jpg",
+            "caption": "Clutch master and slave cylinder refresh kit \u00b7 clutch/brake cylinder reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "brake_master",
+            "matched_tokens": [
+              "clutch"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "workbook_parts",
           "source_ref": "workbook_parts#row_38",
           "supply_type": "part",
           "inventory_group": "electrical",
@@ -45160,6 +45216,42 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
+          "source_ref": "workbook_parts#row_25",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Fuel-rated rubber hose and clamp kit",
+          "vendor": "Use local Toyota/common parts markets; buy as one batch after inspection.",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "",
+          "status_group": "still_required",
+          "status_detail": "needs_buy_or_check",
+          "procurement_stage": "",
+          "payment_status": "",
+          "delivery_status": "",
+          "evidence_ref": "",
+          "notes": "Active required purchase item from Procurement_Pass2. | RR action=Use local Toyota/common parts markets; buy as one batch after inspection.; evidence=Common Toyota service items should be bought as a local bundle after tub-off inspection confirms exact spec.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+            "caption": "Fuel-rated rubber hose and clamp kit \u00b7 fuel hose/clamp reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "fuel_hose",
+            "matched_tokens": [
+              "fuel",
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "workbook_parts",
           "source_ref": "workbook_parts#row_41",
           "supply_type": "part",
           "inventory_group": "electrical",
@@ -45258,6 +45350,113 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "generic_substance",
             "matched_tokens": [
               "substance"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "workbook_parts",
+          "source_ref": "workbook_parts#row_96",
+          "supply_type": "part",
+          "inventory_group": "electrical",
+          "item": "Hazard: 1 \u00d7 red latching pushbutton, panel-mount, automotive 12V",
+          "vendor": "electronicstore.pk",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "",
+          "status_group": "still_required",
+          "status_detail": "needs_buy_or_check",
+          "procurement_stage": "",
+          "payment_status": "",
+          "delivery_status": "",
+          "evidence_ref": "",
+          "notes": "6mm PLUSE Switch10 Amp 16mm Latching Push Button Switch 12V and 24v Angel Eye LED Waterproof Stainless Steel Round (16mm, Red) Price in Pakistan | Open item with no procurement evidence yet. | Migrated from Wiring row 129 into Parts inventory.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/hazard_red_latching_pushbutton_electronicstore.webp",
+            "caption": "Hazard 16mm red latching pushbutton - Electronic Store product reference",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "row_96"
+            ],
+            "match_basis": "manual_override",
+            "match_score": 999
+          }
+        },
+        {
+          "source": "workbook_parts",
+          "source_ref": "workbook_parts#row_29",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Heat plugs (glow plugs) set - diesel engine (NEW only)",
+          "vendor": "Use local Toyota/common parts markets; buy as one batch after inspection.",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "",
+          "status_group": "still_required",
+          "status_detail": "needs_buy_or_check",
+          "procurement_stage": "",
+          "payment_status": "",
+          "delivery_status": "",
+          "evidence_ref": "",
+          "notes": "Active required purchase item from Procurement_Pass2. | RR action=Use local Toyota/common parts markets; buy as one batch after inspection.; evidence=Common Toyota service items should be bought as a local bundle after tub-off inspection confirms exact spec. | User rule 2026-04-15: heat/glow plugs are NEW ONLY; no used/refurbished plugs accepted.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/glow_plugs.jpg",
+            "caption": "Heat plugs (glow plugs) set - diesel engine (NEW only) \u00b7 diesel glow plug reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "glow_plugs",
+            "matched_tokens": [
+              "glow",
+              "plugs"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "workbook_parts",
+          "source_ref": "workbook_parts#row_26",
+          "supply_type": "part",
+          "inventory_group": "parts",
+          "item": "Heater hose set with clamps",
+          "vendor": "Use local Toyota/common parts markets; buy as one batch after inspection.",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "",
+          "status_group": "still_required",
+          "status_detail": "needs_buy_or_check",
+          "procurement_stage": "",
+          "payment_status": "",
+          "delivery_status": "",
+          "evidence_ref": "",
+          "notes": "Active required purchase item from Procurement_Pass2. | RR action=Use local Toyota/common parts markets; buy as one batch after inspection.; evidence=Common Toyota service items should be bought as a local bundle after tub-off inspection confirms exact spec.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/heater_hose.jpg",
+            "caption": "Heater hose set with clamps \u00b7 heater hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "heater_hose",
+            "matched_tokens": [
+              "heater",
+              "hose"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -45668,6 +45867,42 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_parts",
+          "source_ref": "workbook_parts#row_28",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Radiator hose set upper plus lower with clamps",
+          "vendor": "Use local Toyota/common parts markets; buy as one batch after inspection.",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "",
+          "status_group": "still_required",
+          "status_detail": "needs_buy_or_check",
+          "procurement_stage": "",
+          "payment_status": "",
+          "delivery_status": "",
+          "evidence_ref": "",
+          "notes": "Active required purchase item from Procurement_Pass2. | RR action=Use local Toyota/common parts markets; buy as one batch after inspection.; evidence=Common Toyota service items should be bought as a local bundle after tub-off inspection confirms exact spec.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg",
+            "caption": "Radiator hose set upper plus lower with clamps \u00b7 radiator/coolant hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "radiator_hose",
+            "matched_tokens": [
+              "radiator",
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "workbook_parts",
           "source_ref": "workbook_parts#row_112",
           "supply_type": "part",
           "inventory_group": "parts",
@@ -45737,36 +45972,71 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "source": "expenses",
-          "source_ref": "part_mech_brake_flex_hose_set",
+          "source": "workbook_parts",
+          "source_ref": "workbook_parts#row_40",
           "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Brake flexible hose set front and rear",
-          "vendor": "",
+          "inventory_group": "electrical",
+          "item": "Starter interrupt security relay path (relay + base + concealed arm/disarm switch)",
+          "vendor": "Local electrical market / automotive relay supplier",
           "amount": "",
           "currency": "PKR",
-          "workstream": "brake_system",
+          "workstream": "",
           "status_group": "still_required",
-          "status_detail": "spec_ready",
-          "procurement_stage": "spec_ready_release_hold",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready: order line RPO-BRAKE-001A defines brake-fluid-rated flex hoses matched to current front/rear fittings plus free/full-droop length in mm. Complete RPA-006 fitting photos and full-droop slack check before payment.",
+          "status_detail": "needs_buy_or_check",
+          "procurement_stage": "",
+          "payment_status": "",
+          "delivery_status": "No",
+          "evidence_ref": "",
+          "notes": "Low-cost anti-theft hardening to prevent easy crank/start even if lock is bypassed. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: prioritize as low-risk, locally available buy-first item. | Reconciled 2026-04-15: relay block/fuses already installed; treat as implementation task using on-hand stock, buy concealed switch only if missing.",
           "links": [],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
-            "caption": "Brake flexible hose set front and rear \u00b7 brake line/hose reference image",
+            "path": "../../photos/20260420_221819_gp_YV69fbvA.jpg",
+            "caption": "Starter interrupt / hidden kill switch path - purchased needle-type kill switch local photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "row_40"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 999
+          }
+        },
+        {
+          "source": "workbook_parts",
+          "source_ref": "workbook_parts#row_31",
+          "supply_type": "part",
+          "inventory_group": "parts",
+          "item": "Vacuum hose refresh kit",
+          "vendor": "Use local Toyota/common parts markets; buy as one batch after inspection.",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "",
+          "status_group": "still_required",
+          "status_detail": "needs_buy_or_check",
+          "procurement_stage": "",
+          "payment_status": "",
+          "delivery_status": "",
+          "evidence_ref": "",
+          "notes": "Active required purchase item from Procurement_Pass2. | RR action=Use local Toyota/common parts markets; buy as one batch after inspection.; evidence=Common Toyota service items should be bought as a local bundle after tub-off inspection confirms exact spec.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+            "caption": "Vacuum hose refresh kit \u00b7 fuel hose/clamp reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "semantic_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "brake_hose_line",
+            "media_id": "fuel_hose",
             "matched_tokens": [
-              "brake",
-              "line"
+              "fuel",
+              "hose"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -45777,7 +46047,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_rear_axle_hard_brake_lines",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Rear axle hard brake lines and fittings",
+          "item": "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread",
           "vendor": "",
           "amount": "",
           "currency": "PKR",
@@ -45788,46 +46058,11 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-REAR-002|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-          "notes": "Recreate left/right rear axle lines in brake-rated 3/16 in / 4.75 mm tube after flare standard, fitting threads, bend templates, and clip positions are confirmed.",
+          "notes": "Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube only after flare standard, fitting threads/seats, bend templates, route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
           "links": [],
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear axle hard brake lines and fittings \u00b7 local inventory photo",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260501_194305_gp_EllBGvXA",
-            "matched_tokens": [
-              "photo_20260501_194305_gp_ellbgvxa"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_rear_brake_line_cable_clips",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Rear brake line clips and parking-brake cable retainers",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "brake_system",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "spec_needed_before_order",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-          "notes": "Count and replace corroded or missing brake-line clips, cable retainers, rubber sleeves, grommets, and rubber-lined P-clips before final rear axle routing.",
-          "links": [],
-          "image": {
-            "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear brake line clips and parking-brake cable retainers \u00b7 local inventory photo",
+            "caption": "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -45882,7 +46117,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_rear_center_brake_flex_hose",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Rear center frame-to-axle flexible brake hose",
+          "item": "Rear center frame-to-axle brake flex hose - by end fittings and full-droop length",
           "vendor": "",
           "amount": "",
           "currency": "PKR",
@@ -45893,11 +46128,46 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-REAR-003|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-          "notes": "Replace rear center hose once chassis-side and axle-side fitting threads/end styles and full-droop slack are confirmed.",
+          "notes": "Replace rear center hose only after chassis-side and axle-side fitting thread/end style bracket retention free length and full-droop slack are measured; brake-fluid-rated hose only; verify no stretch or suspension/tire contact at full droop.",
           "links": [],
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear center frame-to-axle flexible brake hose \u00b7 local inventory photo",
+            "caption": "Rear center frame-to-axle brake flex hose - by end fittings and full-droop length \u00b7 local inventory photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260501_194305_gp_EllBGvXA",
+            "matched_tokens": [
+              "photo_20260501_194305_gp_ellbgvxa"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_rear_brake_line_cable_clips",
+          "supply_type": "part",
+          "inventory_group": "electrical",
+          "item": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips",
+          "vendor": "",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "spec_needed_before_order",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
+          "notes": "Count and replace corroded or missing rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD. Use permanent supports, not cable ties, before final rear axle routing.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
+            "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -46339,7 +46609,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_mech_clutch_master_slave_refresh",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Clutch master and slave cylinder refresh kit",
+          "item": "Clutch hydraulic refresh - master/slave plus flex hose and 1500 mm hard-line allowance if needed",
           "vendor": "",
           "amount": "",
           "currency": "PKR",
@@ -46350,20 +46620,92 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH INSPECT THEN REPLACE if leakage pedal sink or seized seals",
+          "notes": "MECH INSPECT THEN REPLACE if leakage, pedal sink, or seized seals. If the clutch line is cracked, corroded, swollen, or leaking, use RPO-CLUTCH-001A/B: match master/slave port thread, flare/seat, flex length, hard-line OD, and route length; 1500 mm brake/clutch-rated hard-line blank allowance if replaced.",
           "links": [],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_master.jpg",
-            "caption": "Clutch master and slave cylinder refresh kit \u00b7 clutch/brake cylinder reference image",
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+            "caption": "Clutch hydraulic refresh - master/slave plus flex hose and 1500 mm hard-line allowance if needed \u00b7 clutch/brake line reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "semantic_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "brake_master",
+            "media_id": "brake_hose_line",
             "matched_tokens": [
-              "clutch"
+              "clutch",
+              "line"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_mech_radiator_hose_set",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe",
+          "vendor": "",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "mechanical_baseline",
+          "status_group": "still_required",
+          "status_detail": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+          "notes": "Spec ready via RPO-COOL-001/002/003/005: molded EPDM upper and lower radiator hoses for HJ47/2H route; small EPDM overflow hose 1000 mm local buy length cut to measured radiator-to-bottle route; formed coolant/radiator pipe from 750 mm minimum tube blank using the physical sample. Toyota/Dayco references are cross-references only. Release hold: measure thermostat/radiator/engine neck ODs, hose OD for clamps, old-hose free lengths, overflow nipple ODs, and formed-pipe tube OD/wall/centerline/bends/beads before payment or fabrication.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg",
+            "caption": "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe \u00b7 radiator/coolant hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "radiator_hose",
+            "matched_tokens": [
+              "radiator",
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_mech_fuel_hose_and_clamps",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines",
+          "vendor": "",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "mechanical_baseline",
+          "status_group": "still_required",
+          "status_detail": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+          "notes": "Spec ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: diesel-rated 8 mm ID x 3000 mm feed hose, 6 mm ID x 2000 mm return/bleed hose, 3.2-3.5 mm ID x 1000 mm injector leak-off hose, plus conditional 8 mm OD x 5000 mm feed and 6 mm OD x 5000 mm return hard-line allowances if corrosion inspection requires replacement. Use rolled-edge fuel-injection clamps. Release hold: measure every barb/line OD, hose OD for clamps, route lengths, and flare/union style if hard lines are replaced. Do not fabricate high-pressure injector pipes.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/heavy_battery_cable.jpg",
+            "caption": "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines \u00b7 automotive cable reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "heavy_battery_cable",
+            "matched_tokens": [
+              "cable"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -46442,42 +46784,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_mech_fuel_hose_and_clamps",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Fuel-rated rubber hose and clamp kit",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "mechanical_baseline",
-          "status_group": "still_required",
-          "status_detail": "spec_ready",
-          "procurement_stage": "spec_ready_release_hold",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready: order lines RPO-FUEL-001A through RPO-FUEL-001C define diesel-rated hose: 8 mm ID x 3000 mm feed, 6 mm ID x 2000 mm return, 3.2-3.5 mm ID x 1000 mm leak-off. Complete RPA-002/RPA-004 before payment. Do not fabricate high-pressure injector pipes.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
-            "caption": "Fuel-rated rubber hose and clamp kit \u00b7 fuel hose/clamp reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "fuel_hose",
-            "matched_tokens": [
-              "fuel",
-              "hose"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_mech_heat_glow_plugs_set",
           "supply_type": "part",
           "inventory_group": "mechanical",
@@ -46517,7 +46823,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_mech_heater_hose_set",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Heater hose set with clamps",
+          "item": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID",
           "vendor": "",
           "amount": "",
           "currency": "PKR",
@@ -46528,20 +46834,20 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready: order lines RPO-COOL-004A and RPO-COOL-004B define EPDM SAE J20R3 heater hose, 400 mm inlet and 280 mm outlet cut lengths, expected 16 mm / 5/8 inch ID. Complete RPA-002 nipple measurements and rear-heater check before payment.",
+          "notes": "Spec ready via RPO-COOL-004A/B: EPDM SAE J20R3 or better heater hose, 400 mm inlet and 280 mm outlet cut lengths, expected 16 mm / 5/8 in ID. Release hold: measure engine/heater-core nipple ODs, clamp OD, route lengths, rear-heater branch presence, and clearance from exhaust/firewall chafe before payment.",
           "links": [],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/heater_hose.jpg",
-            "caption": "Heater hose set with clamps \u00b7 heater hose reference image",
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+            "caption": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID \u00b7 air hose reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "semantic_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "heater_hose",
+            "media_id": "air_hose",
             "matched_tokens": [
-              "heater",
+              "air",
               "hose"
             ],
             "match_basis": "semantic_reference_image",
@@ -46578,78 +46884,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "radiator_hose",
             "matched_tokens": [
               "radiator",
-              "hose"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_mech_radiator_hose_set",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Radiator hose set upper plus lower with clamps",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "mechanical_baseline",
-          "status_group": "still_required",
-          "status_detail": "spec_ready",
-          "procurement_stage": "spec_ready_release_hold",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready: order lines RPO-COOL-001 and RPO-COOL-002 define spec-led molded EPDM coolant hoses; Toyota/Dayco numbers are cross-references only. Record old-hose free lengths plus neck and clamp ODs in mm before payment.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg",
-            "caption": "Radiator hose set upper plus lower with clamps \u00b7 radiator/coolant hose reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "radiator_hose",
-            "matched_tokens": [
-              "radiator",
-              "hose"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_mech_vacuum_hose_refresh",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Vacuum hose refresh kit",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "mechanical_baseline",
-          "status_group": "still_required",
-          "status_detail": "spec_ready",
-          "procurement_stage": "spec_ready_release_hold",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready: order lines RPO-VAC-001A through RPO-VAC-001C define 10-12 mm ID x 2000 mm reinforced vacuum hose, 16-19 mm ID x 1000 mm oil-resistant breather hose, and oil-outlet molded hose only if fitted. Complete RPA-009 before payment.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
-            "caption": "Vacuum hose refresh kit \u00b7 fuel hose/clamp reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "fuel_hose",
-            "matched_tokens": [
-              "fuel",
               "hose"
             ],
             "match_basis": "semantic_reference_image",
@@ -46696,8 +46930,8 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_suspension_wooden_cribbing_blocks",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Hardwood cribbing / wooden support blocks for suspension replacement - 12 piece working set",
-          "vendor": "local timber / hardware supplier",
+          "item": "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks",
+          "vendor": "local timber / wood merchant",
           "amount": "",
           "currency": "PKR",
           "workstream": "suspension_upgrade",
@@ -46706,21 +46940,57 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-02_suspension_wooden_blocks",
-          "notes": "Add for Ironman suspension replacement support setup. Working order: 12 solid hardwood/timber pieces total, expected as 8 cribbing blocks plus 4 wedge chocks or equivalent mechanic-approved mix. Use only sound, dry, square-cut hardwood/timber with broad bearing faces; reject cracked, soft, split, oily, or uneven offcuts. These supplement jack stands and axle support during leaf spring/shock work and are not a substitute for rated stands. Confirm final dimensions with the workshop before purchase.",
+          "evidence_ref": "user_update_2026-05-02_suspension_wooden_blocks|data/manual/suspension_wood_cribbing_order_specs.csv|docs/suspension-wood-cribbing-merchant-spec.md",
+          "notes": "Merchant-ready cut list: 12 total seasoned solid hardwood pieces: 8 rectangular cribbing blocks 12 x 6 x 3 in (approx 300 x 150 x 75 mm) plus 4 wedge chocks cut from 8 x 4 x 3 in blanks (approx 200 x 100 x 75 mm), tapering from 75 mm to 20-25 mm. Accept sheesham/shisham, kikar/acacia, oak, ash, or equivalent dense dry hardwood. Require flat parallel faces, square ends, grain along length, no rocking, and raw unfinished wood. Reject wet/green wood, softwood, plywood, MDF, chipboard, laminated boards, cracked/split/oily/painted offcuts, rounded branches, or large knots on bearing faces. These supplement rated jack stands and axle support during leaf spring/shock work; not a substitute for rated stands.",
           "links": [],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/suspension_kit.jpg",
-            "caption": "Hardwood cribbing / wooden support blocks for suspension replacement - 12 piece working set \u00b7 suspension kit reference image",
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/leaf_shackle.jpg",
+            "caption": "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks \u00b7 leaf spring/shackle reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "semantic_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "suspension_kit",
+            "media_id": "leaf_shackle",
             "matched_tokens": [
-              "suspension"
+              "shackle"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_mech_brake_flex_hose_set",
+          "supply_type": "substance",
+          "inventory_group": "substances",
+          "item": "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance",
+          "vendor": "",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "still_required",
+          "status_detail": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+          "notes": "Spec ready via RPO-BRAKE-001A/B: front/rear brake flex hoses by current fitting thread/banjo/seat, bracket retention, free length and full-droop length; brake hard-line stock 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with brake-rated fittings. Release hold: close fitting photos, flare/thread/seat confirmation, route lengths, bend templates, and full-droop slack before payment/fabrication.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+            "caption": "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance \u00b7 brake line/hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "brake_hose_line",
+            "matched_tokens": [
+              "brake",
+              "line"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -46797,6 +47067,42 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
+          "source": "expenses",
+          "source_ref": "part_mech_vacuum_hose_refresh",
+          "supply_type": "substance",
+          "inventory_group": "substances",
+          "item": "Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather",
+          "vendor": "",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "mechanical_baseline",
+          "status_group": "still_required",
+          "status_detail": "spec_ready",
+          "procurement_stage": "spec_ready_release_hold",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+          "notes": "Spec ready via RPO-VAC-001A/B/C: reinforced 10-12 mm ID x 2000 mm brake-booster/vacuum hose, oil-resistant 16-19 mm ID x 1000 mm breather hose, plus 2H vacuum pump oil-outlet molded hose only if fitted. Release hold: confirm pump/booster/check-valve barbs, breather spigot OD, route lengths, oil exposure, and check-valve direction.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+            "caption": "Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather \u00b7 fuel hose/clamp reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "fuel_hose",
+            "matched_tokens": [
+              "fuel",
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
           "source": "workbook_tools",
           "source_ref": "workbook_tools#row_29",
           "supply_type": "tool",
@@ -46827,6 +47133,78 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "air",
               "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "workbook_tools",
+          "source_ref": "workbook_tools#row_54",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "22mm step drill bit (metal panel capable)",
+          "vendor": "Local hardware/tools market",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "",
+          "status_group": "still_required",
+          "status_detail": "needs_buy_or_check",
+          "procurement_stage": "",
+          "payment_status": "",
+          "delivery_status": "No",
+          "evidence_ref": "",
+          "notes": "Primary tool to open existing pull-switch holes toward 22mm.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/switch_panel.jpg",
+            "caption": "22mm step drill bit (metal panel capable) \u00b7 switch panel reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "switch_panel",
+            "matched_tokens": [
+              "switch",
+              "panel"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "workbook_tools",
+          "source_ref": "workbook_tools#row_56",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Deburring tool / round file set for panel holes",
+          "vendor": "Local hardware/tools market",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "",
+          "status_group": "still_required",
+          "status_detail": "needs_buy_or_check",
+          "procurement_stage": "",
+          "payment_status": "",
+          "delivery_status": "No",
+          "evidence_ref": "",
+          "notes": "Required for clean switch fit and paint-edge protection.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/switch_panel.jpg",
+            "caption": "Deburring tool / round file set for panel holes \u00b7 switch panel reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "switch_panel",
+            "matched_tokens": [
+              "switch",
+              "panel"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -46865,6 +47243,41 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
+          }
+        },
+        {
+          "source": "workbook_tools",
+          "source_ref": "workbook_tools#row_22",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Electric Clamp Meter Multimeter Tester Pen Kit ANENG ST170+B15 600V AC/DC Voltage with 24V-250V AC Voltage Tester Home DIY Tools",
+          "vendor": "AliExpress",
+          "amount": "8811",
+          "currency": "PKR",
+          "workstream": "",
+          "status_group": "still_required",
+          "status_detail": "needs_buy_or_check",
+          "procurement_stage": "",
+          "payment_status": "No",
+          "delivery_status": "No",
+          "evidence_ref": "",
+          "notes": "No confirmed order evidence yet; keep as not ordered until proof appears.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/workbook_tools_row_22_aneng_st170.jpg",
+            "caption": "ANENG ST170+B15 clamp meter kit \u00b7 reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "row_22"
+            ],
+            "match_basis": "manual_override",
+            "match_score": 999
           }
         },
         {
@@ -47482,6 +47895,42 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "exact_order_evidence",
           "match_score": 999
+        }
+      },
+      {
+        "source": "workbook_tools",
+        "source_ref": "workbook_tools#row_55",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "22mm chassis punch or precision hole cutter",
+        "vendor": "Local hardware/tools market",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "",
+        "status_group": "in_process",
+        "status_detail": "ordered_or_paid",
+        "procurement_stage": "",
+        "payment_status": "",
+        "delivery_status": "No",
+        "evidence_ref": "",
+        "notes": "Recently ordered; awaiting arrival confirmation.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/hole_cutter.jpg",
+          "caption": "22mm chassis punch or precision hole cutter \u00b7 hole cutter reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "hole_cutter",
+          "matched_tokens": [
+            "hole",
+            "cutter"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
         }
       },
       {
@@ -48490,20 +48939,20 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Jazzcash | Evidence indicates purchased/received. | Migrated from Wiring row 23 into Parts inventory.",
         "links": [],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/circuit_breaker.jpg",
-          "caption": "100A Circuit Breaker Resettable Fuse Car Marine Boat Automotive Protector \u00b7 circuit breaker reference image",
+          "path": "../../photos/20260411_071153.jpg",
+          "caption": "100A resettable circuit breaker and relay/fuse power hardware - local received photo evidence",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "circuit_breaker",
+          "media_id": "",
           "matched_tokens": [
-            "breaker"
+            "row_53"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "local_inventory_evidence",
+          "match_score": 999
         }
       },
       {
@@ -49199,8 +49648,8 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 27 into Parts inventory.",
         "links": [],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/littelfuse_midi_498_holder_littelfuse.jpg",
-          "caption": "Littelfuse 498 MIDI fuse holder - reference image",
+          "path": "../../photos/20260411_143135.jpg",
+          "caption": "6-way MIDI fuse holder bank - local received photo evidence",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -49211,7 +49660,7 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "row_54"
           ],
-          "match_basis": "manual_override",
+          "match_basis": "local_inventory_evidence",
           "match_score": 999
         }
       },
@@ -49269,20 +49718,20 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 54 into Parts inventory.",
         "links": [],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/pliers.jpg",
-          "caption": "6pcs Ratchet Crimping Tool Set \u00b7 pliers reference image",
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/workbook_parts_row_71_ratchet_crimping_tool_set_6pcs.jpg",
+          "caption": "6pcs Ratchet Crimping Tool Set - ratchet crimper and interchangeable dies reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "pliers",
+          "media_id": "",
           "matched_tokens": [
-            "pliers"
+            "row_71"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {
@@ -49779,41 +50228,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_96",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "Hazard: 1 \u00d7 red latching pushbutton, panel-mount, automotive 12V",
-        "vendor": "electronicstore.pk",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "previously",
-        "status_detail": "received",
-        "procurement_stage": "",
-        "payment_status": "Y",
-        "delivery_status": "Y",
-        "evidence_ref": "",
-        "notes": "Separate hazard switch confirmed by user update 2026-05-02; not part of the 7 Schneider selector count. Previous candidate: 6mm PLUSE Switch10 Amp 16mm Latching Push Button Switch 12V/24V Angel Eye LED Waterproof Stainless Steel Round (16mm, Red).",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/hazard_red_latching_pushbutton_electronicstore.webp",
-          "caption": "Hazard 16mm red latching pushbutton - Electronic Store product reference",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "row_96"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
-        }
-      },
-      {
-        "source": "workbook_parts",
         "source_ref": "workbook_parts#row_66",
         "supply_type": "part",
         "inventory_group": "electrical",
@@ -50146,21 +50560,20 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 33 into Parts inventory.",
         "links": [],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/fuse_box.jpg",
-          "caption": "Portable 12-Way Car Fuse Box Universal Automotive Box Holder with Led Indicator \u00b7 fuse box reference image",
+          "path": "../../photos/20260411_071153.jpg",
+          "caption": "12-way fuse block and power hardware - local received photo evidence",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "fuse_box",
+          "media_id": "",
           "matched_tokens": [
-            "fuse",
-            "box"
+            "row_57"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "local_inventory_evidence",
+          "match_score": 999
         }
       },
       {
@@ -50182,21 +50595,20 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 28 into Parts inventory.",
         "links": [],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/relay_fuse_box.jpg",
-          "caption": "Relay Box 12V 10 Way Relay Block and 10 Way ATC/ATO Blade Fuse Pane \u00b7 relay/fuse box reference image",
+          "path": "../../photos/20260411_143125.jpg",
+          "caption": "10-way relay/fuse block - local received photo evidence",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "relay_fuse_box",
+          "media_id": "",
           "matched_tokens": [
-            "relay",
-            "box"
+            "row_55"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "local_inventory_evidence",
+          "match_score": 999
         }
       },
       {
@@ -51687,42 +52099,6 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "bullet",
             "connector"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "workbook_tools",
-        "source_ref": "workbook_tools#row_54",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "22mm step drill bit (metal panel capable)",
-        "vendor": "Local hardware/tools market",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "previously",
-        "status_detail": "received",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "Y",
-        "evidence_ref": "",
-        "notes": "On hand per user_update_2026-05-02_dashboard_switch_lcd_update; primary tool to open existing pull-switch holes toward 22mm.",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/switch_panel.jpg",
-          "caption": "22mm step drill bit (metal panel capable) \u00b7 switch panel reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "switch_panel",
-          "matched_tokens": [
-            "switch",
-            "panel"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -53531,6 +53907,41 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_parts",
+        "source_ref": "workbook_parts#row_96",
+        "supply_type": "part",
+        "inventory_group": "electrical",
+        "item": "Hazard: 1 \u00d7 red latching pushbutton, panel-mount, automotive 12V",
+        "vendor": "electronicstore.pk",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "",
+        "status_group": "still_required",
+        "status_detail": "needs_buy_or_check",
+        "procurement_stage": "",
+        "payment_status": "",
+        "delivery_status": "",
+        "evidence_ref": "",
+        "notes": "6mm PLUSE Switch10 Amp 16mm Latching Push Button Switch 12V and 24v Angel Eye LED Waterproof Stainless Steel Round (16mm, Red) Price in Pakistan | Open item with no procurement evidence yet. | Migrated from Wiring row 129 into Parts inventory.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/hazard_red_latching_pushbutton_electronicstore.webp",
+          "caption": "Hazard 16mm red latching pushbutton - Electronic Store product reference",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "row_96"
+          ],
+          "match_basis": "manual_override",
+          "match_score": 999
+        }
+      },
+      {
+        "source": "workbook_parts",
         "source_ref": "workbook_parts#row_64",
         "supply_type": "part",
         "inventory_group": "electrical",
@@ -53639,7 +54050,7 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_rear_brake_line_cable_clips",
         "supply_type": "part",
         "inventory_group": "electrical",
-        "item": "Rear brake line clips and parking-brake cable retainers",
+        "item": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips",
         "vendor": "",
         "amount": "",
         "currency": "PKR",
@@ -53650,11 +54061,11 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-        "notes": "Count and replace corroded or missing brake-line clips, cable retainers, rubber sleeves, grommets, and rubber-lined P-clips before final rear axle routing.",
+        "notes": "Count and replace corroded or missing rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD. Use permanent supports, not cable ties, before final rear axle routing.",
         "links": [],
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear brake line clips and parking-brake cable retainers \u00b7 local inventory photo",
+          "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -53667,6 +54078,41 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 980
+        }
+      },
+      {
+        "source": "workbook_parts",
+        "source_ref": "workbook_parts#row_40",
+        "supply_type": "part",
+        "inventory_group": "electrical",
+        "item": "Starter interrupt security relay path (relay + base + concealed arm/disarm switch)",
+        "vendor": "Local electrical market / automotive relay supplier",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "",
+        "status_group": "still_required",
+        "status_detail": "needs_buy_or_check",
+        "procurement_stage": "",
+        "payment_status": "",
+        "delivery_status": "No",
+        "evidence_ref": "",
+        "notes": "Low-cost anti-theft hardening to prevent easy crank/start even if lock is bypassed. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: prioritize as low-risk, locally available buy-first item. | Reconciled 2026-04-15: relay block/fuses already installed; treat as implementation task using on-hand stock, buy concealed switch only if missing.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260420_221819_gp_YV69fbvA.jpg",
+          "caption": "Starter interrupt / hidden kill switch path - purchased needle-type kill switch local photo",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "row_40"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 999
         }
       },
       {
@@ -53812,22 +54258,22 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "source": "expenses",
-        "source_ref": "part_mech_brake_flex_hose_set",
+        "source": "workbook_parts",
+        "source_ref": "workbook_parts#row_19",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Brake flexible hose set front and rear",
-        "vendor": "",
+        "vendor": "Use local Toyota/common parts markets; buy as one batch after inspection.",
         "amount": "",
         "currency": "PKR",
-        "workstream": "brake_system",
+        "workstream": "",
         "status_group": "still_required",
-        "status_detail": "spec_ready",
-        "procurement_stage": "spec_ready_release_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready: order line RPO-BRAKE-001A defines brake-fluid-rated flex hoses matched to current front/rear fittings plus free/full-droop length in mm. Complete RPA-006 fitting photos and full-droop slack check before payment.",
+        "status_detail": "needs_buy_or_check",
+        "procurement_stage": "",
+        "payment_status": "",
+        "delivery_status": "",
+        "evidence_ref": "",
+        "notes": "Active required purchase item from Procurement_Pass2. | RR action=Use local Toyota/common parts markets; buy as one batch after inspection.; evidence=Common Toyota service items should be bought as a local bundle after tub-off inspection confirms exact spec.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
@@ -53852,7 +54298,7 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_mech_clutch_master_slave_refresh",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Clutch master and slave cylinder refresh kit",
+        "item": "Clutch hydraulic refresh - master/slave plus flex hose and 1500 mm hard-line allowance if needed",
         "vendor": "",
         "amount": "",
         "currency": "PKR",
@@ -53863,7 +54309,43 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH INSPECT THEN REPLACE if leakage pedal sink or seized seals",
+        "notes": "MECH INSPECT THEN REPLACE if leakage, pedal sink, or seized seals. If the clutch line is cracked, corroded, swollen, or leaking, use RPO-CLUTCH-001A/B: match master/slave port thread, flare/seat, flex length, hard-line OD, and route length; 1500 mm brake/clutch-rated hard-line blank allowance if replaced.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+          "caption": "Clutch hydraulic refresh - master/slave plus flex hose and 1500 mm hard-line allowance if needed \u00b7 clutch/brake line reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "brake_hose_line",
+          "matched_tokens": [
+            "clutch",
+            "line"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "workbook_parts",
+        "source_ref": "workbook_parts#row_20",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Clutch master and slave cylinder refresh kit",
+        "vendor": "Use local Toyota/common parts markets; buy as one batch after inspection.",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "",
+        "status_group": "still_required",
+        "status_detail": "needs_buy_or_check",
+        "procurement_stage": "",
+        "payment_status": "",
+        "delivery_status": "",
+        "evidence_ref": "",
+        "notes": "Condition-based item: inspect first, then buy only if required. | RR action=Use local Toyota/common parts markets; buy as one batch after inspection.; evidence=Condition-dependent item; inspect first then buy local only if required.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_master.jpg",
@@ -53877,6 +54359,77 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "brake_master",
           "matched_tokens": [
             "clutch"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_mech_radiator_hose_set",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe",
+        "vendor": "",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "mechanical_baseline",
+        "status_group": "still_required",
+        "status_detail": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+        "notes": "Spec ready via RPO-COOL-001/002/003/005: molded EPDM upper and lower radiator hoses for HJ47/2H route; small EPDM overflow hose 1000 mm local buy length cut to measured radiator-to-bottle route; formed coolant/radiator pipe from 750 mm minimum tube blank using the physical sample. Toyota/Dayco references are cross-references only. Release hold: measure thermostat/radiator/engine neck ODs, hose OD for clamps, old-hose free lengths, overflow nipple ODs, and formed-pipe tube OD/wall/centerline/bends/beads before payment or fabrication.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg",
+          "caption": "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe \u00b7 radiator/coolant hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "radiator_hose",
+          "matched_tokens": [
+            "radiator",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_mech_fuel_hose_and_clamps",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines",
+        "vendor": "",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "mechanical_baseline",
+        "status_group": "still_required",
+        "status_detail": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+        "notes": "Spec ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: diesel-rated 8 mm ID x 3000 mm feed hose, 6 mm ID x 2000 mm return/bleed hose, 3.2-3.5 mm ID x 1000 mm injector leak-off hose, plus conditional 8 mm OD x 5000 mm feed and 6 mm OD x 5000 mm return hard-line allowances if corrosion inspection requires replacement. Use rolled-edge fuel-injection clamps. Release hold: measure every barb/line OD, hose OD for clamps, route lengths, and flare/union style if hard lines are replaced. Do not fabricate high-pressure injector pipes.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/heavy_battery_cable.jpg",
+          "caption": "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines \u00b7 automotive cable reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "heavy_battery_cable",
+          "matched_tokens": [
+            "cable"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -53989,22 +54542,22 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "source": "expenses",
-        "source_ref": "part_mech_fuel_hose_and_clamps",
+        "source": "workbook_parts",
+        "source_ref": "workbook_parts#row_25",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Fuel-rated rubber hose and clamp kit",
-        "vendor": "",
+        "vendor": "Use local Toyota/common parts markets; buy as one batch after inspection.",
         "amount": "",
         "currency": "PKR",
-        "workstream": "mechanical_baseline",
+        "workstream": "",
         "status_group": "still_required",
-        "status_detail": "spec_ready",
-        "procurement_stage": "spec_ready_release_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready: order lines RPO-FUEL-001A through RPO-FUEL-001C define diesel-rated hose: 8 mm ID x 3000 mm feed, 6 mm ID x 2000 mm return, 3.2-3.5 mm ID x 1000 mm leak-off. Complete RPA-002/RPA-004 before payment. Do not fabricate high-pressure injector pipes.",
+        "status_detail": "needs_buy_or_check",
+        "procurement_stage": "",
+        "payment_status": "",
+        "delivery_status": "",
+        "evidence_ref": "",
+        "notes": "Active required purchase item from Procurement_Pass2. | RR action=Use local Toyota/common parts markets; buy as one batch after inspection.; evidence=Common Toyota service items should be bought as a local bundle after tub-off inspection confirms exact spec.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
@@ -54025,35 +54578,36 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "source": "expenses",
-        "source_ref": "part_suspension_wooden_cribbing_blocks",
+        "source": "workbook_parts",
+        "source_ref": "workbook_parts#row_29",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Hardwood cribbing / wooden support blocks for suspension replacement - 12 piece working set",
-        "vendor": "local timber / hardware supplier",
+        "item": "Heat plugs (glow plugs) set - diesel engine (NEW only)",
+        "vendor": "Use local Toyota/common parts markets; buy as one batch after inspection.",
         "amount": "",
         "currency": "PKR",
-        "workstream": "suspension_upgrade",
+        "workstream": "",
         "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-02_suspension_wooden_blocks",
-        "notes": "Add for Ironman suspension replacement support setup. Working order: 12 solid hardwood/timber pieces total, expected as 8 cribbing blocks plus 4 wedge chocks or equivalent mechanic-approved mix. Use only sound, dry, square-cut hardwood/timber with broad bearing faces; reject cracked, soft, split, oily, or uneven offcuts. These supplement jack stands and axle support during leaf spring/shock work and are not a substitute for rated stands. Confirm final dimensions with the workshop before purchase.",
+        "status_detail": "needs_buy_or_check",
+        "procurement_stage": "",
+        "payment_status": "",
+        "delivery_status": "",
+        "evidence_ref": "",
+        "notes": "Active required purchase item from Procurement_Pass2. | RR action=Use local Toyota/common parts markets; buy as one batch after inspection.; evidence=Common Toyota service items should be bought as a local bundle after tub-off inspection confirms exact spec. | User rule 2026-04-15: heat/glow plugs are NEW ONLY; no used/refurbished plugs accepted.",
         "links": [],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/suspension_kit.jpg",
-          "caption": "Hardwood cribbing / wooden support blocks for suspension replacement - 12 piece working set \u00b7 suspension kit reference image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/glow_plugs.jpg",
+          "caption": "Heat plugs (glow plugs) set - diesel engine (NEW only) \u00b7 diesel glow plug reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "suspension_kit",
+          "media_id": "glow_plugs",
           "matched_tokens": [
-            "suspension"
+            "glow",
+            "plugs"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -54100,7 +54654,7 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_mech_heater_hose_set",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Heater hose set with clamps",
+        "item": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID",
         "vendor": "",
         "amount": "",
         "currency": "PKR",
@@ -54111,20 +54665,20 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready: order lines RPO-COOL-004A and RPO-COOL-004B define EPDM SAE J20R3 heater hose, 400 mm inlet and 280 mm outlet cut lengths, expected 16 mm / 5/8 inch ID. Complete RPA-002 nipple measurements and rear-heater check before payment.",
+        "notes": "Spec ready via RPO-COOL-004A/B: EPDM SAE J20R3 or better heater hose, 400 mm inlet and 280 mm outlet cut lengths, expected 16 mm / 5/8 in ID. Release hold: measure engine/heater-core nipple ODs, clamp OD, route lengths, rear-heater branch presence, and clearance from exhaust/firewall chafe before payment.",
         "links": [],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/heater_hose.jpg",
-          "caption": "Heater hose set with clamps \u00b7 heater hose reference image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+          "caption": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID \u00b7 air hose reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "heater_hose",
+          "media_id": "air_hose",
           "matched_tokens": [
-            "heater",
+            "air",
             "hose"
           ],
           "match_basis": "semantic_reference_image",
@@ -54168,22 +54722,22 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "source": "expenses",
-        "source_ref": "part_mech_radiator_hose_set",
+        "source": "workbook_parts",
+        "source_ref": "workbook_parts#row_28",
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Radiator hose set upper plus lower with clamps",
-        "vendor": "",
+        "vendor": "Use local Toyota/common parts markets; buy as one batch after inspection.",
         "amount": "",
         "currency": "PKR",
-        "workstream": "mechanical_baseline",
+        "workstream": "",
         "status_group": "still_required",
-        "status_detail": "spec_ready",
-        "procurement_stage": "spec_ready_release_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready: order lines RPO-COOL-001 and RPO-COOL-002 define spec-led molded EPDM coolant hoses; Toyota/Dayco numbers are cross-references only. Record old-hose free lengths plus neck and clamp ODs in mm before payment.",
+        "status_detail": "needs_buy_or_check",
+        "procurement_stage": "",
+        "payment_status": "",
+        "delivery_status": "",
+        "evidence_ref": "",
+        "notes": "Active required purchase item from Procurement_Pass2. | RR action=Use local Toyota/common parts markets; buy as one batch after inspection.; evidence=Common Toyota service items should be bought as a local bundle after tub-off inspection confirms exact spec.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg",
@@ -54208,7 +54762,7 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_rear_axle_hard_brake_lines",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Rear axle hard brake lines and fittings",
+        "item": "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread",
         "vendor": "",
         "amount": "",
         "currency": "PKR",
@@ -54219,11 +54773,11 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-REAR-002|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-        "notes": "Recreate left/right rear axle lines in brake-rated 3/16 in / 4.75 mm tube after flare standard, fitting threads, bend templates, and clip positions are confirmed.",
+        "notes": "Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube only after flare standard, fitting threads/seats, bend templates, route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
         "links": [],
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear axle hard brake lines and fittings \u00b7 local inventory photo",
+          "caption": "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -54278,7 +54832,7 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_rear_center_brake_flex_hose",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Rear center frame-to-axle flexible brake hose",
+        "item": "Rear center frame-to-axle brake flex hose - by end fittings and full-droop length",
         "vendor": "",
         "amount": "",
         "currency": "PKR",
@@ -54289,11 +54843,11 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-REAR-003|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-        "notes": "Replace rear center hose once chassis-side and axle-side fitting threads/end styles and full-droop slack are confirmed.",
+        "notes": "Replace rear center hose only after chassis-side and axle-side fitting thread/end style bracket retention free length and full-droop slack are measured; brake-fluid-rated hose only; verify no stretch or suspension/tire contact at full droop.",
         "links": [],
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear center frame-to-axle flexible brake hose \u00b7 local inventory photo",
+          "caption": "Rear center frame-to-axle brake flex hose - by end fittings and full-droop length \u00b7 local inventory photo",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -54380,35 +54934,34 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "part_mech_vacuum_hose_refresh",
+        "source_ref": "part_suspension_wooden_cribbing_blocks",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Vacuum hose refresh kit",
-        "vendor": "",
+        "item": "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks",
+        "vendor": "local timber / wood merchant",
         "amount": "",
         "currency": "PKR",
-        "workstream": "mechanical_baseline",
+        "workstream": "suspension_upgrade",
         "status_group": "still_required",
-        "status_detail": "spec_ready",
-        "procurement_stage": "spec_ready_release_hold",
+        "status_detail": "planned",
+        "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready: order lines RPO-VAC-001A through RPO-VAC-001C define 10-12 mm ID x 2000 mm reinforced vacuum hose, 16-19 mm ID x 1000 mm oil-resistant breather hose, and oil-outlet molded hose only if fitted. Complete RPA-009 before payment.",
+        "evidence_ref": "user_update_2026-05-02_suspension_wooden_blocks|data/manual/suspension_wood_cribbing_order_specs.csv|docs/suspension-wood-cribbing-merchant-spec.md",
+        "notes": "Merchant-ready cut list: 12 total seasoned solid hardwood pieces: 8 rectangular cribbing blocks 12 x 6 x 3 in (approx 300 x 150 x 75 mm) plus 4 wedge chocks cut from 8 x 4 x 3 in blanks (approx 200 x 100 x 75 mm), tapering from 75 mm to 20-25 mm. Accept sheesham/shisham, kikar/acacia, oak, ash, or equivalent dense dry hardwood. Require flat parallel faces, square ends, grain along length, no rocking, and raw unfinished wood. Reject wet/green wood, softwood, plywood, MDF, chipboard, laminated boards, cracked/split/oily/painted offcuts, rounded branches, or large knots on bearing faces. These supplement rated jack stands and axle support during leaf spring/shock work; not a substitute for rated stands.",
         "links": [],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
-          "caption": "Vacuum hose refresh kit \u00b7 fuel hose/clamp reference image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/leaf_shackle.jpg",
+          "caption": "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks \u00b7 leaf spring/shackle reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "fuel_hose",
+          "media_id": "leaf_shackle",
           "matched_tokens": [
-            "fuel",
-            "hose"
+            "shackle"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -54725,6 +55278,42 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "generic_substance",
           "matched_tokens": [
             "substance"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "workbook_parts",
+        "source_ref": "workbook_parts#row_26",
+        "supply_type": "part",
+        "inventory_group": "parts",
+        "item": "Heater hose set with clamps",
+        "vendor": "Use local Toyota/common parts markets; buy as one batch after inspection.",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "",
+        "status_group": "still_required",
+        "status_detail": "needs_buy_or_check",
+        "procurement_stage": "",
+        "payment_status": "",
+        "delivery_status": "",
+        "evidence_ref": "",
+        "notes": "Active required purchase item from Procurement_Pass2. | RR action=Use local Toyota/common parts markets; buy as one batch after inspection.; evidence=Common Toyota service items should be bought as a local bundle after tub-off inspection confirms exact spec.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/heater_hose.jpg",
+          "caption": "Heater hose set with clamps \u00b7 heater hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "heater_hose",
+          "matched_tokens": [
+            "heater",
+            "hose"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -55134,6 +55723,42 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "source": "workbook_parts",
+        "source_ref": "workbook_parts#row_31",
+        "supply_type": "part",
+        "inventory_group": "parts",
+        "item": "Vacuum hose refresh kit",
+        "vendor": "Use local Toyota/common parts markets; buy as one batch after inspection.",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "",
+        "status_group": "still_required",
+        "status_detail": "needs_buy_or_check",
+        "procurement_stage": "",
+        "payment_status": "",
+        "delivery_status": "",
+        "evidence_ref": "",
+        "notes": "Active required purchase item from Procurement_Pass2. | RR action=Use local Toyota/common parts markets; buy as one batch after inspection.; evidence=Common Toyota service items should be bought as a local bundle after tub-off inspection confirms exact spec.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+          "caption": "Vacuum hose refresh kit \u00b7 fuel hose/clamp reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "fuel_hose",
+          "matched_tokens": [
+            "fuel",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
         "source": "expenses",
         "source_ref": "part_bed_lining",
         "supply_type": "substance",
@@ -55170,6 +55795,42 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "part_mech_brake_flex_hose_set",
+        "supply_type": "substance",
+        "inventory_group": "substances",
+        "item": "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance",
+        "vendor": "",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "still_required",
+        "status_detail": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+        "notes": "Spec ready via RPO-BRAKE-001A/B: front/rear brake flex hoses by current fitting thread/banjo/seat, bracket retention, free length and full-droop length; brake hard-line stock 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with brake-rated fittings. Release hold: close fitting photos, flare/thread/seat confirmation, route lengths, bend templates, and full-droop slack before payment/fabrication.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+          "caption": "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance \u00b7 brake line/hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "brake_hose_line",
+          "matched_tokens": [
+            "brake",
+            "line"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_mech_engine_oil_filter_service",
         "supply_type": "substance",
         "inventory_group": "substances",
@@ -55198,6 +55859,42 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "filter_service",
           "matched_tokens": [
             "filter"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_mech_vacuum_hose_refresh",
+        "supply_type": "substance",
+        "inventory_group": "substances",
+        "item": "Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather",
+        "vendor": "",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "mechanical_baseline",
+        "status_group": "still_required",
+        "status_detail": "spec_ready",
+        "procurement_stage": "spec_ready_release_hold",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
+        "notes": "Spec ready via RPO-VAC-001A/B/C: reinforced 10-12 mm ID x 2000 mm brake-booster/vacuum hose, oil-resistant 16-19 mm ID x 1000 mm breather hose, plus 2H vacuum pump oil-outlet molded hose only if fitted. Release hold: confirm pump/booster/check-valve barbs, breather spigot OD, route lengths, oil exposure, and check-valve direction.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+          "caption": "Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather \u00b7 fuel hose/clamp reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "fuel_hose",
+          "matched_tokens": [
+            "fuel",
+            "hose"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -55276,6 +55973,78 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_tools",
+        "source_ref": "workbook_tools#row_54",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "22mm step drill bit (metal panel capable)",
+        "vendor": "Local hardware/tools market",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "",
+        "status_group": "still_required",
+        "status_detail": "needs_buy_or_check",
+        "procurement_stage": "",
+        "payment_status": "",
+        "delivery_status": "No",
+        "evidence_ref": "",
+        "notes": "Primary tool to open existing pull-switch holes toward 22mm.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/switch_panel.jpg",
+          "caption": "22mm step drill bit (metal panel capable) \u00b7 switch panel reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "switch_panel",
+          "matched_tokens": [
+            "switch",
+            "panel"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "workbook_tools",
+        "source_ref": "workbook_tools#row_56",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Deburring tool / round file set for panel holes",
+        "vendor": "Local hardware/tools market",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "",
+        "status_group": "still_required",
+        "status_detail": "needs_buy_or_check",
+        "procurement_stage": "",
+        "payment_status": "",
+        "delivery_status": "No",
+        "evidence_ref": "",
+        "notes": "Required for clean switch fit and paint-edge protection.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/switch_panel.jpg",
+          "caption": "Deburring tool / round file set for panel holes \u00b7 switch panel reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "switch_panel",
+          "matched_tokens": [
+            "switch",
+            "panel"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "workbook_tools",
         "source_ref": "workbook_tools#row_57",
         "supply_type": "tool",
         "inventory_group": "tools",
@@ -55307,6 +56076,41 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
+        }
+      },
+      {
+        "source": "workbook_tools",
+        "source_ref": "workbook_tools#row_22",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Electric Clamp Meter Multimeter Tester Pen Kit ANENG ST170+B15 600V AC/DC Voltage with 24V-250V AC Voltage Tester Home DIY Tools",
+        "vendor": "AliExpress",
+        "amount": "8811",
+        "currency": "PKR",
+        "workstream": "",
+        "status_group": "still_required",
+        "status_detail": "needs_buy_or_check",
+        "procurement_stage": "",
+        "payment_status": "No",
+        "delivery_status": "No",
+        "evidence_ref": "",
+        "notes": "No confirmed order evidence yet; keep as not ordered until proof appears.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/workbook_tools_row_22_aneng_st170.jpg",
+          "caption": "ANENG ST170+B15 clamp meter kit \u00b7 reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "row_22"
+          ],
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {

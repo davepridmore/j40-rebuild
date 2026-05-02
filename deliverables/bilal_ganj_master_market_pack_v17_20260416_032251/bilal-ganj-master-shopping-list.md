@@ -8,22 +8,22 @@ Detailed size matrix: `bilal-ganj-detailed-size-specs.md`
 Important:
 - Springs are listed in **Section B** (rows `15` and `16`).
 - Age/condition acceptance rules are in `bilal-ganj-detailed-size-specs.md`.
+- Existing relay/fuse hardware is already recorded as received in the workbook; do not buy separate interior/cabin fuse boxes from this list.
 
 ## A) Buy / Book Now (Core)
 
 | Row | Item | Expected Price (PKR) | What to Buy | Sample Photo(s) |
 | --- | --- | --- | --- | --- |
-| 215 + 244-247 | Full fastener scope (Kits A-D) | 45,000-105,000 (avg 72,000) | Class-marked fasteners and hardware exactly per Kit A-D counts/specs | `20260405_234546.jpg`, `20260405_234802.jpg`, `20260405_234652.jpg` |
+| 11 + 225-228 | Full fastener scope (Kits A-D) | 45,000-105,000 (avg 72,000) | Class-marked fasteners and hardware exactly per Kit A-D counts/specs | `20260405_234546.jpg`, `20260405_234802.jpg`, `20260405_234652.jpg` |
 | 12 | Body-to-chassis mount rubber kit | 15,000-60,000 (avg 30,000) | OEM-style mount biscuits/insulators, sleeves/cup washers, full mount-point set | `20260405_234546.jpg`, `20260405_234652.jpg` |
-| 41 | Ignition lock security fix | 4,000-25,000 (avg 12,000) | Re-key barrel + matched keys, or complete compatible lock/barrel set | `20260323_180218.jpg`, `20260323_190047.jpg` |
-| 186 | Internal compact covered fuse box x3 | 11,100-21,000 (avg 15,000) | Compact covered ATO/ATC fuse boxes, 3 identical units | `20260411_065030.jpg`, `20260411_143135.jpg` |
-| 229 | EPS complete kit | 54,000-136,000 (avg 90,000) | Complete 2005-2011 Toyota Vitz/Yaris 90-series EPS set, SCP90 or NCP90 only: matched column + ECU/control + connectors/pigtails + shafts/U-joints + couplers + brackets; bench-tested only | `20260321_235600.jpg`, `20260406_031010.jpg` |
+| 39 | Ignition lock security fix | 4,000-25,000 (avg 12,000) | Re-key barrel + matched keys, or complete compatible lock/barrel set | `20260323_180218.jpg`, `20260323_190047.jpg` |
+| 210 | EPS complete kit | 54,000-136,000 (avg 90,000) | Complete 2005-2011 Toyota Vitz/Yaris 90-series EPS set, SCP90 or NCP90 only: matched column + ECU/control + connectors/pigtails + shafts/U-joints + couplers + brackets; bench-tested only | `20260321_235600.jpg`, `20260406_031010.jpg` |
 | 29 | Heat plugs (glow plugs) set | 12,000-36,000 (avg 22,000) | Diesel glow/heat plugs, exact engine-code spec (new only) | `20260317_235150.jpg` |
 
 Core expected subtotal:
-- Low: `114,100 PKR`
-- Avg: `219,000 PKR`
-- High: `347,000 PKR`
+- Low: `130,000 PKR`
+- Avg: `226,000 PKR`
+- High: `362,000 PKR`
 
 ## B) Suspension (Get Quotes / Buy If Dimensions Match)
 
@@ -46,7 +46,7 @@ Local spring expected subtotal:
 | 45 | OMEGS9 greasable shackle kit (rear) | 25,000-65,000 (avg 45,000) | Quote with pin diameter and bushing compatibility | `20260411_220214.jpg` |
 | 46 | OMESB30 bushing kit x4 | 28,000-60,000 (avg 42,000) | Full set quantity + hardness/spec confirmation | `20260324_004852.jpg` |
 | 47 | OMEU59A U-bolt kit x7 | 42,000-98,000 (avg 65,000) | Thread, leg length, and diameter match quote | `20260411_220207.jpg` |
-| 230 | Steering bushings | 3,000-12,000 (avg 10,000) | Condition-based replacement quote | `20260406_031010.jpg` |
+| 211 | Steering bushings | 3,000-12,000 (avg 10,000) | Condition-based replacement quote | `20260406_031010.jpg` |
 
 OME benchmark expected subtotal:
 - Low: `233,000 PKR`

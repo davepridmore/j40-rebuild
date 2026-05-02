@@ -19,7 +19,7 @@ Tools,18,Harden 12pcs Tap and Die Set 12pcs,7940,ToolsMart.pk,Y,Y,line_item,no_m
 Tools,19,Ratchet crimping plier 9″ THCPL1506 | Company: Total | Origin: China,2600,totaltool.pk,Y,Y,line_item,no_match,,,,,,,,
 Tools,20,Labels,,,,,section_header,not_applicable,,,,,,,,
 Tools,21,“1/2 inch 24 inch breaker bar — heavy duty”,,,Y,Y,line_item,matched_exact_item,1.0,tool_breaker_bar,"1/2 inch 24 inch breaker bar, heavy duty",local,tools,00_site_setup,site_setup,next_phase_purchase
-Tools,22,Electric Clamp Meter Multimeter Tester Pen Kit ANENG ST170+B15 600V AC/DC Voltage with 24V-250V AC Voltage Tester Home DIY Tools,8811,AliExpress,Y,Y,line_item,matched_semantic,0.95,tool_electrical_test_kit,Electrical test kit,AliExpress,tools,04_electrical_reset,electrical_reset,received
+Tools,22,Electric Clamp Meter Multimeter Tester Pen Kit ANENG ST170+B15 600V AC/DC Voltage with 24V-250V AC Voltage Tester Home DIY Tools,8811,AliExpress,No,No,line_item,no_match,,,,,,,,
 Tools,23,YTH -803 AUTOMATIC WIRE STRIPPER & CRIPMER,1650,fiaz.com.pk,Y,Y,line_item,no_match,,,,,,,,
 Tools,24,Side Cutter Bosi Black in Pakistan,650,fiaz.com.pk,No,No,line_item,no_match,,,,,,,,
 Tools,25,Bosi Nose Plier 6'' Black A+ Quality in Pakistan,650,fiaz.com.pk,Y,Y,line_item,no_match,,,,,,,,
@@ -43,8 +43,8 @@ Tools,51,"German Imported WORKPRO Flap Discs 60 Grit, 125mm x 22.2mm, Angle Grin
 Tools,52,EDON Expert MIG 270 (15Kg) (Single Phase) BUILTIN WIRE FEEDER (GAS OR GASLESS),76500,toolshub,No,Y,line_item,no_match,,,,,,,,
 Tools,53,Drill chuck (compatible with existing drill spindle/arbor),,Local hardware/tools market,Y,,line_item,no_match,,,,,,,,
 Tools,54,22mm step drill bit (metal panel capable),,Local hardware/tools market,No,,line_item,no_match,,,,,,,,
-Tools,55,22mm chassis punch or precision hole cutter,,Toolsmart.pk,Y,Y,line_item,matched_semantic,0.95,tool_total_bi_metal_hole_saw_22mm_tac410221,Total Bi-metal Hole saw 22mm TAC410221,Toolsmart.pk,tools,00_site_setup,site_setup,received
-Tools,56,Deburring tool / round file set for panel holes,,Toolsmart.pk,Y,Y,line_item,matched_semantic,0.95,tool_total_round_steel_file_200mm_tht91386,Total Round steel file 200mm THT91386,Toolsmart.pk,tools,00_site_setup,site_setup,received
+Tools,55,22mm chassis punch or precision hole cutter,,Local hardware/tools market,No,,line_item,no_match,,,,,,,,
+Tools,56,Deburring tool / round file set for panel holes,,Local hardware/tools market,No,,line_item,no_match,,,,,,,,
 Tools,57,Digital caliper (hole/spacing verification),,Local hardware/tools market,No,,line_item,no_match,,,,,,,,
 Parts,2,Toyota Land Cruiser FJ40 Neoprene Top Cover - Model 1960-1984,11500,Autozcare,Y,Y,line_item,no_match,,,,,,,,
 Parts,3,Maximus Under Seat Subwoofer Box With Built in Amplifier - Compact Active Bass Woofer for Cars,25100,SehgalMotors.PK,,Cancelled?,line_item,no_match,,,,,,,,
@@ -63,19 +63,19 @@ Parts,15,Ironman Foamcell suspension kit - main shipment (front dampers separate
 Parts,16,Ironman Foamcell front damper pair - separate shipment (24635FE x2),,Ironman 4x4 supplier,,Unknown,line_item,matched_exact_item_vendor,1.0,part_ironman_front_dampers_separate_shipment,Ironman Foamcell front damper pair - separate shipment (24635FE x2),Ironman 4x4 supplier,parts,06_steering_brakes_suspension,steering_brakes_suspension,ordered_pending_delivery
 Parts,17,Accessory belt set,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_accessory_belt_set,Accessory belt set,,parts,05_mechanical_baseline,mechanical_baseline,purchase_ready
 Parts,18,Air filter element,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_air_filter,Air filter element,,parts,05_mechanical_baseline,mechanical_baseline,received
-Parts,19,Brake flexible hose set front and rear,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_brake_flex_hose_set,Brake flexible hose set front and rear,,parts,06_steering_brakes_suspension,steering_brakes_suspension,spec_ready_release_hold
-Parts,20,Clutch master and slave cylinder refresh kit,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_clutch_master_slave_refresh,Clutch master and slave cylinder refresh kit,,parts,05_mechanical_baseline,mechanical_baseline,next_phase_purchase
+Parts,19,Brake flexible hose set front and rear,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,no_match,,,,,,,,
+Parts,20,Clutch master and slave cylinder refresh kit,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,no_match,,,,,,,,
 Parts,21,Distributor cap rotor and ignition tune-up consumables,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_distributor_cap_rotor_tuneup,Distributor cap rotor and ignition tune-up consumables,,parts,05_mechanical_baseline,mechanical_baseline,not_required_diesel_engine
 Parts,22,Engine mount set,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_engine_mount_set,Engine mount set,,parts,05_mechanical_baseline,mechanical_baseline,next_phase_purchase
 Parts,23,Engine oil + oil filter service pack,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_engine_oil_filter_service,Engine oil + oil filter service pack,,parts,05_mechanical_baseline,mechanical_baseline,purchase_ready
 Parts,24,Fuel filter,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_fuel_filter,Fuel filter,,parts,05_mechanical_baseline,mechanical_baseline,purchase_ready
-Parts,25,Fuel-rated rubber hose and clamp kit,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_fuel_hose_and_clamps,Fuel-rated rubber hose and clamp kit,,parts,05_mechanical_baseline,mechanical_baseline,spec_ready_release_hold
-Parts,26,Heater hose set with clamps,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_heater_hose_set,Heater hose set with clamps,,parts,05_mechanical_baseline,mechanical_baseline,spec_ready_release_hold
+Parts,25,Fuel-rated rubber hose and clamp kit,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,no_match,,,,,,,,
+Parts,26,Heater hose set with clamps,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,no_match,,,,,,,,
 Parts,27,Radiator cap,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_radiator_cap,Radiator cap,,parts,05_mechanical_baseline,mechanical_baseline,purchase_ready
-Parts,28,Radiator hose set upper plus lower with clamps,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_radiator_hose_set,Radiator hose set upper plus lower with clamps,,parts,05_mechanical_baseline,mechanical_baseline,spec_ready_release_hold
-Parts,29,Heat plugs (glow plugs) set - diesel engine (NEW only),,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_semantic,0.95,part_mech_heat_glow_plugs_set,Heat/glow plugs set - diesel 2H,,parts,05_mechanical_baseline,mechanical_baseline,purchase_ready
+Parts,28,Radiator hose set upper plus lower with clamps,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,no_match,,,,,,,,
+Parts,29,Heat plugs (glow plugs) set - diesel engine (NEW only),,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,no_match,,,,,,,,
 Parts,30,Thermostat plus gasket,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_thermostat_gasket,Thermostat plus gasket,,parts,05_mechanical_baseline,mechanical_baseline,received
-Parts,31,Vacuum hose refresh kit,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_vacuum_hose_refresh,Vacuum hose refresh kit,,parts,05_mechanical_baseline,mechanical_baseline,spec_ready_release_hold
+Parts,31,Vacuum hose refresh kit,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,no_match,,,,,,,,
 Parts,32,Metal protection and restoration products,,"Prefer local sourcing first, then online if unavailable.",,,line_item,matched_exact_item,1.0,part_metal_protection,Metal protection and restoration products,Daraz,parts,03_body_chassis,body_chassis,not_required_covered_by_epoxy_wax
 Parts,33,Primer,,"Prefer local sourcing first, then online if unavailable.",,,line_item,no_match,,,,,,,,
 Parts,34,M6 star / lock washer,,Montgomery Road (Lahore),,,line_item,no_match,,,,,,,,
@@ -84,7 +84,7 @@ Parts,36,"Schneider Harmony 22mm 2-position maintained selector switch (1NO, bla
 Parts,37,"Schneider Harmony XB4 22mm 3-position maintained selector switch (2NO, long handle) x 3",,purchaser.com.pk | https://purchaser.com.pk/schneider-selector-switch-harmony-xb4-metal-black-22mm-long-handle-3positions-stay-put-2no/,Y,Y,line_item,no_match,,,,,,,,
 Parts,38,Dashboard fascia / auxiliary switch panel (if OEM holes are insufficient),,Local sheet-metal/fabrication shop,No,,line_item,no_match,,,,,,,,
 Parts,39,Ignition lock security fix (new barrel + matched keys OR full locksmith re-key),,Local locksmith + lockset supplier,No,,line_item,no_match,,,,,,,,
-Parts,40,Starter interrupt / hidden kill switch path (covered by purchased needle-type switch),,On-hand purchased kill/fuel-stop switch + existing relay hardware,Y,Y,line_item,manual_match,0.98,part_hidden_diesel_cutoff_switch,Fuel stop switch / hidden diesel cutoff (needle-type switch),,parts,04_electrical_reset,electrical_reset,received
+Parts,40,Starter interrupt security relay path (relay + base + concealed arm/disarm switch),,Local electrical market / automotive relay supplier,No,,line_item,no_match,,,,,,,,
 Parts,41,Fuel-stop ignition-control hardware top-up (relay/fuse/terminals only if stock short),,Use on-hand stock first; local top-up only if needed,No,,line_item,no_match,,,,,,,,
 Parts,42,Grommet Set,18600,starshop.pk,Y,9200 COD,line_item,no_match,,,,,,,,
 Parts,43,8mm Nylon Braided Sleeve x 5,800,electronicsstore.pk,Y,Y,line_item,no_match,,,,,,,,
@@ -184,7 +184,7 @@ Parts,136,Foam,,,,,section_header,not_applicable,,,,,,,,
 Parts,137,Sound dampening sheets,,,,,section_header,not_applicable,,,,,,,,
 Parts,138,Android unit,,,,,section_header,not_applicable,,,,,,,,
 Parts,139,Power steering upgrade,,,,,section_header,not_applicable,,,,,,,,
-Parts,140,Toyota Vitz/Yaris 2005-2011 SCP90/NCP90 EPS column complete set,,,,,section_header,not_applicable,,,,,,,,
+Parts,140,Toyota Vitz SCP90 (1.3L) EPS column complete set,,,,,section_header,not_applicable,,,,,,,,
 Parts,141,Custom U-joints / intermediate shafts,,,,,section_header,not_applicable,,,,,,,,
 Parts,142,Shaft support bearing,,,,,section_header,not_applicable,,,,,,,,
 Parts,143,EPS mounting bracket,,,,,section_header,not_applicable,,,,,,,,
@@ -212,7 +212,6 @@ Parts,164,Barrier hoses and fittings,,,,,section_header,not_applicable,,,,,,,,
 Parts,165,Evaporator drain hose,,,,,section_header,not_applicable,,,,,,,,
 Parts,166,Vents / louver panel / control pod,,,,,section_header,not_applicable,,,,,,,,
 Parts,167,Condenser fan and relay,,,,,section_header,not_applicable,,,,,,,,
-Parts,168,Internal compact covered blade fuse box (OEM-style) x3,,,,,section_header,not_applicable,,,,,,,,
 Parts,169,Alternator / regulator check or replacement,,,,,section_header,not_applicable,,,,,,,,
 Parts,170,Brake master cylinder,,,,,section_header,not_applicable,,,,,,,,
 Parts,171,Wheel cylinders / caliper rebuild parts,,,,,section_header,not_applicable,,,,,,,,

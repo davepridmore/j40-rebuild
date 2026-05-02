@@ -7,19 +7,20 @@ Use with: `bilal-ganj-master-shopping-list.md` + `bilal-ganj-mechanic-checklist.
 
 | Row | Item | Acceptance Rule |
 | --- | --- | --- |
-| 11, 244, 245, 246, 247 | Structural/body/electrical hardware kits | `NEW_ONLY` |
+| 11, 225, 226, 227, 228 | Structural/body/electrical hardware kits | `NEW_ONLY` |
 | 12, 13 | Body mount rubbers and shims | `NEW_ONLY` |
 | 15, 16 | Local leaf springs | `NEW_FABRICATED_ONLY` |
 | 29 | Heat plugs (glow plugs) | `NEW_ONLY` |
 | 33, 44, 45, 46, 47 | OME/EMU quote items | `NEW_GENUINE_ONLY` |
-| 41 | Ignition lock security | `SERVICE_OR_NEW` (no worn loose used lock) |
-| 186 | Cabin fuse boxes | `NEW_ONLY` |
-| 229 | EPS kit | `USED_TESTED_2005_2011_SCP90_NCP90_ONLY` (bench test mandatory) |
-| 230 | Steering bushings | `NEW_ONLY` |
+| 39 | Ignition lock security | `SERVICE_OR_NEW` (no worn loose used lock) |
+| 210 | EPS kit | `USED_TESTED_2005_2011_SCP90_NCP90_ONLY` (bench test mandatory) |
+| 211 | Steering bushings | `NEW_ONLY` |
+
+Relay/fuse hardware already bought remains in the received/paid workbook inventory; this market spec has no separate cabin/interior fuse-box buy item.
 
 ## 1) Fastener Kits (Exact Purchase Spec)
 
-### Kit A (Row 244) - Tub to Chassis Mounts
+### Kit A (Row 225) - Tub to Chassis Mounts
 
 | Spec | Size | Qty |
 | --- | --- | ---: |
@@ -35,7 +36,7 @@ Use with: `bilal-ganj-master-shopping-list.md` + `bilal-ganj-mechanic-checklist.
 
 Note: buy +20% spare on bolts/nuts/washers.
 
-### Kit B (Row 245) - Body Panels and Brackets
+### Kit B (Row 226) - Body Panels and Brackets
 
 | Spec | Size | Qty |
 | --- | --- | ---: |
@@ -50,7 +51,7 @@ Note: buy +20% spare on bolts/nuts/washers.
 | Flat washers | M8 | 180 |
 | Spring washers | M8 | 90 |
 
-### Kit C (Row 246) - Captive / Clip / Rivnut
+### Kit C (Row 227) - Captive / Clip / Rivnut
 
 | Spec | Size | Qty |
 | --- | --- | ---: |
@@ -63,7 +64,7 @@ Note: buy +20% spare on bolts/nuts/washers.
 
 Finish: yellow-zinc or equivalent corrosion-resistant plating.
 
-### Kit D (Row 247) - Grounding Hardware
+### Kit D (Row 228) - Grounding Hardware
 
 | Spec | Size | Qty |
 | --- | --- | ---: |
@@ -91,7 +92,7 @@ Shim/spacer target pack:
 - M10/M12 ID shim washers and flat shims
 - Thickness mix: 1.0mm, 2.0mm, 3.0mm, 5.0mm (alignment pack)
 
-## 3) Ignition Lock Security (Row 41)
+## 3) Ignition Lock Security (Row 39)
 
 | Requirement | Spec |
 | --- | --- |
@@ -110,18 +111,7 @@ Shim/spacer target pack:
 | Quantity | Full engine set |
 | Check | Compare old plug thread and reach physically before purchase |
 
-## 4) Cabin Fuse Boxes (Row 186)
-
-| Requirement | Spec |
-| --- | --- |
-| Type | ATO/ATC blade fuse block |
-| Form factor | Compact, covered |
-| Quantity | 3 identical units |
-| Circuits | 6-way or equivalent compact format |
-| Terminals | Screw/stud terminals, firm clamping |
-| Mounting | Integrated mounting tabs |
-
-## 5) EPS Kit (Row 229) - Market Scout Buying Spec
+## 4) EPS Kit (Row 210) - Market Scout Buying Spec
 
 Plain stall request: **"I need one complete 2005-2011 Toyota Vitz/Yaris 90-series electric EPS steering column set, chassis code SCP90 or NCP90, with matching computer/ECU, original plugs with wiring tails, shafts, U-joints, couplers, and brackets, tested working."**
 
@@ -191,7 +181,7 @@ Price guidance:
 - Working negotiation midpoint / total target: `PKR 90,000`
 - Missing brackets/shafts/connectors reduce value sharply; do not pay complete-kit price for a partial bundle.
 
-## 6) Ironman Foamcell Suspension Kit - Receipt Check
+## 5) Ironman Foamcell Suspension Kit - Receipt Check
 
 The ordered Ironman Foamcell kit replaces the previous local-spring and imported-suspension quote paths.
 
@@ -205,7 +195,7 @@ Receipt capture:
 - Front-damper shipment arrival date: `________`
 - Missing/damaged items: `________`
 
-## 7) Suspension Install Validation
+## 6) Suspension Install Validation
 
 | Check | Result |
 | --- | --- |
@@ -218,7 +208,7 @@ Receipt capture:
 Rule:
 - Do not quote or buy alternate suspension parts unless the Ironman kit is incomplete and the replacement need is confirmed after receipt inspection.
 
-## 8) Wire Rework Instruction (Non-purchase Task)
+## 7) Wire Rework Instruction (Non-purchase Task)
 
 User-required correction:
 - Overlength heavy feed wire that was previously made as one full run should be split into **3 serviceable segments**.

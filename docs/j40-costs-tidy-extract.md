@@ -1,19 +1,19 @@
 # J40 Costs Workbook Tidy Extract
 
-- Generated: 2026-05-02 06:35:27
+- Generated: 2026-05-02 18:25:08
 - Workbook: `/Users/davidpridmore/Documents/J40_Costs.xlsx`
 - Output: `data/manual/j40_costs_cost_tabs_tidy.csv`
-- Total extracted rows: 280
+- Total extracted rows: 279
 
 ## Rows By Sheet
 
-- `Parts`: 233
+- `Parts`: 232
 - `Tools`: 47
 
 ## Row Disposition
 
 - `line_item`: 176
-- `section_header`: 104
+- `section_header`: 103
 
 ## Normalized Received Status (line-item only)
 

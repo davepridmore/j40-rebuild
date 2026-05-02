@@ -3,10 +3,12 @@
 Date: 2026-04-15  
 Source of truth: `J40_Costs.xlsx` (`Parts` tab, P2 rows)
 
+Note: relay/fuse hardware already bought is recorded in the workbook as received/paid wiring inventory. This sheet no longer lists a separate interior/cabin fuse-box purchase.
+
 ## What To Buy First (De-duplicated)
 
 1. **Body mount fastener pack (roll-up of Kits A+B+C+D)**
-   - Workbook rows: `215` (roll-up), detailed specs in `244,245,246,247`
+   - Workbook rows: `11` (roll-up), detailed specs in `225,226,227,228`
    - **Exact spec**:
      - **Kit A (tub-to-chassis mounts)**:  
        M10x1.25 class 8.8 bolts x16, M10 nuts (nyloc + all-metal mix) x24, M10 flat washers x40, M10 spring washers x20, M10 sleeves/spacers x16, M12 class 8.8 bolts x4, M12 nuts x6, M12 flat washers x12, M12 spring washers x6.  
@@ -28,23 +30,14 @@ Source of truth: `J40_Costs.xlsx` (`Parts` tab, P2 rows)
    - **Estimated price (PKR)**: `15,000 - 60,000` (avg `30,000`)
 
 3. **Ignition lock security fix**
-   - Workbook row: `41`
+   - Workbook row: `39`
    - **Exact spec**:
      - Preferred: re-key existing barrel + matched key set (local locksmith).
      - Alternative: 40-series style ignition barrel + key set (ACC/IGN/START switch positions).
    - **Estimated price (PKR)**: `4,000 - 25,000` (avg `12,000`)
 
-4. **Internal compact covered blade fuse box x3**
-   - Workbook row: `186`
-   - **Exact spec**:
-     - Compact **covered** ATO/ATC blade fuse block, 12V/24V compatible
-     - 6-way or equivalent compact format
-     - Screw/stud terminals, secure cover, mounting tabs
-     - Buy **3 identical units**
-   - **Estimated price (PKR)**: `11,100 - 21,000` (avg `15,000`)
-
-5. **Electrical power steering (EPS) complete conversion kit**
-   - Workbook row: `229`
+4. **Electrical power steering (EPS) complete conversion kit**
+   - Workbook row: `210`
    - **Exact spec (must be included in one kit)**:
      - Column-assist EPS unit: motor + torque sensor + reduction gear
      - EPS controller/ECU (or integrated control module)
@@ -63,20 +56,17 @@ Source of truth: `J40_Costs.xlsx` (`Parts` tab, P2 rows)
 ## Estimated Total
 
 - **Core P2-A + P2-B pack (without EPS)**
-  - Low: `75,100 PKR`
-  - Average: `129,000 PKR`
-  - High: `211,000 PKR`
+  - Low: `64,000 PKR`
+  - Average: `114,000 PKR`
+  - High: `190,000 PKR`
 
 - **Core pack + EPS**
-  - Low: `129,100 PKR`
-  - Average: `219,000 PKR`
-  - High: `347,000 PKR`
+  - Low: `118,000 PKR`
+  - Average: `204,000 PKR`
+  - High: `326,000 PKR`
 
 ## Local Photos To Take On Phone (Your Car References)
 
-- Fuse/relay build already done (for matching size/style only):
-  - `/Users/davidpridmore/IdeaProjects/J40/photos/index/by_specific_component/fuse_distribution_and_power_hardware/20260411_065030.jpg`
-  - `/Users/davidpridmore/IdeaProjects/J40/photos/index/by_specific_component/fuse_distribution_and_power_hardware/20260411_143135.jpg`
 - Body mount condition and geometry:
   - `/Users/davidpridmore/IdeaProjects/J40/photos/index/by_specific_component/body_mount_and_crossmember_detail/20260405_234546.jpg`
   - `/Users/davidpridmore/IdeaProjects/J40/photos/index/by_specific_component/frame_and_mount_points/20260405_234802.jpg`
@@ -90,8 +80,6 @@ Source of truth: `J40_Costs.xlsx` (`Parts` tab, P2 rows)
 
 ## Online Reference Images (Show Vendors The Style)
 
-- Compact covered fuse box style (local listing):  
-  https://www.daraz.pk/products/6-ways-12-24v-automotive-circuit-blade-fuse-box-for-car-truck-vehicle-i486699111.html
 - FJ40 body mount kit style (shape/stack reference):  
   https://btbprod.com/product/body-mount-kit-fj40-1958-78-after-market-style/  
   https://daystarproducts.com/products/daystar-kt04003bk
@@ -103,5 +91,5 @@ Source of truth: `J40_Costs.xlsx` (`Parts` tab, P2 rows)
 - Confirm **metric thread pitch** with nut gauge: `M10x1.25` and `M8x1.25` where specified.
 - Reject structural bolts without clear class marking (`8.8` minimum for these kits).
 - For rubber mounts, buy only after physical sample fit (ID/OD/height + sleeve length).
-- For fuse boxes, reject open/uncovered or flimsy lid variants.
-- Do not double-buy duplicates: rows `11/13/215/216/217/218` are covered by the detailed kit purchase (`244-247`) + row `12`.
+- Do not add a cabin/interior fuse-box purchase unless the workbook is explicitly updated with new evidence.
+- Do not double-buy duplicates: row `11` and detailed rows `225-228` cover the fastener kits; row `12` covers the rubber kit; row `13` covers shims/spacers.
