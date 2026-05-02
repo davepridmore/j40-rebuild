@@ -665,7 +665,7 @@
   function renderImageButton(prepared, buttonClass, imageClass) {
     return `
       <button type="button" class="${buttonClass}" data-image-key="${escapeHtml(prepared.key)}" title="Open full-size media">
-        <img loading="lazy" class="${imageClass}" src="${escapeHtml(prepared.path)}" alt="${escapeHtml(prepared.caption)}">
+        <img loading="eager" decoding="async" class="${imageClass}" src="${escapeHtml(prepared.path)}" alt="${escapeHtml(prepared.caption)}">
       </button>
     `;
   }

@@ -6,11 +6,19 @@ Primary tracker: `replacement_pipes` in `data/manual/workstream_status.csv`.
 
 Curated spec matrix: `data/manual/replacement_pipe_ordering_specs.csv`.
 
+Order release matrix: `data/manual/replacement_pipe_order_release_specs.csv`.
+
+Release actions: `data/manual/replacement_pipe_release_actions.csv`.
+
+Circuit closure sheet: `data/manual/replacement_pipe_circuit_closure_sheet.csv`.
+
+Order release handoff: `docs/replacement-pipe-order-release-plan-20260502.md`.
+
 Made-to-order coolant pipe handoff: `docs/pipe-fabrication-spec-20260502.md`.
 
 Latest pipe photo import: Google Photos run `20260502T030647`, file `photos/20260502_005740_gp_Qiat03EQ.jpg`.
 
-Dashboard table: open `Replacement Pipes` in `docs/project-control-ui/index.html`; the UI now shows the requirements table with `spec_status`, `acquisition_status`, and `installation_status` gates.
+Dashboard table: open `Replacement Pipes` in `docs/project-control-ui/index.html`; the UI now shows requirements, order release lines, release actions, and circuit closure with `spec_status`, `acquisition_status`, `installation_status`, and release-hold gates.
 
 ## Scope
 
@@ -28,7 +36,7 @@ The full editable table is `data/manual/replacement_pipe_ordering_specs.csv`.
 
 Status columns:
 
-- `spec_status`: `properly_specced`, `needs_measurement`, or `needs_physical_measurement`
+- `spec_status`: `spec_ready` for all current requirement rows; the release hold lives in the order/action/closure sheets
 - `acquisition_status`: `not_acquired` or `acquired`
 - `installation_status`: `not_installed` or `installed`
 
@@ -47,7 +55,9 @@ Status columns:
 
 ## Acquisition / Fabrication Spec
 
-Use this as the parts-counter or fabricator handoff. Photo evidence identifies the target location or sample; the old part or installed fittings supply final dimensions.
+Use this section as the high-level handoff. For actual order and fabrication release, use `data/manual/replacement_pipe_order_release_specs.csv`. Photo evidence identifies the target location or sample; the old part or installed fittings supply final dimensions.
+
+All rows below are spec-ready with controlled release holds. Do not treat the remaining measurements as missing specification; treat them as the final physical release actions before payment or fabrication.
 
 | ID | Release Type | Acquisition / Fabrication Instruction | Must Measure Before Release | Acceptance Gate |
 | --- | --- | --- | --- | --- |

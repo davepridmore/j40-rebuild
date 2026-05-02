@@ -9,7 +9,8 @@
 
 - Rows in this-week list: 24
 - `complete_body_mount_release_actions_then_order`: 3
-- `confirm_price_then_order`: 17
+- `complete_replacement_pipe_release_actions_then_order`: 5
+- `confirm_price_then_order`: 12
 - `track_delivery`: 4
 
 ## Priority Split
@@ -33,7 +34,14 @@
   - `part_body_mount_rubber_kit` [P0] Body-to-chassis mount rubber kit (status: spec_ready; procurement_stage: spec_ready_release_hold; delivery_status: not_ordered; payment_status: not_paid)
   - `part_body_mount_shim_pack` [P0] Body mount shim and spacer pack (status: spec_ready; procurement_stage: spec_ready_release_hold; delivery_status: not_ordered; payment_status: not_paid)
     - Release control: use `data/manual/body_mount_order_release_specs.csv` for quantities and `data/manual/body_mount_release_actions.csv` for the remaining measurements/route decision before committing the body-mount order.
-- `confirm_price_then_order` (17):
+- `complete_replacement_pipe_release_actions_then_order` (5):
+  - `part_mech_brake_flex_hose_set` [P1] Brake flexible hose set front and rear (status: spec_ready; procurement_stage: spec_ready_release_hold; delivery_status: not_ordered; payment_status: not_paid)
+  - `part_mech_fuel_hose_and_clamps` [P1] Fuel-rated rubber hose and clamp kit (status: spec_ready; procurement_stage: spec_ready_release_hold; delivery_status: not_ordered; payment_status: not_paid)
+  - `part_mech_heater_hose_set` [P1] Heater hose set with clamps (status: spec_ready; procurement_stage: spec_ready_release_hold; delivery_status: not_ordered; payment_status: not_paid)
+  - `part_mech_radiator_hose_set` [P1] Radiator hose set upper plus lower with clamps (status: spec_ready; procurement_stage: spec_ready_release_hold; delivery_status: not_ordered; payment_status: not_paid)
+  - `part_mech_vacuum_hose_refresh` [P1] Vacuum hose refresh kit (status: spec_ready; procurement_stage: spec_ready_release_hold; delivery_status: not_ordered; payment_status: not_paid)
+    - Release control: use `data/manual/replacement_pipe_order_release_specs.csv` for exact quantities and `data/manual/replacement_pipe_release_actions.csv` plus `data/manual/replacement_pipe_circuit_closure_sheet.csv` for final measurements before committing the pipe/hose order.
+- `confirm_price_then_order` (12):
   - `part_bedliner_sprays` [P0] Bedliner sprays (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_metal_protection` [P0] Metal protection and restoration products (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_primer` [P0] Primer (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
@@ -44,13 +52,8 @@
   - `part_mech_accessory_belt_set` [P1] Accessory belt set (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_engine_oil_filter_service` [P1] Engine oil + oil filter service pack (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_fuel_filter` [P1] Fuel filter (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_mech_fuel_hose_and_clamps` [P1] Fuel-rated rubber hose and clamp kit (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_heat_glow_plugs_set` [P1] Heat/glow plugs set - diesel 2H (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_mech_heater_hose_set` [P1] Heater hose set with clamps (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_radiator_cap` [P1] Radiator cap (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_mech_radiator_hose_set` [P1] Radiator hose set upper plus lower with clamps (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_mech_vacuum_hose_refresh` [P1] Vacuum hose refresh kit (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_mech_brake_flex_hose_set` [P1] Brake flexible hose set front and rear (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
 - `track_delivery` (4):
   - `part_nylon_fiber_wool_polishing_disc_sets_2x` [P0] Nylon fiber polishing disc and wool buffing polishing disc set (3pcs) plus drill adapter and grinder nut for metals x2 (price: 2188 PKR; order_date: 2026-04-24; delivery_eta: 2026-04-29; delivery_status: pending_delivery; payment_status: paid)
   - `part_seam_sealer` [P0] Seam sealer (price: 7696 PKR; order_date: 2026-03-21; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: unknown)

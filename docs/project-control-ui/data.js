@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-02T05:23:42+05:00",
+  "generated_at": "2026-05-02T05:29:39+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -27091,7 +27091,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_vacuum_hose_refresh",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready: order lines RPO-VAC-001A through RPO-VAC-001C define reinforced 10-12 mm vacuum hose working basis",
+          "notes": "Spec ready: order lines RPO-VAC-001A through RPO-VAC-001C define reinforced 10-12 mm vacuum hose working basis, 16-19 mm oil-resistant breather basis, and Toyota/OEM 90923-02079 only if fitted. Complete RPA-009 before payment.",
           "image": {
             "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
             "caption": "Engine bay hose routing - related local mechanical inspection photo",
@@ -27383,7 +27383,7 @@ window.J40_DASHBOARD_DATA = {
                 "Heater hose set with clamps (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Radiator cap (purchase_ready; delivery not_ordered; amount missing)",
                 "Engine oil + oil filter service pack (purchase_ready; delivery not_ordered; amount missing)",
-                "Accessory belt set (purchase_ready; delivery not_ordered; amount missing)"
+                "Vacuum hose refresh kit (spec_ready_release_hold; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -27795,13 +27795,16 @@ window.J40_DASHBOARD_DATA = {
         "mechanical_baseline",
         "brake_system"
       ],
-      "next_action": "Use the curated replacement pipe matrix to lock each pipe location, the exact pipe/hose/line photo evidence, and the recreation/order spec",
+      "next_action": "Close the pipe order-release actions, record circuit measurements, then release the spec-ready hose/pipe/brake-flex orders or fabrication jobs",
       "exit_gate": "All replacement pipes are identified by vehicle location, supported by direct pipe/location photos or marked for close-up capture, measured where needed, ordered or fabricated, and dry-fitted/pressure-tested with no leaks, rubbing, kinks, or unsafe substitutions",
-      "notes": "Narrow pipe-only track. Body rubbers, grommets, clamp-only rows, generic chassis photos, and optional HVAC duct/drain work are excluded.",
+      "notes": "Narrow pipe-only track. Body rubbers, grommets, clamp-only rows, generic chassis photos, and optional HVAC duct/drain work are excluded. Requirements are spec_ready; order release remains gated by physical measurements and close fitting photos.",
       "evidence_source": [
         "photo_import_20260502T023726",
         "photo_import_20260502T030647",
         "data_replacement_pipe_ordering_specs",
+        "data_replacement_pipe_order_release_specs",
+        "data_replacement_pipe_release_actions",
+        "data_replacement_pipe_circuit_closure_sheet",
         "docs_replacement_pipes_workstream"
       ],
       "images": [
@@ -28341,7 +28344,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 12,
-      "reference_token_count": 15,
+      "reference_token_count": 18,
       "requirements": [
         {
           "requirement_id": "RP-COOL-001",
@@ -29798,7 +29801,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Execute current workstream action",
           "status": "in_progress",
-          "detail": "Use the curated replacement pipe matrix to lock each pipe location, the exact pipe/hose/line photo evidence, and the recreation/order spec"
+          "detail": "Close the pipe order-release actions, record circuit measurements, then release the spec-ready hose/pipe/brake-flex orders or fabrication jobs"
         },
         {
           "label": "Lock the replacement locations",
@@ -36730,7 +36733,7 @@ window.J40_DASHBOARD_DATA = {
         "amount_status": "missing",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready: order lines RPO-VAC-001A through RPO-VAC-001C define reinforced 10-12 mm vacuum hose working basis",
+        "notes": "Spec ready: order lines RPO-VAC-001A through RPO-VAC-001C define reinforced 10-12 mm vacuum hose working basis, 16-19 mm oil-resistant breather basis, and Toyota/OEM 90923-02079 only if fitted. Complete RPA-009 before payment.",
         "image": {
           "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
           "caption": "Engine bay hose routing - related local mechanical inspection photo",
@@ -45598,9 +45601,9 @@ window.J40_DASHBOARD_DATA = {
             "stage": "procurement_reconciliation",
             "media_id": "",
             "matched_tokens": [
-              "https://www.daraz.pk/products/6-ways-12-24v-automotive-circuit-blade-fuse-box-for-car-truck-vehicle-i486699111.html",
               "oem-style",
               "486699111",
+              "https://www.daraz.pk/products/6-ways-12-24v-automotive-circuit-blade-fuse-box-for-car-truck-vehicle-i486699111.html",
               "internal",
               "compact",
               "covered",
@@ -48277,7 +48280,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready: order lines RPO-VAC-001A through RPO-VAC-001C define reinforced 10-12 mm vacuum hose working basis",
+          "notes": "Spec ready: order lines RPO-VAC-001A through RPO-VAC-001C define reinforced 10-12 mm vacuum hose working basis, 16-19 mm oil-resistant breather basis, and Toyota/OEM 90923-02079 only if fitted. Complete RPA-009 before payment.",
           "image": {
             "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
             "caption": "Engine bay hose routing - related local mechanical inspection photo",
@@ -54610,9 +54613,9 @@ window.J40_DASHBOARD_DATA = {
           "stage": "procurement_reconciliation",
           "media_id": "",
           "matched_tokens": [
-            "https://www.daraz.pk/products/6-ways-12-24v-automotive-circuit-blade-fuse-box-for-car-truck-vehicle-i486699111.html",
             "oem-style",
             "486699111",
+            "https://www.daraz.pk/products/6-ways-12-24v-automotive-circuit-blade-fuse-box-for-car-truck-vehicle-i486699111.html",
             "internal",
             "compact",
             "covered",
@@ -56631,7 +56634,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready: order lines RPO-VAC-001A through RPO-VAC-001C define reinforced 10-12 mm vacuum hose working basis",
+        "notes": "Spec ready: order lines RPO-VAC-001A through RPO-VAC-001C define reinforced 10-12 mm vacuum hose working basis, 16-19 mm oil-resistant breather basis, and Toyota/OEM 90923-02079 only if fitted. Complete RPA-009 before payment.",
         "image": {
           "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
           "caption": "Engine bay hose routing - related local mechanical inspection photo",
