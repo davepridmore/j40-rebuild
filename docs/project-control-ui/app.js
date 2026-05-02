@@ -28,6 +28,13 @@
   let itemKeyCounter = 0;
   const lightbox = createLightbox();
   const itemDetail = createItemDetail();
+  const lightboxViewport = {
+    scale: 1,
+    x: 0,
+    y: 0,
+    drag: null,
+  };
+  let fitLightboxOnImageLoad = false;
 
   if (generatedAtNode) {
     generatedAtNode.textContent = `Generated: ${formatDateTime(data.generated_at)}`;
@@ -84,8 +91,27 @@
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && state.lightboxImageBase) {
       closeLightbox();
-    } else if (event.key === "Escape" && state.itemDetailRow) {
+      return;
+    }
+    if (event.key === "Escape" && state.itemDetailRow) {
       closeItemDetail();
+      return;
+    }
+    if (!state.lightboxImageBase || isFormControl(event.target)) {
+      return;
+    }
+    if (event.key === "+" || event.key === "=") {
+      event.preventDefault();
+      zoomLightboxAtCenter(1.25);
+    } else if (event.key === "-" || event.key === "_") {
+      event.preventDefault();
+      zoomLightboxAtCenter(0.8);
+    } else if (event.key === "0") {
+      event.preventDefault();
+      setLightboxActualSize();
+    } else if (event.key.toLowerCase() === "f") {
+      event.preventDefault();
+      fitLightboxImage();
     }
   });
 
@@ -188,6 +214,11 @@
 
   function cleanString(value) {
     return String(value ?? "").trim();
+  }
+
+  function isFormControl(node) {
+    const tagName = node && node.tagName ? node.tagName.toLowerCase() : "";
+    return ["input", "select", "textarea", "button"].includes(tagName) || Boolean(node && node.isContentEditable);
   }
 
   function supplierLabel(row) {
@@ -443,6 +474,37 @@
     return lookup[mediaId] || null;
   }
 
+  function isDeletedPhotoOverride(override) {
+    if (!override || typeof override !== "object") {
+      return false;
+    }
+    return (
+      override.deleted === true ||
+      Boolean(cleanString(override.deleted_at)) ||
+      cleanString(override.action).toLowerCase() === "delete"
+    );
+  }
+
+  function photoOverrideKeyForMeta(meta) {
+    const mediaId = cleanString(meta && meta.media_id);
+    if (mediaId) {
+      return mediaId;
+    }
+    const path = cleanString(meta && meta.path);
+    if (path && path !== FALLBACK_IMAGE_PATH) {
+      return `path:${path}`;
+    }
+    return "";
+  }
+
+  function isPhotoDeletedByKey(key) {
+    return Boolean(key && isDeletedPhotoOverride(state.photoOverrides[key]));
+  }
+
+  function isPhotoDeletedById(mediaId) {
+    return isPhotoDeletedByKey(cleanString(mediaId));
+  }
+
   function getBasePhotoMeta(image) {
     const img = image && typeof image === "object" ? image : {};
     const mediaId = cleanString(img.media_id);
@@ -468,6 +530,16 @@
       match_basis: cleanString(img.match_basis),
       match_score: cleanString(img.match_score),
     };
+  }
+
+  function isImageDeleted(image) {
+    const base = getBasePhotoMeta(image);
+    return isPhotoDeletedByKey(photoOverrideKeyForMeta(base));
+  }
+
+  function filterVisibleImages(images) {
+    const source = Array.isArray(images) ? images : [];
+    return source.filter((image) => !isImageDeleted(image));
   }
 
   function withOverride(baseMeta) {
@@ -620,7 +692,7 @@
     const results = [];
     const entries = Object.entries(state.photoOverrides || {});
     for (const [mediaId, override] of entries) {
-      if (!mediaId || existingMediaIds.has(mediaId)) {
+      if (!mediaId || existingMediaIds.has(mediaId) || isDeletedPhotoOverride(override)) {
         continue;
       }
       const targetWorkstream = cleanString(override && override.target_workstream);
@@ -688,7 +760,7 @@
     const existingMediaIds = new Set();
     const normalizedSets = inputSets
       .map((set) => {
-        const sourceImages = Array.isArray(set.images) ? set.images : [];
+        const sourceImages = filterVisibleImages(set.images);
         const uniqueImages = dedupeImages(sourceImages);
         uniqueImages.forEach((image) => {
           const mediaId = cleanString(image && image.media_id);
@@ -725,15 +797,15 @@
   }
 
   function chooseWorkstreamLeadImage(workstream) {
-    const primary = (workstream.images || [])[0];
+    const primary = filterVisibleImages(workstream.images).find(Boolean);
     if (primary) {
       return primary;
     }
     const evidenceSets = Array.isArray(workstream.evidence_sets) ? workstream.evidence_sets : [];
     for (const set of evidenceSets) {
-      const images = Array.isArray(set && set.images) ? set.images : [];
-      if (images.length) {
-        return images[0];
+      const image = filterVisibleImages(set && set.images).find(Boolean);
+      if (image) {
+        return image;
       }
     }
     return null;
@@ -746,7 +818,7 @@
   }
 
   function buildProcurementEvidenceImages(baseImages) {
-    const source = Array.isArray(baseImages) ? baseImages : [];
+    const source = filterVisibleImages(baseImages);
     const existingMediaIds = new Set();
     const normalized = [];
 
@@ -762,8 +834,8 @@
       normalized.push({ ...image });
     });
 
-    Object.entries(state.photoOverrides || {}).forEach(([mediaId]) => {
-      if (!mediaId || existingMediaIds.has(mediaId)) {
+    Object.entries(state.photoOverrides || {}).forEach(([mediaId, override]) => {
+      if (!mediaId || existingMediaIds.has(mediaId) || isDeletedPhotoOverride(override)) {
         return;
       }
       const lookup = photoLookupById(mediaId);
@@ -904,7 +976,8 @@
   }
 
   function renderInventoryImageCell(row, fallbackCaption) {
-    const prepared = prepareImage(row.image || {}, fallbackCaption);
+    const sourceImage = row && row.image && !isImageDeleted(row.image) ? row.image : {};
+    const prepared = prepareImage(sourceImage, fallbackCaption);
     const label = inventoryImageMatchLabel(prepared.effective.match_basis);
     return `
       <td class="table-image-cell">
@@ -915,7 +988,7 @@
   }
 
   function renderRequirementEvidenceImages(requirement) {
-    const images = Array.isArray(requirement.evidence_images) ? requirement.evidence_images : [];
+    const images = filterVisibleImages(requirement.evidence_images);
     if (!images.length) {
       return `<span class="small-muted">${escapeHtml(formatToken(requirement.photo_status || "photo_needed"))}</span>`;
     }
@@ -1591,7 +1664,7 @@
   }
 
   function dedupeImages(images, sharedSeenKeys) {
-    const source = Array.isArray(images) ? images : [];
+    const source = filterVisibleImages(images);
     const seen = sharedSeenKeys || new Set();
     const output = [];
     source.forEach((image) => {
@@ -2085,7 +2158,9 @@
     const mediaItemsSummary = toNumber(summary.whatsapp_j40_media_items);
     const whatsapp = data.whatsapp_j40 || {};
     const selectedChats = Array.isArray(whatsapp.selected_chats) ? whatsapp.selected_chats : [];
-    const recentMedia = Array.isArray(whatsapp.recent_media) ? whatsapp.recent_media : [];
+    const recentMedia = (Array.isArray(whatsapp.recent_media) ? whatsapp.recent_media : []).filter(
+      (row) => !isPhotoDeletedById(row && row.media_id)
+    );
     const mediaCountsByType = Array.isArray(whatsapp.media_counts_by_type) ? whatsapp.media_counts_by_type : [];
     const mediaCountsByProfile = Array.isArray(whatsapp.media_counts_by_profile) ? whatsapp.media_counts_by_profile : [];
 
@@ -2238,6 +2313,10 @@
         <article class="card">
           <p class="metric-value">${escapeHtml(summary.parts_ordered_pending_delivery ?? 0)}</p>
           <p class="metric-label">Orders Awaiting Delivery</p>
+        </article>
+        <article class="card">
+          <p class="metric-value">${escapeHtml(summary.capture_data_tasks_now ?? 0)}</p>
+          <p class="metric-label">Photo / Data Tasks Now</p>
         </article>
         <article class="card">
           <p class="metric-value">${escapeHtml(summary.workstream_evidence_images ?? 0)}</p>
@@ -2892,7 +2971,7 @@
                         ${chip(`${card.open_count} open`)}
                       </div>
                       ${
-                        card.image
+                        card.image && !isImageDeleted(card.image)
                           ? renderFigureImage(card.image, card.workstream || "Workstream image", {
                               figureClass: "evidence-figure",
                               imageClass: "lead-image",
@@ -3083,6 +3162,201 @@
     `;
   }
 
+  function priorityChip(priority) {
+    const normalized = cleanString(priority || "P1").toUpperCase();
+    let tone = "info";
+    if (normalized === "P0") {
+      tone = "bad";
+    } else if (normalized === "P1") {
+      tone = "warn";
+    }
+    return `<span class="chip ${tone}">${escapeHtml(normalized)}</span>`;
+  }
+
+  function renderCaptureTaskEvidence(task) {
+    const images = Array.isArray(task.evidence_images) ? task.evidence_images : [];
+    if (!images.length) {
+      const ref = cleanString(task.evidence_ref);
+      return ref ? `<span class="small-muted">${escapeHtml(truncateText(ref, 90))}</span>` : "-";
+    }
+    const fallbackCaption = task.title || "Task evidence";
+    return `
+      <div class="requirement-evidence-grid capture-task-evidence-grid">
+        ${images
+          .slice(0, 4)
+          .map((image) => {
+            const prepared = prepareImage(image, fallbackCaption);
+            return `
+              <div class="requirement-evidence-item">
+                ${renderPreparedMedia(prepared, "table-image-btn", "table-image")}
+                <span class="table-image-note">${escapeHtml(prepared.effective.media_id || "")}</span>
+              </div>
+            `;
+          })
+          .join("")}
+      </div>
+      ${images.length > 4 ? `<span class="table-image-note">+${escapeHtml(images.length - 4)} more</span>` : ""}
+    `;
+  }
+
+  function renderTaskCountChips(rows, keyName, formatter) {
+    const source = Array.isArray(rows) ? rows : [];
+    return source.length
+      ? source.map((row) => chip(`${formatter(row[keyName])}: ${row.count}`)).join("")
+      : chip("No rows");
+  }
+
+  function renderCaptureTasks() {
+    const captureTasks = data.capture_tasks || {};
+    const summary = captureTasks.summary || {};
+    const tasks = Array.isArray(captureTasks.tasks) ? captureTasks.tasks : [];
+    const nowTasks = tasks.filter((task) => cleanString(task.timing) !== "later");
+
+    root.innerHTML = `
+      <h2 class="section-title">Photo and Data Tasks</h2>
+      <p class="section-subtitle">Open rows that need a photograph, measurement, identification, inspection result, or release decision before the related work can close.</p>
+
+      <section class="metrics-grid">
+        <article class="card">
+          <p class="metric-value">${escapeHtml(summary.total_tasks ?? 0)}</p>
+          <p class="metric-label">Total Open Tasks</p>
+        </article>
+        <article class="card">
+          <p class="metric-value">${escapeHtml(summary.now_tasks ?? 0)}</p>
+          <p class="metric-label">Current Tasks</p>
+        </article>
+        <article class="card">
+          <p class="metric-value">${escapeHtml(summary.p0_tasks ?? 0)}</p>
+          <p class="metric-label">P0 Tasks</p>
+        </article>
+        <article class="card">
+          <p class="metric-value">${escapeHtml(summary.photo_tasks ?? 0)}</p>
+          <p class="metric-label">Photo Tasks</p>
+        </article>
+        <article class="card">
+          <p class="metric-value">${escapeHtml(summary.measurement_tasks ?? 0)}</p>
+          <p class="metric-label">Measurement / Template Tasks</p>
+        </article>
+        <article class="card">
+          <p class="metric-value">${escapeHtml(summary.later_tasks ?? 0)}</p>
+          <p class="metric-label">Later / Deferred</p>
+        </article>
+      </section>
+
+      <section class="split capture-task-counts">
+        <article class="card">
+          <h3>By Workstream</h3>
+          <div class="chip-row">
+            ${renderTaskCountChips(captureTasks.counts_by_workstream, "workstream", formatToken)}
+          </div>
+        </article>
+        <article class="card">
+          <h3>By Task Type</h3>
+          <div class="chip-row">
+            ${renderTaskCountChips(captureTasks.counts_by_task_type, "task_type", formatToken)}
+          </div>
+        </article>
+      </section>
+
+      <h3 class="section-title">Current Task List</h3>
+      <div class="table-wrap">
+        <table class="capture-task-table">
+          <thead>
+            <tr>
+              <th>Evidence</th>
+              <th>Task</th>
+              <th>Workstream</th>
+              <th>Type</th>
+              <th>Action</th>
+              <th>Data Needed</th>
+              <th>Blocks / Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${
+              nowTasks.length
+                ? nowTasks
+                    .map(
+                      (task) => `
+                        <tr>
+                          <td class="requirement-evidence-cell">${renderCaptureTaskEvidence(task)}</td>
+                          <td>
+                            <div class="task-title-row">
+                              ${priorityChip(task.priority)}
+                              ${statusChip(task.status || "open")}
+                            </div>
+                            <strong>${escapeHtml(task.title || task.task_id || "Task")}</strong>
+                            ${task.location ? `<div class="small-muted">${escapeHtml(task.location)}</div>` : ""}
+                            ${task.notes ? `<div class="small-muted">${escapeHtml(truncateText(task.notes, 180))}</div>` : ""}
+                          </td>
+                          <td>${escapeHtml(formatToken(task.workstream || "-"))}</td>
+                          <td>${escapeHtml(formatToken(task.task_type || "data"))}</td>
+                          <td>${escapeHtml(task.action || "-")}</td>
+                          <td>${escapeHtml(task.data_needed || "-")}</td>
+                          <td>
+                            ${task.blocks ? `<div>${escapeHtml(task.blocks)}</div>` : ""}
+                            ${task.record_result_in ? `<div class="small-muted">${escapeHtml(task.record_result_in)}</div>` : ""}
+                            <div class="small-muted">${escapeHtml(task.source_row_id || "")}</div>
+                            ${renderLinksCell(task)}
+                          </td>
+                        </tr>
+                      `
+                    )
+                    .join("")
+                : '<tr><td colspan="7">No current photo/data tasks found.</td></tr>'
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="section-title">Later / Deferred</h3>
+      <div class="table-wrap">
+        <table class="capture-task-table compact">
+          <thead>
+            <tr>
+              <th>Priority</th>
+              <th>Task</th>
+              <th>Workstream</th>
+              <th>Status</th>
+              <th>Action / Data Needed</th>
+              <th>Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${
+              tasks.filter((task) => cleanString(task.timing) === "later").length
+                ? tasks
+                    .filter((task) => cleanString(task.timing) === "later")
+                    .map(
+                      (task) => `
+                        <tr>
+                          <td>${priorityChip(task.priority)}</td>
+                          <td>
+                            <strong>${escapeHtml(task.title || task.task_id || "Task")}</strong>
+                            ${task.location ? `<div class="small-muted">${escapeHtml(task.location)}</div>` : ""}
+                          </td>
+                          <td>${escapeHtml(formatToken(task.workstream || "-"))}</td>
+                          <td>${statusChip(task.status || "open")}</td>
+                          <td>
+                            ${escapeHtml(task.action || "-")}
+                            ${task.data_needed ? `<div class="small-muted">${escapeHtml(task.data_needed)}</div>` : ""}
+                          </td>
+                          <td>
+                            <div class="small-muted">${escapeHtml(task.source_row_id || "")}</div>
+                            ${renderLinksCell(task)}
+                          </td>
+                        </tr>
+                      `
+                    )
+                    .join("")
+                : '<tr><td colspan="6">No later/deferred tasks found.</td></tr>'
+            }
+          </tbody>
+        </table>
+      </div>
+    `;
+  }
+
   function renderProjectSteps() {
     const projectSteps = data.project_steps || [];
     root.innerHTML = `
@@ -3104,7 +3378,7 @@
                 <p><strong>Gate To Close:</strong> ${escapeHtml(step.gate_to_close || "")}</p>
                 <p><strong>Procurement Guidance:</strong> ${escapeHtml(step.key_procurement_actions || "")}</p>
                 ${
-                  step.image
+                  step.image && !isImageDeleted(step.image)
                     ? renderFigureImage(step.image, step.title || "Project step image", {
                         figureClass: "evidence-figure",
                         imageClass: "lead-image",
@@ -3257,7 +3531,8 @@
     if (!row) {
       return;
     }
-    const prepared = prepareImage(row.image || {}, row.item || "Item image");
+    const sourceImage = row && row.image && !isImageDeleted(row.image) ? row.image : {};
+    const prepared = prepareImage(sourceImage, row.item || "Item image");
     itemDetail.title.textContent = cleanString(row.item) || "Item Detail";
     itemDetail.subtitle.textContent = [
       formatToken(row.supply_type || row.inventory_group || "part"),
@@ -3318,7 +3593,15 @@
       <div class="lightbox-backdrop" data-lightbox-close="1"></div>
       <section class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Media viewer">
         <button type="button" class="lightbox-close" data-lightbox-close="1" aria-label="Close media">×</button>
-        <div class="lightbox-media">
+        <div class="lightbox-media" id="lightbox-media">
+          <div class="lightbox-toolbar" id="lightbox-image-controls">
+            <button type="button" class="lightbox-zoom-btn" id="lightbox-fit-image" title="Fit image">Fit</button>
+            <button type="button" class="lightbox-zoom-btn" id="lightbox-actual-size" title="Show image at full size">100%</button>
+            <button type="button" class="lightbox-zoom-btn icon" id="lightbox-zoom-out" title="Zoom out">-</button>
+            <button type="button" class="lightbox-zoom-btn icon" id="lightbox-zoom-in" title="Zoom in">+</button>
+            <a class="lightbox-zoom-btn" id="lightbox-open-original" href="#" target="_blank" rel="noopener noreferrer">Open Original</a>
+            <span class="lightbox-zoom-level" id="lightbox-zoom-level">100%</span>
+          </div>
           <img id="lightbox-image" alt="Selected media">
           <video id="lightbox-video" controls preload="metadata" playsinline class="is-hidden"></video>
         </div>
@@ -3329,6 +3612,7 @@
           <p id="lightbox-notes" class="small-muted"></p>
           <div class="lightbox-actions">
             <button type="button" class="lightbox-btn" id="lightbox-toggle-recategorize">Re-categorize</button>
+            <button type="button" class="lightbox-btn danger" id="lightbox-delete-photo">Delete From Project</button>
             <button type="button" class="lightbox-btn" id="lightbox-clear-override">Clear Override</button>
             <button type="button" class="lightbox-btn" id="lightbox-clear-all-overrides">Reset All Overrides</button>
             <button type="button" class="lightbox-btn" id="lightbox-export-overrides">Export Overrides CSV</button>
@@ -3374,14 +3658,23 @@
 
     const refs = {
       root: wrapper,
+      media: wrapper.querySelector("#lightbox-media"),
+      imageControls: wrapper.querySelector("#lightbox-image-controls"),
       image: wrapper.querySelector("#lightbox-image"),
       video: wrapper.querySelector("#lightbox-video"),
+      fitImageBtn: wrapper.querySelector("#lightbox-fit-image"),
+      actualSizeBtn: wrapper.querySelector("#lightbox-actual-size"),
+      zoomOutBtn: wrapper.querySelector("#lightbox-zoom-out"),
+      zoomInBtn: wrapper.querySelector("#lightbox-zoom-in"),
+      openOriginalLink: wrapper.querySelector("#lightbox-open-original"),
+      zoomLevel: wrapper.querySelector("#lightbox-zoom-level"),
       title: wrapper.querySelector("#lightbox-title"),
       subtitle: wrapper.querySelector("#lightbox-subtitle"),
       meta: wrapper.querySelector("#lightbox-meta"),
       notes: wrapper.querySelector("#lightbox-notes"),
       status: wrapper.querySelector("#lightbox-status"),
       toggleRecategorizeBtn: wrapper.querySelector("#lightbox-toggle-recategorize"),
+      deletePhotoBtn: wrapper.querySelector("#lightbox-delete-photo"),
       clearOverrideBtn: wrapper.querySelector("#lightbox-clear-override"),
       clearAllOverridesBtn: wrapper.querySelector("#lightbox-clear-all-overrides"),
       exportOverridesBtn: wrapper.querySelector("#lightbox-export-overrides"),
@@ -3401,6 +3694,72 @@
       }
     });
 
+    refs.image.addEventListener("load", () => {
+      if (!fitLightboxOnImageLoad || lightbox.image.classList.contains("is-hidden")) {
+        return;
+      }
+      fitLightboxOnImageLoad = false;
+      fitLightboxImage();
+    });
+
+    refs.fitImageBtn.addEventListener("click", fitLightboxImage);
+    refs.actualSizeBtn.addEventListener("click", setLightboxActualSize);
+    refs.zoomOutBtn.addEventListener("click", () => zoomLightboxAtCenter(0.8));
+    refs.zoomInBtn.addEventListener("click", () => zoomLightboxAtCenter(1.25));
+
+    refs.media.addEventListener(
+      "wheel",
+      (event) => {
+        if (!state.lightboxImageBase || lightbox.image.classList.contains("is-hidden")) {
+          return;
+        }
+        event.preventDefault();
+        zoomLightboxAt(event.clientX, event.clientY, event.deltaY < 0 ? 1.15 : 1 / 1.15);
+      },
+      { passive: false }
+    );
+
+    refs.media.addEventListener("pointerdown", (event) => {
+      if (
+        !state.lightboxImageBase ||
+        lightbox.image.classList.contains("is-hidden") ||
+        event.target.closest(".lightbox-toolbar")
+      ) {
+        return;
+      }
+      refs.media.setPointerCapture(event.pointerId);
+      refs.media.classList.add("is-dragging");
+      lightboxViewport.drag = {
+        pointerId: event.pointerId,
+        startX: event.clientX,
+        startY: event.clientY,
+        imageX: lightboxViewport.x,
+        imageY: lightboxViewport.y,
+      };
+    });
+
+    refs.media.addEventListener("pointermove", (event) => {
+      const drag = lightboxViewport.drag;
+      if (!drag || drag.pointerId !== event.pointerId) {
+        return;
+      }
+      lightboxViewport.x = drag.imageX + event.clientX - drag.startX;
+      lightboxViewport.y = drag.imageY + event.clientY - drag.startY;
+      applyLightboxTransform();
+    });
+
+    const endLightboxDrag = (event) => {
+      const drag = lightboxViewport.drag;
+      if (!drag || drag.pointerId !== event.pointerId) {
+        return;
+      }
+      lightboxViewport.drag = null;
+      refs.media.classList.remove("is-dragging");
+    };
+
+    refs.media.addEventListener("pointerup", endLightboxDrag);
+    refs.media.addEventListener("pointercancel", endLightboxDrag);
+
     refs.toggleRecategorizeBtn.addEventListener("click", () => {
       if (!state.lightboxImageBase || !cleanString(state.lightboxImageBase.media_id)) {
         return;
@@ -3411,6 +3770,10 @@
 
     refs.clearOverrideBtn.addEventListener("click", () => {
       clearCurrentPhotoOverride();
+    });
+
+    refs.deletePhotoBtn.addEventListener("click", () => {
+      toggleCurrentPhotoDeletion();
     });
 
     refs.clearAllOverridesBtn.addEventListener("click", () => {
@@ -3427,6 +3790,130 @@
     });
 
     return refs;
+  }
+
+  function isLightboxPhotoVisible() {
+    return (
+      Boolean(state.lightboxImageBase) &&
+      lightbox.image &&
+      !lightbox.image.classList.contains("is-hidden") &&
+      Boolean(lightbox.image.naturalWidth)
+    );
+  }
+
+  function applyLightboxTransform() {
+    if (!lightbox.image) {
+      return;
+    }
+    lightbox.image.style.transform = `translate(${lightboxViewport.x}px, ${lightboxViewport.y}px) scale(${lightboxViewport.scale})`;
+    if (lightbox.zoomLevel) {
+      lightbox.zoomLevel.textContent = `${Math.round(lightboxViewport.scale * 100)}%`;
+    }
+  }
+
+  function resetLightboxTransform() {
+    lightboxViewport.scale = 1;
+    lightboxViewport.x = 0;
+    lightboxViewport.y = 0;
+    lightboxViewport.drag = null;
+    if (lightbox.image) {
+      lightbox.image.style.transform = "";
+    }
+    if (lightbox.zoomLevel) {
+      lightbox.zoomLevel.textContent = "100%";
+    }
+  }
+
+  function fitLightboxImage() {
+    if (!isLightboxPhotoVisible()) {
+      return;
+    }
+    const rect = lightbox.media.getBoundingClientRect();
+    const padding = 28;
+    const maxWidth = Math.max(rect.width - padding * 2, 1);
+    const maxHeight = Math.max(rect.height - padding * 2, 1);
+    const imageWidth = lightbox.image.naturalWidth;
+    const imageHeight = lightbox.image.naturalHeight;
+    lightboxViewport.scale = Math.min(maxWidth / imageWidth, maxHeight / imageHeight, 1);
+    lightboxViewport.x = Math.round((rect.width - imageWidth * lightboxViewport.scale) / 2);
+    lightboxViewport.y = Math.round((rect.height - imageHeight * lightboxViewport.scale) / 2);
+    applyLightboxTransform();
+  }
+
+  function setLightboxActualSize() {
+    if (!isLightboxPhotoVisible()) {
+      return;
+    }
+    const rect = lightbox.media.getBoundingClientRect();
+    lightboxViewport.scale = 1;
+    lightboxViewport.x = Math.round((rect.width - lightbox.image.naturalWidth) / 2);
+    lightboxViewport.y = Math.round((rect.height - lightbox.image.naturalHeight) / 2);
+    applyLightboxTransform();
+  }
+
+  function zoomLightboxAt(clientX, clientY, factor) {
+    if (!isLightboxPhotoVisible()) {
+      return;
+    }
+    const rect = lightbox.media.getBoundingClientRect();
+    const pointerX = clientX - rect.left;
+    const pointerY = clientY - rect.top;
+    const imageX = (pointerX - lightboxViewport.x) / lightboxViewport.scale;
+    const imageY = (pointerY - lightboxViewport.y) / lightboxViewport.scale;
+    const nextScale = Math.min(16, Math.max(0.05, lightboxViewport.scale * factor));
+    lightboxViewport.scale = nextScale;
+    lightboxViewport.x = pointerX - imageX * lightboxViewport.scale;
+    lightboxViewport.y = pointerY - imageY * lightboxViewport.scale;
+    applyLightboxTransform();
+  }
+
+  function zoomLightboxAtCenter(factor) {
+    if (!lightbox.media) {
+      return;
+    }
+    const rect = lightbox.media.getBoundingClientRect();
+    zoomLightboxAt(rect.left + rect.width / 2, rect.top + rect.height / 2, factor);
+  }
+
+  function setLightboxPhotoControlsEnabled(isEnabled) {
+    [lightbox.fitImageBtn, lightbox.actualSizeBtn, lightbox.zoomOutBtn, lightbox.zoomInBtn].forEach((button) => {
+      if (button) {
+        button.disabled = !isEnabled;
+      }
+    });
+    if (lightbox.media) {
+      lightbox.media.classList.toggle("is-zoomable", isEnabled);
+      lightbox.media.classList.remove("is-dragging");
+    }
+    if (!isEnabled) {
+      resetLightboxTransform();
+    }
+  }
+
+  function setLightboxImageSource(path, altText) {
+    const src = cleanString(path || FALLBACK_IMAGE_PATH);
+    if (lightbox.openOriginalLink) {
+      lightbox.openOriginalLink.setAttribute("href", src);
+    }
+    lightbox.image.setAttribute("alt", altText || "Selected media");
+    if (cleanString(lightbox.image.getAttribute("src")) === src) {
+      if (!cleanString(lightbox.image.style.transform) && lightbox.image.complete) {
+        requestAnimationFrame(fitLightboxImage);
+      }
+      return;
+    }
+    fitLightboxOnImageLoad = true;
+    resetLightboxTransform();
+    lightbox.image.setAttribute("src", src);
+    if (lightbox.image.complete && lightbox.image.naturalWidth) {
+      requestAnimationFrame(() => {
+        if (!fitLightboxOnImageLoad) {
+          return;
+        }
+        fitLightboxOnImageLoad = false;
+        fitLightboxImage();
+      });
+    }
   }
 
   function taxonomyValues(key, fallbackValues = []) {
@@ -3484,9 +3971,13 @@
     }
     const effective = withOverride(baseMeta);
     const mediaId = cleanString(effective.media_id);
+    const overrideKey = photoOverrideKeyForMeta(effective);
     const mediaType = resolvedMediaType(effective.media_type, effective.path);
-    const hasOverride = Boolean(mediaId && state.photoOverrides[mediaId]);
-    const overrideTarget = cleanString((state.photoOverrides[mediaId] || {}).target_workstream);
+    const currentOverride = overrideKey ? state.photoOverrides[overrideKey] || {} : {};
+    const hasOverride = Boolean(overrideKey && state.photoOverrides[overrideKey]);
+    const isDeleted = isDeletedPhotoOverride(currentOverride);
+    const overrideTarget = cleanString(currentOverride.target_workstream);
+    const deletedAt = cleanString(currentOverride.deleted_at);
     lightbox.title.textContent = buildImageCaption(effective, "Media detail");
 
     if (mediaType === "video") {
@@ -3494,6 +3985,13 @@
       lightbox.video.classList.remove("is-hidden");
       lightbox.image.classList.add("is-hidden");
       lightbox.image.removeAttribute("src");
+      if (lightbox.openOriginalLink) {
+        lightbox.openOriginalLink.setAttribute("href", cleanString(effective.path || FALLBACK_IMAGE_PATH));
+      }
+      if (lightbox.zoomLevel) {
+        lightbox.zoomLevel.textContent = "Video";
+      }
+      setLightboxPhotoControlsEnabled(false);
     } else {
       if (cleanString(lightbox.video.getAttribute("src"))) {
         lightbox.video.pause();
@@ -3501,8 +3999,8 @@
       lightbox.video.removeAttribute("src");
       lightbox.video.classList.add("is-hidden");
       lightbox.image.classList.remove("is-hidden");
-      lightbox.image.setAttribute("src", effective.path || FALLBACK_IMAGE_PATH);
-      lightbox.image.setAttribute("alt", buildImageCaption(effective, "Media detail"));
+      setLightboxPhotoControlsEnabled(true);
+      setLightboxImageSource(effective.path || FALLBACK_IMAGE_PATH, buildImageCaption(effective, "Media detail"));
     }
 
     const capture = [effective.captured_date, effective.captured_time].filter(Boolean).join(" ");
@@ -3519,9 +4017,13 @@
       <dt>Confidence</dt><dd>${escapeHtml(formatToken(effective.confidence || "-"))}</dd>
       <dt>Tags</dt><dd>${escapeHtml(effective.tags || "-")}</dd>
       <dt>Override Target</dt><dd>${escapeHtml(formatToken(overrideTarget || "-"))}</dd>
+      <dt>Project Status</dt><dd>${escapeHtml(isDeleted ? `Deleted${deletedAt ? ` ${formatDateTime(deletedAt)}` : ""}` : "Active")}</dd>
     `;
 
     lightbox.toggleRecategorizeBtn.disabled = !mediaId;
+    lightbox.deletePhotoBtn.disabled = !overrideKey;
+    lightbox.deletePhotoBtn.textContent = isDeleted ? "Restore Deleted" : "Delete From Project";
+    lightbox.deletePhotoBtn.classList.toggle("danger", !isDeleted);
     lightbox.clearOverrideBtn.disabled = !hasOverride;
     lightbox.clearAllOverridesBtn.disabled = !Object.keys(state.photoOverrides).length;
     lightbox.exportOverridesBtn.disabled = !Object.keys(state.photoOverrides).length;
@@ -3530,7 +4032,15 @@
       state.recategorizeOpen = false;
       lightbox.form.classList.add("is-hidden");
       lightbox.toggleRecategorizeBtn.textContent = "Re-categorize";
-      setLightboxStatus("This media item has no media_id, so recategorization is disabled.", "warn");
+      lightbox.deletePhotoBtn.textContent = isDeleted ? "Restore Deleted" : "Delete From Project";
+      if (!lightbox.status.textContent) {
+        setLightboxStatus(
+          overrideKey
+            ? "This media item has no media_id, so recategorization is disabled; delete/restore is still available."
+            : "This media item has no media_id or file path, so recategorization and deletion are disabled.",
+          "warn"
+        );
+      }
       return;
     }
 
@@ -3569,9 +4079,16 @@
     }
     state.lightboxImageBase = null;
     state.recategorizeOpen = false;
+    fitLightboxOnImageLoad = false;
+    resetLightboxTransform();
     lightbox.root.classList.add("is-hidden");
     lightbox.root.setAttribute("aria-hidden", "true");
     document.body.classList.remove("lightbox-open");
+  }
+
+  function hasSavedPhotoOverrideFields(override) {
+    const systemFields = new Set(["media_id", "path", "file_name", "updated_at", "deleted", "deleted_at", "delete_reason", "action"]);
+    return Object.entries(override || {}).some(([key, value]) => !systemFields.has(key) && cleanString(value));
   }
 
   function saveCurrentPhotoOverride() {
@@ -3602,8 +4119,7 @@
       updated_at: new Date().toISOString(),
     };
 
-    const meaningful = Object.entries(override).some(([key, value]) => key !== "updated_at" && cleanString(value));
-    if (!meaningful) {
+    if (!hasSavedPhotoOverrideFields(override)) {
       delete state.photoOverrides[mediaId];
       setLightboxStatus("Override cleared (no override fields set).", "warn");
     } else {
@@ -3615,22 +4131,82 @@
     renderLightbox();
   }
 
+  function toggleCurrentPhotoDeletion() {
+    const baseMeta = state.lightboxImageBase;
+    if (!baseMeta) {
+      return;
+    }
+    const overrideKey = photoOverrideKeyForMeta(baseMeta);
+    if (!overrideKey) {
+      setLightboxStatus("Cannot delete: media item has no media_id or file path.", "bad");
+      return;
+    }
+
+    const existingOverride = state.photoOverrides[overrideKey] || {};
+    if (isDeletedPhotoOverride(existingOverride)) {
+      const restoredOverride = { ...existingOverride, updated_at: new Date().toISOString() };
+      delete restoredOverride.deleted;
+      delete restoredOverride.deleted_at;
+      delete restoredOverride.delete_reason;
+      if (cleanString(restoredOverride.action).toLowerCase() === "delete") {
+        delete restoredOverride.action;
+      }
+
+      if (hasSavedPhotoOverrideFields(restoredOverride)) {
+        state.photoOverrides[overrideKey] = restoredOverride;
+      } else {
+        delete state.photoOverrides[overrideKey];
+      }
+      persistPhotoOverrides();
+      state.recategorizeOpen = false;
+      setLightboxStatus("Media restored to the project view.", "good");
+      render();
+      renderLightbox();
+      return;
+    }
+
+    const caption = buildImageCaption(withOverride(baseMeta), "this media item");
+    const proceed = window.confirm(
+      `Delete "${caption}" from project evidence? It will be hidden from this dashboard and included in the override export for permanent cleanup.`
+    );
+    if (!proceed) {
+      return;
+    }
+
+    const now = new Date().toISOString();
+    state.photoOverrides[overrideKey] = {
+      ...existingOverride,
+      media_id: cleanString(baseMeta.media_id),
+      path: cleanString(baseMeta.path),
+      file_name: cleanString(baseMeta.file_name),
+      deleted: true,
+      delete_reason: "not_project_relevant",
+      deleted_at: now,
+      updated_at: now,
+    };
+    persistPhotoOverrides();
+    state.recategorizeOpen = false;
+    setLightboxStatus("Media deleted from the project view. Export overrides to persist this cleanup.", "good");
+    render();
+    renderLightbox();
+  }
+
   function clearCurrentPhotoOverride() {
     const baseMeta = state.lightboxImageBase;
     if (!baseMeta) {
       return;
     }
-    const mediaId = cleanString(baseMeta.media_id);
-    if (!mediaId) {
-      setLightboxStatus("No media_id on this media item, so there is no override to clear.", "warn");
+    const overrideKey = photoOverrideKeyForMeta(baseMeta);
+    if (!overrideKey) {
+      setLightboxStatus("No media_id or file path on this media item, so there is no override to clear.", "warn");
       return;
     }
-    if (!state.photoOverrides[mediaId]) {
+    if (!state.photoOverrides[overrideKey]) {
       setLightboxStatus("No override set for this media item.", "warn");
       return;
     }
 
-    delete state.photoOverrides[mediaId];
+    delete state.photoOverrides[overrideKey];
     persistPhotoOverrides();
     state.recategorizeOpen = false;
     setLightboxStatus("Override cleared.", "good");
@@ -3673,7 +4249,9 @@
 
     const headers = [
       "media_id",
+      "override_key",
       "file_name",
+      "path",
       "component_group",
       "specific_component",
       "stage",
@@ -3683,25 +4261,38 @@
       "notes",
       "target_workstream",
       "updated_at",
+      "deleted",
+      "deleted_at",
+      "delete_reason",
     ];
     const lines = [headers.join(",")];
 
     entries
       .sort((a, b) => a[0].localeCompare(b[0]))
-      .forEach(([mediaId, override]) => {
+      .forEach(([overrideKey, override]) => {
+        const overrideRow = override && typeof override === "object" ? override : {};
+        const isPathKey = overrideKey.startsWith("path:");
+        const mediaId = isPathKey ? cleanString(overrideRow.media_id) : overrideKey;
         const lookup = photoLookupById(mediaId) || {};
+        const path = cleanString(lookup.path || overrideRow.path || (isPathKey ? overrideKey.slice(5) : ""));
+        const fileName = cleanString(lookup.file_name || overrideRow.file_name || (path.split("/").pop() || ""));
         const row = [
           mediaId,
-          cleanString(lookup.file_name),
-          cleanString(override.component_group),
-          cleanString(override.specific_component),
-          cleanString(override.stage),
-          cleanString(override.observed_state),
-          cleanString(override.confidence),
-          cleanString(override.tags),
-          cleanString(override.notes),
-          cleanString(override.target_workstream),
-          cleanString(override.updated_at),
+          overrideKey,
+          fileName,
+          path,
+          cleanString(overrideRow.component_group),
+          cleanString(overrideRow.specific_component),
+          cleanString(overrideRow.stage),
+          cleanString(overrideRow.observed_state),
+          cleanString(overrideRow.confidence),
+          cleanString(overrideRow.tags),
+          cleanString(overrideRow.notes),
+          cleanString(overrideRow.target_workstream),
+          cleanString(overrideRow.updated_at),
+          isDeletedPhotoOverride(overrideRow) ? "true" : "",
+          cleanString(overrideRow.deleted_at),
+          cleanString(overrideRow.delete_reason),
         ];
         lines.push(row.map(csvEscape).join(","));
       });
@@ -3715,7 +4306,7 @@
     anchor.click();
     anchor.remove();
     URL.revokeObjectURL(url);
-    setLightboxStatus("Overrides CSV exported.", "good");
+    setLightboxStatus("Overrides CSV exported with recategorization and deletion fields.", "good");
   }
 
   function render() {
@@ -3727,6 +4318,10 @@
     }
     if (state.activeView === "parts") {
       renderParts();
+      return;
+    }
+    if (state.activeView === "tasks") {
+      renderCaptureTasks();
       return;
     }
     if (state.activeView === "steps") {

@@ -24,6 +24,7 @@ REPLACEMENT_PIPE_ORDER_RELEASE_SPECS_PATH = MANUAL_DIR / "replacement_pipe_order
 REPLACEMENT_PIPE_RELEASE_ACTIONS_PATH = MANUAL_DIR / "replacement_pipe_release_actions.csv"
 REPLACEMENT_PIPE_CIRCUIT_CLOSURE_PATH = MANUAL_DIR / "replacement_pipe_circuit_closure_sheet.csv"
 CHASSIS_RUBBER_REQUIREMENTS_PATH = MANUAL_DIR / "chassis_rubber_requirements.csv"
+RUBBER_HOSE_COMPONENT_AUDIT_PATH = MANUAL_DIR / "rubber_hose_component_audit.csv"
 RUBBER_ORDERING_SPECS_PATH = MANUAL_DIR / "rubber_ordering_specs.csv"
 BODY_MOUNT_ORDER_RELEASE_SPECS_PATH = MANUAL_DIR / "body_mount_order_release_specs.csv"
 BODY_MOUNT_RELEASE_ACTIONS_PATH = MANUAL_DIR / "body_mount_release_actions.csv"
@@ -2539,6 +2540,497 @@ def body_mount_station_closure_payload(rows: list[dict[str, str]]) -> list[dict[
         }
         for row in rows
     ]
+
+
+PHOTO_TASK_MARKERS: tuple[str, ...] = (
+    "capture",
+    "close photo",
+    "photo",
+    "photograph",
+    "picture",
+    "video",
+)
+MEASUREMENT_TASK_MARKERS: tuple[str, ...] = (
+    "caliper",
+    "dimension",
+    "free length",
+    "height",
+    "hole",
+    "id",
+    "length",
+    "measure",
+    "measurement",
+    "od",
+    "pitch",
+    "route length",
+    "thread",
+    "width",
+)
+DECISION_TASK_MARKERS: tuple[str, ...] = (
+    "confirm",
+    "decide",
+    "identify",
+    "lock",
+    "reconcile",
+    "verify",
+)
+INSPECTION_TASK_MARKERS: tuple[str, ...] = (
+    "audit",
+    "check",
+    "inspect",
+    "test",
+)
+CAPTURE_TASK_COMPLETE_MARKERS: tuple[str, ...] = (
+    "complete",
+    "closed",
+    "done",
+    "released",
+    "not_required",
+)
+CAPTURE_COMPONENT_JOB_KEYWORDS: tuple[str, ...] = (
+    "bench-test",
+    "capture",
+    "close-up",
+    "condition photo",
+    "confirm",
+    "identify",
+    "inspect",
+    "label",
+    "measure",
+    "photograph",
+    "reconcile",
+    "return condition",
+    "seller evidence",
+    "vendor",
+)
+
+
+def task_text_blob(*values: Any) -> str:
+    return " ".join(norm(value) for value in values if clean(value))
+
+
+def task_has_marker(blob: str, markers: tuple[str, ...]) -> bool:
+    for marker in markers:
+        marker_key = norm(marker)
+        if not marker_key:
+            continue
+        if marker_key in {"id", "od"}:
+            if re.search(rf"(?<![a-z0-9]){re.escape(marker_key)}(?![a-z0-9])", blob):
+                return True
+        elif marker_key in blob:
+            return True
+    return False
+
+
+def capture_task_type(*values: Any) -> str:
+    blob = task_text_blob(*values)
+    if task_has_marker(blob, ("trace", "template")):
+        return "template"
+
+    has_photo = task_has_marker(blob, PHOTO_TASK_MARKERS)
+    has_measurement = task_has_marker(blob, MEASUREMENT_TASK_MARKERS)
+    if has_photo and has_measurement:
+        return "photo_measurement"
+    if has_photo:
+        return "photo"
+    if has_measurement:
+        return "measurement"
+    if task_has_marker(blob, DECISION_TASK_MARKERS):
+        return "decision"
+    if task_has_marker(blob, INSPECTION_TASK_MARKERS):
+        return "inspection"
+    return "data"
+
+
+def capture_task_priority(explicit_priority: str, *values: Any) -> str:
+    priority = clean(explicit_priority).upper()
+    if re.fullmatch(r"P[0-9]", priority):
+        return priority
+
+    blob = task_text_blob(*values)
+    if any(token in blob for token in ("brake", "hydraulic", "safety", "before payment", "release_hold", "capture_pending")):
+        return "P0"
+    if any(token in blob for token in ("defer", "deferred", "later", "glass_stage", "body_fit_hold", "layout_hold", "conditional_only")):
+        return "P2"
+    return "P1"
+
+
+def capture_task_timing(priority: str, *values: Any) -> str:
+    blob = task_text_blob(*values)
+    if clean(priority).upper() in {"P2", "P3"} or any(
+        token in blob for token in ("defer", "deferred", "later", "conditional_only", "if fitted", "if missing")
+    ):
+        return "later"
+    return "now"
+
+
+def status_is_complete(*values: Any) -> bool:
+    blob = task_text_blob(*values)
+    return bool(blob) and any(marker in blob for marker in CAPTURE_TASK_COMPLETE_MARKERS)
+
+
+def evidence_images_from_refs(
+    refs: str,
+    rows_by_id: dict[str, dict[str, str]],
+    *,
+    max_images: int = 6,
+) -> list[dict[str, Any]]:
+    images: list[dict[str, Any]] = []
+    for media_id in split_pipe(refs):
+        if media_id in rows_by_id:
+            images.append(image_payload(rows_by_id[media_id], []))
+        if len(images) >= max_images:
+            break
+    return dedupe_payload_images(images)
+
+
+def source_link(source_path: str, source_label: str) -> list[dict[str, str]]:
+    link = file_link(source_path, source_label)
+    return [link] if link else []
+
+
+def capture_task_payload(
+    *,
+    task_id: str,
+    title: str,
+    workstream: str,
+    source_label: str,
+    source_path: str,
+    source_row_id: str,
+    status: str,
+    action: str,
+    priority: str = "",
+    location: str = "",
+    data_needed: str = "",
+    blocks: str = "",
+    record_result_in: str = "",
+    notes: str = "",
+    evidence_ref: str = "",
+    evidence_images: list[dict[str, Any]] | None = None,
+) -> dict[str, Any]:
+    task_type = capture_task_type(title, status, action, data_needed, blocks, notes)
+    resolved_priority = capture_task_priority(priority, status, title, action, data_needed, blocks, notes)
+    return {
+        "task_id": clean(task_id),
+        "title": clean(title),
+        "workstream": clean(workstream),
+        "task_type": task_type,
+        "priority": resolved_priority,
+        "timing": capture_task_timing(resolved_priority, status, action, data_needed, notes),
+        "status": clean(status) or "open",
+        "location": clean(location),
+        "action": clean(action),
+        "data_needed": clean(data_needed),
+        "blocks": clean(blocks),
+        "record_result_in": clean(record_result_in),
+        "source_label": clean(source_label),
+        "source_path": clean(source_path),
+        "source_row_id": clean(source_row_id),
+        "notes": clean(notes),
+        "evidence_ref": clean(evidence_ref),
+        "evidence_images": evidence_images or [],
+        "links": source_link(source_path, source_label),
+    }
+
+
+def workstream_for_rubber_hose_audit(row: dict[str, str]) -> str:
+    family = norm(row.get("component_family"))
+    open_items = norm(row.get("open_item_ids"))
+    text = f"{family} {open_items}"
+    if "brake" in text:
+        return "brake_system"
+    if any(token in text for token in ("rp-", "rpo-", "cool", "fuel", "vacuum", "breather", "clutch", "line_support", "oil_hose")):
+        return "replacement_pipes"
+    if any(token in text for token in ("cr-", "bm-", "chassis_mount", "mount")):
+        return "chassis_rubbers"
+    if family in {"suspension"}:
+        return "suspension_upgrade"
+    if family in {"interior_controls"}:
+        return "interior_controls"
+    if family in {"body_weatherstrip", "body_sealing", "hvac"}:
+        return "interior_weatherproofing"
+    return "mechanical_baseline"
+
+
+def build_capture_tasks(
+    *,
+    photo_rows: list[dict[str, str]],
+    replacement_pipe_photo_intake_rows: list[dict[str, str]],
+    replacement_pipe_release_action_rows: list[dict[str, str]],
+    replacement_pipe_circuit_closure_rows: list[dict[str, str]],
+    body_mount_release_action_rows: list[dict[str, str]],
+    body_mount_station_closure_rows: list[dict[str, str]],
+    brake_system_requirement_rows: list[dict[str, str]],
+    rubber_hose_component_audit_rows: list[dict[str, str]],
+    component_rows: list[dict[str, str]],
+) -> dict[str, Any]:
+    rows_by_id = photo_rows_by_media_id(photo_rows)
+    tasks: list[dict[str, Any]] = []
+
+    for row in replacement_pipe_photo_intake_rows:
+        status = clean(row.get("photo_status"))
+        if status_is_complete(status):
+            continue
+        shot_id = clean(row.get("shot_id"))
+        tasks.append(
+            capture_task_payload(
+                task_id=f"replacement_pipe_photo_intake:{shot_id}",
+                title=clean(row.get("exact_name")) or shot_id,
+                workstream="replacement_pipes",
+                source_label="Replacement Pipe Photo Intake",
+                source_path="data/manual/replacement_pipe_photo_intake.csv",
+                source_row_id=shot_id,
+                status=status or "capture_pending",
+                action=clean(row.get("shot_required")),
+                location=clean(row.get("vehicle_placement")),
+                data_needed=", ".join(split_pipe(row.get("measurement_targets_mm", ""))),
+                blocks=clean(row.get("order_lines")),
+                notes=clean(row.get("placement_notes")) or clean(row.get("release_use")),
+                evidence_ref=clean(row.get("media_ids")),
+                evidence_images=evidence_images_from_refs(row.get("media_ids", ""), rows_by_id),
+            )
+        )
+
+    for row in replacement_pipe_release_action_rows:
+        status = clean(row.get("status"))
+        if status_is_complete(status):
+            continue
+        action_id = clean(row.get("action_id"))
+        tasks.append(
+            capture_task_payload(
+                task_id=f"replacement_pipe_release_action:{action_id}",
+                title=action_id,
+                workstream="replacement_pipes",
+                source_label="Replacement Pipe Release Actions",
+                source_path="data/manual/replacement_pipe_release_actions.csv",
+                source_row_id=action_id,
+                priority=clean(row.get("priority")),
+                status=status or "open",
+                action=clean(row.get("action")),
+                blocks=clean(row.get("blocks_order_lines")),
+                record_result_in=clean(row.get("record_result_in")),
+                notes=clean(row.get("why_it_matters")),
+            )
+        )
+
+    for row in replacement_pipe_circuit_closure_rows:
+        release_status = clean(row.get("release_status"))
+        photo_status = clean(row.get("photo_status"))
+        if status_is_complete(release_status, photo_status):
+            continue
+        circuit_id = clean(row.get("circuit_id"))
+        tasks.append(
+            capture_task_payload(
+                task_id=f"replacement_pipe_circuit_closure:{circuit_id}",
+                title=clean(row.get("pipe_or_line")) or circuit_id,
+                workstream="replacement_pipes",
+                source_label="Replacement Pipe Circuit Closure",
+                source_path="data/manual/replacement_pipe_circuit_closure_sheet.csv",
+                source_row_id=circuit_id,
+                status=" / ".join(value for value in (release_status, photo_status) if value) or "open",
+                action=clean(row.get("action_required")),
+                location=clean(row.get("vehicle_location")),
+                data_needed="; ".join(
+                    value
+                    for value in (
+                        clean(row.get("barb_or_fitting_a")),
+                        clean(row.get("barb_or_fitting_b")),
+                        clean(row.get("route_length_mm")),
+                        clean(row.get("tube_or_hose_od_id")),
+                        clean(row.get("thread_or_flare")),
+                        clean(row.get("bend_template_status")),
+                        clean(row.get("clip_support_status")),
+                    )
+                    if value and value != "not_applicable"
+                ),
+                blocks=clean(row.get("order_lines")),
+                notes=clean(row.get("notes")),
+            )
+        )
+
+    for row in body_mount_release_action_rows:
+        status = clean(row.get("status"))
+        if status_is_complete(status):
+            continue
+        action_id = clean(row.get("action_id"))
+        tasks.append(
+            capture_task_payload(
+                task_id=f"body_mount_release_action:{action_id}",
+                title=action_id,
+                workstream="chassis_rubbers",
+                source_label="Body Mount Release Actions",
+                source_path="data/manual/body_mount_release_actions.csv",
+                source_row_id=action_id,
+                priority=clean(row.get("priority")),
+                status=status or "open",
+                action=clean(row.get("action")),
+                blocks=clean(row.get("blocks_order_lines")),
+                record_result_in=clean(row.get("record_result_in")),
+                notes=clean(row.get("why_it_matters")),
+            )
+        )
+
+    for row in body_mount_station_closure_rows:
+        release_status = clean(row.get("release_status"))
+        if status_is_complete(release_status):
+            continue
+        station_id = clean(row.get("station_id"))
+        tasks.append(
+            capture_task_payload(
+                task_id=f"body_mount_station_closure:{station_id}",
+                title=clean(row.get("vehicle_position")) or station_id,
+                workstream="chassis_rubbers",
+                source_label="Body Mount Station Closure",
+                source_path="data/manual/body_mount_station_closure_sheet.csv",
+                source_row_id=station_id,
+                status=release_status or "open",
+                action=clean(row.get("action_required")),
+                location=clean(row.get("working_position_type")),
+                data_needed="; ".join(
+                    value
+                    for value in (
+                        clean(row.get("old_parts_present")),
+                        clean(row.get("shim_or_spacer_thickness_mm")),
+                        clean(row.get("sleeve_id_mm")),
+                        clean(row.get("sleeve_od_mm")),
+                        clean(row.get("sleeve_length_mm")),
+                        clean(row.get("bolt_pitch")),
+                        clean(row.get("bolt_under_head_length_mm")),
+                        clean(row.get("captive_nut_depth_mm")),
+                    )
+                    if value and value != "TBD"
+                ),
+                blocks=clean(row.get("action_required")),
+                notes=clean(row.get("notes")),
+            )
+        )
+
+    for row in brake_system_requirement_rows:
+        spec_status = clean(row.get("spec_status"))
+        if status_is_complete(spec_status) or not spec_status.startswith("needs_"):
+            continue
+        requirement_id = clean(row.get("requirement_id"))
+        tasks.append(
+            capture_task_payload(
+                task_id=f"brake_requirement:{requirement_id}",
+                title=clean(row.get("requirement_name")) or requirement_id,
+                workstream="brake_system",
+                source_label="Brake Requirements",
+                source_path="data/manual/brake_system_requirements.csv",
+                source_row_id=requirement_id,
+                status=spec_status,
+                action=clean(row.get("current_action")),
+                location=clean(row.get("vehicle_location")),
+                data_needed=clean(row.get("critical_measurements")),
+                blocks=clean(row.get("requirement_id")),
+                notes=clean(row.get("notes")),
+                evidence_ref=clean(row.get("photo_evidence")),
+                evidence_images=evidence_images_from_refs(row.get("photo_evidence", ""), rows_by_id),
+            )
+        )
+
+    for row in rubber_hose_component_audit_rows:
+        dimension_status = clean(row.get("exact_dimensions_status"))
+        readiness = clean(row.get("direct_to_acquire_readiness"))
+        if status_is_complete(dimension_status, readiness):
+            continue
+        audit_id = clean(row.get("audit_id"))
+        tasks.append(
+            capture_task_payload(
+                task_id=f"rubber_hose_audit:{audit_id}",
+                title=clean(row.get("identified_rubber_component")) or audit_id,
+                workstream=workstream_for_rubber_hose_audit(row),
+                source_label="Rubber Hose Component Audit",
+                source_path="data/manual/rubber_hose_component_audit.csv",
+                source_row_id=audit_id,
+                status=" / ".join(value for value in (dimension_status, readiness) if value) or "open",
+                action=clean(row.get("next_action")),
+                location=clean(row.get("vehicle_area")),
+                data_needed=clean(row.get("measurement_gate")) or clean(row.get("current_dimension_or_quantity_basis")),
+                blocks=clean(row.get("open_item_ids")),
+                notes=clean(row.get("notes")),
+                evidence_ref=clean(row.get("visual_evidence")),
+                evidence_images=evidence_images_from_refs(row.get("visual_evidence", ""), rows_by_id),
+            )
+        )
+
+    for row in component_rows:
+        status = clean(row.get("current_status"))
+        if status_is_complete(status):
+            continue
+        text = task_text_blob(row.get("planned_action"), row.get("notes"), row.get("evidence_ref"))
+        if not any(keyword in text for keyword in CAPTURE_COMPONENT_JOB_KEYWORDS):
+            continue
+        job_id = clean(row.get("component_job_id"))
+        tasks.append(
+            capture_task_payload(
+                task_id=f"component_job:{job_id}",
+                title=clean(row.get("component_job_id")) or clean(row.get("component_group")),
+                workstream=clean(row.get("target_workstream")),
+                source_label="Component Jobs",
+                source_path="data/manual/component_jobs.csv",
+                source_row_id=job_id,
+                status=status or "open",
+                action=clean(row.get("planned_action")),
+                location=clean(row.get("storage_or_vendor")),
+                data_needed=clean(row.get("notes")),
+                evidence_ref=clean(row.get("evidence_ref")),
+                evidence_images=evidence_images_from_refs(row.get("evidence_ref", ""), rows_by_id),
+            )
+        )
+
+    deduped_tasks: list[dict[str, Any]] = []
+    seen_task_ids: set[str] = set()
+    for task in tasks:
+        task_id = clean(task.get("task_id"))
+        if not task_id or task_id in seen_task_ids:
+            continue
+        seen_task_ids.add(task_id)
+        deduped_tasks.append(task)
+
+    priority_rank = {"P0": 0, "P1": 1, "P2": 2, "P3": 3}
+    deduped_tasks.sort(
+        key=lambda task: (
+            priority_rank.get(clean(task.get("priority")).upper(), 9),
+            clean(task.get("timing")),
+            clean(task.get("workstream")),
+            clean(task.get("task_type")),
+            clean(task.get("title")),
+        )
+    )
+
+    counts_by_workstream = Counter(clean(task.get("workstream")) or "unassigned" for task in deduped_tasks)
+    counts_by_task_type = Counter(clean(task.get("task_type")) or "data" for task in deduped_tasks)
+    counts_by_priority = Counter(clean(task.get("priority")) or "P1" for task in deduped_tasks)
+    return {
+        "summary": {
+            "total_tasks": len(deduped_tasks),
+            "now_tasks": sum(1 for task in deduped_tasks if clean(task.get("timing")) == "now"),
+            "later_tasks": sum(1 for task in deduped_tasks if clean(task.get("timing")) == "later"),
+            "p0_tasks": counts_by_priority.get("P0", 0),
+            "photo_tasks": sum(
+                1 for task in deduped_tasks if "photo" in clean(task.get("task_type"))
+            ),
+            "measurement_tasks": sum(
+                1
+                for task in deduped_tasks
+                if clean(task.get("task_type")) in {"measurement", "photo_measurement", "template"}
+            ),
+        },
+        "counts_by_workstream": [
+            {"workstream": workstream, "count": count}
+            for workstream, count in sorted(counts_by_workstream.items(), key=lambda item: (-item[1], item[0]))
+        ],
+        "counts_by_task_type": [
+            {"task_type": task_type, "count": count}
+            for task_type, count in sorted(counts_by_task_type.items(), key=lambda item: (-item[1], item[0]))
+        ],
+        "counts_by_priority": [
+            {"priority": priority, "count": count}
+            for priority, count in sorted(counts_by_priority.items())
+        ],
+        "tasks": deduped_tasks,
+    }
 
 
 def build_procurement_evidence_images(photo_rows: list[dict[str, str]], max_images: int = 64) -> list[dict[str, Any]]:
@@ -5608,6 +6100,10 @@ def choose_supply_reference_image(
         return ref("leaf_shackle", f"{item} · leaf spring/shackle reference image", "shackle")
     if has("bump", "stop"):
         return ref("bump_stop", f"{item} · bump stop reference image", "bump", "stop")
+    if has("engine", "mount"):
+        return ref("engine_mount", f"{item} · engine mount reference image", "engine", "mount")
+    if has_any("gearbox / transfer case mounts", "transmission mount", "powertrain mount"):
+        return ref("engine_mount", f"{item} · powertrain mount reference image", "mount")
     if has_any("eps", "electrical power steering") or has("power", "steering") or has("vitz", "column"):
         return ref("eps_column", f"{item} · EPS column reference image", "eps")
 
@@ -5683,10 +6179,6 @@ def choose_supply_reference_image(
         return ref("fuel_hose", f"{item} · fuel hose/clamp reference image", "fuel", "hose")
     if has_any("fuel tank", "sender seal", "tank straps"):
         return ref("fuel_tank_parts", f"{item} · fuel tank service reference image", "fuel", "tank")
-    if has("engine", "mount"):
-        return ref("engine_mount", f"{item} · engine mount reference image", "engine", "mount")
-    if has_any("gearbox / transfer case mounts", "transmission mount", "powertrain mount"):
-        return ref("engine_mount", f"{item} · powertrain mount reference image", "mount")
     if has_any("clutch master", "clutch slave", "clutch cylinder"):
         return ref("brake_master", f"{item} · clutch/brake cylinder reference image", "clutch")
     if has("clutch") and has_any("hose", "line"):
@@ -6340,6 +6832,7 @@ def build_dashboard_data() -> dict[str, Any]:
     replacement_pipe_release_action_rows = load_csv_optional(REPLACEMENT_PIPE_RELEASE_ACTIONS_PATH)
     replacement_pipe_circuit_closure_rows = load_csv_optional(REPLACEMENT_PIPE_CIRCUIT_CLOSURE_PATH)
     chassis_rubber_requirement_rows = load_csv_optional(CHASSIS_RUBBER_REQUIREMENTS_PATH)
+    rubber_hose_component_audit_rows = load_csv_optional(RUBBER_HOSE_COMPONENT_AUDIT_PATH)
     body_mount_order_release_rows = load_csv_optional(BODY_MOUNT_ORDER_RELEASE_SPECS_PATH)
     body_mount_release_action_rows = load_csv_optional(BODY_MOUNT_RELEASE_ACTIONS_PATH)
     body_mount_station_closure_rows = load_csv_optional(BODY_MOUNT_STATION_CLOSURE_PATH)
@@ -6905,6 +7398,17 @@ def build_dashboard_data() -> dict[str, Any]:
         key=lambda value: (value["timestamp"], value["media_id"]),
         reverse=True,
     )[:24]
+    capture_tasks = build_capture_tasks(
+        photo_rows=photo_rows,
+        replacement_pipe_photo_intake_rows=replacement_pipe_photo_intake_rows,
+        replacement_pipe_release_action_rows=replacement_pipe_release_action_rows,
+        replacement_pipe_circuit_closure_rows=replacement_pipe_circuit_closure_rows,
+        body_mount_release_action_rows=body_mount_release_action_rows,
+        body_mount_station_closure_rows=body_mount_station_closure_rows,
+        brake_system_requirement_rows=brake_system_requirement_rows,
+        rubber_hose_component_audit_rows=rubber_hose_component_audit_rows,
+        component_rows=component_rows,
+    )
 
     data = {
         "generated_at": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
@@ -6916,6 +7420,7 @@ def build_dashboard_data() -> dict[str, Any]:
             "brake_system_requirements": "data/manual/brake_system_requirements.csv",
             "fabrication_handoff_requirements": "data/manual/fabrication_handoff_requirements.csv",
             "chassis_rubber_requirements": "data/manual/chassis_rubber_requirements.csv",
+            "rubber_hose_component_audit": "data/manual/rubber_hose_component_audit.csv",
             "rubber_ordering_specs": "data/manual/rubber_ordering_specs.csv",
             "body_mount_order_release_specs": "data/manual/body_mount_order_release_specs.csv",
             "body_mount_release_actions": "data/manual/body_mount_release_actions.csv",
@@ -6947,6 +7452,8 @@ def build_dashboard_data() -> dict[str, Any]:
             "parts_open_rows": len(open_rows_for_table),
             "parts_ordered_pending_delivery": len(ordered_pending_table),
             "urgent_part_actions": len(urgent_actions),
+            "capture_data_tasks": capture_tasks["summary"]["total_tasks"],
+            "capture_data_tasks_now": capture_tasks["summary"]["now_tasks"],
             "supply_rows_tracked": len(supplies_inventory["all_rows"]),
             "selling_site_images_loaded": sum(1 for row in selling_site_manifest_rows if clean(row.get("local_path"))),
             "whatsapp_j40_selected_chats": len(whatsapp_selected_chats),
@@ -6975,6 +7482,7 @@ def build_dashboard_data() -> dict[str, Any]:
             "workbook_source_links": workbook_source_links,
             "market_specs": market_specs_for_workstream("eps_vitz_upgrade"),
         },
+        "capture_tasks": capture_tasks,
         "supplies": supplies_inventory,
         "other_builds": other_builds_reference,
         "whatsapp_j40": {

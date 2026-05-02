@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-02T18:25:33+05:00",
+  "generated_at": "2026-05-03T04:39:39+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -8,6 +8,7 @@ window.J40_DASHBOARD_DATA = {
     "brake_system_requirements": "data/manual/brake_system_requirements.csv",
     "fabrication_handoff_requirements": "data/manual/fabrication_handoff_requirements.csv",
     "chassis_rubber_requirements": "data/manual/chassis_rubber_requirements.csv",
+    "rubber_hose_component_audit": "data/manual/rubber_hose_component_audit.csv",
     "rubber_ordering_specs": "data/manual/rubber_ordering_specs.csv",
     "body_mount_order_release_specs": "data/manual/body_mount_order_release_specs.csv",
     "body_mount_release_actions": "data/manual/body_mount_release_actions.csv",
@@ -38,8 +39,10 @@ window.J40_DASHBOARD_DATA = {
     "workstream_evidence_images": 572,
     "parts_open_rows": 41,
     "parts_ordered_pending_delivery": 10,
-    "urgent_part_actions": 12,
-    "supply_rows_tracked": 236,
+    "urgent_part_actions": 13,
+    "capture_data_tasks": 139,
+    "capture_data_tasks_now": 128,
+    "supply_rows_tracked": 232,
     "selling_site_images_loaded": 83,
     "whatsapp_j40_selected_chats": 7,
     "whatsapp_j40_media_items": 165,
@@ -2760,7 +2763,7 @@ window.J40_DASHBOARD_DATA = {
           "objective": "Close floor/rust repairs and welding scope before sealing products.",
           "blocker_summary": "0 body material rows still need buy execution.",
           "gate_to_close": "Rust map signed off and repaired zones primed.",
-          "key_procurement_actions": "Confirm price/order for primer + bedliner + metal protection stack.",
+          "key_procurement_actions": "Track primer/prep/seam-sealer/cavity-wax deliveries; use on-hand Raptor bedliner; no generic metal-protection or bed-lining duplicate buy.",
           "evidence_signal": "rust_assessment_photos=51, stripdown_photos=110"
         },
         {
@@ -2871,7 +2874,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP01 \u00b7 Body Floor Rust Closure",
           "status": "in_progress",
-          "detail": "Close floor/rust repairs and welding scope before sealing products. Blocker: 0 body material rows still need buy execution. Procurement: Confirm price/order for primer + bedliner + metal protection stack. Gate: Rust map signed off and repaired zones primed."
+          "detail": "Close floor/rust repairs and welding scope before sealing products. Blocker: 0 body material rows still need buy execution. Procurement: Track primer/prep/seam-sealer/cavity-wax deliveries; use on-hand Raptor bedliner; no generic metal-protection or bed-lining duplicate buy. Gate: Rust map signed off and repaired zones primed."
         },
         {
           "label": "WP02 \u00b7 Panel + Seals Refurbishment Returns",
@@ -12437,13 +12440,13 @@ window.J40_DASHBOARD_DATA = {
           "qty_required": "2",
           "qty_to_order": "2",
           "spec_status": "spec_ready",
-          "order_release_state": "spec_ready_inspect_then_buy",
-          "exact_order_spec": "Order 12361-87311 engine mount rubber, quantity 2, only after confirming 2H diesel bracket pattern and sample match.",
+          "order_release_state": "release_hold_no_engine_lift_baseline",
+          "exact_order_spec": "Do not order now. If mounts fail in-place inspection or another approved job already supports/lifts the engine, order 12361-87311 engine mount rubber, quantity 2, only after confirming 2H diesel bracket pattern and sample match.",
           "material_spec": "Oil-resistant bonded rubber-metal engine mount",
-          "source_basis": "WhatsApp quote candidate 2026-04-17",
-          "user_action_required": "Inspect current mounts under load; confirm stud/thread pattern and height.",
-          "do_not_order_if": "Do not order if installed engine/brackets differ from 2H diesel assumption.",
-          "notes": "Included here because the quote list grouped it with rubber order lines."
+          "source_basis": "WhatsApp quote candidate 2026-04-17; user no-engine-lift baseline correction 2026-05-03",
+          "user_action_required": "Inspect current mounts in place after degreasing and under load; photograph cracks, separation, sag, oil-soak failure, stud/thread pattern, and height before any purchase.",
+          "do_not_order_if": "Do not order if mounts are serviceable, if the installed engine/brackets differ from the 2H diesel assumption, or if replacement would require buying an engine lift solely for this item.",
+          "notes": "Current plan keeps the engine installed. EPS column-assist conversion does not require engine removal."
         },
         {
           "order_line_id": "BM-PWR-002",
@@ -12912,19 +12915,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "market_specs": [],
-      "linked_packages": [
-        {
-          "work_package_id": "WP03F",
-          "title": "Fabrication Drawing Handoff",
-          "lane": "fabrication",
-          "current_state": "in_progress",
-          "objective": "Send and track the rubber recreation and electrical mount fabrication packages.",
-          "blocker_summary": "Rubber final batch still has measurement holds; electrical combined-module route is reference/provisional.",
-          "gate_to_close": "Fabricator has the current package files and first articles are accepted before batch production or loom/body closeout.",
-          "key_procurement_actions": "Use the Fabrication workstream package links; do not fabricate superseded electrical routes unless deliberately reopened.",
-          "evidence_signal": "4 fabrication package rows with PDF/DXF/SVG outputs"
-        }
-      ],
+      "linked_packages": [],
       "component_jobs": [
         {
           "component_job_id": "tub_refit_rubber_hardware_shim_stack",
@@ -12963,11 +12954,6 @@ window.J40_DASHBOARD_DATA = {
           "detail": "Trial-fit the tub mount stack before final body fastening."
         },
         {
-          "label": "WP03F \u00b7 Fabrication Drawing Handoff",
-          "status": "in_progress",
-          "detail": "Send and track the rubber recreation and electrical mount fabrication packages. Blocker: Rubber final batch still has measurement holds; electrical combined-module route is reference/provisional. Procurement: Use the Fabrication workstream package links; do not fabricate superseded electrical routes unless deliberately reopened. Gate: Fabricator has the current package files and first articles are accepted before batch production or loom/body closeout."
-        },
-        {
           "label": "Issue checks",
           "status": "completed",
           "detail": "No issue-specific checks are recorded for this workstream."
@@ -12994,8 +12980,8 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Close workstream exit gate",
-          "status": "in_progress",
-          "detail": "Linked package execution is active. Exit gate: Main tub and nose-support rubber system is sample-locked, sourced or fabrication-ready, and ready for dry trial fit"
+          "status": "queued",
+          "detail": "No linked package rows found. Exit gate: Main tub and nose-support rubber system is sample-locked, sourced or fabrication-ready, and ready for dry trial fit"
         }
       ],
       "involved_parts": [
@@ -16431,21 +16417,10 @@ window.J40_DASHBOARD_DATA = {
           "lane": "electrical",
           "current_state": "queued",
           "objective": "Complete baseline harness termination, grounding, and fuse/relay validation.",
-          "blocker_summary": "1 electrical buy rows still open; 2 rows should be stock-verified before re-buy.",
+          "blocker_summary": "2 electrical buy rows still open; 2 rows should be stock-verified before re-buy.",
           "gate_to_close": "Start/charge/lights/horn/wipers/gauges baseline passes functional checks.",
           "key_procurement_actions": "Order selected harness/sleeving path; verify on-hand connectors/relays before duplicate buys.",
           "evidence_signal": "electrical_rework_photos=18"
-        },
-        {
-          "work_package_id": "WP03F",
-          "title": "Fabrication Drawing Handoff",
-          "lane": "fabrication",
-          "current_state": "in_progress",
-          "objective": "Send and track the rubber recreation and electrical mount fabrication packages.",
-          "blocker_summary": "Rubber final batch still has measurement holds; electrical combined-module route is reference/provisional.",
-          "gate_to_close": "Fabricator has the current package files and first articles are accepted before batch production or loom/body closeout.",
-          "key_procurement_actions": "Use the Fabrication workstream package links; do not fabricate superseded electrical routes unless deliberately reopened.",
-          "evidence_signal": "4 fabrication package rows with PDF/DXF/SVG outputs"
         }
       ],
       "component_jobs": [
@@ -16493,12 +16468,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP03 \u00b7 Electrical Baseline Finalization",
           "status": "queued",
-          "detail": "Complete baseline harness termination, grounding, and fuse/relay validation. Blocker: 1 electrical buy rows still open; 2 rows should be stock-verified before re-buy. Procurement: Order selected harness/sleeving path; verify on-hand connectors/relays before duplicate buys. Gate: Start/charge/lights/horn/wipers/gauges baseline passes functional checks."
-        },
-        {
-          "label": "WP03F \u00b7 Fabrication Drawing Handoff",
-          "status": "in_progress",
-          "detail": "Send and track the rubber recreation and electrical mount fabrication packages. Blocker: Rubber final batch still has measurement holds; electrical combined-module route is reference/provisional. Procurement: Use the Fabrication workstream package links; do not fabricate superseded electrical routes unless deliberately reopened. Gate: Fabricator has the current package files and first articles are accepted before batch production or loom/body closeout."
+          "detail": "Complete baseline harness termination, grounding, and fuse/relay validation. Blocker: 2 electrical buy rows still open; 2 rows should be stock-verified before re-buy. Procurement: Order selected harness/sleeving path; verify on-hand connectors/relays before duplicate buys. Gate: Start/charge/lights/horn/wipers/gauges baseline passes functional checks."
         },
         {
           "label": "Issue checks",
@@ -16513,7 +16483,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
           "status": "in_progress",
-          "detail": "2 part rows still require price confirmation/order placement."
+          "detail": "3 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
@@ -16527,8 +16497,8 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Close workstream exit gate",
-          "status": "in_progress",
-          "detail": "Linked package execution is active. Exit gate: Base electrical system is clean documented and functional"
+          "status": "queued",
+          "detail": "Linked package execution is queued. Exit gate: Base electrical system is clean documented and functional"
         }
       ],
       "involved_parts": [
@@ -16667,6 +16637,41 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "rubber_grommets",
             "matched_tokens": [
               "grommet"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "entry_id": "part_cabin_compact_fuse_boxes",
+          "workstream": "electrical_reset",
+          "item": "Compact covered cabin blade fuse boxes - likely 3 identical units",
+          "status": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Bilal Ganj / compact automotive electrical supplier",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_cabin_compact_fuse_boxes",
+          "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought",
+          "notes": "User correction 2026-05-03: cabin/interior car fuse boxes have not been ordered. Relay block row 55 remains received/as specified, but the generic Portable 12-Way universal fuse box row is not purchased stock. Buy likely 3 compact covered blade-fuse boxes for the car/cabin circuits; use compact OEM-style covered ATO/ATC blocks with secure lids and strong terminals, same model if possible. No relay block, no large open universal block, and do not count the Portable 12-Way wording as bought evidence. Confirm final cabin mounting envelope and circuit split before payment.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/car_cover.jpg",
+            "caption": "Compact covered cabin blade fuse boxes - likely 3 identical units \u00b7 car cover reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "car_cover",
+            "matched_tokens": [
+              "cover"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -17116,9 +17121,9 @@ window.J40_DASHBOARD_DATA = {
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
                 "Additional firewall grommet set IDs 6/8/10/12 mm (purchase_ready; delivery not_ordered; amount missing)",
                 "Additional firewall grommet set IDs 16/20/25 mm (purchase_ready; delivery not_ordered; amount missing)",
+                "Compact covered cabin blade fuse boxes - likely 3 identical units (purchase_ready; delivery not_ordered; amount missing)",
                 "H4 ceramic headlight connectors - x4 received (received; delivery received; amount confirmed)",
-                "Electric wire inventory - 4 AWG red/black silicone cable, 1m each (approx 21 mm2) (received; delivery received; amount confirmed)",
-                "Electrical wire grommet set (200pcs) (deferred_optional; delivery not_ordered; amount confirmed)"
+                "Electric wire inventory - 4 AWG red/black silicone cable, 1m each (approx 21 mm2) (received; delivery received; amount confirmed)"
               ]
             },
             {
@@ -17356,10 +17361,10 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Additional firewall grommet set IDs 6/8/10/12 mm (purchase_ready; delivery not_ordered; amount missing)",
                 "Additional firewall grommet set IDs 16/20/25 mm (purchase_ready; delivery not_ordered; amount missing)",
+                "Compact covered cabin blade fuse boxes - likely 3 identical units (purchase_ready; delivery not_ordered; amount missing)",
                 "Electric wire inventory - 4 AWG red/black silicone cable, 1m each (approx 21 mm2) (received; delivery received; amount confirmed)",
                 "Dielectric grease (received; delivery received; amount confirmed)",
-                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
-                "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points (ordered_pending_delivery; delivery pending_delivery; amount missing)"
+                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)"
               ]
             },
             {
@@ -17472,12 +17477,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Compact covered cabin blade fuse boxes - likely 3 identical units (purchase_ready; delivery not_ordered; amount missing)",
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
                 "Additional firewall grommet set IDs 16/20/25 mm (purchase_ready; delivery not_ordered; amount missing)",
                 "Electric wire inventory - 4 AWG red/black silicone cable, 1m each (approx 21 mm2) (received; delivery received; amount confirmed)",
                 "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "H4 ceramic headlight connectors - x4 received (received; delivery received; amount confirmed)",
-                "Additional firewall grommet set IDs 6/8/10/12 mm (purchase_ready; delivery not_ordered; amount missing)"
+                "H4 ceramic headlight connectors - x4 received (received; delivery received; amount confirmed)"
               ]
             },
             {
@@ -17596,7 +17601,7 @@ window.J40_DASHBOARD_DATA = {
                 "Split conduit / braided sleeve inventory - 14/16 mm, 5m lengths (received; delivery received; amount missing)",
                 "Split conduit / braided sleeve inventory - 20 mm, 5m lengths (received; delivery received; amount missing)",
                 "Split conduit / braided sleeve inventory - 8/10 mm, 5m lengths (received; delivery received; amount missing)",
-                "Braided sleeve inventory - 8/10/14/16/20 mm sleeves, 5m lengths received (received; delivery received; amount missing)"
+                "Compact covered cabin blade fuse boxes - likely 3 identical units (purchase_ready; delivery not_ordered; amount missing)"
               ]
             }
           ]
@@ -20972,19 +20977,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "market_specs": [],
-      "linked_packages": [
-        {
-          "work_package_id": "WP03F",
-          "title": "Fabrication Drawing Handoff",
-          "lane": "fabrication",
-          "current_state": "in_progress",
-          "objective": "Send and track the rubber recreation and electrical mount fabrication packages.",
-          "blocker_summary": "Rubber final batch still has measurement holds; electrical combined-module route is reference/provisional.",
-          "gate_to_close": "Fabricator has the current package files and first articles are accepted before batch production or loom/body closeout.",
-          "key_procurement_actions": "Use the Fabrication workstream package links; do not fabricate superseded electrical routes unless deliberately reopened.",
-          "evidence_signal": "4 fabrication package rows with PDF/DXF/SVG outputs"
-        }
-      ],
+      "linked_packages": [],
       "component_jobs": [],
       "issue_jobs": [],
       "steps": [
@@ -21014,19 +21007,14 @@ window.J40_DASHBOARD_DATA = {
           "detail": "Accept parts only after dimensional, material, fit, and release-status checks are recorded."
         },
         {
-          "label": "WP03F \u00b7 Fabrication Drawing Handoff",
-          "status": "in_progress",
-          "detail": "Send and track the rubber recreation and electrical mount fabrication packages. Blocker: Rubber final batch still has measurement holds; electrical combined-module route is reference/provisional. Procurement: Use the Fabrication workstream package links; do not fabricate superseded electrical routes unless deliberately reopened. Gate: Fabricator has the current package files and first articles are accepted before batch production or loom/body closeout."
-        },
-        {
           "label": "Issue checks",
           "status": "completed",
           "detail": "No issue-specific checks are recorded for this workstream."
         },
         {
           "label": "Close workstream exit gate",
-          "status": "in_progress",
-          "detail": "Linked package execution is active. Exit gate: Fabrication packages are visible in the UI, sent out with PDF/DXF/SVG files, first articles are tracked, and superseded routes are not accidentally fabricated"
+          "status": "queued",
+          "detail": "No linked package rows found. Exit gate: Fabrication packages are visible in the UI, sent out with PDF/DXF/SVG files, first articles are tracked, and superseded routes are not accidentally fabricated"
         }
       ],
       "involved_parts": [],
@@ -22242,7 +22230,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "electrical",
           "current_state": "queued",
           "objective": "Complete baseline harness termination, grounding, and fuse/relay validation.",
-          "blocker_summary": "1 electrical buy rows still open; 2 rows should be stock-verified before re-buy.",
+          "blocker_summary": "2 electrical buy rows still open; 2 rows should be stock-verified before re-buy.",
           "gate_to_close": "Start/charge/lights/horn/wipers/gauges baseline passes functional checks.",
           "key_procurement_actions": "Order selected harness/sleeving path; verify on-hand connectors/relays before duplicate buys.",
           "evidence_signal": "electrical_rework_photos=18"
@@ -22339,7 +22327,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP03 \u00b7 Electrical Baseline Finalization",
           "status": "queued",
-          "detail": "Complete baseline harness termination, grounding, and fuse/relay validation. Blocker: 1 electrical buy rows still open; 2 rows should be stock-verified before re-buy. Procurement: Order selected harness/sleeving path; verify on-hand connectors/relays before duplicate buys. Gate: Start/charge/lights/horn/wipers/gauges baseline passes functional checks."
+          "detail": "Complete baseline harness termination, grounding, and fuse/relay validation. Blocker: 2 electrical buy rows still open; 2 rows should be stock-verified before re-buy. Procurement: Order selected harness/sleeving path; verify on-hand connectors/relays before duplicate buys. Gate: Start/charge/lights/horn/wipers/gauges baseline passes functional checks."
         },
         {
           "label": "WP05 \u00b7 Interior Weatherproofing Stack",
@@ -24279,6 +24267,42 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
+          "entry_id": "part_mech_engine_mount_set",
+          "workstream": "mechanical_baseline",
+          "item": "Engine mount set",
+          "status": "deferred",
+          "procurement_stage": "deferred_until_failed_or_engine_lift_scope",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_mech_engine_mount_set",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-03_no_engine_lift_baseline",
+          "notes": "User correction 2026-05-03: current baseline keeps the engine installed. The Vitz/SCP90 EPS route is column-assist and does not require engine removal. Do not buy an engine lift/hoist or engine mount set just for this scope. Inspect engine mounts in place after degreasing and under load; buy/replace only if there is confirmed cracking, sag, separation, oil-soak failure, or if another approved job already requires safely supporting/lifting the engine.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/engine_mount.jpg",
+            "caption": "Engine mount set \u00b7 engine mount reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "engine_mount",
+            "matched_tokens": [
+              "engine",
+              "mount"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
           "entry_id": "part_mech_clutch_master_slave_refresh",
           "workstream": "mechanical_baseline",
           "item": "Clutch hydraulic refresh - master/slave plus flex hose and 1500 mm hard-line allowance if needed",
@@ -24294,7 +24318,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_clutch_master_slave_refresh",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH INSPECT THEN REPLACE if leakage, pedal sink, or seized seals. If the clutch line is cracked, corroded, swollen, or leaking, use RPO-CLUTCH-001A/B: match master/slave port thread, flare/seat, flex length, hard-line OD, and route length; 1500 mm brake/clutch-rated hard-line blank allowance if replaced.",
+          "notes": "MECH INSPECT THEN REPLACE if leakage, pedal sink, or seized seals. If the clutch line is cracked, corroded, swollen, or leaking, use RPO-CLUTCH-001A/B: match master/slave port thread, flare/seat, flex length, hard-line OD, and final route length; pipe length basis is a 1500 mm brake/clutch-rated hard-line blank allowance if replaced.",
           "links": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
@@ -24309,42 +24333,6 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "clutch",
               "line"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_mech_engine_mount_set",
-          "workstream": "mechanical_baseline",
-          "item": "Engine mount set",
-          "status": "planned",
-          "procurement_stage": "next_phase_purchase",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_mech_engine_mount_set",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH INSPECT THEN REPLACE if cracked sagging or oil-soaked",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/engine_mount.jpg",
-            "caption": "Engine mount set \u00b7 engine mount reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "engine_mount",
-            "matched_tokens": [
-              "engine",
-              "mount"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -24674,7 +24662,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_radiator_hose_set",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready via RPO-COOL-001/002/003/005: molded EPDM upper and lower radiator hoses for HJ47/2H route; small EPDM overflow hose 1000 mm local buy length cut to measured radiator-to-bottle route; formed coolant/radiator pipe from 750 mm minimum tube blank using the physical sample. Toyota/Dayco references are cross-references only. Release hold: measure thermostat/radiator/engine neck ODs, hose OD for clamps, old-hose free lengths, overflow nipple ODs, and formed-pipe tube OD/wall/centerline/bends/beads before payment or fabrication.",
+          "notes": "Spec ready via RPO-COOL-001/002/003/005: molded EPDM upper and lower radiator hoses for HJ47/2H route; small EPDM overflow hose 1000 mm local buy length cut to measured radiator-to-bottle route; formed coolant/radiator pipe length basis is 1 x 750 mm minimum tube blank, with final centerline length release-held to the physical sample measurement. Toyota/Dayco references are cross-references only. Release hold: measure thermostat/radiator/engine neck ODs, hose OD for clamps, old-hose free lengths, overflow nipple ODs, and formed-pipe tube OD/wall/centerline length/bends/beads before payment or fabrication.",
           "links": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg",
@@ -24710,7 +24698,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_fuel_hose_and_clamps",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: diesel-rated 8 mm ID x 3000 mm feed hose, 6 mm ID x 2000 mm return/bleed hose, 3.2-3.5 mm ID x 1000 mm injector leak-off hose, plus conditional 8 mm OD x 5000 mm feed and 6 mm OD x 5000 mm return hard-line allowances if corrosion inspection requires replacement. Use rolled-edge fuel-injection clamps. Release hold: measure every barb/line OD, hose OD for clamps, route lengths, and flare/union style if hard lines are replaced. Do not fabricate high-pressure injector pipes.",
+          "notes": "Spec ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: diesel-rated 8 mm ID x 3000 mm feed hose, 6 mm ID x 2000 mm return/bleed hose, 3.2-3.5 mm ID x 1000 mm injector leak-off hose, plus conditional pipe lengths of 8 mm OD x 5000 mm feed tube and 6 mm OD x 5000 mm return tube if corrosion inspection requires hard-line replacement. Use rolled-edge fuel-injection clamps. Release hold: measure every barb/line OD, hose OD for clamps, route lengths, final hard-line section lengths, and flare/union style if hard lines are replaced. Do not fabricate high-pressure injector pipes.",
           "links": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/heavy_battery_cable.jpg",
@@ -24937,7 +24925,7 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Clutch hydraulic refresh - master/slave plus flex hose and 1500 mm hard-line allowance if needed (next_phase_purchase; delivery not_ordered; amount missing)",
-                "Engine mount set (next_phase_purchase; delivery not_ordered; amount missing)",
+                "Engine mount set (deferred_until_failed_or_engine_lift_scope; delivery not_ordered; amount missing)",
                 "Heat/glow plugs set - diesel 2H (purchase_ready; delivery not_ordered; amount missing)",
                 "Accessory belt set (purchase_ready; delivery not_ordered; amount missing)",
                 "Engine oil + oil filter service pack (purchase_ready; delivery not_ordered; amount missing)"
@@ -25075,7 +25063,7 @@ window.J40_DASHBOARD_DATA = {
                 "Jubilee hose clip assortment - 10 pc fuel line/diesel/petrol/coolant clamp packs x3 (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Radiator cap (purchase_ready; delivery not_ordered; amount missing)",
                 "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID (spec_ready_release_hold; delivery not_ordered; amount missing)",
-                "Engine oil + oil filter service pack (purchase_ready; delivery not_ordered; amount missing)"
+                "Engine mount set (deferred_until_failed_or_engine_lift_scope; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -25206,8 +25194,8 @@ window.J40_DASHBOARD_DATA = {
                 "Clutch hydraulic refresh - master/slave plus flex hose and 1500 mm hard-line allowance if needed (next_phase_purchase; delivery not_ordered; amount missing)",
                 "Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather (spec_ready_release_hold; delivery not_ordered; amount missing)",
-                "Radiator cap (purchase_ready; delivery not_ordered; amount missing)",
-                "Fuel filter (purchase_ready; delivery not_ordered; amount missing)"
+                "Engine mount set (deferred_until_failed_or_engine_lift_scope; delivery not_ordered; amount missing)",
+                "Radiator cap (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -25334,10 +25322,10 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Accessory belt set (purchase_ready; delivery not_ordered; amount missing)",
+                "Engine mount set (deferred_until_failed_or_engine_lift_scope; delivery not_ordered; amount missing)",
                 "Engine oil + oil filter service pack (purchase_ready; delivery not_ordered; amount missing)",
                 "Heat/glow plugs set - diesel 2H (purchase_ready; delivery not_ordered; amount missing)",
-                "Jubilee hose clip assortment - 10 pc fuel line/diesel/petrol/coolant clamp packs x3 (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
-                "Clutch hydraulic refresh - master/slave plus flex hose and 1500 mm hard-line allowance if needed (next_phase_purchase; delivery not_ordered; amount missing)"
+                "Jubilee hose clip assortment - 10 pc fuel line/diesel/petrol/coolant clamp packs x3 (ordered_pending_delivery; delivery pending_delivery; amount confirmed)"
               ]
             },
             {
@@ -25462,12 +25450,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Engine mount set (deferred_until_failed_or_engine_lift_scope; delivery not_ordered; amount missing)",
                 "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Accessory belt set (purchase_ready; delivery not_ordered; amount missing)",
                 "Engine oil + oil filter service pack (purchase_ready; delivery not_ordered; amount missing)",
                 "Heat/glow plugs set - diesel 2H (purchase_ready; delivery not_ordered; amount missing)",
-                "Air filter element (received; delivery received; amount missing)",
-                "Clutch hydraulic refresh - master/slave plus flex hose and 1500 mm hard-line allowance if needed (next_phase_purchase; delivery not_ordered; amount missing)"
+                "Air filter element (received; delivery received; amount missing)"
               ]
             }
           ]
@@ -26045,7 +26033,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Front top of engine bay between thermostat housing and radiator",
           "pipe_or_line": "Upper radiator hose",
           "replace_scope": "replace",
-          "quantity": "",
+          "quantity": "1 molded hose; old-hose free length TBD mm if available",
           "photo_evidence": [
             "20260430_220004_gp_C9oYiYmA"
           ],
@@ -26082,7 +26070,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Front lower engine bay between radiator lower outlet and water pump/engine inlet",
           "pipe_or_line": "Lower radiator hose",
           "replace_scope": "replace",
-          "quantity": "",
+          "quantity": "1 molded hose; old-hose free length TBD mm if available",
           "photo_evidence": [
             "20260430_215957_gp_2iBbUagw",
             "20260430_220004_gp_C9oYiYmA"
@@ -26132,7 +26120,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Radiator neck to overflow/reserve bottle",
           "pipe_or_line": "Radiator overflow / breather hose",
           "replace_scope": "replace",
-          "quantity": "",
+          "quantity": "1000 mm local hose buy length; 600 mm OE reference; cut to measured route",
           "photo_evidence": [
             "photo_needed"
           ],
@@ -26156,7 +26144,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Firewall/heater core and engine heater nipples",
           "pipe_or_line": "Front heater water inlet and outlet hoses",
           "replace_scope": "replace",
-          "quantity": "",
+          "quantity": "400 mm inlet hose + 280 mm outlet hose cut lengths",
           "photo_evidence": [
             "photo_needed"
           ],
@@ -26180,7 +26168,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Loose May 2 sample for front engine cooling route",
           "pipe_or_line": "Formed metal coolant/radiator pipe assembly",
           "replace_scope": "recreate_fabricate",
-          "quantity": "",
+          "quantity": "1 x 750 mm minimum tube blank; final centerline length TBD from physical sample",
           "photo_evidence": [
             "20260502_004044_gp_Hx4Yo0Qg",
             "20260502_004106_gp_wlYlUahA",
@@ -26276,13 +26264,102 @@ window.J40_DASHBOARD_DATA = {
           ]
         },
         {
+          "requirement_id": "RP-COOL-006",
+          "requirement_name": "Formed coolant pipe rubber connector/coupler hoses",
+          "pipe_id": "RP-COOL-006",
+          "vehicle_location": "Loose May 2 sample for formed coolant pipe rubber joints",
+          "pipe_or_line": "Formed coolant pipe rubber connector/coupler hoses",
+          "replace_scope": "replace",
+          "quantity": "2 connector hoses; finished cut lengths and IDs TBD from physical sample and mating spigots",
+          "photo_evidence": [
+            "20260502_004044_gp_Hx4Yo0Qg",
+            "20260502_004106_gp_wlYlUahA",
+            "20260502_004133_gp_ZEpqmARA",
+            "20260502_004139_gp_jt1dGw4A",
+            "20260502_004145_gp_e8soxsyA"
+          ],
+          "photo_status": "direct_template_photos",
+          "spec_status": "spec_ready",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "",
+          "exact_recreation_spec": "Replace the two short rubber connector hoses visible on the formed coolant pipe assembly. Each connector must be ordered or cut by measured pipe-end OD, mating neck/spigot OD, finished free length, hose overlap, bend/offset, clamp land, and kink clearance in mm. Use straight EPDM coolant hose only where the measured path stays round; otherwise sample-match molded EPDM connectors.",
+          "material_spec": "EPDM coolant hose, SAE J20R3/J20R4 or molded coolant equivalent; new smooth-band or constant-tension clamps",
+          "critical_measurements": "Pipe end A OD and bead in mm, pipe end B OD and bead in mm, mating neck/spigot ODs in mm, connector free/cut lengths in mm, hose ID/OD in mm, overlap and clamp land in mm, installed bend/kink clearance",
+          "fit_and_test": "Dry-fit with RP-COOL-005 pipe; pressure-test cooling system; no swelling, seepage, kink, or clamp-edge cutting",
+          "source_ref": "docs_pipe_fabrication_spec_20260502|data_pipe_fabrication_specs|data_replacement_pipe_order_release_specs",
+          "notes": "Added after visual audit: the rubber couplers were visible on the pipe sample but were not explicit order rows. Use order lines RPO-COOL-006A and RPO-COOL-006B.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260502_004044_gp_Hx4Yo0Qg.jpg",
+              "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:40:44",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "cooling_pipe_fabrication_samples",
+              "stage": "mechanical_baseline",
+              "media_id": "20260502_004044_gp_Hx4Yo0Qg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004106_gp_wlYlUahA.jpg",
+              "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:41:06",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "cooling_pipe_fabrication_samples",
+              "stage": "mechanical_baseline",
+              "media_id": "20260502_004106_gp_wlYlUahA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004133_gp_ZEpqmARA.jpg",
+              "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:41:33",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "cooling_pipe_fabrication_samples",
+              "stage": "mechanical_baseline",
+              "media_id": "20260502_004133_gp_ZEpqmARA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004139_gp_jt1dGw4A.jpg",
+              "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:41:39",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "cooling_pipe_fabrication_samples",
+              "stage": "mechanical_baseline",
+              "media_id": "20260502_004139_gp_jt1dGw4A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004145_gp_e8soxsyA.jpg",
+              "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:41:45",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "cooling_pipe_fabrication_samples",
+              "stage": "mechanical_baseline",
+              "media_id": "20260502_004145_gp_e8soxsyA",
+              "matched_tokens": []
+            }
+          ]
+        },
+        {
           "requirement_id": "RP-FUEL-001",
           "requirement_name": "Diesel feed return and injector leak-off rubber hoses",
           "pipe_id": "RP-FUEL-001",
           "vehicle_location": "Engine bay fuel filter / injection pump / injector return area",
           "pipe_or_line": "Diesel feed return and injector leak-off rubber hoses",
           "replace_scope": "replace",
-          "quantity": "",
+          "quantity": "3000 mm feed hose + 2000 mm return hose + 1000 mm injector leak-off hose",
           "photo_evidence": [
             "20260430_215957_gp_2iBbUagw",
             "20260502_005740_gp_Qiat03EQ"
@@ -26332,7 +26409,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Chassis rail low-pressure fuel line route",
           "pipe_or_line": "Low-pressure fuel hard lines - feed and return",
           "replace_scope": "inspect_recreate_if_corroded",
-          "quantity": "",
+          "quantity": "5000 mm 8 mm OD feed tube + 5000 mm 6 mm OD return tube allowance; final section lengths TBD",
           "photo_evidence": [
             "20260422_004306_gp_vGlNr2UA",
             "20260422_004311_gp_994KQ0Pw"
@@ -26382,7 +26459,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Vacuum pump / brake booster / crankcase breather area",
           "pipe_or_line": "Vacuum hose and breather/oil mist hose",
           "replace_scope": "replace",
-          "quantity": "",
+          "quantity": "2000 mm vacuum hose + 1000 mm breather hose; oil-outlet hose only if fitted",
           "photo_evidence": [
             "photo_needed"
           ],
@@ -26406,7 +26483,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Frame and axle brake hydraulic routes",
           "pipe_or_line": "Brake flex hoses and hard brake lines",
           "replace_scope": "replace_or_recreate_after_identification",
-          "quantity": "",
+          "quantity": "3 flex hoses working count + 7600 mm / 25 ft 4.75 mm brake tube coil allowance; final line lengths TBD",
           "photo_evidence": [
             "photo_needed"
           ],
@@ -26430,7 +26507,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Bellhousing / clutch slave / master-to-slave route",
           "pipe_or_line": "Clutch flex hose and hard line",
           "replace_scope": "inspect_replace_if_cracked_corroded_or_leaking",
-          "quantity": "",
+          "quantity": "1 flex hose if required + 1500 mm hard-line blank if replacing; final route length TBD",
           "photo_evidence": [
             "20260430_215939_gp_EjZ7u1ow"
           ],
@@ -26469,7 +26546,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Front top of engine bay between thermostat housing and radiator",
           "pipe_or_line": "Upper radiator hose",
           "replace_scope": "replace",
-          "quantity": "",
+          "quantity": "1 molded hose; old-hose free length TBD mm if available",
           "photo_evidence": [
             "20260430_220004_gp_C9oYiYmA"
           ],
@@ -26506,7 +26583,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Front lower engine bay between radiator lower outlet and water pump/engine inlet",
           "pipe_or_line": "Lower radiator hose",
           "replace_scope": "replace",
-          "quantity": "",
+          "quantity": "1 molded hose; old-hose free length TBD mm if available",
           "photo_evidence": [
             "20260430_215957_gp_2iBbUagw",
             "20260430_220004_gp_C9oYiYmA"
@@ -26556,7 +26633,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Radiator neck to overflow/reserve bottle",
           "pipe_or_line": "Radiator overflow / breather hose",
           "replace_scope": "replace",
-          "quantity": "",
+          "quantity": "1000 mm local hose buy length; 600 mm OE reference; cut to measured route",
           "photo_evidence": [
             "photo_needed"
           ],
@@ -26580,7 +26657,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Firewall/heater core and engine heater nipples",
           "pipe_or_line": "Front heater water inlet and outlet hoses",
           "replace_scope": "replace",
-          "quantity": "",
+          "quantity": "400 mm inlet hose + 280 mm outlet hose cut lengths",
           "photo_evidence": [
             "photo_needed"
           ],
@@ -26604,7 +26681,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Loose May 2 sample for front engine cooling route",
           "pipe_or_line": "Formed metal coolant/radiator pipe assembly",
           "replace_scope": "recreate_fabricate",
-          "quantity": "",
+          "quantity": "1 x 750 mm minimum tube blank; final centerline length TBD from physical sample",
           "photo_evidence": [
             "20260502_004044_gp_Hx4Yo0Qg",
             "20260502_004106_gp_wlYlUahA",
@@ -26700,13 +26777,102 @@ window.J40_DASHBOARD_DATA = {
           ]
         },
         {
+          "requirement_id": "RP-COOL-006",
+          "requirement_name": "Formed coolant pipe rubber connector/coupler hoses",
+          "pipe_id": "RP-COOL-006",
+          "vehicle_location": "Loose May 2 sample for formed coolant pipe rubber joints",
+          "pipe_or_line": "Formed coolant pipe rubber connector/coupler hoses",
+          "replace_scope": "replace",
+          "quantity": "2 connector hoses; finished cut lengths and IDs TBD from physical sample and mating spigots",
+          "photo_evidence": [
+            "20260502_004044_gp_Hx4Yo0Qg",
+            "20260502_004106_gp_wlYlUahA",
+            "20260502_004133_gp_ZEpqmARA",
+            "20260502_004139_gp_jt1dGw4A",
+            "20260502_004145_gp_e8soxsyA"
+          ],
+          "photo_status": "direct_template_photos",
+          "spec_status": "spec_ready",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "",
+          "exact_recreation_spec": "Replace the two short rubber connector hoses visible on the formed coolant pipe assembly. Each connector must be ordered or cut by measured pipe-end OD, mating neck/spigot OD, finished free length, hose overlap, bend/offset, clamp land, and kink clearance in mm. Use straight EPDM coolant hose only where the measured path stays round; otherwise sample-match molded EPDM connectors.",
+          "material_spec": "EPDM coolant hose, SAE J20R3/J20R4 or molded coolant equivalent; new smooth-band or constant-tension clamps",
+          "critical_measurements": "Pipe end A OD and bead in mm, pipe end B OD and bead in mm, mating neck/spigot ODs in mm, connector free/cut lengths in mm, hose ID/OD in mm, overlap and clamp land in mm, installed bend/kink clearance",
+          "fit_and_test": "Dry-fit with RP-COOL-005 pipe; pressure-test cooling system; no swelling, seepage, kink, or clamp-edge cutting",
+          "source_ref": "docs_pipe_fabrication_spec_20260502|data_pipe_fabrication_specs|data_replacement_pipe_order_release_specs",
+          "notes": "Added after visual audit: the rubber couplers were visible on the pipe sample but were not explicit order rows. Use order lines RPO-COOL-006A and RPO-COOL-006B.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260502_004044_gp_Hx4Yo0Qg.jpg",
+              "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:40:44",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "cooling_pipe_fabrication_samples",
+              "stage": "mechanical_baseline",
+              "media_id": "20260502_004044_gp_Hx4Yo0Qg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004106_gp_wlYlUahA.jpg",
+              "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:41:06",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "cooling_pipe_fabrication_samples",
+              "stage": "mechanical_baseline",
+              "media_id": "20260502_004106_gp_wlYlUahA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004133_gp_ZEpqmARA.jpg",
+              "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:41:33",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "cooling_pipe_fabrication_samples",
+              "stage": "mechanical_baseline",
+              "media_id": "20260502_004133_gp_ZEpqmARA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004139_gp_jt1dGw4A.jpg",
+              "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:41:39",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "cooling_pipe_fabrication_samples",
+              "stage": "mechanical_baseline",
+              "media_id": "20260502_004139_gp_jt1dGw4A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004145_gp_e8soxsyA.jpg",
+              "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:41:45",
+              "media_type": "photo",
+              "component_group": "engine_bay",
+              "specific_component": "cooling_pipe_fabrication_samples",
+              "stage": "mechanical_baseline",
+              "media_id": "20260502_004145_gp_e8soxsyA",
+              "matched_tokens": []
+            }
+          ]
+        },
+        {
           "requirement_id": "RP-FUEL-001",
           "requirement_name": "Diesel feed return and injector leak-off rubber hoses",
           "pipe_id": "RP-FUEL-001",
           "vehicle_location": "Engine bay fuel filter / injection pump / injector return area",
           "pipe_or_line": "Diesel feed return and injector leak-off rubber hoses",
           "replace_scope": "replace",
-          "quantity": "",
+          "quantity": "3000 mm feed hose + 2000 mm return hose + 1000 mm injector leak-off hose",
           "photo_evidence": [
             "20260430_215957_gp_2iBbUagw",
             "20260502_005740_gp_Qiat03EQ"
@@ -26756,7 +26922,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Chassis rail low-pressure fuel line route",
           "pipe_or_line": "Low-pressure fuel hard lines - feed and return",
           "replace_scope": "inspect_recreate_if_corroded",
-          "quantity": "",
+          "quantity": "5000 mm 8 mm OD feed tube + 5000 mm 6 mm OD return tube allowance; final section lengths TBD",
           "photo_evidence": [
             "20260422_004306_gp_vGlNr2UA",
             "20260422_004311_gp_994KQ0Pw"
@@ -26806,7 +26972,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Vacuum pump / brake booster / crankcase breather area",
           "pipe_or_line": "Vacuum hose and breather/oil mist hose",
           "replace_scope": "replace",
-          "quantity": "",
+          "quantity": "2000 mm vacuum hose + 1000 mm breather hose; oil-outlet hose only if fitted",
           "photo_evidence": [
             "photo_needed"
           ],
@@ -26830,7 +26996,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Frame and axle brake hydraulic routes",
           "pipe_or_line": "Brake flex hoses and hard brake lines",
           "replace_scope": "replace_or_recreate_after_identification",
-          "quantity": "",
+          "quantity": "3 flex hoses working count + 7600 mm / 25 ft 4.75 mm brake tube coil allowance; final line lengths TBD",
           "photo_evidence": [
             "photo_needed"
           ],
@@ -26854,7 +27020,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Bellhousing / clutch slave / master-to-slave route",
           "pipe_or_line": "Clutch flex hose and hard line",
           "replace_scope": "inspect_replace_if_cracked_corroded_or_leaking",
-          "quantity": "",
+          "quantity": "1 flex hose if required + 1500 mm hard-line blank if replacing; final route length TBD",
           "photo_evidence": [
             "20260430_215939_gp_EjZ7u1ow"
           ],
@@ -27136,6 +27302,69 @@ window.J40_DASHBOARD_DATA = {
           "media_ids": [],
           "placement_notes": "Needed before coating fabricated pipe",
           "release_use": "Releases dry-fit and pressure-test gate",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-COOL-006-A",
+          "pipe_id": "RP-COOL-006",
+          "order_lines": "RPO-COOL-006A",
+          "exact_name": "Formed coolant pipe connector hose - end A",
+          "vehicle_placement": "Loose formed coolant pipe connector hose at end A",
+          "shot_required": "Close photo square to connector A with pipe end bead clamp land mating hose end and tape/caliper visible",
+          "measurement_targets_mm": [
+            "pipe_end_a_od",
+            "mating_spigot_od",
+            "connector_a_free_length",
+            "hose_id",
+            "hose_od_for_clamp",
+            "hose_overlap",
+            "clamp_band_width"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Keep connector on sample until length and overlap are recorded",
+          "release_use": "Releases RPO-COOL-006A connector hose ID length and clamp size",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-COOL-006-B",
+          "pipe_id": "RP-COOL-006",
+          "order_lines": "RPO-COOL-006B",
+          "exact_name": "Formed coolant pipe connector hose - end B",
+          "vehicle_placement": "Loose formed coolant pipe connector hose at end B",
+          "shot_required": "Close photo square to connector B with pipe end bead clamp land mating hose end and tape/caliper visible",
+          "measurement_targets_mm": [
+            "pipe_end_b_od",
+            "mating_spigot_od",
+            "connector_b_free_length",
+            "hose_id",
+            "hose_od_for_clamp",
+            "hose_overlap",
+            "clamp_band_width"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Keep connector on sample until length and overlap are recorded",
+          "release_use": "Releases RPO-COOL-006B connector hose ID length and clamp size",
+          "evidence_images": []
+        },
+        {
+          "shot_id": "RPI-COOL-006-C",
+          "pipe_id": "RP-COOL-006",
+          "order_lines": "RPO-COOL-006A|RPO-COOL-006B",
+          "exact_name": "Formed coolant pipe connector hoses - installed kink clearance",
+          "vehicle_placement": "Front engine cooling route dry-fit position",
+          "shot_required": "Installed or held-in-place route photo showing both connector hoses and bends",
+          "measurement_targets_mm": [
+            "connector_a_bend_clearance",
+            "connector_b_bend_clearance",
+            "kink_check",
+            "fan_belt_radiator_clearance"
+          ],
+          "photo_status": "capture_pending",
+          "media_ids": [],
+          "placement_notes": "Needed before deciding straight hose versus molded connector",
+          "release_use": "Releases straight-hose or molded-connector decision",
           "evidence_images": []
         },
         {
@@ -27646,6 +27875,40 @@ window.J40_DASHBOARD_DATA = {
           "notes": "750 mm is the orderable blank allowance, not a substitute for the final measured centerline; bench pressure-test before coating and coat only after vehicle dry-fit passes."
         },
         {
+          "order_line_id": "RPO-COOL-006A",
+          "route": "CUT_OR_MOLDED_BY_TEMPLATE",
+          "item": "Formed coolant pipe connector hose - end A",
+          "part_number_or_code": "Physical sample connector hose on RP-COOL-006 / RP-COOL-005 assembly",
+          "dimension_spec_mm": "Finished cut length TBD from physical sample; hose ID equals measured pipe end A OD/bead and mating neck OD; record hose overlap both ends, bend/offset, clamp band width, and hose OD for clamps in mm",
+          "qty_required": "1",
+          "qty_to_order": "1 connector hose after ID confirmation",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_physical_template_hold",
+          "exact_order_spec": "Order or fabricate connector hose A only after measuring pipe end A OD, bead height, clamp land length, mating spigot OD, finished free length, hose overlap, bend/offset, and installed kink clearance in mm. Use straight EPDM coolant hose only if the measured route does not kink; otherwise sample-match a molded EPDM connector.",
+          "material_spec": "EPDM coolant hose, SAE J20R3/J20R4 or molded coolant equivalent; new smooth-band or constant-tension clamps",
+          "source_basis": "RP-COOL-006|RP-COOL-005|docs/pipe-fabrication-spec-20260502.md",
+          "user_action_required": "Measure pipe end A OD and bead, mating neck OD, hose free/cut length, hose ID/OD, overlap, clamp OD, bend radius, and installed clearance in mm.",
+          "do_not_order_if": "Pipe end A or mating spigot cannot be identified, straight hose would kink, or vehicle dry-fit cannot confirm connector angle.",
+          "notes": "Visible in May 2 formed-pipe photos as one of the short rubber couplers; do not leave it buried under the metal pipe fabrication line."
+        },
+        {
+          "order_line_id": "RPO-COOL-006B",
+          "route": "CUT_OR_MOLDED_BY_TEMPLATE",
+          "item": "Formed coolant pipe connector hose - end B",
+          "part_number_or_code": "Physical sample connector hose on RP-COOL-006 / RP-COOL-005 assembly",
+          "dimension_spec_mm": "Finished cut length TBD from physical sample; hose ID equals measured pipe end B OD/bead and mating neck OD; record hose overlap both ends, bend/offset, clamp band width, and hose OD for clamps in mm",
+          "qty_required": "1",
+          "qty_to_order": "1 connector hose after ID confirmation",
+          "spec_status": "spec_ready",
+          "order_release_state": "spec_ready_physical_template_hold",
+          "exact_order_spec": "Order or fabricate connector hose B only after measuring pipe end B OD, bead height, clamp land length, mating spigot OD, finished free length, hose overlap, bend/offset, and installed kink clearance in mm. Use straight EPDM coolant hose only if the measured route does not kink; otherwise sample-match a molded EPDM connector.",
+          "material_spec": "EPDM coolant hose, SAE J20R3/J20R4 or molded coolant equivalent; new smooth-band or constant-tension clamps",
+          "source_basis": "RP-COOL-006|RP-COOL-005|docs/pipe-fabrication-spec-20260502.md",
+          "user_action_required": "Measure pipe end B OD and bead, mating neck OD, hose free/cut length, hose ID/OD, overlap, clamp OD, bend radius, and installed clearance in mm.",
+          "do_not_order_if": "Pipe end B or mating spigot cannot be identified, straight hose would kink, or vehicle dry-fit cannot confirm connector angle.",
+          "notes": "Visible in May 2 formed-pipe photos as the second short rubber coupler; replace with the pipe because old hose set/seal condition controls coolant reliability."
+        },
+        {
           "order_line_id": "RPO-FUEL-001A",
           "route": "BUY_BY_METER",
           "item": "Diesel feed hose",
@@ -27899,6 +28162,16 @@ window.J40_DASHBOARD_DATA = {
           "why_it_matters": "The fabricator needs production dimensions from the physical sample; 750 mm is the orderable blank allowance, not the final centerline cut length."
         },
         {
+          "action_id": "RPA-011",
+          "priority": "P0",
+          "owner": "workshop",
+          "action": "For the formed coolant pipe connector hoses, keep both old rubber couplers with the sample and measure each connector's ID, OD, free/cut length, overlap, clamp band width, pipe-end OD, mating spigot OD, and bend/kink clearance in mm.",
+          "status": "open",
+          "blocks_order_lines": "RPO-COOL-006A|RPO-COOL-006B",
+          "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+          "why_it_matters": "The May 2 pipe photos show short rubber connector hoses; they need separate dimensions so the metal pipe is not fabricated while old coolant couplers are reused by accident."
+        },
+        {
           "action_id": "RPA-004",
           "priority": "P1",
           "owner": "workshop",
@@ -28054,6 +28327,23 @@ window.J40_DASHBOARD_DATA = {
           "release_status": "release_hold",
           "action_required": "Flat-lay physical sample and record final centerline length tube dimensions bend geometry beads clamp lands and installed clearances in mm",
           "notes": "Orderable blank is 750 mm minimum; final centerline length must come from physical sample."
+        },
+        {
+          "circuit_id": "RP-COOL-006",
+          "vehicle_location": "Loose May 2 sample for formed coolant pipe rubber joints",
+          "pipe_or_line": "Formed coolant pipe rubber connector/coupler hoses",
+          "order_lines": "RPO-COOL-006A|RPO-COOL-006B",
+          "photo_status": "direct_template_photos",
+          "barb_or_fitting_a": "pipe_end_a_od_and_mating_spigot_tbd_mm",
+          "barb_or_fitting_b": "pipe_end_b_od_and_mating_spigot_tbd_mm",
+          "route_length_mm": "connector_a_and_b_cut_lengths_tbd_mm",
+          "tube_or_hose_od_id": "epdm_coolant_hose_id_od_tbd_mm",
+          "thread_or_flare": "not_applicable",
+          "bend_template_status": "physical_sample_and_vehicle_dryfit_required",
+          "clip_support_status": "clamp_ods_and_band_widths_tbd_mm",
+          "release_status": "release_hold",
+          "action_required": "Measure each connector hose ID OD free/cut length overlap clamp land bend clearance and both mating spigot ODs in mm before purchase",
+          "notes": "Connector hoses are visible on the formed-pipe sample and now have separate release lines so they are not missed when the metal pipe is fabricated."
         },
         {
           "circuit_id": "RP-FUEL-001",
@@ -29309,7 +29599,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_rear_axle_hard_brake_lines",
           "evidence_ref": "BR-REAR-002|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-          "notes": "Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube only after flare standard, fitting threads/seats, bend templates, route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
+          "notes": "Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube from the 7600 mm / 25 ft brake tube coil allowance only after flare standard, fitting threads/seats, bend templates, final left/right route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
           "links": [],
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -29449,7 +29739,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_brake_flex_hose_set",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready via RPO-BRAKE-001A/B: front/rear brake flex hoses by current fitting thread/banjo/seat, bracket retention, free length and full-droop length; brake hard-line stock 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with brake-rated fittings. Release hold: close fitting photos, flare/thread/seat confirmation, route lengths, bend templates, and full-droop slack before payment/fabrication.",
+          "notes": "Spec ready via RPO-BRAKE-001A/B: front/rear brake flex hoses by current fitting thread/banjo/seat, bracket retention, free length and full-droop length; brake hard-line length basis is 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with brake-rated fittings. Release hold: close fitting photos, flare/thread/seat confirmation, final individual route lengths, bend templates, and full-droop slack before payment/fabrication.",
           "links": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
@@ -29990,8 +30280,8 @@ window.J40_DASHBOARD_DATA = {
                 "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)",
                 "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear center frame-to-axle brake flex hose - by end fittings and full-droop length (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             }
@@ -30470,14 +30760,15 @@ window.J40_DASHBOARD_DATA = {
       "depends_on": [
         "chassis_fixing"
       ],
-      "next_action": "Track ordered Ironman Foamcell kit as two shipments: main kit plus separate front damper pair",
-      "exit_gate": "Upgraded suspension is installed aligned and road-tested with no safety-critical defects",
-      "notes": "User update 2026-05-01: Ironman Foamcell kit ordered for PKR 575000 total; front 24635FE dampers arrive in a separate shipment. Old local/OME/Bilstein alternatives are removed from active parts tracking.",
+      "next_action": "Track ordered Ironman Foamcell kit as two shipments: main kit plus separate front damper pair; prepare receipt check torque sheet and install checklist from suspension workstream",
+      "exit_gate": "Upgraded suspension is contents-checked installed aligned road-tested and 50 km / 500 km rechecked with no safety-critical defects",
+      "notes": "User update 2026-05-01: Ironman Foamcell kit ordered for PKR 575000 total; front 24635FE dampers arrive in a separate shipment. Old local/OME/Bilstein alternatives are removed from active parts tracking. docs/suspension-workstream.md is the installation control sheet.",
       "evidence_source": [
         "whatsapp_akber",
         "akber_khan-00855",
         "akber_khan-00858",
-        "user_plan_2026-04-22_tub_off_update"
+        "user_plan_2026-04-22_tub_off_update",
+        "docs_suspension_workstream"
       ],
       "images": [
         {
@@ -30775,16 +31066,16 @@ window.J40_DASHBOARD_DATA = {
           "component_group": "suspension_upgrade",
           "current_status": "queued",
           "planned_action": "Install Ironman foam cell medium suspension kit, torque-check all pivots under load, and complete alignment/road-validation cycle",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|photo_inventory_20260422",
-          "notes": "Major project execution gate after spec + kit lock."
+          "evidence_ref": "user_plan_2026-04-22_tub_off_update|photo_inventory_20260422|docs_suspension_workstream",
+          "notes": "Major project execution gate after spec + kit lock. No final install until both Ironman shipments, torque sheet, safe support setup, hanger inspection, alignment, and 50 km / 500 km rechecks are controlled."
         },
         {
           "component_job_id": "suspension_upgrade_spec_and_kit_lock",
           "component_group": "suspension_upgrade",
           "current_status": "planned_scope_lock",
           "planned_action": "Freeze Ironman foam cell medium kit fitment spec with measured ride-height and clearance baseline; lock full procurement kit (shackles/pins included)",
-          "evidence_ref": "whatsapp_akber|akber_khan-00855|akber_khan-00858",
-          "notes": "Major project: prevent piecemeal buying and mismatch risk."
+          "evidence_ref": "whatsapp_akber|akber_khan-00855|akber_khan-00858|docs_suspension_workstream",
+          "notes": "Major project: prevent piecemeal buying and mismatch risk. Use docs/suspension-workstream.md for receipt check, no-go gates, and baseline measurement requirements."
         }
       ],
       "issue_jobs": [],
@@ -30792,7 +31083,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Execute current workstream action",
           "status": "queued",
-          "detail": "Track ordered Ironman Foamcell kit as two shipments: main kit plus separate front damper pair"
+          "detail": "Track ordered Ironman Foamcell kit as two shipments: main kit plus separate front damper pair; prepare receipt check torque sheet and install checklist from suspension workstream"
         },
         {
           "label": "Capture measured suspension baseline",
@@ -30822,12 +31113,12 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Component Task \u00b7 Suspension Upgrade Spec And Kit Lock",
           "status": "planned_scope_lock",
-          "detail": "Freeze Ironman foam cell medium kit fitment spec with measured ride-height and clearance baseline; lock full procurement kit (shackles/pins included) Notes: Major project: prevent piecemeal buying and mismatch risk."
+          "detail": "Freeze Ironman foam cell medium kit fitment spec with measured ride-height and clearance baseline; lock full procurement kit (shackles/pins included) Notes: Major project: prevent piecemeal buying and mismatch risk. Use docs/suspension-workstream.md for receipt check, no-go gates, and baseline measurement requirements."
         },
         {
           "label": "Component Task \u00b7 Suspension Upgrade Fitment And Alignment",
           "status": "queued",
-          "detail": "Install Ironman foam cell medium suspension kit, torque-check all pivots under load, and complete alignment/road-validation cycle Notes: Major project execution gate after spec + kit lock."
+          "detail": "Install Ironman foam cell medium suspension kit, torque-check all pivots under load, and complete alignment/road-validation cycle Notes: Major project execution gate after spec + kit lock. No final install until both Ironman shipments, torque sheet, safe support setup, hanger inspection, alignment, and 50 km / 500 km rechecks are controlled."
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
@@ -30847,7 +31138,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Close workstream exit gate",
           "status": "queued",
-          "detail": "No linked package rows found. Exit gate: Upgraded suspension is installed aligned and road-tested with no safety-critical defects"
+          "detail": "No linked package rows found. Exit gate: Upgraded suspension is contents-checked installed aligned road-tested and 50 km / 500 km rechecked with no safety-critical defects"
         }
       ],
       "involved_parts": [
@@ -31651,41 +31942,6 @@ window.J40_DASHBOARD_DATA = {
             "match_basis": "semantic_reference_image",
             "match_score": 700
           }
-        },
-        {
-          "entry_id": "part_bed_lining",
-          "workstream": "interior_weatherproofing",
-          "item": "Bed lining",
-          "status": "planned",
-          "procurement_stage": "next_phase_purchase",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_bed_lining",
-          "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00803",
-          "notes": "Listed by the user as still needed; chat sequences this after welding/primer and before sound deadening",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/bedliner.jpg",
-            "caption": "Bed lining \u00b7 bedliner reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "bedliner",
-            "matched_tokens": [
-              "bedliner"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
         }
       ],
       "operation_panels": [],
@@ -31805,7 +32061,6 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Sound dampening sheets (deferred_until_body_closed; delivery not_ordered; amount missing)",
-                "Bed lining (next_phase_purchase; delivery not_ordered; amount missing)",
                 "Carpet (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Foam (deferred_until_body_closed; delivery not_ordered; amount missing)"
               ]
@@ -31920,7 +32175,6 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Bed lining (next_phase_purchase; delivery not_ordered; amount missing)",
                 "Sound dampening sheets (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Carpet (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Foam (deferred_until_body_closed; delivery not_ordered; amount missing)"
@@ -32038,8 +32292,7 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Sound dampening sheets (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Carpet (deferred_until_body_closed; delivery not_ordered; amount missing)",
-                "Foam (deferred_until_body_closed; delivery not_ordered; amount missing)",
-                "Bed lining (next_phase_purchase; delivery not_ordered; amount missing)"
+                "Foam (deferred_until_body_closed; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -33287,7 +33540,7 @@ window.J40_DASHBOARD_DATA = {
       "evidence_signal": "rust_assessment_photos=51, stripdown_photos=110",
       "blocker_summary": "0 body material rows still need buy execution.",
       "gate_to_close": "Rust map signed off and repaired zones primed.",
-      "key_procurement_actions": "Confirm price/order for primer + bedliner + metal protection stack.",
+      "key_procurement_actions": "Track primer/prep/seam-sealer/cavity-wax deliveries; use on-hand Raptor bedliner; no generic metal-protection or bed-lining duplicate buy.",
       "image": {
         "path": "../../photos/20260405_234652.jpg",
         "caption": "Floor Seam And Body Mount Rust \u00b7 Rust Assessment \u00b7 2026-04-05",
@@ -33344,7 +33597,7 @@ window.J40_DASHBOARD_DATA = {
         "electrical_reset"
       ],
       "evidence_signal": "electrical_rework_photos=18",
-      "blocker_summary": "1 electrical buy rows still open; 2 rows should be stock-verified before re-buy.",
+      "blocker_summary": "2 electrical buy rows still open; 2 rows should be stock-verified before re-buy.",
       "gate_to_close": "Start/charge/lights/horn/wipers/gauges baseline passes functional checks.",
       "key_procurement_actions": "Order selected harness/sleeving path; verify on-hand connectors/relays before duplicate buys.",
       "image": {
@@ -33357,38 +33610,6 @@ window.J40_DASHBOARD_DATA = {
         "specific_component": "wiring_harness_and_fuse_distribution",
         "stage": "procurement_reconciliation",
         "media_id": "20260404_192619_gp_jsR1m0RQ",
-        "matched_tokens": []
-      }
-    },
-    {
-      "work_package_id": "WP03F",
-      "title": "Fabrication Drawing Handoff",
-      "lane": "fabrication",
-      "objective": "Send and track the rubber recreation and electrical mount fabrication packages.",
-      "current_state": "in_progress",
-      "depends_on": [
-        "WP01",
-        "WP03"
-      ],
-      "linked_workstreams": [
-        "fabrication_handoff",
-        "chassis_rubbers",
-        "electrical_reset"
-      ],
-      "evidence_signal": "4 fabrication package rows with PDF/DXF/SVG outputs",
-      "blocker_summary": "Rubber final batch still has measurement holds; electrical combined-module route is reference/provisional.",
-      "gate_to_close": "Fabricator has the current package files and first articles are accepted before batch production or loom/body closeout.",
-      "key_procurement_actions": "Use the Fabrication workstream package links; do not fabricate superseded electrical routes unless deliberately reopened.",
-      "image": {
-        "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
-        "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-        "captured_date": "2026-05-02",
-        "captured_time": "00:44:42",
-        "media_type": "photo",
-        "component_group": "procurement_inventory",
-        "specific_component": "rubber_parts_recreation_samples",
-        "stage": "procurement_reconciliation",
-        "media_id": "20260502_004442_gp_7WcFHjLQ",
         "matched_tokens": []
       }
     },
@@ -33485,7 +33706,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Confirm price and place purchase-ready orders",
         "status": "in_progress",
-        "detail": "8 rows still in purchase_ready."
+        "detail": "9 rows still in purchase_ready."
       },
       {
         "label": "Place selected quote orders",
@@ -33508,12 +33729,16 @@ window.J40_DASHBOARD_DATA = {
         "count": 3
       },
       {
+        "stage": "deferred_until_failed_or_engine_lift_scope",
+        "count": 1
+      },
+      {
         "stage": "inspect_then_buy",
         "count": 2
       },
       {
         "stage": "next_phase_purchase",
-        "count": 3
+        "count": 1
       },
       {
         "stage": "ordered_pending_delivery",
@@ -33525,7 +33750,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "purchase_ready",
-        "count": 8
+        "count": 9
       },
       {
         "stage": "spec_needed_before_order",
@@ -33539,7 +33764,7 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_next_action": [
       {
         "next_action": "confirm_price_then_order",
-        "count": 8
+        "count": 9
       },
       {
         "next_action": "track_delivery",
@@ -33860,6 +34085,39 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "rubber_grommets",
           "matched_tokens": [
             "grommet"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "priority": "P0",
+        "entry_id": "part_cabin_compact_fuse_boxes",
+        "workstream": "electrical_reset",
+        "item": "Compact covered cabin blade fuse boxes - likely 3 identical units",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "next_action": "confirm_price_then_order",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Bilal Ganj / compact automotive electrical supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought",
+        "notes": "User correction 2026-05-03: cabin/interior car fuse boxes have not been ordered. Relay block row 55 remains received/as specified, but the generic Portable 12-Way universal fuse box row is not purchased stock. Buy likely 3 compact covered blade-fuse boxes for the car/cabin circuits; use compact OEM-style covered ATO/ATC blocks with secure lids and strong terminals, same model if possible. No relay block, no large open universal block, and do not count the Portable 12-Way wording as bought evidence. Confirm final cabin mounting envelope and circuit split before payment.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/car_cover.jpg",
+          "caption": "Compact covered cabin blade fuse boxes - likely 3 identical units \u00b7 car cover reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "car_cover",
+          "matched_tokens": [
+            "cover"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -34748,7 +35006,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "BR-REAR-002|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-        "notes": "Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube only after flare standard, fitting threads/seats, bend templates, route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
+        "notes": "Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube from the 7600 mm / 25 ft brake tube coil allowance only after flare standard, fitting threads/seats, bend templates, final left/right route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
         "links": [],
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -34880,7 +35138,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready via RPO-BRAKE-001A/B: front/rear brake flex hoses by current fitting thread/banjo/seat, bracket retention, free length and full-droop length; brake hard-line stock 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with brake-rated fittings. Release hold: close fitting photos, flare/thread/seat confirmation, route lengths, bend templates, and full-droop slack before payment/fabrication.",
+        "notes": "Spec ready via RPO-BRAKE-001A/B: front/rear brake flex hoses by current fitting thread/banjo/seat, bracket retention, free length and full-droop length; brake hard-line length basis is 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with brake-rated fittings. Release hold: close fitting photos, flare/thread/seat confirmation, final individual route lengths, bend templates, and full-droop slack before payment/fabrication.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
@@ -35167,6 +35425,39 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "part_cabin_compact_fuse_boxes",
+        "workstream": "electrical_reset",
+        "item": "Compact covered cabin blade fuse boxes - likely 3 identical units",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Bilal Ganj / compact automotive electrical supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought",
+        "notes": "User correction 2026-05-03: cabin/interior car fuse boxes have not been ordered. Relay block row 55 remains received/as specified, but the generic Portable 12-Way universal fuse box row is not purchased stock. Buy likely 3 compact covered blade-fuse boxes for the car/cabin circuits; use compact OEM-style covered ATO/ATC blocks with secure lids and strong terminals, same model if possible. No relay block, no large open universal block, and do not count the Portable 12-Way wording as bought evidence. Confirm final cabin mounting envelope and circuit split before payment.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/car_cover.jpg",
+          "caption": "Compact covered cabin blade fuse boxes - likely 3 identical units \u00b7 car cover reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "car_cover",
+          "matched_tokens": [
+            "cover"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
         "entry_id": "part_power_steering_upgrade",
         "workstream": "eps_vitz_upgrade",
         "item": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit",
@@ -35299,11 +35590,11 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_bed_lining",
-        "workstream": "interior_weatherproofing",
-        "item": "Bed lining",
-        "status": "planned",
-        "procurement_stage": "next_phase_purchase",
+        "entry_id": "part_mech_engine_mount_set",
+        "workstream": "mechanical_baseline",
+        "item": "Engine mount set",
+        "status": "deferred",
+        "procurement_stage": "deferred_until_failed_or_engine_lift_scope",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "amount": "",
@@ -35311,21 +35602,22 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "",
         "supply_type": "part",
-        "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00803",
-        "notes": "Listed by the user as still needed; chat sequences this after welding/primer and before sound deadening",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-03_no_engine_lift_baseline",
+        "notes": "User correction 2026-05-03: current baseline keeps the engine installed. The Vitz/SCP90 EPS route is column-assist and does not require engine removal. Do not buy an engine lift/hoist or engine mount set just for this scope. Inspect engine mounts in place after degreasing and under load; buy/replace only if there is confirmed cracking, sag, separation, oil-soak failure, or if another approved job already requires safely supporting/lifting the engine.",
         "links": [],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/bedliner.jpg",
-          "caption": "Bed lining \u00b7 bedliner reference image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/engine_mount.jpg",
+          "caption": "Engine mount set \u00b7 engine mount reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "bedliner",
+          "media_id": "engine_mount",
           "matched_tokens": [
-            "bedliner"
+            "engine",
+            "mount"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -35345,7 +35637,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH INSPECT THEN REPLACE if leakage, pedal sink, or seized seals. If the clutch line is cracked, corroded, swollen, or leaking, use RPO-CLUTCH-001A/B: match master/slave port thread, flare/seat, flex length, hard-line OD, and route length; 1500 mm brake/clutch-rated hard-line blank allowance if replaced.",
+        "notes": "MECH INSPECT THEN REPLACE if leakage, pedal sink, or seized seals. If the clutch line is cracked, corroded, swollen, or leaking, use RPO-CLUTCH-001A/B: match master/slave port thread, flare/seat, flex length, hard-line OD, and final route length; pipe length basis is a 1500 mm brake/clutch-rated hard-line blank allowance if replaced.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
@@ -35360,40 +35652,6 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "clutch",
             "line"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_mech_engine_mount_set",
-        "workstream": "mechanical_baseline",
-        "item": "Engine mount set",
-        "status": "planned",
-        "procurement_stage": "next_phase_purchase",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH INSPECT THEN REPLACE if cracked sagging or oil-soaked",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/engine_mount.jpg",
-          "caption": "Engine mount set \u00b7 engine mount reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "engine_mount",
-          "matched_tokens": [
-            "engine",
-            "mount"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -35639,7 +35897,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready via RPO-COOL-001/002/003/005: molded EPDM upper and lower radiator hoses for HJ47/2H route; small EPDM overflow hose 1000 mm local buy length cut to measured radiator-to-bottle route; formed coolant/radiator pipe from 750 mm minimum tube blank using the physical sample. Toyota/Dayco references are cross-references only. Release hold: measure thermostat/radiator/engine neck ODs, hose OD for clamps, old-hose free lengths, overflow nipple ODs, and formed-pipe tube OD/wall/centerline/bends/beads before payment or fabrication.",
+        "notes": "Spec ready via RPO-COOL-001/002/003/005: molded EPDM upper and lower radiator hoses for HJ47/2H route; small EPDM overflow hose 1000 mm local buy length cut to measured radiator-to-bottle route; formed coolant/radiator pipe length basis is 1 x 750 mm minimum tube blank, with final centerline length release-held to the physical sample measurement. Toyota/Dayco references are cross-references only. Release hold: measure thermostat/radiator/engine neck ODs, hose OD for clamps, old-hose free lengths, overflow nipple ODs, and formed-pipe tube OD/wall/centerline length/bends/beads before payment or fabrication.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg",
@@ -35673,7 +35931,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: diesel-rated 8 mm ID x 3000 mm feed hose, 6 mm ID x 2000 mm return/bleed hose, 3.2-3.5 mm ID x 1000 mm injector leak-off hose, plus conditional 8 mm OD x 5000 mm feed and 6 mm OD x 5000 mm return hard-line allowances if corrosion inspection requires replacement. Use rolled-edge fuel-injection clamps. Release hold: measure every barb/line OD, hose OD for clamps, route lengths, and flare/union style if hard lines are replaced. Do not fabricate high-pressure injector pipes.",
+        "notes": "Spec ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: diesel-rated 8 mm ID x 3000 mm feed hose, 6 mm ID x 2000 mm return/bleed hose, 3.2-3.5 mm ID x 1000 mm injector leak-off hose, plus conditional pipe lengths of 8 mm OD x 5000 mm feed tube and 6 mm OD x 5000 mm return tube if corrosion inspection requires hard-line replacement. Use rolled-edge fuel-injection clamps. Release hold: measure every barb/line OD, hose OD for clamps, route lengths, final hard-line section lengths, and flare/union style if hard lines are replaced. Do not fabricate high-pressure injector pipes.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/heavy_battery_cable.jpg",
@@ -35948,6 +36206,22 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "workstream": "electrical_reset",
+        "open_count": 5,
+        "image": {
+          "path": "../../photos/20260404_192619_gp_jsR1m0RQ.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+          "captured_date": "2026-04-04",
+          "captured_time": "19:26:19",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260404_192619_gp_jsR1m0RQ",
+          "matched_tokens": []
+        }
+      },
+      {
         "workstream": "chassis_rubbers",
         "open_count": 4,
         "image": {
@@ -35966,24 +36240,8 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "workstream": "electrical_reset",
-        "open_count": 4,
-        "image": {
-          "path": "../../photos/20260404_192619_gp_jsR1m0RQ.jpg",
-          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
-          "captured_date": "2026-04-04",
-          "captured_time": "19:26:19",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "wiring_harness_and_fuse_distribution",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260404_192619_gp_jsR1m0RQ",
-          "matched_tokens": []
-        }
-      },
-      {
         "workstream": "interior_weatherproofing",
-        "open_count": 4,
+        "open_count": 3,
         "image": null
       },
       {
@@ -37010,10 +37268,10 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "pk_buy_clean_direct#row_8",
         "system": "Engine/Trans",
         "item": "Engine mount set (2H diesel)",
-        "stage": "post_tub_off_inspection",
+        "stage": "deferred_until_failed_or_engine_lift_scope",
         "decision": "",
         "cost": "32500",
-        "notes": "Market listing range",
+        "notes": "No engine-lift baseline",
         "links": [
           {
             "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_2h+engine+mount+toyota/",
@@ -37033,9 +37291,9 @@ window.J40_DASHBOARD_DATA = {
         "system": "Engine/Trans",
         "item": "Engine mount set (2H)",
         "stage": "",
-        "decision": "BUY_IF_FAILED_INSPECTION",
+        "decision": "NO_BUY_UNLESS_FAILED_AND_LIFT_PLAN_EXISTS",
         "cost": "32500",
-        "notes": "Match 2H mount geometry; avoid gasoline-pattern mount mismatch.",
+        "notes": "Match 2H mount geometry; no engine lift purchase solely for mounts.",
         "links": [
           {
             "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_2h+engine+mount+toyota/",
@@ -38152,10 +38410,10 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "rubbers_kit_buy#row_4",
         "system": "Rubbers",
         "item": "Powertrain mount kit (engine + trans/transfer)",
-        "stage": "NOW_OR_INSPECT",
+        "stage": "HOLD_DEFERRED",
         "decision": "",
         "cost": "53500",
-        "notes": "Diesel fitment must be confirmed; avoid gasoline-only kits.",
+        "notes": "Diesel fitment must be confirmed; avoid gasoline-only kits. Do not buy a bundled powertrain mount kit under the no-engine-lift baseline.",
         "links": [
           {
             "url": "https://cruisercorps.com/products/mounts-transmission-transfer-case",
@@ -38568,27 +38826,5135 @@ window.J40_DASHBOARD_DATA = {
       }
     ]
   },
+  "capture_tasks": {
+    "summary": {
+      "total_tasks": 139,
+      "now_tasks": 128,
+      "later_tasks": 11,
+      "p0_tasks": 78,
+      "photo_tasks": 65,
+      "measurement_tasks": 109
+    },
+    "counts_by_workstream": [
+      {
+        "workstream": "replacement_pipes",
+        "count": 71
+      },
+      {
+        "workstream": "chassis_rubbers",
+        "count": 27
+      },
+      {
+        "workstream": "brake_system",
+        "count": 11
+      },
+      {
+        "workstream": "chassis_fixing",
+        "count": 8
+      },
+      {
+        "workstream": "interior_weatherproofing",
+        "count": 6
+      },
+      {
+        "workstream": "paint_refinish",
+        "count": 4
+      },
+      {
+        "workstream": "mechanical_baseline",
+        "count": 3
+      },
+      {
+        "workstream": "suspension_upgrade",
+        "count": 3
+      },
+      {
+        "workstream": "body_chassis",
+        "count": 2
+      },
+      {
+        "workstream": "eps_vitz_upgrade",
+        "count": 2
+      },
+      {
+        "workstream": "interior_controls",
+        "count": 2
+      }
+    ],
+    "counts_by_task_type": [
+      {
+        "task_type": "photo_measurement",
+        "count": 55
+      },
+      {
+        "task_type": "measurement",
+        "count": 40
+      },
+      {
+        "task_type": "template",
+        "count": 14
+      },
+      {
+        "task_type": "photo",
+        "count": 10
+      },
+      {
+        "task_type": "data",
+        "count": 8
+      },
+      {
+        "task_type": "decision",
+        "count": 7
+      },
+      {
+        "task_type": "inspection",
+        "count": 5
+      }
+    ],
+    "counts_by_priority": [
+      {
+        "priority": "P0",
+        "count": 78
+      },
+      {
+        "priority": "P1",
+        "count": 52
+      },
+      {
+        "priority": "P2",
+        "count": 9
+      }
+    ],
+    "tasks": [
+      {
+        "task_id": "component_job:brake_hydraulic_refresh_and_bias_decision",
+        "title": "brake_hydraulic_refresh_and_bias_decision",
+        "workstream": "brake_system",
+        "task_type": "inspection",
+        "priority": "P0",
+        "timing": "now",
+        "status": "inspection_pending",
+        "location": "workshop",
+        "action": "Inspect hard lines, flexible hoses, master cylinder, reservoir hoses, and brake balance/proportioning before buying conversion parts or reassembly consumables",
+        "data_needed": "Fuel and brake line replacement already exists in chat and parts data; keep hydraulic refresh and brake-bias decisions explicit.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "brake_hydraulic_refresh_and_bias_decision",
+        "notes": "",
+        "evidence_ref": "20260331_224409|20260331_224423|20260324_004852|20260423_232220_gp_ezwEcH2g|whatsapp_fj40",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260331_224409.jpg",
+            "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
+            "captured_date": "2026-03-31",
+            "captured_time": "22:44:09",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_floor_underside_and_lines",
+            "stage": "underside_inspection",
+            "media_id": "20260331_224409",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260331_224423.jpg",
+            "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
+            "captured_date": "2026-03-31",
+            "captured_time": "22:44:23",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_floor_underside_and_lines",
+            "stage": "underside_inspection",
+            "media_id": "20260331_224423",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004852.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:48:52",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004852",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
+            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "23:22:20",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "steering_and_suspension_linkages",
+            "stage": "underside_inspection",
+            "media_id": "20260423_232220_gp_ezwEcH2g",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "brake_requirement:BR-REAR-005",
+        "title": "Rear brake shoes and spring/adjuster hardware",
+        "workstream": "brake_system",
+        "task_type": "measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "needs_drum_opening",
+        "location": "Left and right rear drums and internal shoe hardware",
+        "action": "Do not order exact shoes or spring kit until the drums are opened and the shoe width/diameter and adjuster style are confirmed. Remove drums now only if the truck is safely supported and will not need parking-brake holding force.",
+        "data_needed": "Drum inside diameter, shoe width, shoe arc/length, adjuster style, spring layout, backing plate condition, shoe lining condition, drum scoring/step",
+        "blocks": "BR-REAR-005",
+        "record_result_in": "",
+        "source_label": "Brake Requirements",
+        "source_path": "data/manual/brake_system_requirements.csv",
+        "source_row_id": "BR-REAR-005",
+        "notes": "Keep rear drums as the default unless inspection gives a real reason to convert.",
+        "evidence_ref": "20260501_194322_gp_XuRtjN4w|20260324_004852|20260324_004906",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
+            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:43:22",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_spring_hanger_and_crossmember",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194322_gp_XuRtjN4w",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004852.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:48:52",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004852",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004906.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:49:06",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004906",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/brake_system_requirements.csv",
+            "label": "Brake Requirements"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:front_brake_disc_baseline",
+        "title": "front_brake_disc_baseline",
+        "workstream": "brake_system",
+        "task_type": "measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "inspection_pending",
+        "location": "workshop",
+        "action": "Confirm the existing front disc conversion hardware, identify caliper/rotor/pad/hub service needs, and avoid replacing the setup wholesale unless wear or fitment demands it",
+        "data_needed": "Current repo read is that front discs are already fitted; close only after the hardware family and service list are positively identified.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "front_brake_disc_baseline",
+        "notes": "",
+        "evidence_ref": "20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g|20260423_232236_gp_caYB252g|20260406_031010",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+            "caption": "Frame And Mount Points \u00b7 Underside Inspection \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "23:22:02",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_and_mount_points",
+            "stage": "underside_inspection",
+            "media_id": "20260423_232202_gp_ryYH6xZg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
+            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "23:22:20",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "steering_and_suspension_linkages",
+            "stage": "underside_inspection",
+            "media_id": "20260423_232220_gp_ezwEcH2g",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_232236_gp_caYB252g.jpg",
+            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "23:22:36",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "steering_and_suspension_linkages",
+            "stage": "underside_inspection",
+            "media_id": "20260423_232236_gp_caYB252g",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260406_031010.jpg",
+            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-06",
+            "captured_date": "2026-04-06",
+            "captured_time": "03:10:10",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "steering_and_suspension_linkages",
+            "stage": "underside_inspection",
+            "media_id": "20260406_031010",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-012",
+        "title": "Brake flexible hose set",
+        "workstream": "brake_system",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "safety_measurement_hold / not_direct_send",
+        "location": "front and rear axle/frame brake flex routes",
+        "action": "Capture RPI-BRAKE-001-A/B",
+        "data_needed": "Measure each hose free length, end fitting style/thread, bracket retention, full-droop slack, and route clearance in mm",
+        "blocks": "RP-BRAKE-001|RPO-BRAKE-001A|RUB-009",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-012",
+        "notes": "Open item exists; buy complete DOT/SAE J1401 assemblies only.",
+        "evidence_ref": "photo_needed",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "brake_requirement:BR-REAR-006",
+        "title": "Brake line clips / cable retainers / protective grommets",
+        "workstream": "brake_system",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "needs_clip_count",
+        "location": "Rear axle brake line and parking-brake cable retaining points",
+        "action": "Can remove rusty or broken clips now after photos and a count by position; keep one sample of each clip style until replacements are in hand.",
+        "data_needed": "Count and type of each original clip, hole size, bracket thickness, tube/cable OD, distance between support points, chafe locations",
+        "blocks": "BR-REAR-006",
+        "record_result_in": "",
+        "source_label": "Brake Requirements",
+        "source_path": "data/manual/brake_system_requirements.csv",
+        "source_row_id": "BR-REAR-006",
+        "notes": "Clips are cheap but control whether the new brake lines survive.",
+        "evidence_ref": "20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260324_004852|20260324_004906",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
+            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:43:05",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_spring_hanger_and_crossmember",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194305_gp_EllBGvXA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_194313_gp_lfUqLibA.jpg",
+            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:43:13",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_spring_hanger_and_crossmember",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194313_gp_lfUqLibA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004852.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:48:52",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004852",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004906.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:49:06",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004906",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/brake_system_requirements.csv",
+            "label": "Brake Requirements"
+          }
+        ]
+      },
+      {
+        "task_id": "brake_requirement:BR-REAR-003",
+        "title": "Rear center flexible brake hose",
+        "workstream": "brake_system",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "needs_fitting_identification",
+        "location": "Rear frame-to-axle hydraulic drop at axle center",
+        "action": "Can remove now once hydraulic lines are drained/capped and both hose ends are photographed. If the axle will be moved, keep the hose or temporarily secure the axle line until replacement is ready.",
+        "data_needed": "Chassis-side fitting thread, axle-side fitting/thread or banjo style, hose free length, bracket slot size, retaining clip shape, full-droop slack with current suspension setup",
+        "blocks": "BR-REAR-003",
+        "record_result_in": "",
+        "source_label": "Brake Requirements",
+        "source_path": "data/manual/brake_system_requirements.csv",
+        "source_row_id": "BR-REAR-003",
+        "notes": "Order with the brake flex hose set once fittings are confirmed.",
+        "evidence_ref": "20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260324_004852|20260324_004906",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
+            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:43:05",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_spring_hanger_and_crossmember",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194305_gp_EllBGvXA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_194313_gp_lfUqLibA.jpg",
+            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:43:13",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_spring_hanger_and_crossmember",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194313_gp_lfUqLibA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004852.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:48:52",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004852",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004906.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:49:06",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004906",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/brake_system_requirements.csv",
+            "label": "Brake Requirements"
+          }
+        ]
+      },
+      {
+        "task_id": "brake_requirement:BR-REAR-001",
+        "title": "Rear parking brake / handbrake cable set",
+        "workstream": "brake_system",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "needs_cable_end_identification",
+        "location": "Rear axle to rear drum backing plates",
+        "action": "Can remove now after photos and labels; disconnect at equalizer/intermediate link and at both rear backing plates, then keep the old cables as length/end samples. Do not cut unless a cable is seized and already marked for replacement.",
+        "data_needed": "Overall cable length, sheath length, end fitting type at backing plate, end fitting type at equalizer/intermediate cable, bracket/clip positions, adjuster thread size and travel",
+        "blocks": "BR-REAR-001",
+        "record_result_in": "",
+        "source_label": "Brake Requirements",
+        "source_path": "data/manual/brake_system_requirements.csv",
+        "source_row_id": "BR-REAR-001",
+        "notes": "Treat as baseline replace unless the cables are demonstrably new and move freely.",
+        "evidence_ref": "20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260324_004852|20260324_004906",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
+            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:43:05",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_spring_hanger_and_crossmember",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194305_gp_EllBGvXA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
+            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:43:22",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_spring_hanger_and_crossmember",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194322_gp_XuRtjN4w",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004852.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:48:52",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004852",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004906.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:49:06",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004906",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/brake_system_requirements.csv",
+            "label": "Brake Requirements"
+          }
+        ]
+      },
+      {
+        "task_id": "brake_requirement:BR-REAR-004",
+        "title": "Rear wheel cylinders and bleed screws",
+        "workstream": "brake_system",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "needs_drum_opening",
+        "location": "Left and right rear drum backing plates",
+        "action": "Do not remove the wheel cylinders until each drum/backing plate is photographed open. Once open, plan to replace both rear wheel cylinders unless they are confirmed fresh and leak-free.",
+        "data_needed": "Cylinder bore, mounting bolt spacing, port thread, pushrod/slot style, backing plate side, drum/shoe family, bleed screw size",
+        "blocks": "BR-REAR-004",
+        "record_result_in": "",
+        "source_label": "Brake Requirements",
+        "source_path": "data/manual/brake_system_requirements.csv",
+        "source_row_id": "BR-REAR-004",
+        "notes": "Wheel cylinders are safety-critical and should be treated as age-replacement unless proven recent.",
+        "evidence_ref": "20260501_194322_gp_XuRtjN4w|20260324_004852|20260324_004906",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
+            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:43:22",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_spring_hanger_and_crossmember",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194322_gp_XuRtjN4w",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004852.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:48:52",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004852",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004906.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:49:06",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004906",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/brake_system_requirements.csv",
+            "label": "Brake Requirements"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:rear_brake_drum_baseline",
+        "title": "rear_brake_drum_baseline",
+        "workstream": "brake_system",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "inspection_pending",
+        "location": "workshop",
+        "action": "Inspect rear drum hardware, wheel cylinders, shoes, parking-brake linkage, and backing plates; rebuild worn items and keep rear drums unless a measured need for rear discs appears",
+        "data_needed": "Photo evidence points to rear drums; this row captures the default rebuild path rather than assuming a conversion.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "rear_brake_drum_baseline",
+        "notes": "",
+        "evidence_ref": "20260324_004852|20260324_004906",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260324_004852.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:48:52",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004852",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004906.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:49:06",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004906",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "brake_requirement:BR-REAR-002",
+        "title": "Rear axle hard brake lines",
+        "workstream": "brake_system",
+        "task_type": "template",
+        "priority": "P0",
+        "timing": "now",
+        "status": "needs_thread_flare_confirmation",
+        "location": "Rear axle tube from center flex-hose/T-union to left and right wheel cylinders",
+        "action": "Can remove now only after full-route photos, side labels, and union/fitting close-ups; cap or plug every open hydraulic port immediately and keep the old tubes as bend templates.",
+        "data_needed": "Tube OD, line length by side, flare standard, union thread, wheel-cylinder port thread, bend pattern, clip locations, clearance to axle housing, U-bolts, shocks, leaf springs, and tyres",
+        "blocks": "BR-REAR-002",
+        "record_result_in": "",
+        "source_label": "Brake Requirements",
+        "source_path": "data/manual/brake_system_requirements.csv",
+        "source_row_id": "BR-REAR-002",
+        "notes": "Replace/recreate before chassis coating if corrosion or weak clips are present.",
+        "evidence_ref": "20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260324_004852|20260324_004906",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
+            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:43:05",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_spring_hanger_and_crossmember",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194305_gp_EllBGvXA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_194313_gp_lfUqLibA.jpg",
+            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:43:13",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_spring_hanger_and_crossmember",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194313_gp_lfUqLibA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004852.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:48:52",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004852",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004906.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:49:06",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004906",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/brake_system_requirements.csv",
+            "label": "Brake Requirements"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:rear_brake_cable_line_refresh",
+        "title": "rear_brake_cable_line_refresh",
+        "workstream": "brake_system",
+        "task_type": "template",
+        "priority": "P0",
+        "timing": "now",
+        "status": "spec_population",
+        "location": "workshop",
+        "action": "Replace rear parking-brake cables, rear axle hard lines, center flex hose, and retaining clips after photographing/removing the old parts as templates",
+        "data_needed": "The visible rear axle wires are brake hard lines and parking-brake cable/linkage. These can be removed now only after side labels, close photos, capping hydraulic ports, and preserving old parts as templates.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "rear_brake_cable_line_refresh",
+        "notes": "",
+        "evidence_ref": "data_brake_system_requirements|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260501_194322_gp_XuRtjN4w|20260324_004852|20260324_004906",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
+            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:43:05",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_spring_hanger_and_crossmember",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194305_gp_EllBGvXA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_194313_gp_lfUqLibA.jpg",
+            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:43:13",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_spring_hanger_and_crossmember",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194313_gp_lfUqLibA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
+            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:43:22",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_spring_hanger_and_crossmember",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194322_gp_XuRtjN4w",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004852.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:48:52",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004852",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004906.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:49:06",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004906",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:chassis_hard_lines_and_brackets",
+        "title": "chassis_hard_lines_and_brackets",
+        "workstream": "chassis_fixing",
+        "task_type": "inspection",
+        "priority": "P0",
+        "timing": "now",
+        "status": "inspection_pending",
+        "location": "workshop",
+        "action": "Inspect brake/fuel hard lines, clips, and bracket corrosion; replace weak clips/sections before final chassis coating",
+        "data_needed": "Body-off access gives best visibility for safety-critical line and bracket checks.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "chassis_hard_lines_and_brackets",
+        "notes": "",
+        "evidence_ref": "user_update_2026-04-22_body_removed_chassis_check|photo_inventory_2026-04-22",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:issue_brake_fuel_line_clip_corrosion",
+        "title": "issue_brake_fuel_line_clip_corrosion",
+        "workstream": "chassis_fixing",
+        "task_type": "inspection",
+        "priority": "P0",
+        "timing": "now",
+        "status": "pending_work",
+        "location": "workshop",
+        "action": "Inspect brake/fuel hard-lines under clips and bends; replace corroded clips and re-run/replace weak sections before coating",
+        "data_needed": "Added from body-off issue review; safety-critical and must close before final paint/protection.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "issue_brake_fuel_line_clip_corrosion",
+        "notes": "",
+        "evidence_ref": "user_update_2026-04-22_body_removed_chassis_check|annotated_issues_20260422|20260331_224409|20260331_224423",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260331_224409.jpg",
+            "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
+            "captured_date": "2026-03-31",
+            "captured_time": "22:44:09",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_floor_underside_and_lines",
+            "stage": "underside_inspection",
+            "media_id": "20260331_224409",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260331_224423.jpg",
+            "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
+            "captured_date": "2026-03-31",
+            "captured_time": "22:44:23",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_floor_underside_and_lines",
+            "stage": "underside_inspection",
+            "media_id": "20260331_224423",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_release_action:BMA-002",
+        "title": "BMA-002",
+        "workstream": "chassis_rubbers",
+        "task_type": "measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "Decide the route after the layout: complete OE/reproduction package, or local fabrication from the measured samples. Mark the rejected route as do-not-order.",
+        "data_needed": "",
+        "blocks": "BM-OE-001 to BM-OE-014; BM-FAB-001 to BM-FAB-005",
+        "record_result_in": "data/manual/body_mount_order_release_specs.csv notes or data/manual/body_mount_station_closure_sheet.csv",
+        "source_label": "Body Mount Release Actions",
+        "source_path": "data/manual/body_mount_release_actions.csv",
+        "source_row_id": "BMA-002",
+        "notes": "Buying both routes duplicates expensive rubber and can create mixed hardness/height problems.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_release_actions.csv",
+            "label": "Body Mount Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_release_action:BMA-004",
+        "title": "BMA-004",
+        "workstream": "chassis_rubbers",
+        "task_type": "measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "Measure one best large circular cushion and one best small circular cushion with calipers: three OD readings, centre bore/register, register OD/depth, and four height readings.",
+        "data_needed": "",
+        "blocks": "BM-FAB-001; BM-FAB-002; BM-HW-001; BM-HW-002",
+        "record_result_in": "data/manual/rubber_recreation_measurement_closure.csv",
+        "source_label": "Body Mount Release Actions",
+        "source_path": "data/manual/body_mount_release_actions.csv",
+        "source_row_id": "BMA-004",
+        "notes": "The tape-measure dimensions are good enough for quote/prototype, but final fabrication needs caliper release.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_release_actions.csv",
+            "label": "Body Mount Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_release_action:BMA-005",
+        "title": "BMA-005",
+        "workstream": "chassis_rubbers",
+        "task_type": "measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "Disassemble or inspect one small circular mount stack and decide whether it is one 22 mm cushion or a split medium bushing plus seat stack.",
+        "data_needed": "",
+        "blocks": "BM-FAB-002; BM-HW-001; BM-SHIM-001",
+        "record_result_in": "data/manual/rubber_recreation_measurement_closure.csv",
+        "source_label": "Body Mount Release Actions",
+        "source_path": "data/manual/body_mount_release_actions.csv",
+        "source_row_id": "BMA-005",
+        "notes": "This controls small rubber height, sleeve length, and installed body height.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_release_actions.csv",
+            "label": "Body Mount Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_release_action:BMA-006",
+        "title": "BMA-006",
+        "workstream": "chassis_rubbers",
+        "task_type": "measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "Measure old sleeve/crush tube ID, OD, and length at each station. If no sleeve survives, dry-stack rubber/cups and derive sleeve length from final stack height minus 3-4 mm compression.",
+        "data_needed": "",
+        "blocks": "BM-HW-001; BM-HW-003",
+        "record_result_in": "data/manual/rubber_recreation_measurement_closure.csv",
+        "source_label": "Body Mount Release Actions",
+        "source_path": "data/manual/body_mount_release_actions.csv",
+        "source_row_id": "BMA-006",
+        "notes": "Sleeve length prevents over-crushing the rubber and determines the bolt clamped stack.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_release_actions.csv",
+            "label": "Body Mount Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_release_action:BMA-007",
+        "title": "BMA-007",
+        "workstream": "chassis_rubbers",
+        "task_type": "measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "Thread-gauge every old body-mount bolt and captive nut. Confirm M10 x 1.25 or record the actual pitch. Measure usable captive nut depth and old bolt under-head length.",
+        "data_needed": "",
+        "blocks": "BM-OE-011 to BM-OE-014; BM-HW-003; BM-HW-004",
+        "record_result_in": "data/manual/body_mount_station_closure_sheet.csv",
+        "source_label": "Body Mount Release Actions",
+        "source_path": "data/manual/body_mount_release_actions.csv",
+        "source_row_id": "BMA-007",
+        "notes": "The catalog confirms bolt identities but not usable length. Wrong pitch or bottomed bolts will damage captive nuts.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_release_actions.csv",
+            "label": "Body Mount Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_release_action:BMA-008",
+        "title": "BMA-008",
+        "workstream": "chassis_rubbers",
+        "task_type": "measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "Preserve and measure original shim/spacer packs by station. Record each thickness and whether it sat metal-to-metal or inside the rubber stack.",
+        "data_needed": "",
+        "blocks": "BM-SHIM-001; BM-SHIM-002",
+        "record_result_in": "data/manual/body_mount_station_closure_sheet.csv",
+        "source_label": "Body Mount Release Actions",
+        "source_path": "data/manual/body_mount_release_actions.csv",
+        "source_row_id": "BMA-008",
+        "notes": "Shim thickness controls tub height and panel gaps. Shims must not be replaced by random washer stacks.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_release_actions.csv",
+            "label": "Body Mount Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_release_action:BMA-001",
+        "title": "BMA-001",
+        "workstream": "chassis_rubbers",
+        "task_type": "photo",
+        "priority": "P0",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "Lay out every removed body-mount rubber, stopper/seat, washer/cup, sleeve, shim, and bolt on a board by vehicle position: front-left, front-right, middle-left, middle-right, rear-left, rear-right, plus separate front-support left/right.",
+        "data_needed": "",
+        "blocks": "BM-OE-001 to BM-OE-014; BM-FAB-001 to BM-FAB-005; BM-HW-001 to BM-HW-005; BM-SHIM-001 to BM-SHIM-002",
+        "record_result_in": "data/manual/body_mount_station_closure_sheet.csv; photos; data/manual/rubber_recreation_measurement_closure.csv",
+        "source_label": "Body Mount Release Actions",
+        "source_path": "data/manual/body_mount_release_actions.csv",
+        "source_row_id": "BMA-001",
+        "notes": "The current OE candidate list has 16 cushion/seat rubber pieces while the photo-derived custom package has 12 circular cushions plus front support pieces. The route cannot be released until the actual vehicle count is clear.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_release_actions.csv",
+            "label": "Body Mount Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_release_action:BMA-003",
+        "title": "BMA-003",
+        "workstream": "chassis_rubbers",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "For the current stopper/seat pieces, measure OD, centre hole/ID, total height, dish/register depth, and steel/rubber thickness. Photograph each one beside a ruler and label station.",
+        "data_needed": "",
+        "blocks": "BM-OE-007 to BM-OE-009; BM-HW-002; BM-FAB-002",
+        "record_result_in": "data/manual/rubber_recreation_measurement_closure.csv",
+        "source_label": "Body Mount Release Actions",
+        "source_path": "data/manual/body_mount_release_actions.csv",
+        "source_row_id": "BMA-003",
+        "notes": "The stopper/seat pieces are the likely link between the OE part-number list and the custom 64 mm small cushion stack.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_release_actions.csv",
+            "label": "Body Mount Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:eps_vitz_complete_kit_market_check",
+        "title": "eps_vitz_complete_kit_market_check",
+        "workstream": "eps_vitz_upgrade",
+        "task_type": "photo",
+        "priority": "P0",
+        "timing": "now",
+        "status": "planned_scope_lock",
+        "location": "market_scout",
+        "action": "Capture 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 donor identity complete kit contents labels shafts U-joints couplers brackets bench-test evidence seller contact and return terms before payment",
+        "data_needed": "Pre-purchase market check only; close with buy reject or quote-only decision.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "eps_vitz_complete_kit_market_check",
+        "notes": "",
+        "evidence_ref": "whatsapp_fj40|fj40-00263|whatsapp_akber|akber_khan-00858",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_release_action:RPA-010",
+        "title": "RPA-010",
+        "workstream": "replacement_pipes",
+        "task_type": "inspection",
+        "priority": "P0",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "Dry-fit and test by circuit: cooling pressure test, fuel prime leak test, brake bleed/pressure test, clutch bleed, vacuum assist check, and final chafe inspection.",
+        "data_needed": "",
+        "blocks": "all",
+        "record_result_in": "dashboard closeout photos",
+        "source_label": "Replacement Pipe Release Actions",
+        "source_path": "data/manual/replacement_pipe_release_actions.csv",
+        "source_row_id": "RPA-010",
+        "notes": "A replacement is not closed until routing, support, clearance, and leak-free operation are proven.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_release_actions.csv",
+            "label": "Replacement Pipe Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-002",
+        "title": "Lower radiator hose",
+        "workstream": "replacement_pipes",
+        "task_type": "measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "measurement_hold / not_direct_send",
+        "location": "front lower engine bay",
+        "action": "Complete RPI-COOL-002-A/B/C before payment",
+        "data_needed": "Measure radiator lower outlet OD, engine inlet OD, old-hose free length, hose OD, clamp band width, and lower bend clearance in mm",
+        "blocks": "RP-COOL-002|RPO-COOL-002|RUB-014",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-002",
+        "notes": "Open item exists; final route must clear fan, belt, and crossmember.",
+        "evidence_ref": "20260430_215957_gp_2iBbUagw|20260430_220004_gp_C9oYiYmA",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
+            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+            "captured_date": "2026-04-30",
+            "captured_time": "21:59:57",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
+            "stage": "mechanical_inspection",
+            "media_id": "20260430_215957_gp_2iBbUagw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
+            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+            "captured_date": "2026-04-30",
+            "captured_time": "22:00:04",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
+            "stage": "mechanical_inspection",
+            "media_id": "20260430_220004_gp_C9oYiYmA",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_release_action:RPA-002",
+        "title": "RPA-002",
+        "workstream": "replacement_pipes",
+        "task_type": "measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "Measure all coolant, heater, overflow, fuel, vacuum, and breather barbs/nipples with calipers; record route length, old-hose free length where available, and clamp outside diameter in mm.",
+        "data_needed": "",
+        "blocks": "RPO-COOL-001|RPO-COOL-002|RPO-COOL-003|RPO-COOL-004A|RPO-COOL-004B|RPO-FUEL-001A|RPO-FUEL-001B|RPO-FUEL-001C|RPO-VAC-001A|RPO-VAC-001B",
+        "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_label": "Replacement Pipe Release Actions",
+        "source_path": "data/manual/replacement_pipe_release_actions.csv",
+        "source_row_id": "RPA-002",
+        "notes": "The published part basis is ready, but the fitted vehicle dimensions control final hose ID, cut length, and clamp size.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_release_actions.csv",
+            "label": "Replacement Pipe Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_release_action:RPA-003",
+        "title": "RPA-003",
+        "workstream": "replacement_pipes",
+        "task_type": "measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "For the formed metal coolant pipe, flat-lay the physical sample with a tape and measure tube OD, wall, centerline lengths, bend radii, clocking, beads, clamp lands, hose overlap, and confirm the 750 mm minimum tube blank allowance before trimming.",
+        "data_needed": "",
+        "blocks": "RPO-COOL-005",
+        "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_label": "Replacement Pipe Release Actions",
+        "source_path": "data/manual/replacement_pipe_release_actions.csv",
+        "source_row_id": "RPA-003",
+        "notes": "The fabricator needs production dimensions from the physical sample; 750 mm is the orderable blank allowance, not the final centerline cut length.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_release_actions.csv",
+            "label": "Replacement Pipe Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_release_action:RPA-005",
+        "title": "RPA-005",
+        "workstream": "replacement_pipes",
+        "task_type": "measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "Inspect chassis fuel hard lines under clips; decide keep, section repair, or full replacement; record tube OD, route length, bends, pass-through protection, and clip spacing in mm; release 8 mm OD x 5000 mm feed and 6 mm OD x 5000 mm return allowances only if replacement is needed.",
+        "data_needed": "",
+        "blocks": "RPO-FUEL-002A|RPO-FUEL-002B|RPO-CLIP-001",
+        "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_label": "Replacement Pipe Release Actions",
+        "source_path": "data/manual/replacement_pipe_release_actions.csv",
+        "source_row_id": "RPA-005",
+        "notes": "Hidden corrosion under clips is the reason to replace hard lines before coating and body refit; 5000 mm per line is the orderable allowance pending final section measurement.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_release_actions.csv",
+            "label": "Replacement Pipe Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-016",
+        "title": "Rubber-lined P-clips pass-through grommets and line protection",
+        "workstream": "replacement_pipes",
+        "task_type": "measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "mostly_order_ready_measurement_hold / conditional_direct_send",
+        "location": "chassis hard-line routes",
+        "action": "Complete RPI-FUEL-002-C and brake/clutch clip checks",
+        "data_needed": "Count support points and measure line OD, hole OD, panel thickness, groove width, and pass-through location in mm",
+        "blocks": "RPO-CLIP-001|RUB-003",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-016",
+        "notes": "Open item exists; can order a mixed pack after measured line ODs are confirmed.",
+        "evidence_ref": "20260422_004306_gp_vGlNr2UA|20260422_004311_gp_994KQ0Pw",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260422_004306_gp_vGlNr2UA.jpg",
+            "caption": "Frame Rail Body Mount And Hard Line Detail \u00b7 Underside Inspection \u00b7 2026-04-22",
+            "captured_date": "2026-04-22",
+            "captured_time": "00:43:06",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_rail_body_mount_and_hard_line_detail",
+            "stage": "underside_inspection",
+            "media_id": "20260422_004306_gp_vGlNr2UA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260422_004311_gp_994KQ0Pw.jpg",
+            "caption": "Frame Rail Body Mount And Hard Line Detail \u00b7 Underside Inspection \u00b7 2026-04-22",
+            "captured_date": "2026-04-22",
+            "captured_time": "00:43:11",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_rail_body_mount_and_hard_line_detail",
+            "stage": "underside_inspection",
+            "media_id": "20260422_004311_gp_994KQ0Pw",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-001",
+        "title": "Upper radiator hose",
+        "workstream": "replacement_pipes",
+        "task_type": "measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "measurement_hold / not_direct_send",
+        "location": "front top engine bay",
+        "action": "Complete RPI-COOL-001-A/B/C before payment",
+        "data_needed": "Measure thermostat neck OD, radiator upper neck OD, old-hose free length, hose OD, clamp band width, and fan/belt/radiator-support clearance in mm",
+        "blocks": "RP-COOL-001|RPO-COOL-001|RUB-014",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-001",
+        "notes": "Open item exists; Toyota/Dayco references identify shape only.",
+        "evidence_ref": "20260430_220004_gp_C9oYiYmA",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
+            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+            "captured_date": "2026-04-30",
+            "captured_time": "22:00:04",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
+            "stage": "mechanical_inspection",
+            "media_id": "20260430_220004_gp_C9oYiYmA",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-006-C",
+        "title": "Formed coolant pipe connector hoses - installed kink clearance",
+        "workstream": "replacement_pipes",
+        "task_type": "photo",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Front engine cooling route dry-fit position",
+        "action": "Installed or held-in-place route photo showing both connector hoses and bends",
+        "data_needed": "connector_a_bend_clearance, connector_b_bend_clearance, kink_check, fan_belt_radiator_clearance",
+        "blocks": "RPO-COOL-006A|RPO-COOL-006B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-006-C",
+        "notes": "Needed before deciding straight hose versus molded connector",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-005-C",
+        "title": "Formed metal coolant pipe - installed clearance",
+        "workstream": "replacement_pipes",
+        "task_type": "photo",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Front engine cooling route dry-fit position",
+        "action": "Installed or held-in-place photo showing fan/belt/radiator/body clearance",
+        "data_needed": "clearance_to_fan, clearance_to_belts, clearance_to_radiator, clearance_to_body",
+        "blocks": "RPO-COOL-005",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-005-C",
+        "notes": "Needed before coating fabricated pipe",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_release_action:RPA-001",
+        "title": "RPA-001",
+        "workstream": "replacement_pipes",
+        "task_type": "photo",
+        "priority": "P0",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "Photograph and label every replacement pipe, hose, and hard-line route by circuit before removal or ordering.",
+        "data_needed": "",
+        "blocks": "all",
+        "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_label": "Replacement Pipe Release Actions",
+        "source_path": "data/manual/replacement_pipe_release_actions.csv",
+        "source_row_id": "RPA-001",
+        "notes": "Prevents mixing coolant, fuel, brake, clutch, vacuum, and breather requirements into one generic hose order.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_release_actions.csv",
+            "label": "Replacement Pipe Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-009",
+        "title": "Brake booster vacuum hose",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "measurement_hold / not_direct_send",
+        "location": "vacuum pump to booster/check valve",
+        "action": "Capture RPI-VAC-001-A/B",
+        "data_needed": "Measure pump barb OD, booster/check-valve OD, check-valve direction, route length, hose OD, and heat/chafe exposure in mm",
+        "blocks": "RP-VAC-001|RPO-VAC-001A|RUB-016",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-009",
+        "notes": "Open item exists; must be reinforced so it cannot collapse.",
+        "evidence_ref": "photo_needed",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-VAC-001-B",
+        "title": "Brake booster vacuum hose - booster and check valve",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Brake booster/check-valve area",
+        "action": "Close photo showing check-valve direction and booster fitting",
+        "data_needed": "booster_checkvalve_od, checkvalve_direction, route_length",
+        "blocks": "RPO-VAC-001A",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-VAC-001-B",
+        "notes": "Direction arrow must be readable if present",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-VAC-001-A",
+        "title": "Brake booster vacuum hose - pump end",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Vacuum pump outlet and hose start",
+        "action": "Close photo of vacuum pump barb and hose end",
+        "data_needed": "pump_barb_od, hose_id, hose_od_for_clamp",
+        "blocks": "RPO-VAC-001A",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-VAC-001-A",
+        "notes": "Confirm vacuum hose not oil outlet hose",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-VAC-001-C",
+        "title": "Breather and oil-mist hose route",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Crankcase breather/vacuum pump oil outlet area",
+        "action": "Close and route photos of breather/oil-mist hose and spigots",
+        "data_needed": "breather_spigot_od, route_length, hose_id, oil_exposure",
+        "blocks": "RPO-VAC-001B|RPO-VAC-001C",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-VAC-001-C",
+        "notes": "Separate breather/oil hose from coolant and vacuum hose",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-013",
+        "title": "Clutch flex hose",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "inspection_hold / not_direct_send",
+        "location": "bellhousing slave/master-to-slave route",
+        "action": "Capture RPI-CLUTCH-001-A/B/C",
+        "data_needed": "Measure master/slave port thread, flare/seat style, flex free length, bracket retention, and drivetrain movement clearance in mm",
+        "blocks": "RP-CLUTCH-001|RPO-CLUTCH-001A|RUB-010",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-013",
+        "notes": "Open conditional item exists; hydraulic-rated crimped hose only.",
+        "evidence_ref": "20260430_215939_gp_EjZ7u1ow",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260430_215939_gp_EjZ7u1ow.jpg",
+            "caption": "Bellhousing Clutch Linkage And Gearbox Case \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+            "captured_date": "2026-04-30",
+            "captured_time": "21:59:39",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "bellhousing_clutch_linkage_and_gearbox_case",
+            "stage": "mechanical_inspection",
+            "media_id": "20260430_215939_gp_EjZ7u1ow",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-CLUTCH-001-A",
+        "title": "Clutch master line and fitting",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Clutch master cylinder outlet and hard-line start",
+        "action": "Close photo of port/fitting and first bend",
+        "data_needed": "master_port_thread, flare_or_seat, hard_line_od",
+        "blocks": "RPO-CLUTCH-001A|RPO-CLUTCH-001B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-CLUTCH-001-A",
+        "notes": "Hydraulic line identification",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-CLUTCH-001-B",
+        "title": "Clutch slave flex/hard-line transition",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Bellhousing clutch slave cylinder area",
+        "action": "Close photos of slave port flex hose hard-line transition and bracket",
+        "data_needed": "slave_port_thread, flex_free_length, hard_line_od, bracket_retention",
+        "blocks": "RPO-CLUTCH-001A|RPO-CLUTCH-001B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-CLUTCH-001-B",
+        "notes": "Show movement transition near drivetrain",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-FUEL-001-A",
+        "title": "Diesel feed hose - filter and injection pump feed",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Engine bay fuel filter to injection pump feed route",
+        "action": "Close photos of filter barb and pump feed barb with hose route",
+        "data_needed": "filter_barb_od, pump_feed_barb_od, feed_route_length, hose_od_for_clamps",
+        "blocks": "RPO-FUEL-001A",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-FUEL-001-A",
+        "notes": "Low-pressure diesel feed only",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_circuit_closure:RP-FUEL-001",
+        "title": "Diesel feed return and injector leak-off rubber hoses",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "release_hold / direct_location_and_sample_photo",
+        "location": "Engine bay fuel filter / injection pump / injector return area",
+        "action": "Measure every barb in mm and read sample hose markings before purchase",
+        "data_needed": "filter_and_pump_barbs_tbd_mm; injector_leakoff_nipples_tbd_mm; 3000_feed_2000_return_1000_leakoff_buy_lengths; 8mm_feed_6mm_return_3_2_to_3_5mm_leakoff_working_basis; fuel_injection_clamps_tbd_mm",
+        "blocks": "RPO-FUEL-001A|RPO-FUEL-001B|RPO-FUEL-001C",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Circuit Closure",
+        "source_path": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_row_id": "RP-FUEL-001",
+        "notes": "Diesel-rated hose only; no high-pressure injector pipe fabrication.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_circuit_closure_sheet.csv",
+            "label": "Replacement Pipe Circuit Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-FUEL-001-B",
+        "title": "Diesel return and bleed hose",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Injection pump return/bleed and filter return area",
+        "action": "Close photos of return barbs and route back to return line",
+        "data_needed": "pump_return_barb_od, return_route_length, hose_od_for_clamps",
+        "blocks": "RPO-FUEL-001B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-FUEL-001-B",
+        "notes": "Do not include high-pressure injector pipes as replacement hose",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-006-A",
+        "title": "Formed coolant pipe connector hose - end A",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Loose formed coolant pipe connector hose at end A",
+        "action": "Close photo square to connector A with pipe end bead clamp land mating hose end and tape/caliper visible",
+        "data_needed": "pipe_end_a_od, mating_spigot_od, connector_a_free_length, hose_id, hose_od_for_clamp, hose_overlap, clamp_band_width",
+        "blocks": "RPO-COOL-006A",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-006-A",
+        "notes": "Keep connector on sample until length and overlap are recorded",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-006-B",
+        "title": "Formed coolant pipe connector hose - end B",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Loose formed coolant pipe connector hose at end B",
+        "action": "Close photo square to connector B with pipe end bead clamp land mating hose end and tape/caliper visible",
+        "data_needed": "pipe_end_b_od, mating_spigot_od, connector_b_free_length, hose_id, hose_od_for_clamp, hose_overlap, clamp_band_width",
+        "blocks": "RPO-COOL-006B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-006-B",
+        "notes": "Keep connector on sample until length and overlap are recorded",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-005-B",
+        "title": "Formed metal coolant pipe - beaded ends and clamp lands",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Loose formed coolant pipe both hose ends",
+        "action": "Close photos of both ends showing bead/flare and clamp lands",
+        "data_needed": "tube_od, hose_id, bead_height, clamp_land_length, hose_overlap",
+        "blocks": "RPO-COOL-005",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-005-B",
+        "notes": "Capture each end separately if needed",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-005-A",
+        "title": "Formed metal coolant pipe - full flat-lay sample",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Loose formed coolant pipe sample on flat surface",
+        "action": "Flat-lay full pipe with tape along centerline and both ends visible",
+        "data_needed": "centerline_length, visible_envelope_height, offset, tube_od",
+        "blocks": "RPO-COOL-005",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-005-A",
+        "notes": "Use physical sample not installed route only",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-BRAKE-001-A",
+        "title": "Front brake flex hoses",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Front caliper flex hose ends and brackets",
+        "action": "Close photos of both ends plus full-droop/free-length reference",
+        "data_needed": "end_thread_or_banjo, free_length, full_droop_slack, bracket_retention",
+        "blocks": "RPO-BRAKE-001A",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-BRAKE-001-A",
+        "notes": "Safety circuit photo set",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-004-B",
+        "title": "Front heater hoses - engine nipple ends",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Engine heater nipple area",
+        "action": "Close photo of engine-side heater nipples and hose/clamp relationship",
+        "data_needed": "engine_heater_nipple_od, hose_od_for_clamps",
+        "blocks": "RPO-COOL-004A|RPO-COOL-004B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-004-B",
+        "notes": "Show both engine-side fittings if present",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-004-A",
+        "title": "Front heater hoses - firewall/heater core ends",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Firewall heater core nipple area",
+        "action": "Close photo of heater core inlet/outlet nipples and clamps",
+        "data_needed": "heater_core_nipple_od, hose_od_for_clamps, inlet_outlet_identification",
+        "blocks": "RPO-COOL-004A|RPO-COOL-004B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-004-A",
+        "notes": "Mark inlet versus outlet if visible",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-004-C",
+        "title": "Front heater hoses - route and lengths",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Engine bay firewall heater hose routing",
+        "action": "Wide route photo with tape along inlet and outlet paths",
+        "data_needed": "inlet_route_length, outlet_route_length, exhaust_clearance",
+        "blocks": "RPO-COOL-004A|RPO-COOL-004B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-004-C",
+        "notes": "Include firewall pass-through and heat exposure",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_circuit_closure:RP-COOL-004",
+        "title": "Front heater water inlet and outlet hoses",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "release_hold / needs_close_photo",
+        "location": "Firewall/heater core and engine heater nipples",
+        "action": "Measure nipple ODs in mm and confirm whether rear heater circuit exists",
+        "data_needed": "engine_heater_nipple_od_tbd_mm; heater_core_nipple_od_tbd_mm; 400_inlet_280_outlet_working_basis; expected_16_mm_or_5_8_in_id_after_measurement; clamps_tbd_mm",
+        "blocks": "RPO-COOL-004A|RPO-COOL-004B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Circuit Closure",
+        "source_path": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_row_id": "RP-COOL-004",
+        "notes": "Heater hose spec is ready but nipple size controls local hose ID.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_circuit_closure_sheet.csv",
+            "label": "Replacement Pipe Circuit Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-FUEL-001-C",
+        "title": "Injector leak-off hose and sample markings",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Injector tops and loose red/black hose samples",
+        "action": "Close photos of injector nipples plus readable hose markings",
+        "data_needed": "injector_leakoff_nipple_od, sample_hose_id, sample_hose_od, rating_markings",
+        "blocks": "RPO-FUEL-001C",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-FUEL-001-C",
+        "notes": "Confirm diesel-rated leak-off material",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-FUEL-002-C",
+        "title": "Low-pressure fuel hard lines - clips and protection",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Chassis rail clip points and pass-through areas",
+        "action": "Close photos under clips and through brackets/grommets",
+        "data_needed": "clip_spacing, clip_id, line_od, pass_through_protection",
+        "blocks": "RPO-FUEL-002A|RPO-FUEL-002B|RPO-CLIP-001",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-FUEL-002-C",
+        "notes": "Look for hidden corrosion at support points",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-FUEL-002-A",
+        "title": "Low-pressure fuel hard lines - forward chassis run",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Chassis rail forward fuel feed/return route",
+        "action": "Wide and close photos of feed/return lines along forward rail",
+        "data_needed": "tube_od_feed, tube_od_return, section_length, bend_pattern",
+        "blocks": "RPO-FUEL-002A|RPO-FUEL-002B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-FUEL-002-A",
+        "notes": "Inspect under clips before deciding replacement",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-FUEL-002-B",
+        "title": "Low-pressure fuel hard lines - rear/tank run",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Chassis rail rear fuel line and tank end area",
+        "action": "Wide and close photos of rear route and end fittings",
+        "data_needed": "end_style, section_length, bend_pattern, tank_end_fitting",
+        "blocks": "RPO-FUEL-002A|RPO-FUEL-002B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-FUEL-002-B",
+        "notes": "Include any transition hose or union",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_circuit_closure:RP-COOL-002",
+        "title": "Lower radiator hose",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "release_hold / direct_photo",
+        "location": "Front lower engine bay between radiator lower outlet and water pump/engine inlet",
+        "action": "Measure both neck ODs in mm and confirm lower bend clearance before payment",
+        "data_needed": "radiator_lower_outlet_od_tbd_mm; engine_inlet_od_tbd_mm; molded_free_length_tbd_mm; hose_id_by_molded_part_and_neck_od_mm; molded_route_check_required; clamps_tbd_mm",
+        "blocks": "RPO-COOL-002",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Circuit Closure",
+        "source_path": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_row_id": "RP-COOL-002",
+        "notes": "Toyota 16572-68020 is a cross-reference only; record old-hose free length in mm if available.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_circuit_closure_sheet.csv",
+            "label": "Replacement Pipe Circuit Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-002-B",
+        "title": "Lower radiator hose - engine inlet end",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Front lower engine bay at water pump or engine inlet",
+        "action": "Close photo of engine inlet neck and hose/clamp relationship",
+        "data_needed": "engine_inlet_od, hose_od_for_clamp, clamp_band_width",
+        "blocks": "RPO-COOL-002",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-002-B",
+        "notes": "Engine-side lower hose end",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-002-C",
+        "title": "Lower radiator hose - full route",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Front lower route between radiator and engine inlet",
+        "action": "Wide photo showing full lower bend and clearance to belt/fan/crossmember",
+        "data_needed": "old_hose_free_length, lower_bend_clearance",
+        "blocks": "RPO-COOL-002",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-002-C",
+        "notes": "Show bend shape and any squeeze points",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-002-A",
+        "title": "Lower radiator hose - radiator outlet end",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Front lower engine bay at radiator lower outlet",
+        "action": "Close photo of lower radiator outlet neck and clamp land",
+        "data_needed": "radiator_lower_outlet_od, hose_od_for_clamp, clamp_band_width",
+        "blocks": "RPO-COOL-002",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-002-A",
+        "notes": "Radiator-side lower hose end",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_release_action:RPA-006",
+        "title": "RPA-006",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "Capture brake hydraulic close-ups at calipers/wheel cylinders, master/proportioning valve, unions, brackets, banjos, flare nuts, free hose length, and full-droop hose slack in mm.",
+        "data_needed": "",
+        "blocks": "RPO-BRAKE-001A|RPO-BRAKE-001B|RPO-CLIP-001",
+        "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_label": "Replacement Pipe Release Actions",
+        "source_path": "data/manual/replacement_pipe_release_actions.csv",
+        "source_row_id": "RPA-006",
+        "notes": "Brake hoses and tubes are safety parts and cannot be ordered from general architecture photos alone.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_release_actions.csv",
+            "label": "Replacement Pipe Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_release_action:RPA-011",
+        "title": "RPA-011",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "For the formed coolant pipe connector hoses, keep both old rubber couplers with the sample and measure each connector's ID, OD, free/cut length, overlap, clamp band width, pipe-end OD, mating spigot OD, and bend/kink clearance in mm.",
+        "data_needed": "",
+        "blocks": "RPO-COOL-006A|RPO-COOL-006B",
+        "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_label": "Replacement Pipe Release Actions",
+        "source_path": "data/manual/replacement_pipe_release_actions.csv",
+        "source_row_id": "RPA-011",
+        "notes": "The May 2 pipe photos show short rubber connector hoses; they need separate dimensions so the metal pipe is not fabricated while old coolant couplers are reused by accident.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_release_actions.csv",
+            "label": "Replacement Pipe Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_circuit_closure:RP-COOL-003",
+        "title": "Radiator overflow / breather hose",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "release_hold / needs_close_photo",
+        "location": "Radiator neck to overflow/reserve bottle",
+        "action": "Capture close photo and measure nipple ODs plus finished route length in mm",
+        "data_needed": "radiator_overflow_nipple_od_tbd_mm; bottle_nipple_od_tbd_mm; 600_oe_reference_1000_local_buy_cut_to_route; small_epdm_overflow_hose_id_tbd_mm; clip_or_clamp_tbd_mm",
+        "blocks": "RPO-COOL-003",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Circuit Closure",
+        "source_path": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_row_id": "RP-COOL-003",
+        "notes": "Buy 1000 mm locally if cutting; OE reference length is 600 mm.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_circuit_closure_sheet.csv",
+            "label": "Replacement Pipe Circuit Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-003-B",
+        "title": "Radiator overflow hose - bottle route",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Overflow bottle and hose route",
+        "action": "Photo from radiator nipple to reserve bottle plus close bottle nipple",
+        "data_needed": "bottle_nipple_od, finished_route_length, hose_od_for_clip",
+        "blocks": "RPO-COOL-003",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-003-B",
+        "notes": "Show routing path and support points",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-003-A",
+        "title": "Radiator overflow hose - radiator nipple",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Radiator neck overflow nipple",
+        "action": "Close photo of overflow nipple with ruler or caliper",
+        "data_needed": "nipple_od, clamp_or_clip_size",
+        "blocks": "RPO-COOL-003",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-003-A",
+        "notes": "Small nipple at radiator neck",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-BRAKE-001-B",
+        "title": "Rear centre brake flex hose",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Rear frame-to-axle flex hose and brackets",
+        "action": "Close photos of frame end axle end bracket retention and slack",
+        "data_needed": "end_thread_or_seat, free_length, full_droop_slack, bracket_retention",
+        "blocks": "RPO-BRAKE-001A",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-BRAKE-001-B",
+        "notes": "Show axle at normal and droop if possible",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_circuit_closure:RP-COOL-001",
+        "title": "Upper radiator hose",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "release_hold / direct_photo",
+        "location": "Front top of engine bay between thermostat housing and radiator",
+        "action": "Measure both neck ODs in mm and confirm molded route clearance before payment",
+        "data_needed": "thermostat_neck_od_tbd_mm; radiator_upper_neck_od_tbd_mm; molded_free_length_tbd_mm; hose_id_by_molded_part_and_neck_od_mm; molded_route_check_required; clamps_tbd_mm",
+        "blocks": "RPO-COOL-001",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Circuit Closure",
+        "source_path": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_row_id": "RP-COOL-001",
+        "notes": "Toyota 16571-68020 / Dayco DMH1342 are cross-references only; record old-hose free length in mm if available.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_circuit_closure_sheet.csv",
+            "label": "Replacement Pipe Circuit Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-001-C",
+        "title": "Upper radiator hose - full route",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Front top route between thermostat housing and radiator",
+        "action": "Wide photo showing complete molded route and fan/belt/radiator support clearance",
+        "data_needed": "old_hose_free_length, route_clearance_to_fan_belt_support",
+        "blocks": "RPO-COOL-001",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-001-C",
+        "notes": "Include both end positions in one frame if possible",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-001-B",
+        "title": "Upper radiator hose - radiator upper neck end",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Front top engine bay at radiator upper inlet",
+        "action": "Close photo square to radiator neck with clamp land visible",
+        "data_needed": "radiator_upper_neck_od, hose_od_for_clamp, clamp_band_width",
+        "blocks": "RPO-COOL-001",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-001-B",
+        "notes": "Radiator-side end of upper hose",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-001-A",
+        "title": "Upper radiator hose - thermostat housing end",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Front top engine bay at thermostat housing",
+        "action": "Close photo square to neck with old hose/clamp visible",
+        "data_needed": "thermostat_neck_od, hose_od_for_clamp, clamp_band_width",
+        "blocks": "RPO-COOL-001",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-001-A",
+        "notes": "Engine-side end of upper hose",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_circuit_closure:RP-VAC-001",
+        "title": "Vacuum hose and breather/oil mist hose",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "release_hold / needs_close_photo",
+        "location": "Vacuum pump / brake booster / crankcase breather area",
+        "action": "Capture close photos and measure barbs spigots check-valve direction route length and oil exposure",
+        "data_needed": "vacuum_pump_or_breather_spigot_tbd_mm; booster_checkvalve_or_breather_end_tbd_mm; 2000_vacuum_1000_breather_buy_lengths_cut_to_measured_route; 10_12mm_vacuum_and_16_19mm_breather_working_basis; clamps_tbd_mm",
+        "blocks": "RPO-VAC-001A|RPO-VAC-001B|RPO-VAC-001C",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Circuit Closure",
+        "source_path": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_row_id": "RP-VAC-001",
+        "notes": "Confirm whether Toyota/OEM 90923-02079 hose is fitted before ordering it; measure length/end IDs in mm if sourcing local.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_circuit_closure_sheet.csv",
+            "label": "Replacement Pipe Circuit Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_circuit_closure:RP-BRAKE-001",
+        "title": "Brake flex hoses and hard brake lines",
+        "workstream": "replacement_pipes",
+        "task_type": "template",
+        "priority": "P0",
+        "timing": "now",
+        "status": "release_hold / needs_brake_close_photos",
+        "location": "Frame and axle brake hydraulic routes",
+        "action": "Capture fitting close-ups and confirm tube OD flare standard union thread fitting seat individual route lengths and full-droop slack in mm before ordering or fabrication",
+        "data_needed": "caliper_wheel_cylinder_or_union_tbd; master_proportioning_or_axle_tbd; 7600_coil_allowance_final_individual_routes_tbd_mm; 3_16in_4_75mm_working_basis_until_measured; thread_flare_banjo_tbd; old_line_template_required; pclip_and_retaining_clip_tbd",
+        "blocks": "RPO-BRAKE-001A|RPO-BRAKE-001B|RPO-CLIP-001",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Circuit Closure",
+        "source_path": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_row_id": "RP-BRAKE-001",
+        "notes": "Safety circuit; 7600 mm / 25 ft coil allowance is for ordering only; pressure bleed and leak-test required.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_circuit_closure_sheet.csv",
+            "label": "Replacement Pipe Circuit Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-BRAKE-001-C",
+        "title": "Brake hard lines and unions",
+        "workstream": "replacement_pipes",
+        "task_type": "template",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Frame and axle brake hard-line routes",
+        "action": "Close photos of unions flare nuts tube routing and clips",
+        "data_needed": "tube_od, flare_standard, union_thread, route_length, clip_spacing",
+        "blocks": "RPO-BRAKE-001B|RPO-CLIP-001",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-BRAKE-001-C",
+        "notes": "Old lines should be templates before fabrication",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_circuit_closure:RP-CLUTCH-001",
+        "title": "Clutch flex hose and hard line",
+        "workstream": "replacement_pipes",
+        "task_type": "template",
+        "priority": "P0",
+        "timing": "now",
+        "status": "release_hold / direct_location_photo",
+        "location": "Bellhousing / clutch slave / master-to-slave route",
+        "action": "Photograph close-ups and measure port threads flare style flex length hard-line OD and drivetrain movement clearance in mm",
+        "data_needed": "master_port_thread_or_line_end_tbd; slave_port_thread_or_line_end_tbd; 1500_hard_line_blank_allowance_final_route_tbd_mm; hard_line_od_and_flex_length_tbd_mm; thread_flare_seat_tbd; old_line_or_route_template_if_replacing; clips_tbd",
+        "blocks": "RPO-CLUTCH-001A|RPO-CLUTCH-001B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Circuit Closure",
+        "source_path": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_row_id": "RP-CLUTCH-001",
+        "notes": "Inspect first; replace only if cracked corroded swollen or leaking; 1500 mm blank allowance applies only if hard line is replaced.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_circuit_closure_sheet.csv",
+            "label": "Replacement Pipe Circuit Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-CLUTCH-001-C",
+        "title": "Clutch hydraulic route and movement clearance",
+        "workstream": "replacement_pipes",
+        "task_type": "template",
+        "priority": "P0",
+        "timing": "now",
+        "status": "capture_pending",
+        "location": "Master-to-slave route along bellhousing/firewall",
+        "action": "Wide route photo with tape or old line template",
+        "data_needed": "final_route_length, movement_clearance, clip_positions",
+        "blocks": "RPO-CLUTCH-001B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-CLUTCH-001-C",
+        "notes": "Replace only if worn leaking or corroded",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_circuit_closure:RP-COOL-006",
+        "title": "Formed coolant pipe rubber connector/coupler hoses",
+        "workstream": "replacement_pipes",
+        "task_type": "template",
+        "priority": "P0",
+        "timing": "now",
+        "status": "release_hold / direct_template_photos",
+        "location": "Loose May 2 sample for formed coolant pipe rubber joints",
+        "action": "Measure each connector hose ID OD free/cut length overlap clamp land bend clearance and both mating spigot ODs in mm before purchase",
+        "data_needed": "pipe_end_a_od_and_mating_spigot_tbd_mm; pipe_end_b_od_and_mating_spigot_tbd_mm; connector_a_and_b_cut_lengths_tbd_mm; epdm_coolant_hose_id_od_tbd_mm; physical_sample_and_vehicle_dryfit_required; clamp_ods_and_band_widths_tbd_mm",
+        "blocks": "RPO-COOL-006A|RPO-COOL-006B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Circuit Closure",
+        "source_path": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_row_id": "RP-COOL-006",
+        "notes": "Connector hoses are visible on the formed-pipe sample and now have separate release lines so they are not missed when the metal pipe is fabricated.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_circuit_closure_sheet.csv",
+            "label": "Replacement Pipe Circuit Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_circuit_closure:RP-COOL-005",
+        "title": "Formed metal coolant/radiator pipe assembly",
+        "workstream": "replacement_pipes",
+        "task_type": "template",
+        "priority": "P0",
+        "timing": "now",
+        "status": "release_hold / direct_template_photos",
+        "location": "Loose May 2 sample for front engine cooling route",
+        "action": "Flat-lay physical sample and record final centerline length tube dimensions bend geometry beads clamp lands and installed clearances in mm",
+        "data_needed": "pipe_end_a_od_and_bead_tbd_mm; pipe_end_b_od_and_bead_tbd_mm; 750_blank_allowance_final_centerline_length_tbd_mm_visible_envelope_400h_250_300_offset; tube_od_wall_and_hose_id_tbd_mm; physical_sample_required; clamp_lands_tbd_mm",
+        "blocks": "RPO-COOL-005",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Circuit Closure",
+        "source_path": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_row_id": "RP-COOL-005",
+        "notes": "Orderable blank is 750 mm minimum; final centerline length must come from physical sample.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_circuit_closure_sheet.csv",
+            "label": "Replacement Pipe Circuit Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_circuit_closure:RP-FUEL-002",
+        "title": "Low-pressure fuel hard lines - feed and return",
+        "workstream": "replacement_pipes",
+        "task_type": "template",
+        "priority": "P0",
+        "timing": "now",
+        "status": "release_hold / direct_location_photo",
+        "location": "Chassis rail low-pressure fuel line route",
+        "action": "Inspect under clips and measure OD length bends end style and clip positions in mm before deciding replace vs keep",
+        "data_needed": "line_end_fitting_a_tbd; line_end_fitting_b_tbd; 5000_feed_allowance_5000_return_allowance_final_section_lengths_tbd_mm; 8mm_feed_6mm_return_working_basis; end_style_tbd; old_line_or_route_template_needed; pclip_spacing_300_400mm",
+        "blocks": "RPO-FUEL-002A|RPO-FUEL-002B|RPO-CLIP-001",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Circuit Closure",
+        "source_path": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_row_id": "RP-FUEL-002",
+        "notes": "Orderable pipe allowance is 5000 mm feed plus 5000 mm return; use bundy steel or CuNi/Cunifer only; no bare copper.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_circuit_closure_sheet.csv",
+            "label": "Replacement Pipe Circuit Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_release_action:RPA-007",
+        "title": "RPA-007",
+        "workstream": "replacement_pipes",
+        "task_type": "template",
+        "priority": "P0",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "Confirm brake hard-line tube OD, flare standard, union thread, fitting seat, route length, and old-line bend template before fabrication; use 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance for the hard-line stock order.",
+        "data_needed": "",
+        "blocks": "RPO-BRAKE-001B",
+        "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_label": "Replacement Pipe Release Actions",
+        "source_path": "data/manual/replacement_pipe_release_actions.csv",
+        "source_row_id": "RPA-007",
+        "notes": "Wrong flare or thread can leak under pressure even when the line visually fits; 7600 mm / 25 ft is the orderable coil allowance pending final route cuts.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_release_actions.csv",
+            "label": "Replacement Pipe Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-011",
+        "title": "2H vacuum pump oil outlet hose",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "later",
+        "status": "fitted_presence_hold / not_direct_send",
+        "location": "engine vacuum pump oil outlet if fitted",
+        "action": "Capture RPI-VAC-001-C if fitted",
+        "data_needed": "Confirm fitted presence; if present measure both fitting ODs, hose end IDs, free length, bend shape, and oil exposure in mm",
+        "blocks": "RP-VAC-001|RPO-VAC-001C|RUB-016",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-011",
+        "notes": "Open conditional item exists; do not order unless the hose is actually on this engine.",
+        "evidence_ref": "photo_needed",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-029",
+        "title": "Leaf spring eye shackle bushes and bump stops",
+        "workstream": "suspension_upgrade",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "later",
+        "status": "receipt_or_inspection_hold / not_direct_send",
+        "location": "suspension mounting points",
+        "action": "Receipt-check Ironman kit and inspect bump stops at suspension install",
+        "data_needed": "Count Ironman bush kit; if missing measure spring eye ID, pin OD, sleeve length, bush width; measure bump-stop base, free height, bolt pattern, and axle clearance in mm",
+        "blocks": "RUB-007|RUB-026",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-029",
+        "notes": "Open items exist; do not duplicate-buy bushes before kit contents are counted.",
+        "evidence_ref": "not_confirmed_in_current_contact_sheets",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:rear_fuel_tank",
+        "title": "rear_fuel_tank",
+        "workstream": "body_chassis",
+        "task_type": "decision",
+        "priority": "P1",
+        "timing": "now",
+        "status": "removed_stored",
+        "location": "home_storage_fuel_safe",
+        "action": "Keep tank out during body-off lift and welding; inspect tank bay and lines before refit",
+        "data_needed": "User confirmed fuel tank is off; maintain capped ports and safe separated storage until post-weld reinstall gate",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "rear_fuel_tank",
+        "notes": "",
+        "evidence_ref": "user_update_2026-04-20_tank_wings_off|photo_inventory_2026-04-20",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:floor_pan",
+        "title": "floor_pan",
+        "workstream": "body_chassis",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "pending_exposure_inspection",
+        "location": "home",
+        "action": "Inspect for pinholes then grind spot-weld and prime immediately",
+        "data_needed": "Dependent on interior and body exposure before welding and primer decisions",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "floor_pan",
+        "notes": "",
+        "evidence_ref": "akber_khan-00798",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:chassis_frame_and_crossmembers",
+        "title": "chassis_frame_and_crossmembers",
+        "workstream": "chassis_fixing",
+        "task_type": "inspection",
+        "priority": "P1",
+        "timing": "now",
+        "status": "in_progress",
+        "location": "workshop",
+        "action": "Degrease/wash frame, wire-brush to clean metal, inspect rails crossmembers spring hangers and steering-box area for cracks/pitting, then epoxy-prime and protect approved zones",
+        "data_needed": "User reports chassis looks generally fine after body removal; run full clean/verification before declaring no-repair.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "chassis_frame_and_crossmembers",
+        "notes": "",
+        "evidence_ref": "user_update_2026-04-22_body_removed_chassis_check|photo_inventory_2026-04-22",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:body_mount_points_and_captive_nuts",
+        "title": "body_mount_points_and_captive_nuts",
+        "workstream": "chassis_fixing",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "inspection_pending",
+        "location": "workshop",
+        "action": "Inspect every body-mount pedestal and captive thread, chase/repair threads and sleeves, and define shim plan before tub refit",
+        "data_needed": "High-risk refit failure point; close thread/mount issues now while access is open.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "body_mount_points_and_captive_nuts",
+        "notes": "",
+        "evidence_ref": "user_update_2026-04-22_body_removed_chassis_check|photo_inventory_2026-04-22",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:issue_body_mount_captive_thread_repair",
+        "title": "issue_body_mount_captive_thread_repair",
+        "workstream": "chassis_fixing",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "pending_work",
+        "location": "workshop",
+        "action": "Inspect all body-mount pedestals and captive threads; chase/repair threads, replace damaged sleeves, and define shim pack before refit",
+        "data_needed": "Added from body-off issue review; do not allow tub refit with unresolved mount/thread defects.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "issue_body_mount_captive_thread_repair",
+        "notes": "",
+        "evidence_ref": "user_update_2026-04-22_body_removed_chassis_check|annotated_issues_20260422|20260405_234546",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260405_234546.jpg",
+            "caption": "Body Mount And Crossmember Detail \u00b7 Underside Inspection \u00b7 2026-04-05",
+            "captured_date": "2026-04-05",
+            "captured_time": "23:45:46",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "body_mount_and_crossmember_detail",
+            "stage": "underside_inspection",
+            "media_id": "20260405_234546",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:issue_front_spring_hanger_crack_check",
+        "title": "issue_front_spring_hanger_crack_check",
+        "workstream": "chassis_fixing",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "pending_work",
+        "location": "workshop",
+        "action": "Inspect front spring hanger/shackle areas for crack lines, ovalized holes, and bracket deformation after cleanup",
+        "data_needed": "Added from body-off issue review; close only after both sides are checked and logged.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "issue_front_spring_hanger_crack_check",
+        "notes": "",
+        "evidence_ref": "user_update_2026-04-22_body_removed_chassis_check|annotated_issues_20260422|20260324_004852",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260324_004852.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:48:52",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004852",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:chassis_wire_brush_status_20260501",
+        "title": "chassis_wire_brush_status_20260501",
+        "workstream": "chassis_fixing",
+        "task_type": "photo",
+        "priority": "P1",
+        "timing": "now",
+        "status": "in_progress",
+        "location": "workshop",
+        "action": "Complete detail wire-brushing from May 1 status photos, then degrease, dry, inspect, rust-treat pits, epoxy-prime, topcoat, and cavity-protect approved zones",
+        "data_needed": "May 1 photos show flats partly brushed; hold primer until edges, brackets, hard-line clips, body mounts, spring hangers, steering box area, and crossmember ends are signed off.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "chassis_wire_brush_status_20260501",
+        "notes": "",
+        "evidence_ref": "photo_import_20260501T202346|docs_chassis_status_20260501_wire_brush_and_cleaning|docs_chassis_prep_next_steps_20260501|photo_inventory_2026-05-01",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:issue_steering_box_mount_crack_check",
+        "title": "issue_steering_box_mount_crack_check",
+        "workstream": "chassis_fixing",
+        "task_type": "photo",
+        "priority": "P1",
+        "timing": "now",
+        "status": "pending_work",
+        "location": "workshop",
+        "action": "Clean to bare metal and crack-check steering box mount plus nearby hanger weld toes; mark for plate-reinforcement if crack or elongation is found",
+        "data_needed": "Added from body-off issue review; keep open until cleaned and signed off with close-up photos.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "issue_steering_box_mount_crack_check",
+        "notes": "",
+        "evidence_ref": "user_update_2026-04-22_body_removed_chassis_check|annotated_issues_20260422|20260406_031010",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260406_031010.jpg",
+            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-06",
+            "captured_date": "2026-04-06",
+            "captured_time": "03:10:10",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "steering_and_suspension_linkages",
+            "stage": "underside_inspection",
+            "media_id": "20260406_031010",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_station_closure:MAIN-FL",
+        "title": "front_left_main_body_mount",
+        "workstream": "chassis_rubbers",
+        "task_type": "data",
+        "priority": "P1",
+        "timing": "now",
+        "status": "open_layout_required",
+        "location": "main_tub_station",
+        "action": "BMA-001 BMA-004 BMA-006 BMA-007 BMA-008 BMA-011",
+        "data_needed": "",
+        "blocks": "BMA-001 BMA-004 BMA-006 BMA-007 BMA-008 BMA-011",
+        "record_result_in": "",
+        "source_label": "Body Mount Station Closure",
+        "source_path": "data/manual/body_mount_station_closure_sheet.csv",
+        "source_row_id": "MAIN-FL",
+        "notes": "Label physical parts before mapping to Toyota NO.1-NO.5.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_station_closure_sheet.csv",
+            "label": "Body Mount Station Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_station_closure:MAIN-FR",
+        "title": "front_right_main_body_mount",
+        "workstream": "chassis_rubbers",
+        "task_type": "data",
+        "priority": "P1",
+        "timing": "now",
+        "status": "open_layout_required",
+        "location": "main_tub_station",
+        "action": "BMA-001 BMA-004 BMA-006 BMA-007 BMA-008 BMA-011",
+        "data_needed": "",
+        "blocks": "BMA-001 BMA-004 BMA-006 BMA-007 BMA-008 BMA-011",
+        "record_result_in": "",
+        "source_label": "Body Mount Station Closure",
+        "source_path": "data/manual/body_mount_station_closure_sheet.csv",
+        "source_row_id": "MAIN-FR",
+        "notes": "Keep left/right stacks separate.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_station_closure_sheet.csv",
+            "label": "Body Mount Station Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_station_closure:MAIN-ML",
+        "title": "middle_left_main_body_mount",
+        "workstream": "chassis_rubbers",
+        "task_type": "data",
+        "priority": "P1",
+        "timing": "now",
+        "status": "open_layout_required",
+        "location": "main_tub_station",
+        "action": "BMA-001 BMA-003 BMA-005 BMA-006 BMA-007 BMA-008 BMA-011",
+        "data_needed": "",
+        "blocks": "BMA-001 BMA-003 BMA-005 BMA-006 BMA-007 BMA-008 BMA-011",
+        "record_result_in": "",
+        "source_label": "Body Mount Station Closure",
+        "source_path": "data/manual/body_mount_station_closure_sheet.csv",
+        "source_row_id": "MAIN-ML",
+        "notes": "Small-stack split vs one-piece decision likely applies here.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_station_closure_sheet.csv",
+            "label": "Body Mount Station Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_station_closure:MAIN-MR",
+        "title": "middle_right_main_body_mount",
+        "workstream": "chassis_rubbers",
+        "task_type": "data",
+        "priority": "P1",
+        "timing": "now",
+        "status": "open_layout_required",
+        "location": "main_tub_station",
+        "action": "BMA-001 BMA-003 BMA-005 BMA-006 BMA-007 BMA-008 BMA-011",
+        "data_needed": "",
+        "blocks": "BMA-001 BMA-003 BMA-005 BMA-006 BMA-007 BMA-008 BMA-011",
+        "record_result_in": "",
+        "source_label": "Body Mount Station Closure",
+        "source_path": "data/manual/body_mount_station_closure_sheet.csv",
+        "source_row_id": "MAIN-MR",
+        "notes": "Small-stack split vs one-piece decision likely applies here.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_station_closure_sheet.csv",
+            "label": "Body Mount Station Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_station_closure:MAIN-RL",
+        "title": "rear_left_main_body_mount",
+        "workstream": "chassis_rubbers",
+        "task_type": "decision",
+        "priority": "P1",
+        "timing": "now",
+        "status": "open_layout_required",
+        "location": "main_tub_station",
+        "action": "BMA-001 BMA-003 BMA-005 BMA-006 BMA-007 BMA-008 BMA-011",
+        "data_needed": "",
+        "blocks": "BMA-001 BMA-003 BMA-005 BMA-006 BMA-007 BMA-008 BMA-011",
+        "record_result_in": "",
+        "source_label": "Body Mount Station Closure",
+        "source_path": "data/manual/body_mount_station_closure_sheet.csv",
+        "source_row_id": "MAIN-RL",
+        "notes": "Confirm whether rear/cowl OE shim rows apply.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_station_closure_sheet.csv",
+            "label": "Body Mount Station Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_station_closure:MAIN-RR",
+        "title": "rear_right_main_body_mount",
+        "workstream": "chassis_rubbers",
+        "task_type": "decision",
+        "priority": "P1",
+        "timing": "now",
+        "status": "open_layout_required",
+        "location": "main_tub_station",
+        "action": "BMA-001 BMA-003 BMA-005 BMA-006 BMA-007 BMA-008 BMA-011",
+        "data_needed": "",
+        "blocks": "BMA-001 BMA-003 BMA-005 BMA-006 BMA-007 BMA-008 BMA-011",
+        "record_result_in": "",
+        "source_label": "Body Mount Station Closure",
+        "source_path": "data/manual/body_mount_station_closure_sheet.csv",
+        "source_row_id": "MAIN-RR",
+        "notes": "Confirm whether rear/cowl OE shim rows apply.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_station_closure_sheet.csv",
+            "label": "Body Mount Station Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_release_action:BMA-010",
+        "title": "BMA-010",
+        "workstream": "chassis_rubbers",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "Check front-support fastener diameter and pitch directly. Confirm whether the 12 mm holes use M10 clearance, M12 bolts, or a prior repair.",
+        "data_needed": "",
+        "blocks": "BM-FAB-003; BM-HW-005",
+        "record_result_in": "data/manual/body_mount_station_closure_sheet.csv",
+        "source_label": "Body Mount Release Actions",
+        "source_path": "data/manual/body_mount_release_actions.csv",
+        "source_row_id": "BMA-010",
+        "notes": "Hole diameter alone does not prove bolt thread. Do not buy M12 hardware until this is known.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_release_actions.csv",
+            "label": "Body Mount Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_release_action:BMA-011",
+        "title": "BMA-011",
+        "workstream": "chassis_rubbers",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "Dry-stack one large station, one small station, and one front-support station with rubber, cup/seat, sleeve, shim, and temporary bolt. Confirm body-side and chassis-side faces sit flat.",
+        "data_needed": "",
+        "blocks": "BM-HW-001; BM-HW-003; BM-SHIM-001; BM-SHIM-002",
+        "record_result_in": "data/manual/body_mount_station_closure_sheet.csv; photos",
+        "source_label": "Body Mount Release Actions",
+        "source_path": "data/manual/body_mount_release_actions.csv",
+        "source_row_id": "BMA-011",
+        "notes": "This is the final check before cutting sleeves or choosing final bolt lengths.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_release_actions.csv",
+            "label": "Body Mount Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-018",
+        "title": "Large circular body-mount cushions",
+        "workstream": "chassis_rubbers",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "spec_ready_final_caliper_hold / quote_ready_not_final_production",
+        "location": "main tub-to-chassis large pair",
+        "action": "Complete BMA-004 and dry-stack",
+        "data_needed": "Caliper-confirm OD, height, bore/register, register depth, and installed stack height against old sample",
+        "blocks": "CR-MAIN-002|BM-FAB-001|RUB-001",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-018",
+        "notes": "Open item exists with fabrication dimensions.",
+        "evidence_ref": "20260502_004231_gp_CfosvPIg|20260502_004337_gp_m2OagYpg|20260502_004413_gp_Qno8OVRg|20260502_004419_gp_ZPXJRBzg|20260502_004437_gp_f1TySzww|20260502_004442_gp_7WcFHjLQ",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:42:31",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004231_gp_CfosvPIg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004337_gp_m2OagYpg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:43:37",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004337_gp_m2OagYpg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:44:13",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004413_gp_Qno8OVRg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:44:19",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004419_gp_ZPXJRBzg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:44:37",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004437_gp_f1TySzww",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:44:42",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004442_gp_7WcFHjLQ",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-017",
+        "title": "Small circular body-mount cushions",
+        "workstream": "chassis_rubbers",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "spec_ready_split_stack_hold / quote_ready_not_final_production",
+        "location": "main tub-to-chassis mount stack",
+        "action": "Complete BMA-005 and dry-stack",
+        "data_needed": "Disassemble/measure least-crushed sample; confirm one-piece versus split-stack construction, final stack height, and station count",
+        "blocks": "CR-MAIN-001|BM-FAB-002|RUB-001",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-017",
+        "notes": "Open item exists with fabrication dimensions; production release waits for split-stack decision.",
+        "evidence_ref": "20260502_004231_gp_CfosvPIg|20260502_004337_gp_m2OagYpg|20260502_004413_gp_Qno8OVRg|20260502_004419_gp_ZPXJRBzg|20260502_004437_gp_f1TySzww|20260502_004442_gp_7WcFHjLQ",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:42:31",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004231_gp_CfosvPIg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004337_gp_m2OagYpg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:43:37",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004337_gp_m2OagYpg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:44:13",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004413_gp_Qno8OVRg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:44:19",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004419_gp_ZPXJRBzg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:44:37",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004437_gp_f1TySzww",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:44:42",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004442_gp_7WcFHjLQ",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-019",
+        "title": "Two-hole oval front-support isolator pads",
+        "workstream": "chassis_rubbers",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "spec_ready_final_caliper_hold / quote_ready_not_final_production",
+        "location": "front support / nose extension",
+        "action": "Complete BMA-010 and front support dry-fit",
+        "data_needed": "Caliper-confirm hole spacing, thickness, insert/boss OD, and whether the insert is bonded or loose",
+        "blocks": "CR-FRONT-001|BM-FAB-003|RUB-001",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-019",
+        "notes": "Open item exists with fabrication dimensions.",
+        "evidence_ref": "20260502_004231_gp_CfosvPIg|20260502_004345_gp_yK8VYzMQ",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:42:31",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004231_gp_CfosvPIg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:43:45",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004345_gp_yK8VYzMQ",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_release_action:BMA-009",
+        "title": "BMA-009",
+        "workstream": "chassis_rubbers",
+        "task_type": "template",
+        "priority": "P1",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "Trace left and right front-support strip rubbers/carriers on card or acetate and mark hole centres from the metal carrier, not from torn rubber.",
+        "data_needed": "",
+        "blocks": "BM-FAB-004; BM-FAB-005",
+        "record_result_in": "template_trace_photos; data/manual/rubber_recreation_measurement_closure.csv",
+        "source_label": "Body Mount Release Actions",
+        "source_path": "data/manual/body_mount_release_actions.csv",
+        "source_row_id": "BMA-009",
+        "notes": "The strip pieces are curled/torn in photos, so final cut patterns must come from a trace.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_release_actions.csv",
+            "label": "Body Mount Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-020",
+        "title": "Long front-support strip rubbers left and right",
+        "workstream": "chassis_rubbers",
+        "task_type": "template",
+        "priority": "P1",
+        "timing": "now",
+        "status": "template_hold / quote_ready_not_final_production",
+        "location": "front support / nose extension strips",
+        "action": "Complete BMA-009",
+        "data_needed": "Trace physical left/right strips and metal carrier; mark hole centers from carrier; confirm handedness and slot geometry",
+        "blocks": "CR-FRONT-002|CR-FRONT-003|BM-FAB-004|BM-FAB-005|RUB-001",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-020",
+        "notes": "Open item exists with quote dimensions; final cutting must use a physical template.",
+        "evidence_ref": "20260502_004201_gp_zfUSmKJg|20260502_004215_gp_evgCLjSw|20260502_004222_gp_PKRe5HSQ|20260502_004254_gp_Hm9RR5DQ|20260502_004314_gp_wuzpgNrA|20260502_004401_gp_otUSjgGA",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:42:01",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004201_gp_zfUSmKJg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004215_gp_evgCLjSw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:42:15",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004215_gp_evgCLjSw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:42:22",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004222_gp_PKRe5HSQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004254_gp_Hm9RR5DQ.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:42:54",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004254_gp_Hm9RR5DQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004314_gp_wuzpgNrA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:43:14",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004314_gp_wuzpgNrA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004401_gp_otUSjgGA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:44:01",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004401_gp_otUSjgGA",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_station_closure:FRONT-SUPPORT-L",
+        "title": "left_front_support_or_nose_extension",
+        "workstream": "chassis_rubbers",
+        "task_type": "template",
+        "priority": "P1",
+        "timing": "now",
+        "status": "open_trace_required",
+        "location": "front_support_station",
+        "action": "BMA-001 BMA-009 BMA-010 BMA-011",
+        "data_needed": "",
+        "blocks": "BMA-001 BMA-009 BMA-010 BMA-011",
+        "record_result_in": "",
+        "source_label": "Body Mount Station Closure",
+        "source_path": "data/manual/body_mount_station_closure_sheet.csv",
+        "source_row_id": "FRONT-SUPPORT-L",
+        "notes": "Do not substitute circular body mount rubber here.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_station_closure_sheet.csv",
+            "label": "Body Mount Station Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_station_closure:FRONT-SUPPORT-R",
+        "title": "right_front_support_or_nose_extension",
+        "workstream": "chassis_rubbers",
+        "task_type": "template",
+        "priority": "P1",
+        "timing": "now",
+        "status": "open_trace_required",
+        "location": "front_support_station",
+        "action": "BMA-001 BMA-009 BMA-010 BMA-011",
+        "data_needed": "",
+        "blocks": "BMA-001 BMA-009 BMA-010 BMA-011",
+        "record_result_in": "",
+        "source_label": "Body Mount Station Closure",
+        "source_path": "data/manual/body_mount_station_closure_sheet.csv",
+        "source_row_id": "FRONT-SUPPORT-R",
+        "notes": "Do not assume strip symmetry until traced.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_station_closure_sheet.csv",
+            "label": "Body Mount Station Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:eps_vitz_connector_wire_id_check",
+        "title": "eps_vitz_connector_wire_id_check",
+        "workstream": "eps_vitz_upgrade",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "planned_scope_lock",
+        "location": "market_scout",
+        "action": "Ask the seller to identify original EPS plugs pigtails heavy power ground and ignition-trigger wires during the bench check; require the matching ECU/controller in the same kit",
+        "data_needed": "Pre-payment wire identification only; keep this row tied to the market checklist.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "eps_vitz_connector_wire_id_check",
+        "notes": "",
+        "evidence_ref": "whatsapp_akber|akber_khan-00858|user_plan_2026-04-22_tub_off_update",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:interior_dash_switch_fitup",
+        "title": "interior_dash_switch_fitup",
+        "workstream": "interior_controls",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "in_progress",
+        "location": "home",
+        "action": "Machine/enlarge existing dash holes to 22 mm, allocate dash controls to final positions, verify cutout clearances, and complete mounting with labels",
+        "data_needed": "Build_Plan WP03A control-fit gate; 7 Schneider selectors and hole-enlarging tools are now available. Spot lamps already have a switch allocation, fuel-stop uses the purchased needle switch, hazards stay separate, and exact recommended 9 inch LCD model/link remains to be captured.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "interior_dash_switch_fitup",
+        "notes": "",
+        "evidence_ref": "20260421_192813_gp_0jvYAo8g|20260421_194401_gp_1dY3fLdw|20260420_221819_gp_YV69fbvA|user_update_2026-05-02_dashboard_switch_lcd_update",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260421_192813_gp_0jvYAo8g.jpg",
+            "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
+            "captured_date": "2026-04-21",
+            "captured_time": "19:28:13",
+            "media_type": "photo",
+            "component_group": "interior_cabin",
+            "specific_component": "dashboard_switch_and_control_hardware",
+            "stage": "electrical_rework",
+            "media_id": "20260421_192813_gp_0jvYAo8g",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260421_194401_gp_1dY3fLdw.jpeg",
+            "caption": "Dashboard Switch And Control Hardware \u00b7 Electrical Rework \u00b7 2026-04-21",
+            "captured_date": "2026-04-21",
+            "captured_time": "19:44:01",
+            "media_type": "photo",
+            "component_group": "interior_cabin",
+            "specific_component": "dashboard_switch_and_control_hardware",
+            "stage": "electrical_rework",
+            "media_id": "20260421_194401_gp_1dY3fLdw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260420_221819_gp_YV69fbvA.jpg",
+            "caption": "Hidden Diesel Cutoff Switch Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-20",
+            "captured_date": "2026-04-20",
+            "captured_time": "22:18:19",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "hidden_diesel_cutoff_switch_hardware",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260420_221819_gp_YV69fbvA",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-022",
+        "title": "Firewall wiper rear wiring and body grommets",
+        "workstream": "interior_weatherproofing",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "inventory_and_measurement_hold / not_direct_send",
+        "location": "firewall/body holes and harness penetrations",
+        "action": "Audit existing grommet inventory before top-up",
+        "data_needed": "Lay out existing grommet kit; measure every open hole, cable/pipe OD, panel thickness, groove width, and flange OD in mm",
+        "blocks": "RUB-003",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-022",
+        "notes": "Open item exists; prevents duplicate generic kit purchase.",
+        "evidence_ref": "body_chassis_rubber_photo_set",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-021",
+        "title": "Steering column firewall boot or seal",
+        "workstream": "interior_weatherproofing",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "inspection_hold / not_direct_send",
+        "location": "firewall/column penetration",
+        "action": "Trial-fit column and firewall before order",
+        "data_needed": "Measure shaft OD, firewall opening, panel thickness, bolt pattern, flange footprint, and column angle in mm",
+        "blocks": "RUB-004",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-021",
+        "notes": "Open conditional item exists.",
+        "evidence_ref": "body_chassis_rubber_photo_set",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-014",
+        "title": "Engine air-cleaner intake duct and rubber couplers",
+        "workstream": "mechanical_baseline",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "new_open_item_measurement_hold / not_direct_send",
+        "location": "air cleaner to intake/manifold route",
+        "action": "Inspect visible duct and sample-match if failed",
+        "data_needed": "Measure air-cleaner outlet OD, intake/manifold inlet OD, old duct free length, installed offset, bend radius, accordion travel, clamp OD, and any breather branch OD in mm",
+        "blocks": "RUB-027",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-014",
+        "notes": "Gap closed by this audit; not a coolant/fuel/vacuum hose.",
+        "evidence_ref": "20260430_215957_gp_2iBbUagw|20260430_220004_gp_C9oYiYmA",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
+            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+            "captured_date": "2026-04-30",
+            "captured_time": "21:59:57",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
+            "stage": "mechanical_inspection",
+            "media_id": "20260430_215957_gp_2iBbUagw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
+            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+            "captured_date": "2026-04-30",
+            "captured_time": "22:00:04",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
+            "stage": "mechanical_inspection",
+            "media_id": "20260430_220004_gp_C9oYiYmA",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-026",
+        "title": "Exhaust hanger rubbers",
+        "workstream": "mechanical_baseline",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "inspection_hold / not_direct_send",
+        "location": "exhaust support points",
+        "action": "Inspect during exhaust alignment",
+        "data_needed": "Measure hanger pin OD, hole spacing, thickness, exhaust alignment, and heat clearance in mm",
+        "blocks": "RUB-022",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-026",
+        "notes": "Open item exists; not confirmed as a current image gap.",
+        "evidence_ref": "not_confirmed_in_current_contact_sheets",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:engine_powertrain_cleaning_20260501",
+        "title": "engine_powertrain_cleaning_20260501",
+        "workstream": "mechanical_baseline",
+        "task_type": "photo",
+        "priority": "P1",
+        "timing": "now",
+        "status": "queued",
+        "location": "workshop",
+        "action": "Clean engine, gearbox, transfer, steering box, and nearby driveline with controlled degreaser/pressure-sprayer workflow; dry fully and photograph leak sources before parts decisions",
+        "data_needed": "Use received DISS/APC and GREZ OFF; registered sprayer is Wadfow WRS1550 pending delivery. Avoid blasting alternator, starter, injection pump, breathers, connectors, and open ports.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "engine_powertrain_cleaning_20260501",
+        "notes": "",
+        "evidence_ref": "photo_import_20260501T202346|20260501_194535_gp_mZ25Ou4A|20260501_215603_gp_p8KX4pAw|docs_chassis_status_20260501_wire_brush_and_cleaning",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260501_194535_gp_mZ25Ou4A.jpg",
+            "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:45:35",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "engine_powertrain_cleaning_baseline",
+            "stage": "mechanical_cleaning",
+            "media_id": "20260501_194535_gp_mZ25Ou4A",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260501_215603_gp_p8KX4pAw.jpg",
+            "caption": "Engine Powertrain Cleaning Baseline \u00b7 Mechanical Cleaning \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "21:56:03",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "engine_powertrain_cleaning_baseline",
+            "stage": "mechanical_cleaning",
+            "media_id": "20260501_215603_gp_p8KX4pAw",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:front_wings",
+        "title": "front_wings",
+        "workstream": "paint_refinish",
+        "task_type": "decision",
+        "priority": "P1",
+        "timing": "now",
+        "status": "sent_to_painter",
+        "location": "paint_vendor_tbd",
+        "action": "Front wings are at paint/bodywork; track painter progress return condition fit lines and mounting edge readiness before refit",
+        "data_needed": "User confirmed the wings already went to paint; April 23 send-day parts images are the paint evidence. Maintain return checklist for fit lines and mounting edges.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "front_wings",
+        "notes": "",
+        "evidence_ref": "user_update_2026-04-20_tank_wings_off|20260423_183408_gp_eCiJmZnA|20260423_183448_gp_9MQfbmvQ|20260423_183514_gp_DyztXKcw|20260423_183521_gp_pjVN2Ujw|20260423_183540_gp_bhRdLpMg|20260423_183628_gp_SpWIfUnw|user_update_2026-05-02_roof_wings_sent_to_paint",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260423_183408_gp_eCiJmZnA.jpg",
+            "caption": "Detached Doors And Panels \u00b7 Removed Parts Cataloguing \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "18:34:08",
+            "media_type": "photo",
+            "component_group": "removable_panels",
+            "specific_component": "detached_doors_and_panels",
+            "stage": "removed_parts_cataloguing",
+            "media_id": "20260423_183408_gp_eCiJmZnA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_183448_gp_9MQfbmvQ.jpg",
+            "caption": "Detached Body Panels And Doors \u00b7 Removed Parts Cataloguing \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "18:34:48",
+            "media_type": "photo",
+            "component_group": "removable_panels",
+            "specific_component": "detached_body_panels_and_doors",
+            "stage": "removed_parts_cataloguing",
+            "media_id": "20260423_183448_gp_9MQfbmvQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_183514_gp_DyztXKcw.jpg",
+            "caption": "Detached Body Panels And Doors \u00b7 Removed Parts Cataloguing \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "18:35:14",
+            "media_type": "photo",
+            "component_group": "removable_panels",
+            "specific_component": "detached_body_panels_and_doors",
+            "stage": "removed_parts_cataloguing",
+            "media_id": "20260423_183514_gp_DyztXKcw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_183521_gp_pjVN2Ujw.jpg",
+            "caption": "Detached Body Panels And Doors \u00b7 Removed Parts Cataloguing \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "18:35:21",
+            "media_type": "photo",
+            "component_group": "removable_panels",
+            "specific_component": "detached_body_panels_and_doors",
+            "stage": "removed_parts_cataloguing",
+            "media_id": "20260423_183521_gp_pjVN2Ujw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_183540_gp_bhRdLpMg.jpg",
+            "caption": "Detached Doors And Panels \u00b7 Removed Parts Cataloguing \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "18:35:40",
+            "media_type": "photo",
+            "component_group": "removable_panels",
+            "specific_component": "detached_doors_and_panels",
+            "stage": "removed_parts_cataloguing",
+            "media_id": "20260423_183540_gp_bhRdLpMg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_183628_gp_SpWIfUnw.jpg",
+            "caption": "Detached Body Panels And Doors \u00b7 Removed Parts Cataloguing \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "18:36:28",
+            "media_type": "photo",
+            "component_group": "removable_panels",
+            "specific_component": "detached_body_panels_and_doors",
+            "stage": "removed_parts_cataloguing",
+            "media_id": "20260423_183628_gp_SpWIfUnw",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:roof_shell",
+        "title": "roof_shell",
+        "workstream": "paint_refinish",
+        "task_type": "decision",
+        "priority": "P1",
+        "timing": "now",
+        "status": "sent_to_painter",
+        "location": "paint_vendor_tbd",
+        "action": "Roof is at paint/bodywork for roof-channel correction; track painter progress return condition gutter profile and mounting points before refit",
+        "data_needed": "User confirmed the roof already went to paint; April 23 send-day roof image is the paint evidence. Keep return checklist for gutter profile and mounting points.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "roof_shell",
+        "notes": "",
+        "evidence_ref": "fj40-00133|fj40-00229|akber_khan-00796|20260423_183648_gp_ltd3AKwg|user_update_2026-05-02_roof_wings_sent_to_paint",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260423_183648_gp_ltd3AKwg.jpg",
+            "caption": "Roof Gutter And Window Channel \u00b7 Removed Parts Cataloguing \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "18:36:48",
+            "media_type": "photo",
+            "component_group": "roof_and_gutters",
+            "specific_component": "roof_gutter_and_window_channel",
+            "stage": "removed_parts_cataloguing",
+            "media_id": "20260423_183648_gp_ltd3AKwg",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:paint_returned_panels_refinished",
+        "title": "paint_returned_panels_refinished",
+        "workstream": "paint_refinish",
+        "task_type": "photo",
+        "priority": "P1",
+        "timing": "now",
+        "status": "partially_returned",
+        "location": "home_storage_refinished_tagged",
+        "action": "Track returned painted/refinished hardware and panel pieces, then tag storage location and fitment-readiness status",
+        "data_needed": "Returned painted/refinished parts are visible in photo evidence; continue until all paint batch returns are reconciled.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "paint_returned_panels_refinished",
+        "notes": "",
+        "evidence_ref": "20260412_010633|20260412_010646_gp_vrcJK3ow|20260412_215154_gp_hDRTkV1A",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260412_010633.jpg",
+            "caption": "Refinished Hinges Brackets And Trim \u00b7 Hardware Refinish \u00b7 2026-04-12",
+            "captured_date": "2026-04-12",
+            "captured_time": "01:06:33",
+            "media_type": "photo",
+            "component_group": "removable_panels",
+            "specific_component": "refinished_hinges_brackets_and_trim",
+            "stage": "hardware_refinish",
+            "media_id": "20260412_010633",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260412_010646_gp_vrcJK3ow.jpg",
+            "caption": "Refinished Hinges Brackets And Trim \u00b7 Hardware Refinish \u00b7 2026-04-12",
+            "captured_date": "2026-04-12",
+            "captured_time": "01:06:46",
+            "media_type": "photo",
+            "component_group": "removable_panels",
+            "specific_component": "refinished_hinges_brackets_and_trim",
+            "stage": "hardware_refinish",
+            "media_id": "20260412_010646_gp_vrcJK3ow",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260412_215154_gp_hDRTkV1A.jpg",
+            "caption": "Refinished Hinges Brackets And Trim \u00b7 Hardware Refinish \u00b7 2026-04-12",
+            "captured_date": "2026-04-12",
+            "captured_time": "21:51:54",
+            "media_type": "photo",
+            "component_group": "removable_panels",
+            "specific_component": "refinished_hinges_brackets_and_trim",
+            "stage": "hardware_refinish",
+            "media_id": "20260412_215154_gp_hDRTkV1A",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:paint_sendout_panels_manifest",
+        "title": "paint_sendout_panels_manifest",
+        "workstream": "paint_refinish",
+        "task_type": "photo",
+        "priority": "P1",
+        "timing": "now",
+        "status": "in_progress",
+        "location": "paint_vendor_tbd",
+        "action": "Finalize send-out manifest for detachable panels, including roof and front wings, map each piece to painter batch, and keep before-send condition photos linked",
+        "data_needed": "April 23 send-day parts images captured the outbound paint batch, including roof. Roof and front wings are confirmed at paint. Hold this row open until every outbound piece has vendor + date + expected return state.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "paint_sendout_panels_manifest",
+        "notes": "",
+        "evidence_ref": "20260423_183408_gp_eCiJmZnA|20260423_183448_gp_9MQfbmvQ|20260423_183514_gp_DyztXKcw|20260423_183521_gp_pjVN2Ujw|20260423_183540_gp_bhRdLpMg|20260423_183628_gp_SpWIfUnw|20260423_183648_gp_ltd3AKwg|user_update_2026-05-02_roof_wings_sent_to_paint",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260423_183408_gp_eCiJmZnA.jpg",
+            "caption": "Detached Doors And Panels \u00b7 Removed Parts Cataloguing \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "18:34:08",
+            "media_type": "photo",
+            "component_group": "removable_panels",
+            "specific_component": "detached_doors_and_panels",
+            "stage": "removed_parts_cataloguing",
+            "media_id": "20260423_183408_gp_eCiJmZnA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_183448_gp_9MQfbmvQ.jpg",
+            "caption": "Detached Body Panels And Doors \u00b7 Removed Parts Cataloguing \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "18:34:48",
+            "media_type": "photo",
+            "component_group": "removable_panels",
+            "specific_component": "detached_body_panels_and_doors",
+            "stage": "removed_parts_cataloguing",
+            "media_id": "20260423_183448_gp_9MQfbmvQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_183514_gp_DyztXKcw.jpg",
+            "caption": "Detached Body Panels And Doors \u00b7 Removed Parts Cataloguing \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "18:35:14",
+            "media_type": "photo",
+            "component_group": "removable_panels",
+            "specific_component": "detached_body_panels_and_doors",
+            "stage": "removed_parts_cataloguing",
+            "media_id": "20260423_183514_gp_DyztXKcw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_183521_gp_pjVN2Ujw.jpg",
+            "caption": "Detached Body Panels And Doors \u00b7 Removed Parts Cataloguing \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "18:35:21",
+            "media_type": "photo",
+            "component_group": "removable_panels",
+            "specific_component": "detached_body_panels_and_doors",
+            "stage": "removed_parts_cataloguing",
+            "media_id": "20260423_183521_gp_pjVN2Ujw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_183540_gp_bhRdLpMg.jpg",
+            "caption": "Detached Doors And Panels \u00b7 Removed Parts Cataloguing \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "18:35:40",
+            "media_type": "photo",
+            "component_group": "removable_panels",
+            "specific_component": "detached_doors_and_panels",
+            "stage": "removed_parts_cataloguing",
+            "media_id": "20260423_183540_gp_bhRdLpMg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_183628_gp_SpWIfUnw.jpg",
+            "caption": "Detached Body Panels And Doors \u00b7 Removed Parts Cataloguing \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "18:36:28",
+            "media_type": "photo",
+            "component_group": "removable_panels",
+            "specific_component": "detached_body_panels_and_doors",
+            "stage": "removed_parts_cataloguing",
+            "media_id": "20260423_183628_gp_SpWIfUnw",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_release_action:RPA-009",
+        "title": "RPA-009",
+        "workstream": "replacement_pipes",
+        "task_type": "decision",
+        "priority": "P1",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "Confirm vacuum pump, booster, check-valve direction, breather routing, and oil exposure before buying vacuum or breather hose.",
+        "data_needed": "",
+        "blocks": "RPO-VAC-001A|RPO-VAC-001B|RPO-VAC-001C",
+        "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_label": "Replacement Pipe Release Actions",
+        "source_path": "data/manual/replacement_pipe_release_actions.csv",
+        "source_row_id": "RPA-009",
+        "notes": "Vacuum hose must not collapse, and breather hose must resist oil swelling.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_release_actions.csv",
+            "label": "Replacement Pipe Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-007",
+        "title": "Diesel return and bleed hose",
+        "workstream": "replacement_pipes",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "measurement_hold / not_direct_send",
+        "location": "engine bay fuel return circuit",
+        "action": "Complete RPI-FUEL-001-B",
+        "data_needed": "Measure pump/filter return barbs, route length, hose OD, clamp size, and material/rating markings in mm",
+        "blocks": "RP-FUEL-001|RPO-FUEL-001B|RUB-011",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-007",
+        "notes": "Open item exists; do not use vacuum or coolant hose.",
+        "evidence_ref": "20260430_215957_gp_2iBbUagw|20260502_005740_gp_Qiat03EQ",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
+            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+            "captured_date": "2026-04-30",
+            "captured_time": "21:59:57",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
+            "stage": "mechanical_inspection",
+            "media_id": "20260430_215957_gp_2iBbUagw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_005740_gp_Qiat03EQ.jpg",
+            "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:57:40",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "replacement_pipe_hose_sample_sorting",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_005740_gp_Qiat03EQ",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-005",
+        "title": "Formed coolant pipe rubber connector/coupler hoses",
+        "workstream": "replacement_pipes",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "measurement_hold / not_direct_send",
+        "location": "loose May 2 formed pipe sample",
+        "action": "Complete RPI-COOL-006-A/B/C",
+        "data_needed": "Measure each connector ID/OD, free/cut length, pipe end OD/bead, mating spigot OD, overlap, clamp band width, bend/kink clearance, and installed heat/chafe clearance in mm",
+        "blocks": "RP-COOL-006|RPO-COOL-006A|RPO-COOL-006B|RUB-028",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-005",
+        "notes": "Gap closed by this audit; these were visible but not previously explicit as separate replacement hoses.",
+        "evidence_ref": "20260502_004044_gp_Hx4Yo0Qg|20260502_004106_gp_wlYlUahA|20260502_004133_gp_ZEpqmARA|20260502_004139_gp_jt1dGw4A|20260502_004145_gp_e8soxsyA",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260502_004044_gp_Hx4Yo0Qg.jpg",
+            "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:40:44",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_pipe_fabrication_samples",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_004044_gp_Hx4Yo0Qg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004106_gp_wlYlUahA.jpg",
+            "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:41:06",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_pipe_fabrication_samples",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_004106_gp_wlYlUahA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004133_gp_ZEpqmARA.jpg",
+            "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:41:33",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_pipe_fabrication_samples",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_004133_gp_ZEpqmARA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004139_gp_jt1dGw4A.jpg",
+            "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:41:39",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_pipe_fabrication_samples",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_004139_gp_jt1dGw4A",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004145_gp_e8soxsyA.jpg",
+            "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:41:45",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_pipe_fabrication_samples",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_004145_gp_e8soxsyA",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-015",
+        "title": "Fuel filler neck vent hoses tank strap pads and sender seal",
+        "workstream": "replacement_pipes",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "inspection_hold / not_direct_send",
+        "location": "tank/filler area",
+        "action": "Inspect when tank/filler area is accessible",
+        "data_needed": "Measure filler neck OD, vent hose ID, sender flange OD/PCD/count, strap width, pad length/thickness, and clamp size in mm",
+        "blocks": "RUB-011|RUB-012",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-015",
+        "notes": "Open item exists; RUB-012 now explicitly includes filler/vent rubber pieces.",
+        "evidence_ref": "body_chassis_rubber_photo_set",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-008",
+        "title": "Injector leak-off hose",
+        "workstream": "replacement_pipes",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "measurement_hold / not_direct_send",
+        "location": "injector tops and return caps",
+        "action": "Complete RPI-FUEL-001-C",
+        "data_needed": "Measure injector leak-off nipple OD, old hose ID/OD, end-cap arrangement, and printed rating in mm",
+        "blocks": "RP-FUEL-001|RPO-FUEL-001C|RUB-011",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-008",
+        "notes": "Open item exists; high-pressure injector pipes are excluded.",
+        "evidence_ref": "20260502_005740_gp_Qiat03EQ",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260502_005740_gp_Qiat03EQ.jpg",
+            "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:57:40",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "replacement_pipe_hose_sample_sorting",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_005740_gp_Qiat03EQ",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_release_action:RPA-008",
+        "title": "RPA-008",
+        "workstream": "replacement_pipes",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "open",
+        "location": "",
+        "action": "Confirm clutch master/slave fitting thread, flare/seat type, flex length in mm, hard-line OD, route length in mm, and drivetrain movement clearance; use a 1500 mm hard-line blank allowance if the hard line is replaced.",
+        "data_needed": "",
+        "blocks": "RPO-CLUTCH-001A|RPO-CLUTCH-001B",
+        "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_label": "Replacement Pipe Release Actions",
+        "source_path": "data/manual/replacement_pipe_release_actions.csv",
+        "source_row_id": "RPA-008",
+        "notes": "The clutch line is hydraulic and needs the same thread/flare discipline as brake plumbing; 1500 mm is the orderable blank allowance pending final route measurement.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_release_actions.csv",
+            "label": "Replacement Pipe Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-010",
+        "title": "Crankcase breather or oil-mist hose",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "measurement_hold / not_direct_send",
+        "location": "engine breather/vapour route",
+        "action": "Capture RPI-VAC-001-C",
+        "data_needed": "Measure breather spigot OD, hose ID/OD, route length, oil exposure, bend radius, and clamp size in mm",
+        "blocks": "RP-VAC-001|RPO-VAC-001B|RUB-016",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-010",
+        "notes": "Open item exists; EPDM coolant-only hose is not acceptable for oil mist.",
+        "evidence_ref": "photo_needed",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-006",
+        "title": "Diesel feed hose",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "measurement_hold / not_direct_send",
+        "location": "engine bay fuel filter to injection pump",
+        "action": "Complete RPI-FUEL-001-A and sample-marking photo if using loose hose",
+        "data_needed": "Measure filter barb OD, pump feed barb OD, route lengths, hose OD, clamp size, and printed hose rating in mm",
+        "blocks": "RP-FUEL-001|RPO-FUEL-001A|RUB-011",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-006",
+        "notes": "Open item exists; diesel-rated hose only.",
+        "evidence_ref": "20260430_215957_gp_2iBbUagw|20260502_005740_gp_Qiat03EQ",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260430_215957_gp_2iBbUagw.jpg",
+            "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
+            "captured_date": "2026-04-30",
+            "captured_time": "21:59:57",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_hoses_fan_belt_and_radiator_support",
+            "stage": "mechanical_inspection",
+            "media_id": "20260430_215957_gp_2iBbUagw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_005740_gp_Qiat03EQ.jpg",
+            "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:57:40",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "replacement_pipe_hose_sample_sorting",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_005740_gp_Qiat03EQ",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-004",
+        "title": "Front heater inlet and outlet hoses",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "measurement_hold / not_direct_send",
+        "location": "firewall and engine heater circuit",
+        "action": "Capture RPI-COOL-004-A/B/C",
+        "data_needed": "Measure engine and heater-core nipple ODs, inlet/outlet route lengths, clamp OD, bend radius, and rear-heater presence in mm",
+        "blocks": "RP-COOL-004|RPO-COOL-004A|RPO-COOL-004B|RUB-013",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-004",
+        "notes": "Open item exists; use molded hose if straight hose would kink.",
+        "evidence_ref": "photo_needed",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-SAMPLE-BLACK-001",
+        "title": "Loose black hose or pipe sample - unassigned circuit",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "length_photo_imported_id_marking_pending",
+        "location": "Loose sample bench with tape reference",
+        "action": "Full-length sample photos showing route shape and both ends where visible",
+        "data_needed": "sample_free_length, hose_or_pipe_od, end_id, rating_markings, vehicle_route_match",
+        "blocks": "RPO-FUEL-001A|RPO-FUEL-001B|RPO-VAC-001A|RPO-VAC-001B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-SAMPLE-BLACK-001",
+        "notes": "Not yet matched to installed vehicle placement",
+        "evidence_ref": "20260502_160754_gp_Zd9UeENg|20260502_160855_gp_w3sghS8Q|20260502_160929_gp_exms2QzQ|20260502_160950_gp_5KW8RnDQ",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260502_160754_gp_Zd9UeENg.jpg",
+            "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "16:07:54",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "replacement_pipe_hose_sample_sorting",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_160754_gp_Zd9UeENg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_160855_gp_w3sghS8Q.jpg",
+            "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "16:08:55",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "replacement_pipe_hose_sample_sorting",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_160855_gp_w3sghS8Q",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_160929_gp_exms2QzQ.jpg",
+            "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "16:09:29",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "replacement_pipe_hose_sample_sorting",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_160929_gp_exms2QzQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_160950_gp_5KW8RnDQ.jpg",
+            "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "16:09:50",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "replacement_pipe_hose_sample_sorting",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_160950_gp_5KW8RnDQ",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-SAMPLE-RED-001",
+        "title": "Loose red hose or line sample - unassigned circuit",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "length_photo_imported_id_marking_pending",
+        "location": "Loose sample bench with tape reference",
+        "action": "Full-length sample photos showing route shape and both ends where visible",
+        "data_needed": "sample_free_length, hose_or_pipe_od, end_id, rating_markings, vehicle_route_match",
+        "blocks": "RPO-FUEL-001A|RPO-FUEL-001B|RPO-VAC-001A|RPO-VAC-001B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-SAMPLE-RED-001",
+        "notes": "Not yet matched to installed vehicle placement",
+        "evidence_ref": "20260502_161055_gp_lS8VRrWg|20260502_161214_gp_zc3zwXlg",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260502_161055_gp_lS8VRrWg.jpg",
+            "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "16:10:55",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "replacement_pipe_hose_sample_sorting",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_161055_gp_lS8VRrWg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_161214_gp_zc3zwXlg.jpg",
+            "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "16:12:14",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "replacement_pipe_hose_sample_sorting",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_161214_gp_zc3zwXlg",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_release_action:RPA-004",
+        "title": "RPA-004",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "in_progress",
+        "location": "",
+        "action": "Read and photograph markings on the loose red/black hose samples, then confirm ID, OD, rating, and whether each sample belongs to fuel, coolant, vacuum, or breather service.",
+        "data_needed": "",
+        "blocks": "RPO-FUEL-001A|RPO-FUEL-001B|RPO-FUEL-001C|RPO-VAC-001A|RPO-VAC-001B",
+        "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+        "source_label": "Replacement Pipe Release Actions",
+        "source_path": "data/manual/replacement_pipe_release_actions.csv",
+        "source_row_id": "RPA-004",
+        "notes": "Length photos imported 2026-05-02; still needs readable markings, ID/OD, and vehicle-circuit assignment before material release.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_release_actions.csv",
+            "label": "Replacement Pipe Release Actions"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-003",
+        "title": "Radiator overflow hose",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "measurement_hold / not_direct_send",
+        "location": "radiator neck to reserve bottle",
+        "action": "Capture RPI-COOL-003-A/B",
+        "data_needed": "Measure radiator nipple OD, bottle nipple OD, finished route length, hose OD, and clip/clamp size in mm",
+        "blocks": "RP-COOL-003|RPO-COOL-003|RUB-015",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-003",
+        "notes": "Open item exists; direct purchase waits for nipple ODs.",
+        "evidence_ref": "photo_needed",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:engine_cooling_pipe_fabrication_samples",
+        "title": "engine_cooling_pipe_fabrication_samples",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "evidence_tracking",
+        "location": "home_to_fabricator_tbd",
+        "action": "Register selected May 2 pipe photos, identify the exact pipe assembly, and produce a fabricator-ready spec with holds for OD, wall, bends, bead ends, clamp lands, and pressure test",
+        "data_needed": "Current selected set covers one formed coolant/radiator pipe assembly with rubber hose joints; keep open for additional pipe samples and final caliper measurements.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "engine_cooling_pipe_fabrication_samples",
+        "notes": "",
+        "evidence_ref": "photo_import_20260502T023726|20260502_004044_gp_Hx4Yo0Qg|20260502_004106_gp_wlYlUahA|20260502_004120_gp_7Jw9Zyrg|20260502_004133_gp_ZEpqmARA|20260502_004139_gp_jt1dGw4A|20260502_004145_gp_e8soxsyA|docs_pipe_fabrication_spec_20260502|docs_replacement_pipes_workstream",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260502_004044_gp_Hx4Yo0Qg.jpg",
+            "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:40:44",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_pipe_fabrication_samples",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_004044_gp_Hx4Yo0Qg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004106_gp_wlYlUahA.jpg",
+            "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:41:06",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_pipe_fabrication_samples",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_004106_gp_wlYlUahA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004120_gp_7Jw9Zyrg.jpg",
+            "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:41:20",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_pipe_fabrication_samples",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_004120_gp_7Jw9Zyrg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004133_gp_ZEpqmARA.jpg",
+            "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:41:33",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_pipe_fabrication_samples",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_004133_gp_ZEpqmARA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004139_gp_jt1dGw4A.jpg",
+            "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:41:39",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_pipe_fabrication_samples",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_004139_gp_jt1dGw4A",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004145_gp_e8soxsyA.jpg",
+            "caption": "Cooling Pipe Fabrication Samples \u00b7 Mechanical Baseline \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:41:45",
+            "media_type": "photo",
+            "component_group": "engine_bay",
+            "specific_component": "cooling_pipe_fabrication_samples",
+            "stage": "mechanical_baseline",
+            "media_id": "20260502_004145_gp_e8soxsyA",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:suspension_upgrade_fitment_and_alignment",
+        "title": "suspension_upgrade_fitment_and_alignment",
+        "workstream": "suspension_upgrade",
+        "task_type": "decision",
+        "priority": "P1",
+        "timing": "now",
+        "status": "queued",
+        "location": "workshop",
+        "action": "Install Ironman foam cell medium suspension kit, torque-check all pivots under load, and complete alignment/road-validation cycle",
+        "data_needed": "Major project execution gate after spec + kit lock. No final install until both Ironman shipments, torque sheet, safe support setup, hanger inspection, alignment, and 50 km / 500 km rechecks are controlled.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "suspension_upgrade_fitment_and_alignment",
+        "notes": "",
+        "evidence_ref": "user_plan_2026-04-22_tub_off_update|photo_inventory_20260422|docs_suspension_workstream",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:suspension_upgrade_spec_and_kit_lock",
+        "title": "suspension_upgrade_spec_and_kit_lock",
+        "workstream": "suspension_upgrade",
+        "task_type": "measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "planned_scope_lock",
+        "location": "workshop",
+        "action": "Freeze Ironman foam cell medium kit fitment spec with measured ride-height and clearance baseline; lock full procurement kit (shackles/pins included)",
+        "data_needed": "Major project: prevent piecemeal buying and mismatch risk. Use docs/suspension-workstream.md for receipt check, no-go gates, and baseline measurement requirements.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "suspension_upgrade_spec_and_kit_lock",
+        "notes": "",
+        "evidence_ref": "whatsapp_akber|akber_khan-00855|akber_khan-00858|docs_suspension_workstream",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_station_closure:OE-EXTRA-01",
+        "title": "additional_body_mount_position_if_found",
+        "workstream": "chassis_rubbers",
+        "task_type": "data",
+        "priority": "P2",
+        "timing": "later",
+        "status": "conditional_only",
+        "location": "possible_oe_station",
+        "action": "BMA-001 BMA-002",
+        "data_needed": "",
+        "blocks": "BMA-001 BMA-002",
+        "record_result_in": "",
+        "source_label": "Body Mount Station Closure",
+        "source_path": "data/manual/body_mount_station_closure_sheet.csv",
+        "source_row_id": "OE-EXTRA-01",
+        "notes": "Use only if layout proves the vehicle has more than the six current working main stations.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_station_closure_sheet.csv",
+            "label": "Body Mount Station Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_station_closure:OE-EXTRA-02",
+        "title": "additional_body_mount_position_if_found",
+        "workstream": "chassis_rubbers",
+        "task_type": "data",
+        "priority": "P2",
+        "timing": "later",
+        "status": "conditional_only",
+        "location": "possible_oe_station",
+        "action": "BMA-001 BMA-002",
+        "data_needed": "",
+        "blocks": "BMA-001 BMA-002",
+        "record_result_in": "",
+        "source_label": "Body Mount Station Closure",
+        "source_path": "data/manual/body_mount_station_closure_sheet.csv",
+        "source_row_id": "OE-EXTRA-02",
+        "notes": "Use only if layout proves the vehicle has more than the six current working main stations.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_station_closure_sheet.csv",
+            "label": "Body Mount Station Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_station_closure:OE-EXTRA-03",
+        "title": "additional_body_mount_position_if_found",
+        "workstream": "chassis_rubbers",
+        "task_type": "data",
+        "priority": "P2",
+        "timing": "later",
+        "status": "conditional_only",
+        "location": "possible_oe_station",
+        "action": "BMA-001 BMA-002",
+        "data_needed": "",
+        "blocks": "BMA-001 BMA-002",
+        "record_result_in": "",
+        "source_label": "Body Mount Station Closure",
+        "source_path": "data/manual/body_mount_station_closure_sheet.csv",
+        "source_row_id": "OE-EXTRA-03",
+        "notes": "Use only if layout proves the vehicle has more than the six current working main stations.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_station_closure_sheet.csv",
+            "label": "Body Mount Station Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_station_closure:OE-EXTRA-04",
+        "title": "additional_body_mount_position_if_found",
+        "workstream": "chassis_rubbers",
+        "task_type": "data",
+        "priority": "P2",
+        "timing": "later",
+        "status": "conditional_only",
+        "location": "possible_oe_station",
+        "action": "BMA-001 BMA-002",
+        "data_needed": "",
+        "blocks": "BMA-001 BMA-002",
+        "record_result_in": "",
+        "source_label": "Body Mount Station Closure",
+        "source_path": "data/manual/body_mount_station_closure_sheet.csv",
+        "source_row_id": "OE-EXTRA-04",
+        "notes": "Use only if layout proves the vehicle has more than the six current working main stations.",
+        "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_station_closure_sheet.csv",
+            "label": "Body Mount Station Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-027",
+        "title": "Pedal rubbers",
+        "workstream": "interior_controls",
+        "task_type": "measurement",
+        "priority": "P2",
+        "timing": "later",
+        "status": "deferred_measurement_hold / deferred_not_direct_send",
+        "location": "brake/clutch/accelerator pedal pads",
+        "action": "Defer until cabin controls assembly",
+        "data_needed": "Measure each pedal plate width, height, thickness, and retaining-lip style in mm",
+        "blocks": "RUB-023",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-027",
+        "notes": "Open item exists; low urgency.",
+        "evidence_ref": "not_confirmed_in_current_contact_sheets",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-023",
+        "title": "Door and window rubbers channels sliding-window seals",
+        "workstream": "interior_weatherproofing",
+        "task_type": "measurement",
+        "priority": "P2",
+        "timing": "later",
+        "status": "body_fit_hold / deferred_not_direct_send",
+        "location": "doors/windows/body apertures",
+        "action": "Defer until body alignment and window hardware audit",
+        "data_needed": "Confirm door type, aperture repair, window hardware, glass thickness, channel width, and seal profile in mm",
+        "blocks": "RUB-018|RUB-021",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-023",
+        "notes": "Open deferred items exist.",
+        "evidence_ref": "body_chassis_rubber_photo_set",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-028",
+        "title": "HVAC A/C drain duct hoses and O-rings",
+        "workstream": "interior_weatherproofing",
+        "task_type": "measurement",
+        "priority": "P2",
+        "timing": "later",
+        "status": "layout_hold / deferred_not_direct_send",
+        "location": "dash/HVAC/A/C layout",
+        "action": "Defer until HVAC layout and dash mock-up",
+        "data_needed": "Measure compressor/condenser/evaporator fittings, drain outlet OD, defrost/vent outlet OD, required lengths, and grommet locations in mm",
+        "blocks": "RUB-024|RUB-025",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-028",
+        "notes": "Open deferred items exist.",
+        "evidence_ref": "body_chassis_rubber_photo_set",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-025",
+        "title": "Vent flap cowl and fresh-air seals",
+        "workstream": "interior_weatherproofing",
+        "task_type": "measurement",
+        "priority": "P2",
+        "timing": "later",
+        "status": "body_fit_hold / deferred_not_direct_send",
+        "location": "vent/cowl body openings",
+        "action": "Defer until body hardware mock-up",
+        "data_needed": "Measure final opening dimensions, seal channel profile, hardware type, and compression gap in mm",
+        "blocks": "RUB-020",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-025",
+        "notes": "Open deferred item exists.",
+        "evidence_ref": "body_chassis_rubber_photo_set",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-024",
+        "title": "Windscreen rubber and base seal",
+        "workstream": "interior_weatherproofing",
+        "task_type": "measurement",
+        "priority": "P2",
+        "timing": "later",
+        "status": "glass_stage_hold / deferred_not_direct_send",
+        "location": "windscreen frame/glass",
+        "action": "Defer until windscreen/glass stage",
+        "data_needed": "Measure glass thickness, frame channel, base seal length/profile, and repaired opening dimensions in mm",
+        "blocks": "RUB-019",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-024",
+        "notes": "Open deferred item exists.",
+        "evidence_ref": "body_chassis_rubber_photo_set",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      }
+    ]
+  },
   "supplies": {
     "summary_by_type": [
       {
         "supply_type": "tool",
         "previously": 40,
-        "in_process": 19,
-        "still_required": 8,
-        "total": 67
+        "in_process": 18,
+        "still_required": 6,
+        "total": 64
       },
       {
         "supply_type": "substance",
         "previously": 7,
         "in_process": 4,
-        "still_required": 4,
-        "total": 15
+        "still_required": 3,
+        "total": 14
       },
       {
         "supply_type": "part",
-        "previously": 85,
+        "previously": 84,
         "in_process": 8,
-        "still_required": 61,
+        "still_required": 62,
         "total": 154
       }
     ],
@@ -40318,41 +45684,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_57",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Portable 12-Way Car Fuse Box Universal Automotive Box Holder with Led Indicator",
-          "vendor": "Mughal",
-          "amount": "4000",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "previously",
-          "status_detail": "received",
-          "procurement_stage": "",
-          "payment_status": "Y",
-          "delivery_status": "Y",
-          "evidence_ref": "",
-          "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 33 into Parts inventory.",
-          "links": [],
-          "image": {
-            "path": "../../photos/20260411_071153.jpg",
-            "caption": "12-way fuse block and power hardware - local received photo evidence",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "row_57"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 999
           }
         },
         {
@@ -43856,42 +49187,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_tools",
-          "source_ref": "workbook_tools#row_55",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "22mm chassis punch or precision hole cutter",
-          "vendor": "Local hardware/tools market",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "in_process",
-          "status_detail": "ordered_or_paid",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "No",
-          "evidence_ref": "",
-          "notes": "Recently ordered; awaiting arrival confirmation.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/hole_cutter.jpg",
-            "caption": "22mm chassis punch or precision hole cutter \u00b7 hole cutter reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "hole_cutter",
-            "matched_tokens": [
-              "hole",
-              "cutter"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "workbook_tools",
           "source_ref": "workbook_tools#row_41",
           "supply_type": "tool",
           "inventory_group": "tools",
@@ -46058,7 +51353,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-REAR-002|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-          "notes": "Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube only after flare standard, fitting threads/seats, bend templates, route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
+          "notes": "Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube from the 7600 mm / 25 ft brake tube coil allowance only after flare standard, fitting threads/seats, bend templates, final left/right route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
           "links": [],
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -46431,6 +51726,41 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "part_cabin_compact_fuse_boxes",
+          "supply_type": "part",
+          "inventory_group": "electrical",
+          "item": "Compact covered cabin blade fuse boxes - likely 3 identical units",
+          "vendor": "Bilal Ganj / compact automotive electrical supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "electrical_reset",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought",
+          "notes": "User correction 2026-05-03: cabin/interior car fuse boxes have not been ordered. Relay block row 55 remains received/as specified, but the generic Portable 12-Way universal fuse box row is not purchased stock. Buy likely 3 compact covered blade-fuse boxes for the car/cabin circuits; use compact OEM-style covered ATO/ATC blocks with secure lids and strong terminals, same model if possible. No relay block, no large open universal block, and do not count the Portable 12-Way wording as bought evidence. Confirm final cabin mounting envelope and circuit split before payment.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/car_cover.jpg",
+            "caption": "Compact covered cabin blade fuse boxes - likely 3 identical units \u00b7 car cover reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "car_cover",
+            "matched_tokens": [
+              "cover"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "quote_rubber_grommet_set_chat",
           "supply_type": "part",
           "inventory_group": "electrical",
@@ -46620,7 +51950,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH INSPECT THEN REPLACE if leakage, pedal sink, or seized seals. If the clutch line is cracked, corroded, swollen, or leaking, use RPO-CLUTCH-001A/B: match master/slave port thread, flare/seat, flex length, hard-line OD, and route length; 1500 mm brake/clutch-rated hard-line blank allowance if replaced.",
+          "notes": "MECH INSPECT THEN REPLACE if leakage, pedal sink, or seized seals. If the clutch line is cracked, corroded, swollen, or leaking, use RPO-CLUTCH-001A/B: match master/slave port thread, flare/seat, flex length, hard-line OD, and final route length; pipe length basis is a 1500 mm brake/clutch-rated hard-line blank allowance if replaced.",
           "links": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
@@ -46656,7 +51986,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready via RPO-COOL-001/002/003/005: molded EPDM upper and lower radiator hoses for HJ47/2H route; small EPDM overflow hose 1000 mm local buy length cut to measured radiator-to-bottle route; formed coolant/radiator pipe from 750 mm minimum tube blank using the physical sample. Toyota/Dayco references are cross-references only. Release hold: measure thermostat/radiator/engine neck ODs, hose OD for clamps, old-hose free lengths, overflow nipple ODs, and formed-pipe tube OD/wall/centerline/bends/beads before payment or fabrication.",
+          "notes": "Spec ready via RPO-COOL-001/002/003/005: molded EPDM upper and lower radiator hoses for HJ47/2H route; small EPDM overflow hose 1000 mm local buy length cut to measured radiator-to-bottle route; formed coolant/radiator pipe length basis is 1 x 750 mm minimum tube blank, with final centerline length release-held to the physical sample measurement. Toyota/Dayco references are cross-references only. Release hold: measure thermostat/radiator/engine neck ODs, hose OD for clamps, old-hose free lengths, overflow nipple ODs, and formed-pipe tube OD/wall/centerline length/bends/beads before payment or fabrication.",
           "links": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg",
@@ -46692,7 +52022,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: diesel-rated 8 mm ID x 3000 mm feed hose, 6 mm ID x 2000 mm return/bleed hose, 3.2-3.5 mm ID x 1000 mm injector leak-off hose, plus conditional 8 mm OD x 5000 mm feed and 6 mm OD x 5000 mm return hard-line allowances if corrosion inspection requires replacement. Use rolled-edge fuel-injection clamps. Release hold: measure every barb/line OD, hose OD for clamps, route lengths, and flare/union style if hard lines are replaced. Do not fabricate high-pressure injector pipes.",
+          "notes": "Spec ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: diesel-rated 8 mm ID x 3000 mm feed hose, 6 mm ID x 2000 mm return/bleed hose, 3.2-3.5 mm ID x 1000 mm injector leak-off hose, plus conditional pipe lengths of 8 mm OD x 5000 mm feed tube and 6 mm OD x 5000 mm return tube if corrosion inspection requires hard-line replacement. Use rolled-edge fuel-injection clamps. Release hold: measure every barb/line OD, hose OD for clamps, route lengths, final hard-line section lengths, and flare/union style if hard lines are replaced. Do not fabricate high-pressure injector pipes.",
           "links": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/heavy_battery_cable.jpg",
@@ -46722,12 +52052,12 @@ window.J40_DASHBOARD_DATA = {
           "currency": "PKR",
           "workstream": "mechanical_baseline",
           "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "next_phase_purchase",
+          "status_detail": "deferred",
+          "procurement_stage": "deferred_until_failed_or_engine_lift_scope",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-          "notes": "MECH INSPECT THEN REPLACE if cracked sagging or oil-soaked",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-03_no_engine_lift_baseline",
+          "notes": "User correction 2026-05-03: current baseline keeps the engine installed. The Vitz/SCP90 EPS route is column-assist and does not require engine removal. Do not buy an engine lift/hoist or engine mount set just for this scope. Inspect engine mounts in place after degreasing and under load; buy/replace only if there is confirmed cracking, sag, separation, oil-soak failure, or if another approved job already requires safely supporting/lifting the engine.",
           "links": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/engine_mount.jpg",
@@ -46976,7 +52306,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready via RPO-BRAKE-001A/B: front/rear brake flex hoses by current fitting thread/banjo/seat, bracket retention, free length and full-droop length; brake hard-line stock 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with brake-rated fittings. Release hold: close fitting photos, flare/thread/seat confirmation, route lengths, bend templates, and full-droop slack before payment/fabrication.",
+          "notes": "Spec ready via RPO-BRAKE-001A/B: front/rear brake flex hoses by current fitting thread/banjo/seat, bracket retention, free length and full-droop length; brake hard-line length basis is 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with brake-rated fittings. Release hold: close fitting photos, flare/thread/seat confirmation, final individual route lengths, bend templates, and full-droop slack before payment/fabrication.",
           "links": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
@@ -46991,41 +52321,6 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "brake",
               "line"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_bed_lining",
-          "supply_type": "substance",
-          "inventory_group": "substances",
-          "item": "Bed lining",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "interior_weatherproofing",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "next_phase_purchase",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00803",
-          "notes": "Listed by the user as still needed; chat sequences this after welding/primer and before sound deadening",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/bedliner.jpg",
-            "caption": "Bed lining \u00b7 bedliner reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "bedliner",
-            "matched_tokens": [
-              "bedliner"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -47133,78 +52428,6 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "air",
               "hose"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "workbook_tools",
-          "source_ref": "workbook_tools#row_54",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "22mm step drill bit (metal panel capable)",
-          "vendor": "Local hardware/tools market",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "No",
-          "evidence_ref": "",
-          "notes": "Primary tool to open existing pull-switch holes toward 22mm.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/switch_panel.jpg",
-            "caption": "22mm step drill bit (metal panel capable) \u00b7 switch panel reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "switch_panel",
-            "matched_tokens": [
-              "switch",
-              "panel"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "workbook_tools",
-          "source_ref": "workbook_tools#row_56",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "Deburring tool / round file set for panel holes",
-          "vendor": "Local hardware/tools market",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "No",
-          "evidence_ref": "",
-          "notes": "Required for clean switch fit and paint-edge protection.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/switch_panel.jpg",
-            "caption": "Deburring tool / round file set for panel holes \u00b7 switch panel reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "switch_panel",
-            "matched_tokens": [
-              "switch",
-              "panel"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -47895,42 +53118,6 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "exact_order_evidence",
           "match_score": 999
-        }
-      },
-      {
-        "source": "workbook_tools",
-        "source_ref": "workbook_tools#row_55",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "22mm chassis punch or precision hole cutter",
-        "vendor": "Local hardware/tools market",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "in_process",
-        "status_detail": "ordered_or_paid",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "No",
-        "evidence_ref": "",
-        "notes": "Recently ordered; awaiting arrival confirmation.",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/hole_cutter.jpg",
-          "caption": "22mm chassis punch or precision hole cutter \u00b7 hole cutter reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "hole_cutter",
-          "matched_tokens": [
-            "hole",
-            "cutter"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
         }
       },
       {
@@ -50538,41 +55725,6 @@ window.J40_DASHBOARD_DATA = {
             "row_68"
           ],
           "match_basis": "manual_override",
-          "match_score": 999
-        }
-      },
-      {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_57",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "Portable 12-Way Car Fuse Box Universal Automotive Box Holder with Led Indicator",
-        "vendor": "Mughal",
-        "amount": "4000",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "previously",
-        "status_detail": "received",
-        "procurement_stage": "",
-        "payment_status": "Y",
-        "delivery_status": "Y",
-        "evidence_ref": "",
-        "notes": "Evidence indicates purchased/received. | Migrated from Wiring row 33 into Parts inventory.",
-        "links": [],
-        "image": {
-          "path": "../../photos/20260411_071153.jpg",
-          "caption": "12-way fuse block and power hardware - local received photo evidence",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "row_57"
-          ],
-          "match_basis": "local_inventory_evidence",
           "match_score": 999
         }
       },
@@ -53783,6 +58935,41 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "source": "expenses",
+        "source_ref": "part_cabin_compact_fuse_boxes",
+        "supply_type": "part",
+        "inventory_group": "electrical",
+        "item": "Compact covered cabin blade fuse boxes - likely 3 identical units",
+        "vendor": "Bilal Ganj / compact automotive electrical supplier",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "electrical_reset",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought",
+        "notes": "User correction 2026-05-03: cabin/interior car fuse boxes have not been ordered. Relay block row 55 remains received/as specified, but the generic Portable 12-Way universal fuse box row is not purchased stock. Buy likely 3 compact covered blade-fuse boxes for the car/cabin circuits; use compact OEM-style covered ATO/ATC blocks with secure lids and strong terminals, same model if possible. No relay block, no large open universal block, and do not count the Portable 12-Way wording as bought evidence. Confirm final cabin mounting envelope and circuit split before payment.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/car_cover.jpg",
+          "caption": "Compact covered cabin blade fuse boxes - likely 3 identical units \u00b7 car cover reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "car_cover",
+          "matched_tokens": [
+            "cover"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
         "source": "workbook_parts",
         "source_ref": "workbook_parts#row_38",
         "supply_type": "part",
@@ -54309,7 +59496,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH INSPECT THEN REPLACE if leakage, pedal sink, or seized seals. If the clutch line is cracked, corroded, swollen, or leaking, use RPO-CLUTCH-001A/B: match master/slave port thread, flare/seat, flex length, hard-line OD, and route length; 1500 mm brake/clutch-rated hard-line blank allowance if replaced.",
+        "notes": "MECH INSPECT THEN REPLACE if leakage, pedal sink, or seized seals. If the clutch line is cracked, corroded, swollen, or leaking, use RPO-CLUTCH-001A/B: match master/slave port thread, flare/seat, flex length, hard-line OD, and final route length; pipe length basis is a 1500 mm brake/clutch-rated hard-line blank allowance if replaced.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
@@ -54380,7 +59567,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready via RPO-COOL-001/002/003/005: molded EPDM upper and lower radiator hoses for HJ47/2H route; small EPDM overflow hose 1000 mm local buy length cut to measured radiator-to-bottle route; formed coolant/radiator pipe from 750 mm minimum tube blank using the physical sample. Toyota/Dayco references are cross-references only. Release hold: measure thermostat/radiator/engine neck ODs, hose OD for clamps, old-hose free lengths, overflow nipple ODs, and formed-pipe tube OD/wall/centerline/bends/beads before payment or fabrication.",
+        "notes": "Spec ready via RPO-COOL-001/002/003/005: molded EPDM upper and lower radiator hoses for HJ47/2H route; small EPDM overflow hose 1000 mm local buy length cut to measured radiator-to-bottle route; formed coolant/radiator pipe length basis is 1 x 750 mm minimum tube blank, with final centerline length release-held to the physical sample measurement. Toyota/Dayco references are cross-references only. Release hold: measure thermostat/radiator/engine neck ODs, hose OD for clamps, old-hose free lengths, overflow nipple ODs, and formed-pipe tube OD/wall/centerline length/bends/beads before payment or fabrication.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg",
@@ -54416,7 +59603,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: diesel-rated 8 mm ID x 3000 mm feed hose, 6 mm ID x 2000 mm return/bleed hose, 3.2-3.5 mm ID x 1000 mm injector leak-off hose, plus conditional 8 mm OD x 5000 mm feed and 6 mm OD x 5000 mm return hard-line allowances if corrosion inspection requires replacement. Use rolled-edge fuel-injection clamps. Release hold: measure every barb/line OD, hose OD for clamps, route lengths, and flare/union style if hard lines are replaced. Do not fabricate high-pressure injector pipes.",
+        "notes": "Spec ready via RPO-FUEL-001A/B/C and RPO-FUEL-002A/B: diesel-rated 8 mm ID x 3000 mm feed hose, 6 mm ID x 2000 mm return/bleed hose, 3.2-3.5 mm ID x 1000 mm injector leak-off hose, plus conditional pipe lengths of 8 mm OD x 5000 mm feed tube and 6 mm OD x 5000 mm return tube if corrosion inspection requires hard-line replacement. Use rolled-edge fuel-injection clamps. Release hold: measure every barb/line OD, hose OD for clamps, route lengths, final hard-line section lengths, and flare/union style if hard lines are replaced. Do not fabricate high-pressure injector pipes.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/heavy_battery_cable.jpg",
@@ -54446,12 +59633,12 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "workstream": "mechanical_baseline",
         "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "next_phase_purchase",
+        "status_detail": "deferred",
+        "procurement_stage": "deferred_until_failed_or_engine_lift_scope",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review",
-        "notes": "MECH INSPECT THEN REPLACE if cracked sagging or oil-soaked",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-03_no_engine_lift_baseline",
+        "notes": "User correction 2026-05-03: current baseline keeps the engine installed. The Vitz/SCP90 EPS route is column-assist and does not require engine removal. Do not buy an engine lift/hoist or engine mount set just for this scope. Inspect engine mounts in place after degreasing and under load; buy/replace only if there is confirmed cracking, sag, separation, oil-soak failure, or if another approved job already requires safely supporting/lifting the engine.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/engine_mount.jpg",
@@ -54773,7 +59960,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-REAR-002|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-        "notes": "Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube only after flare standard, fitting threads/seats, bend templates, route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
+        "notes": "Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube from the 7600 mm / 25 ft brake tube coil allowance only after flare standard, fitting threads/seats, bend templates, final left/right route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
         "links": [],
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -55760,41 +60947,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "part_bed_lining",
-        "supply_type": "substance",
-        "inventory_group": "substances",
-        "item": "Bed lining",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "interior_weatherproofing",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "next_phase_purchase",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00803",
-        "notes": "Listed by the user as still needed; chat sequences this after welding/primer and before sound deadening",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/bedliner.jpg",
-          "caption": "Bed lining \u00b7 bedliner reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "bedliner",
-          "matched_tokens": [
-            "bedliner"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
         "source_ref": "part_mech_brake_flex_hose_set",
         "supply_type": "substance",
         "inventory_group": "substances",
@@ -55809,7 +60961,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready via RPO-BRAKE-001A/B: front/rear brake flex hoses by current fitting thread/banjo/seat, bracket retention, free length and full-droop length; brake hard-line stock 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with brake-rated fittings. Release hold: close fitting photos, flare/thread/seat confirmation, route lengths, bend templates, and full-droop slack before payment/fabrication.",
+        "notes": "Spec ready via RPO-BRAKE-001A/B: front/rear brake flex hoses by current fitting thread/banjo/seat, bracket retention, free length and full-droop length; brake hard-line length basis is 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with brake-rated fittings. Release hold: close fitting photos, flare/thread/seat confirmation, final individual route lengths, bend templates, and full-droop slack before payment/fabrication.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
@@ -55966,78 +61118,6 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "air",
             "hose"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "workbook_tools",
-        "source_ref": "workbook_tools#row_54",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "22mm step drill bit (metal panel capable)",
-        "vendor": "Local hardware/tools market",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "No",
-        "evidence_ref": "",
-        "notes": "Primary tool to open existing pull-switch holes toward 22mm.",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/switch_panel.jpg",
-          "caption": "22mm step drill bit (metal panel capable) \u00b7 switch panel reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "switch_panel",
-          "matched_tokens": [
-            "switch",
-            "panel"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "workbook_tools",
-        "source_ref": "workbook_tools#row_56",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "Deburring tool / round file set for panel holes",
-        "vendor": "Local hardware/tools market",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "No",
-        "evidence_ref": "",
-        "notes": "Required for clean switch fit and paint-edge protection.",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/switch_panel.jpg",
-          "caption": "Deburring tool / round file set for panel holes \u00b7 switch panel reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "switch_panel",
-          "matched_tokens": [
-            "switch",
-            "panel"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
