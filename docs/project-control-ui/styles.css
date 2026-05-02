@@ -449,6 +449,44 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
 }
 
+.market-spec-card {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.market-spec-callout {
+  background: #f7f1de;
+  border: 1px solid #e4d5ab;
+  border-radius: 8px;
+  margin: 0;
+  padding: 0.62rem 0.7rem;
+}
+
+.market-spec-grid {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.market-spec-block {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fcfaf6;
+  padding: 0.65rem;
+}
+
+.market-spec-block h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.86rem;
+  color: var(--accent-2);
+  text-transform: uppercase;
+}
+
+.market-spec-price {
+  margin: 0;
+  color: var(--ink);
+}
+
 table {
   width: 100%;
   border-collapse: collapse;

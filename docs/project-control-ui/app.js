@@ -40,6 +40,12 @@
     });
   });
 
+  window.addEventListener("hashchange", () => {
+    if (applyRouteFromHash()) {
+      render();
+    }
+  });
+
   root.addEventListener("click", (event) => {
     const imageTrigger = event.target.closest("[data-image-key]");
     if (imageTrigger) {
@@ -101,15 +107,14 @@
       return;
     }
     state.activeView = nextView;
-    tabButtons.forEach((node) => {
-      node.classList.toggle("is-active", node.getAttribute("data-view") === nextView);
-    });
+    refreshTabButtons();
     if (state.lightboxImageBase) {
       closeLightbox();
     }
     if (state.itemDetailRow) {
       closeItemDetail();
     }
+    updateRouteHash();
     render();
   }
 
@@ -121,9 +126,55 @@
     state.activeWorkstreamId = targetId;
     if (state.activeView === "workstreams") {
       renderWorkstreams();
+      updateRouteHash();
       return;
     }
     switchView("workstreams");
+  }
+
+  function refreshTabButtons() {
+    tabButtons.forEach((node) => {
+      node.classList.toggle("is-active", node.getAttribute("data-view") === state.activeView);
+    });
+  }
+
+  function applyRouteFromHash() {
+    const rawHash = cleanString(decodeURIComponent(window.location.hash.replace(/^#/, "")));
+    if (!rawHash) {
+      refreshTabButtons();
+      return false;
+    }
+    const [viewPart, workstreamPart] = rawHash.split("/");
+    const requestedView = cleanString(viewPart);
+    const validViews = new Set(tabButtons.map((node) => cleanString(node.getAttribute("data-view"))).filter(Boolean));
+    let changed = false;
+
+    if (validViews.has(requestedView) && requestedView !== state.activeView) {
+      state.activeView = requestedView;
+      changed = true;
+    }
+
+    if (requestedView === "workstreams" && workstreamPart) {
+      const requestedWorkstream = cleanString(workstreamPart);
+      const exists = (data.workstreams || []).some((workstream) => workstream.id === requestedWorkstream);
+      if (exists && requestedWorkstream !== state.activeWorkstreamId) {
+        state.activeWorkstreamId = requestedWorkstream;
+        changed = true;
+      }
+    }
+
+    refreshTabButtons();
+    return changed;
+  }
+
+  function updateRouteHash() {
+    const route =
+      state.activeView === "workstreams" && state.activeWorkstreamId
+        ? `#workstreams/${encodeURIComponent(state.activeWorkstreamId)}`
+        : `#${encodeURIComponent(state.activeView)}`;
+    if (window.location.hash !== route) {
+      history.replaceState(null, "", route);
+    }
   }
 
   function formatToken(value) {
@@ -1825,6 +1876,55 @@
     `;
   }
 
+  function renderMarketSpecList(title, items) {
+    const sourceItems = Array.isArray(items) ? items.filter((item) => cleanString(item)) : [];
+    if (!sourceItems.length) {
+      return "";
+    }
+    return `
+      <div class="market-spec-block">
+        <h4>${escapeHtml(title)}</h4>
+        ${renderPlainList(sourceItems)}
+      </div>
+    `;
+  }
+
+  function renderMarketSpecCards(specs) {
+    const sourceSpecs = Array.isArray(specs) ? specs.filter((spec) => spec && cleanString(spec.title)) : [];
+    if (!sourceSpecs.length) {
+      return "";
+    }
+    return sourceSpecs
+      .map((spec) => {
+        const price = spec.price_guidance || {};
+        const priceBits = [
+          price.target_range ? `Target range: ${price.target_range}` : "",
+          price.negotiation_midpoint ? `Negotiation midpoint: ${price.negotiation_midpoint}` : "",
+          price.rule || "",
+        ].filter((item) => cleanString(item));
+        return `
+          <article class="card market-spec-card" id="${escapeHtml(spec.id || "")}">
+            <div class="detail-header">
+              <h3>${escapeHtml(spec.title || "Market Spec")}</h3>
+              ${chip(spec.scope || "Market scout")}
+            </div>
+            ${spec.plain_stall_request ? `<p class="market-spec-callout"><strong>Plain stall request:</strong> ${escapeHtml(spec.plain_stall_request)}</p>` : ""}
+            ${spec.buy_target ? `<p><strong>Buy Target:</strong> ${escapeHtml(spec.buy_target)}</p>` : ""}
+            <div class="market-spec-grid">
+              ${renderMarketSpecList("Must Include", spec.must_include)}
+              ${renderMarketSpecList("Bench Test", spec.bench_test)}
+              ${renderMarketSpecList("Reject If", spec.reject_if)}
+              ${renderMarketSpecList("Capture Before Leaving", spec.capture_before_leaving)}
+            </div>
+            ${priceBits.length ? `<p class="market-spec-price"><strong>Price Guidance:</strong> ${escapeHtml(priceBits.join(" | "))}</p>` : ""}
+            ${spec.decision_rule ? `<p><strong>Decision Rule:</strong> ${escapeHtml(spec.decision_rule)}</p>` : ""}
+            ${renderLinksPanel(spec)}
+          </article>
+        `;
+      })
+      .join("");
+  }
+
   function renderElectricalCell(row, column) {
     const value = cleanString(row && row[column.key]);
     if (column.kind === "status") {
@@ -2329,6 +2429,7 @@
         <p class="small-muted">${escapeHtml(active.notes || "")}</p>
       </article>
 
+      ${renderMarketSpecCards(active.market_specs)}
       ${renderWorkstreamRequirements(active)}
       ${renderFabricationPackages(active.fabrication_packages)}
 
@@ -2530,6 +2631,8 @@
     root.innerHTML = `
       <h2 class="section-title">Ordering and Inventory Guidance</h2>
       <p class="section-subtitle">Parts ordering plus lifecycle tracking for tools, substances, and parts.</p>
+
+      ${renderMarketSpecCards(parts.market_specs)}
 
       <section class="card">
         <h3>Tools + Substances + Parts Lifecycle</h3>
@@ -3629,5 +3732,6 @@
     renderOverview();
   }
 
+  applyRouteFromHash();
   render();
 })();

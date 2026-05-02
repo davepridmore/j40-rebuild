@@ -15,8 +15,8 @@
 
 | Component Job | Status | Direct | Indirect | Direct Components | Notes |
 | --- | --- | ---: | ---: | --- | --- |
-| `eps_vitz_control_wiring_and_safety` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
-| `eps_vitz_donor_column_and_mounts` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
+| `eps_vitz_complete_kit_market_check` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
+| `eps_vitz_connector_wire_id_check` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `interior_dash_switch_fitup` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `interior_diesel_cutoff_ignition_security` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `rear_brake_cable_line_refresh` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |

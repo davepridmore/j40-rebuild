@@ -125,7 +125,7 @@ Shim/spacer target pack:
 
 Plain stall request: **"I need a complete 2005-2011 Toyota Vitz/Yaris 90-series electric EPS steering column set, chassis code SCP90 or NCP90, with matching computer/ECU, original plugs with wiring tails, shafts, U-joints, couplers, and brackets, tested working."**
 
-Ask for: **one complete 2005-2011 Toyota Vitz/Yaris 90-series electric column-assist EPS conversion set**, chassis code **SCP90 or NCP90**. Corolla/Axio, Prius, and other Toyota EPS columns are **not buy candidates** for this build unless explicitly approved later; collect quote/photos only if no SCP90/NCP90 set is found. This is **not** hydraulic power steering; do not buy pumps, steering racks, hydraulic boxes, hoses, or incomplete loose motors.
+Ask for: **one complete 2005-2011 Toyota Vitz/Yaris 90-series electric column-assist EPS set**, chassis code **SCP90 or NCP90**. Corolla/Axio, Prius, and other Toyota EPS columns are **not buy candidates** for this build unless explicitly approved later; collect quote/photos only if no SCP90/NCP90 set is found. This is **not** hydraulic power steering; do not buy pumps, steering racks, hydraulic boxes, hoses, or incomplete loose motors.
 
 Buy only a matched set from one donor vehicle. Do not mix a column from one car with an ECU/controller from another car unless the seller can prove the pair works together on the bench.
 
@@ -139,7 +139,7 @@ Buy only a matched set from one donor vehicle. Do not mix a column from one car 
 | Upper intermediate shaft section | Included with usable spline/coupler end |
 | Lower intermediate shaft section | Included with usable spline/coupler end |
 | U-joints | Included, smooth through full rotation, no tight spots or notchiness |
-| Input/output couplers or spline adapters | Included where available; useful for adapting to J40 steering linkage |
+| Input/output couplers or spline adapters | Included where available with the donor set |
 | Column mounting clamp/bracket set | Included; no cracked castings or broken tabs |
 | Firewall support bracket/plate | Included if donor setup has one; photograph if missing |
 | Fasteners/clamps supplied with donor column | Keep with kit if available |
@@ -150,7 +150,7 @@ Mandatory bench test before payment:
 - Assist must be smooth and consistent, with no jerks, grinding, severe whine, or cut-out.
 - Output shaft must not have excessive backlash/play.
 - U-joints must rotate smoothly without binding.
-- Steering must still be mechanically connected if assist is off.
+- Shaft must still turn manually if assist is off.
 - If the seller cannot bench-test it, treat it as quote-only and do not buy.
 
 Reject immediately if:
@@ -161,7 +161,7 @@ Reject immediately if:
 - Seller offers only a motor, only an ECU, or only a column without shafts/connectors.
 - Unit is noisy, jerky, notchy, or cannot be demonstrated.
 
-Fitment capture at stall:
+Market capture at stall:
 - Donor vehicle/model/year claimed by seller: `________`
 - Donor chassis code, must be SCP90 or NCP90: `________`
 - Column part number label: `________`

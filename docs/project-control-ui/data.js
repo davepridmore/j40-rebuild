@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-02T17:08:08+05:00",
+  "generated_at": "2026-05-02T17:42:19+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -1146,6 +1146,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
       "fabrication_packages": [],
+      "market_specs": [],
       "linked_packages": [
         {
           "work_package_id": "WP02",
@@ -2749,6 +2750,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
       "fabrication_packages": [],
+      "market_specs": [],
       "linked_packages": [
         {
           "work_package_id": "WP01",
@@ -4650,6 +4652,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
       "fabrication_packages": [],
+      "market_specs": [],
       "linked_packages": [],
       "component_jobs": [
         {
@@ -8589,6 +8592,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
       "fabrication_packages": [],
+      "market_specs": [],
       "linked_packages": [],
       "component_jobs": [
         {
@@ -12907,6 +12911,7 @@ window.J40_DASHBOARD_DATA = {
           "file_count": 19
         }
       ],
+      "market_specs": [],
       "linked_packages": [
         {
           "work_package_id": "WP03F",
@@ -16418,6 +16423,7 @@ window.J40_DASHBOARD_DATA = {
           "file_count": 7
         }
       ],
+      "market_specs": [],
       "linked_packages": [
         {
           "work_package_id": "WP03",
@@ -20965,6 +20971,7 @@ window.J40_DASHBOARD_DATA = {
           "file_count": 7
         }
       ],
+      "market_specs": [],
       "linked_packages": [
         {
           "work_package_id": "WP03F",
@@ -22227,6 +22234,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
       "fabrication_packages": [],
+      "market_specs": [],
       "linked_packages": [
         {
           "work_package_id": "WP03",
@@ -22259,14 +22267,6 @@ window.J40_DASHBOARD_DATA = {
           "planned_action": "Separate, tag, and clean, service, or replace",
           "evidence_ref": "akber_khan-00796|akber_khan-00797",
           "notes": "Covers window rubbers and auxiliary rubber pieces removed during strip-down"
-        },
-        {
-          "component_job_id": "eps_vitz_control_wiring_and_safety",
-          "component_group": "electrical_accessories",
-          "current_status": "planned_scope_lock",
-          "planned_action": "Define EPS power feed fuse relay ignition trigger and fail-safe behavior; map wiring integration into baseline harness plan",
-          "evidence_ref": "whatsapp_akber|akber_khan-00858|user_plan_2026-04-22_tub_off_update",
-          "notes": "Major project: EPS electrical integration should remain isolated and testable."
         },
         {
           "component_job_id": "interior",
@@ -22360,11 +22360,6 @@ window.J40_DASHBOARD_DATA = {
           "label": "Component Task \u00b7 Old Accessory Wiring",
           "status": "partially_removed",
           "detail": "Remove nonstandard LEDs speakers light bars and extra wiring Notes: Chat explicitly says LEDs speakers front and back light bars and extra wiring were removed"
-        },
-        {
-          "label": "Component Task \u00b7 Eps Vitz Control Wiring And Safety",
-          "status": "planned_scope_lock",
-          "detail": "Define EPS power feed fuse relay ignition trigger and fail-safe behavior; map wiring integration into baseline harness plan Notes: Major project: EPS electrical integration should remain isolated and testable."
         },
         {
           "label": "Component Task \u00b7 Body Rubbers",
@@ -24160,6 +24155,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
       "fabrication_packages": [],
+      "market_specs": [],
       "linked_packages": [
         {
           "work_package_id": "WP04",
@@ -28150,6 +28146,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
       "fabrication_packages": [],
+      "market_specs": [],
       "linked_packages": [],
       "component_jobs": [
         {
@@ -29068,6 +29065,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
       "fabrication_packages": [],
+      "market_specs": [],
       "linked_packages": [],
       "component_jobs": [
         {
@@ -30014,9 +30012,9 @@ window.J40_DASHBOARD_DATA = {
         "chassis_fixing",
         "electrical_reset"
       ],
-      "next_action": "Define 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS hardware scope and mount/adaptor geometry before cutting or welding",
-      "exit_gate": "EPS hardware is mounted without binding and provides stable assisted steering through full lock and suspension travel",
-      "notes": "Major project track: donor Vitz EPS integration with clear mechanical and electrical gates.",
+      "next_action": "Scout and quote only a complete 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS kit using the pre-purchase market checklist",
+      "exit_gate": "Market scout returns a buy/no-buy decision with photos bench-test video seller contact return terms confirmed donor identity and confirmed kit contents",
+      "notes": "Market-scout track only: donor identity kit completeness bench-test proof seller evidence and quote decision.",
       "evidence_source": [
         "whatsapp_fj40",
         "fj40-00263",
@@ -30072,23 +30070,80 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
       "fabrication_packages": [],
+      "market_specs": [
+        {
+          "id": "eps_scp90_ncp90_market_scout",
+          "title": "EPS Market Scout Spec",
+          "scope": "Pre-purchase only",
+          "plain_stall_request": "I need a complete 2005-2011 Toyota Vitz/Yaris 90-series electric EPS steering column set, chassis code SCP90 or NCP90, with matching computer/ECU, original plugs with wiring tails, shafts, U-joints, couplers, and brackets, tested working.",
+          "buy_target": "Buy candidate is only a 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 column-assist EPS set. Corolla, Axio, Prius, hydraulic steering parts, loose motors, loose ECUs, and mixed-family sets are quote/photo only.",
+          "must_include": [
+            "Motorized EPS steering column with torque sensor and reduction housing.",
+            "Matching EPS ECU/controller, or a clearly verified integrated controller.",
+            "Original EPS plugs with at least 150mm wiring tails, not cut flush.",
+            "Upper and lower intermediate shaft sections.",
+            "U-joints, couplers, clamp brackets, support plates, and related donor fasteners.",
+            "Readable column and ECU/controller labels or part numbers.",
+            "Seller can identify heavy power, ground, and ignition-trigger wires for the bench check."
+          ],
+          "bench_test": [
+            "Power the unit before payment and rotate the input shaft both directions.",
+            "Assist must be smooth and consistent, with no grinding, jerking, or severe whine.",
+            "Check for backlash, shaft play, bent shaft ends, cracked castings, and broken mounting ears.",
+            "Confirm the shaft can still be turned manually with assist disabled.",
+            "Record a short video showing the powered check."
+          ],
+          "reject_if": [
+            "Donor is not confirmed as 2005-2011 Vitz/Yaris 90-series SCP90 or NCP90.",
+            "ECU/controller, plugs, pigtails, shafts, U-joints, couplers, or brackets are missing.",
+            "Connectors are cut flush, melted, heavily repaired, or unidentified.",
+            "Column tube, motor housing, gearbox casing, shaft, or mounting ears are cracked or bent.",
+            "Seller cannot demonstrate a working matched set before payment.",
+            "Seller offers only a motor, only an ECU, or only a column without the matched hardware."
+          ],
+          "capture_before_leaving": [
+            "Seller name, phone number, stall location, price, and return window.",
+            "Donor model, donor year, and chassis code written exactly as claimed.",
+            "Column label and ECU/controller label.",
+            "Input and output spline/shaft photos.",
+            "All plugs and pigtails laid out clearly.",
+            "Full kit photo with every included shaft, U-joint, coupler, bracket, and fastener visible."
+          ],
+          "price_guidance": {
+            "target_range": "PKR 54,000-136,000",
+            "negotiation_midpoint": "PKR 90,000",
+            "rule": "Do not pay complete-kit price for missing ECU/controller, plugs, shafts, U-joints, couplers, or brackets."
+          },
+          "decision_rule": "Buy only if donor identity, complete matched kit contents, bench-test video, seller contact, return terms, and required photos are all captured before payment.",
+          "links": [
+            {
+              "url": "../../docs/eps-bilal-ganj-kit-checklist.md",
+              "label": "Full EPS checklist"
+            },
+            {
+              "url": "../../docs/bilal-ganj-detailed-size-specs.md",
+              "label": "Detailed market specs"
+            }
+          ]
+        }
+      ],
       "linked_packages": [],
       "component_jobs": [
         {
-          "component_job_id": "eps_vitz_control_wiring_and_safety",
-          "component_group": "electrical_accessories",
+          "component_job_id": "eps_vitz_complete_kit_market_check",
+          "component_group": "steering_procurement",
           "current_status": "planned_scope_lock",
-          "planned_action": "Define EPS power feed fuse relay ignition trigger and fail-safe behavior; map wiring integration into baseline harness plan",
-          "evidence_ref": "whatsapp_akber|akber_khan-00858|user_plan_2026-04-22_tub_off_update",
-          "notes": "Major project: EPS electrical integration should remain isolated and testable."
+          "planned_action": "Capture 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 donor identity complete kit contents labels shafts U-joints couplers brackets bench-test evidence seller contact and return terms before payment",
+          "evidence_ref": "whatsapp_fj40|fj40-00263|whatsapp_akber|akber_khan-00858",
+          "notes": "Pre-purchase market check only; close with buy reject or quote-only decision."
         },
         {
-          "component_job_id": "eps_vitz_donor_column_and_mounts",
-          "component_group": "steering_upgrade",
+          "component_job_id": "eps_vitz_connector_wire_id_check",
+          "component_group": "electrical_procurement",
           "current_status": "planned_scope_lock",
-          "planned_action": "Capture 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS unit dimensions and define steering-column/shaft mount geometry with bracket and adapter strategy before fabrication",
-          "evidence_ref": "whatsapp_fj40|fj40-00263|whatsapp_akber|akber_khan-00858",
-          "notes": "Major project: geometry lock gate before irreversible cuts/welds."
+          "planned_action": "Ask the seller to identify original EPS plugs pigtails heavy power ground and ignition-trigger wires during the bench check; require the matching ECU/controller in the same kit",
+          "evidence_ref": "whatsapp_akber|akber_khan-00858|user_plan_2026-04-22_tub_off_update",
+          "notes": "Pre-payment wire identification only; keep this row tied to the market checklist."
         }
       ],
       "issue_jobs": [],
@@ -30096,27 +30151,27 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Execute current workstream action",
           "status": "queued",
-          "detail": "Define 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS hardware scope and mount/adaptor geometry before cutting or welding"
+          "detail": "Scout and quote only a complete 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS kit using the pre-purchase market checklist"
         },
         {
-          "label": "Capture donor EPS hardware baseline",
+          "label": "Confirm target donor only",
           "status": "queued",
-          "detail": "Record 2005-2011 Vitz/Yaris 90-series SCP90/NCP90 EPS unit dimensions, spline details, and connector/pinout references."
+          "detail": "Accept only 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS sets; treat Corolla, Axio, Prius, and mixed-family sets as quote/photo only."
         },
         {
-          "label": "Freeze mount and shaft adapter geometry",
+          "label": "Verify complete matched kit",
           "status": "queued",
-          "detail": "Confirm bracket positions, shaft phasing, and firewall/interior clearance before fabrication."
+          "detail": "Check column, ECU/controller, original plugs with pigtails, shafts, U-joints, couplers, brackets, labels, and donor hardware before payment."
         },
         {
-          "label": "Lock EPS electrical integration strategy",
+          "label": "Bench-test before payment",
           "status": "queued",
-          "detail": "Define power feed, fuse/relay protection, ignition trigger, and fail-safe fallback behavior."
+          "detail": "Require smooth powered assist both directions, no lash/noise, and manual shaft rotation with assist disabled."
         },
         {
-          "label": "Run assist validation and safety checks",
+          "label": "Capture seller evidence and decision",
           "status": "queued",
-          "detail": "Verify smooth steering assist across full lock, bump travel, and road-test conditions."
+          "detail": "Record seller contact, stall location, price, return window, donor claim, labels, full kit photos, bench-test video, and buy/no-buy decision."
         },
         {
           "label": "Issue checks",
@@ -30124,14 +30179,14 @@ window.J40_DASHBOARD_DATA = {
           "detail": "No issue-specific checks are recorded for this workstream."
         },
         {
-          "label": "Component Task \u00b7 Eps Vitz Control Wiring And Safety",
+          "label": "Component Task \u00b7 Eps Vitz Complete Kit Market Check",
           "status": "planned_scope_lock",
-          "detail": "Define EPS power feed fuse relay ignition trigger and fail-safe behavior; map wiring integration into baseline harness plan Notes: Major project: EPS electrical integration should remain isolated and testable."
+          "detail": "Capture 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 donor identity complete kit contents labels shafts U-joints couplers brackets bench-test evidence seller contact and return terms before payment Notes: Pre-purchase market check only; close with buy reject or quote-only decision."
         },
         {
-          "label": "Component Task \u00b7 Eps Vitz Donor Column And Mounts",
+          "label": "Component Task \u00b7 Eps Vitz Connector Wire Id Check",
           "status": "planned_scope_lock",
-          "detail": "Capture 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS unit dimensions and define steering-column/shaft mount geometry with bracket and adapter strategy before fabrication Notes: Major project: geometry lock gate before irreversible cuts/welds."
+          "detail": "Ask the seller to identify original EPS plugs pigtails heavy power ground and ignition-trigger wires during the bench check; require the matching ECU/controller in the same kit Notes: Pre-payment wire identification only; keep this row tied to the market checklist."
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
@@ -30151,18 +30206,18 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Close workstream exit gate",
           "status": "queued",
-          "detail": "No linked package rows found. Exit gate: EPS hardware is mounted without binding and provides stable assisted steering through full lock and suspension travel"
+          "detail": "No linked package rows found. Exit gate: Market scout returns a buy/no-buy decision with photos bench-test video seller contact return terms confirmed donor identity and confirmed kit contents"
         }
       ],
       "involved_parts": [
         {
           "entry_id": "part_power_steering_upgrade",
           "workstream": "eps_vitz_upgrade",
-          "item": "Power steering upgrade",
+          "item": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit",
           "status": "researching",
-          "procurement_stage": "researching",
+          "procurement_stage": "pre_payment_market_check",
           "payment_status": "not_paid",
-          "delivery_status": "researching",
+          "delivery_status": "",
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
@@ -30171,11 +30226,11 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_power_steering_upgrade",
           "evidence_ref": "user_seed|fj40-00006|fj40-00263|akber_khan-00346|akber_khan-00858",
-          "notes": "Upgrade path under consideration; leave behind the steering decision gate until the baseline inspection is complete",
+          "notes": "Market scout only: quote and buy/no-buy check for a complete matched 2005-2011 Vitz/Yaris SCP90/NCP90 EPS kit with bench-test video seller contact return terms and full kit photos before payment.",
           "links": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/eps_column.jpg",
-            "caption": "Power steering upgrade \u00b7 EPS column reference image",
+            "caption": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit \u00b7 EPS column reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -30194,42 +30249,40 @@ window.J40_DASHBOARD_DATA = {
       "operation_panels": [],
       "subtask_groups": [
         {
-          "key": "vitz_yaris_scp90_ncp90_eps_conversion",
-          "title": "Vitz/Yaris SCP90/NCP90 EPS Conversion",
-          "summary": "2005-2011 Vitz/Yaris 90-series SCP90/NCP90 donor EPS baseline, mount/shaft geometry, protected electrical integration, and steering safety validation.",
+          "key": "eps_market_scouting",
+          "title": "EPS Market Scouting",
+          "summary": "Pre-purchase donor identity, matched kit completeness, bench test, seller evidence, and buy/no-buy decision for 2005-2011 SCP90/NCP90 EPS only.",
           "subtasks": [
             {
-              "title": "Capture Donor EPS Hardware Baseline",
+              "title": "Confirm Target Donor",
               "priority": "P0",
-              "remaining": "before fabrication",
-              "instruction": "Record 2005-2011 Vitz/Yaris 90-series SCP90/NCP90 donor column, motor, ECU, spline, and connector facts before cutting anything.",
+              "remaining": "before quote",
+              "instruction": "Accept only 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS sets as buy candidates.",
               "process_steps": [
-                "Photograph the EPS motor, column sections, ECU, connectors, and labels.",
-                "Measure shaft lengths, spline counts, U-joint positions, and mounting points.",
-                "Record connector pinout references and which donor plugs are available.",
-                "Check motor clearance against pedals, dash, heater, and firewall.",
-                "Mark missing donor pieces before fabrication starts."
+                "Ask the seller for donor model, donor year, and chassis code before discussing price.",
+                "Accept SCP90 or NCP90 only; write the seller's claim exactly.",
+                "Photograph donor tag, yard tag, column label, and ECU/controller label if available.",
+                "Treat Corolla, Axio, Prius, and other Toyota columns as quote/photo only unless explicitly approved later.",
+                "Reject any hydraulic steering part, loose EPS motor, loose ECU, or mixed-family set."
               ],
               "tools": [
-                "Calipers",
-                "Angle finder",
-                "Camera",
+                "Phone/camera",
+                "Notebook",
                 "Marker"
               ],
               "supplies": [
-                "Labels",
-                "Zip bags",
-                "Reference pinout sheet"
+                "Printed checklist",
+                "Pen"
               ],
-              "hold_point": "Fabrication waits until shaft, mount, and connector facts are recorded.",
+              "hold_point": "No payment discussion proceeds as a buy candidate without SCP90 or NCP90 donor confirmation.",
               "image_tokens": [
                 "eps",
                 "vitz",
-                "steering",
-                "column",
-                "motor"
+                "yaris",
+                "scp90",
+                "ncp90"
               ],
-              "id": "capture_donor_eps_hardware_baseline",
+              "id": "confirm_target_donor",
               "status": "queued",
               "parts": [],
               "images": [
@@ -30247,98 +30300,40 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Power steering upgrade (researching; delivery researching; amount missing)"
+                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit (pre_payment_market_check; amount missing)"
               ]
             },
             {
-              "title": "Freeze Mount And Shaft Adapter Geometry",
+              "title": "Verify Complete Matched Kit",
               "priority": "P0",
-              "remaining": "fabrication gate",
-              "instruction": "Hold alignment, shaft phasing, and collapse/clearance as the main safety constraints.",
+              "remaining": "before payment",
+              "instruction": "The kit must be complete and matched before it is treated as a buy candidate.",
               "process_steps": [
-                "Mock the EPS position with the steering wheel, pedals, dash, and firewall clearance in place.",
-                "Keep U-joint angles reasonable and phase joints correctly.",
-                "Design brackets with service access and no flex at steering load.",
-                "Use class-marked fasteners and reinforcement where the body/firewall cannot carry load alone.",
-                "Trial-turn lock-to-lock before welding final brackets."
+                "Lay out the full kit together: column, ECU/controller, plugs, pigtails, shafts, U-joints, couplers, brackets, support plates, and fasteners.",
+                "Confirm pigtails are at least 150mm and not cut flush.",
+                "Confirm ECU/controller belongs with the same donor family as the column.",
+                "Check U-joints for notchiness, shaft ends for bends, and mounting ears for cracks.",
+                "Mark missing pieces as a reject reason or quote-only note."
               ],
               "tools": [
-                "Welder",
-                "Drill",
-                "Angle finder",
-                "Straight edge",
-                "Torque wrench"
+                "Phone/camera",
+                "Tape measure or calipers",
+                "Notebook"
               ],
               "supplies": [
-                "Steel plate/tube",
-                "Class 8.8 or better hardware",
-                "Paint/primer for brackets",
-                "Threadlocker"
+                "Printed checklist",
+                "Marker tape"
               ],
-              "hold_point": "No final welding or cutting until lock-to-lock motion is smooth without binding.",
-              "image_tokens": [
-                "steering",
-                "column",
-                "mount",
-                "adapter",
-                "firewall"
-              ],
-              "id": "freeze_mount_and_shaft_adapter_geometry",
-              "status": "queued",
-              "parts": [],
-              "images": [
-                {
-                  "path": "../../photos/20260422_004412_gp_OclpaTdg_2.jpg",
-                  "caption": "Engine Bay Chassis Interface \u00b7 Underside Inspection \u00b7 2026-04-22",
-                  "captured_date": "2026-04-22",
-                  "captured_time": "00:44:12",
-                  "media_type": "photo",
-                  "component_group": "chassis_underside",
-                  "specific_component": "engine_bay_chassis_interface",
-                  "stage": "underside_inspection",
-                  "media_id": "20260422_004412_gp_OclpaTdg_2",
-                  "matched_tokens": []
-                }
-              ],
-              "registered_items": [
-                "Power steering upgrade (researching; delivery researching; amount missing)"
-              ]
-            },
-            {
-              "title": "Lock EPS Electrical Integration",
-              "priority": "P0",
-              "remaining": "after electrical baseline",
-              "instruction": "EPS power and control must be fused, relay-controlled, grounded, and serviceable.",
-              "process_steps": [
-                "Define battery feed, main fuse location, relay/ignition trigger, ground point, and wire size.",
-                "Keep EPS supply separate from weak old circuits.",
-                "Protect cable through bulkheads and near metal edges.",
-                "Mount ECU away from water, heat, and pedal/foot interference.",
-                "Test ignition-on behavior and fail-safe steering without assist."
-              ],
-              "tools": [
-                "Multimeter",
-                "Crimper",
-                "Heat gun",
-                "Fuse-protected test lead"
-              ],
-              "supplies": [
-                "Heavy-gauge power cable",
-                "Main fuse",
-                "Relay",
-                "Ground strap",
-                "Heat shrink",
-                "Loom sleeve"
-              ],
-              "hold_point": "EPS cannot be energized permanently until fuse, relay, ground, and routing are documented.",
+              "hold_point": "Do not buy a partial set as a complete kit.",
               "image_tokens": [
                 "eps",
-                "wiring",
-                "relay",
-                "fuse",
-                "ground"
+                "steering",
+                "column",
+                "ecu",
+                "connector",
+                "shaft"
               ],
-              "id": "lock_eps_electrical_integration",
+              "id": "verify_complete_matched_kit",
               "status": "queued",
               "parts": [],
               "images": [
@@ -30356,41 +30351,37 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Power steering upgrade (researching; delivery researching; amount missing)"
+                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit (pre_payment_market_check; amount missing)"
               ]
             },
             {
-              "title": "Run Assist Validation And Safety Checks",
+              "title": "Bench-Test Before Payment",
               "priority": "P0",
-              "remaining": "before road use",
-              "instruction": "Validate steering mechanically and electrically before road testing.",
+              "remaining": "before payment",
+              "instruction": "The seller must demonstrate the matched set working before payment.",
               "process_steps": [
-                "With front axle safely supported, turn lock-to-lock and check for binding, wire stretch, and contact.",
-                "Repeat with suspension at ride height and wheels on the ground.",
-                "Confirm steering returns consistently and assist is smooth without notchiness.",
-                "Check all fasteners after initial operation.",
-                "Road-test progressively only after manual fallback steering and braking are safe."
+                "Ask the seller to power the unit using the matched ECU/controller and original plugs.",
+                "Rotate the input shaft both directions and watch assist behavior.",
+                "Reject grinding, jerky assist, severe whine, heavy lash, or unpredictable operation.",
+                "Confirm the shaft can still be turned manually with assist disabled.",
+                "Record a short video showing the powered check and seller setup."
               ],
               "tools": [
-                "Jack stands",
-                "Torque wrench",
-                "Inspection light",
-                "Checklist"
+                "Phone/camera",
+                "Fuse-protected bench-test lead if seller has a test setup"
               ],
               "supplies": [
-                "Torque paint",
-                "Threadlocker",
-                "Spare fuses"
+                "Printed checklist"
               ],
-              "hold_point": "Any bind, loose bracket, wiring strain, or unpredictable assist blocks road validation.",
+              "hold_point": "If it cannot be bench-tested, record quote/photos only.",
               "image_tokens": [
-                "steering",
                 "eps",
-                "linkage",
-                "column",
-                "suspension"
+                "bench",
+                "test",
+                "vitz",
+                "yaris"
               ],
-              "id": "run_assist_validation_and_safety_checks",
+              "id": "bench_test_before_payment",
               "status": "queued",
               "parts": [],
               "images": [
@@ -30408,7 +30399,57 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Power steering upgrade (researching; delivery researching; amount missing)"
+                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit (pre_payment_market_check; amount missing)"
+              ]
+            },
+            {
+              "title": "Capture Seller Evidence And Decision",
+              "priority": "P0",
+              "remaining": "before leaving stall",
+              "instruction": "Close the market visit with enough evidence for a clear buy/no-buy decision.",
+              "process_steps": [
+                "Write seller name, phone number, stall location, quoted price, and return window.",
+                "Record donor model, year, chassis code, column label, and ECU/controller label.",
+                "Photograph the full kit, every connector, pigtail length, shaft ends, U-joints, couplers, brackets, and support plates.",
+                "Save the bench-test video with the quote details.",
+                "Mark the decision as buy, reject, or quote-only before payment."
+              ],
+              "tools": [
+                "Phone/camera",
+                "Notebook",
+                "Marker"
+              ],
+              "supplies": [
+                "Printed checklist",
+                "Pen"
+              ],
+              "hold_point": "No payment without seller contact, return terms, complete photos, and bench-test video.",
+              "image_tokens": [
+                "eps",
+                "label",
+                "connector",
+                "seller",
+                "stall"
+              ],
+              "id": "capture_seller_evidence_and_decision",
+              "status": "queued",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260422_004412_gp_OclpaTdg_2.jpg",
+                  "caption": "Engine Bay Chassis Interface \u00b7 Underside Inspection \u00b7 2026-04-22",
+                  "captured_date": "2026-04-22",
+                  "captured_time": "00:44:12",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "engine_bay_chassis_interface",
+                  "stage": "underside_inspection",
+                  "media_id": "20260422_004412_gp_OclpaTdg_2",
+                  "matched_tokens": []
+                }
+              ],
+              "registered_items": [
+                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit (pre_payment_market_check; amount missing)"
               ]
             }
           ]
@@ -30724,6 +30765,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
       "fabrication_packages": [],
+      "market_specs": [],
       "linked_packages": [],
       "component_jobs": [
         {
@@ -31429,6 +31471,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
       "fabrication_packages": [],
+      "market_specs": [],
       "linked_packages": [
         {
           "work_package_id": "WP05",
@@ -32711,6 +32754,7 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
       "fabrication_packages": [],
+      "market_specs": [],
       "linked_packages": [
         {
           "work_package_id": "WP06",
@@ -33474,12 +33518,12 @@ window.J40_DASHBOARD_DATA = {
         "count": 10
       },
       {
-        "stage": "purchase_ready",
-        "count": 8
+        "stage": "pre_payment_market_check",
+        "count": 1
       },
       {
-        "stage": "researching",
-        "count": 1
+        "stage": "purchase_ready",
+        "count": 8
       },
       {
         "stage": "spec_needed_before_order",
@@ -35123,22 +35167,22 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_power_steering_upgrade",
         "workstream": "eps_vitz_upgrade",
-        "item": "Power steering upgrade",
+        "item": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit",
         "status": "researching",
-        "procurement_stage": "researching",
+        "procurement_stage": "pre_payment_market_check",
         "payment_status": "not_paid",
-        "delivery_status": "researching",
+        "delivery_status": "",
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_seed|fj40-00006|fj40-00263|akber_khan-00346|akber_khan-00858",
-        "notes": "Upgrade path under consideration; leave behind the steering decision gate until the baseline inspection is complete",
+        "notes": "Market scout only: quote and buy/no-buy check for a complete matched 2005-2011 Vitz/Yaris SCP90/NCP90 EPS kit with bench-test video seller contact return terms and full kit photos before payment.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/eps_column.jpg",
-          "caption": "Power steering upgrade \u00b7 EPS column reference image",
+          "caption": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit \u00b7 EPS column reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -36817,18 +36861,18 @@ window.J40_DASHBOARD_DATA = {
         "source_sheet": "PK_Quality_Path",
         "source_ref": "pk_quality_path#row_5",
         "system": "EPS",
-        "item": "Bracket/support fabrication + column alignment",
+        "item": "Donor clamp brackets and support plates included with EPS kit",
         "stage": "",
-        "decision": "FABRICATE_AFTER_TRIAL_FIT",
+        "decision": "CHECK_WITH_COLUMN_SET",
         "cost": "27500",
-        "notes": "Column axis alignment and weld quality inspection before final paint.",
+        "notes": "No cracked tabs broken ears missing fasteners or unidentified loose bracket pieces.",
         "links": [
           {
-            "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_fabrication+shop+lahore/",
+            "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_vitz+eps+column/",
             "label": "pakwheels.com"
           },
           {
-            "url": "https://www.olx.com.pk/items/q-automotive-fabrication",
+            "url": "https://www.olx.com.pk/items/q-vitz-parts",
             "label": "olx.com.pk"
           }
         ]
@@ -36837,11 +36881,11 @@ window.J40_DASHBOARD_DATA = {
         "source_sheet": "PK_Quality_Path",
         "source_ref": "pk_quality_path#row_4",
         "system": "EPS",
-        "item": "Intermediate shaft + U-joints + couplers",
+        "item": "Intermediate shaft + U-joints + couplers included with EPS kit",
         "stage": "",
-        "decision": "MEASURE_THEN_BUY",
+        "decision": "CHECK_WITH_COLUMN_SET",
         "cost": "30000",
-        "notes": "No binding through full steering sweep; proper phasing and lock-to-lock clearance.",
+        "notes": "No notchiness seized joints bent shafts missing couplers or unknown spline ends.",
         "links": [
           {
             "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_steering+u+joint+toyota/",
@@ -36857,11 +36901,11 @@ window.J40_DASHBOARD_DATA = {
         "source_sheet": "PK_Buy_Clean_Direct",
         "source_ref": "pk_buy_clean_direct#row_4",
         "system": "EPS",
-        "item": "Steering U-joints/couplers/intermediate shaft materials",
-        "stage": "pre_tub_refit",
+        "item": "Steering U-joints/couplers/intermediate shaft pieces included with EPS kit",
+        "stage": "pre_payment_market_check",
         "decision": "",
         "cost": "30000",
-        "notes": "Fabrication market range",
+        "notes": "Quote support range",
         "links": [
           {
             "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_steering+u+joint+toyota/",
@@ -36881,7 +36925,7 @@ window.J40_DASHBOARD_DATA = {
         "stage": "",
         "decision": "BUY_WITH_COLUMN_AS_SET",
         "cost": "40000",
-        "notes": "Same 2005-2011 SCP90/NCP90 donor family as EPS column; test assist behavior before install.",
+        "notes": "Same 2005-2011 SCP90/NCP90 donor family as EPS column; bench-test as a matched set before payment.",
         "links": [
           {
             "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_vitz+eps+computer/",
@@ -36898,7 +36942,7 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "pk_buy_clean_direct#row_3",
         "system": "EPS",
         "item": "Vitz/Yaris 2005-2011 SCP90/NCP90 EPS ECU/controller (matching generation)",
-        "stage": "pre_tub_refit",
+        "stage": "pre_payment_market_check",
         "decision": "",
         "cost": "40000",
         "notes": "Market listing range",
@@ -36918,7 +36962,7 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "pk_buy_clean_direct#row_2",
         "system": "EPS",
         "item": "Vitz/Yaris 2005-2011 SCP90/NCP90 EPS column complete set (motor+torque sensor+housing)",
-        "stage": "pre_tub_refit",
+        "stage": "pre_payment_market_check",
         "decision": "",
         "cost": "100000",
         "notes": "Market listing range",
@@ -36941,7 +36985,7 @@ window.J40_DASHBOARD_DATA = {
         "stage": "",
         "decision": "BUY_AFTER_PHYSICAL_TEST",
         "cost": "100000",
-        "notes": "Bench test under load; confirm donor label/year/chassis 2005-2011 SCP90/NCP90; no play/noise; matching splines for shaft plan.",
+        "notes": "Bench test before payment; confirm donor label/year/chassis 2005-2011 SCP90/NCP90; no play/noise; matching kit contents visible.",
         "links": [
           {
             "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_vitz+eps+column/",
@@ -38430,6 +38474,63 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "https://www.daraz.pk/catalog/?q=windshield+weatherstrip+toyota",
             "label": "daraz.pk"
+          }
+        ]
+      }
+    ],
+    "market_specs": [
+      {
+        "id": "eps_scp90_ncp90_market_scout",
+        "title": "EPS Market Scout Spec",
+        "scope": "Pre-purchase only",
+        "plain_stall_request": "I need a complete 2005-2011 Toyota Vitz/Yaris 90-series electric EPS steering column set, chassis code SCP90 or NCP90, with matching computer/ECU, original plugs with wiring tails, shafts, U-joints, couplers, and brackets, tested working.",
+        "buy_target": "Buy candidate is only a 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 column-assist EPS set. Corolla, Axio, Prius, hydraulic steering parts, loose motors, loose ECUs, and mixed-family sets are quote/photo only.",
+        "must_include": [
+          "Motorized EPS steering column with torque sensor and reduction housing.",
+          "Matching EPS ECU/controller, or a clearly verified integrated controller.",
+          "Original EPS plugs with at least 150mm wiring tails, not cut flush.",
+          "Upper and lower intermediate shaft sections.",
+          "U-joints, couplers, clamp brackets, support plates, and related donor fasteners.",
+          "Readable column and ECU/controller labels or part numbers.",
+          "Seller can identify heavy power, ground, and ignition-trigger wires for the bench check."
+        ],
+        "bench_test": [
+          "Power the unit before payment and rotate the input shaft both directions.",
+          "Assist must be smooth and consistent, with no grinding, jerking, or severe whine.",
+          "Check for backlash, shaft play, bent shaft ends, cracked castings, and broken mounting ears.",
+          "Confirm the shaft can still be turned manually with assist disabled.",
+          "Record a short video showing the powered check."
+        ],
+        "reject_if": [
+          "Donor is not confirmed as 2005-2011 Vitz/Yaris 90-series SCP90 or NCP90.",
+          "ECU/controller, plugs, pigtails, shafts, U-joints, couplers, or brackets are missing.",
+          "Connectors are cut flush, melted, heavily repaired, or unidentified.",
+          "Column tube, motor housing, gearbox casing, shaft, or mounting ears are cracked or bent.",
+          "Seller cannot demonstrate a working matched set before payment.",
+          "Seller offers only a motor, only an ECU, or only a column without the matched hardware."
+        ],
+        "capture_before_leaving": [
+          "Seller name, phone number, stall location, price, and return window.",
+          "Donor model, donor year, and chassis code written exactly as claimed.",
+          "Column label and ECU/controller label.",
+          "Input and output spline/shaft photos.",
+          "All plugs and pigtails laid out clearly.",
+          "Full kit photo with every included shaft, U-joint, coupler, bracket, and fastener visible."
+        ],
+        "price_guidance": {
+          "target_range": "PKR 54,000-136,000",
+          "negotiation_midpoint": "PKR 90,000",
+          "rule": "Do not pay complete-kit price for missing ECU/controller, plugs, shafts, U-joints, couplers, or brackets."
+        },
+        "decision_rule": "Buy only if donor identity, complete matched kit contents, bench-test video, seller contact, return terms, and required photos are all captured before payment.",
+        "links": [
+          {
+            "url": "../../docs/eps-bilal-ganj-kit-checklist.md",
+            "label": "Full EPS checklist"
+          },
+          {
+            "url": "../../docs/bilal-ganj-detailed-size-specs.md",
+            "label": "Detailed market specs"
           }
         ]
       }
@@ -43438,22 +43539,22 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_power_steering_upgrade",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Power steering upgrade",
+          "item": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit",
           "vendor": "",
           "amount": "",
           "currency": "PKR",
           "workstream": "eps_vitz_upgrade",
           "status_group": "in_process",
           "status_detail": "researching",
-          "procurement_stage": "researching",
+          "procurement_stage": "pre_payment_market_check",
           "payment_status": "not_paid",
-          "delivery_status": "researching",
+          "delivery_status": "",
           "evidence_ref": "user_seed|fj40-00006|fj40-00263|akber_khan-00346|akber_khan-00858",
-          "notes": "Upgrade path under consideration; leave behind the steering decision gate until the baseline inspection is complete",
+          "notes": "Market scout only: quote and buy/no-buy check for a complete matched 2005-2011 Vitz/Yaris SCP90/NCP90 EPS kit with bench-test video seller contact return terms and full kit photos before payment.",
           "links": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/eps_column.jpg",
-            "caption": "Power steering upgrade \u00b7 EPS column reference image",
+            "caption": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit \u00b7 EPS column reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -46909,6 +47010,41 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "part_power_steering_upgrade",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit",
+        "vendor": "",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "eps_vitz_upgrade",
+        "status_group": "in_process",
+        "status_detail": "researching",
+        "procurement_stage": "pre_payment_market_check",
+        "payment_status": "not_paid",
+        "delivery_status": "",
+        "evidence_ref": "user_seed|fj40-00006|fj40-00263|akber_khan-00346|akber_khan-00858",
+        "notes": "Market scout only: quote and buy/no-buy check for a complete matched 2005-2011 Vitz/Yaris SCP90/NCP90 EPS kit with bench-test video seller contact return terms and full kit photos before payment.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/eps_column.jpg",
+          "caption": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit \u00b7 EPS column reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "eps_column",
+          "matched_tokens": [
+            "eps"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_fastener_kit_a_millat",
         "supply_type": "part",
         "inventory_group": "mechanical",
@@ -47072,41 +47208,6 @@ window.J40_DASHBOARD_DATA = {
           "listing_url": "https://www.daraz.pk/products/i645582306-s3011629985.html?urlFlag=true&mp=1",
           "image_url": "https://static-01.daraz.pk/p/ba3d027177170958c46096eff8c97f61.jpg",
           "match_score": 288
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_power_steering_upgrade",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Power steering upgrade",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "eps_vitz_upgrade",
-        "status_group": "in_process",
-        "status_detail": "researching",
-        "procurement_stage": "researching",
-        "payment_status": "not_paid",
-        "delivery_status": "researching",
-        "evidence_ref": "user_seed|fj40-00006|fj40-00263|akber_khan-00346|akber_khan-00858",
-        "notes": "Upgrade path under consideration; leave behind the steering decision gate until the baseline inspection is complete",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/eps_column.jpg",
-          "caption": "Power steering upgrade \u00b7 EPS column reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "eps_column",
-          "matched_tokens": [
-            "eps"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
         }
       },
       {

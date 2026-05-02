@@ -93,6 +93,62 @@ WORKSTREAM_TITLE_OVERRIDES: dict[str, str] = {
     "suspension_upgrade": "Suspension",
 }
 
+EPS_MARKET_SCOUT_SPEC: dict[str, Any] = {
+    "id": "eps_scp90_ncp90_market_scout",
+    "title": "EPS Market Scout Spec",
+    "scope": "Pre-purchase only",
+    "plain_stall_request": (
+        "I need a complete 2005-2011 Toyota Vitz/Yaris 90-series electric EPS steering column set, "
+        "chassis code SCP90 or NCP90, with matching computer/ECU, original plugs with wiring tails, "
+        "shafts, U-joints, couplers, and brackets, tested working."
+    ),
+    "buy_target": (
+        "Buy candidate is only a 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 column-assist EPS set. "
+        "Corolla, Axio, Prius, hydraulic steering parts, loose motors, loose ECUs, and mixed-family sets are quote/photo only."
+    ),
+    "must_include": [
+        "Motorized EPS steering column with torque sensor and reduction housing.",
+        "Matching EPS ECU/controller, or a clearly verified integrated controller.",
+        "Original EPS plugs with at least 150mm wiring tails, not cut flush.",
+        "Upper and lower intermediate shaft sections.",
+        "U-joints, couplers, clamp brackets, support plates, and related donor fasteners.",
+        "Readable column and ECU/controller labels or part numbers.",
+        "Seller can identify heavy power, ground, and ignition-trigger wires for the bench check.",
+    ],
+    "bench_test": [
+        "Power the unit before payment and rotate the input shaft both directions.",
+        "Assist must be smooth and consistent, with no grinding, jerking, or severe whine.",
+        "Check for backlash, shaft play, bent shaft ends, cracked castings, and broken mounting ears.",
+        "Confirm the shaft can still be turned manually with assist disabled.",
+        "Record a short video showing the powered check.",
+    ],
+    "reject_if": [
+        "Donor is not confirmed as 2005-2011 Vitz/Yaris 90-series SCP90 or NCP90.",
+        "ECU/controller, plugs, pigtails, shafts, U-joints, couplers, or brackets are missing.",
+        "Connectors are cut flush, melted, heavily repaired, or unidentified.",
+        "Column tube, motor housing, gearbox casing, shaft, or mounting ears are cracked or bent.",
+        "Seller cannot demonstrate a working matched set before payment.",
+        "Seller offers only a motor, only an ECU, or only a column without the matched hardware.",
+    ],
+    "capture_before_leaving": [
+        "Seller name, phone number, stall location, price, and return window.",
+        "Donor model, donor year, and chassis code written exactly as claimed.",
+        "Column label and ECU/controller label.",
+        "Input and output spline/shaft photos.",
+        "All plugs and pigtails laid out clearly.",
+        "Full kit photo with every included shaft, U-joint, coupler, bracket, and fastener visible.",
+    ],
+    "price_guidance": {
+        "target_range": "PKR 54,000-136,000",
+        "negotiation_midpoint": "PKR 90,000",
+        "rule": "Do not pay complete-kit price for missing ECU/controller, plugs, shafts, U-joints, couplers, or brackets.",
+    },
+    "decision_rule": (
+        "Buy only if donor identity, complete matched kit contents, bench-test video, seller contact, return terms, "
+        "and required photos are all captured before payment."
+    ),
+}
+
 WORKSTREAM_IMAGE_PROFILES: dict[str, dict[str, set[str]]] = {
     "stripdown_cataloguing": {
         "component_groups": {"removable_panels", "interior_cabin", "body_exterior", "body_floor"},
@@ -477,10 +533,10 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
         ("Close brake safety gate", "Do not progress to final validation until brake function is verified."),
     ],
     "eps_vitz_upgrade": [
-        ("Capture donor EPS hardware baseline", "Record 2005-2011 Vitz/Yaris 90-series SCP90/NCP90 EPS unit dimensions, spline details, and connector/pinout references."),
-        ("Freeze mount and shaft adapter geometry", "Confirm bracket positions, shaft phasing, and firewall/interior clearance before fabrication."),
-        ("Lock EPS electrical integration strategy", "Define power feed, fuse/relay protection, ignition trigger, and fail-safe fallback behavior."),
-        ("Run assist validation and safety checks", "Verify smooth steering assist across full lock, bump travel, and road-test conditions."),
+        ("Confirm target donor only", "Accept only 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS sets; treat Corolla, Axio, Prius, and mixed-family sets as quote/photo only."),
+        ("Verify complete matched kit", "Check column, ECU/controller, original plugs with pigtails, shafts, U-joints, couplers, brackets, labels, and donor hardware before payment."),
+        ("Bench-test before payment", "Require smooth powered assist both directions, no lash/noise, and manual shaft rotation with assist disabled."),
+        ("Capture seller evidence and decision", "Record seller contact, stall location, price, return window, donor claim, labels, full kit photos, bench-test video, and buy/no-buy decision."),
     ],
     "suspension_upgrade": [
         ("Capture measured suspension baseline", "Record ride height, shackle angles, and current travel/clearance before parts lock."),
@@ -1260,78 +1316,78 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
         ],
     },
     "eps_vitz_upgrade": {
-        "title": "Vitz/Yaris SCP90/NCP90 EPS Conversion",
-        "summary": "2005-2011 Vitz/Yaris 90-series SCP90/NCP90 donor EPS baseline, mount/shaft geometry, protected electrical integration, and steering safety validation.",
-        "default_tools": ["Calipers", "Angle finder", "Welder/fabrication tools", "Torque wrench", "Multimeter"],
-        "default_supplies": ["Steel plate/brackets", "Class-marked fasteners", "Fused power cable", "Relays", "Loom protection"],
+        "title": "EPS Market Scouting",
+        "summary": "Pre-purchase donor identity, matched kit completeness, bench test, seller evidence, and buy/no-buy decision for 2005-2011 SCP90/NCP90 EPS only.",
+        "default_tools": ["Phone/camera", "Notebook", "Marker", "Tape measure or calipers", "Fuse-protected bench-test lead if seller has a test setup"],
+        "default_supplies": ["Printed checklist", "Marker tape", "Pen"],
         "subtasks": [
             {
-                "title": "Capture Donor EPS Hardware Baseline",
+                "title": "Confirm Target Donor",
                 "priority": "P0",
-                "remaining": "before fabrication",
-                "instruction": "Record 2005-2011 Vitz/Yaris 90-series SCP90/NCP90 donor column, motor, ECU, spline, and connector facts before cutting anything.",
+                "remaining": "before quote",
+                "instruction": "Accept only 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS sets as buy candidates.",
                 "process_steps": [
-                    "Photograph the EPS motor, column sections, ECU, connectors, and labels.",
-                    "Measure shaft lengths, spline counts, U-joint positions, and mounting points.",
-                    "Record connector pinout references and which donor plugs are available.",
-                    "Check motor clearance against pedals, dash, heater, and firewall.",
-                    "Mark missing donor pieces before fabrication starts.",
+                    "Ask the seller for donor model, donor year, and chassis code before discussing price.",
+                    "Accept SCP90 or NCP90 only; write the seller's claim exactly.",
+                    "Photograph donor tag, yard tag, column label, and ECU/controller label if available.",
+                    "Treat Corolla, Axio, Prius, and other Toyota columns as quote/photo only unless explicitly approved later.",
+                    "Reject any hydraulic steering part, loose EPS motor, loose ECU, or mixed-family set.",
                 ],
-                "tools": ["Calipers", "Angle finder", "Camera", "Marker"],
-                "supplies": ["Labels", "Zip bags", "Reference pinout sheet"],
-                "hold_point": "Fabrication waits until shaft, mount, and connector facts are recorded.",
-                "image_tokens": ["eps", "vitz", "steering", "column", "motor"],
+                "tools": ["Phone/camera", "Notebook", "Marker"],
+                "supplies": ["Printed checklist", "Pen"],
+                "hold_point": "No payment discussion proceeds as a buy candidate without SCP90 or NCP90 donor confirmation.",
+                "image_tokens": ["eps", "vitz", "yaris", "scp90", "ncp90"],
             },
             {
-                "title": "Freeze Mount And Shaft Adapter Geometry",
+                "title": "Verify Complete Matched Kit",
                 "priority": "P0",
-                "remaining": "fabrication gate",
-                "instruction": "Hold alignment, shaft phasing, and collapse/clearance as the main safety constraints.",
+                "remaining": "before payment",
+                "instruction": "The kit must be complete and matched before it is treated as a buy candidate.",
                 "process_steps": [
-                    "Mock the EPS position with the steering wheel, pedals, dash, and firewall clearance in place.",
-                    "Keep U-joint angles reasonable and phase joints correctly.",
-                    "Design brackets with service access and no flex at steering load.",
-                    "Use class-marked fasteners and reinforcement where the body/firewall cannot carry load alone.",
-                    "Trial-turn lock-to-lock before welding final brackets.",
+                    "Lay out the full kit together: column, ECU/controller, plugs, pigtails, shafts, U-joints, couplers, brackets, support plates, and fasteners.",
+                    "Confirm pigtails are at least 150mm and not cut flush.",
+                    "Confirm ECU/controller belongs with the same donor family as the column.",
+                    "Check U-joints for notchiness, shaft ends for bends, and mounting ears for cracks.",
+                    "Mark missing pieces as a reject reason or quote-only note.",
                 ],
-                "tools": ["Welder", "Drill", "Angle finder", "Straight edge", "Torque wrench"],
-                "supplies": ["Steel plate/tube", "Class 8.8 or better hardware", "Paint/primer for brackets", "Threadlocker"],
-                "hold_point": "No final welding or cutting until lock-to-lock motion is smooth without binding.",
-                "image_tokens": ["steering", "column", "mount", "adapter", "firewall"],
+                "tools": ["Phone/camera", "Tape measure or calipers", "Notebook"],
+                "supplies": ["Printed checklist", "Marker tape"],
+                "hold_point": "Do not buy a partial set as a complete kit.",
+                "image_tokens": ["eps", "steering", "column", "ecu", "connector", "shaft"],
             },
             {
-                "title": "Lock EPS Electrical Integration",
+                "title": "Bench-Test Before Payment",
                 "priority": "P0",
-                "remaining": "after electrical baseline",
-                "instruction": "EPS power and control must be fused, relay-controlled, grounded, and serviceable.",
+                "remaining": "before payment",
+                "instruction": "The seller must demonstrate the matched set working before payment.",
                 "process_steps": [
-                    "Define battery feed, main fuse location, relay/ignition trigger, ground point, and wire size.",
-                    "Keep EPS supply separate from weak old circuits.",
-                    "Protect cable through bulkheads and near metal edges.",
-                    "Mount ECU away from water, heat, and pedal/foot interference.",
-                    "Test ignition-on behavior and fail-safe steering without assist.",
+                    "Ask the seller to power the unit using the matched ECU/controller and original plugs.",
+                    "Rotate the input shaft both directions and watch assist behavior.",
+                    "Reject grinding, jerky assist, severe whine, heavy lash, or unpredictable operation.",
+                    "Confirm the shaft can still be turned manually with assist disabled.",
+                    "Record a short video showing the powered check and seller setup.",
                 ],
-                "tools": ["Multimeter", "Crimper", "Heat gun", "Fuse-protected test lead"],
-                "supplies": ["Heavy-gauge power cable", "Main fuse", "Relay", "Ground strap", "Heat shrink", "Loom sleeve"],
-                "hold_point": "EPS cannot be energized permanently until fuse, relay, ground, and routing are documented.",
-                "image_tokens": ["eps", "wiring", "relay", "fuse", "ground"],
+                "tools": ["Phone/camera", "Fuse-protected bench-test lead if seller has a test setup"],
+                "supplies": ["Printed checklist"],
+                "hold_point": "If it cannot be bench-tested, record quote/photos only.",
+                "image_tokens": ["eps", "bench", "test", "vitz", "yaris"],
             },
             {
-                "title": "Run Assist Validation And Safety Checks",
+                "title": "Capture Seller Evidence And Decision",
                 "priority": "P0",
-                "remaining": "before road use",
-                "instruction": "Validate steering mechanically and electrically before road testing.",
+                "remaining": "before leaving stall",
+                "instruction": "Close the market visit with enough evidence for a clear buy/no-buy decision.",
                 "process_steps": [
-                    "With front axle safely supported, turn lock-to-lock and check for binding, wire stretch, and contact.",
-                    "Repeat with suspension at ride height and wheels on the ground.",
-                    "Confirm steering returns consistently and assist is smooth without notchiness.",
-                    "Check all fasteners after initial operation.",
-                    "Road-test progressively only after manual fallback steering and braking are safe.",
+                    "Write seller name, phone number, stall location, quoted price, and return window.",
+                    "Record donor model, year, chassis code, column label, and ECU/controller label.",
+                    "Photograph the full kit, every connector, pigtail length, shaft ends, U-joints, couplers, brackets, and support plates.",
+                    "Save the bench-test video with the quote details.",
+                    "Mark the decision as buy, reject, or quote-only before payment.",
                 ],
-                "tools": ["Jack stands", "Torque wrench", "Inspection light", "Checklist"],
-                "supplies": ["Torque paint", "Threadlocker", "Spare fuses"],
-                "hold_point": "Any bind, loose bracket, wiring strain, or unpredictable assist blocks road validation.",
-                "image_tokens": ["steering", "eps", "linkage", "column", "suspension"],
+                "tools": ["Phone/camera", "Notebook", "Marker"],
+                "supplies": ["Printed checklist", "Pen"],
+                "hold_point": "No payment without seller contact, return terms, complete photos, and bench-test video.",
+                "image_tokens": ["eps", "label", "connector", "seller", "stall"],
             },
         ],
     },
@@ -1668,6 +1724,21 @@ def file_link(repo_path: str, label: str = "") -> dict[str, str] | None:
     if not path:
         return None
     return {"url": public_repo_url(path), "label": clean(label) or Path(path).name}
+
+
+def market_specs_for_workstream(workstream_id: str) -> list[dict[str, Any]]:
+    if clean(workstream_id) != "eps_vitz_upgrade":
+        return []
+    spec = dict(EPS_MARKET_SCOUT_SPEC)
+    spec["links"] = [
+        link
+        for link in [
+            file_link("docs/eps-bilal-ganj-kit-checklist.md", "Full EPS checklist"),
+            file_link("docs/bilal-ganj-detailed-size-specs.md", "Detailed market specs"),
+        ]
+        if link
+    ]
+    return [spec]
 
 
 def package_relative_file_link(package_dir: str, filename: str) -> dict[str, str] | None:
@@ -6445,6 +6516,7 @@ def build_dashboard_data() -> dict[str, Any]:
                 "body_mount_release_actions": body_mount_release_actions,
                 "body_mount_station_closure": body_mount_station_closure,
                 "fabrication_packages": fabrication_packages,
+                "market_specs": market_specs_for_workstream(ws_id),
                 "linked_packages": [
                     {
                         "work_package_id": clean(package.get("work_package_id")),
@@ -6866,6 +6938,7 @@ def build_dashboard_data() -> dict[str, Any]:
             "open_counts_by_workstream": parts_workstream_cards,
             "procurement_evidence_images": procurement_evidence_images,
             "workbook_source_links": workbook_source_links,
+            "market_specs": market_specs_for_workstream("eps_vitz_upgrade"),
         },
         "supplies": supplies_inventory,
         "other_builds": other_builds_reference,
