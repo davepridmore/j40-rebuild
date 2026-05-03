@@ -1,7 +1,7 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-05-03 05:42:25
-- Total media files indexed: 585 (574 photos, 11 videos)
+- Generated: 2026-05-03 17:44:30
+- Total media files indexed: 617 (606 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
 
@@ -23,7 +23,7 @@
 | `mechanical_cleaning` | 14 |
 | `mechanical_inspection` | 5 |
 | `procurement_reconciliation` | 133 |
-| `reference_material` | 25 |
+| `reference_material` | 57 |
 | `removed_parts_cataloguing` | 15 |
 | `rust_assessment` | 51 |
 | `stripdown_cataloguing` | 110 |
@@ -70,7 +70,7 @@
 | `documentation_reference` | `handwritten_notes` | 3 | 2026-04-01 | `20260401_111029_gp_6ebGjXdw.jpg` |
 | `documentation_reference` | `off_vehicle_workstation_reference_video` | 2 | 2026-03-29 to 2026-04-23 | `20260329_095138.mp4` |
 | `documentation_reference` | `pakwheels_listing_screenshot` | 1 | 2026-03-13 | `Screenshot_20260313_054936_PakWheels.jpg` |
-| `documentation_reference` | `reference_media` | 14 | 2026-04-14 to 2026-04-23 | `20260414_000833_gp_7PzMcRKw.jpg` |
+| `documentation_reference` | `reference_media` | 46 | 2026-04-14 to 2026-05-03 | `20260414_000833_gp_7PzMcRKw.jpg` |
 | `electrical_system` | `driver_footwell_firewall_pass_through` | 1 | 2026-03-24 | `20260324_004812.jpg` |
 | `electrical_system` | `firewall_and_dash_wiring` | 10 | 2026-03-20 | `20260320_191834.jpg` |
 | `electrical_system` | `pedal_box_wiring` | 5 | 2026-03-28 | `20260328_053638_gp_t6Q3oCTA.jpg` |

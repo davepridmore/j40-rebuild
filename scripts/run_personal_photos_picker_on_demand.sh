@@ -17,6 +17,7 @@ Environment overrides:
   CLIENT_SECRETS       OAuth desktop client JSON path
   TOKEN_FILE           Persisted token JSON path
   HISTORY_FILE         Import history CSV path
+  PYTHON_BIN           Python executable to run the import/rebuild scripts
   RECENT_DAYS          Picker time filter after selection (default: 120)
   POLL_TIMEOUT_SECONDS Picker wait timeout (default: 1800)
   OPEN_BROWSER         1 to auto-open URLs, 0 otherwise (default: 1)
@@ -34,6 +35,7 @@ POLL_TIMEOUT_SECONDS="${POLL_TIMEOUT_SECONDS:-1800}"
 OPEN_BROWSER="${OPEN_BROWSER:-1}"
 INCLUDE_VIDEOS="${INCLUDE_VIDEOS:-1}"
 MOVE_NON_CAR="${MOVE_NON_CAR:-1}"
+PYTHON_BIN="${PYTHON_BIN:-python3}"
 
 if [ ! -f "$CLIENT_SECRETS" ]; then
   echo "OAuth client secrets file not found: $CLIENT_SECRETS"
@@ -59,16 +61,16 @@ if [ "$INCLUDE_VIDEOS" = "1" ]; then
   picker_args+=(--include-videos)
 fi
 
-python3 "${picker_args[@]}"
+"$PYTHON_BIN" "${picker_args[@]}"
 
-python3 "$ROOT_DIR/scripts/build_photo_inventory.py"
+"$PYTHON_BIN" "$ROOT_DIR/scripts/build_photo_inventory.py"
 if [ "$MOVE_NON_CAR" = "1" ]; then
-  python3 "$ROOT_DIR/scripts/filter_non_car_media.py" --apply
-  python3 "$ROOT_DIR/scripts/build_photo_inventory.py"
+  "$PYTHON_BIN" "$ROOT_DIR/scripts/filter_non_car_media.py" --apply
+  "$PYTHON_BIN" "$ROOT_DIR/scripts/build_photo_inventory.py"
 else
-  python3 "$ROOT_DIR/scripts/filter_non_car_media.py"
+  "$PYTHON_BIN" "$ROOT_DIR/scripts/filter_non_car_media.py"
 fi
-python3 "$ROOT_DIR/scripts/reconcile_component_jobs_photo_inventory.py"
+"$PYTHON_BIN" "$ROOT_DIR/scripts/reconcile_component_jobs_photo_inventory.py"
 
 echo "Updated outputs:"
 echo "- $ROOT_DIR/data/manual/photo_inventory.csv"
