@@ -3368,6 +3368,158 @@
       : chip("No rows");
   }
 
+  function isPhotoNeededTask(task) {
+    return cleanString(task && task.task_type).includes("photo");
+  }
+
+  function countRowsBy(rows, keyName) {
+    const counts = new Map();
+    (Array.isArray(rows) ? rows : []).forEach((row) => {
+      const key = cleanString(row && row[keyName]) || "unassigned";
+      counts.set(key, (counts.get(key) || 0) + 1);
+    });
+    return Array.from(counts.entries())
+      .map(([key, count]) => ({ key, count }))
+      .sort((left, right) => right.count - left.count || left.key.localeCompare(right.key));
+  }
+
+  function renderPhotoNeededCountChips(rows, keyName, formatter) {
+    const counts = countRowsBy(rows, keyName);
+    return counts.length
+      ? counts.map((row) => chip(`${formatter(row.key)}: ${row.count}`)).join("")
+      : chip("No rows");
+  }
+
+  function renderPhotoNeededRows(rows, emptyMessage) {
+    const source = Array.isArray(rows) ? rows : [];
+    if (!source.length) {
+      return `<tr><td colspan="7">${escapeHtml(emptyMessage)}</td></tr>`;
+    }
+    return source
+      .map(
+        (task) => `
+          <tr>
+            <td>
+              <div class="task-title-row">
+                ${priorityChip(task.priority)}
+                ${statusChip(task.status || "open")}
+              </div>
+              <strong>${escapeHtml(task.title || task.task_id || "Photo")}</strong>
+              ${task.location ? `<div class="small-muted">${escapeHtml(task.location)}</div>` : ""}
+            </td>
+            <td>${escapeHtml(formatToken(task.workstream || "-"))}</td>
+            <td>${escapeHtml(formatToken(task.timing || "now"))}</td>
+            <td>
+              ${escapeHtml(task.action || "-")}
+              ${task.notes ? `<div class="small-muted">${escapeHtml(truncateText(task.notes, 150))}</div>` : ""}
+            </td>
+            <td>${escapeHtml(task.data_needed || "-")}</td>
+            <td class="requirement-evidence-cell">${renderCaptureTaskEvidence(task)}</td>
+            <td>
+              ${task.blocks ? `<div>${escapeHtml(task.blocks)}</div>` : ""}
+              ${task.record_result_in ? `<div class="small-muted">${escapeHtml(task.record_result_in)}</div>` : ""}
+              <div class="small-muted">${escapeHtml(task.source_row_id || "")}</div>
+              ${renderLinksCell(task)}
+            </td>
+          </tr>
+        `
+      )
+      .join("");
+  }
+
+  function renderPhotosNeeded() {
+    const captureTasks = data.capture_tasks || {};
+    const tasks = Array.isArray(captureTasks.tasks) ? captureTasks.tasks : [];
+    const photoTasks = tasks.filter(isPhotoNeededTask);
+    const nowPhotoTasks = photoTasks.filter((task) => cleanString(task.timing) !== "later");
+    const laterPhotoTasks = photoTasks.filter((task) => cleanString(task.timing) === "later");
+    const p0PhotoTasks = photoTasks.filter((task) => cleanString(task.priority).toUpperCase() === "P0");
+    const photoMeasurementTasks = photoTasks.filter((task) => cleanString(task.task_type) === "photo_measurement");
+
+    root.innerHTML = `
+      <h2 class="section-title">Photos Needed</h2>
+      <p class="section-subtitle">Open capture rows where the next closeout evidence includes a photo or photo-backed measurement.</p>
+
+      <section class="metrics-grid">
+        <article class="card">
+          <p class="metric-value">${escapeHtml(photoTasks.length)}</p>
+          <p class="metric-label">Photos Needed</p>
+        </article>
+        <article class="card">
+          <p class="metric-value">${escapeHtml(nowPhotoTasks.length)}</p>
+          <p class="metric-label">Current Photo Rows</p>
+        </article>
+        <article class="card">
+          <p class="metric-value">${escapeHtml(p0PhotoTasks.length)}</p>
+          <p class="metric-label">P0 Photo Rows</p>
+        </article>
+        <article class="card">
+          <p class="metric-value">${escapeHtml(photoMeasurementTasks.length)}</p>
+          <p class="metric-label">Photo + Measurement Rows</p>
+        </article>
+        <article class="card">
+          <p class="metric-value">${escapeHtml(laterPhotoTasks.length)}</p>
+          <p class="metric-label">Deferred Photo Rows</p>
+        </article>
+      </section>
+
+      <section class="split capture-task-counts">
+        <article class="card">
+          <h3>By Workstream</h3>
+          <div class="chip-row">
+            ${renderPhotoNeededCountChips(photoTasks, "workstream", formatToken)}
+          </div>
+        </article>
+        <article class="card">
+          <h3>By Priority</h3>
+          <div class="chip-row">
+            ${renderPhotoNeededCountChips(photoTasks, "priority", (value) => cleanString(value).toUpperCase() || "P1")}
+          </div>
+        </article>
+      </section>
+
+      <h3 class="section-title">Take These Photos Now</h3>
+      <div class="table-wrap">
+        <table class="capture-task-table photos-needed-table">
+          <thead>
+            <tr>
+              <th>Photo</th>
+              <th>Workstream</th>
+              <th>When</th>
+              <th>What To Capture</th>
+              <th>Labels / Measurements</th>
+              <th>Context Evidence</th>
+              <th>Blocks / Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${renderPhotoNeededRows(nowPhotoTasks, "No current photo rows found.")}
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="section-title">Later / Deferred Photos</h3>
+      <div class="table-wrap">
+        <table class="capture-task-table photos-needed-table compact">
+          <thead>
+            <tr>
+              <th>Photo</th>
+              <th>Workstream</th>
+              <th>When</th>
+              <th>What To Capture</th>
+              <th>Labels / Measurements</th>
+              <th>Context Evidence</th>
+              <th>Blocks / Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${renderPhotoNeededRows(laterPhotoTasks, "No deferred photo rows found.")}
+          </tbody>
+        </table>
+      </div>
+    `;
+  }
+
   function renderCaptureTasks() {
     const captureTasks = data.capture_tasks || {};
     const summary = captureTasks.summary || {};
@@ -4484,6 +4636,10 @@
     }
     if (state.activeView === "tasks") {
       renderCaptureTasks();
+      return;
+    }
+    if (state.activeView === "photos-needed") {
+      renderPhotosNeeded();
       return;
     }
     if (state.activeView === "steps") {
