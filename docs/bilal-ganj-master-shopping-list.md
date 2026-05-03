@@ -10,6 +10,7 @@ Important:
 - Section B is now receipt tracking only; do not source alternate suspension parts from this list.
 - The 10-way relay/fuse block is already bought. Cabin/interior car fuse boxes are separate, still not ordered, and must be compact covered blade-fuse boxes.
 - Cabin fuse-box target is the compact internal/OEM-style form shown in the 2026-05-03 user reference image; use `docs/cabin-fuse-box-acquisition-20260503.md` for the supplier order text.
+- Use `docs/local-market-procurement-workstream.md` as the short control sheet for the wider local-market run: fuse carrier, EPS quote, small hardware, grommets, sample-matched parts, brake-opening consumables, and timber cribbing.
 
 ## A) Buy / Book Now (Core)
 
