@@ -1,5 +1,5 @@
 basket_id,basket_title,row_count,timing_windows,sourcing_modes,entries,notes
-basket_brake_hydraulic_opening_prep,Brake Hydraulic Opening Prep,1,pre_brake_hydraulic_opening,local_hardware_common,part_brake_fluid_bleed_consumables,"Buy caps/plugs, cleaner, bleed hose/bottle, rags, gloves, and catch tray before opening hydraulic lines; buy brake fluid only after cap/manual DOT-spec confirmation."
+basket_brake_hydraulic_opening_prep,Brake Hydraulic Opening Prep,1,pre_brake_hydraulic_opening,local_hardware_common,part_brake_fluid_bleed_consumables,"Buy 2 L sealed fresh DOT 3 brake fluid, caps/plugs, cleaner, bleed hose/bottle, rags, gloves, and catch tray before opening hydraulic lines."
 basket_compact_cabin_fuse_boxes,Compact Cabin Fuse Boxes,1,electrical_closeout,local_electrical_common,part_cabin_compact_fuse_boxes,Buy compact covered cabin fuse boxes; likely three matching units.
 basket_condition_based_after_inspection,Condition-Based Replacements,1,post_tub_off_inspection,local_toyota_common,part_mech_clutch_master_slave_refresh,Buy only failed/worn parts after inspection.
 basket_deferred,Deferred Scope,6,post_baseline_only,local_electrical_common|local_toyota_common|mixed_local_or_online,part_android_unit|part_carpet|part_foam|part_power_steering_upgrade|part_sound_dampening_sheets|quote_rubber_grommet_set_chat,Not baseline now.

@@ -64,7 +64,7 @@ No torque sheet means no installation.
 4. Confirm all chassis spring hangers, shackle mounts, steering-box mount area, axle spring pads, and U-bolt plates are clean and crack-free.
 5. Stop for repair if any spring hanger is cracked, ovalized, bent, deeply pitted, or has damaged captive hardware.
 6. Confirm brake flexible hoses, brake hard lines, parking-brake cables, breather hose, and wiring have slack at expected full droop.
-7. If the brake package is being done in the same window, confirm `BR-CAPTURE-001` photo tools, brake-line caps/plugs, bleed tools, brake cleaner/consumables, brake-fluid DOT-spec confirmation path, flare-nut wrenches, line fabrication tools or workshop line-fabrication capability, drum brake tools, and old-part sample storage.
+7. If the brake package is being done in the same window, confirm `BR-CAPTURE-001` photo tools, brake-line caps/plugs, bleed tools, brake cleaner/consumables, sealed fresh DOT 3 brake fluid, flare-nut wrenches, line fabrication tools or workshop line-fabrication capability, drum brake tools, and old-part sample storage.
 8. Confirm safe support gear is present: 3T trolley jack, four rated jack stands, hardwood cribbing blocks, wheel chocks, and a level working surface.
 9. Confirm tools: torque wrench in the required range, breaker bar, metric sockets/spanners, pry bars, hammer/mallet, punch/drift, grease gun, penetrating oil, paint marker, calipers/tape, and camera.
 10. Confirm consumables: supplied/suspension-compatible bush grease, chassis grease for nipples, anti-seize only where the supplier permits, thread cleaner/chaser, and new split pins/retainers where used.

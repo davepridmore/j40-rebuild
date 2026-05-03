@@ -296,10 +296,10 @@ def build_procurement_decisions(
                 "plus 4 tapered 8x4x3 in wedge chocks."
             )
         elif entry_id == "part_brake_fluid_bleed_consumables":
-            decision = "confirm_fluid_spec_then_buy"
+            decision = "buy_dot3_fluid_and_bleed_consumables"
             dependency_gate = "hydraulic_opening_prep"
-            action = "confirm_fluid_spec_and_buy_bleed_consumables"
-            reason = "Brake hydraulics must not be opened until fluid spec, caps/plugs, cleaner, and bleed tools are ready."
+            action = "confirm_price_for_dot3_fluid_and_bleed_consumables"
+            reason = "Brake fluid spec is closed as DOT 3 / SAE J1703; hydraulics must not be opened until 2 L sealed fresh fluid, caps/plugs, cleaner, and bleed tools are ready."
         elif workstream == "brake_system" and procurement_stage == "spec_needed_before_order":
             decision = "capture_spec_then_buy"
             dependency_gate = "brake_identification_and_samples"
@@ -425,7 +425,7 @@ def count_mechanical_buy_actions(decision_rows: list[dict[str, str]]) -> int:
         "buy_now",
         "buy_for_baseline",
         "buy_now_from_quote",
-        "confirm_fluid_spec_then_buy",
+        "buy_dot3_fluid_and_bleed_consumables",
         "capture_spec_then_buy",
         "inspect_confirm_then_buy_standard",
     }
@@ -467,7 +467,7 @@ def build_work_packages(
             "confirm_price_then_buy",
             "buy_now",
             "buy_for_baseline",
-            "confirm_fluid_spec_then_buy",
+            "buy_dot3_fluid_and_bleed_consumables",
             "capture_spec_then_buy",
             "inspect_confirm_then_buy_standard",
         }

@@ -55,7 +55,7 @@ Do not final-close suspension until brake hose, hard-line, parking-brake cable, 
 | Brake-line and parking-brake cable clips | As counted | Count hold | Replace corroded/missing clips and add rubber-lined P-clips where original support is missing. |
 | Brake master/reservoir/proportioning service parts | As fitted | Inspection hold | Replace only after current master, reservoir, booster, ports, and proportioning layout are photographed and checked. |
 | Hydraulic-opening prep consumables | Enough for full bleed/line opening | Purchase-ready | Buy line caps/plugs, clear bleed hose/bottle or bleeder kit, brake cleaner, rags, gloves, and catch tray before any hydraulic line is opened. |
-| Brake fluid | Enough for full bleed | DOT spec hold | Use fluid spec confirmed from cap/manual/workshop; do not mix unknown old fluid. |
+| Brake fluid | 2 L sealed total unless workshop specifies more | Purchase-ready | Use sealed fresh DOT 3 brake fluid meeting SAE J1703 / FMVSS No. 116 DOT 3; do not use DOT 5 or mix unknown old fluid. |
 | Copper grease | On hand | Received | Use sparingly on appropriate brake contact points only, never on friction surfaces. |
 
 ## Tools And Support Checklist

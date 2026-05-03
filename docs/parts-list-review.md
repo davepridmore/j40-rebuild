@@ -1,37 +1,38 @@
 # Parts List Review
 
-- Generated: 2026-05-03 04:49:16
-- Source: `data/manual/expenses.csv` (`bucket=parts`) -> 70 rows
+- Generated: 2026-05-03 23:02:53
+- Source: `data/manual/expenses.csv` (`bucket=parts`) -> 76 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
 
 ## Action Buckets
 
-- `buy_now`: 9
+- `buy_now`: 10
 - `cancelled_or_not_required`: 10
 - `completed_or_received`: 19
 - `deferred`: 6
 - `next_phase`: 1
 - `ordered_waiting_arrival`: 10
-- `unclear`: 15
+- `unclear`: 20
 
 ## Workstream Split
 
 - `electrical_reset`: 18
 - `mechanical_baseline`: 17
 - `body_chassis`: 17
+- `brake_system`: 12
 - `steering_brakes_suspension`: 6
-- `brake_system`: 6
 - `interior_weatherproofing`: 4
 - `optional_upgrades`: 2
 
 ## Price Coverage
 
 - `has_confirmed_amount=yes`: 11
-- `has_confirmed_amount=no`: 59
+- `has_confirmed_amount=no`: 65
 
 ## Buy-Now / Quote-Ready Missing Price
 
+- `part_brake_fluid_bleed_consumables` [brake_system] Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves
 - `part_cabin_compact_fuse_boxes` [electrical_reset] Compact covered cabin blade fuse boxes - likely 3 identical units
 - `part_firewall_grommet_set_large_power` [electrical_reset] Additional firewall grommet set IDs 16/20/25 mm
 - `part_firewall_grommet_set_small_medium` [electrical_reset] Additional firewall grommet set IDs 6/8/10/12 mm

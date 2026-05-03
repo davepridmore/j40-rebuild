@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-03T05:44:01+05:00",
+  "generated_at": "2026-05-03T23:02:54+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -40,8 +40,8 @@ window.J40_DASHBOARD_DATA = {
     "parts_open_rows": 47,
     "parts_ordered_pending_delivery": 10,
     "urgent_part_actions": 14,
-    "capture_data_tasks": 145,
-    "capture_data_tasks_now": 134,
+    "capture_data_tasks": 144,
+    "capture_data_tasks_now": 133,
     "supply_rows_tracked": 238,
     "selling_site_images_loaded": 83,
     "whatsapp_j40_selected_chats": 7,
@@ -27280,11 +27280,52 @@ window.J40_DASHBOARD_DATA = {
             "hose_od_for_clamp",
             "clamp_band_width"
           ],
-          "photo_status": "capture_pending",
-          "media_ids": [],
-          "placement_notes": "Engine-side end of upper hose",
+          "photo_status": "partial_photo_imported_measurement_pending",
+          "media_ids": [
+            "20260503_153249_gp_Lg6JX6Gg",
+            "20260503_155314_gp_et0BrVkQ",
+            "20260503_160327_gp_sFtQuWNQ"
+          ],
+          "placement_notes": "Engine-side coolant neck context imported; still needs square close-up with OD/clamp measurement.",
           "release_use": "Releases molded upper radiator hose neck measurement",
-          "evidence_images": []
+          "evidence_images": [
+            {
+              "path": "../../photos/20260503_153249_gp_Lg6JX6Gg.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:32:49",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_153249_gp_Lg6JX6Gg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_155314_gp_et0BrVkQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:53:14",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_155314_gp_et0BrVkQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160327_gp_sFtQuWNQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:03:27",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160327_gp_sFtQuWNQ",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "shot_id": "RPI-COOL-001-B",
@@ -27298,11 +27339,39 @@ window.J40_DASHBOARD_DATA = {
             "hose_od_for_clamp",
             "clamp_band_width"
           ],
-          "photo_status": "capture_pending",
-          "media_ids": [],
-          "placement_notes": "Radiator-side end of upper hose",
+          "photo_status": "partial_photo_imported_measurement_pending",
+          "media_ids": [
+            "20260503_155956_gp_P4xfMJzw",
+            "20260503_160010_gp_9F5ZH8kQ"
+          ],
+          "placement_notes": "Radiator top/neck context imported; still needs square neck close-up with OD/clamp measurement.",
           "release_use": "Releases molded upper radiator hose radiator-side measurement",
-          "evidence_images": []
+          "evidence_images": [
+            {
+              "path": "../../photos/20260503_155956_gp_P4xfMJzw.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:59:56",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_155956_gp_P4xfMJzw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160010_gp_9F5ZH8kQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:00:10",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160010_gp_9F5ZH8kQ",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "shot_id": "RPI-COOL-001-C",
@@ -27315,11 +27384,52 @@ window.J40_DASHBOARD_DATA = {
             "old_hose_free_length",
             "route_clearance_to_fan_belt_support"
           ],
-          "photo_status": "capture_pending",
-          "media_ids": [],
-          "placement_notes": "Include both end positions in one frame if possible",
+          "photo_status": "clearance_context_imported_hose_route_pending",
+          "media_ids": [
+            "20260503_155928_gp_ZQtxQutA",
+            "20260503_160010_gp_9F5ZH8kQ",
+            "20260503_160327_gp_sFtQuWNQ"
+          ],
+          "placement_notes": "Fan belt radiator support context imported; complete installed upper-hose route still needed.",
           "release_use": "Checks route and rub clearance before ordering",
-          "evidence_images": []
+          "evidence_images": [
+            {
+              "path": "../../photos/20260503_155928_gp_ZQtxQutA.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:59:28",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_155928_gp_ZQtxQutA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160010_gp_9F5ZH8kQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:00:10",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160010_gp_9F5ZH8kQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160327_gp_sFtQuWNQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:03:27",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160327_gp_sFtQuWNQ",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "shot_id": "RPI-COOL-002-A",
@@ -27333,11 +27443,39 @@ window.J40_DASHBOARD_DATA = {
             "hose_od_for_clamp",
             "clamp_band_width"
           ],
-          "photo_status": "capture_pending",
-          "media_ids": [],
-          "placement_notes": "Radiator-side lower hose end",
+          "photo_status": "partial_photo_imported_measurement_pending",
+          "media_ids": [
+            "20260503_155956_gp_P4xfMJzw",
+            "20260503_160010_gp_9F5ZH8kQ"
+          ],
+          "placement_notes": "Radiator lower/side outlet context imported; still needs lower outlet OD and clamp-land close-up.",
           "release_use": "Releases molded lower radiator hose radiator-side measurement",
-          "evidence_images": []
+          "evidence_images": [
+            {
+              "path": "../../photos/20260503_155956_gp_P4xfMJzw.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:59:56",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_155956_gp_P4xfMJzw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160010_gp_9F5ZH8kQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:00:10",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160010_gp_9F5ZH8kQ",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "shot_id": "RPI-COOL-002-B",
@@ -27351,11 +27489,39 @@ window.J40_DASHBOARD_DATA = {
             "hose_od_for_clamp",
             "clamp_band_width"
           ],
-          "photo_status": "capture_pending",
-          "media_ids": [],
-          "placement_notes": "Engine-side lower hose end",
+          "photo_status": "partial_photo_imported_measurement_pending",
+          "media_ids": [
+            "20260503_153249_gp_Lg6JX6Gg",
+            "20260503_160327_gp_sFtQuWNQ"
+          ],
+          "placement_notes": "Engine inlet/front cooling context imported; still needs square inlet close-up with OD/clamp measurement.",
           "release_use": "Releases molded lower radiator hose engine-side measurement",
-          "evidence_images": []
+          "evidence_images": [
+            {
+              "path": "../../photos/20260503_153249_gp_Lg6JX6Gg.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:32:49",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_153249_gp_Lg6JX6Gg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160327_gp_sFtQuWNQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:03:27",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160327_gp_sFtQuWNQ",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "shot_id": "RPI-COOL-002-C",
@@ -27368,11 +27534,52 @@ window.J40_DASHBOARD_DATA = {
             "old_hose_free_length",
             "lower_bend_clearance"
           ],
-          "photo_status": "capture_pending",
-          "media_ids": [],
-          "placement_notes": "Show bend shape and any squeeze points",
+          "photo_status": "clearance_context_imported_hose_route_pending",
+          "media_ids": [
+            "20260503_155928_gp_ZQtxQutA",
+            "20260503_160010_gp_9F5ZH8kQ",
+            "20260503_160327_gp_sFtQuWNQ"
+          ],
+          "placement_notes": "Fan belt radiator support context imported; complete installed lower-hose route still needed.",
           "release_use": "Checks molded route before ordering",
-          "evidence_images": []
+          "evidence_images": [
+            {
+              "path": "../../photos/20260503_155928_gp_ZQtxQutA.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:59:28",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_155928_gp_ZQtxQutA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160010_gp_9F5ZH8kQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:00:10",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160010_gp_9F5ZH8kQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160327_gp_sFtQuWNQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:03:27",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160327_gp_sFtQuWNQ",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "shot_id": "RPI-COOL-003-A",
@@ -27385,11 +27592,26 @@ window.J40_DASHBOARD_DATA = {
             "nipple_od",
             "clamp_or_clip_size"
           ],
-          "photo_status": "capture_pending",
-          "media_ids": [],
-          "placement_notes": "Small nipple at radiator neck",
+          "photo_status": "photo_imported_measurement_pending",
+          "media_ids": [
+            "20260503_155956_gp_P4xfMJzw"
+          ],
+          "placement_notes": "Radiator overflow nipple captured; record nipple OD and clip size in mm.",
           "release_use": "Releases overflow hose ID",
-          "evidence_images": []
+          "evidence_images": [
+            {
+              "path": "../../photos/20260503_155956_gp_P4xfMJzw.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:59:56",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_155956_gp_P4xfMJzw",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "shot_id": "RPI-COOL-003-B",
@@ -27403,11 +27625,52 @@ window.J40_DASHBOARD_DATA = {
             "finished_route_length",
             "hose_od_for_clip"
           ],
-          "photo_status": "capture_pending",
-          "media_ids": [],
-          "placement_notes": "Show routing path and support points",
+          "photo_status": "photo_imported_measurement_pending",
+          "media_ids": [
+            "20260503_153639_gp_ZueGlpJw",
+            "20260503_153647_gp_L54euoMQ",
+            "20260503_155956_gp_P4xfMJzw"
+          ],
+          "placement_notes": "Overflow bottle and radiator-to-bottle context imported; still record bottle nipple OD and finished route length.",
           "release_use": "Releases overflow cut length",
-          "evidence_images": []
+          "evidence_images": [
+            {
+              "path": "../../photos/20260503_153639_gp_ZueGlpJw.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:36:39",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_153639_gp_ZueGlpJw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_153647_gp_L54euoMQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:36:47",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_153647_gp_L54euoMQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_155956_gp_P4xfMJzw.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:59:56",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_155956_gp_P4xfMJzw",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "shot_id": "RPI-COOL-004-A",
@@ -27421,11 +27684,39 @@ window.J40_DASHBOARD_DATA = {
             "hose_od_for_clamps",
             "inlet_outlet_identification"
           ],
-          "photo_status": "capture_pending",
-          "media_ids": [],
-          "placement_notes": "Mark inlet versus outlet if visible",
+          "photo_status": "partial_photo_imported_measurement_pending",
+          "media_ids": [
+            "20260503_153200_gp_YXNuQgGQ",
+            "20260503_155132_gp_r4UGNnsQ"
+          ],
+          "placement_notes": "Firewall heater hose area context imported; still needs close-up of inlet/outlet nipples and clamps.",
           "release_use": "Releases heater hose ID at firewall",
-          "evidence_images": []
+          "evidence_images": [
+            {
+              "path": "../../photos/20260503_153200_gp_YXNuQgGQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:32:00",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_153200_gp_YXNuQgGQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_155132_gp_r4UGNnsQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:51:32",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_155132_gp_r4UGNnsQ",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "shot_id": "RPI-COOL-004-B",
@@ -27438,11 +27729,52 @@ window.J40_DASHBOARD_DATA = {
             "engine_heater_nipple_od",
             "hose_od_for_clamps"
           ],
-          "photo_status": "capture_pending",
-          "media_ids": [],
-          "placement_notes": "Show both engine-side fittings if present",
+          "photo_status": "partial_photo_imported_measurement_pending",
+          "media_ids": [
+            "20260503_155314_gp_et0BrVkQ",
+            "20260503_155825_gp_Gvgy4PXA",
+            "20260503_160207_gp_43b3TblQ"
+          ],
+          "placement_notes": "Engine-side heater/cooling hose area context imported; still needs engine nipple OD close-ups.",
           "release_use": "Releases heater hose ID at engine",
-          "evidence_images": []
+          "evidence_images": [
+            {
+              "path": "../../photos/20260503_155314_gp_et0BrVkQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:53:14",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_155314_gp_et0BrVkQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_155825_gp_Gvgy4PXA.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:58:25",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_155825_gp_Gvgy4PXA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160207_gp_43b3TblQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:02:07",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160207_gp_43b3TblQ",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "shot_id": "RPI-COOL-004-C",
@@ -27456,11 +27788,52 @@ window.J40_DASHBOARD_DATA = {
             "outlet_route_length",
             "exhaust_clearance"
           ],
-          "photo_status": "capture_pending",
-          "media_ids": [],
-          "placement_notes": "Include firewall pass-through and heat exposure",
+          "photo_status": "partial_route_photo_imported_measurement_pending",
+          "media_ids": [
+            "20260503_155747_gp_s91OxyAA",
+            "20260503_155825_gp_Gvgy4PXA",
+            "20260503_160207_gp_43b3TblQ"
+          ],
+          "placement_notes": "Tape/context photos imported; still needs final inlet/outlet route lengths and heat-clearance confirmation.",
           "release_use": "Releases 400 mm and 280 mm cut-length confirmation",
-          "evidence_images": []
+          "evidence_images": [
+            {
+              "path": "../../photos/20260503_155747_gp_s91OxyAA.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:57:47",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_155747_gp_s91OxyAA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_155825_gp_Gvgy4PXA.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:58:25",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_155825_gp_Gvgy4PXA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160207_gp_43b3TblQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:02:07",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160207_gp_43b3TblQ",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "shot_id": "RPI-COOL-005-A",
@@ -27514,11 +27887,52 @@ window.J40_DASHBOARD_DATA = {
             "clearance_to_radiator",
             "clearance_to_body"
           ],
-          "photo_status": "capture_pending",
-          "media_ids": [],
-          "placement_notes": "Needed before coating fabricated pipe",
+          "photo_status": "clearance_context_imported_pipe_dryfit_pending",
+          "media_ids": [
+            "20260503_155928_gp_ZQtxQutA",
+            "20260503_160010_gp_9F5ZH8kQ",
+            "20260503_160327_gp_sFtQuWNQ"
+          ],
+          "placement_notes": "Front fan belt radiator clearance captured; still needs formed pipe held in final dry-fit position.",
           "release_use": "Releases dry-fit and pressure-test gate",
-          "evidence_images": []
+          "evidence_images": [
+            {
+              "path": "../../photos/20260503_155928_gp_ZQtxQutA.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:59:28",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_155928_gp_ZQtxQutA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160010_gp_9F5ZH8kQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:00:10",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160010_gp_9F5ZH8kQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160327_gp_sFtQuWNQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:03:27",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160327_gp_sFtQuWNQ",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "shot_id": "RPI-COOL-006-A",
@@ -27577,11 +27991,78 @@ window.J40_DASHBOARD_DATA = {
             "kink_check",
             "fan_belt_radiator_clearance"
           ],
-          "photo_status": "capture_pending",
-          "media_ids": [],
-          "placement_notes": "Needed before deciding straight hose versus molded connector",
+          "photo_status": "clearance_context_imported_connector_dryfit_pending",
+          "media_ids": [
+            "20260503_155747_gp_s91OxyAA",
+            "20260503_155825_gp_Gvgy4PXA",
+            "20260503_155928_gp_ZQtxQutA",
+            "20260503_160207_gp_43b3TblQ",
+            "20260503_160327_gp_sFtQuWNQ"
+          ],
+          "placement_notes": "Front fan belt radiator clearance captured; still needs both connector hoses visible in final dry-fit position.",
           "release_use": "Releases straight-hose or molded-connector decision",
-          "evidence_images": []
+          "evidence_images": [
+            {
+              "path": "../../photos/20260503_155747_gp_s91OxyAA.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:57:47",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_155747_gp_s91OxyAA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_155825_gp_Gvgy4PXA.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:58:25",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_155825_gp_Gvgy4PXA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_155928_gp_ZQtxQutA.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:59:28",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_155928_gp_ZQtxQutA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160207_gp_43b3TblQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:02:07",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160207_gp_43b3TblQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160327_gp_sFtQuWNQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:03:27",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160327_gp_sFtQuWNQ",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "shot_id": "RPI-FUEL-001-A",
@@ -27596,11 +28077,52 @@ window.J40_DASHBOARD_DATA = {
             "feed_route_length",
             "hose_od_for_clamps"
           ],
-          "photo_status": "capture_pending",
-          "media_ids": [],
-          "placement_notes": "Low-pressure diesel feed only",
+          "photo_status": "photo_imported_measurement_pending",
+          "media_ids": [
+            "20260503_152937_gp_HdsO0xMA",
+            "20260503_153042_gp_ZL9JEazw",
+            "20260503_160427_gp_HSrKmfzw"
+          ],
+          "placement_notes": "Fuel filter to injection pump feed area captured; record barb ODs and feed route length.",
           "release_use": "Releases 8 mm feed hose cut lengths",
-          "evidence_images": []
+          "evidence_images": [
+            {
+              "path": "../../photos/20260503_152937_gp_HdsO0xMA.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:29:37",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_152937_gp_HdsO0xMA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_153042_gp_ZL9JEazw.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:30:42",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_153042_gp_ZL9JEazw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160427_gp_HSrKmfzw.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:04:27",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160427_gp_HSrKmfzw",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "shot_id": "RPI-FUEL-001-B",
@@ -27614,11 +28136,52 @@ window.J40_DASHBOARD_DATA = {
             "return_route_length",
             "hose_od_for_clamps"
           ],
-          "photo_status": "capture_pending",
-          "media_ids": [],
-          "placement_notes": "Do not include high-pressure injector pipes as replacement hose",
+          "photo_status": "photo_imported_measurement_pending",
+          "media_ids": [
+            "20260503_152937_gp_HdsO0xMA",
+            "20260503_160207_gp_43b3TblQ",
+            "20260503_160427_gp_HSrKmfzw"
+          ],
+          "placement_notes": "Injection pump return/bleed area captured; record return barb OD and route length.",
           "release_use": "Releases 6 mm return hose cut lengths",
-          "evidence_images": []
+          "evidence_images": [
+            {
+              "path": "../../photos/20260503_152937_gp_HdsO0xMA.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:29:37",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_152937_gp_HdsO0xMA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160207_gp_43b3TblQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:02:07",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160207_gp_43b3TblQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160427_gp_HSrKmfzw.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:04:27",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160427_gp_HSrKmfzw",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "shot_id": "RPI-FUEL-001-C",
@@ -27633,11 +28196,52 @@ window.J40_DASHBOARD_DATA = {
             "sample_hose_od",
             "rating_markings"
           ],
-          "photo_status": "capture_pending",
-          "media_ids": [],
-          "placement_notes": "Confirm diesel-rated leak-off material",
+          "photo_status": "partial_photo_imported_marking_pending",
+          "media_ids": [
+            "20260503_155314_gp_et0BrVkQ",
+            "20260503_160207_gp_43b3TblQ",
+            "20260503_160427_gp_HSrKmfzw"
+          ],
+          "placement_notes": "Injector top/leak-off area context imported; still needs readable sample hose markings and nipple OD.",
           "release_use": "Releases 3.2-3.5 mm leak-off hose",
-          "evidence_images": []
+          "evidence_images": [
+            {
+              "path": "../../photos/20260503_155314_gp_et0BrVkQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:53:14",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_155314_gp_et0BrVkQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160207_gp_43b3TblQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:02:07",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160207_gp_43b3TblQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160427_gp_HSrKmfzw.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:04:27",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160427_gp_HSrKmfzw",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "shot_id": "RPI-SAMPLE-BLACK-001",
@@ -27658,9 +28262,11 @@ window.J40_DASHBOARD_DATA = {
             "20260502_160754_gp_Zd9UeENg",
             "20260502_160855_gp_w3sghS8Q",
             "20260502_160929_gp_exms2QzQ",
-            "20260502_160950_gp_5KW8RnDQ"
+            "20260502_160950_gp_5KW8RnDQ",
+            "20260503_155832_gp_SHrzreNA",
+            "20260503_160215_gp_ml0C9cxw"
           ],
-          "placement_notes": "Not yet matched to installed vehicle placement",
+          "placement_notes": "May 2 and May 3 black sample/line photos imported; circuit and material still need confirmation.",
           "release_use": "Supports sample sorting only until circuit and material are confirmed",
           "evidence_images": [
             {
@@ -27709,6 +28315,30 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "replacement_pipe_hose_sample_sorting",
               "stage": "mechanical_baseline",
               "media_id": "20260502_160950_gp_5KW8RnDQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_155832_gp_SHrzreNA.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:58:32",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_155832_gp_SHrzreNA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160215_gp_ml0C9cxw.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:02:15",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160215_gp_ml0C9cxw",
               "matched_tokens": []
             }
           ]
@@ -27774,11 +28404,39 @@ window.J40_DASHBOARD_DATA = {
             "section_length",
             "bend_pattern"
           ],
-          "photo_status": "capture_pending",
-          "media_ids": [],
-          "placement_notes": "Inspect under clips before deciding replacement",
+          "photo_status": "photo_imported_measurement_pending",
+          "media_ids": [
+            "20260503_152926_gp_4eOEiLQQ",
+            "20260503_153130_gp_gkKoFapg"
+          ],
+          "placement_notes": "Forward chassis hard-line route captured; still record feed/return OD section length and bend pattern.",
           "release_use": "Releases hard-line keep/replace decision",
-          "evidence_images": []
+          "evidence_images": [
+            {
+              "path": "../../photos/20260503_152926_gp_4eOEiLQQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:29:26",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_152926_gp_4eOEiLQQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_153130_gp_gkKoFapg.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:31:30",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_153130_gp_gkKoFapg",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "shot_id": "RPI-FUEL-002-B",
@@ -27812,11 +28470,39 @@ window.J40_DASHBOARD_DATA = {
             "line_od",
             "pass_through_protection"
           ],
-          "photo_status": "capture_pending",
-          "media_ids": [],
-          "placement_notes": "Look for hidden corrosion at support points",
+          "photo_status": "photo_imported_measurement_pending",
+          "media_ids": [
+            "20260503_152926_gp_4eOEiLQQ",
+            "20260503_153130_gp_gkKoFapg"
+          ],
+          "placement_notes": "Forward rail clip/pass-through context captured; still record clip spacing line OD and protection.",
           "release_use": "Releases P-clip and protection sizes",
-          "evidence_images": []
+          "evidence_images": [
+            {
+              "path": "../../photos/20260503_152926_gp_4eOEiLQQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:29:26",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_152926_gp_4eOEiLQQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_153130_gp_gkKoFapg.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:31:30",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_153130_gp_gkKoFapg",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "shot_id": "RPI-VAC-001-A",
@@ -27886,11 +28572,104 @@ window.J40_DASHBOARD_DATA = {
             "full_droop_slack",
             "bracket_retention"
           ],
-          "photo_status": "capture_pending",
-          "media_ids": [],
-          "placement_notes": "Safety circuit photo set",
+          "photo_status": "photo_imported_measurement_pending",
+          "media_ids": [
+            "20260503_152902_gp_xBbsFRzQ",
+            "20260503_152913_gp_AvVGAlHw",
+            "20260503_153054_gp_uj94xuug",
+            "20260503_160050_gp_3aBjHmzw",
+            "20260503_160057_gp_VL1ESgKQ",
+            "20260503_160107_gp_HBcJ3Ipg",
+            "20260503_160112_gp_eWV3krtw"
+          ],
+          "placement_notes": "Front flex hose and bracket area captured; still record end fitting type free length and full-droop slack.",
           "release_use": "Releases front flex hose identification",
-          "evidence_images": []
+          "evidence_images": [
+            {
+              "path": "../../photos/20260503_152902_gp_xBbsFRzQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:29:02",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_152902_gp_xBbsFRzQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_152913_gp_AvVGAlHw.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:29:13",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_152913_gp_AvVGAlHw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_153054_gp_uj94xuug.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:30:54",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_153054_gp_uj94xuug",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160050_gp_3aBjHmzw.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:00:50",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160050_gp_3aBjHmzw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160057_gp_VL1ESgKQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:00:57",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160057_gp_VL1ESgKQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160107_gp_HBcJ3Ipg.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:01:07",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160107_gp_HBcJ3Ipg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160112_gp_eWV3krtw.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:01:12",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160112_gp_eWV3krtw",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "shot_id": "RPI-BRAKE-001-B",
@@ -27925,11 +28704,117 @@ window.J40_DASHBOARD_DATA = {
             "route_length",
             "clip_spacing"
           ],
-          "photo_status": "capture_pending",
-          "media_ids": [],
-          "placement_notes": "Old lines should be templates before fabrication",
+          "photo_status": "photo_imported_measurement_pending",
+          "media_ids": [
+            "20260503_152902_gp_xBbsFRzQ",
+            "20260503_153017_gp_dM8BCa4w",
+            "20260503_153031_gp_rFfqDUBw",
+            "20260503_153130_gp_gkKoFapg",
+            "20260503_160050_gp_3aBjHmzw",
+            "20260503_160057_gp_VL1ESgKQ",
+            "20260503_160107_gp_HBcJ3Ipg",
+            "20260503_160112_gp_eWV3krtw"
+          ],
+          "placement_notes": "Brake hard-line unions route and clips captured; still record tube OD flare standard union thread route length and clip spacing.",
           "release_use": "Releases brake hard-line fabrication inputs",
-          "evidence_images": []
+          "evidence_images": [
+            {
+              "path": "../../photos/20260503_152902_gp_xBbsFRzQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:29:02",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_152902_gp_xBbsFRzQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_153017_gp_dM8BCa4w.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:30:17",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_153017_gp_dM8BCa4w",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_153031_gp_rFfqDUBw.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:30:31",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_153031_gp_rFfqDUBw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_153130_gp_gkKoFapg.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:31:30",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_153130_gp_gkKoFapg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160050_gp_3aBjHmzw.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:00:50",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160050_gp_3aBjHmzw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160057_gp_VL1ESgKQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:00:57",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160057_gp_VL1ESgKQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160107_gp_HBcJ3Ipg.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:01:07",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160107_gp_HBcJ3Ipg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260503_160112_gp_eWV3krtw.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "16:01:12",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260503_160112_gp_eWV3krtw",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "shot_id": "RPI-CLUTCH-001-A",
@@ -30052,7 +30937,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "requirement_id": "BR-SYS-002",
-          "requirement_name": "Brake fluid and bleed consumables",
+          "requirement_name": "DOT 3 brake fluid and bleed consumables",
           "pipe_id": "",
           "vehicle_location": "Full brake hydraulic system",
           "pipe_or_line": "",
@@ -30065,16 +30950,16 @@ window.J40_DASHBOARD_DATA = {
             "20260423_232220_gp_ezwEcH2g"
           ],
           "photo_status": "supporting_hydraulic_photos",
-          "spec_status": "needs_fluid_spec_confirmation",
+          "spec_status": "spec_ready_dot3",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
-          "current_action": "Have brake fluid, clear bleed hose, catch bottle or bleeder, line caps/plugs, brake cleaner, rags, and gloves ready before any hydraulic line is opened.",
-          "exact_recreation_spec": "Flush and bleed the full system after any hose, hard-line, wheel-cylinder, caliper, or master work.",
-          "material_spec": "Brake fluid to cap/manual/workshop spec; clean bleed hose/bottle; brake cleaner; line caps/plugs",
-          "critical_measurements": "Fluid spec, total fluid volume for full bleed, bleed screw sizes, bleed order from manual/workshop",
+          "current_action": "Buy 2 L sealed fresh DOT 3 brake fluid plus clear bleed hose, catch bottle or bleeder, line caps/plugs, brake cleaner, rags, gloves, and catch tray before any hydraulic line is opened.",
+          "exact_recreation_spec": "Flush and bleed the full system with DOT 3 after any hose, hard-line, wheel-cylinder, caliper, or master work. Do not top up unknown old fluid.",
+          "material_spec": "Sealed fresh DOT 3 brake fluid meeting SAE J1703 / FMVSS No. 116 DOT 3; clean bleed hose/bottle; brake cleaner; line caps/plugs",
+          "critical_measurements": "Working buy quantity 2 L sealed total unless workshop specifies more, bleed screw sizes, bleed order from manual/workshop",
           "fit_and_test": "Firm pedal, clean fluid at bleeders, no leaks, no air return, recheck after bedding and short road test",
-          "source_ref": "docs_brake_workstream|suspension_brake_merged_work_plan",
-          "notes": "Do not open hydraulics without fluid and caps/plugs already available.",
+          "source_ref": "docs_brake_workstream|suspension_brake_merged_work_plan|docs_brake_parts_acquisition_spec_20260503",
+          "notes": "User direction 2026-05-03 closes the brake-fluid DOT hold as DOT 3. Do not use DOT 5, and do not mix unknown old fluid.",
           "evidence_images": [
             {
               "path": "../../photos/20260331_224409.jpg",
@@ -30390,7 +31275,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_brake_fluid_bleed_consumables",
           "workstream": "brake_system",
-          "item": "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves",
+          "item": "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves",
           "status": "planned",
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
@@ -30402,21 +31287,22 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_brake_fluid_bleed_consumables",
-          "evidence_ref": "BR-SYS-002|BR-CAPTURE-001|docs/brake-suspension-order-links-20260503.md",
-          "notes": "PURCHASE READY for non-fitment consumables before opening hydraulics: line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. Brake fluid itself remains cap/manual/workshop-confirmed DOT spec before payment; do not mix unknown old fluid. Candidate order/search links are logged in docs/brake-suspension-order-links-20260503.md.",
+          "evidence_ref": "BR-SYS-002|BR-CAPTURE-001|docs/brake-suspension-order-links-20260503.md|docs/brake-parts-acquisition-spec-20260503.md|docs/brake-parts-pakistan-acquisition-20260503.md",
+          "notes": "PURCHASE READY for non-fitment consumables before opening hydraulics: sealed fresh DOT 3 brake fluid (SAE J1703 / FMVSS No. 116 DOT 3), working buy quantity 2 L sealed total unless the workshop specifies more, line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. User direction 2026-05-03 closes the brake-fluid DOT hold as DOT 3. Do not use DOT 5 and do not mix unknown old fluid. Candidate Pakistan purchase links and local order text are logged in docs/brake-parts-pakistan-acquisition-20260503.md.",
           "links": [],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/suspension_kit.jpg",
-            "caption": "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves \u00b7 suspension kit reference image",
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+            "caption": "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves \u00b7 brake line/hose reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "semantic_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "suspension_kit",
+            "media_id": "brake_hose_line",
             "matched_tokens": [
-              "suspension"
+              "brake",
+              "line"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -31167,7 +32053,7 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Brake master reservoir and proportioning service parts (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves (purchase_ready; delivery not_ordered; amount missing)",
+                "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves (purchase_ready; delivery not_ordered; amount missing)",
                 "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)",
                 "Rear wheel cylinders pair with bleed screws (inspect_then_buy; delivery not_ordered; amount missing)",
@@ -31297,9 +32183,9 @@ window.J40_DASHBOARD_DATA = {
                 "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Brake master reservoir and proportioning service parts (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Front disc pads and retaining hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves (purchase_ready; delivery not_ordered; amount missing)",
                 "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)",
-                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -31424,8 +32310,8 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves (purchase_ready; delivery not_ordered; amount missing)",
                 "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves (purchase_ready; delivery not_ordered; amount missing)",
                 "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)",
                 "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips (spec_needed_before_order; delivery not_ordered; amount missing)",
@@ -35143,7 +36029,7 @@ window.J40_DASHBOARD_DATA = {
         "priority": "P0",
         "entry_id": "part_brake_fluid_bleed_consumables",
         "workstream": "brake_system",
-        "item": "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves",
+        "item": "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves",
         "status": "planned",
         "procurement_stage": "purchase_ready",
         "next_action": "confirm_price_then_order",
@@ -35152,21 +36038,22 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "Autohub/Daraz/local brake supplier",
         "supply_type": "part",
-        "evidence_ref": "BR-SYS-002|BR-CAPTURE-001|docs/brake-suspension-order-links-20260503.md",
-        "notes": "PURCHASE READY for non-fitment consumables before opening hydraulics: line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. Brake fluid itself remains cap/manual/workshop-confirmed DOT spec before payment; do not mix unknown old fluid. Candidate order/search links are logged in docs/brake-suspension-order-links-20260503.md.",
+        "evidence_ref": "BR-SYS-002|BR-CAPTURE-001|docs/brake-suspension-order-links-20260503.md|docs/brake-parts-acquisition-spec-20260503.md|docs/brake-parts-pakistan-acquisition-20260503.md",
+        "notes": "PURCHASE READY for non-fitment consumables before opening hydraulics: sealed fresh DOT 3 brake fluid (SAE J1703 / FMVSS No. 116 DOT 3), working buy quantity 2 L sealed total unless the workshop specifies more, line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. User direction 2026-05-03 closes the brake-fluid DOT hold as DOT 3. Do not use DOT 5 and do not mix unknown old fluid. Candidate Pakistan purchase links and local order text are logged in docs/brake-parts-pakistan-acquisition-20260503.md.",
         "links": [],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/suspension_kit.jpg",
-          "caption": "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves \u00b7 suspension kit reference image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+          "caption": "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves \u00b7 brake line/hose reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "suspension_kit",
+          "media_id": "brake_hose_line",
           "matched_tokens": [
-            "suspension"
+            "brake",
+            "line"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -36209,7 +37096,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_brake_fluid_bleed_consumables",
         "workstream": "brake_system",
-        "item": "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves",
+        "item": "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves",
         "status": "planned",
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
@@ -36219,21 +37106,22 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "Autohub/Daraz/local brake supplier",
         "supply_type": "part",
-        "evidence_ref": "BR-SYS-002|BR-CAPTURE-001|docs/brake-suspension-order-links-20260503.md",
-        "notes": "PURCHASE READY for non-fitment consumables before opening hydraulics: line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. Brake fluid itself remains cap/manual/workshop-confirmed DOT spec before payment; do not mix unknown old fluid. Candidate order/search links are logged in docs/brake-suspension-order-links-20260503.md.",
+        "evidence_ref": "BR-SYS-002|BR-CAPTURE-001|docs/brake-suspension-order-links-20260503.md|docs/brake-parts-acquisition-spec-20260503.md|docs/brake-parts-pakistan-acquisition-20260503.md",
+        "notes": "PURCHASE READY for non-fitment consumables before opening hydraulics: sealed fresh DOT 3 brake fluid (SAE J1703 / FMVSS No. 116 DOT 3), working buy quantity 2 L sealed total unless the workshop specifies more, line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. User direction 2026-05-03 closes the brake-fluid DOT hold as DOT 3. Do not use DOT 5 and do not mix unknown old fluid. Candidate Pakistan purchase links and local order text are logged in docs/brake-parts-pakistan-acquisition-20260503.md.",
         "links": [],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/suspension_kit.jpg",
-          "caption": "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves \u00b7 suspension kit reference image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+          "caption": "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves \u00b7 brake line/hose reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "suspension_kit",
+          "media_id": "brake_hose_line",
           "matched_tokens": [
-            "suspension"
+            "brake",
+            "line"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -40207,11 +41095,11 @@ window.J40_DASHBOARD_DATA = {
   },
   "capture_tasks": {
     "summary": {
-      "total_tasks": 145,
-      "now_tasks": 134,
+      "total_tasks": 144,
+      "now_tasks": 133,
       "later_tasks": 11,
-      "p0_tasks": 82,
-      "photo_tasks": 68,
+      "p0_tasks": 63,
+      "photo_tasks": 69,
       "measurement_tasks": 114
     },
     "counts_by_workstream": [
@@ -40225,7 +41113,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "brake_system",
-        "count": 17
+        "count": 16
       },
       {
         "workstream": "chassis_fixing",
@@ -40263,7 +41151,7 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_task_type": [
       {
         "task_type": "photo_measurement",
-        "count": 58
+        "count": 59
       },
       {
         "task_type": "measurement",
@@ -40271,7 +41159,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "task_type": "template",
-        "count": 14
+        "count": 13
       },
       {
         "task_type": "photo",
@@ -40283,7 +41171,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "task_type": "decision",
-        "count": 8
+        "count": 7
       },
       {
         "task_type": "inspection",
@@ -40293,11 +41181,11 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_priority": [
       {
         "priority": "P0",
-        "count": 82
+        "count": 63
       },
       {
         "priority": "P1",
-        "count": 54
+        "count": 72
       },
       {
         "priority": "P2",
@@ -40305,81 +41193,6 @@ window.J40_DASHBOARD_DATA = {
       }
     ],
     "tasks": [
-      {
-        "task_id": "brake_requirement:BR-SYS-002",
-        "title": "Brake fluid and bleed consumables",
-        "workstream": "brake_system",
-        "task_type": "decision",
-        "priority": "P0",
-        "timing": "now",
-        "status": "needs_fluid_spec_confirmation",
-        "location": "Full brake hydraulic system",
-        "action": "Have brake fluid, clear bleed hose, catch bottle or bleeder, line caps/plugs, brake cleaner, rags, and gloves ready before any hydraulic line is opened.",
-        "data_needed": "Fluid spec, total fluid volume for full bleed, bleed screw sizes, bleed order from manual/workshop",
-        "blocks": "BR-SYS-002",
-        "record_result_in": "",
-        "source_label": "Brake Requirements",
-        "source_path": "data/manual/brake_system_requirements.csv",
-        "source_row_id": "BR-SYS-002",
-        "notes": "Do not open hydraulics without fluid and caps/plugs already available.",
-        "evidence_ref": "20260331_224409|20260331_224423|20260324_004852|20260423_232220_gp_ezwEcH2g",
-        "evidence_images": [
-          {
-            "path": "../../photos/20260331_224409.jpg",
-            "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
-            "captured_date": "2026-03-31",
-            "captured_time": "22:44:09",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_floor_underside_and_lines",
-            "stage": "underside_inspection",
-            "media_id": "20260331_224409",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260331_224423.jpg",
-            "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
-            "captured_date": "2026-03-31",
-            "captured_time": "22:44:23",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_floor_underside_and_lines",
-            "stage": "underside_inspection",
-            "media_id": "20260331_224423",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260324_004852.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
-            "captured_date": "2026-03-24",
-            "captured_time": "00:48:52",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "underside_inspection",
-            "media_id": "20260324_004852",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
-            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
-            "captured_date": "2026-04-23",
-            "captured_time": "23:22:20",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "steering_and_suspension_linkages",
-            "stage": "underside_inspection",
-            "media_id": "20260423_232220_gp_ezwEcH2g",
-            "matched_tokens": []
-          }
-        ],
-        "links": [
-          {
-            "url": "../../data/manual/brake_system_requirements.csv",
-            "label": "Brake Requirements"
-          }
-        ]
-      },
       {
         "task_id": "component_job:brake_hydraulic_refresh_and_bias_decision",
         "title": "brake_hydraulic_refresh_and_bias_decision",
@@ -41914,58 +42727,6 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
-        "task_id": "replacement_pipe_photo_intake:RPI-COOL-006-C",
-        "title": "Formed coolant pipe connector hoses - installed kink clearance",
-        "workstream": "replacement_pipes",
-        "task_type": "photo",
-        "priority": "P0",
-        "timing": "now",
-        "status": "capture_pending",
-        "location": "Front engine cooling route dry-fit position",
-        "action": "Installed or held-in-place route photo showing both connector hoses and bends",
-        "data_needed": "connector_a_bend_clearance, connector_b_bend_clearance, kink_check, fan_belt_radiator_clearance",
-        "blocks": "RPO-COOL-006A|RPO-COOL-006B",
-        "record_result_in": "",
-        "source_label": "Replacement Pipe Photo Intake",
-        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
-        "source_row_id": "RPI-COOL-006-C",
-        "notes": "Needed before deciding straight hose versus molded connector",
-        "evidence_ref": "",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Replacement Pipe Photo Intake"
-          }
-        ]
-      },
-      {
-        "task_id": "replacement_pipe_photo_intake:RPI-COOL-005-C",
-        "title": "Formed metal coolant pipe - installed clearance",
-        "workstream": "replacement_pipes",
-        "task_type": "photo",
-        "priority": "P0",
-        "timing": "now",
-        "status": "capture_pending",
-        "location": "Front engine cooling route dry-fit position",
-        "action": "Installed or held-in-place photo showing fan/belt/radiator/body clearance",
-        "data_needed": "clearance_to_fan, clearance_to_belts, clearance_to_radiator, clearance_to_body",
-        "blocks": "RPO-COOL-005",
-        "record_result_in": "",
-        "source_label": "Replacement Pipe Photo Intake",
-        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
-        "source_row_id": "RPI-COOL-005-C",
-        "notes": "Needed before coating fabricated pipe",
-        "evidence_ref": "",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Replacement Pipe Photo Intake"
-          }
-        ]
-      },
-      {
         "task_id": "replacement_pipe_release_action:RPA-001",
         "title": "RPA-001",
         "workstream": "replacement_pipes",
@@ -42062,6 +42823,105 @@ window.J40_DASHBOARD_DATA = {
         "notes": "Confirm vacuum hose not oil outlet hose",
         "evidence_ref": "",
         "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-BRAKE-001-C",
+        "title": "Brake hard lines and unions",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "photo_imported_measurement_pending",
+        "location": "Frame and axle brake hard-line routes",
+        "action": "Close photos of unions flare nuts tube routing and clips",
+        "data_needed": "tube_od, flare_standard, union_thread, route_length, clip_spacing",
+        "blocks": "RPO-BRAKE-001B|RPO-CLIP-001",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-BRAKE-001-C",
+        "notes": "Brake hard-line unions route and clips captured; still record tube OD flare standard union thread route length and clip spacing.",
+        "evidence_ref": "20260503_152902_gp_xBbsFRzQ|20260503_153017_gp_dM8BCa4w|20260503_153031_gp_rFfqDUBw|20260503_153130_gp_gkKoFapg|20260503_160050_gp_3aBjHmzw|20260503_160057_gp_VL1ESgKQ|20260503_160107_gp_HBcJ3Ipg|20260503_160112_gp_eWV3krtw",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260503_152902_gp_xBbsFRzQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:29:02",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_152902_gp_xBbsFRzQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_153017_gp_dM8BCa4w.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:30:17",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_153017_gp_dM8BCa4w",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_153031_gp_rFfqDUBw.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:30:31",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_153031_gp_rFfqDUBw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_153130_gp_gkKoFapg.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:31:30",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_153130_gp_gkKoFapg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160050_gp_3aBjHmzw.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:00:50",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160050_gp_3aBjHmzw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160057_gp_VL1ESgKQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:00:57",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160057_gp_VL1ESgKQ",
+            "matched_tokens": []
+          }
+        ],
         "links": [
           {
             "url": "../../data/manual/replacement_pipe_photo_intake.csv",
@@ -42187,32 +43047,6 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
-        "task_id": "replacement_pipe_photo_intake:RPI-FUEL-001-A",
-        "title": "Diesel feed hose - filter and injection pump feed",
-        "workstream": "replacement_pipes",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "capture_pending",
-        "location": "Engine bay fuel filter to injection pump feed route",
-        "action": "Close photos of filter barb and pump feed barb with hose route",
-        "data_needed": "filter_barb_od, pump_feed_barb_od, feed_route_length, hose_od_for_clamps",
-        "blocks": "RPO-FUEL-001A",
-        "record_result_in": "",
-        "source_label": "Replacement Pipe Photo Intake",
-        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
-        "source_row_id": "RPI-FUEL-001-A",
-        "notes": "Low-pressure diesel feed only",
-        "evidence_ref": "",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Replacement Pipe Photo Intake"
-          }
-        ]
-      },
-      {
         "task_id": "replacement_pipe_circuit_closure:RP-FUEL-001",
         "title": "Diesel feed return and injector leak-off rubber hoses",
         "workstream": "replacement_pipes",
@@ -42235,32 +43069,6 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/replacement_pipe_circuit_closure_sheet.csv",
             "label": "Replacement Pipe Circuit Closure"
-          }
-        ]
-      },
-      {
-        "task_id": "replacement_pipe_photo_intake:RPI-FUEL-001-B",
-        "title": "Diesel return and bleed hose",
-        "workstream": "replacement_pipes",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "capture_pending",
-        "location": "Injection pump return/bleed and filter return area",
-        "action": "Close photos of return barbs and route back to return line",
-        "data_needed": "pump_return_barb_od, return_route_length, hose_od_for_clamps",
-        "blocks": "RPO-FUEL-001B",
-        "record_result_in": "",
-        "source_label": "Replacement Pipe Photo Intake",
-        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
-        "source_row_id": "RPI-FUEL-001-B",
-        "notes": "Do not include high-pressure injector pipes as replacement hose",
-        "evidence_ref": "",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Replacement Pipe Photo Intake"
           }
         ]
       },
@@ -42375,7 +43183,7 @@ window.J40_DASHBOARD_DATA = {
         "task_type": "photo_measurement",
         "priority": "P0",
         "timing": "now",
-        "status": "capture_pending",
+        "status": "photo_imported_measurement_pending",
         "location": "Front caliper flex hose ends and brackets",
         "action": "Close photos of both ends plus full-droop/free-length reference",
         "data_needed": "end_thread_or_banjo, free_length, full_droop_slack, bracket_retention",
@@ -42384,87 +43192,82 @@ window.J40_DASHBOARD_DATA = {
         "source_label": "Replacement Pipe Photo Intake",
         "source_path": "data/manual/replacement_pipe_photo_intake.csv",
         "source_row_id": "RPI-BRAKE-001-A",
-        "notes": "Safety circuit photo set",
-        "evidence_ref": "",
-        "evidence_images": [],
-        "links": [
+        "notes": "Front flex hose and bracket area captured; still record end fitting type free length and full-droop slack.",
+        "evidence_ref": "20260503_152902_gp_xBbsFRzQ|20260503_152913_gp_AvVGAlHw|20260503_153054_gp_uj94xuug|20260503_160050_gp_3aBjHmzw|20260503_160057_gp_VL1ESgKQ|20260503_160107_gp_HBcJ3Ipg|20260503_160112_gp_eWV3krtw",
+        "evidence_images": [
           {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Replacement Pipe Photo Intake"
-          }
-        ]
-      },
-      {
-        "task_id": "replacement_pipe_photo_intake:RPI-COOL-004-B",
-        "title": "Front heater hoses - engine nipple ends",
-        "workstream": "replacement_pipes",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "capture_pending",
-        "location": "Engine heater nipple area",
-        "action": "Close photo of engine-side heater nipples and hose/clamp relationship",
-        "data_needed": "engine_heater_nipple_od, hose_od_for_clamps",
-        "blocks": "RPO-COOL-004A|RPO-COOL-004B",
-        "record_result_in": "",
-        "source_label": "Replacement Pipe Photo Intake",
-        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
-        "source_row_id": "RPI-COOL-004-B",
-        "notes": "Show both engine-side fittings if present",
-        "evidence_ref": "",
-        "evidence_images": [],
-        "links": [
+            "path": "../../photos/20260503_152902_gp_xBbsFRzQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:29:02",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_152902_gp_xBbsFRzQ",
+            "matched_tokens": []
+          },
           {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Replacement Pipe Photo Intake"
-          }
-        ]
-      },
-      {
-        "task_id": "replacement_pipe_photo_intake:RPI-COOL-004-A",
-        "title": "Front heater hoses - firewall/heater core ends",
-        "workstream": "replacement_pipes",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "capture_pending",
-        "location": "Firewall heater core nipple area",
-        "action": "Close photo of heater core inlet/outlet nipples and clamps",
-        "data_needed": "heater_core_nipple_od, hose_od_for_clamps, inlet_outlet_identification",
-        "blocks": "RPO-COOL-004A|RPO-COOL-004B",
-        "record_result_in": "",
-        "source_label": "Replacement Pipe Photo Intake",
-        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
-        "source_row_id": "RPI-COOL-004-A",
-        "notes": "Mark inlet versus outlet if visible",
-        "evidence_ref": "",
-        "evidence_images": [],
-        "links": [
+            "path": "../../photos/20260503_152913_gp_AvVGAlHw.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:29:13",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_152913_gp_AvVGAlHw",
+            "matched_tokens": []
+          },
           {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Replacement Pipe Photo Intake"
+            "path": "../../photos/20260503_153054_gp_uj94xuug.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:30:54",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_153054_gp_uj94xuug",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160050_gp_3aBjHmzw.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:00:50",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160050_gp_3aBjHmzw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160057_gp_VL1ESgKQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:00:57",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160057_gp_VL1ESgKQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160107_gp_HBcJ3Ipg.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:01:07",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160107_gp_HBcJ3Ipg",
+            "matched_tokens": []
           }
-        ]
-      },
-      {
-        "task_id": "replacement_pipe_photo_intake:RPI-COOL-004-C",
-        "title": "Front heater hoses - route and lengths",
-        "workstream": "replacement_pipes",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "capture_pending",
-        "location": "Engine bay firewall heater hose routing",
-        "action": "Wide route photo with tape along inlet and outlet paths",
-        "data_needed": "inlet_route_length, outlet_route_length, exhaust_clearance",
-        "blocks": "RPO-COOL-004A|RPO-COOL-004B",
-        "record_result_in": "",
-        "source_label": "Replacement Pipe Photo Intake",
-        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
-        "source_row_id": "RPI-COOL-004-C",
-        "notes": "Include firewall pass-through and heat exposure",
-        "evidence_ref": "",
-        "evidence_images": [],
+        ],
         "links": [
           {
             "url": "../../data/manual/replacement_pipe_photo_intake.csv",
@@ -42495,84 +43298,6 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/replacement_pipe_circuit_closure_sheet.csv",
             "label": "Replacement Pipe Circuit Closure"
-          }
-        ]
-      },
-      {
-        "task_id": "replacement_pipe_photo_intake:RPI-FUEL-001-C",
-        "title": "Injector leak-off hose and sample markings",
-        "workstream": "replacement_pipes",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "capture_pending",
-        "location": "Injector tops and loose red/black hose samples",
-        "action": "Close photos of injector nipples plus readable hose markings",
-        "data_needed": "injector_leakoff_nipple_od, sample_hose_id, sample_hose_od, rating_markings",
-        "blocks": "RPO-FUEL-001C",
-        "record_result_in": "",
-        "source_label": "Replacement Pipe Photo Intake",
-        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
-        "source_row_id": "RPI-FUEL-001-C",
-        "notes": "Confirm diesel-rated leak-off material",
-        "evidence_ref": "",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Replacement Pipe Photo Intake"
-          }
-        ]
-      },
-      {
-        "task_id": "replacement_pipe_photo_intake:RPI-FUEL-002-C",
-        "title": "Low-pressure fuel hard lines - clips and protection",
-        "workstream": "replacement_pipes",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "capture_pending",
-        "location": "Chassis rail clip points and pass-through areas",
-        "action": "Close photos under clips and through brackets/grommets",
-        "data_needed": "clip_spacing, clip_id, line_od, pass_through_protection",
-        "blocks": "RPO-FUEL-002A|RPO-FUEL-002B|RPO-CLIP-001",
-        "record_result_in": "",
-        "source_label": "Replacement Pipe Photo Intake",
-        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
-        "source_row_id": "RPI-FUEL-002-C",
-        "notes": "Look for hidden corrosion at support points",
-        "evidence_ref": "",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Replacement Pipe Photo Intake"
-          }
-        ]
-      },
-      {
-        "task_id": "replacement_pipe_photo_intake:RPI-FUEL-002-A",
-        "title": "Low-pressure fuel hard lines - forward chassis run",
-        "workstream": "replacement_pipes",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "capture_pending",
-        "location": "Chassis rail forward fuel feed/return route",
-        "action": "Wide and close photos of feed/return lines along forward rail",
-        "data_needed": "tube_od_feed, tube_od_return, section_length, bend_pattern",
-        "blocks": "RPO-FUEL-002A|RPO-FUEL-002B",
-        "record_result_in": "",
-        "source_label": "Replacement Pipe Photo Intake",
-        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
-        "source_row_id": "RPI-FUEL-002-A",
-        "notes": "Inspect under clips before deciding replacement",
-        "evidence_ref": "",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Replacement Pipe Photo Intake"
           }
         ]
       },
@@ -42625,84 +43350,6 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/replacement_pipe_circuit_closure_sheet.csv",
             "label": "Replacement Pipe Circuit Closure"
-          }
-        ]
-      },
-      {
-        "task_id": "replacement_pipe_photo_intake:RPI-COOL-002-B",
-        "title": "Lower radiator hose - engine inlet end",
-        "workstream": "replacement_pipes",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "capture_pending",
-        "location": "Front lower engine bay at water pump or engine inlet",
-        "action": "Close photo of engine inlet neck and hose/clamp relationship",
-        "data_needed": "engine_inlet_od, hose_od_for_clamp, clamp_band_width",
-        "blocks": "RPO-COOL-002",
-        "record_result_in": "",
-        "source_label": "Replacement Pipe Photo Intake",
-        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
-        "source_row_id": "RPI-COOL-002-B",
-        "notes": "Engine-side lower hose end",
-        "evidence_ref": "",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Replacement Pipe Photo Intake"
-          }
-        ]
-      },
-      {
-        "task_id": "replacement_pipe_photo_intake:RPI-COOL-002-C",
-        "title": "Lower radiator hose - full route",
-        "workstream": "replacement_pipes",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "capture_pending",
-        "location": "Front lower route between radiator and engine inlet",
-        "action": "Wide photo showing full lower bend and clearance to belt/fan/crossmember",
-        "data_needed": "old_hose_free_length, lower_bend_clearance",
-        "blocks": "RPO-COOL-002",
-        "record_result_in": "",
-        "source_label": "Replacement Pipe Photo Intake",
-        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
-        "source_row_id": "RPI-COOL-002-C",
-        "notes": "Show bend shape and any squeeze points",
-        "evidence_ref": "",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Replacement Pipe Photo Intake"
-          }
-        ]
-      },
-      {
-        "task_id": "replacement_pipe_photo_intake:RPI-COOL-002-A",
-        "title": "Lower radiator hose - radiator outlet end",
-        "workstream": "replacement_pipes",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "capture_pending",
-        "location": "Front lower engine bay at radiator lower outlet",
-        "action": "Close photo of lower radiator outlet neck and clamp land",
-        "data_needed": "radiator_lower_outlet_od, hose_od_for_clamp, clamp_band_width",
-        "blocks": "RPO-COOL-002",
-        "record_result_in": "",
-        "source_label": "Replacement Pipe Photo Intake",
-        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
-        "source_row_id": "RPI-COOL-002-A",
-        "notes": "Radiator-side lower hose end",
-        "evidence_ref": "",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Replacement Pipe Photo Intake"
           }
         ]
       },
@@ -42785,58 +43432,6 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
-        "task_id": "replacement_pipe_photo_intake:RPI-COOL-003-B",
-        "title": "Radiator overflow hose - bottle route",
-        "workstream": "replacement_pipes",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "capture_pending",
-        "location": "Overflow bottle and hose route",
-        "action": "Photo from radiator nipple to reserve bottle plus close bottle nipple",
-        "data_needed": "bottle_nipple_od, finished_route_length, hose_od_for_clip",
-        "blocks": "RPO-COOL-003",
-        "record_result_in": "",
-        "source_label": "Replacement Pipe Photo Intake",
-        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
-        "source_row_id": "RPI-COOL-003-B",
-        "notes": "Show routing path and support points",
-        "evidence_ref": "",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Replacement Pipe Photo Intake"
-          }
-        ]
-      },
-      {
-        "task_id": "replacement_pipe_photo_intake:RPI-COOL-003-A",
-        "title": "Radiator overflow hose - radiator nipple",
-        "workstream": "replacement_pipes",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "capture_pending",
-        "location": "Radiator neck overflow nipple",
-        "action": "Close photo of overflow nipple with ruler or caliper",
-        "data_needed": "nipple_od, clamp_or_clip_size",
-        "blocks": "RPO-COOL-003",
-        "record_result_in": "",
-        "source_label": "Replacement Pipe Photo Intake",
-        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
-        "source_row_id": "RPI-COOL-003-A",
-        "notes": "Small nipple at radiator neck",
-        "evidence_ref": "",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Replacement Pipe Photo Intake"
-          }
-        ]
-      },
-      {
         "task_id": "replacement_pipe_photo_intake:RPI-BRAKE-001-B",
         "title": "Rear centre brake flex hose",
         "workstream": "replacement_pipes",
@@ -42889,84 +43484,6 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
-        "task_id": "replacement_pipe_photo_intake:RPI-COOL-001-C",
-        "title": "Upper radiator hose - full route",
-        "workstream": "replacement_pipes",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "capture_pending",
-        "location": "Front top route between thermostat housing and radiator",
-        "action": "Wide photo showing complete molded route and fan/belt/radiator support clearance",
-        "data_needed": "old_hose_free_length, route_clearance_to_fan_belt_support",
-        "blocks": "RPO-COOL-001",
-        "record_result_in": "",
-        "source_label": "Replacement Pipe Photo Intake",
-        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
-        "source_row_id": "RPI-COOL-001-C",
-        "notes": "Include both end positions in one frame if possible",
-        "evidence_ref": "",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Replacement Pipe Photo Intake"
-          }
-        ]
-      },
-      {
-        "task_id": "replacement_pipe_photo_intake:RPI-COOL-001-B",
-        "title": "Upper radiator hose - radiator upper neck end",
-        "workstream": "replacement_pipes",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "capture_pending",
-        "location": "Front top engine bay at radiator upper inlet",
-        "action": "Close photo square to radiator neck with clamp land visible",
-        "data_needed": "radiator_upper_neck_od, hose_od_for_clamp, clamp_band_width",
-        "blocks": "RPO-COOL-001",
-        "record_result_in": "",
-        "source_label": "Replacement Pipe Photo Intake",
-        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
-        "source_row_id": "RPI-COOL-001-B",
-        "notes": "Radiator-side end of upper hose",
-        "evidence_ref": "",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Replacement Pipe Photo Intake"
-          }
-        ]
-      },
-      {
-        "task_id": "replacement_pipe_photo_intake:RPI-COOL-001-A",
-        "title": "Upper radiator hose - thermostat housing end",
-        "workstream": "replacement_pipes",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "capture_pending",
-        "location": "Front top engine bay at thermostat housing",
-        "action": "Close photo square to neck with old hose/clamp visible",
-        "data_needed": "thermostat_neck_od, hose_od_for_clamp, clamp_band_width",
-        "blocks": "RPO-COOL-001",
-        "record_result_in": "",
-        "source_label": "Replacement Pipe Photo Intake",
-        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
-        "source_row_id": "RPI-COOL-001-A",
-        "notes": "Engine-side end of upper hose",
-        "evidence_ref": "",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Replacement Pipe Photo Intake"
-          }
-        ]
-      },
-      {
         "task_id": "replacement_pipe_circuit_closure:RP-VAC-001",
         "title": "Vacuum hose and breather/oil mist hose",
         "workstream": "replacement_pipes",
@@ -43015,32 +43532,6 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/replacement_pipe_circuit_closure_sheet.csv",
             "label": "Replacement Pipe Circuit Closure"
-          }
-        ]
-      },
-      {
-        "task_id": "replacement_pipe_photo_intake:RPI-BRAKE-001-C",
-        "title": "Brake hard lines and unions",
-        "workstream": "replacement_pipes",
-        "task_type": "template",
-        "priority": "P0",
-        "timing": "now",
-        "status": "capture_pending",
-        "location": "Frame and axle brake hard-line routes",
-        "action": "Close photos of unions flare nuts tube routing and clips",
-        "data_needed": "tube_od, flare_standard, union_thread, route_length, clip_spacing",
-        "blocks": "RPO-BRAKE-001B|RPO-CLIP-001",
-        "record_result_in": "",
-        "source_label": "Replacement Pipe Photo Intake",
-        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
-        "source_row_id": "RPI-BRAKE-001-C",
-        "notes": "Old lines should be templates before fabrication",
-        "evidence_ref": "",
-        "evidence_images": [],
-        "links": [
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Replacement Pipe Photo Intake"
           }
         ]
       },
@@ -45096,6 +45587,156 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-006-C",
+        "title": "Formed coolant pipe connector hoses - installed kink clearance",
+        "workstream": "replacement_pipes",
+        "task_type": "photo",
+        "priority": "P1",
+        "timing": "now",
+        "status": "clearance_context_imported_connector_dryfit_pending",
+        "location": "Front engine cooling route dry-fit position",
+        "action": "Installed or held-in-place route photo showing both connector hoses and bends",
+        "data_needed": "connector_a_bend_clearance, connector_b_bend_clearance, kink_check, fan_belt_radiator_clearance",
+        "blocks": "RPO-COOL-006A|RPO-COOL-006B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-006-C",
+        "notes": "Front fan belt radiator clearance captured; still needs both connector hoses visible in final dry-fit position.",
+        "evidence_ref": "20260503_155747_gp_s91OxyAA|20260503_155825_gp_Gvgy4PXA|20260503_155928_gp_ZQtxQutA|20260503_160207_gp_43b3TblQ|20260503_160327_gp_sFtQuWNQ",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260503_155747_gp_s91OxyAA.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:57:47",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_155747_gp_s91OxyAA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_155825_gp_Gvgy4PXA.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:58:25",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_155825_gp_Gvgy4PXA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_155928_gp_ZQtxQutA.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:59:28",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_155928_gp_ZQtxQutA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160207_gp_43b3TblQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:02:07",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160207_gp_43b3TblQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160327_gp_sFtQuWNQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:03:27",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160327_gp_sFtQuWNQ",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-005-C",
+        "title": "Formed metal coolant pipe - installed clearance",
+        "workstream": "replacement_pipes",
+        "task_type": "photo",
+        "priority": "P1",
+        "timing": "now",
+        "status": "clearance_context_imported_pipe_dryfit_pending",
+        "location": "Front engine cooling route dry-fit position",
+        "action": "Installed or held-in-place photo showing fan/belt/radiator/body clearance",
+        "data_needed": "clearance_to_fan, clearance_to_belts, clearance_to_radiator, clearance_to_body",
+        "blocks": "RPO-COOL-005",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-005-C",
+        "notes": "Front fan belt radiator clearance captured; still needs formed pipe held in final dry-fit position.",
+        "evidence_ref": "20260503_155928_gp_ZQtxQutA|20260503_160010_gp_9F5ZH8kQ|20260503_160327_gp_sFtQuWNQ",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260503_155928_gp_ZQtxQutA.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:59:28",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_155928_gp_ZQtxQutA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160010_gp_9F5ZH8kQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:00:10",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160010_gp_9F5ZH8kQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160327_gp_sFtQuWNQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:03:27",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160327_gp_sFtQuWNQ",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
         "task_id": "rubber_hose_audit:RHA-010",
         "title": "Crankcase breather or oil-mist hose",
         "workstream": "replacement_pipes",
@@ -45173,6 +45814,309 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
+        "task_id": "replacement_pipe_photo_intake:RPI-FUEL-001-A",
+        "title": "Diesel feed hose - filter and injection pump feed",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "photo_imported_measurement_pending",
+        "location": "Engine bay fuel filter to injection pump feed route",
+        "action": "Close photos of filter barb and pump feed barb with hose route",
+        "data_needed": "filter_barb_od, pump_feed_barb_od, feed_route_length, hose_od_for_clamps",
+        "blocks": "RPO-FUEL-001A",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-FUEL-001-A",
+        "notes": "Fuel filter to injection pump feed area captured; record barb ODs and feed route length.",
+        "evidence_ref": "20260503_152937_gp_HdsO0xMA|20260503_153042_gp_ZL9JEazw|20260503_160427_gp_HSrKmfzw",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260503_152937_gp_HdsO0xMA.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:29:37",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_152937_gp_HdsO0xMA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_153042_gp_ZL9JEazw.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:30:42",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_153042_gp_ZL9JEazw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160427_gp_HSrKmfzw.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:04:27",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160427_gp_HSrKmfzw",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-FUEL-001-B",
+        "title": "Diesel return and bleed hose",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "photo_imported_measurement_pending",
+        "location": "Injection pump return/bleed and filter return area",
+        "action": "Close photos of return barbs and route back to return line",
+        "data_needed": "pump_return_barb_od, return_route_length, hose_od_for_clamps",
+        "blocks": "RPO-FUEL-001B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-FUEL-001-B",
+        "notes": "Injection pump return/bleed area captured; record return barb OD and route length.",
+        "evidence_ref": "20260503_152937_gp_HdsO0xMA|20260503_160207_gp_43b3TblQ|20260503_160427_gp_HSrKmfzw",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260503_152937_gp_HdsO0xMA.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:29:37",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_152937_gp_HdsO0xMA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160207_gp_43b3TblQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:02:07",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160207_gp_43b3TblQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160427_gp_HSrKmfzw.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:04:27",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160427_gp_HSrKmfzw",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-004-B",
+        "title": "Front heater hoses - engine nipple ends",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "partial_photo_imported_measurement_pending",
+        "location": "Engine heater nipple area",
+        "action": "Close photo of engine-side heater nipples and hose/clamp relationship",
+        "data_needed": "engine_heater_nipple_od, hose_od_for_clamps",
+        "blocks": "RPO-COOL-004A|RPO-COOL-004B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-004-B",
+        "notes": "Engine-side heater/cooling hose area context imported; still needs engine nipple OD close-ups.",
+        "evidence_ref": "20260503_155314_gp_et0BrVkQ|20260503_155825_gp_Gvgy4PXA|20260503_160207_gp_43b3TblQ",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260503_155314_gp_et0BrVkQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:53:14",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_155314_gp_et0BrVkQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_155825_gp_Gvgy4PXA.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:58:25",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_155825_gp_Gvgy4PXA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160207_gp_43b3TblQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:02:07",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160207_gp_43b3TblQ",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-004-A",
+        "title": "Front heater hoses - firewall/heater core ends",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "partial_photo_imported_measurement_pending",
+        "location": "Firewall heater core nipple area",
+        "action": "Close photo of heater core inlet/outlet nipples and clamps",
+        "data_needed": "heater_core_nipple_od, hose_od_for_clamps, inlet_outlet_identification",
+        "blocks": "RPO-COOL-004A|RPO-COOL-004B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-004-A",
+        "notes": "Firewall heater hose area context imported; still needs close-up of inlet/outlet nipples and clamps.",
+        "evidence_ref": "20260503_153200_gp_YXNuQgGQ|20260503_155132_gp_r4UGNnsQ",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260503_153200_gp_YXNuQgGQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:32:00",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_153200_gp_YXNuQgGQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_155132_gp_r4UGNnsQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:51:32",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_155132_gp_r4UGNnsQ",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-004-C",
+        "title": "Front heater hoses - route and lengths",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "partial_route_photo_imported_measurement_pending",
+        "location": "Engine bay firewall heater hose routing",
+        "action": "Wide route photo with tape along inlet and outlet paths",
+        "data_needed": "inlet_route_length, outlet_route_length, exhaust_clearance",
+        "blocks": "RPO-COOL-004A|RPO-COOL-004B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-004-C",
+        "notes": "Tape/context photos imported; still needs final inlet/outlet route lengths and heat-clearance confirmation.",
+        "evidence_ref": "20260503_155747_gp_s91OxyAA|20260503_155825_gp_Gvgy4PXA|20260503_160207_gp_43b3TblQ",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260503_155747_gp_s91OxyAA.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:57:47",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_155747_gp_s91OxyAA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_155825_gp_Gvgy4PXA.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:58:25",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_155825_gp_Gvgy4PXA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160207_gp_43b3TblQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:02:07",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160207_gp_43b3TblQ",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
         "task_id": "rubber_hose_audit:RHA-004",
         "title": "Front heater inlet and outlet hoses",
         "workstream": "replacement_pipes",
@@ -45199,6 +46143,69 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
+        "task_id": "replacement_pipe_photo_intake:RPI-FUEL-001-C",
+        "title": "Injector leak-off hose and sample markings",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "partial_photo_imported_marking_pending",
+        "location": "Injector tops and loose red/black hose samples",
+        "action": "Close photos of injector nipples plus readable hose markings",
+        "data_needed": "injector_leakoff_nipple_od, sample_hose_id, sample_hose_od, rating_markings",
+        "blocks": "RPO-FUEL-001C",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-FUEL-001-C",
+        "notes": "Injector top/leak-off area context imported; still needs readable sample hose markings and nipple OD.",
+        "evidence_ref": "20260503_155314_gp_et0BrVkQ|20260503_160207_gp_43b3TblQ|20260503_160427_gp_HSrKmfzw",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260503_155314_gp_et0BrVkQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:53:14",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_155314_gp_et0BrVkQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160207_gp_43b3TblQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:02:07",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160207_gp_43b3TblQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160427_gp_HSrKmfzw.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:04:27",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160427_gp_HSrKmfzw",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
         "task_id": "replacement_pipe_photo_intake:RPI-SAMPLE-BLACK-001",
         "title": "Loose black hose or pipe sample - unassigned circuit",
         "workstream": "replacement_pipes",
@@ -45214,8 +46221,8 @@ window.J40_DASHBOARD_DATA = {
         "source_label": "Replacement Pipe Photo Intake",
         "source_path": "data/manual/replacement_pipe_photo_intake.csv",
         "source_row_id": "RPI-SAMPLE-BLACK-001",
-        "notes": "Not yet matched to installed vehicle placement",
-        "evidence_ref": "20260502_160754_gp_Zd9UeENg|20260502_160855_gp_w3sghS8Q|20260502_160929_gp_exms2QzQ|20260502_160950_gp_5KW8RnDQ",
+        "notes": "May 2 and May 3 black sample/line photos imported; circuit and material still need confirmation.",
+        "evidence_ref": "20260502_160754_gp_Zd9UeENg|20260502_160855_gp_w3sghS8Q|20260502_160929_gp_exms2QzQ|20260502_160950_gp_5KW8RnDQ|20260503_155832_gp_SHrzreNA|20260503_160215_gp_ml0C9cxw",
         "evidence_images": [
           {
             "path": "../../photos/20260502_160754_gp_Zd9UeENg.jpg",
@@ -45263,6 +46270,30 @@ window.J40_DASHBOARD_DATA = {
             "specific_component": "replacement_pipe_hose_sample_sorting",
             "stage": "mechanical_baseline",
             "media_id": "20260502_160950_gp_5KW8RnDQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_155832_gp_SHrzreNA.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:58:32",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_155832_gp_SHrzreNA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160215_gp_ml0C9cxw.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:02:15",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160215_gp_ml0C9cxw",
             "matched_tokens": []
           }
         ],
@@ -45325,6 +46356,273 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
+        "task_id": "replacement_pipe_photo_intake:RPI-FUEL-002-C",
+        "title": "Low-pressure fuel hard lines - clips and protection",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "photo_imported_measurement_pending",
+        "location": "Chassis rail clip points and pass-through areas",
+        "action": "Close photos under clips and through brackets/grommets",
+        "data_needed": "clip_spacing, clip_id, line_od, pass_through_protection",
+        "blocks": "RPO-FUEL-002A|RPO-FUEL-002B|RPO-CLIP-001",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-FUEL-002-C",
+        "notes": "Forward rail clip/pass-through context captured; still record clip spacing line OD and protection.",
+        "evidence_ref": "20260503_152926_gp_4eOEiLQQ|20260503_153130_gp_gkKoFapg",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260503_152926_gp_4eOEiLQQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:29:26",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_152926_gp_4eOEiLQQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_153130_gp_gkKoFapg.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:31:30",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_153130_gp_gkKoFapg",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-FUEL-002-A",
+        "title": "Low-pressure fuel hard lines - forward chassis run",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "photo_imported_measurement_pending",
+        "location": "Chassis rail forward fuel feed/return route",
+        "action": "Wide and close photos of feed/return lines along forward rail",
+        "data_needed": "tube_od_feed, tube_od_return, section_length, bend_pattern",
+        "blocks": "RPO-FUEL-002A|RPO-FUEL-002B",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-FUEL-002-A",
+        "notes": "Forward chassis hard-line route captured; still record feed/return OD section length and bend pattern.",
+        "evidence_ref": "20260503_152926_gp_4eOEiLQQ|20260503_153130_gp_gkKoFapg",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260503_152926_gp_4eOEiLQQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:29:26",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_152926_gp_4eOEiLQQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_153130_gp_gkKoFapg.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:31:30",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_153130_gp_gkKoFapg",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-002-B",
+        "title": "Lower radiator hose - engine inlet end",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "partial_photo_imported_measurement_pending",
+        "location": "Front lower engine bay at water pump or engine inlet",
+        "action": "Close photo of engine inlet neck and hose/clamp relationship",
+        "data_needed": "engine_inlet_od, hose_od_for_clamp, clamp_band_width",
+        "blocks": "RPO-COOL-002",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-002-B",
+        "notes": "Engine inlet/front cooling context imported; still needs square inlet close-up with OD/clamp measurement.",
+        "evidence_ref": "20260503_153249_gp_Lg6JX6Gg|20260503_160327_gp_sFtQuWNQ",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260503_153249_gp_Lg6JX6Gg.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:32:49",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_153249_gp_Lg6JX6Gg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160327_gp_sFtQuWNQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:03:27",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160327_gp_sFtQuWNQ",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-002-C",
+        "title": "Lower radiator hose - full route",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "clearance_context_imported_hose_route_pending",
+        "location": "Front lower route between radiator and engine inlet",
+        "action": "Wide photo showing full lower bend and clearance to belt/fan/crossmember",
+        "data_needed": "old_hose_free_length, lower_bend_clearance",
+        "blocks": "RPO-COOL-002",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-002-C",
+        "notes": "Fan belt radiator support context imported; complete installed lower-hose route still needed.",
+        "evidence_ref": "20260503_155928_gp_ZQtxQutA|20260503_160010_gp_9F5ZH8kQ|20260503_160327_gp_sFtQuWNQ",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260503_155928_gp_ZQtxQutA.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:59:28",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_155928_gp_ZQtxQutA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160010_gp_9F5ZH8kQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:00:10",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160010_gp_9F5ZH8kQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160327_gp_sFtQuWNQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:03:27",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160327_gp_sFtQuWNQ",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-002-A",
+        "title": "Lower radiator hose - radiator outlet end",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "partial_photo_imported_measurement_pending",
+        "location": "Front lower engine bay at radiator lower outlet",
+        "action": "Close photo of lower radiator outlet neck and clamp land",
+        "data_needed": "radiator_lower_outlet_od, hose_od_for_clamp, clamp_band_width",
+        "blocks": "RPO-COOL-002",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-002-A",
+        "notes": "Radiator lower/side outlet context imported; still needs lower outlet OD and clamp-land close-up.",
+        "evidence_ref": "20260503_155956_gp_P4xfMJzw|20260503_160010_gp_9F5ZH8kQ",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260503_155956_gp_P4xfMJzw.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:59:56",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_155956_gp_P4xfMJzw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160010_gp_9F5ZH8kQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:00:10",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160010_gp_9F5ZH8kQ",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
         "task_id": "replacement_pipe_release_action:RPA-004",
         "title": "RPA-004",
         "workstream": "replacement_pipes",
@@ -45373,6 +46671,285 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/rubber_hose_component_audit.csv",
             "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-003-B",
+        "title": "Radiator overflow hose - bottle route",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "photo_imported_measurement_pending",
+        "location": "Overflow bottle and hose route",
+        "action": "Photo from radiator nipple to reserve bottle plus close bottle nipple",
+        "data_needed": "bottle_nipple_od, finished_route_length, hose_od_for_clip",
+        "blocks": "RPO-COOL-003",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-003-B",
+        "notes": "Overflow bottle and radiator-to-bottle context imported; still record bottle nipple OD and finished route length.",
+        "evidence_ref": "20260503_153639_gp_ZueGlpJw|20260503_153647_gp_L54euoMQ|20260503_155956_gp_P4xfMJzw",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260503_153639_gp_ZueGlpJw.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:36:39",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_153639_gp_ZueGlpJw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_153647_gp_L54euoMQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:36:47",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_153647_gp_L54euoMQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_155956_gp_P4xfMJzw.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:59:56",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_155956_gp_P4xfMJzw",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-003-A",
+        "title": "Radiator overflow hose - radiator nipple",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "photo_imported_measurement_pending",
+        "location": "Radiator neck overflow nipple",
+        "action": "Close photo of overflow nipple with ruler or caliper",
+        "data_needed": "nipple_od, clamp_or_clip_size",
+        "blocks": "RPO-COOL-003",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-003-A",
+        "notes": "Radiator overflow nipple captured; record nipple OD and clip size in mm.",
+        "evidence_ref": "20260503_155956_gp_P4xfMJzw",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260503_155956_gp_P4xfMJzw.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:59:56",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_155956_gp_P4xfMJzw",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-001-C",
+        "title": "Upper radiator hose - full route",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "clearance_context_imported_hose_route_pending",
+        "location": "Front top route between thermostat housing and radiator",
+        "action": "Wide photo showing complete molded route and fan/belt/radiator support clearance",
+        "data_needed": "old_hose_free_length, route_clearance_to_fan_belt_support",
+        "blocks": "RPO-COOL-001",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-001-C",
+        "notes": "Fan belt radiator support context imported; complete installed upper-hose route still needed.",
+        "evidence_ref": "20260503_155928_gp_ZQtxQutA|20260503_160010_gp_9F5ZH8kQ|20260503_160327_gp_sFtQuWNQ",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260503_155928_gp_ZQtxQutA.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:59:28",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_155928_gp_ZQtxQutA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160010_gp_9F5ZH8kQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:00:10",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160010_gp_9F5ZH8kQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160327_gp_sFtQuWNQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:03:27",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160327_gp_sFtQuWNQ",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-001-B",
+        "title": "Upper radiator hose - radiator upper neck end",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "partial_photo_imported_measurement_pending",
+        "location": "Front top engine bay at radiator upper inlet",
+        "action": "Close photo square to radiator neck with clamp land visible",
+        "data_needed": "radiator_upper_neck_od, hose_od_for_clamp, clamp_band_width",
+        "blocks": "RPO-COOL-001",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-001-B",
+        "notes": "Radiator top/neck context imported; still needs square neck close-up with OD/clamp measurement.",
+        "evidence_ref": "20260503_155956_gp_P4xfMJzw|20260503_160010_gp_9F5ZH8kQ",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260503_155956_gp_P4xfMJzw.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:59:56",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_155956_gp_P4xfMJzw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160010_gp_9F5ZH8kQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:00:10",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160010_gp_9F5ZH8kQ",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
+          }
+        ]
+      },
+      {
+        "task_id": "replacement_pipe_photo_intake:RPI-COOL-001-A",
+        "title": "Upper radiator hose - thermostat housing end",
+        "workstream": "replacement_pipes",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "partial_photo_imported_measurement_pending",
+        "location": "Front top engine bay at thermostat housing",
+        "action": "Close photo square to neck with old hose/clamp visible",
+        "data_needed": "thermostat_neck_od, hose_od_for_clamp, clamp_band_width",
+        "blocks": "RPO-COOL-001",
+        "record_result_in": "",
+        "source_label": "Replacement Pipe Photo Intake",
+        "source_path": "data/manual/replacement_pipe_photo_intake.csv",
+        "source_row_id": "RPI-COOL-001-A",
+        "notes": "Engine-side coolant neck context imported; still needs square close-up with OD/clamp measurement.",
+        "evidence_ref": "20260503_153249_gp_Lg6JX6Gg|20260503_155314_gp_et0BrVkQ|20260503_160327_gp_sFtQuWNQ",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260503_153249_gp_Lg6JX6Gg.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:32:49",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_153249_gp_Lg6JX6Gg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_155314_gp_et0BrVkQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:53:14",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_155314_gp_et0BrVkQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260503_160327_gp_sFtQuWNQ.jpg",
+            "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "16:03:27",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "reference_media",
+            "stage": "reference_material",
+            "media_id": "20260503_160327_gp_sFtQuWNQ",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Replacement Pipe Photo Intake"
           }
         ]
       },
@@ -54335,7 +55912,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_brake_fluid_bleed_consumables",
           "supply_type": "substance",
           "inventory_group": "substances",
-          "item": "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves",
+          "item": "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves",
           "vendor": "Autohub/Daraz/local brake supplier",
           "amount": "",
           "currency": "PKR",
@@ -54345,21 +55922,22 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-SYS-002|BR-CAPTURE-001|docs/brake-suspension-order-links-20260503.md",
-          "notes": "PURCHASE READY for non-fitment consumables before opening hydraulics: line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. Brake fluid itself remains cap/manual/workshop-confirmed DOT spec before payment; do not mix unknown old fluid. Candidate order/search links are logged in docs/brake-suspension-order-links-20260503.md.",
+          "evidence_ref": "BR-SYS-002|BR-CAPTURE-001|docs/brake-suspension-order-links-20260503.md|docs/brake-parts-acquisition-spec-20260503.md|docs/brake-parts-pakistan-acquisition-20260503.md",
+          "notes": "PURCHASE READY for non-fitment consumables before opening hydraulics: sealed fresh DOT 3 brake fluid (SAE J1703 / FMVSS No. 116 DOT 3), working buy quantity 2 L sealed total unless the workshop specifies more, line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. User direction 2026-05-03 closes the brake-fluid DOT hold as DOT 3. Do not use DOT 5 and do not mix unknown old fluid. Candidate Pakistan purchase links and local order text are logged in docs/brake-parts-pakistan-acquisition-20260503.md.",
           "links": [],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/suspension_kit.jpg",
-            "caption": "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves \u00b7 suspension kit reference image",
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+            "caption": "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves \u00b7 brake line/hose reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "semantic_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "suspension_kit",
+            "media_id": "brake_hose_line",
             "matched_tokens": [
-              "suspension"
+              "brake",
+              "line"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -63200,7 +64778,7 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_brake_fluid_bleed_consumables",
         "supply_type": "substance",
         "inventory_group": "substances",
-        "item": "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves",
+        "item": "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves",
         "vendor": "Autohub/Daraz/local brake supplier",
         "amount": "",
         "currency": "PKR",
@@ -63210,21 +64788,22 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-SYS-002|BR-CAPTURE-001|docs/brake-suspension-order-links-20260503.md",
-        "notes": "PURCHASE READY for non-fitment consumables before opening hydraulics: line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. Brake fluid itself remains cap/manual/workshop-confirmed DOT spec before payment; do not mix unknown old fluid. Candidate order/search links are logged in docs/brake-suspension-order-links-20260503.md.",
+        "evidence_ref": "BR-SYS-002|BR-CAPTURE-001|docs/brake-suspension-order-links-20260503.md|docs/brake-parts-acquisition-spec-20260503.md|docs/brake-parts-pakistan-acquisition-20260503.md",
+        "notes": "PURCHASE READY for non-fitment consumables before opening hydraulics: sealed fresh DOT 3 brake fluid (SAE J1703 / FMVSS No. 116 DOT 3), working buy quantity 2 L sealed total unless the workshop specifies more, line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. User direction 2026-05-03 closes the brake-fluid DOT hold as DOT 3. Do not use DOT 5 and do not mix unknown old fluid. Candidate Pakistan purchase links and local order text are logged in docs/brake-parts-pakistan-acquisition-20260503.md.",
         "links": [],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/suspension_kit.jpg",
-          "caption": "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves \u00b7 suspension kit reference image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+          "caption": "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves \u00b7 brake line/hose reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "suspension_kit",
+          "media_id": "brake_hose_line",
           "matched_tokens": [
-            "suspension"
+            "brake",
+            "line"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -73881,6 +75460,486 @@ window.J40_DASHBOARD_DATA = {
       "confidence": "high",
       "tags": "pipe|hose|sample|replacement_pipe|sample_sorting|measurement|length|rating_check",
       "notes": "May 2 loose red/black pipe-hose sample length set; attach to replacement-pipes intake but keep release held until vehicle placement, ID/OD, and rating markings are confirmed."
+    },
+    "20260503_152902_gp_xBbsFRzQ": {
+      "media_id": "20260503_152902_gp_xBbsFRzQ",
+      "file_name": "20260503_152902_gp_xBbsFRzQ.jpg",
+      "path": "../../photos/20260503_152902_gp_xBbsFRzQ.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:29:02",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_152913_gp_AvVGAlHw": {
+      "media_id": "20260503_152913_gp_AvVGAlHw",
+      "file_name": "20260503_152913_gp_AvVGAlHw.jpg",
+      "path": "../../photos/20260503_152913_gp_AvVGAlHw.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:29:13",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_152926_gp_4eOEiLQQ": {
+      "media_id": "20260503_152926_gp_4eOEiLQQ",
+      "file_name": "20260503_152926_gp_4eOEiLQQ.jpg",
+      "path": "../../photos/20260503_152926_gp_4eOEiLQQ.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:29:26",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_152937_gp_HdsO0xMA": {
+      "media_id": "20260503_152937_gp_HdsO0xMA",
+      "file_name": "20260503_152937_gp_HdsO0xMA.jpg",
+      "path": "../../photos/20260503_152937_gp_HdsO0xMA.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:29:37",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_153017_gp_dM8BCa4w": {
+      "media_id": "20260503_153017_gp_dM8BCa4w",
+      "file_name": "20260503_153017_gp_dM8BCa4w.jpg",
+      "path": "../../photos/20260503_153017_gp_dM8BCa4w.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:30:17",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_153031_gp_rFfqDUBw": {
+      "media_id": "20260503_153031_gp_rFfqDUBw",
+      "file_name": "20260503_153031_gp_rFfqDUBw.jpg",
+      "path": "../../photos/20260503_153031_gp_rFfqDUBw.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:30:31",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_153042_gp_ZL9JEazw": {
+      "media_id": "20260503_153042_gp_ZL9JEazw",
+      "file_name": "20260503_153042_gp_ZL9JEazw.jpg",
+      "path": "../../photos/20260503_153042_gp_ZL9JEazw.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:30:42",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_153054_gp_uj94xuug": {
+      "media_id": "20260503_153054_gp_uj94xuug",
+      "file_name": "20260503_153054_gp_uj94xuug.jpg",
+      "path": "../../photos/20260503_153054_gp_uj94xuug.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:30:54",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_153130_gp_gkKoFapg": {
+      "media_id": "20260503_153130_gp_gkKoFapg",
+      "file_name": "20260503_153130_gp_gkKoFapg.jpg",
+      "path": "../../photos/20260503_153130_gp_gkKoFapg.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:31:30",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_153200_gp_YXNuQgGQ": {
+      "media_id": "20260503_153200_gp_YXNuQgGQ",
+      "file_name": "20260503_153200_gp_YXNuQgGQ.jpg",
+      "path": "../../photos/20260503_153200_gp_YXNuQgGQ.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:32:00",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_153249_gp_Lg6JX6Gg": {
+      "media_id": "20260503_153249_gp_Lg6JX6Gg",
+      "file_name": "20260503_153249_gp_Lg6JX6Gg.jpg",
+      "path": "../../photos/20260503_153249_gp_Lg6JX6Gg.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:32:49",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_153350_gp_MfvBNVYQ": {
+      "media_id": "20260503_153350_gp_MfvBNVYQ",
+      "file_name": "20260503_153350_gp_MfvBNVYQ.jpg",
+      "path": "../../photos/20260503_153350_gp_MfvBNVYQ.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:33:50",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_153639_gp_ZueGlpJw": {
+      "media_id": "20260503_153639_gp_ZueGlpJw",
+      "file_name": "20260503_153639_gp_ZueGlpJw.jpg",
+      "path": "../../photos/20260503_153639_gp_ZueGlpJw.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:36:39",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_153647_gp_L54euoMQ": {
+      "media_id": "20260503_153647_gp_L54euoMQ",
+      "file_name": "20260503_153647_gp_L54euoMQ.jpg",
+      "path": "../../photos/20260503_153647_gp_L54euoMQ.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:36:47",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_153832_gp_0FJJiLHg": {
+      "media_id": "20260503_153832_gp_0FJJiLHg",
+      "file_name": "20260503_153832_gp_0FJJiLHg.jpg",
+      "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:38:32",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_154438_gp_L7gV0PAA": {
+      "media_id": "20260503_154438_gp_L7gV0PAA",
+      "file_name": "20260503_154438_gp_L7gV0PAA.jpg",
+      "path": "../../photos/20260503_154438_gp_L7gV0PAA.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:44:38",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_155132_gp_r4UGNnsQ": {
+      "media_id": "20260503_155132_gp_r4UGNnsQ",
+      "file_name": "20260503_155132_gp_r4UGNnsQ.jpg",
+      "path": "../../photos/20260503_155132_gp_r4UGNnsQ.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:51:32",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_155314_gp_et0BrVkQ": {
+      "media_id": "20260503_155314_gp_et0BrVkQ",
+      "file_name": "20260503_155314_gp_et0BrVkQ.jpg",
+      "path": "../../photos/20260503_155314_gp_et0BrVkQ.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:53:14",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_155747_gp_s91OxyAA": {
+      "media_id": "20260503_155747_gp_s91OxyAA",
+      "file_name": "20260503_155747_gp_s91OxyAA.jpg",
+      "path": "../../photos/20260503_155747_gp_s91OxyAA.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:57:47",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_155825_gp_Gvgy4PXA": {
+      "media_id": "20260503_155825_gp_Gvgy4PXA",
+      "file_name": "20260503_155825_gp_Gvgy4PXA.jpg",
+      "path": "../../photos/20260503_155825_gp_Gvgy4PXA.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:58:25",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_155832_gp_SHrzreNA": {
+      "media_id": "20260503_155832_gp_SHrzreNA",
+      "file_name": "20260503_155832_gp_SHrzreNA.jpg",
+      "path": "../../photos/20260503_155832_gp_SHrzreNA.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:58:32",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_155928_gp_ZQtxQutA": {
+      "media_id": "20260503_155928_gp_ZQtxQutA",
+      "file_name": "20260503_155928_gp_ZQtxQutA.jpg",
+      "path": "../../photos/20260503_155928_gp_ZQtxQutA.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:59:28",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_155956_gp_P4xfMJzw": {
+      "media_id": "20260503_155956_gp_P4xfMJzw",
+      "file_name": "20260503_155956_gp_P4xfMJzw.jpg",
+      "path": "../../photos/20260503_155956_gp_P4xfMJzw.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "15:59:56",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_160010_gp_9F5ZH8kQ": {
+      "media_id": "20260503_160010_gp_9F5ZH8kQ",
+      "file_name": "20260503_160010_gp_9F5ZH8kQ.jpg",
+      "path": "../../photos/20260503_160010_gp_9F5ZH8kQ.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "16:00:10",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_160050_gp_3aBjHmzw": {
+      "media_id": "20260503_160050_gp_3aBjHmzw",
+      "file_name": "20260503_160050_gp_3aBjHmzw.jpg",
+      "path": "../../photos/20260503_160050_gp_3aBjHmzw.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "16:00:50",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_160057_gp_VL1ESgKQ": {
+      "media_id": "20260503_160057_gp_VL1ESgKQ",
+      "file_name": "20260503_160057_gp_VL1ESgKQ.jpg",
+      "path": "../../photos/20260503_160057_gp_VL1ESgKQ.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "16:00:57",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_160107_gp_HBcJ3Ipg": {
+      "media_id": "20260503_160107_gp_HBcJ3Ipg",
+      "file_name": "20260503_160107_gp_HBcJ3Ipg.jpg",
+      "path": "../../photos/20260503_160107_gp_HBcJ3Ipg.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "16:01:07",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_160112_gp_eWV3krtw": {
+      "media_id": "20260503_160112_gp_eWV3krtw",
+      "file_name": "20260503_160112_gp_eWV3krtw.jpg",
+      "path": "../../photos/20260503_160112_gp_eWV3krtw.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "16:01:12",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_160207_gp_43b3TblQ": {
+      "media_id": "20260503_160207_gp_43b3TblQ",
+      "file_name": "20260503_160207_gp_43b3TblQ.jpg",
+      "path": "../../photos/20260503_160207_gp_43b3TblQ.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "16:02:07",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_160215_gp_ml0C9cxw": {
+      "media_id": "20260503_160215_gp_ml0C9cxw",
+      "file_name": "20260503_160215_gp_ml0C9cxw.jpg",
+      "path": "../../photos/20260503_160215_gp_ml0C9cxw.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "16:02:15",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_160327_gp_sFtQuWNQ": {
+      "media_id": "20260503_160327_gp_sFtQuWNQ",
+      "file_name": "20260503_160327_gp_sFtQuWNQ.jpg",
+      "path": "../../photos/20260503_160327_gp_sFtQuWNQ.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "16:03:27",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260503_160427_gp_HSrKmfzw": {
+      "media_id": "20260503_160427_gp_HSrKmfzw",
+      "file_name": "20260503_160427_gp_HSrKmfzw.jpg",
+      "path": "../../photos/20260503_160427_gp_HSrKmfzw.jpg",
+      "captured_date": "2026-05-03",
+      "captured_time": "16:04:27",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
     },
     "IMG-20260328-WA0017": {
       "media_id": "IMG-20260328-WA0017",

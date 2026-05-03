@@ -2,6 +2,8 @@
 
 Purpose: keep orderable brake/suspension-window items separate from fitment-gated brake parts.
 
+Pakistan-specific purchase links and copy/paste local-market orders are consolidated in `docs/brake-parts-pakistan-acquisition-20260503.md`.
+
 ## Ready To Order Now
 
 These are non-fitment consumables needed before any hydraulic line is opened. They do not depend on the front disc conversion family or rear drum hardware.
@@ -9,11 +11,10 @@ These are non-fitment consumables needed before any hydraulic line is opened. Th
 | Item | Order/search links | Notes |
 | --- | --- | --- |
 | Brake cleaner | [Daraz brake cleaner example](https://www.daraz.pk/products/brake-cleaner-450-ml-i386631013.html), [Daraz brake cleaner search](https://www.daraz.pk/catalog/?q=brake+cleaner), [Autohub STP brake cleaner restock/reference](https://autohub.pk/products/stp-pro-brakes-parts-cleaner-500ml) | Buy enough for drum opening, line cleanup, and leak checks. Autohub STP listing was verified but sold out on 2026-05-03, so use it as a restock/brand reference unless available again. |
+| DOT 3 brake fluid | [Autohub Lion DOT-3 354 ml](https://autohub.pk/products/lion-brake-fluid-dot-3-12oz), [Daraz Oscar DOT 3 250 ml](https://www.daraz.pk/products/oscar-brake-fluid-type-dot-3-250ml-i227753596.html), [Daraz DOT 3 brake fluid search](https://www.daraz.pk/catalog/?q=DOT+3+brake+fluid) | Buy 2 L sealed fresh DOT 3 meeting SAE J1703 / FMVSS No. 116 DOT 3 for full flush and bleed unless the workshop specifies more. Do not use DOT 5 and do not mix unknown old fluid. |
 | Clear bleed hose / bottle / bleeder kit | [Daraz brake bleeder kit tag](https://www.daraz.pk/tag/brake-bleeder-kit/), [AutoZone one-man bleeder reference](https://www.autozone.com/test-scan-and-specialty-tools/brake-bleeder/p/duralast-one-man-brake-bleeder-kit/1267199_0_0), [Daraz brake bleed hose search](https://www.daraz.pk/catalog/?q=brake+bleed+hose) | A simple clear hose and catch bottle is acceptable; a vacuum bleeder is useful if quality is decent. |
 | Line caps/plugs | [Thexton master-cylinder plug kit reference](https://www.autobodytoolmart.com/product/thexton-universal-master-cylinder-plug-kit-us-metric/auto-body-shop-supplies), [BelMetric brake-fitting/plugs reference](https://belmetric.com/fittings-plugs/), [Daraz brake line plug/cap search](https://www.daraz.pk/catalog/?q=brake+line+plug+cap+kit) | Prefer purpose-made hydraulic caps/plugs from a brake shop. Generic rubber caps are only for short-term dirt protection, not pressure sealing. |
 | Rags, nitrile gloves, catch tray | [Daraz nitrile gloves search](https://www.daraz.pk/catalog/?q=nitrile+gloves), [Daraz drip tray search](https://www.daraz.pk/catalog/?q=oil+drain+pan) | Must be on hand before brake fluid is exposed. |
-
-Brake fluid is not blind-order yet. Confirm the reservoir cap/manual/workshop spec first, then buy sealed fresh fluid only. Search links for the likely options: [DOT 3](https://www.daraz.pk/catalog/?q=DOT+3+brake+fluid), [DOT 4](https://www.daraz.pk/catalog/?q=DOT+4+brake+fluid).
 
 ## Tools If Workshop Does Not Provide Them
 

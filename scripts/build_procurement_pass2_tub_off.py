@@ -180,12 +180,12 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
             "Needed before the Ironman suspension swap so the chassis and axle can be supported safely with rated stands plus cribbing.",
         )
 
-    if entry_id == "part_brake_fluid_bleed_consumables" or prior == "confirm_fluid_spec_then_buy":
+    if entry_id == "part_brake_fluid_bleed_consumables" or prior == "buy_dot3_fluid_and_bleed_consumables":
         return (
-            "buy_bleed_consumables_before_opening_hydraulics",
+            "buy_dot3_fluid_and_bleed_consumables",
             "pre_brake_hydraulic_opening",
             "safety_consumables_buy",
-            "Brake hydraulics must not be opened until fluid spec, line caps/plugs, cleaner, and bleed tools are available.",
+            "Brake fluid spec is closed as DOT 3 / SAE J1703; hydraulics must not be opened until 2 L sealed fresh fluid, line caps/plugs, cleaner, and bleed tools are available.",
         )
 
     if workstream == "brake_system" and prior == "capture_spec_then_buy":
@@ -253,8 +253,8 @@ def supplier_hint(mode: str, decision: str) -> str:
         return "No supplier action now."
     if decision == "buy_compact_cabin_fuse_boxes":
         return "Use local electrical markets; require compact covered ATO/ATC blade-fuse boxes with secure lids."
-    if decision == "buy_bleed_consumables_before_opening_hydraulics":
-        return "Use a local brake supplier, Daraz/Autohub, or the workshop for caps/plugs, cleaner, bleed hose/bottle, and fresh fluid after DOT-spec confirmation."
+    if decision in {"buy_bleed_consumables_before_opening_hydraulics", "buy_dot3_fluid_and_bleed_consumables"}:
+        return "Use a local brake supplier, Daraz/Autohub, or the workshop for 2 L sealed fresh DOT 3 brake fluid, caps/plugs, cleaner, and bleed hose/bottle."
     if decision in {
         "capture_brake_specs_then_order",
         "open_inspect_then_order_standard_brake_parts",
@@ -294,7 +294,7 @@ def basket_id_for_row(decision: str, mode: str, workstream: str) -> str:
         return "basket_suspension_setup"
     if decision in {"capture_brake_specs_then_order", "open_inspect_then_order_standard_brake_parts"}:
         return "basket_merged_brake_suspension_window"
-    if decision == "buy_bleed_consumables_before_opening_hydraulics":
+    if decision in {"buy_bleed_consumables_before_opening_hydraulics", "buy_dot3_fluid_and_bleed_consumables"}:
         return "basket_brake_hydraulic_opening_prep"
     if decision in {"defer_as_non_baseline", "defer_until_baseline_closure", "hold_until_post_weld_primer"}:
         return "basket_deferred"
@@ -347,7 +347,7 @@ def build_baskets(rows: list[dict[str, str]]) -> list[dict[str, str]]:
         "basket_engine_mounts_later_if_failed": ("Engine Mounts Later If Failed", "No engine lift in baseline; inspect in place before any purchase."),
         "basket_suspension_setup": ("Suspension Setup Support", "Buy support/cribbing items before suspension disassembly."),
         "basket_merged_brake_suspension_window": ("Merged Brake/Suspension Window", "Capture fitted hardware and old samples, then order exact brake parts for the Ironman install window."),
-        "basket_brake_hydraulic_opening_prep": ("Brake Hydraulic Opening Prep", "Buy caps/plugs, cleaner, bleed hose/bottle, rags, gloves, and catch tray before opening hydraulic lines; buy brake fluid only after cap/manual DOT-spec confirmation."),
+        "basket_brake_hydraulic_opening_prep": ("Brake Hydraulic Opening Prep", "Buy 2 L sealed fresh DOT 3 brake fluid, caps/plugs, cleaner, bleed hose/bottle, rags, gloves, and catch tray before opening hydraulic lines."),
         "basket_specialty_after_audit": ("Specialty/Import After Audit", "Order only if local/on-hand cannot cover."),
         "basket_in_flight_tracking": ("In-Flight Orders", "No rebuy; only track delivery/quality."),
         "basket_deferred": ("Deferred Scope", "Not baseline now."),
@@ -378,8 +378,11 @@ def write_report(pass2_rows: list[dict[str, str]], basket_rows: list[dict[str, s
     immediate_now = [
         row
         for row in pass2_rows
-        if row["timing_window"] in {"tub_off_immediate", "in_flight_now"}
-        and row["pass2_decision"] in {"buy_minimum_qty_now", "track_in_flight_order"}
+        if (
+            row["timing_window"] in {"tub_off_immediate", "in_flight_now"}
+            and row["pass2_decision"] in {"buy_minimum_qty_now", "track_in_flight_order"}
+        )
+        or row["pass2_decision"] == "buy_dot3_fluid_and_bleed_consumables"
     ]
 
     lines: list[str] = []
@@ -420,6 +423,7 @@ def write_report(pass2_rows: list[dict[str, str]], basket_rows: list[dict[str, s
     lines.append("- Treat the full body chemistry stack as a post-rust-map bundle, not separate early purchases.")
     lines.append("- Move most electrical purchases to stock-audit/top-up mode.")
     lines.append("- Move mechanical baseline list into one local Toyota/common supplier bundle after inspection.")
+    lines.append("- Keep DOT 3 brake-fluid opening prep purchase-ready before hydraulic lines are opened.")
     lines.append("- Move brake rows into the merged suspension/brake window: capture measurements and samples first, then order exact parts.")
     lines.append("- Keep duplicate/optional/upgrade items deferred to avoid scope creep and unnecessary spend.")
 

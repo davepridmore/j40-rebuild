@@ -1,6 +1,6 @@
 # Reassembly, Dependency, and Procurement Plan
 
-- Generated: 2026-05-03 05:29:24
+- Generated: 2026-05-03 23:02:54
 - Work packages: `data/manual/reassembly_work_packages.csv`
 - Dependency edges: `data/manual/reassembly_dependency_edges.csv`
 - Component disposition: `data/manual/component_disposition_plan.csv`
@@ -23,8 +23,8 @@
 
 ## Procurement Decisions
 
+- `buy_dot3_fluid_and_bleed_consumables`: 1
 - `capture_spec_then_buy`: 8
-- `confirm_fluid_spec_then_buy`: 1
 - `confirm_price_then_buy`: 7
 - `defer_duplicate_overlap`: 4
 - `defer_optional`: 1

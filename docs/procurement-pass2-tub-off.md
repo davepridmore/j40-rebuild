@@ -1,6 +1,6 @@
 # Procurement Pass 2 (Tub-Off, Pakistan Cost Reality)
 
-- Generated: 2026-05-03 05:32:07
+- Generated: 2026-05-03 23:02:54
 - Input matrix: `data/manual/procurement_decision_matrix.csv`
 - Pass-2 matrix: `data/manual/procurement_decision_matrix_pass2.csv`
 - Basket plan: `data/manual/procurement_local_baskets_pass2.csv`
@@ -15,8 +15,8 @@
 
 - `bundle_local_toyota_buy_after_inspection`: 5
 - `buy_before_suspension_work`: 1
-- `buy_bleed_consumables_before_opening_hydraulics`: 1
 - `buy_compact_cabin_fuse_boxes`: 1
+- `buy_dot3_fluid_and_bleed_consumables`: 1
 - `capture_brake_specs_then_order`: 8
 - `defer_as_non_baseline`: 5
 - `defer_until_baseline_closure`: 1
@@ -48,6 +48,7 @@
 - `part_primer` Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set -> track_in_flight_order
 - `part_seam_sealer` Seam sealer -> track_in_flight_order
 - `part_wax_and_grease_remover` 3M Prep Solvent-70 1 gallon / wax and grease remover -> track_in_flight_order
+- `part_brake_fluid_bleed_consumables` Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves -> buy_dot3_fluid_and_bleed_consumables
 - `part_fastener_kit_d_millat` Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points -> track_in_flight_order
 - `part_daraz_jubilee_hose_clip_assortment_30pc` Jubilee hose clip assortment - 10 pc fuel line/diesel/petrol/coolant clamp packs x3 -> track_in_flight_order
 - `part_ironman_foamcell_suspension_kit` Ironman Foamcell suspension kit - main shipment (front dampers separate) -> track_in_flight_order
@@ -59,5 +60,6 @@
 - Treat the full body chemistry stack as a post-rust-map bundle, not separate early purchases.
 - Move most electrical purchases to stock-audit/top-up mode.
 - Move mechanical baseline list into one local Toyota/common supplier bundle after inspection.
+- Keep DOT 3 brake-fluid opening prep purchase-ready before hydraulic lines are opened.
 - Move brake rows into the merged suspension/brake window: capture measurements and samples first, then order exact parts.
 - Keep duplicate/optional/upgrade items deferred to avoid scope creep and unnecessary spend.

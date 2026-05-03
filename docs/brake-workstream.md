@@ -175,7 +175,7 @@ Use this as the workshop handoff. The output should be photos plus measurements 
 
 - `part_copper_grease`: already received
 - `part_mech_brake_flex_hose_set`: purchase-ready and should stay in the baseline safety bucket
-- `part_brake_fluid_bleed_consumables`: purchase-ready for non-fitment hydraulic-opening consumables: line caps/plugs, clear bleed hose/bottle or bleeder kit, brake cleaner, rags, gloves, and catch tray. Brake fluid itself still waits for cap/manual/workshop DOT-spec confirmation.
+- `part_brake_fluid_bleed_consumables`: purchase-ready for non-fitment hydraulic-opening consumables: 2 L sealed fresh DOT 3 brake fluid (SAE J1703 / FMVSS No. 116 DOT 3), line caps/plugs, clear bleed hose/bottle or bleeder kit, brake cleaner, rags, gloves, and catch tray. Do not use DOT 5 or mix unknown old fluid.
 - Existing estimate rows in `data/manual/workbook_tabs/parts.csv`:
   - `Brake master cylinder`: PKR `8,000-30,000`
   - `Wheel cylinders / caliper rebuild parts`: PKR `8,000-40,000`
