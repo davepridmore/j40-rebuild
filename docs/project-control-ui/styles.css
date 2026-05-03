@@ -585,6 +585,65 @@ th {
   padding: 0.45rem 0.55rem;
 }
 
+.replacement-pipe-simple-table {
+  min-width: 980px;
+}
+
+.replacement-pipe-simple-table th:nth-child(1),
+.replacement-pipe-simple-table td:nth-child(1) {
+  width: 230px;
+}
+
+.replacement-pipe-simple-table th:nth-child(2),
+.replacement-pipe-simple-table td:nth-child(2) {
+  width: 360px;
+}
+
+.replacement-pipe-simple-table th:nth-child(4),
+.replacement-pipe-simple-table td:nth-child(4) {
+  width: 150px;
+}
+
+.pipe-buy-lines {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.pipe-buy-line {
+  border-left: 3px solid var(--accent-2);
+  display: grid;
+  gap: 0.08rem;
+  padding-left: 0.45rem;
+}
+
+.pipe-hold-grid {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.pipe-hold-grid h4 {
+  font-size: 0.92rem;
+  margin: 0 0 0.45rem;
+}
+
+.pipe-hold-list {
+  display: grid;
+  gap: 0.45rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pipe-hold-list li {
+  background: #f4efe5;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 0.14rem;
+  padding: 0.55rem 0.6rem;
+}
+
 .capture-task-counts {
   margin-top: 0.85rem;
 }

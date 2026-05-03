@@ -531,6 +531,7 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
     ],
     "brake_system": [
         ("Confirm installed brake architecture", "Verify front/rear hardware family and capture evidence before ordering."),
+        ("Capture brake order-release close-ups", "Photograph every hose end, line fitting, cable end, drum internal, caliper mark, master/proportioning port, and clip position with labels and a ruler before payment."),
         ("Close hydraulic refresh scope", "Freeze hoses, cylinders, and fluid-service items from condition evidence."),
         ("Lock brake-bias safety path", "Record baseline bias behavior and approved correction path if needed."),
         ("Close brake safety gate", "Do not progress to final validation until brake function is verified."),
@@ -1264,6 +1265,24 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "supplies": ["Brake cleaner", "Paint marker", "Labels"],
                 "hold_point": "No brake order is closed until hardware family is positively identified.",
                 "image_tokens": ["brake", "disc", "drum", "caliper", "rear_axle"],
+            },
+            {
+                "title": "Capture Brake Order-Release Close-Ups",
+                "priority": "P0",
+                "remaining": "before removing samples or paying for exact brake parts",
+                "instruction": "Treat the current brake photos as routing evidence only; exact orders need close-up identification shots and retained samples.",
+                "process_steps": [
+                    "Take wide route photos first so each close-up has a known vehicle location.",
+                    "Photograph front caliper casting marks, pad shape, rotor face/thickness area, front hose ends, chassis brackets, bleed screws, and steering-lock hose clearance.",
+                    "Photograph rear parking-brake cable ends at backing plates and equalizer, then lay removed cables beside a tape measure with left/right labels.",
+                    "Photograph rear hard-line routes, T/union, wheel-cylinder ports, flare nuts, clips, and removed hard lines as bend templates before any discard.",
+                    "Open rear drums only after exterior photos, then photograph shoe layout, springs, adjusters, parking-brake lever, wheel cylinders, and drum wear before disassembly.",
+                    "Photograph master cylinder, reservoir, booster/vacuum line, proportioning/bias hardware, and all line ports before buying system parts.",
+                ],
+                "tools": ["Camera with flash", "Labels", "Paint marker", "Ruler/tape", "Digital caliper", "Inspection light"],
+                "supplies": ["Clean background board or cloth", "Zip bags for clips", "Line caps/plugs", "Tags"],
+                "hold_point": "No front pads, flex hoses, rear cables, rear wheel cylinders, shoes, hard-line fittings, or master/proportioning parts are ordered from broad vehicle-year logic alone.",
+                "image_tokens": ["brake", "closeup", "caliper", "line", "cable"],
             },
             {
                 "title": "Close Hydraulic Refresh Scope",
@@ -3564,8 +3583,22 @@ def build_paint_workstream_evidence_sets(
             if media_id in rows_by_id
         ]
 
+    def queue_payloads(evidence_bucket: str) -> list[dict[str, Any]]:
+        payloads: list[dict[str, Any]] = []
+        for row in paint_queue_rows:
+            if norm(row.get("evidence_bucket")) != evidence_bucket:
+                continue
+            media_id = clean(row.get("media_id"))
+            if media_id not in rows_by_id:
+                continue
+            photo_row = rows_by_id[media_id]
+            payloads.append(image_payload(photo_row, row_token_matches(photo_row, reference_tokens)))
+        return payloads
+
     sent_media = dedupe_payload_images(curated_payloads(PAINT_BEFORE_ATTACHED_OR_BATCH_MEDIA_IDS))
-    returned_media = dedupe_payload_images(curated_payloads(PAINT_AFTER_RETURNED_PART_MEDIA_IDS))
+    returned_media = dedupe_payload_images(
+        curated_payloads(PAINT_AFTER_RETURNED_PART_MEDIA_IDS) + queue_payloads("returned_from_painter")
+    )
     progress_video_media = dedupe_payload_images(curated_payloads(PAINT_WORK_VIDEO_MEDIA_IDS))
     primary_media = dedupe_payload_images(sent_media + returned_media + progress_video_media)
 

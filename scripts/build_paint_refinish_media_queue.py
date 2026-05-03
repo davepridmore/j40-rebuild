@@ -16,6 +16,7 @@ PREPARED_SEND_COMPONENTS = {
     "rear_hatch_inner_panel",
 }
 RETURNED_COMPONENTS = {
+    "rear_hatch_window_latch_mechanisms",
     "refinished_hinges_brackets_and_trim",
     "refinished_seat_or_mount_bracket",
     "wiper_arm_or_linkage_hardware",

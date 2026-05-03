@@ -1,6 +1,6 @@
 # Procurement Pass 2 (Tub-Off, Pakistan Cost Reality)
 
-- Generated: 2026-05-03 04:49:26
+- Generated: 2026-05-03 05:32:07
 - Input matrix: `data/manual/procurement_decision_matrix.csv`
 - Pass-2 matrix: `data/manual/procurement_decision_matrix_pass2.csv`
 - Basket plan: `data/manual/procurement_local_baskets_pass2.csv`
@@ -15,12 +15,15 @@
 
 - `bundle_local_toyota_buy_after_inspection`: 5
 - `buy_before_suspension_work`: 1
+- `buy_bleed_consumables_before_opening_hydraulics`: 1
 - `buy_compact_cabin_fuse_boxes`: 1
+- `capture_brake_specs_then_order`: 8
 - `defer_as_non_baseline`: 5
 - `defer_until_baseline_closure`: 1
 - `defer_until_mount_failure_or_engine_lift_scope`: 1
 - `inspect_then_local_decide`: 1
-- `review`: 14
+- `open_inspect_then_order_standard_brake_parts`: 3
+- `review`: 8
 - `stock_audit_then_local_topup`: 2
 - `track_in_flight_order`: 10
 
@@ -28,12 +31,14 @@
 
 - `electrical_closeout`: 1
 - `in_flight_now`: 10
+- `merged_suspension_brake_window`: 11
 - `no_engine_lift_baseline`: 1
 - `post_baseline_only`: 6
 - `post_tub_off_inspection`: 6
+- `pre_brake_hydraulic_opening`: 1
 - `pre_order_audit`: 2
 - `pre_suspension_setup`: 1
-- `review`: 14
+- `review`: 8
 
 ## Immediate Actions (Now)
 
@@ -54,4 +59,5 @@
 - Treat the full body chemistry stack as a post-rust-map bundle, not separate early purchases.
 - Move most electrical purchases to stock-audit/top-up mode.
 - Move mechanical baseline list into one local Toyota/common supplier bundle after inspection.
+- Move brake rows into the merged suspension/brake window: capture measurements and samples first, then order exact parts.
 - Keep duplicate/optional/upgrade items deferred to avoid scope creep and unnecessary spend.

@@ -1,6 +1,6 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-05-02 16:53:47
+- Generated: 2026-05-03 05:42:25
 - Total media files indexed: 585 (574 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
@@ -18,13 +18,13 @@
 | `baseline_walkaround` | 34 |
 | `chassis_fixing` | 36 |
 | `electrical_rework` | 18 |
-| `hardware_refinish` | 23 |
+| `hardware_refinish` | 32 |
 | `mechanical_baseline` | 13 |
 | `mechanical_cleaning` | 14 |
 | `mechanical_inspection` | 5 |
 | `procurement_reconciliation` | 133 |
 | `reference_material` | 25 |
-| `removed_parts_cataloguing` | 24 |
+| `removed_parts_cataloguing` | 15 |
 | `rust_assessment` | 51 |
 | `stripdown_cataloguing` | 110 |
 | `underside_inspection` | 99 |

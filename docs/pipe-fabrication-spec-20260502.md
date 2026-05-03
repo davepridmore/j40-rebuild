@@ -65,10 +65,11 @@ Fabrication requirement:
 Connector hose requirement:
 
 1. Keep both old rubber connector hoses with the pipe sample until measured.
-2. Measure each connector's free/cut length, ID, OD, hose overlap, clamp band width, pipe-end OD/bead, mating spigot OD, bend/offset, and installed kink clearance in `mm`.
-3. Use straight EPDM coolant hose only if the dry-fit route stays round and unstressed.
-4. If straight hose kinks or twists, sample-match a molded EPDM coolant connector.
-5. Fit new smooth-band or constant-tension clamps matched to measured hose OD.
+2. For local quoting, allow `2 x 500 mm` EPDM radiator hose blanks, working `28-30 mm ID`, or `1000 mm` total stock if the shop sells by meter.
+3. Measure each connector's free/cut length, ID, OD, hose overlap, clamp band width, pipe-end OD/bead, mating spigot OD, bend/offset, and installed kink clearance in `mm`.
+4. Use straight EPDM coolant hose only if the dry-fit route stays round and unstressed.
+5. If straight hose kinks or twists, sample-match a molded EPDM coolant connector.
+6. Fit new smooth-band or constant-tension clamps matched to measured hose OD.
 
 ## Material Standard
 
@@ -112,4 +113,4 @@ Finish:
 
 Send the six selected photos, the old pipe, and this instruction:
 
-> Recreate this pipe from the physical sample. Start with a 750 mm minimum tube blank, then measure and trim to the physical sample's final centerline length. Match OD, bends, end beads, hose clamp lands, and clocking. Also measure and replace both rubber connector hoses by ID, cut length, overlap, clamp OD, and mating spigot OD; use molded EPDM connectors if straight hose kinks. Use coolant-compatible tube, smooth internal transitions, and pressure-test before coating. Do not rely on photo dimensions where calipers or vehicle dry-fit can be used.
+> Recreate this pipe from the physical sample. Start with a 750 mm minimum tube blank, then measure and trim to the physical sample's final centerline length. Match OD, bends, end beads, hose clamp lands, and clocking. Also quote two 500 mm EPDM radiator hose blanks for the rubber connector hoses, working 28-30 mm ID until calipers confirm the pipe/spigot OD; cut by ID, cut length, overlap, clamp OD, and mating spigot OD; use molded EPDM connectors if straight hose kinks. Use coolant-compatible tube, smooth internal transitions, and pressure-test before coating. Do not rely on photo dimensions where calipers or vehicle dry-fit can be used.

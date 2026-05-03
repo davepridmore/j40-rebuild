@@ -4,7 +4,8 @@
 
 - Split brake work out from `steering_brakes_suspension` so hardware identification, hydraulic refresh, and conversion decisions stay explicit.
 - Current working read: `front disc / rear drum`.
-- Current default direction: refresh the existing system first and treat rear-disc conversion as optional only if inspection or real use shows a clear need.
+- Current default direction: replace normal front and rear brake service parts as baseline work, keep the existing `front disc / rear drum` architecture, and treat rear-disc conversion as optional only if inspection or real use shows a clear measured need.
+- Merged execution sheet: [suspension-brake-merged-work-plan.md](suspension-brake-merged-work-plan.md).
 
 ## Current Configuration Read
 
@@ -17,9 +18,12 @@
 
 - Vehicle basis for brake ordering is the active project vehicle: `1978 Toyota Land Cruiser J40`.
 - Treat the current brake architecture as `front disc / rear drum` until direct inspection proves otherwise.
+- Assume standard brake service parts will be replaced during the baseline refresh: front pads/hardware, front flex hoses, rear shoes/hardware, rear wheel cylinders, rear parking-brake cables, rear axle hard lines, rear center flex hose, clips/retainers, brake fluid, and bleed consumables.
 - Do not order front pads, caliper kits, rotors, or front flex hoses from year/catalog alone because the front disc setup appears to be a previous conversion.
+- Do not order rear shoes, wheel cylinders, rear cables, or rear center hose from catalog logic alone. The rear drum family and cable/hose end styles still need direct confirmation from the fitted truck and old samples.
 - Use the fitted hardware and old samples to order brake parts: backing plates, cable ends, calipers, wheel cylinders, master/proportioning fittings, and hose ends control the final spec.
 - The Ironman Foamcell suspension kit is already ordered, so brake flex hoses and rear center hose must be checked at full suspension droop before purchase or final installation.
+- The rear parking-brake cable route and rear axle hard-line route should be renewed in the same workshop window as the Ironman rear suspension work, because the axle, U-bolts, spring pads, clips, and full-droop geometry are exposed then.
 - Keep rear drums as the default path; rear-disc conversion stays out of baseline scope unless inspection or road validation gives a measured reason.
 - Brake flex hoses must be complete crimped hydraulic assemblies rated to `DOT/SAE J1401` or OEM-equivalent. Do not fabricate flex hoses from generic rubber hose.
 - Brake hard lines should be `3/16 in / 4.75 mm` brake tube as the working basis, but flare type, fitting seat, union thread, and route length must be confirmed from the fitted truck.
@@ -67,6 +71,16 @@ The visible "wires" running to the rear brakes should be handled as brake safety
 - rear center frame-to-axle flexible brake hose
 - line clips, cable retainers, and protective sleeves/grommets
 
+### Required New Photo Capture Task
+
+Existing photos are enough for architecture and broad routing, but not enough for final order release. Add this as a P0 task before brake part payment or sample discard:
+
+| Task | Capture required | Releases |
+| --- | --- | --- |
+| `BR-CAPTURE-001` brake order-release photo pack | Wide route photo first, then close-ups with label/ruler of front calipers, pad shape, rotor face, front hose ends/brackets, rear cable ends, equalizer, rear center hose ends, T/union, wheel-cylinder ports, hard-line flare nuts, clip positions, master/proportioning ports, and rear drum internals after opening. Lay removed cables and hard lines beside a tape measure and keep them as samples. | Front pads/hardware, front hoses, caliper kits/replacements, rear cables, rear hard-line fittings/flares, rear center hose, rear wheel cylinders, rear shoes/hardware, master/reservoir/proportioning parts. |
+
+Do not discard old parking-brake cables, hard lines, flex hoses, or representative clips until the replacement parts have been checked against them.
+
 ### Most Relevant Rear-Axle Photos
 
 | File | Use |
@@ -96,6 +110,9 @@ The visible "wires" running to the rear brakes should be handled as brake safety
 
 | Priority | Replacement |
 | --- | --- |
+| P0 | Front disc pad and retaining hardware set after the fitted caliper/pad family is identified. |
+| P0 | Front flex hoses after caliper-end, chassis-bracket, lock-to-lock, and full-droop fitment are confirmed. |
+| P0 | Front caliper rebuild kits or replacement calipers if inspection finds leaks, seizure, torn boots, damaged pistons, or unknown unsafe condition. |
 | P0 | Rear parking-brake cable set: left/right rear cables, equalizer/clevis hardware, return springs, clips, and adjuster parts matched to the backing plates. |
 | P0 | Rear axle hard brake lines recreated in 3/16 in / 4.75 mm brake tube, with the correct flare and fitting threads. |
 | P0 | Rear center flexible brake hose with correct chassis-side and axle-side fittings, retaining clip, and full-droop slack. |
@@ -103,16 +120,18 @@ The visible "wires" running to the rear brakes should be handled as brake safety
 | P0 | Full brake flex hose set: front left, front right, and rear center after front caliper fitting style, rear center fittings, bracket retention, free length, and full-droop slack are captured. |
 | P1 | Rear shoes, hold-down springs, return springs, adjuster hardware, and retaining clips after drum family and shoe dimensions are confirmed. |
 | P1 | Brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips where originals are missing or corroded. |
-| P1 | Front disc service parts: pads, caliper seal/rebuild kit, slider/retaining hardware, or replacement calipers only after the fitted front disc conversion is identified. |
+| P1 | Front rotors: machine or replace after measured rotor thickness, scoring, runout, and service limit check. |
 | P1 | Brake master cylinder, reservoir hoses/caps/seals, and proportioning/bias hardware only after the installed master/booster/proportioning layout is photographed and inspected. |
+| P1 | Brake fluid, bleed hose/bottle, line caps/plugs, and brake cleaner/consumables for the full hydraulic closeout. |
 
 ### Parts Not To Blind-Order
 
 | Item | Why held |
 | --- | --- |
-| Rear brake shoes and spring kit | Drum family, shoe width/diameter, adjuster style, and spring layout are still unknown until the drums are opened. |
-| Rear wheel cylinders | Bore, port thread, mounting pattern, pushrod style, and bleed screw access still need direct confirmation. |
-| Front pads/caliper kits/rotors | The front disc conversion hardware family is not yet positively identified. |
+| Rear brake shoes and spring kit | Baseline replace, but exact set is held until drum family, shoe width/diameter, adjuster style, and spring layout are known. |
+| Rear wheel cylinders | Baseline replace as a pair, but exact part is held until bore, port thread, mounting pattern, pushrod style, and bleed screw access are confirmed. |
+| Front pads/caliper kits/rotors | Baseline service is approved, but the front disc conversion hardware family is not yet positively identified. |
+| Rear parking-brake cables | Baseline replace, but cable length, sheath length, end fittings, equalizer hardware, and clip positions must come from the old samples. |
 | Brake master cylinder | Master bore, booster/proportioning layout, reservoir condition, and fitting threads are not yet confirmed. |
 | Brake conversion parts | Baseline plan is refresh first; no rear-disc conversion unless inspection or use shows a measured need. |
 
@@ -137,6 +156,7 @@ Use this as the workshop handoff. The output should be photos plus measurements 
 - Brake cables may be removed now after photos/labels, but old cables must remain the ordering samples.
 - Hydraulic lines may be removed only if the truck does not need working brakes before rebuild; cap every open port immediately.
 - Exact rear shoe and wheel-cylinder orders wait until internal drum photos and measurements are captured.
+- Exact front pad, front hose, and caliper rebuild/replacement orders wait until the fitted front disc conversion hardware is identified.
 - Brake flex hose order waits for fitting style, free length, and Ironman/full-droop clearance confirmation.
 - Final brake closeout requires pressure bleed, leak test, full-droop/lock clearance check, even rear adjustment, parking brake hold/release test, and a short reinspection after bedding.
 
@@ -155,6 +175,7 @@ Use this as the workshop handoff. The output should be photos plus measurements 
 
 - `part_copper_grease`: already received
 - `part_mech_brake_flex_hose_set`: purchase-ready and should stay in the baseline safety bucket
+- `part_brake_fluid_bleed_consumables`: purchase-ready for non-fitment hydraulic-opening consumables: line caps/plugs, clear bleed hose/bottle or bleeder kit, brake cleaner, rags, gloves, and catch tray. Brake fluid itself still waits for cap/manual/workshop DOT-spec confirmation.
 - Existing estimate rows in `data/manual/workbook_tabs/parts.csv`:
   - `Brake master cylinder`: PKR `8,000-30,000`
   - `Wheel cylinders / caliper rebuild parts`: PKR `8,000-40,000`
@@ -166,11 +187,12 @@ Use this as the workshop handoff. The output should be photos plus measurements 
 
 ## Current Recommended Direction
 
-- Positively identify the front disc hardware already on the truck.
-- Rebuild or refresh front discs, rear drums, and hydraulics on condition.
+- Positively identify the front disc hardware already on the truck, then replace the normal front service items rather than trusting old unknown parts.
+- Replace rear drum service parts, rear wheel cylinders, rear parking-brake cables, rear axle hard lines, and rear flex hose as part of the baseline rear axle package.
 - Keep rear drums unless inspection or actual use shows a measured need for rear discs.
 - Confirm master cylinder, flex hoses, hard lines, and brake-balance/proportioning setup before buying conversion parts.
 - Replace the rear parking-brake cables and routine rear brake wear/hydraulic items while the rear axle area is stripped, but release exact parts only from the capture requirements above.
+- Execute this during the Ironman suspension window using [suspension-brake-merged-work-plan.md](suspension-brake-merged-work-plan.md) as the combined parts/tools checklist.
 
 ## Open Unknowns To Close
 

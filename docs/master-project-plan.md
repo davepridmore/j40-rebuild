@@ -97,9 +97,12 @@
 ### Steering, Brakes, and Suspension
 
 - Use `docs/suspension-workstream.md` as the start-here control sheet for the Ironman Foam Cell install.
+- Use `docs/suspension-brake-merged-work-plan.md` as the combined workshop checklist when the Ironman suspension install and brake baseline refresh are run together.
+- Use `docs/brake-suspension-order-links-20260503.md` for current brake-window order links; only hydraulic-opening consumables are ready now, while exact brake parts wait for `BR-CAPTURE-001`.
 - Track the kit as two shipments: main Ironman set plus separate `24635FE x2` front damper pair.
 - Do not buy alternate local/OME/Bilstein spring, shock, bush, shackle, or U-bolt options unless the Ironman receipt check proves a missing or incorrect item.
-- Resolve brake hose slack, parking-brake cable route, breather slack, steering damper clearance, shackle angle, ride height, alignment, and post-install torque checks before road use.
+- Replace standard brake service parts as baseline work while preserving exact-part gates: front disc service parts by fitted conversion hardware, rear drum/cable parts by old samples and drum-open measurements, and hydraulic hoses/lines by fitting style and full-droop length.
+- Resolve brake hose slack, parking-brake cable route, rear hard-line routing, breather slack, steering damper clearance, shackle angle, ride height, alignment, brake bleed/adjustment, and post-install torque checks before road use.
 - Current EPS route remains column-assist, not hydraulic, and does not require engine removal.
 
 ### Interior and Weatherproofing
@@ -145,7 +148,7 @@
 6. Capture body-mount pedestal/captive-thread condition and lock shim + rubber + hardware refit plan before tub return.
 7. Run the electrical reset track in parallel: baseline harness termination, grounding, and fuse/relay validation only.
 8. Run stripped-engine maintenance in parallel with chassis access and log post-service defects.
-9. Track Ironman suspension delivery and do only receipt/instruction prep until the complete kit and front damper pair are present.
+9. Track Ironman suspension delivery and do only receipt/instruction prep until the complete kit and front damper pair are present; prepare the merged brake/suspension parts and tools checklist before the workshop window.
 10. Keep procurement gated by phase: immediate rust-control buys now, defer interior and optional upgrade buys.
 11. Record exact prices for already received tools and consumables that are still missing amounts.
 12. Re-run the story and summary scripts after each meaningful ledger or evidence update so the archive stays current.

@@ -5,12 +5,15 @@
 - Current state: ordered, pending delivery
 - Active path: Ironman Foam Cell medium suspension kit for Toyota Land Cruiser 40 Series
 - Order evidence: `data/manual/procurement_queue.csv`, `data/manual/orders_receipts_audit_queue.csv`, `data/manual/workstream_status.csv`
+- Merged brake execution sheet: [suspension-brake-merged-work-plan.md](suspension-brake-merged-work-plan.md)
 
 ## Decision
 
 The suspension path is now the incoming Ironman Foam Cell set. The previous local fabricated leaf-spring path, OME/EMU shock path, Bilstein path, separate generic bush path, separate shackle path, and separate U-bolt path stay out of active buying unless the Ironman receipt check proves a missing, damaged, or incorrect component.
 
 Do not start final installation until both shipments are physically present: the main Ironman kit and the separate front damper pair.
+
+The brake baseline is now bundled into the same workshop window. Rear parking-brake cables, rear axle hard lines, rear center brake hose, and standard front/rear brake service items should be identified and replaced while the suspension is apart, because the new Ironman geometry controls full-droop hose and cable slack. Exact brake parts still come from the fitted truck and old samples, not from catalog assumptions.
 
 ## Incoming Set
 
@@ -61,10 +64,11 @@ No torque sheet means no installation.
 4. Confirm all chassis spring hangers, shackle mounts, steering-box mount area, axle spring pads, and U-bolt plates are clean and crack-free.
 5. Stop for repair if any spring hanger is cracked, ovalized, bent, deeply pitted, or has damaged captive hardware.
 6. Confirm brake flexible hoses, brake hard lines, parking-brake cables, breather hose, and wiring have slack at expected full droop.
-7. Confirm safe support gear is present: 3T trolley jack, four rated jack stands, hardwood cribbing blocks, wheel chocks, and a level working surface.
-8. Confirm tools: torque wrench in the required range, breaker bar, metric sockets/spanners, pry bars, hammer/mallet, punch/drift, grease gun, penetrating oil, paint marker, calipers/tape, and camera.
-9. Confirm consumables: supplied/suspension-compatible bush grease, chassis grease for nipples, anti-seize only where the supplier permits, thread cleaner/chaser, and new split pins/retainers where used.
-10. Confirm the separate `24635FE` front damper shipment has arrived before final assembly or road validation.
+7. If the brake package is being done in the same window, confirm `BR-CAPTURE-001` photo tools, brake-line caps/plugs, bleed tools, brake cleaner/consumables, brake-fluid DOT-spec confirmation path, flare-nut wrenches, line fabrication tools or workshop line-fabrication capability, drum brake tools, and old-part sample storage.
+8. Confirm safe support gear is present: 3T trolley jack, four rated jack stands, hardwood cribbing blocks, wheel chocks, and a level working surface.
+9. Confirm tools: torque wrench in the required range, breaker bar, metric sockets/spanners, pry bars, hammer/mallet, punch/drift, grease gun, penetrating oil, paint marker, calipers/tape, and camera.
+10. Confirm consumables: supplied/suspension-compatible bush grease, chassis grease for nipples, anti-seize only where the supplier permits, thread cleaner/chaser, and new split pins/retainers where used.
+11. Confirm the separate `24635FE` front damper shipment has arrived before final assembly or road validation.
 
 ## Baseline Measurements
 
@@ -107,7 +111,7 @@ Use the same measurement points after installation, after first road test, and a
 1. Chock the front wheels, loosen rear wheel nuts, lift the chassis, and support the chassis on rated stands. Support the rear axle separately.
 2. Remove the rear wheels for access.
 3. Photograph the original rear spring, shackle, fixed pin, U-bolts, shock, brake hose, parking-brake cable, breather, and rear axle hard-line routing.
-4. Free any brake-line, parking-brake, or breather brackets that would be stretched during droop.
+4. Free any brake-line, parking-brake, or breather brackets that would be stretched during droop. If the merged brake package is active, complete `BR-CAPTURE-001`, then label and remove rear parking-brake cables and rear axle hard lines only after close photos; cap hydraulic openings immediately and keep old cables/lines as ordering templates.
 5. Remove rear shocks if they limit droop or access.
 6. Remove old U-bolts and nuts. Scrap the old U-bolts.
 7. Support the axle, separate it from the spring center pin, and remove the old rear spring pack.
@@ -116,7 +120,7 @@ Use the same measurement points after installation, after first road test, and a
 10. Fit the `TOY002B` spring to the fixed hanger and shackle, leaving spring-eye and shackle fasteners finger tight.
 11. Seat the rear axle on the spring center pin and install new `415UBK` U-bolts. Tighten evenly in a cross pattern to the torque sheet.
 12. Install the `24636FE` rear dampers with supplied bushes/washers/spacers in the correct order. Leave final bushing crush and pivot torque until the vehicle is at ride height unless the Ironman sheet says otherwise.
-13. Check rear brake hose, rear hard lines, parking-brake cable, breather hose, propshaft slip travel, and exhaust clearance at static height and supported droop.
+13. Check rear brake hose, rear hard lines, parking-brake cable, breather hose, propshaft slip travel, and exhaust clearance at static height and supported droop. Do not close rear suspension until the new brake hose/cable/line routing is clipped and protected.
 
 ## Final Settle And Torque
 
@@ -128,7 +132,8 @@ Use the same measurement points after installation, after first road test, and a
 6. Recheck U-bolt torque after the first settle cycle.
 7. Recheck steering lock-to-lock, brake hose slack, parking-brake cable slack, breather slack, tyre clearance, shock body clearance, and bump-stop alignment.
 8. Measure and record ride height, bump-stop clearance, shackle angle, and wheelbase again.
-9. Align steering and suspension through a qualified alignment shop. Headlights must also be aimed again because ride height has changed.
+9. If brake hydraulics were opened, pressure bleed the brake system, leak-test all opened joints, adjust rear drums evenly, and confirm parking-brake hold/release before any road movement.
+10. Align steering and suspension through a qualified alignment shop. Headlights must also be aimed again because ride height has changed.
 
 ## Road Validation
 

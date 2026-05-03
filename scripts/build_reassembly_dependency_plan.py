@@ -295,6 +295,27 @@ def build_procurement_decisions(
                 "Merchant-facing cut list is ready; confirm price for 8 x 12x6x3 in hardwood blocks "
                 "plus 4 tapered 8x4x3 in wedge chocks."
             )
+        elif entry_id == "part_brake_fluid_bleed_consumables":
+            decision = "confirm_fluid_spec_then_buy"
+            dependency_gate = "hydraulic_opening_prep"
+            action = "confirm_fluid_spec_and_buy_bleed_consumables"
+            reason = "Brake hydraulics must not be opened until fluid spec, caps/plugs, cleaner, and bleed tools are ready."
+        elif workstream == "brake_system" and procurement_stage == "spec_needed_before_order":
+            decision = "capture_spec_then_buy"
+            dependency_gate = "brake_identification_and_samples"
+            action = "measure_label_keep_samples_then_order"
+            reason = (
+                "Brake item is baseline scope, but exact part release is gated by fitted hardware, "
+                "old samples, fitting style, and Ironman full-droop clearance where applicable."
+            )
+        elif workstream == "brake_system" and procurement_stage == "inspect_then_buy":
+            decision = "inspect_confirm_then_buy_standard"
+            dependency_gate = "brake_open_inspection"
+            action = "open_measure_then_order_standard_service_parts"
+            reason = (
+                "Brake item is standard baseline service scope, but exact purchase waits for drum or rotor "
+                "inspection and measured part family."
+            )
 
         decisions.append(
             {
@@ -399,11 +420,19 @@ def count_decision(decision_rows: list[dict[str, str]], *keys: str) -> int:
 
 
 def count_mechanical_buy_actions(decision_rows: list[dict[str, str]]) -> int:
-    actions = {"confirm_price_then_buy", "buy_now", "buy_for_baseline", "buy_now_from_quote"}
+    actions = {
+        "confirm_price_then_buy",
+        "buy_now",
+        "buy_for_baseline",
+        "buy_now_from_quote",
+        "confirm_fluid_spec_then_buy",
+        "capture_spec_then_buy",
+        "inspect_confirm_then_buy_standard",
+    }
     return sum(
         1
         for row in decision_rows
-        if row.get("workstream") in {"mechanical_baseline", "steering_brakes_suspension"} and row.get("decision") in actions
+        if row.get("workstream") in {"mechanical_baseline", "steering_brakes_suspension", "brake_system"} and row.get("decision") in actions
     )
 
 
@@ -433,8 +462,15 @@ def build_work_packages(
     mech_buy_now = sum(
         1
         for row in decision_rows
-        if row.get("workstream") in {"mechanical_baseline", "steering_brakes_suspension"}
-        and row.get("decision") in {"confirm_price_then_buy", "buy_now", "buy_for_baseline"}
+        if row.get("workstream") in {"mechanical_baseline", "steering_brakes_suspension", "brake_system"}
+        and row.get("decision") in {
+            "confirm_price_then_buy",
+            "buy_now",
+            "buy_for_baseline",
+            "confirm_fluid_spec_then_buy",
+            "capture_spec_then_buy",
+            "inspect_confirm_then_buy_standard",
+        }
     )
 
     refurbish_scope = sum(
@@ -487,14 +523,14 @@ def build_work_packages(
             work_package_id="WP04",
             title="Mechanical Service Baseline",
             lane="mechanical",
-            objective="Execute reliability service pack and document defects before upgrades.",
+            objective="Execute reliability service pack, merged brake refresh prep, and document defects before upgrades.",
             depends_on="stripdown_cataloguing_complete",
-            linked_workstreams="mechanical_baseline|steering_brakes_suspension",
+            linked_workstreams="mechanical_baseline|steering_brakes_suspension|brake_system",
             current_state="queued",
-            evidence_signal="engine_bay baseline evidence present; service pack rows prepared",
-            blocker_summary=f"{mech_buy_now} mechanical safety/service rows need pricing + order.",
-            gate_to_close="Cooling/fuel/ignition/service baseline complete with leak-free checks.",
-            key_procurement_actions="Batch-buy must-replace consumables; keep inspect-then-replace items gated to inspection findings.",
+            evidence_signal="engine_bay baseline evidence present; service pack and brake-system rows prepared",
+            blocker_summary=f"{mech_buy_now} mechanical/brake safety rows need pricing, measurement capture, or order.",
+            gate_to_close="Cooling/fuel/ignition/brake baseline complete with leak-free checks.",
+            key_procurement_actions="Batch-buy must-replace consumables; run brake spec capture before exact brake orders; keep inspect-then-replace items gated to measured findings.",
         ),
         WorkPackage(
             work_package_id="WP05",

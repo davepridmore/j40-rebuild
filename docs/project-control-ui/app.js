@@ -1511,6 +1511,177 @@
     `;
   }
 
+  function splitMultiValue(value) {
+    return cleanString(value)
+      .split(/[|,]/)
+      .map((item) => cleanString(item))
+      .filter(Boolean);
+  }
+
+  function findReplacementPipeOrderLines(pipeId, closureRow, orderRows) {
+    const source = Array.isArray(orderRows) ? orderRows : [];
+    const idsFromClosure = splitMultiValue(closureRow && closureRow.order_lines);
+    if (idsFromClosure.length) {
+      const byId = new Map(source.map((row) => [cleanString(row.order_line_id), row]));
+      return idsFromClosure.map((id) => byId.get(id)).filter(Boolean);
+    }
+    return source.filter((row) => splitMultiValue(row.source_basis).includes(pipeId));
+  }
+
+  function renderReplacementPipeBuyLines(lines) {
+    const rows = Array.isArray(lines) ? lines : [];
+    if (!rows.length) {
+      return `<span class="small-muted">No order lines mapped.</span>`;
+    }
+    return `
+      <div class="pipe-buy-lines">
+        ${rows
+          .map((row) => {
+            const qty = cleanString(row.qty_to_order || row.qty_required);
+            return `
+              <div class="pipe-buy-line">
+                <strong>${escapeHtml(row.order_line_id || "")}</strong>
+                <span>${escapeHtml(row.item || "")}</span>
+                ${qty ? `<span class="small-muted">Order: ${escapeHtml(qty)}</span>` : ""}
+              </div>
+            `;
+          })
+          .join("")}
+      </div>
+    `;
+  }
+
+  function renderReplacementPipeSimpleBoard(active) {
+    const requirements =
+      Array.isArray(active.pipe_requirements) && active.pipe_requirements.length
+        ? active.pipe_requirements
+        : Array.isArray(active.requirements)
+          ? active.requirements
+          : [];
+    const orderRows = Array.isArray(active.replacement_pipe_order_release_specs)
+      ? active.replacement_pipe_order_release_specs
+      : [];
+    const actionRows = Array.isArray(active.replacement_pipe_release_actions)
+      ? active.replacement_pipe_release_actions
+      : [];
+    const closureRows = Array.isArray(active.replacement_pipe_circuit_closure)
+      ? active.replacement_pipe_circuit_closure
+      : [];
+    const photoRows = Array.isArray(active.replacement_pipe_photo_intake)
+      ? active.replacement_pipe_photo_intake
+      : [];
+    const closureByCircuit = new Map(closureRows.map((row) => [cleanString(row.circuit_id), row]));
+    const specReady = orderRows.filter((row) => isSpecReadyStatus(row.spec_status || row.order_release_state)).length;
+    const openActions = actionRows.filter((row) => cleanString(row.status).toLowerCase() !== "closed");
+    const missingPhotos = photoRows.filter((row) => !(Array.isArray(row.media_ids) && row.media_ids.length));
+    const released = closureRows.filter((row) => cleanString(row.release_status).toLowerCase() === "released").length;
+
+    return `
+      <article class="card replacement-pipe-simple-card">
+        <div class="detail-header">
+          <h3>Replacement Pipes Board</h3>
+          <div class="chip-row">
+            ${chip(`${requirements.length} Circuits`)}
+            ${chip(`${specReady}/${orderRows.length} Quote Lines Ready`)}
+            ${chip(`${openActions.length} Holds Open`)}
+            ${chip(`${released}/${closureRows.length} Released`)}
+          </div>
+        </div>
+        <p class="small-muted">Simplified view: one row per circuit. The shop-facing buy quantity is exact enough to quote; final measurement holds stay visible only where cutting, flaring, bending, or dry-fit controls the release.</p>
+        <div class="table-wrap requirement-table-wrap">
+          <table class="requirement-table replacement-pipe-simple-table">
+            <thead>
+              <tr>
+                <th>Circuit</th>
+                <th>Local Quote / Buy</th>
+                <th>Final Release Check</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${requirements
+                .map((row) => {
+                  const pipeId = cleanString(row.pipe_id);
+                  const closure = closureByCircuit.get(pipeId) || {};
+                  const mappedOrderLines = findReplacementPipeOrderLines(pipeId, closure, orderRows);
+                  return `
+                    <tr>
+                      <td>
+                        <strong>${escapeHtml(pipeId)} · ${escapeHtml(row.pipe_or_line || "")}</strong>
+                        <div class="small-muted">${escapeHtml(row.vehicle_location || "")}</div>
+                        <div class="small-muted">Scope: ${escapeHtml(formatToken(row.replace_scope || ""))}</div>
+                      </td>
+                      <td>
+                        ${renderReplacementPipeBuyLines(mappedOrderLines)}
+                        ${row.quantity ? `<div class="small-muted requirement-material">Circuit basis: ${escapeHtml(row.quantity)}</div>` : ""}
+                      </td>
+                      <td>
+                        <div>${escapeHtml(closure.action_required || row.critical_measurements || "")}</div>
+                        ${closure.route_length_mm ? `<div class="small-muted requirement-material">Length/stock: ${escapeHtml(closure.route_length_mm)}</div>` : ""}
+                        ${closure.tube_or_hose_od_id ? `<div class="small-muted">ID/OD basis: ${escapeHtml(closure.tube_or_hose_od_id)}</div>` : ""}
+                      </td>
+                      <td>
+                        <div class="status-stack">
+                          ${statusChip(row.spec_status || "spec_ready")}
+                          ${statusChip(row.acquisition_status || "not_acquired")}
+                          ${statusChip(row.installation_status || "not_installed")}
+                          ${statusChip(closure.release_status || "release_hold")}
+                        </div>
+                      </td>
+                    </tr>
+                  `;
+                })
+                .join("")}
+            </tbody>
+          </table>
+        </div>
+      </article>
+      <article class="card replacement-pipe-holds-card">
+        <div class="detail-header">
+          <h3>Remaining Holds</h3>
+          <div class="chip-row">
+            ${chip(`${openActions.length} Open Actions`)}
+            ${chip(`${missingPhotos.length} Photo Closeups Missing`)}
+          </div>
+        </div>
+        <div class="pipe-hold-grid">
+          <div>
+            <h4>Measure Before Release</h4>
+            <ul class="pipe-hold-list">
+              ${openActions
+                .map(
+                  (row) => `
+                    <li>
+                      <strong>${escapeHtml(row.action_id || "")} · ${escapeHtml(formatToken(row.priority || ""))}</strong>
+                      <span>${escapeHtml(row.action || "")}</span>
+                      ${row.blocks_order_lines ? `<span class="small-muted">Blocks: ${escapeHtml(row.blocks_order_lines)}</span>` : ""}
+                    </li>
+                  `
+                )
+                .join("") || `<li><span>No open release actions.</span></li>`}
+            </ul>
+          </div>
+          <div>
+            <h4>Photo Closeups Still Useful</h4>
+            <ul class="pipe-hold-list">
+              ${missingPhotos
+                .map(
+                  (row) => `
+                    <li>
+                      <strong>${escapeHtml(row.shot_id || "")}</strong>
+                      <span>${escapeHtml(row.exact_name || row.shot_required || "")}</span>
+                      ${row.pipe_id ? `<span class="small-muted">${escapeHtml(row.pipe_id)} / ${escapeHtml(row.order_lines || "")}</span>` : ""}
+                    </li>
+                  `
+                )
+                .join("") || `<li><span>All planned pipe intake shots have media attached.</span></li>`}
+            </ul>
+          </div>
+        </div>
+      </article>
+    `;
+  }
+
   function renderWorkstreamRequirements(workstream) {
     const active = workstream || {};
     const rows = Array.isArray(active.requirements) && active.requirements.length
@@ -1528,16 +1699,7 @@
       ].join("");
     }
     if (active.id === "replacement_pipes") {
-      return [
-        renderRequirementTable(rows, {
-          title: "Replacement Pipe Requirements",
-          summary: "Exact make/buy/fabrication requirements with status gates for specification, acquisition, and installation.",
-        }),
-        renderReplacementPipePhotoIntake(active.replacement_pipe_photo_intake),
-        renderReplacementPipeOrderReleaseTable(active.replacement_pipe_order_release_specs),
-        renderReplacementPipeReleaseActions(active.replacement_pipe_release_actions),
-        renderReplacementPipeCircuitClosure(active.replacement_pipe_circuit_closure),
-      ].join("");
+      return renderReplacementPipeSimpleBoard(active);
     }
     if (active.id === "brake_system") {
       return renderRequirementTable(rows, {

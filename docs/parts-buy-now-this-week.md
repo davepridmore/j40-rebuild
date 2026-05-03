@@ -1,19 +1,19 @@
 # Parts Buy-Now Plan (This Week)
 
-- Generated: 2026-05-03 04:49:20
+- Generated: 2026-05-03 05:29:24
 - Source ledger: `data/manual/expenses.csv` (`bucket=parts`)
 - Overlap resolution table: `data/manual/parts_overlap_resolution.csv`
 - This-week list: `data/manual/parts_buy_now_this_week.csv`
 
 ## This-Week Counts
 
-- Rows in this-week list: 19
-- `confirm_price_then_order`: 9
+- Rows in this-week list: 20
+- `confirm_price_then_order`: 10
 - `track_delivery`: 10
 
 ## Priority Split
 
-- `P0`: 10
+- `P0`: 11
 - `P1`: 9
 
 ## Overlap Decisions Applied
@@ -27,7 +27,8 @@
 
 ## Immediate Actions
 
-- `confirm_price_then_order` (9):
+- `confirm_price_then_order` (10):
+  - `part_brake_fluid_bleed_consumables` [P0] Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_cabin_compact_fuse_boxes` [P0] Compact covered cabin blade fuse boxes - likely 3 identical units (price: price_tbd; order_date: 2026-05-03; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_firewall_grommet_set_large_power` [P0] Additional firewall grommet set IDs 16/20/25 mm (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_firewall_grommet_set_small_medium` [P0] Additional firewall grommet set IDs 6/8/10/12 mm (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)

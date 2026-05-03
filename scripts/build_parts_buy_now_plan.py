@@ -80,6 +80,7 @@ WORKSTREAM_PRIORITY = {
     "body_chassis": "P0",
     "electrical_reset": "P0",
     "mechanical_baseline": "P1",
+    "brake_system": "P0",
     "steering_brakes_suspension": "P1",
     "interior_weatherproofing": "P2",
     "optional_upgrades": "P3",

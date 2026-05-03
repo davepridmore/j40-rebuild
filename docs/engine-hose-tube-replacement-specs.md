@@ -43,7 +43,7 @@ Take the old hoses or caliper measurements and ask for:
 
 1. Molded EPDM upper and lower radiator hoses for Toyota 2H HJ47 route; use `16571-68020`, `16572-68020`, and Dayco `DMH1342` / `CH1342` only as shape references. Confirm neck ODs, clamp OD, and old-hose free length in `mm`.
 2. Formed metal coolant/radiator pipe: `750 mm` minimum tube blank, expected `28-30 mm OD` and `1.2-1.6 mm` wall after measuring the old pipe; trim only after the physical sample's centerline length is measured.
-3. Two formed-pipe connector hoses: EPDM coolant connectors by measured pipe-end OD, mating spigot OD, finished cut length, hose overlap, bend/kink clearance, and clamp OD in `mm`; use molded connectors if straight hose kinks.
+3. Two formed-pipe connector hoses: ask locally for `2 x 500 mm` EPDM radiator rubber pipe blanks, working `28-30 mm ID`, then cut by measured pipe-end OD, mating spigot OD, finished cut length, hose overlap, bend/kink clearance, and clamp OD in `mm`; use molded connectors if straight hose kinks.
 4. EPDM heater hose: inlet `400 mm` cut length and outlet `280 mm` cut length, expected `16 mm` / `5/8 inch` ID unless nipple ODs in `mm` say otherwise.
 5. Diesel fuel hose: `8 mm ID x 3000 mm`, `6 mm ID x 2000 mm`, `3.2-3.5 mm` leak-off x `1000 mm`, all SAE J30R9/J30R14T2 or DIN 73379-3E.
 6. Reinforced vacuum hose `10-12 mm ID x 2000 mm` and oil-resistant breather hose `16-19 mm ID x 1000 mm`, cut to measured route, plus the correct one-way check valve if the existing valve is old or unknown.

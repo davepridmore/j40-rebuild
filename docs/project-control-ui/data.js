@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-03T04:39:39+05:00",
+  "generated_at": "2026-05-03T05:44:01+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -36,13 +36,13 @@ window.J40_DASHBOARD_DATA = {
   "summary": {
     "workstreams_in_scope": 15,
     "workstreams_active": 10,
-    "workstream_evidence_images": 572,
-    "parts_open_rows": 41,
+    "workstream_evidence_images": 584,
+    "parts_open_rows": 47,
     "parts_ordered_pending_delivery": 10,
-    "urgent_part_actions": 13,
-    "capture_data_tasks": 139,
-    "capture_data_tasks_now": 128,
-    "supply_rows_tracked": 232,
+    "urgent_part_actions": 14,
+    "capture_data_tasks": 145,
+    "capture_data_tasks_now": 134,
+    "supply_rows_tracked": 238,
     "selling_site_images_loaded": 83,
     "whatsapp_j40_selected_chats": 7,
     "whatsapp_j40_media_items": 165,
@@ -4244,6 +4244,114 @@ window.J40_DASHBOARD_DATA = {
           "stage": "hardware_refinish",
           "media_id": "20260412_223541_gp_QFRecOgQ",
           "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260408_211804.jpg",
+          "caption": "Detached Body Panels And Doors \u00b7 Hardware Refinish \u00b7 2026-04-08",
+          "captured_date": "2026-04-08",
+          "captured_time": "21:18:04",
+          "media_type": "photo",
+          "component_group": "removable_panels",
+          "specific_component": "detached_body_panels_and_doors",
+          "stage": "hardware_refinish",
+          "media_id": "20260408_211804",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260408_211806_gp_TbbCJsoQ.jpg",
+          "caption": "Detached Body Panels And Doors \u00b7 Hardware Refinish \u00b7 2026-04-08",
+          "captured_date": "2026-04-08",
+          "captured_time": "21:18:06",
+          "media_type": "photo",
+          "component_group": "removable_panels",
+          "specific_component": "detached_body_panels_and_doors",
+          "stage": "hardware_refinish",
+          "media_id": "20260408_211806_gp_TbbCJsoQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260408_211812.jpg",
+          "caption": "Detached Body Panels And Doors \u00b7 Hardware Refinish \u00b7 2026-04-08",
+          "captured_date": "2026-04-08",
+          "captured_time": "21:18:12",
+          "media_type": "photo",
+          "component_group": "removable_panels",
+          "specific_component": "detached_body_panels_and_doors",
+          "stage": "hardware_refinish",
+          "media_id": "20260408_211812",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260408_211814_gp_hJ3szRKQ.jpg",
+          "caption": "Detached Body Panels And Doors \u00b7 Hardware Refinish \u00b7 2026-04-08",
+          "captured_date": "2026-04-08",
+          "captured_time": "21:18:14",
+          "media_type": "photo",
+          "component_group": "removable_panels",
+          "specific_component": "detached_body_panels_and_doors",
+          "stage": "hardware_refinish",
+          "media_id": "20260408_211814_gp_hJ3szRKQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260408_212832.jpg",
+          "caption": "Rear Hatch Window Latch Mechanisms \u00b7 Hardware Refinish \u00b7 2026-04-08",
+          "captured_date": "2026-04-08",
+          "captured_time": "21:28:32",
+          "media_type": "photo",
+          "component_group": "window_hardware",
+          "specific_component": "rear_hatch_window_latch_mechanisms",
+          "stage": "hardware_refinish",
+          "media_id": "20260408_212832",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260408_212839.jpg",
+          "caption": "Detached Body Panels And Doors \u00b7 Hardware Refinish \u00b7 2026-04-08",
+          "captured_date": "2026-04-08",
+          "captured_time": "21:28:39",
+          "media_type": "photo",
+          "component_group": "removable_panels",
+          "specific_component": "detached_body_panels_and_doors",
+          "stage": "hardware_refinish",
+          "media_id": "20260408_212839",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260408_212841_gp_y9GxLOZg.jpg",
+          "caption": "Detached Body Panels And Doors \u00b7 Hardware Refinish \u00b7 2026-04-08",
+          "captured_date": "2026-04-08",
+          "captured_time": "21:28:41",
+          "media_type": "photo",
+          "component_group": "removable_panels",
+          "specific_component": "detached_body_panels_and_doors",
+          "stage": "hardware_refinish",
+          "media_id": "20260408_212841_gp_y9GxLOZg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260408_212846.jpg",
+          "caption": "Detached Body Panels And Doors \u00b7 Hardware Refinish \u00b7 2026-04-08",
+          "captured_date": "2026-04-08",
+          "captured_time": "21:28:46",
+          "media_type": "photo",
+          "component_group": "removable_panels",
+          "specific_component": "detached_body_panels_and_doors",
+          "stage": "hardware_refinish",
+          "media_id": "20260408_212846",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260408_212849_gp_VJjse8gw.jpg",
+          "caption": "Detached Body Panels And Doors \u00b7 Hardware Refinish \u00b7 2026-04-08",
+          "captured_date": "2026-04-08",
+          "captured_time": "21:28:49",
+          "media_type": "photo",
+          "component_group": "removable_panels",
+          "specific_component": "detached_body_panels_and_doors",
+          "stage": "hardware_refinish",
+          "media_id": "20260408_212849_gp_VJjse8gw",
+          "matched_tokens": []
         }
       ],
       "evidence_sets": [
@@ -4638,11 +4746,119 @@ window.J40_DASHBOARD_DATA = {
               "stage": "hardware_refinish",
               "media_id": "20260412_223541_gp_QFRecOgQ",
               "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260408_211804.jpg",
+              "caption": "Detached Body Panels And Doors \u00b7 Hardware Refinish \u00b7 2026-04-08",
+              "captured_date": "2026-04-08",
+              "captured_time": "21:18:04",
+              "media_type": "photo",
+              "component_group": "removable_panels",
+              "specific_component": "detached_body_panels_and_doors",
+              "stage": "hardware_refinish",
+              "media_id": "20260408_211804",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260408_211806_gp_TbbCJsoQ.jpg",
+              "caption": "Detached Body Panels And Doors \u00b7 Hardware Refinish \u00b7 2026-04-08",
+              "captured_date": "2026-04-08",
+              "captured_time": "21:18:06",
+              "media_type": "photo",
+              "component_group": "removable_panels",
+              "specific_component": "detached_body_panels_and_doors",
+              "stage": "hardware_refinish",
+              "media_id": "20260408_211806_gp_TbbCJsoQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260408_211812.jpg",
+              "caption": "Detached Body Panels And Doors \u00b7 Hardware Refinish \u00b7 2026-04-08",
+              "captured_date": "2026-04-08",
+              "captured_time": "21:18:12",
+              "media_type": "photo",
+              "component_group": "removable_panels",
+              "specific_component": "detached_body_panels_and_doors",
+              "stage": "hardware_refinish",
+              "media_id": "20260408_211812",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260408_211814_gp_hJ3szRKQ.jpg",
+              "caption": "Detached Body Panels And Doors \u00b7 Hardware Refinish \u00b7 2026-04-08",
+              "captured_date": "2026-04-08",
+              "captured_time": "21:18:14",
+              "media_type": "photo",
+              "component_group": "removable_panels",
+              "specific_component": "detached_body_panels_and_doors",
+              "stage": "hardware_refinish",
+              "media_id": "20260408_211814_gp_hJ3szRKQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260408_212832.jpg",
+              "caption": "Rear Hatch Window Latch Mechanisms \u00b7 Hardware Refinish \u00b7 2026-04-08",
+              "captured_date": "2026-04-08",
+              "captured_time": "21:28:32",
+              "media_type": "photo",
+              "component_group": "window_hardware",
+              "specific_component": "rear_hatch_window_latch_mechanisms",
+              "stage": "hardware_refinish",
+              "media_id": "20260408_212832",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260408_212839.jpg",
+              "caption": "Detached Body Panels And Doors \u00b7 Hardware Refinish \u00b7 2026-04-08",
+              "captured_date": "2026-04-08",
+              "captured_time": "21:28:39",
+              "media_type": "photo",
+              "component_group": "removable_panels",
+              "specific_component": "detached_body_panels_and_doors",
+              "stage": "hardware_refinish",
+              "media_id": "20260408_212839",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260408_212841_gp_y9GxLOZg.jpg",
+              "caption": "Detached Body Panels And Doors \u00b7 Hardware Refinish \u00b7 2026-04-08",
+              "captured_date": "2026-04-08",
+              "captured_time": "21:28:41",
+              "media_type": "photo",
+              "component_group": "removable_panels",
+              "specific_component": "detached_body_panels_and_doors",
+              "stage": "hardware_refinish",
+              "media_id": "20260408_212841_gp_y9GxLOZg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260408_212846.jpg",
+              "caption": "Detached Body Panels And Doors \u00b7 Hardware Refinish \u00b7 2026-04-08",
+              "captured_date": "2026-04-08",
+              "captured_time": "21:28:46",
+              "media_type": "photo",
+              "component_group": "removable_panels",
+              "specific_component": "detached_body_panels_and_doors",
+              "stage": "hardware_refinish",
+              "media_id": "20260408_212846",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260408_212849_gp_VJjse8gw.jpg",
+              "caption": "Detached Body Panels And Doors \u00b7 Hardware Refinish \u00b7 2026-04-08",
+              "captured_date": "2026-04-08",
+              "captured_time": "21:28:49",
+              "media_type": "photo",
+              "component_group": "removable_panels",
+              "specific_component": "detached_body_panels_and_doors",
+              "stage": "hardware_refinish",
+              "media_id": "20260408_212849_gp_VJjse8gw",
+              "matched_tokens": []
             }
           ]
         }
       ],
-      "image_count": 30,
+      "image_count": 39,
       "reference_token_count": 16,
       "requirements": [],
       "pipe_requirements": [],
@@ -5090,39 +5306,39 @@ window.J40_DASHBOARD_DATA = {
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260412_223541_gp_QFRecOgQ.jpg",
-                  "caption": "Refinished Hinges Brackets And Trim \u00b7 Hardware Refinish \u00b7 2026-04-12",
-                  "captured_date": "2026-04-12",
-                  "captured_time": "22:35:41",
+                  "path": "../../photos/20260408_211804.jpg",
+                  "caption": "Detached Body Panels And Doors \u00b7 Hardware Refinish \u00b7 2026-04-08",
+                  "captured_date": "2026-04-08",
+                  "captured_time": "21:18:04",
                   "media_type": "photo",
                   "component_group": "removable_panels",
-                  "specific_component": "refinished_hinges_brackets_and_trim",
+                  "specific_component": "detached_body_panels_and_doors",
                   "stage": "hardware_refinish",
-                  "media_id": "20260412_223541_gp_QFRecOgQ",
+                  "media_id": "20260408_211804",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260412_223537_gp_kVu8OFJA.jpg",
-                  "caption": "Refinished Hinges Brackets And Trim \u00b7 Hardware Refinish \u00b7 2026-04-12",
-                  "captured_date": "2026-04-12",
-                  "captured_time": "22:35:37",
+                  "path": "../../photos/20260408_211806_gp_TbbCJsoQ.jpg",
+                  "caption": "Detached Body Panels And Doors \u00b7 Hardware Refinish \u00b7 2026-04-08",
+                  "captured_date": "2026-04-08",
+                  "captured_time": "21:18:06",
                   "media_type": "photo",
                   "component_group": "removable_panels",
-                  "specific_component": "refinished_hinges_brackets_and_trim",
+                  "specific_component": "detached_body_panels_and_doors",
                   "stage": "hardware_refinish",
-                  "media_id": "20260412_223537_gp_kVu8OFJA",
+                  "media_id": "20260408_211806_gp_TbbCJsoQ",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260412_223218_gp_fqniQhNQ.jpg",
-                  "caption": "Refinished Hinges Brackets And Trim \u00b7 Hardware Refinish \u00b7 2026-04-12",
-                  "captured_date": "2026-04-12",
-                  "captured_time": "22:32:18",
+                  "path": "../../photos/20260408_211812.jpg",
+                  "caption": "Detached Body Panels And Doors \u00b7 Hardware Refinish \u00b7 2026-04-08",
+                  "captured_date": "2026-04-08",
+                  "captured_time": "21:18:12",
                   "media_type": "photo",
                   "component_group": "removable_panels",
-                  "specific_component": "refinished_hinges_brackets_and_trim",
+                  "specific_component": "detached_body_panels_and_doors",
                   "stage": "hardware_refinish",
-                  "media_id": "20260412_223218_gp_fqniQhNQ",
+                  "media_id": "20260408_211812",
                   "matched_tokens": []
                 }
               ],
@@ -24131,7 +24347,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 27,
-      "reference_token_count": 6,
+      "reference_token_count": 7,
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
@@ -24150,11 +24366,11 @@ window.J40_DASHBOARD_DATA = {
           "title": "Mechanical Service Baseline",
           "lane": "mechanical",
           "current_state": "queued",
-          "objective": "Execute reliability service pack and document defects before upgrades.",
-          "blocker_summary": "6 mechanical safety/service rows need pricing + order.",
-          "gate_to_close": "Cooling/fuel/ignition/service baseline complete with leak-free checks.",
-          "key_procurement_actions": "Batch-buy must-replace consumables; keep inspect-then-replace items gated to inspection findings.",
-          "evidence_signal": "engine_bay baseline evidence present; service pack rows prepared"
+          "objective": "Execute reliability service pack, merged brake refresh prep, and document defects before upgrades.",
+          "blocker_summary": "18 mechanical/brake safety rows need pricing, measurement capture, or order.",
+          "gate_to_close": "Cooling/fuel/ignition/brake baseline complete with leak-free checks.",
+          "key_procurement_actions": "Batch-buy must-replace consumables; run brake spec capture before exact brake orders; keep inspect-then-replace items gated to measured findings.",
+          "evidence_signal": "engine_bay baseline evidence present; service pack and brake-system rows prepared"
         }
       ],
       "component_jobs": [
@@ -24197,7 +24413,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack and document defects before upgrades. Blocker: 6 mechanical safety/service rows need pricing + order. Procurement: Batch-buy must-replace consumables; keep inspect-then-replace items gated to inspection findings. Gate: Cooling/fuel/ignition/service baseline complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, and document defects before upgrades. Blocker: 18 mechanical/brake safety rows need pricing, measurement capture, or order. Procurement: Batch-buy must-replace consumables; run brake spec capture before exact brake orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -26033,7 +26249,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Front top of engine bay between thermostat housing and radiator",
           "pipe_or_line": "Upper radiator hose",
           "replace_scope": "replace",
-          "quantity": "1 molded hose; old-hose free length TBD mm if available",
+          "quantity": "1 molded HJ47/2H upper radiator hose; old-hose free length used only as match check",
           "photo_evidence": [
             "20260430_220004_gp_C9oYiYmA"
           ],
@@ -26070,7 +26286,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Front lower engine bay between radiator lower outlet and water pump/engine inlet",
           "pipe_or_line": "Lower radiator hose",
           "replace_scope": "replace",
-          "quantity": "1 molded hose; old-hose free length TBD mm if available",
+          "quantity": "1 molded HJ47/2H lower radiator hose; old-hose free length used only as match check",
           "photo_evidence": [
             "20260430_215957_gp_2iBbUagw",
             "20260430_220004_gp_C9oYiYmA"
@@ -26168,7 +26384,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Loose May 2 sample for front engine cooling route",
           "pipe_or_line": "Formed metal coolant/radiator pipe assembly",
           "replace_scope": "recreate_fabricate",
-          "quantity": "1 x 750 mm minimum tube blank; final centerline length TBD from physical sample",
+          "quantity": "1 x 750 mm minimum tube blank; quote 1000 mm stock if shop will not sell 750 mm",
           "photo_evidence": [
             "20260502_004044_gp_Hx4Yo0Qg",
             "20260502_004106_gp_wlYlUahA",
@@ -26182,12 +26398,12 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Recreate from physical sample using a 750 mm minimum tube blank; final centerline length must be measured from the physical sample. Match tube OD, wall thickness, bend radii, bend clocking, offset, end beads, hose clamp lands, and hose overlap in mm; visible planning envelope is roughly 400 mm vertical height and 250-300 mm upper offset but photos are not production dimensions",
+          "exact_recreation_spec": "Recreate from physical sample using a 750 mm minimum tube blank; if the local fabricator sells by foot or meter, buy/charge up to 1000 mm stock and trim after bending. Final centerline length must be measured from the physical sample. Match tube OD, wall thickness, bend radii, bend clocking, offset, end beads, hose clamp lands, and hose overlap in mm; visible planning envelope is roughly 400 mm vertical height and 250-300 mm upper offset but photos are not production dimensions",
           "material_spec": "Mild steel/aluminized steel or 304 stainless coolant-compatible tube; target wall 1.2-1.6 mm after fabricator confirmation",
-          "critical_measurements": "750 mm minimum tube blank, final centerline length in mm, tube OD in mm, hose ID in mm, wall thickness in mm, bend centerlines/radii/clocking, bead height in mm, clamp land length in mm, clearance to fan/belts/radiator/body",
+          "critical_measurements": "750 mm minimum tube blank or 1000 mm shop stock allowance, final centerline length in mm, tube OD in mm, hose ID in mm, wall thickness in mm, bend centerlines/radii/clocking, bead height in mm, clamp land length in mm, clearance to fan/belts/radiator/body",
           "fit_and_test": "Bench pressure-test before coating; dry-fit on vehicle; coat only after fit and pressure test",
           "source_ref": "docs_pipe_fabrication_spec_20260502|data_pipe_fabrication_specs|data_replacement_pipe_order_release_specs",
-          "notes": "Spec ready with physical-template hold: use order line RPO-COOL-005; 750 mm is the orderable blank allowance, not the final cut length.",
+          "notes": "Spec ready with physical-template hold: use order line RPO-COOL-005; 750 mm minimum / 1000 mm stock is the order allowance, not the final cut length.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004044_gp_Hx4Yo0Qg.jpg",
@@ -26270,7 +26486,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Loose May 2 sample for formed coolant pipe rubber joints",
           "pipe_or_line": "Formed coolant pipe rubber connector/coupler hoses",
           "replace_scope": "replace",
-          "quantity": "2 connector hoses; finished cut lengths and IDs TBD from physical sample and mating spigots",
+          "quantity": "2 connector hoses; buy 2 x 500 mm EPDM radiator hose blanks or 1000 mm total and cut to sample",
           "photo_evidence": [
             "20260502_004044_gp_Hx4Yo0Qg",
             "20260502_004106_gp_wlYlUahA",
@@ -26283,9 +26499,9 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Replace the two short rubber connector hoses visible on the formed coolant pipe assembly. Each connector must be ordered or cut by measured pipe-end OD, mating neck/spigot OD, finished free length, hose overlap, bend/offset, clamp land, and kink clearance in mm. Use straight EPDM coolant hose only where the measured path stays round; otherwise sample-match molded EPDM connectors.",
-          "material_spec": "EPDM coolant hose, SAE J20R3/J20R4 or molded coolant equivalent; new smooth-band or constant-tension clamps",
-          "critical_measurements": "Pipe end A OD and bead in mm, pipe end B OD and bead in mm, mating neck/spigot ODs in mm, connector free/cut lengths in mm, hose ID/OD in mm, overlap and clamp land in mm, installed bend/kink clearance",
+          "exact_recreation_spec": "Replace the two short rubber connector hoses visible on the formed coolant pipe assembly. Local market request: 2 pieces of EPDM radiator rubber pipe, 500 mm each, working ID 28-30 mm until caliper measurement confirms the pipe/spigot OD. Cut each connector by measured pipe-end OD, mating neck/spigot OD, finished free length, hose overlap, bend/offset, clamp land, and kink clearance in mm. Use straight EPDM coolant hose only where the measured path stays round; otherwise sample-match molded EPDM connectors.",
+          "material_spec": "EPDM coolant/radiator hose, SAE J20R3/J20R4 or molded coolant equivalent; new smooth-band or constant-tension clamps",
+          "critical_measurements": "2 x 500 mm connector blanks or 1000 mm total stock, working 28-30 mm ID confirmed by pipe/spigot OD, pipe end A OD and bead in mm, pipe end B OD and bead in mm, mating neck/spigot ODs in mm, connector free/cut lengths in mm, hose ID/OD in mm, overlap and clamp land in mm, installed bend/kink clearance",
           "fit_and_test": "Dry-fit with RP-COOL-005 pipe; pressure-test cooling system; no swelling, seepage, kink, or clamp-edge cutting",
           "source_ref": "docs_pipe_fabrication_spec_20260502|data_pipe_fabrication_specs|data_replacement_pipe_order_release_specs",
           "notes": "Added after visual audit: the rubber couplers were visible on the pipe sample but were not explicit order rows. Use order lines RPO-COOL-006A and RPO-COOL-006B.",
@@ -26409,7 +26625,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Chassis rail low-pressure fuel line route",
           "pipe_or_line": "Low-pressure fuel hard lines - feed and return",
           "replace_scope": "inspect_recreate_if_corroded",
-          "quantity": "5000 mm 8 mm OD feed tube + 5000 mm 6 mm OD return tube allowance; final section lengths TBD",
+          "quantity": "5000 mm 8 mm OD feed tube + 5000 mm 6 mm OD return tube; cut to route after inspection",
           "photo_evidence": [
             "20260422_004306_gp_vGlNr2UA",
             "20260422_004311_gp_994KQ0Pw"
@@ -26483,7 +26699,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Frame and axle brake hydraulic routes",
           "pipe_or_line": "Brake flex hoses and hard brake lines",
           "replace_scope": "replace_or_recreate_after_identification",
-          "quantity": "3 flex hoses working count + 7600 mm / 25 ft 4.75 mm brake tube coil allowance; final line lengths TBD",
+          "quantity": "3 flex hoses working count + 7600 mm / 25 ft 4.75 mm brake pipe coil; cut to final lines",
           "photo_evidence": [
             "photo_needed"
           ],
@@ -26507,7 +26723,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Bellhousing / clutch slave / master-to-slave route",
           "pipe_or_line": "Clutch flex hose and hard line",
           "replace_scope": "inspect_replace_if_cracked_corroded_or_leaking",
-          "quantity": "1 flex hose if required + 1500 mm hard-line blank if replacing; final route length TBD",
+          "quantity": "1 flex hose if required + 1500 mm 4.75 mm brake/clutch pipe blank if replacing",
           "photo_evidence": [
             "20260430_215939_gp_EjZ7u1ow"
           ],
@@ -26516,7 +26732,7 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Match clutch master/slave ports, route, movement allowance, hard-line OD in mm, flare/thread style, flex free length in mm, and section route length in mm; if the hard line is replaced, order a 1500 mm hard-line blank allowance and cut to measured route",
+          "exact_recreation_spec": "Match clutch master/slave ports, route, movement allowance, hard-line OD in mm, flare/thread style, flex free length in mm, and section route length in mm; if the hard line is replaced, order a 1500 mm 4.75 mm / 3/16 in brake/clutch-rated hard-line blank allowance and cut to measured route",
           "material_spec": "Brake/clutch hydraulic-rated flex hose or brake-rated hard line",
           "critical_measurements": "1500 mm hard-line blank allowance if replacing, master/slave port thread, flare style, hard-line OD in mm, final route length in mm, flex hose length in mm, movement clearance",
           "fit_and_test": "Bleed clutch hydraulics; verify no leak and no tension through drivetrain movement",
@@ -26546,7 +26762,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Front top of engine bay between thermostat housing and radiator",
           "pipe_or_line": "Upper radiator hose",
           "replace_scope": "replace",
-          "quantity": "1 molded hose; old-hose free length TBD mm if available",
+          "quantity": "1 molded HJ47/2H upper radiator hose; old-hose free length used only as match check",
           "photo_evidence": [
             "20260430_220004_gp_C9oYiYmA"
           ],
@@ -26583,7 +26799,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Front lower engine bay between radiator lower outlet and water pump/engine inlet",
           "pipe_or_line": "Lower radiator hose",
           "replace_scope": "replace",
-          "quantity": "1 molded hose; old-hose free length TBD mm if available",
+          "quantity": "1 molded HJ47/2H lower radiator hose; old-hose free length used only as match check",
           "photo_evidence": [
             "20260430_215957_gp_2iBbUagw",
             "20260430_220004_gp_C9oYiYmA"
@@ -26681,7 +26897,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Loose May 2 sample for front engine cooling route",
           "pipe_or_line": "Formed metal coolant/radiator pipe assembly",
           "replace_scope": "recreate_fabricate",
-          "quantity": "1 x 750 mm minimum tube blank; final centerline length TBD from physical sample",
+          "quantity": "1 x 750 mm minimum tube blank; quote 1000 mm stock if shop will not sell 750 mm",
           "photo_evidence": [
             "20260502_004044_gp_Hx4Yo0Qg",
             "20260502_004106_gp_wlYlUahA",
@@ -26695,12 +26911,12 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Recreate from physical sample using a 750 mm minimum tube blank; final centerline length must be measured from the physical sample. Match tube OD, wall thickness, bend radii, bend clocking, offset, end beads, hose clamp lands, and hose overlap in mm; visible planning envelope is roughly 400 mm vertical height and 250-300 mm upper offset but photos are not production dimensions",
+          "exact_recreation_spec": "Recreate from physical sample using a 750 mm minimum tube blank; if the local fabricator sells by foot or meter, buy/charge up to 1000 mm stock and trim after bending. Final centerline length must be measured from the physical sample. Match tube OD, wall thickness, bend radii, bend clocking, offset, end beads, hose clamp lands, and hose overlap in mm; visible planning envelope is roughly 400 mm vertical height and 250-300 mm upper offset but photos are not production dimensions",
           "material_spec": "Mild steel/aluminized steel or 304 stainless coolant-compatible tube; target wall 1.2-1.6 mm after fabricator confirmation",
-          "critical_measurements": "750 mm minimum tube blank, final centerline length in mm, tube OD in mm, hose ID in mm, wall thickness in mm, bend centerlines/radii/clocking, bead height in mm, clamp land length in mm, clearance to fan/belts/radiator/body",
+          "critical_measurements": "750 mm minimum tube blank or 1000 mm shop stock allowance, final centerline length in mm, tube OD in mm, hose ID in mm, wall thickness in mm, bend centerlines/radii/clocking, bead height in mm, clamp land length in mm, clearance to fan/belts/radiator/body",
           "fit_and_test": "Bench pressure-test before coating; dry-fit on vehicle; coat only after fit and pressure test",
           "source_ref": "docs_pipe_fabrication_spec_20260502|data_pipe_fabrication_specs|data_replacement_pipe_order_release_specs",
-          "notes": "Spec ready with physical-template hold: use order line RPO-COOL-005; 750 mm is the orderable blank allowance, not the final cut length.",
+          "notes": "Spec ready with physical-template hold: use order line RPO-COOL-005; 750 mm minimum / 1000 mm stock is the order allowance, not the final cut length.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004044_gp_Hx4Yo0Qg.jpg",
@@ -26783,7 +26999,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Loose May 2 sample for formed coolant pipe rubber joints",
           "pipe_or_line": "Formed coolant pipe rubber connector/coupler hoses",
           "replace_scope": "replace",
-          "quantity": "2 connector hoses; finished cut lengths and IDs TBD from physical sample and mating spigots",
+          "quantity": "2 connector hoses; buy 2 x 500 mm EPDM radiator hose blanks or 1000 mm total and cut to sample",
           "photo_evidence": [
             "20260502_004044_gp_Hx4Yo0Qg",
             "20260502_004106_gp_wlYlUahA",
@@ -26796,9 +27012,9 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Replace the two short rubber connector hoses visible on the formed coolant pipe assembly. Each connector must be ordered or cut by measured pipe-end OD, mating neck/spigot OD, finished free length, hose overlap, bend/offset, clamp land, and kink clearance in mm. Use straight EPDM coolant hose only where the measured path stays round; otherwise sample-match molded EPDM connectors.",
-          "material_spec": "EPDM coolant hose, SAE J20R3/J20R4 or molded coolant equivalent; new smooth-band or constant-tension clamps",
-          "critical_measurements": "Pipe end A OD and bead in mm, pipe end B OD and bead in mm, mating neck/spigot ODs in mm, connector free/cut lengths in mm, hose ID/OD in mm, overlap and clamp land in mm, installed bend/kink clearance",
+          "exact_recreation_spec": "Replace the two short rubber connector hoses visible on the formed coolant pipe assembly. Local market request: 2 pieces of EPDM radiator rubber pipe, 500 mm each, working ID 28-30 mm until caliper measurement confirms the pipe/spigot OD. Cut each connector by measured pipe-end OD, mating neck/spigot OD, finished free length, hose overlap, bend/offset, clamp land, and kink clearance in mm. Use straight EPDM coolant hose only where the measured path stays round; otherwise sample-match molded EPDM connectors.",
+          "material_spec": "EPDM coolant/radiator hose, SAE J20R3/J20R4 or molded coolant equivalent; new smooth-band or constant-tension clamps",
+          "critical_measurements": "2 x 500 mm connector blanks or 1000 mm total stock, working 28-30 mm ID confirmed by pipe/spigot OD, pipe end A OD and bead in mm, pipe end B OD and bead in mm, mating neck/spigot ODs in mm, connector free/cut lengths in mm, hose ID/OD in mm, overlap and clamp land in mm, installed bend/kink clearance",
           "fit_and_test": "Dry-fit with RP-COOL-005 pipe; pressure-test cooling system; no swelling, seepage, kink, or clamp-edge cutting",
           "source_ref": "docs_pipe_fabrication_spec_20260502|data_pipe_fabrication_specs|data_replacement_pipe_order_release_specs",
           "notes": "Added after visual audit: the rubber couplers were visible on the pipe sample but were not explicit order rows. Use order lines RPO-COOL-006A and RPO-COOL-006B.",
@@ -26922,7 +27138,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Chassis rail low-pressure fuel line route",
           "pipe_or_line": "Low-pressure fuel hard lines - feed and return",
           "replace_scope": "inspect_recreate_if_corroded",
-          "quantity": "5000 mm 8 mm OD feed tube + 5000 mm 6 mm OD return tube allowance; final section lengths TBD",
+          "quantity": "5000 mm 8 mm OD feed tube + 5000 mm 6 mm OD return tube; cut to route after inspection",
           "photo_evidence": [
             "20260422_004306_gp_vGlNr2UA",
             "20260422_004311_gp_994KQ0Pw"
@@ -26996,7 +27212,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Frame and axle brake hydraulic routes",
           "pipe_or_line": "Brake flex hoses and hard brake lines",
           "replace_scope": "replace_or_recreate_after_identification",
-          "quantity": "3 flex hoses working count + 7600 mm / 25 ft 4.75 mm brake tube coil allowance; final line lengths TBD",
+          "quantity": "3 flex hoses working count + 7600 mm / 25 ft 4.75 mm brake pipe coil; cut to final lines",
           "photo_evidence": [
             "photo_needed"
           ],
@@ -27020,7 +27236,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Bellhousing / clutch slave / master-to-slave route",
           "pipe_or_line": "Clutch flex hose and hard line",
           "replace_scope": "inspect_replace_if_cracked_corroded_or_leaking",
-          "quantity": "1 flex hose if required + 1500 mm hard-line blank if replacing; final route length TBD",
+          "quantity": "1 flex hose if required + 1500 mm 4.75 mm brake/clutch pipe blank if replacing",
           "photo_evidence": [
             "20260430_215939_gp_EjZ7u1ow"
           ],
@@ -27029,7 +27245,7 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Match clutch master/slave ports, route, movement allowance, hard-line OD in mm, flare/thread style, flex free length in mm, and section route length in mm; if the hard line is replaced, order a 1500 mm hard-line blank allowance and cut to measured route",
+          "exact_recreation_spec": "Match clutch master/slave ports, route, movement allowance, hard-line OD in mm, flare/thread style, flex free length in mm, and section route length in mm; if the hard line is replaced, order a 1500 mm 4.75 mm / 3/16 in brake/clutch-rated hard-line blank allowance and cut to measured route",
           "material_spec": "Brake/clutch hydraulic-rated flex hose or brake-rated hard line",
           "critical_measurements": "1500 mm hard-line blank allowance if replacing, master/slave port thread, flare style, hard-line OD in mm, final route length in mm, flex hose length in mm, movement clearance",
           "fit_and_test": "Bleed clutch hydraulics; verify no leak and no tension through drivetrain movement",
@@ -27878,13 +28094,13 @@ window.J40_DASHBOARD_DATA = {
           "order_line_id": "RPO-COOL-006A",
           "route": "CUT_OR_MOLDED_BY_TEMPLATE",
           "item": "Formed coolant pipe connector hose - end A",
-          "part_number_or_code": "Physical sample connector hose on RP-COOL-006 / RP-COOL-005 assembly",
-          "dimension_spec_mm": "Finished cut length TBD from physical sample; hose ID equals measured pipe end A OD/bead and mating neck OD; record hose overlap both ends, bend/offset, clamp band width, and hose OD for clamps in mm",
+          "part_number_or_code": "500 mm EPDM radiator hose blank for connector A",
+          "dimension_spec_mm": "Buy 500 mm EPDM coolant/radiator hose blank; working ID 28-30 mm until pipe end A and mating spigot are measured; cut to sample length after hose overlap and bend clearance are confirmed",
           "qty_required": "1",
-          "qty_to_order": "1 connector hose after ID confirmation",
+          "qty_to_order": "500 mm connector hose blank",
           "spec_status": "spec_ready",
           "order_release_state": "spec_ready_physical_template_hold",
-          "exact_order_spec": "Order or fabricate connector hose A only after measuring pipe end A OD, bead height, clamp land length, mating spigot OD, finished free length, hose overlap, bend/offset, and installed kink clearance in mm. Use straight EPDM coolant hose only if the measured route does not kink; otherwise sample-match a molded EPDM connector.",
+          "exact_order_spec": "Local market request: one 500 mm piece of EPDM radiator rubber pipe for connector A, working 28-30 mm ID, then cut only after measuring pipe end A OD, bead height, clamp land length, mating spigot OD, finished free length, hose overlap, bend/offset, and installed kink clearance in mm. Use straight EPDM coolant hose only if the measured route does not kink; otherwise sample-match a molded EPDM connector.",
           "material_spec": "EPDM coolant hose, SAE J20R3/J20R4 or molded coolant equivalent; new smooth-band or constant-tension clamps",
           "source_basis": "RP-COOL-006|RP-COOL-005|docs/pipe-fabrication-spec-20260502.md",
           "user_action_required": "Measure pipe end A OD and bead, mating neck OD, hose free/cut length, hose ID/OD, overlap, clamp OD, bend radius, and installed clearance in mm.",
@@ -27895,13 +28111,13 @@ window.J40_DASHBOARD_DATA = {
           "order_line_id": "RPO-COOL-006B",
           "route": "CUT_OR_MOLDED_BY_TEMPLATE",
           "item": "Formed coolant pipe connector hose - end B",
-          "part_number_or_code": "Physical sample connector hose on RP-COOL-006 / RP-COOL-005 assembly",
-          "dimension_spec_mm": "Finished cut length TBD from physical sample; hose ID equals measured pipe end B OD/bead and mating neck OD; record hose overlap both ends, bend/offset, clamp band width, and hose OD for clamps in mm",
+          "part_number_or_code": "500 mm EPDM radiator hose blank for connector B",
+          "dimension_spec_mm": "Buy 500 mm EPDM coolant/radiator hose blank; working ID 28-30 mm until pipe end B and mating spigot are measured; cut to sample length after hose overlap and bend clearance are confirmed",
           "qty_required": "1",
-          "qty_to_order": "1 connector hose after ID confirmation",
+          "qty_to_order": "500 mm connector hose blank",
           "spec_status": "spec_ready",
           "order_release_state": "spec_ready_physical_template_hold",
-          "exact_order_spec": "Order or fabricate connector hose B only after measuring pipe end B OD, bead height, clamp land length, mating spigot OD, finished free length, hose overlap, bend/offset, and installed kink clearance in mm. Use straight EPDM coolant hose only if the measured route does not kink; otherwise sample-match a molded EPDM connector.",
+          "exact_order_spec": "Local market request: one 500 mm piece of EPDM radiator rubber pipe for connector B, working 28-30 mm ID, then cut only after measuring pipe end B OD, bead height, clamp land length, mating spigot OD, finished free length, hose overlap, bend/offset, and installed kink clearance in mm. Use straight EPDM coolant hose only if the measured route does not kink; otherwise sample-match a molded EPDM connector.",
           "material_spec": "EPDM coolant hose, SAE J20R3/J20R4 or molded coolant equivalent; new smooth-band or constant-tension clamps",
           "source_basis": "RP-COOL-006|RP-COOL-005|docs/pipe-fabrication-spec-20260502.md",
           "user_action_required": "Measure pipe end B OD and bead, mating neck OD, hose free/cut length, hose ID/OD, overlap, clamp OD, bend radius, and installed clearance in mm.",
@@ -28249,13 +28465,13 @@ window.J40_DASHBOARD_DATA = {
           "pipe_or_line": "Upper radiator hose",
           "order_lines": "RPO-COOL-001",
           "photo_status": "direct_photo",
-          "barb_or_fitting_a": "thermostat_neck_od_tbd_mm",
-          "barb_or_fitting_b": "radiator_upper_neck_od_tbd_mm",
-          "route_length_mm": "molded_free_length_tbd_mm",
-          "tube_or_hose_od_id": "hose_id_by_molded_part_and_neck_od_mm",
+          "barb_or_fitting_a": "measure_thermostat_neck_od_mm",
+          "barb_or_fitting_b": "measure_radiator_upper_neck_od_mm",
+          "route_length_mm": "buy_molded_hj47_2h_upper_hose_old_length_match_check",
+          "tube_or_hose_od_id": "molded_epdm_sae_j20r4_id_by_neck_od",
           "thread_or_flare": "not_applicable",
           "bend_template_status": "molded_route_check_required",
-          "clip_support_status": "clamps_tbd_mm",
+          "clip_support_status": "2_smooth_band_or_constant_tension_clamps_by_hose_od",
           "release_status": "release_hold",
           "action_required": "Measure both neck ODs in mm and confirm molded route clearance before payment",
           "notes": "Toyota 16571-68020 / Dayco DMH1342 are cross-references only; record old-hose free length in mm if available."
@@ -28266,13 +28482,13 @@ window.J40_DASHBOARD_DATA = {
           "pipe_or_line": "Lower radiator hose",
           "order_lines": "RPO-COOL-002",
           "photo_status": "direct_photo",
-          "barb_or_fitting_a": "radiator_lower_outlet_od_tbd_mm",
-          "barb_or_fitting_b": "engine_inlet_od_tbd_mm",
-          "route_length_mm": "molded_free_length_tbd_mm",
-          "tube_or_hose_od_id": "hose_id_by_molded_part_and_neck_od_mm",
+          "barb_or_fitting_a": "measure_radiator_lower_outlet_od_mm",
+          "barb_or_fitting_b": "measure_engine_or_water_pump_inlet_od_mm",
+          "route_length_mm": "buy_molded_hj47_2h_lower_hose_old_length_match_check",
+          "tube_or_hose_od_id": "molded_epdm_sae_j20r4_id_by_neck_od",
           "thread_or_flare": "not_applicable",
           "bend_template_status": "molded_route_check_required",
-          "clip_support_status": "clamps_tbd_mm",
+          "clip_support_status": "2_smooth_band_or_constant_tension_clamps_by_hose_od",
           "release_status": "release_hold",
           "action_required": "Measure both neck ODs in mm and confirm lower bend clearance before payment",
           "notes": "Toyota 16572-68020 is a cross-reference only; record old-hose free length in mm if available."
@@ -28283,13 +28499,13 @@ window.J40_DASHBOARD_DATA = {
           "pipe_or_line": "Radiator overflow / breather hose",
           "order_lines": "RPO-COOL-003",
           "photo_status": "needs_close_photo",
-          "barb_or_fitting_a": "radiator_overflow_nipple_od_tbd_mm",
-          "barb_or_fitting_b": "bottle_nipple_od_tbd_mm",
-          "route_length_mm": "600_oe_reference_1000_local_buy_cut_to_route",
-          "tube_or_hose_od_id": "small_epdm_overflow_hose_id_tbd_mm",
+          "barb_or_fitting_a": "measure_radiator_overflow_nipple_od_mm",
+          "barb_or_fitting_b": "measure_bottle_nipple_od_mm",
+          "route_length_mm": "1000_mm_epdm_overflow_hose_stock_cut_to_route",
+          "tube_or_hose_od_id": "small_epdm_overflow_hose_id_by_nipple_od",
           "thread_or_flare": "not_applicable",
           "bend_template_status": "not_applicable",
-          "clip_support_status": "clip_or_clamp_tbd_mm",
+          "clip_support_status": "spring_clip_or_smooth_band_clamp_by_hose_od",
           "release_status": "release_hold",
           "action_required": "Capture close photo and measure nipple ODs plus finished route length in mm",
           "notes": "Buy 1000 mm locally if cutting; OE reference length is 600 mm."
@@ -28300,13 +28516,13 @@ window.J40_DASHBOARD_DATA = {
           "pipe_or_line": "Front heater water inlet and outlet hoses",
           "order_lines": "RPO-COOL-004A|RPO-COOL-004B",
           "photo_status": "needs_close_photo",
-          "barb_or_fitting_a": "engine_heater_nipple_od_tbd_mm",
-          "barb_or_fitting_b": "heater_core_nipple_od_tbd_mm",
-          "route_length_mm": "400_inlet_280_outlet_working_basis",
-          "tube_or_hose_od_id": "expected_16_mm_or_5_8_in_id_after_measurement",
+          "barb_or_fitting_a": "measure_engine_heater_nipple_od_mm",
+          "barb_or_fitting_b": "measure_heater_core_nipple_od_mm",
+          "route_length_mm": "400_mm_inlet_280_mm_outlet_or_1000_mm_stock_cut",
+          "tube_or_hose_od_id": "16_mm_5_8in_epdm_heater_hose_working_id_by_nipple_od",
           "thread_or_flare": "not_applicable",
           "bend_template_status": "not_applicable",
-          "clip_support_status": "clamps_tbd_mm",
+          "clip_support_status": "4_smooth_band_clamps_by_hose_od",
           "release_status": "release_hold",
           "action_required": "Measure nipple ODs in mm and confirm whether rear heater circuit exists",
           "notes": "Heater hose spec is ready but nipple size controls local hose ID."
@@ -28317,16 +28533,16 @@ window.J40_DASHBOARD_DATA = {
           "pipe_or_line": "Formed metal coolant/radiator pipe assembly",
           "order_lines": "RPO-COOL-005",
           "photo_status": "direct_template_photos",
-          "barb_or_fitting_a": "pipe_end_a_od_and_bead_tbd_mm",
-          "barb_or_fitting_b": "pipe_end_b_od_and_bead_tbd_mm",
-          "route_length_mm": "750_blank_allowance_final_centerline_length_tbd_mm_visible_envelope_400h_250_300_offset",
-          "tube_or_hose_od_id": "tube_od_wall_and_hose_id_tbd_mm",
+          "barb_or_fitting_a": "measure_pipe_end_a_od_and_bead_mm",
+          "barb_or_fitting_b": "measure_pipe_end_b_od_and_bead_mm",
+          "route_length_mm": "750_mm_min_tube_blank_or_1000_mm_shop_stock_final_centerline_from_sample",
+          "tube_or_hose_od_id": "28_30_mm_od_working_1_2_1_6_mm_wall_confirm_with_calipers",
           "thread_or_flare": "not_applicable",
           "bend_template_status": "physical_sample_required",
-          "clip_support_status": "clamp_lands_tbd_mm",
+          "clip_support_status": "straight_clamp_lands_25_30_mm_min_each_end",
           "release_status": "release_hold",
           "action_required": "Flat-lay physical sample and record final centerline length tube dimensions bend geometry beads clamp lands and installed clearances in mm",
-          "notes": "Orderable blank is 750 mm minimum; final centerline length must come from physical sample."
+          "notes": "Orderable blank is 750 mm minimum; allow 1000 mm stock if the shop sells by meter/foot; final centerline length must come from physical sample."
         },
         {
           "circuit_id": "RP-COOL-006",
@@ -28334,13 +28550,13 @@ window.J40_DASHBOARD_DATA = {
           "pipe_or_line": "Formed coolant pipe rubber connector/coupler hoses",
           "order_lines": "RPO-COOL-006A|RPO-COOL-006B",
           "photo_status": "direct_template_photos",
-          "barb_or_fitting_a": "pipe_end_a_od_and_mating_spigot_tbd_mm",
-          "barb_or_fitting_b": "pipe_end_b_od_and_mating_spigot_tbd_mm",
-          "route_length_mm": "connector_a_and_b_cut_lengths_tbd_mm",
-          "tube_or_hose_od_id": "epdm_coolant_hose_id_od_tbd_mm",
+          "barb_or_fitting_a": "measure_connector_a_pipe_od_and_mating_spigot_od_mm",
+          "barb_or_fitting_b": "measure_connector_b_pipe_od_and_mating_spigot_od_mm",
+          "route_length_mm": "2_x_500_mm_epdm_connector_blanks_or_1000_mm_total_cut_to_sample",
+          "tube_or_hose_od_id": "28_30_mm_id_epdm_coolant_hose_working_basis_confirm_by_od",
           "thread_or_flare": "not_applicable",
           "bend_template_status": "physical_sample_and_vehicle_dryfit_required",
-          "clip_support_status": "clamp_ods_and_band_widths_tbd_mm",
+          "clip_support_status": "4_smooth_band_or_constant_tension_clamps_by_hose_od",
           "release_status": "release_hold",
           "action_required": "Measure each connector hose ID OD free/cut length overlap clamp land bend clearance and both mating spigot ODs in mm before purchase",
           "notes": "Connector hoses are visible on the formed-pipe sample and now have separate release lines so they are not missed when the metal pipe is fabricated."
@@ -28351,13 +28567,13 @@ window.J40_DASHBOARD_DATA = {
           "pipe_or_line": "Diesel feed return and injector leak-off rubber hoses",
           "order_lines": "RPO-FUEL-001A|RPO-FUEL-001B|RPO-FUEL-001C",
           "photo_status": "direct_location_and_sample_photo",
-          "barb_or_fitting_a": "filter_and_pump_barbs_tbd_mm",
-          "barb_or_fitting_b": "injector_leakoff_nipples_tbd_mm",
+          "barb_or_fitting_a": "measure_8_mm_feed_and_6_mm_return_barbs_mm",
+          "barb_or_fitting_b": "measure_3_2_to_3_5_mm_leakoff_nipples_mm",
           "route_length_mm": "3000_feed_2000_return_1000_leakoff_buy_lengths",
           "tube_or_hose_od_id": "8mm_feed_6mm_return_3_2_to_3_5mm_leakoff_working_basis",
           "thread_or_flare": "not_applicable",
           "bend_template_status": "not_applicable",
-          "clip_support_status": "fuel_injection_clamps_tbd_mm",
+          "clip_support_status": "rolled_edge_fuel_injection_clamps_by_hose_od",
           "release_status": "release_hold",
           "action_required": "Measure every barb in mm and read sample hose markings before purchase",
           "notes": "Diesel-rated hose only; no high-pressure injector pipe fabrication."
@@ -28368,11 +28584,11 @@ window.J40_DASHBOARD_DATA = {
           "pipe_or_line": "Low-pressure fuel hard lines - feed and return",
           "order_lines": "RPO-FUEL-002A|RPO-FUEL-002B|RPO-CLIP-001",
           "photo_status": "direct_location_photo",
-          "barb_or_fitting_a": "line_end_fitting_a_tbd",
-          "barb_or_fitting_b": "line_end_fitting_b_tbd",
-          "route_length_mm": "5000_feed_allowance_5000_return_allowance_final_section_lengths_tbd_mm",
+          "barb_or_fitting_a": "feed_line_end_fittings_match_original",
+          "barb_or_fitting_b": "return_line_end_fittings_match_original",
+          "route_length_mm": "5000_mm_8mm_od_feed_plus_5000_mm_6mm_od_return_stock_cut_to_route",
           "tube_or_hose_od_id": "8mm_feed_6mm_return_working_basis",
-          "thread_or_flare": "end_style_tbd",
+          "thread_or_flare": "flare_or_union_style_match_original_after_inspection",
           "bend_template_status": "old_line_or_route_template_needed",
           "clip_support_status": "pclip_spacing_300_400mm",
           "release_status": "release_hold",
@@ -28385,13 +28601,13 @@ window.J40_DASHBOARD_DATA = {
           "pipe_or_line": "Vacuum hose and breather/oil mist hose",
           "order_lines": "RPO-VAC-001A|RPO-VAC-001B|RPO-VAC-001C",
           "photo_status": "needs_close_photo",
-          "barb_or_fitting_a": "vacuum_pump_or_breather_spigot_tbd_mm",
-          "barb_or_fitting_b": "booster_checkvalve_or_breather_end_tbd_mm",
+          "barb_or_fitting_a": "measure_vacuum_pump_or_breather_spigot_od_mm",
+          "barb_or_fitting_b": "measure_booster_checkvalve_or_breather_end_od_mm",
           "route_length_mm": "2000_vacuum_1000_breather_buy_lengths_cut_to_measured_route",
           "tube_or_hose_od_id": "10_12mm_vacuum_and_16_19mm_breather_working_basis",
           "thread_or_flare": "not_applicable",
           "bend_template_status": "not_applicable",
-          "clip_support_status": "clamps_tbd_mm",
+          "clip_support_status": "smooth_band_clamps_by_hose_od",
           "release_status": "release_hold",
           "action_required": "Capture close photos and measure barbs spigots check-valve direction route length and oil exposure",
           "notes": "Confirm whether Toyota/OEM 90923-02079 hose is fitted before ordering it; measure length/end IDs in mm if sourcing local."
@@ -28402,13 +28618,13 @@ window.J40_DASHBOARD_DATA = {
           "pipe_or_line": "Brake flex hoses and hard brake lines",
           "order_lines": "RPO-BRAKE-001A|RPO-BRAKE-001B|RPO-CLIP-001",
           "photo_status": "needs_brake_close_photos",
-          "barb_or_fitting_a": "caliper_wheel_cylinder_or_union_tbd",
-          "barb_or_fitting_b": "master_proportioning_or_axle_tbd",
-          "route_length_mm": "7600_coil_allowance_final_individual_routes_tbd_mm",
+          "barb_or_fitting_a": "front_caliper_rear_wheel_cylinder_union_fittings_identify",
+          "barb_or_fitting_b": "master_proportioning_axle_fittings_identify",
+          "route_length_mm": "7600_mm_25ft_4_75mm_3_16in_brake_pipe_coil_cut_to_routes",
           "tube_or_hose_od_id": "3_16in_4_75mm_working_basis_until_measured",
-          "thread_or_flare": "thread_flare_banjo_tbd",
+          "thread_or_flare": "match_flare_thread_banjo_seat_from_old_lines",
           "bend_template_status": "old_line_template_required",
-          "clip_support_status": "pclip_and_retaining_clip_tbd",
+          "clip_support_status": "pclips_and_retaining_clips_by_line_od",
           "release_status": "release_hold",
           "action_required": "Capture fitting close-ups and confirm tube OD flare standard union thread fitting seat individual route lengths and full-droop slack in mm before ordering or fabrication",
           "notes": "Safety circuit; 7600 mm / 25 ft coil allowance is for ordering only; pressure bleed and leak-test required."
@@ -28419,13 +28635,13 @@ window.J40_DASHBOARD_DATA = {
           "pipe_or_line": "Clutch flex hose and hard line",
           "order_lines": "RPO-CLUTCH-001A|RPO-CLUTCH-001B",
           "photo_status": "direct_location_photo",
-          "barb_or_fitting_a": "master_port_thread_or_line_end_tbd",
-          "barb_or_fitting_b": "slave_port_thread_or_line_end_tbd",
-          "route_length_mm": "1500_hard_line_blank_allowance_final_route_tbd_mm",
-          "tube_or_hose_od_id": "hard_line_od_and_flex_length_tbd_mm",
-          "thread_or_flare": "thread_flare_seat_tbd",
+          "barb_or_fitting_a": "identify_master_port_thread_or_line_end",
+          "barb_or_fitting_b": "identify_slave_port_thread_or_line_end",
+          "route_length_mm": "1500_mm_4_75mm_3_16in_brake_clutch_pipe_blank_if_replacing_cut_to_route",
+          "tube_or_hose_od_id": "4_75mm_3_16in_hard_line_working_basis_plus_measured_flex_length",
+          "thread_or_flare": "match_thread_flare_seat_from_old_line",
           "bend_template_status": "old_line_or_route_template_if_replacing",
-          "clip_support_status": "clips_tbd",
+          "clip_support_status": "reuse_or_replace_clips_by_line_od",
           "release_status": "release_hold",
           "action_required": "Photograph close-ups and measure port threads flare style flex length hard-line OD and drivetrain movement clearance in mm",
           "notes": "Inspect first; replace only if cracked corroded swollen or leaking; 1500 mm blank allowance applies only if hard line is replaced."
@@ -28524,11 +28740,12 @@ window.J40_DASHBOARD_DATA = {
       "owner_mode": "pro_led",
       "depends_on": [
         "chassis_fixing",
-        "mechanical_baseline"
+        "mechanical_baseline",
+        "suspension_upgrade"
       ],
-      "next_action": "Use rear-axle evidence to replace brake cables, axle hard lines, rear flex hose, and drum service parts before final chassis coating or reassembly",
-      "exit_gate": "Brake hardware and hydraulics are positively identified, safety-critical wear parts are scoped or bought, and no brake-system unknown blocks reassembly",
-      "notes": "Dedicated brake track split out from the umbrella steering/suspension stream; rear axle cables/lines are now baseline replacement scope alongside the front disc / rear drum refresh decision.",
+      "next_action": "Use the merged suspension/brake window to identify fitted front disc hardware, replace standard front/rear brake service parts, and renew rear cables/lines with full-droop validation",
+      "exit_gate": "Brake hardware and hydraulics are positively identified, safety-critical wear parts are scoped or bought, rear cables/lines are replaced, and no brake-system unknown blocks suspension closeout or reassembly",
+      "notes": "Dedicated brake track split out from the umbrella steering/suspension stream; standard front and rear brake service parts are now baseline replacement scope while exact part numbers remain gated by fitted hardware and old samples.",
       "evidence_source": [
         "photo_inventory",
         "20260324_004852",
@@ -28537,9 +28754,38 @@ window.J40_DASHBOARD_DATA = {
         "20260501_194313_gp_lfUqLibA",
         "20260501_194322_gp_XuRtjN4w",
         "data_brake_system_requirements",
-        "docs_brake_workstream"
+        "docs_brake_workstream",
+        "docs_suspension_brake_merged_work_plan"
       ],
       "images": [
+        {
+          "path": "../../photos/20260422_004356_gp_vTFgPfAQ_2.jpg",
+          "caption": "Engine Bay Chassis Interface \u00b7 Underside Inspection \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "00:43:56",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "engine_bay_chassis_interface",
+          "stage": "underside_inspection",
+          "media_id": "20260422_004356_gp_vTFgPfAQ_2",
+          "matched_tokens": [
+            "engine_bay"
+          ]
+        },
+        {
+          "path": "../../photos/20260422_004347_gp_WIy0j6zw_2.jpg",
+          "caption": "Engine Bay Chassis Interface \u00b7 Underside Inspection \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "00:43:47",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "engine_bay_chassis_interface",
+          "stage": "underside_inspection",
+          "media_id": "20260422_004347_gp_WIy0j6zw_2",
+          "matched_tokens": [
+            "engine_bay"
+          ]
+        },
         {
           "path": "../../photos/20260331_224423.jpg",
           "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
@@ -28608,6 +28854,20 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "20260423_232202_gp_ryYH6xZg",
           "matched_tokens": [
             "20260423_232202_gp_ryyh6xzg"
+          ]
+        },
+        {
+          "path": "../../photos/20260422_004412_gp_OclpaTdg_2.jpg",
+          "caption": "Engine Bay Chassis Interface \u00b7 Underside Inspection \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "00:44:12",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "engine_bay_chassis_interface",
+          "stage": "underside_inspection",
+          "media_id": "20260422_004412_gp_OclpaTdg_2",
+          "matched_tokens": [
+            "engine_bay"
           ]
         },
         {
@@ -28797,6 +29057,34 @@ window.J40_DASHBOARD_DATA = {
           "description": "Best-matched photos for this workstream from component/stage mapping and evidence references.",
           "images": [
             {
+              "path": "../../photos/20260422_004356_gp_vTFgPfAQ_2.jpg",
+              "caption": "Engine Bay Chassis Interface \u00b7 Underside Inspection \u00b7 2026-04-22",
+              "captured_date": "2026-04-22",
+              "captured_time": "00:43:56",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "engine_bay_chassis_interface",
+              "stage": "underside_inspection",
+              "media_id": "20260422_004356_gp_vTFgPfAQ_2",
+              "matched_tokens": [
+                "engine_bay"
+              ]
+            },
+            {
+              "path": "../../photos/20260422_004347_gp_WIy0j6zw_2.jpg",
+              "caption": "Engine Bay Chassis Interface \u00b7 Underside Inspection \u00b7 2026-04-22",
+              "captured_date": "2026-04-22",
+              "captured_time": "00:43:47",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "engine_bay_chassis_interface",
+              "stage": "underside_inspection",
+              "media_id": "20260422_004347_gp_WIy0j6zw_2",
+              "matched_tokens": [
+                "engine_bay"
+              ]
+            },
+            {
               "path": "../../photos/20260331_224423.jpg",
               "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
               "captured_date": "2026-03-31",
@@ -28867,6 +29155,20 @@ window.J40_DASHBOARD_DATA = {
               ]
             },
             {
+              "path": "../../photos/20260422_004412_gp_OclpaTdg_2.jpg",
+              "caption": "Engine Bay Chassis Interface \u00b7 Underside Inspection \u00b7 2026-04-22",
+              "captured_date": "2026-04-22",
+              "captured_time": "00:44:12",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "engine_bay_chassis_interface",
+              "stage": "underside_inspection",
+              "media_id": "20260422_004412_gp_OclpaTdg_2",
+              "matched_tokens": [
+                "engine_bay"
+              ]
+            },
+            {
               "path": "../../photos/20260406_031010.jpg",
               "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-06",
               "captured_date": "2026-04-06",
@@ -28911,9 +29213,33 @@ window.J40_DASHBOARD_DATA = {
           ]
         }
       ],
-      "image_count": 8,
-      "reference_token_count": 12,
+      "image_count": 11,
+      "reference_token_count": 14,
       "requirements": [
+        {
+          "requirement_id": "BR-CAPTURE-001",
+          "requirement_name": "Brake order-release photo capture pack",
+          "pipe_id": "",
+          "vehicle_location": "All front and rear brake ordering gates",
+          "pipe_or_line": "",
+          "replace_scope": "capture_task",
+          "quantity": "1_complete_set",
+          "photo_evidence": [
+            "existing_photos_are_context_only"
+          ],
+          "photo_status": "next_close_up_photo_pass_required",
+          "spec_status": "blocks_exact_part_release",
+          "acquisition_status": "not_applicable",
+          "installation_status": "not_applicable",
+          "current_action": "Before any brake ordering or removal, capture wide route photos plus close-ups with a ruler/label at every brake hose end, hard-line fitting, parking-brake cable end, equalizer, wheel cylinder, front caliper, master/proportioning port, and clip/retainer position.",
+          "exact_recreation_spec": "Create a labeled photo set that lets a remote brake/Toyota parts supplier identify fitted hardware, cable ends, hose ends, line flare/thread/seat, drum internals, and front conversion parts before payment.",
+          "material_spec": "Phone/camera with flash, ruler or tape, calipers, labels, paint marker, clean background for removed samples, and old parts retained until replacements fit.",
+          "critical_measurements": "Front caliper casting and pad shape, front hose end/bracket/free length, rear center hose ends and T/union, rear hard-line flare/thread/seat, rear cable end types and lengths, rear drum internal shoe/spring/cylinder layout, master/proportioning ports, clip count and position.",
+          "fit_and_test": "Photo set must be good enough to release or reject exact brake parts without guessing; no old cable, hose, hard line, or clip sample is discarded before replacement is fitted.",
+          "source_ref": "docs_brake_workstream|suspension_brake_merged_work_plan",
+          "notes": "Existing images confirm architecture and broad routing, but they are not close enough to identify thread, flare, fitting seat, cable end, or exact hose style.",
+          "evidence_images": []
+        },
         {
           "requirement_id": "BR-REAR-001",
           "requirement_name": "Rear parking brake / handbrake cable set",
@@ -29148,7 +29474,7 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Left and right rear drum backing plates",
           "pipe_or_line": "",
-          "replace_scope": "replace_or_rebuild_pair",
+          "replace_scope": "replace_pair_after_identification",
           "quantity": "2",
           "photo_evidence": [
             "20260501_194322_gp_XuRtjN4w",
@@ -29165,7 +29491,7 @@ window.J40_DASHBOARD_DATA = {
           "critical_measurements": "Cylinder bore, mounting bolt spacing, port thread, pushrod/slot style, backing plate side, drum/shoe family, bleed screw size",
           "fit_and_test": "No fluid leak at boots or ports; bleed screws open cleanly; shoes sit square and return correctly after adjustment",
           "source_ref": "docs_brake_workstream|rear_brake_drum_baseline",
-          "notes": "Wheel cylinders are safety-critical and should be treated as age-replacement unless proven recent.",
+          "notes": "Wheel cylinders are baseline age-replacement unless proven recently new and leak-free.",
           "evidence_images": [
             {
               "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
@@ -29211,7 +29537,7 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Left and right rear drums and internal shoe hardware",
           "pipe_or_line": "",
-          "replace_scope": "inspect_then_order",
+          "replace_scope": "replace_after_drum_identification",
           "quantity": "1_axle_set",
           "photo_evidence": [
             "20260501_194322_gp_XuRtjN4w",
@@ -29228,7 +29554,7 @@ window.J40_DASHBOARD_DATA = {
           "critical_measurements": "Drum inside diameter, shoe width, shoe arc/length, adjuster style, spring layout, backing plate condition, shoe lining condition, drum scoring/step",
           "fit_and_test": "Rear drums adjusted evenly; no drag after release; parking brake holds evenly after bedding and adjustment",
           "source_ref": "docs_brake_workstream|rear_brake_drum_baseline",
-          "notes": "Keep rear drums as the default unless inspection gives a real reason to convert.",
+          "notes": "Rear shoes and hardware are baseline replacement items; keep rear drums as the default unless inspection gives a real reason to convert.",
           "evidence_images": [
             {
               "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
@@ -29343,6 +29669,462 @@ window.J40_DASHBOARD_DATA = {
               "matched_tokens": []
             }
           ]
+        },
+        {
+          "requirement_id": "BR-FRONT-001",
+          "requirement_name": "Front disc pads and retaining hardware",
+          "pipe_id": "",
+          "vehicle_location": "Front disc calipers and rotors",
+          "pipe_or_line": "",
+          "replace_scope": "replace_after_caliper_identification",
+          "quantity": "1_axle_set",
+          "photo_evidence": [
+            "20260423_232202_gp_ryYH6xZg",
+            "20260423_232220_gp_ezwEcH2g",
+            "20260423_232236_gp_caYB252g",
+            "20260406_031010"
+          ],
+          "photo_status": "supporting_front_disc_photos",
+          "spec_status": "needs_caliper_pad_identification",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "Assume front pad and hardware replacement in the baseline refresh; photograph calipers, pad shape, and retaining hardware before ordering.",
+          "exact_recreation_spec": "Replace front pads and retaining or anti-rattle hardware matched to the fitted front disc conversion caliper and rotor setup.",
+          "material_spec": "Brake friction pads and new retaining hardware matched to fitted caliper; no used pads",
+          "critical_measurements": "Pad outline, pad thickness, rotor diameter/thickness if accessible, caliper casting/part numbers, retaining pin/spring style",
+          "fit_and_test": "Even pad contact, no drag, no pull, no noise, bedded according to pad maker or workshop procedure",
+          "source_ref": "docs_brake_workstream|front_brake_disc_baseline",
+          "notes": "Do not buy from 1978 catalog alone because front discs appear to be a previous conversion.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+              "caption": "Frame And Mount Points \u00b7 Underside Inspection \u00b7 2026-04-23",
+              "captured_date": "2026-04-23",
+              "captured_time": "23:22:02",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "frame_and_mount_points",
+              "stage": "underside_inspection",
+              "media_id": "20260423_232202_gp_ryYH6xZg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
+              "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+              "captured_date": "2026-04-23",
+              "captured_time": "23:22:20",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "steering_and_suspension_linkages",
+              "stage": "underside_inspection",
+              "media_id": "20260423_232220_gp_ezwEcH2g",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260423_232236_gp_caYB252g.jpg",
+              "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+              "captured_date": "2026-04-23",
+              "captured_time": "23:22:36",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "steering_and_suspension_linkages",
+              "stage": "underside_inspection",
+              "media_id": "20260423_232236_gp_caYB252g",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260406_031010.jpg",
+              "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-06",
+              "captured_date": "2026-04-06",
+              "captured_time": "03:10:10",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "steering_and_suspension_linkages",
+              "stage": "underside_inspection",
+              "media_id": "20260406_031010",
+              "matched_tokens": []
+            }
+          ]
+        },
+        {
+          "requirement_id": "BR-FRONT-002",
+          "requirement_name": "Front caliper rebuild kits or replacement calipers",
+          "pipe_id": "",
+          "vehicle_location": "Front disc calipers",
+          "pipe_or_line": "",
+          "replace_scope": "replace_or_rebuild_after_identification",
+          "quantity": "2",
+          "photo_evidence": [
+            "20260423_232202_gp_ryYH6xZg",
+            "20260423_232220_gp_ezwEcH2g",
+            "20260423_232236_gp_caYB252g",
+            "20260406_031010"
+          ],
+          "photo_status": "supporting_front_disc_photos",
+          "spec_status": "needs_caliper_family_identification",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "Inspect both front calipers during pad service and plan rebuild or replacement if there is leakage, seizure, torn boots, damaged pistons, stuck sliders, or unknown unsafe condition.",
+          "exact_recreation_spec": "Match the fitted caliper family, piston count/diameter, seal kit, bleed screw, inlet fitting, mounting ear spacing, and pad hardware.",
+          "material_spec": "Brake caliper seal kits or matched new/rebuilt calipers with brake-fluid-compatible seals and dust boots",
+          "critical_measurements": "Casting marks, piston count/diameter, inlet fitting, bleed screw size, mounting bolt spacing, pad hardware style",
+          "fit_and_test": "No leaks, pistons move/retract cleanly, bleed screws open, no pull or drag after road test",
+          "source_ref": "docs_brake_workstream|front_brake_disc_baseline",
+          "notes": "Treat calipers as safety-critical; exact parts wait for fitted conversion identification.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+              "caption": "Frame And Mount Points \u00b7 Underside Inspection \u00b7 2026-04-23",
+              "captured_date": "2026-04-23",
+              "captured_time": "23:22:02",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "frame_and_mount_points",
+              "stage": "underside_inspection",
+              "media_id": "20260423_232202_gp_ryYH6xZg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
+              "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+              "captured_date": "2026-04-23",
+              "captured_time": "23:22:20",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "steering_and_suspension_linkages",
+              "stage": "underside_inspection",
+              "media_id": "20260423_232220_gp_ezwEcH2g",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260423_232236_gp_caYB252g.jpg",
+              "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+              "captured_date": "2026-04-23",
+              "captured_time": "23:22:36",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "steering_and_suspension_linkages",
+              "stage": "underside_inspection",
+              "media_id": "20260423_232236_gp_caYB252g",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260406_031010.jpg",
+              "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-06",
+              "captured_date": "2026-04-06",
+              "captured_time": "03:10:10",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "steering_and_suspension_linkages",
+              "stage": "underside_inspection",
+              "media_id": "20260406_031010",
+              "matched_tokens": []
+            }
+          ]
+        },
+        {
+          "requirement_id": "BR-FRONT-003",
+          "requirement_name": "Front rotor machine or replacement decision",
+          "pipe_id": "",
+          "vehicle_location": "Front rotors",
+          "pipe_or_line": "",
+          "replace_scope": "machine_or_replace_by_service_limit",
+          "quantity": "2",
+          "photo_evidence": [
+            "20260423_232202_gp_ryYH6xZg",
+            "20260423_232220_gp_ezwEcH2g",
+            "20260423_232236_gp_caYB252g",
+            "20260406_031010"
+          ],
+          "photo_status": "supporting_front_disc_photos",
+          "spec_status": "needs_rotor_measurement",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "Measure and inspect rotors during front brake service; machine or replace only if scoring, cracking, runout, or thickness/service limit requires it.",
+          "exact_recreation_spec": "Match rotor diameter, thickness, hub/register pattern, stud pattern, and caliper clearance to the fitted front conversion.",
+          "material_spec": "Brake rotors matched to fitted hub/caliper setup; machine only within service limits",
+          "critical_measurements": "Rotor diameter, current thickness, minimum thickness marking/manual limit, runout, scoring/step, hub face condition",
+          "fit_and_test": "No pedal pulsation, no scoring contact, no caliper interference, no wheel/hub fit issue",
+          "source_ref": "docs_brake_workstream|front_brake_disc_baseline",
+          "notes": "Rotors are not a blind age-replacement item; condition and service limits control the decision.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+              "caption": "Frame And Mount Points \u00b7 Underside Inspection \u00b7 2026-04-23",
+              "captured_date": "2026-04-23",
+              "captured_time": "23:22:02",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "frame_and_mount_points",
+              "stage": "underside_inspection",
+              "media_id": "20260423_232202_gp_ryYH6xZg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
+              "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+              "captured_date": "2026-04-23",
+              "captured_time": "23:22:20",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "steering_and_suspension_linkages",
+              "stage": "underside_inspection",
+              "media_id": "20260423_232220_gp_ezwEcH2g",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260423_232236_gp_caYB252g.jpg",
+              "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+              "captured_date": "2026-04-23",
+              "captured_time": "23:22:36",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "steering_and_suspension_linkages",
+              "stage": "underside_inspection",
+              "media_id": "20260423_232236_gp_caYB252g",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260406_031010.jpg",
+              "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-06",
+              "captured_date": "2026-04-06",
+              "captured_time": "03:10:10",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "steering_and_suspension_linkages",
+              "stage": "underside_inspection",
+              "media_id": "20260406_031010",
+              "matched_tokens": []
+            }
+          ]
+        },
+        {
+          "requirement_id": "BR-FRONT-004",
+          "requirement_name": "Front flexible brake hoses",
+          "pipe_id": "",
+          "vehicle_location": "Front frame-to-caliper hydraulic drops",
+          "pipe_or_line": "",
+          "replace_scope": "replace_after_fitting_identification",
+          "quantity": "2",
+          "photo_evidence": [
+            "20260423_232202_gp_ryYH6xZg",
+            "20260423_232220_gp_ezwEcH2g",
+            "20260423_232236_gp_caYB252g",
+            "20260406_031010"
+          ],
+          "photo_status": "supporting_front_disc_photos",
+          "spec_status": "needs_fitting_and_length_identification",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "Replace both front flex hoses with the brake hose set after hose ends, bracket retention, lock-to-lock clearance, and Ironman full-droop slack are captured.",
+          "exact_recreation_spec": "Match chassis-side fitting, caliper-side fitting or banjo, bracket/clip style, free length, and route with steering at full lock and axle at supported droop.",
+          "material_spec": "Complete crimped brake flex hose assemblies rated DOT/SAE J1401 or OEM-equivalent; no generic rubber hose fabrication",
+          "critical_measurements": "Thread/banjo style, hose free length, bracket slot, retaining clip, steering lock clearance, full-droop slack",
+          "fit_and_test": "No stretch at full droop, no twist, no tyre/spring/shock contact, leak-free pressure test",
+          "source_ref": "docs_brake_workstream|part_mech_brake_flex_hose_set",
+          "notes": "Front hoses must be validated with the Ironman suspension geometry.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+              "caption": "Frame And Mount Points \u00b7 Underside Inspection \u00b7 2026-04-23",
+              "captured_date": "2026-04-23",
+              "captured_time": "23:22:02",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "frame_and_mount_points",
+              "stage": "underside_inspection",
+              "media_id": "20260423_232202_gp_ryYH6xZg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
+              "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+              "captured_date": "2026-04-23",
+              "captured_time": "23:22:20",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "steering_and_suspension_linkages",
+              "stage": "underside_inspection",
+              "media_id": "20260423_232220_gp_ezwEcH2g",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260423_232236_gp_caYB252g.jpg",
+              "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+              "captured_date": "2026-04-23",
+              "captured_time": "23:22:36",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "steering_and_suspension_linkages",
+              "stage": "underside_inspection",
+              "media_id": "20260423_232236_gp_caYB252g",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260406_031010.jpg",
+              "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-06",
+              "captured_date": "2026-04-06",
+              "captured_time": "03:10:10",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "steering_and_suspension_linkages",
+              "stage": "underside_inspection",
+              "media_id": "20260406_031010",
+              "matched_tokens": []
+            }
+          ]
+        },
+        {
+          "requirement_id": "BR-SYS-001",
+          "requirement_name": "Master cylinder reservoir and brake-balance service decision",
+          "pipe_id": "",
+          "vehicle_location": "Master cylinder reservoir booster and proportioning area",
+          "pipe_or_line": "",
+          "replace_scope": "inspect_then_replace_if_failed_or_unknown_unsafe",
+          "quantity": "1_system",
+          "photo_evidence": [
+            "20260331_224409",
+            "20260331_224423",
+            "20260324_004852",
+            "20260423_232220_gp_ezwEcH2g"
+          ],
+          "photo_status": "supporting_hydraulic_photos",
+          "spec_status": "needs_master_layout_capture",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "Photograph and inspect the installed master, reservoir, booster, vacuum hose, and proportioning/bias hardware before buying system-level parts.",
+          "exact_recreation_spec": "Replace master cylinder, reservoir seals/caps/hoses, or proportioning hardware only after installed bore, port threads, flare seats, and leak condition are confirmed.",
+          "material_spec": "Brake master/reservoir components and brake-fluid-compatible seals matched to the installed system",
+          "critical_measurements": "Master bore/markings, reservoir condition, port threads, flare seats, booster/vacuum layout, proportioning valve ports",
+          "fit_and_test": "Firm pedal, no external leaks, no internal bypass symptoms, correct front/rear brake balance in road validation",
+          "source_ref": "docs_brake_workstream|brake_hydraulic_refresh_and_bias_decision",
+          "notes": "System-level parts are safety-critical but must match the installed conversion and plumbing.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260331_224409.jpg",
+              "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
+              "captured_date": "2026-03-31",
+              "captured_time": "22:44:09",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "frame_floor_underside_and_lines",
+              "stage": "underside_inspection",
+              "media_id": "20260331_224409",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260331_224423.jpg",
+              "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
+              "captured_date": "2026-03-31",
+              "captured_time": "22:44:23",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "frame_floor_underside_and_lines",
+              "stage": "underside_inspection",
+              "media_id": "20260331_224423",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260324_004852.jpg",
+              "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+              "captured_date": "2026-03-24",
+              "captured_time": "00:48:52",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_axle_and_leaf_springs",
+              "stage": "underside_inspection",
+              "media_id": "20260324_004852",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
+              "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+              "captured_date": "2026-04-23",
+              "captured_time": "23:22:20",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "steering_and_suspension_linkages",
+              "stage": "underside_inspection",
+              "media_id": "20260423_232220_gp_ezwEcH2g",
+              "matched_tokens": []
+            }
+          ]
+        },
+        {
+          "requirement_id": "BR-SYS-002",
+          "requirement_name": "Brake fluid and bleed consumables",
+          "pipe_id": "",
+          "vehicle_location": "Full brake hydraulic system",
+          "pipe_or_line": "",
+          "replace_scope": "replace",
+          "quantity": "1_full_system",
+          "photo_evidence": [
+            "20260331_224409",
+            "20260331_224423",
+            "20260324_004852",
+            "20260423_232220_gp_ezwEcH2g"
+          ],
+          "photo_status": "supporting_hydraulic_photos",
+          "spec_status": "needs_fluid_spec_confirmation",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "Have brake fluid, clear bleed hose, catch bottle or bleeder, line caps/plugs, brake cleaner, rags, and gloves ready before any hydraulic line is opened.",
+          "exact_recreation_spec": "Flush and bleed the full system after any hose, hard-line, wheel-cylinder, caliper, or master work.",
+          "material_spec": "Brake fluid to cap/manual/workshop spec; clean bleed hose/bottle; brake cleaner; line caps/plugs",
+          "critical_measurements": "Fluid spec, total fluid volume for full bleed, bleed screw sizes, bleed order from manual/workshop",
+          "fit_and_test": "Firm pedal, clean fluid at bleeders, no leaks, no air return, recheck after bedding and short road test",
+          "source_ref": "docs_brake_workstream|suspension_brake_merged_work_plan",
+          "notes": "Do not open hydraulics without fluid and caps/plugs already available.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260331_224409.jpg",
+              "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
+              "captured_date": "2026-03-31",
+              "captured_time": "22:44:09",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "frame_floor_underside_and_lines",
+              "stage": "underside_inspection",
+              "media_id": "20260331_224409",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260331_224423.jpg",
+              "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
+              "captured_date": "2026-03-31",
+              "captured_time": "22:44:23",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "frame_floor_underside_and_lines",
+              "stage": "underside_inspection",
+              "media_id": "20260331_224423",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260324_004852.jpg",
+              "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+              "captured_date": "2026-03-24",
+              "captured_time": "00:48:52",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_axle_and_leaf_springs",
+              "stage": "underside_inspection",
+              "media_id": "20260324_004852",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
+              "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+              "captured_date": "2026-04-23",
+              "captured_time": "23:22:20",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "steering_and_suspension_linkages",
+              "stage": "underside_inspection",
+              "media_id": "20260423_232220_gp_ezwEcH2g",
+              "matched_tokens": []
+            }
+          ]
         }
       ],
       "pipe_requirements": [],
@@ -29356,7 +30138,19 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_station_closure": [],
       "fabrication_packages": [],
       "market_specs": [],
-      "linked_packages": [],
+      "linked_packages": [
+        {
+          "work_package_id": "WP04",
+          "title": "Mechanical Service Baseline",
+          "lane": "mechanical",
+          "current_state": "queued",
+          "objective": "Execute reliability service pack, merged brake refresh prep, and document defects before upgrades.",
+          "blocker_summary": "18 mechanical/brake safety rows need pricing, measurement capture, or order.",
+          "gate_to_close": "Cooling/fuel/ignition/brake baseline complete with leak-free checks.",
+          "key_procurement_actions": "Batch-buy must-replace consumables; run brake spec capture before exact brake orders; keep inspect-then-replace items gated to measured findings.",
+          "evidence_signal": "engine_bay baseline evidence present; service pack and brake-system rows prepared"
+        }
+      ],
       "component_jobs": [
         {
           "component_job_id": "brake_hydraulic_refresh_and_bias_decision",
@@ -29378,15 +30172,15 @@ window.J40_DASHBOARD_DATA = {
           "component_job_id": "front_brake_disc_baseline",
           "component_group": "brakes",
           "current_status": "inspection_pending",
-          "planned_action": "Confirm the existing front disc conversion hardware, identify caliper/rotor/pad/hub service needs, and avoid replacing the setup wholesale unless wear or fitment demands it",
+          "planned_action": "Confirm the existing front disc conversion hardware, then replace normal front service parts: pads/hardware, flex hoses, and caliper rebuild/replacement if condition requires it",
           "evidence_ref": "20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g|20260423_232236_gp_caYB252g|20260406_031010",
-          "notes": "Current repo read is that front discs are already fitted; close only after the hardware family and service list are positively identified."
+          "notes": "Current repo read is that front discs are already fitted; do not buy exact pads/hoses/caliper parts until the fitted conversion family is positively identified."
         },
         {
           "component_job_id": "rear_brake_cable_line_refresh",
           "component_group": "brakes",
           "current_status": "spec_population",
-          "planned_action": "Replace rear parking-brake cables, rear axle hard lines, center flex hose, and retaining clips after photographing/removing the old parts as templates",
+          "planned_action": "Replace rear parking-brake cables, rear axle hard lines, center flex hose, and retaining clips during the Ironman rear suspension window after photographing/removing the old parts as templates",
           "evidence_ref": "data_brake_system_requirements|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260501_194322_gp_XuRtjN4w|20260324_004852|20260324_004906",
           "notes": "The visible rear axle wires are brake hard lines and parking-brake cable/linkage. These can be removed now only after side labels, close photos, capping hydraulic ports, and preserving old parts as templates."
         },
@@ -29394,9 +30188,9 @@ window.J40_DASHBOARD_DATA = {
           "component_job_id": "rear_brake_drum_baseline",
           "component_group": "brakes",
           "current_status": "inspection_pending",
-          "planned_action": "Inspect rear drum hardware, wheel cylinders, shoes, parking-brake linkage, and backing plates; rebuild worn items and keep rear drums unless a measured need for rear discs appears",
+          "planned_action": "Open and identify rear drum hardware, then replace shoes, wheel cylinders, springs, adjusters, and hold-down hardware while keeping rear drums unless a measured need for rear discs appears",
           "evidence_ref": "20260324_004852|20260324_004906",
-          "notes": "Photo evidence points to rear drums; this row captures the default rebuild path rather than assuming a conversion."
+          "notes": "Photo evidence points to rear drums; this row now captures baseline service replacement, not a rear-disc conversion."
         }
       ],
       "issue_jobs": [],
@@ -29404,12 +30198,17 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Execute current workstream action",
           "status": "queued",
-          "detail": "Use rear-axle evidence to replace brake cables, axle hard lines, rear flex hose, and drum service parts before final chassis coating or reassembly"
+          "detail": "Use the merged suspension/brake window to identify fitted front disc hardware, replace standard front/rear brake service parts, and renew rear cables/lines with full-droop validation"
         },
         {
           "label": "Confirm installed brake architecture",
           "status": "queued",
           "detail": "Verify front/rear hardware family and capture evidence before ordering."
+        },
+        {
+          "label": "Capture brake order-release close-ups",
+          "status": "queued",
+          "detail": "Photograph every hose end, line fitting, cable end, drum internal, caliper mark, master/proportioning port, and clip position with labels and a ruler before payment."
         },
         {
           "label": "Close hydraulic refresh scope",
@@ -29425,6 +30224,11 @@ window.J40_DASHBOARD_DATA = {
           "label": "Close brake safety gate",
           "status": "queued",
           "detail": "Do not progress to final validation until brake function is verified."
+        },
+        {
+          "label": "WP04 \u00b7 Mechanical Service Baseline",
+          "status": "queued",
+          "detail": "Execute reliability service pack, merged brake refresh prep, and document defects before upgrades. Blocker: 18 mechanical/brake safety rows need pricing, measurement capture, or order. Procurement: Batch-buy must-replace consumables; run brake spec capture before exact brake orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -29444,22 +30248,22 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Component Task \u00b7 Front Brake Disc Baseline",
           "status": "inspection_pending",
-          "detail": "Confirm the existing front disc conversion hardware, identify caliper/rotor/pad/hub service needs, and avoid replacing the setup wholesale unless wear or fitment demands it Notes: Current repo read is that front discs are already fitted; close only after the hardware family and service list are positively identified."
+          "detail": "Confirm the existing front disc conversion hardware, then replace normal front service parts: pads/hardware, flex hoses, and caliper rebuild/replacement if condition requires it Notes: Current repo read is that front discs are already fitted; do not buy exact pads/hoses/caliper parts until the fitted conversion family is positively identified."
         },
         {
           "label": "Component Task \u00b7 Rear Brake Drum Baseline",
           "status": "inspection_pending",
-          "detail": "Inspect rear drum hardware, wheel cylinders, shoes, parking-brake linkage, and backing plates; rebuild worn items and keep rear drums unless a measured need for rear discs appears Notes: Photo evidence points to rear drums; this row captures the default rebuild path rather than assuming a conversion."
+          "detail": "Open and identify rear drum hardware, then replace shoes, wheel cylinders, springs, adjusters, and hold-down hardware while keeping rear drums unless a measured need for rear discs appears Notes: Photo evidence points to rear drums; this row now captures baseline service replacement, not a rear-disc conversion."
         },
         {
           "label": "Component Task \u00b7 Rear Brake Cable Line Refresh",
           "status": "spec_population",
-          "detail": "Replace rear parking-brake cables, rear axle hard lines, center flex hose, and retaining clips after photographing/removing the old parts as templates Notes: The visible rear axle wires are brake hard lines and parking-brake cable/linkage. These can be removed now only after side labels, close photos, capping hydraulic ports, and preserving old parts as templates."
+          "detail": "Replace rear parking-brake cables, rear axle hard lines, center flex hose, and retaining clips during the Ironman rear suspension window after photographing/removing the old parts as templates Notes: The visible rear axle wires are brake hard lines and parking-brake cable/linkage. These can be removed now only after side labels, close photos, capping hydraulic ports, and preserving old parts as templates."
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
-          "status": "completed",
-          "detail": "0 part rows still require price confirmation/order placement."
+          "status": "in_progress",
+          "detail": "1 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
@@ -29474,10 +30278,45 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Close workstream exit gate",
           "status": "queued",
-          "detail": "No linked package rows found. Exit gate: Brake hardware and hydraulics are positively identified, safety-critical wear parts are scoped or bought, and no brake-system unknown blocks reassembly"
+          "detail": "Linked package execution is queued. Exit gate: Brake hardware and hydraulics are positively identified, safety-critical wear parts are scoped or bought, rear cables/lines are replaced, and no brake-system unknown blocks suspension closeout or reassembly"
         }
       ],
       "involved_parts": [
+        {
+          "entry_id": "part_front_rotor_service_pair",
+          "workstream": "brake_system",
+          "item": "Front rotor machine or replacement pair",
+          "status": "planned",
+          "procurement_stage": "inspect_then_buy",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_front_rotor_service_pair",
+          "evidence_ref": "BR-FRONT-003|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
+          "notes": "Inspect, machine, or replace by measured rotor thickness, service limit, scoring, cracking, runout, and fitment to the existing front disc conversion.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+            "caption": "Front rotor machine or replacement pair \u00b7 local inventory photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260423_232202_gp_ryYH6xZg",
+            "matched_tokens": [
+              "photo_20260423_232202_gp_ryyh6xzg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
         {
           "entry_id": "part_rear_brake_shoes_hardware",
           "workstream": "brake_system",
@@ -29494,7 +30333,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_rear_brake_shoes_hardware",
           "evidence_ref": "BR-REAR-005|20260501_194322_gp_XuRtjN4w|20260324_004906",
-          "notes": "Order shoes, return springs, hold-down springs, adjusters, and retainers after drum diameter, shoe width, and backing-plate family are confirmed.",
+          "notes": "BASELINE MUST REPLACE: order shoes, return springs, hold-down springs, adjusters, and retainers after drum diameter, shoe width, and backing-plate family are confirmed.",
           "links": [],
           "image": {
             "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
@@ -29529,7 +30368,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_rear_wheel_cylinders_pair",
           "evidence_ref": "BR-REAR-004|20260501_194322_gp_XuRtjN4w|20260324_004906",
-          "notes": "Buy as a left/right pair after drum opening confirms cylinder bore, port thread, mounting pattern, and pushrod style.",
+          "notes": "BASELINE MUST REPLACE as a left/right pair after drum opening confirms cylinder bore, port thread, mounting pattern, and pushrod style.",
           "links": [],
           "image": {
             "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
@@ -29546,6 +30385,41 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 980
+          }
+        },
+        {
+          "entry_id": "part_brake_fluid_bleed_consumables",
+          "workstream": "brake_system",
+          "item": "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves",
+          "status": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Autohub/Daraz/local brake supplier",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_brake_fluid_bleed_consumables",
+          "evidence_ref": "BR-SYS-002|BR-CAPTURE-001|docs/brake-suspension-order-links-20260503.md",
+          "notes": "PURCHASE READY for non-fitment consumables before opening hydraulics: line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. Brake fluid itself remains cap/manual/workshop-confirmed DOT spec before payment; do not mix unknown old fluid. Candidate order/search links are logged in docs/brake-suspension-order-links-20260503.md.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/suspension_kit.jpg",
+            "caption": "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves \u00b7 suspension kit reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "suspension_kit",
+            "matched_tokens": [
+              "suspension"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
           }
         },
         {
@@ -29584,6 +30458,146 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
+          "entry_id": "part_brake_master_reservoir_refresh",
+          "workstream": "brake_system",
+          "item": "Brake master reservoir and proportioning service parts",
+          "status": "planned",
+          "procurement_stage": "spec_needed_before_order",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_brake_master_reservoir_refresh",
+          "evidence_ref": "BR-SYS-001|20260331_224409|20260331_224423",
+          "notes": "Inspect installed master, reservoir, booster, vacuum line, and proportioning/bias hardware; replace only after bore, port threads, flare seats, leak condition, and installed layout are confirmed.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260331_224409.jpg",
+            "caption": "Brake master reservoir and proportioning service parts \u00b7 local inventory photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260331_224409",
+            "matched_tokens": [
+              "photo_20260331_224409"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "entry_id": "part_front_caliper_rebuild_or_replace_pair",
+          "workstream": "brake_system",
+          "item": "Front caliper rebuild kits or replacement calipers",
+          "status": "planned",
+          "procurement_stage": "spec_needed_before_order",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_front_caliper_rebuild_or_replace_pair",
+          "evidence_ref": "BR-FRONT-002|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
+          "notes": "Baseline front brake service item: rebuild or replace both front calipers after fitted caliper family is identified if leakage, seizure, torn boots, damaged pistons, stuck sliders, or unsafe unknown condition is found.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+            "caption": "Front caliper rebuild kits or replacement calipers \u00b7 local inventory photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260423_232202_gp_ryYH6xZg",
+            "matched_tokens": [
+              "photo_20260423_232202_gp_ryyh6xzg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "entry_id": "part_front_disc_pads_hardware",
+          "workstream": "brake_system",
+          "item": "Front disc pads and retaining hardware",
+          "status": "planned",
+          "procurement_stage": "spec_needed_before_order",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_front_disc_pads_hardware",
+          "evidence_ref": "BR-FRONT-001|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
+          "notes": "BASELINE MUST REPLACE after fitted front caliper and pad family are identified. Do not buy by 1978 catalog alone because front discs appear to be a previous conversion.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+            "caption": "Front disc pads and retaining hardware \u00b7 local inventory photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260423_232202_gp_ryYH6xZg",
+            "matched_tokens": [
+              "photo_20260423_232202_gp_ryyh6xzg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "entry_id": "part_front_brake_hose_pair",
+          "workstream": "brake_system",
+          "item": "Front flexible brake hose pair",
+          "status": "planned",
+          "procurement_stage": "spec_needed_before_order",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_front_brake_hose_pair",
+          "evidence_ref": "BR-FRONT-004|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
+          "notes": "BASELINE MUST REPLACE after caliper-end fitting, chassis bracket, free length, steering lock clearance, and Ironman full-droop slack are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+            "caption": "Front flexible brake hose pair \u00b7 local inventory photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260423_232202_gp_ryYH6xZg",
+            "matched_tokens": [
+              "photo_20260423_232202_gp_ryyh6xzg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
           "entry_id": "part_rear_axle_hard_brake_lines",
           "workstream": "brake_system",
           "item": "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread",
@@ -29599,7 +30613,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_rear_axle_hard_brake_lines",
           "evidence_ref": "BR-REAR-002|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-          "notes": "Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube from the 7600 mm / 25 ft brake tube coil allowance only after flare standard, fitting threads/seats, bend templates, final left/right route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
+          "notes": "BASELINE MUST RECREATE during the Ironman rear suspension window. Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube from the 7600 mm / 25 ft brake tube coil allowance only after flare standard, fitting threads/seats, bend templates, final left/right route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
           "links": [],
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -29634,7 +30648,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_rear_center_brake_flex_hose",
           "evidence_ref": "BR-REAR-003|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-          "notes": "Replace rear center hose only after chassis-side and axle-side fitting thread/end style bracket retention free length and full-droop slack are measured; brake-fluid-rated hose only; verify no stretch or suspension/tire contact at full droop.",
+          "notes": "BASELINE MUST REPLACE; order only after chassis-side and axle-side fitting thread/end style, bracket retention, free length, and Ironman full-droop slack are measured. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
           "links": [],
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -29669,7 +30683,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_rear_brake_line_cable_clips",
           "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-          "notes": "Count and replace corroded or missing rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD. Use permanent supports, not cable ties, before final rear axle routing.",
+          "notes": "BASELINE MUST REPLACE missing/corroded supports: count and replace rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD. Use permanent supports, not cable ties, before final rear axle routing.",
           "links": [],
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -29704,7 +30718,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_rear_parking_brake_cable_set",
           "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w",
-          "notes": "Replace the rear handbrake/parking-brake cable system as a safety baseline; order only after cable end types, lengths, equalizer hardware, and backing-plate levers are confirmed from the removed samples.",
+          "notes": "BASELINE MUST REPLACE during the Ironman rear suspension window; order only after cable end types, lengths, equalizer hardware, and backing-plate levers are confirmed from the removed samples.",
           "links": [],
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -29739,7 +30753,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_brake_flex_hose_set",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready via RPO-BRAKE-001A/B: front/rear brake flex hoses by current fitting thread/banjo/seat, bracket retention, free length and full-droop length; brake hard-line length basis is 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with brake-rated fittings. Release hold: close fitting photos, flare/thread/seat confirmation, final individual route lengths, bend templates, and full-droop slack before payment/fabrication.",
+          "notes": "Spec ready via RPO-BRAKE-001A/B: front/rear brake flex hoses by current fitting thread/banjo/seat, bracket retention, free length and full-droop length; brake hard-line length basis is 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with brake-rated fittings. Release hold: close fitting photos, flare/thread/seat confirmation, final individual route lengths, bend templates, and full-droop slack before payment/fabrication. This package overlaps BR-FRONT-004 and BR-REAR-003; order as one hose/line package or as itemized lines, not both.",
           "links": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
@@ -29888,12 +30902,145 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Front disc pads and retaining hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)",
+                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance (spec_ready_release_hold; delivery not_ordered; amount missing)",
-                "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Front caliper rebuild kits or replacement calipers (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Rear wheel cylinders pair with bleed screws (inspect_then_buy; delivery not_ordered; amount missing)"
+              ]
+            },
+            {
+              "title": "Capture Brake Order-Release Close-Ups",
+              "priority": "P0",
+              "remaining": "before removing samples or paying for exact brake parts",
+              "instruction": "Treat the current brake photos as routing evidence only; exact orders need close-up identification shots and retained samples.",
+              "process_steps": [
+                "Take wide route photos first so each close-up has a known vehicle location.",
+                "Photograph front caliper casting marks, pad shape, rotor face/thickness area, front hose ends, chassis brackets, bleed screws, and steering-lock hose clearance.",
+                "Photograph rear parking-brake cable ends at backing plates and equalizer, then lay removed cables beside a tape measure with left/right labels.",
+                "Photograph rear hard-line routes, T/union, wheel-cylinder ports, flare nuts, clips, and removed hard lines as bend templates before any discard.",
+                "Open rear drums only after exterior photos, then photograph shoe layout, springs, adjusters, parking-brake lever, wheel cylinders, and drum wear before disassembly.",
+                "Photograph master cylinder, reservoir, booster/vacuum line, proportioning/bias hardware, and all line ports before buying system parts."
+              ],
+              "tools": [
+                "Camera with flash",
+                "Labels",
+                "Paint marker",
+                "Ruler/tape",
+                "Digital caliper",
+                "Inspection light"
+              ],
+              "supplies": [
+                "Clean background board or cloth",
+                "Zip bags for clips",
+                "Line caps/plugs",
+                "Tags"
+              ],
+              "hold_point": "No front pads, flex hoses, rear cables, rear wheel cylinders, shoes, hard-line fittings, or master/proportioning parts are ordered from broad vehicle-year logic alone.",
+              "image_tokens": [
+                "brake",
+                "closeup",
+                "caliper",
+                "line",
+                "cable"
+              ],
+              "id": "capture_brake_order_release_close_ups",
+              "status": "queued",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260331_224423.jpg",
+                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
+                  "captured_date": "2026-03-31",
+                  "captured_time": "22:44:23",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "frame_floor_underside_and_lines",
+                  "stage": "underside_inspection",
+                  "media_id": "20260331_224423",
+                  "matched_tokens": [
+                    "20260331_224423"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260331_224409.jpg",
+                  "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
+                  "captured_date": "2026-03-31",
+                  "captured_time": "22:44:09",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "frame_floor_underside_and_lines",
+                  "stage": "underside_inspection",
+                  "media_id": "20260331_224409",
+                  "matched_tokens": [
+                    "20260331_224409"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260324_004906.jpg",
+                  "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+                  "captured_date": "2026-03-24",
+                  "captured_time": "00:49:06",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "rear_axle_and_leaf_springs",
+                  "stage": "underside_inspection",
+                  "media_id": "20260324_004906",
+                  "matched_tokens": [
+                    "20260324_004906"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260324_004852.jpg",
+                  "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+                  "captured_date": "2026-03-24",
+                  "captured_time": "00:48:52",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "rear_axle_and_leaf_springs",
+                  "stage": "underside_inspection",
+                  "media_id": "20260324_004852",
+                  "matched_tokens": [
+                    "20260324_004852"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260422_004412_gp_OclpaTdg_2.jpg",
+                  "caption": "Engine Bay Chassis Interface \u00b7 Underside Inspection \u00b7 2026-04-22",
+                  "captured_date": "2026-04-22",
+                  "captured_time": "00:44:12",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "engine_bay_chassis_interface",
+                  "stage": "underside_inspection",
+                  "media_id": "20260422_004412_gp_OclpaTdg_2",
+                  "matched_tokens": [
+                    "engine_bay"
+                  ]
+                },
+                {
+                  "path": "../../photos/20260422_004356_gp_vTFgPfAQ_2.jpg",
+                  "caption": "Engine Bay Chassis Interface \u00b7 Underside Inspection \u00b7 2026-04-22",
+                  "captured_date": "2026-04-22",
+                  "captured_time": "00:43:56",
+                  "media_type": "photo",
+                  "component_group": "chassis_underside",
+                  "specific_component": "engine_bay_chassis_interface",
+                  "stage": "underside_inspection",
+                  "media_id": "20260422_004356_gp_vTFgPfAQ_2",
+                  "matched_tokens": [
+                    "engine_bay"
+                  ]
+                }
+              ],
+              "registered_items": [
+                "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Brake master reservoir and proportioning service parts (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear wheel cylinders pair with bleed screws (inspect_then_buy; delivery not_ordered; amount missing)",
-                "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -30019,12 +31166,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Brake master reservoir and proportioning service parts (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves (purchase_ready; delivery not_ordered; amount missing)",
                 "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)",
                 "Rear wheel cylinders pair with bleed screws (inspect_then_buy; delivery not_ordered; amount missing)",
-                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear center frame-to-axle brake flex hose - by end fittings and full-droop length (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -30148,11 +31295,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance (spec_ready_release_hold; delivery not_ordered; amount missing)",
-                "Rear center frame-to-axle brake flex hose - by end fittings and full-droop length (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Brake master reservoir and proportioning service parts (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Front disc pads and retaining hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)",
-                "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -30277,12 +31424,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves (purchase_ready; delivery not_ordered; amount missing)",
                 "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)",
-                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear center frame-to-axle brake flex hose - by end fittings and full-droop length (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             }
           ]
@@ -33617,19 +34764,20 @@ window.J40_DASHBOARD_DATA = {
       "work_package_id": "WP04",
       "title": "Mechanical Service Baseline",
       "lane": "mechanical",
-      "objective": "Execute reliability service pack and document defects before upgrades.",
+      "objective": "Execute reliability service pack, merged brake refresh prep, and document defects before upgrades.",
       "current_state": "queued",
       "depends_on": [
         "stripdown_cataloguing_complete"
       ],
       "linked_workstreams": [
         "mechanical_baseline",
-        "steering_brakes_suspension"
+        "steering_brakes_suspension",
+        "brake_system"
       ],
-      "evidence_signal": "engine_bay baseline evidence present; service pack rows prepared",
-      "blocker_summary": "6 mechanical safety/service rows need pricing + order.",
-      "gate_to_close": "Cooling/fuel/ignition/service baseline complete with leak-free checks.",
-      "key_procurement_actions": "Batch-buy must-replace consumables; keep inspect-then-replace items gated to inspection findings.",
+      "evidence_signal": "engine_bay baseline evidence present; service pack and brake-system rows prepared",
+      "blocker_summary": "18 mechanical/brake safety rows need pricing, measurement capture, or order.",
+      "gate_to_close": "Cooling/fuel/ignition/brake baseline complete with leak-free checks.",
+      "key_procurement_actions": "Batch-buy must-replace consumables; run brake spec capture before exact brake orders; keep inspect-then-replace items gated to measured findings.",
       "image": {
         "path": "../../photos/20260430_220004_gp_C9oYiYmA.jpg",
         "caption": "Cooling Hoses Fan Belt And Radiator Support \u00b7 Mechanical Inspection \u00b7 2026-04-30",
@@ -33706,7 +34854,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Confirm price and place purchase-ready orders",
         "status": "in_progress",
-        "detail": "9 rows still in purchase_ready."
+        "detail": "10 rows still in purchase_ready."
       },
       {
         "label": "Place selected quote orders",
@@ -33734,7 +34882,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "inspect_then_buy",
-        "count": 2
+        "count": 3
       },
       {
         "stage": "next_phase_purchase",
@@ -33750,11 +34898,11 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "purchase_ready",
-        "count": 9
+        "count": 10
       },
       {
         "stage": "spec_needed_before_order",
-        "count": 4
+        "count": 8
       },
       {
         "stage": "spec_ready_release_hold",
@@ -33764,7 +34912,7 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_next_action": [
       {
         "next_action": "confirm_price_then_order",
-        "count": 9
+        "count": 10
       },
       {
         "next_action": "track_delivery",
@@ -33989,6 +35137,39 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "exact_order_evidence",
           "match_score": 999
+        }
+      },
+      {
+        "priority": "P0",
+        "entry_id": "part_brake_fluid_bleed_consumables",
+        "workstream": "brake_system",
+        "item": "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "next_action": "confirm_price_then_order",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Autohub/Daraz/local brake supplier",
+        "supply_type": "part",
+        "evidence_ref": "BR-SYS-002|BR-CAPTURE-001|docs/brake-suspension-order-links-20260503.md",
+        "notes": "PURCHASE READY for non-fitment consumables before opening hydraulics: line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. Brake fluid itself remains cap/manual/workshop-confirmed DOT spec before payment; do not mix unknown old fluid. Candidate order/search links are logged in docs/brake-suspension-order-links-20260503.md.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/suspension_kit.jpg",
+          "caption": "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves \u00b7 suspension kit reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "suspension_kit",
+          "matched_tokens": [
+            "suspension"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
         }
       },
       {
@@ -34927,6 +36108,39 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "part_front_rotor_service_pair",
+        "workstream": "brake_system",
+        "item": "Front rotor machine or replacement pair",
+        "status": "planned",
+        "procurement_stage": "inspect_then_buy",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "",
+        "supply_type": "part",
+        "evidence_ref": "BR-FRONT-003|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
+        "notes": "Inspect, machine, or replace by measured rotor thickness, service limit, scoring, cracking, runout, and fitment to the existing front disc conversion.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+          "caption": "Front rotor machine or replacement pair \u00b7 local inventory photo",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260423_232202_gp_ryYH6xZg",
+          "matched_tokens": [
+            "photo_20260423_232202_gp_ryyh6xzg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
         "entry_id": "part_rear_brake_shoes_hardware",
         "workstream": "brake_system",
         "item": "Rear brake shoes and spring hardware set",
@@ -34940,7 +36154,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "BR-REAR-005|20260501_194322_gp_XuRtjN4w|20260324_004906",
-        "notes": "Order shoes, return springs, hold-down springs, adjusters, and retainers after drum diameter, shoe width, and backing-plate family are confirmed.",
+        "notes": "BASELINE MUST REPLACE: order shoes, return springs, hold-down springs, adjusters, and retainers after drum diameter, shoe width, and backing-plate family are confirmed.",
         "links": [],
         "image": {
           "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
@@ -34973,7 +36187,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "BR-REAR-004|20260501_194322_gp_XuRtjN4w|20260324_004906",
-        "notes": "Buy as a left/right pair after drum opening confirms cylinder bore, port thread, mounting pattern, and pushrod style.",
+        "notes": "BASELINE MUST REPLACE as a left/right pair after drum opening confirms cylinder bore, port thread, mounting pattern, and pushrod style.",
         "links": [],
         "image": {
           "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
@@ -34993,6 +36207,171 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "part_brake_fluid_bleed_consumables",
+        "workstream": "brake_system",
+        "item": "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Autohub/Daraz/local brake supplier",
+        "supply_type": "part",
+        "evidence_ref": "BR-SYS-002|BR-CAPTURE-001|docs/brake-suspension-order-links-20260503.md",
+        "notes": "PURCHASE READY for non-fitment consumables before opening hydraulics: line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. Brake fluid itself remains cap/manual/workshop-confirmed DOT spec before payment; do not mix unknown old fluid. Candidate order/search links are logged in docs/brake-suspension-order-links-20260503.md.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/suspension_kit.jpg",
+          "caption": "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves \u00b7 suspension kit reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "suspension_kit",
+          "matched_tokens": [
+            "suspension"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_brake_master_reservoir_refresh",
+        "workstream": "brake_system",
+        "item": "Brake master reservoir and proportioning service parts",
+        "status": "planned",
+        "procurement_stage": "spec_needed_before_order",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "",
+        "supply_type": "part",
+        "evidence_ref": "BR-SYS-001|20260331_224409|20260331_224423",
+        "notes": "Inspect installed master, reservoir, booster, vacuum line, and proportioning/bias hardware; replace only after bore, port threads, flare seats, leak condition, and installed layout are confirmed.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260331_224409.jpg",
+          "caption": "Brake master reservoir and proportioning service parts \u00b7 local inventory photo",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260331_224409",
+          "matched_tokens": [
+            "photo_20260331_224409"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "entry_id": "part_front_caliper_rebuild_or_replace_pair",
+        "workstream": "brake_system",
+        "item": "Front caliper rebuild kits or replacement calipers",
+        "status": "planned",
+        "procurement_stage": "spec_needed_before_order",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "",
+        "supply_type": "part",
+        "evidence_ref": "BR-FRONT-002|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
+        "notes": "Baseline front brake service item: rebuild or replace both front calipers after fitted caliper family is identified if leakage, seizure, torn boots, damaged pistons, stuck sliders, or unsafe unknown condition is found.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+          "caption": "Front caliper rebuild kits or replacement calipers \u00b7 local inventory photo",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260423_232202_gp_ryYH6xZg",
+          "matched_tokens": [
+            "photo_20260423_232202_gp_ryyh6xzg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "entry_id": "part_front_disc_pads_hardware",
+        "workstream": "brake_system",
+        "item": "Front disc pads and retaining hardware",
+        "status": "planned",
+        "procurement_stage": "spec_needed_before_order",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "",
+        "supply_type": "part",
+        "evidence_ref": "BR-FRONT-001|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
+        "notes": "BASELINE MUST REPLACE after fitted front caliper and pad family are identified. Do not buy by 1978 catalog alone because front discs appear to be a previous conversion.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+          "caption": "Front disc pads and retaining hardware \u00b7 local inventory photo",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260423_232202_gp_ryYH6xZg",
+          "matched_tokens": [
+            "photo_20260423_232202_gp_ryyh6xzg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "entry_id": "part_front_brake_hose_pair",
+        "workstream": "brake_system",
+        "item": "Front flexible brake hose pair",
+        "status": "planned",
+        "procurement_stage": "spec_needed_before_order",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "",
+        "supply_type": "part",
+        "evidence_ref": "BR-FRONT-004|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
+        "notes": "BASELINE MUST REPLACE after caliper-end fitting, chassis bracket, free length, steering lock clearance, and Ironman full-droop slack are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+          "caption": "Front flexible brake hose pair \u00b7 local inventory photo",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260423_232202_gp_ryYH6xZg",
+          "matched_tokens": [
+            "photo_20260423_232202_gp_ryyh6xzg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
         "entry_id": "part_rear_axle_hard_brake_lines",
         "workstream": "brake_system",
         "item": "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread",
@@ -35006,7 +36385,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "BR-REAR-002|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-        "notes": "Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube from the 7600 mm / 25 ft brake tube coil allowance only after flare standard, fitting threads/seats, bend templates, final left/right route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
+        "notes": "BASELINE MUST RECREATE during the Ironman rear suspension window. Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube from the 7600 mm / 25 ft brake tube coil allowance only after flare standard, fitting threads/seats, bend templates, final left/right route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
         "links": [],
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -35039,7 +36418,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "BR-REAR-003|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-        "notes": "Replace rear center hose only after chassis-side and axle-side fitting thread/end style bracket retention free length and full-droop slack are measured; brake-fluid-rated hose only; verify no stretch or suspension/tire contact at full droop.",
+        "notes": "BASELINE MUST REPLACE; order only after chassis-side and axle-side fitting thread/end style, bracket retention, free length, and Ironman full-droop slack are measured. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
         "links": [],
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -35072,7 +36451,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-        "notes": "Count and replace corroded or missing rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD. Use permanent supports, not cable ties, before final rear axle routing.",
+        "notes": "BASELINE MUST REPLACE missing/corroded supports: count and replace rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD. Use permanent supports, not cable ties, before final rear axle routing.",
         "links": [],
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -35105,7 +36484,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w",
-        "notes": "Replace the rear handbrake/parking-brake cable system as a safety baseline; order only after cable end types, lengths, equalizer hardware, and backing-plate levers are confirmed from the removed samples.",
+        "notes": "BASELINE MUST REPLACE during the Ironman rear suspension window; order only after cable end types, lengths, equalizer hardware, and backing-plate levers are confirmed from the removed samples.",
         "links": [],
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -35138,7 +36517,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready via RPO-BRAKE-001A/B: front/rear brake flex hoses by current fitting thread/banjo/seat, bracket retention, free length and full-droop length; brake hard-line length basis is 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with brake-rated fittings. Release hold: close fitting photos, flare/thread/seat confirmation, final individual route lengths, bend templates, and full-droop slack before payment/fabrication.",
+        "notes": "Spec ready via RPO-BRAKE-001A/B: front/rear brake flex hoses by current fitting thread/banjo/seat, bracket retention, free length and full-droop length; brake hard-line length basis is 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with brake-rated fittings. Release hold: close fitting photos, flare/thread/seat confirmation, final individual route lengths, bend templates, and full-droop slack before payment/fabrication. This package overlaps BR-FRONT-004 and BR-REAR-003; order as one hose/line package or as itemized lines, not both.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
@@ -36154,6 +37533,24 @@ window.J40_DASHBOARD_DATA = {
     ],
     "open_counts_by_workstream": [
       {
+        "workstream": "brake_system",
+        "open_count": 13,
+        "image": {
+          "path": "../../photos/20260422_004356_gp_vTFgPfAQ_2.jpg",
+          "caption": "Engine Bay Chassis Interface \u00b7 Underside Inspection \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "00:43:56",
+          "media_type": "photo",
+          "component_group": "chassis_underside",
+          "specific_component": "engine_bay_chassis_interface",
+          "stage": "underside_inspection",
+          "media_id": "20260422_004356_gp_vTFgPfAQ_2",
+          "matched_tokens": [
+            "engine_bay"
+          ]
+        }
+      },
+      {
         "workstream": "mechanical_baseline",
         "open_count": 12,
         "image": {
@@ -36168,24 +37565,6 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "20260430_220004_gp_C9oYiYmA",
           "matched_tokens": [
             "engine_bay"
-          ]
-        }
-      },
-      {
-        "workstream": "brake_system",
-        "open_count": 7,
-        "image": {
-          "path": "../../photos/20260331_224423.jpg",
-          "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
-          "captured_date": "2026-03-31",
-          "captured_time": "22:44:23",
-          "media_type": "photo",
-          "component_group": "chassis_underside",
-          "specific_component": "frame_floor_underside_and_lines",
-          "stage": "underside_inspection",
-          "media_id": "20260331_224423",
-          "matched_tokens": [
-            "20260331_224423"
           ]
         }
       },
@@ -38828,12 +40207,12 @@ window.J40_DASHBOARD_DATA = {
   },
   "capture_tasks": {
     "summary": {
-      "total_tasks": 139,
-      "now_tasks": 128,
+      "total_tasks": 145,
+      "now_tasks": 134,
       "later_tasks": 11,
-      "p0_tasks": 78,
-      "photo_tasks": 65,
-      "measurement_tasks": 109
+      "p0_tasks": 82,
+      "photo_tasks": 68,
+      "measurement_tasks": 114
     },
     "counts_by_workstream": [
       {
@@ -38846,7 +40225,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "brake_system",
-        "count": 11
+        "count": 17
       },
       {
         "workstream": "chassis_fixing",
@@ -38884,11 +40263,11 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_task_type": [
       {
         "task_type": "photo_measurement",
-        "count": 55
+        "count": 58
       },
       {
         "task_type": "measurement",
-        "count": 40
+        "count": 42
       },
       {
         "task_type": "template",
@@ -38904,7 +40283,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "task_type": "decision",
-        "count": 7
+        "count": 8
       },
       {
         "task_type": "inspection",
@@ -38914,11 +40293,11 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_priority": [
       {
         "priority": "P0",
-        "count": 78
+        "count": 82
       },
       {
         "priority": "P1",
-        "count": 52
+        "count": 54
       },
       {
         "priority": "P2",
@@ -38926,6 +40305,81 @@ window.J40_DASHBOARD_DATA = {
       }
     ],
     "tasks": [
+      {
+        "task_id": "brake_requirement:BR-SYS-002",
+        "title": "Brake fluid and bleed consumables",
+        "workstream": "brake_system",
+        "task_type": "decision",
+        "priority": "P0",
+        "timing": "now",
+        "status": "needs_fluid_spec_confirmation",
+        "location": "Full brake hydraulic system",
+        "action": "Have brake fluid, clear bleed hose, catch bottle or bleeder, line caps/plugs, brake cleaner, rags, and gloves ready before any hydraulic line is opened.",
+        "data_needed": "Fluid spec, total fluid volume for full bleed, bleed screw sizes, bleed order from manual/workshop",
+        "blocks": "BR-SYS-002",
+        "record_result_in": "",
+        "source_label": "Brake Requirements",
+        "source_path": "data/manual/brake_system_requirements.csv",
+        "source_row_id": "BR-SYS-002",
+        "notes": "Do not open hydraulics without fluid and caps/plugs already available.",
+        "evidence_ref": "20260331_224409|20260331_224423|20260324_004852|20260423_232220_gp_ezwEcH2g",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260331_224409.jpg",
+            "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
+            "captured_date": "2026-03-31",
+            "captured_time": "22:44:09",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_floor_underside_and_lines",
+            "stage": "underside_inspection",
+            "media_id": "20260331_224409",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260331_224423.jpg",
+            "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
+            "captured_date": "2026-03-31",
+            "captured_time": "22:44:23",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_floor_underside_and_lines",
+            "stage": "underside_inspection",
+            "media_id": "20260331_224423",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004852.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:48:52",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004852",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
+            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "23:22:20",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "steering_and_suspension_linkages",
+            "stage": "underside_inspection",
+            "media_id": "20260423_232220_gp_ezwEcH2g",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/brake_system_requirements.csv",
+            "label": "Brake Requirements"
+          }
+        ]
+      },
       {
         "task_id": "component_job:brake_hydraulic_refresh_and_bias_decision",
         "title": "brake_hydraulic_refresh_and_bias_decision",
@@ -39002,6 +40456,156 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
+        "task_id": "brake_requirement:BR-FRONT-002",
+        "title": "Front caliper rebuild kits or replacement calipers",
+        "workstream": "brake_system",
+        "task_type": "measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "needs_caliper_family_identification",
+        "location": "Front disc calipers",
+        "action": "Inspect both front calipers during pad service and plan rebuild or replacement if there is leakage, seizure, torn boots, damaged pistons, stuck sliders, or unknown unsafe condition.",
+        "data_needed": "Casting marks, piston count/diameter, inlet fitting, bleed screw size, mounting bolt spacing, pad hardware style",
+        "blocks": "BR-FRONT-002",
+        "record_result_in": "",
+        "source_label": "Brake Requirements",
+        "source_path": "data/manual/brake_system_requirements.csv",
+        "source_row_id": "BR-FRONT-002",
+        "notes": "Treat calipers as safety-critical; exact parts wait for fitted conversion identification.",
+        "evidence_ref": "20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g|20260423_232236_gp_caYB252g|20260406_031010",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+            "caption": "Frame And Mount Points \u00b7 Underside Inspection \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "23:22:02",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_and_mount_points",
+            "stage": "underside_inspection",
+            "media_id": "20260423_232202_gp_ryYH6xZg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
+            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "23:22:20",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "steering_and_suspension_linkages",
+            "stage": "underside_inspection",
+            "media_id": "20260423_232220_gp_ezwEcH2g",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_232236_gp_caYB252g.jpg",
+            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "23:22:36",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "steering_and_suspension_linkages",
+            "stage": "underside_inspection",
+            "media_id": "20260423_232236_gp_caYB252g",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260406_031010.jpg",
+            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-06",
+            "captured_date": "2026-04-06",
+            "captured_time": "03:10:10",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "steering_and_suspension_linkages",
+            "stage": "underside_inspection",
+            "media_id": "20260406_031010",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/brake_system_requirements.csv",
+            "label": "Brake Requirements"
+          }
+        ]
+      },
+      {
+        "task_id": "brake_requirement:BR-FRONT-003",
+        "title": "Front rotor machine or replacement decision",
+        "workstream": "brake_system",
+        "task_type": "measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "needs_rotor_measurement",
+        "location": "Front rotors",
+        "action": "Measure and inspect rotors during front brake service; machine or replace only if scoring, cracking, runout, or thickness/service limit requires it.",
+        "data_needed": "Rotor diameter, current thickness, minimum thickness marking/manual limit, runout, scoring/step, hub face condition",
+        "blocks": "BR-FRONT-003",
+        "record_result_in": "",
+        "source_label": "Brake Requirements",
+        "source_path": "data/manual/brake_system_requirements.csv",
+        "source_row_id": "BR-FRONT-003",
+        "notes": "Rotors are not a blind age-replacement item; condition and service limits control the decision.",
+        "evidence_ref": "20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g|20260423_232236_gp_caYB252g|20260406_031010",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+            "caption": "Frame And Mount Points \u00b7 Underside Inspection \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "23:22:02",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_and_mount_points",
+            "stage": "underside_inspection",
+            "media_id": "20260423_232202_gp_ryYH6xZg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
+            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "23:22:20",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "steering_and_suspension_linkages",
+            "stage": "underside_inspection",
+            "media_id": "20260423_232220_gp_ezwEcH2g",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_232236_gp_caYB252g.jpg",
+            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "23:22:36",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "steering_and_suspension_linkages",
+            "stage": "underside_inspection",
+            "media_id": "20260423_232236_gp_caYB252g",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260406_031010.jpg",
+            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-06",
+            "captured_date": "2026-04-06",
+            "captured_time": "03:10:10",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "steering_and_suspension_linkages",
+            "stage": "underside_inspection",
+            "media_id": "20260406_031010",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/brake_system_requirements.csv",
+            "label": "Brake Requirements"
+          }
+        ]
+      },
+      {
         "task_id": "brake_requirement:BR-REAR-005",
         "title": "Rear brake shoes and spring/adjuster hardware",
         "workstream": "brake_system",
@@ -39017,7 +40621,7 @@ window.J40_DASHBOARD_DATA = {
         "source_label": "Brake Requirements",
         "source_path": "data/manual/brake_system_requirements.csv",
         "source_row_id": "BR-REAR-005",
-        "notes": "Keep rear drums as the default unless inspection gives a real reason to convert.",
+        "notes": "Rear shoes and hardware are baseline replacement items; keep rear drums as the default unless inspection gives a real reason to convert.",
         "evidence_ref": "20260501_194322_gp_XuRtjN4w|20260324_004852|20260324_004906",
         "evidence_images": [
           {
@@ -39073,8 +40677,8 @@ window.J40_DASHBOARD_DATA = {
         "timing": "now",
         "status": "inspection_pending",
         "location": "workshop",
-        "action": "Confirm the existing front disc conversion hardware, identify caliper/rotor/pad/hub service needs, and avoid replacing the setup wholesale unless wear or fitment demands it",
-        "data_needed": "Current repo read is that front discs are already fitted; close only after the hardware family and service list are positively identified.",
+        "action": "Confirm the existing front disc conversion hardware, then replace normal front service parts: pads/hardware, flex hoses, and caliper rebuild/replacement if condition requires it",
+        "data_needed": "Current repo read is that front discs are already fitted; do not buy exact pads/hoses/caliper parts until the fitted conversion family is positively identified.",
         "blocks": "",
         "record_result_in": "",
         "source_label": "Component Jobs",
@@ -39241,6 +40845,156 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
+        "task_id": "brake_requirement:BR-FRONT-004",
+        "title": "Front flexible brake hoses",
+        "workstream": "brake_system",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "needs_fitting_and_length_identification",
+        "location": "Front frame-to-caliper hydraulic drops",
+        "action": "Replace both front flex hoses with the brake hose set after hose ends, bracket retention, lock-to-lock clearance, and Ironman full-droop slack are captured.",
+        "data_needed": "Thread/banjo style, hose free length, bracket slot, retaining clip, steering lock clearance, full-droop slack",
+        "blocks": "BR-FRONT-004",
+        "record_result_in": "",
+        "source_label": "Brake Requirements",
+        "source_path": "data/manual/brake_system_requirements.csv",
+        "source_row_id": "BR-FRONT-004",
+        "notes": "Front hoses must be validated with the Ironman suspension geometry.",
+        "evidence_ref": "20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g|20260423_232236_gp_caYB252g|20260406_031010",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+            "caption": "Frame And Mount Points \u00b7 Underside Inspection \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "23:22:02",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_and_mount_points",
+            "stage": "underside_inspection",
+            "media_id": "20260423_232202_gp_ryYH6xZg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
+            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "23:22:20",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "steering_and_suspension_linkages",
+            "stage": "underside_inspection",
+            "media_id": "20260423_232220_gp_ezwEcH2g",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_232236_gp_caYB252g.jpg",
+            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "23:22:36",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "steering_and_suspension_linkages",
+            "stage": "underside_inspection",
+            "media_id": "20260423_232236_gp_caYB252g",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260406_031010.jpg",
+            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-06",
+            "captured_date": "2026-04-06",
+            "captured_time": "03:10:10",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "steering_and_suspension_linkages",
+            "stage": "underside_inspection",
+            "media_id": "20260406_031010",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/brake_system_requirements.csv",
+            "label": "Brake Requirements"
+          }
+        ]
+      },
+      {
+        "task_id": "brake_requirement:BR-SYS-001",
+        "title": "Master cylinder reservoir and brake-balance service decision",
+        "workstream": "brake_system",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "needs_master_layout_capture",
+        "location": "Master cylinder reservoir booster and proportioning area",
+        "action": "Photograph and inspect the installed master, reservoir, booster, vacuum hose, and proportioning/bias hardware before buying system-level parts.",
+        "data_needed": "Master bore/markings, reservoir condition, port threads, flare seats, booster/vacuum layout, proportioning valve ports",
+        "blocks": "BR-SYS-001",
+        "record_result_in": "",
+        "source_label": "Brake Requirements",
+        "source_path": "data/manual/brake_system_requirements.csv",
+        "source_row_id": "BR-SYS-001",
+        "notes": "System-level parts are safety-critical but must match the installed conversion and plumbing.",
+        "evidence_ref": "20260331_224409|20260331_224423|20260324_004852|20260423_232220_gp_ezwEcH2g",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260331_224409.jpg",
+            "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
+            "captured_date": "2026-03-31",
+            "captured_time": "22:44:09",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_floor_underside_and_lines",
+            "stage": "underside_inspection",
+            "media_id": "20260331_224409",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260331_224423.jpg",
+            "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
+            "captured_date": "2026-03-31",
+            "captured_time": "22:44:23",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_floor_underside_and_lines",
+            "stage": "underside_inspection",
+            "media_id": "20260331_224423",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004852.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:48:52",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004852",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
+            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "23:22:20",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "steering_and_suspension_linkages",
+            "stage": "underside_inspection",
+            "media_id": "20260423_232220_gp_ezwEcH2g",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/brake_system_requirements.csv",
+            "label": "Brake Requirements"
+          }
+        ]
+      },
+      {
         "task_id": "brake_requirement:BR-REAR-003",
         "title": "Rear center flexible brake hose",
         "workstream": "brake_system",
@@ -39391,69 +41145,6 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
-        "task_id": "brake_requirement:BR-REAR-004",
-        "title": "Rear wheel cylinders and bleed screws",
-        "workstream": "brake_system",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "needs_drum_opening",
-        "location": "Left and right rear drum backing plates",
-        "action": "Do not remove the wheel cylinders until each drum/backing plate is photographed open. Once open, plan to replace both rear wheel cylinders unless they are confirmed fresh and leak-free.",
-        "data_needed": "Cylinder bore, mounting bolt spacing, port thread, pushrod/slot style, backing plate side, drum/shoe family, bleed screw size",
-        "blocks": "BR-REAR-004",
-        "record_result_in": "",
-        "source_label": "Brake Requirements",
-        "source_path": "data/manual/brake_system_requirements.csv",
-        "source_row_id": "BR-REAR-004",
-        "notes": "Wheel cylinders are safety-critical and should be treated as age-replacement unless proven recent.",
-        "evidence_ref": "20260501_194322_gp_XuRtjN4w|20260324_004852|20260324_004906",
-        "evidence_images": [
-          {
-            "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
-            "captured_date": "2026-05-01",
-            "captured_time": "19:43:22",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_spring_hanger_and_crossmember",
-            "stage": "chassis_fixing",
-            "media_id": "20260501_194322_gp_XuRtjN4w",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260324_004852.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
-            "captured_date": "2026-03-24",
-            "captured_time": "00:48:52",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "underside_inspection",
-            "media_id": "20260324_004852",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260324_004906.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
-            "captured_date": "2026-03-24",
-            "captured_time": "00:49:06",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "underside_inspection",
-            "media_id": "20260324_004906",
-            "matched_tokens": []
-          }
-        ],
-        "links": [
-          {
-            "url": "../../data/manual/brake_system_requirements.csv",
-            "label": "Brake Requirements"
-          }
-        ]
-      },
-      {
         "task_id": "component_job:rear_brake_drum_baseline",
         "title": "rear_brake_drum_baseline",
         "workstream": "brake_system",
@@ -39462,8 +41153,8 @@ window.J40_DASHBOARD_DATA = {
         "timing": "now",
         "status": "inspection_pending",
         "location": "workshop",
-        "action": "Inspect rear drum hardware, wheel cylinders, shoes, parking-brake linkage, and backing plates; rebuild worn items and keep rear drums unless a measured need for rear discs appears",
-        "data_needed": "Photo evidence points to rear drums; this row captures the default rebuild path rather than assuming a conversion.",
+        "action": "Open and identify rear drum hardware, then replace shoes, wheel cylinders, springs, adjusters, and hold-down hardware while keeping rear drums unless a measured need for rear discs appears",
+        "data_needed": "Photo evidence points to rear drums; this row now captures baseline service replacement, not a rear-disc conversion.",
         "blocks": "",
         "record_result_in": "",
         "source_label": "Component Jobs",
@@ -39588,7 +41279,7 @@ window.J40_DASHBOARD_DATA = {
         "timing": "now",
         "status": "spec_population",
         "location": "workshop",
-        "action": "Replace rear parking-brake cables, rear axle hard lines, center flex hose, and retaining clips after photographing/removing the old parts as templates",
+        "action": "Replace rear parking-brake cables, rear axle hard lines, center flex hose, and retaining clips during the Ironman rear suspension window after photographing/removing the old parts as templates",
         "data_needed": "The visible rear axle wires are brake hard lines and parking-brake cable/linkage. These can be removed now only after side labels, close photos, capping hydraulic ports, and preserving old parts as templates.",
         "blocks": "",
         "record_result_in": "",
@@ -40531,7 +42222,7 @@ window.J40_DASHBOARD_DATA = {
         "status": "release_hold / direct_location_and_sample_photo",
         "location": "Engine bay fuel filter / injection pump / injector return area",
         "action": "Measure every barb in mm and read sample hose markings before purchase",
-        "data_needed": "filter_and_pump_barbs_tbd_mm; injector_leakoff_nipples_tbd_mm; 3000_feed_2000_return_1000_leakoff_buy_lengths; 8mm_feed_6mm_return_3_2_to_3_5mm_leakoff_working_basis; fuel_injection_clamps_tbd_mm",
+        "data_needed": "measure_8_mm_feed_and_6_mm_return_barbs_mm; measure_3_2_to_3_5_mm_leakoff_nipples_mm; 3000_feed_2000_return_1000_leakoff_buy_lengths; 8mm_feed_6mm_return_3_2_to_3_5mm_leakoff_working_basis; rolled_edge_fuel_injection_clamps_by_hose_od",
         "blocks": "RPO-FUEL-001A|RPO-FUEL-001B|RPO-FUEL-001C",
         "record_result_in": "",
         "source_label": "Replacement Pipe Circuit Closure",
@@ -40791,7 +42482,7 @@ window.J40_DASHBOARD_DATA = {
         "status": "release_hold / needs_close_photo",
         "location": "Firewall/heater core and engine heater nipples",
         "action": "Measure nipple ODs in mm and confirm whether rear heater circuit exists",
-        "data_needed": "engine_heater_nipple_od_tbd_mm; heater_core_nipple_od_tbd_mm; 400_inlet_280_outlet_working_basis; expected_16_mm_or_5_8_in_id_after_measurement; clamps_tbd_mm",
+        "data_needed": "measure_engine_heater_nipple_od_mm; measure_heater_core_nipple_od_mm; 400_mm_inlet_280_mm_outlet_or_1000_mm_stock_cut; 16_mm_5_8in_epdm_heater_hose_working_id_by_nipple_od; 4_smooth_band_clamps_by_hose_od",
         "blocks": "RPO-COOL-004A|RPO-COOL-004B",
         "record_result_in": "",
         "source_label": "Replacement Pipe Circuit Closure",
@@ -40921,7 +42612,7 @@ window.J40_DASHBOARD_DATA = {
         "status": "release_hold / direct_photo",
         "location": "Front lower engine bay between radiator lower outlet and water pump/engine inlet",
         "action": "Measure both neck ODs in mm and confirm lower bend clearance before payment",
-        "data_needed": "radiator_lower_outlet_od_tbd_mm; engine_inlet_od_tbd_mm; molded_free_length_tbd_mm; hose_id_by_molded_part_and_neck_od_mm; molded_route_check_required; clamps_tbd_mm",
+        "data_needed": "measure_radiator_lower_outlet_od_mm; measure_engine_or_water_pump_inlet_od_mm; buy_molded_hj47_2h_lower_hose_old_length_match_check; molded_epdm_sae_j20r4_id_by_neck_od; molded_route_check_required; 2_smooth_band_or_constant_tension_clamps_by_hose_od",
         "blocks": "RPO-COOL-002",
         "record_result_in": "",
         "source_label": "Replacement Pipe Circuit Closure",
@@ -41077,7 +42768,7 @@ window.J40_DASHBOARD_DATA = {
         "status": "release_hold / needs_close_photo",
         "location": "Radiator neck to overflow/reserve bottle",
         "action": "Capture close photo and measure nipple ODs plus finished route length in mm",
-        "data_needed": "radiator_overflow_nipple_od_tbd_mm; bottle_nipple_od_tbd_mm; 600_oe_reference_1000_local_buy_cut_to_route; small_epdm_overflow_hose_id_tbd_mm; clip_or_clamp_tbd_mm",
+        "data_needed": "measure_radiator_overflow_nipple_od_mm; measure_bottle_nipple_od_mm; 1000_mm_epdm_overflow_hose_stock_cut_to_route; small_epdm_overflow_hose_id_by_nipple_od; spring_clip_or_smooth_band_clamp_by_hose_od",
         "blocks": "RPO-COOL-003",
         "record_result_in": "",
         "source_label": "Replacement Pipe Circuit Closure",
@@ -41181,7 +42872,7 @@ window.J40_DASHBOARD_DATA = {
         "status": "release_hold / direct_photo",
         "location": "Front top of engine bay between thermostat housing and radiator",
         "action": "Measure both neck ODs in mm and confirm molded route clearance before payment",
-        "data_needed": "thermostat_neck_od_tbd_mm; radiator_upper_neck_od_tbd_mm; molded_free_length_tbd_mm; hose_id_by_molded_part_and_neck_od_mm; molded_route_check_required; clamps_tbd_mm",
+        "data_needed": "measure_thermostat_neck_od_mm; measure_radiator_upper_neck_od_mm; buy_molded_hj47_2h_upper_hose_old_length_match_check; molded_epdm_sae_j20r4_id_by_neck_od; molded_route_check_required; 2_smooth_band_or_constant_tension_clamps_by_hose_od",
         "blocks": "RPO-COOL-001",
         "record_result_in": "",
         "source_label": "Replacement Pipe Circuit Closure",
@@ -41285,7 +42976,7 @@ window.J40_DASHBOARD_DATA = {
         "status": "release_hold / needs_close_photo",
         "location": "Vacuum pump / brake booster / crankcase breather area",
         "action": "Capture close photos and measure barbs spigots check-valve direction route length and oil exposure",
-        "data_needed": "vacuum_pump_or_breather_spigot_tbd_mm; booster_checkvalve_or_breather_end_tbd_mm; 2000_vacuum_1000_breather_buy_lengths_cut_to_measured_route; 10_12mm_vacuum_and_16_19mm_breather_working_basis; clamps_tbd_mm",
+        "data_needed": "measure_vacuum_pump_or_breather_spigot_od_mm; measure_booster_checkvalve_or_breather_end_od_mm; 2000_vacuum_1000_breather_buy_lengths_cut_to_measured_route; 10_12mm_vacuum_and_16_19mm_breather_working_basis; smooth_band_clamps_by_hose_od",
         "blocks": "RPO-VAC-001A|RPO-VAC-001B|RPO-VAC-001C",
         "record_result_in": "",
         "source_label": "Replacement Pipe Circuit Closure",
@@ -41311,7 +43002,7 @@ window.J40_DASHBOARD_DATA = {
         "status": "release_hold / needs_brake_close_photos",
         "location": "Frame and axle brake hydraulic routes",
         "action": "Capture fitting close-ups and confirm tube OD flare standard union thread fitting seat individual route lengths and full-droop slack in mm before ordering or fabrication",
-        "data_needed": "caliper_wheel_cylinder_or_union_tbd; master_proportioning_or_axle_tbd; 7600_coil_allowance_final_individual_routes_tbd_mm; 3_16in_4_75mm_working_basis_until_measured; thread_flare_banjo_tbd; old_line_template_required; pclip_and_retaining_clip_tbd",
+        "data_needed": "front_caliper_rear_wheel_cylinder_union_fittings_identify; master_proportioning_axle_fittings_identify; 7600_mm_25ft_4_75mm_3_16in_brake_pipe_coil_cut_to_routes; 3_16in_4_75mm_working_basis_until_measured; match_flare_thread_banjo_seat_from_old_lines; old_line_template_required; pclips_and_retaining_clips_by_line_od",
         "blocks": "RPO-BRAKE-001A|RPO-BRAKE-001B|RPO-CLIP-001",
         "record_result_in": "",
         "source_label": "Replacement Pipe Circuit Closure",
@@ -41363,7 +43054,7 @@ window.J40_DASHBOARD_DATA = {
         "status": "release_hold / direct_location_photo",
         "location": "Bellhousing / clutch slave / master-to-slave route",
         "action": "Photograph close-ups and measure port threads flare style flex length hard-line OD and drivetrain movement clearance in mm",
-        "data_needed": "master_port_thread_or_line_end_tbd; slave_port_thread_or_line_end_tbd; 1500_hard_line_blank_allowance_final_route_tbd_mm; hard_line_od_and_flex_length_tbd_mm; thread_flare_seat_tbd; old_line_or_route_template_if_replacing; clips_tbd",
+        "data_needed": "identify_master_port_thread_or_line_end; identify_slave_port_thread_or_line_end; 1500_mm_4_75mm_3_16in_brake_clutch_pipe_blank_if_replacing_cut_to_route; 4_75mm_3_16in_hard_line_working_basis_plus_measured_flex_length; match_thread_flare_seat_from_old_line; old_line_or_route_template_if_replacing; reuse_or_replace_clips_by_line_od",
         "blocks": "RPO-CLUTCH-001A|RPO-CLUTCH-001B",
         "record_result_in": "",
         "source_label": "Replacement Pipe Circuit Closure",
@@ -41415,7 +43106,7 @@ window.J40_DASHBOARD_DATA = {
         "status": "release_hold / direct_template_photos",
         "location": "Loose May 2 sample for formed coolant pipe rubber joints",
         "action": "Measure each connector hose ID OD free/cut length overlap clamp land bend clearance and both mating spigot ODs in mm before purchase",
-        "data_needed": "pipe_end_a_od_and_mating_spigot_tbd_mm; pipe_end_b_od_and_mating_spigot_tbd_mm; connector_a_and_b_cut_lengths_tbd_mm; epdm_coolant_hose_id_od_tbd_mm; physical_sample_and_vehicle_dryfit_required; clamp_ods_and_band_widths_tbd_mm",
+        "data_needed": "measure_connector_a_pipe_od_and_mating_spigot_od_mm; measure_connector_b_pipe_od_and_mating_spigot_od_mm; 2_x_500_mm_epdm_connector_blanks_or_1000_mm_total_cut_to_sample; 28_30_mm_id_epdm_coolant_hose_working_basis_confirm_by_od; physical_sample_and_vehicle_dryfit_required; 4_smooth_band_or_constant_tension_clamps_by_hose_od",
         "blocks": "RPO-COOL-006A|RPO-COOL-006B",
         "record_result_in": "",
         "source_label": "Replacement Pipe Circuit Closure",
@@ -41441,13 +43132,13 @@ window.J40_DASHBOARD_DATA = {
         "status": "release_hold / direct_template_photos",
         "location": "Loose May 2 sample for front engine cooling route",
         "action": "Flat-lay physical sample and record final centerline length tube dimensions bend geometry beads clamp lands and installed clearances in mm",
-        "data_needed": "pipe_end_a_od_and_bead_tbd_mm; pipe_end_b_od_and_bead_tbd_mm; 750_blank_allowance_final_centerline_length_tbd_mm_visible_envelope_400h_250_300_offset; tube_od_wall_and_hose_id_tbd_mm; physical_sample_required; clamp_lands_tbd_mm",
+        "data_needed": "measure_pipe_end_a_od_and_bead_mm; measure_pipe_end_b_od_and_bead_mm; 750_mm_min_tube_blank_or_1000_mm_shop_stock_final_centerline_from_sample; 28_30_mm_od_working_1_2_1_6_mm_wall_confirm_with_calipers; physical_sample_required; straight_clamp_lands_25_30_mm_min_each_end",
         "blocks": "RPO-COOL-005",
         "record_result_in": "",
         "source_label": "Replacement Pipe Circuit Closure",
         "source_path": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
         "source_row_id": "RP-COOL-005",
-        "notes": "Orderable blank is 750 mm minimum; final centerline length must come from physical sample.",
+        "notes": "Orderable blank is 750 mm minimum; allow 1000 mm stock if the shop sells by meter/foot; final centerline length must come from physical sample.",
         "evidence_ref": "",
         "evidence_images": [],
         "links": [
@@ -41467,7 +43158,7 @@ window.J40_DASHBOARD_DATA = {
         "status": "release_hold / direct_location_photo",
         "location": "Chassis rail low-pressure fuel line route",
         "action": "Inspect under clips and measure OD length bends end style and clip positions in mm before deciding replace vs keep",
-        "data_needed": "line_end_fitting_a_tbd; line_end_fitting_b_tbd; 5000_feed_allowance_5000_return_allowance_final_section_lengths_tbd_mm; 8mm_feed_6mm_return_working_basis; end_style_tbd; old_line_or_route_template_needed; pclip_spacing_300_400mm",
+        "data_needed": "feed_line_end_fittings_match_original; return_line_end_fittings_match_original; 5000_mm_8mm_od_feed_plus_5000_mm_6mm_od_return_stock_cut_to_route; 8mm_feed_6mm_return_working_basis; flare_or_union_style_match_original_after_inspection; old_line_or_route_template_needed; pclip_spacing_300_400mm",
         "blocks": "RPO-FUEL-002A|RPO-FUEL-002B|RPO-CLIP-001",
         "record_result_in": "",
         "source_label": "Replacement Pipe Circuit Closure",
@@ -41610,6 +43301,144 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/component_jobs.csv",
             "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "brake_requirement:BR-FRONT-001",
+        "title": "Front disc pads and retaining hardware",
+        "workstream": "brake_system",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "needs_caliper_pad_identification",
+        "location": "Front disc calipers and rotors",
+        "action": "Assume front pad and hardware replacement in the baseline refresh; photograph calipers, pad shape, and retaining hardware before ordering.",
+        "data_needed": "Pad outline, pad thickness, rotor diameter/thickness if accessible, caliper casting/part numbers, retaining pin/spring style",
+        "blocks": "BR-FRONT-001",
+        "record_result_in": "",
+        "source_label": "Brake Requirements",
+        "source_path": "data/manual/brake_system_requirements.csv",
+        "source_row_id": "BR-FRONT-001",
+        "notes": "Do not buy from 1978 catalog alone because front discs appear to be a previous conversion.",
+        "evidence_ref": "20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g|20260423_232236_gp_caYB252g|20260406_031010",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+            "caption": "Frame And Mount Points \u00b7 Underside Inspection \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "23:22:02",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "frame_and_mount_points",
+            "stage": "underside_inspection",
+            "media_id": "20260423_232202_gp_ryYH6xZg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
+            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "23:22:20",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "steering_and_suspension_linkages",
+            "stage": "underside_inspection",
+            "media_id": "20260423_232220_gp_ezwEcH2g",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260423_232236_gp_caYB252g.jpg",
+            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
+            "captured_date": "2026-04-23",
+            "captured_time": "23:22:36",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "steering_and_suspension_linkages",
+            "stage": "underside_inspection",
+            "media_id": "20260423_232236_gp_caYB252g",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260406_031010.jpg",
+            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-06",
+            "captured_date": "2026-04-06",
+            "captured_time": "03:10:10",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "steering_and_suspension_linkages",
+            "stage": "underside_inspection",
+            "media_id": "20260406_031010",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/brake_system_requirements.csv",
+            "label": "Brake Requirements"
+          }
+        ]
+      },
+      {
+        "task_id": "brake_requirement:BR-REAR-004",
+        "title": "Rear wheel cylinders and bleed screws",
+        "workstream": "brake_system",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "needs_drum_opening",
+        "location": "Left and right rear drum backing plates",
+        "action": "Do not remove the wheel cylinders until each drum/backing plate is photographed open. Once open, plan to replace both rear wheel cylinders unless they are confirmed fresh and leak-free.",
+        "data_needed": "Cylinder bore, mounting bolt spacing, port thread, pushrod/slot style, backing plate side, drum/shoe family, bleed screw size",
+        "blocks": "BR-REAR-004",
+        "record_result_in": "",
+        "source_label": "Brake Requirements",
+        "source_path": "data/manual/brake_system_requirements.csv",
+        "source_row_id": "BR-REAR-004",
+        "notes": "Wheel cylinders are baseline age-replacement unless proven recently new and leak-free.",
+        "evidence_ref": "20260501_194322_gp_XuRtjN4w|20260324_004852|20260324_004906",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
+            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+            "captured_date": "2026-05-01",
+            "captured_time": "19:43:22",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_spring_hanger_and_crossmember",
+            "stage": "chassis_fixing",
+            "media_id": "20260501_194322_gp_XuRtjN4w",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004852.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:48:52",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004852",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260324_004906.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+            "captured_date": "2026-03-24",
+            "captured_time": "00:49:06",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "underside_inspection",
+            "media_id": "20260324_004906",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/brake_system_requirements.csv",
+            "label": "Brake Requirements"
           }
         ]
       },
@@ -43947,15 +45776,15 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "substance",
         "previously": 7,
         "in_process": 4,
-        "still_required": 3,
-        "total": 14
+        "still_required": 4,
+        "total": 15
       },
       {
         "supply_type": "part",
         "previously": 84,
         "in_process": 8,
-        "still_required": 62,
-        "total": 154
+        "still_required": 67,
+        "total": 159
       }
     ],
     "rows_by_status": {
@@ -51339,6 +53168,181 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "part_brake_master_reservoir_refresh",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Brake master reservoir and proportioning service parts",
+          "vendor": "",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "spec_needed_before_order",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "BR-SYS-001|20260331_224409|20260331_224423",
+          "notes": "Inspect installed master, reservoir, booster, vacuum line, and proportioning/bias hardware; replace only after bore, port threads, flare seats, leak condition, and installed layout are confirmed.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260331_224409.jpg",
+            "caption": "Brake master reservoir and proportioning service parts \u00b7 local inventory photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260331_224409",
+            "matched_tokens": [
+              "photo_20260331_224409"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_front_caliper_rebuild_or_replace_pair",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Front caliper rebuild kits or replacement calipers",
+          "vendor": "",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "spec_needed_before_order",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "BR-FRONT-002|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
+          "notes": "Baseline front brake service item: rebuild or replace both front calipers after fitted caliper family is identified if leakage, seizure, torn boots, damaged pistons, stuck sliders, or unsafe unknown condition is found.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+            "caption": "Front caliper rebuild kits or replacement calipers \u00b7 local inventory photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260423_232202_gp_ryYH6xZg",
+            "matched_tokens": [
+              "photo_20260423_232202_gp_ryyh6xzg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_front_disc_pads_hardware",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Front disc pads and retaining hardware",
+          "vendor": "",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "spec_needed_before_order",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "BR-FRONT-001|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
+          "notes": "BASELINE MUST REPLACE after fitted front caliper and pad family are identified. Do not buy by 1978 catalog alone because front discs appear to be a previous conversion.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+            "caption": "Front disc pads and retaining hardware \u00b7 local inventory photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260423_232202_gp_ryYH6xZg",
+            "matched_tokens": [
+              "photo_20260423_232202_gp_ryyh6xzg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_front_brake_hose_pair",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Front flexible brake hose pair",
+          "vendor": "",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "spec_needed_before_order",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "BR-FRONT-004|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
+          "notes": "BASELINE MUST REPLACE after caliper-end fitting, chassis bracket, free length, steering lock clearance, and Ironman full-droop slack are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+            "caption": "Front flexible brake hose pair \u00b7 local inventory photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260423_232202_gp_ryYH6xZg",
+            "matched_tokens": [
+              "photo_20260423_232202_gp_ryyh6xzg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_front_rotor_service_pair",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Front rotor machine or replacement pair",
+          "vendor": "",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "inspect_then_buy",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "BR-FRONT-003|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
+          "notes": "Inspect, machine, or replace by measured rotor thickness, service limit, scoring, cracking, runout, and fitment to the existing front disc conversion.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+            "caption": "Front rotor machine or replacement pair \u00b7 local inventory photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260423_232202_gp_ryYH6xZg",
+            "matched_tokens": [
+              "photo_20260423_232202_gp_ryyh6xzg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "part_rear_axle_hard_brake_lines",
           "supply_type": "part",
           "inventory_group": "mechanical",
@@ -51353,7 +53357,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-REAR-002|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-          "notes": "Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube from the 7600 mm / 25 ft brake tube coil allowance only after flare standard, fitting threads/seats, bend templates, final left/right route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
+          "notes": "BASELINE MUST RECREATE during the Ironman rear suspension window. Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube from the 7600 mm / 25 ft brake tube coil allowance only after flare standard, fitting threads/seats, bend templates, final left/right route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
           "links": [],
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -51388,7 +53392,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-REAR-005|20260501_194322_gp_XuRtjN4w|20260324_004906",
-          "notes": "Order shoes, return springs, hold-down springs, adjusters, and retainers after drum diameter, shoe width, and backing-plate family are confirmed.",
+          "notes": "BASELINE MUST REPLACE: order shoes, return springs, hold-down springs, adjusters, and retainers after drum diameter, shoe width, and backing-plate family are confirmed.",
           "links": [],
           "image": {
             "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
@@ -51423,7 +53427,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-REAR-003|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-          "notes": "Replace rear center hose only after chassis-side and axle-side fitting thread/end style bracket retention free length and full-droop slack are measured; brake-fluid-rated hose only; verify no stretch or suspension/tire contact at full droop.",
+          "notes": "BASELINE MUST REPLACE; order only after chassis-side and axle-side fitting thread/end style, bracket retention, free length, and Ironman full-droop slack are measured. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
           "links": [],
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -51458,7 +53462,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-          "notes": "Count and replace corroded or missing rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD. Use permanent supports, not cable ties, before final rear axle routing.",
+          "notes": "BASELINE MUST REPLACE missing/corroded supports: count and replace rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD. Use permanent supports, not cable ties, before final rear axle routing.",
           "links": [],
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -51493,7 +53497,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w",
-          "notes": "Replace the rear handbrake/parking-brake cable system as a safety baseline; order only after cable end types, lengths, equalizer hardware, and backing-plate levers are confirmed from the removed samples.",
+          "notes": "BASELINE MUST REPLACE during the Ironman rear suspension window; order only after cable end types, lengths, equalizer hardware, and backing-plate levers are confirmed from the removed samples.",
           "links": [],
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -51528,7 +53532,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "BR-REAR-004|20260501_194322_gp_XuRtjN4w|20260324_004906",
-          "notes": "Buy as a left/right pair after drum opening confirms cylinder bore, port thread, mounting pattern, and pushrod style.",
+          "notes": "BASELINE MUST REPLACE as a left/right pair after drum opening confirms cylinder bore, port thread, mounting pattern, and pushrod style.",
           "links": [],
           "image": {
             "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
@@ -52306,7 +54310,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready via RPO-BRAKE-001A/B: front/rear brake flex hoses by current fitting thread/banjo/seat, bracket retention, free length and full-droop length; brake hard-line length basis is 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with brake-rated fittings. Release hold: close fitting photos, flare/thread/seat confirmation, final individual route lengths, bend templates, and full-droop slack before payment/fabrication.",
+          "notes": "Spec ready via RPO-BRAKE-001A/B: front/rear brake flex hoses by current fitting thread/banjo/seat, bracket retention, free length and full-droop length; brake hard-line length basis is 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with brake-rated fittings. Release hold: close fitting photos, flare/thread/seat confirmation, final individual route lengths, bend templates, and full-droop slack before payment/fabrication. This package overlaps BR-FRONT-004 and BR-REAR-003; order as one hose/line package or as itemized lines, not both.",
           "links": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
@@ -52321,6 +54325,41 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "brake",
               "line"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_brake_fluid_bleed_consumables",
+          "supply_type": "substance",
+          "inventory_group": "substances",
+          "item": "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves",
+          "vendor": "Autohub/Daraz/local brake supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "BR-SYS-002|BR-CAPTURE-001|docs/brake-suspension-order-links-20260503.md",
+          "notes": "PURCHASE READY for non-fitment consumables before opening hydraulics: line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. Brake fluid itself remains cap/manual/workshop-confirmed DOT spec before payment; do not mix unknown old fluid. Candidate order/search links are logged in docs/brake-suspension-order-links-20260503.md.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/suspension_kit.jpg",
+            "caption": "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves \u00b7 suspension kit reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "suspension_kit",
+            "matched_tokens": [
+              "suspension"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -59248,7 +61287,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-        "notes": "Count and replace corroded or missing rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD. Use permanent supports, not cable ties, before final rear axle routing.",
+        "notes": "BASELINE MUST REPLACE missing/corroded supports: count and replace rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD. Use permanent supports, not cable ties, before final rear axle routing.",
         "links": [],
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -59482,6 +61521,41 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "part_brake_master_reservoir_refresh",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Brake master reservoir and proportioning service parts",
+        "vendor": "",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "spec_needed_before_order",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "BR-SYS-001|20260331_224409|20260331_224423",
+        "notes": "Inspect installed master, reservoir, booster, vacuum line, and proportioning/bias hardware; replace only after bore, port threads, flare seats, leak condition, and installed layout are confirmed.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260331_224409.jpg",
+          "caption": "Brake master reservoir and proportioning service parts \u00b7 local inventory photo",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260331_224409",
+          "matched_tokens": [
+            "photo_20260331_224409"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_mech_clutch_master_slave_refresh",
         "supply_type": "part",
         "inventory_group": "mechanical",
@@ -59691,6 +61765,146 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_front_caliper_rebuild_or_replace_pair",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Front caliper rebuild kits or replacement calipers",
+        "vendor": "",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "spec_needed_before_order",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "BR-FRONT-002|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
+        "notes": "Baseline front brake service item: rebuild or replace both front calipers after fitted caliper family is identified if leakage, seizure, torn boots, damaged pistons, stuck sliders, or unsafe unknown condition is found.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+          "caption": "Front caliper rebuild kits or replacement calipers \u00b7 local inventory photo",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260423_232202_gp_ryYH6xZg",
+          "matched_tokens": [
+            "photo_20260423_232202_gp_ryyh6xzg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_front_disc_pads_hardware",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Front disc pads and retaining hardware",
+        "vendor": "",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "spec_needed_before_order",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "BR-FRONT-001|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
+        "notes": "BASELINE MUST REPLACE after fitted front caliper and pad family are identified. Do not buy by 1978 catalog alone because front discs appear to be a previous conversion.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+          "caption": "Front disc pads and retaining hardware \u00b7 local inventory photo",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260423_232202_gp_ryYH6xZg",
+          "matched_tokens": [
+            "photo_20260423_232202_gp_ryyh6xzg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_front_brake_hose_pair",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Front flexible brake hose pair",
+        "vendor": "",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "spec_needed_before_order",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "BR-FRONT-004|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
+        "notes": "BASELINE MUST REPLACE after caliper-end fitting, chassis bracket, free length, steering lock clearance, and Ironman full-droop slack are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+          "caption": "Front flexible brake hose pair \u00b7 local inventory photo",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260423_232202_gp_ryYH6xZg",
+          "matched_tokens": [
+            "photo_20260423_232202_gp_ryyh6xzg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_front_rotor_service_pair",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Front rotor machine or replacement pair",
+        "vendor": "",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "inspect_then_buy",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "BR-FRONT-003|20260423_232202_gp_ryYH6xZg|20260423_232220_gp_ezwEcH2g",
+        "notes": "Inspect, machine, or replace by measured rotor thickness, service limit, scoring, cracking, runout, and fitment to the existing front disc conversion.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260423_232202_gp_ryYH6xZg.jpg",
+          "caption": "Front rotor machine or replacement pair \u00b7 local inventory photo",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260423_232202_gp_ryYH6xZg",
+          "matched_tokens": [
+            "photo_20260423_232202_gp_ryyh6xzg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
         }
       },
       {
@@ -59960,7 +62174,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-REAR-002|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-        "notes": "Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube from the 7600 mm / 25 ft brake tube coil allowance only after flare standard, fitting threads/seats, bend templates, final left/right route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
+        "notes": "BASELINE MUST RECREATE during the Ironman rear suspension window. Recreate left/right rear axle lines in brake-rated 4.75 mm / 3/16 in tube from the 7600 mm / 25 ft brake tube coil allowance only after flare standard, fitting threads/seats, bend templates, final left/right route lengths, bracket pass-throughs, and clip positions are confirmed. Use brake-rated bundy steel or CuNi/Cunifer; no bare copper.",
         "links": [],
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -59995,7 +62209,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-REAR-005|20260501_194322_gp_XuRtjN4w|20260324_004906",
-        "notes": "Order shoes, return springs, hold-down springs, adjusters, and retainers after drum diameter, shoe width, and backing-plate family are confirmed.",
+        "notes": "BASELINE MUST REPLACE: order shoes, return springs, hold-down springs, adjusters, and retainers after drum diameter, shoe width, and backing-plate family are confirmed.",
         "links": [],
         "image": {
           "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
@@ -60030,7 +62244,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-REAR-003|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-        "notes": "Replace rear center hose only after chassis-side and axle-side fitting thread/end style bracket retention free length and full-droop slack are measured; brake-fluid-rated hose only; verify no stretch or suspension/tire contact at full droop.",
+        "notes": "BASELINE MUST REPLACE; order only after chassis-side and axle-side fitting thread/end style, bracket retention, free length, and Ironman full-droop slack are measured. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
         "links": [],
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -60065,7 +62279,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w",
-        "notes": "Replace the rear handbrake/parking-brake cable system as a safety baseline; order only after cable end types, lengths, equalizer hardware, and backing-plate levers are confirmed from the removed samples.",
+        "notes": "BASELINE MUST REPLACE during the Ironman rear suspension window; order only after cable end types, lengths, equalizer hardware, and backing-plate levers are confirmed from the removed samples.",
         "links": [],
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -60100,7 +62314,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "BR-REAR-004|20260501_194322_gp_XuRtjN4w|20260324_004906",
-        "notes": "Buy as a left/right pair after drum opening confirms cylinder bore, port thread, mounting pattern, and pushrod style.",
+        "notes": "BASELINE MUST REPLACE as a left/right pair after drum opening confirms cylinder bore, port thread, mounting pattern, and pushrod style.",
         "links": [],
         "image": {
           "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
@@ -60961,7 +63175,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready via RPO-BRAKE-001A/B: front/rear brake flex hoses by current fitting thread/banjo/seat, bracket retention, free length and full-droop length; brake hard-line length basis is 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with brake-rated fittings. Release hold: close fitting photos, flare/thread/seat confirmation, final individual route lengths, bend templates, and full-droop slack before payment/fabrication.",
+        "notes": "Spec ready via RPO-BRAKE-001A/B: front/rear brake flex hoses by current fitting thread/banjo/seat, bracket retention, free length and full-droop length; brake hard-line length basis is 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with brake-rated fittings. Release hold: close fitting photos, flare/thread/seat confirmation, final individual route lengths, bend templates, and full-droop slack before payment/fabrication. This package overlaps BR-FRONT-004 and BR-REAR-003; order as one hose/line package or as itemized lines, not both.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
@@ -60976,6 +63190,41 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "brake",
             "line"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_brake_fluid_bleed_consumables",
+        "supply_type": "substance",
+        "inventory_group": "substances",
+        "item": "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves",
+        "vendor": "Autohub/Daraz/local brake supplier",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "BR-SYS-002|BR-CAPTURE-001|docs/brake-suspension-order-links-20260503.md",
+        "notes": "PURCHASE READY for non-fitment consumables before opening hydraulics: line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. Brake fluid itself remains cap/manual/workshop-confirmed DOT spec before payment; do not mix unknown old fluid. Candidate order/search links are logged in docs/brake-suspension-order-links-20260503.md.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/suspension_kit.jpg",
+          "caption": "Brake hydraulic opening prep consumables - caps plugs bleed hose bottle cleaner rags gloves \u00b7 suspension kit reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "suspension_kit",
+          "matched_tokens": [
+            "suspension"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -66137,11 +68386,11 @@ window.J40_DASHBOARD_DATA = {
       "media_type": "photo",
       "component_group": "removable_panels",
       "specific_component": "detached_body_panels_and_doors",
-      "stage": "removed_parts_cataloguing",
-      "observed_state": "removed_from_vehicle",
+      "stage": "hardware_refinish",
+      "observed_state": "refinished_off_vehicle",
       "confidence": "high",
-      "tags": "doors|body_panels|removed",
-      "notes": ""
+      "tags": "doors|body_panels|refinished|post_paint",
+      "notes": "Post-paint returned panel/door set."
     },
     "20260408_211806_gp_TbbCJsoQ": {
       "media_id": "20260408_211806_gp_TbbCJsoQ",
@@ -66152,11 +68401,11 @@ window.J40_DASHBOARD_DATA = {
       "media_type": "photo",
       "component_group": "removable_panels",
       "specific_component": "detached_body_panels_and_doors",
-      "stage": "removed_parts_cataloguing",
-      "observed_state": "removed_from_vehicle",
+      "stage": "hardware_refinish",
+      "observed_state": "refinished_off_vehicle",
       "confidence": "high",
-      "tags": "doors|body_panels|removed",
-      "notes": ""
+      "tags": "doors|body_panels|refinished|post_paint",
+      "notes": "Post-paint returned panel/door set."
     },
     "20260408_211812": {
       "media_id": "20260408_211812",
@@ -66167,11 +68416,11 @@ window.J40_DASHBOARD_DATA = {
       "media_type": "photo",
       "component_group": "removable_panels",
       "specific_component": "detached_body_panels_and_doors",
-      "stage": "removed_parts_cataloguing",
-      "observed_state": "removed_from_vehicle",
+      "stage": "hardware_refinish",
+      "observed_state": "refinished_off_vehicle",
       "confidence": "high",
-      "tags": "doors|body_panels|removed",
-      "notes": ""
+      "tags": "doors|body_panels|refinished|post_paint",
+      "notes": "Post-paint returned panel/door set."
     },
     "20260408_211814_gp_hJ3szRKQ": {
       "media_id": "20260408_211814_gp_hJ3szRKQ",
@@ -66182,11 +68431,11 @@ window.J40_DASHBOARD_DATA = {
       "media_type": "photo",
       "component_group": "removable_panels",
       "specific_component": "detached_body_panels_and_doors",
-      "stage": "removed_parts_cataloguing",
-      "observed_state": "removed_from_vehicle",
+      "stage": "hardware_refinish",
+      "observed_state": "refinished_off_vehicle",
       "confidence": "high",
-      "tags": "doors|body_panels|removed",
-      "notes": ""
+      "tags": "doors|body_panels|refinished|post_paint",
+      "notes": "Post-paint returned panel/door set."
     },
     "20260408_212832": {
       "media_id": "20260408_212832",
@@ -66197,11 +68446,11 @@ window.J40_DASHBOARD_DATA = {
       "media_type": "photo",
       "component_group": "window_hardware",
       "specific_component": "rear_hatch_window_latch_mechanisms",
-      "stage": "removed_parts_cataloguing",
-      "observed_state": "removed_from_vehicle",
+      "stage": "hardware_refinish",
+      "observed_state": "refinished_off_vehicle",
       "confidence": "high",
-      "tags": "window|latch|mechanism|rear_hatch",
-      "notes": ""
+      "tags": "window|latch|mechanism|rear_hatch|refinished|post_paint",
+      "notes": "Post-paint returned rear hatch/window hardware detail."
     },
     "20260408_212835_gp_nwY1TOwQ": {
       "media_id": "20260408_212835_gp_nwY1TOwQ",
@@ -66227,11 +68476,11 @@ window.J40_DASHBOARD_DATA = {
       "media_type": "photo",
       "component_group": "removable_panels",
       "specific_component": "detached_body_panels_and_doors",
-      "stage": "removed_parts_cataloguing",
-      "observed_state": "removed_from_vehicle",
+      "stage": "hardware_refinish",
+      "observed_state": "refinished_off_vehicle",
       "confidence": "high",
-      "tags": "doors|body_panels|removed",
-      "notes": ""
+      "tags": "doors|body_panels|refinished|post_paint",
+      "notes": "Post-paint returned panel/door set."
     },
     "20260408_212841_gp_y9GxLOZg": {
       "media_id": "20260408_212841_gp_y9GxLOZg",
@@ -66242,11 +68491,11 @@ window.J40_DASHBOARD_DATA = {
       "media_type": "photo",
       "component_group": "removable_panels",
       "specific_component": "detached_body_panels_and_doors",
-      "stage": "removed_parts_cataloguing",
-      "observed_state": "removed_from_vehicle",
+      "stage": "hardware_refinish",
+      "observed_state": "refinished_off_vehicle",
       "confidence": "high",
-      "tags": "doors|body_panels|removed",
-      "notes": ""
+      "tags": "doors|body_panels|refinished|post_paint",
+      "notes": "Post-paint returned panel/door set."
     },
     "20260408_212846": {
       "media_id": "20260408_212846",
@@ -66257,11 +68506,11 @@ window.J40_DASHBOARD_DATA = {
       "media_type": "photo",
       "component_group": "removable_panels",
       "specific_component": "detached_body_panels_and_doors",
-      "stage": "removed_parts_cataloguing",
-      "observed_state": "removed_from_vehicle",
+      "stage": "hardware_refinish",
+      "observed_state": "refinished_off_vehicle",
       "confidence": "high",
-      "tags": "doors|body_panels|removed",
-      "notes": ""
+      "tags": "doors|body_panels|refinished|post_paint",
+      "notes": "Post-paint returned panel/door set."
     },
     "20260408_212849_gp_VJjse8gw": {
       "media_id": "20260408_212849_gp_VJjse8gw",
@@ -66272,11 +68521,11 @@ window.J40_DASHBOARD_DATA = {
       "media_type": "photo",
       "component_group": "removable_panels",
       "specific_component": "detached_body_panels_and_doors",
-      "stage": "removed_parts_cataloguing",
-      "observed_state": "removed_from_vehicle",
+      "stage": "hardware_refinish",
+      "observed_state": "refinished_off_vehicle",
       "confidence": "high",
-      "tags": "doors|body_panels|removed",
-      "notes": ""
+      "tags": "doors|body_panels|refinished|post_paint",
+      "notes": "Post-paint returned panel/door set."
     },
     "20260410_013927": {
       "media_id": "20260410_013927",
