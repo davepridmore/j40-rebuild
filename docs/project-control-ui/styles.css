@@ -120,10 +120,28 @@ h1 {
   margin-top: 0.75rem;
 }
 
+.reference-focus-grid {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin: 0.75rem 0;
+}
+
 .reference-section-card,
-.reference-drop-card {
+.reference-drop-card,
+.reference-focus-card {
   display: grid;
   gap: 0.55rem;
+}
+
+.reference-focus-card h3 {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+.reference-jump-btn {
+  cursor: pointer;
+  font: inherit;
 }
 
 .reference-links {
@@ -539,6 +557,30 @@ th {
 
 .requirement-table {
   min-width: 1180px;
+}
+
+.chassis-rubber-spec-table {
+  min-width: 1280px;
+}
+
+.requirement-table.chassis-rubber-spec-table th:nth-child(1),
+.requirement-table.chassis-rubber-spec-table td:nth-child(1) {
+  width: 120px;
+}
+
+.requirement-table.chassis-rubber-spec-table th:nth-child(2),
+.requirement-table.chassis-rubber-spec-table td:nth-child(2) {
+  width: 110px;
+}
+
+.requirement-table.chassis-rubber-spec-table th:nth-child(3),
+.requirement-table.chassis-rubber-spec-table td:nth-child(3) {
+  width: 210px;
+}
+
+.requirement-table.chassis-rubber-spec-table th:nth-child(4),
+.requirement-table.chassis-rubber-spec-table td:nth-child(4) {
+  width: 120px;
 }
 
 .requirement-table th:nth-child(1),

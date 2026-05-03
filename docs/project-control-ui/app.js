@@ -76,6 +76,17 @@
       return;
     }
 
+    const referenceSectionTrigger = event.target.closest("[data-scroll-reference-section]");
+    if (referenceSectionTrigger) {
+      const sectionId = referenceSectionTrigger.getAttribute("data-scroll-reference-section");
+      const sectionNode = sectionId ? document.getElementById(sectionId) : null;
+      if (sectionNode) {
+        event.preventDefault();
+        sectionNode.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+      return;
+    }
+
     const itemTrigger = event.target.closest("[data-item-key]");
     if (!itemTrigger) {
       return;
@@ -1088,6 +1099,191 @@
     `;
   }
 
+  const CHASSIS_RUBBER_SPEC_ROWS = [
+    {
+      id: "BM-LG",
+      part: "Large circular body-mount cushion",
+      qty: "2",
+      image: "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+      imageCaption: "Large circular body-mount cushion",
+      spec: "78 OD x 24 high; 32 centre bore/register; 46 centre register OD x 2 deep; outside edge R2-R3.",
+      notes: "Matched pair. Flat, parallel faces.",
+    },
+    {
+      id: "BM-SM",
+      part: "Small circular body-mount cushion",
+      qty: "10",
+      image: "../../photos/20260502_004437_gp_f1TySzww.jpg",
+      imageCaption: "Small circular body-mount cushion",
+      spec: "64 OD x 22 high; 32 centre bore/register; 46 centre register OD x 2 deep; outside edge R2-R3.",
+      notes: "All 10 from one batch. Flat, parallel faces.",
+    },
+    {
+      id: "FS-OVAL",
+      part: "Front-support two-hole oval pad",
+      qty: "2",
+      image: "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
+      imageCaption: "Front-support two-hole oval pad",
+      spec: "96 long x 64 wide x 15 thick; two 12 holes on 64 centres; 36 x 18 relief pocket with R3 corners; top boss/insert OD 29.",
+      notes: "Matched pair. Punch or machine holes cleanly.",
+    },
+    {
+      id: "FS-STRIP-L",
+      part: "Front-support left strip / liner",
+      qty: "1",
+      image: "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
+      imageCaption: "Front-support left strip / liner",
+      spec: "165 trace length; 38-42 width; 8 base thickness; 14 raised/load pad height; 11 M10 holes or 11 x 16 slots where the carrier shows slots.",
+      notes: "Trace final outline and hole centres from the physical left carrier.",
+    },
+    {
+      id: "FS-STRIP-R",
+      part: "Front-support right strip / liner",
+      qty: "1",
+      image: "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
+      imageCaption: "Front-support right strip / liner",
+      spec: "Same as FS-STRIP-L unless the right carrier proves different.",
+      notes: "Trace final outline and hole centres from the physical right carrier.",
+    },
+    {
+      id: "EXH-HGR",
+      part: "Exhaust pipe holder / hanger rubber",
+      qty: "Count all exhaust support points",
+      image: "../../deliverables/selling_site_images/images/reference_catalog/exhaust_hanger.jpg",
+      imageCaption: "Exhaust hanger rubber shape reference",
+      spec: "Buy by sample: measure hanger pin OD, hole centre spacing, rubber width/thickness, free length, and installed exhaust movement clearance.",
+      notes: "Replace cracked, stretched, missing, or heat-damaged holders. Match all holders at the same support style.",
+    },
+    {
+      id: "BUMP-F-L",
+      part: "Front left spring bump stop",
+      qty: "1",
+      image: "../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg",
+      imageCaption: "Bump stop shape reference",
+      spec: "Prefer OEM/manufacturer-style Toyota 48304-60010 or direct replacement. If made locally, sample-match molded profile, base footprint, mounting hole pattern/thread, free height, compressed height, contact face location, and axle contact clearance.",
+      notes: "Verify by chassis/VIN and physical left-front bracket before ordering. Do not use a generic universal stop.",
+    },
+    {
+      id: "BUMP-F-R",
+      part: "Front right spring bump stop",
+      qty: "1",
+      image: "../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg",
+      imageCaption: "Bump stop shape reference",
+      spec: "Prefer OEM/manufacturer-style Toyota 48304-60020 or direct replacement. This is a separate RH/front part; match the shorter/right-side profile, base footprint, mounting hole pattern/thread, free height, compressed height, contact face location, and axle contact clearance.",
+      notes: "Verify by chassis/VIN and physical right-front bracket before ordering. Do not install the left-side stop here.",
+    },
+    {
+      id: "BUMP-R",
+      part: "Rear spring bump stops",
+      qty: "2",
+      image: "../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg",
+      imageCaption: "Bump stop shape reference",
+      spec: "Prefer OEM/manufacturer-style Toyota 48304-60010 or direct replacement for both rear sides. If sourced locally, match rear bracket/base, molded profile, bolt pattern/thread, free height, compressed height, contact face location, and loaded axle clearance.",
+      notes: "Replace as a matched rear pair. Check with final suspension ride height and axle travel before purchase.",
+    },
+  ];
+
+  const CHASSIS_RUBBER_REFERENCE_IMAGES = [
+    ["../../photos/20260502_004413_gp_Qno8OVRg.jpg", "Circular cushion top reference"],
+    ["../../photos/20260502_004442_gp_7WcFHjLQ.jpg", "Circular annular cushion reference 2"],
+    ["../../photos/20260502_004254_gp_Hm9RR5DQ.jpg", "Long strip height reference"],
+    ["../../photos/20260502_004314_gp_wuzpgNrA.jpg", "Long strip side reference"],
+    ["../../photos/20260405_234652.jpg", "Original tub-side body-mount context"],
+    ["../../photos/20260405_234546.jpg", "Original underbody mount context"],
+  ];
+
+  function renderChassisRubberSpecImage(row) {
+    const image = {
+      path: row.image,
+      caption: row.imageCaption || row.part,
+      media_id: row.id,
+      media_type: "photo",
+    };
+    const prepared = prepareImage(image, row.imageCaption || row.part);
+    return `
+      <td class="table-image-cell">
+        ${renderPreparedMedia(prepared, "table-image-btn", "table-image")}
+        <span class="table-image-note">${escapeHtml(row.imageCaption || "")}</span>
+      </td>
+    `;
+  }
+
+  function renderChassisRubberSimpleSpec() {
+    return `
+      <article class="card pipe-requirements-card">
+        <div class="detail-header">
+          <h3>Rubber Spec</h3>
+          <div class="chip-row">
+            ${chip("All dimensions mm")}
+            ${chip("Shore A 60 +/-5")}
+          </div>
+        </div>
+        <p class="small-muted">Body/front-support rubbers: new black solid EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5. Exhaust holders: automotive exhaust-hanger rubber/EPDM suitable for heat and vibration. Bump stops: OEM/manufacturer-style molded stops where available; fabricate only by exact sample and bracket match. Reject tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, or universal bump stops that do not match the axle contact point.</p>
+        <div class="table-wrap requirement-table-wrap">
+          <table class="requirement-table chassis-rubber-spec-table">
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>ID</th>
+                <th>Part</th>
+                <th>Qty</th>
+                <th>Exact Spec</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${CHASSIS_RUBBER_SPEC_ROWS
+                .map(
+                  (row) => `
+                    <tr>
+                      ${renderChassisRubberSpecImage(row)}
+                      <td><strong>${escapeHtml(row.id)}</strong></td>
+                      <td>${escapeHtml(row.part)}</td>
+                      <td>${escapeHtml(row.qty)}</td>
+                      <td>${escapeHtml(row.spec)}</td>
+                      <td>${escapeHtml(row.notes)}</td>
+                    </tr>
+                  `
+                )
+                .join("")}
+            </tbody>
+          </table>
+        </div>
+        <p class="small-muted">Tolerances: circular cushion OD/ID +/-1.0, height +/-0.5, bore/register concentricity <=1.0; FS-OVAL outside +/-1.0, hole position +/-0.5, thickness +/-0.5; strip outline +/-1.0, holes +/-0.5, thickness +/-0.5. Bump stops are not simple cut rubber; OEM/manufacturer part or exact molded sample controls.</p>
+      </article>
+    `;
+  }
+
+  function renderChassisRubberReferenceImages() {
+    return `
+      <article class="card pipe-requirements-card">
+        <div class="detail-header">
+          <h3>Extra Context Images</h3>
+          <div class="chip-row">${chip(`${CHASSIS_RUBBER_REFERENCE_IMAGES.length} Images`)}</div>
+        </div>
+        <div class="requirement-evidence-grid">
+          ${CHASSIS_RUBBER_REFERENCE_IMAGES
+            .map(([path, caption]) => {
+              const image = {
+                path,
+                caption,
+                media_id: path.split("/").pop().replace(/\.[^.]+$/, ""),
+                media_type: "photo",
+              };
+              const prepared = prepareImage(image, caption);
+              return `
+                <div class="requirement-evidence-item">
+                  ${renderPreparedMedia(prepared, "table-image-btn", "table-image")}
+                  <span class="table-image-note">${escapeHtml(caption)}</span>
+                </div>
+              `;
+            })
+            .join("")}
+        </div>
+      </article>
+    `;
+  }
+
   function renderBodyMountOrderReleaseTable(rows) {
     const source = Array.isArray(rows) ? rows : [];
     if (!source.length) {
@@ -1689,13 +1885,8 @@
       : active.pipe_requirements;
     if (active.id === "chassis_rubbers") {
       return [
-        renderRequirementTable(rows, {
-          title: "Chassis Rubber Requirements",
-          summary: "Exact rubber, sleeve, cup, shim, and hardware requirements with status gates for specification, acquisition, and installation.",
-        }),
-        renderBodyMountOrderReleaseTable(active.body_mount_order_release_specs),
-        renderBodyMountReleaseActions(active.body_mount_release_actions),
-        renderBodyMountStationClosure(active.body_mount_station_closure),
+        renderChassisRubberSimpleSpec(),
+        renderChassisRubberReferenceImages(),
       ].join("");
     }
     if (active.id === "replacement_pipes") {
@@ -2655,6 +2846,7 @@
       const mediaType = withOverride(getBasePhotoMeta(image)).media_type;
       return mediaType === "video" ? count + 1 : count;
     }, 0);
+    const simpleChassisRubbers = active.id === "chassis_rubbers";
 
     detailNode.innerHTML = `
       <article class="card">
@@ -2676,150 +2868,160 @@
 
       ${renderMarketSpecCards(active.market_specs)}
       ${renderWorkstreamRequirements(active)}
-      ${renderFabricationPackages(active.fabrication_packages)}
+      ${simpleChassisRubbers ? "" : renderFabricationPackages(active.fabrication_packages)}
 
-      <article class="card">
-        <h3>Evidence Media</h3>
-        <p class="small-muted">${escapeHtml(filteredEvidenceCount || 0)} unique media items across evidence sets${filteredVideoCount ? ` (${escapeHtml(filteredVideoCount)} videos)` : ""}.</p>
-        ${renderEvidenceSets(filteredEvidenceSets)}
-      </article>
+      ${simpleChassisRubbers ? "" : `
+        <article class="card">
+          <h3>Evidence Media</h3>
+          <p class="small-muted">${escapeHtml(filteredEvidenceCount || 0)} unique media items across evidence sets${filteredVideoCount ? ` (${escapeHtml(filteredVideoCount)} videos)` : ""}.</p>
+          ${renderEvidenceSets(filteredEvidenceSets)}
+        </article>
+      `}
 
-      ${renderSubtaskGroups(active.subtask_groups)}
-      ${active.subtask_groups && active.subtask_groups.length ? "" : renderOperationPanels(active.operation_panels)}
+      ${simpleChassisRubbers ? "" : renderSubtaskGroups(active.subtask_groups)}
+      ${simpleChassisRubbers || (active.subtask_groups && active.subtask_groups.length) ? "" : renderOperationPanels(active.operation_panels)}
 
-      <article class="card">
-        <h3>Guided Steps</h3>
-        ${renderStepsList(active.steps)}
-      </article>
+      ${simpleChassisRubbers ? "" : `
+        <article class="card">
+          <h3>Guided Steps</h3>
+          ${renderStepsList(active.steps)}
+        </article>
+      `}
 
-      <article class="card">
-        <h3>Involved Parts</h3>
-        <p class="small-muted">${escapeHtml(involvedParts.length || 0)} mapped part rows for this workstream.</p>
-        ${
-          involvedParts.length
-            ? `
-                <div class="table-wrap">
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Image</th>
-                        <th>Item</th>
-                        <th>Status</th>
-                        <th>Procurement</th>
-                        <th>Payment / Delivery</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      ${involvedParts
-                        .map(
-                          (row) => `
-                            <tr>
-                              ${renderInventoryImageCell(row, row.item || "Part image")}
-                              <td>
-                                <strong>${escapeHtml(row.item || "")}</strong>
-                                <div class="small-muted">${escapeHtml(row.entry_id || "")}</div>
-                              </td>
-                              <td>${statusChip(row.status)}</td>
-                              <td>${escapeHtml(formatToken(row.procurement_stage || "unknown"))}</td>
-                              <td>${escapeHtml(formatToken(row.payment_status || "unknown"))} / ${escapeHtml(formatToken(row.delivery_status || "unknown"))}</td>
-                            </tr>
-                          `
-                        )
-                        .join("")}
-                    </tbody>
-                  </table>
-                </div>
-              `
-            : '<p class="small-muted">No part rows are mapped to this workstream yet.</p>'
-        }
-      </article>
+      ${simpleChassisRubbers ? "" : `
+        <article class="card">
+          <h3>Involved Parts</h3>
+          <p class="small-muted">${escapeHtml(involvedParts.length || 0)} mapped part rows for this workstream.</p>
+          ${
+            involvedParts.length
+              ? `
+                  <div class="table-wrap">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Image</th>
+                          <th>Item</th>
+                          <th>Status</th>
+                          <th>Procurement</th>
+                          <th>Payment / Delivery</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        ${involvedParts
+                          .map(
+                            (row) => `
+                              <tr>
+                                ${renderInventoryImageCell(row, row.item || "Part image")}
+                                <td>
+                                  <strong>${escapeHtml(row.item || "")}</strong>
+                                  <div class="small-muted">${escapeHtml(row.entry_id || "")}</div>
+                                </td>
+                                <td>${statusChip(row.status)}</td>
+                                <td>${escapeHtml(formatToken(row.procurement_stage || "unknown"))}</td>
+                                <td>${escapeHtml(formatToken(row.payment_status || "unknown"))} / ${escapeHtml(formatToken(row.delivery_status || "unknown"))}</td>
+                              </tr>
+                            `
+                          )
+                          .join("")}
+                      </tbody>
+                    </table>
+                  </div>
+                `
+              : '<p class="small-muted">No part rows are mapped to this workstream yet.</p>'
+          }
+        </article>
+      `}
 
       ${renderElectricalSpecLayout(active.electrical_spec_layout)}
 
-      <article class="card">
-        <h3>Linked Project Packages</h3>
-        ${
-          active.linked_packages && active.linked_packages.length
-            ? `
-                <div class="table-wrap">
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Package</th>
-                        <th>Status</th>
-                        <th>Objective</th>
-                        <th>Gate</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      ${active.linked_packages
-                        .map(
-                          (row) => `
-                            <tr>
-                              <td>${escapeHtml(row.work_package_id)} · ${escapeHtml(row.title)}</td>
-                              <td>${statusChip(row.current_state)}</td>
-                              <td>${escapeHtml(row.objective)}</td>
-                              <td>${escapeHtml(row.gate_to_close)}</td>
-                            </tr>
-                          `
-                        )
-                        .join("")}
-                    </tbody>
-                  </table>
-                </div>
-              `
-            : '<p class="small-muted">No linked package rows found.</p>'
-        }
-      </article>
-
-      <div class="split">
+      ${simpleChassisRubbers ? "" : `
         <article class="card">
-          <h3>Component Jobs</h3>
+          <h3>Linked Project Packages</h3>
           ${
-            active.component_jobs && active.component_jobs.length
-              ? `<ul class="plain-list">
-                  ${active.component_jobs
-                    .slice(0, 14)
-                    .map(
-                      (job) => `
-                        <li class="plain-item">
-                          <div class="step-row">
-                            <span class="step-label">${escapeHtml(formatToken(job.component_job_id))}</span>
-                            ${statusChip(job.current_status)}
-                          </div>
-                          <p class="step-detail">${escapeHtml(job.planned_action || "")}</p>
-                        </li>
-                      `
-                    )
-                    .join("")}
-                </ul>`
-              : '<p class="small-muted">No component jobs linked.</p>'
+            active.linked_packages && active.linked_packages.length
+              ? `
+                  <div class="table-wrap">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Package</th>
+                          <th>Status</th>
+                          <th>Objective</th>
+                          <th>Gate</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        ${active.linked_packages
+                          .map(
+                            (row) => `
+                              <tr>
+                                <td>${escapeHtml(row.work_package_id)} · ${escapeHtml(row.title)}</td>
+                                <td>${statusChip(row.current_state)}</td>
+                                <td>${escapeHtml(row.objective)}</td>
+                                <td>${escapeHtml(row.gate_to_close)}</td>
+                              </tr>
+                            `
+                          )
+                          .join("")}
+                      </tbody>
+                    </table>
+                  </div>
+                `
+              : '<p class="small-muted">No linked package rows found.</p>'
           }
         </article>
+      `}
 
-        <article class="card">
-          <h3>Issue Checks</h3>
-          ${
-            active.issue_jobs && active.issue_jobs.length
-              ? `<ul class="plain-list">
-                  ${active.issue_jobs
-                    .map(
-                      (issue) => `
-                        <li class="plain-item">
-                          <div class="step-row">
-                            <span class="step-label">${escapeHtml(formatToken(issue.component_job_id))}</span>
-                            ${statusChip(issue.current_status)}
-                          </div>
-                          <p class="step-detail">${escapeHtml(issue.planned_action || "")}</p>
-                        </li>
-                      `
-                    )
-                    .join("")}
-                </ul>`
-              : '<p class="small-muted">No issue-specific rows for this workstream.</p>'
-          }
-        </article>
-      </div>
+      ${simpleChassisRubbers ? "" : `
+        <div class="split">
+          <article class="card">
+            <h3>Component Jobs</h3>
+            ${
+              active.component_jobs && active.component_jobs.length
+                ? `<ul class="plain-list">
+                    ${active.component_jobs
+                      .slice(0, 14)
+                      .map(
+                        (job) => `
+                          <li class="plain-item">
+                            <div class="step-row">
+                              <span class="step-label">${escapeHtml(formatToken(job.component_job_id))}</span>
+                              ${statusChip(job.current_status)}
+                            </div>
+                            <p class="step-detail">${escapeHtml(job.planned_action || "")}</p>
+                          </li>
+                        `
+                      )
+                      .join("")}
+                  </ul>`
+                : '<p class="small-muted">No component jobs linked.</p>'
+            }
+          </article>
+
+          <article class="card">
+            <h3>Issue Checks</h3>
+            ${
+              active.issue_jobs && active.issue_jobs.length
+                ? `<ul class="plain-list">
+                    ${active.issue_jobs
+                      .map(
+                        (issue) => `
+                          <li class="plain-item">
+                            <div class="step-row">
+                              <span class="step-label">${escapeHtml(formatToken(issue.component_job_id))}</span>
+                              ${statusChip(issue.current_status)}
+                            </div>
+                            <p class="step-detail">${escapeHtml(issue.planned_action || "")}</p>
+                          </li>
+                        `
+                      )
+                      .join("")}
+                  </ul>`
+                : '<p class="small-muted">No issue-specific rows for this workstream.</p>'
+            }
+          </article>
+        </div>
+      `}
     `;
   }
 
@@ -3727,13 +3929,78 @@
     `;
   }
 
+  function otherBuildSectionId(section) {
+    const raw = cleanString(section && (section.key || section.title)) || "reference";
+    const slug = raw
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+    return `other-build-${slug || "reference"}`;
+  }
+
+  function findOtherBuildSection(sections, key) {
+    return sections.find((section) => cleanString(section && section.key) === key) || null;
+  }
+
+  function otherBuildImageCount(section) {
+    return Array.isArray(section && section.images) ? section.images.length : 0;
+  }
+
+  function renderOtherBuildFocusCards(sections) {
+    const focusCards = [
+      {
+        key: "whatsapp_islamabad_fj_restorations",
+        title: "Islamabad FJ Restorations",
+        description: "Original-spec 1965 and 1973 FJ references from the Fj40 group: stripped tub/chassis, chrome, cadmium hardware, panel finish, and engine component refinishing.",
+        source: "Fj40 WhatsApp",
+      },
+      {
+        key: "whatsapp_workshop_wiring_floor_samples",
+        title: "Akber Wiring And Floor Samples",
+        description: "Akber's missing before/after examples for engine-bay wiring cleanup and floor rust-through around the accelerator pedal.",
+        source: "Akber Khan WhatsApp",
+      },
+    ]
+      .map((card) => {
+        const section = findOtherBuildSection(sections, card.key);
+        if (!section) {
+          return "";
+        }
+        const sectionId = otherBuildSectionId(section);
+        return `
+          <article class="card reference-focus-card">
+            <div class="detail-header">
+              <h3>${escapeHtml(card.title)}</h3>
+              ${chip(`${otherBuildImageCount(section)} images`)}
+            </div>
+            <p class="small-muted">${escapeHtml(card.description)}</p>
+            <div class="chip-row">
+              ${chip(card.source)}
+              <button class="item-link reference-jump-btn" type="button" data-scroll-reference-section="${escapeHtml(sectionId)}">View group</button>
+            </div>
+          </article>
+        `;
+      })
+      .filter(Boolean);
+
+    if (!focusCards.length) {
+      return "";
+    }
+
+    return `
+      <section class="reference-focus-grid" aria-label="New other-build reference groups">
+        ${focusCards.join("")}
+      </section>
+    `;
+  }
+
   function renderOtherBuilds() {
     const otherBuilds = data.other_builds || {};
     const summary = otherBuilds.summary || {};
     const sections = Array.isArray(otherBuilds.sections) ? otherBuilds.sections : [];
     root.innerHTML = `
       <h2 class="section-title">Other Builds</h2>
-      <p class="section-subtitle">Outside-build references, archived listing images, WhatsApp samples, and sample/fabrication reference media.</p>
+      <p class="section-subtitle">Outside-build references, including the Islamabad FJ restorations, Akber wiring/floor caution examples, archived listings, and sample/fabrication media.</p>
 
       <section class="metrics-grid">
         <article class="card">
@@ -3758,6 +4025,8 @@
         </article>
       </section>
 
+      ${renderOtherBuildFocusCards(sections)}
+
       <section class="card reference-drop-card">
         <div class="detail-header">
           <h3>Reference Image Drop Zone</h3>
@@ -3772,8 +4041,9 @@
             ? sections
                 .map((section) => {
                   const images = Array.isArray(section.images) ? section.images : [];
+                  const sectionId = otherBuildSectionId(section);
                   return `
-                    <article class="card reference-section-card">
+                    <article class="card reference-section-card" id="${escapeHtml(sectionId)}">
                       <div class="detail-header">
                         <h3>${escapeHtml(section.title || "Reference Images")}</h3>
                         ${chip(`${images.length} images`)}

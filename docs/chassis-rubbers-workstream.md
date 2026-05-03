@@ -1,121 +1,41 @@
-# Chassis Rubbers Workstream
+# Chassis Rubbers Fabricator Spec
 
-Date: 2026-04-27
+Date: 2026-05-04
 
-## Purpose
+All dimensions are in `mm`. For body/front-support rubbers, use new black solid EPDM or NR/SBR automotive mount rubber, Shore A `60 +/-5`. For exhaust holders, use automotive exhaust-hanger rubber/EPDM suitable for heat and vibration. For bump stops, buy OEM/manufacturer-style molded stops where available; fabricate only by exact sample and bracket match. Do not use tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, or universal bump stops that do not match the axle contact point.
 
-Lock the exact body-mount rubber system for the tub refit while the chassis is still exposed.
+## Rubber Spec
 
-This workstream is for:
-- the `6` main tub body mounts
-- the separate `2` front support / nose-extension isolators
-- the sleeves / crush tubes
-- the cup washers / seat washers
-- the flat shim pack
-- the hardware class and repair contingency that control the rubber stack
+| Image | ID | Part | Qty | Exact Spec | Notes |
+| --- | --- | --- | ---: | --- | --- |
+| <img src="../photos/20260502_004231_gp_CfosvPIg.jpg" width="120" alt="Large circular body-mount cushion"> | `BM-LG` | Large circular body-mount cushion | `2` | `78` OD x `24` high; `32` centre bore/register; `46` centre register OD x `2` deep; outside edge `R2-R3` | Make as matched pair. Faces flat/parallel. |
+| <img src="../photos/20260502_004437_gp_f1TySzww.jpg" width="120" alt="Small circular body-mount cushion"> | `BM-SM` | Small circular body-mount cushion | `10` | `64` OD x `22` high; `32` centre bore/register; `46` centre register OD x `2` deep; outside edge `R2-R3` | Make all `10` from one batch. Faces flat/parallel. |
+| <img src="../photos/20260502_004345_gp_yK8VYzMQ.jpg" width="120" alt="Front-support two-hole oval pad"> | `FS-OVAL` | Front-support two-hole oval pad | `2` | `96` long x `64` wide x `15` thick; two `12` holes on `64` centres; relief pocket `36 x 18` with `R3` corners; top boss/insert OD `29` | Make as matched pair. Punch or machine holes cleanly. |
+| <img src="../photos/20260502_004201_gp_zfUSmKJg.jpg" width="120" alt="Front-support left strip liner"> | `FS-STRIP-L` | Front-support left strip / liner | `1` | `165` trace length; `38-42` width; `8` base thickness; `14` raised/load pad height; `11` M10 holes or `11 x 16` slots where the metal carrier shows slots | Final outline and hole centres must be traced from the physical left carrier. |
+| <img src="../photos/20260502_004222_gp_PKRe5HSQ.jpg" width="120" alt="Front-support right strip liner"> | `FS-STRIP-R` | Front-support right strip / liner | `1` | Same as `FS-STRIP-L` unless the right carrier proves different | Final outline and hole centres must be traced from the physical right carrier. |
+| <img src="../deliverables/selling_site_images/images/reference_catalog/exhaust_hanger.jpg" width="120" alt="Exhaust hanger rubber"> | `EXH-HGR` | Exhaust pipe holder / hanger rubber | Count all exhaust support points | Buy by sample: measure hanger pin OD, hole centre spacing, rubber width/thickness, free length, and installed exhaust movement clearance | Replace only cracked, stretched, missing, or heat-damaged holders. Match all holders at the same support style. |
+| <img src="../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg" width="120" alt="Bump stop shape reference"> | `BUMP-F-L` | Front left spring bump stop | `1` | Prefer OEM/manufacturer-style Toyota `48304-60010` or direct replacement. If made locally, sample-match the molded profile, base footprint, mounting hole pattern/thread, free height, compressed height, contact face location, and axle contact clearance. | Verify by chassis/VIN and physical left-front bracket before ordering. Do not use a generic universal stop. |
+| <img src="../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg" width="120" alt="Bump stop shape reference"> | `BUMP-F-R` | Front right spring bump stop | `1` | Prefer OEM/manufacturer-style Toyota `48304-60020` or direct replacement. This is a separate RH/front part; match the shorter/right-side profile, base footprint, mounting hole pattern/thread, free height, compressed height, contact face location, and axle contact clearance. | Verify by chassis/VIN and physical right-front bracket before ordering. Do not install the left-side stop here. |
+| <img src="../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg" width="120" alt="Bump stop shape reference"> | `BUMP-R` | Rear spring bump stops | `2` | Prefer OEM/manufacturer-style Toyota `48304-60010` or direct replacement for both rear sides. If sourced locally, match the rear bracket/base, molded profile, bolt pattern/thread, free height, compressed height, contact face location, and loaded axle clearance. | Replace as a matched rear pair. Check with final suspension ride height and axle travel before purchase. |
 
-This workstream is not for:
-- door, windscreen, or vent rubbers
-- suspension bushes
-- engine or gearbox mounts
+Tolerances: circular cushion OD/ID `+/-1.0`, height `+/-0.5`, bore/register concentricity `<=1.0`; `FS-OVAL` outside `+/-1.0`, hole position `+/-0.5`, thickness `+/-0.5`; strip outline `+/-1.0`, holes `+/-0.5`, thickness `+/-0.5`. Bump stops are not simple cut rubber; OEM/manufacturer part or exact molded sample controls.
 
-## Status
+## Extra Context Images
 
-- Working basis is locked to the early pre-`1/79` `BJ40/FJ40` tub pattern.
-- The exact numeric dimensions of the old samples are still open and must be captured with calipers before any local reproduction order is treated as closed.
-- The stored photos below are the best current evidence of the original mount rubbers, but they are context-only and not measurement-grade.
-- May 2 Google Photos picker import `20260502T013759` starts a dedicated selection set for rubber recreation: [rubber-recreation-photo-selection-20260502.md](rubber-recreation-photo-selection-20260502.md).
-- May 2 fabricator handoff spec is now drafted from the tape-measure photos: [rubber-recreation-fabrication-spec-20260502.md](rubber-recreation-fabrication-spec-20260502.md).
-- Ready-to-send DXF/SVG/PDF fabrication output is now in [rubber_recreation_rev_a](../data/manual/fabrication/rubber_recreation_rev_a/README.md), indexed from [fabrication-handoff-index.md](fabrication-handoff-index.md).
-- UI requirements table source: [chassis_rubber_requirements.csv](../data/manual/chassis_rubber_requirements.csv). This is the acquisition/fabrication status tracker for each rubber, sleeve, cup, shim, and hardware requirement.
-- Consolidated rubber order source: [rubber_ordering_specs.csv](../data/manual/rubber_ordering_specs.csv) and [rubber-ordering-spec-20260502.md](rubber-ordering-spec-20260502.md). These control the buy-now, inspect-first, and defer gates across all rubber categories so chassis rubbers are not confused with weatherstrip, suspension, hose, or HVAC rubber.
-- Body-mount release pack: [body_mount_order_release_specs.csv](../data/manual/body_mount_order_release_specs.csv), [body_mount_release_actions.csv](../data/manual/body_mount_release_actions.csv), [body_mount_station_closure_sheet.csv](../data/manual/body_mount_station_closure_sheet.csv), and [body-mount-order-release-plan-20260502.md](body-mount-order-release-plan-20260502.md). This is the order-line and user-action control for quantities, OE/reproduction candidates, local fabrication specs, shims, sleeves, and bolts.
-- Toyota OE/EPC-style control rows are now captured in [rubber_recreation_toyota_oe_cross_reference.csv](../data/manual/rubber_recreation_toyota_oe_cross_reference.csv). They confirm part numbers, station IDs, bolt families, and several shim/spacer thicknesses, but not rubber cushion OD/ID/free-height.
-- Aftermarket thickness cross-checks and the final caliper closure sheet are now captured in [rubber_recreation_aftermarket_dimension_crosscheck.csv](../data/manual/rubber_recreation_aftermarket_dimension_crosscheck.csv) and [rubber_recreation_measurement_closure.csv](../data/manual/rubber_recreation_measurement_closure.csv).
+Circular cushion and cup references:
 
-## Original Rubber Evidence
+![Circular cushion top reference](../photos/20260502_004413_gp_Qno8OVRg.jpg)
 
-![Original tub-side body-mount rubber context](/Users/davidpridmore/IdeaProjects/J40/photos/20260405_234652.jpg)
+![Circular annular cushion reference 2](../photos/20260502_004442_gp_7WcFHjLQ.jpg)
 
-Caption:
-- Best current photo of an original body-mount rubber still in the tub/chassis interface.
-- Useful to show the general rubber shape, seating style, and deterioration context.
-- Not good enough to read exact OD, sleeve size, or thickness.
+Strip rubber references:
 
-![Original underbody mount and rubber context](/Users/davidpridmore/IdeaProjects/J40/photos/20260405_234546.jpg)
+![Long strip height reference](../photos/20260502_004254_gp_Hm9RR5DQ.jpg)
 
-Caption:
-- Best current underside photo showing the mount stack area and old rubber context from below.
-- Useful to explain seat geometry and why the metal landing surfaces matter.
-- Not good enough to replace sample-based measurement.
+![Long strip side reference](../photos/20260502_004314_gp_wuzpgNrA.jpg)
 
-Evidence note:
-- These are the best current stored photos of the original body-mount rubbers in this repo.
-- If the removed old rubbers are found, add isolated daylight photos of:
-  - large main-tub piece
-  - small main-tub piece
-  - sleeve
-  - front support isolator
+Original installed context:
 
-## Locked System Split
+![Original tub-side body-mount context](../photos/20260405_234652.jpg)
 
-| System | Locked Pattern | Positions | Rule |
-| --- | --- | ---: | --- |
-| Main tub body mounts | Pre-`1/79` early `BJ40/FJ40` | `6` | One matched set only |
-| Main tub large cushion family | Early `BJ40/FJ40` large type | `2` pieces | Do not buy late-pattern pieces |
-| Main tub small cushion family | Early `BJ40/FJ40` small type | `10` pieces | Do not mix with random local leftovers |
-| Front support isolators | Separate front support / radiator-grille support pattern | `2` positions | Separate from the six main tub mounts |
-
-## Exact Spec Table
-
-| Part | Qty / Positions | Exact Spec Required | Condition / Material Rule | Measurement Gate |
-| --- | ---: | --- | --- | --- |
-| Main tub large cushions | `2` pieces | Early pre-`1/79` `BJ40/FJ40` large body-mount pattern | `NEW_ONLY`; matched pair; same maker and hardness | Match old large sample OD, thickness, center bore, and installed stack |
-| Main tub small cushions | `10` pieces | Early pre-`1/79` `BJ40/FJ40` small body-mount pattern | `NEW_ONLY`; matched set; same maker and hardness | Match old small sample OD, thickness, center bore, and installed stack |
-| Main tub sleeves / crush tubes | `6` minimum | Steel sleeves matched to the main tub mount stack | New steel only; no mixed worn sleeves | Sleeve ID must match bolt, sleeve OD must match rubber bore, sleeve length must stop over-crush |
-| Main tub cup washers / seat washers | `12` | Heavy upper/lower mount cups or equivalent seat washers | Matched seat style; do not use thin generic washers | Must seat the rubber fully and match the body/pedestal landing area |
-| Main tub hardware | `6` installed, buy `8` | `M10 x 1.25`, class `8.8` minimum | Marked structural hardware only | Final bolt length by station still needs physical measurement |
-| Main tub shim pack | `1` assorted pack | Flat steel shims `1 mm`, `2 mm`, `3 mm`, `5 mm` | Steel only; no random washer towers | `M10` ID for the tub rows; keep some `M12` option available for front support or prior repair |
-| Front support isolators / pads | `2` positions | Separate front support rubber/pad set for the nose side extensions | `NEW_ONLY`; keep left/right as matched pair | Must match the front support sample style and installed height; do not assume tub rubbers fit |
-| Front support shims / pads | `2` | Separate shim/pad pieces to suit the front support pair | Flat and stable; not improvised stacks | Must align front clip height without forcing the tub |
-| Captive-thread repair pack | `2` nuts + `2` tabs minimum | `M10 x 1.25` weld nuts / repair nuts plus `3 mm` steel repair tabs | New repair material only | Use only if cleaning shows damaged threads or weak pedestal repair metal |
-| OE station map | `1` reconciliation sheet | Toyota `NO.1` to `NO.5` body-mount rows against vehicle-side positions | Must agree with physical samples before production | Use the OE cross-reference plus direct vehicle labels; do not infer from catalog alone |
-| Exact release measurements | `1` closure sheet | Final OD, height, bore/register, sleeve, cup, and split-stack fields | Caliper-locked before production | Use `rubber_recreation_measurement_closure.csv`; photos are quote/prototype evidence only |
-
-## Exact Measurement Fields To Capture From Sample
-
-Fill this in from the removed old parts before any local fabrication order is treated as final.
-
-| Measurement Field | Large Main Cushion | Small Main Cushion | Front Support Isolator |
-| --- | --- | --- | --- |
-| Sleeve ID | `___ mm` | `___ mm` | `___ mm` |
-| Sleeve OD | `___ mm` | `___ mm` | `___ mm` |
-| Sleeve length | `___ mm` | `___ mm` | `___ mm` |
-| Rubber OD | `___ mm` | `___ mm` | `___ mm` |
-| Rubber thickness | `___ mm` | `___ mm` | `___ mm` |
-| Total installed stack height | `___ mm` | `___ mm` | `___ mm` |
-
-## Acceptance Rules
-
-- Keep one old mount sample with sleeve in hand when buying or reproducing locally.
-- Rubber hardness must stay consistent across the full set.
-- Total stack height must preserve OEM body height; this is not a body lift.
-- Reuse original shims only if they remain flat and rust-free.
-- New shims go only at the original metal-to-metal shim interface.
-- Do not put shims inside the rubber sandwich.
-- Do not mix one side rubber and the other side polyurethane.
-- Do not use random washer stacks as height spacers.
-- Do not mix the separate front-support rubbers into the six main tub stations.
-
-## Immediate Actions
-
-1. Find and lay out any removed old mount rubbers and sleeves by station.
-2. Measure one large sample, one small sample, and one front support sample.
-3. Confirm actual thread pitch and final bolt length at each main tub station.
-4. Preserve original shim packs by `FL`, `FR`, `ML`, `MR`, `RL`, `RR`.
-5. Only then close the order with Bilal Ganj or a local rubber fabricator.
-6. Send the Rev A fabrication package from `data/manual/fabrication/rubber_recreation_rev_a/` for quote/first article, then close its hold dimensions with calipers before production.
-7. Reconcile the physical vehicle stations against Toyota `NO.1` to `NO.5` rows before changing the rubber count or approving production.
-8. Confirm whether the small circular mounts are one-piece `22 mm` stack-equivalent cushions or a split medium-bushing plus seat stack before asking the fabricator to cut final pieces.
-9. Use the consolidated rubber ordering matrix to keep body mounts, suspension bushes, hoses, weatherstrip, and HVAC rubber in their correct order gates.
-10. Complete the open `BMA-*` actions in `body_mount_release_actions.csv`; anything not blocked there can be quoted or ordered from `body_mount_order_release_specs.csv`.
+![Original underbody mount context](../photos/20260405_234546.jpg)

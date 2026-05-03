@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>Zopi Dashboard – Manage Your Dropshipping Business</title>
+
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <!-- maximum-scale=1, user-scalable=no -->
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Access your Zopi dashboard to explore winning products, track orders, connect sales channels, and automate your entire dropshipping workflow"
+    />
+    <meta name="robots" content="noindex, follow" />
+
+    <meta name="keywords" content="Auto Fulfillment, Dropshipping, AliExpress, AliOrders, AliExpress Dropship Product Tracker" />
+    <meta name="shopify-disabled-features" content="auto-redirect" />
+    <meta name="shopify-api-key" content="b1fafe67369104644289836a54b36dbb" />
+    <script src="https://cdn.shopify.com/shopifycloud/app-bridge.js" type="b449171fb1e46923cb3f784b-text/javascript"></script>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Bebas+Neue&family=Caveat&family=Creepster&family=Dancing+Script:wght@700&family=Fredericka+the+Great&family=Great+Vibes&family=Kalam&family=Lobster&family=Monoton&family=Montserrat:wght@700&family=Orbitron:wght@400..900&family=Oswald:wght@700&family=Pacifico&family=Passion+One:wght@400;700;900&family=Permanent+Marker&family=Playfair+Display:wght@900&family=Press+Start+2P&family=Righteous&family=Roboto:wght@400;700;900&family=Rubik+Doodle+Shadow&family=Sacramento&family=Uncial+Antiqua&family=Luckiest+Guy&family=Ultra&family=Cookie&family=Amatic+SC:wght@700&family=Indie+Flower&family=Shadows+Into+Light&family=Rock+Salt&family=Just+Another+Hand&family=Special+Elite&family=Chewy&family=Baloo+2&family=Comic+Neue:wght@700&family=Black+Ops+One&family=Rye&family=Alfa+Slab+One&family=Bungee&family=Architects+Daughter&family=Gloria+Hallelujah&family=Fredoka+One&family=Rye&family=Unica+One&family=Rye&family=Rye&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!--
+		manifest.json provides metadata used when your web app is installed on a
+		user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+	-->
+    <link rel="preload" as="image" href="/images/background-img.png" />
+    <!-- <link rel="preload" id="img-load" as="image" />
+	<script>
+		const preloadLink = document.getElementById('img-load');
+		const dateParam = new Date().getTime();
+		preloadLink.href = `/images/background-img.png?date=${dateParam}`;
+	</script> -->
+
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- <link
+		rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600&display=swap"
+	/> -->
+
+    <!--
+		Notice the use of %PUBLIC_URL% in the tags above.
+		It will be replaced with the URL of the `public` folder during the build.
+		Only files inside the `public` folder can be referenced from the HTML.
+
+		Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+		work correctly both with client-side routing and a non-root public URL.
+		Learn how to configure a non-root public URL by running `npm run build`.
+	-->
+    <!-- Import jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" type="b449171fb1e46923cb3f784b-text/javascript"></script>
+    <script type="b449171fb1e46923cb3f784b-text/javascript">
+      window.jQuery || document.write('<script src="js/vendor/jquery-3.4.0.min.js"><\/script>');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script type="b449171fb1e46923cb3f784b-text/javascript">
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-KPM8V5JL');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TBL1YK1XR7" type="b449171fb1e46923cb3f784b-text/javascript"></script>
+    <script type="b449171fb1e46923cb3f784b-text/javascript">
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+
+      gtag('config', 'G-TBL1YK1XR7');
+    </script>
+
+    <!-- Import dependency for Resizimg (tested with version 0.35). For a production setup, follow install instructions here: https://github.com/RickStrahl/jquery-resizable -->
+    <script src="//rawcdn.githack.com/RickStrahl/jquery-resizable/0.35/dist/jquery-resizable.min.js" type="b449171fb1e46923cb3f784b-text/javascript"></script>
+    <style>
+      .Polaris-Frame__Skip {
+        display: none;
+      }
+
+      .skip-scrolling {
+        position: absolute;
+      }
+    </style>
+    <script type="b449171fb1e46923cb3f784b-module" crossorigin src="/assets/index-CrJijp9v.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/js/module-JroZ6ZJR.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-DLCAn6ks.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-BbhA5T3_.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-DYLXRpC5.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-BtfQQaBq.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-CpA3Gb_i.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-CbyKh5Um.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-iZSIXRGB.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-DPjzw2Zo.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-BiLh1utT.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-wXP8pS1k.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-BHDbyNXz.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-C_SFefbb.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-BpV_kN2a.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-AkyW2Ruw.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-b3MKnAEH.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-BiGIJkaM.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-CcMoABPK.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-BBruC8m-.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-arTw0fVe.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-D0mFdbeO.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-DPHc1wxt.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-DykinvU_.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-DHU6Qa3D.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-BkD7Hj8s.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-Bm39krSk.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-CzD4bSOQ.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-9lF95FHy.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-DOTiR1ui.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-CimkQT29.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-D28oVHB0.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-Bsj7B216.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-BZ4M8-NE.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-DOmF5430.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-DOHy0u6K.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-D0FTbj1a.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-BuxUxIex.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-CPbpMNSD.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-DavZngEW.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-Bo5IqSr_.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-8JwjhRSi.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-JSaEjBuK.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-CxxsmtUK.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-BDDjSfZe.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-DFeDTf4p.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-CO8Zspez.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-DElzUIKd.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-B4kEfzMv.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-B1sMRPsH.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-BqAaZvvO.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-YfaRQf3K.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-CqQRGZiD.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-DkegjUUZ.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-v-CXq_RL.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-B2kEE9Fq.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-CDx4QxXO.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-xvpIGbSh.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-BsT4GPsu.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-BoLsQeoX.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-C2S2-HMR.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-B_AESZ67.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-k6bR07DU.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-6VvS_rzL.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-DvDSr9pH.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-B3BJzVxn.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-COppw6QV.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-BcX4gGw4.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-CxlGgBWL.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-B-dksMZM.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-BiI3u42N.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-vcEKZSAt.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-DvXkyWUv.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-C-Z93AgS.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-C1EmE4Vj.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-aKi9GlJh.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-Bc1ELN8s.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-o3hO9xT_.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-DuyDL8su.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-B25u9S6p.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-DHCoEQ95.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-DbwmRDP-.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-Bj2XRCML.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-Dz8i_Leu.js">
+    <link rel="modulepreload" crossorigin href="/assets/js/module-BJwyIH4s.js">
+    <link rel="stylesheet" crossorigin href="/assets/@shopify-DYMTTRly.css">
+    <link rel="stylesheet" crossorigin href="/assets/react-phone-input-2-DAqf4SHo.css">
+    <link rel="stylesheet" crossorigin href="/assets/react-phone-number-input-D32zUxz1.css">
+    <link rel="stylesheet" crossorigin href="/assets/trumbowyg-Cw67ZJy_.css">
+    <link rel="stylesheet" crossorigin href="/assets/swiper-Cb64dn-G.css">
+    <link rel="stylesheet" crossorigin href="/assets/react-image-crop-tvFDcxOC.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-B5lbt4LA.css">
+  </head>
+  <body style="background-color: rgba(241, 241, 241, 1)">
+    <div class="skip-scrolling"></div>
+    <div id="image-container">
+      <img
+        loading="eager"
+        fetchpriority="high"
+        src="/images/background-img.png"
+        id="img-lazy-page"
+        style="pointer-events: none; position: absolute; top: 0; display: block; left: 0; z-index: -1"
+      />
+    </div>
+    <script type="b449171fb1e46923cb3f784b-text/javascript">
+      const img = document.getElementById('img-lazy-page');
+      const clickEvent = new MouseEvent('click', {
+        bubbles: true,
+        cancelable: true,
+        view: window,
+      });
+      img.onload = function () {
+        console.log('Image loaded successfully');
+        img.click();
+        img.dispatchEvent(clickEvent);
+      };
+    </script>
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer type="b449171fb1e46923cb3f784b-text/javascript"></script>
+    <div id="root"></div>
+    <!--
+	This HTML file is a template.
+	If you open it directly in the browser, you will see an empty page.
+
+	You can add webfonts, meta tags, or analytics to this file.
+	The build step will place the bundled scripts into the <body> tag.
+
+	To begin the development, run `npm start` or `yarn start`.
+	To create a production bundle, use `npm run build` or `yarn build`.
+-->
+  <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="b449171fb1e46923cb3f784b-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"382671c86982437d97f7c27ce3d4f2f3","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

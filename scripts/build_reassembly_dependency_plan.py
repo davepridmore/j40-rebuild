@@ -273,7 +273,7 @@ def build_procurement_decisions(
             decision = "confirm_price_then_buy"
             dependency_gate = "baseline_electrical"
             action = "confirm_compact_model_quantity_then_buy"
-            reason = "Cabin fuse boxes are not ordered stock; buy likely 3 compact covered blade-fuse boxes after final fit check."
+            reason = "Cabin fuse protection is not ordered stock; provide 3 isolated under-dash input groups with 6 fuses each: constant battery, IGN/RUN, and ACC/part-way. A single OEM box is acceptable if the buses are isolated and mapped."
         elif entry_id == "part_mech_engine_mount_set":
             decision = "defer_until_mount_failure_or_engine_lift_scope"
             dependency_gate = "in_place_mount_inspection"
@@ -296,10 +296,10 @@ def build_procurement_decisions(
                 "plus 4 tapered 8x4x3 in wedge chocks."
             )
         elif entry_id == "part_brake_fluid_bleed_consumables":
-            decision = "buy_dot3_fluid_and_bleed_consumables"
+            decision = "buy_remaining_brake_bleed_consumables"
             dependency_gate = "hydraulic_opening_prep"
-            action = "confirm_price_for_dot3_fluid_and_bleed_consumables"
-            reason = "Brake fluid spec is closed as DOT 3 / SAE J1703; hydraulics must not be opened until 2 L sealed fresh fluid, caps/plugs, cleaner, and bleed tools are ready."
+            action = "confirm_price_for_caps_bleed_cleaning_consumables"
+            reason = "DOT 3 brake fluid is already ordered separately; hydraulics must not be opened until that sealed fluid and the remaining caps/plugs, cleaner, and bleed tools are physically on hand."
         elif workstream == "brake_system" and procurement_stage == "spec_needed_before_order":
             decision = "capture_spec_then_buy"
             dependency_gate = "brake_identification_and_samples"
@@ -307,6 +307,14 @@ def build_procurement_decisions(
             reason = (
                 "Brake item is baseline scope, but exact part release is gated by fitted hardware, "
                 "old samples, fitting style, and Ironman full-droop clearance where applicable."
+            )
+        elif workstream == "body_chassis" and procurement_stage == "spec_needed_before_order":
+            decision = "capture_body_hardware_samples_then_order"
+            dependency_gate = "body_hardware_sample_sorting"
+            action = "sort_measure_label_samples_then_order_or_fabricate"
+            reason = (
+                "Loose body hardware photo proves the category, but exact purchase release waits for old-sample "
+                "location, dimensions, thread, material, and condition sorting."
             )
         elif workstream == "brake_system" and procurement_stage == "inspect_then_buy":
             decision = "inspect_confirm_then_buy_standard"
@@ -425,7 +433,7 @@ def count_mechanical_buy_actions(decision_rows: list[dict[str, str]]) -> int:
         "buy_now",
         "buy_for_baseline",
         "buy_now_from_quote",
-        "buy_dot3_fluid_and_bleed_consumables",
+        "buy_remaining_brake_bleed_consumables",
         "capture_spec_then_buy",
         "inspect_confirm_then_buy_standard",
     }
@@ -448,7 +456,9 @@ def build_work_packages(
     body_buy_now = sum(
         1
         for row in decision_rows
-        if row.get("workstream") == "body_chassis" and row.get("decision") in {"confirm_price_then_buy", "buy_now", "buy_now_from_quote"}
+        if row.get("workstream") == "body_chassis"
+        and row.get("decision")
+        in {"confirm_price_then_buy", "buy_now", "buy_now_from_quote", "capture_body_hardware_samples_then_order"}
     )
     electrical_buy_now = sum(
         1
@@ -467,7 +477,7 @@ def build_work_packages(
             "confirm_price_then_buy",
             "buy_now",
             "buy_for_baseline",
-            "buy_dot3_fluid_and_bleed_consumables",
+            "buy_remaining_brake_bleed_consumables",
             "capture_spec_then_buy",
             "inspect_confirm_then_buy_standard",
         }
@@ -497,14 +507,14 @@ def build_work_packages(
             work_package_id="WP02",
             title="Panel + Seals Refurbishment Returns",
             lane="body_weather_seal",
-            objective="Return removable panels and seals/windows in refurb-ready condition for fit-up.",
+            objective="Return removable panels, seals/windows, and vent/quarter window assemblies in refurb-ready condition for fit-up.",
             depends_on="WP01",
             linked_workstreams="stripdown_cataloguing|body_chassis",
             current_state="in_progress" if refurbish_scope >= 4 else "queued",
             evidence_signal=f"component_refurbish_candidates={refurbish_scope}",
             blocker_summary="Vendor scope/return status tracking must be explicit per component.",
-            gate_to_close="Doors/hood/windows/rubbers mechanically serviceable and tagged for refit.",
-            key_procurement_actions="Only buy replacement seals/mechanisms after refurbish inspection confirms non-reusable items.",
+            gate_to_close="Doors/hood/windows/rubbers mechanically serviceable, vent assemblies bench-checked, and tagged for refit.",
+            key_procurement_actions="Only buy replacement seals/glass/mechanisms after refurbish inspection confirms non-reusable items.",
         ),
         WorkPackage(
             work_package_id="WP03",

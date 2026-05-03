@@ -23,11 +23,13 @@ Relay/fuse hardware already bought remains valid for the relay block only. Cabin
 
 | Spec | Requirement |
 | --- | --- |
-| Quantity | Likely 3 identical compact units; confirm final circuit split before payment |
+| Quantity | Three under-dash fuse groups: 6 constant-battery fuses, 6 ignition-on/RUN fuses, and 6 ignition part-way/ACC fuses minimum. Preferred current plan: reuse the existing 12-way donor block for two 6-fuse groups if bench testing passes, then buy one matching compact old-OEM add-on block for the third group |
 | Type | Covered automotive blade-fuse box, ATO/ATC fuse format |
-| Form factor | Compact/OEM-style with secure lid and strong terminals |
-| Use | Cabin/interior car fuse circuits only |
-| Reject | Already-bought relay block, large open universal blocks, loose relay/fuse combo boxes, and anything sold as `Portable 12-Way Car Fuse Box Universal Automotive Box Holder with Led Indicator` |
+| Form factor | Same compact old-OEM style as the reusable 12-way donor block; avoid bulky marine/RV/universal covered blocks even if electrically suitable |
+| Use | Cabin/interior branch circuits only; treat cabin box outputs as 30A maximum unless the manufacturer marks a higher per-circuit rating |
+| Consolidated OEM option | One Hyundai/OEM cabin fuse box is acceptable if it has three isolated input buses and enough mapped slots for constant, IGN/RUN, and ACC groups. Existing 12-way plus one compact 6/8/10/12-way OEM-style add-on is also acceptable if all rear terminals are individually mapped and protected |
+| Reject | Single-bus blocks that cannot be split into the three required input groups, already-bought relay block, large open universal blocks, loose relay/fuse combo boxes, loose fuse assortments, and buying three bulky 12-way blocks for under dash |
+| Add-on candidate | Buy one compact old-OEM under-dash fuse carrier locally, preferably Suzuki Mehran/Alto/Daihatsu/Toyota style. It can have more than 6 fuse positions; use six clean positions for the third feed group |
 | Condition | New preferred; donor acceptable only if compact, covered, terminals are tight, lid clips securely, and there is no heat damage |
 
 ## 1) Fastener Kits (Exact Purchase Spec)

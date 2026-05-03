@@ -28,7 +28,11 @@ class OverlapRule:
 OVERLAP_RULES: tuple[OverlapRule, ...] = (
     OverlapRule("wiring_kit_options", "Wiring kit options", re.compile(r"wiring harness|wiring kit|21-circuit|hot rod wiring", re.I)),
     OverlapRule("grommet_options", "Grommet options", re.compile(r"grommet", re.I)),
-    OverlapRule("wire_sleeving_options", "Wire sleeving options", re.compile(r"sleev|conduit|pet expandable braided", re.I)),
+    OverlapRule(
+        "wire_sleeving_options",
+        "Wire sleeving options",
+        re.compile(r"wire slee|loom slee|braided slee|split conduit|conduit|pet expandable braided|sleeve inventory", re.I),
+    ),
     OverlapRule("primer_system_stack", "Primer system stack", re.compile(r"\bprimer\b|etching|epoxy|seam sealer|wax and grease", re.I)),
     OverlapRule("floor_finish_stack", "Floor/interior finish stack", re.compile(r"bedliner|bed lining|sound dampening|\bfoam\b|carpet", re.I)),
     OverlapRule("shock_options", "Shock options", re.compile(r"shock|nitrocharger|bilstein", re.I)),
@@ -59,6 +63,8 @@ def action_bucket(row: dict[str, str]) -> str:
         return "buy_now"
     if procurement_stage == "researching":
         return "researching"
+    if procurement_stage == "spec_needed_before_order":
+        return "needs_spec_before_order"
     if procurement_stage == "next_phase_purchase":
         return "next_phase"
     if procurement_stage.startswith("deferred") or procurement_stage in {"deferred_until_body_closed", "deferred_optional"}:

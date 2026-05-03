@@ -1,0 +1,2 @@
+media_item_id,create_time,mime_type,source_filename,target_file,status,notes
+AGpyBSaMG4xByFl-oK19MOf8xZ7IkcN4TcsH8hFITYhC3fiIkjj6arBoWsx9g0MckzKUAOrf9JonZ2OqhWNKqVy-JV0FJJiLHg,2026-05-03T10:38:32.093Z,image/jpeg,20260503_153830.jpg,20260503_153832_gp_0FJJiLHg.jpg,skipped_already_imported,Media item ID already exists in import history and target file exists.

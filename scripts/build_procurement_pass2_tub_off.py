@@ -64,6 +64,15 @@ def sourcing_mode(item: str, workstream: str) -> str:
         return "import_or_specialty"
     if re.search(r"filter|belt|hose|spark|glow|heat plug|thermostat|radiator cap|engine mount|clutch|brake flexible", item_lower):
         return "local_toyota_common"
+    if workstream in {"body_chassis", "interior_weatherproofing"} and re.search(
+        (
+            r"fastener|bolt|screw|washer|clip nut|speed nut|captive|rivnut|weld nut|"
+            r"retaining clip|cotter|hairpin|circlip|r-clip|rubber|bumper|isolator|"
+            r"spacer|sleeve|shoulder|pivot|bracket|retainer|plate"
+        ),
+        item_lower,
+    ):
+        return "local_fastener_hardware"
     if re.search(r"washer|bolt|nut|grommet|relay|connector|wire|sleev|fuse", item_lower):
         return "local_electrical_common"
     if workstream in {"mechanical_baseline", "steering_brakes_suspension"}:
@@ -141,6 +150,38 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
             "Body chemistry stack should be bought as one bundle after rust map and weld scope are finalized.",
         )
 
+    if workstream == "body_chassis" and prior in {"confirm_price_then_buy", "buy_now"} and re.search(
+        r"fastener|bolt|screw|clip nut|speed nut|captive|rivnut|weld nut|retaining clip|cotter|hairpin|circlip|r-clip",
+        item,
+        re.I,
+    ):
+        return (
+            "buy_body_fastener_hardware_from_samples",
+            "body_fastener_topup",
+            "local_fastener_buy",
+            "Buy exact plated body fastener/captive hardware from old samples; do not duplicate Millat-covered metric stock.",
+        )
+
+    if workstream == "body_chassis" and prior == "review" and re.search(
+        r"rubber|bumper|isolator|spacer|sleeve|shoulder|pivot|bracket|retainer|plate",
+        item,
+        re.I,
+    ):
+        return (
+            "capture_body_hardware_samples_then_order",
+            "body_hardware_sample_sort",
+            "local_body_hardware_release_hold",
+            "Sort and measure old samples, then buy or fabricate only the body hardware not covered by Millat stock.",
+        )
+
+    if prior == "capture_body_hardware_samples_then_order":
+        return (
+            "capture_body_hardware_samples_then_order",
+            "body_hardware_sample_sort",
+            "local_body_hardware_release_hold",
+            "Sort and measure old samples, then buy or fabricate only the body hardware not covered by Millat stock.",
+        )
+
     if entry_id == "quote_hot_rod_wiring":
         return (
             "scope_audit_before_order",
@@ -154,7 +195,7 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
             "buy_compact_cabin_fuse_boxes",
             "electrical_closeout",
             "baseline_electrical_buy",
-            "Cabin fuse boxes are not ordered stock; buy likely 3 compact covered blade-fuse boxes after final fit check.",
+            "Cabin fuse protection is not ordered stock; provide 3 isolated under-dash input groups with 6 fuses each: constant battery, IGN/RUN, and ACC/part-way. A single OEM box is acceptable if the buses are isolated and mapped.",
         )
 
     if workstream == "electrical_reset" and prior in {"confirm_price_then_buy", "verify_stock_before_buy", "buy_now"}:
@@ -180,12 +221,15 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
             "Needed before the Ironman suspension swap so the chassis and axle can be supported safely with rated stands plus cribbing.",
         )
 
-    if entry_id == "part_brake_fluid_bleed_consumables" or prior == "buy_dot3_fluid_and_bleed_consumables":
+    if entry_id == "part_brake_fluid_bleed_consumables" or prior in {
+        "buy_dot3_fluid_and_bleed_consumables",
+        "buy_remaining_brake_bleed_consumables",
+    }:
         return (
-            "buy_dot3_fluid_and_bleed_consumables",
+            "buy_remaining_brake_bleed_consumables",
             "pre_brake_hydraulic_opening",
             "safety_consumables_buy",
-            "Brake fluid spec is closed as DOT 3 / SAE J1703; hydraulics must not be opened until 2 L sealed fresh fluid, line caps/plugs, cleaner, and bleed tools are available.",
+            "DOT 3 brake fluid is already ordered separately; hydraulics must not be opened until that sealed fluid and the remaining caps/plugs, cleaner, and bleed tools are available.",
         )
 
     if workstream == "brake_system" and prior == "capture_spec_then_buy":
@@ -210,6 +254,14 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
             "post_tub_off_inspection",
             "local_bundle_buy",
             "Common Toyota service items should be bought as a local bundle after tub-off inspection confirms exact spec.",
+        )
+
+    if prior == "hold_until_body_closed":
+        return (
+            "hold_until_body_closed",
+            "body_sealed",
+            "deferred",
+            "Wait until panel/trim alignment and body sealing before buying exact finish hardware.",
         )
 
     if prior == "inspect_then_buy":
@@ -251,10 +303,14 @@ def supplier_hint(mode: str, decision: str) -> str:
         "defer_until_mount_failure_or_engine_lift_scope",
     }:
         return "No supplier action now."
+    if decision == "capture_body_hardware_samples_then_order":
+        return "Use Bilal Ganj/body hardware, rubber trim, fastener, or machine-shop suppliers after old samples are sorted and measured."
+    if decision == "buy_body_fastener_hardware_from_samples":
+        return "Use local fastener/body hardware suppliers; match old samples and buy plated or stainless replacements."
     if decision == "buy_compact_cabin_fuse_boxes":
         return "Use local electrical markets; require compact covered ATO/ATC blade-fuse boxes with secure lids."
-    if decision in {"buy_bleed_consumables_before_opening_hydraulics", "buy_dot3_fluid_and_bleed_consumables"}:
-        return "Use a local brake supplier, Daraz/Autohub, or the workshop for 2 L sealed fresh DOT 3 brake fluid, caps/plugs, cleaner, and bleed hose/bottle."
+    if decision in {"buy_bleed_consumables_before_opening_hydraulics", "buy_remaining_brake_bleed_consumables"}:
+        return "Use a local brake supplier, Daraz/Autohub, or the workshop for caps/plugs, brake cleaner, bleed hose/bottle or bleeder kit, rags, gloves, and catch tray; do not rebuy DOT 3 fluid unless the Autohub order fails."
     if decision in {
         "capture_brake_specs_then_order",
         "open_inspect_then_order_standard_brake_parts",
@@ -266,6 +322,8 @@ def supplier_hint(mode: str, decision: str) -> str:
         return "Use local Toyota/common parts markets; buy as one batch after inspection."
     if mode == "local_hardware_common":
         return "Use local timber or hardware supplier; confirm sound hardwood/timber dimensions before purchase."
+    if mode == "local_fastener_hardware":
+        return "Use local fastener/body hardware suppliers; match M6/M8 samples, head style, length, and plated or stainless finish."
     if mode == "local_electrical_common":
         return "Use local electrical markets first; avoid duplicate online orders."
     if mode == "import_or_specialty":
@@ -294,12 +352,16 @@ def basket_id_for_row(decision: str, mode: str, workstream: str) -> str:
         return "basket_suspension_setup"
     if decision in {"capture_brake_specs_then_order", "open_inspect_then_order_standard_brake_parts"}:
         return "basket_merged_brake_suspension_window"
-    if decision in {"buy_bleed_consumables_before_opening_hydraulics", "buy_dot3_fluid_and_bleed_consumables"}:
+    if decision in {"buy_bleed_consumables_before_opening_hydraulics", "buy_remaining_brake_bleed_consumables"}:
         return "basket_brake_hydraulic_opening_prep"
-    if decision in {"defer_as_non_baseline", "defer_until_baseline_closure", "hold_until_post_weld_primer"}:
+    if decision in {"defer_as_non_baseline", "defer_until_baseline_closure", "hold_until_post_weld_primer", "hold_until_body_closed"}:
         return "basket_deferred"
     if decision.startswith("not_required"):
         return "basket_deferred"
+    if decision in {"buy_body_fastener_hardware_from_samples", "capture_body_hardware_samples_then_order"}:
+        return "basket_body_fastener_hardware"
+    if mode == "local_fastener_hardware":
+        return "basket_body_fastener_hardware"
     if mode == "import_or_specialty":
         return "basket_specialty_after_audit"
     return "basket_review"
@@ -341,13 +403,14 @@ def build_baskets(rows: list[dict[str, str]]) -> list[dict[str, str]]:
         "basket_tub_off_rust_minimum": ("Tub-Off Rust Minimum", "Immediate bare-metal stabilization only."),
         "basket_body_stack_after_rustmap": ("Body Stack After Rust Map", "Buy epoxy/etch/sealer/wax stack after repair scope is confirmed."),
         "basket_electrical_stock_audit_topup": ("Electrical Stock-Audit Top-Up", "Count existing wiring stock first; buy only shortages."),
-        "basket_compact_cabin_fuse_boxes": ("Compact Cabin Fuse Boxes", "Buy compact covered cabin fuse boxes; likely three matching units."),
+        "basket_compact_cabin_fuse_boxes": ("Compact Cabin Fuse Boxes", "Buy or source compact cabin fuse protection with 3 isolated 6-fuse input groups."),
         "basket_mechanical_local_bundle": ("Mechanical Local Bundle", "Single local Toyota/common supplier batch after inspection."),
         "basket_condition_based_after_inspection": ("Condition-Based Replacements", "Buy only failed/worn parts after inspection."),
         "basket_engine_mounts_later_if_failed": ("Engine Mounts Later If Failed", "No engine lift in baseline; inspect in place before any purchase."),
         "basket_suspension_setup": ("Suspension Setup Support", "Buy support/cribbing items before suspension disassembly."),
         "basket_merged_brake_suspension_window": ("Merged Brake/Suspension Window", "Capture fitted hardware and old samples, then order exact brake parts for the Ironman install window."),
-        "basket_brake_hydraulic_opening_prep": ("Brake Hydraulic Opening Prep", "Buy 2 L sealed fresh DOT 3 brake fluid, caps/plugs, cleaner, bleed hose/bottle, rags, gloves, and catch tray before opening hydraulic lines."),
+        "basket_brake_hydraulic_opening_prep": ("Brake Hydraulic Opening Prep", "Buy the remaining caps/plugs, brake cleaner, bleed hose/bottle or bleeder kit, rags, gloves, and catch tray before opening hydraulic lines; DOT 3 fluid is already ordered separately."),
+        "basket_body_fastener_hardware": ("Body Fastener Hardware", "Buy exact body fastener/captive hardware from old samples; track Millat-covered stock separately."),
         "basket_specialty_after_audit": ("Specialty/Import After Audit", "Order only if local/on-hand cannot cover."),
         "basket_in_flight_tracking": ("In-Flight Orders", "No rebuy; only track delivery/quality."),
         "basket_deferred": ("Deferred Scope", "Not baseline now."),
@@ -382,7 +445,7 @@ def write_report(pass2_rows: list[dict[str, str]], basket_rows: list[dict[str, s
             row["timing_window"] in {"tub_off_immediate", "in_flight_now"}
             and row["pass2_decision"] in {"buy_minimum_qty_now", "track_in_flight_order"}
         )
-        or row["pass2_decision"] == "buy_dot3_fluid_and_bleed_consumables"
+        or row["pass2_decision"] == "buy_remaining_brake_bleed_consumables"
     ]
 
     lines: list[str] = []

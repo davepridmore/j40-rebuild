@@ -43,6 +43,11 @@ RULES: dict[str, EvidenceRule] = {
         indirect_specific_components=("cabin_view_through_glass", "cabin_overview"),
         notes="Front windshield is explicitly captured in dedicated front overview shots.",
     ),
+    "front_vent_window_assemblies": EvidenceRule(
+        direct_specific_components=("front_vent_window_assemblies",),
+        indirect_specific_components=("window_rubber_seals_and_frames", "cabin_view_through_glass"),
+        notes="Detached paired vent/quarter window assemblies are directly documented and should close through the WP02 refurbishment gate.",
+    ),
     "hood": EvidenceRule(
         direct_specific_components=("hood_and_front_windshield_overview",),
         indirect_specific_components=("front_exterior_walkaround", "engine_bay_overview", "front_panel_lighting_mount_area"),

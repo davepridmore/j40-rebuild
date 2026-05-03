@@ -1,13 +1,13 @@
 # Component Jobs vs Photo Inventory Reconciliation
 
-- Generated: 2026-05-03 17:44:30
+- Generated: 2026-05-04 01:41:07
 - Source component jobs: `data/manual/component_jobs.csv`
 - Source photo inventory: `data/manual/photo_inventory.csv`
 - Output CSV: `data/manual/component_jobs_photo_reconciliation.csv`
 
 ## Status Summary
 
-- `direct_photo_evidence`: 33
+- `direct_photo_evidence`: 34
 - `indirect_photo_evidence_only`: 0
 - `no_photo_evidence`: 7
 
@@ -35,6 +35,7 @@
 | `engine_powertrain_cleaning_20260501` | `direct_photo_evidence` | 14 | 21 | `engine_powertrain_cleaning_baseline` | May 1 engine, gearbox, transfer, steering, and driveline photos directly document the cleaning baseline before degreasing and leak inspection. |
 | `floor_pan` | `direct_photo_evidence` | 38 | 42 | `floor_pan_and_firewall|floor_pan_rust_zones|floor_seam_and_body_mount_rust` | Floor pan rust/condition is directly evidenced with dedicated close-ups. |
 | `front_brake_disc_baseline` | `direct_photo_evidence` | 7 | 11 | `steering_and_suspension_linkages` | Steering-linkage underside photos are the closest grouped direct evidence, with frame/mount shots providing supporting context for the current front disc inference. |
+| `front_vent_window_assemblies` | `direct_photo_evidence` | 1 | 4 | `front_vent_window_assemblies` | Detached paired vent/quarter window assemblies are directly documented and should close through the WP02 refurbishment gate. |
 | `front_windows` | `direct_photo_evidence` | 2 | 18 | `hood_and_front_windshield_overview` | Front windshield is explicitly captured in dedicated front overview shots. |
 | `front_wings` | `direct_photo_evidence` | 6 | 38 | `detached_body_panels_and_doors|detached_doors_and_panels` | Front wings are tracked to paint from the April 23 send-day detached-parts batch; wing-removal photos are supporting context only. |
 | `hood` | `direct_photo_evidence` | 2 | 16 | `hood_and_front_windshield_overview` | Hood panel/latches are explicitly visible in front overview shots. |

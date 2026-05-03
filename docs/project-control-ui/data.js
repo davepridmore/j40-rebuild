@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-03T23:02:54+05:00",
+  "generated_at": "2026-05-04T02:15:19+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -36,21 +36,21 @@ window.J40_DASHBOARD_DATA = {
   "summary": {
     "workstreams_in_scope": 15,
     "workstreams_active": 10,
-    "workstream_evidence_images": 584,
-    "parts_open_rows": 47,
-    "parts_ordered_pending_delivery": 10,
-    "urgent_part_actions": 14,
-    "capture_data_tasks": 144,
-    "capture_data_tasks_now": 133,
-    "supply_rows_tracked": 238,
+    "workstream_evidence_images": 586,
+    "parts_open_rows": 55,
+    "parts_ordered_pending_delivery": 12,
+    "urgent_part_actions": 18,
+    "capture_data_tasks": 145,
+    "capture_data_tasks_now": 134,
+    "supply_rows_tracked": 244,
     "selling_site_images_loaded": 83,
     "whatsapp_j40_selected_chats": 7,
     "whatsapp_j40_media_items": 165,
     "whatsapp_j40_media_images": 131,
     "whatsapp_j40_media_videos": 19,
-    "other_build_reference_images": 80,
+    "other_build_reference_images": 108,
     "other_build_drop_zone_images": 0,
-    "other_build_manual_reference_images": 32
+    "other_build_manual_reference_images": 59
   },
   "workstreams": [
     {
@@ -1156,11 +1156,11 @@ window.J40_DASHBOARD_DATA = {
           "title": "Panel + Seals Refurbishment Returns",
           "lane": "body_weather_seal",
           "current_state": "in_progress",
-          "objective": "Return removable panels and seals/windows in refurb-ready condition for fit-up.",
+          "objective": "Return removable panels, seals/windows, and vent/quarter window assemblies in refurb-ready condition for fit-up.",
           "blocker_summary": "Vendor scope/return status tracking must be explicit per component.",
-          "gate_to_close": "Doors/hood/windows/rubbers mechanically serviceable and tagged for refit.",
-          "key_procurement_actions": "Only buy replacement seals/mechanisms after refurbish inspection confirms non-reusable items.",
-          "evidence_signal": "component_refurbish_candidates=6"
+          "gate_to_close": "Doors/hood/windows/rubbers mechanically serviceable, vent assemblies bench-checked, and tagged for refit.",
+          "key_procurement_actions": "Only buy replacement seals/glass/mechanisms after refurbish inspection confirms non-reusable items.",
+          "evidence_signal": "component_refurbish_candidates=7"
         }
       ],
       "component_jobs": [
@@ -1203,7 +1203,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP02 \u00b7 Panel + Seals Refurbishment Returns",
           "status": "in_progress",
-          "detail": "Return removable panels and seals/windows in refurb-ready condition for fit-up. Blocker: Vendor scope/return status tracking must be explicit per component. Procurement: Only buy replacement seals/mechanisms after refurbish inspection confirms non-reusable items. Gate: Doors/hood/windows/rubbers mechanically serviceable and tagged for refit."
+          "detail": "Return removable panels, seals/windows, and vent/quarter window assemblies in refurb-ready condition for fit-up. Blocker: Vendor scope/return status tracking must be explicit per component. Procurement: Only buy replacement seals/glass/mechanisms after refurbish inspection confirms non-reusable items. Gate: Doors/hood/windows/rubbers mechanically serviceable, vent assemblies bench-checked, and tagged for refit."
         },
         {
           "label": "Issue checks",
@@ -2741,7 +2741,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 43,
-      "reference_token_count": 10,
+      "reference_token_count": 11,
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
@@ -2761,7 +2761,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "body_structure",
           "current_state": "in_progress",
           "objective": "Close floor/rust repairs and welding scope before sealing products.",
-          "blocker_summary": "0 body material rows still need buy execution.",
+          "blocker_summary": "5 body material rows still need buy execution.",
           "gate_to_close": "Rust map signed off and repaired zones primed.",
           "key_procurement_actions": "Track primer/prep/seam-sealer/cavity-wax deliveries; use on-hand Raptor bedliner; no generic metal-protection or bed-lining duplicate buy.",
           "evidence_signal": "rust_assessment_photos=51, stripdown_photos=110"
@@ -2771,11 +2771,11 @@ window.J40_DASHBOARD_DATA = {
           "title": "Panel + Seals Refurbishment Returns",
           "lane": "body_weather_seal",
           "current_state": "in_progress",
-          "objective": "Return removable panels and seals/windows in refurb-ready condition for fit-up.",
+          "objective": "Return removable panels, seals/windows, and vent/quarter window assemblies in refurb-ready condition for fit-up.",
           "blocker_summary": "Vendor scope/return status tracking must be explicit per component.",
-          "gate_to_close": "Doors/hood/windows/rubbers mechanically serviceable and tagged for refit.",
-          "key_procurement_actions": "Only buy replacement seals/mechanisms after refurbish inspection confirms non-reusable items.",
-          "evidence_signal": "component_refurbish_candidates=6"
+          "gate_to_close": "Doors/hood/windows/rubbers mechanically serviceable, vent assemblies bench-checked, and tagged for refit.",
+          "key_procurement_actions": "Only buy replacement seals/glass/mechanisms after refurbish inspection confirms non-reusable items.",
+          "evidence_signal": "component_refurbish_candidates=7"
         }
       ],
       "component_jobs": [
@@ -2810,6 +2810,14 @@ window.J40_DASHBOARD_DATA = {
           "planned_action": "Inspect for pinholes then grind spot-weld and prime immediately",
           "evidence_ref": "akber_khan-00798",
           "notes": "Dependent on interior and body exposure before welding and primer decisions"
+        },
+        {
+          "component_job_id": "front_vent_window_assemblies",
+          "component_group": "windows",
+          "current_status": "planned_separate_service",
+          "planned_action": "Treat as a WP02 sub-job: tag LH/RH assemblies, disassemble only enough to protect glass, clean/rust-treat/refinish metal channels and tabs, service pivots/latches/sliders, assess seals and glass, then bench water-test before refit",
+          "evidence_ref": "20260503_234035_front_vent_window_assemblies|user_attachment_2026-05-03",
+          "notes": "Photo shows paired vent/quarter window assemblies off the vehicle with old seals and rust at brackets/channels; hold replacement seal/glass buys until teardown confirms what is not reusable."
         },
         {
           "component_job_id": "front_windows",
@@ -2874,12 +2882,12 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP01 \u00b7 Body Floor Rust Closure",
           "status": "in_progress",
-          "detail": "Close floor/rust repairs and welding scope before sealing products. Blocker: 0 body material rows still need buy execution. Procurement: Track primer/prep/seam-sealer/cavity-wax deliveries; use on-hand Raptor bedliner; no generic metal-protection or bed-lining duplicate buy. Gate: Rust map signed off and repaired zones primed."
+          "detail": "Close floor/rust repairs and welding scope before sealing products. Blocker: 5 body material rows still need buy execution. Procurement: Track primer/prep/seam-sealer/cavity-wax deliveries; use on-hand Raptor bedliner; no generic metal-protection or bed-lining duplicate buy. Gate: Rust map signed off and repaired zones primed."
         },
         {
           "label": "WP02 \u00b7 Panel + Seals Refurbishment Returns",
           "status": "in_progress",
-          "detail": "Return removable panels and seals/windows in refurb-ready condition for fit-up. Blocker: Vendor scope/return status tracking must be explicit per component. Procurement: Only buy replacement seals/mechanisms after refurbish inspection confirms non-reusable items. Gate: Doors/hood/windows/rubbers mechanically serviceable and tagged for refit."
+          "detail": "Return removable panels, seals/windows, and vent/quarter window assemblies in refurb-ready condition for fit-up. Blocker: Vendor scope/return status tracking must be explicit per component. Procurement: Only buy replacement seals/glass/mechanisms after refurbish inspection confirms non-reusable items. Gate: Doors/hood/windows/rubbers mechanically serviceable, vent assemblies bench-checked, and tagged for refit."
         },
         {
           "label": "Issue checks",
@@ -2917,6 +2925,11 @@ window.J40_DASHBOARD_DATA = {
           "detail": "Separate, tag, and clean, service, or replace Notes: Covers window rubbers and auxiliary rubber pieces removed during strip-down"
         },
         {
+          "label": "Component Task \u00b7 Front Vent Window Assemblies",
+          "status": "planned_separate_service",
+          "detail": "Treat as a WP02 sub-job: tag LH/RH assemblies, disassemble only enough to protect glass, clean/rust-treat/refinish metal channels and tabs, service pivots/latches/sliders, assess seals and glass, then bench water-test before refit Notes: Photo shows paired vent/quarter window assemblies off the vehicle with old seals and rust at brackets/channels; hold replacement seal/glass buys until teardown confirms what is not reusable."
+        },
+        {
           "label": "Component Task \u00b7 Window Mechanisms",
           "status": "planned_separate_service",
           "detail": "Separate mechanisms and send to relevant service locations Notes: Track mechanisms separately from glass and panels"
@@ -2928,13 +2941,13 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
-          "status": "completed",
-          "detail": "0 part rows still require price confirmation/order placement."
+          "status": "in_progress",
+          "detail": "2 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
           "status": "in_progress",
-          "detail": "5 part rows are ordered and awaiting delivery."
+          "detail": "6 part rows are ordered and awaiting delivery."
         },
         {
           "label": "Procurement \u00b7 resolve ambiguous stock/receipt rows",
@@ -2956,27 +2969,27 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "ordered_pending_delivery",
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
-          "amount": "",
-          "amount_status": "missing",
+          "amount": "18999",
+          "amount_status": "confirmed",
           "currency": "PKR",
           "vendor": "Autohub",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_wax_and_grease_remover",
-          "evidence_ref": "user_seed|akber_khan-00803|akber_khan-00817|user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order",
-          "notes": "Listed by the user as still needed; later product research includes an Autohub remover link | User confirmed Autohub prep solvent ordered and paid on 2026-05-02. Exact invoice amount/order number still to be reconciled from receipt. Link: https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+          "evidence_ref": "user_seed|akber_khan-00803|akber_khan-00817|user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|gmail_msg_19de69d1f1e3d70a|gmail_order_1762192|autohub_order_62192",
+          "notes": "Autohub order 1762192 / order number 62192 confirmed 2026-05-02: 3M Prep Solvent - 70, 1 gal (08983) x1 at PKR 18999. Shared order also includes HB Body U900 cavity wax x2; order subtotal PKR 23997 plus PKR 249 shipping, total PKR 24246. Product link: https://autohub.pk/products/3m-prep-solvent-70-1-gallon ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
           "links": [
             {
               "url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
               "label": "autohub.pk"
             },
             {
-              "url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
-              "label": "multimedia.3m.com"
+              "url": "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+              "label": "cdn.shopify.com"
             }
           ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/expenses_3m_prep_solvent_70_1_gallon_wax_and_grea_06ccd44e8c5f.webp",
+            "path": "../../deliverables/selling_site_images/images/expenses_3m_prep_solvent_70_1_gallon_wax_and_grea_aded33434823.webp",
             "caption": "3M Prep Solvent-70 1 gallon / wax and grease remover \u00b7 Autohub \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
@@ -2987,18 +3000,18 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_wax_and_grease_remover",
-              "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+              "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+              "1709701797",
+              "08983",
+              "0424",
+              "5433",
               "prep",
-              "solvent",
-              "gallon",
-              "wax",
-              "grease",
-              "remover"
+              "solvent"
             ],
             "match_basis": "selling_site_match",
-            "listing_url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
-            "image_url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
-            "match_score": 257
+            "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+            "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+            "match_score": 292
           }
         },
         {
@@ -3044,27 +3057,27 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "ordered_pending_delivery",
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
-          "amount": "",
-          "amount_status": "missing",
+          "amount": "4998",
+          "amount_status": "confirmed",
           "currency": "PKR",
           "vendor": "Autohub",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_cavity_wax",
-          "evidence_ref": "user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order",
-          "notes": "User confirmed Autohub cavity wax order paid on 2026-05-02. Recommended quantity was 2 spray cans; confirm invoice quantity and amount on receipt. Link: https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+          "evidence_ref": "user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|gmail_msg_19de69d1f1e3d70a|gmail_order_1762192|autohub_order_62192",
+          "notes": "Autohub order 1762192 / order number 62192 confirmed 2026-05-02: HB BODY - U900 CAVITY WAX SPRAY U900 - 400ML x2 at PKR 2499 each, line subtotal PKR 4998. Shared order also includes 3M Prep Solvent; order subtotal PKR 23997 plus PKR 249 shipping, total PKR 24246. Product link: https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
           "links": [
             {
               "url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
               "label": "autohub.pk"
             },
             {
-              "url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
-              "label": "autohub.pk"
+              "url": "https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
+              "label": "cdn.shopify.com"
             }
           ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_24d52c190fc8.webp",
+            "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_2c3e3afb0459.webp",
             "caption": "HB Body U900 cavity wax spray 400ml \u00b7 Autohub \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
@@ -3075,18 +3088,18 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_cavity_wax",
-              "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+              "https://cdn.shopify.com/s/files/1/0424/5433/files/web-900spri-photoroom_1_medium.png?v=1731328302",
+              "1731328302",
+              "0424",
+              "5433",
               "body",
               "u900",
-              "cavity",
-              "wax",
-              "spray",
-              "400ml"
+              "cavity"
             ],
             "match_basis": "selling_site_match",
-            "listing_url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
-            "image_url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
-            "match_score": 263
+            "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
+            "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
+            "match_score": 284
           }
         },
         {
@@ -3097,18 +3110,18 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "ordered_pending_delivery",
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
-          "amount": "",
-          "amount_status": "missing",
+          "amount": "25550",
+          "amount_status": "confirmed",
           "currency": "PKR",
-          "vendor": "Daraz / ICI Industrial Coatings",
+          "vendor": "Daraz / MM PAINT",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_primer",
-          "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00800|akber_khan-00819|user_update_2026-05-02_zinc_rich_epoxy_primer_order",
-          "notes": "Listed by the user as still needed; chat ties primer to floor spot-weld work and later product research | User confirmed ordered and paid on 2026-05-02. Selected as the zinc-rich two-pack epoxy primer for blasted steel chassis; seller images show separate base and hardener tins. Confirm mix ratio, thinner, and recoat window on receipt. Link: https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+          "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00800|akber_khan-00819|user_update_2026-05-02_zinc_rich_epoxy_primer_order|gmail_msg_19de69fd6503ed45|gmail_order_242366749280938",
+          "notes": "Daraz order 242366749280938 confirmed 2026-05-02 from MM PAINT: ICI industrial coating Zinc Rich epoxy primer set - Zinc Rich primer set - ici industrial x1, product PKR 25000 plus PKR 550 shipping, total PKR 25550, paid by card. Delivery window 2026-05-07 to 2026-05-09. Selected as the zinc-rich two-pack epoxy primer for blasted steel chassis; seller images show separate base and hardener tins. Confirm mix ratio, thinner, and recoat window on receipt. Product link: https://www.daraz.pk/products/i556870547-s4006655573.html?urlFlag=true&mp=1 ; image: https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
           "links": [
             {
-              "url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+              "url": "https://www.daraz.pk/products/i556870547-s4006655573.html?urlFlag=true&mp=1",
               "label": "daraz.pk"
             },
             {
@@ -3118,7 +3131,7 @@ window.J40_DASHBOARD_DATA = {
           ],
           "image": {
             "path": "../../deliverables/selling_site_images/images/expenses_hi_build_zinc_rich_epoxy_primer_ec_11_tw_2b4211f7f73b.png",
-            "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 Daraz / ICI Industrial Coatings \u00b7 Selling Site Image",
+            "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 Daraz / MM PAINT \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -3128,18 +3141,54 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_primer",
-              "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-              "556870547",
-              "zinc-rich",
+              "https://pk-live-21.slatic.net/kf/sb3943ecd4f6040c39d009641d24206143",
+              "24206143",
               "two-pack",
-              "build",
-              "zinc",
-              "rich"
+              "009641",
+              "3943",
+              "6040",
+              "build"
             ],
             "match_basis": "selling_site_match",
-            "listing_url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+            "listing_url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
             "image_url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
-            "match_score": 325
+            "match_score": 322
+          }
+        },
+        {
+          "entry_id": "part_fastener_kit_e_millat",
+          "workstream": "body_chassis",
+          "item": "Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60",
+          "status": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "amount": "1880",
+          "amount_status": "confirmed",
+          "currency": "PKR",
+          "vendor": "MTL Parts",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_fastener_kit_e_millat",
+          "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19dbc4673054004c|gmail_order_38902",
+          "notes": "Gmail MTL order #38902 confirms screw lines: SCREW M10 X20MM (163084 - 1163084) x20 PKR 320; SCREW M6X16 (133061 - 1133061) x60 PKR 300; SCREW M6 X 12MM (144035 - 1391074) x120 PKR 720, all 120 backordered; SCREW M8X16MM (163070 - 1163070) x60 PKR 540. Screw line subtotal PKR 1880; part of order #38902 total PKR 10291 including GST with other nuts, bolts, and washers. Payment follow-up sent 2026-04-24; delivery still pending. This MTL row does not cover stainless trim screws, self-tapping screws, countersunk screws, cup washers, or captive/clip nuts.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/clip_nuts.jpg",
+            "caption": "Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60 \u00b7 captive/clip nut reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "clip_nuts",
+            "matched_tokens": [
+              "clip",
+              "nuts"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
           }
         },
         {
@@ -3175,6 +3224,76 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "exact_order_evidence",
             "match_score": 999
+          }
+        },
+        {
+          "entry_id": "part_body_retaining_clips_cotter_pin_pack",
+          "workstream": "body_chassis",
+          "item": "Body retaining clip pack - R-clips hairpins split pins circlips and small cotters",
+          "status": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "local fastener / body hardware supplier",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_body_retaining_clips_cotter_pin_pack",
+          "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+          "notes": "User-selected loose hardware photo shows small wire retaining clips, cotter-style pins, and spring retaining clips mixed with the screws. These are not covered by Millat orders 38902/38903 or the ordered screw/bolt/nut/washer rows. Photo estimate: 6-15 visible retaining clips/cotters, likely 10. Buy new zinc-plated or stainless assorted R-clips, hairpins, split pins, circlips/E-clips, and small cotters after sorting the old samples by pin diameter and installed location; do not reuse rusty retaining clips.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+            "caption": "Body retaining clip pack - R-clips hairpins split pins circlips and small cotters \u00b7 local inventory photo \u00b7 local fastener / body hardware supplier",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260503_153832_gp_0FJJiLHg",
+            "matched_tokens": [
+              "photo_20260503_153832_gp_0fjjilhg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "entry_id": "part_fastener_kit_c_captive_clip_nuts",
+          "workstream": "body_chassis",
+          "item": "Fastener Kit C: Captive/clip/speed nut and weld/rivnut assortment - M6/M8",
+          "status": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Bilal Ganj clip/captive/rivnut suppliers",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_fastener_kit_c_captive_clip_nuts",
+          "evidence_ref": "20260503_153832_gp_0FJJiLHg|workbook_parts#row_227|user_update_2026-05-03_screw_photo_review|data/manual/fastener_photo_count_estimates.csv",
+          "notes": "User-selected loose fastener photo shows rusted captive/clip/speed nuts and old panel/body hardware that are not covered by Millat orders 38902/38903, which only cover loose metric screws, bolts, nuts, flat washers, lock washers, and plate spacers. Photo estimate: 22-40 visible captive/clip/speed nut and rivnut/weld-nut candidates, likely 30. Use new yellow-zinc or equivalent plated M6/M8 captive/clip/speed nuts, weld nuts, and rivnuts; do not reuse rusted spring clips or captive nuts. Workbook Kit C spec basis: M6 captive/clip nuts x120, M8 captive/clip nuts x60, weld nuts M6 x30, weld nuts M8 x20, rivnuts M6 steel x30, rivnuts M8 steel x20. Confirm final split against old samples before purchase.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+            "caption": "Fastener Kit C: Captive/clip/speed nut and weld/rivnut assortment - M6/M8 \u00b7 local inventory photo \u00b7 Bilal Ganj clip/captive/rivnut suppliers",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260503_153832_gp_0FJJiLHg",
+            "matched_tokens": [
+              "photo_20260503_153832_gp_0fjjilhg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
           }
         },
         {
@@ -3351,6 +3470,41 @@ window.J40_DASHBOARD_DATA = {
             "match_basis": "exact_order_evidence",
             "match_score": 999
           }
+        },
+        {
+          "entry_id": "part_body_specialty_brackets_retainer_plates",
+          "workstream": "body_chassis",
+          "item": "Body specialty bracket and retainer plate repair/replacement pack",
+          "status": "planned",
+          "procurement_stage": "spec_needed_before_order",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "local body hardware fabricator / Bilal Ganj",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_body_specialty_brackets_retainer_plates",
+          "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+          "notes": "User-selected loose hardware photo shows rusted rectangular bracket plates, slotted retainers, captive-nut plates, and bent link/strap brackets mixed with the fasteners. These are not supplied by the Millat screw/nut/washer orders. Photo estimate: 8-18 visible specialty bracket/retainer plates, likely 12. Sort by installed location and function, then refurbish only sound originals; buy or fabricate replacements for bent, thin, cracked, or captive-thread-damaged brackets using the old samples as templates.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+            "caption": "Body specialty bracket and retainer plate repair/replacement pack \u00b7 local inventory photo \u00b7 local body hardware fabricator / Bilal Ganj",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260503_153832_gp_0FJJiLHg",
+            "matched_tokens": [
+              "photo_20260503_153832_gp_0fjjilhg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
         }
       ],
       "operation_panels": [],
@@ -3471,10 +3625,10 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Fastener Kit C: Captive/clip/speed nut and weld/rivnut assortment - M6/M8 (purchase_ready; delivery not_ordered; amount missing)",
                 "Seam sealer (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
+                "Body specialty bracket and retainer plate repair/replacement pack (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Evapo-Rust 5 Litre Heavy Duty Rust Remover (received; delivery received; amount missing)",
-                "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "3M Prep Solvent-70 1 gallon / wax and grease remover (ordered_pending_delivery; delivery pending_delivery; amount missing)",
                 "Bedliner sprays (received; delivery received; amount missing)",
                 "Nylon fiber polishing disc and wool buffing polishing disc set (3pcs) plus drill adapter and grinder nut for metals x2 (received; delivery received; amount confirmed)"
               ]
@@ -3592,12 +3746,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set (ordered_pending_delivery; delivery pending_delivery; amount missing)",
+                "Body specialty bracket and retainer plate repair/replacement pack (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Bedliner sprays (received; delivery received; amount missing)",
+                "Fastener Kit C: Captive/clip/speed nut and weld/rivnut assortment - M6/M8 (purchase_ready; delivery not_ordered; amount missing)",
+                "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Nylon fiber polishing disc and wool buffing polishing disc set (3pcs) plus drill adapter and grinder nut for metals x2 (received; delivery received; amount confirmed)",
-                "Evapo-Rust 5 Litre Heavy Duty Rust Remover (received; delivery received; amount missing)",
-                "3M Prep Solvent-70 1 gallon / wax and grease remover (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers (ordered_pending_delivery; delivery pending_delivery; amount missing)"
+                "Body retaining clip pack - R-clips hairpins split pins circlips and small cotters (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -3711,12 +3865,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "3M Prep Solvent-70 1 gallon / wax and grease remover (ordered_pending_delivery; delivery pending_delivery; amount missing)",
+                "3M Prep Solvent-70 1 gallon / wax and grease remover (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
+                "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Seam sealer (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Bedliner sprays (received; delivery received; amount missing)",
-                "HB Body U900 cavity wax spray 400ml (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "Evapo-Rust 5 Litre Heavy Duty Rust Remover (received; delivery received; amount missing)"
+                "Fastener Kit C: Captive/clip/speed nut and weld/rivnut assortment - M6/M8 (purchase_ready; delivery not_ordered; amount missing)",
+                "HB Body U900 cavity wax spray 400ml (ordered_pending_delivery; delivery pending_delivery; amount confirmed)"
               ]
             },
             {
@@ -3829,12 +3983,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Fastener Kit C: Captive/clip/speed nut and weld/rivnut assortment - M6/M8 (purchase_ready; delivery not_ordered; amount missing)",
                 "Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "HB Body U900 cavity wax spray 400ml (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "3M Prep Solvent-70 1 gallon / wax and grease remover (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "Bedliner sprays (received; delivery received; amount missing)",
-                "Nylon fiber polishing disc and wool buffing polishing disc set (3pcs) plus drill adapter and grinder nut for metals x2 (received; delivery received; amount confirmed)"
+                "Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60 (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
+                "Body specialty bracket and retainer plate repair/replacement pack (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Body retaining clip pack - R-clips hairpins split pins circlips and small cotters (purchase_ready; delivery not_ordered; amount missing)",
+                "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set (ordered_pending_delivery; delivery pending_delivery; amount confirmed)"
               ]
             }
           ]
@@ -10142,15 +10296,15 @@ window.J40_DASHBOARD_DATA = {
         "chassis_fixing",
         "body_chassis"
       ],
-      "next_action": "Use the old samples and current chassis evidence to freeze the full body-mount rubber system before any final order or fabrication closeout",
-      "exit_gate": "Main tub and nose-support rubber system is sample-locked, sourced or fabrication-ready, and ready for dry trial fit",
-      "notes": "Dedicated sub-track for body-mount rubbers, sleeves, cup washers, shims, and front-support isolators. Current photos are context-only; final dimensions must come from removed samples.",
+      "next_action": "Use docs/chassis-rubbers-workstream.md as the fabricator-facing body-mount rubber spec and close the BMA holds before final batch release",
+      "exit_gate": "Fabricator has one reduced spec for quote/first article; final production remains blocked by caliper, sleeve, shim, and station closure holds",
+      "notes": "Dedicated sub-track for body-mount rubbers, sleeves, cup washers, shims, and front-support isolators. The top-level page is now fabricator-facing; detailed questions live in the lower holds section and final dimensions still come from removed samples.",
       "evidence_source": [
         "photo_inventory",
         "20260405_234546",
         "20260405_234652",
         "data_chassis_rubber_requirements",
-        "docs_chassis_rubbers_workstream_20260427"
+        "docs_chassis_rubbers_fabricator_spec_20260504"
       ],
       "images": [
         {
@@ -10347,6 +10501,18 @@ window.J40_DASHBOARD_DATA = {
           "specific_component": "rubber_parts_recreation_samples",
           "stage": "procurement_reconciliation",
           "media_id": "20260502_004201_gp_zfUSmKJg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+          "caption": "Mixed Fastener Hardware \u00b7 Procurement Reconciliation \u00b7 2026-05-03",
+          "captured_date": "2026-05-03",
+          "captured_time": "15:38:32",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "mixed_fastener_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260503_153832_gp_0FJJiLHg",
           "matched_tokens": []
         },
         {
@@ -10776,6 +10942,18 @@ window.J40_DASHBOARD_DATA = {
               "matched_tokens": []
             },
             {
+              "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+              "caption": "Mixed Fastener Hardware \u00b7 Procurement Reconciliation \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:38:32",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "mixed_fastener_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260503_153832_gp_0FJJiLHg",
+              "matched_tokens": []
+            },
+            {
               "path": "../../photos/20260422_004332_gp_7d5uYWQQ_2.jpg",
               "caption": "Frame Rail Body Mount And Hard Line Detail \u00b7 Underside Inspection \u00b7 2026-04-22",
               "captured_date": "2026-04-22",
@@ -10826,7 +11004,7 @@ window.J40_DASHBOARD_DATA = {
           ]
         }
       ],
-      "image_count": 20,
+      "image_count": 21,
       "reference_token_count": 3,
       "requirements": [
         {
@@ -11055,7 +11233,7 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Steel tube, zinc plated or painted after cutting; square-cut and deburred",
           "critical_measurements": "Measure old sleeve OD and length with calipers; confirm bolt diameter/thread; confirm cup/rubber stack height by station",
           "fit_and_test": "Sleeve must prevent over-crush at final torque; M10 bolt must pass freely; no loose sleeve rattle after assembly",
-          "source_ref": "data_body_mount_order_release_specs|data_body_mount_release_actions|data_rubber_recreation_fabrication_specs|docs_chassis_rubbers_workstream_20260427",
+          "source_ref": "data_body_mount_order_release_specs|data_body_mount_release_actions|data_rubber_recreation_fabrication_specs|docs_chassis_rubbers_fabricator_spec_20260504",
           "notes": "Spec is ready for blank/tube order; BMA-006 dry-stack measurement controls final cut length.",
           "evidence_images": [
             {
@@ -11119,7 +11297,7 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Steel cup/seat washers, plated or epoxy primed; reuse originals only if flat, not thinned, and not cracked",
           "critical_measurements": "Confirm actual cup OD against body/chassis landing surfaces; confirm which original cups can be reused; confirm hole clearance and dish depth",
           "fit_and_test": "Rubber must seat fully in cup without rocking; no thin generic washer substitution; dry-fit before final coating",
-          "source_ref": "data_body_mount_order_release_specs|data_rubber_recreation_fabrication_specs|docs_chassis_rubbers_workstream_20260427",
+          "source_ref": "data_body_mount_order_release_specs|data_rubber_recreation_fabrication_specs|docs_chassis_rubbers_fabricator_spec_20260504",
           "notes": "Spec is ready; BMA-003/BMA-004 confirm physical seat match before committing the route.",
           "evidence_images": [
             {
@@ -11447,7 +11625,7 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Flat steel shims/spacers only; corrosion protected; no random washer stacks inside the rubber sandwich",
           "critical_measurements": "Preserve and measure original shim packs by FL/FR/ML/MR/RL/RR; reconcile Toyota NO.1-NO.5/cowl/rear rows to vehicle stations before final selection",
           "fit_and_test": "Shim only at original metal-to-metal interfaces; tub doors/gaps and front clip alignment must settle without forced bolts",
-          "source_ref": "data_body_mount_order_release_specs|data_body_mount_station_closure_sheet|data_rubber_recreation_toyota_oe_cross_reference|docs_chassis_rubbers_workstream_20260427",
+          "source_ref": "data_body_mount_order_release_specs|data_body_mount_station_closure_sheet|data_rubber_recreation_toyota_oe_cross_reference|docs_chassis_rubbers_fabricator_spec_20260504",
           "notes": "Spec is ready for shim pack order; BMA-008 station measurement controls final shim use.",
           "evidence_images": [
             {
@@ -11497,7 +11675,7 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Marked structural steel fasteners, class 8.8 minimum; anti-seize at final assembly; repair tabs in 3 mm steel",
           "critical_measurements": "Confirm thread pitch, installed bolt length by station, washer/cup stack thickness, and captive nut condition after cleanup",
           "fit_and_test": "Bolts must thread by hand before torque; no spinning captive nuts; final torque only after tub alignment and shim stack are accepted",
-          "source_ref": "data_body_mount_order_release_specs|data_body_mount_station_closure_sheet|data_rubber_recreation_toyota_oe_cross_reference|docs_chassis_rubbers_workstream_20260427",
+          "source_ref": "data_body_mount_order_release_specs|data_body_mount_station_closure_sheet|data_rubber_recreation_toyota_oe_cross_reference|docs_chassis_rubbers_fabricator_spec_20260504",
           "notes": "Spec is ready for local trial pack order; BMA-007 controls final installed bolt length.",
           "evidence_images": [
             {
@@ -11759,7 +11937,7 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Steel tube, zinc plated or painted after cutting; square-cut and deburred",
           "critical_measurements": "Measure old sleeve OD and length with calipers; confirm bolt diameter/thread; confirm cup/rubber stack height by station",
           "fit_and_test": "Sleeve must prevent over-crush at final torque; M10 bolt must pass freely; no loose sleeve rattle after assembly",
-          "source_ref": "data_body_mount_order_release_specs|data_body_mount_release_actions|data_rubber_recreation_fabrication_specs|docs_chassis_rubbers_workstream_20260427",
+          "source_ref": "data_body_mount_order_release_specs|data_body_mount_release_actions|data_rubber_recreation_fabrication_specs|docs_chassis_rubbers_fabricator_spec_20260504",
           "notes": "Spec is ready for blank/tube order; BMA-006 dry-stack measurement controls final cut length.",
           "evidence_images": [
             {
@@ -11823,7 +12001,7 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Steel cup/seat washers, plated or epoxy primed; reuse originals only if flat, not thinned, and not cracked",
           "critical_measurements": "Confirm actual cup OD against body/chassis landing surfaces; confirm which original cups can be reused; confirm hole clearance and dish depth",
           "fit_and_test": "Rubber must seat fully in cup without rocking; no thin generic washer substitution; dry-fit before final coating",
-          "source_ref": "data_body_mount_order_release_specs|data_rubber_recreation_fabrication_specs|docs_chassis_rubbers_workstream_20260427",
+          "source_ref": "data_body_mount_order_release_specs|data_rubber_recreation_fabrication_specs|docs_chassis_rubbers_fabricator_spec_20260504",
           "notes": "Spec is ready; BMA-003/BMA-004 confirm physical seat match before committing the route.",
           "evidence_images": [
             {
@@ -12151,7 +12329,7 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Flat steel shims/spacers only; corrosion protected; no random washer stacks inside the rubber sandwich",
           "critical_measurements": "Preserve and measure original shim packs by FL/FR/ML/MR/RL/RR; reconcile Toyota NO.1-NO.5/cowl/rear rows to vehicle stations before final selection",
           "fit_and_test": "Shim only at original metal-to-metal interfaces; tub doors/gaps and front clip alignment must settle without forced bolts",
-          "source_ref": "data_body_mount_order_release_specs|data_body_mount_station_closure_sheet|data_rubber_recreation_toyota_oe_cross_reference|docs_chassis_rubbers_workstream_20260427",
+          "source_ref": "data_body_mount_order_release_specs|data_body_mount_station_closure_sheet|data_rubber_recreation_toyota_oe_cross_reference|docs_chassis_rubbers_fabricator_spec_20260504",
           "notes": "Spec is ready for shim pack order; BMA-008 station measurement controls final shim use.",
           "evidence_images": [
             {
@@ -12201,7 +12379,7 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Marked structural steel fasteners, class 8.8 minimum; anti-seize at final assembly; repair tabs in 3 mm steel",
           "critical_measurements": "Confirm thread pitch, installed bolt length by station, washer/cup stack thickness, and captive nut condition after cleanup",
           "fit_and_test": "Bolts must thread by hand before torque; no spinning captive nuts; final torque only after tub alignment and shim stack are accepted",
-          "source_ref": "data_body_mount_order_release_specs|data_body_mount_station_closure_sheet|data_rubber_recreation_toyota_oe_cross_reference|docs_chassis_rubbers_workstream_20260427",
+          "source_ref": "data_body_mount_order_release_specs|data_body_mount_station_closure_sheet|data_rubber_recreation_toyota_oe_cross_reference|docs_chassis_rubbers_fabricator_spec_20260504",
           "notes": "Spec is ready for local trial pack order; BMA-007 controls final installed bolt length.",
           "evidence_images": [
             {
@@ -13043,7 +13221,7 @@ window.J40_DASHBOARD_DATA = {
           "title": "Rubber recreation Rev A",
           "current_status": "quote_first_article_ready",
           "release_position": "Body-mount circular cushions, cup washer blanks, and oval front-support pad are ready for quote and first article; strip files are template blanks only.",
-          "notes": "Final production remains gated by caliper closure and small-mount one-piece vs split-stack decision.",
+          "notes": "Final production remains gated by caliper closure and small-mount one-piece vs split-stack decision; detailed backup spec remains docs/rubber-recreation-fabrication-spec-20260502.md.",
           "package_dir": "data/manual/fabrication/rubber_recreation_rev_a",
           "primary_links": [
             {
@@ -13063,7 +13241,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Inspection checklist"
             },
             {
-              "url": "../../docs/rubber-recreation-fabrication-spec-20260502.md",
+              "url": "../../docs/chassis-rubbers-workstream.md",
               "label": "Source spec"
             }
           ],
@@ -13137,9 +13315,9 @@ window.J40_DASHBOARD_DATA = {
           "component_job_id": "tub_refit_rubber_hardware_shim_stack",
           "component_group": "chassis_underside",
           "current_status": "queued",
-          "planned_action": "Lock the main-tub rubber kit, separate front-support pair, hardware grade, sleeves, and shim stack by trial fit before final tub fastening",
-          "evidence_ref": "photo_inventory_2026-04-22|20260405_234546|20260405_234652|data_chassis_rubber_requirements|docs_chassis_rubbers_workstream_20260427",
-          "notes": "Build_Plan WP02A interface-control gate. Use old samples and the dedicated chassis-rubbers workstream spec before ordering locally."
+          "planned_action": "Use the reduced chassis-rubbers fabricator spec for quote/first article, then lock the main-tub rubber kit, separate front-support pair, hardware grade, sleeves, and shim stack by trial fit before final tub fastening",
+          "evidence_ref": "photo_inventory_2026-04-22|20260405_234546|20260405_234652|data_chassis_rubber_requirements|docs_chassis_rubbers_fabricator_spec_20260504",
+          "notes": "Build_Plan WP02A interface-control gate. Use docs/chassis-rubbers-workstream.md as the shop-facing spec; keep old samples for BMA hold closure before final local production."
         }
       ],
       "issue_jobs": [],
@@ -13147,7 +13325,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Execute current workstream action",
           "status": "in_progress",
-          "detail": "Use the old samples and current chassis evidence to freeze the full body-mount rubber system before any final order or fabrication closeout"
+          "detail": "Use docs/chassis-rubbers-workstream.md as the fabricator-facing body-mount rubber spec and close the BMA holds before final batch release"
         },
         {
           "label": "Capture and label all removed mount samples",
@@ -13177,7 +13355,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Component Task \u00b7 Tub Refit Rubber Hardware Shim Stack",
           "status": "queued",
-          "detail": "Lock the main-tub rubber kit, separate front-support pair, hardware grade, sleeves, and shim stack by trial fit before final tub fastening Notes: Build_Plan WP02A interface-control gate. Use old samples and the dedicated chassis-rubbers workstream spec before ordering locally."
+          "detail": "Use the reduced chassis-rubbers fabricator spec for quote/first article, then lock the main-tub rubber kit, separate front-support pair, hardware grade, sleeves, and shim stack by trial fit before final tub fastening Notes: Build_Plan WP02A interface-control gate. Use docs/chassis-rubbers-workstream.md as the shop-facing spec; keep old samples for BMA hold closure before final local production."
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
@@ -13197,7 +13375,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Close workstream exit gate",
           "status": "queued",
-          "detail": "No linked package rows found. Exit gate: Main tub and nose-support rubber system is sample-locked, sourced or fabrication-ready, and ready for dry trial fit"
+          "detail": "No linked package rows found. Exit gate: Fabricator has one reduced spec for quote/first article; final production remains blocked by caliper, sleeve, shim, and station closure holds"
         }
       ],
       "involved_parts": [
@@ -13234,6 +13412,76 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
+          }
+        },
+        {
+          "entry_id": "part_body_rubber_plastic_bumpers_isolators",
+          "workstream": "chassis_rubbers",
+          "item": "Body rubber/plastic bumpers isolators knobs and small spacers",
+          "status": "planned",
+          "procurement_stage": "spec_needed_before_order",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Bilal Ganj rubber/body trim supplier",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_body_rubber_plastic_bumpers_isolators",
+          "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+          "notes": "User-selected loose hardware photo shows black and white rubber/plastic knobs, bumpers, pads, isolators, and small spacers that are not part of the Millat screw/nut/washer orders and are not covered by the body-mount rubber kit unless a sample proves a body-mount location. Photo estimate: 8-18 visible rubber/plastic pieces, likely 12. Sort by location, diameter, height, thread/stud size, and material hardness; buy new sample-matched replacements for failed or missing pieces and keep usable originals only as templates.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+            "caption": "Body rubber/plastic bumpers isolators knobs and small spacers \u00b7 local inventory photo \u00b7 Bilal Ganj rubber/body trim supplier",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260503_153832_gp_0FJJiLHg",
+            "matched_tokens": [
+              "photo_20260503_153832_gp_0fjjilhg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "entry_id": "part_body_shoulder_pins_sleeves_spacers",
+          "workstream": "chassis_rubbers",
+          "item": "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched",
+          "status": "planned",
+          "procurement_stage": "spec_needed_before_order",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "local fastener / machine shop supplier",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_body_shoulder_pins_sleeves_spacers",
+          "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+          "notes": "User-selected loose hardware photo shows long shoulder/pivot-style bolts, cylindrical sleeves, stand-off spacers, and stepped pins that are not covered by Millat orders 38902/38903, which are loose metric screws, bolts, nuts, and washers only. Photo estimate: 10-24 visible shoulder/pivot bolts, sleeves, stand-offs, and stepped pins, likely 16. Measure shoulder diameter, threaded section, grip length, total length, head style, and installed location before purchase or machine-shop fabrication; do not substitute ordinary fully threaded bolts where a shoulder or sleeve controls alignment.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+            "caption": "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched \u00b7 local inventory photo \u00b7 local fastener / machine shop supplier",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260503_153832_gp_0FJJiLHg",
+            "matched_tokens": [
+              "photo_20260503_153832_gp_0fjjilhg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
           }
         },
         {
@@ -13347,9 +13595,9 @@ window.J40_DASHBOARD_DATA = {
       "operation_panels": [],
       "subtask_groups": [
         {
-          "key": "body_mount_rubber_stack",
-          "title": "Body Mount Rubber Stack",
-          "summary": "Body-mount rubber, sleeve, washer, shim, and front-support isolation work.",
+          "key": "chassis_rubbers_fabricator_spec",
+          "title": "Chassis Rubbers Fabricator Spec",
+          "summary": "Fabricator-ready body-mount rubber, sleeve, cup, shim, and front-support isolation specification.",
           "subtasks": [
             {
               "title": "Capture Removed Mount Samples",
@@ -13460,7 +13708,9 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Body rubber/plastic bumpers isolators knobs and small spacers (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves (ordered_pending_delivery; delivery pending_delivery; amount missing)",
+                "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Body mount hardware kit bolts sleeves washers (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Body mount shim and spacer pack (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Body-to-chassis mount rubber kit (spec_ready_release_hold; delivery not_ordered; amount missing)"
@@ -13473,7 +13723,8 @@ window.J40_DASHBOARD_DATA = {
               "instruction": "Define the full stack by position so the body returns to the intended height and alignment.",
               "process_steps": [
                 "Build a position-by-position table for rubbers, sleeves, cup washers, bolts, and shims.",
-                "Use docs/rubber-recreation-fabrication-spec-20260502.md as the fabrication handoff and close its hold dimensions.",
+                "Use docs/chassis-rubbers-workstream.md as the top-level fabricator handoff spec.",
+                "Use docs/rubber-recreation-fabrication-spec-20260502.md only as the detailed backup spec and hold-dimension record.",
                 "Use data/manual/fabrication/rubber_recreation_rev_a/ as the ready-to-run DXF/SVG/PDF package for quote and first article.",
                 "Use docs/fabrication-handoff-index.md as the shared send-out index for rubber and electrical fabrication packages.",
                 "Use data/manual/rubber_ordering_specs.csv as the cross-category rubber ordering matrix so body mounts, hoses, suspension bushes, weatherstrip, and HVAC rubber stay in the correct buy gates.",
@@ -13495,7 +13746,7 @@ window.J40_DASHBOARD_DATA = {
                 "Thread gauge"
               ],
               "supplies": [
-                "Spec sheet",
+                "Chassis rubbers fabricator spec",
                 "Rubber fabrication DXF/PDF pack",
                 "Fabrication handoff index",
                 "Rubber ordering matrix",
@@ -13596,7 +13847,9 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Body mount hardware kit bolts sleeves washers (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Body mount shim and spacer pack (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Body-to-chassis mount rubber kit (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Body rubber/plastic bumpers isolators knobs and small spacers (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves (ordered_pending_delivery; delivery pending_delivery; amount missing)"
               ]
             },
@@ -13715,7 +13968,9 @@ window.J40_DASHBOARD_DATA = {
                 "Body mount hardware kit bolts sleeves washers (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves (ordered_pending_delivery; delivery pending_delivery; amount missing)",
                 "Body-to-chassis mount rubber kit (spec_ready_release_hold; delivery not_ordered; amount missing)",
-                "Body mount shim and spacer pack (spec_ready_release_hold; delivery not_ordered; amount missing)"
+                "Body mount shim and spacer pack (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Body rubber/plastic bumpers isolators knobs and small spacers (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -13833,8 +14088,10 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves (ordered_pending_delivery; delivery pending_delivery; amount missing)",
+                "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Body mount hardware kit bolts sleeves washers (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Body mount shim and spacer pack (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Body rubber/plastic bumpers isolators knobs and small spacers (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Body-to-chassis mount rubber kit (spec_ready_release_hold; delivery not_ordered; amount missing)"
               ]
             }
@@ -16861,7 +17118,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_cabin_compact_fuse_boxes",
           "workstream": "electrical_reset",
-          "item": "Compact covered cabin blade fuse boxes - likely 3 identical units",
+          "item": "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on",
           "status": "planned",
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
@@ -16869,16 +17126,16 @@ window.J40_DASHBOARD_DATA = {
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "Bilal Ganj / compact automotive electrical supplier",
+          "vendor": "Bilal Ganj / Montgomery Road compact OEM fuse donor supplier / OLX Mehran-Alto donor lead",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_cabin_compact_fuse_boxes",
-          "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought",
-          "notes": "User correction 2026-05-03: cabin/interior car fuse boxes have not been ordered. Relay block row 55 remains received/as specified, but the generic Portable 12-Way universal fuse box row is not purchased stock. Buy likely 3 compact covered blade-fuse boxes for the car/cabin circuits; use compact OEM-style covered ATO/ATC blocks with secure lids and strong terminals, same model if possible. No relay block, no large open universal block, and do not count the Portable 12-Way wording as bought evidence. Confirm final cabin mounting envelope and circuit split before payment.",
+          "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought|user_reference_image_2026-05-03_compact_internal_fuse_box|user_front_rear_fuse_block_images_2026-05-04|docs/cabin-fuse-box-acquisition-20260503.md",
+          "notes": "User correction 2026-05-04: under-dash cabin fuse requirement remains three separate input groups, not physical-location boxes and not the MIDI/high-current side. Need 6 constant-battery fuses, 6 ignition-on/RUN fuses, and 6 ignition part-way/ACC fuses minimum. Current preferred plan is to reuse the existing compact 12-way donor block for two 6-fuse groups if rear-terminal continuity and condition checks pass, then buy one matching compact old-OEM fuse carrier for the third group. Add-on can be 6/8/10/12-way if six positions are usable; reject bulky marine/RV/universal covered blocks. Treat branch outputs as <=30A unless manufacturer marks higher. Candidate source/order text is logged in docs/cabin-fuse-box-acquisition-20260503.md.",
           "links": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/car_cover.jpg",
-            "caption": "Compact covered cabin blade fuse boxes - likely 3 identical units \u00b7 car cover reference image",
+            "caption": "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on \u00b7 car cover reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -17334,10 +17591,10 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
                 "Additional firewall grommet set IDs 6/8/10/12 mm (purchase_ready; delivery not_ordered; amount missing)",
                 "Additional firewall grommet set IDs 16/20/25 mm (purchase_ready; delivery not_ordered; amount missing)",
-                "Compact covered cabin blade fuse boxes - likely 3 identical units (purchase_ready; delivery not_ordered; amount missing)",
                 "H4 ceramic headlight connectors - x4 received (received; delivery received; amount confirmed)",
                 "Electric wire inventory - 4 AWG red/black silicone cable, 1m each (approx 21 mm2) (received; delivery received; amount confirmed)"
               ]
@@ -17454,11 +17711,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points (ordered_pending_delivery; delivery pending_delivery; amount missing)",
+                "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
                 "Additional firewall grommet set IDs 16/20/25 mm (purchase_ready; delivery not_ordered; amount missing)",
                 "Additional firewall grommet set IDs 6/8/10/12 mm (purchase_ready; delivery not_ordered; amount missing)",
                 "Electric wire inventory - 4 AWG red/black silicone cable, 1m each (approx 21 mm2) (received; delivery received; amount confirmed)",
-                "Electrical wire grommet set (200pcs) (deferred_optional; delivery not_ordered; amount confirmed)",
-                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)"
+                "Electrical wire grommet set (200pcs) (deferred_optional; delivery not_ordered; amount confirmed)"
               ]
             },
             {
@@ -17575,9 +17832,9 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
                 "Additional firewall grommet set IDs 6/8/10/12 mm (purchase_ready; delivery not_ordered; amount missing)",
                 "Additional firewall grommet set IDs 16/20/25 mm (purchase_ready; delivery not_ordered; amount missing)",
-                "Compact covered cabin blade fuse boxes - likely 3 identical units (purchase_ready; delivery not_ordered; amount missing)",
                 "Electric wire inventory - 4 AWG red/black silicone cable, 1m each (approx 21 mm2) (received; delivery received; amount confirmed)",
                 "Dielectric grease (received; delivery received; amount confirmed)",
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)"
@@ -17693,7 +17950,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Compact covered cabin blade fuse boxes - likely 3 identical units (purchase_ready; delivery not_ordered; amount missing)",
+                "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
                 "Additional firewall grommet set IDs 16/20/25 mm (purchase_ready; delivery not_ordered; amount missing)",
                 "Electric wire inventory - 4 AWG red/black silicone cable, 1m each (approx 21 mm2) (received; delivery received; amount confirmed)",
@@ -17814,10 +18071,10 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Additional firewall grommet set IDs 16/20/25 mm (purchase_ready; delivery not_ordered; amount missing)",
                 "Additional firewall grommet set IDs 6/8/10/12 mm (purchase_ready; delivery not_ordered; amount missing)",
+                "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
                 "Split conduit / braided sleeve inventory - 14/16 mm, 5m lengths (received; delivery received; amount missing)",
                 "Split conduit / braided sleeve inventory - 20 mm, 5m lengths (received; delivery received; amount missing)",
-                "Split conduit / braided sleeve inventory - 8/10 mm, 5m lengths (received; delivery received; amount missing)",
-                "Compact covered cabin blade fuse boxes - likely 3 identical units (purchase_ready; delivery not_ordered; amount missing)"
+                "Split conduit / braided sleeve inventory - 8/10 mm, 5m lengths (received; delivery received; amount missing)"
               ]
             }
           ]
@@ -18554,6 +18811,18 @@ window.J40_DASHBOARD_DATA = {
           "specific_component": "rubber_parts_recreation_samples",
           "stage": "procurement_reconciliation",
           "media_id": "20260502_004201_gp_zfUSmKJg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+          "caption": "Mixed Fastener Hardware \u00b7 Procurement Reconciliation \u00b7 2026-05-03",
+          "captured_date": "2026-05-03",
+          "captured_time": "15:38:32",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "mixed_fastener_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260503_153832_gp_0FJJiLHg",
           "matched_tokens": []
         },
         {
@@ -19836,6 +20105,18 @@ window.J40_DASHBOARD_DATA = {
               "matched_tokens": []
             },
             {
+              "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+              "caption": "Mixed Fastener Hardware \u00b7 Procurement Reconciliation \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:38:32",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "mixed_fastener_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260503_153832_gp_0FJJiLHg",
+              "matched_tokens": []
+            },
+            {
               "path": "../../photos/20260405_010322_gp_0chs4MQg.jpg",
               "caption": "Fuse Distribution And Wiring \u00b7 Procurement Reconciliation \u00b7 2026-04-05",
               "captured_date": "2026-04-05",
@@ -20942,7 +21223,7 @@ window.J40_DASHBOARD_DATA = {
           ]
         }
       ],
-      "image_count": 106,
+      "image_count": 107,
       "reference_token_count": 5,
       "requirements": [],
       "pipe_requirements": [],
@@ -20962,7 +21243,7 @@ window.J40_DASHBOARD_DATA = {
           "title": "Rubber recreation Rev A",
           "current_status": "quote_first_article_ready",
           "release_position": "Body-mount circular cushions, cup washer blanks, and oval front-support pad are ready for quote and first article; strip files are template blanks only.",
-          "notes": "Final production remains gated by caliper closure and small-mount one-piece vs split-stack decision.",
+          "notes": "Final production remains gated by caliper closure and small-mount one-piece vs split-stack decision; detailed backup spec remains docs/rubber-recreation-fabrication-spec-20260502.md.",
           "package_dir": "data/manual/fabrication/rubber_recreation_rev_a",
           "primary_links": [
             {
@@ -20982,7 +21263,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Inspection checklist"
             },
             {
-              "url": "../../docs/rubber-recreation-fabrication-spec-20260502.md",
+              "url": "../../docs/chassis-rubbers-workstream.md",
               "label": "Source spec"
             }
           ],
@@ -22587,8 +22868,8 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
-          "status": "completed",
-          "detail": "0 part rows still require price confirmation/order placement."
+          "status": "in_progress",
+          "detail": "1 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
@@ -22607,6 +22888,41 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "involved_parts": [
+        {
+          "entry_id": "part_cabin_compact_fuse_boxes",
+          "workstream": "electrical_reset",
+          "item": "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on",
+          "status": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Bilal Ganj / Montgomery Road compact OEM fuse donor supplier / OLX Mehran-Alto donor lead",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_cabin_compact_fuse_boxes",
+          "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought|user_reference_image_2026-05-03_compact_internal_fuse_box|user_front_rear_fuse_block_images_2026-05-04|docs/cabin-fuse-box-acquisition-20260503.md",
+          "notes": "User correction 2026-05-04: under-dash cabin fuse requirement remains three separate input groups, not physical-location boxes and not the MIDI/high-current side. Need 6 constant-battery fuses, 6 ignition-on/RUN fuses, and 6 ignition part-way/ACC fuses minimum. Current preferred plan is to reuse the existing compact 12-way donor block for two 6-fuse groups if rear-terminal continuity and condition checks pass, then buy one matching compact old-OEM fuse carrier for the third group. Add-on can be 6/8/10/12-way if six positions are usable; reject bulky marine/RV/universal covered blocks. Treat branch outputs as <=30A unless manufacturer marks higher. Candidate source/order text is logged in docs/cabin-fuse-box-acquisition-20260503.md.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/car_cover.jpg",
+            "caption": "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on \u00b7 car cover reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "car_cover",
+            "matched_tokens": [
+              "cover"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
         {
           "entry_id": "part_hidden_diesel_cutoff_switch",
           "workstream": "electrical_reset",
@@ -22764,7 +23080,8 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)"
+                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
+                "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -22880,6 +23197,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)"
               ]
             },
@@ -22998,7 +23316,8 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)"
+                "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
+                "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -23118,6 +23437,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)"
               ]
             }
@@ -24601,18 +24921,18 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_daraz_jubilee_hose_clip_assortment_30pc",
-              "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
-              "3011629985",
-              "645582306",
               "jubilee",
               "hose",
               "clip",
-              "assortment"
+              "assortment",
+              "fuel",
+              "line",
+              "diesel"
             ],
             "match_basis": "selling_site_match",
-            "listing_url": "https://www.daraz.pk/products/i645582306-s3011629985.html?urlFlag=true&mp=1",
+            "listing_url": "https://static-01.daraz.pk/p/ba3d027177170958c46096eff8c97f61.jpg",
             "image_url": "https://static-01.daraz.pk/p/ba3d027177170958c46096eff8c97f61.jpg",
-            "match_score": 288
+            "match_score": 248
           }
         },
         {
@@ -30951,15 +31271,15 @@ window.J40_DASHBOARD_DATA = {
           ],
           "photo_status": "supporting_hydraulic_photos",
           "spec_status": "spec_ready_dot3",
-          "acquisition_status": "not_acquired",
+          "acquisition_status": "partial_ordered_pending_delivery",
           "installation_status": "not_installed",
-          "current_action": "Buy 2 L sealed fresh DOT 3 brake fluid plus clear bleed hose, catch bottle or bleeder, line caps/plugs, brake cleaner, rags, gloves, and catch tray before any hydraulic line is opened.",
+          "current_action": "Track Autohub order 62228 for 6 x 354 ml sealed DOT 3 brake fluid (2124 ml total); buy remaining caps/plugs, clear bleed hose/catch bottle or bleeder kit, brake cleaner, rags, gloves, and catch tray before any hydraulic line is opened.",
           "exact_recreation_spec": "Flush and bleed the full system with DOT 3 after any hose, hard-line, wheel-cylinder, caliper, or master work. Do not top up unknown old fluid.",
-          "material_spec": "Sealed fresh DOT 3 brake fluid meeting SAE J1703 / FMVSS No. 116 DOT 3; clean bleed hose/bottle; brake cleaner; line caps/plugs",
-          "critical_measurements": "Working buy quantity 2 L sealed total unless workshop specifies more, bleed screw sizes, bleed order from manual/workshop",
+          "material_spec": "Sealed fresh DOT 3 brake fluid ordered under part_dot3_brake_fluid_autohub_6x354ml; clean bleed hose/bottle; brake cleaner; line caps/plugs",
+          "critical_measurements": "Ordered DOT 3 quantity is 2124 ml sealed total; confirm bottles arrive sealed and add more only if workshop specifies extra, bleed screw sizes, bleed order from manual/workshop",
           "fit_and_test": "Firm pedal, clean fluid at bleeders, no leaks, no air return, recheck after bedding and short road test",
-          "source_ref": "docs_brake_workstream|suspension_brake_merged_work_plan|docs_brake_parts_acquisition_spec_20260503",
-          "notes": "User direction 2026-05-03 closes the brake-fluid DOT hold as DOT 3. Do not use DOT 5, and do not mix unknown old fluid.",
+          "source_ref": "docs_brake_workstream|suspension_brake_merged_work_plan|docs_brake_parts_acquisition_spec_20260503|part_dot3_brake_fluid_autohub_6x354ml",
+          "notes": "User direction 2026-05-03 closes the brake-fluid DOT hold as DOT 3. Autohub order 62228 / Gmail order 1762228 covers 2124 ml sealed DOT 3. Do not use DOT 5, and do not mix unknown old fluid.",
           "evidence_images": [
             {
               "path": "../../photos/20260331_224409.jpg",
@@ -31152,8 +31472,8 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
-          "status": "completed",
-          "detail": "0 part rows are ordered and awaiting delivery."
+          "status": "in_progress",
+          "detail": "1 part rows are ordered and awaiting delivery."
         },
         {
           "label": "Procurement \u00b7 resolve ambiguous stock/receipt rows",
@@ -31273,9 +31593,62 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
+          "entry_id": "part_dot3_brake_fluid_autohub_6x354ml",
+          "workstream": "brake_system",
+          "item": "Lion Brake Fluid DOT-3 12oz/354ml x6",
+          "status": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "amount": "5349",
+          "amount_status": "confirmed",
+          "currency": "PKR",
+          "vendor": "Autohub",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_dot3_brake_fluid_autohub_6x354ml",
+          "evidence_ref": "gmail_msg_19def26c095be6e3|gmail_order_1762228|autohub_order_62228|bank_alert_19def26f0ee43471",
+          "notes": "Autohub order 1762228 / order number 62228 confirmed 2026-05-03: Lion Brake Fluid DOT-3 (12oz./354ml) x6 at PKR 850 each, subtotal PKR 5100 plus PKR 249 shipping, total PKR 5349. This gives 2124 ml sealed fresh DOT 3, enough for the 2 L working target before hydraulic opening. Remaining caps/plugs, bleed hose/bottle, cleaner, rags, gloves, and catch tray stay open under part_brake_fluid_bleed_consumables. Product link: https://autohub.pk/products/lion-brake-fluid-dot-3-12oz ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+          "links": [
+            {
+              "url": "https://autohub.pk/products/lion-brake-fluid-dot-3-12oz",
+              "label": "autohub.pk"
+            },
+            {
+              "url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+              "label": "cdn.shopify.com"
+            }
+          ],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/expenses_lion_brake_fluid_dot_3_12oz_354ml_x6_0518a26e1a6c.webp",
+            "caption": "Lion Brake Fluid DOT-3 12oz/354ml x6 \u00b7 Autohub \u00b7 Selling Site Image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "part_dot3_brake_fluid_autohub_6x354ml",
+              "https://cdn.shopify.com/s/files/1/0424/5433/files/bf-354_dot_3_brake_fluid_12_oz_medium.jpg?v=1700503745",
+              "1700503745",
+              "0424",
+              "5433",
+              "lion",
+              "brake",
+              "fluid"
+            ],
+            "match_basis": "selling_site_match",
+            "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+            "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+            "match_score": 284
+          }
+        },
+        {
           "entry_id": "part_brake_fluid_bleed_consumables",
           "workstream": "brake_system",
-          "item": "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves",
+          "item": "Brake hydraulic opening prep remaining consumables - caps plugs bleed hose bottle cleaner rags gloves catch tray",
           "status": "planned",
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
@@ -31287,12 +31660,12 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_brake_fluid_bleed_consumables",
-          "evidence_ref": "BR-SYS-002|BR-CAPTURE-001|docs/brake-suspension-order-links-20260503.md|docs/brake-parts-acquisition-spec-20260503.md|docs/brake-parts-pakistan-acquisition-20260503.md",
-          "notes": "PURCHASE READY for non-fitment consumables before opening hydraulics: sealed fresh DOT 3 brake fluid (SAE J1703 / FMVSS No. 116 DOT 3), working buy quantity 2 L sealed total unless the workshop specifies more, line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. User direction 2026-05-03 closes the brake-fluid DOT hold as DOT 3. Do not use DOT 5 and do not mix unknown old fluid. Candidate Pakistan purchase links and local order text are logged in docs/brake-parts-pakistan-acquisition-20260503.md.",
+          "evidence_ref": "data_brake_system_requirements|BR-SYS-002|BR-CAPTURE-001|part_dot3_brake_fluid_autohub_6x354ml",
+          "notes": "DOT 3 brake fluid is ordered separately under part_dot3_brake_fluid_autohub_6x354ml. Still purchase-ready before opening hydraulics: line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. Do not open lines until these remaining consumables plus the ordered sealed DOT 3 fluid are physically on hand.",
           "links": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
-            "caption": "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves \u00b7 brake line/hose reference image",
+            "caption": "Brake hydraulic opening prep remaining consumables - caps plugs bleed hose bottle cleaner rags gloves catch tray \u00b7 brake line/hose reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -32053,11 +32426,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Brake master reservoir and proportioning service parts (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves (purchase_ready; delivery not_ordered; amount missing)",
+                "Brake hydraulic opening prep remaining consumables - caps plugs bleed hose bottle cleaner rags gloves catch tray (purchase_ready; delivery not_ordered; amount missing)",
                 "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Lion Brake Fluid DOT-3 12oz/354ml x6 (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)",
-                "Rear wheel cylinders pair with bleed screws (inspect_then_buy; delivery not_ordered; amount missing)",
-                "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Rear wheel cylinders pair with bleed screws (inspect_then_buy; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -32183,9 +32556,9 @@ window.J40_DASHBOARD_DATA = {
                 "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Brake master reservoir and proportioning service parts (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Front disc pads and retaining hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves (purchase_ready; delivery not_ordered; amount missing)",
                 "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)"
+                "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)",
+                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -32311,11 +32684,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Brake hydraulic hose/line package - flex hoses + 4.75 mm hard-line coil allowance (spec_ready_release_hold; delivery not_ordered; amount missing)",
-                "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves (purchase_ready; delivery not_ordered; amount missing)",
                 "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)",
                 "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Rear wheel cylinders pair with bleed screws (inspect_then_buy; delivery not_ordered; amount missing)"
               ]
             }
           ]
@@ -33907,6 +34280,41 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
+          "entry_id": "part_fastener_kit_e_trim_screws_cup_washers",
+          "workstream": "interior_weatherproofing",
+          "item": "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers",
+          "status": "planned",
+          "procurement_stage": "deferred_until_body_closed",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "local fastener / trim hardware supplier",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_fastener_kit_e_trim_screws_cup_washers",
+          "evidence_ref": "20260503_153832_gp_0FJJiLHg|workbook_parts#row_229|user_update_2026-05-03_screw_photo_review|data/manual/fastener_photo_count_estimates.csv",
+          "notes": "User-selected loose fastener photo shows pointed sheet-metal/self-tapping screws, countersunk/slotted trim screws, and cup/finishing washer styles not covered by MTL order 38902. Photo estimate: 35-70 visible self-tapping/trim/countersunk screws and cup/finishing washers, likely 50. Buy only after panel/trim alignment and old-screw sorting confirm positions, head styles, lengths, and washer/cup needs. Non-structural only; use stainless or zinc-plated new hardware and do not reuse rusted old trim screws.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+            "caption": "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers \u00b7 local inventory photo \u00b7 local fastener / trim hardware supplier",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260503_153832_gp_0FJJiLHg",
+            "matched_tokens": [
+              "photo_20260503_153832_gp_0fjjilhg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
           "entry_id": "part_foam",
           "workstream": "interior_weatherproofing",
           "item": "Foam",
@@ -34093,6 +34501,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Sound dampening sheets (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Carpet (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Foam (deferred_until_body_closed; delivery not_ordered; amount missing)"
@@ -34210,6 +34619,7 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Sound dampening sheets (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Carpet (deferred_until_body_closed; delivery not_ordered; amount missing)",
+                "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Foam (deferred_until_body_closed; delivery not_ordered; amount missing)"
               ]
             },
@@ -34325,6 +34735,7 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Sound dampening sheets (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Carpet (deferred_until_body_closed; delivery not_ordered; amount missing)",
+                "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Foam (deferred_until_body_closed; delivery not_ordered; amount missing)"
               ]
             },
@@ -34436,6 +34847,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Sound dampening sheets (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Carpet (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Foam (deferred_until_body_closed; delivery not_ordered; amount missing)"
@@ -35571,7 +35983,7 @@ window.J40_DASHBOARD_DATA = {
         "body_chassis"
       ],
       "evidence_signal": "rust_assessment_photos=51, stripdown_photos=110",
-      "blocker_summary": "0 body material rows still need buy execution.",
+      "blocker_summary": "5 body material rows still need buy execution.",
       "gate_to_close": "Rust map signed off and repaired zones primed.",
       "key_procurement_actions": "Track primer/prep/seam-sealer/cavity-wax deliveries; use on-hand Raptor bedliner; no generic metal-protection or bed-lining duplicate buy.",
       "image": {
@@ -35591,7 +36003,7 @@ window.J40_DASHBOARD_DATA = {
       "work_package_id": "WP02",
       "title": "Panel + Seals Refurbishment Returns",
       "lane": "body_weather_seal",
-      "objective": "Return removable panels and seals/windows in refurb-ready condition for fit-up.",
+      "objective": "Return removable panels, seals/windows, and vent/quarter window assemblies in refurb-ready condition for fit-up.",
       "current_state": "in_progress",
       "depends_on": [
         "WP01"
@@ -35600,10 +36012,10 @@ window.J40_DASHBOARD_DATA = {
         "stripdown_cataloguing",
         "body_chassis"
       ],
-      "evidence_signal": "component_refurbish_candidates=6",
+      "evidence_signal": "component_refurbish_candidates=7",
       "blocker_summary": "Vendor scope/return status tracking must be explicit per component.",
-      "gate_to_close": "Doors/hood/windows/rubbers mechanically serviceable and tagged for refit.",
-      "key_procurement_actions": "Only buy replacement seals/mechanisms after refurbish inspection confirms non-reusable items.",
+      "gate_to_close": "Doors/hood/windows/rubbers mechanically serviceable, vent assemblies bench-checked, and tagged for refit.",
+      "key_procurement_actions": "Only buy replacement seals/glass/mechanisms after refurbish inspection confirms non-reusable items.",
       "image": {
         "path": "../../photos/20260323_201950.jpg",
         "caption": "Body Shell With Doors Removed \u00b7 Removed Parts Cataloguing \u00b7 2026-03-23",
@@ -35740,7 +36152,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Confirm price and place purchase-ready orders",
         "status": "in_progress",
-        "detail": "10 rows still in purchase_ready."
+        "detail": "12 rows still in purchase_ready."
       },
       {
         "label": "Place selected quote orders",
@@ -35750,7 +36162,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Track paid / in-flight deliveries",
         "status": "in_progress",
-        "detail": "10 rows ordered and waiting to arrive."
+        "detail": "12 rows ordered and waiting to arrive."
       }
     ],
     "counts_by_procurement_stage": [
@@ -35760,7 +36172,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "deferred_until_body_closed",
-        "count": 3
+        "count": 4
       },
       {
         "stage": "deferred_until_failed_or_engine_lift_scope",
@@ -35776,7 +36188,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "ordered_pending_delivery",
-        "count": 10
+        "count": 12
       },
       {
         "stage": "pre_payment_market_check",
@@ -35784,11 +36196,11 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "purchase_ready",
-        "count": 10
+        "count": 12
       },
       {
         "stage": "spec_needed_before_order",
-        "count": 8
+        "count": 11
       },
       {
         "stage": "spec_ready_release_hold",
@@ -35798,11 +36210,11 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_next_action": [
       {
         "next_action": "confirm_price_then_order",
-        "count": 10
+        "count": 12
       },
       {
         "next_action": "track_delivery",
-        "count": 10
+        "count": 12
       }
     ],
     "urgent_actions": [
@@ -35814,25 +36226,25 @@ window.J40_DASHBOARD_DATA = {
         "status": "ordered",
         "procurement_stage": "ordered_pending_delivery",
         "next_action": "track_delivery",
-        "amount": "",
-        "amount_status": "missing",
+        "amount": "18999",
+        "amount_status": "confirmed",
         "currency": "PKR",
         "vendor": "Autohub",
         "supply_type": "part",
-        "evidence_ref": "user_seed|akber_khan-00803|akber_khan-00817|user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order",
-        "notes": "Listed by the user as still needed; later product research includes an Autohub remover link | User confirmed Autohub prep solvent ordered and paid on 2026-05-02. Exact invoice amount/order number still to be reconciled from receipt. Link: https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+        "evidence_ref": "user_seed|akber_khan-00803|akber_khan-00817|user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|gmail_msg_19de69d1f1e3d70a|gmail_order_1762192|autohub_order_62192",
+        "notes": "Autohub order 1762192 / order number 62192 confirmed 2026-05-02: 3M Prep Solvent - 70, 1 gal (08983) x1 at PKR 18999. Shared order also includes HB Body U900 cavity wax x2; order subtotal PKR 23997 plus PKR 249 shipping, total PKR 24246. Product link: https://autohub.pk/products/3m-prep-solvent-70-1-gallon ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
         "links": [
           {
             "url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
             "label": "autohub.pk"
           },
           {
-            "url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
-            "label": "multimedia.3m.com"
+            "url": "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+            "label": "cdn.shopify.com"
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/expenses_3m_prep_solvent_70_1_gallon_wax_and_grea_06ccd44e8c5f.webp",
+          "path": "../../deliverables/selling_site_images/images/expenses_3m_prep_solvent_70_1_gallon_wax_and_grea_aded33434823.webp",
           "caption": "3M Prep Solvent-70 1 gallon / wax and grease remover \u00b7 Autohub \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
@@ -35843,18 +36255,51 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_wax_and_grease_remover",
-            "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+            "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+            "1709701797",
+            "08983",
+            "0424",
+            "5433",
             "prep",
-            "solvent",
-            "gallon",
-            "wax",
-            "grease",
-            "remover"
+            "solvent"
           ],
           "match_basis": "selling_site_match",
-          "listing_url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
-          "image_url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
-          "match_score": 257
+          "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+          "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+          "match_score": 292
+        }
+      },
+      {
+        "priority": "P0",
+        "entry_id": "part_body_retaining_clips_cotter_pin_pack",
+        "workstream": "body_chassis",
+        "item": "Body retaining clip pack - R-clips hairpins split pins circlips and small cotters",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "next_action": "confirm_price_then_order",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "local fastener / body hardware supplier",
+        "supply_type": "part",
+        "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+        "notes": "User-selected loose hardware photo shows small wire retaining clips, cotter-style pins, and spring retaining clips mixed with the screws. These are not covered by Millat orders 38902/38903 or the ordered screw/bolt/nut/washer rows. Photo estimate: 6-15 visible retaining clips/cotters, likely 10. Buy new zinc-plated or stainless assorted R-clips, hairpins, split pins, circlips/E-clips, and small cotters after sorting the old samples by pin diameter and installed location; do not reuse rusty retaining clips.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+          "caption": "Body retaining clip pack - R-clips hairpins split pins circlips and small cotters \u00b7 local inventory photo \u00b7 local fastener / body hardware supplier",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260503_153832_gp_0FJJiLHg",
+          "matched_tokens": [
+            "photo_20260503_153832_gp_0fjjilhg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
         }
       },
       {
@@ -35892,31 +36337,64 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "priority": "P0",
+        "entry_id": "part_fastener_kit_c_captive_clip_nuts",
+        "workstream": "body_chassis",
+        "item": "Fastener Kit C: Captive/clip/speed nut and weld/rivnut assortment - M6/M8",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "next_action": "confirm_price_then_order",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Bilal Ganj clip/captive/rivnut suppliers",
+        "supply_type": "part",
+        "evidence_ref": "20260503_153832_gp_0FJJiLHg|workbook_parts#row_227|user_update_2026-05-03_screw_photo_review|data/manual/fastener_photo_count_estimates.csv",
+        "notes": "User-selected loose fastener photo shows rusted captive/clip/speed nuts and old panel/body hardware that are not covered by Millat orders 38902/38903, which only cover loose metric screws, bolts, nuts, flat washers, lock washers, and plate spacers. Photo estimate: 22-40 visible captive/clip/speed nut and rivnut/weld-nut candidates, likely 30. Use new yellow-zinc or equivalent plated M6/M8 captive/clip/speed nuts, weld nuts, and rivnuts; do not reuse rusted spring clips or captive nuts. Workbook Kit C spec basis: M6 captive/clip nuts x120, M8 captive/clip nuts x60, weld nuts M6 x30, weld nuts M8 x20, rivnuts M6 steel x30, rivnuts M8 steel x20. Confirm final split against old samples before purchase.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+          "caption": "Fastener Kit C: Captive/clip/speed nut and weld/rivnut assortment - M6/M8 \u00b7 local inventory photo \u00b7 Bilal Ganj clip/captive/rivnut suppliers",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260503_153832_gp_0FJJiLHg",
+          "matched_tokens": [
+            "photo_20260503_153832_gp_0fjjilhg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "priority": "P0",
         "entry_id": "part_cavity_wax",
         "workstream": "body_chassis",
         "item": "HB Body U900 cavity wax spray 400ml",
         "status": "ordered",
         "procurement_stage": "ordered_pending_delivery",
         "next_action": "track_delivery",
-        "amount": "",
-        "amount_status": "missing",
+        "amount": "4998",
+        "amount_status": "confirmed",
         "currency": "PKR",
         "vendor": "Autohub",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order",
-        "notes": "User confirmed Autohub cavity wax order paid on 2026-05-02. Recommended quantity was 2 spray cans; confirm invoice quantity and amount on receipt. Link: https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+        "evidence_ref": "user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|gmail_msg_19de69d1f1e3d70a|gmail_order_1762192|autohub_order_62192",
+        "notes": "Autohub order 1762192 / order number 62192 confirmed 2026-05-02: HB BODY - U900 CAVITY WAX SPRAY U900 - 400ML x2 at PKR 2499 each, line subtotal PKR 4998. Shared order also includes 3M Prep Solvent; order subtotal PKR 23997 plus PKR 249 shipping, total PKR 24246. Product link: https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
         "links": [
           {
             "url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
             "label": "autohub.pk"
           },
           {
-            "url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
-            "label": "autohub.pk"
+            "url": "https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
+            "label": "cdn.shopify.com"
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_24d52c190fc8.webp",
+          "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_2c3e3afb0459.webp",
           "caption": "HB Body U900 cavity wax spray 400ml \u00b7 Autohub \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
@@ -35927,18 +36405,18 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_cavity_wax",
-            "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+            "https://cdn.shopify.com/s/files/1/0424/5433/files/web-900spri-photoroom_1_medium.png?v=1731328302",
+            "1731328302",
+            "0424",
+            "5433",
             "body",
             "u900",
-            "cavity",
-            "wax",
-            "spray",
-            "400ml"
+            "cavity"
           ],
           "match_basis": "selling_site_match",
-          "listing_url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
-          "image_url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
-          "match_score": 263
+          "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
+          "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
+          "match_score": 284
         }
       },
       {
@@ -35949,16 +36427,16 @@ window.J40_DASHBOARD_DATA = {
         "status": "ordered",
         "procurement_stage": "ordered_pending_delivery",
         "next_action": "track_delivery",
-        "amount": "",
-        "amount_status": "missing",
+        "amount": "25550",
+        "amount_status": "confirmed",
         "currency": "PKR",
-        "vendor": "Daraz / ICI Industrial Coatings",
+        "vendor": "Daraz / MM PAINT",
         "supply_type": "part",
-        "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00800|akber_khan-00819|user_update_2026-05-02_zinc_rich_epoxy_primer_order",
-        "notes": "Listed by the user as still needed; chat ties primer to floor spot-weld work and later product research | User confirmed ordered and paid on 2026-05-02. Selected as the zinc-rich two-pack epoxy primer for blasted steel chassis; seller images show separate base and hardener tins. Confirm mix ratio, thinner, and recoat window on receipt. Link: https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+        "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00800|akber_khan-00819|user_update_2026-05-02_zinc_rich_epoxy_primer_order|gmail_msg_19de69fd6503ed45|gmail_order_242366749280938",
+        "notes": "Daraz order 242366749280938 confirmed 2026-05-02 from MM PAINT: ICI industrial coating Zinc Rich epoxy primer set - Zinc Rich primer set - ici industrial x1, product PKR 25000 plus PKR 550 shipping, total PKR 25550, paid by card. Delivery window 2026-05-07 to 2026-05-09. Selected as the zinc-rich two-pack epoxy primer for blasted steel chassis; seller images show separate base and hardener tins. Confirm mix ratio, thinner, and recoat window on receipt. Product link: https://www.daraz.pk/products/i556870547-s4006655573.html?urlFlag=true&mp=1 ; image: https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
         "links": [
           {
-            "url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+            "url": "https://www.daraz.pk/products/i556870547-s4006655573.html?urlFlag=true&mp=1",
             "label": "daraz.pk"
           },
           {
@@ -35968,7 +36446,7 @@ window.J40_DASHBOARD_DATA = {
         ],
         "image": {
           "path": "../../deliverables/selling_site_images/images/expenses_hi_build_zinc_rich_epoxy_primer_ec_11_tw_2b4211f7f73b.png",
-          "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 Daraz / ICI Industrial Coatings \u00b7 Selling Site Image",
+          "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 Daraz / MM PAINT \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -35978,18 +36456,52 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_primer",
-            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-            "556870547",
-            "zinc-rich",
+            "https://pk-live-21.slatic.net/kf/sb3943ecd4f6040c39d009641d24206143",
+            "24206143",
             "two-pack",
-            "build",
-            "zinc",
-            "rich"
+            "009641",
+            "3943",
+            "6040",
+            "build"
           ],
           "match_basis": "selling_site_match",
-          "listing_url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+          "listing_url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
           "image_url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
-          "match_score": 325
+          "match_score": 322
+        }
+      },
+      {
+        "priority": "P0",
+        "entry_id": "part_fastener_kit_e_millat",
+        "workstream": "body_chassis",
+        "item": "Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "next_action": "track_delivery",
+        "amount": "1880",
+        "amount_status": "confirmed",
+        "currency": "PKR",
+        "vendor": "MTL Parts",
+        "supply_type": "part",
+        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19dbc4673054004c|gmail_order_38902",
+        "notes": "Gmail MTL order #38902 confirms screw lines: SCREW M10 X20MM (163084 - 1163084) x20 PKR 320; SCREW M6X16 (133061 - 1133061) x60 PKR 300; SCREW M6 X 12MM (144035 - 1391074) x120 PKR 720, all 120 backordered; SCREW M8X16MM (163070 - 1163070) x60 PKR 540. Screw line subtotal PKR 1880; part of order #38902 total PKR 10291 including GST with other nuts, bolts, and washers. Payment follow-up sent 2026-04-24; delivery still pending. This MTL row does not cover stainless trim screws, self-tapping screws, countersunk screws, cup washers, or captive/clip nuts.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/clip_nuts.jpg",
+          "caption": "Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60 \u00b7 captive/clip nut reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "clip_nuts",
+          "matched_tokens": [
+            "clip",
+            "nuts"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
         }
       },
       {
@@ -36029,7 +36541,7 @@ window.J40_DASHBOARD_DATA = {
         "priority": "P0",
         "entry_id": "part_brake_fluid_bleed_consumables",
         "workstream": "brake_system",
-        "item": "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves",
+        "item": "Brake hydraulic opening prep remaining consumables - caps plugs bleed hose bottle cleaner rags gloves catch tray",
         "status": "planned",
         "procurement_stage": "purchase_ready",
         "next_action": "confirm_price_then_order",
@@ -36038,12 +36550,12 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "Autohub/Daraz/local brake supplier",
         "supply_type": "part",
-        "evidence_ref": "BR-SYS-002|BR-CAPTURE-001|docs/brake-suspension-order-links-20260503.md|docs/brake-parts-acquisition-spec-20260503.md|docs/brake-parts-pakistan-acquisition-20260503.md",
-        "notes": "PURCHASE READY for non-fitment consumables before opening hydraulics: sealed fresh DOT 3 brake fluid (SAE J1703 / FMVSS No. 116 DOT 3), working buy quantity 2 L sealed total unless the workshop specifies more, line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. User direction 2026-05-03 closes the brake-fluid DOT hold as DOT 3. Do not use DOT 5 and do not mix unknown old fluid. Candidate Pakistan purchase links and local order text are logged in docs/brake-parts-pakistan-acquisition-20260503.md.",
+        "evidence_ref": "data_brake_system_requirements|BR-SYS-002|BR-CAPTURE-001|part_dot3_brake_fluid_autohub_6x354ml",
+        "notes": "DOT 3 brake fluid is ordered separately under part_dot3_brake_fluid_autohub_6x354ml. Still purchase-ready before opening hydraulics: line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. Do not open lines until these remaining consumables plus the ordered sealed DOT 3 fluid are physically on hand.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
-          "caption": "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves \u00b7 brake line/hose reference image",
+          "caption": "Brake hydraulic opening prep remaining consumables - caps plugs bleed hose bottle cleaner rags gloves catch tray \u00b7 brake line/hose reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -36057,6 +36569,57 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
+        }
+      },
+      {
+        "priority": "P0",
+        "entry_id": "part_dot3_brake_fluid_autohub_6x354ml",
+        "workstream": "brake_system",
+        "item": "Lion Brake Fluid DOT-3 12oz/354ml x6",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "next_action": "track_delivery",
+        "amount": "5349",
+        "amount_status": "confirmed",
+        "currency": "PKR",
+        "vendor": "Autohub",
+        "supply_type": "part",
+        "evidence_ref": "gmail_msg_19def26c095be6e3|gmail_order_1762228|autohub_order_62228|bank_alert_19def26f0ee43471",
+        "notes": "Autohub order 1762228 / order number 62228 confirmed 2026-05-03: Lion Brake Fluid DOT-3 (12oz./354ml) x6 at PKR 850 each, subtotal PKR 5100 plus PKR 249 shipping, total PKR 5349. This gives 2124 ml sealed fresh DOT 3, enough for the 2 L working target before hydraulic opening. Remaining caps/plugs, bleed hose/bottle, cleaner, rags, gloves, and catch tray stay open under part_brake_fluid_bleed_consumables. Product link: https://autohub.pk/products/lion-brake-fluid-dot-3-12oz ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+        "links": [
+          {
+            "url": "https://autohub.pk/products/lion-brake-fluid-dot-3-12oz",
+            "label": "autohub.pk"
+          },
+          {
+            "url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+            "label": "cdn.shopify.com"
+          }
+        ],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/expenses_lion_brake_fluid_dot_3_12oz_354ml_x6_0518a26e1a6c.webp",
+          "caption": "Lion Brake Fluid DOT-3 12oz/354ml x6 \u00b7 Autohub \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_dot3_brake_fluid_autohub_6x354ml",
+            "https://cdn.shopify.com/s/files/1/0424/5433/files/bf-354_dot_3_brake_fluid_12_oz_medium.jpg?v=1700503745",
+            "1700503745",
+            "0424",
+            "5433",
+            "lion",
+            "brake",
+            "fluid"
+          ],
+          "match_basis": "selling_site_match",
+          "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+          "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+          "match_score": 284
         }
       },
       {
@@ -36162,21 +36725,21 @@ window.J40_DASHBOARD_DATA = {
         "priority": "P0",
         "entry_id": "part_cabin_compact_fuse_boxes",
         "workstream": "electrical_reset",
-        "item": "Compact covered cabin blade fuse boxes - likely 3 identical units",
+        "item": "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on",
         "status": "planned",
         "procurement_stage": "purchase_ready",
         "next_action": "confirm_price_then_order",
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "Bilal Ganj / compact automotive electrical supplier",
+        "vendor": "Bilal Ganj / Montgomery Road compact OEM fuse donor supplier / OLX Mehran-Alto donor lead",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought",
-        "notes": "User correction 2026-05-03: cabin/interior car fuse boxes have not been ordered. Relay block row 55 remains received/as specified, but the generic Portable 12-Way universal fuse box row is not purchased stock. Buy likely 3 compact covered blade-fuse boxes for the car/cabin circuits; use compact OEM-style covered ATO/ATC blocks with secure lids and strong terminals, same model if possible. No relay block, no large open universal block, and do not count the Portable 12-Way wording as bought evidence. Confirm final cabin mounting envelope and circuit split before payment.",
+        "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought|user_reference_image_2026-05-03_compact_internal_fuse_box|user_front_rear_fuse_block_images_2026-05-04|docs/cabin-fuse-box-acquisition-20260503.md",
+        "notes": "User correction 2026-05-04: under-dash cabin fuse requirement remains three separate input groups, not physical-location boxes and not the MIDI/high-current side. Need 6 constant-battery fuses, 6 ignition-on/RUN fuses, and 6 ignition part-way/ACC fuses minimum. Current preferred plan is to reuse the existing compact 12-way donor block for two 6-fuse groups if rear-terminal continuity and condition checks pass, then buy one matching compact old-OEM fuse carrier for the third group. Add-on can be 6/8/10/12-way if six positions are usable; reject bulky marine/RV/universal covered blocks. Treat branch outputs as <=30A unless manufacturer marks higher. Candidate source/order text is logged in docs/cabin-fuse-box-acquisition-20260503.md.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/car_cover.jpg",
-          "caption": "Compact covered cabin blade fuse boxes - likely 3 identical units \u00b7 car cover reference image",
+          "caption": "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on \u00b7 car cover reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -36269,18 +36832,18 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_daraz_jubilee_hose_clip_assortment_30pc",
-            "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
-            "3011629985",
-            "645582306",
             "jubilee",
             "hose",
             "clip",
-            "assortment"
+            "assortment",
+            "fuel",
+            "line",
+            "diesel"
           ],
           "match_basis": "selling_site_match",
-          "listing_url": "https://www.daraz.pk/products/i645582306-s3011629985.html?urlFlag=true&mp=1",
+          "listing_url": "https://static-01.daraz.pk/p/ba3d027177170958c46096eff8c97f61.jpg",
           "image_url": "https://static-01.daraz.pk/p/ba3d027177170958c46096eff8c97f61.jpg",
-          "match_score": 288
+          "match_score": 248
         }
       },
       {
@@ -36360,26 +36923,26 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "ordered_pending_delivery",
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
-        "expected_delivery_date": "",
-        "amount": "",
-        "amount_status": "missing",
+        "expected_delivery_date": "2026-05-06",
+        "amount": "18999",
+        "amount_status": "confirmed",
         "currency": "PKR",
         "vendor": "Autohub",
         "supply_type": "part",
-        "evidence_ref": "user_seed|akber_khan-00803|akber_khan-00817|user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order",
-        "notes": "Listed by the user as still needed; later product research includes an Autohub remover link | User confirmed Autohub prep solvent ordered and paid on 2026-05-02. Exact invoice amount/order number still to be reconciled from receipt. Link: https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+        "evidence_ref": "user_seed|akber_khan-00803|akber_khan-00817|user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|gmail_msg_19de69d1f1e3d70a|gmail_order_1762192|autohub_order_62192",
+        "notes": "Autohub order 1762192 / order number 62192 confirmed 2026-05-02: 3M Prep Solvent - 70, 1 gal (08983) x1 at PKR 18999. Shared order also includes HB Body U900 cavity wax x2; order subtotal PKR 23997 plus PKR 249 shipping, total PKR 24246. Product link: https://autohub.pk/products/3m-prep-solvent-70-1-gallon ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
         "links": [
           {
             "url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
             "label": "autohub.pk"
           },
           {
-            "url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
-            "label": "multimedia.3m.com"
+            "url": "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+            "label": "cdn.shopify.com"
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/expenses_3m_prep_solvent_70_1_gallon_wax_and_grea_06ccd44e8c5f.webp",
+          "path": "../../deliverables/selling_site_images/images/expenses_3m_prep_solvent_70_1_gallon_wax_and_grea_aded33434823.webp",
           "caption": "3M Prep Solvent-70 1 gallon / wax and grease remover \u00b7 Autohub \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
@@ -36390,18 +36953,18 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_wax_and_grease_remover",
-            "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+            "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+            "1709701797",
+            "08983",
+            "0424",
+            "5433",
             "prep",
-            "solvent",
-            "gallon",
-            "wax",
-            "grease",
-            "remover"
+            "solvent"
           ],
           "match_basis": "selling_site_match",
-          "listing_url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
-          "image_url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
-          "match_score": 257
+          "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+          "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+          "match_score": 292
         }
       },
       {
@@ -36446,26 +37009,26 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "ordered_pending_delivery",
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
-        "expected_delivery_date": "",
-        "amount": "",
-        "amount_status": "missing",
+        "expected_delivery_date": "2026-05-06",
+        "amount": "4998",
+        "amount_status": "confirmed",
         "currency": "PKR",
         "vendor": "Autohub",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order",
-        "notes": "User confirmed Autohub cavity wax order paid on 2026-05-02. Recommended quantity was 2 spray cans; confirm invoice quantity and amount on receipt. Link: https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+        "evidence_ref": "user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|gmail_msg_19de69d1f1e3d70a|gmail_order_1762192|autohub_order_62192",
+        "notes": "Autohub order 1762192 / order number 62192 confirmed 2026-05-02: HB BODY - U900 CAVITY WAX SPRAY U900 - 400ML x2 at PKR 2499 each, line subtotal PKR 4998. Shared order also includes 3M Prep Solvent; order subtotal PKR 23997 plus PKR 249 shipping, total PKR 24246. Product link: https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
         "links": [
           {
             "url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
             "label": "autohub.pk"
           },
           {
-            "url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
-            "label": "autohub.pk"
+            "url": "https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
+            "label": "cdn.shopify.com"
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_24d52c190fc8.webp",
+          "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_2c3e3afb0459.webp",
           "caption": "HB Body U900 cavity wax spray 400ml \u00b7 Autohub \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
@@ -36476,18 +37039,18 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_cavity_wax",
-            "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+            "https://cdn.shopify.com/s/files/1/0424/5433/files/web-900spri-photoroom_1_medium.png?v=1731328302",
+            "1731328302",
+            "0424",
+            "5433",
             "body",
             "u900",
-            "cavity",
-            "wax",
-            "spray",
-            "400ml"
+            "cavity"
           ],
           "match_basis": "selling_site_match",
-          "listing_url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
-          "image_url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
-          "match_score": 263
+          "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
+          "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
+          "match_score": 284
         }
       },
       {
@@ -36498,17 +37061,17 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "ordered_pending_delivery",
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
-        "expected_delivery_date": "",
-        "amount": "",
-        "amount_status": "missing",
+        "expected_delivery_date": "2026-05-09",
+        "amount": "25550",
+        "amount_status": "confirmed",
         "currency": "PKR",
-        "vendor": "Daraz / ICI Industrial Coatings",
+        "vendor": "Daraz / MM PAINT",
         "supply_type": "part",
-        "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00800|akber_khan-00819|user_update_2026-05-02_zinc_rich_epoxy_primer_order",
-        "notes": "Listed by the user as still needed; chat ties primer to floor spot-weld work and later product research | User confirmed ordered and paid on 2026-05-02. Selected as the zinc-rich two-pack epoxy primer for blasted steel chassis; seller images show separate base and hardener tins. Confirm mix ratio, thinner, and recoat window on receipt. Link: https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+        "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00800|akber_khan-00819|user_update_2026-05-02_zinc_rich_epoxy_primer_order|gmail_msg_19de69fd6503ed45|gmail_order_242366749280938",
+        "notes": "Daraz order 242366749280938 confirmed 2026-05-02 from MM PAINT: ICI industrial coating Zinc Rich epoxy primer set - Zinc Rich primer set - ici industrial x1, product PKR 25000 plus PKR 550 shipping, total PKR 25550, paid by card. Delivery window 2026-05-07 to 2026-05-09. Selected as the zinc-rich two-pack epoxy primer for blasted steel chassis; seller images show separate base and hardener tins. Confirm mix ratio, thinner, and recoat window on receipt. Product link: https://www.daraz.pk/products/i556870547-s4006655573.html?urlFlag=true&mp=1 ; image: https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
         "links": [
           {
-            "url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+            "url": "https://www.daraz.pk/products/i556870547-s4006655573.html?urlFlag=true&mp=1",
             "label": "daraz.pk"
           },
           {
@@ -36518,7 +37081,7 @@ window.J40_DASHBOARD_DATA = {
         ],
         "image": {
           "path": "../../deliverables/selling_site_images/images/expenses_hi_build_zinc_rich_epoxy_primer_ec_11_tw_2b4211f7f73b.png",
-          "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 Daraz / ICI Industrial Coatings \u00b7 Selling Site Image",
+          "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 Daraz / MM PAINT \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -36528,18 +37091,53 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_primer",
-            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-            "556870547",
-            "zinc-rich",
+            "https://pk-live-21.slatic.net/kf/sb3943ecd4f6040c39d009641d24206143",
+            "24206143",
             "two-pack",
-            "build",
-            "zinc",
-            "rich"
+            "009641",
+            "3943",
+            "6040",
+            "build"
           ],
           "match_basis": "selling_site_match",
-          "listing_url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+          "listing_url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
           "image_url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
-          "match_score": 325
+          "match_score": 322
+        }
+      },
+      {
+        "entry_id": "part_fastener_kit_e_millat",
+        "workstream": "body_chassis",
+        "item": "Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "expected_delivery_date": "",
+        "amount": "1880",
+        "amount_status": "confirmed",
+        "currency": "PKR",
+        "vendor": "MTL Parts",
+        "supply_type": "part",
+        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19dbc4673054004c|gmail_order_38902",
+        "notes": "Gmail MTL order #38902 confirms screw lines: SCREW M10 X20MM (163084 - 1163084) x20 PKR 320; SCREW M6X16 (133061 - 1133061) x60 PKR 300; SCREW M6 X 12MM (144035 - 1391074) x120 PKR 720, all 120 backordered; SCREW M8X16MM (163070 - 1163070) x60 PKR 540. Screw line subtotal PKR 1880; part of order #38902 total PKR 10291 including GST with other nuts, bolts, and washers. Payment follow-up sent 2026-04-24; delivery still pending. This MTL row does not cover stainless trim screws, self-tapping screws, countersunk screws, cup washers, or captive/clip nuts.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/clip_nuts.jpg",
+          "caption": "Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60 \u00b7 captive/clip nut reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "clip_nuts",
+          "matched_tokens": [
+            "clip",
+            "nuts"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
         }
       },
       {
@@ -36574,6 +37172,58 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "exact_order_evidence",
           "match_score": 999
+        }
+      },
+      {
+        "entry_id": "part_dot3_brake_fluid_autohub_6x354ml",
+        "workstream": "brake_system",
+        "item": "Lion Brake Fluid DOT-3 12oz/354ml x6",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "expected_delivery_date": "2026-05-06",
+        "amount": "5349",
+        "amount_status": "confirmed",
+        "currency": "PKR",
+        "vendor": "Autohub",
+        "supply_type": "part",
+        "evidence_ref": "gmail_msg_19def26c095be6e3|gmail_order_1762228|autohub_order_62228|bank_alert_19def26f0ee43471",
+        "notes": "Autohub order 1762228 / order number 62228 confirmed 2026-05-03: Lion Brake Fluid DOT-3 (12oz./354ml) x6 at PKR 850 each, subtotal PKR 5100 plus PKR 249 shipping, total PKR 5349. This gives 2124 ml sealed fresh DOT 3, enough for the 2 L working target before hydraulic opening. Remaining caps/plugs, bleed hose/bottle, cleaner, rags, gloves, and catch tray stay open under part_brake_fluid_bleed_consumables. Product link: https://autohub.pk/products/lion-brake-fluid-dot-3-12oz ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+        "links": [
+          {
+            "url": "https://autohub.pk/products/lion-brake-fluid-dot-3-12oz",
+            "label": "autohub.pk"
+          },
+          {
+            "url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+            "label": "cdn.shopify.com"
+          }
+        ],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/expenses_lion_brake_fluid_dot_3_12oz_354ml_x6_0518a26e1a6c.webp",
+          "caption": "Lion Brake Fluid DOT-3 12oz/354ml x6 \u00b7 Autohub \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_dot3_brake_fluid_autohub_6x354ml",
+            "https://cdn.shopify.com/s/files/1/0424/5433/files/bf-354_dot_3_brake_fluid_12_oz_medium.jpg?v=1700503745",
+            "1700503745",
+            "0424",
+            "5433",
+            "lion",
+            "brake",
+            "fluid"
+          ],
+          "match_basis": "selling_site_match",
+          "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+          "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+          "match_score": 284
         }
       },
       {
@@ -36690,18 +37340,18 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_daraz_jubilee_hose_clip_assortment_30pc",
-            "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
-            "3011629985",
-            "645582306",
             "jubilee",
             "hose",
             "clip",
-            "assortment"
+            "assortment",
+            "fuel",
+            "line",
+            "diesel"
           ],
           "match_basis": "selling_site_match",
-          "listing_url": "https://www.daraz.pk/products/i645582306-s3011629985.html?urlFlag=true&mp=1",
+          "listing_url": "https://static-01.daraz.pk/p/ba3d027177170958c46096eff8c97f61.jpg",
           "image_url": "https://static-01.daraz.pk/p/ba3d027177170958c46096eff8c97f61.jpg",
-          "match_score": 288
+          "match_score": 248
         }
       },
       {
@@ -36783,25 +37433,25 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "ordered_pending_delivery",
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
-        "amount": "",
-        "amount_status": "missing",
+        "amount": "18999",
+        "amount_status": "confirmed",
         "currency": "PKR",
         "vendor": "Autohub",
         "supply_type": "part",
-        "evidence_ref": "user_seed|akber_khan-00803|akber_khan-00817|user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order",
-        "notes": "Listed by the user as still needed; later product research includes an Autohub remover link | User confirmed Autohub prep solvent ordered and paid on 2026-05-02. Exact invoice amount/order number still to be reconciled from receipt. Link: https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+        "evidence_ref": "user_seed|akber_khan-00803|akber_khan-00817|user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|gmail_msg_19de69d1f1e3d70a|gmail_order_1762192|autohub_order_62192",
+        "notes": "Autohub order 1762192 / order number 62192 confirmed 2026-05-02: 3M Prep Solvent - 70, 1 gal (08983) x1 at PKR 18999. Shared order also includes HB Body U900 cavity wax x2; order subtotal PKR 23997 plus PKR 249 shipping, total PKR 24246. Product link: https://autohub.pk/products/3m-prep-solvent-70-1-gallon ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
         "links": [
           {
             "url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
             "label": "autohub.pk"
           },
           {
-            "url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
-            "label": "multimedia.3m.com"
+            "url": "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+            "label": "cdn.shopify.com"
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/expenses_3m_prep_solvent_70_1_gallon_wax_and_grea_06ccd44e8c5f.webp",
+          "path": "../../deliverables/selling_site_images/images/expenses_3m_prep_solvent_70_1_gallon_wax_and_grea_aded33434823.webp",
           "caption": "3M Prep Solvent-70 1 gallon / wax and grease remover \u00b7 Autohub \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
@@ -36812,18 +37462,18 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_wax_and_grease_remover",
-            "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+            "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+            "1709701797",
+            "08983",
+            "0424",
+            "5433",
             "prep",
-            "solvent",
-            "gallon",
-            "wax",
-            "grease",
-            "remover"
+            "solvent"
           ],
           "match_basis": "selling_site_match",
-          "listing_url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
-          "image_url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
-          "match_score": 257
+          "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+          "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+          "match_score": 292
         }
       },
       {
@@ -36867,25 +37517,25 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "ordered_pending_delivery",
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
-        "amount": "",
-        "amount_status": "missing",
+        "amount": "4998",
+        "amount_status": "confirmed",
         "currency": "PKR",
         "vendor": "Autohub",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order",
-        "notes": "User confirmed Autohub cavity wax order paid on 2026-05-02. Recommended quantity was 2 spray cans; confirm invoice quantity and amount on receipt. Link: https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+        "evidence_ref": "user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|gmail_msg_19de69d1f1e3d70a|gmail_order_1762192|autohub_order_62192",
+        "notes": "Autohub order 1762192 / order number 62192 confirmed 2026-05-02: HB BODY - U900 CAVITY WAX SPRAY U900 - 400ML x2 at PKR 2499 each, line subtotal PKR 4998. Shared order also includes 3M Prep Solvent; order subtotal PKR 23997 plus PKR 249 shipping, total PKR 24246. Product link: https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
         "links": [
           {
             "url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
             "label": "autohub.pk"
           },
           {
-            "url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
-            "label": "autohub.pk"
+            "url": "https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
+            "label": "cdn.shopify.com"
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_24d52c190fc8.webp",
+          "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_2c3e3afb0459.webp",
           "caption": "HB Body U900 cavity wax spray 400ml \u00b7 Autohub \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
@@ -36896,18 +37546,18 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_cavity_wax",
-            "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+            "https://cdn.shopify.com/s/files/1/0424/5433/files/web-900spri-photoroom_1_medium.png?v=1731328302",
+            "1731328302",
+            "0424",
+            "5433",
             "body",
             "u900",
-            "cavity",
-            "wax",
-            "spray",
-            "400ml"
+            "cavity"
           ],
           "match_basis": "selling_site_match",
-          "listing_url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
-          "image_url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
-          "match_score": 263
+          "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
+          "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
+          "match_score": 284
         }
       },
       {
@@ -36918,16 +37568,16 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "ordered_pending_delivery",
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
-        "amount": "",
-        "amount_status": "missing",
+        "amount": "25550",
+        "amount_status": "confirmed",
         "currency": "PKR",
-        "vendor": "Daraz / ICI Industrial Coatings",
+        "vendor": "Daraz / MM PAINT",
         "supply_type": "part",
-        "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00800|akber_khan-00819|user_update_2026-05-02_zinc_rich_epoxy_primer_order",
-        "notes": "Listed by the user as still needed; chat ties primer to floor spot-weld work and later product research | User confirmed ordered and paid on 2026-05-02. Selected as the zinc-rich two-pack epoxy primer for blasted steel chassis; seller images show separate base and hardener tins. Confirm mix ratio, thinner, and recoat window on receipt. Link: https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+        "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00800|akber_khan-00819|user_update_2026-05-02_zinc_rich_epoxy_primer_order|gmail_msg_19de69fd6503ed45|gmail_order_242366749280938",
+        "notes": "Daraz order 242366749280938 confirmed 2026-05-02 from MM PAINT: ICI industrial coating Zinc Rich epoxy primer set - Zinc Rich primer set - ici industrial x1, product PKR 25000 plus PKR 550 shipping, total PKR 25550, paid by card. Delivery window 2026-05-07 to 2026-05-09. Selected as the zinc-rich two-pack epoxy primer for blasted steel chassis; seller images show separate base and hardener tins. Confirm mix ratio, thinner, and recoat window on receipt. Product link: https://www.daraz.pk/products/i556870547-s4006655573.html?urlFlag=true&mp=1 ; image: https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
         "links": [
           {
-            "url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+            "url": "https://www.daraz.pk/products/i556870547-s4006655573.html?urlFlag=true&mp=1",
             "label": "daraz.pk"
           },
           {
@@ -36937,7 +37587,7 @@ window.J40_DASHBOARD_DATA = {
         ],
         "image": {
           "path": "../../deliverables/selling_site_images/images/expenses_hi_build_zinc_rich_epoxy_primer_ec_11_tw_2b4211f7f73b.png",
-          "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 Daraz / ICI Industrial Coatings \u00b7 Selling Site Image",
+          "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 Daraz / MM PAINT \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -36947,18 +37597,52 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_primer",
-            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-            "556870547",
-            "zinc-rich",
+            "https://pk-live-21.slatic.net/kf/sb3943ecd4f6040c39d009641d24206143",
+            "24206143",
             "two-pack",
-            "build",
-            "zinc",
-            "rich"
+            "009641",
+            "3943",
+            "6040",
+            "build"
           ],
           "match_basis": "selling_site_match",
-          "listing_url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+          "listing_url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
           "image_url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
-          "match_score": 325
+          "match_score": 322
+        }
+      },
+      {
+        "entry_id": "part_fastener_kit_e_millat",
+        "workstream": "body_chassis",
+        "item": "Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "amount": "1880",
+        "amount_status": "confirmed",
+        "currency": "PKR",
+        "vendor": "MTL Parts",
+        "supply_type": "part",
+        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19dbc4673054004c|gmail_order_38902",
+        "notes": "Gmail MTL order #38902 confirms screw lines: SCREW M10 X20MM (163084 - 1163084) x20 PKR 320; SCREW M6X16 (133061 - 1133061) x60 PKR 300; SCREW M6 X 12MM (144035 - 1391074) x120 PKR 720, all 120 backordered; SCREW M8X16MM (163070 - 1163070) x60 PKR 540. Screw line subtotal PKR 1880; part of order #38902 total PKR 10291 including GST with other nuts, bolts, and washers. Payment follow-up sent 2026-04-24; delivery still pending. This MTL row does not cover stainless trim screws, self-tapping screws, countersunk screws, cup washers, or captive/clip nuts.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/clip_nuts.jpg",
+          "caption": "Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60 \u00b7 captive/clip nut reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "clip_nuts",
+          "matched_tokens": [
+            "clip",
+            "nuts"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
         }
       },
       {
@@ -36992,6 +37676,105 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "exact_order_evidence",
           "match_score": 999
+        }
+      },
+      {
+        "entry_id": "part_body_retaining_clips_cotter_pin_pack",
+        "workstream": "body_chassis",
+        "item": "Body retaining clip pack - R-clips hairpins split pins circlips and small cotters",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "local fastener / body hardware supplier",
+        "supply_type": "part",
+        "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+        "notes": "User-selected loose hardware photo shows small wire retaining clips, cotter-style pins, and spring retaining clips mixed with the screws. These are not covered by Millat orders 38902/38903 or the ordered screw/bolt/nut/washer rows. Photo estimate: 6-15 visible retaining clips/cotters, likely 10. Buy new zinc-plated or stainless assorted R-clips, hairpins, split pins, circlips/E-clips, and small cotters after sorting the old samples by pin diameter and installed location; do not reuse rusty retaining clips.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+          "caption": "Body retaining clip pack - R-clips hairpins split pins circlips and small cotters \u00b7 local inventory photo \u00b7 local fastener / body hardware supplier",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260503_153832_gp_0FJJiLHg",
+          "matched_tokens": [
+            "photo_20260503_153832_gp_0fjjilhg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "entry_id": "part_fastener_kit_c_captive_clip_nuts",
+        "workstream": "body_chassis",
+        "item": "Fastener Kit C: Captive/clip/speed nut and weld/rivnut assortment - M6/M8",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Bilal Ganj clip/captive/rivnut suppliers",
+        "supply_type": "part",
+        "evidence_ref": "20260503_153832_gp_0FJJiLHg|workbook_parts#row_227|user_update_2026-05-03_screw_photo_review|data/manual/fastener_photo_count_estimates.csv",
+        "notes": "User-selected loose fastener photo shows rusted captive/clip/speed nuts and old panel/body hardware that are not covered by Millat orders 38902/38903, which only cover loose metric screws, bolts, nuts, flat washers, lock washers, and plate spacers. Photo estimate: 22-40 visible captive/clip/speed nut and rivnut/weld-nut candidates, likely 30. Use new yellow-zinc or equivalent plated M6/M8 captive/clip/speed nuts, weld nuts, and rivnuts; do not reuse rusted spring clips or captive nuts. Workbook Kit C spec basis: M6 captive/clip nuts x120, M8 captive/clip nuts x60, weld nuts M6 x30, weld nuts M8 x20, rivnuts M6 steel x30, rivnuts M8 steel x20. Confirm final split against old samples before purchase.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+          "caption": "Fastener Kit C: Captive/clip/speed nut and weld/rivnut assortment - M6/M8 \u00b7 local inventory photo \u00b7 Bilal Ganj clip/captive/rivnut suppliers",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260503_153832_gp_0FJJiLHg",
+          "matched_tokens": [
+            "photo_20260503_153832_gp_0fjjilhg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "entry_id": "part_body_specialty_brackets_retainer_plates",
+        "workstream": "body_chassis",
+        "item": "Body specialty bracket and retainer plate repair/replacement pack",
+        "status": "planned",
+        "procurement_stage": "spec_needed_before_order",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "local body hardware fabricator / Bilal Ganj",
+        "supply_type": "part",
+        "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+        "notes": "User-selected loose hardware photo shows rusted rectangular bracket plates, slotted retainers, captive-nut plates, and bent link/strap brackets mixed with the fasteners. These are not supplied by the Millat screw/nut/washer orders. Photo estimate: 8-18 visible specialty bracket/retainer plates, likely 12. Sort by installed location and function, then refurbish only sound originals; buy or fabricate replacements for bent, thin, cracked, or captive-thread-damaged brackets using the old samples as templates.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+          "caption": "Body specialty bracket and retainer plate repair/replacement pack \u00b7 local inventory photo \u00b7 local body hardware fabricator / Bilal Ganj",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260503_153832_gp_0FJJiLHg",
+          "matched_tokens": [
+            "photo_20260503_153832_gp_0fjjilhg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
         }
       },
       {
@@ -37094,9 +37877,60 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "part_dot3_brake_fluid_autohub_6x354ml",
+        "workstream": "brake_system",
+        "item": "Lion Brake Fluid DOT-3 12oz/354ml x6",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "amount": "5349",
+        "amount_status": "confirmed",
+        "currency": "PKR",
+        "vendor": "Autohub",
+        "supply_type": "part",
+        "evidence_ref": "gmail_msg_19def26c095be6e3|gmail_order_1762228|autohub_order_62228|bank_alert_19def26f0ee43471",
+        "notes": "Autohub order 1762228 / order number 62228 confirmed 2026-05-03: Lion Brake Fluid DOT-3 (12oz./354ml) x6 at PKR 850 each, subtotal PKR 5100 plus PKR 249 shipping, total PKR 5349. This gives 2124 ml sealed fresh DOT 3, enough for the 2 L working target before hydraulic opening. Remaining caps/plugs, bleed hose/bottle, cleaner, rags, gloves, and catch tray stay open under part_brake_fluid_bleed_consumables. Product link: https://autohub.pk/products/lion-brake-fluid-dot-3-12oz ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+        "links": [
+          {
+            "url": "https://autohub.pk/products/lion-brake-fluid-dot-3-12oz",
+            "label": "autohub.pk"
+          },
+          {
+            "url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+            "label": "cdn.shopify.com"
+          }
+        ],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/expenses_lion_brake_fluid_dot_3_12oz_354ml_x6_0518a26e1a6c.webp",
+          "caption": "Lion Brake Fluid DOT-3 12oz/354ml x6 \u00b7 Autohub \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_dot3_brake_fluid_autohub_6x354ml",
+            "https://cdn.shopify.com/s/files/1/0424/5433/files/bf-354_dot_3_brake_fluid_12_oz_medium.jpg?v=1700503745",
+            "1700503745",
+            "0424",
+            "5433",
+            "lion",
+            "brake",
+            "fluid"
+          ],
+          "match_basis": "selling_site_match",
+          "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+          "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+          "match_score": 284
+        }
+      },
+      {
         "entry_id": "part_brake_fluid_bleed_consumables",
         "workstream": "brake_system",
-        "item": "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves",
+        "item": "Brake hydraulic opening prep remaining consumables - caps plugs bleed hose bottle cleaner rags gloves catch tray",
         "status": "planned",
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
@@ -37106,12 +37940,12 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "Autohub/Daraz/local brake supplier",
         "supply_type": "part",
-        "evidence_ref": "BR-SYS-002|BR-CAPTURE-001|docs/brake-suspension-order-links-20260503.md|docs/brake-parts-acquisition-spec-20260503.md|docs/brake-parts-pakistan-acquisition-20260503.md",
-        "notes": "PURCHASE READY for non-fitment consumables before opening hydraulics: sealed fresh DOT 3 brake fluid (SAE J1703 / FMVSS No. 116 DOT 3), working buy quantity 2 L sealed total unless the workshop specifies more, line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. User direction 2026-05-03 closes the brake-fluid DOT hold as DOT 3. Do not use DOT 5 and do not mix unknown old fluid. Candidate Pakistan purchase links and local order text are logged in docs/brake-parts-pakistan-acquisition-20260503.md.",
+        "evidence_ref": "data_brake_system_requirements|BR-SYS-002|BR-CAPTURE-001|part_dot3_brake_fluid_autohub_6x354ml",
+        "notes": "DOT 3 brake fluid is ordered separately under part_dot3_brake_fluid_autohub_6x354ml. Still purchase-ready before opening hydraulics: line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. Do not open lines until these remaining consumables plus the ordered sealed DOT 3 fluid are physically on hand.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
-          "caption": "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves \u00b7 brake line/hose reference image",
+          "caption": "Brake hydraulic opening prep remaining consumables - caps plugs bleed hose bottle cleaner rags gloves catch tray \u00b7 brake line/hose reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -37459,6 +38293,72 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "part_body_rubber_plastic_bumpers_isolators",
+        "workstream": "chassis_rubbers",
+        "item": "Body rubber/plastic bumpers isolators knobs and small spacers",
+        "status": "planned",
+        "procurement_stage": "spec_needed_before_order",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Bilal Ganj rubber/body trim supplier",
+        "supply_type": "part",
+        "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+        "notes": "User-selected loose hardware photo shows black and white rubber/plastic knobs, bumpers, pads, isolators, and small spacers that are not part of the Millat screw/nut/washer orders and are not covered by the body-mount rubber kit unless a sample proves a body-mount location. Photo estimate: 8-18 visible rubber/plastic pieces, likely 12. Sort by location, diameter, height, thread/stud size, and material hardness; buy new sample-matched replacements for failed or missing pieces and keep usable originals only as templates.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+          "caption": "Body rubber/plastic bumpers isolators knobs and small spacers \u00b7 local inventory photo \u00b7 Bilal Ganj rubber/body trim supplier",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260503_153832_gp_0FJJiLHg",
+          "matched_tokens": [
+            "photo_20260503_153832_gp_0fjjilhg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "entry_id": "part_body_shoulder_pins_sleeves_spacers",
+        "workstream": "chassis_rubbers",
+        "item": "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched",
+        "status": "planned",
+        "procurement_stage": "spec_needed_before_order",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "local fastener / machine shop supplier",
+        "supply_type": "part",
+        "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+        "notes": "User-selected loose hardware photo shows long shoulder/pivot-style bolts, cylindrical sleeves, stand-off spacers, and stepped pins that are not covered by Millat orders 38902/38903, which are loose metric screws, bolts, nuts, and washers only. Photo estimate: 10-24 visible shoulder/pivot bolts, sleeves, stand-offs, and stepped pins, likely 16. Measure shoulder diameter, threaded section, grip length, total length, head style, and installed location before purchase or machine-shop fabrication; do not substitute ordinary fully threaded bolts where a shoulder or sleeve controls alignment.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+          "caption": "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched \u00b7 local inventory photo \u00b7 local fastener / machine shop supplier",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260503_153832_gp_0FJJiLHg",
+          "matched_tokens": [
+            "photo_20260503_153832_gp_0fjjilhg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
         "entry_id": "part_body_mount_hardware_kit",
         "workstream": "chassis_rubbers",
         "item": "Body mount hardware kit bolts sleeves washers",
@@ -37694,7 +38594,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_cabin_compact_fuse_boxes",
         "workstream": "electrical_reset",
-        "item": "Compact covered cabin blade fuse boxes - likely 3 identical units",
+        "item": "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on",
         "status": "planned",
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
@@ -37702,14 +38602,14 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "Bilal Ganj / compact automotive electrical supplier",
+        "vendor": "Bilal Ganj / Montgomery Road compact OEM fuse donor supplier / OLX Mehran-Alto donor lead",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought",
-        "notes": "User correction 2026-05-03: cabin/interior car fuse boxes have not been ordered. Relay block row 55 remains received/as specified, but the generic Portable 12-Way universal fuse box row is not purchased stock. Buy likely 3 compact covered blade-fuse boxes for the car/cabin circuits; use compact OEM-style covered ATO/ATC blocks with secure lids and strong terminals, same model if possible. No relay block, no large open universal block, and do not count the Portable 12-Way wording as bought evidence. Confirm final cabin mounting envelope and circuit split before payment.",
+        "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought|user_reference_image_2026-05-03_compact_internal_fuse_box|user_front_rear_fuse_block_images_2026-05-04|docs/cabin-fuse-box-acquisition-20260503.md",
+        "notes": "User correction 2026-05-04: under-dash cabin fuse requirement remains three separate input groups, not physical-location boxes and not the MIDI/high-current side. Need 6 constant-battery fuses, 6 ignition-on/RUN fuses, and 6 ignition part-way/ACC fuses minimum. Current preferred plan is to reuse the existing compact 12-way donor block for two 6-fuse groups if rear-terminal continuity and condition checks pass, then buy one matching compact old-OEM fuse carrier for the third group. Add-on can be 6/8/10/12-way if six positions are usable; reject bulky marine/RV/universal covered blocks. Treat branch outputs as <=30A unless manufacturer marks higher. Candidate source/order text is logged in docs/cabin-fuse-box-acquisition-20260503.md.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/car_cover.jpg",
-          "caption": "Compact covered cabin blade fuse boxes - likely 3 identical units \u00b7 car cover reference image",
+          "caption": "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on \u00b7 car cover reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -37788,6 +38688,39 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_fastener_kit_e_trim_screws_cup_washers",
+        "workstream": "interior_weatherproofing",
+        "item": "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers",
+        "status": "planned",
+        "procurement_stage": "deferred_until_body_closed",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "local fastener / trim hardware supplier",
+        "supply_type": "part",
+        "evidence_ref": "20260503_153832_gp_0FJJiLHg|workbook_parts#row_229|user_update_2026-05-03_screw_photo_review|data/manual/fastener_photo_count_estimates.csv",
+        "notes": "User-selected loose fastener photo shows pointed sheet-metal/self-tapping screws, countersunk/slotted trim screws, and cup/finishing washer styles not covered by MTL order 38902. Photo estimate: 35-70 visible self-tapping/trim/countersunk screws and cup/finishing washers, likely 50. Buy only after panel/trim alignment and old-screw sorting confirm positions, head styles, lengths, and washer/cup needs. Non-structural only; use stainless or zinc-plated new hardware and do not reuse rusted old trim screws.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+          "caption": "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers \u00b7 local inventory photo \u00b7 local fastener / trim hardware supplier",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260503_153832_gp_0FJJiLHg",
+          "matched_tokens": [
+            "photo_20260503_153832_gp_0fjjilhg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
         }
       },
       {
@@ -37969,18 +38902,18 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_daraz_jubilee_hose_clip_assortment_30pc",
-            "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
-            "3011629985",
-            "645582306",
             "jubilee",
             "hose",
             "clip",
-            "assortment"
+            "assortment",
+            "fuel",
+            "line",
+            "diesel"
           ],
           "match_basis": "selling_site_match",
-          "listing_url": "https://www.daraz.pk/products/i645582306-s3011629985.html?urlFlag=true&mp=1",
+          "listing_url": "https://static-01.daraz.pk/p/ba3d027177170958c46096eff8c97f61.jpg",
           "image_url": "https://static-01.daraz.pk/p/ba3d027177170958c46096eff8c97f61.jpg",
-          "match_score": 288
+          "match_score": 248
         }
       },
       {
@@ -38422,7 +39355,7 @@ window.J40_DASHBOARD_DATA = {
     "open_counts_by_workstream": [
       {
         "workstream": "brake_system",
-        "open_count": 13,
+        "open_count": 14,
         "image": {
           "path": "../../photos/20260422_004356_gp_vTFgPfAQ_2.jpg",
           "caption": "Engine Bay Chassis Interface \u00b7 Underside Inspection \u00b7 2026-04-22",
@@ -38458,7 +39391,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "body_chassis",
-        "open_count": 5,
+        "open_count": 9,
         "image": {
           "path": "../../photos/20260405_234652.jpg",
           "caption": "Floor Seam And Body Mount Rust \u00b7 Rust Assessment \u00b7 2026-04-05",
@@ -38470,6 +39403,24 @@ window.J40_DASHBOARD_DATA = {
           "stage": "rust_assessment",
           "media_id": "20260405_234652",
           "matched_tokens": []
+        }
+      },
+      {
+        "workstream": "chassis_rubbers",
+        "open_count": 6,
+        "image": {
+          "path": "../../photos/20260405_234652.jpg",
+          "caption": "Floor Seam And Body Mount Rust \u00b7 Rust Assessment \u00b7 2026-04-05",
+          "captured_date": "2026-04-05",
+          "captured_time": "23:46:52",
+          "media_type": "photo",
+          "component_group": "body_floor",
+          "specific_component": "floor_seam_and_body_mount_rust",
+          "stage": "rust_assessment",
+          "media_id": "20260405_234652",
+          "matched_tokens": [
+            "20260405_234652"
+          ]
         }
       },
       {
@@ -38489,26 +39440,8 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "workstream": "chassis_rubbers",
-        "open_count": 4,
-        "image": {
-          "path": "../../photos/20260405_234652.jpg",
-          "caption": "Floor Seam And Body Mount Rust \u00b7 Rust Assessment \u00b7 2026-04-05",
-          "captured_date": "2026-04-05",
-          "captured_time": "23:46:52",
-          "media_type": "photo",
-          "component_group": "body_floor",
-          "specific_component": "floor_seam_and_body_mount_rust",
-          "stage": "rust_assessment",
-          "media_id": "20260405_234652",
-          "matched_tokens": [
-            "20260405_234652"
-          ]
-        }
-      },
-      {
         "workstream": "interior_weatherproofing",
-        "open_count": 3,
+        "open_count": 4,
         "image": null
       },
       {
@@ -38550,6 +39483,19 @@ window.J40_DASHBOARD_DATA = {
       }
     ],
     "procurement_evidence_images": [
+      {
+        "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+        "caption": "Mixed Fastener Hardware \u00b7 Procurement Reconciliation \u00b7 2026-05-03",
+        "captured_date": "2026-05-03",
+        "captured_time": "15:38:32",
+        "media_type": "photo",
+        "component_group": "procurement_inventory",
+        "specific_component": "mixed_fastener_hardware",
+        "stage": "procurement_reconciliation",
+        "media_id": "20260503_153832_gp_0FJJiLHg",
+        "matched_tokens": [],
+        "match_basis": "procurement_reconciliation"
+      },
       {
         "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
         "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -39366,19 +40312,6 @@ window.J40_DASHBOARD_DATA = {
         "specific_component": "wiring_harness_and_connectors",
         "stage": "procurement_reconciliation",
         "media_id": "20260410_181117_gp_VkazaU8g",
-        "matched_tokens": [],
-        "match_basis": "procurement_reconciliation"
-      },
-      {
-        "path": "../../photos/20260410_181110_gp_GeFF0hyg.jpg",
-        "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
-        "captured_date": "2026-04-10",
-        "captured_time": "18:11:10",
-        "media_type": "photo",
-        "component_group": "procurement_inventory",
-        "specific_component": "wiring_harness_and_connectors",
-        "stage": "procurement_reconciliation",
-        "media_id": "20260410_181110_gp_GeFF0hyg",
         "matched_tokens": [],
         "match_basis": "procurement_reconciliation"
       }
@@ -41095,11 +42028,11 @@ window.J40_DASHBOARD_DATA = {
   },
   "capture_tasks": {
     "summary": {
-      "total_tasks": 144,
-      "now_tasks": 133,
+      "total_tasks": 145,
+      "now_tasks": 134,
       "later_tasks": 11,
       "p0_tasks": 63,
-      "photo_tasks": 69,
+      "photo_tasks": 70,
       "measurement_tasks": 114
     },
     "counts_by_workstream": [
@@ -41128,16 +42061,16 @@ window.J40_DASHBOARD_DATA = {
         "count": 4
       },
       {
+        "workstream": "body_chassis",
+        "count": 3
+      },
+      {
         "workstream": "mechanical_baseline",
         "count": 3
       },
       {
         "workstream": "suspension_upgrade",
         "count": 3
-      },
-      {
-        "workstream": "body_chassis",
-        "count": 2
       },
       {
         "workstream": "eps_vitz_upgrade",
@@ -41163,7 +42096,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "task_type": "photo",
-        "count": 10
+        "count": 11
       },
       {
         "task_type": "data",
@@ -41185,7 +42118,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "priority": "P1",
-        "count": 72
+        "count": 73
       },
       {
         "priority": "P2",
@@ -43788,6 +44721,45 @@ window.J40_DASHBOARD_DATA = {
         "notes": "",
         "evidence_ref": "akber_khan-00798",
         "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
+        "task_id": "component_job:front_vent_window_assemblies",
+        "title": "front_vent_window_assemblies",
+        "workstream": "body_chassis",
+        "task_type": "photo",
+        "priority": "P1",
+        "timing": "now",
+        "status": "planned_separate_service",
+        "location": "home_storage_parts",
+        "action": "Treat as a WP02 sub-job: tag LH/RH assemblies, disassemble only enough to protect glass, clean/rust-treat/refinish metal channels and tabs, service pivots/latches/sliders, assess seals and glass, then bench water-test before refit",
+        "data_needed": "Photo shows paired vent/quarter window assemblies off the vehicle with old seals and rust at brackets/channels; hold replacement seal/glass buys until teardown confirms what is not reusable.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "front_vent_window_assemblies",
+        "notes": "",
+        "evidence_ref": "20260503_234035_front_vent_window_assemblies|user_attachment_2026-05-03",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260503_234035_front_vent_window_assemblies.png",
+            "caption": "Front Vent Window Assemblies \u00b7 Removed Parts Cataloguing \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "23:40:35",
+            "media_type": "photo",
+            "component_group": "windows",
+            "specific_component": "front_vent_window_assemblies",
+            "stage": "removed_parts_cataloguing",
+            "media_id": "20260503_234035_front_vent_window_assemblies",
+            "matched_tokens": []
+          }
+        ],
         "links": [
           {
             "url": "../../data/manual/component_jobs.csv",
@@ -47359,9 +48331,9 @@ window.J40_DASHBOARD_DATA = {
       {
         "supply_type": "part",
         "previously": 84,
-        "in_process": 8,
-        "still_required": 67,
-        "total": 159
+        "in_process": 10,
+        "still_required": 71,
+        "total": 165
       }
     ],
     "rows_by_status": {
@@ -52162,6 +53134,95 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "part_fastener_kit_e_millat",
+          "supply_type": "part",
+          "inventory_group": "parts",
+          "item": "Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60",
+          "vendor": "MTL Parts",
+          "amount": "1880",
+          "currency": "PKR",
+          "workstream": "body_chassis",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19dbc4673054004c|gmail_order_38902",
+          "notes": "Gmail MTL order #38902 confirms screw lines: SCREW M10 X20MM (163084 - 1163084) x20 PKR 320; SCREW M6X16 (133061 - 1133061) x60 PKR 300; SCREW M6 X 12MM (144035 - 1391074) x120 PKR 720, all 120 backordered; SCREW M8X16MM (163070 - 1163070) x60 PKR 540. Screw line subtotal PKR 1880; part of order #38902 total PKR 10291 including GST with other nuts, bolts, and washers. Payment follow-up sent 2026-04-24; delivery still pending. This MTL row does not cover stainless trim screws, self-tapping screws, countersunk screws, cup washers, or captive/clip nuts.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/clip_nuts.jpg",
+            "caption": "Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60 \u00b7 captive/clip nut reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "clip_nuts",
+            "matched_tokens": [
+              "clip",
+              "nuts"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_dot3_brake_fluid_autohub_6x354ml",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Lion Brake Fluid DOT-3 12oz/354ml x6",
+          "vendor": "Autohub",
+          "amount": "5349",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "gmail_msg_19def26c095be6e3|gmail_order_1762228|autohub_order_62228|bank_alert_19def26f0ee43471",
+          "notes": "Autohub order 1762228 / order number 62228 confirmed 2026-05-03: Lion Brake Fluid DOT-3 (12oz./354ml) x6 at PKR 850 each, subtotal PKR 5100 plus PKR 249 shipping, total PKR 5349. This gives 2124 ml sealed fresh DOT 3, enough for the 2 L working target before hydraulic opening. Remaining caps/plugs, bleed hose/bottle, cleaner, rags, gloves, and catch tray stay open under part_brake_fluid_bleed_consumables. Product link: https://autohub.pk/products/lion-brake-fluid-dot-3-12oz ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+          "links": [
+            {
+              "url": "https://autohub.pk/products/lion-brake-fluid-dot-3-12oz",
+              "label": "autohub.pk"
+            },
+            {
+              "url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+              "label": "cdn.shopify.com"
+            }
+          ],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/expenses_lion_brake_fluid_dot_3_12oz_354ml_x6_0518a26e1a6c.webp",
+            "caption": "Lion Brake Fluid DOT-3 12oz/354ml x6 \u00b7 Autohub \u00b7 Selling Site Image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "part_dot3_brake_fluid_autohub_6x354ml",
+              "https://cdn.shopify.com/s/files/1/0424/5433/files/bf-354_dot_3_brake_fluid_12_oz_medium.jpg?v=1700503745",
+              "1700503745",
+              "0424",
+              "5433",
+              "lion",
+              "brake",
+              "fluid"
+            ],
+            "match_basis": "selling_site_match",
+            "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+            "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+            "match_score": 284
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "part_fastener_kit_a_millat",
           "supply_type": "part",
           "inventory_group": "mechanical",
@@ -52312,18 +53373,18 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_daraz_jubilee_hose_clip_assortment_30pc",
-              "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
-              "3011629985",
-              "645582306",
               "jubilee",
               "hose",
               "clip",
-              "assortment"
+              "assortment",
+              "fuel",
+              "line",
+              "diesel"
             ],
             "match_basis": "selling_site_match",
-            "listing_url": "https://www.daraz.pk/products/i645582306-s3011629985.html?urlFlag=true&mp=1",
+            "listing_url": "https://static-01.daraz.pk/p/ba3d027177170958c46096eff8c97f61.jpg",
             "image_url": "https://static-01.daraz.pk/p/ba3d027177170958c46096eff8c97f61.jpg",
-            "match_score": 288
+            "match_score": 248
           }
         },
         {
@@ -52404,7 +53465,7 @@ window.J40_DASHBOARD_DATA = {
           "inventory_group": "substances",
           "item": "3M Prep Solvent-70 1 gallon / wax and grease remover",
           "vendor": "Autohub",
-          "amount": "",
+          "amount": "18999",
           "currency": "PKR",
           "workstream": "body_chassis",
           "status_group": "in_process",
@@ -52412,20 +53473,20 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "ordered_pending_delivery",
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
-          "evidence_ref": "user_seed|akber_khan-00803|akber_khan-00817|user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order",
-          "notes": "Listed by the user as still needed; later product research includes an Autohub remover link | User confirmed Autohub prep solvent ordered and paid on 2026-05-02. Exact invoice amount/order number still to be reconciled from receipt. Link: https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+          "evidence_ref": "user_seed|akber_khan-00803|akber_khan-00817|user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|gmail_msg_19de69d1f1e3d70a|gmail_order_1762192|autohub_order_62192",
+          "notes": "Autohub order 1762192 / order number 62192 confirmed 2026-05-02: 3M Prep Solvent - 70, 1 gal (08983) x1 at PKR 18999. Shared order also includes HB Body U900 cavity wax x2; order subtotal PKR 23997 plus PKR 249 shipping, total PKR 24246. Product link: https://autohub.pk/products/3m-prep-solvent-70-1-gallon ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
           "links": [
             {
               "url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
               "label": "autohub.pk"
             },
             {
-              "url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
-              "label": "multimedia.3m.com"
+              "url": "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+              "label": "cdn.shopify.com"
             }
           ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/expenses_3m_prep_solvent_70_1_gallon_wax_and_grea_06ccd44e8c5f.webp",
+            "path": "../../deliverables/selling_site_images/images/expenses_3m_prep_solvent_70_1_gallon_wax_and_grea_aded33434823.webp",
             "caption": "3M Prep Solvent-70 1 gallon / wax and grease remover \u00b7 Autohub \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
@@ -52436,18 +53497,18 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_wax_and_grease_remover",
-              "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+              "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+              "1709701797",
+              "08983",
+              "0424",
+              "5433",
               "prep",
-              "solvent",
-              "gallon",
-              "wax",
-              "grease",
-              "remover"
+              "solvent"
             ],
             "match_basis": "selling_site_match",
-            "listing_url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
-            "image_url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
-            "match_score": 257
+            "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+            "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+            "match_score": 292
           }
         },
         {
@@ -52457,7 +53518,7 @@ window.J40_DASHBOARD_DATA = {
           "inventory_group": "substances",
           "item": "HB Body U900 cavity wax spray 400ml",
           "vendor": "Autohub",
-          "amount": "",
+          "amount": "4998",
           "currency": "PKR",
           "workstream": "body_chassis",
           "status_group": "in_process",
@@ -52465,20 +53526,20 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "ordered_pending_delivery",
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
-          "evidence_ref": "user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order",
-          "notes": "User confirmed Autohub cavity wax order paid on 2026-05-02. Recommended quantity was 2 spray cans; confirm invoice quantity and amount on receipt. Link: https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+          "evidence_ref": "user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|gmail_msg_19de69d1f1e3d70a|gmail_order_1762192|autohub_order_62192",
+          "notes": "Autohub order 1762192 / order number 62192 confirmed 2026-05-02: HB BODY - U900 CAVITY WAX SPRAY U900 - 400ML x2 at PKR 2499 each, line subtotal PKR 4998. Shared order also includes 3M Prep Solvent; order subtotal PKR 23997 plus PKR 249 shipping, total PKR 24246. Product link: https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
           "links": [
             {
               "url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
               "label": "autohub.pk"
             },
             {
-              "url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
-              "label": "autohub.pk"
+              "url": "https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
+              "label": "cdn.shopify.com"
             }
           ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_24d52c190fc8.webp",
+            "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_2c3e3afb0459.webp",
             "caption": "HB Body U900 cavity wax spray 400ml \u00b7 Autohub \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
@@ -52489,18 +53550,18 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_cavity_wax",
-              "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+              "https://cdn.shopify.com/s/files/1/0424/5433/files/web-900spri-photoroom_1_medium.png?v=1731328302",
+              "1731328302",
+              "0424",
+              "5433",
               "body",
               "u900",
-              "cavity",
-              "wax",
-              "spray",
-              "400ml"
+              "cavity"
             ],
             "match_basis": "selling_site_match",
-            "listing_url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
-            "image_url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
-            "match_score": 263
+            "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
+            "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
+            "match_score": 284
           }
         },
         {
@@ -52509,8 +53570,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "substance",
           "inventory_group": "substances",
           "item": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set",
-          "vendor": "Daraz / ICI Industrial Coatings",
-          "amount": "",
+          "vendor": "Daraz / MM PAINT",
+          "amount": "25550",
           "currency": "PKR",
           "workstream": "body_chassis",
           "status_group": "in_process",
@@ -52518,11 +53579,11 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "ordered_pending_delivery",
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
-          "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00800|akber_khan-00819|user_update_2026-05-02_zinc_rich_epoxy_primer_order",
-          "notes": "Listed by the user as still needed; chat ties primer to floor spot-weld work and later product research | User confirmed ordered and paid on 2026-05-02. Selected as the zinc-rich two-pack epoxy primer for blasted steel chassis; seller images show separate base and hardener tins. Confirm mix ratio, thinner, and recoat window on receipt. Link: https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+          "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00800|akber_khan-00819|user_update_2026-05-02_zinc_rich_epoxy_primer_order|gmail_msg_19de69fd6503ed45|gmail_order_242366749280938",
+          "notes": "Daraz order 242366749280938 confirmed 2026-05-02 from MM PAINT: ICI industrial coating Zinc Rich epoxy primer set - Zinc Rich primer set - ici industrial x1, product PKR 25000 plus PKR 550 shipping, total PKR 25550, paid by card. Delivery window 2026-05-07 to 2026-05-09. Selected as the zinc-rich two-pack epoxy primer for blasted steel chassis; seller images show separate base and hardener tins. Confirm mix ratio, thinner, and recoat window on receipt. Product link: https://www.daraz.pk/products/i556870547-s4006655573.html?urlFlag=true&mp=1 ; image: https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
           "links": [
             {
-              "url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+              "url": "https://www.daraz.pk/products/i556870547-s4006655573.html?urlFlag=true&mp=1",
               "label": "daraz.pk"
             },
             {
@@ -52532,7 +53593,7 @@ window.J40_DASHBOARD_DATA = {
           ],
           "image": {
             "path": "../../deliverables/selling_site_images/images/expenses_hi_build_zinc_rich_epoxy_primer_ec_11_tw_2b4211f7f73b.png",
-            "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 Daraz / ICI Industrial Coatings \u00b7 Selling Site Image",
+            "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 Daraz / MM PAINT \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -52542,18 +53603,18 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "part_primer",
-              "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-              "556870547",
-              "zinc-rich",
+              "https://pk-live-21.slatic.net/kf/sb3943ecd4f6040c39d009641d24206143",
+              "24206143",
               "two-pack",
-              "build",
-              "zinc",
-              "rich"
+              "009641",
+              "3943",
+              "6040",
+              "build"
             ],
             "match_basis": "selling_site_match",
-            "listing_url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+            "listing_url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
             "image_url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
-            "match_score": 325
+            "match_score": 322
           }
         },
         {
@@ -52860,18 +53921,18 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "tool_daraz_mini_wire_brush_set_x2",
-              "https://www.daraz.pk/products/i192752152-s1385484991.html?urlflag=true&mp=1",
-              "1385484991",
-              "192752152",
               "mini",
               "wire",
               "brush",
-              "brass"
+              "brass",
+              "nylon",
+              "stainless",
+              "steel"
             ],
             "match_basis": "selling_site_match",
-            "listing_url": "https://www.daraz.pk/products/i192752152-s1385484991.html?urlFlag=true&mp=1",
+            "listing_url": "https://static-01.daraz.pk/p/95852a2f111310f28a07fca1c54fe1e8.jpg",
             "image_url": "https://static-01.daraz.pk/p/95852a2f111310f28a07fca1c54fe1e8.jpg",
-            "match_score": 288
+            "match_score": 248
           }
         },
         {
@@ -53251,18 +54312,18 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "",
             "matched_tokens": [
               "tool_daraz_safety_goggles_cleanup",
-              "https://www.daraz.pk/products/i649346371-s3029400460.html?urlflag=true&mp=1",
-              "3029400460",
-              "649346371",
               "safety",
               "goggles",
               "protective",
-              "glasses"
+              "glasses",
+              "grinding",
+              "cleaning",
+              "daraz"
             ],
             "match_basis": "selling_site_match",
-            "listing_url": "https://www.daraz.pk/products/i649346371-s3029400460.html?urlFlag=true&mp=1",
+            "listing_url": "https://static-01.daraz.pk/p/6988bc488aa6f8214912cc5a51ec3f92.png",
             "image_url": "https://static-01.daraz.pk/p/6988bc488aa6f8214912cc5a51ec3f92.png",
-            "match_score": 291
+            "match_score": 251
           }
         },
         {
@@ -53840,76 +54901,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "ac_compressor",
             "matched_tokens": [
               "compressor"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_227",
-          "supply_type": "part",
-          "inventory_group": "parts",
-          "item": "Fastener Kit C: Captive nuts/clip nuts assortment - M6/M8 with anti-corrosion finish",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "No",
-          "evidence_ref": "",
-          "notes": "Spec qty baseline: M6 captive/clip nuts x120, M8 captive/clip nuts x60, weld nuts M6 x30, weld nuts M8 x20, rivnuts M6 steel x30, rivnuts M8 steel x20. Prefer yellow-zinc or equivalent corrosion-resistant finish. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: prioritize as low-risk, locally available buy-first item. | Price basis 2026-04-15: Kit C captive/clip/weld nut + rivnut assortment. | Age/condition rule: NEW_ONLY plated captive/clip/rivnut hardware.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
-            "caption": "Fastener Kit C: Captive nuts/clip nuts assortment - M6/M8 with anti-corrosion finish \u00b7 fastener kit reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "graded_fasteners",
-            "matched_tokens": [
-              "fastener"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_229",
-          "supply_type": "part",
-          "inventory_group": "parts",
-          "item": "Fastener Kit E: Stainless interior/trim screw set (non-structural) + cup washers",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "No",
-          "evidence_ref": "",
-          "notes": "Non-structural finishing hardware; buy after final panel alignment.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
-            "caption": "Fastener Kit E: Stainless interior/trim screw set (non-structural) + cup washers \u00b7 fastener kit reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "graded_fasteners",
-            "matched_tokens": [
-              "fastener"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -54745,6 +55736,111 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "part_body_retaining_clips_cotter_pin_pack",
+          "supply_type": "part",
+          "inventory_group": "electrical",
+          "item": "Body retaining clip pack - R-clips hairpins split pins circlips and small cotters",
+          "vendor": "local fastener / body hardware supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "body_chassis",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+          "notes": "User-selected loose hardware photo shows small wire retaining clips, cotter-style pins, and spring retaining clips mixed with the screws. These are not covered by Millat orders 38902/38903 or the ordered screw/bolt/nut/washer rows. Photo estimate: 6-15 visible retaining clips/cotters, likely 10. Buy new zinc-plated or stainless assorted R-clips, hairpins, split pins, circlips/E-clips, and small cotters after sorting the old samples by pin diameter and installed location; do not reuse rusty retaining clips.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+            "caption": "Body retaining clip pack - R-clips hairpins split pins circlips and small cotters \u00b7 local inventory photo \u00b7 local fastener / body hardware supplier",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260503_153832_gp_0FJJiLHg",
+            "matched_tokens": [
+              "photo_20260503_153832_gp_0fjjilhg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_body_specialty_brackets_retainer_plates",
+          "supply_type": "part",
+          "inventory_group": "parts",
+          "item": "Body specialty bracket and retainer plate repair/replacement pack",
+          "vendor": "local body hardware fabricator / Bilal Ganj",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "body_chassis",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "spec_needed_before_order",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+          "notes": "User-selected loose hardware photo shows rusted rectangular bracket plates, slotted retainers, captive-nut plates, and bent link/strap brackets mixed with the fasteners. These are not supplied by the Millat screw/nut/washer orders. Photo estimate: 8-18 visible specialty bracket/retainer plates, likely 12. Sort by installed location and function, then refurbish only sound originals; buy or fabricate replacements for bent, thin, cracked, or captive-thread-damaged brackets using the old samples as templates.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+            "caption": "Body specialty bracket and retainer plate repair/replacement pack \u00b7 local inventory photo \u00b7 local body hardware fabricator / Bilal Ganj",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260503_153832_gp_0FJJiLHg",
+            "matched_tokens": [
+              "photo_20260503_153832_gp_0fjjilhg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_fastener_kit_c_captive_clip_nuts",
+          "supply_type": "part",
+          "inventory_group": "parts",
+          "item": "Fastener Kit C: Captive/clip/speed nut and weld/rivnut assortment - M6/M8",
+          "vendor": "Bilal Ganj clip/captive/rivnut suppliers",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "body_chassis",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "20260503_153832_gp_0FJJiLHg|workbook_parts#row_227|user_update_2026-05-03_screw_photo_review|data/manual/fastener_photo_count_estimates.csv",
+          "notes": "User-selected loose fastener photo shows rusted captive/clip/speed nuts and old panel/body hardware that are not covered by Millat orders 38902/38903, which only cover loose metric screws, bolts, nuts, flat washers, lock washers, and plate spacers. Photo estimate: 22-40 visible captive/clip/speed nut and rivnut/weld-nut candidates, likely 30. Use new yellow-zinc or equivalent plated M6/M8 captive/clip/speed nuts, weld nuts, and rivnuts; do not reuse rusted spring clips or captive nuts. Workbook Kit C spec basis: M6 captive/clip nuts x120, M8 captive/clip nuts x60, weld nuts M6 x30, weld nuts M8 x20, rivnuts M6 steel x30, rivnuts M8 steel x20. Confirm final split against old samples before purchase.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+            "caption": "Fastener Kit C: Captive/clip/speed nut and weld/rivnut assortment - M6/M8 \u00b7 local inventory photo \u00b7 Bilal Ganj clip/captive/rivnut suppliers",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260503_153832_gp_0FJJiLHg",
+            "matched_tokens": [
+              "photo_20260503_153832_gp_0fjjilhg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "part_brake_master_reservoir_refresh",
           "supply_type": "part",
           "inventory_group": "mechanical",
@@ -55201,6 +56297,76 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "part_body_rubber_plastic_bumpers_isolators",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Body rubber/plastic bumpers isolators knobs and small spacers",
+          "vendor": "Bilal Ganj rubber/body trim supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "chassis_rubbers",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "spec_needed_before_order",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+          "notes": "User-selected loose hardware photo shows black and white rubber/plastic knobs, bumpers, pads, isolators, and small spacers that are not part of the Millat screw/nut/washer orders and are not covered by the body-mount rubber kit unless a sample proves a body-mount location. Photo estimate: 8-18 visible rubber/plastic pieces, likely 12. Sort by location, diameter, height, thread/stud size, and material hardness; buy new sample-matched replacements for failed or missing pieces and keep usable originals only as templates.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+            "caption": "Body rubber/plastic bumpers isolators knobs and small spacers \u00b7 local inventory photo \u00b7 Bilal Ganj rubber/body trim supplier",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260503_153832_gp_0FJJiLHg",
+            "matched_tokens": [
+              "photo_20260503_153832_gp_0fjjilhg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_body_shoulder_pins_sleeves_spacers",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched",
+          "vendor": "local fastener / machine shop supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "chassis_rubbers",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "spec_needed_before_order",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+          "notes": "User-selected loose hardware photo shows long shoulder/pivot-style bolts, cylindrical sleeves, stand-off spacers, and stepped pins that are not covered by Millat orders 38902/38903, which are loose metric screws, bolts, nuts, and washers only. Photo estimate: 10-24 visible shoulder/pivot bolts, sleeves, stand-offs, and stepped pins, likely 16. Measure shoulder diameter, threaded section, grip length, total length, head style, and installed location before purchase or machine-shop fabrication; do not substitute ordinary fully threaded bolts where a shoulder or sleeve controls alignment.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+            "caption": "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched \u00b7 local inventory photo \u00b7 local fastener / machine shop supplier",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260503_153832_gp_0FJJiLHg",
+            "matched_tokens": [
+              "photo_20260503_153832_gp_0fjjilhg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "part_body_mount_rubber_kit",
           "supply_type": "part",
           "inventory_group": "mechanical",
@@ -55310,8 +56476,8 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_cabin_compact_fuse_boxes",
           "supply_type": "part",
           "inventory_group": "electrical",
-          "item": "Compact covered cabin blade fuse boxes - likely 3 identical units",
-          "vendor": "Bilal Ganj / compact automotive electrical supplier",
+          "item": "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on",
+          "vendor": "Bilal Ganj / Montgomery Road compact OEM fuse donor supplier / OLX Mehran-Alto donor lead",
           "amount": "",
           "currency": "PKR",
           "workstream": "electrical_reset",
@@ -55320,12 +56486,12 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought",
-          "notes": "User correction 2026-05-03: cabin/interior car fuse boxes have not been ordered. Relay block row 55 remains received/as specified, but the generic Portable 12-Way universal fuse box row is not purchased stock. Buy likely 3 compact covered blade-fuse boxes for the car/cabin circuits; use compact OEM-style covered ATO/ATC blocks with secure lids and strong terminals, same model if possible. No relay block, no large open universal block, and do not count the Portable 12-Way wording as bought evidence. Confirm final cabin mounting envelope and circuit split before payment.",
+          "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought|user_reference_image_2026-05-03_compact_internal_fuse_box|user_front_rear_fuse_block_images_2026-05-04|docs/cabin-fuse-box-acquisition-20260503.md",
+          "notes": "User correction 2026-05-04: under-dash cabin fuse requirement remains three separate input groups, not physical-location boxes and not the MIDI/high-current side. Need 6 constant-battery fuses, 6 ignition-on/RUN fuses, and 6 ignition part-way/ACC fuses minimum. Current preferred plan is to reuse the existing compact 12-way donor block for two 6-fuse groups if rear-terminal continuity and condition checks pass, then buy one matching compact old-OEM fuse carrier for the third group. Add-on can be 6/8/10/12-way if six positions are usable; reject bulky marine/RV/universal covered blocks. Treat branch outputs as <=30A unless manufacturer marks higher. Candidate source/order text is logged in docs/cabin-fuse-box-acquisition-20260503.md.",
           "links": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/car_cover.jpg",
-            "caption": "Compact covered cabin blade fuse boxes - likely 3 identical units \u00b7 car cover reference image",
+            "caption": "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on \u00b7 car cover reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -55408,6 +56574,41 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_fastener_kit_e_trim_screws_cup_washers",
+          "supply_type": "part",
+          "inventory_group": "parts",
+          "item": "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers",
+          "vendor": "local fastener / trim hardware supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "interior_weatherproofing",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "deferred_until_body_closed",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "20260503_153832_gp_0FJJiLHg|workbook_parts#row_229|user_update_2026-05-03_screw_photo_review|data/manual/fastener_photo_count_estimates.csv",
+          "notes": "User-selected loose fastener photo shows pointed sheet-metal/self-tapping screws, countersunk/slotted trim screws, and cup/finishing washer styles not covered by MTL order 38902. Photo estimate: 35-70 visible self-tapping/trim/countersunk screws and cup/finishing washers, likely 50. Buy only after panel/trim alignment and old-screw sorting confirm positions, head styles, lengths, and washer/cup needs. Non-structural only; use stainless or zinc-plated new hardware and do not reuse rusted old trim screws.",
+          "links": [],
+          "image": {
+            "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+            "caption": "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers \u00b7 local inventory photo \u00b7 local fastener / trim hardware supplier",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260503_153832_gp_0FJJiLHg",
+            "matched_tokens": [
+              "photo_20260503_153832_gp_0fjjilhg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
           }
         },
         {
@@ -55912,7 +57113,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_brake_fluid_bleed_consumables",
           "supply_type": "substance",
           "inventory_group": "substances",
-          "item": "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves",
+          "item": "Brake hydraulic opening prep remaining consumables - caps plugs bleed hose bottle cleaner rags gloves catch tray",
           "vendor": "Autohub/Daraz/local brake supplier",
           "amount": "",
           "currency": "PKR",
@@ -55922,12 +57123,12 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-SYS-002|BR-CAPTURE-001|docs/brake-suspension-order-links-20260503.md|docs/brake-parts-acquisition-spec-20260503.md|docs/brake-parts-pakistan-acquisition-20260503.md",
-          "notes": "PURCHASE READY for non-fitment consumables before opening hydraulics: sealed fresh DOT 3 brake fluid (SAE J1703 / FMVSS No. 116 DOT 3), working buy quantity 2 L sealed total unless the workshop specifies more, line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. User direction 2026-05-03 closes the brake-fluid DOT hold as DOT 3. Do not use DOT 5 and do not mix unknown old fluid. Candidate Pakistan purchase links and local order text are logged in docs/brake-parts-pakistan-acquisition-20260503.md.",
+          "evidence_ref": "data_brake_system_requirements|BR-SYS-002|BR-CAPTURE-001|part_dot3_brake_fluid_autohub_6x354ml",
+          "notes": "DOT 3 brake fluid is ordered separately under part_dot3_brake_fluid_autohub_6x354ml. Still purchase-ready before opening hydraulics: line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. Do not open lines until these remaining consumables plus the ordered sealed DOT 3 fluid are physically on hand.",
           "links": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
-            "caption": "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves \u00b7 brake line/hose reference image",
+            "caption": "Brake hydraulic opening prep remaining consumables - caps plugs bleed hose bottle cleaner rags gloves catch tray \u00b7 brake line/hose reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -56459,18 +57660,71 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_daraz_jubilee_hose_clip_assortment_30pc",
-            "https://www.daraz.pk/products/i645582306-s3011629985.html?urlflag=true&mp=1",
-            "3011629985",
-            "645582306",
             "jubilee",
             "hose",
             "clip",
-            "assortment"
+            "assortment",
+            "fuel",
+            "line",
+            "diesel"
           ],
           "match_basis": "selling_site_match",
-          "listing_url": "https://www.daraz.pk/products/i645582306-s3011629985.html?urlFlag=true&mp=1",
+          "listing_url": "https://static-01.daraz.pk/p/ba3d027177170958c46096eff8c97f61.jpg",
           "image_url": "https://static-01.daraz.pk/p/ba3d027177170958c46096eff8c97f61.jpg",
-          "match_score": 288
+          "match_score": 248
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_dot3_brake_fluid_autohub_6x354ml",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Lion Brake Fluid DOT-3 12oz/354ml x6",
+        "vendor": "Autohub",
+        "amount": "5349",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "gmail_msg_19def26c095be6e3|gmail_order_1762228|autohub_order_62228|bank_alert_19def26f0ee43471",
+        "notes": "Autohub order 1762228 / order number 62228 confirmed 2026-05-03: Lion Brake Fluid DOT-3 (12oz./354ml) x6 at PKR 850 each, subtotal PKR 5100 plus PKR 249 shipping, total PKR 5349. This gives 2124 ml sealed fresh DOT 3, enough for the 2 L working target before hydraulic opening. Remaining caps/plugs, bleed hose/bottle, cleaner, rags, gloves, and catch tray stay open under part_brake_fluid_bleed_consumables. Product link: https://autohub.pk/products/lion-brake-fluid-dot-3-12oz ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+        "links": [
+          {
+            "url": "https://autohub.pk/products/lion-brake-fluid-dot-3-12oz",
+            "label": "autohub.pk"
+          },
+          {
+            "url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+            "label": "cdn.shopify.com"
+          }
+        ],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/expenses_lion_brake_fluid_dot_3_12oz_354ml_x6_0518a26e1a6c.webp",
+          "caption": "Lion Brake Fluid DOT-3 12oz/354ml x6 \u00b7 Autohub \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_dot3_brake_fluid_autohub_6x354ml",
+            "https://cdn.shopify.com/s/files/1/0424/5433/files/bf-354_dot_3_brake_fluid_12_oz_medium.jpg?v=1700503745",
+            "1700503745",
+            "0424",
+            "5433",
+            "lion",
+            "brake",
+            "fluid"
+          ],
+          "match_basis": "selling_site_match",
+          "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+          "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+          "match_score": 284
         }
       },
       {
@@ -56503,6 +57757,42 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "graded_fasteners",
           "matched_tokens": [
             "fastener"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_fastener_kit_e_millat",
+        "supply_type": "part",
+        "inventory_group": "parts",
+        "item": "Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60",
+        "vendor": "MTL Parts",
+        "amount": "1880",
+        "currency": "PKR",
+        "workstream": "body_chassis",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19dbc4673054004c|gmail_order_38902",
+        "notes": "Gmail MTL order #38902 confirms screw lines: SCREW M10 X20MM (163084 - 1163084) x20 PKR 320; SCREW M6X16 (133061 - 1133061) x60 PKR 300; SCREW M6 X 12MM (144035 - 1391074) x120 PKR 720, all 120 backordered; SCREW M8X16MM (163070 - 1163070) x60 PKR 540. Screw line subtotal PKR 1880; part of order #38902 total PKR 10291 including GST with other nuts, bolts, and washers. Payment follow-up sent 2026-04-24; delivery still pending. This MTL row does not cover stainless trim screws, self-tapping screws, countersunk screws, cup washers, or captive/clip nuts.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/clip_nuts.jpg",
+          "caption": "Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60 \u00b7 captive/clip nut reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "clip_nuts",
+          "matched_tokens": [
+            "clip",
+            "nuts"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -56550,7 +57840,7 @@ window.J40_DASHBOARD_DATA = {
         "inventory_group": "substances",
         "item": "3M Prep Solvent-70 1 gallon / wax and grease remover",
         "vendor": "Autohub",
-        "amount": "",
+        "amount": "18999",
         "currency": "PKR",
         "workstream": "body_chassis",
         "status_group": "in_process",
@@ -56558,20 +57848,20 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "ordered_pending_delivery",
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
-        "evidence_ref": "user_seed|akber_khan-00803|akber_khan-00817|user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order",
-        "notes": "Listed by the user as still needed; later product research includes an Autohub remover link | User confirmed Autohub prep solvent ordered and paid on 2026-05-02. Exact invoice amount/order number still to be reconciled from receipt. Link: https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+        "evidence_ref": "user_seed|akber_khan-00803|akber_khan-00817|user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|gmail_msg_19de69d1f1e3d70a|gmail_order_1762192|autohub_order_62192",
+        "notes": "Autohub order 1762192 / order number 62192 confirmed 2026-05-02: 3M Prep Solvent - 70, 1 gal (08983) x1 at PKR 18999. Shared order also includes HB Body U900 cavity wax x2; order subtotal PKR 23997 plus PKR 249 shipping, total PKR 24246. Product link: https://autohub.pk/products/3m-prep-solvent-70-1-gallon ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
         "links": [
           {
             "url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
             "label": "autohub.pk"
           },
           {
-            "url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
-            "label": "multimedia.3m.com"
+            "url": "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+            "label": "cdn.shopify.com"
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/expenses_3m_prep_solvent_70_1_gallon_wax_and_grea_06ccd44e8c5f.webp",
+          "path": "../../deliverables/selling_site_images/images/expenses_3m_prep_solvent_70_1_gallon_wax_and_grea_aded33434823.webp",
           "caption": "3M Prep Solvent-70 1 gallon / wax and grease remover \u00b7 Autohub \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
@@ -56582,18 +57872,18 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_wax_and_grease_remover",
-            "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
+            "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+            "1709701797",
+            "08983",
+            "0424",
+            "5433",
             "prep",
-            "solvent",
-            "gallon",
-            "wax",
-            "grease",
-            "remover"
+            "solvent"
           ],
           "match_basis": "selling_site_match",
-          "listing_url": "https://autohub.pk/products/3m-prep-solvent-70-1-gallon",
-          "image_url": "http://multimedia.3m.com/mws/media/82753P/3mtm-prep-solvent-70-pn-08983.jpg",
-          "match_score": 257
+          "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+          "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+          "match_score": 292
         }
       },
       {
@@ -56603,7 +57893,7 @@ window.J40_DASHBOARD_DATA = {
         "inventory_group": "substances",
         "item": "HB Body U900 cavity wax spray 400ml",
         "vendor": "Autohub",
-        "amount": "",
+        "amount": "4998",
         "currency": "PKR",
         "workstream": "body_chassis",
         "status_group": "in_process",
@@ -56611,20 +57901,20 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "ordered_pending_delivery",
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
-        "evidence_ref": "user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order",
-        "notes": "User confirmed Autohub cavity wax order paid on 2026-05-02. Recommended quantity was 2 spray cans; confirm invoice quantity and amount on receipt. Link: https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+        "evidence_ref": "user_update_2026-05-02_autohub_prep_solvent_cavity_wax_order|gmail_msg_19de69d1f1e3d70a|gmail_order_1762192|autohub_order_62192",
+        "notes": "Autohub order 1762192 / order number 62192 confirmed 2026-05-02: HB BODY - U900 CAVITY WAX SPRAY U900 - 400ML x2 at PKR 2499 each, line subtotal PKR 4998. Shared order also includes 3M Prep Solvent; order subtotal PKR 23997 plus PKR 249 shipping, total PKR 24246. Product link: https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml ; image: https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
         "links": [
           {
             "url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
             "label": "autohub.pk"
           },
           {
-            "url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
-            "label": "autohub.pk"
+            "url": "https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
+            "label": "cdn.shopify.com"
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_24d52c190fc8.webp",
+          "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_2c3e3afb0459.webp",
           "caption": "HB Body U900 cavity wax spray 400ml \u00b7 Autohub \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
@@ -56635,18 +57925,18 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_cavity_wax",
-            "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
+            "https://cdn.shopify.com/s/files/1/0424/5433/files/web-900spri-photoroom_1_medium.png?v=1731328302",
+            "1731328302",
+            "0424",
+            "5433",
             "body",
             "u900",
-            "cavity",
-            "wax",
-            "spray",
-            "400ml"
+            "cavity"
           ],
           "match_basis": "selling_site_match",
-          "listing_url": "https://autohub.pk/products/hb-body-u900-cavity-wax-spray-u900-400ml",
-          "image_url": "https://autohub.pk/cdn/shop/products/x2020_3pkmicrofiber_peg_large.png?v=1579552582",
-          "match_score": 263
+          "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
+          "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
+          "match_score": 284
         }
       },
       {
@@ -56655,8 +57945,8 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "substance",
         "inventory_group": "substances",
         "item": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set",
-        "vendor": "Daraz / ICI Industrial Coatings",
-        "amount": "",
+        "vendor": "Daraz / MM PAINT",
+        "amount": "25550",
         "currency": "PKR",
         "workstream": "body_chassis",
         "status_group": "in_process",
@@ -56664,11 +57954,11 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "ordered_pending_delivery",
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
-        "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00800|akber_khan-00819|user_update_2026-05-02_zinc_rich_epoxy_primer_order",
-        "notes": "Listed by the user as still needed; chat ties primer to floor spot-weld work and later product research | User confirmed ordered and paid on 2026-05-02. Selected as the zinc-rich two-pack epoxy primer for blasted steel chassis; seller images show separate base and hardener tins. Confirm mix ratio, thinner, and recoat window on receipt. Link: https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+        "evidence_ref": "user_seed|akber_khan-00798|akber_khan-00800|akber_khan-00819|user_update_2026-05-02_zinc_rich_epoxy_primer_order|gmail_msg_19de69fd6503ed45|gmail_order_242366749280938",
+        "notes": "Daraz order 242366749280938 confirmed 2026-05-02 from MM PAINT: ICI industrial coating Zinc Rich epoxy primer set - Zinc Rich primer set - ici industrial x1, product PKR 25000 plus PKR 550 shipping, total PKR 25550, paid by card. Delivery window 2026-05-07 to 2026-05-09. Selected as the zinc-rich two-pack epoxy primer for blasted steel chassis; seller images show separate base and hardener tins. Confirm mix ratio, thinner, and recoat window on receipt. Product link: https://www.daraz.pk/products/i556870547-s4006655573.html?urlFlag=true&mp=1 ; image: https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
         "links": [
           {
-            "url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+            "url": "https://www.daraz.pk/products/i556870547-s4006655573.html?urlFlag=true&mp=1",
             "label": "daraz.pk"
           },
           {
@@ -56678,7 +57968,7 @@ window.J40_DASHBOARD_DATA = {
         ],
         "image": {
           "path": "../../deliverables/selling_site_images/images/expenses_hi_build_zinc_rich_epoxy_primer_ec_11_tw_2b4211f7f73b.png",
-          "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 Daraz / ICI Industrial Coatings \u00b7 Selling Site Image",
+          "caption": "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set \u00b7 Daraz / MM PAINT \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -56688,18 +57978,18 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "part_primer",
-            "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
-            "556870547",
-            "zinc-rich",
+            "https://pk-live-21.slatic.net/kf/sb3943ecd4f6040c39d009641d24206143",
+            "24206143",
             "two-pack",
-            "build",
-            "zinc",
-            "rich"
+            "009641",
+            "3943",
+            "6040",
+            "build"
           ],
           "match_basis": "selling_site_match",
-          "listing_url": "https://www.daraz.pk/products/ici-industrial-coating-zinc-rich-epoxy-primer-set-zinc-rich-primer-set-ici-industrial-i556870547.html",
+          "listing_url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
           "image_url": "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
-          "match_score": 325
+          "match_score": 322
         }
       },
       {
@@ -56776,18 +58066,18 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "tool_daraz_mini_wire_brush_set_x2",
-            "https://www.daraz.pk/products/i192752152-s1385484991.html?urlflag=true&mp=1",
-            "1385484991",
-            "192752152",
             "mini",
             "wire",
             "brush",
-            "brass"
+            "brass",
+            "nylon",
+            "stainless",
+            "steel"
           ],
           "match_basis": "selling_site_match",
-          "listing_url": "https://www.daraz.pk/products/i192752152-s1385484991.html?urlFlag=true&mp=1",
+          "listing_url": "https://static-01.daraz.pk/p/95852a2f111310f28a07fca1c54fe1e8.jpg",
           "image_url": "https://static-01.daraz.pk/p/95852a2f111310f28a07fca1c54fe1e8.jpg",
-          "match_score": 288
+          "match_score": 248
         }
       },
       {
@@ -57291,18 +58581,18 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "",
           "matched_tokens": [
             "tool_daraz_safety_goggles_cleanup",
-            "https://www.daraz.pk/products/i649346371-s3029400460.html?urlflag=true&mp=1",
-            "3029400460",
-            "649346371",
             "safety",
             "goggles",
             "protective",
-            "glasses"
+            "glasses",
+            "grinding",
+            "cleaning",
+            "daraz"
           ],
           "match_basis": "selling_site_match",
-          "listing_url": "https://www.daraz.pk/products/i649346371-s3029400460.html?urlFlag=true&mp=1",
+          "listing_url": "https://static-01.daraz.pk/p/6988bc488aa6f8214912cc5a51ec3f92.png",
           "image_url": "https://static-01.daraz.pk/p/6988bc488aa6f8214912cc5a51ec3f92.png",
-          "match_score": 291
+          "match_score": 251
         }
       },
       {
@@ -62553,11 +63843,46 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "part_body_retaining_clips_cotter_pin_pack",
+        "supply_type": "part",
+        "inventory_group": "electrical",
+        "item": "Body retaining clip pack - R-clips hairpins split pins circlips and small cotters",
+        "vendor": "local fastener / body hardware supplier",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "body_chassis",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+        "notes": "User-selected loose hardware photo shows small wire retaining clips, cotter-style pins, and spring retaining clips mixed with the screws. These are not covered by Millat orders 38902/38903 or the ordered screw/bolt/nut/washer rows. Photo estimate: 6-15 visible retaining clips/cotters, likely 10. Buy new zinc-plated or stainless assorted R-clips, hairpins, split pins, circlips/E-clips, and small cotters after sorting the old samples by pin diameter and installed location; do not reuse rusty retaining clips.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+          "caption": "Body retaining clip pack - R-clips hairpins split pins circlips and small cotters \u00b7 local inventory photo \u00b7 local fastener / body hardware supplier",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260503_153832_gp_0FJJiLHg",
+          "matched_tokens": [
+            "photo_20260503_153832_gp_0fjjilhg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_cabin_compact_fuse_boxes",
         "supply_type": "part",
         "inventory_group": "electrical",
-        "item": "Compact covered cabin blade fuse boxes - likely 3 identical units",
-        "vendor": "Bilal Ganj / compact automotive electrical supplier",
+        "item": "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on",
+        "vendor": "Bilal Ganj / Montgomery Road compact OEM fuse donor supplier / OLX Mehran-Alto donor lead",
         "amount": "",
         "currency": "PKR",
         "workstream": "electrical_reset",
@@ -62566,12 +63891,12 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought",
-        "notes": "User correction 2026-05-03: cabin/interior car fuse boxes have not been ordered. Relay block row 55 remains received/as specified, but the generic Portable 12-Way universal fuse box row is not purchased stock. Buy likely 3 compact covered blade-fuse boxes for the car/cabin circuits; use compact OEM-style covered ATO/ATC blocks with secure lids and strong terminals, same model if possible. No relay block, no large open universal block, and do not count the Portable 12-Way wording as bought evidence. Confirm final cabin mounting envelope and circuit split before payment.",
+        "evidence_ref": "user_update_2026-05-03_cabin_fuse_boxes_not_ordered|workbook_parts_row_55_relay_block_received|workbook_parts_row_57_wrong_item_not_bought|user_reference_image_2026-05-03_compact_internal_fuse_box|user_front_rear_fuse_block_images_2026-05-04|docs/cabin-fuse-box-acquisition-20260503.md",
+        "notes": "User correction 2026-05-04: under-dash cabin fuse requirement remains three separate input groups, not physical-location boxes and not the MIDI/high-current side. Need 6 constant-battery fuses, 6 ignition-on/RUN fuses, and 6 ignition part-way/ACC fuses minimum. Current preferred plan is to reuse the existing compact 12-way donor block for two 6-fuse groups if rear-terminal continuity and condition checks pass, then buy one matching compact old-OEM fuse carrier for the third group. Add-on can be 6/8/10/12-way if six positions are usable; reject bulky marine/RV/universal covered blocks. Treat branch outputs as <=30A unless manufacturer marks higher. Candidate source/order text is logged in docs/cabin-fuse-box-acquisition-20260503.md.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/car_cover.jpg",
-          "caption": "Compact covered cabin blade fuse boxes - likely 3 identical units \u00b7 car cover reference image",
+          "caption": "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on \u00b7 car cover reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -63023,6 +64348,76 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_body_rubber_plastic_bumpers_isolators",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Body rubber/plastic bumpers isolators knobs and small spacers",
+        "vendor": "Bilal Ganj rubber/body trim supplier",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "chassis_rubbers",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "spec_needed_before_order",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+        "notes": "User-selected loose hardware photo shows black and white rubber/plastic knobs, bumpers, pads, isolators, and small spacers that are not part of the Millat screw/nut/washer orders and are not covered by the body-mount rubber kit unless a sample proves a body-mount location. Photo estimate: 8-18 visible rubber/plastic pieces, likely 12. Sort by location, diameter, height, thread/stud size, and material hardness; buy new sample-matched replacements for failed or missing pieces and keep usable originals only as templates.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+          "caption": "Body rubber/plastic bumpers isolators knobs and small spacers \u00b7 local inventory photo \u00b7 Bilal Ganj rubber/body trim supplier",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260503_153832_gp_0FJJiLHg",
+          "matched_tokens": [
+            "photo_20260503_153832_gp_0fjjilhg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_body_shoulder_pins_sleeves_spacers",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched",
+        "vendor": "local fastener / machine shop supplier",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "chassis_rubbers",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "spec_needed_before_order",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+        "notes": "User-selected loose hardware photo shows long shoulder/pivot-style bolts, cylindrical sleeves, stand-off spacers, and stepped pins that are not covered by Millat orders 38902/38903, which are loose metric screws, bolts, nuts, and washers only. Photo estimate: 10-24 visible shoulder/pivot bolts, sleeves, stand-offs, and stepped pins, likely 16. Measure shoulder diameter, threaded section, grip length, total length, head style, and installed location before purchase or machine-shop fabrication; do not substitute ordinary fully threaded bolts where a shoulder or sleeve controls alignment.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+          "caption": "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched \u00b7 local inventory photo \u00b7 local fastener / machine shop supplier",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260503_153832_gp_0FJJiLHg",
+          "matched_tokens": [
+            "photo_20260503_153832_gp_0fjjilhg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
         }
       },
       {
@@ -64054,6 +65449,41 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "part_body_specialty_brackets_retainer_plates",
+        "supply_type": "part",
+        "inventory_group": "parts",
+        "item": "Body specialty bracket and retainer plate repair/replacement pack",
+        "vendor": "local body hardware fabricator / Bilal Ganj",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "body_chassis",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "spec_needed_before_order",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "20260503_153832_gp_0FJJiLHg|user_update_2026-05-04_fastener_photo_gap_review|data/manual/fastener_photo_count_estimates.csv",
+        "notes": "User-selected loose hardware photo shows rusted rectangular bracket plates, slotted retainers, captive-nut plates, and bent link/strap brackets mixed with the fasteners. These are not supplied by the Millat screw/nut/washer orders. Photo estimate: 8-18 visible specialty bracket/retainer plates, likely 12. Sort by installed location and function, then refurbish only sound originals; buy or fabricate replacements for bent, thin, cracked, or captive-thread-damaged brackets using the old samples as templates.",
+        "links": [],
+        "image": {
+          "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+          "caption": "Body specialty bracket and retainer plate repair/replacement pack \u00b7 local inventory photo \u00b7 local body hardware fabricator / Bilal Ganj",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260503_153832_gp_0FJJiLHg",
+          "matched_tokens": [
+            "photo_20260503_153832_gp_0fjjilhg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_carpet",
         "supply_type": "part",
         "inventory_group": "parts",
@@ -64088,73 +65518,73 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_227",
+        "source": "expenses",
+        "source_ref": "part_fastener_kit_c_captive_clip_nuts",
         "supply_type": "part",
         "inventory_group": "parts",
-        "item": "Fastener Kit C: Captive nuts/clip nuts assortment - M6/M8 with anti-corrosion finish",
-        "vendor": "",
+        "item": "Fastener Kit C: Captive/clip/speed nut and weld/rivnut assortment - M6/M8",
+        "vendor": "Bilal Ganj clip/captive/rivnut suppliers",
         "amount": "",
         "currency": "PKR",
-        "workstream": "",
+        "workstream": "body_chassis",
         "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "No",
-        "evidence_ref": "",
-        "notes": "Spec qty baseline: M6 captive/clip nuts x120, M8 captive/clip nuts x60, weld nuts M6 x30, weld nuts M8 x20, rivnuts M6 steel x30, rivnuts M8 steel x20. Prefer yellow-zinc or equivalent corrosion-resistant finish. | P2 active batch confirmed 2026-04-15 | Reconciled 2026-04-15: prioritize as low-risk, locally available buy-first item. | Price basis 2026-04-15: Kit C captive/clip/weld nut + rivnut assortment. | Age/condition rule: NEW_ONLY plated captive/clip/rivnut hardware.",
+        "status_detail": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "20260503_153832_gp_0FJJiLHg|workbook_parts#row_227|user_update_2026-05-03_screw_photo_review|data/manual/fastener_photo_count_estimates.csv",
+        "notes": "User-selected loose fastener photo shows rusted captive/clip/speed nuts and old panel/body hardware that are not covered by Millat orders 38902/38903, which only cover loose metric screws, bolts, nuts, flat washers, lock washers, and plate spacers. Photo estimate: 22-40 visible captive/clip/speed nut and rivnut/weld-nut candidates, likely 30. Use new yellow-zinc or equivalent plated M6/M8 captive/clip/speed nuts, weld nuts, and rivnuts; do not reuse rusted spring clips or captive nuts. Workbook Kit C spec basis: M6 captive/clip nuts x120, M8 captive/clip nuts x60, weld nuts M6 x30, weld nuts M8 x20, rivnuts M6 steel x30, rivnuts M8 steel x20. Confirm final split against old samples before purchase.",
         "links": [],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
-          "caption": "Fastener Kit C: Captive nuts/clip nuts assortment - M6/M8 with anti-corrosion finish \u00b7 fastener kit reference image",
+          "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+          "caption": "Fastener Kit C: Captive/clip/speed nut and weld/rivnut assortment - M6/M8 \u00b7 local inventory photo \u00b7 Bilal Ganj clip/captive/rivnut suppliers",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
-          "media_id": "graded_fasteners",
+          "media_id": "20260503_153832_gp_0FJJiLHg",
           "matched_tokens": [
-            "fastener"
+            "photo_20260503_153832_gp_0fjjilhg"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
         }
       },
       {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_229",
+        "source": "expenses",
+        "source_ref": "part_fastener_kit_e_trim_screws_cup_washers",
         "supply_type": "part",
         "inventory_group": "parts",
-        "item": "Fastener Kit E: Stainless interior/trim screw set (non-structural) + cup washers",
-        "vendor": "",
+        "item": "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers",
+        "vendor": "local fastener / trim hardware supplier",
         "amount": "",
         "currency": "PKR",
-        "workstream": "",
+        "workstream": "interior_weatherproofing",
         "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "No",
-        "evidence_ref": "",
-        "notes": "Non-structural finishing hardware; buy after final panel alignment.",
+        "status_detail": "planned",
+        "procurement_stage": "deferred_until_body_closed",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "20260503_153832_gp_0FJJiLHg|workbook_parts#row_229|user_update_2026-05-03_screw_photo_review|data/manual/fastener_photo_count_estimates.csv",
+        "notes": "User-selected loose fastener photo shows pointed sheet-metal/self-tapping screws, countersunk/slotted trim screws, and cup/finishing washer styles not covered by MTL order 38902. Photo estimate: 35-70 visible self-tapping/trim/countersunk screws and cup/finishing washers, likely 50. Buy only after panel/trim alignment and old-screw sorting confirm positions, head styles, lengths, and washer/cup needs. Non-structural only; use stainless or zinc-plated new hardware and do not reuse rusted old trim screws.",
         "links": [],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
-          "caption": "Fastener Kit E: Stainless interior/trim screw set (non-structural) + cup washers \u00b7 fastener kit reference image",
+          "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+          "caption": "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers \u00b7 local inventory photo \u00b7 local fastener / trim hardware supplier",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
-          "media_id": "graded_fasteners",
+          "media_id": "20260503_153832_gp_0FJJiLHg",
           "matched_tokens": [
-            "fastener"
+            "photo_20260503_153832_gp_0fjjilhg"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
         }
       },
       {
@@ -64778,7 +66208,7 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_brake_fluid_bleed_consumables",
         "supply_type": "substance",
         "inventory_group": "substances",
-        "item": "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves",
+        "item": "Brake hydraulic opening prep remaining consumables - caps plugs bleed hose bottle cleaner rags gloves catch tray",
         "vendor": "Autohub/Daraz/local brake supplier",
         "amount": "",
         "currency": "PKR",
@@ -64788,12 +66218,12 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-SYS-002|BR-CAPTURE-001|docs/brake-suspension-order-links-20260503.md|docs/brake-parts-acquisition-spec-20260503.md|docs/brake-parts-pakistan-acquisition-20260503.md",
-        "notes": "PURCHASE READY for non-fitment consumables before opening hydraulics: sealed fresh DOT 3 brake fluid (SAE J1703 / FMVSS No. 116 DOT 3), working buy quantity 2 L sealed total unless the workshop specifies more, line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. User direction 2026-05-03 closes the brake-fluid DOT hold as DOT 3. Do not use DOT 5 and do not mix unknown old fluid. Candidate Pakistan purchase links and local order text are logged in docs/brake-parts-pakistan-acquisition-20260503.md.",
+        "evidence_ref": "data_brake_system_requirements|BR-SYS-002|BR-CAPTURE-001|part_dot3_brake_fluid_autohub_6x354ml",
+        "notes": "DOT 3 brake fluid is ordered separately under part_dot3_brake_fluid_autohub_6x354ml. Still purchase-ready before opening hydraulics: line caps/plugs, clear bleed hose and catch bottle or bleeder kit, brake cleaner, rags, nitrile gloves, and catch tray. Do not open lines until these remaining consumables plus the ordered sealed DOT 3 fluid are physically on hand.",
         "links": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
-          "caption": "Brake hydraulic opening prep - DOT 3 brake fluid caps plugs bleed hose bottle cleaner rags gloves \u00b7 brake line/hose reference image",
+          "caption": "Brake hydraulic opening prep remaining consumables - caps plugs bleed hose bottle cleaner rags gloves catch tray \u00b7 brake line/hose reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -65097,12 +66527,12 @@ window.J40_DASHBOARD_DATA = {
   "other_builds": {
     "drop_zone": "data/reference/other_j40_builds",
     "summary": {
-      "section_count": 7,
-      "total_images": 80,
+      "section_count": 9,
+      "total_images": 108,
       "drop_zone_images": 0,
-      "manual_reference_images": 32,
+      "manual_reference_images": 59,
       "pakwheels_sections": 1,
-      "sample_reference_images": 27,
+      "sample_reference_images": 28,
       "market_pack_images": 14
     },
     "sections": [
@@ -65780,12 +67210,477 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
+        "key": "whatsapp_islamabad_fj_restorations",
+        "title": "WhatsApp Islamabad FJ Restoration References",
+        "description": "Other FJ restorations shared in the Fj40 group for original-spec bodywork and hardware finish reference",
+        "source_path": "data/manual/other_build_reference_media.csv",
+        "links": [],
+        "images": [
+          {
+            "path": "../../data/raw/imports/fj40/00003162-PHOTO-2026-03-15-19-34-06.jpg",
+            "caption": "Islamabad FJ restoration stripped tub and chassis from WhatsApp 2026-03-15 19:34:06",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_stripped_chassis_reference",
+            "stage": "reference_material",
+            "media_id": "00003162-PHOTO-2026-03-15-19-34-06",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003162-PHOTO-2026-03-15-19-34-06.jpg",
+            "notes": "Shared with the note that two FJs from 1965 and 1973 were being restored to original spec in Islamabad."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003189-PHOTO-2026-03-15-20-38-00.jpg",
+            "caption": "Original chrome trim and indicator hardware reference from WhatsApp 2026-03-15 20:38:00",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_chrome_hardware_reference",
+            "stage": "reference_material",
+            "media_id": "00003189-PHOTO-2026-03-15-20-38-00",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003189-PHOTO-2026-03-15-20-38-00.jpg",
+            "notes": "Nuic shared this as original chrome and indicator tub restoration reference."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003190-PHOTO-2026-03-15-20-38-00.jpg",
+            "caption": "Cadmium-plated fastener and latch hardware batch from WhatsApp 2026-03-15 20:38:00",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_cadmium_hardware_reference",
+            "stage": "reference_material",
+            "media_id": "00003190-PHOTO-2026-03-15-20-38-00",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003190-PHOTO-2026-03-15-20-38-00.jpg",
+            "notes": "Nuic described the latches and fasteners as acid-dipped and cadmium finished."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003191-PHOTO-2026-03-15-20-38-01.jpg",
+            "caption": "Indicator tub rechrome detail from WhatsApp 2026-03-15 20:38:01",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_indicator_tub_reference",
+            "stage": "reference_material",
+            "media_id": "00003191-PHOTO-2026-03-15-20-38-01",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003191-PHOTO-2026-03-15-20-38-01.jpg",
+            "notes": "Reference for refinishing original indicator tubs when replacements are unavailable."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003192-PHOTO-2026-03-15-20-38-01.jpg",
+            "caption": "Indicator tub rechrome second angle from WhatsApp 2026-03-15 20:38:01",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_indicator_tub_reference",
+            "stage": "reference_material",
+            "media_id": "00003192-PHOTO-2026-03-15-20-38-01",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003192-PHOTO-2026-03-15-20-38-01.jpg",
+            "notes": "Reference for refinishing original indicator tubs when replacements are unavailable."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003193-PHOTO-2026-03-15-20-38-01.jpg",
+            "caption": "Long chrome trim repair and polish reference from WhatsApp 2026-03-15 20:38:01",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_chrome_trim_reference",
+            "stage": "reference_material",
+            "media_id": "00003193-PHOTO-2026-03-15-20-38-01",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003193-PHOTO-2026-03-15-20-38-01.jpg",
+            "notes": "Part of the original-spec restoration hardware finish discussion."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003194-PHOTO-2026-03-15-20-38-03.jpg",
+            "caption": "Latch mechanism cadmium finish reference from WhatsApp 2026-03-15 20:38:03",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_cadmium_hardware_reference",
+            "stage": "reference_material",
+            "media_id": "00003194-PHOTO-2026-03-15-20-38-03",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003194-PHOTO-2026-03-15-20-38-03.jpg",
+            "notes": "Nuic described the latches and fasteners as acid-dipped and cadmium finished."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003195-PHOTO-2026-03-15-20-38-04.jpg",
+            "caption": "Fastener batch cadmium finish reference from WhatsApp 2026-03-15 20:38:04",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_cadmium_hardware_reference",
+            "stage": "reference_material",
+            "media_id": "00003195-PHOTO-2026-03-15-20-38-04",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003195-PHOTO-2026-03-15-20-38-04.jpg",
+            "notes": "Nuic described the latches and fasteners as acid-dipped and cadmium finished."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003196-PHOTO-2026-03-15-20-38-04.jpg",
+            "caption": "Repainted body panel surface sample from WhatsApp 2026-03-15 20:38:04",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_panel_finish_reference",
+            "stage": "reference_material",
+            "media_id": "00003196-PHOTO-2026-03-15-20-38-04",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003196-PHOTO-2026-03-15-20-38-04.jpg",
+            "notes": "Reference for gloss and panel finish quality on a related FJ restoration."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003199-PHOTO-2026-03-15-20-38-07.jpg",
+            "caption": "Restored alternator and plated hardware batch from WhatsApp 2026-03-15 20:38:07",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_engine_hardware_reference",
+            "stage": "reference_material",
+            "media_id": "00003199-PHOTO-2026-03-15-20-38-07",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003199-PHOTO-2026-03-15-20-38-07.jpg",
+            "notes": "Part of the original-spec restoration hardware finish discussion."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003200-PHOTO-2026-03-15-20-38-08.jpg",
+            "caption": "Hood prop and rod plating reference from WhatsApp 2026-03-15 20:38:08",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_cadmium_hardware_reference",
+            "stage": "reference_material",
+            "media_id": "00003200-PHOTO-2026-03-15-20-38-08",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003200-PHOTO-2026-03-15-20-38-08.jpg",
+            "notes": "Nuic described the latches and fasteners as acid-dipped and cadmium finished."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003201-PHOTO-2026-03-15-20-38-08.jpg",
+            "caption": "Latch barrel finish detail from WhatsApp 2026-03-15 20:38:08",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_latch_hardware_reference",
+            "stage": "reference_material",
+            "media_id": "00003201-PHOTO-2026-03-15-20-38-08",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003201-PHOTO-2026-03-15-20-38-08.jpg",
+            "notes": "Part of the original-spec restoration hardware finish discussion."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003202-PHOTO-2026-03-15-20-38-08.jpg",
+            "caption": "Chrome and trim hardware batch from WhatsApp 2026-03-15 20:38:08",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_chrome_hardware_reference",
+            "stage": "reference_material",
+            "media_id": "00003202-PHOTO-2026-03-15-20-38-08",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003202-PHOTO-2026-03-15-20-38-08.jpg",
+            "notes": "Part of the original-spec restoration hardware finish discussion."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003203-PHOTO-2026-03-15-20-38-09.jpg",
+            "caption": "Chrome trim refinish detail from WhatsApp 2026-03-15 20:38:09",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_chrome_trim_reference",
+            "stage": "reference_material",
+            "media_id": "00003203-PHOTO-2026-03-15-20-38-09",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003203-PHOTO-2026-03-15-20-38-09.jpg",
+            "notes": "Part of the original-spec restoration hardware finish discussion."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003204-PHOTO-2026-03-15-20-38-09.jpg",
+            "caption": "Chrome handle or trim second angle from WhatsApp 2026-03-15 20:38:09",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_chrome_trim_reference",
+            "stage": "reference_material",
+            "media_id": "00003204-PHOTO-2026-03-15-20-38-09",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003204-PHOTO-2026-03-15-20-38-09.jpg",
+            "notes": "Part of the original-spec restoration hardware finish discussion."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003205-PHOTO-2026-03-15-20-38-10.jpg",
+            "caption": "Black refinished engine accessory from WhatsApp 2026-03-15 20:38:10",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_engine_component_reference",
+            "stage": "reference_material",
+            "media_id": "00003205-PHOTO-2026-03-15-20-38-10",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003205-PHOTO-2026-03-15-20-38-10.jpg",
+            "notes": "Reference for engine component cleaning and black refinish quality."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003206-PHOTO-2026-03-15-20-38-10.jpg",
+            "caption": "Black round component refinish detail from WhatsApp 2026-03-15 20:38:10",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_engine_component_reference",
+            "stage": "reference_material",
+            "media_id": "00003206-PHOTO-2026-03-15-20-38-10",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003206-PHOTO-2026-03-15-20-38-10.jpg",
+            "notes": "Reference for engine component cleaning and black refinish quality."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003207-PHOTO-2026-03-15-20-38-11.jpg",
+            "caption": "Refinished component bench layout from WhatsApp 2026-03-15 20:38:11",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_engine_component_reference",
+            "stage": "reference_material",
+            "media_id": "00003207-PHOTO-2026-03-15-20-38-11",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003207-PHOTO-2026-03-15-20-38-11.jpg",
+            "notes": "Reference for engine component cleaning and black refinish quality."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003208-PHOTO-2026-03-15-20-38-12.jpg",
+            "caption": "Black steering or column component refinish from WhatsApp 2026-03-15 20:38:12",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_engine_component_reference",
+            "stage": "reference_material",
+            "media_id": "00003208-PHOTO-2026-03-15-20-38-12",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003208-PHOTO-2026-03-15-20-38-12.jpg",
+            "notes": "Reference for component cleaning and black refinish quality."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003209-PHOTO-2026-03-15-20-38-12.jpg",
+            "caption": "Engine assembly refinish reference from WhatsApp 2026-03-15 20:38:12",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_engine_assembly_reference",
+            "stage": "reference_material",
+            "media_id": "00003209-PHOTO-2026-03-15-20-38-12",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003209-PHOTO-2026-03-15-20-38-12.jpg",
+            "notes": "Reference for engine component cleaning and black refinish quality."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003210-PHOTO-2026-03-15-20-38-13.jpg",
+            "caption": "Black steering or column component second angle from WhatsApp 2026-03-15 20:38:13",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_engine_component_reference",
+            "stage": "reference_material",
+            "media_id": "00003210-PHOTO-2026-03-15-20-38-13",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003210-PHOTO-2026-03-15-20-38-13.jpg",
+            "notes": "Reference for component cleaning and black refinish quality."
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003211-PHOTO-2026-03-15-20-38-13.jpg",
+            "caption": "Engine assembly refinish second angle from WhatsApp 2026-03-15 20:38:13",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj_restoration_engine_assembly_reference",
+            "stage": "reference_material",
+            "media_id": "00003211-PHOTO-2026-03-15-20-38-13",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003211-PHOTO-2026-03-15-20-38-13.jpg",
+            "notes": "Reference for engine component cleaning and black refinish quality."
+          }
+        ]
+      },
+      {
+        "key": "whatsapp_workshop_wiring_floor_samples",
+        "title": "WhatsApp Workshop Wiring And Floor Samples",
+        "description": "Other-build wiring and floor-rust before-after examples from Akber messages",
+        "source_path": "data/manual/other_build_reference_media.csv",
+        "links": [],
+        "images": [
+          {
+            "path": "../../data/raw/imports/akber_khan/00000289-PHOTO-2026-03-15-19-55-02.jpg",
+            "caption": "Engine bay cleanup after sample from WhatsApp 2026-03-15 19:55:02",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "engine_bay_before_after_sample",
+            "stage": "reference_material",
+            "media_id": "00000289-PHOTO-2026-03-15-19-55-02",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Akber Khan WhatsApp",
+            "source_path": "data/raw/imports/akber_khan/00000289-PHOTO-2026-03-15-19-55-02.jpg",
+            "notes": "Sent after Akber noted basic before and after examples."
+          },
+          {
+            "path": "../../data/raw/imports/akber_khan/00000290-PHOTO-2026-03-15-19-55-03.jpg",
+            "caption": "Engine bay wiring before sample from WhatsApp 2026-03-15 19:55:03",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "engine_bay_before_after_sample",
+            "stage": "reference_material",
+            "media_id": "00000290-PHOTO-2026-03-15-19-55-03",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Akber Khan WhatsApp",
+            "source_path": "data/raw/imports/akber_khan/00000290-PHOTO-2026-03-15-19-55-03.jpg",
+            "notes": "Sent after Akber noted basic before and after examples."
+          },
+          {
+            "path": "../../data/raw/imports/akber_khan/00000292-PHOTO-2026-03-15-19-55-55.jpg",
+            "caption": "Wiring overload caution sample from WhatsApp 2026-03-15 19:55:55",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "wiring_cleanup_caution_sample",
+            "stage": "reference_material",
+            "media_id": "00000292-PHOTO-2026-03-15-19-55-55",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Akber Khan WhatsApp",
+            "source_path": "data/raw/imports/akber_khan/00000292-PHOTO-2026-03-15-19-55-55.jpg",
+            "notes": "Sent as a surprise example of previous wiring condition."
+          },
+          {
+            "path": "../../data/raw/imports/akber_khan/00000293-PHOTO-2026-03-15-19-55-55.jpg",
+            "caption": "Floor rust breakthrough sample from WhatsApp 2026-03-15 19:55:55",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "floor_rust_caution_sample",
+            "stage": "reference_material",
+            "media_id": "00000293-PHOTO-2026-03-15-19-55-55",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Akber Khan WhatsApp",
+            "source_path": "data/raw/imports/akber_khan/00000293-PHOTO-2026-03-15-19-55-55.jpg",
+            "notes": "Akber said this was under the accelerator pedal."
+          },
+          {
+            "path": "../../data/raw/imports/akber_khan/00000294-PHOTO-2026-03-15-19-55-55.jpg",
+            "caption": "Floor pan rust-through sample from WhatsApp 2026-03-15 19:55:55",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "floor_rust_caution_sample",
+            "stage": "reference_material",
+            "media_id": "00000294-PHOTO-2026-03-15-19-55-55",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Akber Khan WhatsApp",
+            "source_path": "data/raw/imports/akber_khan/00000294-PHOTO-2026-03-15-19-55-55.jpg",
+            "notes": "Akber said this was under the accelerator pedal."
+          }
+        ]
+      },
+      {
         "key": "sample_reference",
         "title": "Samples And Fabrication References",
         "description": "Current sample, fabrication, and recreation evidence gathered into one reference group.",
         "source_path": "data/manual/photo_inventory.csv",
         "links": [],
         "images": [
+          {
+            "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+            "caption": "Mixed Fastener Hardware \u00b7 Procurement Reconciliation \u00b7 2026-05-03",
+            "captured_date": "2026-05-03",
+            "captured_time": "15:38:32",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "mixed_fastener_hardware",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260503_153832_gp_0FJJiLHg",
+            "matched_tokens": [],
+            "match_basis": "sample_reference",
+            "source_label": "Current build samples",
+            "source_path": "photos/20260503_153832_gp_0FJJiLHg.jpg"
+          },
           {
             "path": "../../photos/20260502_161214_gp_zc3zwXlg.jpg",
             "caption": "Replacement Pipe Hose Sample Sorting \u00b7 Mechanical Baseline \u00b7 2026-05-02",
@@ -66769,7 +68664,8 @@ window.J40_DASHBOARD_DATA = {
       "roof_and_gutters",
       "rubbers_and_seals",
       "wheels_and_tires",
-      "window_hardware"
+      "window_hardware",
+      "windows"
     ],
     "specific_components": [
       "aftermarket_chassis_reference_image",
@@ -66810,6 +68706,7 @@ window.J40_DASHBOARD_DATA = {
       "front_frame_horns_bumper_and_steering_area",
       "front_panel_headlamp_surround",
       "front_panel_lighting_mount_area",
+      "front_vent_window_assemblies",
       "fuel_filler_side_panel",
       "full_chassis_frame_overview",
       "fuse_distribution_and_power_hardware",
@@ -66817,6 +68714,7 @@ window.J40_DASHBOARD_DATA = {
       "handwritten_notes",
       "hidden_diesel_cutoff_switch_hardware",
       "hood_and_front_windshield_overview",
+      "mixed_fastener_hardware",
       "pakwheels_listing_screenshot",
       "panel_detail_and_markings",
       "pedal_box_wiring",
@@ -66875,6 +68773,7 @@ window.J40_DASHBOARD_DATA = {
       "dirty_cleaning_required",
       "doors_removed",
       "fabrication_spec_capture",
+      "fastener_sorting",
       "inspection_in_progress",
       "panel_removed",
       "partially_disassembled",
@@ -66883,6 +68782,7 @@ window.J40_DASHBOARD_DATA = {
       "reference_only",
       "refinished_off_vehicle",
       "removed_from_vehicle",
+      "removed_from_vehicle_needs_refurbish",
       "sample_length_and_route_identification",
       "sample_sorting_for_acquisition",
       "trim_removed",
@@ -75678,13 +77578,13 @@ window.J40_DASHBOARD_DATA = {
       "captured_date": "2026-05-03",
       "captured_time": "15:38:32",
       "media_type": "photo",
-      "component_group": "documentation_reference",
-      "specific_component": "reference_media",
-      "stage": "reference_material",
-      "observed_state": "reference_only",
-      "confidence": "low",
-      "tags": "reference",
-      "notes": ""
+      "component_group": "procurement_inventory",
+      "specific_component": "mixed_fastener_hardware",
+      "stage": "procurement_reconciliation",
+      "observed_state": "fastener_sorting",
+      "confidence": "high",
+      "tags": "screws|bolts|washers|clip_nuts|self_tapping|trim_screws|retaining_clips|cotter_pins|rubber_bumpers|isolators|shoulder_pins|brackets|body_hardware|sample_sorting",
+      "notes": "User-selected May 3 loose screw/fastener pile; use to separate Millat-covered metric screws from missing self-tapping/trim screw, captive/clip-nut, retaining-clip, rubber/plastic isolator, shoulder-pin, sleeve/spacer, and bracket/retainer hardware."
     },
     "20260503_154438_gp_L7gV0PAA": {
       "media_id": "20260503_154438_gp_L7gV0PAA",
@@ -75940,6 +77840,21 @@ window.J40_DASHBOARD_DATA = {
       "confidence": "low",
       "tags": "reference",
       "notes": ""
+    },
+    "20260503_234035_front_vent_window_assemblies": {
+      "media_id": "20260503_234035_front_vent_window_assemblies",
+      "file_name": "20260503_234035_front_vent_window_assemblies.png",
+      "path": "../../photos/20260503_234035_front_vent_window_assemblies.png",
+      "captured_date": "2026-05-03",
+      "captured_time": "23:40:35",
+      "media_type": "photo",
+      "component_group": "windows",
+      "specific_component": "front_vent_window_assemblies",
+      "stage": "removed_parts_cataloguing",
+      "observed_state": "removed_from_vehicle_needs_refurbish",
+      "confidence": "high",
+      "tags": "window|vent_window|quarter_window|glass|rubber|seal|rust|refurbish|wp02",
+      "notes": "User-provided May 3 photo of paired off-vehicle vent/quarter window assemblies; old seals and rusted brackets/channels need teardown inspection before any replacement buy."
     },
     "IMG-20260328-WA0017": {
       "media_id": "IMG-20260328-WA0017",

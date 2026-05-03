@@ -1,0 +1,12 @@
+{
+  "run_id": "20260503T234354",
+  "inbox_dir": "/Users/davidpridmore/IdeaProjects/J40/data/inbox/manual_photo_drop",
+  "archive_dir": "/Users/davidpridmore/IdeaProjects/J40/data/raw/imports/manual_photo_drop",
+  "dry_run": false,
+  "copy_only": false,
+  "processed_files": 1,
+  "imported": 1,
+  "duplicate_existing_exact_hash": 0,
+  "duplicate_within_batch_exact_hash": 0,
+  "errors": 0
+}

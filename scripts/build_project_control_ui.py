@@ -889,8 +889,8 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
         ],
     },
     "chassis_rubbers": {
-        "title": "Body Mount Rubber Stack",
-        "summary": "Body-mount rubber, sleeve, washer, shim, and front-support isolation work.",
+        "title": "Chassis Rubbers Fabricator Spec",
+        "summary": "Fabricator-ready body-mount rubber, sleeve, cup, shim, and front-support isolation specification.",
         "default_tools": ["Calipers", "Jack and axle stands", "Pry bars", "Socket set", "Torque wrench"],
         "default_supplies": ["Penetrating oil", "Rubber grease", "Anti-seize", "Temporary alignment bolts"],
         "subtasks": [
@@ -918,7 +918,8 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "instruction": "Define the full stack by position so the body returns to the intended height and alignment.",
                 "process_steps": [
                     "Build a position-by-position table for rubbers, sleeves, cup washers, bolts, and shims.",
-                    "Use docs/rubber-recreation-fabrication-spec-20260502.md as the fabrication handoff and close its hold dimensions.",
+                    "Use docs/chassis-rubbers-workstream.md as the top-level fabricator handoff spec.",
+                    "Use docs/rubber-recreation-fabrication-spec-20260502.md only as the detailed backup spec and hold-dimension record.",
                     "Use data/manual/fabrication/rubber_recreation_rev_a/ as the ready-to-run DXF/SVG/PDF package for quote and first article.",
                     "Use docs/fabrication-handoff-index.md as the shared send-out index for rubber and electrical fabrication packages.",
                     "Use data/manual/rubber_ordering_specs.csv as the cross-category rubber ordering matrix so body mounts, hoses, suspension bushes, weatherstrip, and HVAC rubber stay in the correct buy gates.",
@@ -934,7 +935,7 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                     "Record any captive nut or mount repair needed before dry fit.",
                 ],
                 "tools": ["Calipers", "Straight edge", "Mount map", "Thread gauge"],
-                "supplies": ["Spec sheet", "Rubber fabrication DXF/PDF pack", "Fabrication handoff index", "Rubber ordering matrix", "Body mount order release sheet", "Body mount action sheet", "OE cross-reference", "Aftermarket thickness cross-check", "Measurement closure sheet", "Sample rubbers", "Shim material", "Sleeve stock if fabricating"],
+                "supplies": ["Chassis rubbers fabricator spec", "Rubber fabrication DXF/PDF pack", "Fabrication handoff index", "Rubber ordering matrix", "Body mount order release sheet", "Body mount action sheet", "OE cross-reference", "Aftermarket thickness cross-check", "Measurement closure sheet", "Sample rubbers", "Shim material", "Sleeve stock if fabricating"],
                 "hold_point": "Final order or fabrication starts only after every mount position has a complete stack definition, the Toyota OE station rows have been reconciled against the physical vehicle, and the small-mount one-piece vs split-stack construction is resolved.",
                 "image_tokens": ["body_mount", "rubber", "shim", "sleeve", "mount"],
             },

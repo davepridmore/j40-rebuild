@@ -1,6 +1,6 @@
 # Reassembly, Dependency, and Procurement Plan
 
-- Generated: 2026-05-03 23:02:54
+- Generated: 2026-05-04 02:08:55
 - Work packages: `data/manual/reassembly_work_packages.csv`
 - Dependency edges: `data/manual/reassembly_dependency_edges.csv`
 - Component disposition: `data/manual/component_disposition_plan.csv`
@@ -23,24 +23,26 @@
 
 ## Procurement Decisions
 
-- `buy_dot3_fluid_and_bleed_consumables`: 1
+- `buy_remaining_brake_bleed_consumables`: 1
+- `capture_body_hardware_samples_then_order`: 3
 - `capture_spec_then_buy`: 8
-- `confirm_price_then_buy`: 7
+- `confirm_price_then_buy`: 9
 - `defer_duplicate_overlap`: 4
 - `defer_optional`: 1
 - `defer_until_mount_failure_or_engine_lift_scope`: 1
+- `hold_until_body_closed`: 1
 - `inspect_confirm_then_buy_standard`: 3
 - `inspect_then_buy`: 1
 - `research_compare_then_select`: 1
 - `review`: 8
-- `track_ordered_delivery`: 10
+- `track_ordered_delivery`: 12
 - `verify_stock_before_buy`: 2
 
 ## Component Reuse/Refurbish Decisions
 
 - `clean_store_for_reuse`: 1
 - `refurbish_send_out`: 4
-- `refurbish_service_subcomponents`: 2
+- `refurbish_service_subcomponents`: 3
 - `remove_nonbaseline_and_refit_clean`: 1
 - `repair_in_place`: 1
 - `review`: 31

@@ -60,6 +60,7 @@
 
 - Remove only as fast as the tagging and storage process can keep up.
 - Treat roof, doors, hood, windows, trim, and interior components as separate sub-packages with outbound and return states.
+- Use `docs/window-parts-refurbishment-workflow-20260503.md` for the front vent/quarter window assemblies now tracked as `front_vent_window_assemblies` under `WP02`.
 
 ### Body-Off Welding Track
 

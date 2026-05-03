@@ -9,6 +9,7 @@ Important:
 - Suspension shopping alternatives have been superseded by the ordered Ironman Foamcell kit.
 - Section B is now receipt tracking only; do not source alternate suspension parts from this list.
 - The 10-way relay/fuse block is already bought. Cabin/interior car fuse boxes are separate, still not ordered, and must be compact covered blade-fuse boxes.
+- Cabin fuse-box target is the compact internal/OEM-style form shown in the 2026-05-03 user reference image; use `docs/cabin-fuse-box-acquisition-20260503.md` for the supplier order text.
 
 ## A) Buy / Book Now (Core)
 
@@ -17,7 +18,7 @@ Important:
 | 11 + 225-228 | Full fastener scope (Kits A-D) | 45,000-105,000 (avg 72,000) | Class-marked fasteners and hardware exactly per Kit A-D counts/specs | `20260405_234546.jpg`, `20260405_234802.jpg`, `20260405_234652.jpg` |
 | 12 | Body-to-chassis mount rubber kit | 15,000-60,000 (avg 30,000) | OEM-style mount biscuits/insulators, sleeves/cup washers, full mount-point set | `20260405_234546.jpg`, `20260405_234652.jpg` |
 | 39 | Ignition lock security fix | 4,000-25,000 (avg 12,000) | Re-key barrel + matched keys, or complete compatible lock/barrel set | `20260323_180218.jpg`, `20260323_190047.jpg` |
-| part_cabin_compact_fuse_boxes | Compact cabin fuse boxes | 11,100-21,000 (avg 15,000) | Likely 3 identical compact covered ATO/ATC blade-fuse boxes; no relay block, no large open universal block, and not the rejected `Portable 12-Way` listing | `20260411_065030.jpg`, `20260411_143135.jpg` |
+| part_cabin_compact_fuse_boxes | Compact cabin fuse protection | 1,100-5,000 if reusing existing 12-way; 11,100-21,000 if buying all boxes | Need three isolated under-dash fuse groups: 6 constant-battery fuses, 6 ignition-on/RUN fuses, and 6 ignition part-way/ACC fuses minimum. Preferred current plan is to reuse the existing 12-way donor block for two 6-fuse groups if rear-terminal continuity and condition checks pass, then buy one matching compact old-OEM fuse carrier for the third group. It may be 6/8/10/12-way if six positions can be wired cleanly; avoid bulky marine/RV/universal covered blocks. | `20260411_065030.jpg`, `20260411_143135.jpg`, user front/rear fuse-block images 2026-05-04 |
 | 210 | EPS complete kit | 54,000-136,000 (avg 90,000) | Complete 2005-2011 Toyota Vitz/Yaris 90-series EPS set, SCP90 or NCP90 only: matched column + ECU/control + connectors/pigtails + shafts/U-joints + couplers + brackets; bench-tested only | `20260321_235600.jpg`, `20260406_031010.jpg` |
 | 29 | Heat plugs (glow plugs) set | 12,000-36,000 (avg 22,000) | Diesel glow/heat plugs, exact engine-code spec (new only) | `20260317_235150.jpg` |
 

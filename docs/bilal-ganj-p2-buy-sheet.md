@@ -40,11 +40,15 @@ Note: the 10-way relay/fuse block is already bought and remains valid as specifi
    - Ledger entry: `part_cabin_compact_fuse_boxes`
    - Workbook correction: row `57` / `INV-0081` is a wrong generic listing and is **not** purchased stock.
    - **Exact spec**:
-     - Target quantity: **3 identical compact covered automotive blade-fuse boxes**.
+     - Required groups: **3 isolated under-dash fuse groups**.
+     - Capacity: **6 constant-battery fuses, 6 ignition-on/RUN fuses, and 6 ignition part-way/ACC fuses minimum**.
+     - Consolidated option: one Hyundai/OEM cabin fuse box is acceptable if continuity testing proves three isolated input buses and enough mapped slots for each group.
      - Fuse type: ATO/ATC blade fuse format.
      - Body: compact/OEM-style, covered, secure lid, strong terminals, no heat damage if donor.
-     - Use for cabin/interior car fuse circuits only; do not substitute the already-bought relay block.
-     - Reject large open universal blocks and anything sold as `Portable 12-Way Car Fuse Box Universal Automotive Box Holder with Led Indicator`.
+     - Use for cabin/interior branch circuits only; do not substitute the already-bought relay block or MIDI/ANL holder.
+     - Per-circuit limit: treat as 30A maximum unless the fuse-box manufacturer marks a higher rating.
+     - Daraz live candidate checked 2026-05-03: Mughal Electronics RYK 12-way block, `138.25 x 85 x 36.5 mm`; fallback only because three are too bulky for under dash.
+     - Reject single-bus blocks that cannot be split into the three input groups, large open universal blocks, loose fuse assortment boxes, relay blocks, and buying three bulky 12-way blocks for the cabin bracket.
    - **Estimated price (PKR)**: `11,100 - 21,000` (avg `15,000`)
 
 5. **Electrical power steering (EPS) complete conversion kit**
@@ -103,5 +107,5 @@ Note: the 10-way relay/fuse block is already bought and remains valid as specifi
 - Confirm **metric thread pitch** with nut gauge: `M10x1.25` and `M8x1.25` where specified.
 - Reject structural bolts without clear class marking (`8.8` minimum for these kits).
 - For rubber mounts, buy only after physical sample fit (ID/OD/height + sleeve length).
-- Buy the compact cabin fuse boxes as a separate open item; do not count the relay block or wrong `Portable 12-Way` listing as cabin fuse-box stock.
+- Buy the compact cabin fuse boxes as a separate open item; do not count the relay block or the old not-purchased workbook row as cabin fuse-box stock. Current requirement is three isolated under-dash fuse groups: constant, IGN/RUN, and ACC, with 6 fuse positions minimum per group.
 - Do not double-buy duplicates: row `11` and detailed rows `225-228` cover the fastener kits; row `12` covers the rubber kit; row `13` covers shims/spacers.

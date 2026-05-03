@@ -1,7 +1,7 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-05-03 17:44:30
-- Total media files indexed: 617 (606 photos, 11 videos)
+- Generated: 2026-05-04 01:41:07
+- Total media files indexed: 618 (607 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
 
@@ -22,9 +22,9 @@
 | `mechanical_baseline` | 13 |
 | `mechanical_cleaning` | 14 |
 | `mechanical_inspection` | 5 |
-| `procurement_reconciliation` | 133 |
-| `reference_material` | 57 |
-| `removed_parts_cataloguing` | 15 |
+| `procurement_reconciliation` | 134 |
+| `reference_material` | 56 |
+| `removed_parts_cataloguing` | 16 |
 | `rust_assessment` | 51 |
 | `stripdown_cataloguing` | 110 |
 | `underside_inspection` | 99 |
@@ -70,7 +70,7 @@
 | `documentation_reference` | `handwritten_notes` | 3 | 2026-04-01 | `20260401_111029_gp_6ebGjXdw.jpg` |
 | `documentation_reference` | `off_vehicle_workstation_reference_video` | 2 | 2026-03-29 to 2026-04-23 | `20260329_095138.mp4` |
 | `documentation_reference` | `pakwheels_listing_screenshot` | 1 | 2026-03-13 | `Screenshot_20260313_054936_PakWheels.jpg` |
-| `documentation_reference` | `reference_media` | 46 | 2026-04-14 to 2026-05-03 | `20260414_000833_gp_7PzMcRKw.jpg` |
+| `documentation_reference` | `reference_media` | 45 | 2026-04-14 to 2026-05-03 | `20260414_000833_gp_7PzMcRKw.jpg` |
 | `electrical_system` | `driver_footwell_firewall_pass_through` | 1 | 2026-03-24 | `20260324_004812.jpg` |
 | `electrical_system` | `firewall_and_dash_wiring` | 10 | 2026-03-20 | `20260320_191834.jpg` |
 | `electrical_system` | `pedal_box_wiring` | 5 | 2026-03-28 | `20260328_053638_gp_t6Q3oCTA.jpg` |
@@ -94,6 +94,7 @@
 | `procurement_inventory` | `fuse_distribution_and_power_hardware` | 14 | 2026-04-11 | `20260411_065030.jpg` |
 | `procurement_inventory` | `fuse_distribution_and_wiring` | 2 | 2026-04-05 | `20260405_010322.jpg` |
 | `procurement_inventory` | `hidden_diesel_cutoff_switch_hardware` | 2 | 2026-04-20 | `20260420_221819_gp_YV69fbvA.jpg` |
+| `procurement_inventory` | `mixed_fastener_hardware` | 1 | 2026-05-03 | `20260503_153832_gp_0FJJiLHg.jpg` |
 | `procurement_inventory` | `rubber_grommet_assortment` | 1 | 2026-04-22 | `20260422_034358_gp_Bg6nSlPw.jpg` |
 | `procurement_inventory` | `rubber_parts_recreation_samples` | 14 | 2026-05-02 | `20260502_004201_gp_zfUSmKJg.jpg` |
 | `procurement_inventory` | `rust_remover_container` | 1 | 2026-04-22 | `20260422_003700_gp_gFb0LBcw.jpg` |
@@ -110,3 +111,4 @@
 | `rubbers_and_seals` | `window_rubber_seals_and_frames` | 2 | 2026-03-29 | `20260329_051754.jpg` |
 | `wheels_and_tires` | `wheel_and_tire_detail` | 1 | 2026-03-24 | `20260324_004830.jpg` |
 | `window_hardware` | `rear_hatch_window_latch_mechanisms` | 1 | 2026-04-08 | `20260408_212832.jpg` |
+| `windows` | `front_vent_window_assemblies` | 1 | 2026-05-03 | `20260503_234035_front_vent_window_assemblies.png` |

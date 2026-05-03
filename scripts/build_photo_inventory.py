@@ -1298,6 +1298,43 @@ FILE_OVERRIDES.update(CHASSIS_20260422_OVERRIDES)
 FILE_OVERRIDES.update(CHASSIS_20260501_OVERRIDES)
 FILE_OVERRIDES.update(
     {
+        "20260503_153832_gp_0FJJiLHg.jpg": c(
+            "procurement_inventory",
+            "mixed_fastener_hardware",
+            "procurement_reconciliation",
+            "fastener_sorting",
+            "high",
+            (
+                "screws",
+                "bolts",
+                "washers",
+                "clip_nuts",
+                "self_tapping",
+                "trim_screws",
+                "retaining_clips",
+                "cotter_pins",
+                "rubber_bumpers",
+                "isolators",
+                "shoulder_pins",
+                "brackets",
+                "body_hardware",
+                "sample_sorting",
+            ),
+            "User-selected May 3 loose screw/fastener pile; use to separate Millat-covered metric screws from missing self-tapping/trim screw, captive/clip-nut, retaining-clip, rubber/plastic isolator, shoulder-pin, sleeve/spacer, and bracket/retainer hardware.",
+        ),
+        "20260503_234035_front_vent_window_assemblies.png": c(
+            "windows",
+            "front_vent_window_assemblies",
+            "removed_parts_cataloguing",
+            "removed_from_vehicle_needs_refurbish",
+            "high",
+            ("window", "vent_window", "quarter_window", "glass", "rubber", "seal", "rust", "refurbish", "wp02"),
+            "User-provided May 3 photo of paired off-vehicle vent/quarter window assemblies; old seals and rusted brackets/channels need teardown inspection before any replacement buy.",
+        )
+    }
+)
+FILE_OVERRIDES.update(
+    {
         file_name: c(
             "procurement_inventory",
             "rubber_parts_recreation_samples",

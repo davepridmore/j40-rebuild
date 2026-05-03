@@ -144,9 +144,51 @@ SOURCE_URL_OVERRIDES: dict[tuple[str, str], tuple[str, ...]] = {
     ),
     (
         "expenses",
+        "part_primer",
+    ): (
+        "https://pk-live-21.slatic.net/kf/Sb3943ecd4f6040c39d009641d24206143.jpg",
+    ),
+    (
+        "expenses",
+        "part_wax_and_grease_remover",
+    ): (
+        "https://cdn.shopify.com/s/files/1/0424/5433/files/3m-08983_medium.png?v=1709701797",
+    ),
+    (
+        "expenses",
+        "part_cavity_wax",
+    ): (
+        "https://cdn.shopify.com/s/files/1/0424/5433/files/WEB-900SPRi-Photoroom_1_medium.png?v=1731328302",
+    ),
+    (
+        "expenses",
+        "part_dot3_brake_fluid_autohub_6x354ml",
+    ): (
+        "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
+    ),
+    (
+        "expenses",
         "tool_daraz_75mm_knotted_cup_wire_brush_x2",
     ): (
         "https://static-01.daraz.pk/p/850e2884182b055b50caab1236d83335.jpg",
+    ),
+    (
+        "expenses",
+        "tool_daraz_mini_wire_brush_set_x2",
+    ): (
+        "https://static-01.daraz.pk/p/95852a2f111310f28a07fca1c54fe1e8.jpg",
+    ),
+    (
+        "expenses",
+        "tool_daraz_safety_goggles_cleanup",
+    ): (
+        "https://static-01.daraz.pk/p/6988bc488aa6f8214912cc5a51ec3f92.png",
+    ),
+    (
+        "expenses",
+        "part_daraz_jubilee_hose_clip_assortment_30pc",
+    ): (
+        "https://static-01.daraz.pk/p/ba3d027177170958c46096eff8c97f61.jpg",
     ),
     (
         "expenses",

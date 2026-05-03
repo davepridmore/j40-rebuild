@@ -99,7 +99,7 @@ Priority reminder:
 ## 3) Buy / No-Buy Gates
 
 - Buy immediately:
-  - Fastener kits, body-mount rubbers/shims, ignition security, covered fuse boxes.
+  - Fastener kits, body-mount rubbers/shims, ignition security, 3 compact covered cabin fuse boxes.
 - Buy only if measured fit confirmed:
   - Local front/rear leaf packs.
 - Quote only today:

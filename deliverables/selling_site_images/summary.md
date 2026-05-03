@@ -1,21 +1,20 @@
 # Selling-Site Images Export
 
-- Source rows scanned: 403
-- Unique listing URLs found: 73
-- Exported records: 90
+- Source rows scanned: 413
+- Unique listing URLs found: 70
+- Exported records: 87
 
 ## Counts by Item Type
 
-- `part`: 60
+- `part`: 57
 - `tool`: 30
 
 ## Counts by Status
 
 - `copied_local`: 12
 - `downloaded`: 70
-- `no_image_found`: 1
 - `resolve_failed`: 4
-- `reused_cached_image`: 3
+- `reused_cached_image`: 1
 
 - Manifest: `deliverables/selling_site_images/manifest.csv`
 - Images folder: `deliverables/selling_site_images/images/`
