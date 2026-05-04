@@ -17,6 +17,8 @@ Scope clarification: the current EPS route is column-assist with the engine left
 
 The set must be a matched donor set: column, controller/ECU, connectors, shafts, U-joints, couplers, and brackets from the same donor family. Do not accept a random ECU paired with an unrelated column unless the seller demonstrates the exact pair working on the bench.
 
+Electrical cable rule: donor pigtails are required for connector identification and bench testing only. Final EPS power, ground, ignition-trigger, protection, and loom wiring must use new automotive cable, terminals, sleeving, and fuse protection.
+
 ## Accept/Reject Checklist (On-Site)
 
 Use this as a hard gate before payment.
@@ -27,7 +29,7 @@ Use this as a hard gate before payment.
 | EPS motorized steering column assembly | Yes | ☐ |
 | Torque sensor integrated in column | Yes | ☐ |
 | EPS ECU/controller (or verified integrated control) | Yes | ☐ |
-| Main EPS connectors with pigtails (>=150mm, not cut flush) | Yes | ☐ |
+| Main EPS connectors with pigtails (>=150mm, not cut flush; identification/bench-test leads only) | Yes | ☐ |
 | Power/ground and ignition-trigger wires identifiable | Yes | ☐ |
 | Upper intermediate shaft section | Yes | ☐ |
 | Lower intermediate shaft section | Yes | ☐ |

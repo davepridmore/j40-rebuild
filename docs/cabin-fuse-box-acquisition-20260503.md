@@ -40,7 +40,8 @@ Preferred form:
 - Narrow under-dash shape, similar to a two-column fuse block; avoid modern marine/RV covered blocks if they are physically larger than the donor block.
 - Target physical envelope: roughly no larger than `130 x 70 x 45 mm` unless the electrician approves the mounting location.
 - 6.3 mm male blade/Lucar terminals on the underside or rear, or clean serviceable pigtails.
-- Used donor pigtails should be at least `100 mm` long so the electrician can splice and strain-relieve them correctly.
+- Used donor pigtails should be at least `100 mm` long so the electrician can identify circuits and connector style correctly.
+- Final installation wiring, cable, terminals, sleeving, and loom protection are new-only. Do not use a cut donor loom as final cable stock.
 - Mounting tabs or screw holes suitable for an under-dash bracket.
 - Separate branch circuits; no hidden shared output wiring unless the electrician maps it.
 - Three isolated power inputs if using one consolidated OEM/Hyundai box.
@@ -68,6 +69,7 @@ The 2026-05-04 front/rear photos show a compact 12-fuse block that appears reusa
 - Clean dust and stray copper strands from the rear before use.
 - Reject the block if any fuse clip is loose, overheated, cracked, or missing.
 - Use proper crimped jumpers or a covered bus feed for each 6-fuse group; do not use twisted copper wire as a feed bridge.
+- Make those jumpers and feed leads from new automotive cable and new terminals.
 - Label the two groups on the 12-way block as two of `CONSTANT`, `IGN/RUN`, and `ACC`, then label the external 6-way as the remaining group.
 
 ## Current Buy Candidates - 2026-05-04
@@ -93,7 +95,7 @@ Selected visual reference from the user-supplied compact fuse-box photo:
 - Maruti/Mehran-style compact fuse carrier with fuse-cover legend and rear pigtails.
 - This form factor is acceptable and preferred over marine/RV or modern universal fuse blocks.
 - If sourced in good condition, it can serve as the third 6-fuse group by using six clean fuse positions, or can replace the current 12-way donor for two groups if it has enough positions and better terminals.
-- Buy with the cover and pigtails attached. Reject cover-only listings.
+- Buy with the cover and pigtails attached. Donor pigtails are for identification only; final cable and terminals are new-only. Reject cover-only listings.
 
 Procurement caution: some catalogs list `36717M80021` as `COVER, FUSE BOX`, while parts sellers may use the same family reference for the complete small fuse-box assembly. The market order is for the complete compact fuse carrier with rear terminals/pigtails, not just the cover.
 
@@ -139,7 +141,7 @@ Copy/paste this to Bilal Ganj, Montgomery Road, or the auto electrician:
 >
 > Need three separate under-dash power groups: constant battery, ignition-on/RUN, and ignition part-way/ACC. Each group needs at least 6 fuse positions. We already have one compact old-OEM 12-fuse donor block that may handle two groups if testing proves the rear terminals are individual and clean. Quote one matching compact old-OEM fuse carrier for the third group. It can be 6/8/10/12-way; we only need six usable fuse positions, but it must be similar compactness to the attached donor block.
 >
-> Reference product: Maruti/Mehran-style compact under-dash fuse carrier with cover/legend and rear pigtails, also sold as `Suzuki Mehran fuse box available`, `Suzuki Mehran Genuine Fuse Box`, or `Mehran cabin fuse box`. Standard ATO/ATC medium blade fuse type, compact old under-dash body, mounting tabs, and rear/underside terminals or clean serviceable pigtails preferred. Small OEM donor boxes from Suzuki Mehran/Alto, Daihatsu Cuore, old Toyota, Hyundai, or Honda are acceptable if condition is clean.
+> Reference product: Maruti/Mehran-style compact under-dash fuse carrier with cover/legend and rear pigtails, also sold as `Suzuki Mehran fuse box available`, `Suzuki Mehran Genuine Fuse Box`, or `Mehran cabin fuse box`. Standard ATO/ATC medium blade fuse type, compact old under-dash body, mounting tabs, and rear/underside terminals or clean serviceable pigtails preferred. Small OEM donor boxes from Suzuki Mehran/Alto, Daihatsu Cuore, old Toyota, Hyundai, or Honda are acceptable if condition is clean. Donor pigtails are only for connector/circuit identification; final wiring uses new automotive cable, new terminals, sleeving, and protection.
 >
 > Target size is roughly no bigger than 130 x 70 x 45 mm unless the electrician approves the bracket location. Used pigtails should be at least 100 mm long. If it is a single larger OEM junction box, it must have three isolated input groups that can be mapped as BATT, IGN/RUN, and ACC.
 >
@@ -154,6 +156,7 @@ Copy/paste this to Bilal Ganj, Montgomery Road, or the auto electrician:
 - No heat discoloration, melted plastic, corrosion, broken locks, or cracked mounting ears.
 - Terminal type and orientation are visible before payment.
 - Supplier sends front, rear, side, and scale photos before purchase if not buying in person.
-- If used OEM blocks are selected, pigtails must be long enough to splice properly and every circuit must be continuity-tested.
+- If used OEM blocks are selected, pigtails must be long enough for circuit identification/testing; final leads should be reterminated with new automotive cable and new terminals wherever practical.
+- Do not accept old wiring loom, used cable bundles, brittle insulation, reused terminals, or cut donor wire as final installation material.
 - Confirm each branch circuit is fused at `30A` or lower unless the box is clearly rated higher by the manufacturer.
 - For a consolidated OEM box, mark every fuse slot as `CONSTANT`, `IGN/RUN`, `ACC`, or `UNUSED` before installation.

@@ -21,6 +21,8 @@ Related source lists:
 
 Use `data/manual/rubber_ordering_specs.csv` as the current source of truth for ordering. The older workbook tabs remain source evidence and budget/procurement context, but the order matrix controls the next action and pre-order gates.
 
+Any rubber, hose, boot, grommet, pad, hanger, isolator, bump stop, cable seal, or similar flexible component bought or fabricated for final installation must be new. Old parts and photos are measurement samples only, even when the row is inspection-gated or deferred.
+
 ## Buy Or Lock Now
 
 | Order ID | Item | Action | Gate |
@@ -69,6 +71,7 @@ Use `data/manual/rubber_ordering_specs.csv` as the current source of truth for o
 - Engine air-intake ducting must be oil-mist resistant intake/air-duct rubber or reinforced air duct, not coolant/fuel/vacuum hose.
 - A/C O-rings must be refrigerant-compatible, normally HNBR for an `R134a` system.
 - Body mount rubber must be one matched automotive mount-grade batch. Do not mix old/new, rubber/polyurethane, or different hardnesses side to side.
+- Do not buy used/salvage rubber, used hoses, used grommets, used boots, used hangers, used cable seals, or unknown old stock for final installation.
 - Locally recreated body/front-support rubbers must include first articles, material declaration, Shore A check, critical-dimension report, dry-stack check, and labeled packaging per [rubber_recreation_manufacturing_requirements.csv](../data/manual/rubber_recreation_manufacturing_requirements.csv).
 - Do not order separate leaf spring or shackle bushes until the Ironman kit is physically counted.
 

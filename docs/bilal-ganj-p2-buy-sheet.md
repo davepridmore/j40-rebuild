@@ -56,11 +56,11 @@ Note: the 10-way relay/fuse block is already bought and remains valid as specifi
    - **Exact spec (must be included in one kit)**:
      - Column-assist EPS unit: motor + torque sensor + reduction gear
      - EPS controller/ECU (or integrated control module)
-     - Matching connectors with pigtails (minimum 150mm leads)
+     - Matching connectors with pigtails (minimum 150mm leads, for identification/bench-test only)
      - Upper + lower intermediate shafts with U-joints
      - Steering coupler/spline adapters for FJ40 side fitment
      - Column mount/clamp bracket set + firewall support bracket
-     - 60A fused feed path hardware + ignition trigger lead
+     - New 60A fused feed path wiring/hardware + new ignition trigger lead
      - Fail-safe manual steering operation when assist is off
      - Column-assist conversion only; engine stays installed, with no engine lift or hydraulic pump hardware in this scope.
    - **Bench test before payment**:

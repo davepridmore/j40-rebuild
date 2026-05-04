@@ -1172,6 +1172,62 @@
       notes: "One-piece definition unless old sample proves split stack.",
     },
     {
+      id: "BM-CUP-SM",
+      part: "Small body-mount cup / seat washer",
+      qty: "10 working basis",
+      image: "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
+      imageCaption: "Small body-mount cup/seat sample",
+      spec: "Cut/form ready steel cup washer for BM-SM; OD 64; M10 clearance hole 11; dish/register depth 2-3; steel thickness 2.5-3.0; final dish must match old cup before batch forming.",
+      route: "CNC/waterjet/laser blank, then press/form and coat",
+      files: [
+        ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf"],
+        ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.svg"],
+      ],
+      notes: "Reuse originals only if flat, not thinned, and not cracked.",
+    },
+    {
+      id: "BM-CUP-LG",
+      part: "Large body-mount cup / seat washer",
+      qty: "2 working basis",
+      image: "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
+      imageCaption: "Large cup/seat and stack profile sample",
+      spec: "Cut/form ready steel cup washer for BM-LG; OD 78; M10 clearance hole 11; dish/register depth 2-3; steel thickness 2.5-3.0; final dish must match old cup before batch forming.",
+      route: "CNC/waterjet/laser blank, then press/form and coat",
+      files: [
+        ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf"],
+        ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.svg"],
+      ],
+      notes: "Confirm the large-pair station and cup landing before forming.",
+    },
+    {
+      id: "BM-SHIM-THIN",
+      part: "Thin body-mount alignment shim pack",
+      qty: "1 pack",
+      image: "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+      imageCaption: "Shim, spacer, and rubber isolator sample sorting photo",
+      spec: "New flat slotted steel shims for M10 body mounts: 1 mm x12, 2 mm x12, 3 mm x12, 5 mm x12; slot width 11-12; plate footprint must fully support the original pedestal/contact patch.",
+      route: "buy/cut new flat steel only; CNC/laser after station footprint trace",
+      files: [
+        ["Machine CSV", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv"],
+        ["Machine JSON", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json"],
+      ],
+      notes: "No washer stacks inside the rubber sandwich. Preserve original shim stack by station.",
+    },
+    {
+      id: "BM-SHIM-THICK",
+      part: "Thick OE-style spacer control pack",
+      qty: "1 pack",
+      image: "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+      imageCaption: "Shim, spacer, and rubber isolator sample sorting photo",
+      spec: "New flat steel spacer plates for controlled trial fit: 5 mm x4, 10 mm x4, 15 mm x4. Record Toyota reference thicknesses 22.8 and 27.8, but cut/buy those only if the original station map proves need.",
+      route: "buy/cut new flat steel only; station map controls release",
+      files: [
+        ["Machine CSV", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv"],
+        ["Machine JSON", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json"],
+      ],
+      notes: "Use only at original metal-to-metal shim locations, not as random height packing.",
+    },
+    {
       id: "FS-OVAL",
       part: "Front-support two-hole oval pad",
       qty: "2",
@@ -1231,33 +1287,42 @@
       id: "BUMP-F-L",
       part: "Front left spring bump stop",
       qty: "1",
-      image: "../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg",
-      imageCaption: "Bump stop shape reference",
+      image: "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+      imageCaption: "Rubber bumper/isolator sample sorting photo",
       spec: "Not a CNC part. Buy Toyota/manufacturer-style 48304-60010 direct replacement. Local reproduction requires physical sample or 3D scan and a mould matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face.",
       route: "buy manufacturer molded part preferred",
-      files: [],
+      files: [
+        ["Machine CSV", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv"],
+        ["Machine JSON", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json"],
+      ],
       notes: "Verify left-front bracket and axle contact point.",
     },
     {
       id: "BUMP-F-R",
       part: "Front right spring bump stop",
       qty: "1",
-      image: "../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg",
-      imageCaption: "Bump stop shape reference",
+      image: "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+      imageCaption: "Rubber bumper/isolator sample sorting photo",
       spec: "Not a CNC part. Buy Toyota/manufacturer-style 48304-60020 direct replacement. This is the separate shorter/right-side front stop. Local reproduction requires physical sample or 3D scan and a mould.",
       route: "buy manufacturer molded part preferred",
-      files: [],
+      files: [
+        ["Machine CSV", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv"],
+        ["Machine JSON", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json"],
+      ],
       notes: "Do not install left stop or universal stop here.",
     },
     {
       id: "BUMP-R",
       part: "Rear spring bump stops",
       qty: "2",
-      image: "../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg",
-      imageCaption: "Bump stop shape reference",
+      image: "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+      imageCaption: "Rubber bumper/isolator sample sorting photo",
       spec: "Not a CNC part. Buy Toyota/manufacturer-style 48304-60010 direct replacement for rear pair. Local reproduction requires physical sample or 3D scan and a mould matching rear bracket/base, bolt pattern/thread, height, progressive profile, and contact face.",
       route: "buy manufacturer molded part preferred",
-      files: [],
+      files: [
+        ["Machine CSV", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv"],
+        ["Machine JSON", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json"],
+      ],
       notes: "Replace as matched rear pair after suspension ride height is known.",
     },
   ];
@@ -1265,6 +1330,8 @@
   const CHASSIS_RUBBER_REFERENCE_IMAGES = [
     ["../../photos/20260502_004413_gp_Qno8OVRg.jpg", "Circular cushion top reference"],
     ["../../photos/20260502_004442_gp_7WcFHjLQ.jpg", "Circular annular cushion reference 2"],
+    ["../../photos/20260502_004429_gp_KJHxGcCA.jpg", "Cup/seat and stack profile reference"],
+    ["../../photos/20260503_153832_gp_0FJJiLHg.jpg", "Shim, spacer, and rubber bumper/isolator sorting reference"],
     ["../../photos/20260502_004254_gp_Hm9RR5DQ.jpg", "Long strip height reference"],
     ["../../photos/20260502_004314_gp_wuzpgNrA.jpg", "Long strip side reference"],
     ["../../photos/20260501_193755_gp_cuaY6sgg.jpg", "Rear exhaust and bracket context"],
@@ -1306,13 +1373,13 @@
     return `
       <article class="card pipe-requirements-card">
         <div class="detail-header">
-          <h3>Rubber Spec</h3>
+          <h3>Rubber / Shim Spec</h3>
           <div class="chip-row">
             ${chip("All dimensions mm")}
             ${chip("Shore A 60 +/-5")}
           </div>
         </div>
-        <p class="small-muted">Body/front-support rubbers: new black solid EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5. Exhaust holder: Toyota 90917-08004 / 17572-92000 teardrop exhaust cushion style or sample-matched molded copy. Bump stops: OEM/manufacturer-style molded stops where available; fabricate only by exact sample and bracket match. Reject tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, or universal bump stops that do not match the axle contact point.</p>
+        <p class="small-muted">Body/front-support rubbers: new black solid EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5. Cups and shims: new flat or formed steel only, deburred and corrosion protected. Exhaust holder: Toyota 90917-08004 / 17572-92000 teardrop exhaust cushion style or sample-matched molded copy. Bump stops: OEM/manufacturer-style molded stops where available; fabricate only by exact sample and bracket match. Reject tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, washer stacks, or universal bump stops that do not match the axle contact point.</p>
         <p class="small-muted">Machine package: <a href="../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv">machine_definitions.csv</a>, <a href="../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json">machine_definitions.json</a>, <a href="../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf">dimension sheet PDF</a>.</p>
         <div class="table-wrap requirement-table-wrap">
           <table class="requirement-table chassis-rubber-spec-table">
@@ -1346,8 +1413,8 @@
             </tbody>
           </table>
         </div>
-        <p class="small-muted">Tolerances: circular cushion OD/ID +/-1.0, height +/-0.5, bore/register concentricity <=1.0; FS-OVAL outside +/-1.0, hole position +/-0.5, thickness +/-0.5; strip outline +/-1.0, holes +/-0.5, thickness +/-0.5. Bump stops are not simple cut rubber; OEM/manufacturer part or exact molded sample controls.</p>
-        <p class="small-muted">Lower holds: BM-SM split-stack check if the old sample separates; FS-STRIP-L/R require physical carrier trace before final CNC cut; EXH-HGR-90917 should be bought as Toyota 90917-08004 / 17572-92000 where available, or molded only after a genuine sample confirms side profile, insert depth, and exact thickness; bump stops need bracket/contact verification before purchase.</p>
+        <p class="small-muted">Tolerances: circular cushion OD/ID +/-1.0, height +/-0.5, bore/register concentricity <=1.0; cup OD +/-1.0, hole +0.3/-0.0, dish 2-3; shim/spacer thickness +/-0.1 after station trace; FS-OVAL outside +/-1.0, hole position +/-0.5, thickness +/-0.5; strip outline +/-1.0, holes +/-0.5, thickness +/-0.5. Bump stops are not simple cut rubber; OEM/manufacturer part or exact molded sample controls.</p>
+        <p class="small-muted">Lower holds: BM-SM split-stack check if the old sample separates; BM-SHIM rows require preserved station footprint measurement before CNC/laser cutting; FS-STRIP-L/R require physical carrier trace before final CNC cut; EXH-HGR-90917 should be bought as Toyota 90917-08004 / 17572-92000 where available, or molded only after a genuine sample confirms side profile, insert depth, and exact thickness; bump stops need bracket/contact verification before purchase.</p>
       </article>
     `;
   }
@@ -1402,6 +1469,7 @@
           <table class="requirement-table body-mount-order-table">
             <thead>
               <tr>
+                <th>Evidence</th>
                 <th>Line</th>
                 <th>Qty</th>
                 <th>Status</th>
@@ -1413,6 +1481,11 @@
               ${source
                 .map((row) => `
                   <tr>
+                    <td class="requirement-evidence-cell">${renderRequirementEvidenceImages({
+                      evidence_images: scoutEvidenceImages(row),
+                      photo_status: row.order_release_state,
+                      requirement_name: row.item,
+                    })}</td>
                     <td>
                       <strong>${escapeHtml(row.order_line_id || "")} · ${escapeHtml(row.item || "")}</strong>
                       <div class="small-muted">${escapeHtml(row.part_number_or_code || "")}</div>
@@ -1467,6 +1540,7 @@
           <table class="requirement-table body-mount-actions-table">
             <thead>
               <tr>
+                <th>Evidence</th>
                 <th>Action</th>
                 <th>Status</th>
                 <th>Blocks</th>
@@ -1478,6 +1552,11 @@
               ${source
                 .map((row) => `
                   <tr>
+                    <td class="requirement-evidence-cell">${renderRequirementEvidenceImages({
+                      evidence_images: scoutEvidenceImages(row),
+                      photo_status: row.status,
+                      requirement_name: row.action_id,
+                    })}</td>
                     <td>
                       <strong>${escapeHtml(row.action_id || "")}</strong>
                       <div>${escapeHtml(row.action || "")}</div>
@@ -1517,6 +1596,7 @@
           <table class="requirement-table body-mount-station-table">
             <thead>
               <tr>
+                <th>Evidence</th>
                 <th>Station</th>
                 <th>Expected Parts</th>
                 <th>Measurements</th>
@@ -1528,6 +1608,11 @@
               ${source
                 .map((row) => `
                   <tr>
+                    <td class="requirement-evidence-cell">${renderRequirementEvidenceImages({
+                      evidence_images: scoutEvidenceImages(row),
+                      photo_status: row.release_status,
+                      requirement_name: row.vehicle_position,
+                    })}</td>
                     <td>
                       <strong>${escapeHtml(row.station_id || "")}</strong>
                       <div class="small-muted">${escapeHtml(formatToken(row.vehicle_position || ""))}</div>
@@ -1582,6 +1667,7 @@
           <table class="requirement-table replacement-pipe-order-table">
             <thead>
               <tr>
+                <th>Evidence</th>
                 <th>Line</th>
                 <th>Qty</th>
                 <th>Status</th>
@@ -1590,36 +1676,47 @@
               </tr>
             </thead>
             <tbody>
-              ${source
-                .map((row) => `
-                  <tr>
-                    <td>
-                      <strong>${escapeHtml(row.order_line_id || "")} · ${escapeHtml(row.item || "")}</strong>
-                      ${row.part_number_or_code ? `<div class="small-muted">Reference: ${escapeHtml(row.part_number_or_code || "")}</div>` : ""}
-                      <div class="small-muted">${escapeHtml(formatToken(row.route || ""))}</div>
-                    </td>
-                    <td>
-                      <div>Required: ${escapeHtml(row.qty_required || "-")}</div>
-                      <div class="small-muted">Order: ${escapeHtml(row.qty_to_order || "-")}</div>
-                    </td>
-                    <td>
-                      <div class="status-stack">
-                        ${statusChip(row.spec_status || "spec_ready")}
-                        ${statusChip(row.order_release_state || "spec_ready")}
-                      </div>
-                    </td>
-                    <td>
-                      ${row.dimension_spec_mm ? `<div><strong>Dimensions:</strong> ${escapeHtml(row.dimension_spec_mm)}</div>` : ""}
-                      ${escapeHtml(row.exact_order_spec || "")}
-                      ${row.material_spec ? `<div class="small-muted requirement-material">${escapeHtml(row.material_spec)}</div>` : ""}
-                      ${row.source_basis ? `<div class="small-muted requirement-material">Source: ${escapeHtml(row.source_basis)}</div>` : ""}
-                    </td>
-                    <td>
-                      ${escapeHtml(row.user_action_required || "")}
-                      ${row.do_not_order_if ? `<div class="requirement-action"><strong>Do not order if:</strong> ${escapeHtml(row.do_not_order_if)}</div>` : ""}
-                      ${row.notes ? `<div class="small-muted requirement-material">${escapeHtml(row.notes)}</div>` : ""}
-                    </td>
-                  </tr>
+              ${groupScoutRows(source, "pipes")
+                .map((group) => `
+                  ${renderScoutGroupRow(group, 6)}
+                  ${group.rows
+                    .map((row) => `
+                      <tr>
+                        <td class="requirement-evidence-cell">${renderRequirementEvidenceImages({
+                          evidence_images: scoutEvidenceImages(row),
+                          photo_status: row.order_release_state,
+                          requirement_name: row.item,
+                        })}</td>
+                        <td>
+                          <strong>${escapeHtml(row.order_line_id || "")} · ${escapeHtml(row.item || "")}</strong>
+                          ${row.part_number_or_code ? `<div class="small-muted">Reference: ${escapeHtml(row.part_number_or_code || "")}</div>` : ""}
+                          <div class="small-muted">${escapeHtml(scoutPipeGroup(row).label || formatToken(row.route || ""))}</div>
+                        </td>
+                        <td>
+                          <div>Required: ${escapeHtml(row.qty_required || "-")}</div>
+                          <div class="small-muted">Order: ${escapeHtml(row.qty_to_order || "-")}</div>
+                        </td>
+                        <td>
+                          <div class="status-stack">
+                            ${statusChip(row.spec_status || "spec_ready")}
+                            ${statusChip(row.order_release_state || "spec_ready")}
+                          </div>
+                        </td>
+                        <td>
+                          ${row.dimension_spec_mm ? `<div><strong>Dimensions:</strong> ${escapeHtml(row.dimension_spec_mm)}</div>` : ""}
+                          ${escapeHtml(row.exact_order_spec || "")}
+                          ${renderScoutField("Connectors/fittings", scoutConnectorOrFittingText(row))}
+                          ${row.material_spec ? `<div class="small-muted requirement-material">${escapeHtml(row.material_spec)}</div>` : ""}
+                          ${row.source_basis ? `<div class="small-muted requirement-material">Source: ${escapeHtml(row.source_basis)}</div>` : ""}
+                        </td>
+                        <td>
+                          ${escapeHtml(row.user_action_required || "")}
+                          ${row.do_not_order_if ? `<div class="requirement-action"><strong>Do not order if:</strong> ${escapeHtml(row.do_not_order_if)}</div>` : ""}
+                          ${row.notes ? `<div class="small-muted requirement-material">${escapeHtml(row.notes)}</div>` : ""}
+                        </td>
+                      </tr>
+                    `)
+                    .join("")}
                 `)
                 .join("")}
             </tbody>
@@ -1648,6 +1745,7 @@
           <table class="requirement-table replacement-pipe-actions-table">
             <thead>
               <tr>
+                <th>Evidence</th>
                 <th>Action</th>
                 <th>Status</th>
                 <th>Blocks</th>
@@ -1659,6 +1757,11 @@
               ${source
                 .map((row) => `
                   <tr>
+                    <td class="requirement-evidence-cell">${renderRequirementEvidenceImages({
+                      evidence_images: scoutEvidenceImages(row),
+                      photo_status: row.status,
+                      requirement_name: row.action_id,
+                    })}</td>
                     <td>
                       <strong>${escapeHtml(row.action_id || "")}</strong>
                       <div>${escapeHtml(row.action || "")}</div>
@@ -1698,6 +1801,7 @@
           <table class="requirement-table replacement-pipe-circuit-table">
             <thead>
               <tr>
+                <th>Evidence</th>
                 <th>Circuit</th>
                 <th>Order Lines</th>
                 <th>Ends / Length</th>
@@ -1706,32 +1810,42 @@
               </tr>
             </thead>
             <tbody>
-              ${source
-                .map((row) => `
-                  <tr>
-                    <td>
-                      <strong>${escapeHtml(row.circuit_id || "")} · ${escapeHtml(row.pipe_or_line || "")}</strong>
-                      <div class="small-muted">${escapeHtml(row.vehicle_location || "")}</div>
-                      <div class="small-muted">${escapeHtml(formatToken(row.photo_status || ""))}</div>
-                    </td>
-                    <td>${escapeHtml(row.order_lines || "")}</td>
-                    <td>
-                      <div>A: ${escapeHtml(row.barb_or_fitting_a || "-")}</div>
-                      <div class="small-muted">B: ${escapeHtml(row.barb_or_fitting_b || "-")}</div>
-                      <div class="small-muted">Length: ${escapeHtml(row.route_length_mm || "-")}</div>
-                    </td>
-                    <td>
-                      <div>${escapeHtml(row.tube_or_hose_od_id || "")}</div>
-                      <div class="small-muted">Thread/flare: ${escapeHtml(row.thread_or_flare || "-")}</div>
-                      <div class="small-muted">Template: ${escapeHtml(row.bend_template_status || "-")}</div>
-                      <div class="small-muted">Support: ${escapeHtml(row.clip_support_status || "-")}</div>
-                    </td>
-                    <td>
-                      ${statusChip(row.release_status || "open")}
-                      <div class="small-muted">${escapeHtml(row.action_required || "")}</div>
-                      ${row.notes ? `<div class="small-muted requirement-material">${escapeHtml(row.notes)}</div>` : ""}
-                    </td>
-                  </tr>
+              ${groupScoutRows(source, "pipes")
+                .map((group) => `
+                  ${renderScoutGroupRow(group, 6)}
+                  ${group.rows
+                    .map((row) => `
+                      <tr>
+                        <td class="requirement-evidence-cell">${renderRequirementEvidenceImages({
+                          evidence_images: scoutEvidenceImages(row),
+                          photo_status: row.photo_status,
+                          requirement_name: row.pipe_or_line,
+                        })}</td>
+                        <td>
+                          <strong>${escapeHtml(row.circuit_id || "")} · ${escapeHtml(row.pipe_or_line || "")}</strong>
+                          <div class="small-muted">${escapeHtml(row.vehicle_location || "")}</div>
+                          <div class="small-muted">${escapeHtml(formatToken(row.photo_status || ""))}</div>
+                        </td>
+                        <td>${escapeHtml(row.order_lines || "")}</td>
+                        <td>
+                          <div>A: ${escapeHtml(row.barb_or_fitting_a || "-")}</div>
+                          <div class="small-muted">B: ${escapeHtml(row.barb_or_fitting_b || "-")}</div>
+                          <div class="small-muted">Length: ${escapeHtml(row.route_length_mm || "-")}</div>
+                        </td>
+                        <td>
+                          <div>${escapeHtml(row.tube_or_hose_od_id || "")}</div>
+                          <div class="small-muted">Thread/flare: ${escapeHtml(row.thread_or_flare || "-")}</div>
+                          <div class="small-muted">Template: ${escapeHtml(row.bend_template_status || "-")}</div>
+                          <div class="small-muted">Support: ${escapeHtml(row.clip_support_status || "-")}</div>
+                        </td>
+                        <td>
+                          ${statusChip(row.release_status || "open")}
+                          <div class="small-muted">${escapeHtml(row.action_required || "")}</div>
+                          ${row.notes ? `<div class="small-muted requirement-material">${escapeHtml(row.notes)}</div>` : ""}
+                        </td>
+                      </tr>
+                    `)
+                    .join("")}
                 `)
                 .join("")}
             </tbody>
@@ -2559,6 +2673,70 @@
     });
   }
 
+  function scoutEvidenceImages(row) {
+    const direct = Array.isArray(row && row.evidenceImages) ? row.evidenceImages : [];
+    const generated = Array.isArray(row && row.evidence_images) ? row.evidence_images : [];
+    return filterVisibleImages([...direct, ...generated]);
+  }
+
+  function preferredScoutMediaIds(row) {
+    const id = cleanString((row && (row.id || row.order_id || row.order_line_id || row.requirement_id)) || "").toUpperCase();
+    const text = [
+      id,
+      row && row.item,
+      row && row.requirement_name,
+      row && row.partNumber,
+      row && row.part_number_or_code,
+    ]
+      .map((value) => cleanString(value).toLowerCase())
+      .join(" ");
+    if (id === "CR-MAIN-001" || id === "BM-SM" || text.includes("small circular body-mount")) {
+      return ["20260502_004442_gp_7WcFHjLQ"];
+    }
+    if (id === "CR-MAIN-002" || id === "BM-LG" || text.includes("large circular body-mount")) {
+      return ["20260502_004419_gp_ZPXJRBzg"];
+    }
+    if (id === "CR-MAIN-004" || text.includes("cup") || text.includes("seat washer")) {
+      return ["20260502_004413_gp_Qno8OVRg", "20260502_004429_gp_KJHxGcCA"];
+    }
+    if (id === "CR-SHIM-001" || id.includes("BM-SHIM") || text.includes("shim") || text.includes("spacer pack")) {
+      return ["20260503_153832_gp_0FJJiLHg", "20260502_004429_gp_KJHxGcCA", "20260502_004231_gp_CfosvPIg"];
+    }
+    if (id.includes("BUMP") || text.includes("bump stop") || text.includes("rubber bumper") || text.includes("isolator")) {
+      return ["20260503_153832_gp_0FJJiLHg"];
+    }
+    if (id === "CR-FRONT-001" || id === "FS-OVAL" || text.includes("two-hole oval")) {
+      return ["20260502_004345_gp_yK8VYzMQ"];
+    }
+    if (id === "CR-FRONT-002" || id === "FS-STRIP-L" || text.includes("left front-support strip")) {
+      return ["20260502_004201_gp_zfUSmKJg"];
+    }
+    if (id === "CR-FRONT-003" || id === "FS-STRIP-R" || text.includes("right front-support strip")) {
+      return ["20260502_004222_gp_PKRe5HSQ"];
+    }
+    if (id === "RPO-COOL-005" || id === "HLS-12" || text.includes("formed metal coolant")) {
+      return ["20260502_004106_gp_wlYlUahA", "20260502_004044_gp_Hx4Yo0Qg"];
+    }
+    if (id === "RPO-COOL-006A" || id === "RPO-COOL-006B" || id === "HLS-05A" || id === "HLS-05B" || text.includes("connector hose")) {
+      return ["20260502_004133_gp_ZEpqmARA", "20260502_004044_gp_Hx4Yo0Qg"];
+    }
+    return [];
+  }
+
+  function bestScoutOriginalImage(row) {
+    const evidence = scoutEvidenceImages(row);
+    const preferredIds = preferredScoutMediaIds(row);
+    const preferred = evidence.find((image) => preferredIds.includes(cleanString(image && image.media_id)));
+    if (preferred) {
+      return preferred;
+    }
+    if (evidence.length) {
+      return evidence[0];
+    }
+    const image = row && row.image && !isImageDeleted(row.image) ? row.image : null;
+    return image || null;
+  }
+
   function scoutOrderSpecRows(rows, limit) {
     const sourceRows = Array.isArray(rows) ? rows : [];
     const maxRows = Number.isFinite(limit) ? limit : sourceRows.length;
@@ -2580,7 +2758,7 @@
         image: row.image || null,
         evidenceImages: Array.isArray(row.evidence_images) ? row.evidence_images : [],
       };
-      specRow.image = specRow.image || scoutComponentImage(specRow);
+      specRow.image = bestScoutOriginalImage(specRow) || specRow.image || scoutComponentImage(specRow);
       return specRow;
     });
   }
@@ -2628,6 +2806,8 @@
       "BM-LG",
       "BM-CUP-SM",
       "BM-CUP-LG",
+      "BM-SHIM-THIN",
+      "BM-SHIM-THICK",
       "FS-OVAL",
       "FS-STRIP-L",
       "FS-STRIP-R",
@@ -2653,6 +2833,9 @@
     }
     if (hasAny("body-mount cup", "body mount cup", "cup / seat", "cup washer", "seat washer", "bm-cup")) {
       return previous("../../photos/20260502_004413_gp_Qno8OVRg.jpg", "previous body-mount cup/seat sample", "20260502_004413_gp_Qno8OVRg", ["bm-cup", "previous"]);
+    }
+    if (rowId === "BM-SHIM-THIN" || rowId === "BM-SHIM-THICK" || hasAny("bm-shim", "alignment shim", "shim pack", "spacer control pack")) {
+      return previous("../../photos/20260503_153832_gp_0FJJiLHg.jpg", "previous shim/spacer and rubber isolator sorting photo", "20260503_153832_gp_0FJJiLHg", ["bm-shim", "previous"]);
     }
     if (rowId === "BM-LG" || partNumber.includes("bm_lg") || hasAny("large circular body-mount", "large circular body mount", "large body-mount cushion", "large body mount cushion")) {
       return previous("../../photos/20260502_004419_gp_ZPXJRBzg.jpg", "previous large circular body-mount cushion sample", "20260502_004419_gp_ZPXJRBzg", ["bm-lg", "previous"]);
@@ -2759,17 +2942,20 @@
     if (hasAny("p-clips", "p clips", "support clips", "line protection", "edge protection")) {
       return ref("../../deliverables/selling_site_images/images/reference_catalog/clamp.jpg", "line clip/clamp reference image", "clamp");
     }
-    if (hasAny("cup washer", "crush sleeve", "shim")) {
-      return ref("../../deliverables/selling_site_images/images/reference_catalog/body_shims.jpg", "body shim/washer reference image", "body_shims");
+    if (has("bump", "stop") || hasAny("rubber bumpers", "rubber bumper", "isolators")) {
+      return ref("../../photos/20260503_153832_gp_0FJJiLHg.jpg", "rubber bumper/isolator sample sorting photo", "rubber_bumper_isolator_sample");
+    }
+    if (hasAny("shim", "spacer pack", "spacer control pack")) {
+      return ref("../../photos/20260503_153832_gp_0FJJiLHg.jpg", "shim/spacer sample sorting photo", "shim_spacer_sample_sort");
+    }
+    if (hasAny("cup washer", "cup / seat", "seat washer", "crush sleeve")) {
+      return ref("../../photos/20260502_004413_gp_Qno8OVRg.jpg", "body-mount cup/seat sample photo", "body_mount_cup_seat_sample");
     }
     if (has("body", "mount") || hasAny("cushion", "front-support", "front support", "oval pad")) {
       return ref("../../deliverables/selling_site_images/images/reference_catalog/body_mount_kit.jpg", "body mount rubber reference image", "body_mount_kit");
     }
     if (has("exhaust", "hanger")) {
       return ref("../../deliverables/selling_site_images/images/reference_catalog/exhaust_hanger.jpg", "exhaust hanger reference image", "exhaust_hanger");
-    }
-    if (has("bump", "stop")) {
-      return ref("../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg", "bump stop reference image", "bump_stop");
     }
     if (hasAny("glow plug", "heat plug")) {
       return ref("../../deliverables/selling_site_images/images/reference_catalog/glow_plugs.jpg", "glow plug reference image", "glow_plugs");
@@ -2891,12 +3077,13 @@
       scope: "Exact order sheet",
       quantity: "23 HLS line items plus 21 pipe release-spec lines",
       plain_stall_request:
-        "I need new J40/HJ47 hose, pipe, hard-line, brake/clutch hydraulic, fuel, vacuum, and support-clip components from the order sheet. Use those IDs and specs; do not quote used parts or generic rubber pipe.",
+        "I need new replacement components only for the J40/HJ47 hose, pipe, hard-line, brake/clutch hydraulic, fuel, vacuum, support-clip, and parking-brake cable lines from the order sheet. Use those IDs and specs; old parts/photos are samples only. Do not quote used parts or generic rubber pipe.",
       buy_target:
-        "Use the exact requirement list below and the linked handoff pages. New EPDM for coolant/heater, new diesel-rated fuel hose, new reinforced vacuum hose, new brake-rated hard line, and new complete crimped DOT/SAE J1401 or OEM-equivalent brake/clutch hose assemblies only.",
+        "Use the exact requirement list below and the linked handoff pages. New EPDM for coolant/heater, new diesel-rated fuel hose, new reinforced vacuum hose, new brake-rated hard line, new parking-brake cable assemblies, and new complete crimped DOT/SAE J1401 or OEM-equivalent brake/clutch hose assemblies only.",
       must_include: [
         "Correct inside diameter, length, bends, or end fittings matched to the old sample.",
         "New clamps, clips, or fittings quoted separately when needed.",
+        "Every hose, rubber, clamp, clip, fitting, hard line, hydraulic assembly, and cable used for final installation must be new.",
         "Brake and clutch flex hoses supplied as complete crimped assemblies.",
         "Brake hard-line material only in new brake-rated 4.75 mm / 3/16 in tube.",
         "Visible rating or brand markings where the hose type normally has markings.",
@@ -2911,7 +3098,7 @@
         "Seller gives generic hydraulic or air hose for fuel, coolant, vacuum, brake, or clutch use.",
         "Brake or clutch hose is loose rubber hose instead of a crimped hydraulic assembly.",
         "End fittings, bend, diameter, length, or clip style do not match the sample or measurement.",
-        "Any hose, line, clip, clamp, or fitting is used, old stock, cracked, swollen, oily, unmarked where markings are required, or already cut too short.",
+        "Any hose, rubber, hydraulic assembly, cable, wire, line, clip, clamp, or fitting is used, salvage, old stock, cracked, swollen, oily, unmarked where markings are required, or already cut too short.",
       ],
       capture_before_leaving: [
         "Photo of each new hose or line beside the old sample or measurement note.",
@@ -2921,7 +3108,7 @@
       price_guidance: {
         rule: "Quote each line separately. Do not pay for any brake, clutch, fuel, or vacuum item until sample match and material type are clear.",
       },
-      decision_rule: "Quote every hose, brake, clutch, fuel, and vacuum item as a new replacement component; buy only the new lines that match the old sample or confirmed measurement and have the correct material rating.",
+      decision_rule: "Quote every hose, rubber, brake, clutch, fuel, vacuum, line-support, and cable item as a new replacement component; buy only the new items that match the old sample or confirmed measurement and have the correct material rating.",
       links: [
         scoutDocLink("docs/hose-local-scout-handoff.md", "Hose local scout handoff"),
         scoutDocLink("docs/local-market-component-order-spec-20260504.md", "Exact local-market order spec"),
@@ -2934,14 +3121,14 @@
       scope: "Exact requirement sheet",
       quantity: "9 rubber requirements plus controlled hardware/order-release lines",
       plain_stall_request:
-        "I need the exact J40 body/front-support rubber requirements listed in the spec sheet, plus sleeves, cup washers, shims, spacers, bolts, nuts, and washers as separate controlled lines. No used rubber.",
+        "I need the exact new-only J40 body/front-support rubber requirements listed in the spec sheet, plus sleeves, cup washers, shims, spacers, bolts, nuts, and washers as separate controlled lines. Old rubbers/photos are samples only. No used or salvage rubber.",
       buy_target:
-        "Use the exact requirement list below and the linked rubber-ordering pages. Buy a complete matched OE/reproduction kit only if it matches the actual station layout, or fabricate from the measured BM-LG, BM-SM, FS-OVAL, FS-STRIP-L, and FS-STRIP-R specs.",
+        "Use the exact requirement list below and the linked rubber-ordering pages. Buy a complete matched new OE/reproduction kit only if it matches the actual station layout, or fabricate new parts from the measured BM-LG, BM-SM, FS-OVAL, FS-STRIP-L, and FS-STRIP-R specs.",
       must_include: [
         "Upper and lower body mount rubber cushions for the required body stations.",
         "Steel sleeves, cup or seat washers, shims, spacers, bolts, nuts, and washers quoted separately.",
         "Rubber dimensions shown clearly: outside diameter, inside hole, thickness, and sleeve length.",
-        "New rubber only, with no cracks, hard spots, or old compression damage.",
+        "New rubber only for every fitted rubber, grommet, pad, cushion, boot, sleeve cover, isolator, bump stop, and hanger.",
       ],
       bench_test: [
         "Compare every rubber and sleeve to the old sample or written dimension sheet.",
@@ -2950,7 +3137,7 @@
         "Keep shim and spacer thicknesses separated and labelled.",
       ],
       reject_if: [
-        "Seller offers old used rubber, unknown mixed rubber, sponge rubber, or cracked stock.",
+        "Seller offers old used rubber, salvage rubber, unknown mixed rubber, sponge rubber, or cracked stock.",
         "Sleeve hole, rubber height, washer shape, or shim thickness does not match the measured plan.",
         "Hardware has no grade mark, wrong pitch, damaged threads, or heavy rust.",
         "Seller will not allow measurement photos before payment.",
@@ -2963,7 +3150,7 @@
       price_guidance: {
         rule: "Keep rubber, sleeves, shims, and bolts as separate quote lines so a wrong line can be rejected without losing the whole package.",
       },
-      decision_rule: "Buy only after the old mount samples or measurement sheet prove the rubber shape, sleeve size, and hardware stack.",
+      decision_rule: "Buy only new rubber after the old mount samples or measurement sheet prove the rubber shape, sleeve size, and hardware stack.",
       links: [
         scoutDocLink("docs/rubber-ordering-spec-20260502.md", "Rubber ordering spec"),
         scoutDocLink("docs/local-market-component-order-spec-20260504.md", "Exact local-market order spec"),
@@ -2976,12 +3163,12 @@
       scope: "Compact OEM-style add-on",
       quantity: "1 compact add-on carrier to match the reusable block",
       plain_stall_request:
-        "I need one compact old-OEM under-dash blade-fuse / junction-block style carrier to match the blade-style block extracted from the existing car. Six positions must be usable, with clean rear terminals or serviceable pigtails.",
+        "I need one compact old-OEM under-dash blade-fuse / junction-block style carrier to match the blade-style block extracted from the existing car. Six positions must be usable, with clean rear terminals or serviceable pigtails. Any final wiring, cable, terminals, insulation, and loom protection must be new.",
       buy_target:
-        "Reuse the existing extracted compact blade-style donor block for two 6-fuse groups if it tests clean, then buy one matching compact old-OEM add-on carrier for the third group. Prefer Suzuki Mehran/Maruti 800, Daihatsu Cuore, old Alto, old Corolla, or similar compact cabin carriers.",
+        "Reuse the existing extracted compact blade-style donor block for two 6-fuse groups if it tests clean, then buy one matching compact old-OEM add-on carrier for the third group. Prefer Suzuki Mehran/Maruti 800, Daihatsu Cuore, old Alto, old Corolla, or similar compact cabin carriers. Donor pigtails identify circuits only; final install uses new automotive cable, terminals, sleeving, and protection.",
       must_include: [
         "Fuse box body, cover, terminals, and mounting points intact.",
-        "Original plugs or at least 100-150 mm wiring tails if it is a used donor fuse box.",
+        "Original plugs or at least 100-150 mm wiring tails if it is a used donor fuse box; those tails are samples/identification leads, not final cable stock.",
         "Six usable fuse positions with clean rear terminals or pigtails.",
         "Fuse rating markings readable on cover or body where present.",
       ],
@@ -2994,6 +3181,7 @@
       reject_if: [
         "Melted plastic, cracked body, missing cover, broken mounting tabs, or loose terminals.",
         "Cut-flush wires or missing plugs that make the feeds impossible to identify.",
+        "Seller offers an old cut loom, used cable bundle, or used terminals as final wiring material.",
         "Large engine-bay relay box, marine/RV stud block, fuse-cover-only listing, or loose fuse assortment.",
         "Single-bus universal block that cannot be split safely for the planned grouped inputs.",
       ],
@@ -3003,7 +3191,7 @@
         "Seller name, phone number, shop location, price, and return terms.",
       ],
       price_guidance: {
-        rule: "Quote the used OEM-style box and any new-quality alternative separately. Do not buy a damaged donor box just because it is cheap.",
+        rule: "Quote the used OEM-style carrier and any new-quality alternative separately. Final wiring/cable/terminal consumables are new-only.",
       },
       decision_rule: "Buy only if the box is physically sound, terminals are tight, and the input/feed layout can be identified.",
       links: [
@@ -3421,6 +3609,7 @@
         "Use a CNC router, plastic-sheet workshop, or print service that can quote material, lead time, finish, tolerance, and one-piece price clearly before cutting or printing.",
       must_include: [
         "Material option clearly named: HDPE, ABS, G10, phenolic, or suitable equivalent.",
+        "New sheet/print material only; no reused plastic, old rubber, scrap offcut of unknown material, or secondhand insulation.",
         "One-piece price, setup charge if any, and lead time.",
         "Basic tolerance and finish expectation before cutting or printing.",
         "Agreement that this is only the non-conductive underlay; metal plates/brackets are owner-made.",
@@ -3432,6 +3621,7 @@
       ],
       reject_if: [
         "Shop cannot identify material, scale, cut/print orientation, or lead time.",
+        "Material is recycled/unknown offcut stock or previously used electrical insulation.",
         "Quote includes metal plate/bracket fabrication under this row.",
         "Price is given without seeing the MIDI holder subplate file or understanding quantity.",
       ],
@@ -3515,8 +3705,8 @@
       {
         id: "pipes",
         title: "Pipes + Hoses",
-        description: "Use the exact order sheet for every hose, pipe, hard line, clip, and hydraulic assembly.",
-        chips: ["23 HLS lines", "21 release specs", "No generic hydraulic hose"],
+        description: "Use the exact order sheet for every hose, pipe, hard line, clip, cable, and hydraulic assembly. These final-install items are new-only.",
+        chips: ["New-only final parts", "23 HLS lines", "No generic hydraulic hose"],
         parts: pipeParts,
         marketSpecs: attachScoutImage(
           [hoseMarketSpec],
@@ -3534,8 +3724,8 @@
       {
         id: "rubbers",
         title: "Rubbers",
-        description: "Use the exact rubber requirement list and controlled body-mount release gates.",
-        chips: ["9 rubber requirements", "Fabricate or exact-kit only", "No salvage rubber"],
+        description: "Use the exact rubber requirement list and controlled body-mount release gates. Every fitted rubber, boot, grommet, pad, hanger, and isolator is new-only.",
+        chips: ["New-only rubber", "9 rubber requirements", "No salvage rubber"],
         parts: rubberParts,
         marketSpecs: attachScoutImage(
           [rubberMarketSpec],
@@ -3552,8 +3742,8 @@
       {
         id: "additional-fuse-box",
         title: "Additional Fuse Box",
-        description: "Compact OEM-style cabin fuse box with sound terminals and identifiable feeds.",
-        chips: ["Compact OEM style", "One add-on box", "Three isolated input groups"],
+        description: "Compact OEM-style cabin fuse box with sound terminals and identifiable feeds. Final wiring, cables, terminals, sleeving, and protection are new-only.",
+        chips: ["Compact OEM style", "New final wiring", "Three isolated input groups"],
         parts: fuseBoxParts,
         marketSpecs: attachScoutImage(
           [fuseBoxMarketSpec],
@@ -3634,6 +3824,243 @@
     return text;
   }
 
+  function scoutPipeGroup(row) {
+    const id = cleanString((row && (row.order_id || row.id || row.order_line_id)) || "").toUpperCase();
+    const lane = cleanString(row && row.shop_lane).toLowerCase();
+    const route = cleanString(row && row.route).toLowerCase();
+    const text = [
+      id,
+      lane,
+      route,
+      row && row.item,
+      row && row.order_text,
+      row && row.spec,
+      row && row.material,
+      row && row.sourceBasis,
+    ]
+      .map((value) => cleanString(value).toLowerCase())
+      .join(" ");
+    const has = (...tokens) => tokens.every((token) => text.includes(token));
+    const hasAny = (...tokens) => tokens.some((token) => text.includes(token));
+
+    if (hasAny("connector hose", "connector/coupler", "coupler hoses") || id.startsWith("HLS-05") || id.startsWith("RPO-COOL-006")) {
+      return {
+        key: "coolant-connectors",
+        label: "Coolant Pipe Connector Hoses",
+        note: "Pieces below attach to the formed coolant pipe and must include new clamps/fittings by hose OD.",
+      };
+    }
+    if (hasAny("formed metal coolant", "formed coolant pipe", "radiator pipe assembly") || id === "HLS-12" || id === "RPO-COOL-005") {
+      return {
+        key: "formed-coolant-pipe",
+        label: "Formed Metal Coolant Pipe",
+        note: "This pipe needs beaded ends and the separate connector hoses listed immediately below.",
+      };
+    }
+    if (id.includes("COOL") || lane.includes("radiator") || hasAny("radiator", "heater", "coolant overflow")) {
+      return {
+        key: "coolant-hoses",
+        label: "Coolant / Heater Rubber Hoses",
+        note: "Pieces below are new molded or cut-to-route coolant/heater hoses with new clamps where required.",
+      };
+    }
+    if (id.includes("FUEL-002") || lane.includes("fuel_hard_line") || has("fuel", "hard line")) {
+      return {
+        key: "fuel-hard-lines",
+        label: "Diesel Fuel Hard Lines",
+        note: "Pieces below are new metal tube runs; copy the original unions, bends, clips, and end style.",
+      };
+    }
+    if (id.includes("FUEL") || lane.includes("diesel_fuel") || hasAny("diesel feed", "diesel return", "leak-off", "fuel clamp")) {
+      return {
+        key: "fuel-rubber-hoses",
+        label: "Diesel Rubber Hoses",
+        note: "Pieces below are new diesel-rated rubber hoses and fuel clamps, cut to the fitted route.",
+      };
+    }
+    if (id.includes("VAC") || lane.includes("vacuum") || hasAny("vacuum", "breather", "oil mist", "oil outlet")) {
+      return {
+        key: "vacuum-breather",
+        label: "Vacuum / Breather / Oil Hose",
+        note: "Pieces below are new reinforced or oil-compatible hoses; the oil outlet hose remains presence-gated.",
+      };
+    }
+    if (id.includes("BRAKE") || lane.includes("brake") || has("brake", "hydraulic")) {
+      return {
+        key: "brake-hydraulic",
+        label: "Brake Hydraulic Lines",
+        note: "Pieces below require new crimped flex assemblies, brake-rated tube, and correct fittings.",
+      };
+    }
+    if (id.includes("CLUTCH") || has("clutch", "hydraulic")) {
+      return {
+        key: "clutch-hydraulic",
+        label: "Clutch Hydraulic Lines",
+        note: "Pieces below require a new crimped clutch flex assembly and a new brake/clutch-rated hard line if fitted.",
+      };
+    }
+    if (id.includes("CLIP") || lane.includes("support") || hasAny("p-clips", "support clips", "line protection", "edge protection")) {
+      return {
+        key: "line-support",
+        label: "Line Supports / Edge Protection",
+        note: "Pieces below attach and protect the new fuel, brake, and clutch hard lines.",
+      };
+    }
+    if (lane.includes("general_rubber") || hasAny("air-cleaner", "intake duct", "couplers")) {
+      return {
+        key: "air-intake-rubber",
+        label: "Air Intake Rubber",
+        note: "Pieces below are sample-matched new intake duct or couplers, not coolant/fuel hose.",
+      };
+    }
+    if (lane.includes("ac_hose") || hasAny("a/c barrier", "barrier hose")) {
+      return {
+        key: "ac-hose",
+        label: "A/C Barrier Hose",
+        note: "Pieces below stay deferred until compressor, condenser, and evaporator layout is fixed.",
+      };
+    }
+    return {
+      key: "other-pipe",
+      label: "Other Pipe / Hose Items",
+      note: "Pieces below use the listed new-part requirements and sample-match checks.",
+    };
+  }
+
+  function scoutRubberGroup(row) {
+    const id = cleanString((row && (row.id || row.requirement_id || row.order_line_id)) || "").toUpperCase();
+    const text = [
+      id,
+      row && row.item,
+      row && row.requirement_name,
+      row && row.spec,
+      row && row.material,
+      row && row.sourceBasis,
+    ]
+      .map((value) => cleanString(value).toLowerCase())
+      .join(" ");
+    if (id.includes("FRONT") || text.includes("front-support") || text.includes("front support")) {
+      return {
+        key: "front-support-rubbers",
+        label: "Front-Support Rubbers",
+        note: "Pieces below are the oval pads and handed strip rubbers from the removed originals.",
+      };
+    }
+    if (text.includes("sleeve") || text.includes("cup") || text.includes("seat washer")) {
+      return {
+        key: "rubber-metal-seats",
+        label: "Sleeves / Cup Seats",
+        note: "Pieces below are the metal interfaces required by the rubber stack.",
+      };
+    }
+    if (text.includes("shim") || text.includes("bolt") || text.includes("hardware")) {
+      return {
+        key: "rubber-hardware",
+        label: "Shim / Hardware Packs",
+        note: "Pieces below are supporting hardware, not rubber substitutes.",
+      };
+    }
+    return {
+      key: "body-mount-rubbers",
+      label: "Body-Mount Rubber Cushions",
+      note: "Pieces below are new body-mount rubber cushions matched to the original samples.",
+    };
+  }
+
+  function groupScoutRows(rows, mode) {
+    const sourceRows = Array.isArray(rows) ? rows : [];
+    if (!mode) {
+      return [{ key: "all", label: "", note: "", rows: sourceRows }];
+    }
+    const groupOrder = {
+      "coolant-hoses": 10,
+      "formed-coolant-pipe": 20,
+      "coolant-connectors": 30,
+      "fuel-rubber-hoses": 40,
+      "fuel-hard-lines": 50,
+      "vacuum-breather": 60,
+      "brake-hydraulic": 70,
+      "clutch-hydraulic": 80,
+      "line-support": 90,
+      "air-intake-rubber": 100,
+      "ac-hose": 110,
+      "body-mount-rubbers": 10,
+      "rubber-metal-seats": 20,
+      "front-support-rubbers": 30,
+      "rubber-hardware": 40,
+      "other-pipe": 999,
+    };
+    const groups = [];
+    const byKey = new Map();
+    sourceRows.forEach((row) => {
+      const group = mode === "rubbers" ? scoutRubberGroup(row) : scoutPipeGroup(row);
+      if (!byKey.has(group.key)) {
+        byKey.set(group.key, { ...group, rows: [] });
+        groups.push(byKey.get(group.key));
+      }
+      byKey.get(group.key).rows.push(row);
+    });
+    return groups.sort((left, right) => (groupOrder[left.key] || 500) - (groupOrder[right.key] || 500));
+  }
+
+  function renderScoutGroupRow(group, colspan) {
+    if (!group || !group.label) {
+      return "";
+    }
+    const ids = group.rows
+      .map((row) => cleanString(row.order_id || row.id || row.order_line_id || row.requirement_id))
+      .filter(Boolean)
+      .join(", ");
+    return `
+      <tr class="scout-group-row">
+        <td colspan="${escapeHtml(colspan)}">
+          <strong>${escapeHtml(group.label)}</strong>
+          ${ids ? `<span class="small-muted">Pieces underneath: ${escapeHtml(ids)}</span>` : ""}
+          ${group.note ? `<div class="small-muted">${escapeHtml(group.note)}</div>` : ""}
+        </td>
+      </tr>
+    `;
+  }
+
+  function scoutConnectorOrFittingText(row) {
+    const id = cleanString((row && (row.id || row.order_id || row.order_line_id)) || "").toUpperCase();
+    const text = [
+      id,
+      row && row.item,
+      row && row.spec,
+      row && row.material,
+      row && row.notes,
+      row && row.action,
+    ]
+      .map((value) => cleanString(value).toLowerCase())
+      .join(" ");
+    if (id === "RPO-COOL-005" || id === "HLS-12" || text.includes("formed metal coolant")) {
+      return "Needs beaded ends plus connector hoses RPO-COOL-006A/B or HLS-05A/HLS-05B attached.";
+    }
+    if (id.startsWith("RPO-COOL-006") || id.startsWith("HLS-05") || text.includes("connector hose")) {
+      return "Attaches to the formed coolant pipe and mating spigot with new smooth-band or constant-tension clamps.";
+    }
+    if (id.includes("FUEL-002") || text.includes("fuel hard line")) {
+      return "Copy original unions/end style and support with rubber-lined P-clips.";
+    }
+    if (id.includes("BRAKE-001A") || id === "HLS-17") {
+      return "Complete crimped brake flex assemblies only; copy end fittings, brackets, clips, and free length.";
+    }
+    if (id.includes("BRAKE-001B") || id === "HLS-15") {
+      return "Needs new brake-rated fittings after flare/thread/seat identification.";
+    }
+    if (id.includes("CLUTCH-001A") || id === "HLS-18") {
+      return "Complete crimped clutch flex assembly only; copy thread/seat and bracket retention.";
+    }
+    if (id.includes("CLUTCH-001B") || id === "HLS-19") {
+      return "Needs new hydraulic-rated fittings after flare/thread/seat identification.";
+    }
+    if (id.includes("CLIP") || id === "HLS-16") {
+      return "Includes line fasteners, rubber-lined clips, grommets, and edge/pass-through protection.";
+    }
+    return "";
+  }
+
   function renderScoutField(label, value) {
     const text = cleanString(value);
     if (!text) {
@@ -3659,7 +4086,7 @@
               <tr>
                 <th>Image</th>
                 <th>Line</th>
-                <th>Shop Lane</th>
+                <th>Pipe / Hose Type</th>
                 <th>Exact Order Text</th>
                 <th>Qty / Size</th>
                 <th>Material / Fittings</th>
@@ -3667,35 +4094,43 @@
               </tr>
             </thead>
             <tbody>
-              ${sourceRows
-                .map(
-                  (row) => `
-                    <tr>
-                      ${renderInventoryImageCell({ item: row.item, image: row.image || scoutComponentImage(row) }, row.item || "Order line image")}
-                      <td class="scout-line-cell">
-                        <strong>${escapeHtml(row.order_id || "-")}</strong>
-                        <div class="small-muted">${escapeHtml(row.item || "")}</div>
-                        ${statusChip(row.order_state || "open")}
-                      </td>
-                      <td>${escapeHtml(formatToken(row.shop_lane || "-"))}</td>
-                      <td class="scout-spec-cell">${escapeHtml(row.order_text || "-")}</td>
-                      <td class="scout-meta-cell">
-                        ${renderScoutField("Qty", row.qty)}
-                        ${renderScoutField("Buy length", formatScoutBuyLength(row.buy_length_mm))}
-                        ${renderScoutField("Diameter", row.diameter_spec)}
-                      </td>
-                      <td class="scout-meta-cell">
-                        ${renderScoutField("Material", row.material_spec)}
-                        ${renderScoutField("Clamp/fitting", row.clamp_or_fitting_spec)}
-                        ${renderScoutField("Basis", row.source_basis)}
-                      </td>
-                      <td class="scout-notes-cell">
-                        ${renderScoutField("Reject if", row.hard_reject)}
-                        ${renderScoutField("Install check", row.final_install_check)}
-                      </td>
-                    </tr>
-                  `
-                )
+              ${groupScoutRows(sourceRows, "pipes")
+                .map((group) => `
+                  ${renderScoutGroupRow(group, 7)}
+                  ${group.rows
+                    .map(
+                      (row) => {
+                        const rowImage = bestScoutOriginalImage(row) || scoutComponentImage(row);
+                        return `
+                          <tr>
+                            ${renderInventoryImageCell({ item: row.item, image: rowImage }, row.item || "Order line image")}
+                            <td class="scout-line-cell">
+                              <strong>${escapeHtml(row.order_id || "-")}</strong>
+                              <div class="small-muted">${escapeHtml(row.item || "")}</div>
+                              ${statusChip(row.order_state || "open")}
+                            </td>
+                            <td>${escapeHtml(scoutPipeGroup(row).label || formatToken(row.shop_lane || "-"))}</td>
+                            <td class="scout-spec-cell">${escapeHtml(row.order_text || "-")}</td>
+                            <td class="scout-meta-cell">
+                              ${renderScoutField("Qty", row.qty)}
+                              ${renderScoutField("Buy length", formatScoutBuyLength(row.buy_length_mm))}
+                              ${renderScoutField("Diameter", row.diameter_spec)}
+                            </td>
+                            <td class="scout-meta-cell">
+                              ${renderScoutField("Material", row.material_spec)}
+                              ${renderScoutField("Clamp/fitting", row.clamp_or_fitting_spec || scoutConnectorOrFittingText(row))}
+                              ${renderScoutField("Basis", row.source_basis)}
+                            </td>
+                            <td class="scout-notes-cell">
+                              ${renderScoutField("Reject if", row.hard_reject)}
+                              ${renderScoutField("Install check", row.final_install_check)}
+                            </td>
+                          </tr>
+                        `;
+                      }
+                    )
+                    .join("")}
+                `)
                 .join("")}
             </tbody>
           </table>
@@ -3755,11 +4190,13 @@
     `;
   }
 
-  function renderScoutOrderSpecTable(rows) {
+  function renderScoutOrderSpecTable(rows, category) {
     const sourceRows = Array.isArray(rows) ? rows : [];
     if (!sourceRows.length) {
       return "";
     }
+    const groupMode = category && category.id === "pipes" ? "pipes" : category && category.id === "rubbers" ? "rubbers" : "";
+    const groupedRows = groupScoutRows(sourceRows, groupMode);
     return `
       <article class="card">
         <div class="detail-header">
@@ -3778,35 +4215,45 @@
               </tr>
             </thead>
             <tbody>
-              ${sourceRows
-                .map(
-                  (row) => `
-                    <tr>
-                      ${renderInventoryImageCell({ item: row.item, image: row.image || scoutComponentImage(row) }, row.item || "Spec row image")}
-                      <td>
-                        <strong>${escapeHtml(row.item || row.id || "-")}</strong>
-                        <div class="small-muted">${escapeHtml(row.id || "")}</div>
-                        <div>${statusChip(row.state || "release_hold")}</div>
-                      </td>
-                      <td class="scout-meta-cell">
-                        ${renderScoutField("Qty", row.qty)}
-                        ${renderScoutField("Material", row.material)}
-                      </td>
-                      <td class="scout-spec-cell">
-                        ${escapeHtml(row.spec || "-")}
-                        ${renderScoutField("Dimensions", row.dimension)}
-                      </td>
-                      <td class="scout-notes-cell">
-                        ${renderScoutField("File", row.partNumber)}
-                        ${renderScoutField("Route", row.route ? formatToken(row.route) : "")}
-                        ${renderScoutField("Source", row.sourceBasis)}
-                        ${renderScoutField("Check", row.action)}
-                        ${renderScoutField("Reject if", row.reject)}
-                        ${renderScoutField("Notes", row.notes)}
-                      </td>
-                    </tr>
-                  `
-                )
+              ${groupedRows
+                .map((group) => `
+                  ${renderScoutGroupRow(group, 5)}
+                  ${group.rows
+                    .map(
+                      (row) => {
+                        const rowImage = bestScoutOriginalImage(row) || scoutComponentImage(row);
+                        const connectorText = groupMode === "pipes" ? scoutConnectorOrFittingText(row) : "";
+                        return `
+                          <tr>
+                            ${renderInventoryImageCell({ item: row.item, image: rowImage }, row.item || "Spec row image")}
+                            <td>
+                              <strong>${escapeHtml(row.item || row.id || "-")}</strong>
+                              <div class="small-muted">${escapeHtml(row.id || "")}</div>
+                              <div>${statusChip(row.state || "release_hold")}</div>
+                            </td>
+                            <td class="scout-meta-cell">
+                              ${renderScoutField("Qty", row.qty)}
+                              ${renderScoutField("Material", row.material)}
+                            </td>
+                            <td class="scout-spec-cell">
+                              ${escapeHtml(row.spec || "-")}
+                              ${renderScoutField("Dimensions", row.dimension)}
+                              ${renderScoutField("Connectors/fittings", connectorText)}
+                            </td>
+                            <td class="scout-notes-cell">
+                              ${renderScoutField("File", row.partNumber)}
+                              ${renderScoutField("Route", row.route ? formatToken(row.route) : "")}
+                              ${renderScoutField("Source", row.sourceBasis)}
+                              ${renderScoutField("Check", row.action)}
+                              ${renderScoutField("Reject if", row.reject)}
+                              ${renderScoutField("Notes", row.notes)}
+                            </td>
+                          </tr>
+                        `;
+                      }
+                    )
+                    .join("")}
+                `)
                 .join("")}
             </tbody>
           </table>
@@ -3949,7 +4396,7 @@
         ${renderMarketSpecCards(category.marketSpecs)}
         ${renderScoutDocLinks(category.docLinks)}
         ${renderScoutLocalMarketOrderTable(category.localMarketOrderRows)}
-        ${renderScoutOrderSpecTable(category.exactSpecRows)}
+        ${renderScoutOrderSpecTable(category.exactSpecRows, category)}
         ${renderFabricationUnderlayTable(category.underlayRows)}
         ${renderFabricationPackages(category.fabricationPackages)}
       </section>
@@ -3960,7 +4407,7 @@
     const categories = buildScoutCategories();
     root.innerHTML = `
       <h2 class="section-title">Scout</h2>
-      <p class="section-subtitle">Simple market-facing cards for the person visiting shops: what to ask for, what must come with it, when to reject, and what photos or details to send back.</p>
+      <p class="section-subtitle">Simple market-facing cards for the person visiting shops: what to ask for, what must come with it, when to reject, and what photos or details to send back. New-only rule: rubbers, hoses, hydraulic assemblies, hard lines, parking-brake cables, electrical wire/cable, terminals, clips, clamps, fittings, grommets, boots, pads, hangers, and similar consumables are bought new; old parts and photos are samples only.</p>
       <div class="chip-row scout-jump-row">
         ${categories.map((category) => `<button class="chip chip-button" data-scroll-reference-section="scout-${escapeHtml(category.id)}" type="button">${escapeHtml(category.title)}</button>`).join("")}
       </div>

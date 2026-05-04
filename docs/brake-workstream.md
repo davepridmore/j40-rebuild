@@ -19,6 +19,7 @@
 - Vehicle basis for brake ordering is the active project vehicle: `1978 Toyota Land Cruiser J40`.
 - Treat the current brake architecture as `front disc / rear drum` until direct inspection proves otherwise.
 - Assume standard brake service parts will be replaced during the baseline refresh: front pads/hardware, front flex hoses, rear shoes/hardware, rear wheel cylinders, rear parking-brake cables, rear axle hard lines, rear center flex hose, clips/retainers, brake fluid, and bleed consumables.
+- Braking consumables and safety parts are new-only for final installation: flex hoses, hard lines, rear parking-brake cables, cable clips/retainers, hydraulic fittings, rubber sleeves/grommets, seals, and springs/hardware. Old parts are samples for length, end style, routing, and fit.
 - Do not order front pads, caliper kits, rotors, or front flex hoses from year/catalog alone because the front disc setup appears to be a previous conversion.
 - Do not order rear shoes, wheel cylinders, rear cables, or rear center hose from catalog logic alone. The rear drum family and cable/hose end styles still need direct confirmation from the fitted truck and old samples.
 - Use the fitted hardware and old samples to order brake parts: backing plates, cable ends, calipers, wheel cylinders, master/proportioning fittings, and hose ends control the final spec.
@@ -113,7 +114,7 @@ Do not discard old parking-brake cables, hard lines, flex hoses, or representati
 | P0 | Front disc pad and retaining hardware set after the fitted caliper/pad family is identified. |
 | P0 | Front flex hoses after caliper-end, chassis-bracket, free length, and lock-to-lock clearance are confirmed. |
 | P0 | Front caliper rebuild kits or replacement calipers if inspection finds leaks, seizure, torn boots, damaged pistons, or unknown unsafe condition. |
-| P0 | Rear parking-brake cable set: left/right rear cables, equalizer/clevis hardware, return springs, clips, and adjuster parts matched to the backing plates. |
+| P0 | New rear parking-brake cable set: left/right rear cables, equalizer/clevis hardware, return springs, clips, and adjuster parts matched to the backing plates. |
 | P0 | Rear axle hard brake lines recreated in 3/16 in / 4.75 mm brake tube, with the correct flare and fitting threads. |
 | P0 | Rear center flexible brake hose with correct chassis-side and axle-side fittings, retaining clip, and old-sample/free length. |
 | P0 | Rear wheel cylinders as a pair once bore/port/mounting pattern is confirmed. |
@@ -131,7 +132,7 @@ Do not discard old parking-brake cables, hard lines, flex hoses, or representati
 | Rear brake shoes and spring kit | Baseline replace, but exact set is held until drum family, shoe width/diameter, adjuster style, and spring layout are known. |
 | Rear wheel cylinders | Baseline replace as a pair, but exact part is held until bore, port thread, mounting pattern, pushrod style, and bleed screw access are confirmed. |
 | Front pads/caliper kits/rotors | Baseline service is approved, but the front disc conversion hardware family is not yet positively identified. |
-| Rear parking-brake cables | Baseline replace, but cable length, sheath length, end fittings, equalizer hardware, and clip positions must come from the old samples. |
+| Rear parking-brake cables | Baseline replace with new cable assemblies, but cable length, sheath length, end fittings, equalizer hardware, and clip positions must come from the old samples. |
 | Brake master cylinder | Master bore, booster/proportioning layout, reservoir condition, and fitting threads are not yet confirmed. |
 | Brake conversion parts | Baseline plan is refresh first; no rear-disc conversion unless inspection or use shows a measured need. |
 

@@ -30,7 +30,7 @@ These are approved replacement scope, but exact part numbers must be matched to 
 | Front caliper rebuild kits or replacement calipers | Pair if inspection shows leakage, seizure, torn boots, damaged pistons, stuck sliders, or unsafe unknown condition | Identify caliper casting, piston count/diameter, inlet fitting, bleed screw, and mounting pattern. |
 | Front rotors | Machine or replace as required | Measure thickness, runout, scoring, cracks, hub/register fit, and service limit. |
 | Front flexible brake hoses | Pair | Confirm chassis end, caliper end or banjo, bracket/clip style, free length, and steering lock clearance. Hose assemblies must be DOT/SAE J1401 or OEM-equivalent crimped brake hoses. |
-| Rear parking-brake cable set | Left/right rear cables plus equalizer/clevis/spring/clip hardware as fitted | Remove/label old cables, measure overall length, sheath length, backing-plate end, equalizer end, adjuster thread/travel, and clip positions. |
+| Rear parking-brake cable set | New left/right rear cable assemblies plus equalizer/clevis/spring/clip hardware as fitted | Remove/label old cables, measure overall length, sheath length, backing-plate end, equalizer end, adjuster thread/travel, and clip positions. Old cables are samples only. |
 | Rear axle hard brake lines | Left/right axle lines from center T/union to wheel cylinders | Recreate in brake-rated 4.75 mm / 3/16 in tube. Match flare type, fitting threads/seats, bend templates, route lengths, and clip positions. No bare copper. |
 | Rear center flexible brake hose | 1 frame-to-axle hose | Confirm chassis-side and axle-side fitting style/thread, bracket retention, and old-sample/free length. Must be DOT/SAE J1401 or OEM-equivalent crimped brake hose. |
 | Rear wheel cylinders | Pair | Open drums and identify bore, port thread, mounting bolt pattern, pushrod style, side, and bleed screw access. |
@@ -63,4 +63,4 @@ Measurements before payment or adaptation:
 
 Please quote the purchase-ready brake hydraulic opening prep now: 2 L sealed fresh DOT 3 brake fluid meeting SAE J1703 / FMVSS No. 116 DOT 3, brake cleaner, clear bleed hose/catch bottle or bleeder kit, hydraulic line caps/plugs, rags, nitrile gloves, and catch tray.
 
-For the remaining brake parts and brake booster, prepare sourcing but do not take payment for exact parts until the fitted calipers, rear drums, hoses, hard-line fittings, parking-brake cables, booster/master interface, and old samples are measured and photographed.
+For the remaining brake parts and brake booster, prepare sourcing but do not take payment for exact parts until the fitted calipers, rear drums, hoses, hard-line fittings, parking-brake cables, booster/master interface, and old samples are measured and photographed. Final-install brake hoses, hard lines, parking-brake cables, fittings, clips, rubbers, and seals are new-only.

@@ -2,7 +2,9 @@
 
 Purpose: one sendable market pack that lists the actual new parts to quote or buy, with the working dimensions already pulled out. Take old samples and photos where noted; do not let the market turn this back into generic "rubber pipe" or "Land Cruiser part" shopping.
 
-Scout position: braking, clutch hydraulic, hose, fuel/vacuum, and hard-line components are new replacement requirements. Old components are used only as samples for length, shape, fittings, and routing.
+Scout position: braking, clutch hydraulic, hose, fuel/vacuum, hard-line, parking-brake cable, rubber/grommet/boot/pad, clamp, clip, fitting, terminal, and electrical wire/cable consumables are new replacement requirements. Old components are used only as samples for length, shape, fittings, routing, and connector identification.
+
+New-only rule: do not buy used/salvage rubbers, hoses, hydraulic assemblies, hard lines, parking-brake cables, electrical wire/cable, terminals, clips, clamps, fittings, grommets, boots, pads, hangers, or similar consumables for final installation.
 
 The dashboard Scout tables now show a photo thumbnail for every exact component row. This Markdown pack uses the same references, including the user-supplied actual compact fuse-box photo and a real bolt-down bench-vice photo.
 
@@ -56,7 +58,17 @@ This is not part of the hose/pipe shopping table. Add it only if the lines are m
 | `HOSE-BRAKE-01` | Brake flex hose assemblies | `3` new complete assemblies | New front left, front right, and rear center frame-to-axle complete crimped brake hoses. | Free length copied from old samples; end threads/banjo/seats and bracket grooves copied exactly. | New DOT/SAE J1401 or OEM-equivalent assemblies only. | Used hose, hose cut from roll, unknown rating, unmatched ends. |
 | `HOSE-CLUTCH-01` | Clutch flex hose | `1` new complete assembly | New complete crimped hydraulic clutch/brake hose assembly. | Free length/end threads/seat/bracket groove copied from sample. | New brake/clutch hydraulic-rated assembly. | Used hose, generic rubber hose, or wrong fitting. |
 
+## Brake And Control Cables
+
+Old cables are length/end samples only. Any cable bought for final installation must be a new assembly.
+
+| ID | Component | Qty / buy length | Exact market spec | Dimensions / ratings | Must match | Reject |
+| --- | --- | ---: | --- | --- | --- | --- |
+| `CABLE-BRAKE-01` | Rear parking-brake / handbrake cable set | `1` left/right set | New rear parking-brake cable assemblies with corrosion-protected outer sheaths, plus new clevis pins, clips, return springs, and adjuster hardware as fitted. | Final length comes from removed old samples measured in `mm`: overall cable length, sheath length, backing-plate end, equalizer/intermediate end, bracket/clip positions, adjuster thread and travel. | Rear drum backing-plate levers, equalizer/intermediate linkage, original route, and support clips. | Used cable, frayed/seized cable, unknown end style, wrong sheath length, missing adjuster/clip hardware, or catalog-only match without the old sample. |
+
 ## Chassis And Body Rubbers
+
+All fitted rubber parts in this section are new-only. Old rubbers and photos are measurement samples, not reuse stock.
 
 | ID | Component | Qty | Exact spec | Dimensions | Material | Hold / reject |
 | --- | --- | ---: | --- | --- | --- | --- |
@@ -93,13 +105,13 @@ Preferred buy path:
 
 Exact market request:
 
-> Need one compact old-OEM under-dash blade-fuse carrier to match a small 12-way donor block. Preferred donor style: Suzuki Mehran / Maruti 800 passenger-compartment fuse box, or a similarly compact Daihatsu Cuore / old Alto / old Corolla / small Hyundai cabin fuse carrier. It can be 6/8/10/12-way, but six positions must be usable with clean rear terminals or pigtails. Need cover, mounting tabs, and at least `100 mm` serviceable pigtails if it is a used harness-cut donor.
+> Need one compact old-OEM under-dash blade-fuse carrier to match a small 12-way donor block. Preferred donor style: Suzuki Mehran / Maruti 800 passenger-compartment fuse box, or a similarly compact Daihatsu Cuore / old Alto / old Corolla / small Hyundai cabin fuse carrier. It can be 6/8/10/12-way, but six positions must be usable with clean rear terminals or pigtails. Need cover, mounting tabs, and at least `100 mm` serviceable pigtails if it is a used harness-cut donor. Donor pigtails are for connector/circuit identification only; final wiring uses new automotive cable, terminals, sleeving, and protection.
 
 Target envelope and condition:
 
 - Fuse type: standard medium ATO/ATC blade fuses.
 - Physical target: compact under-dash carrier, roughly no larger than `130 x 70 x 45 mm` unless the electrician approves the mounting location.
-- Rear terminals: 6.3 mm blade/Lucar style or clean pigtails, no melted plastic, no loose fuse clips.
+- Rear terminals: 6.3 mm blade/Lucar style or clean pigtails, no melted plastic, no loose fuse clips; do not use an old cut loom as final wiring material.
 - Donor priority: `1` Suzuki Mehran/Maruti 800 under-dash fuse carrier, `2` Daihatsu Cuore cabin fuse carrier, `3` old Suzuki Alto, `4` small old Toyota/Hyundai/Honda cabin box, `5` modern Picanto/Hyundai-style junction box only if three isolated buses can be mapped and the unit physically fits.
 - Reject: engine-bay relay box, fuse-cover-only listing, loose fuse assortment, large marine/RV stud block, single-bus universal block that cannot be split safely.
 

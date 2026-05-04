@@ -2,7 +2,7 @@
 
 Date: 2026-05-04
 
-All dimensions are in `mm`. For body/front-support rubbers, use new black solid EPDM or NR/SBR automotive mount rubber, Shore A `60 +/-5`. For the exhaust holder, use Toyota `90917-08004` / `17572-92000` teardrop exhaust cushion style or a sample-matched molded copy. For bump stops, buy OEM/manufacturer-style molded stops where available; fabricate only by exact sample and bracket match. Do not use tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, or universal bump stops that do not match the axle contact point.
+All dimensions are in `mm`. For body/front-support rubbers, use new black solid EPDM or NR/SBR automotive mount rubber, Shore A `60 +/-5`. Old rubbers and photos are measurement samples only, not reuse stock. For the exhaust holder, use Toyota `90917-08004` / `17572-92000` teardrop exhaust cushion style or a sample-matched new molded copy. For bump stops, buy OEM/manufacturer-style molded stops where available; fabricate only by exact sample and bracket match. Do not use tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, used rubber, unmarked compound, or universal bump stops that do not match the axle contact point.
 
 ## Machine Package
 

@@ -11,7 +11,7 @@ Run the Ironman Foam Cell suspension change and the brake baseline refresh as on
 The working brake architecture remains `front disc / rear drum`. The plan now assumes normal brake service parts will be replaced on both axles as baseline work:
 
 - Front: pads/hardware, front flex hoses, caliper seal/rebuild or caliper replacement as required by fitted caliper family, and rotor machine/replace decision by measured rotor condition.
-- Rear: parking-brake cable set, axle hard lines, rear center flex hose, wheel cylinders, shoes, springs/hold-downs/adjusters, and line/cable clips.
+- Rear: new parking-brake cable set, new axle hard lines, new rear center flex hose, wheel cylinders, shoes, springs/hold-downs/adjusters, and new line/cable clips.
 - System: brake fluid, bleed consumables, cap/plug set, and master/reservoir/proportioning inspection with replacement only after the installed layout is identified.
 
 This does not approve rear-disc conversion or a wholesale brake architecture change. It approves a standard safety refresh of the system already fitted to the truck.
@@ -46,7 +46,7 @@ Do not final-close suspension until brake hose, hard-line, parking-brake cable, 
 | Front caliper rebuild kits or replacement calipers | 2 sides | Needs fitted-caliper identification | Replace/rebuild if seized, leaking, torn boots, damaged pistons, or unknown unsafe condition. |
 | Front rotors | 2 | Inspect/machine/replace | Replace or machine only after diameter/thickness/runout/scoring check. |
 | Front flexible brake hoses | 2 | Spec hold | Match caliper end, chassis bracket, free length, and full-lock clearance. |
-| Rear parking-brake cable set | 1 left/right set | Spec hold | Match both rear cable lengths, sheath lengths, backing-plate ends, equalizer ends, clips, return springs, and adjuster hardware. |
+| Rear parking-brake cable set | 1 left/right set | Spec hold | Buy new assemblies only. Match both rear cable lengths, sheath lengths, backing-plate ends, equalizer ends, clips, return springs, and adjuster hardware from the old samples. |
 | Rear axle hard brake lines | 2 axle tubes plus fittings | Spec hold | Recreate in brake-rated `4.75 mm / 3/16 in` tube using old lines as bend templates. No bare copper. |
 | Rear center flexible brake hose | 1 | Spec hold | Match fitting style, old-sample/free length, and fitted route. |
 | Rear wheel cylinders | 2 | Drum-open identification | Buy as a pair after bore, port thread, bolt pattern, pushrod style, and side are confirmed. |

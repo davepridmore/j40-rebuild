@@ -72,7 +72,7 @@ Retrofit fallback wording if no direct-fit unit is found:
 > - equalizer/intermediate end type
 > - adjuster thread and travel
 > - retaining clips, clevis pins, return springs, and equalizer hardware
-> Prefer new cable assemblies. Do not reuse old seized/frayed cables.
+> Must be new cable assemblies with new/clean matching hardware. Old cables are length/end samples only; do not buy or reuse used, seized, frayed, or rusty cable assemblies.
 
 ## Local Market Order - Rear Drum Brake Parts
 

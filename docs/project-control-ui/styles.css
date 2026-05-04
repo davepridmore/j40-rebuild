@@ -675,6 +675,21 @@ th {
   background: #ece4d6;
 }
 
+.scout-group-row td {
+  background: #f3eadb;
+  border-top: 2px solid #c8bdad;
+  color: #33413e;
+}
+
+.scout-group-row strong {
+  margin-right: 0.45rem;
+}
+
+.scout-group-row .small-muted {
+  display: inline-block;
+  margin-right: 0.55rem;
+}
+
 .table-image-cell {
   width: 88px;
   min-width: 88px;

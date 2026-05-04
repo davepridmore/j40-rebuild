@@ -2,7 +2,7 @@
 
 Purpose: one sheet to send to a local hose/rubber/hydraulic market for the Toyota Land Cruiser J40/HJ47 with Toyota 2H diesel. The lengths below are the buy lengths and include units. Final trimming is done on the vehicle unless the item is a molded hose or a complete hydraulic assembly.
 
-Scout position: quote new replacement components only. Old hoses, hard lines, clips, and hydraulic assemblies are samples for length/shape/fitting match, not parts to reuse or buy used.
+Scout position: quote new replacement components only. Old hoses, hard lines, clips, clamps, fittings, hydraulic assemblies, and any related cable/wire samples are for length/shape/fitting/routing identification only, not parts to reuse or buy used.
 
 Detailed engineering controls stay in [engine-hose-tube-replacement-specs.md](engine-hose-tube-replacement-specs.md) and [replacement-pipes-workstream.md](replacement-pipes-workstream.md).
 
@@ -68,7 +68,7 @@ For shopping, use the listed length and material/rating. Shaping tools are separ
 ## Hard Rules
 
 - No clear PVC, washer hose, or unmarked soft hose for fuel.
-- No used hoses, used hydraulic assemblies, used hard lines, or used clamps for this scout list.
+- No used hoses, used hydraulic assemblies, used hard lines, used clamps, used clips, used fittings, or used cable/wire consumables for this scout list.
 - No generic rubber hose for brake or clutch hydraulics.
 - No sharp perforated worm clamps on diesel hoses.
 - No fuel hose as a substitute for radiator or heater hose.

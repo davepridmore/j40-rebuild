@@ -30,7 +30,7 @@ The standard coolant/heater/fuel/vacuum/breather hose rows are now local-market 
 | Fuel hard lines | `RPO-FUEL-002A`, `RPO-FUEL-002B` | `8 mm OD x 5000 mm` feed pipe allowance and `6 mm OD x 5000 mm` return pipe allowance; final section lengths only after corrosion inspection and route measurement. |
 | Vacuum/breather | `RPO-VAC-001A`, `RPO-VAC-001B`, `RPO-VAC-001C` | Buy `10-12 mm ID x 2000 mm` reinforced vacuum hose and `16-19 mm ID x 1000 mm` oil-resistant breather hose; oil-outlet molded hose is conditional on fitted presence. |
 | Brake hydraulics | `RPO-BRAKE-001A`, `RPO-BRAKE-001B` | Quote `3` complete brake flex assemblies copied from old samples/current fittings; hard-line stock is `4.75 mm / 3/16 in x 7600 mm / 25 ft` brake tube coil allowance. |
-| Clutch hydraulics | `RPO-CLUTCH-001A`, `RPO-CLUTCH-001B` | Inspect-first replacement basis ready; quote `1` complete clutch flex assembly if failed and `1500 mm` hard-line blank if the hard line is replaced. |
+| Clutch hydraulics | `RPO-CLUTCH-001A`, `RPO-CLUTCH-001B` | New replacement basis ready; quote `1` complete clutch flex assembly and `1500 mm` brake/clutch-rated hard-line blank for the replacement line. |
 | Supports | `RPO-CLIP-001` | Rubber-lined P-clips and pass-through protection ready; size to `4.75 mm`, `6 mm`, and `8 mm` measured line ODs with `300-400 mm` support spacing. |
 
 ## Active Procurement Position
@@ -64,5 +64,5 @@ The active hose/rubber parts below are now marked purchase-ready / local-market-
 - Do not use bare copper for fuel or brake hard lines.
 - Do not buy generic brake or clutch hose; flex hoses must be complete crimped hydraulic assemblies copied from old samples or matched to fitted vehicle hardware.
 - Do not coat the fabricated coolant pipe until it has passed bench pressure test and vehicle dry-fit.
-- Do not reuse old rubber connector hoses on the fabricated coolant pipe unless they are explicitly inspected and accepted; the default is replacement by `RPO-COOL-006A/B`.
+- Do not reuse old rubber connector hoses on the fabricated coolant pipe. Old couplers are trim/sample references only; final connectors are new `RPO-COOL-006A/B` parts.
 - Use rubber-lined P-clips for permanent hard-line support, with spacing around 300-400 mm.

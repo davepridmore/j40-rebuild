@@ -7,7 +7,7 @@ import re
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
+from typing import Any, Iterable
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -112,12 +112,13 @@ EPS_MARKET_SCOUT_SPEC: dict[str, Any] = {
     ),
     "buy_target": (
         "Buy candidate is only a 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 column-assist EPS set. "
-        "Corolla, Axio, Prius, hydraulic steering parts, loose motors, loose ECUs, and mixed-family sets are quote/photo only."
+        "Corolla, Axio, Prius, hydraulic steering parts, loose motors, loose ECUs, and mixed-family sets are quote/photo only. "
+        "Donor pigtails are for connector identification and bench testing; final power, ground, trigger, and loom wiring must be new automotive cable and terminals."
     ),
     "must_include": [
         "Motorized EPS steering column with torque sensor and reduction housing.",
         "Matching EPS ECU/controller, or a clearly verified integrated controller.",
-        "Original EPS plugs with at least 150mm wiring tails, not cut flush.",
+        "Original EPS plugs with at least 150mm wiring tails, not cut flush; tails are identification/bench-test leads, not final cable stock.",
         "Upper and lower intermediate shaft sections.",
         "U-joints, couplers, clamp brackets, support plates, and related donor fasteners.",
         "Readable column and ECU/controller labels or part numbers.",
@@ -2580,11 +2581,21 @@ def fabrication_packages_for_workstream(
     return [fabrication_package_payload(row) for row in selected_rows]
 
 
-def replacement_pipe_order_release_payload(rows: list[dict[str, str]]) -> list[dict[str, Any]]:
+def replacement_pipe_order_release_payload(
+    rows: list[dict[str, str]],
+    evidence_index: dict[str, list[dict[str, Any]]],
+) -> list[dict[str, Any]]:
     payload: list[dict[str, Any]] = []
     for row in rows:
         release_state = clean(row.get("order_release_state"))
         item = clean(row.get("item"))
+        evidence_images = evidence_images_for_keys(
+            evidence_index,
+            [
+                clean(row.get("order_line_id")),
+                *evidence_keys_from_text(row.get("source_basis", "")),
+            ],
+        )
         payload.append(
             {
                 "order_line_id": clean(row.get("order_line_id")),
@@ -2602,18 +2613,23 @@ def replacement_pipe_order_release_payload(rows: list[dict[str, str]]) -> list[d
                 "user_action_required": clean(row.get("user_action_required")),
                 "do_not_order_if": clean(row.get("do_not_order_if")),
                 "notes": clean(row.get("notes")),
-                "image": order_component_reference_image(
-                    item,
-                    " ".join(
-                        clean(row.get(key))
-                        for key in (
-                            "order_line_id",
-                            "route",
-                            "part_number_or_code",
-                            "exact_order_spec",
-                            "material_spec",
-                            "notes",
-                        )
+                "evidence_images": evidence_images,
+                "image": (
+                    evidence_images[0]
+                    if evidence_images
+                    else order_component_reference_image(
+                        item,
+                        " ".join(
+                            clean(row.get(key))
+                            for key in (
+                                "order_line_id",
+                                "route",
+                                "part_number_or_code",
+                                "exact_order_spec",
+                                "material_spec",
+                                "notes",
+                            )
+                        ),
                     ),
                 ),
             }
@@ -2621,10 +2637,20 @@ def replacement_pipe_order_release_payload(rows: list[dict[str, str]]) -> list[d
     return payload
 
 
-def hose_local_market_order_payload(rows: list[dict[str, str]]) -> list[dict[str, Any]]:
+def hose_local_market_order_payload(
+    rows: list[dict[str, str]],
+    evidence_index: dict[str, list[dict[str, Any]]],
+) -> list[dict[str, Any]]:
     payload: list[dict[str, Any]] = []
     for row in rows:
         item = clean(row.get("item"))
+        evidence_images = evidence_images_for_keys(
+            evidence_index,
+            [
+                clean(row.get("order_id")),
+                *hls_evidence_keys(row),
+            ],
+        )
         payload.append(
             {
                 "order_id": clean(row.get("order_id")),
@@ -2640,18 +2666,23 @@ def hose_local_market_order_payload(rows: list[dict[str, str]]) -> list[dict[str
                 "source_basis": clean(row.get("source_basis")),
                 "final_install_check": clean(row.get("final_install_check")),
                 "hard_reject": clean(row.get("hard_reject")),
-                "image": order_component_reference_image(
-                    item,
-                    " ".join(
-                        clean(row.get(key))
-                        for key in (
-                            "order_id",
-                            "shop_lane",
-                            "order_text",
-                            "diameter_spec",
-                            "material_spec",
-                            "clamp_or_fitting_spec",
-                        )
+                "evidence_images": evidence_images,
+                "image": (
+                    evidence_images[0]
+                    if evidence_images
+                    else order_component_reference_image(
+                        item,
+                        " ".join(
+                            clean(row.get(key))
+                            for key in (
+                                "order_id",
+                                "shop_lane",
+                                "order_text",
+                                "diameter_spec",
+                                "material_spec",
+                                "clamp_or_fitting_spec",
+                            )
+                        ),
                     ),
                 ),
             }
@@ -2659,43 +2690,66 @@ def hose_local_market_order_payload(rows: list[dict[str, str]]) -> list[dict[str
     return payload
 
 
-def replacement_pipe_release_action_payload(rows: list[dict[str, str]]) -> list[dict[str, str]]:
-    return [
-        {
-            "action_id": clean(row.get("action_id")),
-            "priority": clean(row.get("priority")),
-            "owner": clean(row.get("owner")),
-            "action": clean(row.get("action")),
-            "status": clean(row.get("status")),
-            "blocks_order_lines": clean(row.get("blocks_order_lines")),
-            "record_result_in": clean(row.get("record_result_in")),
-            "why_it_matters": clean(row.get("why_it_matters")),
-        }
-        for row in rows
-    ]
+def replacement_pipe_release_action_payload(
+    rows: list[dict[str, str]],
+    evidence_index: dict[str, list[dict[str, Any]]],
+) -> list[dict[str, Any]]:
+    payload: list[dict[str, Any]] = []
+    for row in rows:
+        evidence_images = evidence_images_for_keys(
+            evidence_index,
+            evidence_keys_from_text(row.get("blocks_order_lines", ""), row.get("action", "")),
+        )
+        payload.append(
+            {
+                "action_id": clean(row.get("action_id")),
+                "priority": clean(row.get("priority")),
+                "owner": clean(row.get("owner")),
+                "action": clean(row.get("action")),
+                "status": clean(row.get("status")),
+                "blocks_order_lines": clean(row.get("blocks_order_lines")),
+                "record_result_in": clean(row.get("record_result_in")),
+                "why_it_matters": clean(row.get("why_it_matters")),
+                "evidence_images": evidence_images,
+            }
+        )
+    return payload
 
 
-def replacement_pipe_circuit_closure_payload(rows: list[dict[str, str]]) -> list[dict[str, str]]:
-    return [
-        {
-            "circuit_id": clean(row.get("circuit_id")),
-            "vehicle_location": clean(row.get("vehicle_location")),
-            "pipe_or_line": clean(row.get("pipe_or_line")),
-            "order_lines": clean(row.get("order_lines")),
-            "photo_status": clean(row.get("photo_status")),
-            "barb_or_fitting_a": clean(row.get("barb_or_fitting_a")),
-            "barb_or_fitting_b": clean(row.get("barb_or_fitting_b")),
-            "route_length_mm": clean(row.get("route_length_mm")),
-            "tube_or_hose_od_id": clean(row.get("tube_or_hose_od_id")),
-            "thread_or_flare": clean(row.get("thread_or_flare")),
-            "bend_template_status": clean(row.get("bend_template_status")),
-            "clip_support_status": clean(row.get("clip_support_status")),
-            "release_status": clean(row.get("release_status")),
-            "action_required": clean(row.get("action_required")),
-            "notes": clean(row.get("notes")),
-        }
-        for row in rows
-    ]
+def replacement_pipe_circuit_closure_payload(
+    rows: list[dict[str, str]],
+    evidence_index: dict[str, list[dict[str, Any]]],
+) -> list[dict[str, Any]]:
+    payload: list[dict[str, Any]] = []
+    for row in rows:
+        evidence_images = evidence_images_for_keys(
+            evidence_index,
+            [
+                clean(row.get("circuit_id")),
+                *evidence_keys_from_text(row.get("order_lines", "")),
+            ],
+        )
+        payload.append(
+            {
+                "circuit_id": clean(row.get("circuit_id")),
+                "vehicle_location": clean(row.get("vehicle_location")),
+                "pipe_or_line": clean(row.get("pipe_or_line")),
+                "order_lines": clean(row.get("order_lines")),
+                "photo_status": clean(row.get("photo_status")),
+                "barb_or_fitting_a": clean(row.get("barb_or_fitting_a")),
+                "barb_or_fitting_b": clean(row.get("barb_or_fitting_b")),
+                "route_length_mm": clean(row.get("route_length_mm")),
+                "tube_or_hose_od_id": clean(row.get("tube_or_hose_od_id")),
+                "thread_or_flare": clean(row.get("thread_or_flare")),
+                "bend_template_status": clean(row.get("bend_template_status")),
+                "clip_support_status": clean(row.get("clip_support_status")),
+                "release_status": clean(row.get("release_status")),
+                "action_required": clean(row.get("action_required")),
+                "notes": clean(row.get("notes")),
+                "evidence_images": evidence_images,
+            }
+        )
+    return payload
 
 
 def replacement_pipe_photo_intake_payload(
@@ -2730,10 +2784,17 @@ def replacement_pipe_photo_intake_payload(
     return payload
 
 
-def body_mount_order_release_payload(rows: list[dict[str, str]]) -> list[dict[str, str]]:
-    payload: list[dict[str, str]] = []
+def body_mount_order_release_payload(
+    rows: list[dict[str, str]],
+    evidence_index: dict[str, list[dict[str, Any]]],
+) -> list[dict[str, Any]]:
+    payload: list[dict[str, Any]] = []
     for row in rows:
         release_state = clean(row.get("order_release_state"))
+        evidence_images = evidence_images_for_keys(
+            evidence_index,
+            body_mount_order_evidence_keys(row),
+        )
         payload.append(
             {
                 "order_line_id": clean(row.get("order_line_id")),
@@ -2750,51 +2811,72 @@ def body_mount_order_release_payload(rows: list[dict[str, str]]) -> list[dict[st
                 "user_action_required": clean(row.get("user_action_required")),
                 "do_not_order_if": clean(row.get("do_not_order_if")),
                 "notes": clean(row.get("notes")),
+                "evidence_images": evidence_images,
             }
         )
     return payload
 
 
-def body_mount_release_action_payload(rows: list[dict[str, str]]) -> list[dict[str, str]]:
-    return [
-        {
-            "action_id": clean(row.get("action_id")),
-            "priority": clean(row.get("priority")),
-            "owner": clean(row.get("owner")),
-            "action": clean(row.get("action")),
-            "status": clean(row.get("status")),
-            "blocks_order_lines": clean(row.get("blocks_order_lines")),
-            "record_result_in": clean(row.get("record_result_in")),
-            "why_it_matters": clean(row.get("why_it_matters")),
-        }
-        for row in rows
-    ]
+def body_mount_release_action_payload(
+    rows: list[dict[str, str]],
+    evidence_index: dict[str, list[dict[str, Any]]],
+) -> list[dict[str, Any]]:
+    payload: list[dict[str, Any]] = []
+    for row in rows:
+        evidence_images = evidence_images_for_keys(
+            evidence_index,
+            body_mount_action_evidence_keys(row),
+        )
+        payload.append(
+            {
+                "action_id": clean(row.get("action_id")),
+                "priority": clean(row.get("priority")),
+                "owner": clean(row.get("owner")),
+                "action": clean(row.get("action")),
+                "status": clean(row.get("status")),
+                "blocks_order_lines": clean(row.get("blocks_order_lines")),
+                "record_result_in": clean(row.get("record_result_in")),
+                "why_it_matters": clean(row.get("why_it_matters")),
+                "evidence_images": evidence_images,
+            }
+        )
+    return payload
 
 
-def body_mount_station_closure_payload(rows: list[dict[str, str]]) -> list[dict[str, str]]:
-    return [
-        {
-            "station_id": clean(row.get("station_id")),
-            "vehicle_position": clean(row.get("vehicle_position")),
-            "working_position_type": clean(row.get("working_position_type")),
-            "candidate_toyota_station": clean(row.get("candidate_toyota_station")),
-            "expected_rubber_family": clean(row.get("expected_rubber_family")),
-            "expected_rubber_qty_at_position": clean(row.get("expected_rubber_qty_at_position")),
-            "old_parts_present": clean(row.get("old_parts_present")),
-            "shim_or_spacer_thickness_mm": clean(row.get("shim_or_spacer_thickness_mm")),
-            "sleeve_id_mm": clean(row.get("sleeve_id_mm")),
-            "sleeve_od_mm": clean(row.get("sleeve_od_mm")),
-            "sleeve_length_mm": clean(row.get("sleeve_length_mm")),
-            "bolt_pitch": clean(row.get("bolt_pitch")),
-            "bolt_under_head_length_mm": clean(row.get("bolt_under_head_length_mm")),
-            "captive_nut_depth_mm": clean(row.get("captive_nut_depth_mm")),
-            "final_bolt_length_mm": clean(row.get("final_bolt_length_mm")),
-            "release_status": clean(row.get("release_status")),
-            "action_required": clean(row.get("action_required")),
-            "notes": clean(row.get("notes")),
-        }
-        for row in rows
-    ]
+def body_mount_station_closure_payload(
+    rows: list[dict[str, str]],
+    evidence_index: dict[str, list[dict[str, Any]]],
+) -> list[dict[str, Any]]:
+    payload: list[dict[str, Any]] = []
+    for row in rows:
+        evidence_images = evidence_images_for_keys(
+            evidence_index,
+            body_mount_station_evidence_keys(row),
+        )
+        payload.append(
+            {
+                "station_id": clean(row.get("station_id")),
+                "vehicle_position": clean(row.get("vehicle_position")),
+                "working_position_type": clean(row.get("working_position_type")),
+                "candidate_toyota_station": clean(row.get("candidate_toyota_station")),
+                "expected_rubber_family": clean(row.get("expected_rubber_family")),
+                "expected_rubber_qty_at_position": clean(row.get("expected_rubber_qty_at_position")),
+                "old_parts_present": clean(row.get("old_parts_present")),
+                "shim_or_spacer_thickness_mm": clean(row.get("shim_or_spacer_thickness_mm")),
+                "sleeve_id_mm": clean(row.get("sleeve_id_mm")),
+                "sleeve_od_mm": clean(row.get("sleeve_od_mm")),
+                "sleeve_length_mm": clean(row.get("sleeve_length_mm")),
+                "bolt_pitch": clean(row.get("bolt_pitch")),
+                "bolt_under_head_length_mm": clean(row.get("bolt_under_head_length_mm")),
+                "captive_nut_depth_mm": clean(row.get("captive_nut_depth_mm")),
+                "final_bolt_length_mm": clean(row.get("final_bolt_length_mm")),
+                "release_status": clean(row.get("release_status")),
+                "action_required": clean(row.get("action_required")),
+                "notes": clean(row.get("notes")),
+                "evidence_images": evidence_images,
+            }
+        )
+    return payload
 
 
 PHOTO_TASK_MARKERS: tuple[str, ...] = (
@@ -2939,6 +3021,239 @@ def evidence_images_from_refs(
     return dedupe_payload_images(images)
 
 
+EVIDENCE_KEY_PATTERN = re.compile(r"\b(?:RPO|RP|HLS|CR|BM|BMA|FS|RHA|RUB)-[A-Z0-9]+(?:-[A-Z0-9]+)*\b")
+
+RUBBER_REQUIREMENT_EQUIVALENT_KEYS: dict[str, tuple[str, ...]] = {
+    "CR-MAIN-001": ("BM-FAB-002", "BM-SM", "RUB-001"),
+    "CR-MAIN-002": ("BM-FAB-001", "BM-LG", "RUB-001"),
+    "CR-MAIN-003": ("BM-HW-001", "BM-SLV"),
+    "CR-MAIN-004": ("BM-HW-002", "BM-CUP-SM", "BM-CUP-LG"),
+    "CR-FRONT-001": ("BM-FAB-003", "FS-OVAL", "RUB-001"),
+    "CR-FRONT-002": ("BM-FAB-004", "FS-STRIP-L", "RUB-001"),
+    "CR-FRONT-003": ("BM-FAB-005", "FS-STRIP-R", "RUB-001"),
+    "CR-SHIM-001": ("BM-SHIM-001", "BM-SHIM-002"),
+    "CR-HARD-001": ("BM-HW-003", "BM-HW-004", "BM-HW-005"),
+}
+
+HLS_TO_EVIDENCE_KEYS: dict[str, tuple[str, ...]] = {
+    "HLS-01": ("RPO-COOL-001", "RP-COOL-001"),
+    "HLS-02": ("RPO-COOL-002", "RP-COOL-002"),
+    "HLS-03": ("RPO-COOL-003", "RP-COOL-003"),
+    "HLS-04": ("RPO-COOL-004A", "RPO-COOL-004B", "RP-COOL-004"),
+    "HLS-05A": ("RPO-COOL-006A", "RP-COOL-006"),
+    "HLS-05B": ("RPO-COOL-006B", "RP-COOL-006"),
+    "HLS-06": ("RPO-FUEL-001A", "RP-FUEL-001"),
+    "HLS-07": ("RPO-FUEL-001B", "RP-FUEL-001"),
+    "HLS-08": ("RPO-FUEL-001C", "RP-FUEL-001"),
+    "HLS-09": ("RPO-FUEL-001A", "RPO-FUEL-001B", "RPO-FUEL-001C", "RP-FUEL-001"),
+    "HLS-10": ("RPO-VAC-001A", "RP-VAC-001"),
+    "HLS-11": ("RPO-VAC-001B", "RP-VAC-001"),
+    "HLS-12": ("RPO-COOL-005", "RP-COOL-005"),
+    "HLS-13": ("RPO-FUEL-002A", "RP-FUEL-002"),
+    "HLS-14": ("RPO-FUEL-002B", "RP-FUEL-002"),
+    "HLS-15": ("RPO-BRAKE-001B", "RP-BRAKE-001"),
+    "HLS-16": ("RPO-CLIP-001", "RHA-016"),
+    "HLS-17": ("RPO-BRAKE-001A", "RP-BRAKE-001", "RHA-012"),
+    "HLS-18": ("RPO-CLUTCH-001A", "RP-CLUTCH-001", "RHA-013"),
+    "HLS-19": ("RPO-CLUTCH-001B", "RP-CLUTCH-001", "RHA-013"),
+    "HLS-20": ("RPO-VAC-001C", "RP-VAC-001", "RHA-011"),
+    "HLS-21": ("RUB-027", "RHA-014"),
+    "HLS-22": ("RUB-026", "RHA-024"),
+}
+
+
+def evidence_keys_from_text(*values: str) -> list[str]:
+    keys: list[str] = []
+    seen: set[str] = set()
+    for value in values:
+        text = clean(value)
+        if not text:
+            continue
+        candidates = split_pipe(text) + EVIDENCE_KEY_PATTERN.findall(text.upper())
+        for candidate in candidates:
+            key = clean(candidate)
+            if key and key not in seen:
+                seen.add(key)
+                keys.append(key)
+    return keys
+
+
+def add_evidence_entries(
+    index: dict[str, list[dict[str, Any]]],
+    keys: Iterable[str],
+    images: list[dict[str, Any]],
+) -> None:
+    source_images = dedupe_payload_images(images)
+    if not source_images:
+        return
+    for raw_key in keys:
+        key = clean(raw_key)
+        if not key:
+            continue
+        index[key] = dedupe_payload_images(index.get(key, []) + source_images)
+
+
+def evidence_images_for_keys(
+    index: dict[str, list[dict[str, Any]]],
+    keys: Iterable[str],
+    *,
+    max_images: int = 6,
+) -> list[dict[str, Any]]:
+    images: list[dict[str, Any]] = []
+    for key in keys:
+        images.extend(index.get(clean(key), []))
+        if len(images) >= max_images * 2:
+            break
+    return dedupe_payload_images(images)[:max_images]
+
+
+def build_replacement_pipe_evidence_index(
+    replacement_pipe_photo_intake_rows: list[dict[str, str]],
+    photo_rows: list[dict[str, str]],
+) -> dict[str, list[dict[str, Any]]]:
+    rows_by_id = photo_rows_by_media_id(photo_rows)
+    index: dict[str, list[dict[str, Any]]] = {}
+    for row in replacement_pipe_photo_intake_rows:
+        images = evidence_images_from_refs(row.get("media_ids", ""), rows_by_id)
+        keys = [
+            clean(row.get("shot_id")),
+            clean(row.get("pipe_id")),
+            *evidence_keys_from_text(row.get("order_lines", "")),
+        ]
+        add_evidence_entries(index, keys, images)
+    return index
+
+
+def build_rubber_evidence_index(
+    chassis_rubber_requirement_rows: list[dict[str, str]],
+    rubber_hose_component_audit_rows: list[dict[str, str]],
+    photo_rows: list[dict[str, str]],
+) -> dict[str, list[dict[str, Any]]]:
+    rows_by_id = photo_rows_by_media_id(photo_rows)
+    index: dict[str, list[dict[str, Any]]] = {}
+    for row in chassis_rubber_requirement_rows:
+        requirement_id = clean(row.get("requirement_id"))
+        images = evidence_images_from_refs(row.get("photo_evidence", ""), rows_by_id)
+        keys = [
+            requirement_id,
+            *RUBBER_REQUIREMENT_EQUIVALENT_KEYS.get(requirement_id, ()),
+            *evidence_keys_from_text(
+                row.get("requirement_name", ""),
+                row.get("source_ref", ""),
+                row.get("notes", ""),
+            ),
+        ]
+        add_evidence_entries(index, keys, images)
+    for row in rubber_hose_component_audit_rows:
+        audit_id = clean(row.get("audit_id"))
+        images = evidence_images_from_refs(row.get("visual_evidence", ""), rows_by_id)
+        keys = [
+            audit_id,
+            *evidence_keys_from_text(row.get("open_item_ids", "")),
+        ]
+        add_evidence_entries(index, keys, images)
+    return index
+
+
+def merge_evidence_indexes(*indexes: dict[str, list[dict[str, Any]]]) -> dict[str, list[dict[str, Any]]]:
+    merged: dict[str, list[dict[str, Any]]] = {}
+    for index in indexes:
+        for key, images in index.items():
+            add_evidence_entries(merged, [key], images)
+    return merged
+
+
+def hls_evidence_keys(row: dict[str, str]) -> list[str]:
+    order_id = clean(row.get("order_id"))
+    return [
+        *HLS_TO_EVIDENCE_KEYS.get(order_id, ()),
+        *evidence_keys_from_text(row.get("source_basis", ""), row.get("order_text", "")),
+    ]
+
+
+def body_mount_order_evidence_keys(row: dict[str, str]) -> list[str]:
+    order_id = clean(row.get("order_line_id"))
+    text = norm(
+        " ".join(
+            clean(row.get(key))
+            for key in (
+                "order_line_id",
+                "route",
+                "item",
+                "part_number_or_code",
+                "exact_order_spec",
+                "source_basis",
+                "notes",
+            )
+        )
+    )
+    keys = [
+        order_id,
+        *evidence_keys_from_text(
+            row.get("part_number_or_code", ""),
+            row.get("source_basis", ""),
+            row.get("notes", ""),
+        ),
+    ]
+    if "large" in text and "cushion" in text:
+        keys.extend(["CR-MAIN-002", "BM-LG", "BM-FAB-001"])
+    elif "small" in text and "cushion" in text:
+        keys.extend(["CR-MAIN-001", "BM-SM", "BM-FAB-002"])
+    elif "cushion" in text or "body mount" in text:
+        keys.extend(["CR-MAIN-001", "CR-MAIN-002"])
+    if any(token in text for token in ("stopper", "seat", "washer", "cup")):
+        keys.extend(["CR-MAIN-004", "BM-CUP-SM", "BM-CUP-LG"])
+    if any(token in text for token in ("sleeve", "collar", "spacer")):
+        keys.extend(["CR-MAIN-003", "CR-SHIM-001"])
+    if "front" in text and ("support" in text or "oval" in text):
+        keys.extend(["CR-FRONT-001", "CR-FRONT-002", "CR-FRONT-003"])
+    if "shim" in text:
+        keys.extend(["CR-SHIM-001"])
+    if "bolt" in text or "hardware" in text:
+        keys.extend(["CR-HARD-001"])
+    return keys
+
+
+def body_mount_action_evidence_keys(row: dict[str, str]) -> list[str]:
+    text = norm(" ".join(clean(row.get(key)) for key in ("action", "blocks_order_lines", "why_it_matters")))
+    keys = evidence_keys_from_text(row.get("blocks_order_lines", ""))
+    if any(token in text for token in ("lay out", "route", "dry-stack", "dry stack", "body-mount rubber")):
+        keys.extend(["CR-MAIN-001", "CR-MAIN-002", "CR-FRONT-001", "CR-FRONT-002", "CR-FRONT-003"])
+    if "large circular" in text:
+        keys.extend(["CR-MAIN-002", "BM-FAB-001", "BM-LG"])
+    if "small circular" in text or "split" in text:
+        keys.extend(["CR-MAIN-001", "BM-FAB-002", "BM-SM"])
+    if any(token in text for token in ("stopper", "seat", "cup")):
+        keys.extend(["CR-MAIN-004", "BM-HW-002", "BM-CUP-SM"])
+    if "sleeve" in text or "crush tube" in text:
+        keys.extend(["CR-MAIN-003", "BM-HW-001"])
+    if "shim" in text or "spacer" in text:
+        keys.extend(["CR-SHIM-001", "BM-SHIM-001"])
+    if "front-support strip" in text or "front support strip" in text:
+        keys.extend(["CR-FRONT-002", "CR-FRONT-003", "BM-FAB-004", "BM-FAB-005"])
+    if "front-support fastener" in text or "front support fastener" in text:
+        keys.extend(["CR-FRONT-001", "BM-FAB-003"])
+    return keys
+
+
+def body_mount_station_evidence_keys(row: dict[str, str]) -> list[str]:
+    station_id = clean(row.get("station_id"))
+    family = clean(row.get("expected_rubber_family"))
+    text = norm(f"{station_id} {family} {row.get('vehicle_position', '')}")
+    keys = evidence_keys_from_text(family, row.get("action_required", ""))
+    if "front-support-l" in text or "fs-strip-l" in text:
+        keys.extend(["CR-FRONT-001", "CR-FRONT-002", "FS-OVAL", "FS-STRIP-L"])
+    elif "front-support-r" in text or "fs-strip-r" in text:
+        keys.extend(["CR-FRONT-001", "CR-FRONT-003", "FS-OVAL", "FS-STRIP-R"])
+    elif "bm-lg" in text:
+        keys.extend(["CR-MAIN-002", "BM-LG"])
+    elif "bm-sm" in text:
+        keys.extend(["CR-MAIN-001", "BM-SM"])
+    elif station_id.startswith("MAIN"):
+        keys.extend(["CR-MAIN-001", "CR-MAIN-002", "CR-MAIN-004"])
+    return keys
+
+
 def source_link(source_path: str, source_label: str) -> list[dict[str, str]]:
     link = file_link(source_path, source_label)
     return [link] if link else []
@@ -3013,8 +3328,10 @@ def build_capture_tasks(
     replacement_pipe_photo_intake_rows: list[dict[str, str]],
     replacement_pipe_release_action_rows: list[dict[str, str]],
     replacement_pipe_circuit_closure_rows: list[dict[str, str]],
+    pipe_evidence_index: dict[str, list[dict[str, Any]]],
     body_mount_release_action_rows: list[dict[str, str]],
     body_mount_station_closure_rows: list[dict[str, str]],
+    rubber_evidence_index: dict[str, list[dict[str, Any]]],
     brake_system_requirement_rows: list[dict[str, str]],
     rubber_hose_component_audit_rows: list[dict[str, str]],
     component_rows: list[dict[str, str]],
@@ -3051,6 +3368,10 @@ def build_capture_tasks(
         if status_is_complete(status):
             continue
         action_id = clean(row.get("action_id"))
+        evidence_images = evidence_images_for_keys(
+            pipe_evidence_index,
+            evidence_keys_from_text(row.get("blocks_order_lines", ""), row.get("action", "")),
+        )
         tasks.append(
             capture_task_payload(
                 task_id=f"replacement_pipe_release_action:{action_id}",
@@ -3065,6 +3386,8 @@ def build_capture_tasks(
                 blocks=clean(row.get("blocks_order_lines")),
                 record_result_in=clean(row.get("record_result_in")),
                 notes=clean(row.get("why_it_matters")),
+                evidence_ref="|".join(clean(image.get("media_id")) for image in evidence_images if clean(image.get("media_id"))),
+                evidence_images=evidence_images,
             )
         )
 
@@ -3074,6 +3397,13 @@ def build_capture_tasks(
         if status_is_complete(release_status):
             continue
         circuit_id = clean(row.get("circuit_id"))
+        evidence_images = evidence_images_for_keys(
+            pipe_evidence_index,
+            [
+                circuit_id,
+                *evidence_keys_from_text(row.get("order_lines", "")),
+            ],
+        )
         tasks.append(
             capture_task_payload(
                 task_id=f"replacement_pipe_circuit_closure:{circuit_id}",
@@ -3100,6 +3430,8 @@ def build_capture_tasks(
                 ),
                 blocks=clean(row.get("order_lines")),
                 notes=clean(row.get("notes")),
+                evidence_ref="|".join(clean(image.get("media_id")) for image in evidence_images if clean(image.get("media_id"))),
+                evidence_images=evidence_images,
             )
         )
 
@@ -3108,6 +3440,10 @@ def build_capture_tasks(
         if status_is_complete(status):
             continue
         action_id = clean(row.get("action_id"))
+        evidence_images = evidence_images_for_keys(
+            rubber_evidence_index,
+            body_mount_action_evidence_keys(row),
+        )
         tasks.append(
             capture_task_payload(
                 task_id=f"body_mount_release_action:{action_id}",
@@ -3122,6 +3458,8 @@ def build_capture_tasks(
                 blocks=clean(row.get("blocks_order_lines")),
                 record_result_in=clean(row.get("record_result_in")),
                 notes=clean(row.get("why_it_matters")),
+                evidence_ref="|".join(clean(image.get("media_id")) for image in evidence_images if clean(image.get("media_id"))),
+                evidence_images=evidence_images,
             )
         )
 
@@ -3130,6 +3468,10 @@ def build_capture_tasks(
         if status_is_complete(release_status):
             continue
         station_id = clean(row.get("station_id"))
+        evidence_images = evidence_images_for_keys(
+            rubber_evidence_index,
+            body_mount_station_evidence_keys(row),
+        )
         tasks.append(
             capture_task_payload(
                 task_id=f"body_mount_station_closure:{station_id}",
@@ -3157,6 +3499,8 @@ def build_capture_tasks(
                 ),
                 blocks=clean(row.get("action_required")),
                 notes=clean(row.get("notes")),
+                evidence_ref="|".join(clean(image.get("media_id")) for image in evidence_images if clean(image.get("media_id"))),
+                evidence_images=evidence_images,
             )
         )
 
@@ -7420,6 +7764,19 @@ def build_dashboard_data() -> dict[str, Any]:
     whatsapp_j40_chat_rows = [row for row in whatsapp_j40_chat_rows if not is_hidden_whatsapp_chat(row)]
     whatsapp_j40_media_rows = [row for row in whatsapp_j40_media_rows if not is_hidden_whatsapp_chat(row)]
     inventory_image_overrides = load_inventory_image_overrides(INVENTORY_IMAGE_OVERRIDES_PATH)
+    pipe_original_part_evidence_index = build_replacement_pipe_evidence_index(
+        replacement_pipe_photo_intake_rows,
+        photo_rows,
+    )
+    rubber_original_part_evidence_index = build_rubber_evidence_index(
+        chassis_rubber_requirement_rows,
+        rubber_hose_component_audit_rows,
+        photo_rows,
+    )
+    local_market_original_part_evidence_index = merge_evidence_indexes(
+        pipe_original_part_evidence_index,
+        rubber_original_part_evidence_index,
+    )
     expense_rows = load_csv(EXPENSES_PATH)
     fastener_estimate_rows = load_csv_optional(FASTENER_PHOTO_COUNT_ESTIMATES_PATH)
     fastener_estimate_lookup = build_fastener_estimate_lookup(fastener_estimate_rows)
@@ -7557,33 +7914,51 @@ def build_dashboard_data() -> dict[str, Any]:
             else []
         )
         replacement_pipe_order_release_specs = (
-            replacement_pipe_order_release_payload(replacement_pipe_order_release_rows)
+            replacement_pipe_order_release_payload(
+                replacement_pipe_order_release_rows,
+                local_market_original_part_evidence_index,
+            )
             if ws_id == "replacement_pipes"
             else []
         )
         replacement_pipe_release_actions = (
-            replacement_pipe_release_action_payload(replacement_pipe_release_action_rows)
+            replacement_pipe_release_action_payload(
+                replacement_pipe_release_action_rows,
+                local_market_original_part_evidence_index,
+            )
             if ws_id == "replacement_pipes"
             else []
         )
         replacement_pipe_circuit_closure = (
-            replacement_pipe_circuit_closure_payload(replacement_pipe_circuit_closure_rows)
+            replacement_pipe_circuit_closure_payload(
+                replacement_pipe_circuit_closure_rows,
+                local_market_original_part_evidence_index,
+            )
             if ws_id == "replacement_pipes"
             else []
         )
         chassis_rubber_requirements = requirements if ws_id == "chassis_rubbers" else []
         body_mount_order_release_specs = (
-            body_mount_order_release_payload(body_mount_order_release_rows)
+            body_mount_order_release_payload(
+                body_mount_order_release_rows,
+                rubber_original_part_evidence_index,
+            )
             if ws_id == "chassis_rubbers"
             else []
         )
         body_mount_release_actions = (
-            body_mount_release_action_payload(body_mount_release_action_rows)
+            body_mount_release_action_payload(
+                body_mount_release_action_rows,
+                rubber_original_part_evidence_index,
+            )
             if ws_id == "chassis_rubbers"
             else []
         )
         body_mount_station_closure = (
-            body_mount_station_closure_payload(body_mount_station_closure_rows)
+            body_mount_station_closure_payload(
+                body_mount_station_closure_rows,
+                rubber_original_part_evidence_index,
+            )
             if ws_id == "chassis_rubbers"
             else []
         )
@@ -7982,8 +8357,10 @@ def build_dashboard_data() -> dict[str, Any]:
         replacement_pipe_photo_intake_rows=replacement_pipe_photo_intake_rows,
         replacement_pipe_release_action_rows=replacement_pipe_release_action_rows,
         replacement_pipe_circuit_closure_rows=replacement_pipe_circuit_closure_rows,
+        pipe_evidence_index=local_market_original_part_evidence_index,
         body_mount_release_action_rows=body_mount_release_action_rows,
         body_mount_station_closure_rows=body_mount_station_closure_rows,
+        rubber_evidence_index=rubber_original_part_evidence_index,
         brake_system_requirement_rows=brake_system_requirement_rows,
         rubber_hose_component_audit_rows=rubber_hose_component_audit_rows,
         component_rows=component_rows,
@@ -8067,7 +8444,10 @@ def build_dashboard_data() -> dict[str, Any]:
             + market_specs_for_workstream("brake_system"),
         },
         "local_market_order_sheets": {
-            "hose": hose_local_market_order_payload(hose_local_market_order_rows),
+            "hose": hose_local_market_order_payload(
+                hose_local_market_order_rows,
+                local_market_original_part_evidence_index,
+            ),
         },
         "capture_tasks": capture_tasks,
         "supplies": supplies_inventory,

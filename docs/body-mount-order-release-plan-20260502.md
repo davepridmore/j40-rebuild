@@ -59,7 +59,7 @@ These are ready for quote/prototype. Production release still needs the marked p
 | `FS-STRIP-L` | Front support left strip/liner | `1` | working trace length `165 mm`, width `38-42 mm`, base thickness `8 mm`, raised/load pad height `14 mm`, M10 clearance hole `11 mm` or slot `11 x 16 mm` where shown |
 | `FS-STRIP-R` | Front support right strip/liner | `1` | mirror `FS-STRIP-L` unless physical carrier proves asymmetry |
 
-Material for all local rubber pieces: black automotive mount-grade `EPDM` or `NR/SBR`, Shore A `60 +/-5`, no tyre rubber, crumb rubber, mixed offcuts, or old salvage rubber.
+Material for all local rubber pieces: new black automotive mount-grade `EPDM` or `NR/SBR`, Shore A `60 +/-5`, no tyre rubber, crumb rubber, mixed offcuts, used rubber, or old salvage rubber.
 
 Local fabrication also requires the first-article, material, process, inspection, rejection, and packaging controls in [rubber_recreation_manufacturing_requirements.csv](../data/manual/rubber_recreation_manufacturing_requirements.csv). The fabricator must provide a material declaration and a one-page inspection report before the batch is accepted.
 

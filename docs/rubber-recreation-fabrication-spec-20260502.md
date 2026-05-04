@@ -71,7 +71,7 @@ Do not approve the final batch until the first articles pass dimensional check, 
 
 ### Material Controls
 
-Rubber pieces must be new black solid automotive mount-grade rubber. The acceptable base compound is `EPDM` or `NR/SBR` unless a measured original sample proves a different compound. Do not use tyre rubber, crumb/recycled rubber, sponge foam, mixed offcuts, old salvage rubber, or unidentified compound.
+Rubber pieces must be new black solid automotive mount-grade rubber. The acceptable base compound is `EPDM` or `NR/SBR` unless a measured original sample proves a different compound. Do not use tyre rubber, crumb/recycled rubber, sponge foam, mixed offcuts, used rubber, old salvage rubber, or unidentified compound.
 
 Required material targets:
 
