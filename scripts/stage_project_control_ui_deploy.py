@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import shutil
 from pathlib import Path
 from typing import Any
@@ -17,6 +18,8 @@ DATA_SUFFIX = ";"
 UI_FILES = ("index.html", "app.js", "styles.css")
 STAGED_MEDIA_PATH = "assets/dashboard-media"
 MISSING_MEDIA_FALLBACK = "./assets/image-needed.svg"
+APP_RELATIVE_LITERAL_RE = re.compile(r"""(?P<quote>["'`])(?P<path>\.\./\.\./[^"'`]+)(?P=quote)""")
+SCOUT_DOC_LINK_RE = re.compile(r"""scoutDocLink\(\s*["'](?P<path>[^"']+)["']""")
 PUBLIC_FABRICATION_DIR = ROOT / "data" / "manual" / "fabrication"
 PUBLIC_FABRICATION_DOCS = (
     ROOT / "data" / "manual" / "fabrication_handoff_requirements.csv",
@@ -104,6 +107,34 @@ def collect_relative_asset_paths(value: Any) -> set[str]:
     return paths
 
 
+def repo_relative_from_ui_path(relative_ui_path: str) -> Path:
+    repo_relative = relative_ui_path.strip().replace("\\", "/")
+    while repo_relative.startswith("../"):
+        repo_relative = repo_relative[3:]
+    if not repo_relative:
+        raise ValueError(f"Empty repo-relative path from: {relative_ui_path}")
+    return Path(repo_relative)
+
+
+def collect_app_public_paths() -> set[Path]:
+    app_js = (UI_DIR / "app.js").read_text(encoding="utf-8")
+    paths: set[Path] = set()
+
+    for match in APP_RELATIVE_LITERAL_RE.finditer(app_js):
+        relative_ui_path = match.group("path").strip().replace("\\", "/")
+        if "${" in relative_ui_path:
+            continue
+        paths.add(repo_relative_from_ui_path(relative_ui_path))
+
+    for match in SCOUT_DOC_LINK_RE.finditer(app_js):
+        root_relative_path = match.group("path").strip().replace("\\", "/")
+        if not root_relative_path or "${" in root_relative_path or root_relative_path.startswith(("http://", "https://")):
+            continue
+        paths.add(Path(root_relative_path))
+
+    return paths
+
+
 def rewrite_relative_asset_paths(value: Any, path_map: dict[str, str]) -> Any:
     if isinstance(value, dict):
         return {key: rewrite_relative_asset_paths(child, path_map) for key, child in value.items()}
@@ -148,14 +179,20 @@ def copy_file(source: Path, target: Path) -> None:
 
 
 def resolve_repo_path(relative_ui_path: str) -> Path:
-    repo_relative = relative_ui_path.replace("\\", "/")
-    while repo_relative.startswith("../"):
-        repo_relative = repo_relative[3:]
-    source = (ROOT / repo_relative).resolve()
+    source = (ROOT / repo_relative_from_ui_path(relative_ui_path)).resolve()
     try:
         source.relative_to(ROOT)
     except ValueError as error:
         raise ValueError(f"Refusing to stage path outside repo: {relative_ui_path}") from error
+    return source
+
+
+def resolve_root_relative_repo_path(root_relative_path: Path) -> Path:
+    source = (ROOT / root_relative_path).resolve()
+    try:
+        source.relative_to(ROOT)
+    except ValueError as error:
+        raise ValueError(f"Refusing to stage path outside repo: {root_relative_path}") from error
     return source
 
 
@@ -219,6 +256,22 @@ def stage_public_market_docs(output_dir: Path) -> int:
     return copied
 
 
+def stage_app_public_assets(output_dir: Path) -> tuple[int, list[str]]:
+    copied = 0
+    missing: list[str] = []
+    for root_relative_path in sorted(collect_app_public_paths(), key=lambda path: path.as_posix()):
+        source = resolve_root_relative_repo_path(root_relative_path)
+        if not source.exists() or not source.is_file():
+            missing.append(root_relative_path.as_posix())
+            continue
+        target = output_dir / root_relative_path
+        already_exists = target.exists()
+        copy_file(source, target)
+        if not already_exists:
+            copied += 1
+    return copied, missing
+
+
 def staged_media_name(relative_ui_path: str, source: Path) -> str:
     digest = hashlib.sha1(relative_ui_path.encode("utf-8")).hexdigest()[:16]
     suffix = source.suffix.lower() or ".bin"
@@ -255,19 +308,22 @@ def main() -> None:
     stage_static_ui(output_dir)
     copied_fabrication_assets = stage_public_fabrication_assets(output_dir)
     copied_market_docs = stage_public_market_docs(output_dir)
+    copied_app_assets, missing_app_assets = stage_app_public_assets(output_dir)
     data, copied_assets, missing_assets = stage_referenced_assets(data, output_dir)
     write_dashboard_data(data, output_dir)
 
     print(f"Staged Project Control UI: {output_dir}")
     print(f"Copied fabrication assets: {copied_fabrication_assets}")
     print(f"Copied market docs: {copied_market_docs}")
+    print(f"Copied app-referenced public assets: {copied_app_assets}")
     print(f"Copied referenced media/assets: {copied_assets}")
-    if missing_assets:
-        print(f"Missing referenced media/assets: {len(missing_assets)}")
-        for path in missing_assets[:20]:
+    all_missing_assets = missing_assets + missing_app_assets
+    if all_missing_assets:
+        print(f"Missing referenced media/assets: {len(all_missing_assets)}")
+        for path in all_missing_assets[:20]:
             print(f"  - {path}")
-        if len(missing_assets) > 20:
-            print(f"  ... {len(missing_assets) - 20} more")
+        if len(all_missing_assets) > 20:
+            print(f"  ... {len(all_missing_assets) - 20} more")
 
 
 if __name__ == "__main__":
