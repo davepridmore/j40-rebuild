@@ -6407,9 +6407,9 @@ def order_component_reference_image(item: str, context: str = "") -> dict[str, A
         )
     if has_any("bm-cup-lg", "bm_cup_large") or (has("cup", "large") and has_any("body-mount", "body mount")):
         return previous(
-            "photos/20260502_004231_gp_CfosvPIg.jpg",
-            "previous large body-mount cup/seat scale sample",
-            "20260502_004231_gp_CfosvPIg",
+            "photos/20260502_004419_gp_ZPXJRBzg.jpg",
+            "previous large body-mount cup/seat sample",
+            "20260502_004419_gp_ZPXJRBzg",
             "bm-cup-lg",
             "previous",
         )
@@ -6423,17 +6423,17 @@ def order_component_reference_image(item: str, context: str = "") -> dict[str, A
         )
     if has_any("bm-lg", "bm_lg", "large circular body-mount", "large circular body mount", "large body-mount cushion", "large body mount cushion"):
         return previous(
-            "photos/20260502_004231_gp_CfosvPIg.jpg",
+            "photos/20260502_004419_gp_ZPXJRBzg.jpg",
             "previous large circular body-mount cushion sample",
-            "20260502_004231_gp_CfosvPIg",
+            "20260502_004419_gp_ZPXJRBzg",
             "bm-lg",
             "previous",
         )
     if has_any("bm-sm", "bm_sm", "small circular body-mount", "small circular body mount", "small body-mount cushion", "small body mount cushion"):
         return previous(
-            "photos/20260502_004437_gp_f1TySzww.jpg",
+            "photos/20260502_004442_gp_7WcFHjLQ.jpg",
             "previous small circular body-mount cushion sample",
-            "20260502_004437_gp_f1TySzww",
+            "20260502_004442_gp_7WcFHjLQ",
             "bm-sm",
             "previous",
         )

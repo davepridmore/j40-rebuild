@@ -21,7 +21,7 @@ These are non-fitment consumables needed before any hydraulic line is opened. Th
 | Tool | Order/search links | Notes |
 | --- | --- | --- |
 | Flare-nut / brake-line wrench set | [Toolsmart Licota 14 x 17 flare-nut wrench](https://www.toolsmart.pk/products/licota-flare-nut-wrench-14-x-17-mat-finish), [Toolsmart Licota 17 x 19 flare-nut wrench](https://www.toolsmart.pk/products/licota-flare-nut-wrench-17-x-19), [Tools Hub 17 x 19 flare-nut spanner](https://toolshub.com.pk/products/zeemax-flare-nut-spanner-17-x-19-zmxfns004), [Daraz flare nut wrench search](https://www.daraz.pk/catalog/?q=flare+nut+wrench+set) | Needed to avoid rounding old brake fittings; confirm actual fitting sizes before buying single-size wrenches. |
-| Brake line cutter / bender / flaring tool | [Daraz brake line flaring tool search](https://www.daraz.pk/catalog/?q=brake+line+flaring+tool), [Daraz pipe cutter search](https://www.daraz.pk/catalog/?q=pipe+cutter+brake+line) | Buy only if fabricating lines yourself; otherwise confirm the brake shop provides the tool and fittings. |
+| Brake line cutter / bender / flaring tool | [Daraz brake line flaring tool search](https://www.daraz.pk/catalog/?q=brake+line+flaring+tool), [Daraz pipe cutter search](https://www.daraz.pk/catalog/?q=pipe+cutter+brake+line) | Tracked as `tool_brake_fuel_line_cutter_bender_flaring_kit`. Buy only if fabricating lines yourself; otherwise confirm the brake shop provides cutter, bender, deburrer, flaring dies, and fittings. |
 | Brake spring / drum tool | [Daraz brake spring pliers search](https://www.daraz.pk/catalog/?q=brake+spring+pliers) | Needed for rear drum shoes and hardware unless the workshop provides it. |
 
 ## Fitment-Gated Brake Parts

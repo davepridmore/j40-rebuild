@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="502mm" height="370mm" viewBox="0 0 502 370">
+  <style>
+    .profile { fill: none; stroke: #111111; stroke-width: 0.7; }
+    .reference { fill: none; stroke: #666666; stroke-width: 0.4; stroke-dasharray: 4 3; }
+    .title { font: 700 8px monospace; fill: #111111; }
+    .label { font: 700 6px monospace; fill: #333333; }
+    .note { font: 5.6px monospace; fill: #111111; }
+  </style>
+  <text x="12" y="16" class="title">SWC-BLOCK-001 rectangular hardwood cribbing block | qty 8 | units: mm</text><text x="18" y="35" class="label">side: 300 x 75</text><line class="profile" x1="18" y1="40" x2="318" y2="40" /><line class="profile" x1="318" y1="40" x2="318" y2="115" /><line class="profile" x1="318" y1="115" x2="18" y2="115" /><line class="profile" x1="18" y1="115" x2="18" y2="40" /><text x="18" y="125" class="label">top: 300 x 150</text><line class="profile" x1="18" y1="130" x2="318" y2="130" /><line class="profile" x1="318" y1="130" x2="318" y2="280" /><line class="profile" x1="318" y1="280" x2="18" y2="280" /><line class="profile" x1="18" y1="280" x2="18" y2="130" /><text x="330" y="35" class="label">end: 150 x 75</text><line class="profile" x1="330" y1="40" x2="480" y2="40" /><line class="profile" x1="480" y1="40" x2="480" y2="115" /><line class="profile" x1="480" y1="115" x2="330" y2="115" /><line class="profile" x1="330" y1="115" x2="330" y2="40" /><text x="12" y="302" class="note">Finished size: 300 L x 150 W x 75 H mm.</text><text x="12" y="312" class="note">Qty 8. Tolerance: length +/-5, width +/-3, height +/-3 mm.</text><text x="12" y="322" class="note">Grain runs along 300 mm length. Faces flat and parallel.</text><text x="12" y="332" class="note">Raw unfinished hardwood. Light 3-5 mm edge chamfer allowed.</text><text x="12" y="342" class="note">Use with rated stands only; not a stand substitute.</text>
+</svg>

@@ -1,0 +1,7 @@
+check_id,applies_to,inspection,pass_condition,reject_condition
+SWC-INSP-001,all,Material check,"Seasoned dense solid hardwood; dry and heavy for size","Wet/green wood, softwood, plywood, MDF, chipboard, laminated/glued board, oily or painted offcut"
+SWC-INSP-002,SWC-BLOCK-001,Rectangular block dimensions,"300 x 150 x 75 mm within tolerance","Undersize beyond tolerance, bowed faces, twisted block, non-square ends"
+SWC-INSP-003,SWC-CHOCK-001,Wedge dimensions,"200 x 100 mm base, 75 mm rear, 25 mm nose within tolerance","Feather-edge nose, uneven taper, split grain, unstable bottom"
+SWC-INSP-004,all,Stability on flat floor,"Each piece sits flat without rocking","Rocks, has rounded bearing face, wane, or unstable cut"
+SWC-INSP-005,all,Defect check,"No cracks through thickness; no large knots on bearing faces; no insect damage","Split ends, loose knots, large deep knots, visible rot or insect tunneling"
+SWC-INSP-006,all,Use control,"Marked as supplemental cribbing/chocks only","Supplier or workshop treats blocks as a substitute for rated jack stands"

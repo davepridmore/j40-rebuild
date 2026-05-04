@@ -70,7 +70,7 @@ Do not final-close suspension until brake hose, hard-line, parking-brake cable, 
 | 24 inch breaker bar | Planned/open | Buy or confirm workshop equivalent before old spring/U-bolt work. |
 | Metric socket/spanner set | Received tool set | Confirm sizes for spring, shackle, shock, wheel, and brake fittings. |
 | Flare-nut/line wrenches | Not clearly tracked | Required for brake hard lines and flex hose fittings. |
-| Brake line cutter, bender, and flaring tool | Not clearly tracked | Required if fabricating lines at home; otherwise confirm the brake shop provides them. |
+| Brake line cutter, bender, and flaring tool | Planned as `tool_brake_fuel_line_cutter_bender_flaring_kit` | Required only if fabricating lines at home; otherwise confirm the brake shop provides cutter, bender, deburrer, flaring dies, and fittings. |
 | Brake bleeder bottle/vacuum bleeder and clear hose | Not clearly tracked | Required for hydraulic closeout. |
 | Brake spring pliers/hold-down tool | Not clearly tracked | Required for rear drum spring/hardware work unless workshop provides them. |
 | Caliper piston tool or C-clamp | Not clearly tracked | Required for front pad/caliper service. |

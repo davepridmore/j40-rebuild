@@ -4,20 +4,22 @@ Use this page as the sendable market/fabricator brief for the J40/HJ47 2H replac
 
 For the sendable local-market order sheet, use [Hose Local Market Order Sheet](hose-local-scout-handoff.md). Keep this page for detailed fabrication/order release.
 
-Current release position: standard HJ47/2H and diesel-service sizes are accepted as the local-market order basis for the molded coolant hoses, overflow hose, heater hose stock, diesel feed/return/leak-off hose stock, vacuum hose stock, breather hose stock, and conditional 8 mm / 6 mm low-pressure fuel hard-line stock. The May 2 tape-reference photos plus the physical sample are accepted for formed-coolant-pipe quote/template release.
+Current release position: standard HJ47/2H and diesel-service sizes are accepted as the local-market order basis for new molded coolant hoses, overflow hose, heater hose stock, diesel feed/return/leak-off hose stock, vacuum hose stock, breather hose stock, 8 mm / 6 mm low-pressure fuel hard-line stock, brake hydraulic lines, and clutch hydraulic line/hose stock. The May 2 tape-reference photos plus the physical sample are accepted for new formed-coolant-pipe quote/template release.
 
 Hydraulic safety and final installation checks stay separate: brake/clutch flex fittings, flare/thread identification, route clearance, pressure/bleed tests, fuel prime leak test, coolant pressure test, vacuum assist check, and chafe checks still close at dry-fit/install.
 
 ## Market Message
 
-Please quote/supply the parts below for a Toyota Land Cruiser J40/HJ47 with 2H diesel. The listed lengths are the buy lengths for the local market. Use automotive-rated material only. Do not substitute washer pipe, soft water pipe, bare copper, or non-brake-rated hydraulic pipe. Where a physical sample is available, copy the sample and confirm all ID/OD/length/thread/flare dimensions in `mm`.
+Please quote/supply the new parts below for a Toyota Land Cruiser J40/HJ47 with 2H diesel. The listed lengths are the buy lengths for the local market and include units. Use automotive-rated material only. Do not substitute washer pipe, soft water pipe, bare copper, used hose, used hard line, or non-brake-rated hydraulic pipe. Where a physical sample is available, copy the sample and confirm all ID/OD/length/thread/flare dimensions in `mm`.
+
+Keep tool purchases outside the hose order. Rubber hose is cut to length, molded radiator hose is bought by shape, and metal hard lines need a cutter/bender/flaring kit only if they are fabricated at home.
 
 ## Exact Specs
 
 | Line | Send to local market / fabricator | Qty / buy length | Install / sample check | Media |
 | --- | --- | --- | --- | --- |
-| `RPO-COOL-001` | Molded EPDM upper radiator hose for HJ47/2H route. Toyota `16571-68020` and Dayco `DMH1342` / `CH1342` are shape references only. | `1` molded hose | Thermostat neck OD, radiator upper neck OD, hose OD for clamps, old-hose free length if available, fan/belt/radiator-support clearance. | `COOL-A` |
-| `RPO-COOL-002` | Molded EPDM lower radiator hose for HJ47/2H route. Toyota `16572-68020` is a shape reference only. | `1` molded hose | Radiator lower outlet OD, engine/water-pump inlet OD, hose OD for clamps, old-hose free length if available, lower bend clearance. | `COOL-A` |
+| `RPO-COOL-001` | Molded EPDM upper radiator hose for HJ47/2H route. Toyota `16571-68020` and Dayco `DMH1342` / `CH1342` are shape references only. Published molded free length is `355 mm`; do not substitute straight hose by length alone. | `1` molded hose, `355 mm` | Thermostat neck OD, radiator upper neck OD, hose OD for clamps, old-hose free length if available, fan/belt/radiator-support clearance. | `COOL-A` |
+| `RPO-COOL-002` | Molded EPDM lower radiator hose for HJ47/2H route. Toyota `16572-68020` and Dayco `DMH1343` / `CH1343` are shape references only. Published molded free length is `480 mm`; do not substitute straight hose by length alone. | `1` molded hose, `480 mm` | Radiator lower outlet OD, engine/water-pump inlet OD, hose OD for clamps, old-hose free length if available, lower bend clearance. | `COOL-A` |
 | `RPO-COOL-003` | Small EPDM coolant overflow hose from radiator neck to reserve bottle. | `1000 mm` local hose, cut to route; OE reference length `600 mm` | Radiator overflow nipple OD, bottle nipple OD, finished route length, clip/clamp size. | `COOL-B` |
 | `RPO-COOL-004A/B` | EPDM heater hose, SAE J20R3 or better. Use `16 mm / 5/8 in` ID exact order basis. | `400 mm` inlet + `280 mm` outlet, or `1000 mm` stock to cut | Engine heater nipple OD, heater-core nipple OD, route lengths, clamp OD, rear-heater presence. | `COOL-C` |
 | `RPO-COOL-005` | Fabricate formed metal coolant/radiator pipe from the physical sample. Use coolant-compatible mild steel/aluminized steel or 304 stainless tube. Match OD, wall, bends, clocking, offsets, beaded ends, clamp lands, and hose overlap. | `750 mm` minimum tube blank; quote `1000 mm` stock if sold by meter/foot | Final centerline length from sample, tube OD, hose ID, wall thickness target `1.2-1.6 mm`, bend centerlines/radii/clocking, bead height target `1.5-2.0 mm` unless sample differs, clamp land length, fan/belt/radiator/body clearance. | `COOL-D` |
@@ -25,23 +27,24 @@ Please quote/supply the parts below for a Toyota Land Cruiser J40/HJ47 with 2H d
 | `RPO-FUEL-001A` | Diesel-rated feed hose, SAE J30R9 / J30R14T2 / DIN 73379-3E or equivalent. | `8 mm ID x 3000 mm` | Fuel-filter barb OD, injection-pump feed barb OD, cut lengths, hose OD for rolled-edge fuel-injection clamps. | `FUEL-A` |
 | `RPO-FUEL-001B` | Diesel-rated return/bleed hose, same rating family as above. | `6 mm ID x 2000 mm` | Pump/filter return barb ODs, cut lengths, hose OD for clamps. | `FUEL-A` |
 | `RPO-FUEL-001C` | Braided diesel injector leak-off hose. | `3.2-3.5 mm ID x 1000 mm` | Injector nipple OD, cap/end arrangement, sample hose markings. | `FUEL-A` |
-| `RPO-FUEL-002A/B` | Low-pressure fuel hard-line tube. Use automotive bundy steel or CuNi/Cunifer only; no bare copper. | Feed `8 mm OD x 5000 mm`; return `6 mm OD x 5000 mm` | Replace only weak/corroded sections. Confirm tube OD, full/section length, route bends, end/union style, clip positions, pass-through protection. | `FUEL-B` |
+| `RPO-FUEL-002A/B` | New low-pressure fuel hard-line tube. Use automotive bundy steel or CuNi/Cunifer only; no bare copper. | Feed `8 mm OD x 5000 mm`; return `6 mm OD x 5000 mm` | Replace the old feed/return hard lines with new tube copied from the old route. Confirm tube OD, full/section length, route bends, end/union style, clip positions, pass-through protection. | `FUEL-B` |
 | `RPO-VAC-001A` | Reinforced brake-booster/vacuum hose that will not collapse. | `10-12 mm ID x 2000 mm` | Trim to route during install; confirm pump/booster/check-valve barb fit, check-valve direction, heat/chafe exposure, and brake-assist vacuum. | standard 2H basis |
 | `RPO-VAC-001B` | Oil-resistant breather/oil-mist hose. | `16-19 mm ID x 1000 mm` | Trim to route during install; confirm breather spigot fit, route length, oil exposure, heat/chafe exposure, and no oil swelling. | standard 2H basis |
-| `RPO-VAC-001C` | 2H vacuum pump oil outlet hose only if fitted. Toyota/OEM `90923-02079` is a reference only. | `1` if fitted | Confirm fitted presence, overall free length, end IDs, bend shape, both fitting ODs. | capture pending |
-| `RPO-BRAKE-001A` | Complete brake flex hose assemblies matched to current front-disc/rear-drum hardware. DOT/SAE J1401 or OEM-equivalent rating. | `3` complete assemblies: front left, front right, rear center | Copy each old assembly free length in `mm`, end thread/banjo/seat, bracket retention, and clip groove. Bleed and pressure-test after install. | `BRAKE-A` |
-| `RPO-BRAKE-001B` | Brake hard-line tube and brake-rated fittings. Use bundy steel or CuNi/Cunifer only; no bare copper. | `4.75 mm / 3/16 in OD x 7600 mm / 25 ft` coil allowance | Old-line templates, flare standard, union thread, fitting seat, individual route lengths, and clip positions control final fabrication. | `BRAKE-A` |
-| `RPO-CLUTCH-001A` | Complete clutch flex hose only if cracked, corroded, swollen, leaking, or unknown. Brake/clutch hydraulic-rated. | `1` if required | Copy old assembly free length in `mm`, master/slave port thread, end/seat style, bracket retention, and drivetrain movement allowance. | capture pending |
-| `RPO-CLUTCH-001B` | Clutch hard line only if replacing. Brake/clutch-rated bundy steel or CuNi/Cunifer. | `4.75 mm / 3/16 in OD x 1500 mm` blank allowance | Final cut comes from master-to-slave route; confirm hard-line OD, port thread, flare/seat style, clips, and movement clearance. | capture pending |
+| `RPO-VAC-001C` | New 2H vacuum pump oil outlet hose if fitted. Toyota/OEM `90923-02079` is a reference only. | `1` new hose if fitted | Confirm fitted presence, overall free length in `mm`, end IDs, bend shape, both fitting ODs. | capture pending |
+| `RPO-BRAKE-001A` | New complete brake flex hose assemblies matched to current front-disc/rear-drum hardware. DOT/SAE J1401 or OEM-equivalent rating. | `3` new complete assemblies: front left, front right, rear center | Copy each old assembly free length in `mm`, end thread/banjo/seat, bracket retention, and clip groove. Bleed and pressure-test after install. | `BRAKE-A` |
+| `RPO-BRAKE-001B` | New brake hard-line tube and brake-rated fittings. Use bundy steel or CuNi/Cunifer only; no bare copper. | `4.75 mm / 3/16 in OD x 7600 mm / 25 ft` coil allowance | Old-line templates, flare standard, union thread, fitting seat, individual route lengths, and clip positions control final fabrication. | `BRAKE-A` |
+| `RPO-CLUTCH-001A` | New complete clutch flex hose. Brake/clutch hydraulic-rated. | `1` new complete assembly | Copy old assembly free length in `mm`, master/slave port thread, end/seat style, bracket retention, and drivetrain movement allowance. | capture pending |
+| `RPO-CLUTCH-001B` | New clutch hard line. Brake/clutch-rated bundy steel or CuNi/Cunifer. | `4.75 mm / 3/16 in OD x 1500 mm` blank allowance | Final cut comes from master-to-slave route; confirm hard-line OD, port thread, flare/seat style, clips, and movement clearance. | capture pending |
 | `RPO-CLIP-001` | Rubber-lined P-clips and edge/pass-through protection for fuel, brake, and clutch hard lines. | Mixed pack, around `20` clips plus fasteners | Clip IDs matched to `4.75 mm`, `6 mm`, and `8 mm` line ODs; support hard lines every `300-400 mm`. | `FUEL-B`, `BRAKE-A` |
 
 ## Hard Rules
 
 - Do not fabricate high-pressure injector pipes from generic tube.
+- Do not buy used hose, used brake/clutch hydraulic assemblies, used fuel/brake/clutch hard lines, or used clamps/clips for this scout scope.
 - Do not use bare copper for fuel or brake hard lines.
 - Do not buy generic brake or clutch hose; hydraulic flex hoses must be complete crimped assemblies copied from the old sample or matched to the fitted vehicle.
 - Do not coat the fabricated coolant pipe until it passes bench pressure test and vehicle dry-fit.
-- Replace the formed-pipe rubber connector hoses unless they are explicitly inspected and accepted.
+- Replace the formed-pipe rubber connector hoses with new hose.
 - Use smooth-band or constant-tension clamps on coolant hoses and rolled-edge fuel-injection clamps on diesel hoses.
 - Use rubber-lined P-clips for permanent hard-line support; do not use cable ties as permanent fuel/brake/clutch line supports.
 

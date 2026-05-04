@@ -1147,8 +1147,8 @@
       id: "BM-LG",
       part: "Large circular body-mount cushion",
       qty: "2",
-      image: "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-      imageCaption: "Large circular body-mount cushion",
+      image: "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
+      imageCaption: "Large circular body-mount cushion sample",
       spec: "Origin lower-left of 78 x 78 top profile; centre X39 Y39; OD 78; height 24; through bore 32; face A register/recess 46 x 2; face B flat; outside load edge R2-R3; faces parallel <=0.5; concentricity <=1.0.",
       route: "rubber lathe/CNC mill/mould; DXF is top profile",
       files: [
@@ -1161,8 +1161,8 @@
       id: "BM-SM",
       part: "Small circular body-mount cushion",
       qty: "10",
-      image: "../../photos/20260502_004437_gp_f1TySzww.jpg",
-      imageCaption: "Small circular body-mount cushion",
+      image: "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
+      imageCaption: "Small circular body-mount cushion sample",
       spec: "Origin lower-left of 64 x 64 top profile; centre X32 Y32; OD 64; height 22; through bore 32; face A register/recess 46 x 2; face B flat; outside load edge R2-R3; faces parallel <=0.5; concentricity <=1.0.",
       route: "rubber lathe/CNC mill/mould; DXF is top profile",
       files: [
@@ -2613,44 +2613,52 @@
     };
   }
 
-  function firstEvidencePreviousPartImage(row) {
-    const evidenceImages = Array.isArray(row && row.evidenceImages) ? row.evidenceImages : [];
-    const image = evidenceImages.find((candidate) => candidate && !isImageDeleted(candidate));
-    if (!image) {
-      return null;
-    }
-    return {
-      ...image,
-      caption: cleanString(image.caption) || `${cleanString(row && row.item) || "Component"} · previous part evidence`,
-      match_basis: cleanString(image.match_basis) || "previous_part_photo",
-      specific_component: cleanString(image.specific_component) || "previous_part_photo",
-    };
-  }
-
   function scoutPreviousFabricatedPartImage(row, text) {
     const rowId = cleanString(row && row.id).toUpperCase();
     const partNumber = cleanString(row && row.partNumber).toLowerCase();
+    const route = cleanString(row && row.route).toLowerCase();
     const blob = `${cleanString(text).toLowerCase()} ${rowId.toLowerCase()} ${partNumber}`;
     const subject = cleanString(row && row.item) || cleanString(row && row.id) || "Fabricated part";
     const has = (...tokens) => tokens.every((token) => blob.includes(token));
     const hasAny = (...tokens) => tokens.some((token) => blob.includes(token));
     const previous = (path, label, mediaId, tokens = []) =>
       scoutPreviousPartImage(path, `${subject} · ${label}`, mediaId, tokens);
+    const controlledIds = new Set([
+      "BM-SM",
+      "BM-LG",
+      "BM-CUP-SM",
+      "BM-CUP-LG",
+      "FS-OVAL",
+      "FS-STRIP-L",
+      "FS-STRIP-R",
+      "MIDI5-PLATE-001",
+      "MIDI5-SUBPLATE-001",
+      "RELAY-CARRIER-001",
+      "RELAY-GUARD-001",
+    ]);
+    const isFabricationRow =
+      controlledIds.has(rowId) ||
+      partNumber.endsWith(".dxf") ||
+      ["rubber_recreation_rev_a", "midi5_plate_mount_rev_c", "relay_mount_rev_c"].some((token) => route.includes(token));
+
+    if (!isFabricationRow) {
+      return null;
+    }
 
     if (rowId === "BM-CUP-SM" || partNumber.includes("bm_cup_small") || (has("cup", "small") && hasAny("body-mount", "body mount"))) {
       return previous("../../photos/20260502_004413_gp_Qno8OVRg.jpg", "previous small body-mount cup/seat sample", "20260502_004413_gp_Qno8OVRg", ["bm-cup-sm", "previous"]);
     }
     if (rowId === "BM-CUP-LG" || partNumber.includes("bm_cup_large") || (has("cup", "large") && hasAny("body-mount", "body mount"))) {
-      return previous("../../photos/20260502_004231_gp_CfosvPIg.jpg", "previous large body-mount cup/seat scale sample", "20260502_004231_gp_CfosvPIg", ["bm-cup-lg", "previous"]);
+      return previous("../../photos/20260502_004419_gp_ZPXJRBzg.jpg", "previous large body-mount cup/seat sample", "20260502_004419_gp_ZPXJRBzg", ["bm-cup-lg", "previous"]);
     }
     if (hasAny("body-mount cup", "body mount cup", "cup / seat", "cup washer", "seat washer", "bm-cup")) {
       return previous("../../photos/20260502_004413_gp_Qno8OVRg.jpg", "previous body-mount cup/seat sample", "20260502_004413_gp_Qno8OVRg", ["bm-cup", "previous"]);
     }
     if (rowId === "BM-LG" || partNumber.includes("bm_lg") || hasAny("large circular body-mount", "large circular body mount", "large body-mount cushion", "large body mount cushion")) {
-      return previous("../../photos/20260502_004231_gp_CfosvPIg.jpg", "previous large circular body-mount cushion sample", "20260502_004231_gp_CfosvPIg", ["bm-lg", "previous"]);
+      return previous("../../photos/20260502_004419_gp_ZPXJRBzg.jpg", "previous large circular body-mount cushion sample", "20260502_004419_gp_ZPXJRBzg", ["bm-lg", "previous"]);
     }
     if (rowId === "BM-SM" || partNumber.includes("bm_sm") || hasAny("small circular body-mount", "small circular body mount", "small body-mount cushion", "small body mount cushion")) {
-      return previous("../../photos/20260502_004437_gp_f1TySzww.jpg", "previous small circular body-mount cushion sample", "20260502_004437_gp_f1TySzww", ["bm-sm", "previous"]);
+      return previous("../../photos/20260502_004442_gp_7WcFHjLQ.jpg", "previous small circular body-mount cushion sample", "20260502_004442_gp_7WcFHjLQ", ["bm-sm", "previous"]);
     }
     if (rowId === "FS-OVAL" || partNumber.includes("fs_oval") || hasAny("two-hole oval", "two hole oval", "oval front-support", "oval front support", "oval pad")) {
       return previous("../../photos/20260502_004345_gp_yK8VYzMQ.jpg", "previous two-hole oval front-support pad", "20260502_004345_gp_yK8VYzMQ", ["fs-oval", "previous"]);
@@ -2661,9 +2669,6 @@
     if (rowId === "FS-STRIP-R" || partNumber.includes("fs_strip_right") || (hasAny("front-support strip", "front support strip", "strip rubber") && hasAny("right", "right-side", "right side"))) {
       return previous("../../photos/20260502_004222_gp_PKRe5HSQ.jpg", "previous right front-support strip sample", "20260502_004222_gp_PKRe5HSQ", ["fs-strip-r", "previous"]);
     }
-    if (hasAny("crush sleeve", "body-mount sleeve", "body mount sleeve", "shim and spacer", "shim pack")) {
-      return firstEvidencePreviousPartImage(row);
-    }
     if (rowId === "MIDI5-PLATE-001" || rowId === "MIDI5-SUBPLATE-001" || hasAny("midi5_mount_plate", "midi5_holder_subplate", "midi 5-way structural", "midi 5-way non-conductive")) {
       return previous("../../photos/20260411_143135.jpg", "received MIDI holder bank to mount", "20260411_143135", ["midi5", "previous"]);
     }
@@ -2671,7 +2676,7 @@
       return previous("../../photos/20260411_143125.jpg", "received 10-way relay/fuse box to mount", "20260411_143125", ["relay-box", "previous"]);
     }
 
-    return firstEvidencePreviousPartImage(row);
+    return null;
   }
 
   function scoutComponentImage(row) {
@@ -2886,14 +2891,14 @@
       scope: "Exact order sheet",
       quantity: "23 HLS line items plus 21 pipe release-spec lines",
       plain_stall_request:
-        "I need the exact J40/HJ47 hose, pipe, hard-line, brake/clutch hydraulic, fuel, vacuum, and support-clip lines listed in the order sheet. Use those IDs and specs; do not quote generic rubber pipe.",
+        "I need new J40/HJ47 hose, pipe, hard-line, brake/clutch hydraulic, fuel, vacuum, and support-clip components from the order sheet. Use those IDs and specs; do not quote used parts or generic rubber pipe.",
       buy_target:
-        "Use the exact requirement list below and the linked handoff pages. EPDM for coolant/heater, diesel-rated fuel hose, reinforced vacuum hose, brake-rated hard line, and complete crimped DOT/SAE J1401 or OEM-equivalent brake/clutch hose assemblies only.",
+        "Use the exact requirement list below and the linked handoff pages. New EPDM for coolant/heater, new diesel-rated fuel hose, new reinforced vacuum hose, new brake-rated hard line, and new complete crimped DOT/SAE J1401 or OEM-equivalent brake/clutch hose assemblies only.",
       must_include: [
         "Correct inside diameter, length, bends, or end fittings matched to the old sample.",
         "New clamps, clips, or fittings quoted separately when needed.",
         "Brake and clutch flex hoses supplied as complete crimped assemblies.",
-        "Brake hard-line material only in brake-rated 4.75 mm / 3/16 in tube where hard lines are being replaced.",
+        "Brake hard-line material only in new brake-rated 4.75 mm / 3/16 in tube.",
         "Visible rating or brand markings where the hose type normally has markings.",
       ],
       bench_test: [
@@ -2906,7 +2911,7 @@
         "Seller gives generic hydraulic or air hose for fuel, coolant, vacuum, brake, or clutch use.",
         "Brake or clutch hose is loose rubber hose instead of a crimped hydraulic assembly.",
         "End fittings, bend, diameter, length, or clip style do not match the sample or measurement.",
-        "Hose is old, cracked, swollen, oily, unmarked where markings are required, or already cut too short.",
+        "Any hose, line, clip, clamp, or fitting is used, old stock, cracked, swollen, oily, unmarked where markings are required, or already cut too short.",
       ],
       capture_before_leaving: [
         "Photo of each new hose or line beside the old sample or measurement note.",
@@ -2916,7 +2921,7 @@
       price_guidance: {
         rule: "Quote each line separately. Do not pay for any brake, clutch, fuel, or vacuum item until sample match and material type are clear.",
       },
-      decision_rule: "Buy only the lines that match the old sample or confirmed measurement and have the correct material rating.",
+      decision_rule: "Quote every hose, brake, clutch, fuel, and vacuum item as a new replacement component; buy only the new lines that match the old sample or confirmed measurement and have the correct material rating.",
       links: [
         scoutDocLink("docs/hose-local-scout-handoff.md", "Hose local scout handoff"),
         scoutDocLink("docs/local-market-component-order-spec-20260504.md", "Exact local-market order spec"),
@@ -3217,11 +3222,14 @@
         partNumber: "bm_sm_body_mount_cushion_rev_a.dxf",
         route: "rubber_recreation_rev_a",
         state: "quote_first_article_ready",
-        spec: "DXF quote/first article for small body-mount cushion; through cuts only on CUT/CUT_BORE/DRILL layers.",
+        image: scoutPreviousPartImage("../../photos/20260502_004442_gp_7WcFHjLQ.jpg", "Small circular body-mount cushion · separate previous-part sample", "20260502_004442_gp_7WcFHjLQ", ["bm-sm", "rubber"]),
+        spec: "CNC-ready first article for small body-mount cushion. Use the BM-SM row in machine_definitions.csv/json and the DXF/SVG package.",
         qty: "10",
+        dimension: "Origin 64 x 64; centre X32 Y32; OD 64; height 22; bore 32; register/recess 46 x 2; edge R2-R3; faces parallel <=0.5; concentricity <=1.0",
         material: "Black EPDM or NR/SBR, Shore A 60 +/-5",
-        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
-        action: "Quote/prototype first; production waits for one-piece vs split-stack decision.",
+        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
+        action: "Quote/prototype first from CNC definition; production waits for one-piece vs split-stack decision.",
+        notes: "Through geometry only on CUT/CUT_BORE/DRILL. RECESS/FORM/INSERT_MARK are not through cuts.",
       },
       {
         id: "BM-LG",
@@ -3229,10 +3237,14 @@
         partNumber: "bm_lg_body_mount_cushion_rev_a.dxf",
         route: "rubber_recreation_rev_a",
         state: "quote_first_article_ready",
-        spec: "DXF quote/first article for large body-mount cushion; caliper-confirm station and final stack before batch.",
+        image: scoutPreviousPartImage("../../photos/20260502_004419_gp_ZPXJRBzg.jpg", "Large circular body-mount cushion · separate previous-part sample", "20260502_004419_gp_ZPXJRBzg", ["bm-lg", "rubber"]),
+        spec: "CNC-ready first article for large body-mount cushion. Use the BM-LG row in machine_definitions.csv/json and the DXF/SVG package.",
         qty: "2",
+        dimension: "Origin 78 x 78; centre X39 Y39; OD 78; height 24; bore 32; register/recess 46 x 2; edge R2-R3; faces parallel <=0.5; concentricity <=1.0",
         material: "Black EPDM or NR/SBR, Shore A 60 +/-5",
-        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
+        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
+        action: "Make matched pair from one compound batch and one setup; caliper-confirm station and final stack before batch.",
+        notes: "Through geometry only on CUT/CUT_BORE/DRILL. RECESS/FORM/INSERT_MARK are not through cuts.",
       },
       {
         id: "BM-CUP-SM",
@@ -3240,10 +3252,13 @@
         partNumber: "bm_cup_small_seat_washer_rev_a.dxf",
         route: "rubber_recreation_rev_a",
         state: "quote_first_article_ready",
-        spec: "Small cup washer blank; confirm cup reuse, dish depth, and forming method before batch.",
+        image: scoutPreviousPartImage("../../photos/20260502_004413_gp_Qno8OVRg.jpg", "Small body-mount cup/seat · separate previous-part sample", "20260502_004413_gp_Qno8OVRg", ["bm-cup-sm", "rubber"]),
+        spec: "Cut/form-ready small cup washer blank; confirm cup reuse, dish depth, and forming method before batch.",
         qty: "10 working basis",
+        dimension: "Small cup OD 64; M10 clearance hole 11; dish/register depth 2-3; steel thickness 2.5-3.0",
         material: "2.5-3.0 mm steel, zinc plated or epoxy primed after forming",
-        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
+        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv; docs/rubber-recreation-fabrication-spec-20260502.md",
+        action: "Cut blank only after confirming old cup/seat construction; form and coat after deburring.",
       },
       {
         id: "BM-CUP-LG",
@@ -3251,10 +3266,13 @@
         partNumber: "bm_cup_large_seat_washer_rev_a.dxf",
         route: "rubber_recreation_rev_a",
         state: "quote_first_article_ready",
-        spec: "Large cup washer blank; confirm cup reuse, dish depth, and forming method before batch.",
+        image: scoutPreviousPartImage("../../photos/20260502_004419_gp_ZPXJRBzg.jpg", "Large body-mount cup/seat · separate previous-part sample", "20260502_004419_gp_ZPXJRBzg", ["bm-cup-lg", "rubber"]),
+        spec: "Cut/form-ready large cup washer blank; confirm cup reuse, dish depth, and forming method before batch.",
         qty: "2 working basis",
+        dimension: "Large cup OD 78; M10 clearance hole 11; dish/register depth 2-3; steel thickness 2.5-3.0",
         material: "2.5-3.0 mm steel, zinc plated or epoxy primed after forming",
-        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
+        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv; docs/rubber-recreation-fabrication-spec-20260502.md",
+        action: "Cut blank only after confirming old cup/seat construction; form and coat after deburring.",
       },
       {
         id: "FS-OVAL",
@@ -3262,10 +3280,13 @@
         partNumber: "fs_oval_front_support_pad_rev_a.dxf",
         route: "rubber_recreation_rev_a",
         state: "quote_first_article_ready",
-        spec: "Oval front-support pad; caliper-confirm holes and insert before batch.",
+        image: scoutPreviousPartImage("../../photos/20260502_004345_gp_yK8VYzMQ.jpg", "Two-hole oval front-support pad · separate previous-part sample", "20260502_004345_gp_yK8VYzMQ", ["fs-oval", "rubber"]),
+        spec: "CNC-ready first article for two-hole oval front-support pad. Use the FS-OVAL row in machine_definitions.csv/json and the DXF/SVG package.",
         qty: "2 matched pieces",
+        dimension: "Origin 64 x 96; capsule 64 x 96 R32; thickness 15; holes 12 at X32 Y16 and X32 Y80; relief 36 x 18 R3 at X14 Y39; insert/boss mark 29 at X32 Y16",
         material: "Black EPDM or NR/SBR, Shore A 60 +/-5; reuse/bond steel insert if present",
-        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
+        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
+        action: "Make matched pair; confirm holes, thickness, and insert/boss before batch. INSERT_MARK is not a through cut.",
       },
       {
         id: "FS-STRIP-L",
@@ -3273,11 +3294,14 @@
         partNumber: "fs_strip_left_template_blank_rev_a.dxf",
         route: "rubber_recreation_rev_a",
         state: "template_required",
-        spec: "Quote/template blank only; trace physical left strip rubber and carrier before production cutting.",
+        image: scoutPreviousPartImage("../../photos/20260502_004201_gp_zfUSmKJg.jpg", "Left front-support strip · separate previous-part sample", "20260502_004201_gp_zfUSmKJg", ["fs-strip-l", "rubber"]),
+        spec: "Template/CNC quote blank only. Use the FS-STRIP-L row in machine_definitions.csv/json for stock envelope, then trace the physical left strip and carrier before final cutting.",
         qty: "1",
+        dimension: "Stock envelope 165 x 40 R4; base thickness 8; raised/load pad 14; provisional slots 16 x 11 at X20 Y20 and X145 Y20 only if carrier confirms",
         material: "8 mm base / 14 mm raised-load EPDM or NR/SBR strip, Shore A 60 +/-5",
-        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
+        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
         reject: "Do not cut final production from this blank without the physical trace.",
+        notes: "Not production-CNC until the left carrier trace updates the DXF.",
       },
       {
         id: "FS-STRIP-R",
@@ -3285,11 +3309,14 @@
         partNumber: "fs_strip_right_template_blank_rev_a.dxf",
         route: "rubber_recreation_rev_a",
         state: "template_required",
-        spec: "Quote/template blank only; trace physical right strip rubber and carrier before production cutting.",
+        image: scoutPreviousPartImage("../../photos/20260502_004222_gp_PKRe5HSQ.jpg", "Right front-support strip · separate previous-part sample", "20260502_004222_gp_PKRe5HSQ", ["fs-strip-r", "rubber"]),
+        spec: "Template/CNC quote blank only. Use the FS-STRIP-R row in machine_definitions.csv/json for stock envelope, then trace the physical right strip and carrier before final cutting.",
         qty: "1",
+        dimension: "Stock envelope 165 x 40 R4; base thickness 8; raised/load pad 14; provisional slots 16 x 11 at X20 Y20 and X145 Y20 only if carrier confirms",
         material: "8 mm base / 14 mm raised-load EPDM or NR/SBR strip, Shore A 60 +/-5",
-        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
+        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
         reject: "Do not cut final production from this blank without the physical trace.",
+        notes: "Not production-CNC until the right carrier trace updates the DXF.",
       },
       {
         id: "MIDI5-PLATE-001",
@@ -3297,11 +3324,12 @@
         partNumber: "midi5_mount_plate_rev_c.dxf",
         route: "midi5_plate_mount_rev_c",
         state: "current_release",
-        spec: "Open plate-mount arrangement for five linked MIDI fuse holders.",
+        spec: "CNC/cut-ready open mount plate for five linked MIDI fuse holders.",
         qty: "1",
+        dimension: "190 x 150 mm flat plate; six 5.5 mm subplate standoff holes; four site-fit vehicle mount slots; five 6.5 mm cable P-clip holes.",
         material: "3.0 mm 5052-H32 aluminium",
-        sourceBasis: "data/manual/fabrication/midi5_plate_mount_rev_c/README.md",
-        action: "Use 10-12 mm spacers and add cable P-clips after final routing.",
+        sourceBasis: "data/manual/fabrication/midi5_plate_mount_rev_c/midi5_mount_plate_rev_c.dxf; j40_midi5_plate_mount_rev_c_dimension_sheet.pdf",
+        action: "Cut from the Rev C DXF/PDF in mm; use 10-12 mm spacers to the holder subplate and add P-clips after routing.",
       },
       {
         id: "MIDI5-SUBPLATE-001",
@@ -3309,10 +3337,12 @@
         partNumber: "midi5_holder_subplate_rev_c.dxf",
         route: "midi5_plate_mount_rev_c",
         state: "current_release",
-        spec: "Non-conductive board that carries the five linked MIDI holders.",
+        spec: "CNC/router-ready insulated holder board for five linked MIDI holders.",
         qty: "1",
+        dimension: "140 x 85 mm board; ten 4.5 mm holder holes on 20.2 mm pitch with 44 mm row separation; six 5.5 mm standoff holes.",
         material: "5.0 mm HDPE, ABS, G10, or phenolic",
-        sourceBasis: "data/manual/fabrication/midi5_plate_mount_rev_c/README.md",
+        sourceBasis: "data/manual/fabrication/midi5_plate_mount_rev_c/midi5_holder_subplate_rev_c.dxf; j40_midi5_plate_mount_rev_c_dimension_sheet.pdf",
+        action: "Route/print only in non-conductive material; keep common feed side and five fused output side clear.",
       },
       {
         id: "RELAY-CARRIER-001",
@@ -3320,10 +3350,12 @@
         partNumber: "relay_carrier_rev_c.dxf",
         route: "relay_mount_rev_c",
         state: "current_release",
-        spec: "Structural carrier for DAIER prewired 10-way relay/fuse box.",
+        spec: "CNC/cut-ready structural carrier for the DAIER prewired 10-way relay/fuse box.",
         qty: "1",
+        dimension: "360 x 255 mm flat pattern; finished face 320 x 220 mm with 20 mm side/bottom returns and 15 mm top return; six 5.5 mm guard/standoff holes; slotted relay and vehicle mounts; lower loom slot.",
         material: "3.0 mm 5052-H32 aluminium",
-        sourceBasis: "data/manual/fabrication/relay_mount_rev_c/README.md",
+        sourceBasis: "data/manual/fabrication/relay_mount_rev_c/relay_carrier_rev_c.dxf; j40_relay_mount_rev_c_dimension_sheet.pdf",
+        action: "Cut and form from the Rev C DXF/PDF in mm; trial-fit relay box, cable exit, and vehicle mounts before coating.",
       },
       {
         id: "RELAY-GUARD-001",
@@ -3331,47 +3363,87 @@
         partNumber: "relay_rear_guard_rev_c.dxf",
         route: "relay_mount_rev_c",
         state: "current_release",
-        spec: "Rear guard behind the relay box on spacers; keep bottom loom opening downward.",
+        spec: "CNC/router/print-ready rear guard behind the relay box.",
         qty: "1",
+        dimension: "280 x 185 mm rear guard with 120 x 25 mm lower loom/drain opening; six 5.5 mm standoff holes.",
         material: "3.0 mm ABS, HDPE, or polypropylene",
-        sourceBasis: "data/manual/fabrication/relay_mount_rev_c/README.md",
+        sourceBasis: "data/manual/fabrication/relay_mount_rev_c/relay_rear_guard_rev_c.dxf; j40_relay_mount_rev_c_dimension_sheet.pdf",
+        action: "Use 5-10 mm spacing to the relay box area as needed; keep bottom loom opening downward.",
         reject: "Do not fully seal the relay-box rear.",
+      },
+    ];
+    const fabricationElectricalUnderlayRows = [
+      {
+        id: "ELEC-UNDERLAY-001",
+        item: "MIDI holder insulating underlay / subplate",
+        route: "midi5_plate_mount_rev_c",
+        state: "external_plastic_quote",
+        partNumber: "midi5_holder_subplate_rev_c.dxf",
+        image: scoutPreviousPartImage("../../photos/20260411_143135.jpg", "MIDI holder bank needing non-conductive underlay", "20260411_143135", ["midi5", "underlay"]),
+        purpose: "Non-conductive middle board between the five linked MIDI holders and the owner-made metal support plate.",
+        definition: "140 x 85 x 5.0 mm board; ten 4.5 mm holder holes on 20.2 mm pitch with 44 mm row separation; six 5.5 mm standoff holes.",
+        material: "5.0 mm HDPE, ABS, G10, or phenolic",
+        action: "This is the only current external plastic/CNC quote row.",
+      },
+      {
+        id: "ELEC-UNDERLAY-002",
+        item: "Relay rear guard / underlay",
+        route: "relay_mount_rev_c",
+        state: "owner_make",
+        partNumber: "relay_rear_guard_rev_c.dxf",
+        image: scoutPreviousPartImage("../../photos/20260411_143125.jpg", "Relay box needing rear guard/underlay", "20260411_143125", ["relay-box", "underlay"]),
+        purpose: "Plastic rear guard behind the relay box; separate from the owner-made metal relay carrier.",
+        definition: "280 x 185 x 3.0 mm guard with 120 x 25 mm lower loom/drain opening and six 5.5 mm standoff holes.",
+        material: "3.0 mm ABS, HDPE, or polypropylene",
+        action: "Capture as a requirement; make in-house unless you decide to outsource the plastic sheet cut.",
+      },
+      {
+        id: "ELEC-UNDERLAY-003",
+        item: "Power module rear insulator",
+        route: "electrical_modules_rev_a",
+        state: "reference_if_combined_route",
+        partNumber: "power_module_rear_insulator_rev_a.dxf",
+        image: scoutReferenceImage("../../data/manual/fabrication/electrical_modules_rev_a/power_module_rear_insulator_rev_a.svg", "Power module rear insulator drawing", "power_module_rear_insulator_rev_a"),
+        purpose: "Non-metal rear shield/underlay for the earlier combined power-module route.",
+        definition: "210 x 130 x 3.0 mm panel; two 28 x 8 mm radiused lower cable slots; six 4.5 mm mounting holes.",
+        material: "3.0 mm ABS, HDPE, or polypropylene",
+        action: "Reference only unless the combined electrical module route is reopened.",
       },
     ];
     const fabricationSupportMarketSpec = {
       id: "fabrication_support_market_scout",
-      title: "3D Print + Workshop Support Scout",
-      scope: "Quote only",
-      quantity: "Quote per item or per print file",
+      title: "MIDI Holder Plastic Underlay Quote",
+      scope: "Plastic underlay only",
+      quantity: "1 MIDI holder subplate",
       plain_stall_request:
-        "I need local quotes for non-metal 3D printed check-fit pieces, guards, templates, spacers, or prototypes from supplied CAD/STL/DXF files. Metal brackets and plate fabrication are not part of this quote.",
+        "I need a quote for one non-conductive MIDI holder underlay/subplate from the supplied DXF/PDF files in millimeters: 140 x 85 x 5 mm, HDPE/ABS/G10/phenolic.",
       buy_target:
-        "Use a print service or workshop that can quote material, lead time, finish, tolerance, and per-piece price clearly before printing.",
+        "Use a CNC router, plastic-sheet workshop, or print service that can quote material, lead time, finish, tolerance, and one-piece price clearly before cutting or printing.",
       must_include: [
-        "Material options such as PETG, ABS, nylon, or PLA clearly named.",
-        "Per-piece price, setup charge if any, and lead time.",
-        "Basic tolerance and finish expectation before printing.",
-        "Agreement that these are check-fit/prototype pieces, not final load-bearing metal parts.",
+        "Material option clearly named: HDPE, ABS, G10, phenolic, or suitable equivalent.",
+        "One-piece price, setup charge if any, and lead time.",
+        "Basic tolerance and finish expectation before cutting or printing.",
+        "Agreement that this is only the non-conductive underlay; metal plates/brackets are owner-made.",
       ],
       bench_test: [
         "Ask the shop to inspect the file and confirm scale before quoting.",
-        "Confirm units are millimeters before printing.",
-        "For a first article, print one sample before ordering multiples.",
+        "Confirm units are millimeters before cutting or printing.",
+        "Make only one sample unless the fit is confirmed.",
       ],
       reject_if: [
-        "Shop cannot identify material, scale, print orientation, or lead time.",
-        "Quote treats prototype plastic as a final structural metal replacement.",
-        "Price is given without seeing the file or understanding quantity.",
+        "Shop cannot identify material, scale, cut/print orientation, or lead time.",
+        "Quote includes metal plate/bracket fabrication under this row.",
+        "Price is given without seeing the MIDI holder subplate file or understanding quantity.",
       ],
       capture_before_leaving: [
         "Shop name, phone number, location, material, lead time, and price.",
-        "Photo or screenshot of the file name quoted.",
-        "Photo of sample material or sample print quality if available.",
+        "Photo or screenshot of the quoted file name: midi5_holder_subplate_rev_c.",
+        "Photo of sample material or sample cut/print quality if available.",
       ],
       price_guidance: {
-        rule: "Quote first. Print only after the file, material, quantity, and first-article need are clear.",
+        rule: "Quote first. Make one underlay only after the file, material, quantity, and first-article need are clear.",
       },
-      decision_rule: "Use the service only for non-metal check-fit or prototype parts unless a separate approved final-part spec exists.",
+      decision_rule: "This quote row is only for the MIDI holder plastic underlay. Owner-made metal brackets and other electrical underlays are tracked separately.",
       links: [
         scoutDocLink("docs/fabrication-handoff-index.md", "Fabrication handoff index"),
         scoutDocLink("docs/rubber-recreation-fabrication-spec-20260502.md", "Rubber fabrication spec"),
@@ -3527,8 +3599,8 @@
       {
         id: "fabrication",
         title: "Fabrication",
-        description: "Controlled shop send-out packages with itemized files, release position, and exact fabrication specs.",
-        chips: ["DXF/SVG/PDF packages", "Quote first article", "Do not send superseded files"],
+        description: "Simple shop order table for rubber, plastic, and metal fabrication rows, with file packages kept below for send-out.",
+        chips: ["Simple order table", "Files linked below", "First article where noted"],
         parts: fabricationParts,
         marketSpecs: [
           ...attachScoutImage(
@@ -3542,9 +3614,24 @@
           scoutDocLink("docs/rubber-recreation-fabrication-spec-20260502.md", "Rubber recreation fabrication spec"),
         ],
         exactSpecRows: fabricationExactSpecRows,
+        underlayRows: fabricationElectricalUnderlayRows,
         fabricationPackages: (fabricationWorkstream && fabricationWorkstream.fabrication_packages) || [],
       },
     ];
+  }
+
+  function formatScoutBuyLength(value) {
+    const text = cleanString(value);
+    if (!text) {
+      return "";
+    }
+    if (/^\d+(?:\.\d+)?$/.test(text)) {
+      return `${text} mm`;
+    }
+    if (/^\d+(?:\.\d+)?\s*\/\s*\d+(?:\.\d+)?\s*ft$/i.test(text)) {
+      return text.replace(/^(\d+(?:\.\d+)?)/, "$1 mm");
+    }
+    return text;
   }
 
   function renderScoutField(label, value) {
@@ -3594,7 +3681,7 @@
                       <td class="scout-spec-cell">${escapeHtml(row.order_text || "-")}</td>
                       <td class="scout-meta-cell">
                         ${renderScoutField("Qty", row.qty)}
-                        ${renderScoutField("Buy length", row.buy_length_mm)}
+                        ${renderScoutField("Buy length", formatScoutBuyLength(row.buy_length_mm))}
                         ${renderScoutField("Diameter", row.diameter_spec)}
                       </td>
                       <td class="scout-meta-cell">
@@ -3676,7 +3763,7 @@
     return `
       <article class="card">
         <div class="detail-header">
-          <h3>Exact Release Specs</h3>
+          <h3>Order Table</h3>
           ${chip(`${sourceRows.length} rows`)}
         </div>
         <div class="table-wrap">
@@ -3684,11 +3771,10 @@
             <thead>
               <tr>
                 <th>Image</th>
-                <th>Line</th>
-                <th>Route / State</th>
-                <th>Shop Ask</th>
-                <th>Qty / Size</th>
-                <th>Check / Reject</th>
+                <th>Item</th>
+                <th>Qty / Material</th>
+                <th>Required Definition</th>
+                <th>Files / Checks</th>
               </tr>
             </thead>
             <tbody>
@@ -3698,25 +3784,80 @@
                     <tr>
                       ${renderInventoryImageCell({ item: row.item, image: row.image || scoutComponentImage(row) }, row.item || "Spec row image")}
                       <td>
-                        <strong>${escapeHtml(row.id || "-")}</strong>
-                        <div class="small-muted">${escapeHtml(row.item || "")}</div>
-                        ${row.partNumber ? `<div class="small-muted">${escapeHtml(row.partNumber)}</div>` : ""}
-                      </td>
-                      <td>
-                        ${escapeHtml(formatToken(row.route || "-"))}
+                        <strong>${escapeHtml(row.item || row.id || "-")}</strong>
+                        <div class="small-muted">${escapeHtml(row.id || "")}</div>
                         <div>${statusChip(row.state || "release_hold")}</div>
                       </td>
-                      <td class="scout-spec-cell">${escapeHtml(row.spec || "-")}</td>
                       <td class="scout-meta-cell">
                         ${renderScoutField("Qty", row.qty)}
-                        ${renderScoutField("Dimensions", row.dimension)}
                         ${renderScoutField("Material", row.material)}
-                        ${renderScoutField("Source", row.sourceBasis)}
+                      </td>
+                      <td class="scout-spec-cell">
+                        ${escapeHtml(row.spec || "-")}
+                        ${renderScoutField("Dimensions", row.dimension)}
                       </td>
                       <td class="scout-notes-cell">
+                        ${renderScoutField("File", row.partNumber)}
+                        ${renderScoutField("Route", row.route ? formatToken(row.route) : "")}
+                        ${renderScoutField("Source", row.sourceBasis)}
                         ${renderScoutField("Check", row.action)}
                         ${renderScoutField("Reject if", row.reject)}
                         ${renderScoutField("Notes", row.notes)}
+                      </td>
+                    </tr>
+                  `
+                )
+                .join("")}
+            </tbody>
+          </table>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderFabricationUnderlayTable(rows) {
+    const sourceRows = Array.isArray(rows) ? rows : [];
+    if (!sourceRows.length) {
+      return "";
+    }
+    return `
+      <article class="card">
+        <div class="detail-header">
+          <h3>Electrical Underlays</h3>
+          ${chip(`${sourceRows.length} requirements`)}
+        </div>
+        <p class="small-muted">Non-metal underlays, guards, and insulators that let the electrical components mount safely. Metal support plates and brackets stay owner-made unless explicitly re-routed.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Requirement</th>
+                <th>Use</th>
+                <th>Required Definition</th>
+                <th>File / Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${sourceRows
+                .map(
+                  (row) => `
+                    <tr>
+                      ${renderInventoryImageCell({ item: row.item, image: row.image || scoutComponentImage(row) }, row.item || "Underlay image")}
+                      <td>
+                        <strong>${escapeHtml(row.item || row.id || "-")}</strong>
+                        <div class="small-muted">${escapeHtml(row.id || "")}</div>
+                        <div>${statusChip(row.state || "tracked_requirement")}</div>
+                      </td>
+                      <td>${escapeHtml(row.purpose || "")}</td>
+                      <td class="scout-spec-cell">
+                        ${escapeHtml(row.definition || "-")}
+                        ${renderScoutField("Material", row.material)}
+                      </td>
+                      <td class="scout-notes-cell">
+                        ${renderScoutField("File", row.partNumber)}
+                        ${renderScoutField("Route", row.route ? formatToken(row.route) : "")}
+                        ${renderScoutField("Action", row.action)}
                       </td>
                     </tr>
                   `
@@ -3809,6 +3950,7 @@
         ${renderScoutDocLinks(category.docLinks)}
         ${renderScoutLocalMarketOrderTable(category.localMarketOrderRows)}
         ${renderScoutOrderSpecTable(category.exactSpecRows)}
+        ${renderFabricationUnderlayTable(category.underlayRows)}
         ${renderFabricationPackages(category.fabricationPackages)}
       </section>
     `;

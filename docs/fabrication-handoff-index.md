@@ -64,7 +64,11 @@ DXF files:
 - `midi5_mount_plate_rev_c.dxf` - `3.0 mm` 5052-H32 aluminium mount plate
 - `midi5_holder_subplate_rev_c.dxf` - `5.0 mm` HDPE, ABS, G10, or phenolic holder board
 
-Release position: current recommended MIDI holder mount. Use `10-12 mm` spacers between the holder board and mount plate, and add cable support after final routing.
+Order definitions:
+- Mount plate: `190 x 150 mm` flat plate with six `5.5 mm` subplate standoff holes, four site-fit vehicle mount slots, and five `6.5 mm` cable P-clip holes.
+- Holder subplate: `140 x 85 mm` non-conductive board with ten `4.5 mm` holder holes on `20.2 mm` pitch / `44 mm` row separation, plus six `5.5 mm` standoff holes.
+
+Release position: current recommended MIDI holder mount. The external plastic/CNC quote is only for the holder subplate; the aluminium mount plate is owner-made. Use `10-12 mm` spacers between the holder board and mount plate, and add cable support after final routing.
 
 ### Relay Mount - Rev C
 
@@ -77,7 +81,11 @@ DXF files:
 - `relay_carrier_rev_c.dxf` - `3.0 mm` 5052-H32 aluminium relay carrier
 - `relay_rear_guard_rev_c.dxf` - `3.0 mm` ABS, HDPE, or polypropylene rear guard
 
-Release position: current recommended support for the DAIER prewired 10-way relay/fuse box. Keep the bottom loom opening downward and do not fully seal the rear of the relay box.
+Order definitions:
+- Relay carrier: `360 x 255 mm` flat pattern, finished face `320 x 220 mm`, `20 mm` side/bottom returns, `15 mm` top return, six `5.5 mm` guard/standoff holes, slotted relay/vehicle mounts, and lower loom slot.
+- Rear guard: `280 x 185 mm` plastic guard with `120 x 25 mm` lower loom/drain opening and six `5.5 mm` standoff holes.
+
+Release position: current recommended support for the DAIER prewired 10-way relay/fuse box. The aluminium carrier is owner-made; the rear guard is a tracked non-metal underlay/guard requirement. Keep the bottom loom opening downward and do not fully seal the rear of the relay box.
 
 ### Electrical Modules - Rev A
 
@@ -92,6 +100,16 @@ DXF files:
 - `power_module_rear_insulator_rev_a.dxf` - non-metal rear shield
 
 Release position: reference/provisional package for the earlier combined module route. For the current split route, use `midi5_plate_mount_rev_c` and `relay_mount_rev_c`.
+
+## Electrical Underlay / Insulator Requirements
+
+These are the three non-metal electrical underlays/guards to track separately from owner-made metal plates and brackets:
+
+| Requirement | Package file | Definition | Status |
+| --- | --- | --- | --- |
+| MIDI holder insulating underlay / subplate | `midi5_plate_mount_rev_c/midi5_holder_subplate_rev_c.dxf` | `140 x 85 x 5.0 mm` HDPE/ABS/G10/phenolic board; ten `4.5 mm` holder holes; six `5.5 mm` standoff holes. | Current external plastic/CNC quote row. |
+| Relay rear guard / underlay | `relay_mount_rev_c/relay_rear_guard_rev_c.dxf` | `280 x 185 x 3.0 mm` ABS/HDPE/polypropylene guard with `120 x 25 mm` lower loom/drain opening; six `5.5 mm` standoff holes. | Captured requirement; owner-make unless outsourcing plastic sheet cut. |
+| Power module rear insulator | `electrical_modules_rev_a/power_module_rear_insulator_rev_a.dxf` | `210 x 130 x 3.0 mm` ABS/HDPE/polypropylene shield; two `28 x 8 mm` lower cable slots; six `4.5 mm` mounting holes. | Reference only unless the combined module route is reopened. |
 
 ## Superseded Electrical History
 

@@ -8,8 +8,8 @@ Scout-facing handoff: use [hose-local-scout-handoff.md](hose-local-scout-handoff
 
 | Area | Exact specification to ask for locally |
 | --- | --- |
-| Upper radiator hose | Molded EPDM coolant hose for Toyota Land Cruiser HJ47 2H upper route. Record old-hose free length in `mm` if available; measure thermostat neck OD, radiator upper neck OD, and installed hose OD for clamps in `mm`. Toyota `16571-68020` and Dayco `DMH1342` / `CH1342` are cross-references for the molded shape. Buy 1 hose plus 2 clamps. |
-| Lower radiator hose | Molded EPDM coolant hose for Toyota Land Cruiser HJ47 2H lower route. Record old-hose free length in `mm` if available; measure radiator lower outlet OD, engine/water-pump inlet OD, and installed hose OD for clamps in `mm`. Toyota `16572-68020` is the cross-reference for the molded shape. Buy 1 hose plus 2 clamps. |
+| Upper radiator hose | Molded EPDM coolant hose for Toyota Land Cruiser HJ47 2H upper route. Published Dayco `DMH1342` / `CH1342` molded free length is `355 mm`; record old-hose free length in `mm` if available as a match check. Measure thermostat neck OD, radiator upper neck OD, and installed hose OD for clamps in `mm`. Toyota `16571-68020` is the OEM shape reference. Buy 1 hose plus 2 clamps. |
+| Lower radiator hose | Molded EPDM coolant hose for Toyota Land Cruiser HJ47 2H lower route. Published Dayco `DMH1343` / `CH1343` molded free length is `480 mm`; record old-hose free length in `mm` if available as a match check. Measure radiator lower outlet OD, engine/water-pump inlet OD, and installed hose OD for clamps in `mm`. Toyota `16572-68020` is the OEM shape reference. Buy 1 hose plus 2 clamps. |
 | Radiator hose clamps | Toyota clamp references from EPC: `90460-50016` / `96111-10500`; lower outlet also lists `96111-10560`. Local equivalent: quality stainless constant-tension or smooth-band worm clamps matched to the installed hose outside diameter. |
 | Radiator overflow / breather hose | Small EPDM coolant hose matched to reserve tank/radiator nipple OD in `mm`. Toyota `90445-12078` is a `600 mm` reference length; local equivalent should be `1000 mm` buy length and cut to measured route without kinks. |
 | Radiator cap | Toyota reference `16401-41021`, or exact pressure-equivalent cap matching the fitted radiator neck. Replace with the hose service. |
@@ -27,7 +27,7 @@ Scout-facing handoff: use [hose-local-scout-handoff.md](hose-local-scout-handoff
 | Brake booster / vacuum hose | Reinforced vacuum hose that will not collapse under vacuum, oil-resistant where it connects near the vacuum pump. Match the actual barb/check-valve OD, commonly around `10-12 mm ID`. Buy `2000 mm` and cut to measured route. Replace suspect one-way check valve and clips. |
 | 2H vacuum pump oil outlet hose | If this hose is fitted on your pump, use an oil-compatible molded hose. Toyota/OEM `90923-02079` is only a reference for 2H HJ47/HJ60/HJ75 applications; if sourcing locally, measure overall free length, end IDs, and fitting ODs in `mm`. |
 | Crankcase breather / oil mist hose | Oil-resistant NBR or fuel/oil-rated hose, not ordinary EPDM coolant hose. Match actual spigot OD, commonly `16-19 mm ID`. Buy `1000 mm` and cut to measured route. |
-| Engine air-cleaner intake duct | Inspect the visible air-cleaner-to-intake duct and replace only if cracked, loose, hard, oil-softened, or incorrectly sized. Order or fabricate by air-cleaner outlet OD, intake/manifold inlet OD, free length, bend/offset, accordion/compression movement, clamp OD, and any branch/nipple OD in `mm`. Use oil-mist-resistant intake duct rubber or reinforced air duct, not coolant/fuel/vacuum hose. |
+| Engine air-cleaner intake duct | Replace with a new duct/couplers matched to the visible air-cleaner-to-intake route. Order or fabricate by air-cleaner outlet OD, intake/manifold inlet OD, free length, bend/offset, accordion/compression movement, clamp OD, and any branch/nipple OD in `mm`. Use oil-mist-resistant intake duct rubber or reinforced air duct, not coolant/fuel/vacuum hose. |
 | Firewall / panel grommets for pipes and tubes | EPDM/NBR grommets. Grommet ID should be hose/tube OD plus 0.5-1 mm; groove should match panel thickness; outer diameter should match the drilled hole. Keep the planned ID ranges: 6/8/10/12 mm and 16/20/25 mm. |
 
 ## Material Rules
@@ -41,21 +41,22 @@ Scout-facing handoff: use [hose-local-scout-handoff.md](hose-local-scout-handoff
 
 ## Local Buying Script
 
-Take the old hoses or caliper measurements and ask for:
+Take the old hoses or caliper measurements and ask for new replacement parts:
 
-1. Molded EPDM upper and lower radiator hoses for Toyota 2H HJ47 route; use `16571-68020`, `16572-68020`, and Dayco `DMH1342` / `CH1342` only as shape references. Confirm neck ODs, clamp OD, and old-hose free length in `mm`.
+1. Molded EPDM upper and lower radiator hoses for Toyota 2H HJ47 route; use `16571-68020`, `16572-68020`, Dayco `DMH1342` / `CH1342` upper, and Dayco `DMH1343` / `CH1343` lower as shape references. Vendor-facing free-length basis: upper `355 mm`, lower `480 mm`. Confirm neck ODs, clamp OD, and old-hose free length in `mm`.
 2. Formed metal coolant/radiator pipe: `28-30 mm OD`, `1.2-1.6 mm` wall tube; buy/quote `1000 mm` shop stock if sold by meter, with `750 mm` as the absolute minimum blank; trim only after the physical sample's centerline length is measured.
 3. Two formed-pipe connector hoses: ask locally for `2 x 500 mm` EPDM radiator rubber pipe blanks, working `28-30 mm ID`, then cut by measured pipe-end OD, mating spigot OD, finished cut length, hose overlap, bend/kink clearance, and clamp OD in `mm`; use molded connectors if straight hose kinks.
 4. EPDM heater hose: inlet `400 mm` cut length and outlet `280 mm` cut length, `16 mm` / `5/8 inch` ID exact order basis.
 5. Diesel fuel hose: `8 mm ID x 3000 mm`, `6 mm ID x 2000 mm`, `3.2-3.5 mm` leak-off x `1000 mm`, all SAE J30R9/J30R14T2 or DIN 73379-3E.
 6. Reinforced vacuum hose `10-12 mm ID x 2000 mm` and oil-resistant breather hose `16-19 mm ID x 1000 mm`, cut to measured route, plus the correct one-way check valve if the existing valve is old or unknown.
-7. Engine air-cleaner intake duct only if failed: sample-match by air-cleaner outlet OD, intake inlet OD, free length, offset, accordion travel, and clamp OD in `mm`.
+7. New engine air-cleaner intake duct/couplers: sample-match by air-cleaner outlet OD, intake inlet OD, free length, offset, accordion travel, and clamp OD in `mm`.
 8. Smooth-band coolant clamps, fuel-injection clamps, and rubber-lined P-clips matched to measured hose/tube OD in `mm`.
 
 ## Source Notes
 
 - Toyota HJ47 2H radiator/water outlet EPC reference: https://www.megazip.net/zapchasti-dlya-avtomobilej/toyota/land-cruiser-38286/hj47-56585/hj47rv-kcq-936138/radiator-water-outlet-18022835
 - Toyota HJ47 heater water piping EPC reference: https://toyota-europe.epc-data.com/land_cruiser/hj47rv/8446/electric/8716/87245A/ and https://toyota-europe.epc-data.com/land_cruiser/hj47rv/8446/electric/8716/87246B/
-- Dayco HJ47 2H upper radiator hose cross-reference: https://www.allfourx4.com.au/Dayco-Upper-Top-Radiator-Hose-suitable-for-Landcruiser-HJ47-2H-40L-DMH1342/
+- Dayco HJ47 2H upper radiator hose published free length/spec reference: https://automotivesuperstore.com.au/dayco-dmh1342
+- Dayco HJ47 2H lower radiator hose published free length/spec reference: https://automotivesuperstore.com.au/dayco-dmh1343
 - Gates coolant/heater and fuel-hose material references: https://www.gates.com/us/en/fluid-power/engine-hose/heater-hose.p.4230-000000-000043.v.4230-00150.html and https://www.gates.com/gb/en/fluid-power/engine-hose/fuel-fill-hose.p.4219-000000-000003.html
 - 2H vacuum pump oil outlet hose reference: https://www.cityracerllc.com/products/oem-2h-vacuum-pump-oil-outlet-hose-for-land-cruiser-hj47-hj60-hj61-hj75

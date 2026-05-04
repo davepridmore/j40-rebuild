@@ -1,6 +1,6 @@
 # Component Jobs vs Photo Inventory Reconciliation
 
-- Generated: 2026-05-04 01:41:07
+- Generated: 2026-05-04 06:54:37
 - Source component jobs: `data/manual/component_jobs.csv`
 - Source photo inventory: `data/manual/photo_inventory.csv`
 - Output CSV: `data/manual/component_jobs_photo_reconciliation.csv`

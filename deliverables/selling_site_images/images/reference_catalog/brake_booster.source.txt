@@ -1,0 +1,5 @@
+query: Toyota Land Cruiser J40 44610-60050 BBN60050 brake booster image
+image_url: https://cdn11.bigcommerce.com/s-srdtnjgplg/images/stencil/1280x1280/products/1964/9278/BBN60050N_3__48304.1742938876.png?c=1
+page_url: https://cruiserteq.com/brake-booster-aftermarket-fits-9-1975-1987-bj4x-fj4x-fj60-bbn60050/
+source_title: Brake Booster - Aftermarket - Fits 9/1975 - 1987 BJ4x/FJ4x/FJ60 (BBN60050)
+selection_note: Replaces the previous brake-master-cylinder image for the brake booster scout card. This side view shows the dual-diaphragm booster shell, firewall/master studs, pushrod side, and vacuum check-valve/nipple position; it visually matches the 44610-60050 primary booster target used by the project scout spec.
