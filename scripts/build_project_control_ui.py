@@ -76,6 +76,7 @@ PRIMARY_WORKSTREAM_IDS: tuple[str, ...] = (
     "chassis_rubbers",
     "electrical_reset",
     "fabrication_handoff",
+    "local_market_procurement",
     "interior_controls",
     "mechanical_baseline",
     "replacement_pipes",
@@ -92,6 +93,7 @@ WORKSTREAM_TITLE_OVERRIDES: dict[str, str] = {
     "fabrication_handoff": "Fabrication",
     "interior_controls": "Dashboard",
     "interior_weatherproofing": "Interior",
+    "local_market_procurement": "Local Market",
     "paint_refinish": "Paint",
     "replacement_pipes": "Replacement Pipes",
     "eps_vitz_upgrade": "Steering (EPS)",
@@ -267,6 +269,27 @@ WORKSTREAM_IMAGE_PROFILES: dict[str, dict[str, set[str]]] = {
         "stages": {"procurement_reconciliation"},
         "keywords": {"fabrication", "rubber", "body_mount", "relay", "fuse", "midi", "wiring", "sample"},
     },
+    "local_market_procurement": {
+        "component_groups": {"procurement_inventory"},
+        "stages": {"procurement_reconciliation"},
+        "keywords": {
+            "local",
+            "market",
+            "scout",
+            "bilal",
+            "ganj",
+            "timber",
+            "wood",
+            "hardwood",
+            "cribbing",
+            "toolbench",
+            "drill",
+            "vice",
+            "fuse",
+            "rubber",
+            "hardware",
+        },
+    },
     "mechanical_baseline": {
         "component_groups": {"engine_bay", "chassis_underside"},
         "stages": {"baseline_walkaround", "underside_inspection", "mechanical_inspection", "mechanical_cleaning"},
@@ -331,6 +354,7 @@ WORKSTREAM_MIN_IMAGE_SCORE: dict[str, int] = {
     "chassis_fixing": 20,
     "chassis_rubbers": 18,
     "fabrication_handoff": 24,
+    "local_market_procurement": 18,
     "body_chassis": 18,
     "paint_refinish": 18,
     "mechanical_baseline": 18,
@@ -352,6 +376,7 @@ WORKSTREAM_MIN_KEYWORD_HITS: dict[str, int] = {
     "chassis_rubbers": 1,
     "electrical_reset": 1,
     "fabrication_handoff": 1,
+    "local_market_procurement": 1,
     "mechanical_baseline": 2,
     "replacement_pipes": 1,
     "brake_system": 2,
@@ -581,6 +606,12 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
         ("Send rubber recreation Rev A for quote/first article", "Use the rubber package but keep final production blocked by measurement closure."),
         ("Send current electrical fabrication packages", "Track the three electrical requirements: electrical modules Rev A, MIDI plate Rev C, and relay mount Rev C."),
         ("Close first-article inspection", "Accept parts only after dimensional, material, fit, and release-status checks are recorded."),
+    ],
+    "local_market_procurement": [
+        ("Run the short market list", "Use the local market workstream as the one place for Bilal Ganj, timber, tool, fastener, rubber, and auto-electrician asks."),
+        ("Buy or quote hardwood cribbing", "Source the 8 rectangular hardwood blocks and 4 wedge chocks from the timber merchant before suspension/brake work."),
+        ("Capture quote evidence", "Record seller, price, photos, material claim, and reject notes before leaving the shop."),
+        ("Update procurement rows", "Mark each local item bought, quoted, rejected, or deferred so it does not duplicate another workstream."),
     ],
     "mechanical_baseline": [
         ("Execute must-replace service pack", "Complete fluids, filters, ignition and cooling consumables on stripped access."),
@@ -1219,6 +1250,63 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "supplies": ["Inspection checklist", "Primer or plating plan", "Fasteners", "Spacers"],
                 "hold_point": "Fabrication closes only after first articles pass dimensional, material, and fit checks.",
                 "image_tokens": ["fabrication", "inspection", "rubber", "relay", "midi"],
+            },
+        ],
+    },
+    "local_market_procurement": {
+        "title": "Local Market Procurement",
+        "summary": "One in-person market lane for local timber, tools, compact electrical, rubber, hardware, and sample-matched parts.",
+        "default_tools": ["Phone/camera", "Tape measure", "Notebook", "Marker", "Sample parts or printed sheet"],
+        "default_supplies": ["Local market list", "Seller contact log", "Zip bags or labels"],
+        "subtasks": [
+            {
+                "title": "Run Short Market List",
+                "priority": "P0",
+                "remaining": "each market pass",
+                "instruction": "Use docs/local-market-procurement-workstream.md as the shop-facing list.",
+                "process_steps": [
+                    "Group stops by lane: auto-electrician, rubber, fastener, timber, tool, and machine shop.",
+                    "Ask from the short list first; keep detailed specs as backup links only.",
+                    "Record seller, price, availability, and return terms for each open line.",
+                    "Photograph the item or quote before buying or rejecting it.",
+                ],
+                "tools": ["Phone/camera", "Notebook", "Tape measure"],
+                "supplies": ["Local market workstream", "Sample parts", "Printed short list"],
+                "hold_point": "No local item closes without price, seller, and photo evidence.",
+                "image_tokens": ["market", "procurement", "seller", "shop", "parts"],
+            },
+            {
+                "title": "Buy Hardwood Cribbing Set",
+                "priority": "P0",
+                "remaining": "before suspension/brake work starts",
+                "instruction": "Buy the wood set through the timber lane, not as a separate fabrication release.",
+                "process_steps": [
+                    "Ask for 8 dry hardwood blocks at 300 x 150 x 75 mm.",
+                    "Ask for 4 hardwood wedge chocks at 200 x 100 mm, 75 mm rear, 25 mm nose.",
+                    "Use docs/suspension-wood-cribbing-merchant-spec.md if the merchant needs the drawing/spec.",
+                    "Reject wet, soft, board material, cracked pieces, rocking faces, and feather-edge wedges.",
+                    "Record wood type, price, merchant, and photos of the full set.",
+                ],
+                "tools": ["Tape measure", "Straight edge", "Camera"],
+                "supplies": ["Wood cribbing merchant spec", "Seasoned hardwood"],
+                "hold_point": "Home suspension/brake work waits until rated stands and this supplemental wood set are present.",
+                "image_tokens": ["wood", "hardwood", "cribbing", "wedge", "timber"],
+            },
+            {
+                "title": "Close Market Results",
+                "priority": "P1",
+                "remaining": "after market pass",
+                "instruction": "Turn each shop visit into a buy, quote, reject, or defer status.",
+                "process_steps": [
+                    "Update procurement rows with bought, quoted, rejected, or deferred.",
+                    "Attach photos and seller notes to the relevant part/tool line.",
+                    "Keep rejected candidates visible with the reason so they are not re-bought.",
+                    "Escalate anything that needs workshop confirmation before payment.",
+                ],
+                "tools": ["Dashboard", "Camera", "Notebook"],
+                "supplies": ["Receipts or quote notes", "Seller contact log"],
+                "hold_point": "The market pass is not closed while any result is only remembered informally.",
+                "image_tokens": ["receipt", "quote", "seller", "procurement", "parts"],
             },
         ],
     },
@@ -2484,21 +2572,24 @@ def fabrication_packages_for_workstream(
         selected_rows = [row for row in fabrication_rows if clean(row.get("system")) == "electrical_reset"]
     elif ws_id == "chassis_rubbers":
         selected_rows = [row for row in fabrication_rows if clean(row.get("system")) == "chassis_rubbers"]
+    elif ws_id == "suspension_upgrade":
+        selected_rows = [row for row in fabrication_rows if clean(row.get("system")) == "suspension_upgrade"]
     else:
         selected_rows = []
 
     return [fabrication_package_payload(row) for row in selected_rows]
 
 
-def replacement_pipe_order_release_payload(rows: list[dict[str, str]]) -> list[dict[str, str]]:
-    payload: list[dict[str, str]] = []
+def replacement_pipe_order_release_payload(rows: list[dict[str, str]]) -> list[dict[str, Any]]:
+    payload: list[dict[str, Any]] = []
     for row in rows:
         release_state = clean(row.get("order_release_state"))
+        item = clean(row.get("item"))
         payload.append(
             {
                 "order_line_id": clean(row.get("order_line_id")),
                 "route": clean(row.get("route")),
-                "item": clean(row.get("item")),
+                "item": item,
                 "part_number_or_code": clean(row.get("part_number_or_code")),
                 "dimension_spec_mm": clean(row.get("dimension_spec_mm")),
                 "qty_required": clean(row.get("qty_required")),
@@ -2511,30 +2602,61 @@ def replacement_pipe_order_release_payload(rows: list[dict[str, str]]) -> list[d
                 "user_action_required": clean(row.get("user_action_required")),
                 "do_not_order_if": clean(row.get("do_not_order_if")),
                 "notes": clean(row.get("notes")),
+                "image": order_component_reference_image(
+                    item,
+                    " ".join(
+                        clean(row.get(key))
+                        for key in (
+                            "order_line_id",
+                            "route",
+                            "part_number_or_code",
+                            "exact_order_spec",
+                            "material_spec",
+                            "notes",
+                        )
+                    ),
+                ),
             }
         )
     return payload
 
 
-def hose_local_market_order_payload(rows: list[dict[str, str]]) -> list[dict[str, str]]:
-    return [
-        {
-            "order_id": clean(row.get("order_id")),
-            "order_state": clean(row.get("order_state")),
-            "shop_lane": clean(row.get("shop_lane")),
-            "item": clean(row.get("item")),
-            "order_text": clean(row.get("order_text")),
-            "qty": clean(row.get("qty")),
-            "buy_length_mm": clean(row.get("buy_length_mm")),
-            "diameter_spec": clean(row.get("diameter_spec")),
-            "material_spec": clean(row.get("material_spec")),
-            "clamp_or_fitting_spec": clean(row.get("clamp_or_fitting_spec")),
-            "source_basis": clean(row.get("source_basis")),
-            "final_install_check": clean(row.get("final_install_check")),
-            "hard_reject": clean(row.get("hard_reject")),
-        }
-        for row in rows
-    ]
+def hose_local_market_order_payload(rows: list[dict[str, str]]) -> list[dict[str, Any]]:
+    payload: list[dict[str, Any]] = []
+    for row in rows:
+        item = clean(row.get("item"))
+        payload.append(
+            {
+                "order_id": clean(row.get("order_id")),
+                "order_state": clean(row.get("order_state")),
+                "shop_lane": clean(row.get("shop_lane")),
+                "item": item,
+                "order_text": clean(row.get("order_text")),
+                "qty": clean(row.get("qty")),
+                "buy_length_mm": clean(row.get("buy_length_mm")),
+                "diameter_spec": clean(row.get("diameter_spec")),
+                "material_spec": clean(row.get("material_spec")),
+                "clamp_or_fitting_spec": clean(row.get("clamp_or_fitting_spec")),
+                "source_basis": clean(row.get("source_basis")),
+                "final_install_check": clean(row.get("final_install_check")),
+                "hard_reject": clean(row.get("hard_reject")),
+                "image": order_component_reference_image(
+                    item,
+                    " ".join(
+                        clean(row.get(key))
+                        for key in (
+                            "order_id",
+                            "shop_lane",
+                            "order_text",
+                            "diameter_spec",
+                            "material_spec",
+                            "clamp_or_fitting_spec",
+                        )
+                    ),
+                ),
+            }
+        )
+    return payload
 
 
 def replacement_pipe_release_action_payload(rows: list[dict[str, str]]) -> list[dict[str, str]]:
@@ -6211,21 +6333,237 @@ def selling_site_image_payload(row: dict[str, str], matched_tokens: list[str]) -
     }
 
 
-def reference_image_payload(asset_name: str, caption: str, matched_tokens: list[str]) -> dict[str, Any]:
+def static_reference_image_payload(
+    relative_path: str,
+    *,
+    caption: str,
+    media_id: str,
+    matched_tokens: list[str],
+    match_basis: str = "semantic_reference_image",
+) -> dict[str, Any]:
     return {
-        "path": path_for_ui(f"deliverables/selling_site_images/images/reference_catalog/{asset_name}.jpg"),
+        "path": path_for_ui(relative_path),
         "caption": caption,
         "captured_date": "",
         "captured_time": "",
         "media_type": "photo",
         "component_group": "procurement_inventory",
-        "specific_component": "semantic_reference_image",
+        "specific_component": match_basis,
         "stage": "procurement_reconciliation",
-        "media_id": asset_name,
+        "media_id": media_id,
         "matched_tokens": matched_tokens,
-        "match_basis": "semantic_reference_image",
+        "match_basis": match_basis,
         "match_score": 700,
     }
+
+
+def reference_image_payload(asset_name: str, caption: str, matched_tokens: list[str]) -> dict[str, Any]:
+    return static_reference_image_payload(
+        f"deliverables/selling_site_images/images/reference_catalog/{asset_name}.jpg",
+        caption=caption,
+        media_id=asset_name,
+        matched_tokens=matched_tokens,
+    )
+
+
+def order_component_reference_image(item: str, context: str = "") -> dict[str, Any]:
+    item_text = clean(item)
+    blob = norm(f"{item} {context}")
+
+    def has(*tokens: str) -> bool:
+        return all(token in blob for token in tokens)
+
+    def has_any(*tokens: str) -> bool:
+        return any(token in blob for token in tokens)
+
+    def ref(asset_name: str, label: str, *tokens: str) -> dict[str, Any]:
+        return reference_image_payload(asset_name, f"{item_text or label} · {label}", list(tokens) or [asset_name])
+
+    def local(path: str, label: str, media_id: str, *tokens: str) -> dict[str, Any]:
+        return static_reference_image_payload(
+            path,
+            caption=f"{item_text or label} · {label}",
+            media_id=media_id,
+            matched_tokens=list(tokens) or [media_id],
+            match_basis="local_reference_image",
+        )
+
+    def previous(path: str, label: str, media_id: str, *tokens: str) -> dict[str, Any]:
+        return static_reference_image_payload(
+            path,
+            caption=f"{item_text or label} · {label}",
+            media_id=media_id,
+            matched_tokens=list(tokens) or [media_id],
+            match_basis="previous_part_photo",
+        )
+
+    if has_any("bm-cup-sm", "bm_cup_small") or (has("cup", "small") and has_any("body-mount", "body mount")):
+        return previous(
+            "photos/20260502_004413_gp_Qno8OVRg.jpg",
+            "previous small body-mount cup/seat sample",
+            "20260502_004413_gp_Qno8OVRg",
+            "bm-cup-sm",
+            "previous",
+        )
+    if has_any("bm-cup-lg", "bm_cup_large") or (has("cup", "large") and has_any("body-mount", "body mount")):
+        return previous(
+            "photos/20260502_004231_gp_CfosvPIg.jpg",
+            "previous large body-mount cup/seat scale sample",
+            "20260502_004231_gp_CfosvPIg",
+            "bm-cup-lg",
+            "previous",
+        )
+    if has_any("body-mount cup", "body mount cup", "cup / seat", "cup washer", "seat washer", "bm-cup"):
+        return previous(
+            "photos/20260502_004413_gp_Qno8OVRg.jpg",
+            "previous body-mount cup/seat sample",
+            "20260502_004413_gp_Qno8OVRg",
+            "bm-cup",
+            "previous",
+        )
+    if has_any("bm-lg", "bm_lg", "large circular body-mount", "large circular body mount", "large body-mount cushion", "large body mount cushion"):
+        return previous(
+            "photos/20260502_004231_gp_CfosvPIg.jpg",
+            "previous large circular body-mount cushion sample",
+            "20260502_004231_gp_CfosvPIg",
+            "bm-lg",
+            "previous",
+        )
+    if has_any("bm-sm", "bm_sm", "small circular body-mount", "small circular body mount", "small body-mount cushion", "small body mount cushion"):
+        return previous(
+            "photos/20260502_004437_gp_f1TySzww.jpg",
+            "previous small circular body-mount cushion sample",
+            "20260502_004437_gp_f1TySzww",
+            "bm-sm",
+            "previous",
+        )
+    if has_any("fs-oval", "fs_oval", "two-hole oval", "two hole oval", "oval front-support", "oval front support", "oval pad"):
+        return previous(
+            "photos/20260502_004345_gp_yK8VYzMQ.jpg",
+            "previous two-hole oval front-support pad",
+            "20260502_004345_gp_yK8VYzMQ",
+            "fs-oval",
+            "previous",
+        )
+    if has_any("fs-strip-l", "fs_strip_left") or (has_any("front-support strip", "front support strip", "strip rubber") and has_any("left", "left-side", "left side")):
+        return previous(
+            "photos/20260502_004201_gp_zfUSmKJg.jpg",
+            "previous left front-support strip sample",
+            "20260502_004201_gp_zfUSmKJg",
+            "fs-strip-l",
+            "previous",
+        )
+    if has_any("fs-strip-r", "fs_strip_right") or (has_any("front-support strip", "front support strip", "strip rubber") and has_any("right", "right-side", "right side")):
+        return previous(
+            "photos/20260502_004222_gp_PKRe5HSQ.jpg",
+            "previous right front-support strip sample",
+            "20260502_004222_gp_PKRe5HSQ",
+            "fs-strip-r",
+            "previous",
+        )
+    if has_any("midi5-plate-001", "midi5-subplate-001", "midi5_mount_plate", "midi5_holder_subplate", "midi 5-way structural", "midi 5-way non-conductive"):
+        return previous(
+            "photos/20260411_143135.jpg",
+            "received MIDI holder bank to mount",
+            "20260411_143135",
+            "midi5",
+            "previous",
+        )
+    if has_any("relay-carrier-001", "relay-guard-001", "relay_carrier", "relay_rear_guard", "daier prewired", "10-way relay/fuse", "10 way relay/fuse"):
+        return previous(
+            "photos/20260411_143125.jpg",
+            "received 10-way relay/fuse box to mount",
+            "20260411_143125",
+            "relay-box",
+            "previous",
+        )
+
+    if has_any("fuse carrier", "cabin fuse", "compact fuse", "under dash fuse", "under-dash fuse"):
+        return local(
+            "deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png",
+            "user-supplied compact fuse box photo",
+            "compact_cabin_fuse_box_user_photo_20260504",
+            "fuse",
+            "compact",
+        )
+    if has_any("bench vice", "workshop vice", "vise") or has("vice", "bench"):
+        return ref("bench_vice", "bolt-down bench vice reference image", "bench", "vice")
+    if has_any("toolbench", "workbench", "work bench"):
+        return ref("toolbench", "toolbench/workbench reference image", "workbench")
+    if has_any("pillar drill", "bench drill", "drill press"):
+        return ref("bench_drill", "pillar drill / bench drill reference image", "drill")
+    if has_any("swc-block-001", "rectangular hardwood cribbing block"):
+        return local(
+            "data/manual/fabrication/suspension_wood_cribbing_rev_a/swc_rectangular_cribbing_block_rev_a.svg",
+            "rectangular block drawing",
+            "swc_block_001",
+            "hardwood",
+            "cribbing",
+            "block",
+        )
+    if has_any("swc-chock-001", "hardwood wedge chock"):
+        return local(
+            "data/manual/fabrication/suspension_wood_cribbing_rev_a/swc_wedge_chock_rev_a.svg",
+            "wedge chock drawing",
+            "swc_chock_001",
+            "hardwood",
+            "wedge",
+            "chock",
+        )
+    if has_any("cribbing", "wedge chock", "hardwood"):
+        return local(
+            "deliverables/selling_site_images/images/manual_overrides/suspension_hardwood_cribbing_cut_set_flat_lay.jpg",
+            "hardwood cribbing cut-set reference image",
+            "suspension_hardwood_cribbing_cut_set_flat_lay",
+            "hardwood",
+            "cribbing",
+        )
+    if has_any("formed metal coolant", "formed coolant pipe", "metal coolant", "radiator pipe assembly"):
+        return local(
+            "photos/20260502_004106_gp_wlYlUahA.jpg",
+            "formed coolant pipe sample photo",
+            "20260502_004106_gp_wlYlUahA",
+            "formed",
+            "coolant",
+            "pipe",
+        )
+    if has_any("connector hose", "connector/coupler", "coupler hoses"):
+        return local(
+            "photos/20260502_004133_gp_ZEpqmARA.jpg",
+            "formed-pipe connector hose sample photo",
+            "20260502_004133_gp_ZEpqmARA",
+            "connector",
+            "hose",
+        )
+    if has("heater", "hose"):
+        return ref("heater_hose", "heater hose reference image", "heater", "hose")
+    if has_any("radiator overflow", "overflow hose", "coolant overflow"):
+        return ref("coolant_overflow", "coolant overflow reference image", "overflow")
+    if has("radiator", "hose") or has("coolant", "hose") or has_any("upper radiator", "lower radiator"):
+        return ref("radiator_hose", "radiator/coolant hose reference image", "radiator", "hose")
+    if (has("brake", "booster") or has("brake", "servo")) and not has_any("hose", "line", "pipe", "tube"):
+        return ref("brake_booster", "brake booster reference image", "brake", "booster")
+    if has_any("fuel", "diesel", "injector leak-off", "leak-off"):
+        return ref("fuel_hose", "diesel fuel hose reference image", "fuel", "hose")
+    if has_any("vacuum", "breather", "oil mist", "oil outlet"):
+        return ref("fuel_hose", "vacuum/breather hose reference image", "hose")
+    if has("brake") and has_any("hose", "line", "hydraulic", "tube"):
+        return ref("brake_hose_line", "brake hose/line reference image", "brake", "line")
+    if has("clutch") and has_any("hose", "line", "hydraulic"):
+        return ref("brake_hose_line", "clutch/brake hydraulic line reference image", "clutch", "line")
+    if has_any("p-clips", "p clips", "support clips", "line protection", "edge protection"):
+        return ref("clamp", "line clip/clamp reference image", "clip", "clamp")
+    if has_any("cup washer", "crush sleeve", "shim"):
+        return ref("body_shims", "body shim/washer reference image", "shim")
+    if has("body", "mount") or has_any("cushion", "front-support", "front support", "oval pad"):
+        return ref("body_mount_kit", "body mount rubber reference image", "body", "mount")
+    if has("exhaust", "hanger"):
+        return ref("exhaust_hanger", "exhaust hanger reference image", "exhaust", "hanger")
+    if has("bump", "stop"):
+        return ref("bump_stop", "bump stop reference image", "bump", "stop")
+    if has_any("glow plug", "heat plug"):
+        return ref("glow_plugs", "glow plug reference image", "glow", "plug")
+    return ref("generic_part", "component reference image", "component")
 
 
 def choose_supply_reference_image(
@@ -6247,6 +6585,22 @@ def choose_supply_reference_image(
 
     def ref(asset_name: str, caption: str, *tokens: str) -> dict[str, Any]:
         return reference_image_payload(asset_name, caption, [token for token in tokens if token])
+
+    def local_photo(path: str, caption: str, *tokens: str) -> dict[str, Any]:
+        return {
+            "path": path_for_ui(path),
+            "caption": caption,
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": Path(path).stem,
+            "matched_tokens": [token for token in tokens if token],
+            "match_basis": "local_reference_image",
+            "match_score": 700,
+        }
 
     if has_any("cable ties", "zip ties"):
         return ref("cable_ties", f"{item} · cable tie reference image", "cable", "ties")
@@ -6282,8 +6636,16 @@ def choose_supply_reference_image(
         return ref("toolbench", f"{item} · toolbench/workbench reference image", "toolbench", "workbench")
     if has_any("bench drill", "pillar drill", "drill press"):
         return ref("bench_drill", f"{item} · bench drill reference image", "bench", "drill")
-    if has_any("heavy c-clamp", "c-clamp", "c clamp") or has("clamp", "heavy"):
-        return ref("clamp", f"{item} · heavy clamp reference image", "clamp")
+    if has_any("bench vice", "workshop vice", "vise") or has("vice", "bench"):
+        return ref("bench_vice", f"{item} · bolt-down bench vice reference image", "vice")
+    if has_any("compact cabin fuse", "cabin fuse", "fuse protection", "under-dash fuse", "fuse carrier"):
+        return local_photo(
+            "deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png",
+            f"{item} · user-supplied compact fuse box reference",
+            "fuse",
+            "compact",
+            "actual",
+        )
     if has("drill", "chuck"):
         return ref("drill_chuck", f"{item} · drill chuck reference image", "drill", "chuck")
     if has("digital", "caliper"):
@@ -6312,7 +6674,7 @@ def choose_supply_reference_image(
     if has_any("gearbox / transfer case mounts", "transmission mount", "powertrain mount"):
         return ref("engine_mount", f"{item} · powertrain mount reference image", "mount")
     if has_any("eps", "electrical power steering") or has("power", "steering") or has("vitz", "column"):
-        return ref("eps_column", f"{item} · EPS column reference image", "eps")
+        return ref("eps_column", f"{item} · Vitz/Yaris XP90 EPS column set reference image", "eps")
 
     if has("body", "mount", "rubber") or has("rubber", "mountings", "chassis"):
         return ref("body_mount_kit", f"{item} · body mount rubber reference image", "body", "mount")
@@ -6390,6 +6752,8 @@ def choose_supply_reference_image(
         return ref("brake_master", f"{item} · clutch/brake cylinder reference image", "clutch")
     if has("clutch") and has_any("hose", "line"):
         return ref("brake_hose_line", f"{item} · clutch/brake line reference image", "clutch", "line")
+    if has("brake", "booster") or has("brake", "servo") or has_any("44610-60050", "bbn60050", "vacuum booster"):
+        return ref("brake_booster", f"{item} · 44610-60050 dual-diaphragm brake booster reference image", "brake", "booster")
     if has("brake", "master"):
         return ref("brake_master", f"{item} · brake master cylinder reference image", "brake", "master")
     if has("wheel", "cylinder"):

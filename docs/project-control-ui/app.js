@@ -472,6 +472,10 @@
     return `<span class="chip">${escapeHtml(text)}</span>`;
   }
 
+  function renderInventoryPageLink(label = "Open inventory") {
+    return `<a class="item-link inventory-page-link" href="#parts">${escapeHtml(label)}</a>`;
+  }
+
   function loadPhotoOverrides() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
@@ -1011,6 +1015,7 @@
       local_inventory_evidence: "Local photo",
       manual_override: "Pinned image",
       manual_image_disputed: "Image disputed",
+      previous_part_photo: "Previous part",
       selling_site_match: "Listing image",
       inventory_match: "Matched photo",
       whatsapp_evidence_match: "WhatsApp",
@@ -1025,9 +1030,12 @@
     const sourceImage = row && row.image && !isImageDeleted(row.image) ? row.image : {};
     const prepared = prepareImage(sourceImage, fallbackCaption);
     const label = inventoryImageMatchLabel(prepared.effective.match_basis);
+    const mediaClass = cleanString(prepared.path).toLowerCase().endsWith(".svg")
+      ? "table-image table-image-contain"
+      : "table-image";
     return `
       <td class="table-image-cell">
-        ${renderPreparedMedia(prepared, "table-image-btn", "table-image")}
+        ${renderPreparedMedia(prepared, "table-image-btn", mediaClass)}
         ${label ? `<span class="table-image-note">${escapeHtml(label)}</span>` : ""}
       </td>
     `;
@@ -2330,9 +2338,13 @@
     if (!sourceItems.length) {
       return "";
     }
+    const shouldLinkInventory = ["Parts", "Registered Items"].includes(cleanString(title));
     return `
       <div class="subtask-section">
-        <h5>${escapeHtml(title)}</h5>
+        <div class="subtask-section-header">
+          <h5>${escapeHtml(title)}</h5>
+          ${shouldLinkInventory ? renderInventoryPageLink("Inventory") : ""}
+        </div>
         ${renderPlainList(sourceItems)}
       </div>
     `;
@@ -2550,21 +2562,27 @@
   function scoutOrderSpecRows(rows, limit) {
     const sourceRows = Array.isArray(rows) ? rows : [];
     const maxRows = Number.isFinite(limit) ? limit : sourceRows.length;
-    return sourceRows.slice(0, maxRows).map((row) => ({
-      id: row.order_line_id || row.rubber_order_id || row.requirement_id || row.action_id || "",
-      item: row.item || row.item_group || row.requirement_name || row.action || "",
-      partNumber: row.part_number_or_code || "",
-      route: row.route || row.workstream_category || row.priority || row.release_status || "",
-      state: row.order_release_state || row.pre_order_gate || row.status || row.release_status || "",
-      spec: row.exact_order_spec || row.ordering_spec || row.material_spec || row.user_action_required || row.notes || "",
-      action: row.user_action_required || row.measurements_required_before_order || row.action_required || row.do_not_order_if || "",
-      qty: row.qty_to_order || row.qty_required || row.quantity || "",
-      dimension: row.dimension_spec_mm || row.dimension_spec || row.critical_measurements || "",
-      material: row.material_spec || "",
-      sourceBasis: row.source_basis || row.source_ref || "",
-      reject: row.do_not_order_if || row.reject_if || "",
-      notes: row.notes || "",
-    }));
+    return sourceRows.slice(0, maxRows).map((row) => {
+      const specRow = {
+        id: row.order_line_id || row.rubber_order_id || row.requirement_id || row.action_id || "",
+        item: row.item || row.item_group || row.requirement_name || row.action || "",
+        partNumber: row.part_number_or_code || "",
+        route: row.route || row.workstream_category || row.priority || row.release_status || "",
+        state: row.order_release_state || row.pre_order_gate || row.status || row.release_status || "",
+        spec: row.exact_order_spec || row.exact_recreation_spec || row.ordering_spec || row.material_spec || row.user_action_required || row.notes || "",
+        action: row.user_action_required || row.measurements_required_before_order || row.action_required || row.do_not_order_if || "",
+        qty: row.qty_to_order || row.qty_required || row.quantity || "",
+        dimension: row.dimension_spec_mm || row.dimension_spec || row.critical_measurements || "",
+        material: row.material_spec || "",
+        sourceBasis: row.source_basis || row.source_ref || "",
+        reject: row.do_not_order_if || row.reject_if || "",
+        notes: row.notes || "",
+        image: row.image || null,
+        evidenceImages: Array.isArray(row.evidence_images) ? row.evidence_images : [],
+      };
+      specRow.image = specRow.image || scoutComponentImage(specRow);
+      return specRow;
+    });
   }
 
   function scoutReferenceImage(path, caption, mediaId) {
@@ -2578,6 +2596,180 @@
       media_id: mediaId || "",
       match_basis: "semantic_reference_image",
     };
+  }
+
+  function scoutPreviousPartImage(path, caption, mediaId, matchedTokens = []) {
+    return {
+      path,
+      caption,
+      media_type: "photo",
+      component_group: "procurement_inventory",
+      specific_component: "previous_part_photo",
+      stage: "fabrication_reference",
+      media_id: mediaId || "",
+      matched_tokens: matchedTokens,
+      match_basis: "previous_part_photo",
+      match_score: "900",
+    };
+  }
+
+  function firstEvidencePreviousPartImage(row) {
+    const evidenceImages = Array.isArray(row && row.evidenceImages) ? row.evidenceImages : [];
+    const image = evidenceImages.find((candidate) => candidate && !isImageDeleted(candidate));
+    if (!image) {
+      return null;
+    }
+    return {
+      ...image,
+      caption: cleanString(image.caption) || `${cleanString(row && row.item) || "Component"} · previous part evidence`,
+      match_basis: cleanString(image.match_basis) || "previous_part_photo",
+      specific_component: cleanString(image.specific_component) || "previous_part_photo",
+    };
+  }
+
+  function scoutPreviousFabricatedPartImage(row, text) {
+    const rowId = cleanString(row && row.id).toUpperCase();
+    const partNumber = cleanString(row && row.partNumber).toLowerCase();
+    const blob = `${cleanString(text).toLowerCase()} ${rowId.toLowerCase()} ${partNumber}`;
+    const subject = cleanString(row && row.item) || cleanString(row && row.id) || "Fabricated part";
+    const has = (...tokens) => tokens.every((token) => blob.includes(token));
+    const hasAny = (...tokens) => tokens.some((token) => blob.includes(token));
+    const previous = (path, label, mediaId, tokens = []) =>
+      scoutPreviousPartImage(path, `${subject} · ${label}`, mediaId, tokens);
+
+    if (rowId === "BM-CUP-SM" || partNumber.includes("bm_cup_small") || (has("cup", "small") && hasAny("body-mount", "body mount"))) {
+      return previous("../../photos/20260502_004413_gp_Qno8OVRg.jpg", "previous small body-mount cup/seat sample", "20260502_004413_gp_Qno8OVRg", ["bm-cup-sm", "previous"]);
+    }
+    if (rowId === "BM-CUP-LG" || partNumber.includes("bm_cup_large") || (has("cup", "large") && hasAny("body-mount", "body mount"))) {
+      return previous("../../photos/20260502_004231_gp_CfosvPIg.jpg", "previous large body-mount cup/seat scale sample", "20260502_004231_gp_CfosvPIg", ["bm-cup-lg", "previous"]);
+    }
+    if (hasAny("body-mount cup", "body mount cup", "cup / seat", "cup washer", "seat washer", "bm-cup")) {
+      return previous("../../photos/20260502_004413_gp_Qno8OVRg.jpg", "previous body-mount cup/seat sample", "20260502_004413_gp_Qno8OVRg", ["bm-cup", "previous"]);
+    }
+    if (rowId === "BM-LG" || partNumber.includes("bm_lg") || hasAny("large circular body-mount", "large circular body mount", "large body-mount cushion", "large body mount cushion")) {
+      return previous("../../photos/20260502_004231_gp_CfosvPIg.jpg", "previous large circular body-mount cushion sample", "20260502_004231_gp_CfosvPIg", ["bm-lg", "previous"]);
+    }
+    if (rowId === "BM-SM" || partNumber.includes("bm_sm") || hasAny("small circular body-mount", "small circular body mount", "small body-mount cushion", "small body mount cushion")) {
+      return previous("../../photos/20260502_004437_gp_f1TySzww.jpg", "previous small circular body-mount cushion sample", "20260502_004437_gp_f1TySzww", ["bm-sm", "previous"]);
+    }
+    if (rowId === "FS-OVAL" || partNumber.includes("fs_oval") || hasAny("two-hole oval", "two hole oval", "oval front-support", "oval front support", "oval pad")) {
+      return previous("../../photos/20260502_004345_gp_yK8VYzMQ.jpg", "previous two-hole oval front-support pad", "20260502_004345_gp_yK8VYzMQ", ["fs-oval", "previous"]);
+    }
+    if (rowId === "FS-STRIP-L" || partNumber.includes("fs_strip_left") || (hasAny("front-support strip", "front support strip", "strip rubber") && hasAny("left", "left-side", "left side"))) {
+      return previous("../../photos/20260502_004201_gp_zfUSmKJg.jpg", "previous left front-support strip sample", "20260502_004201_gp_zfUSmKJg", ["fs-strip-l", "previous"]);
+    }
+    if (rowId === "FS-STRIP-R" || partNumber.includes("fs_strip_right") || (hasAny("front-support strip", "front support strip", "strip rubber") && hasAny("right", "right-side", "right side"))) {
+      return previous("../../photos/20260502_004222_gp_PKRe5HSQ.jpg", "previous right front-support strip sample", "20260502_004222_gp_PKRe5HSQ", ["fs-strip-r", "previous"]);
+    }
+    if (hasAny("crush sleeve", "body-mount sleeve", "body mount sleeve", "shim and spacer", "shim pack")) {
+      return firstEvidencePreviousPartImage(row);
+    }
+    if (rowId === "MIDI5-PLATE-001" || rowId === "MIDI5-SUBPLATE-001" || hasAny("midi5_mount_plate", "midi5_holder_subplate", "midi 5-way structural", "midi 5-way non-conductive")) {
+      return previous("../../photos/20260411_143135.jpg", "received MIDI holder bank to mount", "20260411_143135", ["midi5", "previous"]);
+    }
+    if (rowId === "RELAY-CARRIER-001" || rowId === "RELAY-GUARD-001" || hasAny("relay_carrier", "relay_rear_guard", "daier prewired", "10-way relay/fuse", "10 way relay/fuse")) {
+      return previous("../../photos/20260411_143125.jpg", "received 10-way relay/fuse box to mount", "20260411_143125", ["relay-box", "previous"]);
+    }
+
+    return firstEvidencePreviousPartImage(row);
+  }
+
+  function scoutComponentImage(row) {
+    const text = [
+      row && row.id,
+      row && row.item,
+      row && row.partNumber,
+      row && row.route,
+      row && row.spec,
+      row && row.order_text,
+      row && row.material,
+      row && row.material_spec,
+      row && row.sourceBasis,
+      row && row.source_basis,
+      row && row.notes,
+    ]
+      .map((value) => cleanString(value).toLowerCase())
+      .join(" ");
+    const has = (...tokens) => tokens.every((token) => text.includes(token));
+    const hasAny = (...tokens) => tokens.some((token) => text.includes(token));
+    const ref = (path, label, mediaId) => scoutReferenceImage(path, `${cleanString(row && row.item) || "Component"} · ${label}`, mediaId);
+    const previousPartImage = scoutPreviousFabricatedPartImage(row, text);
+    if (previousPartImage) {
+      return previousPartImage;
+    }
+
+    if (hasAny("fuse carrier", "cabin fuse", "compact fuse", "under-dash fuse", "under dash fuse")) {
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png", "user-supplied compact fuse box reference image", "compact_cabin_fuse_box_user_photo_20260504");
+    }
+    if (hasAny("bench vice", "workshop vice", "vise") || has("vice", "bench")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/bench_vice.jpg", "bolt-down bench vice reference image", "bench_vice");
+    }
+    if (hasAny("toolbench", "workbench", "work bench")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/toolbench.jpg", "toolbench/workbench reference image", "toolbench");
+    }
+    if (hasAny("pillar drill", "bench drill", "drill press")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/bench_drill.jpg", "pillar drill / bench drill reference image", "bench_drill");
+    }
+    if (hasAny("swc-block-001", "rectangular hardwood cribbing block")) {
+      return ref("../../data/manual/fabrication/suspension_wood_cribbing_rev_a/swc_rectangular_cribbing_block_rev_a.svg", "rectangular block drawing", "swc_block_001");
+    }
+    if (hasAny("swc-chock-001", "hardwood wedge chock")) {
+      return ref("../../data/manual/fabrication/suspension_wood_cribbing_rev_a/swc_wedge_chock_rev_a.svg", "wedge chock drawing", "swc_chock_001");
+    }
+    if (cleanString(row && row.partNumber).toLowerCase().endsWith(".dxf") && cleanString(row && row.route)) {
+      const svgName = cleanString(row.partNumber).replace(/\.dxf$/i, ".svg");
+      const mediaId = cleanString(row.id || svgName).toLowerCase().replace(/[^a-z0-9_-]+/g, "_");
+      return ref(`../../data/manual/fabrication/${cleanString(row.route)}/${svgName}`, "part drawing", mediaId);
+    }
+    if (hasAny("cribbing", "wedge chock", "hardwood")) {
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/suspension_hardwood_cribbing_cut_set_flat_lay.jpg", "hardwood cribbing cut-set reference image", "hardwood_cribbing");
+    }
+    if (hasAny("formed metal coolant", "formed coolant pipe", "metal coolant", "radiator pipe assembly")) {
+      return ref("../../photos/20260502_004106_gp_wlYlUahA.jpg", "formed coolant pipe sample photo", "formed_coolant_pipe_sample");
+    }
+    if (hasAny("connector hose", "connector/coupler", "coupler hoses")) {
+      return ref("../../photos/20260502_004133_gp_ZEpqmARA.jpg", "formed-pipe connector hose sample photo", "formed_pipe_connector_hose_sample");
+    }
+    if (has("heater", "hose")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/heater_hose.jpg", "heater hose reference image", "heater_hose");
+    }
+    if (hasAny("radiator overflow", "overflow hose", "coolant overflow")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/coolant_overflow.jpg", "coolant overflow reference image", "coolant_overflow");
+    }
+    if (has("radiator", "hose") || has("coolant", "hose") || hasAny("upper radiator", "lower radiator")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg", "radiator/coolant hose reference image", "radiator_hose");
+    }
+    if ((has("brake", "booster") || has("brake", "servo")) && !hasAny("hose", "line", "pipe", "tube")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/brake_booster.jpg", "brake booster reference image", "brake_booster");
+    }
+    if (hasAny("fuel", "diesel", "injector leak-off", "leak-off")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg", "diesel fuel hose reference image", "fuel_hose");
+    }
+    if (hasAny("vacuum", "breather", "oil mist", "oil outlet")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg", "vacuum/breather hose reference image", "vacuum_hose");
+    }
+    if ((has("brake") || has("clutch")) && hasAny("hose", "line", "hydraulic", "tube")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg", "hydraulic hose/line reference image", "brake_hose_line");
+    }
+    if (hasAny("p-clips", "p clips", "support clips", "line protection", "edge protection")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/clamp.jpg", "line clip/clamp reference image", "clamp");
+    }
+    if (hasAny("cup washer", "crush sleeve", "shim")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/body_shims.jpg", "body shim/washer reference image", "body_shims");
+    }
+    if (has("body", "mount") || hasAny("cushion", "front-support", "front support", "oval pad")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/body_mount_kit.jpg", "body mount rubber reference image", "body_mount_kit");
+    }
+    if (has("exhaust", "hanger")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/exhaust_hanger.jpg", "exhaust hanger reference image", "exhaust_hanger");
+    }
+    if (has("bump", "stop")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg", "bump stop reference image", "bump_stop");
+    }
+    if (hasAny("glow plug", "heat plug")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/glow_plugs.jpg", "glow plug reference image", "glow_plugs");
+    }
+    return ref("../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg", "component reference image", "generic_part");
   }
 
   function firstScoutImage(rows) {
@@ -2612,6 +2804,9 @@
     ]);
     const allSupplyRows = dedupeScoutRows((data.supplies && data.supplies.all_rows) || []);
     const epsWorkstream = workstreamById("eps_vitz_upgrade");
+    const replacementPipesWorkstream = workstreamById("replacement_pipes");
+    const chassisRubbersWorkstream = workstreamById("chassis_rubbers");
+    const fabricationWorkstream = workstreamById("fabrication_handoff");
     const epsMarketSpecs = [
       ...((epsWorkstream && epsWorkstream.market_specs) || []),
       ...((parts.market_specs || []).filter((spec) => cleanString(spec.id).includes("eps"))),
@@ -2652,11 +2847,6 @@
       workstreams: ["chassis_rubbers"],
       terms: ["body mount", "rubber kit", "shim", "sleeve", "isolator"],
     });
-    const glowPlugParts = filterScoutRows(allPartRows, {
-      entryIds: ["part_mech_heat_glow_plugs_set"],
-      workstreams: ["mechanical_baseline"],
-      terms: ["glow plug", "heat plug", "19850-68030", "19850-68060"],
-    });
     const fuseBoxParts = filterScoutRows(allPartRows, {
       entryIds: ["part_cabin_compact_fuse_boxes"],
       workstreams: ["electrical_reset"],
@@ -2672,22 +2862,33 @@
         entryIds: [
           "tool_local_toolbench",
           "tool_local_bench_drill",
-          "tool_local_c_clamp",
-          "service_local_3d_printing_fabrication_prototypes",
+          "tool_local_bench_vice",
         ],
         workstreams: ["site_setup", "fabrication_handoff"],
-        terms: ["workbench", "toolbench", "pillar drill", "bench drill", "drill press", "c-clamp", "3d printing"],
+        terms: ["workbench", "toolbench", "pillar drill", "bench drill", "drill press", "bench vice", "workshop vice", "vise"],
+      }),
+    ]);
+    const fabricationParts = dedupeScoutRows([
+      ...filterScoutRows(allPartRows, {
+        entryIds: ["service_local_3d_printing_fabrication_prototypes"],
+        workstreams: ["fabrication_handoff"],
+        terms: ["3d printing", "fabrication", "prototype", "guard", "template", "spacer"],
+      }),
+      ...filterScoutRows(allSupplyRows, {
+        entryIds: ["service_local_3d_printing_fabrication_prototypes"],
+        workstreams: ["fabrication_handoff"],
+        terms: ["3d printing", "fabrication", "prototype", "guard", "template", "spacer"],
       }),
     ]);
     const hoseMarketSpec = {
       id: "pipes_hoses_market_scout",
       title: "Pipes + Hoses Market Scout",
-      scope: "Quote and sample-match only",
-      quantity: "One measured hose and line batch",
+      scope: "Exact order sheet",
+      quantity: "23 HLS line items plus 21 pipe release-spec lines",
       plain_stall_request:
-        "I need replacement hoses and pipe or line material for a Toyota Land Cruiser J40 diesel. Match the old samples and measurements. The batch includes radiator, heater, diesel fuel, vacuum or breather, brake, and clutch hoses or lines.",
+        "I need the exact J40/HJ47 hose, pipe, hard-line, brake/clutch hydraulic, fuel, vacuum, and support-clip lines listed in the order sheet. Use those IDs and specs; do not quote generic rubber pipe.",
       buy_target:
-        "Use the correct automotive material for each job: EPDM for coolant and heater, diesel-rated fuel hose, reinforced vacuum hose, and complete crimped brake or clutch hydraulic hoses. Brake hose must be DOT/SAE J1401 or OEM-equivalent, not generic rubber hose.",
+        "Use the exact requirement list below and the linked handoff pages. EPDM for coolant/heater, diesel-rated fuel hose, reinforced vacuum hose, brake-rated hard line, and complete crimped DOT/SAE J1401 or OEM-equivalent brake/clutch hose assemblies only.",
       must_include: [
         "Correct inside diameter, length, bends, or end fittings matched to the old sample.",
         "New clamps, clips, or fittings quoted separately when needed.",
@@ -2716,16 +2917,21 @@
         rule: "Quote each line separately. Do not pay for any brake, clutch, fuel, or vacuum item until sample match and material type are clear.",
       },
       decision_rule: "Buy only the lines that match the old sample or confirmed measurement and have the correct material rating.",
+      links: [
+        scoutDocLink("docs/hose-local-scout-handoff.md", "Hose local scout handoff"),
+        scoutDocLink("docs/local-market-component-order-spec-20260504.md", "Exact local-market order spec"),
+        scoutDocLink("docs/engine-hose-tube-replacement-specs.md", "Engineering controls"),
+      ],
     };
     const rubberMarketSpec = {
       id: "body_mount_rubbers_market_scout",
       title: "Body Mount Rubbers Market Scout",
-      scope: "New rubber or measured fabrication",
-      quantity: "One body-to-chassis mount set plus hardware lines",
+      scope: "Exact requirement sheet",
+      quantity: "9 rubber requirements plus controlled hardware/order-release lines",
       plain_stall_request:
-        "I need new body-to-chassis mount rubbers for a Toyota Land Cruiser J40, plus sleeves, cup washers, shims, spacers, bolts, nuts, and washers as separate line items. No used rubber.",
+        "I need the exact J40 body/front-support rubber requirements listed in the spec sheet, plus sleeves, cup washers, shims, spacers, bolts, nuts, and washers as separate controlled lines. No used rubber.",
       buy_target:
-        "Use a correct new J40 body mount kit or fabricate new rubber pieces from the measured old samples. Hardware must be new, properly graded, and sized after the old mount stack is measured.",
+        "Use the exact requirement list below and the linked rubber-ordering pages. Buy a complete matched OE/reproduction kit only if it matches the actual station layout, or fabricate from the measured BM-LG, BM-SM, FS-OVAL, FS-STRIP-L, and FS-STRIP-R specs.",
       must_include: [
         "Upper and lower body mount rubber cushions for the required body stations.",
         "Steel sleeves, cup or seat washers, shims, spacers, bolts, nuts, and washers quoted separately.",
@@ -2753,69 +2959,38 @@
         rule: "Keep rubber, sleeves, shims, and bolts as separate quote lines so a wrong line can be rejected without losing the whole package.",
       },
       decision_rule: "Buy only after the old mount samples or measurement sheet prove the rubber shape, sleeve size, and hardware stack.",
-    };
-    const glowPlugMarketSpec = {
-      id: "glow_plugs_market_scout",
-      title: "2H Glow Plugs Market Scout",
-      scope: "New exact plugs only",
-      quantity: "6 matching plugs",
-      plain_stall_request:
-        "I need six new Toyota glow plugs for a Toyota 2H diesel. First choice is Toyota 19850-68030. If the old plug system proves later 24V or superglow, quote Toyota 19850-68060 instead.",
-      buy_target:
-        "Buy only new matching Toyota or trusted OEM-label plugs with the correct thread, reach, voltage, seat, and top terminal for the old plug system.",
-      must_include: [
-        "Six matching new plugs from the same part number and batch if possible.",
-        "Part number visible on plug body, box, or invoice.",
-        "Correct voltage and terminal style for the old plug system.",
-        "Clean unused threads and tips.",
+      links: [
+        scoutDocLink("docs/rubber-ordering-spec-20260502.md", "Rubber ordering spec"),
+        scoutDocLink("docs/local-market-component-order-spec-20260504.md", "Exact local-market order spec"),
+        scoutDocLink("docs/rubber-recreation-fabrication-spec-20260502.md", "Rubber fabrication spec"),
       ],
-      bench_test: [
-        "Compare one plug with the old removed plug for thread, reach, seat, and terminal shape.",
-        "Confirm voltage printed on the plug or box.",
-        "Use a meter continuity check if the seller can do it without damaging the plugs.",
-      ],
-      reject_if: [
-        "Used, cleaned, mixed-brand, mixed-number, or loose unboxed plugs.",
-        "Wrong voltage, wrong reach, wrong terminal, or wrong seat style.",
-        "PT-107, 1C, 2C, or other small-diesel listings sold as J40 2H plugs.",
-        "Seller cannot show the part number or will not accept return for wrong fit.",
-      ],
-      capture_before_leaving: [
-        "Photo of all six plugs and all boxes together.",
-        "Close photo of the part number and voltage marking.",
-        "Seller name, phone number, shop location, price, and return terms.",
-      ],
-      price_guidance: {
-        rule: "Do not buy used glow plugs. Pay only for a matched new set after old-plug comparison.",
-      },
-      decision_rule: "Buy 19850-68030 only if it matches the old 2H system; switch to 19850-68060 only after the old system proves that spec.",
     };
     const fuseBoxMarketSpec = {
       id: "additional_fuse_box_market_scout",
       title: "Additional Fuse Box Market Scout",
       scope: "Compact OEM-style add-on",
-      quantity: "1 fuse box or fuse carrier",
+      quantity: "1 compact add-on carrier to match the reusable block",
       plain_stall_request:
-        "I need one compact old-OEM style cabin fuse box or fuse carrier for an under-dash add-on. It should have a cover, good terminals, mounting tabs, and original plugs or wiring tails if available.",
+        "I need one compact old-OEM under-dash blade-fuse / junction-block style carrier to match the blade-style block extracted from the existing car. Six positions must be usable, with clean rear terminals or serviceable pigtails.",
       buy_target:
-        "Buy a small quality fuse box that can support the cabin add-on circuits cleanly. Prefer an OEM Toyota-style box with intact cover, terminals, mounting ears, and enough wiring tail to identify the inputs.",
+        "Reuse the existing extracted compact blade-style donor block for two 6-fuse groups if it tests clean, then buy one matching compact old-OEM add-on carrier for the third group. Prefer Suzuki Mehran/Maruti 800, Daihatsu Cuore, old Alto, old Corolla, or similar compact cabin carriers.",
       must_include: [
         "Fuse box body, cover, terminals, and mounting points intact.",
-        "Original plugs or at least 150 mm wiring tails if it is a used donor fuse box.",
-        "Separate input/feed arrangement if the box is divided into groups.",
+        "Original plugs or at least 100-150 mm wiring tails if it is a used donor fuse box.",
+        "Six usable fuse positions with clean rear terminals or pigtails.",
         "Fuse rating markings readable on cover or body where present.",
       ],
       bench_test: [
         "Insert and remove sample fuses to confirm tight terminal grip.",
         "Check continuity across each fuse position with a meter if possible.",
         "Confirm no terminal is loose, burned, corroded, or pushed back.",
-        "Confirm the box fits the planned under-dash space before payment if dimensions are available.",
+        "Confirm the compact box fits the planned under-dash space, roughly no larger than 130 x 70 x 45 mm unless the electrician approves.",
       ],
       reject_if: [
         "Melted plastic, cracked body, missing cover, broken mounting tabs, or loose terminals.",
         "Cut-flush wires or missing plugs that make the feeds impossible to identify.",
-        "Cheap no-name box with weak terminals or unclear fuse ratings.",
-        "Single shared feed only if the planned grouped inputs cannot be separated safely.",
+        "Large engine-bay relay box, marine/RV stud block, fuse-cover-only listing, or loose fuse assortment.",
+        "Single-bus universal block that cannot be split safely for the planned grouped inputs.",
       ],
       capture_before_leaving: [
         "Top, bottom, side, and cover photos.",
@@ -2826,6 +3001,12 @@
         rule: "Quote the used OEM-style box and any new-quality alternative separately. Do not buy a damaged donor box just because it is cheap.",
       },
       decision_rule: "Buy only if the box is physically sound, terminals are tight, and the input/feed layout can be identified.",
+      links: [
+        scoutDocLink("docs/cabin-fuse-box-acquisition-20260503.md", "Cabin fuse-box acquisition"),
+        scoutDocLink("docs/local-market-component-order-spec-20260504.md", "Exact local-market order spec"),
+        scoutDocLink("deliverables/selling_site_images/images/junction_block.png", "Extracted blade-style junction block reference"),
+        scoutDocLink("deliverables/selling_site_images/images/junction_block_cover.png", "Matching junction-block cover reference"),
+      ],
     };
     const woodCribbingMarketSpec = {
       id: "hardwood_cribbing_market_scout",
@@ -2833,36 +3014,330 @@
       scope: "Cut-list quote",
       quantity: "8 blocks plus 4 wedge chocks",
       plain_stall_request:
-        "I need seasoned solid hardwood support blocks for vehicle work: 8 straight blocks about 300 x 150 x 75 mm, plus 4 wedge chocks cut from about 200 x 100 x 75 mm blanks tapering to 20-25 mm.",
+        "I need 8 dry hardwood blocks at 300 x 150 x 75 mm, plus 4 dry hardwood wedge chocks at 200 x 100 mm with 75 mm rear height and 25 mm blunt nose.",
       buy_target:
-        "Use dry solid hardwood such as sheesham, kikar/acacia, oak, ash, or equivalent dense wood. Raw unfinished wood is preferred, with flat faces and square ends.",
+        "Dry dense solid hardwood only. Use sheesham/shisham, kikar/acacia, oak, ash, or similar. Leave it raw/unfinished.",
       must_include: [
-        "8 rectangular blocks cut square and flat.",
-        "4 wedge chocks with even taper and flat bottom faces.",
-        "Grain running along the length, not across the short face.",
-        "No paint, oil, polish, lamination, or soft filler.",
+        "8 straight blocks: 300 x 150 x 75 mm.",
+        "4 blunt wedges: 200 x 100 mm, 75 mm rear, 25 mm nose.",
       ],
       bench_test: [
-        "Place each block on a flat floor and check that it does not rock.",
-        "Check the wood is dry, heavy, and solid.",
-        "Inspect bearing faces for cracks, splits, large knots, or rounded edges.",
-        "Confirm final dimensions before loading.",
+        "Put each piece on a flat floor; it must sit without rocking.",
+        "Confirm dry solid hardwood and check the two sizes before loading.",
       ],
       reject_if: [
-        "Wet or green wood, softwood, plywood, MDF, chipboard, or laminated board.",
-        "Cracked, split, oily, painted, rounded, or badly knotted pieces.",
-        "Blocks are uneven, twisted, or not flat enough to sit stable.",
+        "Wet/soft wood, plywood/MDF/chipboard, laminated board, cracks, oil, paint, or rocking faces.",
+        "Wedge has a feather-edge nose instead of a blunt 25 mm nose.",
       ],
       capture_before_leaving: [
-        "Photo of all 12 pieces together.",
-        "Close photos of dimensions, wood grain, and both bearing faces.",
-        "Merchant name, phone number, shop location, wood type, price, and delivery time.",
+        "Photo of all 12 pieces together and one close size check.",
+        "Merchant name, wood type, price, and pickup/delivery time.",
       ],
       price_guidance: {
         rule: "Quote as one cut set. Do not accept substitute board material.",
       },
       decision_rule: "Buy only dense dry solid hardwood pieces with flat bearing faces and stable square cuts.",
+      links: [
+        scoutDocLink("docs/suspension-wood-cribbing-merchant-spec.md", "Wood cribbing merchant spec"),
+        scoutDocLink("data/manual/fabrication/suspension_wood_cribbing_rev_a/README.md", "Wood cribbing Rev A pack"),
+        scoutDocLink("data/manual/fabrication/suspension_wood_cribbing_rev_a/j40_suspension_wood_cribbing_rev_a_dimension_sheet.pdf", "Wood cribbing dimension PDF"),
+      ],
     };
+    const toolbenchMarketSpec = {
+      id: "toolbench_market_scout",
+      title: "Toolbench / Workbench Scout",
+      scope: "Local workshop support",
+      quantity: "1 stable bench",
+      plain_stall_request:
+        "I need one stable workshop bench/toolbench for vehicle parts layout, pillar-drill work, and a bolt-down bench vice.",
+      buy_target:
+        "Steel-frame or heavy hardwood workbench with a flat top, minimum 1200 x 600 mm working surface, 850-950 mm working height, and enough structure to bolt down a vice and drill base.",
+      must_include: [
+        "Flat top with no rocking or twist.",
+        "Rigid frame that does not sway when pushed from the side.",
+        "Top thick enough, or reinforced enough, for a bolt-down vice and small pillar drill.",
+        "Clear usable working surface; avoid decorative or light domestic furniture.",
+      ],
+      bench_test: [
+        "Push the bench from each side and check for sway.",
+        "Place it on a flat floor and confirm all feet sit stable.",
+        "Confirm the top can accept drilled mounting holes for the vice and pillar drill.",
+      ],
+      reject_if: [
+        "Thin folding table, domestic desk, loose particle-board top, or unstable legs.",
+        "Top is badly warped, oily, cracked, or too weak to mount a vice.",
+      ],
+      capture_before_leaving: [
+        "Photo of full bench, top thickness, frame, feet, and any mounting holes.",
+        "Seller name, price, dimensions, and delivery option.",
+      ],
+      price_guidance: {
+        rule: "Quote the bench separately from the vice and pillar drill.",
+      },
+      decision_rule: "Buy only if it is stable enough for drilling and vice work.",
+    };
+    const pillarDrillMarketSpec = {
+      id: "pillar_drill_market_scout",
+      title: "Pillar Drill / Bench Drill Scout",
+      scope: "Local workshop support",
+      quantity: "1 drill press",
+      plain_stall_request:
+        "I need one pillar drill or solid bench drill press for controlled workshop drilling, not a loose hand drill.",
+      buy_target:
+        "Floor pillar drill or solid bench drill press with 13 mm chuck minimum, locking table, depth stop, straight spindle with no visible wobble, and 220-240 V single-phase power if powered.",
+      must_include: [
+        "Chuck key or keyless chuck in working condition.",
+        "Table height and angle lock working.",
+        "Depth stop working.",
+        "Belt cover and switch working where fitted.",
+      ],
+      bench_test: [
+        "Run the drill before payment and watch the chuck/spindle for wobble.",
+        "Lock the table and press down to confirm it does not slip.",
+        "Open and close the chuck through its range.",
+        "Check motor noise, belt condition, and available drill bits separately.",
+      ],
+      reject_if: [
+        "Visible spindle runout, bent column, loose table lock, cracked casting, missing chuck key, or unsafe wiring.",
+        "Seller will not test-run the drill.",
+      ],
+      capture_before_leaving: [
+        "Photo/video of test run, chuck, spindle, table lock, motor plate, and switch.",
+        "Seller name, price, voltage, chuck size, and whether bits are included.",
+      ],
+      price_guidance: {
+        rule: "Quote drill and drill-bit set separately.",
+      },
+      decision_rule: "Buy only after a clean test-run and table/chuck checks.",
+    };
+    const benchViceMarketSpec = {
+      id: "bench_vice_market_scout",
+      title: "Bench Vice Scout",
+      scope: "Local workshop support",
+      quantity: "1 bolt-down vice",
+      plain_stall_request:
+        "I need one bolt-down bench vice for holding parts on the toolbench. This line is a vice, not a clamp.",
+      buy_target:
+        "Cast-iron or steel bench vice with 100-150 mm jaws, smooth screw action, intact mounting holes, clean or replaceable jaws, and no cracked casting.",
+      must_include: [
+        "Bolt-down base with at least two mounting holes.",
+        "Jaws close squarely and grip evenly.",
+        "Screw opens and closes smoothly through usable travel.",
+        "Swivel base is acceptable only if the lock is firm.",
+      ],
+      bench_test: [
+        "Open and close fully; check for binding and excessive jaw lift.",
+        "Tighten on scrap metal or wood and check grip.",
+        "Inspect casting, jaw screws, base lugs, and mounting holes.",
+      ],
+      reject_if: [
+        "Cracked casting, broken base lug, stripped screw, badly chipped jaws, or missing mounting holes.",
+        "Seller offers a C-clamp, spring clamp, or hand clamp instead of a bench vice.",
+      ],
+      capture_before_leaving: [
+        "Photo of front, side, jaws, screw, base holes, and any brand/size marking.",
+        "Seller name, price, jaw width, and mounting-bolt recommendation.",
+      ],
+      price_guidance: {
+        rule: "Quote separately from the bench. Include mounting bolts if the seller has a matched set.",
+      },
+      decision_rule: "Buy only a solid bolt-down vice with sound jaws and body.",
+    };
+    const workshopSupportExactRows = [
+      {
+        id: "TOOL-BENCH-001",
+        item: "Toolbench / workbench",
+        route: "site_setup",
+        state: "purchase_ready",
+        spec: "Stable workbench for parts layout, pillar drill work, and bolt-down vice mounting.",
+        qty: "1",
+        dimension: "Minimum top 1200 x 600 mm; working height 850-950 mm",
+        material: "Steel frame or heavy hardwood/reinforced top",
+        sourceBasis: "data/manual/expenses.csv:tool_local_toolbench",
+        action: "Scout local hardware/tools market and send dimension/frame photos before purchase.",
+        reject: "Thin folding table, domestic desk, loose particle-board top, warped top, or unstable legs.",
+      },
+      {
+        id: "TOOL-DRILL-001",
+        item: "Pillar drill / bench drill press",
+        route: "site_setup",
+        state: "purchase_ready",
+        spec: "Floor pillar drill or solid bench drill press; 13 mm chuck minimum; locking table; depth stop; straight spindle with no visible wobble.",
+        qty: "1",
+        dimension: "13 mm chuck minimum; 220-240 V single-phase if powered",
+        material: "Cast/steel drill press with sound motor and table",
+        sourceBasis: "data/manual/expenses.csv:tool_local_bench_drill",
+        action: "Test-run before payment and photograph chuck, spindle, table lock, motor plate, and switch.",
+        reject: "Visible runout, bent column, unsafe wiring, loose table lock, cracked casting, or no test-run.",
+      },
+      {
+        id: "TOOL-VICE-001",
+        item: "Bench vice / workshop vice",
+        route: "site_setup",
+        state: "purchase_ready",
+        spec: "Bolt-down bench vice with smooth screw action, square-closing jaws, intact base lugs, and no cracked casting.",
+        qty: "1",
+        dimension: "100-150 mm jaw width",
+        material: "Cast iron or steel vice body",
+        sourceBasis: "data/manual/expenses.csv:tool_local_bench_vice",
+        action: "Open/close fully, grip-test on scrap, and photograph jaws, screw, and mounting holes.",
+        reject: "C-clamp, spring clamp, cracked vice body, stripped screw, broken base lug, or badly chipped jaws.",
+      },
+      {
+        id: "SWC-BLOCK-001",
+        item: "Rectangular hardwood cribbing block",
+        route: "suspension_wood_cribbing_rev_a",
+        state: "purchase_and_fabrication_ready",
+        spec: "Dry hardwood block for the cribbing set.",
+        qty: "8",
+        dimension: "300 x 150 x 75 mm",
+        material: "Dry dense hardwood",
+        sourceBasis: "Wood cribbing merchant spec",
+        action: "Ask timber merchant for the full 8 block + 4 wedge set.",
+        reject: "Wet/soft/board material, cracks, rocking, or bad knots.",
+      },
+      {
+        id: "SWC-CHOCK-001",
+        item: "Hardwood wedge chock",
+        route: "suspension_wood_cribbing_rev_a",
+        state: "purchase_and_fabrication_ready",
+        spec: "Dry hardwood blunt wedge chock.",
+        qty: "4",
+        dimension: "200 x 100 mm; 75 rear H; 25 nose H",
+        material: "Same dry hardwood as the blocks",
+        sourceBasis: "Wood cribbing merchant spec",
+        action: "Ask for finished wedges, or buy 200 x 100 x 75 mm blanks for workshop tapering.",
+        reject: "Feather nose, split taper, rocking base, or wet/soft wood.",
+      },
+    ];
+    const fabricationExactSpecRows = [
+      {
+        id: "BM-SM",
+        item: "Small circular body-mount cushion",
+        partNumber: "bm_sm_body_mount_cushion_rev_a.dxf",
+        route: "rubber_recreation_rev_a",
+        state: "quote_first_article_ready",
+        spec: "DXF quote/first article for small body-mount cushion; through cuts only on CUT/CUT_BORE/DRILL layers.",
+        qty: "10",
+        material: "Black EPDM or NR/SBR, Shore A 60 +/-5",
+        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
+        action: "Quote/prototype first; production waits for one-piece vs split-stack decision.",
+      },
+      {
+        id: "BM-LG",
+        item: "Large circular body-mount cushion",
+        partNumber: "bm_lg_body_mount_cushion_rev_a.dxf",
+        route: "rubber_recreation_rev_a",
+        state: "quote_first_article_ready",
+        spec: "DXF quote/first article for large body-mount cushion; caliper-confirm station and final stack before batch.",
+        qty: "2",
+        material: "Black EPDM or NR/SBR, Shore A 60 +/-5",
+        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
+      },
+      {
+        id: "BM-CUP-SM",
+        item: "Small body-mount cup washer blank",
+        partNumber: "bm_cup_small_seat_washer_rev_a.dxf",
+        route: "rubber_recreation_rev_a",
+        state: "quote_first_article_ready",
+        spec: "Small cup washer blank; confirm cup reuse, dish depth, and forming method before batch.",
+        qty: "10 working basis",
+        material: "2.5-3.0 mm steel, zinc plated or epoxy primed after forming",
+        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
+      },
+      {
+        id: "BM-CUP-LG",
+        item: "Large body-mount cup washer blank",
+        partNumber: "bm_cup_large_seat_washer_rev_a.dxf",
+        route: "rubber_recreation_rev_a",
+        state: "quote_first_article_ready",
+        spec: "Large cup washer blank; confirm cup reuse, dish depth, and forming method before batch.",
+        qty: "2 working basis",
+        material: "2.5-3.0 mm steel, zinc plated or epoxy primed after forming",
+        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
+      },
+      {
+        id: "FS-OVAL",
+        item: "Two-hole oval front-support isolator pad",
+        partNumber: "fs_oval_front_support_pad_rev_a.dxf",
+        route: "rubber_recreation_rev_a",
+        state: "quote_first_article_ready",
+        spec: "Oval front-support pad; caliper-confirm holes and insert before batch.",
+        qty: "2 matched pieces",
+        material: "Black EPDM or NR/SBR, Shore A 60 +/-5; reuse/bond steel insert if present",
+        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
+      },
+      {
+        id: "FS-STRIP-L",
+        item: "Left front-support strip template blank",
+        partNumber: "fs_strip_left_template_blank_rev_a.dxf",
+        route: "rubber_recreation_rev_a",
+        state: "template_required",
+        spec: "Quote/template blank only; trace physical left strip rubber and carrier before production cutting.",
+        qty: "1",
+        material: "8 mm base / 14 mm raised-load EPDM or NR/SBR strip, Shore A 60 +/-5",
+        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
+        reject: "Do not cut final production from this blank without the physical trace.",
+      },
+      {
+        id: "FS-STRIP-R",
+        item: "Right front-support strip template blank",
+        partNumber: "fs_strip_right_template_blank_rev_a.dxf",
+        route: "rubber_recreation_rev_a",
+        state: "template_required",
+        spec: "Quote/template blank only; trace physical right strip rubber and carrier before production cutting.",
+        qty: "1",
+        material: "8 mm base / 14 mm raised-load EPDM or NR/SBR strip, Shore A 60 +/-5",
+        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
+        reject: "Do not cut final production from this blank without the physical trace.",
+      },
+      {
+        id: "MIDI5-PLATE-001",
+        item: "MIDI 5-way structural mount plate",
+        partNumber: "midi5_mount_plate_rev_c.dxf",
+        route: "midi5_plate_mount_rev_c",
+        state: "current_release",
+        spec: "Open plate-mount arrangement for five linked MIDI fuse holders.",
+        qty: "1",
+        material: "3.0 mm 5052-H32 aluminium",
+        sourceBasis: "data/manual/fabrication/midi5_plate_mount_rev_c/README.md",
+        action: "Use 10-12 mm spacers and add cable P-clips after final routing.",
+      },
+      {
+        id: "MIDI5-SUBPLATE-001",
+        item: "MIDI 5-way non-conductive holder subplate",
+        partNumber: "midi5_holder_subplate_rev_c.dxf",
+        route: "midi5_plate_mount_rev_c",
+        state: "current_release",
+        spec: "Non-conductive board that carries the five linked MIDI holders.",
+        qty: "1",
+        material: "5.0 mm HDPE, ABS, G10, or phenolic",
+        sourceBasis: "data/manual/fabrication/midi5_plate_mount_rev_c/README.md",
+      },
+      {
+        id: "RELAY-CARRIER-001",
+        item: "Relay box carrier",
+        partNumber: "relay_carrier_rev_c.dxf",
+        route: "relay_mount_rev_c",
+        state: "current_release",
+        spec: "Structural carrier for DAIER prewired 10-way relay/fuse box.",
+        qty: "1",
+        material: "3.0 mm 5052-H32 aluminium",
+        sourceBasis: "data/manual/fabrication/relay_mount_rev_c/README.md",
+      },
+      {
+        id: "RELAY-GUARD-001",
+        item: "Relay rear guard",
+        partNumber: "relay_rear_guard_rev_c.dxf",
+        route: "relay_mount_rev_c",
+        state: "current_release",
+        spec: "Rear guard behind the relay box on spacers; keep bottom loom opening downward.",
+        qty: "1",
+        material: "3.0 mm ABS, HDPE, or polypropylene",
+        sourceBasis: "data/manual/fabrication/relay_mount_rev_c/README.md",
+        reject: "Do not fully seal the relay-box rear.",
+      },
+    ];
     const fabricationSupportMarketSpec = {
       id: "fabrication_support_market_scout",
       title: "3D Print + Workshop Support Scout",
@@ -2897,6 +3372,10 @@
         rule: "Quote first. Print only after the file, material, quantity, and first-article need are clear.",
       },
       decision_rule: "Use the service only for non-metal check-fit or prototype parts unless a separate approved final-part spec exists.",
+      links: [
+        scoutDocLink("docs/fabrication-handoff-index.md", "Fabrication handoff index"),
+        scoutDocLink("docs/rubber-recreation-fabrication-spec-20260502.md", "Rubber fabrication spec"),
+      ],
     };
     const brakeFallbackSpec = {
       id: "brake_booster_servo_44610_60050_market_scout",
@@ -2946,7 +3425,7 @@
         marketSpecs: attachScoutImage(
           dedupeScoutRows(epsMarketSpecs),
           epsParts,
-          scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/eps_column.jpg", "EPS column reference image", "eps_column")
+          scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/eps_column.jpg", "Vitz/Yaris XP90 EPS column set reference image", "eps_column")
         ),
       },
       {
@@ -2958,44 +3437,45 @@
         marketSpecs: attachScoutImage(
           fallbackMarketSpec(brakeMarketSpecs, brakeFallbackSpec),
           brakeBoosterParts,
-          scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/brake_master.jpg", "Brake booster and master-cylinder reference image", "brake_master")
+          scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/brake_booster.jpg", "44610-60050 dual-diaphragm brake booster reference image", "brake_booster")
         ),
       },
       {
         id: "pipes",
         title: "Pipes + Hoses",
-        description: "Match old samples and use the correct rated hose or line for each job.",
-        chips: ["Measure before payment", "Sample-match where required", "No generic hydraulic hose"],
+        description: "Use the exact order sheet for every hose, pipe, hard line, clip, and hydraulic assembly.",
+        chips: ["23 HLS lines", "21 release specs", "No generic hydraulic hose"],
         parts: pipeParts,
         marketSpecs: attachScoutImage(
           [hoseMarketSpec],
           pipeParts,
           scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg", "Automotive hose reference image", "radiator_hose")
         ),
+        docLinks: [
+          scoutDocLink("docs/hose-local-scout-handoff.md", "Hose local scout handoff"),
+          scoutDocLink("docs/local-market-component-order-spec-20260504.md", "Exact local-market component order spec"),
+          scoutDocLink("docs/replacement-pipes-workstream.md", "Replacement pipes workstream"),
+        ],
+        localMarketOrderRows: (data.local_market_order_sheets && data.local_market_order_sheets.hose) || [],
+        exactSpecRows: scoutOrderSpecRows((replacementPipesWorkstream && replacementPipesWorkstream.replacement_pipe_order_release_specs) || []),
       },
       {
         id: "rubbers",
         title: "Rubbers",
-        description: "New body-mount rubbers and matching hardware only; no salvage rubber.",
-        chips: ["Rubber workstream", "Fabricate or exact-kit only", "No salvage rubber"],
+        description: "Use the exact rubber requirement list and controlled body-mount release gates.",
+        chips: ["9 rubber requirements", "Fabricate or exact-kit only", "No salvage rubber"],
         parts: rubberParts,
         marketSpecs: attachScoutImage(
           [rubberMarketSpec],
           rubberParts,
           scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/body_mount_kit.jpg", "Body mount rubber reference image", "body_mount_kit")
         ),
-      },
-      {
-        id: "heat-plugs",
-        title: "Heat Plugs",
-        description: "New exact 2H glow plugs only; confirm against the old plug system.",
-        chips: ["Toyota-labelled only", "19850-68030 x6", "Confirm old plug system"],
-        parts: glowPlugParts,
-        marketSpecs: attachScoutImage(
-          [glowPlugMarketSpec],
-          glowPlugParts,
-          scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/glow_plugs.jpg", "Glow plug reference image", "glow_plugs")
-        ),
+        docLinks: [
+          scoutDocLink("docs/rubber-ordering-spec-20260502.md", "Rubber ordering spec"),
+          scoutDocLink("docs/local-market-component-order-spec-20260504.md", "Exact local-market component order spec"),
+          scoutDocLink("docs/body-mount-order-release-plan-20260502.md", "Body-mount order release plan"),
+        ],
+        exactSpecRows: scoutOrderSpecRows((chassisRubbersWorkstream && chassisRubbersWorkstream.chassis_rubber_requirements) || []),
       },
       {
         id: "additional-fuse-box",
@@ -3006,14 +3486,14 @@
         marketSpecs: attachScoutImage(
           [fuseBoxMarketSpec],
           fuseBoxParts,
-          scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/fuse_box.jpg", "Fuse box reference image", "fuse_box")
+          scoutReferenceImage("../../deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png", "User-supplied compact old-OEM fuse box reference", "compact_cabin_fuse_box_user_photo_20260504")
         ),
       },
       {
         id: "workshop-fabrication-support",
-        title: "Workshop + Fabrication Support",
+        title: "Workshop Support",
         description: "Simple quote cards for support items the market scout can source locally.",
-        chips: ["Hardwood cribbing", "Bench/pillar drill", "3D print non-metal only"],
+        chips: ["Hardwood cribbing", "Bench/pillar drill", "Support tools"],
         parts: workshopSupportParts,
         marketSpecs: [
           ...attachScoutImage(
@@ -3022,11 +3502,47 @@
             scoutReferenceImage("../../deliverables/selling_site_images/images/manual_overrides/suspension_hardwood_cribbing_cut_set_flat_lay.jpg", "Hardwood cribbing cut-set reference image", "hardwood_cribbing")
           ),
           ...attachScoutImage(
+            [toolbenchMarketSpec],
+            filterScoutRows(workshopSupportParts, { entryIds: ["tool_local_toolbench"], terms: ["toolbench", "workbench"] }),
+            scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/toolbench.jpg", "Toolbench/workbench reference image", "toolbench")
+          ),
+          ...attachScoutImage(
+            [pillarDrillMarketSpec],
+            filterScoutRows(workshopSupportParts, { entryIds: ["tool_local_bench_drill"], terms: ["pillar drill", "bench drill", "drill press"] }),
+            scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/bench_drill.jpg", "Pillar drill / bench drill reference image", "bench_drill")
+          ),
+          ...attachScoutImage(
+            [benchViceMarketSpec],
+            filterScoutRows(workshopSupportParts, { entryIds: ["tool_local_bench_vice"], terms: ["bench vice", "workshop vice", "vise"] }),
+            scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/bench_vice.jpg", "Bolt-down bench vice reference image", "bench_vice")
+          ),
+        ],
+        docLinks: [
+          scoutDocLink("docs/local-market-procurement-workstream.md", "Local market procurement workstream"),
+          scoutDocLink("docs/suspension-wood-cribbing-merchant-spec.md", "Wood cribbing merchant spec"),
+          scoutDocLink("data/manual/fabrication/suspension_wood_cribbing_rev_a/fabricator_cut_list.csv", "Wood cribbing cut list"),
+        ],
+        exactSpecRows: workshopSupportExactRows,
+      },
+      {
+        id: "fabrication",
+        title: "Fabrication",
+        description: "Controlled shop send-out packages with itemized files, release position, and exact fabrication specs.",
+        chips: ["DXF/SVG/PDF packages", "Quote first article", "Do not send superseded files"],
+        parts: fabricationParts,
+        marketSpecs: [
+          ...attachScoutImage(
             [fabricationSupportMarketSpec],
-            filterScoutRows(workshopSupportParts, { terms: ["3d printing", "prototype", "workbench", "bench drill", "c-clamp"] }),
+            fabricationParts,
             scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg", "Prototype part reference image", "generic_part")
           ),
         ],
+        docLinks: [
+          scoutDocLink("docs/fabrication-handoff-index.md", "Fabrication handoff index"),
+          scoutDocLink("docs/rubber-recreation-fabrication-spec-20260502.md", "Rubber recreation fabrication spec"),
+        ],
+        exactSpecRows: fabricationExactSpecRows,
+        fabricationPackages: (fabricationWorkstream && fabricationWorkstream.fabrication_packages) || [],
       },
     ];
   }
@@ -3054,6 +3570,7 @@
           <table class="scout-market-order-table">
             <thead>
               <tr>
+                <th>Image</th>
                 <th>Line</th>
                 <th>Shop Lane</th>
                 <th>Exact Order Text</th>
@@ -3067,6 +3584,7 @@
                 .map(
                   (row) => `
                     <tr>
+                      ${renderInventoryImageCell({ item: row.item, image: row.image || scoutComponentImage(row) }, row.item || "Order line image")}
                       <td class="scout-line-cell">
                         <strong>${escapeHtml(row.order_id || "-")}</strong>
                         <div class="small-muted">${escapeHtml(row.item || "")}</div>
@@ -3165,11 +3683,12 @@
           <table>
             <thead>
               <tr>
+                <th>Image</th>
                 <th>Line</th>
                 <th>Route / State</th>
-                <th>Exact Spec</th>
-                <th>Qty / Material</th>
-                <th>Action / Notes</th>
+                <th>Shop Ask</th>
+                <th>Qty / Size</th>
+                <th>Check / Reject</th>
               </tr>
             </thead>
             <tbody>
@@ -3177,6 +3696,7 @@
                 .map(
                   (row) => `
                     <tr>
+                      ${renderInventoryImageCell({ item: row.item, image: row.image || scoutComponentImage(row) }, row.item || "Spec row image")}
                       <td>
                         <strong>${escapeHtml(row.id || "-")}</strong>
                         <div class="small-muted">${escapeHtml(row.item || "")}</div>
@@ -3194,7 +3714,7 @@
                         ${renderScoutField("Source", row.sourceBasis)}
                       </td>
                       <td class="scout-notes-cell">
-                        ${renderScoutField("Action", row.action)}
+                        ${renderScoutField("Check", row.action)}
                         ${renderScoutField("Reject if", row.reject)}
                         ${renderScoutField("Notes", row.notes)}
                       </td>
@@ -3286,6 +3806,10 @@
           </div>
         </article>
         ${renderMarketSpecCards(category.marketSpecs)}
+        ${renderScoutDocLinks(category.docLinks)}
+        ${renderScoutLocalMarketOrderTable(category.localMarketOrderRows)}
+        ${renderScoutOrderSpecTable(category.exactSpecRows)}
+        ${renderFabricationPackages(category.fabricationPackages)}
       </section>
     `;
   }
@@ -3839,7 +4363,7 @@
       ${simpleChassisRubbers ? "" : `
         <article class="card">
           <h3>Involved Parts</h3>
-          <p class="small-muted">${escapeHtml(involvedParts.length || 0)} mapped part rows for this workstream.</p>
+          <p class="small-muted">${escapeHtml(involvedParts.length || 0)} mapped part rows for this workstream. ${renderInventoryPageLink("Open Ordering + Inventory")}</p>
           ${
             involvedParts.length
               ? `
@@ -3852,6 +4376,7 @@
                           <th>Status</th>
                           <th>Procurement</th>
                           <th>Payment / Delivery</th>
+                          <th>Inventory</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -3867,6 +4392,7 @@
                                 <td>${statusChip(row.status)}</td>
                                 <td>${escapeHtml(formatToken(row.procurement_stage || "unknown"))}</td>
                                 <td>${escapeHtml(formatToken(row.payment_status || "unknown"))} / ${escapeHtml(formatToken(row.delivery_status || "unknown"))}</td>
+                                <td>${renderInventoryPageLink("Open")}</td>
                               </tr>
                             `
                           )
@@ -5570,6 +6096,22 @@
     }
   }
 
+  function startLightboxVideoPlayback() {
+    if (!state.lightboxImageBase || !lightbox.video || lightbox.video.classList.contains("is-hidden")) {
+      return;
+    }
+    if (!cleanString(lightbox.video.getAttribute("src"))) {
+      return;
+    }
+
+    const playPromise = lightbox.video.play();
+    if (playPromise && typeof playPromise.catch === "function") {
+      playPromise.catch(() => {
+        setLightboxStatus("The browser blocked automatic playback. Press Play in the video controls.", "warn");
+      });
+    }
+  }
+
   function renderLightbox() {
     const baseMeta = state.lightboxImageBase;
     if (!baseMeta) {
@@ -5677,6 +6219,7 @@
     lightbox.root.classList.remove("is-hidden");
     lightbox.root.setAttribute("aria-hidden", "false");
     document.body.classList.add("lightbox-open");
+    startLightboxVideoPlayback();
   }
 
   function closeLightbox() {

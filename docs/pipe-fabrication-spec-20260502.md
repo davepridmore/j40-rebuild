@@ -29,8 +29,8 @@ All dimensions are in `mm`.
 
 | Part ID | Part | Qty | Status |
 | --- | --- | ---: | --- |
-| `CP-2H-COOLANT-001` | Formed metal coolant/radiator pipe assembly | `1` | Template and quote |
-| `CP-2H-COOLANT-002` | Rubber connector/coupler hoses for the formed pipe | `2` | Template and measure before order |
+| `CP-2H-COOLANT-001` | Formed metal coolant/radiator pipe assembly | `1` | Stock order released; template controls bends and trim |
+| `CP-2H-COOLANT-002` | Rubber connector/coupler hoses for the formed pipe | `2` | Stock order released; sample controls final cuts |
 
 ## Working Specification
 
@@ -44,13 +44,14 @@ Visible photo basis:
 - Rubber hose overlap at both ends retained by worm-drive clamps.
 - Two short rubber connector/coupler hoses are part of the service package, even though the metal pipe remains the primary fabrication item.
 - Working visible envelope from tape references: roughly `400` vertical height and `250-300` upper offset. Treat these as planning values only.
-- Orderable tube blank length: `750 mm` minimum before bending and trimming.
+- Orderable tube stock: `28-30 mm OD`, `1.2-1.6 mm` wall. Buy/quote `1000 mm` shop stock if sold by meter; `750 mm` is the absolute minimum blank before bending and trimming.
+- End bead target: `1.5-2.0 mm`; straight clamp land target: `25-30 mm` at each hose end.
 - Final pipe centerline length: measure from the physical sample after marking the bend centerlines; do not use the `750 mm` blank allowance as the finished length.
 - Clamp lands must be straight, round, smooth, and long enough for hose overlap plus clamp width.
 
 Fabrication requirement:
 
-1. Start with a `750 mm` minimum tube blank.
+1. Start with `28-30 mm OD`, `1.2-1.6 mm` wall coolant tube stock; use `1000 mm` if sold by meter, with `750 mm` as the absolute minimum blank.
 2. Use the original pipe as the master template.
 3. Measure the final centerline length from the physical sample.
 4. Measure tube OD and matching hose ID with calipers.
@@ -65,7 +66,7 @@ Fabrication requirement:
 Connector hose requirement:
 
 1. Keep both old rubber connector hoses with the pipe sample until measured.
-2. For local quoting, allow `2 x 500 mm` EPDM radiator hose blanks, working `28-30 mm ID`, or `1000 mm` total stock if the shop sells by meter.
+2. For local quoting, buy `2 x 500 mm` EPDM radiator hose blanks, `28-30 mm ID` exact order basis, or `1000 mm` total stock if the shop sells by meter.
 3. Measure each connector's free/cut length, ID, OD, hose overlap, clamp band width, pipe-end OD/bead, mating spigot OD, bend/offset, and installed kink clearance in `mm`.
 4. Use straight EPDM coolant hose only if the dry-fit route stays round and unstressed.
 5. If straight hose kinks or twists, sample-match a molded EPDM coolant connector.
@@ -113,4 +114,4 @@ Finish:
 
 Send the six selected photos, the old pipe, and this instruction:
 
-> Recreate this pipe from the physical sample. Start with a 750 mm minimum tube blank, then measure and trim to the physical sample's final centerline length. Match OD, bends, end beads, hose clamp lands, and clocking. Also quote two 500 mm EPDM radiator hose blanks for the rubber connector hoses, working 28-30 mm ID until calipers confirm the pipe/spigot OD; cut by ID, cut length, overlap, clamp OD, and mating spigot OD; use molded EPDM connectors if straight hose kinks. Use coolant-compatible tube, smooth internal transitions, and pressure-test before coating. Do not rely on photo dimensions where calipers or vehicle dry-fit can be used.
+> Recreate this pipe from the physical sample. Use `28-30 mm OD`, `1.2-1.6 mm` wall coolant tube. Buy/quote `1000 mm` shop stock if sold by meter; `750 mm` is the absolute minimum blank before bending/trimming. Match bends, clocking, offsets, `1.5-2.0 mm` end beads, `25-30 mm` straight hose clamp lands, and hose overlap. Also quote two `500 mm` EPDM radiator hose blanks for the rubber connector hoses, `28-30 mm ID` exact order basis; cut by sample/dry-fit, overlap, clamp OD, and mating spigot OD; use molded EPDM connectors if straight hose kinks. Use coolant-compatible tube, smooth internal transitions, and pressure-test before coating. Do not rely on photo dimensions where calipers or vehicle dry-fit can be used.

@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-04T05:03:17+05:00",
+  "generated_at": "2026-05-04T06:49:25+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -36,9 +36,9 @@ window.J40_DASHBOARD_DATA = {
     "other_j40_builds_drop_zone": "data/reference/other_j40_builds"
   },
   "summary": {
-    "workstreams_in_scope": 15,
-    "workstreams_active": 10,
-    "workstream_evidence_images": 586,
+    "workstreams_in_scope": 16,
+    "workstreams_active": 11,
+    "workstream_evidence_images": 646,
     "parts_open_rows": 56,
     "parts_ordered_pending_delivery": 12,
     "urgent_part_actions": 18,
@@ -17763,20 +17763,20 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/car_cover.jpg",
-            "caption": "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on \u00b7 car cover reference image",
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png",
+            "caption": "User-supplied compact old-OEM fuse box - cabin fuse add-on reference",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "manual_override_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "car_cover",
+            "media_id": "",
             "matched_tokens": [
-              "cover"
+              "part_cabin_compact_fuse_boxes"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "manual_override",
+            "match_score": 999
           }
         },
         {
@@ -21995,6 +21995,59 @@ window.J40_DASHBOARD_DATA = {
           "file_count": 19
         },
         {
+          "requirement_id": "FAB-SUS-001",
+          "system": "suspension_upgrade",
+          "package_id": "suspension_wood_cribbing_rev_a",
+          "title": "Suspension wood cribbing Rev A",
+          "current_status": "local_market_reference",
+          "release_position": "Backup drawing pack for the local timber-market cribbing buy: 8 rectangular blocks plus 4 wedge chocks.",
+          "notes": "Shop ask stays in docs/local-market-procurement-workstream.md; this package is only the drawing backup. Supplemental cribbing/chocks only; not a substitute for rated stands.",
+          "package_dir": "data/manual/fabrication/suspension_wood_cribbing_rev_a",
+          "primary_links": [
+            {
+              "url": "../../data/manual/fabrication/suspension_wood_cribbing_rev_a/README.md",
+              "label": "README"
+            },
+            {
+              "url": "../../data/manual/fabrication/suspension_wood_cribbing_rev_a/j40_suspension_wood_cribbing_rev_a_dimension_sheet.pdf",
+              "label": "PDF"
+            },
+            {
+              "url": "../../data/manual/fabrication/suspension_wood_cribbing_rev_a/fabricator_cut_list.csv",
+              "label": "Cut list"
+            },
+            {
+              "url": "../../data/manual/fabrication/suspension_wood_cribbing_rev_a/inspection_checklist.csv",
+              "label": "Inspection checklist"
+            },
+            {
+              "url": "../../docs/suspension-wood-cribbing-merchant-spec.md",
+              "label": "Source spec"
+            }
+          ],
+          "dxf_links": [
+            {
+              "url": "../../data/manual/fabrication/suspension_wood_cribbing_rev_a/swc_rectangular_cribbing_block_rev_a.dxf",
+              "label": "swc_rectangular_cribbing_block_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/suspension_wood_cribbing_rev_a/swc_wedge_chock_rev_a.dxf",
+              "label": "swc_wedge_chock_rev_a.dxf"
+            }
+          ],
+          "svg_links": [
+            {
+              "url": "../../data/manual/fabrication/suspension_wood_cribbing_rev_a/swc_rectangular_cribbing_block_rev_a.svg",
+              "label": "swc_rectangular_cribbing_block_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/suspension_wood_cribbing_rev_a/swc_wedge_chock_rev_a.svg",
+              "label": "swc_wedge_chock_rev_a.svg"
+            }
+          ],
+          "file_count": 9
+        },
+        {
           "requirement_id": "FAB-ELEC-001",
           "system": "electrical_reset",
           "package_id": "electrical_modules_rev_a",
@@ -22692,6 +22745,1870 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "3D printing service for non-metal fabrication prototypes and guards (quote_needed; delivery not_ordered; amount missing)"
               ]
+            }
+          ]
+        }
+      ],
+      "electrical_spec_layout": null
+    },
+    {
+      "id": "local_market_procurement",
+      "title": "Local Market",
+      "phase": "04c_local_market_procurement",
+      "status": "in_progress",
+      "priority": "high",
+      "primary_location": "local_market",
+      "owner_mode": "mixed",
+      "depends_on": [
+        "electrical_reset",
+        "chassis_fixing",
+        "mechanical_baseline",
+        "suspension_upgrade"
+      ],
+      "next_action": "Run one short market list for compact fuse carrier timber cribbing tools EPS quotes body hardware grommets and sample-matched small parts",
+      "exit_gate": "Local-only problem parts are bought quoted or deliberately deferred with photos samples prices and reject notes",
+      "notes": "Cross-cutting control lane for Bilal Ganj Montgomery Road rubber trim fastener auto-electrician timber and machine-shop buys",
+      "evidence_source": [
+        "docs_local_market_procurement_workstream",
+        "docs_cabin_fuse_box_acquisition",
+        "docs_eps_bilal_ganj_kit_checklist",
+        "docs_suspension_wood_cribbing_merchant_spec"
+      ],
+      "images": [
+        {
+          "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+          "caption": "Mixed Fastener Hardware \u00b7 Procurement Reconciliation \u00b7 2026-05-03",
+          "captured_date": "2026-05-03",
+          "captured_time": "15:38:32",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "mixed_fastener_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260503_153832_gp_0FJJiLHg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_220217_gp_dpH3Q75A.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "22:02:17",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_220217_gp_dpH3Q75A",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_220210_gp_YR8onehw.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "22:02:10",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_220210_gp_YR8onehw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_143143_gp_kXn8JZ0w.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "14:31:43",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_143143_gp_kXn8JZ0w",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_143141.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "14:31:41",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_143141",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_143136_gp_jEpok4ng.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "14:31:36",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_143136_gp_jEpok4ng",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_143135.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "14:31:35",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_143135",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_143127_gp_ZKLRVwVw.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "14:31:27",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_143127_gp_ZKLRVwVw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_143125.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "14:31:25",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_143125",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_071159_gp_3matxuBg.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "07:11:59",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_071159_gp_3matxuBg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_071157.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "07:11:57",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_071157",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_071155_gp_vFGJ415w.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "07:11:55",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_071155_gp_vFGJ415w",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_071153.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "07:11:53",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_071153",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_065032_gp_nShQBqwA.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "06:50:32",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_065032_gp_nShQBqwA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260411_065030.jpg",
+          "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+          "captured_date": "2026-04-11",
+          "captured_time": "06:50:30",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_power_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260411_065030",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:44:42",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004442_gp_7WcFHjLQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:44:37",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004437_gp_f1TySzww",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:44:29",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004429_gp_KJHxGcCA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:44:19",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004419_gp_ZPXJRBzg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:44:13",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004413_gp_Qno8OVRg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004401_gp_otUSjgGA.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:44:01",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004401_gp_otUSjgGA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:43:45",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004345_gp_yK8VYzMQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004337_gp_m2OagYpg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:43:37",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004337_gp_m2OagYpg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004314_gp_wuzpgNrA.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:43:14",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004314_gp_wuzpgNrA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004254_gp_Hm9RR5DQ.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:42:54",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004254_gp_Hm9RR5DQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:42:31",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004231_gp_CfosvPIg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:42:22",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004222_gp_PKRe5HSQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004215_gp_evgCLjSw.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:42:15",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004215_gp_evgCLjSw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:42:01",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004201_gp_zfUSmKJg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
+          "caption": "Rubber Grommet Assortment \u00b7 Procurement Reconciliation \u00b7 2026-04-22",
+          "captured_date": "2026-04-22",
+          "captured_time": "03:43:58",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_grommet_assortment",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260422_034358_gp_Bg6nSlPw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260420_221819_gp_YV69fbvA_2.jpg",
+          "caption": "Hidden Diesel Cutoff Switch Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-20",
+          "captured_date": "2026-04-20",
+          "captured_time": "22:18:19",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "hidden_diesel_cutoff_switch_hardware",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260420_221819_gp_YV69fbvA_2",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260420_201814_gp_IHb6FfXg.jpg",
+          "caption": "Service Parts And Order Confirmations \u00b7 Procurement Reconciliation \u00b7 2026-04-20",
+          "captured_date": "2026-04-20",
+          "captured_time": "20:18:14",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "service_parts_and_order_confirmations",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260420_201814_gp_IHb6FfXg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260420_201801_gp_NvXIaGBw.jpg",
+          "caption": "Service Parts And Order Confirmations \u00b7 Procurement Reconciliation \u00b7 2026-04-20",
+          "captured_date": "2026-04-20",
+          "captured_time": "20:18:01",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "service_parts_and_order_confirmations",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260420_201801_gp_NvXIaGBw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260405_010322_gp_0chs4MQg.jpg",
+          "caption": "Fuse Distribution And Wiring \u00b7 Procurement Reconciliation \u00b7 2026-04-05",
+          "captured_date": "2026-04-05",
+          "captured_time": "01:03:22",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "fuse_distribution_and_wiring",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260405_010322_gp_0chs4MQg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260404_192619_gp_jsR1m0RQ.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+          "captured_date": "2026-04-04",
+          "captured_time": "19:26:19",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260404_192619_gp_jsR1m0RQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260404_192618.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+          "captured_date": "2026-04-04",
+          "captured_time": "19:26:18",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260404_192618",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260404_192614.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+          "captured_date": "2026-04-04",
+          "captured_time": "19:26:14",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260404_192614",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260404_192608_gp_GvlqkRrw.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+          "captured_date": "2026-04-04",
+          "captured_time": "19:26:08",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260404_192608_gp_GvlqkRrw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260404_095838_gp_oiOOHmHA.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+          "captured_date": "2026-04-04",
+          "captured_time": "09:58:38",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260404_095838_gp_oiOOHmHA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260404_095833_gp_S7uQMzXA.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+          "captured_date": "2026-04-04",
+          "captured_time": "09:58:33",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260404_095833_gp_S7uQMzXA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260404_040022_gp_E6EzzfuQ.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+          "captured_date": "2026-04-04",
+          "captured_time": "04:00:22",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260404_040022_gp_E6EzzfuQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_234817_gp_83HD1ieg.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "23:48:17",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_234817_gp_83HD1ieg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_210548_gp_lQR2yH2Q.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "21:05:48",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_210548_gp_lQR2yH2Q",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_205909_gp_BdIDB36A.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "20:59:09",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_205909_gp_BdIDB36A",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_204223_gp_TuNmq2PA.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "20:42:23",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_204223_gp_TuNmq2PA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_204222.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "20:42:22",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_204222",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_202319_gp_dmuZGYEg.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "20:23:19",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_202319_gp_dmuZGYEg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_195524_gp_vSsn2KuA.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "19:55:24",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_195524_gp_vSsn2KuA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_005114_gp_muIt66Fw.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:51:14",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_005114_gp_muIt66Fw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_005113.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:51:13",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_005113",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_005109_gp_ffAv1oWQ.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:51:09",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_005109_gp_ffAv1oWQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_005107.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:51:07",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_005107",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_005102_gp_5ND0cbQA.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:51:02",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_005102_gp_5ND0cbQA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_005101.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:51:01",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_005101",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_005052_gp_F1otrVZA.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:50:52",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_005052_gp_F1otrVZA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_005051.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:50:51",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_005051",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_004146_gp_eN3BHWzQ.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:41:46",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_004146_gp_eN3BHWzQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_004145.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:41:45",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_004145",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_004142_gp_2wmxtb3A.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:41:42",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_004142_gp_2wmxtb3A",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260403_004136_gp_K59gVoXw.jpg",
+          "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+          "captured_date": "2026-04-03",
+          "captured_time": "00:41:36",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "wiring_harness_and_fuse_distribution",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260403_004136_gp_K59gVoXw",
+          "matched_tokens": []
+        }
+      ],
+      "evidence_sets": [
+        {
+          "key": "primary",
+          "title": "Primary Evidence Set",
+          "description": "Best-matched photos for this workstream from component/stage mapping and evidence references.",
+          "images": [
+            {
+              "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+              "caption": "Mixed Fastener Hardware \u00b7 Procurement Reconciliation \u00b7 2026-05-03",
+              "captured_date": "2026-05-03",
+              "captured_time": "15:38:32",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "mixed_fastener_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260503_153832_gp_0FJJiLHg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_220217_gp_dpH3Q75A.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "22:02:17",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_220217_gp_dpH3Q75A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_220210_gp_YR8onehw.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "22:02:10",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_220210_gp_YR8onehw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_143143_gp_kXn8JZ0w.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "14:31:43",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_143143_gp_kXn8JZ0w",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_143141.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "14:31:41",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_143141",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_143136_gp_jEpok4ng.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "14:31:36",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_143136_gp_jEpok4ng",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_143135.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "14:31:35",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_143135",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_143127_gp_ZKLRVwVw.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "14:31:27",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_143127_gp_ZKLRVwVw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_143125.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "14:31:25",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_143125",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_071159_gp_3matxuBg.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "07:11:59",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_071159_gp_3matxuBg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_071157.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "07:11:57",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_071157",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_071155_gp_vFGJ415w.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "07:11:55",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_071155_gp_vFGJ415w",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_071153.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "07:11:53",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_071153",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_065032_gp_nShQBqwA.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "06:50:32",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_065032_gp_nShQBqwA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260411_065030.jpg",
+              "caption": "Fuse Distribution And Power Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-11",
+              "captured_date": "2026-04-11",
+              "captured_time": "06:50:30",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_power_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260411_065030",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:42",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004442_gp_7WcFHjLQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:37",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004437_gp_f1TySzww",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:29",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004429_gp_KJHxGcCA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:19",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004419_gp_ZPXJRBzg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:13",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004413_gp_Qno8OVRg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004401_gp_otUSjgGA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:01",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004401_gp_otUSjgGA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:43:45",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004345_gp_yK8VYzMQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004337_gp_m2OagYpg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:43:37",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004337_gp_m2OagYpg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004314_gp_wuzpgNrA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:43:14",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004314_gp_wuzpgNrA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004254_gp_Hm9RR5DQ.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:54",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004254_gp_Hm9RR5DQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:31",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004231_gp_CfosvPIg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:22",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004222_gp_PKRe5HSQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004215_gp_evgCLjSw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:15",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004215_gp_evgCLjSw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:01",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004201_gp_zfUSmKJg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260422_034358_gp_Bg6nSlPw.jpg",
+              "caption": "Rubber Grommet Assortment \u00b7 Procurement Reconciliation \u00b7 2026-04-22",
+              "captured_date": "2026-04-22",
+              "captured_time": "03:43:58",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_grommet_assortment",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260422_034358_gp_Bg6nSlPw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260420_221819_gp_YV69fbvA_2.jpg",
+              "caption": "Hidden Diesel Cutoff Switch Hardware \u00b7 Procurement Reconciliation \u00b7 2026-04-20",
+              "captured_date": "2026-04-20",
+              "captured_time": "22:18:19",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "hidden_diesel_cutoff_switch_hardware",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260420_221819_gp_YV69fbvA_2",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260420_201814_gp_IHb6FfXg.jpg",
+              "caption": "Service Parts And Order Confirmations \u00b7 Procurement Reconciliation \u00b7 2026-04-20",
+              "captured_date": "2026-04-20",
+              "captured_time": "20:18:14",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "service_parts_and_order_confirmations",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260420_201814_gp_IHb6FfXg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260420_201801_gp_NvXIaGBw.jpg",
+              "caption": "Service Parts And Order Confirmations \u00b7 Procurement Reconciliation \u00b7 2026-04-20",
+              "captured_date": "2026-04-20",
+              "captured_time": "20:18:01",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "service_parts_and_order_confirmations",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260420_201801_gp_NvXIaGBw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260405_010322_gp_0chs4MQg.jpg",
+              "caption": "Fuse Distribution And Wiring \u00b7 Procurement Reconciliation \u00b7 2026-04-05",
+              "captured_date": "2026-04-05",
+              "captured_time": "01:03:22",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "fuse_distribution_and_wiring",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260405_010322_gp_0chs4MQg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260404_192619_gp_jsR1m0RQ.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+              "captured_date": "2026-04-04",
+              "captured_time": "19:26:19",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260404_192619_gp_jsR1m0RQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260404_192618.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+              "captured_date": "2026-04-04",
+              "captured_time": "19:26:18",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260404_192618",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260404_192614.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+              "captured_date": "2026-04-04",
+              "captured_time": "19:26:14",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260404_192614",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260404_192608_gp_GvlqkRrw.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+              "captured_date": "2026-04-04",
+              "captured_time": "19:26:08",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260404_192608_gp_GvlqkRrw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260404_095838_gp_oiOOHmHA.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+              "captured_date": "2026-04-04",
+              "captured_time": "09:58:38",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260404_095838_gp_oiOOHmHA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260404_095833_gp_S7uQMzXA.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+              "captured_date": "2026-04-04",
+              "captured_time": "09:58:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260404_095833_gp_S7uQMzXA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260404_040022_gp_E6EzzfuQ.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-04",
+              "captured_date": "2026-04-04",
+              "captured_time": "04:00:22",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260404_040022_gp_E6EzzfuQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_234817_gp_83HD1ieg.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "23:48:17",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_234817_gp_83HD1ieg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_210548_gp_lQR2yH2Q.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "21:05:48",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_210548_gp_lQR2yH2Q",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_205909_gp_BdIDB36A.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "20:59:09",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_205909_gp_BdIDB36A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_204223_gp_TuNmq2PA.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "20:42:23",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_204223_gp_TuNmq2PA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_204222.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "20:42:22",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_204222",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_202319_gp_dmuZGYEg.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "20:23:19",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_202319_gp_dmuZGYEg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_195524_gp_vSsn2KuA.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "19:55:24",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_195524_gp_vSsn2KuA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_005114_gp_muIt66Fw.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:51:14",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_005114_gp_muIt66Fw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_005113.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:51:13",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_005113",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_005109_gp_ffAv1oWQ.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:51:09",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_005109_gp_ffAv1oWQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_005107.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:51:07",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_005107",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_005102_gp_5ND0cbQA.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:51:02",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_005102_gp_5ND0cbQA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_005101.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:51:01",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_005101",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_005052_gp_F1otrVZA.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:50:52",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_005052_gp_F1otrVZA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_005051.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:50:51",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_005051",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_004146_gp_eN3BHWzQ.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:41:46",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_004146_gp_eN3BHWzQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_004145.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:41:45",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_004145",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_004142_gp_2wmxtb3A.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:41:42",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_004142_gp_2wmxtb3A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260403_004136_gp_K59gVoXw.jpg",
+              "caption": "Wiring Harness And Fuse Distribution \u00b7 Procurement Reconciliation \u00b7 2026-04-03",
+              "captured_date": "2026-04-03",
+              "captured_time": "00:41:36",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "wiring_harness_and_fuse_distribution",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260403_004136_gp_K59gVoXw",
+              "matched_tokens": []
+            }
+          ]
+        }
+      ],
+      "image_count": 60,
+      "reference_token_count": 0,
+      "requirements": [],
+      "pipe_requirements": [],
+      "replacement_pipe_photo_intake": [],
+      "replacement_pipe_order_release_specs": [],
+      "replacement_pipe_release_actions": [],
+      "replacement_pipe_circuit_closure": [],
+      "chassis_rubber_requirements": [],
+      "body_mount_order_release_specs": [],
+      "body_mount_release_actions": [],
+      "body_mount_station_closure": [],
+      "fabrication_packages": [],
+      "market_specs": [],
+      "linked_packages": [],
+      "component_jobs": [],
+      "issue_jobs": [],
+      "steps": [
+        {
+          "label": "Execute current workstream action",
+          "status": "in_progress",
+          "detail": "Run one short market list for compact fuse carrier timber cribbing tools EPS quotes body hardware grommets and sample-matched small parts"
+        },
+        {
+          "label": "Run the short market list",
+          "status": "in_progress",
+          "detail": "Use the local market workstream as the one place for Bilal Ganj, timber, tool, fastener, rubber, and auto-electrician asks."
+        },
+        {
+          "label": "Buy or quote hardwood cribbing",
+          "status": "queued",
+          "detail": "Source the 8 rectangular hardwood blocks and 4 wedge chocks from the timber merchant before suspension/brake work."
+        },
+        {
+          "label": "Capture quote evidence",
+          "status": "queued",
+          "detail": "Record seller, price, photos, material claim, and reject notes before leaving the shop."
+        },
+        {
+          "label": "Update procurement rows",
+          "status": "queued",
+          "detail": "Mark each local item bought, quoted, rejected, or deferred so it does not duplicate another workstream."
+        },
+        {
+          "label": "Issue checks",
+          "status": "completed",
+          "detail": "No issue-specific checks are recorded for this workstream."
+        },
+        {
+          "label": "Close workstream exit gate",
+          "status": "queued",
+          "detail": "No linked package rows found. Exit gate: Local-only problem parts are bought quoted or deliberately deferred with photos samples prices and reject notes"
+        }
+      ],
+      "involved_parts": [],
+      "operation_panels": [],
+      "subtask_groups": [
+        {
+          "key": "local_market_procurement",
+          "title": "Local Market Procurement",
+          "summary": "One in-person market lane for local timber, tools, compact electrical, rubber, hardware, and sample-matched parts.",
+          "subtasks": [
+            {
+              "title": "Run Short Market List",
+              "priority": "P0",
+              "remaining": "each market pass",
+              "instruction": "Use docs/local-market-procurement-workstream.md as the shop-facing list.",
+              "process_steps": [
+                "Group stops by lane: auto-electrician, rubber, fastener, timber, tool, and machine shop.",
+                "Ask from the short list first; keep detailed specs as backup links only.",
+                "Record seller, price, availability, and return terms for each open line.",
+                "Photograph the item or quote before buying or rejecting it."
+              ],
+              "tools": [
+                "Phone/camera",
+                "Notebook",
+                "Tape measure"
+              ],
+              "supplies": [
+                "Local market workstream",
+                "Sample parts",
+                "Printed short list"
+              ],
+              "hold_point": "No local item closes without price, seller, and photo evidence.",
+              "image_tokens": [
+                "market",
+                "procurement",
+                "seller",
+                "shop",
+                "parts"
+              ],
+              "id": "run_short_market_list",
+              "status": "in_progress",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:42",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004442_gp_7WcFHjLQ",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:37",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004437_gp_f1TySzww",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:29",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004429_gp_KJHxGcCA",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:19",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004419_gp_ZPXJRBzg",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:13",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004413_gp_Qno8OVRg",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004401_gp_otUSjgGA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:01",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004401_gp_otUSjgGA",
+                  "matched_tokens": []
+                }
+              ],
+              "registered_items": []
+            },
+            {
+              "title": "Buy Hardwood Cribbing Set",
+              "priority": "P0",
+              "remaining": "before suspension/brake work starts",
+              "instruction": "Buy the wood set through the timber lane, not as a separate fabrication release.",
+              "process_steps": [
+                "Ask for 8 dry hardwood blocks at 300 x 150 x 75 mm.",
+                "Ask for 4 hardwood wedge chocks at 200 x 100 mm, 75 mm rear, 25 mm nose.",
+                "Use docs/suspension-wood-cribbing-merchant-spec.md if the merchant needs the drawing/spec.",
+                "Reject wet, soft, board material, cracked pieces, rocking faces, and feather-edge wedges.",
+                "Record wood type, price, merchant, and photos of the full set."
+              ],
+              "tools": [
+                "Tape measure",
+                "Straight edge",
+                "Camera"
+              ],
+              "supplies": [
+                "Wood cribbing merchant spec",
+                "Seasoned hardwood"
+              ],
+              "hold_point": "Home suspension/brake work waits until rated stands and this supplemental wood set are present.",
+              "image_tokens": [
+                "wood",
+                "hardwood",
+                "cribbing",
+                "wedge",
+                "timber"
+              ],
+              "id": "buy_hardwood_cribbing_set",
+              "status": "queued",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
+                  "caption": "Mixed Fastener Hardware \u00b7 Procurement Reconciliation \u00b7 2026-05-03",
+                  "captured_date": "2026-05-03",
+                  "captured_time": "15:38:32",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "mixed_fastener_hardware",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260503_153832_gp_0FJJiLHg",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:42",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004442_gp_7WcFHjLQ",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:37",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004437_gp_f1TySzww",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:29",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004429_gp_KJHxGcCA",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:19",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004419_gp_ZPXJRBzg",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:13",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004413_gp_Qno8OVRg",
+                  "matched_tokens": []
+                }
+              ],
+              "registered_items": []
+            },
+            {
+              "title": "Close Market Results",
+              "priority": "P1",
+              "remaining": "after market pass",
+              "instruction": "Turn each shop visit into a buy, quote, reject, or defer status.",
+              "process_steps": [
+                "Update procurement rows with bought, quoted, rejected, or deferred.",
+                "Attach photos and seller notes to the relevant part/tool line.",
+                "Keep rejected candidates visible with the reason so they are not re-bought.",
+                "Escalate anything that needs workshop confirmation before payment."
+              ],
+              "tools": [
+                "Dashboard",
+                "Camera",
+                "Notebook"
+              ],
+              "supplies": [
+                "Receipts or quote notes",
+                "Seller contact log"
+              ],
+              "hold_point": "The market pass is not closed while any result is only remembered informally.",
+              "image_tokens": [
+                "receipt",
+                "quote",
+                "seller",
+                "procurement",
+                "parts"
+              ],
+              "id": "close_market_results",
+              "status": "queued",
+              "parts": [],
+              "images": [
+                {
+                  "path": "../../photos/20260420_201814_gp_IHb6FfXg.jpg",
+                  "caption": "Service Parts And Order Confirmations \u00b7 Procurement Reconciliation \u00b7 2026-04-20",
+                  "captured_date": "2026-04-20",
+                  "captured_time": "20:18:14",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "service_parts_and_order_confirmations",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260420_201814_gp_IHb6FfXg",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260420_201801_gp_NvXIaGBw.jpg",
+                  "caption": "Service Parts And Order Confirmations \u00b7 Procurement Reconciliation \u00b7 2026-04-20",
+                  "captured_date": "2026-04-20",
+                  "captured_time": "20:18:01",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "service_parts_and_order_confirmations",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260420_201801_gp_NvXIaGBw",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:42",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004442_gp_7WcFHjLQ",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:37",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004437_gp_f1TySzww",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:29",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004429_gp_KJHxGcCA",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:19",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004419_gp_ZPXJRBzg",
+                  "matched_tokens": []
+                }
+              ],
+              "registered_items": []
             }
           ]
         }
@@ -23639,20 +25556,20 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/car_cover.jpg",
-            "caption": "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on \u00b7 car cover reference image",
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png",
+            "caption": "User-supplied compact old-OEM fuse box - cabin fuse add-on reference",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "manual_override_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "car_cover",
+            "media_id": "",
             "matched_tokens": [
-              "cover"
+              "part_cabin_compact_fuse_boxes"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "manual_override",
+            "match_score": 999
           }
         },
         {
@@ -25662,7 +27579,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_heat_glow_plugs_set",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_diesel_correction",
-          "notes": "Buy exact Toyota-labelled glow plugs: primary target Toyota 19850-68030 x6 for HJ47-style 2H 12V/8.5V. If the old plug/system proves later 24V/superglow, use Toyota 19850-68060 x6 instead. Confirm old plug thread, reach, voltage, seat, and terminal before payment; reject PT-107/1C/2C listings.",
+          "notes": "Buy exact new Toyota-labelled glow plugs through a verified new-parts counter/order lane: primary target Toyota 19850-68030 x6 for HJ47-style 2H 12V/8.5V. If the old plug/system proves later 24V/superglow, use Toyota 19850-68060 x6 instead. Confirm old plug thread, reach, voltage, seat, and terminal before payment; reject used/refurbished/PT-107/1C/2C listings.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -25859,7 +27776,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_radiator_hose_set",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Local-market order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 750 mm minimum tube blank or 1000 mm shop stock quote, and two 500 mm EPDM connector blanks at 28-30 mm ID working basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
+          "notes": "Local-market order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -25925,7 +27842,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_mech_heater_hose_set",
           "workstream": "mechanical_baseline",
-          "item": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID",
+          "item": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID",
           "status": "purchase_ready",
           "procurement_stage": "purchase_ready_standard_stock",
           "payment_status": "not_paid",
@@ -25938,7 +27855,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_mech_heater_hose_set",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Local-market order ready via RPO-COOL-004A/B: buy 1000 mm of 16 mm / 5/8 in EPDM SAE J20R3 or better heater hose stock, then cut 400 mm inlet and 280 mm outlet on vehicle. Final trim, clamp, and chafe check remain at install.",
+          "notes": "Local-market order ready via RPO-COOL-004A/B: buy 1000 mm of 16 mm / 5/8 in EPDM SAE J20R3 or better heater hose stock, then cut 400 mm inlet and 280 mm outlet from released stock during install. Final trim, clamp, and chafe check remain at install.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -25946,7 +27863,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-            "caption": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID \u00b7 air hose reference image",
+            "caption": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID \u00b7 air hose reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -26354,7 +28271,7 @@ window.J40_DASHBOARD_DATA = {
                 "Jubilee hose clip assortment - 10 pc fuel line/diesel/petrol/coolant clamp packs x3 (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Clutch hydraulic refresh - master/slave plus flex hose and 1500 mm hard-line allowance if needed (next_phase_purchase; delivery not_ordered; amount missing)",
                 "Radiator cap (purchase_ready; delivery not_ordered; amount missing)",
-                "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID (purchase_ready_standard_stock; delivery not_ordered; amount missing)"
+                "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID (purchase_ready_standard_stock; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -26612,11 +28529,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Clutch hydraulic refresh - master/slave plus flex hose and 1500 mm hard-line allowance if needed (next_phase_purchase; delivery not_ordered; amount missing)",
+                "Toyota OE glow plugs 19850-68030 x6 - diesel 2H (purchase_ready; delivery not_ordered; amount missing)",
                 "Accessory belt set (purchase_ready; delivery not_ordered; amount missing)",
                 "Engine oil + oil filter service pack (purchase_ready; delivery not_ordered; amount missing)",
                 "Jubilee hose clip assortment - 10 pc fuel line/diesel/petrol/coolant clamp packs x3 (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
-                "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines (purchase_ready_standard_stock; delivery not_ordered; amount missing)",
-                "Fuel filter (purchase_ready; delivery not_ordered; amount missing)"
+                "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines (purchase_ready_standard_stock; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -26742,11 +28659,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines (purchase_ready_standard_stock; delivery not_ordered; amount missing)",
+                "Toyota OE glow plugs 19850-68030 x6 - diesel 2H (purchase_ready; delivery not_ordered; amount missing)",
                 "Accessory belt set (purchase_ready; delivery not_ordered; amount missing)",
                 "Clutch hydraulic refresh - master/slave plus flex hose and 1500 mm hard-line allowance if needed (next_phase_purchase; delivery not_ordered; amount missing)",
                 "Engine oil + oil filter service pack (purchase_ready; delivery not_ordered; amount missing)",
-                "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID (purchase_ready_standard_stock; delivery not_ordered; amount missing)",
-                "Toyota OE glow plugs 19850-68030 x6 - diesel 2H (purchase_ready; delivery not_ordered; amount missing)"
+                "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID (purchase_ready_standard_stock; delivery not_ordered; amount missing)"
               ]
             }
           ]
@@ -27444,12 +29361,12 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Front heater inlet hose: 400 mm cut length; front heater outlet hose: 280 mm cut length; expected 16 mm ID / 5/8 in EPDM heater hose unless measured nipple ODs require another ID; Toyota 99552-30500 / 99556-30500 and 99552-30300 / 99556-30300 are cross-references",
+          "exact_recreation_spec": "Front heater inlet hose: 400 mm cut length; front heater outlet hose: 280 mm cut length; 16 mm ID / 5/8 in EPDM heater hose exact order basis. Toyota 99552-30500 / 99556-30500 and 99552-30300 / 99556-30300 are cross-references.",
           "material_spec": "EPDM heater hose, SAE J20R3 or better",
-          "critical_measurements": "Standard 16 mm / 5/8 in EPDM heater hose basis accepted; cut 400 mm inlet and 280 mm outlet on vehicle.",
+          "critical_measurements": "Standard 16 mm / 5/8 in EPDM heater hose exact order basis; cut 400 mm inlet and 280 mm outlet from released stock during install.",
           "fit_and_test": "Dry-fit through firewall/heater path without tight bends, exhaust contact, or chafe",
           "source_ref": "docs_engine_hose_tube_replacement_specs|data_replacement_pipe_order_release_specs",
-          "notes": "Released for heater hose stock shopping; final trim and chafe check occur on vehicle.",
+          "notes": "Released for heater hose stock shopping; final trim and chafe check occur during install.",
           "evidence_images": []
         },
         {
@@ -27459,7 +29376,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Loose May 2 sample for front engine cooling route",
           "pipe_or_line": "Formed metal coolant/radiator pipe assembly",
           "replace_scope": "recreate_fabricate",
-          "quantity": "1 x 750 mm minimum tube blank; quote 1000 mm stock if shop will not sell 750 mm",
+          "quantity": "1 x 28-30 mm OD, 1.2-1.6 mm wall tube blank; 1000 mm shop stock preferred, 750 mm absolute minimum blank",
           "photo_evidence": [
             "20260502_004044_gp_Hx4Yo0Qg",
             "20260502_004106_gp_wlYlUahA",
@@ -27469,16 +29386,16 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004145_gp_e8soxsyA"
           ],
           "photo_status": "image_tape_template_closed",
-          "spec_status": "template_released_for_quote_only",
+          "spec_status": "stock_order_released_template_copy",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Recreate from physical sample using a 750 mm minimum tube blank; if the local fabricator sells by foot or meter, buy/charge up to 1000 mm stock and trim after bending. Final centerline length must be measured from the physical sample. Match tube OD, wall thickness, bend radii, bend clocking, offset, end beads, hose clamp lands, and hose overlap in mm; visible planning envelope is roughly 400 mm vertical height and 250-300 mm upper offset but photos are not production dimensions",
+          "exact_recreation_spec": "Recreate from physical sample using 28-30 mm OD coolant tube with 1.2-1.6 mm wall. Buy/quote 1000 mm shop stock if sold by meter; 750 mm is the absolute minimum blank before bending/trimming. Final centerline length must be measured from the physical sample. Match tube OD, wall thickness, bend radii, bend clocking, offset, 1.5-2.0 mm end beads, 25-30 mm straight hose clamp lands, and hose overlap in mm; visible planning envelope is roughly 400 mm vertical height and 250-300 mm upper offset but photos are not production dimensions.",
           "material_spec": "Mild steel/aluminized steel or 304 stainless coolant-compatible tube; target wall 1.2-1.6 mm after fabricator confirmation",
-          "critical_measurements": "May 2 tape-reference photos plus physical sample accepted for quote/template; 750 mm minimum tube blank or 1000 mm shop stock basis.",
+          "critical_measurements": "Exact released stock: 28-30 mm OD tube, 1.2-1.6 mm wall, 1000 mm shop stock preferred or 750 mm absolute minimum blank, 1.5-2.0 mm end beads, 25-30 mm straight clamp lands. Physical sample controls final bends and trim.",
           "fit_and_test": "Bench pressure-test before coating; dry-fit on vehicle; coat only after fit and pressure test",
           "source_ref": "docs_pipe_fabrication_spec_20260502|data_pipe_fabrication_specs|data_replacement_pipe_order_release_specs",
-          "notes": "Released for fabricator quote/template only; physical sample copy, dry-fit, and pressure-test still control final installation.",
+          "notes": "Released for fabricator stock quote/template copy; physical sample copy, dry-fit, and pressure-test still control final installation.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004044_gp_Hx4Yo0Qg.jpg",
@@ -27574,9 +29491,9 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Replace the two short rubber connector hoses visible on the formed coolant pipe assembly. Local market request: 2 pieces of EPDM radiator rubber pipe, 500 mm each, working ID 28-30 mm until caliper measurement confirms the pipe/spigot OD. Cut each connector by measured pipe-end OD, mating neck/spigot OD, finished free length, hose overlap, bend/offset, clamp land, and kink clearance in mm. Use straight EPDM coolant hose only where the measured path stays round; otherwise sample-match molded EPDM connectors.",
+          "exact_recreation_spec": "Replace the two short rubber connector hoses visible on the formed coolant pipe assembly. Local market request: 2 pieces of EPDM radiator rubber pipe, 500 mm each, 28-30 mm ID exact order basis. Trim each connector shorter from the old coupler/sample during dry-fit; record pipe-end OD, mating neck/spigot OD, finished free length, hose overlap, bend/offset, clamp land, and kink clearance in mm. Use straight EPDM coolant hose only where the measured path stays round; otherwise sample-match molded EPDM connectors.",
           "material_spec": "EPDM coolant/radiator hose, SAE J20R3/J20R4 or molded coolant equivalent; new smooth-band or constant-tension clamps",
-          "critical_measurements": "Two 500 mm EPDM radiator connector blanks on 28-30 mm working ID basis; cut from sample and trim during dry-fit.",
+          "critical_measurements": "Two 500 mm EPDM radiator connector blanks, 28-30 mm ID exact order basis; cut from sample and trim during dry-fit.",
           "fit_and_test": "Dry-fit with RP-COOL-005 pipe; pressure-test cooling system; no swelling, seepage, kink, or clamp-edge cutting",
           "source_ref": "docs_pipe_fabrication_spec_20260502|data_pipe_fabrication_specs|data_replacement_pipe_order_release_specs",
           "notes": "Released for connector hose stock shopping; final kink and clamp placement checks remain during RP-COOL-005 dry-fit.",
@@ -27710,9 +29627,9 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Recreate weak or corroded sections only after inspection; feed working basis 8 mm OD tube and return working basis 6 mm OD tube; order 5000 mm feed allowance plus 5000 mm return allowance or fabricate measured shorter sections; match original route, end style, section length, and clips",
+          "exact_recreation_spec": "Recreate weak or corroded sections only after inspection; feed order basis is 8 mm OD tube and return order basis is 6 mm OD tube; order 5000 mm feed allowance plus 5000 mm return allowance or fabricate measured shorter sections; match original route, end style, section length, and clips",
           "material_spec": "Automotive bundy steel or CuNi/Cunifer tube; no bare copper",
-          "critical_measurements": "Standard low-pressure hard-line stock basis accepted: 8 mm OD feed and 6 mm OD return, 5000 mm allowance each if replacement is needed.",
+          "critical_measurements": "Standard low-pressure hard-line stock order: 8 mm OD feed and 6 mm OD return, 5000 mm allowance each if replacement is needed.",
           "fit_and_test": "Rubber-lined P-clips every 300-400 mm; no chafe; leak-test after fuel prime",
           "source_ref": "docs_engine_hose_tube_replacement_specs|chassis_hard_lines_and_brackets|data_replacement_pipe_order_release_specs",
           "notes": "Released for stock only if inspection requires replacement; copy old line routes and leak-test after fuel prime.",
@@ -27957,12 +29874,12 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Front heater inlet hose: 400 mm cut length; front heater outlet hose: 280 mm cut length; expected 16 mm ID / 5/8 in EPDM heater hose unless measured nipple ODs require another ID; Toyota 99552-30500 / 99556-30500 and 99552-30300 / 99556-30300 are cross-references",
+          "exact_recreation_spec": "Front heater inlet hose: 400 mm cut length; front heater outlet hose: 280 mm cut length; 16 mm ID / 5/8 in EPDM heater hose exact order basis. Toyota 99552-30500 / 99556-30500 and 99552-30300 / 99556-30300 are cross-references.",
           "material_spec": "EPDM heater hose, SAE J20R3 or better",
-          "critical_measurements": "Standard 16 mm / 5/8 in EPDM heater hose basis accepted; cut 400 mm inlet and 280 mm outlet on vehicle.",
+          "critical_measurements": "Standard 16 mm / 5/8 in EPDM heater hose exact order basis; cut 400 mm inlet and 280 mm outlet from released stock during install.",
           "fit_and_test": "Dry-fit through firewall/heater path without tight bends, exhaust contact, or chafe",
           "source_ref": "docs_engine_hose_tube_replacement_specs|data_replacement_pipe_order_release_specs",
-          "notes": "Released for heater hose stock shopping; final trim and chafe check occur on vehicle.",
+          "notes": "Released for heater hose stock shopping; final trim and chafe check occur during install.",
           "evidence_images": []
         },
         {
@@ -27972,7 +29889,7 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Loose May 2 sample for front engine cooling route",
           "pipe_or_line": "Formed metal coolant/radiator pipe assembly",
           "replace_scope": "recreate_fabricate",
-          "quantity": "1 x 750 mm minimum tube blank; quote 1000 mm stock if shop will not sell 750 mm",
+          "quantity": "1 x 28-30 mm OD, 1.2-1.6 mm wall tube blank; 1000 mm shop stock preferred, 750 mm absolute minimum blank",
           "photo_evidence": [
             "20260502_004044_gp_Hx4Yo0Qg",
             "20260502_004106_gp_wlYlUahA",
@@ -27982,16 +29899,16 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004145_gp_e8soxsyA"
           ],
           "photo_status": "image_tape_template_closed",
-          "spec_status": "template_released_for_quote_only",
+          "spec_status": "stock_order_released_template_copy",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Recreate from physical sample using a 750 mm minimum tube blank; if the local fabricator sells by foot or meter, buy/charge up to 1000 mm stock and trim after bending. Final centerline length must be measured from the physical sample. Match tube OD, wall thickness, bend radii, bend clocking, offset, end beads, hose clamp lands, and hose overlap in mm; visible planning envelope is roughly 400 mm vertical height and 250-300 mm upper offset but photos are not production dimensions",
+          "exact_recreation_spec": "Recreate from physical sample using 28-30 mm OD coolant tube with 1.2-1.6 mm wall. Buy/quote 1000 mm shop stock if sold by meter; 750 mm is the absolute minimum blank before bending/trimming. Final centerline length must be measured from the physical sample. Match tube OD, wall thickness, bend radii, bend clocking, offset, 1.5-2.0 mm end beads, 25-30 mm straight hose clamp lands, and hose overlap in mm; visible planning envelope is roughly 400 mm vertical height and 250-300 mm upper offset but photos are not production dimensions.",
           "material_spec": "Mild steel/aluminized steel or 304 stainless coolant-compatible tube; target wall 1.2-1.6 mm after fabricator confirmation",
-          "critical_measurements": "May 2 tape-reference photos plus physical sample accepted for quote/template; 750 mm minimum tube blank or 1000 mm shop stock basis.",
+          "critical_measurements": "Exact released stock: 28-30 mm OD tube, 1.2-1.6 mm wall, 1000 mm shop stock preferred or 750 mm absolute minimum blank, 1.5-2.0 mm end beads, 25-30 mm straight clamp lands. Physical sample controls final bends and trim.",
           "fit_and_test": "Bench pressure-test before coating; dry-fit on vehicle; coat only after fit and pressure test",
           "source_ref": "docs_pipe_fabrication_spec_20260502|data_pipe_fabrication_specs|data_replacement_pipe_order_release_specs",
-          "notes": "Released for fabricator quote/template only; physical sample copy, dry-fit, and pressure-test still control final installation.",
+          "notes": "Released for fabricator stock quote/template copy; physical sample copy, dry-fit, and pressure-test still control final installation.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004044_gp_Hx4Yo0Qg.jpg",
@@ -28087,9 +30004,9 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Replace the two short rubber connector hoses visible on the formed coolant pipe assembly. Local market request: 2 pieces of EPDM radiator rubber pipe, 500 mm each, working ID 28-30 mm until caliper measurement confirms the pipe/spigot OD. Cut each connector by measured pipe-end OD, mating neck/spigot OD, finished free length, hose overlap, bend/offset, clamp land, and kink clearance in mm. Use straight EPDM coolant hose only where the measured path stays round; otherwise sample-match molded EPDM connectors.",
+          "exact_recreation_spec": "Replace the two short rubber connector hoses visible on the formed coolant pipe assembly. Local market request: 2 pieces of EPDM radiator rubber pipe, 500 mm each, 28-30 mm ID exact order basis. Trim each connector shorter from the old coupler/sample during dry-fit; record pipe-end OD, mating neck/spigot OD, finished free length, hose overlap, bend/offset, clamp land, and kink clearance in mm. Use straight EPDM coolant hose only where the measured path stays round; otherwise sample-match molded EPDM connectors.",
           "material_spec": "EPDM coolant/radiator hose, SAE J20R3/J20R4 or molded coolant equivalent; new smooth-band or constant-tension clamps",
-          "critical_measurements": "Two 500 mm EPDM radiator connector blanks on 28-30 mm working ID basis; cut from sample and trim during dry-fit.",
+          "critical_measurements": "Two 500 mm EPDM radiator connector blanks, 28-30 mm ID exact order basis; cut from sample and trim during dry-fit.",
           "fit_and_test": "Dry-fit with RP-COOL-005 pipe; pressure-test cooling system; no swelling, seepage, kink, or clamp-edge cutting",
           "source_ref": "docs_pipe_fabrication_spec_20260502|data_pipe_fabrication_specs|data_replacement_pipe_order_release_specs",
           "notes": "Released for connector hose stock shopping; final kink and clamp placement checks remain during RP-COOL-005 dry-fit.",
@@ -28223,9 +30140,9 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Recreate weak or corroded sections only after inspection; feed working basis 8 mm OD tube and return working basis 6 mm OD tube; order 5000 mm feed allowance plus 5000 mm return allowance or fabricate measured shorter sections; match original route, end style, section length, and clips",
+          "exact_recreation_spec": "Recreate weak or corroded sections only after inspection; feed order basis is 8 mm OD tube and return order basis is 6 mm OD tube; order 5000 mm feed allowance plus 5000 mm return allowance or fabricate measured shorter sections; match original route, end style, section length, and clips",
           "material_spec": "Automotive bundy steel or CuNi/Cunifer tube; no bare copper",
-          "critical_measurements": "Standard low-pressure hard-line stock basis accepted: 8 mm OD feed and 6 mm OD return, 5000 mm allowance each if replacement is needed.",
+          "critical_measurements": "Standard low-pressure hard-line stock order: 8 mm OD feed and 6 mm OD return, 5000 mm allowance each if replacement is needed.",
           "fit_and_test": "Rubber-lined P-clips every 300-400 mm; no chafe; leak-test after fuel prime",
           "source_ref": "docs_engine_hose_tube_replacement_specs|chassis_hard_lines_and_brackets|data_replacement_pipe_order_release_specs",
           "notes": "Released for stock only if inspection requires replacement; copy old line routes and leak-test after fuel prime.",
@@ -29194,7 +31111,7 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004139_gp_jt1dGw4A",
             "20260502_004145_gp_e8soxsyA"
           ],
-          "placement_notes": "May 2 sample/tape photos accepted; buy 500 mm EPDM connector blank on 28-30 mm working ID basis and cut by sample/dry-fit.",
+          "placement_notes": "May 2 sample/tape photos accepted; buy 500 mm EPDM connector blank on 28-30 mm ID exact order basis and cut by sample/dry-fit.",
           "release_use": "Releases RPO-COOL-006A connector hose order",
           "evidence_images": [
             {
@@ -29296,7 +31213,7 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004139_gp_jt1dGw4A",
             "20260502_004145_gp_e8soxsyA"
           ],
-          "placement_notes": "May 2 sample/tape photos accepted; buy 500 mm EPDM connector blank on 28-30 mm working ID basis and cut by sample/dry-fit.",
+          "placement_notes": "May 2 sample/tape photos accepted; buy 500 mm EPDM connector blank on 28-30 mm ID exact order basis and cut by sample/dry-fit.",
           "release_use": "Releases RPO-COOL-006B connector hose order",
           "evidence_images": [
             {
@@ -30289,7 +32206,24 @@ window.J40_DASHBOARD_DATA = {
           "source_basis": "RP-COOL-001",
           "user_action_required": "Order standard molded hose; compare to old/fitted route on receipt and dry-fit before coolant fill.",
           "do_not_order_if": "Received hose shape, radiator neck, or thermostat housing geometry does not match the HJ47 2H route.",
-          "notes": "Order with correct smooth-band or constant-tension clamps; dry-fit before filling coolant."
+          "notes": "Order with correct smooth-band or constant-tension clamps; dry-fit before filling coolant.",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg",
+            "caption": "Upper radiator hose \u00b7 radiator/coolant hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "radiator_hose",
+            "matched_tokens": [
+              "radiator",
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
         },
         {
           "order_line_id": "RPO-COOL-002",
@@ -30306,109 +32240,230 @@ window.J40_DASHBOARD_DATA = {
           "source_basis": "RP-COOL-002",
           "user_action_required": "Order standard molded hose; compare to old/fitted route on receipt and dry-fit before coolant fill.",
           "do_not_order_if": "Received hose shape, lower outlet, engine inlet, or front crossmember clearance proves non-standard.",
-          "notes": "Replace as a pair with the upper radiator hose and pressure-test after fill."
+          "notes": "Replace as a pair with the upper radiator hose and pressure-test after fill.",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg",
+            "caption": "Lower radiator hose \u00b7 radiator/coolant hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "radiator_hose",
+            "matched_tokens": [
+              "radiator",
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
         },
         {
           "order_line_id": "RPO-COOL-003",
           "route": "CUT_BY_LENGTH",
           "item": "Radiator overflow hose",
           "part_number_or_code": "Small EPDM coolant overflow hose; Toyota 90445-12078 is a 600 mm reference length",
-          "dimension_spec_mm": "600 mm OE reference length; buy 1000 mm local hose and cut on vehicle",
-          "qty_required": "1",
-          "qty_to_order": "1000 mm hose or 600 mm OE length",
+          "dimension_spec_mm": "1000 mm EPDM overflow hose buy length; finished route trims shorter; OE reference length 600 mm",
+          "qty_required": "1000 mm buy length",
+          "qty_to_order": "1000 mm hose",
           "spec_status": "spec_ready",
           "order_release_state": "standard_stock_released_cut_to_route",
-          "exact_order_spec": "Order small EPDM coolant overflow hose: Toyota reference length is 600 mm, but local purchase should be 1000 mm and cut to the radiator-to-bottle route.",
+          "exact_order_spec": "Order exactly 1000 mm of small EPDM coolant overflow hose and trim to the radiator-to-bottle route during installation. Toyota 90445-12078 remains a 600 mm OE reference, not the local buy limit.",
           "material_spec": "Small EPDM coolant/overflow hose",
           "source_basis": "RP-COOL-003",
-          "user_action_required": "Buy 1000 mm small EPDM overflow hose stock and cut to route during install.",
+          "user_action_required": "Buy 1000 mm small EPDM overflow hose stock and trim to route during install.",
           "do_not_order_if": "Overflow bottle, radiator neck, or routing is missing or changed from the planned route.",
-          "notes": "Order by meter locally if OE length is not available; route without kinks or sharp-edge contact."
+          "notes": "Extra length is planned trim allowance so the shop can cut cleanly and avoid kinks.",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/coolant_overflow.jpg",
+            "caption": "Radiator overflow hose \u00b7 coolant overflow reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "coolant_overflow",
+            "matched_tokens": [
+              "overflow"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
         },
         {
           "order_line_id": "RPO-COOL-004A",
           "route": "CUT_BY_LENGTH",
           "item": "Heater inlet hose",
           "part_number_or_code": "EPDM heater hose cut length 400 mm; Toyota 99552-30500 / 99556-30500 are cross-references",
-          "dimension_spec_mm": "400 mm cut length; standard 16 mm ID / 5/8 in heater hose basis",
+          "dimension_spec_mm": "1000 mm stock buy shared with outlet; finished inlet cut 400 mm; standard 16 mm ID / 5/8 in heater hose",
           "qty_required": "1",
-          "qty_to_order": "400 mm cut length or 1000 mm local hose",
+          "qty_to_order": "1000 mm local hose stock shared for inlet/outlet",
           "spec_status": "spec_ready",
           "order_release_state": "standard_stock_released_cut_to_route",
-          "exact_order_spec": "Order front heater inlet hose by spec: 400 mm cut length, EPDM SAE J20R3 or better, 16 mm ID / 5/8 in working basis. Toyota numbers are cross-references.",
+          "exact_order_spec": "Order 1000 mm of EPDM SAE J20R3 or better heater hose, 16 mm ID / 5/8 in. Cut the inlet to 400 mm during installation; the remaining stock covers outlet and trim allowance.",
           "material_spec": "EPDM heater hose, SAE J20R3 or better",
           "source_basis": "RP-COOL-004",
-          "user_action_required": "Buy 16 mm / 5/8 in heater hose stock and cut 400 mm inlet on vehicle.",
+          "user_action_required": "Buy 1000 mm of 16 mm / 5/8 in heater hose stock and cut a 400 mm inlet section.",
           "do_not_order_if": "Received hose does not fit the actual engine/heater nipples or rear-heater branch changes the planned route.",
-          "notes": "Cut only after route is confirmed; avoid exhaust heat, firewall chafe, and tight bends."
+          "notes": "Exact stock length is released; final trim is only for routing and chafe clearance.",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/heater_hose.jpg",
+            "caption": "Heater inlet hose \u00b7 heater hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "heater_hose",
+            "matched_tokens": [
+              "heater",
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
         },
         {
           "order_line_id": "RPO-COOL-004B",
           "route": "CUT_BY_LENGTH",
           "item": "Heater outlet hose",
           "part_number_or_code": "EPDM heater hose cut length 280 mm; Toyota 99552-30300 / 99556-30300 are cross-references",
-          "dimension_spec_mm": "280 mm cut length; standard 16 mm ID / 5/8 in heater hose basis",
+          "dimension_spec_mm": "1000 mm stock buy shared with inlet; finished outlet cut 280 mm; standard 16 mm ID / 5/8 in heater hose",
           "qty_required": "1",
-          "qty_to_order": "280 mm cut length or 1000 mm local hose",
+          "qty_to_order": "1000 mm local hose stock shared for inlet/outlet",
           "spec_status": "spec_ready",
           "order_release_state": "standard_stock_released_cut_to_route",
-          "exact_order_spec": "Order front heater outlet hose by spec: 280 mm cut length, EPDM SAE J20R3 or better, 16 mm ID / 5/8 in working basis. Toyota numbers are cross-references.",
+          "exact_order_spec": "Order 1000 mm of EPDM SAE J20R3 or better heater hose, 16 mm ID / 5/8 in. Cut the outlet to 280 mm during installation; the remaining stock is trim allowance.",
           "material_spec": "EPDM heater hose, SAE J20R3 or better",
           "source_basis": "RP-COOL-004",
-          "user_action_required": "Buy 16 mm / 5/8 in heater hose stock and cut 280 mm outlet on vehicle.",
+          "user_action_required": "Buy 1000 mm of 16 mm / 5/8 in heater hose stock and cut a 280 mm outlet section.",
           "do_not_order_if": "Received hose does not fit the actual engine/heater nipples or rear-heater branch changes the planned route.",
-          "notes": "Cut only after route is confirmed; hot-run leak check after installation."
+          "notes": "Exact stock length is released; final trim is only for routing and chafe clearance.",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/heater_hose.jpg",
+            "caption": "Heater outlet hose \u00b7 heater hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "heater_hose",
+            "matched_tokens": [
+              "heater",
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
         },
         {
           "order_line_id": "RPO-COOL-005",
           "route": "FABRICATE_TEMPLATE",
           "item": "Formed metal coolant/radiator pipe assembly",
           "part_number_or_code": "Physical sample and RP-COOL-005 fabrication spec",
-          "dimension_spec_mm": "Orderable tube blank length: 750 mm minimum before bending/trimming; visible planning envelope roughly 400 mm vertical height and 250-300 mm upper offset; wall target 1.2-1.6 mm; bead height 1.5-2.0 mm unless old sample differs",
-          "qty_required": "750 mm tube blank minimum",
-          "qty_to_order": "1 x 750 mm tube blank plus bending/forming",
+          "dimension_spec_mm": "28-30 mm OD tube; 1.2-1.6 mm wall; 1000 mm shop stock preferred or 750 mm absolute minimum blank; bead height 1.5-2.0 mm; straight clamp lands 25-30 mm each end",
+          "qty_required": "1 formed pipe",
+          "qty_to_order": "1000 mm tube stock quote or 750 mm minimum blank plus bending/forming",
           "spec_status": "spec_ready",
           "order_release_state": "template_released_for_quote_only",
-          "exact_order_spec": "Fabricate from a 750 mm minimum tube blank using the May 2 tape-reference photos plus physical sample as template. Match tube OD, wall thickness, bend radii, bend clocking, offsets, beaded ends, clamp lands, hose overlap, and mounting relationship by copying the sample.",
+          "exact_order_spec": "Fabricate one formed coolant pipe from 28-30 mm OD coolant-compatible tube with 1.2-1.6 mm wall. Use 1000 mm tube stock if the shop sells by meter; 750 mm is the absolute minimum blank before bending/trimming. Copy the physical sample, add 1.5-2.0 mm hose-retention beads, and leave 25-30 mm straight clamp lands at both ends.",
           "material_spec": "Mild steel/aluminized steel or 304 stainless coolant-compatible tube; target wall 1.2-1.6 mm after fabricator confirmation",
           "source_basis": "RP-COOL-005|docs/pipe-fabrication-spec-20260502.md",
-          "user_action_required": "Send for quote/template with the physical sample; fabricator trims and beads by sample, then dry-fit and pressure-test before coating.",
-          "do_not_order_if": "The original pipe is too distorted to template, end beads are unknown, or vehicle dry-fit cannot be performed before coating.",
-          "notes": "750 mm is the orderable blank allowance, not a substitute for the sample copy; bench pressure-test before coating and coat only after vehicle dry-fit passes."
+          "user_action_required": "Send the physical sample and May 2 tape photos; fabricator copies bends/clocking/offsets, trims excess stock, beads ends, dry-fits, and pressure-tests before coating.",
+          "do_not_order_if": "Shop cannot use 28-30 mm OD coolant tube, cannot bead ends, will not copy the physical sample, or cannot dry-fit before coating.",
+          "notes": "The tube stock is now exact for ordering; only the final bent centerline trim is copied from the sample.",
+          "image": {
+            "path": "../../photos/20260502_004106_gp_wlYlUahA.jpg",
+            "caption": "Formed metal coolant/radiator pipe assembly \u00b7 formed coolant pipe sample photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004106_gp_wlYlUahA",
+            "matched_tokens": [
+              "formed",
+              "coolant",
+              "pipe"
+            ],
+            "match_basis": "local_reference_image",
+            "match_score": 700
+          }
         },
         {
           "order_line_id": "RPO-COOL-006A",
           "route": "CUT_OR_MOLDED_BY_TEMPLATE",
           "item": "Formed coolant pipe connector hose - end A",
           "part_number_or_code": "500 mm EPDM radiator hose blank for connector A",
-          "dimension_spec_mm": "Buy 500 mm EPDM coolant/radiator hose blank; working ID 28-30 mm; cut to sample length and trim during dry-fit",
+          "dimension_spec_mm": "500 mm EPDM radiator/coolant connector blank; 28-30 mm ID exact order basis; trim shorter from sample during dry-fit",
           "qty_required": "1",
           "qty_to_order": "500 mm connector hose blank",
           "spec_status": "spec_ready",
           "order_release_state": "standard_stock_released_sample_cut",
-          "exact_order_spec": "Local market request: one 500 mm piece of EPDM radiator rubber pipe for connector A, working 28-30 mm ID. Cut from the old connector/sample route and dry-fit with the formed pipe. Use molded EPDM connector only if straight hose kinks.",
+          "exact_order_spec": "Order one 500 mm EPDM radiator/coolant connector blank for formed pipe end A, 28-30 mm ID exact order basis. Trim shorter from the old coupler/sample during dry-fit; use a molded EPDM connector only if straight hose kinks.",
           "material_spec": "EPDM coolant hose, SAE J20R3/J20R4 or molded coolant equivalent; new smooth-band or constant-tension clamps",
           "source_basis": "RP-COOL-006|RP-COOL-005|docs/pipe-fabrication-spec-20260502.md",
-          "user_action_required": "Buy 500 mm connector blank and cut by sample/vehicle dry-fit.",
+          "user_action_required": "Buy one 500 mm connector blank and trim by sample/vehicle dry-fit.",
           "do_not_order_if": "Straight hose kinks or connector angle cannot be confirmed at dry-fit.",
-          "notes": "Visible in May 2 formed-pipe photos as one of the short rubber couplers; do not leave it buried under the metal pipe fabrication line."
+          "notes": "Extra length is intentional trim allowance; do not reuse old coupler by default.",
+          "image": {
+            "path": "../../photos/20260502_004106_gp_wlYlUahA.jpg",
+            "caption": "Formed coolant pipe connector hose - end A \u00b7 formed coolant pipe sample photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004106_gp_wlYlUahA",
+            "matched_tokens": [
+              "formed",
+              "coolant",
+              "pipe"
+            ],
+            "match_basis": "local_reference_image",
+            "match_score": 700
+          }
         },
         {
           "order_line_id": "RPO-COOL-006B",
           "route": "CUT_OR_MOLDED_BY_TEMPLATE",
           "item": "Formed coolant pipe connector hose - end B",
           "part_number_or_code": "500 mm EPDM radiator hose blank for connector B",
-          "dimension_spec_mm": "Buy 500 mm EPDM coolant/radiator hose blank; working ID 28-30 mm; cut to sample length and trim during dry-fit",
+          "dimension_spec_mm": "500 mm EPDM radiator/coolant connector blank; 28-30 mm ID exact order basis; trim shorter from sample during dry-fit",
           "qty_required": "1",
           "qty_to_order": "500 mm connector hose blank",
           "spec_status": "spec_ready",
           "order_release_state": "standard_stock_released_sample_cut",
-          "exact_order_spec": "Local market request: one 500 mm piece of EPDM radiator rubber pipe for connector B, working 28-30 mm ID. Cut from the old connector/sample route and dry-fit with the formed pipe. Use molded EPDM connector only if straight hose kinks.",
+          "exact_order_spec": "Order one 500 mm EPDM radiator/coolant connector blank for formed pipe end B, 28-30 mm ID exact order basis. Trim shorter from the old coupler/sample during dry-fit; use a molded EPDM connector only if straight hose kinks.",
           "material_spec": "EPDM coolant hose, SAE J20R3/J20R4 or molded coolant equivalent; new smooth-band or constant-tension clamps",
           "source_basis": "RP-COOL-006|RP-COOL-005|docs/pipe-fabrication-spec-20260502.md",
-          "user_action_required": "Buy 500 mm connector blank and cut by sample/vehicle dry-fit.",
+          "user_action_required": "Buy one 500 mm connector blank and trim by sample/vehicle dry-fit.",
           "do_not_order_if": "Straight hose kinks or connector angle cannot be confirmed at dry-fit.",
-          "notes": "Visible in May 2 formed-pipe photos as the second short rubber coupler; replace with the pipe because old hose set/seal condition controls coolant reliability."
+          "notes": "Extra length is intentional trim allowance; replace with the formed pipe because old hose condition controls coolant reliability.",
+          "image": {
+            "path": "../../photos/20260502_004106_gp_wlYlUahA.jpg",
+            "caption": "Formed coolant pipe connector hose - end B \u00b7 formed coolant pipe sample photo",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004106_gp_wlYlUahA",
+            "matched_tokens": [
+              "formed",
+              "coolant",
+              "pipe"
+            ],
+            "match_basis": "local_reference_image",
+            "match_score": 700
+          }
         },
         {
           "order_line_id": "RPO-FUEL-001A",
@@ -30425,7 +32480,24 @@ window.J40_DASHBOARD_DATA = {
           "source_basis": "RP-FUEL-001",
           "user_action_required": "Buy 8 mm diesel-rated feed hose stock and rolled-edge fuel-injection clamps.",
           "do_not_order_if": "Any section is high-pressure injector pipe, or received hose is not diesel-rated.",
-          "notes": "Use rolled-edge fuel-injection clamps; do not use generic worm clamps on injection-feed rubber hose."
+          "notes": "Use rolled-edge fuel-injection clamps; do not use generic worm clamps on injection-feed rubber hose.",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+            "caption": "Diesel feed hose \u00b7 diesel fuel hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "fuel_hose",
+            "matched_tokens": [
+              "fuel",
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
         },
         {
           "order_line_id": "RPO-FUEL-001B",
@@ -30442,7 +32514,24 @@ window.J40_DASHBOARD_DATA = {
           "source_basis": "RP-FUEL-001",
           "user_action_required": "Buy 6 mm diesel-rated return/bleed hose stock and rolled-edge fuel-injection clamps.",
           "do_not_order_if": "Received hose is not diesel-rated or the route uses a molded section.",
-          "notes": "Use rolled-edge fuel-injection clamps; avoid air-ingress points and sharp bends."
+          "notes": "Use rolled-edge fuel-injection clamps; avoid air-ingress points and sharp bends.",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+            "caption": "Diesel return/bleed hose \u00b7 diesel fuel hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "fuel_hose",
+            "matched_tokens": [
+              "fuel",
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
         },
         {
           "order_line_id": "RPO-FUEL-001C",
@@ -30459,7 +32548,24 @@ window.J40_DASHBOARD_DATA = {
           "source_basis": "RP-FUEL-001",
           "user_action_required": "Buy 3.2-3.5 mm braided diesel leak-off hose stock and verify diesel rating on receipt.",
           "do_not_order_if": "Injector return arrangement differs from the planned leak-off hose type or hose is not diesel-rated.",
-          "notes": "Do not substitute vacuum or coolant hose for diesel leak-off service."
+          "notes": "Do not substitute vacuum or coolant hose for diesel leak-off service.",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg",
+            "caption": "Injector leak-off hose \u00b7 radiator/coolant hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "radiator_hose",
+            "matched_tokens": [
+              "radiator",
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
         },
         {
           "order_line_id": "RPO-FUEL-002A",
@@ -30476,7 +32582,24 @@ window.J40_DASHBOARD_DATA = {
           "source_basis": "RP-FUEL-002",
           "user_action_required": "If replacing, buy 8 mm OD feed tube stock and copy old line sections during installation.",
           "do_not_order_if": "Existing line is sound after cleaning or fitting/thread style cannot be identified.",
-          "notes": "Use rubber-lined P-clips every 300-400 mm and leak-test after fuel prime."
+          "notes": "Use rubber-lined P-clips every 300-400 mm and leak-test after fuel prime.",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+            "caption": "Low-pressure fuel hard line feed \u00b7 diesel fuel hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "fuel_hose",
+            "matched_tokens": [
+              "fuel",
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
         },
         {
           "order_line_id": "RPO-FUEL-002B",
@@ -30493,41 +32616,91 @@ window.J40_DASHBOARD_DATA = {
           "source_basis": "RP-FUEL-002",
           "user_action_required": "If replacing, buy 6 mm OD return tube stock and copy old line sections during installation.",
           "do_not_order_if": "Existing line is sound after cleaning or fitting/thread style cannot be identified.",
-          "notes": "Use rubber-lined P-clips every 300-400 mm and leak-test after fuel prime."
+          "notes": "Use rubber-lined P-clips every 300-400 mm and leak-test after fuel prime.",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+            "caption": "Low-pressure fuel hard line return \u00b7 diesel fuel hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "fuel_hose",
+            "matched_tokens": [
+              "fuel",
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
         },
         {
           "order_line_id": "RPO-VAC-001A",
           "route": "BUY_BY_METER",
           "item": "Brake booster/vacuum hose",
           "part_number_or_code": "10-12 mm ID reinforced vacuum hose",
-          "dimension_spec_mm": "10-12 mm ID x 2000 mm buy length; cut to pump/booster/check-valve route on vehicle",
+          "dimension_spec_mm": "10-12 mm ID reinforced vacuum hose x 2000 mm exact buy length; trim to pump/booster/check-valve route",
           "qty_required": "2000 mm buy length",
           "qty_to_order": "2000 mm",
           "spec_status": "spec_ready",
           "order_release_state": "standard_stock_released_cut_to_route",
-          "exact_order_spec": "Order reinforced brake-booster/vacuum hose by spec: 10-12 mm ID x 2000 mm. Cut on vehicle after matching pump, booster, and check-valve barbs.",
+          "exact_order_spec": "Order exactly 2000 mm of reinforced oil-resistant brake-booster/vacuum hose, 10-12 mm ID. Trim to the pump, booster, and check-valve route during installation.",
           "material_spec": "Reinforced oil-resistant vacuum hose",
           "source_basis": "RP-VAC-001",
-          "user_action_required": "Buy 2000 mm reinforced vacuum hose stock; confirm check-valve direction and no collapse at installation.",
-          "do_not_order_if": "Vacuum route uses a molded hose that cannot be replaced by straight reinforced hose or measured barbs fall outside 10-12 mm working basis.",
-          "notes": "Standard stock order is released; final brake-assist vacuum and check-valve operation remain install checks."
+          "user_action_required": "Buy 2000 mm reinforced vacuum hose stock; trim to route and confirm check-valve direction/no collapse during installation.",
+          "do_not_order_if": "Vacuum route uses a molded hose that cannot be replaced by straight reinforced hose or measured barbs fall outside the 10-12 mm ID order range.",
+          "notes": "Standard stock order is released; final brake-assist vacuum and check-valve operation remain install checks.",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+            "caption": "Brake booster/vacuum hose \u00b7 vacuum/breather hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "fuel_hose",
+            "matched_tokens": [
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
         },
         {
           "order_line_id": "RPO-VAC-001B",
           "route": "BUY_BY_METER",
           "item": "Breather/oil mist hose",
           "part_number_or_code": "16-19 mm ID oil-resistant hose",
-          "dimension_spec_mm": "16-19 mm ID x 1000 mm buy length; cut to breather/oil-mist route on vehicle",
+          "dimension_spec_mm": "16-19 mm ID oil-resistant breather hose x 1000 mm exact buy length; trim to breather route",
           "qty_required": "1000 mm buy length",
           "qty_to_order": "1000 mm",
           "spec_status": "spec_ready",
           "order_release_state": "standard_stock_released_cut_to_route",
-          "exact_order_spec": "Order oil-resistant breather/oil-mist hose by spec: 16-19 mm ID x 1000 mm. Cut on vehicle after matching breather spigots.",
+          "exact_order_spec": "Order exactly 1000 mm of 16-19 mm ID oil-resistant breather/oil-mist hose. Trim to the breather route during installation after confirming spigot fit.",
           "material_spec": "NBR or fuel/oil-rated hose for breather/oil mist exposure",
           "source_basis": "RP-VAC-001",
-          "user_action_required": "Buy 1000 mm oil-resistant breather hose stock; confirm spigot fit, heat exposure, and no oil swelling at installation.",
-          "do_not_order_if": "Breather route requires a molded shape or measured spigots fall outside 16-19 mm working basis.",
-          "notes": "Do not use coolant-only EPDM where oil mist exposure can swell the material."
+          "user_action_required": "Buy 1000 mm oil-resistant breather hose stock; trim to route and confirm heat/chafe clearance during installation.",
+          "do_not_order_if": "Breather route requires a molded shape or measured spigots fall outside the 16-19 mm ID order range.",
+          "notes": "Do not use coolant-only EPDM where oil mist exposure can swell the material.",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg",
+            "caption": "Breather/oil mist hose \u00b7 radiator/coolant hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "radiator_hose",
+            "matched_tokens": [
+              "radiator",
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
         },
         {
           "order_line_id": "RPO-VAC-001C",
@@ -30544,7 +32717,23 @@ window.J40_DASHBOARD_DATA = {
           "source_basis": "RP-VAC-001",
           "user_action_required": "Confirm whether this hose is fitted on the engine; photograph both ends and measure overall length, end IDs, and fitting ODs in mm if sourcing local.",
           "do_not_order_if": "The hose is not fitted on this engine or routing differs from the OEM item.",
-          "notes": "Do not order until fitted presence is confirmed."
+          "notes": "Do not order until fitted presence is confirmed.",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+            "caption": "2H vacuum pump oil outlet hose \u00b7 vacuum/breather hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "fuel_hose",
+            "matched_tokens": [
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
         },
         {
           "order_line_id": "RPO-BRAKE-001A",
@@ -30561,24 +32750,58 @@ window.J40_DASHBOARD_DATA = {
           "source_basis": "RP-BRAKE-001|docs/brake-workstream.md",
           "user_action_required": "Take old hose samples or current fittings to the hydraulic shop; copy each assembly free length and end style. Do not buy roll hose.",
           "do_not_order_if": "Seller cannot match old assembly free length/end fittings or cannot confirm DOT/SAE J1401 or OEM-equivalent brake rating.",
-          "notes": "Quote-ready for local hydraulic shop; final release still requires fitting match, bleed, pressure test, and no stretch/contact check."
+          "notes": "Quote-ready for local hydraulic shop; final release still requires fitting match, bleed, pressure test, and no stretch/contact check.",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+            "caption": "Brake flex hose set \u00b7 brake hose/line reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "brake_hose_line",
+            "matched_tokens": [
+              "brake",
+              "line"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
         },
         {
           "order_line_id": "RPO-BRAKE-001B",
           "route": "FABRICATE_SAFETY_LINE",
           "item": "Brake hard line tube and fittings",
-          "part_number_or_code": "3/16 in / 4.75 mm brake tube working basis",
-          "dimension_spec_mm": "Orderable pipe length: 7600 mm / 25 ft brake tube coil allowance; final individual route lengths measured from old-line templates before fabrication",
+          "part_number_or_code": "3/16 in / 4.75 mm brake tube",
+          "dimension_spec_mm": "4.75 mm / 3/16 in OD brake tube x 7600 mm / 25 ft exact coil allowance; individual lines cut from old templates",
           "qty_required": "7600 mm coil allowance",
           "qty_to_order": "7600 mm / 25 ft coil plus fittings after identification",
           "spec_status": "spec_ready",
           "order_release_state": "stock_order_ready_fabrication_safety_hold",
-          "exact_order_spec": "Brake hard-line stock order is defined: 4.75 mm / 3/16 in OD x 7600 mm / 25 ft brake tube coil allowance. Fabrication still copies old-line routes, flare/thread/seat, clip positions, and bends.",
+          "exact_order_spec": "Order one exact 7600 mm / 25 ft coil of 4.75 mm / 3/16 in OD brake tube plus brake-rated fittings after flare/thread identification. Individual hard lines are cut from the old-line templates.",
           "material_spec": "Bundy steel or CuNi/Cunifer brake tube with brake-rated fittings; no bare copper",
           "source_basis": "RP-BRAKE-001|docs/brake-workstream.md",
-          "user_action_required": "Buy/quote the 7600 mm / 25 ft brake tube coil and brake-rated fittings only from a shop that can identify the fitted flare/thread standard.",
+          "user_action_required": "Buy/quote the 7600 mm / 25 ft brake tube coil from a shop that can identify the fitted flare/thread standard.",
           "do_not_order_if": "Thread/flare standard is unknown, old line is unavailable as a template, or brake-rated fittings are not available.",
-          "notes": "Stock length is order-ready; this remains a safety circuit and fabrication/pressure-test stay held."
+          "notes": "The stock coil length is exact and order-ready; fabrication and pressure-test remain safety holds.",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+            "caption": "Brake hard line tube and fittings \u00b7 brake hose/line reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "brake_hose_line",
+            "matched_tokens": [
+              "brake",
+              "line"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
         },
         {
           "order_line_id": "RPO-CLUTCH-001A",
@@ -30595,7 +32818,24 @@ window.J40_DASHBOARD_DATA = {
           "source_basis": "RP-CLUTCH-001",
           "user_action_required": "Inspect first; if failed, take the old clutch flex hose or current fittings to the hydraulic shop and copy the assembly.",
           "do_not_order_if": "Existing hose is sound and not part of the active replacement scope, or port/end style is unknown.",
-          "notes": "No generic hose; hydraulic-rated crimped assembly only."
+          "notes": "No generic hose; hydraulic-rated crimped assembly only.",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+            "caption": "Clutch flex hose \u00b7 brake hose/line reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "brake_hose_line",
+            "matched_tokens": [
+              "brake",
+              "line"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
         },
         {
           "order_line_id": "RPO-CLUTCH-001B",
@@ -30612,24 +32852,58 @@ window.J40_DASHBOARD_DATA = {
           "source_basis": "RP-CLUTCH-001",
           "user_action_required": "Inspect first; if failed, buy/quote the 1500 mm brake/clutch-rated hard-line blank and identify flare/thread before fabrication.",
           "do_not_order_if": "Existing line is sound after inspection or fitting/flare standard is unknown.",
-          "notes": "Conditional stock length is defined; final line length is cut from master-to-slave route."
+          "notes": "Conditional stock length is defined; final line length is cut from master-to-slave route.",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+            "caption": "Clutch hard line \u00b7 brake hose/line reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "brake_hose_line",
+            "matched_tokens": [
+              "brake",
+              "line"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
         },
         {
           "order_line_id": "RPO-CLIP-001",
           "route": "SUPPORT_HARD_LINES",
           "item": "Rubber-lined P-clips and line protection",
           "part_number_or_code": "P-clips matched to measured line ODs",
-          "dimension_spec_mm": "Clip IDs matched to 4.75 mm / 6 mm / 8 mm line ODs; hard-line support spacing 300-400 mm; pass-through grommets/sleeves sized to measured OD",
+          "dimension_spec_mm": "20 mixed rubber-lined P-clips for 4.75 mm, 6 mm, and 8 mm line OD; support spacing 300-400 mm",
           "qty_required": "pack",
           "qty_to_order": "20 clip mixed pack plus fasteners",
           "spec_status": "spec_ready",
           "order_release_state": "spec_ready_order_ready",
-          "exact_order_spec": "Order rubber-lined P-clips and edge/pass-through protection by measured line OD for brake, fuel, and clutch hard lines; do not order only by vehicle part number.",
+          "exact_order_spec": "Order 20 mixed rubber-lined P-clips plus fasteners for 4.75 mm, 6 mm, and 8 mm hard-line OD, with edge/pass-through protection. Use 300-400 mm support spacing.",
           "material_spec": "Rubber-lined plated or stainless P-clips, corrosion-protected fasteners, grommet or sleeve protection at pass-throughs",
           "source_basis": "RP-FUEL-002|RP-BRAKE-001|RP-CLUTCH-001",
-          "user_action_required": "Count original support points and confirm clip sizes against actual line ODs in mm during route inspection.",
+          "user_action_required": "Buy mixed P-clips for the listed line ODs and confirm hole/fastener fit during route inspection.",
           "do_not_order_if": "Existing line supports are sound and reusable, or clip sizes cannot be matched to measured line ODs.",
-          "notes": "Use support spacing around 300-400 mm on hard lines; do not substitute cable ties for permanent hydraulic/fuel line support."
+          "notes": "Use support spacing around 300-400 mm on hard lines; do not substitute cable ties for permanent hydraulic/fuel line support.",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+            "caption": "Rubber-lined P-clips and line protection \u00b7 diesel fuel hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "fuel_hose",
+            "matched_tokens": [
+              "fuel",
+              "hose"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
         }
       ],
       "replacement_pipe_release_actions": [
@@ -30667,7 +32941,7 @@ window.J40_DASHBOARD_DATA = {
           "action_id": "RPA-011",
           "priority": "P0",
           "owner": "workshop",
-          "action": "For the formed coolant pipe connector hoses, use the May 2 sample/tape photos to release two 500 mm EPDM connector blanks on a 28-30 mm working ID basis; cut from the sample and dry-fit with the pipe.",
+          "action": "For the formed coolant pipe connector hoses, use the May 2 sample/tape photos to release two 500 mm EPDM connector blanks on a 28-30 mm ID exact order basis; cut from the sample and dry-fit with the pipe.",
           "status": "closed_standard_sample_cut_basis",
           "blocks_order_lines": "RPO-COOL-006A|RPO-COOL-006B",
           "record_result_in": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
@@ -30839,12 +33113,12 @@ window.J40_DASHBOARD_DATA = {
           "barb_or_fitting_a": "connector_a_copied_from_sample",
           "barb_or_fitting_b": "connector_b_copied_from_sample",
           "route_length_mm": "2_x_500_mm_epdm_connector_blanks_or_1000_mm_total_cut_to_sample",
-          "tube_or_hose_od_id": "28_30_mm_id_epdm_coolant_hose_working_basis",
+          "tube_or_hose_od_id": "28_30_mm_id_epdm_coolant_hose_exact_order_basis",
           "thread_or_flare": "not_applicable",
           "bend_template_status": "physical_sample_and_vehicle_dryfit_required",
           "clip_support_status": "4_smooth_band_or_constant_tension_clamps_by_hose_od",
           "release_status": "standard_stock_released_sample_cut",
-          "action_required": "Buy two 500 mm EPDM radiator connector blanks on 28-30 mm working ID basis and cut from the sample/vehicle route",
+          "action_required": "Buy two 500 mm EPDM radiator connector blanks on 28-30 mm ID exact order basis and cut from the sample/vehicle route",
           "notes": "Connector hoses are separate replacement lines; final dry-fit checks kink clearance and clamp placement with RP-COOL-005."
         },
         {
@@ -30861,7 +33135,7 @@ window.J40_DASHBOARD_DATA = {
           "bend_template_status": "not_applicable",
           "clip_support_status": "rolled_edge_fuel_injection_clamps_by_hose_od",
           "release_status": "standard_stock_released_cut_to_route",
-          "action_required": "Buy diesel-rated 8 mm feed 6 mm return and 3.2-3.5 mm leak-off hose stock and cut on vehicle",
+          "action_required": "Buy diesel-rated 8 mm feed, 6 mm return, and 3.2-3.5 mm leak-off hose stock; cut to the fitted route during install",
           "notes": "Diesel-rated hose only; verify printed rating on receipt. No high-pressure injector pipe fabrication."
         },
         {
@@ -32791,18 +35065,18 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_master.jpg",
-            "caption": "Brake vacuum booster servo - dual diaphragm 44610-60050 market scout \u00b7 brake master cylinder reference image",
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_booster.jpg",
+            "caption": "Brake vacuum booster servo - dual diaphragm 44610-60050 market scout \u00b7 44610-60050 dual-diaphragm brake booster reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "semantic_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "brake_master",
+            "media_id": "brake_booster",
             "matched_tokens": [
               "brake",
-              "master"
+              "booster"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -34195,7 +36469,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/eps_column.jpg",
-            "caption": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit \u00b7 EPS column reference image",
+            "caption": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit \u00b7 Vitz/Yaris XP90 EPS column set reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -34730,7 +37004,61 @@ window.J40_DASHBOARD_DATA = {
       "body_mount_order_release_specs": [],
       "body_mount_release_actions": [],
       "body_mount_station_closure": [],
-      "fabrication_packages": [],
+      "fabrication_packages": [
+        {
+          "requirement_id": "FAB-SUS-001",
+          "system": "suspension_upgrade",
+          "package_id": "suspension_wood_cribbing_rev_a",
+          "title": "Suspension wood cribbing Rev A",
+          "current_status": "local_market_reference",
+          "release_position": "Backup drawing pack for the local timber-market cribbing buy: 8 rectangular blocks plus 4 wedge chocks.",
+          "notes": "Shop ask stays in docs/local-market-procurement-workstream.md; this package is only the drawing backup. Supplemental cribbing/chocks only; not a substitute for rated stands.",
+          "package_dir": "data/manual/fabrication/suspension_wood_cribbing_rev_a",
+          "primary_links": [
+            {
+              "url": "../../data/manual/fabrication/suspension_wood_cribbing_rev_a/README.md",
+              "label": "README"
+            },
+            {
+              "url": "../../data/manual/fabrication/suspension_wood_cribbing_rev_a/j40_suspension_wood_cribbing_rev_a_dimension_sheet.pdf",
+              "label": "PDF"
+            },
+            {
+              "url": "../../data/manual/fabrication/suspension_wood_cribbing_rev_a/fabricator_cut_list.csv",
+              "label": "Cut list"
+            },
+            {
+              "url": "../../data/manual/fabrication/suspension_wood_cribbing_rev_a/inspection_checklist.csv",
+              "label": "Inspection checklist"
+            },
+            {
+              "url": "../../docs/suspension-wood-cribbing-merchant-spec.md",
+              "label": "Source spec"
+            }
+          ],
+          "dxf_links": [
+            {
+              "url": "../../data/manual/fabrication/suspension_wood_cribbing_rev_a/swc_rectangular_cribbing_block_rev_a.dxf",
+              "label": "swc_rectangular_cribbing_block_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/suspension_wood_cribbing_rev_a/swc_wedge_chock_rev_a.dxf",
+              "label": "swc_wedge_chock_rev_a.dxf"
+            }
+          ],
+          "svg_links": [
+            {
+              "url": "../../data/manual/fabrication/suspension_wood_cribbing_rev_a/swc_rectangular_cribbing_block_rev_a.svg",
+              "label": "swc_rectangular_cribbing_block_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/suspension_wood_cribbing_rev_a/swc_wedge_chock_rev_a.svg",
+              "label": "swc_wedge_chock_rev_a.svg"
+            }
+          ],
+          "file_count": 9
+        }
+      ],
       "market_specs": [],
       "linked_packages": [],
       "component_jobs": [
@@ -34909,8 +37237,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_suspension_wooden_cribbing_blocks",
-          "evidence_ref": "user_update_2026-05-02_suspension_wooden_blocks|data/manual/suspension_wood_cribbing_order_specs.csv|docs/suspension-wood-cribbing-merchant-spec.md",
-          "notes": "Merchant-ready cut list: 12 total seasoned solid hardwood pieces: 8 rectangular cribbing blocks 12 x 6 x 3 in (approx 300 x 150 x 75 mm) plus 4 wedge chocks cut from 8 x 4 x 3 in blanks (approx 200 x 100 x 75 mm), tapering from 75 mm to 20-25 mm. Accept sheesham/shisham, kikar/acacia, oak, ash, or equivalent dense dry hardwood. Require flat parallel faces, square ends, grain along length, no rocking, and raw unfinished wood. Reject wet/green wood, softwood, plywood, MDF, chipboard, laminated boards, cracked/split/oily/painted offcuts, rounded branches, or large knots on bearing faces. These supplement rated jack stands and axle support during leaf spring/shock work; not a substitute for rated stands.",
+          "evidence_ref": "user_update_2026-05-02_suspension_wooden_blocks|data/manual/suspension_wood_cribbing_order_specs.csv|docs/suspension-wood-cribbing-merchant-spec.md|data/manual/fabrication/suspension_wood_cribbing_rev_a/README.md|data/manual/fabrication/suspension_wood_cribbing_rev_a/j40_suspension_wood_cribbing_rev_a_dimension_sheet.pdf",
+          "notes": "Timber merchant ask: 8 dry hardwood blocks 300 x 150 x 75 mm plus 4 dry hardwood wedges 200 x 100 mm with 75 mm rear and 25 mm nose. Reject wet/soft/board material, cracks, rocking faces, and feather-edge wedges. Supplemental only; use with rated stands.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -35051,8 +37379,8 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Ironman Foamcell suspension kit - main shipment (front dampers separate) (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
-                "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks (purchase_ready; delivery not_ordered; amount missing)",
-                "Ironman Foamcell front damper pair - separate shipment (24635FE x2) (ordered_pending_delivery; delivery pending_delivery; amount missing)"
+                "Ironman Foamcell front damper pair - separate shipment (24635FE x2) (ordered_pending_delivery; delivery pending_delivery; amount missing)",
+                "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -35283,8 +37611,8 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks (purchase_ready; delivery not_ordered; amount missing)",
                 "Ironman Foamcell suspension kit - main shipment (front dampers separate) (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
+                "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks (purchase_ready; delivery not_ordered; amount missing)",
                 "Ironman Foamcell front damper pair - separate shipment (24635FE x2) (ordered_pending_delivery; delivery pending_delivery; amount missing)"
               ]
             },
@@ -35397,8 +37725,8 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks (purchase_ready; delivery not_ordered; amount missing)",
                 "Ironman Foamcell suspension kit - main shipment (front dampers separate) (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
+                "Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks (purchase_ready; delivery not_ordered; amount missing)",
                 "Ironman Foamcell front damper pair - separate shipment (24635FE x2) (ordered_pending_delivery; delivery pending_delivery; amount missing)"
               ]
             }
@@ -38101,20 +40429,20 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/car_cover.jpg",
-          "caption": "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on \u00b7 car cover reference image",
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png",
+          "caption": "User-supplied compact old-OEM fuse box - cabin fuse add-on reference",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "car_cover",
+          "media_id": "",
           "matched_tokens": [
-            "cover"
+            "part_cabin_compact_fuse_boxes"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {
@@ -39372,18 +41700,18 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_master.jpg",
-          "caption": "Brake vacuum booster servo - dual diaphragm 44610-60050 market scout \u00b7 brake master cylinder reference image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_booster.jpg",
+          "caption": "Brake vacuum booster servo - dual diaphragm 44610-60050 market scout \u00b7 44610-60050 dual-diaphragm brake booster reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "brake_master",
+          "media_id": "brake_booster",
           "matched_tokens": [
             "brake",
-            "master"
+            "booster"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -40208,20 +42536,20 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/car_cover.jpg",
-          "caption": "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on \u00b7 car cover reference image",
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png",
+          "caption": "User-supplied compact old-OEM fuse box - cabin fuse add-on reference",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "car_cover",
+          "media_id": "",
           "matched_tokens": [
-            "cover"
+            "part_cabin_compact_fuse_boxes"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {
@@ -40246,7 +42574,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/eps_column.jpg",
-          "caption": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit \u00b7 EPS column reference image",
+          "caption": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit \u00b7 Vitz/Yaris XP90 EPS column set reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -40709,7 +43037,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_diesel_correction",
-        "notes": "Buy exact Toyota-labelled glow plugs: primary target Toyota 19850-68030 x6 for HJ47-style 2H 12V/8.5V. If the old plug/system proves later 24V/superglow, use Toyota 19850-68060 x6 instead. Confirm old plug thread, reach, voltage, seat, and terminal before payment; reject PT-107/1C/2C listings.",
+        "notes": "Buy exact new Toyota-labelled glow plugs through a verified new-parts counter/order lane: primary target Toyota 19850-68030 x6 for HJ47-style 2H 12V/8.5V. If the old plug/system proves later 24V/superglow, use Toyota 19850-68060 x6 instead. Confirm old plug thread, reach, voltage, seat, and terminal before payment; reject used/refurbished/PT-107/1C/2C listings.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -40747,7 +43075,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Local-market order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 750 mm minimum tube blank or 1000 mm shop stock quote, and two 500 mm EPDM connector blanks at 28-30 mm ID working basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
+        "notes": "Local-market order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -40811,7 +43139,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_mech_heater_hose_set",
         "workstream": "mechanical_baseline",
-        "item": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID",
+        "item": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID",
         "status": "purchase_ready",
         "procurement_stage": "purchase_ready_standard_stock",
         "payment_status": "not_paid",
@@ -40822,7 +43150,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Local-market order ready via RPO-COOL-004A/B: buy 1000 mm of 16 mm / 5/8 in EPDM SAE J20R3 or better heater hose stock, then cut 400 mm inlet and 280 mm outlet on vehicle. Final trim, clamp, and chafe check remain at install.",
+        "notes": "Local-market order ready via RPO-COOL-004A/B: buy 1000 mm of 16 mm / 5/8 in EPDM SAE J20R3 or better heater hose stock, then cut 400 mm inlet and 280 mm outlet from released stock during install. Final trim, clamp, and chafe check remain at install.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -40830,7 +43158,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-          "caption": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID \u00b7 air hose reference image",
+          "caption": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID \u00b7 air hose reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -41009,8 +43337,8 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "local timber / wood merchant",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-02_suspension_wooden_blocks|data/manual/suspension_wood_cribbing_order_specs.csv|docs/suspension-wood-cribbing-merchant-spec.md",
-        "notes": "Merchant-ready cut list: 12 total seasoned solid hardwood pieces: 8 rectangular cribbing blocks 12 x 6 x 3 in (approx 300 x 150 x 75 mm) plus 4 wedge chocks cut from 8 x 4 x 3 in blanks (approx 200 x 100 x 75 mm), tapering from 75 mm to 20-25 mm. Accept sheesham/shisham, kikar/acacia, oak, ash, or equivalent dense dry hardwood. Require flat parallel faces, square ends, grain along length, no rocking, and raw unfinished wood. Reject wet/green wood, softwood, plywood, MDF, chipboard, laminated boards, cracked/split/oily/painted offcuts, rounded branches, or large knots on bearing faces. These supplement rated jack stands and axle support during leaf spring/shock work; not a substitute for rated stands.",
+        "evidence_ref": "user_update_2026-05-02_suspension_wooden_blocks|data/manual/suspension_wood_cribbing_order_specs.csv|docs/suspension-wood-cribbing-merchant-spec.md|data/manual/fabrication/suspension_wood_cribbing_rev_a/README.md|data/manual/fabrication/suspension_wood_cribbing_rev_a/j40_suspension_wood_cribbing_rev_a_dimension_sheet.pdf",
+        "notes": "Timber merchant ask: 8 dry hardwood blocks 300 x 150 x 75 mm plus 4 dry hardwood wedges 200 x 100 mm with 75 mm rear and 25 mm nose. Reject wet/soft/board material, cracks, rocking faces, and feather-edge wedges. Supplemental only; use with rated stands.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -43711,7 +46039,24 @@ window.J40_DASHBOARD_DATA = {
         "clamp_or_fitting_spec": "2 smooth-band or constant-tension clamps matched to hose OD",
         "source_basis": "standard_hj47_2h_spec",
         "final_install_check": "Sample-match on receipt, dry-fit, pressure-test after coolant fill",
-        "hard_reject": "Universal straight hose, wrong bend, wrong neck size, or no coolant rating"
+        "hard_reject": "Universal straight hose, wrong bend, wrong neck size, or no coolant rating",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg",
+          "caption": "Upper radiator hose \u00b7 radiator/coolant hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "radiator_hose",
+          "matched_tokens": [
+            "radiator",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-02",
@@ -43726,7 +46071,24 @@ window.J40_DASHBOARD_DATA = {
         "clamp_or_fitting_spec": "2 smooth-band or constant-tension clamps matched to hose OD",
         "source_basis": "standard_hj47_2h_spec",
         "final_install_check": "Sample-match on receipt, dry-fit, pressure-test after coolant fill",
-        "hard_reject": "Universal straight hose, kinked lower bend, wrong neck size, or no coolant rating"
+        "hard_reject": "Universal straight hose, kinked lower bend, wrong neck size, or no coolant rating",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg",
+          "caption": "Lower radiator hose \u00b7 radiator/coolant hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "radiator_hose",
+          "matched_tokens": [
+            "radiator",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-03",
@@ -43741,52 +46103,121 @@ window.J40_DASHBOARD_DATA = {
         "clamp_or_fitting_spec": "Small spring clips or smooth-band clamps matched to hose OD",
         "source_basis": "standard_stock_released_cut_to_route",
         "final_install_check": "Cut to radiator-to-bottle route; avoid kinks and sharp edge contact",
-        "hard_reject": "Clear PVC, washer hose, or soft non-coolant hose"
+        "hard_reject": "Clear PVC, washer hose, or soft non-coolant hose",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/coolant_overflow.jpg",
+          "caption": "Radiator overflow hose \u00b7 coolant overflow reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "coolant_overflow",
+          "matched_tokens": [
+            "overflow"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-04",
         "order_state": "buy_now",
         "shop_lane": "radiator_cooling",
         "item": "Heater hose stock",
-        "order_text": "Heater hose stock, standard 16 mm / 5/8 in ID; cut on vehicle as 400 mm inlet plus 280 mm outlet.",
+        "order_text": "Buy 1000 mm of standard 16 mm / 5/8 in ID EPDM heater hose, SAE J20R3 or better; finished cuts are 400 mm inlet and 280 mm outlet, with the remainder as trim allowance.",
         "qty": "1 length",
         "buy_length_mm": "1000",
-        "diameter_spec": "16 mm / 5/8 in ID",
+        "diameter_spec": "16 mm / 5/8 in ID exact order basis",
         "material_spec": "EPDM heater hose, SAE J20R3 or better",
         "clamp_or_fitting_spec": "4 smooth-band clamps matched to hose OD",
-        "source_basis": "standard_2h_heater_hose_basis",
-        "final_install_check": "Cut 400 mm inlet and 280 mm outlet; check exhaust/firewall chafe",
-        "hard_reject": "Generic water hose, coolant hose that kinks, or wrong ID"
+        "source_basis": "standard_2h_heater_hose_basis_exact_stock_length",
+        "final_install_check": "Cut one 400 mm inlet and one 280 mm outlet; use remaining stock only as trim allowance; check exhaust/firewall chafe.",
+        "hard_reject": "Generic water hose, coolant hose that kinks, or wrong ID",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/heater_hose.jpg",
+          "caption": "Heater hose stock \u00b7 heater hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "heater_hose",
+          "matched_tokens": [
+            "heater",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-05A",
         "order_state": "buy_now",
         "shop_lane": "radiator_cooling",
         "item": "Formed coolant pipe connector hose A",
-        "order_text": "Connector hose A for formed coolant pipe, working 28-30 mm ID; cut from sample/vehicle route.",
+        "order_text": "Buy one 500 mm EPDM radiator/coolant connector blank for formed coolant pipe end A; 28-30 mm ID exact order basis; trim shorter from the old coupler/sample during dry-fit.",
         "qty": "1 piece",
         "buy_length_mm": "500",
-        "diameter_spec": "28-30 mm ID working basis",
+        "diameter_spec": "28-30 mm ID exact order basis",
         "material_spec": "EPDM radiator/coolant hose",
         "clamp_or_fitting_spec": "2 smooth-band or constant-tension clamps matched to hose OD",
-        "source_basis": "May 2 pipe sample and standard connector blank basis",
-        "final_install_check": "Cut by sample and dry-fit with formed pipe; use molded connector if straight hose kinks",
-        "hard_reject": "Straight hose kinks or cannot grip pipe/spigot with safe overlap"
+        "source_basis": "May 2 pipe sample; exact 500 mm stock blank released",
+        "final_install_check": "Trim from 500 mm blank by sample; keep full hose overlap on beaded pipe/spigot; use molded connector only if straight hose kinks.",
+        "hard_reject": "Straight hose kinks or cannot grip pipe/spigot with safe overlap",
+        "image": {
+          "path": "../../photos/20260502_004106_gp_wlYlUahA.jpg",
+          "caption": "Formed coolant pipe connector hose A \u00b7 formed coolant pipe sample photo",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004106_gp_wlYlUahA",
+          "matched_tokens": [
+            "formed",
+            "coolant",
+            "pipe"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-05B",
         "order_state": "buy_now",
         "shop_lane": "radiator_cooling",
         "item": "Formed coolant pipe connector hose B",
-        "order_text": "Connector hose B for formed coolant pipe, working 28-30 mm ID; cut from sample/vehicle route.",
+        "order_text": "Buy one 500 mm EPDM radiator/coolant connector blank for formed coolant pipe end B; 28-30 mm ID exact order basis; trim shorter from the old coupler/sample during dry-fit.",
         "qty": "1 piece",
         "buy_length_mm": "500",
-        "diameter_spec": "28-30 mm ID working basis",
+        "diameter_spec": "28-30 mm ID exact order basis",
         "material_spec": "EPDM radiator/coolant hose",
         "clamp_or_fitting_spec": "2 smooth-band or constant-tension clamps matched to hose OD",
-        "source_basis": "May 2 pipe sample and standard connector blank basis",
-        "final_install_check": "Cut by sample and dry-fit with formed pipe; use molded connector if straight hose kinks",
-        "hard_reject": "Straight hose kinks or cannot grip pipe/spigot with safe overlap"
+        "source_basis": "May 2 pipe sample; exact 500 mm stock blank released",
+        "final_install_check": "Trim from 500 mm blank by sample; keep full hose overlap on beaded pipe/spigot; use molded connector only if straight hose kinks.",
+        "hard_reject": "Straight hose kinks or cannot grip pipe/spigot with safe overlap",
+        "image": {
+          "path": "../../photos/20260502_004106_gp_wlYlUahA.jpg",
+          "caption": "Formed coolant pipe connector hose B \u00b7 formed coolant pipe sample photo",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004106_gp_wlYlUahA",
+          "matched_tokens": [
+            "formed",
+            "coolant",
+            "pipe"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-06",
@@ -43801,7 +46232,24 @@ window.J40_DASHBOARD_DATA = {
         "clamp_or_fitting_spec": "Rolled-edge fuel-injection clamps matched to final hose OD",
         "source_basis": "standard_2h_low_pressure_diesel_feed_basis",
         "final_install_check": "Cut to route; verify diesel rating and fuel-prime leak check",
-        "hard_reject": "No fuel/diesel marking, coolant hose, vacuum hose, or perforated clamp"
+        "hard_reject": "No fuel/diesel marking, coolant hose, vacuum hose, or perforated clamp",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+          "caption": "Low-pressure diesel feed hose \u00b7 diesel fuel hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "fuel_hose",
+          "matched_tokens": [
+            "fuel",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-07",
@@ -43816,7 +46264,24 @@ window.J40_DASHBOARD_DATA = {
         "clamp_or_fitting_spec": "Rolled-edge fuel-injection clamps matched to final hose OD",
         "source_basis": "standard_2h_low_pressure_diesel_return_basis",
         "final_install_check": "Cut to route; verify diesel rating and fuel-prime leak check",
-        "hard_reject": "No fuel/diesel marking, coolant hose, vacuum hose, or perforated clamp"
+        "hard_reject": "No fuel/diesel marking, coolant hose, vacuum hose, or perforated clamp",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+          "caption": "Low-pressure diesel return/bleed hose \u00b7 diesel fuel hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "fuel_hose",
+          "matched_tokens": [
+            "fuel",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-08",
@@ -43831,7 +46296,24 @@ window.J40_DASHBOARD_DATA = {
         "clamp_or_fitting_spec": "Small fuel clamps only if required by fitted arrangement",
         "source_basis": "standard_2h_injector_leakoff_basis",
         "final_install_check": "Cut to injector leak-off route; verify diesel rating",
-        "hard_reject": "Vacuum, washer, coolant, or unmarked small hose"
+        "hard_reject": "Vacuum, washer, coolant, or unmarked small hose",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+          "caption": "Injector leak-off hose \u00b7 diesel fuel hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "fuel_hose",
+          "matched_tokens": [
+            "fuel",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-09",
@@ -43846,7 +46328,24 @@ window.J40_DASHBOARD_DATA = {
         "clamp_or_fitting_spec": "Mixed pack covering selected fuel hose ODs",
         "source_basis": "fuel_hose_buy_lengths",
         "final_install_check": "Match clamp range after hose OD is selected",
-        "hard_reject": "Sharp perforated worm clamps that cut fuel hose"
+        "hard_reject": "Sharp perforated worm clamps that cut fuel hose",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+          "caption": "Fuel clamp pack \u00b7 diesel fuel hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "fuel_hose",
+          "matched_tokens": [
+            "fuel",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-10",
@@ -43861,7 +46360,23 @@ window.J40_DASHBOARD_DATA = {
         "clamp_or_fitting_spec": "Smooth-band clamps matched to hose OD",
         "source_basis": "standard_2h_vacuum_stock_basis",
         "final_install_check": "Cut on vehicle; confirm check-valve direction and brake assist vacuum",
-        "hard_reject": "Thin soft washer hose, coolant hose, or hose that collapses under vacuum"
+        "hard_reject": "Thin soft washer hose, coolant hose, or hose that collapses under vacuum",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+          "caption": "Brake-booster vacuum hose stock \u00b7 vacuum/breather hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "fuel_hose",
+          "matched_tokens": [
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-11",
@@ -43876,22 +46391,57 @@ window.J40_DASHBOARD_DATA = {
         "clamp_or_fitting_spec": "Smooth-band clamps matched to hose OD",
         "source_basis": "standard_2h_breather_stock_basis",
         "final_install_check": "Cut on vehicle; check no oil swelling or heat/chafe exposure",
-        "hard_reject": "Coolant-only EPDM or hose that can swell in oil mist"
+        "hard_reject": "Coolant-only EPDM or hose that can swell in oil mist",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+          "caption": "Crankcase breather/oil-mist hose stock \u00b7 diesel fuel hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "fuel_hose",
+          "matched_tokens": [
+            "fuel",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-12",
         "order_state": "quote_or_fabricate_now",
         "shop_lane": "pipe_fabricator",
         "item": "Formed metal coolant/radiator pipe",
-        "order_text": "Formed metal coolant/radiator pipe copied from the physical sample and May 2 tape-reference photos; match OD, wall, bends, clocking, offsets, beaded ends, clamp lands, and hose overlap.",
+        "order_text": "Fabricate one formed metal coolant/radiator pipe from 28-30 mm OD tube, wall 1.2-1.6 mm. Buy/quote 1000 mm tube stock if sold by meter, with 750 mm as the absolute minimum blank before bending and trimming. Copy the physical sample for bends, clocking, offsets, beaded ends, and clamp lands.",
         "qty": "1 pipe",
-        "buy_length_mm": "750 minimum blank; quote 1000 stock if sold by meter/foot",
-        "diameter_spec": "28-30 mm OD working basis; shop confirms exact OD and wall",
+        "buy_length_mm": "1000 preferred shop stock; 750 absolute minimum blank",
+        "diameter_spec": "28-30 mm OD exact order basis; wall 1.2-1.6 mm; bead height 1.5-2.0 mm; straight clamp lands 25-30 mm each end",
         "material_spec": "Mild steel/aluminized steel or 304 stainless coolant-compatible tube; target wall 1.2-1.6 mm",
-        "clamp_or_fitting_spec": "Beaded ends and straight clamp lands 25-30 mm minimum each end",
-        "source_basis": "physical_sample_plus_may2_tape_photos",
-        "final_install_check": "Dry-fit and pressure-test before coating",
-        "hard_reject": "Shop wants to fabricate without sample, cannot bead ends, or cannot dry-fit before coating"
+        "clamp_or_fitting_spec": "Rolled/beaded ends; straight clamp lands 25-30 mm minimum each end",
+        "source_basis": "physical_sample_plus_may2_tape_photos_exact_stock_release",
+        "final_install_check": "Trim/bead by physical sample, dry-fit on vehicle, then pressure-test before coating.",
+        "hard_reject": "Shop wants to fabricate without sample, cannot bead ends, or cannot dry-fit before coating",
+        "image": {
+          "path": "../../photos/20260502_004106_gp_wlYlUahA.jpg",
+          "caption": "Formed metal coolant/radiator pipe \u00b7 formed coolant pipe sample photo",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004106_gp_wlYlUahA",
+          "matched_tokens": [
+            "formed",
+            "coolant",
+            "pipe"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-13",
@@ -43906,7 +46456,24 @@ window.J40_DASHBOARD_DATA = {
         "clamp_or_fitting_spec": "Original unions/end style copied if replaced",
         "source_basis": "standard_stock_released_if_replacing",
         "final_install_check": "Copy old route, unions, bends, and clips; leak-test after prime",
-        "hard_reject": "Bare copper, plumbing tube, or no way to match end style"
+        "hard_reject": "Bare copper, plumbing tube, or no way to match end style",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+          "caption": "Low-pressure fuel feed hard-line stock \u00b7 diesel fuel hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "fuel_hose",
+          "matched_tokens": [
+            "fuel",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-14",
@@ -43921,7 +46488,24 @@ window.J40_DASHBOARD_DATA = {
         "clamp_or_fitting_spec": "Original unions/end style copied if replaced",
         "source_basis": "standard_stock_released_if_replacing",
         "final_install_check": "Copy old route, unions, bends, and clips; leak-test after prime",
-        "hard_reject": "Bare copper, plumbing tube, or no way to match end style"
+        "hard_reject": "Bare copper, plumbing tube, or no way to match end style",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+          "caption": "Low-pressure fuel return hard-line stock \u00b7 diesel fuel hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "fuel_hose",
+          "matched_tokens": [
+            "fuel",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-15",
@@ -43936,7 +46520,24 @@ window.J40_DASHBOARD_DATA = {
         "clamp_or_fitting_spec": "Brake-rated fittings after flare/thread/seat identification",
         "source_basis": "standard_brake_tube_stock_basis_plus_old_templates",
         "final_install_check": "Fabricate from old-line templates; bleed and pressure-test",
-        "hard_reject": "Bare copper, unknown fittings, or shop cannot identify flare/thread standard"
+        "hard_reject": "Bare copper, unknown fittings, or shop cannot identify flare/thread standard",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+          "caption": "Brake hard-line tube coil and fittings \u00b7 brake hose/line reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "brake_hose_line",
+          "matched_tokens": [
+            "brake",
+            "line"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-16",
@@ -43951,7 +46552,24 @@ window.J40_DASHBOARD_DATA = {
         "clamp_or_fitting_spec": "Permanent line supports, not cable ties",
         "source_basis": "standard_line_support_basis",
         "final_install_check": "Support hard lines every 300-400 mm; protect pass-throughs",
-        "hard_reject": "Plain cable ties or bare metal clips for permanent support"
+        "hard_reject": "Plain cable ties or bare metal clips for permanent support",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+          "caption": "Rubber-lined P-clips and edge protection \u00b7 diesel fuel hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "fuel_hose",
+          "matched_tokens": [
+            "fuel",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-17",
@@ -43966,7 +46584,24 @@ window.J40_DASHBOARD_DATA = {
         "clamp_or_fitting_spec": "Complete crimped assemblies only",
         "source_basis": "old_hose_samples_or_current_vehicle_fittings",
         "final_install_check": "No stretch/twist/contact; bleed and pressure-test",
-        "hard_reject": "Generic hose cut from roll, unmatched ends, or no brake rating"
+        "hard_reject": "Generic hose cut from roll, unmatched ends, or no brake rating",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+          "caption": "Brake flex hose assemblies \u00b7 brake hose/line reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "brake_hose_line",
+          "matched_tokens": [
+            "brake",
+            "line"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-18",
@@ -43981,7 +46616,24 @@ window.J40_DASHBOARD_DATA = {
         "clamp_or_fitting_spec": "Complete crimped assembly only",
         "source_basis": "old_hose_sample_or_current_vehicle_fittings",
         "final_install_check": "Bleed clutch hydraulics; verify no leak or tension through movement",
-        "hard_reject": "Generic hose, wrong fitting, or non-hydraulic rating"
+        "hard_reject": "Generic hose, wrong fitting, or non-hydraulic rating",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+          "caption": "Clutch flex hose assembly \u00b7 brake hose/line reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "brake_hose_line",
+          "matched_tokens": [
+            "brake",
+            "line"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-19",
@@ -43996,7 +46648,24 @@ window.J40_DASHBOARD_DATA = {
         "clamp_or_fitting_spec": "Fittings after flare/thread/seat identification",
         "source_basis": "conditional_if_clutch_hard_line_replaced",
         "final_install_check": "Cut to master-to-slave route; bleed and leak-test",
-        "hard_reject": "Bare copper or unknown flare/thread standard"
+        "hard_reject": "Bare copper or unknown flare/thread standard",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
+          "caption": "Clutch hard-line blank \u00b7 brake hose/line reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "brake_hose_line",
+          "matched_tokens": [
+            "brake",
+            "line"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-20",
@@ -44011,7 +46680,23 @@ window.J40_DASHBOARD_DATA = {
         "clamp_or_fitting_spec": "As fitted",
         "source_basis": "fitted_presence_required",
         "final_install_check": "Confirm fitted presence before order",
-        "hard_reject": "Not fitted on this engine or route differs from OEM reference"
+        "hard_reject": "Not fitted on this engine or route differs from OEM reference",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg",
+          "caption": "2H vacuum pump oil outlet molded hose \u00b7 vacuum/breather hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "fuel_hose",
+          "matched_tokens": [
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-21",
@@ -44026,7 +46711,24 @@ window.J40_DASHBOARD_DATA = {
         "clamp_or_fitting_spec": "Clamps by duct OD",
         "source_basis": "condition_based_sample_match",
         "final_install_check": "Check fit, offset, branch, and clamp seal",
-        "hard_reject": "Coolant/heater/fuel hose or thin HVAC duct substitute"
+        "hard_reject": "Coolant/heater/fuel hose or thin HVAC duct substitute",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg",
+          "caption": "Engine air-cleaner intake duct/couplers \u00b7 radiator/coolant hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "radiator_hose",
+          "matched_tokens": [
+            "radiator",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       },
       {
         "order_id": "HLS-22",
@@ -44041,7 +46743,23 @@ window.J40_DASHBOARD_DATA = {
         "clamp_or_fitting_spec": "Crimp/fitting style after layout",
         "source_basis": "hvac_layout_not_locked",
         "final_install_check": "Pressure/leak test after HVAC layout",
-        "hard_reject": "Final hose fabrication before HVAC layout is locked"
+        "hard_reject": "Final hose fabrication before HVAC layout is locked",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
+          "caption": "A/C barrier hose and fittings \u00b7 component reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "generic_part",
+          "matched_tokens": [
+            "component"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
       }
     ]
   },
@@ -48141,9 +50859,9 @@ window.J40_DASHBOARD_DATA = {
     "summary_by_type": [
       {
         "supply_type": "tool",
-        "previously": 40,
+        "previously": 41,
         "in_process": 18,
-        "still_required": 9,
+        "still_required": 8,
         "total": 67
       },
       {
@@ -51902,6 +54620,41 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_tools",
+          "source_ref": "workbook_tools#row_22",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Electric Clamp Meter Multimeter Tester Pen Kit ANENG ST170+B15 600V AC/DC Voltage with 24V-250V AC Voltage Tester Home DIY Tools",
+          "vendor": "AliExpress",
+          "amount": "8811",
+          "currency": "PKR",
+          "workstream": "",
+          "status_group": "previously",
+          "status_detail": "received",
+          "procurement_stage": "",
+          "payment_status": "No",
+          "delivery_status": "Y",
+          "evidence_ref": "",
+          "notes": "Received; user reports item received 2026-05-04.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/workbook_tools_row_22_aneng_st170.jpg",
+            "caption": "ANENG ST170+B15 clamp meter kit \u00b7 reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "row_22"
+            ],
+            "match_basis": "manual_override",
+            "match_score": 999
+          }
+        },
+        {
+          "source": "workbook_tools",
           "source_ref": "workbook_tools#row_7",
           "supply_type": "tool",
           "inventory_group": "tools",
@@ -53434,7 +56187,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/eps_column.jpg",
-            "caption": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit \u00b7 EPS column reference image",
+            "caption": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit \u00b7 Vitz/Yaris XP90 EPS column set reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -55510,18 +58263,18 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_master.jpg",
-            "caption": "Brake vacuum booster servo - dual diaphragm 44610-60050 market scout \u00b7 brake master cylinder reference image",
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_booster.jpg",
+            "caption": "Brake vacuum booster servo - dual diaphragm 44610-60050 market scout \u00b7 44610-60050 dual-diaphragm brake booster reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "semantic_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "brake_master",
+            "media_id": "brake_booster",
             "matched_tokens": [
               "brake",
-              "master"
+              "booster"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -56215,20 +58968,20 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/car_cover.jpg",
-            "caption": "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on \u00b7 car cover reference image",
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png",
+            "caption": "User-supplied compact old-OEM fuse box - cabin fuse add-on reference",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "manual_override_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "car_cover",
+            "media_id": "",
             "matched_tokens": [
-              "cover"
+              "part_cabin_compact_fuse_boxes"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "manual_override",
+            "match_score": 999
           }
         },
         {
@@ -56559,7 +59312,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Local-market order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 750 mm minimum tube blank or 1000 mm shop stock quote, and two 500 mm EPDM connector blanks at 28-30 mm ID working basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
+          "notes": "Local-market order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -56666,7 +59419,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_mech_heater_hose_set",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID",
+          "item": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID",
           "vendor": "",
           "amount": "",
           "currency": "PKR",
@@ -56677,7 +59430,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Local-market order ready via RPO-COOL-004A/B: buy 1000 mm of 16 mm / 5/8 in EPDM SAE J20R3 or better heater hose stock, then cut 400 mm inlet and 280 mm outlet on vehicle. Final trim, clamp, and chafe check remain at install.",
+          "notes": "Local-market order ready via RPO-COOL-004A/B: buy 1000 mm of 16 mm / 5/8 in EPDM SAE J20R3 or better heater hose stock, then cut 400 mm inlet and 280 mm outlet from released stock during install. Final trim, clamp, and chafe check remain at install.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -56685,7 +59438,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-            "caption": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID \u00b7 air hose reference image",
+            "caption": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID \u00b7 air hose reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -56757,7 +59510,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_diesel_correction",
-          "notes": "Buy exact Toyota-labelled glow plugs: primary target Toyota 19850-68030 x6 for HJ47-style 2H 12V/8.5V. If the old plug/system proves later 24V/superglow, use Toyota 19850-68060 x6 instead. Confirm old plug thread, reach, voltage, seat, and terminal before payment; reject PT-107/1C/2C listings.",
+          "notes": "Buy exact new Toyota-labelled glow plugs through a verified new-parts counter/order lane: primary target Toyota 19850-68030 x6 for HJ47-style 2H 12V/8.5V. If the old plug/system proves later 24V/superglow, use Toyota 19850-68060 x6 instead. Confirm old plug thread, reach, voltage, seat, and terminal before payment; reject used/refurbished/PT-107/1C/2C listings.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -56835,8 +59588,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-02_suspension_wooden_blocks|data/manual/suspension_wood_cribbing_order_specs.csv|docs/suspension-wood-cribbing-merchant-spec.md",
-          "notes": "Merchant-ready cut list: 12 total seasoned solid hardwood pieces: 8 rectangular cribbing blocks 12 x 6 x 3 in (approx 300 x 150 x 75 mm) plus 4 wedge chocks cut from 8 x 4 x 3 in blanks (approx 200 x 100 x 75 mm), tapering from 75 mm to 20-25 mm. Accept sheesham/shisham, kikar/acacia, oak, ash, or equivalent dense dry hardwood. Require flat parallel faces, square ends, grain along length, no rocking, and raw unfinished wood. Reject wet/green wood, softwood, plywood, MDF, chipboard, laminated boards, cracked/split/oily/painted offcuts, rounded branches, or large knots on bearing faces. These supplement rated jack stands and axle support during leaf spring/shock work; not a substitute for rated stands.",
+          "evidence_ref": "user_update_2026-05-02_suspension_wooden_blocks|data/manual/suspension_wood_cribbing_order_specs.csv|docs/suspension-wood-cribbing-merchant-spec.md|data/manual/fabrication/suspension_wood_cribbing_rev_a/README.md|data/manual/fabrication/suspension_wood_cribbing_rev_a/j40_suspension_wood_cribbing_rev_a_dimension_sheet.pdf",
+          "notes": "Timber merchant ask: 8 dry hardwood blocks 300 x 150 x 75 mm plus 4 dry hardwood wedges 200 x 100 mm with 75 mm rear and 25 mm nose. Reject wet/soft/board material, cracks, rocking faces, and feather-edge wedges. Supplemental only; use with rated stands.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -57090,41 +59843,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_tools",
-          "source_ref": "workbook_tools#row_22",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "Electric Clamp Meter Multimeter Tester Pen Kit ANENG ST170+B15 600V AC/DC Voltage with 24V-250V AC Voltage Tester Home DIY Tools",
-          "vendor": "AliExpress",
-          "amount": "8811",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "No",
-          "delivery_status": "No",
-          "evidence_ref": "",
-          "notes": "No confirmed order evidence yet; keep as not ordered until proof appears.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/workbook_tools_row_22_aneng_st170.jpg",
-            "caption": "ANENG ST170+B15 clamp meter kit \u00b7 reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "row_22"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
-          }
-        },
-        {
-          "source": "workbook_tools",
           "source_ref": "workbook_tools#row_26",
           "supply_type": "tool",
           "inventory_group": "tools",
@@ -57235,10 +59953,10 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "tool_local_bench_drill",
+          "source_ref": "tool_local_bench_vice",
           "supply_type": "tool",
           "inventory_group": "tools",
-          "item": "Bench drill / drill press",
+          "item": "Bench vice / workshop vice",
           "vendor": "local hardware/tools market",
           "amount": "",
           "currency": "PKR",
@@ -57249,7 +59967,46 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-04_local_purchase_tools",
-          "notes": "Added to local purchase tools list; confirm chuck condition spindle play table lock and available bits before purchase.",
+          "notes": "Scout local market: buy a bolt-down bench vice with 100-150 mm jaws, smooth screw action, uncracked casting, intact mounting holes, and replaceable or clean jaws. This is for holding work on the bench; do not buy a clamp for this line.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/bench_vice.jpg",
+            "caption": "Harden 100mm bolt-down table vice - workbench-mounted vice reference",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "tool_local_bench_vice"
+            ],
+            "match_basis": "manual_override",
+            "match_score": 999
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_local_bench_drill",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Pillar drill / bench drill press",
+          "vendor": "local hardware/tools market",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_update_2026-05-04_local_purchase_tools",
+          "notes": "Scout local market: buy a floor pillar drill or solid bench drill press; 13 mm chuck minimum, locking table, depth stop, straight spindle with no wobble, 220-240 V single phase if powered; test-run before payment.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -57257,7 +60014,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/bench_drill.jpg",
-            "caption": "Bench drill / drill press \u00b7 bench drill reference image",
+            "caption": "Pillar drill / bench drill press \u00b7 bench drill reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -57268,45 +60025,6 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "bench",
               "drill"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "tool_local_c_clamp",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "Clamp / heavy C-clamp",
-          "vendor": "local hardware/tools market",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "site_setup",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-04_local_purchase_tools",
-          "notes": "Added to local purchase tools list; separate from the ordered spring clamp set and useful for caliper piston compression plus bench holding.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/clamp.jpg",
-            "caption": "Clamp / heavy C-clamp \u00b7 heavy clamp reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "clamp",
-            "matched_tokens": [
-              "clamp"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -57328,7 +60046,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-04_local_purchase_tools",
-          "notes": "Added to local purchase tools list; buy a stable workbench/toolbench suitable for bench drilling clamping and parts layout.",
+          "notes": "Scout local market: buy a stable workbench/toolbench with steel frame or heavy hardwood top, minimum 1200 x 600 mm working surface, 850-950 mm working height, flat top, and enough structure to bolt down a vice and pillar drill.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -57425,7 +60143,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/eps_column.jpg",
-          "caption": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit \u00b7 EPS column reference image",
+          "caption": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit \u00b7 Vitz/Yaris XP90 EPS column set reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -62762,6 +65480,41 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "source": "workbook_tools",
+        "source_ref": "workbook_tools#row_22",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Electric Clamp Meter Multimeter Tester Pen Kit ANENG ST170+B15 600V AC/DC Voltage with 24V-250V AC Voltage Tester Home DIY Tools",
+        "vendor": "AliExpress",
+        "amount": "8811",
+        "currency": "PKR",
+        "workstream": "",
+        "status_group": "previously",
+        "status_detail": "received",
+        "procurement_stage": "",
+        "payment_status": "No",
+        "delivery_status": "Y",
+        "evidence_ref": "",
+        "notes": "Received; user reports item received 2026-05-04.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/workbook_tools_row_22_aneng_st170.jpg",
+          "caption": "ANENG ST170+B15 clamp meter kit \u00b7 reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "row_22"
+          ],
+          "match_basis": "manual_override",
+          "match_score": 999
+        }
+      },
+      {
         "source": "expenses",
         "source_ref": "tool_electrical_test_kit",
         "supply_type": "tool",
@@ -64195,20 +66948,20 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/car_cover.jpg",
-          "caption": "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on \u00b7 car cover reference image",
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png",
+          "caption": "User-supplied compact old-OEM fuse box - cabin fuse add-on reference",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "car_cover",
+          "media_id": "",
           "matched_tokens": [
-            "cover"
+            "part_cabin_compact_fuse_boxes"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {
@@ -64227,7 +66980,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Local-market order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 750 mm minimum tube blank or 1000 mm shop stock quote, and two 500 mm EPDM connector blanks at 28-30 mm ID working basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
+        "notes": "Local-market order ready via RPO-COOL-001/002/003/005/006: molded upper hose x1, molded lower hose x1, overflow EPDM hose x 1000 mm, formed coolant pipe from 28-30 mm OD tube with 1.2-1.6 mm wall and 1000 mm shop-stock / 750 mm absolute-minimum blank, and two 500 mm EPDM connector blanks at 28-30 mm ID exact order basis. Final dry-fit, clamp, chafe, and coolant pressure-test remain install checks.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -64697,18 +67450,18 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_master.jpg",
-          "caption": "Brake vacuum booster servo - dual diaphragm 44610-60050 market scout \u00b7 brake master cylinder reference image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_booster.jpg",
+          "caption": "Brake vacuum booster servo - dual diaphragm 44610-60050 market scout \u00b7 44610-60050 dual-diaphragm brake booster reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "brake_master",
+          "media_id": "brake_booster",
           "matched_tokens": [
             "brake",
-            "master"
+            "booster"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -65028,7 +67781,7 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_mech_heater_hose_set",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID",
+        "item": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID",
         "vendor": "",
         "amount": "",
         "currency": "PKR",
@@ -65039,7 +67792,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_hose_spec|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Local-market order ready via RPO-COOL-004A/B: buy 1000 mm of 16 mm / 5/8 in EPDM SAE J20R3 or better heater hose stock, then cut 400 mm inlet and 280 mm outlet on vehicle. Final trim, clamp, and chafe check remain at install.",
+        "notes": "Local-market order ready via RPO-COOL-004A/B: buy 1000 mm of 16 mm / 5/8 in EPDM SAE J20R3 or better heater hose stock, then cut 400 mm inlet and 280 mm outlet from released stock during install. Final trim, clamp, and chafe check remain at install.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -65047,7 +67800,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-          "caption": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID \u00b7 air hose reference image",
+          "caption": "Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID \u00b7 air hose reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -65384,8 +68137,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-02_suspension_wooden_blocks|data/manual/suspension_wood_cribbing_order_specs.csv|docs/suspension-wood-cribbing-merchant-spec.md",
-        "notes": "Merchant-ready cut list: 12 total seasoned solid hardwood pieces: 8 rectangular cribbing blocks 12 x 6 x 3 in (approx 300 x 150 x 75 mm) plus 4 wedge chocks cut from 8 x 4 x 3 in blanks (approx 200 x 100 x 75 mm), tapering from 75 mm to 20-25 mm. Accept sheesham/shisham, kikar/acacia, oak, ash, or equivalent dense dry hardwood. Require flat parallel faces, square ends, grain along length, no rocking, and raw unfinished wood. Reject wet/green wood, softwood, plywood, MDF, chipboard, laminated boards, cracked/split/oily/painted offcuts, rounded branches, or large knots on bearing faces. These supplement rated jack stands and axle support during leaf spring/shock work; not a substitute for rated stands.",
+        "evidence_ref": "user_update_2026-05-02_suspension_wooden_blocks|data/manual/suspension_wood_cribbing_order_specs.csv|docs/suspension-wood-cribbing-merchant-spec.md|data/manual/fabrication/suspension_wood_cribbing_rev_a/README.md|data/manual/fabrication/suspension_wood_cribbing_rev_a/j40_suspension_wood_cribbing_rev_a_dimension_sheet.pdf",
+        "notes": "Timber merchant ask: 8 dry hardwood blocks 300 x 150 x 75 mm plus 4 dry hardwood wedges 200 x 100 mm with 75 mm rear and 25 mm nose. Reject wet/soft/board material, cracks, rocking faces, and feather-edge wedges. Supplemental only; use with rated stands.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -65424,7 +68177,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-12_engine_bay_review|user_update_2026-05-01_engine_diesel_correction",
-        "notes": "Buy exact Toyota-labelled glow plugs: primary target Toyota 19850-68030 x6 for HJ47-style 2H 12V/8.5V. If the old plug/system proves later 24V/superglow, use Toyota 19850-68060 x6 instead. Confirm old plug thread, reach, voltage, seat, and terminal before payment; reject PT-107/1C/2C listings.",
+        "notes": "Buy exact new Toyota-labelled glow plugs through a verified new-parts counter/order lane: primary target Toyota 19850-68030 x6 for HJ47-style 2H 12V/8.5V. If the old plug/system proves later 24V/superglow, use Toyota 19850-68060 x6 instead. Confirm old plug thread, reach, voltage, seat, and terminal before payment; reject used/refurbished/PT-107/1C/2C listings.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -66289,10 +69042,10 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "tool_local_bench_drill",
+        "source_ref": "tool_local_bench_vice",
         "supply_type": "tool",
         "inventory_group": "tools",
-        "item": "Bench drill / drill press",
+        "item": "Bench vice / workshop vice",
         "vendor": "local hardware/tools market",
         "amount": "",
         "currency": "PKR",
@@ -66303,67 +69056,27 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-04_local_purchase_tools",
-        "notes": "Added to local purchase tools list; confirm chuck condition spindle play table lock and available bits before purchase.",
+        "notes": "Scout local market: buy a bolt-down bench vice with 100-150 mm jaws, smooth screw action, uncracked casting, intact mounting holes, and replaceable or clean jaws. This is for holding work on the bench; do not buy a clamp for this line.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/bench_drill.jpg",
-          "caption": "Bench drill / drill press \u00b7 bench drill reference image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/bench_vice.jpg",
+          "caption": "Harden 100mm bolt-down table vice - workbench-mounted vice reference",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "manual_override_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "bench_drill",
+          "media_id": "",
           "matched_tokens": [
-            "bench",
-            "drill"
+            "tool_local_bench_vice"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "tool_local_c_clamp",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "Clamp / heavy C-clamp",
-        "vendor": "local hardware/tools market",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "site_setup",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-04_local_purchase_tools",
-        "notes": "Added to local purchase tools list; separate from the ordered spring clamp set and useful for caliper piston compression plus bench holding.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/clamp.jpg",
-          "caption": "Clamp / heavy C-clamp \u00b7 heavy clamp reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "clamp",
-          "matched_tokens": [
-            "clamp"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {
@@ -66403,41 +69116,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "workbook_tools",
-        "source_ref": "workbook_tools#row_22",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "Electric Clamp Meter Multimeter Tester Pen Kit ANENG ST170+B15 600V AC/DC Voltage with 24V-250V AC Voltage Tester Home DIY Tools",
-        "vendor": "AliExpress",
-        "amount": "8811",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "No",
-        "delivery_status": "No",
-        "evidence_ref": "",
-        "notes": "No confirmed order evidence yet; keep as not ordered until proof appears.",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/workbook_tools_row_22_aneng_st170.jpg",
-          "caption": "ANENG ST170+B15 clamp meter kit \u00b7 reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "row_22"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
-        }
-      },
-      {
-        "source": "workbook_tools",
         "source_ref": "workbook_tools#row_26",
         "supply_type": "tool",
         "inventory_group": "tools",
@@ -66467,6 +69145,46 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "air",
             "compressor"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_local_bench_drill",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Pillar drill / bench drill press",
+        "vendor": "local hardware/tools market",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "user_update_2026-05-04_local_purchase_tools",
+        "notes": "Scout local market: buy a floor pillar drill or solid bench drill press; 13 mm chuck minimum, locking table, depth stop, straight spindle with no wobble, 220-240 V single phase if powered; test-run before payment.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/bench_drill.jpg",
+          "caption": "Pillar drill / bench drill press \u00b7 bench drill reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "bench_drill",
+          "matched_tokens": [
+            "bench",
+            "drill"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -66523,7 +69241,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-04_local_purchase_tools",
-        "notes": "Added to local purchase tools list; buy a stable workbench/toolbench suitable for bench drilling clamping and parts layout.",
+        "notes": "Scout local market: buy a stable workbench/toolbench with steel frame or heavy hardwood top, minimum 1200 x 600 mm working surface, 850-950 mm working height, flat top, and enough structure to bolt down a vice and pillar drill.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -77438,6 +80156,7 @@ window.J40_DASHBOARD_DATA = {
       "chassis_rubbers",
       "electrical_reset",
       "fabrication_handoff",
+      "local_market_procurement",
       "interior_controls",
       "mechanical_baseline",
       "replacement_pipes",
@@ -77618,6 +80337,31 @@ window.J40_DASHBOARD_DATA = {
           "rubber",
           "sample",
           "wiring"
+        ]
+      },
+      "local_market_procurement": {
+        "component_groups": [
+          "procurement_inventory"
+        ],
+        "stages": [
+          "procurement_reconciliation"
+        ],
+        "keywords": [
+          "bilal",
+          "cribbing",
+          "drill",
+          "fuse",
+          "ganj",
+          "hardware",
+          "hardwood",
+          "local",
+          "market",
+          "rubber",
+          "scout",
+          "timber",
+          "toolbench",
+          "vice",
+          "wood"
         ]
       },
       "mechanical_baseline": {

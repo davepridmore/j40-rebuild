@@ -1,3 +1,5 @@
-query: Toyota Vitz EPS steering column complete set image
-image_url: https://kmautospares.com/wp-content/uploads/2022/04/Toyota-Vitz-2002-Steering-Rack.jpg
-page_url: https://kmautospares.com/product/toyota-vitz-steering-rack/
+query: 2005-2011 Toyota Yaris II XP90 EPS steering column 45200-0D090 89650-0D110
+image_url: https://a.allegroimg.com/original/11fac3/79d5de8e45bab0a75599f1df1a7d/WSPOMAGANIE-ELEKTRYCZNE-YARIS-II-69405200
+page_url: https://allegro.pl/produkt/wspomaganie-elektryczne-yaris-ii-45200-0d090-89650-0d110-183b31b8-367c-460c-83eb-fb839a1371b0
+source_title: WSPOMAGANIE ELEKTRYCZNE YARIS II 45200-0D090 / 89650-0D110
+selection_note: Replaces the previous steering-rack image. This is the closer scout reference for the required column-assist EPS kit: Yaris II/XP90 electric steering column with motor/reduction housing, wiring pigtails, lower shaft, and U-joints visible; the listing references 45200-0D090 with 89650-0D110 EPS ECU.

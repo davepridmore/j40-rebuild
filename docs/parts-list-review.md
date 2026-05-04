@@ -45,7 +45,7 @@
 - `part_mech_fuel_filter` [mechanical_baseline] Fuel filter
 - `part_mech_fuel_hose_and_clamps` [mechanical_baseline] Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines
 - `part_mech_heat_glow_plugs_set` [mechanical_baseline] Toyota OE glow plugs 19850-68030 x6 - diesel 2H
-- `part_mech_heater_hose_set` [mechanical_baseline] Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID
+- `part_mech_heater_hose_set` [mechanical_baseline] Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID
 - `part_mech_radiator_cap` [mechanical_baseline] Radiator cap
 - `part_mech_radiator_hose_set` [mechanical_baseline] Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe
 - `part_mech_vacuum_hose_refresh` [mechanical_baseline] Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather

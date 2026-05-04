@@ -9,6 +9,7 @@ All dimensional packages use millimetres. Send the `DXF` files for CAD/CAM cutti
 | Package | Workstream | Status | Primary PDF | Notes |
 | --- | --- | --- | --- | --- |
 | `rubber_recreation_rev_a` | Chassis rubbers | Quote and first article ready; final production has measurement holds | `rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf` | Body-mount cushions, cup washer blanks, oval front-support pad, and strip quote/template blanks. |
+| `suspension_wood_cribbing_rev_a` | Suspension setup | Current timber/workshop cut package | `suspension_wood_cribbing_rev_a/j40_suspension_wood_cribbing_rev_a_dimension_sheet.pdf` | Hardwood cribbing blocks and exact wedge chocks for suspension/brake support setup. |
 | `midi5_plate_mount_rev_c` | Electrical reset | Current recommended MIDI holder mount | `midi5_plate_mount_rev_c/j40_midi5_plate_mount_rev_c_dimension_sheet.pdf` | Open plate plus non-conductive subplate; replaces the boxed MIDI module concept. |
 | `relay_mount_rev_c` | Electrical reset | Current recommended relay-box mount | `relay_mount_rev_c/j40_relay_mount_rev_c_dimension_sheet.pdf` | Aluminium relay carrier plus plastic rear guard. |
 | `electrical_modules_rev_a` | Electrical reset | Provisional/reference package | `electrical_modules_rev_a/j40_electrical_modules_rev_a_dimension_sheet.pdf` | Earlier combined under-bonnet relay/power module package. Use only if the combined module route is still desired. |
@@ -23,6 +24,7 @@ All dimensional packages use millimetres. Send the `DXF` files for CAD/CAM cutti
 ## Generator Scripts
 
 - `tools/generate_rubber_recreation_fabrication_pack.py`
+- `tools/generate_suspension_wood_cribbing_rev_a.py`
 - `tools/generate_electrical_module_drawings.py`
 - `tools/generate_midi5_plate_mount_rev_c.py`
 - `tools/generate_relay_mount_rev_c.py`

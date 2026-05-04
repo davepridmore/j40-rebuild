@@ -36,8 +36,28 @@ These are approved replacement scope, but exact part numbers must be matched to 
 | Rear wheel cylinders | Pair | Open drums and identify bore, port thread, mounting bolt pattern, pushrod style, side, and bleed screw access. |
 | Rear brake shoes and spring/adjuster hardware | 1 axle set | Open drums and confirm drum inside diameter, shoe width, adjuster style, spring layout, and backing-plate family. |
 | Brake-line and parking-brake cable clips/retainers/grommets | As counted | Count positions, keep samples, confirm tube/cable OD, hole size, bracket thickness, and chafe points. |
-| Brake vacuum booster / servo assembly | 1, quote first | Front discs/rear drums are confirmed. Target Toyota `44610-60050` tandem/dual diaphragm booster for the 9/1975-7/1980 J40/BJ40/FJ40 front-disc setup. Confirm fitted booster markings, mounting studs, master-cylinder seat/depth, pushrod/clevis, check valve/grommet, and vacuum hold before payment. Prefer new or professionally remanufactured; reject single/drum `44610-60040` and later `44610-60160` unless sample-matched and approved. |
+| Brake vacuum booster / servo assembly | 1, quote first | Front discs/rear drums are confirmed. Target a professionally refurbished/remanufactured Land Cruiser tandem/dual-diaphragm booster in the `44610-60050` / `BBN60050` 1975-1987 40/55/60 family, supplier-confirmed against the old unit. Confirm fitted booster markings, mounting studs, master-cylinder seat/depth, pushrod/clevis, check valve/grommet, and vacuum hold before payment. Reject raw used take-offs unless they are only a rebuild core; reject single/drum `44610-60040` and later `44610-60160` unless sample-matched and approved. |
 | Master cylinder, reservoir, and proportioning/bias service parts | As fitted, only if failed/unsafe/unknown after inspection | Photograph installed master, reservoir, booster, ports, fitting threads, flare seats, and any proportioning/bias hardware before ordering. |
+
+## Brake Booster Options
+
+Do not make the brake plan depend on finding another used 1978 booster.
+
+| Rank | Path | What to ask for | Why / risk |
+| ---: | --- | --- | --- |
+| 1 | Refurbished/reman direct-fit Land Cruiser booster | Professionally refurbished/remanufactured tandem/dual-diaphragm `44610-60050` / `BBN60050` family booster for the 1975-1987 Land Cruiser 40/55/60 disc-brake family. Quote `44610-60100` / `44610-60180` only when supplier lists the same 1975-1987 family fitment and the old unit sample-matches. | Best balance: keeps firewall/pedal/master geometry closest to original while avoiding a tired used servo. |
+| 2 | Local Land Cruiser 40/55/60 core for rebuild | Complete dual-diaphragm booster with check valve/grommet and pedal clevis hardware where possible. | Use as a rebuild candidate only, or accept installed use only after sample match and bench vacuum hold test. Reject hiss, leakdown, brake-fluid contamination, welded shell, or wrong single/drum booster. |
+| 3 | Complete FJ40 booster/master/proportioning retrofit kit | Dual-diaphragm booster + master cylinder + proportioning valve/bracket/lines designed for FJ40 front disc/rear drum. | Viable modernized path, but it changes plumbing and may require new non-metric/standard inverted flare nuts, line work, and proportioning validation. |
+| 4 | Random modern donor booster | Quote/photos only. | Not recommended first pass. Firewall pattern, pedal ratio, pushrod depth, master bore, line threads, and brake balance all become custom engineering. |
+
+Measurements before payment or adaptation:
+
+- Booster shell diameter and depth.
+- Firewall stud horizontal/vertical spacing, stud thread, and bracket depth.
+- Master-cylinder stud spacing, pilot/seat diameter, gasket face, and pushrod depth.
+- Pedal clevis thread, clevis width, clevis pin diameter, pushrod length, and free-play adjustment range.
+- Check-valve grommet OD, nipple/barb OD, nipple direction, and hose ID.
+- Master-cylinder bore, front/rear port threads, flare seat type, residual/proportioning valve layout.
 
 ## Vendor Message
 

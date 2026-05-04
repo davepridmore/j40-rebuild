@@ -15,7 +15,7 @@ Dashboard location: `docs/project-control-ui/index.html` -> `Replacement Pipes`.
 
 All replacement-pipe requirement rows are now defined, including the connector-hose row added after the rubber visual audit on 2026-05-03.
 
-The standard coolant/heater/fuel/vacuum/breather hose rows are now local-market order-ready with explicit buy lengths. Remaining controls are install/safety controls: molded-hose sample match, cut-on-vehicle trim, formed-pipe dry-fit/pressure test, fuel prime leak test, brake/clutch hydraulic fitting match, bleed/pressure test, and final chafe checks.
+The standard coolant/heater/fuel/vacuum/breather hose rows are now local-market order-ready with explicit buy lengths. Remaining controls are install/safety controls: molded-hose sample match, final trim from released stock, formed-pipe dry-fit/pressure test, fuel prime leak test, brake/clutch hydraulic fitting match, bleed/pressure test, and final chafe checks.
 
 ## Spec-Ready Order Lines
 
@@ -23,9 +23,9 @@ The standard coolant/heater/fuel/vacuum/breather hose rows are now local-market 
 | --- | --- | --- |
 | Radiator hoses | `RPO-COOL-001`, `RPO-COOL-002` | Molded hose order ready; Toyota/Dayco numbers are cross-references only. Sample-match and dry-fit on receipt. |
 | Overflow hose | `RPO-COOL-003` | Buy `1000 mm` local EPDM hose and cut to route. |
-| Heater hoses | `RPO-COOL-004A`, `RPO-COOL-004B` | Buy `1000 mm` of `16 mm / 5/8 in` EPDM heater hose stock; cut `400 mm` inlet and `280 mm` outlet on vehicle. |
-| Formed coolant pipe | `RPO-COOL-005` | `750 mm` minimum tube blank for ordering/fabrication; final centerline length comes from the physical template. Visible planning envelope roughly `400 mm` height and `250-300 mm` offset. |
-| Formed pipe connector hoses | `RPO-COOL-006A`, `RPO-COOL-006B` | Buy two `500 mm` EPDM connector blanks on `28-30 mm` working ID basis; cut by sample and dry-fit. |
+| Heater hoses | `RPO-COOL-004A`, `RPO-COOL-004B` | Buy `1000 mm` of `16 mm / 5/8 in` EPDM heater hose stock; cut `400 mm` inlet and `280 mm` outlet from that stock during install. |
+| Formed coolant pipe | `RPO-COOL-005` | Order one `28-30 mm OD`, `1.2-1.6 mm` wall tube blank; buy/quote `1000 mm` shop stock if sold by meter, with `750 mm` as the absolute minimum blank before bending/trimming. Beads `1.5-2.0 mm`; clamp lands `25-30 mm`. |
+| Formed pipe connector hoses | `RPO-COOL-006A`, `RPO-COOL-006B` | Buy two `500 mm` EPDM connector blanks on `28-30 mm` ID exact order basis; cut by sample and dry-fit. |
 | Diesel rubber hoses | `RPO-FUEL-001A`, `RPO-FUEL-001B`, `RPO-FUEL-001C` | Buy `8 mm ID x 3000 mm` feed, `6 mm ID x 2000 mm` return, and `3.2-3.5 mm ID x 1000 mm` leak-off diesel-rated stock. |
 | Fuel hard lines | `RPO-FUEL-002A`, `RPO-FUEL-002B` | `8 mm OD x 5000 mm` feed pipe allowance and `6 mm OD x 5000 mm` return pipe allowance; final section lengths only after corrosion inspection and route measurement. |
 | Vacuum/breather | `RPO-VAC-001A`, `RPO-VAC-001B`, `RPO-VAC-001C` | Buy `10-12 mm ID x 2000 mm` reinforced vacuum hose and `16-19 mm ID x 1000 mm` oil-resistant breather hose; oil-outlet molded hose is conditional on fitted presence. |
@@ -48,7 +48,7 @@ The active hose/rubber parts below are now marked purchase-ready / local-market-
 
 1. Photograph and label every route before removal.
 2. Buy the released coolant/heater/overflow/fuel/vacuum/breather stock lengths, then final-trim and choose clamps during dry-fit.
-3. Flat-lay the formed metal coolant pipe and record tube OD, wall, final centerline length, bend radii, clocking, beads, and clamp lands in `mm`; the orderable blank allowance is `750 mm`.
+3. Flat-lay the formed metal coolant pipe and record tube OD, wall, final centerline length, bend radii, clocking, beads, and clamp lands in `mm`; the orderable stock is `28-30 mm OD`, `1.2-1.6 mm` wall, `1000 mm` shop stock preferred or `750 mm` absolute minimum blank.
 4. Keep both formed-pipe rubber connector hoses with the sample; measure each connector ID/OD, free/cut length, overlap, pipe-end OD/bead, mating spigot OD, clamp OD, and bend/kink clearance in `mm`.
 5. Read markings on loose hose samples for sorting/reference only; this no longer blocks the standard stock order.
 6. Inspect hard fuel lines under clips and decide keep, section repair, or full replacement; order allowances are `5000 mm` feed and `5000 mm` return, with final section lengths and clip spacing recorded in `mm`.

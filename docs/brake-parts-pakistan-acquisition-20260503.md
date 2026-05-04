@@ -37,23 +37,29 @@ Do not pay for exact hose/fitting parts until the old samples are measured.
 > - 1 rear center frame-to-axle brake flexible hose.
 > - Rear axle hard brake lines recreated from old samples.
 > Flexible hoses must be complete crimped brake hose assemblies rated DOT/SAE J1401 or OEM-equivalent. No generic rubber hose fabrication.
-> Hard line working basis: brake-rated 4.75 mm / 3/16 in tube, Bundy steel or CuNi/Cunifer, no bare copper. Need about 25 ft / 7600 mm coil allowance before final cut.
+> Hard line stock order basis: brake-rated 4.75 mm / 3/16 in tube, Bundy steel or CuNi/Cunifer, no bare copper. Need 25 ft / 7600 mm coil allowance before final cut.
 > Final order must match old hose ends, banjo/thread/seat style, brackets, retaining clips, flare type, fitting thread, bend templates, and fitted route clearance. Please quote only until samples/photos/measurements are provided.
 
 ## Local Market Order - Brake Booster / Servo Assembly
 
 Search position on 2026-05-04: no confirmed in-Pakistan stocked direct `44610-60050` replacement was found online. The Pakistan-facing Ubuy result was a later `44610-60160` listing, out of stock at PKR 91,373 before shipping/customs, so do not buy it for this 1978 setup unless the old booster is physically sample-matched and approved. Use local Land Cruiser and brake-servo suppliers first; current local lead: [Land Cruiser House, Bilal Ganj Lahore](https://www.bizsouthasia.com/PK/land-cruiser-house-0300-9035682). Import fallback references if no local unit or rebuild is available: [Cruiser Teq BBN60050](https://cruiserteq.com/brake-booster-aftermarket-fits-9-1975-1987-bj4x-fj4x-fj60-bbn60050/) or equivalent `44610-60050` dual diaphragm unit.
 
+Better sourcing position: do not hunt only for a used 1978 booster. Ask first for a professionally refurbished/remanufactured Land Cruiser tandem dual-diaphragm booster in the `44610-60050` / `BBN60050` family, using the broader 1975-1987 Land Cruiser 40/55/60 disc-brake application as the market shorthand. A complete FJ40 booster/master/proportioning kit is the backup retrofit path if direct-fit booster sourcing fails and the workshop accepts new line/fitting work.
+
 > Need quote only for brake vacuum booster / servo assembly for a 1978 Toyota Land Cruiser J40 with front disc brakes and rear drum brakes.
-> Primary target: Toyota `44610-60050`, tandem / dual diaphragm booster for 9/1975-7/1980 J40/BJ40/FJ40 front-disc setup.
-> Acceptable quote alternates only if physically confirmed against the old booster: `44610-60100` / `44610-60180`.
+> Primary target: refurbished/remanufactured Toyota `44610-60050` / `BBN60050` tandem dual-diaphragm booster, 1975-1987 Land Cruiser 40/55/60 disc-brake family.
+> Acceptable quote alternates only if physically confirmed against the old booster or listed by a Land Cruiser supplier for the same 1975-1987 40/55/60 dual-diaphragm family: `44610-60100` / `44610-60180`.
 > Must match:
 > - firewall mounting stud pattern and bracket depth
 > - master-cylinder stud spacing, pilot/seat, and pushrod depth
 > - pedal pushrod, clevis thread, clevis pin, and free-play adjustment range
 > - vacuum check valve, grommet size, nipple direction, and hose barb
 > - clearance to clutch master cylinder, bonnet, and existing brake lines
-> Prefer new or professionally remanufactured. A used local-market booster is acceptable only if it passes bench vacuum hold/leakdown test, has no hissing, has no brake-fluid contamination inside, and has no welded/modified shell. Reject single/drum `44610-60040`, later `44610-60160`, and universal boosters unless the workshop proves full fit and safety.
+> Prefer professionally remanufactured/refurbished stock. A raw used local-market booster is a rebuild-core candidate only unless it passes bench vacuum hold/leakdown test, has no hissing, has no brake-fluid contamination inside, and has no welded/modified shell. Reject single/drum `44610-60040`, later `44610-60160`, and universal boosters unless the workshop proves full fit and safety.
+
+Retrofit fallback wording if no direct-fit unit is found:
+
+> Quote a complete FJ40 dual-diaphragm booster + master cylinder + proportioning valve/bracket/line kit designed for front disc/rear drum. Confirm master bore, pedal pushrod depth, firewall bracket fit, port thread/flare type, and whether new standard/inverted flare nuts are required. This is a system retrofit, not a bolt-on booster-only purchase.
 
 ## Local Market Order - Rear Parking Brake Cable Set
 

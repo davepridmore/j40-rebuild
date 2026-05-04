@@ -50,7 +50,7 @@ Exact release-held hardware spec:
 Generic hose rows were suppressed. Exact hose rows remain in the hose/rubber workstream.
 
 - Fuel: diesel-rated `8mm ID x 3000mm` feed, `6mm ID x 2000mm` return/bleed, `3.2-3.5mm ID x 1000mm` leak-off hose, rolled-edge fuel-injection clamps.
-- Heater: EPDM SAE J20R3 or better, expected `16mm / 5/8in ID`, `400mm` inlet and `280mm` outlet cut lengths after nipple measurement.
+- Heater: EPDM SAE J20R3 or better, `16mm / 5/8in ID` exact order basis, `400mm` inlet and `280mm` outlet released cut lengths.
 - Vacuum/breather: reinforced `10-12mm ID x 2000mm` vacuum hose plus oil-resistant `16-19mm ID x 1000mm` breather hose, only after stock audit.
 - Brake hoses: buy complete crimped brake hydraulic hose assemblies, not generic hose. Baseline order shape is `2 front flex hose assemblies + 1 rear center frame-to-axle hose`, DOT/SAE J1401 or OEM-equivalent, released by fitted end fittings, brackets, and old-sample/free length.
 

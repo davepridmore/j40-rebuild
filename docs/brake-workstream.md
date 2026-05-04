@@ -26,7 +26,7 @@
 - The rear parking-brake cable route and rear axle hard-line route should be renewed in the same workshop window as the rear suspension work, because the axle, U-bolts, spring pads, clips, and routes are exposed then.
 - Keep rear drums as the default path; rear-disc conversion stays out of baseline scope unless inspection or road validation gives a measured reason.
 - Brake flex hoses must be complete crimped hydraulic assemblies rated to `DOT/SAE J1401` or OEM-equivalent. Do not fabricate flex hoses from generic rubber hose.
-- Brake hard lines should be `3/16 in / 4.75 mm` brake tube as the working basis, but flare type, fitting seat, union thread, and route length must be confirmed from the fitted truck.
+- Brake hard-line stock order is `3/16 in / 4.75 mm` brake tube. Flare type, fitting seat, union thread, and route length must be confirmed from the fitted truck before final fabrication.
 
 ## Brake Configuration Evidence Photos
 

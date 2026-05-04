@@ -41,7 +41,7 @@ Do not final-close suspension until brake hose, hard-line, parking-brake cable, 
 | --- | ---: | --- | --- |
 | Ironman Foam Cell main suspension kit | 1 kit | Ordered, pending delivery | Count against [suspension-workstream.md](suspension-workstream.md). |
 | Ironman `24635FE` front damper pair | 2 | Ordered as separate shipment | Must arrive before final suspension assembly or road validation. |
-| Hardwood cribbing and wedge chocks | 8 blocks + 4 wedges | Purchase-ready | Order from [suspension-wood-cribbing-merchant-spec.md](suspension-wood-cribbing-merchant-spec.md). |
+| Hardwood cribbing and wedge chocks | 8 blocks + 4 wedges | Purchase/fabrication-ready | Order from [suspension-wood-cribbing-merchant-spec.md](suspension-wood-cribbing-merchant-spec.md); drawing pack is `data/manual/fabrication/suspension_wood_cribbing_rev_a/`. |
 | Front disc pads and retaining hardware | 1 axle set | Needs fitted-caliper identification | Buy by pad shape/caliper family from the truck, not by year alone. |
 | Front caliper rebuild kits or replacement calipers | 2 sides | Needs fitted-caliper identification | Replace/rebuild if seized, leaking, torn boots, damaged pistons, or unknown unsafe condition. |
 | Front rotors | 2 | Inspect/machine/replace | Replace or machine only after diameter/thickness/runout/scoring check. |

@@ -10,7 +10,7 @@ Use with: `bilal-ganj-master-shopping-list.md` + `bilal-ganj-mechanic-checklist.
 | 11, 225, 226, 227, 228 | Structural/body/electrical hardware kits | `NEW_ONLY` |
 | 12, 13 | Body mount rubbers and shims | `NEW_ONLY` |
 | 15, 16 | Local leaf springs | `NEW_FABRICATED_ONLY` |
-| 29 | Toyota OE glow plugs - `19850-68030` x6 primary, `19850-68060` x6 only if 24V/superglow confirmed | `NEW_ONLY` |
+| 29 | Toyota OE glow plugs - `19850-68030` x6 primary, `19850-68060` x6 only if 24V/superglow confirmed; new-parts counter/order only, not donor scouting | `NEW_ONLY` |
 | 33, 44, 45, 46, 47 | OME/EMU quote items | `NEW_GENUINE_ONLY` |
 | 39 | Ignition lock security | `SERVICE_OR_NEW` (no worn loose used lock) |
 | part_cabin_compact_fuse_boxes | Compact cabin fuse boxes | `NEW_ONLY` or clean donor OEM-style only if terminals/lid are perfect |

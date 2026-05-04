@@ -17,7 +17,10 @@ python3 scripts/build_project_control_ui.py
 
 Then open:
 
-- `docs/project-control-ui/index.html`
+- `./start-dashboard.command`
+
+The launcher serves the repo at `http://127.0.0.1:<port>/docs/project-control-ui/`
+so video controls and media loading behave like the deployed dashboard.
 
 ## Deploy
 

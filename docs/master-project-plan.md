@@ -43,7 +43,7 @@
 | `03_body_chassis` | `in_progress` | Body-off and welding track: weld-zone mapping, structural rust cuts, patch fabrication, and corrosion stack sequencing. | Body is off and weld scope is signed off by zone with materials staged. |
 | `03b_chassis_fixing` | `in_progress` | Chassis track (active after tub separation): clean, inspect, repair/approve rails/crossmembers/mounts, then execute rust treatment, primer, seam/top protection, and cavity-wax closeout in order. | Chassis structural repairs are closed or explicitly approved and the coating/protection stack is documented with no unknowns remaining. |
 | `04_electrical_reset` | `in_progress` | Remove junk wiring, define final architecture, buy only the core electrical materials, and install a documented harness. | Starting, charging, lights, horn, wipers, gauges, and required accessories work from a clean, documented loom. |
-| `04c_local_market_procurement` | `in_progress` | Run one short in-person market lane for parts that need samples, photos, bench tests, or condition checks before purchase. | Local-only problem parts are bought, quoted, or explicitly rejected with evidence. |
+| `04c_local_market_procurement` | `in_progress` | Run one short in-person market lane for parts that need samples, photos, bench tests, timber cutting, or condition checks before purchase. | Local-only problem parts are bought, quoted, or explicitly rejected with evidence. |
 | `05_mechanical_baseline` | `in_progress` | Engine-while-stripped track: run service/inspection tasks while access is open (leaks, cooling, hoses, fluids, tune consumables). | Engine baseline maintenance is complete and post-service defects are logged. |
 | `06_steering_brakes_suspension` | `queued` | Resolve steering slack and brake baseline while receiving and installing the ordered Ironman Foam Cell suspension set under controlled gates. | Steering and braking are safe; Ironman suspension is contents-checked, installed, aligned, road-tested, and rechecked after settling. |
 | `07_interior_weatherproofing` | `queued` | Floor sealing, bed lining, sound deadening, foam, carpet, and interior refit only after leaks and rust are handled. | Cabin is sealed, quieter, and ready for final trim without trapping moisture. |
@@ -88,7 +88,7 @@
 ### Local Market Procurement
 
 - Use `docs/local-market-procurement-workstream.md` for the short market run.
-- This lane covers compact OEM fuse carrier, EPS kit quote, captive/clip hardware, grommets/rubber smalls, body-mount leftovers, sample-matched pins/brackets, brake-opening consumables, timber cribbing, and local mechanical service bundle.
+- This lane covers compact OEM fuse carrier, EPS kit quote, captive/clip hardware, grommets/rubber smalls, body-mount leftovers, sample-matched pins/brackets, brake-opening consumables, timber cribbing, support tools, and local mechanical service bundle.
 - Every market item needs either buy evidence, quote evidence, or a reject note with photos/sample mismatch.
 
 ### Mechanical Baseline (Engine While Stripped)

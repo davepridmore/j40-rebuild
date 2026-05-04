@@ -1,6 +1,8 @@
 # Cabin Fuse Box Acquisition - 2026-05-03
 
-Purpose: source compact internal/cabin fuse boxes similar to the user reference image: a narrow OEM-style under-dash blade-fuse block, not a large marine/RV power distribution panel.
+Purpose: source compact internal/cabin fuse protection around the actual reusable compact block/reference form, not a large marine/RV power distribution panel.
+
+Updated visual reference: `deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png`, the user-supplied actual compact old-OEM fuse box. This replaces the old extracted `junction_block.png` line drawing, the red MIDI holder photo, and any generated/generic fuse-box image for the dashboard and market brief.
 
 ## Target Spec
 
@@ -36,14 +38,16 @@ Preferred form:
 - Standard ATO/ATC medium blade fuses.
 - Compact old-OEM fuse carrier shape matching the existing 12-way donor block as closely as possible.
 - Narrow under-dash shape, similar to a two-column fuse block; avoid modern marine/RV covered blocks if they are physically larger than the donor block.
+- Target physical envelope: roughly no larger than `130 x 70 x 45 mm` unless the electrician approves the mounting location.
 - 6.3 mm male blade/Lucar terminals on the underside or rear, or clean serviceable pigtails.
+- Used donor pigtails should be at least `100 mm` long so the electrician can splice and strain-relieve them correctly.
 - Mounting tabs or screw holes suitable for an under-dash bracket.
 - Separate branch circuits; no hidden shared output wiring unless the electrician maps it.
 - Three isolated power inputs if using one consolidated OEM/Hyundai box.
 - Same model for all boxes if buying multiple units instead of one consolidated box.
 - Maximum branch fuse rating must be treated as `30A` unless the actual fuse-box manufacturer marks a higher per-circuit rating.
 
-Use the existing 12-way donor block as the shape and compactness reference. Do not source bulky universal/marine-style blocks unless all compact OEM local options fail.
+Use the existing reusable compact block as the shape and compactness reference. Do not source bulky universal/marine-style blocks unless all compact OEM local options fail.
 
 ## Consolidated OEM Fuse Box Acceptance
 
@@ -73,6 +77,7 @@ Reference product for local market:
 - `Suzuki Mehran fuse box available` / `Suzuki Mehran Genuine Fuse Box`.
 - Search terms: `Mehran under-dash fuse box`, `Mehran cabin fuse box`, `Mehran fuse carrier`, `Alto/Mehran fuse box`.
 - Target donor: old Suzuki Mehran/Alto passenger-compartment fuse box, not engine-bay relay box and not fuse-box cover only.
+- Donor priority: `1` Suzuki Mehran/Maruti 800 passenger-compartment fuse carrier, `2` Daihatsu Cuore cabin fuse carrier, `3` old Suzuki Alto, `4` compact old Toyota/Hyundai/Honda cabin fuse carrier, `5` modern Picanto/Hyundai-style junction box only if three isolated buses can be mapped and the box physically fits.
 - Current OLX references found 2026-05-04: Multan/Gulgasht Colony listings around `Rs 1,100` to `Rs 1,300`.
 
 Stable reference links:
@@ -83,7 +88,7 @@ Stable reference links:
 - Official Maruti Suzuki genuine-parts fuse category, for fuse type reference only: https://www.marutisuzuki.com/genuine-parts/electrical/electrical-components/fuses
 - Maruti 800 service manual reference showing the vehicle fuse box in wiring circuits: https://www.manualslib.com/manual/2075205/Maruti-Suzuki-Maruti-800.html
 
-Selected visual reference from 2026-05-04 user image:
+Selected visual reference from the user-supplied compact fuse-box photo:
 
 - Maruti/Mehran-style compact fuse carrier with fuse-cover legend and rear pigtails.
 - This form factor is acceptable and preferred over marine/RV or modern universal fuse blocks.
@@ -130,11 +135,13 @@ Kia Picanto official manual support: the 2024 Picanto owner manual documents a d
 
 Copy/paste this to Bilal Ganj, Montgomery Road, or the auto electrician:
 
-> Need compact internal/cabin blade fuse protection for a 1978 Toyota Land Cruiser J40 rewire. Match the attached reference photo: narrow OEM-style under-dash fuse block, not a large marine/RV panel.
+> Need compact internal/cabin blade fuse protection for a 1978 Toyota Land Cruiser J40 rewire. Match the attached existing compact reference photo, not a large marine/RV panel.
 >
 > Need three separate under-dash power groups: constant battery, ignition-on/RUN, and ignition part-way/ACC. Each group needs at least 6 fuse positions. We already have one compact old-OEM 12-fuse donor block that may handle two groups if testing proves the rear terminals are individual and clean. Quote one matching compact old-OEM fuse carrier for the third group. It can be 6/8/10/12-way; we only need six usable fuse positions, but it must be similar compactness to the attached donor block.
 >
 > Reference product: Maruti/Mehran-style compact under-dash fuse carrier with cover/legend and rear pigtails, also sold as `Suzuki Mehran fuse box available`, `Suzuki Mehran Genuine Fuse Box`, or `Mehran cabin fuse box`. Standard ATO/ATC medium blade fuse type, compact old under-dash body, mounting tabs, and rear/underside terminals or clean serviceable pigtails preferred. Small OEM donor boxes from Suzuki Mehran/Alto, Daihatsu Cuore, old Toyota, Hyundai, or Honda are acceptable if condition is clean.
+>
+> Target size is roughly no bigger than 130 x 70 x 45 mm unless the electrician approves the bracket location. Used pigtails should be at least 100 mm long. If it is a single larger OEM junction box, it must have three isolated input groups that can be mapped as BATT, IGN/RUN, and ACC.
 >
 > These are for under-dash cabin branch circuits only. Do not quote relay blocks, loose fuse assortment boxes, or large marine/RV panels.
 >

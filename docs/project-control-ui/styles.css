@@ -580,9 +580,18 @@ h1 {
   margin-top: 0.55rem;
 }
 
+.subtask-section-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.32rem;
+}
+
 .subtask-process h5,
 .subtask-section h5 {
-  margin: 0 0 0.32rem;
+  margin: 0;
   font-size: 0.82rem;
   text-transform: uppercase;
   color: var(--muted);
@@ -700,6 +709,11 @@ th {
   display: block;
   object-fit: cover;
   background: #f2eee6;
+}
+
+.table-image-contain {
+  object-fit: contain;
+  background: #fffaf1;
 }
 
 .table-image-note {

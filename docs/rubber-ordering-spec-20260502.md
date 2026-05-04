@@ -4,6 +4,8 @@ Purpose: consolidate every rubber-related row into one orderable matrix so chass
 
 Primary order matrix: [rubber_ordering_specs.csv](../data/manual/rubber_ordering_specs.csv).
 
+Sendable market pack with extracted dimensions: [Local Market Component Order Spec](local-market-component-order-spec-20260504.md).
+
 Related source lists:
 - [rubbers_exact_online.csv](../data/manual/workbook_tabs/rubbers_exact_online.csv)
 - [rubbers_kit_buy.csv](../data/manual/workbook_tabs/rubbers_kit_buy.csv)

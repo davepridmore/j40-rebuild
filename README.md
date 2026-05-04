@@ -290,9 +290,11 @@ This command creates a backup before edits:
 python3 scripts/build_project_control_ui.py
 ```
 
-Then open:
+Then start the local dashboard server:
 
-- `docs/project-control-ui/index.html`
+```bash
+./start-dashboard.command
+```
 
 15. Run:
 

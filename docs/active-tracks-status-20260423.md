@@ -19,7 +19,7 @@
 | `body_chassis` | `in_progress` | `critical` | `stripdown_cataloguing` | Execute weld-zone cut/fab/weld/coating sequence and freeze refit interface points. | Body-off shell repairs are welded, sealed, and signed off zone by zone. |
 | `chassis_fixing` | `in_progress` | `high` | `body_chassis` | Run cleanup sequence with wire cup first on non-flat frame geometry, then flats cleanup and issue closure before coating. | No unresolved structural defects; protection stack documented. |
 | `electrical_reset` | `in_progress` | `high` | `stripdown_cataloguing` | Freeze baseline circuit list and lock harness strategy before further optional buys. | Baseline electrical system is clean, documented, and functional. |
-| `local_market_procurement` | `in_progress` | `high` | `electrical_reset`, `chassis_fixing`, `mechanical_baseline` | Run the short market list for compact fuse carrier, EPS kit, body hardware, grommets, and sample-matched small parts. | Local-only problem parts are bought, quoted, or rejected with photos, prices, and sample notes. |
+| `local_market_procurement` | `in_progress` | `high` | `electrical_reset`, `chassis_fixing`, `mechanical_baseline`, `suspension_upgrade` | Run the short market list for compact fuse carrier, timber cribbing, support tools, EPS quotes, body hardware, grommets, and sample-matched small parts. | Local-only problem parts are bought, quoted, or rejected with photos, prices, and sample notes. |
 | `mechanical_baseline` | `in_progress` | `high` | `stripdown_cataloguing`, `body_chassis` | Run stripped-state engine maintenance checklist while access is open. | Baseline maintenance complete with post-service defect log. |
 | `steering_brakes_suspension` | `queued` | `high` | `mechanical_baseline` | Track Ironman shipments while closing brake and steering baseline inspections. | Safe steering/braking baseline plus Ironman install gates closed. |
 | `suspension_upgrade` | `queued` | `high` | `chassis_fixing` | Receive both Ironman shipments, contents-check the kit, write the torque sheet, then install per `docs/suspension-workstream.md`. | Ironman kit installed, aligned, road-tested, and 50 km / 500 km rechecks logged. |
@@ -42,7 +42,7 @@ All six should be closed with photo evidence before final chassis coating signof
 
 1. Keep `WP01` body rust closure and `WP03` electrical baseline running in parallel.
 2. Start `chassis_fixing` mechanical cleanup now: wire cup first on non-flat parts, then strip-disc/flap-disc on flatter faces, and close issue list in the same body-welding window.
-3. Run `local_market_procurement` as a separate market pass for fuse carrier, EPS quote, small hardware, grommets, and sample-matched parts.
+3. Run `local_market_procurement` as a separate market pass for fuse carrier, timber cribbing, support tools, EPS quote, small hardware, grommets, and sample-matched parts.
 4. Start `WP04` mechanical baseline procurement/inspection flow (condition-based bundle, no upgrade creep).
 5. Track Ironman suspension delivery only; do not begin final install until the main kit, separate `24635FE x2` front damper pair, torque sheet, safe support setup, and chassis hanger checks are closed.
 6. Hold interior finish stack (`WP05`) until body sealing gate closes.

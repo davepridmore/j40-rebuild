@@ -67,6 +67,7 @@ Priority reminder:
 
 - NEW ONLY. Do not accept used/refurbished plugs.
 - Confirm exact engine-code thread/reach/voltage spec before purchase.
+- This is not a Bilal Ganj donor-scout item; order from a new Toyota/diesel parts counter after confirmation.
 
 ### Local Leaf Springs (Rows 15,16)
 

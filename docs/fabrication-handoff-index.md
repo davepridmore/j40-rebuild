@@ -31,6 +31,26 @@ Release position:
 - Final batch production still waits for the hold fields in `data/manual/rubber_recreation_measurement_closure.csv`.
 - Strip files are stock-envelope/template blanks only. Trace the physical left/right strip rubbers and metal carriers before production cutting.
 
+## Suspension Wood Cribbing - Rev A
+
+Directory: [data/manual/fabrication/suspension_wood_cribbing_rev_a](../data/manual/fabrication/suspension_wood_cribbing_rev_a/README.md)
+
+Control spec: [suspension-wood-cribbing-merchant-spec.md](suspension-wood-cribbing-merchant-spec.md)
+
+Primary files:
+- `data/manual/fabrication/suspension_wood_cribbing_rev_a/j40_suspension_wood_cribbing_rev_a_dimension_sheet.pdf`
+- `data/manual/fabrication/suspension_wood_cribbing_rev_a/fabricator_cut_list.csv`
+- `data/manual/fabrication/suspension_wood_cribbing_rev_a/inspection_checklist.csv`
+
+DXF files:
+- `swc_rectangular_cribbing_block_rev_a.dxf` - rectangular hardwood cribbing block, qty `8`
+- `swc_wedge_chock_rev_a.dxf` - wedge chock side/top/end profile, qty `4`
+
+Release position:
+- Drawing backup for the local-market timber buy in [local-market-procurement-workstream.md](local-market-procurement-workstream.md).
+- Control dimensions are metric: blocks `300 x 150 x 75 mm`; wedges `200 x 100 mm` base with `75 mm` rear height and `25 mm` nose height.
+- These are supplemental cribbing/chocks only and must not be treated as substitutes for rated jack stands or axle support.
+
 ## Electrical Mounting Packages
 
 ### MIDI 5-Way Plate Mount - Rev C
@@ -83,5 +103,6 @@ The boxed MIDI module packages remain in the repo as history, but should not be 
 
 - Confirm material and thickness on the purchase order before cutting.
 - Do not treat construction, bend, recess, register, insert, or template layers as through-cuts unless the package README says so.
+- Wood cribbing DXFs are dimensional saw-cut/profile references for the timber/workshop package, not vehicle mounting parts.
 - Deburr all metal parts and apply corrosion protection after forming.
 - Trial-fit first articles before batch production or final loom/body closeout.
