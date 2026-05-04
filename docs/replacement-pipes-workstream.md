@@ -24,17 +24,17 @@ Keep tool purchases outside the hose order. Rubber hose is cut to length, molded
 | `RPO-COOL-004A/B` | EPDM heater hose, SAE J20R3 or better. Use `16 mm / 5/8 in` ID exact order basis. | `400 mm` inlet + `280 mm` outlet, or `1000 mm` stock to cut | Engine heater nipple OD, heater-core nipple OD, route lengths, clamp OD, rear-heater presence. | `COOL-C` |
 | `RPO-COOL-005` | Fabricate formed metal coolant/radiator pipe from the physical sample. Use coolant-compatible mild steel/aluminized steel or 304 stainless tube. Match OD, wall, bends, clocking, offsets, beaded ends, clamp lands, and hose overlap. | `750 mm` minimum tube blank; quote `1000 mm` stock if sold by meter/foot | Final centerline length from sample, tube OD, hose ID, wall thickness target `1.2-1.6 mm`, bend centerlines/radii/clocking, bead height target `1.5-2.0 mm` unless sample differs, clamp land length, fan/belt/radiator/body clearance. | `COOL-D` |
 | `RPO-COOL-006A/B` | Two new EPDM coolant/radiator connector hoses for the formed pipe. Use `28-30 mm` ID exact order basis. Use straight hose only if it does not kink; otherwise match new molded EPDM connector shape. | `2 x 500 mm` connector blanks, or `1000 mm` total stock | Pipe-end OD and bead, mating spigot OD, connector free/cut length, hose ID/OD, overlap, clamp band width, bend/kink clearance. | `COOL-D` |
-| `RPO-FUEL-001A` | Diesel-rated feed hose, SAE J30R9 / J30R14T2 / DIN 73379-3E or equivalent. | `8 mm ID x 3000 mm` | Fuel-filter barb OD, injection-pump feed barb OD, cut lengths, hose OD for rolled-edge fuel-injection clamps. | `FUEL-A` |
+| `RPO-FUEL-001A` | Diesel-rated feed hose for the measured tank/chassis-to-engine feed route, SAE J30R9 / J30R14T2 / DIN 73379-3E or equivalent. | `8 mm ID x 1500 mm` buy length; measured fitted route about `1200 mm` | Tank/line end OD, fuel-filter barb OD, injection-pump feed barb OD, cut length, hose OD for rolled-edge fuel-injection clamps, and chassis chafe/support. | `FUEL-A` |
 | `RPO-FUEL-001B` | Diesel-rated return/bleed hose, same rating family as above. | `6 mm ID x 2000 mm` | Pump/filter return barb ODs, cut lengths, hose OD for clamps. | `FUEL-A` |
 | `RPO-FUEL-001C` | Braided diesel injector leak-off hose. | `3.2-3.5 mm ID x 1000 mm` | Injector nipple OD, cap/end arrangement, sample hose markings. | `FUEL-A` |
-| `RPO-FUEL-002A/B` | New low-pressure fuel hard-line tube. Use automotive bundy steel or CuNi/Cunifer only; no bare copper. | Feed `8 mm OD x 5000 mm`; return `6 mm OD x 5000 mm` | Replace the old feed/return hard lines with new tube copied from the old route. Confirm tube OD, full/section length, route bends, end/union style, clip positions, pass-through protection. | `FUEL-B` |
-| `RPO-VAC-001A` | Reinforced brake-booster/vacuum hose that will not collapse. | `10-12 mm ID x 2000 mm` | Trim to route during install; confirm pump/booster/check-valve barb fit, check-valve direction, heat/chafe exposure, and brake-assist vacuum. | standard 2H basis |
-| `RPO-VAC-001B` | Oil-resistant breather/oil-mist hose. | `16-19 mm ID x 1000 mm` | Trim to route during install; confirm breather spigot fit, route length, oil exposure, heat/chafe exposure, and no oil swelling. | standard 2H basis |
-| `RPO-VAC-001C` | New 2H vacuum pump oil outlet hose if fitted. Toyota/OEM `90923-02079` is a reference only. | `1` new hose if fitted | Confirm fitted presence, overall free length in `mm`, end IDs, bend shape, both fitting ODs. | capture pending |
+| `RPO-FUEL-002A/B` | New low-pressure fuel hard-line tube. Use automotive bundy steel or CuNi/Cunifer only; no bare copper. | Feed `8 mm OD x 5000 mm` only if a separate rigid feed line exists beyond `RPO-FUEL-001A`; return `6 mm OD x 5000 mm` | Do not duplicate the measured `1200 mm` flexible feed hose. Replace old rigid feed/return hard lines with new tube only where rigid sections exist. Confirm tube OD, full/section length, route bends, end/union style, clip positions, pass-through protection. | `FUEL-B` |
+| `RPO-VAC-001A` | Reinforced brake-booster/vacuum hose that will not collapse. | `10-12 mm ID x 2000 mm` | Trim to route during install; confirm pump/booster/check-valve barb fit, check-valve direction, heat/chafe exposure, and brake-assist vacuum. | `VAC-A` |
+| `RPO-VAC-001B` | Oil-resistant breather/oil-mist hose. | `16-19 mm ID x 1000 mm` | Trim to route during install; confirm breather spigot fit, route length, oil exposure, heat/chafe exposure, and no oil swelling. | `VAC-A` |
+| `RPO-VAC-001C` | New 2H vacuum pump oil outlet hose if fitted. Toyota/OEM `90923-02079` is a reference only. | `1` new hose if fitted | Confirm fitted presence, overall free length in `mm`, end IDs, bend shape, both fitting ODs. | `VAC-A` |
 | `RPO-BRAKE-001A` | New complete brake flex hose assemblies matched to current front-disc/rear-drum hardware. DOT/SAE J1401 or OEM-equivalent rating. | `3` new complete assemblies: front left, front right, rear center | Copy each old assembly free length in `mm`, end thread/banjo/seat, bracket retention, and clip groove. Bleed and pressure-test after install. | `BRAKE-A` |
 | `RPO-BRAKE-001B` | New brake hard-line tube and brake-rated fittings. Use bundy steel or CuNi/Cunifer only; no bare copper. | `4.75 mm / 3/16 in OD x 7600 mm / 25 ft` coil allowance | Old-line templates, flare standard, union thread, fitting seat, individual route lengths, and clip positions control final fabrication. | `BRAKE-A` |
-| `RPO-CLUTCH-001A` | New complete clutch flex hose. Brake/clutch hydraulic-rated. | `1` new complete assembly | Copy old assembly free length in `mm`, master/slave port thread, end/seat style, bracket retention, and drivetrain movement allowance. | capture pending |
-| `RPO-CLUTCH-001B` | New clutch hard line. Brake/clutch-rated bundy steel or CuNi/Cunifer. | `4.75 mm / 3/16 in OD x 1500 mm` blank allowance | Final cut comes from master-to-slave route; confirm hard-line OD, port thread, flare/seat style, clips, and movement clearance. | capture pending |
+| `RPO-CLUTCH-001A` | New complete clutch flex hose. Brake/clutch hydraulic-rated. | `1` new complete assembly | Copy old assembly free length in `mm`, master/slave port thread, end/seat style, bracket retention, and drivetrain movement allowance. | `CLUTCH-A` |
+| `RPO-CLUTCH-001B` | New clutch hard line. Brake/clutch-rated bundy steel or CuNi/Cunifer. | `4.75 mm / 3/16 in OD x 1500 mm` blank allowance | Final cut comes from master-to-slave route; confirm hard-line OD, port thread, flare/seat style, clips, and movement clearance. | `CLUTCH-A` |
 | `RPO-CLIP-001` | Rubber-lined P-clips and edge/pass-through protection for fuel, brake, and clutch hard lines. | Mixed pack, around `20` clips plus fasteners | Clip IDs matched to `4.75 mm`, `6 mm`, and `8 mm` line ODs; support hard lines every `300-400 mm`. | `FUEL-B`, `BRAKE-A` |
 
 ## Hard Rules
@@ -100,6 +100,7 @@ Additional reference media from the May 3 intake has been added below. Use these
 - `photos/20260502_160950_gp_5KW8RnDQ.jpg`
 - `photos/20260502_161055_gp_lS8VRrWg.jpg`
 - `photos/20260502_161214_gp_zc3zwXlg.jpg`
+- `photos/20260504_090640_user_long_diesel_feed_measurement.png`
 - `photos/20260503_152937_gp_HdsO0xMA.jpg`
 - `photos/20260503_153042_gp_ZL9JEazw.jpg`
 - `photos/20260503_155314_gp_et0BrVkQ.jpg`
@@ -112,8 +113,20 @@ Additional reference media from the May 3 intake has been added below. Use these
 
 - `photos/20260422_004306_gp_vGlNr2UA.jpg`
 - `photos/20260422_004311_gp_994KQ0Pw.jpg`
+- `photos/20260501_194026_gp_gjPjhxdA.jpg`
+- `photos/20260501_194041_gp_6zRIFJUw.jpg`
+- `photos/20260501_194106_gp_e4CETkdg.jpg`
 - `photos/20260503_152926_gp_4eOEiLQQ.jpg`
 - `photos/20260503_153130_gp_gkKoFapg.jpg`
+
+### `VAC-A` Vacuum, Breather, And Oil-Mist Hose Context
+
+- `photos/20260503_153200_gp_YXNuQgGQ.jpg`
+- `photos/20260503_155132_gp_r4UGNnsQ.jpg`
+- `photos/20260503_155314_gp_et0BrVkQ.jpg`
+- `photos/20260503_160207_gp_43b3TblQ.jpg`
+- `photos/20260503_160327_gp_sFtQuWNQ.jpg`
+- `photos/20260503_160427_gp_HSrKmfzw.jpg`
 
 ### `BRAKE-A` Brake Flex, Hard Lines, Unions, And Clips
 
@@ -127,6 +140,15 @@ Additional reference media from the May 3 intake has been added below. Use these
 - `photos/20260503_160057_gp_VL1ESgKQ.jpg`
 - `photos/20260503_160107_gp_HBcJ3Ipg.jpg`
 - `photos/20260503_160112_gp_eWV3krtw.jpg`
+- `photos/20260501_194305_gp_EllBGvXA.jpg`
+- `photos/20260501_194313_gp_lfUqLibA.jpg`
+- `photos/20260501_194322_gp_XuRtjN4w.jpg`
+
+### `CLUTCH-A` Clutch Bellhousing And Hydraulic Route Context
+
+- `photos/20260430_215915_gp_ycQ395Gg.jpg`
+- `photos/20260430_215939_gp_EjZ7u1ow.jpg`
+- `photos/20260430_233755_gp_DO69MLAA.jpg`
 
 ## Source Tables
 

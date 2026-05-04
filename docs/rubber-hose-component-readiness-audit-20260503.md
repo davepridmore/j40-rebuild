@@ -30,7 +30,7 @@ These rows are direct local-market purchases now; final trimming and checks happ
 
 - Coolant/radiator/heater/overflow hoses: buy the standard molded hoses or the listed exact stock lengths; trimming and clamp choice are install actions.
 - Formed-pipe connector hoses: buy two `500 mm` EPDM connector blanks on the exact `28-30 mm ID` order basis; trim shorter by sample and dry-fit.
-- Fuel hoses: buy `8 mm x 3000 mm`, `6 mm x 2000 mm`, and `3.2-3.5 mm x 1000 mm` diesel-rated hose stock plus rolled-edge fuel clamps.
+- Fuel hoses: buy `8 mm x 1500 mm` feed hose for the measured approx `1200 mm` tank-to-engine route, `6 mm x 2000 mm` return hose, and `3.2-3.5 mm x 1000 mm` diesel-rated leak-off hose stock plus rolled-edge fuel clamps.
 - Vacuum/breather/oil-mist stock: buy `10-12 mm ID x 2000 mm` reinforced vacuum hose and `16-19 mm ID x 1000 mm` oil-resistant breather hose.
 
 Do not send these as generic direct purchases:

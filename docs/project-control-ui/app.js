@@ -2125,9 +2125,25 @@
           ${rows
             .map(
               (link, index) =>
-                `<a class="item-link" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(cleanString(link.label) || `File ${index + 1}`)}</a>`
+                `<a class="item-link" href="${escapeHtml(link.url)}" download>${escapeHtml(cleanString(link.label) || `File ${index + 1}`)}</a>`
             )
             .join("")}
+        </div>
+      </div>
+    `;
+  }
+
+  function renderPackageDownload(link) {
+    if (!link || !cleanString(link.url)) {
+      return "";
+    }
+    const byteCount = Number(link.bytes);
+    const size = Number.isFinite(byteCount) && byteCount > 0 ? ` · ${Math.round(byteCount / 1024)} KB` : "";
+    return `
+      <div class="fabrication-link-group fabrication-download-group">
+        <strong>Package</strong>
+        <div class="item-links">
+          <a class="item-link package-download-link" href="${escapeHtml(link.url)}" download>${escapeHtml(cleanString(link.label) || "Download package (.zip)")}${escapeHtml(size)}</a>
         </div>
       </div>
     `;
@@ -2150,7 +2166,7 @@
             ${chip(`${quoteRows} Quote/First Article`)}
           </div>
         </div>
-        <p class="small-muted">Clickable shop package links for PDF review, DXF cutting files, SVG visual checks, cut lists, and inspection sheets.</p>
+        <p class="small-muted">Download the full shop package archive, or download individual PDF, DXF, SVG, cut-list, and inspection files.</p>
         <div class="table-wrap">
           <table>
             <thead>
@@ -2174,6 +2190,7 @@
                       <td>${statusChip(row.current_status || "unknown")}</td>
                       <td>${escapeHtml(row.release_position || "")}</td>
                       <td>
+                        ${renderPackageDownload(row.archive_link)}
                         ${renderPackageLinks("Primary", row.primary_links)}
                         ${renderPackageLinks("DXF", row.dxf_links)}
                         ${renderPackageLinks("SVG", row.svg_links)}
@@ -2714,10 +2731,52 @@
     if (id === "CR-FRONT-003" || id === "FS-STRIP-R" || text.includes("right front-support strip")) {
       return ["20260502_004222_gp_PKRe5HSQ"];
     }
-    if (id === "RPO-COOL-005" || id === "HLS-12" || text.includes("formed metal coolant")) {
+    if (id === "RPO-COOL-001" || id === "HLS-01" || id === "RP-COOL-001" || text.includes("upper radiator hose")) {
+      return ["20260430_220004_gp_C9oYiYmA", "20260503_160327_gp_sFtQuWNQ", "20260503_153249_gp_Lg6JX6Gg"];
+    }
+    if (id === "RPO-COOL-002" || id === "HLS-02" || id === "RP-COOL-002" || text.includes("lower radiator hose")) {
+      return ["20260430_215957_gp_2iBbUagw", "20260503_160010_gp_9F5ZH8kQ", "20260503_155956_gp_P4xfMJzw"];
+    }
+    if (id === "RPO-COOL-003" || id === "HLS-03" || id === "RP-COOL-003" || text.includes("overflow hose")) {
+      return ["20260503_153639_gp_ZueGlpJw", "20260503_153647_gp_L54euoMQ", "20260503_155956_gp_P4xfMJzw"];
+    }
+    if (id === "RPO-COOL-004A" || id === "RPO-COOL-004B" || id === "HLS-04" || id === "RP-COOL-004" || text.includes("heater hose")) {
+      return ["20260503_155747_gp_s91OxyAA", "20260503_155825_gp_Gvgy4PXA", "20260503_153200_gp_YXNuQgGQ"];
+    }
+    if (id === "RPO-FUEL-001B" || id === "HLS-07" || text.includes("return/bleed")) {
+      return ["20260503_160427_gp_HSrKmfzw", "20260503_152937_gp_HdsO0xMA", "20260503_160207_gp_43b3TblQ"];
+    }
+    if (id === "RPO-FUEL-001C" || id === "HLS-08" || text.includes("leak-off")) {
+      return ["20260503_160427_gp_HSrKmfzw", "20260503_155314_gp_et0BrVkQ", "20260503_160207_gp_43b3TblQ"];
+    }
+    if (id === "RPO-FUEL-001A" || id === "HLS-06" || id === "RP-FUEL-001" || text.includes("diesel feed")) {
+      return ["20260503_152937_gp_HdsO0xMA", "20260503_153042_gp_ZL9JEazw", "20260503_160427_gp_HSrKmfzw", "20260504_090640_user_long_diesel_feed_measurement"];
+    }
+    if (id === "RPO-FUEL-002A" || id === "RPO-FUEL-002B" || id === "HLS-13" || id === "HLS-14" || id === "RP-FUEL-002" || text.includes("fuel hard line")) {
+      return ["20260503_153130_gp_gkKoFapg", "20260503_152926_gp_4eOEiLQQ", "20260501_194026_gp_gjPjhxdA"];
+    }
+    if (id === "RPO-VAC-001A" || id === "HLS-10" || id === "RP-VAC-001" || text.includes("vacuum hose")) {
+      return ["20260503_155314_gp_et0BrVkQ", "20260503_160207_gp_43b3TblQ", "20260503_160427_gp_HSrKmfzw"];
+    }
+    if (id === "RPO-VAC-001B" || id === "RPO-VAC-001C" || id === "HLS-11" || id === "HLS-20" || text.includes("breather") || text.includes("oil-mist")) {
+      return ["20260503_155314_gp_et0BrVkQ", "20260503_160207_gp_43b3TblQ", "20260503_160327_gp_sFtQuWNQ"];
+    }
+    if (id === "RPO-BRAKE-001A" || id === "HLS-17" || id === "RP-BRAKE-001" || text.includes("brake flex")) {
+      return ["20260503_152902_gp_xBbsFRzQ", "20260503_152913_gp_AvVGAlHw", "20260503_160050_gp_3aBjHmzw"];
+    }
+    if (id === "RPO-BRAKE-001B" || id === "HLS-15" || text.includes("brake hard-line") || text.includes("brake tube")) {
+      return ["20260503_153017_gp_dM8BCa4w", "20260503_153031_gp_rFfqDUBw", "20260503_153130_gp_gkKoFapg"];
+    }
+    if (id === "RPO-CLUTCH-001A" || id === "RPO-CLUTCH-001B" || id === "HLS-18" || id === "HLS-19" || id === "RP-CLUTCH-001" || text.includes("clutch")) {
+      return ["20260430_215915_gp_ycQ395Gg", "20260430_215939_gp_EjZ7u1ow", "20260430_233755_gp_DO69MLAA"];
+    }
+    if (id === "RPO-CLIP-001" || id === "HLS-16" || text.includes("p-clip") || text.includes("edge protection")) {
+      return ["20260503_153130_gp_gkKoFapg", "20260503_153017_gp_dM8BCa4w", "20260503_152926_gp_4eOEiLQQ"];
+    }
+    if (id === "RPO-COOL-005" || id === "HLS-12" || id === "RP-COOL-005" || text.includes("formed metal coolant")) {
       return ["20260502_004106_gp_wlYlUahA", "20260502_004044_gp_Hx4Yo0Qg"];
     }
-    if (id === "RPO-COOL-006A" || id === "RPO-COOL-006B" || id === "HLS-05A" || id === "HLS-05B" || text.includes("connector hose")) {
+    if (id === "RPO-COOL-006A" || id === "RPO-COOL-006B" || id === "HLS-05A" || id === "HLS-05B" || id === "RP-COOL-006" || text.includes("connector hose")) {
       return ["20260502_004133_gp_ZEpqmARA", "20260502_004044_gp_Hx4Yo0Qg"];
     }
     return [];
@@ -2760,6 +2819,52 @@
       };
       specRow.image = bestScoutOriginalImage(specRow) || specRow.image || scoutComponentImage(specRow);
       return specRow;
+    });
+  }
+
+  function chassisRubberScoutSpecRows() {
+    return CHASSIS_RUBBER_SPEC_ROWS.map((row) => {
+      const imagePath = cleanString(row.image);
+      const mediaId = imagePath.split("/").pop().replace(/\.[^.]+$/, "") || row.id;
+      const image = imagePath.toLowerCase().endsWith(".svg")
+        ? scoutReferenceImage(imagePath, row.imageCaption || row.part, mediaId)
+        : scoutPreviousPartImage(imagePath, `${row.part} · original/sample reference`, mediaId, [row.id.toLowerCase()]);
+      const fileNames = Array.isArray(row.files) && row.files.length
+        ? row.files.map(([, href]) => cleanString(href).split("/").pop()).filter(Boolean).join(" / ")
+        : "machine_definitions.csv / machine_definitions.json";
+      const isCup = row.id.startsWith("BM-CUP");
+      const isShim = row.id.startsWith("BM-SHIM");
+      const isBump = row.id.startsWith("BUMP");
+      const isExhaust = row.id.startsWith("EXH-");
+      return {
+        id: row.id,
+        item: row.part,
+        partNumber: fileNames,
+        route: row.route,
+        state: isBump ? "buy_new_only" : isShim ? "trace_then_cut" : "quote_first_article_ready",
+        spec: row.spec,
+        qty: row.qty,
+        material: isCup
+          ? "New 2.5-3.0 mm steel, zinc plated or epoxy primed after forming."
+          : isShim
+            ? "New flat steel, deburred and zinc plated or epoxy primed."
+            : isBump
+              ? "New molded automotive bump-stop compound; no used or universal mismatch."
+              : isExhaust
+                ? "New heat/vibration-resistant molded exhaust rubber, Shore A 60 +/-5."
+                : "New black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5.",
+        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv/json and dimension sheet PDF",
+        action: isShim
+          ? "Trace preserved station footprint before CNC/laser cutting final outline."
+          : isBump
+            ? "Buy manufacturer-style part; verify bracket and axle contact point before payment."
+            : "Send DXF/SVG/PDF package in millimeters; quote one first article before batch.",
+        reject: isBump
+          ? "Used, cracked, oil-softened, universal height/profile, or wrong bracket fit."
+          : "Used/salvage material, wrong scale, wrong thickness, or sample mismatch.",
+        notes: row.notes,
+        image,
+      };
     });
   }
 
@@ -3038,6 +3143,14 @@
       workstreams: ["chassis_rubbers"],
       terms: ["body mount", "rubber kit", "shim", "sleeve", "isolator"],
     });
+    const rubberRequirementSpecRows = scoutOrderSpecRows((chassisRubbersWorkstream && chassisRubbersWorkstream.chassis_rubber_requirements) || []);
+    const rubberSupportRequirementRows = rubberRequirementSpecRows.filter((row) =>
+      ["CR-MAIN-003", "CR-HARD-001"].includes(cleanString(row.id).toUpperCase())
+    );
+    const rubberScoutSpecRows = [
+      ...chassisRubberScoutSpecRows(),
+      ...rubberSupportRequirementRows,
+    ];
     const fuseBoxParts = filterScoutRows(allPartRows, {
       entryIds: ["part_cabin_compact_fuse_boxes"],
       workstreams: ["electrical_reset"],
@@ -3725,7 +3838,7 @@
         id: "rubbers",
         title: "Rubbers",
         description: "Use the exact rubber requirement list and controlled body-mount release gates. Every fitted rubber, boot, grommet, pad, hanger, and isolator is new-only.",
-        chips: ["New-only rubber", "9 rubber requirements", "No salvage rubber"],
+        chips: ["New-only rubber", "Part-level order rows", "CNC files linked"],
         parts: rubberParts,
         marketSpecs: attachScoutImage(
           [rubberMarketSpec],
@@ -3736,8 +3849,13 @@
           scoutDocLink("docs/rubber-ordering-spec-20260502.md", "Rubber ordering spec"),
           scoutDocLink("docs/local-market-component-order-spec-20260504.md", "Exact local-market component order spec"),
           scoutDocLink("docs/body-mount-order-release-plan-20260502.md", "Body-mount order release plan"),
+          scoutDocLink("data/manual/fabrication/rubber_recreation_rev_a/README.md", "Rubber CNC/shop package"),
+          scoutDocLink("data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf", "Rubber dimension sheet PDF"),
         ],
-        exactSpecRows: scoutOrderSpecRows((chassisRubbersWorkstream && chassisRubbersWorkstream.chassis_rubber_requirements) || []),
+        exactSpecRows: rubberScoutSpecRows,
+        fabricationPackages: ((fabricationWorkstream && fabricationWorkstream.fabrication_packages) || []).filter(
+          (pkg) => cleanString(pkg && pkg.package_id).includes("rubber_recreation")
+        ),
       },
       {
         id: "additional-fuse-box",
@@ -3801,11 +3919,13 @@
         ],
         docLinks: [
           scoutDocLink("docs/fabrication-handoff-index.md", "Fabrication handoff index"),
-          scoutDocLink("docs/rubber-recreation-fabrication-spec-20260502.md", "Rubber recreation fabrication spec"),
+          scoutDocLink("data/manual/fabrication/midi5_plate_mount_rev_c/README.md", "MIDI holder subplate package"),
         ],
-        exactSpecRows: fabricationExactSpecRows,
+        exactSpecRows: fabricationExactSpecRows.filter((row) => row.id === "MIDI5-SUBPLATE-001"),
         underlayRows: fabricationElectricalUnderlayRows,
-        fabricationPackages: (fabricationWorkstream && fabricationWorkstream.fabrication_packages) || [],
+        fabricationPackages: ((fabricationWorkstream && fabricationWorkstream.fabrication_packages) || []).filter(
+          (pkg) => !cleanString(pkg && pkg.package_id).includes("rubber_recreation")
+        ),
       },
     ];
   }
@@ -3946,6 +4066,20 @@
         note: "Pieces below are the oval pads and handed strip rubbers from the removed originals.",
       };
     }
+    if (id.includes("BUMP") || text.includes("bump stop")) {
+      return {
+        key: "rubber-bump-stops",
+        label: "Bump Stops",
+        note: "Pieces below are new molded stop purchases unless an exact physical sample is used for a mold.",
+      };
+    }
+    if (id.includes("EXH") || text.includes("exhaust")) {
+      return {
+        key: "exhaust-rubber",
+        label: "Exhaust Rubber Hangers",
+        note: "Pieces below use the teardrop exhaust cushion style or a sample-matched new molded copy.",
+      };
+    }
     if (text.includes("sleeve") || text.includes("cup") || text.includes("seat washer")) {
       return {
         key: "rubber-metal-seats",
@@ -3987,7 +4121,9 @@
       "body-mount-rubbers": 10,
       "rubber-metal-seats": 20,
       "front-support-rubbers": 30,
-      "rubber-hardware": 40,
+      "exhaust-rubber": 40,
+      "rubber-bump-stops": 50,
+      "rubber-hardware": 60,
       "other-pipe": 999,
     };
     const groups = [];

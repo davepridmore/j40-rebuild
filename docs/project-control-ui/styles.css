@@ -975,6 +975,11 @@ th {
   margin-bottom: 0;
 }
 
+.fabrication-download-group {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.5rem;
+}
+
 .item-link {
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -988,6 +993,12 @@ th {
   overflow-wrap: anywhere;
   padding: 0.22rem 0.48rem;
   text-decoration: none;
+}
+
+.package-download-link {
+  background: #e5f0e8;
+  border-color: #8eb39f;
+  color: #315b46;
 }
 
 .item-link:hover,

@@ -4,6 +4,7 @@ from __future__ import annotations
 import csv
 import json
 import re
+import zipfile
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -58,6 +59,7 @@ OTHER_BUILD_REFERENCE_MEDIA_PATH = MANUAL_DIR / "other_build_reference_media.csv
 OTHER_J40_BUILDS_DIR = ROOT / "data" / "reference" / "other_j40_builds"
 PAKWHEELS_DIR = ROOT / "data" / "pakwheels"
 OUTPUT_DATA_JS_PATH = UI_DIR / "data.js"
+FABRICATION_PACKAGE_ARCHIVE_DIR = ROOT / "deliverables" / "fabrication_packages"
 LOCAL_ORDER_IMAGE_DIRS: tuple[Path, ...] = (
     ROOT / "photos",
     ROOT / "deliverables" / "selling_site_images" / "images",
@@ -1952,6 +1954,45 @@ def package_relative_file_link(package_dir: str, filename: str) -> dict[str, str
     return file_link(f"{package_dir.rstrip('/')}/{name}", name)
 
 
+def resolve_repo_path(repo_path: str) -> Path:
+    path = Path(clean(repo_path).replace("\\", "/"))
+    return path if path.is_absolute() else ROOT / path
+
+
+def package_archive_link(package_id: str, package_dir: str, extra_repo_paths: Iterable[str]) -> dict[str, Any] | None:
+    package = clean(package_id)
+    directory = clean(package_dir)
+    if not package or not directory:
+        return None
+
+    archive_sources: dict[str, Path] = {}
+    package_path = resolve_repo_path(directory)
+    if package_path.exists() and package_path.is_dir():
+        for path in sorted(item for item in package_path.rglob("*") if item.is_file()):
+            archive_sources[repo_relative_path(path)] = path
+    for repo_path in extra_repo_paths:
+        source_path = resolve_repo_path(repo_path)
+        if source_path.exists() and source_path.is_file():
+            archive_sources[repo_relative_path(source_path)] = source_path
+    if not archive_sources:
+        return None
+
+    FABRICATION_PACKAGE_ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+    archive_path = FABRICATION_PACKAGE_ARCHIVE_DIR / f"{package}.zip"
+    with zipfile.ZipFile(archive_path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+        for arcname, source_path in sorted(archive_sources.items()):
+            info = zipfile.ZipInfo(arcname)
+            info.date_time = (2026, 5, 4, 0, 0, 0)
+            info.external_attr = 0o644 << 16
+            archive.writestr(info, source_path.read_bytes())
+
+    link = file_link(repo_relative_path(archive_path), "Download package (.zip)")
+    if link is None:
+        return None
+    link["bytes"] = archive_path.stat().st_size
+    return link
+
+
 def row_text_values(row: dict[str, str]) -> list[str]:
     return [clean(value) for value in row.values() if clean(value)]
 
@@ -2525,6 +2566,7 @@ def fabrication_package_payload(row: dict[str, str]) -> dict[str, Any]:
     package_dir = str(Path(readme_path).parent).replace("\\", "/") if readme_path else f"data/manual/fabrication/{package_id}"
 
     primary_links: list[dict[str, str]] = []
+    primary_repo_paths: list[str] = []
     for field, label in (
         ("readme", "README"),
         ("primary_pdf", "PDF"),
@@ -2532,20 +2574,36 @@ def fabrication_package_payload(row: dict[str, str]) -> dict[str, Any]:
         ("inspection_checklist", "Inspection checklist"),
         ("source_spec", "Source spec"),
     ):
-        link = file_link(clean(row.get(field)), label)
+        repo_path = clean(row.get(field))
+        link = file_link(repo_path, label)
         if link is not None:
             primary_links.append(link)
+            primary_repo_paths.append(repo_path)
+    for filename, label in (
+        ("machine_definitions.csv", "Machine CSV"),
+        ("machine_definitions.json", "Machine JSON"),
+    ):
+        repo_path = f"{package_dir.rstrip('/')}/{filename}"
+        machine_path = resolve_repo_path(repo_path)
+        if machine_path.exists():
+            link = file_link(repo_path, label)
+            if link is not None:
+                primary_links.append(link)
+                primary_repo_paths.append(repo_path)
 
+    dxf_repo_paths = [f"{package_dir.rstrip('/')}/{filename}" for filename in split_pipe(row.get("dxf_files", ""))]
     dxf_links = [
         link
-        for link in (package_relative_file_link(package_dir, filename) for filename in split_pipe(row.get("dxf_files", "")))
+        for link in (file_link(path, Path(path).name) for path in dxf_repo_paths)
         if link is not None
     ]
+    svg_repo_paths = [f"{package_dir.rstrip('/')}/{filename}" for filename in split_pipe(row.get("svg_files", ""))]
     svg_links = [
         link
-        for link in (package_relative_file_link(package_dir, filename) for filename in split_pipe(row.get("svg_files", "")))
+        for link in (file_link(path, Path(path).name) for path in svg_repo_paths)
         if link is not None
     ]
+    archive_link = package_archive_link(package_id, package_dir, [*primary_repo_paths, *dxf_repo_paths, *svg_repo_paths])
 
     return {
         "requirement_id": clean(row.get("requirement_id")),
@@ -2559,6 +2617,7 @@ def fabrication_package_payload(row: dict[str, str]) -> dict[str, Any]:
         "primary_links": primary_links,
         "dxf_links": dxf_links,
         "svg_links": svg_links,
+        "archive_link": archive_link,
         "file_count": len(primary_links) + len(dxf_links) + len(svg_links),
     }
 
@@ -2614,22 +2673,20 @@ def replacement_pipe_order_release_payload(
                 "do_not_order_if": clean(row.get("do_not_order_if")),
                 "notes": clean(row.get("notes")),
                 "evidence_images": evidence_images,
-                "image": (
-                    evidence_images[0]
-                    if evidence_images
-                    else order_component_reference_image(
-                        item,
-                        " ".join(
-                            clean(row.get(key))
-                            for key in (
-                                "order_line_id",
-                                "route",
-                                "part_number_or_code",
-                                "exact_order_spec",
-                                "material_spec",
-                                "notes",
-                            )
-                        ),
+                "image": evidence_images[0]
+                if evidence_images
+                else order_component_reference_image(
+                    item,
+                    " ".join(
+                        clean(row.get(key))
+                        for key in (
+                            "order_line_id",
+                            "route",
+                            "part_number_or_code",
+                            "exact_order_spec",
+                            "material_spec",
+                            "notes",
+                        )
                     ),
                 ),
             }
@@ -2667,22 +2724,20 @@ def hose_local_market_order_payload(
                 "final_install_check": clean(row.get("final_install_check")),
                 "hard_reject": clean(row.get("hard_reject")),
                 "evidence_images": evidence_images,
-                "image": (
-                    evidence_images[0]
-                    if evidence_images
-                    else order_component_reference_image(
-                        item,
-                        " ".join(
-                            clean(row.get(key))
-                            for key in (
-                                "order_id",
-                                "shop_lane",
-                                "order_text",
-                                "diameter_spec",
-                                "material_spec",
-                                "clamp_or_fitting_spec",
-                            )
-                        ),
+                "image": evidence_images[0]
+                if evidence_images
+                else order_component_reference_image(
+                    item,
+                    " ".join(
+                        clean(row.get(key))
+                        for key in (
+                            "order_id",
+                            "shop_lane",
+                            "order_text",
+                            "diameter_spec",
+                            "material_spec",
+                            "clamp_or_fitting_spec",
+                        )
                     ),
                 ),
             }

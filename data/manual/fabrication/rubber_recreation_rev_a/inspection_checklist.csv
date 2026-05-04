@@ -6,3 +6,5 @@ BM-CUP-LG,"OD, 11 mm hole, dish/register depth, steel thickness",OD +/-1.0; hole
 FS-OVAL,"overall length/width, thickness, hole spacing, insert OD, hardness",outer +/-1.0; holes +/-0.5; thickness +/-0.5
 FS-STRIP-L/R,"template match, thickness, hole/slot centres, bond quality",physical template controls final cut
 EXH-HGR-90917,"top hole, hanger slot, rubber body thickness, reinforcement, bracket fit",buy OEM or verify against genuine sample before local moulding
+BM-SHIM-THIN,"thickness labels, slot width, footprint trace, deburred edges, coating",thickness +/-0.1; slot 11-12; footprint supports original pedestal/contact patch
+BM-SHIM-THICK,"thickness labels, hole/slot match, station map need, deburred edges, coating",cut/buy only if station map proves need; no washer towers

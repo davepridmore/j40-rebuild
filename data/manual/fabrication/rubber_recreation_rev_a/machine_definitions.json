@@ -24,6 +24,30 @@
     "shop_note": "Make both pieces from one compound batch and one setup."
   },
   {
+    "part_id": "BM-CUP-SM",
+    "qty": "10 working basis",
+    "machine_route": "CNC/waterjet/laser blank, then press/form dish",
+    "machine_files": "bm_cup_small_seat_washer_rev_a.dxf|bm_cup_small_seat_washer_rev_a.svg",
+    "coordinate_system": "2D flat blank in mm; origin lower-left of 64 x 64 bounding square; centre at X32 Y32",
+    "exact_definition_mm": "OD 64; M10 clearance hole diameter 11 at centre; dish/register depth 2-3 after forming; steel thickness 2.5-3.0; final formed profile must match old cup before batch",
+    "material": "2.5-3.0 mm steel, zinc plated or epoxy primed after forming",
+    "tolerance": "OD +/-1.0; hole +0.3/-0.0; dish depth 2-3; thickness +/-0.2",
+    "release_status": "cut/form-ready first article; confirm old cup reuse and dish depth before batch",
+    "shop_note": "Do not substitute generic flat washers. Deburr before forming and coat after forming."
+  },
+  {
+    "part_id": "BM-CUP-LG",
+    "qty": "2 working basis",
+    "machine_route": "CNC/waterjet/laser blank, then press/form dish",
+    "machine_files": "bm_cup_large_seat_washer_rev_a.dxf|bm_cup_large_seat_washer_rev_a.svg",
+    "coordinate_system": "2D flat blank in mm; origin lower-left of 78 x 78 bounding square; centre at X39 Y39",
+    "exact_definition_mm": "OD 78; M10 clearance hole diameter 11 at centre; dish/register depth 2-3 after forming; steel thickness 2.5-3.0; final formed profile must match old cup before batch",
+    "material": "2.5-3.0 mm steel, zinc plated or epoxy primed after forming",
+    "tolerance": "OD +/-1.0; hole +0.3/-0.0; dish depth 2-3; thickness +/-0.2",
+    "release_status": "cut/form-ready first article; confirm large station and cup landing before batch",
+    "shop_note": "Make large cups as a matched pair and coat after forming."
+  },
+  {
     "part_id": "FS-OVAL",
     "qty": "2",
     "machine_route": "waterjet/knife/punch/moulded 2.5D rubber pad",
@@ -70,6 +94,30 @@
     "tolerance": "outer +/-1.0; hole/slot +0.5/-0.0; hole position +/-0.5; thickness +/-0.5 after genuine-sample confirmation",
     "release_status": "style identified from vehicle photos and OEM reference; buy OEM preferred, local moulding needs genuine sample or intact original for side profile and insert depth",
     "shop_note": "Do not use the previous round ring or generic two-hole strap. The vehicle/reference evidence points to Toyota 90917-08004 teardrop cushion style."
+  },
+  {
+    "part_id": "BM-SHIM-THIN",
+    "qty": "1 pack",
+    "machine_route": "cut flat steel shims after station footprint trace; no universal washer stack",
+    "machine_files": "none",
+    "coordinate_system": "station footprint trace in mm; slot centreline and opening copied from preserved mount station",
+    "exact_definition_mm": "Thin shim pack: 1 mm x12, 2 mm x12, 3 mm x12, 5 mm x12; slot width 11-12 for M10 bolt; plate footprint must fully support original pedestal/contact patch; final outline from original shim or landing-surface trace",
+    "material": "Flat steel, deburred, zinc plated or epoxy primed",
+    "tolerance": "thickness +/-0.1; slot +0.5/-0.0; footprint +/-0.5 after trace",
+    "release_status": "spec-ready pack; CNC/DXF hold until original station footprint is traced",
+    "shop_note": "Label every thickness. Use only at original metal-to-metal shim locations."
+  },
+  {
+    "part_id": "BM-SHIM-THICK",
+    "qty": "1 pack",
+    "machine_route": "cut flat steel spacer plates after station map confirms need",
+    "machine_files": "none",
+    "coordinate_system": "station footprint trace in mm; M10 clearance and footprint copied from preserved originals",
+    "exact_definition_mm": "Thick spacer control pack: 5 mm x4, 10 mm x4, 15 mm x4. Record Toyota reference thicknesses 22.8 and 27.8 but cut/buy those only if original station map proves need; slot width 11-12 or through hole matching original",
+    "material": "Flat steel plate, deburred, zinc plated or epoxy primed",
+    "tolerance": "thickness +/-0.1; hole/slot +0.5/-0.0; footprint +/-0.5 after trace",
+    "release_status": "conditional release; station map must prove which thick spacers are needed",
+    "shop_note": "Do not replace OE-style thick spacers with washer towers."
   },
   {
     "part_id": "BUMP-F-L",

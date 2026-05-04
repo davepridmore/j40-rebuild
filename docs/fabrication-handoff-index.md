@@ -14,6 +14,8 @@ Control spec: [rubber-recreation-fabrication-spec-20260502.md](rubber-recreation
 
 Primary files:
 - `data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf`
+- `data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv`
+- `data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json`
 - `data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv`
 - `data/manual/fabrication/rubber_recreation_rev_a/inspection_checklist.csv`
 
@@ -28,6 +30,8 @@ DXF files:
 
 Release position:
 - Circular cushions, cup blanks, and the oval pad are ready for quote and first article.
+- Shim packs are controlled as new flat steel thickness packs in the machine definitions; final CNC outline waits for original station footprint tracing.
+- Bump stops remain controlled buy/sample-match items, not simple CNC-cut rubber.
 - Final batch production still waits for the hold fields in `data/manual/rubber_recreation_measurement_closure.csv`.
 - Strip files are stock-envelope/template blanks only. Trace the physical left/right strip rubbers and metal carriers before production cutting.
 
