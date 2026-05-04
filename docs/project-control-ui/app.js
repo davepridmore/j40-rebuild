@@ -1203,8 +1203,8 @@
       id: "BM-SHIM-THIN",
       part: "Thin body-mount alignment shim pack",
       qty: "1 pack",
-      image: "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
-      imageCaption: "Shim, spacer, and rubber isolator sample sorting photo",
+      image: "../../deliverables/selling_site_images/images/reference_catalog/body_shims.jpg",
+      imageCaption: "Body-mount shim/spacer reference",
       spec: "New flat slotted steel shims for M10 body mounts: 1 mm x12, 2 mm x12, 3 mm x12, 5 mm x12; slot width 11-12; plate footprint must fully support the original pedestal/contact patch.",
       route: "buy/cut new flat steel only; CNC/laser after station footprint trace",
       files: [
@@ -1217,8 +1217,8 @@
       id: "BM-SHIM-THICK",
       part: "Thick OE-style spacer control pack",
       qty: "1 pack",
-      image: "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
-      imageCaption: "Shim, spacer, and rubber isolator sample sorting photo",
+      image: "../../deliverables/selling_site_images/images/reference_catalog/body_shims.jpg",
+      imageCaption: "Body-mount shim/spacer reference",
       spec: "New flat steel spacer plates for controlled trial fit: 5 mm x4, 10 mm x4, 15 mm x4. Record Toyota reference thicknesses 22.8 and 27.8, but cut/buy those only if the original station map proves need.",
       route: "buy/cut new flat steel only; station map controls release",
       files: [
@@ -1287,8 +1287,8 @@
       id: "BUMP-F-L",
       part: "Front left spring bump stop",
       qty: "1",
-      image: "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
-      imageCaption: "Rubber bumper/isolator sample sorting photo",
+      image: "../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg",
+      imageCaption: "Bump-stop reference",
       spec: "Not a CNC part. Buy Toyota/manufacturer-style 48304-60010 direct replacement. Local reproduction requires physical sample or 3D scan and a mould matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face.",
       route: "buy manufacturer molded part preferred",
       files: [
@@ -1301,8 +1301,8 @@
       id: "BUMP-F-R",
       part: "Front right spring bump stop",
       qty: "1",
-      image: "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
-      imageCaption: "Rubber bumper/isolator sample sorting photo",
+      image: "../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg",
+      imageCaption: "Bump-stop reference",
       spec: "Not a CNC part. Buy Toyota/manufacturer-style 48304-60020 direct replacement. This is the separate shorter/right-side front stop. Local reproduction requires physical sample or 3D scan and a mould.",
       route: "buy manufacturer molded part preferred",
       files: [
@@ -1315,8 +1315,8 @@
       id: "BUMP-R",
       part: "Rear spring bump stops",
       qty: "2",
-      image: "../../photos/20260503_153832_gp_0FJJiLHg.jpg",
-      imageCaption: "Rubber bumper/isolator sample sorting photo",
+      image: "../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg",
+      imageCaption: "Bump-stop reference",
       spec: "Not a CNC part. Buy Toyota/manufacturer-style 48304-60010 direct replacement for rear pair. Local reproduction requires physical sample or 3D scan and a mould matching rear bracket/base, bolt pattern/thread, height, progressive profile, and contact face.",
       route: "buy manufacturer molded part preferred",
       files: [
@@ -1331,7 +1331,8 @@
     ["../../photos/20260502_004413_gp_Qno8OVRg.jpg", "Circular cushion top reference"],
     ["../../photos/20260502_004442_gp_7WcFHjLQ.jpg", "Circular annular cushion reference 2"],
     ["../../photos/20260502_004429_gp_KJHxGcCA.jpg", "Cup/seat and stack profile reference"],
-    ["../../photos/20260503_153832_gp_0FJJiLHg.jpg", "Shim, spacer, and rubber bumper/isolator sorting reference"],
+    ["../../deliverables/selling_site_images/images/reference_catalog/body_shims.jpg", "Body-mount shim/spacer reference"],
+    ["../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg", "Bump-stop reference"],
     ["../../photos/20260502_004254_gp_Hm9RR5DQ.jpg", "Long strip height reference"],
     ["../../photos/20260502_004314_gp_wuzpgNrA.jpg", "Long strip side reference"],
     ["../../photos/20260501_193755_gp_cuaY6sgg.jpg", "Rear exhaust and bracket context"],
@@ -2717,10 +2718,10 @@
       return ["20260502_004413_gp_Qno8OVRg", "20260502_004429_gp_KJHxGcCA"];
     }
     if (id === "CR-SHIM-001" || id.includes("BM-SHIM") || text.includes("shim") || text.includes("spacer pack")) {
-      return ["20260503_153832_gp_0FJJiLHg", "20260502_004429_gp_KJHxGcCA", "20260502_004231_gp_CfosvPIg"];
+      return ["20260502_004429_gp_KJHxGcCA", "20260502_004231_gp_CfosvPIg", "20260502_004413_gp_Qno8OVRg"];
     }
-    if (id.includes("BUMP") || text.includes("bump stop") || text.includes("rubber bumper") || text.includes("isolator")) {
-      return ["20260503_153832_gp_0FJJiLHg"];
+    if (id.includes("BUMP") || text.includes("bump stop") || text.includes("rubber bumper")) {
+      return [];
     }
     if (id === "CR-FRONT-001" || id === "FS-OVAL" || text.includes("two-hole oval")) {
       return ["20260502_004345_gp_yK8VYzMQ"];
@@ -2747,18 +2748,21 @@
       return ["20260503_160427_gp_HSrKmfzw", "20260503_152937_gp_HdsO0xMA", "20260503_160207_gp_43b3TblQ"];
     }
     if (id === "RPO-FUEL-001C" || id === "HLS-08" || text.includes("leak-off")) {
-      return ["20260503_160427_gp_HSrKmfzw", "20260503_155314_gp_et0BrVkQ", "20260503_160207_gp_43b3TblQ"];
+      return ["20260503_155314_gp_et0BrVkQ", "20260503_160427_gp_HSrKmfzw", "20260503_160207_gp_43b3TblQ"];
     }
     if (id === "RPO-FUEL-001A" || id === "HLS-06" || id === "RP-FUEL-001" || text.includes("diesel feed")) {
       return ["20260503_152937_gp_HdsO0xMA", "20260503_153042_gp_ZL9JEazw", "20260503_160427_gp_HSrKmfzw", "20260504_090640_user_long_diesel_feed_measurement"];
     }
     if (id === "RPO-FUEL-002A" || id === "RPO-FUEL-002B" || id === "HLS-13" || id === "HLS-14" || id === "RP-FUEL-002" || text.includes("fuel hard line")) {
-      return ["20260503_153130_gp_gkKoFapg", "20260503_152926_gp_4eOEiLQQ", "20260501_194026_gp_gjPjhxdA"];
+      return ["20260503_152926_gp_4eOEiLQQ", "20260503_153130_gp_gkKoFapg", "20260501_194026_gp_gjPjhxdA"];
     }
     if (id === "RPO-VAC-001A" || id === "HLS-10" || id === "RP-VAC-001" || text.includes("vacuum hose")) {
+      return ["20260503_155132_gp_r4UGNnsQ", "20260503_153200_gp_YXNuQgGQ", "20260503_160427_gp_HSrKmfzw"];
+    }
+    if (id === "RPO-VAC-001C" || id === "HLS-20" || text.includes("oil outlet")) {
       return ["20260503_155314_gp_et0BrVkQ", "20260503_160207_gp_43b3TblQ", "20260503_160427_gp_HSrKmfzw"];
     }
-    if (id === "RPO-VAC-001B" || id === "RPO-VAC-001C" || id === "HLS-11" || id === "HLS-20" || text.includes("breather") || text.includes("oil-mist")) {
+    if (id === "RPO-VAC-001B" || id === "HLS-11" || text.includes("breather") || text.includes("oil-mist")) {
       return ["20260503_155314_gp_et0BrVkQ", "20260503_160207_gp_43b3TblQ", "20260503_160327_gp_sFtQuWNQ"];
     }
     if (id === "RPO-BRAKE-001A" || id === "HLS-17" || id === "RP-BRAKE-001" || text.includes("brake flex")) {
@@ -2776,14 +2780,34 @@
     if (id === "RPO-COOL-005" || id === "HLS-12" || id === "RP-COOL-005" || text.includes("formed metal coolant")) {
       return ["20260502_004106_gp_wlYlUahA", "20260502_004044_gp_Hx4Yo0Qg"];
     }
-    if (id === "RPO-COOL-006A" || id === "RPO-COOL-006B" || id === "HLS-05A" || id === "HLS-05B" || id === "RP-COOL-006" || text.includes("connector hose")) {
+    if (id === "RPO-COOL-006A" || id === "HLS-05A") {
       return ["20260502_004133_gp_ZEpqmARA", "20260502_004044_gp_Hx4Yo0Qg"];
+    }
+    if (id === "RPO-COOL-006B" || id === "HLS-05B") {
+      return ["20260502_004145_gp_e8soxsyA", "20260502_004139_gp_jt1dGw4A", "20260502_004044_gp_Hx4Yo0Qg"];
+    }
+    if (id === "RP-COOL-006" || text.includes("connector hose")) {
+      return ["20260502_004133_gp_ZEpqmARA", "20260502_004145_gp_e8soxsyA", "20260502_004044_gp_Hx4Yo0Qg"];
     }
     return [];
   }
 
+  function suppressScoutEvidenceImages(row) {
+    const id = cleanString((row && (row.id || row.order_id || row.order_line_id || row.requirement_id)) || "").toUpperCase();
+    const text = [
+      id,
+      row && row.item,
+      row && row.requirement_name,
+      row && row.partNumber,
+      row && row.part_number_or_code,
+    ]
+      .map((value) => cleanString(value).toLowerCase())
+      .join(" ");
+    return id === "HLS-21" || id === "RHA-014" || id === "RUB-027" || text.includes("air-cleaner intake");
+  }
+
   function bestScoutOriginalImage(row) {
-    const evidence = scoutEvidenceImages(row);
+    const evidence = suppressScoutEvidenceImages(row) ? [] : scoutEvidenceImages(row);
     const preferredIds = preferredScoutMediaIds(row);
     const preferred = evidence.find((image) => preferredIds.includes(cleanString(image && image.media_id)));
     if (preferred) {
@@ -2826,7 +2850,8 @@
     return CHASSIS_RUBBER_SPEC_ROWS.map((row) => {
       const imagePath = cleanString(row.image);
       const mediaId = imagePath.split("/").pop().replace(/\.[^.]+$/, "") || row.id;
-      const image = imagePath.toLowerCase().endsWith(".svg")
+      const isReferenceAsset = imagePath.includes("/reference_catalog/");
+      const image = imagePath.toLowerCase().endsWith(".svg") || isReferenceAsset
         ? scoutReferenceImage(imagePath, row.imageCaption || row.part, mediaId)
         : scoutPreviousPartImage(imagePath, `${row.part} · original/sample reference`, mediaId, [row.id.toLowerCase()]);
       const fileNames = Array.isArray(row.files) && row.files.length
@@ -2940,7 +2965,7 @@
       return previous("../../photos/20260502_004413_gp_Qno8OVRg.jpg", "previous body-mount cup/seat sample", "20260502_004413_gp_Qno8OVRg", ["bm-cup", "previous"]);
     }
     if (rowId === "BM-SHIM-THIN" || rowId === "BM-SHIM-THICK" || hasAny("bm-shim", "alignment shim", "shim pack", "spacer control pack")) {
-      return previous("../../photos/20260503_153832_gp_0FJJiLHg.jpg", "previous shim/spacer and rubber isolator sorting photo", "20260503_153832_gp_0FJJiLHg", ["bm-shim", "previous"]);
+      return scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/body_shims.jpg", "Body-mount shim/spacer reference", "body_shims");
     }
     if (rowId === "BM-LG" || partNumber.includes("bm_lg") || hasAny("large circular body-mount", "large circular body mount", "large body-mount cushion", "large body mount cushion")) {
       return previous("../../photos/20260502_004419_gp_ZPXJRBzg.jpg", "previous large circular body-mount cushion sample", "20260502_004419_gp_ZPXJRBzg", ["bm-lg", "previous"]);
@@ -3023,6 +3048,12 @@
     if (hasAny("connector hose", "connector/coupler", "coupler hoses")) {
       return ref("../../photos/20260502_004133_gp_ZEpqmARA.jpg", "formed-pipe connector hose sample photo", "formed_pipe_connector_hose_sample");
     }
+    if (hasAny("air-cleaner", "air cleaner", "intake duct", "air-intake", "air intake", "duct/coupler")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/duct_hose.jpg", "air-cleaner intake duct reference image", "duct_hose");
+    }
+    if (hasAny("a/c barrier", "ac barrier", "air conditioning", "refrigerant")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/ac_barrier_hose.jpg", "A/C barrier hose reference image", "ac_barrier_hose");
+    }
     if (has("heater", "hose")) {
       return ref("../../deliverables/selling_site_images/images/reference_catalog/heater_hose.jpg", "heater hose reference image", "heater_hose");
     }
@@ -3034,6 +3065,9 @@
     }
     if ((has("brake", "booster") || has("brake", "servo")) && !hasAny("hose", "line", "pipe", "tube")) {
       return ref("../../deliverables/selling_site_images/images/reference_catalog/brake_booster.jpg", "brake booster reference image", "brake_booster");
+    }
+    if (hasAny("fuel clamp", "clamp pack", "hose clamp", "hose clamps")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/clamp.jpg", "fuel hose clamp reference image", "fuel_hose_clamp");
     }
     if (hasAny("fuel", "diesel", "injector leak-off", "leak-off")) {
       return ref("../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg", "diesel fuel hose reference image", "fuel_hose");
@@ -3047,11 +3081,11 @@
     if (hasAny("p-clips", "p clips", "support clips", "line protection", "edge protection")) {
       return ref("../../deliverables/selling_site_images/images/reference_catalog/clamp.jpg", "line clip/clamp reference image", "clamp");
     }
-    if (has("bump", "stop") || hasAny("rubber bumpers", "rubber bumper", "isolators")) {
-      return ref("../../photos/20260503_153832_gp_0FJJiLHg.jpg", "rubber bumper/isolator sample sorting photo", "rubber_bumper_isolator_sample");
+    if (has("bump", "stop") || hasAny("rubber bumpers", "rubber bumper")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg", "bump-stop reference image", "bump_stop");
     }
     if (hasAny("shim", "spacer pack", "spacer control pack")) {
-      return ref("../../photos/20260503_153832_gp_0FJJiLHg.jpg", "shim/spacer sample sorting photo", "shim_spacer_sample_sort");
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/body_shims.jpg", "body-mount shim/spacer reference image", "body_shims");
     }
     if (hasAny("cup washer", "cup / seat", "seat washer", "crush sleeve")) {
       return ref("../../photos/20260502_004413_gp_Qno8OVRg.jpg", "body-mount cup/seat sample photo", "body_mount_cup_seat_sample");
@@ -3070,8 +3104,13 @@
 
   function firstScoutImage(rows) {
     const sourceRows = Array.isArray(rows) ? rows : [];
-    const row = sourceRows.find((item) => item && item.image && !isImageDeleted(item.image));
-    return row ? row.image : null;
+    for (const row of sourceRows) {
+      const image = bestScoutOriginalImage(row) || (row && row.image && !isImageDeleted(row.image) ? row.image : null);
+      if (image) {
+        return image;
+      }
+    }
+    return null;
   }
 
   function scoutSpecImage(rows, fallbackImage) {
@@ -3079,7 +3118,7 @@
   }
 
   function attachScoutImage(specs, rows, fallbackImage) {
-    const image = fallbackImage || scoutSpecImage(rows, null);
+    const image = scoutSpecImage(rows, fallbackImage);
     return (Array.isArray(specs) ? specs : []).map((spec) => ({
       ...spec,
       image: spec.image || image,
@@ -3151,6 +3190,8 @@
       ...chassisRubberScoutSpecRows(),
       ...rubberSupportRequirementRows,
     ];
+    const hoseLocalMarketOrderRows = (data.local_market_order_sheets && data.local_market_order_sheets.hose) || [];
+    const pipeExactSpecRows = scoutOrderSpecRows((replacementPipesWorkstream && replacementPipesWorkstream.replacement_pipe_order_release_specs) || []);
     const fuseBoxParts = filterScoutRows(allPartRows, {
       entryIds: ["part_cabin_compact_fuse_boxes"],
       workstreams: ["electrical_reset"],
@@ -3823,7 +3864,7 @@
         parts: pipeParts,
         marketSpecs: attachScoutImage(
           [hoseMarketSpec],
-          pipeParts,
+          [...hoseLocalMarketOrderRows, ...pipeExactSpecRows],
           scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg", "Automotive hose reference image", "radiator_hose")
         ),
         docLinks: [
@@ -3831,8 +3872,8 @@
           scoutDocLink("docs/local-market-component-order-spec-20260504.md", "Exact local-market component order spec"),
           scoutDocLink("docs/replacement-pipes-workstream.md", "Replacement pipes workstream"),
         ],
-        localMarketOrderRows: (data.local_market_order_sheets && data.local_market_order_sheets.hose) || [],
-        exactSpecRows: scoutOrderSpecRows((replacementPipesWorkstream && replacementPipesWorkstream.replacement_pipe_order_release_specs) || []),
+        localMarketOrderRows: hoseLocalMarketOrderRows,
+        exactSpecRows: pipeExactSpecRows,
       },
       {
         id: "rubbers",
@@ -3842,7 +3883,7 @@
         parts: rubberParts,
         marketSpecs: attachScoutImage(
           [rubberMarketSpec],
-          rubberParts,
+          rubberScoutSpecRows,
           scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/body_mount_kit.jpg", "Body mount rubber reference image", "body_mount_kit")
         ),
         docLinks: [

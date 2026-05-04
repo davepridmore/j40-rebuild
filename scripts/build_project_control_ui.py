@@ -2648,16 +2648,15 @@ def replacement_pipe_order_release_payload(
     for row in rows:
         release_state = clean(row.get("order_release_state"))
         item = clean(row.get("item"))
-        evidence_images = evidence_images_for_keys(
+        order_line_id = clean(row.get("order_line_id"))
+        evidence_images = evidence_images_for_primary_or_fallback_keys(
             evidence_index,
-            [
-                clean(row.get("order_line_id")),
-                *evidence_keys_from_text(row.get("source_basis", "")),
-            ],
+            [order_line_id],
+            evidence_keys_from_text(row.get("source_basis", "")),
         )
         payload.append(
             {
-                "order_line_id": clean(row.get("order_line_id")),
+                "order_line_id": order_line_id,
                 "route": clean(row.get("route")),
                 "item": item,
                 "part_number_or_code": clean(row.get("part_number_or_code")),
@@ -2673,7 +2672,7 @@ def replacement_pipe_order_release_payload(
                 "do_not_order_if": clean(row.get("do_not_order_if")),
                 "notes": clean(row.get("notes")),
                 "evidence_images": evidence_images,
-                "image": evidence_images[0]
+                "image": preferred_order_image(order_line_id, evidence_images)
                 if evidence_images
                 else order_component_reference_image(
                     item,
@@ -2724,7 +2723,7 @@ def hose_local_market_order_payload(
                 "final_install_check": clean(row.get("final_install_check")),
                 "hard_reject": clean(row.get("hard_reject")),
                 "evidence_images": evidence_images,
-                "image": evidence_images[0]
+                "image": preferred_order_image(clean(row.get("order_id")), evidence_images)
                 if evidence_images
                 else order_component_reference_image(
                     item,
@@ -3100,7 +3099,7 @@ HLS_TO_EVIDENCE_KEYS: dict[str, tuple[str, ...]] = {
     "HLS-06": ("RPO-FUEL-001A", "RP-FUEL-001"),
     "HLS-07": ("RPO-FUEL-001B", "RP-FUEL-001"),
     "HLS-08": ("RPO-FUEL-001C", "RP-FUEL-001"),
-    "HLS-09": ("RPO-FUEL-001A", "RPO-FUEL-001B", "RPO-FUEL-001C", "RP-FUEL-001"),
+    "HLS-09": (),
     "HLS-10": ("RPO-VAC-001A", "RP-VAC-001"),
     "HLS-11": ("RPO-VAC-001B", "RP-VAC-001"),
     "HLS-12": ("RPO-COOL-005", "RP-COOL-005"),
@@ -3115,6 +3114,68 @@ HLS_TO_EVIDENCE_KEYS: dict[str, tuple[str, ...]] = {
     "HLS-21": ("RUB-027", "RHA-014"),
     "HLS-22": ("RUB-026", "RHA-024"),
 }
+
+ORDER_PRIMARY_MEDIA_IDS: dict[str, tuple[str, ...]] = {
+    "HLS-01": ("20260430_220004_gp_C9oYiYmA", "20260503_160327_gp_sFtQuWNQ"),
+    "RPO-COOL-001": ("20260430_220004_gp_C9oYiYmA", "20260503_160327_gp_sFtQuWNQ"),
+    "RP-COOL-001": ("20260430_220004_gp_C9oYiYmA", "20260503_160327_gp_sFtQuWNQ"),
+    "HLS-02": ("20260430_215957_gp_2iBbUagw", "20260503_160010_gp_9F5ZH8kQ"),
+    "RPO-COOL-002": ("20260430_215957_gp_2iBbUagw", "20260503_160010_gp_9F5ZH8kQ"),
+    "RP-COOL-002": ("20260430_215957_gp_2iBbUagw", "20260503_160010_gp_9F5ZH8kQ"),
+    "HLS-03": ("20260503_153639_gp_ZueGlpJw", "20260503_153647_gp_L54euoMQ"),
+    "RPO-COOL-003": ("20260503_153639_gp_ZueGlpJw", "20260503_153647_gp_L54euoMQ"),
+    "RP-COOL-003": ("20260503_153639_gp_ZueGlpJw", "20260503_153647_gp_L54euoMQ"),
+    "HLS-04": ("20260503_155747_gp_s91OxyAA", "20260503_155825_gp_Gvgy4PXA"),
+    "RPO-COOL-004A": ("20260503_155747_gp_s91OxyAA", "20260503_153200_gp_YXNuQgGQ"),
+    "RPO-COOL-004B": ("20260503_155825_gp_Gvgy4PXA", "20260503_160207_gp_43b3TblQ"),
+    "RP-COOL-004": ("20260503_155747_gp_s91OxyAA", "20260503_155825_gp_Gvgy4PXA"),
+    "HLS-05A": ("20260502_004133_gp_ZEpqmARA", "20260502_004106_gp_wlYlUahA"),
+    "RPO-COOL-006A": ("20260502_004133_gp_ZEpqmARA", "20260502_004106_gp_wlYlUahA"),
+    "HLS-05B": ("20260502_004145_gp_e8soxsyA", "20260502_004139_gp_jt1dGw4A"),
+    "RPO-COOL-006B": ("20260502_004145_gp_e8soxsyA", "20260502_004139_gp_jt1dGw4A"),
+    "RP-COOL-006": ("20260502_004133_gp_ZEpqmARA", "20260502_004145_gp_e8soxsyA"),
+    "HLS-12": ("20260502_004106_gp_wlYlUahA", "20260502_004044_gp_Hx4Yo0Qg"),
+    "RPO-COOL-005": ("20260502_004106_gp_wlYlUahA", "20260502_004044_gp_Hx4Yo0Qg"),
+    "RP-COOL-005": ("20260502_004106_gp_wlYlUahA", "20260502_004044_gp_Hx4Yo0Qg"),
+    "HLS-06": ("20260503_152937_gp_HdsO0xMA", "20260503_153042_gp_ZL9JEazw", "20260504_090640_user_long_diesel_feed_measurement"),
+    "RPO-FUEL-001A": ("20260503_152937_gp_HdsO0xMA", "20260503_153042_gp_ZL9JEazw", "20260504_090640_user_long_diesel_feed_measurement"),
+    "HLS-07": ("20260503_160427_gp_HSrKmfzw", "20260503_160207_gp_43b3TblQ"),
+    "RPO-FUEL-001B": ("20260503_160427_gp_HSrKmfzw", "20260503_160207_gp_43b3TblQ"),
+    "HLS-08": ("20260503_155314_gp_et0BrVkQ", "20260503_160427_gp_HSrKmfzw", "20260503_160207_gp_43b3TblQ"),
+    "RPO-FUEL-001C": ("20260503_155314_gp_et0BrVkQ", "20260503_160427_gp_HSrKmfzw", "20260503_160207_gp_43b3TblQ"),
+    "HLS-09": ("20260503_160427_gp_HSrKmfzw", "20260503_152937_gp_HdsO0xMA"),
+    "HLS-13": ("20260503_152926_gp_4eOEiLQQ", "20260503_153130_gp_gkKoFapg"),
+    "HLS-14": ("20260503_152926_gp_4eOEiLQQ", "20260503_153130_gp_gkKoFapg"),
+    "RPO-FUEL-002A": ("20260503_152926_gp_4eOEiLQQ", "20260503_153130_gp_gkKoFapg"),
+    "RPO-FUEL-002B": ("20260503_152926_gp_4eOEiLQQ", "20260503_153130_gp_gkKoFapg"),
+    "RP-FUEL-002": ("20260503_152926_gp_4eOEiLQQ", "20260503_153130_gp_gkKoFapg"),
+    "HLS-10": ("20260503_155132_gp_r4UGNnsQ", "20260503_153200_gp_YXNuQgGQ", "20260503_160427_gp_HSrKmfzw"),
+    "RPO-VAC-001A": ("20260503_155132_gp_r4UGNnsQ", "20260503_153200_gp_YXNuQgGQ", "20260503_160427_gp_HSrKmfzw"),
+    "HLS-11": ("20260503_155314_gp_et0BrVkQ", "20260503_160207_gp_43b3TblQ"),
+    "RPO-VAC-001B": ("20260503_155314_gp_et0BrVkQ", "20260503_160207_gp_43b3TblQ"),
+    "HLS-20": ("20260503_155314_gp_et0BrVkQ", "20260503_160207_gp_43b3TblQ", "20260503_160427_gp_HSrKmfzw"),
+    "RPO-VAC-001C": ("20260503_155314_gp_et0BrVkQ", "20260503_160207_gp_43b3TblQ", "20260503_160427_gp_HSrKmfzw"),
+    "HLS-15": ("20260503_153017_gp_dM8BCa4w", "20260503_153031_gp_rFfqDUBw"),
+    "RPO-BRAKE-001B": ("20260503_153017_gp_dM8BCa4w", "20260503_153031_gp_rFfqDUBw"),
+    "HLS-16": ("20260503_153130_gp_gkKoFapg", "20260503_153017_gp_dM8BCa4w"),
+    "RPO-CLIP-001": ("20260503_153130_gp_gkKoFapg", "20260503_153017_gp_dM8BCa4w"),
+    "HLS-17": ("20260503_152902_gp_xBbsFRzQ", "20260503_152913_gp_AvVGAlHw"),
+    "RPO-BRAKE-001A": ("20260503_152902_gp_xBbsFRzQ", "20260503_152913_gp_AvVGAlHw"),
+    "RP-BRAKE-001": ("20260503_152902_gp_xBbsFRzQ", "20260503_153017_gp_dM8BCa4w"),
+    "HLS-18": ("20260430_215915_gp_ycQ395Gg", "20260430_215939_gp_EjZ7u1ow"),
+    "RPO-CLUTCH-001A": ("20260430_215915_gp_ycQ395Gg", "20260430_215939_gp_EjZ7u1ow"),
+    "HLS-19": ("20260430_215939_gp_EjZ7u1ow", "20260430_215915_gp_ycQ395Gg"),
+    "RPO-CLUTCH-001B": ("20260430_215939_gp_EjZ7u1ow", "20260430_215915_gp_ycQ395Gg"),
+}
+
+
+def preferred_order_image(row_id: str, evidence_images: list[dict[str, Any]]) -> dict[str, Any] | None:
+    available_by_id = {clean(image.get("media_id")): image for image in evidence_images}
+    for media_id in ORDER_PRIMARY_MEDIA_IDS.get(clean(row_id), ()):
+        image = available_by_id.get(media_id)
+        if image:
+            return image
+    return evidence_images[0] if evidence_images else None
 
 
 def evidence_keys_from_text(*values: str) -> list[str]:
@@ -3160,6 +3221,19 @@ def evidence_images_for_keys(
         if len(images) >= max_images * 2:
             break
     return dedupe_payload_images(images)[:max_images]
+
+
+def evidence_images_for_primary_or_fallback_keys(
+    index: dict[str, list[dict[str, Any]]],
+    primary_keys: Iterable[str],
+    fallback_keys: Iterable[str],
+    *,
+    max_images: int = 6,
+) -> list[dict[str, Any]]:
+    primary_images = evidence_images_for_keys(index, primary_keys, max_images=max_images)
+    if primary_images:
+        return primary_images
+    return evidence_images_for_keys(index, fallback_keys, max_images=max_images)
 
 
 def build_replacement_pipe_evidence_index(
@@ -6934,6 +7008,10 @@ def order_component_reference_image(item: str, context: str = "") -> dict[str, A
             "connector",
             "hose",
         )
+    if has_any("air-cleaner", "air cleaner", "intake duct", "air-intake", "air intake", "duct/coupler"):
+        return ref("duct_hose", "air-cleaner intake duct reference image", "intake", "duct")
+    if has_any("a/c barrier", "ac barrier", "air conditioning", "refrigerant"):
+        return ref("ac_barrier_hose", "A/C barrier hose reference image", "ac", "hose")
     if has("heater", "hose"):
         return ref("heater_hose", "heater hose reference image", "heater", "hose")
     if has_any("radiator overflow", "overflow hose", "coolant overflow"):
@@ -6942,6 +7020,8 @@ def order_component_reference_image(item: str, context: str = "") -> dict[str, A
         return ref("radiator_hose", "radiator/coolant hose reference image", "radiator", "hose")
     if (has("brake", "booster") or has("brake", "servo")) and not has_any("hose", "line", "pipe", "tube"):
         return ref("brake_booster", "brake booster reference image", "brake", "booster")
+    if has_any("fuel clamp", "clamp pack", "hose clamp", "hose clamps"):
+        return ref("clamp", "fuel hose clamp reference image", "fuel", "clamp")
     if has_any("fuel", "diesel", "injector leak-off", "leak-off"):
         return ref("fuel_hose", "diesel fuel hose reference image", "fuel", "hose")
     if has_any("vacuum", "breather", "oil mist", "oil outlet"):
@@ -7971,7 +8051,7 @@ def build_dashboard_data() -> dict[str, Any]:
         replacement_pipe_order_release_specs = (
             replacement_pipe_order_release_payload(
                 replacement_pipe_order_release_rows,
-                local_market_original_part_evidence_index,
+                pipe_original_part_evidence_index,
             )
             if ws_id == "replacement_pipes"
             else []
@@ -7979,7 +8059,7 @@ def build_dashboard_data() -> dict[str, Any]:
         replacement_pipe_release_actions = (
             replacement_pipe_release_action_payload(
                 replacement_pipe_release_action_rows,
-                local_market_original_part_evidence_index,
+                pipe_original_part_evidence_index,
             )
             if ws_id == "replacement_pipes"
             else []
@@ -7987,7 +8067,7 @@ def build_dashboard_data() -> dict[str, Any]:
         replacement_pipe_circuit_closure = (
             replacement_pipe_circuit_closure_payload(
                 replacement_pipe_circuit_closure_rows,
-                local_market_original_part_evidence_index,
+                pipe_original_part_evidence_index,
             )
             if ws_id == "replacement_pipes"
             else []
@@ -8501,7 +8581,7 @@ def build_dashboard_data() -> dict[str, Any]:
         "local_market_order_sheets": {
             "hose": hose_local_market_order_payload(
                 hose_local_market_order_rows,
-                local_market_original_part_evidence_index,
+                pipe_original_part_evidence_index,
             ),
         },
         "capture_tasks": capture_tasks,
