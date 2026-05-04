@@ -50,12 +50,11 @@ Keep tool purchases outside the hose order. Rubber hose is cut to length, molded
 
 ## Reference Media
 
-Additional reference media from the May 3 intake has been added below. Use these photos to explain route/context to the market, but measure from the actual part/fittings.
+Additional reference media from the May 3 intake has been added below. Use these photos to explain route/context to the market, but measure from the actual part/fittings. The Scout dashboard thumbnails are stricter than these groups: each order row uses the closest order-line photo first and only falls back to broader context if no direct row photo exists.
 
 ### `COOL-A` Radiator Hose Necks And Front Clearance
 
 - `photos/20260503_153249_gp_Lg6JX6Gg.jpg`
-- `photos/20260503_155314_gp_et0BrVkQ.jpg`
 - `photos/20260503_155928_gp_ZQtxQutA.jpg`
 - `photos/20260503_155956_gp_P4xfMJzw.jpg`
 - `photos/20260503_160010_gp_9F5ZH8kQ.jpg`
@@ -71,7 +70,6 @@ Additional reference media from the May 3 intake has been added below. Use these
 
 - `photos/20260503_153200_gp_YXNuQgGQ.jpg`
 - `photos/20260503_155132_gp_r4UGNnsQ.jpg`
-- `photos/20260503_155314_gp_et0BrVkQ.jpg`
 - `photos/20260503_155747_gp_s91OxyAA.jpg`
 - `photos/20260503_155825_gp_Gvgy4PXA.jpg`
 - `photos/20260503_160207_gp_43b3TblQ.jpg`
@@ -90,23 +88,13 @@ Additional reference media from the May 3 intake has been added below. Use these
 - `photos/20260503_160207_gp_43b3TblQ.jpg`
 - `photos/20260503_160327_gp_sFtQuWNQ.jpg`
 
-### `FUEL-A` Diesel Feed, Return, Leak-Off, And Loose Hose Samples
+### `FUEL-A` Diesel Feed, Return, Leak-Off, And Measurement Context
 
-- `photos/20260430_215957_gp_2iBbUagw.jpg`
-- `photos/20260502_005740_gp_Qiat03EQ.jpg`
-- `photos/20260502_160754_gp_Zd9UeENg.jpg`
-- `photos/20260502_160855_gp_w3sghS8Q.jpg`
-- `photos/20260502_160929_gp_exms2QzQ.jpg`
-- `photos/20260502_160950_gp_5KW8RnDQ.jpg`
-- `photos/20260502_161055_gp_lS8VRrWg.jpg`
-- `photos/20260502_161214_gp_zc3zwXlg.jpg`
 - `photos/20260504_090640_user_long_diesel_feed_measurement.png`
 - `photos/20260503_152937_gp_HdsO0xMA.jpg`
 - `photos/20260503_153042_gp_ZL9JEazw.jpg`
 - `photos/20260503_155314_gp_et0BrVkQ.jpg`
-- `photos/20260503_155832_gp_SHrzreNA.jpg`
 - `photos/20260503_160207_gp_43b3TblQ.jpg`
-- `photos/20260503_160215_gp_ml0C9cxw.jpg`
 - `photos/20260503_160427_gp_HSrKmfzw.jpg`
 
 ### `FUEL-B` Low-Pressure Fuel Hard Lines And Clips
@@ -125,7 +113,6 @@ Additional reference media from the May 3 intake has been added below. Use these
 - `photos/20260503_155132_gp_r4UGNnsQ.jpg`
 - `photos/20260503_155314_gp_et0BrVkQ.jpg`
 - `photos/20260503_160207_gp_43b3TblQ.jpg`
-- `photos/20260503_160327_gp_sFtQuWNQ.jpg`
 - `photos/20260503_160427_gp_HSrKmfzw.jpg`
 
 ### `BRAKE-A` Brake Flex, Hard Lines, Unions, And Clips

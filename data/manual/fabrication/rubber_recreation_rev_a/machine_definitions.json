@@ -86,14 +86,14 @@
   {
     "part_id": "EXH-HGR-90917",
     "qty": "as fitted; replace every fitted exhaust cushion",
-    "machine_route": "buy Toyota 90917-08004/17572-92000 or mould sample-matched teardrop rubber-metal exhaust cushion",
+    "machine_route": "source exact new teardrop cushion or mould sample-matched rubber-metal exhaust cushion",
     "machine_files": "exh_hgr_90917_08004_teardrop_rev_a.dxf|exh_hgr_90917_08004_teardrop_rev_a.svg",
     "coordinate_system": "2D top profile in mm; origin lower-left of 48 x 86 bounding box; centreline X24",
     "exact_definition_mm": "Teardrop/paddle outline 48 wide x 86 high; lower bulb radius 24 centred X24 Y24; top mounting lug on centreline; mounting hole diameter 9 at X24 Y73; hanger slot 16 wide x 22 high capsule centred X24 Y29; raised boss/recess mark 36 x 42 capsule at X6 Y8; finished rubber body thickness target 22 unless genuine sample proves otherwise; reproduce metal reinforcement if present",
     "material": "Automotive molded exhaust-hanger rubber/EPDM or NR heat/vibration compound, Shore A 60 +/-5, with bonded/internal steel insert where original construction uses it",
     "tolerance": "outer +/-1.0; hole/slot +0.5/-0.0; hole position +/-0.5; thickness +/-0.5 after genuine-sample confirmation",
-    "release_status": "style identified from vehicle photos and OEM reference; buy OEM preferred, local moulding needs genuine sample or intact original for side profile and insert depth",
-    "shop_note": "Do not use the previous round ring or generic two-hole strap. The vehicle/reference evidence points to Toyota 90917-08004 teardrop cushion style."
+    "release_status": "style identified from vehicle photos and reference part shape; Toyota number is not a supply dependency; local moulding needs genuine sample or intact original for side profile, mould depth, insert depth, and reinforcement",
+    "shop_note": "Do not use the previous round ring or generic two-hole strap. The vehicle/reference evidence points to a teardrop cushion style; reproduce the sample geometry if exact new stock is unavailable."
   },
   {
     "part_id": "BM-SHIM-THIN",
@@ -122,37 +122,37 @@
   {
     "part_id": "BUMP-F-L",
     "qty": "1",
-    "machine_route": "buy molded OEM/manufacturer-style bump stop; not CNC-cut",
+    "machine_route": "source exact molded stop or sample/scan mould; not CNC-cut",
     "machine_files": "none",
-    "coordinate_system": "manufacturer part control",
-    "exact_definition_mm": "Toyota/manufacturer-style 48304-60010 direct replacement; if reproduced locally, use physical sample or 3D scan to create a mould matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location",
-    "material": "Automotive SBR/NR/PU bump-stop compound as supplied by manufacturer",
-    "tolerance": "manufacturer part fitment controls; do not substitute universal height/profile",
-    "release_status": "buy manufacturer part preferred",
-    "shop_note": "Verify against left-front bracket and axle contact point before ordering."
+    "coordinate_system": "physical sample or 3D scan controls final mould",
+    "exact_definition_mm": "48304-60010 is a left-front reference shape only; if exact new molded stock is unavailable, reproduce from physical sample or 3D scan with a mould matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location",
+    "material": "Automotive SBR/NR/PU bump-stop compound suitable for molded progressive stops",
+    "tolerance": "old sample/scan and bracket fit control; do not substitute universal height/profile or simple cut block",
+    "release_status": "quote exact new stock or local moulding from sample/scan; Toyota/manufacturer number is reference only",
+    "shop_note": "Verify against left-front bracket, bolt pattern, loaded clearance, and axle contact point before purchase or mould release."
   },
   {
     "part_id": "BUMP-F-R",
     "qty": "1",
-    "machine_route": "buy molded OEM/manufacturer-style bump stop; not CNC-cut",
+    "machine_route": "source exact molded stop or sample/scan mould; not CNC-cut",
     "machine_files": "none",
-    "coordinate_system": "manufacturer part control",
-    "exact_definition_mm": "Toyota/manufacturer-style 48304-60020 direct replacement; separate shorter/right-side front stop; if reproduced locally, use physical sample or 3D scan to create a mould matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location",
-    "material": "Automotive SBR/NR/PU bump-stop compound as supplied by manufacturer",
-    "tolerance": "manufacturer part fitment controls; do not substitute left stop or universal height/profile",
-    "release_status": "buy manufacturer part preferred",
-    "shop_note": "Verify against right-front bracket and axle contact point before ordering."
+    "coordinate_system": "physical sample or 3D scan controls final mould",
+    "exact_definition_mm": "48304-60020 is a shorter/right-front reference shape only; if exact new molded stock is unavailable, reproduce from physical sample or 3D scan with a mould matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location",
+    "material": "Automotive SBR/NR/PU bump-stop compound suitable for molded progressive stops",
+    "tolerance": "old sample/scan and bracket fit control; do not substitute left stop, universal height/profile, or simple cut block",
+    "release_status": "quote exact new stock or local moulding from sample/scan; Toyota/manufacturer number is reference only",
+    "shop_note": "Verify against right-front bracket, bolt pattern, loaded clearance, and axle contact point before purchase or mould release."
   },
   {
     "part_id": "BUMP-R",
     "qty": "2",
-    "machine_route": "buy molded OEM/manufacturer-style bump stops; not CNC-cut",
+    "machine_route": "source exact molded rear pair or sample/scan mould; not CNC-cut",
     "machine_files": "none",
-    "coordinate_system": "manufacturer part control",
-    "exact_definition_mm": "Toyota/manufacturer-style 48304-60010 direct replacement for rear pair; if reproduced locally, use physical sample or 3D scan to create a mould matching rear bracket/base, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location",
-    "material": "Automotive SBR/NR/PU bump-stop compound as supplied by manufacturer",
-    "tolerance": "matched rear pair; loaded axle clearance and final ride height control acceptance",
-    "release_status": "buy manufacturer part preferred",
-    "shop_note": "Check after suspension ride-height plan is known."
+    "coordinate_system": "physical samples or 3D scan controls final mould",
+    "exact_definition_mm": "48304-60010 is a rear-pair reference shape only; if exact new molded stock is unavailable, reproduce from physical samples or 3D scan with a mould matching rear bracket/base, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location",
+    "material": "Automotive SBR/NR/PU bump-stop compound suitable for molded progressive stops",
+    "tolerance": "matched rear pair; old sample/scan, loaded axle clearance, and final ride height control acceptance",
+    "release_status": "quote exact new stock or local moulding from sample/scan; Toyota/manufacturer number is reference only",
+    "shop_note": "Check after suspension ride-height plan is known; reject simple cut blocks or unmatched rear pair."
   }
 ]

@@ -48,7 +48,7 @@ Package contents:
 | `FS-OVAL` front-support pad | `fs_oval_front_support_pad_rev_a.dxf` | Quote/first article; confirm holes, thickness, and insert/boss |
 | `FS-STRIP-L` strip blank | `fs_strip_left_template_blank_rev_a.dxf` | Quote/template blank only; physical trace required |
 | `FS-STRIP-R` strip blank | `fs_strip_right_template_blank_rev_a.dxf` | Quote/template blank only; physical trace required |
-| `EXH-HGR-90917` exhaust teardrop cushion | `exh_hgr_90917_08004_teardrop_rev_a.dxf` | Buy Toyota `90917-08004` / `17572-92000` preferred; local moulding needs genuine sample confirmation |
+| `EXH-HGR-90917` exhaust teardrop cushion | `exh_hgr_90917_08004_teardrop_rev_a.dxf` | Toyota `90917-08004` / `17572-92000` is a reference shape only; source exact new stock or locally mould from a genuine sample/intact original with side profile, insert depth, thickness, and reinforcement confirmed |
 
 Common handoff index: `docs/fabrication-handoff-index.md`.
 

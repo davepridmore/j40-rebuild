@@ -576,12 +576,12 @@ def strip_template(name: str, title: str) -> Drawing:
 def exhaust_90917_teardrop_holder() -> Drawing:
     return Drawing(
         name="exh_hgr_90917_08004_teardrop_rev_a",
-        title="EXH-HGR-90917 Toyota 90917-08004 style exhaust cushion",
+        title="EXH-HGR-90917 teardrop exhaust cushion",
         width=48,
         height=86,
         qty="as fitted",
         material="Black heat/vibration-resistant molded exhaust-hanger rubber, Shore A 60 +/-5, with metal reinforcement where original construction uses it",
-        release_status="style identified from vehicle photos and OEM reference; buy Toyota 90917-08004/17572-92000 or mould from a genuine sample",
+        release_status="style identified from vehicle photos and reference part shape; source exact new stock or mould from genuine sample/intact original",
         circles=[
             Circle(24, 73, 4.5, "DRILL"),
         ],
@@ -596,11 +596,11 @@ def exhaust_90917_teardrop_holder() -> Drawing:
             Line(0, 73, 48, 73, "CENTER"),
         ],
         notes=[
-            "Toyota 90917-08004 / 17572-92000 style teardrop exhaust cushion. This replaces the earlier generic ring/strap placeholders.",
+            "Toyota 90917-08004 / 17572-92000 is a reference shape only. This replaces the earlier generic ring/strap placeholders.",
             "Nominal 2D control: 48 mm wide x 86 mm high; lower rubber bulb R24 centred at X24 Y24; top mounting lug on centreline.",
             "Mounting hole: diameter 9 at X24 Y73. Hanger slot: 16 x 22 capsule centred at X24 Y29. Raised boss/recess mark: 36 x 42 capsule.",
             "Finished rubber body thickness target 22 mm unless the bought/genuine sample proves another value. Reproduce any bonded/internal metal reinforcement.",
-            "Local fabrication needs a genuine part or intact original for final mould depth, side profile, and metal insert detail.",
+            "Local fabrication needs a genuine part or intact original for final mould depth, side profile, thickness, reinforcement, and metal insert detail.",
         ],
     )
 
@@ -686,7 +686,9 @@ def write_inspection_sheet() -> None:
         ("BM-CUP-LG", "OD, 11 mm hole, dish/register depth, steel thickness", "OD +/-1.0; hole +0.3/-0.0; dish 2-3"),
         ("FS-OVAL", "overall length/width, thickness, hole spacing, insert OD, hardness", "outer +/-1.0; holes +/-0.5; thickness +/-0.5"),
         ("FS-STRIP-L/R", "template match, thickness, hole/slot centres, bond quality", "physical template controls final cut"),
-        ("EXH-HGR-90917", "top hole, hanger slot, rubber body thickness, reinforcement, bracket fit", "buy OEM or verify against genuine sample before local moulding"),
+        ("EXH-HGR-90917", "top hole, hanger slot, rubber body thickness, reinforcement, insert depth, bracket fit", "exact new stock or sample/scan-verified mould; Toyota number is reference only"),
+        ("BM-SHIM-THIN", "thickness labels, slot width, footprint trace, deburred edges, coating", "thickness +/-0.1; slot 11-12; footprint supports original pedestal/contact patch"),
+        ("BM-SHIM-THICK", "thickness labels, hole/slot match, station map need, deburred edges, coating", "cut/buy only if station map proves need; no washer towers"),
     ]
     header = "part_id,inspect_features,acceptance\n"
     body = "\n".join(",".join(csv_escape(value) for value in row) for row in rows)
@@ -719,6 +721,30 @@ def machine_definition_rows() -> list[dict[str, str]]:
             "tolerance": "OD/ID +/-1.0; height +/-0.5; register depth +/-0.3",
             "release_status": "machine-defined for first article and matched pair",
             "shop_note": "Make both pieces from one compound batch and one setup.",
+        },
+        {
+            "part_id": "BM-CUP-SM",
+            "qty": "10 working basis",
+            "machine_route": "CNC/waterjet/laser blank, then press/form dish",
+            "machine_files": "bm_cup_small_seat_washer_rev_a.dxf|bm_cup_small_seat_washer_rev_a.svg",
+            "coordinate_system": "2D flat blank in mm; origin lower-left of 64 x 64 bounding square; centre at X32 Y32",
+            "exact_definition_mm": "OD 64; M10 clearance hole diameter 11 at centre; dish/register depth 2-3 after forming; steel thickness 2.5-3.0; final formed profile must match old cup before batch",
+            "material": "2.5-3.0 mm steel, zinc plated or epoxy primed after forming",
+            "tolerance": "OD +/-1.0; hole +0.3/-0.0; dish depth 2-3; thickness +/-0.2",
+            "release_status": "cut/form-ready first article; confirm old cup reuse and dish depth before batch",
+            "shop_note": "Do not substitute generic flat washers. Deburr before forming and coat after forming.",
+        },
+        {
+            "part_id": "BM-CUP-LG",
+            "qty": "2 working basis",
+            "machine_route": "CNC/waterjet/laser blank, then press/form dish",
+            "machine_files": "bm_cup_large_seat_washer_rev_a.dxf|bm_cup_large_seat_washer_rev_a.svg",
+            "coordinate_system": "2D flat blank in mm; origin lower-left of 78 x 78 bounding square; centre at X39 Y39",
+            "exact_definition_mm": "OD 78; M10 clearance hole diameter 11 at centre; dish/register depth 2-3 after forming; steel thickness 2.5-3.0; final formed profile must match old cup before batch",
+            "material": "2.5-3.0 mm steel, zinc plated or epoxy primed after forming",
+            "tolerance": "OD +/-1.0; hole +0.3/-0.0; dish depth 2-3; thickness +/-0.2",
+            "release_status": "cut/form-ready first article; confirm large station and cup landing before batch",
+            "shop_note": "Make large cups as a matched pair and coat after forming.",
         },
         {
             "part_id": "FS-OVAL",
@@ -759,50 +785,74 @@ def machine_definition_rows() -> list[dict[str, str]]:
         {
             "part_id": "EXH-HGR-90917",
             "qty": "as fitted; replace every fitted exhaust cushion",
-            "machine_route": "buy Toyota 90917-08004/17572-92000 or mould sample-matched teardrop rubber-metal exhaust cushion",
+            "machine_route": "source exact new teardrop cushion or mould sample-matched rubber-metal exhaust cushion",
             "machine_files": "exh_hgr_90917_08004_teardrop_rev_a.dxf|exh_hgr_90917_08004_teardrop_rev_a.svg",
             "coordinate_system": "2D top profile in mm; origin lower-left of 48 x 86 bounding box; centreline X24",
             "exact_definition_mm": "Teardrop/paddle outline 48 wide x 86 high; lower bulb radius 24 centred X24 Y24; top mounting lug on centreline; mounting hole diameter 9 at X24 Y73; hanger slot 16 wide x 22 high capsule centred X24 Y29; raised boss/recess mark 36 x 42 capsule at X6 Y8; finished rubber body thickness target 22 unless genuine sample proves otherwise; reproduce metal reinforcement if present",
             "material": "Automotive molded exhaust-hanger rubber/EPDM or NR heat/vibration compound, Shore A 60 +/-5, with bonded/internal steel insert where original construction uses it",
             "tolerance": "outer +/-1.0; hole/slot +0.5/-0.0; hole position +/-0.5; thickness +/-0.5 after genuine-sample confirmation",
-            "release_status": "style identified from vehicle photos and OEM reference; buy OEM preferred, local moulding needs genuine sample or intact original for side profile and insert depth",
-            "shop_note": "Do not use the previous round ring or generic two-hole strap. The vehicle/reference evidence points to Toyota 90917-08004 teardrop cushion style.",
+            "release_status": "style identified from vehicle photos and reference part shape; Toyota number is not a supply dependency; local moulding needs genuine sample or intact original for side profile, mould depth, insert depth, and reinforcement",
+            "shop_note": "Do not use the previous round ring or generic two-hole strap. The vehicle/reference evidence points to a teardrop cushion style; reproduce the sample geometry if exact new stock is unavailable.",
+        },
+        {
+            "part_id": "BM-SHIM-THIN",
+            "qty": "1 pack",
+            "machine_route": "cut flat steel shims after station footprint trace; no universal washer stack",
+            "machine_files": "none",
+            "coordinate_system": "station footprint trace in mm; slot centreline and opening copied from preserved mount station",
+            "exact_definition_mm": "Thin shim pack: 1 mm x12, 2 mm x12, 3 mm x12, 5 mm x12; slot width 11-12 for M10 bolt; plate footprint must fully support original pedestal/contact patch; final outline from original shim or landing-surface trace",
+            "material": "Flat steel, deburred, zinc plated or epoxy primed",
+            "tolerance": "thickness +/-0.1; slot +0.5/-0.0; footprint +/-0.5 after trace",
+            "release_status": "spec-ready pack; CNC/DXF hold until original station footprint is traced",
+            "shop_note": "Label every thickness. Use only at original metal-to-metal shim locations.",
+        },
+        {
+            "part_id": "BM-SHIM-THICK",
+            "qty": "1 pack",
+            "machine_route": "cut flat steel spacer plates after station map confirms need",
+            "machine_files": "none",
+            "coordinate_system": "station footprint trace in mm; M10 clearance and footprint copied from preserved originals",
+            "exact_definition_mm": "Thick spacer control pack: 5 mm x4, 10 mm x4, 15 mm x4. Record Toyota reference thicknesses 22.8 and 27.8 but cut/buy those only if original station map proves need; slot width 11-12 or through hole matching original",
+            "material": "Flat steel plate, deburred, zinc plated or epoxy primed",
+            "tolerance": "thickness +/-0.1; hole/slot +0.5/-0.0; footprint +/-0.5 after trace",
+            "release_status": "conditional release; station map must prove which thick spacers are needed",
+            "shop_note": "Do not replace OE-style thick spacers with washer towers.",
         },
         {
             "part_id": "BUMP-F-L",
             "qty": "1",
-            "machine_route": "buy molded OEM/manufacturer-style bump stop; not CNC-cut",
+            "machine_route": "source exact molded stop or sample/scan mould; not CNC-cut",
             "machine_files": "none",
-            "coordinate_system": "manufacturer part control",
-            "exact_definition_mm": "Toyota/manufacturer-style 48304-60010 direct replacement; if reproduced locally, use physical sample or 3D scan to create a mould matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location",
-            "material": "Automotive SBR/NR/PU bump-stop compound as supplied by manufacturer",
-            "tolerance": "manufacturer part fitment controls; do not substitute universal height/profile",
-            "release_status": "buy manufacturer part preferred",
-            "shop_note": "Verify against left-front bracket and axle contact point before ordering.",
+            "coordinate_system": "physical sample or 3D scan controls final mould",
+            "exact_definition_mm": "48304-60010 is a left-front reference shape only; if exact new molded stock is unavailable, reproduce from physical sample or 3D scan with a mould matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location",
+            "material": "Automotive SBR/NR/PU bump-stop compound suitable for molded progressive stops",
+            "tolerance": "old sample/scan and bracket fit control; do not substitute universal height/profile or simple cut block",
+            "release_status": "quote exact new stock or local moulding from sample/scan; Toyota/manufacturer number is reference only",
+            "shop_note": "Verify against left-front bracket, bolt pattern, loaded clearance, and axle contact point before purchase or mould release.",
         },
         {
             "part_id": "BUMP-F-R",
             "qty": "1",
-            "machine_route": "buy molded OEM/manufacturer-style bump stop; not CNC-cut",
+            "machine_route": "source exact molded stop or sample/scan mould; not CNC-cut",
             "machine_files": "none",
-            "coordinate_system": "manufacturer part control",
-            "exact_definition_mm": "Toyota/manufacturer-style 48304-60020 direct replacement; separate shorter/right-side front stop; if reproduced locally, use physical sample or 3D scan to create a mould matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location",
-            "material": "Automotive SBR/NR/PU bump-stop compound as supplied by manufacturer",
-            "tolerance": "manufacturer part fitment controls; do not substitute left stop or universal height/profile",
-            "release_status": "buy manufacturer part preferred",
-            "shop_note": "Verify against right-front bracket and axle contact point before ordering.",
+            "coordinate_system": "physical sample or 3D scan controls final mould",
+            "exact_definition_mm": "48304-60020 is a shorter/right-front reference shape only; if exact new molded stock is unavailable, reproduce from physical sample or 3D scan with a mould matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location",
+            "material": "Automotive SBR/NR/PU bump-stop compound suitable for molded progressive stops",
+            "tolerance": "old sample/scan and bracket fit control; do not substitute left stop, universal height/profile, or simple cut block",
+            "release_status": "quote exact new stock or local moulding from sample/scan; Toyota/manufacturer number is reference only",
+            "shop_note": "Verify against right-front bracket, bolt pattern, loaded clearance, and axle contact point before purchase or mould release.",
         },
         {
             "part_id": "BUMP-R",
             "qty": "2",
-            "machine_route": "buy molded OEM/manufacturer-style bump stops; not CNC-cut",
+            "machine_route": "source exact molded rear pair or sample/scan mould; not CNC-cut",
             "machine_files": "none",
-            "coordinate_system": "manufacturer part control",
-            "exact_definition_mm": "Toyota/manufacturer-style 48304-60010 direct replacement for rear pair; if reproduced locally, use physical sample or 3D scan to create a mould matching rear bracket/base, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location",
-            "material": "Automotive SBR/NR/PU bump-stop compound as supplied by manufacturer",
-            "tolerance": "matched rear pair; loaded axle clearance and final ride height control acceptance",
-            "release_status": "buy manufacturer part preferred",
-            "shop_note": "Check after suspension ride-height plan is known.",
+            "coordinate_system": "physical samples or 3D scan controls final mould",
+            "exact_definition_mm": "48304-60010 is a rear-pair reference shape only; if exact new molded stock is unavailable, reproduce from physical samples or 3D scan with a mould matching rear bracket/base, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location",
+            "material": "Automotive SBR/NR/PU bump-stop compound suitable for molded progressive stops",
+            "tolerance": "matched rear pair; old sample/scan, loaded axle clearance, and final ride height control acceptance",
+            "release_status": "quote exact new stock or local moulding from sample/scan; Toyota/manufacturer number is reference only",
+            "shop_note": "Check after suspension ride-height plan is known; reject simple cut blocks or unmatched rear pair.",
         },
     ]
 
@@ -856,7 +906,7 @@ Use it with:
 ## Files To Send
 
 - `{PDF_NAME}` - dimension and fabrication review sheet
-- `machine_definitions.csv` / `machine_definitions.json` - CNC/shop geometry and controlled non-CNC purchase definitions
+- `machine_definitions.csv` / `machine_definitions.json` - CNC/shop geometry, shim-pack controls, and controlled non-CNC purchase definitions
 - `fabricator_cut_list.csv` - file-by-file cut/form list
 - `inspection_checklist.csv` - receiving and first-article inspection checks
 
@@ -875,13 +925,15 @@ Use it with:
 
 The circular cushions, cup blanks, and oval pad are ready for quote and first article from these files. Full production still requires the hold dimensions in `data/manual/rubber_recreation_measurement_closure.csv`.
 
+The shim packs are controlled in `machine_definitions.csv` / `machine_definitions.json` as new flat steel thickness packs. They are not released as fixed DXF outlines until the original shim or mount-station footprint is traced in millimeters; do not substitute washer stacks.
+
 The strip files are not final production cut patterns. They define stock envelope, section, and hole/slot working basis, but the actual left/right strip outline and hole centres must be traced from the physical rubber and metal carrier.
 
-The exhaust holder is now controlled as the Toyota `90917-08004` / `17572-92000` teardrop cushion style. Buy the molded part where available; the CAD file is a local-copy control only and needs a genuine sample or intact original before a production mould is cut. Bump stops remain molded manufacturer/sample-matched parts unless a shop creates a proper mould from a physical sample or 3D scan.
+The exhaust holder is controlled as a teardrop cushion style using Toyota `90917-08004` / `17572-92000` only as a reference shape. Source exact new molded stock if it is in hand; otherwise the CAD file is a local-copy control and needs a genuine sample or intact original before a production mould is cut. Bump stops also cannot rely on Toyota/manufacturer supply: use exact new molded stock if found, or have the shop mould from the physical sample or 3D scan. Do not make bump stops from simple cut rubber blocks.
 
 ## Material
 
-Use new black automotive mount-grade solid rubber only: EPDM or NR/SBR, Shore A `60 +/-5`. Reject tyre rubber, crumb rubber, sponge foam, mixed offcuts, salvage rubber, and unmarked compound.
+Use new black automotive mount-grade solid rubber only: EPDM or NR/SBR, Shore A `60 +/-5`. Reject tyre rubber, crumb rubber, sponge foam, mixed offcuts, used rubber, salvage rubber, and unmarked compound.
 
 Steel cups must be `2.5-3.0 mm` steel, deburred and zinc plated or epoxy primed after forming. Sleeves are still controlled by stack dry-fit and are not released as a cut DXF.
 """

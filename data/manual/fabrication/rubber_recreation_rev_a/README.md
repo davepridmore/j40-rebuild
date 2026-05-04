@@ -25,7 +25,7 @@ Use it with:
 - `fs_oval_front_support_pad_rev_a.dxf` / `fs_oval_front_support_pad_rev_a.svg` - FS-OVAL front support two-hole isolator pad, qty 2 matched pieces
 - `fs_strip_left_template_blank_rev_a.dxf` / `fs_strip_left_template_blank_rev_a.svg` - FS-STRIP-L front support strip quote/template blank, qty 1
 - `fs_strip_right_template_blank_rev_a.dxf` / `fs_strip_right_template_blank_rev_a.svg` - FS-STRIP-R front support strip quote/template blank, qty 1
-- `exh_hgr_90917_08004_teardrop_rev_a.dxf` / `exh_hgr_90917_08004_teardrop_rev_a.svg` - EXH-HGR-90917 Toyota 90917-08004 style exhaust cushion, qty as fitted
+- `exh_hgr_90917_08004_teardrop_rev_a.dxf` / `exh_hgr_90917_08004_teardrop_rev_a.svg` - EXH-HGR-90917 teardrop exhaust cushion, qty as fitted
 
 ## Layer Rules
 
@@ -42,7 +42,7 @@ The shim packs are controlled in `machine_definitions.csv` / `machine_definition
 
 The strip files are not final production cut patterns. They define stock envelope, section, and hole/slot working basis, but the actual left/right strip outline and hole centres must be traced from the physical rubber and metal carrier.
 
-The exhaust holder is now controlled as the Toyota `90917-08004` / `17572-92000` teardrop cushion style. Buy the molded part where available; the CAD file is a local-copy control only and needs a genuine sample or intact original before a production mould is cut. Bump stops remain molded manufacturer/sample-matched parts unless a shop creates a proper mould from a physical sample or 3D scan.
+The exhaust holder is controlled as a teardrop cushion style using Toyota `90917-08004` / `17572-92000` only as a reference shape. Source exact new molded stock if it is in hand; otherwise the CAD file is a local-copy control and needs a genuine sample or intact original before a production mould is cut. Bump stops also cannot rely on Toyota/manufacturer supply: use exact new molded stock if found, or have the shop mould from the physical sample or 3D scan. Do not make bump stops from simple cut rubber blocks.
 
 ## Material
 

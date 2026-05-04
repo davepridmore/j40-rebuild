@@ -3090,27 +3090,27 @@ RUBBER_REQUIREMENT_EQUIVALENT_KEYS: dict[str, tuple[str, ...]] = {
 }
 
 HLS_TO_EVIDENCE_KEYS: dict[str, tuple[str, ...]] = {
-    "HLS-01": ("RPO-COOL-001", "RP-COOL-001"),
-    "HLS-02": ("RPO-COOL-002", "RP-COOL-002"),
-    "HLS-03": ("RPO-COOL-003", "RP-COOL-003"),
-    "HLS-04": ("RPO-COOL-004A", "RPO-COOL-004B", "RP-COOL-004"),
-    "HLS-05A": ("RPO-COOL-006A", "RP-COOL-006"),
-    "HLS-05B": ("RPO-COOL-006B", "RP-COOL-006"),
-    "HLS-06": ("RPO-FUEL-001A", "RP-FUEL-001"),
-    "HLS-07": ("RPO-FUEL-001B", "RP-FUEL-001"),
-    "HLS-08": ("RPO-FUEL-001C", "RP-FUEL-001"),
+    "HLS-01": ("RPO-COOL-001",),
+    "HLS-02": ("RPO-COOL-002",),
+    "HLS-03": ("RPO-COOL-003",),
+    "HLS-04": ("RPO-COOL-004A", "RPO-COOL-004B"),
+    "HLS-05A": ("RPO-COOL-006A",),
+    "HLS-05B": ("RPO-COOL-006B",),
+    "HLS-06": ("RPO-FUEL-001A",),
+    "HLS-07": ("RPO-FUEL-001B",),
+    "HLS-08": ("RPO-FUEL-001C",),
     "HLS-09": (),
-    "HLS-10": ("RPO-VAC-001A", "RP-VAC-001"),
-    "HLS-11": ("RPO-VAC-001B", "RP-VAC-001"),
-    "HLS-12": ("RPO-COOL-005", "RP-COOL-005"),
-    "HLS-13": ("RPO-FUEL-002A", "RP-FUEL-002"),
-    "HLS-14": ("RPO-FUEL-002B", "RP-FUEL-002"),
-    "HLS-15": ("RPO-BRAKE-001B", "RP-BRAKE-001"),
-    "HLS-16": ("RPO-CLIP-001", "RHA-016"),
-    "HLS-17": ("RPO-BRAKE-001A", "RP-BRAKE-001", "RHA-012"),
-    "HLS-18": ("RPO-CLUTCH-001A", "RP-CLUTCH-001", "RHA-013"),
-    "HLS-19": ("RPO-CLUTCH-001B", "RP-CLUTCH-001", "RHA-013"),
-    "HLS-20": ("RPO-VAC-001C", "RP-VAC-001", "RHA-011"),
+    "HLS-10": ("RPO-VAC-001A",),
+    "HLS-11": ("RPO-VAC-001B",),
+    "HLS-12": ("RPO-COOL-005",),
+    "HLS-13": ("RPO-FUEL-002A",),
+    "HLS-14": ("RPO-FUEL-002B",),
+    "HLS-15": ("RPO-BRAKE-001B",),
+    "HLS-16": ("RPO-CLIP-001",),
+    "HLS-17": ("RPO-BRAKE-001A",),
+    "HLS-18": ("RPO-CLUTCH-001A",),
+    "HLS-19": ("RPO-CLUTCH-001B",),
+    "HLS-20": ("RPO-VAC-001C",),
     "HLS-21": ("RUB-027", "RHA-014"),
     "HLS-22": ("RUB-026", "RHA-024"),
 }
@@ -7021,7 +7021,13 @@ def order_component_reference_image(item: str, context: str = "") -> dict[str, A
     if (has("brake", "booster") or has("brake", "servo")) and not has_any("hose", "line", "pipe", "tube"):
         return ref("brake_booster", "brake booster reference image", "brake", "booster")
     if has_any("fuel clamp", "clamp pack", "hose clamp", "hose clamps"):
-        return ref("clamp", "fuel hose clamp reference image", "fuel", "clamp")
+        return local(
+            "deliverables/selling_site_images/images/expenses_jubilee_hose_clip_assortment_10_pc_fuel__2a666ef4bae6.jpg",
+            "fuel hose clamp reference image",
+            "fuel_hose_clamp_assortment",
+            "fuel",
+            "clamp",
+        )
     if has_any("fuel", "diesel", "injector leak-off", "leak-off"):
         return ref("fuel_hose", "diesel fuel hose reference image", "fuel", "hose")
     if has_any("vacuum", "breather", "oil mist", "oil outlet"):

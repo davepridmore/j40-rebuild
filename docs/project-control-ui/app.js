@@ -1274,14 +1274,14 @@
       part: "Exhaust pipe teardrop cushion",
       qty: "As fitted",
       image: "../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg",
-      imageCaption: "Toyota 90917-08004 style exhaust cushion CAD",
-      spec: "Origin lower-left of 48 x 86 top profile; centreline X24; teardrop/paddle outline 48 wide x 86 high; lower bulb R24 centred X24 Y24; mounting hole 9 at X24 Y73; hanger slot 16 x 22 capsule centred X24 Y29; raised boss/recess mark 36 x 42 at X6 Y8; rubber body thickness target 22 unless genuine sample proves otherwise.",
-      route: "buy Toyota 90917-08004 / 17572-92000 or mould sample-matched teardrop exhaust cushion",
+      imageCaption: "Teardrop exhaust cushion CAD; Toyota 90917-08004 is a shape reference",
+      spec: "Origin lower-left of 48 x 86 top profile; centreline X24; teardrop/paddle outline 48 wide x 86 high; lower bulb R24 centred X24 Y24; mounting hole 9 at X24 Y73; hanger slot 16 x 22 capsule centred X24 Y29; raised boss/recess mark 36 x 42 at X6 Y8; rubber body thickness target 22 unless genuine sample proves otherwise. Toyota 90917-08004 / 17572-92000 is a reference shape, not an assumed supply path.",
+      route: "source exact new teardrop cushion or mould sample-matched rubber-metal exhaust cushion",
       files: [
         ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.dxf"],
         ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg"],
       ],
-      notes: "Do not use the previous round ring or generic two-hole strap. Local molding needs a genuine sample or intact original for side profile and metal insert.",
+      notes: "Do not use the previous round ring or generic two-hole strap. Local molding needs a genuine sample or intact original for mould depth, side profile, insert depth, thickness, and reinforcement.",
     },
     {
       id: "BUMP-F-L",
@@ -1289,8 +1289,8 @@
       qty: "1",
       image: "../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg",
       imageCaption: "Bump-stop reference",
-      spec: "Not a CNC part. Buy Toyota/manufacturer-style 48304-60010 direct replacement. Local reproduction requires physical sample or 3D scan and a mould matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face.",
-      route: "buy manufacturer molded part preferred",
+      spec: "Not a CNC-cut block. 48304-60010 is a left-front reference shape only. If no exact new molded stop is available, reproduce from the physical sample or 3D scan with a mould matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location.",
+      route: "source exact molded stop or sample/scan mould; not CNC-cut",
       files: [
         ["Machine CSV", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv"],
         ["Machine JSON", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json"],
@@ -1303,8 +1303,8 @@
       qty: "1",
       image: "../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg",
       imageCaption: "Bump-stop reference",
-      spec: "Not a CNC part. Buy Toyota/manufacturer-style 48304-60020 direct replacement. This is the separate shorter/right-side front stop. Local reproduction requires physical sample or 3D scan and a mould.",
-      route: "buy manufacturer molded part preferred",
+      spec: "Not a CNC-cut block. 48304-60020 is a shorter/right-front reference shape only. If no exact new molded stop is available, reproduce from the physical sample or 3D scan with a mould matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location.",
+      route: "source exact molded stop or sample/scan mould; not CNC-cut",
       files: [
         ["Machine CSV", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv"],
         ["Machine JSON", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json"],
@@ -1317,8 +1317,8 @@
       qty: "2",
       image: "../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg",
       imageCaption: "Bump-stop reference",
-      spec: "Not a CNC part. Buy Toyota/manufacturer-style 48304-60010 direct replacement for rear pair. Local reproduction requires physical sample or 3D scan and a mould matching rear bracket/base, bolt pattern/thread, height, progressive profile, and contact face.",
-      route: "buy manufacturer molded part preferred",
+      spec: "Not a CNC-cut block. 48304-60010 is a rear-pair reference shape only. If no exact new molded stops are available, reproduce from physical samples or 3D scan with a mould matching rear bracket/base, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location.",
+      route: "source exact molded pair or sample/scan mould; not CNC-cut",
       files: [
         ["Machine CSV", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv"],
         ["Machine JSON", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json"],
@@ -1380,7 +1380,7 @@
             ${chip("Shore A 60 +/-5")}
           </div>
         </div>
-        <p class="small-muted">Body/front-support rubbers: new black solid EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5. Cups and shims: new flat or formed steel only, deburred and corrosion protected. Exhaust holder: Toyota 90917-08004 / 17572-92000 teardrop exhaust cushion style or sample-matched molded copy. Bump stops: OEM/manufacturer-style molded stops where available; fabricate only by exact sample and bracket match. Reject tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, washer stacks, or universal bump stops that do not match the axle contact point.</p>
+        <p class="small-muted">Body/front-support rubbers: new black solid EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5. Cups and shims: new flat or formed steel only, deburred and corrosion protected. External Toyota/OE numbers are reference shapes only: the scout must be able to source exact new molded stock or take the old sample/scan to a rubber shop for local moulding. Exhaust holder: teardrop cushion style or sample-matched molded copy. Bump stops: exact molded stops or sample/scan-moulded copies only. Reject tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, washer stacks, simple cut blocks, or universal bump stops that do not match the axle contact point.</p>
         <p class="small-muted">Machine package: <a href="../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv">machine_definitions.csv</a>, <a href="../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json">machine_definitions.json</a>, <a href="../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf">dimension sheet PDF</a>.</p>
         <div class="table-wrap requirement-table-wrap">
           <table class="requirement-table chassis-rubber-spec-table">
@@ -1414,8 +1414,8 @@
             </tbody>
           </table>
         </div>
-        <p class="small-muted">Tolerances: circular cushion OD/ID +/-1.0, height +/-0.5, bore/register concentricity <=1.0; cup OD +/-1.0, hole +0.3/-0.0, dish 2-3; shim/spacer thickness +/-0.1 after station trace; FS-OVAL outside +/-1.0, hole position +/-0.5, thickness +/-0.5; strip outline +/-1.0, holes +/-0.5, thickness +/-0.5. Bump stops are not simple cut rubber; OEM/manufacturer part or exact molded sample controls.</p>
-        <p class="small-muted">Lower holds: BM-SM split-stack check if the old sample separates; BM-SHIM rows require preserved station footprint measurement before CNC/laser cutting; FS-STRIP-L/R require physical carrier trace before final CNC cut; EXH-HGR-90917 should be bought as Toyota 90917-08004 / 17572-92000 where available, or molded only after a genuine sample confirms side profile, insert depth, and exact thickness; bump stops need bracket/contact verification before purchase.</p>
+        <p class="small-muted">Tolerances: circular cushion OD/ID +/-1.0, height +/-0.5, bore/register concentricity <=1.0; cup OD +/-1.0, hole +0.3/-0.0, dish 2-3; shim/spacer thickness +/-0.1 after station trace; FS-OVAL outside +/-1.0, hole position +/-0.5, thickness +/-0.5; strip outline +/-1.0, holes +/-0.5, thickness +/-0.5. Bump stops are not simple cut rubber; exact molded stock or physical-sample/scan moulding controls.</p>
+        <p class="small-muted">Lower holds: BM-SM split-stack check if the old sample separates; BM-SHIM rows require preserved station footprint measurement before CNC/laser cutting; FS-STRIP-L/R require physical carrier trace before final CNC cut; EXH-HGR-90917 needs a genuine sample or intact original to confirm side profile, insert depth, exact thickness, and reinforcement before local moulding; bump stops need old-sample/scan geometry plus bracket/contact verification before purchase or moulding.</p>
       </article>
     `;
   }
@@ -2866,7 +2866,7 @@
         item: row.part,
         partNumber: fileNames,
         route: row.route,
-        state: isBump ? "buy_new_only" : isShim ? "trace_then_cut" : "quote_first_article_ready",
+        state: isBump ? "sample_mould_or_new_part" : isShim ? "trace_then_cut" : "quote_first_article_ready",
         spec: row.spec,
         qty: row.qty,
         material: isCup
@@ -2882,10 +2882,10 @@
         action: isShim
           ? "Trace preserved station footprint before CNC/laser cutting final outline."
           : isBump
-            ? "Buy manufacturer-style part; verify bracket and axle contact point before payment."
+            ? "Take old stop or scan data to the rubber shop; buy exact molded new stock only if bracket, bolt pattern, free height, compressed height, profile, and contact face match."
             : "Send DXF/SVG/PDF package in millimeters; quote one first article before batch.",
         reject: isBump
-          ? "Used, cracked, oil-softened, universal height/profile, or wrong bracket fit."
+          ? "Used, cracked, oil-softened, simple cut block, universal height/profile, or wrong bracket/contact fit."
           : "Used/salvage material, wrong scale, wrong thickness, or sample mismatch.",
         notes: row.notes,
         image,
@@ -3067,7 +3067,7 @@
       return ref("../../deliverables/selling_site_images/images/reference_catalog/brake_booster.jpg", "brake booster reference image", "brake_booster");
     }
     if (hasAny("fuel clamp", "clamp pack", "hose clamp", "hose clamps")) {
-      return ref("../../deliverables/selling_site_images/images/reference_catalog/clamp.jpg", "fuel hose clamp reference image", "fuel_hose_clamp");
+      return ref("../../deliverables/selling_site_images/images/expenses_jubilee_hose_clip_assortment_10_pc_fuel__2a666ef4bae6.jpg", "fuel hose clamp reference image", "fuel_hose_clamp_assortment");
     }
     if (hasAny("fuel", "diesel", "injector leak-off", "leak-off")) {
       return ref("../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg", "diesel fuel hose reference image", "fuel_hose");
@@ -3275,24 +3275,25 @@
       scope: "Exact requirement sheet",
       quantity: "9 rubber requirements plus controlled hardware/order-release lines",
       plain_stall_request:
-        "I need the exact new-only J40 body/front-support rubber requirements listed in the spec sheet, plus sleeves, cup washers, shims, spacers, bolts, nuts, and washers as separate controlled lines. Old rubbers/photos are samples only. No used or salvage rubber.",
+        "I need the exact new-only J40 body/front-support rubber requirements listed in the spec sheet, plus sleeves, cup washers, shims, spacers, bolts, nuts, and washers as separate controlled lines. Toyota/OE part numbers are reference shapes only; quote local fabrication from the measured spec if exact new stock is not in hand. Old rubbers/photos are samples only. No used or salvage rubber.",
       buy_target:
-        "Use the exact requirement list below and the linked rubber-ordering pages. Buy a complete matched new OE/reproduction kit only if it matches the actual station layout, or fabricate new parts from the measured BM-LG, BM-SM, FS-OVAL, FS-STRIP-L, and FS-STRIP-R specs.",
+        "Use the exact requirement list below and the linked rubber-ordering pages. Do not rely on Toyota availability. Buy exact new molded stock only if it matches the actual station layout; otherwise fabricate new parts from the measured BM-LG, BM-SM, FS-OVAL, FS-STRIP-L, FS-STRIP-R, EXH-HGR-90917, and BUMP-* specs.",
       must_include: [
         "Upper and lower body mount rubber cushions for the required body stations.",
         "Steel sleeves, cup or seat washers, shims, spacers, bolts, nuts, and washers quoted separately.",
         "Rubber dimensions shown clearly: outside diameter, inside hole, thickness, and sleeve length.",
+        "Fabrication quote basis for every non-stock rubber: drawing/profile, old sample or 3D scan requirement, material/hardness, first article, and dry-fit check.",
         "New rubber only for every fitted rubber, grommet, pad, cushion, boot, sleeve cover, isolator, bump stop, and hanger.",
       ],
       bench_test: [
-        "Compare every rubber and sleeve to the old sample or written dimension sheet.",
+        "Compare every rubber and sleeve to the old sample or written dimension sheet before payment or mould release.",
         "Press the rubber by hand: it should feel firm and elastic, not brittle or sponge-soft.",
         "Check sleeves and washers with the actual bolt size before payment.",
         "Keep shim and spacer thicknesses separated and labelled.",
       ],
       reject_if: [
         "Seller offers old used rubber, salvage rubber, unknown mixed rubber, sponge rubber, or cracked stock.",
-        "Sleeve hole, rubber height, washer shape, or shim thickness does not match the measured plan.",
+        "Sleeve hole, rubber height, washer shape, shim thickness, moulded profile, or bracket contact face does not match the measured plan.",
         "Hardware has no grade mark, wrong pitch, damaged threads, or heavy rust.",
         "Seller will not allow measurement photos before payment.",
       ],
@@ -3304,7 +3305,7 @@
       price_guidance: {
         rule: "Keep rubber, sleeves, shims, and bolts as separate quote lines so a wrong line can be rejected without losing the whole package.",
       },
-      decision_rule: "Buy only new rubber after the old mount samples or measurement sheet prove the rubber shape, sleeve size, and hardware stack.",
+      decision_rule: "Buy or fabricate only new rubber after the old samples or measurement sheet prove the rubber shape, sleeve size, moulded profile, and hardware stack.",
       links: [
         scoutDocLink("docs/rubber-ordering-spec-20260502.md", "Rubber ordering spec"),
         scoutDocLink("docs/local-market-component-order-spec-20260504.md", "Exact local-market order spec"),
