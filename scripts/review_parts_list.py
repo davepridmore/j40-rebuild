@@ -57,12 +57,14 @@ def action_bucket(row: dict[str, str]) -> str:
         return "completed_or_received"
     if procurement_stage == "ordered_pending_delivery" or status == "ordered":
         return "ordered_waiting_arrival"
-    if procurement_stage == "purchase_ready":
+    if procurement_stage.startswith("purchase_ready"):
         if status == "quote":
             return "quote_decision_ready"
         return "buy_now"
     if procurement_stage == "researching":
         return "researching"
+    if procurement_stage == "spec_ready_release_hold":
+        return "spec_ready_release_hold"
     if procurement_stage == "spec_needed_before_order":
         return "needs_spec_before_order"
     if procurement_stage == "next_phase_purchase":

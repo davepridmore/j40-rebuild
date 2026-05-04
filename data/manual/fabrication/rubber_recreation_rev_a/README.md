@@ -12,6 +12,7 @@ Use it with:
 ## Files To Send
 
 - `j40_rubber_recreation_rev_a_dimension_sheet.pdf` - dimension and fabrication review sheet
+- `machine_definitions.csv` / `machine_definitions.json` - CNC/shop geometry and controlled non-CNC purchase definitions
 - `fabricator_cut_list.csv` - file-by-file cut/form list
 - `inspection_checklist.csv` - receiving and first-article inspection checks
 
@@ -24,6 +25,7 @@ Use it with:
 - `fs_oval_front_support_pad_rev_a.dxf` / `fs_oval_front_support_pad_rev_a.svg` - FS-OVAL front support two-hole isolator pad, qty 2 matched pieces
 - `fs_strip_left_template_blank_rev_a.dxf` / `fs_strip_left_template_blank_rev_a.svg` - FS-STRIP-L front support strip quote/template blank, qty 1
 - `fs_strip_right_template_blank_rev_a.dxf` / `fs_strip_right_template_blank_rev_a.svg` - FS-STRIP-R front support strip quote/template blank, qty 1
+- `exh_hgr_90917_08004_teardrop_rev_a.dxf` / `exh_hgr_90917_08004_teardrop_rev_a.svg` - EXH-HGR-90917 Toyota 90917-08004 style exhaust cushion, qty as fitted
 
 ## Layer Rules
 
@@ -37,6 +39,8 @@ Use it with:
 The circular cushions, cup blanks, and oval pad are ready for quote and first article from these files. Full production still requires the hold dimensions in `data/manual/rubber_recreation_measurement_closure.csv`.
 
 The strip files are not final production cut patterns. They define stock envelope, section, and hole/slot working basis, but the actual left/right strip outline and hole centres must be traced from the physical rubber and metal carrier.
+
+The exhaust holder is now controlled as the Toyota `90917-08004` / `17572-92000` teardrop cushion style. Buy the molded part where available; the CAD file is a local-copy control only and needs a genuine sample or intact original before a production mould is cut. Bump stops remain molded manufacturer/sample-matched parts unless a shop creates a proper mould from a physical sample or 3D scan.
 
 ## Material
 

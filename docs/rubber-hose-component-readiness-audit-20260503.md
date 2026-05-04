@@ -6,7 +6,9 @@ Primary audit table: [rubber_hose_component_audit.csv](../data/manual/rubber_hos
 
 ## Readiness Position
 
-The rubber hose set is not ready to send as one direct acquisition package yet. It is ready as a controlled measurement package: every visible family now has an open item, but most hose purchases still require caliper dimensions in `mm` before payment.
+Update after the May 3/May 4 review: the standard engine/cooling/fuel/vacuum/breather hose items are now ready for controlled acquisition from standard HJ47/2H and diesel-service sizes plus the imported images. The formed coolant pipe is released for quote/template using the May 2 tape-reference photos and physical sample.
+
+The remaining holds are no longer generic "measure every pipe" holds. They are install/safety holds: 2H vacuum pump oil outlet fitted-presence check, brake/clutch hydraulic fitting and movement checks, formed-pipe dry-fit/pressure test, fuel prime leak test, coolant pressure test, vacuum assist check, and final chafe checks.
 
 The only rubber items with usable fabrication dimensions today are the body/front-support rubber recreation parts:
 
@@ -24,13 +26,17 @@ The image review found two items that were visible but not explicit enough in th
 
 ## Direct Acquisition Gate
 
-Do not send these for direct purchase until the listed measurements are recorded:
+These rows are direct local-market purchases now; final trimming and checks happen at install:
 
-- Coolant/radiator/heater/overflow hoses: neck or nipple OD, hose OD for clamps, route length/free length, and bend clearance in `mm`.
-- Formed-pipe connector hoses: each connector ID/OD, free/cut length, pipe-end OD/bead, mating spigot OD, overlap, clamp band width, and kink clearance in `mm`.
-- Fuel hoses: each barb/nipple OD, route length, hose OD for clamps, and printed diesel rating.
-- Vacuum/breather/oil hoses: barb/spigot OD, route length, oil exposure, collapse resistance, and check-valve direction.
-- Brake/clutch flex hoses: complete assembly length, end fitting/thread/seat, bracket retention, and full-droop or drivetrain movement clearance.
+- Coolant/radiator/heater/overflow hoses: buy the standard/molded or listed stock lengths, then sample-match/dry-fit and choose clamps by actual hose OD.
+- Formed-pipe connector hoses: buy two `500 mm` EPDM connector blanks on the `28-30 mm` working ID basis; cut by sample and dry-fit.
+- Fuel hoses: buy `8 mm x 3000 mm`, `6 mm x 2000 mm`, and `3.2-3.5 mm x 1000 mm` diesel-rated hose stock plus rolled-edge fuel clamps.
+- Vacuum/breather/oil-mist stock: buy `10-12 mm ID x 2000 mm` reinforced vacuum hose and `16-19 mm ID x 1000 mm` oil-resistant breather hose.
+
+Do not send these as generic direct purchases:
+
+- 2H vacuum pump oil outlet molded hose: buy only if fitted.
+- Brake/clutch flex hoses: buy only as complete crimped hydraulic assemblies copied from old samples or matched to fitted vehicle hardware.
 - Air-intake duct: air-cleaner outlet OD, intake inlet OD, free length, offset, accordion/compression travel, branch/nipple OD, and clamp OD.
 
 ## Open Item Coverage

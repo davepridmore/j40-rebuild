@@ -99,6 +99,22 @@
     openItemDetail(itemKey);
   });
 
+  root.addEventListener("pointerover", (event) => {
+    handleVideoPreviewEvent(event, true);
+  });
+
+  root.addEventListener("pointerout", (event) => {
+    handleVideoPreviewEvent(event, false);
+  });
+
+  root.addEventListener("focusin", (event) => {
+    handleVideoPreviewEvent(event, true);
+  });
+
+  root.addEventListener("focusout", (event) => {
+    handleVideoPreviewEvent(event, false);
+  });
+
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && state.lightboxImageBase) {
       closeLightbox();
@@ -935,19 +951,38 @@
     `;
   }
 
-  function renderVideo(prepared, videoClass) {
+  function renderVideoButton(prepared, buttonClass, videoClass) {
     return `
-      <video class="${videoClass}" controls preload="metadata" playsinline src="${escapeHtml(prepared.path)}">
-        Your browser does not support this video format.
-      </video>
+      <button type="button" class="${buttonClass} video-open-btn" data-image-key="${escapeHtml(prepared.key)}" data-video-preview="1" title="Open video" aria-label="Open video: ${escapeHtml(prepared.caption)}">
+        <video class="${videoClass} video-preview" muted loop preload="metadata" playsinline src="${escapeHtml(prepared.path)}"></video>
+        <span class="video-preview-icon" aria-hidden="true"></span>
+        <span class="video-preview-badge" aria-hidden="true">Video</span>
+      </button>
     `;
   }
 
   function renderPreparedMedia(prepared, buttonClass, mediaClass) {
     if (prepared.mediaType === "video") {
-      return renderVideo(prepared, mediaClass);
+      return renderVideoButton(prepared, buttonClass, mediaClass);
     }
     return renderImageButton(prepared, buttonClass, mediaClass);
+  }
+
+  function handleVideoPreviewEvent(event, shouldPlay) {
+    const trigger = event.target.closest("[data-video-preview]");
+    if (!trigger || trigger.contains(event.relatedTarget)) {
+      return;
+    }
+    const video = trigger.querySelector("video");
+    if (!video) {
+      return;
+    }
+    if (shouldPlay) {
+      video.muted = true;
+      video.play().catch(() => {});
+      return;
+    }
+    video.pause();
   }
 
   function renderFigureImage(image, fallbackCaption, options = {}) {
@@ -1106,8 +1141,13 @@
       qty: "2",
       image: "../../photos/20260502_004231_gp_CfosvPIg.jpg",
       imageCaption: "Large circular body-mount cushion",
-      spec: "78 OD x 24 high; 32 centre bore/register; 46 centre register OD x 2 deep; outside edge R2-R3.",
-      notes: "Matched pair. Flat, parallel faces.",
+      spec: "Origin lower-left of 78 x 78 top profile; centre X39 Y39; OD 78; height 24; through bore 32; face A register/recess 46 x 2; face B flat; outside load edge R2-R3; faces parallel <=0.5; concentricity <=1.0.",
+      route: "rubber lathe/CNC mill/mould; DXF is top profile",
+      files: [
+        ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.dxf"],
+        ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.svg"],
+      ],
+      notes: "Make matched pair from one setup.",
     },
     {
       id: "BM-SM",
@@ -1115,8 +1155,13 @@
       qty: "10",
       image: "../../photos/20260502_004437_gp_f1TySzww.jpg",
       imageCaption: "Small circular body-mount cushion",
-      spec: "64 OD x 22 high; 32 centre bore/register; 46 centre register OD x 2 deep; outside edge R2-R3.",
-      notes: "All 10 from one batch. Flat, parallel faces.",
+      spec: "Origin lower-left of 64 x 64 top profile; centre X32 Y32; OD 64; height 22; through bore 32; face A register/recess 46 x 2; face B flat; outside load edge R2-R3; faces parallel <=0.5; concentricity <=1.0.",
+      route: "rubber lathe/CNC mill/mould; DXF is top profile",
+      files: [
+        ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf"],
+        ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.svg"],
+      ],
+      notes: "One-piece definition unless old sample proves split stack.",
     },
     {
       id: "FS-OVAL",
@@ -1124,8 +1169,13 @@
       qty: "2",
       image: "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
       imageCaption: "Front-support two-hole oval pad",
-      spec: "96 long x 64 wide x 15 thick; two 12 holes on 64 centres; 36 x 18 relief pocket with R3 corners; top boss/insert OD 29.",
-      notes: "Matched pair. Punch or machine holes cleanly.",
+      spec: "Origin lower-left of 64 x 96 plan; outer capsule 64 wide x 96 long with R32 ends; thickness 15; through holes 12 at X32 Y16 and X32 Y80; relief pocket 36 x 18 R3 at X14 Y39; insert/boss mark 29 at X32 Y16.",
+      route: "waterjet/knife/punch/moulded 2.5D rubber pad",
+      files: [
+        ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf"],
+        ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.svg"],
+      ],
+      notes: "INSERT_MARK is not a through cut. Confirm blind pocket vs through relief.",
     },
     {
       id: "FS-STRIP-L",
@@ -1133,8 +1183,13 @@
       qty: "1",
       image: "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
       imageCaption: "Front-support left strip / liner",
-      spec: "165 trace length; 38-42 width; 8 base thickness; 14 raised/load pad height; 11 M10 holes or 11 x 16 slots where the carrier shows slots.",
-      notes: "Trace final outline and hole centres from the physical left carrier.",
+      spec: "Stock envelope 165 x 40 with R4 ends; base thickness 8; raised/load pad height 14; provisional slots 16 x 11 at centres X20 Y20 and X145 Y20 only if carrier confirms.",
+      route: "template trace, then waterjet/knife/punch; supplied DXF is stock blank only",
+      files: [
+        ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf"],
+        ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg"],
+      ],
+      notes: "Final CNC cut requires physical left carrier trace.",
     },
     {
       id: "FS-STRIP-R",
@@ -1142,17 +1197,27 @@
       qty: "1",
       image: "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
       imageCaption: "Front-support right strip / liner",
-      spec: "Same as FS-STRIP-L unless the right carrier proves different.",
-      notes: "Trace final outline and hole centres from the physical right carrier.",
+      spec: "Stock envelope 165 x 40 with R4 ends; base thickness 8; raised/load pad height 14; provisional slots 16 x 11 at centres X20 Y20 and X145 Y20 only if carrier confirms.",
+      route: "template trace, then waterjet/knife/punch; supplied DXF is stock blank only",
+      files: [
+        ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf"],
+        ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg"],
+      ],
+      notes: "Final CNC cut requires physical right carrier trace.",
     },
     {
-      id: "EXH-HGR",
-      part: "Exhaust pipe holder / hanger rubber",
-      qty: "Count all exhaust support points",
-      image: "../../deliverables/selling_site_images/images/reference_catalog/exhaust_hanger.jpg",
-      imageCaption: "Exhaust hanger rubber shape reference",
-      spec: "Buy by sample: measure hanger pin OD, hole centre spacing, rubber width/thickness, free length, and installed exhaust movement clearance.",
-      notes: "Replace cracked, stretched, missing, or heat-damaged holders. Match all holders at the same support style.",
+      id: "EXH-HGR-90917",
+      part: "Exhaust pipe teardrop cushion",
+      qty: "As fitted",
+      image: "../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg",
+      imageCaption: "Toyota 90917-08004 style exhaust cushion CAD",
+      spec: "Origin lower-left of 48 x 86 top profile; centreline X24; teardrop/paddle outline 48 wide x 86 high; lower bulb R24 centred X24 Y24; mounting hole 9 at X24 Y73; hanger slot 16 x 22 capsule centred X24 Y29; raised boss/recess mark 36 x 42 at X6 Y8; rubber body thickness target 22 unless genuine sample proves otherwise.",
+      route: "buy Toyota 90917-08004 / 17572-92000 or mould sample-matched teardrop exhaust cushion",
+      files: [
+        ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.dxf"],
+        ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg"],
+      ],
+      notes: "Do not use the previous round ring or generic two-hole strap. Local molding needs a genuine sample or intact original for side profile and metal insert.",
     },
     {
       id: "BUMP-F-L",
@@ -1160,8 +1225,10 @@
       qty: "1",
       image: "../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg",
       imageCaption: "Bump stop shape reference",
-      spec: "Prefer OEM/manufacturer-style Toyota 48304-60010 or direct replacement. If made locally, sample-match molded profile, base footprint, mounting hole pattern/thread, free height, compressed height, contact face location, and axle contact clearance.",
-      notes: "Verify by chassis/VIN and physical left-front bracket before ordering. Do not use a generic universal stop.",
+      spec: "Not a CNC part. Buy Toyota/manufacturer-style 48304-60010 direct replacement. Local reproduction requires physical sample or 3D scan and a mould matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face.",
+      route: "buy manufacturer molded part preferred",
+      files: [],
+      notes: "Verify left-front bracket and axle contact point.",
     },
     {
       id: "BUMP-F-R",
@@ -1169,8 +1236,10 @@
       qty: "1",
       image: "../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg",
       imageCaption: "Bump stop shape reference",
-      spec: "Prefer OEM/manufacturer-style Toyota 48304-60020 or direct replacement. This is a separate RH/front part; match the shorter/right-side profile, base footprint, mounting hole pattern/thread, free height, compressed height, contact face location, and axle contact clearance.",
-      notes: "Verify by chassis/VIN and physical right-front bracket before ordering. Do not install the left-side stop here.",
+      spec: "Not a CNC part. Buy Toyota/manufacturer-style 48304-60020 direct replacement. This is the separate shorter/right-side front stop. Local reproduction requires physical sample or 3D scan and a mould.",
+      route: "buy manufacturer molded part preferred",
+      files: [],
+      notes: "Do not install left stop or universal stop here.",
     },
     {
       id: "BUMP-R",
@@ -1178,8 +1247,10 @@
       qty: "2",
       image: "../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg",
       imageCaption: "Bump stop shape reference",
-      spec: "Prefer OEM/manufacturer-style Toyota 48304-60010 or direct replacement for both rear sides. If sourced locally, match rear bracket/base, molded profile, bolt pattern/thread, free height, compressed height, contact face location, and loaded axle clearance.",
-      notes: "Replace as a matched rear pair. Check with final suspension ride height and axle travel before purchase.",
+      spec: "Not a CNC part. Buy Toyota/manufacturer-style 48304-60010 direct replacement for rear pair. Local reproduction requires physical sample or 3D scan and a mould matching rear bracket/base, bolt pattern/thread, height, progressive profile, and contact face.",
+      route: "buy manufacturer molded part preferred",
+      files: [],
+      notes: "Replace as matched rear pair after suspension ride height is known.",
     },
   ];
 
@@ -1188,6 +1259,9 @@
     ["../../photos/20260502_004442_gp_7WcFHjLQ.jpg", "Circular annular cushion reference 2"],
     ["../../photos/20260502_004254_gp_Hm9RR5DQ.jpg", "Long strip height reference"],
     ["../../photos/20260502_004314_gp_wuzpgNrA.jpg", "Long strip side reference"],
+    ["../../photos/20260501_193755_gp_cuaY6sgg.jpg", "Rear exhaust and bracket context"],
+    ["../../photos/20260501_193805_gp_VgTc8wYQ.jpg", "Exhaust bracket close reference"],
+    ["../../photos/20260501_193811_gp_uv8kwbxw.jpg", "Tailpipe bracket and holder location reference"],
     ["../../photos/20260405_234652.jpg", "Original tub-side body-mount context"],
     ["../../photos/20260405_234546.jpg", "Original underbody mount context"],
   ];
@@ -1208,6 +1282,18 @@
     `;
   }
 
+  function renderChassisRubberCadRoute(row) {
+    const links = Array.isArray(row.files)
+      ? row.files
+          .map(([label, href]) => `<a href="${escapeHtml(href)}">${escapeHtml(label)}</a>`)
+          .join(" ")
+      : "";
+    return `
+      <div>${escapeHtml(row.route || "")}</div>
+      ${links ? `<div class="small-muted chassis-rubber-file-links">${links}</div>` : ""}
+    `;
+  }
+
   function renderChassisRubberSimpleSpec() {
     return `
       <article class="card pipe-requirements-card">
@@ -1218,7 +1304,8 @@
             ${chip("Shore A 60 +/-5")}
           </div>
         </div>
-        <p class="small-muted">Body/front-support rubbers: new black solid EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5. Exhaust holders: automotive exhaust-hanger rubber/EPDM suitable for heat and vibration. Bump stops: OEM/manufacturer-style molded stops where available; fabricate only by exact sample and bracket match. Reject tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, or universal bump stops that do not match the axle contact point.</p>
+        <p class="small-muted">Body/front-support rubbers: new black solid EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5. Exhaust holder: Toyota 90917-08004 / 17572-92000 teardrop exhaust cushion style or sample-matched molded copy. Bump stops: OEM/manufacturer-style molded stops where available; fabricate only by exact sample and bracket match. Reject tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, or universal bump stops that do not match the axle contact point.</p>
+        <p class="small-muted">Machine package: <a href="../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv">machine_definitions.csv</a>, <a href="../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json">machine_definitions.json</a>, <a href="../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf">dimension sheet PDF</a>.</p>
         <div class="table-wrap requirement-table-wrap">
           <table class="requirement-table chassis-rubber-spec-table">
             <thead>
@@ -1227,7 +1314,8 @@
                 <th>ID</th>
                 <th>Part</th>
                 <th>Qty</th>
-                <th>Exact Spec</th>
+                <th>Machine / Purchase Definition</th>
+                <th>CAD / Route</th>
                 <th>Notes</th>
               </tr>
             </thead>
@@ -1241,6 +1329,7 @@
                       <td>${escapeHtml(row.part)}</td>
                       <td>${escapeHtml(row.qty)}</td>
                       <td>${escapeHtml(row.spec)}</td>
+                      <td>${renderChassisRubberCadRoute(row)}</td>
                       <td>${escapeHtml(row.notes)}</td>
                     </tr>
                   `
@@ -1250,6 +1339,7 @@
           </table>
         </div>
         <p class="small-muted">Tolerances: circular cushion OD/ID +/-1.0, height +/-0.5, bore/register concentricity <=1.0; FS-OVAL outside +/-1.0, hole position +/-0.5, thickness +/-0.5; strip outline +/-1.0, holes +/-0.5, thickness +/-0.5. Bump stops are not simple cut rubber; OEM/manufacturer part or exact molded sample controls.</p>
+        <p class="small-muted">Lower holds: BM-SM split-stack check if the old sample separates; FS-STRIP-L/R require physical carrier trace before final CNC cut; EXH-HGR-90917 should be bought as Toyota 90917-08004 / 17572-92000 where available, or molded only after a genuine sample confirms side profile, insert depth, and exact thickness; bump stops need bracket/contact verification before purchase.</p>
       </article>
     `;
   }
@@ -2122,6 +2212,7 @@
         const steps = Array.isArray(panel.steps) ? panel.steps : [];
         const materials = panel.materials || {};
         const available = Array.isArray(materials.available) ? materials.available : [];
+        const pendingDelivery = Array.isArray(materials.pending_delivery) ? materials.pending_delivery : [];
         const missing = Array.isArray(materials.missing) ? materials.missing : [];
         return `
           <article class="card">
@@ -2179,12 +2270,16 @@
                 : ""
             }
             ${
-              available.length || missing.length
+              available.length || pendingDelivery.length || missing.length
                 ? `
                   <div class="operation-materials">
                     <div>
                       <h4>Available</h4>
                       ${renderPlainList(available)}
+                    </div>
+                    <div>
+                      <h4>Pending Delivery</h4>
+                      ${renderPlainList(pendingDelivery)}
                     </div>
                     <div>
                       <h4>Still Missing / Lock</h4>
@@ -2324,6 +2419,7 @@
       .map((spec) => {
         const price = spec.price_guidance || {};
         const quantity = cleanString(spec.quantity || price.quantity);
+        const image = spec.image && !isImageDeleted(spec.image) ? spec.image : null;
         const priceBits = [
           quantity ? `Quantity: ${quantity}` : "",
           price.unit_price_range ? `Unit price range: ${price.unit_price_range}` : price.target_range ? `Unit price range: ${price.target_range}` : "",
@@ -2332,27 +2428,878 @@
           price.rule || "",
         ].filter((item) => cleanString(item));
         return `
-          <article class="card market-spec-card" id="${escapeHtml(spec.id || "")}">
-            <div class="detail-header">
-              <h3>${escapeHtml(spec.title || "Market Spec")}</h3>
-              ${chip(spec.scope || "Market scout")}
+          <article class="card market-spec-card scout-spec-card" id="${escapeHtml(spec.id || "")}">
+            <div class="scout-spec-layout">
+              ${
+                image
+                  ? renderFigureImage(image, spec.title || "Scout reference image", {
+                      figureClass: "scout-spec-figure",
+                      buttonClass: "image-open-btn scout-spec-image-btn",
+                      imageClass: "scout-spec-image",
+                      captionClass: "small-muted",
+                      showCaption: false,
+                    })
+                  : ""
+              }
+              <div class="scout-spec-copy">
+                <div class="detail-header">
+                  <h3>${escapeHtml(spec.title || "Market Spec")}</h3>
+                  ${chip(spec.scope || "Market scout")}
+                </div>
+                ${spec.plain_stall_request ? `<p class="market-spec-callout"><strong>Ask for:</strong> ${escapeHtml(spec.plain_stall_request)}</p>` : ""}
+                ${spec.buy_target ? `<p><strong>Buy target:</strong> ${escapeHtml(spec.buy_target)}</p>` : ""}
+                ${quantity ? `<p><strong>Quantity:</strong> ${escapeHtml(quantity)}</p>` : ""}
+              </div>
             </div>
-            ${spec.plain_stall_request ? `<p class="market-spec-callout"><strong>Plain stall request:</strong> ${escapeHtml(spec.plain_stall_request)}</p>` : ""}
-            ${spec.buy_target ? `<p><strong>Buy Target:</strong> ${escapeHtml(spec.buy_target)}</p>` : ""}
-            ${quantity ? `<p><strong>Quantity:</strong> ${escapeHtml(quantity)}</p>` : ""}
             <div class="market-spec-grid">
               ${renderMarketSpecList("Must Include", spec.must_include)}
-              ${renderMarketSpecList("Bench Test", spec.bench_test)}
+              ${renderMarketSpecList("Test Before Payment", spec.bench_test)}
               ${renderMarketSpecList("Reject If", spec.reject_if)}
-              ${renderMarketSpecList("Capture Before Leaving", spec.capture_before_leaving)}
+              ${renderMarketSpecList("Photos + Details To Send", spec.capture_before_leaving)}
             </div>
             ${priceBits.length ? `<p class="market-spec-price"><strong>Price Guidance:</strong> ${escapeHtml(priceBits.join(" | "))}</p>` : ""}
-            ${spec.decision_rule ? `<p><strong>Decision Rule:</strong> ${escapeHtml(spec.decision_rule)}</p>` : ""}
+            ${spec.decision_rule ? `<p><strong>Buy rule:</strong> ${escapeHtml(spec.decision_rule)}</p>` : ""}
             ${renderLinksPanel(spec)}
           </article>
         `;
       })
       .join("");
+  }
+
+  function workstreamById(workstreamId) {
+    const targetId = cleanString(workstreamId);
+    return (data.workstreams || []).find((workstream) => workstream.id === targetId) || null;
+  }
+
+  function scoutDocLink(path, label) {
+    return {
+      url: `../../${path}`,
+      label,
+    };
+  }
+
+  function scoutRowText(row) {
+    return [
+      row.entry_id,
+      row.source_ref,
+      row.workstream,
+      row.source,
+      row.supply_type,
+      row.inventory_group,
+      row.item,
+      row.procurement_stage,
+      row.status,
+      row.status_group,
+      row.status_detail,
+      row.notes,
+      row.vendor,
+      row.evidence_ref,
+      row.source_sheet,
+      row.system,
+      row.decision,
+      row.stage,
+    ]
+      .map((value) => cleanString(value).toLowerCase())
+      .join(" ");
+  }
+
+  function dedupeScoutRows(rows) {
+    const seen = new Set();
+    return (Array.isArray(rows) ? rows : []).filter((row) => {
+      if (!row) {
+        return false;
+      }
+      const key = [row.entry_id, row.source_ref, row.id, row.title, row.item].map(cleanString).join("|");
+      if (seen.has(key)) {
+        return false;
+      }
+      seen.add(key);
+      return true;
+    });
+  }
+
+  function filterScoutRows(rows, config) {
+    const entryIds = new Set(config.entryIds || []);
+    const workstreams = new Set(config.workstreams || []);
+    const terms = (config.terms || []).map((term) => cleanString(term).toLowerCase()).filter(Boolean);
+    return dedupeScoutRows(rows).filter((row) => {
+      const entryId = cleanString(row.entry_id || row.source_ref);
+      if (entryId && entryIds.has(entryId)) {
+        return true;
+      }
+      const workstream = cleanString(row.workstream);
+      if (workstream && workstreams.has(workstream)) {
+        return true;
+      }
+      const text = scoutRowText(row);
+      return terms.some((term) => text.includes(term));
+    });
+  }
+
+  function scoutSourceLinks(sourceLinks, terms) {
+    const sourceTerms = (terms || []).map((term) => cleanString(term).toLowerCase()).filter(Boolean);
+    if (!sourceTerms.length) {
+      return [];
+    }
+    return dedupeScoutRows(sourceLinks).filter((row) => {
+      const text = scoutRowText(row);
+      return sourceTerms.some((term) => text.includes(term));
+    });
+  }
+
+  function scoutOrderSpecRows(rows, limit) {
+    const sourceRows = Array.isArray(rows) ? rows : [];
+    const maxRows = Number.isFinite(limit) ? limit : sourceRows.length;
+    return sourceRows.slice(0, maxRows).map((row) => ({
+      id: row.order_line_id || row.rubber_order_id || row.requirement_id || row.action_id || "",
+      item: row.item || row.item_group || row.requirement_name || row.action || "",
+      partNumber: row.part_number_or_code || "",
+      route: row.route || row.workstream_category || row.priority || row.release_status || "",
+      state: row.order_release_state || row.pre_order_gate || row.status || row.release_status || "",
+      spec: row.exact_order_spec || row.ordering_spec || row.material_spec || row.user_action_required || row.notes || "",
+      action: row.user_action_required || row.measurements_required_before_order || row.action_required || row.do_not_order_if || "",
+      qty: row.qty_to_order || row.qty_required || row.quantity || "",
+      dimension: row.dimension_spec_mm || row.dimension_spec || row.critical_measurements || "",
+      material: row.material_spec || "",
+      sourceBasis: row.source_basis || row.source_ref || "",
+      reject: row.do_not_order_if || row.reject_if || "",
+      notes: row.notes || "",
+    }));
+  }
+
+  function scoutReferenceImage(path, caption, mediaId) {
+    return {
+      path,
+      caption,
+      media_type: "photo",
+      component_group: "procurement_inventory",
+      specific_component: "",
+      stage: "",
+      media_id: mediaId || "",
+      match_basis: "semantic_reference_image",
+    };
+  }
+
+  function firstScoutImage(rows) {
+    const sourceRows = Array.isArray(rows) ? rows : [];
+    const row = sourceRows.find((item) => item && item.image && !isImageDeleted(item.image));
+    return row ? row.image : null;
+  }
+
+  function scoutSpecImage(rows, fallbackImage) {
+    return firstScoutImage(rows) || fallbackImage || null;
+  }
+
+  function attachScoutImage(specs, rows, fallbackImage) {
+    const image = fallbackImage || scoutSpecImage(rows, null);
+    return (Array.isArray(specs) ? specs : []).map((spec) => ({
+      ...spec,
+      image: spec.image || image,
+    }));
+  }
+
+  function fallbackMarketSpec(sourceSpecs, fallbackSpec) {
+    const specs = Array.isArray(sourceSpecs) ? sourceSpecs.filter((spec) => spec && cleanString(spec.title)) : [];
+    return specs.length ? specs : [fallbackSpec];
+  }
+
+  function buildScoutCategories() {
+    const parts = data.parts || {};
+    const allPartRows = dedupeScoutRows([
+      ...(parts.open_rows || []),
+      ...(parts.ordered_pending_delivery || []),
+      ...(parts.urgent_actions || []),
+    ]);
+    const allSupplyRows = dedupeScoutRows((data.supplies && data.supplies.all_rows) || []);
+    const epsWorkstream = workstreamById("eps_vitz_upgrade");
+    const epsMarketSpecs = [
+      ...((epsWorkstream && epsWorkstream.market_specs) || []),
+      ...((parts.market_specs || []).filter((spec) => cleanString(spec.id).includes("eps"))),
+    ];
+    const brakeMarketSpecs = (parts.market_specs || []).filter((spec) => cleanString(spec.id).includes("brake_booster"));
+    const epsParts = filterScoutRows(allPartRows, {
+      entryIds: ["part_power_steering_upgrade"],
+      workstreams: ["eps_vitz_upgrade"],
+      terms: ["eps", "vitz", "yaris", "scp90", "ncp90"],
+    });
+    const brakeBoosterParts = filterScoutRows(allPartRows, {
+      entryIds: ["part_brake_booster_servo_44610_60050"],
+      workstreams: ["brake_system"],
+      terms: ["brake booster", "brake servo", "44610-60050", "vacuum booster"],
+    });
+    const pipeParts = filterScoutRows(allPartRows, {
+      entryIds: [
+        "part_mech_radiator_hose_set",
+        "part_mech_fuel_hose_and_clamps",
+        "part_mech_heater_hose_set",
+        "part_mech_vacuum_hose_refresh",
+        "part_mech_brake_flex_hose_set",
+        "part_rear_axle_hard_brake_lines",
+        "part_rear_center_brake_flex_hose",
+        "part_front_brake_hose_pair",
+      ],
+      workstreams: ["replacement_pipes", "brake_system"],
+      terms: ["replacement pipe", "hose", "hard-line", "brake flex", "fuel hose", "heater hose", "vacuum"],
+    });
+    const rubberParts = filterScoutRows(allPartRows, {
+      entryIds: [
+        "part_body_mount_rubber_kit",
+        "part_body_mount_hardware_kit",
+        "part_body_mount_shim_pack",
+        "part_body_rubber_plastic_bumpers_isolators",
+        "part_body_shoulder_pins_sleeves_spacers",
+      ],
+      workstreams: ["chassis_rubbers"],
+      terms: ["body mount", "rubber kit", "shim", "sleeve", "isolator"],
+    });
+    const glowPlugParts = filterScoutRows(allPartRows, {
+      entryIds: ["part_mech_heat_glow_plugs_set"],
+      workstreams: ["mechanical_baseline"],
+      terms: ["glow plug", "heat plug", "19850-68030", "19850-68060"],
+    });
+    const fuseBoxParts = filterScoutRows(allPartRows, {
+      entryIds: ["part_cabin_compact_fuse_boxes"],
+      workstreams: ["electrical_reset"],
+      terms: ["compact cabin fuse", "additional fuse", "fuse box", "fuse carrier"],
+    });
+    const workshopSupportParts = dedupeScoutRows([
+      ...filterScoutRows(allPartRows, {
+        entryIds: ["part_suspension_wooden_cribbing_blocks"],
+        workstreams: ["suspension_upgrade"],
+        terms: ["wooden cribbing", "hardwood", "wedge chocks"],
+      }),
+      ...filterScoutRows(allSupplyRows, {
+        entryIds: [
+          "tool_local_toolbench",
+          "tool_local_bench_drill",
+          "tool_local_c_clamp",
+          "service_local_3d_printing_fabrication_prototypes",
+        ],
+        workstreams: ["site_setup", "fabrication_handoff"],
+        terms: ["workbench", "toolbench", "pillar drill", "bench drill", "drill press", "c-clamp", "3d printing"],
+      }),
+    ]);
+    const hoseMarketSpec = {
+      id: "pipes_hoses_market_scout",
+      title: "Pipes + Hoses Market Scout",
+      scope: "Quote and sample-match only",
+      quantity: "One measured hose and line batch",
+      plain_stall_request:
+        "I need replacement hoses and pipe or line material for a Toyota Land Cruiser J40 diesel. Match the old samples and measurements. The batch includes radiator, heater, diesel fuel, vacuum or breather, brake, and clutch hoses or lines.",
+      buy_target:
+        "Use the correct automotive material for each job: EPDM for coolant and heater, diesel-rated fuel hose, reinforced vacuum hose, and complete crimped brake or clutch hydraulic hoses. Brake hose must be DOT/SAE J1401 or OEM-equivalent, not generic rubber hose.",
+      must_include: [
+        "Correct inside diameter, length, bends, or end fittings matched to the old sample.",
+        "New clamps, clips, or fittings quoted separately when needed.",
+        "Brake and clutch flex hoses supplied as complete crimped assemblies.",
+        "Brake hard-line material only in brake-rated 4.75 mm / 3/16 in tube where hard lines are being replaced.",
+        "Visible rating or brand markings where the hose type normally has markings.",
+      ],
+      bench_test: [
+        "Hold each hose or line against the old sample before payment.",
+        "Confirm brake and clutch thread, flare, banjo, seat, bracket, and clip style before payment.",
+        "Ask the seller to point out hose rating markings.",
+        "For radiator and heater hose, check that the bend will not kink when installed.",
+      ],
+      reject_if: [
+        "Seller gives generic hydraulic or air hose for fuel, coolant, vacuum, brake, or clutch use.",
+        "Brake or clutch hose is loose rubber hose instead of a crimped hydraulic assembly.",
+        "End fittings, bend, diameter, length, or clip style do not match the sample or measurement.",
+        "Hose is old, cracked, swollen, oily, unmarked where markings are required, or already cut too short.",
+      ],
+      capture_before_leaving: [
+        "Photo of each new hose or line beside the old sample or measurement note.",
+        "Photo of all end fittings, clamps, clips, and visible rating marks.",
+        "Seller name, phone number, shop location, price by line, and return terms.",
+      ],
+      price_guidance: {
+        rule: "Quote each line separately. Do not pay for any brake, clutch, fuel, or vacuum item until sample match and material type are clear.",
+      },
+      decision_rule: "Buy only the lines that match the old sample or confirmed measurement and have the correct material rating.",
+    };
+    const rubberMarketSpec = {
+      id: "body_mount_rubbers_market_scout",
+      title: "Body Mount Rubbers Market Scout",
+      scope: "New rubber or measured fabrication",
+      quantity: "One body-to-chassis mount set plus hardware lines",
+      plain_stall_request:
+        "I need new body-to-chassis mount rubbers for a Toyota Land Cruiser J40, plus sleeves, cup washers, shims, spacers, bolts, nuts, and washers as separate line items. No used rubber.",
+      buy_target:
+        "Use a correct new J40 body mount kit or fabricate new rubber pieces from the measured old samples. Hardware must be new, properly graded, and sized after the old mount stack is measured.",
+      must_include: [
+        "Upper and lower body mount rubber cushions for the required body stations.",
+        "Steel sleeves, cup or seat washers, shims, spacers, bolts, nuts, and washers quoted separately.",
+        "Rubber dimensions shown clearly: outside diameter, inside hole, thickness, and sleeve length.",
+        "New rubber only, with no cracks, hard spots, or old compression damage.",
+      ],
+      bench_test: [
+        "Compare every rubber and sleeve to the old sample or written dimension sheet.",
+        "Press the rubber by hand: it should feel firm and elastic, not brittle or sponge-soft.",
+        "Check sleeves and washers with the actual bolt size before payment.",
+        "Keep shim and spacer thicknesses separated and labelled.",
+      ],
+      reject_if: [
+        "Seller offers old used rubber, unknown mixed rubber, sponge rubber, or cracked stock.",
+        "Sleeve hole, rubber height, washer shape, or shim thickness does not match the measured plan.",
+        "Hardware has no grade mark, wrong pitch, damaged threads, or heavy rust.",
+        "Seller will not allow measurement photos before payment.",
+      ],
+      capture_before_leaving: [
+        "Full kit photo with all rubber, sleeves, washers, shims, spacers, and bolts laid out.",
+        "Close photos with ruler/caliper showing key dimensions.",
+        "Seller name, phone number, shop location, material claim, price, and return terms.",
+      ],
+      price_guidance: {
+        rule: "Keep rubber, sleeves, shims, and bolts as separate quote lines so a wrong line can be rejected without losing the whole package.",
+      },
+      decision_rule: "Buy only after the old mount samples or measurement sheet prove the rubber shape, sleeve size, and hardware stack.",
+    };
+    const glowPlugMarketSpec = {
+      id: "glow_plugs_market_scout",
+      title: "2H Glow Plugs Market Scout",
+      scope: "New exact plugs only",
+      quantity: "6 matching plugs",
+      plain_stall_request:
+        "I need six new Toyota glow plugs for a Toyota 2H diesel. First choice is Toyota 19850-68030. If the old plug system proves later 24V or superglow, quote Toyota 19850-68060 instead.",
+      buy_target:
+        "Buy only new matching Toyota or trusted OEM-label plugs with the correct thread, reach, voltage, seat, and top terminal for the old plug system.",
+      must_include: [
+        "Six matching new plugs from the same part number and batch if possible.",
+        "Part number visible on plug body, box, or invoice.",
+        "Correct voltage and terminal style for the old plug system.",
+        "Clean unused threads and tips.",
+      ],
+      bench_test: [
+        "Compare one plug with the old removed plug for thread, reach, seat, and terminal shape.",
+        "Confirm voltage printed on the plug or box.",
+        "Use a meter continuity check if the seller can do it without damaging the plugs.",
+      ],
+      reject_if: [
+        "Used, cleaned, mixed-brand, mixed-number, or loose unboxed plugs.",
+        "Wrong voltage, wrong reach, wrong terminal, or wrong seat style.",
+        "PT-107, 1C, 2C, or other small-diesel listings sold as J40 2H plugs.",
+        "Seller cannot show the part number or will not accept return for wrong fit.",
+      ],
+      capture_before_leaving: [
+        "Photo of all six plugs and all boxes together.",
+        "Close photo of the part number and voltage marking.",
+        "Seller name, phone number, shop location, price, and return terms.",
+      ],
+      price_guidance: {
+        rule: "Do not buy used glow plugs. Pay only for a matched new set after old-plug comparison.",
+      },
+      decision_rule: "Buy 19850-68030 only if it matches the old 2H system; switch to 19850-68060 only after the old system proves that spec.",
+    };
+    const fuseBoxMarketSpec = {
+      id: "additional_fuse_box_market_scout",
+      title: "Additional Fuse Box Market Scout",
+      scope: "Compact OEM-style add-on",
+      quantity: "1 fuse box or fuse carrier",
+      plain_stall_request:
+        "I need one compact old-OEM style cabin fuse box or fuse carrier for an under-dash add-on. It should have a cover, good terminals, mounting tabs, and original plugs or wiring tails if available.",
+      buy_target:
+        "Buy a small quality fuse box that can support the cabin add-on circuits cleanly. Prefer an OEM Toyota-style box with intact cover, terminals, mounting ears, and enough wiring tail to identify the inputs.",
+      must_include: [
+        "Fuse box body, cover, terminals, and mounting points intact.",
+        "Original plugs or at least 150 mm wiring tails if it is a used donor fuse box.",
+        "Separate input/feed arrangement if the box is divided into groups.",
+        "Fuse rating markings readable on cover or body where present.",
+      ],
+      bench_test: [
+        "Insert and remove sample fuses to confirm tight terminal grip.",
+        "Check continuity across each fuse position with a meter if possible.",
+        "Confirm no terminal is loose, burned, corroded, or pushed back.",
+        "Confirm the box fits the planned under-dash space before payment if dimensions are available.",
+      ],
+      reject_if: [
+        "Melted plastic, cracked body, missing cover, broken mounting tabs, or loose terminals.",
+        "Cut-flush wires or missing plugs that make the feeds impossible to identify.",
+        "Cheap no-name box with weak terminals or unclear fuse ratings.",
+        "Single shared feed only if the planned grouped inputs cannot be separated safely.",
+      ],
+      capture_before_leaving: [
+        "Top, bottom, side, and cover photos.",
+        "Close photos of terminals, plugs, wiring tails, and any rating marks.",
+        "Seller name, phone number, shop location, price, and return terms.",
+      ],
+      price_guidance: {
+        rule: "Quote the used OEM-style box and any new-quality alternative separately. Do not buy a damaged donor box just because it is cheap.",
+      },
+      decision_rule: "Buy only if the box is physically sound, terminals are tight, and the input/feed layout can be identified.",
+    };
+    const woodCribbingMarketSpec = {
+      id: "hardwood_cribbing_market_scout",
+      title: "Hardwood Cribbing Market Scout",
+      scope: "Cut-list quote",
+      quantity: "8 blocks plus 4 wedge chocks",
+      plain_stall_request:
+        "I need seasoned solid hardwood support blocks for vehicle work: 8 straight blocks about 300 x 150 x 75 mm, plus 4 wedge chocks cut from about 200 x 100 x 75 mm blanks tapering to 20-25 mm.",
+      buy_target:
+        "Use dry solid hardwood such as sheesham, kikar/acacia, oak, ash, or equivalent dense wood. Raw unfinished wood is preferred, with flat faces and square ends.",
+      must_include: [
+        "8 rectangular blocks cut square and flat.",
+        "4 wedge chocks with even taper and flat bottom faces.",
+        "Grain running along the length, not across the short face.",
+        "No paint, oil, polish, lamination, or soft filler.",
+      ],
+      bench_test: [
+        "Place each block on a flat floor and check that it does not rock.",
+        "Check the wood is dry, heavy, and solid.",
+        "Inspect bearing faces for cracks, splits, large knots, or rounded edges.",
+        "Confirm final dimensions before loading.",
+      ],
+      reject_if: [
+        "Wet or green wood, softwood, plywood, MDF, chipboard, or laminated board.",
+        "Cracked, split, oily, painted, rounded, or badly knotted pieces.",
+        "Blocks are uneven, twisted, or not flat enough to sit stable.",
+      ],
+      capture_before_leaving: [
+        "Photo of all 12 pieces together.",
+        "Close photos of dimensions, wood grain, and both bearing faces.",
+        "Merchant name, phone number, shop location, wood type, price, and delivery time.",
+      ],
+      price_guidance: {
+        rule: "Quote as one cut set. Do not accept substitute board material.",
+      },
+      decision_rule: "Buy only dense dry solid hardwood pieces with flat bearing faces and stable square cuts.",
+    };
+    const fabricationSupportMarketSpec = {
+      id: "fabrication_support_market_scout",
+      title: "3D Print + Workshop Support Scout",
+      scope: "Quote only",
+      quantity: "Quote per item or per print file",
+      plain_stall_request:
+        "I need local quotes for non-metal 3D printed check-fit pieces, guards, templates, spacers, or prototypes from supplied CAD/STL/DXF files. Metal brackets and plate fabrication are not part of this quote.",
+      buy_target:
+        "Use a print service or workshop that can quote material, lead time, finish, tolerance, and per-piece price clearly before printing.",
+      must_include: [
+        "Material options such as PETG, ABS, nylon, or PLA clearly named.",
+        "Per-piece price, setup charge if any, and lead time.",
+        "Basic tolerance and finish expectation before printing.",
+        "Agreement that these are check-fit/prototype pieces, not final load-bearing metal parts.",
+      ],
+      bench_test: [
+        "Ask the shop to inspect the file and confirm scale before quoting.",
+        "Confirm units are millimeters before printing.",
+        "For a first article, print one sample before ordering multiples.",
+      ],
+      reject_if: [
+        "Shop cannot identify material, scale, print orientation, or lead time.",
+        "Quote treats prototype plastic as a final structural metal replacement.",
+        "Price is given without seeing the file or understanding quantity.",
+      ],
+      capture_before_leaving: [
+        "Shop name, phone number, location, material, lead time, and price.",
+        "Photo or screenshot of the file name quoted.",
+        "Photo of sample material or sample print quality if available.",
+      ],
+      price_guidance: {
+        rule: "Quote first. Print only after the file, material, quantity, and first-article need are clear.",
+      },
+      decision_rule: "Use the service only for non-metal check-fit or prototype parts unless a separate approved final-part spec exists.",
+    };
+    const brakeFallbackSpec = {
+      id: "brake_booster_servo_44610_60050_market_scout",
+      title: "Brake Booster / Servo Market Scout",
+      scope: "Quote and sample-match only",
+      quantity: "1 booster assembly",
+      plain_stall_request:
+        "Need a brake servo or brake booster for a 1978 Toyota Land Cruiser J40 with front disc brakes and rear drum brakes. Primary target part number is Toyota 44610-60050. Quote only until the old booster is sample-matched and vacuum-tested.",
+      buy_target:
+        "Primary target is the J40/FJ40/BJ40 dual-diaphragm booster family, Toyota 44610-60050. Quote 44610-60100 or 44610-60180 only if the shop proves all mounting, pushrod, clevis, master-cylinder seat, check valve, and depth dimensions match the old unit.",
+      must_include: [
+        "Booster shell with intact mounting studs and no welded shell repair.",
+        "Correct pedal pushrod and clevis, or confirmed reuse of the old clevis.",
+        "Correct master-cylinder mounting face and pushrod depth.",
+        "Vacuum check valve and grommet included or quoted separately.",
+      ],
+      bench_test: [
+        "Vacuum-test before payment; it must hold vacuum without hiss or leakdown.",
+        "Check pushrod movement and return.",
+        "Inspect for brake-fluid contamination inside the master-cylinder side.",
+        "Compare old and replacement booster side by side if the old sample is available.",
+      ],
+      reject_if: [
+        "Single/drum booster such as 44610-60040 is offered as a direct replacement.",
+        "Used unit cannot be vacuum-tested before payment.",
+        "Firewall studs, master studs, pushrod, clevis, check valve, or shell depth do not match.",
+        "Universal booster requires cutting, welding, or unproven brake-line changes.",
+      ],
+      capture_before_leaving: [
+        "Photos of front, rear, side depth, studs, master face, pushrod, clevis, and check valve.",
+        "Part number, brand label, donor claim, or remanufacturer label.",
+        "Seller name, phone number, shop location, price, and return/test terms.",
+      ],
+      price_guidance: {
+        rule: "Record local PKR quotes first. Do not buy used or reman stock unless sample-match and vacuum tests pass.",
+      },
+      decision_rule: "Buy locally only after sample match and vacuum test pass.",
+    };
+
+    return [
+      {
+        id: "eps",
+        title: "EPS",
+        description: "Only the 2005-2011 Vitz/Yaris SCP90/NCP90 complete EPS kit is a buy candidate.",
+        chips: ["SCP90/NCP90 only", "Bench-test before payment", "Complete matched kit"],
+        parts: epsParts,
+        marketSpecs: attachScoutImage(
+          dedupeScoutRows(epsMarketSpecs),
+          epsParts,
+          scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/eps_column.jpg", "EPS column reference image", "eps_column")
+        ),
+      },
+      {
+        id: "brake-booster",
+        title: "Brake Booster",
+        description: "Quote the correct J40 brake servo only; sample-match and vacuum-test before payment.",
+        chips: ["44610-60050 target", "Vacuum-test", "Quote first"],
+        parts: brakeBoosterParts,
+        marketSpecs: attachScoutImage(
+          fallbackMarketSpec(brakeMarketSpecs, brakeFallbackSpec),
+          brakeBoosterParts,
+          scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/brake_master.jpg", "Brake booster and master-cylinder reference image", "brake_master")
+        ),
+      },
+      {
+        id: "pipes",
+        title: "Pipes + Hoses",
+        description: "Match old samples and use the correct rated hose or line for each job.",
+        chips: ["Measure before payment", "Sample-match where required", "No generic hydraulic hose"],
+        parts: pipeParts,
+        marketSpecs: attachScoutImage(
+          [hoseMarketSpec],
+          pipeParts,
+          scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg", "Automotive hose reference image", "radiator_hose")
+        ),
+      },
+      {
+        id: "rubbers",
+        title: "Rubbers",
+        description: "New body-mount rubbers and matching hardware only; no salvage rubber.",
+        chips: ["Rubber workstream", "Fabricate or exact-kit only", "No salvage rubber"],
+        parts: rubberParts,
+        marketSpecs: attachScoutImage(
+          [rubberMarketSpec],
+          rubberParts,
+          scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/body_mount_kit.jpg", "Body mount rubber reference image", "body_mount_kit")
+        ),
+      },
+      {
+        id: "heat-plugs",
+        title: "Heat Plugs",
+        description: "New exact 2H glow plugs only; confirm against the old plug system.",
+        chips: ["Toyota-labelled only", "19850-68030 x6", "Confirm old plug system"],
+        parts: glowPlugParts,
+        marketSpecs: attachScoutImage(
+          [glowPlugMarketSpec],
+          glowPlugParts,
+          scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/glow_plugs.jpg", "Glow plug reference image", "glow_plugs")
+        ),
+      },
+      {
+        id: "additional-fuse-box",
+        title: "Additional Fuse Box",
+        description: "Compact OEM-style cabin fuse box with sound terminals and identifiable feeds.",
+        chips: ["Compact OEM style", "One add-on box", "Three isolated input groups"],
+        parts: fuseBoxParts,
+        marketSpecs: attachScoutImage(
+          [fuseBoxMarketSpec],
+          fuseBoxParts,
+          scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/fuse_box.jpg", "Fuse box reference image", "fuse_box")
+        ),
+      },
+      {
+        id: "workshop-fabrication-support",
+        title: "Workshop + Fabrication Support",
+        description: "Simple quote cards for support items the market scout can source locally.",
+        chips: ["Hardwood cribbing", "Bench/pillar drill", "3D print non-metal only"],
+        parts: workshopSupportParts,
+        marketSpecs: [
+          ...attachScoutImage(
+            [woodCribbingMarketSpec],
+            filterScoutRows(workshopSupportParts, { terms: ["cribbing", "hardwood", "wedge"] }),
+            scoutReferenceImage("../../deliverables/selling_site_images/images/manual_overrides/suspension_hardwood_cribbing_cut_set_flat_lay.jpg", "Hardwood cribbing cut-set reference image", "hardwood_cribbing")
+          ),
+          ...attachScoutImage(
+            [fabricationSupportMarketSpec],
+            filterScoutRows(workshopSupportParts, { terms: ["3d printing", "prototype", "workbench", "bench drill", "c-clamp"] }),
+            scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg", "Prototype part reference image", "generic_part")
+          ),
+        ],
+      },
+    ];
+  }
+
+  function renderScoutField(label, value) {
+    const text = cleanString(value);
+    if (!text) {
+      return "";
+    }
+    return `<div><strong>${escapeHtml(label)}:</strong> ${escapeHtml(text)}</div>`;
+  }
+
+  function renderScoutLocalMarketOrderTable(rows) {
+    const sourceRows = Array.isArray(rows) ? rows : [];
+    if (!sourceRows.length) {
+      return "";
+    }
+    return `
+      <article class="card">
+        <div class="detail-header">
+          <h3>Local Market Order Sheet</h3>
+          ${chip(`${sourceRows.length} exact lines`)}
+        </div>
+        <div class="table-wrap">
+          <table class="scout-market-order-table">
+            <thead>
+              <tr>
+                <th>Line</th>
+                <th>Shop Lane</th>
+                <th>Exact Order Text</th>
+                <th>Qty / Size</th>
+                <th>Material / Fittings</th>
+                <th>Reject / Install Check</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${sourceRows
+                .map(
+                  (row) => `
+                    <tr>
+                      <td class="scout-line-cell">
+                        <strong>${escapeHtml(row.order_id || "-")}</strong>
+                        <div class="small-muted">${escapeHtml(row.item || "")}</div>
+                        ${statusChip(row.order_state || "open")}
+                      </td>
+                      <td>${escapeHtml(formatToken(row.shop_lane || "-"))}</td>
+                      <td class="scout-spec-cell">${escapeHtml(row.order_text || "-")}</td>
+                      <td class="scout-meta-cell">
+                        ${renderScoutField("Qty", row.qty)}
+                        ${renderScoutField("Buy length", row.buy_length_mm)}
+                        ${renderScoutField("Diameter", row.diameter_spec)}
+                      </td>
+                      <td class="scout-meta-cell">
+                        ${renderScoutField("Material", row.material_spec)}
+                        ${renderScoutField("Clamp/fitting", row.clamp_or_fitting_spec)}
+                        ${renderScoutField("Basis", row.source_basis)}
+                      </td>
+                      <td class="scout-notes-cell">
+                        ${renderScoutField("Reject if", row.hard_reject)}
+                        ${renderScoutField("Install check", row.final_install_check)}
+                      </td>
+                    </tr>
+                  `
+                )
+                .join("")}
+            </tbody>
+          </table>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderScoutPartsTable(rows) {
+    const sourceRows = Array.isArray(rows) ? rows : [];
+    return `
+      <article class="card">
+        <div class="detail-header">
+          <h3>Scout Part Rows</h3>
+          ${chip(`${sourceRows.length} rows`)}
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Item</th>
+                <th>Workstream</th>
+                <th>Status</th>
+                <th>Supplier</th>
+                <th>Cost</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${
+                sourceRows.length
+                  ? sourceRows
+                      .map(
+                        (row) => `
+                          <tr>
+                            ${renderInventoryImageCell(row, row.item || "Scout row image")}
+                            <td>${renderItemButton(row)}</td>
+                            <td>${escapeHtml(formatToken(row.workstream || "-"))}</td>
+                            <td>
+                              ${statusChip(row.procurement_stage || row.status || "open")}
+                              <div class="small-muted">${escapeHtml(formatToken(row.payment_status || ""))}${row.delivery_status ? ` / ${escapeHtml(formatToken(row.delivery_status))}` : ""}</div>
+                            </td>
+                            <td>${tableSupplierCell(row)}</td>
+                            <td>${tableCostCell(row)}</td>
+                            <td class="scout-notes-cell">${escapeHtml(row.notes || "-")}</td>
+                          </tr>
+                        `
+                      )
+                      .join("")
+                  : '<tr><td colspan="7">No scout part rows matched this category.</td></tr>'
+              }
+            </tbody>
+          </table>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderScoutOrderSpecTable(rows) {
+    const sourceRows = Array.isArray(rows) ? rows : [];
+    if (!sourceRows.length) {
+      return "";
+    }
+    return `
+      <article class="card">
+        <div class="detail-header">
+          <h3>Exact Release Specs</h3>
+          ${chip(`${sourceRows.length} rows`)}
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Line</th>
+                <th>Route / State</th>
+                <th>Exact Spec</th>
+                <th>Qty / Material</th>
+                <th>Action / Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${sourceRows
+                .map(
+                  (row) => `
+                    <tr>
+                      <td>
+                        <strong>${escapeHtml(row.id || "-")}</strong>
+                        <div class="small-muted">${escapeHtml(row.item || "")}</div>
+                        ${row.partNumber ? `<div class="small-muted">${escapeHtml(row.partNumber)}</div>` : ""}
+                      </td>
+                      <td>
+                        ${escapeHtml(formatToken(row.route || "-"))}
+                        <div>${statusChip(row.state || "release_hold")}</div>
+                      </td>
+                      <td class="scout-spec-cell">${escapeHtml(row.spec || "-")}</td>
+                      <td class="scout-meta-cell">
+                        ${renderScoutField("Qty", row.qty)}
+                        ${renderScoutField("Dimensions", row.dimension)}
+                        ${renderScoutField("Material", row.material)}
+                        ${renderScoutField("Source", row.sourceBasis)}
+                      </td>
+                      <td class="scout-notes-cell">
+                        ${renderScoutField("Action", row.action)}
+                        ${renderScoutField("Reject if", row.reject)}
+                        ${renderScoutField("Notes", row.notes)}
+                      </td>
+                    </tr>
+                  `
+                )
+                .join("")}
+            </tbody>
+          </table>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderScoutSourceLinksTable(rows) {
+    const sourceRows = Array.isArray(rows) ? rows : [];
+    if (!sourceRows.length) {
+      return "";
+    }
+    return `
+      <article class="card">
+        <div class="detail-header">
+          <h3>Source Links</h3>
+          ${chip(`${sourceRows.length} rows`)}
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>System</th>
+                <th>Item</th>
+                <th>Source</th>
+                <th>Stage / Decision</th>
+                <th>Cost</th>
+                <th>Links</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${sourceRows
+                .map(
+                  (row) => `
+                    <tr>
+                      <td>${escapeHtml(formatToken(row.system || "-"))}</td>
+                      <td>${escapeHtml(row.item || "-")}</td>
+                      <td>${escapeHtml(formatToken(row.source_sheet || "-"))}</td>
+                      <td>${escapeHtml(formatToken(row.stage || row.decision || "-"))}</td>
+                      <td>${escapeHtml(row.cost || "-")}</td>
+                      <td>${renderLinksCell(row)}</td>
+                      <td class="scout-notes-cell">${escapeHtml(row.notes || "-")}</td>
+                    </tr>
+                  `
+                )
+                .join("")}
+            </tbody>
+          </table>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderScoutDocLinks(links) {
+    const sourceLinks = Array.isArray(links) ? links : [];
+    if (!sourceLinks.length) {
+      return "";
+    }
+    return `
+      <article class="card scout-doc-card">
+        <h3>Reference Files</h3>
+        ${renderLinksCell({ links: sourceLinks })}
+      </article>
+    `;
+  }
+
+  function renderScoutCategory(category) {
+    const chips = Array.isArray(category.chips) ? category.chips : [];
+    return `
+      <section class="scout-category" id="scout-${escapeHtml(category.id || "")}">
+        <article class="card scout-category-header">
+          <div class="detail-header">
+            <h2>${escapeHtml(category.title || "Scout")}</h2>
+            <div class="chip-row">
+              ${chip(`${(category.marketSpecs || []).length} scout cards`)}
+            </div>
+          </div>
+          <p>${escapeHtml(category.description || "")}</p>
+          <div class="chip-row">
+            ${chips.map((item) => chip(item)).join("")}
+          </div>
+        </article>
+        ${renderMarketSpecCards(category.marketSpecs)}
+      </section>
+    `;
+  }
+
+  function renderScout() {
+    const categories = buildScoutCategories();
+    root.innerHTML = `
+      <h2 class="section-title">Scout</h2>
+      <p class="section-subtitle">Simple market-facing cards for the person visiting shops: what to ask for, what must come with it, when to reject, and what photos or details to send back.</p>
+      <div class="chip-row scout-jump-row">
+        ${categories.map((category) => `<button class="chip chip-button" data-scroll-reference-section="scout-${escapeHtml(category.id)}" type="button">${escapeHtml(category.title)}</button>`).join("")}
+      </div>
+      ${categories.map(renderScoutCategory).join("")}
+    `;
   }
 
   function renderElectricalCell(row, column) {
@@ -2696,8 +3643,8 @@
           <p class="metric-label">WhatsApp Videos</p>
         </article>
         <article class="card">
-          <p class="metric-value">${escapeHtml(summary.other_build_reference_images ?? 0)}</p>
-          <p class="metric-label">Other-Build Reference Images</p>
+          <p class="metric-value">${escapeHtml(summary.other_build_reference_media ?? summary.other_build_reference_images ?? 0)}</p>
+          <p class="metric-label">Other-Build Reference Media</p>
         </article>
       </section>
 
@@ -2847,6 +3794,8 @@
       return mediaType === "video" ? count + 1 : count;
     }, 0);
     const simpleChassisRubbers = active.id === "chassis_rubbers";
+    const showOperationPanels =
+      !simpleChassisRubbers && (active.id === "chassis_fixing" || !(active.subtask_groups && active.subtask_groups.length));
 
     detailNode.innerHTML = `
       <article class="card">
@@ -2866,7 +3815,6 @@
         <p class="small-muted">${escapeHtml(active.notes || "")}</p>
       </article>
 
-      ${renderMarketSpecCards(active.market_specs)}
       ${renderWorkstreamRequirements(active)}
       ${simpleChassisRubbers ? "" : renderFabricationPackages(active.fabrication_packages)}
 
@@ -2879,7 +3827,7 @@
       `}
 
       ${simpleChassisRubbers ? "" : renderSubtaskGroups(active.subtask_groups)}
-      ${simpleChassisRubbers || (active.subtask_groups && active.subtask_groups.length) ? "" : renderOperationPanels(active.operation_panels)}
+      ${showOperationPanels ? renderOperationPanels(active.operation_panels) : ""}
 
       ${simpleChassisRubbers ? "" : `
         <article class="card">
@@ -3075,11 +4023,86 @@
     const suppliesInProcess = supplyRowsByStatus.in_process || [];
     const suppliesStillRequired = supplyRowsByStatus.still_required || [];
 
+    const renderEstimateTypeCell = (row) => {
+      const value = cleanString(row.estimated_hardware_type || "");
+      return value ? escapeHtml(truncateText(value, 140)) : "-";
+    };
+    const renderEstimateCountCell = (row) => {
+      const count = cleanString(row.estimated_visible_count || "");
+      const confidence = cleanString(row.estimate_confidence || "");
+      if (!count) {
+        return "-";
+      }
+      return `
+        <div>${escapeHtml(count)}</div>
+        ${confidence ? `<div class="small-muted">Confidence: ${escapeHtml(formatToken(confidence))}</div>` : ""}
+      `;
+    };
+    const stillRequiredTypeChips = supplySummary
+      .filter((row) => toNumber(row.still_required) > 0)
+      .map((row) => chip(`${formatToken(row.supply_type)}: ${row.still_required}`))
+      .join("");
+    const renderStillRequiredSuppliesSection = () => `
+      <section class="card">
+        <div class="detail-header">
+          <h3>Still Required / Need To Order</h3>
+          ${chip(`${suppliesStillRequired.length} rows`)}
+        </div>
+        <div class="chip-row">
+          ${stillRequiredTypeChips || chip("No still-required rows")}
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Type</th>
+                <th>Item</th>
+                <th>Anticipated Type</th>
+                <th>Est. Count</th>
+                <th>Source</th>
+                <th>Workstream</th>
+                <th>Procurement Stage</th>
+                <th>Supplier</th>
+                <th>Cost</th>
+                <th>Links</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${
+                suppliesStillRequired.length
+                  ? suppliesStillRequired
+                      .map(
+                        (row) => `
+                          <tr>
+                            ${renderInventoryImageCell(row, row.item || "Inventory image")}
+                            <td>${escapeHtml(formatToken(row.supply_type))}</td>
+                            <td>${renderItemButton(row)}</td>
+                            <td>${renderEstimateTypeCell(row)}</td>
+                            <td>${renderEstimateCountCell(row)}</td>
+                            <td>${escapeHtml(formatToken(row.source))}</td>
+                            <td>${escapeHtml(formatToken(row.workstream || "-"))}</td>
+                            <td>${escapeHtml(formatToken(row.procurement_stage || row.status_detail || "-"))}</td>
+                            <td>${tableSupplierCell(row)}</td>
+                            <td>${tableCostCell(row)}</td>
+                            <td>${renderLinksCell(row)}</td>
+                          </tr>
+                        `
+                      )
+                      .join("")
+                  : '<tr><td colspan="11">No still-required supply rows.</td></tr>'
+              }
+            </tbody>
+          </table>
+        </div>
+      </section>
+    `;
+
     root.innerHTML = `
       <h2 class="section-title">Ordering and Inventory Guidance</h2>
       <p class="section-subtitle">Parts ordering plus lifecycle tracking for tools, substances, and parts.</p>
 
-      ${renderMarketSpecCards(parts.market_specs)}
+      ${renderStillRequiredSuppliesSection()}
 
       <section class="card">
         <h3>Tools + Substances + Parts Lifecycle</h3>
@@ -3129,6 +4152,8 @@
                     <tr>
                       <th>Image</th>
                       <th>Item</th>
+                      <th>Anticipated Type</th>
+                      <th>Est. Count</th>
                       <th>Status Group</th>
                       <th>Source</th>
                       <th>Workstream</th>
@@ -3146,6 +4171,8 @@
                                 <tr>
                                   ${renderInventoryImageCell(row, row.item || "Inventory image")}
                                   <td>${renderItemButton(row)}</td>
+                                  <td>${renderEstimateTypeCell(row)}</td>
+                                  <td>${renderEstimateCountCell(row)}</td>
                                   <td>${statusChip(row.status_group || "-")}</td>
                                   <td>${escapeHtml(formatToken(row.source || "-"))}</td>
                                   <td>${escapeHtml(formatToken(row.workstream || "-"))}</td>
@@ -3156,7 +4183,7 @@
                               `
                             )
                             .join("")
-                        : `<tr><td colspan="8">No ${escapeHtml(groupKey)} inventory rows found.</td></tr>`
+                        : `<tr><td colspan="10">No ${escapeHtml(groupKey)} inventory rows found.</td></tr>`
                     }
                   </tbody>
                 </table>
@@ -3242,6 +4269,8 @@
               <th>Image</th>
               <th>Priority</th>
               <th>Item</th>
+              <th>Anticipated Type</th>
+              <th>Est. Count</th>
               <th>Supplier</th>
               <th>Cost</th>
               <th>Links</th>
@@ -3261,6 +4290,8 @@
                           ${renderInventoryImageCell(row, row.item || "Part image")}
                           <td>${escapeHtml(row.priority)}</td>
                           <td>${renderItemButton(row)}</td>
+                          <td>${renderEstimateTypeCell(row)}</td>
+                          <td>${renderEstimateCountCell(row)}</td>
                           <td>${tableSupplierCell(row)}</td>
                           <td>${tableCostCell(row)}</td>
                           <td>${renderLinksCell(row)}</td>
@@ -3272,7 +4303,7 @@
                       `
                     )
                     .join("")
-                : '<tr><td colspan="10">No urgent action rows.</td></tr>'
+                : '<tr><td colspan="12">No urgent action rows.</td></tr>'
             }
           </tbody>
         </table>
@@ -3285,6 +4316,8 @@
             <tr>
               <th>Image</th>
               <th>Item</th>
+              <th>Anticipated Type</th>
+              <th>Est. Count</th>
               <th>Supplier</th>
               <th>Cost</th>
               <th>Links</th>
@@ -3304,6 +4337,8 @@
                         <tr>
                           ${renderInventoryImageCell(row, row.item || "Part image")}
                           <td>${renderItemButton(row)}</td>
+                          <td>${renderEstimateTypeCell(row)}</td>
+                          <td>${renderEstimateCountCell(row)}</td>
                           <td>${tableSupplierCell(row)}</td>
                           <td>${tableCostCell(row)}</td>
                           <td>${renderLinksCell(row)}</td>
@@ -3316,7 +4351,7 @@
                       `
                     )
                     .join("")
-                : '<tr><td colspan="10">No in-flight delivery rows.</td></tr>'
+                : '<tr><td colspan="12">No in-flight delivery rows.</td></tr>'
             }
           </tbody>
         </table>
@@ -3357,6 +4392,8 @@
             <tr>
               <th>Image</th>
               <th>Item</th>
+              <th>Anticipated Type</th>
+              <th>Est. Count</th>
               <th>Supplier</th>
               <th>Cost</th>
               <th>Links</th>
@@ -3376,6 +4413,8 @@
                         <tr>
                           ${renderInventoryImageCell(row, row.item || "Part image")}
                           <td>${renderItemButton(row)}</td>
+                          <td>${renderEstimateTypeCell(row)}</td>
+                          <td>${renderEstimateCountCell(row)}</td>
                           <td>${tableSupplierCell(row)}</td>
                           <td>${tableCostCell(row)}</td>
                           <td>${renderLinksCell(row)}</td>
@@ -3388,7 +4427,7 @@
                       `
                     )
                     .join("")
-                : '<tr><td colspan="10">No open parts.</td></tr>'
+                : '<tr><td colspan="12">No open parts.</td></tr>'
             }
           </tbody>
         </table>
@@ -3402,6 +4441,8 @@
               <th>Image</th>
               <th>Type</th>
               <th>Item</th>
+              <th>Anticipated Type</th>
+              <th>Est. Count</th>
               <th>Supplier</th>
               <th>Cost</th>
               <th>Links</th>
@@ -3422,6 +4463,8 @@
                           ${renderInventoryImageCell(row, row.item || "Inventory image")}
                           <td>${escapeHtml(formatToken(row.supply_type))}</td>
                           <td>${renderItemButton(row)}</td>
+                          <td>${renderEstimateTypeCell(row)}</td>
+                          <td>${renderEstimateCountCell(row)}</td>
                           <td>${tableSupplierCell(row)}</td>
                           <td>${tableCostCell(row)}</td>
                           <td>${renderLinksCell(row)}</td>
@@ -3434,49 +4477,7 @@
                       `
                     )
                     .join("")
-                : '<tr><td colspan="11">No in-process supply rows.</td></tr>'
-            }
-          </tbody>
-        </table>
-      </div>
-
-      <h3 class="section-title">Supplies Still Required</h3>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Image</th>
-              <th>Type</th>
-              <th>Item</th>
-              <th>Source</th>
-              <th>Workstream</th>
-              <th>Procurement Stage</th>
-              <th>Supplier</th>
-              <th>Cost</th>
-              <th>Links</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${
-              suppliesStillRequired.length
-                ? suppliesStillRequired
-                    .map(
-                      (row) => `
-                        <tr>
-                          ${renderInventoryImageCell(row, row.item || "Inventory image")}
-                          <td>${escapeHtml(formatToken(row.supply_type))}</td>
-                          <td>${renderItemButton(row)}</td>
-                          <td>${escapeHtml(formatToken(row.source))}</td>
-                          <td>${escapeHtml(formatToken(row.workstream || "-"))}</td>
-                          <td>${escapeHtml(formatToken(row.procurement_stage || row.status_detail || "-"))}</td>
-                          <td>${tableSupplierCell(row)}</td>
-                          <td>${tableCostCell(row)}</td>
-                          <td>${renderLinksCell(row)}</td>
-                        </tr>
-                      `
-                    )
-                    .join("")
-                : '<tr><td colspan="9">No still-required supply rows.</td></tr>'
+                : '<tr><td colspan="13">No in-process supply rows.</td></tr>'
             }
           </tbody>
         </table>
@@ -3490,6 +4491,8 @@
               <th>Image</th>
               <th>Type</th>
               <th>Item</th>
+              <th>Anticipated Type</th>
+              <th>Est. Count</th>
               <th>Supplier</th>
               <th>Cost</th>
               <th>Links</th>
@@ -3508,6 +4511,8 @@
                           ${renderInventoryImageCell(row, row.item || "Inventory image")}
                           <td>${escapeHtml(formatToken(row.supply_type))}</td>
                           <td>${renderItemButton(row)}</td>
+                          <td>${renderEstimateTypeCell(row)}</td>
+                          <td>${renderEstimateCountCell(row)}</td>
                           <td>${tableSupplierCell(row)}</td>
                           <td>${tableCostCell(row)}</td>
                           <td>${renderLinksCell(row)}</td>
@@ -3518,7 +4523,7 @@
                       `
                     )
                     .join("")
-                : '<tr><td colspan="9">No previously-procured supply rows.</td></tr>'
+                : '<tr><td colspan="11">No previously-procured supply rows.</td></tr>'
             }
           </tbody>
         </table>
@@ -3942,8 +4947,22 @@
     return sections.find((section) => cleanString(section && section.key) === key) || null;
   }
 
-  function otherBuildImageCount(section) {
+  function otherBuildMediaCount(section) {
     return Array.isArray(section && section.images) ? section.images.length : 0;
+  }
+
+  function otherBuildVideoCount(section) {
+    const media = Array.isArray(section && section.images) ? section.images : [];
+    return media.reduce((count, image) => {
+      const type = resolvedMediaType(image && image.media_type, image && image.path);
+      return type === "video" ? count + 1 : count;
+    }, 0);
+  }
+
+  function otherBuildMediaLabel(section) {
+    const mediaCount = otherBuildMediaCount(section);
+    const videoCount = otherBuildVideoCount(section);
+    return videoCount ? `${mediaCount} media (${videoCount} videos)` : `${mediaCount} media`;
   }
 
   function renderOtherBuildFocusCards(sections) {
@@ -3971,7 +4990,7 @@
           <article class="card reference-focus-card">
             <div class="detail-header">
               <h3>${escapeHtml(card.title)}</h3>
-              ${chip(`${otherBuildImageCount(section)} images`)}
+              ${chip(otherBuildMediaLabel(section))}
             </div>
             <p class="small-muted">${escapeHtml(card.description)}</p>
             <div class="chip-row">
@@ -3998,30 +5017,29 @@
     const otherBuilds = data.other_builds || {};
     const summary = otherBuilds.summary || {};
     const sections = Array.isArray(otherBuilds.sections) ? otherBuilds.sections : [];
+    const totalMedia = summary.total_media ?? summary.total_images ?? 0;
+    const dropZoneMedia = summary.drop_zone_media ?? summary.drop_zone_images ?? 0;
+    const manualReferenceMedia = summary.manual_reference_media ?? summary.manual_reference_images ?? 0;
     root.innerHTML = `
       <h2 class="section-title">Other Builds</h2>
-      <p class="section-subtitle">Outside-build references, including the Islamabad FJ restorations, Akber wiring/floor caution examples, archived listings, and sample/fabrication media.</p>
+      <p class="section-subtitle">Outside-build references, including the Islamabad FJ restorations, Akber wiring/floor caution examples, archived listings, and curated WhatsApp sample media.</p>
 
       <section class="metrics-grid">
         <article class="card">
-          <p class="metric-value">${escapeHtml(summary.total_images ?? 0)}</p>
-          <p class="metric-label">Reference Images</p>
+          <p class="metric-value">${escapeHtml(totalMedia)}</p>
+          <p class="metric-label">Reference Media</p>
         </article>
         <article class="card">
-          <p class="metric-value">${escapeHtml(summary.drop_zone_images ?? 0)}</p>
-          <p class="metric-label">Drop-Zone Images</p>
+          <p class="metric-value">${escapeHtml(summary.total_videos ?? 0)}</p>
+          <p class="metric-label">Reference Videos</p>
         </article>
         <article class="card">
-          <p class="metric-value">${escapeHtml(summary.manual_reference_images ?? 0)}</p>
-          <p class="metric-label">Curated WhatsApp Images</p>
+          <p class="metric-value">${escapeHtml(dropZoneMedia)}</p>
+          <p class="metric-label">Drop-Zone Media</p>
         </article>
         <article class="card">
-          <p class="metric-value">${escapeHtml(summary.sample_reference_images ?? 0)}</p>
-          <p class="metric-label">Sample References</p>
-        </article>
-        <article class="card">
-          <p class="metric-value">${escapeHtml(summary.market_pack_images ?? 0)}</p>
-          <p class="metric-label">Build-Pack Samples</p>
+          <p class="metric-value">${escapeHtml(manualReferenceMedia)}</p>
+          <p class="metric-label">Curated WhatsApp Media</p>
         </article>
       </section>
 
@@ -4029,8 +5047,8 @@
 
       <section class="card reference-drop-card">
         <div class="detail-header">
-          <h3>Reference Image Drop Zone</h3>
-          ${chip(summary.drop_zone_images ? `${summary.drop_zone_images} images` : "Empty")}
+          <h3>Reference Media Drop Zone</h3>
+          ${chip(dropZoneMedia ? `${dropZoneMedia} media` : "Empty")}
         </div>
         <p class="small-muted"><code>${escapeHtml(otherBuilds.drop_zone || "data/reference/other_j40_builds")}</code></p>
       </section>
@@ -4045,8 +5063,8 @@
                   return `
                     <article class="card reference-section-card" id="${escapeHtml(sectionId)}">
                       <div class="detail-header">
-                        <h3>${escapeHtml(section.title || "Reference Images")}</h3>
-                        ${chip(`${images.length} images`)}
+                        <h3>${escapeHtml(section.title || "Reference Media")}</h3>
+                        ${chip(otherBuildMediaLabel(section))}
                       </div>
                       <p class="small-muted">${escapeHtml(section.description || "")}</p>
                       ${section.source_path ? `<p class="small-muted"><strong>Source:</strong> <code>${escapeHtml(section.source_path)}</code></p>` : ""}
@@ -4138,6 +5156,10 @@
       renderItemMetaRow("Source", [formatToken(row.source || ""), row.source_ref || row.entry_id || ""].filter(Boolean).join(" · ")),
       renderItemMetaRow("Supplier", supplierLabel(row)),
       renderItemMetaRow("Cost", itemAmountLabel(row)),
+      renderItemMetaRow("Anticipated Type", row.estimated_hardware_type || ""),
+      renderItemMetaRow("Estimated Count", row.estimated_visible_count || ""),
+      renderItemMetaRow("Estimate Confidence", formatToken(row.estimate_confidence || "")),
+      renderItemMetaRow("Estimate Basis", row.estimated_purchase_basis || ""),
       renderItemMetaRow("Evidence", row.evidence_ref || ""),
       renderItemMetaRow("Image Match", formatToken(prepared.effective.match_basis || "")),
     ].join("");
@@ -4566,6 +5588,7 @@
 
     if (mediaType === "video") {
       lightbox.video.setAttribute("src", effective.path || FALLBACK_IMAGE_PATH);
+      lightbox.video.load();
       lightbox.video.classList.remove("is-hidden");
       lightbox.image.classList.add("is-hidden");
       lightbox.image.removeAttribute("src");
@@ -4581,6 +5604,7 @@
         lightbox.video.pause();
       }
       lightbox.video.removeAttribute("src");
+      lightbox.video.load();
       lightbox.video.classList.add("is-hidden");
       lightbox.image.classList.remove("is-hidden");
       setLightboxPhotoControlsEnabled(true);
@@ -4659,6 +5683,7 @@
     if (cleanString(lightbox.video.getAttribute("src"))) {
       lightbox.video.pause();
       lightbox.video.removeAttribute("src");
+      lightbox.video.load();
       lightbox.video.classList.add("is-hidden");
     }
     state.lightboxImageBase = null;
@@ -4902,6 +5927,10 @@
     }
     if (state.activeView === "parts") {
       renderParts();
+      return;
+    }
+    if (state.activeView === "scout") {
+      renderScout();
       return;
     }
     if (state.activeView === "tasks") {

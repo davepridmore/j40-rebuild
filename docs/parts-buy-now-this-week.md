@@ -1,6 +1,6 @@
 # Parts Buy-Now Plan (This Week)
 
-- Generated: 2026-05-04 02:08:54
+- Generated: 2026-05-04 03:37:56
 - Source ledger: `data/manual/expenses.csv` (`bucket=parts`)
 - Overlap resolution table: `data/manual/parts_overlap_resolution.csv`
 - This-week list: `data/manual/parts_buy_now_this_week.csv`
@@ -37,7 +37,7 @@
   - `part_mech_accessory_belt_set` [P1] Accessory belt set (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_engine_oil_filter_service` [P1] Engine oil + oil filter service pack (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_fuel_filter` [P1] Fuel filter (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
-  - `part_mech_heat_glow_plugs_set` [P1] Heat/glow plugs set - diesel 2H (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
+  - `part_mech_heat_glow_plugs_set` [P1] Toyota OE glow plugs 19850-68030 x6 - diesel 2H (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_radiator_cap` [P1] Radiator cap (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_suspension_wooden_cribbing_blocks` [P1] Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks (price: price_tbd; order_date: 2026-05-02; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
 - `track_delivery` (12):

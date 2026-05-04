@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import json
 from math import cos, pi, sin
 from pathlib import Path
 from typing import Iterable, Sequence
@@ -112,6 +113,35 @@ def capsule_poly(x: float, y: float, w: float, h: float, layer: str, segments: i
         for idx in range(segments + 1):
             ang = -pi / 2 + pi * idx / segments
             points.append((right_cx + r * cos(ang), cy + r * sin(ang)))
+    return Poly(points, layer)
+
+
+def exhaust_teardrop_outer(layer: str = "CUT", segments: int = 20) -> Poly:
+    """Nominal top profile for the Toyota 90917-08004 style exhaust cushion."""
+    centre_x = 24
+    centre_y = 24
+    radius = 24
+    points: list[tuple[float, float]] = []
+
+    for idx in range(segments + 1):
+        ang = (-pi / 2) + ((5 * pi / 6) * idx / segments)
+        points.append((centre_x + radius * cos(ang), centre_y + radius * sin(ang)))
+
+    points.extend(
+        [
+            (38, 50),
+            (38, 70),
+            (32, 84),
+            (16, 84),
+            (10, 70),
+            (10, 50),
+        ]
+    )
+
+    for idx in range(segments + 1):
+        ang = (2 * pi / 3) + ((5 * pi / 6) * idx / segments)
+        points.append((centre_x + radius * cos(ang), centre_y + radius * sin(ang)))
+
     return Poly(points, layer)
 
 
@@ -543,6 +573,38 @@ def strip_template(name: str, title: str) -> Drawing:
     )
 
 
+def exhaust_90917_teardrop_holder() -> Drawing:
+    return Drawing(
+        name="exh_hgr_90917_08004_teardrop_rev_a",
+        title="EXH-HGR-90917 Toyota 90917-08004 style exhaust cushion",
+        width=48,
+        height=86,
+        qty="as fitted",
+        material="Black heat/vibration-resistant molded exhaust-hanger rubber, Shore A 60 +/-5, with metal reinforcement where original construction uses it",
+        release_status="style identified from vehicle photos and OEM reference; buy Toyota 90917-08004/17572-92000 or mould from a genuine sample",
+        circles=[
+            Circle(24, 73, 4.5, "DRILL"),
+        ],
+        polys=[
+            exhaust_teardrop_outer("CUT"),
+            capsule_poly(6, 8, 36, 42, "RECESS"),
+            capsule_poly(16, 18, 16, 22, "CUT_BORE"),
+        ],
+        lines=[
+            Line(24, 0, 24, 86, "CENTER"),
+            Line(0, 24, 48, 24, "CENTER"),
+            Line(0, 73, 48, 73, "CENTER"),
+        ],
+        notes=[
+            "Toyota 90917-08004 / 17572-92000 style teardrop exhaust cushion. This replaces the earlier generic ring/strap placeholders.",
+            "Nominal 2D control: 48 mm wide x 86 mm high; lower rubber bulb R24 centred at X24 Y24; top mounting lug on centreline.",
+            "Mounting hole: diameter 9 at X24 Y73. Hanger slot: 16 x 22 capsule centred at X24 Y29. Raised boss/recess mark: 36 x 42 capsule.",
+            "Finished rubber body thickness target 22 mm unless the bought/genuine sample proves another value. Reproduce any bonded/internal metal reinforcement.",
+            "Local fabrication needs a genuine part or intact original for final mould depth, side profile, and metal insert detail.",
+        ],
+    )
+
+
 def drawings() -> list[Drawing]:
     return [
         circular_mount(
@@ -566,7 +628,22 @@ def drawings() -> list[Drawing]:
         fs_oval(),
         strip_template("fs_strip_left_template_blank_rev_a", "FS-STRIP-L front support strip quote/template blank"),
         strip_template("fs_strip_right_template_blank_rev_a", "FS-STRIP-R front support strip quote/template blank"),
+        exhaust_90917_teardrop_holder(),
     ]
+
+
+def drawing_part_id(drawing: Drawing) -> str:
+    part_ids = {
+        "bm_sm_body_mount_cushion_rev_a": "BM-SM",
+        "bm_lg_body_mount_cushion_rev_a": "BM-LG",
+        "bm_cup_small_seat_washer_rev_a": "BM-CUP-SM",
+        "bm_cup_large_seat_washer_rev_a": "BM-CUP-LG",
+        "fs_oval_front_support_pad_rev_a": "FS-OVAL",
+        "fs_strip_left_template_blank_rev_a": "FS-STRIP-L",
+        "fs_strip_right_template_blank_rev_a": "FS-STRIP-R",
+        "exh_hgr_90917_08004_teardrop_rev_a": "EXH-HGR-90917",
+    }
+    return part_ids.get(drawing.name, drawing.name.split("_rev_a")[0].upper().replace("_", "-"))
 
 
 def write_cut_list(drawings: Sequence[Drawing]) -> None:
@@ -583,7 +660,7 @@ def write_cut_list(drawings: Sequence[Drawing]) -> None:
     ]
     rows = [
         [
-            drawing.name.split("_rev_a")[0].upper().replace("_", "-"),
+            drawing_part_id(drawing),
             drawing.name,
             drawing.qty,
             drawing.material,
@@ -609,10 +686,149 @@ def write_inspection_sheet() -> None:
         ("BM-CUP-LG", "OD, 11 mm hole, dish/register depth, steel thickness", "OD +/-1.0; hole +0.3/-0.0; dish 2-3"),
         ("FS-OVAL", "overall length/width, thickness, hole spacing, insert OD, hardness", "outer +/-1.0; holes +/-0.5; thickness +/-0.5"),
         ("FS-STRIP-L/R", "template match, thickness, hole/slot centres, bond quality", "physical template controls final cut"),
+        ("EXH-HGR-90917", "top hole, hanger slot, rubber body thickness, reinforcement, bracket fit", "buy OEM or verify against genuine sample before local moulding"),
     ]
     header = "part_id,inspect_features,acceptance\n"
     body = "\n".join(",".join(csv_escape(value) for value in row) for row in rows)
     (OUT_DIR / "inspection_checklist.csv").write_text(header + body + "\n", encoding="utf-8")
+
+
+def machine_definition_rows() -> list[dict[str, str]]:
+    material_mount = "Black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5"
+    return [
+        {
+            "part_id": "BM-SM",
+            "qty": "10",
+            "machine_route": "rubber lathe/CNC mill/mould; DXF is top profile",
+            "machine_files": "bm_sm_body_mount_cushion_rev_a.dxf|bm_sm_body_mount_cushion_rev_a.svg",
+            "coordinate_system": "2D top profile in mm; origin lower-left of 64 x 64 bounding square; centre at X32 Y32",
+            "exact_definition_mm": "OD 64; finished height 22; through bore diameter 32 at X32 Y32; face A concentric register/recess diameter 46 x depth 2; face B flat; outside load edge R2-R3; faces parallel <=0.5; bore/register concentricity <=1.0",
+            "material": material_mount,
+            "tolerance": "OD/ID +/-1.0; height +/-0.5; register depth +/-0.3",
+            "release_status": "machine-defined for first article; production hold only if old sample proves split-stack construction",
+            "shop_note": "Make as a one-piece cushion unless the physical old sample is split into separate seat/spacer pieces before production signoff.",
+        },
+        {
+            "part_id": "BM-LG",
+            "qty": "2",
+            "machine_route": "rubber lathe/CNC mill/mould; DXF is top profile",
+            "machine_files": "bm_lg_body_mount_cushion_rev_a.dxf|bm_lg_body_mount_cushion_rev_a.svg",
+            "coordinate_system": "2D top profile in mm; origin lower-left of 78 x 78 bounding square; centre at X39 Y39",
+            "exact_definition_mm": "OD 78; finished height 24; through bore diameter 32 at X39 Y39; face A concentric register/recess diameter 46 x depth 2; face B flat; outside load edge R2-R3; faces parallel <=0.5; bore/register concentricity <=1.0",
+            "material": material_mount,
+            "tolerance": "OD/ID +/-1.0; height +/-0.5; register depth +/-0.3",
+            "release_status": "machine-defined for first article and matched pair",
+            "shop_note": "Make both pieces from one compound batch and one setup.",
+        },
+        {
+            "part_id": "FS-OVAL",
+            "qty": "2",
+            "machine_route": "waterjet/knife/punch/moulded 2.5D rubber pad",
+            "machine_files": "fs_oval_front_support_pad_rev_a.dxf|fs_oval_front_support_pad_rev_a.svg",
+            "coordinate_system": "2D plan in mm; origin lower-left of 64 x 96 bounding box; centreline X32",
+            "exact_definition_mm": "Outer capsule 64 wide x 96 long with radius 32 ends; thickness 15; through holes diameter 12 at X32 Y16 and X32 Y80; hole centre spacing 64; relief pocket 36 x 18 with R3 corners at X14 Y39; insert/boss mark diameter 29 at X32 Y16",
+            "material": material_mount,
+            "tolerance": "outer +/-1.0; hole position +/-0.5; hole diameter +0.5/-0.0; thickness +/-0.5",
+            "release_status": "machine-defined for first article; confirm whether relief is through-cut or blind pocket on physical sample",
+            "shop_note": "Make as matched pair. INSERT_MARK is not a through cut.",
+        },
+        {
+            "part_id": "FS-STRIP-L",
+            "qty": "1",
+            "machine_route": "template trace, then waterjet/knife/punch; supplied DXF is stock blank only",
+            "machine_files": "fs_strip_left_template_blank_rev_a.dxf|fs_strip_left_template_blank_rev_a.svg",
+            "coordinate_system": "template blank in mm; origin lower-left of 165 x 40 stock envelope",
+            "exact_definition_mm": "Stock envelope 165 trace length x 40 width with R4 ends; base thickness 8; raised/load pad height 14; provisional slots 16 x 11 at centres X20 Y20 and X145 Y20 only if carrier confirms",
+            "material": "Black EPDM or NR/SBR sheet/strip rubber, Shore A 60 +/-5",
+            "tolerance": "final traced outline +/-1.0; holes/slots +/-0.5; thickness +/-0.5",
+            "release_status": "not production-CNC until physical left carrier is traced",
+            "shop_note": "Do not cut final outline from photo. Trace the left metal carrier and old rubber, then update the DXF before cutting.",
+        },
+        {
+            "part_id": "FS-STRIP-R",
+            "qty": "1",
+            "machine_route": "template trace, then waterjet/knife/punch; supplied DXF is stock blank only",
+            "machine_files": "fs_strip_right_template_blank_rev_a.dxf|fs_strip_right_template_blank_rev_a.svg",
+            "coordinate_system": "template blank in mm; origin lower-left of 165 x 40 stock envelope",
+            "exact_definition_mm": "Stock envelope 165 trace length x 40 width with R4 ends; base thickness 8; raised/load pad height 14; provisional slots 16 x 11 at centres X20 Y20 and X145 Y20 only if carrier confirms",
+            "material": "Black EPDM or NR/SBR sheet/strip rubber, Shore A 60 +/-5",
+            "tolerance": "final traced outline +/-1.0; holes/slots +/-0.5; thickness +/-0.5",
+            "release_status": "not production-CNC until physical right carrier is traced",
+            "shop_note": "Do not assume it is a mirror of the left side until the right carrier is traced.",
+        },
+        {
+            "part_id": "EXH-HGR-90917",
+            "qty": "as fitted; replace every fitted exhaust cushion",
+            "machine_route": "buy Toyota 90917-08004/17572-92000 or mould sample-matched teardrop rubber-metal exhaust cushion",
+            "machine_files": "exh_hgr_90917_08004_teardrop_rev_a.dxf|exh_hgr_90917_08004_teardrop_rev_a.svg",
+            "coordinate_system": "2D top profile in mm; origin lower-left of 48 x 86 bounding box; centreline X24",
+            "exact_definition_mm": "Teardrop/paddle outline 48 wide x 86 high; lower bulb radius 24 centred X24 Y24; top mounting lug on centreline; mounting hole diameter 9 at X24 Y73; hanger slot 16 wide x 22 high capsule centred X24 Y29; raised boss/recess mark 36 x 42 capsule at X6 Y8; finished rubber body thickness target 22 unless genuine sample proves otherwise; reproduce metal reinforcement if present",
+            "material": "Automotive molded exhaust-hanger rubber/EPDM or NR heat/vibration compound, Shore A 60 +/-5, with bonded/internal steel insert where original construction uses it",
+            "tolerance": "outer +/-1.0; hole/slot +0.5/-0.0; hole position +/-0.5; thickness +/-0.5 after genuine-sample confirmation",
+            "release_status": "style identified from vehicle photos and OEM reference; buy OEM preferred, local moulding needs genuine sample or intact original for side profile and insert depth",
+            "shop_note": "Do not use the previous round ring or generic two-hole strap. The vehicle/reference evidence points to Toyota 90917-08004 teardrop cushion style.",
+        },
+        {
+            "part_id": "BUMP-F-L",
+            "qty": "1",
+            "machine_route": "buy molded OEM/manufacturer-style bump stop; not CNC-cut",
+            "machine_files": "none",
+            "coordinate_system": "manufacturer part control",
+            "exact_definition_mm": "Toyota/manufacturer-style 48304-60010 direct replacement; if reproduced locally, use physical sample or 3D scan to create a mould matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location",
+            "material": "Automotive SBR/NR/PU bump-stop compound as supplied by manufacturer",
+            "tolerance": "manufacturer part fitment controls; do not substitute universal height/profile",
+            "release_status": "buy manufacturer part preferred",
+            "shop_note": "Verify against left-front bracket and axle contact point before ordering.",
+        },
+        {
+            "part_id": "BUMP-F-R",
+            "qty": "1",
+            "machine_route": "buy molded OEM/manufacturer-style bump stop; not CNC-cut",
+            "machine_files": "none",
+            "coordinate_system": "manufacturer part control",
+            "exact_definition_mm": "Toyota/manufacturer-style 48304-60020 direct replacement; separate shorter/right-side front stop; if reproduced locally, use physical sample or 3D scan to create a mould matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location",
+            "material": "Automotive SBR/NR/PU bump-stop compound as supplied by manufacturer",
+            "tolerance": "manufacturer part fitment controls; do not substitute left stop or universal height/profile",
+            "release_status": "buy manufacturer part preferred",
+            "shop_note": "Verify against right-front bracket and axle contact point before ordering.",
+        },
+        {
+            "part_id": "BUMP-R",
+            "qty": "2",
+            "machine_route": "buy molded OEM/manufacturer-style bump stops; not CNC-cut",
+            "machine_files": "none",
+            "coordinate_system": "manufacturer part control",
+            "exact_definition_mm": "Toyota/manufacturer-style 48304-60010 direct replacement for rear pair; if reproduced locally, use physical sample or 3D scan to create a mould matching rear bracket/base, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location",
+            "material": "Automotive SBR/NR/PU bump-stop compound as supplied by manufacturer",
+            "tolerance": "matched rear pair; loaded axle clearance and final ride height control acceptance",
+            "release_status": "buy manufacturer part preferred",
+            "shop_note": "Check after suspension ride-height plan is known.",
+        },
+    ]
+
+
+def write_machine_definitions() -> None:
+    rows = machine_definition_rows()
+    headers = [
+        "part_id",
+        "qty",
+        "machine_route",
+        "machine_files",
+        "coordinate_system",
+        "exact_definition_mm",
+        "material",
+        "tolerance",
+        "release_status",
+        "shop_note",
+    ]
+    lines = [",".join(headers)]
+    for row in rows:
+        lines.append(",".join(csv_escape(row[header]) for header in headers))
+    (OUT_DIR / "machine_definitions.csv").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (OUT_DIR / "machine_definitions.json").write_text(
+        json.dumps(rows, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
 
 
 def csv_escape(value: str) -> str:
@@ -640,6 +856,7 @@ Use it with:
 ## Files To Send
 
 - `{PDF_NAME}` - dimension and fabrication review sheet
+- `machine_definitions.csv` / `machine_definitions.json` - CNC/shop geometry and controlled non-CNC purchase definitions
 - `fabricator_cut_list.csv` - file-by-file cut/form list
 - `inspection_checklist.csv` - receiving and first-article inspection checks
 
@@ -660,6 +877,8 @@ The circular cushions, cup blanks, and oval pad are ready for quote and first ar
 
 The strip files are not final production cut patterns. They define stock envelope, section, and hole/slot working basis, but the actual left/right strip outline and hole centres must be traced from the physical rubber and metal carrier.
 
+The exhaust holder is now controlled as the Toyota `90917-08004` / `17572-92000` teardrop cushion style. Buy the molded part where available; the CAD file is a local-copy control only and needs a genuine sample or intact original before a production mould is cut. Bump stops remain molded manufacturer/sample-matched parts unless a shop creates a proper mould from a physical sample or 3D scan.
+
 ## Material
 
 Use new black automotive mount-grade solid rubber only: EPDM or NR/SBR, Shore A `60 +/-5`. Reject tyre rubber, crumb rubber, sponge foam, mixed offcuts, salvage rubber, and unmarked compound.
@@ -678,6 +897,7 @@ def main() -> None:
     write_pdf(package_drawings)
     write_cut_list(package_drawings)
     write_inspection_sheet()
+    write_machine_definitions()
     write_readme(package_drawings)
     print(f"Wrote rubber fabrication pack: {OUT_DIR}")
     print(f"Drawings: {len(package_drawings)}")

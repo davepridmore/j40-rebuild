@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96mm" height="206mm" viewBox="0 0 96 206">
+  <style>
+    .cut { fill: none; stroke: #111; stroke-width: 0.5; }
+    .drill { fill: none; stroke: #111; stroke-width: 0.5; }
+    .relief { fill: none; stroke: #111; stroke-width: 0.5; }
+    .form { fill: none; stroke: #0b5fff; stroke-width: 0.4; stroke-dasharray: 4 3; }
+    .mark { fill: none; stroke: #8a5a00; stroke-width: 0.4; stroke-dasharray: 3 2; }
+    .template { fill: none; stroke: #7a1f8a; stroke-width: 0.45; stroke-dasharray: 5 3; }
+    .center { stroke: #777; stroke-width: 0.25; stroke-dasharray: 2 2; }
+    .title { font: 700 7px monospace; fill: #111; }
+    .note { font: 4.8px monospace; fill: #111; }
+  </style>
+  <text x="24" y="14" class="title">EXH-HGR-90917 Toyota 90917-08004 style exhaust cushion | qty as fitted | units: mm</text>
+  <g transform="translate(24,24)">
+  <polygon class="cut" points="24,0 27.133,0.205 30.212,0.818 33.184,1.827 36,3.215 38.61,4.96 40.971,7.029 43.04,9.39 44.785,12 46.173,14.816 47.182,17.788 47.795,20.867 48,24 47.795,27.133 47.182,30.212 46.173,33.184 44.785,36 43.04,38.61 40.971,40.971 38.61,43.04 36,44.785 38,50 38,70 32,84 16,84 10,70 10,50 12,44.785 9.39,43.04 7.029,40.971 4.96,38.61 3.215,36 1.827,33.184 0.818,30.212 0.205,27.133 0,24 0.205,20.867 0.818,17.788 1.827,14.816 3.215,12 4.96,9.39 7.029,7.029 9.39,4.96 12,3.215 14.816,1.827 17.788,0.818 20.867,0.205 24,0" /><polygon class="form" points="6,26 6.273,22.874 7.086,19.844 8.412,17 10.211,14.43 12.43,12.211 15,10.412 17.844,9.086 20.874,8.273 24,8 27.126,8.273 30.156,9.086 33,10.412 35.57,12.211 37.789,14.43 39.588,17 40.914,19.844 41.727,22.874 42,26 42,32 41.727,35.126 40.914,38.156 39.588,41 37.789,43.57 35.57,45.789 33,47.588 30.156,48.914 27.126,49.727 24,50 20.874,49.727 17.844,48.914 15,47.588 12.43,45.789 10.211,43.57 8.412,41 7.086,38.156 6.273,35.126 6,32" /><polygon class="cut" points="16,26 16.122,24.611 16.482,23.264 17.072,22 17.872,20.858 18.858,19.872 20,19.072 21.264,18.482 22.611,18.122 24,18 25.389,18.122 26.736,18.482 28,19.072 29.142,19.872 30.128,20.858 30.928,22 31.518,23.264 31.878,24.611 32,26 32,32 31.878,33.389 31.518,34.736 30.928,36 30.128,37.142 29.142,38.128 28,38.928 26.736,39.518 25.389,39.878 24,40 22.611,39.878 21.264,39.518 20,38.928 18.858,38.128 17.872,37.142 17.072,36 16.482,34.736 16.122,33.389 16,32" /><circle class="drill" cx="24" cy="73" r="4.5" /><line class="center" x1="24" y1="0" x2="24" y2="86" /><line class="center" x1="0" y1="24" x2="48" y2="24" /><line class="center" x1="0" y1="73" x2="48" y2="73" />
+  </g>
+  <text x="24" y="152" class="note">Toyota 90917-08004 / 17572-92000 style teardrop exhaust cushion. This replaces the earlier generic ring/strap placeholders.</text><text x="24" y="162" class="note">Nominal 2D control: 48 mm wide x 86 mm high; lower rubber bulb R24 centred at X24 Y24; top mounting lug on centreline.</text><text x="24" y="172" class="note">Mounting hole: diameter 9 at X24 Y73. Hanger slot: 16 x 22 capsule centred at X24 Y29. Raised boss/recess mark: 36 x 42 capsule.</text><text x="24" y="182" class="note">Finished rubber body thickness target 22 mm unless the bought/genuine sample proves another value. Reproduce any bonded/internal metal reinforcement.</text>
+</svg>

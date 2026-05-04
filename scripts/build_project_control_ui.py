@@ -23,6 +23,7 @@ REPLACEMENT_PIPE_PHOTO_INTAKE_PATH = MANUAL_DIR / "replacement_pipe_photo_intake
 REPLACEMENT_PIPE_ORDER_RELEASE_SPECS_PATH = MANUAL_DIR / "replacement_pipe_order_release_specs.csv"
 REPLACEMENT_PIPE_RELEASE_ACTIONS_PATH = MANUAL_DIR / "replacement_pipe_release_actions.csv"
 REPLACEMENT_PIPE_CIRCUIT_CLOSURE_PATH = MANUAL_DIR / "replacement_pipe_circuit_closure_sheet.csv"
+HOSE_LOCAL_MARKET_ORDER_SHEET_PATH = MANUAL_DIR / "hose_local_market_order_sheet.csv"
 CHASSIS_RUBBER_REQUIREMENTS_PATH = MANUAL_DIR / "chassis_rubber_requirements.csv"
 RUBBER_HOSE_COMPONENT_AUDIT_PATH = MANUAL_DIR / "rubber_hose_component_audit.csv"
 RUBBER_ORDERING_SPECS_PATH = MANUAL_DIR / "rubber_ordering_specs.csv"
@@ -33,6 +34,7 @@ BRAKE_SYSTEM_REQUIREMENTS_PATH = MANUAL_DIR / "brake_system_requirements.csv"
 FABRICATION_HANDOFF_REQUIREMENTS_PATH = MANUAL_DIR / "fabrication_handoff_requirements.csv"
 EXPENSES_PATH = MANUAL_DIR / "expenses.csv"
 EXPENSES_RECONCILIATION_PATH = MANUAL_DIR / "j40_costs_expenses_reconciliation.csv"
+FASTENER_PHOTO_COUNT_ESTIMATES_PATH = MANUAL_DIR / "fastener_photo_count_estimates.csv"
 BUY_NOW_PATH = MANUAL_DIR / "parts_buy_now_this_week.csv"
 WORKBOOK_TOOLS_PATH = MANUAL_DIR / "workbook_tabs" / "tools.csv"
 WORKBOOK_PARTS_PATH = MANUAL_DIR / "workbook_tabs" / "parts.csv"
@@ -61,7 +63,9 @@ LOCAL_ORDER_IMAGE_DIRS: tuple[Path, ...] = (
     ROOT / "deliverables" / "selling_site_images" / "images",
 )
 LOCAL_ORDER_IMAGE_EXTENSIONS: set[str] = {".jpg", ".jpeg", ".png", ".webp"}
-REFERENCE_IMAGE_EXTENSIONS: set[str] = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
+REFERENCE_PHOTO_EXTENSIONS: set[str] = {".jpg", ".jpeg", ".png", ".webp", ".gif"}
+REFERENCE_VIDEO_EXTENSIONS: set[str] = {".mp4", ".mov", ".m4v", ".webm"}
+REFERENCE_MEDIA_EXTENSIONS: set[str] = REFERENCE_PHOTO_EXTENSIONS | REFERENCE_VIDEO_EXTENSIONS
 LOCAL_ORDER_IMAGE_INDEX: dict[str, Path] | None = None
 
 PRIMARY_WORKSTREAM_IDS: tuple[str, ...] = (
@@ -149,6 +153,62 @@ EPS_MARKET_SCOUT_SPEC: dict[str, Any] = {
     "decision_rule": (
         "Buy only if donor identity, complete matched kit contents, bench-test video, seller contact, return terms, "
         "and required photos are all captured before payment."
+    ),
+}
+
+BRAKE_BOOSTER_MARKET_SCOUT_SPEC: dict[str, Any] = {
+    "id": "brake_booster_servo_44610_60050_market_scout",
+    "title": "Brake Booster / Servo Local Market Scout",
+    "scope": "Pakistan local-market quote only",
+    "quantity": "1 booster assembly",
+    "plain_stall_request": (
+        "Need a brake servo / brake booster for a 1978 Toyota Land Cruiser J40 with front disc brakes "
+        "and rear drum brakes. Primary part number is Toyota 44610-60050. Please quote only until the old "
+        "booster is sample-matched and vacuum-tested."
+    ),
+    "buy_target": (
+        "Primary target is the 9/1975-7/1980 J40/FJ40/BJ40 tandem or dual-diaphragm booster family, Toyota "
+        "44610-60050. Quote 44610-60100 or 44610-60180 only if the shop proves the mounting, pushrod, clevis, "
+        "master-cylinder seat/depth, check-valve grommet, nipple direction, and firewall clearance match the old unit."
+    ),
+    "must_include": [
+        "Booster/servo shell with intact mounting studs and no welded or modified shell.",
+        "Correct pedal pushrod and clevis, or confirmed reuse of the existing clevis with matching thread and pin.",
+        "Correct master-cylinder mounting pattern, pilot/seat, and pushrod depth for the fitted master cylinder.",
+        "Vacuum check valve and grommet included, or a matching new check valve/grommet quoted separately.",
+        "Seller identifies whether the unit is new, professionally remanufactured, or used local-market stock.",
+    ],
+    "bench_test": [
+        "Bench vacuum-test the booster before payment; it must hold vacuum without hiss or leakdown.",
+        "Inspect inside the master-cylinder side for brake-fluid contamination from a leaking master cylinder.",
+        "Check pushrod movement and return; no sticking, bent rod, broken clevis, or loose shell crimp.",
+        "Confirm check-valve direction and that the vacuum nipple matches the planned reinforced booster hose.",
+        "After installation, set pushrod free play and confirm no brake drag after repeated pedal applications.",
+    ],
+    "reject_if": [
+        "Seller offers a single/drum booster such as 44610-60040 as a direct replacement.",
+        "Seller offers the later 44610-60160/1980s listing without physically proving sample fit.",
+        "Used unit cannot be vacuum-tested before payment, hisses, leaks down, or contains brake fluid.",
+        "Firewall studs, master studs, pushrod/clevis, check valve/grommet, or shell depth do not match the old sample.",
+        "Universal booster requires cutting, welding, unknown pedal-ratio changes, or unproven brake-line changes.",
+    ],
+    "capture_before_leaving": [
+        "Seller name, phone number, market/stall location, quoted price in PKR, and return/test terms.",
+        "Photos of the front, rear, side depth, firewall studs, master-cylinder face, pushrod, clevis, and check valve.",
+        "Any part number, brand label, donor vehicle claim, remanufacturer label, or warranty card.",
+        "Short video or photo evidence of the vacuum hold test if buying used or remanufactured local stock.",
+        "Photo comparing old and replacement boosters side by side before payment, if the old sample is available.",
+    ],
+    "price_guidance": {
+        "rule": (
+            "Quote only in Bilal Ganj, Montgomery Road, Land Cruiser House, and brake-servo rebuild shops first. "
+            "Record local PKR price and condition. Import fallback exists, but local used/reman must be rejected "
+            "unless it passes sample-match and vacuum tests."
+        ),
+    },
+    "decision_rule": (
+        "Buy locally only after sample match and vacuum test pass. Otherwise record quote/reject evidence and use "
+        "an import fallback for the 44610-60050 family."
     ),
 }
 
@@ -476,7 +536,9 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
     "body_chassis": [
         ("Map and freeze weld boundaries", "Mark cut/fabrication boundaries per rust zone before any irreversible cuts."),
         ("Execute cut, fit, and weld sequence", "Run controlled welding with heat management and pinhole checks."),
-        ("Close corrosion stack same window", "Apply primer, seam sealer, and top protection immediately after metal closure."),
+        ("Clean, treat, and solvent-wipe repaired metal", "After weld cleanup, use rust converter only in remaining pits/seams, let it cure, remove residue, dry fully, then wax-and-grease wipe."),
+        ("Prime, seam-seal, and choose top protection", "Apply zinc-rich 2K epoxy primer first, seam sealer only after primer where needed, then chassis black/topcoat or Raptor by zone after cure."),
+        ("Cavity-wax hidden sections last", "Use cavity wax only after primer, seam sealer, and top protection cure windows are met; keep drains and bolt holes open."),
         ("Capture refit interface evidence", "Photograph mount points and repaired zones before moving to refit."),
     ],
     "paint_refinish": [
@@ -492,10 +554,14 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
         ("Close wiring integration and test", "Wire each control into the final harness plan and verify operation."),
     ],
     "chassis_fixing": [
-        ("Run mechanical cleanup sequence", "Wire cup non-flat geometry first, then strip/flap cleanup on flatter sections."),
-        ("Complete structured defect checks", "Inspect rails, crossmembers, mounts, and brackets for cracks, pits, and thinning."),
-        ("Close issue-specific inspections", "All opened chassis issue rows need photo evidence and explicit closeout."),
-        ("Apply final protection stack", "Prime and protect approved metal only after defect closure and surface prep."),
+        ("Finish dry mechanical cleanup", "Wire cup non-flat geometry first, then strip/flap cleanup on flatter sections without thinning bracket edges or pitted rail lips."),
+        ("Complete structured defect checks", "Inspect rails, crossmembers, mounts, hard-line clips, steering-box mounts, and spring hangers for cracks, pits, ovaling, and thinning."),
+        ("Close issue-specific inspections", "All opened chassis issue rows need photo evidence and explicit repair, replace, or accept decisions before coating."),
+        ("Degrease, rinse, and fully dry", "Use DISS/APC and GREZ OFF only after dry prep; rinse carefully and dry seams, boxed pockets, holes, clips, and line contact points before chemistry."),
+        ("Treat remaining rust only", "Use Evapo-Rust or compatible converter only where rust remains in pits/seams, then remove residue before primer."),
+        ("Solvent wipe and mask interfaces", "Use wax-and-grease remover, then mask threads, ground pads, brake/fuel fittings, line contact points, and rubber before primer."),
+        ("Apply primer, seam sealer, then top protection", "Apply the selected zinc-rich 2K epoxy primer, seam sealer only after primer where required, then either compatible chassis black/topcoat or on-hand Raptor by zone; do not assume black paint plus Raptor unless the product windows confirm that stack."),
+        ("Cavity-wax hidden sections last", "Use the HB Body U900 cavity-wax spray cans with wand/nozzle last inside boxed, lapped, and hidden sections after cure windows are met."),
     ],
     "chassis_rubbers": [
         ("Capture and label all removed mount samples", "Tag each old rubber, sleeve, washer, and shim position before replacement decisions."),
@@ -704,17 +770,23 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "title": "Close Corrosion Stack Same Window",
                 "priority": "P0",
                 "remaining": "after each welded zone",
-                "instruction": "Do not leave newly repaired metal unprotected after welding and cleaning.",
+                "instruction": "Do not leave newly repaired metal unprotected after welding and cleaning; close the coating stack without trapping converter residue, moisture, or sanding dust.",
                 "process_steps": [
-                    "Remove weld dust, loose scale, and surface contamination.",
-                    "Use wax and grease remover after the panel is dry and cool.",
-                    "Apply compatible 2K epoxy primer to bare approved metal.",
-                    "Apply seam sealer after primer where the product system requires it.",
-                    "Apply topcoat, liner, or cavity wax in the planned order after cure windows are met.",
+                    "Remove weld dust, loose scale, loose old coating, and surface contamination.",
+                    "Use rust converter only in remaining pits or seams where clean metal cannot be reached; do not convert clean bare steel unnecessarily.",
+                    "Let converter fully cure, then remove or neutralize residue exactly as the converter product requires.",
+                    "Confirm the panel is cool, dry, and free of sanding dust before solvent wiping.",
+                    "Use wax-and-grease remover before primer, then allow full flash-off/dry time.",
+                    "Mask threads, grounds, drain holes, rubber contact faces, brake/fuel fittings, and line contact areas before coating.",
+                    "Apply the selected zinc-rich 2K epoxy primer to approved bare/prepped metal inside the primer product window.",
+                    "Apply seam sealer only after primer where joints, overlaps, bracket edges, or seams need sealing.",
+                    "Apply one compatible exposed top protection by zone: chassis black/topcoat or Raptor. Use black paint under Raptor only if the product data confirms cure, scuff, and recoat compatibility.",
+                    "Use cavity wax last inside boxed/hidden sections after primer, seam sealer, and top protection cure windows are met; keep drain and bolt holes open.",
+                    "Photograph each layer before it is hidden by the next coating or by refitted lines, rubbers, and brackets.",
                 ],
-                "tools": ["Blow gun", "Solvent-safe wipes", "Primer gun or aerosol system", "Seam-sealer gun"],
-                "supplies": ["Wax and grease remover", "2K epoxy primer", "Seam sealer", "Topcoat or bedliner", "Cavity wax"],
-                "hold_point": "No moisture, uncured converter, loose rust, or sanding dust is trapped under primer.",
+                "tools": ["Blow gun", "Solvent-safe wipes", "Masking plugs/tape", "Primer gun or aerosol system", "Seam-sealer gun", "Cavity-wax wand/nozzle"],
+                "supplies": ["Rust converter for pits/seams only", "Wax and grease remover", "Zinc-rich 2K epoxy primer", "Seam sealer", "Chassis black/topcoat or Raptor by zone", "Cavity wax"],
+                "hold_point": "No primer, seam sealer, black paint, Raptor, or cavity wax is applied over moisture, uncured converter, converter residue, loose rust, loose coating, oil, or sanding dust.",
                 "image_tokens": ["primer", "sealer", "floor", "rust", "bodywork"],
             },
             {
@@ -1750,18 +1822,38 @@ def file_link(repo_path: str, label: str = "") -> dict[str, str] | None:
 
 
 def market_specs_for_workstream(workstream_id: str) -> list[dict[str, Any]]:
-    if clean(workstream_id) != "eps_vitz_upgrade":
-        return []
-    spec = dict(EPS_MARKET_SCOUT_SPEC)
-    spec["links"] = [
-        link
-        for link in [
-            file_link("docs/eps-bilal-ganj-kit-checklist.md", "Full EPS checklist"),
-            file_link("docs/bilal-ganj-detailed-size-specs.md", "Detailed market specs"),
+    specs: list[dict[str, Any]] = []
+    if clean(workstream_id) == "eps_vitz_upgrade":
+        spec = dict(EPS_MARKET_SCOUT_SPEC)
+        spec["links"] = [
+            link
+            for link in [
+                file_link("docs/eps-bilal-ganj-kit-checklist.md", "Full EPS checklist"),
+                file_link("docs/bilal-ganj-detailed-size-specs.md", "Detailed market specs"),
+            ]
+            if link
         ]
-        if link
-    ]
-    return [spec]
+        specs.append(spec)
+    if clean(workstream_id) == "brake_system":
+        spec = dict(BRAKE_BOOSTER_MARKET_SCOUT_SPEC)
+        spec["links"] = [
+            link
+            for link in [
+                file_link("docs/brake-parts-pakistan-acquisition-20260503.md", "Pakistan brake buying text"),
+                file_link("docs/brake-parts-acquisition-spec-20260503.md", "Brake acquisition spec"),
+                {
+                    "url": "https://www.bizsouthasia.com/PK/land-cruiser-house-0300-9035682",
+                    "label": "Land Cruiser House lead",
+                },
+                {
+                    "url": "https://cruiserteq.com/brake-booster-aftermarket-fits-9-1975-1987-bj4x-fj4x-fj60-bbn60050/",
+                    "label": "44610-60050 import fallback",
+                },
+            ]
+            if link
+        ]
+        specs.append(spec)
+    return specs
 
 
 def package_relative_file_link(package_dir: str, filename: str) -> dict[str, str] | None:
@@ -2424,6 +2516,27 @@ def replacement_pipe_order_release_payload(rows: list[dict[str, str]]) -> list[d
     return payload
 
 
+def hose_local_market_order_payload(rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    return [
+        {
+            "order_id": clean(row.get("order_id")),
+            "order_state": clean(row.get("order_state")),
+            "shop_lane": clean(row.get("shop_lane")),
+            "item": clean(row.get("item")),
+            "order_text": clean(row.get("order_text")),
+            "qty": clean(row.get("qty")),
+            "buy_length_mm": clean(row.get("buy_length_mm")),
+            "diameter_spec": clean(row.get("diameter_spec")),
+            "material_spec": clean(row.get("material_spec")),
+            "clamp_or_fitting_spec": clean(row.get("clamp_or_fitting_spec")),
+            "source_basis": clean(row.get("source_basis")),
+            "final_install_check": clean(row.get("final_install_check")),
+            "hard_reject": clean(row.get("hard_reject")),
+        }
+        for row in rows
+    ]
+
+
 def replacement_pipe_release_action_payload(rows: list[dict[str, str]]) -> list[dict[str, str]]:
     return [
         {
@@ -2836,7 +2949,7 @@ def build_capture_tasks(
     for row in replacement_pipe_circuit_closure_rows:
         release_status = clean(row.get("release_status"))
         photo_status = clean(row.get("photo_status"))
-        if status_is_complete(release_status, photo_status):
+        if status_is_complete(release_status):
             continue
         circuit_id = clean(row.get("circuit_id"))
         tasks.append(
@@ -3156,6 +3269,10 @@ def dedupe_payload_images(images: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return deduped
 
 
+def reference_media_type_for_path(path: Path) -> str:
+    return "video" if path.suffix.lower() in REFERENCE_VIDEO_EXTENSIONS else "photo"
+
+
 def reference_image_file_payload(
     path: Path,
     *,
@@ -3171,7 +3288,7 @@ def reference_image_file_payload(
         "caption": caption,
         "captured_date": "",
         "captured_time": "",
-        "media_type": "photo",
+        "media_type": reference_media_type_for_path(path),
         "component_group": "documentation_reference",
         "specific_component": specific_component,
         "stage": "reference_material",
@@ -3192,7 +3309,7 @@ def scan_reference_image_files(directory: Path) -> list[Path]:
             path
             for path in directory.rglob("*")
             if path.is_file()
-            and path.suffix.lower() in REFERENCE_IMAGE_EXTENSIONS
+            and path.suffix.lower() in REFERENCE_MEDIA_EXTENSIONS
             and not path.name.startswith(".")
         ],
         key=lambda path: repo_relative_path(path).lower(),
@@ -3280,7 +3397,7 @@ def build_manual_other_build_reference_sections() -> list[dict[str, Any]]:
             continue
 
         path = ROOT / relative_path
-        if not path.exists() or path.suffix.lower() not in REFERENCE_IMAGE_EXTENSIONS:
+        if not path.exists() or path.suffix.lower() not in REFERENCE_MEDIA_EXTENSIONS:
             continue
 
         section_key = clean(row.get("section_key")) or "curated_other_build_references"
@@ -3322,73 +3439,19 @@ def build_manual_other_build_reference_sections() -> list[dict[str, Any]]:
     return sections
 
 
-def build_market_pack_reference_images() -> list[dict[str, Any]]:
-    images: list[dict[str, Any]] = []
-    deliverables_dir = ROOT / "deliverables"
-    if not deliverables_dir.exists():
-        return images
-
-    for image_dir in sorted(deliverables_dir.glob("*/images"), key=lambda path: repo_relative_path(path).lower()):
-        if "selling_site_images" in image_dir.parts:
-            continue
-        for path in scan_reference_image_files(image_dir):
-            pack_name = image_dir.parent.name
-            images.append(
-                reference_image_file_payload(
-                    path,
-                    caption=f"Build pack sample · {path.stem}",
-                    specific_component="market_pack_sample_image",
-                    source_label=pack_name,
-                    source_path=repo_relative_path(image_dir.parent),
-                    notes="Generated market-pack reference image.",
-                )
-            )
-    return dedupe_payload_images(images)
+def reference_video_count(images: list[dict[str, Any]]) -> int:
+    return sum(1 for image in images if norm(image.get("media_type")) == "video")
 
 
-def build_current_sample_reference_images(photo_rows: list[dict[str, str]]) -> list[dict[str, Any]]:
-    sample_rows = [
-        row
-        for row in photo_rows
-        if is_photo_row(row)
-        and (
-            "sample" in norm(row.get("specific_component"))
-            or "sample" in norm(row.get("stage"))
-            or "sample" in norm(row.get("tags"))
-            or "fabrication" in norm(row.get("specific_component"))
-            or "recreation" in norm(row.get("specific_component"))
-        )
-    ]
-    sample_rows = sorted(
-        sample_rows,
-        key=lambda row: (
-            clean(row.get("captured_date")),
-            clean(row.get("captured_time")),
-            clean(row.get("file_name")),
-        ),
-        reverse=True,
-    )
-    images = []
-    for row in sample_rows:
-        payload = image_payload(row, [])
-        payload["match_basis"] = "sample_reference"
-        payload["source_label"] = "Current build samples"
-        payload["source_path"] = clean(row.get("relative_path"))
-        images.append(payload)
-    return dedupe_payload_images(images)
-
-
-def build_other_builds_reference(photo_rows: list[dict[str, str]]) -> dict[str, Any]:
+def build_other_builds_reference(_photo_rows: list[dict[str, str]]) -> dict[str, Any]:
     drop_zone_images = build_drop_zone_reference_images()
     manual_reference_sections = build_manual_other_build_reference_sections()
-    sample_reference_images = build_current_sample_reference_images(photo_rows)
-    market_pack_images = build_market_pack_reference_images()
 
     sections: list[dict[str, Any]] = [
         {
             "key": "drop_zone",
             "title": "Other J40 Build Drop Zone",
-            "description": "Reference photos placed here are kept separate from this vehicle's evidence inventory.",
+            "description": "Reference media placed here is kept separate from this vehicle's evidence inventory.",
             "source_path": repo_relative_path(OTHER_J40_BUILDS_DIR),
             "links": [],
             "images": drop_zone_images,
@@ -3396,41 +3459,26 @@ def build_other_builds_reference(photo_rows: list[dict[str, str]]) -> dict[str, 
     ]
     sections.extend(build_pakwheels_reference_sections())
     sections.extend(manual_reference_sections)
-    if sample_reference_images:
-        sections.append(
-            {
-                "key": "sample_reference",
-                "title": "Samples And Fabrication References",
-                "description": "Current sample, fabrication, and recreation evidence gathered into one reference group.",
-                "source_path": "data/manual/photo_inventory.csv",
-                "links": [],
-                "images": sample_reference_images,
-            }
-        )
-    if market_pack_images:
-        sections.append(
-            {
-                "key": "market_pack_samples",
-                "title": "Generated Build Pack Sample Images",
-                "description": "Deduped image set carried forward from generated market and buy packs.",
-                "source_path": "deliverables/*/images",
-                "links": [],
-                "images": market_pack_images,
-            }
-        )
 
-    total_images = sum(len(section.get("images") or []) for section in sections)
-    manual_reference_images = sum(len(section.get("images") or []) for section in manual_reference_sections)
+    total_media = sum(len(section.get("images") or []) for section in sections)
+    total_videos = sum(reference_video_count(section.get("images") or []) for section in sections)
+    manual_reference_media = sum(len(section.get("images") or []) for section in manual_reference_sections)
+    manual_reference_videos = sum(reference_video_count(section.get("images") or []) for section in manual_reference_sections)
+    drop_zone_videos = reference_video_count(drop_zone_images)
     return {
         "drop_zone": repo_relative_path(OTHER_J40_BUILDS_DIR),
         "summary": {
             "section_count": len(sections),
-            "total_images": total_images,
-            "drop_zone_images": len(drop_zone_images),
-            "manual_reference_images": manual_reference_images,
+            "total_media": total_media,
+            "total_images": total_media - total_videos,
+            "total_videos": total_videos,
+            "drop_zone_media": len(drop_zone_images),
+            "drop_zone_images": len(drop_zone_images) - drop_zone_videos,
+            "drop_zone_videos": drop_zone_videos,
+            "manual_reference_media": manual_reference_media,
+            "manual_reference_images": manual_reference_media - manual_reference_videos,
+            "manual_reference_videos": manual_reference_videos,
             "pakwheels_sections": sum(1 for section in sections if clean(section.get("key")).startswith("pakwheels_")),
-            "sample_reference_images": len(sample_reference_images),
-            "market_pack_images": len(market_pack_images),
         },
         "sections": sections,
     }
@@ -4643,6 +4691,66 @@ def load_expense_matched_workbook_supply_refs(path: Path) -> set[str]:
     return matched_refs
 
 
+def build_fastener_estimate_lookup(rows: list[dict[str, str]]) -> dict[str, list[dict[str, str]]]:
+    lookup: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for row in rows:
+        for entry_id in clean(row.get("procurement_entry_id")).split("|"):
+            key = norm(entry_id)
+            if key and key != "multiple":
+                lookup[key].append(row)
+    return lookup
+
+
+def estimate_range_text(row: dict[str, str]) -> str:
+    minimum = clean(row.get("visible_estimate_min"))
+    likely = clean(row.get("visible_estimate_likely"))
+    maximum = clean(row.get("visible_estimate_max"))
+    if minimum and maximum and likely:
+        return f"{minimum}-{maximum} visible, likely {likely}"
+    if likely:
+        return f"likely {likely}"
+    return ""
+
+
+def estimate_summary_for_entry(entry_id: str, estimate_lookup: dict[str, list[dict[str, str]]]) -> dict[str, str]:
+    rows = estimate_lookup.get(norm(entry_id), [])
+    if not rows:
+        return {
+            "estimated_hardware_type": "",
+            "estimated_visible_count": "",
+            "estimated_purchase_basis": "",
+            "estimate_confidence": "",
+        }
+
+    type_parts: list[str] = []
+    count_parts: list[str] = []
+    purchase_parts: list[str] = []
+    confidence_values: list[str] = []
+
+    for row in rows:
+        hardware_class = clean(row.get("hardware_class"))
+        count_text = estimate_range_text(row)
+        if hardware_class:
+            type_parts.append(f"{hardware_class} ({count_text})" if count_text else hardware_class)
+        elif count_text:
+            type_parts.append(count_text)
+        if count_text:
+            count_parts.append(count_text)
+        purchase_basis = clean(row.get("purchase_count_basis"))
+        if purchase_basis:
+            purchase_parts.append(purchase_basis)
+        confidence = clean(row.get("confidence"))
+        if confidence:
+            confidence_values.append(confidence)
+
+    return {
+        "estimated_hardware_type": " | ".join(dict.fromkeys(type_parts)),
+        "estimated_visible_count": " | ".join(dict.fromkeys(count_parts)),
+        "estimated_purchase_basis": " | ".join(dict.fromkeys(purchase_parts)),
+        "estimate_confidence": " | ".join(dict.fromkeys(confidence_values)),
+    }
+
+
 def source_link_row(
     *,
     source_sheet: str,
@@ -4798,7 +4906,11 @@ def build_workbook_source_links() -> list[dict[str, Any]]:
     return sorted(deduped, key=lambda row: (row.get("system", ""), row.get("item", ""), row.get("source_sheet", "")))
 
 
-def build_supplies_inventory(expense_rows: list[dict[str, str]]) -> dict[str, Any]:
+def build_supplies_inventory(
+    expense_rows: list[dict[str, str]],
+    fastener_estimate_rows: list[dict[str, str]] | None = None,
+) -> dict[str, Any]:
+    fastener_estimate_lookup = build_fastener_estimate_lookup(fastener_estimate_rows or [])
     expense_supply_rows: list[dict[str, str]] = []
     for row in expense_rows:
         bucket = norm(row.get("bucket"))
@@ -4817,6 +4929,7 @@ def build_supplies_inventory(expense_rows: list[dict[str, str]]) -> dict[str, An
             item=clean(row.get("item")),
             notes=clean(row.get("notes")),
         )
+        estimate_summary = estimate_summary_for_entry(clean(row.get("entry_id")), fastener_estimate_lookup)
         expense_supply_rows.append(
             {
                 "source": "expenses",
@@ -4842,6 +4955,7 @@ def build_supplies_inventory(expense_rows: list[dict[str, str]]) -> dict[str, An
                 "evidence_ref": clean(row.get("evidence_ref")),
                 "notes": clean(row.get("notes")),
                 "links": link_payloads(row_text_values(row)),
+                **estimate_summary,
             }
         )
 
@@ -5283,29 +5397,47 @@ def build_chassis_prime_readiness_panel(photo_rows: list[dict[str, str]]) -> dic
                 "detail": "Repair or explicitly approve steering-box mount, spring hangers, body mounts, crossmembers, and hard-line brackets before primer.",
             },
             {
-                "label": "Treat only remaining rust",
+                "label": "Rust treatment",
                 "status": "queued",
                 "detail": "Use Evapo-Rust where practical or compatible converter only in remaining pits/seams; remove residue and do not convert clean steel unnecessarily.",
             },
             {
-                "label": "Solvent wipe, epoxy prime, topcoat, cavity wax",
+                "label": "Solvent wipe and masking",
                 "status": "queued",
-                "detail": "Wax-and-grease wipe only after dry/cure; apply compatible 2K epoxy primer, then topcoat/chassis black, then cavity wax last.",
+                "detail": "Use wax-and-grease remover only after full dry/cure, then mask threads, ground pads, brake/fuel fittings, line contact areas, and rubber parts.",
+            },
+            {
+                "label": "Zinc-rich epoxy primer",
+                "status": "queued",
+                "detail": "Apply the selected Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set only to approved clean metal after repair decisions are closed.",
+            },
+            {
+                "label": "Seam sealer and top protection",
+                "status": "queued",
+                "detail": "Apply seam sealer where lap joints need sealing after primer, then apply compatible topcoat/chassis black or the on-hand Raptor protective coating where specified.",
+            },
+            {
+                "label": "Cavity wax cans last",
+                "status": "queued",
+                "detail": "Use the HB Body U900 cavity wax spray cans with wand/nozzle last inside boxed, lapped, and hidden sections after primer/sealer/topcoat cure windows are met.",
             },
         ],
         "materials": {
             "available": [
-                "Evapo-Rust 5L",
-                "DISS/APC cleaner 5L",
-                "GREZ OFF HD degreaser",
-                "Wadfow WRS1550 pressure sprayer ordered/pending delivery",
+                "Evapo-Rust 5L - received",
+                "DISS/APC cleaner 5L - received",
+                "GREZ OFF HD degreaser - received",
+                "U-POL/Raptor bedliner/protective coating - on hand",
+            ],
+            "pending_delivery": [
+                "Wadfow WRS1550 pressure sprayer - ordered/pending delivery",
+                "3M Prep Solvent-70 wax and grease remover - ordered/pending delivery",
+                "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set - ordered/pending delivery",
+                "HB BODY 999 seam sealer - ordered/pending delivery",
+                "HB Body U900 cavity wax spray 400ml x2 - ordered/pending delivery",
             ],
             "missing": [
-                "Wax and grease remover",
-                "2K epoxy primer system",
-                "Compatible chassis topcoat/chassis black",
-                "Seam sealer where lap joints need sealing",
-                "Cavity wax with wand/nozzle",
+                "Final chassis finish decision by zone: chassis black/topcoat vs Raptor where exposed",
                 "Extra brushes, strip/flap discs, masking plugs/tape, solvent wipes",
             ],
         },
@@ -5731,8 +5863,9 @@ def build_chassis_before_primer_subtask_group(photo_rows: list[dict[str, str]]) 
                 "Apply DISS/APC from bottom upward for general dirt; apply GREZ OFF only to oily deposits.",
                 "Agitate with brushes and rinse with controlled pressure, avoiding bearings, breathers, electrics, and open line ends.",
                 "Blow dry seams, clips, holes, boxed edges, and line contact areas; allow full dry time.",
-                "Use Evapo-Rust where practical or compatible converter only in remaining pits; remove residue after cure.",
-                "Wax/grease wipe, mask threads/holes, then apply the selected compatible 2K epoxy primer/topcoat/cavity-wax stack.",
+                "Use Evapo-Rust where practical or compatible converter only in remaining pits and seams.",
+                "Remove all rust-treatment residue after cure; do not leave converter film where the primer system does not allow it.",
+                "Stop here for photo signoff if any pitting, holes, cracks, or under-clip line corrosion remains unresolved.",
             ],
             "tools": [
                 "Wadfow WRS1550 pressure sprayer for cleaner application",
@@ -5745,12 +5878,46 @@ def build_chassis_before_primer_subtask_group(photo_rows: list[dict[str, str]]) 
                 "DISS/APC cleaner 5L - received",
                 "GREZ OFF HD degreaser - received",
                 "Evapo-Rust 5L - received",
-                "Wax and grease remover - still required",
-                "2K epoxy primer system - still required",
-                "Compatible chassis topcoat/chassis black - still required",
-                "Seam sealer and cavity wax - still required for final stack",
+                "Compressed air or blower",
             ],
-            "hold_point": "Chassis is fully dry, repair decisions are closed, converter residue is removed, wax/grease wipe is done, and compatible 2K epoxy primer/topcoat/cavity-wax stack is selected.",
+            "hold_point": "Chassis is fully dry, repair decisions are closed, and converter/Evapo-Rust residue is removed before solvent wipe or primer.",
+            "images": dedupe_payload_images([image_payload(row, []) for row in chassis_rows]),
+        },
+        {
+            "id": "primer_sealer_topcoat_cavity_wax_stack",
+            "title": "Primer, Sealer, Topcoat, And Cavity Wax",
+            "priority": "P0",
+            "status": "queued",
+            "remaining": "after rust treatment and dry signoff",
+            "instruction": "Apply the protection stack in order: rust-treatment residue removal, solvent wipe, masking, zinc-rich epoxy primer, seam sealer where required, one compatible top protection by zone, then cavity wax spray cans last.",
+            "process_steps": [
+                "Confirm rust converter or Evapo-Rust work is fully cured/complete and all residue is removed or neutralized before solvent wipe.",
+                "Use 3M Prep Solvent-70 or approved wax-and-grease remover only after the chassis is fully dry and rust-treatment residue is gone; allow full flash-off.",
+                "Mask threads, ground pads, brake/fuel fittings, hard-line contact areas, rubber parts, and holes that must stay open.",
+                "Apply the selected Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set to approved bare/prepped metal within the product window.",
+                "Apply HB BODY 999 seam sealer only after primer where lap joints, seams, or bracket edges need sealing.",
+                "Apply one compatible exposed top protection by zone after primer/sealer cure: chassis black/topcoat or on-hand Raptor protective coating.",
+                "Use black paint under Raptor only if the product data confirms the exact cure, scuff, and recoat compatibility for that stack.",
+                "Use HB Body U900 cavity wax spray cans with wand/nozzle last inside boxed, lapped, and hidden sections; keep drain and bolt holes open.",
+                "Photograph each layer before it is hidden by the next layer or by refitted lines, clips, rubbers, and suspension parts.",
+            ],
+            "tools": [
+                "Solvent-safe wipes",
+                "Masking plugs/tape",
+                "Primer spray equipment or approved aerosol system",
+                "Seam-sealer gun/nozzle",
+                "Cavity-wax wand/nozzle",
+            ],
+            "supplies": [
+                "3M Prep Solvent-70 wax and grease remover - ordered/pending delivery",
+                "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set - ordered/pending delivery",
+                "HB BODY 999 seam sealer - ordered/pending delivery",
+                "U-POL/Raptor bedliner/protective coating - on hand",
+                "HB Body U900 cavity wax spray 400ml x2 - ordered/pending delivery",
+                "Final chassis finish decision by zone: chassis black/topcoat OR Raptor where exposed",
+                "Product-data confirmation before stacking black paint under Raptor",
+            ],
+            "hold_point": "No final protection is complete until converter residue removal, solvent wipe, primer, seam sealing, top protection, and cavity wax are documented in order, with drain holes, threads, grounds, and line contact points still serviceable.",
             "images": dedupe_payload_images([image_payload(row, []) for row in chassis_rows]),
         },
     ]
@@ -6111,6 +6278,12 @@ def choose_supply_reference_image(
         return ref("air_compressor", f"{item} · air compressor reference image", "air", "compressor")
     if has("air", "hose"):
         return ref("air_hose", f"{item} · air hose reference image", "air", "hose")
+    if has_any("toolbench", "workbench", "work bench"):
+        return ref("toolbench", f"{item} · toolbench/workbench reference image", "toolbench", "workbench")
+    if has_any("bench drill", "pillar drill", "drill press"):
+        return ref("bench_drill", f"{item} · bench drill reference image", "bench", "drill")
+    if has_any("heavy c-clamp", "c-clamp", "c clamp") or has("clamp", "heavy"):
+        return ref("clamp", f"{item} · heavy clamp reference image", "clamp")
     if has("drill", "chuck"):
         return ref("drill_chuck", f"{item} · drill chuck reference image", "drill", "chuck")
     if has("digital", "caliper"):
@@ -6319,8 +6492,6 @@ def choose_supply_reference_image(
         return ref("roof_door_window", f"{item} · body/glass hardware reference image", "body")
     if has_any("body_sections", "body_floor", "body panel", "striker pins", "latch rebuild"):
         return ref("body_panel", f"{item} · body panel/hardware reference image", "body")
-    if has_any("remove old leds", "old leds"):
-        return ref("electrical_accessories", f"{item} · electrical accessory reference image", "electrical")
     if has_any("piano hinge", "hinge"):
         return ref("piano_hinge", f"{item} · hinge reference image", "hinge")
     if has_any("reinforcement plates", "mounting reinforcement"):
@@ -6828,7 +6999,10 @@ def attach_inventory_images(
     return output
 
 
-def workstream_part_row_payload(row: dict[str, str]) -> dict[str, Any]:
+def workstream_part_row_payload(
+    row: dict[str, str],
+    fastener_estimate_lookup: dict[str, list[dict[str, str]]] | None = None,
+) -> dict[str, Any]:
     return {
         "entry_id": clean(row.get("entry_id")),
         "workstream": split_legacy_steering_brakes_workstream(
@@ -6852,6 +7026,7 @@ def workstream_part_row_payload(row: dict[str, str]) -> dict[str, Any]:
         "evidence_ref": clean(row.get("evidence_ref")),
         "notes": clean(row.get("notes")),
         "links": link_payloads(row_text_values(row)),
+        **estimate_summary_for_entry(clean(row.get("entry_id")), fastener_estimate_lookup or {}),
     }
 
 
@@ -6865,6 +7040,7 @@ def build_dashboard_data() -> dict[str, Any]:
     replacement_pipe_order_release_rows = load_csv_optional(REPLACEMENT_PIPE_ORDER_RELEASE_SPECS_PATH)
     replacement_pipe_release_action_rows = load_csv_optional(REPLACEMENT_PIPE_RELEASE_ACTIONS_PATH)
     replacement_pipe_circuit_closure_rows = load_csv_optional(REPLACEMENT_PIPE_CIRCUIT_CLOSURE_PATH)
+    hose_local_market_order_rows = load_csv_optional(HOSE_LOCAL_MARKET_ORDER_SHEET_PATH)
     chassis_rubber_requirement_rows = load_csv_optional(CHASSIS_RUBBER_REQUIREMENTS_PATH)
     rubber_hose_component_audit_rows = load_csv_optional(RUBBER_HOSE_COMPONENT_AUDIT_PATH)
     body_mount_order_release_rows = load_csv_optional(BODY_MOUNT_ORDER_RELEASE_SPECS_PATH)
@@ -6881,8 +7057,10 @@ def build_dashboard_data() -> dict[str, Any]:
     whatsapp_j40_media_rows = [row for row in whatsapp_j40_media_rows if not is_hidden_whatsapp_chat(row)]
     inventory_image_overrides = load_inventory_image_overrides(INVENTORY_IMAGE_OVERRIDES_PATH)
     expense_rows = load_csv(EXPENSES_PATH)
+    fastener_estimate_rows = load_csv_optional(FASTENER_PHOTO_COUNT_ESTIMATES_PATH)
+    fastener_estimate_lookup = build_fastener_estimate_lookup(fastener_estimate_rows)
     buy_now_rows = load_csv(BUY_NOW_PATH)
-    supplies_inventory = build_supplies_inventory(expense_rows)
+    supplies_inventory = build_supplies_inventory(expense_rows, fastener_estimate_rows)
     workbook_source_links = build_workbook_source_links()
     electrical_spec_layout = load_electrical_spec_layout()
     electrical_spec_layout_by_workstream: dict[str, dict[str, Any]] = {}
@@ -6986,7 +7164,7 @@ def build_dashboard_data() -> dict[str, Any]:
         evidence_sets = evidence["evidence_sets"]
         parts_for_workstream = part_rows_by_workstream.get(ws_id, [])
         involved_parts_rows = sorted(
-            [workstream_part_row_payload(part_row) for part_row in parts_for_workstream],
+            [workstream_part_row_payload(part_row, fastener_estimate_lookup) for part_row in parts_for_workstream],
             key=lambda item: (
                 norm(item.get("procurement_stage")),
                 norm(item.get("status")),
@@ -7273,6 +7451,7 @@ def build_dashboard_data() -> dict[str, Any]:
                 "evidence_ref": clean(row.get("evidence_ref")) or clean(expense_by_entry_id.get(clean(row.get("entry_id")), {}).get("evidence_ref")),
                 "notes": clean(expense_by_entry_id.get(clean(row.get("entry_id")), {}).get("notes")),
                 "links": link_payloads(row_text_values(row), row_text_values(expense_by_entry_id.get(clean(row.get("entry_id")), {}))),
+                **estimate_summary_for_entry(clean(row.get("entry_id")), fastener_estimate_lookup),
             }
             for row in buy_now_rows
             if clean(row.get("priority")) == "P0" or clean(row.get("next_action")) in {"order_from_selected_quote", "track_delivery"}
@@ -7303,6 +7482,7 @@ def build_dashboard_data() -> dict[str, Any]:
                 "evidence_ref": clean(row.get("evidence_ref")),
                 "notes": clean(row.get("notes")),
                 "links": link_payloads(row_text_values(row)),
+                **estimate_summary_for_entry(clean(row.get("entry_id")), fastener_estimate_lookup),
             }
             for row in open_part_rows
         ],
@@ -7333,6 +7513,7 @@ def build_dashboard_data() -> dict[str, Any]:
                 "evidence_ref": clean(row.get("evidence_ref")),
                 "notes": clean(row.get("notes")),
                 "links": link_payloads(row_text_values(row)),
+                **estimate_summary_for_entry(clean(row.get("entry_id")), fastener_estimate_lookup),
             }
             for row in ordered_pending_rows
         ],
@@ -7464,7 +7645,9 @@ def build_dashboard_data() -> dict[str, Any]:
             "replacement_pipe_order_release_specs": "data/manual/replacement_pipe_order_release_specs.csv",
             "replacement_pipe_release_actions": "data/manual/replacement_pipe_release_actions.csv",
             "replacement_pipe_circuit_closure_sheet": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
+            "hose_local_market_order_sheet": "data/manual/hose_local_market_order_sheet.csv",
             "expenses": "data/manual/expenses.csv",
+            "fastener_photo_count_estimates": "data/manual/fastener_photo_count_estimates.csv",
             "parts_buy_now_this_week": "data/manual/parts_buy_now_this_week.csv",
             "workbook_electrical_master": "data/manual/workbook_tabs/electrical_master.csv",
             "workbook_electrical_templates": "data/manual/workbook_tabs/electrical_templates.csv",
@@ -7494,7 +7677,9 @@ def build_dashboard_data() -> dict[str, Any]:
             "whatsapp_j40_media_items": len(whatsapp_j40_media_rows),
             "whatsapp_j40_media_images": whatsapp_media_counts_by_type.get("photo", 0),
             "whatsapp_j40_media_videos": whatsapp_media_counts_by_type.get("video", 0),
+            "other_build_reference_media": other_builds_reference["summary"]["total_media"],
             "other_build_reference_images": other_builds_reference["summary"]["total_images"],
+            "other_build_reference_videos": other_builds_reference["summary"]["total_videos"],
             "other_build_drop_zone_images": other_builds_reference["summary"]["drop_zone_images"],
             "other_build_manual_reference_images": other_builds_reference["summary"]["manual_reference_images"],
         },
@@ -7514,7 +7699,11 @@ def build_dashboard_data() -> dict[str, Any]:
             "open_counts_by_workstream": parts_workstream_cards,
             "procurement_evidence_images": procurement_evidence_images,
             "workbook_source_links": workbook_source_links,
-            "market_specs": market_specs_for_workstream("eps_vitz_upgrade"),
+            "market_specs": market_specs_for_workstream("eps_vitz_upgrade")
+            + market_specs_for_workstream("brake_system"),
+        },
+        "local_market_order_sheets": {
+            "hose": hose_local_market_order_payload(hose_local_market_order_rows),
         },
         "capture_tasks": capture_tasks,
         "supplies": supplies_inventory,

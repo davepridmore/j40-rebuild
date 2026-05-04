@@ -38,7 +38,22 @@ Do not pay for exact hose/fitting parts until the old samples are measured.
 > - Rear axle hard brake lines recreated from old samples.
 > Flexible hoses must be complete crimped brake hose assemblies rated DOT/SAE J1401 or OEM-equivalent. No generic rubber hose fabrication.
 > Hard line working basis: brake-rated 4.75 mm / 3/16 in tube, Bundy steel or CuNi/Cunifer, no bare copper. Need about 25 ft / 7600 mm coil allowance before final cut.
-> Final order must match old hose ends, banjo/thread/seat style, brackets, retaining clips, flare type, fitting thread, bend templates, and full-suspension-droop slack. Please quote only until samples/photos/measurements are provided.
+> Final order must match old hose ends, banjo/thread/seat style, brackets, retaining clips, flare type, fitting thread, bend templates, and fitted route clearance. Please quote only until samples/photos/measurements are provided.
+
+## Local Market Order - Brake Booster / Servo Assembly
+
+Search position on 2026-05-04: no confirmed in-Pakistan stocked direct `44610-60050` replacement was found online. The Pakistan-facing Ubuy result was a later `44610-60160` listing, out of stock at PKR 91,373 before shipping/customs, so do not buy it for this 1978 setup unless the old booster is physically sample-matched and approved. Use local Land Cruiser and brake-servo suppliers first; current local lead: [Land Cruiser House, Bilal Ganj Lahore](https://www.bizsouthasia.com/PK/land-cruiser-house-0300-9035682). Import fallback references if no local unit or rebuild is available: [Cruiser Teq BBN60050](https://cruiserteq.com/brake-booster-aftermarket-fits-9-1975-1987-bj4x-fj4x-fj60-bbn60050/) or equivalent `44610-60050` dual diaphragm unit.
+
+> Need quote only for brake vacuum booster / servo assembly for a 1978 Toyota Land Cruiser J40 with front disc brakes and rear drum brakes.
+> Primary target: Toyota `44610-60050`, tandem / dual diaphragm booster for 9/1975-7/1980 J40/BJ40/FJ40 front-disc setup.
+> Acceptable quote alternates only if physically confirmed against the old booster: `44610-60100` / `44610-60180`.
+> Must match:
+> - firewall mounting stud pattern and bracket depth
+> - master-cylinder stud spacing, pilot/seat, and pushrod depth
+> - pedal pushrod, clevis thread, clevis pin, and free-play adjustment range
+> - vacuum check valve, grommet size, nipple direction, and hose barb
+> - clearance to clutch master cylinder, bonnet, and existing brake lines
+> Prefer new or professionally remanufactured. A used local-market booster is acceptable only if it passes bench vacuum hold/leakdown test, has no hissing, has no brake-fluid contamination inside, and has no welded/modified shell. Reject single/drum `44610-60040`, later `44610-60160`, and universal boosters unless the workshop proves full fit and safety.
 
 ## Local Market Order - Rear Parking Brake Cable Set
 
@@ -94,4 +109,3 @@ Do not buy these if the brake shop already has them.
 | Metric flare-nut wrench set | Ask locally for an automotive brake-line flare-nut wrench set covering roughly 8-19 mm. Do not rely on open-end spanners for old brake fittings. |
 | Brake pipe cutter, bender, flaring tool | Buy only if fabricating lines yourself. Otherwise confirm the brake shop has these and can flare 4.75 mm / 3/16 in brake tube correctly. |
 | Drum brake spring tool | Useful for rear shoes/springs if the workshop does not provide one. |
-

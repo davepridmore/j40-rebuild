@@ -41,7 +41,7 @@
 | `01_legal_admin` | `in_progress` | Track challan, inspection, biometric, transfer filing, plate position, and final document pack. | Ownership/admin file is complete enough for later proof, resale, insurance, and road-use questions. |
 | `02_stripdown_cataloguing` | `in_progress` | Strip the truck in a controlled way and produce a visible map of what is removable, damaged, missing, or outsourced. | Shell, loose parts, and outbound panels are catalogued with photos and labels. |
 | `03_body_chassis` | `in_progress` | Body-off and welding track: weld-zone mapping, structural rust cuts, patch fabrication, and corrosion stack sequencing. | Body is off and weld scope is signed off by zone with materials staged. |
-| `03b_chassis_fixing` | `in_progress` | Chassis track (active after tub separation): clean and inspect rails/crossmembers/mounts, then execute frame repairs and protection closeout. | Chassis structural repairs are closed or explicitly approved with no unknowns remaining. |
+| `03b_chassis_fixing` | `in_progress` | Chassis track (active after tub separation): clean, inspect, repair/approve rails/crossmembers/mounts, then execute rust treatment, primer, seam/top protection, and cavity-wax closeout in order. | Chassis structural repairs are closed or explicitly approved and the coating/protection stack is documented with no unknowns remaining. |
 | `04_electrical_reset` | `in_progress` | Remove junk wiring, define final architecture, buy only the core electrical materials, and install a documented harness. | Starting, charging, lights, horn, wipers, gauges, and required accessories work from a clean, documented loom. |
 | `04c_local_market_procurement` | `in_progress` | Run one short in-person market lane for parts that need samples, photos, bench tests, or condition checks before purchase. | Local-only problem parts are bought, quoted, or explicitly rejected with evidence. |
 | `05_mechanical_baseline` | `in_progress` | Engine-while-stripped track: run service/inspection tasks while access is open (leaks, cooling, hoses, fluids, tune consumables). | Engine baseline maintenance is complete and post-service defects are logged. |
@@ -73,6 +73,8 @@
 
 - This track is now open because the tub is off; keep it active until all structural unknowns are closed.
 - Clean and inspect all rails, crossmembers, and mount points before deciding patch vs section replacement.
+- After inspection signoff, run the protection stack in order: rust treatment only where rust remains, full converter/residue removal and dry signoff, wax-and-grease wipe with flash-off, masking, zinc-rich 2K epoxy primer, seam sealer where required after primer, one exposed top protection by zone (chassis black/topcoat or Raptor), then HB Body U900 cavity-wax spray cans last in hidden sections.
+- Do not assume black paint plus Raptor as a default stack. Use black/topcoat or Raptor by zone unless the product data confirms the exact cure, scuff, and recoat compatibility for putting Raptor over the black paint.
 - Treat body-mount procurement control as part of chassis fixing: early pre-`1/79` six-station main tub set, separate front support pair, sleeves/cups, `M10 x 1.25` class `8.8` hardware, and flat shim pack.
 - Body-mount rubbers and shims are fit-critical and stay `NEW_ONLY`; preserve old samples and original shim packs by station until the dry trial fit is closed.
 - Do not sign off chassis coating on mount seats until the body-mount dry set proves pedestal height, thread condition, shim need, and front-support stack.
@@ -91,7 +93,7 @@
 
 ### Mechanical Baseline (Engine While Stripped)
 
-- Use stripped access to do high-value baseline maintenance first (hoses, leaks, cooling, service points, mounts inspection).
+- Use stripped access to do high-value baseline maintenance first (hoses, leaks, cooling, service points, in-place mount inspection).
 - Current baseline keeps the engine installed. Do not buy an engine lift/hoist unless a later approved job actually requires engine support/removal.
 - Keep a written fault list with measured findings; hold upgrades until baseline reliability is closed.
 
@@ -99,7 +101,7 @@
 
 - `MUST REPLACE (baseline service + reliability)`: engine oil and filter, air filter, fuel filter, diesel heat/glow plugs after exact engine-code/plug confirmation, accessory belts, radiator upper/lower hoses, heater hoses, thermostat and gasket, radiator cap, vacuum hoses, fuel-rated rubber lines with clamps, and brake flexible hose set.
 - `INSPECT THEN REPLACE`: clutch master/slave hydraulics and any additional cooling-system wear items found during pressure testing.
-- `INSPECT IN PLACE / DEFER`: engine mounts. Photograph and check them after degreasing and under load; buy mounts only if cracked, sagged, separated, oil-soaked, or if another approved job already requires safely supporting/lifting the engine.
+- `INSPECTION NOTE ONLY`: engine mounts are removed from the active parts list because the engine stays installed. Photograph and check them after degreasing and under load; reopen a purchase only if they fail and another approved job already provides safe engine support.
 - `Decision rule`: keep these baseline replacements independent from optional upgrades (power steering conversion, premium shocks, audio, etc.) so reliability and safety close first.
 
 ### Steering, Brakes, and Suspension
@@ -109,7 +111,7 @@
 - Use `docs/brake-suspension-order-links-20260503.md` for current brake-window order links; only hydraulic-opening consumables are ready now, while exact brake parts wait for `BR-CAPTURE-001`.
 - Track the kit as two shipments: main Ironman set plus separate `24635FE x2` front damper pair.
 - Do not buy alternate local/OME/Bilstein spring, shock, bush, shackle, or U-bolt options unless the Ironman receipt check proves a missing or incorrect item.
-- Replace standard brake service parts as baseline work while preserving exact-part gates: front disc service parts by fitted conversion hardware, rear drum/cable parts by old samples and drum-open measurements, and hydraulic hoses/lines by fitting style and full-droop length.
+- Replace standard brake service parts as baseline work while preserving exact-part gates: front disc service parts by fitted conversion hardware, rear drum/cable parts by old samples and drum-open measurements, and hydraulic hoses/lines by fitting style, bracket retention, and old-sample/free length.
 - Resolve brake hose slack, parking-brake cable route, rear hard-line routing, breather slack, steering damper clearance, shackle angle, ride height, alignment, brake bleed/adjustment, and post-install torque checks before road use.
 - Current EPS route remains column-assist, not hydraulic, and does not require engine removal.
 

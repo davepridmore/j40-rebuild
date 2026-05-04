@@ -31,10 +31,11 @@ Ready-to-run Rev A drawing package: `data/manual/fabrication/rubber_recreation_r
 Send these files to the rubber/steel fabricator:
 
 1. `j40_rubber_recreation_rev_a_dimension_sheet.pdf` - human-readable drawing pack.
-2. `fabricator_cut_list.csv` - part, quantity, material, file, and release-status list.
-3. `inspection_checklist.csv` - receiving and first-article inspection checks.
-4. All `*.dxf` files in the package - CAD/CAM cut geometry.
-5. Matching `*.svg` files - visual reference copies.
+2. `machine_definitions.csv` and `machine_definitions.json` - CNC/shop geometry, coordinate systems, tolerances, and non-CNC purchase controls.
+3. `fabricator_cut_list.csv` - part, quantity, material, file, and release-status list.
+4. `inspection_checklist.csv` - receiving and first-article inspection checks.
+5. All `*.dxf` files in the package - CAD/CAM cut geometry.
+6. Matching `*.svg` files - visual reference copies.
 
 Package contents:
 
@@ -47,6 +48,7 @@ Package contents:
 | `FS-OVAL` front-support pad | `fs_oval_front_support_pad_rev_a.dxf` | Quote/first article; confirm holes, thickness, and insert/boss |
 | `FS-STRIP-L` strip blank | `fs_strip_left_template_blank_rev_a.dxf` | Quote/template blank only; physical trace required |
 | `FS-STRIP-R` strip blank | `fs_strip_right_template_blank_rev_a.dxf` | Quote/template blank only; physical trace required |
+| `EXH-HGR-90917` exhaust teardrop cushion | `exh_hgr_90917_08004_teardrop_rev_a.dxf` | Buy Toyota `90917-08004` / `17572-92000` preferred; local moulding needs genuine sample confirmation |
 
 Common handoff index: `docs/fabrication-handoff-index.md`.
 

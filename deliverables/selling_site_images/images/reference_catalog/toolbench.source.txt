@@ -1,0 +1,2 @@
+generated reference image via built-in image_gen
+prompt: generic toolbench / workbench, unbranded square catalog photo on neutral background

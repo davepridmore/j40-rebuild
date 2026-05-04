@@ -1,20 +1,21 @@
 # Parts List Review
 
-- Generated: 2026-05-04 02:08:54
+- Generated: 2026-05-04 04:07:22
 - Source: `data/manual/expenses.csv` (`bucket=parts`) -> 84 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
 
 ## Action Buckets
 
-- `buy_now`: 12
-- `cancelled_or_not_required`: 10
+- `buy_now`: 16
+- `cancelled_or_not_required`: 11
 - `completed_or_received`: 19
-- `deferred`: 7
+- `deferred`: 6
 - `needs_spec_before_order`: 11
 - `next_phase`: 1
 - `ordered_waiting_arrival`: 12
-- `unclear`: 12
+- `spec_ready_release_hold`: 4
+- `unclear`: 4
 
 ## Workstream Split
 
@@ -42,8 +43,12 @@
 - `part_mech_accessory_belt_set` [mechanical_baseline] Accessory belt set
 - `part_mech_engine_oil_filter_service` [mechanical_baseline] Engine oil + oil filter service pack
 - `part_mech_fuel_filter` [mechanical_baseline] Fuel filter
-- `part_mech_heat_glow_plugs_set` [mechanical_baseline] Heat/glow plugs set - diesel 2H
+- `part_mech_fuel_hose_and_clamps` [mechanical_baseline] Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines
+- `part_mech_heat_glow_plugs_set` [mechanical_baseline] Toyota OE glow plugs 19850-68030 x6 - diesel 2H
+- `part_mech_heater_hose_set` [mechanical_baseline] Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, expected 16 mm ID
 - `part_mech_radiator_cap` [mechanical_baseline] Radiator cap
+- `part_mech_radiator_hose_set` [mechanical_baseline] Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe
+- `part_mech_vacuum_hose_refresh` [mechanical_baseline] Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather
 - `part_suspension_wooden_cribbing_blocks` [steering_brakes_suspension] Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks
 
 ## Buy-Now / Quote-Ready With Confirmed Price

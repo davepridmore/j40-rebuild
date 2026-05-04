@@ -2,6 +2,8 @@
 
 Vehicle basis: the active project baseline is the fitted Toyota 2H diesel in a J40/HJ47-style installation. Because this is not a simple stock 1978 petrol engine bay, molded hose purchases still need a final match against the actual radiator, thermostat housing, heater core, fuel filter, injection pump, and vacuum pump fittings before payment.
 
+Scout-facing handoff: use [hose-local-scout-handoff.md](hose-local-scout-handoff.md) when giving the job to local scouts. This page keeps the detailed spec and source notes.
+
 ## Exact Buy List
 
 | Area | Exact specification to ask for locally |

@@ -46,6 +46,9 @@ PROFILE_CONFIG_BY_SERVER: dict[str, dict[str, Any]] = {
 
 SEED_CHAT_NAMES = {
     "fj40",
+    "fj 40 - advisory",
+    "fj audio",
+    "j40 parts",
     "akber khan",
     "headlight connectors",
     "walton bodyshop",

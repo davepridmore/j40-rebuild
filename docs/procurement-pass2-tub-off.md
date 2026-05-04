@@ -1,6 +1,6 @@
 # Procurement Pass 2 (Tub-Off, Pakistan Cost Reality)
 
-- Generated: 2026-05-04 02:08:55
+- Generated: 2026-05-04 04:05:48
 - Input matrix: `data/manual/procurement_decision_matrix.csv`
 - Pass-2 matrix: `data/manual/procurement_decision_matrix_pass2.csv`
 - Basket plan: `data/manual/procurement_local_baskets_pass2.csv`
@@ -13,20 +13,20 @@
 
 ## Decision Counts
 
-- `bundle_local_toyota_buy_after_inspection`: 5
+- `bundle_local_toyota_buy_after_inspection`: 4
 - `buy_before_suspension_work`: 1
 - `buy_body_fastener_hardware_from_samples`: 2
 - `buy_compact_cabin_fuse_boxes`: 1
 - `buy_remaining_brake_bleed_consumables`: 1
 - `capture_body_hardware_samples_then_order`: 6
-- `capture_brake_specs_then_order`: 8
+- `capture_brake_specs_then_order`: 9
+- `clutch_hydraulic_inspect_then_exact_order`: 1
 - `defer_as_non_baseline`: 5
 - `defer_until_baseline_closure`: 1
-- `defer_until_mount_failure_or_engine_lift_scope`: 1
 - `hold_until_body_closed`: 1
-- `inspect_then_local_decide`: 1
+- `hose_local_market_order_ready`: 4
 - `open_inspect_then_order_standard_brake_parts`: 3
-- `review`: 5
+- `source_toyota_oe_glow_plugs_by_part_number`: 1
 - `stock_audit_then_local_topup`: 2
 - `track_in_flight_order`: 12
 
@@ -35,16 +35,16 @@
 - `body_fastener_topup`: 2
 - `body_hardware_sample_sort`: 6
 - `body_sealed`: 1
+- `clutch_hydraulic_inspection`: 1
 - `electrical_closeout`: 1
+- `hose_local_market_order`: 4
 - `in_flight_now`: 12
-- `merged_suspension_brake_window`: 11
-- `no_engine_lift_baseline`: 1
+- `merged_suspension_brake_window`: 12
 - `post_baseline_only`: 6
-- `post_tub_off_inspection`: 6
+- `post_tub_off_inspection`: 5
 - `pre_brake_hydraulic_opening`: 1
 - `pre_order_audit`: 2
 - `pre_suspension_setup`: 1
-- `review`: 5
 
 ## Immediate Actions (Now)
 
@@ -70,4 +70,6 @@
 - Move mechanical baseline list into one local Toyota/common supplier bundle after inspection.
 - Keep DOT 3 brake-fluid opening prep purchase-ready before hydraulic lines are opened.
 - Move brake rows into the merged suspension/brake window: capture measurements and samples first, then order exact parts.
+- Move fuel/coolant/heater/vacuum hose rows to the local-market order sheet with explicit buy lengths, while keeping final trim, clamp, chafe, and leak checks at install.
+- Keep clutch hydraulics inspect-first, then buy exact master/slave/flex/hard-line parts only if failed.
 - Keep duplicate/optional/upgrade items deferred to avoid scope creep and unnecessary spend.

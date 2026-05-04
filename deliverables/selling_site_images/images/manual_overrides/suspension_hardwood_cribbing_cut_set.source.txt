@@ -1,0 +1,13 @@
+Generated reference images for part_suspension_wooden_cribbing_blocks.
+
+Item: Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks
+Use: procurement UI reference image only, not exact order evidence
+Generated: 2026-05-04
+
+Files:
+- suspension_hardwood_cribbing_cut_set_stacked.jpg
+- suspension_hardwood_cribbing_cut_set_flat_lay.jpg
+- suspension_hardwood_cribbing_cut_set_workbench.jpg
+
+Prompt summary:
+Create realistic product/reference photos of exactly 8 raw solid hardwood rectangular cribbing blocks plus exactly 4 tapered hardwood wedge chocks. Blocks should look like dense dry unfinished hardwood, approximately 12 x 6 x 3 inch proportions, with flat parallel faces, square ends, grain along length, and lightly broken edges. Wedge chocks should look shorter, approximately 8 x 4 x 3 inch proportions, tapering lengthwise to a blunt low nose with flat bottoms. Avoid text, labels, vehicle parts, jack stands, leaf springs, shackles, tires, metal hardware, plywood, MDF, laminated boards, split wood, painted wood, or polished furniture-like finish.

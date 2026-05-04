@@ -42,9 +42,9 @@ Tools,50,"German Imported WORKPRO 125mm 40 Grit Flap Discs - Premium Aluminium G
 Tools,51,"German Imported WORKPRO Flap Discs 60 Grit, 125mm x 22.2mm, Angle Grinder Discs x 3",3000,Daraaz,Y,,line_item,no_match,,,,,,,,
 Tools,52,EDON Expert MIG 270 (15Kg) (Single Phase) BUILTIN WIRE FEEDER (GAS OR GASLESS),76500,toolshub,No,Y,line_item,no_match,,,,,,,,
 Tools,53,Drill chuck (compatible with existing drill spindle/arbor),,Local hardware/tools market,Y,,line_item,no_match,,,,,,,,
-Tools,54,22mm step drill bit (metal panel capable),,Toolsmart.pk,Y,Y,line_item,matched_exact_item_vendor,1.0,tool_total_bi_metal_hole_saw_22mm_tac410221,Total Bi-metal Hole saw 22mm TAC410221,Toolsmart.pk,tools,00_site_setup,site_setup,received
-Tools,55,22mm chassis punch or precision hole cutter,,Toolsmart.pk,Y,Y,line_item,matched_exact_item_vendor,1.0,tool_total_bi_metal_hole_saw_22mm_tac410221,Total Bi-metal Hole saw 22mm TAC410221,Toolsmart.pk,tools,00_site_setup,site_setup,received
-Tools,56,Deburring tool / round file set for panel holes,,Toolsmart.pk,Y,Y,line_item,matched_exact_item_vendor,1.0,tool_total_round_steel_file_200mm_tht91386,Total Round steel file 200mm THT91386,Toolsmart.pk,tools,00_site_setup,site_setup,received
+Tools,54,22mm step drill bit (metal panel capable),,Toolsmart.pk,Y,Y,line_item,matched_fulfilled_by_toolsmart_item,1.0,tool_total_bi_metal_hole_saw_22mm_tac410221,Total Bi-metal Hole saw 22mm TAC410221,Toolsmart.pk,tools,00_site_setup,site_setup,received
+Tools,55,22mm chassis punch or precision hole cutter,,Toolsmart.pk,Y,Y,line_item,matched_fulfilled_by_toolsmart_item,1.0,tool_total_bi_metal_hole_saw_22mm_tac410221,Total Bi-metal Hole saw 22mm TAC410221,Toolsmart.pk,tools,00_site_setup,site_setup,received
+Tools,56,Deburring tool / round file set for panel holes,,Toolsmart.pk,Y,Y,line_item,matched_fulfilled_by_toolsmart_item,1.0,tool_total_round_steel_file_200mm_tht91386,Total Round steel file 200mm THT91386,Toolsmart.pk,tools,00_site_setup,site_setup,received
 Tools,57,Digital caliper (hole/spacing verification),,Local hardware/tools market,No,,line_item,no_match,,,,,,,,
 Parts,2,Toyota Land Cruiser FJ40 Neoprene Top Cover - Model 1960-1984,11500,Autozcare,Y,Y,line_item,no_match,,,,,,,,
 Parts,3,Maximus Under Seat Subwoofer Box With Built in Amplifier - Compact Active Bass Woofer for Cars,25100,SehgalMotors.PK,,Cancelled?,line_item,no_match,,,,,,,,
@@ -66,14 +66,14 @@ Parts,18,Air filter element,,Use local Toyota/common parts markets; buy as one b
 Parts,19,Brake flexible hose set front and rear,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,no_match,,,,,,,,
 Parts,20,Clutch master and slave cylinder refresh kit,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,no_match,,,,,,,,
 Parts,21,Distributor cap rotor and ignition tune-up consumables,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_distributor_cap_rotor_tuneup,Distributor cap rotor and ignition tune-up consumables,,parts,05_mechanical_baseline,mechanical_baseline,not_required_diesel_engine
-Parts,22,Engine mount set,,No supplier action now; inspect in place first.,,,line_item,matched_exact_item,1.0,part_mech_engine_mount_set,Engine mount set,,parts,05_mechanical_baseline,mechanical_baseline,deferred_until_failed_or_engine_lift_scope
+Parts,22,Engine mount inspection note - no active purchase,,No supplier action; inspection note only.,No,No,line_item,matched_exact_item,1.0,part_mech_engine_mount_set,Engine mount inspection note - no active purchase,,parts,05_mechanical_baseline,mechanical_baseline,not_required_no_engine_removal_scope
 Parts,23,Engine oil + oil filter service pack,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_engine_oil_filter_service,Engine oil + oil filter service pack,,parts,05_mechanical_baseline,mechanical_baseline,purchase_ready
 Parts,24,Fuel filter,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_fuel_filter,Fuel filter,,parts,05_mechanical_baseline,mechanical_baseline,purchase_ready
 Parts,25,Fuel-rated rubber hose and clamp kit,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,no_match,,,,,,,,
 Parts,26,Heater hose set with clamps,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,no_match,,,,,,,,
 Parts,27,Radiator cap,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_radiator_cap,Radiator cap,,parts,05_mechanical_baseline,mechanical_baseline,purchase_ready
 Parts,28,Radiator hose set upper plus lower with clamps,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,no_match,,,,,,,,
-Parts,29,Heat plugs (glow plugs) set - diesel engine (NEW only),,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,no_match,,,,,,,,
+Parts,29,Heat plugs (glow plugs) set - diesel engine (NEW only),,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_alias_heat_glow_plugs,1.0,part_mech_heat_glow_plugs_set,Toyota OE glow plugs 19850-68030 x6 - diesel 2H,,parts,05_mechanical_baseline,mechanical_baseline,purchase_ready
 Parts,30,Thermostat plus gasket,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,matched_exact_item,1.0,part_mech_thermostat_gasket,Thermostat plus gasket,,parts,05_mechanical_baseline,mechanical_baseline,received
 Parts,31,Vacuum hose refresh kit,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,no_match,,,,,,,,
 Parts,32,Metal protection and restoration products,,"Prefer local sourcing first, then online if unavailable.",,,line_item,matched_exact_item,1.0,part_metal_protection,Metal protection and restoration products,Daraz,parts,03_body_chassis,body_chassis,not_required_covered_by_epoxy_wax
@@ -101,7 +101,7 @@ Parts,53,100A Circuit Breaker Resettable Fuse Car Marine Boat Automotive Protect
 Parts,54,6 Way Distribution Block Car Midi Fuse Box Block Holder 200A Bolt,18101,AliExpress,Y,Y,line_item,no_match,,,,,,,,
 Parts,55,Relay Box 12V 10 Way Relay Block and 10 Way ATC/ATO Blade Fuse Pane,37924,AliExpress,Y,Y,line_item,no_match,,,,,,,,
 Parts,56,1x 100A LITTEL FUSE ANL Car Fuse MEGA Bolt-on,1026,AliExpress,Y,Y,line_item,no_match,,,,,,,,
-Parts,57,Rejected wrong item - Portable 12-Way Car Fuse Box Universal Automotive Box Holder with Led Indicator,"",Mughal,No,No,line_item,not_applicable,,,,,,,,
+Parts,57,Portable 12-Way Car Fuse Box Universal Automotive Box Holder with Led Indicator,4000,Mughal,Y,Y,line_item,no_match,,,,,,,,
 Parts,58,Littelfuse Bolt-down Automotive Fuse MIDI/498 Auto Fuse 30A x2,3409,AliExpress,Y,Y,line_item,no_match,,,,,,,,
 Parts,59,Littelfuse Bolt-down Automotive Fuse MIDI/498 Auto Fuse 50A,,AliExpress,Y,Y,line_item,no_match,,,,,,,,
 Parts,60,Littelfuse Bolt-down Automotive Fuse MIDI/498 Auto Fuse 50A,,AliExpress,Y,Y,line_item,no_match,,,,,,,,
@@ -156,7 +156,6 @@ Parts,108,VMD Brake and Clutch Cleaner 400ML × 1,1840,ToolsMart.pk,Y,Y,line_ite
 Parts,109,Loctite 290 – Medium/High Strength Wicking Grade Threadlocker × 1,1520,ToolsMart.pk,Y,Y,line_item,no_match,,,,,,,,
 Parts,110,Lithium Grease + PTFE 400ML × 1,2200,ToolsMart.pk,Y,Y,line_item,no_match,,,,,,,,
 Parts,111,Contact Cleaner 400ML × 1,1800,ToolsMart.pk,Y,Y,line_item,no_match,,,,,,,,
-Parts,112,Remove old LEDS,5000,,,,line_item,no_match,,,,,,,,
 Parts,113,New battery purchase - installed,20000,Ghazi Road,Y,Y,line_item,matched_exact_item_vendor,1.0,part_battery_purchase,New battery purchase - installed,Ghazi Road,parts,05_mechanical_baseline,mechanical_baseline,completed
 Parts,114,roof,,,Y,,line_item,no_match,,,,,,,,
 Parts,115,doors,,,Y,,line_item,no_match,,,,,,,,
@@ -270,9 +269,9 @@ Parts,223,Condenser fan if required,,,,,section_header,not_applicable,,,,,,,,
 Parts,224,"New O-rings, refrigerant oil, and full R134a charge setup",,,,,section_header,not_applicable,,,,,,,,
 Parts,225,"Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves",,,No,,line_item,matched_exact_item,1.0,part_fastener_kit_a_millat,"Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves",MTL Parts,parts,03_body_chassis,body_chassis,ordered_pending_delivery
 Parts,226,"Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers",,,No,,line_item,matched_exact_item,1.0,part_fastener_kit_b_millat,"Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers",MTL Parts,parts,03_body_chassis,body_chassis,ordered_pending_delivery
-Parts,227,Fastener Kit C: Captive nuts/clip nuts assortment - M6/M8 with anti-corrosion finish,,,No,,line_item,matched_manual_reconciliation,1.0,part_fastener_kit_c_captive_clip_nuts,Fastener Kit C: Captive/clip/speed nut and weld/rivnut assortment - M6/M8,Bilal Ganj clip/captive/rivnut suppliers,parts,03_body_chassis,body_chassis,purchase_ready
+Parts,227,Fastener Kit C: Captive nuts/clip nuts assortment - M6/M8 with anti-corrosion finish,,,No,,line_item,matched_manual_evidence_ref,1.0,part_fastener_kit_c_captive_clip_nuts,Fastener Kit C: Captive/clip/speed nut and weld/rivnut assortment - M6/M8,Bilal Ganj clip/captive/rivnut suppliers,parts,03_body_chassis,body_chassis,purchase_ready
 Parts,228,Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points,,,No,,line_item,matched_exact_item,1.0,part_fastener_kit_d_millat,Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points,MTL Parts,parts,04_electrical_reset,electrical_reset,ordered_pending_delivery
-Parts,229,Fastener Kit E: Stainless interior/trim screw set (non-structural) + cup washers,,,No,,line_item,matched_manual_reconciliation,1.0,part_fastener_kit_e_trim_screws_cup_washers,Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers,local fastener / trim hardware supplier,parts,07_interior_weatherproofing,interior_weatherproofing,deferred_until_body_closed
+Parts,229,Fastener Kit E: Stainless interior/trim screw set (non-structural) + cup washers,,,No,,line_item,matched_manual_evidence_ref,1.0,part_fastener_kit_e_trim_screws_cup_washers,Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers,local fastener / trim hardware supplier,parts,07_interior_weatherproofing,interior_weatherproofing,deferred_until_body_closed
 Parts,230,Interior conversion: Side bench seat frame set LH+RH (fold-up profile below window line),,,No,,line_item,no_match,,,,,,,,
 Parts,231,Interior conversion: Side bench hinge+latch kit with positive lock (up and down positions),,,No,,line_item,no_match,,,,,,,,
 Parts,232,Interior conversion: Bench mounting reinforcement plates + class 8.8 hardware,,,No,,line_item,no_match,,,,,,,,

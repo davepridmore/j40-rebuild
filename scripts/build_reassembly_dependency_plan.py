@@ -201,6 +201,11 @@ def build_procurement_decisions(
             dependency_gate = "body_sealed"
             action = "do_not_buy_yet"
             reason = "Material should be purchased only after floor/body sealing gate."
+        elif procurement_stage == "spec_ready_release_hold":
+            decision = "release_hold_measure_then_order"
+            dependency_gate = "measurement_release_hold"
+            action = "use_exact_spec_after_measurement_gate"
+            reason = "Exact ordering basis exists, but payment/fabrication waits for sample, route, fitting, or station measurement release."
         elif procurement_stage == "researching":
             decision = "research_compare_then_select"
             dependency_gate = "scope_freeze"
@@ -211,7 +216,7 @@ def build_procurement_decisions(
             dependency_gate = "after_current_phase_exit"
             action = "keep_visible_but_not_now"
             reason = "Planned for later phase once current gate closes."
-        elif procurement_stage == "purchase_ready":
+        elif procurement_stage.startswith("purchase_ready"):
             if week_action == "order_from_selected_quote":
                 decision = "buy_now_from_quote"
                 dependency_gate = "baseline_electrical_or_mechanical"
@@ -295,11 +300,27 @@ def build_procurement_decisions(
                 "Merchant-facing cut list is ready; confirm price for 8 x 12x6x3 in hardwood blocks "
                 "plus 4 tapered 8x4x3 in wedge chocks."
             )
+        elif entry_id == "part_mech_heat_glow_plugs_set":
+            decision = "confirm_price_then_buy"
+            dependency_gate = "baseline_execution"
+            action = "source_toyota_oe_by_part_number"
+            reason = (
+                "Buy exact Toyota-labelled glow plugs: 19850-68030 x6 for HJ47-style 2H 12V/8.5V, "
+                "or 19850-68060 x6 only if old plug/system confirms 24V/superglow."
+            )
         elif entry_id == "part_brake_fluid_bleed_consumables":
             decision = "buy_remaining_brake_bleed_consumables"
             dependency_gate = "hydraulic_opening_prep"
             action = "confirm_price_for_caps_bleed_cleaning_consumables"
             reason = "DOT 3 brake fluid is already ordered separately; hydraulics must not be opened until that sealed fluid and the remaining caps/plugs, cleaner, and bleed tools are physically on hand."
+        elif entry_id == "part_mech_brake_flex_hose_set":
+            decision = "capture_spec_then_buy"
+            dependency_gate = "brake_identification_and_samples"
+            action = "measure_label_keep_samples_then_order"
+            reason = (
+                "Complete crimped brake hose assemblies are baseline scope and can be quoted online/local, "
+                "but final order waits for fitted end fittings, brackets, free length, and Ironman full-droop slack."
+            )
         elif workstream == "brake_system" and procurement_stage == "spec_needed_before_order":
             decision = "capture_spec_then_buy"
             dependency_gate = "brake_identification_and_samples"
@@ -308,13 +329,13 @@ def build_procurement_decisions(
                 "Brake item is baseline scope, but exact part release is gated by fitted hardware, "
                 "old samples, fitting style, and Ironman full-droop clearance where applicable."
             )
-        elif workstream == "body_chassis" and procurement_stage == "spec_needed_before_order":
+        elif workstream == "body_chassis" and procurement_stage in {"spec_needed_before_order", "spec_ready_release_hold"}:
             decision = "capture_body_hardware_samples_then_order"
             dependency_gate = "body_hardware_sample_sorting"
             action = "sort_measure_label_samples_then_order_or_fabricate"
             reason = (
-                "Loose body hardware photo proves the category, but exact purchase release waits for old-sample "
-                "location, dimensions, thread, material, and condition sorting."
+                "Body hardware/body-mount ordering basis is defined, but release waits for old-sample "
+                "location, dimensions, thread, material, station height, and condition sorting."
             )
         elif workstream == "brake_system" and procurement_stage == "inspect_then_buy":
             decision = "inspect_confirm_then_buy_standard"

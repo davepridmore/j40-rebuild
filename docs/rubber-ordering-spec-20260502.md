@@ -26,7 +26,7 @@ Use `data/manual/rubber_ordering_specs.csv` as the current source of truth for o
 | `RUB-001` | Body-to-chassis mount rubber package | Quote/prototype now; final fabricate/buy only after caliper closure | Resolve small-mount one-piece vs split-stack construction and map every station |
 | `RUB-002` | Body mount sleeves, cups, shims, and hardware | Prepare local steel/fastener order | Confirm thread pitch, bolt length, sleeve length, cup geometry, and original shim positions |
 | `RUB-003` | Firewall/column/wiper/rear wiring grommet top-up | Audit existing grommet kit, then top up by measured hole sizes | Do not buy another bulk kit until existing inventory is matched |
-| `RUB-009` | Brake flexible hose set | Buy new safety assemblies | Confirm end fittings and hose length with Ironman lift/droop clearance in mind |
+| `RUB-009` | Brake flexible hose set | Buy new safety assemblies | Confirm end fittings, old-sample/free length, bracket retention, and fitted route |
 | `RUB-011` | Fuel feed/return/vent hoses and clamps | Buy new fuel-rated hose and clamps | Measure ID/lengths; do not substitute coolant, vacuum, or generic hose |
 | `RUB-028` | Formed coolant pipe connector/coupler hoses | Replace with the formed pipe assembly | Measure both connector IDs/ODs, pipe-end ODs, mating spigots, cut lengths, overlap, clamp ODs, and kink clearance |
 
@@ -35,7 +35,7 @@ Use `data/manual/rubber_ordering_specs.csv` as the current source of truth for o
 | Order ID | Item | Action | Gate |
 | --- | --- | --- | --- |
 | `RUB-004` | Steering column firewall boot/seal | Buy or fabricate only if current seal fails | Trial-fit column/firewall first |
-| `RUB-005` | Engine mounts | Inspect in place; defer purchase under the no-engine-lift baseline | Buy only if failed or if another approved job already supports/lifts the engine |
+| `RUB-005` | Engine mounts | Inspection note only; removed from active parts list because the engine stays installed | Reopen only if mounts fail and another approved job already provides safe engine support |
 | `RUB-006` | Gearbox/transfer mounts and top-cover rubbers | Inspect after degreasing, then sample-match | Confirm transmission/transfer combination |
 | `RUB-007` | Leaf spring eye and shackle bushes | Do not order separately yet | Count Ironman kit contents first |
 | `RUB-008` | Steering bushings | Buy only if measurable play/cracking remains | Diagnose play source first |

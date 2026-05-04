@@ -18,11 +18,14 @@ Purpose: one short control list for parts that should be sourced in person from 
 | LMP-07 | Shoulder pins/spacers/brackets | Shoulder bolts, sleeves, stand-offs, retainer plates, small brackets | Measure sample geometry; machine/fabricate where no correct donor exists |
 | LMP-08 | Brake-opening consumables | Line caps/plugs, clear bleed hose, bottle, brake cleaner, rags, gloves, catch tray | Must be on hand before opening hydraulics |
 | LMP-09 | Hardwood cribbing | Seasoned hardwood blocks and wedge chocks | Exact cut list; dry dense wood only |
-| LMP-10 | Mechanical baseline bundle | Oil/filter, fuel filter, glow plugs, radiator cap, belts, standard service consumables | Buy after exact engine/sample confirmation where needed |
+| LMP-10 | Mechanical baseline bundle | Oil/filter, fuel filter, Toyota OE glow plugs (`19850-68030` x6 primary; `19850-68060` x6 only if 24V/superglow confirmed), radiator cap, belts, standard service consumables | Buy after exact engine/sample confirmation where needed |
+| LMP-11 | Hose local order pack | Radiator, heater, diesel fuel, vacuum, breather, formed pipe, hard-line support, brake, and clutch orders per [hose-local-scout-handoff.md](hose-local-scout-handoff.md) | Buy the listed stock lengths now; brake/clutch flex hoses are complete sample-copied hydraulic assemblies only |
+| LMP-12 | Brake booster / servo market scout | Quote new/reman or rebuild service for dual diaphragm `44610-60050` brake booster for front-disc/rear-drum J40 | Sample-match old booster; verify pushrod, master seat/depth, check valve/grommet, and bench vacuum hold before payment |
 
 ## Rules
 
 - Bring old samples or phone photos for every sample-matched item.
 - Record seller, price, photos, and reject reason if a part is declined.
 - Do not substitute bulky universal fuse/relay boxes for compact OEM-style fuse carriers.
+- Use the hose local order sheet for hose runs; do not send the full engineering spec to a first-pass shop visit.
 - Do not buy optional upgrades through this lane unless a separate workstream approves them.

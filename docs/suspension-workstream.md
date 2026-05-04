@@ -1,6 +1,6 @@
 # Suspension Workstream - Ironman Foam Cell Kit
 
-- Updated: 2026-05-03
+- Updated: 2026-05-04
 - Workstreams: `steering_brakes_suspension`, `suspension_upgrade`
 - Current state: ordered, pending delivery
 - Active path: Ironman Foam Cell medium suspension kit for Toyota Land Cruiser 40 Series
@@ -13,7 +13,7 @@ The suspension path is now the incoming Ironman Foam Cell set. The previous loca
 
 Do not start final installation until both shipments are physically present: the main Ironman kit and the separate front damper pair.
 
-The brake baseline is now bundled into the same workshop window. Rear parking-brake cables, rear axle hard lines, rear center brake hose, and standard front/rear brake service items should be identified and replaced while the suspension is apart, because the new Ironman geometry controls full-droop hose and cable slack. Exact brake parts still come from the fitted truck and old samples, not from catalog assumptions.
+The brake baseline is now bundled into the same workshop window. Rear parking-brake cables, rear axle hard lines, rear center brake hose, and standard front/rear brake service items should be identified and replaced while the suspension is apart. The Ironman geometry is treated as effectively the same as the current setup, so there is no separate lift/geometry release action; exact brake parts still come from the fitted truck and old samples, not from catalog assumptions.
 
 ## Incoming Set
 
@@ -22,7 +22,7 @@ The brake baseline is now bundled into the same workshop window. Rear parking-br
 | `TOY001B` | 2 | Front leaf springs | Confirm labels, matched pair, spring-eye width, center pin, clamps, and no transit damage. |
 | `TOY002B` | 2 | Rear leaf springs | Confirm labels, matched pair, spring-eye width, center pin, clamps, and no transit damage. |
 | `24635FE` | 2 | Front Foam Cell dampers, separate shipment per project tracker | Do not road-test without this pair; verify eye/bush hardware and body clearance before fitment. |
-| `24636FE` | 2 | Rear Foam Cell dampers | Verify eye/bush hardware and full-droop clearance before fitment. |
+| `24636FE` | 2 | Rear Foam Cell dampers | Verify eye/bush hardware and travel clearance before fitment. |
 | `415UBK` | 4 | U-bolt kits | Use new U-bolts only; reject any bent threads, damaged nuts, or wrong axle-seat width. |
 | `713UK` | 1 kit | Polyurethane spring bush kit | Count every bush, sleeve, washer, and greaseable contact part before installation; do not assume the count is complete from the label alone. |
 | `343LH` | 1 listed | Greasable shackle, left-hand side | Confirm actual side/axle position against box instructions before fitting. |

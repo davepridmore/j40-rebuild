@@ -78,17 +78,23 @@ Before primer or coating, each approved zone should meet all of these:
    - Use Evapo-Rust only where parts can stay wet/immersed or be wrapped properly.
    - Use a compatible rust converter only in remaining pits and seams where mechanical removal cannot fully reach.
    - Do not convert clean bare steel unnecessarily.
-7. Solvent wipe:
-   - Use wax and grease remover before primer, after rust treatment has fully cured and residue is removed.
-8. Primer:
+7. Rust-treatment closeout and solvent wipe:
+   - Let converter fully cure, then remove or neutralize converter residue exactly as that product requires.
+   - Confirm the chassis is cool, dry, and free of sanding dust before solvent wiping.
+   - Use wax and grease remover before primer only after rust treatment has fully cured and residue is removed.
+   - Allow full solvent flash-off before masking and primer.
+8. Masking:
+   - Mask threads, ground pads, drain holes, brake/fuel fittings, line contact areas, rubber contact faces, and holes that must stay open.
+9. Primer:
    - Prefer a two-part epoxy primer for cleaned chassis metal.
    - If self-etching primer is used anywhere, confirm it is compatible with the epoxy/topcoat system. Do not stack incompatible self-etch and epoxy products.
-9. Seams and edges:
+10. Seams and edges:
    - Apply seam sealer only after primer where joints need sealing and where the product system calls for it.
    - Do not seal over uninspected rust or wet seams.
-10. Topcoat and cavity protection:
-   - Apply chassis black or compatible 2K topcoat over cured primer.
-   - Use cavity wax last inside boxed/closed sections and hidden pockets.
+11. Topcoat and cavity protection:
+   - Apply one compatible exposed top protection by zone over cured primer/sealer: chassis black/topcoat or the on-hand Raptor protective coating.
+   - Do not assume black paint plus Raptor as the default. Use Raptor over black paint only if the product data confirms the cure, scuff, and recoat compatibility.
+   - Use HB Body U900 cavity wax spray cans last inside boxed/closed sections and hidden pockets with the wand/nozzle.
 
 ## Engine And Powertrain Cleaning Task
 
@@ -121,15 +127,17 @@ Already logged or received:
 - `part_autohub_grez_off_hd_degreaser_32oz`: received
 - `part_autohub_diss_apc_cleaner_5l`: received
 - `tool_wadfow_pressure_sprayer_wrs1550`: ordered, paid, pending delivery
+- `part_wax_and_grease_remover`: ordered, paid, pending delivery
+- `part_primer`: Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set ordered, paid, pending delivery
+- `part_seam_sealer`: HB BODY 999 seam sealer ordered, paid, pending delivery
+- `part_cavity_wax`: HB Body U900 cavity wax spray 400ml x2 ordered, paid, pending delivery
+- `part_bedliner_sprays`: U-POL/Raptor protective coating on hand
 
-Still missing or requiring final product lock before coating:
+Still requiring final product lock before coating:
 
-- Wax and grease remover
-- Two-part epoxy primer system
-- Compatible chassis topcoat/chassis black
-- Compatible seam sealer if seams or bracket laps require sealing
-- Cavity wax with wand/nozzle for closed sections
-- Disposable solvent wipes, masking plugs/tape, nylon/brass/steel hand brushes, and extra flap/strip discs
+- Zone decision for exposed finish: chassis black/topcoat vs Raptor protective coating.
+- Confirmation that the cavity-wax cans have the wand/nozzle needed for boxed sections.
+- Disposable solvent wipes, masking plugs/tape, nylon/brass/steel hand brushes, and extra flap/strip discs.
 
 Inventory note: the registered Toolsmart item is a `5L pressure sprayer`, mainly for degreaser application. If a separate powered high-pressure washer/cleaner was ordered, it should be added as a separate inventory row. For this chassis and engine work, use any powered pressure washer cautiously; it is a rinse tool, not a substitute for brushing, degreasing, drying, and inspection.
 

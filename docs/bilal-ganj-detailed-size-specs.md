@@ -10,7 +10,7 @@ Use with: `bilal-ganj-master-shopping-list.md` + `bilal-ganj-mechanic-checklist.
 | 11, 225, 226, 227, 228 | Structural/body/electrical hardware kits | `NEW_ONLY` |
 | 12, 13 | Body mount rubbers and shims | `NEW_ONLY` |
 | 15, 16 | Local leaf springs | `NEW_FABRICATED_ONLY` |
-| 29 | Heat plugs (glow plugs) | `NEW_ONLY` |
+| 29 | Toyota OE glow plugs - `19850-68030` x6 primary, `19850-68060` x6 only if 24V/superglow confirmed | `NEW_ONLY` |
 | 33, 44, 45, 46, 47 | OME/EMU quote items | `NEW_GENUINE_ONLY` |
 | 39 | Ignition lock security | `SERVICE_OR_NEW` (no worn loose used lock) |
 | part_cabin_compact_fuse_boxes | Compact cabin fuse boxes | `NEW_ONLY` or clean donor OEM-style only if terminals/lid are perfect |
@@ -120,10 +120,12 @@ Shim/spacer target pack:
 | Requirement | Spec |
 | --- | --- |
 | Condition | NEW ONLY |
-| Type | Diesel glow/heat plug set (no used or cleaned plugs) |
-| Fitment | Match engine-code thread, reach, seat type, voltage, and terminal style |
-| Quantity | Full engine set |
-| Check | Compare old plug thread and reach physically before purchase |
+| Type | Toyota-labelled OE diesel glow/heat plug set; no used, cleaned, or unknown aftermarket plugs |
+| Primary Toyota part | `19850-68030` x6 for HJ47-style 2H 12V/8.5V |
+| Alternate Toyota part | `19850-68060` x6 only if the old plug/system confirms 24V/superglow |
+| Fitment | Match old plug thread, reach, seat type, voltage, and terminal style before payment |
+| Quantity | Full 2H engine set: 6 plugs |
+| Reject | PT-107 / Toyota 1C/2C listings, mixed brands, used/refurbished plugs, or sellers who cannot confirm the Toyota part number |
 
 ## 4) EPS Kit (Row 210) - Market Scout Buying Spec
 

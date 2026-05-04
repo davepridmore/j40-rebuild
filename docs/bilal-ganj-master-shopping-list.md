@@ -21,7 +21,7 @@ Important:
 | 39 | Ignition lock security fix | 4,000-25,000 (avg 12,000) | Re-key barrel + matched keys, or complete compatible lock/barrel set | `20260323_180218.jpg`, `20260323_190047.jpg` |
 | part_cabin_compact_fuse_boxes | Compact cabin fuse protection | 1,100-5,000 if reusing existing 12-way; 11,100-21,000 if buying all boxes | Need three isolated under-dash fuse groups: 6 constant-battery fuses, 6 ignition-on/RUN fuses, and 6 ignition part-way/ACC fuses minimum. Preferred current plan is to reuse the existing 12-way donor block for two 6-fuse groups if rear-terminal continuity and condition checks pass, then buy one matching compact old-OEM fuse carrier for the third group. It may be 6/8/10/12-way if six positions can be wired cleanly; avoid bulky marine/RV/universal covered blocks. | `20260411_065030.jpg`, `20260411_143135.jpg`, user front/rear fuse-block images 2026-05-04 |
 | 210 | EPS complete kit | 54,000-136,000 (avg 90,000) | Complete 2005-2011 Toyota Vitz/Yaris 90-series EPS set, SCP90 or NCP90 only: matched column + ECU/control + connectors/pigtails + shafts/U-joints + couplers + brackets; bench-tested only | `20260321_235600.jpg`, `20260406_031010.jpg` |
-| 29 | Heat plugs (glow plugs) set | 12,000-36,000 (avg 22,000) | Diesel glow/heat plugs, exact engine-code spec (new only) | `20260317_235150.jpg` |
+| 29 | Toyota OE glow plugs | 12,000-36,000 (avg 22,000) | Buy exact Toyota-labelled plugs: primary `19850-68030` x6 for 2H 12V/8.5V; use `19850-68060` x6 only if the fitted system confirms 24V/superglow. New only; reject PT-107/1C/2C listings. | `20260317_235150.jpg` |
 
 Core expected subtotal:
 - Low: `141,100 PKR`

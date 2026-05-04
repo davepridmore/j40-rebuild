@@ -221,6 +221,14 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
             "Needed before the Ironman suspension swap so the chassis and axle can be supported safely with rated stands plus cribbing.",
         )
 
+    if entry_id == "part_mech_heat_glow_plugs_set":
+        return (
+            "source_toyota_oe_glow_plugs_by_part_number",
+            "post_tub_off_inspection",
+            "local_toyota_oe_buy",
+            "Buy exact Toyota-labelled plugs: 19850-68030 x6 for HJ47-style 2H 12V/8.5V, or 19850-68060 x6 only if old plug/system confirms 24V/superglow.",
+        )
+
     if entry_id == "part_brake_fluid_bleed_consumables" or prior in {
         "buy_dot3_fluid_and_bleed_consumables",
         "buy_remaining_brake_bleed_consumables",
@@ -230,6 +238,35 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
             "pre_brake_hydraulic_opening",
             "safety_consumables_buy",
             "DOT 3 brake fluid is already ordered separately; hydraulics must not be opened until that sealed fluid and the remaining caps/plugs, cleaner, and bleed tools are available.",
+        )
+
+    if entry_id in {
+        "part_mech_fuel_hose_and_clamps",
+        "part_mech_heater_hose_set",
+        "part_mech_radiator_hose_set",
+        "part_mech_vacuum_hose_refresh",
+    }:
+        return (
+            "hose_local_market_order_ready",
+            "hose_local_market_order",
+            "local_hose_order_ready",
+            "Exact local-market order lengths are released in the hose order sheet; buy by material, ID/OD, rating, and stated length, then close final trim, clamp, chafe, and leak checks during installation.",
+        )
+
+    if entry_id == "part_mech_clutch_master_slave_refresh":
+        return (
+            "clutch_hydraulic_inspect_then_exact_order",
+            "clutch_hydraulic_inspection",
+            "hydraulic_exact_order_hold",
+            "Inspect for leakage, pedal sink, seized seals, and line corrosion first; exact order is master refresh/replacement, slave refresh/replacement, clutch flex hose by end fittings if failed, and a 1500 mm 4.75 mm brake/clutch hard-line allowance only if the hard line is replaced.",
+        )
+
+    if entry_id == "part_mech_brake_flex_hose_set":
+        return (
+            "capture_brake_specs_then_order",
+            "merged_suspension_brake_window",
+            "brake_baseline_release_hold",
+            "Complete crimped brake hose assemblies can be sourced online/local, but exact release waits for fitted end fittings, old samples, bracket retention, free length, and Ironman full-droop slack.",
         )
 
     if workstream == "brake_system" and prior == "capture_spec_then_buy":
@@ -311,6 +348,10 @@ def supplier_hint(mode: str, decision: str) -> str:
         return "Use local electrical markets; require compact covered ATO/ATC blade-fuse boxes with secure lids."
     if decision in {"buy_bleed_consumables_before_opening_hydraulics", "buy_remaining_brake_bleed_consumables"}:
         return "Use a local brake supplier, Daraz/Autohub, or the workshop for caps/plugs, brake cleaner, bleed hose/bottle or bleeder kit, rags, gloves, and catch tray; do not rebuy DOT 3 fluid unless the Autohub order fails."
+    if decision in {"hose_rubber_release_hold", "hose_local_market_order_ready"}:
+        return "Use the hose local market order sheet with local hose, radiator, diesel, rubber, and hydraulic shops; order by material, ID/OD, rating, and listed buy length."
+    if decision == "clutch_hydraulic_inspect_then_exact_order":
+        return "Use a Toyota/clutch hydraulic supplier after inspection; match master/slave bore, port thread, flare/seat, pushrod style, and flex-hose end fittings before payment."
     if decision in {
         "capture_brake_specs_then_order",
         "open_inspect_then_order_standard_brake_parts",
@@ -318,6 +359,8 @@ def supplier_hint(mode: str, decision: str) -> str:
         return "Use a brake/Toyota parts shop or the workshop's brake supplier after physical sample and fitting confirmation."
     if decision in {"stock_audit_then_local_topup", "local_topup_buy"}:
         return "Use Montgomery Road / local electrical markets for small top-ups after stock count."
+    if decision == "source_toyota_oe_glow_plugs_by_part_number":
+        return "Ask HYA/Hamza Younas Autos or Bilal Ganj Toyota diesel suppliers for Toyota 19850-68030 x6; use Toyota 19850-68060 x6 only after 24V/superglow confirmation."
     if mode == "local_toyota_common":
         return "Use local Toyota/common parts markets; buy as one batch after inspection."
     if mode == "local_hardware_common":
@@ -350,10 +393,16 @@ def basket_id_for_row(decision: str, mode: str, workstream: str) -> str:
         return "basket_in_flight_tracking"
     if decision == "buy_before_suspension_work":
         return "basket_suspension_setup"
+    if decision == "source_toyota_oe_glow_plugs_by_part_number":
+        return "basket_mechanical_local_bundle"
     if decision in {"capture_brake_specs_then_order", "open_inspect_then_order_standard_brake_parts"}:
         return "basket_merged_brake_suspension_window"
     if decision in {"buy_bleed_consumables_before_opening_hydraulics", "buy_remaining_brake_bleed_consumables"}:
         return "basket_brake_hydraulic_opening_prep"
+    if decision in {"hose_rubber_release_hold", "hose_local_market_order_ready"}:
+        return "basket_hose_rubber_local_order_ready"
+    if decision == "clutch_hydraulic_inspect_then_exact_order":
+        return "basket_clutch_hydraulic_inspection"
     if decision in {"defer_as_non_baseline", "defer_until_baseline_closure", "hold_until_post_weld_primer", "hold_until_body_closed"}:
         return "basket_deferred"
     if decision.startswith("not_required"):
@@ -410,6 +459,8 @@ def build_baskets(rows: list[dict[str, str]]) -> list[dict[str, str]]:
         "basket_suspension_setup": ("Suspension Setup Support", "Buy support/cribbing items before suspension disassembly."),
         "basket_merged_brake_suspension_window": ("Merged Brake/Suspension Window", "Capture fitted hardware and old samples, then order exact brake parts for the Ironman install window."),
         "basket_brake_hydraulic_opening_prep": ("Brake Hydraulic Opening Prep", "Buy the remaining caps/plugs, brake cleaner, bleed hose/bottle or bleeder kit, rags, gloves, and catch tray before opening hydraulic lines; DOT 3 fluid is already ordered separately."),
+        "basket_hose_rubber_local_order_ready": ("Hose/Rubber Local Order Ready", "Fuel, coolant, heater, vacuum, and breather stock rows have explicit local-market buy lengths; final trim, clamp, chafe, and leak checks remain install tasks."),
+        "basket_clutch_hydraulic_inspection": ("Clutch Hydraulic Inspection", "Inspect master/slave/line condition first, then order exact hydraulic refresh parts only if failed."),
         "basket_body_fastener_hardware": ("Body Fastener Hardware", "Buy exact body fastener/captive hardware from old samples; track Millat-covered stock separately."),
         "basket_specialty_after_audit": ("Specialty/Import After Audit", "Order only if local/on-hand cannot cover."),
         "basket_in_flight_tracking": ("In-Flight Orders", "No rebuy; only track delivery/quality."),
@@ -488,6 +539,8 @@ def write_report(pass2_rows: list[dict[str, str]], basket_rows: list[dict[str, s
     lines.append("- Move mechanical baseline list into one local Toyota/common supplier bundle after inspection.")
     lines.append("- Keep DOT 3 brake-fluid opening prep purchase-ready before hydraulic lines are opened.")
     lines.append("- Move brake rows into the merged suspension/brake window: capture measurements and samples first, then order exact parts.")
+    lines.append("- Move fuel/coolant/heater/vacuum hose rows to the local-market order sheet with explicit buy lengths, while keeping final trim, clamp, chafe, and leak checks at install.")
+    lines.append("- Keep clutch hydraulics inspect-first, then buy exact master/slave/flex/hard-line parts only if failed.")
     lines.append("- Keep duplicate/optional/upgrade items deferred to avoid scope creep and unnecessary spend.")
 
     PASS2_REPORT_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")

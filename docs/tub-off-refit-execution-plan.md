@@ -17,6 +17,7 @@
 
 ## Chassis Fixing Mount-Control Requirements
 
+- Complete chassis rust protection in the controlled order before final refit: mechanical cleanup, inspection/repair decisions, rust treatment only where needed, wax-and-grease wipe, zinc-rich epoxy primer, seam sealer/top protection, then HB Body U900 cavity-wax cans last in hidden sections.
 - Main tub stays locked to the pre-`1/79` `BJ40/FJ40` six-station pattern.
 - Separate the two front nose support pads from the six main tub mounts; do not mix those rubbers into the tub kit.
 - Use one matched `NEW_ONLY` mount set, one matched front-support pair, matched sleeves/cups, and `M10 x 1.25` class `8.8` minimum hardware.
@@ -30,4 +31,4 @@
 1. No tub lift without mount-point tag map.
 2. No refit plan without weld/dimension closure.
 3. No final tub fastening without dry trial fit using rubbers and shim plan.
-4. No suspension final torque until geometry/ride-height checks pass.
+4. No suspension final torque until the vehicle is at loaded ride height and the torque sheet is ready.

@@ -1,6 +1,6 @@
 # J40 Costs Workbook Reconciliation
 
-- Generated: 2026-05-02 18:25:09
+- Generated: 2026-05-04 02:43:06
 - Workbook: `/Users/davidpridmore/Documents/J40_Costs.xlsx`
 - Extracted rows: 279
 - Line-item rows: 176
@@ -15,10 +15,13 @@
 
 ## Match Status
 
-- `matched_exact_item`: 16
+- `matched_alias_heat_glow_plugs`: 1
+- `matched_exact_item`: 15
 - `matched_exact_item_vendor`: 4
+- `matched_fulfilled_by_toolsmart_item`: 3
 - `matched_fuzzy`: 1
-- `no_match`: 154
+- `matched_manual_evidence_ref`: 2
+- `no_match`: 149
 - `not_applicable`: 104
 
 ## Priority Workbook Rows Still Unmatched

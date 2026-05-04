@@ -210,10 +210,10 @@ Only start this after the hold points below are closed.
 
 1. Wax and grease remover wipe.
 2. Mask threads, ground pads, brake/fuel line fittings, and rubber parts.
-3. Apply compatible 2K epoxy primer to approved metal.
+3. Apply the selected zinc-rich 2K epoxy primer to approved metal.
 4. Seam sealer only after primer where product system requires it.
-5. Apply chassis topcoat/chassis black after primer cure.
-6. Apply cavity wax last inside hidden/boxed sections.
+5. Apply chassis topcoat/chassis black or the on-hand Raptor protective coating in the zones selected for that finish after primer/sealer cure.
+6. Apply HB Body U900 cavity wax spray cans last inside hidden/boxed/lapped sections with the wand/nozzle; do not block drains, threads, bolt holes, or future ground points.
 7. Reopen ground pads to clean metal during final electrical ground installation, then protect around the completed connection.
 
 ## Hold Points Before Primer
@@ -229,7 +229,7 @@ Do not allow primer until each item is closed:
 | Brake/fuel hard-line clips | Under-clip condition checked, not just visible outer faces. |
 | Wet cleaning complete | Chassis fully dry; no water trapped in seams, holes, clips, or boxed areas. |
 | Rust treatment complete | Converter/Evapo-Rust residue removed; only stable metal remains. |
-| Materials ready | Wax/grease remover, compatible 2K epoxy primer, topcoat, seam sealer, and cavity wax selected as one compatible stack. |
+| Materials ready | Wax/grease remover, zinc-rich 2K epoxy primer, seam sealer, top protection/chassis black or Raptor-by-zone, and HB Body U900 cavity wax cans selected as one compatible stack. |
 
 ## What To Photograph After The Next Work Session
 

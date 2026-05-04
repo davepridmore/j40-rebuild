@@ -231,6 +231,16 @@ h1 {
   padding: 0.2rem 0.58rem;
 }
 
+.chip-button {
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+}
+
+.chip-button:hover {
+  border-color: #b8ad9d;
+}
+
 .chip.good {
   background: #e7f3e7;
   border-color: #b8dbb8;
@@ -253,6 +263,90 @@ h1 {
   background: #e2ece9;
   border-color: #bfd1cb;
   color: var(--accent-2);
+}
+
+.scout-jump-row {
+  margin-bottom: 0.85rem;
+}
+
+.scout-category {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.scout-category-header {
+  margin-bottom: 0;
+}
+
+.scout-doc-card {
+  align-content: start;
+}
+
+.scout-spec-card {
+  overflow: hidden;
+}
+
+.scout-spec-layout {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: minmax(150px, 230px) minmax(0, 1fr);
+  align-items: start;
+}
+
+.scout-spec-copy {
+  display: grid;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.scout-spec-copy p {
+  margin: 0;
+}
+
+.scout-spec-figure {
+  margin: 0;
+}
+
+.scout-spec-image-btn {
+  width: 100%;
+  border-radius: 8px;
+  background: #eee7db;
+  aspect-ratio: 4 / 3;
+}
+
+.scout-spec-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.scout-line-cell {
+  min-width: 130px;
+}
+
+.scout-spec-cell,
+.scout-notes-cell,
+.scout-meta-cell {
+  line-height: 1.35;
+  white-space: normal;
+}
+
+.scout-spec-cell,
+.scout-notes-cell {
+  min-width: 280px;
+  max-width: 620px;
+}
+
+.scout-meta-cell {
+  min-width: 210px;
+}
+
+.scout-meta-cell div + div,
+.scout-notes-cell div + div {
+  margin-top: 0.28rem;
 }
 
 .workstream-layout {
@@ -346,6 +440,55 @@ h1 {
   background: transparent;
   cursor: zoom-in;
   width: 100%;
+}
+
+.video-open-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-open-btn video {
+  pointer-events: none;
+}
+
+.video-preview-icon {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 999px;
+  background: rgba(17, 23, 22, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 24px rgba(17, 23, 22, 0.22);
+}
+
+.video-preview-icon::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-35%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent;
+  border-left: 0.78rem solid #fff;
+}
+
+.video-preview-badge {
+  position: absolute;
+  left: 0.45rem;
+  bottom: 0.45rem;
+  padding: 0.18rem 0.4rem;
+  border-radius: 999px;
+  background: rgba(17, 23, 22, 0.78);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0;
 }
 
 .lead-image {
@@ -534,6 +677,21 @@ th {
   margin: 0 auto;
 }
 
+.table-image-btn .video-preview-icon {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.table-image-btn .video-preview-icon::before {
+  border-top-width: 0.34rem;
+  border-bottom-width: 0.34rem;
+  border-left-width: 0.52rem;
+}
+
+.table-image-btn .video-preview-badge {
+  display: none;
+}
+
 .table-image {
   width: 76px;
   height: 56px;
@@ -560,7 +718,7 @@ th {
 }
 
 .chassis-rubber-spec-table {
-  min-width: 1280px;
+  min-width: 1640px;
 }
 
 .requirement-table.chassis-rubber-spec-table th:nth-child(1),
@@ -581,6 +739,25 @@ th {
 .requirement-table.chassis-rubber-spec-table th:nth-child(4),
 .requirement-table.chassis-rubber-spec-table td:nth-child(4) {
   width: 120px;
+}
+
+.requirement-table.chassis-rubber-spec-table th:nth-child(5),
+.requirement-table.chassis-rubber-spec-table td:nth-child(5) {
+  width: 470px;
+}
+
+.requirement-table.chassis-rubber-spec-table th:nth-child(6),
+.requirement-table.chassis-rubber-spec-table td:nth-child(6) {
+  width: 250px;
+}
+
+.requirement-table.chassis-rubber-spec-table th:nth-child(7),
+.requirement-table.chassis-rubber-spec-table td:nth-child(7) {
+  width: 230px;
+}
+
+.chassis-rubber-file-links {
+  margin-top: 0.25rem;
 }
 
 .requirement-table th:nth-child(1),
@@ -1112,6 +1289,10 @@ code {
 }
 
 @media (max-width: 960px) {
+  .scout-spec-layout {
+    grid-template-columns: minmax(130px, 180px) minmax(0, 1fr);
+  }
+
   .workstream-layout {
     grid-template-columns: 1fr;
   }
@@ -1139,6 +1320,14 @@ code {
 }
 
 @media (max-width: 640px) {
+  .scout-spec-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .scout-spec-image-btn {
+    max-height: 240px;
+  }
+
   .tabs {
     padding-top: 0.7rem;
   }

@@ -1,6 +1,6 @@
 # Suspension + Brake Merged Work Plan
 
-- Updated: 2026-05-03
+- Updated: 2026-05-04
 - Vehicle: 1978 Toyota Land Cruiser J40
 - Start-here sources: [suspension-workstream.md](suspension-workstream.md), [brake-workstream.md](brake-workstream.md), [brake_system_requirements.csv](../data/manual/brake_system_requirements.csv)
 
@@ -18,7 +18,7 @@ This does not approve rear-disc conversion or a wholesale brake architecture cha
 
 ## Why This Work Is Merged
 
-The suspension change is the right time to handle rear brake cables and rear axle brake lines because the axle, springs, shocks, U-bolts, line clips, and cable routes are all exposed. It is also the only sensible time to confirm brake hose and parking-brake cable slack at full droop with the new Ironman geometry.
+The suspension change is the right time to handle rear brake cables and rear axle brake lines because the axle, springs, shocks, U-bolts, line clips, and cable routes are all exposed. The Ironman geometry is treated as effectively the same as the current setup, so there is no separate lift/geometry release action.
 
 Do not final-close suspension until brake hose, hard-line, parking-brake cable, breather, steering damper, and shock clearances all pass at static height and supported droop.
 
@@ -32,7 +32,7 @@ Do not final-close suspension until brake hose, hard-line, parking-brake cable, 
 | 4 | Open rear drums and front disc hardware for standard brake service identification. | Rear shoe dimensions, wheel-cylinder pattern, spring layout, front pad shape, caliper ports, rotor condition, and hose fittings are recorded. |
 | 5 | Order or release exact brake parts from the measured samples. | No catalog-only ordering for the front conversion or rear cables. Use fitted hardware and old samples. |
 | 6 | Install Ironman suspension and brake parts with axle supported independently. | No brake hose or cable is used as an axle travel limiter. U-bolts are new only. |
-| 7 | Route rear cables, rear hard lines, rear center hose, and front hoses with the new suspension at droop. | Lines/cables are clipped, protected from chafe, clear of U-bolts/shocks/springs/tyres/exhaust, and slack at full droop. |
+| 7 | Route rear cables, rear hard lines, rear center hose, and front hoses against the fitted suspension layout. | Lines/cables are clipped, protected from chafe, clear of U-bolts/shocks/springs/tyres/exhaust, and not under tension through normal axle movement. |
 | 8 | Bleed, adjust, torque, align, and road-validate. | Pressure bleed, leak test, rear drum adjustment, parking-brake hold/release test, alignment, low-speed yard test, short road test, 50 km recheck, and 500 km recheck. |
 
 ## Brake Parts Checklist
@@ -45,10 +45,10 @@ Do not final-close suspension until brake hose, hard-line, parking-brake cable, 
 | Front disc pads and retaining hardware | 1 axle set | Needs fitted-caliper identification | Buy by pad shape/caliper family from the truck, not by year alone. |
 | Front caliper rebuild kits or replacement calipers | 2 sides | Needs fitted-caliper identification | Replace/rebuild if seized, leaking, torn boots, damaged pistons, or unknown unsafe condition. |
 | Front rotors | 2 | Inspect/machine/replace | Replace or machine only after diameter/thickness/runout/scoring check. |
-| Front flexible brake hoses | 2 | Spec hold | Match caliper end, chassis bracket, free length, and full-lock/full-droop clearance. |
+| Front flexible brake hoses | 2 | Spec hold | Match caliper end, chassis bracket, free length, and full-lock clearance. |
 | Rear parking-brake cable set | 1 left/right set | Spec hold | Match both rear cable lengths, sheath lengths, backing-plate ends, equalizer ends, clips, return springs, and adjuster hardware. |
 | Rear axle hard brake lines | 2 axle tubes plus fittings | Spec hold | Recreate in brake-rated `4.75 mm / 3/16 in` tube using old lines as bend templates. No bare copper. |
-| Rear center flexible brake hose | 1 | Spec hold | Match fitting style and full-droop length with Ironman suspension. |
+| Rear center flexible brake hose | 1 | Spec hold | Match fitting style, old-sample/free length, and fitted route. |
 | Rear wheel cylinders | 2 | Drum-open identification | Buy as a pair after bore, port thread, bolt pattern, pushrod style, and side are confirmed. |
 | Rear shoes and spring/adjuster hardware | 1 axle set | Drum-open identification | Buy after drum ID, shoe width, adjuster style, and spring layout are recorded. |
 | Rear drums | 2 | Inspect/machine/replace | Machine or replace only if scored, cracked, stepped, or beyond service limit. |

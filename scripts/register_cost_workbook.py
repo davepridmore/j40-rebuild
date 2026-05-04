@@ -61,6 +61,48 @@ def norm_text(value: str) -> str:
     return re.sub(r"\s+", " ", lowered).strip()
 
 
+def is_heat_glow_plug_item(value: str) -> bool:
+    normalized = norm_text(value)
+    tokens = set(normalized.split())
+    has_plug = bool(tokens & {"plug", "plugs"})
+    return has_plug and bool(tokens & {"heat", "glow"})
+
+
+def workbook_supply_ref(source_sheet: str, source_row: int) -> str:
+    sheet_token = norm_text(source_sheet)
+    source_name_by_sheet = {
+        "tools": "workbook_tools",
+        "parts": "workbook_parts",
+        "substances": "workbook_substances",
+    }
+    source_name = source_name_by_sheet.get(sheet_token)
+    return f"{source_name}#row_{source_row}" if source_name else ""
+
+
+def evidence_contains_source_ref(evidence_ref: str, source_ref: str) -> bool:
+    if not evidence_ref or not source_ref:
+        return False
+    tokens = [token.strip() for token in re.split(r"[|,;]", evidence_ref)]
+    return source_ref in tokens
+
+
+def apply_match(result: dict[str, str], status: str, score: str, chosen: dict[str, str]) -> dict[str, str]:
+    result.update(
+        {
+            "match_status": status,
+            "match_score": score,
+            "matched_entry_id": chosen.get("entry_id", ""),
+            "matched_item": chosen.get("item", ""),
+            "matched_company": chosen.get("company", ""),
+            "matched_bucket": chosen.get("bucket", ""),
+            "matched_phase": chosen.get("phase", ""),
+            "matched_workstream": chosen.get("workstream", ""),
+            "matched_procurement_stage": chosen.get("procurement_stage", ""),
+        }
+    )
+    return result
+
+
 def parse_amount(value: str) -> str:
     if not value:
         return ""
@@ -187,20 +229,41 @@ def find_best_match(workbook_row: WorkbookRow, expenses_rows: list[dict[str, str
     if exact_candidates:
         vendor_exact = [row for row in exact_candidates if vendor_match(workbook_row.vendor, row.get("company", ""))]
         chosen = vendor_exact[0] if vendor_exact else exact_candidates[0]
-        result.update(
-            {
-                "match_status": "matched_exact_item_vendor" if vendor_exact else "matched_exact_item",
-                "match_score": "1.0",
-                "matched_entry_id": chosen.get("entry_id", ""),
-                "matched_item": chosen.get("item", ""),
-                "matched_company": chosen.get("company", ""),
-                "matched_bucket": chosen.get("bucket", ""),
-                "matched_phase": chosen.get("phase", ""),
-                "matched_workstream": chosen.get("workstream", ""),
-                "matched_procurement_stage": chosen.get("procurement_stage", ""),
-            }
-        )
-        return result
+        return apply_match(result, "matched_exact_item_vendor" if vendor_exact else "matched_exact_item", "1.0", chosen)
+
+    explicit_ref = workbook_supply_ref(workbook_row.source_sheet, workbook_row.source_row)
+    if explicit_ref:
+        evidence_candidates = [
+            row
+            for row in expenses_rows
+            if evidence_contains_source_ref(row.get("evidence_ref", ""), explicit_ref)
+        ]
+        if len(evidence_candidates) == 1:
+            return apply_match(result, "matched_manual_evidence_ref", "1.0", evidence_candidates[0])
+
+    note_norm = norm_text(f"{workbook_row.item} {workbook_row.notes}")
+    if "total bi metal hole saw 22mm tac410221" in note_norm or "22mm bi metal hole saw" in note_norm:
+        hole_saw_candidates = [
+            row for row in expenses_rows if row.get("entry_id") == "tool_total_bi_metal_hole_saw_22mm_tac410221"
+        ]
+        if hole_saw_candidates:
+            return apply_match(result, "matched_fulfilled_by_toolsmart_item", "1.0", hole_saw_candidates[0])
+
+    if "total round steel file 200mm tht91386" in note_norm:
+        file_candidates = [
+            row for row in expenses_rows if row.get("entry_id") == "tool_total_round_steel_file_200mm_tht91386"
+        ]
+        if file_candidates:
+            return apply_match(result, "matched_fulfilled_by_toolsmart_item", "1.0", file_candidates[0])
+
+    if is_heat_glow_plug_item(workbook_row.item):
+        alias_candidates = [
+            row
+            for row in expenses_rows
+            if row.get("bucket", "").strip().lower() == "parts" and is_heat_glow_plug_item(row.get("item", ""))
+        ]
+        if len(alias_candidates) == 1:
+            return apply_match(result, "matched_alias_heat_glow_plugs", "1.0", alias_candidates[0])
 
     best_row: dict[str, str] | None = None
     best_score = 0.0
@@ -215,20 +278,7 @@ def find_best_match(workbook_row: WorkbookRow, expenses_rows: list[dict[str, str
             best_row = expense
 
     if best_row and best_score >= 0.86:
-        result.update(
-            {
-                "match_status": "matched_fuzzy",
-                "match_score": f"{best_score:.3f}",
-                "matched_entry_id": best_row.get("entry_id", ""),
-                "matched_item": best_row.get("item", ""),
-                "matched_company": best_row.get("company", ""),
-                "matched_bucket": best_row.get("bucket", ""),
-                "matched_phase": best_row.get("phase", ""),
-                "matched_workstream": best_row.get("workstream", ""),
-                "matched_procurement_stage": best_row.get("procurement_stage", ""),
-            }
-        )
-        return result
+        return apply_match(result, "matched_fuzzy", f"{best_score:.3f}", best_row)
 
     return result
 
