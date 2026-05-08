@@ -49,6 +49,7 @@ Package contents:
 | `FS-STRIP-L` strip blank | `fs_strip_left_template_blank_rev_a.dxf` | Quote/template blank only; physical trace required |
 | `FS-STRIP-R` strip blank | `fs_strip_right_template_blank_rev_a.dxf` | Quote/template blank only; physical trace required |
 | `EXH-HGR-90917` exhaust teardrop cushion | `exh_hgr_90917_08004_teardrop_rev_a.dxf` | Toyota `90917-08004` / `17572-92000` is a reference shape only; source exact new stock or locally mould from a genuine sample/intact original with side profile, insert depth, thickness, and reinforcement confirmed |
+| `BUMP-F-L`, `BUMP-F-R`, `BUMP-R` bump stops | `bump_stop_vehicle_measurement_control.svg` | Vehicle-bracket-controlled mould release. Long `48304-60010` positions are `70 mm`; right-front `48304-60020` is `60 mm`; reproduce Toyota-style two-ear steel saddle/backing plate, tapered/radiused progressive rubber body, and flat rectangular strike face. Base footprint, bolt pattern, and contact offset come from the vehicle. See `docs/bump-stop-fabrication-spec-20260504.md`. |
 
 Common handoff index: `docs/fabrication-handoff-index.md`.
 
@@ -72,6 +73,8 @@ Do not approve the final batch until the first articles pass dimensional check, 
 ### Material Controls
 
 Rubber pieces must be new black solid automotive mount-grade rubber. The acceptable base compound is `EPDM` or `NR/SBR` unless a measured original sample proves a different compound. Do not use tyre rubber, crumb/recycled rubber, sponge foam, mixed offcuts, used rubber, old salvage rubber, or unidentified compound.
+
+Bump stops are the exception to the body/front-support hardness target. Use the separate bump-stop material control: `NR/SBR` automotive bump-stop rubber Shore A `70 +/-5` bonded or captive to a new coated steel saddle, or cast automotive PU Shore A `80 +/-5` only if the progressive mould shape and captive steel mounting are held. The decayed old bump-stop rubber is not the production master.
 
 Required material targets:
 

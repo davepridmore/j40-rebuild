@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Formed metal coolant pipe fabrication reference</title>
+  <desc id="desc">Reference image showing a bent coolant pipe with beaded ends, clamp lands, and a bending tool cue.</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="0.2" stop-color="#94a3b8"/>
+      <stop offset="0.55" stop-color="#e2e8f0"/>
+      <stop offset="1" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="tool" x1="0" x2="1">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#14b8a6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <rect width="900" height="600" rx="34" fill="#f8fafc"/>
+  <rect x="44" y="44" width="812" height="512" rx="28" fill="#eef2f7" stroke="#cbd5e1" stroke-width="2"/>
+
+  <g filter="url(#shadow)">
+    <path d="M138 372 C265 366 322 303 351 230 C373 175 426 148 485 167 C548 187 569 247 557 301 C542 367 598 420 748 421" fill="none" stroke="#334155" stroke-width="70" stroke-linecap="round"/>
+    <path d="M138 372 C265 366 322 303 351 230 C373 175 426 148 485 167 C548 187 569 247 557 301 C542 367 598 420 748 421" fill="none" stroke="url(#steel)" stroke-width="52" stroke-linecap="round"/>
+    <path d="M138 372 C265 366 322 303 351 230 C373 175 426 148 485 167 C548 187 569 247 557 301 C542 367 598 420 748 421" fill="none" stroke="#f8fafc" stroke-width="11" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <g fill="none" stroke="#334155" stroke-width="8">
+    <ellipse cx="135" cy="372" rx="28" ry="21"/>
+    <ellipse cx="751" cy="421" rx="28" ry="21"/>
+  </g>
+  <g fill="none" stroke="#0f172a" stroke-width="5">
+    <path d="M155 371 C171 371 177 371 194 370"/>
+    <path d="M698 421 C715 421 724 421 741 421"/>
+  </g>
+  <g fill="none" stroke="#ef4444" stroke-width="7" stroke-linecap="round">
+    <path d="M198 368 C216 367 227 365 244 360"/>
+    <path d="M654 415 C672 418 681 420 698 421"/>
+  </g>
+
+  <g transform="translate(614 122)">
+    <circle cx="72" cy="72" r="58" fill="none" stroke="url(#tool)" stroke-width="18"/>
+    <path d="M72 12 A60 60 0 0 1 132 72" fill="none" stroke="#0f766e" stroke-width="28" stroke-linecap="round"/>
+    <path d="M112 113 L202 203" stroke="#0f766e" stroke-width="20" stroke-linecap="round"/>
+    <circle cx="72" cy="72" r="18" fill="#0f172a"/>
+  </g>
+
+  <g fill="none" stroke="#334155" stroke-width="3" stroke-linecap="round">
+    <path d="M166 374 L118 460"/>
+    <path d="M682 419 L720 497"/>
+    <path d="M420 157 L382 96"/>
+    <path d="M685 206 L760 265"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" fill="#0f172a">
+    <text x="72" y="486" font-size="24" font-weight="700">beaded hose-retention end</text>
+    <text x="574" y="522" font-size="24" font-weight="700">straight clamp land</text>
+    <text x="287" y="85" font-size="24" font-weight="700">copy sample bends and clocking</text>
+    <text x="638" y="286" font-size="24" font-weight="700">tube bender required</text>
+    <text x="74" y="112" font-size="20" fill="#475569">28-30 mm OD coolant-compatible tube, trimmed and pressure-tested before coating.</text>
+  </g>
+</svg>

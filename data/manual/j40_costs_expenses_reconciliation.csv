@@ -29,7 +29,7 @@ Tools,28,Tolsen 79646 Heavy Duty Bench Grinder 6,13999,ngcotool.pk,No,No,line_it
 Tools,29,10 meter hose for ar compressINGCO Air hose - AH1151 × 1or,2850,almirajtrading.com.pk,M,N,line_item,no_match,,,,,,,,
 Tools,30,Jumnp Leads,,,Y,Y,line_item,no_match,,,,,,,,
 Tools,31,Jacks and stands,,,,,section_header,not_applicable,,,,,,,,
-Tools,41,Ar-CO2 Canister,42362,pakoxygen,No,Y,line_item,no_match,,,,,,,,
+Tools,41,Ar-CO2 Canister,42362,pakoxygen,Y,Y,line_item,matched_exact_item,1.0,tool_pakoxygen_ar_co2_canister,Ar-CO2 Canister,pakoxygen,tools,03_body_chassis,body_chassis,received
 Tools,42,E7018 Fortrex Electodes,2325,pakoxygen,Y,Y,line_item,no_match,,,,,,,,
 Tools,43,E7018 Fortrex Electodes - x2,8500,pakoxygen,Y,Y,line_item,no_match,,,,,,,,
 Tools,44,E6013 Zodian,2248,pakoxygen,Y,Y,line_item,no_match,,,,,,,,
@@ -144,9 +144,9 @@ Parts,96,"Hazard: 1 × red latching pushbutton, panel-mount, automotive 12V",,el
 Parts,97,Dielectric Grease,5609,AliExpress,Y,Y,line_item,matched_exact_item,1.0,part_dielectric_grease,Dielectric grease,Adenwalla & Sons,parts,04_electrical_reset,electrical_reset,received
 Parts,98,Dielectric Grease,11529,adenwalla.net,Needs check,Y,line_item,matched_exact_item,1.0,part_dielectric_grease,Dielectric grease,Adenwalla & Sons,parts,04_electrical_reset,electrical_reset,received
 Parts,99,PERMATEX 81150 DIE ELECTRIC TUNE UP GREASE 0.33 OZ,1288,Adenwalla & Sons,,COD,line_item,no_match,,,,,,,,
-Parts,100,HB BODY 999 SEAM SEALER 300ML CARTR,7696,autohub,,,line_item,no_match,,,,,,,,
+Parts,100,HB BODY 999 SEAM SEALER 300ML CARTR,7696,autohub,Y,Y,line_item,matched_manual_evidence_ref,1.0,part_seam_sealer,Seam sealer,Autohub,parts,03_body_chassis,body_chassis,received
 Parts,101,3mm Sound Damping Sheet / Deadening Pad,29500,megamotorsports,,,line_item,no_match,,,,,,,,
-Parts,102,HB BODY - U900 CAVITY WAX SPRAY U900 - 400ML,2250,autohub,,,line_item,matched_fuzzy,0.933,part_cavity_wax,HB Body U900 cavity wax spray 400ml,Autohub,parts,03_body_chassis,body_chassis,ordered_pending_delivery
+Parts,102,HB BODY - U900 CAVITY WAX SPRAY U900 - 400ML,2250,autohub,,,line_item,matched_fuzzy,0.933,part_cavity_wax,HB Body U900 cavity wax spray 400ml,Autohub,parts,03_body_chassis,body_chassis,received
 Parts,103,ROST FLASH PRO,1365,adenwalla,Y,Y,line_item,no_match,,,,,,,,
 Parts,104,Permatex Copper Anti Seize Lubricant Premium Quality in Pakistan,11000,Pakistan Power Tool,Y,Y,line_item,no_match,,,,,,,,
 Parts,105,RAPTOR LINER TINTABLE STANDARD 3.8L KIT,39900,adenwalla,Y,Y,line_item,no_match,,,,,,,,

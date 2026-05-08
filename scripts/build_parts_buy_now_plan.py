@@ -78,6 +78,7 @@ OVERLAP_DECISIONS: tuple[OverlapDecision, ...] = (
 
 WORKSTREAM_PRIORITY = {
     "body_chassis": "P0",
+    "chassis_fixing": "P0",
     "electrical_reset": "P0",
     "mechanical_baseline": "P1",
     "brake_system": "P0",

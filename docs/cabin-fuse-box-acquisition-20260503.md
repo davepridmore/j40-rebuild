@@ -2,7 +2,7 @@
 
 Purpose: source compact internal/cabin fuse protection around the actual reusable compact block/reference form, not a large marine/RV power distribution panel.
 
-Updated visual reference: `deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png`, the user-supplied actual compact old-OEM fuse box. This replaces the old extracted `junction_block.png` line drawing, the red MIDI holder photo, and any generated/generic fuse-box image for the dashboard and market brief.
+Visual reference status: held as of 2026-05-04. The previous compact fuse-box image was marked incorrect, so it is no longer a trusted dashboard or market-brief image. Use the written compact old-OEM target below until correct front, rear-terminal, cover, and side photos are captured.
 
 ## Target Spec
 
@@ -90,7 +90,7 @@ Stable reference links:
 - Official Maruti Suzuki genuine-parts fuse category, for fuse type reference only: https://www.marutisuzuki.com/genuine-parts/electrical/electrical-components/fuses
 - Maruti 800 service manual reference showing the vehicle fuse box in wiring circuits: https://www.manualslib.com/manual/2075205/Maruti-Suzuki-Maruti-800.html
 
-Selected visual reference from the user-supplied compact fuse-box photo:
+Current written target while the photo is held:
 
 - Maruti/Mehran-style compact fuse carrier with fuse-cover legend and rear pigtails.
 - This form factor is acceptable and preferred over marine/RV or modern universal fuse blocks.
@@ -104,7 +104,7 @@ Recommended first call/order candidate:
 | Rank | Source | Link | Use |
 | --- | --- | --- | --- |
 | 1 | Reuse existing 12-way donor block plus buy one matching compact OEM-style add-on | User front/rear photos 2026-05-04 | Best current architecture if bench testing passes. The add-on should match the donor block's compact old-OEM form factor; it can be 8/10/12-way if only six positions are used. |
-| 2 | Maruti/Mehran-style compact fuse carrier with cover and pigtails | User image 2026-05-04; visual reference https://www.suzuki-diely.sk/product/poistkova-skrinka-samurai-13/ | Preferred reference product. Image shows the right compact old-OEM body, cover/legend, and pigtails. Buy this style locally if terminals are clean and at least six fuse positions are usable. |
+| 2 | Maruti/Mehran-style compact fuse carrier with cover and pigtails | Written target; previous local image held as incorrect; visual reference https://www.suzuki-diely.sk/product/poistkova-skrinka-samurai-13/ | Preferred compact old-OEM body family. Buy this style locally only after front/rear/side photos confirm terminals are clean and at least six fuse positions are usable. |
 | 3 | Suzuki/Maruti 800 compact fuse-box family - stable catalog reference | https://ftp.gforceparts.com/en/catalog/genuine/unit?c=SUZUKI201905&cid=1268&q=MA3ECA11S00938858&uid=40770&vid=0 | Best stable web reference for the old Suzuki/Maruti compact fuse-box family. Use catalog terms `COVER, FUSE BOX`, `BRACKET, FUSE BOX`, and `HARNESS ASSY, WIRING NO.1` to explain the target, but buy the complete compact fuse carrier with rear terminals/pigtails, not the cover alone. |
 | 4 | Suzuki Mehran fuse box available / Suzuki Mehran Genuine Fuse Box - market term | Local market / OLX search | Best current Pakistan source class because market results show old compact OEM-style fuse blocks, not bulky universal boxes. Search result examples found `Rs 1,100` to `Rs 1,300`, Gulgasht Colony, Multan. Buy only after front/rear/side photos confirm it is the same compactness as the existing donor and has six usable fuse positions. |
 | 5 | Toyota Corolla fuse box - OLX Lahore / Model Town Extension | https://www.olx.com.pk/model-town_g5000051/spare-parts_c82/q-corolla | Backup only if the add-on must come from a Toyota donor or the Mehran leads fail. Search result shows `Corolla fuse box call 03228024104`, `Rs 5,000`, Model Town Extension, Lahore, and the visible photo shows rear wiring/pigtails. Likely larger than needed for the third 6-fuse group. |
@@ -137,7 +137,7 @@ Kia Picanto official manual support: the 2024 Picanto owner manual documents a d
 
 Copy/paste this to Bilal Ganj, Montgomery Road, or the auto electrician:
 
-> Need compact internal/cabin blade fuse protection for a 1978 Toyota Land Cruiser J40 rewire. Match the attached existing compact reference photo, not a large marine/RV panel.
+> Need compact internal/cabin blade fuse protection for a 1978 Toyota Land Cruiser J40 rewire. Match the existing compact donor style after correct front/rear donor photos are captured; do not use a large marine/RV panel.
 >
 > Need three separate under-dash power groups: constant battery, ignition-on/RUN, and ignition part-way/ACC. Each group needs at least 6 fuse positions. We already have one compact old-OEM 12-fuse donor block that may handle two groups if testing proves the rear terminals are individual and clean. Quote one matching compact old-OEM fuse carrier for the third group. It can be 6/8/10/12-way; we only need six usable fuse positions, but it must be similar compactness to the attached donor block.
 >

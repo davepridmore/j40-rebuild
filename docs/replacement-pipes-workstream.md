@@ -4,6 +4,8 @@ Use this page as the sendable market/fabricator brief for the J40/HJ47 2H replac
 
 For the sendable local-market order sheet, use [Hose Local Market Order Sheet](hose-local-scout-handoff.md). Keep this page for detailed fabrication/order release.
 
+For the next actual-photo pass, use [Hose And Pipe Photo Capture Guide](hose-pipe-photo-capture-guide-20260504.md).
+
 Current release position: standard HJ47/2H and diesel-service sizes are accepted as the local-market order basis for new molded coolant hoses, overflow hose, heater hose stock, diesel feed/return/leak-off hose stock, vacuum hose stock, breather hose stock, 8 mm / 6 mm low-pressure fuel hard-line stock, brake hydraulic lines, and clutch hydraulic line/hose stock. The May 2 tape-reference photos plus the physical sample are accepted for new formed-coolant-pipe quote/template release.
 
 Hydraulic safety and final installation checks stay separate: brake/clutch flex fittings, flare/thread identification, route clearance, pressure/bleed tests, fuel prime leak test, coolant pressure test, vacuum assist check, and chafe checks still close at dry-fit/install.

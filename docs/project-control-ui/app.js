@@ -309,13 +309,17 @@
   function normalizeRowLinks(row) {
     const links = [];
     const seen = new Set();
-    const addLink = (candidate, label = "") => {
+    const addLink = (candidate, label = "", options = {}) => {
       const url = cleanString(candidate);
       if (!url || seen.has(url)) {
         return;
       }
       seen.add(url);
-      links.push({ url, label: cleanString(label) || linkLabel(url, links.length) });
+      links.push({
+        url,
+        label: cleanString(label) || linkLabel(url, links.length),
+        download: Boolean(options.download),
+      });
     };
 
     if (Array.isArray(row && row.links)) {
@@ -323,7 +327,9 @@
         if (typeof link === "string") {
           addLink(link);
         } else if (link && typeof link === "object") {
-          addLink(link.url || link.href, link.label || link.title);
+          addLink(link.url || link.href, link.label || link.title, {
+            download: link.download || link.downloadable,
+          });
         }
       });
     }
@@ -348,6 +354,13 @@
     return links;
   }
 
+  function renderItemLink(link, index) {
+    const label = cleanString(link && link.label) || `Link ${index + 1}`;
+    const download = link && link.download;
+    const attributes = download ? " download" : ' target="_blank" rel="noopener noreferrer"';
+    return `<a class="item-link" href="${escapeHtml(link.url)}"${attributes}>${escapeHtml(label)}</a>`;
+  }
+
   function renderLinksCell(row) {
     const links = normalizeRowLinks(row);
     if (!links.length) {
@@ -357,7 +370,7 @@
     return `
       <div class="item-links">
         ${visible
-          .map((link, index) => `<a class="item-link" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.label || `Link ${index + 1}`)}</a>`)
+          .map((link, index) => renderItemLink(link, index))
           .join("")}
         ${links.length > visible.length ? `<span class="table-image-note">+${escapeHtml(links.length - visible.length)} more</span>` : ""}
       </div>
@@ -372,7 +385,7 @@
     return `
       <div class="item-detail-links">
         ${links
-          .map((link, index) => `<a class="item-link" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.label || `Link ${index + 1}`)}</a>`)
+          .map((link, index) => renderItemLink(link, index))
           .join("")}
       </div>
     `;
@@ -1144,88 +1157,32 @@
 
   const CHASSIS_RUBBER_SPEC_ROWS = [
     {
-      id: "BM-LG",
-      part: "Large circular body-mount cushion",
-      qty: "2",
-      image: "../../photos/20260502_004419_gp_ZPXJRBzg.jpg",
-      imageCaption: "Large circular body-mount cushion sample",
-      spec: "Origin lower-left of 78 x 78 top profile; centre X39 Y39; OD 78; height 24; through bore 32; face A register/recess 46 x 2; face B flat; outside load edge R2-R3; faces parallel <=0.5; concentricity <=1.0.",
-      route: "rubber lathe/CNC mill/mould; DXF is top profile",
+      id: "BM-ISO-SM",
+      part: "Main body isolator pad, small stations",
+      qty: "10 + 2 spares",
+      image: "../../photos/20260405_234652.jpg",
+      imageCaption: "Tub-side body-mount landing context",
+      spec: "Custom square flat pad 70 x 70 x 22; flat parallel faces; light edge radius/chamfer; leave undrilled or centre-marked until the crush-sleeve OD is known. Final hole = sleeve OD + 0.5-1.0.",
+      route: "Longman custom rubber order",
       files: [
-        ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.dxf"],
-        ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.svg"],
+        ["Longman Spec", "../../docs/longman-rubber-order-spec-20260508.md"],
+        ["Order CSV", "../../data/manual/longman_rubber_order_specs.csv"],
       ],
-      notes: "Make matched pair from one setup.",
+      notes: "Preferred shape is square. Trim corners/edges only if station photos prove a clash.",
     },
     {
-      id: "BM-SM",
-      part: "Small circular body-mount cushion",
-      qty: "10",
-      image: "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
-      imageCaption: "Small circular body-mount cushion sample",
-      spec: "Origin lower-left of 64 x 64 top profile; centre X32 Y32; OD 64; height 22; through bore 32; face A register/recess 46 x 2; face B flat; outside load edge R2-R3; faces parallel <=0.5; concentricity <=1.0.",
-      route: "rubber lathe/CNC mill/mould; DXF is top profile",
+      id: "BM-ISO-LG",
+      part: "Main body isolator pad, large stations",
+      qty: "2 + 1 spare",
+      image: "../../photos/20260405_234652.jpg",
+      imageCaption: "Tub-side body-mount landing context",
+      spec: "Custom square flat pad 80 x 80 x 24; flat parallel faces; light edge radius/chamfer; same compound batch as BM-ISO-SM where possible. Final hole = sleeve OD + 0.5-1.0.",
+      route: "Longman custom rubber order",
       files: [
-        ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf"],
-        ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.svg"],
+        ["Longman Spec", "../../docs/longman-rubber-order-spec-20260508.md"],
+        ["Order CSV", "../../data/manual/longman_rubber_order_specs.csv"],
       ],
-      notes: "One-piece definition unless old sample proves split stack.",
-    },
-    {
-      id: "BM-CUP-SM",
-      part: "Small body-mount cup / seat washer",
-      qty: "10 working basis",
-      image: "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
-      imageCaption: "Small body-mount cup/seat sample",
-      spec: "Cut/form ready steel cup washer for BM-SM; OD 64; M10 clearance hole 11; dish/register depth 2-3; steel thickness 2.5-3.0; final dish must match old cup before batch forming.",
-      route: "CNC/waterjet/laser blank, then press/form and coat",
-      files: [
-        ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf"],
-        ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.svg"],
-      ],
-      notes: "Reuse originals only if flat, not thinned, and not cracked.",
-    },
-    {
-      id: "BM-CUP-LG",
-      part: "Large body-mount cup / seat washer",
-      qty: "2 working basis",
-      image: "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
-      imageCaption: "Large cup/seat and stack profile sample",
-      spec: "Cut/form ready steel cup washer for BM-LG; OD 78; M10 clearance hole 11; dish/register depth 2-3; steel thickness 2.5-3.0; final dish must match old cup before batch forming.",
-      route: "CNC/waterjet/laser blank, then press/form and coat",
-      files: [
-        ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf"],
-        ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.svg"],
-      ],
-      notes: "Confirm the large-pair station and cup landing before forming.",
-    },
-    {
-      id: "BM-SHIM-THIN",
-      part: "Thin body-mount alignment shim pack",
-      qty: "1 pack",
-      image: "../../deliverables/selling_site_images/images/reference_catalog/body_shims.jpg",
-      imageCaption: "Body-mount shim/spacer reference",
-      spec: "New flat slotted steel shims for M10 body mounts: 1 mm x12, 2 mm x12, 3 mm x12, 5 mm x12; slot width 11-12; plate footprint must fully support the original pedestal/contact patch.",
-      route: "buy/cut new flat steel only; CNC/laser after station footprint trace",
-      files: [
-        ["Machine CSV", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv"],
-        ["Machine JSON", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json"],
-      ],
-      notes: "No washer stacks inside the rubber sandwich. Preserve original shim stack by station.",
-    },
-    {
-      id: "BM-SHIM-THICK",
-      part: "Thick OE-style spacer control pack",
-      qty: "1 pack",
-      image: "../../deliverables/selling_site_images/images/reference_catalog/body_shims.jpg",
-      imageCaption: "Body-mount shim/spacer reference",
-      spec: "New flat steel spacer plates for controlled trial fit: 5 mm x4, 10 mm x4, 15 mm x4. Record Toyota reference thicknesses 22.8 and 27.8, but cut/buy those only if the original station map proves need.",
-      route: "buy/cut new flat steel only; station map controls release",
-      files: [
-        ["Machine CSV", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv"],
-        ["Machine JSON", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json"],
-      ],
-      notes: "Use only at original metal-to-metal shim locations, not as random height packing.",
+      notes: "Large pair remains height-controlled at 24; final station map controls placement.",
     },
     {
       id: "FS-OVAL",
@@ -1243,103 +1200,104 @@
     },
     {
       id: "FS-STRIP-L",
-      part: "Front-support left strip / liner",
-      qty: "1",
-      image: "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
-      imageCaption: "Front-support left strip / liner",
-      spec: "Stock envelope 165 x 40 with R4 ends; base thickness 8; raised/load pad height 14; provisional slots 16 x 11 at centres X20 Y20 and X145 Y20 only if carrier confirms.",
-      route: "template trace, then waterjet/knife/punch; supplied DXF is stock blank only",
+      part: "Front-support left strip / liner hold",
+      qty: "Hold",
+      image: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg",
+      imageCaption: "Left strip template hold; not photo-released",
+      spec: "Candidate strip only. Quote envelope 165 x 40 if the physical carrier confirms the piece exists; base thickness 8; raised/load pad 14. Final outline, holes, and handedness must come from carrier trace.",
+      route: "hold for physical trace; supplied DXF/SVG is a blank only",
       files: [
         ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf"],
         ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg"],
       ],
-      notes: "Final CNC cut requires physical left carrier trace.",
+      notes: "Current loose-part images are mixed with bump-stop fragments; do not cut from photo.",
     },
     {
       id: "FS-STRIP-R",
-      part: "Front-support right strip / liner",
-      qty: "1",
-      image: "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
-      imageCaption: "Front-support right strip / liner",
-      spec: "Stock envelope 165 x 40 with R4 ends; base thickness 8; raised/load pad height 14; provisional slots 16 x 11 at centres X20 Y20 and X145 Y20 only if carrier confirms.",
-      route: "template trace, then waterjet/knife/punch; supplied DXF is stock blank only",
+      part: "Front-support right strip / liner hold",
+      qty: "Hold",
+      image: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg",
+      imageCaption: "Right strip template hold; not photo-released",
+      spec: "Candidate strip only. Mirror FS-STRIP-L only if the right carrier proves symmetric; use the same quote envelope after confirmation. Final outline, holes, and handedness must come from carrier trace.",
+      route: "hold for physical trace; supplied DXF/SVG is a blank only",
       files: [
         ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf"],
         ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg"],
       ],
-      notes: "Final CNC cut requires physical right carrier trace.",
+      notes: "The old right-strip image is now treated as bump-stop evidence first; do not cut from photo.",
+    },
+    {
+      id: "BUMP-60010-LONG",
+      part: "Long axle-to-chassis bump stop: front-left and both rear",
+      qty: "3",
+      image: "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
+      imageCaption: "Broken old bump-stop fragments with tape reference",
+      spec: "Toyota-style progressive bump stop, free height 70 +/-1; two-ear steel saddle/backing plate; tapered/radiused rubber body; flat rectangular strike face. Use the old fragments as shape evidence only.",
+      route: "Longman first article, then vehicle-bracket-controlled release",
+      files: [
+        ["Bump Spec", "../../docs/bump-stop-fabrication-spec-20260504.md"],
+        ["Longman Spec", "../../docs/longman-rubber-order-spec-20260508.md"],
+        ["Order CSV", "../../data/manual/longman_rubber_order_specs.csv"],
+      ],
+      notes: "Vehicle measurements release base footprint, hole pitch, hole/thread, and strike-face offset.",
+    },
+    {
+      id: "BUMP-60020-SHORT",
+      part: "Short right-front axle-to-chassis bump stop",
+      qty: "1",
+      image: "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
+      imageCaption: "Broken old bump-stop vertical/scale reference",
+      spec: "Same Toyota-style progressive construction as the long stop, but free height 60 +/-1 for the right-front station. Do not make this at 70 unless a deliberate vehicle full-bump test releases trimming.",
+      route: "Longman first article, then vehicle-bracket-controlled release",
+      files: [
+        ["Bump Spec", "../../docs/bump-stop-fabrication-spec-20260504.md"],
+        ["Longman Spec", "../../docs/longman-rubber-order-spec-20260508.md"],
+        ["Order CSV", "../../data/manual/longman_rubber_order_specs.csv"],
+      ],
+      notes: "Right-front height is externally controlled by the 48304-60020 family references.",
+    },
+    {
+      id: "BODY-LINER-FULL-WIDTH-HOLD",
+      part: "Long/full-width flat body or panel liner strips",
+      qty: "Hold",
+      image: "../../photos/20260405_234652.jpg",
+      imageCaption: "Hold item; needs real full-length liner photos",
+      spec: "Possible longer flat strips are not yet captured as orderable pieces. They need full-length photos, traces, holes/slots, thickness, quantity, side/orientation, and installed function before Longman quotes them.",
+      route: "hold for identification and measurement",
+      files: [
+        ["Workstream", "../../docs/chassis-rubbers-workstream.md"],
+        ["Longman Spec", "../../docs/longman-rubber-order-spec-20260508.md"],
+      ],
+      notes: "Do not order until the actual pieces are found or a vehicle station proves the requirement.",
     },
     {
       id: "EXH-HGR-90917",
       part: "Exhaust pipe teardrop cushion",
-      qty: "As fitted",
+      qty: "Hold",
       image: "../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg",
       imageCaption: "Teardrop exhaust cushion CAD; Toyota 90917-08004 is a shape reference",
-      spec: "Origin lower-left of 48 x 86 top profile; centreline X24; teardrop/paddle outline 48 wide x 86 high; lower bulb R24 centred X24 Y24; mounting hole 9 at X24 Y73; hanger slot 16 x 22 capsule centred X24 Y29; raised boss/recess mark 36 x 42 at X6 Y8; rubber body thickness target 22 unless genuine sample proves otherwise. Toyota 90917-08004 / 17572-92000 is a reference shape, not an assumed supply path.",
-      route: "source exact new teardrop cushion or mould sample-matched rubber-metal exhaust cushion",
+      spec: "Optional later item only. Target outline 48 x 86, top hole 9, hanger slot 16 x 22, thickness target 22 unless a real sample proves otherwise.",
+      route: "sample-match or genuine-part trace before moulding",
       files: [
         ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.dxf"],
         ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg"],
       ],
-      notes: "Do not use the previous round ring or generic two-hole strap. Local molding needs a genuine sample or intact original for mould depth, side profile, insert depth, thickness, and reinforcement.",
-    },
-    {
-      id: "BUMP-F-L",
-      part: "Front left spring bump stop",
-      qty: "1",
-      image: "../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg",
-      imageCaption: "Bump-stop reference",
-      spec: "Not a CNC-cut block. 48304-60010 is a left-front reference shape only. If no exact new molded stop is available, reproduce from the physical sample or 3D scan with a mould matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location.",
-      route: "source exact molded stop or sample/scan mould; not CNC-cut",
-      files: [
-        ["Machine CSV", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv"],
-        ["Machine JSON", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json"],
-      ],
-      notes: "Verify left-front bracket and axle contact point.",
-    },
-    {
-      id: "BUMP-F-R",
-      part: "Front right spring bump stop",
-      qty: "1",
-      image: "../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg",
-      imageCaption: "Bump-stop reference",
-      spec: "Not a CNC-cut block. 48304-60020 is a shorter/right-front reference shape only. If no exact new molded stop is available, reproduce from the physical sample or 3D scan with a mould matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location.",
-      route: "source exact molded stop or sample/scan mould; not CNC-cut",
-      files: [
-        ["Machine CSV", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv"],
-        ["Machine JSON", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json"],
-      ],
-      notes: "Do not install left stop or universal stop here.",
-    },
-    {
-      id: "BUMP-R",
-      part: "Rear spring bump stops",
-      qty: "2",
-      image: "../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg",
-      imageCaption: "Bump-stop reference",
-      spec: "Not a CNC-cut block. 48304-60010 is a rear-pair reference shape only. If no exact new molded stops are available, reproduce from physical samples or 3D scan with a mould matching rear bracket/base, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location.",
-      route: "source exact molded pair or sample/scan mould; not CNC-cut",
-      files: [
-        ["Machine CSV", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv"],
-        ["Machine JSON", "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json"],
-      ],
-      notes: "Replace as matched rear pair after suspension ride height is known.",
+      notes: "Not part of the first Longman chassis-rubber quote unless an intact sample is available.",
     },
   ];
 
   const CHASSIS_RUBBER_REFERENCE_IMAGES = [
-    ["../../photos/20260502_004413_gp_Qno8OVRg.jpg", "Circular cushion top reference"],
-    ["../../photos/20260502_004442_gp_7WcFHjLQ.jpg", "Circular annular cushion reference 2"],
-    ["../../photos/20260502_004429_gp_KJHxGcCA.jpg", "Cup/seat and stack profile reference"],
-    ["../../deliverables/selling_site_images/images/reference_catalog/body_shims.jpg", "Body-mount shim/spacer reference"],
-    ["../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg", "Bump-stop reference"],
-    ["../../photos/20260502_004254_gp_Hm9RR5DQ.jpg", "Long strip height reference"],
-    ["../../photos/20260502_004314_gp_wuzpgNrA.jpg", "Long strip side reference"],
+    ["../../photos/20260405_234652.jpg", "Original tub-side body-mount landing context"],
+    ["../../photos/20260405_234546.jpg", "Original underbody mount context"],
+    ["../../photos/20260502_004345_gp_yK8VYzMQ.jpg", "Front-support two-hole oval pad"],
+    ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg", "Left front-support strip template hold"],
+    ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg", "Right front-support strip template hold"],
+    ["../../photos/20260502_004222_gp_PKRe5HSQ.jpg", "Bump-stop fragment reference"],
+    ["../../photos/20260502_004201_gp_zfUSmKJg.jpg", "Bump-stop vertical/scale reference"],
+    ["../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg", "Bump-stop vehicle measurement control"],
     ["../../photos/20260501_193755_gp_cuaY6sgg.jpg", "Rear exhaust and bracket context"],
     ["../../photos/20260501_193805_gp_VgTc8wYQ.jpg", "Exhaust bracket close reference"],
     ["../../photos/20260501_193811_gp_uv8kwbxw.jpg", "Tailpipe bracket and holder location reference"],
-    ["../../photos/20260405_234652.jpg", "Original tub-side body-mount context"],
-    ["../../photos/20260405_234546.jpg", "Original underbody mount context"],
   ];
 
   function renderChassisRubberSpecImage(row) {
@@ -1380,8 +1338,8 @@
             ${chip("Shore A 60 +/-5")}
           </div>
         </div>
-        <p class="small-muted">Body/front-support rubbers: new black solid EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5. Cups and shims: new flat or formed steel only, deburred and corrosion protected. External Toyota/OE numbers are reference shapes only: the scout must be able to source exact new molded stock or take the old sample/scan to a rubber shop for local moulding. Exhaust holder: teardrop cushion style or sample-matched molded copy. Bump stops: exact molded stops or sample/scan-moulded copies only. Reject tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, washer stacks, simple cut blocks, or universal bump stops that do not match the axle contact point.</p>
-        <p class="small-muted">Machine package: <a href="../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv">machine_definitions.csv</a>, <a href="../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json">machine_definitions.json</a>, <a href="../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf">dimension sheet PDF</a>.</p>
+        <p class="small-muted">Body/front-support rubbers: new black solid EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5. Main body isolators are now function-first custom square pads, not circular/register bushings, because the chassis/tub photos do not prove a shaped rubber socket. Steel cup/seat washers, sleeves, shims, bolts, and captive-thread repairs are separate from the Longman rubber order. Bump stops: public OEM/catalog sources confirm the Toyota part numbers, applications, and 70 mm / 60 mm height split, but not the Toyota mould drawing. Use a Toyota-style two-ear steel saddle/backing plate, tapered/radiused progressive rubber body, flat rectangular strike face, and vehicle bracket/contact measurements. Reject tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, washer stacks, simple cut blocks, or universal bump stops that do not match the axle contact point.</p>
+        <p class="small-muted">Current supplier pack: <a href="../../docs/longman-rubber-order-spec-20260508.md">Longman rubber order spec</a>, <a href="../../data/manual/longman_rubber_order_specs.csv">Longman order CSV</a>, <a href="../../docs/chassis-rubbers-workstream.md">chassis rubbers workstream</a>.</p>
         <div class="table-wrap requirement-table-wrap">
           <table class="requirement-table chassis-rubber-spec-table">
             <thead>
@@ -1414,8 +1372,8 @@
             </tbody>
           </table>
         </div>
-        <p class="small-muted">Tolerances: circular cushion OD/ID +/-1.0, height +/-0.5, bore/register concentricity <=1.0; cup OD +/-1.0, hole +0.3/-0.0, dish 2-3; shim/spacer thickness +/-0.1 after station trace; FS-OVAL outside +/-1.0, hole position +/-0.5, thickness +/-0.5; strip outline +/-1.0, holes +/-0.5, thickness +/-0.5. Bump stops are not simple cut rubber; exact molded stock or physical-sample/scan moulding controls.</p>
-        <p class="small-muted">Lower holds: BM-SM split-stack check if the old sample separates; BM-SHIM rows require preserved station footprint measurement before CNC/laser cutting; FS-STRIP-L/R require physical carrier trace before final CNC cut; EXH-HGR-90917 needs a genuine sample or intact original to confirm side profile, insert depth, exact thickness, and reinforcement before local moulding; bump stops need old-sample/scan geometry plus bracket/contact verification before purchase or moulding.</p>
+        <p class="small-muted">Tolerances: square body pad length/width +/-1.0, height +/-0.5, faces parallel <=0.5; final rubber hole = measured sleeve OD + 0.5-1.0. FS-OVAL outside +/-1.0, hole position +/-0.5, thickness +/-0.5. Candidate strip/liner rows are hold items until traced. Bump stops: height +/-1, base/hole position +/-0.5 after vehicle measurement release, contact centre +/-5; steel saddle must not bend; rubber/steel bond or captive joint must survive compression.</p>
+        <p class="small-muted">Lower holds: FS-STRIP-L/R need physical carrier or installed-location proof before final cutting; possible full-width flat liners need full-length photos/traces before any quote; EXH-HGR-90917 needs a genuine sample or intact original to confirm side profile, insert depth, exact thickness, and reinforcement before local moulding; bump stops need BL/BW/P/D/X-Y/G/F values, fabricator side/profile sketch, saddle hole layout, material declaration, and first-article compression recovery check before mould release.</p>
       </article>
     `;
   }
@@ -2697,6 +2655,67 @@
     return filterVisibleImages([...direct, ...generated]);
   }
 
+  function scoutImageIdentity(image) {
+    return [
+      image && image.media_id,
+      image && image.path,
+      image && image.caption,
+    ]
+      .map((value) => cleanString(value).toLowerCase())
+      .join(" ");
+  }
+
+  function isMixedFastenerPileImage(image) {
+    const imageText = scoutImageIdentity(image);
+    return imageText.includes("20260503_153832_gp_0fjjilhg");
+  }
+
+  function shouldReplaceScoutRowImage(row, image) {
+    const imageText = scoutImageIdentity(image);
+    if (!imageText) {
+      return false;
+    }
+    const text = scoutRowText(row);
+    const isLoosePileRow = text.includes("user-selected loose fastener photo") || text.includes("user-selected loose hardware photo");
+    if (isLoosePileRow && isMixedFastenerPileImage(image)) {
+      return true;
+    }
+    if (imageText.includes("graded_fasteners") && (
+      text.includes("body mount hardware") ||
+      text.includes("captive/clip") ||
+      text.includes("clip/speed nut") ||
+      text.includes("retaining clip") ||
+      text.includes("trim screws") ||
+      text.includes("shoulder bolts") ||
+      text.includes("specialty bracket")
+    )) {
+      return true;
+    }
+    if ((imageText.includes("body_mount_kit") || imageText.includes("body_shims")) && (
+      text.includes("body mount shim") ||
+      text.includes("body-to-chassis mount rubber") ||
+      text.includes("body mount rubber kit") ||
+      text.includes("body mount hardware")
+    )) {
+      return true;
+    }
+    if ((
+      imageText.includes("20260502_004106_gp_wlyluaha") ||
+      imageText.includes("20260502_004133_gp_zepqmara") ||
+      imageText.includes("20260503_153017_gp_dm8bca4w") ||
+      imageText.includes("20260503_153031_gp_rffqdubw") ||
+      imageText.includes("20260503_153130_gp_gkkofapg")
+    ) && (
+      text.includes("formed metal coolant") ||
+      text.includes("formed coolant pipe") ||
+      text.includes("hard-line") ||
+      text.includes("hard line")
+    )) {
+      return true;
+    }
+    return false;
+  }
+
   function preferredScoutMediaIds(row) {
     const id = cleanString((row && (row.id || row.order_id || row.order_line_id || row.requirement_id)) || "").toUpperCase();
     const text = [
@@ -2708,11 +2727,11 @@
     ]
       .map((value) => cleanString(value).toLowerCase())
       .join(" ");
-    if (id === "CR-MAIN-001" || id === "BM-SM" || text.includes("small circular body-mount")) {
-      return ["20260502_004442_gp_7WcFHjLQ"];
+    if (id === "CR-MAIN-001" || id === "BM-ISO-SM" || id === "BM-SM" || text.includes("small circular body-mount") || text.includes("main body isolator pad")) {
+      return ["20260405_234652", "20260405_234546"];
     }
-    if (id === "CR-MAIN-002" || id === "BM-LG" || text.includes("large circular body-mount")) {
-      return ["20260502_004419_gp_ZPXJRBzg"];
+    if (id === "CR-MAIN-002" || id === "BM-ISO-LG" || id === "BM-LG" || text.includes("large circular body-mount")) {
+      return ["20260405_234652", "20260405_234546"];
     }
     if (id === "CR-MAIN-004" || text.includes("cup") || text.includes("seat washer")) {
       return ["20260502_004413_gp_Qno8OVRg", "20260502_004429_gp_KJHxGcCA"];
@@ -2721,16 +2740,16 @@
       return ["20260502_004429_gp_KJHxGcCA", "20260502_004231_gp_CfosvPIg", "20260502_004413_gp_Qno8OVRg"];
     }
     if (id.includes("BUMP") || text.includes("bump stop") || text.includes("rubber bumper")) {
-      return [];
+      return ["20260502_004222_gp_PKRe5HSQ", "20260502_004201_gp_zfUSmKJg"];
     }
     if (id === "CR-FRONT-001" || id === "FS-OVAL" || text.includes("two-hole oval")) {
       return ["20260502_004345_gp_yK8VYzMQ"];
     }
     if (id === "CR-FRONT-002" || id === "FS-STRIP-L" || text.includes("left front-support strip")) {
-      return ["20260502_004201_gp_zfUSmKJg"];
+      return [];
     }
     if (id === "CR-FRONT-003" || id === "FS-STRIP-R" || text.includes("right front-support strip")) {
-      return ["20260502_004222_gp_PKRe5HSQ"];
+      return [];
     }
     if (id === "RPO-COOL-001" || id === "HLS-01" || id === "RP-COOL-001" || text.includes("upper radiator hose")) {
       return ["20260430_220004_gp_C9oYiYmA", "20260503_160327_gp_sFtQuWNQ", "20260503_153249_gp_Lg6JX6Gg"];
@@ -2803,11 +2822,23 @@
     ]
       .map((value) => cleanString(value).toLowerCase())
       .join(" ");
-    return id === "HLS-21" || id === "RHA-014" || id === "RUB-027" || text.includes("air-cleaner intake");
+    return id === "HLS-21" ||
+      id.startsWith("HLS-") ||
+      /^RPO-(COOL|FUEL|VAC|BRAKE|CLUTCH|CLIP)-/.test(id) ||
+      id === "RHA-014" ||
+      id === "RUB-027" ||
+      text.includes("air-cleaner intake") ||
+      text.includes("formed metal coolant") ||
+      text.includes("formed coolant pipe") ||
+      text.includes("hard-line") ||
+      text.includes("hard line") ||
+      text.includes("user-selected loose fastener photo") ||
+      text.includes("user-selected loose hardware photo");
   }
 
   function bestScoutOriginalImage(row) {
-    const evidence = suppressScoutEvidenceImages(row) ? [] : scoutEvidenceImages(row);
+    const suppressEvidence = suppressScoutEvidenceImages(row);
+    const evidence = suppressEvidence ? [] : scoutEvidenceImages(row);
     const preferredIds = preferredScoutMediaIds(row);
     const preferred = evidence.find((image) => preferredIds.includes(cleanString(image && image.media_id)));
     if (preferred) {
@@ -2816,8 +2847,14 @@
     if (evidence.length) {
       return evidence[0];
     }
+    if (suppressEvidence) {
+      return null;
+    }
     const image = row && row.image && !isImageDeleted(row.image) ? row.image : null;
-    return image || null;
+    if (image && !shouldReplaceScoutRowImage(row, image)) {
+      return image;
+    }
+    return null;
   }
 
   function scoutOrderSpecRows(rows, limit) {
@@ -2841,7 +2878,10 @@
         image: row.image || null,
         evidenceImages: Array.isArray(row.evidence_images) ? row.evidence_images : [],
       };
-      specRow.image = bestScoutOriginalImage(specRow) || specRow.image || scoutComponentImage(specRow);
+      const generatedImage = specRow.image && !suppressScoutEvidenceImages(specRow) && !shouldReplaceScoutRowImage(specRow, specRow.image)
+        ? specRow.image
+        : null;
+      specRow.image = bestScoutOriginalImage(specRow) || generatedImage || scoutComponentImage(specRow);
       return specRow;
     });
   }
@@ -2861,12 +2901,13 @@
       const isShim = row.id.startsWith("BM-SHIM");
       const isBump = row.id.startsWith("BUMP");
       const isExhaust = row.id.startsWith("EXH-");
+      const isHold = cleanString(row.qty).toLowerCase() === "hold" || row.id.includes("HOLD") || cleanString(row.part).toLowerCase().includes("hold");
       return {
         id: row.id,
         item: row.part,
         partNumber: fileNames,
         route: row.route,
-        state: isBump ? "sample_mould_or_new_part" : isShim ? "trace_then_cut" : "quote_first_article_ready",
+        state: isHold ? "hold_measurement_required" : isBump ? "vehicle_measurement_mould_release" : isShim ? "trace_then_cut" : "quote_first_article_ready",
         spec: row.spec,
         qty: row.qty,
         material: isCup
@@ -2874,15 +2915,19 @@
           : isShim
             ? "New flat steel, deburred and zinc plated or epoxy primed."
             : isBump
-              ? "New molded automotive bump-stop compound; no used or universal mismatch."
+              ? "NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to coated steel saddle; no used or universal mismatch."
               : isExhaust
                 ? "New heat/vibration-resistant molded exhaust rubber, Shore A 60 +/-5."
                 : "New black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5.",
-        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv/json and dimension sheet PDF",
-        action: isShim
+        sourceBasis: isBump
+          ? "docs/bump-stop-fabrication-spec-20260504.md; docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv"
+          : "docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv; docs/chassis-rubbers-workstream.md",
+        action: isHold
+          ? "Do not order production until the physical trace/location measurement hold closes."
+          : isShim
           ? "Trace preserved station footprint before CNC/laser cutting final outline."
           : isBump
-            ? "Take old stop or scan data to the rubber shop; buy exact molded new stock only if bracket, bolt pattern, free height, compressed height, profile, and contact face match."
+            ? "Measure cleaned vehicle bracket BL/BW, bolt/stud pitch P, hole/thread D, strike-pad X/Y, loaded gap G, and full-bump clearance F; make Toyota-style steel-saddle/tapered-body 70 mm long and 60 mm right-front first articles before full set."
             : "Send DXF/SVG/PDF package in millimeters; quote one first article before batch.",
         reject: isBump
           ? "Used, cracked, oil-softened, simple cut block, universal height/profile, or wrong bracket/contact fit."
@@ -2932,6 +2977,8 @@
     const previous = (path, label, mediaId, tokens = []) =>
       scoutPreviousPartImage(path, `${subject} · ${label}`, mediaId, tokens);
     const controlledIds = new Set([
+      "BM-ISO-SM",
+      "BM-ISO-LG",
       "BM-SM",
       "BM-LG",
       "BM-CUP-SM",
@@ -2941,6 +2988,8 @@
       "FS-OVAL",
       "FS-STRIP-L",
       "FS-STRIP-R",
+      "BUMP-60010-LONG",
+      "BUMP-60020-SHORT",
       "MIDI5-PLATE-001",
       "MIDI5-SUBPLATE-001",
       "RELAY-CARRIER-001",
@@ -2967,6 +3016,9 @@
     if (rowId === "BM-SHIM-THIN" || rowId === "BM-SHIM-THICK" || hasAny("bm-shim", "alignment shim", "shim pack", "spacer control pack")) {
       return scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/body_shims.jpg", "Body-mount shim/spacer reference", "body_shims");
     }
+    if (rowId === "BM-ISO-LG" || rowId === "BM-ISO-SM" || hasAny("main body isolator pad", "custom square flat pad", "body isolator pad")) {
+      return scoutReferenceImage("../../photos/20260405_234652.jpg", "tub-side flat body-mount landing context", "20260405_234652");
+    }
     if (rowId === "BM-LG" || partNumber.includes("bm_lg") || hasAny("large circular body-mount", "large circular body mount", "large body-mount cushion", "large body mount cushion")) {
       return previous("../../photos/20260502_004419_gp_ZPXJRBzg.jpg", "previous large circular body-mount cushion sample", "20260502_004419_gp_ZPXJRBzg", ["bm-lg", "previous"]);
     }
@@ -2976,11 +3028,17 @@
     if (rowId === "FS-OVAL" || partNumber.includes("fs_oval") || hasAny("two-hole oval", "two hole oval", "oval front-support", "oval front support", "oval pad")) {
       return previous("../../photos/20260502_004345_gp_yK8VYzMQ.jpg", "previous two-hole oval front-support pad", "20260502_004345_gp_yK8VYzMQ", ["fs-oval", "previous"]);
     }
+    if (rowId === "BUMP-60010-LONG" || hasAny("long axle-to-chassis bump stop", "48304-60010", "long bump stop")) {
+      return previous("../../photos/20260502_004222_gp_PKRe5HSQ.jpg", "previous broken bump-stop fragments", "20260502_004222_gp_PKRe5HSQ", ["bump-stop", "previous"]);
+    }
+    if (rowId === "BUMP-60020-SHORT" || hasAny("short right-front bump stop", "48304-60020", "right-front bump stop")) {
+      return previous("../../photos/20260502_004201_gp_zfUSmKJg.jpg", "previous bump-stop vertical scale reference", "20260502_004201_gp_zfUSmKJg", ["bump-stop", "previous"]);
+    }
     if (rowId === "FS-STRIP-L" || partNumber.includes("fs_strip_left") || (hasAny("front-support strip", "front support strip", "strip rubber") && hasAny("left", "left-side", "left side"))) {
-      return previous("../../photos/20260502_004201_gp_zfUSmKJg.jpg", "previous left front-support strip sample", "20260502_004201_gp_zfUSmKJg", ["fs-strip-l", "previous"]);
+      return scoutReferenceImage("../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg", "left front-support strip template hold", "fs_strip_left_template_blank_rev_a");
     }
     if (rowId === "FS-STRIP-R" || partNumber.includes("fs_strip_right") || (hasAny("front-support strip", "front support strip", "strip rubber") && hasAny("right", "right-side", "right side"))) {
-      return previous("../../photos/20260502_004222_gp_PKRe5HSQ.jpg", "previous right front-support strip sample", "20260502_004222_gp_PKRe5HSQ", ["fs-strip-r", "previous"]);
+      return scoutReferenceImage("../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg", "right front-support strip template hold", "fs_strip_right_template_blank_rev_a");
     }
     if (rowId === "MIDI5-PLATE-001" || rowId === "MIDI5-SUBPLATE-001" || hasAny("midi5_mount_plate", "midi5_holder_subplate", "midi 5-way structural", "midi 5-way non-conductive")) {
       return previous("../../photos/20260411_143135.jpg", "received MIDI holder bank to mount", "20260411_143135", ["midi5", "previous"]);
@@ -3017,7 +3075,7 @@
     }
 
     if (hasAny("fuse carrier", "cabin fuse", "compact fuse", "under-dash fuse", "under dash fuse")) {
-      return ref("../../deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png", "user-supplied compact fuse box reference image", "compact_cabin_fuse_box_user_photo_20260504");
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png", "user-supplied compact old-OEM fuse box photo", "compact_cabin_fuse_box_user_photo_20260504");
     }
     if (hasAny("bench vice", "workshop vice", "vise") || has("vice", "bench")) {
       return ref("../../deliverables/selling_site_images/images/reference_catalog/bench_vice.jpg", "bolt-down bench vice reference image", "bench_vice");
@@ -3043,10 +3101,19 @@
       return ref("../../deliverables/selling_site_images/images/manual_overrides/suspension_hardwood_cribbing_cut_set_flat_lay.jpg", "hardwood cribbing cut-set reference image", "hardwood_cribbing");
     }
     if (hasAny("formed metal coolant", "formed coolant pipe", "metal coolant", "radiator pipe assembly")) {
-      return ref("../../photos/20260502_004106_gp_wlYlUahA.jpg", "formed coolant pipe sample photo", "formed_coolant_pipe_sample");
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/formed_coolant_pipe_sample_crop_20260502.jpg", "current car formed coolant pipe sample crop", "formed_coolant_pipe_sample_crop_20260502");
+    }
+    if (hasAny("p-clips", "p clips", "support clips", "line protection", "edge protection")) {
+      return ref("../../deliverables/selling_site_images/images/reference_catalog/clamp.jpg", "line clip/clamp reference image", "clamp");
+    }
+    if (hasAny("hard-line", "hard line", "hard-line tube", "hard line tube", "brake hard-line", "brake hard line", "fuel hard-line", "fuel hard line", "clutch hard-line", "clutch hard line")) {
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/rear_axle_hardline_union_current_car_crop_20260503.jpg", "current car hard-line route and union crop", "rear_axle_hardline_union_current_car_crop_20260503");
+    }
+    if (hasAny("brake flex hose", "clutch flex hose", "flex hose assemblies", "flexible brake hose", "hydraulic hose assemblies")) {
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg", "current car hydraulic flex hose fitting crop", "front_brake_hose_fitting_current_car_crop_20260503");
     }
     if (hasAny("connector hose", "connector/coupler", "coupler hoses")) {
-      return ref("../../photos/20260502_004133_gp_ZEpqmARA.jpg", "formed-pipe connector hose sample photo", "formed_pipe_connector_hose_sample");
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg", "current car connector hose crop", "radiator_heater_hose_current_car_crop_20260503");
     }
     if (hasAny("air-cleaner", "air cleaner", "intake duct", "air-intake", "air intake", "duct/coupler")) {
       return ref("../../deliverables/selling_site_images/images/reference_catalog/duct_hose.jpg", "air-cleaner intake duct reference image", "duct_hose");
@@ -3055,13 +3122,13 @@
       return ref("../../deliverables/selling_site_images/images/reference_catalog/ac_barrier_hose.jpg", "A/C barrier hose reference image", "ac_barrier_hose");
     }
     if (has("heater", "hose")) {
-      return ref("../../deliverables/selling_site_images/images/reference_catalog/heater_hose.jpg", "heater hose reference image", "heater_hose");
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg", "current car heater hose crop", "radiator_heater_hose_current_car_crop_20260503");
     }
     if (hasAny("radiator overflow", "overflow hose", "coolant overflow")) {
-      return ref("../../deliverables/selling_site_images/images/reference_catalog/coolant_overflow.jpg", "coolant overflow reference image", "coolant_overflow");
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/radiator_cap_current_car_crop_20260503.jpg", "current car radiator neck and overflow crop", "radiator_cap_current_car_crop_20260503");
     }
     if (has("radiator", "hose") || has("coolant", "hose") || hasAny("upper radiator", "lower radiator")) {
-      return ref("../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg", "radiator/coolant hose reference image", "radiator_hose");
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg", "current car radiator/coolant hose crop", "radiator_heater_hose_current_car_crop_20260503");
     }
     if ((has("brake", "booster") || has("brake", "servo")) && !hasAny("hose", "line", "pipe", "tube")) {
       return ref("../../deliverables/selling_site_images/images/reference_catalog/brake_booster.jpg", "brake booster reference image", "brake_booster");
@@ -3070,19 +3137,49 @@
       return ref("../../deliverables/selling_site_images/images/expenses_jubilee_hose_clip_assortment_10_pc_fuel__2a666ef4bae6.jpg", "fuel hose clamp reference image", "fuel_hose_clamp_assortment");
     }
     if (hasAny("fuel", "diesel", "injector leak-off", "leak-off")) {
-      return ref("../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg", "diesel fuel hose reference image", "fuel_hose");
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/fuel_hose_line_fittings_current_car_crop_20260503.jpg", "current car fuel hose and fitting crop", "fuel_hose_line_fittings_current_car_crop_20260503");
     }
     if (hasAny("vacuum", "breather", "oil mist", "oil outlet")) {
-      return ref("../../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg", "vacuum/breather hose reference image", "vacuum_hose");
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/vacuum_breather_hose_current_car_crop_20260503.jpg", "current car vacuum and breather hose crop", "vacuum_breather_hose_current_car_crop_20260503");
     }
-    if ((has("brake") || has("clutch")) && hasAny("hose", "line", "hydraulic", "tube")) {
-      return ref("../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg", "hydraulic hose/line reference image", "brake_hose_line");
+    if (has("brake") && hasAny("hose", "line", "hydraulic", "tube")) {
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg", "current car brake hose fitting crop", "front_brake_hose_fitting_current_car_crop_20260503");
+    }
+    if (has("clutch") && hasAny("hose", "line", "hydraulic", "tube")) {
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/clutch_hydraulic_slave_line_current_car_crop_20260430.jpg", "current car clutch hydraulic line crop", "clutch_hydraulic_slave_line_current_car_crop_20260430");
     }
     if (hasAny("p-clips", "p clips", "support clips", "line protection", "edge protection")) {
       return ref("../../deliverables/selling_site_images/images/reference_catalog/clamp.jpg", "line clip/clamp reference image", "clamp");
     }
+    if (hasAny("retaining clip", "r-clips", "r clips", "hairpins", "hairpin", "split pins", "split pin", "cotter pins", "cotter", "circlips", "e-clips", "e clips")) {
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/body_retaining_clips_cotter_pack_reference.svg", "retaining clip and cotter reference image", "body_retaining_clips_cotter_pack_reference");
+    }
+    if (hasAny("captive/clip", "clip/speed nut", "captive nuts", "clip nuts", "speed nut", "speed nuts", "weld/rivnut", "weld nut", "weld nuts", "rivnuts", "rivnut")) {
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/body_captive_clip_nuts_reference.svg", "captive clip nut and rivnut reference image", "body_captive_clip_nuts_reference");
+    }
+    if (hasAny("trim screws", "self-tapping", "self tapping", "countersunk", "cup/finishing", "finishing washers")) {
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/body_trim_screws_cup_washers_reference.svg", "trim screws and cup washers reference image", "body_trim_screws_cup_washers_reference");
+    }
+    if (hasAny("rubber/plastic", "rubber bumpers", "plastic bumpers", "rubber bumper", "isolators", "knobs and small spacers", "pads isolators")) {
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/body_rubber_bumpers_isolators_reference.svg", "rubber bumpers and isolators reference image", "body_rubber_bumpers_isolators_reference");
+    }
+    if (hasAny("shoulder bolts", "shoulder bolt", "pivot pins", "pivot pin", "cylindrical sleeves", "stand-off spacers", "standoff spacers", "stand-offs", "stepped pins")) {
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/body_shoulder_pins_sleeves_spacers_reference.svg", "shoulder pins sleeves and spacers reference image", "body_shoulder_pins_sleeves_spacers_reference");
+    }
+    if (hasAny("specialty brackets", "specialty bracket", "retainer plates", "retainer plate", "captive-nut plates", "captive nut plates", "strap brackets", "bent link/strap")) {
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/body_specialty_brackets_retainer_plates_reference.svg", "specialty bracket and retainer plate reference image", "body_specialty_brackets_retainer_plates_reference");
+    }
+    if (hasAny("body mount hardware", "body mount bolts", "bolts sleeves washers")) {
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/body_mount_hardware_sleeves_washers_reference.svg", "body mount hardware sleeves and washers reference image", "body_mount_hardware_sleeves_washers_reference");
+    }
+    if (hasAny("body mount shim", "body shims", "shim/spacer", "shims/spacers", "shim and spacer")) {
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/body_mount_shim_pack_reference.svg", "body mount shim and spacer reference image", "body_mount_shim_pack_reference");
+    }
+    if (hasAny("body mount rubber kit", "body-to-chassis mount rubber", "body to chassis mount rubber")) {
+      return ref("../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg", "body mount rubber kit reference image", "body_mount_rubber_kit_reference");
+    }
     if (has("bump", "stop") || hasAny("rubber bumpers", "rubber bumper")) {
-      return ref("../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg", "bump-stop reference image", "bump_stop");
+      return ref("../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg", "bump-stop measurement control", "bump_stop_vehicle_measurement_control");
     }
     if (hasAny("shim", "spacer pack", "spacer control pack")) {
       return ref("../../deliverables/selling_site_images/images/reference_catalog/body_shims.jpg", "body-mount shim/spacer reference image", "body_shims");
@@ -3105,7 +3202,8 @@
   function firstScoutImage(rows) {
     const sourceRows = Array.isArray(rows) ? rows : [];
     for (const row of sourceRows) {
-      const image = bestScoutOriginalImage(row) || (row && row.image && !isImageDeleted(row.image) ? row.image : null);
+      const generatedImage = row && !suppressScoutEvidenceImages(row) && row.image && !isImageDeleted(row.image) ? row.image : null;
+      const image = bestScoutOriginalImage(row) || generatedImage;
       if (image) {
         return image;
       }
@@ -3157,6 +3255,9 @@
       workstreams: ["brake_system"],
       terms: ["brake booster", "brake servo", "44610-60050", "vacuum booster"],
     });
+    const brakeBoosterImageRows = filterScoutRows(allPartRows, {
+      entryIds: ["part_brake_booster_servo_44610_60050"],
+    });
     const pipeParts = filterScoutRows(allPartRows, {
       entryIds: [
         "part_mech_radiator_hose_set",
@@ -3197,22 +3298,21 @@
       workstreams: ["electrical_reset"],
       terms: ["compact cabin fuse", "additional fuse", "fuse box", "fuse carrier"],
     });
+    const fuseBoxImageRows = filterScoutRows(allPartRows, {
+      entryIds: ["part_cabin_compact_fuse_boxes"],
+    });
     const workshopSupportParts = dedupeScoutRows([
-      ...filterScoutRows(allPartRows, {
-        entryIds: ["part_suspension_wooden_cribbing_blocks"],
-        workstreams: ["suspension_upgrade"],
-        terms: ["wooden cribbing", "hardwood", "wedge chocks"],
-      }),
       ...filterScoutRows(allSupplyRows, {
-        entryIds: [
-          "tool_local_toolbench",
-          "tool_local_bench_drill",
-          "tool_local_bench_vice",
-        ],
+        entryIds: ["tool_local_toolbench"],
         workstreams: ["site_setup", "fabrication_handoff"],
-        terms: ["workbench", "toolbench", "pillar drill", "bench drill", "drill press", "bench vice", "workshop vice", "vise"],
+        terms: ["workbench", "toolbench"],
       }),
     ]);
+    const toolbenchImageRows = filterScoutRows(allSupplyRows, {
+      entryIds: ["tool_local_toolbench"],
+    });
+    const toolbenchImage = firstScoutImage(toolbenchImageRows) ||
+      scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/toolbench.jpg", "toolbench/workbench reference image", "toolbench");
     const fabricationParts = dedupeScoutRows([
       ...filterScoutRows(allPartRows, {
         entryIds: ["service_local_3d_printing_fabrication_prototypes"],
@@ -3277,12 +3377,12 @@
       plain_stall_request:
         "I need the exact new-only J40 body/front-support rubber requirements listed in the spec sheet, plus sleeves, cup washers, shims, spacers, bolts, nuts, and washers as separate controlled lines. Toyota/OE part numbers are reference shapes only; quote local fabrication from the measured spec if exact new stock is not in hand. Old rubbers/photos are samples only. No used or salvage rubber.",
       buy_target:
-        "Use the exact requirement list below and the linked rubber-ordering pages. Do not rely on Toyota availability. Buy exact new molded stock only if it matches the actual station layout; otherwise fabricate new parts from the measured BM-LG, BM-SM, FS-OVAL, FS-STRIP-L, FS-STRIP-R, EXH-HGR-90917, and BUMP-* specs.",
+        "Use the exact requirement list below and the linked rubber-ordering pages. Do not rely on Toyota availability. Main body pads are custom square BM-ISO-SM/BM-ISO-LG pieces unless a station trace releases a specific trim. FS-STRIP-L/R and any full-width flat liners are holds until the physical carrier/location proves them. For bump stops, old rubber is not the master: use the 70 mm long / 60 mm right-front height controls, Toyota-style steel-saddle/tapered-body construction, and vehicle bracket measurements.",
       must_include: [
         "Upper and lower body mount rubber cushions for the required body stations.",
         "Steel sleeves, cup or seat washers, shims, spacers, bolts, nuts, and washers quoted separately.",
         "Rubber dimensions shown clearly: outside diameter, inside hole, thickness, and sleeve length.",
-        "Fabrication quote basis for every non-stock rubber: drawing/profile, old sample or 3D scan requirement, material/hardness, first article, and dry-fit check.",
+        "Fabrication quote basis for every non-stock rubber: drawing/profile, old sample, 3D scan, or vehicle-bracket measurement requirement, material/hardness, first article, and dry-fit check.",
         "New rubber only for every fitted rubber, grommet, pad, cushion, boot, sleeve cover, isolator, bump stop, and hanger.",
       ],
       bench_test: [
@@ -3310,6 +3410,7 @@
         scoutDocLink("docs/rubber-ordering-spec-20260502.md", "Rubber ordering spec"),
         scoutDocLink("docs/local-market-component-order-spec-20260504.md", "Exact local-market order spec"),
         scoutDocLink("docs/rubber-recreation-fabrication-spec-20260502.md", "Rubber fabrication spec"),
+        scoutDocLink("docs/bump-stop-fabrication-spec-20260504.md", "Bump-stop fabrication spec"),
       ],
     };
     const fuseBoxMarketSpec = {
@@ -3504,6 +3605,7 @@
         sourceBasis: "data/manual/expenses.csv:tool_local_toolbench",
         action: "Scout local hardware/tools market and send dimension/frame photos before purchase.",
         reject: "Thin folding table, domestic desk, loose particle-board top, warped top, or unstable legs.",
+        image: toolbenchImage,
       },
       {
         id: "TOOL-DRILL-001",
@@ -3560,34 +3662,34 @@
     ];
     const fabricationExactSpecRows = [
       {
-        id: "BM-SM",
-        item: "Small circular body-mount cushion",
-        partNumber: "bm_sm_body_mount_cushion_rev_a.dxf",
-        route: "rubber_recreation_rev_a",
-        state: "quote_first_article_ready",
-        image: scoutPreviousPartImage("../../photos/20260502_004442_gp_7WcFHjLQ.jpg", "Small circular body-mount cushion · separate previous-part sample", "20260502_004442_gp_7WcFHjLQ", ["bm-sm", "rubber"]),
-        spec: "CNC-ready first article for small body-mount cushion. Use the BM-SM row in machine_definitions.csv/json and the DXF/SVG package.",
-        qty: "10",
-        dimension: "Origin 64 x 64; centre X32 Y32; OD 64; height 22; bore 32; register/recess 46 x 2; edge R2-R3; faces parallel <=0.5; concentricity <=1.0",
+        id: "BM-ISO-SM",
+        item: "Small station square body isolator pad",
+        partNumber: "longman_rubber_order_specs.csv",
+        route: "longman_custom_rubber_order",
+        state: "quote_ready_measurement_before_drill",
+        image: scoutReferenceImage("../../photos/20260405_234652.jpg", "Tub-side body-mount landing context", "20260405_234652"),
+        spec: "Longman custom square pad. Leave undrilled or centre-marked until the crush-sleeve OD is known.",
+        qty: "10 + 2 spares",
+        dimension: "70 x 70 x 22; final hole = sleeve OD + 0.5-1.0; faces parallel <=0.5",
         material: "Black EPDM or NR/SBR, Shore A 60 +/-5",
-        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
-        action: "Quote/prototype first from CNC definition; production waits for one-piece vs split-stack decision.",
-        notes: "Through geometry only on CUT/CUT_BORE/DRILL. RECESS/FORM/INSERT_MARK are not through cuts.",
+        sourceBasis: "docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv",
+        action: "Quote square pads first; drill/punch after sleeve measurement and station dry-fit.",
+        notes: "Primary custom shape is square; trim only if station photos prove a clash.",
       },
       {
-        id: "BM-LG",
-        item: "Large circular body-mount cushion",
-        partNumber: "bm_lg_body_mount_cushion_rev_a.dxf",
-        route: "rubber_recreation_rev_a",
-        state: "quote_first_article_ready",
-        image: scoutPreviousPartImage("../../photos/20260502_004419_gp_ZPXJRBzg.jpg", "Large circular body-mount cushion · separate previous-part sample", "20260502_004419_gp_ZPXJRBzg", ["bm-lg", "rubber"]),
-        spec: "CNC-ready first article for large body-mount cushion. Use the BM-LG row in machine_definitions.csv/json and the DXF/SVG package.",
-        qty: "2",
-        dimension: "Origin 78 x 78; centre X39 Y39; OD 78; height 24; bore 32; register/recess 46 x 2; edge R2-R3; faces parallel <=0.5; concentricity <=1.0",
+        id: "BM-ISO-LG",
+        item: "Large station square body isolator pad",
+        partNumber: "longman_rubber_order_specs.csv",
+        route: "longman_custom_rubber_order",
+        state: "quote_ready_measurement_before_drill",
+        image: scoutReferenceImage("../../photos/20260405_234652.jpg", "Tub-side body-mount landing context", "20260405_234652"),
+        spec: "Longman custom square pad. Same compound batch as the small pads where possible; leave undrilled or centre-marked until sleeve OD is known.",
+        qty: "2 + 1 spare",
+        dimension: "80 x 80 x 24; final hole = sleeve OD + 0.5-1.0; faces parallel <=0.5",
         material: "Black EPDM or NR/SBR, Shore A 60 +/-5",
-        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
-        action: "Make matched pair from one compound batch and one setup; caliper-confirm station and final stack before batch.",
-        notes: "Through geometry only on CUT/CUT_BORE/DRILL. RECESS/FORM/INSERT_MARK are not through cuts.",
+        sourceBasis: "docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv",
+        action: "Quote square pads first; drill/punch after sleeve measurement and station dry-fit.",
+        notes: "Primary custom shape is square; trim only if station photos prove a clash.",
       },
       {
         id: "BM-CUP-SM",
@@ -3633,33 +3735,33 @@
       },
       {
         id: "FS-STRIP-L",
-        item: "Left front-support strip template blank",
+        item: "Left front-support strip template hold",
         partNumber: "fs_strip_left_template_blank_rev_a.dxf",
         route: "rubber_recreation_rev_a",
         state: "template_required",
-        image: scoutPreviousPartImage("../../photos/20260502_004201_gp_zfUSmKJg.jpg", "Left front-support strip · separate previous-part sample", "20260502_004201_gp_zfUSmKJg", ["fs-strip-l", "rubber"]),
-        spec: "Template/CNC quote blank only. Use the FS-STRIP-L row in machine_definitions.csv/json for stock envelope, then trace the physical left strip and carrier before final cutting.",
-        qty: "1",
+        image: scoutReferenceImage("../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg", "Left front-support strip template hold", "fs_strip_left_template_blank_rev_a"),
+        spec: "Candidate/template only. Use the FS-STRIP-L row as a stock envelope only if the physical left carrier or installed location proves this piece exists.",
+        qty: "Hold",
         dimension: "Stock envelope 165 x 40 R4; base thickness 8; raised/load pad 14; provisional slots 16 x 11 at X20 Y20 and X145 Y20 only if carrier confirms",
         material: "8 mm base / 14 mm raised-load EPDM or NR/SBR strip, Shore A 60 +/-5",
         sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
-        reject: "Do not cut final production from this blank without the physical trace.",
-        notes: "Not production-CNC until the left carrier trace updates the DXF.",
+        reject: "Do not cut final production from this blank or the mixed loose-part photos.",
+        notes: "Not production-CNC until the left carrier trace updates the DXF and confirms the part is required.",
       },
       {
         id: "FS-STRIP-R",
-        item: "Right front-support strip template blank",
+        item: "Right front-support strip template hold",
         partNumber: "fs_strip_right_template_blank_rev_a.dxf",
         route: "rubber_recreation_rev_a",
         state: "template_required",
-        image: scoutPreviousPartImage("../../photos/20260502_004222_gp_PKRe5HSQ.jpg", "Right front-support strip · separate previous-part sample", "20260502_004222_gp_PKRe5HSQ", ["fs-strip-r", "rubber"]),
-        spec: "Template/CNC quote blank only. Use the FS-STRIP-R row in machine_definitions.csv/json for stock envelope, then trace the physical right strip and carrier before final cutting.",
-        qty: "1",
+        image: scoutReferenceImage("../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg", "Right front-support strip template hold", "fs_strip_right_template_blank_rev_a"),
+        spec: "Candidate/template only. Mirror the left only if the physical right carrier proves symmetry and confirms this piece exists.",
+        qty: "Hold",
         dimension: "Stock envelope 165 x 40 R4; base thickness 8; raised/load pad 14; provisional slots 16 x 11 at X20 Y20 and X145 Y20 only if carrier confirms",
         material: "8 mm base / 14 mm raised-load EPDM or NR/SBR strip, Shore A 60 +/-5",
         sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
-        reject: "Do not cut final production from this blank without the physical trace.",
-        notes: "Not production-CNC until the right carrier trace updates the DXF.",
+        reject: "Do not cut final production from this blank or the mixed loose-part photos.",
+        notes: "Not production-CNC until the right carrier trace updates the DXF and confirms the part is required.",
       },
       {
         id: "MIDI5-PLATE-001",
@@ -3853,8 +3955,8 @@
         parts: brakeBoosterParts,
         marketSpecs: attachScoutImage(
           fallbackMarketSpec(brakeMarketSpecs, brakeFallbackSpec),
-          brakeBoosterParts,
-          scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/brake_booster.jpg", "44610-60050 dual-diaphragm brake booster reference image", "brake_booster")
+          brakeBoosterImageRows,
+          scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/brake_booster.jpg", "brake booster reference image", "brake_booster")
         ),
       },
       {
@@ -3866,7 +3968,7 @@
         marketSpecs: attachScoutImage(
           [hoseMarketSpec],
           [...hoseLocalMarketOrderRows, ...pipeExactSpecRows],
-          scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg", "Automotive hose reference image", "radiator_hose")
+          scoutReferenceImage("../../deliverables/selling_site_images/images/manual_overrides/hose_pipe_current_car_reference_grid_20260504.jpg", "current car hose, pipe, and fitting crop grid", "hose_pipe_current_car_reference_grid_20260504")
         ),
         docLinks: [
           scoutDocLink("docs/hose-local-scout-handoff.md", "Hose local scout handoff"),
@@ -3907,44 +4009,29 @@
         parts: fuseBoxParts,
         marketSpecs: attachScoutImage(
           [fuseBoxMarketSpec],
-          fuseBoxParts,
-          scoutReferenceImage("../../deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png", "User-supplied compact old-OEM fuse box reference", "compact_cabin_fuse_box_user_photo_20260504")
+          fuseBoxImageRows,
+          scoutReferenceImage("../../deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png", "user-supplied compact old-OEM fuse box photo", "compact_cabin_fuse_box_user_photo_20260504")
         ),
       },
       {
         id: "workshop-fabrication-support",
         title: "Workshop Support",
-        description: "Simple quote cards for support items the market scout can source locally.",
-        chips: ["Hardwood cribbing", "Bench/pillar drill", "Support tools"],
+        description: "Quote card for the remaining local workshop support item.",
+        chips: ["Toolbench", "Workbench", "Mounting-ready top"],
         parts: workshopSupportParts,
         marketSpecs: [
           ...attachScoutImage(
-            [woodCribbingMarketSpec],
-            filterScoutRows(workshopSupportParts, { terms: ["cribbing", "hardwood", "wedge"] }),
-            scoutReferenceImage("../../deliverables/selling_site_images/images/manual_overrides/suspension_hardwood_cribbing_cut_set_flat_lay.jpg", "Hardwood cribbing cut-set reference image", "hardwood_cribbing")
-          ),
-          ...attachScoutImage(
             [toolbenchMarketSpec],
-            filterScoutRows(workshopSupportParts, { entryIds: ["tool_local_toolbench"], terms: ["toolbench", "workbench"] }),
+            toolbenchImageRows,
             scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/toolbench.jpg", "Toolbench/workbench reference image", "toolbench")
-          ),
-          ...attachScoutImage(
-            [pillarDrillMarketSpec],
-            filterScoutRows(workshopSupportParts, { entryIds: ["tool_local_bench_drill"], terms: ["pillar drill", "bench drill", "drill press"] }),
-            scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/bench_drill.jpg", "Pillar drill / bench drill reference image", "bench_drill")
-          ),
-          ...attachScoutImage(
-            [benchViceMarketSpec],
-            filterScoutRows(workshopSupportParts, { entryIds: ["tool_local_bench_vice"], terms: ["bench vice", "workshop vice", "vise"] }),
-            scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/bench_vice.jpg", "Bolt-down bench vice reference image", "bench_vice")
           ),
         ],
         docLinks: [
           scoutDocLink("docs/local-market-procurement-workstream.md", "Local market procurement workstream"),
-          scoutDocLink("docs/suspension-wood-cribbing-merchant-spec.md", "Wood cribbing merchant spec"),
-          scoutDocLink("data/manual/fabrication/suspension_wood_cribbing_rev_a/fabricator_cut_list.csv", "Wood cribbing cut list"),
         ],
-        exactSpecRows: workshopSupportExactRows,
+        exactSpecRows: workshopSupportExactRows.filter((row) =>
+          cleanString(row && row.sourceBasis).includes("tool_local_toolbench")
+        ),
       },
       {
         id: "fabrication",
@@ -4112,7 +4199,7 @@
       return {
         key: "rubber-bump-stops",
         label: "Bump Stops",
-        note: "Pieces below are new molded stop purchases unless an exact physical sample is used for a mold.",
+        note: "Pieces below are vehicle-bracket-controlled mould releases because the old rubber is too decayed to copy.",
       };
     }
     if (id.includes("EXH") || text.includes("exhaust")) {

@@ -54,6 +54,11 @@ def get_wiring_stock_signal() -> tuple[int, int]:
 
 def sourcing_mode(item: str, workstream: str) -> str:
     item_lower = item.lower()
+    if re.search(r"masking|solvent-safe|lint-free|wipes?|tape", item_lower) or re.search(
+        r"(thread|hole|tapered|rubber|silicone|plastic).{0,20}plugs?|plugs?.{0,20}(thread|hole|tapered|rubber|silicone|plastic)",
+        item_lower,
+    ):
+        return "local_hardware_common"
     if workstream == "brake_system":
         if re.search(r"fluid|cleaner|cap|plug|consumable", item_lower):
             return "local_hardware_common"
@@ -240,6 +245,14 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
             "DOT 3 brake fluid is already ordered separately; hydraulics must not be opened until that sealed fluid and the remaining caps/plugs, cleaner, and bleed tools are available.",
         )
 
+    if entry_id == "part_chassis_masking_plugs_tape_solvent_wipes":
+        return (
+            "buy_chassis_masking_consumables",
+            "pre_chassis_coating",
+            "small_consumables_buy",
+            "Needed before solvent wipe, primer, seam sealer, and Raptor so threads, drains, grounds, body-mount faces, and line/fitting interfaces stay serviceable.",
+        )
+
     if entry_id in {
         "part_mech_fuel_hose_and_clamps",
         "part_mech_heater_hose_set",
@@ -340,6 +353,8 @@ def supplier_hint(mode: str, decision: str) -> str:
         "defer_until_mount_failure_or_engine_lift_scope",
     }:
         return "No supplier action now."
+    if decision == "track_in_flight_order":
+        return "Already ordered; track delivery, receipt condition, and quantity/spec match before use."
     if decision == "capture_body_hardware_samples_then_order":
         return "Use Bilal Ganj/body hardware, rubber trim, fastener, or machine-shop suppliers after old samples are sorted and measured."
     if decision == "buy_body_fastener_hardware_from_samples":
@@ -348,6 +363,8 @@ def supplier_hint(mode: str, decision: str) -> str:
         return "Use local electrical markets; require compact covered ATO/ATC blade-fuse boxes with secure lids."
     if decision in {"buy_bleed_consumables_before_opening_hydraulics", "buy_remaining_brake_bleed_consumables"}:
         return "Use a local brake supplier, Daraz/Autohub, or the workshop for caps/plugs, brake cleaner, bleed hose/bottle or bleeder kit, rags, gloves, and catch tray; do not rebuy DOT 3 fluid unless the Autohub order fails."
+    if decision == "buy_chassis_masking_consumables":
+        return "Use a local paint/bodywork supplier, hardware shop, or Daraz for automotive masking tape, assorted tapered plugs/caps, and solvent-safe lint-free wipes."
     if decision in {"hose_rubber_release_hold", "hose_local_market_order_ready"}:
         return "Use the hose local market order sheet with local hose, radiator, diesel, rubber, and hydraulic shops; order by material, ID/OD, rating, and listed buy length."
     if decision == "clutch_hydraulic_inspect_then_exact_order":
@@ -399,6 +416,8 @@ def basket_id_for_row(decision: str, mode: str, workstream: str) -> str:
         return "basket_merged_brake_suspension_window"
     if decision in {"buy_bleed_consumables_before_opening_hydraulics", "buy_remaining_brake_bleed_consumables"}:
         return "basket_brake_hydraulic_opening_prep"
+    if decision == "buy_chassis_masking_consumables":
+        return "basket_chassis_coating_consumables"
     if decision in {"hose_rubber_release_hold", "hose_local_market_order_ready"}:
         return "basket_hose_rubber_local_order_ready"
     if decision == "clutch_hydraulic_inspect_then_exact_order":
@@ -459,6 +478,7 @@ def build_baskets(rows: list[dict[str, str]]) -> list[dict[str, str]]:
         "basket_suspension_setup": ("Suspension Setup Support", "Buy support/cribbing items before suspension disassembly."),
         "basket_merged_brake_suspension_window": ("Merged Brake/Suspension Window", "Capture fitted hardware and old samples, then order exact brake parts for the Ironman install window."),
         "basket_brake_hydraulic_opening_prep": ("Brake Hydraulic Opening Prep", "Buy the remaining caps/plugs, brake cleaner, bleed hose/bottle or bleeder kit, rags, gloves, and catch tray before opening hydraulic lines; DOT 3 fluid is already ordered separately."),
+        "basket_chassis_coating_consumables": ("Chassis Coating Consumables", "Buy or track masking tape and solvent-safe lint-free wipes before solvent wipe, primer, seam sealer, and Raptor; only buy separate tapered plugs if the on-hand grommet pack fails fit/solvent checks."),
         "basket_hose_rubber_local_order_ready": ("Hose/Rubber Local Order Ready", "Fuel, coolant, heater, vacuum, and breather stock rows have explicit local-market buy lengths; final trim, clamp, chafe, and leak checks remain install tasks."),
         "basket_clutch_hydraulic_inspection": ("Clutch Hydraulic Inspection", "Inspect master/slave/line condition first, then order exact hydraulic refresh parts only if failed."),
         "basket_body_fastener_hardware": ("Body Fastener Hardware", "Buy exact body fastener/captive hardware from old samples; track Millat-covered stock separately."),
@@ -497,6 +517,7 @@ def write_report(pass2_rows: list[dict[str, str]], basket_rows: list[dict[str, s
             and row["pass2_decision"] in {"buy_minimum_qty_now", "track_in_flight_order"}
         )
         or row["pass2_decision"] == "buy_remaining_brake_bleed_consumables"
+        or row["pass2_decision"] == "buy_chassis_masking_consumables"
     ]
 
     lines: list[str] = []
@@ -534,10 +555,11 @@ def write_report(pass2_rows: list[dict[str, str]], basket_rows: list[dict[str, s
     lines.append("## Practical Outcome")
     lines.append("")
     lines.append("- Keep only minimal rust-control buys immediate for tub-off.")
-    lines.append("- Treat the full body chemistry stack as a post-rust-map bundle, not separate early purchases.")
+    lines.append("- Use the received body-chemistry stock after receipt/condition checks; do not rebuy solvent, seam sealer, cavity wax, or primer unless a received item fails inspection.")
     lines.append("- Move most electrical purchases to stock-audit/top-up mode.")
     lines.append("- Move mechanical baseline list into one local Toyota/common supplier bundle after inspection.")
     lines.append("- Keep DOT 3 brake-fluid opening prep purchase-ready before hydraulic lines are opened.")
+    lines.append("- Track chassis masking tape and solvent-safe wipe delivery before primer/sealer/Raptor work; use on-hand grommets as temporary open-hole masking only after fit and solvent checks.")
     lines.append("- Move brake rows into the merged suspension/brake window: capture measurements and samples first, then order exact parts.")
     lines.append("- Move fuel/coolant/heater/vacuum hose rows to the local-market order sheet with explicit buy lengths, while keeping final trim, clamp, chafe, and leak checks at install.")
     lines.append("- Keep clutch hydraulics inspect-first, then buy exact master/slave/flex/hard-line parts only if failed.")

@@ -73,8 +73,8 @@
 
 - This track is now open because the tub is off; keep it active until all structural unknowns are closed.
 - Clean and inspect all rails, crossmembers, and mount points before deciding patch vs section replacement.
-- After inspection signoff, run the protection stack in order: rust treatment only where rust remains, full converter/residue removal and dry signoff, wax-and-grease wipe with flash-off, masking, zinc-rich 2K epoxy primer, seam sealer where required after primer, one exposed top protection by zone (chassis black/topcoat or Raptor), then HB Body U900 cavity-wax spray cans last in hidden sections.
-- Do not assume black paint plus Raptor as a default stack. Use black/topcoat or Raptor by zone unless the product data confirms the exact cure, scuff, and recoat compatibility for putting Raptor over the black paint.
+- After inspection signoff, run the protection stack in order: rust treatment only where rust remains, full converter/residue removal and dry signoff, wax-and-grease wipe with flash-off, masking, zinc-rich 2K epoxy primer, seam sealer where required after primer, on-hand U-POL/Raptor exposed top protection, then HB Body U900 cavity-wax spray cans last in hidden sections.
+- Do not add a chassis-black/topcoat layer under Raptor unless the exact product data confirms the cure, scuff, and recoat compatibility for that stack.
 - Treat body-mount procurement control as part of chassis fixing: early pre-`1/79` six-station main tub set, separate front support pair, sleeves/cups, `M10 x 1.25` class `8.8` hardware, and flat shim pack.
 - Body-mount rubbers and shims are fit-critical and stay `NEW_ONLY`; preserve old samples and original shim packs by station until the dry trial fit is closed.
 - Do not sign off chassis coating on mount seats until the body-mount dry set proves pedestal height, thread condition, shim need, and front-support stack.

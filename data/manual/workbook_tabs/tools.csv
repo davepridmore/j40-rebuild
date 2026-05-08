@@ -30,7 +30,7 @@ excel_row,col_1,col_2,col_3,col_4,col_5,col_6,col_7
 29,10 meter hose for ar compressINGCO Air hose - AH1151 × 1or,2850,almirajtrading.com.pk,M,N,not_procured,Explicitly not purchased/received yet.
 30,Jumnp Leads,,,Y,Y,section_header,Label/group row.
 31,Jacks and stands,,,,,section_header,Label/group row.
-41,Ar-CO2 Canister,42362,pakoxygen,No,Y,ordered_in_flight,Paid and awaiting arrival.
+41,Ar-CO2 Canister,42362,pakoxygen,Y,Y,procured_or_on_hand,Received; user confirmed Ar-CO2 canister arrived on 2026-05-08.
 42,E7018 Fortrex Electodes,2325,pakoxygen,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
 43,E7018 Fortrex Electodes - x2,8500,pakoxygen,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
 44,E6013 Zodian,2248,pakoxygen,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.

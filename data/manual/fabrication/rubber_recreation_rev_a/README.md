@@ -42,10 +42,12 @@ The shim packs are controlled in `machine_definitions.csv` / `machine_definition
 
 The strip files are not final production cut patterns. They define stock envelope, section, and hole/slot working basis, but the actual left/right strip outline and hole centres must be traced from the physical rubber and metal carrier.
 
-The exhaust holder is controlled as a teardrop cushion style using Toyota `90917-08004` / `17572-92000` only as a reference shape. Source exact new molded stock if it is in hand; otherwise the CAD file is a local-copy control and needs a genuine sample or intact original before a production mould is cut. Bump stops also cannot rely on Toyota/manufacturer supply: use exact new molded stock if found, or have the shop mould from the physical sample or 3D scan. Do not make bump stops from simple cut rubber blocks.
+The exhaust holder is controlled as a teardrop cushion style using Toyota `90917-08004` / `17572-92000` only as a reference shape. Source exact new molded stock if it is in hand; otherwise the CAD file is a local-copy control and needs a genuine sample or intact original before a production mould is cut.
+
+Bump stops cannot rely on Toyota/manufacturer supply and the old rubbers are too decayed to copy. Public OEM/catalog sources checked confirm the Toyota numbers, application, and `70 mm`/`60 mm` height split, but not the Toyota mould drawing, compound recipe, or load/deflection curve. Use `docs/bump-stop-fabrication-spec-20260504.md`: long `48304-60010` positions are `70 mm` free height, the right-front `48304-60020` is `60 mm` free height, and all base footprints, bolt/stud patterns, and contact offsets are released from the actual cleaned vehicle brackets and axle strike pads. A NOS/genuine sample is the preferred master if found; otherwise reproduce the Toyota-style two-ear steel saddle/backing plate, tapered/radiused progressive rubber body, and flat rectangular strike face. Do not make bump stops from simple cut rubber blocks.
 
 ## Material
 
-Use new black automotive mount-grade solid rubber only: EPDM or NR/SBR, Shore A `60 +/-5`. Reject tyre rubber, crumb rubber, sponge foam, mixed offcuts, used rubber, salvage rubber, and unmarked compound.
+Use new black automotive mount-grade solid rubber only: EPDM or NR/SBR, Shore A `60 +/-5`, for body/front-support rubbers. Bump stops use the separate higher-duty target in the bump-stop spec: NR/SBR automotive bump-stop rubber Shore A `70 +/-5` bonded/captive to a new coated steel saddle, or cast PU Shore A `80 +/-5` only if the progressive geometry and captive steel mounting are held. Reject tyre rubber, crumb rubber, sponge foam, mixed offcuts, used rubber, salvage rubber, and unmarked compound.
 
 Steel cups must be `2.5-3.0 mm` steel, deburred and zinc plated or epoxy primed after forming. Sleeves are still controlled by stack dry-fit and are not released as a cut DXF.

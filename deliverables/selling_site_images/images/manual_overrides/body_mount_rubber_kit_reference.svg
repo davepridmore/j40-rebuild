@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Body mount rubber cushion and front support rubber kit reference">
+  <rect width="1200" height="900" fill="#f6f8f7"/>
+  <rect x="72" y="72" width="1056" height="756" rx="34" fill="#ffffff" stroke="#d7ded9" stroke-width="4"/>
+  <g stroke="#202825" stroke-width="10" stroke-linejoin="round">
+    <g>
+      <ellipse cx="330" cy="330" rx="150" ry="58" fill="#39433e"/>
+      <rect x="180" y="232" width="300" height="98" fill="#1f2724"/>
+      <ellipse cx="330" cy="232" rx="150" ry="58" fill="#39433e"/>
+      <ellipse cx="330" cy="232" rx="66" ry="26" fill="#ffffff"/>
+      <ellipse cx="330" cy="232" rx="34" ry="14" fill="#1f2724"/>
+    </g>
+    <g>
+      <ellipse cx="808" cy="330" rx="130" ry="52" fill="#39433e"/>
+      <rect x="678" y="246" width="260" height="84" fill="#1f2724"/>
+      <ellipse cx="808" cy="246" rx="130" ry="52" fill="#39433e"/>
+      <ellipse cx="808" cy="246" rx="56" ry="22" fill="#ffffff"/>
+      <ellipse cx="808" cy="246" rx="28" ry="12" fill="#1f2724"/>
+    </g>
+    <path d="M206 578c0-62 50-112 112-112h244c62 0 112 50 112 112v98c0 62-50 112-112 112H318c-62 0-112-50-112-112z" fill="#252d2a"/>
+    <circle cx="390" cy="628" r="48" fill="#ffffff"/>
+    <circle cx="518" cy="628" r="48" fill="#ffffff"/>
+    <path d="M778 520h172c58 0 104 46 104 104v54c0 58-46 104-104 104H778c-58 0-104-46-104-104v-54c0-58 46-104 104-104z" fill="#252d2a"/>
+    <circle cx="812" cy="652" r="44" fill="#ffffff"/>
+    <circle cx="920" cy="652" r="44" fill="#ffffff"/>
+  </g>
+  <g fill="none" stroke="#7f8a84" stroke-width="8" stroke-linecap="round">
+    <path d="M210 418h242"/>
+    <path d="M696 418h222"/>
+    <path d="M252 798h398"/>
+    <path d="M716 798h292"/>
+  </g>
+</svg>

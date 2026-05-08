@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112mm" height="216mm" viewBox="0 0 112 216">
+  <style>
+    .cut { fill: none; stroke: #111; stroke-width: 0.5; }
+    .drill { fill: none; stroke: #111; stroke-width: 0.5; }
+    .relief { fill: none; stroke: #111; stroke-width: 0.5; }
+    .form { fill: none; stroke: #0b5fff; stroke-width: 0.4; stroke-dasharray: 4 3; }
+    .mark { fill: none; stroke: #8a5a00; stroke-width: 0.4; stroke-dasharray: 3 2; }
+    .template { fill: none; stroke: #7a1f8a; stroke-width: 0.45; stroke-dasharray: 5 3; }
+    .center { stroke: #777; stroke-width: 0.25; stroke-dasharray: 2 2; }
+    .title { font: 700 7px monospace; fill: #111; }
+    .note { font: 4.8px monospace; fill: #111; }
+  </style>
+  <text x="24" y="14" class="title">FS-OVAL front support two-hole isolator pad | qty 2 matched pieces | units: mm</text>
+  <g transform="translate(24,24)">
+  <polygon class="cut" points="0,32 0.486,26.443 1.93,21.055 4.287,16 7.487,11.431 11.431,7.487 16,4.287 21.055,1.93 26.443,0.486 32,0 37.557,0.486 42.945,1.93 48,4.287 52.569,7.487 56.513,11.431 59.713,16 62.07,21.055 63.514,26.443 64,32 64,64 63.514,69.557 62.07,74.945 59.713,80 56.513,84.569 52.569,88.513 48,91.713 42.945,94.07 37.557,95.514 32,96 26.443,95.514 21.055,94.07 16,91.713 11.431,88.513 7.487,84.569 4.287,80 1.93,74.945 0.486,69.557 0,64" /><polygon class="relief" points="14,42 14.058,41.415 14.228,40.852 14.506,40.333 14.879,39.879 15.333,39.506 15.852,39.228 16.415,39.058 17,39 47,39 47.585,39.058 48.148,39.228 48.667,39.506 49.121,39.879 49.494,40.333 49.772,40.852 49.942,41.415 50,42 50,54 49.942,54.585 49.772,55.148 49.494,55.667 49.121,56.121 48.667,56.494 48.148,56.772 47.585,56.942 47,57 17,57 16.415,56.942 15.852,56.772 15.333,56.494 14.879,56.121 14.506,55.667 14.228,55.148 14.058,54.585 14,54" /><circle class="cut" cx="32" cy="16" r="6" /><circle class="cut" cx="32" cy="80" r="6" /><circle class="mark" cx="32" cy="16" r="14.5" /><line class="center" x1="32" y1="0" x2="32" y2="96" /><line class="center" x1="0" y1="16" x2="64" y2="16" /><line class="center" x1="0" y1="80" x2="64" y2="80" />
+  </g>
+  <text x="24" y="162" class="note">Overall 96 x 64 with two 12 mm holes on 64 mm centre spacing.</text><text x="24" y="172" class="note">The 36 x 18 R3 relief is shown as a cut/pocket control. Confirm whether it is through-cut or blind relief on the physical part.</text><text x="24" y="182" class="note">Top 29 mm insert/boss mark is not a through cut. Reuse or reproduce the metal insert if the original design uses one.</text><text x="24" y="192" class="note">Make the two pads as a matched pair and dry-fit the front support before accepting the batch.</text>
+</svg>

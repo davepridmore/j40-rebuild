@@ -1,15 +1,15 @@
 # Suspension Workstream - Ironman Foam Cell Kit
 
-- Updated: 2026-05-04
+- Updated: 2026-05-08
 - Workstreams: `steering_brakes_suspension`, `suspension_upgrade`
-- Current state: ordered, pending delivery
+- Current state: main Ironman kit received; separate front damper pair pending
 - Active path: Ironman Foam Cell medium suspension kit for Toyota Land Cruiser 40 Series
 - Order evidence: `data/manual/procurement_queue.csv`, `data/manual/orders_receipts_audit_queue.csv`, `data/manual/workstream_status.csv`
 - Merged brake execution sheet: [suspension-brake-merged-work-plan.md](suspension-brake-merged-work-plan.md)
 
 ## Decision
 
-The suspension path is now the incoming Ironman Foam Cell set. The previous local fabricated leaf-spring path, OME/EMU shock path, Bilstein path, separate generic bush path, separate shackle path, and separate U-bolt path stay out of active buying unless the Ironman receipt check proves a missing, damaged, or incorrect component.
+The suspension path is now the Ironman Foam Cell set. The main shipment has arrived, but the separate `24635FE` front damper pair is still pending. The previous local fabricated leaf-spring path, OME/EMU shock path, Bilstein path, separate generic bush path, separate shackle path, and separate U-bolt path stay out of active buying unless the Ironman receipt check proves a missing, damaged, or incorrect component.
 
 Do not start final installation until both shipments are physically present: the main Ironman kit and the separate front damper pair.
 

@@ -6,20 +6,23 @@ Scout position: braking, clutch hydraulic, hose, fuel/vacuum, hard-line, parking
 
 New-only rule: do not buy used/salvage rubbers, hoses, hydraulic assemblies, hard lines, parking-brake cables, electrical wire/cable, terminals, clips, clamps, fittings, grommets, boots, pads, hangers, or similar consumables for final installation.
 
-The dashboard Scout tables now show a photo thumbnail for every exact component row. This Markdown pack uses the same references, including the user-supplied actual compact fuse-box photo and a real bolt-down bench-vice photo.
+The dashboard Scout tables now use current-car crops for hose, pipe, brake, fuel, and clutch rows where usable photos exist, plus the user-supplied compact fuse-box photo and catalog references for the brake booster and workshop bench.
 
 ## Photo References
 
 | Component family | Photo reference |
 | --- | --- |
 | Compact cabin fuse box | <img src="../deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png" width="90" alt="Compact old-OEM fuse box photo"> |
-| Formed metal coolant pipe / connector hoses | <img src="../photos/20260502_004106_gp_wlYlUahA.jpg" width="90" alt="Formed coolant pipe sample photo"> |
-| Radiator and heater hoses | <img src="../deliverables/selling_site_images/images/reference_catalog/radiator_hose.jpg" width="90" alt="Radiator hose reference"> |
-| Fuel, vacuum, and breather hose stock | <img src="../deliverables/selling_site_images/images/reference_catalog/fuel_hose.jpg" width="90" alt="Fuel hose reference"> |
-| Brake and clutch hydraulic lines | <img src="../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg" width="90" alt="Brake line and hose reference"> |
+| Hose, pipe, and fitting overview | <img src="../deliverables/selling_site_images/images/manual_overrides/hose_pipe_current_car_reference_grid_20260504.jpg" width="90" alt="Current car hose pipe and fitting crop grid"> |
+| Formed metal coolant pipe / connector hoses | <img src="../deliverables/selling_site_images/images/manual_overrides/formed_coolant_pipe_sample_crop_20260502.jpg" width="90" alt="Formed coolant pipe sample crop"> |
+| Radiator and heater hoses | <img src="../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg" width="90" alt="Current car radiator and heater hose crop"> |
+| Fuel hose and line fittings | <img src="../deliverables/selling_site_images/images/manual_overrides/fuel_hose_line_fittings_current_car_crop_20260503.jpg" width="90" alt="Current car fuel hose line and fitting crop"> |
+| Vacuum and breather hoses | <img src="../deliverables/selling_site_images/images/manual_overrides/vacuum_breather_hose_current_car_crop_20260503.jpg" width="90" alt="Current car vacuum and breather hose crop"> |
+| Brake hydraulic hoses and hard lines | <img src="../deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg" width="90" alt="Current car front brake hose fitting crop"> |
+| Rear brake hard-line and flex context | <img src="../deliverables/selling_site_images/images/manual_overrides/rear_center_brake_flex_current_car_crop_20260501.jpg" width="90" alt="Current car rear brake flex and hard line crop"> |
+| Clutch hydraulic line | <img src="../deliverables/selling_site_images/images/manual_overrides/clutch_hydraulic_slave_line_current_car_crop_20260430.jpg" width="90" alt="Current car clutch hydraulic line crop"> |
 | Chassis/body rubbers | <img src="../deliverables/selling_site_images/images/reference_catalog/body_mount_kit.jpg" width="90" alt="Body mount rubber reference"> |
 | Brake booster | <img src="../deliverables/selling_site_images/images/reference_catalog/brake_booster.jpg" width="90" alt="Brake booster reference"> |
-| Workshop bench vice | <img src="../deliverables/selling_site_images/images/reference_catalog/bench_vice.jpg" width="90" alt="Bolt-down bench vice reference"> |
 
 ## Pipes And Hard Lines
 
@@ -70,7 +73,7 @@ Old cables are length/end samples only. Any cable bought for final installation 
 
 All fitted rubber parts in this section are new-only. Old rubbers and photos are measurement samples, not reuse stock.
 
-Toyota/OE numbers below are reference shapes only. The scout must still quote the local fabrication route using the stated dimensions, old sample, or 3D scan; do not wait on Toyota supply before capturing material, mould, first-article, and dry-fit requirements.
+Toyota/OE numbers below are reference shapes only. The scout must still quote the local fabrication route using the stated dimensions, old sample, 3D scan, or vehicle-bracket measurement control; do not wait on Toyota supply before capturing material, mould, first-article, and dry-fit requirements.
 
 | ID | Component | Qty | Exact spec | Dimensions | Material | Hold / reject |
 | --- | --- | ---: | --- | --- | --- | --- |
@@ -83,15 +86,15 @@ Toyota/OE numbers below are reference shapes only. The scout must still quote th
 | `FS-STRIP-L` | Front-support strip / liner, left | `1` | Trace physical left carrier before final CNC cut. | Stock envelope `165 x 40`; base thickness `8`; raised/load pad `14`; provisional holes/slots `11` or `11 x 16` at confirmed positions. | Same mount-grade rubber; bond to carrier only with proper rubber-to-metal process. | Do not final cut from photo alone. |
 | `FS-STRIP-R` | Front-support strip / liner, right | `1` | Trace physical right carrier before final CNC cut. | Same envelope as left unless carrier proves asymmetry. | Same as left. | Do not assume mirror if carrier differs. |
 | `EXH-HGR-90917` | Exhaust pipe teardrop cushion | as fitted | Source an exact new teardrop cushion if available, otherwise mould a sample-matched rubber-metal cushion from a genuine sample or intact original. Toyota `90917-08004` / `17572-92000` is a shape reference only. | Teardrop outline `48 x 86`; lower bulb `R24`; top hole `9`; hanger slot `16 x 22`; raised boss/recess `36 x 42`; thickness target `22` unless sample proves otherwise; confirm side profile, mould depth, insert depth, and reinforcement. | Heat/vibration-resistant molded exhaust-hanger rubber, Shore A `60 +/-5`, with bonded/internal metal insert if original construction uses it. | Reject generic round ring/two-hole strap, shop cannot reproduce insert/reinforcement, or no sample/scan for mould depth. |
-| `BUMP-F-L` | Front left bump stop | `1` | Source exact new molded stock or reproduce from the physical sample/3D scan. Toyota-style `48304-60010` is only the left-front reference shape. | Match base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and axle contact face location from old stop/bracket. | Molded automotive SBR/NR/PU bump-stop compound, matched to left-front duty. | Do not fabricate from simple cut block or universal stop; reject wrong contact point. |
-| `BUMP-F-R` | Front right bump stop | `1` | Source exact new molded stock or reproduce from the physical sample/3D scan. Toyota-style `48304-60020` is only the shorter/right-front reference shape. | Match right bracket base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and axle contact face location. | Same compound family as left, but right-side geometry must stay distinct. | Do not install left stop here; reject universal or wrong-height part. |
-| `BUMP-R` | Rear bump stops | `2` | Source exact new molded rear pair or reproduce from physical samples/3D scan. Toyota-style `48304-60010` is only a rear-pair reference. | Match rear bracket/base, bolt pattern/thread, free height, compressed height, progressive profile, contact face location, loaded axle clearance, and final ride height. | Matched rear molded automotive SBR/NR/PU pair. | Check Ironman ride height before final stop decision; reject simple blocks or unmatched pair. |
+| `BUMP-F-L` | Front left bump stop | `1` | Fabricate or source exact long molded stock. Toyota `48304-60010` controls the long-stop family and `70 mm` free height; public sources do not expose the Toyota mould drawing, so do not copy the decayed old rubber. | Reproduce Toyota-style two-ear steel saddle/backing plate, tapered/radiused progressive rubber body, and flat rectangular strike face. Release base footprint `BL x BW`, bolt/stud pitch `P`, hole/thread `D`, strike-pad offset `X/Y`, loaded gap `G`, and full-bump clearance `F` from the left-front bracket and axle strike pad. | New automotive NR/SBR bump-stop rubber, Shore A `70 +/-5`, bonded or captive to new coated steel saddle; cast PU Shore A `80 +/-5` only if the same progressive geometry and captive steel mounting are held. | Fabricator must supply sketch/CAD, material declaration, and one first article; it must seat flat, contact within `+/-5`, survive 50 percent compression without saddle bend/bond failure, and engage before shock/tyre/spring/brake-hose limits; no simple cut block. |
+| `BUMP-F-R` | Front right bump stop | `1` | Fabricate or source exact short molded stock. Toyota `48304-60020` controls the short right-front family and `60 mm` free height. | Same Toyota-style steel saddle/tapered body/flat strike-face requirement as left, but released from the right-front bracket and strike pad. Do not use the `70 mm` long-stop height here unless a full-bump test releases trimming. | Same compound family and captive steel construction as left, but right-side geometry and height must stay distinct. | Reject aftermarket or locally made right-front stops at `70 mm` unless deliberately trimmed/released by vehicle full-bump check. |
+| `BUMP-R` | Rear bump stops | `2` | Fabricate or source exact long molded rear pair. Toyota `48304-60010` controls the long rear-stop family and `70 mm` free height. | Same Toyota-style steel saddle/tapered body/flat strike-face requirement; release each rear base, bolt pattern, contact offset, loaded gap, and full-bump clearance from the rear brackets and strike pads; rear pair height match `<=1`. | Matched rear NR/SBR bump-stop rubber pair, Shore A `70 +/-5`, bonded/captive to coated steel saddles; PU fallback only as a matched pair with captive steel mounting. | Check Ironman ride height and axle travel before mould release; reject simple blocks, universal stops, failed saddle/bond tests, or unmatched rear pair. |
 
 ## Compact Cabin Fuse Protection
 
 Current architecture: three isolated under-dash branch-fuse groups, not three random physical boxes.
 
-Visual reference to send with the order: `deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png`, the user-supplied actual compact old-OEM fuse box. The old `junction_block.png` line drawing is retained only as background and is not the control image.
+Visual reference is held: the previous compact fuse-box image was marked incorrect on 2026-05-04. Do not send that image as the control photo. Capture correct front, rear-terminal, cover, and side photos of the existing donor/reference block before buying the matching add-on carrier.
 
 | Group | Minimum fused outputs | Input behavior |
 | --- | ---: | --- |

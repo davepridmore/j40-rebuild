@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Trim screws countersunk screws and cup washers reference">
+  <rect width="1200" height="900" fill="#f7f8f6"/>
+  <rect x="72" y="72" width="1056" height="756" rx="34" fill="#ffffff" stroke="#d7ddd8" stroke-width="4"/>
+  <g stroke="#34413c" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="rotate(-18 315 356)">
+      <rect x="208" y="244" width="96" height="72" rx="16" fill="#cfd8d2"/>
+      <path d="M304 280h266l42 42-42 42H304z" fill="#dfe5e1"/>
+      <path d="M348 282l-32 80M402 282l-32 80M456 282l-32 80M510 282l-32 80" fill="none"/>
+      <path d="M224 280h64" fill="none"/>
+    </g>
+    <g transform="rotate(16 760 322)">
+      <path d="M646 234h108l34 52-34 52H646l-34-52z" fill="#cfd8d2"/>
+      <path d="M754 286h228l38 42-38 42H754z" fill="#dfe5e1"/>
+      <path d="M800 288l-28 80M854 288l-28 80M908 288l-28 80" fill="none"/>
+      <path d="M656 286h88" fill="none"/>
+    </g>
+    <g transform="translate(0 24)">
+      <path d="M254 606c88-64 216-64 304 0v116c-88 64-216 64-304 0z" fill="#dfe5e1"/>
+      <ellipse cx="406" cy="606" rx="152" ry="58" fill="#f7f8f6"/>
+      <ellipse cx="406" cy="606" rx="70" ry="26" fill="#ffffff"/>
+      <path d="M642 606c88-64 216-64 304 0v116c-88 64-216 64-304 0z" fill="#dfe5e1"/>
+      <ellipse cx="794" cy="606" rx="152" ry="58" fill="#f7f8f6"/>
+      <ellipse cx="794" cy="606" rx="70" ry="26" fill="#ffffff"/>
+    </g>
+  </g>
+  <g fill="none" stroke="#7f8b85" stroke-width="8" stroke-linecap="round">
+    <path d="M246 206l196 0"/>
+    <path d="M664 206l196 0"/>
+    <path d="M292 732h230"/>
+    <path d="M680 732h230"/>
+  </g>
+</svg>

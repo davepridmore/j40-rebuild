@@ -27,11 +27,12 @@ DXF files:
 - `fs_oval_front_support_pad_rev_a.dxf` - two-hole oval front-support isolator pad, qty `2`
 - `fs_strip_left_template_blank_rev_a.dxf` - left strip quote/template blank, qty `1`
 - `fs_strip_right_template_blank_rev_a.dxf` - right strip quote/template blank, qty `1`
+- `bump_stop_vehicle_measurement_control.svg` - bump-stop vehicle measurement control; no DXF because the mould release comes from the vehicle bracket/strike-pad measurements
 
 Release position:
 - Circular cushions, cup blanks, and the oval pad are ready for quote and first article.
 - Shim packs are controlled as new flat steel thickness packs in the machine definitions; final CNC outline waits for original station footprint tracing.
-- Bump stops remain controlled buy/sample-match items, not simple CNC-cut rubber.
+- Bump stops are controlled by [bump-stop-fabrication-spec-20260504.md](bump-stop-fabrication-spec-20260504.md): `48304-60010` long positions are `70 mm`, `48304-60020` right-front is `60 mm`, and base/bolt/contact release comes from the actual vehicle brackets and strike pads. Public sources do not expose the Toyota mould drawing, so the fabrication control is a Toyota-style two-ear steel saddle/backing plate, tapered/radiused progressive rubber body, flat rectangular strike face, first-article compression check, and no simple CNC-cut rubber block.
 - Final batch production still waits for the hold fields in `data/manual/rubber_recreation_measurement_closure.csv`.
 - Strip files are stock-envelope/template blanks only. Trace the physical left/right strip rubbers and metal carriers before production cutting.
 

@@ -122,37 +122,37 @@
   {
     "part_id": "BUMP-F-L",
     "qty": "1",
-    "machine_route": "source exact molded stop or sample/scan mould; not CNC-cut",
-    "machine_files": "none",
-    "coordinate_system": "physical sample or 3D scan controls final mould",
-    "exact_definition_mm": "48304-60010 is a left-front reference shape only; if exact new molded stock is unavailable, reproduce from physical sample or 3D scan with a mould matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location",
-    "material": "Automotive SBR/NR/PU bump-stop compound suitable for molded progressive stops",
-    "tolerance": "old sample/scan and bracket fit control; do not substitute universal height/profile or simple cut block",
-    "release_status": "quote exact new stock or local moulding from sample/scan; Toyota/manufacturer number is reference only",
-    "shop_note": "Verify against left-front bracket, bolt pattern, loaded clearance, and axle contact point before purchase or mould release."
+    "machine_route": "vehicle-bracket-controlled mould/cast Toyota-style progressive bump stop with steel saddle; not CNC-cut",
+    "machine_files": "bump_stop_vehicle_measurement_control.svg",
+    "coordinate_system": "vehicle bracket and axle strike pad in mm; old rubber is not the master; NOS/genuine part preferred if obtainable",
+    "exact_definition_mm": "Toyota reference 48304-60010 long stop; target free height 70 +/-1; reproduce Toyota-style two-ear steel saddle/backing plate and tapered/radiused rubber body from reference image or NOS sample; release base footprint from vehicle BL x BW with 0.5-1.0 edge clearance; release bolt/stud pitch P and hole/thread D from bracket; flat rectangular contact face centred on axle strike pad within +/-5; no square block",
+    "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5 bonded or captive to new deburred coated steel saddle preferred; cast automotive PU Shore A 80 +/-5 acceptable only with same progressive shape and captive steel mounting",
+    "tolerance": "height +/-1; base and hole location +/-0.5 after vehicle release; clearance holes +0.5/-0.0; contact centre +/-5; steel saddle must not bend; rubber/steel bond or captive joint must survive compression",
+    "release_status": "vehicle-measurement release required before mould; exact external height known",
+    "shop_note": "Fabricator must supply side/profile sketch, saddle hole layout, material declaration, and one first article; verify flat bracket seating, hand bolt fit, loaded/full-bump contact, and 50 percent compression recovery before full set."
   },
   {
     "part_id": "BUMP-F-R",
     "qty": "1",
-    "machine_route": "source exact molded stop or sample/scan mould; not CNC-cut",
-    "machine_files": "none",
-    "coordinate_system": "physical sample or 3D scan controls final mould",
-    "exact_definition_mm": "48304-60020 is a shorter/right-front reference shape only; if exact new molded stock is unavailable, reproduce from physical sample or 3D scan with a mould matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location",
-    "material": "Automotive SBR/NR/PU bump-stop compound suitable for molded progressive stops",
-    "tolerance": "old sample/scan and bracket fit control; do not substitute left stop, universal height/profile, or simple cut block",
-    "release_status": "quote exact new stock or local moulding from sample/scan; Toyota/manufacturer number is reference only",
-    "shop_note": "Verify against right-front bracket, bolt pattern, loaded clearance, and axle contact point before purchase or mould release."
+    "machine_route": "vehicle-bracket-controlled mould/cast Toyota-style short right-front bump stop with steel saddle; not CNC-cut",
+    "machine_files": "bump_stop_vehicle_measurement_control.svg",
+    "coordinate_system": "vehicle right-front bracket and axle strike pad in mm; old rubber is not the master; NOS/genuine part preferred if obtainable",
+    "exact_definition_mm": "Toyota reference 48304-60020 short right-front stop; target free height 60 +/-1; reproduce Toyota-style two-ear steel saddle/backing plate and tapered/radiused rubber body from reference image or NOS sample; do not use 70 mm long-stop height here; release base footprint from right-front vehicle BL x BW with 0.5-1.0 edge clearance; release bolt/stud pitch P and hole/thread D from bracket; flat rectangular contact face centred on axle strike pad within +/-5",
+    "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5 bonded or captive to new deburred coated steel saddle preferred; cast automotive PU Shore A 80 +/-5 acceptable only with same progressive shape and captive steel mounting",
+    "tolerance": "height +/-1; base and hole location +/-0.5 after vehicle release; clearance holes +0.5/-0.0; contact centre +/-5; steel saddle must not bend; rubber/steel bond or captive joint must survive compression",
+    "release_status": "vehicle-measurement release required before mould; exact external height known",
+    "shop_note": "Reject aftermarket or locally made right-front stops at 70 mm unless deliberately trimmed and released by a full-bump clearance test."
   },
   {
     "part_id": "BUMP-R",
     "qty": "2",
-    "machine_route": "source exact molded rear pair or sample/scan mould; not CNC-cut",
-    "machine_files": "none",
-    "coordinate_system": "physical samples or 3D scan controls final mould",
-    "exact_definition_mm": "48304-60010 is a rear-pair reference shape only; if exact new molded stock is unavailable, reproduce from physical samples or 3D scan with a mould matching rear bracket/base, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location",
-    "material": "Automotive SBR/NR/PU bump-stop compound suitable for molded progressive stops",
-    "tolerance": "matched rear pair; old sample/scan, loaded axle clearance, and final ride height control acceptance",
-    "release_status": "quote exact new stock or local moulding from sample/scan; Toyota/manufacturer number is reference only",
-    "shop_note": "Check after suspension ride-height plan is known; reject simple cut blocks or unmatched rear pair."
+    "machine_route": "vehicle-bracket-controlled mould/cast Toyota-style progressive matched rear bump-stop pair with steel saddles; not CNC-cut",
+    "machine_files": "bump_stop_vehicle_measurement_control.svg",
+    "coordinate_system": "vehicle rear brackets and axle strike pads in mm; old rubber is not the master; NOS/genuine part preferred if obtainable",
+    "exact_definition_mm": "Toyota reference 48304-60010 long stop; target free height 70 +/-1 for both rear stops; reproduce Toyota-style two-ear steel saddle/backing plate and tapered/radiused rubber body from reference image or NOS sample; release each rear base footprint from vehicle BL x BW with 0.5-1.0 edge clearance; release bolt/stud pitch P and hole/thread D from brackets; flat rectangular contact faces centred on rear axle strike pads within +/-5; matched progressive pair",
+    "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5 bonded or captive to new deburred coated steel saddles preferred; cast automotive PU Shore A 80 +/-5 acceptable only with same progressive shape and captive steel mounting",
+    "tolerance": "height +/-1; rear pair height match <=1; hardness spread <=5 Shore A; base and hole location +/-0.5 after vehicle release; contact centre +/-5; steel saddles must not bend; rubber/steel bonds or captive joints must survive compression",
+    "release_status": "vehicle-measurement release required before mould; exact external height known",
+    "shop_note": "Make as matched rear pair after final ride height and axle travel checks; reject universal unmatched rear stops and simple cut blocks."
   }
 ]

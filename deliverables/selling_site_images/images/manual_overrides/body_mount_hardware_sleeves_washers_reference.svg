@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Body mount bolts sleeves cup washers and repair hardware reference">
+  <rect width="1200" height="900" fill="#f6f8f7"/>
+  <rect x="72" y="72" width="1056" height="756" rx="34" fill="#ffffff" stroke="#d7ded9" stroke-width="4"/>
+  <g stroke="#34413c" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">
+    <g transform="rotate(-14 364 230)">
+      <rect x="158" y="194" width="110" height="82" rx="18" fill="#cfd8d2"/>
+      <rect x="268" y="214" width="356" height="42" fill="#dfe5e1"/>
+      <rect x="624" y="220" width="122" height="30" fill="#cfd8d2"/>
+      <path d="M644 222l-18 26M680 222l-18 26M716 222l-18 26" fill="none"/>
+      <path d="M178 235h70" fill="none"/>
+    </g>
+    <g transform="translate(0 18)">
+      <path d="M190 548c82-58 198-58 280 0v132c-82 58-198 58-280 0z" fill="#dfe5e1"/>
+      <ellipse cx="330" cy="548" rx="140" ry="54" fill="#f6f8f7"/>
+      <ellipse cx="330" cy="548" rx="56" ry="22" fill="#ffffff"/>
+      <path d="M728 548c82-58 198-58 280 0v132c-82 58-198 58-280 0z" fill="#dfe5e1"/>
+      <ellipse cx="868" cy="548" rx="140" ry="54" fill="#f6f8f7"/>
+      <ellipse cx="868" cy="548" rx="56" ry="22" fill="#ffffff"/>
+    </g>
+    <ellipse cx="600" cy="704" rx="96" ry="42" fill="#dfe5e1"/>
+    <rect x="504" y="438" width="192" height="266" fill="#dfe5e1"/>
+    <ellipse cx="600" cy="438" rx="96" ry="42" fill="#f6f8f7"/>
+    <ellipse cx="600" cy="438" rx="46" ry="18" fill="#ffffff"/>
+    <path d="M842 206h120l44 76-44 76H842l-44-76z" fill="#cfd8d2"/>
+    <circle cx="902" cy="282" r="40" fill="#ffffff"/>
+  </g>
+  <g fill="none" stroke="#808b85" stroke-width="8" stroke-linecap="round">
+    <path d="M214 722h232"/>
+    <path d="M752 722h232"/>
+    <path d="M506 704h188"/>
+  </g>
+</svg>

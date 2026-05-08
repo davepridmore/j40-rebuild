@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Specialty brackets retainer plates and captive nut plates reference">
+  <rect width="1200" height="900" fill="#f6f8f7"/>
+  <rect x="72" y="72" width="1056" height="756" rx="34" fill="#ffffff" stroke="#d6ddd8" stroke-width="4"/>
+  <g stroke="#34413c" stroke-width="10" stroke-linejoin="round">
+    <path d="M176 188h286v198H176z" fill="#d5ddd8"/>
+    <path d="M206 386h226v78H206z" fill="#bfc9c3"/>
+    <circle cx="248" cy="286" r="44" fill="#ffffff"/>
+    <rect x="332" y="248" width="92" height="76" rx="38" fill="#ffffff"/>
+    <path d="M672 186h266l84 88v192H672z" fill="#d5ddd8"/>
+    <path d="M938 186v88h84" fill="#f6f8f7"/>
+    <circle cx="758" cy="324" r="44" fill="#ffffff"/>
+    <rect x="856" y="292" width="100" height="66" rx="33" fill="#ffffff"/>
+    <path d="M184 606h230l80 92-80 92H184z" fill="#d5ddd8"/>
+    <rect x="238" y="650" width="122" height="58" rx="29" fill="#ffffff"/>
+    <circle cx="410" cy="698" r="36" fill="#ffffff"/>
+    <path d="M672 594h292v96h-86v112H672z" fill="#d5ddd8"/>
+    <circle cx="746" cy="690" r="36" fill="#ffffff"/>
+    <rect x="836" y="630" width="96" height="52" rx="26" fill="#ffffff"/>
+  </g>
+  <g fill="none" stroke="#78847e" stroke-width="9" stroke-linecap="round">
+    <path d="M204 512h260"/>
+    <path d="M696 512h278"/>
+    <path d="M212 804h232"/>
+    <path d="M696 804h198"/>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Body mount slotted shim and spacer pack reference">
+  <rect width="1200" height="900" fill="#f6f8f7"/>
+  <rect x="72" y="72" width="1056" height="756" rx="34" fill="#ffffff" stroke="#d6ddd8" stroke-width="4"/>
+  <g stroke="#34413c" stroke-width="10" stroke-linejoin="round">
+    <g transform="rotate(-8 308 260)">
+      <path d="M170 170h280v190H170z" fill="#dfe5e1"/>
+      <path d="M170 264h142" fill="none" stroke-linecap="round"/>
+      <circle cx="346" cy="264" r="44" fill="#ffffff"/>
+    </g>
+    <g transform="rotate(8 718 254)">
+      <path d="M594 164h284v204H594z" fill="#cfd8d2"/>
+      <path d="M594 266h144" fill="none" stroke-linecap="round"/>
+      <circle cx="778" cy="266" r="46" fill="#ffffff"/>
+    </g>
+    <g transform="translate(0 30)">
+      <path d="M218 552h266v166H218z" fill="#dfe5e1"/>
+      <path d="M218 634h130" fill="none" stroke-linecap="round"/>
+      <circle cx="388" cy="634" r="38" fill="#ffffff"/>
+      <path d="M566 530h292v206H566z" fill="#cfd8d2"/>
+      <path d="M566 634h142" fill="none" stroke-linecap="round"/>
+      <circle cx="754" cy="634" r="44" fill="#ffffff"/>
+      <path d="M814 494h112v276H814z" fill="#bfc9c3"/>
+    </g>
+  </g>
+  <g fill="none" stroke="#7b8781" stroke-width="8" stroke-linecap="round">
+    <path d="M206 430h302"/>
+    <path d="M574 430h332"/>
+    <path d="M230 778h656"/>
+  </g>
+</svg>

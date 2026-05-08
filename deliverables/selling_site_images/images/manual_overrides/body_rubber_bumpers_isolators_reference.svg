@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Rubber bumpers grommets isolators and small spacers reference">
+  <rect width="1200" height="900" fill="#f6f8f7"/>
+  <rect x="72" y="72" width="1056" height="756" rx="34" fill="#ffffff" stroke="#d7ded9" stroke-width="4"/>
+  <g stroke="#2b3431" stroke-width="10" stroke-linejoin="round">
+    <path d="M208 272c0-68 56-124 124-124s124 56 124 124v178H208z" fill="#1f2523"/>
+    <ellipse cx="332" cy="450" rx="124" ry="44" fill="#3a4440"/>
+    <circle cx="332" cy="298" r="54" fill="#101412"/>
+    <circle cx="332" cy="298" r="24" fill="#ffffff"/>
+    <path d="M674 192h180l84 132-84 132H674L590 324z" fill="#232a27"/>
+    <circle cx="764" cy="324" r="82" fill="#ffffff"/>
+    <circle cx="764" cy="324" r="38" fill="#232a27"/>
+    <path d="M192 644h256l44 86-44 86H192l-44-86z" fill="#222a27"/>
+    <circle cx="320" cy="730" r="76" fill="#ffffff"/>
+    <path d="M642 604h250c42 0 76 34 76 76v66c0 42-34 76-76 76H642c-42 0-76-34-76-76v-66c0-42 34-76 76-76z" fill="#242c29"/>
+    <circle cx="704" cy="713" r="38" fill="#ffffff"/>
+    <circle cx="830" cy="713" r="38" fill="#ffffff"/>
+  </g>
+  <g fill="none" stroke="#7a8580" stroke-width="9" stroke-linecap="round">
+    <path d="M228 496h210"/>
+    <path d="M632 496h264"/>
+    <path d="M218 572h204"/>
+    <path d="M618 572h276"/>
+  </g>
+</svg>

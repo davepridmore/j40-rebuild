@@ -1,81 +1,152 @@
-# Chassis Rubbers Fabricator Spec
+# Chassis Rubbers Workstream
 
-Date: 2026-05-04
+Date: 2026-05-08
 
-All dimensions are in `mm`. For body/front-support rubbers, use new black solid EPDM or NR/SBR automotive mount rubber, Shore A `60 +/-5`. Old rubbers and photos are measurement samples only, not reuse stock. Cups and shims must be new flat or formed steel, deburred and corrosion protected. Toyota/OE numbers are reference shapes only, not a supply dependency. For the exhaust holder, use the teardrop exhaust cushion style or a sample-matched new molded copy. For bump stops, use exact new molded stops or fabricate by physical sample/3D scan and bracket/contact match. Do not use tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, used rubber, unmarked compound, washer stacks, simple cut blocks, or universal bump stops that do not match the axle contact point.
+Purpose: keep the chassis/body rubber order aligned with the current evidence. The current Longman order is rubber-only. Steel washers, cup/seat washers, crush sleeves, shims, bolts, and captive-thread repairs are inspected or ordered separately because they control the stack but are not custom rubber pieces.
 
-## Machine Package
+Current supplier pack:
 
-Send this folder with the job: [`data/manual/fabrication/rubber_recreation_rev_a/`](../data/manual/fabrication/rubber_recreation_rev_a/README.md).
+- [Longman rubber order spec](longman-rubber-order-spec-20260508.md)
+- [Longman rubber order CSV](../data/manual/longman_rubber_order_specs.csv)
+- [Bump-stop fabrication spec](bump-stop-fabrication-spec-20260504.md)
 
-Machine-readable controls:
+## Current Order Basis
 
-- [`machine_definitions.csv`](../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv) / [`machine_definitions.json`](../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json) - exact CNC/shop definitions, shim-pack controls, and non-CNC purchase controls.
-- [`j40_rubber_recreation_rev_a_dimension_sheet.pdf`](../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf) - printable drawing sheet.
-- [`fabricator_cut_list.csv`](../data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv) and [`inspection_checklist.csv`](../data/manual/fabrication/rubber_recreation_rev_a/inspection_checklist.csv).
+The old release specs assumed cup/seat washers and a controlled crush sleeve. That remains true for stack control, but the tub/chassis photos do not prove a shaped rubber socket. Treat the main body mounts as function-first isolator pads.
 
-## Exact Machine / Purchase Spec
+Critical controls:
 
-| Image | ID | Part | Qty | Machine / Purchase Definition | CAD / Route | Notes |
-| --- | --- | --- | ---: | --- | --- | --- |
-| <img src="../photos/20260502_004419_gp_ZPXJRBzg.jpg" width="120" alt="Large circular body-mount cushion sample"> | `BM-LG` | Large circular body-mount cushion | `2` | Origin lower-left of `78 x 78` top profile; centre `X39 Y39`; OD `78`; height `24`; through bore `32`; face A register/recess `46 x 2`; face B flat; outside load edge `R2-R3`; faces parallel `<=0.5`; concentricity `<=1.0`. | [`bm_lg_body_mount_cushion_rev_a.dxf`](../data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.dxf) / [`svg`](../data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.svg) | Make matched pair from one setup. |
-| <img src="../photos/20260502_004442_gp_7WcFHjLQ.jpg" width="120" alt="Small circular body-mount cushion sample"> | `BM-SM` | Small circular body-mount cushion | `10` | Origin lower-left of `64 x 64` top profile; centre `X32 Y32`; OD `64`; height `22`; through bore `32`; face A register/recess `46 x 2`; face B flat; outside load edge `R2-R3`; faces parallel `<=0.5`; concentricity `<=1.0`. | [`bm_sm_body_mount_cushion_rev_a.dxf`](../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf) / [`svg`](../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.svg) | Make as one-piece cushion unless old sample proves split stack. |
-| <img src="../photos/20260502_004413_gp_Qno8OVRg.jpg" width="120" alt="Small body-mount cup seat washer sample"> | `BM-CUP-SM` | Small body-mount cup / seat washer | `10 working basis` | Cut/form ready steel cup washer for `BM-SM`; OD `64`; M10 clearance hole `11`; dish/register depth `2-3`; steel thickness `2.5-3.0`; final dish must match old cup before batch forming. | [`bm_cup_small_seat_washer_rev_a.dxf`](../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf) / [`svg`](../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.svg) | Reuse originals only if flat, not thinned, and not cracked. |
-| <img src="../photos/20260502_004429_gp_KJHxGcCA.jpg" width="120" alt="Large body-mount cup seat stack profile sample"> | `BM-CUP-LG` | Large body-mount cup / seat washer | `2 working basis` | Cut/form ready steel cup washer for `BM-LG`; OD `78`; M10 clearance hole `11`; dish/register depth `2-3`; steel thickness `2.5-3.0`; final dish must match old cup before batch forming. | [`bm_cup_large_seat_washer_rev_a.dxf`](../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf) / [`svg`](../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.svg) | Confirm the large-pair station and cup landing before forming. |
-| <img src="../deliverables/selling_site_images/images/reference_catalog/body_shims.jpg" width="120" alt="Body mount shim spacer reference"> | `BM-SHIM-THIN` | Thin body-mount alignment shim pack | `1 pack` | New flat slotted steel shims for M10 body mounts: `1 mm x12`, `2 mm x12`, `3 mm x12`, `5 mm x12`; slot width `11-12`; plate footprint must fully support the original pedestal/contact patch. | [`machine csv`](../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv) / [`json`](../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json) | No washer stacks inside the rubber sandwich. Preserve original shim stack by station. |
-| <img src="../deliverables/selling_site_images/images/reference_catalog/body_shims.jpg" width="120" alt="Body mount shim spacer reference"> | `BM-SHIM-THICK` | Thick OE-style spacer control pack | `1 pack` | New flat steel spacer plates for controlled trial fit: `5 mm x4`, `10 mm x4`, `15 mm x4`. Record Toyota reference thicknesses `22.8` and `27.8`, but cut/buy those only if the original station map proves need. | [`machine csv`](../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv) / [`json`](../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json) | Use only at original metal-to-metal shim locations, not as random height packing. |
-| <img src="../photos/20260502_004345_gp_yK8VYzMQ.jpg" width="120" alt="Front-support two-hole oval pad"> | `FS-OVAL` | Front-support two-hole oval pad | `2` | Origin lower-left of `64 x 96` plan; outer capsule `64` wide x `96` long with `R32` ends; thickness `15`; through holes `12` at `X32 Y16` and `X32 Y80`; relief pocket `36 x 18 R3` at `X14 Y39`; insert/boss mark `29` at `X32 Y16`. | [`fs_oval_front_support_pad_rev_a.dxf`](../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf) / [`svg`](../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.svg) | `INSERT_MARK` is not a through cut. Confirm if relief is blind pocket or through-cut. |
-| <img src="../photos/20260502_004201_gp_zfUSmKJg.jpg" width="120" alt="Front-support left strip liner"> | `FS-STRIP-L` | Front-support left strip / liner | `1` | Stock envelope `165 x 40` with `R4` ends; base thickness `8`; raised/load pad height `14`; provisional slots `16 x 11` at centres `X20 Y20` and `X145 Y20` only if carrier confirms. | [`fs_strip_left_template_blank_rev_a.dxf`](../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf) / [`svg`](../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg) | Final CNC cut requires physical left carrier trace. |
-| <img src="../photos/20260502_004222_gp_PKRe5HSQ.jpg" width="120" alt="Front-support right strip liner"> | `FS-STRIP-R` | Front-support right strip / liner | `1` | Stock envelope `165 x 40` with `R4` ends; base thickness `8`; raised/load pad height `14`; provisional slots `16 x 11` at centres `X20 Y20` and `X145 Y20` only if carrier confirms. | [`fs_strip_right_template_blank_rev_a.dxf`](../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf) / [`svg`](../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg) | Final CNC cut requires physical right carrier trace. |
-| <img src="../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg" width="120" alt="Teardrop exhaust cushion CAD"> | `EXH-HGR-90917` | Exhaust pipe teardrop cushion | As fitted | Origin lower-left of `48 x 86` top profile; centreline `X24`; teardrop/paddle outline `48` wide x `86` high; lower bulb `R24` centred `X24 Y24`; mounting hole `9` at `X24 Y73`; hanger slot `16 x 22` capsule centred `X24 Y29`; raised boss/recess mark `36 x 42` at `X6 Y8`; rubber body thickness target `22` unless genuine sample proves otherwise; confirm side profile, mould depth, insert depth, and reinforcement. | [`exh_hgr_90917_08004_teardrop_rev_a.dxf`](../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.dxf) / [`svg`](../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg) | Toyota `90917-08004` / `17572-92000` is a reference shape only. Do not use the previous round ring or generic two-hole strap. Local molding needs a genuine sample or intact original for side profile and metal insert. |
-| <img src="../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg" width="120" alt="Bump stop reference"> | `BUMP-F-L` | Front left spring bump stop | `1` | Not a CNC-cut block. `48304-60010` is a left-front reference shape only. If no exact new molded stop is available, reproduce from physical sample or 3D scan with a mold matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location. | [`machine csv`](../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv) / [`json`](../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json) | Verify left-front bracket and axle contact point. |
-| <img src="../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg" width="120" alt="Bump stop reference"> | `BUMP-F-R` | Front right spring bump stop | `1` | Not a CNC-cut block. `48304-60020` is a shorter/right-front reference shape only. If no exact new molded stop is available, reproduce from physical sample or 3D scan with a mold matching base footprint, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location. | [`machine csv`](../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv) / [`json`](../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json) | Do not install left stop or universal stop here. |
-| <img src="../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg" width="120" alt="Bump stop reference"> | `BUMP-R` | Rear spring bump stops | `2` | Not a CNC-cut block. `48304-60010` is a rear-pair reference shape only. If no exact new molded stops are available, reproduce from physical samples or 3D scan with a mold matching rear bracket/base, bolt pattern/thread, free height, compressed height, progressive profile, and contact face location. | [`machine csv`](../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv) / [`json`](../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json) | Replace as matched rear pair after suspension ride height is known. |
+- Installed rubber height and final compression.
+- Central hole/sleeve fit once the sleeve OD is known.
+- Bolt clamps through the steel sleeve, not by crushing rubber until metal contact.
+- Bearing area covers the landing faces without running onto bends, seams, weld lips, repairs, or rust-thinned edges.
+- Similar hardness across the set, target Shore A `60 +/-5`.
+- Solid new automotive rubber only: no tyre rubber, crumb rubber, sponge, foam, mixed offcuts, salvage rubber, or unmarked old stock.
 
-Tolerances: circular cushion OD/ID `+/-1.0`, height `+/-0.5`, bore/register concentricity `<=1.0`; cup OD `+/-1.0`, hole `+0.3/-0.0`, dish `2-3`; shim/spacer thickness `+/-0.1` after station trace; `FS-OVAL` outside `+/-1.0`, hole position `+/-0.5`, thickness `+/-0.5`; strip outline `+/-1.0`, holes `+/-0.5`, thickness `+/-0.5`. Bump stops are not simple cut rubber; exact molded stock or physical-sample/scan moulding controls.
+Preferred custom shape for the main pads is square. Release trimming only if a later station photo proves a specific corner or edge needs relief.
 
-## Lower Holds
+## Rubber Order Lines
 
-- `BM-SM`: if the old sample proves separate seat/spacer construction, replace the one-piece `22` definition with a split-stack drawing before production.
-- `BM-SHIM-*`: trace and measure the preserved original shim or mount-station footprint before CNC/laser cutting the final outline.
-- `FS-STRIP-L/R`: trace the physical metal carriers before final CNC cutting.
-- `EXH-HGR-90917`: project photos show the exhaust bracket area but not an intact old cushion. Toyota `90917-08004` / `17572-92000` is a reference shape only; local molding needs a genuine sample or intact original to confirm side profile, mould depth, insert depth, exact thickness, and reinforcement.
-- `BUMP-*`: verify old-sample or scan geometry against the physical brackets and axle contact points before purchase or moulding.
+| ID | Status | Qty | Current spec | Release gate |
+| --- | --- | ---: | --- | --- |
+| `BM-ISO-SM` | Quote ready, drill after sleeve measurement | `10 + 2 spares` | Square pad `70 x 70 x 22 mm`, flat parallel faces, light edge radius/chamfer, Shore A `60 +/-5`. | Confirm each station has enough flat footprint; final hole = sleeve OD + `0.5-1.0 mm`. |
+| `BM-ISO-LG` | Quote ready, drill after sleeve measurement | `2 + 1 spare` | Square pad `80 x 80 x 24 mm`, flat parallel faces, light edge radius/chamfer, same compound batch as small pads if possible. | Confirm the large-pair station; final hole = sleeve OD + `0.5-1.0 mm`. |
+| `FS-OVAL` | Quote ready, caliper before production | `2` | Oval/capsule pad `96 x 64 x 15 mm`, two `12 mm` holes at `64 mm` centres; rectangular relief only if old sample confirms it is functional. | Confirm hole centres, thickness, insert/boss/relief construction. |
+| `FS-STRIP-L` | Hold, candidate only | Hold | Working quote envelope `165 x 40 mm`; base `8 mm`; raised/load pad `14 mm`. | Must be confirmed by physical front-support carrier or installed location trace before cutting. Current image evidence is mixed with bump-stop fragments. |
+| `FS-STRIP-R` | Hold, candidate only | Hold | Mirror of left only if the right-side carrier proves symmetric. | Same hold as left; mark handedness and hole centres from carrier, not torn rubber. |
+| `BUMP-60010-LONG` | First article required | `3` | Toyota-style long bump stop, free height `70 +/-1 mm`, progressive tapered/radiused body, two-ear steel saddle/backing, flat rectangular strike face. | Vehicle bracket controls BL/BW/P/D/X-Y/G/F; make one first article before remaining long stops. |
+| `BUMP-60020-SHORT` | First article required | `1` | Toyota-style short right-front bump stop, free height `60 +/-1 mm`; do not make it `70 mm` unless a deliberate full-bump test releases trimming. | Right-front bracket and axle strike pad control base, hole pattern, and contact face. |
+| `BODY-LINER-FULL-WIDTH-HOLD` | Not captured yet | Hold | Possible long/full-width flat body or panel liner strips. | Do not order until the pieces are found or a vehicle station proves a continuous flat anti-squeak liner is required. |
+| `EXH-HGR-90917` | Optional later hold | Hold | Teardrop exhaust hanger cushion from sample or genuine part reference. | Needs intact sample/proper tracing before production. |
 
-## Extra Context Images
+## Known vs Candidate Pieces
 
-Circular cushion and cup references:
+Known current rubber pieces:
 
-![Circular cushion top reference](../photos/20260502_004413_gp_Qno8OVRg.jpg)
+- Main body isolator pads: required, but now specified as square flat custom pads instead of circular/register bushings.
+- Two-hole front-support oval pads: required by old sample/photo trail, subject to caliper confirmation.
+- Axle bump stops: required if missing/decayed; height split is externally controlled as `70 mm` long stops for front-left/rear pair and `60 mm` short stop for front-right.
 
-![Circular annular cushion reference 2](../photos/20260502_004442_gp_7WcFHjLQ.jpg)
+Candidate or unproven pieces:
 
-![Cup/seat and stack profile reference](../photos/20260502_004429_gp_KJHxGcCA.jpg)
+- `FS-STRIP-L/R` front-support strip/liner pieces are not production-released. The loose-part photo trail suggests a possible strip or bonded liner, but the dashboard image currently used for the right strip is also the best evidence for broken bump stops. Treat the strip rows as a measurement hold until a physical carrier, installed location, or clean old strip proves them.
+- Possible longer full-body-width flat pieces are not yet captured as orderable parts. They may be anti-squeak liners, panel-to-panel strips, packing pieces, or body support rubbers, but there is not enough evidence to assign quantity or dimensions.
 
-Shim and bump-stop references:
+## Photo Correction
 
-![Body mount shim spacer reference](../deliverables/selling_site_images/images/reference_catalog/body_shims.jpg)
+The current dashboard page had the front-support strip/liner rows mixed up with bump-stop fragments:
 
-![Bump stop reference](../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg)
+- `20260502_004222_gp_PKRe5HSQ.jpg` should be treated as bump-stop fragment evidence first, not a released right strip/liner master.
+- `20260502_004201_gp_zfUSmKJg.jpg` supports the bump-stop vertical/scale view and should not release the left strip/liner shape on its own.
+- `FS-STRIP-L/R` should use the blank template/trace route until a clean physical trace exists.
 
-Strip rubber references:
+Use these bump-stop photos only as broken-shape evidence. They do not release the bolt pitch, base footprint, or strike-face offset.
 
-![Long strip height reference](../photos/20260502_004254_gp_Hm9RR5DQ.jpg)
+## Separated Hardware
 
-![Long strip side reference](../photos/20260502_004314_gp_wuzpgNrA.jpg)
+The following remain required for body-mount stack control but are excluded from the Longman rubber order:
 
-Exhaust holder / bracket references:
+- Body-mount cup/seat washers.
+- Body-mount crush sleeves.
+- Body shims/spacer plates.
+- Bolts, nuts, weld nuts, repair tabs, and captive-thread repairs.
 
-![Rear exhaust and bracket context](../photos/20260501_193755_gp_cuaY6sgg.jpg)
+Inspect the existing washers/cups separately. Reuse only if they are flat where required, not thinned, not cracked, and still fit the rubber/sleeve stack. If new ones are needed, order them as steel hardware, not as rubber.
 
-![Exhaust bracket close reference](../photos/20260501_193805_gp_VgTc8wYQ.jpg)
+## Measurements To Collect
 
-![Tailpipe bracket and holder location reference](../photos/20260501_193811_gp_uv8kwbxw.jpg)
+### Main Body Isolator Stations
 
-External part controls: [ToyotaPartsDeal](https://www.toyotapartsdeal.com/oem/toyota~cushion~exhaust~tail~pipe~for~front~90917-08004.html) lists `90917-08004` as the front exhaust pipe center cushion replacing `17572-92000`; [CruiserParts](https://shop.cruiserparts.net/index.php?main_page=product_info&products_id=12770) identifies the pre-8/79 Land Cruiser 40/45 item as the teardrop-style `90917-08004`.
+For every station:
 
-Original installed context:
+- Label station and side.
+- Tub-side landing face photo with ruler.
+- Chassis-side landing face photo with ruler.
+- Maximum flat footprint before bends, seams, weld lips, repairs, or rust-thinned edges.
+- Desired free height or best old-sample free height.
+- Bolt size and captive nut or through-bolt arrangement.
+- Old crush-sleeve ID, OD, and length if available.
+- Final sleeve OD; rubber hole should be sleeve OD + `0.5-1.0 mm`.
+- Whether the square `70 x 70` or `80 x 80` pad fits, or which exact corners/edges need trimming.
 
-![Original tub-side body-mount context](../photos/20260405_234652.jpg)
+### Front-Support Oval Pads
 
-![Original underbody mount context](../photos/20260405_234546.jpg)
+- Top photo of each old oval pad with ruler.
+- Length, width, thickness.
+- Hole diameter and hole centre-to-centre.
+- Photo/measurement of insert, boss, washer imprint, or relief.
+- Confirmation whether the rectangular relief is functional or old deformation.
+
+### Front-Support Strip/Liner Holds
+
+- Photo of the physical carrier or installed location proving the strip exists.
+- Trace of left and right pieces on card or acetate.
+- Orientation marks: side, front/rear, up/down.
+- Total length, width at three points, base thickness, raised-pad height.
+- Hole centres from the steel carrier, not the torn rubber.
+- Bonded/loose/clipped status and cleaned carrier photos if bonded.
+
+### Long / Full-Width Flat Liner Holds
+
+If longer flat pieces are found:
+
+- Location photo showing full installed path.
+- Full-length photo with tape measure end to end.
+- Close photos of both ends, holes, slots, notches, and witness/contact marks.
+- Quantity, side, handedness, and whether the part is full body width.
+- Length, width at several points, thickness, hole/slot size, hole centre distances, and edge radii.
+- Whether it was loose, bonded, clipped, trapped under bolts, or glued.
+- Evidence of function: isolator, anti-squeak liner, seal, or packing strip.
+
+### Bump Stops
+
+For front-left, front-right, rear-left, and rear-right:
+
+- Wide station photo.
+- Clean bracket photo with ruler/caliper.
+- Bolt/stud hole photo with centre-to-centre measurement.
+- Side photo showing bracket face, axle strike pad, and current gap.
+- Loaded ride-height gap after suspension is fitted.
+- Near-full-bump measurement confirming the stop contacts before shocks, tyres, springs, shackles, brake hoses, or metal hard limits.
+
+Record:
+
+| ID | Measurement | Use |
+| --- | --- | --- |
+| `BL` | Bracket landing length | Saddle/base length |
+| `BW` | Bracket landing width | Saddle/base width |
+| `P` | Bolt/stud pitch centre-to-centre | Saddle hole pattern |
+| `D` | Hole diameter or stud/bolt thread | Hole/insert size |
+| `X/Y` | Strike-pad centre offset from bracket holes | Contact face location |
+| `G` | Loaded stop gap | Ride-height clearance |
+| `F` | Near-full-bump clearance | Confirms stop acts before hard limits |
+
+## Acceptance
+
+- Longman provides compound family and Shore A target.
+- Body/front-support rubber averages Shore A `55-65`.
+- Bump-stop rubber averages Shore A `65-75`, or PU `75-85` only if the steel saddle/captive mounting and progressive shape are correct.
+- Faces on body pads are flat and parallel within `0.5 mm`.
+- Holes are clean, not burnt or torn.
+- First bump-stop articles seat flat, bolt by hand, contact the strike pad within `+/-5 mm`, survive 50 percent compression without cracking or saddle/bond failure, and recover to at least 90 percent height after 30 minutes unloaded.
+- Parts are bagged and labeled by ID and side/station.

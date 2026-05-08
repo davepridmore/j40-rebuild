@@ -1,36 +1,38 @@
 # Parts List Review
 
-- Generated: 2026-05-04 04:07:22
-- Source: `data/manual/expenses.csv` (`bucket=parts`) -> 84 rows
+- Generated: 2026-05-08 17:28:50
+- Source: `data/manual/expenses.csv` (`bucket=parts`) -> 89 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
 
 ## Action Buckets
 
-- `buy_now`: 16
+- `buy_now`: 15
 - `cancelled_or_not_required`: 11
-- `completed_or_received`: 19
+- `completed_or_received`: 27
 - `deferred`: 6
 - `needs_spec_before_order`: 11
 - `next_phase`: 1
-- `ordered_waiting_arrival`: 12
+- `ordered_waiting_arrival`: 8
 - `spec_ready_release_hold`: 4
-- `unclear`: 4
+- `unclear`: 6
 
 ## Workstream Split
 
 - `body_chassis`: 23
 - `electrical_reset`: 18
 - `mechanical_baseline`: 17
-- `brake_system`: 13
+- `brake_system`: 16
 - `steering_brakes_suspension`: 6
 - `interior_weatherproofing`: 5
 - `optional_upgrades`: 2
+- `fabrication_handoff`: 1
+- `chassis_fixing`: 1
 
 ## Price Coverage
 
-- `has_confirmed_amount=yes`: 16
-- `has_confirmed_amount=no`: 68
+- `has_confirmed_amount=yes`: 18
+- `has_confirmed_amount=no`: 71
 
 ## Buy-Now / Quote-Ready Missing Price
 
@@ -43,13 +45,12 @@
 - `part_mech_accessory_belt_set` [mechanical_baseline] Accessory belt set
 - `part_mech_engine_oil_filter_service` [mechanical_baseline] Engine oil + oil filter service pack
 - `part_mech_fuel_filter` [mechanical_baseline] Fuel filter
-- `part_mech_fuel_hose_and_clamps` [mechanical_baseline] Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, conditional hard lines
+- `part_mech_fuel_hose_and_clamps` [mechanical_baseline] Diesel fuel hose/line package - 8 mm feed, 6 mm return, leak-off hose, new hard lines
 - `part_mech_heat_glow_plugs_set` [mechanical_baseline] Toyota OE glow plugs 19850-68030 x6 - diesel 2H
 - `part_mech_heater_hose_set` [mechanical_baseline] Heater hose pair - EPDM 400 mm inlet + 280 mm outlet, 16 mm ID
 - `part_mech_radiator_cap` [mechanical_baseline] Radiator cap
 - `part_mech_radiator_hose_set` [mechanical_baseline] Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe
 - `part_mech_vacuum_hose_refresh` [mechanical_baseline] Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather
-- `part_suspension_wooden_cribbing_blocks` [steering_brakes_suspension] Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks
 
 ## Buy-Now / Quote-Ready With Confirmed Price
 
@@ -59,4 +60,3 @@
 
 - `floor_finish_stack` (3 rows): Floor/interior finish stack [action buckets: deferred]
 - `grommet_options` (3 rows): Grommet options [action buckets: buy_now|deferred]
-- `primer_system_stack` (3 rows): Primer system stack [action buckets: ordered_waiting_arrival]

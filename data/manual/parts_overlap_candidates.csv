@@ -1,4 +1,3 @@
 overlap_group_id,overlap_group_label,item_count,entries,items,action_buckets
 floor_finish_stack,Floor/interior finish stack,3,part_carpet|part_foam|part_sound_dampening_sheets,Carpet|Foam|Sound dampening sheets,deferred
 grommet_options,Grommet options,3,part_firewall_grommet_set_large_power|part_firewall_grommet_set_small_medium|quote_rubber_grommet_set_chat,Additional firewall grommet set IDs 16/20/25 mm|Additional firewall grommet set IDs 6/8/10/12 mm|Electrical wire grommet set (200pcs),buy_now|deferred
-primer_system_stack,Primer system stack,3,part_primer|part_seam_sealer|part_wax_and_grease_remover,3M Prep Solvent-70 1 gallon / wax and grease remover|Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set|Seam sealer,ordered_waiting_arrival

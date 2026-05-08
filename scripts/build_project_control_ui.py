@@ -565,7 +565,7 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
         ("Map and freeze weld boundaries", "Mark cut/fabrication boundaries per rust zone before any irreversible cuts."),
         ("Execute cut, fit, and weld sequence", "Run controlled welding with heat management and pinhole checks."),
         ("Clean, treat, and solvent-wipe repaired metal", "After weld cleanup, use rust converter only in remaining pits/seams, let it cure, remove residue, dry fully, then wax-and-grease wipe."),
-        ("Prime, seam-seal, and choose top protection", "Apply zinc-rich 2K epoxy primer first, seam sealer only after primer where needed, then chassis black/topcoat or Raptor by zone after cure."),
+        ("Prime, seam-seal, and apply Raptor", "Apply zinc-rich 2K epoxy primer first, seam sealer only after primer where needed, then on-hand Raptor protective coating after cure."),
         ("Cavity-wax hidden sections last", "Use cavity wax only after primer, seam sealer, and top protection cure windows are met; keep drains and bolt holes open."),
         ("Capture refit interface evidence", "Photograph mount points and repaired zones before moving to refit."),
     ],
@@ -582,13 +582,13 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
         ("Close wiring integration and test", "Wire each control into the final harness plan and verify operation."),
     ],
     "chassis_fixing": [
-        ("Finish dry mechanical cleanup", "Wire cup non-flat geometry first, then strip/flap cleanup on flatter sections without thinning bracket edges or pitted rail lips."),
+        ("Finish dry mechanical cleanup", "Wire cup non-flat geometry first, then strip/flap cleanup on flatter sections without thinning bracket edges or pitted rail lips; these are angle-grinder consumables, so verify existing stock before rebuying."),
         ("Complete structured defect checks", "Inspect rails, crossmembers, mounts, hard-line clips, steering-box mounts, and spring hangers for cracks, pits, ovaling, and thinning."),
         ("Close issue-specific inspections", "All opened chassis issue rows need photo evidence and explicit repair, replace, or accept decisions before coating."),
         ("Degrease, rinse, and fully dry", "Use DISS/APC and GREZ OFF only after dry prep; rinse carefully and dry seams, boxed pockets, holes, clips, and line contact points before chemistry."),
         ("Treat remaining rust only", "Use Evapo-Rust or compatible converter only where rust remains in pits/seams, then remove residue before primer."),
         ("Solvent wipe and mask interfaces", "Use wax-and-grease remover, then mask threads, ground pads, brake/fuel fittings, line contact points, and rubber before primer."),
-        ("Apply primer, seam sealer, then top protection", "Apply the selected zinc-rich 2K epoxy primer, seam sealer only after primer where required, then either compatible chassis black/topcoat or on-hand Raptor by zone; do not assume black paint plus Raptor unless the product windows confirm that stack."),
+        ("Apply primer, seam sealer, then Raptor", "Apply the selected zinc-rich 2K epoxy primer, seam sealer only after primer where required, then on-hand Raptor protective coating; do not add chassis black under Raptor unless the exact product data confirms that stack."),
         ("Cavity-wax hidden sections last", "Use the HB Body U900 cavity-wax spray cans with wand/nozzle last inside boxed, lapped, and hidden sections after cure windows are met."),
     ],
     "chassis_rubbers": [
@@ -811,15 +811,15 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                     "Let converter fully cure, then remove or neutralize residue exactly as the converter product requires.",
                     "Confirm the panel is cool, dry, and free of sanding dust before solvent wiping.",
                     "Use wax-and-grease remover before primer, then allow full flash-off/dry time.",
-                    "Mask threads, grounds, drain holes, rubber contact faces, brake/fuel fittings, and line contact areas before coating.",
+                    "Mask threads, grounds, drain holes, rubber contact faces, brake/fuel fittings, and line contact areas before coating; use sacrificial bolts for threaded holes and only use on-hand grommets as temporary open-hole masking after a fit and solvent-residue check.",
                     "Apply the selected zinc-rich 2K epoxy primer to approved bare/prepped metal inside the primer product window.",
                     "Apply seam sealer only after primer where joints, overlaps, bracket edges, or seams need sealing.",
-                    "Apply one compatible exposed top protection by zone: chassis black/topcoat or Raptor. Use black paint under Raptor only if the product data confirms cure, scuff, and recoat compatibility.",
+                    "Apply on-hand U-POL/Raptor protective coating as the exposed top protection after primer/sealer cure. Use black paint under Raptor only if the exact product data confirms cure, scuff, and recoat compatibility.",
                     "Use cavity wax last inside boxed/hidden sections after primer, seam sealer, and top protection cure windows are met; keep drain and bolt holes open.",
                     "Photograph each layer before it is hidden by the next coating or by refitted lines, rubbers, and brackets.",
                 ],
                 "tools": ["Blow gun", "Solvent-safe wipes", "Masking plugs/tape", "Primer gun or aerosol system", "Seam-sealer gun", "Cavity-wax wand/nozzle"],
-                "supplies": ["Rust converter for pits/seams only", "Wax and grease remover", "Zinc-rich 2K epoxy primer", "Seam sealer", "Chassis black/topcoat or Raptor by zone", "Cavity wax"],
+                "supplies": ["Rust converter for pits/seams only", "Wax and grease remover", "Zinc-rich 2K epoxy primer", "Seam sealer", "U-POL/Raptor protective coating", "Masking tape and solvent-safe wipes", "On-hand grommets for open-hole masking after fit check", "Cavity wax"],
                 "hold_point": "No primer, seam sealer, black paint, Raptor, or cavity wax is applied over moisture, uncured converter, converter residue, loose rust, loose coating, oil, or sanding dust.",
                 "image_tokens": ["primer", "sealer", "floor", "rust", "bodywork"],
             },
@@ -1025,15 +1025,15 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "process_steps": [
                     "Build a position-by-position table for rubbers, sleeves, cup washers, bolts, and shims.",
                     "Use docs/chassis-rubbers-workstream.md as the top-level fabricator handoff spec.",
-                    "Use docs/rubber-recreation-fabrication-spec-20260502.md only as the detailed backup spec and hold-dimension record.",
-                    "Use data/manual/fabrication/rubber_recreation_rev_a/ as the ready-to-run DXF/SVG/PDF package for quote and first article.",
+                    "Use docs/longman-rubber-order-spec-20260508.md as the current Longman quote pack for square body pads, FS-OVAL pads, and bump-stop first articles.",
+                    "Use data/manual/fabrication/rubber_recreation_rev_a/ only for FS-OVAL drawings, strip hold templates, exhaust-hanger reference, and bump-stop measurement controls.",
                     "Use docs/fabrication-handoff-index.md as the shared send-out index for rubber and electrical fabrication packages.",
                     "Use data/manual/rubber_ordering_specs.csv as the cross-category rubber ordering matrix so body mounts, hoses, suspension bushes, weatherstrip, and HVAC rubber stay in the correct buy gates.",
                     "Use data/manual/body_mount_order_release_specs.csv for exact body-mount order lines, quantities, OE/reproduction candidates, local fabrication specs, shim packs, sleeves, and bolt packs.",
                     "Complete the open items in data/manual/body_mount_release_actions.csv before releasing any held order line.",
                     "Record station-by-station measurements and release status in data/manual/body_mount_station_closure_sheet.csv.",
                     "Use data/manual/rubber_recreation_toyota_oe_cross_reference.csv to reconcile Toyota NO.1-NO.5 station rows, OE part numbers, bolt families, and published shim/spacer thicknesses.",
-                    "Use data/manual/rubber_recreation_aftermarket_dimension_crosscheck.csv as an external thickness sanity check, especially for tall, medium, seat, and short bushing construction.",
+                    "Use data/manual/rubber_recreation_aftermarket_dimension_crosscheck.csv only as historical thickness context, not as a current body-pad shape control.",
                     "Fill data/manual/rubber_recreation_measurement_closure.csv with caliper release values before final fabrication.",
                     "Compare old samples against chassis/body hole condition.",
                     "Specify rubber hardness/source and sleeve material before purchase.",
@@ -1041,8 +1041,8 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                     "Record any captive nut or mount repair needed before dry fit.",
                 ],
                 "tools": ["Calipers", "Straight edge", "Mount map", "Thread gauge"],
-                "supplies": ["Chassis rubbers fabricator spec", "Rubber fabrication DXF/PDF pack", "Fabrication handoff index", "Rubber ordering matrix", "Body mount order release sheet", "Body mount action sheet", "OE cross-reference", "Aftermarket thickness cross-check", "Measurement closure sheet", "Sample rubbers", "Shim material", "Sleeve stock if fabricating"],
-                "hold_point": "Final order or fabrication starts only after every mount position has a complete stack definition, the Toyota OE station rows have been reconciled against the physical vehicle, and the small-mount one-piece vs split-stack construction is resolved.",
+                "supplies": ["Chassis rubbers workstream", "Longman rubber order spec", "Rubber ordering matrix", "Body mount order release sheet", "Body mount action sheet", "OE cross-reference", "Measurement closure sheet", "Sample rubbers", "Shim material", "Sleeve stock if fabricating"],
+                "hold_point": "Final order or fabrication starts only after every mount position has a complete stack definition, the Toyota OE station rows have been reconciled against the physical vehicle, and the square-pad footprint plus sleeve-hole measurements are released.",
                 "image_tokens": ["body_mount", "rubber", "shim", "sleeve", "mount"],
             },
             {
@@ -1892,7 +1892,7 @@ def link_domain(url: str) -> str:
     return match.group(1) if match else "link"
 
 
-def link_payloads(*values: Any) -> list[dict[str, str]]:
+def link_payloads(*values: Any) -> list[dict[str, Any]]:
     return [{"url": url, "label": link_domain(url)} for url in extract_urls(*values)]
 
 
@@ -1905,11 +1905,184 @@ def public_repo_url(repo_path: str) -> str:
     return f"../../{path}"
 
 
-def file_link(repo_path: str, label: str = "") -> dict[str, str] | None:
+def file_link(repo_path: str, label: str = "") -> dict[str, Any] | None:
     path = clean(repo_path).replace("\\", "/")
     if not path:
         return None
     return {"url": public_repo_url(path), "label": clean(label) or Path(path).name}
+
+
+def downloadable_file_link(repo_path: str, label: str = "") -> dict[str, Any] | None:
+    link = file_link(repo_path, label)
+    if link is not None:
+        link["download"] = True
+    return link
+
+
+def merge_link_payloads(*link_groups: Iterable[dict[str, Any]] | None) -> list[dict[str, Any]]:
+    merged: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for group in link_groups:
+        if not group:
+            continue
+        for raw_link in group:
+            if not isinstance(raw_link, dict):
+                continue
+            url = clean(raw_link.get("url") or raw_link.get("href"))
+            if not url or url in seen:
+                continue
+            link = dict(raw_link)
+            link["url"] = url
+            if not clean(link.get("label")):
+                link["label"] = link_domain(url)
+            seen.add(url)
+            merged.append(link)
+    return merged
+
+
+FABRICATION_DESIGN_LINKS_BY_PACKAGE: dict[str, list[tuple[str, str]]] = {
+    "rubber_recreation_rev_a": [
+        ("deliverables/fabrication_packages/rubber_recreation_rev_a.zip", "Rubber fabrication package ZIP"),
+        ("docs/bump-stop-fabrication-spec-20260504.md", "Bump-stop fabrication spec"),
+        ("data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf", "Rubber dimension sheet PDF"),
+        ("data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg", "Bump-stop measurement control SVG"),
+        ("data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf", "Small body-mount cushion DXF"),
+        ("data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.dxf", "Large body-mount cushion DXF"),
+        ("data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf", "Small cup washer DXF"),
+        ("data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf", "Large cup washer DXF"),
+        ("data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf", "Oval front-support pad DXF"),
+        ("data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf", "Left strip template DXF"),
+        ("data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf", "Right strip template DXF"),
+        ("data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv", "Rubber cut list CSV"),
+        ("data/manual/fabrication/rubber_recreation_rev_a/inspection_checklist.csv", "Rubber inspection checklist CSV"),
+        ("data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv", "Rubber machine definitions CSV"),
+        ("data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json", "Rubber machine definitions JSON"),
+    ],
+    "suspension_wood_cribbing_rev_a": [
+        ("deliverables/fabrication_packages/suspension_wood_cribbing_rev_a.zip", "Cribbing fabrication package ZIP"),
+        ("data/manual/fabrication/suspension_wood_cribbing_rev_a/j40_suspension_wood_cribbing_rev_a_dimension_sheet.pdf", "Cribbing dimension sheet PDF"),
+        ("data/manual/fabrication/suspension_wood_cribbing_rev_a/swc_rectangular_cribbing_block_rev_a.dxf", "Cribbing block DXF"),
+        ("data/manual/fabrication/suspension_wood_cribbing_rev_a/swc_wedge_chock_rev_a.dxf", "Wedge chock DXF"),
+        ("data/manual/fabrication/suspension_wood_cribbing_rev_a/fabricator_cut_list.csv", "Cribbing cut list CSV"),
+        ("data/manual/fabrication/suspension_wood_cribbing_rev_a/inspection_checklist.csv", "Cribbing inspection checklist CSV"),
+    ],
+    "midi5_plate_mount_rev_c": [
+        ("deliverables/fabrication_packages/midi5_plate_mount_rev_c.zip", "MIDI plate package ZIP"),
+        ("data/manual/fabrication/midi5_plate_mount_rev_c/j40_midi5_plate_mount_rev_c_dimension_sheet.pdf", "MIDI plate dimension sheet PDF"),
+        ("data/manual/fabrication/midi5_plate_mount_rev_c/midi5_holder_subplate_rev_c.dxf", "MIDI holder subplate DXF"),
+        ("data/manual/fabrication/midi5_plate_mount_rev_c/midi5_holder_subplate_rev_c.svg", "MIDI holder subplate SVG"),
+        ("data/manual/fabrication/midi5_plate_mount_rev_c/midi5_mount_plate_rev_c.dxf", "MIDI mount plate DXF"),
+    ],
+    "relay_mount_rev_c": [
+        ("deliverables/fabrication_packages/relay_mount_rev_c.zip", "Relay mount package ZIP"),
+        ("data/manual/fabrication/relay_mount_rev_c/j40_relay_mount_rev_c_dimension_sheet.pdf", "Relay mount dimension sheet PDF"),
+        ("data/manual/fabrication/relay_mount_rev_c/relay_carrier_rev_c.dxf", "Relay carrier DXF"),
+        ("data/manual/fabrication/relay_mount_rev_c/relay_rear_guard_rev_c.dxf", "Relay rear guard DXF"),
+    ],
+    "electrical_modules_rev_a": [
+        ("deliverables/fabrication_packages/electrical_modules_rev_a.zip", "Electrical modules package ZIP"),
+        ("data/manual/fabrication/electrical_modules_rev_a/j40_electrical_modules_rev_a_dimension_sheet.pdf", "Electrical modules dimension sheet PDF"),
+        ("data/manual/fabrication/electrical_modules_rev_a/relay_module_tray_rev_a.dxf", "Relay module tray DXF"),
+        ("data/manual/fabrication/electrical_modules_rev_a/power_module_box_rev_a.dxf", "Power module box DXF"),
+    ],
+}
+
+
+FABRICATION_DESIGN_ENTRY_PACKAGES: dict[str, tuple[str, ...]] = {
+    "part_body_mount_rubber_kit": ("rubber_recreation_rev_a",),
+    "part_body_mount_hardware_kit": ("rubber_recreation_rev_a",),
+    "part_body_mount_shim_pack": ("rubber_recreation_rev_a",),
+    "part_suspension_wooden_cribbing_blocks": ("suspension_wood_cribbing_rev_a",),
+    "service_local_3d_printing_fabrication_prototypes": ("midi5_plate_mount_rev_c",),
+}
+
+
+PIPE_HOSE_DESIGN_LINKS: list[tuple[str, str]] = [
+    ("data/manual/hose_local_market_order_sheet.csv", "Hose and pipe local order CSV"),
+    ("data/manual/replacement_pipe_order_release_specs.csv", "Pipe order release specs CSV"),
+    ("data/manual/replacement_pipe_photo_intake.csv", "Pipe photo and measurement index CSV"),
+]
+
+
+FORMED_PIPE_DESIGN_LINKS: list[tuple[str, str]] = [
+    ("docs/pipe-fabrication-spec-20260502.md", "Formed coolant pipe fabrication spec"),
+]
+
+
+def design_links_from_repo_paths(repo_paths: Iterable[tuple[str, str]]) -> list[dict[str, Any]]:
+    return [
+        link
+        for link in (downloadable_file_link(path, label) for path, label in repo_paths)
+        if link is not None
+    ]
+
+
+def fabrication_design_links_for_part(row: dict[str, Any]) -> list[dict[str, Any]]:
+    entry_id = norm(row.get("entry_id") or row.get("source_ref"))
+    blob = norm(
+        " ".join(
+            clean(row.get(key))
+            for key in (
+                "entry_id",
+                "source_ref",
+                "workstream",
+                "item",
+                "notes",
+                "procurement_stage",
+                "supply_type",
+                "inventory_group",
+            )
+        )
+    )
+    package_ids: list[str] = list(FABRICATION_DESIGN_ENTRY_PACKAGES.get(entry_id, ()))
+    extra_paths: list[tuple[str, str]] = []
+
+    if not package_ids:
+        if "body mount" in blob and any(token in blob for token in ("rubber", "cushion", "cup washer", "shim", "sleeve")):
+            package_ids.append("rubber_recreation_rev_a")
+        if "cribbing" in blob or "wedge chock" in blob:
+            package_ids.append("suspension_wood_cribbing_rev_a")
+        if "midi" in blob and any(token in blob for token in ("subplate", "plate", "fabrication", "3d printing", "cnc")):
+            package_ids.append("midi5_plate_mount_rev_c")
+        if "relay" in blob and any(token in blob for token in ("carrier", "guard", "mount", "fabrication")):
+            package_ids.append("relay_mount_rev_c")
+
+    if any(
+        token in blob
+        for token in (
+            "formed metal coolant",
+            "formed coolant pipe",
+            "radiator pipe assembly",
+            "cooling hose/pipe package",
+        )
+    ):
+        extra_paths.extend(FORMED_PIPE_DESIGN_LINKS)
+        extra_paths.extend(PIPE_HOSE_DESIGN_LINKS)
+    elif any(
+        token in blob
+        for token in (
+            "hard-line",
+            "hard line",
+            "hard-line tube",
+            "brake hydraulic hose/line",
+            "diesel fuel hose/line",
+            "clutch hydraulic refresh",
+            "line cutter",
+            "line bender",
+            "flaring kit",
+        )
+    ):
+        extra_paths.extend(PIPE_HOSE_DESIGN_LINKS)
+
+    package_paths = [
+        repo_path
+        for package_id in dict.fromkeys(package_ids)
+        for repo_path in FABRICATION_DESIGN_LINKS_BY_PACKAGE.get(package_id, [])
+    ]
+    return merge_link_payloads(
+        design_links_from_repo_paths(package_paths),
+        design_links_from_repo_paths(extra_paths),
+    )
 
 
 def market_specs_for_workstream(workstream_id: str) -> list[dict[str, Any]]:
@@ -1947,7 +2120,7 @@ def market_specs_for_workstream(workstream_id: str) -> list[dict[str, Any]]:
     return specs
 
 
-def package_relative_file_link(package_dir: str, filename: str) -> dict[str, str] | None:
+def package_relative_file_link(package_dir: str, filename: str) -> dict[str, Any] | None:
     name = clean(filename)
     if not name:
         return None
@@ -1989,6 +2162,7 @@ def package_archive_link(package_id: str, package_dir: str, extra_repo_paths: It
     link = file_link(repo_relative_path(archive_path), "Download package (.zip)")
     if link is None:
         return None
+    link["download"] = True
     link["bytes"] = archive_path.stat().st_size
     return link
 
@@ -2590,6 +2764,15 @@ def fabrication_package_payload(row: dict[str, str]) -> dict[str, Any]:
             if link is not None:
                 primary_links.append(link)
                 primary_repo_paths.append(repo_path)
+    if package_id == "rubber_recreation_rev_a":
+        for repo_path, label in (
+            ("docs/bump-stop-fabrication-spec-20260504.md", "Bump-stop spec"),
+            ("data/manual/bump_stop_fabrication_specs.csv", "Bump-stop CSV"),
+        ):
+            link = file_link(repo_path, label)
+            if link is not None:
+                primary_links.append(link)
+                primary_repo_paths.append(repo_path)
 
     dxf_repo_paths = [f"{package_dir.rstrip('/')}/{filename}" for filename in split_pipe(row.get("dxf_files", ""))]
     dxf_links = [
@@ -2672,9 +2855,7 @@ def replacement_pipe_order_release_payload(
                 "do_not_order_if": clean(row.get("do_not_order_if")),
                 "notes": clean(row.get("notes")),
                 "evidence_images": evidence_images,
-                "image": preferred_order_image(order_line_id, evidence_images)
-                if evidence_images
-                else order_component_reference_image(
+                "image": order_component_reference_image(
                     item,
                     " ".join(
                         clean(row.get(key))
@@ -2687,7 +2868,9 @@ def replacement_pipe_order_release_payload(
                             "notes",
                         )
                     ),
-                ),
+                )
+                if use_reference_image_for_pipe_order(order_line_id) or not evidence_images
+                else preferred_order_image(order_line_id, evidence_images),
             }
         )
     return payload
@@ -2723,9 +2906,7 @@ def hose_local_market_order_payload(
                 "final_install_check": clean(row.get("final_install_check")),
                 "hard_reject": clean(row.get("hard_reject")),
                 "evidence_images": evidence_images,
-                "image": preferred_order_image(clean(row.get("order_id")), evidence_images)
-                if evidence_images
-                else order_component_reference_image(
+                "image": order_component_reference_image(
                     item,
                     " ".join(
                         clean(row.get(key))
@@ -2738,7 +2919,9 @@ def hose_local_market_order_payload(
                             "clamp_or_fitting_spec",
                         )
                     ),
-                ),
+                )
+                if use_reference_image_for_pipe_order(clean(row.get("order_id"))) or not evidence_images
+                else preferred_order_image(clean(row.get("order_id")), evidence_images),
             }
         )
     return payload
@@ -3078,8 +3261,8 @@ def evidence_images_from_refs(
 EVIDENCE_KEY_PATTERN = re.compile(r"\b(?:RPO|RP|HLS|CR|BM|BMA|FS|RHA|RUB)-[A-Z0-9]+(?:-[A-Z0-9]+)*\b")
 
 RUBBER_REQUIREMENT_EQUIVALENT_KEYS: dict[str, tuple[str, ...]] = {
-    "CR-MAIN-001": ("BM-FAB-002", "BM-SM", "RUB-001"),
-    "CR-MAIN-002": ("BM-FAB-001", "BM-LG", "RUB-001"),
+    "CR-MAIN-001": ("BM-ISO-SM", "BM-FAB-002", "BM-SM", "RUB-001"),
+    "CR-MAIN-002": ("BM-ISO-LG", "BM-FAB-001", "BM-LG", "RUB-001"),
     "CR-MAIN-003": ("BM-HW-001", "BM-SLV"),
     "CR-MAIN-004": ("BM-HW-002", "BM-CUP-SM", "BM-CUP-LG"),
     "CR-FRONT-001": ("BM-FAB-003", "FS-OVAL", "RUB-001"),
@@ -3176,6 +3359,11 @@ def preferred_order_image(row_id: str, evidence_images: list[dict[str, Any]]) ->
         if image:
             return image
     return evidence_images[0] if evidence_images else None
+
+
+def use_reference_image_for_pipe_order(row_id: str) -> bool:
+    order_id = clean(row_id).upper()
+    return order_id.startswith("HLS-") or bool(re.match(r"RPO-(COOL|FUEL|VAC|BRAKE|CLUTCH|CLIP)-", order_id))
 
 
 def evidence_keys_from_text(*values: str) -> list[str]:
@@ -3324,10 +3512,10 @@ def body_mount_order_evidence_keys(row: dict[str, str]) -> list[str]:
             row.get("notes", ""),
         ),
     ]
-    if "large" in text and "cushion" in text:
-        keys.extend(["CR-MAIN-002", "BM-LG", "BM-FAB-001"])
-    elif "small" in text and "cushion" in text:
-        keys.extend(["CR-MAIN-001", "BM-SM", "BM-FAB-002"])
+    if "large" in text and ("cushion" in text or "isolator" in text or "pad" in text):
+        keys.extend(["CR-MAIN-002", "BM-ISO-LG", "BM-LG", "BM-FAB-001"])
+    elif "small" in text and ("cushion" in text or "isolator" in text or "pad" in text):
+        keys.extend(["CR-MAIN-001", "BM-ISO-SM", "BM-SM", "BM-FAB-002"])
     elif "cushion" in text or "body mount" in text:
         keys.extend(["CR-MAIN-001", "CR-MAIN-002"])
     if any(token in text for token in ("stopper", "seat", "washer", "cup")):
@@ -3348,10 +3536,10 @@ def body_mount_action_evidence_keys(row: dict[str, str]) -> list[str]:
     keys = evidence_keys_from_text(row.get("blocks_order_lines", ""))
     if any(token in text for token in ("lay out", "route", "dry-stack", "dry stack", "body-mount rubber")):
         keys.extend(["CR-MAIN-001", "CR-MAIN-002", "CR-FRONT-001", "CR-FRONT-002", "CR-FRONT-003"])
-    if "large circular" in text:
-        keys.extend(["CR-MAIN-002", "BM-FAB-001", "BM-LG"])
-    if "small circular" in text or "split" in text:
-        keys.extend(["CR-MAIN-001", "BM-FAB-002", "BM-SM"])
+    if "large circular" in text or "large isolator" in text:
+        keys.extend(["CR-MAIN-002", "BM-ISO-LG", "BM-FAB-001", "BM-LG"])
+    if "small circular" in text or "small isolator" in text or "split" in text:
+        keys.extend(["CR-MAIN-001", "BM-ISO-SM", "BM-FAB-002", "BM-SM"])
     if any(token in text for token in ("stopper", "seat", "cup")):
         keys.extend(["CR-MAIN-004", "BM-HW-002", "BM-CUP-SM"])
     if "sleeve" in text or "crush tube" in text:
@@ -3374,10 +3562,10 @@ def body_mount_station_evidence_keys(row: dict[str, str]) -> list[str]:
         keys.extend(["CR-FRONT-001", "CR-FRONT-002", "FS-OVAL", "FS-STRIP-L"])
     elif "front-support-r" in text or "fs-strip-r" in text:
         keys.extend(["CR-FRONT-001", "CR-FRONT-003", "FS-OVAL", "FS-STRIP-R"])
-    elif "bm-lg" in text:
-        keys.extend(["CR-MAIN-002", "BM-LG"])
-    elif "bm-sm" in text:
-        keys.extend(["CR-MAIN-001", "BM-SM"])
+    elif "bm-lg" in text or "bm-iso-lg" in text:
+        keys.extend(["CR-MAIN-002", "BM-ISO-LG", "BM-LG"])
+    elif "bm-sm" in text or "bm-iso-sm" in text:
+        keys.extend(["CR-MAIN-001", "BM-ISO-SM", "BM-SM"])
     elif station_id.startswith("MAIN"):
         keys.extend(["CR-MAIN-001", "CR-MAIN-002", "CR-MAIN-004"])
     return keys
@@ -6009,7 +6197,7 @@ def build_chassis_prime_readiness_panel(photo_rows: list[dict[str, str]]) -> dic
             {
                 "label": "Seam sealer and top protection",
                 "status": "queued",
-                "detail": "Apply seam sealer where lap joints need sealing after primer, then apply compatible topcoat/chassis black or the on-hand Raptor protective coating where specified.",
+                "detail": "Apply seam sealer where lap joints need sealing after primer, then apply the on-hand Raptor protective coating as the exposed chassis finish.",
             },
             {
                 "label": "Cavity wax cans last",
@@ -6022,18 +6210,22 @@ def build_chassis_prime_readiness_panel(photo_rows: list[dict[str, str]]) -> dic
                 "Evapo-Rust 5L - received",
                 "DISS/APC cleaner 5L - received",
                 "GREZ OFF HD degreaser - received",
+                "Wadfow WRS1550 pressure sprayer - received",
+                "3M Prep Solvent-70 wax and grease remover - received",
+                "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set - received",
+                "HB BODY 999 seam sealer - received",
+                "HB Body U900 cavity wax spray 400ml x2 - received",
                 "U-POL/Raptor bedliner/protective coating - on hand",
+                "Extra hand/detail brushes - on hand",
+                "125 mm flap discs and nylon fiber stripping/polishing discs - existing stock; verify physical count",
+                "Rubber grommet assortment - received; can serve as temporary open-hole masking after fit and solvent check",
             ],
             "pending_delivery": [
-                "Wadfow WRS1550 pressure sprayer - ordered/pending delivery",
-                "3M Prep Solvent-70 wax and grease remover - ordered/pending delivery",
-                "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set - ordered/pending delivery",
-                "HB BODY 999 seam sealer - ordered/pending delivery",
-                "HB Body U900 cavity wax spray 400ml x2 - ordered/pending delivery",
+                "Masking tape and solvent-safe lint-free wipes - purchased, awaiting delivery",
             ],
             "missing": [
-                "Final chassis finish decision by zone: chassis black/topcoat vs Raptor where exposed",
-                "Extra brushes, strip/flap discs, masking plugs/tape, solvent wipes",
+                "Separate tapered masking plugs only if the on-hand grommet fit/solvent check fails",
+                "Cavity-wax wand/nozzle confirmation",
             ],
         },
     }
@@ -6488,11 +6680,11 @@ def build_chassis_before_primer_subtask_group(photo_rows: list[dict[str, str]]) 
             "process_steps": [
                 "Confirm rust converter or Evapo-Rust work is fully cured/complete and all residue is removed or neutralized before solvent wipe.",
                 "Use 3M Prep Solvent-70 or approved wax-and-grease remover only after the chassis is fully dry and rust-treatment residue is gone; allow full flash-off.",
-                "Mask threads, ground pads, brake/fuel fittings, hard-line contact areas, rubber parts, and holes that must stay open.",
+                "Mask threads, ground pads, brake/fuel fittings, hard-line contact areas, rubber parts, and holes that must stay open; use sacrificial bolts for threaded holes and only use on-hand grommets as temporary open-hole masking after a fit and solvent-residue check.",
                 "Apply the selected Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set to approved bare/prepped metal within the product window.",
                 "Apply HB BODY 999 seam sealer only after primer where lap joints, seams, or bracket edges need sealing.",
-                "Apply one compatible exposed top protection by zone after primer/sealer cure: chassis black/topcoat or on-hand Raptor protective coating.",
-                "Use black paint under Raptor only if the product data confirms the exact cure, scuff, and recoat compatibility for that stack.",
+                "Apply on-hand U-POL/Raptor protective coating as the exposed top protection after primer/sealer cure.",
+                "Do not add chassis black under Raptor unless the exact product data confirms the cure, scuff, and recoat compatibility for that stack.",
                 "Use HB Body U900 cavity wax spray cans with wand/nozzle last inside boxed, lapped, and hidden sections; keep drain and bolt holes open.",
                 "Photograph each layer before it is hidden by the next layer or by refitted lines, clips, rubbers, and suspension parts.",
             ],
@@ -6504,13 +6696,14 @@ def build_chassis_before_primer_subtask_group(photo_rows: list[dict[str, str]]) 
                 "Cavity-wax wand/nozzle",
             ],
             "supplies": [
-                "3M Prep Solvent-70 wax and grease remover - ordered/pending delivery",
-                "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set - ordered/pending delivery",
-                "HB BODY 999 seam sealer - ordered/pending delivery",
+                "3M Prep Solvent-70 wax and grease remover - received",
+                "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set - received",
+                "HB BODY 999 seam sealer - received",
                 "U-POL/Raptor bedliner/protective coating - on hand",
-                "HB Body U900 cavity wax spray 400ml x2 - ordered/pending delivery",
-                "Final chassis finish decision by zone: chassis black/topcoat OR Raptor where exposed",
-                "Product-data confirmation before stacking black paint under Raptor",
+                "HB Body U900 cavity wax spray 400ml x2 - received",
+                "Masking tape and solvent-safe lint-free wipes - purchased, awaiting delivery",
+                "On-hand grommet assortment for temporary open-hole masking after fit/solvent check",
+                "Product-data confirmation only if black paint is proposed under Raptor",
             ],
             "hold_point": "No final protection is complete until converter residue removal, solvent wipe, primer, seam sealing, top protection, and cavity wax are documented in order, with drain holes, threads, grounds, and line contact points still serviceable.",
             "images": dedupe_payload_images([image_payload(row, []) for row in chassis_rows]),
@@ -6894,6 +7087,14 @@ def order_component_reference_image(item: str, context: str = "") -> dict[str, A
             "bm-cup",
             "previous",
         )
+    if has_any("bm-iso-sm", "bm-iso-lg", "main body isolator pad", "custom square flat pad", "body isolator pad"):
+        return local(
+            "photos/20260405_234652.jpg",
+            "tub-side flat body-mount landing context",
+            "20260405_234652",
+            "body-isolator",
+            "context",
+        )
     if has_any("bm-lg", "bm_lg", "large circular body-mount", "large circular body mount", "large body-mount cushion", "large body mount cushion"):
         return previous(
             "photos/20260502_004419_gp_ZPXJRBzg.jpg",
@@ -6918,21 +7119,37 @@ def order_component_reference_image(item: str, context: str = "") -> dict[str, A
             "fs-oval",
             "previous",
         )
-    if has_any("fs-strip-l", "fs_strip_left") or (has_any("front-support strip", "front support strip", "strip rubber") and has_any("left", "left-side", "left side")):
-        return previous(
-            "photos/20260502_004201_gp_zfUSmKJg.jpg",
-            "previous left front-support strip sample",
-            "20260502_004201_gp_zfUSmKJg",
-            "fs-strip-l",
-            "previous",
-        )
-    if has_any("fs-strip-r", "fs_strip_right") or (has_any("front-support strip", "front support strip", "strip rubber") and has_any("right", "right-side", "right side")):
+    if has_any("bump-60010-long", "long axle-to-chassis bump stop", "48304-60010", "long bump stop"):
         return previous(
             "photos/20260502_004222_gp_PKRe5HSQ.jpg",
-            "previous right front-support strip sample",
+            "previous broken bump-stop fragments",
             "20260502_004222_gp_PKRe5HSQ",
-            "fs-strip-r",
+            "bump-stop",
             "previous",
+        )
+    if has_any("bump-60020-short", "short right-front bump stop", "48304-60020", "right-front bump stop"):
+        return previous(
+            "photos/20260502_004201_gp_zfUSmKJg.jpg",
+            "previous bump-stop vertical scale reference",
+            "20260502_004201_gp_zfUSmKJg",
+            "bump-stop",
+            "previous",
+        )
+    if has_any("fs-strip-l", "fs_strip_left") or (has_any("front-support strip", "front support strip", "strip rubber") and has_any("left", "left-side", "left side")):
+        return local(
+            "data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg",
+            "left front-support strip template hold",
+            "fs_strip_left_template_blank_rev_a",
+            "fs-strip-l",
+            "template",
+        )
+    if has_any("fs-strip-r", "fs_strip_right") or (has_any("front-support strip", "front support strip", "strip rubber") and has_any("right", "right-side", "right side")):
+        return local(
+            "data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg",
+            "right front-support strip template hold",
+            "fs_strip_right_template_blank_rev_a",
+            "fs-strip-r",
+            "template",
         )
     if has_any("midi5-plate-001", "midi5-subplate-001", "midi5_mount_plate", "midi5_holder_subplate", "midi 5-way structural", "midi 5-way non-conductive"):
         return previous(
@@ -6954,10 +7171,10 @@ def order_component_reference_image(item: str, context: str = "") -> dict[str, A
     if has_any("fuse carrier", "cabin fuse", "compact fuse", "under dash fuse", "under-dash fuse"):
         return local(
             "deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png",
-            "user-supplied compact fuse box photo",
+            "user-supplied compact old-OEM fuse box photo",
             "compact_cabin_fuse_box_user_photo_20260504",
             "fuse",
-            "compact",
+            "carrier",
         )
     if has_any("bench vice", "workshop vice", "vise") or has("vice", "bench"):
         return ref("bench_vice", "bolt-down bench vice reference image", "bench", "vice")
@@ -6993,18 +7210,38 @@ def order_component_reference_image(item: str, context: str = "") -> dict[str, A
         )
     if has_any("formed metal coolant", "formed coolant pipe", "metal coolant", "radiator pipe assembly"):
         return local(
-            "photos/20260502_004106_gp_wlYlUahA.jpg",
-            "formed coolant pipe sample photo",
-            "20260502_004106_gp_wlYlUahA",
+            "deliverables/selling_site_images/images/manual_overrides/formed_coolant_pipe_sample_crop_20260502.jpg",
+            "current car formed coolant pipe sample crop",
+            "formed_coolant_pipe_sample_crop_20260502",
             "formed",
             "coolant",
             "pipe",
         )
+    if has_any("p-clips", "p clips", "support clips", "line protection", "edge protection"):
+        return ref("clamp", "line clip/clamp reference image", "clip", "clamp")
+    if has_any("hard-line", "hard line", "hard-line tube", "hard line tube", "brake hard-line", "brake hard line", "fuel hard-line", "fuel hard line", "clutch hard-line", "clutch hard line"):
+        return local(
+            "deliverables/selling_site_images/images/manual_overrides/rear_axle_hardline_union_current_car_crop_20260503.jpg",
+            "current car hard-line route and union crop",
+            "rear_axle_hardline_union_current_car_crop_20260503",
+            "hard",
+            "line",
+            "current",
+        )
+    if has_any("brake flex hose", "clutch flex hose", "flex hose assemblies", "flexible brake hose", "hydraulic hose assemblies"):
+        return local(
+            "deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg",
+            "current car hydraulic flex hose fitting crop",
+            "front_brake_hose_fitting_current_car_crop_20260503",
+            "hydraulic",
+            "flex",
+            "hose",
+        )
     if has_any("connector hose", "connector/coupler", "coupler hoses"):
         return local(
-            "photos/20260502_004133_gp_ZEpqmARA.jpg",
-            "formed-pipe connector hose sample photo",
-            "20260502_004133_gp_ZEpqmARA",
+            "deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
+            "current car connector hose crop",
+            "radiator_heater_hose_current_car_crop_20260503",
             "connector",
             "hose",
         )
@@ -7013,11 +7250,29 @@ def order_component_reference_image(item: str, context: str = "") -> dict[str, A
     if has_any("a/c barrier", "ac barrier", "air conditioning", "refrigerant"):
         return ref("ac_barrier_hose", "A/C barrier hose reference image", "ac", "hose")
     if has("heater", "hose"):
-        return ref("heater_hose", "heater hose reference image", "heater", "hose")
+        return local(
+            "deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
+            "current car heater hose crop",
+            "radiator_heater_hose_current_car_crop_20260503",
+            "heater",
+            "hose",
+        )
     if has_any("radiator overflow", "overflow hose", "coolant overflow"):
-        return ref("coolant_overflow", "coolant overflow reference image", "overflow")
+        return local(
+            "deliverables/selling_site_images/images/manual_overrides/radiator_cap_current_car_crop_20260503.jpg",
+            "current car radiator neck and overflow crop",
+            "radiator_cap_current_car_crop_20260503",
+            "overflow",
+            "radiator",
+        )
     if has("radiator", "hose") or has("coolant", "hose") or has_any("upper radiator", "lower radiator"):
-        return ref("radiator_hose", "radiator/coolant hose reference image", "radiator", "hose")
+        return local(
+            "deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
+            "current car radiator/coolant hose crop",
+            "radiator_heater_hose_current_car_crop_20260503",
+            "radiator",
+            "hose",
+        )
     if (has("brake", "booster") or has("brake", "servo")) and not has_any("hose", "line", "pipe", "tube"):
         return ref("brake_booster", "brake booster reference image", "brake", "booster")
     if has_any("fuel clamp", "clamp pack", "hose clamp", "hose clamps"):
@@ -7029,13 +7284,37 @@ def order_component_reference_image(item: str, context: str = "") -> dict[str, A
             "clamp",
         )
     if has_any("fuel", "diesel", "injector leak-off", "leak-off"):
-        return ref("fuel_hose", "diesel fuel hose reference image", "fuel", "hose")
+        return local(
+            "deliverables/selling_site_images/images/manual_overrides/fuel_hose_line_fittings_current_car_crop_20260503.jpg",
+            "current car fuel hose and fitting crop",
+            "fuel_hose_line_fittings_current_car_crop_20260503",
+            "fuel",
+            "hose",
+        )
     if has_any("vacuum", "breather", "oil mist", "oil outlet"):
-        return ref("fuel_hose", "vacuum/breather hose reference image", "hose")
+        return local(
+            "deliverables/selling_site_images/images/manual_overrides/vacuum_breather_hose_current_car_crop_20260503.jpg",
+            "current car vacuum and breather hose crop",
+            "vacuum_breather_hose_current_car_crop_20260503",
+            "vacuum",
+            "hose",
+        )
     if has("brake") and has_any("hose", "line", "hydraulic", "tube"):
-        return ref("brake_hose_line", "brake hose/line reference image", "brake", "line")
+        return local(
+            "deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg",
+            "current car brake hose fitting crop",
+            "front_brake_hose_fitting_current_car_crop_20260503",
+            "brake",
+            "line",
+        )
     if has("clutch") and has_any("hose", "line", "hydraulic"):
-        return ref("brake_hose_line", "clutch/brake hydraulic line reference image", "clutch", "line")
+        return local(
+            "deliverables/selling_site_images/images/manual_overrides/clutch_hydraulic_slave_line_current_car_crop_20260430.jpg",
+            "current car clutch hydraulic line crop",
+            "clutch_hydraulic_slave_line_current_car_crop_20260430",
+            "clutch",
+            "line",
+        )
     if has_any("p-clips", "p clips", "support clips", "line protection", "edge protection"):
         return ref("clamp", "line clip/clamp reference image", "clip", "clamp")
     if has_any("cup washer", "crush sleeve", "shim"):
@@ -7045,7 +7324,13 @@ def order_component_reference_image(item: str, context: str = "") -> dict[str, A
     if has("exhaust", "hanger"):
         return ref("exhaust_hanger", "exhaust hanger reference image", "exhaust", "hanger")
     if has("bump", "stop"):
-        return ref("bump_stop", "bump stop reference image", "bump", "stop")
+        return local(
+            "data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
+            "bump stop measurement control",
+            "bump_stop_vehicle_measurement_control",
+            "bump",
+            "stop",
+        )
     if has_any("glow plug", "heat plug"):
         return ref("glow_plugs", "glow plug reference image", "glow", "plug")
     return ref("generic_part", "component reference image", "component")
@@ -7123,13 +7408,21 @@ def choose_supply_reference_image(
         return ref("bench_drill", f"{item} · bench drill reference image", "bench", "drill")
     if has_any("bench vice", "workshop vice", "vise") or has("vice", "bench"):
         return ref("bench_vice", f"{item} · bolt-down bench vice reference image", "vice")
+    if has_any("flaring kit", "line cutter", "tube cutter", "hand bender", "line bender", "tube bender") and has_any("brake", "fuel", "clutch", "hard-line", "hard line"):
+        return local_photo(
+            "deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_tool_reference.svg",
+            f"{item} · hard-line shaping tool kit reference image",
+            "line",
+            "bender",
+            "flaring",
+            "tool",
+        )
     if has_any("compact cabin fuse", "cabin fuse", "fuse protection", "under-dash fuse", "fuse carrier"):
         return local_photo(
             "deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png",
-            f"{item} · user-supplied compact fuse box reference",
+            f"{item} · user-supplied compact old-OEM fuse box photo",
             "fuse",
-            "compact",
-            "actual",
+            "carrier",
         )
     if has("drill", "chuck"):
         return ref("drill_chuck", f"{item} · drill chuck reference image", "drill", "chuck")
@@ -7153,7 +7446,12 @@ def choose_supply_reference_image(
     if has_any("shackle", "shackles", "spring setup", "leaf spring"):
         return ref("leaf_shackle", f"{item} · leaf spring/shackle reference image", "shackle")
     if has("bump", "stop"):
-        return ref("bump_stop", f"{item} · bump stop reference image", "bump", "stop")
+        return local_photo(
+            "data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
+            f"{item} · bump stop measurement control",
+            "bump",
+            "stop",
+        )
     if has("engine", "mount"):
         return ref("engine_mount", f"{item} · engine mount reference image", "engine", "mount")
     if has_any("gearbox / transfer case mounts", "transmission mount", "powertrain mount"):
@@ -7161,10 +7459,69 @@ def choose_supply_reference_image(
     if has_any("eps", "electrical power steering") or has("power", "steering") or has("vitz", "column"):
         return ref("eps_column", f"{item} · Vitz/Yaris XP90 EPS column set reference image", "eps")
 
-    if has("body", "mount", "rubber") or has("rubber", "mountings", "chassis"):
-        return ref("body_mount_kit", f"{item} · body mount rubber reference image", "body", "mount")
+    if has_any("retaining clip", "r-clips", "r clips", "hairpins", "hairpin", "split pins", "split pin", "cotter pins", "cotter", "circlips", "e-clips", "e clips"):
+        return local_photo(
+            "deliverables/selling_site_images/images/manual_overrides/body_retaining_clips_cotter_pack_reference.svg",
+            f"{item} · retaining clip and cotter reference image",
+            "retaining",
+            "clip",
+        )
+    if has_any("captive/clip", "captive nuts", "clip nuts", "speed nut", "speed nuts", "weld/rivnut", "weld nut", "weld nuts", "rivnuts", "rivnut"):
+        return local_photo(
+            "deliverables/selling_site_images/images/manual_overrides/body_captive_clip_nuts_reference.svg",
+            f"{item} · captive clip nut and rivnut reference image",
+            "clip",
+            "nuts",
+        )
+    if has_any("trim screws", "self-tapping", "self tapping", "countersunk", "cup/finishing", "finishing washers"):
+        return local_photo(
+            "deliverables/selling_site_images/images/manual_overrides/body_trim_screws_cup_washers_reference.svg",
+            f"{item} · trim screws and cup washers reference image",
+            "trim",
+            "screws",
+        )
+    if has_any("rubber/plastic", "rubber bumpers", "plastic bumpers", "rubber bumper", "isolators", "knobs and small spacers", "pads, isolators", "pads isolators"):
+        return local_photo(
+            "deliverables/selling_site_images/images/manual_overrides/body_rubber_bumpers_isolators_reference.svg",
+            f"{item} · rubber bumpers and isolators reference image",
+            "rubber",
+            "isolators",
+        )
+    if has_any("shoulder bolts", "shoulder bolt", "pivot pins", "pivot pin", "cylindrical sleeves", "stand-off spacers", "standoff spacers", "stand-offs", "stepped pins"):
+        return local_photo(
+            "deliverables/selling_site_images/images/manual_overrides/body_shoulder_pins_sleeves_spacers_reference.svg",
+            f"{item} · shoulder pins sleeves and spacers reference image",
+            "sleeves",
+            "spacers",
+        )
+    if has_any("specialty brackets", "specialty bracket", "retainer plates", "retainer plate", "captive-nut plates", "captive nut plates", "strap brackets", "bent link/strap"):
+        return local_photo(
+            "deliverables/selling_site_images/images/manual_overrides/body_specialty_brackets_retainer_plates_reference.svg",
+            f"{item} · specialty bracket and retainer plate reference image",
+            "bracket",
+            "retainer",
+        )
+    if has_any("body mount hardware", "body mount bolts", "bolts sleeves washers"):
+        return local_photo(
+            "deliverables/selling_site_images/images/manual_overrides/body_mount_hardware_sleeves_washers_reference.svg",
+            f"{item} · body mount hardware sleeves and washers reference image",
+            "body",
+            "mount",
+        )
     if has_any("body mount shim", "body shims", "shim/spacer", "shims/spacers", "shim and spacer"):
-        return ref("body_shims", f"{item} · body shim/spacer reference image", "shim", "spacer")
+        return local_photo(
+            "deliverables/selling_site_images/images/manual_overrides/body_mount_shim_pack_reference.svg",
+            f"{item} · body mount shim and spacer reference image",
+            "shim",
+            "spacer",
+        )
+    if has("body", "mount", "rubber") or has("rubber", "mountings", "chassis"):
+        return local_photo(
+            "deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
+            f"{item} · body mount rubber kit reference image",
+            "body",
+            "mount",
+        )
     if has_any("fastener kit", "body mount hardware", "body mount bolts", "full set of new nuts", "spring washers"):
         return ref("graded_fasteners", f"{item} · fastener kit reference image", "fastener")
     if has_any("captive nuts", "clip nuts", "rivnuts"):
@@ -7205,7 +7562,12 @@ def choose_supply_reference_image(
     if has("relay", "box") or has("relay", "block"):
         return ref("relay_fuse_box", f"{item} · relay/fuse box reference image", "relay", "box")
     if has("fuse", "box") or has("blade", "fuse"):
-        return ref("fuse_box", f"{item} · fuse box reference image", "fuse", "box")
+        return local_photo(
+            "deliverables/selling_site_images/images/manual_overrides/compact_cabin_fuse_box_user_photo_20260504.png",
+            f"{item} · user-supplied compact old-OEM fuse box photo",
+            "fuse",
+            "box",
+        )
     if has_any("horn relay", "5 pin", "relay"):
         return ref("relay", f"{item} · automotive relay reference image", "relay")
     if has("grommet"):
@@ -7213,12 +7575,51 @@ def choose_supply_reference_image(
     if has("switch", "panel"):
         return ref("switch_panel", f"{item} · switch panel reference image", "switch", "panel")
 
+    if has_any("formed metal coolant", "formed coolant pipe", "radiator pipe assembly", "cooling hose/pipe package"):
+        return local_photo(
+            "deliverables/selling_site_images/images/manual_overrides/formed_coolant_pipe_sample_crop_20260502.jpg",
+            f"{item} · current car formed coolant pipe sample crop",
+            "formed",
+            "coolant",
+            "pipe",
+        )
+    if has_any("hard-line", "hard line", "hard-line tube", "hard line tube", "hard-line coil", "hard line coil"):
+        return local_photo(
+            "deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
+            f"{item} · hard-line bending and flaring reference image",
+            "hard",
+            "line",
+            "fabrication",
+        )
+    if has_any("brake flex hose", "front flexible brake hose", "rear center frame-to-axle brake flex", "clutch flex hose", "complete crimped brake hose"):
+        return local_photo(
+            "deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg",
+            f"{item} · current car hydraulic flex hose fitting crop",
+            "hydraulic",
+            "flex",
+            "hose",
+        )
     if has("radiator", "hose") or has("coolant", "hose") or has("all coolant hoses"):
-        return ref("radiator_hose", f"{item} · radiator/coolant hose reference image", "radiator", "hose")
+        return local_photo(
+            "deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
+            f"{item} · current car radiator/heater hose crop",
+            "radiator",
+            "hose",
+        )
     if has("heater", "hose"):
-        return ref("heater_hose", f"{item} · heater hose reference image", "heater", "hose")
+        return local_photo(
+            "deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
+            f"{item} · current car heater hose crop",
+            "heater",
+            "hose",
+        )
     if has("radiator", "cap"):
-        return ref("radiator_cap", f"{item} · radiator cap reference image", "radiator", "cap")
+        return local_photo(
+            "deliverables/selling_site_images/images/manual_overrides/radiator_cap_current_car_crop_20260503.jpg",
+            f"{item} · current car radiator cap crop",
+            "radiator",
+            "cap",
+        )
     if has("radiator"):
         return ref("radiator", f"{item} · radiator reference image", "radiator")
     if has("water", "pump"):
@@ -7230,7 +7631,12 @@ def choose_supply_reference_image(
     if has_any("accessory belt", "fan belt"):
         return ref("accessory_belt", f"{item} · accessory belt reference image", "belt")
     if has_any("fuel hose", "fuel-rated", "diesel-rated hose", "rubber hose and clamp", "return-line hose", "new fuel hoses", "proper hose clamps", "hose clamps", "jubilee hose", "vacuum hose"):
-        return ref("fuel_hose", f"{item} · fuel hose/clamp reference image", "fuel", "hose")
+        return local_photo(
+            "deliverables/selling_site_images/images/manual_overrides/fuel_hose_line_fittings_current_car_crop_20260503.jpg",
+            f"{item} · current car fuel/vacuum hose and fitting crop",
+            "fuel",
+            "hose",
+        )
     if has_any("fuel tank", "sender seal", "tank straps"):
         return ref("fuel_tank_parts", f"{item} · fuel tank service reference image", "fuel", "tank")
     if has_any("clutch master", "clutch slave", "clutch cylinder"):
@@ -7238,7 +7644,7 @@ def choose_supply_reference_image(
     if has("clutch") and has_any("hose", "line"):
         return ref("brake_hose_line", f"{item} · clutch/brake line reference image", "clutch", "line")
     if has("brake", "booster") or has("brake", "servo") or has_any("44610-60050", "bbn60050", "vacuum booster"):
-        return ref("brake_booster", f"{item} · 44610-60050 dual-diaphragm brake booster reference image", "brake", "booster")
+        return ref("brake_booster", f"{item} · brake booster reference image", "brake", "booster")
     if has("brake", "master"):
         return ref("brake_master", f"{item} · brake master cylinder reference image", "brake", "master")
     if has("wheel", "cylinder"):
@@ -7838,12 +8244,9 @@ def attach_inventory_images(
             source_ref=source_ref,
             inventory_group=clean(row.get("inventory_group")),
         )
+        design_links = fabrication_design_links_for_part(updated)
         image_links = link_payloads(updated["image"].get("listing_url", ""), updated["image"].get("image_url", ""))
-        if image_links:
-            existing_urls = {clean(link.get("url")) for link in updated.get("links", []) if isinstance(link, dict)}
-            updated["links"] = list(updated.get("links", [])) + [
-                link for link in image_links if clean(link.get("url")) not in existing_urls
-            ]
+        updated["links"] = merge_link_payloads(design_links, updated.get("links", []), image_links)
         output.append(updated)
     return output
 

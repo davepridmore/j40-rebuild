@@ -17,7 +17,7 @@ The correct approach is not to strip every sound black coating to bare metal. Ke
 1. Work by zone, not randomly across the frame.
 2. Dry clean and blow/vacuum dust before using any wet cleaner.
 3. Use wire cup and hand wire brushes on non-flat geometry.
-4. Use strip disc or flap disc only on flatter rail faces where there is control.
+4. Use strip disc or flap disc only on flatter rail faces where there is control; these are angle-grinder consumables, and the existing flap/strip stock should be physically counted before rebuying.
 5. Do not thin bracket edges, hanger roots, or pitted rail lips chasing perfect shine.
 6. Move hard-line clips only where needed and safe; inspect under the clip contact points before coating.
 7. Degrease only after the second brushing pass, otherwise oil and dust hide defects.
@@ -209,10 +209,10 @@ Use rust chemistry only after dry inspection.
 Only start this after the hold points below are closed.
 
 1. Wax and grease remover wipe.
-2. Mask threads, ground pads, brake/fuel line fittings, and rubber parts.
+2. Mask threads, ground pads, brake/fuel line fittings, and rubber parts. Use sacrificial bolts for threaded holes; the on-hand grommet pack can be used as temporary open-hole masking only where each piece fits snugly and survives a solvent test.
 3. Apply the selected zinc-rich 2K epoxy primer to approved metal.
 4. Seam sealer only after primer where product system requires it.
-5. Apply chassis topcoat/chassis black or the on-hand Raptor protective coating in the zones selected for that finish after primer/sealer cure.
+5. Apply the on-hand U-POL/Raptor protective coating as the exposed chassis top protection after primer/sealer cure.
 6. Apply HB Body U900 cavity wax spray cans last inside hidden/boxed/lapped sections with the wand/nozzle; do not block drains, threads, bolt holes, or future ground points.
 7. Reopen ground pads to clean metal during final electrical ground installation, then protect around the completed connection.
 
@@ -229,7 +229,7 @@ Do not allow primer until each item is closed:
 | Brake/fuel hard-line clips | Under-clip condition checked, not just visible outer faces. |
 | Wet cleaning complete | Chassis fully dry; no water trapped in seams, holes, clips, or boxed areas. |
 | Rust treatment complete | Converter/Evapo-Rust residue removed; only stable metal remains. |
-| Materials ready | Wax/grease remover, zinc-rich 2K epoxy primer, seam sealer, top protection/chassis black or Raptor-by-zone, and HB Body U900 cavity wax cans selected as one compatible stack. |
+| Materials ready | Wax/grease remover, zinc-rich 2K epoxy primer, seam sealer, on-hand U-POL/Raptor exposed top protection, HB Body U900 cavity wax cans, tape/wipes ordered, and on-hand grommets checked as temporary open-hole masking where suitable. |
 
 ## What To Photograph After The Next Work Session
 

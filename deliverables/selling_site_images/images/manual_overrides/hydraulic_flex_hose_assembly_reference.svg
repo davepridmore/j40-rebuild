@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Hydraulic flex hose assembly reference</title>
+  <desc id="desc">Reference image showing brake or clutch flex hose assembly with crimped ends, bracket grooves, and correct fitting style.</desc>
+  <defs>
+    <linearGradient id="rubber" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#1f2937"/>
+      <stop offset="0.45" stop-color="#475569"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="zinc" x1="0" x2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="0.45" stop-color="#94a3b8"/>
+      <stop offset="1" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <rect width="900" height="600" rx="34" fill="#f8fafc"/>
+  <rect x="44" y="44" width="812" height="512" rx="28" fill="#eef2f7" stroke="#cbd5e1" stroke-width="2"/>
+
+  <g filter="url(#shadow)">
+    <path d="M210 348 C300 245 438 222 551 283 C616 319 671 319 736 262" fill="none" stroke="#020617" stroke-width="56" stroke-linecap="round"/>
+    <path d="M210 348 C300 245 438 222 551 283 C616 319 671 319 736 262" fill="none" stroke="url(#rubber)" stroke-width="40" stroke-linecap="round"/>
+    <path d="M210 348 C300 245 438 222 551 283 C616 319 671 319 736 262" fill="none" stroke="#64748b" stroke-width="9" stroke-linecap="round" opacity="0.55"/>
+  </g>
+
+  <g fill="url(#zinc)" stroke="#475569" stroke-width="5">
+    <rect x="146" y="329" width="88" height="44" rx="10" transform="rotate(-42 190 351)"/>
+    <rect x="682" y="238" width="88" height="44" rx="10" transform="rotate(-42 726 260)"/>
+    <circle cx="132" cy="408" r="35"/>
+    <circle cx="132" cy="408" r="15" fill="#eef2f7"/>
+    <polygon points="785,207 838,236 806,286 753,257"/>
+  </g>
+  <g stroke="#334155" stroke-width="4" fill="none">
+    <line x1="166" y1="337" x2="200" y2="371"/>
+    <line x1="180" y1="323" x2="214" y2="357"/>
+    <line x1="701" y1="246" x2="735" y2="280"/>
+    <line x1="715" y1="232" x2="749" y2="266"/>
+    <line x1="769" y1="230" x2="821" y2="258"/>
+    <line x1="759" y1="247" x2="811" y2="276"/>
+  </g>
+
+  <g fill="none" stroke="#334155" stroke-width="3" stroke-linecap="round">
+    <path d="M132 408 L79 476"/>
+    <path d="M190 351 L230 446"/>
+    <path d="M722 260 L701 361"/>
+    <path d="M795 246 L829 345"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" fill="#0f172a">
+    <text x="60" y="503" font-size="24" font-weight="700">banjo or threaded end copied from sample</text>
+    <text x="190" y="472" font-size="24" font-weight="700">new crimped assembly only</text>
+    <text x="608" y="387" font-size="24" font-weight="700">bracket groove and clocking</text>
+    <text x="562" y="96" font-size="24" font-weight="700">no generic hose cut from roll</text>
+    <text x="72" y="112" font-size="20" fill="#475569">Use brake/clutch-rated hose assemblies and pressure-test after bleeding.</text>
+  </g>
+</svg>

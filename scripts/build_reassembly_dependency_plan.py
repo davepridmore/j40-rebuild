@@ -292,7 +292,7 @@ def build_procurement_decisions(
             dependency_gate = "market_scout"
             action = "complete_pre_payment_check"
             reason = "Quote and buy/no-buy decision only; use the SCP90/NCP90 EPS market scout spec."
-        elif entry_id == "part_suspension_wooden_cribbing_blocks":
+        elif entry_id == "part_suspension_wooden_cribbing_blocks" and procurement_stage != "ordered_pending_delivery":
             decision = "confirm_price_then_buy"
             dependency_gate = "baseline_execution"
             action = "quote_against_wood_cut_list"
@@ -522,7 +522,7 @@ def build_work_packages(
             evidence_signal=f"rust_assessment_photos={rust_photos}, stripdown_photos={stripdown_photos}",
             blocker_summary=f"{body_buy_now} body material rows still need buy execution.",
             gate_to_close="Rust map signed off and repaired zones primed.",
-            key_procurement_actions="Track primer/prep/seam-sealer/cavity-wax deliveries; use on-hand Raptor bedliner; no generic metal-protection or bed-lining duplicate buy.",
+            key_procurement_actions="Use received primer/prep/seam-sealer/cavity-wax stock and on-hand Raptor; track delivery of purchased masking tape/solvent-safe wipes; use on-hand grommets for temporary open-hole masking after fit/solvent check; no generic chassis-black or bed-lining duplicate buy.",
         ),
         WorkPackage(
             work_package_id="WP02",

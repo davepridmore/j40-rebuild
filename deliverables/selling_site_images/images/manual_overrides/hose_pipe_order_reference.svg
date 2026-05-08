@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Rubber hose and pipe order reference</title>
+  <desc id="desc">Reference image showing molded coolant hose, straight hose stock, connector hose blanks, and smooth-band clamps.</desc>
+  <defs>
+    <linearGradient id="hoseBody" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#1f2933"/>
+      <stop offset="0.45" stop-color="#334155"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="clamp" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#e5e7eb"/>
+      <stop offset="0.5" stop-color="#94a3b8"/>
+      <stop offset="1" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="900" height="600" rx="34" fill="#f8fafc"/>
+  <rect x="42" y="44" width="816" height="512" rx="28" fill="#eef2f7" stroke="#cbd5e1" stroke-width="2"/>
+
+  <g filter="url(#shadow)">
+    <path d="M150 176 C178 118 248 112 282 162 C316 211 292 274 237 288 C179 303 125 255 133 203" fill="none" stroke="url(#hoseBody)" stroke-width="46" stroke-linecap="round"/>
+    <path d="M150 176 C178 118 248 112 282 162 C316 211 292 274 237 288 C179 303 125 255 133 203" fill="none" stroke="#475569" stroke-width="14" stroke-linecap="round" opacity="0.45"/>
+    <path d="M530 145 C612 150 676 195 706 270 C718 301 755 318 786 307" fill="none" stroke="url(#hoseBody)" stroke-width="44" stroke-linecap="round"/>
+    <path d="M530 145 C612 150 676 195 706 270 C718 301 755 318 786 307" fill="none" stroke="#475569" stroke-width="13" stroke-linecap="round" opacity="0.45"/>
+    <rect x="204" y="405" width="392" height="44" rx="22" fill="url(#hoseBody)"/>
+    <rect x="204" y="405" width="392" height="13" rx="6" fill="#475569" opacity="0.5"/>
+  </g>
+
+  <g stroke="#64748b" stroke-width="5" fill="url(#clamp)">
+    <rect x="113" y="158" width="64" height="30" rx="8" transform="rotate(-63 145 173)"/>
+    <rect x="245" y="264" width="64" height="30" rx="8" transform="rotate(-21 277 279)"/>
+    <rect x="508" y="129" width="66" height="30" rx="8" transform="rotate(3 541 144)"/>
+    <rect x="752" y="289" width="66" height="30" rx="8" transform="rotate(-19 785 304)"/>
+    <rect x="214" y="388" width="66" height="30" rx="8"/>
+    <rect x="520" y="436" width="66" height="30" rx="8"/>
+  </g>
+
+  <g fill="none" stroke="#334155" stroke-width="3" stroke-linecap="round">
+    <path d="M138 185 L92 118"/>
+    <path d="M280 278 L335 325"/>
+    <path d="M528 145 L469 98"/>
+    <path d="M786 307 L824 362"/>
+    <path d="M246 405 L246 352"/>
+    <path d="M553 449 L620 493"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" fill="#0f172a">
+    <text x="60" y="105" font-size="25" font-weight="700">molded EPDM hose</text>
+    <text x="342" y="338" font-size="23" font-weight="700">smooth-band clamps</text>
+    <text x="452" y="86" font-size="25" font-weight="700">connector hose blank</text>
+    <text x="602" y="506" font-size="24" font-weight="700">cut stock to route</text>
+    <text x="76" y="535" font-size="20" fill="#475569">Use marked coolant, fuel, vacuum, or hydraulic-rated hose only. Reject unmarked generic hose.</text>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Captive clip nut weld nut and rivnut assortment reference">
+  <rect width="1200" height="900" fill="#f5f7f6"/>
+  <rect x="76" y="76" width="1048" height="748" rx="34" fill="#ffffff" stroke="#d7dfda" stroke-width="4"/>
+  <g stroke="#2f3a36" stroke-width="10" stroke-linejoin="round">
+    <path d="M180 232h274l-36 206H216z" fill="#2f3a36"/>
+    <path d="M244 278h132v104H244z" fill="#ffffff"/>
+    <circle cx="310" cy="330" r="42" fill="#f5f7f6"/>
+    <path d="M746 226h236l-34 228H780z" fill="#3f4c47"/>
+    <path d="M804 278h100v94H804z" fill="#ffffff"/>
+    <circle cx="854" cy="326" r="36" fill="#f5f7f6"/>
+    <path d="M234 570h166l58 106-58 106H234l-58-106z" fill="#cfd7d2"/>
+    <circle cx="316" cy="676" r="50" fill="#ffffff"/>
+    <path d="M518 568h168v214H518z" fill="#cfd7d2"/>
+    <circle cx="602" cy="676" r="52" fill="#ffffff"/>
+    <path d="M800 572h170l56 104-56 104H800l-56-104z" fill="#cfd7d2"/>
+    <circle cx="884" cy="676" r="50" fill="#ffffff"/>
+  </g>
+  <g fill="none" stroke="#7c8982" stroke-width="8" stroke-linecap="round">
+    <path d="M180 232c46-68 226-68 274 0"/>
+    <path d="M746 226c42-62 194-62 236 0"/>
+    <path d="M560 616h84"/>
+    <path d="M560 736h84"/>
+    <path d="M268 628h96"/>
+    <path d="M836 628h96"/>
+  </g>
+</svg>
