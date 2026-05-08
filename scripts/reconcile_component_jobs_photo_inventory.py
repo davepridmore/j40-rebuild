@@ -221,6 +221,79 @@ RULES: dict[str, EvidenceRule] = {
         indirect_specific_components=("engine_powertrain_cleaning_baseline",),
         notes="May 1 photos directly document the current post-wire-brushing chassis state and the remaining rust-prep closeout zones.",
     ),
+    "chassis_missing_welded_bracket_survey_20260508": EvidenceRule(
+        direct_specific_components=(
+            "front_frame_horns_bumper_and_radiator_support",
+            "front_frame_horns_bumper_and_steering_area",
+            "frame_rail_body_mount_and_crossmember_detail",
+            "frame_rail_body_mount_and_hard_line_detail",
+            "rear_mid_frame_rail_and_hard_line_detail",
+        ),
+        indirect_specific_components=("engine_bay_chassis_interface", "engine_powertrain_cleaning_baseline"),
+        notes="Existing body-off chassis photos provide the survey baseline, but the task remains open until current close-ups label every missing, wire-tied, or required bracket.",
+    ),
+    "chassis_bracket_analysis_register_20260508": EvidenceRule(
+        direct_specific_components=(
+            "front_frame_horns_bumper_and_radiator_support",
+            "front_frame_horns_bumper_and_steering_area",
+            "frame_rail_body_mount_and_crossmember_detail",
+            "frame_rail_body_mount_and_hard_line_detail",
+            "rear_mid_frame_rail_and_hard_line_detail",
+        ),
+        indirect_specific_components=("engine_bay_chassis_interface", "engine_powertrain_cleaning_baseline"),
+        notes="Use the existing body-off chassis photos as baseline evidence, then close this row only after a station-by-station bracket register records function, condition, evidence, and coating impact.",
+    ),
+    "chassis_bracket_design_release_20260508": EvidenceRule(
+        direct_specific_components=(
+            "front_frame_horns_bumper_and_radiator_support",
+            "front_frame_horns_bumper_and_steering_area",
+            "frame_rail_body_mount_and_hard_line_detail",
+            "rear_mid_frame_rail_and_hard_line_detail",
+        ),
+        indirect_specific_components=("frame_rail_body_mount_and_crossmember_detail", "engine_bay_chassis_interface", "engine_bay_overview"),
+        notes="Location photos support the bracket design baseline, but released sketches/templates with material, hole/stud, bend, datum, and clearance decisions are still required before fabrication.",
+    ),
+    "chassis_bracket_fabrication_install_20260508": EvidenceRule(
+        direct_specific_components=(
+            "front_frame_horns_bumper_and_radiator_support",
+            "front_frame_horns_bumper_and_steering_area",
+            "frame_rail_body_mount_and_hard_line_detail",
+            "rear_mid_frame_rail_and_hard_line_detail",
+        ),
+        indirect_specific_components=("engine_bay_chassis_interface", "engine_powertrain_cleaning_baseline"),
+        notes="Current photos provide pre-work baseline only; closure needs post-install labelled photos and trial-fit evidence before primer/Raptor.",
+    ),
+    "chassis_bracket_validation_release_20260508": EvidenceRule(
+        direct_specific_components=(
+            "front_frame_horns_bumper_and_radiator_support",
+            "front_frame_horns_bumper_and_steering_area",
+            "frame_rail_body_mount_and_crossmember_detail",
+            "frame_rail_body_mount_and_hard_line_detail",
+            "rear_mid_frame_rail_and_hard_line_detail",
+        ),
+        indirect_specific_components=("engine_bay_chassis_interface", "engine_powertrain_cleaning_baseline"),
+        notes="Baseline photos support the validation checklist; final release still requires labelled installed-bracket photos and dry-fit checks for radiator, battery, line/harness/ground, and exhaust interfaces.",
+    ),
+    "front_radiator_bracket_repair_20260508": EvidenceRule(
+        direct_specific_components=("front_frame_horns_bumper_and_radiator_support", "cooling_hoses_fan_belt_and_radiator_support"),
+        indirect_specific_components=("engine_bay_chassis_interface", "engine_bay_overview"),
+        notes="Front support and cooling-route photos are the baseline for radiator-bracket location; closure still needs current trial-fit and bracket close-ups.",
+    ),
+    "battery_tray_holder_bracket_repair_20260508": EvidenceRule(
+        direct_specific_components=(),
+        indirect_specific_components=("engine_bay_overview", "engine_bay_chassis_interface", "engine_powertrain_cleaning_baseline"),
+        notes="No configured photo directly proves the battery tray/holder bracket; engine-bay photos only provide location context until current close-ups are captured.",
+    ),
+    "auxiliary_chassis_tabs_and_clip_brackets_20260508": EvidenceRule(
+        direct_specific_components=("frame_rail_body_mount_and_hard_line_detail", "rear_mid_frame_rail_and_hard_line_detail"),
+        indirect_specific_components=("front_frame_horns_bumper_and_steering_area", "engine_bay_chassis_interface"),
+        notes="Hard-line and frame-rail photos show existing clip/tab areas; current audit photos are still required before deciding which auxiliary tabs to weld.",
+    ),
+    "exhaust_mockup_brackets_before_coating_20260508": EvidenceRule(
+        direct_specific_components=(),
+        indirect_specific_components=("engine_bay_chassis_interface", "engine_powertrain_cleaning_baseline", "frame_rail_body_mount_and_crossmember_detail"),
+        notes="Current photo inventory has no dedicated exhaust mock-up evidence; chassis and engine-bay photos only support routing context.",
+    ),
     "engine_powertrain_cleaning_20260501": EvidenceRule(
         direct_specific_components=("engine_powertrain_cleaning_baseline",),
         indirect_specific_components=("front_frame_horns_bumper_and_steering_area", "rear_mid_frame_rail_and_hard_line_detail"),

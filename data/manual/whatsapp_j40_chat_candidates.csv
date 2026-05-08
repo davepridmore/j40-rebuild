@@ -1,70 +1,59 @@
 profile_server,profile_label,target_number,chat_id,chat_type,chat_name,unread_count,last_message_timestamp,last_message,relevance_score,relevance_reasons,selected_for_import,messages_fetched,messages_fetch_error,messages_count,media_count,images_count,videos_count
-whatsapp-number-1,primary,+447456457005,archive::akber_khan,archive,Akber Khan,,,,6,archive_fallback|chats_request_failed:HTTP Error 503: Service Unavailable,true,fallback_archive,messages_api_not_supported_for_type|fallback:Akber Khan,883,113,90,13
+whatsapp-number-1,primary,+447456457005,archive::akbar_khan,archive,Akbar Khan,,,,6,archive_fallback|chats_request_failed:HTTP Error 503: Service Unavailable,true,fallback_archive,messages_api_not_supported_for_type|fallback:Akbar Khan,883,113,90,13
 whatsapp-number-1,primary,+447456457005,archive::fj40,archive,Fj40,,,,6,archive_fallback|chats_request_failed:HTTP Error 503: Service Unavailable,true,fallback_archive,messages_api_not_supported_for_type|fallback:Fj40,289,52,41,6
 whatsapp-number-2,secondary,+923099351940,120363408465558195@g.us,group,Fj40,0,2026-04-24T23:06:22.000Z,"they are. quoted me 600,000 for the Ironman full foam cell kit, but 4-6 weeks lead time, nitrogen gas set for 500,000 available now. This is already downgrading tom the OME I wanted. So thinking to wait and go foam cell - any opinions? is the price right? 3 year warrantee",19,seed_name|group_bonus|name_hits:fj40|j40|last_message_hits:foam|ome,true,true,,350,53,0,0
+whatsapp-number-2,secondary,+923099351940,120363428021017660@g.us,group,J40 parts,0,2026-05-04T03:27:24.000Z,I am also reaching out to Peshawar on the EPS,15,seed_name|group_bonus|name_hits:j40|last_message_hits:ac|eps,true,true,,46,4,0,0
 whatsapp-number-2,secondary,+923099351940,447968972101@c.us,direct_cus,Andy Pointon Bell,0,2026-04-08T20:00:56.000Z,"I know you could also have just chatGPT itself, but it said it could make a 20 day plan specifically focussed around increased subsribership, so…. Here’s a focused 20-video plan for MPB Aquatics built to grow a small aquarium channel from beginner-interest traffic first. I’ve shaped it around 4 content buckets: beginner help fish-specific advice tank setup / fixes personal tank updates That mix usually works better than only posting random fish clips, because it gives you both searchable videos and personality. Posting structure Use this pattern: 1 full video per week 2–3 Shorts per week Each full video should generate 2–3 Shorts So these 20 ideas can keep you going for months. 20 video ideas for MPB Aquatics 1. 5 Best Beginner Fish for a First Tank Why it works: searchable, broad appeal Title options: 5 Best Beginner Fish for Your First Aquarium Top 5 Easy Fish for Beginners Best Fish to Start With as a Beginner Thumbnail text: Beginner Fish Top 5 Easy Fish Shorts from it: “My #1 beginner fish” “Best fish for a small tank” “One fish beginners should avoid” 2. 3 Mistakes New Guppy Owners Make Why it works: pain-point content gets clicks Title options: 3 Guppy Mistakes Beginners Always Make Why Beginner Guppies Keep Dying Guppy Care Mistakes to Avoid Thumbnail text: Guppy Mistakes Stop Doing This Shorts: “Biggest guppy mistake” “Why guppies die fast” “Do this before buying guppies” 3. How to Set Up a Simple Budget Aquarium Why it works: beginner search topic Title options: How to Set Up a Budget Fish Tank Cheap Aquarium Setup for Beginners My Simple Beginner Tank Setup Thumbnail text: Budget Tank Easy Setup Shorts: “Cheap aquarium essentials” “Best budget filter?” “What you actually need” 4. My Tank Update: What’s Changed and What’s Next Why it works: builds loyalty and personality Title options: Tank Update: What I Changed This Week Aquarium Update and Future Plans Fish Room Update | What’s New? Thumbnail text: Tank Update What Changed? Shorts: feeding clip fish close-ups “one thing I changed this week” 5. How to Cycle a Fish Tank for Beginners Why it works: evergreen beginner topic Title options: How to Cycle a Fish Tank the Easy Way Beginner Guide to Tank Cycling Fish Tank Cycling Explained Simply Thumbnail text: Tank Cycling Before Adding Fish Shorts: “What cycling means” “Why fish die in new tanks” “Do not skip this” 6. Betta vs Guppy: Which Is Better for Beginners? Why it works: comparison videos are very clickable Title options: Betta vs Guppy: Best Beginner Fish? Guppy or Betta for Your First Tank? Which Fish Should You Start With? Thumbnail text: Betta vs Guppy Which Is Better? Shorts: “Betta or guppy?” “Best fish for new keepers” “Which is easier?” 7. Why Your Fish Tank Water Is Cloudy Why it works: high-frustration topic Title options: Why Your Aquarium Water Is Cloudy Cloudy Tank Water? Here’s Why Fix Cloudy Aquarium Water Fast Thumbnail text: Cloudy Water? Fix This Shorts: “Most common cause” “Don’t panic if this happens” “Cloudy water fix” 8. 5 Beginner Aquarium Mistakes to Avoid Why it works: classic high-performing format Title options: 5 Beginner Fishkeeping Mistakes Avoid These Aquarium Mistakes New to Fishkeeping? Watch This First Thumbnail text: Beginner Mistakes Watch This First Shorts: one mistake per Short 9. What I Feed My Fish and Why Why it works: simple, visual, easy to film Title options: What I Feed My Fish Every Week My Fish Feeding Routine Best Food for My Aquarium Fish Thumbnail text: Fish Food My Routine Shorts: feeding time “one food I recommend” “one feeding mistake” 10. Sponge Filter vs Hang-on-Back Filter Why it works: useful beginner comparison Title options: Sponge Filter vs HOB Filter Which Filter Is Best for Beginners? Best Aquarium Filter for a Simple Tank Thumbnail text: Best Filter? Sponge vs HOB Shorts: “Why I like sponge filters” “Best beginner filter” “quietest filter?” 11. Fish I Would Not Recommend for Beginners Why it works: contrarian angle Title options: 5 Fish Beginners Should Avoid Don’t Buy These Fish First Hard Fish for New Aquarium Owners Thumbnail text: Avoid These Fish Not for Beginners Shorts: one fish per Short “looks easy, isn’t easy” 12. How Many Fish Can You Put in a Tank? Why it works: common beginner confusion Title options: How Many Fish in a Tank? Don’t Overstock Your Aquarium Beginner Guide to Stocking a Tank Thumbnail text: Too Many Fish? Tank Stocking Shorts: “signs your tank is overstocked” “small tank mistake” “space matters” 13. My Favourite Easy Aquarium Plants Why it works: expands topic range while staying relevant Title options: Best Easy Aquarium Plants for Beginners Beginner Plants for a Fish Tank 5 Easy Plants I’d Recommend Thumbnail text: Easy Plants Beginner Friendly Shorts: one plant per Short “best low-maintenance plant” 14. How I Clean and Maintain My Tank Why it works: practical, watchable, builds trust Title options: My Weekly Aquarium Maintenance Routine How I Clean My Fish Tank Simple Fish Tank Maintenance for Beginners Thumbnail text: Tank Routine How I Clean It Shorts: quick clean clip before/after “one thing I do weekly” 15. 5 Things to Buy Before Getting Fish Why it works: beginner preparation content Title options: Buy These 5 Things Before You Get Fish Aquarium Starter Checklist What You Need Before Buying Fish Thumbnail text: Before You Buy Fish Starter Checklist Shorts: one essential per Short 16. My Best and Worst Aquarium Purchases Why it works: personal + opinionated = clickable Title options: Best and Worst Things I Bought for My Tank Aquarium Purchases I Regret Fishkeeping Gear That Was Worth It Thumbnail text: Worth It? Biggest Regret Shorts: “best thing I bought” “waste of money” “I’d buy this again” 17. Why Fish Die in New Tanks Why it works: emotional pain-point topic Title options: Why Fish Die in New Aquariums New Tank Problems Explained The Real Reason Beginner Fish Die Thumbnail text: Fish Dying? Here’s Why Shorts: “new tank syndrome” “biggest early mistake” “save your first fish” 18. My Top 5 Favourite Fish in My Collection Why it works: builds personal connection Title options: My 5 Favourite Fish Right Now Favourite Fish in My Aquariums My Personal Top 5 Aquarium Fish Thumbnail text: My Top 5 Favourite Fish Shorts: one fish per Short close-up clips 19. One Month Aquarium Progress Update Why it works: progress is satisfying and easy to serialize Title options: 30 Days of Aquarium Progress One Month Tank Update Aquarium Progress: Before and After Thumbnail text: 30 Day Update Before / After Shorts: before/after reveal fish growth clip “what changed most” 20. Beginner Q&A: Answering Aquarium Questions Why it works: great community-builder Title options: Answering Beginner Aquarium Questions Fishkeeping Q&A for Beginners Your Aquarium Questions Answered Thumbnail text: Aquarium Q&A Beginner Answers Shorts: one question per Short use comment screenshots if possible Best order to post these Start with the most searchable ones first: 5 Best Beginner Fish 3 Guppy Mistakes How to Cycle a Fish Tank Why Your Tank Water Is Cloudy 5 Beginner Aquarium Mistakes Budget Aquarium Setup Sponge Filter vs HOB Why Fish Die in New Tanks How Many Fish Can You Put in a Tank? Easy Aquarium Plants Then mix in more personal videos: 11. Tank update 12. Feeding routine 13. Maintenance routine 14. Best and worst purchases 15. Favourite fish 16. 30-day progress 17. Q&A 18–20. More species-specific or update-based videos A simple title formula for MPB Aquatics Use these patterns again and again: Top 5 / Top 3 Mistakes beginners make Why this happens How to fix Vs Before and after My routine / my update What I wish I knew before Examples: 5 Best Beginner Fish 3 Mistakes New Fishkeepers Make Why My Tank Water Turned Cloudy How I Set Up This Aquarium Betta vs Guppy Before and After Tank Update Thumbnail formula Keep thumbnails very simple: one fish or one tank shot big clear subject 2–4 words only no clutter no tiny text Good text examples: Beginner Fish Guppy Mistakes Cloudy Water? Tank Update Easy Plants Fish Dying? Shorts strategy for this channel For each full video, create: one problem Short one tip Short one visual Short Example from “3 Guppy Mistakes”: Problem: “Why guppies keep dying” Tip: “One guppy mistake beginners make” Visual: close-up fish clip with text overlay A strong Short format: first 1 second: hook text on screen 10–20 seconds: one idea only end: “full video on channel” What to say in the first 10 seconds Do not open with a long intro. Better openings: “If you’re starting your first fish tank, these are the 5 fish I’d look at first.” “If your guppies keep dying, one of these 3 mistakes is probably the reason.” “If your tank water is cloudy, here’s what is usually causing it.” “Today I’m showing exactly how I maintain this tank each week.” Best channel positioning line Your channel should feel like this: “Simple aquarium advice, beginner fishkeeping help, and tank updates.” That gives people and YouTube a clear reason to understand the channel. 30-day starter version If you want the most practical next move, post these next 4 full videos: 5 Best Beginner Fish for a First Tank 3 Mistakes New Guppy Owners Make How to Cycle a Fish Tank for Beginners My Tank Update: What’s Changed and What’s Next And from those, make at least 8 Shorts. That would give MPB Aquatics a much clearer growth direction immediately. I can also turn this into a full upload calendar with exact publish order, script hooks, and thumbnail text for each of the 20 videos.",14,last_message_hits:ac|amp|bj|filter|ome|order|rust,true,true,,31,1,0,0
-whatsapp-number-2,secondary,+923099351940,97180025327@c.us,direct_cus,+971 800 25327,0,2025-05-07T09:46:20.000Z,"Discover Mamsha Gardens Residences—where natural serenity meets furnished ease. Beautifully furnished homes with hotel-style amenities and curated services, set in a vibrant Saadiyat location. Just steps away from Mamsha Beach and Louvre Abu Dhabi, these 1 to 3-bedroom residences offer effortless living. Optional rental management services make ownership easy and convenient. Please tap 'Yes', if you are interested.",10,last_message_hits:ac|cover|eps|ome|vin,true,true,,1,0,0,0
-whatsapp-number-2,secondary,+923099351940,923334552030@c.us,direct_cus,Akber Khan,0,2026-04-29T15:42:52.000Z,"no, he was fine. didn’t even bite me\",10,seed_name|name_hits:akber,true,true,,350,31,0,0
+whatsapp-number-2,secondary,+923099351940,923334552030@c.us,direct_cus,Akbar Khan,0,2026-05-08T15:04:01.000Z,fuck that. but for u. done!,10,seed_name|name_hits:akbar,true,true,,350,24,0,0
 whatsapp-number-2,secondary,+923099351940,151801357664258@lid,direct_lid,Digilog Electronics Order Processing Department,0,2026-03-26T07:16:14.000Z,"Payment recieved your order is confirmed 👇🏻 After receiving the parcel, make sure to share a video of opening it. Thanks",8,name_hits:order|last_message_hits:order|vin,true,false,messages_api_not_supported_for_lid,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363426768868979@g.us,group,Body listing posse,0,2026-04-21T09:08:42.000Z,Body listing posse,7,group_bonus|name_hits:body|last_message_hits:body,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363420423328954@g.us,group,Mayfair contract,0,2025-09-09T09:53:03.000Z,Also feed back from reports will be given a time frame in which they revert back.,7,group_bonus|name_hits:ac|last_message_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,97431735800029@lid,direct_lid,+92 330 1524555,0,2025-12-27T06:15:59.000Z,"Hi, Welcome to Battle Fuss, the premium outdoor laser tag arena in your town. We have introduced state of art technology and made it possible to play PubG and COD in real life. We are allowing group size of minimum 6 and maximum 24 people. If you're single player or group of less than 6, you can join our public game where you will be team up with other fellow players. We are located in Johar Town and DHA, lahore. Timing: 2pm - 2am Price: Basic package, 2 games 1500 per player, Each game is 8 mins long.",6,last_message_hits:ac|door|ome,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,27825998787@c.us,direct_cus,Clinton Blackler,0,2025-11-29T16:13:58.000Z,"yeah cool, anyway it sounds like basically what I want. So long as it actually works I can also not pay him",6,name_hits:ac|last_message_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,447957133693@c.us,direct_cus,Tone Blackbeard,0,2025-05-09T22:01:57.000Z,"I'll take that back. A drone landed 12 minutes away from my house earlier. On an interesting note, the gymkhana golf course, where I spent the last 12 hours drinking is considered totally safe, as many of the Indian generals have membership to its Eastern cousins, and should they ever try to claim the land, would intend for all 19 holes to remain intact",6,name_hits:ac|last_message_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,917304915363-1595814335@g.us,group,1b 1860 Akber,0,,,5,group_bonus|name_hits:akber,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363408569800952@g.us,group,FJ 40 - Advisory,0,2026-04-23T17:51:00.000Z,Will sort it out,7,seed_name|group_bonus,true,true,,39,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363408981304188@g.us,group,FJ Audio,0,2026-04-26T19:47:58.000Z,We need to meet on Thursday bhai.,7,seed_name|group_bonus,true,true,,164,48,0,0
+whatsapp-number-2,secondary,+923099351940,120363407986660211@g.us,group,IFL-ManageEngine Payment,0,2026-05-06T09:31:46.000Z,By tomorrow we will receive the performa invoice from manageengine so we need to get things ready,7,group_bonus|name_hits:engine|last_message_hits:engine,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,917304915363-1595814335@g.us,group,1b 1860 Akbar,0,,,5,group_bonus|name_hits:akbar,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923334552030-1508149032@g.us,group,Accounts,0,,,5,group_bonus|name_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363330839328669@g.us,group,CRK Accountants,0,2025-10-14T20:24:15.000Z,,5,group_bonus|name_hits:ac,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923009403655-1446617073@g.us,group,Akbar's Birthday,0,,,5,group_bonus|name_hits:akbar,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363330839328669@g.us,group,CRK Accountants,0,,,5,group_bonus|name_hits:ac,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447815308789-1627327310@g.us,group,Dads and lads camping,0,,,5,group_bonus|name_hits:amp,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363025851577751@g.us,group,Dave P leaving drinks,0,,,5,group_bonus|name_hits:vin,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363377793208751@g.us,group,Dollar account options.,0,2025-02-05T02:49:17.000Z,https://www.instagram.com/reel/DD_6OAOp0ZC/?igsh=M2c2Nng3d2o5bTJ5,5,group_bonus|name_hits:ac,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363377793208751@g.us,group,Dollar account options.,0,,,5,group_bonus|name_hits:ac,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363171131270310@g.us,group,Inheritance contract,0,,,5,group_bonus|name_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363428021017660@g.us,group,J40 parts,0,2026-04-24T10:17:05.000Z,Thanks,5,group_bonus|name_hits:j40,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363402828124585@g.us,group,Online bookings test - legends academy,0,2025-11-21T16:40:55.000Z,,5,group_bonus|name_hits:ac,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363420423328954@g.us,group,Mayfair contract,0,,,5,group_bonus|name_hits:ac,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363402828124585@g.us,group,Online bookings test - legends academy,0,,,5,group_bonus|name_hits:ac,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923334552030-1602139885@g.us,group,Perception IT - Accounts,0,,,5,group_bonus|name_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923018436565-1621244960@g.us,group,Perception IT Accountancy,0,2025-07-07T07:09:49.000Z,,5,group_bonus|name_hits:ac,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923018436565-1621244960@g.us,group,Perception IT Accountancy,0,,,5,group_bonus|name_hits:ac,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447456457005-1597429775@g.us,group,Perception IT Accounts,0,,,5,group_bonus|name_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923018436565-1578391161@g.us,group,Perception IT Champs,0,2026-04-21T08:00:51.000Z,,5,group_bonus|name_hits:amp,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363403877704057@g.us,group,Project Financial Tracking,0,2025-08-04T18:06:30.000Z,"Ok. As expected. Thanks, I thought it started this week",5,group_bonus|name_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363405111754958@g.us,group,School Assignments,1,2026-04-30T16:50:27.000Z,SPEAKING EXAM ANNOUNCEMENT Subject: FRENCH Unit 3: La maison (House and home) Unit 4: La ville (City and Local Area) Assessment Criterion: Criterion C - Speaking Date: Monday 4th May Instructions: Prepare from LMS and work done in the notebook.,5,group_bonus|last_message_hits:bj|ome,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923018436565-1578391161@g.us,group,Perception IT Champs,0,,,5,group_bonus|name_hits:amp,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363403877704057@g.us,group,Project Financial Tracking,0,,,5,group_bonus|name_hits:ac,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,162659135656018@lid,direct_lid,+92 311 1110013,0,2026-04-18T08:46:17.000Z,"WE HAVE A SEPARATE INDUSTRIAL DEPARTMENT FOR THIS KIND OF PRODUCT. PLEASE CALL TO MR. SALMAN - SALES MANAGER, HAPPILAC PAINTS OFFICE (+92 300 7880511) FOR THE RATES, APPLICATION PROCEDURES, AND PURCHASING. HE WILL ASSIST YOU.",4,last_message_hits:ac|paint,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923412831076@c.us,direct_cus,+92 341 2831076,0,2025-09-02T07:16:55.000Z,"Dear Sir, I hope this message finds you well. This is Taha Khan from PodVare Private Limited. I would like to take this opportunity to introduce you to our locally manufactured soundproof meeting pods. Our pods are designed with a focus on user-friendly, aesthetic appeal, and modular functionality, making them an ideal fit for modern co-working environments. I would be pleased to connect with you for a brief call or a short in-person meeting to share more details. Please let me know a convenient time for you. Looking forward to your response.",4,last_message_hits:ac|roof,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,82252935475240@lid,direct_lid,+92 333 8486830,0,2026-05-01T17:38:17.000Z,"Some miscommunication here. I already communicated payment with Ayesha, please reconcile and only request from one whatsapp account",4,last_message_hits:ac|ome,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,27825998787@c.us,direct_cus,Clinton Blackler,0,,,4,name_hits:ac,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923098999567@c.us,direct_cus,Coach Joshua,0,,,4,name_hits:ac,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923009491136@c.us,direct_cus,Isaac Visa Pk,0,,,4,name_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,555193424467@c.us,direct_cus,Lolla Monasterio,0,2025-04-18T01:04:22.000Z,"well, there were a few new lines in there, but they seem more like statements. Here are the responses: The VMG Infrastructure must enable auditing to ensure end-to-end transaction transparency. All recorded data must comply with immutability requirements: Auditing is enabled Google Cloud Platform is certified as compliant with all requirements. Links to details of the accreditations can be found under their header: 3.5.8.4.1.1. Must demonstrate compliance with ISO/IEC 27001; https://cloud.google.com/security/compliance/iso-27001?hl=en https://cloud.google.com/security/compliance/iso-27001?hl=pt 3.5.8.4.1.2. Must demonstrate compliance with ISO/IEC 27018; https://cloud.google.com/security/compliance/iso-27018?hl=en 3.5.8.4.1.3. Must demonstrate compliance with SSAE18-SOC3; https://cloud.google.com/security/compliance/soc-3?hl=en 3.5.8.4.1.4. Must demonstrate compliance with ISO 27018:2019; https://cloud.google.com/security/compliance/iso-22301?hl=en 3.5.8.4.1.5. Must demonstrate compliance with NIST SP 800-61; https://services.google.com/fh/files/misc/uk_ncsc_gcp_compliancemapping.pdf?hl=en 3.5.8.4.1.6. Must demonstrate compliance with ISO/IEC 27017; https://cloud.google.com/security/compliance/iso-27017?hl=en 3.5.8.4.1.7. Must demonstrate the use of database-level functionality ensuring compliance with the requirements of the General Data Protection Law (LGPD); https://services.google.com/fh/files/misc/googlecloud_lgpd_quick_reference_guide_dec_2020.pdf 3.5.8.4.1.8. Must use a protocol compatible with AES-128-GCM, AES-128-VCM, and/or AES-128-GMAC, AES-128-VMAC; https://cloud.google.com/docs/security/encryption-in-transit?hl=en 3.5.8.4.1.9. Must be compatible with Perfect Forward Secrecy (PFS); https://cloud.google.com/docs/security/encryption-in-transit/application-layer-transport-security 3.5.8.4.1.10. Must use the advanced encryption algorithm AES-256 for the storage of production data; https://cloud.google.com/docs/security/encryption/default-encryption?hl=en 3.5.8.4.1.11. Must use the advanced encryption algorithm AES-256 for backup storage; https://cloud.google.com/docs/security/encryption/default-encryption?hl=en 3.5.8.4.1.12. Must have Cryptographic Module Validation Program FIPS 140-2 https://cloud.google.com/security/compliance/fips-140-2-validated?hl=en Availability Requirements: a) The VMG Infrastructure may be disqualified if its systems do not reach a minimum availability of 99%, meaning total downtime must not exceed 864 seconds within a 24-hour period; The infrastructure is architected for a higher level of availability than this. b) Scheduled maintenance that causes downtime and is communicated to users will be allowed; c) The maintenance limit for the VMG Infrastructure will be up to four dates per month. 2.1. The validation and issuance of certificates related to the criteria described in this item by the VMG Infrastructure must not exceed forty-five minutes. 2.2. Rural producers must have the ability to contest the analyses performed by the VMG Infrastructure through a toll-free phone number (0800), email, or instant messaging app. a) Contests will only be evaluated if they contain traceable evidence.",4,last_message_hits:ac|led,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923004200729@c.us,direct_cus,Naveed - Urdu Teacher,1,2026-03-24T16:01:37.000Z,Eid Mubarak all is well,4,name_hits:ac,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923004200729@c.us,direct_cus,Naveed - Urdu Teacher,0,2026-03-24T16:01:37.000Z,Eid Mubarak all is well,4,name_hits:ac,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,248304994668682@lid,direct_lid,Omar Javed Chaudhry Land Cruiser For Himself,0,2026-04-29T01:43:19.000Z,Will discuss it with u later today. 🙂,4,name_hits:land cruiser,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923018436565@c.us,direct_cus,Shafqat Paracha,0,2026-04-25T08:37:31.000Z,although he should be at ork,4,name_hits:ac,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923018436565@c.us,direct_cus,Shafqat Paracha,0,2026-05-06T10:47:51.000Z,,4,name_hits:ac,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,447957133693@c.us,direct_cus,Tone Blackbeard,0,,,4,name_hits:ac,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923099351940@c.us,direct_cus,Uk David,0,2026-05-04T17:40:27.000Z,"This looks like a successful Raast transfer receipt. Key details: - Amount: PKR 34,560 - From: Saadiq Saver Plus LCY - To: toolsmart at Bank Alfalah - Purpose: Vendor / Supplier / Business Payment - Reference: RGDAE6M8D If you want, I can also extract all fields cleanly into copyable text.",4,last_message_hits:ac|toolsmart,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,173362731024620@lid,direct_lid,faryalsalman514,0,2026-04-21T12:06:09.000Z,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCABkAGQDASIAAhEBAxEB/8QAHAAAAQQDAQAAAAAAAAAAAAAAAAMEBQYBAgcI/8QAORAAAgEDAgMEBwcEAgMAAAAAAQIDAAQRBSEGEjETIkFRBxQyYXGxwRUjQnKBodEzUlORgpI0YvD/xAAaAQADAQEBAQAAAAAAAAAAAAAAAgMBBAUG/8QAKhEAAgICAAUCBQUAAAAAAAAAAAECEQMxBAUSIVETFAYiQWHRIyQyQoH/2gAMAwEAAhEDEQA/APStZIxWeU1sRmueONvZRsjdRjUMjjq55WHnsd6arzyFY1MjZ2ClzjHv91O9S/qxL4AE/LH1o01MySvjoAoP7n6VdXGHfZJ95UKWlt2JLuQXIxt0A8qdBFbJZQc+YrIXzrakjFt9UinZKkJG2gPWGM/FRWptLf8AwRj4KBS9FUsWhubK3P4CPgxH1rX1CDwDj/mf5p1RW2zKQzOnx+DyD9R/FaHTwCfvXx4dP4p/QRmsbddg6UR3qJ/yn/rRUhyiip3k8jdMQVlYZVgR5g1mmrWMecozIfca1EN0n9Obn9zf/Gq0hbYnewyvcsyoWVVC7b4O5+opbTUKW5LAgsxJB/19K5zxbpWmz8UQahFZz3MiiZdSXQp8XaS90Rs6I3MQAG6b5I+FWngNb2DRbg6gdXaKS6c2o1M81wsIVQOYdR3ubY5OMUzXYRbLPkZx41TOLfSDp2gXLWcUb318ntxxsFWP3M3gfcAT54qb4g1H1HStQvYSva21nLKgcYywXI2PwrzPe3DxRPM5MkrHJZjksxO5Jrg4ziJYajHbPouScsx8a5ZMz+WP08nYtO9LVtJcKmpaVLbQnbtYZu25feRyqcfDJ91dIs7mC9tYrm0lSaCVQyOhyGBryXp9688pjkA6ZBFdr9B19NJZarYOxMNu8csYP4efmyB7spn4k1LheKnKfp5Ds5vyjBhwe54bsltHT6KKK9E+VCiiigAooooAKwzmNHdeXmVSRzHAzjbPupO4Bwp73ID3gpIOP03pJ0hePAdmBIB+8J2zvnfyrTGzkI4f1az+x/XOG7tfUxL67qOhXqNc3vON8+w+7ZJG/urruj2ttY6TaW9lBNb26xhlinZmkXm7xDFiTzZJzud6ovC/EWq61PDNZ33CdwGlbmshK6TwqGK45gWDHG+eUAnptXRm9o46ZppsWCEL61ivrK4tLgc0M8bROPNWGD8680cQ6LcaNqVxpmopl4/ZbGBKn4XHuP7HI8K9O1U/SPw0vEGhSPAmdRtVMluQN284/g2P94NcPF4PVja2j3eScy9nm6Z/wlv7ff8AJ55gtorbmZBjzJNd59FfDlzouhyXN0OyvL4rI0bruiAdxTv13JPlzY8KpPoi4ej1nVH1O7Tns7Ir2akbPKdxn8owceZXyrt9Q4HA1+rL/D0fiLmKf7PFpb/Al98PCNv1I/ms9pIOsJP5WB+eKUor0j5QT7YD2kkH/En5UesReLhfzbfOlKKAEmnRT7Sn9aKYakypOBgDK56e80U6jYjlRKVEcUT21rot5NeXCWkIhdWuGjMnZll5B3Ru27Dujr0qXqpcXSanPPJZrw/PfaejwzJc2N9Gs6OjLID2b46MvgdxSrY0tFc9Hd7Z6nqtja83C+pGyi+7mis5La9iEY5Q3I6464BIIG+1dQqk8Bae/wBp3t/K2rRLCj29va39iLcxJLJ2jd8EiU5AGR0/XNXatlsyGgoorWRuSNmP4QTSjEfoOl2Wk2ksOm2628MkzylVzgsTud/hUlVP1rii40jW2sFjtjDBFasQ8UhaQyuyt94DyR45c5bberFY3z3WtavZMiLHZyQojDOWDxhjn9TRVaBycncnbH1FVuw4gu55rC5ltrZdK1C7ks4eVm7aMrz4ds7EMYzsOmRud6eaFqOo6pJDdpaWx0maWWMYciWIIWUO2dm5ivQdMjrvW0ZZMUVVuCeKZOJ+do4bdIbaIC5YE8xmYnCoM7KADlj1Ow6GkuKuKbnRtae0hitmhitIbkiSKQmQvI6Ec692MAIDltutFBZN6hH2lxnGcADrRTx4g9xNsO62N/gKKZSoRxsXrmXHllxJ2+rX9jf6rf2DRP2Nnp8/q8trIFIGVUZlTOOjA+4100nlVm22BO5wOnnXMLDi/XRqP2bqPCsUWp9RBFqIikkHi0QkHK4/K5xRDybPwXDgS10yDhm2m0aeS5hugJZLiSWSRpZAORieckrupGNsHwqfrWCR5baGSSF7d3QO0L45o2IyVONsgnfFbUr2MtBSVzuir/cwH77/ALZpWkn71xGP7QW+n1NYjWRupcO2Go3stzdG6++SOOaJJikcqxklQwHUZY+PjS/2TAuszanFPeRTTMjSpHNiNyoAGVx5CpCigKIu20DT7a/W7iSbKSvPFC0rGKKR88zqnQE8zf8AY460jDpGm2OqJcQxzF45Hnihac9jC8medlUnAJ5m+HMcYzU0TgEnoKipyS/MRgt3v4/bFDdKyWWfpxtCemaVp+nS2stnbyLJbwNbBhKp54y3NhvPByR5ZPmaS1fRdP1a7ee8W9BlgW2mjjm5UljVmYKwHUZdvHxpWsqMsB5mk9Q5lxT8EnA3O0r4xzOT+worNv7DH/3b5minZ3IY8TXTWXD1/cJeWdjIsfKlxeH7mNmIALfqa5dFp2t8RdhHrjwcU24kV86XrUEcSEfiVBGh26+1mr76QtX0HStCVOKVSWwu5BD2DRc/aHBPuxjAPNkYqi8D6RY33EdrNpmiWlzoscglS4vpLf1q3ZcMpVomZnAI6OM48apHsrJy3R2JgFblGcDYZOela1knJyaxUygUlH3ppW8sL9frStJW28Ib+4lv9mgDdXDMyjPdrakod3mPm/0FK0AJ3JxbyY6kYH60xuI5DMxCMR4bU9uN1RfNx88/Slaxq0SyY1kVMiDG46o3+qzGjc6909R4VLUUvQR9or2JW39EHzJP7mis2v8A48Z81Bop2da0NNTclkiYK0bKSVZQwPTwNMtH0TSIrw6hb6Tp8F9GxVZ4bdY3wVAO4AzsTRRTfQT+xOUUUUo5pOSIJCOoU/Ko97uWGMcuCAMbiiimQstmbe7fB2XclqdRTs4OQKKKGCNnPNJBn+4n9jS1FFKagrDeyfhRRQaa2+0Ef5R8qKKKAR//2Q==,4,last_message_hits:ac|bj,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363424849346857@g.us,group,Ai Resources,0,2026-03-07T09:02:58.000Z,https://www.facebook.com/share/r/18NxHJqbh4/,3,group_bonus|last_message_hits:ac,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363424849346857@g.us,group,Ai Resources,0,2026-05-07T04:29:31.000Z,https://www.facebook.com/share/r/1Hxeb2Q5XR/,3,group_bonus|last_message_hits:ac,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363408650499121@g.us,group,Auntie Lizzie,0,2026-04-17T13:47:16.000Z,Ah yeah it makes a difference doesn’t it! I am sure it won’t take long to get back up to speed and there’s nothing like a gig for motivating me to put i the practice time!,3,group_bonus|last_message_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363361182939991@g.us,group,Curated Shopping - pick up what you need,0,2026-01-12T19:18:29.000Z,https://www.facebook.com/share/r/1DRebUSmDE/,3,group_bonus|last_message_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363416867107416@g.us,group,Emerald,0,2025-03-25T20:09:50.000Z,Thanks for sharing those images earlier. Can you share some sizes and prices please?,3,group_bonus|last_message_hits:ome,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363415066991749@g.us,group,IT News,0,2026-04-28T19:36:41.000Z,https://www.facebook.com/share/p/1JVvR6g82c/,3,group_bonus|last_message_hits:ac,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363328229752166@g.us,group,Competitive squad U8's-U10's-U12's-U14's,0,2026-05-07T09:22:47.000Z,"Dear Parents, This is a quick reminder that our *2-Months Subscription* *Offer* is ending soon. *Get 20% OFF* and secure your child’s spot today. 📅 Offer valid till *9th May* ⚽ Only *10 spots* *remaining* . Kind Regards, Legends Academy",3,group_bonus|last_message_hits:ac,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363415066991749@g.us,group,IT News,0,2026-05-05T20:19:27.000Z,https://www.facebook.com/share/p/1EEsHcE1vF/,3,group_bonus|last_message_hits:ac,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363373452974473@g.us,group,Intro: David and Danny,0,2026-04-04T20:55:05.000Z,Thanks for your offer to give me time Danny. Actually we have managed to connect in with the correct people now directly. I do appreciate your offer to help.,3,group_bonus|last_message_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363414427826225@g.us,group,Introducing Nauman/Nabeel,0,2025-03-27T18:41:38.000Z,"Hi Nabeel, i will be available for conversation after 4pm on friday Pakistan time. You can contact me anytime after 4 pm",3,group_bonus|last_message_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363369500454083@g.us,group,LGSI plans,0,2025-06-22T10:57:36.000Z,Only black left in this.,3,group_bonus|last_message_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363400887564627@g.us,group,Mining,0,2025-07-10T14:52:07.000Z,"Not myself directly, I had a partner that had some experience working on mines, but I had a fall out with him ☹️. A bad one. Not in touch with him any longer.",3,group_bonus|last_message_hits:ome,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363427751123341@g.us,group,Music,0,2026-04-24T21:38:07.000Z,"i know this has no trumpet in it, but if you do get a keyboardist https://open.spotify.com/track/4iW7PQeJWV57XeN7miyJpS?si=e2b3fb940b184e4c",3,group_bonus|last_message_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923018436565-1578063273@g.us,group,Perception IT Management,0,2026-04-30T08:01:59.000Z,"ok, Thanks. I 'll go for replacement after David's approval.",3,group_bonus|last_message_hits:ac,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363421345393038@g.us,group,Odoo x Virgil Sports,0,2026-05-07T11:37:19.000Z,May I call for a moment?,3,group_bonus|last_message_hits:ome,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923018436565-1578063273@g.us,group,Perception IT Management,0,2026-05-08T12:05:30.000Z,IFL ManageEngine Payment. Kindly confirm,3,group_bonus|last_message_hits:engine,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363407799125060@g.us,group,Website. KIMI,0,2026-03-10T19:31:45.000Z,https://www.facebook.com/share/r/188YDdMiUw/,3,group_bonus|last_message_hits:ac,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363286061682072@g.us,group,Zabbix Demo at PLRA,0,2026-01-30T07:10:01.000Z,"Get filesystems: FS [{#FSLABEL}({#FSNAME})]: Get data vfs.fs.dependent[{#FSNAME},data] 31d 365d Dependent item Yes Yes component: rawcomponent: storagefilesystem: {#FSNAME} FS [{#FSLABEL}({#FSNAME})]: Get data: FS [{#FSLABEL}({#FSNAME})]: Space: Available vfs.fs.dependent.size[{#FSNAME},free] 31d 365d Dependent item Yes Yes component: storagefilesystem: {#FSNAME}fstype: {#FSTYPE} FS [{#FSLABEL}({#FSNAME})]: Get data: FS [{#FSLABEL}({#FSNAME})]: Space: Total vfs.fs.dependent.size[{#FSNAME},total] 31d 365d Dependent item Yes Yes component: storagefilesystem: {#FSNAME}fstype: {#FSTYPE} FS [{#FSLABEL}({#FSNAME})]: Get data: FS [{#FSLABEL}({#FSNAME})]: Space: Used vfs.fs.dependent.size[{#FSNAME},used] 31d 365d Dependent item Yes Yes component: storagefilesystem: {#FSNAME}fstype: {#FSTYPE} FS [{#FSLABEL}({#FSNAME})]: Get data: FS [{#FSLABEL}({#FSNAME})]: Space: Used, in % vfs.fs.dependent.size[{#FSNAME},pused] 31d 365d Dependent item Yes Yes component: storagefilesystem: {#FSNAME}fstype: {#FSTYPE}",3,group_bonus|last_message_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,85512924283@c.us,direct_cus,+855 12 924 283,0,2025-08-20T01:44:02.000Z,"Dear valued customer, Greetings from SmartRyde customer service ! We are an airport transfer company. we would like to thank you for using our service . Did you meet the driver? And how was the service? Thank you . ID : 737KE7 Name : David Pridmore",2,last_message_hits:ome,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923354544644@c.us,direct_cus,+92 335 4544644,0,2025-07-12T15:54:59.000Z,Take just 5 min for installation . . . On video call it's more convenient for customers . . .,2,last_message_hits:ome,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,170544729161924@lid,direct_lid,+92 313 2303180,0,2026-05-07T17:29:24.000Z,KI7534576700 tracking no leopard courier,2,last_message_hits:ac,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,103530740371582@lid,direct_lid,+92 335 7627875,0,2026-04-22T04:09:36.000Z,You are welcome,2,last_message_hits:ome,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447775607941@c.us,direct_cus,Abid Majid,0,2026-04-20T14:17:42.000Z,In POC i have replaced entire peoples jobs,2,last_message_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923318549269@c.us,direct_cus,Adnan,0,2025-07-03T12:54:44.000Z,And I do feel that Mudassir is a bit frustrated because im not really good at Angular yet,2,last_message_hits:rust,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923008881474@c.us,direct_cus,Ali Rizvi,0,2026-04-16T10:32:19.000Z,Most welcome,2,last_message_hits:ome,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,247183991410920@lid,direct_lid,Asif Makhani,0,2026-03-16T14:11:30.000Z,Because for example it does not immediately solve an immediate rewuirement. Start up thinking is shorter term,2,last_message_hits:amp,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,5521997057630@c.us,direct_cus,Felipe Galo,0,2025-02-11T18:10:57.000Z,awesome! glad I manage to help out,2,last_message_hits:ome,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,447557302250@c.us,direct_cus,Gerry Scott-Brining,0,2025-11-27T08:54:59.000Z,"Also getting older! Yeah all good, keeping busy mostly with work. To be honest im not surr when we'll be back. This year we went to thailand instead of the usual uk trip in summer holidays, so probably July.",2,last_message_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923224498475@c.us,direct_cus,Haris Haroon,0,2025-10-12T18:31:13.000Z,Oh. While im asking music questions. My sons electric piano needs electrical fixing (no sound) if you have any recommendation there also it would be greatly appreciated,2,last_message_hits:electrical,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,447810576054@c.us,direct_cus,Nabeel,0,2026-04-30T19:06:30.000Z,I could have driven you home,2,last_message_hits:ome,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923024472294@c.us,direct_cus,Nauman Butt,0,2026-04-28T04:58:39.000Z,"because we don't have a bank account, where bank people will help us go through this type of transaction. as far as samba is concerned they are not capable to tackle those transaction with SBP",2,last_message_hits:ac,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,157599613898904@lid,direct_lid,Mohammad Hammad Mansoor,0,2026-05-06T17:23:27.000Z,"no worries, I can probably reach out to you on friday then",2,last_message_hits:ac,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923093955577@c.us,direct_cus,Samar,0,2026-05-07T21:57:57.000Z,Is the front door locked?,2,last_message_hits:door,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,177665784950870@lid,direct_lid,Shoaib Khalil - AWS,0,2026-04-28T01:06:52.000Z,its so nice to actually be able to talk to a person at AWS. Thanks very much,2,last_message_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,447801701625@c.us,direct_cus,Tim Frearson,0,2025-03-08T15:19:48.000Z,We will make a house there. Maybe a pool. Maybe sell off some of it in a few years,2,last_message_hits:ome,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923099351940@c.us,direct_cus,Uk David,0,2026-04-29T15:35:10.000Z,UBL HASAN ASHRAF IBAN# PK32UNIL0109000320032992 ACC# 0845320032992,2,last_message_hits:ac,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923018218598@c.us,direct_cus,Yasir,0,2025-05-02T05:01:51.000Z,"I am working as DevOps and infrastructure engineer in technogenics, mainly its architecture is based on cloud, utilising K8s managed services, GCP & Azure cloud. Now exploring options with VCF based architecture.",2,last_message_hits:engine,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923008411737@c.us,direct_cus,Zafar Waheed,0,2025-04-06T13:33:38.000Z,It’s the go to place for serious skiers ⛷️,2,last_message_hits:ac,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363336326068074@g.us,group,,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363407178558463@g.us,group,,0,2026-04-29T10:25:51.000Z,NEC (Non Encumbrance Certificate,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,4915225940467-1604613617@g.us,group,1.6B Dubai and more 1860,0,,,1,group_bonus,false,false,,0,0,0,0
@@ -74,22 +63,21 @@ whatsapp-number-2,secondary,+923099351940,447941550310-1570653387@g.us,group,2B 
 whatsapp-number-2,secondary,+923099351940,120363315594654686@g.us,group,7pm Sunday dinner!,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447368265876-1604398519@g.us,group,AIM Design,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923018436565-1601459151@g.us,group,AIM Instance Discussion,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363384321262109@g.us,group,Agritech UAE,0,2025-02-17T09:12:36.000Z,Agritech UAE,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363207825376044@g.us,group,Agromai,0,2025-06-16T18:25:28.000Z,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923009403655-1446617073@g.us,group,Akbar's Birthday,0,,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363384321262109@g.us,group,Agritech UAE,0,,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363207825376044@g.us,group,Agromai,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363428793515853@g.us,group,Ali,0,2026-03-27T10:12:12.000Z,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447772056444-1597563449@g.us,group,Alison's 30+10 bday bbq,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,447917123564-1543598121@g.us,group,"Alison, David, Mum, Me",0,2025-12-15T12:34:05.000Z,Thanks for the list mum!,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,447917123564-1543598121@g.us,group,"Alison, David, Mum, Me",0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,17863906391-1607117577@g.us,group,Armando/Leo/Samar,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923244305673-1574584603@g.us,group,Atif - Shafqat - David,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363420623078628@g.us,group,Bagpipes and bhangra crew,2,2025-10-11T05:29:46.000Z,"Thanks so much for coming all, it really meant a lot to me - love you guys ❤️❤️❤️",1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363420623078628@g.us,group,Bagpipes and bhangra crew,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363337777495147@g.us,group,Big boys tings,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447917123564-1577907666@g.us,group,Big family whatsapp,0,2026-04-12T01:46:17.000Z,so we don’t still have to find the instructions? 🙂,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363309627594376@g.us,group,Blue books,0,2026-02-21T03:05:53.000Z,Yep that works,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363418292664801@g.us,group,China - conference,0,2025-09-17T13:21:58.000Z,I think we had a meeting day before That bank islami needed SharePoint for various departments.,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363418292664801@g.us,group,China - conference,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447454797767-1573607655@g.us,group,Christmas at Kew,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363227211675019@g.us,group,Colombia,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363328229752166@g.us,group,Competitive squad U8's-U10's-U12's-U14's,0,2026-04-29T10:02:26.000Z,"Dear Parents, Please note there will be no training on Friday, 1st May, in observance of Labour Day. All sessions will resume as per schedule from Saturday, 2nd May. We appreciate your cooperation.",1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363361182939991@g.us,group,Curated Shopping - pick up what you need,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363026094469826@g.us,group,Customs,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447813066230-1628189456@g.us,group,DR = 43,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447813066230-1597871238@g.us,group,DR=42. Fleet Crew etc,0,,,1,group_bonus,false,false,,0,0,0,0
@@ -103,22 +91,21 @@ whatsapp-number-2,secondary,+923099351940,120363245549096553@g.us,group,Domain p
 whatsapp-number-2,secondary,+923099351940,447967184533-1480971689@g.us,group,Drinks,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447544737048-1619280891@g.us,group,Drinks on 22nd May,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363426399481342@g.us,group,EOBI,0,2026-04-08T13:17:49.000Z,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363423485713344@g.us,group,Emeralds,0,2026-01-07T07:22:48.000Z,Heey guys absolutely lets meet this friday and ill have everything ready. Apologies this viral really had me down.,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363416867107416@g.us,group,Emerald,0,,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363423485713344@g.us,group,Emeralds,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923018436565-1606457042@g.us,group,Engro RFP,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447454797767-1595844483@g.us,group,Escrow Pakistan,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363405187445101@g.us,group,Events / branding collateral.,2,2025-12-23T13:08:10.000Z,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363405187445101@g.us,group,Events / branding collateral.,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923018436565-1627622982@g.us,group,Evernex Internal Support,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923244054268-1608713293@g.us,group,Expat Group,0,2026-04-24T14:40:01.000Z,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363025634531354@g.us,group,FARMDAR SOCIAL GROUP,0,2025-09-14T19:42:01.000Z,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923244054268-1608713293@g.us,group,Expat Group,0,2026-05-01T05:28:46.000Z,"🎶 Music Night at LIA 🎤 Join us at the Lahore International Club for a big night of music! 🎸 Live band to kick things off, plus 🎤 open mic, 🎤 karaoke, and 🎧 DJ through the night 🔥 BBQ outside ❄️ Music and party inside to beat the heat 🎤 Think you’ve got talent? Or just confidence after a drink? Either way grab the mic or a guitar and give it a go! 🍹 Food and drink specials for members 🎟 Free entry 📅 9th May 🕢 From 7:30 PM Let’s see what you’ve got! 🎶🔥",1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363025634531354@g.us,group,FARMDAR SOCIAL GROUP,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447454797767-1623062362@g.us,group,FINANCE PERCEPTION IT,0,2026-04-29T04:22:04.000Z,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363408569800952@g.us,group,FJ 40 - Advisory,0,2026-04-23T17:51:00.000Z,Will sort it out,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363408981304188@g.us,group,FJ Audio,0,2026-04-26T19:47:58.000Z,We need to meet on Thursday bhai.,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,447917123564-1463821177@g.us,group,Family Whatsapp,0,2026-04-06T16:02:02.000Z,Thank you for a lovely evening xx,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363324242926727@g.us,group,Farm land,0,2025-04-29T01:29:06.000Z,https://www.instagram.com/reel/DI_ku4Qy5Cx/?igsh=Y2dndzlodXl6bWJ1,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,447917123564-1463821177@g.us,group,Family Whatsapp,0,2026-05-05T21:16:06.000Z,Hey @207636033192109 Cadgwith Folk Day is Saturday 11th July. We’re on at 12.30 if you fancy sailing round for it :-),1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363324242926727@g.us,group,Farm land,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363291536595204@g.us,group,Farmdar - Sebastian,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363224745059166@g.us,group,Farmdar EKS,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363419797624028@g.us,group,Farmdar-Agrom SMT,0,2025-05-14T08:46:50.000Z,@447456457005 will you be available for the call?,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363349879220786@g.us,group,First Movers - IT World News Curated by Perception IT,0,2025-03-20T04:52:16.000Z,off,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363419797624028@g.us,group,Farmdar-Agrom SMT,0,,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363349879220786@g.us,group,First Movers - IT World News Curated by Perception IT,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447971788954-1586502912@g.us,group,Friday night cards,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363044459531316@g.us,group,Fwens,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363042241185671@g.us,group,G dog stag group,0,,,1,group_bonus,false,false,,0,0,0,0
@@ -126,11 +113,11 @@ whatsapp-number-2,secondary,+923099351940,447877822569-1563347321@g.us,group,Go 
 whatsapp-number-2,secondary,+923099351940,27836263404-1587533228@g.us,group,Helios || DT - Core Team,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447815308789-1515055840@g.us,group,Hoff 2018,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447967189522-1579008517@g.us,group,Hoff 2022 🤞,0,2026-02-05T12:57:58.000Z,Nice work Dave. Glad you’ve seen the light 🏂,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363416845226272@g.us,group,Holiday ideas,0,2025-08-20T15:08:57.000Z,https://www.instagram.com/share/reel/BA7cIlz4BU,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363377922746585@g.us,group,Homies,0,2026-04-30T11:12:14.000Z,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363416845226272@g.us,group,Holiday ideas,0,,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363377922746585@g.us,group,Homies,0,2026-05-08T03:53:18.000Z,https://www.instagram.com/reel/DX8N0SzMMB6/?igsh=MWgzc290bGRmZmxnZw==,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363043462158815@g.us,group,House 287 K Ph 5,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363042301330731@g.us,group,House Hunt 2022,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363047331453462@g.us,group,House fixing 287 K,1,2026-01-25T10:23:25.000Z,Its around 75 to 90 k,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363047331453462@g.us,group,House fixing 287 K,0,2026-01-25T10:23:25.000Z,Its around 75 to 90 k,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447979041116-1539370970@g.us,group,Housemates😊,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363027333051796@g.us,group,IBM Instana MCB,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363043239759143@g.us,group,ICD BankIslami,0,,,1,group_bonus,false,false,,0,0,0,0
@@ -139,7 +126,8 @@ whatsapp-number-2,secondary,+923099351940,923334552030-1580560505@g.us,group,Imo
 whatsapp-number-2,secondary,+923099351940,120363187778605685@g.us,group,Inheritance law work,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923018480686-1556964373@g.us,group,Interviews,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363295054610799@g.us,group,Intro: Jawad and David,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363399333297154@g.us,group,Isb,0,2025-06-30T19:18:53.000Z,https://www.instagram.com/reel/DI4B-XuIcCy/?igsh=bGYzaXBrMjFqcHZm,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363414427826225@g.us,group,Introducing Nauman/Nabeel,0,,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363399333297154@g.us,group,Isb,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923018436565-1605427323@g.us,group,JAZZ Roster Team,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363143660868381@g.us,group,Japan trip,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447456457005-1590750694@g.us,group,Jazz Support,0,,,1,group_bonus,false,false,,0,0,0,0
@@ -149,13 +137,14 @@ whatsapp-number-2,secondary,+923099351940,120363289711202745@g.us,group,July Reu
 whatsapp-number-2,secondary,+923099351940,120363339698401407@g.us,group,Kash bday + Dj at the club,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363039945914398@g.us,group,KiwiTech - RentID project,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363406230122349@g.us,group,LEILA WEBSITE,0,2026-04-12T14:02:42.000Z,any progress on setting up the payment provider @124330830762077 ?,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363418728794678@g.us,group,LIC 2.0,0,2025-04-28T10:31:22.000Z,Sure,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363369500454083@g.us,group,LGSI plans,0,,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363418728794678@g.us,group,LIC 2.0,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923338887698-1442490858@g.us,group,Lahore International Club,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363041681115567@g.us,group,Late Arrival Intimation,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923026179659-1505782587@g.us,group,Leak,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363398572465025@g.us,group,Legends X Feelspanish football 2025,0,2026-01-24T16:28:53.000Z,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923038290000-1629724919@g.us,group,Leo's Workshop - Thinkers,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363218226346445@g.us,group,Lifesavers,0,2025-04-01T11:21:17.000Z,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363218226346445@g.us,group,Lifesavers,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923228468362-1422524329@g.us,group,MBL NOC,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363041071989510@g.us,group,MCB Instana,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,19729776355-1604072380@g.us,group,MHB PAYMASTER,0,,,1,group_bonus,false,false,,0,0,0,0
@@ -163,7 +152,8 @@ whatsapp-number-2,secondary,+923099351940,447454797767-1593448256@g.us,group,Mas
 whatsapp-number-2,secondary,+923099351940,120363159268541520@g.us,group,Match Vs Bulls. 19th Aug,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447773764811-1418500447@g.us,group,Men Day,0,2026-04-23T15:05:29.000Z,Cheers guys - looking forward to it!,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363023042998585@g.us,group,Meter readings,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363394108416532@g.us,group,More shit news,0,2025-03-08T10:37:38.000Z,Thanks fellas,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363400887564627@g.us,group,Mining,0,,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363394108416532@g.us,group,More shit news,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363039222598602@g.us,group,MyBoostMarketing,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363027095666225@g.us,group,NBI Alarms Issue on CORBA,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923158274110-1588496398@g.us,group,NBP tender,0,,,1,group_bonus,false,false,,0,0,0,0
@@ -173,38 +163,37 @@ whatsapp-number-2,secondary,+923099351940,923026179659-1540406514@g.us,group,Nae
 whatsapp-number-2,secondary,+923099351940,923338887698-1449559647@g.us,group,Naeyl's Birthday! 12 Dec!,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363048286625001@g.us,group,Name group,0,2026-04-22T05:07:41.000Z,https://www.instagram.com/reel/DXaihzCCFlE/?igsh=bHZkbTZ4NXV3YXV1,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363042637702593@g.us,group,NeW friends 2022,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363402439622323@g.us,group,Odoo Fleet Mgmnt,0,2025-08-11T05:55:56.000Z,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363421345393038@g.us,group,Odoo x Virgil Sports,0,2026-04-29T12:26:48.000Z,Sure,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363402439622323@g.us,group,Odoo Fleet Mgmnt,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363319533649472@g.us,group,Online Shopping,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363022403339922@g.us,group,Operation Dinner Out,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923018480686-1570644530@g.us,group,Opsalert QA,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923018480686-1568311354@g.us,group,Opsalert banckend team,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447540134548-1542189044@g.us,group,Orb Think social media,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447456457005-1569340658@g.us,group,Orb data website,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363377723483399@g.us,group,P - SAMBA,0,2025-01-29T09:28:43.000Z,Update ☝️,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363377723483399@g.us,group,P - SAMBA,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447454797767-1623147208@g.us,group,PERCEPTION/SAMBA,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447454797767-1623147762@g.us,group,PERCEPTION/SCB,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363163522020265@g.us,group,PIT - ServiceNow Readiness,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363044302034276@g.us,group,Pakistan Cricket,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363240731432512@g.us,group,Parent group - Grade 6 Blue,0,2025-04-13T14:50:53.000Z,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363240731432512@g.us,group,Parent group - Grade 6 Blue,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923007759933-1603348963@g.us,group,Perception IT,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923334552030-1556795837@g.us,group,Perception IT (Tax),0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923334552030-1634545798@g.us,group,Perception IT - Law,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363044582602172@g.us,group,Perception IT - Samba,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923334552030-1575289682@g.us,group,Perception IT - Web & Col,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923018480686-1562252820@g.us,group,Perception IT Development,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363345333110546@g.us,group,Perception IT Farmdar Finances,0,2024-11-13T15:07:14.000Z,Perception IT Farmdar Finances,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363345333110546@g.us,group,Perception IT Farmdar Finances,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923018480686-1571655861@g.us,group,Perception IT Office,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923334552030-1619810263@g.us,group,Perception IT UK / Law,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363040019593074@g.us,group,Perception-Rightjobs,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363317916123181@g.us,group,PerceptionIT-Farmdar Finances,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923334552030-1582286684@g.us,group,Percpt IT RB - Web & BGL,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363022845210199@g.us,group,Pridmore siblings,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363392269101229@g.us,group,Productivity Updates,0,2026-01-18T22:08:47.000Z,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363392269101229@g.us,group,Productivity Updates,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447456457005-1585916719@g.us,group,RB | Rentingbee,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923334552030-1586341424@g.us,group,RB | iMonitor,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923018480686-1570435329@g.us,group,RTMC,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,447752331536-1530915950@g.us,group,Random thoughts Barnes,0,2025-10-12T09:44:57.000Z,"Great job, well done, that is a lot of work. Thanks",1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,447752331536-1530915950@g.us,group,Random thoughts Barnes,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447813066230-1552143053@g.us,group,Ray's Bar - Regulars,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923334552030-1535198361@g.us,group,Rebrand - UK Work,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923026179659-1454486755@g.us,group,Renovations,0,,,1,group_bonus,false,false,,0,0,0,0
@@ -215,11 +204,12 @@ whatsapp-number-2,secondary,+923099351940,120363281368084165@g.us,group,Rosie’
 whatsapp-number-2,secondary,+923099351940,120363140812914614@g.us,group,Ryan Day,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,19729776355-1602179113@g.us,group,SAMAR GROUP,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363145377105399@g.us,group,SECP - Danish,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363420096348511@g.us,group,SECP Renewal,0,2025-11-05T14:52:38.000Z,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363420096348511@g.us,group,SECP Renewal,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363188293342926@g.us,group,SECP Stuff,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447917123564-1512985556@g.us,group,Samar & David,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363025645103287@g.us,group,Samba & perception IT,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363168870462982@g.us,group,Saturday 26tg Vs TWK,0,,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363405111754958@g.us,group,School Assignments,0,2026-05-08T08:16:46.000Z,https://wro-association.org/competition/2026-season/,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363295880963146@g.us,group,Sharepoint Customization,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447917123564-1599847591@g.us,group,Siblings,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447917123564-1620157016@g.us,group,Siblings,0,,,1,group_bonus,false,false,,0,0,0,0
@@ -230,14 +220,14 @@ whatsapp-number-2,secondary,+923099351940,120363042145344620@g.us,group,Sta   (N
 whatsapp-number-2,secondary,+923099351940,27835666986-1614783871@g.us,group,Staging Console DT || HT,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,120363137027895627@g.us,group,Sunday 21st May 5pm,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923008464691-1431626714@g.us,group,Taekwondo Family,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923008057202-1604838621@g.us,group,Tennis group,0,2026-04-29T14:22:24.000Z,InshaAllah,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363401460545949@g.us,group,Textile Meetings,0,2025-07-30T07:35:13.000Z,Shafqat kindly add your understanding too pls,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363401787452033@g.us,group,Thailand - a potential move.,1,2026-02-14T04:02:24.000Z,https://www.instagram.com/reel/DUpLI_ngf0b/?igsh=a3ZtNGoxNzk2anVx,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363426293414535@g.us,group,The Golden Triangle,0,2026-04-28T20:59:24.000Z,We’re all figuring it out. Soon,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923008057202-1604838621@g.us,group,Tennis group,0,2026-05-07T16:23:09.000Z,Oke,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363401460545949@g.us,group,Textile Meetings,0,,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363401787452033@g.us,group,Thailand - a potential move.,0,2026-02-14T04:02:24.000Z,https://www.instagram.com/reel/DUpLI_ngf0b/?igsh=a3ZtNGoxNzk2anVx,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363426293414535@g.us,group,The Golden Triangle,0,2026-05-07T02:12:37.000Z,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447815308789-1488889217@g.us,group,The Hoff,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923008438234-1511434729@g.us,group,TheVolere.com,0,,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363403295411625@g.us,group,Therapist recommendation,0,2025-07-10T16:44:50.000Z,,1,group_bonus,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,120363419527123652@g.us,group,Therapy recommendation,0,2025-07-10T17:05:23.000Z,Thank you sir I am zoya admin manager. Sir ahmed doesn't check. B it thank you so much for referral. Indebted. Sir hamza should I set up appointment?,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363403295411625@g.us,group,Therapist recommendation,0,,,1,group_bonus,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,120363419527123652@g.us,group,Therapy recommendation,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447454797767-1515865382@g.us,group,Things to do in London,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447813066230-1563804221@g.us,group,Thursday Night Beer Club,0,,,1,group_bonus,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447801701625-1521290631@g.us,group,Tim’s stag,0,,,1,group_bonus,false,false,,0,0,0,0
@@ -264,86 +254,91 @@ whatsapp-number-2,secondary,+923099351940,447454797767-1571841808@g.us,group,�
 whatsapp-number-2,secondary,+923099351940,12173021989@c.us,direct_cus,+1 (217) 302-1989,1,2026-04-12T16:40:45.000Z,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,13653250296@c.us,direct_cus,+1 (365) 325-0296,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,14173810003@c.us,direct_cus,+1 (417) 381-0003,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,3749758152957@lid,direct_lid,+1 (478) 242-6864,0,2026-03-16T15:47:35.000Z,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,3749758152957@lid,direct_lid,+1 (478) 242-6864,0,2026-05-04T16:00:21.000Z,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,15796999360@c.us,direct_cus,+1 (579) 699-9360,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,2349021007359@c.us,direct_cus,+234 902 100 7359,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,27842091289@c.us,direct_cus,+27 84 209 1289,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447412078347@c.us,direct_cus,+44 7412 078347,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447438632502@c.us,direct_cus,+44 7438 632502,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,447456457005@c.us,direct_cus,+44 7456 457005,0,2025-11-25T09:51:56.000Z,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,447456457005@c.us,direct_cus,+44 7456 457005,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447490902766@c.us,direct_cus,+44 7490 902766,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,447516022378@c.us,direct_cus,+44 7516 022378,0,2025-11-16T11:14:38.000Z,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,447516022378@c.us,direct_cus,+44 7516 022378,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,109895596650697@lid,direct_lid,+44 7706 673116,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447787252135@c.us,direct_cus,+44 7787 252135,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,276849900916814@lid,direct_lid,+44 7810 489385,0,2026-05-03T11:25:01.000Z,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447825731579@c.us,direct_cus,+44 7825 731579,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,144191178952737@lid,direct_lid,+44 7853 119954,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,447887914726@c.us,direct_cus,+44 7887 914726,0,2025-03-12T09:21:37.000Z,I definitely will,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,447887914726@c.us,direct_cus,+44 7887 914726,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447916318743@c.us,direct_cus,+44 7916 318743,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,58141257502913@lid,direct_lid,+44 7974 905090,0,2025-12-31T09:02:48.000Z,I didn't request a code,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,58141257502913@lid,direct_lid,+44 7974 905090,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,61487423810@c.us,direct_cus,+61 487 423 810,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,6598630809@c.us,direct_cus,+65 9863 0809,0,2026-04-01T01:47:54.000Z,Are you in the US?,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,66612316073@c.us,direct_cus,+66 61 231 6073,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,85263913535@c.us,direct_cus,+852 6391 3535,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,918386002212@c.us,direct_cus,+91 83860 02212,0,2025-12-01T09:38:25.000Z,Hey David,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,85512924283@c.us,direct_cus,+855 12 924 283,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,918386002212@c.us,direct_cus,+91 83860 02212,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,9221111123456@c.us,direct_cus,+92 21 111 123 456,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,922135837333@c.us,direct_cus,+92 21 35837333,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,65099020652788@lid,direct_lid,+92 300 1178484,0,2026-03-22T14:48:41.000Z,"I dont seem to have any record, but should include Copper Cable Lug 16mm cable 8mm Bolt Hole Pakistan × 10 280 fiaz.com.pk Insulated Thimbles Male lug 4mm Yellow in Pakistan × 1 800 fiaz.com.pk O-type Blue Insulated Thimble/ Cable Lug 2.5mm × 1 250 fiaz.com.pk Insulated Thimbles Male lug 2.5mm Blue in Pakistan × 1 700 fiaz.com.pk Insulated Thimbles female lug 2.5mm Blue in Pakistan × 1 450 fiaz.com.pk O-type Yellow Insulated Thimble/ Cable Lug 4mm (6mm hole) × 1 750 fiaz.com.pk",0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,63849688465526@lid,direct_lid,+92 300 1829983,1,2026-04-10T13:08:29.000Z,"Hi, I hope you’re doing well. I wanted to follow up regarding the company proposal we shared earlier about our recruitment services. If you have any ongoing or upcoming hiring needs, please feel free to share the positions with us. We would be happy to assist you in finding and hiring the right resources. Regards, Ali HireUs",0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923005262106@c.us,direct_cus,+92 300 5262106,0,2025-12-02T17:54:44.000Z,Location share kr dyn sir,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,63849688465526@lid,direct_lid,+92 300 1829983,0,2026-05-04T09:34:40.000Z,"Hi, I hope you’re doing well. I wanted to follow up on the recruitment services proposal we shared earlier. If you have any current or upcoming hiring requirements, we would be glad to support you in identifying and onboarding the right talent. Please feel free to share the details of any open positions, and we’ll take it from there. Looking forward to your response. Regards, Ali HireUs",0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923005262106@c.us,direct_cus,+92 300 5262106,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,241652056756279@lid,direct_lid,+92 300 7880511,0,2026-04-22T12:04:50.000Z,Will let you know when its available,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923008202902@c.us,direct_cus,+92 300 8202902,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,181698725715984@lid,direct_lid,+92 300 8292259,0,2026-04-08T16:18:47.000Z,can you guide me how to upload images for pret a porter,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,1602173841433@lid,direct_lid,+92 300 8488937,0,2026-03-10T11:12:30.000Z,Sure,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923024315768@c.us,direct_cus,+92 302 4315768,0,2025-03-19T15:34:28.000Z,He can play in our U-12 squad coz if his game,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923024315768@c.us,direct_cus,+92 302 4315768,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923028498424@c.us,direct_cus,+92 302 8498424,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923034245075@c.us,direct_cus,+92 303 4245075,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,93316905488486@lid,direct_lid,+92 303 5556444,0,2026-03-26T12:59:21.000Z,Wait,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923037770578@c.us,direct_cus,+92 303 7770578,0,2025-03-06T14:02:01.000Z,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923037770578@c.us,direct_cus,+92 303 7770578,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923054469348@c.us,direct_cus,+92 305 4469348,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923058435555@c.us,direct_cus,+92 305 8435555,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923067420188@c.us,direct_cus,+92 306 7420188,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923097772329@c.us,direct_cus,+92 309 7772329,0,2025-12-02T17:51:57.000Z,20-25 minutes,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923097772329@c.us,direct_cus,+92 309 7772329,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923098999466@c.us,direct_cus,+92 309 8999466,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,95786444562496@lid,direct_lid,+92 311 4499321,0,2026-03-28T14:22:31.000Z,Thanks. Recieved,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923135759006@c.us,direct_cus,+92 313 5759006,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923180082417@c.us,direct_cus,+92 318 0082417,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,175415742226589@lid,direct_lid,+92 320 3095469,0,2025-12-05T07:10:01.000Z,hope you are doing well,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923209176356@c.us,direct_cus,+92 320 9176356,0,2025-12-26T08:25:13.000Z,"Hi David, when can we start working on Odoo? Thanks",0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,175415742226589@lid,direct_lid,+92 320 3095469,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923209176356@c.us,direct_cus,+92 320 9176356,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923211117287@c.us,direct_cus,+92 321 1117287,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,177541079953592@lid,direct_lid,+92 321 3227222,0,2026-03-27T09:33:32.000Z,Only Sunday closed,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923224229116@c.us,direct_cus,+92 322 4229116,0,2026-03-27T08:20:22.000Z,"Ok, thanks. Its paid",0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,273993194017023@lid,direct_lid,+92 322 9447730,0,2026-03-18T17:17:52.000Z,ok,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,258174846292071@lid,direct_lid,+92 323 0453838,0,2026-03-28T10:27:22.000Z,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923231553475@c.us,direct_cus,+92 323 1553475,0,2025-11-18T22:00:11.000Z,Thank you so much sir,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923231553475@c.us,direct_cus,+92 323 1553475,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,109483598602449@lid,direct_lid,+92 323 4759209,0,2026-04-12T05:55:20.000Z,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,224553909416086@lid,direct_lid,+92 324 8456394,0,2026-04-15T00:28:57.000Z,is this available and how much does it cost? https://www.supremeplastic.pk/product/industrial-grade-jerry-can-40-ltr-heavy-duty-hxm-hdpe-plastic-with-ratchet-seal-cap/#,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923291088229@c.us,direct_cus,+92 329 1088229,0,2026-01-01T07:24:18.000Z,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923291088229@c.us,direct_cus,+92 329 1088229,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,97431735800029@lid,direct_lid,+92 330 1524555,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,153863009087523@lid,direct_lid,+92 332 5161548,0,2026-03-06T03:47:31.000Z,"Yes, Get it a try and let me know if everything works fine.",0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923331491399@c.us,direct_cus,+92 333 1491399,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,82252935475240@lid,direct_lid,+92 333 8486830,0,2026-04-21T20:31:21.000Z,"paid with thanks, under the reference “david”",0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,124927713792078@lid,direct_lid,+92 335 2172356,0,2026-03-24T07:04:56.000Z,"Ok, thanks. Let me find locally",0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923354544644@c.us,direct_cus,+92 335 4544644,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923365868661@c.us,direct_cus,+92 336 5868661,0,2026-03-17T14:51:00.000Z,No it's direct from the AWS platform,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923437152667@c.us,direct_cus,+92 343 7152667,0,2025-09-02T15:29:02.000Z,How are you?,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923412831076@c.us,direct_cus,+92 341 2831076,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923437152667@c.us,direct_cus,+92 343 7152667,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,41562918658178@lid,direct_lid,+92 345 4060782,0,2026-03-02T07:05:03.000Z,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923458429968@c.us,direct_cus,+92 345 8429968,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,971524992948@c.us,direct_cus,+971 52 499 2948,0,2025-10-22T13:38:35.000Z,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,971524992948@c.us,direct_cus,+971 52 499 2948,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,189022114676916@lid,direct_lid,+971 55 730 9380,0,2026-03-24T11:14:14.000Z,kinldy log a ticket at https://www.odoo.com/help,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,97180025327@c.us,direct_cus,+971 800 25327,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,139775466029219@lid,direct_lid,Abdullah Lawyer,0,2026-04-22T03:44:12.000Z,"thanks. yes she is the one that needs to be ratified mostly - right to build, ownership records with no family dispute, Patwari clear demarcation",0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923318549269@c.us,direct_cus,Adnan,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923009288799@c.us,direct_cus,Affan,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923214218218@c.us,direct_cus,Agha Stationer Hussain,0,2025-11-19T01:42:47.000Z,Yes no issues.,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,554896138540@c.us,direct_cus,Alexandre Vieira,0,2025-01-01T06:17:35.000Z,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923214218218@c.us,direct_cus,Agha Stationer Hussain,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,554896138540@c.us,direct_cus,Alexandre Vieira,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,222990792925434@lid,direct_lid,Alpha Vape,0,2026-03-25T04:39:17.000Z,Of course.,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923255455518@c.us,direct_cus,Amber,0,2026-04-02T16:32:44.000Z,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923008456417@c.us,direct_cus,Amir Ejaz - Ref. Fatima Fertilizer,0,2025-12-01T13:07:57.000Z,Great. Thanks,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923004747640@c.us,direct_cus,Amir Javaid,0,2025-05-30T06:26:55.000Z,EHR Conference V2.pdf,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923214941527@c.us,direct_cus,Amir Perception,0,2026-04-24T10:24:48.000Z,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923008456417@c.us,direct_cus,Amir Ejaz - Ref. Fatima Fertilizer,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923004747640@c.us,direct_cus,Amir Javaid,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923214941527@c.us,direct_cus,Amir Perception,0,2026-05-04T12:33:33.000Z,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923324815772@c.us,direct_cus,Ammad Javed,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447590927362@c.us,direct_cus,Ammar,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923453552373@c.us,direct_cus,Amna Fareed,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447725263581@c.us,direct_cus,Anna Li,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923026669555@c.us,direct_cus,Asim Qazi,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923008416503@c.us,direct_cus,Ayaz Ch,0,2026-03-15T15:28:15.000Z,got one of shafwat,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,193862056296531@lid,direct_lid,Ayesha Hibayat,1,2026-04-30T14:36:50.000Z,Thanks,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,193862056296531@lid,direct_lid,Ayesha Hibayat,0,2026-05-02T09:16:50.000Z,☺️,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447986975367@c.us,direct_cus,Ayesha Nabeel Sister,0,2026-01-19T15:55:11.000Z,"nope, nothing new",0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447737326156@c.us,direct_cus,Balaji Dasarati,0,2026-03-31T10:01:16.000Z,Im travelling to India next month,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923018545004@c.us,direct_cus,Beenish Wajih,0,,,0,,false,false,,0,0,0,0
@@ -351,111 +346,121 @@ whatsapp-number-2,secondary,+923099351940,447770402350@c.us,direct_cus,Ben Fawc,
 whatsapp-number-2,secondary,+923099351940,923005003027@c.us,direct_cus,Bill Fidlet,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,230218988019730@lid,direct_lid,Bob Dunne,0,2026-03-27T22:04:28.000Z,"obligatory pitch is done! I won’t do it again. all the golf etc, I can help with",0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447788420000@c.us,direct_cus,Bobo Everdon,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923034447185@c.us,direct_cus,Brendan Paki,0,2026-04-18T01:28:47.000Z,"I only just realised you werent inviting me to play, just had me on cock sucking duty :)",0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,447877761203@c.us,direct_cus,Charis Dymomd,0,2025-07-27T01:12:37.000Z,"Hi. Sorry for the lateness. We wanted to wish you a happy birthday. Did you start at the vetinary college? If so, or if not, how are things going. All our love, uncle David, Samar and Naeyl. 🍄‍🟫🥬🧄🥖🥯🥖🥯🥖🥨🥖🫔🍗🥡🥙🧉",0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923034447185@c.us,direct_cus,Brendan Paki,0,2026-05-08T04:35:58.000Z,I think people will be more surprised by the top c,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,447877761203@c.us,direct_cus,Charis Dymomd,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447771932373@c.us,direct_cus,Chris Devis,0,2026-03-23T16:43:19.000Z,https://www.archerairrifles.com/wp-content/uploads/2017/02/free-trump-target.png,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,447763429292@c.us,direct_cus,Damion,0,2025-05-10T18:38:25.000Z,Panto style,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,447763429292@c.us,direct_cus,Damion,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447813066230@c.us,direct_cus,Dave Ray,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923180082417@c.us,direct_cus,Driver,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447702855195@c.us,direct_cus,Ellie Freddies Mum,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,447915067381@c.us,direct_cus,Evie Dymond,1,2024-12-22T21:34:51.000Z,Thank you all.,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,447915067381@c.us,direct_cus,Evie Dymond,1,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923214406262@c.us,direct_cus,Fahad Khan,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923164968570@c.us,direct_cus,Fareeha,0,2026-02-24T08:35:27.000Z,Let me know when i reschedule this call.,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923214557707@c.us,direct_cus,Farzan Imperial Internet,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923070055405@c.us,direct_cus,Fatima Farmdar Finance,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,555194147484@c.us,direct_cus,Felipe Pinho,0,2025-05-12T12:02:25.000Z,will you manage to join? This is the call about this task we were discussing friday,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,5521997057630@c.us,direct_cus,Felipe Galo,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,555194147484@c.us,direct_cus,Felipe Pinho,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,31623875289@c.us,direct_cus,Frans Baltussen,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447850429211@c.us,direct_cus,Geoff Barker,0,2026-04-30T09:50:48.000Z,quite up your street if you are looking for a new project,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,447557302250@c.us,direct_cus,Gerry Scott-Brining,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447472587587@c.us,direct_cus,Ghazi Saghir,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923184189031@c.us,direct_cus,Gymkhana Cashier,0,2026-01-12T10:44:42.000Z,Thank you for your remittance. Your payment has been duly credited,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923184189031@c.us,direct_cus,Gymkhana Cashier,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447500969297@c.us,direct_cus,Hamza Syed,0,2026-04-28T15:07:58.000Z,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923334666503@c.us,direct_cus,Hamza sheikh,0,2026-04-15T02:44:51.000Z,"less ideal, but it can be done under a company route",0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923334939993@c.us,direct_cus,Hassan Ali Khan,0,2025-05-17T13:32:26.000Z,Hi. Yes we are in,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923334666503@c.us,direct_cus,Hamza sheikh,0,2026-05-02T11:47:25.000Z,BEGIN:VCARD VERSION:3.0 N:Rehman;Mo;;; FN:Mo Rehman TEL;type=Mobile;waid=923116000049:+92 311 6000049 X-WA-BIZ-NAME:Mo Rehman END:VCARD,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923224498475@c.us,direct_cus,Haris Haroon,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923334939993@c.us,direct_cus,Hassan Ali Khan,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923458429907@c.us,direct_cus,Helder Fontinha,0,2026-03-27T14:04:01.000Z,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447748486795@c.us,direct_cus,Iain Randall,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447445036187@c.us,direct_cus,Iain White - LUKE,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923224842814@c.us,direct_cus,Iqbal Aziz Khan,0,2025-03-31T09:14:22.000Z,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,447969590017@c.us,direct_cus,Janet Pridmore,0,2025-12-19T21:36:33.000Z,"Hi. Thanks, i'll pass it on",0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923224842814@c.us,direct_cus,Iqbal Aziz Khan,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,447969590017@c.us,direct_cus,Janet Pridmore,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923071502031@c.us,direct_cus,Jawad Akram,0,2026-04-13T05:05:46.000Z,Great.,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923003008000@c.us,direct_cus,Jazz Mobile Tax,0,2025-11-30T09:47:34.000Z,Full Balance Offer is LIVE till 30th November! 💸 Bas *408# dial kar k recharge karne par PURA balance hasil karen bina kisi katoti kay! (T&Cs apply),0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923003008000@c.us,direct_cus,Jazz Mobile Tax,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447544737048@c.us,direct_cus,Jonathan Edgar,0,2026-04-24T21:19:12.000Z,👍,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,12335649415307@lid,direct_lid,Jordan,0,2026-04-27T07:50:16.000Z,Ok 👍,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,12335649415307@lid,direct_lid,Jordan,0,2026-05-03T09:48:42.000Z,Received thanks,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447532333293@c.us,direct_cus,Joshua,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923028400400@c.us,direct_cus,Kash Gulberg,0,2026-04-13T13:23:08.000Z,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,201043258413177@lid,direct_lid,Kerry,0,2026-04-30T16:22:25.000Z,We all did. Sure will see you tomorrow,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923028400400@c.us,direct_cus,Kashif Hassan,0,2026-05-01T19:15:44.000Z,Not out tonight. Organising shit,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,201043258413177@lid,direct_lid,Kerry,0,2026-05-08T04:45:32.000Z,Nice one! Tune 👏,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923226617394@c.us,direct_cus,Khalid Masih,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923214374641@c.us,direct_cus,Khurram Gymkhana Basement,0,2025-05-16T13:54:44.000Z,Not available,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923214374641@c.us,direct_cus,Khurram Gymkhana Basement,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,274186534658174@lid,direct_lid,LGSI (Admin) Banin,0,2026-04-23T15:08:32.000Z,Hi. I’m not able to log in to see my son Naeyl Pridmores outstanding bill Please can you ensure that my CNIC number is registered against this so I can log in? 8263521003931 His Registration number is lgs214202400098 Thanks David,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447766011171@c.us,direct_cus,Liz Oscars Mum,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447917123564@c.us,direct_cus,Lizzie Pridmore,0,2026-04-26T14:32:37.000Z,Thanks. Sorry i missed your call,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,447476727980@c.us,direct_cus,Lowen Dymond,0,2025-07-27T20:08:11.000Z,"Thank you, I appreciate it! Thats good to know! It can get isolating being so far away",0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,555193424467@c.us,direct_cus,Lolla Monasterio,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,447476727980@c.us,direct_cus,Lowen Dymond,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447772056444@c.us,direct_cus,Luke and Alison Dymond,0,2026-04-27T11:20:54.000Z,just getting parts here is a struggle,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923008441662@c.us,direct_cus,Lulu Chaudry,0,2026-01-14T19:21:42.000Z,Thank you,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923001950555@c.us,direct_cus,M.Umar Ch,0,2025-04-03T08:59:09.000Z,NAEYL PRIDMORE.docx,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923008441662@c.us,direct_cus,Lulu Chaudry,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923001950555@c.us,direct_cus,M.Umar Ch,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923260522098@c.us,direct_cus,Mark Football,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923244054268@c.us,direct_cus,Max LIA,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923244692019@c.us,direct_cus,Mehwish Haseeb,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,13135550002@c.us,direct_cus,Meta AI,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923262565639@c.us,direct_cus,Mohammed Amber,0,2026-04-28T04:40:11.000Z,https://app.asana.com/1/1202101214136586/project/1202122558441177/task/1210772476905727,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923262565639@c.us,direct_cus,Mohammed Amber,0,2026-05-04T19:21:36.000Z,😂,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,170493038579952@lid,direct_lid,Mughal,0,2026-03-28T09:15:54.000Z,sent,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,18328985802@c.us,direct_cus,Muhammad Ali,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,267817148518464@lid,direct_lid,Muhammad Ali Khan Importer,0,2026-01-09T15:48:26.000Z,David pridmore Perception IT Importing computer hardware,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,267817148518464@lid,direct_lid,Muhammad Ali Khan Importer,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,176854237454426@lid,direct_lid,Muhammad Peshawar Parts,0,2026-05-04T03:32:08.000Z,I changed things round a bit: https://dbvg4yfpnc4tj.cloudfront.net/docs/project-control-ui/#scout,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923458281210@c.us,direct_cus,Muji,1,2026-04-10T13:57:24.000Z,Hey. You got the invite? Meeting starts in 3 minutes.,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923348218995@c.us,direct_cus,Musa LUMs Tennis,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923339432525@c.us,direct_cus,Nabeel Dariq,0,2025-12-24T09:30:54.000Z,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923009403655@c.us,direct_cus,Nadia Sister In Law,0,2024-12-21T16:55:16.000Z,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,447810576054@c.us,direct_cus,Nabeel,0,2026-05-07T20:25:00.000Z,Maybe maybe,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923339432525@c.us,direct_cus,Nabeel Dariq,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923009403655@c.us,direct_cus,Nadia Sister In Law,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923334779709@c.us,direct_cus,Naima Aftab,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923024472294@c.us,direct_cus,Nauman Butt,0,2026-05-07T20:29:28.000Z,me too,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923002018345@c.us,direct_cus,Nico Sieben,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923215622225@c.us,direct_cus,Nusrat Imam,0,2025-08-01T12:38:19.000Z,Pls thanks for understanding will resolved soon regards,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923324998002@c.us,direct_cus,Osama Imran,0,2025-07-17T12:43:33.000Z,"AoA Ayub sb, an area in your farm is under high stress. Field ID: 712841 Address: Block 69-A Crop: Rice Location: https://www.google.com/maps/search/?api=1&query=31.027743672,74.116387729",0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923215622225@c.us,direct_cus,Nusrat Imam,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923324998002@c.us,direct_cus,Osama Imran,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447562473246@c.us,direct_cus,Oscar,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923000329446@c.us,direct_cus,Pablo,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447780833108@c.us,direct_cus,Pridm Alison,0,2026-04-26T21:39:10.000Z,😂 sounds fun! Glad you’ve had a good day and hope you managed to make a good structure for the baked beans!,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923454371551@c.us,direct_cus,Printing X,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923334438340@c.us,direct_cus,Raf Ali,0,2025-03-21T00:19:27.000Z,I hope you are doing well,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923334438340@c.us,direct_cus,Raf Ali,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923332308759@c.us,direct_cus,Rayaan Sayeed - Abhi,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,13109465100@c.us,direct_cus,Rebecka Zavaleta,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923336693133@c.us,direct_cus,Recruitify,0,2025-07-05T17:07:04.000Z,Perfect,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923008451334@c.us,direct_cus,Rehan,0,2025-09-03T16:43:43.000Z,Aoa,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,447715576135@c.us,direct_cus,Richard Newall,0,2026-04-26T21:58:57.000Z,I am 75 every year these days,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923336693133@c.us,direct_cus,Recruitify,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923008451334@c.us,direct_cus,Rehan,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,447715576135@c.us,direct_cus,Richard Newall,0,2026-05-07T02:44:51.000Z,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,12514045772@c.us,direct_cus,Rico Moorer,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447751831694@c.us,direct_cus,Robin,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447468431699@c.us,direct_cus,Ross Hydroelectric,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,447454797767@c.us,direct_cus,SK,0,2026-04-13T07:57:05.000Z,Ok,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,447454797767@c.us,direct_cus,SK,0,2026-05-07T17:55:25.000Z,Yes,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923006029090@c.us,direct_cus,Saad Perception Intern,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923334142102@c.us,direct_cus,Saiem Jalal,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,269023900135528@lid,direct_lid,Saif Rehman Textile,0,2026-01-28T06:37:18.000Z,Hi. Ok sure no problem,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923368100321@c.us,direct_cus,Salman Khan,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,147175728250914@lid,direct_lid,Sam Kelly,0,2026-03-16T10:41:56.000Z,Sure thing I'm free whenever. Drop me a message or call when it's good for you.,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923093955577@c.us,direct_cus,Samar,0,2026-04-28T14:27:07.000Z,Huawei Light Data centre solutions,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923224687996@c.us,direct_cus,Samars Mum,0,2026-03-24T16:04:17.000Z,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923218299808@c.us,direct_cus,Sh Jawwad Hakeem,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923222221544@c.us,direct_cus,Shaharyar Yousuf,0,2026-01-01T16:16:57.000Z,Thanks. Happy new year to you and yours also,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923222221544@c.us,direct_cus,Shaharyar Yousuf,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923008057202@c.us,direct_cus,Shahzad Maqbool,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,17202585553@c.us,direct_cus,Shazil Ahmed Tech Hub,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923224498344@c.us,direct_cus,Shophive,0,2024-12-19T14:41:26.000Z,OK thanks,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923224498344@c.us,direct_cus,Shophive,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923224200180@c.us,direct_cus,Sky Games,0,2026-03-24T16:05:15.000Z,thanks received,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,66878908024@c.us,direct_cus,Smiletaxikhaolak,0,2025-08-19T05:39:49.000Z,Thanks 🙏,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,66878908024@c.us,direct_cus,Smiletaxikhaolak,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923044314616@c.us,direct_cus,Somia Farmdar,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,573202599539@c.us,direct_cus,Stephen Merker,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,447547679321@c.us,direct_cus,Steve Merker,0,2025-06-29T22:12:24.000Z,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,447740597407@c.us,direct_cus,Stuart Cooke,0,2025-05-07T19:33:10.000Z,Hope it does... Take care David,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,447547679321@c.us,direct_cus,Steve Merker,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,447740597407@c.us,direct_cus,Stuart Cooke,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923334398119@c.us,direct_cus,Talha Khan,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923470387714@c.us,direct_cus,Toba,0,2025-08-06T09:07:12.000Z,Would you be able to join ?,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,447815308789@c.us,direct_cus,Tom Bennet,0,2024-12-30T23:07:52.000Z,why not eh?,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,447801701625@c.us,direct_cus,Tim Frearson,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923470387714@c.us,direct_cus,Toba,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,447815308789@c.us,direct_cus,Tom Bennet,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,447434963171@c.us,direct_cus,Trevor Smith,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923184164361@c.us,direct_cus,Umair Mirza Farmdar,0,2026-04-17T05:47:44.000Z,Gchat?,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923363226122@c.us,direct_cus,Usama Bin Shahid,0,2026-04-24T16:28:23.000Z,Meeting-Minutes-Mar23-2026_1.pdf,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923184164361@c.us,direct_cus,Umair Mirza Farmdar,0,2026-05-04T10:14:14.000Z,https://dbvg4yfpnc4tj.cloudfront.net/docs/project-control-ui/#scout,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923363226122@c.us,direct_cus,Usama Bin Shahid,0,2026-05-02T16:21:35.000Z,Ok ok I was just confirming.. thank you David,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923028480610@c.us,direct_cus,Usman Ikram,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923008417718@c.us,direct_cus,Usman Jamil,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923218440521@c.us,direct_cus,Usman Uzi,0,2025-06-14T18:27:15.000Z,Thanks a bunch David I owe you one.,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923218440521@c.us,direct_cus,Usman Uzi,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923008528578@c.us,direct_cus,Uzair Landlord,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,966552056140@c.us,direct_cus,Uzair Landlord,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,923291444333@c.us,direct_cus,Virgil Sports,0,2026-02-18T12:32:04.000Z,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923291444333@c.us,direct_cus,Virgil Sports,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923209490738@c.us,direct_cus,Waqar Ahmad,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,0@c.us,direct_cus,WhatsApp,0,2026-04-23T06:08:01.000Z,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923137772669@c.us,direct_cus,Xcessorirshub,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923018218598@c.us,direct_cus,Yasir,0,,,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,923008411737@c.us,direct_cus,Zafar Waheed,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923079164021@c.us,direct_cus,Zameer Insurance,0,,,0,,false,false,,0,0,0,0
-whatsapp-number-2,secondary,+923099351940,855964305210@c.us,direct_cus,airport pick up company,0,2025-08-18T08:25:45.000Z,Yes its correct. Thanks,0,,false,false,,0,0,0,0
+whatsapp-number-2,secondary,+923099351940,855964305210@c.us,direct_cus,airport pick up company,0,,,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,172958534373390@lid,direct_lid,electronicsstore.pk,0,2026-04-18T17:00:14.000Z,Review,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923024706638@c.us,direct_cus,ishfaqshahs Club,0,2026-04-21T07:53:45.000Z,Ok thank you so much Sir,0,,false,false,,0,0,0,0
 whatsapp-number-2,secondary,+923099351940,923034413720@c.us,direct_cus,waqasparro9 Beer,0,2026-04-12T15:40:31.000Z,OK bro,0,,false,false,,0,0,0,0

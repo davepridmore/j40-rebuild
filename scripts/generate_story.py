@@ -287,7 +287,7 @@ def render_story(config: dict, messages: list[dict], media_rows: list[dict], exp
     lines.append("## Notes")
     lines.append("")
     lines.append("- This draft only includes build-relevant messages from the supplied WhatsApp exports.")
-    lines.append("- The direct Akber chat was filtered to the March 2026 restoration discussion and adjacent build context.")
+    lines.append("- The direct Akbar chat was filtered to the March 2026 restoration discussion and adjacent build context.")
     lines.append("- Gmail / order-status evidence is not ingested yet. Add exported order emails later to tighten delivery tracking.")
     return "\n".join(lines).rstrip() + "\n"
 

@@ -513,15 +513,15 @@ def build_work_packages(
     packages = [
         WorkPackage(
             work_package_id="WP01",
-            title="Body Floor Rust Closure",
+            title="Body + Chassis Rust/Bracket Closure",
             lane="body_structure",
-            objective="Close floor/rust repairs and welding scope before sealing products.",
+            objective="Close floor/rust repairs, chassis prep, and the required bracket analysis/design/implementation/validation hold before sealing products.",
             depends_on="stripdown_cataloguing_complete",
-            linked_workstreams="body_chassis",
+            linked_workstreams="body_chassis|chassis_fixing",
             current_state="in_progress" if rust_photos >= 8 else "queued",
             evidence_signal=f"rust_assessment_photos={rust_photos}, stripdown_photos={stripdown_photos}",
             blocker_summary=f"{body_buy_now} body material rows still need buy execution.",
-            gate_to_close="Rust map signed off and repaired zones primed.",
+            gate_to_close="Rust map signed off, required chassis brackets analyzed/released/installed/validated, and repaired zones primed.",
             key_procurement_actions="Use received primer/prep/seam-sealer/cavity-wax stock and on-hand Raptor; track delivery of purchased masking tape/solvent-safe wipes; use on-hand grommets for temporary open-hole masking after fit/solvent check; no generic chassis-black or bed-lining duplicate buy.",
         ),
         WorkPackage(
@@ -652,6 +652,9 @@ def write_report(
     lines.append("")
     lines.append(
         f"- Close `WP01` + `WP03` in parallel: body rust closure and electrical baseline finalization are both active and should keep moving."
+    )
+    lines.append(
+        "- Hold final chassis primer/Raptor until the bracket work plan closes: analysis register, design release, radiator/battery/auxiliary/exhaust implementation, and validation photos."
     )
     lines.append(
         f"- Run `WP04` procurement now: {count_mechanical_buy_actions(procurement_rows)} mechanical rows still require buy execution."

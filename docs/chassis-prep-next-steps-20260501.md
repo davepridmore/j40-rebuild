@@ -10,6 +10,8 @@ Scope: May 1 chassis photos only, after wire brushing to date. This plan turns t
 
 The chassis is partly cleaned, but the photos still show remaining prep in the areas that matter most: rail edges, top flanges, lower lips, bracket roots, weld toes, body-mount pads, spring/shackle hangers, hard-line clips, front horns, steering-box area, and crossmember ends.
 
+May 8 WhatsApp evidence adds a separate pre-coating hold: complete the bracket analysis register, design release, fabrication/repair/install work, and validation photos before final primer/Raptor. Known first checks are radiator support bracket(s), battery tray/holder bracket(s), auxiliary line/harness/ground/exhaust tabs, and possible exhaust mock-up hanger points. Use [chassis-bracket-audit-20260508.md](chassis-bracket-audit-20260508.md) as the bracket closure sheet.
+
 The correct approach is not to strip every sound black coating to bare metal. Keep hard-bonded paint where it is solid, feather its edges, and focus effort on loose rust, pitting, seams, holes, brackets, and places where water or dirt can sit.
 
 ## Best Overall Approach
@@ -23,7 +25,8 @@ The correct approach is not to strip every sound black coating to bare metal. Ke
 7. Degrease only after the second brushing pass, otherwise oil and dust hide defects.
 8. Rinse with controlled pressure, dry fully, then inspect with bright light.
 9. Treat only remaining rust in pits/seams; do not apply converter to clean steel.
-10. Prime only after repair decisions and signoff photos are complete.
+10. Close the welded-bracket work plan before final primer/Raptor: analysis register, design release, implementation, and validation, especially radiator, battery holder, auxiliary tabs, and exhaust hanger/mock-up points.
+11. Prime only after repair decisions and signoff photos are complete.
 
 ## Priority Code
 
@@ -167,8 +170,9 @@ Use this pass before any wet cleaning.
    - body mount pads
    - rail lower edges
    - under hard-line clips
-3. Mark every defect with paint marker/tape.
-4. Take close photos before repair or coating.
+3. Mark every missing, broken, wire-tied, or non-baseline bracket/tab with paint marker/tape.
+4. Separate required baseline brackets from optional additions before welding.
+5. Take close photos before repair or coating.
 
 ### Pass 3 - Degrease And Rinse
 
@@ -227,6 +231,7 @@ Do not allow primer until each item is closed:
 | Body-mount pads and captive threads | Close-up after brushing; thread/sleeve/shim issues logged. |
 | Crossmember ends and lower rail edges | Probed and photographed after dry cleanup. |
 | Brake/fuel hard-line clips | Under-clip condition checked, not just visible outer faces. |
+| Welded bracket work plan | Missing/wire-tied bracket map closed; radiator support, battery holder, auxiliary tabs, and exhaust hanger/mock-up points have analysis, design, implementation, and validation evidence recorded before Raptor. |
 | Wet cleaning complete | Chassis fully dry; no water trapped in seams, holes, clips, or boxed areas. |
 | Rust treatment complete | Converter/Evapo-Rust residue removed; only stable metal remains. |
 | Materials ready | Wax/grease remover, zinc-rich 2K epoxy primer, seam sealer, on-hand U-POL/Raptor exposed top protection, HB Body U900 cavity wax cans, tape/wipes ordered, and on-hand grommets checked as temporary open-hole masking where suitable. |
@@ -241,8 +246,10 @@ Take these photos before primer:
 4. Front frame horns and bumper/winch brackets after brushing.
 5. Hard-line clips lifted or cleaned around, with contact area visible.
 6. Crossmember ends and lower rail lips.
-7. Any pitted area after treatment, before primer.
-8. A final full-length chassis overview after dry inspection.
+7. Radiator support bracket(s), battery tray/holder bracket(s), and any wire-tied or missing bracket locations.
+8. Exhaust hanger/mock-up points if the exhaust fabricator is involved before coating.
+9. Any pitted area after treatment, before primer.
+10. A final full-length chassis overview after dry inspection.
 
 ## Complete May 1 Chassis Evidence Set
 

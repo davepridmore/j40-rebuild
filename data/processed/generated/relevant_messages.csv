@@ -1,12 +1,12 @@
 message_id,source_name,timestamp,author,relevance_reason,keyword_hits,amount_count,attachment_count,text
-fj40-00004,Fj40,2026-03-11T21:13:13,Akber Khan,adjacent_cluster,,0,1,‎
-fj40-00005,Fj40,2026-03-11T21:13:26,Akber Khan,adjacent_cluster,,0,1,‎
-fj40-00006,Fj40,2026-03-11T21:26:51,David,keyword_or_amount,power steering|steering,0,0,"lets hope its still running by tomorrow then. do come over and have a go. As I was saying to Akber, its all pretty fine apart from the fact it steers a bit like a cruise ship. So I am interested in a power steering upgrade. Also interested in getting under the bonnet myself. ‎<This message was edited>"
+fj40-00004,Fj40,2026-03-11T21:13:13,Akbar Khan,adjacent_cluster,,0,1,‎
+fj40-00005,Fj40,2026-03-11T21:13:26,Akbar Khan,adjacent_cluster,,0,1,‎
+fj40-00006,Fj40,2026-03-11T21:26:51,David,keyword_or_amount,power steering|steering,0,0,"lets hope its still running by tomorrow then. do come over and have a go. As I was saying to Akbar, its all pretty fine apart from the fact it steers a bit like a cruise ship. So I am interested in a power steering upgrade. Also interested in getting under the bonnet myself. ‎<This message was edited>"
 fj40-00007,Fj40,2026-03-11T21:28:25,David,adjacent_cluster,,0,0,"I think there are definately components of a converstion like this, that maybe first time I would just have to be spectator!"
 fj40-00008,Fj40,2026-03-12T00:17:16,~ HM,adjacent_cluster,,0,0,Yes sir. Got it.
 fj40-00010,Fj40,2026-03-12T00:21:46,~ HM,keyword_or_amount,hood|steering,0,0,Sounds good. There may be issue with the current steering column. And once I introduce you to Nadir. You can have a good go with him under the hood. Infact I will add him in this group after msging him.
-fj40-00011,Fj40,2026-03-12T01:35:55,Akber Khan,adjacent_cluster,,0,0,All available. Atleast for sedans. I'm sure for this platform as well. Like Hassan said. Nadir.
-fj40-00012,Fj40,2026-03-12T01:36:10,Akber Khan,adjacent_cluster,,0,0,Working on cars ? That's my jaaaam. Love it. Let's goooo
+fj40-00011,Fj40,2026-03-12T01:35:55,Akbar Khan,adjacent_cluster,,0,0,All available. Atleast for sedans. I'm sure for this platform as well. Like Hassan said. Nadir.
+fj40-00012,Fj40,2026-03-12T01:36:10,Akbar Khan,adjacent_cluster,,0,0,Working on cars ? That's my jaaaam. Love it. Let's goooo
 fj40-00014,Fj40,2026-03-12T01:41:20,~ HM,keyword_or_amount,inspection|jeep,0,0,Guys meet each other please. @⁨David⁩ has bought the jeep and @⁨~nuic⁩ bro we will be using your expertise and services to fix it all up. Inspection can be done tomorrow (please share what time works for you) So that these guys can come for Inspection. Will then make a plan and then @⁨David⁩ can make a plan with us as to how to go about fixing the jeep in phases. Or otherwise.
 fj40-00023,Fj40,2026-03-12T12:22:23,~ HM,adjacent_cluster,,0,0,Are you a tax filer or a non filer?
 fj40-00024,Fj40,2026-03-12T12:33:28,Uk David,adjacent_cluster,,0,0,Filer
@@ -15,9 +15,9 @@ fj40-00026,Fj40,2026-03-12T13:16:17,~ HM,adjacent_cluster,,0,0,03214790502 Jaz
 fj40-00027,Fj40,2026-03-12T13:29:53,Uk David,adjacent_cluster,,0,0,On route. Bit late
 fj40-00033,Fj40,2026-03-13T01:04:10,David,adjacent_cluster,,0,0,almost worked out what all the knobs do 🙂
 fj40-00034,Fj40,2026-03-13T01:04:40,David,adjacent_cluster,,0,0,although I have the feeling i’ve been driving round with the high beams on
-fj40-00035,Fj40,2026-03-13T01:04:45,Akber Khan,keyword_or_amount,jeep,0,0,Are we still talking about the jeep :P
+fj40-00035,Fj40,2026-03-13T01:04:45,Akbar Khan,keyword_or_amount,jeep,0,0,Are we still talking about the jeep :P
 fj40-00036,Fj40,2026-03-13T01:04:54,David,adjacent_cluster,,0,0,"haha, yes that too"
-fj40-00037,Fj40,2026-03-13T01:05:06,Akber Khan,adjacent_cluster,,0,0,Good times
+fj40-00037,Fj40,2026-03-13T01:05:06,Akbar Khan,adjacent_cluster,,0,0,Good times
 fj40-00038,Fj40,2026-03-13T01:06:28,David,adjacent_cluster,,0,0,"on a separate subject, I just heard there is a drifting track about an hour away from Lahore"
 fj40-00039,Fj40,2026-03-13T02:00:27,Uk David,keyword_or_amount,jeep,0,0,Probably not for the jeep obviously!
 fj40-00040,Fj40,2026-03-13T02:01:11,Uk David,keyword_or_amount,engine,0,0,Anyway. Also there is quite a diesel smell. I think this is when the engine is not burning it all properly?
@@ -59,30 +59,30 @@ fj40-00088,Fj40,2026-03-15T13:36:37,Uk David,adjacent_cluster,,0,1,‎
 fj40-00089,Fj40,2026-03-15T13:36:48,Uk David,keyword_or_amount,filter|oil,0,0,We're not sure if the filter should be full of oil
 fj40-00090,Fj40,2026-03-15T15:30:00,~ HM,keyword_or_amount,excise|plates,0,0,First the seller has to get his biometric from the express excise center that there are. And plates they do not issue anymore. That you will have to get made. From any number plates vendor.
 fj40-00091,Fj40,2026-03-15T15:30:27,~ HM,adjacent_cluster,,0,0,I'm guessing this is sorted by now.
-fj40-00092,Fj40,2026-03-15T15:30:52,Akber Khan,keyword_or_amount,filter,0,0,Couldn't find the fuel filter . Tomorrow
-fj40-00093,Fj40,2026-03-15T15:30:58,Akber Khan,keyword_or_amount,engine|oil,0,0,Horrible engine oil situation
-fj40-00094,Fj40,2026-03-15T15:31:09,Akber Khan,keyword_or_amount,plates,0,0,Getting the usual replica plates
-fj40-00095,Fj40,2026-03-15T15:31:13,Akber Khan,adjacent_cluster,,0,0,Till then
-fj40-00096,Fj40,2026-03-15T15:31:34,Akber Khan,adjacent_cluster,,0,0,Now confirmed . Should be
+fj40-00092,Fj40,2026-03-15T15:30:52,Akbar Khan,keyword_or_amount,filter,0,0,Couldn't find the fuel filter . Tomorrow
+fj40-00093,Fj40,2026-03-15T15:30:58,Akbar Khan,keyword_or_amount,engine|oil,0,0,Horrible engine oil situation
+fj40-00094,Fj40,2026-03-15T15:31:09,Akbar Khan,keyword_or_amount,plates,0,0,Getting the usual replica plates
+fj40-00095,Fj40,2026-03-15T15:31:13,Akbar Khan,adjacent_cluster,,0,0,Till then
+fj40-00096,Fj40,2026-03-15T15:31:34,Akbar Khan,adjacent_cluster,,0,0,Now confirmed . Should be
 fj40-00098,Fj40,2026-03-15T15:35:50,~ HM,adjacent_cluster,,0,0,What is confirmed?
 fj40-00099,Fj40,2026-03-15T15:35:58,~ HM,adjacent_cluster,,0,0,And horrible bhi honi thi situation.
-fj40-00100,Fj40,2026-03-15T15:36:55,Akber Khan,keyword_or_amount,filter|oil,0,0,The air filter sits in an oil pool
-fj40-00101,Fj40,2026-03-15T15:37:24,Akber Khan,keyword_or_amount,oil,0,0,Hahaha.. yeah I've never seen oil like this. Goopy
+fj40-00100,Fj40,2026-03-15T15:36:55,Akbar Khan,keyword_or_amount,filter|oil,0,0,The air filter sits in an oil pool
+fj40-00101,Fj40,2026-03-15T15:37:24,Akbar Khan,keyword_or_amount,oil,0,0,Hahaha.. yeah I've never seen oil like this. Goopy
 fj40-00102,Fj40,2026-03-15T15:37:55,~ HM,adjacent_cluster,,0,0,@⁨~nuic⁩ what's the scene? You guys have to come to some conclusion?
 fj40-00103,Fj40,2026-03-15T15:40:24,Uk David,keyword_or_amount,body|strip|wiring,0,0,I'm thinking strip out and fully replace the wiring and evaluate the body condition as the first big step
 fj40-00104,Fj40,2026-03-15T15:41:36,~ HM,keyword_or_amount,engine,0,0,Not the engine? I mean yeah let's blow the engine. If it is running. And then replace it with a better engine which @⁨~nuic⁩ can recommend. Till the engine is running might aswell start with other things. But I'd strongly advise to have a conversation again with Nadir.
 fj40-00105,Fj40,2026-03-15T15:41:45,~ HM,adjacent_cluster,,0,0,Make a plan and then take it from there.
 fj40-00106,Fj40,2026-03-15T15:44:13,Uk David,keyword_or_amount,engine,1,0,Maybe its not the right call but the engine seems ok to me. Only 24k on the clock
-fj40-00107,Fj40,2026-03-15T15:44:38,Akber Khan,adjacent_cluster,,0,0,After heavy deliberation and meetings ... David has decided to replace the wipers. Only.
-fj40-00108,Fj40,2026-03-15T15:44:40,Akber Khan,adjacent_cluster,,0,0,Joking
+fj40-00107,Fj40,2026-03-15T15:44:38,Akbar Khan,adjacent_cluster,,0,0,After heavy deliberation and meetings ... David has decided to replace the wipers. Only.
+fj40-00108,Fj40,2026-03-15T15:44:40,Akbar Khan,adjacent_cluster,,0,0,Joking
 fj40-00109,Fj40,2026-03-15T15:45:06,Uk David,adjacent_cluster,,0,0,"Yeah, the wipers are fine. They do move occasionally"
 fj40-00110,Fj40,2026-03-15T15:46:23,~ HM,keyword_or_amount,,1,0,That 24k on the clock is a big fat lie! Lol
-fj40-00111,Fj40,2026-03-15T15:47:09,Akber Khan,keyword_or_amount,engine,0,0,It is. But engine runs fine. No issues. I say keep it as it is. When it blows if it does. Get to it after
+fj40-00111,Fj40,2026-03-15T15:47:09,Akbar Khan,keyword_or_amount,engine,0,0,It is. But engine runs fine. No issues. I say keep it as it is. When it blows if it does. Get to it after
 fj40-00112,Fj40,2026-03-15T15:47:29,~ HM,adjacent_cluster,,0,0,Agreed 100% till then get all other things sorted.
-fj40-00113,Fj40,2026-03-15T15:48:10,Akber Khan,adjacent_cluster,,0,0,Yup. Lots to do. Space it out.
+fj40-00113,Fj40,2026-03-15T15:48:10,Akbar Khan,adjacent_cluster,,0,0,Yup. Lots to do. Space it out.
 fj40-00114,Fj40,2026-03-15T15:48:53,~ HM,keyword_or_amount,ac|body|coolsun|electrical|rust|suspension|wiring,0,0,"Wiring, body work (as it has rust) cosmetic things here and there in the inteior and exterior. Other electrical thungs like lights etc. AC needs to be sorted (should go to coolsun for a quick diagnosis) Tyres seem fine. Suspension in depth @⁨David⁩ and @⁨~nuic⁩ can tell the exact situation diffs etc."
 fj40-00115,Fj40,2026-03-15T16:21:08,Uk David,keyword_or_amount,,1,0,Hmm. Yes. Probably 24k + an entire round trip of the clock before that
-fj40-00116,Fj40,2026-03-15T16:59:17,David,keyword_or_amount,plates,0,0,New plates attached. Thanks @⁨Akber Khan⁩ i assume some time this century the punjab gov will make me some authentic ones also
+fj40-00116,Fj40,2026-03-15T16:59:17,David,keyword_or_amount,plates,0,0,New plates attached. Thanks @⁨Akbar Khan⁩ i assume some time this century the punjab gov will make me some authentic ones also
 fj40-00117,Fj40,2026-03-15T17:00:34,~ HM,adjacent_cluster,,0,0,No. They won't. 🤣
 fj40-00118,Fj40,2026-03-15T17:00:43,David,keyword_or_amount,oil|wiring,0,0,"So, then apart from tomorrows oil change it seems to make sense to get straight in to get stripped down for re-wiring"
 fj40-00119,Fj40,2026-03-15T17:00:47,David,adjacent_cluster,,0,0,Been there
@@ -97,12 +97,12 @@ fj40-00127,Fj40,2026-03-15T17:10:05,~ HM,adjacent_cluster,,0,0,Lol
 fj40-00128,Fj40,2026-03-15T17:10:13,David,adjacent_cluster,,0,0,ah. at this time they ran out of metal
 fj40-00131,Fj40,2026-03-15T17:11:55,David,adjacent_cluster,,0,0,so its just DIY these days?
 fj40-00132,Fj40,2026-03-15T17:14:39,~ HM,adjacent_cluster,,0,0,Yes. That was in 2014 15 and 16 aswell.
-fj40-00133,Fj40,2026-03-15T17:51:33,David,keyword_or_amount,body|roof,0,0,"@⁨~nuic⁩ - did you say you can recommend someone for this? @⁨Akber Khan⁩ also suggested at the same time remove the roof, get that straight off for body work - water is currently accumulating in the channels it should run out from for example"
+fj40-00133,Fj40,2026-03-15T17:51:33,David,keyword_or_amount,body|roof,0,0,"@⁨~nuic⁩ - did you say you can recommend someone for this? @⁨Akbar Khan⁩ also suggested at the same time remove the roof, get that straight off for body work - water is currently accumulating in the channels it should run out from for example"
 fj40-00134,Fj40,2026-03-15T17:52:09,David,adjacent_cluster,,0,0,so we can get 2 things running in parallel
 fj40-00135,Fj40,2026-03-15T18:03:04,~ nuic,adjacent_cluster,,0,0,Damn so many msgs. Was on my way to isv
 fj40-00136,Fj40,2026-03-15T18:03:07,~ nuic,adjacent_cluster,,0,0,Isb
 fj40-00137,Fj40,2026-03-15T19:19:54,David,adjacent_cluster,,0,0,"no worries, we didn’t make that much progress yet!"
-fj40-00138,Fj40,2026-03-15T19:20:13,David,keyword_or_amount,aliexpress|wiring,0,0,Akber is recommending basically to get the wiring myself from AliExpress
+fj40-00138,Fj40,2026-03-15T19:20:13,David,keyword_or_amount,aliexpress|wiring,0,0,Akbar is recommending basically to get the wiring myself from AliExpress
 fj40-00139,Fj40,2026-03-15T19:20:38,David,keyword_or_amount,electrical,0,0,I’m almost tempted to do it myself (I do have some electrical engineering background)
 fj40-00140,Fj40,2026-03-15T19:20:51,David,keyword_or_amount,electrical|wiring,0,0,"[15/03/2026, 19:16:49] David: I’d be quite tempted to do the wiring myself (I did mention my year of electrical engineering at university), but at the same time the car sort of needs to be fully taken apart. The Corolla might have to get chucked into street parking for a bit"
 fj40-00141,Fj40,2026-03-15T19:17:46,David,adjacent_cluster,,0,0,which would mean brining welders/fixers to the house - not having all their garage amenities
@@ -113,12 +113,12 @@ fj40-00145,Fj40,2026-03-15T19:23:20,David,adjacent_cluster,,0,0,but its not that
 fj40-00146,Fj40,2026-03-15T19:23:25,David,keyword_or_amount,body,0,0,its the body work
 fj40-00147,Fj40,2026-03-15T19:23:38,David,adjacent_cluster,,0,0,to be done at the same time - I can’t drive it down to the the garage
 fj40-00148,Fj40,2026-03-15T19:23:55,~ nuic,keyword_or_amount,engine|wiring,0,0,Wiring from Ali express won't do it. Since its a 2h engine Nd you want the add ons
-fj40-00149,Fj40,2026-03-15T19:24:45,David,adjacent_cluster,,0,0,easily available here? Akbers main point was about quality of finish. but then that on me now
+fj40-00149,Fj40,2026-03-15T19:24:45,David,adjacent_cluster,,0,0,easily available here? Akbars main point was about quality of finish. but then that on me now
 fj40-00150,Fj40,2026-03-15T19:25:54,~ nuic,keyword_or_amount,wiring,0,0,Wiring will be custom made . New
-fj40-00151,Fj40,2026-03-15T19:26:42,Akber Khan,keyword_or_amount,wiring,0,0,As long as it's all pin to pin or new. No complaints here. Not much wiring going on in it anyways.
+fj40-00151,Fj40,2026-03-15T19:26:42,Akbar Khan,keyword_or_amount,wiring,0,0,As long as it's all pin to pin or new. No complaints here. Not much wiring going on in it anyways.
 fj40-00152,Fj40,2026-03-15T19:27:07,David,keyword_or_amount,wiring,0,0,"well, yes when I saw there was a kit with a wiring diagram"
 fj40-00153,Fj40,2026-03-15T19:27:23,David,keyword_or_amount,wire,0,0,"no issue, but where does it come from? is the wire quality ok?"
-fj40-00154,Fj40,2026-03-15T19:28:32,David,keyword_or_amount,power steering|steering,0,0,"and again. when its on my drive, stripped, un-usable. how do I get welding done. Akber just reminded me upgraded power steering"
+fj40-00154,Fj40,2026-03-15T19:28:32,David,keyword_or_amount,power steering|steering,0,0,"and again. when its on my drive, stripped, un-usable. how do I get welding done. Akbar just reminded me upgraded power steering"
 fj40-00155,Fj40,2026-03-15T19:30:54,~ nuic,adjacent_cluster,,0,0,Yeah grip grip
 fj40-00156,Fj40,2026-03-15T19:31:10,~ nuic,adjacent_cluster,,0,0,"Soldered ,heat shrinked"
 fj40-00157,Fj40,2026-03-15T19:31:58,David,keyword_or_amount,body|chassis,0,0,"I meant potentially serious work on the body/chassis, depending on whats found"
@@ -128,14 +128,14 @@ fj40-00160,Fj40,2026-03-15T19:34:05,~ nuic,adjacent_cluster,,0,1,‎
 fj40-00162,Fj40,2026-03-15T19:34:06,~ nuic,adjacent_cluster,,0,1,‎
 fj40-00163,Fj40,2026-03-15T19:34:06,~ nuic,adjacent_cluster,,0,1,‎
 fj40-00164,Fj40,2026-03-15T19:34:28,~ nuic,keyword_or_amount,body,0,0,Currently restoring two fjs . 1965 and 73. To original specs. These are being done in Islamabad. With my old body guy
-fj40-00165,Fj40,2026-03-15T19:34:39,Akber Khan,adjacent_cluster,,0,0,Looks good David.... Why didn't we buy this ?
+fj40-00165,Fj40,2026-03-15T19:34:39,Akbar Khan,adjacent_cluster,,0,0,Looks good David.... Why didn't we buy this ?
 fj40-00166,Fj40,2026-03-15T19:34:48,David,keyword_or_amount,wiring,0,0,"haha, yeah and i’m supposed to be re-wiring that"
 fj40-00167,Fj40,2026-03-15T19:35:09,David,adjacent_cluster,,0,0,"ah, read more of the messages"
 fj40-00168,Fj40,2026-03-15T19:35:21,David,adjacent_cluster,,0,0,yep. thats going deeper than I anticipate
 fj40-00169,Fj40,2026-03-15T19:36:00,David,keyword_or_amount,floor,0,0,but maybe we can see as much of the floor as that once we start to look!
 fj40-00170,Fj40,2026-03-15T19:37:04,David,keyword_or_amount,welder,0,0,"no, I mean I expect it to be some patching, etc. probably something a guy can come with a welder no a bike and do"
 fj40-00171,Fj40,2026-03-15T19:37:11,David,adjacent_cluster,,0,0,under my direct supervision
-fj40-00172,Fj40,2026-03-15T19:38:09,David,keyword_or_amount,strip|wire,0,0,"Akber is suggesting I strip, re-wire at home until its working again - then take to the garage for fixing"
+fj40-00172,Fj40,2026-03-15T19:38:09,David,keyword_or_amount,strip|wire,0,0,"Akbar is suggesting I strip, re-wire at home until its working again - then take to the garage for fixing"
 fj40-00173,Fj40,2026-03-15T19:38:23,David,adjacent_cluster,,0,0,bodywork
 fj40-00174,Fj40,2026-03-15T19:38:33,David,keyword_or_amount,wire,0,0,and finalise wire-fixing after that
 fj40-00175,Fj40,2026-03-15T19:39:46,David,keyword_or_amount,wiring,0,0,are they going to just fuck up the wiring again if I do that?
@@ -144,9 +144,9 @@ fj40-00177,Fj40,2026-03-15T19:42:16,David,adjacent_cluster,,0,0,"i mean, its not
 fj40-00178,Fj40,2026-03-15T20:28:25,David,adjacent_cluster,,0,1,my teams last cabling ‎
 fj40-00179,Fj40,2026-03-15T20:29:38,David,adjacent_cluster,,0,0,"slightly different genre, similar expectations"
 fj40-00180,Fj40,2026-03-15T20:32:53,David,keyword_or_amount,engine,0,1,Engine cleanliness?? ‎
-fj40-00181,Fj40,2026-03-15T20:35:26,Akber Khan,adjacent_cluster,,0,0,10/10. Bus take a go at it
+fj40-00181,Fj40,2026-03-15T20:35:26,Akbar Khan,adjacent_cluster,,0,0,10/10. Bus take a go at it
 fj40-00213,Fj40,2026-03-15T20:40:09,David,adjacent_cluster,,0,0,its a place?
-fj40-00214,Fj40,2026-03-15T20:40:40,Akber Khan,adjacent_cluster,,0,0,Blasting cabnits
+fj40-00214,Fj40,2026-03-15T20:40:40,Akbar Khan,adjacent_cluster,,0,0,Blasting cabnits
 fj40-00215,Fj40,2026-03-15T20:41:18,David,keyword_or_amount,paint,0,0,"well, we’ve been scraping paint off here and there on my one all day to get ideas 🙂"
 fj40-00216,Fj40,2026-03-15T20:44:31,~ nuic,adjacent_cluster,,0,0,Yes exactly
 fj40-00217,Fj40,2026-03-15T20:45:04,~ nuic,keyword_or_amount,body,0,0,It's just easier to let the body guys remove it
@@ -156,7 +156,7 @@ fj40-00222,Fj40,2026-03-15T20:57:05,David,adjacent_cluster,,0,0,"by post, bit by
 fj40-00223,Fj40,2026-03-15T20:57:07,David,adjacent_cluster,,0,0,a joke
 fj40-00224,Fj40,2026-03-15T21:00:11,David,keyword_or_amount,rust,0,0,to be clear - whats the best way to address all structural and rust issues as early as possible?
 fj40-00225,Fj40,2026-03-15T21:08:00,David,adjacent_cluster,,0,0,please dont say its this!
-fj40-00226,Fj40,2026-03-15T21:09:56,David,adjacent_cluster,,0,0,"Don’t mention this to Akbers sister, but my plan was to commandeer the car port and start de-constructing the car at the house, to its bare drivable bones"
+fj40-00226,Fj40,2026-03-15T21:09:56,David,adjacent_cluster,,0,0,"Don’t mention this to Akbars sister, but my plan was to commandeer the car port and start de-constructing the car at the house, to its bare drivable bones"
 fj40-00227,Fj40,2026-03-15T21:11:37,David,adjacent_cluster,,0,0,just as something that clearly seems to need to be done
 fj40-00228,Fj40,2026-03-15T21:13:48,David,adjacent_cluster,,0,0,but here you are saying don’t do that right?
 fj40-00229,Fj40,2026-03-15T21:15:19,David,keyword_or_amount,roof,0,0,"if they came and took the roof, back doors, other removable parts"
@@ -168,8 +168,8 @@ fj40-00234,Fj40,2026-03-15T21:30:30,David,keyword_or_amount,wiring,0,0,"but is t
 fj40-00235,Fj40,2026-03-16T14:12:57,~ HM,keyword_or_amount,body|electrical,0,0,"My two cents: Do the work at the workshop. Differentiate between what you need to DIY and what the pros need to do. Whether electrical, body or mechanical work."
 fj40-00236,Fj40,2026-03-16T15:31:03,~ HM,adjacent_cluster,,0,1,‎
 fj40-00237,Fj40,2026-03-16T15:31:04,~ HM,adjacent_cluster,,0,1,‎
-fj40-00244,Fj40,2026-03-16T16:04:57,Akber Khan,adjacent_cluster,,0,0,Always
-fj40-00245,Fj40,2026-03-16T16:05:08,Akber Khan,adjacent_cluster,,0,1,‎
+fj40-00244,Fj40,2026-03-16T16:04:57,Akbar Khan,adjacent_cluster,,0,0,Always
+fj40-00245,Fj40,2026-03-16T16:05:08,Akbar Khan,adjacent_cluster,,0,1,‎
 fj40-00246,Fj40,2026-03-16T17:08:41,David,keyword_or_amount,chassis|steering,0,0,My definite workshop list: Wheel lag - in fact I want to do a new more modern power-steering conversion Welding and fixing of main chassis (the bits that don’t easily come off) - In fact would be open to advice whether to take it off the frame and treat that also
 fj40-00247,Fj40,2026-03-16T17:09:31,David,keyword_or_amount,engine,0,0,"any other obvious ones?? And now the engine has been mentioned, i’m sort of intrigued what a replacement might look like (in type and cost), although still erring towards keeping this one for the moment ‎<This message was edited>"
 fj40-00248,Fj40,2026-03-16T17:11:03,David,keyword_or_amount,ac,0,0,"Electrician found the AC to be unplugged today, and now it appears to work, so good news there"
@@ -184,7 +184,7 @@ fj40-00257,Fj40,2026-03-16T18:04:48,David,keyword_or_amount,brake,0,0,Replace al
 fj40-00258,Fj40,2026-03-16T18:15:23,David,keyword_or_amount,suspension,0,1,just wondering. what would a full-spring suspension conversion cost? ‎
 fj40-00259,Fj40,2026-03-16T18:15:24,David,keyword_or_amount,suspension,0,1,just wondering. what would a full-spring suspension conversion cost? ‎
 fj40-00260,Fj40,2026-03-16T18:34:40,David,keyword_or_amount,engine,0,0,and can anyone tell me the exact current engine installed?
-fj40-00261,Fj40,2026-03-16T19:26:03,David,keyword_or_amount,door|roof|window,0,0,"and thinking about this - there is no point i think in me doing anything apart from stripping this car down to its basic (hopefully drivable, but presumably work-around able) base. Akbers guy can take each door, window, roof etc etc. we will receive all I am sure back with excellent quality"
+fj40-00261,Fj40,2026-03-16T19:26:03,David,keyword_or_amount,door|roof|window,0,0,"and thinking about this - there is no point i think in me doing anything apart from stripping this car down to its basic (hopefully drivable, but presumably work-around able) base. Akbars guy can take each door, window, roof etc etc. we will receive all I am sure back with excellent quality"
 fj40-00262,Fj40,2026-03-16T19:26:20,David,keyword_or_amount,chassis|strip,0,0,so the priority is to strip and get the main chassis into the workshop
 fj40-00263,Fj40,2026-03-16T19:27:38,David,keyword_or_amount,power steering|steering,0,0,"for: complete take apart, re-fresh and re-build of that part Power steering replacement bearings, axles, potentially something as financially unwise as full spring conversion"
 fj40-00264,Fj40,2026-03-16T19:28:23,David,keyword_or_amount,chassis,0,0,so the parts and the chassis can be worked on independently
@@ -206,386 +206,386 @@ fj40-00286,Fj40,2026-03-18T03:11:40,David,keyword_or_amount,bench grinder|grease
 fj40-00287,Fj40,2026-03-18T03:11:57,David,adjacent_cluster,,0,0,https://sehgalmotors.pk/products/maximus-under-seat-subwoofer-box-with-built-in-amplifier?srsltid=AfmBOookUL2cEtsLYHmBDdXmWAWf5uqrkK774dshriRbV8Ar2tb-bbXd&utm_source=chatgpt.com
 fj40-00288,Fj40,2026-03-18T03:12:32,David,keyword_or_amount,electrical|grommet|wire,0,0,"Product Price Quantity Total 100ft - 1/4 inch PET Expandable Braided Sleeving Black Ale. . . Rs. 7,414 1 Rs. 7,414 200pcs Rubber Grommet Electrical Wire Gasket Eyelet Ring Gas. . . Rs. 7,860"
 fj40-00289,Fj40,2026-03-18T03:14:46,David,adjacent_cluster,,0,0,"i’mm jut gonna buy all this shit anyway, then there all the in uslation etc"
-akber_khan-00314,Akber Khan,2026-03-11T20:41:06,David,adjacent_cluster,,0,0,everythings pretty good with the car - well in the dark anyway. finally ound out how to turn the ligts on
-akber_khan-00315,Akber Khan,2026-03-11T20:41:24,David,adjacent_cluster,,0,0,just steers a bit like a cruise ship
-akber_khan-00316,Akber Khan,2026-03-11T20:41:30,David,keyword_or_amount,fj40|steering,0,0,so I assume something like https://www.cityracerllc.com/products/electric-power-steering-for-toyota-land-cruiser-fj40
-akber_khan-00317,Akber Khan,2026-03-11T20:43:42,David,adjacent_cluster,,0,0,"ok, great. tomorrow is —— flexble. just give me a bit not notice so i will be there"
-akber_khan-00318,Akber Khan,2026-03-11T20:44:18,David,keyword_or_amount,android,0,0,probably an upgraded android screen thing thats a bit less anooyting
-akber_khan-00319,Akber Khan,2026-03-11T20:44:25,David,keyword_or_amount,ac,0,0,and need to fix the AC
-akber_khan-00320,Akber Khan,2026-03-11T20:44:46,David,adjacent_cluster,,0,0,everything else (until it falls apart) seems ok to me
-akber_khan-00321,Akber Khan,2026-03-11T20:45:34,David,keyword_or_amount,door,0,0,still have to work out how to load 3 people in the back seeing as one of the seats covers teht door
-akber_khan-00322,Akber Khan,2026-03-11T20:46:27,David,keyword_or_amount,door,0,0,can’t see shit out ht the wing mirror - its hits the door partition
-akber_khan-00323,Akber Khan,2026-03-11T20:47:07,David,adjacent_cluster,,0,0,"as I say i’m happy, but if you have any ideas about the above let me know"
-akber_khan-00324,Akber Khan,2026-03-11T20:50:49,David,keyword_or_amount,window,0,0,that window that needed re-doing
-akber_khan-00325,Akber Khan,2026-03-11T20:51:27,David,adjacent_cluster,,0,0,"a less complicated system if knobs would be nice, but I I think I worked them out now"
-akber_khan-00326,Akber Khan,2026-03-11T20:52:50,David,adjacent_cluster,,0,0,do you have a proper full set of car tools?
-akber_khan-00327,Akber Khan,2026-03-11T21:04:59,David,adjacent_cluster,,0,0,jumps out of gear accationally. probably me not jamming it in enough yet
-akber_khan-00333,Akber Khan,2026-03-11T21:08:24,David,adjacent_cluster,,0,0,"well, yes I would like to"
-akber_khan-00334,Akber Khan,2026-03-11T21:08:30,David,adjacent_cluster,,0,0,hence the question abtout tools
-akber_khan-00335,Akber Khan,2026-03-11T21:08:38,David,adjacent_cluster,,0,0,thats some speicialist tooling
-akber_khan-00336,Akber Khan,2026-03-11T21:08:46,David,keyword_or_amount,steering,0,0,for the eletrci steering
-akber_khan-00337,Akber Khan,2026-03-11T21:08:48,Akber Khan,adjacent_cluster,,0,0,Let's ! And this car is extremely modular and fun. Never done jeeps but basics are basics
-akber_khan-00338,Akber Khan,2026-03-11T21:08:58,Akber Khan,adjacent_cluster,,0,0,All available. All fun
-akber_khan-00339,Akber Khan,2026-03-11T21:09:09,David,adjacent_cluster,,0,0,picked it specially for that reason
-akber_khan-00343,Akber Khan,2026-03-11T21:09:43,Akber Khan,adjacent_cluster,,0,0,Tool sets at home. U name it.
-akber_khan-00344,Akber Khan,2026-03-11T21:11:41,Akber Khan,adjacent_cluster,,0,0,When is my first drive ????
-akber_khan-00345,Akber Khan,2026-03-11T21:14:25,David,adjacent_cluster,,0,0,any time you like. come over during sunliight tomorrow and we can both have a goof look over it
-akber_khan-00346,Akber Khan,2026-03-11T21:14:26,David,keyword_or_amount,battery|breaker bar|engine|j40|land cruiser|power steering|steering|welder|wire,0,0,"Converting a J40 to hydraulic power steering is not something you can realistically do from home with no tools. It’s a mechanical fabrication job involving cutting, drilling, and installing major steering components. The safest approach is either buying a full bolt-on kit or having a workshop do the fabrication. I’ll explain what the minimum realistic setup looks like. What a hydraulic conversion actually requires A J40 was designed with a manual steering box and bell-crank system, so power steering requires installing a completely different steering box and linkage. Core parts required: Steering components Power steering steering box (often from Land Cruiser 60/70 or Toyota Hilux) Pitman arm Drag link Modified steering shaft with U-joints Hydraulic system Power steering pump Pump mounting bracket Reservoir High-pressure hose Return hose Engine drive Double crank pulley Drive belt Frame mounting Steering box mounting plate Reinforcement plate Tools normally required At minimum: Basic tools socket set spanners jack + axle stands breaker bar Fabrication tools drill angle grinder welder (almost always required) Without these, the conversion is essentially impossible. Realistic options if you have no tools Option 1 — Buy a full conversion kit Some kits are designed to minimize fabrication. Example suppliers: Cruiser Corps Man-A-Fre BTB Products Cool Cruisers These typically include: steering box mounting plate pump hoses steering shaft Even with a kit you still need: drilling some cutting A garage can install it in 5–8 hours. Option 2 — Have a 4x4 workshop do it Best option if starting from nothing. Typical cost depending on parts: Parts: $600–1500 Labour: $300–600 In Pakistan the labour is usually much cheaper. Option 3 — Electric power steering column If you truly want minimal tools, EPS is the only realistic DIY approach. Steps are basically: Remove steering column Install EPS column motor unit Wire to battery Connect to steering box But even this usually requires: cutting the steering shaft welding or adapters If you want the easiest possible path The simplest solution for a J40 owner without tools is: Take it to a Land Cruiser specialist and install a Toyota 60-series power steering box conversion. This is the most common J40 upgrade worldwide. 💡 If you want, I can also show you: The easiest J40 power steering conversion ever designed (almost bolt-in) The cheapest conversion using Toyota Hilux parts The mistake that cracks the J40 frame during conversion Those three things save most people a lot of money and frustration."
-akber_khan-00347,Akber Khan,2026-03-11T21:15:39,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00348,Akber Khan,2026-03-11T21:15:53,David,keyword_or_amount,chassis|j40|land cruiser|plates|power steering|steering|weld|welder,0,0,"nd do bolt on kits exist to conver to haudralic? Yes — bolt-on kits do exist for converting a Land Cruiser J40 to hydraulic power steering, but there’s an important catch: 👉 Almost none are truly 100% bolt-on. They are usually “conversion kits” that reduce fabrication, but most still require some welding or drilling. Example hydraulic conversion kits for the J40 Complete Saginaw power steering kit A typical example is a Saginaw conversion kit like the one from Cruiser Solutions. It normally includes: power steering gearbox steering shaft pump pump bracket mounting plate pitman arm drag link high and low pressure hoses pulley and belt system These kits run roughly $1,100–$1,600 depending on completeness. Installation reality Even with a kit: Typical work required: Weld steering box mounting plate to frame Drill or cut hole in front crossmember Modify steering column Install pump bracket and pulley The steering box mount must be welded because it carries very high steering forces, and installers recommend a certified welder. So the kits are “semi-bolt-on”, not truly plug-and-play. Types of kits you’ll see There are basically three J40 conversion styles. 1️⃣ Saginaw steering conversion Most common worldwide. Uses: GM steering box GM pump Pros: very strong easy parts availability Cons: most fabrication 2️⃣ Toyota mini-truck box conversion Uses steering box from: 1979–1985 Toyota pickup / Hilux Pros: more compact more “Toyota” Cons: still some welding 3️⃣ FJ60 steering box conversion Uses steering from the 60-series Land Cruiser. Pros: extremely robust good steering feel popular with big tyres Cons: slightly more complex install The closest thing to “bolt-on” There are kits that provide all mounting plates and shafts, so you just install the steering box and pump. But even those still require: welding one mount drilling a crossmember There’s no true IKEA-style bolt-on hydraulic kit because the original J40 chassis was never designed for power steering. The real easiest path (most owners do this) Instead of buying a full kit: Most Land Cruiser builders simply install: **Toyota Hilux steering box Saginaw pump custom mount plate** This is cheaper and extremely reliable. ✅ Summary Option Difficulty True bolt-on hydraulic kit ❌ doesn’t really exist Conversion kit ⚠️ some welding required Custom Hilux/FJ60 swap ⚠️ moderate fabrication Electric power steering ✅ easiest install 💡 If you want, I can also show you: The easiest J40 power steering conversion ever done (very clever design) The Hilux parts list that makes the conversion extremely cheap The steering upgrade that makes a J40 drive like a modern 4×4 Those three things are what most serious Land Cruiser builders end up doing."
-akber_khan-00349,Akber Khan,2026-03-11T21:16:17,David,adjacent_cluster,,0,0,just investigating for myself reallly
-akber_khan-00350,Akber Khan,2026-03-11T21:16:17,Akber Khan,adjacent_cluster,,0,0,U need to meet this chap.
-akber_khan-00351,Akber Khan,2026-03-11T21:16:28,David,adjacent_cluster,,0,0,I have my own ideas about criteria
-akber_khan-00361,Akber Khan,2026-03-12T21:18:25,David,adjacent_cluster,,0,0,Yeah good. Very helpful chat with your chap earlier and some clear ideas on priorities. Just drove down to old city for the conpany dinner
-akber_khan-00362,Akber Khan,2026-03-12T21:18:47,Akber Khan,adjacent_cluster,,0,0,Fantastic !
-akber_khan-00363,Akber Khan,2026-03-12T21:18:50,Akber Khan,adjacent_cluster,,0,0,Enjoy
-akber_khan-00364,Akber Khan,2026-03-12T21:19:38,David,keyword_or_amount,ac|steering,0,0,"Rewire, fix the AC, fix up the steering rack a bit to make steering a bit sharper"
-akber_khan-00365,Akber Khan,2026-03-12T21:20:15,Akber Khan,adjacent_cluster,,0,0,You'll love this. So glad
-akber_khan-00367,Akber Khan,2026-03-12T21:43:47,David,adjacent_cluster,,0,0,"The judge is Naveed Iqbal Tarar @ Model Town Courts, Case No: 48560/2022, Title: Nabeel Saeed etc. versus Public at large etc."
-akber_khan-00390,Akber Khan,2026-03-15T11:46:41,David,adjacent_cluster,,0,0,Was thinking a nice set where in can see they all get replaced every time
-akber_khan-00391,Akber Khan,2026-03-15T11:46:45,Akber Khan,adjacent_cluster,,0,0,Quality issues here. I got most of my stuff online there is this store called total. Very decent let me share the link
-akber_khan-00392,Akber Khan,2026-03-15T11:47:02,David,adjacent_cluster,,0,0,Thanks
-akber_khan-00393,Akber Khan,2026-03-15T11:47:16,Akber Khan,keyword_or_amount,toolsmart,0,0,https://www.toolsmart.pk/collections/total-tools
-akber_khan-00394,Akber Khan,2026-03-15T11:47:25,Akber Khan,adjacent_cluster,,0,0,These guys have been by go to
-akber_khan-00395,Akber Khan,2026-03-15T11:47:35,David,keyword_or_amount,grease gun|torque wrench,0,0,Grease gun? Torque wrench?
-akber_khan-00396,Akber Khan,2026-03-15T11:48:04,David,keyword_or_amount,breaker bar,0,0,Breaker bar?
-akber_khan-00397,Akber Khan,2026-03-15T11:49:19,Akber Khan,keyword_or_amount,grease gun|rust,0,0,Sure. In ur case u might need grease gun.. For example I've been pretty heavily trying to find stuff like rust reformers and good products
-akber_khan-00398,Akber Khan,2026-03-15T11:49:35,Akber Khan,keyword_or_amount,rust,0,0,For which this guy was / is my go to. Mostly Rust-Oleum products
-akber_khan-00399,Akber Khan,2026-03-15T11:49:45,Akber Khan,adjacent_cluster,,0,0,Stuff people don't use here because it's expensive
-akber_khan-00400,Akber Khan,2026-03-15T11:49:49,Akber Khan,adjacent_cluster,,0,0,Under costings etc
-akber_khan-00401,Akber Khan,2026-03-15T11:50:53,David,adjacent_cluster,,0,0,Hmm. By the time we get to that its likely to be welding time and in the shop
-akber_khan-00402,Akber Khan,2026-03-15T11:51:26,David,keyword_or_amount,weld,0,0,Never could weld very well.
-akber_khan-00403,Akber Khan,2026-03-15T11:51:33,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00404,Akber Khan,2026-03-15T11:51:33,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00405,Akber Khan,2026-03-15T11:51:33,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00413,Akber Khan,2026-03-15T11:52:49,Akber Khan,adjacent_cluster,,0,0,Arc welding. Mostly guys doing SS manifolds and stuff like that
-akber_khan-00414,Akber Khan,2026-03-15T11:53:15,Akber Khan,adjacent_cluster,,0,1,VHT & Duplicolor New.pdf • ‎10 pages ‎
-akber_khan-00415,Akber Khan,2026-03-15T11:53:15,Akber Khan,adjacent_cluster,,0,1,SprayOn USA.pdf • ‎26 pages ‎
-akber_khan-00416,Akber Khan,2026-03-15T11:53:58,David,keyword_or_amount,strip,0,0,Well your mate recommended to strip it all out and find the holes and rough patches early on. Something a bit more significant than these
-akber_khan-00417,Akber Khan,2026-03-15T11:54:44,Akber Khan,adjacent_cluster,,0,0,Nadir ?
-akber_khan-00418,Akber Khan,2026-03-15T11:54:50,David,adjacent_cluster,,0,0,Yes
-akber_khan-00419,Akber Khan,2026-03-15T11:54:59,Akber Khan,adjacent_cluster,,0,0,He's done these cars to perfection from what I know. So I reckon he knows best
-akber_khan-00422,Akber Khan,2026-03-15T11:55:22,Akber Khan,adjacent_cluster,,0,0,I would have to agree with him then
-akber_khan-00423,Akber Khan,2026-03-15T11:55:53,Akber Khan,adjacent_cluster,,0,0,Yup. Once everything is out. Depending on the game plan. That's the difference between a great respiration and an average one
-akber_khan-00424,Akber Khan,2026-03-15T11:56:23,Akber Khan,adjacent_cluster,,0,0,I used to spend hours in the workshop just polishing. Cleaning. Oiling. Crimping stuff like that for months
-akber_khan-00425,Akber Khan,2026-03-15T11:56:49,Akber Khan,keyword_or_amount,wire,0,0,Wire wheeling every single thing
-akber_khan-00426,Akber Khan,2026-03-15T11:57:00,Akber Khan,adjacent_cluster,,0,0,Zinc coating bolts and stuff
-akber_khan-00427,Akber Khan,2026-03-15T11:57:14,David,adjacent_cluster,,0,0,More likely to be patching and drilling out stuck bolts at this early point i feel
-akber_khan-00428,Akber Khan,2026-03-15T11:57:56,Akber Khan,keyword_or_amount,paint|primer|rust|weld,0,0,Perhaps. It's got it's points of rust etc. the correct way of course would be to open it up. Clean it up. Weld through primer. Weld. Paint
-akber_khan-00429,Akber Khan,2026-03-15T11:58:01,David,keyword_or_amount,body,0,0,No better time to make the body sound
-akber_khan-00430,Akber Khan,2026-03-15T11:58:27,Akber Khan,keyword_or_amount,sound dampening,0,0,Oh yes. On that note. Sound dampening sheets. Makes a world of a difference. Specially in ur application
-akber_khan-00431,Akber Khan,2026-03-15T11:59:01,Akber Khan,keyword_or_amount,roof,0,1,‎
-akber_khan-00432,Akber Khan,2026-03-15T11:59:48,Akber Khan,adjacent_cluster,,0,0,This guy is one of the best for interiors. Total. Carpets. Roofs u name it. Customize .. did the black car with him very neat work. Expensive but nearest to OE I've seen
-akber_khan-00433,Akber Khan,2026-03-15T12:00:44,Akber Khan,adjacent_cluster,,0,0,Nadir can probably help source u the side seats you wanted. Upholstery etc. This was my guy. Nadir might have his own. His seemed pretty neat too from the pics
-akber_khan-00434,Akber Khan,2026-03-15T12:04:20,David,keyword_or_amount,body,0,0,"Sure. That seems some way away right now. Ideally someone that can do the electrics (3 days apparently), but also while its all stripped out for that, identify any serious body work needing doing, and fix it whilst its already quite taken apart"
-akber_khan-00435,Akber Khan,2026-03-15T12:04:21,Akber Khan,adjacent_cluster,,0,1,Also keep an eye out with these import houses. Real stuff. Great prices. Haven't bought tools from them yet but other stuff. ‎
-akber_khan-00436,Akber Khan,2026-03-15T12:04:22,Akber Khan,adjacent_cluster,,0,1,Also keep an eye out with these import houses. Real stuff. Great prices. Haven't bought tools from them yet but other stuff. ‎
-akber_khan-00437,Akber Khan,2026-03-15T12:05:45,Akber Khan,keyword_or_amount,wiring,0,0,Makes sense. Wiring is always the number one fuck up for all old cars here. I stripped and replaced most looms of mine also because people had cut sliced and bastardized most of them down to voltage drops ... And or just pure age. Crackling. Grounding issues
-akber_khan-00438,Akber Khan,2026-03-15T12:06:06,David,adjacent_cluster,,0,0,Yeah. Full reset on that seems wise
-akber_khan-00439,Akber Khan,2026-03-15T12:06:11,Akber Khan,adjacent_cluster,,0,0,The white car for example had idle issues. For a year before I found a bad fucking ground
-akber_khan-00440,Akber Khan,2026-03-15T12:06:35,David,keyword_or_amount,body,0,0,And its the best opportunity probably to check the body
-akber_khan-00441,Akber Khan,2026-03-15T12:06:38,Akber Khan,adjacent_cluster,,0,0,I would. And it seems much easier on ur car. Why not. Broken connectors all that
-akber_khan-00442,Akber Khan,2026-03-15T12:07:05,David,adjacent_cluster,,0,0,"Exactly, its not exactly formula e"
-akber_khan-00443,Akber Khan,2026-03-15T12:07:08,Akber Khan,keyword_or_amount,engine|harness|jeep,0,0,Agreed. I mean. Just two sets really. Engine harness and accessories across the jeep
-akber_khan-00444,Akber Khan,2026-03-15T12:07:26,Akber Khan,adjacent_cluster,,0,0,3 days also makes sense
-akber_khan-00445,Akber Khan,2026-03-15T12:09:12,David,keyword_or_amount,order,0,0,Assuming it makes sense in this order though all fluids need replacement
-akber_khan-00446,Akber Khan,2026-03-15T12:09:40,Akber Khan,adjacent_cluster,,0,0,I never worked around a detailed plan. I just saw something fucked I didn't like and I'd go for it.. brackets. Coatings . Stuff like that. Broken stuff.
-akber_khan-00447,Akber Khan,2026-03-15T12:10:18,David,keyword_or_amount,oil,0,0,I could probably manage to not fuck up an oil change too much
-akber_khan-00448,Akber Khan,2026-03-15T12:10:49,Akber Khan,keyword_or_amount,flush,0,0,Yeah. The usual sequence... See if they are currently okay. If so.. check for leaks in all relevant places. If u find any. Resolve. Test again. Gaskets whatever. Once okay... Clean up the bay. Watch again. Keep cardboards under the car to triple check. Then flush. Replace. Service. Enjoy !
-akber_khan-00449,Akber Khan,2026-03-15T12:11:37,Akber Khan,adjacent_cluster,,0,0,You won't. Super easy... Just don't imagine u or anyone else wanting to do it in our summers . That's another thing. Pure torture in summers. So move fast I reckon.
-akber_khan-00450,Akber Khan,2026-03-15T12:12:47,David,keyword_or_amount,ac,0,0,"Hmm, speaking of summer. The AC"
-akber_khan-00451,Akber Khan,2026-03-15T12:12:52,Akber Khan,keyword_or_amount,electrical|heat shrink|wiring,0,0,When they do wiring here. They typically don't use imported stuff like the electrical tape they use... It's just electricians tape. Buy the real stuff and ask them to use that.... Broken connections are usually just sliced rather than soder or spade connectors and heat shrink.. buy that stuff and tell them to use it. No exceptions
-akber_khan-00452,Akber Khan,2026-03-15T12:13:04,Akber Khan,adjacent_cluster,,0,0,I got the best guy. Childhood friend
-akber_khan-00453,Akber Khan,2026-03-15T12:13:18,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00454,Akber Khan,2026-03-15T12:14:09,Akber Khan,keyword_or_amount,daraz,0,0,Oh and don't underestimate daraz.. I found a lot of stuff there for in from china.
-akber_khan-00455,Akber Khan,2026-03-15T12:14:32,Akber Khan,keyword_or_amount,order,0,0,Not that china is some bench mark. Let me give some examples. Order now. Best to have them at home
-akber_khan-00456,Akber Khan,2026-03-15T12:15:16,Akber Khan,keyword_or_amount,daraz|electrical|harness|loom|wiring,0,0,15 Meter 9/15/19/25MM Heat-resistant Adhesive Cloth Fabric Tape For Automotive Cable Tape Harness Wiring Loom Electrical Heat Tape | https://s.daraz.pk/s.1JGrj
-akber_khan-00457,Akber Khan,2026-03-15T12:15:48,David,adjacent_cluster,,0,0,"Yeah, its not fun to work with bad tools"
-akber_khan-00459,Akber Khan,2026-03-15T12:17:54,Akber Khan,keyword_or_amount,connector|daraz|electrical|wire,0,0,2.8mm 2/3/4/6/9 pin Automotive 2.8 Electrical wire Connector Male Female cable terminal plug Kits Motorcycle ebike car | https://s.daraz.pk/s.1JGtu
-akber_khan-00460,Akber Khan,2026-03-15T12:18:20,David,adjacent_cluster,,0,0,Maybe i'll just go and rip out the interior so i can get an idea of the damage
-akber_khan-00461,Akber Khan,2026-03-15T12:18:44,Akber Khan,adjacent_cluster,,0,0,Well the rain has stopped. Why don't u bring it over
-akber_khan-00462,Akber Khan,2026-03-15T12:19:03,David,adjacent_cluster,,0,0,Sure. Lets have a look
-akber_khan-00464,Akber Khan,2026-03-15T12:19:39,Akber Khan,adjacent_cluster,,0,1,Just random stuff like this. Makes such a difference. They don't use stuff like this here... Cut... Twist ... Tape. Fuck that ‎
-akber_khan-00465,Akber Khan,2026-03-15T12:21:55,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00466,Akber Khan,2026-03-15T12:21:56,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00467,Akber Khan,2026-03-15T12:22:24,Akber Khan,keyword_or_amount,daraz,0,0,I think u get the idea. Daraz has been my best friend. There are better qualities there. Just need to explore.
-akber_khan-00468,Akber Khan,2026-03-15T12:23:58,Akber Khan,keyword_or_amount,,1,1,Not bad. Saw the same thing being sold for 46k a while back. But not on this site / import ‎
-akber_khan-00469,Akber Khan,2026-03-15T12:23:59,Akber Khan,keyword_or_amount,,1,1,Not bad. Saw the same thing being sold for 46k a while back. But not on this site / import ‎
-akber_khan-00470,Akber Khan,2026-03-15T12:24:06,Akber Khan,adjacent_cluster,,0,0,Not much in to power tools myself though
-akber_khan-00471,Akber Khan,2026-03-15T16:22:24,Akber Khan,adjacent_cluster,,0,0,https://youtu.be/9EM_sBBFZ1c?si=Hvy_CNzuVVu_Lpoc
-akber_khan-00472,Akber Khan,2026-03-15T16:22:40,Akber Khan,keyword_or_amount,wiring,0,0,"Tons of restorations online. And wiring diagrams and mechanical [15/03/2026, 16:27:14] Akber Khan:"
-akber_khan-00473,Akber Khan,2026-03-15T16:27:15,Akber Khan,adjacent_cluster,,0,1,Those doors on the side are foot vents... What do u know ‎
-akber_khan-00474,Akber Khan,2026-03-15T16:27:16,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00475,Akber Khan,2026-03-15T16:27:17,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00476,Akber Khan,2026-03-15T16:27:18,Akber Khan,adjacent_cluster,,0,1,Those doors on the side are foot vents... What do u know ‎
-akber_khan-00477,Akber Khan,2026-03-15T16:28:17,Akber Khan,keyword_or_amount,speaker,0,1,Yup. Speaker was given preference over the fuse box mounting hahaha ‎
-akber_khan-00478,Akber Khan,2026-03-15T16:28:19,Akber Khan,keyword_or_amount,speaker,0,1,Yup. Speaker was given preference over the fuse box mounting hahaha ‎
-akber_khan-00479,Akber Khan,2026-03-15T16:29:56,Akber Khan,keyword_or_amount,body|rust,0,0,Apparently they put rubber lining between all metal parts / body parts for noise and squeek and rust prevention
-akber_khan-00480,Akber Khan,2026-03-15T17:03:06,David,adjacent_cluster,,0,0,what? I stick my feet out of them?
-akber_khan-00481,Akber Khan,2026-03-15T17:03:57,David,adjacent_cluster,,0,0,yeah. I have a few hours to spend watching those I think
-akber_khan-00482,Akber Khan,2026-03-15T17:04:38,David,keyword_or_amount,wiring,0,0,"yeah. best first step - rip out all wiring, all crappy half-arsed sound-proofing"
-akber_khan-00483,Akber Khan,2026-03-15T17:05:27,David,adjacent_cluster,,0,0,yep. and lots of rubber when it gets put back together. just need to find all the right shaped bits
-akber_khan-00484,Akber Khan,2026-03-15T18:19:40,David,adjacent_cluster,,0,1,Not the same mark but ‎
-akber_khan-00485,Akber Khan,2026-03-15T18:21:44,David,keyword_or_amount,order,0,0,"damn, If I have to order all of this its on the critical path"
-akber_khan-00486,Akber Khan,2026-03-15T18:22:02,David,adjacent_cluster,,0,0,doesn’t it take ages to come from china?
-akber_khan-00487,Akber Khan,2026-03-15T18:22:58,David,adjacent_cluster,,0,0,"oh, its quite quick"
-akber_khan-00488,Akber Khan,2026-03-15T18:25:46,David,adjacent_cluster,,0,0,god. but what is a full set. maybe chatGPT can generate it for me
-akber_khan-00489,Akber Khan,2026-03-15T18:28:03,David,keyword_or_amount,battery|body|brake|cable sleeve|chassis|connector|crimp|daraz|dash|electrical|engine|floor|grommet|harness|heat shrink|j40|land cruiser|led|loom|number plate|oil|order|wire|wiring,9,0,"Good — if you want to completely re-wire a 1978 Toyota Land Cruiser J40, I’ll give you three things: The exact Daraz shopping list (everything needed) The ideal modern wiring architecture for a J40 The fuse box layout + wiring plan This is essentially the same method professional restorers use for old Land Cruisers. 1️⃣ The Core Re-Wiring Kit (Buy First) Universal 21‑Circuit Automotive Wiring Harness Kit Price not available • Go to merchant Universal Extra‑Long 21‑Circuit Car Wiring Harness Price not available • Go to merchant 21‑Circuit Hot Rod Wiring Harness Kit Price not available • Go to merchant Universal 21‑Circuit Vehicle Electrical Wiring Kit Price not available • Go to merchant A 21-circuit harness kit is ideal for a classic 4x4. Typical circuits included: headlights brake lights ignition coil horn turn signals gauges wipers radio dome light backup lights fuel pump accessories These harnesses are colour-coded and labelled to simplify installation. 2️⃣ Everything Else You Must Buy (Daraz List) Search these exact items on Daraz. Automotive Wire Kit Buy stranded copper automotive wire. Recommended gauges: Gauge Use 4 AWG battery cables 10 AWG alternator / main power 12 AWG headlights 14 AWG ignition 16 AWG accessories 18 AWG gauges Automotive wiring uses the AWG system where lower numbers mean thicker wire capable of carrying more current. Search: automotive primary wire kit 12v car wire roll stranded copper automotive wire Connectors Kit Search: automotive electrical connector kit crimp terminal kit ring terminal assortment bullet connector kit You will need: ring terminals spade connectors bullet connectors heat shrink solder sleeves Wire Protection Search: split wire loom tubing braided cable sleeve rubber firewall grommets Sizes: 6mm 10mm 16mm 25mm Fuse and Relay System Search: 12 way blade fuse box 12v relay with socket relay block automotive Minimum relays: headlights horn auxiliary lights radiator fan accessories Battery and Starter Cables Search: 4 gauge battery cable kit heavy duty battery terminals starter cable automotive Ground Straps Classic Land Cruisers rely heavily on chassis ground. Search: braided ground strap engine ground cable Minimum grounds: battery → chassis engine → frame body → frame Lighting Connectors Search: H4 headlight connector indicator bulb socket tail light socket Tools (if doing it yourself) Search: ratcheting crimp tool wire stripper heat gun multimeter soldering iron 3️⃣ Ideal Modern Wiring Architecture for a J40 A good wiring system splits the truck into four harness sections. 1️⃣ Engine Harness Runs to: starter alternator ignition coil temperature sender oil pressure sender electric fan 2️⃣ Front Lighting Harness Runs to: headlights indicators parking lights horn 3️⃣ Dash Harness Runs to: ignition switch gauges heater fan wipers radio switches 4️⃣ Rear Harness Runs to: tail lights brake lights reverse lights fuel sender number plate light A wiring harness bundles these cables together so they are protected from vibration, abrasion, and moisture. 4️⃣ Ideal Fuse Box Layout Mount the fuse box under the dashboard. Suggested layout: Fuse Circuit 1 ignition 2 headlights 3 tail lights 4 indicators 5 horn 6 wipers 7 heater 8 gauges 9 radio 10 reverse lights 11 accessories 12 spare 5️⃣ Headlight Relay Upgrade (Important) Old Land Cruisers ran headlights directly through the switch. Upgrade: battery ↓ relay ↓ headlights Benefits: brighter lights longer switch life less voltage drop 6️⃣ Where to Route Wires in a J40 Typical routing: Engine bay → firewall grommet → fuse box under dash Rear harness: Dash → along driver side floor → rear lights 7️⃣ Estimated Cost in Pakistan Item PKR Harness kit 20k – 40k Wire 6k Connectors 4k Fuse / relay 5k Loom 3k Tools 8k Total: 45k – 70k PKR 8️⃣ Pro Tips for a J40 Rewire Do these while you're at it: upgrade headlights to H4 add USB charger add aux fuse block add winch wiring add LED light bar relay This makes the truck far more usable. ✅ If you want, I can also show you: 1️⃣ The full wiring diagram for a J40 (clean modern version) 2️⃣ The easiest way to wire a Toyota 2F engine 3️⃣ The exact Daraz order links for everything 4️⃣ The most common wiring mistakes people make on Land Cruisers These will save you days of work and a lot of headaches."
-akber_khan-00490,Akber Khan,2026-03-15T18:29:51,David,keyword_or_amount,aliexpress|harness|wiring,0,0,https://www.aliexpress.com/w/wholesale-21-Circuit-Wiring-Harness.html?spm=a2g0o.detail.search.0
-akber_khan-00491,Akber Khan,2026-03-15T18:31:28,David,keyword_or_amount,aliexpress,2,0,"= https://www.aliexpress.com/item/1005005648187594.html?spm=a2g0o.productlist.main.2.2da3WMVZWMVZay&algo_pvid=1d9ac62e-054f-4963-81a1-4cb070d2ed3f&algo_exp_id=1d9ac62e-054f-4963-81a1-4cb070d2ed3f-1&pdp_ext_f=%7B%22order%22%3A%223%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21PKR%2172615.47%2143569.91%21%21%21231.38%21138.83%21%4021010c9a17735813780056394e3fae%2112000033877562837%21sea%21PK%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A4febc4d%3Bm03_new_user%3A-29895&curPageLogUid=GvroTKlKyFtn&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005005648187594%7C_p_origin_prod%3A PKR43,570"
-akber_khan-00492,Akber Khan,2026-03-15T18:32:25,David,keyword_or_amount,aliexpress,1,0,https://www.aliexpress.com/item/1005006982044511.html?spm=a2g0o.productlist.main.4.6cf9BXndBXnd6a&algo_pvid=440f523a-1c5c-4883-91bb-396bf5891e58&algo_exp_id=440f523a-1c5c-4883-91bb-396bf5891e58-3&pdp_ext_f=%7B%22order%22%3A%221%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21PKR%2140773.63%2134248.97%21%21%21129.92%21109.13%21%40213ba0c517735815208468361e2c03%2112000038931131528%21sea%21PK%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A4febc4d%3Bm03_new_user%3A-29895&curPageLogUid=1qkAa8YMfGhW&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005006982044511%7C_p_origin_prod%3A ‎<This message was edited>
-akber_khan-00493,Akber Khan,2026-03-15T18:32:52,David,keyword_or_amount,harness|wiring,1,0,"wiring harness PKR34,249"
-akber_khan-00494,Akber Khan,2026-03-15T18:34:28,David,keyword_or_amount,aliexpress|wiring,2,0,"https://www.aliexpress.com/item/1005008588724254.html?spm=a2g0o.productlist.main.6.23c6FTDCFTDCV0&algo_pvid=6ce191d3-62c0-4729-8c7e-fe8888a769c8&algo_exp_id=6ce191d3-62c0-4729-8c7e-fe8888a769c8-5&pdp_ext_f=%7B%22order%22%3A%2210%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21PKR%2137346.53%2128009.90%21%21%21119.00%2189.25%21%402101246417735816012858256e0bf7%2112000045853258888%21sea%21PK%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A4febc4d%3Bm03_new_user%3A-29895&curPageLogUid=KZlXM31pXvUn&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005008588724254%7C_p_origin_prod%3A hot rod wiring? PKR28,010 ‎<This message was edited>"
-akber_khan-00495,Akber Khan,2026-03-15T18:35:48,David,keyword_or_amount,aliexpress|electrical|wiring,2,0,"https://www.aliexpress.com/item/1005005648187594.html?spm=a2g0o.productlist.main.4.4f53QpbnQpbnMr&algo_pvid=33ffc506-d482-417b-b87f-6a6cadb9e6dd&algo_exp_id=33ffc506-d482-417b-b87f-6a6cadb9e6dd-3&pdp_ext_f=%7B%22order%22%3A%223%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21PKR%2172615.47%2143569.91%21%21%21231.38%21138.83%21%402101529317735816973923012e45e3%2112000033877562837%21sea%21PK%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A4febc4d%3Bm03_new_user%3A-29895&curPageLogUid=F96spRL67Cpt&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005005648187594%7C_p_origin_prod%3A Universal 21‑Circuit Vehicle Electrical Wiring Kit - PKR43,570"
-akber_khan-00496,Akber Khan,2026-03-15T19:11:37,David,keyword_or_amount,harness|wiring,0,0,"hmm. i’m getting lost in this. now its saying I can get 70% of this from a “Universal 12-Circuit Wiring Harness Kit"""
-akber_khan-00497,Akber Khan,2026-03-15T19:12:00,David,keyword_or_amount,battery|brake|connector|cover|electrical|fj40|harness|j40|loom|wire|wiring,0,0,"What this kit already includes A universal wiring harness like this normally includes: pre-wired 12-circuit fuse block labelled wires for each circuit horn relay headlight wiring turn signal wiring alternator plug ignition switch connectors hazard flasher headlight dimmer connector These kits are designed for classic cars, hot rods, trucks, and custom vehicles and cover the main circuits such as ignition, lights, gauges, horn, wipers, etc. Why this is ideal for your 1978 J40 The FJ40 electrical system is simple and fits comfortably within 10–14 circuits, including: ignition headlights brake lights tail lights indicators horn wipers gauges heater fan radio reverse lights So a 12-circuit harness usually covers everything needed for the truck. What you still add to the cart Add these extra items alongside the harness: 4 AWG battery cable (starter cable) 6 AWG cable (alternator charge wire) automotive connector kit split loom tubing Those are cheap and complete the install."
-akber_khan-00498,Akber Khan,2026-03-15T19:16:49,David,keyword_or_amount,electrical|wiring,0,0,"I’d be quite tempted to do the wiring myself (I did mention my year of electrical engineering at university), but at the same time the car sort of needs to be fully taken apart. The Corolla might have to get chucked into street parking for a bit"
-akber_khan-00499,Akber Khan,2026-03-15T19:17:45,David,adjacent_cluster,,0,0,which would mean brining welders/fixers to the house - not having all their garage amenities
-akber_khan-00500,Akber Khan,2026-03-15T19:22:33,Akber Khan,adjacent_cluster,,0,0,Yo. Sorry was away from the phone
-akber_khan-00501,Akber Khan,2026-03-15T19:22:57,David,adjacent_cluster,,0,0,"oh, don’t worry, i’ll be chucking you random shit like this at all times i am sure"
-akber_khan-00502,Akber Khan,2026-03-15T19:23:48,Akber Khan,keyword_or_amount,steering,0,0,You want an electric steering. Rids of half the components also
-akber_khan-00503,Akber Khan,2026-03-15T19:24:53,Akber Khan,adjacent_cluster,,0,0,Interesting finds... But before we get into it. Me personally. I'd check Peshawar markets and Bilal ganj and all or that to see what's available
-akber_khan-00504,Akber Khan,2026-03-15T19:25:12,Akber Khan,adjacent_cluster,,0,0,Why get Chinese if we can perhaps potentially get the original from some half cut. Or near
-akber_khan-00505,Akber Khan,2026-03-15T19:25:48,David,keyword_or_amount,steering,0,0,oh yeah. forgot the steering
-akber_khan-00506,Akber Khan,2026-03-15T19:29:39,Akber Khan,keyword_or_amount,harness|wire,0,0,The custom harness he's talking about is basically taking all of what's in the car out and respinning it with new wire from their coils .. depending on how gooder job it is. My concern won't be that it won't work. Rather again. Pin to pin which it likely will be. But color coding usually suffers for the next guy to follow. But then again. With power testers that's sort of a none issue as well
-akber_khan-00507,Akber Khan,2026-03-15T19:30:16,David,keyword_or_amount,wire,0,0,what I am saying is I will personally rip out every wire
-akber_khan-00508,Akber Khan,2026-03-15T19:30:26,David,adjacent_cluster,,0,0,and put it back in as perfect as i can
-akber_khan-00509,Akber Khan,2026-03-15T19:30:40,David,adjacent_cluster,,0,0,just that challenge
-akber_khan-00510,Akber Khan,2026-03-15T19:30:49,Akber Khan,keyword_or_amount,body,0,0,I have a guy who can help with the body work at home but highly difficult. Expect to have piecing going away if u plan on doing this at home. Quite the task. No harm meeting him he is half nuts but very good at his trade
-akber_khan-00511,Akber Khan,2026-03-15T19:30:49,David,keyword_or_amount,chassis,0,0,just before doing that - chassis fixes
-akber_khan-00512,Akber Khan,2026-03-15T19:31:41,Akber Khan,keyword_or_amount,chassis,0,0,Yup. Chassis means it's in the air or jacks etc. Lifts required etc
-akber_khan-00513,Akber Khan,2026-03-15T19:33:00,Akber Khan,keyword_or_amount,wiring,0,0,The thing about wiring is... If I was u. Do it first. Doesn't have to go back to its place perfectly. Leave it loose. In it's general position (if u plan on not removing the cabin entirely for a full restore) . Then one can work around it and clip it down. That's what I did in a lot of ways
-akber_khan-00514,Akber Khan,2026-03-15T19:33:39,Akber Khan,keyword_or_amount,wiring,0,0,But you will notice. Once all the wiring junk comes out. There is going to be very little wiring left. Most of this stuff I saw were unnecessary relays and shit like that. Should all be gone
-akber_khan-00515,Akber Khan,2026-03-15T19:34:02,Akber Khan,keyword_or_amount,order,0,0,How about we meet the painter at home. Have him take a look and get an idea and kind of get a game plan in order
-akber_khan-00516,Akber Khan,2026-03-15T19:35:49,Akber Khan,adjacent_cluster,,0,0,Your car in my estimate isn't even 30 percent as far gone as what nadir is showing u
-akber_khan-00517,Akber Khan,2026-03-15T19:36:19,David,adjacent_cluster,,0,0,obviously
-akber_khan-00518,Akber Khan,2026-03-15T19:36:51,Akber Khan,adjacent_cluster,,0,0,Lol. Just so we are on the same page :P
-akber_khan-00519,Akber Khan,2026-03-15T19:37:06,Akber Khan,adjacent_cluster,,0,0,Calling the painter. Let's have him take a looksie
-akber_khan-00520,Akber Khan,2026-03-15T19:37:40,Akber Khan,keyword_or_amount,panel,0,0,By painter I mean. Denter . Panel guy. Painter
-akber_khan-00521,Akber Khan,2026-03-15T19:38:51,David,adjacent_cluster,,0,0,yeah man there are no dents
-akber_khan-00522,Akber Khan,2026-03-15T19:38:58,David,adjacent_cluster,,0,0,that don’t give character anyway
-akber_khan-00523,Akber Khan,2026-03-15T19:39:14,David,adjacent_cluster,,0,0,not a concern. its whats under the carpets and around the sills that worries me
-akber_khan-00524,Akber Khan,2026-03-15T19:39:26,Akber Khan,keyword_or_amount,rust,0,0,I mean the rust mission. Check. He will give an overview
-akber_khan-00525,Akber Khan,2026-03-15T19:40:06,Akber Khan,keyword_or_amount,wire|wiring,0,0,My guess. Wire wheel and spot resprays . Let's see . He can bring a compressor or whatever to yours if u mean to go at the wiring urself .
-akber_khan-00526,Akber Khan,2026-03-15T19:40:23,David,keyword_or_amount,chassis|rust,0,0,"the chassis, and rust"
-akber_khan-00527,Akber Khan,2026-03-15T19:40:28,Akber Khan,adjacent_cluster,,0,0,What he can't do. He can take with him. Sort that particular item and bring it back.
-akber_khan-00528,Akber Khan,2026-03-15T19:40:30,David,adjacent_cluster,,0,0,"thats my only big concern, and unknown"
-akber_khan-00529,Akber Khan,2026-03-15T19:40:33,Akber Khan,adjacent_cluster,,0,0,Yup
-akber_khan-00535,Akber Khan,2026-03-15T19:42:47,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00537,Akber Khan,2026-03-15T19:45:13,Akber Khan,adjacent_cluster,,0,0,Exactly
-akber_khan-00538,Akber Khan,2026-03-15T19:45:36,David,keyword_or_amount,strip,0,0,"I could strip it down to 1 seat, drivable, but able to see the status this week"
-akber_khan-00539,Akber Khan,2026-03-15T19:45:52,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00540,Akber Khan,2026-03-15T19:45:52,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00541,Akber Khan,2026-03-15T19:45:53,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00551,Akber Khan,2026-03-15T19:45:55,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00552,Akber Khan,2026-03-15T19:46:08,Akber Khan,adjacent_cluster,,0,0,Like this was just yesterday. And I voice note and observations etc
-akber_khan-00553,Akber Khan,2026-03-15T19:46:13,David,adjacent_cluster,,0,0,fair play
-akber_khan-00554,Akber Khan,2026-03-15T19:46:34,David,keyword_or_amount,welder,0,0,"but maybe i’ll watch one time, and then buy an arc welder"
-akber_khan-00555,Akber Khan,2026-03-15T19:46:59,David,adjacent_cluster,,0,0,trying to work out the horses for the courses
-akber_khan-00556,Akber Khan,2026-03-15T19:47:12,Akber Khan,adjacent_cluster,,0,0,Doable . Not that hard .. couple of belt Sanders. Stuff like that
-akber_khan-00557,Akber Khan,2026-03-15T19:47:32,Akber Khan,adjacent_cluster,,0,0,Let's have a chat with the lad. Just reaching out to him to show up tomorrow for a review
-akber_khan-00565,Akber Khan,2026-03-15T19:49:19,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00566,Akber Khan,2026-03-15T19:50:01,David,adjacent_cluster,,0,0,haha electrician - a man who once owned a screwdriver
-akber_khan-00567,Akber Khan,2026-03-15T19:50:32,Akber Khan,adjacent_cluster,,0,0,Lol. Some aren't that bad :P. U know electrics. I didn't. So I needed help. But I did do it all my way
-akber_khan-00568,Akber Khan,2026-03-15T19:53:07,David,keyword_or_amount,j40|roof|wiring,0,0,"anyway, sure help can be brought in. its sounding a bit like the plan is: 1) Expell the corolla outside 2) Bring the j40 under the roof 3) Remove the entire roof, back doors, front windows etc - send them for fixing 4) Rip out all wiring 5) Re-install from the kit + the new power wires"
-akber_khan-00569,Akber Khan,2026-03-15T19:53:27,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00570,Akber Khan,2026-03-15T19:53:28,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00571,Akber Khan,2026-03-15T19:53:28,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00583,Akber Khan,2026-03-15T19:53:32,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00584,Akber Khan,2026-03-15T19:53:32,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00585,Akber Khan,2026-03-15T19:53:36,David,adjacent_cluster,,0,0,4a) Remove all insulation etc etc
-akber_khan-00586,Akber Khan,2026-03-15T19:53:47,Akber Khan,keyword_or_amount,wiring,0,0,Some before and Afters of the civic. Full album. But to sort of give an idea of the wiring cleanup and generally
-akber_khan-00587,Akber Khan,2026-03-15T19:53:48,David,keyword_or_amount,welder,0,0,4b) Check where we need to bring in a welder
-akber_khan-00588,Akber Khan,2026-03-15T19:54:42,David,adjacent_cluster,,0,0,"i’m going to dig you out an image in a minute of how we install our servers at clients - and their cabling [15/03/2026, 19:55:01] Akber Khan:"
-akber_khan-00589,Akber Khan,2026-03-15T19:55:01,Akber Khan,adjacent_cluster,,0,1,Basic before and Afters ‎
-akber_khan-00590,Akber Khan,2026-03-15T19:55:02,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00602,Akber Khan,2026-03-15T19:57:10,Akber Khan,adjacent_cluster,,0,0,After I saw it... Suddenly I realized maybe the Flintstones owned it previously
-akber_khan-00603,Akber Khan,2026-03-15T19:59:16,David,adjacent_cluster,,0,0,"haha. 600bhp, but only with linford cristie driving"
-akber_khan-00604,Akber Khan,2026-03-15T19:59:28,Akber Khan,adjacent_cluster,,0,0,Lol
-akber_khan-00605,Akber Khan,2026-03-15T21:44:49,David,keyword_or_amount,electrical|wire,0,0,now i’m confused. I was ready to spend lakhs on alibaba for bits a pieces and now i’m not sure at all what I should be buying. and the electrical wire is really expensive
-akber_khan-00606,Akber Khan,2026-03-15T21:45:16,Akber Khan,adjacent_cluster,,0,0,The idea is to hold abhi. Just for a day or two
-akber_khan-00607,Akber Khan,2026-03-15T21:45:24,David,adjacent_cluster,,0,0,maybe i’ll go back to browsing tools
-akber_khan-00608,Akber Khan,2026-03-15T21:45:45,Akber Khan,adjacent_cluster,,0,0,Let's talk to the painter. The medical guy. Electrician. And show him the research and expectations
-akber_khan-00610,Akber Khan,2026-03-15T21:46:01,David,adjacent_cluster,,0,0,sure. just itching to get into it
-akber_khan-00611,Akber Khan,2026-03-15T21:53:18,Akber Khan,adjacent_cluster,,0,0,I know :)
-akber_khan-00612,Akber Khan,2026-03-15T21:53:41,Akber Khan,adjacent_cluster,,0,0,Just 2 or 3 odd days of prep / resources . Tools u should have anyways.
-akber_khan-00613,Akber Khan,2026-03-15T22:08:41,David,keyword_or_amount,toolsmart,0,0,https://www.toolsmart.pk/products/licota-90pcs-socket-and-tools-set
-akber_khan-00614,Akber Khan,2026-03-15T22:09:23,David,adjacent_cluster,,0,0,"I even have most of these spanners, nice stanley ones, but one nice case, with all tools always put back in their space"
-akber_khan-00615,Akber Khan,2026-03-15T22:09:44,David,adjacent_cluster,,0,0,"cant stand working with tools that bend, go shit etc"
-akber_khan-00616,Akber Khan,2026-03-15T22:11:45,David,adjacent_cluster,,0,0,a bunch of knifes to cut up the previous owners dreams
-akber_khan-00617,Akber Khan,2026-03-15T22:13:46,David,adjacent_cluster,,0,0,you have no idea how much of this I inherited and sacrificed because I was living here
-akber_khan-00618,Akber Khan,2026-03-15T22:14:22,Akber Khan,adjacent_cluster,,0,0,Lol I totally understand bro
-akber_khan-00619,Akber Khan,2026-03-15T22:14:43,Akber Khan,adjacent_cluster,,0,0,Btw. I found a nice toolbox much like my own on this import site. Just trying to find it again
-akber_khan-00620,Akber Khan,2026-03-15T22:17:00,Akber Khan,keyword_or_amount,toolsmart,0,0,https://www.toolsmart.pk/products/licota-57pcs-tool-box-set-w-steel-box
-akber_khan-00621,Akber Khan,2026-03-15T22:17:09,Akber Khan,adjacent_cluster,,0,0,"Same box but I use those ""total"" tools"
-akber_khan-00635,Akber Khan,2026-03-15T22:21:59,Akber Khan,adjacent_cluster,,0,0,I know it's Chinese... But it's much better then most crap I bought here
-akber_khan-00636,Akber Khan,2026-03-15T22:24:45,Akber Khan,adjacent_cluster,,0,1,These guys too ingco ‎
-akber_khan-00637,Akber Khan,2026-03-15T22:24:46,Akber Khan,adjacent_cluster,,0,1,These guys too ingco ‎
-akber_khan-00638,Akber Khan,2026-03-15T22:26:19,Akber Khan,keyword_or_amount,electrical,0,0,Bolt taps. T rods. The electrical stuff. Power testers. Volt meters etc you'll want. U know this part better . Strippers and all that. Crimping tools
-akber_khan-00639,Akber Khan,2026-03-15T22:26:27,Akber Khan,keyword_or_amount,cable dressing,0,0,Cable dressing. Etc
-akber_khan-00640,Akber Khan,2026-03-15T22:34:54,David,adjacent_cluster,,0,1,‎
-akber_khan-00641,Akber Khan,2026-03-15T22:35:13,David,adjacent_cluster,,0,0,"didn;t see your messages, will review. this was my list"
-akber_khan-00642,Akber Khan,2026-03-15T22:37:19,Akber Khan,adjacent_cluster,,0,0,Air impact. You'll need a compressor of course. Total has those too. Consider Jack stands Hyrolic jack Wearable headgear light etc. ‎<This message was edited>
-akber_khan-00643,Akber Khan,2026-03-15T22:38:43,Akber Khan,adjacent_cluster,,0,0,U get an extension with angle grinders .. basically turns them into an elongated sander. I forget the name
-akber_khan-00644,Akber Khan,2026-03-15T22:39:31,Akber Khan,keyword_or_amount,cable dressing|heat shrink,0,0,You'll also want / need lots of heat shrink tubing. Cable dressing. Tapes. Connectors etc. Crimping tools etc. some additional items mentioned above in my suggested list
-akber_khan-00645,Akber Khan,2026-03-15T22:39:34,David,adjacent_cluster,,0,0,couldn’t find the attachements
-akber_khan-00646,Akber Khan,2026-03-15T22:39:40,Akber Khan,keyword_or_amount,belt sander,0,0,Belt sander
-akber_khan-00647,Akber Khan,2026-03-15T22:39:43,David,adjacent_cluster,,0,0,am assuming to rarely have to use
-akber_khan-00648,Akber Khan,2026-03-15T22:39:54,David,adjacent_cluster,,0,0,hmm. not sure about belt sanding anything
-akber_khan-00649,Akber Khan,2026-03-15T22:40:13,David,adjacent_cluster,,0,0,cheaper than the sand blaster I guess
-akber_khan-00650,Akber Khan,2026-03-15T22:40:19,Akber Khan,adjacent_cluster,,0,0,U will. Trust me. Or u can sand on a rotary
-akber_khan-00651,Akber Khan,2026-03-15T22:40:37,David,adjacent_cluster,,0,0,flat metal?
-akber_khan-00652,Akber Khan,2026-03-15T22:40:42,Akber Khan,adjacent_cluster,,0,0,There is a Desi way to go about it at home also. If u have a compressor. And don't mind making a mess
-akber_khan-00653,Akber Khan,2026-03-15T22:41:05,David,keyword_or_amount,belt sander,0,0,"oh, don’t worry, i’ve used a belt sander"
-akber_khan-00654,Akber Khan,2026-03-15T22:41:12,David,adjacent_cluster,,0,0,not on a car though
-akber_khan-00655,Akber Khan,2026-03-15T22:41:17,Akber Khan,keyword_or_amount,dremel,0,0,Dremel. Increadably useful
-akber_khan-00656,Akber Khan,2026-03-15T22:42:04,Akber Khan,adjacent_cluster,,0,1,Very useful ‎
-akber_khan-00657,Akber Khan,2026-03-15T22:42:06,Akber Khan,adjacent_cluster,,0,1,Very useful ‎
-akber_khan-00658,Akber Khan,2026-03-15T22:42:15,Akber Khan,adjacent_cluster,,0,0,Cut shorted bolts. Tidy up shit
-akber_khan-00659,Akber Khan,2026-03-15T22:42:16,David,adjacent_cluster,,0,0,"I don’t want the case, so I can see every tool go back to its position every time anyone leaves"
-akber_khan-00660,Akber Khan,2026-03-15T22:42:44,David,adjacent_cluster,,0,0,used to have
-akber_khan-00661,Akber Khan,2026-03-15T22:43:02,David,adjacent_cluster,,0,0,"hmm, post-extraction I assume"
-akber_khan-00662,Akber Khan,2026-03-15T22:43:49,David,keyword_or_amount,toolsmart,0,0,different site though https://www.toolsmart.pk/search?type=product&q=bench+grinder
-akber_khan-00663,Akber Khan,2026-03-15T22:43:55,Akber Khan,keyword_or_amount,tap set,0,1,Tap set for stripped bolts. I'm guessing you'll find a few ‎
-akber_khan-00664,Akber Khan,2026-03-15T22:43:57,Akber Khan,keyword_or_amount,tap set,0,1,Tap set for stripped bolts. I'm guessing you'll find a few ‎
-akber_khan-00665,Akber Khan,2026-03-15T22:44:10,David,adjacent_cluster,,0,0,oh. I have a vintage set of those somewhere
-akber_khan-00667,Akber Khan,2026-03-15T22:45:24,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00668,Akber Khan,2026-03-15T22:45:25,Akber Khan,adjacent_cluster,,0,1,‎
-akber_khan-00669,Akber Khan,2026-03-15T22:45:38,Akber Khan,keyword_or_amount,grommet,0,0,Grommet sets.
-akber_khan-00670,Akber Khan,2026-03-15T22:47:12,Akber Khan,adjacent_cluster,,0,0,Dielectric grease etc . Copper grease for breaks
-akber_khan-00671,Akber Khan,2026-03-15T22:48:27,David,keyword_or_amount,order,0,0,hmm. well i’ll just going to to with 1 big tools mart order today I think
-akber_khan-00672,Akber Khan,2026-03-15T22:48:33,David,adjacent_cluster,,0,0,greaase gun
-akber_khan-00673,Akber Khan,2026-03-15T22:48:35,David,adjacent_cluster,,0,0,needed that
-akber_khan-00674,Akber Khan,2026-03-15T22:48:52,David,adjacent_cluster,,0,0,"some stuff its out of stock, like gromets, will get them later"
-akber_khan-00675,Akber Khan,2026-03-15T22:49:00,Akber Khan,keyword_or_amount,wiring,0,1,A whole lot of this. Don't get them here. Must for tidy wiring ‎
-akber_khan-00676,Akber Khan,2026-03-15T22:49:01,Akber Khan,keyword_or_amount,wiring,0,1,A whole lot of this. Don't get them here. Must for tidy wiring ‎
-akber_khan-00677,Akber Khan,2026-03-15T22:49:16,Akber Khan,keyword_or_amount,daraz,0,0,Ok..I found them on daraz etc.
-akber_khan-00678,Akber Khan,2026-03-15T22:50:00,Akber Khan,adjacent_cluster,,0,1,Cable sleeves or pipes ‎
-akber_khan-00679,Akber Khan,2026-03-15T22:50:02,Akber Khan,adjacent_cluster,,0,1,Cable sleeves or pipes ‎
-akber_khan-00680,Akber Khan,2026-03-15T22:50:35,David,adjacent_cluster,,0,1,‎
-akber_khan-00682,Akber Khan,2026-03-15T22:50:49,David,adjacent_cluster,,0,0,I want to get a whole cable set
-akber_khan-00683,Akber Khan,2026-03-15T22:51:14,David,adjacent_cluster,,0,0,"where nobody fucks with anything part-way, even with a proper joiner"
-akber_khan-00684,Akber Khan,2026-03-15T22:51:23,David,adjacent_cluster,,0,0,"so, a separate purchase"
-akber_khan-00685,Akber Khan,2026-03-15T22:51:34,Akber Khan,keyword_or_amount,engine|harness,0,0,Cable set ? Oh u mean the engine and accessory harness
-akber_khan-00686,Akber Khan,2026-03-15T22:51:44,David,adjacent_cluster,,0,0,the full shebang
-akber_khan-00687,Akber Khan,2026-03-15T22:51:52,Akber Khan,keyword_or_amount,speaker|wiring,0,0,Yeah. You'll still need these. Speaker wiring. All kinds of stupid shit. Very handy
-akber_khan-00688,Akber Khan,2026-03-15T22:51:57,David,adjacent_cluster,,0,0,don’t want to encourage any ‘just join this to this'
-akber_khan-00689,Akber Khan,2026-03-15T22:52:03,David,adjacent_cluster,,0,0,"sure, but"
-akber_khan-00690,Akber Khan,2026-03-15T22:52:06,Akber Khan,adjacent_cluster,,0,0,Fog lights yada yada..
-akber_khan-00692,Akber Khan,2026-03-15T22:52:16,Akber Khan,adjacent_cluster,,0,0,Ok
-akber_khan-00693,Akber Khan,2026-03-15T22:52:36,David,adjacent_cluster,,0,0,"ok, cabling aside"
-akber_khan-00694,Akber Khan,2026-03-15T22:52:40,Akber Khan,adjacent_cluster,,0,0,I'm just trying to remember what all I ended up having to use a lot
-akber_khan-00695,Akber Khan,2026-03-15T22:52:45,Akber Khan,keyword_or_amount,rust,0,0,Rust reformer !!
-akber_khan-00696,Akber Khan,2026-03-15T22:52:54,David,adjacent_cluster,,0,0,gromets out of stock
-akber_khan-00697,Akber Khan,2026-03-15T22:56:58,Akber Khan,adjacent_cluster,,0,0,My retard painter just called. The guy I said was very good with his work but a dildo otherwise
-akber_khan-00698,Akber Khan,2026-03-15T22:57:13,Akber Khan,adjacent_cluster,,0,0,What time should I call him to the house ? Let's have him see it and start getting inputs
-akber_khan-00699,Akber Khan,2026-03-15T22:57:37,David,keyword_or_amount,rust,0,0,no results for rust reformer
-akber_khan-00700,Akber Khan,2026-03-15T22:57:56,David,adjacent_cluster,,0,0,what would he propose? this painer?
-akber_khan-00701,Akber Khan,2026-03-15T22:57:56,Akber Khan,keyword_or_amount,daraz|rust,0,0,Daraz. I just bought it... Rust-Oleum rust reformer
-akber_khan-00702,Akber Khan,2026-03-15T22:58:09,David,adjacent_cluster,,0,0,"oh, cool. thnaks"
-akber_khan-00703,Akber Khan,2026-03-15T22:58:24,David,adjacent_cluster,,0,0,my list ia good to go?
-akber_khan-00704,Akber Khan,2026-03-15T22:58:33,Akber Khan,keyword_or_amount,inspection|paint|rust,0,0,Down to how u want it and what's possible. In terms of rust inspection correction. Etc etc. Paint strategy so on. Under costing yada yada
-akber_khan-00705,Akber Khan,2026-03-15T22:59:00,David,keyword_or_amount,roof,0,0,"right. I can give him my roof and back doors, and they should come back perfect you mean"
-akber_khan-00706,Akber Khan,2026-03-15T22:59:01,Akber Khan,keyword_or_amount,dremel,0,0,Yup why not. Add a Dremel if u can. Dunno about u but I used the fuck out of it.
-akber_khan-00707,Akber Khan,2026-03-15T22:59:23,David,adjacent_cluster,,0,0,"yeah, I htink I have one, but anyqy"
-akber_khan-00708,Akber Khan,2026-03-15T22:59:26,Akber Khan,keyword_or_amount,floor,0,0,Yup. More then that. Let him inspect the car and pull a few things off the floor pan and let's see
-akber_khan-00709,Akber Khan,2026-03-15T23:00:05,David,keyword_or_amount,dremel,1,0,36k for a dremel on this site
-akber_khan-00710,Akber Khan,2026-03-15T23:00:13,Akber Khan,adjacent_cluster,,0,0,Nope
-akber_khan-00711,Akber Khan,2026-03-15T23:00:23,Akber Khan,adjacent_cluster,,0,0,We can get it later. Let's just start
-akber_khan-00712,Akber Khan,2026-03-15T23:00:46,David,adjacent_cluster,,0,0,"as I said, I think i have one anyway"
-akber_khan-00713,Akber Khan,2026-03-15T23:00:53,Akber Khan,keyword_or_amount,wire,0,0,Wire coils and all that u know better. Fuses etc..
-akber_khan-00714,Akber Khan,2026-03-15T23:01:04,Akber Khan,adjacent_cluster,,0,0,What time should I call the guy over ?
-akber_khan-00715,Akber Khan,2026-03-15T23:01:10,Akber Khan,adjacent_cluster,,0,0,12 ?
-akber_khan-00716,Akber Khan,2026-03-15T23:01:16,Akber Khan,adjacent_cluster,,0,0,11?
-akber_khan-00727,Akber Khan,2026-03-15T23:07:23,Akber Khan,adjacent_cluster,,0,0,"His dad was ""the"" best dude in all of Lahore. She learnt off him etc etc."
-akber_khan-00728,Akber Khan,2026-03-15T23:07:31,Akber Khan,adjacent_cluster,,0,0,For all else. Money talks
-akber_khan-00729,Akber Khan,2026-03-15T23:07:58,David,adjacent_cluster,,0,0,so long as you know how to deal with him
-akber_khan-00730,Akber Khan,2026-03-15T23:08:22,David,keyword_or_amount,door,0,0,so. if I did want him to go sand-blast a door and start from scratch for example
-akber_khan-00731,Akber Khan,2026-03-15T23:08:29,Akber Khan,adjacent_cluster,,0,0,Yeah. Managed my time. Don't see why this time.
-akber_khan-00732,Akber Khan,2026-03-15T23:09:03,Akber Khan,adjacent_cluster,,0,0,Yup. He should have a solution. Although they are all used to sanding and building over. Let's have a detailed chat. Tomorrow 11am. My place
-akber_khan-00733,Akber Khan,2026-03-15T23:11:30,David,adjacent_cluster,,0,0,sure
-akber_khan-00734,Akber Khan,2026-03-15T23:12:17,David,adjacent_cluster,,0,0,how is he at fixed pricing?
-akber_khan-00735,Akber Khan,2026-03-15T23:13:45,Akber Khan,adjacent_cluster,,0,0,One can have a chat.
-akber_khan-00736,Akber Khan,2026-03-15T23:14:00,Akber Khan,keyword_or_amount,panel,0,0,There is a per panel charge typically.
-akber_khan-00737,Akber Khan,2026-03-15T23:14:43,Akber Khan,keyword_or_amount,engine|filter|flush|oil,0,0,Oh btw. Reminder. To call the oil guy and sort that tomorrow for sure. Including the engine flush. He should have sorted the oil filter by then
-akber_khan-00738,Akber Khan,2026-03-15T23:15:06,Akber Khan,adjacent_cluster,,0,0,Also. Be sure to Google the quantity. So u both agree on it. For obvious reasons .
-akber_khan-00739,Akber Khan,2026-03-15T23:19:43,David,adjacent_cluster,,0,0,fucks sake I don’t normally get up until 1pm
-akber_khan-00740,Akber Khan,2026-03-15T23:19:57,David,adjacent_cluster,,0,0,you have me doing 2 jobs before that
-akber_khan-00749,Akber Khan,2026-03-16T14:10:27,Akber Khan,adjacent_cluster,,0,0,Going good ? Went good
-akber_khan-00750,Akber Khan,2026-03-16T14:10:30,Akber Khan,adjacent_cluster,,0,0,?
-akber_khan-00751,Akber Khan,2026-03-16T14:10:51,Akber Khan,keyword_or_amount,amp,0,0,All LEDs out ? Speakers ? And all associated wires ? And the amp and it's cables ?
-akber_khan-00752,Akber Khan,2026-03-16T15:09:46,David,adjacent_cluster,,0,0,All out
-akber_khan-00753,Akber Khan,2026-03-16T15:09:56,David,keyword_or_amount,battery,1,0,And 20k down on a new battery
-akber_khan-00754,Akber Khan,2026-03-16T15:10:00,Akber Khan,adjacent_cluster,,0,0,Thank goodness.
-akber_khan-00755,Akber Khan,2026-03-16T15:10:09,Akber Khan,keyword_or_amount,battery,0,0,I have a separate battery guy
-akber_khan-00756,Akber Khan,2026-03-16T15:10:14,Akber Khan,adjacent_cluster,,0,0,Hope u haven't done it yet
-akber_khan-00757,Akber Khan,2026-03-16T15:10:31,David,keyword_or_amount,filter,0,0,Fitting it jow. Did you speak to that guy abiut thr filter?
-akber_khan-00758,Akber Khan,2026-03-16T15:10:37,Akber Khan,adjacent_cluster,,0,0,Comes to the house. Exchange with the old. Etc. usually cheaper
-akber_khan-00759,Akber Khan,2026-03-16T15:10:50,David,adjacent_cluster,,0,0,We just popped tp ghazi road
-akber_khan-00760,Akber Khan,2026-03-16T15:11:00,David,keyword_or_amount,,1,0,4k back on the old one
-akber_khan-00761,Akber Khan,2026-03-16T15:11:13,David,adjacent_cluster,,0,0,Done. At least
-akber_khan-00762,Akber Khan,2026-03-16T15:11:46,Akber Khan,adjacent_cluster,,0,0,Trying. Number not going
-akber_khan-00793,Akber Khan,2026-03-17T15:44:28,Akber Khan,keyword_or_amount,body|cover,0,0,so spoken. we're going to see you tomorrow morning at 10:30. Going to need you to buy a car cover today because expect to have the car 60 to 70 percent stripped tomorrow. interior and most of the body.
-akber_khan-00795,Akber Khan,2026-03-17T15:45:48,Akber Khan,keyword_or_amount,body|electrical,0,0,so we're going to use the group with Hassan and nadir for mechanical moving forward.. we will be addressing the electrical and body work at home. so nothing left to talk to them about
-akber_khan-00796,Akber Khan,2026-03-17T15:47:53,Akber Khan,keyword_or_amount,hood|roof|strip|window,0,0,"tomorrow... the roof, doors, back cabin really, the hood etc. whatever can come off cleanly will be taken off and sent away with notes for each. he'sgoing to to strip each individual item there. for example things like the window mechanism and rubbers and all that, they will all be taken out and separated and sent to relevant places to be cleaned up / services etc. he's also going to pull out most of the interior."
-akber_khan-00797,Akber Khan,2026-03-17T15:49:23,Akber Khan,keyword_or_amount,door,0,0,"every piece is going to be tagged and potentially dealt with differently depending on what each piece needs exactly. try to keep some cartons with you because a lot of auxiliary stuff will come off.. door handles, mirrors all that shit. rubbers."
-akber_khan-00798,Akber Khan,2026-03-17T15:51:08,Akber Khan,keyword_or_amount,floor|primer|weld,0,0,"a day or two after, he will return to grind and spot weld the floor where required (those pin holes etc. will know more once its all out). but we will need primer sprays etc to spray it over immediately after. then move into bedding sprays and sound damening sheets and all that after"
-akber_khan-00799,Akber Khan,2026-03-17T15:51:18,Akber Khan,adjacent_cluster,,0,0,so best to have those cans handy by then
-akber_khan-00800,Akber Khan,2026-03-17T15:53:27,Akber Khan,keyword_or_amount,bedliner|order|primer,0,0,"need u to check on bedliner sprays and primer and order.. perhaps consult that guy of mine in karachi , sent you the contact earlier. Jamshaid"
-akber_khan-00801,Akber Khan,2026-03-17T15:55:52,Akber Khan,adjacent_cluster,,0,0,https://por15.com/
-akber_khan-00802,Akber Khan,2026-03-17T15:56:07,Akber Khan,adjacent_cluster,,0,0,"not available here, but it should give u a good idea of what one is looking for"
-akber_khan-00803,Akber Khan,2026-03-17T16:01:53,Akber Khan,keyword_or_amount,bed lining|carpet|epoxy|foam|primer|seam sealer|self etching|sound dampening|wax and grease remover,0,0,"wax and grease remover, self etching primer, epoxy primer, seam sealer, bed lining ... then sound dampening sheets, foam, carpet and done!.. thats the actual and full proper way"
-akber_khan-00804,Akber Khan,2026-03-17T16:02:55,Akber Khan,keyword_or_amount,body|primer,0,0,"even the best body shops don't do that here... they wipe shit clean, spray on primer... the end. put whatever u want on top of that. so I want to share both the full way and how they do it here so we can work out a path considering one wont find half the shit mentioned above and or it will take took long or crazy expensive"
-akber_khan-00805,Akber Khan,2026-03-17T16:03:31,David,adjacent_cluster,,0,0,"on its way, but not sure it will be here by tomorrorow https://shopify.com/57876545692/account/orders/932d270cf0bc36f7d57c42f9ede63dae?locale=en-PK"
-akber_khan-00806,Akber Khan,2026-03-17T16:04:54,Akber Khan,keyword_or_amount,cover,1,0,"no worries. lets just use whatever till then. get any shitty cover for 2-4k and / or if u don't have one for the Corolla get that, use it on the FJ and then keep it for the corolla after"
-akber_khan-00807,Akber Khan,2026-03-17T16:05:12,Akber Khan,adjacent_cluster,,0,0,can easily get it from Saigol Motors... near ur house also. u can check them out online
-akber_khan-00808,Akber Khan,2026-03-17T16:05:47,Akber Khan,keyword_or_amount,jeep,0,0,"I reckon u should have some cheap parachute one also , not just for the jeep but the stuff which you'll be keeping out in the drive way like the interior parts .. rainy season"
-akber_khan-00809,Akber Khan,2026-03-17T16:22:55,David,keyword_or_amount,paint,0,0,"which on in particular are you thinking? paint, spray, both?"
-akber_khan-00810,Akber Khan,2026-03-17T16:27:15,David,adjacent_cluster,,0,0,so you think I should start stripping out more wires? I’ll have to check but I don’t think any of the components that come off have wires in them
-akber_khan-00811,Akber Khan,2026-03-17T16:27:33,David,adjacent_cluster,,0,0,but there are probably a bunch of nolts to tackle
-akber_khan-00812,Akber Khan,2026-03-17T16:27:37,David,adjacent_cluster,,0,0,bolts
-akber_khan-00813,Akber Khan,2026-03-17T16:28:50,Akber Khan,adjacent_cluster,,0,0,Why not. But that's ur jam. I'm not good at that at all. U are. Document everything. I'm so shit at it . I'd probably be wearing a go pro to back track whatever I take out
-akber_khan-00814,Akber Khan,2026-03-17T16:30:26,David,adjacent_cluster,,0,0,right. might have to negotiate the top car-port spot before that then because it ain’t going to be moving much after that
-akber_khan-00815,Akber Khan,2026-03-17T16:33:47,David,keyword_or_amount,steering,0,0,the power-steering upgrade. you think it can be done in-situe?
-akber_khan-00817,Akber Khan,2026-03-17T16:35:10,David,adjacent_cluster,,0,0,https://autohub.pk/collections/car-care-products/products/gyeon-q-m-total-remover-1000ml
-akber_khan-00818,Akber Khan,2026-03-17T16:35:30,Akber Khan,adjacent_cluster,,0,0,Geyon is very good
-akber_khan-00819,Akber Khan,2026-03-17T16:35:58,David,keyword_or_amount,primer,0,0,these don’t look big enough/correct https://autohub.pk/a/search?type=product&q=primer
-akber_khan-00820,Akber Khan,2026-03-17T16:36:23,David,keyword_or_amount,body,0,0,https://autohub.pk/products/hb-body-999-seam-sealer-300ml-cartr
-akber_khan-00821,Akber Khan,2026-03-17T16:36:48,Akber Khan,adjacent_cluster,,0,0,They have their outlet in Montgomery road autohub . Good products there from what I recall
-akber_khan-00822,Akber Khan,2026-03-17T16:37:03,Akber Khan,adjacent_cluster,,0,0,To save time one can probably just call and go pick it directly
-akber_khan-00823,Akber Khan,2026-03-17T16:37:58,David,keyword_or_amount,sound dampening,0,0,probably makes sense to look through and discuss with him. he also does all the rest like sound dampening boards?
-akber_khan-00824,Akber Khan,2026-03-17T16:55:16,David,adjacent_cluster,,0,1,‎
-akber_khan-00825,Akber Khan,2026-03-17T16:55:19,David,adjacent_cluster,,0,1,‎
-akber_khan-00826,Akber Khan,2026-03-17T16:55:41,David,adjacent_cluster,,0,0,So whats this guys remit? Does all this need taking off today?
-akber_khan-00845,Akber Khan,2026-03-17T17:00:25,David,adjacent_cluster,,0,1,‎
-akber_khan-00846,Akber Khan,2026-03-17T17:00:25,David,adjacent_cluster,,0,1,‎
-akber_khan-00847,Akber Khan,2026-03-17T17:00:25,David,adjacent_cluster,,0,1,‎
-akber_khan-00848,Akber Khan,2026-03-17T17:02:38,David,keyword_or_amount,door,0,0,so just a couple of door wires that I think don’t do anything anyway
-akber_khan-00849,Akber Khan,2026-03-17T17:04:45,Akber Khan,adjacent_cluster,,0,0,Cool
-akber_khan-00850,Akber Khan,2026-03-17T17:04:53,David,keyword_or_amount,chassis,0,0,dont you think chassis at home will be an issue removing the main frame?
-akber_khan-00851,Akber Khan,2026-03-17T17:05:08,David,adjacent_cluster,,0,0,I guess just need a few guys
-akber_khan-00852,Akber Khan,2026-03-17T17:05:29,David,keyword_or_amount,suspension,0,1,just wondering. what would a full-spring suspension conversion cost? ‎
-akber_khan-00853,Akber Khan,2026-03-17T17:05:29,David,keyword_or_amount,suspension,0,1,just wondering. what would a full-spring suspension conversion cost? ‎
-akber_khan-00854,Akber Khan,2026-03-17T17:05:42,David,adjacent_cluster,,0,0,would love this
-akber_khan-00855,Akber Khan,2026-03-17T17:09:36,David,keyword_or_amount,brake|chassis|j40|steering|suspension,3,0,"hmm. erm A full coil / 4-link suspension conversion on a J40 is not a kit job — it’s basically re-engineering the entire underside of the vehicle. 💰 Real-world cost breakdown 1. Parts (bare minimum) Even DIY parts add up: 4-link kit components: $600–$1,000 Coilovers (good ones): $800–$2,000+ Brackets, mounts, joints: $500–$1,500 Steering corrections (high steer, links): $800–$1,500 👉 Parts total: $3,000 – $6,000 2. Fabrication & labour (the big one) This is where costs explode. A proper conversion involves: cutting off all leaf spring mounts welding new link mounts to frame + axle building 4-link geometry setting pinion angles relocating shocks often modifying the chassis Typical fabrication time: 80–150+ hours Workshop cost (depending where): In Pakistan (good fabricator) PKR 300k – 1,000k (~$1,000 – $3,500) International / high-end shops $5,000 – $15,000+ 3. Hidden costs (people underestimate these) driveshaft modification / custom shafts brake line rerouting exhaust rework fuel tank relocation (sometimes) bump stops / limit straps 👉 Add another $500 – $2,000 💸 Total realistic cost Budget DIY + local fabrication (Pakistan) 👉 PKR 500k – 1.5M (~$1,800 – $5,500) Proper engineered build 👉 $6,000 – $12,000 High-end (ICON-style build) 👉 $15,000 – $30,000+"
-akber_khan-00856,Akber Khan,2026-03-17T17:09:43,David,adjacent_cluster,,0,0,not quite in the budget
-akber_khan-00857,Akber Khan,2026-03-17T17:11:51,David,keyword_or_amount,bilstein|nitrocharger|old man emu,0,0,"cheaper: If you're still on basic shocks, this is massive. Upgrade to: Bilstein 5100 / 5160 Old Man Emu Nitrocharger What it does: removes the “bouncy tractor” feel improves control on bumps better off-road articulation"
-akber_khan-00858,Akber Khan,2026-03-17T17:13:10,David,keyword_or_amount,bilstein|ome|power steering|steering,0,0,so: Do this: Power steering Bilstein / OME shocks Shackle reversal Front disc brakes Steering rebuild + damper
-akber_khan-00859,Akber Khan,2026-03-17T17:29:36,Akber Khan,adjacent_cluster,,0,0,I'll just read through. At golf. So what peeps usually do is go back to stock and then upgrade
-akber_khan-00860,Akber Khan,2026-03-17T18:07:58,David,keyword_or_amount,engine,0,0,makes sense. - unless I change the engine
-akber_khan-00861,Akber Khan,2026-03-17T18:08:02,David,adjacent_cluster,,0,0,I assume
-akber_khan-00862,Akber Khan,2026-03-17T18:08:38,David,keyword_or_amount,power steering|steering,0,0,"and does it really make sense to put the old power steering in, then replace it?"
-akber_khan-00863,Akber Khan,2026-03-17T18:40:50,David,keyword_or_amount,toolsmart,0,0,https://www.toolsmart.pk/collections/sander
-akber_khan-00864,Akber Khan,2026-03-17T18:41:01,David,adjacent_cluster,,0,0,so you think its worth getting a sander?
-akber_khan-00870,Akber Khan,2026-03-17T21:13:47,David,adjacent_cluster,,0,0,its a separate investment
-akber_khan-00871,Akber Khan,2026-03-17T21:14:09,David,adjacent_cluster,,0,0,"not being in the uk, I gave his away"
-akber_khan-00872,Akber Khan,2026-03-17T21:15:08,David,adjacent_cluster,,0,0,not going to go over-board on too many specifics for fitting in the car
-akber_khan-00873,Akber Khan,2026-03-17T21:15:43,David,keyword_or_amount,toolsmart,0,0,so you mean like one of these sanders? https://www.toolsmart.pk/collections/sander
-akber_khan-00874,Akber Khan,2026-03-17T21:22:27,David,adjacent_cluster,,0,0,also - I suppose you know a guy to hook up security cameras?
-akber_khan-00875,Akber Khan,2026-03-17T21:22:46,David,adjacent_cluster,,0,0,last thing is someone nicking all of this
-akber_khan-00876,Akber Khan,2026-03-18T12:09:51,Akber Khan,adjacent_cluster,,0,0,Yooo.. yes I do..
-akber_khan-00878,Akber Khan,2026-03-18T12:17:20,Akber Khan,adjacent_cluster,,0,0,Also. Sorry. Rescheduled the keep dismantling. Rain. So we are looking at about 2pm
-akber_khan-00879,Akber Khan,2026-03-18T13:28:02,David,keyword_or_amount,cover,0,0,Good. Cos i gor up late. Tools and cover arrived thoigh
-akber_khan-00880,Akber Khan,2026-03-18T13:36:36,Akber Khan,adjacent_cluster,,0,0,Cool
-akber_khan-00881,Akber Khan,2026-03-18T13:36:42,Akber Khan,adjacent_cluster,,0,0,See u shortly then
-akber_khan-00882,Akber Khan,2026-03-18T14:57:16,Akber Khan,adjacent_cluster,,0,0,Gotten a bit late. Rain. On the way now in 5 min. Chap is here
+akber_khan-00314,Akbar Khan,2026-03-11T20:41:06,David,adjacent_cluster,,0,0,everythings pretty good with the car - well in the dark anyway. finally ound out how to turn the ligts on
+akber_khan-00315,Akbar Khan,2026-03-11T20:41:24,David,adjacent_cluster,,0,0,just steers a bit like a cruise ship
+akber_khan-00316,Akbar Khan,2026-03-11T20:41:30,David,keyword_or_amount,fj40|steering,0,0,so I assume something like https://www.cityracerllc.com/products/electric-power-steering-for-toyota-land-cruiser-fj40
+akber_khan-00317,Akbar Khan,2026-03-11T20:43:42,David,adjacent_cluster,,0,0,"ok, great. tomorrow is —— flexble. just give me a bit not notice so i will be there"
+akber_khan-00318,Akbar Khan,2026-03-11T20:44:18,David,keyword_or_amount,android,0,0,probably an upgraded android screen thing thats a bit less anooyting
+akber_khan-00319,Akbar Khan,2026-03-11T20:44:25,David,keyword_or_amount,ac,0,0,and need to fix the AC
+akber_khan-00320,Akbar Khan,2026-03-11T20:44:46,David,adjacent_cluster,,0,0,everything else (until it falls apart) seems ok to me
+akber_khan-00321,Akbar Khan,2026-03-11T20:45:34,David,keyword_or_amount,door,0,0,still have to work out how to load 3 people in the back seeing as one of the seats covers teht door
+akber_khan-00322,Akbar Khan,2026-03-11T20:46:27,David,keyword_or_amount,door,0,0,can’t see shit out ht the wing mirror - its hits the door partition
+akber_khan-00323,Akbar Khan,2026-03-11T20:47:07,David,adjacent_cluster,,0,0,"as I say i’m happy, but if you have any ideas about the above let me know"
+akber_khan-00324,Akbar Khan,2026-03-11T20:50:49,David,keyword_or_amount,window,0,0,that window that needed re-doing
+akber_khan-00325,Akbar Khan,2026-03-11T20:51:27,David,adjacent_cluster,,0,0,"a less complicated system if knobs would be nice, but I I think I worked them out now"
+akber_khan-00326,Akbar Khan,2026-03-11T20:52:50,David,adjacent_cluster,,0,0,do you have a proper full set of car tools?
+akber_khan-00327,Akbar Khan,2026-03-11T21:04:59,David,adjacent_cluster,,0,0,jumps out of gear accationally. probably me not jamming it in enough yet
+akber_khan-00333,Akbar Khan,2026-03-11T21:08:24,David,adjacent_cluster,,0,0,"well, yes I would like to"
+akber_khan-00334,Akbar Khan,2026-03-11T21:08:30,David,adjacent_cluster,,0,0,hence the question abtout tools
+akber_khan-00335,Akbar Khan,2026-03-11T21:08:38,David,adjacent_cluster,,0,0,thats some speicialist tooling
+akber_khan-00336,Akbar Khan,2026-03-11T21:08:46,David,keyword_or_amount,steering,0,0,for the eletrci steering
+akber_khan-00337,Akbar Khan,2026-03-11T21:08:48,Akbar Khan,adjacent_cluster,,0,0,Let's ! And this car is extremely modular and fun. Never done jeeps but basics are basics
+akber_khan-00338,Akbar Khan,2026-03-11T21:08:58,Akbar Khan,adjacent_cluster,,0,0,All available. All fun
+akber_khan-00339,Akbar Khan,2026-03-11T21:09:09,David,adjacent_cluster,,0,0,picked it specially for that reason
+akber_khan-00343,Akbar Khan,2026-03-11T21:09:43,Akbar Khan,adjacent_cluster,,0,0,Tool sets at home. U name it.
+akber_khan-00344,Akbar Khan,2026-03-11T21:11:41,Akbar Khan,adjacent_cluster,,0,0,When is my first drive ????
+akber_khan-00345,Akbar Khan,2026-03-11T21:14:25,David,adjacent_cluster,,0,0,any time you like. come over during sunliight tomorrow and we can both have a goof look over it
+akber_khan-00346,Akbar Khan,2026-03-11T21:14:26,David,keyword_or_amount,battery|breaker bar|engine|j40|land cruiser|power steering|steering|welder|wire,0,0,"Converting a J40 to hydraulic power steering is not something you can realistically do from home with no tools. It’s a mechanical fabrication job involving cutting, drilling, and installing major steering components. The safest approach is either buying a full bolt-on kit or having a workshop do the fabrication. I’ll explain what the minimum realistic setup looks like. What a hydraulic conversion actually requires A J40 was designed with a manual steering box and bell-crank system, so power steering requires installing a completely different steering box and linkage. Core parts required: Steering components Power steering steering box (often from Land Cruiser 60/70 or Toyota Hilux) Pitman arm Drag link Modified steering shaft with U-joints Hydraulic system Power steering pump Pump mounting bracket Reservoir High-pressure hose Return hose Engine drive Double crank pulley Drive belt Frame mounting Steering box mounting plate Reinforcement plate Tools normally required At minimum: Basic tools socket set spanners jack + axle stands breaker bar Fabrication tools drill angle grinder welder (almost always required) Without these, the conversion is essentially impossible. Realistic options if you have no tools Option 1 — Buy a full conversion kit Some kits are designed to minimize fabrication. Example suppliers: Cruiser Corps Man-A-Fre BTB Products Cool Cruisers These typically include: steering box mounting plate pump hoses steering shaft Even with a kit you still need: drilling some cutting A garage can install it in 5–8 hours. Option 2 — Have a 4x4 workshop do it Best option if starting from nothing. Typical cost depending on parts: Parts: $600–1500 Labour: $300–600 In Pakistan the labour is usually much cheaper. Option 3 — Electric power steering column If you truly want minimal tools, EPS is the only realistic DIY approach. Steps are basically: Remove steering column Install EPS column motor unit Wire to battery Connect to steering box But even this usually requires: cutting the steering shaft welding or adapters If you want the easiest possible path The simplest solution for a J40 owner without tools is: Take it to a Land Cruiser specialist and install a Toyota 60-series power steering box conversion. This is the most common J40 upgrade worldwide. 💡 If you want, I can also show you: The easiest J40 power steering conversion ever designed (almost bolt-in) The cheapest conversion using Toyota Hilux parts The mistake that cracks the J40 frame during conversion Those three things save most people a lot of money and frustration."
+akber_khan-00347,Akbar Khan,2026-03-11T21:15:39,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00348,Akbar Khan,2026-03-11T21:15:53,David,keyword_or_amount,chassis|j40|land cruiser|plates|power steering|steering|weld|welder,0,0,"nd do bolt on kits exist to conver to haudralic? Yes — bolt-on kits do exist for converting a Land Cruiser J40 to hydraulic power steering, but there’s an important catch: 👉 Almost none are truly 100% bolt-on. They are usually “conversion kits” that reduce fabrication, but most still require some welding or drilling. Example hydraulic conversion kits for the J40 Complete Saginaw power steering kit A typical example is a Saginaw conversion kit like the one from Cruiser Solutions. It normally includes: power steering gearbox steering shaft pump pump bracket mounting plate pitman arm drag link high and low pressure hoses pulley and belt system These kits run roughly $1,100–$1,600 depending on completeness. Installation reality Even with a kit: Typical work required: Weld steering box mounting plate to frame Drill or cut hole in front crossmember Modify steering column Install pump bracket and pulley The steering box mount must be welded because it carries very high steering forces, and installers recommend a certified welder. So the kits are “semi-bolt-on”, not truly plug-and-play. Types of kits you’ll see There are basically three J40 conversion styles. 1️⃣ Saginaw steering conversion Most common worldwide. Uses: GM steering box GM pump Pros: very strong easy parts availability Cons: most fabrication 2️⃣ Toyota mini-truck box conversion Uses steering box from: 1979–1985 Toyota pickup / Hilux Pros: more compact more “Toyota” Cons: still some welding 3️⃣ FJ60 steering box conversion Uses steering from the 60-series Land Cruiser. Pros: extremely robust good steering feel popular with big tyres Cons: slightly more complex install The closest thing to “bolt-on” There are kits that provide all mounting plates and shafts, so you just install the steering box and pump. But even those still require: welding one mount drilling a crossmember There’s no true IKEA-style bolt-on hydraulic kit because the original J40 chassis was never designed for power steering. The real easiest path (most owners do this) Instead of buying a full kit: Most Land Cruiser builders simply install: **Toyota Hilux steering box Saginaw pump custom mount plate** This is cheaper and extremely reliable. ✅ Summary Option Difficulty True bolt-on hydraulic kit ❌ doesn’t really exist Conversion kit ⚠️ some welding required Custom Hilux/FJ60 swap ⚠️ moderate fabrication Electric power steering ✅ easiest install 💡 If you want, I can also show you: The easiest J40 power steering conversion ever done (very clever design) The Hilux parts list that makes the conversion extremely cheap The steering upgrade that makes a J40 drive like a modern 4×4 Those three things are what most serious Land Cruiser builders end up doing."
+akber_khan-00349,Akbar Khan,2026-03-11T21:16:17,David,adjacent_cluster,,0,0,just investigating for myself reallly
+akber_khan-00350,Akbar Khan,2026-03-11T21:16:17,Akbar Khan,adjacent_cluster,,0,0,U need to meet this chap.
+akber_khan-00351,Akbar Khan,2026-03-11T21:16:28,David,adjacent_cluster,,0,0,I have my own ideas about criteria
+akber_khan-00361,Akbar Khan,2026-03-12T21:18:25,David,adjacent_cluster,,0,0,Yeah good. Very helpful chat with your chap earlier and some clear ideas on priorities. Just drove down to old city for the conpany dinner
+akber_khan-00362,Akbar Khan,2026-03-12T21:18:47,Akbar Khan,adjacent_cluster,,0,0,Fantastic !
+akber_khan-00363,Akbar Khan,2026-03-12T21:18:50,Akbar Khan,adjacent_cluster,,0,0,Enjoy
+akber_khan-00364,Akbar Khan,2026-03-12T21:19:38,David,keyword_or_amount,ac|steering,0,0,"Rewire, fix the AC, fix up the steering rack a bit to make steering a bit sharper"
+akber_khan-00365,Akbar Khan,2026-03-12T21:20:15,Akbar Khan,adjacent_cluster,,0,0,You'll love this. So glad
+akber_khan-00367,Akbar Khan,2026-03-12T21:43:47,David,adjacent_cluster,,0,0,"The judge is Naveed Iqbal Tarar @ Model Town Courts, Case No: 48560/2022, Title: Nabeel Saeed etc. versus Public at large etc."
+akber_khan-00390,Akbar Khan,2026-03-15T11:46:41,David,adjacent_cluster,,0,0,Was thinking a nice set where in can see they all get replaced every time
+akber_khan-00391,Akbar Khan,2026-03-15T11:46:45,Akbar Khan,adjacent_cluster,,0,0,Quality issues here. I got most of my stuff online there is this store called total. Very decent let me share the link
+akber_khan-00392,Akbar Khan,2026-03-15T11:47:02,David,adjacent_cluster,,0,0,Thanks
+akber_khan-00393,Akbar Khan,2026-03-15T11:47:16,Akbar Khan,keyword_or_amount,toolsmart,0,0,https://www.toolsmart.pk/collections/total-tools
+akber_khan-00394,Akbar Khan,2026-03-15T11:47:25,Akbar Khan,adjacent_cluster,,0,0,These guys have been by go to
+akber_khan-00395,Akbar Khan,2026-03-15T11:47:35,David,keyword_or_amount,grease gun|torque wrench,0,0,Grease gun? Torque wrench?
+akber_khan-00396,Akbar Khan,2026-03-15T11:48:04,David,keyword_or_amount,breaker bar,0,0,Breaker bar?
+akber_khan-00397,Akbar Khan,2026-03-15T11:49:19,Akbar Khan,keyword_or_amount,grease gun|rust,0,0,Sure. In ur case u might need grease gun.. For example I've been pretty heavily trying to find stuff like rust reformers and good products
+akber_khan-00398,Akbar Khan,2026-03-15T11:49:35,Akbar Khan,keyword_or_amount,rust,0,0,For which this guy was / is my go to. Mostly Rust-Oleum products
+akber_khan-00399,Akbar Khan,2026-03-15T11:49:45,Akbar Khan,adjacent_cluster,,0,0,Stuff people don't use here because it's expensive
+akber_khan-00400,Akbar Khan,2026-03-15T11:49:49,Akbar Khan,adjacent_cluster,,0,0,Under costings etc
+akber_khan-00401,Akbar Khan,2026-03-15T11:50:53,David,adjacent_cluster,,0,0,Hmm. By the time we get to that its likely to be welding time and in the shop
+akber_khan-00402,Akbar Khan,2026-03-15T11:51:26,David,keyword_or_amount,weld,0,0,Never could weld very well.
+akber_khan-00403,Akbar Khan,2026-03-15T11:51:33,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00404,Akbar Khan,2026-03-15T11:51:33,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00405,Akbar Khan,2026-03-15T11:51:33,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00413,Akbar Khan,2026-03-15T11:52:49,Akbar Khan,adjacent_cluster,,0,0,Arc welding. Mostly guys doing SS manifolds and stuff like that
+akber_khan-00414,Akbar Khan,2026-03-15T11:53:15,Akbar Khan,adjacent_cluster,,0,1,VHT & Duplicolor New.pdf • ‎10 pages ‎
+akber_khan-00415,Akbar Khan,2026-03-15T11:53:15,Akbar Khan,adjacent_cluster,,0,1,SprayOn USA.pdf • ‎26 pages ‎
+akber_khan-00416,Akbar Khan,2026-03-15T11:53:58,David,keyword_or_amount,strip,0,0,Well your mate recommended to strip it all out and find the holes and rough patches early on. Something a bit more significant than these
+akber_khan-00417,Akbar Khan,2026-03-15T11:54:44,Akbar Khan,adjacent_cluster,,0,0,Nadir ?
+akber_khan-00418,Akbar Khan,2026-03-15T11:54:50,David,adjacent_cluster,,0,0,Yes
+akber_khan-00419,Akbar Khan,2026-03-15T11:54:59,Akbar Khan,adjacent_cluster,,0,0,He's done these cars to perfection from what I know. So I reckon he knows best
+akber_khan-00422,Akbar Khan,2026-03-15T11:55:22,Akbar Khan,adjacent_cluster,,0,0,I would have to agree with him then
+akber_khan-00423,Akbar Khan,2026-03-15T11:55:53,Akbar Khan,adjacent_cluster,,0,0,Yup. Once everything is out. Depending on the game plan. That's the difference between a great respiration and an average one
+akber_khan-00424,Akbar Khan,2026-03-15T11:56:23,Akbar Khan,adjacent_cluster,,0,0,I used to spend hours in the workshop just polishing. Cleaning. Oiling. Crimping stuff like that for months
+akber_khan-00425,Akbar Khan,2026-03-15T11:56:49,Akbar Khan,keyword_or_amount,wire,0,0,Wire wheeling every single thing
+akber_khan-00426,Akbar Khan,2026-03-15T11:57:00,Akbar Khan,adjacent_cluster,,0,0,Zinc coating bolts and stuff
+akber_khan-00427,Akbar Khan,2026-03-15T11:57:14,David,adjacent_cluster,,0,0,More likely to be patching and drilling out stuck bolts at this early point i feel
+akber_khan-00428,Akbar Khan,2026-03-15T11:57:56,Akbar Khan,keyword_or_amount,paint|primer|rust|weld,0,0,Perhaps. It's got it's points of rust etc. the correct way of course would be to open it up. Clean it up. Weld through primer. Weld. Paint
+akber_khan-00429,Akbar Khan,2026-03-15T11:58:01,David,keyword_or_amount,body,0,0,No better time to make the body sound
+akber_khan-00430,Akbar Khan,2026-03-15T11:58:27,Akbar Khan,keyword_or_amount,sound dampening,0,0,Oh yes. On that note. Sound dampening sheets. Makes a world of a difference. Specially in ur application
+akber_khan-00431,Akbar Khan,2026-03-15T11:59:01,Akbar Khan,keyword_or_amount,roof,0,1,‎
+akber_khan-00432,Akbar Khan,2026-03-15T11:59:48,Akbar Khan,adjacent_cluster,,0,0,This guy is one of the best for interiors. Total. Carpets. Roofs u name it. Customize .. did the black car with him very neat work. Expensive but nearest to OE I've seen
+akber_khan-00433,Akbar Khan,2026-03-15T12:00:44,Akbar Khan,adjacent_cluster,,0,0,Nadir can probably help source u the side seats you wanted. Upholstery etc. This was my guy. Nadir might have his own. His seemed pretty neat too from the pics
+akber_khan-00434,Akbar Khan,2026-03-15T12:04:20,David,keyword_or_amount,body,0,0,"Sure. That seems some way away right now. Ideally someone that can do the electrics (3 days apparently), but also while its all stripped out for that, identify any serious body work needing doing, and fix it whilst its already quite taken apart"
+akber_khan-00435,Akbar Khan,2026-03-15T12:04:21,Akbar Khan,adjacent_cluster,,0,1,Also keep an eye out with these import houses. Real stuff. Great prices. Haven't bought tools from them yet but other stuff. ‎
+akber_khan-00436,Akbar Khan,2026-03-15T12:04:22,Akbar Khan,adjacent_cluster,,0,1,Also keep an eye out with these import houses. Real stuff. Great prices. Haven't bought tools from them yet but other stuff. ‎
+akber_khan-00437,Akbar Khan,2026-03-15T12:05:45,Akbar Khan,keyword_or_amount,wiring,0,0,Makes sense. Wiring is always the number one fuck up for all old cars here. I stripped and replaced most looms of mine also because people had cut sliced and bastardized most of them down to voltage drops ... And or just pure age. Crackling. Grounding issues
+akber_khan-00438,Akbar Khan,2026-03-15T12:06:06,David,adjacent_cluster,,0,0,Yeah. Full reset on that seems wise
+akber_khan-00439,Akbar Khan,2026-03-15T12:06:11,Akbar Khan,adjacent_cluster,,0,0,The white car for example had idle issues. For a year before I found a bad fucking ground
+akber_khan-00440,Akbar Khan,2026-03-15T12:06:35,David,keyword_or_amount,body,0,0,And its the best opportunity probably to check the body
+akber_khan-00441,Akbar Khan,2026-03-15T12:06:38,Akbar Khan,adjacent_cluster,,0,0,I would. And it seems much easier on ur car. Why not. Broken connectors all that
+akber_khan-00442,Akbar Khan,2026-03-15T12:07:05,David,adjacent_cluster,,0,0,"Exactly, its not exactly formula e"
+akber_khan-00443,Akbar Khan,2026-03-15T12:07:08,Akbar Khan,keyword_or_amount,engine|harness|jeep,0,0,Agreed. I mean. Just two sets really. Engine harness and accessories across the jeep
+akber_khan-00444,Akbar Khan,2026-03-15T12:07:26,Akbar Khan,adjacent_cluster,,0,0,3 days also makes sense
+akber_khan-00445,Akbar Khan,2026-03-15T12:09:12,David,keyword_or_amount,order,0,0,Assuming it makes sense in this order though all fluids need replacement
+akber_khan-00446,Akbar Khan,2026-03-15T12:09:40,Akbar Khan,adjacent_cluster,,0,0,I never worked around a detailed plan. I just saw something fucked I didn't like and I'd go for it.. brackets. Coatings . Stuff like that. Broken stuff.
+akber_khan-00447,Akbar Khan,2026-03-15T12:10:18,David,keyword_or_amount,oil,0,0,I could probably manage to not fuck up an oil change too much
+akber_khan-00448,Akbar Khan,2026-03-15T12:10:49,Akbar Khan,keyword_or_amount,flush,0,0,Yeah. The usual sequence... See if they are currently okay. If so.. check for leaks in all relevant places. If u find any. Resolve. Test again. Gaskets whatever. Once okay... Clean up the bay. Watch again. Keep cardboards under the car to triple check. Then flush. Replace. Service. Enjoy !
+akber_khan-00449,Akbar Khan,2026-03-15T12:11:37,Akbar Khan,adjacent_cluster,,0,0,You won't. Super easy... Just don't imagine u or anyone else wanting to do it in our summers . That's another thing. Pure torture in summers. So move fast I reckon.
+akber_khan-00450,Akbar Khan,2026-03-15T12:12:47,David,keyword_or_amount,ac,0,0,"Hmm, speaking of summer. The AC"
+akber_khan-00451,Akbar Khan,2026-03-15T12:12:52,Akbar Khan,keyword_or_amount,electrical|heat shrink|wiring,0,0,When they do wiring here. They typically don't use imported stuff like the electrical tape they use... It's just electricians tape. Buy the real stuff and ask them to use that.... Broken connections are usually just sliced rather than soder or spade connectors and heat shrink.. buy that stuff and tell them to use it. No exceptions
+akber_khan-00452,Akbar Khan,2026-03-15T12:13:04,Akbar Khan,adjacent_cluster,,0,0,I got the best guy. Childhood friend
+akber_khan-00453,Akbar Khan,2026-03-15T12:13:18,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00454,Akbar Khan,2026-03-15T12:14:09,Akbar Khan,keyword_or_amount,daraz,0,0,Oh and don't underestimate daraz.. I found a lot of stuff there for in from china.
+akber_khan-00455,Akbar Khan,2026-03-15T12:14:32,Akbar Khan,keyword_or_amount,order,0,0,Not that china is some bench mark. Let me give some examples. Order now. Best to have them at home
+akber_khan-00456,Akbar Khan,2026-03-15T12:15:16,Akbar Khan,keyword_or_amount,daraz|electrical|harness|loom|wiring,0,0,15 Meter 9/15/19/25MM Heat-resistant Adhesive Cloth Fabric Tape For Automotive Cable Tape Harness Wiring Loom Electrical Heat Tape | https://s.daraz.pk/s.1JGrj
+akber_khan-00457,Akbar Khan,2026-03-15T12:15:48,David,adjacent_cluster,,0,0,"Yeah, its not fun to work with bad tools"
+akber_khan-00459,Akbar Khan,2026-03-15T12:17:54,Akbar Khan,keyword_or_amount,connector|daraz|electrical|wire,0,0,2.8mm 2/3/4/6/9 pin Automotive 2.8 Electrical wire Connector Male Female cable terminal plug Kits Motorcycle ebike car | https://s.daraz.pk/s.1JGtu
+akber_khan-00460,Akbar Khan,2026-03-15T12:18:20,David,adjacent_cluster,,0,0,Maybe i'll just go and rip out the interior so i can get an idea of the damage
+akber_khan-00461,Akbar Khan,2026-03-15T12:18:44,Akbar Khan,adjacent_cluster,,0,0,Well the rain has stopped. Why don't u bring it over
+akber_khan-00462,Akbar Khan,2026-03-15T12:19:03,David,adjacent_cluster,,0,0,Sure. Lets have a look
+akber_khan-00464,Akbar Khan,2026-03-15T12:19:39,Akbar Khan,adjacent_cluster,,0,1,Just random stuff like this. Makes such a difference. They don't use stuff like this here... Cut... Twist ... Tape. Fuck that ‎
+akber_khan-00465,Akbar Khan,2026-03-15T12:21:55,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00466,Akbar Khan,2026-03-15T12:21:56,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00467,Akbar Khan,2026-03-15T12:22:24,Akbar Khan,keyword_or_amount,daraz,0,0,I think u get the idea. Daraz has been my best friend. There are better qualities there. Just need to explore.
+akber_khan-00468,Akbar Khan,2026-03-15T12:23:58,Akbar Khan,keyword_or_amount,,1,1,Not bad. Saw the same thing being sold for 46k a while back. But not on this site / import ‎
+akber_khan-00469,Akbar Khan,2026-03-15T12:23:59,Akbar Khan,keyword_or_amount,,1,1,Not bad. Saw the same thing being sold for 46k a while back. But not on this site / import ‎
+akber_khan-00470,Akbar Khan,2026-03-15T12:24:06,Akbar Khan,adjacent_cluster,,0,0,Not much in to power tools myself though
+akber_khan-00471,Akbar Khan,2026-03-15T16:22:24,Akbar Khan,adjacent_cluster,,0,0,https://youtu.be/9EM_sBBFZ1c?si=Hvy_CNzuVVu_Lpoc
+akber_khan-00472,Akbar Khan,2026-03-15T16:22:40,Akbar Khan,keyword_or_amount,wiring,0,0,"Tons of restorations online. And wiring diagrams and mechanical [15/03/2026, 16:27:14] Akbar Khan:"
+akber_khan-00473,Akbar Khan,2026-03-15T16:27:15,Akbar Khan,adjacent_cluster,,0,1,Those doors on the side are foot vents... What do u know ‎
+akber_khan-00474,Akbar Khan,2026-03-15T16:27:16,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00475,Akbar Khan,2026-03-15T16:27:17,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00476,Akbar Khan,2026-03-15T16:27:18,Akbar Khan,adjacent_cluster,,0,1,Those doors on the side are foot vents... What do u know ‎
+akber_khan-00477,Akbar Khan,2026-03-15T16:28:17,Akbar Khan,keyword_or_amount,speaker,0,1,Yup. Speaker was given preference over the fuse box mounting hahaha ‎
+akber_khan-00478,Akbar Khan,2026-03-15T16:28:19,Akbar Khan,keyword_or_amount,speaker,0,1,Yup. Speaker was given preference over the fuse box mounting hahaha ‎
+akber_khan-00479,Akbar Khan,2026-03-15T16:29:56,Akbar Khan,keyword_or_amount,body|rust,0,0,Apparently they put rubber lining between all metal parts / body parts for noise and squeek and rust prevention
+akber_khan-00480,Akbar Khan,2026-03-15T17:03:06,David,adjacent_cluster,,0,0,what? I stick my feet out of them?
+akber_khan-00481,Akbar Khan,2026-03-15T17:03:57,David,adjacent_cluster,,0,0,yeah. I have a few hours to spend watching those I think
+akber_khan-00482,Akbar Khan,2026-03-15T17:04:38,David,keyword_or_amount,wiring,0,0,"yeah. best first step - rip out all wiring, all crappy half-arsed sound-proofing"
+akber_khan-00483,Akbar Khan,2026-03-15T17:05:27,David,adjacent_cluster,,0,0,yep. and lots of rubber when it gets put back together. just need to find all the right shaped bits
+akber_khan-00484,Akbar Khan,2026-03-15T18:19:40,David,adjacent_cluster,,0,1,Not the same mark but ‎
+akber_khan-00485,Akbar Khan,2026-03-15T18:21:44,David,keyword_or_amount,order,0,0,"damn, If I have to order all of this its on the critical path"
+akber_khan-00486,Akbar Khan,2026-03-15T18:22:02,David,adjacent_cluster,,0,0,doesn’t it take ages to come from china?
+akber_khan-00487,Akbar Khan,2026-03-15T18:22:58,David,adjacent_cluster,,0,0,"oh, its quite quick"
+akber_khan-00488,Akbar Khan,2026-03-15T18:25:46,David,adjacent_cluster,,0,0,god. but what is a full set. maybe chatGPT can generate it for me
+akber_khan-00489,Akbar Khan,2026-03-15T18:28:03,David,keyword_or_amount,battery|body|brake|cable sleeve|chassis|connector|crimp|daraz|dash|electrical|engine|floor|grommet|harness|heat shrink|j40|land cruiser|led|loom|number plate|oil|order|wire|wiring,9,0,"Good — if you want to completely re-wire a 1978 Toyota Land Cruiser J40, I’ll give you three things: The exact Daraz shopping list (everything needed) The ideal modern wiring architecture for a J40 The fuse box layout + wiring plan This is essentially the same method professional restorers use for old Land Cruisers. 1️⃣ The Core Re-Wiring Kit (Buy First) Universal 21‑Circuit Automotive Wiring Harness Kit Price not available • Go to merchant Universal Extra‑Long 21‑Circuit Car Wiring Harness Price not available • Go to merchant 21‑Circuit Hot Rod Wiring Harness Kit Price not available • Go to merchant Universal 21‑Circuit Vehicle Electrical Wiring Kit Price not available • Go to merchant A 21-circuit harness kit is ideal for a classic 4x4. Typical circuits included: headlights brake lights ignition coil horn turn signals gauges wipers radio dome light backup lights fuel pump accessories These harnesses are colour-coded and labelled to simplify installation. 2️⃣ Everything Else You Must Buy (Daraz List) Search these exact items on Daraz. Automotive Wire Kit Buy stranded copper automotive wire. Recommended gauges: Gauge Use 4 AWG battery cables 10 AWG alternator / main power 12 AWG headlights 14 AWG ignition 16 AWG accessories 18 AWG gauges Automotive wiring uses the AWG system where lower numbers mean thicker wire capable of carrying more current. Search: automotive primary wire kit 12v car wire roll stranded copper automotive wire Connectors Kit Search: automotive electrical connector kit crimp terminal kit ring terminal assortment bullet connector kit You will need: ring terminals spade connectors bullet connectors heat shrink solder sleeves Wire Protection Search: split wire loom tubing braided cable sleeve rubber firewall grommets Sizes: 6mm 10mm 16mm 25mm Fuse and Relay System Search: 12 way blade fuse box 12v relay with socket relay block automotive Minimum relays: headlights horn auxiliary lights radiator fan accessories Battery and Starter Cables Search: 4 gauge battery cable kit heavy duty battery terminals starter cable automotive Ground Straps Classic Land Cruisers rely heavily on chassis ground. Search: braided ground strap engine ground cable Minimum grounds: battery → chassis engine → frame body → frame Lighting Connectors Search: H4 headlight connector indicator bulb socket tail light socket Tools (if doing it yourself) Search: ratcheting crimp tool wire stripper heat gun multimeter soldering iron 3️⃣ Ideal Modern Wiring Architecture for a J40 A good wiring system splits the truck into four harness sections. 1️⃣ Engine Harness Runs to: starter alternator ignition coil temperature sender oil pressure sender electric fan 2️⃣ Front Lighting Harness Runs to: headlights indicators parking lights horn 3️⃣ Dash Harness Runs to: ignition switch gauges heater fan wipers radio switches 4️⃣ Rear Harness Runs to: tail lights brake lights reverse lights fuel sender number plate light A wiring harness bundles these cables together so they are protected from vibration, abrasion, and moisture. 4️⃣ Ideal Fuse Box Layout Mount the fuse box under the dashboard. Suggested layout: Fuse Circuit 1 ignition 2 headlights 3 tail lights 4 indicators 5 horn 6 wipers 7 heater 8 gauges 9 radio 10 reverse lights 11 accessories 12 spare 5️⃣ Headlight Relay Upgrade (Important) Old Land Cruisers ran headlights directly through the switch. Upgrade: battery ↓ relay ↓ headlights Benefits: brighter lights longer switch life less voltage drop 6️⃣ Where to Route Wires in a J40 Typical routing: Engine bay → firewall grommet → fuse box under dash Rear harness: Dash → along driver side floor → rear lights 7️⃣ Estimated Cost in Pakistan Item PKR Harness kit 20k – 40k Wire 6k Connectors 4k Fuse / relay 5k Loom 3k Tools 8k Total: 45k – 70k PKR 8️⃣ Pro Tips for a J40 Rewire Do these while you're at it: upgrade headlights to H4 add USB charger add aux fuse block add winch wiring add LED light bar relay This makes the truck far more usable. ✅ If you want, I can also show you: 1️⃣ The full wiring diagram for a J40 (clean modern version) 2️⃣ The easiest way to wire a Toyota 2F engine 3️⃣ The exact Daraz order links for everything 4️⃣ The most common wiring mistakes people make on Land Cruisers These will save you days of work and a lot of headaches."
+akber_khan-00490,Akbar Khan,2026-03-15T18:29:51,David,keyword_or_amount,aliexpress|harness|wiring,0,0,https://www.aliexpress.com/w/wholesale-21-Circuit-Wiring-Harness.html?spm=a2g0o.detail.search.0
+akber_khan-00491,Akbar Khan,2026-03-15T18:31:28,David,keyword_or_amount,aliexpress,2,0,"= https://www.aliexpress.com/item/1005005648187594.html?spm=a2g0o.productlist.main.2.2da3WMVZWMVZay&algo_pvid=1d9ac62e-054f-4963-81a1-4cb070d2ed3f&algo_exp_id=1d9ac62e-054f-4963-81a1-4cb070d2ed3f-1&pdp_ext_f=%7B%22order%22%3A%223%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21PKR%2172615.47%2143569.91%21%21%21231.38%21138.83%21%4021010c9a17735813780056394e3fae%2112000033877562837%21sea%21PK%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A4febc4d%3Bm03_new_user%3A-29895&curPageLogUid=GvroTKlKyFtn&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005005648187594%7C_p_origin_prod%3A PKR43,570"
+akber_khan-00492,Akbar Khan,2026-03-15T18:32:25,David,keyword_or_amount,aliexpress,1,0,https://www.aliexpress.com/item/1005006982044511.html?spm=a2g0o.productlist.main.4.6cf9BXndBXnd6a&algo_pvid=440f523a-1c5c-4883-91bb-396bf5891e58&algo_exp_id=440f523a-1c5c-4883-91bb-396bf5891e58-3&pdp_ext_f=%7B%22order%22%3A%221%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21PKR%2140773.63%2134248.97%21%21%21129.92%21109.13%21%40213ba0c517735815208468361e2c03%2112000038931131528%21sea%21PK%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A4febc4d%3Bm03_new_user%3A-29895&curPageLogUid=1qkAa8YMfGhW&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005006982044511%7C_p_origin_prod%3A ‎<This message was edited>
+akber_khan-00493,Akbar Khan,2026-03-15T18:32:52,David,keyword_or_amount,harness|wiring,1,0,"wiring harness PKR34,249"
+akber_khan-00494,Akbar Khan,2026-03-15T18:34:28,David,keyword_or_amount,aliexpress|wiring,2,0,"https://www.aliexpress.com/item/1005008588724254.html?spm=a2g0o.productlist.main.6.23c6FTDCFTDCV0&algo_pvid=6ce191d3-62c0-4729-8c7e-fe8888a769c8&algo_exp_id=6ce191d3-62c0-4729-8c7e-fe8888a769c8-5&pdp_ext_f=%7B%22order%22%3A%2210%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21PKR%2137346.53%2128009.90%21%21%21119.00%2189.25%21%402101246417735816012858256e0bf7%2112000045853258888%21sea%21PK%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A4febc4d%3Bm03_new_user%3A-29895&curPageLogUid=KZlXM31pXvUn&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005008588724254%7C_p_origin_prod%3A hot rod wiring? PKR28,010 ‎<This message was edited>"
+akber_khan-00495,Akbar Khan,2026-03-15T18:35:48,David,keyword_or_amount,aliexpress|electrical|wiring,2,0,"https://www.aliexpress.com/item/1005005648187594.html?spm=a2g0o.productlist.main.4.4f53QpbnQpbnMr&algo_pvid=33ffc506-d482-417b-b87f-6a6cadb9e6dd&algo_exp_id=33ffc506-d482-417b-b87f-6a6cadb9e6dd-3&pdp_ext_f=%7B%22order%22%3A%223%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21PKR%2172615.47%2143569.91%21%21%21231.38%21138.83%21%402101529317735816973923012e45e3%2112000033877562837%21sea%21PK%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A4febc4d%3Bm03_new_user%3A-29895&curPageLogUid=F96spRL67Cpt&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005005648187594%7C_p_origin_prod%3A Universal 21‑Circuit Vehicle Electrical Wiring Kit - PKR43,570"
+akber_khan-00496,Akbar Khan,2026-03-15T19:11:37,David,keyword_or_amount,harness|wiring,0,0,"hmm. i’m getting lost in this. now its saying I can get 70% of this from a “Universal 12-Circuit Wiring Harness Kit"""
+akber_khan-00497,Akbar Khan,2026-03-15T19:12:00,David,keyword_or_amount,battery|brake|connector|cover|electrical|fj40|harness|j40|loom|wire|wiring,0,0,"What this kit already includes A universal wiring harness like this normally includes: pre-wired 12-circuit fuse block labelled wires for each circuit horn relay headlight wiring turn signal wiring alternator plug ignition switch connectors hazard flasher headlight dimmer connector These kits are designed for classic cars, hot rods, trucks, and custom vehicles and cover the main circuits such as ignition, lights, gauges, horn, wipers, etc. Why this is ideal for your 1978 J40 The FJ40 electrical system is simple and fits comfortably within 10–14 circuits, including: ignition headlights brake lights tail lights indicators horn wipers gauges heater fan radio reverse lights So a 12-circuit harness usually covers everything needed for the truck. What you still add to the cart Add these extra items alongside the harness: 4 AWG battery cable (starter cable) 6 AWG cable (alternator charge wire) automotive connector kit split loom tubing Those are cheap and complete the install."
+akber_khan-00498,Akbar Khan,2026-03-15T19:16:49,David,keyword_or_amount,electrical|wiring,0,0,"I’d be quite tempted to do the wiring myself (I did mention my year of electrical engineering at university), but at the same time the car sort of needs to be fully taken apart. The Corolla might have to get chucked into street parking for a bit"
+akber_khan-00499,Akbar Khan,2026-03-15T19:17:45,David,adjacent_cluster,,0,0,which would mean brining welders/fixers to the house - not having all their garage amenities
+akber_khan-00500,Akbar Khan,2026-03-15T19:22:33,Akbar Khan,adjacent_cluster,,0,0,Yo. Sorry was away from the phone
+akber_khan-00501,Akbar Khan,2026-03-15T19:22:57,David,adjacent_cluster,,0,0,"oh, don’t worry, i’ll be chucking you random shit like this at all times i am sure"
+akber_khan-00502,Akbar Khan,2026-03-15T19:23:48,Akbar Khan,keyword_or_amount,steering,0,0,You want an electric steering. Rids of half the components also
+akber_khan-00503,Akbar Khan,2026-03-15T19:24:53,Akbar Khan,adjacent_cluster,,0,0,Interesting finds... But before we get into it. Me personally. I'd check Peshawar markets and Bilal ganj and all or that to see what's available
+akber_khan-00504,Akbar Khan,2026-03-15T19:25:12,Akbar Khan,adjacent_cluster,,0,0,Why get Chinese if we can perhaps potentially get the original from some half cut. Or near
+akber_khan-00505,Akbar Khan,2026-03-15T19:25:48,David,keyword_or_amount,steering,0,0,oh yeah. forgot the steering
+akber_khan-00506,Akbar Khan,2026-03-15T19:29:39,Akbar Khan,keyword_or_amount,harness|wire,0,0,The custom harness he's talking about is basically taking all of what's in the car out and respinning it with new wire from their coils .. depending on how gooder job it is. My concern won't be that it won't work. Rather again. Pin to pin which it likely will be. But color coding usually suffers for the next guy to follow. But then again. With power testers that's sort of a none issue as well
+akber_khan-00507,Akbar Khan,2026-03-15T19:30:16,David,keyword_or_amount,wire,0,0,what I am saying is I will personally rip out every wire
+akber_khan-00508,Akbar Khan,2026-03-15T19:30:26,David,adjacent_cluster,,0,0,and put it back in as perfect as i can
+akber_khan-00509,Akbar Khan,2026-03-15T19:30:40,David,adjacent_cluster,,0,0,just that challenge
+akber_khan-00510,Akbar Khan,2026-03-15T19:30:49,Akbar Khan,keyword_or_amount,body,0,0,I have a guy who can help with the body work at home but highly difficult. Expect to have piecing going away if u plan on doing this at home. Quite the task. No harm meeting him he is half nuts but very good at his trade
+akber_khan-00511,Akbar Khan,2026-03-15T19:30:49,David,keyword_or_amount,chassis,0,0,just before doing that - chassis fixes
+akber_khan-00512,Akbar Khan,2026-03-15T19:31:41,Akbar Khan,keyword_or_amount,chassis,0,0,Yup. Chassis means it's in the air or jacks etc. Lifts required etc
+akber_khan-00513,Akbar Khan,2026-03-15T19:33:00,Akbar Khan,keyword_or_amount,wiring,0,0,The thing about wiring is... If I was u. Do it first. Doesn't have to go back to its place perfectly. Leave it loose. In it's general position (if u plan on not removing the cabin entirely for a full restore) . Then one can work around it and clip it down. That's what I did in a lot of ways
+akber_khan-00514,Akbar Khan,2026-03-15T19:33:39,Akbar Khan,keyword_or_amount,wiring,0,0,But you will notice. Once all the wiring junk comes out. There is going to be very little wiring left. Most of this stuff I saw were unnecessary relays and shit like that. Should all be gone
+akber_khan-00515,Akbar Khan,2026-03-15T19:34:02,Akbar Khan,keyword_or_amount,order,0,0,How about we meet the painter at home. Have him take a look and get an idea and kind of get a game plan in order
+akber_khan-00516,Akbar Khan,2026-03-15T19:35:49,Akbar Khan,adjacent_cluster,,0,0,Your car in my estimate isn't even 30 percent as far gone as what nadir is showing u
+akber_khan-00517,Akbar Khan,2026-03-15T19:36:19,David,adjacent_cluster,,0,0,obviously
+akber_khan-00518,Akbar Khan,2026-03-15T19:36:51,Akbar Khan,adjacent_cluster,,0,0,Lol. Just so we are on the same page :P
+akber_khan-00519,Akbar Khan,2026-03-15T19:37:06,Akbar Khan,adjacent_cluster,,0,0,Calling the painter. Let's have him take a looksie
+akber_khan-00520,Akbar Khan,2026-03-15T19:37:40,Akbar Khan,keyword_or_amount,panel,0,0,By painter I mean. Denter . Panel guy. Painter
+akber_khan-00521,Akbar Khan,2026-03-15T19:38:51,David,adjacent_cluster,,0,0,yeah man there are no dents
+akber_khan-00522,Akbar Khan,2026-03-15T19:38:58,David,adjacent_cluster,,0,0,that don’t give character anyway
+akber_khan-00523,Akbar Khan,2026-03-15T19:39:14,David,adjacent_cluster,,0,0,not a concern. its whats under the carpets and around the sills that worries me
+akber_khan-00524,Akbar Khan,2026-03-15T19:39:26,Akbar Khan,keyword_or_amount,rust,0,0,I mean the rust mission. Check. He will give an overview
+akber_khan-00525,Akbar Khan,2026-03-15T19:40:06,Akbar Khan,keyword_or_amount,wire|wiring,0,0,My guess. Wire wheel and spot resprays . Let's see . He can bring a compressor or whatever to yours if u mean to go at the wiring urself .
+akber_khan-00526,Akbar Khan,2026-03-15T19:40:23,David,keyword_or_amount,chassis|rust,0,0,"the chassis, and rust"
+akber_khan-00527,Akbar Khan,2026-03-15T19:40:28,Akbar Khan,adjacent_cluster,,0,0,What he can't do. He can take with him. Sort that particular item and bring it back.
+akber_khan-00528,Akbar Khan,2026-03-15T19:40:30,David,adjacent_cluster,,0,0,"thats my only big concern, and unknown"
+akber_khan-00529,Akbar Khan,2026-03-15T19:40:33,Akbar Khan,adjacent_cluster,,0,0,Yup
+akber_khan-00535,Akbar Khan,2026-03-15T19:42:47,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00537,Akbar Khan,2026-03-15T19:45:13,Akbar Khan,adjacent_cluster,,0,0,Exactly
+akber_khan-00538,Akbar Khan,2026-03-15T19:45:36,David,keyword_or_amount,strip,0,0,"I could strip it down to 1 seat, drivable, but able to see the status this week"
+akber_khan-00539,Akbar Khan,2026-03-15T19:45:52,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00540,Akbar Khan,2026-03-15T19:45:52,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00541,Akbar Khan,2026-03-15T19:45:53,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00551,Akbar Khan,2026-03-15T19:45:55,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00552,Akbar Khan,2026-03-15T19:46:08,Akbar Khan,adjacent_cluster,,0,0,Like this was just yesterday. And I voice note and observations etc
+akber_khan-00553,Akbar Khan,2026-03-15T19:46:13,David,adjacent_cluster,,0,0,fair play
+akber_khan-00554,Akbar Khan,2026-03-15T19:46:34,David,keyword_or_amount,welder,0,0,"but maybe i’ll watch one time, and then buy an arc welder"
+akber_khan-00555,Akbar Khan,2026-03-15T19:46:59,David,adjacent_cluster,,0,0,trying to work out the horses for the courses
+akber_khan-00556,Akbar Khan,2026-03-15T19:47:12,Akbar Khan,adjacent_cluster,,0,0,Doable . Not that hard .. couple of belt Sanders. Stuff like that
+akber_khan-00557,Akbar Khan,2026-03-15T19:47:32,Akbar Khan,adjacent_cluster,,0,0,Let's have a chat with the lad. Just reaching out to him to show up tomorrow for a review
+akber_khan-00565,Akbar Khan,2026-03-15T19:49:19,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00566,Akbar Khan,2026-03-15T19:50:01,David,adjacent_cluster,,0,0,haha electrician - a man who once owned a screwdriver
+akber_khan-00567,Akbar Khan,2026-03-15T19:50:32,Akbar Khan,adjacent_cluster,,0,0,Lol. Some aren't that bad :P. U know electrics. I didn't. So I needed help. But I did do it all my way
+akber_khan-00568,Akbar Khan,2026-03-15T19:53:07,David,keyword_or_amount,j40|roof|wiring,0,0,"anyway, sure help can be brought in. its sounding a bit like the plan is: 1) Expell the corolla outside 2) Bring the j40 under the roof 3) Remove the entire roof, back doors, front windows etc - send them for fixing 4) Rip out all wiring 5) Re-install from the kit + the new power wires"
+akber_khan-00569,Akbar Khan,2026-03-15T19:53:27,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00570,Akbar Khan,2026-03-15T19:53:28,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00571,Akbar Khan,2026-03-15T19:53:28,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00583,Akbar Khan,2026-03-15T19:53:32,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00584,Akbar Khan,2026-03-15T19:53:32,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00585,Akbar Khan,2026-03-15T19:53:36,David,adjacent_cluster,,0,0,4a) Remove all insulation etc etc
+akber_khan-00586,Akbar Khan,2026-03-15T19:53:47,Akbar Khan,keyword_or_amount,wiring,0,0,Some before and Afters of the civic. Full album. But to sort of give an idea of the wiring cleanup and generally
+akber_khan-00587,Akbar Khan,2026-03-15T19:53:48,David,keyword_or_amount,welder,0,0,4b) Check where we need to bring in a welder
+akber_khan-00588,Akbar Khan,2026-03-15T19:54:42,David,adjacent_cluster,,0,0,"i’m going to dig you out an image in a minute of how we install our servers at clients - and their cabling [15/03/2026, 19:55:01] Akbar Khan:"
+akber_khan-00589,Akbar Khan,2026-03-15T19:55:01,Akbar Khan,adjacent_cluster,,0,1,Basic before and Afters ‎
+akber_khan-00590,Akbar Khan,2026-03-15T19:55:02,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00602,Akbar Khan,2026-03-15T19:57:10,Akbar Khan,adjacent_cluster,,0,0,After I saw it... Suddenly I realized maybe the Flintstones owned it previously
+akber_khan-00603,Akbar Khan,2026-03-15T19:59:16,David,adjacent_cluster,,0,0,"haha. 600bhp, but only with linford cristie driving"
+akber_khan-00604,Akbar Khan,2026-03-15T19:59:28,Akbar Khan,adjacent_cluster,,0,0,Lol
+akber_khan-00605,Akbar Khan,2026-03-15T21:44:49,David,keyword_or_amount,electrical|wire,0,0,now i’m confused. I was ready to spend lakhs on alibaba for bits a pieces and now i’m not sure at all what I should be buying. and the electrical wire is really expensive
+akber_khan-00606,Akbar Khan,2026-03-15T21:45:16,Akbar Khan,adjacent_cluster,,0,0,The idea is to hold abhi. Just for a day or two
+akber_khan-00607,Akbar Khan,2026-03-15T21:45:24,David,adjacent_cluster,,0,0,maybe i’ll go back to browsing tools
+akber_khan-00608,Akbar Khan,2026-03-15T21:45:45,Akbar Khan,adjacent_cluster,,0,0,Let's talk to the painter. The medical guy. Electrician. And show him the research and expectations
+akber_khan-00610,Akbar Khan,2026-03-15T21:46:01,David,adjacent_cluster,,0,0,sure. just itching to get into it
+akber_khan-00611,Akbar Khan,2026-03-15T21:53:18,Akbar Khan,adjacent_cluster,,0,0,I know :)
+akber_khan-00612,Akbar Khan,2026-03-15T21:53:41,Akbar Khan,adjacent_cluster,,0,0,Just 2 or 3 odd days of prep / resources . Tools u should have anyways.
+akber_khan-00613,Akbar Khan,2026-03-15T22:08:41,David,keyword_or_amount,toolsmart,0,0,https://www.toolsmart.pk/products/licota-90pcs-socket-and-tools-set
+akber_khan-00614,Akbar Khan,2026-03-15T22:09:23,David,adjacent_cluster,,0,0,"I even have most of these spanners, nice stanley ones, but one nice case, with all tools always put back in their space"
+akber_khan-00615,Akbar Khan,2026-03-15T22:09:44,David,adjacent_cluster,,0,0,"cant stand working with tools that bend, go shit etc"
+akber_khan-00616,Akbar Khan,2026-03-15T22:11:45,David,adjacent_cluster,,0,0,a bunch of knifes to cut up the previous owners dreams
+akber_khan-00617,Akbar Khan,2026-03-15T22:13:46,David,adjacent_cluster,,0,0,you have no idea how much of this I inherited and sacrificed because I was living here
+akber_khan-00618,Akbar Khan,2026-03-15T22:14:22,Akbar Khan,adjacent_cluster,,0,0,Lol I totally understand bro
+akber_khan-00619,Akbar Khan,2026-03-15T22:14:43,Akbar Khan,adjacent_cluster,,0,0,Btw. I found a nice toolbox much like my own on this import site. Just trying to find it again
+akber_khan-00620,Akbar Khan,2026-03-15T22:17:00,Akbar Khan,keyword_or_amount,toolsmart,0,0,https://www.toolsmart.pk/products/licota-57pcs-tool-box-set-w-steel-box
+akber_khan-00621,Akbar Khan,2026-03-15T22:17:09,Akbar Khan,adjacent_cluster,,0,0,"Same box but I use those ""total"" tools"
+akber_khan-00635,Akbar Khan,2026-03-15T22:21:59,Akbar Khan,adjacent_cluster,,0,0,I know it's Chinese... But it's much better then most crap I bought here
+akber_khan-00636,Akbar Khan,2026-03-15T22:24:45,Akbar Khan,adjacent_cluster,,0,1,These guys too ingco ‎
+akber_khan-00637,Akbar Khan,2026-03-15T22:24:46,Akbar Khan,adjacent_cluster,,0,1,These guys too ingco ‎
+akber_khan-00638,Akbar Khan,2026-03-15T22:26:19,Akbar Khan,keyword_or_amount,electrical,0,0,Bolt taps. T rods. The electrical stuff. Power testers. Volt meters etc you'll want. U know this part better . Strippers and all that. Crimping tools
+akber_khan-00639,Akbar Khan,2026-03-15T22:26:27,Akbar Khan,keyword_or_amount,cable dressing,0,0,Cable dressing. Etc
+akber_khan-00640,Akbar Khan,2026-03-15T22:34:54,David,adjacent_cluster,,0,1,‎
+akber_khan-00641,Akbar Khan,2026-03-15T22:35:13,David,adjacent_cluster,,0,0,"didn;t see your messages, will review. this was my list"
+akber_khan-00642,Akbar Khan,2026-03-15T22:37:19,Akbar Khan,adjacent_cluster,,0,0,Air impact. You'll need a compressor of course. Total has those too. Consider Jack stands Hyrolic jack Wearable headgear light etc. ‎<This message was edited>
+akber_khan-00643,Akbar Khan,2026-03-15T22:38:43,Akbar Khan,adjacent_cluster,,0,0,U get an extension with angle grinders .. basically turns them into an elongated sander. I forget the name
+akber_khan-00644,Akbar Khan,2026-03-15T22:39:31,Akbar Khan,keyword_or_amount,cable dressing|heat shrink,0,0,You'll also want / need lots of heat shrink tubing. Cable dressing. Tapes. Connectors etc. Crimping tools etc. some additional items mentioned above in my suggested list
+akber_khan-00645,Akbar Khan,2026-03-15T22:39:34,David,adjacent_cluster,,0,0,couldn’t find the attachements
+akber_khan-00646,Akbar Khan,2026-03-15T22:39:40,Akbar Khan,keyword_or_amount,belt sander,0,0,Belt sander
+akber_khan-00647,Akbar Khan,2026-03-15T22:39:43,David,adjacent_cluster,,0,0,am assuming to rarely have to use
+akber_khan-00648,Akbar Khan,2026-03-15T22:39:54,David,adjacent_cluster,,0,0,hmm. not sure about belt sanding anything
+akber_khan-00649,Akbar Khan,2026-03-15T22:40:13,David,adjacent_cluster,,0,0,cheaper than the sand blaster I guess
+akber_khan-00650,Akbar Khan,2026-03-15T22:40:19,Akbar Khan,adjacent_cluster,,0,0,U will. Trust me. Or u can sand on a rotary
+akber_khan-00651,Akbar Khan,2026-03-15T22:40:37,David,adjacent_cluster,,0,0,flat metal?
+akber_khan-00652,Akbar Khan,2026-03-15T22:40:42,Akbar Khan,adjacent_cluster,,0,0,There is a Desi way to go about it at home also. If u have a compressor. And don't mind making a mess
+akber_khan-00653,Akbar Khan,2026-03-15T22:41:05,David,keyword_or_amount,belt sander,0,0,"oh, don’t worry, i’ve used a belt sander"
+akber_khan-00654,Akbar Khan,2026-03-15T22:41:12,David,adjacent_cluster,,0,0,not on a car though
+akber_khan-00655,Akbar Khan,2026-03-15T22:41:17,Akbar Khan,keyword_or_amount,dremel,0,0,Dremel. Increadably useful
+akber_khan-00656,Akbar Khan,2026-03-15T22:42:04,Akbar Khan,adjacent_cluster,,0,1,Very useful ‎
+akber_khan-00657,Akbar Khan,2026-03-15T22:42:06,Akbar Khan,adjacent_cluster,,0,1,Very useful ‎
+akber_khan-00658,Akbar Khan,2026-03-15T22:42:15,Akbar Khan,adjacent_cluster,,0,0,Cut shorted bolts. Tidy up shit
+akber_khan-00659,Akbar Khan,2026-03-15T22:42:16,David,adjacent_cluster,,0,0,"I don’t want the case, so I can see every tool go back to its position every time anyone leaves"
+akber_khan-00660,Akbar Khan,2026-03-15T22:42:44,David,adjacent_cluster,,0,0,used to have
+akber_khan-00661,Akbar Khan,2026-03-15T22:43:02,David,adjacent_cluster,,0,0,"hmm, post-extraction I assume"
+akber_khan-00662,Akbar Khan,2026-03-15T22:43:49,David,keyword_or_amount,toolsmart,0,0,different site though https://www.toolsmart.pk/search?type=product&q=bench+grinder
+akber_khan-00663,Akbar Khan,2026-03-15T22:43:55,Akbar Khan,keyword_or_amount,tap set,0,1,Tap set for stripped bolts. I'm guessing you'll find a few ‎
+akber_khan-00664,Akbar Khan,2026-03-15T22:43:57,Akbar Khan,keyword_or_amount,tap set,0,1,Tap set for stripped bolts. I'm guessing you'll find a few ‎
+akber_khan-00665,Akbar Khan,2026-03-15T22:44:10,David,adjacent_cluster,,0,0,oh. I have a vintage set of those somewhere
+akber_khan-00667,Akbar Khan,2026-03-15T22:45:24,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00668,Akbar Khan,2026-03-15T22:45:25,Akbar Khan,adjacent_cluster,,0,1,‎
+akber_khan-00669,Akbar Khan,2026-03-15T22:45:38,Akbar Khan,keyword_or_amount,grommet,0,0,Grommet sets.
+akber_khan-00670,Akbar Khan,2026-03-15T22:47:12,Akbar Khan,adjacent_cluster,,0,0,Dielectric grease etc . Copper grease for breaks
+akber_khan-00671,Akbar Khan,2026-03-15T22:48:27,David,keyword_or_amount,order,0,0,hmm. well i’ll just going to to with 1 big tools mart order today I think
+akber_khan-00672,Akbar Khan,2026-03-15T22:48:33,David,adjacent_cluster,,0,0,greaase gun
+akber_khan-00673,Akbar Khan,2026-03-15T22:48:35,David,adjacent_cluster,,0,0,needed that
+akber_khan-00674,Akbar Khan,2026-03-15T22:48:52,David,adjacent_cluster,,0,0,"some stuff its out of stock, like gromets, will get them later"
+akber_khan-00675,Akbar Khan,2026-03-15T22:49:00,Akbar Khan,keyword_or_amount,wiring,0,1,A whole lot of this. Don't get them here. Must for tidy wiring ‎
+akber_khan-00676,Akbar Khan,2026-03-15T22:49:01,Akbar Khan,keyword_or_amount,wiring,0,1,A whole lot of this. Don't get them here. Must for tidy wiring ‎
+akber_khan-00677,Akbar Khan,2026-03-15T22:49:16,Akbar Khan,keyword_or_amount,daraz,0,0,Ok..I found them on daraz etc.
+akber_khan-00678,Akbar Khan,2026-03-15T22:50:00,Akbar Khan,adjacent_cluster,,0,1,Cable sleeves or pipes ‎
+akber_khan-00679,Akbar Khan,2026-03-15T22:50:02,Akbar Khan,adjacent_cluster,,0,1,Cable sleeves or pipes ‎
+akber_khan-00680,Akbar Khan,2026-03-15T22:50:35,David,adjacent_cluster,,0,1,‎
+akber_khan-00682,Akbar Khan,2026-03-15T22:50:49,David,adjacent_cluster,,0,0,I want to get a whole cable set
+akber_khan-00683,Akbar Khan,2026-03-15T22:51:14,David,adjacent_cluster,,0,0,"where nobody fucks with anything part-way, even with a proper joiner"
+akber_khan-00684,Akbar Khan,2026-03-15T22:51:23,David,adjacent_cluster,,0,0,"so, a separate purchase"
+akber_khan-00685,Akbar Khan,2026-03-15T22:51:34,Akbar Khan,keyword_or_amount,engine|harness,0,0,Cable set ? Oh u mean the engine and accessory harness
+akber_khan-00686,Akbar Khan,2026-03-15T22:51:44,David,adjacent_cluster,,0,0,the full shebang
+akber_khan-00687,Akbar Khan,2026-03-15T22:51:52,Akbar Khan,keyword_or_amount,speaker|wiring,0,0,Yeah. You'll still need these. Speaker wiring. All kinds of stupid shit. Very handy
+akber_khan-00688,Akbar Khan,2026-03-15T22:51:57,David,adjacent_cluster,,0,0,don’t want to encourage any ‘just join this to this'
+akber_khan-00689,Akbar Khan,2026-03-15T22:52:03,David,adjacent_cluster,,0,0,"sure, but"
+akber_khan-00690,Akbar Khan,2026-03-15T22:52:06,Akbar Khan,adjacent_cluster,,0,0,Fog lights yada yada..
+akber_khan-00692,Akbar Khan,2026-03-15T22:52:16,Akbar Khan,adjacent_cluster,,0,0,Ok
+akber_khan-00693,Akbar Khan,2026-03-15T22:52:36,David,adjacent_cluster,,0,0,"ok, cabling aside"
+akber_khan-00694,Akbar Khan,2026-03-15T22:52:40,Akbar Khan,adjacent_cluster,,0,0,I'm just trying to remember what all I ended up having to use a lot
+akber_khan-00695,Akbar Khan,2026-03-15T22:52:45,Akbar Khan,keyword_or_amount,rust,0,0,Rust reformer !!
+akber_khan-00696,Akbar Khan,2026-03-15T22:52:54,David,adjacent_cluster,,0,0,gromets out of stock
+akber_khan-00697,Akbar Khan,2026-03-15T22:56:58,Akbar Khan,adjacent_cluster,,0,0,My retard painter just called. The guy I said was very good with his work but a dildo otherwise
+akber_khan-00698,Akbar Khan,2026-03-15T22:57:13,Akbar Khan,adjacent_cluster,,0,0,What time should I call him to the house ? Let's have him see it and start getting inputs
+akber_khan-00699,Akbar Khan,2026-03-15T22:57:37,David,keyword_or_amount,rust,0,0,no results for rust reformer
+akber_khan-00700,Akbar Khan,2026-03-15T22:57:56,David,adjacent_cluster,,0,0,what would he propose? this painer?
+akber_khan-00701,Akbar Khan,2026-03-15T22:57:56,Akbar Khan,keyword_or_amount,daraz|rust,0,0,Daraz. I just bought it... Rust-Oleum rust reformer
+akber_khan-00702,Akbar Khan,2026-03-15T22:58:09,David,adjacent_cluster,,0,0,"oh, cool. thnaks"
+akber_khan-00703,Akbar Khan,2026-03-15T22:58:24,David,adjacent_cluster,,0,0,my list ia good to go?
+akber_khan-00704,Akbar Khan,2026-03-15T22:58:33,Akbar Khan,keyword_or_amount,inspection|paint|rust,0,0,Down to how u want it and what's possible. In terms of rust inspection correction. Etc etc. Paint strategy so on. Under costing yada yada
+akber_khan-00705,Akbar Khan,2026-03-15T22:59:00,David,keyword_or_amount,roof,0,0,"right. I can give him my roof and back doors, and they should come back perfect you mean"
+akber_khan-00706,Akbar Khan,2026-03-15T22:59:01,Akbar Khan,keyword_or_amount,dremel,0,0,Yup why not. Add a Dremel if u can. Dunno about u but I used the fuck out of it.
+akber_khan-00707,Akbar Khan,2026-03-15T22:59:23,David,adjacent_cluster,,0,0,"yeah, I htink I have one, but anyqy"
+akber_khan-00708,Akbar Khan,2026-03-15T22:59:26,Akbar Khan,keyword_or_amount,floor,0,0,Yup. More then that. Let him inspect the car and pull a few things off the floor pan and let's see
+akber_khan-00709,Akbar Khan,2026-03-15T23:00:05,David,keyword_or_amount,dremel,1,0,36k for a dremel on this site
+akber_khan-00710,Akbar Khan,2026-03-15T23:00:13,Akbar Khan,adjacent_cluster,,0,0,Nope
+akber_khan-00711,Akbar Khan,2026-03-15T23:00:23,Akbar Khan,adjacent_cluster,,0,0,We can get it later. Let's just start
+akber_khan-00712,Akbar Khan,2026-03-15T23:00:46,David,adjacent_cluster,,0,0,"as I said, I think i have one anyway"
+akber_khan-00713,Akbar Khan,2026-03-15T23:00:53,Akbar Khan,keyword_or_amount,wire,0,0,Wire coils and all that u know better. Fuses etc..
+akber_khan-00714,Akbar Khan,2026-03-15T23:01:04,Akbar Khan,adjacent_cluster,,0,0,What time should I call the guy over ?
+akber_khan-00715,Akbar Khan,2026-03-15T23:01:10,Akbar Khan,adjacent_cluster,,0,0,12 ?
+akber_khan-00716,Akbar Khan,2026-03-15T23:01:16,Akbar Khan,adjacent_cluster,,0,0,11?
+akber_khan-00727,Akbar Khan,2026-03-15T23:07:23,Akbar Khan,adjacent_cluster,,0,0,"His dad was ""the"" best dude in all of Lahore. She learnt off him etc etc."
+akber_khan-00728,Akbar Khan,2026-03-15T23:07:31,Akbar Khan,adjacent_cluster,,0,0,For all else. Money talks
+akber_khan-00729,Akbar Khan,2026-03-15T23:07:58,David,adjacent_cluster,,0,0,so long as you know how to deal with him
+akber_khan-00730,Akbar Khan,2026-03-15T23:08:22,David,keyword_or_amount,door,0,0,so. if I did want him to go sand-blast a door and start from scratch for example
+akber_khan-00731,Akbar Khan,2026-03-15T23:08:29,Akbar Khan,adjacent_cluster,,0,0,Yeah. Managed my time. Don't see why this time.
+akber_khan-00732,Akbar Khan,2026-03-15T23:09:03,Akbar Khan,adjacent_cluster,,0,0,Yup. He should have a solution. Although they are all used to sanding and building over. Let's have a detailed chat. Tomorrow 11am. My place
+akber_khan-00733,Akbar Khan,2026-03-15T23:11:30,David,adjacent_cluster,,0,0,sure
+akber_khan-00734,Akbar Khan,2026-03-15T23:12:17,David,adjacent_cluster,,0,0,how is he at fixed pricing?
+akber_khan-00735,Akbar Khan,2026-03-15T23:13:45,Akbar Khan,adjacent_cluster,,0,0,One can have a chat.
+akber_khan-00736,Akbar Khan,2026-03-15T23:14:00,Akbar Khan,keyword_or_amount,panel,0,0,There is a per panel charge typically.
+akber_khan-00737,Akbar Khan,2026-03-15T23:14:43,Akbar Khan,keyword_or_amount,engine|filter|flush|oil,0,0,Oh btw. Reminder. To call the oil guy and sort that tomorrow for sure. Including the engine flush. He should have sorted the oil filter by then
+akber_khan-00738,Akbar Khan,2026-03-15T23:15:06,Akbar Khan,adjacent_cluster,,0,0,Also. Be sure to Google the quantity. So u both agree on it. For obvious reasons .
+akber_khan-00739,Akbar Khan,2026-03-15T23:19:43,David,adjacent_cluster,,0,0,fucks sake I don’t normally get up until 1pm
+akber_khan-00740,Akbar Khan,2026-03-15T23:19:57,David,adjacent_cluster,,0,0,you have me doing 2 jobs before that
+akber_khan-00749,Akbar Khan,2026-03-16T14:10:27,Akbar Khan,adjacent_cluster,,0,0,Going good ? Went good
+akber_khan-00750,Akbar Khan,2026-03-16T14:10:30,Akbar Khan,adjacent_cluster,,0,0,?
+akber_khan-00751,Akbar Khan,2026-03-16T14:10:51,Akbar Khan,keyword_or_amount,amp,0,0,All LEDs out ? Speakers ? And all associated wires ? And the amp and it's cables ?
+akber_khan-00752,Akbar Khan,2026-03-16T15:09:46,David,adjacent_cluster,,0,0,All out
+akber_khan-00753,Akbar Khan,2026-03-16T15:09:56,David,keyword_or_amount,battery,1,0,And 20k down on a new battery
+akber_khan-00754,Akbar Khan,2026-03-16T15:10:00,Akbar Khan,adjacent_cluster,,0,0,Thank goodness.
+akber_khan-00755,Akbar Khan,2026-03-16T15:10:09,Akbar Khan,keyword_or_amount,battery,0,0,I have a separate battery guy
+akber_khan-00756,Akbar Khan,2026-03-16T15:10:14,Akbar Khan,adjacent_cluster,,0,0,Hope u haven't done it yet
+akber_khan-00757,Akbar Khan,2026-03-16T15:10:31,David,keyword_or_amount,filter,0,0,Fitting it jow. Did you speak to that guy abiut thr filter?
+akber_khan-00758,Akbar Khan,2026-03-16T15:10:37,Akbar Khan,adjacent_cluster,,0,0,Comes to the house. Exchange with the old. Etc. usually cheaper
+akber_khan-00759,Akbar Khan,2026-03-16T15:10:50,David,adjacent_cluster,,0,0,We just popped tp ghazi road
+akber_khan-00760,Akbar Khan,2026-03-16T15:11:00,David,keyword_or_amount,,1,0,4k back on the old one
+akber_khan-00761,Akbar Khan,2026-03-16T15:11:13,David,adjacent_cluster,,0,0,Done. At least
+akber_khan-00762,Akbar Khan,2026-03-16T15:11:46,Akbar Khan,adjacent_cluster,,0,0,Trying. Number not going
+akber_khan-00793,Akbar Khan,2026-03-17T15:44:28,Akbar Khan,keyword_or_amount,body|cover,0,0,so spoken. we're going to see you tomorrow morning at 10:30. Going to need you to buy a car cover today because expect to have the car 60 to 70 percent stripped tomorrow. interior and most of the body.
+akber_khan-00795,Akbar Khan,2026-03-17T15:45:48,Akbar Khan,keyword_or_amount,body|electrical,0,0,so we're going to use the group with Hassan and nadir for mechanical moving forward.. we will be addressing the electrical and body work at home. so nothing left to talk to them about
+akber_khan-00796,Akbar Khan,2026-03-17T15:47:53,Akbar Khan,keyword_or_amount,hood|roof|strip|window,0,0,"tomorrow... the roof, doors, back cabin really, the hood etc. whatever can come off cleanly will be taken off and sent away with notes for each. he'sgoing to to strip each individual item there. for example things like the window mechanism and rubbers and all that, they will all be taken out and separated and sent to relevant places to be cleaned up / services etc. he's also going to pull out most of the interior."
+akber_khan-00797,Akbar Khan,2026-03-17T15:49:23,Akbar Khan,keyword_or_amount,door,0,0,"every piece is going to be tagged and potentially dealt with differently depending on what each piece needs exactly. try to keep some cartons with you because a lot of auxiliary stuff will come off.. door handles, mirrors all that shit. rubbers."
+akber_khan-00798,Akbar Khan,2026-03-17T15:51:08,Akbar Khan,keyword_or_amount,floor|primer|weld,0,0,"a day or two after, he will return to grind and spot weld the floor where required (those pin holes etc. will know more once its all out). but we will need primer sprays etc to spray it over immediately after. then move into bedding sprays and sound damening sheets and all that after"
+akber_khan-00799,Akbar Khan,2026-03-17T15:51:18,Akbar Khan,adjacent_cluster,,0,0,so best to have those cans handy by then
+akber_khan-00800,Akbar Khan,2026-03-17T15:53:27,Akbar Khan,keyword_or_amount,bedliner|order|primer,0,0,"need u to check on bedliner sprays and primer and order.. perhaps consult that guy of mine in karachi , sent you the contact earlier. Jamshaid"
+akber_khan-00801,Akbar Khan,2026-03-17T15:55:52,Akbar Khan,adjacent_cluster,,0,0,https://por15.com/
+akber_khan-00802,Akbar Khan,2026-03-17T15:56:07,Akbar Khan,adjacent_cluster,,0,0,"not available here, but it should give u a good idea of what one is looking for"
+akber_khan-00803,Akbar Khan,2026-03-17T16:01:53,Akbar Khan,keyword_or_amount,bed lining|carpet|epoxy|foam|primer|seam sealer|self etching|sound dampening|wax and grease remover,0,0,"wax and grease remover, self etching primer, epoxy primer, seam sealer, bed lining ... then sound dampening sheets, foam, carpet and done!.. thats the actual and full proper way"
+akber_khan-00804,Akbar Khan,2026-03-17T16:02:55,Akbar Khan,keyword_or_amount,body|primer,0,0,"even the best body shops don't do that here... they wipe shit clean, spray on primer... the end. put whatever u want on top of that. so I want to share both the full way and how they do it here so we can work out a path considering one wont find half the shit mentioned above and or it will take took long or crazy expensive"
+akber_khan-00805,Akbar Khan,2026-03-17T16:03:31,David,adjacent_cluster,,0,0,"on its way, but not sure it will be here by tomorrorow https://shopify.com/57876545692/account/orders/932d270cf0bc36f7d57c42f9ede63dae?locale=en-PK"
+akber_khan-00806,Akbar Khan,2026-03-17T16:04:54,Akbar Khan,keyword_or_amount,cover,1,0,"no worries. lets just use whatever till then. get any shitty cover for 2-4k and / or if u don't have one for the Corolla get that, use it on the FJ and then keep it for the corolla after"
+akber_khan-00807,Akbar Khan,2026-03-17T16:05:12,Akbar Khan,adjacent_cluster,,0,0,can easily get it from Saigol Motors... near ur house also. u can check them out online
+akber_khan-00808,Akbar Khan,2026-03-17T16:05:47,Akbar Khan,keyword_or_amount,jeep,0,0,"I reckon u should have some cheap parachute one also , not just for the jeep but the stuff which you'll be keeping out in the drive way like the interior parts .. rainy season"
+akber_khan-00809,Akbar Khan,2026-03-17T16:22:55,David,keyword_or_amount,paint,0,0,"which on in particular are you thinking? paint, spray, both?"
+akber_khan-00810,Akbar Khan,2026-03-17T16:27:15,David,adjacent_cluster,,0,0,so you think I should start stripping out more wires? I’ll have to check but I don’t think any of the components that come off have wires in them
+akber_khan-00811,Akbar Khan,2026-03-17T16:27:33,David,adjacent_cluster,,0,0,but there are probably a bunch of nolts to tackle
+akber_khan-00812,Akbar Khan,2026-03-17T16:27:37,David,adjacent_cluster,,0,0,bolts
+akber_khan-00813,Akbar Khan,2026-03-17T16:28:50,Akbar Khan,adjacent_cluster,,0,0,Why not. But that's ur jam. I'm not good at that at all. U are. Document everything. I'm so shit at it . I'd probably be wearing a go pro to back track whatever I take out
+akber_khan-00814,Akbar Khan,2026-03-17T16:30:26,David,adjacent_cluster,,0,0,right. might have to negotiate the top car-port spot before that then because it ain’t going to be moving much after that
+akber_khan-00815,Akbar Khan,2026-03-17T16:33:47,David,keyword_or_amount,steering,0,0,the power-steering upgrade. you think it can be done in-situe?
+akber_khan-00817,Akbar Khan,2026-03-17T16:35:10,David,adjacent_cluster,,0,0,https://autohub.pk/collections/car-care-products/products/gyeon-q-m-total-remover-1000ml
+akber_khan-00818,Akbar Khan,2026-03-17T16:35:30,Akbar Khan,adjacent_cluster,,0,0,Geyon is very good
+akber_khan-00819,Akbar Khan,2026-03-17T16:35:58,David,keyword_or_amount,primer,0,0,these don’t look big enough/correct https://autohub.pk/a/search?type=product&q=primer
+akber_khan-00820,Akbar Khan,2026-03-17T16:36:23,David,keyword_or_amount,body,0,0,https://autohub.pk/products/hb-body-999-seam-sealer-300ml-cartr
+akber_khan-00821,Akbar Khan,2026-03-17T16:36:48,Akbar Khan,adjacent_cluster,,0,0,They have their outlet in Montgomery road autohub . Good products there from what I recall
+akber_khan-00822,Akbar Khan,2026-03-17T16:37:03,Akbar Khan,adjacent_cluster,,0,0,To save time one can probably just call and go pick it directly
+akber_khan-00823,Akbar Khan,2026-03-17T16:37:58,David,keyword_or_amount,sound dampening,0,0,probably makes sense to look through and discuss with him. he also does all the rest like sound dampening boards?
+akber_khan-00824,Akbar Khan,2026-03-17T16:55:16,David,adjacent_cluster,,0,1,‎
+akber_khan-00825,Akbar Khan,2026-03-17T16:55:19,David,adjacent_cluster,,0,1,‎
+akber_khan-00826,Akbar Khan,2026-03-17T16:55:41,David,adjacent_cluster,,0,0,So whats this guys remit? Does all this need taking off today?
+akber_khan-00845,Akbar Khan,2026-03-17T17:00:25,David,adjacent_cluster,,0,1,‎
+akber_khan-00846,Akbar Khan,2026-03-17T17:00:25,David,adjacent_cluster,,0,1,‎
+akber_khan-00847,Akbar Khan,2026-03-17T17:00:25,David,adjacent_cluster,,0,1,‎
+akber_khan-00848,Akbar Khan,2026-03-17T17:02:38,David,keyword_or_amount,door,0,0,so just a couple of door wires that I think don’t do anything anyway
+akber_khan-00849,Akbar Khan,2026-03-17T17:04:45,Akbar Khan,adjacent_cluster,,0,0,Cool
+akber_khan-00850,Akbar Khan,2026-03-17T17:04:53,David,keyword_or_amount,chassis,0,0,dont you think chassis at home will be an issue removing the main frame?
+akber_khan-00851,Akbar Khan,2026-03-17T17:05:08,David,adjacent_cluster,,0,0,I guess just need a few guys
+akber_khan-00852,Akbar Khan,2026-03-17T17:05:29,David,keyword_or_amount,suspension,0,1,just wondering. what would a full-spring suspension conversion cost? ‎
+akber_khan-00853,Akbar Khan,2026-03-17T17:05:29,David,keyword_or_amount,suspension,0,1,just wondering. what would a full-spring suspension conversion cost? ‎
+akber_khan-00854,Akbar Khan,2026-03-17T17:05:42,David,adjacent_cluster,,0,0,would love this
+akber_khan-00855,Akbar Khan,2026-03-17T17:09:36,David,keyword_or_amount,brake|chassis|j40|steering|suspension,3,0,"hmm. erm A full coil / 4-link suspension conversion on a J40 is not a kit job — it’s basically re-engineering the entire underside of the vehicle. 💰 Real-world cost breakdown 1. Parts (bare minimum) Even DIY parts add up: 4-link kit components: $600–$1,000 Coilovers (good ones): $800–$2,000+ Brackets, mounts, joints: $500–$1,500 Steering corrections (high steer, links): $800–$1,500 👉 Parts total: $3,000 – $6,000 2. Fabrication & labour (the big one) This is where costs explode. A proper conversion involves: cutting off all leaf spring mounts welding new link mounts to frame + axle building 4-link geometry setting pinion angles relocating shocks often modifying the chassis Typical fabrication time: 80–150+ hours Workshop cost (depending where): In Pakistan (good fabricator) PKR 300k – 1,000k (~$1,000 – $3,500) International / high-end shops $5,000 – $15,000+ 3. Hidden costs (people underestimate these) driveshaft modification / custom shafts brake line rerouting exhaust rework fuel tank relocation (sometimes) bump stops / limit straps 👉 Add another $500 – $2,000 💸 Total realistic cost Budget DIY + local fabrication (Pakistan) 👉 PKR 500k – 1.5M (~$1,800 – $5,500) Proper engineered build 👉 $6,000 – $12,000 High-end (ICON-style build) 👉 $15,000 – $30,000+"
+akber_khan-00856,Akbar Khan,2026-03-17T17:09:43,David,adjacent_cluster,,0,0,not quite in the budget
+akber_khan-00857,Akbar Khan,2026-03-17T17:11:51,David,keyword_or_amount,bilstein|nitrocharger|old man emu,0,0,"cheaper: If you're still on basic shocks, this is massive. Upgrade to: Bilstein 5100 / 5160 Old Man Emu Nitrocharger What it does: removes the “bouncy tractor” feel improves control on bumps better off-road articulation"
+akber_khan-00858,Akbar Khan,2026-03-17T17:13:10,David,keyword_or_amount,bilstein|ome|power steering|steering,0,0,so: Do this: Power steering Bilstein / OME shocks Shackle reversal Front disc brakes Steering rebuild + damper
+akber_khan-00859,Akbar Khan,2026-03-17T17:29:36,Akbar Khan,adjacent_cluster,,0,0,I'll just read through. At golf. So what peeps usually do is go back to stock and then upgrade
+akber_khan-00860,Akbar Khan,2026-03-17T18:07:58,David,keyword_or_amount,engine,0,0,makes sense. - unless I change the engine
+akber_khan-00861,Akbar Khan,2026-03-17T18:08:02,David,adjacent_cluster,,0,0,I assume
+akber_khan-00862,Akbar Khan,2026-03-17T18:08:38,David,keyword_or_amount,power steering|steering,0,0,"and does it really make sense to put the old power steering in, then replace it?"
+akber_khan-00863,Akbar Khan,2026-03-17T18:40:50,David,keyword_or_amount,toolsmart,0,0,https://www.toolsmart.pk/collections/sander
+akber_khan-00864,Akbar Khan,2026-03-17T18:41:01,David,adjacent_cluster,,0,0,so you think its worth getting a sander?
+akber_khan-00870,Akbar Khan,2026-03-17T21:13:47,David,adjacent_cluster,,0,0,its a separate investment
+akber_khan-00871,Akbar Khan,2026-03-17T21:14:09,David,adjacent_cluster,,0,0,"not being in the uk, I gave his away"
+akber_khan-00872,Akbar Khan,2026-03-17T21:15:08,David,adjacent_cluster,,0,0,not going to go over-board on too many specifics for fitting in the car
+akber_khan-00873,Akbar Khan,2026-03-17T21:15:43,David,keyword_or_amount,toolsmart,0,0,so you mean like one of these sanders? https://www.toolsmart.pk/collections/sander
+akber_khan-00874,Akbar Khan,2026-03-17T21:22:27,David,adjacent_cluster,,0,0,also - I suppose you know a guy to hook up security cameras?
+akber_khan-00875,Akbar Khan,2026-03-17T21:22:46,David,adjacent_cluster,,0,0,last thing is someone nicking all of this
+akber_khan-00876,Akbar Khan,2026-03-18T12:09:51,Akbar Khan,adjacent_cluster,,0,0,Yooo.. yes I do..
+akber_khan-00878,Akbar Khan,2026-03-18T12:17:20,Akbar Khan,adjacent_cluster,,0,0,Also. Sorry. Rescheduled the keep dismantling. Rain. So we are looking at about 2pm
+akber_khan-00879,Akbar Khan,2026-03-18T13:28:02,David,keyword_or_amount,cover,0,0,Good. Cos i gor up late. Tools and cover arrived thoigh
+akber_khan-00880,Akbar Khan,2026-03-18T13:36:36,Akbar Khan,adjacent_cluster,,0,0,Cool
+akber_khan-00881,Akbar Khan,2026-03-18T13:36:42,Akbar Khan,adjacent_cluster,,0,0,See u shortly then
+akber_khan-00882,Akbar Khan,2026-03-18T14:57:16,Akbar Khan,adjacent_cluster,,0,0,Gotten a bit late. Rain. On the way now in 5 min. Chap is here

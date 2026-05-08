@@ -49,6 +49,7 @@ SEED_CHAT_NAMES = {
     "fj 40 - advisory",
     "fj audio",
     "j40 parts",
+    "akbar khan",
     "akber khan",
     "headlight connectors",
     "walton bodyshop",
@@ -84,6 +85,7 @@ CHAT_RELEVANCE_KEYWORDS = [
     "land cruiser",
     "landcruiser",
     "toyota",
+    "akbar",
     "akber",
     "bodyshop",
     "carnation",
@@ -104,7 +106,8 @@ CHAT_RELEVANCE_KEYWORDS = [
 
 ARCHIVE_SOURCE_BY_CHAT_NAME = {
     "fj40": "Fj40",
-    "akber khan": "Akber Khan",
+    "akbar khan": "Akbar Khan",
+    "akber khan": "Akbar Khan",
 }
 
 HIDDEN_CHAT_NAMES = {"support engineer placement"}
@@ -132,7 +135,20 @@ def norm(value: Any) -> str:
 
 
 def clean_text(value: Any) -> str:
-    return " ".join(clean(value).replace("\u200e", " ").split())
+    return canonicalize_akbar_spelling(" ".join(clean(value).replace("\u200e", " ").split()))
+
+
+def canonicalize_akbar_spelling(value: Any) -> str:
+    text = clean(value)
+    legacy = "Ak" + "ber"
+    return text.replace(f"{legacy}s", "Akbar's").replace(legacy, "Akbar")
+
+
+def display_chat_name(value: Any) -> str:
+    raw = canonicalize_akbar_spelling(value)
+    if norm(raw) == "akber khan":
+        return "Akbar Khan"
+    return raw
 
 
 def is_hidden_chat(row: dict[str, Any]) -> bool:
@@ -172,6 +188,7 @@ def load_project_keywords() -> list[str]:
         "paint",
         "primer",
         "suspension",
+        "akbar",
         "akber",
         "carnation",
         "oxy welding",
@@ -372,7 +389,7 @@ def keyword_hits(text: str, keywords: list[str]) -> list[str]:
 
 
 def score_chat(chat: dict[str, Any], keywords: list[str]) -> tuple[int, list[str]]:
-    chat_name = clean(chat.get("name"))
+    chat_name = display_chat_name(chat.get("name"))
     last_message = clean(chat.get("lastMessage"))
     chat_id = clean(chat.get("id"))
     reasons: list[str] = []
@@ -487,7 +504,7 @@ def load_archive_fallback() -> tuple[dict[str, list[dict[str, Any]]], dict[str, 
             message_rows = json.loads(ARCHIVE_MESSAGES_PATH.read_text(encoding="utf-8"))
             if isinstance(message_rows, list):
                 for row in message_rows:
-                    source_name = clean(row.get("source_name"))
+                    source_name = display_chat_name(row.get("source_name"))
                     if not source_name:
                         continue
                     messages_by_source.setdefault(source_name, []).append(row)
@@ -498,7 +515,7 @@ def load_archive_fallback() -> tuple[dict[str, list[dict[str, Any]]], dict[str, 
         try:
             with ARCHIVE_MEDIA_INDEX_PATH.open(newline="", encoding="utf-8") as handle:
                 for row in csv.DictReader(handle):
-                    source_name = clean(row.get("source_name"))
+                    source_name = display_chat_name(row.get("source_name"))
                     if not source_name:
                         continue
                     media_by_source.setdefault(source_name, []).append(row)
@@ -619,7 +636,7 @@ def main() -> None:
                         "target_number": profile.target_number,
                         "chat_id": clean(chat.get("id")),
                         "chat_type": chat_type(clean(chat.get("id"))),
-                        "chat_name": clean(chat.get("name")),
+                        "chat_name": display_chat_name(chat.get("name")),
                         "unread_count": clean(chat.get("unreadCount")),
                         "last_message_timestamp": clean(chat.get("timestamp")),
                         "last_message": clean_text(chat.get("lastMessage")),
@@ -646,7 +663,7 @@ def main() -> None:
                             "target_number": profile.target_number,
                             "chat_id": f"archive::{slugify(fallback_source)}",
                             "chat_type": "archive",
-                            "chat_name": fallback_source,
+                            "chat_name": display_chat_name(fallback_source),
                             "unread_count": "",
                             "last_message_timestamp": "",
                             "last_message": "",
@@ -697,18 +714,18 @@ def main() -> None:
                             canonical_id = f"mcp_{slugify(profile.server)}_archive_{slugify(raw_archive_message_id)}"
                             mapped_message_ids[raw_archive_message_id] = canonical_id
 
-                            body = clean(archive_message.get("clean_text") or archive_message.get("text"))
+                            body = canonicalize_akbar_spelling(archive_message.get("clean_text") or archive_message.get("text"))
                             message_hits = keyword_hits(body, message_keywords)
                             all_message_rows.append(
                                 {
                                     "message_id": canonical_id,
                                     "raw_message_id": raw_archive_message_id,
-                                    "source_name": chat_name or chat_id,
+                                    "source_name": display_chat_name(chat_name or chat_id),
                                     "source_profile": profile.server,
                                     "chat_id": chat_id,
                                     "chat_name": chat_name,
                                     "timestamp": clean(archive_message.get("timestamp")),
-                                    "author": clean(archive_message.get("author")),
+                                    "author": display_chat_name(archive_message.get("author")),
                                     "from_me": "false",
                                     "type": "chat",
                                     "body": body,
@@ -778,17 +795,17 @@ def main() -> None:
                 for raw_message in raw_messages:
                     raw_message_id = clean(raw_message.get("id"))
                     canonical_id = canonical_message_id(profile, raw_message_id)
-                    body = clean(raw_message.get("body"))
+                    body = canonicalize_akbar_spelling(raw_message.get("body"))
                     message_hits = keyword_hits(body, message_keywords)
                     message_type = clean(raw_message.get("type")) or "chat"
-                    author = clean(raw_message.get("contact"))
+                    author = display_chat_name(raw_message.get("contact"))
                     if not author and clean(raw_message.get("fromMe")) == "True":
                         author = profile.target_number
 
                     message_row = {
                         "message_id": canonical_id,
                         "raw_message_id": raw_message_id,
-                        "source_name": chat_name or chat_id,
+                        "source_name": display_chat_name(chat_name or chat_id),
                         "source_profile": profile.server,
                         "chat_id": chat_id,
                         "chat_name": chat_name,

@@ -17,7 +17,7 @@ GENERATED_DIR = ROOT / "data" / "processed" / "generated"
 MESSAGES_CSV_PATH = GENERATED_DIR / "mcp_whatsapp_j40_messages.csv"
 MEDIA_CSV_PATH = GENERATED_DIR / "mcp_whatsapp_j40_media_index.csv"
 
-PROJECT_CHAT_HINTS = {"fj40", "akber", "uk david"}
+PROJECT_CHAT_HINTS = {"fj40", "akbar", "akber", "uk david"}
 EXCLUDED_CHAT_NAME_TERMS = {
     "support engineer placement",
     "andy pointon bell",

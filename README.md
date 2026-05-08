@@ -20,7 +20,7 @@ The current setup is intentionally data-first. It gives you a clean place to kee
 - `legal statuses`: ownership transfer, inspection, number-plate position, and document-pack completeness
 - `workstreams`: the current phase/state of legal, strip-down, body, electrical, mechanical, interior, and validation work
 
-Only chat content related to this build should be included. The importer treats the `Fj40` group as a build thread and filters the direct `Akber Khan` export down to restoration-relevant messages only.
+Only chat content related to this build should be included. The importer treats the `Fj40` group as a build thread and filters the direct `Akbar Khan` export down to restoration-relevant messages only.
 
 ## Repository Layout
 

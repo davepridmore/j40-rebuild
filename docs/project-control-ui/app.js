@@ -6355,9 +6355,9 @@
       },
       {
         key: "whatsapp_workshop_wiring_floor_samples",
-        title: "Akber Wiring And Floor Samples",
-        description: "Akber's missing before/after examples for engine-bay wiring cleanup and floor rust-through around the accelerator pedal.",
-        source: "Akber Khan WhatsApp",
+        title: "Akbar Wiring And Floor Samples",
+        description: "Akbar's missing before/after examples for engine-bay wiring cleanup and floor rust-through around the accelerator pedal.",
+        source: "Akbar Khan WhatsApp",
       },
     ]
       .map((card) => {
@@ -6402,7 +6402,7 @@
     const manualReferenceMedia = summary.manual_reference_media ?? summary.manual_reference_images ?? 0;
     root.innerHTML = `
       <h2 class="section-title">Other Builds</h2>
-      <p class="section-subtitle">Outside-build references, including the Islamabad FJ restorations, Akber wiring/floor caution examples, archived listings, and curated WhatsApp sample media.</p>
+      <p class="section-subtitle">Outside-build references, including the Islamabad FJ restorations, Akbar wiring/floor caution examples, archived listings, and curated WhatsApp sample media.</p>
 
       <section class="metrics-grid">
         <article class="card">
