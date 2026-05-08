@@ -2,6 +2,8 @@
 
 This plan splits the vague "missing bracket" concern into concrete front engine-bay fabrication jobs: radiator two-side retention, battery tray support, and a battery-adjacent power carrier for the MIDI fuse plate and battery master cutoff.
 
+Linked bracket register: [chassis-bracket-analysis-register-20260508.md](chassis-bracket-analysis-register-20260508.md).
+
 ## Current Evidence
 
 | Area | Evidence | Read |

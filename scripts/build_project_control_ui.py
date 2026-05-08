@@ -33,6 +33,7 @@ BODY_MOUNT_RELEASE_ACTIONS_PATH = MANUAL_DIR / "body_mount_release_actions.csv"
 BODY_MOUNT_STATION_CLOSURE_PATH = MANUAL_DIR / "body_mount_station_closure_sheet.csv"
 BRAKE_SYSTEM_REQUIREMENTS_PATH = MANUAL_DIR / "brake_system_requirements.csv"
 FABRICATION_HANDOFF_REQUIREMENTS_PATH = MANUAL_DIR / "fabrication_handoff_requirements.csv"
+CHASSIS_BRACKET_ANALYSIS_REGISTER_PATH = MANUAL_DIR / "chassis_bracket_analysis_register_20260508.csv"
 EXPENSES_PATH = MANUAL_DIR / "expenses.csv"
 EXPENSES_RECONCILIATION_PATH = MANUAL_DIR / "j40_costs_expenses_reconciliation.csv"
 FASTENER_PHOTO_COUNT_ESTIMATES_PATH = MANUAL_DIR / "fastener_photo_count_estimates.csv"
@@ -3122,6 +3123,38 @@ def body_mount_station_closure_payload(
                 "action_required": clean(row.get("action_required")),
                 "notes": clean(row.get("notes")),
                 "evidence_images": evidence_images,
+            }
+        )
+    return payload
+
+
+def chassis_bracket_analysis_register_payload(
+    rows: list[dict[str, str]],
+    photo_rows: list[dict[str, str]],
+) -> list[dict[str, Any]]:
+    rows_by_id = photo_rows_by_media_id(photo_rows)
+    payload: list[dict[str, Any]] = []
+    for row in rows:
+        evidence_refs = clean(row.get("evidence_refs"))
+        payload.append(
+            {
+                "register_id": clean(row.get("register_id")),
+                "station": clean(row.get("station")),
+                "side": clean(row.get("side")),
+                "component_or_function": clean(row.get("component_or_function")),
+                "current_condition": clean(row.get("current_condition")),
+                "evidence_level": clean(row.get("evidence_level")),
+                "evidence_refs": evidence_refs,
+                "evidence_ref_list": split_pipe(evidence_refs),
+                "photo_read": clean(row.get("photo_read")),
+                "decision": clean(row.get("decision")),
+                "coating_gate": clean(row.get("coating_gate")),
+                "next_action": clean(row.get("next_action")),
+                "design_release_needed": clean(row.get("design_release_needed")),
+                "implementation_owner": clean(row.get("implementation_owner")),
+                "status": clean(row.get("status")),
+                "notes": clean(row.get("notes")),
+                "evidence_images": evidence_images_from_refs(evidence_refs, rows_by_id, max_images=4),
             }
         )
     return payload
@@ -8311,6 +8344,7 @@ def build_dashboard_data() -> dict[str, Any]:
     body_mount_station_closure_rows = load_csv_optional(BODY_MOUNT_STATION_CLOSURE_PATH)
     brake_system_requirement_rows = load_csv_optional(BRAKE_SYSTEM_REQUIREMENTS_PATH)
     fabrication_requirement_rows = load_csv_optional(FABRICATION_HANDOFF_REQUIREMENTS_PATH)
+    chassis_bracket_register_rows = load_csv_optional(CHASSIS_BRACKET_ANALYSIS_REGISTER_PATH)
     paint_refinish_queue_rows = load_csv_optional(PAINT_REFINISH_MEDIA_QUEUE_PATH)
     paint_refinish_whatsapp_rows = load_csv_optional(PAINT_REFINISH_WHATSAPP_MEDIA_QUEUE_PATH)
     selling_site_manifest_rows = load_csv_optional(SELLING_SITE_MANIFEST_PATH)
@@ -8519,6 +8553,11 @@ def build_dashboard_data() -> dict[str, Any]:
         )
         if ws_id == "chassis_fixing":
             operation_panels.append(build_chassis_prime_readiness_panel(photo_rows))
+        chassis_bracket_analysis_register = (
+            chassis_bracket_analysis_register_payload(chassis_bracket_register_rows, photo_rows)
+            if ws_id == "chassis_fixing"
+            else []
+        )
         fabrication_packages = fabrication_packages_for_workstream(ws_id, fabrication_requirement_rows)
 
         workstreams.append(
@@ -8550,6 +8589,7 @@ def build_dashboard_data() -> dict[str, Any]:
                 "body_mount_release_actions": body_mount_release_actions,
                 "body_mount_station_closure": body_mount_station_closure,
                 "fabrication_packages": fabrication_packages,
+                "chassis_bracket_analysis_register": chassis_bracket_analysis_register,
                 "market_specs": market_specs_for_workstream(ws_id),
                 "linked_packages": [
                     {
@@ -8930,6 +8970,7 @@ def build_dashboard_data() -> dict[str, Any]:
             "photo_inventory": "data/manual/photo_inventory.csv",
             "brake_system_requirements": "data/manual/brake_system_requirements.csv",
             "fabrication_handoff_requirements": "data/manual/fabrication_handoff_requirements.csv",
+            "chassis_bracket_analysis_register": "data/manual/chassis_bracket_analysis_register_20260508.csv",
             "chassis_rubber_requirements": "data/manual/chassis_rubber_requirements.csv",
             "rubber_hose_component_audit": "data/manual/rubber_hose_component_audit.csv",
             "rubber_ordering_specs": "data/manual/rubber_ordering_specs.csv",

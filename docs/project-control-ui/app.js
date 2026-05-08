@@ -2072,6 +2072,96 @@
     return renderRequirementTable(rows);
   }
 
+  function renderChassisBracketAnalysisRegister(workstream) {
+    const active = workstream || {};
+    if (active.id !== "chassis_fixing") {
+      return "";
+    }
+
+    const rows = Array.isArray(active.chassis_bracket_analysis_register)
+      ? active.chassis_bracket_analysis_register
+      : [];
+    if (!rows.length) {
+      return "";
+    }
+
+    const coatingHolds = rows.filter((row) => cleanString(row.coating_gate).toLowerCase().includes("block")).length;
+    const scoutingRows = rows.filter((row) => cleanString(row.status).toLowerCase().includes("scout")).length;
+    const designRows = rows.filter((row) => cleanString(row.design_release_needed).toLowerCase() === "yes").length;
+
+    return `
+      <article class="card pipe-requirements-card">
+        <div class="detail-header">
+          <h3>Bracket Analysis Register</h3>
+          <div class="chip-row">
+            ${chip(`${rows.length} Rows`)}
+            ${chip(`${coatingHolds} Coating Holds`)}
+            ${chip(`${scoutingRows} Need Scouting`)}
+            ${chip(`${designRows} Need Design Release`)}
+          </div>
+        </div>
+        <p class="small-muted">Seeded from existing radiator/front-support and battery-side photos. Radiator evidence is direct; battery tray base and support legs still need close-up scouting.</p>
+        <div class="item-links">
+          <a class="item-link" href="../../docs/chassis-bracket-analysis-register-20260508.md">Register Doc</a>
+          <a class="item-link" href="../../data/manual/chassis_bracket_analysis_register_20260508.csv">Source CSV</a>
+        </div>
+        <div class="table-wrap requirement-table-wrap">
+          <table class="requirement-table">
+            <thead>
+              <tr>
+                <th>Evidence</th>
+                <th>Bracket / Function</th>
+                <th>Photo Read</th>
+                <th>Decision / Gate</th>
+                <th>Next Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${rows
+                .map(
+                  (row) => `
+                    <tr>
+                      <td class="requirement-evidence-cell">${renderRequirementEvidenceImages({
+                        evidence_images: row.evidence_images,
+                        requirement_name: row.component_or_function,
+                        photo_status: row.evidence_level || "photo_needed",
+                      })}</td>
+                      <td>
+                        <strong>${escapeHtml(row.register_id || "")} · ${escapeHtml(row.component_or_function || "")}</strong>
+                        <div class="small-muted">${escapeHtml(formatToken(row.station || ""))}${row.side ? ` / ${escapeHtml(formatToken(row.side))}` : ""}</div>
+                        <div class="status-stack">
+                          ${statusChip(row.status || "open")}
+                          ${statusChip(row.current_condition || "unknown")}
+                          ${
+                            row.design_release_needed
+                              ? statusChip(cleanString(row.design_release_needed).toLowerCase() === "yes" ? "design_needed" : "design_not_required")
+                              : ""
+                          }
+                        </div>
+                      </td>
+                      <td>
+                        ${escapeHtml(row.photo_read || "")}
+                        ${row.evidence_refs ? `<div class="small-muted">${escapeHtml(row.evidence_refs)}</div>` : ""}
+                      </td>
+                      <td>
+                        <strong>${escapeHtml(row.decision || "")}</strong>
+                        <div class="small-muted">${escapeHtml(formatToken(row.coating_gate || ""))}</div>
+                      </td>
+                      <td>
+                        ${escapeHtml(row.next_action || "")}
+                        ${row.notes ? `<div class="small-muted">${escapeHtml(row.notes)}</div>` : ""}
+                      </td>
+                    </tr>
+                  `
+                )
+                .join("")}
+            </tbody>
+          </table>
+        </div>
+      </article>
+    `;
+  }
+
   function renderPackageLinks(title, links) {
     const rows = Array.isArray(links) ? links.filter((link) => cleanString(link && link.url)) : [];
     if (!rows.length) {
@@ -5211,6 +5301,7 @@
       </article>
 
       ${renderWorkstreamRequirements(active)}
+      ${renderChassisBracketAnalysisRegister(active)}
       ${simpleChassisRubbers ? "" : renderFabricationPackages(active.fabrication_packages)}
 
       ${simpleChassisRubbers ? "" : `

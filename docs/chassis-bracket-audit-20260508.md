@@ -8,6 +8,15 @@ Akbar flagged that some brackets that should be welded on were previously wire-t
 
 This means Raptor is still the selected exposed chassis finish after primer/sealer, but final primer/Raptor should wait until the bracket survey is closed. Temporary flash-rust protection is acceptable if needed, but do not bury missing or poorly attached brackets under the final coating stack.
 
+## Actual Register
+
+The bracket analysis register is now a real tracked artifact, not just a task:
+
+- Readable register: [chassis-bracket-analysis-register-20260508.md](chassis-bracket-analysis-register-20260508.md).
+- Source table: [chassis_bracket_analysis_register_20260508.csv](../data/manual/chassis_bracket_analysis_register_20260508.csv).
+
+The first register pass is seeded with front radiator/support and battery-side mounting rows. Radiator/front-support photos are direct enough to define the problem and design constraints. Battery photos currently prove location and top-clamp context only; they do not release tray feet, underside supports, or welded pickup geometry.
+
 ## Tasks Added
 
 | Task | Workstream | Required closeout |
