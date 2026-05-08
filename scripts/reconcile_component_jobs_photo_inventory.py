@@ -277,12 +277,27 @@ RULES: dict[str, EvidenceRule] = {
     "front_radiator_bracket_repair_20260508": EvidenceRule(
         direct_specific_components=("front_frame_horns_bumper_and_radiator_support", "cooling_hoses_fan_belt_and_radiator_support"),
         indirect_specific_components=("engine_bay_chassis_interface", "engine_bay_overview"),
-        notes="Front support and cooling-route photos are the baseline for radiator-bracket location; closure still needs current trial-fit and bracket close-ups.",
+        notes="Front support and cooling-route photos are the baseline for the wire-held radiator support repair; closure still needs current trial-fit and bracket close-ups.",
+    ),
+    "front_radiator_two_side_retention_fabrication_20260508": EvidenceRule(
+        direct_specific_components=("front_frame_horns_bumper_and_radiator_support", "cooling_hoses_fan_belt_and_radiator_support"),
+        indirect_specific_components=("engine_bay_chassis_interface", "engine_bay_overview"),
+        notes="Radiator/front-support photos directly show the radiator support location and fan-clearance context; final hole centres and bracket offsets still need ruler photos or dry-fit.",
     ),
     "battery_tray_holder_bracket_repair_20260508": EvidenceRule(
         direct_specific_components=(),
         indirect_specific_components=("engine_bay_overview", "engine_bay_chassis_interface", "engine_powertrain_cleaning_baseline"),
-        notes="No configured photo directly proves the battery tray/holder bracket; engine-bay photos only provide location context until current close-ups are captured.",
+        notes="Engine-bay overview photos show the battery-side location, but no configured photo directly proves the tray feet/support brackets; current close-ups are required before release.",
+    ),
+    "battery_power_carrier_mount_fabrication_20260508": EvidenceRule(
+        direct_specific_components=(),
+        indirect_specific_components=("engine_bay_overview", "engine_bay_chassis_interface"),
+        notes="Procurement photos document the MIDI/cutoff hardware separately, but current vehicle photos only locate the battery-side area; tray and pickup-point close-ups are required before release.",
+    ),
+    "engine_bay_mounting_scouting_pass_20260508": EvidenceRule(
+        direct_specific_components=("front_frame_horns_bumper_and_radiator_support", "cooling_hoses_fan_belt_and_radiator_support", "engine_bay_overview"),
+        indirect_specific_components=("engine_bay_chassis_interface", "fuse_distribution_and_power_hardware", "hidden_diesel_cutoff_switch_hardware"),
+        notes="Current photos are enough to start the radiator/battery/power-carrier plan; this row closes only when ruler photos and cardboard mock-up checks fill the remaining measurement gaps.",
     ),
     "auxiliary_chassis_tabs_and_clip_brackets_20260508": EvidenceRule(
         direct_specific_components=("frame_rail_body_mount_and_hard_line_detail", "rear_mid_frame_rail_and_hard_line_detail"),

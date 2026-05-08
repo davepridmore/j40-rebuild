@@ -31,3 +31,4 @@ Rev C therefore uses:
 - Use `10-12 mm` spacers between the holder board and the mount plate.
 - Use the small side holes in the aluminium plate for cable P-clips or saddle clamps.
 - Keep the common feed on the bus side and the five fused outputs on the branch side.
+- This pack defines the MIDI holder plate and insulating subplate only. The vehicle-side battery tray / cutoff carrier is controlled by `docs/front-engine-bay-mounting-fabrication-plan-20260508.md` and remains on site-measurement hold.

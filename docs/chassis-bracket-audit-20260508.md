@@ -18,7 +18,10 @@ This means Raptor is still the selected exposed chassis finish after primer/seal
 | `chassis_bracket_fabrication_install_20260508` | `chassis_fixing` | Fabricate, weld, bolt, grind, deburr, and trial-fit released baseline brackets only. |
 | `chassis_bracket_validation_release_20260508` | `chassis_fixing` | Dry-fit and photo signoff proving no required bracket remains missing, loose, wire-tied, or unprotected. |
 | `front_radiator_bracket_repair_20260508` | `chassis_fixing` | Radiator/support bracket location, fix method, rubber support, fan clearance, and labelled photos. |
+| `front_radiator_two_side_retention_fabrication_20260508` | `chassis_fixing` | Released two-side radiator retention bracket set replacing the one-side/wire-held condition. |
 | `battery_tray_holder_bracket_repair_20260508` | `chassis_fixing` | Battery tray/holder position, clamp path, drain/corrosion isolation, cable clearance, and final weld/bolt choice. |
+| `battery_power_carrier_mount_fabrication_20260508` | `chassis_fixing` | Battery-side support/carrier for the MIDI Rev C plate and battery master cutoff/isolator, tied into real structure. |
+| `engine_bay_mounting_scouting_pass_20260508` | `chassis_fixing` | Ruler photos and mock-up checks for radiator holes, battery tray feet, MIDI/cutoff envelope, cable exits, and bonnet clearance. |
 | `auxiliary_chassis_tabs_and_clip_brackets_20260508` | `chassis_fixing` | Required baseline tabs only: line clips, harness clips, earth straps, exhaust hangers, washer/overflow/ancillary supports. |
 | `exhaust_mockup_brackets_before_coating_20260508` | `chassis_fixing` | Exhaust fabricator gets current chassis photos; any hanger/clearance tabs needed on the chassis are mocked up before Raptor. |
 
@@ -35,7 +38,7 @@ Build a bracket register before more coating prep:
 - Decision: keep, repair, fabricate, remove non-baseline, or hold for more evidence.
 - Coating effect: blocks primer/Raptor, can be done after coating, or no action.
 
-Close `chassis_bracket_analysis_register_20260508` only when the register covers the front support, engine bay, both chassis rails, crossmembers, hard-line runs, rear rail, and exhaust route.
+Close `chassis_bracket_analysis_register_20260508` only when the register covers the front support, radiator retention, battery tray, battery-side MIDI/cutoff carrier, both chassis rails, crossmembers, hard-line runs, rear rail, and exhaust route.
 
 ### 2. Design
 
@@ -87,11 +90,23 @@ Only then can the bracket hold release the zinc-rich epoxy primer, seam sealer, 
 
 ## Known First Checks
 
-- Radiator support bracket(s): explicitly called out in WhatsApp.
-- Battery tray/holder bracket(s): likely required, raised in the same exchange.
+- Radiator support bracket(s): explicitly called out in WhatsApp. Current photo review makes this a two-side retention repair that replaces the wire-held/one-side condition.
+- Battery tray/holder bracket(s): likely required, raised in the same exchange. Current photos show the battery-side engine-bay location but not enough tray-foot detail, so close-up scouting is required before cutting metal.
+- Battery-side MIDI/cutoff carrier: use the existing MIDI Rev C plate as the fuse-holder component, but add a vehicle-side carrier/pickup design tied into the battery tray support or nearby structure.
 - Exhaust hanger/mock-up points: coordinate now if the exhaust fabricator can mock up downpipes/routing while the tub is off.
 - Brake/fuel line clips and harness P-clips: keep safety/serviceability ahead of appearance.
 - Ground strap tabs: keep bare-metal contact strategy separate from final coating.
+
+## Linked Fabrication Plan
+
+The front engine-bay mounting tasks are detailed in [front-engine-bay-mounting-fabrication-plan-20260508.md](front-engine-bay-mounting-fabrication-plan-20260508.md). That plan is the working checklist for:
+
+- `RAD-RET-001` radiator two-side retention.
+- `BAT-TRAY-001` battery tray support upgrade.
+- `PWR-CARRIER-001` battery-side MIDI/cutoff carrier.
+- `PWR-CABLE-001` heavy cable and P-clip support.
+
+Any welded pickup point from that plan is a pre-primer/Raptor item. The removable MIDI plate, insulating subplate, cutoff switch, and final cable clips can be fitted after coating only if their structural pickup points are already complete.
 
 ## Evidence Refs
 

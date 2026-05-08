@@ -75,6 +75,20 @@ Order definitions:
 
 Release position: current recommended MIDI holder mount. The external plastic/CNC quote is only for the holder subplate; the aluminium mount plate is owner-made. Use `10-12 mm` spacers between the holder board and mount plate, and add cable support after final routing.
 
+### Battery Power Carrier Vehicle Mount - Rev A
+
+Control plan: [front-engine-bay-mounting-fabrication-plan-20260508.md](front-engine-bay-mounting-fabrication-plan-20260508.md)
+
+Release position:
+- Site-measurement required. This package is the vehicle-side carrier/pickup design for the battery-adjacent MIDI 5-way Rev C plate and battery master cutoff/isolator.
+- It does not replace `midi5_plate_mount_rev_c`; it defines where and how that released MIDI plate bolts to the vehicle.
+- Final hole centres, offsets, cutoff orientation, and cable-exit support points stay on hold until current close-up/ruler photos are captured for the battery tray top/side/underside, proposed cardboard plate mock-up, and bonnet clearance.
+
+First-pass construction intent:
+- Reinforce or replace the weak battery tray support with a tray/carrier that picks up real structure rather than unsupported thin sheet.
+- Provide bolted mounting for the MIDI Rev C plate and a battery master cutoff/isolator.
+- Finish any welded pickup points before primer/Raptor; removable electrical hardware can be fitted after coating.
+
 ### Relay Mount - Rev C
 
 Directory: [data/manual/fabrication/relay_mount_rev_c](../data/manual/fabrication/relay_mount_rev_c/README.md)

@@ -1133,13 +1133,14 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                     "Use docs/fabrication-handoff-index.md as the shop send-out index for electrical fabrication files.",
                     "Use data/manual/fabrication/relay_mount_rev_c/ for the current relay carrier and rear guard DXF/SVG/PDF package.",
                     "Use data/manual/fabrication/midi5_plate_mount_rev_c/ for the current 5-way MIDI holder plate and insulated subplate package.",
+                    "Use docs/front-engine-bay-mounting-fabrication-plan-20260508.md for the site-measurement battery-side carrier that will mount the MIDI plate and battery master cutoff.",
                     "Keep data/manual/fabrication/electrical_modules_rev_a/ as the reference/provisional combined-module package only if that older route is reopened.",
                     "Send the package PDFs for drawing review and the DXFs for cutting; keep SVGs with the job for visual checking.",
-                    "Trial-fit the fabricated pieces, spacers, relay box, MIDI holders, and cable exits before wrapping or tying down the under-bonnet loom.",
+                    "Trial-fit the fabricated pieces, spacers, relay box, MIDI holders, battery-side carrier, cutoff, and cable exits before wrapping or tying down the under-bonnet loom.",
                 ],
                 "tools": ["Drill", "Files", "Deburring tool", "Rivet nut tool or spanners", "Calipers"],
                 "supplies": ["Electrical fabrication DXF/PDF pack", "3.0 mm 5052-H32 aluminium", "HDPE/ABS/G10 sheet", "Spacers", "P-clips", "Fasteners"],
-                "hold_point": "Final loom routing waits until relay and MIDI mounts fit without forcing cable bend radius or leaving live studs exposed.",
+                "hold_point": "Final loom routing waits until relay, MIDI, and battery-side cutoff carrier mounts fit without forcing cable bend radius or leaving live studs exposed.",
                 "image_tokens": ["relay", "fuse", "midi", "wiring", "battery"],
             },
             {
@@ -1223,18 +1224,19 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "title": "Release Electrical Fabrication Packages",
                 "priority": "P0",
                 "remaining": "before permanent under-bonnet loom routing",
-                "instruction": "Track the three defined electrical fabrication requirements as separate package rows.",
+                "instruction": "Track the defined electrical fabrication requirements as separate package rows.",
                 "process_steps": [
                     "Use data/manual/fabrication/electrical_modules_rev_a/ as the reference/provisional combined-module requirement.",
                     "Use data/manual/fabrication/midi5_plate_mount_rev_c/ as the current MIDI holder plate requirement.",
+                    "Use docs/front-engine-bay-mounting-fabrication-plan-20260508.md as the battery-side MIDI/cutoff vehicle-carrier site-measurement requirement.",
                     "Use data/manual/fabrication/relay_mount_rev_c/ as the current relay carrier and rear-guard requirement.",
                     "Send each package PDF for review and its DXFs for cutting.",
                     "Keep SVGs with the job for visual checking.",
-                    "Trial-fit electrical parts with spacers, cable exits, relay box, and MIDI holders before tying down the loom.",
+                    "Trial-fit electrical parts with spacers, cable exits, relay box, MIDI holders, battery-side carrier, and cutoff before tying down the loom.",
                 ],
                 "tools": ["DXF viewer", "Drill", "Files", "Deburring tool", "Calipers"],
                 "supplies": ["Electrical module PDF/DXFs", "MIDI plate PDF/DXFs", "Relay mount PDF/DXFs", "Aluminium sheet", "Insulator sheet", "Spacers"],
-                "hold_point": "Final loom routing waits until relay and MIDI mounts fit without forcing cable bend radius or leaving live studs exposed.",
+                "hold_point": "Final loom routing waits until relay, MIDI, and battery-side cutoff carrier mounts fit without forcing cable bend radius or leaving live studs exposed.",
                 "image_tokens": ["relay", "fuse", "midi", "fabrication", "battery"],
             },
             {
@@ -1972,6 +1974,10 @@ FABRICATION_DESIGN_LINKS_BY_PACKAGE: dict[str, list[tuple[str, str]]] = {
         ("data/manual/fabrication/midi5_plate_mount_rev_c/midi5_holder_subplate_rev_c.dxf", "MIDI holder subplate DXF"),
         ("data/manual/fabrication/midi5_plate_mount_rev_c/midi5_holder_subplate_rev_c.svg", "MIDI holder subplate SVG"),
         ("data/manual/fabrication/midi5_plate_mount_rev_c/midi5_mount_plate_rev_c.dxf", "MIDI mount plate DXF"),
+    ],
+    "battery_power_carrier_mount_rev_a": [
+        ("docs/front-engine-bay-mounting-fabrication-plan-20260508.md", "Battery power carrier site-measurement plan"),
+        ("data/manual/fabrication/midi5_plate_mount_rev_c/README.md", "Related MIDI Rev C plate package"),
     ],
     "relay_mount_rev_c": [
         ("deliverables/fabrication_packages/relay_mount_rev_c.zip", "Relay mount package ZIP"),
@@ -2737,7 +2743,12 @@ def build_replacement_pipe_requirements(
 def fabrication_package_payload(row: dict[str, str]) -> dict[str, Any]:
     package_id = clean(row.get("package_id"))
     readme_path = clean(row.get("readme"))
-    package_dir = str(Path(readme_path).parent).replace("\\", "/") if readme_path else f"data/manual/fabrication/{package_id}"
+    readme_parent = str(Path(readme_path).parent).replace("\\", "/") if readme_path else ""
+    package_dir = (
+        readme_parent
+        if readme_parent.startswith("data/manual/fabrication/")
+        else f"data/manual/fabrication/{package_id}"
+    )
 
     primary_links: list[dict[str, str]] = []
     primary_repo_paths: list[str] = []

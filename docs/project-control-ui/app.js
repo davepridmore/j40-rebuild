@@ -2992,13 +2992,14 @@
       "BUMP-60020-SHORT",
       "MIDI5-PLATE-001",
       "MIDI5-SUBPLATE-001",
+      "PWR-CARRIER-001",
       "RELAY-CARRIER-001",
       "RELAY-GUARD-001",
     ]);
     const isFabricationRow =
       controlledIds.has(rowId) ||
       partNumber.endsWith(".dxf") ||
-      ["rubber_recreation_rev_a", "midi5_plate_mount_rev_c", "relay_mount_rev_c"].some((token) => route.includes(token));
+      ["rubber_recreation_rev_a", "midi5_plate_mount_rev_c", "battery_power_carrier_mount_rev_a", "relay_mount_rev_c"].some((token) => route.includes(token));
 
     if (!isFabricationRow) {
       return null;
@@ -3790,6 +3791,22 @@
         action: "Route/print only in non-conductive material; keep common feed side and five fused output side clear.",
       },
       {
+        id: "PWR-CARRIER-001",
+        item: "Battery-side MIDI/cutoff vehicle carrier",
+        partNumber: "front-engine-bay-mounting-fabrication-plan-20260508.md",
+        route: "battery_power_carrier_mount_rev_a",
+        state: "site_measurement_required",
+        image: scoutPreviousPartImage("../../photos/20260317_235232_gp_3Ojs4Rag.jpg", "battery-side engine-bay location", "20260317_235232_gp_3Ojs4Rag", ["battery", "carrier"]),
+        spec: "Vehicle-side structural pickup bracket/carrier for the MIDI Rev C plate and battery master cutoff/isolator.",
+        qty: "1",
+        dimension: "Site-measured. Must clear battery, bonnet, terminals, cable bend radius, and the 190 x 150 mm MIDI plate cardboard mock-up.",
+        material: "3.0 mm steel or aluminium carrier; material follows the final welded-versus-bolted pickup decision.",
+        sourceBasis: "docs/front-engine-bay-mounting-fabrication-plan-20260508.md; data/manual/fabrication/midi5_plate_mount_rev_c/README.md",
+        action: "Capture tray top/side/underside and mock-up photos before cutting; finish any welded pickup points before primer/Raptor.",
+        reject: "Do not mount to unsupported thin sheet, crowd battery terminals, or place live studs in the battery acid/venting splash zone.",
+        notes: "Vehicle-side interface only; the MIDI holder itself remains the Rev C plate/subplate package.",
+      },
+      {
         id: "RELAY-CARRIER-001",
         item: "Relay box carrier",
         partNumber: "relay_carrier_rev_c.dxf",
@@ -4050,7 +4067,7 @@
           scoutDocLink("docs/fabrication-handoff-index.md", "Fabrication handoff index"),
           scoutDocLink("data/manual/fabrication/midi5_plate_mount_rev_c/README.md", "MIDI holder subplate package"),
         ],
-        exactSpecRows: fabricationExactSpecRows.filter((row) => row.id === "MIDI5-SUBPLATE-001"),
+        exactSpecRows: fabricationExactSpecRows.filter((row) => ["MIDI5-SUBPLATE-001", "PWR-CARRIER-001"].includes(row.id)),
         underlayRows: fabricationElectricalUnderlayRows,
         fabricationPackages: ((fabricationWorkstream && fabricationWorkstream.fabrication_packages) || []).filter(
           (pkg) => !cleanString(pkg && pkg.package_id).includes("rubber_recreation")

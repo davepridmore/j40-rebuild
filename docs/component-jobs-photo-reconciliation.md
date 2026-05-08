@@ -1,14 +1,14 @@
 # Component Jobs vs Photo Inventory Reconciliation
 
-- Generated: 2026-05-08 20:22:46
+- Generated: 2026-05-08 21:11:07
 - Source component jobs: `data/manual/component_jobs.csv`
 - Source photo inventory: `data/manual/photo_inventory.csv`
 - Output CSV: `data/manual/component_jobs_photo_reconciliation.csv`
 
 ## Status Summary
 
-- `direct_photo_evidence`: 41
-- `indirect_photo_evidence_only`: 2
+- `direct_photo_evidence`: 43
+- `indirect_photo_evidence_only`: 3
 - `no_photo_evidence`: 7
 
 ## Per-Component Results
@@ -22,7 +22,8 @@
 | `rear_brake_cable_line_refresh` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `suspension_upgrade_fitment_and_alignment` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `suspension_upgrade_spec_and_kit_lock` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
-| `battery_tray_holder_bracket_repair_20260508` | `indirect_photo_evidence_only` | 0 | 35 | `-` | No configured photo directly proves the battery tray/holder bracket; engine-bay photos only provide location context until current close-ups are captured. |
+| `battery_power_carrier_mount_fabrication_20260508` | `indirect_photo_evidence_only` | 0 | 21 | `-` | Procurement photos document the MIDI/cutoff hardware separately, but current vehicle photos only locate the battery-side area; tray and pickup-point close-ups are required before release. |
+| `battery_tray_holder_bracket_repair_20260508` | `indirect_photo_evidence_only` | 0 | 35 | `-` | Engine-bay overview photos show the battery-side location, but no configured photo directly proves the tray feet/support brackets; current close-ups are required before release. |
 | `exhaust_mockup_brackets_before_coating_20260508` | `indirect_photo_evidence_only` | 0 | 32 | `-` | Current photo inventory has no dedicated exhaust mock-up evidence; chassis and engine-bay photos only support routing context. |
 | `auxiliary_chassis_tabs_and_clip_brackets_20260508` | `direct_photo_evidence` | 15 | 18 | `frame_rail_body_mount_and_hard_line_detail|rear_mid_frame_rail_and_hard_line_detail` | Hard-line and frame-rail photos show existing clip/tab areas; current audit photos are still required before deciding which auxiliary tabs to weld. |
 | `back_cabin` | `direct_photo_evidence` | 5 | 15 | `body_shell_with_doors_removed|dashboard_shell_and_cabin|rear_cargo_floor|rear_side_opening` | Rear cabin/body section is directly visible in multiple strip-down shots. |
@@ -39,11 +40,13 @@
 | `chassis_hard_lines_and_brackets` | `direct_photo_evidence` | 49 | 29 | `frame_floor_underside_and_lines|rear_mid_frame_rail_and_hard_line_detail` | Underbody routing photos and May 1 hard-line/rail shots give direct visibility to line paths/brackets and nearby support hardware. |
 | `chassis_missing_welded_bracket_survey_20260508` | `direct_photo_evidence` | 45 | 20 | `frame_rail_body_mount_and_crossmember_detail|frame_rail_body_mount_and_hard_line_detail|front_frame_horns_bumper_and_radiator_support|front_frame_horns_bumper_and_steering_area|rear_mid_frame_rail_and_hard_line_detail` | Existing body-off chassis photos provide the survey baseline, but the task remains open until current close-ups label every missing, wire-tied, or required bracket. |
 | `chassis_wire_brush_status_20260501` | `direct_photo_evidence` | 39 | 14 | `frame_rail_body_mount_and_crossmember_detail|front_frame_horns_bumper_and_steering_area|rear_axle_spring_hanger_and_crossmember|rear_mid_frame_rail_and_hard_line_detail` | May 1 photos directly document the current post-wire-brushing chassis state and the remaining rust-prep closeout zones. |
+| `engine_bay_mounting_scouting_pass_20260508` | `direct_photo_evidence` | 23 | 6 | `cooling_hoses_fan_belt_and_radiator_support|engine_bay_overview|front_frame_horns_bumper_and_radiator_support` | Current photos are enough to start the radiator/battery/power-carrier plan; this row closes only when ruler photos and cardboard mock-up checks fill the remaining measurement gaps. |
 | `engine_cooling_pipe_fabrication_samples` | `direct_photo_evidence` | 6 | 16 | `cooling_pipe_fabrication_samples` | May 2 selected pipe photos directly document the made-to-order cooling pipe sample set; engine-bay routing photos provide supporting context. |
 | `engine_powertrain_cleaning_20260501` | `direct_photo_evidence` | 14 | 21 | `engine_powertrain_cleaning_baseline` | May 1 engine, gearbox, transfer, steering, and driveline photos directly document the cleaning baseline before degreasing and leak inspection. |
 | `floor_pan` | `direct_photo_evidence` | 38 | 42 | `floor_pan_and_firewall|floor_pan_rust_zones|floor_seam_and_body_mount_rust` | Floor pan rust/condition is directly evidenced with dedicated close-ups. |
 | `front_brake_disc_baseline` | `direct_photo_evidence` | 7 | 11 | `steering_and_suspension_linkages` | Steering-linkage underside photos are the closest grouped direct evidence, with frame/mount shots providing supporting context for the current front disc inference. |
-| `front_radiator_bracket_repair_20260508` | `direct_photo_evidence` | 8 | 21 | `cooling_hoses_fan_belt_and_radiator_support|front_frame_horns_bumper_and_radiator_support` | Front support and cooling-route photos are the baseline for radiator-bracket location; closure still needs current trial-fit and bracket close-ups. |
+| `front_radiator_bracket_repair_20260508` | `direct_photo_evidence` | 8 | 21 | `cooling_hoses_fan_belt_and_radiator_support|front_frame_horns_bumper_and_radiator_support` | Front support and cooling-route photos are the baseline for the wire-held radiator support repair; closure still needs current trial-fit and bracket close-ups. |
+| `front_radiator_two_side_retention_fabrication_20260508` | `direct_photo_evidence` | 8 | 21 | `cooling_hoses_fan_belt_and_radiator_support|front_frame_horns_bumper_and_radiator_support` | Radiator/front-support photos directly show the radiator support location and fan-clearance context; final hole centres and bracket offsets still need ruler photos or dry-fit. |
 | `front_vent_window_assemblies` | `direct_photo_evidence` | 1 | 4 | `front_vent_window_assemblies` | Detached paired vent/quarter window assemblies are directly documented and should close through the WP02 refurbishment gate. |
 | `front_windows` | `direct_photo_evidence` | 2 | 18 | `hood_and_front_windshield_overview` | Front windshield is explicitly captured in dedicated front overview shots. |
 | `front_wings` | `direct_photo_evidence` | 6 | 38 | `detached_body_panels_and_doors|detached_doors_and_panels` | Front wings are tracked to paint from the April 23 send-day detached-parts batch; wing-removal photos are supporting context only. |
