@@ -18,13 +18,17 @@
     activeWorkstreamId: data.workstreams && data.workstreams.length ? data.workstreams[0].id : "",
     photoOverrides: loadPhotoOverrides(),
     lightboxImageBase: null,
+    lightboxImageKey: "",
     itemDetailRow: null,
     recategorizeOpen: false,
   };
 
   const imageRegistry = new Map();
+  const imageSequences = new Map();
+  const imageSequenceByKey = new Map();
   const itemRegistry = new Map();
   let imageKeyCounter = 0;
+  let imageSequenceCounter = 0;
   let itemKeyCounter = 0;
   const lightbox = createLightbox();
   const itemDetail = createItemDetail();
@@ -139,6 +143,12 @@
     } else if (event.key.toLowerCase() === "f") {
       event.preventDefault();
       fitLightboxImage();
+    } else if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      navigateLightbox(-1);
+    } else if (event.key === "ArrowRight") {
+      event.preventDefault();
+      navigateLightbox(1);
     }
   });
 
@@ -245,7 +255,7 @@
 
   function isFormControl(node) {
     const tagName = node && node.tagName ? node.tagName.toLowerCase() : "";
-    return ["input", "select", "textarea", "button"].includes(tagName) || Boolean(node && node.isContentEditable);
+    return ["input", "select", "textarea"].includes(tagName) || Boolean(node && node.isContentEditable);
   }
 
   function supplierLabel(row) {
@@ -914,7 +924,10 @@
 
   function resetImageRegistry() {
     imageRegistry.clear();
+    imageSequences.clear();
+    imageSequenceByKey.clear();
     imageKeyCounter = 0;
+    imageSequenceCounter = 0;
   }
 
   function resetItemRegistry() {
@@ -922,10 +935,21 @@
     itemKeyCounter = 0;
   }
 
-  function registerImage(baseMeta) {
+  function createImageSequence() {
+    imageSequenceCounter += 1;
+    const sequenceId = `seq_${imageSequenceCounter}`;
+    imageSequences.set(sequenceId, []);
+    return sequenceId;
+  }
+
+  function registerImage(baseMeta, sequenceId = "") {
     imageKeyCounter += 1;
     const imageKey = `img_${imageKeyCounter}`;
     imageRegistry.set(imageKey, baseMeta);
+    if (sequenceId && imageSequences.has(sequenceId)) {
+      imageSequences.get(sequenceId).push(imageKey);
+      imageSequenceByKey.set(imageKey, sequenceId);
+    }
     return imageKey;
   }
 
@@ -945,10 +969,10 @@
     `;
   }
 
-  function prepareImage(image, fallbackCaption) {
+  function prepareImage(image, fallbackCaption, options = {}) {
     const base = getBasePhotoMeta(image);
     const effective = withOverride(base);
-    const imageKey = registerImage(base);
+    const imageKey = registerImage(base, cleanString(options.sequenceId));
     const mediaId = cleanString(base.media_id);
     return {
       key: imageKey,
@@ -1003,7 +1027,7 @@
   }
 
   function renderFigureImage(image, fallbackCaption, options = {}) {
-    const prepared = prepareImage(image, fallbackCaption);
+    const prepared = prepareImage(image, fallbackCaption, { sequenceId: options.sequenceId });
     const showCaption = options.showCaption !== false;
     const visibleCaption = cleanString(options.caption || prepared.caption);
     const figureClass = options.figureClass || "evidence-figure";
@@ -1061,12 +1085,12 @@
       return `<span class="small-muted">${escapeHtml(formatToken(requirement.photo_status || "photo_needed"))}</span>`;
     }
     const fallbackCaption = requirement.requirement_name || requirement.pipe_or_line || requirement.part_name || "Requirement evidence";
+    const sequenceId = createImageSequence();
     return `
       <div class="requirement-evidence-grid">
         ${images
-          .slice(0, 4)
           .map((image) => {
-            const prepared = prepareImage(image, fallbackCaption);
+            const prepared = prepareImage(image, fallbackCaption, { sequenceId });
             return `
               <div class="requirement-evidence-item">
                 ${renderPreparedMedia(prepared, "table-image-btn", "table-image")}
@@ -1076,7 +1100,6 @@
           })
           .join("")}
       </div>
-      ${images.length > 4 ? `<span class="table-image-note">+${escapeHtml(images.length - 4)} more</span>` : ""}
     `;
   }
 
@@ -1093,10 +1116,11 @@
     const status = cleanString(source.photo_status || source.evidence_level || "photo_needed");
     const evidenceRefs = cleanString(options.evidenceRefs || source.evidence_refs || source.evidence_ref || "");
     const label = cleanString(options.label || "Evidence Images");
+    const sequenceId = images.length ? createImageSequence() : "";
     const imageMarkup = images.length
       ? images
           .map((image) => {
-            const prepared = prepareImage(image, fallbackCaption);
+            const prepared = prepareImage(image, fallbackCaption, { sequenceId });
             return `
               <div class="evidence-strip-item">
                 ${renderPreparedMedia(prepared, "table-image-btn", "table-image")}
@@ -1431,6 +1455,7 @@
   }
 
   function renderChassisRubberReferenceImages() {
+    const sequenceId = createImageSequence();
     return `
       <article class="card pipe-requirements-card">
         <div class="detail-header">
@@ -1446,7 +1471,7 @@
                 media_id: path.split("/").pop().replace(/\.[^.]+$/, ""),
                 media_type: "photo",
               };
-              const prepared = prepareImage(image, caption);
+              const prepared = prepareImage(image, caption, { sequenceId });
               return `
                 <div class="requirement-evidence-item">
                   ${renderPreparedMedia(prepared, "table-image-btn", "table-image")}
@@ -2385,11 +2410,12 @@
     if (!uniqueImages.length) {
       return '<p class="small-muted">No media evidence mapped yet.</p>';
     }
+    const sequenceId = createImageSequence();
     return `
       <div class="gallery">
         ${uniqueImages
           .map((image) => {
-            const prepared = prepareImage(image, "Evidence media");
+            const prepared = prepareImage(image, "Evidence media", { sequenceId });
             const visibleCaption = cleanString(image.caption || prepared.caption);
             return `
               <figure>
@@ -2723,6 +2749,7 @@
     if (!sourceImages.length) {
       return "";
     }
+    const sequenceId = createImageSequence();
     return `
       <div class="scout-spec-gallery">
         ${sourceImages
@@ -2733,6 +2760,7 @@
               imageClass: "scout-spec-gallery-image",
               captionClass: "small-muted",
               caption: image.caption,
+              sequenceId,
             })
           )
           .join("")}
@@ -6182,12 +6210,12 @@
       return ref ? `<span class="small-muted">${escapeHtml(truncateText(ref, 90))}</span>` : "-";
     }
     const fallbackCaption = task.title || "Task evidence";
+    const sequenceId = createImageSequence();
     return `
       <div class="requirement-evidence-grid capture-task-evidence-grid">
         ${images
-          .slice(0, 4)
           .map((image) => {
-            const prepared = prepareImage(image, fallbackCaption);
+            const prepared = prepareImage(image, fallbackCaption, { sequenceId });
             return `
               <div class="requirement-evidence-item">
                 ${renderPreparedMedia(prepared, "table-image-btn", "table-image")}
@@ -6197,7 +6225,6 @@
           })
           .join("")}
       </div>
-      ${images.length > 4 ? `<span class="table-image-note">+${escapeHtml(images.length - 4)} more</span>` : ""}
     `;
   }
 
@@ -6840,7 +6867,10 @@
             <button type="button" class="lightbox-zoom-btn icon" id="lightbox-zoom-in" title="Zoom in">+</button>
             <a class="lightbox-zoom-btn" id="lightbox-open-original" href="#" target="_blank" rel="noopener noreferrer">Open Original</a>
             <span class="lightbox-zoom-level" id="lightbox-zoom-level">100%</span>
+            <span class="lightbox-nav-status" id="lightbox-nav-status"></span>
           </div>
+          <button type="button" class="lightbox-nav-btn lightbox-nav-prev" id="lightbox-prev-image" title="Previous image" aria-label="Previous image">&lsaquo;</button>
+          <button type="button" class="lightbox-nav-btn lightbox-nav-next" id="lightbox-next-image" title="Next image" aria-label="Next image">&rsaquo;</button>
           <img id="lightbox-image" alt="Selected media">
           <video id="lightbox-video" controls preload="metadata" playsinline class="is-hidden"></video>
         </div>
@@ -6907,6 +6937,9 @@
       zoomInBtn: wrapper.querySelector("#lightbox-zoom-in"),
       openOriginalLink: wrapper.querySelector("#lightbox-open-original"),
       zoomLevel: wrapper.querySelector("#lightbox-zoom-level"),
+      navStatus: wrapper.querySelector("#lightbox-nav-status"),
+      prevImageBtn: wrapper.querySelector("#lightbox-prev-image"),
+      nextImageBtn: wrapper.querySelector("#lightbox-next-image"),
       title: wrapper.querySelector("#lightbox-title"),
       subtitle: wrapper.querySelector("#lightbox-subtitle"),
       meta: wrapper.querySelector("#lightbox-meta"),
@@ -6945,6 +6978,8 @@
     refs.actualSizeBtn.addEventListener("click", setLightboxActualSize);
     refs.zoomOutBtn.addEventListener("click", () => zoomLightboxAtCenter(0.8));
     refs.zoomInBtn.addEventListener("click", () => zoomLightboxAtCenter(1.25));
+    refs.prevImageBtn.addEventListener("click", () => navigateLightbox(-1));
+    refs.nextImageBtn.addEventListener("click", () => navigateLightbox(1));
 
     refs.media.addEventListener(
       "wheel",
@@ -6962,7 +6997,7 @@
       if (
         !state.lightboxImageBase ||
         lightbox.image.classList.contains("is-hidden") ||
-        event.target.closest(".lightbox-toolbar")
+        event.target.closest(".lightbox-toolbar, .lightbox-nav-btn")
       ) {
         return;
       }
@@ -7029,6 +7064,49 @@
     });
 
     return refs;
+  }
+
+  function lightboxImageKeys() {
+    const sequenceId = imageSequenceByKey.get(state.lightboxImageKey);
+    const sequenceKeys = sequenceId ? imageSequences.get(sequenceId) || [] : [];
+    return sequenceKeys.length ? sequenceKeys : Array.from(imageRegistry.keys());
+  }
+
+  function currentLightboxImageIndex() {
+    const keys = lightboxImageKeys();
+    return keys.indexOf(state.lightboxImageKey);
+  }
+
+  function updateLightboxNavigationControls() {
+    const keys = lightboxImageKeys();
+    const index = currentLightboxImageIndex();
+    const count = keys.length;
+    const hasNavigation = count > 1 && index >= 0;
+
+    if (lightbox.prevImageBtn) {
+      lightbox.prevImageBtn.disabled = !hasNavigation;
+    }
+    if (lightbox.nextImageBtn) {
+      lightbox.nextImageBtn.disabled = !hasNavigation;
+    }
+    if (lightbox.navStatus) {
+      lightbox.navStatus.textContent = hasNavigation ? `${index + 1} / ${count}` : "";
+    }
+  }
+
+  function navigateLightbox(direction) {
+    const keys = lightboxImageKeys();
+    if (!state.lightboxImageBase || keys.length < 2) {
+      return;
+    }
+
+    const index = currentLightboxImageIndex();
+    if (index < 0) {
+      return;
+    }
+
+    const nextIndex = (index + direction + keys.length) % keys.length;
+    openLightbox(keys[nextIndex]);
   }
 
   function isLightboxPhotoVisible() {
@@ -7224,6 +7302,7 @@
     if (!baseMeta) {
       return;
     }
+    updateLightboxNavigationControls();
     const effective = withOverride(baseMeta);
     const mediaId = cleanString(effective.media_id);
     const overrideKey = photoOverrideKeyForMeta(effective);
@@ -7309,6 +7388,7 @@
     if (!lightbox.status.textContent) {
       setLightboxStatus("", "info");
     }
+    updateLightboxNavigationControls();
   }
 
   function openLightbox(imageKey) {
@@ -7320,6 +7400,7 @@
       closeItemDetail();
     }
     state.lightboxImageBase = baseMeta;
+    state.lightboxImageKey = imageKey;
     state.recategorizeOpen = false;
     setLightboxStatus("", "info");
     renderLightbox();
@@ -7337,6 +7418,7 @@
       lightbox.video.classList.add("is-hidden");
     }
     state.lightboxImageBase = null;
+    state.lightboxImageKey = "";
     state.recategorizeOpen = false;
     fitLightboxOnImageLoad = false;
     resetLightboxTransform();

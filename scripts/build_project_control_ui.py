@@ -3329,7 +3329,7 @@ def chassis_bracket_analysis_register_payload(
                 "implementation_owner": clean(row.get("implementation_owner")),
                 "status": clean(row.get("status")),
                 "notes": clean(row.get("notes")),
-                "evidence_images": evidence_images_from_refs(evidence_refs, rows_by_id, max_images=4),
+                "evidence_images": evidence_images_from_refs(evidence_refs, rows_by_id),
             }
         )
     return payload
@@ -3466,13 +3466,13 @@ def evidence_images_from_refs(
     refs: str,
     rows_by_id: dict[str, dict[str, str]],
     *,
-    max_images: int = 6,
+    max_images: int | None = None,
 ) -> list[dict[str, Any]]:
     images: list[dict[str, Any]] = []
     for media_id in split_pipe(refs):
         if media_id in rows_by_id:
             images.append(image_payload(rows_by_id[media_id], []))
-        if len(images) >= max_images:
+        if max_images is not None and len(images) >= max_images:
             break
     return dedupe_payload_images(images)
 
@@ -3620,14 +3620,15 @@ def evidence_images_for_keys(
     index: dict[str, list[dict[str, Any]]],
     keys: Iterable[str],
     *,
-    max_images: int = 6,
+    max_images: int | None = None,
 ) -> list[dict[str, Any]]:
     images: list[dict[str, Any]] = []
     for key in keys:
         images.extend(index.get(clean(key), []))
-        if len(images) >= max_images * 2:
+        if max_images is not None and len(images) >= max_images * 2:
             break
-    return dedupe_payload_images(images)[:max_images]
+    deduped = dedupe_payload_images(images)
+    return deduped[:max_images] if max_images is not None else deduped
 
 
 def evidence_images_for_primary_or_fallback_keys(
@@ -3635,7 +3636,7 @@ def evidence_images_for_primary_or_fallback_keys(
     primary_keys: Iterable[str],
     fallback_keys: Iterable[str],
     *,
-    max_images: int = 6,
+    max_images: int | None = None,
 ) -> list[dict[str, Any]]:
     primary_images = evidence_images_for_keys(index, primary_keys, max_images=max_images)
     if primary_images:
@@ -6326,10 +6327,10 @@ def build_chassis_prime_readiness_panel(photo_rows: list[dict[str, str]]) -> dic
     counts_by_component = Counter(clean(row.get("specific_component")) for row in chassis_rows)
     rows_by_component = rows_by_specific_component(chassis_rows)
 
-    def zone_images(components: tuple[str, ...], max_images: int = 8) -> list[dict[str, Any]]:
+    def zone_images(components: tuple[str, ...]) -> list[dict[str, Any]]:
         if components:
-            return image_payloads_for_components(rows_by_component, components)[:max_images]
-        return dedupe_payload_images([image_payload(row, []) for row in chassis_rows])[:max_images]
+            return image_payloads_for_components(rows_by_component, components)
+        return dedupe_payload_images([image_payload(row, []) for row in chassis_rows])
 
     def zone_evidence_refs(images: list[dict[str, Any]]) -> str:
         return "|".join(clean(image.get("media_id")) for image in images if clean(image.get("media_id")))
