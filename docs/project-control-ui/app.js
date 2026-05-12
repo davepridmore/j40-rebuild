@@ -2472,6 +2472,7 @@
         const available = Array.isArray(materials.available) ? materials.available : [];
         const pendingDelivery = Array.isArray(materials.pending_delivery) ? materials.pending_delivery : [];
         const missing = Array.isArray(materials.missing) ? materials.missing : [];
+        const separateZoneEvidenceRows = cleanString(panel.key) === "chassis_prime_readiness";
         return `
           <article class="card">
             <div class="detail-header">
@@ -2489,7 +2490,14 @@
                 ? `
                   <h4>Still Needs Work</h4>
                   <div class="table-wrap">
-                    <table>
+                    <table class="operation-zone-table">
+                      <colgroup>
+                        <col class="operation-col-area">
+                        <col class="operation-col-remaining">
+                        <col class="operation-col-status">
+                        <col class="operation-col-work">
+                        <col class="operation-col-evidence">
+                      </colgroup>
                       <thead>
                         <tr>
                           <th>Area</th>
@@ -2503,13 +2511,30 @@
                         ${zones
                           .map(
                             (zone) => `
-                              <tr>
+                              <tr class="operation-zone-data-row">
                                 <td><strong>${escapeHtml(zone.area || "")}</strong></td>
                                 <td>${escapeHtml(zone.remaining || "")}</td>
                                 <td>${statusChip(zone.status || "pending")}</td>
                                 <td>${escapeHtml(zone.work_required || "")}</td>
-                                <td>${escapeHtml(zone.evidence_count || "0")}</td>
+                                <td>${escapeHtml(zone.evidence_count || "0")} photos</td>
                               </tr>
+                              ${
+                                separateZoneEvidenceRows
+                                  ? `<tr class="row-evidence-strip-row operation-zone-evidence-row">
+                                      <td colspan="5">${renderRequirementEvidenceStrip(
+                                        {
+                                          evidence_images: zone.evidence_images,
+                                          evidence_level: zone.status || "photo_needed",
+                                          evidence_refs: zone.evidence_refs,
+                                        },
+                                        {
+                                          label: "Zone Evidence Images",
+                                          fallbackCaption: zone.area,
+                                        }
+                                      )}</td>
+                                    </tr>`
+                                  : ""
+                              }
                             `
                           )
                           .join("")}

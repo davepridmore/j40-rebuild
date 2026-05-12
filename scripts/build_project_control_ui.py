@@ -6324,6 +6324,36 @@ def rubber_recreation_candidate_rows(photo_rows: list[dict[str, str]]) -> list[d
 def build_chassis_prime_readiness_panel(photo_rows: list[dict[str, str]]) -> dict[str, Any]:
     chassis_rows = may1_chassis_status_rows(photo_rows)
     counts_by_component = Counter(clean(row.get("specific_component")) for row in chassis_rows)
+    rows_by_component = rows_by_specific_component(chassis_rows)
+
+    def zone_images(components: tuple[str, ...], max_images: int = 8) -> list[dict[str, Any]]:
+        if components:
+            return image_payloads_for_components(rows_by_component, components)[:max_images]
+        return dedupe_payload_images([image_payload(row, []) for row in chassis_rows])[:max_images]
+
+    def zone_evidence_refs(images: list[dict[str, Any]]) -> str:
+        return "|".join(clean(image.get("media_id")) for image in images if clean(image.get("media_id")))
+
+    def zone(
+        *,
+        area: str,
+        remaining: str,
+        status: str,
+        work_required: str,
+        evidence_count: int,
+        components: tuple[str, ...] = (),
+    ) -> dict[str, Any]:
+        images = zone_images(components)
+        return {
+            "area": area,
+            "remaining": remaining,
+            "status": status,
+            "work_required": work_required,
+            "evidence_count": str(evidence_count),
+            "evidence_refs": zone_evidence_refs(images),
+            "evidence_images": images,
+        }
+
     return {
         "key": "chassis_prime_readiness",
         "title": "Before Primer",
@@ -6334,48 +6364,53 @@ def build_chassis_prime_readiness_panel(photo_rows: list[dict[str, str]]) -> dic
             {"label": "Main blocker", "value": "detail prep"},
         ],
         "zones": [
-            {
-                "area": "Visible flat exterior rail faces",
-                "remaining": "20-30%",
-                "status": "in_progress",
-                "work_required": "Feather chipped coating, remove loose rust and dust, leave hard-bonded paint in place where sound.",
-                "evidence_count": str(sum(counts_by_component[name] for name in ("frame_rail_body_mount_and_crossmember_detail", "rear_mid_frame_rail_and_hard_line_detail"))),
-            },
-            {
-                "area": "Top flanges, lower edges, holes, and seams",
-                "remaining": "50-60%",
-                "status": "pending_detail_brush",
-                "work_required": "Wire-cup and hand-brush rail edges, holes, seam lips, and pitted edges until no loose corrosion remains.",
-                "evidence_count": str(len(chassis_rows)),
-            },
-            {
-                "area": "Brackets, weld toes, spring/shackle hangers, body mounts",
-                "remaining": "50-60%",
-                "status": "pending_detail_brush",
-                "work_required": "Clean bracket roots and weld toes; inspect spring hangers, shackle mounts, body-mount pads, captive threads, and crossmember junctions.",
-                "evidence_count": str(sum(counts_by_component[name] for name in ("rear_axle_spring_hanger_and_crossmember", "frame_rail_body_mount_and_crossmember_detail", "front_frame_horns_bumper_and_steering_area"))),
-            },
-            {
-                "area": "Behind hard lines, clips, wiring, and steering/linkage obstructions",
-                "remaining": "60-70%",
-                "status": "access_limited",
-                "work_required": "Release clips or move lines only where safe, then inspect under contact points before coating.",
-                "evidence_count": str(counts_by_component["rear_mid_frame_rail_and_hard_line_detail"] + counts_by_component["front_frame_horns_bumper_and_steering_area"]),
-            },
-            {
-                "area": "Front frame horns, bumper/winch brackets, steering-box area",
-                "remaining": "50-60%",
-                "status": "pending_inspection",
-                "work_required": "Finish brushing and crack-check steering-box mount, front horns, bumper/winch brackets, and nearby crossmember joints.",
-                "evidence_count": str(counts_by_component["front_frame_horns_bumper_and_steering_area"]),
-            },
-            {
-                "area": "Rear axle, diff housing, leaf clamps, U-bolt zones",
-                "remaining": "40-50% if coated now",
-                "status": "scope_decision",
-                "work_required": "Decide whether these are included in this coating cycle; if yes, brush and degrease them before primer/topcoat.",
-                "evidence_count": str(counts_by_component["rear_axle_spring_hanger_and_crossmember"]),
-            },
+            zone(
+                area="Visible flat exterior rail faces",
+                remaining="20-30%",
+                status="in_progress",
+                work_required="Feather chipped coating, remove loose rust and dust, leave hard-bonded paint in place where sound.",
+                evidence_count=sum(counts_by_component[name] for name in ("frame_rail_body_mount_and_crossmember_detail", "rear_mid_frame_rail_and_hard_line_detail")),
+                components=("frame_rail_body_mount_and_crossmember_detail", "rear_mid_frame_rail_and_hard_line_detail"),
+            ),
+            zone(
+                area="Top flanges, lower edges, holes, and seams",
+                remaining="50-60%",
+                status="pending_detail_brush",
+                work_required="Wire-cup and hand-brush rail edges, holes, seam lips, and pitted edges until no loose corrosion remains.",
+                evidence_count=len(chassis_rows),
+            ),
+            zone(
+                area="Brackets, weld toes, spring/shackle hangers, body mounts",
+                remaining="50-60%",
+                status="pending_detail_brush",
+                work_required="Clean bracket roots and weld toes; inspect spring hangers, shackle mounts, body-mount pads, captive threads, and crossmember junctions.",
+                evidence_count=sum(counts_by_component[name] for name in ("rear_axle_spring_hanger_and_crossmember", "frame_rail_body_mount_and_crossmember_detail", "front_frame_horns_bumper_and_steering_area")),
+                components=("rear_axle_spring_hanger_and_crossmember", "frame_rail_body_mount_and_crossmember_detail", "front_frame_horns_bumper_and_steering_area"),
+            ),
+            zone(
+                area="Behind hard lines, clips, wiring, and steering/linkage obstructions",
+                remaining="60-70%",
+                status="access_limited",
+                work_required="Release clips or move lines only where safe, then inspect under contact points before coating.",
+                evidence_count=counts_by_component["rear_mid_frame_rail_and_hard_line_detail"] + counts_by_component["front_frame_horns_bumper_and_steering_area"],
+                components=("rear_mid_frame_rail_and_hard_line_detail", "front_frame_horns_bumper_and_steering_area"),
+            ),
+            zone(
+                area="Front frame horns, bumper/winch brackets, steering-box area",
+                remaining="50-60%",
+                status="pending_inspection",
+                work_required="Finish brushing and crack-check steering-box mount, front horns, bumper/winch brackets, and nearby crossmember joints.",
+                evidence_count=counts_by_component["front_frame_horns_bumper_and_steering_area"],
+                components=("front_frame_horns_bumper_and_steering_area",),
+            ),
+            zone(
+                area="Rear axle, diff housing, leaf clamps, U-bolt zones",
+                remaining="40-50% if coated now",
+                status="scope_decision",
+                work_required="Decide whether these are included in this coating cycle; if yes, brush and degrease them before primer/topcoat.",
+                evidence_count=counts_by_component["rear_axle_spring_hanger_and_crossmember"],
+                components=("rear_axle_spring_hanger_and_crossmember",),
+            ),
         ],
         "steps": [
             {

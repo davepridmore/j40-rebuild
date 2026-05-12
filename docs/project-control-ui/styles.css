@@ -152,6 +152,7 @@ h1 {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 14px;
+  min-width: 0;
   padding: 0.85rem;
 }
 
@@ -424,6 +425,7 @@ h1 {
 .workstream-detail {
   display: grid;
   gap: 0.8rem;
+  min-width: 0;
 }
 
 .detail-header {
@@ -806,33 +808,61 @@ th {
 }
 
 .bracket-analysis-table {
-  min-width: 1880px;
+  min-width: 1700px;
 }
 
 .bracket-analysis-table col.bracket-col-function {
-  width: 320px;
-}
-
-.bracket-analysis-table col.bracket-col-photo-read {
   width: 300px;
 }
 
+.bracket-analysis-table col.bracket-col-photo-read {
+  width: 450px;
+}
+
 .bracket-analysis-table col.bracket-col-decision {
-  width: 540px;
+  width: 430px;
 }
 
 .bracket-analysis-table col.bracket-col-next-action {
-  width: 720px;
+  width: 520px;
+}
+
+.operation-zone-table {
+  min-width: 1380px;
+  table-layout: fixed;
+}
+
+.operation-zone-table col.operation-col-area {
+  width: 260px;
+}
+
+.operation-zone-table col.operation-col-remaining {
+  width: 130px;
+}
+
+.operation-zone-table col.operation-col-status {
+  width: 180px;
+}
+
+.operation-zone-table col.operation-col-work {
+  width: 650px;
+}
+
+.operation-zone-table col.operation-col-evidence {
+  width: 160px;
 }
 
 .workstream-requirement-table th,
 .workstream-requirement-table td,
 .bracket-analysis-table th,
-.bracket-analysis-table td {
+.bracket-analysis-table td,
+.operation-zone-table th,
+.operation-zone-table td {
   overflow-wrap: anywhere;
 }
 
-.workstream-data-row td {
+.workstream-data-row td,
+.operation-zone-data-row td {
   padding-top: 0.58rem;
   padding-bottom: 0.58rem;
 }
@@ -847,6 +877,7 @@ th {
   background: #fbf7ef;
   border-top: 0;
   padding: 0.5rem 0.62rem 0.72rem;
+  width: auto;
 }
 
 .row-evidence-panel {
@@ -985,22 +1016,48 @@ th {
 
 .bracket-analysis-table th:nth-child(1),
 .bracket-analysis-table td:nth-child(1) {
-  width: 320px;
+  width: 300px;
 }
 
 .bracket-analysis-table th:nth-child(2),
 .bracket-analysis-table td:nth-child(2) {
-  width: 300px;
+  width: 450px;
 }
 
 .bracket-analysis-table th:nth-child(3),
 .bracket-analysis-table td:nth-child(3) {
-  width: 540px;
+  width: 430px;
 }
 
 .bracket-analysis-table th:nth-child(4),
 .bracket-analysis-table td:nth-child(4) {
-  width: 720px;
+  width: 520px;
+}
+
+.bracket-analysis-table .row-evidence-strip-row td,
+.operation-zone-table .row-evidence-strip-row td {
+  width: auto;
+}
+
+.bracket-analysis-table .row-evidence-strip,
+.operation-zone-table .row-evidence-strip {
+  gap: 0.65rem;
+}
+
+.bracket-analysis-table .evidence-strip-item,
+.operation-zone-table .evidence-strip-item {
+  flex: 0 0 180px;
+}
+
+.bracket-analysis-table .row-evidence-strip .table-image-btn,
+.operation-zone-table .row-evidence-strip .table-image-btn {
+  width: 180px;
+}
+
+.bracket-analysis-table .row-evidence-strip .table-image,
+.operation-zone-table .row-evidence-strip .table-image {
+  width: 180px;
+  height: 135px;
 }
 
 .requirement-evidence-grid {
@@ -1209,6 +1266,8 @@ th {
 .table-wrap {
   border: 1px solid var(--line);
   border-radius: 12px;
+  max-width: 100%;
+  min-width: 0;
   overflow: auto;
   background: var(--surface);
 }
