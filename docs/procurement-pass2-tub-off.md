@@ -1,6 +1,6 @@
 # Procurement Pass 2 (Tub-Off, Pakistan Cost Reality)
 
-- Generated: 2026-05-08 17:29:19
+- Generated: 2026-05-12 04:50:40
 - Input matrix: `data/manual/procurement_decision_matrix.csv`
 - Pass-2 matrix: `data/manual/procurement_decision_matrix_pass2.csv`
 - Basket plan: `data/manual/procurement_local_baskets_pass2.csv`
@@ -23,12 +23,12 @@
 - `defer_as_non_baseline`: 5
 - `defer_until_baseline_closure`: 1
 - `hold_until_body_closed`: 1
-- `hose_local_market_order_ready`: 4
+- `longman_hose_pipe_order_ready`: 4
 - `open_inspect_then_order_standard_brake_parts`: 3
 - `review`: 2
 - `source_toyota_oe_glow_plugs_by_part_number`: 1
 - `stock_audit_then_local_topup`: 2
-- `track_in_flight_order`: 8
+- `track_in_flight_order`: 7
 
 ## Timing Windows
 
@@ -37,8 +37,8 @@
 - `body_sealed`: 1
 - `clutch_hydraulic_inspection`: 1
 - `electrical_closeout`: 1
-- `hose_local_market_order`: 4
-- `in_flight_now`: 8
+- `in_flight_now`: 7
+- `longman_mills_quote_pack`: 4
 - `merged_suspension_brake_window`: 12
 - `post_baseline_only`: 6
 - `post_tub_off_inspection`: 5
@@ -53,7 +53,6 @@
 - `part_fastener_kit_e_millat` Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60 -> track_in_flight_order
 - `part_brake_fluid_bleed_consumables` Brake hydraulic opening prep remaining consumables - caps plugs bleed hose bottle cleaner rags gloves catch tray -> buy_remaining_brake_bleed_consumables
 - `part_daraz_nitrile_gloves_black_l_100pc_20260504` Safety Black Disposable Nitrile gloves 100 PCs Box - black large -> track_in_flight_order
-- `part_chassis_masking_plugs_tape_solvent_wipes` Chassis coating masking pack - solvent-safe wipes, masking tape, thread/hole plugs -> track_in_flight_order
 - `part_fastener_kit_d_millat` Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points -> track_in_flight_order
 - `part_ironman_front_dampers_separate_shipment` Ironman Foamcell front damper pair - separate shipment (24635FE x2) -> track_in_flight_order
 - `part_suspension_wooden_cribbing_blocks` Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks -> track_in_flight_order
@@ -65,8 +64,8 @@
 - Move most electrical purchases to stock-audit/top-up mode.
 - Move mechanical baseline list into one local Toyota/common supplier bundle after inspection.
 - Keep DOT 3 brake-fluid opening prep purchase-ready before hydraulic lines are opened.
-- Track chassis masking tape and solvent-safe wipe delivery before primer/sealer/Raptor work; use on-hand grommets as temporary open-hole masking only after fit and solvent checks.
+- Chassis masking tape and Ultra-cloth solvent-safe wipes are received; use on-hand grommets as temporary open-hole masking only after fit and solvent checks.
 - Move brake rows into the merged suspension/brake window: capture measurements and samples first, then order exact parts.
-- Move fuel/coolant/heater/vacuum hose rows to the local-market order sheet with explicit buy lengths, while keeping final trim, clamp, chafe, and leak checks at install.
+- Move fuel/coolant/heater/vacuum hose rows to the Longman pipe/hose order spec with explicit quote/order lengths, while keeping final trim, clamp, chafe, and leak checks at install.
 - Keep clutch hydraulics inspect-first, then buy exact master/slave/flex/hard-line parts only if failed.
 - Keep duplicate/optional/upgrade items deferred to avoid scope creep and unnecessary spend.

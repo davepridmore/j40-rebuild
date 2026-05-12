@@ -1,6 +1,6 @@
 # Reassembly, Dependency, and Procurement Plan
 
-- Generated: 2026-05-08 21:11:07
+- Generated: 2026-05-12 04:22:14
 - Work packages: `data/manual/reassembly_work_packages.csv`
 - Dependency edges: `data/manual/reassembly_dependency_edges.csv`
 - Component disposition: `data/manual/component_disposition_plan.csv`
@@ -35,7 +35,7 @@
 - `next_phase_gate`: 1
 - `research_compare_then_select`: 1
 - `review`: 2
-- `track_ordered_delivery`: 8
+- `track_ordered_delivery`: 7
 - `verify_stock_before_buy`: 2
 
 ## Component Reuse/Refurbish Decisions
@@ -45,7 +45,7 @@
 - `refurbish_service_subcomponents`: 3
 - `remove_nonbaseline_and_refit_clean`: 1
 - `repair_in_place`: 1
-- `review`: 43
+- `review`: 44
 
 ## Immediate Execution Focus
 

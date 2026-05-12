@@ -6,6 +6,7 @@ Primary data files:
 
 - `data/manual/replacement_pipe_ordering_specs.csv`
 - `data/manual/replacement_pipe_order_release_specs.csv`
+- `data/manual/longman_pipe_hose_order_specs.csv`
 - `data/manual/replacement_pipe_release_actions.csv`
 - `data/manual/replacement_pipe_circuit_closure_sheet.csv`
 
@@ -15,14 +16,14 @@ Dashboard location: `docs/project-control-ui/index.html` -> `Replacement Pipes`.
 
 All replacement-pipe requirement rows are now defined, including the connector-hose row added after the rubber visual audit on 2026-05-03.
 
-The standard coolant/heater/fuel/vacuum/breather hose rows are now local-market order-ready with explicit buy lengths. Remaining controls are install/safety controls: molded-hose sample match, final trim from released stock, formed-pipe dry-fit/pressure test, fuel prime leak test, brake/clutch hydraulic fitting match, bleed/pressure test, and final chafe checks.
+The standard coolant/heater/fuel/vacuum/breather hose rows are now Longman quote-ready with explicit buy lengths. Remaining controls are install/safety controls: molded-hose sample match, final trim from released stock, formed-pipe dry-fit/pressure test, fuel prime leak test, brake/clutch hydraulic fitting match, bleed/pressure test, and final chafe checks.
 
 ## Spec-Ready Order Lines
 
 | Group | Order Lines | Status |
 | --- | --- | --- |
 | Radiator hoses | `RPO-COOL-001`, `RPO-COOL-002` | Molded hose order ready; Toyota/Dayco numbers are cross-references only. Sample-match and dry-fit on receipt. |
-| Overflow hose | `RPO-COOL-003` | Buy `1000 mm` local EPDM hose and cut to route. |
+| Overflow hose | `RPO-COOL-003` | Quote `1000 mm` EPDM hose and cut to route. |
 | Heater hoses | `RPO-COOL-004A`, `RPO-COOL-004B` | Buy `1000 mm` of `16 mm / 5/8 in` EPDM heater hose stock; cut `400 mm` inlet and `280 mm` outlet from that stock during install. |
 | Formed coolant pipe | `RPO-COOL-005` | Order one `28-30 mm OD`, `1.2-1.6 mm` wall tube blank; buy/quote `1000 mm` shop stock if sold by meter, with `750 mm` as the absolute minimum blank before bending/trimming. Beads `1.5-2.0 mm`; clamp lands `25-30 mm`. |
 | Formed pipe connector hoses | `RPO-COOL-006A`, `RPO-COOL-006B` | Buy two `500 mm` EPDM connector blanks on `28-30 mm` ID exact order basis; cut by sample and dry-fit. |
@@ -35,7 +36,7 @@ The standard coolant/heater/fuel/vacuum/breather hose rows are now local-market 
 
 ## Active Procurement Position
 
-The active hose/rubber parts below are now marked purchase-ready / local-market-order-ready:
+The active hose/rubber parts below are now marked purchase-ready / Longman-quote-ready:
 
 - `part_mech_radiator_hose_set`
 - `part_mech_heater_hose_set`
@@ -47,7 +48,7 @@ The active hose/rubber parts below are now marked purchase-ready / local-market-
 ## Workshop Measurement Sequence
 
 1. Photograph and label every route before removal.
-2. Buy the released coolant/heater/overflow/fuel/vacuum/breather stock lengths, then final-trim and choose clamps during dry-fit.
+2. Quote/order the released coolant/heater/overflow/fuel/vacuum/breather stock lengths through the Longman pipe/hose spec, then final-trim and choose clamps during dry-fit.
 3. Flat-lay the formed metal coolant pipe and record tube OD, wall, final centerline length, bend radii, clocking, beads, and clamp lands in `mm`; the orderable stock is `28-30 mm OD`, `1.2-1.6 mm` wall, `1000 mm` shop stock preferred or `750 mm` absolute minimum blank.
 4. Keep both formed-pipe rubber connector hoses with the sample; measure each connector ID/OD, free/cut length, overlap, pipe-end OD/bead, mating spigot OD, clamp OD, and bend/kink clearance in `mm`.
 5. Read markings on loose hose samples for sorting/reference only; this no longer blocks the standard stock order.

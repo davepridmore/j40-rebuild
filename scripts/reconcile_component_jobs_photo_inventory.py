@@ -234,6 +234,8 @@ RULES: dict[str, EvidenceRule] = {
     ),
     "chassis_bracket_analysis_register_20260508": EvidenceRule(
         direct_specific_components=(
+            "front_support_radiator_pickups_context",
+            "battery_side_tray_structure_context",
             "front_frame_horns_bumper_and_radiator_support",
             "front_frame_horns_bumper_and_steering_area",
             "frame_rail_body_mount_and_crossmember_detail",
@@ -245,6 +247,8 @@ RULES: dict[str, EvidenceRule] = {
     ),
     "chassis_bracket_design_release_20260508": EvidenceRule(
         direct_specific_components=(
+            "front_support_radiator_pickups_context",
+            "battery_side_tray_structure_context",
             "front_frame_horns_bumper_and_radiator_support",
             "front_frame_horns_bumper_and_steering_area",
             "frame_rail_body_mount_and_hard_line_detail",
@@ -275,29 +279,29 @@ RULES: dict[str, EvidenceRule] = {
         notes="Baseline photos support the validation checklist; final release still requires labelled installed-bracket photos and dry-fit checks for radiator, battery, line/harness/ground, and exhaust interfaces.",
     ),
     "front_radiator_bracket_repair_20260508": EvidenceRule(
-        direct_specific_components=("front_frame_horns_bumper_and_radiator_support", "cooling_hoses_fan_belt_and_radiator_support"),
+        direct_specific_components=("front_support_radiator_pickups_context", "front_frame_horns_bumper_and_radiator_support", "cooling_hoses_fan_belt_and_radiator_support"),
         indirect_specific_components=("engine_bay_chassis_interface", "engine_bay_overview"),
-        notes="Front support and cooling-route photos are the baseline for the wire-held radiator support repair; closure still needs current trial-fit and bracket close-ups.",
+        notes="Front support and cooling-route photos are the baseline for the wire-held radiator support repair; the May 12 upright/crossmember view starts the pickup layout, but closure still needs ruler photos, trial-fit, and bracket close-ups.",
     ),
     "front_radiator_two_side_retention_fabrication_20260508": EvidenceRule(
-        direct_specific_components=("front_frame_horns_bumper_and_radiator_support", "cooling_hoses_fan_belt_and_radiator_support"),
+        direct_specific_components=("front_support_radiator_pickups_context", "front_frame_horns_bumper_and_radiator_support", "cooling_hoses_fan_belt_and_radiator_support"),
         indirect_specific_components=("engine_bay_chassis_interface", "engine_bay_overview"),
-        notes="Radiator/front-support photos directly show the radiator support location and fan-clearance context; final hole centres and bracket offsets still need ruler photos or dry-fit.",
+        notes="Radiator/front-support photos directly show the radiator support location and fan-clearance context; the May 12 view adds the visible upright and crossmember hole field, while final hole centres and bracket offsets still need ruler photos or dry-fit.",
     ),
     "battery_tray_holder_bracket_repair_20260508": EvidenceRule(
-        direct_specific_components=(),
+        direct_specific_components=("battery_side_tray_structure_context",),
         indirect_specific_components=("engine_bay_overview", "engine_bay_chassis_interface", "engine_powertrain_cleaning_baseline"),
-        notes="Engine-bay overview photos show the battery-side location, but no configured photo directly proves the tray feet/support brackets; current close-ups are required before release.",
+        notes="Engine-bay overview photos show the battery-side location, and the May 12 battery-side context starts the structural pickup/clearance read; underside tray feet, support legs, and ruler close-ups are still required before release.",
     ),
     "battery_power_carrier_mount_fabrication_20260508": EvidenceRule(
-        direct_specific_components=(),
+        direct_specific_components=("battery_side_tray_structure_context",),
         indirect_specific_components=("engine_bay_overview", "engine_bay_chassis_interface"),
-        notes="Procurement photos document the MIDI/cutoff hardware separately, but current vehicle photos only locate the battery-side area; tray and pickup-point close-ups are required before release.",
+        notes="Procurement photos document the MIDI/cutoff hardware separately; the May 12 battery-side context helps locate likely carrier constraints, but tray pickup-point close-ups and cardboard mock-up photos are still required before release.",
     ),
     "engine_bay_mounting_scouting_pass_20260508": EvidenceRule(
-        direct_specific_components=("front_frame_horns_bumper_and_radiator_support", "cooling_hoses_fan_belt_and_radiator_support", "engine_bay_overview"),
+        direct_specific_components=("front_support_radiator_pickups_context", "battery_side_tray_structure_context", "front_frame_horns_bumper_and_radiator_support", "cooling_hoses_fan_belt_and_radiator_support", "engine_bay_overview"),
         indirect_specific_components=("engine_bay_chassis_interface", "fuse_distribution_and_power_hardware", "hidden_diesel_cutoff_switch_hardware"),
-        notes="Current photos are enough to start the radiator/battery/power-carrier plan; this row closes only when ruler photos and cardboard mock-up checks fill the remaining measurement gaps.",
+        notes="Current photos are enough to start the radiator/battery/power-carrier plan; May 12 images improve the structure read, and this row closes only when ruler photos and cardboard mock-up checks fill the remaining measurement gaps.",
     ),
     "auxiliary_chassis_tabs_and_clip_brackets_20260508": EvidenceRule(
         direct_specific_components=("frame_rail_body_mount_and_hard_line_detail", "rear_mid_frame_rail_and_hard_line_detail"),
@@ -313,6 +317,11 @@ RULES: dict[str, EvidenceRule] = {
         direct_specific_components=("engine_powertrain_cleaning_baseline",),
         indirect_specific_components=("front_frame_horns_bumper_and_steering_area", "rear_mid_frame_rail_and_hard_line_detail"),
         notes="May 1 engine, gearbox, transfer, steering, and driveline photos directly document the cleaning baseline before degreasing and leak inspection.",
+    ),
+    "wheel_tyre_condition_assessment_20260512": EvidenceRule(
+        direct_specific_components=("wheel_tire_neolin_mt_tread_detail", "wheel_tire_neolin_mt_sidewall_rim_detail"),
+        indirect_specific_components=("wheel_and_tire_detail", "steering_and_suspension_linkages"),
+        notes="May 12 tyre/wheel photos show deep Neolin M/T tread and outer rim/sidewall condition, but roadworthy release still needs all-wheel DOT/date-code capture, inner sidewall inspection, bead/rim corrosion and runout check, pressure leak test, balance, and lug-seat/nut inspection.",
     ),
     "engine_cooling_pipe_fabrication_samples": EvidenceRule(
         direct_specific_components=("cooling_pipe_fabrication_samples",),

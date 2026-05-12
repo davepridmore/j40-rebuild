@@ -260,10 +260,10 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
         "part_mech_vacuum_hose_refresh",
     }:
         return (
-            "hose_local_market_order_ready",
-            "hose_local_market_order",
-            "local_hose_order_ready",
-            "Exact local-market order lengths are released in the hose order sheet; buy by material, ID/OD, rating, and stated length, then close final trim, clamp, chafe, and leak checks during installation.",
+            "longman_hose_pipe_order_ready",
+            "longman_mills_quote_pack",
+            "longman_exact_spec_quote",
+            "Exact Longman pipe/hose order lengths are released in the Longman spec; quote/order by material, ID/OD, rating, and stated length, then close final trim, clamp, chafe, and leak checks during installation.",
         )
 
     if entry_id == "part_mech_clutch_master_slave_refresh":
@@ -365,8 +365,8 @@ def supplier_hint(mode: str, decision: str) -> str:
         return "Use a local brake supplier, Daraz/Autohub, or the workshop for caps/plugs, brake cleaner, bleed hose/bottle or bleeder kit, rags, gloves, and catch tray; do not rebuy DOT 3 fluid unless the Autohub order fails."
     if decision == "buy_chassis_masking_consumables":
         return "Use a local paint/bodywork supplier, hardware shop, or Daraz for automotive masking tape, assorted tapered plugs/caps, and solvent-safe lint-free wipes."
-    if decision in {"hose_rubber_release_hold", "hose_local_market_order_ready"}:
-        return "Use the hose local market order sheet with local hose, radiator, diesel, rubber, and hydraulic shops; order by material, ID/OD, rating, and listed buy length."
+    if decision in {"hose_rubber_release_hold", "longman_hose_pipe_order_ready"}:
+        return "Send the Longman pipe/hose order spec to Longman Mills; quote by material, ID/OD, rating, listed length, sample requirement, and reject rule."
     if decision == "clutch_hydraulic_inspect_then_exact_order":
         return "Use a Toyota/clutch hydraulic supplier after inspection; match master/slave bore, port thread, flare/seat, pushrod style, and flex-hose end fittings before payment."
     if decision in {
@@ -418,8 +418,8 @@ def basket_id_for_row(decision: str, mode: str, workstream: str) -> str:
         return "basket_brake_hydraulic_opening_prep"
     if decision == "buy_chassis_masking_consumables":
         return "basket_chassis_coating_consumables"
-    if decision in {"hose_rubber_release_hold", "hose_local_market_order_ready"}:
-        return "basket_hose_rubber_local_order_ready"
+    if decision in {"hose_rubber_release_hold", "longman_hose_pipe_order_ready"}:
+        return "basket_longman_hose_pipe_order_ready"
     if decision == "clutch_hydraulic_inspect_then_exact_order":
         return "basket_clutch_hydraulic_inspection"
     if decision in {"defer_as_non_baseline", "defer_until_baseline_closure", "hold_until_post_weld_primer", "hold_until_body_closed"}:
@@ -478,8 +478,8 @@ def build_baskets(rows: list[dict[str, str]]) -> list[dict[str, str]]:
         "basket_suspension_setup": ("Suspension Setup Support", "Buy support/cribbing items before suspension disassembly."),
         "basket_merged_brake_suspension_window": ("Merged Brake/Suspension Window", "Capture fitted hardware and old samples, then order exact brake parts for the Ironman install window."),
         "basket_brake_hydraulic_opening_prep": ("Brake Hydraulic Opening Prep", "Buy the remaining caps/plugs, brake cleaner, bleed hose/bottle or bleeder kit, rags, gloves, and catch tray before opening hydraulic lines; DOT 3 fluid is already ordered separately."),
-        "basket_chassis_coating_consumables": ("Chassis Coating Consumables", "Buy or track masking tape and solvent-safe lint-free wipes before solvent wipe, primer, seam sealer, and Raptor; only buy separate tapered plugs if the on-hand grommet pack fails fit/solvent checks."),
-        "basket_hose_rubber_local_order_ready": ("Hose/Rubber Local Order Ready", "Fuel, coolant, heater, vacuum, and breather stock rows have explicit local-market buy lengths; final trim, clamp, chafe, and leak checks remain install tasks."),
+        "basket_chassis_coating_consumables": ("Chassis Coating Consumables", "Ultra-cloth solvent-safe wipes and masking tape are received; only buy separate tapered plugs if the on-hand grommet pack fails fit/solvent checks."),
+        "basket_longman_hose_pipe_order_ready": ("Longman Hose/Pipe Order Ready", "Fuel, coolant, heater, vacuum, and breather stock rows have explicit Longman quote/order lengths; final trim, clamp, chafe, and leak checks remain install tasks."),
         "basket_clutch_hydraulic_inspection": ("Clutch Hydraulic Inspection", "Inspect master/slave/line condition first, then order exact hydraulic refresh parts only if failed."),
         "basket_body_fastener_hardware": ("Body Fastener Hardware", "Buy exact body fastener/captive hardware from old samples; track Millat-covered stock separately."),
         "basket_specialty_after_audit": ("Specialty/Import After Audit", "Order only if local/on-hand cannot cover."),
@@ -559,9 +559,9 @@ def write_report(pass2_rows: list[dict[str, str]], basket_rows: list[dict[str, s
     lines.append("- Move most electrical purchases to stock-audit/top-up mode.")
     lines.append("- Move mechanical baseline list into one local Toyota/common supplier bundle after inspection.")
     lines.append("- Keep DOT 3 brake-fluid opening prep purchase-ready before hydraulic lines are opened.")
-    lines.append("- Track chassis masking tape and solvent-safe wipe delivery before primer/sealer/Raptor work; use on-hand grommets as temporary open-hole masking only after fit and solvent checks.")
+    lines.append("- Chassis masking tape and Ultra-cloth solvent-safe wipes are received; use on-hand grommets as temporary open-hole masking only after fit and solvent checks.")
     lines.append("- Move brake rows into the merged suspension/brake window: capture measurements and samples first, then order exact parts.")
-    lines.append("- Move fuel/coolant/heater/vacuum hose rows to the local-market order sheet with explicit buy lengths, while keeping final trim, clamp, chafe, and leak checks at install.")
+    lines.append("- Move fuel/coolant/heater/vacuum hose rows to the Longman pipe/hose order spec with explicit quote/order lengths, while keeping final trim, clamp, chafe, and leak checks at install.")
     lines.append("- Keep clutch hydraulics inspect-first, then buy exact master/slave/flex/hard-line parts only if failed.")
     lines.append("- Keep duplicate/optional/upgrade items deferred to avoid scope creep and unnecessary spend.")
 

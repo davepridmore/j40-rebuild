@@ -1,28 +1,28 @@
-# Replacement Pipes - Local Market Spec
+# Replacement Pipes - Longman Mills Exact Spec
 
-Use this page as the sendable market/fabricator brief for the J40/HJ47 2H replacement pipes, hoses, hard lines, and formed coolant pipe.
+Use this page as the controlled workstream brief for the J40/HJ47 2H replacement pipes, hoses, hard lines, and formed coolant pipe.
 
-For the sendable local-market order sheet, use [Hose Local Market Order Sheet](hose-local-scout-handoff.md). Keep this page for detailed fabrication/order release.
+For the sendable Longman Mills quote/manufacturing request, use [Longman Pipe And Hose Order Spec](longman-pipe-hose-order-spec-20260512.md). Keep this page for detailed fabrication/order release.
 
 For the next actual-photo pass, use [Hose And Pipe Photo Capture Guide](hose-pipe-photo-capture-guide-20260504.md).
 
-Current release position: standard HJ47/2H and diesel-service sizes are accepted as the local-market order basis for new molded coolant hoses, overflow hose, heater hose stock, diesel feed/return/leak-off hose stock, vacuum hose stock, breather hose stock, 8 mm / 6 mm low-pressure fuel hard-line stock, brake hydraulic lines, and clutch hydraulic line/hose stock. The May 2 tape-reference photos plus the physical sample are accepted for new formed-coolant-pipe quote/template release.
+Current release position: standard HJ47/2H and diesel-service sizes are accepted as the Longman quote basis for new molded coolant hoses, overflow hose, heater hose stock, diesel feed/return/leak-off hose stock, vacuum hose stock, breather hose stock, 8 mm / 6 mm low-pressure fuel hard-line stock, brake hydraulic lines, and clutch hydraulic line/hose stock. The May 2 tape-reference photos plus the physical sample are accepted for new formed-coolant-pipe quote/template release.
 
 Hydraulic safety and final installation checks stay separate: brake/clutch flex fittings, flare/thread identification, route clearance, pressure/bleed tests, fuel prime leak test, coolant pressure test, vacuum assist check, and chafe checks still close at dry-fit/install.
 
-## Market Message
+## Longman Message
 
-Please quote/supply the new parts below for a Toyota Land Cruiser J40/HJ47 with 2H diesel. The listed lengths are the buy lengths for the local market and include units. Use automotive-rated material only. Do not substitute washer pipe, soft water pipe, bare copper, used hose, used hard line, or non-brake-rated hydraulic pipe. Where a physical sample is available, copy the sample and confirm all ID/OD/length/thread/flare dimensions in `mm`.
+Please quote/supply the new parts below for a Toyota Land Cruiser J40/HJ47 with 2H diesel. The listed lengths are the quote/order lengths and include units. Use automotive-rated material only. Do not substitute washer pipe, soft water pipe, bare copper, used hose, used hard line, or non-brake-rated hydraulic pipe. Where a physical sample is available, copy the sample and confirm all ID/OD/length/thread/flare dimensions in `mm`.
 
 Keep tool purchases outside the hose order. Rubber hose is cut to length, molded radiator hose is bought by shape, and metal hard lines need a cutter/bender/flaring kit only if they are fabricated at home.
 
 ## Exact Specs
 
-| Line | Send to local market / fabricator | Qty / buy length | Install / sample check | Media |
+| Line | Send to Longman / fabricator | Qty / buy length | Install / sample check | Media |
 | --- | --- | --- | --- | --- |
 | `RPO-COOL-001` | Molded EPDM upper radiator hose for HJ47/2H route. Toyota `16571-68020` and Dayco `DMH1342` / `CH1342` are shape references only. Published molded free length is `355 mm`; do not substitute straight hose by length alone. | `1` molded hose, `355 mm` | Thermostat neck OD, radiator upper neck OD, hose OD for clamps, old-hose free length if available, fan/belt/radiator-support clearance. | `COOL-A` |
 | `RPO-COOL-002` | Molded EPDM lower radiator hose for HJ47/2H route. Toyota `16572-68020` and Dayco `DMH1343` / `CH1343` are shape references only. Published molded free length is `480 mm`; do not substitute straight hose by length alone. | `1` molded hose, `480 mm` | Radiator lower outlet OD, engine/water-pump inlet OD, hose OD for clamps, old-hose free length if available, lower bend clearance. | `COOL-A` |
-| `RPO-COOL-003` | Small EPDM coolant overflow hose from radiator neck to reserve bottle. | `1000 mm` local hose, cut to route; OE reference length `600 mm` | Radiator overflow nipple OD, bottle nipple OD, finished route length, clip/clamp size. | `COOL-B` |
+| `RPO-COOL-003` | Small EPDM coolant overflow hose from radiator neck to reserve bottle. | `1000 mm` hose, cut to route; OE reference length `600 mm` | Radiator overflow nipple OD, bottle nipple OD, finished route length, clip/clamp size. | `COOL-B` |
 | `RPO-COOL-004A/B` | EPDM heater hose, SAE J20R3 or better. Use `16 mm / 5/8 in` ID exact order basis. | `400 mm` inlet + `280 mm` outlet, or `1000 mm` stock to cut | Engine heater nipple OD, heater-core nipple OD, route lengths, clamp OD, rear-heater presence. | `COOL-C` |
 | `RPO-COOL-005` | Fabricate formed metal coolant/radiator pipe from the physical sample. Use coolant-compatible mild steel/aluminized steel or 304 stainless tube. Match OD, wall, bends, clocking, offsets, beaded ends, clamp lands, and hose overlap. | `750 mm` minimum tube blank; quote `1000 mm` stock if sold by meter/foot | Final centerline length from sample, tube OD, hose ID, wall thickness target `1.2-1.6 mm`, bend centerlines/radii/clocking, bead height target `1.5-2.0 mm` unless sample differs, clamp land length, fan/belt/radiator/body clearance. | `COOL-D` |
 | `RPO-COOL-006A/B` | Two new EPDM coolant/radiator connector hoses for the formed pipe. Use `28-30 mm` ID exact order basis. Use straight hose only if it does not kink; otherwise match new molded EPDM connector shape. | `2 x 500 mm` connector blanks, or `1000 mm` total stock | Pipe-end OD and bead, mating spigot OD, connector free/cut length, hose ID/OD, overlap, clamp band width, bend/kink clearance. | `COOL-D` |
@@ -42,7 +42,7 @@ Keep tool purchases outside the hose order. Rubber hose is cut to length, molded
 ## Hard Rules
 
 - Do not fabricate high-pressure injector pipes from generic tube.
-- Do not buy used hose, used brake/clutch hydraulic assemblies, used fuel/brake/clutch hard lines, or used clamps/clips for this scout scope.
+- Do not buy used hose, used brake/clutch hydraulic assemblies, used fuel/brake/clutch hard lines, or used clamps/clips for this Longman request scope.
 - Do not use bare copper for fuel or brake hard lines.
 - Do not buy generic brake or clutch hose; hydraulic flex hoses must be complete crimped assemblies copied from the old sample or matched to the fitted vehicle.
 - Do not coat the fabricated coolant pipe until it passes bench pressure test and vehicle dry-fit.
@@ -142,5 +142,6 @@ Additional reference media from the May 3 intake has been added below. Use these
 ## Source Tables
 
 - `data/manual/replacement_pipe_order_release_specs.csv`
+- `data/manual/longman_pipe_hose_order_specs.csv`
 - `data/manual/replacement_pipe_photo_intake.csv`
 - `data/manual/replacement_pipe_circuit_closure_sheet.csv`

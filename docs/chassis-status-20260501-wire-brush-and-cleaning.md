@@ -127,17 +127,17 @@ Already logged or received:
 - `part_autohub_grez_off_hd_degreaser_32oz`: received
 - `part_autohub_diss_apc_cleaner_5l`: received
 - `tool_wadfow_pressure_sprayer_wrs1550`: ordered, paid, pending delivery
-- `part_wax_and_grease_remover`: ordered, paid, pending delivery
+- `part_wax_and_grease_remover`: 3M Prep Solvent-70 received
 - `part_primer`: Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set ordered, paid, pending delivery
 - `part_seam_sealer`: HB BODY 999 seam sealer ordered, paid, pending delivery
-- `part_cavity_wax`: HB Body U900 cavity wax spray 400ml x2 ordered, paid, pending delivery
+- `part_cavity_wax`: HB Body U900/U9000 cavity wax spray 400ml x2 received
 - `part_bedliner_sprays`: U-POL/Raptor protective coating on hand
 
 Still requiring purchase or final check before coating:
 
 - Exposed finish is now selected: use on-hand U-POL/Raptor protective coating after primer/sealer cure.
 - Confirmation that the cavity-wax cans have the wand/nozzle needed for boxed sections.
-- Masking tape and solvent-safe lint-free wipes are purchased and awaiting delivery.
+- Masking tape and Ultra-cloth solvent-safe lint-free wipes are received as of May 11, 2026.
 - The on-hand grommet pack can cover temporary open-hole masking if each grommet fits snugly, stays removable, and does not soften or leave residue after solvent contact; buy separate tapered plugs only if that fit check fails.
 - Extra brushes are on hand; flap/strip discs are angle-grinder consumables with existing recorded stock, so only rebuy if the physical count is short.
 

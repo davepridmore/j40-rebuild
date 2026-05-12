@@ -82,10 +82,10 @@ Control plan: [front-engine-bay-mounting-fabrication-plan-20260508.md](front-eng
 Release position:
 - Site-measurement required. This package is the vehicle-side carrier/pickup design for the battery-adjacent MIDI 5-way Rev C plate and battery master cutoff/isolator.
 - It does not replace `midi5_plate_mount_rev_c`; it defines where and how that released MIDI plate bolts to the vehicle.
-- Final hole centres, offsets, cutoff orientation, and cable-exit support points stay on hold until current close-up/ruler photos are captured for the battery tray top/side/underside, proposed cardboard plate mock-up, and bonnet clearance.
+- May 12 photos now support a tray-stand concept, but final hole centres, offsets, cutoff orientation, and cable-exit support points stay on hold until ruler photos are captured for the battery tray top/side/underside, proposed cardboard plate mock-up, and bonnet clearance.
 
 First-pass construction intent:
-- Reinforce or replace the weak battery tray support with a tray/carrier that picks up real structure rather than unsupported thin sheet.
+- Reinforce or replace the weak battery tray support with a separate tray/stand that picks up real structure rather than unsupported thin sheet or the radiator support strap.
 - Provide bolted mounting for the MIDI Rev C plate and a battery master cutoff/isolator.
 - Finish any welded pickup points before primer/Raptor; removable electrical hardware can be fitted after coating.
 

@@ -10,12 +10,11 @@ Update after the May 3/May 4 review: the standard engine/cooling/fuel/vacuum/bre
 
 The remaining holds are no longer generic "measure every pipe" holds. They are install/safety holds: 2H vacuum pump oil outlet fitted-presence check, brake/clutch hydraulic fitting and movement checks, formed-pipe dry-fit/pressure test, fuel prime leak test, coolant pressure test, vacuum assist check, and final chafe checks.
 
-The only rubber items with usable fabrication dimensions today are the body/front-support rubber recreation parts:
+The body/front-support rubber recreation parts now have a separate Longman order spec in [Longman Rubber Order Spec](longman-rubber-order-spec-20260508.md). The current preferred body-pad quote shape is square flat isolator pads because the vehicle photos do not prove molded sockets on either side; final hole/sleeve and station trim still come from removed samples and station measurements.
 
-- Small circular body-mount cushions: `10` pieces, `64 mm` OD, `22 mm` working free height, `32 mm` bore/register, `46 mm x 2 mm` center register, `R2-R3` edge, Shore A `60 +/-5`.
-- Large circular body-mount cushions: `2` pieces, `78 mm` OD, `24 mm` free height, `32 mm` bore/register, `46 mm x 2 mm` center register, `R2-R3` edge, Shore A `60 +/-5`.
-- Front two-hole oval isolators: `2` pieces, `96 mm x 64 mm x 15 mm`, two `12 mm` holes at `64 mm` centers, `36 x 18 mm` relief with `R3` corners, `29 mm` boss/insert OD.
-- Front support strip rubbers: left/right quote basis `165 mm` trace length, `38-42 mm` width, `8 mm` base thickness, `14 mm` raised pad height, M10 `11 mm` holes or `11 x 16 mm` slots. Final cutting still requires physical tracing.
+- Main body isolator pads: `10` small square quote pads `70 x 70 x 22 mm`, plus `2` large square quote pads `80 x 80 x 24 mm`; final hole is measured sleeve OD + `0.5-1.0 mm`.
+- Front two-hole oval isolators: `2` pieces, `96 mm x 64 mm x 15 mm`, two `12 mm` holes at `64 mm` centers, with relief only if the physical sample confirms it is functional.
+- Front support strip rubbers: left/right held until the physical carrier proves these are real liner pieces and not bump-stop fragments or loose packing pieces.
 
 ## Gaps Closed
 
@@ -24,9 +23,9 @@ The image review found two items that were visible but not explicit enough in th
 - Formed coolant pipe rubber connector/coupler hoses: now tracked as `RP-COOL-006`, `RPO-COOL-006A`, `RPO-COOL-006B`, and `RUB-028`.
 - Engine air-cleaner intake duct/couplers: now tracked as `RUB-027` so it is inspected separately from coolant, fuel, vacuum, and HVAC hose.
 
-## Direct Acquisition Gate
+## Longman Acquisition Gate
 
-These rows are direct local-market purchases now; final trimming and checks happen at install:
+These rows are Longman quote-ready now; final trimming and checks happen at install:
 
 - Coolant/radiator/heater/overflow hoses: buy the standard molded hoses or the listed exact stock lengths; trimming and clamp choice are install actions.
 - Formed-pipe connector hoses: buy two `500 mm` EPDM connector blanks on the exact `28-30 mm ID` order basis; trim shorter by sample and dry-fit.

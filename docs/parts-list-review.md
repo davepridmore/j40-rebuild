@@ -1,7 +1,7 @@
 # Parts List Review
 
-- Generated: 2026-05-08 17:28:50
-- Source: `data/manual/expenses.csv` (`bucket=parts`) -> 89 rows
+- Generated: 2026-05-11 17:58:22
+- Source: `data/manual/expenses.csv` (`bucket=parts`) -> 90 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
 
@@ -9,17 +9,17 @@
 
 - `buy_now`: 15
 - `cancelled_or_not_required`: 11
-- `completed_or_received`: 27
+- `completed_or_received`: 29
 - `deferred`: 6
 - `needs_spec_before_order`: 11
 - `next_phase`: 1
-- `ordered_waiting_arrival`: 8
+- `ordered_waiting_arrival`: 7
 - `spec_ready_release_hold`: 4
 - `unclear`: 6
 
 ## Workstream Split
 
-- `body_chassis`: 23
+- `body_chassis`: 24
 - `electrical_reset`: 18
 - `mechanical_baseline`: 17
 - `brake_system`: 16
@@ -32,12 +32,12 @@
 ## Price Coverage
 
 - `has_confirmed_amount=yes`: 18
-- `has_confirmed_amount=no`: 71
+- `has_confirmed_amount=no`: 72
 
 ## Buy-Now / Quote-Ready Missing Price
 
 - `part_body_retaining_clips_cotter_pin_pack` [body_chassis] Body retaining clip pack - R-clips hairpins split pins circlips and small cotters
-- `part_fastener_kit_c_captive_clip_nuts` [body_chassis] Fastener Kit C: Captive/clip/speed nut and weld/rivnut assortment - M6/M8
+- `part_fastener_kit_c_captive_clip_nuts` [body_chassis] Fastener Kit C remaining: Captive/clip/speed nut and weld-nut assortment - M6/M8
 - `part_brake_fluid_bleed_consumables` [brake_system] Brake hydraulic opening prep remaining consumables - caps plugs bleed hose bottle cleaner rags gloves catch tray
 - `part_cabin_compact_fuse_boxes` [electrical_reset] Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on
 - `part_firewall_grommet_set_large_power` [electrical_reset] Additional firewall grommet set IDs 16/20/25 mm

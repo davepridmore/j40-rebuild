@@ -99,9 +99,9 @@ Only then can the bracket hold release the zinc-rich epoxy primer, seam sealer, 
 
 ## Known First Checks
 
-- Radiator support bracket(s): explicitly called out in WhatsApp. Current photo review makes this a two-side retention repair that replaces the wire-held/one-side condition.
-- Battery tray/holder bracket(s): likely required, raised in the same exchange. Current photos show the battery-side engine-bay location but not enough tray-foot detail, so close-up scouting is required before cutting metal.
-- Battery-side MIDI/cutoff carrier: use the existing MIDI Rev C plate as the fuse-holder component, but add a vehicle-side carrier/pickup design tied into the battery tray support or nearby structure.
+- Radiator support bracket(s): explicitly called out in WhatsApp. Current photo review makes this a two-side retention repair that replaces the wire-held/one-side condition; May 12 photos add the visible upright/lower-support hole field for template scouting.
+- Battery tray/holder bracket(s): likely required, raised in the same exchange. May 12 photos start the tray-stand structure read, but tray-foot/underside close-ups and ruler measurements are still required before cutting metal.
+- Battery-side MIDI/cutoff carrier: use the existing MIDI Rev C plate as the fuse-holder component, but add a vehicle-side carrier/pickup design tied into the reinforced battery tray stand or nearby structure.
 - Exhaust hanger/mock-up points: coordinate now if the exhaust fabricator can mock up downpipes/routing while the tub is off.
 - Brake/fuel line clips and harness P-clips: keep safety/serviceability ahead of appearance.
 - Ground strap tabs: keep bare-metal contact strategy separate from final coating.
@@ -120,6 +120,8 @@ Any welded pickup point from that plan is a pre-primer/Raptor item. The removabl
 ## Evidence Refs
 
 - `mcp_whatsapp_akber_20260508_142600`: brackets should be welded; previous guy wire-tied some; radiator bracket named.
+- `20260512_100000_user_front_support_radiator_pickups_context`: radiator/front-support upright and lower hole-field context.
+- `20260512_100100_user_battery_side_tray_structure_context`: battery-side tray-stand and clearance context.
 - `mcp_whatsapp_akber_20260508_142752`: radiator and battery holder acknowledged.
 - `mcp_whatsapp_akber_20260508_142816`: exhaust mock-up opportunity while access is open.
 - `mcp_whatsapp_akber_20260508_142840`: estimated `10-15` additions.

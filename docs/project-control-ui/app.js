@@ -2057,11 +2057,15 @@
     if (active.id === "chassis_rubbers") {
       return [
         renderChassisRubberSimpleSpec(),
+        renderLongmanRubberOrderTable(active.longman_rubber_order_specs),
         renderChassisRubberReferenceImages(),
       ].join("");
     }
     if (active.id === "replacement_pipes") {
-      return renderReplacementPipeSimpleBoard(active);
+      return [
+        renderReplacementPipeSimpleBoard(active),
+        renderLongmanPipeHoseOrderTable(active.longman_pipe_hose_order_specs),
+      ].join("");
     }
     if (active.id === "brake_system") {
       return renderRequirementTable(rows, {
@@ -3382,7 +3386,10 @@
       ...chassisRubberScoutSpecRows(),
       ...rubberSupportRequirementRows,
     ];
-    const hoseLocalMarketOrderRows = (data.local_market_order_sheets && data.local_market_order_sheets.hose) || [];
+    const longmanPipeHoseOrderRows =
+      (data.longman_order_sheets && data.longman_order_sheets.pipe_hose) ||
+      (data.local_market_order_sheets && data.local_market_order_sheets.hose) ||
+      [];
     const pipeExactSpecRows = scoutOrderSpecRows((replacementPipesWorkstream && replacementPipesWorkstream.replacement_pipe_order_release_specs) || []);
     const fuseBoxParts = filterScoutRows(allPartRows, {
       entryIds: ["part_cabin_compact_fuse_boxes"],
@@ -3417,14 +3424,14 @@
       }),
     ]);
     const hoseMarketSpec = {
-      id: "pipes_hoses_market_scout",
-      title: "Pipes + Hoses Market Scout",
+      id: "pipes_hoses_longman_order",
+      title: "Longman Pipe + Hose Order",
       scope: "Exact order sheet",
       quantity: "23 HLS line items plus 21 pipe release-spec lines",
       plain_stall_request:
-        "I need new replacement components only for the J40/HJ47 hose, pipe, hard-line, brake/clutch hydraulic, fuel, vacuum, support-clip, and parking-brake cable lines from the order sheet. Use those IDs and specs; old parts/photos are samples only. Do not quote used parts or generic rubber pipe.",
+        "I need Longman Mills to quote new replacement components only for the J40/HJ47 hose, pipe, hard-line, brake/clutch hydraulic, fuel, vacuum, and support-clip lines from the order sheet. Use those IDs and specs; old parts/photos are samples only. Do not quote used parts or generic rubber pipe.",
       buy_target:
-        "Use the exact requirement list below and the linked handoff pages. New EPDM for coolant/heater, new diesel-rated fuel hose, new reinforced vacuum hose, new brake-rated hard line, new parking-brake cable assemblies, and new complete crimped DOT/SAE J1401 or OEM-equivalent brake/clutch hose assemblies only.",
+        "Use the exact Longman requirement list below and the linked order spec. New EPDM for coolant/heater, new diesel-rated fuel hose, new reinforced vacuum hose, new brake-rated hard line, and new complete crimped DOT/SAE J1401 or OEM-equivalent brake/clutch hose assemblies only if certified hydraulic capability is confirmed.",
       must_include: [
         "Correct inside diameter, length, bends, or end fittings matched to the old sample.",
         "New clamps, clips, or fittings quoted separately when needed.",
@@ -3455,8 +3462,8 @@
       },
       decision_rule: "Quote every hose, rubber, brake, clutch, fuel, vacuum, line-support, and cable item as a new replacement component; buy only the new items that match the old sample or confirmed measurement and have the correct material rating.",
       links: [
-        scoutDocLink("docs/hose-local-scout-handoff.md", "Hose local scout handoff"),
-        scoutDocLink("docs/local-market-component-order-spec-20260504.md", "Exact local-market order spec"),
+        scoutDocLink("docs/longman-pipe-hose-order-spec-20260512.md", "Longman pipe/hose order spec"),
+        scoutDocLink("data/manual/longman_pipe_hose_order_specs.csv", "Longman pipe/hose order CSV"),
         scoutDocLink("docs/engine-hose-tube-replacement-specs.md", "Engineering controls"),
       ],
     };
@@ -3498,8 +3505,8 @@
       },
       decision_rule: "Buy or fabricate only new rubber after the old samples or measurement sheet prove the rubber shape, sleeve size, moulded profile, and hardware stack.",
       links: [
+        scoutDocLink("docs/longman-rubber-order-spec-20260508.md", "Longman rubber order spec"),
         scoutDocLink("docs/rubber-ordering-spec-20260502.md", "Rubber ordering spec"),
-        scoutDocLink("docs/local-market-component-order-spec-20260504.md", "Exact local-market order spec"),
         scoutDocLink("docs/rubber-recreation-fabrication-spec-20260502.md", "Rubber fabrication spec"),
         scoutDocLink("docs/bump-stop-fabrication-spec-20260504.md", "Bump-stop fabrication spec"),
       ],
@@ -4067,48 +4074,6 @@
         ),
       },
       {
-        id: "pipes",
-        title: "Pipes + Hoses",
-        description: "Use the exact order sheet for every hose, pipe, hard line, clip, cable, and hydraulic assembly. These final-install items are new-only.",
-        chips: ["New-only final parts", "23 HLS lines", "No generic hydraulic hose"],
-        parts: pipeParts,
-        marketSpecs: attachScoutImage(
-          [hoseMarketSpec],
-          [...hoseLocalMarketOrderRows, ...pipeExactSpecRows],
-          scoutReferenceImage("../../deliverables/selling_site_images/images/manual_overrides/hose_pipe_current_car_reference_grid_20260504.jpg", "current car hose, pipe, and fitting crop grid", "hose_pipe_current_car_reference_grid_20260504")
-        ),
-        docLinks: [
-          scoutDocLink("docs/hose-local-scout-handoff.md", "Hose local scout handoff"),
-          scoutDocLink("docs/local-market-component-order-spec-20260504.md", "Exact local-market component order spec"),
-          scoutDocLink("docs/replacement-pipes-workstream.md", "Replacement pipes workstream"),
-        ],
-        localMarketOrderRows: hoseLocalMarketOrderRows,
-        exactSpecRows: pipeExactSpecRows,
-      },
-      {
-        id: "rubbers",
-        title: "Rubbers",
-        description: "Use the exact rubber requirement list and controlled body-mount release gates. Every fitted rubber, boot, grommet, pad, hanger, and isolator is new-only.",
-        chips: ["New-only rubber", "Part-level order rows", "CNC files linked"],
-        parts: rubberParts,
-        marketSpecs: attachScoutImage(
-          [rubberMarketSpec],
-          rubberScoutSpecRows,
-          scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/body_mount_kit.jpg", "Body mount rubber reference image", "body_mount_kit")
-        ),
-        docLinks: [
-          scoutDocLink("docs/rubber-ordering-spec-20260502.md", "Rubber ordering spec"),
-          scoutDocLink("docs/local-market-component-order-spec-20260504.md", "Exact local-market component order spec"),
-          scoutDocLink("docs/body-mount-order-release-plan-20260502.md", "Body-mount order release plan"),
-          scoutDocLink("data/manual/fabrication/rubber_recreation_rev_a/README.md", "Rubber CNC/shop package"),
-          scoutDocLink("data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf", "Rubber dimension sheet PDF"),
-        ],
-        exactSpecRows: rubberScoutSpecRows,
-        fabricationPackages: ((fabricationWorkstream && fabricationWorkstream.fabrication_packages) || []).filter(
-          (pkg) => cleanString(pkg && pkg.package_id).includes("rubber_recreation")
-        ),
-      },
-      {
         id: "additional-fuse-box",
         title: "Additional Fuse Box",
         description: "Compact OEM-style cabin fuse box with sound terminals and identifiable feeds. Final wiring, cables, terminals, sleeving, and protection are new-only.",
@@ -4138,29 +4103,6 @@
         ],
         exactSpecRows: workshopSupportExactRows.filter((row) =>
           cleanString(row && row.sourceBasis).includes("tool_local_toolbench")
-        ),
-      },
-      {
-        id: "fabrication",
-        title: "Fabrication",
-        description: "Simple shop order table for rubber, plastic, and metal fabrication rows, with file packages kept below for send-out.",
-        chips: ["Simple order table", "Files linked below", "First article where noted"],
-        parts: fabricationParts,
-        marketSpecs: [
-          ...attachScoutImage(
-            [fabricationSupportMarketSpec],
-            fabricationParts,
-            scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg", "Prototype part reference image", "generic_part")
-          ),
-        ],
-        docLinks: [
-          scoutDocLink("docs/fabrication-handoff-index.md", "Fabrication handoff index"),
-          scoutDocLink("data/manual/fabrication/midi5_plate_mount_rev_c/README.md", "MIDI holder subplate package"),
-        ],
-        exactSpecRows: fabricationExactSpecRows.filter((row) => ["MIDI5-SUBPLATE-001", "PWR-CARRIER-001"].includes(row.id)),
-        underlayRows: fabricationElectricalUnderlayRows,
-        fabricationPackages: ((fabricationWorkstream && fabricationWorkstream.fabrication_packages) || []).filter(
-          (pkg) => !cleanString(pkg && pkg.package_id).includes("rubber_recreation")
         ),
       },
     ];
@@ -4441,7 +4383,7 @@
     return `<div><strong>${escapeHtml(label)}:</strong> ${escapeHtml(text)}</div>`;
   }
 
-  function renderScoutLocalMarketOrderTable(rows) {
+  function renderLongmanPipeHoseOrderTable(rows) {
     const sourceRows = Array.isArray(rows) ? rows : [];
     if (!sourceRows.length) {
       return "";
@@ -4449,7 +4391,7 @@
     return `
       <article class="card">
         <div class="detail-header">
-          <h3>Local Market Order Sheet</h3>
+          <h3>Longman Order Sheet</h3>
           ${chip(`${sourceRows.length} exact lines`)}
         </div>
         <div class="table-wrap">
@@ -4503,6 +4445,73 @@
                     )
                     .join("")}
                 `)
+                .join("")}
+            </tbody>
+          </table>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderScoutLocalMarketOrderTable(rows) {
+    return renderLongmanPipeHoseOrderTable(rows);
+  }
+
+  function renderLongmanRubberOrderTable(rows) {
+    const sourceRows = Array.isArray(rows) ? rows : [];
+    if (!sourceRows.length) {
+      return "";
+    }
+    return `
+      <article class="card">
+        <div class="detail-header">
+          <h3>Longman Rubber Order Sheet</h3>
+          <div class="chip-row">
+            ${chip(`${sourceRows.length} lines`)}
+            ${chip("Custom order")}
+          </div>
+        </div>
+        <p class="small-muted">Supplier-facing rubber rows only. Steel cup/seat washers, sleeves, shims, bolts, and washer inspection remain separate from this Longman order.</p>
+        <div class="table-wrap">
+          <table class="scout-market-order-table">
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Line</th>
+                <th>Qty</th>
+                <th>Rubber Definition</th>
+                <th>Holes / Inserts</th>
+                <th>Material</th>
+                <th>Release / Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${sourceRows
+                .map((row) => {
+                  const rowImage = bestScoutOriginalImage(row) || scoutComponentImage(row);
+                  const qtyBits = [
+                    row.required_qty ? `Required: ${row.required_qty}` : "",
+                    row.optional_spare_qty ? `Spare: ${row.optional_spare_qty}` : "",
+                  ].filter(Boolean);
+                  return `
+                    <tr>
+                      ${renderInventoryImageCell({ item: row.part, image: rowImage }, row.part || "Rubber order line image")}
+                      <td class="scout-line-cell">
+                        <strong>${escapeHtml(row.order_id || "-")}</strong>
+                        <div class="small-muted">${escapeHtml(row.part || "")}</div>
+                        ${statusChip(row.release_state || "open")}
+                      </td>
+                      <td>${escapeHtml(qtyBits.join(" / ") || "-")}</td>
+                      <td class="scout-spec-cell">${escapeHtml(row.spec || "-")}</td>
+                      <td>${escapeHtml(row.holes_or_inserts || "-")}</td>
+                      <td>${escapeHtml(row.material || "-")}</td>
+                      <td class="scout-notes-cell">
+                        ${renderScoutField("Basis", row.photo_refs)}
+                        ${renderScoutField("Notes", row.notes)}
+                      </td>
+                    </tr>
+                  `;
+                })
                 .join("")}
             </tbody>
           </table>
@@ -4779,7 +4788,7 @@
     const categories = buildScoutCategories();
     root.innerHTML = `
       <h2 class="section-title">Scout</h2>
-      <p class="section-subtitle">Simple market-facing cards for the person visiting shops: what to ask for, what must come with it, when to reject, and what photos or details to send back. New-only rule: rubbers, hoses, hydraulic assemblies, hard lines, parking-brake cables, electrical wire/cable, terminals, clips, clamps, fittings, grommets, boots, pads, hangers, and similar consumables are bought new; old parts and photos are samples only.</p>
+      <p class="section-subtitle">Simple market-facing cards for the remaining Scout-only shop visits: what to ask for, what must come with it, when to reject, and what photos or details to send back. Hoses/pipes and chassis rubbers now live in their dedicated workstreams and Longman order sheets.</p>
       <div class="chip-row scout-jump-row">
         ${categories.map((category) => `<button class="chip chip-button" data-scroll-reference-section="scout-${escapeHtml(category.id)}" type="button">${escapeHtml(category.title)}</button>`).join("")}
       </div>
@@ -5302,7 +5311,7 @@
 
       ${renderWorkstreamRequirements(active)}
       ${renderChassisBracketAnalysisRegister(active)}
-      ${simpleChassisRubbers ? "" : renderFabricationPackages(active.fabrication_packages)}
+      ${renderFabricationPackages(active.fabrication_packages)}
 
       ${simpleChassisRubbers ? "" : `
         <article class="card">

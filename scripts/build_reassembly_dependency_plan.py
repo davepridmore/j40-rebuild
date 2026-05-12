@@ -522,7 +522,7 @@ def build_work_packages(
             evidence_signal=f"rust_assessment_photos={rust_photos}, stripdown_photos={stripdown_photos}",
             blocker_summary=f"{body_buy_now} body material rows still need buy execution.",
             gate_to_close="Rust map signed off, required chassis brackets analyzed/released/installed/validated, and repaired zones primed.",
-            key_procurement_actions="Use received primer/prep/seam-sealer/cavity-wax stock and on-hand Raptor; track delivery of purchased masking tape/solvent-safe wipes; use on-hand grommets for temporary open-hole masking after fit/solvent check; no generic chassis-black or bed-lining duplicate buy.",
+            key_procurement_actions="Use received primer/prep/seam-sealer/cavity-wax stock and on-hand Raptor; Ultra-cloth solvent-safe wipes and masking tape are received; use on-hand grommets for temporary open-hole masking after fit/solvent check; no generic chassis-black or bed-lining duplicate buy.",
         ),
         WorkPackage(
             work_package_id="WP02",

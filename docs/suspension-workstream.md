@@ -83,6 +83,7 @@ Record these before removing anything:
 - Brake hose and parking-brake cable slack at static height.
 - Rear pinion angle and propshaft slip-yoke exposure if tools are available.
 - Current tyre size, wheel offset, and any visible tyre-to-body clearance issue.
+- Current tyre/wheel condition using [wheel-tyre-condition-assessment-20260512.md](wheel-tyre-condition-assessment-20260512.md): date code, tread depth spread, sidewall condition, bead/rim condition, valve stems, balance status, lug-seat condition, and pressure retention.
 
 Use the same measurement points after installation, after first road test, and after the 500 km recheck.
 
@@ -152,6 +153,7 @@ Use the same measurement points after installation, after first road test, and a
 - Chassis spring hanger cracks, ovalized holes, broken welds, or distorted shackle brackets.
 - Brake hose, breather, parking-brake cable, or wiring tension at droop.
 - Shock body contact, steering damper bind, tyre contact, or insufficient bump-stop engagement.
+- Unknown tyre date code, sidewall cracking/bulging, bead or rim damage, persistent pressure loss, unbalanced road wheel, wrong lug-seat/nut match, or visible tyre contact after the suspension install.
 - No torque sheet, no torque wrench, or no post-install torque record.
 
 ## Closeout Evidence

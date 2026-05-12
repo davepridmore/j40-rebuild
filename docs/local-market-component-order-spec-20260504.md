@@ -2,7 +2,9 @@
 
 Purpose: one sendable market pack that lists the actual new parts to quote or buy, with the working dimensions already pulled out. Take old samples and photos where noted; do not let the market turn this back into generic "rubber pipe" or "Land Cruiser part" shopping.
 
-Scout position: braking, clutch hydraulic, hose, fuel/vacuum, hard-line, parking-brake cable, rubber/grommet/boot/pad, clamp, clip, fitting, terminal, and electrical wire/cable consumables are new replacement requirements. Old components are used only as samples for length, shape, fittings, routing, and connector identification.
+Supersession note 2026-05-12: the hose, fuel/vacuum hose, pipe, hard-line, and brake/clutch hydraulic hose rows are no longer a scout/local-market task. Use [Longman Pipe And Hose Order Spec](longman-pipe-hose-order-spec-20260512.md) for the active supplier request. The sections below remain as archived extracted dimensions and reject rules only.
+
+Scout position: parking-brake cable, rubber/grommet/boot/pad, clamp, clip, fitting, terminal, electrical wire/cable consumables, and other local-only problem parts are new replacement requirements. Old components are used only as samples for length, shape, fittings, routing, and connector identification.
 
 New-only rule: do not buy used/salvage rubbers, hoses, hydraulic assemblies, hard lines, parking-brake cables, electrical wire/cable, terminals, clips, clamps, fittings, grommets, boots, pads, hangers, or similar consumables for final installation.
 
@@ -71,9 +73,11 @@ Old cables are length/end samples only. Any cable bought for final installation 
 
 ## Chassis And Body Rubbers
 
+Superseded 2026-05-08 by [Longman Rubber Order Spec](longman-rubber-order-spec-20260508.md). Do not use the older circular body-pad rows below as the active body-isolator shape release; current preferred shape is square flat pads with final sleeve/hole and station trim from measurements.
+
 All fitted rubber parts in this section are new-only. Old rubbers and photos are measurement samples, not reuse stock.
 
-Toyota/OE numbers below are reference shapes only. The scout must still quote the local fabrication route using the stated dimensions, old sample, 3D scan, or vehicle-bracket measurement control; do not wait on Toyota supply before capturing material, mould, first-article, and dry-fit requirements.
+Toyota/OE numbers below are reference shapes only. Any active rubber fabrication quote must use the Longman rubber spec, old sample, 3D scan, or vehicle-bracket measurement control; do not wait on Toyota supply before capturing material, mould, first-article, and dry-fit requirements.
 
 | ID | Component | Qty | Exact spec | Dimensions | Material | Hold / reject |
 | --- | --- | ---: | --- | --- | --- | --- |

@@ -10,7 +10,7 @@ Scope: May 1 chassis photos only, after wire brushing to date. This plan turns t
 
 The chassis is partly cleaned, but the photos still show remaining prep in the areas that matter most: rail edges, top flanges, lower lips, bracket roots, weld toes, body-mount pads, spring/shackle hangers, hard-line clips, front horns, steering-box area, and crossmember ends.
 
-May 8 WhatsApp evidence adds a separate pre-coating hold: complete the bracket analysis register, design release, fabrication/repair/install work, and validation photos before final primer/Raptor. Known first checks are radiator support bracket(s), battery tray/holder bracket(s), auxiliary line/harness/ground/exhaust tabs, and possible exhaust mock-up hanger points. Use [chassis-bracket-audit-20260508.md](chassis-bracket-audit-20260508.md) as the bracket closure sheet.
+May 8 WhatsApp evidence adds a separate pre-coating hold: complete the bracket analysis register, design release, fabrication/repair/install work, and validation photos before final primer/Raptor. May 12 photos now support template scouting for the radiator upright/lower-support area and battery tray stand, but ruler photos and mock-ups are still required before cutting steel. Known first checks are radiator support bracket(s), battery tray/holder bracket(s), auxiliary line/harness/ground/exhaust tabs, and possible exhaust mock-up hanger points. Use [chassis-bracket-audit-20260508.md](chassis-bracket-audit-20260508.md) as the bracket closure sheet.
 
 The correct approach is not to strip every sound black coating to bare metal. Keep hard-bonded paint where it is solid, feather its edges, and focus effort on loose rust, pitting, seams, holes, brackets, and places where water or dirt can sit.
 
@@ -234,7 +234,7 @@ Do not allow primer until each item is closed:
 | Welded bracket work plan | Missing/wire-tied bracket map closed; radiator support, battery holder, auxiliary tabs, and exhaust hanger/mock-up points have analysis, design, implementation, and validation evidence recorded before Raptor. |
 | Wet cleaning complete | Chassis fully dry; no water trapped in seams, holes, clips, or boxed areas. |
 | Rust treatment complete | Converter/Evapo-Rust residue removed; only stable metal remains. |
-| Materials ready | Wax/grease remover, zinc-rich 2K epoxy primer, seam sealer, on-hand U-POL/Raptor exposed top protection, HB Body U900 cavity wax cans, tape/wipes ordered, and on-hand grommets checked as temporary open-hole masking where suitable. |
+| Materials ready | Wax/grease remover, zinc-rich 2K epoxy primer, seam sealer, on-hand U-POL/Raptor exposed top protection, HB Body U900/U9000 cavity wax cans, masking tape, Ultra-cloth solvent-safe wipes, and on-hand grommets checked as temporary open-hole masking where suitable. |
 
 ## What To Photograph After The Next Work Session
 
@@ -246,7 +246,7 @@ Take these photos before primer:
 4. Front frame horns and bumper/winch brackets after brushing.
 5. Hard-line clips lifted or cleaned around, with contact area visible.
 6. Crossmember ends and lower rail lips.
-7. Radiator support bracket(s), battery tray/holder bracket(s), and any wire-tied or missing bracket locations.
+7. Radiator support bracket(s), battery tray/holder bracket(s), May 12 candidate upright/lower/inner pickup zones, and any wire-tied or missing bracket locations.
 8. Exhaust hanger/mock-up points if the exhaust fabricator is involved before coating.
 9. Any pitted area after treatment, before primer.
 10. A final full-length chassis overview after dry inspection.

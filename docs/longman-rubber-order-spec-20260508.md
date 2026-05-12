@@ -177,4 +177,4 @@ For the Longman batch:
 - Body-mount crush sleeves.
 - Body shims/spacers.
 - Bolts, nuts, weld nuts, and captive-thread repairs.
-- Brake hoses, fuel hoses, coolant hoses, and formed metal pipes. Those remain in `docs/local-market-component-order-spec-20260504.md` and can become a separate Longman hose/pipe request.
+- Brake hoses, fuel hoses, coolant hoses, and formed metal pipes. Those are now controlled separately in `docs/longman-pipe-hose-order-spec-20260512.md`.

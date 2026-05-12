@@ -1430,6 +1430,88 @@ FILE_OVERRIDES.update(
     }
 )
 
+FILE_OVERRIDES.update(
+    {
+        "20260512_100000_user_front_support_radiator_pickups_context.png": c(
+            "engine_bay",
+            "front_support_radiator_pickups_context",
+            "chassis_fixing",
+            "radiator_bracket_design_scouting",
+            "high",
+            (
+                "front_support",
+                "radiator",
+                "radiator_mount",
+                "front_crossmember",
+                "vertical_upright",
+                "fan_clearance",
+                "battery_stand_context",
+                "bracket_scouting",
+            ),
+            "User-provided May 12 front support/radiator-side context; shows the radiator plane, fan/pulley clearance, vertical upright/top hole, and front/lower support holes for two-side radiator retention design scouting.",
+        ),
+        "20260512_100100_user_battery_side_tray_structure_context.png": c(
+            "engine_bay",
+            "battery_side_tray_structure_context",
+            "chassis_fixing",
+            "battery_tray_structure_scouting",
+            "high",
+            (
+                "battery_tray",
+                "battery_stand",
+                "front_support",
+                "inner_wing",
+                "midi_fuse_carrier",
+                "cutoff_switch",
+                "alternator_clearance",
+                "steering_clearance",
+                "exhaust_clearance",
+                "bracket_scouting",
+            ),
+            "User-provided May 12 battery-side structure context; shows nearby rail/plate structure and engine-bay clearance constraints for the battery tray stand, MIDI/cutoff carrier, and cable support planning.",
+        ),
+        "20260512_110000_user_neolin_mt_tyre_tread_wheel_context.png": c(
+            "wheels_and_tires",
+            "wheel_tire_neolin_mt_tread_detail",
+            "steering_brakes_suspension",
+            "tyre_wheel_condition_assessment",
+            "high",
+            (
+                "wheel",
+                "tire",
+                "tyre",
+                "neolin",
+                "mud_terrain",
+                "tread",
+                "sidewall",
+                "steel_wheel",
+                "roadworthiness_check",
+            ),
+            "User-provided May 12 tyre/wheel context; Neolin M/T tread appears deep in this view, but date code, inner sidewall, bead, rim runout, and matching-set condition still require physical inspection.",
+        ),
+        "20260512_110100_user_neolin_mt_tyre_sidewall_wheel_context.png": c(
+            "wheels_and_tires",
+            "wheel_tire_neolin_mt_sidewall_rim_detail",
+            "steering_brakes_suspension",
+            "tyre_wheel_condition_assessment",
+            "high",
+            (
+                "wheel",
+                "tire",
+                "tyre",
+                "neolin",
+                "mud_terrain",
+                "sidewall",
+                "rim",
+                "valve_stem",
+                "wheel_weights",
+                "roadworthiness_check",
+            ),
+            "User-provided May 12 tyre/wheel close-up; outer sidewall and Toyota six-lug steel wheel are visible, with valve stem and wheel weights present. Use for tyre/wheel assessment, not as roadworthy signoff.",
+        ),
+    }
+)
+
 
 TIMESTAMP_RE = re.compile(r"^(?P<date>\d{8})_(?P<time>\d{6})")
 IMG_DATE_RE = re.compile(r"^IMG-(?P<date>\d{8})-")

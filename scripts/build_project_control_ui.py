@@ -24,7 +24,8 @@ REPLACEMENT_PIPE_PHOTO_INTAKE_PATH = MANUAL_DIR / "replacement_pipe_photo_intake
 REPLACEMENT_PIPE_ORDER_RELEASE_SPECS_PATH = MANUAL_DIR / "replacement_pipe_order_release_specs.csv"
 REPLACEMENT_PIPE_RELEASE_ACTIONS_PATH = MANUAL_DIR / "replacement_pipe_release_actions.csv"
 REPLACEMENT_PIPE_CIRCUIT_CLOSURE_PATH = MANUAL_DIR / "replacement_pipe_circuit_closure_sheet.csv"
-HOSE_LOCAL_MARKET_ORDER_SHEET_PATH = MANUAL_DIR / "hose_local_market_order_sheet.csv"
+LONGMAN_PIPE_HOSE_ORDER_SPECS_PATH = MANUAL_DIR / "longman_pipe_hose_order_specs.csv"
+LONGMAN_RUBBER_ORDER_SPECS_PATH = MANUAL_DIR / "longman_rubber_order_specs.csv"
 CHASSIS_RUBBER_REQUIREMENTS_PATH = MANUAL_DIR / "chassis_rubber_requirements.csv"
 RUBBER_HOSE_COMPONENT_AUDIT_PATH = MANUAL_DIR / "rubber_hose_component_audit.csv"
 RUBBER_ORDERING_SPECS_PATH = MANUAL_DIR / "rubber_ordering_specs.csv"
@@ -2005,7 +2006,8 @@ FABRICATION_DESIGN_ENTRY_PACKAGES: dict[str, tuple[str, ...]] = {
 
 
 PIPE_HOSE_DESIGN_LINKS: list[tuple[str, str]] = [
-    ("data/manual/hose_local_market_order_sheet.csv", "Hose and pipe local order CSV"),
+    ("data/manual/longman_pipe_hose_order_specs.csv", "Longman pipe and hose order CSV"),
+    ("docs/longman-pipe-hose-order-spec-20260512.md", "Longman pipe and hose order spec"),
     ("data/manual/replacement_pipe_order_release_specs.csv", "Pipe order release specs CSV"),
     ("data/manual/replacement_pipe_photo_intake.csv", "Pipe photo and measurement index CSV"),
 ]
@@ -2888,7 +2890,7 @@ def replacement_pipe_order_release_payload(
     return payload
 
 
-def hose_local_market_order_payload(
+def longman_pipe_hose_order_payload(
     rows: list[dict[str, str]],
     evidence_index: dict[str, list[dict[str, Any]]],
 ) -> list[dict[str, Any]]:
@@ -2934,6 +2936,49 @@ def hose_local_market_order_payload(
                 )
                 if use_reference_image_for_pipe_order(clean(row.get("order_id"))) or not evidence_images
                 else preferred_order_image(clean(row.get("order_id")), evidence_images),
+            }
+        )
+    return payload
+
+
+def longman_rubber_order_payload(
+    rows: list[dict[str, str]],
+    photo_rows: list[dict[str, str]],
+) -> list[dict[str, Any]]:
+    rows_by_id = photo_rows_by_media_id(photo_rows)
+    payload: list[dict[str, Any]] = []
+    for row in rows:
+        order_id = clean(row.get("order_id"))
+        part = clean(row.get("part"))
+        evidence_images = evidence_images_from_refs(row.get("photo_refs", ""), rows_by_id)
+        payload.append(
+            {
+                "order_id": order_id,
+                "part": part,
+                "required_qty": clean(row.get("required_qty")),
+                "optional_spare_qty": clean(row.get("optional_spare_qty")),
+                "spec": clean(row.get("spec")),
+                "holes_or_inserts": clean(row.get("holes_or_inserts")),
+                "material": clean(row.get("material")),
+                "release_state": clean(row.get("release_state")),
+                "photo_refs": clean(row.get("photo_refs")),
+                "notes": clean(row.get("notes")),
+                "evidence_images": evidence_images,
+                "image": preferred_order_image(order_id, evidence_images)
+                if evidence_images
+                else order_component_reference_image(
+                    part,
+                    " ".join(
+                        clean(row.get(key))
+                        for key in (
+                            "order_id",
+                            "spec",
+                            "holes_or_inserts",
+                            "material",
+                            "notes",
+                        )
+                    ),
+                ),
             }
         )
     return payload
@@ -8336,7 +8381,8 @@ def build_dashboard_data() -> dict[str, Any]:
     replacement_pipe_order_release_rows = load_csv_optional(REPLACEMENT_PIPE_ORDER_RELEASE_SPECS_PATH)
     replacement_pipe_release_action_rows = load_csv_optional(REPLACEMENT_PIPE_RELEASE_ACTIONS_PATH)
     replacement_pipe_circuit_closure_rows = load_csv_optional(REPLACEMENT_PIPE_CIRCUIT_CLOSURE_PATH)
-    hose_local_market_order_rows = load_csv_optional(HOSE_LOCAL_MARKET_ORDER_SHEET_PATH)
+    longman_pipe_hose_order_rows = load_csv_optional(LONGMAN_PIPE_HOSE_ORDER_SPECS_PATH)
+    longman_rubber_order_rows = load_csv_optional(LONGMAN_RUBBER_ORDER_SPECS_PATH)
     chassis_rubber_requirement_rows = load_csv_optional(CHASSIS_RUBBER_REQUIREMENTS_PATH)
     rubber_hose_component_audit_rows = load_csv_optional(RUBBER_HOSE_COMPONENT_AUDIT_PATH)
     body_mount_order_release_rows = load_csv_optional(BODY_MOUNT_ORDER_RELEASE_SPECS_PATH)
@@ -8510,6 +8556,14 @@ def build_dashboard_data() -> dict[str, Any]:
             if ws_id == "replacement_pipes"
             else []
         )
+        longman_pipe_hose_order_specs = (
+            longman_pipe_hose_order_payload(
+                longman_pipe_hose_order_rows,
+                pipe_original_part_evidence_index,
+            )
+            if ws_id == "replacement_pipes"
+            else []
+        )
         replacement_pipe_release_actions = (
             replacement_pipe_release_action_payload(
                 replacement_pipe_release_action_rows,
@@ -8527,6 +8581,11 @@ def build_dashboard_data() -> dict[str, Any]:
             else []
         )
         chassis_rubber_requirements = requirements if ws_id == "chassis_rubbers" else []
+        longman_rubber_order_specs = (
+            longman_rubber_order_payload(longman_rubber_order_rows, photo_rows)
+            if ws_id == "chassis_rubbers"
+            else []
+        )
         body_mount_order_release_specs = (
             body_mount_order_release_payload(
                 body_mount_order_release_rows,
@@ -8582,9 +8641,11 @@ def build_dashboard_data() -> dict[str, Any]:
                 "pipe_requirements": pipe_requirements,
                 "replacement_pipe_photo_intake": replacement_pipe_photo_intake,
                 "replacement_pipe_order_release_specs": replacement_pipe_order_release_specs,
+                "longman_pipe_hose_order_specs": longman_pipe_hose_order_specs,
                 "replacement_pipe_release_actions": replacement_pipe_release_actions,
                 "replacement_pipe_circuit_closure": replacement_pipe_circuit_closure,
                 "chassis_rubber_requirements": chassis_rubber_requirements,
+                "longman_rubber_order_specs": longman_rubber_order_specs,
                 "body_mount_order_release_specs": body_mount_order_release_specs,
                 "body_mount_release_actions": body_mount_release_actions,
                 "body_mount_station_closure": body_mount_station_closure,
@@ -8982,7 +9043,8 @@ def build_dashboard_data() -> dict[str, Any]:
             "replacement_pipe_order_release_specs": "data/manual/replacement_pipe_order_release_specs.csv",
             "replacement_pipe_release_actions": "data/manual/replacement_pipe_release_actions.csv",
             "replacement_pipe_circuit_closure_sheet": "data/manual/replacement_pipe_circuit_closure_sheet.csv",
-            "hose_local_market_order_sheet": "data/manual/hose_local_market_order_sheet.csv",
+            "longman_pipe_hose_order_specs": "data/manual/longman_pipe_hose_order_specs.csv",
+            "longman_rubber_order_specs": "data/manual/longman_rubber_order_specs.csv",
             "expenses": "data/manual/expenses.csv",
             "fastener_photo_count_estimates": "data/manual/fastener_photo_count_estimates.csv",
             "parts_buy_now_this_week": "data/manual/parts_buy_now_this_week.csv",
@@ -9039,11 +9101,12 @@ def build_dashboard_data() -> dict[str, Any]:
             "market_specs": market_specs_for_workstream("eps_vitz_upgrade")
             + market_specs_for_workstream("brake_system"),
         },
-        "local_market_order_sheets": {
-            "hose": hose_local_market_order_payload(
-                hose_local_market_order_rows,
+        "longman_order_sheets": {
+            "pipe_hose": longman_pipe_hose_order_payload(
+                longman_pipe_hose_order_rows,
                 pipe_original_part_evidence_index,
             ),
+            "rubber": longman_rubber_order_payload(longman_rubber_order_rows, photo_rows),
         },
         "capture_tasks": capture_tasks,
         "supplies": supplies_inventory,
