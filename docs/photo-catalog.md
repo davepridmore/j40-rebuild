@@ -1,7 +1,7 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-05-12 07:49:47
-- Total media files indexed: 646 (635 photos, 11 videos)
+- Generated: 2026-05-12 21:58:17
+- Total media files indexed: 656 (645 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
 
@@ -16,8 +16,9 @@
 | Stage | File Count |
 | --- | ---: |
 | `baseline_walkaround` | 34 |
-| `chassis_fixing` | 41 |
+| `chassis_fixing` | 50 |
 | `electrical_rework` | 18 |
+| `eps_vitz_upgrade` | 1 |
 | `hardware_refinish` | 32 |
 | `mechanical_baseline` | 21 |
 | `mechanical_cleaning` | 14 |
@@ -82,7 +83,8 @@
 | `engine_bay` | `engine_bay_overview` | 15 | 2026-03-17 to 2026-04-23 | `20260317_235150.jpg` |
 | `engine_bay` | `engine_interior_and_stripdown_detail` | 32 | 2026-04-20 | `20260420_005132_gp_MgOMVKpQ.jpeg` |
 | `engine_bay` | `engine_powertrain_cleaning_baseline` | 19 | 2026-05-01 to 2026-05-12 | `20260501_194330_gp_CogcrEXA.jpg` |
-| `engine_bay` | `front_support_radiator_pickups_context` | 2 | 2026-05-12 | `20260512_073210_gp_zP427O2A.jpg` |
+| `engine_bay` | `front_support_radiator_measurement_set` | 6 | 2026-05-12 | `20260512_205417_gp_CzJNQsiA.jpg` |
+| `engine_bay` | `front_support_radiator_pickups_context` | 5 | 2026-05-12 | `20260512_073210_gp_zP427O2A.jpg` |
 | `engine_bay` | `replacement_pipe_hose_sample_sorting` | 7 | 2026-05-02 | `20260502_005740_gp_Qiat03EQ.jpg` |
 | `interior_cabin` | `cabin_overview` | 16 | 2026-03-17 | `20260317_165113.jpg` |
 | `interior_cabin` | `cabin_view_through_glass` | 2 | 2026-03-29 | `20260329_122855.jpg` |
@@ -95,6 +97,7 @@
 | `interior_cabin` | `floor_pan_and_firewall` | 7 | 2026-03-21 | `20260321_235436.jpg` |
 | `interior_cabin` | `floor_pan_rust_zones` | 1 | 2026-05-12 | `20260512_073141_gp_xzy6KAzg.jpg` |
 | `interior_cabin` | `front_door_card` | 2 | 2026-03-17 | `20260317_165203.jpg` |
+| `interior_cabin` | `j40_removed_steering_column_set` | 1 | 2026-05-12 | `20260512_211249_gp_MFXOIt2w.jpg` |
 | `procurement_inventory` | `fuse_distribution_and_power_hardware` | 14 | 2026-04-11 | `20260411_065030.jpg` |
 | `procurement_inventory` | `fuse_distribution_and_wiring` | 2 | 2026-04-05 | `20260405_010322.jpg` |
 | `procurement_inventory` | `hidden_diesel_cutoff_switch_hardware` | 2 | 2026-04-20 | `20260420_221819_gp_YV69fbvA.jpg` |

@@ -1080,6 +1080,46 @@
     `;
   }
 
+  function renderRequirementEvidenceStrip(requirement, options = {}) {
+    const source = requirement || {};
+    const images = filterVisibleImages(source.evidence_images);
+    const fallbackCaption =
+      options.fallbackCaption ||
+      source.requirement_name ||
+      source.component_or_function ||
+      source.pipe_or_line ||
+      source.part_name ||
+      "Requirement evidence";
+    const status = cleanString(source.photo_status || source.evidence_level || "photo_needed");
+    const evidenceRefs = cleanString(options.evidenceRefs || source.evidence_refs || source.evidence_ref || "");
+    const label = cleanString(options.label || "Evidence Images");
+    const imageMarkup = images.length
+      ? images
+          .map((image) => {
+            const prepared = prepareImage(image, fallbackCaption);
+            return `
+              <div class="evidence-strip-item">
+                ${renderPreparedMedia(prepared, "table-image-btn", "table-image")}
+                <span class="table-image-note">${escapeHtml(prepared.effective.media_id || "")}</span>
+              </div>
+            `;
+          })
+          .join("")
+      : `<span class="small-muted">${escapeHtml(formatToken(status))}</span>`;
+
+    return `
+      <div class="row-evidence-panel">
+        <div class="row-evidence-heading">${escapeHtml(label)}</div>
+        <div class="row-evidence-strip">${imageMarkup}</div>
+        ${
+          evidenceRefs
+            ? `<details class="evidence-ref-details"><summary>Evidence refs</summary><p>${escapeHtml(evidenceRefs)}</p></details>`
+            : ""
+        }
+      </div>
+    `;
+  }
+
   function renderRequirementTable(requirements, options = {}) {
     const rows = Array.isArray(requirements) ? requirements : [];
     if (!rows.length) {
@@ -1102,10 +1142,16 @@
         </div>
         <p class="small-muted">${escapeHtml(summary)}</p>
         <div class="table-wrap requirement-table-wrap">
-          <table class="requirement-table">
+          <table class="requirement-table workstream-requirement-table">
+            <colgroup>
+              <col class="requirement-col-name">
+              <col class="requirement-col-status">
+              <col class="requirement-col-spec">
+              <col class="requirement-col-measurements">
+              <col class="requirement-col-install">
+            </colgroup>
             <thead>
               <tr>
-                <th>Evidence</th>
                 <th>Requirement</th>
                 <th>Status Gates</th>
                 <th>Make / Buy Spec</th>
@@ -1120,8 +1166,7 @@
                   const requirementName = row.requirement_name || row.pipe_or_line || row.part_name || "";
                   const quantity = cleanString(row.quantity || row.qty);
                   return `
-                    <tr>
-                      <td class="requirement-evidence-cell">${renderRequirementEvidenceImages(row)}</td>
+                    <tr class="workstream-data-row">
                       <td>
                         <strong>${escapeHtml(requirementId)} · ${escapeHtml(requirementName)}</strong>
                         <div class="small-muted">${escapeHtml(row.vehicle_location || "")}</div>
@@ -1145,6 +1190,12 @@
                         ${escapeHtml(row.fit_and_test || "")}
                         ${row.notes ? `<div class="small-muted requirement-material">${escapeHtml(row.notes)}</div>` : ""}
                       </td>
+                    </tr>
+                    <tr class="row-evidence-strip-row">
+                      <td colspan="5">${renderRequirementEvidenceStrip(row, {
+                        fallbackCaption: requirementName,
+                        evidenceRefs: row.evidence_ref,
+                      })}</td>
                     </tr>
                   `;
                 })
@@ -2111,10 +2162,15 @@
           <a class="item-link" href="../../data/manual/chassis_bracket_analysis_register_20260508.csv">Source CSV</a>
         </div>
         <div class="table-wrap requirement-table-wrap">
-          <table class="requirement-table">
+          <table class="requirement-table bracket-analysis-table">
+            <colgroup>
+              <col class="bracket-col-function">
+              <col class="bracket-col-photo-read">
+              <col class="bracket-col-decision">
+              <col class="bracket-col-next-action">
+            </colgroup>
             <thead>
               <tr>
-                <th>Evidence</th>
                 <th>Bracket / Function</th>
                 <th>Photo Read</th>
                 <th>Decision / Gate</th>
@@ -2125,12 +2181,7 @@
               ${rows
                 .map(
                   (row) => `
-                    <tr>
-                      <td class="requirement-evidence-cell">${renderRequirementEvidenceImages({
-                        evidence_images: row.evidence_images,
-                        requirement_name: row.component_or_function,
-                        photo_status: row.evidence_level || "photo_needed",
-                      })}</td>
+                    <tr class="workstream-data-row">
                       <td>
                         <strong>${escapeHtml(row.register_id || "")} · ${escapeHtml(row.component_or_function || "")}</strong>
                         <div class="small-muted">${escapeHtml(formatToken(row.station || ""))}${row.side ? ` / ${escapeHtml(formatToken(row.side))}` : ""}</div>
@@ -2144,9 +2195,8 @@
                           }
                         </div>
                       </td>
-                      <td>
+                      <td class="bracket-photo-read-cell">
                         ${escapeHtml(row.photo_read || "")}
-                        ${row.evidence_refs ? `<div class="small-muted">${escapeHtml(row.evidence_refs)}</div>` : ""}
                       </td>
                       <td>
                         <strong>${escapeHtml(row.decision || "")}</strong>
@@ -2156,6 +2206,20 @@
                         ${escapeHtml(row.next_action || "")}
                         ${row.notes ? `<div class="small-muted">${escapeHtml(row.notes)}</div>` : ""}
                       </td>
+                    </tr>
+                    <tr class="row-evidence-strip-row">
+                      <td colspan="4">${renderRequirementEvidenceStrip(
+                        {
+                          evidence_images: row.evidence_images,
+                          component_or_function: row.component_or_function,
+                          evidence_level: row.evidence_level || "photo_needed",
+                          evidence_refs: row.evidence_refs,
+                        },
+                        {
+                          label: "Row Evidence Images",
+                          fallbackCaption: row.component_or_function,
+                        }
+                      )}</td>
                     </tr>
                   `
                 )

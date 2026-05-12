@@ -222,9 +222,9 @@ RULES: dict[str, EvidenceRule] = {
         notes="Rear spring/U-bolt and front linkage photos provide direct fitment context; final alignment release still needs installed-kit and ride-height/alignment photos.",
     ),
     "eps_vitz_column_layout_measurement": EvidenceRule(
-        direct_specific_components=("driver_footwell_firewall_and_wiring", "front_frame_horns_bumper_and_steering_area", "steering_and_suspension_linkages"),
+        direct_specific_components=("j40_removed_steering_column_set", "driver_footwell_firewall_and_wiring", "front_frame_horns_bumper_and_steering_area", "steering_and_suspension_linkages"),
         indirect_specific_components=("dashboard_lower_structure", "floor_pan_and_firewall", "floor_pan_rust_zones"),
-        notes="Existing cab/firewall and steering-box-side photos provide the vehicle-side EPS layout baseline; close this only with ruler photos, donor EPS mock-up, motor envelope, and column centerline checks.",
+        notes="Existing cab/firewall, removed J40 column, and steering-box-side photos provide the vehicle-side EPS layout baseline; close this only with ruler photos, donor EPS mock-up, motor envelope, and column centerline checks.",
     ),
     "eps_vitz_support_bracket_design": EvidenceRule(
         direct_specific_components=("driver_footwell_firewall_and_wiring", "dashboard_lower_structure", "floor_pan_rust_zones"),

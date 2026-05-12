@@ -121,6 +121,7 @@ General conversion/fabrication examples:
 
 Local J40 stripdown references:
 
+- Removed J40 steering column/switch/wiring reference for EPS layout: `photos/20260512_211249_gp_MFXOIt2w.jpg`
 - Lower dash structure / column support context: `photos/20260323_190005.jpg`
 - Bare dashboard shell / column route context: `photos/20260413_040719.jpg`
 - Driver footwell/firewall/wiring context: `photos/20260321_235600.jpg`
