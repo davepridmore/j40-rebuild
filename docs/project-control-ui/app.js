@@ -1005,6 +1005,7 @@
   function renderFigureImage(image, fallbackCaption, options = {}) {
     const prepared = prepareImage(image, fallbackCaption);
     const showCaption = options.showCaption !== false;
+    const visibleCaption = cleanString(options.caption || prepared.caption);
     const figureClass = options.figureClass || "evidence-figure";
     const buttonClass = options.buttonClass || "image-open-btn";
     const imageClass = options.imageClass || "figure-image";
@@ -1014,7 +1015,7 @@
         ${renderPreparedMedia(prepared, buttonClass, imageClass)}
         ${
           showCaption
-            ? `<figcaption class="${captionClass}">${escapeHtml(prepared.caption)}</figcaption>`
+            ? `<figcaption class="${captionClass}">${escapeHtml(visibleCaption)}</figcaption>`
             : ""
         }
       </figure>
@@ -2325,10 +2326,11 @@
         ${uniqueImages
           .map((image) => {
             const prepared = prepareImage(image, "Evidence media");
+            const visibleCaption = cleanString(image.caption || prepared.caption);
             return `
               <figure>
                 ${renderPreparedMedia(prepared, "image-open-btn", "gallery-image")}
-                <figcaption>${escapeHtml(prepared.caption)}</figcaption>
+                <figcaption>${escapeHtml(visibleCaption)}</figcaption>
               </figure>
             `;
           })
@@ -2606,6 +2608,49 @@
     `;
   }
 
+  function scoutSpecImages(spec) {
+    const images = [];
+    const seen = new Set();
+    const addImage = (image) => {
+      if (!image || typeof image !== "object" || isImageDeleted(image)) {
+        return;
+      }
+      const key = cleanString(image.path || image.image_url || image.media_id);
+      if (!key || seen.has(key)) {
+        return;
+      }
+      seen.add(key);
+      images.push(image);
+    };
+    if (Array.isArray(spec && spec.images)) {
+      spec.images.forEach(addImage);
+    }
+    addImage(spec && spec.image);
+    return images;
+  }
+
+  function renderScoutSpecImageGallery(images, fallbackCaption) {
+    const sourceImages = Array.isArray(images) ? images : [];
+    if (!sourceImages.length) {
+      return "";
+    }
+    return `
+      <div class="scout-spec-gallery">
+        ${sourceImages
+          .map((image) =>
+            renderFigureImage(image, fallbackCaption || "Scout reference image", {
+              figureClass: "scout-spec-figure",
+              buttonClass: "image-open-btn scout-spec-gallery-btn",
+              imageClass: "scout-spec-gallery-image",
+              captionClass: "small-muted",
+              caption: image.caption,
+            })
+          )
+          .join("")}
+      </div>
+    `;
+  }
+
   function renderMarketSpecCards(specs) {
     const sourceSpecs = Array.isArray(specs) ? specs.filter((spec) => spec && cleanString(spec.title)) : [];
     if (!sourceSpecs.length) {
@@ -2615,7 +2660,8 @@
       .map((spec) => {
         const price = spec.price_guidance || {};
         const quantity = cleanString(spec.quantity || price.quantity);
-        const image = spec.image && !isImageDeleted(spec.image) ? spec.image : null;
+        const images = scoutSpecImages(spec);
+        const image = images.length === 1 ? images[0] : null;
         const priceBits = [
           quantity ? `Quantity: ${quantity}` : "",
           price.unit_price_range ? `Unit price range: ${price.unit_price_range}` : price.target_range ? `Unit price range: ${price.target_range}` : "",
@@ -2625,7 +2671,7 @@
         ].filter((item) => cleanString(item));
         return `
           <article class="card market-spec-card scout-spec-card" id="${escapeHtml(spec.id || "")}">
-            <div class="scout-spec-layout">
+            <div class="scout-spec-layout${images.length > 1 ? " scout-spec-layout-text-only" : ""}">
               ${
                 image
                   ? renderFigureImage(image, spec.title || "Scout reference image", {
@@ -2647,6 +2693,7 @@
                 ${quantity ? `<p><strong>Quantity:</strong> ${escapeHtml(quantity)}</p>` : ""}
               </div>
             </div>
+            ${images.length > 1 ? renderScoutSpecImageGallery(images, spec.title || "Scout reference image") : ""}
             <div class="market-spec-grid">
               ${renderMarketSpecList("Must Include", spec.must_include)}
               ${renderMarketSpecList("Test Before Payment", spec.bench_test)}
@@ -3314,7 +3361,7 @@
     const image = scoutSpecImage(rows, fallbackImage);
     return (Array.isArray(specs) ? specs : []).map((spec) => ({
       ...spec,
-      image: spec.image || image,
+      image: spec.image || (Array.isArray(spec.images) && spec.images.length ? null : image),
     }));
   }
 
@@ -4058,7 +4105,7 @@
         marketSpecs: attachScoutImage(
           dedupeScoutRows(epsMarketSpecs),
           epsParts,
-          scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/eps_column.jpg", "Vitz/Yaris XP90 EPS column set reference image", "eps_column")
+          scoutReferenceImage("../../deliverables/selling_site_images/images/manual_overrides/eps_complete_column_set_reference.svg", "Complete Vitz/Yaris XP90 EPS column set checklist reference", "eps_complete_column_set_reference")
         ),
       },
       {

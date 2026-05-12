@@ -294,6 +294,10 @@ h1 {
   align-items: start;
 }
 
+.scout-spec-layout-text-only {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .scout-spec-copy {
   display: grid;
   gap: 0.55rem;
@@ -321,6 +325,32 @@ h1 {
   object-fit: cover;
   border-radius: 8px;
   display: block;
+}
+
+.scout-spec-gallery {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+}
+
+.scout-spec-gallery-btn {
+  width: 100%;
+  border-radius: 8px;
+  background: #eee7db;
+  aspect-ratio: 4 / 3;
+}
+
+.scout-spec-gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+}
+
+.scout-spec-gallery .small-muted {
+  line-height: 1.25;
+  margin-top: 0.32rem;
 }
 
 .scout-line-cell {

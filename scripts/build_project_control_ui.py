@@ -117,11 +117,13 @@ EPS_MARKET_SCOUT_SPEC: dict[str, Any] = {
     "buy_target": (
         "Buy candidate is only a 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 column-assist EPS set. "
         "Corolla, Axio, Prius, hydraulic steering parts, loose motors, loose ECUs, and mixed-family sets are quote/photo only. "
+        "The J40 has no vehicle ECU, but this donor EPS route still needs the EPS system's own matched ECU/controller, "
+        "or a seller-proven integrated controller on the column. Do not buy a bare column expecting it to run from J40 wiring alone. "
         "Donor pigtails are for connector identification and bench testing; final power, ground, trigger, and loom wiring must be new automotive cable and terminals."
     ),
     "must_include": [
         "Motorized EPS steering column with torque sensor and reduction housing.",
-        "Matching EPS ECU/controller, or a clearly verified integrated controller.",
+        "Matching EPS ECU/controller from the donor set, or a clearly verified integrated controller on the column.",
         "Original EPS plugs with at least 150mm wiring tails, not cut flush; tails are identification/bench-test leads, not final cable stock.",
         "Upper and lower intermediate shaft sections.",
         "U-joints, couplers, clamp brackets, support plates, and related donor fasteners.",
@@ -129,7 +131,7 @@ EPS_MARKET_SCOUT_SPEC: dict[str, Any] = {
         "Seller can identify heavy power, ground, and ignition-trigger wires for the bench check.",
     ],
     "bench_test": [
-        "Power the unit before payment and rotate the input shaft both directions.",
+        "Power the unit through the matched EPS ECU/controller before payment and rotate the input shaft both directions.",
         "Assist must be smooth and consistent, with no grinding, jerking, or severe whine.",
         "Check for backlash, shaft play, bent shaft ends, cracked castings, and broken mounting ears.",
         "Confirm the shaft can still be turned manually with assist disabled.",
@@ -138,6 +140,7 @@ EPS_MARKET_SCOUT_SPEC: dict[str, Any] = {
     "reject_if": [
         "Donor is not confirmed as 2005-2011 Vitz/Yaris 90-series SCP90 or NCP90.",
         "ECU/controller, plugs, pigtails, shafts, U-joints, couplers, or brackets are missing.",
+        "Seller says the J40 has no ECU so the EPS ECU/controller is not needed.",
         "Connectors are cut flush, melted, heavily repaired, or unidentified.",
         "Column tube, motor housing, gearbox casing, shaft, or mounting ears are cracked or bent.",
         "Seller cannot demonstrate a working matched set before payment.",
@@ -149,13 +152,13 @@ EPS_MARKET_SCOUT_SPEC: dict[str, Any] = {
         "Column label and ECU/controller label.",
         "Input and output spline/shaft photos.",
         "All plugs and pigtails laid out clearly.",
-        "Full kit photo with every included shaft, U-joint, coupler, bracket, and fastener visible.",
+        "Full kit photo with column, EPS ECU/controller, plugs, pigtails, every included shaft, U-joint, coupler, bracket, support plate, and fastener visible.",
     ],
     "price_guidance": {
         "unit_price_range": "PKR 54,000-136,000",
         "total_value_range": "PKR 54,000-136,000",
         "negotiation_midpoint": "PKR 90,000",
-        "rule": "Do not pay complete-kit price for missing ECU/controller, plugs, shafts, U-joints, couplers, or brackets.",
+        "rule": "Do not pay complete-kit price for missing EPS ECU/controller, plugs, shafts, U-joints, couplers, or brackets.",
     },
     "decision_rule": (
         "Buy only if donor identity, complete matched kit contents, bench-test video, seller contact, return terms, "
@@ -640,9 +643,14 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
     ],
     "eps_vitz_upgrade": [
         ("Confirm target donor only", "Accept only 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS sets; treat Corolla, Axio, Prius, and mixed-family sets as quote/photo only."),
-        ("Verify complete matched kit", "Check column, ECU/controller, original plugs with pigtails, shafts, U-joints, couplers, brackets, labels, and donor hardware before payment."),
+        ("Verify complete matched kit", "Check column, matched EPS ECU/controller or proven integrated control, original plugs with pigtails, shafts, U-joints, couplers, brackets, labels, and donor hardware before payment."),
         ("Bench-test before payment", "Require smooth powered assist both directions, no lash/noise, and manual shaft rotation with assist disabled."),
         ("Capture seller evidence and decision", "Record seller contact, stall location, price, return window, donor claim, labels, full kit photos, bench-test video, and buy/no-buy decision."),
+        ("Map J40 column layout", "Measure steering-wheel position, dash/pedal/firewall clearance, steering-box input line, motor envelope, and controller location before any shaft is cut."),
+        ("Design column support structure", "Fabricate a triangulated dash/cowl/firewall support bracket or cradle that carries EPS motor torque without relying on thin dash sheet alone."),
+        ("Adapt shafts and U-joints", "Build a phased intermediate shaft path with proper splined/DD couplers or machined adapters, no casual welded steering-shaft joins, and no bind lock-to-lock."),
+        ("Mount controller and protected wiring", "Install the EPS ECU/controller dry and serviceable, then run new fused power, ground, ignition trigger, terminals, and loom protection."),
+        ("Validate steering before road use", "Confirm manual steering with EPS off, powered assist consistency, shaft clearances, fastener locking, alignment, and staged road checks before signoff."),
     ],
     "suspension_upgrade": [
         ("Capture measured suspension baseline", "Record ride height, shackle angles, and current travel/clearance before parts lock."),
@@ -1506,10 +1514,22 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
         ],
     },
     "eps_vitz_upgrade": {
-        "title": "EPS Market Scouting",
-        "summary": "Pre-purchase donor identity, matched kit completeness, bench test, seller evidence, and buy/no-buy decision for 2005-2011 SCP90/NCP90 EPS only.",
-        "default_tools": ["Phone/camera", "Notebook", "Marker", "Tape measure or calipers", "Fuse-protected bench-test lead if seller has a test setup"],
-        "default_supplies": ["Printed checklist", "Marker tape", "Pen"],
+        "title": "EPS Conversion Workstream",
+        "summary": (
+            "Procure one complete 2005-2011 SCP90/NCP90 Vitz/Yaris EPS donor set, then control the J40 column graft, "
+            "support-bracket fabrication, shaft/U-joint adaptation, EPS controller wiring, and steering validation."
+        ),
+        "default_tools": [
+            "Phone/camera",
+            "Notebook",
+            "Marker",
+            "Tape measure or calipers",
+            "Angle finder",
+            "Straight edge",
+            "Cardboard templates",
+            "Fuse-protected bench-test lead if seller has a test setup",
+        ],
+        "default_supplies": ["Printed checklist", "Marker tape", "Pen", "Cardboard", "Temporary M6/M8/M10 fasteners", "Paint marker"],
         "subtasks": [
             {
                 "title": "Confirm Target Donor",
@@ -1519,7 +1539,7 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "process_steps": [
                     "Ask the seller for donor model, donor year, and chassis code before discussing price.",
                     "Accept SCP90 or NCP90 only; write the seller's claim exactly.",
-                    "Photograph donor tag, yard tag, column label, and ECU/controller label if available.",
+                    "Photograph donor tag, yard tag, column label, and EPS ECU/controller label if available.",
                     "Treat Corolla, Axio, Prius, and other Toyota columns as quote/photo only unless explicitly approved later.",
                     "Reject any hydraulic steering part, loose EPS motor, loose ECU, or mixed-family set.",
                 ],
@@ -1534,9 +1554,9 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "remaining": "before payment",
                 "instruction": "The kit must be complete and matched before it is treated as a buy candidate.",
                 "process_steps": [
-                    "Lay out the full kit together: column, ECU/controller, plugs, pigtails, shafts, U-joints, couplers, brackets, support plates, and fasteners.",
+                    "Lay out the full kit together: column, matched EPS ECU/controller or verified integrated controller, plugs, pigtails, shafts, U-joints, couplers, brackets, support plates, and fasteners.",
                     "Confirm pigtails are at least 150mm and not cut flush.",
-                    "Confirm ECU/controller belongs with the same donor family as the column.",
+                    "Confirm the EPS ECU/controller belongs with the same donor family as the column, or that the column has seller-proven integrated control.",
                     "Check U-joints for notchiness, shaft ends for bends, and mounting ears for cracks.",
                     "Mark missing pieces as a reject reason or quote-only note.",
                 ],
@@ -1551,7 +1571,7 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "remaining": "before payment",
                 "instruction": "The seller must demonstrate the matched set working before payment.",
                 "process_steps": [
-                    "Ask the seller to power the unit using the matched ECU/controller and original plugs.",
+                    "Ask the seller to power the unit using the matched EPS ECU/controller and original plugs.",
                     "Rotate the input shaft both directions and watch assist behavior.",
                     "Reject grinding, jerky assist, severe whine, heavy lash, or unpredictable operation.",
                     "Confirm the shaft can still be turned manually with assist disabled.",
@@ -1569,7 +1589,7 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "instruction": "Close the market visit with enough evidence for a clear buy/no-buy decision.",
                 "process_steps": [
                     "Write seller name, phone number, stall location, quoted price, and return window.",
-                    "Record donor model, year, chassis code, column label, and ECU/controller label.",
+                    "Record donor model, year, chassis code, column label, and EPS ECU/controller label.",
                     "Photograph the full kit, every connector, pigtail length, shaft ends, U-joints, couplers, brackets, and support plates.",
                     "Save the bench-test video with the quote details.",
                     "Mark the decision as buy, reject, or quote-only before payment.",
@@ -1578,6 +1598,91 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "supplies": ["Printed checklist", "Pen"],
                 "hold_point": "No payment without seller contact, return terms, complete photos, and bench-test video.",
                 "image_tokens": ["eps", "label", "connector", "seller", "stall"],
+            },
+            {
+                "title": "Map J40 Column Layout",
+                "priority": "P0",
+                "remaining": "before any cutting or bracket drilling",
+                "instruction": "Freeze the steering-column packaging before committing to a cut, splice, or support bracket.",
+                "process_steps": [
+                    "Photograph the J40 steering wheel, upper column, dash support, pedals, firewall pass-through, and steering-box input area before removal.",
+                    "Measure steering-wheel height/reach, column angle, dash hole position, pedal clearance, firewall pass-through center, and steering-box input shaft line.",
+                    "Measure the donor EPS motor/gearbox envelope, controller envelope, input/output shaft lengths, and bracket spacing.",
+                    "Decide whether the preferred route keeps the J40 upper column and grafts the EPS lower down, or uses more donor column hardware.",
+                    "Mock the EPS unit with cardboard/wood blocks and confirm motor clearance to pedals, knees, dash wiring, heater/ducting, and firewall.",
+                ],
+                "tools": ["Tape measure or calipers", "Angle finder", "Straight edge", "Phone/camera", "Marker"],
+                "supplies": ["Cardboard", "Marker tape", "Paint marker"],
+                "hold_point": "No irreversible cutting until the column centerline, steering-wheel position, motor envelope, and shaft path are recorded.",
+                "image_tokens": ["eps", "steering", "column", "motor", "shaft", "firewall", "layout"],
+            },
+            {
+                "title": "Design Column Support Bracket",
+                "priority": "P0",
+                "remaining": "before welding/drilling final supports",
+                "instruction": "The EPS motor torque must be carried by a proper support path, not by thin dash sheet metal.",
+                "process_steps": [
+                    "Use the donor column clamp/brackets/support plates as shape references, not as assumed bolt-on J40 parts.",
+                    "Design a triangulated support cradle tying the EPS column to strong dash/cowl/firewall structure with serviceable fasteners.",
+                    "Add doubler plates or spreader plates where loads enter firewall/cowl sheet metal.",
+                    "Keep the motor clear of pedals, driver knees, wiring looms, heater ducts, and removable dash components.",
+                    "Make cardboard templates first, then a first metal mock-up, then final material only after a dry-fit photo signoff.",
+                ],
+                "tools": ["Cardboard templates", "Drill", "Files", "Clamps", "Welder if welded tabs are approved"],
+                "supplies": ["3 mm mild steel or equivalent bracket stock", "Doubler plate stock", "M8/M10 fasteners", "Primer for new metal"],
+                "hold_point": "Bracket design is not released until the EPS column is rigid under hand torque and no dash/pedal/firewall interference is visible.",
+                "image_tokens": ["eps", "support", "bracket", "plate", "column", "motor", "controller"],
+            },
+            {
+                "title": "Adapt Shafts, U-Joints And Couplers",
+                "priority": "P0",
+                "remaining": "after layout mock-up, before final column mounting",
+                "instruction": "Build a controlled shaft path from the EPS output to the J40 steering-box input.",
+                "process_steps": [
+                    "Lay out the donor upper/lower shaft sections, U-joints, couplers, and J40 steering-box input connection together.",
+                    "Check spline type/count, DD/round shaft sizes, pinch-bolt groove positions, and available shaft engagement length.",
+                    "Keep U-joints phased and within practical angle limits; rotate lock-to-lock during mock-up to catch bind.",
+                    "Use proper splined/DD couplers or machined adapters. Do not rely on casual welded steering-shaft joins.",
+                    "Add pinch-bolt, locknut, paint-mark, and clearance inspection points before final road use.",
+                ],
+                "tools": ["Calipers", "Angle finder", "Marker", "Bench vice", "Steering shaft specialist or machinist if adapters are needed"],
+                "supplies": ["Correct couplers/adapters", "High-grade pinch bolts", "Nyloc or all-metal locknuts", "Paint marker"],
+                "hold_point": "No road test until the shaft turns freely lock-to-lock, has no sliding/play, and still steers manually with EPS off.",
+                "image_tokens": ["eps", "shaft", "u-joint", "coupler", "spline", "intermediate"],
+            },
+            {
+                "title": "Mount EPS Controller And Protected Wiring",
+                "priority": "P0",
+                "remaining": "after bench-test proof, before permanent loom closure",
+                "instruction": "The donor pigtails identify the circuit; the final J40 EPS wiring must be newly built and protected.",
+                "process_steps": [
+                    "Mount the matched EPS ECU/controller in a dry, supported, serviceable position away from foot impact and water paths.",
+                    "Identify heavy power, ground, ignition trigger, and control plugs from the donor pigtails before cutting or shortening anything.",
+                    "Run new automotive cable for EPS power/ground/trigger with correct fuse or MIDI protection, terminals, strain relief, and loom sleeving.",
+                    "Route EPS wiring away from pedals, column U-joints, sharp brackets, heater movement, and future dash-service paths.",
+                    "Label the EPS fuse, trigger feed, controller plug, and ground point; record a wiring sketch before wrapping the loom.",
+                ],
+                "tools": ["Multimeter", "Crimper", "Heat gun", "Fuse-protected test lead", "Phone/camera"],
+                "supplies": ["Automotive cable", "Terminals", "Heat shrink", "Split loom", "MIDI/fuse protection", "Labels", "Grommets"],
+                "hold_point": "No permanent loom tie-down until powered assist works, voltage drop is acceptable, and all pass-throughs are protected.",
+                "image_tokens": ["eps", "controller", "ecu", "plug", "pigtail", "label", "wiring"],
+            },
+            {
+                "title": "Validate Steering Function",
+                "priority": "P0",
+                "remaining": "before road validation",
+                "instruction": "Treat the EPS conversion as a safety-critical steering modification until proven under static and low-speed checks.",
+                "process_steps": [
+                    "With the front axle safely unloaded, rotate lock-to-lock with EPS off and then powered; check for bind, hard spots, noise, and wiring movement.",
+                    "Verify every bracket fastener, pinch bolt, shaft coupler, controller mount, ground, fuse, and loom tie is locked and paint-marked.",
+                    "Confirm pedal clearance, driver knee clearance, dash clearance, firewall seal, and steering-box input alignment.",
+                    "Reconnect wheels on the ground and check steering effort, return behavior, and no over-assist surprise at idle.",
+                    "Road-test in stages: static yard turns, very low speed, braking/turning checks, then re-torque and inspect before normal driving.",
+                ],
+                "tools": ["Torque wrench", "Inspection light", "Paint marker", "Wheel chocks", "Multimeter"],
+                "supplies": ["Fastener paint", "Cable ties/P-clips", "Spare fuses", "Inspection sheet"],
+                "hold_point": "Road use remains blocked by any bind, shaft play, loose support, electrical fault, or unclear manual fallback behavior.",
+                "image_tokens": ["eps", "steering", "validation", "shaft", "bracket", "wiring"],
             },
         ],
     },
@@ -2098,11 +2203,36 @@ def market_specs_for_workstream(workstream_id: str) -> list[dict[str, Any]]:
     specs: list[dict[str, Any]] = []
     if clean(workstream_id) == "eps_vitz_upgrade":
         spec = dict(EPS_MARKET_SCOUT_SPEC)
+        spec["image"] = static_reference_image_payload(
+            "deliverables/selling_site_images/images/manual_overrides/eps_complete_column_set_reference.svg",
+            caption="Complete Vitz/Yaris XP90 EPS column set checklist reference",
+            media_id="eps_complete_column_set_reference",
+            matched_tokens=["eps", "vitz", "yaris", "complete", "kit"],
+            match_basis="local_reference_image",
+        )
+        spec["images"] = eps_market_reference_images()
         spec["links"] = [
             link
             for link in [
                 file_link("docs/eps-bilal-ganj-kit-checklist.md", "Full EPS checklist"),
                 file_link("docs/bilal-ganj-detailed-size-specs.md", "Detailed market specs"),
+                file_link("docs/eps-vitz-conversion-fabrication-plan.md", "EPS conversion fabrication plan"),
+                {
+                    "url": "https://allegro.pl/produkt/toyota-yaris-ii-wspomaganie-elektryczne-kierownicy-sterownik-45200-0d100-851971a4-a0e1-4a1d-aa87-f2fd379eed56?offerId=18532958907",
+                    "label": "Yaris II EPS column with controller example",
+                },
+                {
+                    "url": "https://allegro.pl/produkt/wspomaganie-elektryczne-modul-yaris-ii-45200-0d100-00-89650-0d110-5d9fef6b-6861-446c-9b9f-fcec658e7e90",
+                    "label": "Yaris II EPS module/controller example",
+                },
+                {
+                    "url": "https://allegro.pl/produkt/wspomaganie-elektryczne-pompa-452000d090-1129001331-toyota-yaris-ii-05-070d38ef-9211-46e6-82cf-ead49b9f8184?offerId=18244144695",
+                    "label": "Yaris II EPS plugs and label detail example",
+                },
+                {
+                    "url": "https://allegro.pl/oferta/kolumna-wspomaganie-toyota-yaris-ii-2-45200-0d105-europa-15356593558",
+                    "label": "Yaris II EPS loose shaft and U-joint example",
+                },
             ]
             if link
         ]
@@ -6453,6 +6583,8 @@ def select_workstream_subtask_images(
         paint_refinish_subtask_image_pool(subtask_id, images) if workstream_id == "paint_refinish" else images
     )
     selected = select_subtask_images_from_payloads(candidate_images, tokens)
+    if workstream_id == "eps_vitz_upgrade":
+        selected = dedupe_payload_images(eps_reference_images_for_subtask(subtask_id) + selected)[:6]
     if workstream_id == "paint_refinish" and subtask_id == "reconcile_returned_painted_parts":
         returned_panel_images = [
             image
@@ -6586,6 +6718,8 @@ def build_workstream_subtask_groups(
         return [build_chassis_before_primer_subtask_group(photo_rows)]
 
     image_pool = evidence_images or fallback_workstream_images_from_photo_rows(workstream_id, photo_rows)
+    if workstream_id == "eps_vitz_upgrade":
+        image_pool = dedupe_payload_images(image_pool + eps_workstream_reference_images())
     group = build_standard_workstream_subtask_group(
         workstream_id,
         workstream_row,
@@ -7121,6 +7255,342 @@ def reference_image_payload(asset_name: str, caption: str, matched_tokens: list[
     )
 
 
+def external_reference_image_payload(
+    image_url: str,
+    *,
+    caption: str,
+    media_id: str,
+    matched_tokens: list[str],
+    listing_url: str,
+) -> dict[str, Any]:
+    return {
+        "path": clean(image_url),
+        "caption": caption,
+        "captured_date": "",
+        "captured_time": "",
+        "media_type": "photo",
+        "component_group": "procurement_inventory",
+        "specific_component": "external_market_reference_image",
+        "stage": "procurement_reconciliation",
+        "media_id": media_id,
+        "matched_tokens": matched_tokens,
+        "match_basis": "external_reference_image",
+        "match_score": 680,
+        "listing_url": clean(listing_url),
+        "image_url": clean(image_url),
+    }
+
+
+def local_stripdown_reference_image_payload(
+    relative_path: str,
+    *,
+    caption: str,
+    media_id: str,
+    matched_tokens: list[str],
+    specific_component: str,
+) -> dict[str, Any]:
+    return {
+        "path": path_for_ui(relative_path),
+        "caption": caption,
+        "captured_date": "",
+        "captured_time": "",
+        "media_type": "photo",
+        "component_group": "vehicle_stripdown_reference",
+        "specific_component": specific_component,
+        "stage": "local_stripdown_reference",
+        "media_id": media_id,
+        "matched_tokens": matched_tokens,
+        "match_basis": "local_stripdown_reference",
+        "match_score": 720,
+    }
+
+
+def eps_general_conversion_reference_images() -> list[dict[str, Any]]:
+    return [
+        external_reference_image_payload(
+            "https://xenonzcar.com/z31/electric_columnZ/electric%20column%20Z/8.png",
+            caption=(
+                "General EPS conversion reference: column-assist motor/shaft assembly mocked up on the bench, "
+                "useful for understanding package size and shaft coupling work"
+            ),
+            media_id="eps_general_column_assist_mockup_xenonzcar",
+            matched_tokens=["eps", "column", "motor", "shaft", "mockup", "conversion"],
+            listing_url="https://www.xenonzcar.com/z31/electricz31steering.php",
+        ),
+        external_reference_image_payload(
+            "https://xenonzcar.com/z31/electric_columnZ/electric%20column%20Z/20a.png",
+            caption=(
+                "General EPS conversion reference: measuring the steering column/shaft span before cutting or adapting shafts"
+            ),
+            media_id="eps_general_column_measurement_xenonzcar",
+            matched_tokens=["eps", "column", "measure", "layout", "shaft", "length"],
+            listing_url="https://www.xenonzcar.com/z31/electricz31steering.php",
+        ),
+        external_reference_image_payload(
+            "https://xenonzcar.com/z31/electric_columnZ/electric%20column%20Z/23.png",
+            caption=(
+                "General EPS conversion reference: EPS pigtail/wiring detail before final loom construction"
+            ),
+            media_id="eps_general_pigtail_wiring_xenonzcar",
+            matched_tokens=["eps", "wiring", "pigtail", "controller", "plug", "loom"],
+            listing_url="https://www.xenonzcar.com/z31/electricz31steering.php",
+        ),
+        external_reference_image_payload(
+            "https://jefflilly.com/images/jcogs_img/cache/63galaxiedash_3_-_1260abdf69_-_1b8ac2ab4d4a3c6afcff7a6f933d94952222c7f5.webp",
+            caption=(
+                "General fabrication reference: under-dash brace/support work showing the kind of structure needed "
+                "when a steering column load must be spread into stronger dash/cowl structure"
+            ),
+            media_id="eps_general_under_dash_support_reference",
+            matched_tokens=["dash", "support", "bracket", "brace", "fabrication", "column"],
+            listing_url="https://jefflilly.com",
+        ),
+    ]
+
+
+def eps_local_stripdown_reference_images() -> list[dict[str, Any]]:
+    return [
+        local_stripdown_reference_image_payload(
+            "photos/20260323_190005.jpg",
+            caption="J40 stripdown reference: lower dash structure where column support and EPS bracket packaging must be assessed",
+            media_id="20260323_190005",
+            matched_tokens=["j40", "dash", "lower", "column", "support", "stripdown"],
+            specific_component="j40_lower_dash_column_support_context",
+        ),
+        local_stripdown_reference_image_payload(
+            "photos/20260413_040719.jpg",
+            caption="J40 stripdown reference: bare dashboard shell/cabin view for steering wheel position and column route planning",
+            media_id="20260413_040719",
+            matched_tokens=["j40", "dashboard", "shell", "column", "layout", "stripdown"],
+            specific_component="j40_dashboard_shell_column_route_context",
+        ),
+        local_stripdown_reference_image_payload(
+            "photos/20260321_235600.jpg",
+            caption="J40 stripdown reference: driver footwell/firewall/wiring area for EPS motor clearance and controller routing",
+            media_id="20260321_235600",
+            matched_tokens=["j40", "footwell", "firewall", "wiring", "motor", "pedal"],
+            specific_component="j40_driver_footwell_firewall_wiring_context",
+        ),
+        local_stripdown_reference_image_payload(
+            "photos/20260324_004812.jpg",
+            caption="J40 stripdown reference: firewall pass-through area for steering shaft, grommet, wiring, and reinforcement checks",
+            media_id="20260324_004812",
+            matched_tokens=["j40", "firewall", "pass", "shaft", "grommet", "wiring"],
+            specific_component="j40_firewall_pass_through_context",
+        ),
+        local_stripdown_reference_image_payload(
+            "photos/20260328_053638_gp_t6Q3oCTA.jpg",
+            caption="J40 stripdown reference: pedal-box wiring area that must stay clear of EPS motor, shaft, and wiring movement",
+            media_id="20260328_053638_gp_t6Q3oCTA",
+            matched_tokens=["j40", "pedal", "box", "wiring", "clearance", "controller"],
+            specific_component="j40_pedal_box_wiring_clearance_context",
+        ),
+        local_stripdown_reference_image_payload(
+            "photos/20260317_235150.jpg",
+            caption="J40 stripdown reference: engine-bay steering side overview for column exit, steering-box line, and clearance planning",
+            media_id="20260317_235150",
+            matched_tokens=["j40", "engine", "bay", "steering", "box", "layout"],
+            specific_component="j40_engine_bay_steering_side_context",
+        ),
+        local_stripdown_reference_image_payload(
+            "photos/20260422_004412_gp_OclpaTdg_2.jpg",
+            caption="J40 stripdown reference: body-off chassis/engine-bay interface near steering area for shaft path and clearance checks",
+            media_id="20260422_004412_gp_OclpaTdg_2",
+            matched_tokens=["j40", "body", "off", "steering", "chassis", "shaft"],
+            specific_component="j40_body_off_steering_chassis_interface_context",
+        ),
+        local_stripdown_reference_image_payload(
+            "photos/20260406_031010.jpg",
+            caption="J40 stripdown reference: existing steering linkage/box area for final shaft alignment and lock-to-lock validation context",
+            media_id="20260406_031010",
+            matched_tokens=["j40", "steering", "linkage", "box", "shaft", "validation"],
+            specific_component="j40_existing_steering_linkage_validation_context",
+        ),
+    ]
+
+
+def eps_market_reference_images() -> list[dict[str, Any]]:
+    return [
+        static_reference_image_payload(
+            "deliverables/selling_site_images/images/manual_overrides/eps_complete_column_set_reference.svg",
+            caption=(
+                "Complete EPS donor-kit checklist: column, matched EPS ECU/controller, plugs with pigtails, "
+                "shafts, U-joints, couplers, brackets, support plates, fasteners, and labels"
+            ),
+            media_id="eps_complete_column_set_reference",
+            matched_tokens=["eps", "vitz", "yaris", "complete", "kit"],
+            match_basis="local_reference_image",
+        ),
+        reference_image_payload(
+            "eps_column",
+            "Actual XP90 Vitz/Yaris EPS column-assist unit; column, motor, shaft and U-joint reference only",
+            ["eps", "vitz", "yaris", "column", "motor", "shaft", "u-joint"],
+        ),
+        external_reference_image_payload(
+            "https://a.allegroimg.com/s720/11cb76/c7059f624508bea88703fcd54225/TOYOTA-YARIS-II-WSPOMAGANIE-ELEKTRYCZNE-KIEROWNICY-STEROWNIK-45200-0D100",
+            caption=(
+                "Example Yaris II EPS column with the EPS controller/ECU present; use as a complete-unit "
+                "layout reference, not as a direct purchase source"
+            ),
+            media_id="eps_yaris_ii_column_controller_allegro",
+            matched_tokens=["eps", "yaris", "vitz", "controller", "ecu", "45200-0d100"],
+            listing_url="https://allegro.pl/produkt/toyota-yaris-ii-wspomaganie-elektryczne-kierownicy-sterownik-45200-0d100-851971a4-a0e1-4a1d-aa87-f2fd379eed56?offerId=18532958907",
+        ),
+        external_reference_image_payload(
+            "https://a.allegroimg.com/s720/11a05e/046e3a4148318df7b1b15680fbc6/KOLUMNA-WSPOMAGANIE-TOYOTA-YARIS-II-2-45200-0D105-EUROPA",
+            caption=(
+                "Example lower shaft and U-joint/coupler detail on a Yaris II EPS column; compare shaft ends, "
+                "joint play, pinch areas, and included couplers"
+            ),
+            media_id="eps_yaris_ii_lower_shaft_u_joint_allegro",
+            matched_tokens=["eps", "yaris", "vitz", "u-joint", "coupler", "lower shaft"],
+            listing_url="https://allegro.pl/produkt/kolumna-wspomaganie-toyota-yaris-ii-2-45200-0d105-europa-49b4b02e-be5c-41b1-b32a-a07536d53095",
+        ),
+        external_reference_image_payload(
+            "https://a.allegroimg.com/s720/11e111/301e82ba4445b8cf10ee8126146d/KOLUMNA-WSPOMAGANIE-TOYOTA-YARIS-II-2-45200-0D105-EUROPA-Stan-opakowania-zastepcze",
+            caption=(
+                "Example loose intermediate shaft with U-joint from a Yaris II EPS set; this is the kind of "
+                "separate shaft hardware that should be laid out with the column"
+            ),
+            media_id="eps_yaris_ii_intermediate_shaft_u_joint_allegro",
+            matched_tokens=["eps", "yaris", "vitz", "intermediate shaft", "u-joint"],
+            listing_url="https://allegro.pl/oferta/kolumna-wspomaganie-toyota-yaris-ii-2-45200-0d105-europa-15356593558",
+        ),
+        external_reference_image_payload(
+            "https://a.allegroimg.com/s720/119bee/0de4586349308641e469e75124d6/WSPOMAGANIE-ELEKTRYCZNE-POMPA-452000D090-1129001331-TOYOTA-YARIS-II-05",
+            caption=(
+                "Example Yaris II EPS support/bracket area with motor, column tube, plugs and controller present; "
+                "use it to ask for brackets/support plates instead of a bare motorized column"
+            ),
+            media_id="eps_yaris_ii_support_bracket_area_allegro",
+            matched_tokens=["eps", "yaris", "vitz", "support", "bracket", "plug", "controller"],
+            listing_url="https://allegro.pl/produkt/wspomaganie-elektryczne-pompa-452000d090-1129001331-toyota-yaris-ii-05-070d38ef-9211-46e6-82cf-ead49b9f8184?offerId=18244144695",
+        ),
+        external_reference_image_payload(
+            "https://a.allegroimg.com/s720/1140df/54f01114441bb93ba0925f33f35d/WSPOMAGANIE-ELEKTRYCZNE-POMPA-452000D090-1129001331-TOYOTA-YARIS-II-05-Numer-katalogowy-czesci-WSPOMAGANIE-ELEKTRYCZNE-POMPA-452000D090-STEROWNIK-1129001331-TOYOTA-YARIS-II-05-AYC1618",
+            caption=(
+                "Example controller/label and plug detail from a Yaris II EPS set; the actual purchase needs "
+                "readable column and EPS ECU/controller labels plus usable pigtails"
+            ),
+            media_id="eps_yaris_ii_controller_label_plugs_allegro",
+            matched_tokens=["eps", "yaris", "vitz", "controller label", "plug", "pigtail"],
+            listing_url="https://allegro.pl/produkt/wspomaganie-elektryczne-pompa-452000d090-1129001331-toyota-yaris-ii-05-070d38ef-9211-46e6-82cf-ead49b9f8184?offerId=18244144695",
+        ),
+        external_reference_image_payload(
+            "https://a.allegroimg.com/s720/110cec/09d65cdb40eaac3678205ca71153",
+            caption=(
+                "Example Yaris II EPS module/controller listing, showing why the matched EPS ECU/controller "
+                "must be part of the set"
+            ),
+            media_id="eps_yaris_ii_module_controller_allegro",
+            matched_tokens=["eps", "yaris", "vitz", "module", "controller", "89650-0d110"],
+            listing_url="https://allegro.pl/produkt/wspomaganie-elektryczne-modul-yaris-ii-45200-0d100-00-89650-0d110-5d9fef6b-6861-446c-9b9f-fcec658e7e90",
+        ),
+    ]
+
+
+def eps_workstream_reference_images() -> list[dict[str, Any]]:
+    return dedupe_payload_images(
+        eps_market_reference_images()
+        + eps_general_conversion_reference_images()
+        + eps_local_stripdown_reference_images()
+    )
+
+
+def eps_reference_images_for_subtask(subtask_id: str) -> list[dict[str, Any]]:
+    task = norm(subtask_id)
+    market = eps_market_reference_images()
+    general = eps_general_conversion_reference_images()
+    local = eps_local_stripdown_reference_images()
+    by_id = {clean(image.get("media_id")): image for image in market + general + local}
+
+    def pick(*media_ids: str) -> list[dict[str, Any]]:
+        return [by_id[media_id] for media_id in media_ids if media_id in by_id]
+
+    if "target_donor" in task:
+        return pick(
+            "eps_complete_column_set_reference",
+            "eps_yaris_ii_column_controller_allegro",
+            "eps_yaris_ii_controller_label_plugs_allegro",
+            "eps_yaris_ii_module_controller_allegro",
+            "eps_general_column_assist_mockup_xenonzcar",
+            "20260317_235150",
+        )
+    if "complete_matched_kit" in task:
+        return pick(
+            "eps_complete_column_set_reference",
+            "eps_yaris_ii_column_controller_allegro",
+            "eps_yaris_ii_lower_shaft_u_joint_allegro",
+            "eps_yaris_ii_support_bracket_area_allegro",
+            "eps_yaris_ii_controller_label_plugs_allegro",
+            "eps_yaris_ii_intermediate_shaft_u_joint_allegro",
+        )
+    if "bench_test" in task:
+        return pick(
+            "eps_complete_column_set_reference",
+            "eps_general_column_assist_mockup_xenonzcar",
+            "eps_general_pigtail_wiring_xenonzcar",
+            "eps_yaris_ii_column_controller_allegro",
+            "eps_yaris_ii_controller_label_plugs_allegro",
+            "eps_yaris_ii_module_controller_allegro",
+        )
+    if "seller_evidence" in task:
+        return pick(
+            "eps_complete_column_set_reference",
+            "eps_yaris_ii_column_controller_allegro",
+            "eps_yaris_ii_lower_shaft_u_joint_allegro",
+            "eps_yaris_ii_support_bracket_area_allegro",
+            "eps_yaris_ii_controller_label_plugs_allegro",
+            "eps_yaris_ii_module_controller_allegro",
+        )
+    if "j40_column_layout" in task:
+        return pick(
+            "20260413_040719",
+            "20260323_190005",
+            "20260321_235600",
+            "20260324_004812",
+            "eps_general_column_measurement_xenonzcar",
+            "eps_general_column_assist_mockup_xenonzcar",
+        )
+    if "column_support_bracket" in task:
+        return pick(
+            "20260323_190005",
+            "20260321_235600",
+            "20260324_004812",
+            "eps_general_under_dash_support_reference",
+            "eps_yaris_ii_support_bracket_area_allegro",
+            "eps_general_column_assist_mockup_xenonzcar",
+        )
+    if "shafts" in task or "u_joint" in task or "couplers" in task:
+        return pick(
+            "eps_yaris_ii_lower_shaft_u_joint_allegro",
+            "eps_yaris_ii_intermediate_shaft_u_joint_allegro",
+            "eps_general_column_measurement_xenonzcar",
+            "20260422_004412_gp_OclpaTdg_2",
+            "20260406_031010",
+            "20260317_235150",
+        )
+    if "controller" in task or "protected_wiring" in task:
+        return pick(
+            "eps_general_pigtail_wiring_xenonzcar",
+            "eps_yaris_ii_controller_label_plugs_allegro",
+            "eps_yaris_ii_module_controller_allegro",
+            "20260321_235600",
+            "20260328_053638_gp_t6Q3oCTA",
+            "20260324_004812",
+        )
+    if "steering_function" in task:
+        return pick(
+            "20260406_031010",
+            "20260422_004412_gp_OclpaTdg_2",
+            "20260317_235150",
+            "eps_yaris_ii_lower_shaft_u_joint_allegro",
+            "eps_general_column_assist_mockup_xenonzcar",
+            "eps_general_pigtail_wiring_xenonzcar",
+        )
+    return eps_workstream_reference_images()[:6]
+
+
 def order_component_reference_image(item: str, context: str = "") -> dict[str, Any]:
     item_text = clean(item)
     blob = norm(f"{item} {context}")
@@ -7546,7 +8016,13 @@ def choose_supply_reference_image(
     if has_any("gearbox / transfer case mounts", "transmission mount", "powertrain mount"):
         return ref("engine_mount", f"{item} · powertrain mount reference image", "mount")
     if has_any("eps", "electrical power steering") or has("power", "steering") or has("vitz", "column"):
-        return ref("eps_column", f"{item} · Vitz/Yaris XP90 EPS column set reference image", "eps")
+        return local_photo(
+            "deliverables/selling_site_images/images/manual_overrides/eps_complete_column_set_reference.svg",
+            f"{item} · complete Vitz/Yaris XP90 EPS column set checklist reference",
+            "eps",
+            "complete",
+            "kit",
+        )
 
     if has_any("retaining clip", "r-clips", "r clips", "hairpins", "hairpin", "split pins", "split pin", "cotter pins", "cotter", "circlips", "e-clips", "e clips"):
         return local_photo(
@@ -8517,6 +8993,8 @@ def build_dashboard_data() -> dict[str, Any]:
             paint_refinish_whatsapp_rows,
         )
         images = evidence["primary_images"]
+        if ws_id == "eps_vitz_upgrade":
+            images = dedupe_payload_images(images + eps_workstream_reference_images())
         evidence_sets = evidence["evidence_sets"]
         parts_for_workstream = part_rows_by_workstream.get(ws_id, [])
         involved_parts_rows = sorted(

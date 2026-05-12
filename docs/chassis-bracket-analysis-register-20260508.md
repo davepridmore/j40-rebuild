@@ -2,14 +2,14 @@
 
 Source CSV: [data/manual/chassis_bracket_analysis_register_20260508.csv](../data/manual/chassis_bracket_analysis_register_20260508.csv)
 
-This is the actual bracket register seeded from current local photos. The May 12 user photos add useful radiator/upright and battery-side structure context, so the front-support and battery-stand concepts can move into template/scouting work while final dimensions remain held for ruler photos.
+This is the actual bracket register seeded from current local photos. The May 12 user and Google Photos sets add useful radiator/upright, front-support hole-field, fan/belt, and battery-side structure context, so the front-support and battery-stand concepts can move into template work while final dimensions remain held for ruler photos.
 
 ## Current Register
 
 | ID | Station | Function | Evidence state | Current read | Decision / gate |
 | --- | --- | --- | --- | --- | --- |
-| `CBR-001` | Front support, visible radiator side | Radiator side retention bracket | Direct photo | May 12 image shows radiator plane, fan/pulley clearance, vertical upright/top hole, and lower/front support holes; dimensions are still missing. | Design two-side retention from sound upright/lower support/radiator flange pickups. Blocks final primer/Raptor until released. |
-| `CBR-002` | Front support, opposite radiator side | Opposite-side radiator retention bracket | Direct context | May 12 opposite-side context helps, but complete symmetrical radiator retention is still not proven. | Scout and verify before release. Blocks final primer/Raptor until verified or repaired. |
+| `CBR-001` | Front support, visible radiator side | Radiator side retention bracket | Direct photo | May 12 images show radiator plane, fan/pulley clearance, vertical upright/top hole, and lower/front support holes; dimensions are still missing. | Design two-side retention from sound upright/lower support/radiator flange pickups. Blocks final primer/Raptor until released. |
+| `CBR-002` | Front support, opposite radiator side | Opposite-side radiator retention bracket | Direct context | May 12 front-support and opposite-side context helps, but complete symmetrical radiator retention is still not proven. | Verify and measure before release. Blocks final primer/Raptor until verified or repaired. |
 | `CBR-003` | Front support, lower crossmember | Lower radiator support or lower pickup holes | Direct context | May 12 images show a usable-looking hole field; hole condition, metal thickness, and lower load path still need measurement. | Inspect and measure before using or repairing lower pickups. |
 | `CBR-004` | Front support, radiator/fan side | Radiator/fan/belt/hose/steering/exhaust clearance envelope | Direct photo | Packaging constraints are clearer, including fan/pulley and battery-side steering/exhaust/alternator clearance. | Do not let new brackets pull the radiator toward the fan, stress hoses, or crowd steering/exhaust/service access. |
 | `CBR-005` | Engine bay, battery-side inner wing | Battery top clamp or crossbar | Partial direct context | Battery-side structure context is better, but installed battery, top clamp path, and bonnet clearance still need checking. | Inspect top restraint after tray base support is proven. |
@@ -23,7 +23,7 @@ This is the actual bracket register seeded from current local photos. The May 12
 | Area | Useful photos | Register use |
 | --- | --- | --- |
 | Radiator/front support | `20260422_004423_gp_B1N5ThVw`, `20260422_004429_gp_4emWbTrA`, `20260422_004436_gp_yjCPMWTg`, `20260430_215957_gp_2iBbUagw`, `20260430_220004_gp_C9oYiYmA` | Direct enough to prove a front-support/radiator retention problem and define constraints. Still needs ruler photos for hole centres, offsets, side symmetry, and final clearance. |
-| May 12 radiator/upright context | `20260512_100000_user_front_support_radiator_pickups_context` | Shows radiator plane, fan/pulley clearance, vertical upright/top hole, and front/lower support hole field. Good enough for template layout; not enough for final dimensions. |
+| May 12 radiator/upright context | `20260512_100000_user_front_support_radiator_pickups_context`, `20260512_073210_gp_zP427O2A`, `20260512_073303_gp_hNyAiN1g`, `20260512_073314_gp_GyAXZWBg`, `20260512_073547_gp_SNtwIVyA` | Shows radiator plane, fan/pulley clearance, vertical upright/top hole, front/lower support hole field, and engine-front packaging. Good enough for template layout; not enough for final dimensions. |
 | Battery location / stand context | `20260317_235229`, `20260317_235232_gp_3Ojs4Rag`, `IMG-20260331-WA0004`, `20260512_100100_user_battery_side_tray_structure_context` | Enough to start the battery stand/load-path concept and clearance constraints. Still not enough to release tray feet, lower support legs, or welded pickup details. |
 | MIDI/cutoff hardware | `20260411_143125`, `20260411_143135`, `20260420_221819_gp_YV69fbvA` | Hardware and packaging context for the battery-side carrier. Vehicle-side mounting points still require mock-up. |
 

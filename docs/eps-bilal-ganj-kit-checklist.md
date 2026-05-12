@@ -9,15 +9,19 @@ Plain stall request: **"I need one complete 2005-2011 Toyota Vitz/Yaris 90-serie
 
 Ask for **one complete 2005-2011 Toyota Vitz/Yaris 90-series electric column-assist EPS set**, chassis code **SCP90 or NCP90**. Corolla/Axio, Prius, and other Toyota EPS columns are not buy candidates for this build unless explicitly approved later; collect quote/photos only if no SCP90/NCP90 set is found.
 
-Quantity: **1 complete matched EPS kit**. Do not split the column, ECU/controller, plugs, pigtails, shafts, U-joints, couplers, brackets, support plates, or donor fasteners into separate buy items.
+Quantity: **1 complete matched EPS kit**. Do not split the column, EPS ECU/controller, plugs, pigtails, shafts, U-joints, couplers, brackets, support plates, or donor fasteners into separate buy items.
 
 This is not hydraulic power steering. Do not buy pumps, racks, hydraulic steering boxes, hoses, or a loose EPS motor by itself.
 
 Scope clarification: the current EPS route is column-assist with the engine left installed. It does not require engine removal, an engine lift, hydraulic pump brackets, crank pulleys, or power-steering hoses.
 
+ECU/controller clarification: the J40 does not have an engine/body ECU and does not need one for this route, but the donor EPS system still needs its own matched EPS ECU/controller unless the column has seller-proven integrated control. Do not buy a bare column or loose motor expecting it to run from the J40's simple wiring alone.
+
 The set must be a matched donor set: column, controller/ECU, connectors, shafts, U-joints, couplers, and brackets from the same donor family. Do not accept a random ECU paired with an unrelated column unless the seller demonstrates the exact pair working on the bench.
 
 Electrical cable rule: donor pigtails are required for connector identification and bench testing only. Final EPS power, ground, ignition-trigger, protection, and loom wiring must use new automotive cable, terminals, sleeving, and fuse protection.
+
+Install planning note: after procurement, use `docs/eps-vitz-conversion-fabrication-plan.md` to control the J40-specific column layout, support bracket/cradle, shaft/U-joint adaptation, controller mounting, wiring protection, and validation checks. The donor brackets and support plates are reference/adaptation pieces, not assumed bolt-on J40 parts.
 
 ## Accept/Reject Checklist (On-Site)
 
@@ -28,7 +32,7 @@ Use this as a hard gate before payment.
 | 2005-2011 Toyota Vitz/Yaris 90-series donor, SCP90 or NCP90 | Yes | ☐ |
 | EPS motorized steering column assembly | Yes | ☐ |
 | Torque sensor integrated in column | Yes | ☐ |
-| EPS ECU/controller (or verified integrated control) | Yes | ☐ |
+| EPS ECU/controller from the donor set, or seller-proven integrated control on the column | Yes | ☐ |
 | Main EPS connectors with pigtails (>=150mm, not cut flush; identification/bench-test leads only) | Yes | ☐ |
 | Power/ground and ignition-trigger wires identifiable | Yes | ☐ |
 | Upper intermediate shaft section | Yes | ☐ |
@@ -53,6 +57,7 @@ Use this as a hard gate before payment.
 ## Reject Immediately If
 
 - ECU/controller is missing and the unit is not proven integrated.
+- Seller claims the J40 has no ECU so the EPS ECU/controller is not needed.
 - Connectors are missing, cut flush, melted, or badly repaired.
 - Motor housing, column tube, mounting ears, or gearbox casting is cracked.
 - Shaft has visible bend, accident damage, heavy rust, or excessive play.
@@ -77,7 +82,7 @@ Use this as a hard gate before payment.
 
 ## Required Photos / Video
 
-- Full kit laid out together.
+- Full kit laid out together: column, EPS ECU/controller, plugs, pigtails, shafts, U-joints, couplers, brackets, support plates, and fasteners.
 - Column label and ECU/controller label.
 - Every connector and pigtail.
 - Input and output spline ends.
@@ -95,4 +100,4 @@ Use this as a hard gate before payment.
 ## Pre-Payment Notes
 
 - Do not pay extra for generic wiring bundles.
-- Do not pay complete-kit price for missing shafts, brackets, ECU/controller, or connectors.
+- Do not pay complete-kit price for missing shafts, brackets, EPS ECU/controller, or connectors.

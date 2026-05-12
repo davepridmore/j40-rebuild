@@ -1,0 +1,21 @@
+type: manual SVG checklist reference
+created: 2026-05-12
+purpose: Replace the partial EPS column-only reference image in the Scout/dashboard view with a full-kit visual checklist.
+notes: The old eps_column.jpg remains a column/motor/shaft reference only. The purchase evidence must show the full donor kit laid out together: motorized EPS column, matched EPS ECU/controller or verified integrated controller, plugs with pigtails, upper/lower shafts, U-joints, couplers, brackets, support plates, fasteners, column label, and ECU/controller label.
+dashboard_gallery_sources:
+- general_conversion_example: https://www.xenonzcar.com/z31/electricz31steering.php
+- general_support_reference: https://jefflilly.com/images/jcogs_img/cache/63galaxiedash_3_-_1260abdf69_-_1b8ac2ab4d4a3c6afcff7a6f933d94952222c7f5.webp
+- local_stripdown_reference: photos/20260323_190005.jpg
+- local_stripdown_reference: photos/20260413_040719.jpg
+- local_stripdown_reference: photos/20260321_235600.jpg
+- local_stripdown_reference: photos/20260324_004812.jpg
+- local_stripdown_reference: photos/20260328_053638_gp_t6Q3oCTA.jpg
+- local_stripdown_reference: photos/20260317_235150.jpg
+- local_stripdown_reference: photos/20260422_004412_gp_OclpaTdg_2.jpg
+- local_stripdown_reference: photos/20260406_031010.jpg
+- local: deliverables/selling_site_images/images/reference_catalog/eps_column.jpg
+- example: https://allegro.pl/produkt/toyota-yaris-ii-wspomaganie-elektryczne-kierownicy-sterownik-45200-0d100-851971a4-a0e1-4a1d-aa87-f2fd379eed56?offerId=18532958907
+- example: https://allegro.pl/produkt/kolumna-wspomaganie-toyota-yaris-ii-2-45200-0d105-europa-49b4b02e-be5c-41b1-b32a-a07536d53095
+- example: https://allegro.pl/produkt/wspomaganie-elektryczne-modul-yaris-ii-45200-0d100-00-89650-0d110-5d9fef6b-6861-446c-9b9f-fcec658e7e90
+- example: https://allegro.pl/produkt/wspomaganie-elektryczne-pompa-452000d090-1129001331-toyota-yaris-ii-05-070d38ef-9211-46e6-82cf-ead49b9f8184?offerId=18244144695
+- example: https://allegro.pl/oferta/kolumna-wspomaganie-toyota-yaris-ii-2-45200-0d105-europa-15356593558

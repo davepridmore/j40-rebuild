@@ -133,15 +133,17 @@ Plain stall request: **"I need one complete 2005-2011 Toyota Vitz/Yaris 90-serie
 
 Ask for: **one complete 2005-2011 Toyota Vitz/Yaris 90-series electric column-assist EPS set**, chassis code **SCP90 or NCP90**. Corolla/Axio, Prius, and other Toyota EPS columns are **not buy candidates** for this build unless explicitly approved later; collect quote/photos only if no SCP90/NCP90 set is found. This is **not** hydraulic power steering; do not buy pumps, steering racks, hydraulic boxes, hoses, or incomplete loose motors.
 
-Quantity: **1 complete matched EPS kit**. Do not split the column, ECU/controller, plugs, pigtails, shafts, U-joints, couplers, brackets, support plates, or donor fasteners into separate buy items.
+Quantity: **1 complete matched EPS kit**. Do not split the column, EPS ECU/controller, plugs, pigtails, shafts, U-joints, couplers, brackets, support plates, or donor fasteners into separate buy items.
 
-Buy only a matched set from one donor vehicle. Do not mix a column from one car with an ECU/controller from another car unless the seller can prove the pair works together on the bench. Donor pigtails are for connector identification and bench testing only; final EPS power, ground, ignition-trigger, protection, and loom wiring must use new automotive cable, terminals, sleeving, and fuse protection.
+ECU/controller clarification: the J40 has no engine/body ECU and does not need one for this route, but the donor EPS system still needs its own matched EPS ECU/controller unless the column has seller-proven integrated control. Buy only a matched set from one donor vehicle. Do not mix a column from one car with an ECU/controller from another car unless the seller can prove the pair works together on the bench. Donor pigtails are for connector identification and bench testing only; final EPS power, ground, ignition-trigger, protection, and loom wiring must use new automotive cable, terminals, sleeving, and fuse protection.
+
+Installation planning is now tracked separately in `docs/eps-vitz-conversion-fabrication-plan.md`: J40 column layout, EPS support bracket/cradle, shaft/U-joint adaptation, controller mounting, protected wiring, and validation must all close before road use.
 
 | Must Be Included In The Kit | Scout Check |
 | --- | --- |
 | Donor family | 2005-2011 Toyota Vitz/Yaris 90-series, chassis code SCP90 or NCP90 |
 | EPS motorized column assembly | Column-assist unit with motor, torque sensor, and reduction gearbox present |
-| Matching EPS ECU/controller | Separate ECU included, or integrated controller clearly verified on the unit |
+| Matching EPS ECU/controller | Separate donor EPS ECU included, or integrated controller clearly verified on the unit |
 | Main EPS plugs and wiring pigtails | All matching connectors included with at least 150mm wire tail; no chopped flush plugs; tails are identification/bench-test leads only |
 | Power and signal wiring identification | Seller can identify heavy power/ground, ignition trigger, and signal/control plugs |
 | Upper intermediate shaft section | Included with usable spline/coupler end |
@@ -162,7 +164,8 @@ Mandatory bench test before payment:
 - If the seller cannot bench-test it, treat it as quote-only and do not buy.
 
 Reject immediately if:
-- ECU/controller is missing and the unit is not proven integrated.
+- EPS ECU/controller is missing and the unit is not proven integrated.
+- Seller claims the J40 has no ECU so the EPS ECU/controller is not needed.
 - Connectors are missing, cut flush, melted, or badly repaired.
 - Motor housing, column tube, mounting ears, or gearbox casting is cracked.
 - Shaft has visible bend, accident damage, heavy rust, or excessive play.

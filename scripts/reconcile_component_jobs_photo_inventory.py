@@ -201,10 +201,45 @@ RULES: dict[str, EvidenceRule] = {
         indirect_specific_components=("frame_floor_underside_and_lines",),
         notes="Rear axle underside shots are the main evidence set for drum hardware and parking-brake linkage condition.",
     ),
+    "rear_brake_cable_line_refresh": EvidenceRule(
+        direct_specific_components=("rear_axle_and_leaf_springs",),
+        indirect_specific_components=("frame_floor_underside_and_lines", "rear_mid_frame_rail_and_hard_line_detail", "rear_axle_spring_hanger_and_crossmember"),
+        notes="Rear axle/drum photos directly show the parking-brake cable/linkage and axle-end hard-line routing; release still needs labelled removal photos and old parts kept as templates.",
+    ),
     "brake_hydraulic_refresh_and_bias_decision": EvidenceRule(
         direct_specific_components=("frame_floor_underside_and_lines",),
         indirect_specific_components=("rear_axle_and_leaf_springs", "steering_and_suspension_linkages"),
         notes="Hard-line routing photos are direct evidence for hose/line refresh planning, with axle-end hardware views supporting brake-bias and wear decisions.",
+    ),
+    "suspension_upgrade_spec_and_kit_lock": EvidenceRule(
+        direct_specific_components=(),
+        indirect_specific_components=("rear_axle_and_leaf_springs", "rear_axle_spring_hanger_and_crossmember", "steering_and_suspension_linkages"),
+        notes="Vehicle-side suspension photos support fitment constraints only; the kit lock still needs part-number, quantity, and arrived-condition photos for the actual suspension kit.",
+    ),
+    "suspension_upgrade_fitment_and_alignment": EvidenceRule(
+        direct_specific_components=("rear_axle_and_leaf_springs", "rear_axle_spring_hanger_and_crossmember", "steering_and_suspension_linkages"),
+        indirect_specific_components=("front_frame_horns_bumper_and_steering_area", "frame_and_mount_points"),
+        notes="Rear spring/U-bolt and front linkage photos provide direct fitment context; final alignment release still needs installed-kit and ride-height/alignment photos.",
+    ),
+    "eps_vitz_column_layout_measurement": EvidenceRule(
+        direct_specific_components=("driver_footwell_firewall_and_wiring", "front_frame_horns_bumper_and_steering_area", "steering_and_suspension_linkages"),
+        indirect_specific_components=("dashboard_lower_structure", "floor_pan_and_firewall", "floor_pan_rust_zones"),
+        notes="Existing cab/firewall and steering-box-side photos provide the vehicle-side EPS layout baseline; close this only with ruler photos, donor EPS mock-up, motor envelope, and column centerline checks.",
+    ),
+    "eps_vitz_support_bracket_design": EvidenceRule(
+        direct_specific_components=("driver_footwell_firewall_and_wiring", "dashboard_lower_structure", "floor_pan_rust_zones"),
+        indirect_specific_components=("front_frame_horns_bumper_and_steering_area",),
+        notes="Cab/firewall and dash-structure photos support bracket design context, but final support plates need measured templates and dry-fit photos before fabrication.",
+    ),
+    "eps_vitz_shaft_u_joint_adaptation": EvidenceRule(
+        direct_specific_components=("front_frame_horns_bumper_and_steering_area", "steering_and_suspension_linkages"),
+        indirect_specific_components=("driver_footwell_firewall_and_wiring",),
+        notes="Steering-box/input and linkage photos provide direct vehicle-side shaft-routing context; release still needs donor shaft, U-joint, spline, engagement, and phasing evidence.",
+    ),
+    "eps_vitz_controller_mount_and_wiring": EvidenceRule(
+        direct_specific_components=("fuse_distribution_and_power_hardware", "driver_footwell_firewall_and_wiring", "firewall_and_dash_wiring"),
+        indirect_specific_components=("wiring_harness_and_fuse_distribution", "pedal_box_wiring", "driver_footwell_firewall_pass_through"),
+        notes="Existing wiring and footwell photos support controller and power-route planning; close only after the matched ECU/controller, plugs, fuse feed, ground, and ignition-trigger wiring are photographed and labelled.",
     ),
     "issue_chassis_ground_points_refresh": EvidenceRule(
         direct_specific_components=("frame_floor_underside_and_lines", "frame_rail_body_mount_and_crossmember_detail"),

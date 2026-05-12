@@ -1,7 +1,7 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-05-12 04:21:56
-- Total media files indexed: 625 (614 photos, 11 videos)
+- Generated: 2026-05-12 07:49:47
+- Total media files indexed: 646 (635 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
 
@@ -16,18 +16,18 @@
 | Stage | File Count |
 | --- | ---: |
 | `baseline_walkaround` | 34 |
-| `chassis_fixing` | 38 |
+| `chassis_fixing` | 41 |
 | `electrical_rework` | 18 |
 | `hardware_refinish` | 32 |
-| `mechanical_baseline` | 13 |
+| `mechanical_baseline` | 21 |
 | `mechanical_cleaning` | 14 |
 | `mechanical_inspection` | 5 |
 | `procurement_reconciliation` | 134 |
 | `reference_material` | 59 |
 | `removed_parts_cataloguing` | 16 |
 | `rust_assessment` | 51 |
-| `steering_brakes_suspension` | 2 |
-| `stripdown_cataloguing` | 110 |
+| `steering_brakes_suspension` | 11 |
+| `stripdown_cataloguing` | 111 |
 | `underside_inspection` | 99 |
 
 ## Component Summary
@@ -54,15 +54,15 @@
 | `chassis_underside` | `frame_floor_underside_and_lines` | 40 | 2026-03-31 | `20260331_030439_gp_Hm0ga9nQ.jpg` |
 | `chassis_underside` | `frame_rail_body_mount_and_crossmember_detail` | 12 | 2026-05-01 | `20260501_193533_gp_sDErdvGw.jpg` |
 | `chassis_underside` | `frame_rail_body_mount_and_hard_line_detail` | 6 | 2026-04-22 | `20260422_004306_gp_vGlNr2UA.jpg` |
-| `chassis_underside` | `front_frame_horns_bumper_and_radiator_support` | 6 | 2026-04-22 | `20260422_004423_gp_B1N5ThVw.jpg` |
-| `chassis_underside` | `front_frame_horns_bumper_and_steering_area` | 12 | 2026-05-01 | `20260501_193841_gp_ZwpHFiMA.jpg` |
+| `chassis_underside` | `front_frame_horns_bumper_and_radiator_support` | 7 | 2026-04-22 to 2026-05-12 | `20260422_004423_gp_B1N5ThVw.jpg` |
+| `chassis_underside` | `front_frame_horns_bumper_and_steering_area` | 14 | 2026-05-01 to 2026-05-12 | `20260501_193841_gp_ZwpHFiMA.jpg` |
 | `chassis_underside` | `full_chassis_frame_overview` | 2 | 2026-04-22 | `20260422_004241_gp_hASLbowg.jpg` |
-| `chassis_underside` | `rear_axle_and_leaf_springs` | 10 | 2026-03-24 | `20260324_004815_gp_Q9G5DYGw.jpg` |
-| `chassis_underside` | `rear_axle_spring_hanger_and_crossmember` | 6 | 2026-04-22 to 2026-05-01 | `20260422_004254_gp_SplHLSYA.jpg` |
+| `chassis_underside` | `rear_axle_and_leaf_springs` | 15 | 2026-03-24 to 2026-05-12 | `20260324_004815_gp_Q9G5DYGw.jpg` |
+| `chassis_underside` | `rear_axle_spring_hanger_and_crossmember` | 7 | 2026-04-22 to 2026-05-12 | `20260422_004254_gp_SplHLSYA.jpg` |
 | `chassis_underside` | `rear_frame_crossmember_and_mounts` | 1 | 2026-04-05 | `20260405_234541.jpg` |
 | `chassis_underside` | `rear_mid_frame_rail_and_hard_line_detail` | 9 | 2026-05-01 | `20260501_194026_gp_gjPjhxdA.jpg` |
 | `chassis_underside` | `rear_shock_and_crossmember_view` | 1 | 2026-04-05 | `20260405_234811.jpg` |
-| `chassis_underside` | `steering_and_suspension_linkages` | 7 | 2026-04-06 to 2026-04-23 | `20260406_030839_gp_VYKBhRNA.jpg` |
+| `chassis_underside` | `steering_and_suspension_linkages` | 9 | 2026-04-06 to 2026-05-12 | `20260406_030839_gp_VYKBhRNA.jpg` |
 | `chassis_underside` | `suspension_or_linkage_mount` | 2 | 2026-04-11 | `20260411_220207.jpg` |
 | `chassis_underside` | `transmission_crossmember_and_driveline_mounts` | 4 | 2026-04-22 | `20260422_004319_gp_Ttqz46Sw.jpg` |
 | `documentation_reference` | `aftermarket_chassis_reference_image` | 1 | 2026-04-22 | `20260422_015512_gp_BmYsVZ6w.jpg` |
@@ -77,12 +77,12 @@
 | `electrical_system` | `pedal_box_wiring` | 5 | 2026-03-28 | `20260328_053638_gp_t6Q3oCTA.jpg` |
 | `engine_bay` | `battery_side_tray_structure_context` | 1 | 2026-05-12 | `20260512_100100_user_battery_side_tray_structure_context.png` |
 | `engine_bay` | `bellhousing_clutch_linkage_and_gearbox_case` | 3 | 2026-04-30 | `20260430_215915_gp_ycQ395Gg.jpg` |
-| `engine_bay` | `cooling_hoses_fan_belt_and_radiator_support` | 2 | 2026-04-30 | `20260430_215957_gp_2iBbUagw.jpg` |
+| `engine_bay` | `cooling_hoses_fan_belt_and_radiator_support` | 5 | 2026-04-30 to 2026-05-12 | `20260430_215957_gp_2iBbUagw.jpg` |
 | `engine_bay` | `cooling_pipe_fabrication_samples` | 6 | 2026-05-02 | `20260502_004044_gp_Hx4Yo0Qg.jpg` |
 | `engine_bay` | `engine_bay_overview` | 15 | 2026-03-17 to 2026-04-23 | `20260317_235150.jpg` |
 | `engine_bay` | `engine_interior_and_stripdown_detail` | 32 | 2026-04-20 | `20260420_005132_gp_MgOMVKpQ.jpeg` |
-| `engine_bay` | `engine_powertrain_cleaning_baseline` | 14 | 2026-05-01 | `20260501_194330_gp_CogcrEXA.jpg` |
-| `engine_bay` | `front_support_radiator_pickups_context` | 1 | 2026-05-12 | `20260512_100000_user_front_support_radiator_pickups_context.png` |
+| `engine_bay` | `engine_powertrain_cleaning_baseline` | 19 | 2026-05-01 to 2026-05-12 | `20260501_194330_gp_CogcrEXA.jpg` |
+| `engine_bay` | `front_support_radiator_pickups_context` | 2 | 2026-05-12 | `20260512_073210_gp_zP427O2A.jpg` |
 | `engine_bay` | `replacement_pipe_hose_sample_sorting` | 7 | 2026-05-02 | `20260502_005740_gp_Qiat03EQ.jpg` |
 | `interior_cabin` | `cabin_overview` | 16 | 2026-03-17 | `20260317_165113.jpg` |
 | `interior_cabin` | `cabin_view_through_glass` | 2 | 2026-03-29 | `20260329_122855.jpg` |
@@ -93,6 +93,7 @@
 | `interior_cabin` | `dashboard_switch_and_control_hardware` | 3 | 2026-04-21 | `20260421_192813_gp_0jvYAo8g.jpg` |
 | `interior_cabin` | `driver_footwell_firewall_and_wiring` | 1 | 2026-03-21 | `20260321_235600.jpg` |
 | `interior_cabin` | `floor_pan_and_firewall` | 7 | 2026-03-21 | `20260321_235436.jpg` |
+| `interior_cabin` | `floor_pan_rust_zones` | 1 | 2026-05-12 | `20260512_073141_gp_xzy6KAzg.jpg` |
 | `interior_cabin` | `front_door_card` | 2 | 2026-03-17 | `20260317_165203.jpg` |
 | `procurement_inventory` | `fuse_distribution_and_power_hardware` | 14 | 2026-04-11 | `20260411_065030.jpg` |
 | `procurement_inventory` | `fuse_distribution_and_wiring` | 2 | 2026-04-05 | `20260405_010322.jpg` |
