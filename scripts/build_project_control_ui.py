@@ -34,6 +34,7 @@ BODY_MOUNT_RELEASE_ACTIONS_PATH = MANUAL_DIR / "body_mount_release_actions.csv"
 BODY_MOUNT_STATION_CLOSURE_PATH = MANUAL_DIR / "body_mount_station_closure_sheet.csv"
 BRAKE_SYSTEM_REQUIREMENTS_PATH = MANUAL_DIR / "brake_system_requirements.csv"
 FABRICATION_HANDOFF_REQUIREMENTS_PATH = MANUAL_DIR / "fabrication_handoff_requirements.csv"
+FABRICATION_RAW_MATERIAL_ESTIMATES_PATH = MANUAL_DIR / "fabrication_raw_material_estimates.csv"
 CHASSIS_BRACKET_ANALYSIS_REGISTER_PATH = MANUAL_DIR / "chassis_bracket_analysis_register_20260508.csv"
 EXPENSES_PATH = MANUAL_DIR / "expenses.csv"
 EXPENSES_RECONCILIATION_PATH = MANUAL_DIR / "j40_costs_expenses_reconciliation.csv"
@@ -80,7 +81,6 @@ PRIMARY_WORKSTREAM_IDS: tuple[str, ...] = (
     "chassis_rubbers",
     "electrical_reset",
     "fabrication_handoff",
-    "local_market_procurement",
     "interior_controls",
     "mechanical_baseline",
     "replacement_pipes",
@@ -97,7 +97,6 @@ WORKSTREAM_TITLE_OVERRIDES: dict[str, str] = {
     "fabrication_handoff": "Fabrication",
     "interior_controls": "Dashboard",
     "interior_weatherproofing": "Interior",
-    "local_market_procurement": "Local Market",
     "paint_refinish": "Paint",
     "replacement_pipes": "Replacement Pipes",
     "eps_vitz_upgrade": "Steering (EPS)",
@@ -275,28 +274,7 @@ WORKSTREAM_IMAGE_PROFILES: dict[str, dict[str, set[str]]] = {
     "fabrication_handoff": {
         "component_groups": {"procurement_inventory"},
         "stages": {"procurement_reconciliation"},
-        "keywords": {"fabrication", "rubber", "body_mount", "relay", "fuse", "midi", "wiring", "sample"},
-    },
-    "local_market_procurement": {
-        "component_groups": {"procurement_inventory"},
-        "stages": {"procurement_reconciliation"},
-        "keywords": {
-            "local",
-            "market",
-            "scout",
-            "bilal",
-            "ganj",
-            "timber",
-            "wood",
-            "hardwood",
-            "cribbing",
-            "toolbench",
-            "drill",
-            "vice",
-            "fuse",
-            "rubber",
-            "hardware",
-        },
+        "keywords": {"fabrication", "relay", "fuse", "midi", "wiring", "battery", "carrier", "mount", "cribbing"},
     },
     "mechanical_baseline": {
         "component_groups": {"engine_bay", "chassis_underside"},
@@ -362,7 +340,6 @@ WORKSTREAM_MIN_IMAGE_SCORE: dict[str, int] = {
     "chassis_fixing": 20,
     "chassis_rubbers": 18,
     "fabrication_handoff": 24,
-    "local_market_procurement": 18,
     "body_chassis": 18,
     "paint_refinish": 18,
     "mechanical_baseline": 18,
@@ -384,7 +361,6 @@ WORKSTREAM_MIN_KEYWORD_HITS: dict[str, int] = {
     "chassis_rubbers": 1,
     "electrical_reset": 1,
     "fabrication_handoff": 1,
-    "local_market_procurement": 1,
     "mechanical_baseline": 2,
     "replacement_pipes": 1,
     "brake_system": 2,
@@ -611,15 +587,9 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
     ],
     "fabrication_handoff": [
         ("Publish package links in the UI", "Keep the fabrication index, PDFs, DXFs, SVGs, cut lists, and inspection sheets visible from the dashboard."),
-        ("Send rubber recreation Rev A for quote/first article", "Use the rubber package but keep final production blocked by measurement closure."),
+        ("Keep rubber packages in Chassis Rubbers", "Do not duplicate Longman/body-mount rubber rows in Fabrication; link to Chassis Rubbers when needed."),
         ("Send current electrical fabrication packages", "Track the three electrical requirements: electrical modules Rev A, MIDI plate Rev C, and relay mount Rev C."),
         ("Close first-article inspection", "Accept parts only after dimensional, material, fit, and release-status checks are recorded."),
-    ],
-    "local_market_procurement": [
-        ("Run the short market list", "Use the local market workstream as the one place for Bilal Ganj, timber, tool, fastener, rubber, and auto-electrician asks."),
-        ("Buy or quote hardwood cribbing", "Source the 8 rectangular hardwood blocks and 4 wedge chocks from the timber merchant before suspension/brake work."),
-        ("Capture quote evidence", "Record seller, price, photos, material claim, and reject notes before leaving the shop."),
-        ("Update procurement rows", "Mark each local item bought, quoted, rejected, or deferred so it does not duplicate another workstream."),
     ],
     "mechanical_baseline": [
         ("Execute must-replace service pack", "Complete fluids, filters, ignition and cooling consumables on stripped access."),
@@ -1141,12 +1111,13 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "instruction": "Use the drawing packages for the relay and MIDI mounts instead of improvising bracket shapes during wiring.",
                 "process_steps": [
                     "Use docs/fabrication-handoff-index.md as the shop send-out index for electrical fabrication files.",
-                    "Use data/manual/fabrication/relay_mount_rev_c/ for the current relay carrier and rear guard DXF/SVG/PDF package.",
+                    "Use data/manual/fabrication/battery_power_carrier_mount_rev_a/ for the current compact chassis-mounted battery stand and rail/tab power carrier package.",
                     "Use data/manual/fabrication/midi5_plate_mount_rev_c/ for the current 5-way MIDI holder plate and insulated subplate package.",
-                    "Use docs/front-engine-bay-mounting-fabrication-plan-20260508.md for the site-measurement battery-side carrier that will mount the MIDI plate and battery master cutoff.",
+                    "Keep data/manual/fabrication/relay_mount_rev_c/ as the fallback relay-only carrier if a split layout is deliberately approved.",
+                    "Mock compact battery-side holder cards from cardboard: Relay Rev C folded tray 320 x 220, MIDI Rev C open plate 190 x 150, cutoff tab 170 x 110, cable lugs, and depth blocks before final metal cutting.",
                     "Keep data/manual/fabrication/electrical_modules_rev_a/ as the reference/provisional combined-module package only if that older route is reopened.",
                     "Send the package PDFs for drawing review and the DXFs for cutting; keep SVGs with the job for visual checking.",
-                    "Trial-fit the fabricated pieces, spacers, relay box, MIDI holders, battery-side carrier, cutoff, and cable exits before wrapping or tying down the under-bonnet loom.",
+                    "Trial-fit the single chassis pickup plate, upright bridge, compact tray, front service rail/tabs, folded relay tray, MIDI plate/subplate, cutoff switch, and cable exits before wrapping or tying down the under-bonnet loom.",
                 ],
                 "tools": ["Drill", "Files", "Deburring tool", "Rivet nut tool or spanners", "Calipers"],
                 "supplies": ["Electrical fabrication DXF/PDF pack", "3.0 mm 5052-H32 aluminium", "HDPE/ABS/G10 sheet", "Spacers", "P-clips", "Fasteners"],
@@ -1191,7 +1162,7 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
     },
     "fabrication_handoff": {
         "title": "Fabrication Handoff",
-        "summary": "Controlled send-out, quote, first-article, and release tracking for DXF/SVG/PDF fabrication packages.",
+        "summary": "Controlled send-out, quote, first-article, and release tracking for non-rubber DXF/SVG/PDF fabrication packages.",
         "default_tools": ["Calipers", "Printer or PDF viewer", "CAD/DXF viewer", "Marker", "Camera"],
         "default_supplies": ["Fabrication handoff index", "Package PDFs", "DXF files", "SVG visual references", "Inspection checklist"],
         "subtasks": [
@@ -1203,6 +1174,7 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "process_steps": [
                     "Use docs/fabrication-handoff-index.md as the human send-out index.",
                     "Use data/manual/fabrication_handoff_requirements.csv as the UI-facing package requirement list.",
+                    "Keep chassis/body rubber order rows in the Chassis Rubbers workstream; Fabrication only links non-rubber packages.",
                     "Confirm every current package has a README, primary PDF, and all expected DXF/SVG files.",
                     "Mark superseded packages as reference only instead of deleting them.",
                     "Use the CloudFront dashboard links when sharing files externally.",
@@ -1213,24 +1185,6 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "image_tokens": ["fabrication", "drawing", "dxf", "package"],
             },
             {
-                "title": "Release Rubber Package For Quote",
-                "priority": "P0",
-                "remaining": "quote and first article",
-                "instruction": "Send the rubber Rev A package for quote and first article while keeping final production holds explicit.",
-                "process_steps": [
-                    "Send data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf for drawing review.",
-                    "Send all rubber Rev A DXFs and matching SVG visual references.",
-                    "Include fabricator_cut_list.csv and inspection_checklist.csv with the job.",
-                    "Tell the shop that circular cushions, cup blanks, and oval pad are quote/first-article ready.",
-                    "Tell the shop that strip files are quote/template blanks and need physical tracing before production cutting.",
-                    "Keep final batch blocked until data/manual/rubber_recreation_measurement_closure.csv is completed.",
-                ],
-                "tools": ["Calipers", "DXF viewer", "Camera"],
-                "supplies": ["Rubber Rev A PDF", "Rubber Rev A DXFs", "Fabricator cut list", "Inspection checklist"],
-                "hold_point": "Final rubber batch cannot be approved from photo-derived dimensions alone.",
-                "image_tokens": ["rubber", "body_mount", "fabrication", "dxf"],
-            },
-            {
                 "title": "Release Electrical Fabrication Packages",
                 "priority": "P0",
                 "remaining": "before permanent under-bonnet loom routing",
@@ -1238,14 +1192,14 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "process_steps": [
                     "Use data/manual/fabrication/electrical_modules_rev_a/ as the reference/provisional combined-module requirement.",
                     "Use data/manual/fabrication/midi5_plate_mount_rev_c/ as the current MIDI holder plate requirement.",
-                    "Use docs/front-engine-bay-mounting-fabrication-plan-20260508.md as the battery-side MIDI/cutoff vehicle-carrier site-measurement requirement.",
-                    "Use data/manual/fabrication/relay_mount_rev_c/ as the current relay carrier and rear-guard requirement.",
+                    "Use data/manual/fabrication/battery_power_carrier_mount_rev_a/ as the current compact chassis-mounted battery stand and rail/tab power carrier requirement.",
+                    "Use data/manual/fabrication/relay_mount_rev_c/ only as the fallback standalone relay carrier route.",
                     "Send each package PDF for review and its DXFs for cutting.",
                     "Keep SVGs with the job for visual checking.",
-                    "Trial-fit electrical parts with spacers, cable exits, relay box, MIDI holders, battery-side carrier, and cutoff before tying down the loom.",
+                    "Trial-fit electrical parts with the single chassis pickup plate, upright bridge, spacers, cable exits, known relay base, MIDI base/subplate, integrated power carrier, and cutoff switch before tying down the loom.",
                 ],
                 "tools": ["DXF viewer", "Drill", "Files", "Deburring tool", "Calipers"],
-                "supplies": ["Electrical module PDF/DXFs", "MIDI plate PDF/DXFs", "Relay mount PDF/DXFs", "Aluminium sheet", "Insulator sheet", "Spacers"],
+                "supplies": ["Battery power carrier PDF/DXFs", "MIDI plate PDF/DXFs", "Fallback relay mount PDF/DXFs", "Aluminium sheet", "Insulator sheet", "Spacers"],
                 "hold_point": "Final loom routing waits until relay, MIDI, and battery-side cutoff carrier mounts fit without forcing cable bend radius or leaving live studs exposed.",
                 "image_tokens": ["relay", "fuse", "midi", "fabrication", "battery"],
             },
@@ -1258,70 +1212,13 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                     "Check material and thickness against the package README.",
                     "Measure critical dimensions against the package PDF.",
                     "Deburr and corrosion-protect metal parts after forming where required.",
-                    "Dry-fit rubber stacks, relay mount, and MIDI mount before batch approval.",
+                    "Dry-fit relay mounts, MIDI mounts, battery-side carrier parts, and cribbing pieces before batch approval.",
                     "Photograph accepted first articles and record any rework before batch manufacture.",
                 ],
                 "tools": ["Calipers", "Straight edge", "Camera", "Deburring tool"],
                 "supplies": ["Inspection checklist", "Primer or plating plan", "Fasteners", "Spacers"],
                 "hold_point": "Fabrication closes only after first articles pass dimensional, material, and fit checks.",
-                "image_tokens": ["fabrication", "inspection", "rubber", "relay", "midi"],
-            },
-        ],
-    },
-    "local_market_procurement": {
-        "title": "Local Market Procurement",
-        "summary": "One in-person market lane for local timber, tools, compact electrical, rubber, hardware, and sample-matched parts.",
-        "default_tools": ["Phone/camera", "Tape measure", "Notebook", "Marker", "Sample parts or printed sheet"],
-        "default_supplies": ["Local market list", "Seller contact log", "Zip bags or labels"],
-        "subtasks": [
-            {
-                "title": "Run Short Market List",
-                "priority": "P0",
-                "remaining": "each market pass",
-                "instruction": "Use docs/local-market-procurement-workstream.md as the shop-facing list.",
-                "process_steps": [
-                    "Group stops by lane: auto-electrician, rubber, fastener, timber, tool, and machine shop.",
-                    "Ask from the short list first; keep detailed specs as backup links only.",
-                    "Record seller, price, availability, and return terms for each open line.",
-                    "Photograph the item or quote before buying or rejecting it.",
-                ],
-                "tools": ["Phone/camera", "Notebook", "Tape measure"],
-                "supplies": ["Local market workstream", "Sample parts", "Printed short list"],
-                "hold_point": "No local item closes without price, seller, and photo evidence.",
-                "image_tokens": ["market", "procurement", "seller", "shop", "parts"],
-            },
-            {
-                "title": "Buy Hardwood Cribbing Set",
-                "priority": "P0",
-                "remaining": "before suspension/brake work starts",
-                "instruction": "Buy the wood set through the timber lane, not as a separate fabrication release.",
-                "process_steps": [
-                    "Ask for 8 dry hardwood blocks at 300 x 150 x 75 mm.",
-                    "Ask for 4 hardwood wedge chocks at 200 x 100 mm, 75 mm rear, 25 mm nose.",
-                    "Use docs/suspension-wood-cribbing-merchant-spec.md if the merchant needs the drawing/spec.",
-                    "Reject wet, soft, board material, cracked pieces, rocking faces, and feather-edge wedges.",
-                    "Record wood type, price, merchant, and photos of the full set.",
-                ],
-                "tools": ["Tape measure", "Straight edge", "Camera"],
-                "supplies": ["Wood cribbing merchant spec", "Seasoned hardwood"],
-                "hold_point": "Home suspension/brake work waits until rated stands and this supplemental wood set are present.",
-                "image_tokens": ["wood", "hardwood", "cribbing", "wedge", "timber"],
-            },
-            {
-                "title": "Close Market Results",
-                "priority": "P1",
-                "remaining": "after market pass",
-                "instruction": "Turn each shop visit into a buy, quote, reject, or defer status.",
-                "process_steps": [
-                    "Update procurement rows with bought, quoted, rejected, or deferred.",
-                    "Attach photos and seller notes to the relevant part/tool line.",
-                    "Keep rejected candidates visible with the reason so they are not re-bought.",
-                    "Escalate anything that needs workshop confirmation before payment.",
-                ],
-                "tools": ["Dashboard", "Camera", "Notebook"],
-                "supplies": ["Receipts or quote notes", "Seller contact log"],
-                "hold_point": "The market pass is not closed while any result is only remembered informally.",
-                "image_tokens": ["receipt", "quote", "seller", "procurement", "parts"],
+                "image_tokens": ["fabrication", "inspection", "relay", "midi", "battery"],
             },
         ],
     },
@@ -2083,8 +1980,69 @@ FABRICATION_DESIGN_LINKS_BY_PACKAGE: dict[str, list[tuple[str, str]]] = {
         ("data/manual/fabrication/midi5_plate_mount_rev_c/midi5_mount_plate_rev_c.dxf", "MIDI mount plate DXF"),
     ],
     "battery_power_carrier_mount_rev_a": [
-        ("docs/front-engine-bay-mounting-fabrication-plan-20260508.md", "Battery power carrier site-measurement plan"),
-        ("data/manual/fabrication/midi5_plate_mount_rev_c/README.md", "Related MIDI Rev C plate package"),
+        ("deliverables/fabrication_packages/battery_power_carrier_mount_rev_a.zip", "Battery power carrier package ZIP"),
+        ("data/manual/fabrication/battery_power_carrier_mount_rev_a/j40_battery_power_carrier_mount_rev_a_dimension_sheet.pdf", "Battery power carrier dimension sheet PDF"),
+        ("data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_carrier_mount_rev_a_assembled_3d_visualisation.html", "Assembled 3D visualisation HTML"),
+        ("data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_carrier_mount_rev_a_assembled_3d_visualisation.svg", "Assembled 3D visualisation SVG"),
+        ("data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_carrier_mount_rev_a_3d_visualisation.html", "Interactive 3D visualisation HTML"),
+        ("data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_carrier_mount_rev_a_3d_visualisation.svg", "Static 3D visualisation SVG"),
+        ("data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_compact_front_service_rail_rev_b.dxf", "Compact front service rail DXF"),
+        ("data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_stand_compact_top_tray_rev_b.dxf", "Compact battery stand top tray DXF"),
+        ("data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_stand_compact_single_chassis_pickup_rev_b.dxf", "Compact single chassis pickup DXF"),
+        ("data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_stand_compact_single_mount_upright_rev_b.dxf", "Compact single mount upright DXF"),
+        ("data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_stand_compact_hold_down_crossbar_rev_b.dxf", "Compact battery hold-down crossbar DXF"),
+        ("data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_compact_cutoff_tab_rev_b.dxf", "Compact cutoff tab DXF"),
+        ("data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv", "Battery power carrier cut list CSV"),
+        ("data/manual/fabrication/battery_power_carrier_mount_rev_a/inspection_checklist.csv", "Battery power carrier inspection checklist CSV"),
+        ("data/manual/fabrication/battery_power_carrier_mount_rev_a/component_layout.csv", "Battery power carrier component layout CSV"),
+        ("data/manual/fabrication/battery_power_carrier_mount_rev_a/cavity_mapping_plan.csv", "Battery cavity mapping plan CSV"),
+        ("docs/front-engine-bay-mounting-fabrication-plan-20260508.md", "Front engine-bay mounting plan"),
+        ("data/manual/fabrication/battery_power_carrier_mount_rev_a/README.md", "Battery power carrier README"),
+    ],
+    "front_radiator_two_side_retention_rev_a": [
+        ("deliverables/fabrication_packages/front_radiator_two_side_retention_rev_a.zip", "Radiator bracket package ZIP"),
+        (
+            "data/manual/fabrication/front_radiator_two_side_retention_rev_a/j40_front_radiator_two_side_retention_rev_a_dimension_sheet.pdf",
+            "Radiator bracket dimension sheet PDF",
+        ),
+        (
+            "data/manual/fabrication/front_radiator_two_side_retention_rev_a/front_radiator_two_side_retention_rev_a_assembled_3d_visualisation.html",
+            "Assembled 3D visualisation HTML",
+        ),
+        (
+            "data/manual/fabrication/front_radiator_two_side_retention_rev_a/front_radiator_two_side_retention_rev_a_assembled_3d_visualisation.svg",
+            "Assembled 3D visualisation SVG",
+        ),
+        (
+            "data/manual/fabrication/front_radiator_two_side_retention_rev_a/front_radiator_two_side_retention_rev_a_3d_visualisation.html",
+            "Interactive 3D visualisation HTML",
+        ),
+        (
+            "data/manual/fabrication/front_radiator_two_side_retention_rev_a/front_radiator_two_side_retention_rev_a_3d_visualisation.svg",
+            "Static 3D visualisation SVG",
+        ),
+        (
+            "data/manual/fabrication/front_radiator_two_side_retention_rev_a/front_radiator_saddle_right_angle_post_rev_a.dxf",
+            "Saddle right-angle radiator post DXF",
+        ),
+        (
+            "data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
+            "Radiator bracket cut list CSV",
+        ),
+        (
+            "data/manual/fabrication/front_radiator_two_side_retention_rev_a/inspection_checklist.csv",
+            "Radiator bracket inspection checklist CSV",
+        ),
+        (
+            "data/manual/fabrication/front_radiator_two_side_retention_rev_a/measurement_basis.csv",
+            "Radiator bracket measurement basis CSV",
+        ),
+        ("docs/front-engine-bay-mounting-fabrication-plan-20260508.md", "Front engine-bay mounting plan"),
+        ("data/manual/chassis_bracket_analysis_register_20260508.csv", "Bracket analysis register CSV"),
+        (
+            "data/manual/fabrication/front_radiator_two_side_retention_rev_a/README.md",
+            "Radiator bracket README",
+        ),
     ],
     "relay_mount_rev_c": [
         ("deliverables/fabrication_packages/relay_mount_rev_c.zip", "Relay mount package ZIP"),
@@ -2107,6 +2065,88 @@ FABRICATION_DESIGN_ENTRY_PACKAGES: dict[str, tuple[str, ...]] = {
     "part_body_mount_shim_pack": ("rubber_recreation_rev_a",),
     "part_suspension_wooden_cribbing_blocks": ("suspension_wood_cribbing_rev_a",),
     "service_local_3d_printing_fabrication_prototypes": ("midi5_plate_mount_rev_c",),
+    "front_radiator_two_side_retention_fabrication_20260508": ("front_radiator_two_side_retention_rev_a",),
+    "battery_power_carrier_mount_fabrication_20260508": ("battery_power_carrier_mount_rev_a",),
+}
+
+
+FABRICATION_PACKAGE_VISUAL_LINKS: dict[str, list[tuple[str, str]]] = {
+    "suspension_wood_cribbing_rev_a": [
+        (
+            "data/manual/fabrication/suspension_wood_cribbing_rev_a/suspension_wood_cribbing_rev_a_3d_visualisation.html",
+            "Interactive 3D visualisation",
+        ),
+        (
+            "data/manual/fabrication/suspension_wood_cribbing_rev_a/suspension_wood_cribbing_rev_a_3d_visualisation.svg",
+            "Static 3D visualisation",
+        ),
+    ],
+    "electrical_modules_rev_a": [
+        (
+            "data/manual/fabrication/electrical_modules_rev_a/electrical_modules_rev_a_3d_visualisation.html",
+            "Interactive 3D visualisation",
+        ),
+        (
+            "data/manual/fabrication/electrical_modules_rev_a/electrical_modules_rev_a_3d_visualisation.svg",
+            "Static 3D visualisation",
+        ),
+    ],
+    "midi5_plate_mount_rev_c": [
+        (
+            "data/manual/fabrication/midi5_plate_mount_rev_c/midi5_plate_mount_rev_c_3d_visualisation.html",
+            "Interactive 3D visualisation",
+        ),
+        (
+            "data/manual/fabrication/midi5_plate_mount_rev_c/midi5_plate_mount_rev_c_3d_visualisation.svg",
+            "Static 3D visualisation",
+        ),
+    ],
+    "battery_power_carrier_mount_rev_a": [
+        (
+            "data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_carrier_mount_rev_a_assembled_3d_visualisation.html",
+            "Assembled 3D visualisation",
+        ),
+        (
+            "data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_carrier_mount_rev_a_assembled_3d_visualisation.svg",
+            "Assembled static 3D visualisation",
+        ),
+        (
+            "data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_carrier_mount_rev_a_3d_visualisation.html",
+            "Fabrication-read 3D visualisation",
+        ),
+        (
+            "data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_carrier_mount_rev_a_3d_visualisation.svg",
+            "Fabrication-read static 3D visualisation",
+        ),
+    ],
+    "front_radiator_two_side_retention_rev_a": [
+        (
+            "data/manual/fabrication/front_radiator_two_side_retention_rev_a/front_radiator_two_side_retention_rev_a_assembled_3d_visualisation.html",
+            "Assembled 3D visualisation",
+        ),
+        (
+            "data/manual/fabrication/front_radiator_two_side_retention_rev_a/front_radiator_two_side_retention_rev_a_assembled_3d_visualisation.svg",
+            "Assembled static 3D visualisation",
+        ),
+        (
+            "data/manual/fabrication/front_radiator_two_side_retention_rev_a/front_radiator_two_side_retention_rev_a_3d_visualisation.html",
+            "Fabrication-read 3D visualisation",
+        ),
+        (
+            "data/manual/fabrication/front_radiator_two_side_retention_rev_a/front_radiator_two_side_retention_rev_a_3d_visualisation.svg",
+            "Fabrication-read static 3D visualisation",
+        ),
+    ],
+    "relay_mount_rev_c": [
+        (
+            "data/manual/fabrication/relay_mount_rev_c/relay_mount_rev_c_3d_visualisation.html",
+            "Interactive 3D visualisation",
+        ),
+        (
+            "data/manual/fabrication/relay_mount_rev_c/relay_mount_rev_c_3d_visualisation.svg",
+            "Static 3D visualisation",
+        ),
+    ],
 }
 
 
@@ -2158,6 +2198,8 @@ def fabrication_design_links_for_part(row: dict[str, Any]) -> list[dict[str, Any
             package_ids.append("suspension_wood_cribbing_rev_a")
         if "midi" in blob and any(token in blob for token in ("subplate", "plate", "fabrication", "3d printing", "cnc")):
             package_ids.append("midi5_plate_mount_rev_c")
+        if any(token in blob for token in ("battery power carrier", "power carrier", "cutoff carrier")):
+            package_ids.append("battery_power_carrier_mount_rev_a")
         if "relay" in blob and any(token in blob for token in ("carrier", "guard", "mount", "fabrication")):
             package_ids.append("relay_mount_rev_c")
 
@@ -2892,11 +2934,13 @@ def fabrication_package_payload(row: dict[str, str]) -> dict[str, Any]:
         ("inspection_checklist", "Inspection checklist"),
         ("source_spec", "Source spec"),
     ):
-        repo_path = clean(row.get(field))
-        link = file_link(repo_path, label)
-        if link is not None:
-            primary_links.append(link)
-            primary_repo_paths.append(repo_path)
+        repo_paths = split_pipe(row.get(field, ""))
+        for repo_path in repo_paths:
+            link_label = label if len(repo_paths) == 1 else f"{label}: {Path(repo_path).name}"
+            link = file_link(repo_path, link_label)
+            if link is not None:
+                primary_links.append(link)
+                primary_repo_paths.append(repo_path)
     for filename, label in (
         ("machine_definitions.csv", "Machine CSV"),
         ("machine_definitions.json", "Machine JSON"),
@@ -2917,6 +2961,13 @@ def fabrication_package_payload(row: dict[str, str]) -> dict[str, Any]:
             if link is not None:
                 primary_links.append(link)
                 primary_repo_paths.append(repo_path)
+    visual_repo_paths: list[str] = []
+    visual_links: list[dict[str, str]] = []
+    for repo_path, label in FABRICATION_PACKAGE_VISUAL_LINKS.get(package_id, []):
+        link = file_link(repo_path, label)
+        if link is not None:
+            visual_links.append(link)
+            visual_repo_paths.append(repo_path)
 
     dxf_repo_paths = [f"{package_dir.rstrip('/')}/{filename}" for filename in split_pipe(row.get("dxf_files", ""))]
     dxf_links = [
@@ -2930,7 +2981,11 @@ def fabrication_package_payload(row: dict[str, str]) -> dict[str, Any]:
         for link in (file_link(path, Path(path).name) for path in svg_repo_paths)
         if link is not None
     ]
-    archive_link = package_archive_link(package_id, package_dir, [*primary_repo_paths, *dxf_repo_paths, *svg_repo_paths])
+    archive_link = package_archive_link(
+        package_id,
+        package_dir,
+        [*primary_repo_paths, *visual_repo_paths, *dxf_repo_paths, *svg_repo_paths],
+    )
 
     return {
         "requirement_id": clean(row.get("requirement_id")),
@@ -2942,6 +2997,7 @@ def fabrication_package_payload(row: dict[str, str]) -> dict[str, Any]:
         "notes": clean(row.get("notes")),
         "package_dir": package_dir,
         "primary_links": primary_links,
+        "visual_links": visual_links,
         "dxf_links": dxf_links,
         "svg_links": svg_links,
         "archive_link": archive_link,
@@ -2954,9 +3010,20 @@ def fabrication_packages_for_workstream(
     fabrication_rows: list[dict[str, str]],
 ) -> list[dict[str, Any]]:
     if ws_id == "fabrication_handoff":
-        selected_rows = fabrication_rows
+        selected_rows = [
+            row
+            for row in fabrication_rows
+            if clean(row.get("system")) != "chassis_rubbers"
+        ]
     elif ws_id == "electrical_reset":
-        selected_rows = [row for row in fabrication_rows if clean(row.get("system")) == "electrical_reset"]
+        selected_rows = [
+            row
+            for row in fabrication_rows
+            if clean(row.get("system")) == "electrical_reset"
+            or clean(row.get("package_id")) == "battery_power_carrier_mount_rev_a"
+        ]
+    elif ws_id == "chassis_fixing":
+        selected_rows = []
     elif ws_id == "chassis_rubbers":
         selected_rows = [row for row in fabrication_rows if clean(row.get("system")) == "chassis_rubbers"]
     elif ws_id == "suspension_upgrade":
@@ -6753,7 +6820,7 @@ def build_workstream_subtask_groups(
     if workstream_id == "chassis_fixing":
         return [build_chassis_before_primer_subtask_group(photo_rows)]
 
-    image_pool = evidence_images or fallback_workstream_images_from_photo_rows(workstream_id, photo_rows)
+    image_pool = [] if workstream_id == "fabrication_handoff" else evidence_images or fallback_workstream_images_from_photo_rows(workstream_id, photo_rows)
     if workstream_id == "eps_vitz_upgrade":
         image_pool = dedupe_payload_images(image_pool + eps_workstream_reference_images())
     group = build_standard_workstream_subtask_group(
@@ -8902,6 +8969,7 @@ def build_dashboard_data() -> dict[str, Any]:
     body_mount_station_closure_rows = load_csv_optional(BODY_MOUNT_STATION_CLOSURE_PATH)
     brake_system_requirement_rows = load_csv_optional(BRAKE_SYSTEM_REQUIREMENTS_PATH)
     fabrication_requirement_rows = load_csv_optional(FABRICATION_HANDOFF_REQUIREMENTS_PATH)
+    fabrication_raw_material_rows = load_csv_optional(FABRICATION_RAW_MATERIAL_ESTIMATES_PATH)
     chassis_bracket_register_rows = load_csv_optional(CHASSIS_BRACKET_ANALYSIS_REGISTER_PATH)
     paint_refinish_queue_rows = load_csv_optional(PAINT_REFINISH_MEDIA_QUEUE_PATH)
     paint_refinish_whatsapp_rows = load_csv_optional(PAINT_REFINISH_WHATSAPP_MEDIA_QUEUE_PATH)
@@ -9032,6 +9100,9 @@ def build_dashboard_data() -> dict[str, Any]:
         if ws_id == "eps_vitz_upgrade":
             images = dedupe_payload_images(images + eps_workstream_reference_images())
         evidence_sets = evidence["evidence_sets"]
+        if ws_id == "fabrication_handoff":
+            images = []
+            evidence_sets = []
         parts_for_workstream = part_rows_by_workstream.get(ws_id, [])
         involved_parts_rows = sorted(
             [workstream_part_row_payload(part_row, fastener_estimate_lookup) for part_row in parts_for_workstream],
@@ -9545,6 +9616,7 @@ def build_dashboard_data() -> dict[str, Any]:
             "photo_inventory": "data/manual/photo_inventory.csv",
             "brake_system_requirements": "data/manual/brake_system_requirements.csv",
             "fabrication_handoff_requirements": "data/manual/fabrication_handoff_requirements.csv",
+            "fabrication_raw_material_estimates": "data/manual/fabrication_raw_material_estimates.csv",
             "chassis_bracket_analysis_register": "data/manual/chassis_bracket_analysis_register_20260508.csv",
             "chassis_rubber_requirements": "data/manual/chassis_rubber_requirements.csv",
             "rubber_hose_component_audit": "data/manual/rubber_hose_component_audit.csv",
@@ -9597,6 +9669,21 @@ def build_dashboard_data() -> dict[str, Any]:
             "other_build_manual_reference_images": other_builds_reference["summary"]["manual_reference_images"],
         },
         "workstreams": workstreams,
+        "fabrication_raw_material_estimates": [
+            {
+                "material_id": clean(row.get("material_id")),
+                "workstream": clean(row.get("workstream")),
+                "package_or_scope": clean(row.get("package_or_scope")),
+                "procurement_entry_id": clean(row.get("procurement_entry_id")),
+                "raw_material": clean(row.get("raw_material")),
+                "estimate_to_buy": clean(row.get("estimate_to_buy")),
+                "stock_basis": clean(row.get("stock_basis")),
+                "covered_fabrication": clean(row.get("covered_fabrication")),
+                "release_status": clean(row.get("release_status")),
+                "notes": clean(row.get("notes")),
+            }
+            for row in fabrication_raw_material_rows
+        ],
         "project_steps": project_steps,
         "parts": {
             "steps": parts_steps,

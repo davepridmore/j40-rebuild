@@ -12,6 +12,8 @@ All dimensions are in millimetres.
 
 Send the `DXF` files for cutting, the matching `SVG` files for human review, and the PDF sheet for non-CAD review.
 
+For assembly review, open `electrical_modules_rev_a_3d_visualisation.html`. The matching static fallback is `electrical_modules_rev_a_3d_visualisation.svg`.
+
 ## Design intent
 
 - `relay_module_tray_rev_a` is the relay-box shelf ahead of the battery.

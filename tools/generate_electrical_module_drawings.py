@@ -89,16 +89,18 @@ def svg_line(line: Line) -> str:
 def write_svg(drawing: Drawing) -> None:
     margin = 25
     width = drawing.width + margin * 2
-    height = drawing.height + margin * 2 + 55
+    note_line_height = 12
+    note_y = drawing.height + margin * 2 + 20
+    note_block_height = 30 + max(1, len(drawing.notes)) * note_line_height
+    height = drawing.height + margin * 2 + note_block_height
     poly_elems = "\n  ".join(svg_poly(p) for p in drawing.cut_polys)
     cut_elems = "\n  ".join(svg_rect(r, "CUT") for r in drawing.cut_rects)
     circle_elems = "\n  ".join(svg_circle(c) for c in drawing.cut_circles)
     bend_elems = "\n  ".join(svg_line(b) for b in drawing.bend_lines)
-    note_y = drawing.height + margin * 2 + 20
     notes = []
     for idx, note in enumerate(drawing.notes):
         notes.append(
-            f'<text x="{margin}" y="{note_y + idx * 12}" class="note">{note}</text>'
+            f'<text x="{margin}" y="{note_y + idx * note_line_height}" class="note">{note}</text>'
         )
     title = f"{drawing.name}  |  units: mm"
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{mm(width)}mm" height="{mm(height)}mm" viewBox="0 0 {mm(width)} {mm(height)}">

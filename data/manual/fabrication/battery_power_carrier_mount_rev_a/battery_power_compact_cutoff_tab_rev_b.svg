@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220mm" height="226mm" viewBox="0 0 220 226">
+  <style>
+    .cut { fill: none; stroke: #111; stroke-width: 0.6; }
+    .aux { fill: none; stroke: #666; stroke-width: 0.35; }
+    .bend { stroke: #0b5fff; stroke-width: 0.4; stroke-dasharray: 3 2; }
+    .title { font: 700 9px monospace; fill: #111; }
+    .note { font: 6px monospace; fill: #111; }
+  </style>
+  <text x="25" y="14" class="title">battery_power_compact_cutoff_tab_rev_b  |  units: mm</text>
+  <g transform="translate(25,25)">
+  <polygon class="cut" points="0,0 170,0 170,110 0,110" />
+  <polygon class="cut" points="44,53 44.44,48.51 45.75,44.2 47.88,40.22 50.74,36.74 54.22,33.88 58.2,31.75 62.51,30.44 67,30 103,30 107.49,30.44 111.8,31.75 115.78,33.88 119.26,36.74 122.12,40.22 124.25,44.2 125.56,48.51 126,53 126,53 125.56,57.49 124.25,61.8 122.12,65.78 119.26,69.26 115.78,72.12 111.8,74.25 107.49,75.56 103,76 67,76 62.51,75.56 58.2,74.25 54.22,72.12 50.74,69.26 47.88,65.78 45.75,61.8 44.44,57.49 44,53" />
+  
+  <circle class="cut" cx="18" cy="16" r="3.25" />
+  <circle class="cut" cx="152" cy="16" r="3.25" />
+  <circle class="cut" cx="18" cy="94" r="3.25" />
+  <circle class="cut" cx="152" cy="94" r="3.25" />
+  
+  </g>
+  <text x="25" y="180" class="note">Compact cutoff tab/guard: 170 x 110 x 2.0-3.0 mm aluminium or plastic; place independently in the most accessible front/top cavity.</text><text x="25" y="192" class="note">Open the switch hole only after the actual switch body, key/knob sweep, terminal studs, and cable-lug depth are measured.</text><text x="25" y="204" class="note">Guard must not trap water, block emergency access, or sit where the bonnet or battery terminal service envelope can contact it.</text>
+</svg>

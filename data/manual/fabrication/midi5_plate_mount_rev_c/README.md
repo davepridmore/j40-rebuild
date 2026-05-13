@@ -13,6 +13,11 @@ Rev C therefore uses:
 1. `midi5_mount_plate_rev_c` - structural aluminium mount plate
 2. `midi5_holder_subplate_rev_c` - non-conductive holder board
 
+## 3D Visualisation
+
+- `midi5_plate_mount_rev_c_3d_visualisation.html` is the interactive browser assembly view.
+- `midi5_plate_mount_rev_c_3d_visualisation.svg` is the static fallback visual.
+
 ## Advantages
 
 - No forced `90 degree` rearward cable exit

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="620" viewBox="0 0 920 620" role="img" aria-labelledby="title desc">
+  <title id="title">Front radiator formed-angle saddle post Rev A 3D visualisation</title>
+  <desc id="desc">Single-piece steel formed-angle post with a top screw point and a bolt-through saddle wrapped over the chassis/front-support section.</desc>
+  <style>
+    .bg { fill: #f5f6f7; }
+    .shadow { fill: #d7dde2; opacity: 0.55; }
+    .chassis { fill: #59636c; stroke: #2b343b; stroke-width: 2; }
+    .bracket { fill: #bfc8d1; stroke: #59636c; stroke-width: 2; }
+    .bracket-side { fill: #93a0aa; stroke: #59636c; stroke-width: 2; }
+    .bolt { fill: #c4a35a; stroke: #6f5d2f; stroke-width: 1.2; }
+    .hole { fill: #f5f6f7; stroke: #59636c; stroke-width: 2; }
+    .label { font: 700 17px Arial, sans-serif; fill: #1d252c; }
+    .small { font: 13px Arial, sans-serif; fill: #54616c; }
+  </style>
+  <rect class="bg" width="920" height="620" />
+  <ellipse class="shadow" cx="470" cy="458" rx="230" ry="48" />
+  <polygon class="chassis" points="390,286 520,326 636,282 506,242" />
+  <polygon class="chassis" points="390,286 520,326 520,430 390,390" />
+  <polygon class="chassis" points="520,326 636,282 636,386 520,430" />
+  <polygon class="bracket" points="430,54 468,66 468,286 430,274" />
+  <polygon class="bracket-side" points="468,66 490,56 490,276 468,286" />
+  <polygon class="bracket-side" points="430,54 292,104 330,116 468,66" />
+  <polygon class="bracket" points="330,116 386,94 490,56 468,66" />
+  <polygon class="bracket-side" points="326,92 364,104 364,126 326,114" />
+  <circle class="hole" cx="319" cy="110" r="8" />
+  <polygon class="bracket-side" points="428,274 520,302 558,290 466,262" />
+  <polygon class="bracket" points="466,262 488,252 574,278 558,290" />
+  <polygon class="bracket-side" points="466,262 558,290 558,314 466,286" />
+  <polygon class="bracket" points="428,274 466,286 466,384 428,372" />
+  <polygon class="bracket" points="558,290 596,302 596,394 558,382" />
+  <line x1="426" y1="360" x2="594" y2="402" stroke="#c4a35a" stroke-width="10" stroke-linecap="round" />
+  <circle class="bolt" cx="426" cy="360" r="8" />
+  <circle class="bolt" cx="594" cy="402" r="8" />
+  <text class="label" x="90" y="82">Right-angle saddle post Rev A</text>
+  <text class="small" x="90" y="111">4 mm formed angle section: 410 mm upright height, 618 mm developed template length.</text>
+  <text class="label" x="244" y="116">Full-depth 90 deg top screw tab</text>
+  <text class="label" x="486" y="168">410 mm formed-angle upright</text>
+  <text class="label" x="590" y="274">Far saddle leg</text>
+  <text class="label" x="330" y="520">Saddle bridge sits over both chassis sides and is through-bolted</text>
+</svg>

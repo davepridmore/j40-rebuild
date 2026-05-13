@@ -1,0 +1,6 @@
+check_id,stage,acceptance
+RAD-001,measured_template_transfer,Existing-side measurement basis is checked against measurement_basis.csv; right-side saddle wrap and top screw transfer are confirmed with cardboard or flat-bar dry-fit photographed with ruler.
+RAD-002,through_bolt,Through-bolt passes through both saddle legs and sound chassis/front-support metal with correct washer/crush-tube/spacer support.
+RAD-003,top_screw,"Top screw, radiator ear, and rubber washer/bush stack fit without pulling the radiator out of plane."
+RAD-004,clearance,"Fan, shroud, belt, upper/lower hose, bonnet close, and radiator service-removal clearance pass after bracket is tightened."
+RAD-005,coating,"Cut edges and drilled holes are deburred, cleaned, primed/top-protected, and do not create a water trap."

@@ -1,0 +1,7 @@
+part_id,drawing,qty,material,thickness_mm,status,notes
+BSTAND-TRAY-001,battery_stand_compact_top_tray_rev_b.dxf,1,mild steel,3.0,prototype_release_mockup_required,Compact 315 x 265 battery tray/deck with battery clamp slots and cable clip holes. Electrical holders mount on separate compact rails/tabs.
+BPCC-FRONT-RAIL-001,battery_power_compact_front_service_rail_rev_b.dxf,1,mild steel,3.0,cavity_map_required,Compact 340 x 90 front service rail for folded Relay Rev C tray or measured front-cavity bracket; replaces the earlier large shared carrier.
+BSTAND-PICKUP-001,battery_stand_compact_single_chassis_pickup_rev_b.dxf,1,mild steel,4.0,site_fit,Compact single vehicle-side chassis pickup plate. Use crush tubes/spacers where required; final slot pitch follows the actual chassis location.
+BSTAND-UPRIGHT-001,battery_stand_compact_single_mount_upright_rev_b.dxf,2 mirrored,mild steel,4.0,site_fit,Compact upright bridge side plates from the single chassis pickup to tray/rail saddle; not a second chassis fixing location.
+BSTAND-HOLD-001,battery_stand_compact_hold_down_crossbar_rev_b.dxf,1,mild steel or stainless,3.0,battery_measurement_hold,Battery hold-down crossbar template; final slot spacing follows actual battery and clamp rod positions.
+BPCC-CUTOFF-TAB-001,battery_power_compact_cutoff_tab_rev_b.dxf,1,aluminium or plastic,2.0-3.0,fit_after_switch_measurement,Compact 170 x 110 tab/knock guard for master cutoff; must not block emergency access.

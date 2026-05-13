@@ -1,6 +1,6 @@
 # Front Engine-Bay Mounting Fabrication Plan - 2026-05-08
 
-This plan splits the vague "missing bracket" concern into concrete front engine-bay fabrication jobs: radiator two-side retention, battery tray support, and a battery-adjacent power carrier for the MIDI fuse plate and battery master cutoff.
+This plan splits the vague "missing bracket" concern into concrete front engine-bay fabrication jobs: radiator two-side retention, battery tray support, and a chassis-mounted integrated power carrier for the known Relay Rev C base, MIDI Rev C base/subplate, and battery master cutoff.
 
 Linked bracket register: [chassis-bracket-analysis-register-20260508.md](chassis-bracket-analysis-register-20260508.md).
 
@@ -11,14 +11,14 @@ Linked bracket register: [chassis-bracket-analysis-register-20260508.md](chassis
 | Radiator/front support | `20260422_004423_gp_B1N5ThVw`, `20260422_004429_gp_4emWbTrA`, `20260422_004436_gp_yjCPMWTg`, `20260430_215957_gp_2iBbUagw`, `20260430_220004_gp_C9oYiYmA` | Direct evidence. The radiator, front support upright, lower support area, previous wire support, and fan/radiator clearance are visible enough to define the repair function. |
 | May 12 radiator/upright context | `20260512_100000_user_front_support_radiator_pickups_context` | Direct structure-scout evidence. The visible upright/top hole, lower/front support hole field, radiator plane, and fan/pulley clearance are enough to start a removable side-strap/upright template. |
 | Battery location / stand context | `20260317_235232_gp_3Ojs4Rag`, `20260317_235150`, `20260317_235201`, `20260423_232309_gp_rrFiL8og`, `20260512_100100_user_battery_side_tray_structure_context` | Partial structure evidence. The May 12 image improves the battery-side load-path and clearance read, but tray feet, underside supports, battery dimensions, and exact pickup points are still not clear enough to release a cut pattern. |
-| MIDI fuse hardware | `20260411_143125`, `20260411_143135`, `data/manual/fabrication/midi5_plate_mount_rev_c/README.md` | Direct hardware evidence. Rev C remains the current MIDI holder plate/subplate package; it still needs a vehicle-side carrier/pickup design. |
+| Relay / MIDI fuse / cutoff hardware | `20260411_143125`, `20260411_143135`, `20260420_221819_gp_YV69fbvA`, `data/manual/fabrication/battery_power_carrier_mount_rev_a/README.md`, `data/manual/fabrication/midi5_plate_mount_rev_c/README.md` | Direct hardware evidence. Battery Power Carrier Rev A now defines the chassis-mounted integrated backplane, the one chassis pickup plate/upright bridge, cutoff switch/guard base, known Relay Rev C base field, known MIDI Rev C base field, and cable support holes. |
 | Cutoff / isolation hardware | `20260420_221819_gp_YV69fbvA`, electrical planning rows | Hardware/context evidence. Treat the battery-side item here as a battery master cutoff/isolator or breaker placement task, separate from the hidden diesel fuel-stop switch unless final wiring deliberately combines functions. |
 
 ## May 12 Provisional Structure Read
 
-- Radiator: start with a removable side strap/upright template that uses the visible vertical upright/top hole, lower/front support hole field, and radiator side flange holes. Keep rubber isolation at the radiator and do not use the bracket to pull the radiator closer to the fan.
-- Battery stand: build a separate tray/stand load path with a perimeter tray, lower/inner pickup points, and gussets. The battery mass should not load the radiator support strap or a flat unsupported inner-wing skin.
-- Power carrier: mount the MIDI/cutoff carrier from the reinforced battery stand or adjacent structural support, with heavy positive cables clipped close to direction changes.
+- Radiator: copy the simple left-side 90 degree top-post idea, but retain it with a bolt-through saddle rather than welding it to the chassis. Use one 4 mm mild-steel right-angle post with lower legs over both sides of the chassis/front-support section, a through-bolt across the legs and chassis, and a top return for the radiator screw.
+- Battery stand: use a steel stand with one chassis-bolted pickup plate, an upright bridge, and a top tray/deck that supports the battery directly from real structure. The battery mass should not load the radiator support strap or a flat unsupported inner-wing skin.
+- Power carrier: integrate the known Relay Rev C base, MIDI Rev C base/subplate, and cutoff base/guard into the battery stand/backplane assembly, mounted from the one chassis pickup location. The sideways `520 x 340 mm` backplane is a candidate orientation only until a full-size LHD battery-bay cardboard check proves it fits. Heavy positive cables need insulated clips near direction changes and roughly every `150-200 mm`.
 - Clearance holds: keep added structure clear of fan/pulley movement, LHD steering shaft path, alternator access, exhaust/front pipe heat, hose movement, bonnet closure, and battery terminal service space.
 
 ## Fabrication Jobs
@@ -27,15 +27,16 @@ Linked bracket register: [chassis-bracket-analysis-register-20260508.md](chassis
 
 Preferred outcome: a serviceable two-side radiator retention set that replaces the wire-held/one-side condition without moving the radiator into the fan, belt, hose, or bonnet-close envelope.
 
+Current package: [front_radiator_two_side_retention_rev_a](../data/manual/fabrication/front_radiator_two_side_retention_rev_a/README.md)
+
 First-pass construction:
 
-- Use existing radiator side flange holes and sound front-support holes where possible.
-- Add or repair chassis/front-support tabs only where the existing support is missing, cracked, too thin, or badly placed.
-- Treat the May 12 visible vertical upright/top hole and lower/front support hole field as the first template datum, subject to ruler confirmation and metal-condition check.
-- Prefer a bolted removable bracket after any required welded tab is installed and coated.
-- Use `3.0 mm` mild steel for welded tabs and removable support brackets unless aluminium is deliberately chosen for a fully bolted non-welded piece.
-- Use rubber washers, bushes, or grommet-style isolation at the radiator contact faces. Do not hard-clamp the radiator tank/core.
-- Use slotted holes only for alignment, then washer properly so the slot cannot tear or creep.
+- Use one `4.0 mm` mild-steel formed-angle strip: `48 mm` measured main face, `410 mm` upright/post height, and about `618 mm` developed main-face length across the top screw return, upright post, chassis bridge, and outer chassis leg.
+- Straddle the chassis/front-support section with the two lower legs and retain the bracket with a through-bolt through both legs and the chassis.
+- Treat the measured left chassis-attached bracket and the supplied photo as first template datums, subject to ruler confirmation and metal-condition check.
+- Use rubber washers, bushes, or grommet-style isolation at the top screw if required. Do not hard-clamp the radiator tank/core.
+- Use crush-tube/spacer practice if bolting through boxed chassis/front-support metal.
+- Do not weld the bracket to the chassis or add a separate rubber-pad fabrication part unless dry-fit proves the bolted saddle route is wrong.
 - Preserve the current radiator plane unless dry-fit proves it must move; fan clearance is a release dimension.
 
 Release checks:
@@ -44,7 +45,7 @@ Release checks:
 - No metal-to-metal rubbing on radiator tank, fins, or side rails.
 - Lower and upper hose paths stay relaxed.
 - Fan and shroud clearance confirmed after tightening.
-- Brackets removable enough for future radiator service.
+- Top screw and through-bolt remain serviceable and the saddle bracket does not block radiator removal.
 
 ### BAT-TRAY-001 - Battery Tray Support Upgrade
 
@@ -68,35 +69,54 @@ Release checks:
 - Terminals cannot short against clamp, bonnet, MIDI plate, cutoff body, or tools during service.
 - Tray coating plan is explicit: zinc-rich epoxy/primer, top protection, then removable liner.
 
-### PWR-CARRIER-001 - Battery-Side MIDI / Cutoff Carrier
+### PWR-CARRIER-001 - Chassis-Mounted Battery Stand / Relay / Fuse / Cutoff Carrier
 
-Preferred outcome: a battery-adjacent removable carrier that accepts the existing MIDI 5-way Rev C plate and a battery master cutoff/isolator without loading the battery tray skin or crowding the battery terminals.
+Preferred outcome: a removable steel chassis-mounted stand that supports a full-height battery and carries the known Relay Rev C carrier base, MIDI Rev C fuse-holder base/subplate, and battery master cutoff/isolator base as one serviceable assembly.
 
-The existing `midi5_plate_mount_rev_c` package remains valid for the MIDI holder itself:
+Current package: [battery_power_carrier_mount_rev_a](../data/manual/fabrication/battery_power_carrier_mount_rev_a/README.md)
 
-- Mount plate: `190 x 150 x 3.0 mm` aluminium.
-- Holder subplate: `140 x 85 x 5.0 mm` non-conductive board.
-- Stand-offs: `10-12 mm`.
+Core Rev A parts:
 
-The new work is the vehicle-side carrier/interface:
+- Battery stand top tray/deck: `560 x 360 x 3.0 mm` mild steel.
+- Electrical backplane: `520 x 340 x 3.0 mm` mild steel.
+- Single chassis pickup plate: `260 x 160 x 4.0 mm` mild steel, final slot pitch from the one chassis location.
+- Upright bridge side plates: `130 x 260 x 4.0 mm` mild steel, make a mirrored pair around the single pickup bridge if stiffness requires it.
+- Battery hold-down crossbar: `3.0 mm` mild steel or stainless, slot after measuring the battery.
+- Cutoff guard: optional `2.0-3.0 mm` aluminium or plastic guard after the real switch is measured.
 
-- Use a `3.0 mm` steel or aluminium upright/bridge bracket, depending on whether the final pickup points are welded or bolted.
-- Pick up from battery tray support/upright or adjacent structural support, not unsupported thin sheet.
-- Prefer a removable vertical carrier on the reinforced battery-stand side rather than a plate fixed directly to tray skin.
-- Keep MIDI covers serviceable from above/front.
-- Keep the cutoff reachable but protected from accidental knocks and water pooling.
-- Route battery positive as: battery positive -> master cutoff/breaker -> MIDI common feed -> fused branches.
-- Support heavy cables with P-clips/saddle clamps near direction changes and at roughly `150-200 mm` intervals.
+Layout:
+
+- Battery field carries the battery and hold-down crossbar on the same stand.
+- Relay field carries the existing Relay Rev C carrier base: `320 x 220 mm` finished face, `360 x 255 mm` flat pattern.
+- MIDI field carries the existing `midi5_plate_mount_rev_c` fuse plate (`190 x 150 mm`) and `midi5_holder_subplate_rev_c` (`140 x 85 mm`).
+- Cutoff field carries the master cutoff pilot/guard field. The pilot hole is not the final switch hole; open it only after measuring the switch body, panel-hole requirement, key/knob sweep, terminal studs, and cable lug sweep.
+- The single chassis pickup plate bolts directly to the known chassis pickup location. The stand must remain removable for service.
+
+Electrical route:
+
+- Battery positive -> master cutoff -> MIDI common feed -> fused branches / relay feeds.
+- Relay feed and MIDI feed must have insulating boots or covers over live studs.
+- Heavy positive cables use insulated P-clips/saddle clamps near every direction change and roughly every `150-200 mm`.
 - Use grommets/bushes through any sheet metal pass-throughs.
-- Keep fuse and cutoff hardware out of the battery acid/venting splash zone as far as packaging allows.
+- Keep fuse, relay, and cutoff hardware away from battery acid/vent splash, water pooling, fan/belt movement, exhaust heat, steering movement, and sharp panel edges.
 
 Release checks:
 
-- Cutoff body depth, knob/key clearance, and cable lug sweep measured.
-- MIDI plate template placed next to the real battery and bonnet shut line.
-- Main cable bend radius proven without loading fuse studs.
-- No exposed positive terminal can contact the carrier, body, bonnet, or clamp.
-- Carrier can be removed without removing the battery tray from the vehicle.
+- Stand/tray cardboard mock-up with full-height battery, known Relay Rev C base, MIDI Rev C holder bank, cutoff switch, and cable lugs clears the bonnet, radiator, fan/belt, LHD steering shaft/box/service path, alternator service sweep, and cable bend radius.
+- Sideways `520 x 340 mm` backplane is rejected or stepped/split if it crowds the LHD steering-side envelope, hydraulic line path, bonnet, radiator/fan envelope, or battery terminal service space.
+- Battery and electrical load path is taken by the one chassis pickup plate and upright bridge, not tray skin, radiator strap, or unsupported inner wing.
+- Cutoff body depth, knob/key clearance, and cable lug sweep are measured.
+- Main cable bend radius is proven without loading cutoff, relay, or fuse studs.
+- No exposed positive terminal can contact the carrier, body, bonnet, battery clamp, radiator support, or tools.
+- Stand can be removed from chassis/front-support pickup points for service without disturbing radiator support pieces.
+
+Battery-cavity mapping method:
+
+- Use the installed battery as the fixed exclusion block before placing electrical hardware. Current working block in the package is `275 x 230 x 190 mm`; verify the actual battery dimensions and terminal height before relying on the map.
+- Map front/radiator-side, inboard engine/LHD-steering-side, lower-under-tray, outboard-wing-side, and bonnet/terminal-height slices with the battery installed.
+- Trial cardboard templates for Relay Rev C `320 x 220 mm`, MIDI Rev C `190 x 150 mm`, cutoff `150 x 95 mm`, plus depth blocks for cable lugs and boots.
+- Prefer front/radiator-side space if it clears fan/radiator/hose/bonnet service. Treat inboard and lower spaces as cautious cable/support candidates unless the map proves a protected, serviceable rectangle.
+- Record the filled plan in `data/manual/fabrication/battery_power_carrier_mount_rev_a/cavity_mapping_plan.csv`.
 
 ### PWR-CABLE-001 - Cable And Clip Support
 
@@ -120,13 +140,13 @@ Capture these with a ruler or tape measure in frame:
 5. Battery tray from top and side: existing tray edges, clamp holes, corrosion, cracks, and any current support tabs.
 6. Battery tray underside: feet, braces, inner wing attachment, chassis/engine clearance, and possible lower support leg path.
 7. Battery stand template: cardboard or flat-bar tray perimeter plus proposed lower/inner pickup points and gusset directions.
-8. Proposed MIDI/cutoff mock-up: cardboard `190 x 150 mm` plate held in the likely location with battery installed.
+8. Proposed relay/fuse/cutoff mock-up: cardboard `520 x 340 mm` sideways backplane held in the likely location with battery installed; mark the known Relay Rev C base, MIDI Rev C plate/subplate, cutoff base/guard, cable lug sweep, and the LHD steering-side no-go envelope.
 9. Cutoff switch or isolator body: panel-hole size, body depth, terminal stud size, and cable exit directions.
 10. Cable exit route from battery positive to cutoff/MIDI plate and from MIDI outputs toward the harness.
 11. Bonnet closed/near-closed clearance over the battery, tray clamp, MIDI plate, and cutoff.
 
 ## Coating Gate
 
-Any welded radiator tab, battery tray support leg, battery carrier pickup, line/harness clip tab, or cable-support tab must be finished before final chassis/front-support primer, seam sealer, Raptor, and cavity wax.
+Radiator saddle drilling/through-bolt prep, battery tray support leg, battery carrier pickup, line/harness clip tab, or cable-support tab must be finished before final chassis/front-support primer, seam sealer, Raptor, and cavity wax.
 
-The removable MIDI plate, non-conductive subplate, cutoff switch, and final cable clips can be installed after coating, provided their welded or structural pickup points are already installed, deburred, primed, and protected.
+The removable power-carrier backplane, Relay Rev C base, MIDI plate, non-conductive subplate, cutoff switch, and final cable clips can be installed after coating, provided the single chassis pickup structure is already installed, deburred, primed, and protected.

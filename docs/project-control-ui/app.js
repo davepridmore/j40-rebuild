@@ -19,6 +19,7 @@
     photoOverrides: loadPhotoOverrides(),
     lightboxImageBase: null,
     lightboxImageKey: "",
+    visualViewerKey: "",
     itemDetailRow: null,
     recategorizeOpen: false,
   };
@@ -26,11 +27,17 @@
   const imageRegistry = new Map();
   const imageSequences = new Map();
   const imageSequenceByKey = new Map();
+  const visualRegistry = new Map();
+  const visualSequences = new Map();
+  const visualSequenceByKey = new Map();
   const itemRegistry = new Map();
   let imageKeyCounter = 0;
   let imageSequenceCounter = 0;
+  let visualKeyCounter = 0;
+  let visualSequenceCounter = 0;
   let itemKeyCounter = 0;
   const lightbox = createLightbox();
+  const visualViewer = createVisualViewer();
   const itemDetail = createItemDetail();
   const lightboxViewport = {
     scale: 1,
@@ -58,6 +65,17 @@
   });
 
   root.addEventListener("click", (event) => {
+    const visualTrigger = event.target.closest("[data-visual-key]");
+    if (visualTrigger) {
+      const visualKey = visualTrigger.getAttribute("data-visual-key");
+      if (!visualKey) {
+        return;
+      }
+      event.preventDefault();
+      openVisualViewer(visualKey);
+      return;
+    }
+
     const imageTrigger = event.target.closest("[data-image-key]");
     if (imageTrigger) {
       const imageKey = imageTrigger.getAttribute("data-image-key");
@@ -120,6 +138,10 @@
   });
 
   document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && state.visualViewerKey) {
+      closeVisualViewer();
+      return;
+    }
     if (event.key === "Escape" && state.lightboxImageBase) {
       closeLightbox();
       return;
@@ -129,6 +151,15 @@
       return;
     }
     if (!state.lightboxImageBase || isFormControl(event.target)) {
+      if (state.visualViewerKey && !isFormControl(event.target)) {
+        if (event.key === "ArrowLeft") {
+          event.preventDefault();
+          navigateVisualViewer(-1);
+        } else if (event.key === "ArrowRight") {
+          event.preventDefault();
+          navigateVisualViewer(1);
+        }
+      }
       return;
     }
     if (event.key === "+" || event.key === "=") {
@@ -171,6 +202,9 @@
     }
     state.activeView = nextView;
     refreshTabButtons();
+    if (state.visualViewerKey) {
+      closeVisualViewer();
+    }
     if (state.lightboxImageBase) {
       closeLightbox();
     }
@@ -790,6 +824,9 @@
   }
 
   function buildWorkstreamEvidenceSets(workstream) {
+    if (workstream && workstream.id === "fabrication_handoff") {
+      return [];
+    }
     function evidenceSetPriority(set) {
       const key = cleanString(set && set.key).toLowerCase();
       const explicitOrder = {
@@ -930,6 +967,14 @@
     imageSequenceCounter = 0;
   }
 
+  function resetVisualRegistry() {
+    visualRegistry.clear();
+    visualSequences.clear();
+    visualSequenceByKey.clear();
+    visualKeyCounter = 0;
+    visualSequenceCounter = 0;
+  }
+
   function resetItemRegistry() {
     itemRegistry.clear();
     itemKeyCounter = 0;
@@ -951,6 +996,24 @@
       imageSequenceByKey.set(imageKey, sequenceId);
     }
     return imageKey;
+  }
+
+  function createVisualSequence() {
+    visualSequenceCounter += 1;
+    const sequenceId = `visual_seq_${visualSequenceCounter}`;
+    visualSequences.set(sequenceId, []);
+    return sequenceId;
+  }
+
+  function registerVisual(item, sequenceId = "") {
+    visualKeyCounter += 1;
+    const visualKey = `visual_${visualKeyCounter}`;
+    visualRegistry.set(visualKey, item);
+    if (sequenceId && visualSequences.has(sequenceId)) {
+      visualSequences.get(sequenceId).push(visualKey);
+      visualSequenceByKey.set(visualKey, sequenceId);
+    }
+    return visualKey;
   }
 
   function registerItem(row) {
@@ -2261,15 +2324,16 @@
     if (!rows.length) {
       return "";
     }
+    const visualGroup = cleanString(title).toLowerCase().includes("visual");
     return `
       <div class="fabrication-link-group">
         <strong>${escapeHtml(title)}</strong>
         <div class="item-links">
           ${rows
-            .map(
-              (link, index) =>
-                `<a class="item-link" href="${escapeHtml(link.url)}" download>${escapeHtml(cleanString(link.label) || `File ${index + 1}`)}</a>`
-            )
+            .map((link, index) => {
+              const attrs = visualGroup ? ' target="_blank" rel="noopener"' : " download";
+              return `<a class="item-link" href="${escapeHtml(link.url)}"${attrs}>${escapeHtml(cleanString(link.label) || `File ${index + 1}`)}</a>`;
+            })
             .join("")}
         </div>
       </div>
@@ -2292,6 +2356,125 @@
     `;
   }
 
+  function visualUrlWithEmbed(url) {
+    const cleaned = cleanString(url);
+    if (!cleaned) {
+      return "";
+    }
+    return `${cleaned}${cleaned.includes("?") ? "&" : "?"}embed=1`;
+  }
+
+  function visualModeKey(link, hasAssembledPeer = false) {
+    const label = cleanString(link && link.label).toLowerCase();
+    const url = cleanString(link && link.url).toLowerCase();
+    const text = `${label} ${url}`;
+    if (text.includes("assembled")) {
+      return "assembled";
+    }
+    if (text.includes("fabrication-read") || (hasAssembledPeer && text.includes("_3d_visualisation"))) {
+      return "expanded";
+    }
+    return "default";
+  }
+
+  function visualModeLabel(modeKey, link) {
+    if (modeKey === "assembled") {
+      return "Attached Assembly";
+    }
+    if (modeKey === "expanded") {
+      return "Expanded Parts";
+    }
+    return cleanString(link && link.label) || "3D View";
+  }
+
+  function packageVisualModes(row) {
+    const visualLinks = Array.isArray(row && row.visual_links) ? row.visual_links : [];
+    const interactiveLinks = visualLinks.filter((link) => cleanString(link && link.url).toLowerCase().endsWith(".html"));
+    const fallbackLinks = visualLinks.filter((link) => cleanString(link && link.url).toLowerCase().endsWith(".svg"));
+    const hasAssembledPeer = visualLinks.some((link) => cleanString(link && link.label).toLowerCase().includes("assembled") || cleanString(link && link.url).toLowerCase().includes("assembled"));
+    return interactiveLinks.map((interactive) => {
+      const modeKey = visualModeKey(interactive, hasAssembledPeer);
+      const fallback =
+        fallbackLinks.find((link) => visualModeKey(link, hasAssembledPeer) === modeKey) ||
+        fallbackLinks.find((link) => cleanString(link && link.label).toLowerCase().includes(cleanString(interactive.label).toLowerCase().replace("3d visualisation", "static 3d visualisation"))) ||
+        null;
+      return {
+        modeKey,
+        label: visualModeLabel(modeKey, interactive),
+        interactive,
+        fallback,
+      };
+    });
+  }
+
+  function renderPackageVisualPreviews(row) {
+    const modes = packageVisualModes(row);
+    if (!modes.length) {
+      return "";
+    }
+    const sequenceId = createVisualSequence();
+    return `
+      <div class="fabrication-visual-grid">
+        ${modes
+          .map((mode) => {
+            const title = `${cleanString(row && row.title) || "Fabrication package"} · ${mode.label}`;
+            const visualKey = registerVisual(
+              {
+                title,
+                packageTitle: cleanString(row && row.title),
+                packageId: cleanString(row && row.package_id),
+                label: mode.label,
+                modeKey: mode.modeKey,
+                url: cleanString(mode.interactive && mode.interactive.url),
+                embedUrl: visualUrlWithEmbed(mode.interactive && mode.interactive.url),
+                staticUrl: cleanString(mode.fallback && mode.fallback.url),
+                notes: cleanString(row && row.release_position),
+              },
+              sequenceId
+            );
+            return `
+              <div class="fabrication-visual-preview">
+                <div class="fabrication-visual-label">
+                  <strong>${escapeHtml(mode.label)}</strong>
+                  <span>${escapeHtml(mode.modeKey === "assembled" ? "installed together" : mode.modeKey === "expanded" ? "separated for fabrication read" : "interactive 3D view")}</span>
+                </div>
+                <div class="fabrication-visual-viewport">
+                  <iframe class="fabrication-visual-frame" src="${escapeHtml(visualUrlWithEmbed(mode.interactive && mode.interactive.url))}" title="${escapeHtml(title)}" loading="lazy"></iframe>
+                  <button type="button" class="fabrication-visual-open" data-visual-key="${escapeHtml(visualKey)}" aria-label="Enlarge ${escapeHtml(title)}">
+                    <span>Enlarge</span>
+                  </button>
+                </div>
+              </div>
+            `;
+          })
+          .join("")}
+      </div>
+    `;
+  }
+
+  function renderPackageDefinitionRows(row) {
+    const definitions = [
+      ["Requirement", `${cleanString(row.requirement_id) || "-"} · ${cleanString(row.title) || "-"}`],
+      ["Package", cleanString(row.package_id) || "-"],
+      ["System", formatToken(row.system || "") || "-"],
+      ["Linked files", `${cleanString(row.file_count) || 0}`],
+    ];
+    return `
+      <dl class="fabrication-definition-rows">
+        ${definitions
+          .map(
+            ([term, value]) => `
+              <div class="fabrication-definition-row">
+                <dt>${escapeHtml(term)}</dt>
+                <dd>${escapeHtml(value)}</dd>
+              </div>
+            `
+          )
+          .join("")}
+      </dl>
+    `;
+  }
+
   function renderFabricationPackages(packages) {
     const rows = Array.isArray(packages) ? packages : [];
     if (!rows.length) {
@@ -2309,42 +2492,127 @@
             ${chip(`${quoteRows} Quote/First Article`)}
           </div>
         </div>
-        <p class="small-muted">Download the full shop package archive, or download individual PDF, DXF, SVG, cut-list, and inspection files.</p>
+        <p class="small-muted">Use the embedded 3D view for assembly orientation, then download the package archive or individual PDF/DXF/SVG files for fabrication.</p>
+        <div class="fabrication-package-list">
+          ${rows
+            .map(
+              (row) => `
+                <section class="fabrication-package-row">
+                  ${renderPackageVisualPreviews(row)}
+                  <div class="fabrication-package-body">
+                    <div class="fabrication-package-heading">
+                      <div>
+                        <h4>${escapeHtml(row.title || row.package_id || "Fabrication package")}</h4>
+                        <p class="small-muted">${escapeHtml(row.package_id || "")}</p>
+                      </div>
+                      ${statusChip(row.current_status || "unknown")}
+                    </div>
+                    ${renderPackageDefinitionRows(row)}
+                    <div class="fabrication-release-row">
+                      <strong>Release</strong>
+                      <span>${escapeHtml(row.release_position || "")}</span>
+                    </div>
+                    ${
+                      row.notes
+                        ? `<div class="fabrication-release-row"><strong>Notes</strong><span>${escapeHtml(row.notes || "")}</span></div>`
+                        : ""
+                    }
+                    <div class="fabrication-file-rows">
+                      ${renderPackageDownload(row.archive_link)}
+                      ${renderPackageLinks("3D Visual", row.visual_links)}
+                      ${renderPackageLinks("Primary", row.primary_links)}
+                      ${renderPackageLinks("DXF", row.dxf_links)}
+                      ${renderPackageLinks("SVG", row.svg_links)}
+                    </div>
+                  </div>
+                </section>
+              `
+            )
+            .join("")}
+        </div>
+      </article>
+    `;
+  }
+
+  function rowMatchesWorkstream(row, workstreamId) {
+    const target = cleanString(workstreamId);
+    return splitMultiValue(row && row.workstream).includes(target);
+  }
+
+  function rawMaterialRowsForWorkstream(workstream) {
+    const rows = Array.isArray(data.fabrication_raw_material_estimates) ? data.fabrication_raw_material_estimates : [];
+    const workstreamId = cleanString(workstream && workstream.id);
+    if (!workstreamId || !rows.length) {
+      return [];
+    }
+    return rows.filter((row) => rowMatchesWorkstream(row, workstreamId));
+  }
+
+  function procurementRowByEntryId(entryId, workstream) {
+    const targetId = cleanString(entryId);
+    if (!targetId) {
+      return null;
+    }
+    const activeRows = Array.isArray(workstream && workstream.involved_parts) ? workstream.involved_parts : [];
+    const activeMatch = activeRows.find((row) => cleanString(row.entry_id) === targetId);
+    if (activeMatch) {
+      return activeMatch;
+    }
+    const openRows = data.parts && Array.isArray(data.parts.open_rows) ? data.parts.open_rows : [];
+    return openRows.find((row) => cleanString(row.entry_id) === targetId) || null;
+  }
+
+  function renderFabricationRawMaterials(workstream) {
+    const rows = rawMaterialRowsForWorkstream(workstream);
+    if (!rows.length) {
+      return "";
+    }
+    const purchaseRows = rows.filter((row) => cleanString(row.release_status).startsWith("purchase_ready"));
+    const existingRows = rows.filter((row) => cleanString(row.release_status).startsWith("already_in_procurement"));
+    return `
+      <article class="card fabrication-raw-materials-card">
+        <div class="detail-header">
+          <h3>Raw Material Procurement</h3>
+          <div class="chip-row">
+            ${chip(`${rows.length} Stock Lines`)}
+            ${chip(`${purchaseRows.length} Buy/Quote`)}
+            ${existingRows.length ? chip(`${existingRows.length} Already Covered`) : ""}
+          </div>
+        </div>
+        <p class="small-muted">Raw-stock estimates are now tied to procurement rows. Tub repair steel is listed separately from battery/radiator fabrication steel.</p>
         <div class="table-wrap">
-          <table>
+          <table class="compact raw-material-table">
             <thead>
               <tr>
-                <th>Requirement</th>
-                <th>Status</th>
-                <th>Release Position</th>
-                <th>Files</th>
-                <th>Notes</th>
+                <th>Material</th>
+                <th>Estimate</th>
+                <th>Covers</th>
+                <th>Procurement</th>
               </tr>
             </thead>
             <tbody>
               ${rows
-                .map(
-                  (row) => `
+                .map((row) => {
+                  const entryId = cleanString(row.procurement_entry_id);
+                  const procurementRow = entryId.includes("|") ? null : procurementRowByEntryId(entryId, workstream);
+                  return `
                     <tr>
                       <td>
-                        <strong>${escapeHtml(row.requirement_id || "")} · ${escapeHtml(row.title || "")}</strong>
-                        <div class="small-muted">${escapeHtml(formatToken(row.system || ""))} / ${escapeHtml(row.package_id || "")}</div>
+                        <strong>${escapeHtml(row.raw_material || "")}</strong>
+                        <div class="small-muted">${escapeHtml(row.package_or_scope || "")}</div>
                       </td>
-                      <td>${statusChip(row.current_status || "unknown")}</td>
-                      <td>${escapeHtml(row.release_position || "")}</td>
+                      <td>${escapeHtml(row.estimate_to_buy || "")}</td>
+                      <td>${escapeHtml(row.covered_fabrication || "")}</td>
                       <td>
-                        ${renderPackageDownload(row.archive_link)}
-                        ${renderPackageLinks("Primary", row.primary_links)}
-                        ${renderPackageLinks("DXF", row.dxf_links)}
-                        ${renderPackageLinks("SVG", row.svg_links)}
-                      </td>
-                      <td>
-                        ${escapeHtml(row.notes || "")}
-                        <div class="small-muted">${escapeHtml(row.file_count || 0)} linked files</div>
+                        ${
+                          procurementRow
+                            ? `${renderItemButton(procurementRow)}<div class="small-muted">${escapeHtml(formatToken(procurementRow.procurement_stage || ""))}</div>`
+                            : `<span class="small-muted">${escapeHtml(entryId || "No procurement row")}</span><div class="small-muted">${escapeHtml(formatToken(row.release_status || ""))}</div>`
+                        }
                       </td>
                     </tr>
-                  `
-                )
+                  `;
+                })
                 .join("")}
             </tbody>
           </table>
@@ -3251,6 +3519,10 @@
       "MIDI5-PLATE-001",
       "MIDI5-SUBPLATE-001",
       "PWR-CARRIER-001",
+      "BPCC-BACKPLANE-001",
+      "BPCC-CH-TAB-001",
+      "BPCC-GUSSET-001",
+      "BPCC-GUARD-001",
       "RELAY-CARRIER-001",
       "RELAY-GUARD-001",
     ]);
@@ -4053,45 +4325,129 @@
       },
       {
         id: "PWR-CARRIER-001",
-        item: "Battery-side MIDI/cutoff vehicle carrier",
-        partNumber: "front-engine-bay-mounting-fabrication-plan-20260508.md",
+        item: "Compact chassis-mounted battery stand / rail-tab power carrier",
+        partNumber: "battery_power_carrier_mount_rev_a",
         route: "battery_power_carrier_mount_rev_a",
-        state: "site_measurement_required",
+        state: "prototype_release_mockup_required",
         image: scoutPreviousPartImage("../../photos/20260317_235232_gp_3Ojs4Rag.jpg", "battery-side engine-bay location", "20260317_235232_gp_3Ojs4Rag", ["battery", "carrier"]),
-        spec: "Vehicle-side structural pickup bracket/carrier for the MIDI Rev C plate and battery master cutoff/isolator.",
+        spec: "Compact steel chassis-bolted stand that supports the full-height battery first, then uses measured rails/tabs for the already-fabricated Relay Rev C folded tray, MIDI Rev C open plate/subplate, master cutoff tab, and cable support points.",
         qty: "1",
-        dimension: "Site-measured. Must clear battery, bonnet, terminals, cable bend radius, and the 190 x 150 mm MIDI plate cardboard mock-up.",
-        material: "3.0 mm steel or aluminium carrier; material follows the final welded-versus-bolted pickup decision.",
-        sourceBasis: "docs/front-engine-bay-mounting-fabrication-plan-20260508.md; data/manual/fabrication/midi5_plate_mount_rev_c/README.md",
-        action: "Capture tray top/side/underside and mock-up photos before cutting; finish any welded pickup points before primer/Raptor.",
-        reject: "Do not mount to unsupported thin sheet, crowd battery terminals, or place live studs in the battery acid/venting splash zone.",
-        notes: "Vehicle-side interface only; the MIDI holder itself remains the Rev C plate/subplate package.",
+        dimension: "Compact top tray 315 x 265 mm; front service rail 340 x 90 mm; single chassis pickup 220 x 140 mm; upright side plates 110 x 220 mm; Relay Rev C folded tray face 320 x 220 mm; MIDI Rev C open plate 190 x 150 mm plus 140 x 85 mm subplate; cutoff tab 170 x 110 mm.",
+        material: "3.0 mm mild-steel compact tray/rail/tabs; 4.0 mm mild-steel single chassis pickup plate and upright bridge.",
+        sourceBasis: "data/manual/fabrication/battery_power_carrier_mount_rev_a/README.md; j40_battery_power_carrier_mount_rev_a_dimension_sheet.pdf",
+        action: "Mock the compact steel tray/stand with the battery and known component bases installed, then cut the single chassis pickup, upright bridge, compact rail/tabs, and tray only after the one pickup point, bonnet clearance, switch depth, and cable bends are proven.",
+        reject: "Do not mount to battery tray skin, radiator support strap, unsupported inner wing, or anywhere live studs can contact carrier/body/bonnet/tools.",
+        notes: "Current preferred route. Relay Rev C is already a folded tray; MIDI Rev C is an open plate/subplate. Use compact split rail/tab placement unless the cavity map proves a single face is smaller, clear, and serviceable.",
+      },
+      {
+        id: "BPCC-FRONT-RAIL-001",
+        item: "Compact front service rail",
+        partNumber: "battery_power_compact_front_service_rail_rev_b.dxf",
+        route: "battery_power_carrier_mount_rev_a",
+        state: "cavity_map_required",
+        image: scoutReferenceImage("../../data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_compact_front_service_rail_rev_b.svg", "Compact front service rail Rev B", "battery_power_compact_front_service_rail_rev_b"),
+        spec: "Compact steel rail for a measured front-cavity Relay Rev C tray pickup, MIDI bracket pickup, or cable support field.",
+        qty: "1",
+        dimension: "340 x 90 mm with rail-to-stand slots, compact tray/bracket attachment slots, and P-clip holes.",
+        material: "3.0 mm mild steel.",
+        sourceBasis: "data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv",
+        action: "Use as cardboard template first; only release final metal if the front/radiator-side cavity map proves access and clearance.",
+      },
+      {
+        id: "BPCC-TRAY-001",
+        item: "Compact battery stand top tray",
+        partNumber: "battery_stand_compact_top_tray_rev_b.dxf",
+        route: "battery_power_carrier_mount_rev_a",
+        state: "prototype_release",
+        image: scoutReferenceImage("../../data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_stand_compact_top_tray_rev_b.svg", "Compact battery stand top tray Rev B", "battery_stand_compact_top_tray_rev_b"),
+        spec: "Steel tray/deck carrying the full-height battery support field, hold-down slots, compact upright bridge mount field, and P-clip holes.",
+        qty: "1",
+        dimension: "315 x 265 mm around the current 275 x 230 mm battery datum.",
+        material: "3.0 mm mild steel.",
+        sourceBasis: "data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv",
+        action: "Use as cardboard template first; final clamp and cable positions follow the installed battery.",
+      },
+      {
+        id: "BPCC-HOLD-001",
+        item: "Compact battery hold-down crossbar",
+        partNumber: "battery_stand_compact_hold_down_crossbar_rev_b.dxf",
+        route: "battery_power_carrier_mount_rev_a",
+        state: "battery_measurement_hold",
+        image: scoutReferenceImage("../../data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_stand_compact_hold_down_crossbar_rev_b.svg", "Compact battery hold-down crossbar Rev B", "battery_stand_compact_hold_down_crossbar_rev_b"),
+        spec: "Compact hold-down crossbar template for the battery clamp rods.",
+        qty: "1",
+        dimension: "315 x 38 mm with slotted ends.",
+        material: "3.0 mm mild steel or stainless",
+        sourceBasis: "data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv",
+        action: "Set final slot spacing from the actual battery case and clamp rod positions.",
+      },
+      {
+        id: "BPCC-CH-TAB-001",
+        item: "Compact battery stand single chassis pickup",
+        partNumber: "battery_stand_compact_single_chassis_pickup_rev_b.dxf",
+        route: "battery_power_carrier_mount_rev_a",
+        state: "site_fit",
+        image: scoutReferenceImage("../../data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_stand_compact_single_chassis_pickup_rev_b.svg", "Compact battery stand single chassis pickup Rev B", "battery_stand_compact_single_chassis_pickup_rev_b"),
+        spec: "Site-fit pickup plate that bolts the whole stand to the one known chassis location.",
+        qty: "1",
+        dimension: "220 x 140 mm plate with site-fit chassis slots and upright/service-rail attach field.",
+        material: "4.0 mm mild steel",
+        sourceBasis: "data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv",
+        action: "Measure the single chassis pickup first; use crush tubes/spacers if bolting through boxed structure.",
+      },
+      {
+        id: "BPCC-GUSSET-001",
+        item: "Compact battery stand single-mount upright bridge",
+        partNumber: "battery_stand_compact_single_mount_upright_rev_b.dxf",
+        route: "battery_power_carrier_mount_rev_a",
+        state: "trim_to_fit",
+        image: scoutReferenceImage("../../data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_stand_compact_single_mount_upright_rev_b.svg", "Compact battery stand single mount upright Rev B", "battery_stand_compact_single_mount_upright_rev_b"),
+        spec: "Rectangular upright bridge side plates from the single chassis pickup to the compact tray/service-rail saddle.",
+        qty: "2 mirrored",
+        dimension: "110 x 220 mm upright side plate.",
+        material: "4.0 mm mild steel",
+        sourceBasis: "data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv",
+        action: "Use as the bridge from the single pickup; this is not a second chassis fixing location.",
+      },
+      {
+        id: "BPCC-CUTOFF-TAB-001",
+        item: "Compact master cutoff tab/guard",
+        partNumber: "battery_power_compact_cutoff_tab_rev_b.dxf",
+        route: "battery_power_carrier_mount_rev_a",
+        state: "fit_after_switch_measurement",
+        image: scoutReferenceImage("../../data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_compact_cutoff_tab_rev_b.svg", "Compact cutoff tab Rev B", "battery_power_compact_cutoff_tab_rev_b"),
+        spec: "Compact independent tab/knock guard for the master cutoff switch.",
+        qty: "1",
+        dimension: "170 x 110 mm with 82 x 46 mm access window.",
+        material: "2.0-3.0 mm aluminium or plastic",
+        sourceBasis: "data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv",
+        action: "Fit only after the actual cutoff switch key/knob sweep and emergency access are proven.",
       },
       {
         id: "RELAY-CARRIER-001",
         item: "Relay box carrier",
         partNumber: "relay_carrier_rev_c.dxf",
         route: "relay_mount_rev_c",
-        state: "current_release",
+        state: "fallback_reference",
         spec: "CNC/cut-ready structural carrier for the DAIER prewired 10-way relay/fuse box.",
         qty: "1",
         dimension: "360 x 255 mm flat pattern; finished face 320 x 220 mm with 20 mm side/bottom returns and 15 mm top return; six 5.5 mm guard/standoff holes; slotted relay and vehicle mounts; lower loom slot.",
         material: "3.0 mm 5052-H32 aluminium",
         sourceBasis: "data/manual/fabrication/relay_mount_rev_c/relay_carrier_rev_c.dxf; j40_relay_mount_rev_c_dimension_sheet.pdf",
-        action: "Cut and form from the Rev C DXF/PDF in mm; trial-fit relay box, cable exit, and vehicle mounts before coating.",
+        action: "Use only if the relay box is mounted separately from the integrated battery power carrier.",
       },
       {
         id: "RELAY-GUARD-001",
         item: "Relay rear guard",
         partNumber: "relay_rear_guard_rev_c.dxf",
         route: "relay_mount_rev_c",
-        state: "current_release",
+        state: "fallback_reference",
         spec: "CNC/router/print-ready rear guard behind the relay box.",
         qty: "1",
         dimension: "280 x 185 mm rear guard with 120 x 25 mm lower loom/drain opening; six 5.5 mm standoff holes.",
         material: "3.0 mm ABS, HDPE, or polypropylene",
         sourceBasis: "data/manual/fabrication/relay_mount_rev_c/relay_rear_guard_rev_c.dxf; j40_relay_mount_rev_c_dimension_sheet.pdf",
-        action: "Use 5-10 mm spacing to the relay box area as needed; keep bottom loom opening downward.",
+        action: "Use only with the fallback standalone relay Rev C route unless the integrated carrier mock-up proves this separate guard is still needed.",
         reject: "Do not fully seal the relay-box rear.",
       },
     ];
@@ -4112,13 +4468,13 @@
         id: "ELEC-UNDERLAY-002",
         item: "Relay rear guard / underlay",
         route: "relay_mount_rev_c",
-        state: "owner_make",
+        state: "fallback_reference",
         partNumber: "relay_rear_guard_rev_c.dxf",
         image: scoutPreviousPartImage("../../photos/20260411_143125.jpg", "Relay box needing rear guard/underlay", "20260411_143125", ["relay-box", "underlay"]),
-        purpose: "Plastic rear guard behind the relay box; separate from the owner-made metal relay carrier.",
+        purpose: "Plastic rear guard behind the relay box if the standalone relay Rev C fallback route is used.",
         definition: "280 x 185 x 3.0 mm guard with 120 x 25 mm lower loom/drain opening and six 5.5 mm standoff holes.",
         material: "3.0 mm ABS, HDPE, or polypropylene",
-        action: "Capture as a requirement; make in-house unless you decide to outsource the plastic sheet cut.",
+        action: "Keep as fallback/reference unless the integrated carrier mock-up proves a separate rear guard is still needed.",
       },
       {
         id: "ELEC-UNDERLAY-003",
@@ -4261,9 +4617,6 @@
             toolbenchImageRows,
             scoutReferenceImage("../../deliverables/selling_site_images/images/reference_catalog/toolbench.jpg", "Toolbench/workbench reference image", "toolbench")
           ),
-        ],
-        docLinks: [
-          scoutDocLink("docs/local-market-procurement-workstream.md", "Local market procurement workstream"),
         ],
         exactSpecRows: workshopSupportExactRows.filter((row) =>
           cleanString(row && row.sourceBasis).includes("tool_local_toolbench")
@@ -5452,6 +5805,8 @@
       return mediaType === "video" ? count + 1 : count;
     }, 0);
     const simpleChassisRubbers = active.id === "chassis_rubbers";
+    const hideEvidenceMedia = simpleChassisRubbers || active.id === "fabrication_handoff";
+    const showFabricationPackages = active.id !== "chassis_fixing";
     const showOperationPanels =
       !simpleChassisRubbers && (active.id === "chassis_fixing" || !(active.subtask_groups && active.subtask_groups.length));
 
@@ -5475,9 +5830,10 @@
 
       ${renderWorkstreamRequirements(active)}
       ${renderChassisBracketAnalysisRegister(active)}
-      ${renderFabricationPackages(active.fabrication_packages)}
+      ${renderFabricationRawMaterials(active)}
+      ${showFabricationPackages ? renderFabricationPackages(active.fabrication_packages) : ""}
 
-      ${simpleChassisRubbers ? "" : `
+      ${hideEvidenceMedia ? "" : `
         <article class="card">
           <h3>Evidence Media</h3>
           <p class="small-muted">${escapeHtml(filteredEvidenceCount || 0)} unique media items across evidence sets${filteredVideoCount ? ` (${escapeHtml(filteredVideoCount)} videos)` : ""}.</p>
@@ -6740,6 +7096,135 @@
     `;
   }
 
+  function createVisualViewer() {
+    const wrapper = document.createElement("div");
+    wrapper.className = "lightbox visual-viewer is-hidden";
+    wrapper.setAttribute("aria-hidden", "true");
+    wrapper.innerHTML = `
+      <div class="lightbox-backdrop" data-visual-viewer-close="1"></div>
+      <section class="visual-viewer-panel" role="dialog" aria-modal="true" aria-label="3D visualisation viewer">
+        <button type="button" class="lightbox-close" data-visual-viewer-close="1" aria-label="Close 3D viewer">×</button>
+        <div class="visual-viewer-frame-wrap">
+          <button type="button" class="lightbox-nav-btn lightbox-nav-prev" id="visual-viewer-prev" title="Previous 3D view" aria-label="Previous 3D view">&lsaquo;</button>
+          <button type="button" class="lightbox-nav-btn lightbox-nav-next" id="visual-viewer-next" title="Next 3D view" aria-label="Next 3D view">&rsaquo;</button>
+          <iframe id="visual-viewer-frame" title="3D visualisation"></iframe>
+        </div>
+        <aside class="visual-viewer-sidebar">
+          <h3 id="visual-viewer-title" class="section-title" style="margin-top:0;">3D Visualisation</h3>
+          <p id="visual-viewer-subtitle" class="small-muted"></p>
+          <dl id="visual-viewer-meta" class="meta-grid"></dl>
+          <div class="item-detail-links">
+            <a class="item-link" id="visual-viewer-open-original" href="#" target="_blank" rel="noopener noreferrer">Open Full Page</a>
+            <a class="item-link" id="visual-viewer-open-static" href="#" target="_blank" rel="noopener noreferrer">Open Static SVG</a>
+          </div>
+          <p id="visual-viewer-notes" class="small-muted"></p>
+        </aside>
+      </section>
+    `;
+    document.body.appendChild(wrapper);
+    const refs = {
+      root: wrapper,
+      frame: wrapper.querySelector("#visual-viewer-frame"),
+      prevBtn: wrapper.querySelector("#visual-viewer-prev"),
+      nextBtn: wrapper.querySelector("#visual-viewer-next"),
+      title: wrapper.querySelector("#visual-viewer-title"),
+      subtitle: wrapper.querySelector("#visual-viewer-subtitle"),
+      meta: wrapper.querySelector("#visual-viewer-meta"),
+      openOriginalLink: wrapper.querySelector("#visual-viewer-open-original"),
+      openStaticLink: wrapper.querySelector("#visual-viewer-open-static"),
+      notes: wrapper.querySelector("#visual-viewer-notes"),
+    };
+    wrapper.addEventListener("click", (event) => {
+      if (event.target.closest("[data-visual-viewer-close]")) {
+        closeVisualViewer();
+      }
+    });
+    refs.prevBtn.addEventListener("click", () => navigateVisualViewer(-1));
+    refs.nextBtn.addEventListener("click", () => navigateVisualViewer(1));
+    return refs;
+  }
+
+  function visualViewerKeys() {
+    const sequenceId = visualSequenceByKey.get(state.visualViewerKey);
+    const sequenceKeys = sequenceId ? visualSequences.get(sequenceId) || [] : [];
+    return sequenceKeys.length ? sequenceKeys : Array.from(visualRegistry.keys());
+  }
+
+  function currentVisualViewerIndex() {
+    return visualViewerKeys().indexOf(state.visualViewerKey);
+  }
+
+  function updateVisualViewerNavigation() {
+    const keys = visualViewerKeys();
+    const index = currentVisualViewerIndex();
+    const hasNavigation = keys.length > 1 && index >= 0;
+    if (visualViewer.prevBtn) {
+      visualViewer.prevBtn.disabled = !hasNavigation;
+    }
+    if (visualViewer.nextBtn) {
+      visualViewer.nextBtn.disabled = !hasNavigation;
+    }
+  }
+
+  function navigateVisualViewer(direction) {
+    const keys = visualViewerKeys();
+    if (!state.visualViewerKey || keys.length < 2) {
+      return;
+    }
+    const index = currentVisualViewerIndex();
+    if (index < 0) {
+      return;
+    }
+    const nextIndex = (index + direction + keys.length) % keys.length;
+    openVisualViewer(keys[nextIndex]);
+  }
+
+  function renderVisualViewer() {
+    const item = visualRegistry.get(state.visualViewerKey);
+    if (!item) {
+      return;
+    }
+    updateVisualViewerNavigation();
+    visualViewer.title.textContent = item.title || "3D Visualisation";
+    visualViewer.subtitle.textContent = [item.packageId, item.label].filter(Boolean).join(" · ");
+    visualViewer.frame.setAttribute("title", item.title || "3D visualisation");
+    visualViewer.frame.setAttribute("src", item.embedUrl || item.url || "about:blank");
+    visualViewer.openOriginalLink.setAttribute("href", item.url || "#");
+    visualViewer.openStaticLink.setAttribute("href", item.staticUrl || item.url || "#");
+    visualViewer.openStaticLink.classList.toggle("is-disabled", !cleanString(item.staticUrl));
+    visualViewer.meta.innerHTML = `
+      <dt>Package</dt><dd>${escapeHtml(item.packageId || "-")}</dd>
+      <dt>View</dt><dd>${escapeHtml(item.label || "-")}</dd>
+      <dt>Mode</dt><dd>${escapeHtml(item.modeKey === "assembled" ? "Attached / installed" : item.modeKey === "expanded" ? "Expanded / fabrication read" : "3D view")}</dd>
+    `;
+    visualViewer.notes.textContent = cleanString(item.notes) ? `Release: ${cleanString(item.notes)}` : "";
+  }
+
+  function openVisualViewer(visualKey) {
+    if (!visualRegistry.has(visualKey)) {
+      return;
+    }
+    if (state.lightboxImageBase) {
+      closeLightbox();
+    }
+    if (state.itemDetailRow) {
+      closeItemDetail();
+    }
+    state.visualViewerKey = visualKey;
+    renderVisualViewer();
+    visualViewer.root.classList.remove("is-hidden");
+    visualViewer.root.setAttribute("aria-hidden", "false");
+    document.body.classList.add("lightbox-open");
+  }
+
+  function closeVisualViewer() {
+    state.visualViewerKey = "";
+    visualViewer.frame.setAttribute("src", "about:blank");
+    visualViewer.root.classList.add("is-hidden");
+    visualViewer.root.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("lightbox-open");
+  }
+
   function createItemDetail() {
     const wrapper = document.createElement("div");
     wrapper.className = "lightbox item-detail is-hidden";
@@ -6831,6 +7316,9 @@
     const row = itemRegistry.get(itemKey);
     if (!row) {
       return;
+    }
+    if (state.visualViewerKey) {
+      closeVisualViewer();
     }
     if (state.lightboxImageBase) {
       closeLightbox();
@@ -7396,6 +7884,9 @@
     if (!baseMeta) {
       return;
     }
+    if (state.visualViewerKey) {
+      closeVisualViewer();
+    }
     if (state.itemDetailRow) {
       closeItemDetail();
     }
@@ -7652,6 +8143,7 @@
 
   function render() {
     resetImageRegistry();
+    resetVisualRegistry();
     resetItemRegistry();
     if (state.activeView === "workstreams") {
       renderWorkstreams();

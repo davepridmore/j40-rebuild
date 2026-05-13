@@ -7,6 +7,11 @@ This pack is the recommended relay-box support arrangement for the DAIER prewire
 1. `relay_carrier_rev_c`
 2. `relay_rear_guard_rev_c`
 
+## 3D Visualisation
+
+- `relay_mount_rev_c_3d_visualisation.html` is the interactive browser assembly view.
+- `relay_mount_rev_c_3d_visualisation.svg` is the static fallback visual.
+
 ## Design intent
 
 - The aluminium carrier is the structural part.

@@ -5,6 +5,8 @@ This is the controlled cut package for the hardwood support blocks and wedge cho
 ## Send To Scout / Timber Merchant
 
 - `j40_suspension_wood_cribbing_rev_a_dimension_sheet.pdf`
+- `suspension_wood_cribbing_rev_a_3d_visualisation.html`
+- `suspension_wood_cribbing_rev_a_3d_visualisation.svg`
 - `fabricator_cut_list.csv`
 - `inspection_checklist.csv`
 

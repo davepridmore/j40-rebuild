@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98mm" height="794mm" viewBox="0 0 98 794">
+  <style>
+    .cut { fill: none; stroke: #111; stroke-width: 0.6; }
+    .aux { fill: none; stroke: #666; stroke-width: 0.35; }
+    .bend { stroke: #0b5fff; stroke-width: 0.4; stroke-dasharray: 3 2; }
+    .title { font: 700 9px monospace; fill: #111; }
+    .note { font: 6px monospace; fill: #111; }
+  </style>
+  <text x="25" y="14" class="title">front_radiator_saddle_right_angle_post_rev_a  |  units: mm</text>
+  <g transform="translate(25,25)">
+  <polygon class="cut" points="0,0 48,0 48,618 0,618" />
+  <polygon class="cut" points="17,25 17.13,23.63 17.53,22.32 18.18,21.11 19.05,20.05 20.11,19.18 21.32,18.53 22.63,18.13 24,18 24,18 25.37,18.13 26.68,18.53 27.89,19.18 28.95,20.05 29.82,21.11 30.47,22.32 30.87,23.63 31,25 31,43 30.87,44.37 30.47,45.68 29.82,46.89 28.95,47.95 27.89,48.82 26.68,49.47 25.37,49.87 24,50 24,50 22.63,49.87 21.32,49.47 20.11,48.82 19.05,47.95 18.18,46.89 17.53,45.68 17.13,44.37 17,43" />
+  <polygon class="cut" points="14,428 14.19,426.05 14.76,424.17 15.69,422.44 16.93,420.93 18.44,419.69 20.17,418.76 22.05,418.19 24,418 24,418 25.95,418.19 27.83,418.76 29.56,419.69 31.07,420.93 32.31,422.44 33.24,424.17 33.81,426.05 34,428 34,442 33.81,443.95 33.24,445.83 32.31,447.56 31.07,449.07 29.56,450.31 27.83,451.24 25.95,451.81 24,452 24,452 22.05,451.81 20.17,451.24 18.44,450.31 16.93,449.07 15.69,447.56 14.76,445.83 14.19,443.95 14,442" />
+  <polygon class="cut" points="14,573 14.19,571.05 14.76,569.17 15.69,567.44 16.93,565.93 18.44,564.69 20.17,563.76 22.05,563.19 24,563 24,563 25.95,563.19 27.83,563.76 29.56,564.69 31.07,565.93 32.31,567.44 33.24,569.17 33.81,571.05 34,573 34,587 33.81,588.95 33.24,590.83 32.31,592.56 31.07,594.07 29.56,595.31 27.83,596.24 25.95,596.81 24,597 24,597 22.05,596.81 20.17,596.24 18.44,595.31 16.93,594.07 15.69,592.56 14.76,590.83 14.19,588.95 14,587" />
+  
+  
+  <line class="bend" x1="0" y1="58" x2="48" y2="58" />
+  <line class="bend" x1="0" y1="468" x2="48" y2="468" />
+  <line class="bend" x1="0" y1="538" x2="48" y2="538" />
+  </g>
+  <text x="25" y="688" class="note">Single-piece radiator saddle/post main-face template: 48 x 618 x 4.0 mm mild steel, based on the existing-side radiator bracket measurement set.</text><text x="25" y="700" class="note">Form or use a mild-steel angle section so the 48 mm measured face has a perpendicular return flange; the final upright is not a flat strap.</text><text x="25" y="712" class="note">Bend 90 degrees at the top datum so the measured 58 mm return becomes the radiator screw tab in the same formed angle section, with the top return carried back to the far edge of the angle return flange.</text><text x="25" y="724" class="note">Bend around the chassis/front-support section so the lower portion forms an inverted-U saddle from the formed angle: near-side leg, chassis top bridge, and far-side clamp leg.</text><text x="25" y="736" class="note">Measured bend basis is 58 mm top return, 410 mm upright/post height, 70 mm chassis bridge allowance, and 80 mm far-side saddle leg.</text><text x="25" y="748" class="note">The top slot is a transfer template from the existing-side bracket. Open final screw diameter/slot after right-side dry-fit confirms radiator ear offset and rubber washer stack.</text><text x="25" y="760" class="note">Through-bolt slots are site-fit fields for a bolt through the two saddle legs and the chassis/front-support section. Use crush tube/spacer practice if the chassis section is boxed.</text><text x="25" y="772" class="note">Do not weld this bracket as the default route. It is retained by the two legs straddling the chassis and the through-bolt.</text>
+</svg>

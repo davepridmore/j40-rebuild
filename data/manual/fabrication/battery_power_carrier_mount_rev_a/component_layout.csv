@@ -1,0 +1,8 @@
+zone,x_mm,y_mm,w_mm,h_mm,z_height_mm,notes
+battery_footprint,20,18,275,230,190 visual reference; measure actual battery,"Current battery datum inside compact 315 x 265 tray; final footprint, full case height, and terminal side follow actual battery."
+compact_top_tray,0,0,315,265,3 mm steel tray/deck plus battery mat,Compact battery support tray only; do not use the tray skin as a large electrical backplane.
+relay_rev_c_folded_tray_card,site_fit,site_fit,320,220,"finished face plus 20 mm side/bottom returns, 15 mm top return, relay box and loom depth measurement hold",First candidate is the front/radiator-side cavity. Treat as its own folded tray and mount to a measured compact rail/tab.
+midi_rev_c_open_plate_card,site_fit,site_fit,190,150,known 190 x 150 plate plus 140 x 85 subplate and holder/cable depth,"Open plate/subplate assembly, not a folded tray. Place only after the protected high-current path is measured."
+cutoff_compact_tab_card,site_fit,site_fit,170,110,switch body/knob/stud height measurement hold,Place at the most accessible front/top position; open final switch hole after measuring real switch.
+compact_front_service_rail,site_fit,site_fit,340,90,component and cable-lug depth measurement hold,Vehicle-side rail only if front cavity fit is proven. Mounts folded relay tray or a measured compact bracket.
+single_chassis_pickup,site_fit,site_fit,220,140,upright bridge height site-fit,One 4 mm chassis pickup plate bolts the stand to the known vehicle-side chassis location.
