@@ -31,7 +31,7 @@ This package defines the battery-side power carrier as a compact steel stand tha
 ## Package Relationship
 
 - Relay hardware comes from `relay_mount_rev_d`: flat aluminium base, exact insulating sheet, and transferred relay-box mounting holes from the real covered enclosure.
-- MIDI hardware comes from `midi5_enclosure_rev_d`: hinged aluminium enclosure, fuse 4 input grommet, five output-side grommets, and a larger far-side output hole for the double power-cable exit.
+- MIDI hardware comes from `midi5_enclosure_rev_d`: hinged aluminium enclosure, fuse 4 input grommet, five output-side grommets, and a larger far-side output hole for the double power-cable exit. This battery carrier places that existing box and does not define a second open MIDI plate or output gutter.
 - The older Relay Rev C folded carrier and MIDI Rev C open plate are superseded for this battery power carrier and kept only as fallback/reference history.
 - The older `electrical_modules_rev_a` package remains reference/fallback only.
 

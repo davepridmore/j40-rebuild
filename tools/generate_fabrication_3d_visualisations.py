@@ -10,8 +10,15 @@ ROOT = Path("/Users/davidpridmore/IdeaProjects/J40")
 FAB_DIR = ROOT / "data" / "manual" / "fabrication"
 
 
-def relay_fuse_box_boxes(x: float, y: float, z: float, prefix: str) -> list[dict[str, object]]:
-    return [
+def relay_fuse_box_boxes(
+    x: float,
+    y: float,
+    z: float,
+    prefix: str,
+    *,
+    include_cable_exits: bool = True,
+) -> list[dict[str, object]]:
+    boxes: list[dict[str, object]] = [
         {
             "name": f"{prefix} rotated housing 197 x 300 x 80",
             "x": x,
@@ -42,47 +49,53 @@ def relay_fuse_box_boxes(x: float, y: float, z: float, prefix: str) -> list[dict
             "d": 5,
             "color": "black",
         },
-        {
-            "name": f"{prefix} top power input cable boot 54 x 46 x 42 at relay offset X-42 Y+164 Z-52",
-            "x": x - 42,
-            "y": y + 164,
-            "z": z - 52,
-            "w": 54,
-            "h": 46,
-            "d": 42,
-            "color": "cableRed",
-        },
-        {
-            "name": f"{prefix} top power output cable boot 54 x 46 x 42 at relay offset X+42 Y+164 Z-52",
-            "x": x + 42,
-            "y": y + 164,
-            "z": z - 52,
-            "w": 54,
-            "h": 46,
-            "d": 42,
-            "color": "cableRed",
-        },
-        {
-            "name": f"{prefix} front-facing control cable cluster 170 x 34 x 24 at relay offset X-18 Y-120 Z-112",
-            "x": x - 18,
-            "y": y - 120,
-            "z": z - 112,
-            "w": 170,
-            "h": 34,
-            "d": 24,
-            "color": "rubber",
-        },
-        {
-            "name": f"{prefix} top power cable service-loop volume",
-            "x": x,
-            "y": y + 208,
-            "z": z - 52,
-            "w": 128,
-            "h": 42,
-            "d": 42,
-            "color": "rubber",
-        },
     ]
+    if include_cable_exits:
+        boxes.extend(
+            [
+                {
+                    "name": f"{prefix} top power input cable boot 54 x 46 x 42 at relay offset X-42 Y+164 Z-52",
+                    "x": x - 42,
+                    "y": y + 164,
+                    "z": z - 52,
+                    "w": 54,
+                    "h": 46,
+                    "d": 42,
+                    "color": "cableRed",
+                },
+                {
+                    "name": f"{prefix} top power output cable boot 54 x 46 x 42 at relay offset X+42 Y+164 Z-52",
+                    "x": x + 42,
+                    "y": y + 164,
+                    "z": z - 52,
+                    "w": 54,
+                    "h": 46,
+                    "d": 42,
+                    "color": "cableRed",
+                },
+                {
+                    "name": f"{prefix} front-facing control cable cluster 170 x 34 x 24 at relay offset X-18 Y-120 Z-112",
+                    "x": x - 18,
+                    "y": y - 120,
+                    "z": z - 112,
+                    "w": 170,
+                    "h": 34,
+                    "d": 24,
+                    "color": "rubber",
+                },
+                {
+                    "name": f"{prefix} top power cable service-loop volume",
+                    "x": x,
+                    "y": y + 208,
+                    "z": z - 52,
+                    "w": 128,
+                    "h": 42,
+                    "d": 42,
+                    "color": "rubber",
+                },
+            ]
+        )
+    return boxes
 
 
 def relay_fuse_box_cylinders(x: float, y: float, z: float, prefix: str) -> list[dict[str, object]]:
@@ -382,7 +395,7 @@ SCENES = {
         "boxes": [
             {"name": "Flat aluminium base plate 360 x 245 shown installed rotated", "x": 0, "y": 3, "z": 0, "w": 245, "h": 6, "d": 360, "color": "aluminium"},
             {"name": "Exact relay-footprint insulating sheet 300 x 197 shown installed rotated", "x": 0, "y": 10, "z": 0, "w": 197, "h": 6, "d": 300, "color": "plastic"},
-            *relay_fuse_box_boxes(0, 92, 0, "Covered relay/fuse box on Rev D base"),
+            *relay_fuse_box_boxes(0, 92, 0, "Covered relay/fuse box on Rev D base", include_cable_exits=False),
             {"name": "Exposed top stand-mount slot pair", "x": 0, "y": 14, "z": -164, "w": 170, "h": 4, "d": 14, "color": "silver"},
             {"name": "Exposed bottom stand-mount slot pair", "x": 0, "y": 14, "z": 164, "w": 170, "h": 4, "d": 14, "color": "silver"},
         ],
