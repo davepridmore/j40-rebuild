@@ -8,8 +8,8 @@ Source data: [fabrication_metal_stock_requirements.csv](../data/manual/fabricati
 
 | Stock | Minimum buy | Used for |
 | --- | --- | --- |
-| `3.0 mm` mild-steel sheet/plate | 1 sheet at least `600 x 600 mm`; `1000 x 500` acceptable/preferred if similarly priced | Battery tray deck `340 x 265`, widened access-ladder flat face `660 x 310`, hold-down `340 x 38`, attached MIDI output comb support, relay wire-exit tabs, small flat tabs/guards. |
-| `3.0 mm` `90-degree` mild-steel angle/L-section | `25 x 25 x 3 mm` or `30 x 30 x 3 mm`, `3 m` total | Battery tray perimeter/upstands, widened access-ladder frame, shallow top-front shelf rails, attached MIDI output comb/gland support, relay wire-exit tabs, cable/P-clip tabs. |
+| `3.0 mm` mild-steel sheet/plate | 1 sheet at least `600 x 600 mm`; `1000 x 500` acceptable/preferred if similarly priced | Battery tray deck `340 x 265`, widened access-ladder flat face `660 x 310`, hold-down `340 x 38`, seated MIDI output comb/backplate support, sized relay wire-exit tabs, small flat tabs/guards. |
+| `3.0 mm` `90-degree` mild-steel angle/L-section | `25 x 25 x 3 mm` or `30 x 30 x 3 mm`, `3 m` total | Battery tray perimeter/upstands, widened access-ladder frame, shallow battery-aligned top-front shelf rails, seated MIDI output comb/gland support, sized relay wire-exit tabs, cable/P-clip tabs. |
 | `4.0 mm` mild-steel plate | 1 plate at least `700 x 450 mm`; nearest `1000 x 500` acceptable | Chassis saddle, flat bolt tabs, upright/gusset plates if angle route still needs flat interfaces, trial coupons. |
 | `50 x 50 x 4 mm` `90-degree` mild-steel angle | `1 m` length | Radiator two-side retention post; one leg should land near the measured `48-50 mm` main face. |
 | `40 x 40 x 4 mm` `90-degree` mild-steel angle | `2 m` length | Battery stand upright bridge members, stand frame trials, structural corner braces. |

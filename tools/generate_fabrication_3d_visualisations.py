@@ -43,43 +43,43 @@ def relay_fuse_box_boxes(x: float, y: float, z: float, prefix: str) -> list[dict
             "color": "black",
         },
         {
-            "name": f"{prefix} upper red harness wire exit",
-            "x": x - 78,
-            "y": y + 104,
-            "z": z - 36,
-            "w": 118,
-            "h": 22,
-            "d": 30,
+            "name": f"{prefix} upper red harness cluster 136 x 24 x 34 at relay offset X-62 Y+110 Z-58",
+            "x": x - 62,
+            "y": y + 110,
+            "z": z - 58,
+            "w": 136,
+            "h": 24,
+            "d": 34,
             "color": "cableRed",
         },
         {
-            "name": f"{prefix} right braided loom wire exit",
-            "x": x + 154,
-            "y": y + 16,
-            "z": z - 22,
-            "w": 34,
-            "h": 112,
-            "d": 34,
+            "name": f"{prefix} right braided loom cluster 42 x 118 x 42 at relay offset X+164 Y-10 Z-52",
+            "x": x + 164,
+            "y": y - 10,
+            "z": z - 52,
+            "w": 42,
+            "h": 118,
+            "d": 42,
             "color": "rubber",
         },
         {
             "name": f"{prefix} braided loom boot service loop",
-            "x": x + 184,
-            "y": y - 34,
-            "z": z - 14,
+            "x": x + 202,
+            "y": y - 36,
+            "z": z - 52,
             "w": 42,
             "h": 108,
             "d": 34,
             "color": "rubber",
         },
         {
-            "name": f"{prefix} lower auxiliary wire exit",
-            "x": x - 102,
-            "y": y - 106,
-            "z": z - 28,
-            "w": 62,
-            "h": 26,
-            "d": 28,
+            "name": f"{prefix} lower auxiliary cluster 96 x 24 x 30 at relay offset X-96 Y-110 Z-60",
+            "x": x - 96,
+            "y": y - 110,
+            "z": z - 60,
+            "w": 96,
+            "h": 24,
+            "d": 30,
             "color": "rubber",
         },
     ]
@@ -98,10 +98,11 @@ def midi_bank_boxes(x: float, y: float, z: float, prefix: str, count: int = 5) -
     boxes: list[dict[str, object]] = [
         {"name": f"{prefix} 140 x 85 insulated subplate", "x": x, "y": y + 8, "z": z, "w": 140, "h": 12, "d": 85, "color": "deepblack"},
         {"name": f"{prefix} common feed bus single input side", "x": x, "y": y + 62, "z": z - 46, "w": 128, "h": 10, "d": 12, "color": "brass"},
-        {"name": f"{prefix} attached output cable comb bolted to plate", "x": x, "y": y + 72, "z": z + 60, "w": 154, "h": 18, "d": 20, "color": "aluminium"},
-        {"name": f"{prefix} output comb left support tab", "x": x - 88, "y": y + 48, "z": z + 60, "w": 12, "h": 42, "d": 20, "color": "aluminium"},
-        {"name": f"{prefix} output comb right support tab", "x": x + 88, "y": y + 48, "z": z + 60, "w": 12, "h": 42, "d": 20, "color": "aluminium"},
-        {"name": f"{prefix} output 3 enlarged double-wire access hole", "x": x, "y": y + 86, "z": z + 60, "w": 42, "h": 8, "d": 34, "color": "silver"},
+        {"name": f"{prefix} output guide backplate attached between subplate and comb", "x": x, "y": y + 48, "z": z + 51, "w": 170, "h": 22, "d": 16, "color": "aluminium"},
+        {"name": f"{prefix} seated output cable comb bolted flush to guide backplate", "x": x, "y": y + 72, "z": z + 60, "w": 154, "h": 18, "d": 20, "color": "aluminium"},
+        {"name": f"{prefix} output comb left support tab tied into shelf plate", "x": x - 88, "y": y + 48, "z": z + 60, "w": 12, "h": 42, "d": 20, "color": "aluminium"},
+        {"name": f"{prefix} output comb right support tab tied into shelf plate", "x": x + 88, "y": y + 48, "z": z + 60, "w": 12, "h": 42, "d": 20, "color": "aluminium"},
+        {"name": f"{prefix} output 3 enlarged double-wire access hole cut through attached comb", "x": x, "y": y + 98, "z": z + 60, "w": 42, "h": 8, "d": 36, "color": "silver"},
     ]
     pitch = 27
     start = x - ((count - 1) * pitch) / 2
@@ -170,13 +171,13 @@ def midi_bank_boxes(x: float, y: float, z: float, prefix: str, count: int = 5) -
                     "color": "deepblack",
                 },
                 {
-                    "name": f"{prefix} output {index + 1} attached grommet saddle",
+                    "name": f"{prefix} output {index + 1} grommet saddle seated in attached comb",
                     "x": holder_x,
                     "y": y + 86,
                     "z": z + 60,
-                    "w": 26 if index == 2 else 18,
-                    "h": 12,
-                    "d": 28 if index == 2 else 18,
+                    "w": 28 if index == 2 else 20,
+                    "h": 14,
+                    "d": 30 if index == 2 else 20,
                     "color": "rubber",
                 },
             ]
@@ -249,7 +250,7 @@ SCENES = {
         "target": [0, 22, 0],
         "size": "190 x 150 x 3 mm plate; 140 x 85 x 5 mm insulated holder subplate",
         "load_path": "The plate is the vehicle-side carrier; the non-conductive subplate isolates the MIDI holders.",
-        "service_intent": "Leave cable exits and holder screws accessible for fuse and branch-feed service.",
+        "service_intent": "Leave cable exits and holder screws accessible for fuse and branch-feed service; output guide backplate, comb, and saddles are modelled as attached pieces.",
         "boxes": [
             {"name": "Aluminium mount plate", "x": 0, "y": 3, "z": 0, "w": 190, "h": 6, "d": 150, "color": "aluminium"},
             *midi_bank_boxes(0, 6, 0, "MIDI Rev C active five-way bank", count=5),
@@ -267,7 +268,7 @@ SCENES = {
         "subtitle": "Separate photo-informed device envelopes for relay box, 100A breaker/cutoff, and MIDI fuse holders.",
         "camera": [520, 320, 620],
         "target": [20, 80, 0],
-        "size": "Relay housing 300 x 197 x 80 mm; MIDI holder bank on 140 x 85 board; 100A breaker visual envelope pending final caliper check",
+        "size": "Relay housing 300 x 197 x 80 mm with three sized wire-exit clusters; MIDI holder bank on 140 x 85 board; 100A breaker visual envelope pending final caliper check",
         "load_path": "Reference-only device models used inside the battery power carrier and standalone relay/MIDI views.",
         "service_intent": "Use this page to inspect device shapes separately before judging the combined battery-side packaging.",
         "boxes": [
@@ -292,7 +293,7 @@ SCENES = {
         "target": [0, 115, 0],
         "size": "360 x 255 mm carrier blank; 320 x 220 mm finished face; 280 x 185 mm rear guard",
         "load_path": "The folded aluminium carrier is a vertical front-face support for the DAIER relay/fuse box if the split relay route is used.",
-        "service_intent": "Show the relay box on the carrier face, 20 mm side/bottom returns bent back, the 15 mm top return, and the spaced rear guard behind the loom side.",
+        "service_intent": "Show the relay box on the carrier face, 20 mm side/bottom returns bent back, the 15 mm top return, the spaced rear guard behind the loom side, and the three sized output wire clusters.",
         "boxes": [
             {"name": "Folded relay carrier front face 320 x 220", "x": 0, "y": 112, "z": 0, "w": 320, "h": 220, "d": 8, "color": "aluminium"},
             {"name": "Left 20 mm 90-degree return bent back", "x": -164, "y": 112, "z": -14, "w": 8, "h": 220, "d": 28, "color": "aluminium"},
@@ -649,9 +650,9 @@ It separates the devices from the carrier brackets so the relay box, 100A breake
 
 ## Modelled Devices
 
-- Relay/fuse box: photo-informed covered black enclosure with plain removable front cover, two cover screws, three visible wire-exit areas (upper red harness, right braided loom, and lower auxiliary relief), and braided loom boot/service loop. The released sizing basis remains `300 x 197 x 80 mm`; internals are hidden by the fitted cover.
+- Relay/fuse box: photo-informed covered black enclosure with plain removable front cover, two cover screws, three visible wire-exit clusters, and braided loom boot/service loop. The released sizing basis remains `300 x 197 x 80 mm`; internals are hidden by the fitted cover. The modelled cluster blocks are upper red harness `136 x 24 x 34 mm` at relay offset `X-62 / Y+110 / Z-58`, right braided loom `42 x 118 x 42 mm` at `X+164 / Y-10 / Z-52`, and lower auxiliary `96 x 24 x 30 mm` at `X-96 / Y-110 / Z-60`.
 - 100A breaker/cutoff: photo-informed waterproof resettable breaker with black body, raised faceplate, red reset lever/button, two terminal studs, ring lugs, and cable boots. Exact body/stud centres remain a caliper hold before final drilling.
-- MIDI fuse holder bank: active five-position fabrication model on the known `140 x 85 mm` insulated subplate, using red hinged covers, black linked bases, side mounting ears, latch recesses, paired studs, a single common-feed side, and an attached five-output cable comb/gland strip. Output 3 is marked with an enlarged pass-through because that output carries two wires. The received photo shows a larger linked bank; the active fabrication package is still the five-way Rev C plate.
+- MIDI fuse holder bank: active five-position fabrication model on the known `140 x 85 mm` insulated subplate, using red hinged covers, black linked bases, side mounting ears, latch recesses, paired studs, a single common-feed side, and a seated five-output cable comb/gland strip attached to a guide backplate and support tabs. Output 3 is marked with an enlarged pass-through because that output carries two wires. The received photo shows a larger linked bank; the active fabrication package is still the five-way Rev C plate.
 - Hidden/security needle switch: shown only as a small reference object, because it belongs to the cabin/security wiring path rather than the battery-side power carrier.
 
 ## Evidence Basis
@@ -675,7 +676,7 @@ These models are visual envelopes, not fabrication drawings. Use them to check p
             "model_dimensions_mm": "300 x 197 x 80 housing envelope",
             "photo_refs": "photos/20260411_143125.jpg|photos/20260515_112827_gp_kbx0JKSQ.jpg",
             "release_status": "released_visual_envelope",
-            "notes": "Visual model now shows the fitted plain cover, cover screws, upper red harness exit, right braided loom exit, lower auxiliary exit, and service loop. Internal relays/fuses are not visible under the cover and are not modelled.",
+            "notes": "Visual model now shows the fitted plain cover, cover screws, upper red harness cluster 136 x 24 x 34 at X-62/Y+110/Z-58, right braided loom cluster 42 x 118 x 42 at X+164/Y-10/Z-52, lower auxiliary cluster 96 x 24 x 30 at X-96/Y-110/Z-60, and service loop. Internal relays/fuses are not visible under the cover and are not modelled.",
         },
         {
             "device_id": "midi_holder_bank",
@@ -684,7 +685,7 @@ These models are visual envelopes, not fabrication drawings. Use them to check p
             "model_dimensions_mm": "140 x 85 subplate; holder holes about 20.2 pitch, 44 row separation, 10 row stagger",
             "photo_refs": "photos/20260411_143135.jpg|photos/20260411_071153.jpg|photos/20260515_112907_gp_wtj4G8tQ.jpg",
             "release_status": "released_visual_envelope_for_five_way_rev_c",
-            "notes": "Received bank photo shows more positions; fabrication pack uses five active positions on the Rev C plate/subplate with one common-feed side, attached output cable comb/gland strip, and one enlarged double-wire output pass-through on the opposite side.",
+            "notes": "Received bank photo shows more positions; fabrication pack uses five active positions on the Rev C plate/subplate with one common-feed side, seated output cable comb/gland strip attached to the guide backplate/support tabs, and one enlarged double-wire output pass-through on the opposite side.",
         },
         {
             "device_id": "breaker_cutoff_100a",
@@ -721,14 +722,14 @@ These models are visual envelopes, not fabrication drawings. Use them to check p
         {
             "check_id": "EDM-002",
             "stage": "bench_measurement",
-            "acceptance_check": "Confirm the relay/fuse housing depth, all three wire-exit locations, loom exit directions, cover opening path, and required standoff clearance against the released 300 x 197 x 80 envelope.",
+            "acceptance_check": "Confirm the relay/fuse housing depth, all three wire-exit cluster locations/sizes, loom exit directions, cover opening path, and required standoff clearance against the released 300 x 197 x 80 envelope.",
             "required_evidence": "Relay box side/depth photo with ruler and upper, side, and lower loom exits visible.",
         },
         {
             "check_id": "EDM-003",
             "stage": "holder_count",
-            "acceptance_check": "Confirm whether five or six MIDI holder positions will be populated on the vehicle; keep Rev C fabrication at five unless deliberately updated, and verify which one output has two wires before cutting the enlarged access hole.",
-            "required_evidence": "Bench photo of selected active MIDI holders with marked common feed, branch-output side, attached output comb, and double-wire output.",
+            "acceptance_check": "Confirm whether five or six MIDI holder positions will be populated on the vehicle; keep Rev C fabrication at five unless deliberately updated, and verify which one output has two wires before cutting the enlarged access hole and seated comb.",
+            "required_evidence": "Bench photo of selected active MIDI holders with marked common feed, branch-output side, seated output comb/backplate, and double-wire output.",
         },
     ]
     checklist_path = out_dir / "inspection_checklist.csv"

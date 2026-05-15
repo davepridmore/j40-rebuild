@@ -35,7 +35,7 @@ DXF files:
 - `battery_stand_compact_single_chassis_pickup_rev_b.dxf` - formed chassis saddle over rail, qty `1`
 - `battery_stand_compact_single_mount_upright_rev_b.dxf` - upright bridge side plate, qty `2 mirrored`
 - `battery_stand_compact_hold_down_crossbar_rev_b.dxf` - service-removable `340 x 38 mm` battery hold-down crossbar, qty `1`
-- `battery_power_compact_front_service_rail_rev_b.dxf` - widened `660 x 310 mm` front/radiator-side access ladder for the outboard relay tray, plastic underlay, three relay wire exits, 80 mm wire gutter, attached MIDI output comb, enlarged double-wire MIDI access hole, MIDI/cutoff shelf tabs, and five-output MIDI cable fanout, qty `1`
+- `battery_power_compact_front_service_rail_rev_b.dxf` - widened `660 x 310 mm` front/radiator-side access ladder for the outboard relay tray, plastic underlay, three sized relay wire-exit clusters, 80 mm wire gutter, seated MIDI output comb/backplate, enlarged double-wire MIDI access hole, battery-aligned MIDI/cutoff shelf tabs, and five-output MIDI cable fanout, qty `1`
 - `battery_power_compact_cutoff_tab_rev_b.dxf` - folded 100A breaker/cutoff base/guard, qty `1`
 
 Release position:
