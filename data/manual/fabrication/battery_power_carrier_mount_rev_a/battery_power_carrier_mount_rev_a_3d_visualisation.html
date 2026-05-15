@@ -145,7 +145,7 @@
     <div class="meta">
       <span class="chip">Steel chassis-bolted stand</span>
       <span class="chip">Formed chassis saddle</span>
-      <span class="chip">190 mm outboard cavity jog</span>
+      <span class="chip">Adjustable outboard offset</span>
       <span class="chip">Standard battery envelope</span>
       <span class="chip">Removable hold-down</span>
       <span class="chip">Outboard relay access</span>
@@ -155,7 +155,7 @@
       <span class="chip">Covered relay box</span>
       <span class="chip">Side kill switch</span>
       <span class="chip">Cutoff-switched feeds</span>
-      <span class="chip">Seated MIDI output comb</span>
+      <span class="chip">MIDI Rev D grommet outputs</span>
       <span class="chip">Five MIDI output cables</span>
       <span class="chip">Engine-side keep-clear</span>
       <span class="chip">Cavity-map gate</span>
@@ -172,11 +172,11 @@
       <dl>
         <div>
           <dt>Load path</dt>
-          <dd>The compact battery tray mounts from one formed saddle over the more central chassis rail through a compact upright bridge, then jogs about 190 mm wing-side/outboard so the battery, cutoff, MIDI bank, and relay sit in the edge cavity with a removable hold-down.</dd>
+          <dd>The compact battery tray mounts from one formed saddle over the more central chassis rail through a compact upright bridge and slotted body-side offset bars, then jogs about 190 mm wing-side/outboard so the battery, cutoff, MIDI bank, and relay sit in the edge cavity with a removable hold-down.</dd>
         </div>
         <div>
           <dt>Power path</dt>
-          <dd>The folded Relay Rev C tray sits outside the battery footprint with the relay-to-battery service gap tightened to about 80 mm, the relay box rotated 90 degrees, a top large power-output cluster, and an end-side relay input loom that can split toward the cabin. MIDI Rev C starts on the battery leading-edge datum with the power input on the second-from-last MIDI holder, the cutoff far-side stud connects to the central battery positive, and the nearer switched stud splits to relay and MIDI.</dd>
+          <dd>Relay Rev D sits outside the battery footprint on its flat aluminium base with the exact 300 x 197 mm insulating sheet under the existing covered relay box. MIDI Rev D starts on the battery leading-edge datum inside the hinged enclosure, with the power input on fuse 4, five grommeted outputs, and the far-side output enlarged for two power cables. The cutoff far-side stud connects to the central battery positive, and the nearer switched stud splits to relay and MIDI.</dd>
         </div>
         <div>
           <dt>Service intent</dt>
@@ -346,46 +346,37 @@
       box(`${name} black cable boot`, x + 62, y + 42, z + 42, 36, 18, 20, materials.black);
     }
     function knownRelayCarrierBase(x, y, z) {
-      box("Folded Relay Rev C carrier tray rotated face 220 x 320", x, y, z, 220, 320, 8, materials.plateEdge);
-      box("Folded Relay Rev C rotated left return 20 mm", x - 114, y, z - 12, 8, 320, 28, materials.plateEdge);
-      box("Folded Relay Rev C rotated right return 20 mm", x + 114, y, z - 12, 8, 320, 28, materials.plateEdge);
-      box("Folded Relay Rev C rotated lower return 20 mm", x, y - 162, z - 12, 220, 8, 28, materials.plateEdge);
-      box("Folded Relay Rev C rotated upper return 15 mm", x, y + 162, z - 10, 220, 8, 22, materials.plateEdge);
-      box("Folded Relay Rev C rotated left bend crease", x - 110, y, z + 5, 3, 320, 4, materials.bendLine);
-      box("Folded Relay Rev C rotated right bend crease", x + 110, y, z + 5, 3, 320, 4, materials.bendLine);
-      box("Folded Relay Rev C rotated lower bend crease", x, y - 160, z + 5, 220, 3, 4, materials.bendLine);
-      box("Folded Relay Rev C rotated upper bend crease", x, y + 160, z + 5, 220, 3, 4, materials.bendLine);
-      box("Relay Rev C rotated flat plastic rear guard / underlay before folded metal tray", x, y, z - 18, 185, 280, 6, materials.midiBoard);
+      box("Relay Rev D flat aluminium base plate installed rotated 245 x 360", x, y, z, 245, 360, 8, materials.plateEdge);
+      box("Relay Rev D exact-footprint insulating sheet installed rotated 197 x 300", x, y, z - 12, 197, 300, 6, materials.midiBoard);
       box("Relay cover removal volume in front of rotated cover", x, y, z - 128, 260, 360, 56, materials.keepout);
       box("Relay top cutoff-fed input keepout 78 x 78 x 70 at relay offset X-42 Y+206 Z-52", x - 42, y + 206, z - 52, 78, 78, 70, materials.keepout);
       box("Relay top large power-output cluster keepout 120 x 88 x 76 at relay offset X+42 Y+206 Z-52", x + 42, y + 206, z - 52, 120, 88, 76, materials.keepout);
       box("Relay end-side input/cabin loom keepout 190 x 52 x 54 at relay offset X-18 Y-120 Z-148", x - 18, y - 120, z - 148, 190, 52, 54, materials.keepout);
       relayFuseBoxVertical("Relay/fuse box on fabricated base", x, y, z);
-      for (const sx of [-135, 0, 135]) {
-        cyl("Relay carrier standoff screw", x + 90, y + sx, z - 8, 4, 10, materials.brass, 0);
-        cyl("Relay carrier standoff screw", x - 90, y + sx, z - 8, 4, 10, materials.brass, 0);
+      for (const sy of [-154, 154]) {
+        cyl("Relay Rev D base-to-stand slot marker", x - 86, y + sy, z + 8, 4, 10, materials.brass, 0);
+        cyl("Relay Rev D base-to-stand slot marker", x + 86, y + sy, z + 8, 4, 10, materials.brass, 0);
       }
     }
     function knownMidiBase(x, y, z) {
-      box("Known MIDI Rev C mount plate 190 x 150", x, y, z, 190, 150, 8, materials.plateEdge);
-      box("Known MIDI insulated subplate 140 x 85", x, y, z - 14, 140, 85, 12, materials.midiBoard);
+      box("Known MIDI Rev D enclosure footprint 210 x 165", x, y, z, 210, 165, 8, materials.plateEdge);
+      box("Known MIDI Rev D insulated subplate 140 x 85", x, y, z - 14, 140, 85, 12, materials.midiBoard);
       for (let idx = 0; idx < 5; idx += 1) {
         midiHolderVertical(`MIDI holder ${idx + 1} on known base`, x - 54 + idx * 27, y, z);
       }
     }
     function knownMidiTopShelf(x, y, z) {
-      box("Top-front MIDI Rev C mount plate 190 x 150", x, y, z, 190, 8, 150, materials.plateEdge);
+      box("Top-front MIDI Rev D aluminium enclosure floor 210 x 165", x, y, z, 210, 8, 165, materials.plateEdge);
+      box("Top-front MIDI Rev D hinged lid shown open", x, y + 72, z - 96, 230, 8, 185, materials.plateEdge);
+      box("Top-front MIDI Rev D input-side wall with fuse 4 grommet", x, y + 34, z - 84, 210, 58, 8, materials.plateEdge);
+      box("Top-front MIDI Rev D output-side wall with five grommets", x, y + 34, z + 84, 210, 58, 8, materials.plateEdge);
       box("Top-front MIDI insulated subplate 140 x 85", x, y + 14, z, 140, 12, 85, materials.midiBoard);
-      box("Top-front MIDI fuse 4 power input lug", x + 27, y + 62, z - 34, 34, 10, 18, materials.brass);
-      box("Top-front MIDI output guide backplate attached between subplate and comb", x, y + 48, z + 51, 170, 22, 16, materials.plateEdge);
-      box("Top-front MIDI output cable clamp comb bolted flush to guide backplate", x, y + 72, z + 60, 154, 18, 20, materials.plateEdge);
-      box("Top-front MIDI output comb left support tab tied into shelf plate", x - 88, y + 48, z + 60, 12, 42, 20, materials.plateEdge);
-      box("Top-front MIDI output comb right support tab tied into shelf plate", x + 88, y + 48, z + 60, 12, 42, 20, materials.plateEdge);
+      box("Top-front MIDI fuse 4 grommeted power input", x + 27, y + 48, z - 88, 34, 20, 10, materials.black);
       for (let idx = 0; idx < 5; idx += 1) {
         midiHolderTop(`Top-front MIDI holder ${idx + 1}`, x - 54 + idx * 27, y, z);
-        box(`Top-front MIDI output ${idx + 1} grommet saddle seated in attached comb`, x - 54 + idx * 27, y + 86, z + 60, idx === 2 ? 28 : 20, 14, idx === 2 ? 30 : 20, materials.black);
+        box(`Top-front MIDI output ${idx + 1} grommet in enclosure wall`, x - 54 + idx * 27, y + 48, z + 88, idx === 4 ? 34 : 22, 18, 10, materials.black);
       }
-      box("MIDI fuse 3 enlarged double-wire access hole cut through attached comb", x, y + 98, z + 60, 42, 8, 36, materials.silver);
+      box("MIDI output 5 enlarged two-power-cable grommet", x + 54, y + 64, z + 88, 42, 10, 16, materials.silver);
     }
     function cutoffSwitch(name, x, y, z) {
       box(`${name} folded aluminium cutoff base face 170 x 110`, x, y, z, 170, 110, 8, materials.plateEdge);
@@ -446,9 +437,9 @@
     for (let idx = 0; idx < midiOutputXs.length; idx += 1) {
       const hx = midiOutputXs[idx];
       const exitX = -390 - idx * 18;
-      cable(`MIDI fuse ${idx + 1} heavy output cable through attached comb to side gutter`, [[hx, 390, 258], [hx, 412, 258], [exitX, 426, 258], [exitX - 36, 438, 226]], 6, materials.cableRed);
-      if (idx === 2) {
-        cable("MIDI fuse 3 second heavy output cable through enlarged attached-comb access hole", [[hx + 8, 390, 266], [hx + 8, 414, 266], [exitX + 12, 430, 266], [exitX - 18, 444, 236]], 5, materials.cableRed);
+      cable(`MIDI fuse ${idx + 1} heavy output cable through Rev D enclosure grommet to side gutter`, [[hx, 390, 258], [hx, 412, 258], [exitX, 426, 258], [exitX - 36, 438, 226]], 6, materials.cableRed);
+      if (idx === 4) {
+        cable("MIDI output 5 second power cable through enlarged far-side enclosure grommet", [[hx + 8, 390, 266], [hx + 8, 414, 266], [exitX + 12, 430, 266], [exitX - 18, 444, 236]], 5, materials.cableRed);
       }
     }
 

@@ -11,9 +11,9 @@
   <polygon class="cut" points="0,0 340,0 340,38 0,38" />
   <polygon class="cut" points="18,19 18.15,17.44 18.61,15.94 19.35,14.56 20.34,13.34 21.56,12.35 22.94,11.61 24.44,11.15 26,11 52,11 53.56,11.15 55.06,11.61 56.44,12.35 57.66,13.34 58.65,14.56 59.39,15.94 59.85,17.44 60,19 60,19 59.85,20.56 59.39,22.06 58.65,23.44 57.66,24.66 56.44,25.65 55.06,26.39 53.56,26.85 52,27 26,27 24.44,26.85 22.94,26.39 21.56,25.65 20.34,24.66 19.35,23.44 18.61,22.06 18.15,20.56 18,19" />
   <polygon class="cut" points="280,19 280.15,17.44 280.61,15.94 281.35,14.56 282.34,13.34 283.56,12.35 284.94,11.61 286.44,11.15 288,11 314,11 315.56,11.15 317.06,11.61 318.44,12.35 319.66,13.34 320.65,14.56 321.39,15.94 321.85,17.44 322,19 322,19 321.85,20.56 321.39,22.06 320.65,23.44 319.66,24.66 318.44,25.65 317.06,26.39 315.56,26.85 314,27 288,27 286.44,26.85 284.94,26.39 283.56,25.65 282.34,24.66 281.35,23.44 280.61,22.06 280.15,20.56 280,19" />
-  
-  
-  
   </g>
-  <text x="25" y="108" class="note">Compact battery hold-down crossbar: 340 x 38 x 3.0 mm mild steel or stainless. Length and slots cover the standard N70/27-class battery envelope but remain template values until the actual battery is measured.</text><text x="25" y="120" class="note">Use J-bolts or vertical rods that cannot touch battery terminals. Add insulated caps where needed.</text><text x="25" y="132" class="note">The crossbar is a service-removable restraint; the battery must lift out vertically after the crossbar and rods are removed.</text><text x="25" y="144" class="note">Do not over-tighten against a plastic battery case; retain the battery without distorting it.</text>
+  <text x="25" y="108" class="note">Compact battery hold-down crossbar: 340 x 38 x 3.0 mm mild steel or stainless. Length and slots cover the standard N70/27-class battery envelope but remain template values until the actual battery is measured.</text>
+  <text x="25" y="120" class="note">Use J-bolts or vertical rods that cannot touch battery terminals. Add insulated caps where needed.</text>
+  <text x="25" y="132" class="note">The crossbar is a service-removable restraint; the battery must lift out vertically after the crossbar and rods are removed.</text>
+  <text x="25" y="144" class="note">Do not over-tighten against a plastic battery case; retain the battery without distorting it.</text>
 </svg>

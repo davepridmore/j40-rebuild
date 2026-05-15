@@ -10,7 +10,6 @@
   <g transform="translate(25,25)">
   <polygon class="cut" points="20,0 190,0 190,20 210,20 210,130 190,130 190,150 20,150 20,130 0,130 0,20 20,20" />
   <polygon class="cut" points="64,73 64.44,68.51 65.75,64.2 67.88,60.22 70.74,56.74 74.22,53.88 78.2,51.75 82.51,50.44 87,50 123,50 127.49,50.44 131.8,51.75 135.78,53.88 139.26,56.74 142.12,60.22 144.25,64.2 145.56,68.51 146,73 146,73 145.56,77.49 144.25,81.8 142.12,85.78 139.26,89.26 135.78,92.12 131.8,94.25 127.49,95.56 123,96 87,96 82.51,95.56 78.2,94.25 74.22,92.12 70.74,89.26 67.88,85.78 65.75,81.8 64.44,77.49 64,73" />
-  
   <circle class="cut" cx="38" cy="36" r="3.25" />
   <circle class="cut" cx="172" cy="36" r="3.25" />
   <circle class="cut" cx="38" cy="114" r="3.25" />
@@ -20,5 +19,8 @@
   <line class="bend" x1="20" y1="20" x2="20" y2="130" />
   <line class="bend" x1="190" y1="20" x2="190" y2="130" />
   </g>
-  <text x="25" y="220" class="note">Folded cutoff aluminium base/guard: 210 x 150 flat pattern, 170 x 110 finished face, 20 mm guard lips bent upward toward the 100A breaker/terminal side.</text><text x="25" y="232" class="note">Use 3.0 mm 5052-H32 aluminium unless dry-fit proves the cutoff must bolt to a steel structural tab instead.</text><text x="25" y="244" class="note">Open final breaker mounting holes only after the actual 100A breaker body, reset lever sweep, terminal studs, and cable-lug depth are measured.</text><text x="25" y="256" class="note">Guard lips must not trap water, block emergency access/reset operation, or foul the breaker body, cable lugs, bonnet, or battery terminal service envelope.</text>
+  <text x="25" y="220" class="note">Folded cutoff aluminium base/guard: 210 x 150 flat pattern, 170 x 110 finished face, 20 mm guard lips bent upward toward the 100A breaker/terminal side.</text>
+  <text x="25" y="232" class="note">Use 3.0 mm 5052-H32 aluminium unless dry-fit proves the cutoff must bolt to a steel structural tab instead.</text>
+  <text x="25" y="244" class="note">Open final breaker mounting holes only after the actual 100A breaker body, reset lever sweep, terminal studs, and cable-lug depth are measured.</text>
+  <text x="25" y="256" class="note">Guard lips must not trap water, block emergency access/reset operation, or foul the breaker body, cable lugs, bonnet, or battery terminal service envelope.</text>
 </svg>

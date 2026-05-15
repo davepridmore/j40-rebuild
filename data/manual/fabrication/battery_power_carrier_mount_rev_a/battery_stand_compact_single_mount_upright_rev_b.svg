@@ -13,12 +13,13 @@
   <polygon class="cut" points="76,32 76.15,30.44 76.61,28.94 77.35,27.56 78.34,26.34 79.56,25.35 80.94,24.61 82.44,24.15 84,24 84,24 85.56,24.15 87.06,24.61 88.44,25.35 89.66,26.34 90.65,27.56 91.39,28.94 91.85,30.44 92,32 92,58 91.85,59.56 91.39,61.06 90.65,62.44 89.66,63.66 88.44,64.65 87.06,65.39 85.56,65.85 84,66 84,66 82.44,65.85 80.94,65.39 79.56,64.65 78.34,63.66 77.35,62.44 76.61,61.06 76.15,59.56 76,58" />
   <polygon class="cut" points="18,162 18.15,160.44 18.61,158.94 19.35,157.56 20.34,156.34 21.56,155.35 22.94,154.61 24.44,154.15 26,154 26,154 27.56,154.15 29.06,154.61 30.44,155.35 31.66,156.34 32.65,157.56 33.39,158.94 33.85,160.44 34,162 34,188 33.85,189.56 33.39,191.06 32.65,192.44 31.66,193.66 30.44,194.65 29.06,195.39 27.56,195.85 26,196 26,196 24.44,195.85 22.94,195.39 21.56,194.65 20.34,193.66 19.35,192.44 18.61,191.06 18.15,189.56 18,188" />
   <polygon class="cut" points="76,162 76.15,160.44 76.61,158.94 77.35,157.56 78.34,156.34 79.56,155.35 80.94,154.61 82.44,154.15 84,154 84,154 85.56,154.15 87.06,154.61 88.44,155.35 89.66,156.34 90.65,157.56 91.39,158.94 91.85,160.44 92,162 92,188 91.85,189.56 91.39,191.06 90.65,192.44 89.66,193.66 88.44,194.65 87.06,195.39 85.56,195.85 84,196 84,196 82.44,195.85 80.94,195.39 79.56,194.65 78.34,193.66 77.35,192.44 76.61,191.06 76.15,189.56 76,188" />
-  
   <circle class="cut" cx="28" cy="102" r="4" />
   <circle class="cut" cx="82" cy="102" r="4" />
   <circle class="cut" cx="28" cy="128" r="4" />
   <circle class="cut" cx="82" cy="128" r="4" />
-  
   </g>
-  <text x="25" y="290" class="note">Compact single-mount upright bridge side plate: 110 x 220 x 4.0 mm mild steel between the one central chassis pickup and compact tray.</text><text x="25" y="302" class="note">Make two mirrored side plates around the single pickup bridge if the mock-up needs side-to-side stiffness. This is not a second chassis fixing location.</text><text x="25" y="314" class="note">Lower holes align to the formed chassis saddle top cap; upper holes align to the compact tray/front rail saddle.</text><text x="25" y="326" class="note">Mock the upper tray/front-rail pickup about 190 mm wing-side/outboard from the chassis pickup centreline, with 160-230 mm side-jog adjustment because the chassis rail is more central than the required battery pocket and the electrical devices must sit in the edge cavity.</text>
+  <text x="25" y="290" class="note">Compact single-mount upright bridge side plate: 110 x 220 x 4.0 mm mild steel between the one central chassis pickup and compact tray.</text>
+  <text x="25" y="302" class="note">Make two mirrored side plates around the single pickup bridge if the mock-up needs side-to-side stiffness. This is not a second chassis fixing location.</text>
+  <text x="25" y="314" class="note">Lower holes align to the formed chassis saddle top cap; upper holes align to the adjustable body-side offset bars and compact tray/front rail saddle.</text>
+  <text x="25" y="326" class="note">Mock the upper tray/front-rail pickup about 190 mm wing-side/outboard from the chassis pickup centreline using the slotted offset bars, with 160-230 mm side-jog adjustment because the chassis rail is more central than the required battery pocket and the electrical devices must sit in the edge cavity.</text>
 </svg>

@@ -371,6 +371,25 @@ SCENES = {
             *relay_fuse_box_cylinders(0, 160, -42, "Relay/fuse box on carrier front face"),
         ],
     },
+    "relay_mount_rev_d": {
+        "title": "Relay Mount Rev D",
+        "subtitle": "Simplified relay-box support: exact-footprint insulating sheet on a flat aluminium base plate.",
+        "camera": [420, 330, 500],
+        "target": [0, 150, 0],
+        "size": "360 x 245 x 3 mm aluminium base; 300 x 197 x 3 mm insulating sheet matching the relay box footprint",
+        "load_path": "The flat aluminium base bolts to the battery-stand ladder through exposed slots; the insulating sheet sits directly under the covered relay box.",
+        "service_intent": "Keep the relay cover removable, transfer relay-box fixing holes from the actual box after orientation is confirmed, and use the base slots for stand attachment.",
+        "boxes": [
+            {"name": "Flat aluminium base plate 360 x 245 shown installed rotated", "x": 0, "y": 3, "z": 0, "w": 245, "h": 6, "d": 360, "color": "aluminium"},
+            {"name": "Exact relay-footprint insulating sheet 300 x 197 shown installed rotated", "x": 0, "y": 10, "z": 0, "w": 197, "h": 6, "d": 300, "color": "plastic"},
+            *relay_fuse_box_boxes(0, 92, 0, "Covered relay/fuse box on Rev D base"),
+            {"name": "Exposed top stand-mount slot pair", "x": 0, "y": 14, "z": -164, "w": 170, "h": 4, "d": 14, "color": "silver"},
+            {"name": "Exposed bottom stand-mount slot pair", "x": 0, "y": 14, "z": 164, "w": 170, "h": 4, "d": 14, "color": "silver"},
+        ],
+        "cylinders": [
+            *relay_fuse_box_cylinders(0, 92, 0, "Covered relay/fuse box on Rev D base"),
+        ],
+    },
     "electrical_modules_rev_a": {
         "title": "Electrical Modules Rev A",
         "subtitle": "Earlier reference route with folded relay tray, folded power module box, and rear insulator.",

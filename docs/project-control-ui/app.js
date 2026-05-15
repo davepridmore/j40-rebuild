@@ -3522,15 +3522,16 @@
       "PWR-CARRIER-001",
       "BPCC-BACKPLANE-001",
       "BPCC-CH-TAB-001",
+      "BPCC-OFFSET-BAR-001",
       "BPCC-GUSSET-001",
       "BPCC-GUARD-001",
-      "RELAY-CARRIER-001",
-      "RELAY-GUARD-001",
+      "RELAY-BASE-001",
+      "RELAY-INSULATOR-001",
     ]);
     const isFabricationRow =
       controlledIds.has(rowId) ||
       partNumber.endsWith(".dxf") ||
-      ["rubber_recreation_rev_a", "midi5_enclosure_rev_d", "midi5_plate_mount_rev_c", "relay_mount_rev_c", "battery_power_carrier_mount_rev_a"].some((token) => route.includes(token));
+      ["rubber_recreation_rev_a", "midi5_enclosure_rev_d", "midi5_plate_mount_rev_c", "relay_mount_rev_d", "relay_mount_rev_c", "battery_power_carrier_mount_rev_a"].some((token) => route.includes(token));
 
     if (!isFabricationRow) {
       return null;
@@ -3575,7 +3576,7 @@
     if (rowId === "MIDI5-ENC-BODY-001" || rowId === "MIDI5-LID-001" || rowId === "MIDI5-SUBPLATE-001" || hasAny("midi5_enclosure", "midi5_mount_plate", "midi5_holder_subplate", "midi 5-way structural", "midi 5-way non-conductive")) {
       return previous("../../photos/20260411_143135.jpg", "received MIDI holder bank to mount", "20260411_143135", ["midi5", "previous"]);
     }
-    if (rowId === "RELAY-CARRIER-001" || rowId === "RELAY-GUARD-001" || hasAny("relay_carrier", "relay_rear_guard", "daier prewired", "10-way relay/fuse", "10 way relay/fuse")) {
+    if (rowId === "RELAY-BASE-001" || rowId === "RELAY-INSULATOR-001" || hasAny("relay_base_plate", "relay_insulating_sheet", "daier prewired", "10-way relay/fuse", "10 way relay/fuse")) {
       return previous("../../photos/20260411_143125.jpg", "received 10-way relay/fuse box to mount", "20260411_143125", ["relay-box", "previous"]);
     }
 
@@ -4344,14 +4345,14 @@
         route: "battery_power_carrier_mount_rev_a",
         state: "prototype_release_mockup_required",
         image: scoutPreviousPartImage("../../photos/20260317_235232_gp_3Ojs4Rag.jpg", "battery-side engine-bay location", "20260317_235232_gp_3Ojs4Rag", ["battery", "carrier"]),
-        spec: "Compact steel chassis-bolted stand that supports a standard N70/27-class battery envelope first, keeps the hold-down removable and the battery lift-out path clear, then uses measured rails/tabs for the folded relay tray, MIDI Rev D hinged enclosure/subplate, folded master cutoff base/guard with upward lips, and cable support points.",
+        spec: "Compact steel chassis-bolted stand that supports a standard N70/27-class battery envelope first, keeps the hold-down removable and the battery lift-out path clear, then uses measured rails/tabs for the adjustable chassis-saddle offset bars, Relay Rev D flat base/insulator, MIDI Rev D hinged enclosure/subplate, folded master cutoff base/guard with upward lips, and cable support points.",
         qty: "1",
-        dimension: "Compact top tray 340 x 265 mm; standard battery envelope 318 x 180 x 230 mm with central top terminals; widened front access ladder 660 x 310 mm; formed chassis saddle nominal 220 x 230 mm flat pattern with 70 mm near leg, measured rail-top cap, and 70 mm far leg; upright side plates 110 x 220 mm; estimated tray rise 180 mm above chassis top with 150-210 mm adjustment; estimated tray centre jog 190 mm wing-side/outboard into the edge cavity with 160-230 mm adjustment; rotated folded relay tray face 220 x 320 mm plus 185 x 280 mm plastic rear guard/underlay before the folded metal tray; relay-to-battery service gap about 80 mm; relay top cutoff input 54 x 46 x 42 mm, top large power-output cluster 78 x 58 x 48 mm, and end-side input/cabin loom cluster 170 x 34 x 24 mm; MIDI Rev D hinged enclosure 210 x 165 x 65 mm plus 140 x 85 mm subplate, fuse 4 grommeted power input, four single output grommets, and one far-side two-cable output grommet; side-mounted folded cutoff/kill-switch base/guard 170 x 110 mm finished face / 210 x 150 mm flat pattern / 20 mm upward lips.",
-        material: "3.0 mm mild-steel compact tray/rail/tabs; 4.0 mm mild-steel formed chassis saddle and upright bridge.",
+        dimension: "Compact top tray 340 x 265 mm; standard battery envelope 318 x 180 x 230 mm with central top terminals; widened front access ladder 660 x 310 mm; formed chassis saddle nominal 220 x 230 mm flat pattern with 70 mm near leg, measured rail-top cap, and 70 mm far leg; upright side plates 110 x 220 mm; adjustable offset bars 360 x 60 mm; estimated tray rise 180 mm above chassis top with 150-210 mm adjustment; estimated tray centre jog 190 mm wing-side/outboard into the edge cavity with 160-230 mm adjustment; Relay Rev D base 360 x 245 mm plus exact 300 x 197 mm insulating sheet under the covered relay box; relay-to-battery service gap about 80 mm; relay top cutoff input 54 x 46 x 42 mm, top large power-output cluster 78 x 58 x 48 mm, and end-side input/cabin loom cluster 170 x 34 x 24 mm; MIDI Rev D hinged enclosure 210 x 165 x 65 mm plus 140 x 85 mm subplate, fuse 4 grommeted power input, four single output grommets, and one far-side two-cable output grommet; side-mounted folded cutoff/kill-switch base/guard 170 x 110 mm finished face / 210 x 150 mm flat pattern / 20 mm upward lips.",
+        material: "3.0 mm mild-steel compact tray/rail/tabs; 4.0 mm mild-steel formed chassis saddle, upright bridge, and offset bars.",
         sourceBasis: "data/manual/fabrication/battery_power_carrier_mount_rev_a/README.md; j40_battery_power_carrier_mount_rev_a_dimension_sheet.pdf",
-        action: "Mock the compact steel tray/stand with the battery and known component bases installed. Shift the whole tray/front-ladder assembly from the chassis saddle toward the wing-side edge cavity, put the covered relay tray outside the battery footprint on the outboard/access edge with about 80 mm relay-to-battery service gap, keep the kill switch beside the MIDI enclosure instead of after the MIDI outputs, and prove central battery-to-far-side-cutoff input routing, near-side cutoff-to-relay and cutoff-to-MIDI fuse 4 switched cable bends, relay top output and end-side input exits, small-wire routing under MIDI to relay top, battery lift-out, five MIDI output grommets, and five MIDI output cables before cutting final ladder holes.",
+        action: "Mock the compact steel tray/stand with the battery and known component bases installed. Shift the whole tray/front-ladder assembly from the chassis saddle toward the wing-side edge cavity through the slotted offset bars, put Relay Rev D outside the battery footprint on the outboard/access edge with about 80 mm relay-to-battery service gap, keep the kill switch beside the MIDI enclosure instead of after the MIDI outputs, and prove central battery-to-far-side-cutoff input routing, near-side cutoff-to-relay and cutoff-to-MIDI fuse 4 switched cable bends, relay top output and end-side input exits, small-wire routing under MIDI to relay top, battery lift-out, five MIDI output grommets, and five MIDI output cables before cutting final ladder holes.",
         reject: "Do not mount to battery tray skin, radiator support strap, unsupported inner wing, or anywhere live studs can contact carrier/body/bonnet/tools.",
-        notes: "Current preferred route. The relay tray is already folded, but the flat plastic rear guard/underlay sits before the folded metal tray and the covered relay box is rotated so the large power output exits at the top and the input/cabin loom exits the end side. Central battery positive enters the far-side cutoff stud first, then the near-side cutoff output splits to the MIDI fuse 4 input and the relay top input. MIDI Rev D is a hinged aluminium enclosure with one fuse 4 input grommet, five output grommets, and the far-side output hole enlarged for two power cables. The cutoff/kill switch sits beside the MIDI enclosure. Use the widened access-ladder placement shifted into the edge cavity unless the cavity map proves a smaller, clear, and serviceable alternative.",
+        notes: "Current preferred route. Relay Rev D uses the existing covered relay box on a flat aluminium base with an exact insulating sheet, so no folded relay carrier is needed. Central battery positive enters the far-side cutoff stud first, then the near-side cutoff output splits to the MIDI fuse 4 input and the relay top input. MIDI Rev D is a hinged aluminium enclosure with one fuse 4 input grommet, five output grommets, and the far-side output hole enlarged for two power cables. The cutoff/kill switch sits beside the MIDI enclosure. Use the widened access-ladder placement shifted into the edge cavity by the configurable offset bars unless the cavity map proves a smaller, clear, and serviceable alternative.",
       },
       {
         id: "BPCC-FRONT-RAIL-001",
@@ -4360,9 +4361,9 @@
         route: "battery_power_carrier_mount_rev_a",
         state: "cavity_map_required",
         image: scoutReferenceImage("../../data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_compact_front_service_rail_rev_b.svg", "Widened front access ladder Rev B", "battery_power_compact_front_service_rail_rev_b"),
-        spec: "Widened steel access ladder for the measured edge-cavity rotated relay tray pickup, MIDI Rev D enclosure and side kill-switch shelf pickups, protected cable support field, relay top output and end-side input exits, cutoff-switched branch feeds, small-wire under-MIDI route, and MIDI five-output fanout.",
+        spec: "Widened steel access ladder for the measured edge-cavity Relay Rev D flat-base pickup, MIDI Rev D enclosure and side kill-switch shelf pickups, protected cable support field, relay top output and end-side input exits, cutoff-switched branch feeds, small-wire under-MIDI route, and MIDI five-output fanout.",
         qty: "1",
-        dimension: "660 x 310 mm with rail-to-stand slots, outboard relay tray attachment slots, MIDI enclosure and side kill-switch shelf pickup holes, relay top cutoff-input and large-output clearances, relay end-side input/cabin loom clearance, near-side cutoff-output split cable clearance, small-wire under-MIDI route, 80 mm cable-gutter clearance, MIDI five-output fanout clearance, and P-clip holes.",
+        dimension: "660 x 310 mm with rail-to-stand slots, outboard Relay Rev D base attachment slots, MIDI enclosure and side kill-switch shelf pickup holes, relay top cutoff-input and large-output clearances, relay end-side input/cabin loom clearance, near-side cutoff-output split cable clearance, small-wire under-MIDI route, 80 mm cable-gutter clearance, MIDI five-output fanout clearance, and P-clip holes.",
         material: "3.0 mm mild steel.",
         sourceBasis: "data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv",
         action: "Use as cardboard template first; only release final metal if the front/radiator-side cavity map proves the shifted edge-cavity tray/ladder position, about 80 mm relay-to-battery service gap, relay cover access, relay top output and end-side input exits, central battery-to-far-side-cutoff input routing, near-side cutoff-to-relay and cutoff-to-MIDI fuse 4 switched feeds, small-wire under-MIDI routing, five-output MIDI cable bend clearance through the Rev D grommeted enclosure side, enlarged far-side two-cable output clearance, battery lift-out, and bonnet/radiator/hose clearance.",
@@ -4410,13 +4411,27 @@
         action: "Measure chassis rail top width, leg depth, through-bolt access, and crush-tube need before final cutting; use the saddle as the single chassis pickup.",
       },
       {
+        id: "BPCC-OFFSET-BAR-001",
+        item: "Battery stand adjustable body-side offset bar",
+        partNumber: "battery_stand_adjustable_offset_bar_rev_b.dxf",
+        route: "battery_power_carrier_mount_rev_a",
+        state: "site_fit",
+        image: scoutReferenceImage("../../data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_stand_adjustable_offset_bar_rev_b.svg", "Battery stand adjustable offset bar Rev B", "battery_stand_adjustable_offset_bar_rev_b"),
+        spec: "Slotted bar from the formed chassis saddle/upright bridge toward the body/wing-side battery pocket so the battery stand power carrier offset can be configured.",
+        qty: "2 mirrored",
+        dimension: "360 x 60 mm, 4.0 mm mild steel, with chassis-saddle end slots and body-side adjustment slots for the 160-230 mm offset range.",
+        material: "4.0 mm mild steel",
+        sourceBasis: "data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv",
+        action: "Start at the 190 mm wing-side/outboard target, trial 160 and 230 mm settings in cardboard/temporary steel, then lock the offset only after battery, relay, MIDI, cutoff, bonnet, steering, hose, and cable-sweep checks pass.",
+      },
+      {
         id: "BPCC-GUSSET-001",
         item: "Compact battery stand single-mount upright bridge",
         partNumber: "battery_stand_compact_single_mount_upright_rev_b.dxf",
         route: "battery_power_carrier_mount_rev_a",
         state: "trim_to_fit",
         image: scoutReferenceImage("../../data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_stand_compact_single_mount_upright_rev_b.svg", "Compact battery stand single mount upright Rev B", "battery_stand_compact_single_mount_upright_rev_b"),
-        spec: "Rectangular upright bridge side plates from the formed chassis saddle to the compact tray/service-rail saddle.",
+        spec: "Rectangular upright bridge side plates from the formed chassis saddle to the adjustable body-side offset bars and compact tray/service-rail saddle.",
         qty: "2 mirrored",
         dimension: "110 x 220 mm upright side plate; mock-up target 180 mm chassis-top-to-tray-underside rise with 150-210 mm vertical adjustment and 160-230 mm side-jog tuning around a 190 mm wing-side/outboard tray shift from the more central chassis pickup into the edge cavity.",
         material: "4.0 mm mild steel",
@@ -4438,31 +4453,30 @@
         action: "Fit only after the actual cutoff switch key/knob sweep and emergency access are proven.",
       },
       {
-        id: "RELAY-CARRIER-001",
-        item: "Relay box carrier",
-        partNumber: "relay_carrier_rev_c.dxf",
-        route: "relay_mount_rev_c",
-        state: "fallback_reference",
-        spec: "CNC/cut-ready structural carrier for the DAIER prewired 10-way relay/fuse box.",
+        id: "RELAY-BASE-001",
+        item: "Relay box flat aluminium base",
+        partNumber: "relay_base_plate_rev_d.dxf",
+        route: "relay_mount_rev_d",
+        state: "current_release",
+        spec: "Flat aluminium base plate for the existing covered relay box, with exposed stand-attachment slots.",
         qty: "1",
-        dimension: "360 x 255 mm flat pattern; finished face 320 x 220 mm with 20 mm side/bottom returns and 15 mm top return; six 5.5 mm guard/standoff holes; slotted relay and vehicle mounts; lower loom slot.",
+        dimension: "360 x 245 mm base plate, 3.0 mm thick, sized to extend beyond the 300 x 197 mm relay-box footprint.",
         material: "3.0 mm 5052-H32 aluminium",
-        sourceBasis: "data/manual/fabrication/relay_mount_rev_c/relay_carrier_rev_c.dxf; j40_relay_mount_rev_c_dimension_sheet.pdf",
-        action: "Use only if the relay box is mounted separately from the integrated battery power carrier.",
+        sourceBasis: "data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.dxf; j40_relay_mount_rev_d_dimension_sheet.pdf",
+        action: "Transfer relay-box fixing holes from the actual enclosure after final orientation; use the exposed base slots to mount to the battery stand/access ladder.",
       },
       {
-        id: "RELAY-GUARD-001",
-        item: "Relay rear guard",
-        partNumber: "relay_rear_guard_rev_c.dxf",
-        route: "relay_mount_rev_c",
-        state: "fallback_reference",
-        spec: "CNC/router/print-ready rear guard behind the relay box.",
+        id: "RELAY-INSULATOR-001",
+        item: "Relay exact-footprint insulating sheet",
+        partNumber: "relay_insulating_sheet_rev_d.dxf",
+        route: "relay_mount_rev_d",
+        state: "current_release",
+        spec: "Exact-size non-conductive sheet between the already-covered relay box and the flat aluminium base.",
         qty: "1",
-        dimension: "280 x 185 mm rear guard with 120 x 25 mm lower loom/drain opening; six 5.5 mm standoff holes.",
-        material: "3.0 mm ABS, HDPE, or polypropylene",
-        sourceBasis: "data/manual/fabrication/relay_mount_rev_c/relay_rear_guard_rev_c.dxf; j40_relay_mount_rev_c_dimension_sheet.pdf",
-        action: "Use only with the fallback standalone relay Rev C route unless the integrated carrier mock-up proves this separate guard is still needed.",
-        reject: "Do not fully seal the relay-box rear.",
+        dimension: "300 x 197 mm sheet, 3.0 mm thick, matching the relay-box footprint.",
+        material: "3.0 mm ABS, HDPE, polypropylene, G10, or phenolic",
+        sourceBasis: "data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.dxf; j40_relay_mount_rev_d_dimension_sheet.pdf",
+        action: "Keep full-size under the relay box, mark through-fixing holes from the actual enclosure, and avoid creating a sealed water trap.",
       },
     ];
     const fabricationElectricalUnderlayRows = [
@@ -4480,15 +4494,15 @@
       },
       {
         id: "ELEC-UNDERLAY-002",
-        item: "Relay rear guard / underlay",
-        route: "relay_mount_rev_c",
-        state: "fallback_reference",
-        partNumber: "relay_rear_guard_rev_c.dxf",
-        image: scoutPreviousPartImage("../../photos/20260411_143125.jpg", "Relay box needing rear guard/underlay", "20260411_143125", ["relay-box", "underlay"]),
-        purpose: "Plastic rear guard behind the relay box if the standalone relay Rev C fallback route is used.",
-        definition: "280 x 185 x 3.0 mm guard with 120 x 25 mm lower loom/drain opening and six 5.5 mm standoff holes.",
-        material: "3.0 mm ABS, HDPE, or polypropylene",
-        action: "Keep as fallback/reference unless the integrated carrier mock-up proves a separate rear guard is still needed.",
+        item: "Relay exact-footprint insulating sheet",
+        route: "relay_mount_rev_d",
+        state: "current_release",
+        partNumber: "relay_insulating_sheet_rev_d.dxf",
+        image: scoutPreviousPartImage("../../photos/20260411_143125.jpg", "Relay box needing insulating sheet", "20260411_143125", ["relay-box", "underlay"]),
+        purpose: "Non-conductive sheet between the existing covered relay box and the Rev D flat aluminium base.",
+        definition: "300 x 197 x 3.0 mm sheet matching the relay-box footprint.",
+        material: "3.0 mm ABS, HDPE, polypropylene, G10, or phenolic",
+        action: "Use as the current relay underlay; transfer fixing holes from the actual relay box after orientation is confirmed.",
       },
       {
         id: "ELEC-UNDERLAY-003",

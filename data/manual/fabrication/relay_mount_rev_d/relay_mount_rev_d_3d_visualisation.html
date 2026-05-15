@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relay Mount Rev D - 3D Visualisation</title>
+  <link rel="icon" href="data:,">
+  <style>
+    :root { font-family: Arial, Helvetica, sans-serif; background: #f5f6f7; color: #1d252c; }
+    body { margin: 0; min-height: 100vh; display: grid; grid-template-rows: auto 1fr; }
+    body.embed { grid-template-rows: 1fr; }
+    header { padding: 16px 22px 10px; background: #fff; border-bottom: 1px solid #d8dde2; }
+    h1 { margin: 0; font-size: clamp(20px, 3vw, 30px); letter-spacing: 0; }
+    .meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .chip { border: 1px solid #c8d0d8; border-radius: 999px; padding: 5px 9px; background: #f8fafb; font-size: 13px; }
+    main { display: grid; grid-template-columns: minmax(0, 1fr) 300px; min-height: 0; }
+    #viewport { position: relative; min-height: 560px; overflow: hidden; }
+    canvas { display: block; width: 100%; height: 100%; }
+    aside { border-left: 1px solid #d8dde2; background: #fff; padding: 18px; }
+    h2 { margin: 0 0 12px; font-size: 18px; letter-spacing: 0; }
+    dl { margin: 0; display: grid; gap: 12px; }
+    dt { font-weight: 700; }
+    dd { margin: 3px 0 0; color: #54616c; font-size: 14px; line-height: 1.45; }
+    #fallback { position: absolute; inset: 0; display: grid; place-items: center; padding: 20px; background: #f5f6f7; }
+    #fallback img { width: min(94vw, 920px); max-height: 82vh; object-fit: contain; }
+    body.is-three-ready #fallback { display: none; }
+    body.embed header,
+    body.embed aside { display: none; }
+    body.embed main { grid-template-columns: 1fr; min-height: 100vh; height: 100vh; }
+    body.embed #viewport { min-height: 100vh; height: 100vh; }
+    @media (max-width: 820px) { main { grid-template-columns: 1fr; } #viewport { min-height: 430px; } aside { border-left: 0; border-top: 1px solid #d8dde2; } }
+  </style>
+  <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"}}</script>
+</head>
+<body>
+  <script>
+    if (new URLSearchParams(window.location.search).has("embed")) {
+      document.body.classList.add("embed");
+    }
+  </script>
+  <header>
+    <h1>Relay Mount Rev D</h1>
+    <div class="meta">
+      <span class="chip">360 x 245 x 3 mm aluminium base; 300 x 197 x 3 mm insulating sheet matching the relay box footprint</span>
+      <span class="chip">Interactive rotate/zoom</span>
+      <span class="chip">Fabrication package visual</span>
+    </div>
+  </header>
+  <main>
+    <section id="viewport" aria-label="Interactive 3D fabrication visualisation">
+      <div id="fallback"><img src="./relay_mount_rev_d_3d_visualisation.svg" alt="Relay Mount Rev D static visualisation"></div>
+    </section>
+    <aside>
+      <h2>Assembly Read</h2>
+      <dl>
+        <div><dt>Package role</dt><dd>Simplified relay-box support: exact-footprint insulating sheet on a flat aluminium base plate.</dd></div>
+        <div><dt>Load path</dt><dd>The flat aluminium base bolts to the battery-stand ladder through exposed slots; the insulating sheet sits directly under the covered relay box.</dd></div>
+        <div><dt>Service intent</dt><dd>Keep the relay cover removable, transfer relay-box fixing holes from the actual box after orientation is confirmed, and use the base slots for stand attachment.</dd></div>
+      </dl>
+    </aside>
+  </main>
+  <script type="module">
+    import * as THREE from "three";
+    import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+
+    const sceneData = {"title":"Relay Mount Rev D","subtitle":"Simplified relay-box support: exact-footprint insulating sheet on a flat aluminium base plate.","camera":[420,330,500],"target":[0,150,0],"size":"360 x 245 x 3 mm aluminium base; 300 x 197 x 3 mm insulating sheet matching the relay box footprint","load_path":"The flat aluminium base bolts to the battery-stand ladder through exposed slots; the insulating sheet sits directly under the covered relay box.","service_intent":"Keep the relay cover removable, transfer relay-box fixing holes from the actual box after orientation is confirmed, and use the base slots for stand attachment.","boxes":[{"name":"Flat aluminium base plate 360 x 245 shown installed rotated","x":0,"y":3,"z":0,"w":245,"h":6,"d":360,"color":"aluminium"},{"name":"Exact relay-footprint insulating sheet 300 x 197 shown installed rotated","x":0,"y":10,"z":0,"w":197,"h":6,"d":300,"color":"plastic"},{"name":"Covered relay/fuse box on Rev D base rotated housing 197 x 300 x 80","x":0,"y":92,"z":0,"w":197,"h":300,"d":64,"color":"black"},{"name":"Covered relay/fuse box on Rev D base plain removable front cover","x":0,"y":92,"z":-38,"w":183,"h":286,"d":8,"color":"plastic"},{"name":"Covered relay/fuse box on Rev D base shallow raised cover rim","x":0,"y":92,"z":-44,"w":147,"h":250,"d":5,"color":"black"},{"name":"Covered relay/fuse box on Rev D base top power input cable boot 54 x 46 x 42 at relay offset X-42 Y+164 Z-52","x":-42,"y":256,"z":-52,"w":54,"h":46,"d":42,"color":"cableRed"},{"name":"Covered relay/fuse box on Rev D base top power output cable boot 54 x 46 x 42 at relay offset X+42 Y+164 Z-52","x":42,"y":256,"z":-52,"w":54,"h":46,"d":42,"color":"cableRed"},{"name":"Covered relay/fuse box on Rev D base front-facing control cable cluster 170 x 34 x 24 at relay offset X-18 Y-120 Z-112","x":-18,"y":-28,"z":-112,"w":170,"h":34,"d":24,"color":"rubber"},{"name":"Covered relay/fuse box on Rev D base top power cable service-loop volume","x":0,"y":300,"z":-52,"w":128,"h":42,"d":42,"color":"rubber"},{"name":"Exposed top stand-mount slot pair","x":0,"y":14,"z":-164,"w":170,"h":4,"d":14,"color":"silver"},{"name":"Exposed bottom stand-mount slot pair","x":0,"y":14,"z":164,"w":170,"h":4,"d":14,"color":"silver"}],"cylinders":[{"name":"Covered relay/fuse box on Rev D base upper cover screw","x":-46,"y":204,"z":-84,"r":4,"h":8,"color":"deepblack"},{"name":"Covered relay/fuse box on Rev D base lower cover screw","x":46,"y":-20,"z":-84,"r":4,"h":8,"color":"deepblack"},{"name":"Covered relay/fuse box on Rev D base carrier corner fixing","x":-84,"y":230,"z":-78,"r":5,"h":8,"color":"deepblack"},{"name":"Covered relay/fuse box on Rev D base carrier corner fixing","x":84,"y":-46,"z":-78,"r":5,"h":8,"color":"deepblack"}]};
+    const materialDefs = {
+      aluminium: [0xc1cbd3, 0.35, 0.38],
+      steel: [0x59636c, 0.45, 0.5],
+      wood: [0xb9874f, 0.1, 0.55],
+      wedge: [0xd2a263, 0.1, 0.52],
+      black: [0x202a33, 0.05, 0.62],
+      deepblack: [0x111820, 0.04, 0.7],
+      plastic: [0x2d3942, 0.02, 0.7],
+      relayblock: [0x2b333a, 0.04, 0.58],
+      red: [0xb7302a, 0.03, 0.42],
+      cableRed: [0xc51f1f, 0.03, 0.45],
+      fuseblue: [0x2387d7, 0.02, 0.28],
+      fuseyellow: [0xdfba21, 0.02, 0.3],
+      fusered: [0xd43a38, 0.02, 0.3],
+      brass: [0xc4a35a, 0.4, 0.36],
+      rubber: [0x161a1d, 0.02, 0.65],
+      silver: [0xd4d8dc, 0.35, 0.32],
+      white: [0xf4f6f8, 0.02, 0.3],
+      bendline: [0x2f3942, 0.05, 0.58],
+    };
+    const materials = Object.fromEntries(Object.entries(materialDefs).map(([key, value]) => [
+      key,
+      new THREE.MeshStandardMaterial({ color: value[0], metalness: value[1], roughness: value[2] })
+    ]));
+    const edgeMaterial = new THREE.LineBasicMaterial({ color: 0x25313a, transparent: true, opacity: 0.48 });
+
+    const mount = document.getElementById("viewport");
+    const threeScene = new THREE.Scene();
+    threeScene.background = new THREE.Color(0xf5f6f7);
+    const camera = new THREE.PerspectiveCamera(38, 1, 1, 4200);
+    const baseCameraPosition = new THREE.Vector3(...sceneData.camera);
+    const baseTarget = new THREE.Vector3(...sceneData.target);
+    camera.position.copy(baseCameraPosition);
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, preserveDrawingBuffer: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.shadowMap.enabled = true;
+    mount.appendChild(renderer.domElement);
+
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.target.copy(baseTarget);
+    controls.enableDamping = true;
+    controls.minDistance = 260;
+    controls.maxDistance = 1200;
+    controls.maxPolarAngle = Math.PI * 0.48;
+
+    const root = new THREE.Group();
+    threeScene.add(root);
+
+    function box(item) {
+      const mesh = new THREE.Mesh(
+        new THREE.BoxGeometry(item.w, item.h, item.d),
+        materials[item.color] || materials.aluminium
+      );
+      mesh.name = item.name;
+      mesh.position.set(item.x, item.y, item.z);
+      mesh.castShadow = true;
+      mesh.receiveShadow = true;
+      root.add(mesh);
+      if (item.color !== "bendline") {
+        const edges = new THREE.LineSegments(new THREE.EdgesGeometry(mesh.geometry), edgeMaterial);
+        edges.position.copy(mesh.position);
+        edges.rotation.copy(mesh.rotation);
+        edges.scale.copy(mesh.scale);
+        root.add(edges);
+      }
+    }
+
+    function cylinder(item) {
+      const mesh = new THREE.Mesh(
+        new THREE.CylinderGeometry(item.r, item.r, item.h, 36),
+        materials[item.color] || materials.aluminium
+      );
+      mesh.name = item.name;
+      mesh.position.set(item.x, item.y, item.z);
+      mesh.castShadow = true;
+      mesh.receiveShadow = true;
+      root.add(mesh);
+      const edges = new THREE.LineSegments(new THREE.EdgesGeometry(mesh.geometry), edgeMaterial);
+      edges.position.copy(mesh.position);
+      edges.rotation.copy(mesh.rotation);
+      root.add(edges);
+    }
+
+    sceneData.boxes.forEach(box);
+    (sceneData.cylinders || []).forEach(cylinder);
+
+    threeScene.add(new THREE.HemisphereLight(0xffffff, 0x98a1aa, 2.2));
+    const key = new THREE.DirectionalLight(0xffffff, 2.4);
+    key.position.set(260, 420, 300);
+    key.castShadow = true;
+    key.shadow.mapSize.set(2048, 2048);
+    threeScene.add(key);
+
+    const ground = new THREE.Mesh(new THREE.PlaneGeometry(900, 680), new THREE.ShadowMaterial({ color: 0x000000, opacity: 0.12 }));
+    ground.rotation.x = -Math.PI / 2;
+    ground.position.y = -62;
+    ground.receiveShadow = true;
+    threeScene.add(ground);
+
+    function resize() {
+      const width = mount.clientWidth;
+      const height = mount.clientHeight;
+      renderer.setSize(width, height, false);
+      camera.aspect = width / Math.max(1, height);
+      const aspect = width / Math.max(1, height);
+      const portraitScale = aspect < 0.9 ? Math.min(3.2, 1.35 / Math.max(aspect, 0.38)) : 1;
+      const nextPosition = baseTarget.clone().add(
+        baseCameraPosition.clone().sub(baseTarget).multiplyScalar(portraitScale)
+      );
+      camera.position.copy(nextPosition);
+      controls.target.copy(baseTarget);
+      controls.minDistance = Math.max(220, 260 * portraitScale);
+      controls.maxDistance = Math.max(1200, baseTarget.distanceTo(nextPosition) * 1.35);
+      camera.updateProjectionMatrix();
+      controls.update();
+    }
+    function animate() {
+      controls.update();
+      renderer.render(threeScene, camera);
+      requestAnimationFrame(animate);
+    }
+    resize();
+    window.addEventListener("resize", resize);
+    document.body.classList.add("is-three-ready");
+    animate();
+  </script>
+</body>
+</html>

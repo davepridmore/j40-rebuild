@@ -457,6 +457,18 @@ def draw_pdf_page(c: canvas.Canvas, drawing: Drawing) -> None:
         draw_dimension_v(c, ox + 280 * scale + 10 * pdf_mm, oy, oy + 185 * scale, "guard height 185")
         draw_dimension_h(c, ox + 80 * scale, ox + 200 * scale, oy + 160 * scale - 10 * pdf_mm, "bottom opening width 120")
         draw_dimension_v(c, ox + 200 * scale + 10 * pdf_mm, oy + 160 * scale, oy + 185 * scale, "bottom opening depth 25")
+    elif drawing.name == "relay_base_plate_rev_d":
+        draw_dimension_h(c, ox, ox + 360 * scale, oy + 245 * scale + 6 * pdf_mm, "base width 360")
+        draw_dimension_v(c, ox + 360 * scale + 10 * pdf_mm, oy, oy + 245 * scale, "base depth 245")
+        draw_dimension_h(c, ox + 30 * scale, ox + 330 * scale, oy + 122.5 * scale + 10 * pdf_mm, "relay footprint width 300")
+        draw_dimension_v(c, ox + 330 * scale + 10 * pdf_mm, oy + 24 * scale, oy + 221 * scale, "relay footprint depth 197")
+    elif drawing.name == "relay_insulating_sheet_rev_d":
+        draw_dimension_h(c, ox, ox + 300 * scale, oy + 197 * scale + 6 * pdf_mm, "relay box footprint width 300")
+        draw_dimension_v(c, ox + 300 * scale + 10 * pdf_mm, oy, oy + 197 * scale, "relay box footprint depth 197")
+    elif drawing.name == "battery_stand_adjustable_offset_bar_rev_b":
+        draw_dimension_h(c, ox, ox + 360 * scale, oy + 60 * scale + 6 * pdf_mm, "offset bar length 360")
+        draw_dimension_v(c, ox + 360 * scale + 10 * pdf_mm, oy, oy + 60 * scale, "offset bar width 60")
+        draw_dimension_h(c, ox + 132 * scale, ox + 334 * scale, oy + 30 * scale + 10 * pdf_mm, "body-side adjustment field")
 
     # Right-hand notes column.
     notes_x = plot_x + plot_w + gap
