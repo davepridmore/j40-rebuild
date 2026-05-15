@@ -588,7 +588,7 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
     "fabrication_handoff": [
         ("Publish package links in the UI", "Keep the fabrication index, PDFs, DXFs, SVGs, cut lists, and inspection sheets visible from the dashboard."),
         ("Keep rubber packages in Chassis Rubbers", "Do not duplicate Longman/body-mount rubber rows in Fabrication; link to Chassis Rubbers when needed."),
-        ("Send current electrical fabrication packages", "Track the three electrical requirements: electrical modules Rev A, MIDI plate Rev C, and relay mount Rev C."),
+        ("Send current electrical fabrication packages", "Track the active electrical requirements: MIDI enclosure Rev D and the battery power carrier."),
         ("Close first-article inspection", "Accept parts only after dimensional, material, fit, and release-status checks are recorded."),
     ],
     "mechanical_baseline": [
@@ -1112,13 +1112,11 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "process_steps": [
                     "Use docs/fabrication-handoff-index.md as the shop send-out index for electrical fabrication files.",
                     "Use data/manual/fabrication/battery_power_carrier_mount_rev_a/ for the current compact chassis-mounted battery stand and widened front/radiator-side access-ladder power carrier package.",
-                    "Use data/manual/fabrication/midi5_plate_mount_rev_c/ for the current 5-way MIDI holder plate and insulated subplate package.",
-                    "Keep data/manual/fabrication/relay_mount_rev_c/ as the fallback relay-only carrier if a split layout is deliberately approved.",
+                    "Use data/manual/fabrication/midi5_enclosure_rev_d/ for the current 5-way MIDI holder hinged enclosure and insulated subplate package.",
                     "Mock the chassis pickup geometry from the May 14 no-battery image as a formed saddle over the rail: start tray underside 180 mm above chassis rail top, allow 150-210 mm vertical adjustment, set tray centre 190 mm wing-side/outboard from the more central pickup centreline into the edge cavity, and allow 160-230 mm side-jog adjustment.",
-                    "Mock the widened front access-ladder cards from cardboard: 660 x 310 ladder, standard battery envelope 318 x 180 x 230 with central top terminals on a 340 x 265 tray with removable hold-down and lift-out path, rotated Relay Rev C folded tray 220 x 320 outside the battery footprint on the outboard/access edge with about 80 mm relay-to-battery service gap, relay plastic rear guard/underlay 185 x 280 ahead of the folded metal tray, top relay cutoff input and large power-output cluster, end-side relay input/cabin loom exit, MIDI Rev C open plate 190 x 150 on a separated top-front shelf started from the battery leading-edge datum with fuse 4 power input, attached side-gutter output comb/backplate, one enlarged double-wire output hole, and five output cables, folded cutoff/kill-switch base/guard 170 x 110 finished face / 210 x 150 flat pattern / 20 mm upward lips beside the MIDI shelf with far-side battery input, near-side cutoff-output split lugs to MIDI and relay, small-wire route under MIDI to relay top, 80 mm cable gutter, and depth blocks before final metal cutting.",
-                    "Keep data/manual/fabrication/electrical_modules_rev_a/ as the reference/provisional combined-module package only if that older route is reopened.",
+                    "Mock the widened front access-ladder cards from cardboard: 660 x 310 ladder, standard battery envelope 318 x 180 x 230 with central top terminals on a 340 x 265 tray with removable hold-down and lift-out path, rotated folded relay tray 220 x 320 outside the battery footprint on the outboard/access edge with about 80 mm relay-to-battery service gap, relay plastic rear guard/underlay 185 x 280 ahead of the folded metal tray, top relay cutoff input and large power-output cluster, end-side relay input/cabin loom exit, MIDI Rev D hinged enclosure 210 x 165 x 65 on a separated top-front shelf started from the battery leading-edge datum with fuse 4 grommeted power input, five grommeted output holes with the far-side output enlarged for two power cables, folded cutoff/kill-switch base/guard 170 x 110 finished face / 210 x 150 flat pattern / 20 mm upward lips beside the MIDI enclosure with far-side battery input, near-side cutoff-output split lugs to MIDI and relay, small-wire route under MIDI to relay top, 80 mm cable gutter, and depth blocks before final metal cutting.",
                     "Send the package PDFs for drawing review and the DXFs for cutting; keep SVGs with the job for visual checking.",
-                    "Trial-fit the formed chassis saddle, upright bridge, compact tray, widened access-ladder spine/tabs shifted into the edge cavity, outboard folded relay tray with plastic rear guard/underlay, relay top cutoff input and large power-output cluster, relay end-side input/cabin loom exit, central battery-datum MIDI plate/subplate with fuse 4 input, side-mounted cutoff/kill switch beside the MIDI shelf with far-side battery input, attached MIDI output comb/backplate and side gutter, small-wire under-MIDI route to relay top, engine/LHD keep-clear envelope, near-side cutoff-to-relay and cutoff-to-MIDI switched cable exits, and five MIDI output cables before wrapping or tying down the under-bonnet loom.",
+                    "Trial-fit the formed chassis saddle, upright bridge, compact tray, widened access-ladder spine/tabs shifted into the edge cavity, outboard folded relay tray with plastic rear guard/underlay, relay top cutoff input and large power-output cluster, relay end-side input/cabin loom exit, central battery-datum MIDI Rev D enclosure with fuse 4 input grommet, side-mounted cutoff/kill switch beside the MIDI enclosure with far-side battery input, five MIDI output grommets, small-wire under-MIDI route to relay top, engine/LHD keep-clear envelope, near-side cutoff-to-relay and cutoff-to-MIDI switched cable exits, and five MIDI output cables before wrapping or tying down the under-bonnet loom.",
                 ],
                 "tools": ["Drill", "Files", "Deburring tool", "Rivet nut tool or spanners", "Calipers"],
                 "supplies": ["Electrical fabrication DXF/PDF pack", "3.0 mm 5052-H32 aluminium", "HDPE/ABS/G10 sheet", "Spacers", "P-clips", "Fasteners"],
@@ -1191,17 +1189,15 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "remaining": "before permanent under-bonnet loom routing",
                 "instruction": "Track the defined electrical fabrication requirements as separate package rows.",
                 "process_steps": [
-                    "Use data/manual/fabrication/electrical_modules_rev_a/ as the reference/provisional combined-module requirement.",
-                    "Use data/manual/fabrication/midi5_plate_mount_rev_c/ as the current MIDI holder plate requirement.",
+                    "Use data/manual/fabrication/midi5_enclosure_rev_d/ as the current MIDI holder enclosure requirement.",
                     "Use data/manual/fabrication/battery_power_carrier_mount_rev_a/ as the current compact chassis-mounted battery stand and widened front access-ladder power carrier requirement.",
-                    "Use data/manual/fabrication/relay_mount_rev_c/ only as the fallback standalone relay carrier route.",
                     "Send each package PDF for review and its DXFs for cutting.",
                     "Keep SVGs with the job for visual checking.",
                     "Use the current chassis pickup mock-up estimate first as a formed saddle over the rail: tray underside 180 mm above chassis rail top, adjustable 150-210 mm; tray centre 190 mm wing-side/outboard from the more central pickup centreline into the edge cavity, adjustable 160-230 mm.",
-                    "Trial-fit electrical parts with the formed chassis saddle, upright bridge, spacers, central battery-to-far-side-cutoff input path, near-side cutoff-to-relay and cutoff-to-MIDI switched cable exits, outboard covered relay base with plastic rear guard/underlay plus top cutoff input, top large output cluster and end-side input/cabin loom exits, battery-datum MIDI base/subplate with fuse 4 input, side-mounted cutoff/kill switch beside the MIDI shelf, attached MIDI output comb/backplate and side gutter, small-wire route under MIDI to relay top, five MIDI output cables, and engine/LHD keep-clear envelope before tying down the loom.",
+                    "Trial-fit electrical parts with the formed chassis saddle, upright bridge, spacers, central battery-to-far-side-cutoff input path, near-side cutoff-to-relay and cutoff-to-MIDI switched cable exits, outboard covered relay base with plastic rear guard/underlay plus top cutoff input, top large output cluster and end-side input/cabin loom exits, battery-datum MIDI Rev D enclosure with fuse 4 input grommet, side-mounted cutoff/kill switch beside the MIDI enclosure, five MIDI output grommets, small-wire route under MIDI to relay top, five MIDI output cables, and engine/LHD keep-clear envelope before tying down the loom.",
                 ],
                 "tools": ["DXF viewer", "Drill", "Files", "Deburring tool", "Calipers"],
-                "supplies": ["Battery power carrier PDF/DXFs", "MIDI plate PDF/DXFs", "Fallback relay mount PDF/DXFs", "Aluminium sheet", "Insulator sheet", "Spacers"],
+                "supplies": ["Battery power carrier PDF/DXFs", "MIDI enclosure PDF/DXFs", "Aluminium sheet", "Insulator sheet", "Spacers"],
                 "hold_point": "Final loom routing waits until relay, MIDI, and side-mounted battery-side cutoff/kill-switch mounts fit without forcing cable bend radius or leaving live studs exposed.",
                 "image_tokens": ["relay", "fuse", "midi", "fabrication", "battery"],
             },
@@ -1974,12 +1970,22 @@ FABRICATION_DESIGN_LINKS_BY_PACKAGE: dict[str, list[tuple[str, str]]] = {
         ("data/manual/fabrication/suspension_wood_cribbing_rev_a/fabricator_cut_list.csv", "Cribbing cut list CSV"),
         ("data/manual/fabrication/suspension_wood_cribbing_rev_a/inspection_checklist.csv", "Cribbing inspection checklist CSV"),
     ],
+    "midi5_enclosure_rev_d": [
+        ("deliverables/fabrication_packages/midi5_enclosure_rev_d.zip", "MIDI enclosure package ZIP"),
+        ("data/manual/fabrication/midi5_enclosure_rev_d/j40_midi5_enclosure_rev_d_dimension_sheet.pdf", "MIDI enclosure dimension sheet PDF"),
+        ("data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.dxf", "MIDI enclosure body DXF"),
+        ("data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.svg", "MIDI enclosure body SVG"),
+        ("data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.dxf", "MIDI holder subplate DXF"),
+        ("data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.svg", "MIDI holder subplate SVG"),
+        ("data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.dxf", "MIDI enclosure lid DXF"),
+        ("data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.svg", "MIDI enclosure lid SVG"),
+    ],
     "midi5_plate_mount_rev_c": [
-        ("deliverables/fabrication_packages/midi5_plate_mount_rev_c.zip", "MIDI plate package ZIP"),
-        ("data/manual/fabrication/midi5_plate_mount_rev_c/j40_midi5_plate_mount_rev_c_dimension_sheet.pdf", "MIDI plate dimension sheet PDF"),
-        ("data/manual/fabrication/midi5_plate_mount_rev_c/midi5_holder_subplate_rev_c.dxf", "MIDI holder subplate DXF"),
-        ("data/manual/fabrication/midi5_plate_mount_rev_c/midi5_holder_subplate_rev_c.svg", "MIDI holder subplate SVG"),
-        ("data/manual/fabrication/midi5_plate_mount_rev_c/midi5_mount_plate_rev_c.dxf", "MIDI mount plate DXF"),
+        ("deliverables/fabrication_packages/midi5_plate_mount_rev_c.zip", "Superseded MIDI plate package ZIP"),
+        ("data/manual/fabrication/midi5_plate_mount_rev_c/j40_midi5_plate_mount_rev_c_dimension_sheet.pdf", "Superseded MIDI plate dimension sheet PDF"),
+        ("data/manual/fabrication/midi5_plate_mount_rev_c/midi5_holder_subplate_rev_c.dxf", "Superseded MIDI holder subplate DXF"),
+        ("data/manual/fabrication/midi5_plate_mount_rev_c/midi5_holder_subplate_rev_c.svg", "Superseded MIDI holder subplate SVG"),
+        ("data/manual/fabrication/midi5_plate_mount_rev_c/midi5_mount_plate_rev_c.dxf", "Superseded MIDI mount plate DXF"),
     ],
     "electrical_device_models_rev_a": [
         ("deliverables/fabrication_packages/electrical_device_models_rev_a.zip", "Electrical device model package ZIP"),
@@ -2088,7 +2094,7 @@ FABRICATION_DESIGN_ENTRY_PACKAGES: dict[str, tuple[str, ...]] = {
     "part_body_mount_hardware_kit": ("rubber_recreation_rev_a",),
     "part_body_mount_shim_pack": ("rubber_recreation_rev_a",),
     "part_suspension_wooden_cribbing_blocks": ("suspension_wood_cribbing_rev_a",),
-    "service_local_3d_printing_fabrication_prototypes": ("midi5_plate_mount_rev_c", "electrical_device_models_rev_a"),
+    "service_local_3d_printing_fabrication_prototypes": ("midi5_enclosure_rev_d", "electrical_device_models_rev_a"),
     "front_radiator_two_side_retention_fabrication_20260508": ("front_radiator_two_side_retention_rev_a",),
     "battery_power_carrier_mount_fabrication_20260508": ("battery_power_carrier_mount_rev_a", "electrical_device_models_rev_a"),
 }
@@ -2108,21 +2114,31 @@ FABRICATION_PACKAGE_VISUAL_LINKS: dict[str, list[tuple[str, str]]] = {
     "electrical_modules_rev_a": [
         (
             "data/manual/fabrication/electrical_modules_rev_a/electrical_modules_rev_a_3d_visualisation.html",
-            "Interactive 3D visualisation",
+            "Reference interactive 3D visualisation",
         ),
         (
             "data/manual/fabrication/electrical_modules_rev_a/electrical_modules_rev_a_3d_visualisation.svg",
+            "Reference static 3D visualisation",
+        ),
+    ],
+    "midi5_enclosure_rev_d": [
+        (
+            "data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_rev_d_3d_visualisation.html",
+            "Interactive 3D visualisation",
+        ),
+        (
+            "data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_rev_d_3d_visualisation.svg",
             "Static 3D visualisation",
         ),
     ],
     "midi5_plate_mount_rev_c": [
         (
             "data/manual/fabrication/midi5_plate_mount_rev_c/midi5_plate_mount_rev_c_3d_visualisation.html",
-            "Interactive 3D visualisation",
+            "Superseded interactive 3D visualisation",
         ),
         (
             "data/manual/fabrication/midi5_plate_mount_rev_c/midi5_plate_mount_rev_c_3d_visualisation.svg",
-            "Static 3D visualisation",
+            "Superseded static 3D visualisation",
         ),
     ],
     "electrical_device_models_rev_a": [
@@ -2174,11 +2190,11 @@ FABRICATION_PACKAGE_VISUAL_LINKS: dict[str, list[tuple[str, str]]] = {
     "relay_mount_rev_c": [
         (
             "data/manual/fabrication/relay_mount_rev_c/relay_mount_rev_c_3d_visualisation.html",
-            "Interactive 3D visualisation",
+            "Fallback interactive 3D visualisation",
         ),
         (
             "data/manual/fabrication/relay_mount_rev_c/relay_mount_rev_c_3d_visualisation.svg",
-            "Static 3D visualisation",
+            "Fallback static 3D visualisation",
         ),
     ],
 }
@@ -2230,13 +2246,12 @@ def fabrication_design_links_for_part(row: dict[str, Any]) -> list[dict[str, Any
             package_ids.append("rubber_recreation_rev_a")
         if "cribbing" in blob or "wedge chock" in blob:
             package_ids.append("suspension_wood_cribbing_rev_a")
-        if "midi" in blob and any(token in blob for token in ("subplate", "plate", "fabrication", "3d printing", "cnc")):
-            package_ids.append("midi5_plate_mount_rev_c")
+        if "midi" in blob and any(token in blob for token in ("subplate", "plate", "enclosure", "fabrication", "3d printing", "cnc")):
+            package_ids.append("midi5_enclosure_rev_d")
         if any(token in blob for token in ("battery power carrier", "power carrier", "cutoff carrier")):
             package_ids.append("battery_power_carrier_mount_rev_a")
         if "relay" in blob and any(token in blob for token in ("carrier", "guard", "mount", "fabrication")):
             package_ids.append("relay_mount_rev_c")
-
     if any(
         token in blob
         for token in (

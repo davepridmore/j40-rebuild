@@ -3516,7 +3516,8 @@
       "FS-STRIP-R",
       "BUMP-60010-LONG",
       "BUMP-60020-SHORT",
-      "MIDI5-PLATE-001",
+      "MIDI5-ENC-BODY-001",
+      "MIDI5-LID-001",
       "MIDI5-SUBPLATE-001",
       "PWR-CARRIER-001",
       "BPCC-BACKPLANE-001",
@@ -3529,7 +3530,7 @@
     const isFabricationRow =
       controlledIds.has(rowId) ||
       partNumber.endsWith(".dxf") ||
-      ["rubber_recreation_rev_a", "midi5_plate_mount_rev_c", "battery_power_carrier_mount_rev_a", "relay_mount_rev_c"].some((token) => route.includes(token));
+      ["rubber_recreation_rev_a", "midi5_enclosure_rev_d", "midi5_plate_mount_rev_c", "relay_mount_rev_c", "battery_power_carrier_mount_rev_a"].some((token) => route.includes(token));
 
     if (!isFabricationRow) {
       return null;
@@ -3571,7 +3572,7 @@
     if (rowId === "FS-STRIP-R" || partNumber.includes("fs_strip_right") || (hasAny("front-support strip", "front support strip", "strip rubber") && hasAny("right", "right-side", "right side"))) {
       return scoutReferenceImage("../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg", "right front-support strip template hold", "fs_strip_right_template_blank_rev_a");
     }
-    if (rowId === "MIDI5-PLATE-001" || rowId === "MIDI5-SUBPLATE-001" || hasAny("midi5_mount_plate", "midi5_holder_subplate", "midi 5-way structural", "midi 5-way non-conductive")) {
+    if (rowId === "MIDI5-ENC-BODY-001" || rowId === "MIDI5-LID-001" || rowId === "MIDI5-SUBPLATE-001" || hasAny("midi5_enclosure", "midi5_mount_plate", "midi5_holder_subplate", "midi 5-way structural", "midi 5-way non-conductive")) {
       return previous("../../photos/20260411_143135.jpg", "received MIDI holder bank to mount", "20260411_143135", ["midi5", "previous"]);
     }
     if (rowId === "RELAY-CARRIER-001" || rowId === "RELAY-GUARD-001" || hasAny("relay_carrier", "relay_rear_guard", "daier prewired", "10-way relay/fuse", "10 way relay/fuse")) {
@@ -4298,30 +4299,43 @@
         notes: "Not production-CNC until the right carrier trace updates the DXF and confirms the part is required.",
       },
       {
-        id: "MIDI5-PLATE-001",
-        item: "MIDI 5-way structural mount plate",
-        partNumber: "midi5_mount_plate_rev_c.dxf",
-        route: "midi5_plate_mount_rev_c",
+        id: "MIDI5-ENC-BODY-001",
+        item: "MIDI 5-way hinged enclosure body",
+        partNumber: "midi5_enclosure_body_rev_d.dxf",
+        route: "midi5_enclosure_rev_d",
         state: "current_release",
-        spec: "CNC/cut-ready open mount plate for five linked MIDI fuse holders.",
+        spec: "CNC/cut-and-fold aluminium enclosure body for the full five-holder MIDI fuse bank.",
         qty: "1",
-        dimension: "190 x 150 mm flat plate; six 5.5 mm subplate standoff holes; four site-fit vehicle mount slots; five 6.5 mm cable P-clip holes.",
+        dimension: "340 x 295 mm flat pattern; finished floor 210 x 165 mm with 65 mm folded side walls; input side has one 20 mm fuse 4/bus-bar feed grommet pilot; output side has four 16 mm pilots plus one far-side 28 mm two-cable output pilot.",
         material: "3.0 mm 5052-H32 aluminium",
-        sourceBasis: "data/manual/fabrication/midi5_plate_mount_rev_c/midi5_mount_plate_rev_c.dxf; j40_midi5_plate_mount_rev_c_dimension_sheet.pdf",
-        action: "Cut from the Rev C DXF/PDF in mm; use 10-12 mm spacers to the holder subplate and add P-clips after routing.",
+        sourceBasis: "data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.dxf; j40_midi5_enclosure_rev_d_dimension_sheet.pdf",
+        action: "Cut and fold from the Rev D DXF/PDF in mm, deburr all cable holes, and open pilot holes only to the actual grommet OD after cable sizing.",
+      },
+      {
+        id: "MIDI5-LID-001",
+        item: "MIDI 5-way hinged enclosure lid",
+        partNumber: "midi5_enclosure_lid_rev_d.dxf",
+        route: "midi5_enclosure_rev_d",
+        state: "current_release",
+        spec: "Flat aluminium lid for the Rev D MIDI enclosure, drilled for input-side hinge and output-side latch/retainer points.",
+        qty: "1",
+        dimension: "230 x 185 mm lid panel with three hinge holes and two output-side latch holes.",
+        material: "2.0-3.0 mm aluminium",
+        sourceBasis: "data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.dxf; j40_midi5_enclosure_rev_d_dimension_sheet.pdf",
+        action: "Fit the hinge on the input/bus side so fuse service does not disturb the five output cables held by the grommets.",
       },
       {
         id: "MIDI5-SUBPLATE-001",
         item: "MIDI 5-way non-conductive holder subplate",
-        partNumber: "midi5_holder_subplate_rev_c.dxf",
-        route: "midi5_plate_mount_rev_c",
+        partNumber: "midi5_holder_subplate_rev_d.dxf",
+        route: "midi5_enclosure_rev_d",
         state: "current_release",
-        spec: "CNC/router-ready insulated holder board for five linked MIDI holders.",
+        spec: "CNC/router-ready insulated holder board for five linked MIDI holders inside the Rev D aluminium enclosure.",
         qty: "1",
         dimension: "140 x 85 mm board; ten 4.5 mm holder holes on 20.2 mm pitch with 44 mm row separation; six 5.5 mm standoff holes.",
         material: "5.0 mm HDPE, ABS, G10, or phenolic",
-        sourceBasis: "data/manual/fabrication/midi5_plate_mount_rev_c/midi5_holder_subplate_rev_c.dxf; j40_midi5_plate_mount_rev_c_dimension_sheet.pdf",
-        action: "Route/print only in non-conductive material; keep common feed side and five fused output side clear.",
+        sourceBasis: "data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.dxf; j40_midi5_enclosure_rev_d_dimension_sheet.pdf",
+        action: "Route/print only in non-conductive material; the second-from-last holder is the fuse 4 input/bus feed and the opposite side carries five fused outputs.",
       },
       {
         id: "PWR-CARRIER-001",
@@ -4330,14 +4344,14 @@
         route: "battery_power_carrier_mount_rev_a",
         state: "prototype_release_mockup_required",
         image: scoutPreviousPartImage("../../photos/20260317_235232_gp_3Ojs4Rag.jpg", "battery-side engine-bay location", "20260317_235232_gp_3Ojs4Rag", ["battery", "carrier"]),
-        spec: "Compact steel chassis-bolted stand that supports a standard N70/27-class battery envelope first, keeps the hold-down removable and the battery lift-out path clear, then uses measured rails/tabs for the already-fabricated Relay Rev C folded tray, MIDI Rev C open plate/subplate with seated output comb/backplate, folded master cutoff base/guard with upward lips, and cable support points.",
+        spec: "Compact steel chassis-bolted stand that supports a standard N70/27-class battery envelope first, keeps the hold-down removable and the battery lift-out path clear, then uses measured rails/tabs for the folded relay tray, MIDI Rev D hinged enclosure/subplate, folded master cutoff base/guard with upward lips, and cable support points.",
         qty: "1",
-        dimension: "Compact top tray 340 x 265 mm; standard battery envelope 318 x 180 x 230 mm with central top terminals; widened front access ladder 660 x 310 mm; formed chassis saddle nominal 220 x 230 mm flat pattern with 70 mm near leg, measured rail-top cap, and 70 mm far leg; upright side plates 110 x 220 mm; estimated tray rise 180 mm above chassis top with 150-210 mm adjustment; estimated tray centre jog 190 mm wing-side/outboard into the edge cavity with 160-230 mm adjustment; rotated Relay Rev C folded tray face 220 x 320 mm plus 185 x 280 mm plastic rear guard/underlay before the folded metal tray; relay-to-battery service gap about 80 mm; relay top cutoff input 54 x 46 x 42 mm, top large power-output cluster 78 x 58 x 48 mm, and end-side input/cabin loom cluster 170 x 34 x 24 mm; MIDI Rev C open plate 190 x 150 mm plus 140 x 85 mm subplate, fuse 4 power input, seated output comb/backplate, and enlarged double-wire output access hole; side-mounted folded cutoff/kill-switch base/guard 170 x 110 mm finished face / 210 x 150 mm flat pattern / 20 mm upward lips.",
+        dimension: "Compact top tray 340 x 265 mm; standard battery envelope 318 x 180 x 230 mm with central top terminals; widened front access ladder 660 x 310 mm; formed chassis saddle nominal 220 x 230 mm flat pattern with 70 mm near leg, measured rail-top cap, and 70 mm far leg; upright side plates 110 x 220 mm; estimated tray rise 180 mm above chassis top with 150-210 mm adjustment; estimated tray centre jog 190 mm wing-side/outboard into the edge cavity with 160-230 mm adjustment; rotated folded relay tray face 220 x 320 mm plus 185 x 280 mm plastic rear guard/underlay before the folded metal tray; relay-to-battery service gap about 80 mm; relay top cutoff input 54 x 46 x 42 mm, top large power-output cluster 78 x 58 x 48 mm, and end-side input/cabin loom cluster 170 x 34 x 24 mm; MIDI Rev D hinged enclosure 210 x 165 x 65 mm plus 140 x 85 mm subplate, fuse 4 grommeted power input, four single output grommets, and one far-side two-cable output grommet; side-mounted folded cutoff/kill-switch base/guard 170 x 110 mm finished face / 210 x 150 mm flat pattern / 20 mm upward lips.",
         material: "3.0 mm mild-steel compact tray/rail/tabs; 4.0 mm mild-steel formed chassis saddle and upright bridge.",
         sourceBasis: "data/manual/fabrication/battery_power_carrier_mount_rev_a/README.md; j40_battery_power_carrier_mount_rev_a_dimension_sheet.pdf",
-        action: "Mock the compact steel tray/stand with the battery and known component bases installed. Shift the whole tray/front-ladder assembly from the chassis saddle toward the wing-side edge cavity, put the covered Relay Rev C tray outside the battery footprint on the outboard/access edge with about 80 mm relay-to-battery service gap, keep the kill switch beside the MIDI shelf instead of after the MIDI outputs, and prove central battery-to-far-side-cutoff input routing, near-side cutoff-to-relay and cutoff-to-MIDI fuse 4 switched cable bends, relay top output and end-side input exits, small-wire routing under MIDI to relay top, battery lift-out, the seated MIDI output comb/backplate, and five MIDI output cables before cutting final ladder holes.",
+        action: "Mock the compact steel tray/stand with the battery and known component bases installed. Shift the whole tray/front-ladder assembly from the chassis saddle toward the wing-side edge cavity, put the covered relay tray outside the battery footprint on the outboard/access edge with about 80 mm relay-to-battery service gap, keep the kill switch beside the MIDI enclosure instead of after the MIDI outputs, and prove central battery-to-far-side-cutoff input routing, near-side cutoff-to-relay and cutoff-to-MIDI fuse 4 switched cable bends, relay top output and end-side input exits, small-wire routing under MIDI to relay top, battery lift-out, five MIDI output grommets, and five MIDI output cables before cutting final ladder holes.",
         reject: "Do not mount to battery tray skin, radiator support strap, unsupported inner wing, or anywhere live studs can contact carrier/body/bonnet/tools.",
-        notes: "Current preferred route. Relay Rev C is already a folded tray, but the flat plastic rear guard/underlay sits before the folded metal tray and the covered relay box is rotated so the large power output exits at the top and the input/cabin loom exits the end side. Central battery positive enters the far-side cutoff stud first, then the near-side cutoff output splits to the MIDI fuse 4 input and the relay top input. MIDI Rev C is an open plate/subplate with seated output comb/backplate, one enlarged double-wire output hole, and five output cables. The cutoff/kill switch sits beside the MIDI shelf. Use the widened access-ladder placement shifted into the edge cavity unless the cavity map proves a smaller, clear, and serviceable alternative.",
+        notes: "Current preferred route. The relay tray is already folded, but the flat plastic rear guard/underlay sits before the folded metal tray and the covered relay box is rotated so the large power output exits at the top and the input/cabin loom exits the end side. Central battery positive enters the far-side cutoff stud first, then the near-side cutoff output splits to the MIDI fuse 4 input and the relay top input. MIDI Rev D is a hinged aluminium enclosure with one fuse 4 input grommet, five output grommets, and the far-side output hole enlarged for two power cables. The cutoff/kill switch sits beside the MIDI enclosure. Use the widened access-ladder placement shifted into the edge cavity unless the cavity map proves a smaller, clear, and serviceable alternative.",
       },
       {
         id: "BPCC-FRONT-RAIL-001",
@@ -4346,12 +4360,12 @@
         route: "battery_power_carrier_mount_rev_a",
         state: "cavity_map_required",
         image: scoutReferenceImage("../../data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_compact_front_service_rail_rev_b.svg", "Widened front access ladder Rev B", "battery_power_compact_front_service_rail_rev_b"),
-        spec: "Widened steel access ladder for the measured edge-cavity rotated Relay Rev C tray pickup, MIDI and side kill-switch shelf pickups, protected cable support field, relay top output and end-side input exits, cutoff-switched branch feeds, small-wire under-MIDI route, seated MIDI output comb/backplate, and MIDI five-output fanout.",
+        spec: "Widened steel access ladder for the measured edge-cavity rotated relay tray pickup, MIDI Rev D enclosure and side kill-switch shelf pickups, protected cable support field, relay top output and end-side input exits, cutoff-switched branch feeds, small-wire under-MIDI route, and MIDI five-output fanout.",
         qty: "1",
-        dimension: "660 x 310 mm with rail-to-stand slots, outboard relay tray attachment slots, MIDI and side kill-switch shelf pickup holes, relay top cutoff-input and large-output clearances, relay end-side input/cabin loom clearance, near-side cutoff-output split cable clearance, small-wire under-MIDI route, seated MIDI output comb/backplate, enlarged double-wire output hole, 80 mm cable-gutter clearance, MIDI five-output fanout clearance, and P-clip holes.",
+        dimension: "660 x 310 mm with rail-to-stand slots, outboard relay tray attachment slots, MIDI enclosure and side kill-switch shelf pickup holes, relay top cutoff-input and large-output clearances, relay end-side input/cabin loom clearance, near-side cutoff-output split cable clearance, small-wire under-MIDI route, 80 mm cable-gutter clearance, MIDI five-output fanout clearance, and P-clip holes.",
         material: "3.0 mm mild steel.",
         sourceBasis: "data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv",
-        action: "Use as cardboard template first; only release final metal if the front/radiator-side cavity map proves the shifted edge-cavity tray/ladder position, about 80 mm relay-to-battery service gap, relay cover access, relay top output and end-side input exits, central battery-to-far-side-cutoff input routing, near-side cutoff-to-relay and cutoff-to-MIDI fuse 4 switched feeds, small-wire under-MIDI routing, five-output MIDI cable bend clearance through the seated comb and side gutter, enlarged double-wire output clearance, battery lift-out, and bonnet/radiator/hose clearance.",
+        action: "Use as cardboard template first; only release final metal if the front/radiator-side cavity map proves the shifted edge-cavity tray/ladder position, about 80 mm relay-to-battery service gap, relay cover access, relay top output and end-side input exits, central battery-to-far-side-cutoff input routing, near-side cutoff-to-relay and cutoff-to-MIDI fuse 4 switched feeds, small-wire under-MIDI routing, five-output MIDI cable bend clearance through the Rev D grommeted enclosure side, enlarged far-side two-cable output clearance, battery lift-out, and bonnet/radiator/hose clearance.",
       },
       {
         id: "BPCC-TRAY-001",
@@ -4455,11 +4469,11 @@
       {
         id: "ELEC-UNDERLAY-001",
         item: "MIDI holder insulating underlay / subplate",
-        route: "midi5_plate_mount_rev_c",
+        route: "midi5_enclosure_rev_d",
         state: "external_plastic_quote",
-        partNumber: "midi5_holder_subplate_rev_c.dxf",
+        partNumber: "midi5_holder_subplate_rev_d.dxf",
         image: scoutPreviousPartImage("../../photos/20260411_143135.jpg", "MIDI holder bank needing non-conductive underlay", "20260411_143135", ["midi5", "underlay"]),
-        purpose: "Non-conductive middle board between the five linked MIDI holders and the owner-made metal support plate.",
+        purpose: "Non-conductive middle board between the five linked MIDI holders and the Rev D aluminium enclosure.",
         definition: "140 x 85 x 5.0 mm board; ten 4.5 mm holder holes on 20.2 mm pitch with 44 mm row separation; six 5.5 mm standoff holes.",
         material: "5.0 mm HDPE, ABS, G10, or phenolic",
         action: "This is the only current external plastic/CNC quote row.",
@@ -4503,7 +4517,7 @@
         "New sheet/print material only; no reused plastic, old rubber, scrap offcut of unknown material, or secondhand insulation.",
         "One-piece price, setup charge if any, and lead time.",
         "Basic tolerance and finish expectation before cutting or printing.",
-        "Agreement that this is only the non-conductive underlay; metal plates/brackets are owner-made.",
+        "Agreement that this is only the non-conductive underlay; the metal enclosure body/lid are separate aluminium fabrication rows.",
       ],
       bench_test: [
         "Ask the shop to inspect the file and confirm scale before quoting.",
@@ -4518,7 +4532,7 @@
       ],
       capture_before_leaving: [
         "Shop name, phone number, location, material, lead time, and price.",
-        "Photo or screenshot of the quoted file name: midi5_holder_subplate_rev_c.",
+        "Photo or screenshot of the quoted file name: midi5_holder_subplate_rev_d.",
         "Photo of sample material or sample cut/print quality if available.",
       ],
       price_guidance: {

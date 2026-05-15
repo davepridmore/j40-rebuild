@@ -185,6 +185,45 @@ def midi_bank_boxes(x: float, y: float, z: float, prefix: str, count: int = 5) -
     return boxes
 
 
+def midi_enclosed_bank_boxes(x: float, y: float, z: float, prefix: str) -> list[dict[str, object]]:
+    boxes: list[dict[str, object]] = [
+        {"name": f"{prefix} 140 x 85 insulated subplate", "x": x, "y": y + 8, "z": z, "w": 140, "h": 12, "d": 85, "color": "deepblack"},
+        {"name": f"{prefix} common feed bus single input side", "x": x, "y": y + 62, "z": z - 46, "w": 128, "h": 10, "d": 12, "color": "brass"},
+    ]
+    pitch = 27
+    start = x - (4 * pitch) / 2
+    for index in range(5):
+        holder_x = start + index * pitch
+        boxes.extend(
+            [
+                {"name": f"{prefix} MIDI holder {index + 1} black linked base", "x": holder_x, "y": y + 22, "z": z, "w": 25, "h": 18, "d": 82, "color": "deepblack"},
+                {"name": f"{prefix} MIDI holder {index + 1} red hinged cover", "x": holder_x, "y": y + 42, "z": z, "w": 24, "h": 26, "d": 72, "color": "red"},
+                {"name": f"{prefix} MIDI holder {index + 1} left mounting ear", "x": holder_x - 17, "y": y + 17, "z": z - 42, "w": 12, "h": 8, "d": 18, "color": "deepblack"},
+                {"name": f"{prefix} MIDI holder {index + 1} right mounting ear", "x": holder_x + 17, "y": y + 17, "z": z + 42, "w": 12, "h": 8, "d": 18, "color": "deepblack"},
+            ]
+        )
+    return boxes
+
+
+def midi_enclosure_boxes(x: float, y: float, z: float, prefix: str) -> list[dict[str, object]]:
+    holder_xs = [x - 54, x - 27, x, x + 27, x + 54]
+    boxes: list[dict[str, object]] = [
+        {"name": f"{prefix} folded aluminium enclosure floor 210 x 165", "x": x, "y": y + 3, "z": z, "w": 210, "h": 6, "d": 165, "color": "aluminium"},
+        {"name": f"{prefix} input/bus side wall with fuse 4 feed grommet", "x": x, "y": y + 35, "z": z - 84, "w": 210, "h": 65, "d": 6, "color": "aluminium"},
+        {"name": f"{prefix} output side wall with five grommeted branch exits", "x": x, "y": y + 35, "z": z + 84, "w": 210, "h": 65, "d": 6, "color": "aluminium"},
+        {"name": f"{prefix} left end wall", "x": x - 108, "y": y + 35, "z": z, "w": 6, "h": 65, "d": 165, "color": "aluminium"},
+        {"name": f"{prefix} right end wall", "x": x + 108, "y": y + 35, "z": z, "w": 6, "h": 65, "d": 165, "color": "aluminium"},
+        {"name": f"{prefix} hinged lid shown open on input side", "x": x, "y": y + 112, "z": z - 118, "w": 230, "h": 6, "d": 185, "color": "aluminium"},
+        {"name": f"{prefix} input-side hinge leaf", "x": x, "y": y + 72, "z": z - 91, "w": 180, "h": 8, "d": 8, "color": "silver"},
+        {"name": f"{prefix} output-side latch tab pair", "x": x, "y": y + 72, "z": z + 91, "w": 90, "h": 8, "d": 8, "color": "silver"},
+        {"name": f"{prefix} fuse 4 input grommet to common bus bar", "x": x + 27, "y": y + 43, "z": z - 89, "w": 26, "h": 20, "d": 8, "color": "rubber"},
+        {"name": f"{prefix} far-side output 5 enlarged two-cable grommet", "x": holder_xs[-1], "y": y + 43, "z": z + 89, "w": 34, "h": 24, "d": 8, "color": "rubber"},
+    ]
+    for index, holder_x in enumerate(holder_xs[:-1]):
+        boxes.append({"name": f"{prefix} output {index + 1} single-cable grommet", "x": holder_x, "y": y + 43, "z": z + 89, "w": 22, "h": 18, "d": 8, "color": "rubber"})
+    return boxes
+
+
 def midi_bank_cylinders(x: float, y: float, z: float, prefix: str, count: int = 5) -> list[dict[str, object]]:
     cylinders: list[dict[str, object]] = []
     pitch = 27
@@ -263,19 +302,40 @@ SCENES = {
             *midi_bank_cylinders(0, 6, 0, "MIDI Rev C active five-way bank", count=5),
         ],
     },
+
+    "midi5_enclosure_rev_d": {
+        "title": "MIDI 5-Way Hinged Enclosure Rev D",
+        "subtitle": "Folded aluminium box around the full five-holder MIDI bank, with hinged lid and grommeted input/output sides.",
+        "camera": [340, 290, 430],
+        "target": [0, 45, 0],
+        "size": "210 x 165 x 65 mm finished enclosure body; 230 x 185 mm hinged lid; 140 x 85 mm insulated holder subplate",
+        "load_path": "The aluminium body is the vehicle-side carrier; the non-conductive subplate isolates the MIDI holders from the enclosure.",
+        "service_intent": "Open the hinged lid for fuse service while the output wires remain held by five grommets; the far-side output grommet is enlarged for two power cables and the input grommet lands at fuse 4.",
+        "boxes": [
+            *midi_enclosure_boxes(0, 6, 0, "MIDI Rev D enclosure"),
+            *midi_enclosed_bank_boxes(0, 12, 0, "MIDI Rev D active five-way bank"),
+        ],
+        "cylinders": [
+            {"name": "Front left enclosure floor screw", "x": -82, "y": 16, "z": -62, "r": 3, "h": 8, "color": "silver"},
+            {"name": "Front right enclosure floor screw", "x": 82, "y": 16, "z": -62, "r": 3, "h": 8, "color": "silver"},
+            {"name": "Rear left enclosure floor screw", "x": -82, "y": 16, "z": 62, "r": 3, "h": 8, "color": "silver"},
+            {"name": "Rear right enclosure floor screw", "x": 82, "y": 16, "z": 62, "r": 3, "h": 8, "color": "silver"},
+            *midi_bank_cylinders(0, 12, 0, "MIDI Rev D active five-way bank", count=5),
+        ],
+    },
     "electrical_device_models_rev_a": {
         "title": "Electrical Device Models Rev A",
         "subtitle": "Separate photo-informed device envelopes for relay box, 100A breaker/cutoff, and MIDI fuse holders.",
         "camera": [520, 320, 620],
         "target": [20, 80, 0],
-        "size": "Relay housing rotated to 197 x 300 x 80 mm view with top power in/out and front control-cable exits; MIDI holder bank on 140 x 85 board; 100A breaker visual envelope pending final caliper check",
+        "size": "Relay housing rotated to 197 x 300 x 80 mm view with top power in/out and front control-cable exits; MIDI Rev D enclosure around five holders on 140 x 85 board; 100A breaker visual envelope pending final caliper check",
         "load_path": "Reference-only device models used inside the battery power carrier and standalone relay/MIDI views.",
         "service_intent": "Use this page to inspect device shapes separately before judging the combined battery-side packaging.",
         "boxes": [
             *relay_fuse_box_boxes(-235, 132, 8, "Relay/fuse box"),
             *breaker_boxes(90, 8, -24, "100A breaker/cutoff"),
-            {"name": "MIDI model reference plate 190 x 150", "x": 285, "y": 3, "z": 54, "w": 190, "h": 6, "d": 150, "color": "aluminium"},
-            *midi_bank_boxes(285, 6, 54, "MIDI holder bank active five positions", count=5),
+            *midi_enclosure_boxes(285, 6, 54, "MIDI Rev D model enclosure"),
+            *midi_enclosed_bank_boxes(285, 12, 54, "MIDI holder bank active five positions"),
             {"name": "Hidden/security needle switch visual note body", "x": 94, "y": 84, "z": 74, "w": 34, "h": 18, "d": 22, "color": "deepblack"},
             {"name": "Hidden/security needle switch threaded barrel", "x": 68, "y": 86, "z": 74, "w": 28, "h": 12, "d": 12, "color": "silver"},
             {"name": "Hidden/security needle switch blade terminals", "x": 122, "y": 84, "z": 74, "w": 28, "h": 5, "d": 18, "color": "brass"},
@@ -652,7 +712,7 @@ It separates the devices from the carrier brackets so the relay box, 100A breake
 
 - Relay/fuse box: photo-informed covered black enclosure with plain removable front cover, two cover screws, and the package rotated 90 degrees so heavy power input/output boots exit the top and control cables exit toward the front/radiator side. The released sizing basis remains `300 x 197 x 80 mm`, represented as a rotated `197 x 300 x 80 mm` envelope; internals are hidden by the fitted cover. The modelled exit blocks are top power input `54 x 46 x 42 mm` at relay offset `X-42 / Y+164 / Z-52`, top power output `54 x 46 x 42 mm` at `X+42 / Y+164 / Z-52`, and front control cables `170 x 34 x 24 mm` at `X-18 / Y-120 / Z-112`.
 - 100A breaker/cutoff: photo-informed waterproof resettable breaker with black body, raised faceplate, red reset lever/button, two terminal studs, ring lugs, and cable boots. Exact body/stud centres remain a caliper hold before final drilling.
-- MIDI fuse holder bank: active five-position fabrication model on the known `140 x 85 mm` insulated subplate, using red hinged covers, black linked bases, side mounting ears, latch recesses, paired studs, a single common-feed side, and a seated five-output cable comb/gland strip attached to a guide backplate and support tabs. Output 3 is marked with an enlarged pass-through because that output carries two wires. The received photo shows a larger linked bank; the active fabrication package is still the five-way Rev C plate.
+- MIDI fuse holder bank: active five-position fabrication model inside the Rev D folded aluminium enclosure, on the known `140 x 85 mm` insulated subplate, using red hinged covers, black linked bases, side mounting ears, paired studs, one fuse 4 input grommet on the bus side, and five output-side grommets. The far-side output grommet is enlarged because that output carries two power cables. The received photo shows a larger linked bank; the active fabrication package is the five-way Rev D hinged enclosure.
 - Hidden/security needle switch: shown only as a small reference object, because it belongs to the cabin/security wiring path rather than the battery-side power carrier.
 
 ## Evidence Basis
@@ -664,7 +724,7 @@ It separates the devices from the carrier brackets so the relay box, 100A breake
 
 ## Release Notes
 
-These models are visual envelopes, not fabrication drawings. Use them to check packaging and service access in the S3 dashboard. Use the existing Rev C fabrication packages for cut files, and measure the actual breaker body, mounting-hole centres, stud spacing, and cable-lug sweep before drilling metal.
+These models are visual envelopes, not fabrication drawings. Use them to check packaging and service access in the S3 dashboard. Use the current Rev D MIDI enclosure package for cut files, and measure the actual breaker body, mounting-hole centres, stud spacing, and cable-lug sweep before drilling metal.
 """
     (out_dir / "README.md").write_text(readme, encoding="utf-8")
 
@@ -681,11 +741,11 @@ These models are visual envelopes, not fabrication drawings. Use them to check p
         {
             "device_id": "midi_holder_bank",
             "device_name": "MIDI fuse holder bank, active five positions",
-            "measurement_basis": "Rev C subplate holes from measured linked-holder photos plus received holder photo",
-            "model_dimensions_mm": "140 x 85 subplate; holder holes about 20.2 pitch, 44 row separation, 10 row stagger",
+            "measurement_basis": "Rev D enclosure/subplate from measured linked-holder photos plus received holder photo",
+            "model_dimensions_mm": "210 x 165 x 65 enclosure; 230 x 185 lid; 140 x 85 subplate; holder holes about 20.2 pitch, 44 row separation, 10 row stagger",
             "photo_refs": "photos/20260411_143135.jpg|photos/20260411_071153.jpg|photos/20260515_112907_gp_wtj4G8tQ.jpg",
-            "release_status": "released_visual_envelope_for_five_way_rev_c",
-            "notes": "Received bank photo shows more positions; fabrication pack uses five active positions on the Rev C plate/subplate with one common-feed side, seated output cable comb/gland strip attached to the guide backplate/support tabs, and one enlarged double-wire output pass-through on the opposite side.",
+            "release_status": "released_visual_envelope_for_five_way_rev_d",
+            "notes": "Received bank photo shows more positions; fabrication pack uses five active positions inside the Rev D hinged enclosure with one fuse 4 input grommet on the common-feed side, five output-side grommets, and the far-side output grommet enlarged for two power cables.",
         },
         {
             "device_id": "breaker_cutoff_100a",
@@ -728,8 +788,8 @@ These models are visual envelopes, not fabrication drawings. Use them to check p
         {
             "check_id": "EDM-003",
             "stage": "holder_count",
-            "acceptance_check": "Confirm whether five or six MIDI holder positions will be populated on the vehicle; keep Rev C fabrication at five unless deliberately updated, and verify which one output has two wires before cutting the enlarged access hole and seated comb.",
-            "required_evidence": "Bench photo of selected active MIDI holders with marked common feed, branch-output side, seated output comb/backplate, and double-wire output.",
+            "acceptance_check": "Confirm whether five or six MIDI holder positions will be populated on the vehicle; keep Rev D fabrication at five unless deliberately updated, and verify the far-side output carries two power cables before opening the enlarged output grommet hole.",
+            "required_evidence": "Bench photo of selected active MIDI holders with marked fuse 4 common feed, branch-output side, five grommet positions, and far-side two-cable output.",
         },
     ]
     checklist_path = out_dir / "inspection_checklist.csv"

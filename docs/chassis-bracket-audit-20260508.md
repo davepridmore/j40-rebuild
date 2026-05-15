@@ -29,7 +29,7 @@ The first register pass is seeded with front radiator/support and battery-side m
 | `front_radiator_bracket_repair_20260508` | `chassis_fixing` | Radiator/support bracket location, fix method, rubber support, fan clearance, and labelled photos. |
 | `front_radiator_two_side_retention_fabrication_20260508` | `chassis_fixing` | Released two-side radiator retention bracket set replacing the one-side/wire-held condition. |
 | `battery_tray_holder_bracket_repair_20260508` | `chassis_fixing` | Battery tray/holder position, clamp path, drain/corrosion isolation, cable clearance, and final weld/bolt choice. |
-| `battery_power_carrier_mount_fabrication_20260508` | `chassis_fixing` | Battery-side support/carrier for the MIDI Rev C plate and battery master cutoff/isolator, tied into real structure. |
+| `battery_power_carrier_mount_fabrication_20260508` | `chassis_fixing` | Battery-side support/carrier for the MIDI Rev D hinged enclosure and battery master cutoff/isolator, tied into real structure. |
 | `engine_bay_mounting_scouting_pass_20260508` | `chassis_fixing` | Ruler photos and mock-up checks for radiator holes, battery tray feet, MIDI/cutoff envelope, cable exits, and bonnet clearance. |
 | `auxiliary_chassis_tabs_and_clip_brackets_20260508` | `chassis_fixing` | Required baseline tabs only: line clips, harness clips, earth straps, exhaust hangers, washer/overflow/ancillary supports. |
 | `exhaust_mockup_brackets_before_coating_20260508` | `chassis_fixing` | Exhaust fabricator gets current chassis photos; any hanger/clearance tabs needed on the chassis are mocked up before Raptor. |
@@ -101,7 +101,7 @@ Only then can the bracket hold release the zinc-rich epoxy primer, seam sealer, 
 
 - Radiator support bracket(s): explicitly called out in WhatsApp. Current photo review makes this a two-side retention repair that replaces the wire-held/one-side condition; May 12 photos add the visible upright/lower-support hole field for template scouting.
 - Battery tray/holder bracket(s): likely required, raised in the same exchange. May 12 photos start the tray-stand structure read, but tray-foot/underside close-ups and ruler measurements are still required before cutting metal.
-- Battery-side MIDI/cutoff carrier: use the existing MIDI Rev C plate as the fuse-holder component, but add a vehicle-side carrier/pickup design tied into the reinforced battery tray stand or nearby structure.
+- Battery-side MIDI/cutoff carrier: use the existing MIDI Rev D hinged enclosure as the fuse-holder component, but add a vehicle-side carrier/pickup design tied into the reinforced battery tray stand or nearby structure.
 - Exhaust hanger/mock-up points: coordinate now if the exhaust fabricator can mock up downpipes/routing while the tub is off.
 - Brake/fuel line clips and harness P-clips: keep safety/serviceability ahead of appearance.
 - Ground strap tabs: keep bare-metal contact strategy separate from final coating.
@@ -115,7 +115,7 @@ The front engine-bay mounting tasks are detailed in [front-engine-bay-mounting-f
 - `PWR-CARRIER-001` battery-side MIDI/cutoff carrier.
 - `PWR-CABLE-001` heavy cable and P-clip support.
 
-Any welded pickup point from that plan is a pre-primer/Raptor item. The removable MIDI plate, insulating subplate, cutoff switch, and final cable clips can be fitted after coating only if their structural pickup points are already complete.
+Any welded pickup point from that plan is a pre-primer/Raptor item. The removable MIDI enclosure, insulating subplate, cutoff switch, and final cable clips can be fitted after coating only if their structural pickup points are already complete.
 
 ## Evidence Refs
 

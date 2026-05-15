@@ -8,13 +8,13 @@ Source data: [fabrication_metal_stock_requirements.csv](../data/manual/fabricati
 
 | Stock | Minimum buy | Used for |
 | --- | --- | --- |
-| `3.0 mm` mild-steel sheet/plate | 1 sheet at least `600 x 600 mm`; `1000 x 500` acceptable/preferred if similarly priced | Battery tray deck `340 x 265`, widened access-ladder flat face `660 x 310`, hold-down `340 x 38`, seated MIDI output comb/backplate support, rotated relay top/front exit tabs, cutoff-output split support tabs, side-mounted kill-switch shelf tabs, small flat tabs/guards. |
-| `3.0 mm` `90-degree` mild-steel angle/L-section | `25 x 25 x 3 mm` or `30 x 30 x 3 mm`, `3 m` total | Battery tray perimeter/upstands, widened access-ladder frame, shallow MIDI and side kill-switch shelf rails, seated MIDI output comb/gland support, rotated relay top/front exit tabs, cutoff-output cable support, cable/P-clip tabs. |
+| `3.0 mm` mild-steel sheet/plate | 1 sheet at least `600 x 600 mm`; `1000 x 500` acceptable/preferred if similarly priced | Battery tray deck `340 x 265`, widened access-ladder flat face `660 x 310`, hold-down `340 x 38`, MIDI Rev D enclosure shelf/output-side support, rotated relay top/front exit tabs, cutoff-output split support tabs, side-mounted kill-switch shelf tabs, small flat tabs/guards. |
+| `3.0 mm` `90-degree` mild-steel angle/L-section | `25 x 25 x 3 mm` or `30 x 30 x 3 mm`, `3 m` total | Battery tray perimeter/upstands, widened access-ladder frame, shallow MIDI Rev D enclosure and side kill-switch shelf rails, grommeted MIDI output side support, rotated relay top/front exit tabs, cutoff-output cable support, cable/P-clip tabs. |
 | `4.0 mm` mild-steel plate | 1 plate at least `700 x 450 mm`; nearest `1000 x 500` acceptable | Chassis saddle, flat bolt tabs, upright/gusset plates if angle route still needs flat interfaces, trial coupons. |
 | `50 x 50 x 4 mm` `90-degree` mild-steel angle | `1 m` length | Radiator two-side retention post; one leg should land near the measured `48-50 mm` main face. |
 | `40 x 40 x 4 mm` `90-degree` mild-steel angle | `2 m` length | Battery stand upright bridge members, stand frame trials, structural corner braces. |
 | Mild-steel tube/sleeve stock | `300 mm` offcut; ID to final M8/M10 through-bolt size after dry-fit | Crush tubes/spacers if the radiator or battery saddle through-bolt passes through boxed structure. |
-| `3.0 mm` 5052-H32 aluminium sheet | `250 x 350 mm` minimum; `500 x 500 mm` if optional fallback carriers are cut | MIDI Rev C mount plate, folded cutoff base/guard, optional fallback electrical carriers. |
+| `3.0 mm` 5052-H32 aluminium sheet | `500 x 500 mm` minimum | MIDI Rev D enclosure body/lid and folded cutoff base/guard. |
 
 ## Separate Body/Tub Metal
 
@@ -27,6 +27,6 @@ Source data: [fabrication_metal_stock_requirements.csv](../data/manual/fabricati
 ## Guardrails
 
 - Do not delete the flat sheet/plate buys just because angle stock is available. Angle handles edges, rails, and some uprights; flat stock still handles decks, saddles, and mounting faces.
-- Do not use aluminium for the battery stand or radiator bracket. Aluminium here is only for electrical carriers/guards.
+- Do not use aluminium for the battery stand or radiator bracket. Aluminium here is only for electrical component mounts/guards.
 - Keep body/tub steel separate from battery/radiator fabrication steel.
 - Final crush-tube ID/OD waits for the actual through-bolt size and boxed-section spacing.

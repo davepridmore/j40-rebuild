@@ -7,7 +7,7 @@ It separates the devices from the carrier brackets so the relay box, 100A breake
 
 - Relay/fuse box: photo-informed covered black enclosure with plain removable front cover, two cover screws, and the package rotated 90 degrees so heavy power input/output boots exit the top and control cables exit toward the front/radiator side. The released sizing basis remains `300 x 197 x 80 mm`, represented as a rotated `197 x 300 x 80 mm` envelope; internals are hidden by the fitted cover. The modelled exit blocks are top power input `54 x 46 x 42 mm` at relay offset `X-42 / Y+164 / Z-52`, top power output `54 x 46 x 42 mm` at `X+42 / Y+164 / Z-52`, and front control cables `170 x 34 x 24 mm` at `X-18 / Y-120 / Z-112`.
 - 100A breaker/cutoff: photo-informed waterproof resettable breaker with black body, raised faceplate, red reset lever/button, two terminal studs, ring lugs, and cable boots. Exact body/stud centres remain a caliper hold before final drilling.
-- MIDI fuse holder bank: active five-position fabrication model on the known `140 x 85 mm` insulated subplate, using red hinged covers, black linked bases, side mounting ears, latch recesses, paired studs, a single common-feed side, and a seated five-output cable comb/gland strip attached to a guide backplate and support tabs. Output 3 is marked with an enlarged pass-through because that output carries two wires. The received photo shows a larger linked bank; the active fabrication package is still the five-way Rev C plate.
+- MIDI fuse holder bank: active five-position fabrication model inside the Rev D folded aluminium enclosure, on the known `140 x 85 mm` insulated subplate, using red hinged covers, black linked bases, side mounting ears, paired studs, one fuse 4 input grommet on the bus side, and five output-side grommets. The far-side output grommet is enlarged because that output carries two power cables. The received photo shows a larger linked bank; the active fabrication package is the five-way Rev D hinged enclosure.
 - Hidden/security needle switch: shown only as a small reference object, because it belongs to the cabin/security wiring path rather than the battery-side power carrier.
 
 ## Evidence Basis
@@ -19,4 +19,4 @@ It separates the devices from the carrier brackets so the relay box, 100A breake
 
 ## Release Notes
 
-These models are visual envelopes, not fabrication drawings. Use them to check packaging and service access in the S3 dashboard. Use the existing Rev C fabrication packages for cut files, and measure the actual breaker body, mounting-hole centres, stud spacing, and cable-lug sweep before drilling metal.
+These models are visual envelopes, not fabrication drawings. Use them to check packaging and service access in the S3 dashboard. Use the current Rev D MIDI enclosure package for cut files, and measure the actual breaker body, mounting-hole centres, stud spacing, and cable-lug sweep before drilling metal.

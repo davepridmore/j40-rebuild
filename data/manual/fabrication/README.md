@@ -11,9 +11,14 @@ All dimensional packages use millimetres. Send the `DXF` files for CAD/CAM cutti
 | `rubber_recreation_rev_a` | Chassis rubbers | Quote and first article ready; final production has measurement holds | `rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf` | Body-mount cushions, cup washer blanks, oval front-support pad, and strip quote/template blanks. |
 | `suspension_wood_cribbing_rev_a` | Suspension setup | Current timber/workshop cut package | `suspension_wood_cribbing_rev_a/j40_suspension_wood_cribbing_rev_a_dimension_sheet.pdf` | Hardwood cribbing blocks and exact wedge chocks for suspension/brake support setup; includes interactive 3D visualisation. |
 | `front_radiator_two_side_retention_rev_a` | Fabrication / chassis fixing | Template release with measurement hold | `front_radiator_two_side_retention_rev_a/j40_front_radiator_two_side_retention_rev_a_dimension_sheet.pdf` | Right-side radiator retention bracket derived from the measured left chassis-attached bracket; one 4 mm bolt-through saddle right-angle post with top screw return and interactive 3D visualisation. |
-| `midi5_plate_mount_rev_c` | Electrical reset | Current recommended MIDI holder mount | `midi5_plate_mount_rev_c/j40_midi5_plate_mount_rev_c_dimension_sheet.pdf` | Open plate plus non-conductive subplate; replaces the boxed MIDI module concept; includes interactive 3D visualisation. |
-| `electrical_device_models_rev_a` | Electrical reset | Reference visual model package |  | Separate photo-informed S3 model of the relay/fuse box, active five-position MIDI holder bank, 100A waterproof breaker/cutoff, and hidden/security needle switch reference. |
-| `battery_power_carrier_mount_rev_a` | Fabrication / chassis fixing / electrical reset | Prototype/mock-up release for chassis-mounted battery stand and integrated relay/fuse/cutoff carrier | `battery_power_carrier_mount_rev_a/j40_battery_power_carrier_mount_rev_a_dimension_sheet.pdf` | Formed chassis saddle/upright bridge, full-height battery support tray/deck, hold-down crossbar, raised front/radiator-side service ladder, serviceable rotated Relay Rev C tray with plastic rear guard/underlay, top-front MIDI shelf, side-mounted 100A breaker/cutoff base/guard, battery-to-cutoff and cutoff-to-relay/MIDI cable paths, and 3D visualisation files. |
+| `midi5_enclosure_rev_d` | Electrical reset | Current recommended MIDI holder enclosure | `midi5_enclosure_rev_d/j40_midi5_enclosure_rev_d_dimension_sheet.pdf` | Folded aluminium box with hinged lid, insulating subplate, one fuse-4 input grommet, five output grommets, and enlarged far-side double-cable output hole; includes interactive 3D visualisation. |
+| `battery_power_carrier_mount_rev_a` | Fabrication / chassis fixing / electrical reset | Prototype/mock-up release for chassis-mounted battery stand and integrated relay/fuse/cutoff carrier | `battery_power_carrier_mount_rev_a/j40_battery_power_carrier_mount_rev_a_dimension_sheet.pdf` | Formed chassis saddle/upright bridge, full-height battery support tray/deck, hold-down crossbar, raised front/radiator-side service ladder, serviceable rotated relay tray with plastic rear guard/underlay, top-front MIDI Rev D enclosure shelf, side-mounted 100A breaker/cutoff base/guard, battery-to-cutoff and cutoff-to-relay/MIDI cable paths, and 3D visualisation files. |
+
+## Reference / Fallback Electrical Packages
+
+| Package | Workstream | Status | Primary PDF | Notes |
+| --- | --- | --- | --- | --- |
+| `electrical_device_models_rev_a` | Electrical reset | Reference visual model package |  | Separate photo-informed S3 model of the relay/fuse box, active five-position MIDI holder bank in Rev D enclosure, 100A waterproof breaker/cutoff, and hidden/security needle switch reference. |
 | `relay_mount_rev_c` | Electrical reset | Fallback standalone relay-box mount | `relay_mount_rev_c/j40_relay_mount_rev_c_dimension_sheet.pdf` | Aluminium relay carrier plus plastic rear guard; use only if the relay box is mounted separately from the integrated battery power carrier; includes interactive 3D visualisation. |
 | `electrical_modules_rev_a` | Electrical reset | Provisional/reference package | `electrical_modules_rev_a/j40_electrical_modules_rev_a_dimension_sheet.pdf` | Earlier combined under-bonnet relay/power module package with interactive 3D visualisation. Use only if the combined module route is still desired. |
 
@@ -21,8 +26,9 @@ All dimensional packages use millimetres. Send the `DXF` files for CAD/CAM cutti
 
 | Package | Status | Replacement |
 | --- | --- | --- |
-| `midi5_module_rev_a` | Superseded boxed MIDI module | `midi5_plate_mount_rev_c` |
-| `midi5_module_rev_b` | Superseded boxed MIDI module | `midi5_plate_mount_rev_c` |
+| `midi5_module_rev_a` | Superseded boxed MIDI module | `midi5_enclosure_rev_d` |
+| `midi5_module_rev_b` | Superseded boxed MIDI module | `midi5_enclosure_rev_d` |
+| `midi5_plate_mount_rev_c` | Superseded open MIDI plate | `midi5_enclosure_rev_d` |
 
 ## Generator Scripts
 
@@ -31,9 +37,10 @@ All dimensional packages use millimetres. Send the `DXF` files for CAD/CAM cutti
 - `tools/generate_front_radiator_two_side_retention_rev_a.py`
 - `tools/generate_electrical_module_drawings.py`
 - `tools/generate_midi5_plate_mount_rev_c.py`
+- `tools/generate_midi5_enclosure_rev_d.py`
+- `tools/generate_relay_mount_rev_c.py`
 - `tools/generate_fabrication_3d_visualisations.py`
 - `tools/generate_battery_power_carrier_mount_rev_a.py`
-- `tools/generate_relay_mount_rev_c.py`
 
 The human handoff summary is `docs/fabrication-handoff-index.md`.
 

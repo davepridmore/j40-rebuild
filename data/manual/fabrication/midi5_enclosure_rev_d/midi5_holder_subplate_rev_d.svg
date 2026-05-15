@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="190mm" height="213mm" viewBox="0 0 190 213">
+  <style>
+    .cut { fill: none; stroke: #111; stroke-width: 0.6; }
+    .aux { fill: none; stroke: #666; stroke-width: 0.35; }
+    .bend { stroke: #0b5fff; stroke-width: 0.4; stroke-dasharray: 3 2; }
+    .title { font: 700 9px monospace; fill: #111; }
+    .note { font: 6px monospace; fill: #111; }
+  </style>
+  <text x="25" y="14" class="title">midi5_holder_subplate_rev_d  |  units: mm</text>
+  <g transform="translate(25,25)">
+  <polygon class="cut" points="0,0 140,0 140,85 0,85" />
+  <circle class="cut" cx="11" cy="20" r="2.25" />
+  <circle class="cut" cx="31.2" cy="20" r="2.25" />
+  <circle class="cut" cx="51.4" cy="20" r="2.25" />
+  <circle class="cut" cx="71.6" cy="20" r="2.25" />
+  <circle class="cut" cx="91.8" cy="20" r="2.25" />
+  <circle class="cut" cx="21" cy="64" r="2.25" />
+  <circle class="cut" cx="41.2" cy="64" r="2.25" />
+  <circle class="cut" cx="61.4" cy="64" r="2.25" />
+  <circle class="cut" cx="81.6" cy="64" r="2.25" />
+  <circle class="cut" cx="101.8" cy="64" r="2.25" />
+  <circle class="cut" cx="15" cy="10" r="2.75" />
+  <circle class="cut" cx="70" cy="10" r="2.75" />
+  <circle class="cut" cx="125" cy="10" r="2.75" />
+  <circle class="cut" cx="15" cy="75" r="2.75" />
+  <circle class="cut" cx="70" cy="75" r="2.75" />
+  <circle class="cut" cx="125" cy="75" r="2.75" />
+  </g>
+  <text x="25" y="155" class="note">Holder subplate: 5.0 mm HDPE, ABS, G10, or phenolic. This board keeps the MIDI holders insulated from the aluminium enclosure.</text>
+  <text x="25" y="167" class="note">Ten holder fixing holes reuse the measured linked-holder pattern from Rev C: about 20.2 mm pitch, 44 mm row separation, and 10 mm row stagger.</text>
+  <text x="25" y="179" class="note">The six larger holes mount the subplate to the enclosure floor on 10-12 mm insulated standoffs.</text>
+  <text x="25" y="191" class="note">The second-from-last holder is the planned power input/bus-bar feed position; the opposite side carries five fused outputs.</text>
+</svg>

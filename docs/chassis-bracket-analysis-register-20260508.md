@@ -40,7 +40,7 @@ Confirm these before any fabrication release:
 5. Battery length, width, height, terminal orientation, top clamp path, and bonnet clearance.
 6. Battery tray top, side, front, rear, and underside with ruler: tray edges, feet, legs, cracks, rust, drain path, and possible lower brace route.
 7. Battery stand template photos: cardboard or flat-bar tray perimeter, lower/inner pickup points, gusset directions, and clearance to steering shaft, alternator, exhaust, hoses, and service tools.
-8. Cardboard mock-up for the `190 x 150 mm` MIDI plate plus cutoff body near the installed battery, including cable lug sweep and service access.
+8. Cardboard mock-up for the `210 x 165 x 65 mm` MIDI enclosure plus cutoff body near the installed battery, including cable lug sweep and service access.
 9. Every front-support auxiliary hole/tab labelled with intended function: radiator, line clip, harness clip, earth, exhaust, cable support, battery stand, no-refit, or unknown.
 
 ## Release State

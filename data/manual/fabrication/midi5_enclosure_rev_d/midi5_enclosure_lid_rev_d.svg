@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280mm" height="313mm" viewBox="0 0 280 313">
+  <style>
+    .cut { fill: none; stroke: #111; stroke-width: 0.6; }
+    .aux { fill: none; stroke: #666; stroke-width: 0.35; }
+    .bend { stroke: #0b5fff; stroke-width: 0.4; stroke-dasharray: 3 2; }
+    .title { font: 700 9px monospace; fill: #111; }
+    .note { font: 6px monospace; fill: #111; }
+  </style>
+  <text x="25" y="14" class="title">midi5_enclosure_lid_rev_d  |  units: mm</text>
+  <g transform="translate(25,25)">
+  <polygon class="cut" points="0,0 230,0 230,185 0,185" />
+  <circle class="cut" cx="42" cy="12" r="2.25" />
+  <circle class="cut" cx="115" cy="12" r="2.25" />
+  <circle class="cut" cx="188" cy="12" r="2.25" />
+  <circle class="cut" cx="80" cy="173" r="2.25" />
+  <circle class="cut" cx="150" cy="173" r="2.25" />
+  </g>
+  <text x="25" y="255" class="note">Hinged lid: 2.0-3.0 mm aluminium. Finished panel 230 x 185 gives about 10 mm overlap around the Rev D box body.</text>
+  <text x="25" y="267" class="note">Hinge edge is the input/bus side; latch or thumb-screw edge is the output side.</text>
+  <text x="25" y="279" class="note">Use a small continuous hinge or two compact hinges. Keep hinge screws clear of the input cable grommet and bus-bar feed lug.</text>
+  <text x="25" y="291" class="note">Add thin closed-cell foam or rubber edge strip if rattle or splash sealing becomes an issue; do not seal so tightly that water cannot drain.</text>
+</svg>

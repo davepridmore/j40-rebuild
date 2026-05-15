@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390mm" height="447mm" viewBox="0 0 390 447">
+  <style>
+    .cut { fill: none; stroke: #111; stroke-width: 0.6; }
+    .aux { fill: none; stroke: #666; stroke-width: 0.35; }
+    .bend { stroke: #0b5fff; stroke-width: 0.4; stroke-dasharray: 3 2; }
+    .title { font: 700 9px monospace; fill: #111; }
+    .note { font: 6px monospace; fill: #111; }
+  </style>
+  <text x="25" y="14" class="title">midi5_enclosure_body_rev_d  |  units: mm</text>
+  <g transform="translate(25,25)">
+  <polygon class="cut" points="65,0 275,0 275,65 340,65 340,230 275,230 275,295 65,295 65,230 0,230 0,65 65,65" />
+  <polygon class="cut" points="83,88 83.1,87.02 83.38,86.09 83.84,85.22 84.46,84.46 85.22,83.84 86.09,83.38 87.02,83.1 88,83 106,83 106.98,83.1 107.91,83.38 108.78,83.84 109.54,84.46 110.16,85.22 110.62,86.09 110.9,87.02 111,88 111,88 110.9,88.98 110.62,89.91 110.16,90.78 109.54,91.54 108.78,92.16 107.91,92.62 106.98,92.9 106,93 88,93 87.02,92.9 86.09,92.62 85.22,92.16 84.46,91.54 83.84,90.78 83.38,89.91 83.1,88.98 83,88" />
+  <polygon class="cut" points="229,88 229.1,87.02 229.38,86.09 229.84,85.22 230.46,84.46 231.22,83.84 232.09,83.38 233.02,83.1 234,83 252,83 252.98,83.1 253.91,83.38 254.78,83.84 255.54,84.46 256.16,85.22 256.62,86.09 256.9,87.02 257,88 257,88 256.9,88.98 256.62,89.91 256.16,90.78 255.54,91.54 254.78,92.16 253.91,92.62 252.98,92.9 252,93 234,93 233.02,92.9 232.09,92.62 231.22,92.16 230.46,91.54 229.84,90.78 229.38,89.91 229.1,88.98 229,88" />
+  <polygon class="cut" points="83,207 83.1,206.02 83.38,205.09 83.84,204.22 84.46,203.46 85.22,202.84 86.09,202.38 87.02,202.1 88,202 106,202 106.98,202.1 107.91,202.38 108.78,202.84 109.54,203.46 110.16,204.22 110.62,205.09 110.9,206.02 111,207 111,207 110.9,207.98 110.62,208.91 110.16,209.78 109.54,210.54 108.78,211.16 107.91,211.62 106.98,211.9 106,212 88,212 87.02,211.9 86.09,211.62 85.22,211.16 84.46,210.54 83.84,209.78 83.38,208.91 83.1,207.98 83,207" />
+  <polygon class="cut" points="229,207 229.1,206.02 229.38,205.09 229.84,204.22 230.46,203.46 231.22,202.84 232.09,202.38 233.02,202.1 234,202 252,202 252.98,202.1 253.91,202.38 254.78,202.84 255.54,203.46 256.16,204.22 256.62,205.09 256.9,206.02 257,207 257,207 256.9,207.98 256.62,208.91 256.16,209.78 255.54,210.54 254.78,211.16 253.91,211.62 252.98,211.9 252,212 234,212 233.02,211.9 232.09,211.62 231.22,211.16 230.46,210.54 229.84,209.78 229.38,208.91 229.1,207.98 229,207" />
+  <circle class="cut" cx="115" cy="115" r="2.75" />
+  <circle class="cut" cx="170" cy="115" r="2.75" />
+  <circle class="cut" cx="225" cy="115" r="2.75" />
+  <circle class="cut" cx="115" cy="180" r="2.75" />
+  <circle class="cut" cx="170" cy="180" r="2.75" />
+  <circle class="cut" cx="225" cy="180" r="2.75" />
+  <circle class="cut" cx="110" cy="12" r="2.25" />
+  <circle class="cut" cx="170" cy="12" r="2.25" />
+  <circle class="cut" cx="230" cy="12" r="2.25" />
+  <circle class="cut" cx="137" cy="283" r="2.25" />
+  <circle class="cut" cx="203" cy="283" r="2.25" />
+  <circle class="cut" cx="197" cy="32.5" r="10" />
+  <circle class="cut" cx="116" cy="262.5" r="8" />
+  <circle class="cut" cx="143" cy="262.5" r="8" />
+  <circle class="cut" cx="170" cy="262.5" r="8" />
+  <circle class="cut" cx="197" cy="262.5" r="8" />
+  <circle class="cut" cx="224" cy="262.5" r="14" />
+  <line class="bend" x1="65" y1="65" x2="275" y2="65" />
+  <line class="bend" x1="65" y1="230" x2="275" y2="230" />
+  <line class="bend" x1="65" y1="65" x2="65" y2="230" />
+  <line class="bend" x1="275" y1="65" x2="275" y2="230" />
+  </g>
+  <text x="25" y="365" class="note">MIDI Rev D enclosure body: 3.0 mm 5052-H32 aluminium. Finished floor 210 x 165 with 65 mm folded side walls.</text>
+  <text x="25" y="377" class="note">This replaces the open Rev C plate route with a covered aluminium box around the full five-holder MIDI bank.</text>
+  <text x="25" y="389" class="note">Output side has five grommet pilot holes: four 16 mm holes plus one far-side 28 mm hole for the output that carries two power cables.</text>
+  <text x="25" y="401" class="note">Input/bus side has one 20 mm grommet pilot hole aligned to the second-from-last holder, where the cutoff-switched feed lands on the bus bar.</text>
+  <text x="25" y="413" class="note">Open pilot holes only as far as needed for the final cable and rubber grommet OD; deburr both sides and fit edge-safe grommets before wiring.</text>
+  <text x="25" y="425" class="note">Hinge holes are on the input/bus side; latch holes are on the output side so the lid can open without disturbing the branch wires.</text>
+</svg>

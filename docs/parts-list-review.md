@@ -48,8 +48,8 @@
 - `part_firewall_grommet_set_large_power` [electrical_reset] Additional firewall grommet set IDs 16/20/25 mm
 - `part_firewall_grommet_set_small_medium` [electrical_reset] Additional firewall grommet set IDs 6/8/10/12 mm
 - `part_hvac_blower_clutch_fan_wiring_20260514` [electrical_reset] Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request
-- `part_fabrication_raw_aluminium_plate_3mm_20260513` [fabrication_handoff] 3.0 mm 5052-H32 aluminium sheet for MIDI/cutoff/relay electrical plates
-- `part_fabrication_raw_electrical_plastic_sheet_20260513` [fabrication_handoff] Electrical insulating plastic sheet - 5.0 mm holder board plus 3.0 mm guards
+- `part_fabrication_raw_aluminium_plate_3mm_20260513` [fabrication_handoff] 3.0 mm 5052-H32 aluminium sheet for MIDI/cutoff electrical plates
+- `part_fabrication_raw_electrical_plastic_sheet_20260513` [fabrication_handoff] Electrical insulating plastic sheet - 5.0 mm holder board
 - `part_fabrication_raw_epdm_sheet_small_isolators_20260513` [fabrication_handoff] 3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads
 - `part_fabrication_raw_mild_steel_plate_3mm_20260513` [fabrication_handoff] 3.0 mm mild-steel sheet plus 90-degree angle/L-section stock for compact battery tray/cassette
 - `part_fabrication_raw_mild_steel_plate_4mm_20260513` [fabrication_handoff] 4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright and radiator post

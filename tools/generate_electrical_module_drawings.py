@@ -93,15 +93,19 @@ def write_svg(drawing: Drawing) -> None:
     note_y = drawing.height + margin * 2 + 20
     note_block_height = 30 + max(1, len(drawing.notes)) * note_line_height
     height = drawing.height + margin * 2 + note_block_height
-    poly_elems = "\n  ".join(svg_poly(p) for p in drawing.cut_polys)
-    cut_elems = "\n  ".join(svg_rect(r, "CUT") for r in drawing.cut_rects)
-    circle_elems = "\n  ".join(svg_circle(c) for c in drawing.cut_circles)
-    bend_elems = "\n  ".join(svg_line(b) for b in drawing.bend_lines)
+    drawing_elems = [
+        *(svg_poly(p) for p in drawing.cut_polys),
+        *(svg_rect(r, "CUT") for r in drawing.cut_rects),
+        *(svg_circle(c) for c in drawing.cut_circles),
+        *(svg_line(b) for b in drawing.bend_lines),
+    ]
+    drawing_body = "\n  ".join(drawing_elems)
     notes = []
     for idx, note in enumerate(drawing.notes):
         notes.append(
             f'<text x="{margin}" y="{note_y + idx * note_line_height}" class="note">{note}</text>'
         )
+    note_body = "\n  ".join(notes)
     title = f"{drawing.name}  |  units: mm"
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{mm(width)}mm" height="{mm(height)}mm" viewBox="0 0 {mm(width)} {mm(height)}">
   <style>
@@ -113,12 +117,9 @@ def write_svg(drawing: Drawing) -> None:
   </style>
   <text x="{margin}" y="14" class="title">{title}</text>
   <g transform="translate({margin},{margin})">
-  {poly_elems}
-  {cut_elems}
-  {circle_elems}
-  {bend_elems}
+  {drawing_body}
   </g>
-  {"".join(notes)}
+  {note_body}
 </svg>
 """
     (OUT_DIR / f"{drawing.name}.svg").write_text(svg, encoding="utf-8")
@@ -303,7 +304,9 @@ def draw_pdf_page(c: canvas.Canvas, drawing: Drawing) -> None:
     page_w, page_h = landscape(A4)
     margin = 14 * pdf_mm
     title_y = page_h - margin
-    if "_rev_c" in drawing.name:
+    if "_rev_d" in drawing.name:
+        rev_label = "Rev D"
+    elif "_rev_c" in drawing.name:
         rev_label = "Rev C"
     elif "_rev_b" in drawing.name:
         rev_label = "Rev B"
@@ -425,6 +428,25 @@ def draw_pdf_page(c: canvas.Canvas, drawing: Drawing) -> None:
         draw_dimension_h(c, ox + 21.0 * scale, ox + 101.8 * scale, oy + 64 * scale - 12 * pdf_mm, "right-row pitch span 80.8")
         draw_dimension_v(c, ox + 101.8 * scale + 10 * pdf_mm, oy + 20 * scale, oy + 64 * scale, "ear-row span 44")
         draw_dimension_h(c, ox + 11.0 * scale, ox + 21.0 * scale, oy + 42 * scale + 10 * pdf_mm, "row stagger 10")
+    elif drawing.name == "midi5_enclosure_body_rev_d":
+        draw_dimension_h(c, ox + 65 * scale, ox + 275 * scale, oy + 230 * scale + 6 * pdf_mm, "finished floor width 210")
+        draw_dimension_v(c, ox + 275 * scale + 10 * pdf_mm, oy + 65 * scale, oy + 230 * scale, "finished floor depth 165")
+        draw_dimension_v(c, ox + 210 * scale + 10 * pdf_mm, oy + 0 * scale, oy + 65 * scale, "wall height 65")
+        draw_dimension_h(c, ox + 82.5 * scale, ox + 162.5 * scale, oy + 244 * scale + 10 * pdf_mm, "four single output grommets")
+        draw_dimension_h(c, ox + 184 * scale, ox + 212 * scale, oy + 244 * scale + 10 * pdf_mm, "double output")
+        draw_dimension_h(c, ox + 225 * scale, ox + 245 * scale, oy + 49 * scale - 10 * pdf_mm, "fuse 4 input")
+    elif drawing.name == "midi5_holder_subplate_rev_d":
+        draw_dimension_h(c, ox, ox + 140 * scale, oy + 85 * scale + 6 * pdf_mm, "board width 140")
+        draw_dimension_v(c, ox + 140 * scale + 10 * pdf_mm, oy, oy + 85 * scale, "board height 85")
+        draw_dimension_h(c, ox + 11.0 * scale, ox + 91.8 * scale, oy + 20 * scale - 12 * pdf_mm, "left-row pitch span 80.8")
+        draw_dimension_h(c, ox + 21.0 * scale, ox + 101.8 * scale, oy + 64 * scale - 12 * pdf_mm, "right-row pitch span 80.8")
+        draw_dimension_v(c, ox + 101.8 * scale + 10 * pdf_mm, oy + 20 * scale, oy + 64 * scale, "ear-row span 44")
+        draw_dimension_h(c, ox + 11.0 * scale, ox + 21.0 * scale, oy + 42 * scale + 10 * pdf_mm, "row stagger 10")
+    elif drawing.name == "midi5_enclosure_lid_rev_d":
+        draw_dimension_h(c, ox, ox + 230 * scale, oy + 185 * scale + 6 * pdf_mm, "lid width 230")
+        draw_dimension_v(c, ox + 230 * scale + 10 * pdf_mm, oy, oy + 185 * scale, "lid depth 185")
+        draw_dimension_h(c, ox + 25 * scale, ox + 205 * scale, oy + 170 * scale + 10 * pdf_mm, "hinge-line hole span 180")
+        draw_dimension_h(c, ox + 55 * scale, ox + 175 * scale, oy + 15 * scale - 8 * pdf_mm, "latch hole span 120")
     elif drawing.name == "relay_carrier_rev_c":
         draw_dimension_h(c, ox + 20 * scale, ox + 340 * scale, oy + 235 * scale + 6 * pdf_mm, "carrier face width 320")
         draw_dimension_v(c, ox + 340 * scale + 10 * pdf_mm, oy + 15 * scale, oy + 235 * scale, "carrier face height 220")

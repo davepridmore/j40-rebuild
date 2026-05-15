@@ -35,14 +35,14 @@ DXF files:
 - `battery_stand_compact_single_chassis_pickup_rev_b.dxf` - formed chassis saddle over rail, qty `1`
 - `battery_stand_compact_single_mount_upright_rev_b.dxf` - upright bridge side plate, qty `2 mirrored`
 - `battery_stand_compact_hold_down_crossbar_rev_b.dxf` - service-removable `340 x 38 mm` battery hold-down crossbar, qty `1`
-- `battery_power_compact_front_service_rail_rev_b.dxf` - widened `660 x 310 mm` front/radiator-side access ladder for the rotated outboard relay tray, plastic underlay, relay top power in/out clearances, relay front control-cable clearance, 80 mm wire gutter, seated MIDI output comb/backplate, enlarged double-wire MIDI access hole, side-by-side MIDI/kill-switch shelf tabs, cutoff-output split clearance, and five-output MIDI cable fanout, qty `1`
+- `battery_power_compact_front_service_rail_rev_b.dxf` - widened `660 x 310 mm` front/radiator-side access ladder for the rotated outboard relay tray, plastic underlay, relay top power in/out clearances, relay front control-cable clearance, 80 mm wire gutter, MIDI Rev D enclosure shelf tabs, side-by-side MIDI/kill-switch shelf tabs, cutoff-output split clearance, and five-output MIDI cable fanout, qty `1`
 - `battery_power_compact_cutoff_tab_rev_b.dxf` - folded 100A breaker/cutoff base/guard, qty `1`
 
 Release position:
 - Rev F standard-battery access update is a prototype/mock-up release for the steel chassis-mounted battery stand.
 - The stand must mount from the one known formed chassis saddle and upright bridge, not the battery tray skin, radiator support strap, or unsupported inner wing.
-- It supports a standard N70/27-class `318 x 180 x 230 mm` battery envelope on a removable hold-down tray and carries the already-fabricated Relay Rev C carrier base rotated to a `220 x 320 mm` face outside the battery footprint on the outboard/access edge, the relay plastic rear guard/underlay rotated to `185 x 280 mm` ahead of the folded metal tray, MIDI Rev C mount plate/subplate (`190 x 150 mm` / `140 x 85 mm`) on a separated top-front shelf, the 100A breaker/cutoff base/guard (`170 x 110 mm` finished face), and cable support holes on one removable steel assembly.
-- Battery positive must enter the side-mounted cutoff/kill switch first. The cutoff output then splits into two protected branches: one to the rotated relay top power input and one to the MIDI common feed. The relay box must keep top power in/out and front control-cable exits clear; the MIDI bank must keep a supported five-heavy-cable output side with one enlarged double-wire output access hole.
+- It supports a standard N70/27-class `318 x 180 x 230 mm` battery envelope on a removable hold-down tray and carries the covered relay-box tray field rotated to a `220 x 320 mm` face outside the battery footprint on the outboard/access edge, the relay plastic rear guard/underlay rotated to `185 x 280 mm` ahead of the folded metal tray, MIDI Rev D hinged enclosure (`210 x 165 x 65 mm` body / `230 x 185 mm` lid / `140 x 85 mm` insulating subplate) on a separated top-front shelf, the 100A breaker/cutoff base/guard (`170 x 110 mm` finished face), and cable support holes on one removable steel assembly.
+- Battery positive must enter the side-mounted cutoff/kill switch first. The cutoff output then splits into two protected branches: one to the rotated relay top power input and one to the MIDI common feed at fuse 4 / the second-from-last holder. The relay box must keep top power in/out and front control-cable exits clear; the MIDI enclosure must keep five grommeted output holes, with the far-side output hole enlarged for two power cables.
 - Final metal cutting/drilling still needs the battery-installed cardboard mock-up, hold-down-removed battery lift-out check, formed saddle rail-width/leg-depth/through-bolt measurement, cutoff body dimensions, battery-to-cutoff and cutoff-output cable-lug sweeps, bonnet-clearance checks, relay cover access, relay top/front exit clearances, MIDI fanout clearance, and steering/radiator/fan clearance checks.
 
 ## Front Radiator Two-Side Retention - Rev A
@@ -92,24 +92,27 @@ Release position:
 
 ## Electrical Mounting Packages
 
-### MIDI 5-Way Plate Mount - Rev C
+### MIDI 5-Way Hinged Enclosure - Rev D
 
-Directory: [data/manual/fabrication/midi5_plate_mount_rev_c](../data/manual/fabrication/midi5_plate_mount_rev_c/README.md)
+Directory: [data/manual/fabrication/midi5_enclosure_rev_d](../data/manual/fabrication/midi5_enclosure_rev_d/README.md)
 
 Primary files:
-- `data/manual/fabrication/midi5_plate_mount_rev_c/j40_midi5_plate_mount_rev_c_dimension_sheet.pdf`
-- `data/manual/fabrication/midi5_plate_mount_rev_c/midi5_plate_mount_rev_c_3d_visualisation.html`
-- `data/manual/fabrication/midi5_plate_mount_rev_c/midi5_plate_mount_rev_c_3d_visualisation.svg`
+- `data/manual/fabrication/midi5_enclosure_rev_d/j40_midi5_enclosure_rev_d_dimension_sheet.pdf`
+- `data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_rev_d_3d_visualisation.html`
+- `data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_rev_d_3d_visualisation.svg`
 
 DXF files:
-- `midi5_mount_plate_rev_c.dxf` - `3.0 mm` 5052-H32 aluminium mount plate
-- `midi5_holder_subplate_rev_c.dxf` - `5.0 mm` HDPE, ABS, G10, or phenolic holder board
+- `midi5_enclosure_body_rev_d.dxf` - `3.0 mm` 5052-H32 aluminium folded enclosure body
+- `midi5_holder_subplate_rev_d.dxf` - `5.0 mm` HDPE, ABS, G10, or phenolic holder board
+- `midi5_enclosure_lid_rev_d.dxf` - `2.0-3.0 mm` aluminium hinged lid
 
 Order definitions:
-- Mount plate: `190 x 150 mm` flat plate with six `5.5 mm` subplate standoff holes, four site-fit vehicle mount slots, and five `6.5 mm` cable P-clip holes.
+- Enclosure body: finished floor `210 x 165 mm` with `65 mm` folded side walls, hinge holes on the input/bus side, latch holes on the output side, one `20 mm` input grommet pilot aligned to fuse 4 / the second-from-last holder, and five output-side grommet pilot holes.
+- Far-side output hole: enlarged `28 mm` pilot for the output that carries `2` power cables. The other four output holes are `16 mm` pilots. Open every pilot to the final cable/grommet OD after measurement.
 - Holder subplate: `140 x 85 mm` non-conductive board with ten `4.5 mm` holder holes on `20.2 mm` pitch / `44 mm` row separation, plus six `5.5 mm` standoff holes.
+- Lid: `230 x 185 mm` aluminium cover panel with hinge holes on the input/bus side and latch holes on the output side.
 
-Release position: current recommended MIDI holder mount. The external plastic/CNC quote is only for the holder subplate; the aluminium mount plate is owner-made. Use `10-12 mm` spacers between the holder board and mount plate, and add cable support after final routing.
+Release position: current recommended MIDI holder route. The external plastic/CNC quote is still only for the holder subplate; the aluminium enclosure body and lid are owner-made or sheet-metal-shop parts. Use `10-12 mm` insulated/sleeved spacers between the holder board and enclosure floor, and fit rubber grommets before wiring.
 
 ### Electrical Device Models - Rev A
 
@@ -120,7 +123,7 @@ Primary files:
 - `data/manual/fabrication/electrical_device_models_rev_a/electrical_device_models_rev_a_3d_visualisation.svg`
 - `data/manual/fabrication/electrical_device_models_rev_a/device_measurement_basis.csv`
 
-Release position: reference visual model only. This separates the relay/fuse box, 100A waterproof breaker/cutoff, active five-position MIDI holder bank, and hidden/security needle switch reference before they are placed into the combined battery-side carrier. Use the existing Rev C packages for cut files; measure the actual 100A breaker body, mounting-hole centres, terminal-stud spacing, and cable-lug sweep before drilling final metal.
+Release position: reference visual model only. This separates the relay/fuse box, 100A waterproof breaker/cutoff, active five-position MIDI holder bank inside the Rev D enclosure, and hidden/security needle switch reference before they are placed into the combined battery-side carrier. Use the current Rev D MIDI enclosure package for MIDI cut files; measure the actual 100A breaker body, mounting-hole centres, terminal-stud spacing, and cable-lug sweep before drilling final metal.
 
 ### Relay Mount - Rev C
 
@@ -139,7 +142,7 @@ Order definitions:
 - Relay carrier: `360 x 255 mm` flat pattern, finished face `320 x 220 mm`, `20 mm` side/bottom returns, `15 mm` top return, six `5.5 mm` guard/standoff holes, slotted relay/vehicle mounts, and lower loom slot.
 - Rear guard: `280 x 185 mm` plastic guard with `120 x 25 mm` lower loom/drain opening and six `5.5 mm` standoff holes.
 
-Release position: Relay Rev C defines the already-fabricated relay carrier base used by the current raised service-ladder `battery_power_carrier_mount_rev_a` layout. Use the standalone relay-only installation as fallback only if the relay base is deliberately split away from the integrated carrier. Keep the bottom loom opening downward or side-down and do not fully seal the rear of the relay box.
+Release position: fallback standalone relay-only installation if the relay base is deliberately split away from the integrated carrier. Keep the bottom loom opening downward or side-down and do not fully seal the rear of the relay box.
 
 ### Electrical Modules - Rev A
 
@@ -155,23 +158,24 @@ DXF files:
 - `power_module_box_rev_a.dxf` - breaker and grouped-MIDI side module
 - `power_module_rear_insulator_rev_a.dxf` - non-metal rear shield
 
-Release position: reference/provisional package for the earlier combined module route. For the current route, use `battery_power_carrier_mount_rev_a` for the chassis-mounted integrated carrier and `midi5_plate_mount_rev_c` for the MIDI holder/subplate mounted onto it.
+Release position: reference/provisional package for the earlier combined module route. For the current route, use `battery_power_carrier_mount_rev_a` for the chassis-mounted integrated carrier and `midi5_enclosure_rev_d` for the MIDI holder enclosure mounted onto it.
 
 ## Electrical Underlay / Insulator Requirements
 
-These are the three non-metal electrical underlays/guards to track separately from owner-made metal plates and brackets:
+These non-metal electrical underlays/guards are tracked separately from owner-made metal plates and brackets:
 
 | Requirement | Package file | Definition | Status |
 | --- | --- | --- | --- |
-| MIDI holder insulating underlay / subplate | `midi5_plate_mount_rev_c/midi5_holder_subplate_rev_c.dxf` | `140 x 85 x 5.0 mm` HDPE/ABS/G10/phenolic board; ten `4.5 mm` holder holes; six `5.5 mm` standoff holes. | Current external plastic/CNC quote row. |
+| MIDI holder insulating underlay / subplate | `midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.dxf` | `140 x 85 x 5.0 mm` HDPE/ABS/G10/phenolic board; ten `4.5 mm` holder holes; six `5.5 mm` standoff holes. | Current external plastic/CNC quote row. |
 | Relay rear guard / underlay | `relay_mount_rev_c/relay_rear_guard_rev_c.dxf` | `280 x 185 x 3.0 mm` ABS/HDPE/polypropylene guard with `120 x 25 mm` lower loom/drain opening; six `5.5 mm` standoff holes. | Fallback only with standalone relay Rev C route unless the integrated carrier mock-up proves a separate rear guard is still needed. |
 | Power module rear insulator | `electrical_modules_rev_a/power_module_rear_insulator_rev_a.dxf` | `210 x 130 x 3.0 mm` ABS/HDPE/polypropylene shield; two `28 x 8 mm` lower cable slots; six `4.5 mm` mounting holes. | Reference only unless the combined module route is reopened. |
 
 ## Superseded Electrical History
 
-The boxed MIDI module packages remain in the repo as history, but should not be sent as the current fabrication route unless that older design is deliberately reopened:
+The older MIDI module packages remain in the repo as history, but should not be sent as the current fabrication route unless that older design is deliberately reopened:
 - `data/manual/fabrication/midi5_module_rev_a`
 - `data/manual/fabrication/midi5_module_rev_b`
+- `data/manual/fabrication/midi5_plate_mount_rev_c`
 
 ## Shop Instructions
 
