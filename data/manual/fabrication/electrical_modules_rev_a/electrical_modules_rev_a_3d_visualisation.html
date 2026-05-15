@@ -79,6 +79,7 @@
       key,
       new THREE.MeshStandardMaterial({ color: value[0], metalness: value[1], roughness: value[2] })
     ]));
+    const edgeMaterial = new THREE.LineBasicMaterial({ color: 0x25313a, transparent: true, opacity: 0.48 });
 
     const mount = document.getElementById("viewport");
     const threeScene = new THREE.Scene();
@@ -110,6 +111,13 @@
       mesh.castShadow = true;
       mesh.receiveShadow = true;
       root.add(mesh);
+      if (item.color !== "bendline") {
+        const edges = new THREE.LineSegments(new THREE.EdgesGeometry(mesh.geometry), edgeMaterial);
+        edges.position.copy(mesh.position);
+        edges.rotation.copy(mesh.rotation);
+        edges.scale.copy(mesh.scale);
+        root.add(edges);
+      }
     }
 
     function cylinder(item) {
@@ -122,6 +130,10 @@
       mesh.castShadow = true;
       mesh.receiveShadow = true;
       root.add(mesh);
+      const edges = new THREE.LineSegments(new THREE.EdgesGeometry(mesh.geometry), edgeMaterial);
+      edges.position.copy(mesh.position);
+      edges.rotation.copy(mesh.rotation);
+      root.add(edges);
     }
 
     sceneData.boxes.forEach(box);

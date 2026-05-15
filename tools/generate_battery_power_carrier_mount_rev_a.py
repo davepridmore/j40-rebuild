@@ -605,7 +605,6 @@ def write_interactive_3d_visualisation() -> None:
       plateEdge: new THREE.MeshStandardMaterial({ color: 0x8e9aa5, metalness: 0.25, roughness: 0.45 }),
       steel: new THREE.MeshStandardMaterial({ color: 0x59636c, metalness: 0.45, roughness: 0.5 }),
       chassis: new THREE.MeshStandardMaterial({ color: 0x2b3238, metalness: 0.35, roughness: 0.62 }),
-      chassis: new THREE.MeshStandardMaterial({ color: 0x2b3238, metalness: 0.35, roughness: 0.62 }),
       relay: new THREE.MeshStandardMaterial({ color: 0x202a33, roughness: 0.62 }),
       relayDetail: new THREE.MeshStandardMaterial({ color: 0x41515f, roughness: 0.58 }),
       midiBoard: new THREE.MeshStandardMaterial({ color: 0x1f2930, roughness: 0.7 }),
@@ -619,6 +618,18 @@ def write_interactive_3d_visualisation() -> None:
       keepout: new THREE.MeshStandardMaterial({ color: 0xb8c2ca, roughness: 0.75, transparent: true, opacity: 0.18 }),
       bendLine: new THREE.MeshStandardMaterial({ color: 0x2f3942, roughness: 0.55 }),
     };
+    const edgeMaterial = new THREE.LineBasicMaterial({ color: 0x24313a, transparent: true, opacity: 0.48 });
+
+    function addMeshEdges(mesh, material) {
+      if (material === materials.bendLine || material === materials.keepout) {
+        return;
+      }
+      const edges = new THREE.LineSegments(new THREE.EdgesGeometry(mesh.geometry), edgeMaterial);
+      edges.position.copy(mesh.position);
+      edges.rotation.copy(mesh.rotation);
+      edges.scale.copy(mesh.scale);
+      root.add(edges);
+    }
 
     function box(name, x, y, z, w, h, d, material) {
       const mesh = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), material);
@@ -627,6 +638,7 @@ def write_interactive_3d_visualisation() -> None:
       mesh.castShadow = true;
       mesh.receiveShadow = true;
       root.add(mesh);
+      addMeshEdges(mesh, material);
       return mesh;
     }
 
@@ -638,6 +650,7 @@ def write_interactive_3d_visualisation() -> None:
       mesh.castShadow = true;
       mesh.receiveShadow = true;
       root.add(mesh);
+      addMeshEdges(mesh, material);
       return mesh;
     }
 
@@ -1008,9 +1021,21 @@ def write_assembled_interactive_3d_visualisation() -> None:
       black: new THREE.MeshStandardMaterial({ color: 0x111820, roughness: 0.55 }),
       cableRed: new THREE.MeshStandardMaterial({ color: 0xc41d1d, roughness: 0.45 }),
       cableBlack: new THREE.MeshStandardMaterial({ color: 0x20262b, roughness: 0.5 }),
+      chassis: new THREE.MeshStandardMaterial({ color: 0x2b3238, metalness: 0.35, roughness: 0.62 }),
       keepout: new THREE.MeshStandardMaterial({ color: 0xb8c2ca, roughness: 0.75, transparent: true, opacity: 0.18 }),
       bendLine: new THREE.MeshStandardMaterial({ color: 0x2f3942, roughness: 0.55 }),
     };
+    const edgeMaterial = new THREE.LineBasicMaterial({ color: 0x24313a, transparent: true, opacity: 0.48 });
+    function addMeshEdges(mesh, material) {
+      if (material === materials.bendLine || material === materials.keepout) {
+        return;
+      }
+      const edges = new THREE.LineSegments(new THREE.EdgesGeometry(mesh.geometry), edgeMaterial);
+      edges.position.copy(mesh.position);
+      edges.rotation.copy(mesh.rotation);
+      edges.scale.copy(mesh.scale);
+      root.add(edges);
+    }
     function box(name, x, y, z, w, h, d, material) {
       const mesh = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), material);
       mesh.name = name;
@@ -1018,6 +1043,7 @@ def write_assembled_interactive_3d_visualisation() -> None:
       mesh.castShadow = true;
       mesh.receiveShadow = true;
       root.add(mesh);
+      addMeshEdges(mesh, material);
       return mesh;
     }
     function cyl(name, x, y, z, radius, depth, material, rotationX = Math.PI / 2) {
@@ -1028,6 +1054,7 @@ def write_assembled_interactive_3d_visualisation() -> None:
       mesh.castShadow = true;
       mesh.receiveShadow = true;
       root.add(mesh);
+      addMeshEdges(mesh, material);
       return mesh;
     }
     function cable(name, points, radius, material) {

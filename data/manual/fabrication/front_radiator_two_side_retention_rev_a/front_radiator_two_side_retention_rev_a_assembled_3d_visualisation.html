@@ -93,6 +93,14 @@
       brass: new THREE.MeshStandardMaterial({ color: 0xc4a35a, metalness: 0.4, roughness: 0.36 }),
       hole: new THREE.MeshStandardMaterial({ color: 0xf5f6f7, roughness: 0.5 }),
     };
+    const edgeMaterial = new THREE.LineBasicMaterial({ color: 0x24313a, transparent: true, opacity: 0.48 });
+    function addMeshEdges(mesh) {
+      const edges = new THREE.LineSegments(new THREE.EdgesGeometry(mesh.geometry), edgeMaterial);
+      edges.position.copy(mesh.position);
+      edges.rotation.copy(mesh.rotation);
+      edges.scale.copy(mesh.scale);
+      root.add(edges);
+    }
 
     function box(name, x, y, z, w, h, d, material) {
       const mesh = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), material);
@@ -101,6 +109,7 @@
       mesh.castShadow = true;
       mesh.receiveShadow = true;
       root.add(mesh);
+      addMeshEdges(mesh);
       return mesh;
     }
     function cyl(name, x, y, z, radius, depth, material, rotationX = Math.PI / 2) {
@@ -111,6 +120,7 @@
       mesh.castShadow = true;
       mesh.receiveShadow = true;
       root.add(mesh);
+      addMeshEdges(mesh);
       return mesh;
     }
     function angleVertical(name, x, y, z, height) {

@@ -54,8 +54,8 @@
       <h2>Assembly Read</h2>
       <dl>
         <div><dt>Package role</dt><dd>Fallback standalone folded relay-box carrier with rear guard and serviceable loom exit.</dd></div>
-        <div><dt>Load path</dt><dd>The 90-degree folded aluminium carrier supports the DAIER relay/fuse box if the split relay route is used.</dd></div>
-        <div><dt>Service intent</dt><dd>Show the 20 mm side/bottom returns and 15 mm top return; keep the rear guard spaced and the lower loom opening downward.</dd></div>
+        <div><dt>Load path</dt><dd>The folded aluminium carrier is a vertical front-face support for the DAIER relay/fuse box if the split relay route is used.</dd></div>
+        <div><dt>Service intent</dt><dd>Show the relay box on the carrier face, 20 mm side/bottom returns bent back, the 15 mm top return, and the spaced rear guard behind the loom side.</dd></div>
       </dl>
     </aside>
   </main>
@@ -63,7 +63,7 @@
     import * as THREE from "three";
     import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
-    const sceneData = {"title":"Relay Mount Rev C","subtitle":"Fallback standalone folded relay-box carrier with rear guard and serviceable loom exit.","camera":[380,310,460],"target":[0,30,0],"size":"360 x 255 mm carrier blank; 320 x 220 mm finished face; 280 x 185 mm rear guard","load_path":"The 90-degree folded aluminium carrier supports the DAIER relay/fuse box if the split relay route is used.","service_intent":"Show the 20 mm side/bottom returns and 15 mm top return; keep the rear guard spaced and the lower loom opening downward.","boxes":[{"name":"Folded relay carrier face","x":0,"y":3,"z":0,"w":320,"h":8,"d":220,"color":"aluminium"},{"name":"Left 20 mm 90-degree return","x":-170,"y":-18,"z":0,"w":20,"h":42,"d":220,"color":"aluminium"},{"name":"Right 20 mm 90-degree return","x":170,"y":-18,"z":0,"w":20,"h":42,"d":220,"color":"aluminium"},{"name":"Bottom 20 mm 90-degree return","x":0,"y":-18,"z":120,"w":320,"h":42,"d":20,"color":"aluminium"},{"name":"Top 15 mm 90-degree return","x":0,"y":-16,"z":-117.5,"w":320,"h":38,"d":15,"color":"aluminium"},{"name":"Left bend crease","x":-160,"y":12,"z":0,"w":4,"h":4,"d":220,"color":"bendline"},{"name":"Right bend crease","x":160,"y":12,"z":0,"w":4,"h":4,"d":220,"color":"bendline"},{"name":"Bottom bend crease","x":0,"y":12,"z":110,"w":320,"h":4,"d":4,"color":"bendline"},{"name":"Top bend crease","x":0,"y":12,"z":-110,"w":320,"h":4,"d":4,"color":"bendline"},{"name":"Relay/fuse box","x":0,"y":48,"z":-5,"w":295,"h":62,"d":170,"color":"black"},{"name":"Rear guard","x":0,"y":-20,"z":0,"w":280,"h":5,"d":185,"color":"plastic"}]};
+    const sceneData = {"title":"Relay Mount Rev C","subtitle":"Fallback standalone folded relay-box carrier with rear guard and serviceable loom exit.","camera":[430,360,520],"target":[0,115,0],"size":"360 x 255 mm carrier blank; 320 x 220 mm finished face; 280 x 185 mm rear guard","load_path":"The folded aluminium carrier is a vertical front-face support for the DAIER relay/fuse box if the split relay route is used.","service_intent":"Show the relay box on the carrier face, 20 mm side/bottom returns bent back, the 15 mm top return, and the spaced rear guard behind the loom side.","boxes":[{"name":"Folded relay carrier front face 320 x 220","x":0,"y":112,"z":0,"w":320,"h":220,"d":8,"color":"aluminium"},{"name":"Left 20 mm 90-degree return bent back","x":-164,"y":112,"z":-14,"w":8,"h":220,"d":28,"color":"aluminium"},{"name":"Right 20 mm 90-degree return bent back","x":164,"y":112,"z":-14,"w":8,"h":220,"d":28,"color":"aluminium"},{"name":"Bottom 20 mm 90-degree return bent back","x":0,"y":0,"z":-14,"w":320,"h":8,"d":28,"color":"aluminium"},{"name":"Top 15 mm 90-degree return bent back","x":0,"y":224,"z":-11.5,"w":320,"h":8,"d":23,"color":"aluminium"},{"name":"Left vertical bend crease","x":-160,"y":112,"z":6,"w":4,"h":220,"d":3,"color":"bendline"},{"name":"Right vertical bend crease","x":160,"y":112,"z":6,"w":4,"h":220,"d":3,"color":"bendline"},{"name":"Bottom horizontal bend crease","x":0,"y":4,"z":6,"w":320,"h":4,"d":3,"color":"bendline"},{"name":"Top horizontal bend crease","x":0,"y":220,"z":6,"w":320,"h":4,"d":3,"color":"bendline"},{"name":"Relay/fuse box on carrier front face","x":0,"y":112,"z":-42,"w":295,"h":170,"d":62,"color":"black"},{"name":"Rear guard spaced behind loom side","x":0,"y":112,"z":28,"w":280,"h":185,"d":5,"color":"plastic"}]};
     const materialDefs = {
       aluminium: [0xc1cbd3, 0.35, 0.38],
       steel: [0x59636c, 0.45, 0.5],
@@ -79,6 +79,7 @@
       key,
       new THREE.MeshStandardMaterial({ color: value[0], metalness: value[1], roughness: value[2] })
     ]));
+    const edgeMaterial = new THREE.LineBasicMaterial({ color: 0x25313a, transparent: true, opacity: 0.48 });
 
     const mount = document.getElementById("viewport");
     const threeScene = new THREE.Scene();
@@ -110,6 +111,13 @@
       mesh.castShadow = true;
       mesh.receiveShadow = true;
       root.add(mesh);
+      if (item.color !== "bendline") {
+        const edges = new THREE.LineSegments(new THREE.EdgesGeometry(mesh.geometry), edgeMaterial);
+        edges.position.copy(mesh.position);
+        edges.rotation.copy(mesh.rotation);
+        edges.scale.copy(mesh.scale);
+        root.add(edges);
+      }
     }
 
     function cylinder(item) {
@@ -122,6 +130,10 @@
       mesh.castShadow = true;
       mesh.receiveShadow = true;
       root.add(mesh);
+      const edges = new THREE.LineSegments(new THREE.EdgesGeometry(mesh.geometry), edgeMaterial);
+      edges.position.copy(mesh.position);
+      edges.rotation.copy(mesh.rotation);
+      root.add(edges);
     }
 
     sceneData.boxes.forEach(box);
