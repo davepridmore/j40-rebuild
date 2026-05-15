@@ -35,15 +35,15 @@ DXF files:
 - `battery_stand_compact_single_chassis_pickup_rev_b.dxf` - formed chassis saddle over rail, qty `1`
 - `battery_stand_compact_single_mount_upright_rev_b.dxf` - upright bridge side plate, qty `2 mirrored`
 - `battery_stand_compact_hold_down_crossbar_rev_b.dxf` - battery hold-down crossbar, qty `1`
-- `battery_power_compact_front_service_rail_rev_b.dxf` - raised 325 x 245 mm front/radiator-side service ladder for the relay tray, plastic underlay, wire gutter, and MIDI/cutoff shelf tabs, qty `1`
+- `battery_power_compact_front_service_rail_rev_b.dxf` - widened 500 x 285 mm front/radiator-side access ladder for the outboard relay tray, plastic underlay, 80 mm wire gutter, MIDI/cutoff shelf tabs, and five-output MIDI cable fanout, qty `1`
 - `battery_power_compact_cutoff_tab_rev_b.dxf` - folded 100A breaker/cutoff base/guard, qty `1`
 
 Release position:
-- Rev D service-ladder update is a prototype/mock-up release for the steel chassis-mounted battery stand.
+- Rev E access-ladder update is a prototype/mock-up release for the steel chassis-mounted battery stand.
 - The stand must mount from the one known formed chassis saddle and upright bridge, not the battery tray skin, radiator support strap, or unsupported inner wing.
-- It supports a full-height battery and carries the already-fabricated Relay Rev C carrier base (`320 x 220 mm` face) raised into the front service field, the relay plastic rear guard/underlay (`280 x 185 mm`) ahead of the folded metal tray, MIDI Rev C mount plate/subplate (`190 x 150 mm` / `140 x 85 mm`) on a separated top-front shelf, the 100A breaker/cutoff base/guard (`170 x 110 mm` finished face), and cable support holes on one removable steel assembly.
-- The cutoff output must split into two direct protected branches: one to the relay feed and one to the MIDI common feed.
-- Final metal cutting/drilling still needs the battery-installed cardboard mock-up, the formed saddle rail-width/leg-depth/through-bolt measurement, cutoff body dimensions, direct cable-lug sweeps, bonnet-clearance checks, relay service access, and steering/radiator/fan clearance checks.
+- It supports a full-height battery and carries the already-fabricated Relay Rev C carrier base (`320 x 220 mm` face) on the outboard/access edge, the relay plastic rear guard/underlay (`280 x 185 mm`) ahead of the folded metal tray, MIDI Rev C mount plate/subplate (`190 x 150 mm` / `140 x 85 mm`) on a separated top-front shelf, the 100A breaker/cutoff base/guard (`170 x 110 mm` finished face), and cable support holes on one removable steel assembly.
+- The cutoff output must split into two direct protected branches: one to the covered relay feed and one to the MIDI common feed. The MIDI bank must keep a clear five-heavy-cable output side.
+- Final metal cutting/drilling still needs the battery-installed cardboard mock-up, the formed saddle rail-width/leg-depth/through-bolt measurement, cutoff body dimensions, direct cable-lug sweeps, bonnet-clearance checks, relay cover access, MIDI fanout clearance, and steering/radiator/fan clearance checks.
 
 ## Front Radiator Two-Side Retention - Rev A
 

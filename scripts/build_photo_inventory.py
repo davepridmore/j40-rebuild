@@ -2230,6 +2230,53 @@ FILE_OVERRIDES.update(
             ),
             "User-provided May 14 side-view close-up of a brake hard-line flare. The raised folded lip supports the working double/inverted flare read, but the sealing face and port seat still need a straight-on/open-port confirmation before fabrication.",
         ),
+        "20260515_112827_gp_kbx0JKSQ.jpg": c(
+            "electrical_system",
+            "battery_power_carrier_relay_box_cover",
+            "electrical_reset",
+            "component_reference_photo",
+            "high",
+            (
+                "relay_box",
+                "covered_box",
+                "loom_exit",
+                "battery_power_carrier",
+                "fabrication_reference",
+            ),
+            "Google Photos May 15 relay/fuse box reference: plain covered black enclosure with cover screws and side/upper loom exits; use to simplify the relay visual model and keep cover access clear.",
+        ),
+        "20260515_112836_gp_sFdn9AyA.jpg": c(
+            "electrical_system",
+            "battery_power_carrier_100a_cutoff_breaker",
+            "electrical_reset",
+            "component_reference_photo",
+            "high",
+            (
+                "100a_breaker",
+                "cutoff",
+                "ring_lug",
+                "cable_boot",
+                "battery_power_carrier",
+                "fabrication_reference",
+            ),
+            "Google Photos May 15 100A waterproof resettable breaker/cutoff reference: large ring lugs and heavy cable boots confirm lug sweep and service-clearance hold.",
+        ),
+        "20260515_112907_gp_wtj4G8tQ.jpg": c(
+            "electrical_system",
+            "battery_power_carrier_midi_fuse_bank",
+            "electrical_reset",
+            "component_reference_photo",
+            "high",
+            (
+                "midi_fuse",
+                "five_output_side",
+                "common_feed",
+                "heavy_cable_fanout",
+                "battery_power_carrier",
+                "fabrication_reference",
+            ),
+            "Google Photos May 15 MIDI bank reference: red linked fuse holders with one common feed side and five heavy output cables on the opposite side; drives the widened cable gutter and fanout clearance.",
+        ),
     }
 )
 

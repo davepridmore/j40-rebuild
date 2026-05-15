@@ -11,7 +11,7 @@ FAB_DIR = ROOT / "data" / "manual" / "fabrication"
 
 
 def relay_fuse_box_boxes(x: float, y: float, z: float, prefix: str) -> list[dict[str, object]]:
-    boxes: list[dict[str, object]] = [
+    return [
         {
             "name": f"{prefix} housing 300 x 197 x 80",
             "x": x,
@@ -23,7 +23,7 @@ def relay_fuse_box_boxes(x: float, y: float, z: float, prefix: str) -> list[dict
             "color": "black",
         },
         {
-            "name": f"{prefix} raised front rim",
+            "name": f"{prefix} plain removable front cover",
             "x": x,
             "y": y,
             "z": z - 38,
@@ -33,137 +33,72 @@ def relay_fuse_box_boxes(x: float, y: float, z: float, prefix: str) -> list[dict
             "color": "plastic",
         },
         {
-            "name": f"{prefix} relay bay backing",
-            "x": x - 46,
+            "name": f"{prefix} shallow raised cover rim",
+            "x": x,
             "y": y,
-            "z": z - 45,
-            "w": 128,
-            "h": 176,
-            "d": 8,
-            "color": "deepblack",
+            "z": z - 44,
+            "w": 250,
+            "h": 147,
+            "d": 5,
+            "color": "black",
         },
         {
-            "name": f"{prefix} blade fuse column backing",
-            "x": x + 104,
-            "y": y,
-            "z": z - 45,
-            "w": 58,
-            "h": 176,
-            "d": 8,
-            "color": "deepblack",
+            "name": f"{prefix} upper covered harness exit",
+            "x": x - 78,
+            "y": y + 104,
+            "z": z - 36,
+            "w": 118,
+            "h": 22,
+            "d": 30,
+            "color": "rubber",
         },
         {
-            "name": f"{prefix} lower loom boot",
-            "x": x - 124,
-            "y": y - 82,
-            "z": z - 48,
-            "w": 46,
-            "h": 34,
+            "name": f"{prefix} side red/blue wire bundle under cover",
+            "x": x + 154,
+            "y": y + 32,
+            "z": z - 22,
+            "w": 24,
+            "h": 86,
+            "d": 26,
+            "color": "cableRed",
+        },
+        {
+            "name": f"{prefix} braided loom boot service loop",
+            "x": x + 160,
+            "y": y - 34,
+            "z": z - 14,
+            "w": 42,
+            "h": 108,
             "d": 34,
             "color": "rubber",
         },
         {
-            "name": f"{prefix} red output wire bundle",
-            "x": x + 32,
-            "y": y - 92,
-            "z": z - 50,
-            "w": 92,
-            "h": 16,
-            "d": 26,
-            "color": "cableRed",
+            "name": f"{prefix} lower loom relief tail",
+            "x": x - 102,
+            "y": y - 106,
+            "z": z - 28,
+            "w": 62,
+            "h": 26,
+            "d": 28,
+            "color": "rubber",
         },
     ]
-    row_ys = [y + 72 - index * 36 for index in range(5)]
-    relay_xs = [x - 70, x - 10]
-    fuse_colors = ["fuseblue", "fusered", "fuseblue", "fuseyellow", "fuseyellow"]
-    for row_index, row_y in enumerate(row_ys, start=1):
-        for col_index, relay_x in enumerate(relay_xs, start=1):
-            boxes.append(
-                {
-                    "name": f"{prefix} relay cube R{row_index}C{col_index}",
-                    "x": relay_x,
-                    "y": row_y,
-                    "z": z - 72,
-                    "w": 54,
-                    "h": 29,
-                    "d": 28,
-                    "color": "relayblock",
-                }
-            )
-            boxes.append(
-                {
-                    "name": f"{prefix} relay printed legend R{row_index}C{col_index}",
-                    "x": relay_x,
-                    "y": row_y + 1,
-                    "z": z - 88,
-                    "w": 32,
-                    "h": 4,
-                    "d": 2,
-                    "color": "white",
-                }
-            )
-        boxes.extend(
-            [
-                {
-                    "name": f"{prefix} fuse slot {row_index}",
-                    "x": x + 104,
-                    "y": row_y,
-                    "z": z - 72,
-                    "w": 44,
-                    "h": 28,
-                    "d": 16,
-                    "color": "deepblack",
-                },
-                {
-                    "name": f"{prefix} blade fuse {row_index}",
-                    "x": x + 104,
-                    "y": row_y + 3,
-                    "z": z - 88,
-                    "w": 34,
-                    "h": 12,
-                    "d": 7,
-                    "color": fuse_colors[row_index - 1],
-                },
-                {
-                    "name": f"{prefix} exposed fuse terminal pair {row_index}",
-                    "x": x + 104,
-                    "y": row_y - 13,
-                    "z": z - 88,
-                    "w": 32,
-                    "h": 5,
-                    "d": 4,
-                    "color": "silver",
-                },
-            ]
-        )
-    for stud_x, stud_y in ((x - 124, y + 72), (x - 124, y - 72), (x - 10, y + 90), (x - 10, y - 90)):
-        boxes.append(
-            {
-                "name": f"{prefix} brass stud pad",
-                "x": stud_x,
-                "y": stud_y,
-                "z": z - 84,
-                "w": 20,
-                "h": 20,
-                "d": 7,
-                "color": "brass",
-            }
-        )
-    return boxes
 
 
 def relay_fuse_box_cylinders(x: float, y: float, z: float, prefix: str) -> list[dict[str, object]]:
     return [
-        {"name": f"{prefix} corner fixing", "x": x - 138, "y": y + 84, "z": z - 78, "r": 5, "h": 8, "color": "deepblack"},
-        {"name": f"{prefix} corner fixing", "x": x + 138, "y": y + 84, "z": z - 78, "r": 5, "h": 8, "color": "deepblack"},
-        {"name": f"{prefix} corner fixing", "x": x - 138, "y": y - 84, "z": z - 78, "r": 5, "h": 8, "color": "deepblack"},
-        {"name": f"{prefix} corner fixing", "x": x + 138, "y": y - 84, "z": z - 78, "r": 5, "h": 8, "color": "deepblack"},
+        {"name": f"{prefix} upper cover screw", "x": x, "y": y + 46, "z": z - 84, "r": 4, "h": 8, "color": "deepblack"},
+        {"name": f"{prefix} lower cover screw", "x": x, "y": y - 62, "z": z - 84, "r": 4, "h": 8, "color": "deepblack"},
+        {"name": f"{prefix} carrier corner fixing", "x": x - 138, "y": y + 84, "z": z - 78, "r": 5, "h": 8, "color": "deepblack"},
+        {"name": f"{prefix} carrier corner fixing", "x": x + 138, "y": y - 84, "z": z - 78, "r": 5, "h": 8, "color": "deepblack"},
     ]
 
 
 def midi_bank_boxes(x: float, y: float, z: float, prefix: str, count: int = 5) -> list[dict[str, object]]:
     boxes: list[dict[str, object]] = [
         {"name": f"{prefix} 140 x 85 insulated subplate", "x": x, "y": y + 8, "z": z, "w": 140, "h": 12, "d": 85, "color": "deepblack"},
+        {"name": f"{prefix} common feed bus single input side", "x": x, "y": y + 62, "z": z - 46, "w": 128, "h": 10, "d": 12, "color": "brass"},
+        {"name": f"{prefix} five-output lug side clearance reference", "x": x, "y": y + 62, "z": z + 54, "w": 150, "h": 12, "d": 16, "color": "cableRed"},
     ]
     pitch = 27
     start = x - ((count - 1) * pitch) / 2
@@ -701,16 +636,16 @@ It separates the devices from the carrier brackets so the relay box, 100A breake
 
 ## Modelled Devices
 
-- Relay/fuse box: photo-informed 10-relay housing with blade-fuse column, brass studs, lower loom boot, and red output-wire bundle. The released sizing basis remains `300 x 197 x 80 mm`.
+- Relay/fuse box: photo-informed covered black enclosure with plain removable front cover, two cover screws, upper/side loom exits, and braided loom boot/service loop. The released sizing basis remains `300 x 197 x 80 mm`; internals are hidden by the fitted cover.
 - 100A breaker/cutoff: photo-informed waterproof resettable breaker with black body, raised faceplate, red reset lever/button, two terminal studs, ring lugs, and cable boots. Exact body/stud centres remain a caliper hold before final drilling.
-- MIDI fuse holder bank: active five-position fabrication model on the known `140 x 85 mm` insulated subplate, using red hinged covers, black linked bases, side mounting ears, latch recesses, and paired feed/branch studs. The received photo shows a larger linked bank; the active fabrication package is still the five-way Rev C plate.
+- MIDI fuse holder bank: active five-position fabrication model on the known `140 x 85 mm` insulated subplate, using red hinged covers, black linked bases, side mounting ears, latch recesses, paired studs, a single common-feed side, and a five-output heavy-cable side. The received photo shows a larger linked bank; the active fabrication package is still the five-way Rev C plate.
 - Hidden/security needle switch: shown only as a small reference object, because it belongs to the cabin/security wiring path rather than the battery-side power carrier.
 
 ## Evidence Basis
 
-- Relay/fuse box photo: `photos/20260411_143125.jpg`
-- 100A breaker/cutoff and MIDI context photo: `photos/20260411_071153.jpg`
-- MIDI holder close-up: `photos/20260411_143135.jpg`
+- Relay/fuse box photos: `photos/20260411_143125.jpg`, `photos/20260515_112827_gp_kbx0JKSQ.jpg`
+- 100A breaker/cutoff photos: `photos/20260411_071153.jpg`, `photos/20260515_112836_gp_sFdn9AyA.jpg`
+- MIDI holder close-ups: `photos/20260411_143135.jpg`, `photos/20260515_112907_gp_wtj4G8tQ.jpg`
 - Hidden/security needle switch photo: `photos/20260420_221819_gp_YV69fbvA.jpg`
 
 ## Release Notes
@@ -722,30 +657,30 @@ These models are visual envelopes, not fabrication drawings. Use them to check p
     basis_rows = [
         {
             "device_id": "relay_fuse_box",
-            "device_name": "10-way relay/fuse box",
-            "measurement_basis": "Published/listing and earlier photo-check housing size",
+            "device_name": "Covered relay/fuse box",
+            "measurement_basis": "Published/listing housing size plus May 15 covered-box photo",
             "model_dimensions_mm": "300 x 197 x 80 housing envelope",
-            "photo_refs": "photos/20260411_143125.jpg",
+            "photo_refs": "photos/20260411_143125.jpg|photos/20260515_112827_gp_kbx0JKSQ.jpg",
             "release_status": "released_visual_envelope",
-            "notes": "Visual model adds 10 relay cubes, blade-fuse column, brass studs, loom boot, and output wire bundle to the released housing envelope.",
+            "notes": "Visual model now shows the fitted plain cover, cover screws, loom exits, and service loop. Internal relays/fuses are not visible under the cover and are not modelled.",
         },
         {
             "device_id": "midi_holder_bank",
             "device_name": "MIDI fuse holder bank, active five positions",
             "measurement_basis": "Rev C subplate holes from measured linked-holder photos plus received holder photo",
             "model_dimensions_mm": "140 x 85 subplate; holder holes about 20.2 pitch, 44 row separation, 10 row stagger",
-            "photo_refs": "photos/20260411_143135.jpg|photos/20260411_071153.jpg",
+            "photo_refs": "photos/20260411_143135.jpg|photos/20260411_071153.jpg|photos/20260515_112907_gp_wtj4G8tQ.jpg",
             "release_status": "released_visual_envelope_for_five_way_rev_c",
-            "notes": "Received bank photo shows more positions; fabrication pack uses five active positions on the Rev C plate/subplate.",
+            "notes": "Received bank photo shows more positions; fabrication pack uses five active positions on the Rev C plate/subplate with one common-feed side and five heavy output cables on the opposite side.",
         },
         {
             "device_id": "breaker_cutoff_100a",
             "device_name": "100A waterproof resettable breaker / cutoff",
             "measurement_basis": "Received hardware photo and workbook part row 53",
             "model_dimensions_mm": "Visual envelope only; exact breaker body, mounting holes, stud centres, and cable lug sweep must be caliper-measured",
-            "photo_refs": "photos/20260411_071153.jpg",
+            "photo_refs": "photos/20260411_071153.jpg|photos/20260515_112836_gp_sFdn9AyA.jpg",
             "release_status": "visual_envelope_measurement_hold",
-            "notes": "Visual model shows the received resettable breaker form. Final metal still keeps the breaker body, stud spacing, and cable-lug depth as a hold.",
+            "notes": "Visual model shows the received resettable breaker form and large ring-lug sweep. Final metal still keeps the breaker body, stud spacing, and cable-lug depth as a hold.",
         },
         {
             "device_id": "hidden_security_needle_switch",

@@ -1,7 +1,7 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-05-14 11:19:42
-- Total media files indexed: 669 (658 photos, 11 videos)
+- Generated: 2026-05-15 12:47:42
+- Total media files indexed: 672 (661 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
 
@@ -18,6 +18,7 @@
 | `baseline_walkaround` | 34 |
 | `brake_system` | 13 |
 | `chassis_fixing` | 50 |
+| `electrical_reset` | 3 |
 | `electrical_rework` | 18 |
 | `eps_vitz_upgrade` | 1 |
 | `hardware_refinish` | 32 |
@@ -75,6 +76,9 @@
 | `documentation_reference` | `off_vehicle_workstation_reference_video` | 2 | 2026-03-29 to 2026-04-23 | `20260329_095138.mp4` |
 | `documentation_reference` | `pakwheels_listing_screenshot` | 1 | 2026-03-13 | `Screenshot_20260313_054936_PakWheels.jpg` |
 | `documentation_reference` | `reference_media` | 48 | 2026-04-14 to 2026-05-04 | `20260414_000833_gp_7PzMcRKw.jpg` |
+| `electrical_system` | `battery_power_carrier_100a_cutoff_breaker` | 1 | 2026-05-15 | `20260515_112836_gp_sFdn9AyA.jpg` |
+| `electrical_system` | `battery_power_carrier_midi_fuse_bank` | 1 | 2026-05-15 | `20260515_112907_gp_wtj4G8tQ.jpg` |
+| `electrical_system` | `battery_power_carrier_relay_box_cover` | 1 | 2026-05-15 | `20260515_112827_gp_kbx0JKSQ.jpg` |
 | `electrical_system` | `driver_footwell_firewall_pass_through` | 1 | 2026-03-24 | `20260324_004812.jpg` |
 | `electrical_system` | `firewall_and_dash_wiring` | 10 | 2026-03-20 | `20260320_191834.jpg` |
 | `electrical_system` | `pedal_box_wiring` | 5 | 2026-03-28 | `20260328_053638_gp_t6Q3oCTA.jpg` |
