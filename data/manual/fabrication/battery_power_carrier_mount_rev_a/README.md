@@ -18,13 +18,13 @@ This package changes the battery-side plan into a compact steel chassis-bolted s
 
 ## Image-Based Chassis Pickup Estimate
 
-The May 14 no-battery bay photo shows the existing battery pocket sitting well above the chassis rail and slightly wing-side/outboard from the visible chassis pickup line. Use these only as first cardboard/wood mock-up targets:
+The May 14 no-battery bay photo shows the existing battery pocket sitting well above the chassis rail, with the chassis pickup more central/inboard than the required battery pocket. Use these only as first cardboard/wood mock-up targets:
 
 - Target tray support plane: keep the compact tray in the existing battery pocket plane, about `170-190 mm` above the top of the chassis rail. Use `180 mm` as the first mock-up rise from chassis top to tray underside.
 - Vertical adjustment allowance: build the upright bridge with slotted/stepped adjustment from `150-210 mm` chassis-top-to-tray-underside so the tray can be lowered if bonnet/terminal clearance is tight or raised if the relay tray/cable exit needs more space.
-- Sideways adjustment allowance: set the tray centre about `120 mm` wing-side/outboard from the chassis pickup centreline, with `90-150 mm` usable side adjustment. This keeps the battery in the original pocket rather than moving it engine-side.
+- Sideways adjustment allowance: set the tray centre about `150 mm` wing-side/outboard from the chassis pickup centreline, with `120-180 mm` usable side adjustment. This keeps the battery in the original pocket rather than moving it engine-side.
 - Chassis saddle allowance: mock the chassis fixing as a 4 mm mild-steel saddle with a top cap over the rail and two down-legs, not a flat plate beside the rail. Use a nominal `220 x 230 mm` flat pattern (`70 mm` near leg, measured rail-top cap nominal `90 mm`, `70 mm` far leg) until the actual rail width is measured.
-- Battery/electrical package hold: mock up the full `318 x 180 x 230 mm` standard battery envelope plus removable hold-down, then add the widened front access-ladder cards. Do not final-drill the pickup or upright until the battery lift-out path, battery top, bonnet, fan/radiator, steering/hose, tool access, relay cover removal, rotated relay top/front cable exits, battery-to-cutoff sweep, cutoff-switched relay/MIDI cable sweeps, and MIDI five-output cable fanout all pass.
+- Battery/electrical package hold: mock up the full `318 x 180 x 230 mm` standard battery envelope plus removable hold-down, then add the widened front access-ladder cards with the relay-to-battery service gap tightened to about `80 mm`. Do not final-drill the pickup or upright until the battery lift-out path, battery top, bonnet, fan/radiator, steering/hose, tool access, relay cover removal, rotated relay top/front cable exits, battery-to-cutoff sweep, cutoff-switched relay/MIDI cable sweeps, and MIDI five-output cable fanout all pass.
 
 ## Parts In This Package
 
@@ -96,7 +96,7 @@ Detailed measurement rows are in `cavity_mapping_plan.csv`.
 
 - Battery installed: length, width, full case height, terminal side, clamp path, and bonnet clearance.
 - Compact holder cards: outboard-access covered Relay Rev C tray rotated to put power in/out at the top and controls toward the front, relay plastic rear guard/underlay, top relay power in/out cards, front relay control-cable card, MIDI Rev C top-front shelf, folded cutoff/kill-switch base/guard with upward lips beside the MIDI shelf, battery-leading-edge datum line for the MIDI start, battery-to-cutoff and cutoff-to-relay/MIDI cable-lug depth, seated MIDI output comb/backplate, and five MIDI output cable bends must fit the measured front/radiator volume without touching the steering-side service envelope.
-- Single chassis saddle: rail top width, leg depth, through-bolt pitch, crush-tube need, stand-off height, upright bridge height, side-jog from saddle centreline to tray centreline, and access for tools. Current image-based target is `180 mm` rise with `90-150 mm` wing-side/outboard adjustment.
+- Single chassis saddle: rail top width, leg depth, through-bolt pitch, crush-tube need, stand-off height, upright bridge height, side-jog from saddle centreline to tray centreline, and access for tools. Current image-based target is `180 mm` rise with a `150 mm` wing-side/outboard tray jog and `120-180 mm` adjustment.
 - 100A breaker/cutoff: body length/width/height, mounting hole centres, reset lever access, terminal stud size/spacing, and cable-lug sweep.
 - Relay Rev C base: final outboard/front service orientation, cover removal space, plastic-underlay order, standoff height, seal direction, and loom exit direction.
 - MIDI Rev C base/subplate: final top-front shelf feed/output orientation, cutoff-switched common-feed bend radius, attached side-gutter output guide, and all five branch-output bend radii.

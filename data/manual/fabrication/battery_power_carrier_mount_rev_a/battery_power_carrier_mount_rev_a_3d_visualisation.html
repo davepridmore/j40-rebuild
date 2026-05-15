@@ -145,9 +145,11 @@
     <div class="meta">
       <span class="chip">Steel chassis-bolted stand</span>
       <span class="chip">Formed chassis saddle</span>
+      <span class="chip">150 mm outboard tray jog</span>
       <span class="chip">Standard battery envelope</span>
       <span class="chip">Removable hold-down</span>
       <span class="chip">Outboard relay access</span>
+      <span class="chip">Tightened relay gap</span>
       <span class="chip">Relay top power exits</span>
       <span class="chip">Relay front controls</span>
       <span class="chip">Covered relay box</span>
@@ -170,11 +172,11 @@
       <dl>
         <div>
           <dt>Load path</dt>
-          <dd>The compact battery tray mounts from one formed saddle over the chassis rail through a compact upright bridge and now carries a standard N70/27-class envelope with a removable hold-down.</dd>
+          <dd>The compact battery tray mounts from one formed saddle over the more central chassis rail through a compact upright bridge, then jogs about 150 mm wing-side/outboard to keep the battery in the original pocket with a removable hold-down.</dd>
         </div>
         <div>
           <dt>Power path</dt>
-          <dd>The folded Relay Rev C tray sits outside the battery footprint with the relay box rotated 90 degrees, top heavy power in/out exits, and front-facing control-cable relief represented. MIDI Rev C starts on the battery leading-edge datum, the cutoff sits beside it, and the battery positive enters the cutoff first before the switched output splits to relay and MIDI inputs.</dd>
+          <dd>The folded Relay Rev C tray sits outside the battery footprint with the relay-to-battery service gap tightened to about 80 mm, the relay box rotated 90 degrees, top heavy power in/out exits, and front-facing control-cable relief represented. MIDI Rev C starts on the battery leading-edge datum, the cutoff sits beside it, and the battery positive enters the cutoff first before the switched output splits to relay and MIDI inputs.</dd>
         </div>
         <div>
           <dt>Service intent</dt>
@@ -411,37 +413,37 @@
     }
 
     singleChassisPickup();
-    box("Compact battery stand top tray 340 x 265", -110, 68, 42, 340, 8, 265, materials.plate);
-    box("Standard N70/27-class battery envelope 318 x 180 x 230", -120, 187, 32, 318, 230, 180, materials.battery);
-    cyl("Battery positive terminal", -24, 310, -34, 9, 14, materials.brass, 0);
-    cyl("Battery negative terminal", -210, 310, 98, 9, 14, materials.brass, 0);
-    box("Removable battery hold-down crossbar front", -120, 310, -74, 340, 8, 18, materials.plateEdge);
-    box("Removable battery hold-down crossbar rear", -120, 310, 138, 340, 8, 18, materials.plateEdge);
-    box("Low battery front/end stop under lift-out path", -120, 88, -58, 330, 22, 12, materials.plateEdge);
-    box("Low battery rear/end stop under lift-out path", -120, 88, 122, 330, 22, 12, materials.plateEdge);
-    box("Battery vertical lift-out clearance envelope with hold-down removed", -120, 462, 32, 360, 290, 220, materials.keepout);
-    box("Raised outboard access service ladder spine 660 x 310", -330, 205, 168, 660, 310, 8, materials.plate);
-    knownRelayCarrierBase(-500, 238, 176);
-    box("Battery leading-edge datum at MIDI start; kill switch sits beside MIDI, not behind it", -279, 326, 250, 6, 260, 18, materials.bendLine);
-    knownMidiTopShelf(-184, 318, 198);
-    cutoffSwitchTop("Side-mounted 100A resettable breaker / kill switch", 22, 318, 198);
+    box("Compact battery stand top tray 340 x 265 shifted 150 mm outboard from chassis pickup", -150, 68, 42, 340, 8, 265, materials.plate);
+    box("Standard N70/27-class battery envelope 318 x 180 x 230 shifted outboard", -160, 187, 32, 318, 230, 180, materials.battery);
+    cyl("Battery positive terminal", -64, 310, -34, 9, 14, materials.brass, 0);
+    cyl("Battery negative terminal", -250, 310, 98, 9, 14, materials.brass, 0);
+    box("Removable battery hold-down crossbar front", -160, 310, -74, 340, 8, 18, materials.plateEdge);
+    box("Removable battery hold-down crossbar rear", -160, 310, 138, 340, 8, 18, materials.plateEdge);
+    box("Low battery front/end stop under lift-out path", -160, 88, -58, 330, 22, 12, materials.plateEdge);
+    box("Low battery rear/end stop under lift-out path", -160, 88, 122, 330, 22, 12, materials.plateEdge);
+    box("Battery vertical lift-out clearance envelope with hold-down removed", -160, 462, 32, 360, 290, 220, materials.keepout);
+    box("Raised outboard access service ladder spine 660 x 310 shifted toward wing side", -370, 205, 168, 660, 310, 8, materials.plate);
+    knownRelayCarrierBase(-510, 238, 176);
+    box("Battery leading-edge datum at MIDI start; kill switch sits beside MIDI, not behind it", -319, 326, 250, 6, 260, 18, materials.bendLine);
+    knownMidiTopShelf(-224, 318, 198);
+    cutoffSwitchTop("Side-mounted 100A resettable breaker / kill switch", -18, 318, 198);
     box("Inboard engine/LHD steering-side keep-clear envelope", 142, 150, 70, 16, 260, 270, materials.keepout);
-    box("Relay cover removal clearance outside battery footprint", -500, 238, 92, 380, 250, 76, materials.keepout);
-    box("Shared 80 mm power cable gutter above relay/MIDI and side-mounted kill switch", -370, 392, 228, 660, 26, 92, materials.keepout);
-    box("MIDI five-output side-gutter fanout clearance with one double-wire output", -274, 424, 250, 360, 106, 86, materials.keepout);
-    cable("Battery positive to side-mounted cutoff input", [[-24, 318, -34], [-26, 350, 74], [-14, 382, 167]], 7, materials.cableRed);
-    box("Cutoff output stacked ring-lug splitter feeding relay and MIDI", 58, 386, 229, 34, 10, 34, materials.brass);
-    const cutoffOutput = [58, 386, 229];
-    cable("Cutoff switched feed to MIDI common input side", [cutoffOutput, [-80, 396, 204], [-258, 382, 164]], 7, materials.cableRed);
-    cable("Cutoff switched feed to relay top power input", [cutoffOutput, [-230, 406, 224], [-542, 402, 124]], 7, materials.cableRed);
-    cable("Relay top power output to heavy harness service gutter", [[-458, 402, 124], [-500, 438, 150], [-560, 452, 176]], 7, materials.cableRed);
-    cable("Relay front control cables toward radiator-side service gutter", [[-518, 118, 64], [-548, 132, 34], [-592, 160, 18]], 4, materials.cableBlack);
-    box("Cutoff side-by-side service clearance ahead of switched output splitter", 22, 424, 198, 206, 72, 144, materials.keepout);
-    box("Attached MIDI output side gutter tied to shelf ladder", -354, 420, 250, 184, 18, 32, materials.plateEdge);
-    const midiOutputXs = [-238, -211, -184, -157, -130];
+    box("Relay cover removal clearance outside battery footprint with tightened 80 mm battery gap", -510, 238, 92, 380, 250, 76, materials.keepout);
+    box("Shared 80 mm power cable gutter above relay/MIDI and side-mounted kill switch", -410, 392, 228, 660, 26, 92, materials.keepout);
+    box("MIDI five-output side-gutter fanout clearance with one double-wire output", -314, 424, 250, 360, 106, 86, materials.keepout);
+    cable("Battery positive to side-mounted cutoff input", [[-64, 318, -34], [-66, 350, 74], [-54, 382, 167]], 7, materials.cableRed);
+    box("Cutoff output stacked ring-lug splitter feeding relay and MIDI", 18, 386, 229, 34, 10, 34, materials.brass);
+    const cutoffOutput = [18, 386, 229];
+    cable("Cutoff switched feed to MIDI common input side", [cutoffOutput, [-120, 396, 204], [-298, 382, 164]], 7, materials.cableRed);
+    cable("Cutoff switched feed to relay top power input", [cutoffOutput, [-270, 406, 224], [-552, 402, 124]], 7, materials.cableRed);
+    cable("Relay top power output to heavy harness service gutter", [[-468, 402, 124], [-510, 438, 150], [-570, 452, 176]], 7, materials.cableRed);
+    cable("Relay front control cables toward radiator-side service gutter", [[-528, 118, 64], [-558, 132, 34], [-602, 160, 18]], 4, materials.cableBlack);
+    box("Cutoff side-by-side service clearance ahead of switched output splitter", -18, 424, 198, 206, 72, 144, materials.keepout);
+    box("Attached MIDI output side gutter tied to shelf ladder", -394, 420, 250, 184, 18, 32, materials.plateEdge);
+    const midiOutputXs = [-278, -251, -224, -197, -170];
     for (let idx = 0; idx < midiOutputXs.length; idx += 1) {
       const hx = midiOutputXs[idx];
-      const exitX = -310 - idx * 18;
+      const exitX = -350 - idx * 18;
       cable(`MIDI fuse ${idx + 1} heavy output cable through attached comb to side gutter`, [[hx, 390, 258], [hx, 412, 258], [exitX, 426, 258], [exitX - 36, 438, 226]], 6, materials.cableRed);
       if (idx === 2) {
         cable("MIDI fuse 3 second heavy output cable through enlarged attached-comb access hole", [[hx + 8, 390, 266], [hx + 8, 414, 266], [exitX + 12, 430, 266], [exitX - 18, 444, 236]], 5, materials.cableRed);

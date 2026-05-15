@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="336mm" viewBox="0 0 160 336">
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="348mm" viewBox="0 0 160 348">
   <style>
     .cut { fill: none; stroke: #111; stroke-width: 0.6; }
     .aux { fill: none; stroke: #666; stroke-width: 0.35; }
@@ -20,5 +20,5 @@
   <circle class="cut" cx="82" cy="128" r="4" />
   
   </g>
-  <text x="25" y="290" class="note">Compact single-mount upright bridge side plate: 110 x 220 x 4.0 mm mild steel between the one chassis pickup and compact tray.</text><text x="25" y="302" class="note">Make two mirrored side plates around the single pickup bridge if the mock-up needs side-to-side stiffness. This is not a second chassis fixing location.</text><text x="25" y="314" class="note">Lower holes align to the formed chassis saddle top cap; upper holes align to the compact tray/front rail saddle.</text>
+  <text x="25" y="290" class="note">Compact single-mount upright bridge side plate: 110 x 220 x 4.0 mm mild steel between the one central chassis pickup and compact tray.</text><text x="25" y="302" class="note">Make two mirrored side plates around the single pickup bridge if the mock-up needs side-to-side stiffness. This is not a second chassis fixing location.</text><text x="25" y="314" class="note">Lower holes align to the formed chassis saddle top cap; upper holes align to the compact tray/front rail saddle.</text><text x="25" y="326" class="note">Mock the upper tray/front-rail pickup about 150 mm wing-side/outboard from the chassis pickup centreline, with 120-180 mm side-jog adjustment because the chassis rail is more central than the required battery pocket.</text>
 </svg>
