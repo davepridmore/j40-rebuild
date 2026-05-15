@@ -43,43 +43,43 @@ def relay_fuse_box_boxes(x: float, y: float, z: float, prefix: str) -> list[dict
             "color": "black",
         },
         {
-            "name": f"{prefix} upper red harness cluster 136 x 24 x 34 at relay offset X-62 Y+110 Z-58",
-            "x": x - 62,
-            "y": y + 110,
-            "z": z - 58,
-            "w": 136,
-            "h": 24,
-            "d": 34,
+            "name": f"{prefix} left-hand power input cable boot 46 x 54 x 42 at relay offset X-164 Y+42 Z-52",
+            "x": x - 164,
+            "y": y + 42,
+            "z": z - 52,
+            "w": 46,
+            "h": 54,
+            "d": 42,
             "color": "cableRed",
         },
         {
-            "name": f"{prefix} right braided loom cluster 42 x 118 x 42 at relay offset X+164 Y-10 Z-52",
-            "x": x + 164,
-            "y": y - 10,
+            "name": f"{prefix} left-hand power output cable boot 46 x 54 x 42 at relay offset X-164 Y-42 Z-52",
+            "x": x - 164,
+            "y": y - 42,
             "z": z - 52,
-            "w": 42,
-            "h": 118,
+            "w": 46,
+            "h": 54,
             "d": 42,
-            "color": "rubber",
+            "color": "cableRed",
         },
         {
-            "name": f"{prefix} braided loom boot service loop",
-            "x": x + 202,
-            "y": y - 36,
-            "z": z - 52,
-            "w": 42,
-            "h": 108,
+            "name": f"{prefix} top control cable cluster 170 x 24 x 34 at relay offset X-18 Y+110 Z-58",
+            "x": x - 18,
+            "y": y + 110,
+            "z": z - 58,
+            "w": 170,
+            "h": 24,
             "d": 34,
             "color": "rubber",
         },
         {
-            "name": f"{prefix} lower auxiliary cluster 96 x 24 x 30 at relay offset X-96 Y-110 Z-60",
-            "x": x - 96,
-            "y": y - 110,
-            "z": z - 60,
-            "w": 96,
-            "h": 24,
-            "d": 30,
+            "name": f"{prefix} left power cable service-loop volume",
+            "x": x - 208,
+            "y": y,
+            "z": z - 52,
+            "w": 42,
+            "h": 128,
+            "d": 42,
             "color": "rubber",
         },
     ]
@@ -268,7 +268,7 @@ SCENES = {
         "subtitle": "Separate photo-informed device envelopes for relay box, 100A breaker/cutoff, and MIDI fuse holders.",
         "camera": [520, 320, 620],
         "target": [20, 80, 0],
-        "size": "Relay housing 300 x 197 x 80 mm with three sized wire-exit clusters; MIDI holder bank on 140 x 85 board; 100A breaker visual envelope pending final caliper check",
+        "size": "Relay housing 300 x 197 x 80 mm with left power in/out and top control-cable exits; MIDI holder bank on 140 x 85 board; 100A breaker visual envelope pending final caliper check",
         "load_path": "Reference-only device models used inside the battery power carrier and standalone relay/MIDI views.",
         "service_intent": "Use this page to inspect device shapes separately before judging the combined battery-side packaging.",
         "boxes": [
@@ -293,7 +293,7 @@ SCENES = {
         "target": [0, 115, 0],
         "size": "360 x 255 mm carrier blank; 320 x 220 mm finished face; 280 x 185 mm rear guard",
         "load_path": "The folded aluminium carrier is a vertical front-face support for the DAIER relay/fuse box if the split relay route is used.",
-        "service_intent": "Show the relay box on the carrier face, 20 mm side/bottom returns bent back, the 15 mm top return, the spaced rear guard behind the loom side, and the three sized output wire clusters.",
+        "service_intent": "Show the relay box on the carrier face, 20 mm side/bottom returns bent back, the 15 mm top return, the spaced rear guard, left-side power in/out exits, top control-cable exit, and service-loop clearance.",
         "boxes": [
             {"name": "Folded relay carrier front face 320 x 220", "x": 0, "y": 112, "z": 0, "w": 320, "h": 220, "d": 8, "color": "aluminium"},
             {"name": "Left 20 mm 90-degree return bent back", "x": -164, "y": 112, "z": -14, "w": 8, "h": 220, "d": 28, "color": "aluminium"},
@@ -650,7 +650,7 @@ It separates the devices from the carrier brackets so the relay box, 100A breake
 
 ## Modelled Devices
 
-- Relay/fuse box: photo-informed covered black enclosure with plain removable front cover, two cover screws, three visible wire-exit clusters, and braided loom boot/service loop. The released sizing basis remains `300 x 197 x 80 mm`; internals are hidden by the fitted cover. The modelled cluster blocks are upper red harness `136 x 24 x 34 mm` at relay offset `X-62 / Y+110 / Z-58`, right braided loom `42 x 118 x 42 mm` at `X+164 / Y-10 / Z-52`, and lower auxiliary `96 x 24 x 30 mm` at `X-96 / Y-110 / Z-60`.
+- Relay/fuse box: photo-informed covered black enclosure with plain removable front cover, two cover screws, left-hand heavy power input/output boots, top control-cable relief, and left-side service-loop volume. The released sizing basis remains `300 x 197 x 80 mm`; internals are hidden by the fitted cover. The modelled exit blocks are left power input `46 x 54 x 42 mm` at relay offset `X-164 / Y+42 / Z-52`, left power output `46 x 54 x 42 mm` at `X-164 / Y-42 / Z-52`, and top control cables `170 x 24 x 34 mm` at `X-18 / Y+110 / Z-58`.
 - 100A breaker/cutoff: photo-informed waterproof resettable breaker with black body, raised faceplate, red reset lever/button, two terminal studs, ring lugs, and cable boots. Exact body/stud centres remain a caliper hold before final drilling.
 - MIDI fuse holder bank: active five-position fabrication model on the known `140 x 85 mm` insulated subplate, using red hinged covers, black linked bases, side mounting ears, latch recesses, paired studs, a single common-feed side, and a seated five-output cable comb/gland strip attached to a guide backplate and support tabs. Output 3 is marked with an enlarged pass-through because that output carries two wires. The received photo shows a larger linked bank; the active fabrication package is still the five-way Rev C plate.
 - Hidden/security needle switch: shown only as a small reference object, because it belongs to the cabin/security wiring path rather than the battery-side power carrier.
@@ -676,7 +676,7 @@ These models are visual envelopes, not fabrication drawings. Use them to check p
             "model_dimensions_mm": "300 x 197 x 80 housing envelope",
             "photo_refs": "photos/20260411_143125.jpg|photos/20260515_112827_gp_kbx0JKSQ.jpg",
             "release_status": "released_visual_envelope",
-            "notes": "Visual model now shows the fitted plain cover, cover screws, upper red harness cluster 136 x 24 x 34 at X-62/Y+110/Z-58, right braided loom cluster 42 x 118 x 42 at X+164/Y-10/Z-52, lower auxiliary cluster 96 x 24 x 30 at X-96/Y-110/Z-60, and service loop. Internal relays/fuses are not visible under the cover and are not modelled.",
+            "notes": "Visual model now shows the fitted plain cover, cover screws, left-hand power input 46 x 54 x 42 at X-164/Y+42/Z-52, left-hand power output 46 x 54 x 42 at X-164/Y-42/Z-52, top control cable cluster 170 x 24 x 34 at X-18/Y+110/Z-58, and left-side service-loop volume. Internal relays/fuses are not visible under the cover and are not modelled.",
         },
         {
             "device_id": "midi_holder_bank",
@@ -722,8 +722,8 @@ These models are visual envelopes, not fabrication drawings. Use them to check p
         {
             "check_id": "EDM-002",
             "stage": "bench_measurement",
-            "acceptance_check": "Confirm the relay/fuse housing depth, all three wire-exit cluster locations/sizes, loom exit directions, cover opening path, and required standoff clearance against the released 300 x 197 x 80 envelope.",
-            "required_evidence": "Relay box side/depth photo with ruler and upper, side, and lower loom exits visible.",
+            "acceptance_check": "Confirm the relay/fuse housing depth, left-hand power input/output locations, top control-cable exit location, cover opening path, and required standoff clearance against the released 300 x 197 x 80 envelope.",
+            "required_evidence": "Relay box side/depth photo with ruler and left-side power in/out plus top control exits visible.",
         },
         {
             "check_id": "EDM-003",
