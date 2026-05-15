@@ -5,9 +5,9 @@ It separates the devices from the carrier brackets so the relay box, 100A breake
 
 ## Modelled Devices
 
-- Relay/fuse box: photo-informed covered black enclosure with plain removable front cover, two cover screws, upper/side loom exits, and braided loom boot/service loop. The released sizing basis remains `300 x 197 x 80 mm`; internals are hidden by the fitted cover.
+- Relay/fuse box: photo-informed covered black enclosure with plain removable front cover, two cover screws, three visible wire-exit areas (upper red harness, right braided loom, and lower auxiliary relief), and braided loom boot/service loop. The released sizing basis remains `300 x 197 x 80 mm`; internals are hidden by the fitted cover.
 - 100A breaker/cutoff: photo-informed waterproof resettable breaker with black body, raised faceplate, red reset lever/button, two terminal studs, ring lugs, and cable boots. Exact body/stud centres remain a caliper hold before final drilling.
-- MIDI fuse holder bank: active five-position fabrication model on the known `140 x 85 mm` insulated subplate, using red hinged covers, black linked bases, side mounting ears, latch recesses, paired studs, a single common-feed side, and a five-output heavy-cable side. The received photo shows a larger linked bank; the active fabrication package is still the five-way Rev C plate.
+- MIDI fuse holder bank: active five-position fabrication model on the known `140 x 85 mm` insulated subplate, using red hinged covers, black linked bases, side mounting ears, latch recesses, paired studs, a single common-feed side, and an attached five-output cable comb/gland strip. Output 3 is marked with an enlarged pass-through because that output carries two wires. The received photo shows a larger linked bank; the active fabrication package is still the five-way Rev C plate.
 - Hidden/security needle switch: shown only as a small reference object, because it belongs to the cabin/security wiring path rather than the battery-side power carrier.
 
 ## Evidence Basis
