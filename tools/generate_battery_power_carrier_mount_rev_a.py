@@ -18,39 +18,41 @@ ASSEMBLED_VISUAL_HTML_NAME = "battery_power_carrier_mount_rev_a_assembled_3d_vis
 
 def integrated_backplane() -> base.Drawing:
     cut_polys = [
-        base.Poly([(0, 0), (325, 0), (325, 120), (0, 120)]),
+        base.Poly([(0, 0), (325, 0), (325, 245), (0, 245)]),
         # Rail-to-stand / front-cavity pickup slots. Final pitch follows the tray lip/upright mock-up.
         base.rounded_slot_poly(18, 22, 42, 16),
         base.rounded_slot_poly(265, 22, 42, 16),
-        base.rounded_slot_poly(18, 82, 42, 16),
-        base.rounded_slot_poly(265, 82, 42, 16),
-        # Folded Relay Rev C tray attachment field, low on the front/radiator-side cassette.
-        base.rounded_slot_poly(80, 18, 34, 12),
-        base.rounded_slot_poly(210, 18, 34, 12),
-        base.rounded_slot_poly(80, 88, 34, 12),
-        base.rounded_slot_poly(210, 88, 34, 12),
-        # Top-front shelf/base pickup points for the MIDI plate and folded cutoff base.
-        base.rounded_slot_poly(130, 48, 28, 12),
-        base.rounded_slot_poly(168, 48, 28, 12),
+        base.rounded_slot_poly(18, 205, 42, 16),
+        base.rounded_slot_poly(265, 205, 42, 16),
+        # Folded Relay Rev C tray attachment field, raised into the serviceable upper/front ladder.
+        base.rounded_slot_poly(80, 58, 34, 12),
+        base.rounded_slot_poly(210, 58, 34, 12),
+        base.rounded_slot_poly(80, 172, 34, 12),
+        base.rounded_slot_poly(210, 172, 34, 12),
+        # Shelf/base pickup points for the MIDI plate and folded cutoff base, separated from the relay loom gutter.
+        base.rounded_slot_poly(126, 116, 28, 12),
+        base.rounded_slot_poly(170, 116, 28, 12),
     ]
     cut_circles = [
-        # Cable P-clip / saddle clamp holes.
-        base.Circle(72, 60, 3.25),
-        base.Circle(132, 60, 3.25),
-        base.Circle(193, 60, 3.25),
-        base.Circle(253, 60, 3.25),
+        # Cable P-clip / saddle clamp holes, including the direct cutoff-to-relay and cutoff-to-MIDI branches.
+        base.Circle(72, 96, 3.25),
+        base.Circle(132, 96, 3.25),
+        base.Circle(193, 96, 3.25),
+        base.Circle(253, 96, 3.25),
+        base.Circle(132, 150, 3.25),
+        base.Circle(193, 150, 3.25),
     ]
     notes = [
-        "Compact front/radiator-side service cassette spine: 325 x 120 x 3.0 mm mild steel. This supersedes the earlier large side/backplane route.",
-        "The Relay Rev C folded aluminium tray mounts low on this front face so its 320 x 220 face stays inside the battery width envelope as far as practical.",
-        "MIDI Rev C stays as the known open 190 x 150 plate/subplate, but moves to a shallow top-front shelf/tab rather than the inboard engine side.",
-        "The folded cutoff base/guard moves to the top/front accessible corner, with lips bent upward around the 100A breaker/terminal side rather than downward as hidden stiffeners.",
-        "Keep the inboard engine/LHD steering side as a keep-clear/service envelope except for protected cable clips. Do not cut final holes until the battery-cavity map proves radiator, hose, steering, bonnet, and cable-bend clearance.",
+        "Raised front/radiator-side service ladder: 325 x 245 x 3.0 mm mild steel. This supersedes the earlier low relay cassette and large side/backplane routes.",
+        "The Relay Rev C folded aluminium tray mounts in the upper/front serviceable field, with the flat plastic rear guard/underlay between the relay box and the metal tray.",
+        "MIDI Rev C stays as the known open 190 x 150 plate/subplate on a separated front/top shelf zone rather than the inboard engine side.",
+        "The folded cutoff base/guard stays top/front accessible, with direct protected cable branches from cutoff output to both the relay feed and the MIDI common feed.",
+        "Keep at least a 50 mm cable gutter around the relay loom exit and the cutoff/MIDI lugs. Do not cut final holes until the battery-cavity map proves radiator, hose, steering, bonnet, tool, and cable-bend clearance.",
     ]
     return base.Drawing(
         "battery_power_compact_front_service_rail_rev_b",
         325,
-        120,
+        245,
         cut_polys,
         [],
         cut_circles,
@@ -185,7 +187,7 @@ def battery_stand_top_tray() -> base.Drawing:
         base.rounded_slot_poly(24, 190, 14, 38),
         base.rounded_slot_poly(276, 38, 14, 38),
         base.rounded_slot_poly(276, 190, 14, 38),
-        # Upright/front cassette saddle slots. Electrical modules mount to the front cassette, not engine-side panels.
+        # Upright/front ladder saddle slots. Electrical modules mount to the front service ladder, not engine-side panels.
         base.rounded_slot_poly(132, 42, 18, 40),
         base.rounded_slot_poly(168, 42, 18, 40),
         base.rounded_slot_poly(132, 180, 18, 40),
@@ -201,7 +203,7 @@ def battery_stand_top_tray() -> base.Drawing:
     ]
     notes = [
         "Compact battery stand top tray: 315 x 265 x 3.0 mm mild steel tray/deck around the 275 x 230 mm battery datum with service allowance.",
-        "Electrical equipment uses the front/radiator-side service cassette: Relay Rev C low on the front face, MIDI Rev C on a top-front shelf, and cutoff on the top/front tab. Do not use tray skin or the engine-side gap as a large backplane.",
+        "Electrical equipment uses the raised front/radiator-side service ladder: Relay Rev C in the upper service field, MIDI Rev C on a separated front/top shelf, and cutoff on the top/front tab with direct feeds to both relay and MIDI. Do not use tray skin or the engine-side gap as a large backplane.",
         "Final battery footprint, terminal side, clamp path, bonnet clearance, front-cavity clearance, and LHD steering-side clearance are vehicle-measurement holds.",
         "Add an acid-resistant battery mat after paint; do not allow battery case or terminals to touch live studs or sharp steel edges.",
     ]
@@ -290,14 +292,15 @@ def write_static_3d_visualisation() -> None:
     elements.extend(iso_prism(102, 88, 275, 230, 82, 185, "battery-top", "battery-side", "battery-front"))
     elements.extend(iso_prism(94, 100, 315, 18, 274, 8, "hold-top", "hold-side", "hold-front"))
     elements.extend(iso_prism(94, 296, 315, 18, 274, 8, "hold-top", "hold-side", "hold-front"))
-    elements.extend(iso_prism(72, 30, 325, 10, 82, 120, "plate-top", "plate-side", "plate-front"))
-    # Known fabricated component bases now share a front/radiator-side service cassette.
-    elements.extend(iso_prism(74, 38, 320, 8, 68, 220, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
-    elements.extend(iso_prism(70, 24, 8, 28, 68, 220, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
-    elements.extend(iso_prism(390, 24, 8, 28, 68, 220, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
-    elements.extend(iso_prism(74, 24, 320, 28, 60, 8, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
-    elements.extend(iso_prism(74, 24, 320, 28, 288, 8, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
-    elements.extend(iso_prism(104, 44, 260, 38, 105, 125, "relay-fuse-top", "relay-fuse-side", "relay-fuse-front"))
+    elements.extend(iso_prism(72, 30, 325, 10, 82, 245, "plate-top", "plate-side", "plate-front"))
+    # Known fabricated component bases now share a raised front/radiator-side service ladder.
+    elements.extend(iso_prism(74, 38, 320, 8, 128, 220, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
+    elements.extend(iso_prism(70, 24, 8, 28, 128, 220, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
+    elements.extend(iso_prism(390, 24, 8, 28, 128, 220, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
+    elements.extend(iso_prism(74, 24, 320, 28, 120, 8, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
+    elements.extend(iso_prism(74, 24, 320, 28, 348, 8, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
+    elements.extend(iso_prism(94, 36, 280, 6, 145, 185, "midi-board-top", "midi-board-side", "midi-board-front"))
+    elements.extend(iso_prism(104, 44, 260, 38, 175, 125, "relay-fuse-top", "relay-fuse-side", "relay-fuse-front"))
     elements.extend(iso_prism(92, 18, 190, 150, 292, 8, "midi-plate-top", "midi-plate-side", "midi-plate-front"))
     elements.extend(iso_prism(117, 44, 140, 85, 306, 10, "midi-board-top", "midi-board-side", "midi-board-front"))
     for idx in range(5):
@@ -317,7 +320,9 @@ def write_static_3d_visualisation() -> None:
         elements.append(f'<circle class="breaker-terminal" cx="{x:.1f}" cy="{y:.1f}" r="5" />')
     elements.append(iso_polyline([(275, 108, 280), (345, 98, 334), (318, 86, 350)], "positive-cable"))
     elements.append(iso_polyline([(372, 110, 350), (220, 86, 335), (180, 64, 322)], "relay-feed"))
+    elements.append(iso_polyline([(372, 110, 350), (300, 138, 344), (236, 108, 310), (178, 70, 300)], "relay-feed"))
     elements.append(iso_polyline([(180, 64, 322), (210, 42, 210), (170, 44, 160)], "branch-cable"))
+    elements.extend(iso_prism(120, 36, 240, 34, 330, 10, "keepout-top", "keepout-side", "keepout-front"))
     for point in [(214, 156, -50), (382, 156, -50), (214, 296, -50), (382, 296, -50)]:
         x, y = iso_point(*point)
         elements.append(f'<circle class="slot-marker" cx="{x:.1f}" cy="{y:.1f}" r="4" />')
@@ -327,17 +332,18 @@ def write_static_3d_visualisation() -> None:
         ("Single upright bridge", 166, 365),
         ("Compact battery tray / stand", 322, 434),
         ("Battery supported on stand", 252, 214),
-        ("Front relay tray, low", 524, 230),
+        ("Raised relay service face", 524, 230),
         ("Top-front MIDI shelf", 520, 305),
         ("100A breaker/cutoff tray", 568, 365),
+        ("Direct cutoff feeds", 560, 332),
         ("Engine/LHD side keep-clear", 570, 430),
     ]
     for text, x, y in labels:
         elements.append(f'<text class="label" x="{x}" y="{y}">{text}</text>')
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="920" height="620" viewBox="0 0 920 620" role="img" aria-labelledby="title desc">
-  <title id="title">Battery stand power carrier Rev C compact front-cassette 3D visualisation</title>
-  <desc id="desc">Isometric visualisation of a compact steel battery stand mounted by a formed saddle over the chassis rail, carrying the battery on a reduced tray with the folded Relay Rev C tray low on the front face, MIDI Rev C on a top-front shelf, and a folded cutoff base/guard with upward lips at the top-front accessible corner while the inboard engine/LHD side stays clear.</desc>
+  <title id="title">Battery stand power carrier Rev D raised service-ladder 3D visualisation</title>
+  <desc id="desc">Isometric visualisation of a compact steel battery stand mounted by a formed saddle over the chassis rail, carrying the battery on a reduced tray with a raised serviceable Relay Rev C front ladder, plastic relay underlay ahead of the folded metal tray, MIDI Rev C on a top-front shelf, and a folded cutoff base/guard with direct feeds to both relay and MIDI while the inboard engine/LHD side stays clear.</desc>
   <style>
     .background {{ fill: #f6f7f8; }}
     .shadow {{ fill: #d9dde2; opacity: 0.55; }}
@@ -408,7 +414,7 @@ def write_interactive_3d_visualisation() -> None:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>J40 Battery Stand Power Carrier Rev C Compact Front-Cassette - 3D Visualisation</title>
+  <title>J40 Battery Stand Power Carrier Rev D Raised Service-Ladder - 3D Visualisation</title>
   <link rel="icon" href="data:,">
   <style>
     :root {
@@ -546,14 +552,14 @@ def write_interactive_3d_visualisation() -> None:
     }
   </script>
   <header>
-    <h1>Battery Stand Power Carrier Rev C Compact Front-Cassette Layout</h1>
+    <h1>Battery Stand Power Carrier Rev D Raised Service-Ladder Layout</h1>
     <div class="meta">
       <span class="chip">Steel chassis-bolted stand</span>
       <span class="chip">Formed chassis saddle</span>
       <span class="chip">Compact battery tray</span>
-      <span class="chip">Front/radiator service cassette</span>
-      <span class="chip">Low relay tray</span>
-      <span class="chip">Top-front MIDI/cutoff</span>
+      <span class="chip">Raised front/radiator service ladder</span>
+      <span class="chip">Raised relay tray</span>
+      <span class="chip">Direct cutoff feeds</span>
       <span class="chip">Engine-side keep-clear</span>
       <span class="chip">Cavity-map gate</span>
     </div>
@@ -573,7 +579,7 @@ def write_interactive_3d_visualisation() -> None:
         </div>
         <div>
           <dt>Power path</dt>
-          <dd>The folded Relay Rev C tray moves low on the front face; MIDI Rev C and the folded cutoff base/guard sit on shallow top-front shelves so the inboard engine/LHD side stays clear.</dd>
+          <dd>The folded Relay Rev C tray moves up into a front service ladder with its flat plastic rear guard/underlay between the relay box and metal tray. MIDI Rev C and the cutoff base remain on separated top-front shelf zones with a visible direct-feed wire gutter.</dd>
         </div>
         <div>
           <dt>Service intent</dt>
@@ -590,8 +596,8 @@ def write_interactive_3d_visualisation() -> None:
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0xf5f6f7);
 
-    const baseCameraPosition = new THREE.Vector3(700, 620, 920);
-    const baseTarget = new THREE.Vector3(-25, 145, 20);
+    const baseCameraPosition = new THREE.Vector3(780, 710, 1080);
+    const baseTarget = new THREE.Vector3(-105, 205, 90);
     const camera = new THREE.PerspectiveCamera(34, 1, 1, 5200);
     camera.position.copy(baseCameraPosition);
 
@@ -764,6 +770,8 @@ def write_interactive_3d_visualisation() -> None:
       box("Folded Relay Rev C right bend crease", x + 160, y, z + 5, 3, 220, 4, materials.bendLine);
       box("Folded Relay Rev C lower bend crease", x, y - 110, z + 5, 320, 3, 4, materials.bendLine);
       box("Folded Relay Rev C upper bend crease", x, y + 110, z + 5, 320, 3, 4, materials.bendLine);
+      box("Relay Rev C flat plastic rear guard / underlay before folded metal tray", x, y, z - 18, 280, 185, 6, materials.midiBoard);
+      box("Relay lower loom and service-hand clearance zone", x + 24, y - 140, z - 58, 248, 44, 58, materials.keepout);
       relayFuseBoxVertical("Relay/fuse box on fabricated base", x, y, z);
       for (const sx of [-135, 0, 135]) {
         cyl("Relay carrier standoff screw", x + sx, y + 90, z - 8, 4, 10, materials.brass, 0);
@@ -816,15 +824,17 @@ def write_interactive_3d_visualisation() -> None:
     cyl("Battery negative terminal", -210, 270, 98, 9, 14, materials.brass, 0);
     box("Compact battery hold-down crossbar front", -120, 272, -92, 315, 8, 18, materials.plateEdge);
     box("Compact battery hold-down crossbar rear", -120, 272, 156, 315, 8, 18, materials.plateEdge);
-    box("Compact front/radiator service cassette spine 325 x 120", -105, 124, 168, 325, 120, 8, materials.plate);
-    knownRelayCarrierBase(-105, 154, 176);
-    knownMidiTopShelf(-140, 282, 190);
-    cutoffSwitchTop("100A resettable breaker cutoff", 70, 282, 212);
+    box("Raised front/radiator service ladder spine 325 x 245", -105, 190, 168, 325, 245, 8, materials.plate);
+    knownRelayCarrierBase(-205, 228, 176);
+    knownMidiTopShelf(-55, 302, 198);
+    cutoffSwitchTop("100A resettable breaker cutoff", 86, 302, 214);
     box("Inboard engine/LHD steering-side keep-clear envelope", 142, 150, 70, 16, 260, 270, materials.keepout);
-    cable("Battery positive to top-front cutoff", [[-24, 278, -34], [20, 306, 120], [32, 326, 180]], 7, materials.cableRed);
-    cable("Cutoff to top-front MIDI common", [[108, 326, 244], [20, 322, 220], [-70, 318, 190]], 6, materials.cableRed);
-    cable("Relay feed down front cassette", [[-70, 318, 190], [-102, 245, 180], [-105, 172, 148]], 5, materials.cableRed);
-    cable("Fused branch exit along front rail", [[-70, 318, 190], [80, 300, 220], [170, 220, 226]], 5, materials.cableBlack);
+    box("Shared 50 mm power cable gutter above relay/MIDI/cutoff", -58, 346, 212, 286, 18, 48, materials.keepout);
+    cable("Battery positive to top-front cutoff input", [[-24, 278, -34], [20, 318, 120], [50, 366, 183]], 7, materials.cableRed);
+    cable("Cutoff direct feed to MIDI common", [[122, 366, 245], [58, 358, 232], [-18, 360, 198], [-74, 364, 168]], 6, materials.cableRed);
+    cable("Cutoff direct feed to relay common", [[50, 366, 183], [-42, 350, 184], [-172, 318, 138], [-308, 300, 60]], 6, materials.cableRed);
+    cable("Relay loom exit down raised service face", [[-330, 156, 108], [-336, 112, 128], [-316, 82, 148]], 5, materials.cableBlack);
+    cable("MIDI fused branch exit along front rail", [[-18, 360, 226], [82, 326, 228], [170, 220, 226]], 5, materials.cableBlack);
 
     const ambient = new THREE.HemisphereLight(0xffffff, 0x98a1aa, 2.2);
     scene.add(ambient);
@@ -849,13 +859,13 @@ def write_interactive_3d_visualisation() -> None:
       renderer.setSize(width, height, false);
       camera.aspect = width / Math.max(1, height);
       const aspect = width / Math.max(1, height);
-      const portraitScale = aspect < 0.9 ? Math.min(2.4, 1.1 / Math.max(aspect, 0.45)) : 1;
+      const fitScale = aspect < 0.9 ? Math.min(2.6, 1.2 / Math.max(aspect, 0.45)) : 1.18;
       const nextPosition = baseTarget.clone().add(
-        baseCameraPosition.clone().sub(baseTarget).multiplyScalar(portraitScale)
+        baseCameraPosition.clone().sub(baseTarget).multiplyScalar(fitScale)
       );
       camera.position.copy(nextPosition);
       controls.target.copy(baseTarget);
-      controls.minDistance = Math.max(500, 600 * portraitScale);
+      controls.minDistance = Math.max(500, 600 * fitScale);
       controls.maxDistance = Math.max(1500, baseTarget.distanceTo(nextPosition) * 1.35);
       camera.updateProjectionMatrix();
       controls.update();
@@ -893,13 +903,14 @@ def write_assembled_static_3d_visualisation() -> None:
     elements.extend(iso_prism(102, 88, 275, 230, 82, 185, "battery-top", "battery-side", "battery-front"))
     elements.extend(iso_prism(94, 100, 315, 18, 274, 8, "hold-top", "hold-side", "hold-front"))
     elements.extend(iso_prism(94, 296, 315, 18, 274, 8, "hold-top", "hold-side", "hold-front"))
-    elements.extend(iso_prism(72, 30, 325, 10, 82, 120, "plate-top", "plate-side", "plate-front"))
-    elements.extend(iso_prism(74, 38, 320, 8, 68, 220, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
-    elements.extend(iso_prism(70, 24, 8, 28, 68, 220, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
-    elements.extend(iso_prism(390, 24, 8, 28, 68, 220, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
-    elements.extend(iso_prism(74, 24, 320, 28, 60, 8, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
-    elements.extend(iso_prism(74, 24, 320, 28, 288, 8, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
-    elements.extend(iso_prism(104, 44, 260, 38, 105, 125, "relay-fuse-top", "relay-fuse-side", "relay-fuse-front"))
+    elements.extend(iso_prism(72, 30, 325, 10, 82, 245, "plate-top", "plate-side", "plate-front"))
+    elements.extend(iso_prism(74, 38, 320, 8, 128, 220, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
+    elements.extend(iso_prism(70, 24, 8, 28, 128, 220, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
+    elements.extend(iso_prism(390, 24, 8, 28, 128, 220, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
+    elements.extend(iso_prism(74, 24, 320, 28, 120, 8, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
+    elements.extend(iso_prism(74, 24, 320, 28, 348, 8, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
+    elements.extend(iso_prism(94, 36, 280, 6, 145, 185, "midi-board-top", "midi-board-side", "midi-board-front"))
+    elements.extend(iso_prism(104, 44, 260, 38, 175, 125, "relay-fuse-top", "relay-fuse-side", "relay-fuse-front"))
     elements.extend(iso_prism(92, 18, 190, 150, 292, 8, "midi-plate-top", "midi-plate-side", "midi-plate-front"))
     elements.extend(iso_prism(117, 44, 140, 85, 306, 10, "midi-board-top", "midi-board-side", "midi-board-front"))
     for idx in range(5):
@@ -918,7 +929,9 @@ def write_assembled_static_3d_visualisation() -> None:
         elements.append(f'<circle class="breaker-terminal" cx="{x:.1f}" cy="{y:.1f}" r="5" />')
     elements.append(iso_polyline([(275, 108, 280), (345, 98, 334), (318, 86, 350)], "positive-cable"))
     elements.append(iso_polyline([(372, 110, 350), (220, 86, 335), (180, 64, 322)], "relay-feed"))
+    elements.append(iso_polyline([(372, 110, 350), (300, 138, 344), (236, 108, 310), (178, 70, 300)], "relay-feed"))
     elements.append(iso_polyline([(180, 64, 322), (210, 42, 210), (170, 44, 160)], "branch-cable"))
+    elements.extend(iso_prism(120, 36, 240, 34, 330, 10, "keepout-top", "keepout-side", "keepout-front"))
     for point in [(214, 156, -50), (382, 156, -50), (214, 296, -50), (382, 296, -50)]:
         x, y = iso_point(*point)
         elements.append(f'<circle class="slot-marker" cx="{x:.1f}" cy="{y:.1f}" r="4" />')
@@ -927,14 +940,14 @@ def write_assembled_static_3d_visualisation() -> None:
         ("Battery bolted down on compact tray", 212, 214),
         ("Formed chassis saddle", 132, 508),
         ("Single upright bridge", 158, 364),
-        ("Front service cassette", 548, 252),
+        ("Raised front service ladder", 548, 252),
         ("Engine/LHD side kept clear", 548, 430),
     ):
         elements.append(f'<text class="label" x="{x}" y="{y}">{text}</text>')
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="920" height="620" viewBox="0 0 920 620" role="img" aria-labelledby="title desc">
-  <title id="title">Battery stand power carrier Rev C compact front-cassette assembled 3D visualisation</title>
-  <desc id="desc">Attached assembly view of the compact steel battery stand with a formed saddle over the chassis rail, compact tray, hold-down crossbar, full-height battery, folded Relay Rev C tray low on the front face, MIDI Rev C on a top-front shelf, folded cutoff base/guard with upward lips at the top-front accessible corner, and the inboard engine/LHD side kept clear.</desc>
+  <title id="title">Battery stand power carrier Rev D raised service-ladder assembled 3D visualisation</title>
+  <desc id="desc">Attached assembly view of the compact steel battery stand with a formed saddle over the chassis rail, compact tray, hold-down crossbar, full-height battery, raised serviceable Relay Rev C front ladder with plastic relay underlay ahead of the folded metal tray, MIDI Rev C on a top-front shelf, folded cutoff base/guard with direct feeds to relay and MIDI, and the inboard engine/LHD side kept clear.</desc>
   <style>
     .background {{ fill: #f6f7f8; }}
     .shadow {{ fill: #d9dde2; opacity: 0.55; }}
@@ -999,7 +1012,7 @@ def write_assembled_interactive_3d_visualisation() -> None:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>J40 Battery Stand Power Carrier Rev C Compact Front-Cassette - Assembled 3D Visualisation</title>
+  <title>J40 Battery Stand Power Carrier Rev D Raised Service-Ladder - Assembled 3D Visualisation</title>
   <link rel="icon" href="data:,">
   <style>
     :root { color-scheme: light; font-family: Arial, Helvetica, sans-serif; background: #f5f6f7; color: #1d252c; }
@@ -1037,14 +1050,14 @@ def write_assembled_interactive_3d_visualisation() -> None:
     }
   </script>
   <header>
-    <h1>Assembled Battery Stand Power Carrier Rev C Compact Front-Cassette Layout</h1>
+    <h1>Assembled Battery Stand Power Carrier Rev D Raised Service-Ladder Layout</h1>
     <div class="meta">
       <span class="chip">Attached assembly</span>
       <span class="chip">Formed chassis saddle</span>
       <span class="chip">Compact battery tray</span>
-      <span class="chip">Front/radiator service cassette</span>
-      <span class="chip">Low relay tray</span>
-      <span class="chip">Top-front MIDI/cutoff</span>
+      <span class="chip">Raised front/radiator service ladder</span>
+      <span class="chip">Raised relay tray</span>
+      <span class="chip">Direct cutoff feeds</span>
       <span class="chip">Engine-side keep-clear</span>
       <span class="chip">Cavity-map hold</span>
     </div>
@@ -1058,8 +1071,8 @@ def write_assembled_interactive_3d_visualisation() -> None:
     <aside>
       <h2>Assembly Read</h2>
       <dl>
-        <div><dt>Load path</dt><dd>One formed saddle over the chassis rail and an upright bridge carry the compact steel battery tray and front-cassette shelf/tab pickups.</dd></div>
-        <div><dt>Integrated equipment</dt><dd>The full-height battery, folded Relay Rev C tray, MIDI Rev C open plate, and folded cutoff base/guard are shown attached as a compact front-cassette layout.</dd></div>
+        <div><dt>Load path</dt><dd>One formed saddle over the chassis rail and an upright bridge carry the compact steel battery tray and raised front service-ladder shelf/tab pickups.</dd></div>
+        <div><dt>Integrated equipment</dt><dd>The full-height battery, raised serviceable Relay Rev C tray, MIDI Rev C open plate, and folded cutoff base/guard are shown attached as a compact front service-ladder layout with direct cutoff feeds.</dd></div>
         <div><dt>Release hold</dt><dd>Final hole centres, holder positions, and cable paths still need battery-installed LHD mock-up photos before cutting final metal, with the inboard engine side treated as a service/clearance envelope.</dd></div>
       </dl>
     </aside>
@@ -1071,8 +1084,8 @@ def write_assembled_interactive_3d_visualisation() -> None:
     const mount = document.getElementById("viewport");
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0xf5f6f7);
-    const baseCameraPosition = new THREE.Vector3(700, 620, 920);
-    const baseTarget = new THREE.Vector3(-25, 145, 20);
+    const baseCameraPosition = new THREE.Vector3(780, 710, 1080);
+    const baseTarget = new THREE.Vector3(-105, 205, 90);
     const camera = new THREE.PerspectiveCamera(34, 1, 1, 5200);
     camera.position.copy(baseCameraPosition);
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, preserveDrawingBuffer: true });
@@ -1236,6 +1249,8 @@ def write_assembled_interactive_3d_visualisation() -> None:
       box("Folded Relay Rev C right bend crease", x + 160, y, z + 5, 3, 220, 4, materials.bendLine);
       box("Folded Relay Rev C lower bend crease", x, y - 110, z + 5, 320, 3, 4, materials.bendLine);
       box("Folded Relay Rev C upper bend crease", x, y + 110, z + 5, 320, 3, 4, materials.bendLine);
+      box("Relay Rev C flat plastic rear guard / underlay before folded metal tray", x, y, z - 18, 280, 185, 6, materials.midiBoard);
+      box("Relay lower loom and service-hand clearance zone", x + 24, y - 140, z - 58, 248, 44, 58, materials.keepout);
       relayFuseBoxVertical("Relay/fuse box on fabricated base", x, y, z);
       for (const sx of [-135, 0, 135]) {
         cyl("Relay carrier standoff screw", x + sx, y + 90, z - 8, 4, 10, materials.brass, 0);
@@ -1292,15 +1307,17 @@ def write_assembled_interactive_3d_visualisation() -> None:
       cyl("Front hold-down rod to tray", x, 172, -88, 4, 196, materials.brass, 0);
       cyl("Rear hold-down rod to tray", x, 172, 152, 4, 196, materials.brass, 0);
     }
-    box("Compact front/radiator service cassette spine 325 x 120", -105, 124, 168, 325, 120, 8, materials.plate);
-    knownRelayCarrierBase(-105, 154, 176);
-    knownMidiTopShelf(-140, 282, 190);
-    cutoffSwitchTop("100A resettable breaker cutoff", 70, 282, 212);
+    box("Raised front/radiator service ladder spine 325 x 245", -105, 190, 168, 325, 245, 8, materials.plate);
+    knownRelayCarrierBase(-205, 228, 176);
+    knownMidiTopShelf(-55, 302, 198);
+    cutoffSwitchTop("100A resettable breaker cutoff", 86, 302, 214);
     box("Inboard engine/LHD steering-side keep-clear envelope", 142, 150, 70, 16, 260, 270, materials.keepout);
-    cable("Battery positive to top-front cutoff", [[-24, 278, -34], [20, 306, 120], [32, 326, 180]], 7, materials.cableRed);
-    cable("Cutoff to top-front MIDI common", [[108, 326, 244], [20, 322, 220], [-70, 318, 190]], 6, materials.cableRed);
-    cable("Relay feed down front cassette", [[-70, 318, 190], [-102, 245, 180], [-105, 172, 148]], 5, materials.cableRed);
-    cable("Fused branch exit along front rail", [[-70, 318, 190], [80, 300, 220], [170, 220, 226]], 5, materials.cableBlack);
+    box("Shared 50 mm power cable gutter above relay/MIDI/cutoff", -58, 346, 212, 286, 18, 48, materials.keepout);
+    cable("Battery positive to top-front cutoff input", [[-24, 278, -34], [20, 318, 120], [50, 366, 183]], 7, materials.cableRed);
+    cable("Cutoff direct feed to MIDI common", [[122, 366, 245], [58, 358, 232], [-18, 360, 198], [-74, 364, 168]], 6, materials.cableRed);
+    cable("Cutoff direct feed to relay common", [[50, 366, 183], [-42, 350, 184], [-172, 318, 138], [-308, 300, 60]], 6, materials.cableRed);
+    cable("Relay loom exit down raised service face", [[-330, 156, 108], [-336, 112, 128], [-316, 82, 148]], 5, materials.cableBlack);
+    cable("MIDI fused branch exit along front rail", [[-18, 360, 226], [82, 326, 228], [170, 220, 226]], 5, materials.cableBlack);
 
     scene.add(new THREE.HemisphereLight(0xffffff, 0x98a1aa, 2.2));
     const key = new THREE.DirectionalLight(0xffffff, 2.4);
@@ -1319,13 +1336,13 @@ def write_assembled_interactive_3d_visualisation() -> None:
       renderer.setSize(width, height, false);
       camera.aspect = width / Math.max(1, height);
       const aspect = width / Math.max(1, height);
-      const portraitScale = aspect < 0.9 ? Math.min(2.4, 1.1 / Math.max(aspect, 0.45)) : 1;
+      const fitScale = aspect < 0.9 ? Math.min(2.6, 1.2 / Math.max(aspect, 0.45)) : 1.18;
       const nextPosition = baseTarget.clone().add(
-        baseCameraPosition.clone().sub(baseTarget).multiplyScalar(portraitScale)
+        baseCameraPosition.clone().sub(baseTarget).multiplyScalar(fitScale)
       );
       camera.position.copy(nextPosition);
       controls.target.copy(baseTarget);
-      controls.minDistance = Math.max(500, 600 * portraitScale);
+      controls.minDistance = Math.max(500, 600 * fitScale);
       controls.maxDistance = Math.max(1500, baseTarget.distanceTo(nextPosition) * 1.35);
       camera.updateProjectionMatrix();
       controls.update();
@@ -1347,19 +1364,20 @@ def write_assembled_interactive_3d_visualisation() -> None:
 
 
 def write_readme() -> None:
-    text = """# J40 Battery Stand Power Carrier Pack - Rev C Compact Front-Cassette Update
+    text = """# J40 Battery Stand Power Carrier Pack - Rev D Raised Service-Ladder Update
 
-This package changes the battery-side plan into a compact steel chassis-bolted stand with a front/radiator-side service cassette. It supports the battery first, keeps the inboard engine/LHD side clear, and uses the already-fabricated electrical holders without spreading them around the battery bay.
+This package changes the battery-side plan into a compact steel chassis-bolted stand with a raised front/radiator-side service ladder. It supports the battery first, keeps the inboard engine/LHD side clear, and moves the relay box high enough to be serviceable without removing the battery.
 
 ## Design Intent
 
 - Mount the battery stand from the one known chassis pickup location using a compact formed saddle over the chassis rail plus an upright bridge.
 - Support the battery on a compact `315 x 265 mm` tray around the current `275 x 230 mm` battery datum.
-- Put Relay Rev C low on the front/radiator-side cassette face: `320 x 220 mm` finished folded tray, `360 x 255 mm` flat pattern, `20 mm` side/bottom returns, and `15 mm` top return.
-- Put MIDI Rev C on a shallow top-front shelf using the known open `190 x 150 mm` aluminium plate plus `140 x 85 mm` insulating subplate.
+- Put Relay Rev C in the raised front service field: `320 x 220 mm` finished folded tray, `360 x 255 mm` flat pattern, `20 mm` side/bottom returns, and `15 mm` top return. The flat plastic rear guard/underlay sits between the relay box and folded metal tray.
+- Put MIDI Rev C on a separated shallow top-front shelf using the known open `190 x 150 mm` aluminium plate plus `140 x 85 mm` insulating subplate.
 - Put the 100A breaker/cutoff on the top/front accessible corner on a folded aluminium base/guard: `210 x 150 mm` flat pattern, `170 x 110 mm` finished face, and `20 mm` lips bent upward toward the breaker/terminal side.
+- Route the cutoff output as two direct protected branches: one to the relay feed and one to the MIDI common feed. Do not route the relay feed through the MIDI bank.
 - Treat the inboard engine/LHD steering side as a keep-clear/service envelope except for protected cable clips and pass-through routing.
-- Default to this front-cassette split layout. Do not make a one-piece side carrier unless the filled cavity map proves it is smaller, clear, serviceable, and not in the engine-side envelope.
+- Default to this raised front service-ladder split layout. Do not make a one-piece side carrier unless the filled cavity map proves it is smaller, clear, serviceable, and not in the engine-side envelope.
 
 ## Image-Based Chassis Pickup Estimate
 
@@ -1369,7 +1387,7 @@ The May 14 no-battery bay photo shows the existing battery pocket sitting well a
 - Vertical adjustment allowance: build the upright bridge with slotted/stepped adjustment from `150-210 mm` chassis-top-to-tray-underside so the tray can be lowered if bonnet/terminal clearance is tight or raised if the relay tray/cable exit needs more space.
 - Sideways adjustment allowance: set the tray centre about `120 mm` wing-side/outboard from the chassis pickup centreline, with `90-150 mm` usable side adjustment. This keeps the battery in the original pocket rather than moving it engine-side.
 - Chassis saddle allowance: mock the chassis fixing as a 4 mm mild-steel saddle with a top cap over the rail and two down-legs, not a flat plate beside the rail. Use a nominal `220 x 230 mm` flat pattern (`70 mm` near leg, measured rail-top cap nominal `90 mm`, `70 mm` far leg) until the actual rail width is measured.
-- Battery/electrical package hold: mock up the full `275 x 230 x 190 mm` battery block plus hold-down, then add the front cassette cards. Do not final-drill the pickup or upright until the battery top, bonnet, fan/radiator, steering/hose, and cable-lug sweeps all pass.
+- Battery/electrical package hold: mock up the full `275 x 230 x 190 mm` battery block plus hold-down, then add the raised front service-ladder cards. Do not final-drill the pickup or upright until the battery top, bonnet, fan/radiator, steering/hose, tool access, and cable-lug sweeps all pass.
 
 ## Parts In This Package
 
@@ -1377,7 +1395,7 @@ The May 14 no-battery bay photo shows the existing battery pocket sitting well a
 2. `battery_stand_compact_single_chassis_pickup_rev_b` - 4 mm mild-steel formed chassis saddle for the one chassis pickup location.
 3. `battery_stand_compact_single_mount_upright_rev_b` - 4 mm mild-steel upright bridge side plate; make a mirrored pair if the mock-up needs side-to-side stiffness.
 4. `battery_stand_compact_hold_down_crossbar_rev_b` - compact battery hold-down crossbar template.
-5. `battery_power_compact_front_service_rail_rev_b` - 3 mm mild-steel compact `325 x 120 mm` front/radiator-side service cassette spine for the relay tray and top-front MIDI/cutoff shelf tabs.
+5. `battery_power_compact_front_service_rail_rev_b` - 3 mm mild-steel raised `325 x 245 mm` front/radiator-side service ladder for the relay tray, plastic underlay, wire gutter, and separated top-front MIDI/cutoff shelf tabs.
 6. `battery_power_compact_cutoff_tab_rev_b` - folded aluminium 100A breaker/cutoff base/guard with upward lips, top-front placement basis.
 
 ## 3D Visualisation
@@ -1385,20 +1403,20 @@ The May 14 no-battery bay photo shows the existing battery pocket sitting well a
 - `battery_power_carrier_mount_rev_a_3d_visualisation.svg` is the static compact fabrication-read view.
 - `battery_power_carrier_mount_rev_a_3d_visualisation.html` is the interactive compact fabrication-read view.
 - `battery_power_carrier_mount_rev_a_assembled_3d_visualisation.svg` is the static attached compact assembly view.
-- `battery_power_carrier_mount_rev_a_assembled_3d_visualisation.html` is the interactive attached compact assembly view showing the formed chassis saddle over the rail, upright bridge, compact tray, full-height battery, hold-down, low front Relay Rev C tray, top-front MIDI Rev C shelf, folded top-front cutoff base/guard with upward lips, keep-clear engine/LHD side envelope, and cable paths installed together.
+- `battery_power_carrier_mount_rev_a_assembled_3d_visualisation.html` is the interactive attached compact assembly view showing the formed chassis saddle over the rail, upright bridge, compact tray, full-height battery, hold-down, raised serviceable Relay Rev C tray with plastic rear guard/underlay ahead of the folded metal tray, top-front MIDI Rev C shelf, folded top-front cutoff base/guard with upward lips, keep-clear engine/LHD side envelope, and direct cutoff-to-relay / cutoff-to-MIDI cable paths installed together.
 
 ## Package Relationship
 
-- The relay hardware uses the known Relay Rev C folded tray (`320 x 220 mm` finished face; `360 x 255 mm` flat pattern). Its bent returns make a shallow tray, so the battery carrier must not duplicate that with a second large tray or move it onto the engine-side gap.
-- The MIDI holder hardware uses `midi5_plate_mount_rev_c` (`190 x 150 mm`) and `midi5_holder_subplate_rev_c` (`140 x 85 mm`). This is an open plate/subplate assembly, so the current route is a shallow top-front shelf on the same cassette.
+- The relay hardware uses the known Relay Rev C folded tray (`320 x 220 mm` finished face; `360 x 255 mm` flat pattern) plus the flat plastic rear guard/underlay (`280 x 185 mm`) in front of the folded metal tray. The relay face must remain reachable from the front/top service direction.
+- The MIDI holder hardware uses `midi5_plate_mount_rev_c` (`190 x 150 mm`) and `midi5_holder_subplate_rev_c` (`140 x 85 mm`). This is an open plate/subplate assembly, so the current route is a separated shallow top-front shelf on the same raised service ladder.
 - The older `electrical_modules_rev_a` package includes bent/flanged aluminium tray/box concepts, but remains reference/fallback only.
 - The cutoff folded base/guard gets only a pilot/opening allowance until the actual 100A breaker body size, mounting-hole centres, reset-lever access, terminal-stud spacing, and cable-lug sweep are measured. The lips fold upward to protect the breaker/lug envelope, not downward as hidden stiffeners.
 
 ## Compact Packaging Hold
 
 - The latest battery-bay photos show no obvious full-size electrical mounting face beside the battery. The previous large sideways carrier is rejected for the active package.
-- Before cutting final steel, make cardboard cards for the compact tray (`315 x 265 mm`), front service cassette spine (`325 x 120 mm`), Relay Rev C folded tray (`320 x 220 mm` plus return/depth blocks), MIDI Rev C top shelf (`190 x 150 mm` plus subplate/depth), folded cutoff base/guard (`170 x 110 mm` finished face / `210 x 150 mm` flat pattern / `20 mm` upward lips), cable lugs, and battery case.
-- Test the front/radiator-side space first, with the relay tray low and the MIDI/cutoff cards on the top-front shelf. Use inboard/lower/outboard space only after steering, hose, heat, splash, bonnet, and battery-service clearances are proven.
+- Before cutting final steel, make cardboard cards for the compact tray (`315 x 265 mm`), raised front service ladder (`325 x 245 mm`), Relay Rev C folded tray (`320 x 220 mm` plus return/depth blocks), relay plastic rear guard/underlay (`280 x 185 mm`), MIDI Rev C top shelf (`190 x 150 mm` plus subplate/depth), folded cutoff base/guard (`170 x 110 mm` finished face / `210 x 150 mm` flat pattern / `20 mm` upward lips), cable lugs, and battery case.
+- Test the front/radiator-side space first, with the relay tray raised into the upper/front service field and the MIDI/cutoff cards separated on the top-front shelf. Use inboard/lower/outboard space only after steering, hose, heat, splash, bonnet, and battery-service clearances are proven.
 - Reject any placement that enters the engine/LHD steering shaft/box/service sweep, hydraulic line path, alternator service space, bonnet clearance, radiator/fan envelope, or safe battery terminal service area.
 
 ## Battery-Cavity Mapping Plan
@@ -1409,18 +1427,18 @@ Use the battery as the fixed exclusion block before placing any relays, MIDI fus
 - Put the battery or a full-size battery box in the tray and mark a no-go block around it: battery case, hold-down, terminals, terminal boots, and cable lug bend radius.
 - Measure the cavity in slices at tray height, mid-battery height, battery-top height, and bonnet/terminal-service height.
 - Record available rectangles to the front, inboard/engine side, outboard/wing side, and below the tray. Do not count space that requires the battery to be removed for fuse or relay service.
-- Trial the known templates in cardboard in the active order: Relay Rev C folded tray `320 x 220 mm` low on the front face, MIDI Rev C open plate `190 x 150 mm` on the shallow top-front shelf, folded cutoff base/guard `170 x 110 mm` finished face / `210 x 150 mm` flat pattern with `20 mm` upward lips at the top/front accessible corner, plus their real depth and cable lug sweep.
+- Trial the known templates in cardboard in the active order: raised Relay Rev C folded tray `320 x 220 mm`, relay plastic rear guard/underlay `280 x 185 mm` ahead of the metal tray, MIDI Rev C open plate `190 x 150 mm` on the separated shallow top-front shelf, folded cutoff base/guard `170 x 110 mm` finished face / `210 x 150 mm` flat pattern with `20 mm` upward lips at the top/front accessible corner, plus their real depth and cable lug sweep.
 - Treat the front/radiator-side volume as the first candidate because both battery-in and battery-out photos suggest more usable space forward than sideways.
 - Treat the inboard/engine-side gap as a keep-clear zone by default. It must stay clear of LHD steering shaft/box/service motion, hydraulic lines, hoses, alternator service, engine movement, and heat.
 - Treat the lower void as cable support or shielded junction space only unless dry, serviceable, and protected from splash and heat.
-- Split the layout by front elevation: relay low on the front vertical face, MIDI on the top-front shelf, cutoff at the top/front accessible corner, and P-clips on the stand/rail rather than the engine-side gap.
+- Split the layout by front elevation: relay raised on the front service face, MIDI on a separated top-front shelf, cutoff at the top/front accessible corner, two direct cutoff output branches to relay and MIDI, and P-clips on the stand/ladder rather than the engine-side gap.
 
 Detailed measurement rows are in `cavity_mapping_plan.csv`.
 
 ## Materials
 
-- Stand top tray/deck, compact front cassette spine, top-front shelf tabs, and small steel tabs: `3.0 mm` mild steel.
-- Tray/cassette angle-first stock: `25 x 25 x 3 mm` or `30 x 30 x 3 mm` pre-formed `90-degree` mild-steel angle for tray perimeter/upstands, cassette frame rails, shelf rails, and cable/P-clip tabs.
+- Stand top tray/deck, raised front service ladder, top-front shelf tabs, and small steel tabs: `3.0 mm` mild steel.
+- Tray/service-ladder angle-first stock: `25 x 25 x 3 mm` or `30 x 30 x 3 mm` pre-formed `90-degree` mild-steel angle for tray perimeter/upstands, ladder frame rails, shelf rails, and cable/P-clip tabs.
 - Single chassis saddle and upright bridge flat interfaces: `4.0 mm` mild steel. Saddle flat-pattern allowance is nominal `220 x 230 mm` before rail-width measurement and bend allowance correction.
 - Upright bridge angle-first stock: `40 x 40 x 4 mm` pre-formed `90-degree` mild-steel angle may replace straight bridge members if dry-fit keeps bolt access, service clearance, and battery/electrical layout clear.
 - Battery hold-down crossbar: `3.0 mm` mild steel or stainless.
@@ -1440,11 +1458,11 @@ Detailed measurement rows are in `cavity_mapping_plan.csv`.
 ## Clearance Holds Before Cutting Final Metal
 
 - Battery installed: length, width, full case height, terminal side, clamp path, and bonnet clearance.
-- Compact holder cards: Relay Rev C low front tray, MIDI Rev C top-front shelf, folded cutoff top/front base/guard with upward lips, and cable-lug depth must fit the measured front/radiator volume without touching the steering-side service envelope.
+- Compact holder cards: raised serviceable Relay Rev C tray, relay plastic rear guard/underlay, MIDI Rev C top-front shelf, folded cutoff top/front base/guard with upward lips, and direct cutoff-to-relay / cutoff-to-MIDI cable-lug depth must fit the measured front/radiator volume without touching the steering-side service envelope.
 - Single chassis saddle: rail top width, leg depth, through-bolt pitch, crush-tube need, stand-off height, upright bridge height, side-jog from saddle centreline to tray centreline, and access for tools. Current image-based target is `180 mm` rise with `90-150 mm` wing-side/outboard adjustment.
 - 100A breaker/cutoff: body length/width/height, mounting hole centres, reset lever access, terminal stud size/spacing, and cable-lug sweep.
-- Relay Rev C base: final low-front orientation, standoff height, seal direction, and loom exit direction.
-- MIDI Rev C base/subplate: final top-front shelf feed/output orientation and cable bend radius.
+- Relay Rev C base: final raised-front service orientation, plastic-underlay order, standoff height, seal direction, and loom exit direction.
+- MIDI Rev C base/subplate: final top-front shelf feed/output orientation, direct cutoff common-feed bend radius, and branch-output bend radius.
 - Cable support: P-clip positions every `150-200 mm` and near every direction change.
 
 ## Safety Notes
@@ -1466,7 +1484,7 @@ def write_cut_list() -> None:
             "material": "mild steel",
             "thickness_mm": "3.0",
             "status": "prototype_release_mockup_required",
-            "notes": "Compact 315 x 265 battery tray/deck with battery clamp slots and cable clip holes. Electrical holders mount on the front/radiator-side cassette, not on engine-side panels.",
+            "notes": "Compact 315 x 265 battery tray/deck with battery clamp slots and cable clip holes. Electrical holders mount on the raised front/radiator-side service ladder, not on engine-side panels.",
         },
         {
             "part_id": "BPCC-FRONT-RAIL-001",
@@ -1475,7 +1493,7 @@ def write_cut_list() -> None:
             "material": "mild steel",
             "thickness_mm": "3.0",
             "status": "cavity_map_required",
-            "notes": "Compact 325 x 120 front/radiator-side service cassette spine: Relay Rev C mounts low on the front face, with shallow top-front shelf/base pickups for MIDI Rev C and the folded cutoff base/guard.",
+            "notes": "Raised 325 x 245 front/radiator-side service ladder: Relay Rev C mounts in the upper serviceable field with plastic rear guard/underlay ahead of the folded metal tray, plus separated top-front shelf/base pickups and cable gutter for MIDI Rev C, cutoff, and direct relay/MIDI feeds.",
         },
         {
             "part_id": "BSTAND-PICKUP-001",
@@ -1532,7 +1550,7 @@ def write_inspection_checklist() -> None:
         {
             "check_id": "BPCC-CHECK-001A",
             "stage": "compact_cavity_cards",
-            "acceptance_check": "Compact holder cards prove the Rev C front-cassette stack: Relay Rev C folded tray 320 x 220 low on the front face, MIDI open plate 190 x 150 on a top-front shelf, folded cutoff base/guard 170 x 110 finished face / 210 x 150 flat pattern with 20 mm upward lips at the top/front accessible corner, with cable depth and lug sweep clear of LHD steering/hose/fan/bonnet/battery service envelopes.",
+            "acceptance_check": "Compact holder cards prove the Rev D raised service-ladder stack: Relay Rev C folded tray 320 x 220 raised into the front service field, relay plastic rear guard/underlay 280 x 185 ahead of the folded metal tray, MIDI open plate 190 x 150 on a separated top-front shelf, folded cutoff base/guard 170 x 110 finished face / 210 x 150 flat pattern with 20 mm upward lips at the top/front accessible corner, with direct cutoff-to-relay and cutoff-to-MIDI cable depth clear of LHD steering/hose/fan/bonnet/battery service envelopes.",
             "required_evidence": "Battery-installed LHD bay photos from top, engine side, wing side, and front with cardboard cards and cable-lug depth marked.",
         },
         {
@@ -1544,7 +1562,7 @@ def write_inspection_checklist() -> None:
         {
             "check_id": "BPCC-CHECK-003",
             "stage": "electrical_fit",
-            "acceptance_check": "Folded Relay Rev C tray, MIDI open plate/subplate, and master cutoff folded base/guard all mount to the front/radiator-side cassette without forced cable bends, live-stud exposure, or use of the inboard engine-side gap as a component face.",
+            "acceptance_check": "Folded Relay Rev C tray, relay plastic underlay, MIDI open plate/subplate, and master cutoff folded base/guard all mount to the raised front/radiator-side service ladder without forced cable bends, live-stud exposure, relay-service obstruction, or use of the inboard engine-side gap as a component face.",
             "required_evidence": "Assembled bench photo and installed dry-fit photo with cable lugs mocked in.",
         },
         {
@@ -1588,22 +1606,22 @@ def write_layout_csv() -> None:
             "notes": "Compact battery support tray only; do not use the tray skin as a large electrical backplane.",
         },
         {
-            "zone": "relay_rev_c_low_front_card",
+            "zone": "relay_rev_c_raised_front_service_card",
             "x_mm": "front face, centred to battery tray where possible",
-            "y_mm": "low/front vertical cassette",
+            "y_mm": "raised upper/front service ladder",
             "w_mm": "320",
             "h_mm": "220",
-            "z_height_mm": "finished face plus 20 mm side/bottom returns, 15 mm top return, relay box and loom depth measurement hold",
-            "notes": "Active candidate is low on the front/radiator-side cassette so it does not consume the inboard engine/LHD side gap.",
+            "z_height_mm": "finished face plus 20 mm side/bottom returns, 15 mm top return, 280 x 185 plastic underlay, relay box and loom depth measurement hold",
+            "notes": "Active candidate is raised on the front/radiator-side service ladder so the relay cover/fuses remain reachable with the battery installed and the inboard engine/LHD side stays clear.",
         },
         {
             "zone": "midi_rev_c_top_front_shelf_card",
-            "x_mm": "top-front shelf, inside front cassette width",
-            "y_mm": "above front relay tray if bonnet clearance passes",
+            "x_mm": "top-front shelf, inside front service-ladder width",
+            "y_mm": "separated top-front shelf beside the raised relay service field",
             "w_mm": "190",
             "h_mm": "150",
             "z_height_mm": "known 190 x 150 plate plus 140 x 85 subplate and holder/cable depth",
-            "notes": "Open plate/subplate assembly on a shallow top-front shelf; do not mount it on the engine-side face.",
+            "notes": "Open plate/subplate assembly on a shallow top-front shelf; keep a separate direct cutoff feed and do not mount it on the engine-side face.",
         },
         {
             "zone": "cutoff_top_front_access_card",
@@ -1612,16 +1630,16 @@ def write_layout_csv() -> None:
             "w_mm": "170",
             "h_mm": "110",
             "z_height_mm": "210 x 150 mm flat pattern, 170 x 110 mm finished face, 20 mm upward guard lips, plus 100A breaker body/reset lever/stud height measurement hold",
-            "notes": "Folded aluminium base/guard at the most accessible top/front position; lips bend upward around the 100A breaker/terminal side. Open final mounting holes after measuring the real breaker and lug sweep.",
+            "notes": "Folded aluminium base/guard at the most accessible top/front position; lips bend upward around the 100A breaker/terminal side. Route cutoff output directly to both relay and MIDI. Open final mounting holes after measuring the real breaker and lug sweep.",
         },
         {
-            "zone": "front_radiator_service_cassette_spine",
+            "zone": "front_radiator_service_ladder_spine",
             "x_mm": "site_fit",
             "y_mm": "site_fit",
             "w_mm": "325",
-            "h_mm": "120",
+            "h_mm": "245",
             "z_height_mm": "component and cable-lug depth measurement hold",
-            "notes": "Vehicle-side spine for the front-cassette stack; mounts relay low and provides top-front shelf/tab pickups for MIDI and cutoff.",
+            "notes": "Vehicle-side raised ladder for the front stack; mounts relay high enough for service and provides top-front shelf/tab pickups and wire-gutter P-clips for MIDI, cutoff, and direct relay/MIDI feeds.",
         },
         {
             "zone": "inboard_engine_lhd_keep_clear",
@@ -1692,9 +1710,9 @@ def write_cavity_mapping_plan() -> None:
             "zone_or_task": "front_radiator_side_volume",
             "datum_basis": "Front edge of battery/tray to radiator/front-support obstruction.",
             "measurements_to_capture": "Clear width, height, depth, bolt access, radiator/fan clearance, hose sweep, and bonnet clearance.",
-            "template_or_tool": "Front-cassette card set: 325 x 120 spine, Relay Rev C 320 x 220 low-front vertical tray with return/depth block, MIDI 190 x 150 top-front shelf, folded cutoff base/guard 170 x 110 finished face / 210 x 150 flat pattern / 20 mm upward lips, cable lugs with 40-80 mm depth blocks.",
-            "pass_rule": "Active candidate only if the low relay face plus top-front MIDI/cutoff shelves fit with cable bends, no fan/radiator contact, bonnet clearance, and service access with battery installed.",
-            "notes": "Both photos suggest the front volume is more realistic than the side gap; this package now makes front placement the active design.",
+            "template_or_tool": "Raised front service-ladder card set: 325 x 245 ladder, Relay Rev C 320 x 220 raised-front vertical tray with return/depth block, relay plastic rear guard/underlay 280 x 185, MIDI 190 x 150 separated top-front shelf, folded cutoff base/guard 170 x 110 finished face / 210 x 150 flat pattern / 20 mm upward lips, cable lugs with 40-80 mm depth blocks, and a 50 mm minimum wire gutter.",
+            "pass_rule": "Active candidate only if the raised relay face, top-front MIDI/cutoff shelves, and direct cutoff-to-relay / cutoff-to-MIDI feeds fit with cable bends, no fan/radiator contact, bonnet clearance, and service access with battery installed.",
+            "notes": "Both photos suggest the front volume is more realistic than the side gap; this package now makes a raised front service-ladder placement the active design.",
         },
         {
             "step_id": "CAV-004A",
@@ -1702,7 +1720,7 @@ def write_cavity_mapping_plan() -> None:
             "datum_basis": "Top of visible chassis rail, chassis pickup centreline, and existing battery pocket/tray plane from the May 14 no-battery bay image.",
             "measurements_to_capture": "Chassis-top to tray-underside rise, saddle cap width over the rail, leg depth down both rail sides, through-bolt access, chassis pickup centreline to tray centreline side offset, and whether the upright bridge clears hose/steering/fan/radiator paths.",
             "template_or_tool": "Cardboard/plywood mock-up: 315 x 265 tray plane at 180 mm above chassis top, with a saddle card over both chassis sides and slotted side-jog trial marks at 90, 120, and 150 mm wing-side/outboard from the chassis pickup centreline.",
-            "pass_rule": "Active estimate passes only if the formed saddle sits over both rail sides, the battery remains in the original pocket, bonnet/terminal clearance remains safe, and relay/MIDI/cutoff front-cassette cards fit without moving into the engine/LHD side envelope.",
+            "pass_rule": "Active estimate passes only if the formed saddle sits over both rail sides, the battery remains in the original pocket, bonnet/terminal clearance remains safe, and raised relay/MIDI/cutoff front-ladder cards fit without moving into the engine/LHD side envelope.",
             "notes": "Initial estimate only: target 180 mm rise and 120 mm wing-side/outboard jog; saddle flat pattern nominal 70 mm leg + measured rail top + 70 mm leg, with 150-210 mm vertical and 90-150 mm lateral adjustment before cutting final steel.",
         },
         {
@@ -1745,10 +1763,10 @@ def write_cavity_mapping_plan() -> None:
             "step_id": "CAV-009",
             "zone_or_task": "split_layout_decision",
             "datum_basis": "Measured available rectangles from CAV-004 through CAV-008.",
-            "measurements_to_capture": "Serviceable front-cassette rectangle, top-front shelf height, and cable length between battery, cutoff, MIDI, relay, and harness exit.",
-            "template_or_tool": "Component cards in active stack order: Relay Rev C low-front 320 x 220, MIDI top-front 190 x 150, folded cutoff base/guard top-front 170 x 110 finished face / 210 x 150 flat pattern / 20 mm upward lips, plus depth/lug blocks.",
-            "pass_rule": "Choose the front-cassette layout unless measured front space fails. Reopen split side/lower placement only with evidence that it is smaller, serviceable, and clear.",
-            "notes": "Preferred order: cutoff top/front accessible, MIDI top/front short protected high-current path, relays low on front vertical face, P-clips on stand/cassette.",
+            "measurements_to_capture": "Serviceable front-ladder rectangle, top-front shelf height, direct cable length from cutoff to MIDI and relay, and harness exit length from relay/MIDI.",
+            "template_or_tool": "Component cards in active stack order: Relay Rev C raised-front 320 x 220 with 280 x 185 plastic underlay ahead of the metal tray, MIDI top-front 190 x 150, folded cutoff base/guard top-front 170 x 110 finished face / 210 x 150 flat pattern / 20 mm upward lips, plus depth/lug blocks and a 50 mm wire-gutter strip.",
+            "pass_rule": "Choose the raised front service-ladder layout unless measured front space fails. Reopen split side/lower placement only with evidence that it is smaller, serviceable, and clear.",
+            "notes": "Preferred order: cutoff top/front accessible, direct branch to MIDI common, direct branch to relay feed, raised relay service face, P-clips on stand/ladder.",
         },
         {
             "step_id": "CAV-010",

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>J40 Battery Stand Power Carrier Rev C Compact Front-Cassette - 3D Visualisation</title>
+  <title>J40 Battery Stand Power Carrier Rev D Raised Service-Ladder - 3D Visualisation</title>
   <link rel="icon" href="data:,">
   <style>
     :root {
@@ -141,14 +141,14 @@
     }
   </script>
   <header>
-    <h1>Battery Stand Power Carrier Rev C Compact Front-Cassette Layout</h1>
+    <h1>Battery Stand Power Carrier Rev D Raised Service-Ladder Layout</h1>
     <div class="meta">
       <span class="chip">Steel chassis-bolted stand</span>
       <span class="chip">Formed chassis saddle</span>
       <span class="chip">Compact battery tray</span>
-      <span class="chip">Front/radiator service cassette</span>
-      <span class="chip">Low relay tray</span>
-      <span class="chip">Top-front MIDI/cutoff</span>
+      <span class="chip">Raised front/radiator service ladder</span>
+      <span class="chip">Raised relay tray</span>
+      <span class="chip">Direct cutoff feeds</span>
       <span class="chip">Engine-side keep-clear</span>
       <span class="chip">Cavity-map gate</span>
     </div>
@@ -168,7 +168,7 @@
         </div>
         <div>
           <dt>Power path</dt>
-          <dd>The folded Relay Rev C tray moves low on the front face; MIDI Rev C and the folded cutoff base/guard sit on shallow top-front shelves so the inboard engine/LHD side stays clear.</dd>
+          <dd>The folded Relay Rev C tray moves up into a front service ladder with its flat plastic rear guard/underlay between the relay box and metal tray. MIDI Rev C and the cutoff base remain on separated top-front shelf zones with a visible direct-feed wire gutter.</dd>
         </div>
         <div>
           <dt>Service intent</dt>
@@ -185,8 +185,8 @@
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0xf5f6f7);
 
-    const baseCameraPosition = new THREE.Vector3(700, 620, 920);
-    const baseTarget = new THREE.Vector3(-25, 145, 20);
+    const baseCameraPosition = new THREE.Vector3(780, 710, 1080);
+    const baseTarget = new THREE.Vector3(-105, 205, 90);
     const camera = new THREE.PerspectiveCamera(34, 1, 1, 5200);
     camera.position.copy(baseCameraPosition);
 
@@ -359,6 +359,8 @@
       box("Folded Relay Rev C right bend crease", x + 160, y, z + 5, 3, 220, 4, materials.bendLine);
       box("Folded Relay Rev C lower bend crease", x, y - 110, z + 5, 320, 3, 4, materials.bendLine);
       box("Folded Relay Rev C upper bend crease", x, y + 110, z + 5, 320, 3, 4, materials.bendLine);
+      box("Relay Rev C flat plastic rear guard / underlay before folded metal tray", x, y, z - 18, 280, 185, 6, materials.midiBoard);
+      box("Relay lower loom and service-hand clearance zone", x + 24, y - 140, z - 58, 248, 44, 58, materials.keepout);
       relayFuseBoxVertical("Relay/fuse box on fabricated base", x, y, z);
       for (const sx of [-135, 0, 135]) {
         cyl("Relay carrier standoff screw", x + sx, y + 90, z - 8, 4, 10, materials.brass, 0);
@@ -411,15 +413,17 @@
     cyl("Battery negative terminal", -210, 270, 98, 9, 14, materials.brass, 0);
     box("Compact battery hold-down crossbar front", -120, 272, -92, 315, 8, 18, materials.plateEdge);
     box("Compact battery hold-down crossbar rear", -120, 272, 156, 315, 8, 18, materials.plateEdge);
-    box("Compact front/radiator service cassette spine 325 x 120", -105, 124, 168, 325, 120, 8, materials.plate);
-    knownRelayCarrierBase(-105, 154, 176);
-    knownMidiTopShelf(-140, 282, 190);
-    cutoffSwitchTop("100A resettable breaker cutoff", 70, 282, 212);
+    box("Raised front/radiator service ladder spine 325 x 245", -105, 190, 168, 325, 245, 8, materials.plate);
+    knownRelayCarrierBase(-205, 228, 176);
+    knownMidiTopShelf(-55, 302, 198);
+    cutoffSwitchTop("100A resettable breaker cutoff", 86, 302, 214);
     box("Inboard engine/LHD steering-side keep-clear envelope", 142, 150, 70, 16, 260, 270, materials.keepout);
-    cable("Battery positive to top-front cutoff", [[-24, 278, -34], [20, 306, 120], [32, 326, 180]], 7, materials.cableRed);
-    cable("Cutoff to top-front MIDI common", [[108, 326, 244], [20, 322, 220], [-70, 318, 190]], 6, materials.cableRed);
-    cable("Relay feed down front cassette", [[-70, 318, 190], [-102, 245, 180], [-105, 172, 148]], 5, materials.cableRed);
-    cable("Fused branch exit along front rail", [[-70, 318, 190], [80, 300, 220], [170, 220, 226]], 5, materials.cableBlack);
+    box("Shared 50 mm power cable gutter above relay/MIDI/cutoff", -58, 346, 212, 286, 18, 48, materials.keepout);
+    cable("Battery positive to top-front cutoff input", [[-24, 278, -34], [20, 318, 120], [50, 366, 183]], 7, materials.cableRed);
+    cable("Cutoff direct feed to MIDI common", [[122, 366, 245], [58, 358, 232], [-18, 360, 198], [-74, 364, 168]], 6, materials.cableRed);
+    cable("Cutoff direct feed to relay common", [[50, 366, 183], [-42, 350, 184], [-172, 318, 138], [-308, 300, 60]], 6, materials.cableRed);
+    cable("Relay loom exit down raised service face", [[-330, 156, 108], [-336, 112, 128], [-316, 82, 148]], 5, materials.cableBlack);
+    cable("MIDI fused branch exit along front rail", [[-18, 360, 226], [82, 326, 228], [170, 220, 226]], 5, materials.cableBlack);
 
     const ambient = new THREE.HemisphereLight(0xffffff, 0x98a1aa, 2.2);
     scene.add(ambient);
@@ -444,13 +448,13 @@
       renderer.setSize(width, height, false);
       camera.aspect = width / Math.max(1, height);
       const aspect = width / Math.max(1, height);
-      const portraitScale = aspect < 0.9 ? Math.min(2.4, 1.1 / Math.max(aspect, 0.45)) : 1;
+      const fitScale = aspect < 0.9 ? Math.min(2.6, 1.2 / Math.max(aspect, 0.45)) : 1.18;
       const nextPosition = baseTarget.clone().add(
-        baseCameraPosition.clone().sub(baseTarget).multiplyScalar(portraitScale)
+        baseCameraPosition.clone().sub(baseTarget).multiplyScalar(fitScale)
       );
       camera.position.copy(nextPosition);
       controls.target.copy(baseTarget);
-      controls.minDistance = Math.max(500, 600 * portraitScale);
+      controls.minDistance = Math.max(500, 600 * fitScale);
       controls.maxDistance = Math.max(1500, baseTarget.distanceTo(nextPosition) * 1.35);
       camera.updateProjectionMatrix();
       controls.update();

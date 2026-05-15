@@ -75,11 +75,11 @@ Preferred outcome: a removable steel chassis-mounted stand that supports a full-
 
 Current package: [battery_power_carrier_mount_rev_a](../data/manual/fabrication/battery_power_carrier_mount_rev_a/README.md)
 
-Core compact front-cassette parts:
+Core compact raised service-ladder parts:
 
 - Battery stand top tray/deck: `315 x 265 x 3.0 mm` mild steel around the current `275 x 230 mm` battery datum.
-- Front/radiator-side service cassette spine: `325 x 120 x 3.0 mm` mild steel.
-- Tray/cassette angle stock: `25 x 25 x 3 mm` or `30 x 30 x 3 mm` pre-formed `90-degree` mild-steel angle, about `3 m` total, for tray perimeter/upstands, cassette frame rails, shelf rails, and cable/P-clip tabs.
+- Front/radiator-side raised service-ladder spine: `325 x 245 x 3.0 mm` mild steel.
+- Tray/service-ladder angle stock: `25 x 25 x 3 mm` or `30 x 30 x 3 mm` pre-formed `90-degree` mild-steel angle, about `3 m` total, for tray perimeter/upstands, service-ladder frame rails, shelf rails, and cable/P-clip tabs.
 - Single chassis saddle: nominal `220 x 230 x 4.0 mm` mild-steel flat pattern, formed to a `70 mm` near leg, measured chassis-top cap width, and `70 mm` far leg. Final cap width, bend allowance, and through-bolt pitch come from the one chassis location.
 - Upright bridge stock: keep `110 x 220 x 4.0 mm` mild-steel flat side plates as the fallback/flat-interface route, but prefer `40 x 40 x 4 mm` pre-formed `90-degree` mild-steel angle for straight stand bridge members if dry-fit keeps bolt access clear.
 - Radiator post stock: prefer `50 x 50 x 4 mm` pre-formed `90-degree` mild-steel angle, `1 m`, if one leg matches the measured `48-50 mm` radiator-post face.
@@ -90,8 +90,8 @@ Core compact front-cassette parts:
 Layout:
 
 - Battery field carries the battery and hold-down crossbar on the same stand.
-- Relay field carries the existing Relay Rev C carrier base low on the front/radiator-side vertical face: `320 x 220 mm` finished face, `360 x 255 mm` flat pattern.
-- MIDI field carries the existing `midi5_plate_mount_rev_c` fuse plate (`190 x 150 mm`) and `midi5_holder_subplate_rev_c` (`140 x 85 mm`) on a shallow top-front shelf.
+- Relay field carries the existing Relay Rev C carrier base raised into the front/radiator-side service face: `320 x 220 mm` finished face, `360 x 255 mm` flat pattern, with the `280 x 185 mm` flat plastic rear guard/underlay placed before the folded metal tray.
+- MIDI field carries the existing `midi5_plate_mount_rev_c` fuse plate (`190 x 150 mm`) and `midi5_holder_subplate_rev_c` (`140 x 85 mm`) on a separated shallow top-front shelf.
 - Cutoff field carries the folded master cutoff base/guard at the top/front accessible corner. The pilot hole is not the final switch hole; open it only after measuring the switch body, panel-hole requirement, key/knob sweep, terminal studs, cable lug sweep, and whether the upward lips need local relief/drain notches.
 - The formed chassis saddle drops over the known chassis pickup location from the top, with legs down both rail sides and through-bolts through both legs/chassis. The stand must remain removable for service.
 - Use angle stock for rails and bridge members only where it simplifies the build; keep flat plate/sheet for the battery deck, chassis saddle, and electrical mounting faces.
@@ -99,7 +99,7 @@ Layout:
 
 Electrical route:
 
-- Battery positive -> master cutoff -> MIDI common feed -> fused branches / relay feeds.
+- Battery positive -> master cutoff -> two direct protected branches: one to the MIDI common feed and one to the relay common feed.
 - Relay feed and MIDI feed must have insulating boots or covers over live studs.
 - Heavy positive cables use insulated P-clips/saddle clamps near every direction change and roughly every `150-200 mm`.
 - Use grommets/bushes through any sheet metal pass-throughs.
@@ -107,8 +107,8 @@ Electrical route:
 
 Release checks:
 
-- Stand/tray cardboard mock-up with full-height battery, known Relay Rev C base low on the front face, MIDI Rev C holder bank on the top-front shelf, folded cutoff base/guard and switch at the top/front corner, and cable lugs clears the bonnet, radiator, fan/belt, LHD steering shaft/box/service path, alternator service sweep, and cable bend radius.
-- Sideways `520 x 340 mm` backplane is rejected. Reopen side/lower placement only if the front-cassette mock-up fails and the measured alternative is smaller, serviceable, and clear of the engine/LHD side envelope.
+- Stand/tray cardboard mock-up with full-height battery, known Relay Rev C base raised on the front service face, plastic guard/underlay before the folded metal tray, MIDI Rev C holder bank on its separated top-front shelf, folded cutoff base/guard and switch at the top/front corner, direct cutoff-to-relay and cutoff-to-MIDI cable branches, and cable lugs clears the bonnet, radiator, fan/belt, LHD steering shaft/box/service path, alternator service sweep, and cable bend radius.
+- Sideways `520 x 340 mm` backplane is rejected. Reopen side/lower placement only if the raised service-ladder mock-up fails and the measured alternative is smaller, serviceable, and clear of the engine/LHD side envelope.
 - Battery and electrical load path is taken by the one formed chassis saddle and upright bridge, not tray skin, radiator strap, or unsupported inner wing.
 - The bridge must be adjustable in height and side-jog during mock-up. If the `180 mm` rise or `120 mm` outboard jog moves the battery out of the original pocket, blocks bonnet/terminal clearance, or enters steering/hose service space, reset from the measured battery pocket rather than forcing the estimate.
 - Cutoff body depth, knob/key clearance, and cable lug sweep are measured.
@@ -120,9 +120,9 @@ Battery-cavity mapping method:
 
 - Use the installed battery as the fixed exclusion block before placing electrical hardware. Current working block in the package is `275 x 230 x 190 mm`; verify the actual battery dimensions and terminal height before relying on the map.
 - Map front/radiator-side, inboard engine/LHD-steering-side, lower-under-tray, outboard-wing-side, and bonnet/terminal-height slices with the battery installed.
-- Trial cardboard templates as a stack: front service cassette spine `325 x 120 mm`, Relay Rev C low-front `320 x 220 mm`, MIDI Rev C top-front `190 x 150 mm`, folded cutoff base/guard `170 x 110 mm` finished face / `210 x 150 mm` flat pattern / `20 mm` upward lips, plus depth blocks for cable lugs and boots.
+- Trial cardboard templates as a stack: raised front service-ladder spine `325 x 245 mm`, Relay Rev C raised-front `320 x 220 mm`, relay plastic rear guard/underlay `280 x 185 mm`, MIDI Rev C top-front `190 x 150 mm`, folded cutoff base/guard `170 x 110 mm` finished face / `210 x 150 mm` flat pattern / `20 mm` upward lips, plus depth blocks for direct cutoff branches, cable lugs, and boots.
 - Add chassis-pickup mock-up marks: tray plane at `150`, `180`, and `210 mm` above the chassis rail top; tray centreline side-jog at `90`, `120`, and `150 mm` wing-side/outboard from the chassis pickup centreline; saddle card over both rail sides with `70 mm` leg depth each side until the actual rail height dictates otherwise.
-- Prefer front/radiator-side space if it clears fan/radiator/hose/bonnet service. Treat inboard and lower spaces as cautious cable/support candidates only; do not put relay/MIDI/cutoff faces there unless the front-cassette route fails by measurement.
+- Prefer front/radiator-side space if it clears fan/radiator/hose/bonnet service. Treat inboard and lower spaces as cautious cable/support candidates only; do not put relay/MIDI/cutoff faces there unless the raised service-ladder route fails by measurement.
 - Record the filled plan in `data/manual/fabrication/battery_power_carrier_mount_rev_a/cavity_mapping_plan.csv`.
 
 ### PWR-CABLE-001 - Cable And Clip Support
@@ -147,7 +147,7 @@ Capture these with a ruler or tape measure in frame:
 5. Battery tray from top and side: existing tray edges, clamp holes, corrosion, cracks, and any current support tabs.
 6. Battery tray underside: feet, braces, inner wing attachment, chassis/engine clearance, and possible lower support leg path.
 7. Battery stand template: cardboard or flat-bar tray perimeter plus proposed lower/inner pickup points and gusset directions.
-8. Proposed relay/fuse/cutoff mock-up: front-cassette cards held with battery installed: `325 x 120 mm` service spine, Relay Rev C `320 x 220 mm` low front face, MIDI Rev C `190 x 150 mm` top-front shelf, folded cutoff base/guard `170 x 110 mm` finished face / `210 x 150 mm` flat pattern / `20 mm` upward lips, cable lug sweep, and the LHD steering-side no-go envelope.
+8. Proposed relay/fuse/cutoff mock-up: raised service-ladder cards held with battery installed: `325 x 245 mm` service spine, Relay Rev C `320 x 220 mm` raised front face, `280 x 185 mm` relay plastic rear guard/underlay before the folded metal tray, MIDI Rev C `190 x 150 mm` top-front shelf, folded cutoff base/guard `170 x 110 mm` finished face / `210 x 150 mm` flat pattern / `20 mm` upward lips, direct cutoff-to-relay and cutoff-to-MIDI cable lug sweeps, and the LHD steering-side no-go envelope.
 9. Cutoff switch or isolator body: panel-hole size, body depth, terminal stud size, and cable exit directions.
 10. Cable exit route from battery positive to cutoff/MIDI plate and from MIDI outputs toward the harness.
 11. Bonnet closed/near-closed clearance over the battery, tray clamp, MIDI plate, and cutoff.

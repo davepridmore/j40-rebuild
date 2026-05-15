@@ -31,7 +31,7 @@ These are already in procurement and were not duplicated:
 ## Guardrails
 
 - Do not consume the battery/radiator fabrication steel for tub repair patches; the tub has separate sheet and plate rows.
-- Do not fabricate the battery stand from aluminium. The current route is steel for the compact tray, front/radiator service cassette spine, top-front shelf/pickup tabs, formed chassis saddle, and upright bridge; the aluminium stock covers the MIDI plate, folded cutoff base/guard, and optional electrical fallback carriers only.
-- Use pre-formed `90-degree` steel angle/L-section wherever it simplifies tray edges, cassette rails, the radiator post, or stand bridge trials. Do not drop the flat sheet/plate requirement unless the deck, chassis saddle, and mounting faces are separately redesigned.
+- Do not fabricate the battery stand from aluminium. The current route is steel for the compact tray, raised front/radiator service-ladder spine, top-front shelf/pickup tabs, formed chassis saddle, and upright bridge; the aluminium stock covers the MIDI plate, folded cutoff base/guard, and optional electrical fallback carriers only.
+- Use pre-formed `90-degree` steel angle/L-section wherever it simplifies tray edges, raised service-ladder rails, the radiator post, or stand bridge trials. Do not drop the flat sheet/plate requirement unless the deck, chassis saddle, and mounting faces are separately redesigned.
 - Do not reopen chassis-rubber ordering under Fabrication. Chassis rubbers stay under the chassis-rubber/body-mount rows above.
 - Final tub patch shapes remain measurement controlled after cleaning and rust-map photos.

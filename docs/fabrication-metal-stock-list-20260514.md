@@ -8,8 +8,8 @@ Source data: [fabrication_metal_stock_requirements.csv](../data/manual/fabricati
 
 | Stock | Minimum buy | Used for |
 | --- | --- | --- |
-| `3.0 mm` mild-steel sheet/plate | 1 sheet at least `700 x 400 mm`; nearest `600 x 600` or `1000 x 500` acceptable | Battery tray deck, front cassette flat face, hold-down, small flat tabs/guards. |
-| `3.0 mm` `90-degree` mild-steel angle/L-section | `25 x 25 x 3 mm` or `30 x 30 x 3 mm`, `3 m` total | Battery tray perimeter/upstands, front cassette frame, shallow top-front shelf rails, cable/P-clip tabs. |
+| `3.0 mm` mild-steel sheet/plate | 1 sheet at least `700 x 400 mm`; nearest `600 x 600` or `1000 x 500` acceptable | Battery tray deck, raised service-ladder flat face, hold-down, small flat tabs/guards. |
+| `3.0 mm` `90-degree` mild-steel angle/L-section | `25 x 25 x 3 mm` or `30 x 30 x 3 mm`, `3 m` total | Battery tray perimeter/upstands, raised service-ladder frame, shallow top-front shelf rails, cable/P-clip tabs. |
 | `4.0 mm` mild-steel plate | 1 plate at least `700 x 450 mm`; nearest `1000 x 500` acceptable | Chassis saddle, flat bolt tabs, upright/gusset plates if angle route still needs flat interfaces, trial coupons. |
 | `50 x 50 x 4 mm` `90-degree` mild-steel angle | `1 m` length | Radiator two-side retention post; one leg should land near the measured `48-50 mm` main face. |
 | `40 x 40 x 4 mm` `90-degree` mild-steel angle | `2 m` length | Battery stand upright bridge members, stand frame trials, structural corner braces. |

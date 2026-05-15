@@ -31,18 +31,19 @@ Primary files:
 - `data/manual/fabrication/battery_power_carrier_mount_rev_a/component_layout.csv`
 
 DXF files:
-- `battery_power_carrier_backplane_rev_a.dxf` - steel backplane for known Relay Rev C, MIDI Rev C, and cutoff bases, qty `1`
-- `battery_stand_top_tray_rev_a.dxf` - steel battery tray/deck with clamp and cable support fields, qty `1`
+- `battery_stand_compact_top_tray_rev_b.dxf` - steel compact battery tray/deck with clamp and cable support fields, qty `1`
 - `battery_stand_compact_single_chassis_pickup_rev_b.dxf` - formed chassis saddle over rail, qty `1`
-- `battery_stand_single_mount_upright_rev_a.dxf` - upright bridge side plate, qty `2 mirrored`
-- `battery_stand_hold_down_crossbar_rev_a.dxf` - battery hold-down crossbar, qty `1`
-- `battery_power_carrier_cutoff_guard_rev_a.dxf` - optional cutoff switch guard, qty `1`
+- `battery_stand_compact_single_mount_upright_rev_b.dxf` - upright bridge side plate, qty `2 mirrored`
+- `battery_stand_compact_hold_down_crossbar_rev_b.dxf` - battery hold-down crossbar, qty `1`
+- `battery_power_compact_front_service_rail_rev_b.dxf` - raised 325 x 245 mm front/radiator-side service ladder for the relay tray, plastic underlay, wire gutter, and MIDI/cutoff shelf tabs, qty `1`
+- `battery_power_compact_cutoff_tab_rev_b.dxf` - folded 100A breaker/cutoff base/guard, qty `1`
 
 Release position:
-- Rev A is a prototype/mock-up release for the new steel chassis-mounted battery stand.
+- Rev D service-ladder update is a prototype/mock-up release for the steel chassis-mounted battery stand.
 - The stand must mount from the one known formed chassis saddle and upright bridge, not the battery tray skin, radiator support strap, or unsupported inner wing.
-- It supports a full-height battery and carries the already-fabricated Relay Rev C carrier base (`320 x 220 mm` face), MIDI Rev C mount plate/subplate (`190 x 150 mm` / `140 x 85 mm`), cutoff base/guard (`150 x 95 mm`), and cable support holes on one removable steel assembly.
-- Final metal cutting/drilling still needs the battery-installed cardboard mock-up, the formed saddle rail-width/leg-depth/through-bolt measurement, cutoff body dimensions, cable lug sweep, bonnet-clearance checks, and steering/radiator/fan clearance checks.
+- It supports a full-height battery and carries the already-fabricated Relay Rev C carrier base (`320 x 220 mm` face) raised into the front service field, the relay plastic rear guard/underlay (`280 x 185 mm`) ahead of the folded metal tray, MIDI Rev C mount plate/subplate (`190 x 150 mm` / `140 x 85 mm`) on a separated top-front shelf, the 100A breaker/cutoff base/guard (`170 x 110 mm` finished face), and cable support holes on one removable steel assembly.
+- The cutoff output must split into two direct protected branches: one to the relay feed and one to the MIDI common feed.
+- Final metal cutting/drilling still needs the battery-installed cardboard mock-up, the formed saddle rail-width/leg-depth/through-bolt measurement, cutoff body dimensions, direct cable-lug sweeps, bonnet-clearance checks, relay service access, and steering/radiator/fan clearance checks.
 
 ## Front Radiator Two-Side Retention - Rev A
 
@@ -138,7 +139,7 @@ Order definitions:
 - Relay carrier: `360 x 255 mm` flat pattern, finished face `320 x 220 mm`, `20 mm` side/bottom returns, `15 mm` top return, six `5.5 mm` guard/standoff holes, slotted relay/vehicle mounts, and lower loom slot.
 - Rear guard: `280 x 185 mm` plastic guard with `120 x 25 mm` lower loom/drain opening and six `5.5 mm` standoff holes.
 
-Release position: Relay Rev C defines the already-fabricated relay carrier base used by the current `battery_power_carrier_mount_rev_a` layout. Use the standalone relay-only installation as fallback only if the relay base is deliberately split away from the integrated carrier. Keep the bottom loom opening downward and do not fully seal the rear of the relay box.
+Release position: Relay Rev C defines the already-fabricated relay carrier base used by the current raised service-ladder `battery_power_carrier_mount_rev_a` layout. Use the standalone relay-only installation as fallback only if the relay base is deliberately split away from the integrated carrier. Keep the bottom loom opening downward or side-down and do not fully seal the rear of the relay box.
 
 ### Electrical Modules - Rev A
 
