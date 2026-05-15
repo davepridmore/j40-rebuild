@@ -1981,9 +1981,31 @@ FABRICATION_DESIGN_LINKS_BY_PACKAGE: dict[str, list[tuple[str, str]]] = {
         ("data/manual/fabrication/midi5_plate_mount_rev_c/midi5_holder_subplate_rev_c.svg", "MIDI holder subplate SVG"),
         ("data/manual/fabrication/midi5_plate_mount_rev_c/midi5_mount_plate_rev_c.dxf", "MIDI mount plate DXF"),
     ],
+    "electrical_device_models_rev_a": [
+        ("deliverables/fabrication_packages/electrical_device_models_rev_a.zip", "Electrical device model package ZIP"),
+        (
+            "data/manual/fabrication/electrical_device_models_rev_a/electrical_device_models_rev_a_3d_visualisation.html",
+            "Device model 3D visualisation HTML",
+        ),
+        (
+            "data/manual/fabrication/electrical_device_models_rev_a/electrical_device_models_rev_a_3d_visualisation.svg",
+            "Device model static visualisation SVG",
+        ),
+        ("data/manual/fabrication/electrical_device_models_rev_a/device_measurement_basis.csv", "Device measurement basis CSV"),
+        ("data/manual/fabrication/electrical_device_models_rev_a/inspection_checklist.csv", "Device model inspection checklist CSV"),
+        ("data/manual/fabrication/electrical_device_models_rev_a/README.md", "Electrical device models README"),
+    ],
     "battery_power_carrier_mount_rev_a": [
         ("deliverables/fabrication_packages/battery_power_carrier_mount_rev_a.zip", "Battery power carrier package ZIP"),
         ("data/manual/fabrication/battery_power_carrier_mount_rev_a/j40_battery_power_carrier_mount_rev_a_dimension_sheet.pdf", "Battery power carrier dimension sheet PDF"),
+        (
+            "data/manual/fabrication/electrical_device_models_rev_a/electrical_device_models_rev_a_3d_visualisation.html",
+            "Separate relay/breaker/MIDI device model HTML",
+        ),
+        (
+            "data/manual/fabrication/electrical_device_models_rev_a/device_measurement_basis.csv",
+            "Separate device measurement basis CSV",
+        ),
         ("data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_carrier_mount_rev_a_assembled_3d_visualisation.html", "Assembled 3D visualisation HTML"),
         ("data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_carrier_mount_rev_a_assembled_3d_visualisation.svg", "Assembled 3D visualisation SVG"),
         ("data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_carrier_mount_rev_a_3d_visualisation.html", "Interactive 3D visualisation HTML"),
@@ -2066,9 +2088,9 @@ FABRICATION_DESIGN_ENTRY_PACKAGES: dict[str, tuple[str, ...]] = {
     "part_body_mount_hardware_kit": ("rubber_recreation_rev_a",),
     "part_body_mount_shim_pack": ("rubber_recreation_rev_a",),
     "part_suspension_wooden_cribbing_blocks": ("suspension_wood_cribbing_rev_a",),
-    "service_local_3d_printing_fabrication_prototypes": ("midi5_plate_mount_rev_c",),
+    "service_local_3d_printing_fabrication_prototypes": ("midi5_plate_mount_rev_c", "electrical_device_models_rev_a"),
     "front_radiator_two_side_retention_fabrication_20260508": ("front_radiator_two_side_retention_rev_a",),
-    "battery_power_carrier_mount_fabrication_20260508": ("battery_power_carrier_mount_rev_a",),
+    "battery_power_carrier_mount_fabrication_20260508": ("battery_power_carrier_mount_rev_a", "electrical_device_models_rev_a"),
 }
 
 
@@ -2101,6 +2123,16 @@ FABRICATION_PACKAGE_VISUAL_LINKS: dict[str, list[tuple[str, str]]] = {
         (
             "data/manual/fabrication/midi5_plate_mount_rev_c/midi5_plate_mount_rev_c_3d_visualisation.svg",
             "Static 3D visualisation",
+        ),
+    ],
+    "electrical_device_models_rev_a": [
+        (
+            "data/manual/fabrication/electrical_device_models_rev_a/electrical_device_models_rev_a_3d_visualisation.html",
+            "Interactive device model 3D visualisation",
+        ),
+        (
+            "data/manual/fabrication/electrical_device_models_rev_a/electrical_device_models_rev_a_3d_visualisation.svg",
+            "Static device model visualisation",
         ),
     ],
     "battery_power_carrier_mount_rev_a": [

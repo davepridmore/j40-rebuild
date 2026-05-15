@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import csv
 import json
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -7,6 +8,272 @@ from xml.sax.saxutils import escape
 
 ROOT = Path("/Users/davidpridmore/IdeaProjects/J40")
 FAB_DIR = ROOT / "data" / "manual" / "fabrication"
+
+
+def relay_fuse_box_boxes(x: float, y: float, z: float, prefix: str) -> list[dict[str, object]]:
+    boxes: list[dict[str, object]] = [
+        {
+            "name": f"{prefix} housing 300 x 197 x 80",
+            "x": x,
+            "y": y,
+            "z": z,
+            "w": 300,
+            "h": 197,
+            "d": 64,
+            "color": "black",
+        },
+        {
+            "name": f"{prefix} raised front rim",
+            "x": x,
+            "y": y,
+            "z": z - 38,
+            "w": 286,
+            "h": 183,
+            "d": 8,
+            "color": "plastic",
+        },
+        {
+            "name": f"{prefix} relay bay backing",
+            "x": x - 46,
+            "y": y,
+            "z": z - 45,
+            "w": 128,
+            "h": 176,
+            "d": 8,
+            "color": "deepblack",
+        },
+        {
+            "name": f"{prefix} blade fuse column backing",
+            "x": x + 104,
+            "y": y,
+            "z": z - 45,
+            "w": 58,
+            "h": 176,
+            "d": 8,
+            "color": "deepblack",
+        },
+        {
+            "name": f"{prefix} lower loom boot",
+            "x": x - 124,
+            "y": y - 82,
+            "z": z - 48,
+            "w": 46,
+            "h": 34,
+            "d": 34,
+            "color": "rubber",
+        },
+        {
+            "name": f"{prefix} red output wire bundle",
+            "x": x + 32,
+            "y": y - 92,
+            "z": z - 50,
+            "w": 92,
+            "h": 16,
+            "d": 26,
+            "color": "cableRed",
+        },
+    ]
+    row_ys = [y + 72 - index * 36 for index in range(5)]
+    relay_xs = [x - 70, x - 10]
+    fuse_colors = ["fuseblue", "fusered", "fuseblue", "fuseyellow", "fuseyellow"]
+    for row_index, row_y in enumerate(row_ys, start=1):
+        for col_index, relay_x in enumerate(relay_xs, start=1):
+            boxes.append(
+                {
+                    "name": f"{prefix} relay cube R{row_index}C{col_index}",
+                    "x": relay_x,
+                    "y": row_y,
+                    "z": z - 72,
+                    "w": 54,
+                    "h": 29,
+                    "d": 28,
+                    "color": "relayblock",
+                }
+            )
+            boxes.append(
+                {
+                    "name": f"{prefix} relay printed legend R{row_index}C{col_index}",
+                    "x": relay_x,
+                    "y": row_y + 1,
+                    "z": z - 88,
+                    "w": 32,
+                    "h": 4,
+                    "d": 2,
+                    "color": "white",
+                }
+            )
+        boxes.extend(
+            [
+                {
+                    "name": f"{prefix} fuse slot {row_index}",
+                    "x": x + 104,
+                    "y": row_y,
+                    "z": z - 72,
+                    "w": 44,
+                    "h": 28,
+                    "d": 16,
+                    "color": "deepblack",
+                },
+                {
+                    "name": f"{prefix} blade fuse {row_index}",
+                    "x": x + 104,
+                    "y": row_y + 3,
+                    "z": z - 88,
+                    "w": 34,
+                    "h": 12,
+                    "d": 7,
+                    "color": fuse_colors[row_index - 1],
+                },
+                {
+                    "name": f"{prefix} exposed fuse terminal pair {row_index}",
+                    "x": x + 104,
+                    "y": row_y - 13,
+                    "z": z - 88,
+                    "w": 32,
+                    "h": 5,
+                    "d": 4,
+                    "color": "silver",
+                },
+            ]
+        )
+    for stud_x, stud_y in ((x - 124, y + 72), (x - 124, y - 72), (x - 10, y + 90), (x - 10, y - 90)):
+        boxes.append(
+            {
+                "name": f"{prefix} brass stud pad",
+                "x": stud_x,
+                "y": stud_y,
+                "z": z - 84,
+                "w": 20,
+                "h": 20,
+                "d": 7,
+                "color": "brass",
+            }
+        )
+    return boxes
+
+
+def relay_fuse_box_cylinders(x: float, y: float, z: float, prefix: str) -> list[dict[str, object]]:
+    return [
+        {"name": f"{prefix} corner fixing", "x": x - 138, "y": y + 84, "z": z - 78, "r": 5, "h": 8, "color": "deepblack"},
+        {"name": f"{prefix} corner fixing", "x": x + 138, "y": y + 84, "z": z - 78, "r": 5, "h": 8, "color": "deepblack"},
+        {"name": f"{prefix} corner fixing", "x": x - 138, "y": y - 84, "z": z - 78, "r": 5, "h": 8, "color": "deepblack"},
+        {"name": f"{prefix} corner fixing", "x": x + 138, "y": y - 84, "z": z - 78, "r": 5, "h": 8, "color": "deepblack"},
+    ]
+
+
+def midi_bank_boxes(x: float, y: float, z: float, prefix: str, count: int = 5) -> list[dict[str, object]]:
+    boxes: list[dict[str, object]] = [
+        {"name": f"{prefix} 140 x 85 insulated subplate", "x": x, "y": y + 8, "z": z, "w": 140, "h": 12, "d": 85, "color": "deepblack"},
+    ]
+    pitch = 27
+    start = x - ((count - 1) * pitch) / 2
+    for index in range(count):
+        holder_x = start + index * pitch
+        boxes.extend(
+            [
+                {
+                    "name": f"{prefix} MIDI holder {index + 1} black linked base",
+                    "x": holder_x,
+                    "y": y + 22,
+                    "z": z,
+                    "w": 25,
+                    "h": 18,
+                    "d": 82,
+                    "color": "deepblack",
+                },
+                {
+                    "name": f"{prefix} MIDI holder {index + 1} red hinged cover",
+                    "x": holder_x,
+                    "y": y + 42,
+                    "z": z,
+                    "w": 24,
+                    "h": 26,
+                    "d": 72,
+                    "color": "red",
+                },
+                {
+                    "name": f"{prefix} MIDI holder {index + 1} latch recess front",
+                    "x": holder_x,
+                    "y": y + 57,
+                    "z": z - 23,
+                    "w": 13,
+                    "h": 4,
+                    "d": 9,
+                    "color": "deepblack",
+                },
+                {
+                    "name": f"{prefix} MIDI holder {index + 1} latch recess rear",
+                    "x": holder_x,
+                    "y": y + 57,
+                    "z": z + 23,
+                    "w": 13,
+                    "h": 4,
+                    "d": 9,
+                    "color": "deepblack",
+                },
+                {
+                    "name": f"{prefix} MIDI holder {index + 1} left mounting ear",
+                    "x": holder_x - 17,
+                    "y": y + 17,
+                    "z": z - 42,
+                    "w": 12,
+                    "h": 8,
+                    "d": 18,
+                    "color": "deepblack",
+                },
+                {
+                    "name": f"{prefix} MIDI holder {index + 1} right mounting ear",
+                    "x": holder_x + 17,
+                    "y": y + 17,
+                    "z": z + 42,
+                    "w": 12,
+                    "h": 8,
+                    "d": 18,
+                    "color": "deepblack",
+                },
+            ]
+        )
+    return boxes
+
+
+def midi_bank_cylinders(x: float, y: float, z: float, prefix: str, count: int = 5) -> list[dict[str, object]]:
+    cylinders: list[dict[str, object]] = []
+    pitch = 27
+    start = x - ((count - 1) * pitch) / 2
+    for index in range(count):
+        holder_x = start + index * pitch
+        cylinders.extend(
+            [
+                {"name": f"{prefix} holder {index + 1} feed stud", "x": holder_x, "y": y + 60, "z": z - 30, "r": 4, "h": 10, "color": "brass"},
+                {"name": f"{prefix} holder {index + 1} branch stud", "x": holder_x, "y": y + 60, "z": z + 30, "r": 4, "h": 10, "color": "brass"},
+            ]
+        )
+    return cylinders
+
+
+def breaker_boxes(x: float, y: float, z: float, prefix: str) -> list[dict[str, object]]:
+    return [
+        {"name": f"{prefix} folded cutoff base face 170 x 110", "x": x, "y": y + 3, "z": z, "w": 170, "h": 6, "d": 110, "color": "aluminium"},
+        {"name": f"{prefix} left 20 mm upstand lip", "x": x - 89, "y": y + 17, "z": z, "w": 8, "h": 28, "d": 110, "color": "aluminium"},
+        {"name": f"{prefix} right 20 mm upstand lip", "x": x + 89, "y": y + 17, "z": z, "w": 8, "h": 28, "d": 110, "color": "aluminium"},
+        {"name": f"{prefix} 100A waterproof resettable breaker body", "x": x, "y": y + 27, "z": z, "w": 82, "h": 34, "d": 56, "color": "black"},
+        {"name": f"{prefix} breaker raised faceplate", "x": x, "y": y + 48, "z": z, "w": 72, "h": 7, "d": 44, "color": "plastic"},
+        {"name": f"{prefix} red RESET lever", "x": x - 12, "y": y + 56, "z": z + 2, "w": 46, "h": 7, "d": 10, "color": "red"},
+        {"name": f"{prefix} small red trip button", "x": x + 28, "y": y + 58, "z": z - 17, "w": 15, "h": 5, "d": 9, "color": "red"},
+        {"name": f"{prefix} input ring lug", "x": x - 36, "y": y + 53, "z": z - 31, "w": 26, "h": 4, "d": 18, "color": "silver"},
+        {"name": f"{prefix} output ring lug", "x": x + 36, "y": y + 53, "z": z + 31, "w": 26, "h": 4, "d": 18, "color": "silver"},
+        {"name": f"{prefix} red cable boot", "x": x - 62, "y": y + 36, "z": z - 42, "w": 36, "h": 18, "d": 20, "color": "cableRed"},
+        {"name": f"{prefix} black cable boot", "x": x + 62, "y": y + 36, "z": z + 42, "w": 36, "h": 18, "d": 20, "color": "rubber"},
+    ]
+
+
+def breaker_cylinders(x: float, y: float, z: float, prefix: str) -> list[dict[str, object]]:
+    return [
+        {"name": f"{prefix} input terminal stud", "x": x - 36, "y": y + 59, "z": z - 31, "r": 5, "h": 12, "color": "brass"},
+        {"name": f"{prefix} output terminal stud", "x": x + 36, "y": y + 59, "z": z + 31, "r": 5, "h": 12, "color": "brass"},
+        {"name": f"{prefix} left fixing screw", "x": x - 34, "y": y + 50, "z": z + 23, "r": 3, "h": 8, "color": "silver"},
+        {"name": f"{prefix} right fixing screw", "x": x + 34, "y": y + 50, "z": z - 23, "r": 3, "h": 8, "color": "silver"},
+    ]
 
 
 SCENES = {
@@ -29,7 +296,7 @@ SCENES = {
     },
     "midi5_plate_mount_rev_c": {
         "title": "MIDI 5-Way Plate Mount Rev C",
-        "subtitle": "Open aluminium MIDI holder plate with insulated subplate and five fuse holders.",
+        "subtitle": "Open aluminium MIDI holder plate with insulated subplate and photo-derived red covered MIDI holder bank.",
         "camera": [310, 260, 390],
         "target": [0, 22, 0],
         "size": "190 x 150 x 3 mm plate; 140 x 85 x 5 mm insulated holder subplate",
@@ -37,18 +304,37 @@ SCENES = {
         "service_intent": "Leave cable exits and holder screws accessible for fuse and branch-feed service.",
         "boxes": [
             {"name": "Aluminium mount plate", "x": 0, "y": 3, "z": 0, "w": 190, "h": 6, "d": 150, "color": "aluminium"},
-            {"name": "Insulated holder subplate", "x": 0, "y": 15, "z": 0, "w": 140, "h": 10, "d": 85, "color": "black"},
-            {"name": "MIDI holder", "x": -54, "y": 35, "z": 0, "w": 20, "h": 26, "d": 62, "color": "red"},
-            {"name": "MIDI holder", "x": -27, "y": 35, "z": 0, "w": 20, "h": 26, "d": 62, "color": "red"},
-            {"name": "MIDI holder", "x": 0, "y": 35, "z": 0, "w": 20, "h": 26, "d": 62, "color": "red"},
-            {"name": "MIDI holder", "x": 27, "y": 35, "z": 0, "w": 20, "h": 26, "d": 62, "color": "red"},
-            {"name": "MIDI holder", "x": 54, "y": 35, "z": 0, "w": 20, "h": 26, "d": 62, "color": "red"},
+            *midi_bank_boxes(0, 6, 0, "MIDI Rev C active five-way bank", count=5),
         ],
         "cylinders": [
             {"name": "Standoff", "x": -68, "y": 23, "z": -36, "r": 4, "h": 16, "color": "brass"},
             {"name": "Standoff", "x": 68, "y": 23, "z": -36, "r": 4, "h": 16, "color": "brass"},
             {"name": "Standoff", "x": -68, "y": 23, "z": 36, "r": 4, "h": 16, "color": "brass"},
             {"name": "Standoff", "x": 68, "y": 23, "z": 36, "r": 4, "h": 16, "color": "brass"},
+            *midi_bank_cylinders(0, 6, 0, "MIDI Rev C active five-way bank", count=5),
+        ],
+    },
+    "electrical_device_models_rev_a": {
+        "title": "Electrical Device Models Rev A",
+        "subtitle": "Separate photo-informed device envelopes for relay box, 100A breaker/cutoff, and MIDI fuse holders.",
+        "camera": [520, 320, 620],
+        "target": [20, 80, 0],
+        "size": "Relay housing 300 x 197 x 80 mm; MIDI holder bank on 140 x 85 board; 100A breaker visual envelope pending final caliper check",
+        "load_path": "Reference-only device models used inside the battery power carrier and standalone relay/MIDI views.",
+        "service_intent": "Use this page to inspect device shapes separately before judging the combined battery-side packaging.",
+        "boxes": [
+            *relay_fuse_box_boxes(-235, 132, 8, "Relay/fuse box"),
+            *breaker_boxes(90, 8, -24, "100A breaker/cutoff"),
+            {"name": "MIDI model reference plate 190 x 150", "x": 285, "y": 3, "z": 54, "w": 190, "h": 6, "d": 150, "color": "aluminium"},
+            *midi_bank_boxes(285, 6, 54, "MIDI holder bank active five positions", count=5),
+            {"name": "Hidden/security needle switch visual note body", "x": 94, "y": 84, "z": 74, "w": 34, "h": 18, "d": 22, "color": "deepblack"},
+            {"name": "Hidden/security needle switch threaded barrel", "x": 68, "y": 86, "z": 74, "w": 28, "h": 12, "d": 12, "color": "silver"},
+            {"name": "Hidden/security needle switch blade terminals", "x": 122, "y": 84, "z": 74, "w": 28, "h": 5, "d": 18, "color": "brass"},
+        ],
+        "cylinders": [
+            *relay_fuse_box_cylinders(-235, 132, 8, "Relay/fuse box"),
+            *breaker_cylinders(90, 8, -24, "100A breaker/cutoff"),
+            *midi_bank_cylinders(285, 6, 54, "MIDI holder bank active five positions", count=5),
         ],
     },
     "relay_mount_rev_c": {
@@ -69,8 +355,11 @@ SCENES = {
             {"name": "Right vertical bend crease", "x": 160, "y": 112, "z": 6, "w": 4, "h": 220, "d": 3, "color": "bendline"},
             {"name": "Bottom horizontal bend crease", "x": 0, "y": 4, "z": 6, "w": 320, "h": 4, "d": 3, "color": "bendline"},
             {"name": "Top horizontal bend crease", "x": 0, "y": 220, "z": 6, "w": 320, "h": 4, "d": 3, "color": "bendline"},
-            {"name": "Relay/fuse box on carrier front face", "x": 0, "y": 112, "z": -42, "w": 295, "h": 170, "d": 62, "color": "black"},
+            *relay_fuse_box_boxes(0, 112, -42, "Relay/fuse box on carrier front face"),
             {"name": "Rear guard spaced behind loom side", "x": 0, "y": 112, "z": 28, "w": 280, "h": 185, "d": 5, "color": "plastic"},
+        ],
+        "cylinders": [
+            *relay_fuse_box_cylinders(0, 112, -42, "Relay/fuse box on carrier front face"),
         ],
     },
     "electrical_modules_rev_a": {
@@ -91,7 +380,7 @@ SCENES = {
             {"name": "Relay tray right bend crease", "x": 10, "y": 12, "z": 0, "w": 4, "h": 4, "d": 220, "color": "bendline"},
             {"name": "Relay tray front bend crease", "x": -150, "y": 12, "z": 110, "w": 320, "h": 4, "d": 4, "color": "bendline"},
             {"name": "Relay tray rear bend crease", "x": -150, "y": 12, "z": -110, "w": 320, "h": 4, "d": 4, "color": "bendline"},
-            {"name": "Relay box", "x": -150, "y": 50, "z": 0, "w": 250, "h": 64, "d": 150, "color": "black"},
+            *relay_fuse_box_boxes(-150, 106, -18, "Reference relay/fuse box"),
             {"name": "Power module box face 220 x 140", "x": 160, "y": 3, "z": 0, "w": 220, "h": 8, "d": 140, "color": "aluminium"},
             {"name": "Power module left 20 mm 90-degree flange", "x": 40, "y": -18, "z": 0, "w": 20, "h": 42, "d": 140, "color": "aluminium"},
             {"name": "Power module right 20 mm 90-degree flange", "x": 280, "y": -18, "z": 0, "w": 20, "h": 42, "d": 140, "color": "aluminium"},
@@ -101,8 +390,14 @@ SCENES = {
             {"name": "Power module right bend crease", "x": 270, "y": 12, "z": 0, "w": 4, "h": 4, "d": 140, "color": "bendline"},
             {"name": "Power module lower bend crease", "x": 160, "y": 12, "z": 70, "w": 220, "h": 4, "d": 4, "color": "bendline"},
             {"name": "Power module upper bend crease", "x": 160, "y": 12, "z": -70, "w": 220, "h": 4, "d": 4, "color": "bendline"},
-            {"name": "Breaker/MIDI module", "x": 160, "y": 42, "z": 0, "w": 170, "h": 55, "d": 100, "color": "red"},
+            *breaker_boxes(160, 20, -38, "Reference 100A breaker/cutoff"),
+            *midi_bank_boxes(160, 8, 42, "Reference MIDI holder bank", count=5),
             {"name": "Rear insulator", "x": 160, "y": -18, "z": 0, "w": 210, "h": 5, "d": 130, "color": "plastic"},
+        ],
+        "cylinders": [
+            *relay_fuse_box_cylinders(-150, 106, -18, "Reference relay/fuse box"),
+            *breaker_cylinders(160, 20, -38, "Reference 100A breaker/cutoff"),
+            *midi_bank_cylinders(160, 8, 42, "Reference MIDI holder bank", count=5),
         ],
     },
 }
@@ -114,9 +409,18 @@ MATERIALS = {
     "wood": {"color": "#b9874f", "side": "#8d6135"},
     "wedge": {"color": "#d2a263", "side": "#936739"},
     "black": {"color": "#202a33", "side": "#11181e"},
+    "deepblack": {"color": "#111820", "side": "#080c10"},
     "plastic": {"color": "#2d3942", "side": "#1c252b"},
+    "relayblock": {"color": "#2b333a", "side": "#151a1f"},
     "red": {"color": "#b7302a", "side": "#7e1e1a"},
+    "cableRed": {"color": "#c51f1f", "side": "#8c1515"},
+    "fuseblue": {"color": "#2387d7", "side": "#145888"},
+    "fuseyellow": {"color": "#dfba21", "side": "#9b7e0e"},
+    "fusered": {"color": "#d43a38", "side": "#8f1c1a"},
     "brass": {"color": "#c8a451", "side": "#8c6d2a"},
+    "rubber": {"color": "#161a1d", "side": "#080a0c"},
+    "silver": {"color": "#d4d8dc", "side": "#9aa3aa"},
+    "white": {"color": "#f4f6f8", "side": "#cbd2d8"},
     "bendline": {"color": "#2f3942", "side": "#202830"},
 }
 
@@ -216,8 +520,8 @@ def write_html(package_id: str, scene: dict[str, object]) -> None:
     body.is-three-ready #fallback {{ display: none; }}
     body.embed header,
     body.embed aside {{ display: none; }}
-    body.embed main {{ grid-template-columns: 1fr; min-height: 100vh; }}
-    body.embed #viewport {{ min-height: 100vh; }}
+    body.embed main {{ grid-template-columns: 1fr; min-height: 100vh; height: 100vh; }}
+    body.embed #viewport {{ min-height: 100vh; height: 100vh; }}
     @media (max-width: 820px) {{ main {{ grid-template-columns: 1fr; }} #viewport {{ min-height: 430px; }} aside {{ border-left: 0; border-top: 1px solid #d8dde2; }} }}
   </style>
   <script type="importmap">{{"imports":{{"three":"https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"}}}}</script>
@@ -260,9 +564,18 @@ def write_html(package_id: str, scene: dict[str, object]) -> None:
       wood: [0xb9874f, 0.1, 0.55],
       wedge: [0xd2a263, 0.1, 0.52],
       black: [0x202a33, 0.05, 0.62],
+      deepblack: [0x111820, 0.04, 0.7],
       plastic: [0x2d3942, 0.02, 0.7],
+      relayblock: [0x2b333a, 0.04, 0.58],
       red: [0xb7302a, 0.03, 0.42],
+      cableRed: [0xc51f1f, 0.03, 0.45],
+      fuseblue: [0x2387d7, 0.02, 0.28],
+      fuseyellow: [0xdfba21, 0.02, 0.3],
+      fusered: [0xd43a38, 0.02, 0.3],
       brass: [0xc4a35a, 0.4, 0.36],
+      rubber: [0x161a1d, 0.02, 0.65],
+      silver: [0xd4d8dc, 0.35, 0.32],
+      white: [0xf4f6f8, 0.02, 0.3],
       bendline: [0x2f3942, 0.05, 0.58],
     }};
     const materials = Object.fromEntries(Object.entries(materialDefs).map(([key, value]) => [
@@ -274,15 +587,17 @@ def write_html(package_id: str, scene: dict[str, object]) -> None:
     const mount = document.getElementById("viewport");
     const threeScene = new THREE.Scene();
     threeScene.background = new THREE.Color(0xf5f6f7);
-    const camera = new THREE.PerspectiveCamera(38, 1, 1, 2200);
-    camera.position.set(...sceneData.camera);
+    const camera = new THREE.PerspectiveCamera(38, 1, 1, 4200);
+    const baseCameraPosition = new THREE.Vector3(...sceneData.camera);
+    const baseTarget = new THREE.Vector3(...sceneData.target);
+    camera.position.copy(baseCameraPosition);
     const renderer = new THREE.WebGLRenderer({{ antialias: true, alpha: false, preserveDrawingBuffer: true }});
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
     renderer.shadowMap.enabled = true;
     mount.appendChild(renderer.domElement);
 
     const controls = new OrbitControls(camera, renderer.domElement);
-    controls.target.set(...sceneData.target);
+    controls.target.copy(baseTarget);
     controls.enableDamping = true;
     controls.minDistance = 260;
     controls.maxDistance = 1200;
@@ -347,7 +662,17 @@ def write_html(package_id: str, scene: dict[str, object]) -> None:
       const height = mount.clientHeight;
       renderer.setSize(width, height, false);
       camera.aspect = width / Math.max(1, height);
+      const aspect = width / Math.max(1, height);
+      const portraitScale = aspect < 0.9 ? Math.min(3.2, 1.35 / Math.max(aspect, 0.38)) : 1;
+      const nextPosition = baseTarget.clone().add(
+        baseCameraPosition.clone().sub(baseTarget).multiplyScalar(portraitScale)
+      );
+      camera.position.copy(nextPosition);
+      controls.target.copy(baseTarget);
+      controls.minDistance = Math.max(220, 260 * portraitScale);
+      controls.maxDistance = Math.max(1200, baseTarget.distanceTo(nextPosition) * 1.35);
       camera.updateProjectionMatrix();
+      controls.update();
     }}
     function animate() {{
       controls.update();
@@ -366,12 +691,112 @@ def write_html(package_id: str, scene: dict[str, object]) -> None:
     (out_dir / f"{package_id}_3d_visualisation.html").write_text(html, encoding="utf-8")
 
 
+def write_device_model_docs() -> None:
+    out_dir = FAB_DIR / "electrical_device_models_rev_a"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    readme = """# J40 Electrical Device Models - Rev A
+
+This is a reference visualisation pack for the physical electrical devices used by the battery-side fabrication layouts.
+It separates the devices from the carrier brackets so the relay box, 100A breaker/cutoff, and MIDI fuse holders can be checked as objects before judging the combined battery power carrier view.
+
+## Modelled Devices
+
+- Relay/fuse box: photo-informed 10-relay housing with blade-fuse column, brass studs, lower loom boot, and red output-wire bundle. The released sizing basis remains `300 x 197 x 80 mm`.
+- 100A breaker/cutoff: photo-informed waterproof resettable breaker with black body, raised faceplate, red reset lever/button, two terminal studs, ring lugs, and cable boots. Exact body/stud centres remain a caliper hold before final drilling.
+- MIDI fuse holder bank: active five-position fabrication model on the known `140 x 85 mm` insulated subplate, using red hinged covers, black linked bases, side mounting ears, latch recesses, and paired feed/branch studs. The received photo shows a larger linked bank; the active fabrication package is still the five-way Rev C plate.
+- Hidden/security needle switch: shown only as a small reference object, because it belongs to the cabin/security wiring path rather than the battery-side power carrier.
+
+## Evidence Basis
+
+- Relay/fuse box photo: `photos/20260411_143125.jpg`
+- 100A breaker/cutoff and MIDI context photo: `photos/20260411_071153.jpg`
+- MIDI holder close-up: `photos/20260411_143135.jpg`
+- Hidden/security needle switch photo: `photos/20260420_221819_gp_YV69fbvA.jpg`
+
+## Release Notes
+
+These models are visual envelopes, not fabrication drawings. Use them to check packaging and service access in the S3 dashboard. Use the existing Rev C fabrication packages for cut files, and measure the actual breaker body, mounting-hole centres, stud spacing, and cable-lug sweep before drilling metal.
+"""
+    (out_dir / "README.md").write_text(readme, encoding="utf-8")
+
+    basis_rows = [
+        {
+            "device_id": "relay_fuse_box",
+            "device_name": "10-way relay/fuse box",
+            "measurement_basis": "Published/listing and earlier photo-check housing size",
+            "model_dimensions_mm": "300 x 197 x 80 housing envelope",
+            "photo_refs": "photos/20260411_143125.jpg",
+            "release_status": "released_visual_envelope",
+            "notes": "Visual model adds 10 relay cubes, blade-fuse column, brass studs, loom boot, and output wire bundle to the released housing envelope.",
+        },
+        {
+            "device_id": "midi_holder_bank",
+            "device_name": "MIDI fuse holder bank, active five positions",
+            "measurement_basis": "Rev C subplate holes from measured linked-holder photos plus received holder photo",
+            "model_dimensions_mm": "140 x 85 subplate; holder holes about 20.2 pitch, 44 row separation, 10 row stagger",
+            "photo_refs": "photos/20260411_143135.jpg|photos/20260411_071153.jpg",
+            "release_status": "released_visual_envelope_for_five_way_rev_c",
+            "notes": "Received bank photo shows more positions; fabrication pack uses five active positions on the Rev C plate/subplate.",
+        },
+        {
+            "device_id": "breaker_cutoff_100a",
+            "device_name": "100A waterproof resettable breaker / cutoff",
+            "measurement_basis": "Received hardware photo and workbook part row 53",
+            "model_dimensions_mm": "Visual envelope only; exact breaker body, mounting holes, stud centres, and cable lug sweep must be caliper-measured",
+            "photo_refs": "photos/20260411_071153.jpg",
+            "release_status": "visual_envelope_measurement_hold",
+            "notes": "Visual model shows the received resettable breaker form. Final metal still keeps the breaker body, stud spacing, and cable-lug depth as a hold.",
+        },
+        {
+            "device_id": "hidden_security_needle_switch",
+            "device_name": "Hidden/security needle switch",
+            "measurement_basis": "Received hardware photo",
+            "model_dimensions_mm": "Small cabin/security switch visual only; not part of battery carrier cut files",
+            "photo_refs": "photos/20260420_221819_gp_YV69fbvA.jpg",
+            "release_status": "reference_only",
+            "notes": "Shown separately so it is not confused with the 100A battery-side breaker/cutoff.",
+        },
+    ]
+    basis_path = out_dir / "device_measurement_basis.csv"
+    with basis_path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(basis_rows[0].keys()))
+        writer.writeheader()
+        writer.writerows(basis_rows)
+
+    checklist_rows = [
+        {
+            "check_id": "EDM-001",
+            "stage": "bench_measurement",
+            "acceptance_check": "Measure the actual 100A breaker body length/width/height, mounting hole centres, terminal stud diameter, terminal stud centre spacing, and lug sweep before final drilling.",
+            "required_evidence": "Caliper photo or dimension note with breaker and lugs on the cutoff base card.",
+        },
+        {
+            "check_id": "EDM-002",
+            "stage": "bench_measurement",
+            "acceptance_check": "Confirm the relay/fuse housing depth, loom exit direction, and required standoff clearance against the released 300 x 197 x 80 envelope.",
+            "required_evidence": "Relay box side/depth photo with ruler and loom boot visible.",
+        },
+        {
+            "check_id": "EDM-003",
+            "stage": "holder_count",
+            "acceptance_check": "Confirm whether five or six MIDI holder positions will be populated on the vehicle; keep Rev C fabrication at five unless deliberately updated.",
+            "required_evidence": "Bench photo of selected active MIDI holders with marked common feed and branch-output side.",
+        },
+    ]
+    checklist_path = out_dir / "inspection_checklist.csv"
+    with checklist_path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(checklist_rows[0].keys()))
+        writer.writeheader()
+        writer.writerows(checklist_rows)
+
+
 def main() -> None:
     for package_id, scene in SCENES.items():
         out_dir = FAB_DIR / package_id
         out_dir.mkdir(parents=True, exist_ok=True)
         write_svg(package_id, scene)
         write_html(package_id, scene)
+    write_device_model_docs()
 
 
 if __name__ == "__main__":

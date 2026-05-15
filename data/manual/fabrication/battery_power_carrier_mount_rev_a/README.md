@@ -8,7 +8,7 @@ This package changes the battery-side plan into a compact steel chassis-bolted s
 - Support the battery on a compact `315 x 265 mm` tray around the current `275 x 230 mm` battery datum.
 - Put Relay Rev C low on the front/radiator-side cassette face: `320 x 220 mm` finished folded tray, `360 x 255 mm` flat pattern, `20 mm` side/bottom returns, and `15 mm` top return.
 - Put MIDI Rev C on a shallow top-front shelf using the known open `190 x 150 mm` aluminium plate plus `140 x 85 mm` insulating subplate.
-- Put the cutoff switch on the top/front accessible corner on a folded aluminium base/guard: `210 x 150 mm` flat pattern, `170 x 110 mm` finished face, and `20 mm` lips bent upward toward the switch/terminal side.
+- Put the 100A breaker/cutoff on the top/front accessible corner on a folded aluminium base/guard: `210 x 150 mm` flat pattern, `170 x 110 mm` finished face, and `20 mm` lips bent upward toward the breaker/terminal side.
 - Treat the inboard engine/LHD steering side as a keep-clear/service envelope except for protected cable clips and pass-through routing.
 - Default to this front-cassette split layout. Do not make a one-piece side carrier unless the filled cavity map proves it is smaller, clear, serviceable, and not in the engine-side envelope.
 
@@ -29,7 +29,7 @@ The May 14 no-battery bay photo shows the existing battery pocket sitting well a
 3. `battery_stand_compact_single_mount_upright_rev_b` - 4 mm mild-steel upright bridge side plate; make a mirrored pair if the mock-up needs side-to-side stiffness.
 4. `battery_stand_compact_hold_down_crossbar_rev_b` - compact battery hold-down crossbar template.
 5. `battery_power_compact_front_service_rail_rev_b` - 3 mm mild-steel compact `325 x 120 mm` front/radiator-side service cassette spine for the relay tray and top-front MIDI/cutoff shelf tabs.
-6. `battery_power_compact_cutoff_tab_rev_b` - folded aluminium cutoff switch base/guard with upward lips, top-front placement basis.
+6. `battery_power_compact_cutoff_tab_rev_b` - folded aluminium 100A breaker/cutoff base/guard with upward lips, top-front placement basis.
 
 ## 3D Visualisation
 
@@ -43,7 +43,7 @@ The May 14 no-battery bay photo shows the existing battery pocket sitting well a
 - The relay hardware uses the known Relay Rev C folded tray (`320 x 220 mm` finished face; `360 x 255 mm` flat pattern). Its bent returns make a shallow tray, so the battery carrier must not duplicate that with a second large tray or move it onto the engine-side gap.
 - The MIDI holder hardware uses `midi5_plate_mount_rev_c` (`190 x 150 mm`) and `midi5_holder_subplate_rev_c` (`140 x 85 mm`). This is an open plate/subplate assembly, so the current route is a shallow top-front shelf on the same cassette.
 - The older `electrical_modules_rev_a` package includes bent/flanged aluminium tray/box concepts, but remains reference/fallback only.
-- The cutoff folded base/guard gets only a pilot/opening allowance until the actual battery master switch panel-hole size, body depth, terminal-stud spacing, and cable-lug sweep are measured. The lips fold upward to protect the switch/lug envelope, not downward as hidden stiffeners.
+- The cutoff folded base/guard gets only a pilot/opening allowance until the actual 100A breaker body size, mounting-hole centres, reset-lever access, terminal-stud spacing, and cable-lug sweep are measured. The lips fold upward to protect the breaker/lug envelope, not downward as hidden stiffeners.
 
 ## Compact Packaging Hold
 
@@ -54,7 +54,7 @@ The May 14 no-battery bay photo shows the existing battery pocket sitting well a
 
 ## Battery-Cavity Mapping Plan
 
-Use the battery as the fixed exclusion block before placing any relays, MIDI fuses, or cutoff switch. The current package battery block is `275 x 230 x 190 mm`; verify it against the actual installed battery and update the map if the real battery differs.
+Use the battery as the fixed exclusion block before placing any relays, MIDI fuses, or cutoff breaker. The current package battery block is `275 x 230 x 190 mm`; verify it against the actual installed battery and update the map if the real battery differs.
 
 - Establish datums with the vehicle facing forward: front/radiator side, rear/firewall side, inboard engine/LHD steering side, outboard wing side, and vertical bonnet clearance.
 - Put the battery or a full-size battery box in the tray and mark a no-go block around it: battery case, hold-down, terminals, terminal boots, and cable lug bend radius.
@@ -75,7 +75,7 @@ Detailed measurement rows are in `cavity_mapping_plan.csv`.
 - Single chassis saddle and upright bridge flat interfaces: `4.0 mm` mild steel. Saddle flat-pattern allowance is nominal `220 x 230 mm` before rail-width measurement and bend allowance correction.
 - Upright bridge angle-first stock: `40 x 40 x 4 mm` pre-formed `90-degree` mild-steel angle may replace straight bridge members if dry-fit keeps bolt access, service clearance, and battery/electrical layout clear.
 - Battery hold-down crossbar: `3.0 mm` mild steel or stainless.
-- Cutoff base/guard: `3.0 mm` 5052-H32 aluminium folded to a `170 x 110 mm` finished face with `20 mm` upstand lips around the switch/terminal side; use steel only if dry-fit proves the cutoff base must become a structural tab.
+- Cutoff base/guard: `3.0 mm` 5052-H32 aluminium folded to a `170 x 110 mm` finished face with `20 mm` upstand lips around the 100A breaker/terminal side; use steel only if dry-fit proves the cutoff base must become a structural tab.
 - Do not delete flat sheet/plate stock just because angle stock is available; the battery deck, chassis saddle, and electrical mounting faces still need controlled flat geometry.
 - Use stainless or zinc-plated M6/M8/M10 hardware with star washers only where electrical bonding is intended. Otherwise isolate live hardware from the steel stand.
 
@@ -93,7 +93,7 @@ Detailed measurement rows are in `cavity_mapping_plan.csv`.
 - Battery installed: length, width, full case height, terminal side, clamp path, and bonnet clearance.
 - Compact holder cards: Relay Rev C low front tray, MIDI Rev C top-front shelf, folded cutoff top/front base/guard with upward lips, and cable-lug depth must fit the measured front/radiator volume without touching the steering-side service envelope.
 - Single chassis saddle: rail top width, leg depth, through-bolt pitch, crush-tube need, stand-off height, upright bridge height, side-jog from saddle centreline to tray centreline, and access for tools. Current image-based target is `180 mm` rise with `90-150 mm` wing-side/outboard adjustment.
-- Cutoff switch: panel-hole diameter, body depth, key/knob sweep, terminal stud size, and cable-lug sweep.
+- 100A breaker/cutoff: body length/width/height, mounting hole centres, reset lever access, terminal stud size/spacing, and cable-lug sweep.
 - Relay Rev C base: final low-front orientation, standoff height, seal direction, and loom exit direction.
 - MIDI Rev C base/subplate: final top-front shelf feed/output orientation and cable bend radius.
 - Cable support: P-clip positions every `150-200 mm` and near every direction change.

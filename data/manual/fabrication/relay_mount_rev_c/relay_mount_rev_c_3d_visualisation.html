@@ -26,8 +26,8 @@
     body.is-three-ready #fallback { display: none; }
     body.embed header,
     body.embed aside { display: none; }
-    body.embed main { grid-template-columns: 1fr; min-height: 100vh; }
-    body.embed #viewport { min-height: 100vh; }
+    body.embed main { grid-template-columns: 1fr; min-height: 100vh; height: 100vh; }
+    body.embed #viewport { min-height: 100vh; height: 100vh; }
     @media (max-width: 820px) { main { grid-template-columns: 1fr; } #viewport { min-height: 430px; } aside { border-left: 0; border-top: 1px solid #d8dde2; } }
   </style>
   <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"}}</script>
@@ -63,16 +63,25 @@
     import * as THREE from "three";
     import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
-    const sceneData = {"title":"Relay Mount Rev C","subtitle":"Fallback standalone folded relay-box carrier with rear guard and serviceable loom exit.","camera":[430,360,520],"target":[0,115,0],"size":"360 x 255 mm carrier blank; 320 x 220 mm finished face; 280 x 185 mm rear guard","load_path":"The folded aluminium carrier is a vertical front-face support for the DAIER relay/fuse box if the split relay route is used.","service_intent":"Show the relay box on the carrier face, 20 mm side/bottom returns bent back, the 15 mm top return, and the spaced rear guard behind the loom side.","boxes":[{"name":"Folded relay carrier front face 320 x 220","x":0,"y":112,"z":0,"w":320,"h":220,"d":8,"color":"aluminium"},{"name":"Left 20 mm 90-degree return bent back","x":-164,"y":112,"z":-14,"w":8,"h":220,"d":28,"color":"aluminium"},{"name":"Right 20 mm 90-degree return bent back","x":164,"y":112,"z":-14,"w":8,"h":220,"d":28,"color":"aluminium"},{"name":"Bottom 20 mm 90-degree return bent back","x":0,"y":0,"z":-14,"w":320,"h":8,"d":28,"color":"aluminium"},{"name":"Top 15 mm 90-degree return bent back","x":0,"y":224,"z":-11.5,"w":320,"h":8,"d":23,"color":"aluminium"},{"name":"Left vertical bend crease","x":-160,"y":112,"z":6,"w":4,"h":220,"d":3,"color":"bendline"},{"name":"Right vertical bend crease","x":160,"y":112,"z":6,"w":4,"h":220,"d":3,"color":"bendline"},{"name":"Bottom horizontal bend crease","x":0,"y":4,"z":6,"w":320,"h":4,"d":3,"color":"bendline"},{"name":"Top horizontal bend crease","x":0,"y":220,"z":6,"w":320,"h":4,"d":3,"color":"bendline"},{"name":"Relay/fuse box on carrier front face","x":0,"y":112,"z":-42,"w":295,"h":170,"d":62,"color":"black"},{"name":"Rear guard spaced behind loom side","x":0,"y":112,"z":28,"w":280,"h":185,"d":5,"color":"plastic"}]};
+    const sceneData = {"title":"Relay Mount Rev C","subtitle":"Fallback standalone folded relay-box carrier with rear guard and serviceable loom exit.","camera":[430,360,520],"target":[0,115,0],"size":"360 x 255 mm carrier blank; 320 x 220 mm finished face; 280 x 185 mm rear guard","load_path":"The folded aluminium carrier is a vertical front-face support for the DAIER relay/fuse box if the split relay route is used.","service_intent":"Show the relay box on the carrier face, 20 mm side/bottom returns bent back, the 15 mm top return, and the spaced rear guard behind the loom side.","boxes":[{"name":"Folded relay carrier front face 320 x 220","x":0,"y":112,"z":0,"w":320,"h":220,"d":8,"color":"aluminium"},{"name":"Left 20 mm 90-degree return bent back","x":-164,"y":112,"z":-14,"w":8,"h":220,"d":28,"color":"aluminium"},{"name":"Right 20 mm 90-degree return bent back","x":164,"y":112,"z":-14,"w":8,"h":220,"d":28,"color":"aluminium"},{"name":"Bottom 20 mm 90-degree return bent back","x":0,"y":0,"z":-14,"w":320,"h":8,"d":28,"color":"aluminium"},{"name":"Top 15 mm 90-degree return bent back","x":0,"y":224,"z":-11.5,"w":320,"h":8,"d":23,"color":"aluminium"},{"name":"Left vertical bend crease","x":-160,"y":112,"z":6,"w":4,"h":220,"d":3,"color":"bendline"},{"name":"Right vertical bend crease","x":160,"y":112,"z":6,"w":4,"h":220,"d":3,"color":"bendline"},{"name":"Bottom horizontal bend crease","x":0,"y":4,"z":6,"w":320,"h":4,"d":3,"color":"bendline"},{"name":"Top horizontal bend crease","x":0,"y":220,"z":6,"w":320,"h":4,"d":3,"color":"bendline"},{"name":"Relay/fuse box on carrier front face housing 300 x 197 x 80","x":0,"y":112,"z":-42,"w":300,"h":197,"d":64,"color":"black"},{"name":"Relay/fuse box on carrier front face raised front rim","x":0,"y":112,"z":-80,"w":286,"h":183,"d":8,"color":"plastic"},{"name":"Relay/fuse box on carrier front face relay bay backing","x":-46,"y":112,"z":-87,"w":128,"h":176,"d":8,"color":"deepblack"},{"name":"Relay/fuse box on carrier front face blade fuse column backing","x":104,"y":112,"z":-87,"w":58,"h":176,"d":8,"color":"deepblack"},{"name":"Relay/fuse box on carrier front face lower loom boot","x":-124,"y":30,"z":-90,"w":46,"h":34,"d":34,"color":"rubber"},{"name":"Relay/fuse box on carrier front face red output wire bundle","x":32,"y":20,"z":-92,"w":92,"h":16,"d":26,"color":"cableRed"},{"name":"Relay/fuse box on carrier front face relay cube R1C1","x":-70,"y":184,"z":-114,"w":54,"h":29,"d":28,"color":"relayblock"},{"name":"Relay/fuse box on carrier front face relay printed legend R1C1","x":-70,"y":185,"z":-130,"w":32,"h":4,"d":2,"color":"white"},{"name":"Relay/fuse box on carrier front face relay cube R1C2","x":-10,"y":184,"z":-114,"w":54,"h":29,"d":28,"color":"relayblock"},{"name":"Relay/fuse box on carrier front face relay printed legend R1C2","x":-10,"y":185,"z":-130,"w":32,"h":4,"d":2,"color":"white"},{"name":"Relay/fuse box on carrier front face fuse slot 1","x":104,"y":184,"z":-114,"w":44,"h":28,"d":16,"color":"deepblack"},{"name":"Relay/fuse box on carrier front face blade fuse 1","x":104,"y":187,"z":-130,"w":34,"h":12,"d":7,"color":"fuseblue"},{"name":"Relay/fuse box on carrier front face exposed fuse terminal pair 1","x":104,"y":171,"z":-130,"w":32,"h":5,"d":4,"color":"silver"},{"name":"Relay/fuse box on carrier front face relay cube R2C1","x":-70,"y":148,"z":-114,"w":54,"h":29,"d":28,"color":"relayblock"},{"name":"Relay/fuse box on carrier front face relay printed legend R2C1","x":-70,"y":149,"z":-130,"w":32,"h":4,"d":2,"color":"white"},{"name":"Relay/fuse box on carrier front face relay cube R2C2","x":-10,"y":148,"z":-114,"w":54,"h":29,"d":28,"color":"relayblock"},{"name":"Relay/fuse box on carrier front face relay printed legend R2C2","x":-10,"y":149,"z":-130,"w":32,"h":4,"d":2,"color":"white"},{"name":"Relay/fuse box on carrier front face fuse slot 2","x":104,"y":148,"z":-114,"w":44,"h":28,"d":16,"color":"deepblack"},{"name":"Relay/fuse box on carrier front face blade fuse 2","x":104,"y":151,"z":-130,"w":34,"h":12,"d":7,"color":"fusered"},{"name":"Relay/fuse box on carrier front face exposed fuse terminal pair 2","x":104,"y":135,"z":-130,"w":32,"h":5,"d":4,"color":"silver"},{"name":"Relay/fuse box on carrier front face relay cube R3C1","x":-70,"y":112,"z":-114,"w":54,"h":29,"d":28,"color":"relayblock"},{"name":"Relay/fuse box on carrier front face relay printed legend R3C1","x":-70,"y":113,"z":-130,"w":32,"h":4,"d":2,"color":"white"},{"name":"Relay/fuse box on carrier front face relay cube R3C2","x":-10,"y":112,"z":-114,"w":54,"h":29,"d":28,"color":"relayblock"},{"name":"Relay/fuse box on carrier front face relay printed legend R3C2","x":-10,"y":113,"z":-130,"w":32,"h":4,"d":2,"color":"white"},{"name":"Relay/fuse box on carrier front face fuse slot 3","x":104,"y":112,"z":-114,"w":44,"h":28,"d":16,"color":"deepblack"},{"name":"Relay/fuse box on carrier front face blade fuse 3","x":104,"y":115,"z":-130,"w":34,"h":12,"d":7,"color":"fuseblue"},{"name":"Relay/fuse box on carrier front face exposed fuse terminal pair 3","x":104,"y":99,"z":-130,"w":32,"h":5,"d":4,"color":"silver"},{"name":"Relay/fuse box on carrier front face relay cube R4C1","x":-70,"y":76,"z":-114,"w":54,"h":29,"d":28,"color":"relayblock"},{"name":"Relay/fuse box on carrier front face relay printed legend R4C1","x":-70,"y":77,"z":-130,"w":32,"h":4,"d":2,"color":"white"},{"name":"Relay/fuse box on carrier front face relay cube R4C2","x":-10,"y":76,"z":-114,"w":54,"h":29,"d":28,"color":"relayblock"},{"name":"Relay/fuse box on carrier front face relay printed legend R4C2","x":-10,"y":77,"z":-130,"w":32,"h":4,"d":2,"color":"white"},{"name":"Relay/fuse box on carrier front face fuse slot 4","x":104,"y":76,"z":-114,"w":44,"h":28,"d":16,"color":"deepblack"},{"name":"Relay/fuse box on carrier front face blade fuse 4","x":104,"y":79,"z":-130,"w":34,"h":12,"d":7,"color":"fuseyellow"},{"name":"Relay/fuse box on carrier front face exposed fuse terminal pair 4","x":104,"y":63,"z":-130,"w":32,"h":5,"d":4,"color":"silver"},{"name":"Relay/fuse box on carrier front face relay cube R5C1","x":-70,"y":40,"z":-114,"w":54,"h":29,"d":28,"color":"relayblock"},{"name":"Relay/fuse box on carrier front face relay printed legend R5C1","x":-70,"y":41,"z":-130,"w":32,"h":4,"d":2,"color":"white"},{"name":"Relay/fuse box on carrier front face relay cube R5C2","x":-10,"y":40,"z":-114,"w":54,"h":29,"d":28,"color":"relayblock"},{"name":"Relay/fuse box on carrier front face relay printed legend R5C2","x":-10,"y":41,"z":-130,"w":32,"h":4,"d":2,"color":"white"},{"name":"Relay/fuse box on carrier front face fuse slot 5","x":104,"y":40,"z":-114,"w":44,"h":28,"d":16,"color":"deepblack"},{"name":"Relay/fuse box on carrier front face blade fuse 5","x":104,"y":43,"z":-130,"w":34,"h":12,"d":7,"color":"fuseyellow"},{"name":"Relay/fuse box on carrier front face exposed fuse terminal pair 5","x":104,"y":27,"z":-130,"w":32,"h":5,"d":4,"color":"silver"},{"name":"Relay/fuse box on carrier front face brass stud pad","x":-124,"y":184,"z":-126,"w":20,"h":20,"d":7,"color":"brass"},{"name":"Relay/fuse box on carrier front face brass stud pad","x":-124,"y":40,"z":-126,"w":20,"h":20,"d":7,"color":"brass"},{"name":"Relay/fuse box on carrier front face brass stud pad","x":-10,"y":202,"z":-126,"w":20,"h":20,"d":7,"color":"brass"},{"name":"Relay/fuse box on carrier front face brass stud pad","x":-10,"y":22,"z":-126,"w":20,"h":20,"d":7,"color":"brass"},{"name":"Rear guard spaced behind loom side","x":0,"y":112,"z":28,"w":280,"h":185,"d":5,"color":"plastic"}],"cylinders":[{"name":"Relay/fuse box on carrier front face corner fixing","x":-138,"y":196,"z":-120,"r":5,"h":8,"color":"deepblack"},{"name":"Relay/fuse box on carrier front face corner fixing","x":138,"y":196,"z":-120,"r":5,"h":8,"color":"deepblack"},{"name":"Relay/fuse box on carrier front face corner fixing","x":-138,"y":28,"z":-120,"r":5,"h":8,"color":"deepblack"},{"name":"Relay/fuse box on carrier front face corner fixing","x":138,"y":28,"z":-120,"r":5,"h":8,"color":"deepblack"}]};
     const materialDefs = {
       aluminium: [0xc1cbd3, 0.35, 0.38],
       steel: [0x59636c, 0.45, 0.5],
       wood: [0xb9874f, 0.1, 0.55],
       wedge: [0xd2a263, 0.1, 0.52],
       black: [0x202a33, 0.05, 0.62],
+      deepblack: [0x111820, 0.04, 0.7],
       plastic: [0x2d3942, 0.02, 0.7],
+      relayblock: [0x2b333a, 0.04, 0.58],
       red: [0xb7302a, 0.03, 0.42],
+      cableRed: [0xc51f1f, 0.03, 0.45],
+      fuseblue: [0x2387d7, 0.02, 0.28],
+      fuseyellow: [0xdfba21, 0.02, 0.3],
+      fusered: [0xd43a38, 0.02, 0.3],
       brass: [0xc4a35a, 0.4, 0.36],
+      rubber: [0x161a1d, 0.02, 0.65],
+      silver: [0xd4d8dc, 0.35, 0.32],
+      white: [0xf4f6f8, 0.02, 0.3],
       bendline: [0x2f3942, 0.05, 0.58],
     };
     const materials = Object.fromEntries(Object.entries(materialDefs).map(([key, value]) => [
@@ -84,15 +93,17 @@
     const mount = document.getElementById("viewport");
     const threeScene = new THREE.Scene();
     threeScene.background = new THREE.Color(0xf5f6f7);
-    const camera = new THREE.PerspectiveCamera(38, 1, 1, 2200);
-    camera.position.set(...sceneData.camera);
+    const camera = new THREE.PerspectiveCamera(38, 1, 1, 4200);
+    const baseCameraPosition = new THREE.Vector3(...sceneData.camera);
+    const baseTarget = new THREE.Vector3(...sceneData.target);
+    camera.position.copy(baseCameraPosition);
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, preserveDrawingBuffer: true });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
     renderer.shadowMap.enabled = true;
     mount.appendChild(renderer.domElement);
 
     const controls = new OrbitControls(camera, renderer.domElement);
-    controls.target.set(...sceneData.target);
+    controls.target.copy(baseTarget);
     controls.enableDamping = true;
     controls.minDistance = 260;
     controls.maxDistance = 1200;
@@ -157,7 +168,17 @@
       const height = mount.clientHeight;
       renderer.setSize(width, height, false);
       camera.aspect = width / Math.max(1, height);
+      const aspect = width / Math.max(1, height);
+      const portraitScale = aspect < 0.9 ? Math.min(3.2, 1.35 / Math.max(aspect, 0.38)) : 1;
+      const nextPosition = baseTarget.clone().add(
+        baseCameraPosition.clone().sub(baseTarget).multiplyScalar(portraitScale)
+      );
+      camera.position.copy(nextPosition);
+      controls.target.copy(baseTarget);
+      controls.minDistance = Math.max(220, 260 * portraitScale);
+      controls.maxDistance = Math.max(1200, baseTarget.distanceTo(nextPosition) * 1.35);
       camera.updateProjectionMatrix();
+      controls.update();
     }
     function animate() {
       controls.update();

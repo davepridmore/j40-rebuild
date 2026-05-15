@@ -26,8 +26,8 @@
     body.is-three-ready #fallback { display: none; }
     body.embed header,
     body.embed aside { display: none; }
-    body.embed main { grid-template-columns: 1fr; min-height: 100vh; }
-    body.embed #viewport { min-height: 100vh; }
+    body.embed main { grid-template-columns: 1fr; min-height: 100vh; height: 100vh; }
+    body.embed #viewport { min-height: 100vh; height: 100vh; }
     @media (max-width: 820px) { main { grid-template-columns: 1fr; } #viewport { min-height: 430px; } aside { border-left: 0; border-top: 1px solid #d8dde2; } }
   </style>
   <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"}}</script>
@@ -53,7 +53,7 @@
     <aside>
       <h2>Assembly Read</h2>
       <dl>
-        <div><dt>Package role</dt><dd>Open aluminium MIDI holder plate with insulated subplate and five fuse holders.</dd></div>
+        <div><dt>Package role</dt><dd>Open aluminium MIDI holder plate with insulated subplate and photo-derived red covered MIDI holder bank.</dd></div>
         <div><dt>Load path</dt><dd>The plate is the vehicle-side carrier; the non-conductive subplate isolates the MIDI holders.</dd></div>
         <div><dt>Service intent</dt><dd>Leave cable exits and holder screws accessible for fuse and branch-feed service.</dd></div>
       </dl>
@@ -63,16 +63,25 @@
     import * as THREE from "three";
     import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
-    const sceneData = {"title":"MIDI 5-Way Plate Mount Rev C","subtitle":"Open aluminium MIDI holder plate with insulated subplate and five fuse holders.","camera":[310,260,390],"target":[0,22,0],"size":"190 x 150 x 3 mm plate; 140 x 85 x 5 mm insulated holder subplate","load_path":"The plate is the vehicle-side carrier; the non-conductive subplate isolates the MIDI holders.","service_intent":"Leave cable exits and holder screws accessible for fuse and branch-feed service.","boxes":[{"name":"Aluminium mount plate","x":0,"y":3,"z":0,"w":190,"h":6,"d":150,"color":"aluminium"},{"name":"Insulated holder subplate","x":0,"y":15,"z":0,"w":140,"h":10,"d":85,"color":"black"},{"name":"MIDI holder","x":-54,"y":35,"z":0,"w":20,"h":26,"d":62,"color":"red"},{"name":"MIDI holder","x":-27,"y":35,"z":0,"w":20,"h":26,"d":62,"color":"red"},{"name":"MIDI holder","x":0,"y":35,"z":0,"w":20,"h":26,"d":62,"color":"red"},{"name":"MIDI holder","x":27,"y":35,"z":0,"w":20,"h":26,"d":62,"color":"red"},{"name":"MIDI holder","x":54,"y":35,"z":0,"w":20,"h":26,"d":62,"color":"red"}],"cylinders":[{"name":"Standoff","x":-68,"y":23,"z":-36,"r":4,"h":16,"color":"brass"},{"name":"Standoff","x":68,"y":23,"z":-36,"r":4,"h":16,"color":"brass"},{"name":"Standoff","x":-68,"y":23,"z":36,"r":4,"h":16,"color":"brass"},{"name":"Standoff","x":68,"y":23,"z":36,"r":4,"h":16,"color":"brass"}]};
+    const sceneData = {"title":"MIDI 5-Way Plate Mount Rev C","subtitle":"Open aluminium MIDI holder plate with insulated subplate and photo-derived red covered MIDI holder bank.","camera":[310,260,390],"target":[0,22,0],"size":"190 x 150 x 3 mm plate; 140 x 85 x 5 mm insulated holder subplate","load_path":"The plate is the vehicle-side carrier; the non-conductive subplate isolates the MIDI holders.","service_intent":"Leave cable exits and holder screws accessible for fuse and branch-feed service.","boxes":[{"name":"Aluminium mount plate","x":0,"y":3,"z":0,"w":190,"h":6,"d":150,"color":"aluminium"},{"name":"MIDI Rev C active five-way bank 140 x 85 insulated subplate","x":0,"y":14,"z":0,"w":140,"h":12,"d":85,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 1 black linked base","x":-54.0,"y":28,"z":0,"w":25,"h":18,"d":82,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 1 red hinged cover","x":-54.0,"y":48,"z":0,"w":24,"h":26,"d":72,"color":"red"},{"name":"MIDI Rev C active five-way bank MIDI holder 1 latch recess front","x":-54.0,"y":63,"z":-23,"w":13,"h":4,"d":9,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 1 latch recess rear","x":-54.0,"y":63,"z":23,"w":13,"h":4,"d":9,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 1 left mounting ear","x":-71.0,"y":23,"z":-42,"w":12,"h":8,"d":18,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 1 right mounting ear","x":-37.0,"y":23,"z":42,"w":12,"h":8,"d":18,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 2 black linked base","x":-27.0,"y":28,"z":0,"w":25,"h":18,"d":82,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 2 red hinged cover","x":-27.0,"y":48,"z":0,"w":24,"h":26,"d":72,"color":"red"},{"name":"MIDI Rev C active five-way bank MIDI holder 2 latch recess front","x":-27.0,"y":63,"z":-23,"w":13,"h":4,"d":9,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 2 latch recess rear","x":-27.0,"y":63,"z":23,"w":13,"h":4,"d":9,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 2 left mounting ear","x":-44.0,"y":23,"z":-42,"w":12,"h":8,"d":18,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 2 right mounting ear","x":-10.0,"y":23,"z":42,"w":12,"h":8,"d":18,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 3 black linked base","x":0.0,"y":28,"z":0,"w":25,"h":18,"d":82,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 3 red hinged cover","x":0.0,"y":48,"z":0,"w":24,"h":26,"d":72,"color":"red"},{"name":"MIDI Rev C active five-way bank MIDI holder 3 latch recess front","x":0.0,"y":63,"z":-23,"w":13,"h":4,"d":9,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 3 latch recess rear","x":0.0,"y":63,"z":23,"w":13,"h":4,"d":9,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 3 left mounting ear","x":-17.0,"y":23,"z":-42,"w":12,"h":8,"d":18,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 3 right mounting ear","x":17.0,"y":23,"z":42,"w":12,"h":8,"d":18,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 4 black linked base","x":27.0,"y":28,"z":0,"w":25,"h":18,"d":82,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 4 red hinged cover","x":27.0,"y":48,"z":0,"w":24,"h":26,"d":72,"color":"red"},{"name":"MIDI Rev C active five-way bank MIDI holder 4 latch recess front","x":27.0,"y":63,"z":-23,"w":13,"h":4,"d":9,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 4 latch recess rear","x":27.0,"y":63,"z":23,"w":13,"h":4,"d":9,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 4 left mounting ear","x":10.0,"y":23,"z":-42,"w":12,"h":8,"d":18,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 4 right mounting ear","x":44.0,"y":23,"z":42,"w":12,"h":8,"d":18,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 5 black linked base","x":54.0,"y":28,"z":0,"w":25,"h":18,"d":82,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 5 red hinged cover","x":54.0,"y":48,"z":0,"w":24,"h":26,"d":72,"color":"red"},{"name":"MIDI Rev C active five-way bank MIDI holder 5 latch recess front","x":54.0,"y":63,"z":-23,"w":13,"h":4,"d":9,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 5 latch recess rear","x":54.0,"y":63,"z":23,"w":13,"h":4,"d":9,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 5 left mounting ear","x":37.0,"y":23,"z":-42,"w":12,"h":8,"d":18,"color":"deepblack"},{"name":"MIDI Rev C active five-way bank MIDI holder 5 right mounting ear","x":71.0,"y":23,"z":42,"w":12,"h":8,"d":18,"color":"deepblack"}],"cylinders":[{"name":"Standoff","x":-68,"y":23,"z":-36,"r":4,"h":16,"color":"brass"},{"name":"Standoff","x":68,"y":23,"z":-36,"r":4,"h":16,"color":"brass"},{"name":"Standoff","x":-68,"y":23,"z":36,"r":4,"h":16,"color":"brass"},{"name":"Standoff","x":68,"y":23,"z":36,"r":4,"h":16,"color":"brass"},{"name":"MIDI Rev C active five-way bank holder 1 feed stud","x":-54.0,"y":66,"z":-30,"r":4,"h":10,"color":"brass"},{"name":"MIDI Rev C active five-way bank holder 1 branch stud","x":-54.0,"y":66,"z":30,"r":4,"h":10,"color":"brass"},{"name":"MIDI Rev C active five-way bank holder 2 feed stud","x":-27.0,"y":66,"z":-30,"r":4,"h":10,"color":"brass"},{"name":"MIDI Rev C active five-way bank holder 2 branch stud","x":-27.0,"y":66,"z":30,"r":4,"h":10,"color":"brass"},{"name":"MIDI Rev C active five-way bank holder 3 feed stud","x":0.0,"y":66,"z":-30,"r":4,"h":10,"color":"brass"},{"name":"MIDI Rev C active five-way bank holder 3 branch stud","x":0.0,"y":66,"z":30,"r":4,"h":10,"color":"brass"},{"name":"MIDI Rev C active five-way bank holder 4 feed stud","x":27.0,"y":66,"z":-30,"r":4,"h":10,"color":"brass"},{"name":"MIDI Rev C active five-way bank holder 4 branch stud","x":27.0,"y":66,"z":30,"r":4,"h":10,"color":"brass"},{"name":"MIDI Rev C active five-way bank holder 5 feed stud","x":54.0,"y":66,"z":-30,"r":4,"h":10,"color":"brass"},{"name":"MIDI Rev C active five-way bank holder 5 branch stud","x":54.0,"y":66,"z":30,"r":4,"h":10,"color":"brass"}]};
     const materialDefs = {
       aluminium: [0xc1cbd3, 0.35, 0.38],
       steel: [0x59636c, 0.45, 0.5],
       wood: [0xb9874f, 0.1, 0.55],
       wedge: [0xd2a263, 0.1, 0.52],
       black: [0x202a33, 0.05, 0.62],
+      deepblack: [0x111820, 0.04, 0.7],
       plastic: [0x2d3942, 0.02, 0.7],
+      relayblock: [0x2b333a, 0.04, 0.58],
       red: [0xb7302a, 0.03, 0.42],
+      cableRed: [0xc51f1f, 0.03, 0.45],
+      fuseblue: [0x2387d7, 0.02, 0.28],
+      fuseyellow: [0xdfba21, 0.02, 0.3],
+      fusered: [0xd43a38, 0.02, 0.3],
       brass: [0xc4a35a, 0.4, 0.36],
+      rubber: [0x161a1d, 0.02, 0.65],
+      silver: [0xd4d8dc, 0.35, 0.32],
+      white: [0xf4f6f8, 0.02, 0.3],
       bendline: [0x2f3942, 0.05, 0.58],
     };
     const materials = Object.fromEntries(Object.entries(materialDefs).map(([key, value]) => [
@@ -84,15 +93,17 @@
     const mount = document.getElementById("viewport");
     const threeScene = new THREE.Scene();
     threeScene.background = new THREE.Color(0xf5f6f7);
-    const camera = new THREE.PerspectiveCamera(38, 1, 1, 2200);
-    camera.position.set(...sceneData.camera);
+    const camera = new THREE.PerspectiveCamera(38, 1, 1, 4200);
+    const baseCameraPosition = new THREE.Vector3(...sceneData.camera);
+    const baseTarget = new THREE.Vector3(...sceneData.target);
+    camera.position.copy(baseCameraPosition);
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, preserveDrawingBuffer: true });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
     renderer.shadowMap.enabled = true;
     mount.appendChild(renderer.domElement);
 
     const controls = new OrbitControls(camera, renderer.domElement);
-    controls.target.set(...sceneData.target);
+    controls.target.copy(baseTarget);
     controls.enableDamping = true;
     controls.minDistance = 260;
     controls.maxDistance = 1200;
@@ -157,7 +168,17 @@
       const height = mount.clientHeight;
       renderer.setSize(width, height, false);
       camera.aspect = width / Math.max(1, height);
+      const aspect = width / Math.max(1, height);
+      const portraitScale = aspect < 0.9 ? Math.min(3.2, 1.35 / Math.max(aspect, 0.38)) : 1;
+      const nextPosition = baseTarget.clone().add(
+        baseCameraPosition.clone().sub(baseTarget).multiplyScalar(portraitScale)
+      );
+      camera.position.copy(nextPosition);
+      controls.target.copy(baseTarget);
+      controls.minDistance = Math.max(220, 260 * portraitScale);
+      controls.maxDistance = Math.max(1200, baseTarget.distanceTo(nextPosition) * 1.35);
       camera.updateProjectionMatrix();
+      controls.update();
     }
     function animate() {
       controls.update();

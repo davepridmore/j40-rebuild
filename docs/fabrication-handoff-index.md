@@ -110,6 +110,17 @@ Order definitions:
 
 Release position: current recommended MIDI holder mount. The external plastic/CNC quote is only for the holder subplate; the aluminium mount plate is owner-made. Use `10-12 mm` spacers between the holder board and mount plate, and add cable support after final routing.
 
+### Electrical Device Models - Rev A
+
+Directory: [data/manual/fabrication/electrical_device_models_rev_a](../data/manual/fabrication/electrical_device_models_rev_a/README.md)
+
+Primary files:
+- `data/manual/fabrication/electrical_device_models_rev_a/electrical_device_models_rev_a_3d_visualisation.html`
+- `data/manual/fabrication/electrical_device_models_rev_a/electrical_device_models_rev_a_3d_visualisation.svg`
+- `data/manual/fabrication/electrical_device_models_rev_a/device_measurement_basis.csv`
+
+Release position: reference visual model only. This separates the relay/fuse box, 100A waterproof breaker/cutoff, active five-position MIDI holder bank, and hidden/security needle switch reference before they are placed into the combined battery-side carrier. Use the existing Rev C packages for cut files; measure the actual 100A breaker body, mounting-hole centres, terminal-stud spacing, and cable-lug sweep before drilling final metal.
+
 ### Relay Mount - Rev C
 
 Directory: [data/manual/fabrication/relay_mount_rev_c](../data/manual/fabrication/relay_mount_rev_c/README.md)
