@@ -6,7 +6,7 @@ All package dimensions are in `mm`. For each package, send the package PDF for h
 
 Dashboard UI: open the `Fabrication` workstream in `docs/project-control-ui/` for clickable package links, status gates, and first-article steps.
 
-Raw material procurement: use [fabrication-raw-materials-procurement-estimate-20260513.md](fabrication-raw-materials-procurement-estimate-20260513.md) and `data/manual/fabrication_raw_material_estimates.csv`. The matching raw-stock rows have been added to the procurement ledger, including separate tub repair sheet/plate stock so battery/radiator fabrication steel is not consumed by body patches.
+Raw material procurement: use [fabrication-raw-materials-procurement-estimate-20260513.md](fabrication-raw-materials-procurement-estimate-20260513.md), [fabrication-metal-stock-list-20260514.md](fabrication-metal-stock-list-20260514.md), and `data/manual/fabrication_raw_material_estimates.csv`. The matching raw-stock rows have been added to the procurement ledger, including the `3.0 mm` and `4.0 mm` pre-formed `90-degree` angle/L-section asks and separate tub repair sheet/plate stock so battery/radiator fabrication steel is not consumed by body patches.
 
 ## Chassis Rubber Boundary
 
@@ -33,16 +33,16 @@ Primary files:
 DXF files:
 - `battery_power_carrier_backplane_rev_a.dxf` - steel backplane for known Relay Rev C, MIDI Rev C, and cutoff bases, qty `1`
 - `battery_stand_top_tray_rev_a.dxf` - steel battery tray/deck with clamp and cable support fields, qty `1`
-- `battery_stand_single_chassis_pickup_rev_a.dxf` - single vehicle-side chassis pickup plate, qty `1`
+- `battery_stand_compact_single_chassis_pickup_rev_b.dxf` - formed chassis saddle over rail, qty `1`
 - `battery_stand_single_mount_upright_rev_a.dxf` - upright bridge side plate, qty `2 mirrored`
 - `battery_stand_hold_down_crossbar_rev_a.dxf` - battery hold-down crossbar, qty `1`
 - `battery_power_carrier_cutoff_guard_rev_a.dxf` - optional cutoff switch guard, qty `1`
 
 Release position:
 - Rev A is a prototype/mock-up release for the new steel chassis-mounted battery stand.
-- The stand must mount from the one known chassis pickup plate and upright bridge, not the battery tray skin, radiator support strap, or unsupported inner wing.
+- The stand must mount from the one known formed chassis saddle and upright bridge, not the battery tray skin, radiator support strap, or unsupported inner wing.
 - It supports a full-height battery and carries the already-fabricated Relay Rev C carrier base (`320 x 220 mm` face), MIDI Rev C mount plate/subplate (`190 x 150 mm` / `140 x 85 mm`), cutoff base/guard (`150 x 95 mm`), and cable support holes on one removable steel assembly.
-- Final metal cutting/drilling still needs the battery-installed cardboard mock-up, the single chassis pickup measurement, cutoff body dimensions, cable lug sweep, bonnet-clearance checks, and steering/radiator/fan clearance checks.
+- Final metal cutting/drilling still needs the battery-installed cardboard mock-up, the formed saddle rail-width/leg-depth/through-bolt measurement, cutoff body dimensions, cable lug sweep, bonnet-clearance checks, and steering/radiator/fan clearance checks.
 
 ## Front Radiator Two-Side Retention - Rev A
 

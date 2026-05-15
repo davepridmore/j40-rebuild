@@ -56,7 +56,7 @@ These photos are for deciding whether to buy/fabricate hard lines and whether th
 | `HLS-16` / `RPI-FUEL-002-C` | Hard-line clips and pass-throughs | Clip spacing, clip style, grommets/edge protection, line OD |
 | `HLS-17` / `RPI-BRAKE-001-A` | Front brake flex hoses | Both hose ends, bracket grooves/clips, caliper/banjo/thread style, free-length reference |
 | `HLS-17` / `RPI-BRAKE-001-B` | Rear center frame-to-axle flex hose | Chassis end, axle/T-union end, bracket retention, free length |
-| `HLS-15` / `RPI-BRAKE-001-C` | Brake hard lines and unions | Flare nuts, union/thread/seat area, line route, clips, tube OD |
+| `HLS-15` / `RPI-BRAKE-001-C` | Brake hard lines and unions | May 14 installed fitting views plus one flare side-view are captured; still photograph one removed flare straight-on, union/thread/seat area, line route, clips, and tube OD before final flaring |
 | `HLS-18/19` / `RPI-CLUTCH-001-A` | Clutch master cylinder outlet and first bend | Port/fitting, flare/seat clue, hard-line OD |
 | `HLS-18/19` / `RPI-CLUTCH-001-B` | Clutch slave/flex/hard-line transition | Slave port, flex hose end, bracket retention, hard-line OD |
 | `RPI-CLUTCH-001-C` | Clutch hydraulic route | Wide route from master to slave with movement clearance and clip positions |

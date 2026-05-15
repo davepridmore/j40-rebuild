@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>J40 Battery Stand Power Carrier Rev B Compact - Assembled 3D Visualisation</title>
+  <title>J40 Battery Stand Power Carrier Rev C Compact Front-Cassette - Assembled 3D Visualisation</title>
   <link rel="icon" href="data:,">
   <style>
     :root { color-scheme: light; font-family: Arial, Helvetica, sans-serif; background: #f5f6f7; color: #1d252c; }
@@ -41,13 +41,15 @@
     }
   </script>
   <header>
-    <h1>Assembled Battery Stand Power Carrier Rev B Compact Layout</h1>
+    <h1>Assembled Battery Stand Power Carrier Rev C Compact Front-Cassette Layout</h1>
     <div class="meta">
       <span class="chip">Attached assembly</span>
-      <span class="chip">Single chassis pickup</span>
+      <span class="chip">Formed chassis saddle</span>
       <span class="chip">Compact battery tray</span>
-      <span class="chip">Folded relay tray</span>
-      <span class="chip">Separate MIDI/cutoff tabs</span>
+      <span class="chip">Front/radiator service cassette</span>
+      <span class="chip">Low relay tray</span>
+      <span class="chip">Top-front MIDI/cutoff</span>
+      <span class="chip">Engine-side keep-clear</span>
       <span class="chip">Cavity-map hold</span>
     </div>
   </header>
@@ -60,9 +62,9 @@
     <aside>
       <h2>Assembly Read</h2>
       <dl>
-        <div><dt>Load path</dt><dd>One chassis pickup mount and upright bridge carry the compact steel battery tray and service rail/tab pickups.</dd></div>
-        <div><dt>Integrated equipment</dt><dd>The full-height battery, folded Relay Rev C tray, MIDI Rev C open plate, and cutoff tab are shown attached as a compact split layout.</dd></div>
-        <div><dt>Release hold</dt><dd>Final hole centres, compact holder positions, and cable paths still need battery-installed LHD mock-up photos before cutting final metal.</dd></div>
+        <div><dt>Load path</dt><dd>One formed saddle over the chassis rail and an upright bridge carry the compact steel battery tray and front-cassette shelf/tab pickups.</dd></div>
+        <div><dt>Integrated equipment</dt><dd>The full-height battery, folded Relay Rev C tray, MIDI Rev C open plate, and folded cutoff base/guard are shown attached as a compact front-cassette layout.</dd></div>
+        <div><dt>Release hold</dt><dd>Final hole centres, holder positions, and cable paths still need battery-installed LHD mock-up photos before cutting final metal, with the inboard engine side treated as a service/clearance envelope.</dd></div>
       </dl>
     </aside>
   </main>
@@ -73,18 +75,18 @@
     const mount = document.getElementById("viewport");
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0xf5f6f7);
-    const camera = new THREE.PerspectiveCamera(38, 1, 1, 2400);
-    camera.position.set(470, 500, 640);
+    const camera = new THREE.PerspectiveCamera(34, 1, 1, 2800);
+    camera.position.set(700, 620, 920);
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, preserveDrawingBuffer: true });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFSoftShadowMap;
     mount.appendChild(renderer.domElement);
     const controls = new OrbitControls(camera, renderer.domElement);
-    controls.target.set(20, 125, 70);
+    controls.target.set(-25, 145, 20);
     controls.enableDamping = true;
-    controls.minDistance = 420;
-    controls.maxDistance = 1100;
+    controls.minDistance = 600;
+    controls.maxDistance = 1500;
     controls.maxPolarAngle = Math.PI * 0.5;
     const root = new THREE.Group();
     scene.add(root);
@@ -102,6 +104,8 @@
       black: new THREE.MeshStandardMaterial({ color: 0x111820, roughness: 0.55 }),
       cableRed: new THREE.MeshStandardMaterial({ color: 0xc41d1d, roughness: 0.45 }),
       cableBlack: new THREE.MeshStandardMaterial({ color: 0x20262b, roughness: 0.5 }),
+      keepout: new THREE.MeshStandardMaterial({ color: 0xb8c2ca, roughness: 0.75, transparent: true, opacity: 0.18 }),
+      bendLine: new THREE.MeshStandardMaterial({ color: 0x2f3942, roughness: 0.55 }),
     };
     function box(name, x, y, z, w, h, d, material) {
       const mesh = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), material);
@@ -131,15 +135,16 @@
       return mesh;
     }
     function singleChassisPickup() {
-      box("Assembled compact single chassis pickup base plate 220 x 140", 0, -54, 70, 220, 18, 140, materials.steel);
+      box("Assembled visible chassis rail under saddle", 0, -96, 70, 260, 72, 108, materials.chassis);
+      box("Assembled formed chassis saddle top cap", 0, -52, 70, 220, 8, 150, materials.steel);
+      box("Assembled formed chassis saddle near leg", 0, -96, -8, 220, 76, 8, materials.steel);
+      box("Assembled formed chassis saddle far leg", 0, -96, 148, 220, 76, 8, materials.steel);
       box("Assembled compact single chassis upright pedestal", 0, 12, 70, 86, 118, 100, materials.steel);
-      box("Assembled compact tray saddle from single chassis pickup", 0, 58, 70, 200, 22, 170, materials.steel);
+      box("Assembled compact tray saddle from formed chassis pickup", 0, 58, 70, 200, 22, 170, materials.steel);
       box("Assembled left compact upright side plate 110 x 220", -72, 18, -8, 18, 140, 110, materials.steel);
       box("Assembled right compact upright side plate 110 x 220", -72, 18, 148, 18, 140, 110, materials.steel);
-      for (const z of [10, 130]) {
-        cyl("Single chassis pickup bolt", -86, -54, z, 5, 24, materials.brass, Math.PI / 2);
-        cyl("Single chassis pickup bolt", 86, -54, z, 5, 24, materials.brass, Math.PI / 2);
-      }
+      cyl("Assembled forward saddle through-bolt", -72, -96, 70, 5, 172, materials.brass, Math.PI / 2);
+      cyl("Assembled rear saddle through-bolt", 72, -96, 70, 5, 172, materials.brass, Math.PI / 2);
     }
     function knownRelayCarrierBase(x, y, z) {
       box("Folded Relay Rev C carrier tray face 320 x 220", x, y, z, 320, 220, 8, materials.plateEdge);
@@ -147,6 +152,10 @@
       box("Folded Relay Rev C right return 20 mm", x + 164, y, z - 12, 8, 220, 28, materials.plateEdge);
       box("Folded Relay Rev C lower return 20 mm", x, y - 112, z - 12, 320, 8, 28, materials.plateEdge);
       box("Folded Relay Rev C upper return 15 mm", x, y + 112, z - 10, 320, 8, 22, materials.plateEdge);
+      box("Folded Relay Rev C left bend crease", x - 160, y, z + 5, 3, 220, 4, materials.bendLine);
+      box("Folded Relay Rev C right bend crease", x + 160, y, z + 5, 3, 220, 4, materials.bendLine);
+      box("Folded Relay Rev C lower bend crease", x, y - 110, z + 5, 320, 3, 4, materials.bendLine);
+      box("Folded Relay Rev C upper bend crease", x, y + 110, z + 5, 320, 3, 4, materials.bendLine);
       box("Relay/fuse assembly on fabricated base", x, y, z - 28, 285, 155, 48, materials.relay);
       box("Relay carrier lower loom relief", x, y - 82, z - 58, 120, 24, 18, materials.black);
       for (const sx of [-135, 0, 135]) {
@@ -164,14 +173,49 @@
         cyl("MIDI holder stud", fx, y + 24, z - 46, 4, 8, materials.brass, 0);
       }
     }
+    function knownMidiTopShelf(x, y, z) {
+      box("Top-front MIDI Rev C mount plate 190 x 150", x, y, z, 190, 8, 150, materials.plateEdge);
+      box("Top-front MIDI insulated subplate 140 x 85", x, y + 14, z, 140, 12, 85, materials.midiBoard);
+      for (let idx = 0; idx < 5; idx += 1) {
+        const fx = x - 54 + idx * 27;
+        box("Top-front MIDI holder on known base", fx, y + 34, z, 20, 24, 62, materials.fuseRed);
+        cyl("Top-front MIDI holder stud", fx, y + 50, z - 24, 4, 8, materials.brass, 0);
+        cyl("Top-front MIDI holder stud", fx, y + 50, z + 24, 4, 8, materials.brass, 0);
+      }
+    }
     function cutoffSwitch(name, x, y, z) {
-      box(`${name} compact cutoff tab/guard 170 x 110`, x, y, z, 170, 110, 8, materials.brass);
+      box(`${name} folded aluminium cutoff base face 170 x 110`, x, y, z, 170, 110, 8, materials.plateEdge);
+      box(`${name} cutoff base left 20 mm guard lip`, x - 89, y, z - 12, 8, 110, 28, materials.plateEdge);
+      box(`${name} cutoff base right 20 mm guard lip`, x + 89, y, z - 12, 8, 110, 28, materials.plateEdge);
+      box(`${name} cutoff base lower 20 mm guard lip`, x, y - 59, z - 12, 170, 8, 28, materials.plateEdge);
+      box(`${name} cutoff base upper 20 mm guard lip`, x, y + 59, z - 12, 170, 8, 28, materials.plateEdge);
+      box(`${name} cutoff base left bend crease`, x - 85, y, z + 5, 3, 110, 4, materials.bendLine);
+      box(`${name} cutoff base right bend crease`, x + 85, y, z + 5, 3, 110, 4, materials.bendLine);
+      box(`${name} cutoff base lower bend crease`, x, y - 55, z + 5, 170, 3, 4, materials.bendLine);
+      box(`${name} cutoff base upper bend crease`, x, y + 55, z + 5, 170, 3, 4, materials.bendLine);
       cyl(`${name} black switch body`, x, y, z - 28, 34, 32, materials.black, Math.PI / 2);
       cyl(`${name} red rotary knob`, x, y, z - 64, 24, 18, materials.cutoff, Math.PI / 2);
       cyl(`${name} input terminal stud`, x - 38, y - 32, z - 44, 4, 22, materials.brass, 0);
       cyl(`${name} output terminal stud`, x + 38, y + 32, z - 44, 4, 22, materials.brass, 0);
       box(`${name} input lug`, x - 38, y - 42, z - 52, 18, 26, 6, materials.brass);
       box(`${name} output lug`, x + 38, y + 42, z - 52, 18, 26, 6, materials.brass);
+    }
+    function cutoffSwitchTop(name, x, y, z) {
+      box(`${name} folded aluminium cutoff base face 170 x 110`, x, y, z, 170, 8, 110, materials.plateEdge);
+      box(`${name} cutoff base left 20 mm upstand guard lip`, x - 89, y + 16, z, 8, 24, 110, materials.plateEdge);
+      box(`${name} cutoff base right 20 mm upstand guard lip`, x + 89, y + 16, z, 8, 24, 110, materials.plateEdge);
+      box(`${name} cutoff base front 20 mm upstand guard lip`, x, y + 16, z - 59, 170, 24, 8, materials.plateEdge);
+      box(`${name} cutoff base rear 20 mm upstand guard lip`, x, y + 16, z + 59, 170, 24, 8, materials.plateEdge);
+      box(`${name} cutoff base left bend crease`, x - 85, y + 5, z, 3, 4, 110, materials.bendLine);
+      box(`${name} cutoff base right bend crease`, x + 85, y + 5, z, 3, 4, 110, materials.bendLine);
+      box(`${name} cutoff base front bend crease`, x, y + 5, z - 55, 170, 4, 3, materials.bendLine);
+      box(`${name} cutoff base rear bend crease`, x, y + 5, z + 55, 170, 4, 3, materials.bendLine);
+      cyl(`${name} black switch body`, x, y + 24, z, 34, 32, materials.black, 0);
+      cyl(`${name} red rotary knob`, x, y + 56, z, 24, 18, materials.cutoff, 0);
+      cyl(`${name} input terminal stud`, x - 38, y + 38, z - 32, 4, 22, materials.brass, 0);
+      cyl(`${name} output terminal stud`, x + 38, y + 38, z + 32, 4, 22, materials.brass, 0);
+      box(`${name} input lug`, x - 38, y + 44, z - 42, 18, 6, 26, materials.brass);
+      box(`${name} output lug`, x + 38, y + 44, z + 42, 18, 6, 26, materials.brass);
     }
 
     singleChassisPickup();
@@ -185,14 +229,15 @@
       cyl("Front hold-down rod to tray", x, 172, -88, 4, 196, materials.brass, 0);
       cyl("Rear hold-down rod to tray", x, 172, 152, 4, 196, materials.brass, 0);
     }
-    box("Compact front service rail 340 x 90", -100, 160, -108, 340, 90, 8, materials.plate);
-    knownRelayCarrierBase(-100, 210, -116);
-    knownMidiBase(150, 122, 172);
-    cutoffSwitch("Master cutoff switch", 150, 260, -116);
-    cable("Battery positive to cutoff", [[-24, 278, -34], [90, 292, -60], [150, 260, -80]], 7, materials.cableRed);
-    cable("Cutoff to MIDI common", [[150, 260, -80], [150, 178, 70], [150, 122, 142]], 6, materials.cableRed);
-    cable("Relay feed", [[150, 122, 142], [40, 180, 20], [-100, 210, -88]], 5, materials.cableRed);
-    cable("Fused branch exit", [[150, 122, 138], [230, 102, 162], [270, 90, 172]], 5, materials.cableBlack);
+    box("Compact front/radiator service cassette spine 325 x 120", -105, 124, 168, 325, 120, 8, materials.plate);
+    knownRelayCarrierBase(-105, 154, 176);
+    knownMidiTopShelf(-140, 282, 190);
+    cutoffSwitchTop("Master cutoff switch", 70, 282, 212);
+    box("Inboard engine/LHD steering-side keep-clear envelope", 142, 150, 70, 16, 260, 270, materials.keepout);
+    cable("Battery positive to top-front cutoff", [[-24, 278, -34], [20, 306, 120], [32, 326, 180]], 7, materials.cableRed);
+    cable("Cutoff to top-front MIDI common", [[108, 326, 244], [20, 322, 220], [-70, 318, 190]], 6, materials.cableRed);
+    cable("Relay feed down front cassette", [[-70, 318, 190], [-102, 245, 180], [-105, 172, 148]], 5, materials.cableRed);
+    cable("Fused branch exit along front rail", [[-70, 318, 190], [80, 300, 220], [170, 220, 226]], 5, materials.cableBlack);
 
     scene.add(new THREE.HemisphereLight(0xffffff, 0x98a1aa, 2.2));
     const key = new THREE.DirectionalLight(0xffffff, 2.4);

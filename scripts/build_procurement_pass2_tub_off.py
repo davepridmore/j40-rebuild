@@ -54,6 +54,8 @@ def get_wiring_stock_signal() -> tuple[int, int]:
 
 def sourcing_mode(item: str, workstream: str) -> str:
     item_lower = item.lower()
+    if re.search(r"glove|nitrile|\bppe\b", item_lower):
+        return "local_hardware_common"
     if re.search(r"masking|solvent-safe|lint-free|wipes?|tape", item_lower) or re.search(
         r"(thread|hole|tapered|rubber|silicone|plastic).{0,20}plugs?|plugs?.{0,20}(thread|hole|tapered|rubber|silicone|plastic)",
         item_lower,
@@ -100,6 +102,14 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
             "not_required",
             "not_required",
             "Entry is cancelled or not required in the active baseline.",
+        )
+
+    if status in {"installed", "received", "credited"} or procurement_stage in {"completed", "received"}:
+        return (
+            "completed_or_received",
+            "received_or_completed",
+            "completed_or_received",
+            "Entry is already received or completed; do not rebuy.",
         )
 
     if prior in {"defer_duplicate_overlap", "defer_optional"} or overlap_status == "deferred":
@@ -242,7 +252,7 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
             "buy_remaining_brake_bleed_consumables",
             "pre_brake_hydraulic_opening",
             "safety_consumables_buy",
-            "DOT 3 brake fluid is already ordered separately; hydraulics must not be opened until that sealed fluid and the remaining caps/plugs, cleaner, and bleed tools are available.",
+            "DOT 3 brake fluid, clear bleed hose, and nitrile gloves are already received; hydraulics must not be opened until the remaining caps/plugs, cleaner, rags, catch bottle or bleeder kit, and catch tray are available.",
         )
 
     if entry_id == "part_chassis_masking_plugs_tape_solvent_wipes":
@@ -347,6 +357,8 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
 
 
 def supplier_hint(mode: str, decision: str) -> str:
+    if decision == "completed_or_received":
+        return "No supplier action now; verify receipt condition and quantity/spec before use."
     if decision in {
         "defer_as_non_baseline",
         "defer_until_baseline_closure",
@@ -362,7 +374,7 @@ def supplier_hint(mode: str, decision: str) -> str:
     if decision == "buy_compact_cabin_fuse_boxes":
         return "Use local electrical markets; require compact covered ATO/ATC blade-fuse boxes with secure lids."
     if decision in {"buy_bleed_consumables_before_opening_hydraulics", "buy_remaining_brake_bleed_consumables"}:
-        return "Use a local brake supplier, Daraz/Autohub, or the workshop for caps/plugs, brake cleaner, bleed hose/bottle or bleeder kit, rags, gloves, and catch tray; do not rebuy DOT 3 fluid unless the Autohub order fails."
+        return "Use a local brake supplier, Daraz/Autohub, or the workshop for caps/plugs, brake cleaner, catch bottle or bleeder kit, rags, and catch tray; do not rebuy DOT 3 fluid, clear bleed hose, or nitrile gloves."
     if decision == "buy_chassis_masking_consumables":
         return "Use a local paint/bodywork supplier, hardware shop, or Daraz for automotive masking tape, assorted tapered plugs/caps, and solvent-safe lint-free wipes."
     if decision in {"hose_rubber_release_hold", "longman_hose_pipe_order_ready"}:
@@ -408,6 +420,8 @@ def basket_id_for_row(decision: str, mode: str, workstream: str) -> str:
         return "basket_engine_mounts_later_if_failed"
     if decision == "track_in_flight_order":
         return "basket_in_flight_tracking"
+    if decision == "completed_or_received":
+        return "basket_completed_receipts"
     if decision == "buy_before_suspension_work":
         return "basket_suspension_setup"
     if decision == "source_toyota_oe_glow_plugs_by_part_number":
@@ -477,13 +491,14 @@ def build_baskets(rows: list[dict[str, str]]) -> list[dict[str, str]]:
         "basket_engine_mounts_later_if_failed": ("Engine Mounts Later If Failed", "No engine lift in baseline; inspect in place before any purchase."),
         "basket_suspension_setup": ("Suspension Setup Support", "Buy support/cribbing items before suspension disassembly."),
         "basket_merged_brake_suspension_window": ("Merged Brake/Suspension Window", "Capture fitted hardware and old samples, then order exact brake parts for the Ironman install window."),
-        "basket_brake_hydraulic_opening_prep": ("Brake Hydraulic Opening Prep", "Buy the remaining caps/plugs, brake cleaner, bleed hose/bottle or bleeder kit, rags, gloves, and catch tray before opening hydraulic lines; DOT 3 fluid is already ordered separately."),
+        "basket_brake_hydraulic_opening_prep": ("Brake Hydraulic Opening Prep", "Buy the remaining caps/plugs, brake cleaner, catch bottle or bleeder kit, rags, and catch tray before opening hydraulic lines; DOT 3 fluid, clear bleed hose, and nitrile gloves are already received."),
         "basket_chassis_coating_consumables": ("Chassis Coating Consumables", "Ultra-cloth solvent-safe wipes and masking tape are received; only buy separate tapered plugs if the on-hand grommet pack fails fit/solvent checks."),
         "basket_longman_hose_pipe_order_ready": ("Longman Hose/Pipe Order Ready", "Fuel, coolant, heater, vacuum, and breather stock rows have explicit Longman quote/order lengths; final trim, clamp, chafe, and leak checks remain install tasks."),
         "basket_clutch_hydraulic_inspection": ("Clutch Hydraulic Inspection", "Inspect master/slave/line condition first, then order exact hydraulic refresh parts only if failed."),
         "basket_body_fastener_hardware": ("Body Fastener Hardware", "Buy exact body fastener/captive hardware from old samples; track Millat-covered stock separately."),
         "basket_specialty_after_audit": ("Specialty/Import After Audit", "Order only if local/on-hand cannot cover."),
         "basket_in_flight_tracking": ("In-Flight Orders", "No rebuy; only track delivery/quality."),
+        "basket_completed_receipts": ("Completed Receipts", "No supplier action now; retain receipt/condition checks before use."),
         "basket_deferred": ("Deferred Scope", "Not baseline now."),
         "basket_review": ("Review", "Manual review required."),
     }

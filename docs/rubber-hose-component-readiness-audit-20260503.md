@@ -49,7 +49,7 @@ All visible/current rubber families are now mapped:
 - Engine intake: `RUB-027`.
 - Body/front support rubber recreation: `CR-MAIN-001` through `CR-FRONT-003`, `RUB-001`, `RUB-002`.
 - Grommets/weatherstrip/body sealing: `RUB-003`, `RUB-004`, `RUB-017` through `RUB-021`.
-- HVAC/A/C rubber: `RUB-024`, `RUB-025`.
+- HVAC/A/C rubber: `RUB-024`, `RUB-025` are now required for the hidden HVAC refit, with final hose/duct dimensions held until evaporator, condenser, receiver-drier, bulkhead, dash, and vent positions are locked.
 - Suspension/exhaust/interior rubber: `RUB-007`, `RUB-022`, `RUB-023`, `RUB-026`.
 
 ## Next Measurement Pass

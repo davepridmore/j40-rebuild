@@ -1,7 +1,7 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-05-12 21:58:17
-- Total media files indexed: 656 (645 photos, 11 videos)
+- Generated: 2026-05-14 11:19:42
+- Total media files indexed: 669 (658 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
 
@@ -16,6 +16,7 @@
 | Stage | File Count |
 | --- | ---: |
 | `baseline_walkaround` | 34 |
+| `brake_system` | 13 |
 | `chassis_fixing` | 50 |
 | `electrical_rework` | 18 |
 | `eps_vitz_upgrade` | 1 |
@@ -50,15 +51,16 @@
 | `body_floor` | `floor_seam_and_body_mount_rust` | 1 | 2026-04-05 | `20260405_234652.jpg` |
 | `body_floor` | `rear_cargo_floor` | 2 | 2026-03-23 to 2026-04-13 | `20260323_202016.jpg` |
 | `chassis_underside` | `body_mount_and_crossmember_detail` | 1 | 2026-04-05 | `20260405_234546.jpg` |
+| `chassis_underside` | `brake_hard_line_flare_sample` | 1 | 2026-05-14 | `20260514_111300_user_brake_flare_side_view.png` |
 | `chassis_underside` | `engine_bay_chassis_interface` | 6 | 2026-04-22 | `20260422_004347_gp_WIy0j6zw.jpg` |
 | `chassis_underside` | `frame_and_mount_points` | 9 | 2026-04-05 to 2026-04-23 | `20260405_234542_gp_hucEa1CQ.jpg` |
-| `chassis_underside` | `frame_floor_underside_and_lines` | 40 | 2026-03-31 | `20260331_030439_gp_Hm0ga9nQ.jpg` |
+| `chassis_underside` | `frame_floor_underside_and_lines` | 43 | 2026-03-31 to 2026-05-14 | `20260331_030439_gp_Hm0ga9nQ.jpg` |
 | `chassis_underside` | `frame_rail_body_mount_and_crossmember_detail` | 12 | 2026-05-01 | `20260501_193533_gp_sDErdvGw.jpg` |
 | `chassis_underside` | `frame_rail_body_mount_and_hard_line_detail` | 6 | 2026-04-22 | `20260422_004306_gp_vGlNr2UA.jpg` |
 | `chassis_underside` | `front_frame_horns_bumper_and_radiator_support` | 7 | 2026-04-22 to 2026-05-12 | `20260422_004423_gp_B1N5ThVw.jpg` |
 | `chassis_underside` | `front_frame_horns_bumper_and_steering_area` | 14 | 2026-05-01 to 2026-05-12 | `20260501_193841_gp_ZwpHFiMA.jpg` |
 | `chassis_underside` | `full_chassis_frame_overview` | 2 | 2026-04-22 | `20260422_004241_gp_hASLbowg.jpg` |
-| `chassis_underside` | `rear_axle_and_leaf_springs` | 15 | 2026-03-24 to 2026-05-12 | `20260324_004815_gp_Q9G5DYGw.jpg` |
+| `chassis_underside` | `rear_axle_and_leaf_springs` | 24 | 2026-03-24 to 2026-05-14 | `20260324_004815_gp_Q9G5DYGw.jpg` |
 | `chassis_underside` | `rear_axle_spring_hanger_and_crossmember` | 7 | 2026-04-22 to 2026-05-12 | `20260422_004254_gp_SplHLSYA.jpg` |
 | `chassis_underside` | `rear_frame_crossmember_and_mounts` | 1 | 2026-04-05 | `20260405_234541.jpg` |
 | `chassis_underside` | `rear_mid_frame_rail_and_hard_line_detail` | 9 | 2026-05-01 | `20260501_194026_gp_gjPjhxdA.jpg` |

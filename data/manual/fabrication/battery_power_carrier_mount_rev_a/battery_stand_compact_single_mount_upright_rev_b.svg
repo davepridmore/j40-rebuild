@@ -20,5 +20,5 @@
   <circle class="cut" cx="82" cy="128" r="4" />
   
   </g>
-  <text x="25" y="290" class="note">Compact single-mount upright bridge side plate: 110 x 220 x 4.0 mm mild steel between the one chassis pickup and compact tray.</text><text x="25" y="302" class="note">Make two mirrored side plates around the single pickup bridge if the mock-up needs side-to-side stiffness. This is not a second chassis fixing location.</text><text x="25" y="314" class="note">Lower holes align to the single chassis pickup mount; upper holes align to the compact tray/front rail saddle.</text>
+  <text x="25" y="290" class="note">Compact single-mount upright bridge side plate: 110 x 220 x 4.0 mm mild steel between the one chassis pickup and compact tray.</text><text x="25" y="302" class="note">Make two mirrored side plates around the single pickup bridge if the mock-up needs side-to-side stiffness. This is not a second chassis fixing location.</text><text x="25" y="314" class="note">Lower holes align to the formed chassis saddle top cap; upper holes align to the compact tray/front rail saddle.</text>
 </svg>

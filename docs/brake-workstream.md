@@ -6,6 +6,7 @@
 - Current working read: `front disc / rear drum`.
 - Current default direction: replace normal front and rear brake service parts as baseline work, keep the existing `front disc / rear drum` architecture, and treat rear-disc conversion as optional only if inspection or real use shows a clear measured need.
 - Merged execution sheet: [suspension-brake-merged-work-plan.md](suspension-brake-merged-work-plan.md).
+- Current hard-line tooling and parts selection: [brake-hard-line-tool-parts-selection-20260514.md](brake-hard-line-tool-parts-selection-20260514.md).
 
 ## Current Configuration Read
 
@@ -27,7 +28,8 @@
 - The rear parking-brake cable route and rear axle hard-line route should be renewed in the same workshop window as the rear suspension work, because the axle, U-bolts, spring pads, clips, and routes are exposed then.
 - Keep rear drums as the default path; rear-disc conversion stays out of baseline scope unless inspection or road validation gives a measured reason.
 - Brake flex hoses must be complete crimped hydraulic assemblies rated to `DOT/SAE J1401` or OEM-equivalent. Do not fabricate flex hoses from generic rubber hose.
-- Brake hard-line stock order is `3/16 in / 4.75 mm` brake tube. Flare type, fitting seat, union thread, and route length must be confirmed from the fitted truck before final fabrication.
+- Brake hard-line stock order is `3/16 in / 4.75 mm` brake tube. May 14 installed-fitting photos plus the user flare side-view point to Toyota-style `double / inverted` flares, not ISO bubble flares, but final fabrication still requires a removed old line or opened seat to confirm the straight-on sealing face, fitting thread, and seat at each connection.
+- The ordered PARD flaring kit is accepted only after receipt check proves a true `4.75 mm / 3/16 in` double/inverted flare die. If it is only a generic `4-16 mm` set without `4.75 mm / 3/16 in`, it does not release brake-line fabrication.
 
 ## Brake Configuration Evidence Photos
 
@@ -61,6 +63,28 @@ These photos already back the existing `chassis_hard_lines_and_brackets` and `is
 - [20260331_224423.jpg](../photos/20260331_224423.jpg)
 - [20260331_224424_gp_whE84rpw.jpg](../photos/20260331_224424_gp_whE84rpw.jpg)
 - [20260331_224428.jpg](../photos/20260331_224428.jpg)
+
+### May 14 Brake Pipe / Fitting Close-Ups
+
+The May 14 import is now assigned to the braking workstream and to `RPI-BRAKE-001-B/C` in [replacement_pipe_photo_intake.csv](../data/manual/replacement_pipe_photo_intake.csv). The photos improve the fitting/route evidence. The added user flare side-view is stronger than the installed fitting photos because it shows the raised folded flare lip, but it still does not fully release fabrication because the straight-on sealing face and the matching port seat/thread are not confirmed.
+
+| File | Use |
+| --- | --- |
+| [20260514_095907_gp_Ni1EUf4A.jpg](../photos/20260514_095907_gp_Ni1EUf4A.jpg) | Master/proportioning-area hard-line and flare-nut context. |
+| [20260514_095926_gp_YBNOqh9A.jpg](../photos/20260514_095926_gp_YBNOqh9A.jpg) | Master reservoir/port and installed line fitting context. |
+| [20260514_100647_gp_foDr3ymA.jpg](../photos/20260514_100647_gp_foDr3ymA.jpg) | Best close-up of an installed hard-line flare nut into a hydraulic fitting. |
+| [20260514_111300_user_brake_flare_side_view.png](../photos/20260514_111300_user_brake_flare_side_view.png) | User-provided side view of an actual brake hard-line flare; raised folded lip supports the `double / inverted` read. |
+| [20260514_095856_gp_vjZG4NtQ.jpg](../photos/20260514_095856_gp_vjZG4NtQ.jpg) | Rear axle brake line / flex-hose fitting and route context. |
+| [20260514_095846_gp_a9olRp5g.jpg](../photos/20260514_095846_gp_a9olRp5g.jpg) | Rear axle hard-line route and hose/bracket context. |
+| [20260514_095836_gp_tmRy9fqg.jpg](../photos/20260514_095836_gp_tmRy9fqg.jpg) | Rear hard-line and parking-brake linkage context at the axle. |
+| [20260514_095826_gp_fg74oFMQ.jpg](../photos/20260514_095826_gp_fg74oFMQ.jpg) | Rear drum/backing-plate with wheel-cylinder hard-line entry. |
+| [20260514_095820_gp_nuP5s76A.jpg](../photos/20260514_095820_gp_nuP5s76A.jpg) | Rear hard-line route, clip/support context, and parking-brake linkage. |
+| [20260514_095812_gp_5kblggGA.jpg](../photos/20260514_095812_gp_5kblggGA.jpg) | Rear wheel-cylinder hard-line entry close-up. |
+| [20260514_095953_gp_BXoQkXnw.jpg](../photos/20260514_095953_gp_BXoQkXnw.jpg) | Rear parking-brake cable and backing-plate context. |
+| [20260514_100003_gp_Vr2QI7ig.jpg](../photos/20260514_100003_gp_Vr2QI7ig.jpg) | Rear parking-brake cable/bracket route context. |
+| [20260514_100008_gp_bq1VQUXQ.jpg](../photos/20260514_100008_gp_bq1VQUXQ.jpg) | Rear drum/wheel-cylinder hard-line and parking-brake close-up. |
+
+Working flare read: treat the brake hard lines as `double / inverted flare` on `4.75 mm / 3/16 in` brake tube. The side-view flare photo makes this a stronger working call, but final fabrication still needs a straight-on view of a removed flare and the matching seat/thread at the hose, wheel cylinder, master/proportioning, and union ports. Do not order or fabricate ISO bubble, single flare, or plumbing flare ends for these brake lines unless a removed original line proves that standard at a specific port.
 
 ## Rear Axle Cable / Line Replacement Track
 
@@ -114,11 +138,18 @@ Do not discard old parking-brake cables, hard lines, flex hoses, or representati
 | P0 | Front disc pad and retaining hardware set after the fitted caliper/pad family is identified. |
 | P0 | Front flex hoses after caliper-end, chassis-bracket, free length, and lock-to-lock clearance are confirmed. |
 | P0 | Front caliper rebuild kits or replacement calipers if inspection finds leaks, seizure, torn boots, damaged pistons, or unknown unsafe condition. |
+| P0 | Full brake/clutch hard-line stock: buy `4.75 mm / 3/16 in` brake/clutch-rated tube, `10000 mm` minimum if combining brake and clutch, `12000 mm` preferred for scrap flares and route correction. Existing controlled basis is `7600 mm / 25 ft` brake line plus `1500 mm` clutch blank. |
+| P0 | New brake/clutch flare nuts and fittings after old fittings identify flare type, threads, and seats at master/proportioning, front hose brackets, rear hose/T-union, wheel cylinders, and clutch master/slave or clutch hose ends. Brake-line working basis after the May 14 installed-fitting and flare side-view photos is Toyota-style `double / inverted` flare; final release still comes from a straight-on removed sample and opened seat. |
+| P0 | Rear axle brake T-union/splitter and any disturbed inline unions/splitters if corroded, seized, damaged, or mismatched; match thread, flare seat, port orientation, and mounting style from old samples. |
 | P0 | New rear parking-brake cable set: left/right rear cables, equalizer/clevis hardware, return springs, clips, and adjuster parts matched to the backing plates. |
 | P0 | Rear axle hard brake lines recreated in 3/16 in / 4.75 mm brake tube, with the correct flare and fitting threads. |
 | P0 | Rear center flexible brake hose with correct chassis-side and axle-side fittings, retaining clip, and old-sample/free length. |
 | P0 | Rear wheel cylinders as a pair once bore/port/mounting pattern is confirmed. |
 | P0 | Full brake flex hose set: front left, front right, and rear center after front caliper fitting style, rear center fittings, bracket retention, and free length are captured. |
+| P0 | Brake flex-hose retaining U-clips and bracket hardware for front left, front right, and rear center hose brackets. |
+| P0 | Full line-support pack: rubber-lined P-clips for `4.75 mm` hard line, clamp-on rubber-lined axle supports, pass-through grommets/edge trim, M5/M6 fasteners, and larger cable saddles where parking-brake cables rub. |
+| P0 | Clutch hydraulic flex hose assembly, clutch hard-line fittings, and clutch hard-line route release using the shared `4.75 mm / 3/16 in` hydraulic tube stock. |
+| P0 | Clutch master/slave cylinders or rebuild kits if inspection finds leakage, pitting, seizure, bypassing, missing boots, or unknown unsafe condition. |
 | P1 | Rear shoes, hold-down springs, return springs, adjuster hardware, and retaining clips after drum family and shoe dimensions are confirmed. |
 | P1 | Brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips where originals are missing or corroded. |
 | P1 | Front rotors: machine or replace after measured rotor thickness, scoring, runout, and service limit check. |
@@ -176,8 +207,8 @@ Use this as the workshop handoff. The output should be photos plus measurements 
 
 - `part_copper_grease`: already received
 - `part_mech_brake_flex_hose_set`: purchase-ready and should stay in the baseline safety bucket
-- `part_dot3_brake_fluid_autohub_6x354ml`: ordered from Autohub as 6 x 354 ml sealed DOT 3 brake fluid, 2124 ml total, order `62228`; track delivery and reject opened/damaged bottles.
-- `part_brake_fluid_bleed_consumables`: still purchase-ready for the remaining non-fitment hydraulic-opening consumables: line caps/plugs, clear bleed hose/bottle or bleeder kit, brake cleaner, rags, gloves, and catch tray. Do not use DOT 5 or mix unknown old fluid.
+- `part_dot3_brake_fluid_autohub_6x354ml`: received from Autohub as 6 x 354 ml sealed DOT 3 brake fluid, 2124 ml total, order `62228`; reject opened/damaged bottles before use.
+- `part_brake_fluid_bleed_consumables`: still purchase-ready for the remaining non-fitment hydraulic-opening consumables: line caps/plugs, catch bottle or bleeder kit, brake cleaner, rags, and catch tray. Clear bleed hose and nitrile gloves are received. Do not use DOT 5 or mix unknown old fluid.
 - Existing estimate rows in `data/manual/workbook_tabs/parts.csv`:
   - `Brake master cylinder`: PKR `8,000-30,000`
   - `Wheel cylinders / caliper rebuild parts`: PKR `8,000-40,000`

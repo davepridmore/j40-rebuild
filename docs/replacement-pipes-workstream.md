@@ -34,7 +34,7 @@ Keep tool purchases outside the hose order. Rubber hose is cut to length, molded
 | `RPO-VAC-001B` | Oil-resistant breather/oil-mist hose. | `16-19 mm ID x 1000 mm` | Trim to route during install; confirm breather spigot fit, route length, oil exposure, heat/chafe exposure, and no oil swelling. | `VAC-A` |
 | `RPO-VAC-001C` | New 2H vacuum pump oil outlet hose if fitted. Toyota/OEM `90923-02079` is a reference only. | `1` new hose if fitted | Confirm fitted presence, overall free length in `mm`, end IDs, bend shape, both fitting ODs. | `VAC-A` |
 | `RPO-BRAKE-001A` | New complete brake flex hose assemblies matched to current front-disc/rear-drum hardware. DOT/SAE J1401 or OEM-equivalent rating. | `3` new complete assemblies: front left, front right, rear center | Copy each old assembly free length in `mm`, end thread/banjo/seat, bracket retention, and clip groove. Bleed and pressure-test after install. | `BRAKE-A` |
-| `RPO-BRAKE-001B` | New brake hard-line tube and brake-rated fittings. Use bundy steel or CuNi/Cunifer only; no bare copper. | `4.75 mm / 3/16 in OD x 7600 mm / 25 ft` coil allowance | Old-line templates, flare standard, union thread, fitting seat, individual route lengths, and clip positions control final fabrication. | `BRAKE-A` |
+| `RPO-BRAKE-001B` | New brake hard-line tube and brake-rated fittings. Use bundy steel or CuNi/Cunifer only; no bare copper. May 14 installed-fitting and flare side-view photos point to Toyota-style `double / inverted` flares. | `4.75 mm / 3/16 in OD x 7600 mm / 25 ft` coil allowance | Working flare basis is `double / inverted`; old-line templates, straight-on flare face, union thread, fitting seat, individual route lengths, and clip positions still control final fabrication. | `BRAKE-A` |
 | `RPO-CLUTCH-001A` | New complete clutch flex hose. Brake/clutch hydraulic-rated. | `1` new complete assembly | Copy old assembly free length in `mm`, master/slave port thread, end/seat style, bracket retention, and drivetrain movement allowance. | `CLUTCH-A` |
 | `RPO-CLUTCH-001B` | New clutch hard line. Brake/clutch-rated bundy steel or CuNi/Cunifer. | `4.75 mm / 3/16 in OD x 1500 mm` blank allowance | Final cut comes from master-to-slave route; confirm hard-line OD, port thread, flare/seat style, clips, and movement clearance. | `CLUTCH-A` |
 | `RPO-CLIP-001` | Rubber-lined P-clips and edge/pass-through protection for fuel, brake, and clutch hard lines. | Mixed pack, around `20` clips plus fasteners | Clip IDs matched to `4.75 mm`, `6 mm`, and `8 mm` line ODs; support hard lines every `300-400 mm`. | `FUEL-B`, `BRAKE-A` |
@@ -119,6 +119,7 @@ Additional reference media from the May 3 intake has been added below. Use these
 
 ### `BRAKE-A` Brake Flex, Hard Lines, Unions, And Clips
 
+- May 14 brake pipe/fitting close-ups and the user flare side-view are now assigned to `BRAKE-A`; they support the working `double / inverted` flare basis but do not replace straight-on sealing-face and seat/thread confirmation.
 - `photos/20260503_152902_gp_xBbsFRzQ.jpg`
 - `photos/20260503_152913_gp_AvVGAlHw.jpg`
 - `photos/20260503_153017_gp_dM8BCa4w.jpg`
@@ -132,6 +133,19 @@ Additional reference media from the May 3 intake has been added below. Use these
 - `photos/20260501_194305_gp_EllBGvXA.jpg`
 - `photos/20260501_194313_gp_lfUqLibA.jpg`
 - `photos/20260501_194322_gp_XuRtjN4w.jpg`
+- `photos/20260514_095907_gp_Ni1EUf4A.jpg`
+- `photos/20260514_095856_gp_vjZG4NtQ.jpg`
+- `photos/20260514_095846_gp_a9olRp5g.jpg`
+- `photos/20260514_095836_gp_tmRy9fqg.jpg`
+- `photos/20260514_095826_gp_fg74oFMQ.jpg`
+- `photos/20260514_095820_gp_nuP5s76A.jpg`
+- `photos/20260514_095812_gp_5kblggGA.jpg`
+- `photos/20260514_095926_gp_YBNOqh9A.jpg`
+- `photos/20260514_095953_gp_BXoQkXnw.jpg`
+- `photos/20260514_100003_gp_Vr2QI7ig.jpg`
+- `photos/20260514_100008_gp_bq1VQUXQ.jpg`
+- `photos/20260514_100647_gp_foDr3ymA.jpg`
+- `photos/20260514_111300_user_brake_flare_side_view.png`
 
 ### `CLUTCH-A` Clutch Bellhousing And Hydraulic Route Context
 

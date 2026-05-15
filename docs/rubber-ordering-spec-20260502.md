@@ -49,6 +49,8 @@ Any rubber, hose, boot, grommet, pad, hanger, isolator, bump stop, cable seal, o
 | `RUB-022` | Exhaust hanger rubbers | Buy by dimension if failed | Measure pin diameter and hole spacing |
 | `RUB-026` | Bump stops | Inspect during Ironman work | Confirm loaded ride height and axle travel |
 | `RUB-027` | Engine air-cleaner intake duct/couplers | Inspect and sample-match only if failed | Measure air-cleaner outlet OD, intake inlet OD, free length, offset, accordion travel, branch OD, and clamp OD |
+| `RUB-024` | A/C barrier hoses, drain hoses, O-rings | Required for hidden HVAC refit | Final hose lengths/crimps wait for compressor, condenser, receiver-drier, bulkhead, and evaporator layout |
+| `RUB-025` | HVAC duct/defrost hoses | Required for hidden HVAC refit | Final duct diameter and lengths wait for evaporator, dash, and vent mock-up |
 
 ## Defer Until Body Or HVAC Stage
 
@@ -60,8 +62,6 @@ Any rubber, hose, boot, grommet, pad, hanger, isolator, bump stop, cable seal, o
 | `RUB-020` | Vent/flap/cowl seals | Variant risk is high before body hardware mock-up |
 | `RUB-021` | Window rubbers/channels/sliding-window seals | Requires window hardware and glass audit |
 | `RUB-023` | Pedal rubbers | Low urgency; confirm pedal plate profile later |
-| `RUB-024` | A/C barrier hoses, drain hoses, O-rings | Final hose lengths depend on HVAC layout |
-| `RUB-025` | HVAC duct/defrost hoses | Dash, heater box, and vent locations must be fixed |
 
 ## Non-Negotiable Material Rules
 

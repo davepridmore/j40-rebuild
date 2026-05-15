@@ -48,7 +48,7 @@ def saddle_right_angle_post() -> base.Drawing:
     ]
     notes = [
         "Single-piece radiator saddle/post main-face template: 48 x 618 x 4.0 mm mild steel, based on the existing-side radiator bracket measurement set.",
-        "Form or use a mild-steel angle section so the 48 mm measured face has a perpendicular return flange; the final upright is not a flat strap.",
+        "Prefer pre-formed 90-degree mild-steel angle/L-section stock if one leg is close to the 48-50 mm measured face; otherwise form the return from flat plate so the final upright is not a flat strap.",
         "Bend 90 degrees at the top datum so the measured 58 mm return becomes the radiator screw tab in the same formed angle section, with the top return carried back to the far edge of the angle return flange.",
         "Bend around the chassis/front-support section so the lower portion forms an inverted-U saddle from the formed angle: near-side leg, chassis top bridge, and far-side clamp leg.",
         "Measured bend basis is 58 mm top return, 410 mm upright/post height, 70 mm chassis bridge allowance, and 80 mm far-side saddle leg.",
@@ -455,7 +455,7 @@ This package now uses a single 4 mm mild-steel formed-angle radiator post with a
 ## Fabrication Rules
 
 - Use `4.0 mm` mild steel for the released template.
-- Form a perpendicular return flange or use equivalent 4 mm stock angle before final transverse bends; mitre/relieve the bend points as needed so the angle section can form the top return and lower saddle cleanly.
+- Prefer pre-formed 90-degree mild-steel angle/L-section stock if one leg is close to `48-50 mm`; otherwise form a perpendicular return flange from flat stock before final transverse bends. Mitre/relieve the bend points as needed so the angle section can form the top return and lower saddle cleanly.
 - Bend the top return to match the left-side bracket direction and offset; the top return should continue back to the far edge of the formed angle section rather than stopping at the upright face.
 - Bend the lower saddle around the actual chassis/front-support width so the near-side and far-side saddle legs sit down both chassis sides without added side ears or tabs.
 - Through-bolt both saddle legs and chassis/front support; do not weld this bracket unless the bolted saddle route fails dry-fit.
@@ -475,8 +475,8 @@ def write_cut_list() -> None:
             "part_id": "RAD-SADDLE-POST-R",
             "file": "front_radiator_saddle_right_angle_post_rev_a.dxf",
             "qty": "1",
-            "material": "4.0 mm mild steel",
-            "process": "cut/form mild-steel angle section with 48 mm measured main face and 618 mm developed template length, bend full-depth 90 deg top return, wrap lower saddle over both chassis/front-support sides, drill final top screw and through-bolt fields after dry-fit",
+            "material": "4.0 mm mild steel angle/L-section or formed plate",
+            "process": "cut/form mild-steel angle section with 48 mm measured main face and 618 mm developed template length, prefer pre-formed 90 deg angle stock if the leg width fits, bend full-depth 90 deg top return, wrap lower saddle over both chassis/front-support sides, drill final top screw and through-bolt fields after dry-fit",
             "notes": "Single-piece formed-angle saddle/post bracket from existing-side measurements: 48 mm measured main face, 410 mm upright height, perpendicular return flange, and 58/468/538 transverse bend datums. Near-side and far-side saddle legs straddle the chassis and a through-bolt retains the bracket; no welding by default.",
         },
     ]

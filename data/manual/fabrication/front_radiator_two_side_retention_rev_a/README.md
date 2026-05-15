@@ -43,7 +43,7 @@ This package now uses a single 4 mm mild-steel formed-angle radiator post with a
 ## Fabrication Rules
 
 - Use `4.0 mm` mild steel for the released template.
-- Form a perpendicular return flange or use equivalent 4 mm stock angle before final transverse bends; mitre/relieve the bend points as needed so the angle section can form the top return and lower saddle cleanly.
+- Prefer pre-formed 90-degree mild-steel angle/L-section stock if one leg is close to `48-50 mm`; otherwise form a perpendicular return flange from flat stock before final transverse bends. Mitre/relieve the bend points as needed so the angle section can form the top return and lower saddle cleanly.
 - Bend the top return to match the left-side bracket direction and offset; the top return should continue back to the far edge of the formed angle section rather than stopping at the upright face.
 - Bend the lower saddle around the actual chassis/front-support width so the near-side and far-side saddle legs sit down both chassis sides without added side ears or tabs.
 - Through-bolt both saddle legs and chassis/front support; do not weld this bracket unless the bolted saddle route fails dry-fit.

@@ -54,8 +54,8 @@ Do not final-close suspension until brake hose, hard-line, parking-brake cable, 
 | Rear drums | 2 | Inspect/machine/replace | Machine or replace only if scored, cracked, stepped, or beyond service limit. |
 | Brake-line and parking-brake cable clips | As counted | Count hold | Replace corroded/missing clips and add rubber-lined P-clips where original support is missing. |
 | Brake master/reservoir/proportioning service parts | As fitted | Inspection hold | Replace only after current master, reservoir, booster, ports, and proportioning layout are photographed and checked. |
-| Hydraulic-opening prep consumables | Enough for full bleed/line opening | Purchase-ready | Buy line caps/plugs, clear bleed hose/bottle or bleeder kit, brake cleaner, rags, gloves, and catch tray before any hydraulic line is opened. |
-| Brake fluid | 2 L sealed total unless workshop specifies more | Purchase-ready | Use sealed fresh DOT 3 brake fluid meeting SAE J1703 / FMVSS No. 116 DOT 3; do not use DOT 5 or mix unknown old fluid. |
+| Hydraulic-opening prep consumables | Enough for full bleed/line opening | Purchase-ready | Buy line caps/plugs, catch bottle or bleeder kit, brake cleaner, rags, and catch tray before any hydraulic line is opened. Clear bleed hose and nitrile gloves are received. |
+| Brake fluid | 2 L sealed total unless workshop specifies more | Received | Use sealed fresh DOT 3 brake fluid meeting SAE J1703 / FMVSS No. 116 DOT 3; do not use DOT 5 or mix unknown old fluid. |
 | Copper grease | On hand | Received | Use sparingly on appropriate brake contact points only, never on friction surfaces. |
 
 ## Tools And Support Checklist
@@ -71,12 +71,12 @@ Do not final-close suspension until brake hose, hard-line, parking-brake cable, 
 | Metric socket/spanner set | Received tool set | Confirm sizes for spring, shackle, shock, wheel, and brake fittings. |
 | Flare-nut/line wrenches | Not clearly tracked | Required for brake hard lines and flex hose fittings. |
 | Brake line cutter, bender, and flaring tool | Planned as `tool_brake_fuel_line_cutter_bender_flaring_kit` | Required only if fabricating lines at home; otherwise confirm the brake shop provides cutter, bender, deburrer, flaring dies, and fittings. |
-| Brake bleeder bottle/vacuum bleeder and clear hose | Not clearly tracked | Required for hydraulic closeout. |
+| Brake bleeder bottle/vacuum bleeder and clear hose | Clear hose received; bleeder bottle/vacuum bleeder still open | Required for hydraulic closeout. |
 | Brake spring pliers/hold-down tool | Not clearly tracked | Required for rear drum spring/hardware work unless workshop provides them. |
 | Caliper piston tool or C-clamp | Not clearly tracked | Required for front pad/caliper service. |
 | Digital caliper/tape | Digital caliper planned/open | Needed for cable lengths, shoe width, drum ID, rotor thickness, hose/fitting checks, and bracket dimensions. |
 | Line caps/plugs | Not clearly tracked | Required before any hydraulic line is opened. |
-| Brake cleaner, rags, catch tray, nitrile gloves, eye protection | Partially tracked as cleaning/PPE | Must be ready before opening drums or hydraulic lines. |
+| Brake cleaner, rags, catch tray, nitrile gloves, eye protection | Nitrile gloves received; cleaner, rags, catch tray, and eye protection still need confirmation | Must be ready before opening drums or hydraulic lines. |
 | Camera/phone, labels/paint marker, ruler/tape, and clean background board | Available by workflow | Required for `BR-CAPTURE-001` before removal so old parts remain usable as samples and order evidence. |
 
 ## No-Go Conditions
