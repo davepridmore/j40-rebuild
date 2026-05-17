@@ -1,6 +1,6 @@
 # Procurement Pass 2 (Tub-Off, Pakistan Cost Reality)
 
-- Generated: 2026-05-14 11:35:31
+- Generated: 2026-05-17 16:31:17
 - Input matrix: `data/manual/procurement_decision_matrix.csv`
 - Pass-2 matrix: `data/manual/procurement_decision_matrix_pass2.csv`
 - Basket plan: `data/manual/procurement_local_baskets_pass2.csv`
@@ -29,7 +29,7 @@
 - `review`: 2
 - `source_toyota_oe_glow_plugs_by_part_number`: 1
 - `stock_audit_then_local_topup`: 3
-- `track_in_flight_order`: 6
+- `track_in_flight_order`: 5
 
 ## Timing Windows
 
@@ -37,7 +37,7 @@
 - `body_hardware_sample_sort`: 6
 - `body_sealed`: 1
 - `electrical_closeout`: 1
-- `in_flight_now`: 6
+- `in_flight_now`: 5
 - `longman_mills_quote_pack`: 4
 - `merged_suspension_brake_window`: 17
 - `post_baseline_only`: 6
@@ -54,7 +54,6 @@
 - `part_brake_fluid_bleed_consumables` Brake hydraulic opening prep remaining consumables - caps plugs bleed bottle cleaner rags catch tray -> buy_remaining_brake_bleed_consumables
 - `part_fastener_kit_d_millat` Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points -> track_in_flight_order
 - `part_ironman_front_dampers_separate_shipment` Ironman Foamcell front damper pair - separate shipment (24635FE x2) -> track_in_flight_order
-- `part_suspension_wooden_cribbing_blocks` Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks -> track_in_flight_order
 
 ## Practical Outcome
 

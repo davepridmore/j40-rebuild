@@ -10,7 +10,7 @@ from reportlab.lib.units import mm as pdf_mm
 from reportlab.lib.utils import simpleSplit
 from reportlab.pdfgen import canvas
 
-import generate_electrical_module_drawings as base
+import fabrication_drawing_base as base
 
 
 OUT_DIR = Path("/Users/davidpridmore/IdeaProjects/J40/data/manual/fabrication/front_radiator_two_side_retention_rev_a")

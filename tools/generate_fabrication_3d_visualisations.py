@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import csv
 import json
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -104,6 +103,60 @@ def relay_fuse_box_cylinders(x: float, y: float, z: float, prefix: str) -> list[
         {"name": f"{prefix} lower cover screw", "x": x + 46, "y": y - 112, "z": z - 84, "r": 4, "h": 8, "color": "deepblack"},
         {"name": f"{prefix} carrier corner fixing", "x": x - 84, "y": y + 138, "z": z - 78, "r": 5, "h": 8, "color": "deepblack"},
         {"name": f"{prefix} carrier corner fixing", "x": x + 84, "y": y - 138, "z": z - 78, "r": 5, "h": 8, "color": "deepblack"},
+    ]
+
+
+def relay_bottom_mount_boxes(x: float, y: float, z: float, prefix: str) -> list[dict[str, object]]:
+    return [
+        {
+            "name": f"{prefix} large uncovered bottom face seated on insulating sheet 300 x 197",
+            "x": x,
+            "y": y + 2,
+            "z": z,
+            "w": 300,
+            "h": 4,
+            "d": 197,
+            "color": "deepblack",
+        },
+        {
+            "name": f"{prefix} covered plastic enclosure above bottom face 300 x 197 x 80",
+            "x": x,
+            "y": y + 42,
+            "z": z,
+            "w": 300,
+            "h": 76,
+            "d": 197,
+            "color": "black",
+        },
+        {
+            "name": f"{prefix} removable cover kept accessible on upper face",
+            "x": x,
+            "y": y + 82,
+            "z": z,
+            "w": 286,
+            "h": 8,
+            "d": 183,
+            "color": "plastic",
+        },
+        {
+            "name": f"{prefix} shallow raised cover rim on upper face",
+            "x": x,
+            "y": y + 89,
+            "z": z,
+            "w": 250,
+            "h": 5,
+            "d": 147,
+            "color": "black",
+        },
+    ]
+
+
+def relay_bottom_mount_cylinders(x: float, y: float, z: float, prefix: str) -> list[dict[str, object]]:
+    return [
+        {"name": f"{prefix} upper cover screw on accessible cover", "x": x - 70, "y": y + 96, "z": z - 55, "r": 4, "h": 8, "color": "deepblack"},
+        {"name": f"{prefix} lower cover screw on accessible cover", "x": x + 70, "y": y + 96, "z": z + 55, "r": 4, "h": 8, "color": "deepblack"},
+        {"name": f"{prefix} transferred bottom fixing mark", "x": x - 120, "y": y + 12, "z": z - 72, "r": 4, "h": 8, "color": "deepblack"},
+        {"name": f"{prefix} transferred bottom fixing mark", "x": x + 120, "y": y + 12, "z": z + 72, "r": 4, "h": 8, "color": "deepblack"},
     ]
 
 
@@ -336,29 +389,6 @@ SCENES = {
             *midi_bank_cylinders(0, 12, 0, "MIDI Rev D active five-way bank", count=5),
         ],
     },
-    "electrical_device_models_rev_a": {
-        "title": "Electrical Device Models Rev A",
-        "subtitle": "Separate photo-informed device envelopes for relay box, 100A breaker/cutoff, and MIDI fuse holders.",
-        "camera": [520, 320, 620],
-        "target": [20, 80, 0],
-        "size": "Relay housing rotated to 197 x 300 x 80 mm view with top power in/out and front control-cable exits; MIDI Rev D enclosure around five holders on 140 x 85 board; 100A breaker visual envelope pending final caliper check",
-        "load_path": "Reference-only device models used inside the battery power carrier and standalone relay/MIDI views.",
-        "service_intent": "Use this page to inspect device shapes separately before judging the combined battery-side packaging.",
-        "boxes": [
-            *relay_fuse_box_boxes(-235, 132, 8, "Relay/fuse box"),
-            *breaker_boxes(90, 8, -24, "100A breaker/cutoff"),
-            *midi_enclosure_boxes(285, 6, 54, "MIDI Rev D model enclosure"),
-            *midi_enclosed_bank_boxes(285, 12, 54, "MIDI holder bank active five positions"),
-            {"name": "Hidden/security needle switch visual note body", "x": 94, "y": 84, "z": 74, "w": 34, "h": 18, "d": 22, "color": "deepblack"},
-            {"name": "Hidden/security needle switch threaded barrel", "x": 68, "y": 86, "z": 74, "w": 28, "h": 12, "d": 12, "color": "silver"},
-            {"name": "Hidden/security needle switch blade terminals", "x": 122, "y": 84, "z": 74, "w": 28, "h": 5, "d": 18, "color": "brass"},
-        ],
-        "cylinders": [
-            *relay_fuse_box_cylinders(-235, 132, 8, "Relay/fuse box"),
-            *breaker_cylinders(90, 8, -24, "100A breaker/cutoff"),
-            *midi_bank_cylinders(285, 6, 54, "MIDI holder bank active five positions", count=5),
-        ],
-    },
     "relay_mount_rev_c": {
         "title": "Relay Mount Rev C",
         "subtitle": "Fallback standalone folded relay-box carrier with rear guard and serviceable loom exit.",
@@ -386,59 +416,21 @@ SCENES = {
     },
     "relay_mount_rev_d": {
         "title": "Relay Mount Rev D",
-        "subtitle": "Simplified relay-box support: exact-footprint insulating sheet on a flat aluminium base plate.",
+        "subtitle": "Simplified relay-box support: flat base and insulating sheet under the relay's uncovered bottom face.",
         "camera": [420, 330, 500],
-        "target": [0, 150, 0],
-        "size": "360 x 245 x 3 mm aluminium base; 300 x 197 x 3 mm insulating sheet matching the relay box footprint",
-        "load_path": "The flat aluminium base bolts to the battery-stand ladder through exposed slots; the insulating sheet sits directly under the covered relay box.",
-        "service_intent": "Keep the relay cover removable, transfer relay-box fixing holes from the actual box after orientation is confirmed, and use the base slots for stand attachment.",
+        "target": [0, 70, 0],
+        "size": "360 x 245 x 3 mm aluminium base; 300 x 197 x 3 mm insulating sheet matching the relay bottom footprint",
+        "load_path": "The flat aluminium base bolts to the battery-stand ladder through exposed slots; the insulating sheet sits directly under the relay box's large uncovered bottom face.",
+        "service_intent": "Keep the covered/removable face accessible above the base, transfer bottom-face relay fixing holes from the actual box after orientation is confirmed, and use the base slots for stand attachment.",
         "boxes": [
-            {"name": "Flat aluminium base plate 360 x 245 shown installed rotated", "x": 0, "y": 3, "z": 0, "w": 245, "h": 6, "d": 360, "color": "aluminium"},
-            {"name": "Exact relay-footprint insulating sheet 300 x 197 shown installed rotated", "x": 0, "y": 10, "z": 0, "w": 197, "h": 6, "d": 300, "color": "plastic"},
-            *relay_fuse_box_boxes(0, 92, 0, "Covered relay/fuse box on Rev D base", include_cable_exits=False),
-            {"name": "Exposed top stand-mount slot pair", "x": 0, "y": 14, "z": -164, "w": 170, "h": 4, "d": 14, "color": "silver"},
-            {"name": "Exposed bottom stand-mount slot pair", "x": 0, "y": 14, "z": 164, "w": 170, "h": 4, "d": 14, "color": "silver"},
+            {"name": "Flat aluminium base plate 360 x 245 under relay bottom", "x": 0, "y": 3, "z": 0, "w": 360, "h": 6, "d": 245, "color": "aluminium"},
+            {"name": "Exact relay-bottom insulating sheet 300 x 197", "x": 0, "y": 10, "z": 0, "w": 300, "h": 6, "d": 197, "color": "plastic"},
+            *relay_bottom_mount_boxes(0, 13, 0, "Covered relay/fuse box on Rev D base"),
+            {"name": "Exposed front stand-mount slot pair outside relay bottom", "x": 0, "y": 14, "z": -108, "w": 210, "h": 4, "d": 14, "color": "silver"},
+            {"name": "Exposed rear stand-mount slot pair outside relay bottom", "x": 0, "y": 14, "z": 108, "w": 210, "h": 4, "d": 14, "color": "silver"},
         ],
         "cylinders": [
-            *relay_fuse_box_cylinders(0, 92, 0, "Covered relay/fuse box on Rev D base"),
-        ],
-    },
-    "electrical_modules_rev_a": {
-        "title": "Electrical Modules Rev A",
-        "subtitle": "Earlier reference route with folded relay tray, folded power module box, and rear insulator.",
-        "camera": [430, 330, 520],
-        "target": [0, 28, 0],
-        "size": "Relay module tray plus power module box and rear insulator",
-        "load_path": "Reference combined-module arrangement only; the aluminium tray and box use 90-degree folded flanges.",
-        "service_intent": "Use this page for visual reference if the combined route is reopened; bend-line flanges are shown folded, not flat.",
-        "boxes": [
-            {"name": "Relay tray floor 320 x 220", "x": -150, "y": 3, "z": 0, "w": 320, "h": 8, "d": 220, "color": "aluminium"},
-            {"name": "Relay tray left 20 mm 90-degree flange", "x": -320, "y": -18, "z": 0, "w": 20, "h": 42, "d": 220, "color": "aluminium"},
-            {"name": "Relay tray right 20 mm 90-degree flange", "x": 20, "y": -18, "z": 0, "w": 20, "h": 42, "d": 220, "color": "aluminium"},
-            {"name": "Relay tray front 20 mm 90-degree flange", "x": -150, "y": -18, "z": 120, "w": 320, "h": 42, "d": 20, "color": "aluminium"},
-            {"name": "Relay tray rear 20 mm 90-degree flange", "x": -150, "y": -18, "z": -120, "w": 320, "h": 42, "d": 20, "color": "aluminium"},
-            {"name": "Relay tray left bend crease", "x": -310, "y": 12, "z": 0, "w": 4, "h": 4, "d": 220, "color": "bendline"},
-            {"name": "Relay tray right bend crease", "x": 10, "y": 12, "z": 0, "w": 4, "h": 4, "d": 220, "color": "bendline"},
-            {"name": "Relay tray front bend crease", "x": -150, "y": 12, "z": 110, "w": 320, "h": 4, "d": 4, "color": "bendline"},
-            {"name": "Relay tray rear bend crease", "x": -150, "y": 12, "z": -110, "w": 320, "h": 4, "d": 4, "color": "bendline"},
-            *relay_fuse_box_boxes(-150, 106, -18, "Reference relay/fuse box"),
-            {"name": "Power module box face 220 x 140", "x": 160, "y": 3, "z": 0, "w": 220, "h": 8, "d": 140, "color": "aluminium"},
-            {"name": "Power module left 20 mm 90-degree flange", "x": 40, "y": -18, "z": 0, "w": 20, "h": 42, "d": 140, "color": "aluminium"},
-            {"name": "Power module right 20 mm 90-degree flange", "x": 280, "y": -18, "z": 0, "w": 20, "h": 42, "d": 140, "color": "aluminium"},
-            {"name": "Power module lower 20 mm 90-degree flange", "x": 160, "y": -18, "z": 80, "w": 220, "h": 42, "d": 20, "color": "aluminium"},
-            {"name": "Power module upper 20 mm 90-degree flange", "x": 160, "y": -18, "z": -80, "w": 220, "h": 42, "d": 20, "color": "aluminium"},
-            {"name": "Power module left bend crease", "x": 50, "y": 12, "z": 0, "w": 4, "h": 4, "d": 140, "color": "bendline"},
-            {"name": "Power module right bend crease", "x": 270, "y": 12, "z": 0, "w": 4, "h": 4, "d": 140, "color": "bendline"},
-            {"name": "Power module lower bend crease", "x": 160, "y": 12, "z": 70, "w": 220, "h": 4, "d": 4, "color": "bendline"},
-            {"name": "Power module upper bend crease", "x": 160, "y": 12, "z": -70, "w": 220, "h": 4, "d": 4, "color": "bendline"},
-            *breaker_boxes(160, 20, -38, "Reference 100A breaker/cutoff"),
-            *midi_bank_boxes(160, 8, 42, "Reference MIDI holder bank", count=5),
-            {"name": "Rear insulator", "x": 160, "y": -18, "z": 0, "w": 210, "h": 5, "d": 130, "color": "plastic"},
-        ],
-        "cylinders": [
-            *relay_fuse_box_cylinders(-150, 106, -18, "Reference relay/fuse box"),
-            *breaker_cylinders(160, 20, -38, "Reference 100A breaker/cutoff"),
-            *midi_bank_cylinders(160, 8, 42, "Reference MIDI holder bank", count=5),
+            *relay_bottom_mount_cylinders(0, 13, 0, "Covered relay/fuse box on Rev D base"),
         ],
     },
 }
@@ -732,112 +724,12 @@ def write_html(package_id: str, scene: dict[str, object]) -> None:
     (out_dir / f"{package_id}_3d_visualisation.html").write_text(html, encoding="utf-8")
 
 
-def write_device_model_docs() -> None:
-    out_dir = FAB_DIR / "electrical_device_models_rev_a"
-    out_dir.mkdir(parents=True, exist_ok=True)
-    readme = """# J40 Electrical Device Models - Rev A
-
-This is a reference visualisation pack for the physical electrical devices used by the battery-side fabrication layouts.
-It separates the devices from the carrier brackets so the relay box, 100A breaker/cutoff, and MIDI fuse holders can be checked as objects before judging the combined battery power carrier view.
-
-## Modelled Devices
-
-- Relay/fuse box: photo-informed covered black enclosure with plain removable front cover, two cover screws, and the package rotated 90 degrees so heavy power input/output boots exit the top and control cables exit toward the front/radiator side. The released sizing basis remains `300 x 197 x 80 mm`, represented as a rotated `197 x 300 x 80 mm` envelope; internals are hidden by the fitted cover. The modelled exit blocks are top power input `54 x 46 x 42 mm` at relay offset `X-42 / Y+164 / Z-52`, top power output `54 x 46 x 42 mm` at `X+42 / Y+164 / Z-52`, and front control cables `170 x 34 x 24 mm` at `X-18 / Y-120 / Z-112`.
-- 100A breaker/cutoff: photo-informed waterproof resettable breaker with black body, raised faceplate, red reset lever/button, two terminal studs, ring lugs, and cable boots. Exact body/stud centres remain a caliper hold before final drilling.
-- MIDI fuse holder bank: active five-position fabrication model inside the Rev D folded aluminium enclosure, on the known `140 x 85 mm` insulated subplate, using red hinged covers, black linked bases, side mounting ears, paired studs, one fuse 4 input grommet on the bus side, and five output-side grommets. The far-side output grommet is enlarged because that output carries two power cables. The received photo shows a larger linked bank; the active fabrication package is the five-way Rev D hinged enclosure.
-- Hidden/security needle switch: shown only as a small reference object, because it belongs to the cabin/security wiring path rather than the battery-side power carrier.
-
-## Evidence Basis
-
-- Relay/fuse box photos: `photos/20260411_143125.jpg`, `photos/20260515_112827_gp_kbx0JKSQ.jpg`
-- 100A breaker/cutoff photos: `photos/20260411_071153.jpg`, `photos/20260515_112836_gp_sFdn9AyA.jpg`
-- MIDI holder close-ups: `photos/20260411_143135.jpg`, `photos/20260515_112907_gp_wtj4G8tQ.jpg`
-- Hidden/security needle switch photo: `photos/20260420_221819_gp_YV69fbvA.jpg`
-
-## Release Notes
-
-These models are visual envelopes, not fabrication drawings. Use them to check packaging and service access in the S3 dashboard. Use the current Rev D MIDI enclosure package for cut files, and measure the actual breaker body, mounting-hole centres, stud spacing, and cable-lug sweep before drilling metal.
-"""
-    (out_dir / "README.md").write_text(readme, encoding="utf-8")
-
-    basis_rows = [
-        {
-            "device_id": "relay_fuse_box",
-            "device_name": "Covered relay/fuse box",
-            "measurement_basis": "Published/listing housing size plus May 15 covered-box photo",
-            "model_dimensions_mm": "197 x 300 x 80 rotated housing envelope, from 300 x 197 x 80 released basis",
-            "photo_refs": "photos/20260411_143125.jpg|photos/20260515_112827_gp_kbx0JKSQ.jpg",
-            "release_status": "released_visual_envelope",
-            "notes": "Visual model now shows the fitted plain cover, cover screws, top power input 54 x 46 x 42 at X-42/Y+164/Z-52, top power output 54 x 46 x 42 at X+42/Y+164/Z-52, front-facing control cable cluster 170 x 34 x 24 at X-18/Y-120/Z-112, and top service-loop volume. Internal relays/fuses are not visible under the cover and are not modelled.",
-        },
-        {
-            "device_id": "midi_holder_bank",
-            "device_name": "MIDI fuse holder bank, active five positions",
-            "measurement_basis": "Rev D enclosure/subplate from measured linked-holder photos plus received holder photo",
-            "model_dimensions_mm": "210 x 165 x 65 enclosure; 230 x 185 lid; 140 x 85 subplate; holder holes about 20.2 pitch, 44 row separation, 10 row stagger",
-            "photo_refs": "photos/20260411_143135.jpg|photos/20260411_071153.jpg|photos/20260515_112907_gp_wtj4G8tQ.jpg",
-            "release_status": "released_visual_envelope_for_five_way_rev_d",
-            "notes": "Received bank photo shows more positions; fabrication pack uses five active positions inside the Rev D hinged enclosure with one fuse 4 input grommet on the common-feed side, five output-side grommets, and the far-side output grommet enlarged for two power cables.",
-        },
-        {
-            "device_id": "breaker_cutoff_100a",
-            "device_name": "100A waterproof resettable breaker / cutoff",
-            "measurement_basis": "Received hardware photo and workbook part row 53",
-            "model_dimensions_mm": "Visual envelope only; exact breaker body, mounting holes, stud centres, and cable lug sweep must be caliper-measured",
-            "photo_refs": "photos/20260411_071153.jpg|photos/20260515_112836_gp_sFdn9AyA.jpg",
-            "release_status": "visual_envelope_measurement_hold",
-            "notes": "Visual model shows the received resettable breaker form and large ring-lug sweep. Final metal still keeps the breaker body, stud spacing, and cable-lug depth as a hold.",
-        },
-        {
-            "device_id": "hidden_security_needle_switch",
-            "device_name": "Hidden/security needle switch",
-            "measurement_basis": "Received hardware photo",
-            "model_dimensions_mm": "Small cabin/security switch visual only; not part of battery carrier cut files",
-            "photo_refs": "photos/20260420_221819_gp_YV69fbvA.jpg",
-            "release_status": "reference_only",
-            "notes": "Shown separately so it is not confused with the 100A battery-side breaker/cutoff.",
-        },
-    ]
-    basis_path = out_dir / "device_measurement_basis.csv"
-    with basis_path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(basis_rows[0].keys()))
-        writer.writeheader()
-        writer.writerows(basis_rows)
-
-    checklist_rows = [
-        {
-            "check_id": "EDM-001",
-            "stage": "bench_measurement",
-            "acceptance_check": "Measure the actual 100A breaker body length/width/height, mounting hole centres, terminal stud diameter, terminal stud centre spacing, and lug sweep before final drilling.",
-            "required_evidence": "Caliper photo or dimension note with breaker and lugs on the cutoff base card.",
-        },
-        {
-            "check_id": "EDM-002",
-            "stage": "bench_measurement",
-            "acceptance_check": "Confirm the relay/fuse housing depth, top power input/output locations, front control-cable exit location, cover opening path, and required standoff clearance against the rotated 197 x 300 x 80 visual envelope.",
-            "required_evidence": "Relay box side/depth photo with ruler and top power in/out plus front control exits visible.",
-        },
-        {
-            "check_id": "EDM-003",
-            "stage": "holder_count",
-            "acceptance_check": "Confirm whether five or six MIDI holder positions will be populated on the vehicle; keep Rev D fabrication at five unless deliberately updated, and verify the far-side output carries two power cables before opening the enlarged output grommet hole.",
-            "required_evidence": "Bench photo of selected active MIDI holders with marked fuse 4 common feed, branch-output side, five grommet positions, and far-side two-cable output.",
-        },
-    ]
-    checklist_path = out_dir / "inspection_checklist.csv"
-    with checklist_path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(checklist_rows[0].keys()))
-        writer.writeheader()
-        writer.writerows(checklist_rows)
-
-
 def main() -> None:
     for package_id, scene in SCENES.items():
         out_dir = FAB_DIR / package_id
         out_dir.mkdir(parents=True, exist_ok=True)
         write_svg(package_id, scene)
         write_html(package_id, scene)
-    write_device_model_docs()
 
 
 if __name__ == "__main__":

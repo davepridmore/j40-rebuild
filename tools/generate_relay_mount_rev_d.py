@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-import generate_electrical_module_drawings as base
+import fabrication_drawing_base as base
 
 
 OUT_DIR = Path("/Users/davidpridmore/IdeaProjects/J40/data/manual/fabrication/relay_mount_rev_d")
@@ -30,9 +30,9 @@ def relay_base_plate() -> base.Drawing:
     ]
     notes = [
         "Relay Rev D base plate: flat 3.0 mm 5052-H32 aluminium. No folded box or rear tray is required because the relay unit is already a covered plastic enclosure.",
-        "Base plate is 360 x 245 mm, giving exposed mounting margins around the 300 x 197 mm relay-box footprint.",
-        "The slotted holes are only for attaching this base plate to the battery stand / access ladder; final slot selection and bolt size are site-fit.",
-        "Transfer any relay-box fixing holes from the actual relay box after placing the exact-size insulating sheet. Do not pre-drill relay housing holes from this drawing.",
+        "Base plate is 360 x 245 mm, giving exposed mounting margins around the 300 x 197 mm large uncovered bottom face of the relay box.",
+        "The slotted holes are only for attaching this base plate to the battery stand / access ladder; in the battery power carrier the base mounts vertically and directly flat to the main metal service sheet. Final slot selection and bolt size are site-fit.",
+        "Transfer any relay-box bottom-face fixing holes from the actual relay box after placing the exact-size insulating sheet. Do not pre-drill relay housing holes from this drawing.",
     ]
     return base.Drawing("relay_base_plate_rev_d", BASE_W, BASE_D, cut_polys, [], [], [], notes)
 
@@ -40,9 +40,9 @@ def relay_base_plate() -> base.Drawing:
 def relay_insulating_sheet() -> base.Drawing:
     cut_polys = [base.Poly([(0, 0), (RELAY_BOX_W, 0), (RELAY_BOX_W, RELAY_BOX_D), (0, RELAY_BOX_D)])]
     notes = [
-        "Relay Rev D insulating sheet: exact 300 x 197 mm relay-box footprint in 3.0 mm ABS, HDPE, polypropylene, G10, or phenolic.",
-        "This sheet sits directly between the already-covered relay box and the aluminium base plate.",
-        "Use the actual relay box to mark any through-fixing holes after confirming orientation. Keep the sheet full-size under the relay box.",
+        "Relay Rev D insulating sheet: exact 300 x 197 mm footprint for the relay box's large uncovered bottom face in 3.0 mm ABS, HDPE, polypropylene, G10, or phenolic.",
+        "This sheet sits directly between the relay box's uncovered bottom face and the aluminium base plate.",
+        "Use the actual relay box bottom to mark any through-fixing holes after confirming orientation. Keep the sheet full-size under the relay box's uncovered bottom face.",
         "Deburr plastic edges and avoid a fully sealed water trap; the relay box remains the weather cover.",
     ]
     return base.Drawing("relay_insulating_sheet_rev_d", RELAY_BOX_W, RELAY_BOX_D, cut_polys, [], [], [], notes)
@@ -56,20 +56,20 @@ This pack supersedes the folded Rev C relay carrier as the current relay-box fab
 The relay/fuse box is already a well-covered plastic enclosure, so Rev D only provides:
 
 1. `relay_base_plate_rev_d` - flat aluminium base that extends beyond the relay box and bolts to the battery stand
-2. `relay_insulating_sheet_rev_d` - exact relay-box-footprint insulating sheet between the box and aluminium base
+2. `relay_insulating_sheet_rev_d` - exact relay-box-bottom-footprint insulating sheet between the box's large uncovered bottom face and aluminium base
 
 ## Dimensions
 
-- Existing relay-box footprint / insulating sheet: `300 x 197 mm`
+- Existing relay-box uncovered bottom footprint / insulating sheet: `300 x 197 mm`
 - Aluminium base plate: `360 x 245 mm`
 - Base material: `3.0 mm 5052-H32 aluminium`
 - Insulating sheet: `3.0 mm ABS, HDPE, polypropylene, G10, or phenolic`
 
 ## Installation Notes
 
-- Mount the relay box on the exact-size insulating sheet, then mount both to the aluminium base plate.
-- Use the exposed base-plate slots to attach the assembly to the battery stand or front access ladder.
-- Transfer relay-box fixing holes from the actual relay enclosure after confirming the final orientation.
+- Mount the relay box by its large uncovered bottom face on the exact-size insulating sheet, then mount both to the aluminium base plate.
+- Use the exposed base-plate slots to attach the assembly to the battery stand or front access ladder; in the battery power carrier this base is mounted vertically and directly flat to the main metal service sheet.
+- Transfer relay-box bottom-face fixing holes from the actual relay enclosure after confirming the final orientation.
 - Keep the relay box cover removable and keep top power exits / end-side loom exits clear.
 - Do not add a folded carrier or rear tray unless the vehicle mock-up proves the flat base cannot be supported.
 """

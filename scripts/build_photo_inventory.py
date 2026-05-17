@@ -2280,6 +2280,44 @@ FILE_OVERRIDES.update(
     }
 )
 
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "chassis_underside",
+            "frame_floor_underside_and_lines",
+            "underside_inspection",
+            "underside_assessment_input",
+            "high",
+            (
+                "chassis",
+                "underside",
+                "underbody",
+                "frame",
+                "floor",
+                "assessment",
+            ),
+            "Google Photos May 14 chassis underside batch selected for underside assessment; use these as direct inspection inputs for frame/floor underside, line routing, brackets, and crossmember condition review.",
+        )
+        for file_name in (
+            "20260514_131654_gp_X9nuzrAw.jpg",
+            "20260514_131705_gp_1lBIZ23g.jpg",
+            "20260514_131713_gp_vMeGm6hQ.jpg",
+            "20260514_131719_gp_afzzZAdQ.jpg",
+            "20260514_131726_gp_5bfPs4Vw.jpg",
+            "20260514_131732_gp_jF6HwyFQ.jpg",
+            "20260514_131739_gp_fiEuvooA.jpg",
+            "20260514_131749_gp_pImh6gQQ.jpg",
+            "20260514_131754_gp_DZoems5Q.jpg",
+            "20260514_131802_gp_j8XssFqQ.jpg",
+            "20260514_131810_gp_z0Z4XiNw.jpg",
+            "20260514_131820_gp_1xufuqnA.jpg",
+            "20260514_131828_gp_X2MxCSEQ.jpg",
+            "20260514_131834_gp_V4LCu2hw.jpg",
+            "20260514_131845_gp_ythUacVA.jpg",
+        )
+    }
+)
+
 
 TIMESTAMP_RE = re.compile(r"^(?P<date>\d{8})_(?P<time>\d{6})")
 IMG_DATE_RE = re.compile(r"^IMG-(?P<date>\d{8})-")

@@ -1,6 +1,6 @@
 # Parts List Review
 
-- Generated: 2026-05-14 11:35:30
+- Generated: 2026-05-17 16:31:08
 - Source: `data/manual/expenses.csv` (`bucket=parts`) -> 120 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
@@ -9,10 +9,10 @@
 
 - `buy_now`: 39
 - `cancelled_or_not_required`: 12
-- `completed_or_received`: 31
+- `completed_or_received`: 32
 - `deferred`: 6
 - `needs_spec_before_order`: 15
-- `ordered_waiting_arrival`: 6
+- `ordered_waiting_arrival`: 5
 - `spec_ready_release_hold`: 4
 - `unclear`: 7
 
@@ -48,11 +48,11 @@
 - `part_firewall_grommet_set_large_power` [electrical_reset] Additional firewall grommet set IDs 16/20/25 mm
 - `part_firewall_grommet_set_small_medium` [electrical_reset] Additional firewall grommet set IDs 6/8/10/12 mm
 - `part_hvac_blower_clutch_fan_wiring_20260514` [electrical_reset] Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request
-- `part_fabrication_raw_aluminium_plate_3mm_20260513` [fabrication_handoff] 3.0 mm 5052-H32 aluminium sheet for MIDI/cutoff electrical plates
-- `part_fabrication_raw_electrical_plastic_sheet_20260513` [fabrication_handoff] Electrical insulating plastic sheet - 5.0 mm holder board
+- `part_fabrication_raw_aluminium_plate_3mm_20260513` [fabrication_handoff] 3.0 mm 5052-H32 aluminium sheet for MIDI enclosure, Relay Rev D base, and cutoff electrical plates
+- `part_fabrication_raw_electrical_plastic_sheet_20260513` [fabrication_handoff] Electrical insulating plastic/G10 sheet - MIDI 5.0 mm board and relay 3.0 mm sheet
 - `part_fabrication_raw_epdm_sheet_small_isolators_20260513` [fabrication_handoff] 3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads
-- `part_fabrication_raw_mild_steel_plate_3mm_20260513` [fabrication_handoff] 3.0 mm mild-steel sheet plus 90-degree angle/L-section stock for compact battery tray/cassette
-- `part_fabrication_raw_mild_steel_plate_4mm_20260513` [fabrication_handoff] 4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright and radiator post
+- `part_fabrication_raw_mild_steel_plate_3mm_20260513` [fabrication_handoff] 3.0 mm mild-steel sheet plus 90-degree angle/L-section stock for compact battery tray/access ladder
+- `part_fabrication_raw_mild_steel_plate_4mm_20260513` [fabrication_handoff] 4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post
 - `part_hvac_control_panel_20260514` [interior_weatherproofing] Compact A/C control panel or integrated controls
 - `part_hvac_duct_defrost_hose_kit_20260514` [interior_weatherproofing] 2.5 inch duct hose, vent adapters, and defrost/demist hose kit
 - `part_hvac_evaporator_drain_mount_kit_20260514` [interior_weatherproofing] Evaporator drain hose and mounting/sealing kit
@@ -83,4 +83,4 @@
 
 - `floor_finish_stack` (3 rows): Floor/interior finish stack [action buckets: deferred]
 - `grommet_options` (4 rows): Grommet options [action buckets: buy_now|deferred]
-- `switch_options` (3 rows): Switch inventory [action buckets: buy_now]
+- `switch_options` (4 rows): Switch inventory [action buckets: buy_now]

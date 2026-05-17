@@ -3,7 +3,7 @@ from __future__ import annotations
 import csv
 from pathlib import Path
 
-import generate_electrical_module_drawings as base
+import fabrication_drawing_base as base
 
 
 OUT_DIR = Path("/Users/davidpridmore/IdeaProjects/J40/data/manual/fabrication/battery_power_carrier_mount_rev_a")
@@ -32,7 +32,7 @@ def integrated_backplane() -> base.Drawing:
         base.rounded_slot_poly(600, 22, 42, 16),
         base.rounded_slot_poly(18, 270, 42, 16),
         base.rounded_slot_poly(600, 270, 42, 16),
-        # Simplified Relay Rev D flat-base attachment field, kept outboard so the covered box is not hidden by the battery.
+        # Simplified Relay Rev D flat-base attachment field, kept outboard and vertical on the main service sheet.
         base.rounded_slot_poly(58, 58, 34, 12),
         base.rounded_slot_poly(218, 58, 34, 12),
         base.rounded_slot_poly(58, 226, 34, 12),
@@ -59,13 +59,13 @@ def integrated_backplane() -> base.Drawing:
     ]
     notes = [
         f"Raised front/radiator-side access ladder: {FRONT_LADDER_W} x {FRONT_LADDER_H} x 3.0 mm mild steel. This wider Rev F ladder moves the covered relay box fully outside the standard battery envelope and keeps its cover openable with the battery installed.",
-        "The Relay Rev D flat aluminium base mounts on the outboard/access edge of this ladder, with the already-covered relay box face reachable without lifting the battery and a 300 x 197 insulating sheet between the relay box and the aluminium base.",
-        "Relay Rev D is now only the existing covered relay box, its exact-size insulating sheet, and a flat aluminium mounting base; do not add separate red/black relay cable-boot or loom-card fabrication above the box.",
+        "The Relay Rev D flat aluminium base mounts vertically and flat against the outboard/access edge of this ladder/main service sheet, with the relay box's covered face reachable without lifting the battery and a 300 x 197 insulating sheet between the relay box's large uncovered bottom face and the aluminium base.",
+        "Relay Rev D is now only the existing covered relay box, its exact-size bottom insulating sheet, and a flat aluminium mounting base directly attached to the main metal sheet; do not add separate red/black relay cable-boot or loom-card fabrication above the box.",
         "MIDI Rev D is the current hinged aluminium enclosure on a separated top/front shelf zone, with its leading edge aligned to the battery leading edge datum, the cutoff-switched power input entering the fuse 4 / second-from-last holder grommet, and five grommeted outputs leaving the opposite side.",
         "The far-side MIDI output grommet must be enlarged for the output that leaves with two power cables.",
         "The folded cutoff/kill-switch base/guard sits beside the MIDI fuse shelf rather than behind it, because there is not enough depth after the MIDI outputs for another heavy-cable device. Put the far-side cutoff stud to the battery and the near-side switched stud toward the relay/MIDI split.",
-        "Model the battery positive entering the side-mounted cutoff/kill switch first from the central battery terminal position. The cutoff output then splits from the side closer to the relay/MIDI equipment: one branch to the existing relay box feed and one branch to the second-from-last MIDI holder input.",
-        "Keep at least an 80 mm cable fanout/gutter around the existing relay box, cutoff lugs, MIDI feed, and five MIDI output lugs. Clip relay and MIDI wiring to the stand only after the real box exits and cable bends are checked. Do not cut final holes until the battery-cavity map proves radiator, hose, steering, bonnet, tool, battery removal, and cable-bend clearance.",
+        "Model the battery positive entering the side-mounted cutoff/kill switch first from the central battery terminal position. The cutoff output then splits from the side closer to the relay/MIDI equipment: one branch becomes the red relay power pipe into the relay top hole closest to the battery, and one branch feeds the second-from-last MIDI holder input.",
+        "Model the relay output power bundle leaving from the second top relay hole, then clipped into the shared service gutter. Keep at least an 80 mm cable fanout/gutter around the existing relay box, cutoff lugs, MIDI feed, and five MIDI output lugs. Clip relay and MIDI wiring to the stand only after the real box exits and cable bends are checked. Do not cut final holes until the battery-cavity map proves radiator, hose, steering, bonnet, tool, battery removal, and cable-bend clearance.",
     ]
     return base.Drawing(
         "battery_power_compact_front_service_rail_rev_b",
@@ -255,7 +255,7 @@ def battery_stand_top_tray() -> base.Drawing:
         f"Compact battery stand top tray: {TRAY_W} x {TRAY_D} x 3.0 mm mild steel tray/deck around a standard N70/27-class battery envelope up to {BATTERY_W} x {BATTERY_D} x {BATTERY_H} mm with service allowance.",
         "The battery must be clamped by a removable top crossbar and J-rods/vertical rods outside the terminal path. Remove the hold-down before lifting the battery vertically out of the tray.",
         "Add low end/side stops or a formed edge so the battery cannot slide, but keep them low enough that the case can still be lifted out when the hold-down is removed.",
-        "Electrical equipment uses the raised front/radiator-side access ladder: Relay Rev D flat base rotated 90 degrees on the outboard/access edge, MIDI Rev D hinged enclosure at the battery leading-edge datum, and the cutoff/kill switch beside the MIDI enclosure rather than after the fuse outputs. Route battery positive into the cutoff first, then split the cutoff output to the relay and MIDI inputs. Do not use tray skin or the engine-side gap as a large backplane.",
+        "Electrical equipment uses the raised front/radiator-side access ladder: Relay Rev D vertical flat base directly attached to the outboard/access edge main sheet, MIDI Rev D hinged enclosure at the battery leading-edge datum, and the cutoff/kill switch beside the MIDI enclosure rather than after the fuse outputs. Route battery positive into the cutoff first, then split the cutoff output to the relay battery-side top hole and MIDI input. Do not use tray skin or the engine-side gap as a large backplane.",
         "Final battery footprint, central terminal positions/orientation, clamp path, bonnet clearance, front-cavity clearance, and LHD steering-side clearance are vehicle-measurement holds.",
         "Add an acid-resistant battery mat after paint; do not allow battery case or terminals to touch live studs or sharp steel edges.",
     ]
@@ -347,9 +347,12 @@ def write_static_3d_visualisation() -> None:
     elements.extend(iso_prism(2, 276, 340, 18, 318, 8, "hold-top", "hold-side", "hold-front"))
     elements.extend(iso_prism(-200, 20, 660, 10, 82, 310, "plate-top", "plate-side", "plate-front"))
     # Known fabricated component bases now share a raised front/radiator-side service ladder.
-    elements.extend(iso_prism(-300, 38, 245, 8, 128, 360, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
-    elements.extend(iso_prism(-276, 36, 197, 6, 138, 300, "midi-board-top", "midi-board-side", "midi-board-front"))
-    elements.extend(iso_prism(-276, 44, 197, 38, 168, 300, "relay-fuse-top", "relay-fuse-side", "relay-fuse-front"))
+    elements.extend(iso_prism(-350, 24, 360, 8, 128, 245, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
+    elements.extend(iso_prism(-320, 18, 300, 6, 136, 197, "midi-board-top", "midi-board-side", "midi-board-front"))
+    elements.extend(iso_prism(-320, -58, 300, 76, 142, 197, "relay-fuse-top", "relay-fuse-side", "relay-fuse-front"))
+    elements.extend(iso_prism(-310, -66, 280, 8, 152, 177, "relay-fuse-top", "relay-fuse-side", "relay-fuse-front"))
+    elements.extend(iso_prism(-88, -72, 34, 14, 330, 10, "relay-fuse-top", "relay-fuse-side", "relay-fuse-front"))
+    elements.extend(iso_prism(-176, -72, 44, 14, 330, 10, "relay-fuse-top", "relay-fuse-side", "relay-fuse-front"))
     # MIDI starts from the battery leading-edge datum; the kill switch sits beside it, not after it.
     elements.extend(iso_prism(12, 18, 210, 165, 292, 8, "midi-plate-top", "midi-plate-side", "midi-plate-front"))
     elements.extend(iso_prism(12, 18, 210, 8, 300, 65, "midi-plate-top", "midi-plate-side", "midi-plate-front"))
@@ -377,9 +380,9 @@ def write_static_3d_visualisation() -> None:
         elements.append(f'<circle class="breaker-terminal" cx="{x:.1f}" cy="{y:.1f}" r="5" />')
     elements.append(iso_polyline([(195, 108, 312), (250, 74, 336), (306, 110, 350)], "positive-cable"))
     elements.append(iso_polyline([(252, 86, 350), (168, 86, 316), (118, 54, 330)], "relay-feed"))
-    elements.append(iso_polyline([(252, 86, 350), (56, 88, 322), (-170, 66, 308)], "relay-feed"))
-    elements.append(iso_polyline([(118, 54, 330), (40, 52, 326), (-170, 66, 308)], "branch-cable"))
-    elements.append(iso_polyline([(-170, 66, 308), (-224, 42, 210), (-260, 44, 160)], "branch-cable"))
+    elements.append(iso_polyline([(252, 86, 350), (56, 88, 322), (-72, -72, 338)], "relay-feed"))
+    elements.append(iso_polyline([(-154, -72, 338), (-224, 42, 360), (-292, 54, 356)], "branch-cable"))
+    elements.append(iso_polyline([(118, 54, 330), (40, 52, 326), (-72, -72, 338)], "branch-cable"))
     elements.extend(iso_prism(8, 34, 410, 34, 330, 10, "keepout-top", "keepout-side", "keepout-front"))
     for point in [(214, 156, -50), (382, 156, -50), (214, 296, -50), (382, 296, -50)]:
         x, y = iso_point(*point)
@@ -390,7 +393,7 @@ def write_static_3d_visualisation() -> None:
         ("Single upright bridge", 166, 365),
         ("Edge-cavity battery tray / stand", 286, 434),
         ("Standard battery envelope on stand", 218, 214),
-        ("Relay Rev D flat base", 446, 230),
+        ("Vertical Relay Rev D base", 446, 230),
         ("Existing MIDI Rev D fuse box", 420, 305),
         ("Side-mounted kill switch tray", 520, 305),
         ("Cutoff near side feeds relay + MIDI", 492, 332),
@@ -401,7 +404,7 @@ def write_static_3d_visualisation() -> None:
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="920" height="620" viewBox="0 0 920 620" role="img" aria-labelledby="title desc">
   <title id="title">Battery stand power carrier Rev F standard-battery access 3D visualisation</title>
-  <desc id="desc">Isometric visualisation of a compact steel battery stand mounted by a formed saddle over the more central chassis rail, carrying a standard N70/27-class battery envelope with central terminals on a removable hold-down tray shifted about 190 mm wing-side/outboard from the chassis pickup into the edge cavity by adjustable body-side offset bars, with the relay-to-battery gap tightened to about 80 mm, an outboard-access covered Relay Rev D box on a flat aluminium base and exact-footprint insulating sheet, MIDI Rev D hinged enclosure aligned to the battery datum with the power input on fuse 4 and five output grommets including an enlarged far-side two-cable output, a side-mounted cutoff/kill-switch tray with the battery feed on the far-side stud, and cutoff-switched feeds to both relay and MIDI while the inboard engine/LHD side stays clear.</desc>
+  <desc id="desc">Isometric visualisation of a compact steel battery stand mounted by a formed saddle over the more central chassis rail, carrying a standard N70/27-class battery envelope with central terminals on a removable hold-down tray shifted about 190 mm wing-side/outboard from the chassis pickup into the edge cavity by adjustable body-side offset bars, with the relay-to-battery gap tightened to about 80 mm, an outboard-access covered Relay Rev D assembly mounted vertically with its flat aluminium base directly attached to the main service sheet and an exact-footprint insulating sheet under the relay box, MIDI Rev D hinged enclosure aligned to the battery datum with the power input on fuse 4 and five output grommets including an enlarged far-side two-cable output, a side-mounted cutoff/kill-switch tray with the battery feed on the far-side stud, the red relay power pipe entering the relay top hole closest to the battery, and the relay output power bundle leaving the second top hole while the inboard engine/LHD side stays clear.</desc>
   <style>
     .background {{ fill: #f6f7f8; }}
     .shadow {{ fill: #d9dde2; opacity: 0.55; }}
@@ -619,7 +622,7 @@ def write_interactive_3d_visualisation() -> None:
       <span class="chip">Removable hold-down</span>
       <span class="chip">Outboard relay access</span>
       <span class="chip">Tightened relay gap</span>
-      <span class="chip">Relay Rev D flat base</span>
+      <span class="chip">Vertical Relay Rev D base</span>
       <span class="chip">No added relay loom cards</span>
       <span class="chip">Covered relay box</span>
       <span class="chip">Side kill switch</span>
@@ -645,7 +648,7 @@ def write_interactive_3d_visualisation() -> None:
         </div>
         <div>
           <dt>Power path</dt>
-          <dd>Relay Rev D sits outside the battery footprint on its flat aluminium base with the exact 300 x 197 mm insulating sheet under the existing covered relay box. MIDI Rev D starts on the battery leading-edge datum inside the hinged enclosure, with the power input on fuse 4, five grommeted outputs, and the far-side output enlarged for two power cables. The cutoff far-side stud connects to the central battery positive, and the nearer switched stud splits to relay and MIDI.</dd>
+          <dd>Relay Rev D sits outside the battery footprint as a vertical assembly: its flat aluminium base is directly attached flat to the main service sheet, with the exact 300 x 197 mm insulating sheet between the base and relay box. MIDI Rev D starts on the battery leading-edge datum inside the hinged enclosure, with the power input on fuse 4, five grommeted outputs, and the far-side output enlarged for two power cables. The cutoff far-side stud connects to the central battery positive, and the nearer switched stud splits to MIDI and to the red relay power pipe entering the relay top hole closest to the battery; the relay output power bundle leaves the second top relay hole.</dd>
         </div>
         <div>
           <dt>Service intent</dt>
@@ -761,12 +764,15 @@ def write_interactive_3d_visualisation() -> None:
       cyl("Forward saddle through-bolt", -72, -96, 70, 5, 172, materials.brass, Math.PI / 2);
       cyl("Rear saddle through-bolt", 72, -96, 70, 5, 172, materials.brass, Math.PI / 2);
     }
-    function relayFuseBoxVertical(name, x, y, z) {
-      box(`${name} rotated housing 197 x 300 x 80`, x, y, z - 40, 197, 300, 64, materials.relay);
-      box(`${name} rotated plain removable front cover`, x, y, z - 78, 183, 286, 9, materials.black);
-      box(`${name} rotated shallow raised cover rim`, x, y, z - 86, 197, 300, 6, materials.relayDetail);
-      cyl(`${name} rotated upper cover screw`, x - 46, y + 112, z - 94, 4, 8, materials.silver, Math.PI / 2);
-      cyl(`${name} rotated lower cover screw`, x + 46, y - 112, z - 94, 4, 8, materials.silver, Math.PI / 2);
+    function relayFuseBoxVerticalMounted(name, x, y, z) {
+      box(`${name} large uncovered bottom face against vertical insulating sheet 300 x 197`, x, y, z - 6, 300, 197, 4, materials.black);
+      box(`${name} covered plastic enclosure on vertical Relay Rev D base 300 x 197 x 80`, x, y, z - 46, 300, 197, 76, materials.relay);
+      box(`${name} removable cover accessible outward from vertical carrier`, x, y, z - 88, 286, 183, 8, materials.black);
+      box(`${name} shallow raised cover rim on outward cover face`, x, y, z - 95, 250, 147, 5, materials.relayDetail);
+      box(`${name} battery-side top power input hole for red power pipe`, x + 42, y + 104, z - 99, 44, 22, 10, materials.cableRed);
+      box(`${name} second top hole for relay output power bundle`, x - 42, y + 104, z - 99, 50, 22, 10, materials.black);
+      cyl(`${name} upper cover screw on accessible cover`, x - 70, y + 55, z - 104, 4, 8, materials.silver);
+      cyl(`${name} lower cover screw on accessible cover`, x + 70, y - 55, z - 104, 4, 8, materials.silver);
     }
     function midiHolderVertical(name, x, y, z) {
       box(`${name} black linked base`, x, y, z - 28, 25, 82, 16, materials.black);
@@ -811,13 +817,12 @@ def write_interactive_3d_visualisation() -> None:
       box(`${name} black cable boot`, x + 62, y + 42, z + 42, 36, 18, 20, materials.black);
     }
     function knownRelayCarrierBase(x, y, z) {
-      box("Relay Rev D flat aluminium base plate installed rotated 245 x 360", x, y, z, 245, 360, 8, materials.plateEdge);
-      box("Relay Rev D exact-footprint insulating sheet installed rotated 197 x 300", x, y, z - 12, 197, 300, 6, materials.midiBoard);
-      box("Relay cover removal volume in front of rotated cover", x, y, z - 128, 260, 360, 56, materials.keepout);
-      relayFuseBoxVertical("Relay/fuse box on fabricated base", x, y, z);
-      for (const sy of [-154, 154]) {
-        cyl("Relay Rev D base-to-stand slot marker", x - 86, y + sy, z + 8, 4, 10, materials.brass, 0);
-        cyl("Relay Rev D base-to-stand slot marker", x + 86, y + sy, z + 8, 4, 10, materials.brass, 0);
+      box("Relay Rev D flat aluminium base plate vertical, attached flat to main service sheet 360 x 245", x, y, z, 360, 245, 8, materials.plateEdge);
+      box("Relay Rev D exact-footprint insulating sheet on vertical base 300 x 197", x, y, z - 8, 300, 197, 6, materials.midiBoard);
+      box("Relay cover pull-off/removal volume in front of vertical box", x, y, z - 142, 380, 260, 110, materials.keepout);
+      relayFuseBoxVerticalMounted("Relay/fuse box on vertical Relay Rev D base", x, y, z);
+      for (const slot of [[-150, -104], [150, -104], [-150, 104], [150, 104]]) {
+        cyl("Relay Rev D base-to-main-sheet slot marker outside relay box footprint", x + slot[0], y + slot[1], z - 12, 4, 10, materials.brass);
       }
     }
     function knownMidiBase(x, y, z) {
@@ -885,18 +890,18 @@ def write_interactive_3d_visualisation() -> None:
     knownMidiTopShelf(-264, 318, 198);
     cutoffSwitchTop("Side-mounted 100A resettable breaker / kill switch", -58, 318, 198);
     box("Inboard engine/LHD steering-side keep-clear envelope", 142, 150, 70, 16, 260, 270, materials.keepout);
-    box("Relay cover removal clearance outside battery footprint with tightened 80 mm battery gap", -550, 238, 92, 380, 250, 76, materials.keepout);
+    box("Relay cover removal clearance in front of vertical relay box", -550, 238, 34, 380, 260, 110, materials.keepout);
     box("Shared 80 mm power cable gutter above relay/MIDI and side-mounted kill switch", -450, 392, 228, 660, 26, 92, materials.keepout);
     box("MIDI Rev D enclosure output fanout clearance with output 5 double-wire grommet", -354, 424, 250, 360, 106, 86, materials.keepout);
     cable("Central battery positive to far-side cutoff input", [[-104, 318, 32], [-88, 350, 116], [-22, 382, 229]], 7, materials.cableRed);
     box("Near-side cutoff output splitter feeding relay and MIDI", -94, 386, 167, 34, 10, 34, materials.brass);
     const cutoffOutput = [-94, 386, 167];
     cable("Cutoff switched feed to MIDI fuse 4 power input", [cutoffOutput, [-150, 396, 176], [-237, 382, 164]], 7, materials.cableRed);
-    cable("Cutoff switched feed to relay top power input", [cutoffOutput, [-330, 406, 210], [-592, 402, 124]], 7, materials.cableRed);
-    cable("Existing relay-box harness exits clipped to service gutter", [[-508, 402, 124], [-550, 442, 152], [-626, 456, 178]], 8, materials.cableRed);
-    cable("Small-wire bundle routed under MIDI enclosure to relay box", [[-188, 300, 128], [-282, 296, 134], [-420, 340, 138], [-568, 402, 124]], 4, materials.cableBlack);
-    cable("Existing relay-box input loom routed toward cabin", [[-568, 118, 64], [-620, 120, 34], [-692, 92, 16]], 5, materials.cableBlack);
-    cable("Existing relay-box local branch clipped from same loom", [[-568, 118, 64], [-620, 154, 48], [-650, 188, 46]], 3, materials.cableBlack);
+    cable("Red relay power pipe enters battery-side top relay hole", [cutoffOutput, [-330, 386, 176], [-508, 342, 62]], 7, materials.cableRed);
+    cable("Relay output power bundle exits second top relay hole to service gutter", [[-592, 342, 62], [-612, 408, 112], [-626, 456, 178]], 9, materials.cableRed);
+    cable("Small-wire bundle routed under MIDI enclosure to relay box", [[-188, 300, 128], [-282, 296, 134], [-420, 318, 104], [-568, 334, 72]], 4, materials.cableBlack);
+    cable("Existing relay-box input loom routed toward cabin", [[-568, 154, 72], [-620, 120, 34], [-692, 92, 16]], 5, materials.cableBlack);
+    cable("Existing relay-box local branch clipped from same loom", [[-568, 154, 72], [-620, 154, 48], [-650, 188, 46]], 3, materials.cableBlack);
     box("Cutoff side-by-side service clearance ahead of switched output splitter", -58, 424, 198, 206, 72, 144, materials.keepout);
     const midiOutputXs = [-318, -291, -264, -237, -210];
     for (let idx = 0; idx < midiOutputXs.length; idx += 1) {
@@ -976,9 +981,12 @@ def write_assembled_static_3d_visualisation() -> None:
     elements.extend(iso_prism(2, 96, 340, 18, 318, 8, "hold-top", "hold-side", "hold-front"))
     elements.extend(iso_prism(2, 276, 340, 18, 318, 8, "hold-top", "hold-side", "hold-front"))
     elements.extend(iso_prism(-200, 20, 660, 10, 82, 310, "plate-top", "plate-side", "plate-front"))
-    elements.extend(iso_prism(-300, 38, 245, 8, 128, 360, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
-    elements.extend(iso_prism(-276, 36, 197, 6, 138, 300, "midi-board-top", "midi-board-side", "midi-board-front"))
-    elements.extend(iso_prism(-276, 44, 197, 38, 168, 300, "relay-fuse-top", "relay-fuse-side", "relay-fuse-front"))
+    elements.extend(iso_prism(-350, 24, 360, 8, 128, 245, "relay-tray-top", "relay-tray-side", "relay-tray-front"))
+    elements.extend(iso_prism(-320, 18, 300, 6, 136, 197, "midi-board-top", "midi-board-side", "midi-board-front"))
+    elements.extend(iso_prism(-320, -58, 300, 76, 142, 197, "relay-fuse-top", "relay-fuse-side", "relay-fuse-front"))
+    elements.extend(iso_prism(-310, -66, 280, 8, 152, 177, "relay-fuse-top", "relay-fuse-side", "relay-fuse-front"))
+    elements.extend(iso_prism(-88, -72, 34, 14, 330, 10, "relay-fuse-top", "relay-fuse-side", "relay-fuse-front"))
+    elements.extend(iso_prism(-176, -72, 44, 14, 330, 10, "relay-fuse-top", "relay-fuse-side", "relay-fuse-front"))
     # MIDI starts from the battery leading-edge datum; the kill switch sits beside it, not after it.
     elements.extend(iso_prism(12, 18, 210, 165, 292, 8, "midi-plate-top", "midi-plate-side", "midi-plate-front"))
     elements.extend(iso_prism(12, 18, 210, 8, 300, 65, "midi-plate-top", "midi-plate-side", "midi-plate-front"))
@@ -1005,9 +1013,9 @@ def write_assembled_static_3d_visualisation() -> None:
         elements.append(f'<circle class="breaker-terminal" cx="{x:.1f}" cy="{y:.1f}" r="5" />')
     elements.append(iso_polyline([(195, 108, 312), (250, 74, 336), (306, 110, 350)], "positive-cable"))
     elements.append(iso_polyline([(252, 86, 350), (168, 86, 316), (118, 54, 330)], "relay-feed"))
-    elements.append(iso_polyline([(252, 86, 350), (56, 88, 322), (-170, 66, 308)], "relay-feed"))
-    elements.append(iso_polyline([(118, 54, 330), (40, 52, 326), (-170, 66, 308)], "branch-cable"))
-    elements.append(iso_polyline([(-170, 66, 308), (-224, 42, 210), (-260, 44, 160)], "branch-cable"))
+    elements.append(iso_polyline([(252, 86, 350), (56, 88, 322), (-72, -72, 338)], "relay-feed"))
+    elements.append(iso_polyline([(-154, -72, 338), (-224, 42, 360), (-292, 54, 356)], "branch-cable"))
+    elements.append(iso_polyline([(118, 54, 330), (40, 52, 326), (-72, -72, 338)], "branch-cable"))
     elements.extend(iso_prism(8, 34, 410, 34, 330, 10, "keepout-top", "keepout-side", "keepout-front"))
     for point in [(214, 156, -50), (382, 156, -50), (214, 296, -50), (382, 296, -50)]:
         x, y = iso_point(*point)
@@ -1017,7 +1025,7 @@ def write_assembled_static_3d_visualisation() -> None:
         ("Standard battery with central terminals", 168, 214),
         ("Formed chassis saddle", 132, 508),
         ("Single upright bridge", 158, 364),
-        ("Relay Rev D flat base", 500, 252),
+        ("Vertical Relay Rev D base", 500, 252),
         ("Existing MIDI Rev D box with side kill switch", 350, 340),
         ("Engine/LHD side kept clear", 548, 430),
     ):
@@ -1025,7 +1033,7 @@ def write_assembled_static_3d_visualisation() -> None:
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="920" height="620" viewBox="0 0 920 620" role="img" aria-labelledby="title desc">
   <title id="title">Battery stand power carrier Rev F standard-battery assembled 3D visualisation</title>
-  <desc id="desc">Attached assembly view of the compact steel battery stand with a formed saddle over the more central chassis rail, standard N70/27-class battery envelope with central terminals on a removable hold-down tray shifted about 190 mm wing-side/outboard from the chassis pickup into the edge cavity by adjustable body-side offset bars, tightened relay-to-battery service gap of about 80 mm, outboard-access covered Relay Rev D box on a flat aluminium base and exact-footprint insulating sheet, MIDI Rev D hinged enclosure with fuse 4 power input and five output grommets including an enlarged far-side two-cable output, a side-mounted cutoff/kill-switch tray with the battery feed on the far-side stud, cutoff-switched feeds to both relay and MIDI, and the inboard engine/LHD side kept clear.</desc>
+  <desc id="desc">Attached assembly view of the compact steel battery stand with a formed saddle over the more central chassis rail, standard N70/27-class battery envelope with central terminals on a removable hold-down tray shifted about 190 mm wing-side/outboard from the chassis pickup into the edge cavity by adjustable body-side offset bars, tightened relay-to-battery service gap of about 80 mm, outboard-access Relay Rev D mounted vertically with the flat aluminium base directly attached to the main service sheet and the exact-footprint insulating sheet under the relay box, MIDI Rev D hinged enclosure with fuse 4 power input and five output grommets including an enlarged far-side two-cable output, a side-mounted cutoff/kill-switch tray with the battery feed on the far-side stud, red relay power pipe entering the relay top hole closest to the battery, relay output power bundle leaving the second top hole, and the inboard engine/LHD side kept clear.</desc>
   <style>
     .background {{ fill: #f6f7f8; }}
     .shadow {{ fill: #d9dde2; opacity: 0.55; }}
@@ -1137,7 +1145,7 @@ def write_assembled_interactive_3d_visualisation() -> None:
       <span class="chip">Removable hold-down</span>
       <span class="chip">Outboard relay access</span>
       <span class="chip">Tightened relay gap</span>
-      <span class="chip">Relay Rev D flat base</span>
+      <span class="chip">Vertical Relay Rev D base</span>
       <span class="chip">No added relay loom cards</span>
       <span class="chip">Covered relay box</span>
       <span class="chip">Side kill switch</span>
@@ -1158,7 +1166,7 @@ def write_assembled_interactive_3d_visualisation() -> None:
       <h2>Assembly Read</h2>
       <dl>
         <div><dt>Load path</dt><dd>One formed saddle over the more central chassis rail, an upright bridge, and slotted body-side offset bars carry the compact steel battery tray shifted about 190 mm wing-side/outboard, standard battery envelope, removable hold-down, and widened front access-ladder shelf/tab pickups so the assembly sits in the edge cavity.</dd></div>
-        <div><dt>Integrated equipment</dt><dd>The standard N70/27-class battery envelope with central terminals, outboard-access covered Relay Rev D flat base with exact 300 x 197 mm insulating sheet, the existing covered relay box without added red/black fabrication above it, the existing MIDI Rev D hinged enclosure with fuse 4 power input and five output grommets, and a side-by-side cutoff base/guard with the battery on the far-side stud and near-side switched stud feeding relay/MIDI are shown attached as a front access-ladder layout.</dd></div>
+        <div><dt>Integrated equipment</dt><dd>The standard N70/27-class battery envelope with central terminals, outboard-access Relay Rev D vertical flat base directly attached to the main metal service sheet, exact 300 x 197 mm insulating sheet, existing covered relay box without added red/black fabrication above it, existing MIDI Rev D hinged enclosure with fuse 4 power input and five output grommets, and a side-by-side cutoff base/guard with the battery on the far-side stud are shown attached as a front access-ladder layout. The near-side switched stud feeds MIDI and the red relay power pipe into the relay top hole closest to the battery; the relay output power bundle leaves the second top relay hole.</dd></div>
         <div><dt>Release hold</dt><dd>Final hole centres, holder positions, battery lift-out path, and cable paths still need battery-installed LHD mock-up photos before cutting final metal, with the inboard engine side treated as a service/clearance envelope.</dd></div>
       </dl>
     </aside>
@@ -1260,12 +1268,15 @@ def write_assembled_interactive_3d_visualisation() -> None:
       cyl("Assembled forward saddle through-bolt", -72, -96, 70, 5, 172, materials.brass, Math.PI / 2);
       cyl("Assembled rear saddle through-bolt", 72, -96, 70, 5, 172, materials.brass, Math.PI / 2);
     }
-    function relayFuseBoxVertical(name, x, y, z) {
-      box(`${name} rotated housing 197 x 300 x 80`, x, y, z - 40, 197, 300, 64, materials.relay);
-      box(`${name} rotated plain removable front cover`, x, y, z - 78, 183, 286, 9, materials.black);
-      box(`${name} rotated shallow raised cover rim`, x, y, z - 86, 197, 300, 6, materials.relayDetail);
-      cyl(`${name} rotated upper cover screw`, x - 46, y + 112, z - 94, 4, 8, materials.silver, Math.PI / 2);
-      cyl(`${name} rotated lower cover screw`, x + 46, y - 112, z - 94, 4, 8, materials.silver, Math.PI / 2);
+    function relayFuseBoxVerticalMounted(name, x, y, z) {
+      box(`${name} large uncovered bottom face against vertical insulating sheet 300 x 197`, x, y, z - 6, 300, 197, 4, materials.black);
+      box(`${name} covered plastic enclosure on vertical Relay Rev D base 300 x 197 x 80`, x, y, z - 46, 300, 197, 76, materials.relay);
+      box(`${name} removable cover accessible outward from vertical carrier`, x, y, z - 88, 286, 183, 8, materials.black);
+      box(`${name} shallow raised cover rim on outward cover face`, x, y, z - 95, 250, 147, 5, materials.relayDetail);
+      box(`${name} battery-side top power input hole for red power pipe`, x + 42, y + 104, z - 99, 44, 22, 10, materials.cableRed);
+      box(`${name} second top hole for relay output power bundle`, x - 42, y + 104, z - 99, 50, 22, 10, materials.black);
+      cyl(`${name} upper cover screw on accessible cover`, x - 70, y + 55, z - 104, 4, 8, materials.silver);
+      cyl(`${name} lower cover screw on accessible cover`, x + 70, y - 55, z - 104, 4, 8, materials.silver);
     }
     function midiHolderVertical(name, x, y, z) {
       box(`${name} black linked base`, x, y, z - 28, 25, 82, 16, materials.black);
@@ -1310,13 +1321,12 @@ def write_assembled_interactive_3d_visualisation() -> None:
       box(`${name} black cable boot`, x + 62, y + 42, z + 42, 36, 18, 20, materials.black);
     }
     function knownRelayCarrierBase(x, y, z) {
-      box("Relay Rev D flat aluminium base plate installed rotated 245 x 360", x, y, z, 245, 360, 8, materials.plateEdge);
-      box("Relay Rev D exact-footprint insulating sheet installed rotated 197 x 300", x, y, z - 12, 197, 300, 6, materials.midiBoard);
-      box("Relay cover removal volume in front of rotated cover", x, y, z - 128, 260, 360, 56, materials.keepout);
-      relayFuseBoxVertical("Relay/fuse box on fabricated base", x, y, z);
-      for (const sy of [-154, 154]) {
-        cyl("Relay Rev D base-to-stand slot marker", x - 86, y + sy, z + 8, 4, 10, materials.brass, 0);
-        cyl("Relay Rev D base-to-stand slot marker", x + 86, y + sy, z + 8, 4, 10, materials.brass, 0);
+      box("Relay Rev D flat aluminium base plate vertical, attached flat to main service sheet 360 x 245", x, y, z, 360, 245, 8, materials.plateEdge);
+      box("Relay Rev D exact-footprint insulating sheet on vertical base 300 x 197", x, y, z - 8, 300, 197, 6, materials.midiBoard);
+      box("Relay cover pull-off/removal volume in front of vertical box", x, y, z - 142, 380, 260, 110, materials.keepout);
+      relayFuseBoxVerticalMounted("Relay/fuse box on vertical Relay Rev D base", x, y, z);
+      for (const slot of [[-150, -104], [150, -104], [-150, 104], [150, 104]]) {
+        cyl("Relay Rev D base-to-main-sheet slot marker outside relay box footprint", x + slot[0], y + slot[1], z - 12, 4, 10, materials.brass);
       }
     }
     function knownMidiBase(x, y, z) {
@@ -1388,18 +1398,18 @@ def write_assembled_interactive_3d_visualisation() -> None:
     knownMidiTopShelf(-264, 318, 198);
     cutoffSwitchTop("Side-mounted 100A resettable breaker / kill switch", -58, 318, 198);
     box("Inboard engine/LHD steering-side keep-clear envelope", 142, 150, 70, 16, 260, 270, materials.keepout);
-    box("Relay cover removal clearance outside battery footprint with tightened 80 mm battery gap", -550, 238, 92, 380, 250, 76, materials.keepout);
+    box("Relay cover removal clearance in front of vertical relay box", -550, 238, 34, 380, 260, 110, materials.keepout);
     box("Shared 80 mm power cable gutter above relay/MIDI and side-mounted kill switch", -450, 392, 228, 660, 26, 92, materials.keepout);
     box("MIDI Rev D enclosure output fanout clearance with output 5 double-wire grommet", -354, 424, 250, 360, 106, 86, materials.keepout);
     cable("Central battery positive to far-side cutoff input", [[-104, 318, 32], [-88, 350, 116], [-22, 382, 229]], 7, materials.cableRed);
     box("Near-side cutoff output splitter feeding relay and MIDI", -94, 386, 167, 34, 10, 34, materials.brass);
     const cutoffOutput = [-94, 386, 167];
     cable("Cutoff switched feed to MIDI fuse 4 power input", [cutoffOutput, [-150, 396, 176], [-237, 382, 164]], 7, materials.cableRed);
-    cable("Cutoff switched feed to relay top power input", [cutoffOutput, [-330, 406, 210], [-592, 402, 124]], 7, materials.cableRed);
-    cable("Existing relay-box harness exits clipped to service gutter", [[-508, 402, 124], [-550, 442, 152], [-626, 456, 178]], 8, materials.cableRed);
-    cable("Small-wire bundle routed under MIDI enclosure to relay box", [[-188, 300, 128], [-282, 296, 134], [-420, 340, 138], [-568, 402, 124]], 4, materials.cableBlack);
-    cable("Existing relay-box input loom routed toward cabin", [[-568, 118, 64], [-620, 120, 34], [-692, 92, 16]], 5, materials.cableBlack);
-    cable("Existing relay-box local branch clipped from same loom", [[-568, 118, 64], [-620, 154, 48], [-650, 188, 46]], 3, materials.cableBlack);
+    cable("Red relay power pipe enters battery-side top relay hole", [cutoffOutput, [-330, 386, 176], [-508, 342, 62]], 7, materials.cableRed);
+    cable("Relay output power bundle exits second top relay hole to service gutter", [[-592, 342, 62], [-612, 408, 112], [-626, 456, 178]], 9, materials.cableRed);
+    cable("Small-wire bundle routed under MIDI enclosure to relay box", [[-188, 300, 128], [-282, 296, 134], [-420, 318, 104], [-568, 334, 72]], 4, materials.cableBlack);
+    cable("Existing relay-box input loom routed toward cabin", [[-568, 154, 72], [-620, 120, 34], [-692, 92, 16]], 5, materials.cableBlack);
+    cable("Existing relay-box local branch clipped from same loom", [[-568, 154, 72], [-620, 154, 48], [-650, 188, 46]], 3, materials.cableBlack);
     box("Cutoff side-by-side service clearance ahead of switched output splitter", -58, 424, 198, 206, 72, 144, materials.keepout);
     const midiOutputXs = [-318, -291, -264, -237, -210];
     for (let idx = 0; idx < midiOutputXs.length; idx += 1) {
@@ -1464,7 +1474,7 @@ This package defines the battery-side power carrier as a compact steel stand tha
 
 - Mount the stand from the known chassis pickup with a formed saddle over the chassis rail, upright bridge plates, and body-side adjustable offset bars rather than a fixed one-piece sideways carrier.
 - Support a standard N70/27-class battery envelope up to `318 x 180 x 230 mm` on the `340 x 265 mm` tray with removable hold-down and vertical lift-out clearance.
-- Use the simplified Relay Rev D fabrication on the outboard/access edge: the existing covered relay box sits on a flat `360 x 245 x 3 mm` aluminium base and exact `300 x 197 mm` insulating sheet.
+- Use the simplified Relay Rev D fabrication on the outboard/access edge: mount the `360 x 245 x 3 mm` aluminium base vertically and flat to the main metal service sheet, then place the exact `300 x 197 mm` insulating sheet and existing covered relay box on that vertical base.
 - Use the MIDI Rev D hinged aluminium enclosure on the top/front shelf: `210 x 165 x 65 mm` enclosure floor, `230 x 185 mm` lid, `140 x 85 mm` insulating subplate, fuse 4 input grommet, five output grommets, and an enlarged far-side output grommet for two power cables.
 - Keep the 100A breaker/cutoff beside the MIDI enclosure, with the far-side cutoff stud fed from the battery and the near-side switched stud splitting to relay and MIDI.
 - Keep the inboard engine/LHD steering side as a service and clearance envelope except for protected cable clips or pass-through routing.
@@ -1488,14 +1498,13 @@ This package defines the battery-side power carrier as a compact steel stand tha
 
 ## Package Relationship
 
-- Relay hardware comes from `relay_mount_rev_d`: flat aluminium base, exact insulating sheet, and transferred relay-box mounting holes from the real covered enclosure.
+- Relay hardware comes from `relay_mount_rev_d`: flat aluminium base mounted vertically against the carrier's main sheet, exact bottom-face insulating sheet, and transferred relay-box mounting holes from the real covered enclosure.
 - MIDI hardware comes from `midi5_enclosure_rev_d`: hinged aluminium enclosure, fuse 4 input grommet, five output-side grommets, and a larger far-side output hole for the double power-cable exit. This battery carrier places that existing box and does not define a second open MIDI plate or output gutter.
 - The older Relay Rev C folded carrier and MIDI Rev C open plate are superseded for this battery power carrier and kept only as fallback/reference history.
-- The older `electrical_modules_rev_a` package remains reference/fallback only.
 
 ## Mock-Up Hold
 
-- Make cardboard cards for the battery envelope, `340 x 265 mm` tray, formed saddle, adjustable offset bars at `160 / 190 / 230 mm`, Relay Rev D base plus relay cover/removal volume, MIDI Rev D hinged enclosure with lid swing, cutoff base/guard, and cable-lug sweep blocks.
+- Make cardboard cards for the battery envelope, `340 x 265 mm` tray, formed saddle, adjustable offset bars at `160 / 190 / 230 mm`, Relay Rev D vertical base attached flat to the main sheet plus relay cover/removal volume, MIDI Rev D hinged enclosure with lid swing, cutoff base/guard, and cable-lug sweep blocks.
 - Test the whole tray/access-ladder assembly shifted toward the wing-side edge cavity from the chassis saddle. Reject any placement that enters the engine/LHD steering shaft/box/service sweep, hydraulic line path, alternator service space, bonnet clearance, radiator/fan envelope, or safe battery terminal service area.
 - Do not final-drill the chassis saddle, offset bars, relay base, MIDI enclosure, or cutoff tab until the filled cavity map and installed dry-fit photos prove service access with the battery installed.
 
@@ -1510,7 +1519,7 @@ This package defines the battery-side power carrier as a compact steel stand tha
 - Tray/access-ladder angle-first stock: `25 x 25 x 3 mm` or `30 x 30 x 3 mm` pre-formed mild-steel angle where it improves stiffness without blocking service access.
 - Chassis saddle, upright bridge, and offset bars: `4.0 mm` mild steel.
 - Battery hold-down crossbar: `3.0 mm` mild steel or stainless.
-- Relay Rev D base: `3.0 mm` 5052-H32 aluminium with insulating sheet between relay box and base.
+- Relay Rev D base: `3.0 mm` 5052-H32 aluminium mounted vertically and flat to the main metal sheet, with the insulating sheet between the relay box's large uncovered bottom face and the base.
 - MIDI Rev D enclosure and cutoff base/guard: `3.0 mm` 5052-H32 aluminium.
 
 ## Safety Notes
@@ -1541,7 +1550,7 @@ def write_cut_list() -> None:
             "material": "mild steel",
             "thickness_mm": "3.0",
             "status": "cavity_map_required",
-            "notes": "Widened 660 x 310 front/radiator-side access ladder: covered Relay Rev D mounts outside the battery footprint on the outboard/access edge using its flat aluminium base and exact insulating sheet, with no separate red/black relay cable-boot or loom-card fabrication added above the existing relay box. It carries pickups for the existing MIDI Rev D hinged enclosure with fuse 4 input and enlarged far-side two-cable output grommet, side-mounted cutoff/kill-switch card, 80 mm cable gutter, central battery-to-far-side-cutoff input, near-side cutoff-to-relay/MIDI feeds, and five heavy MIDI output cables.",
+            "notes": "Widened 660 x 310 front/radiator-side access ladder: Relay Rev D mounts outside the battery footprint on the outboard/access edge with its flat aluminium base attached vertically and flat to the main service sheet, exact insulating sheet under the existing covered relay box, no separate red/black relay cable-boot or loom-card fabrication, the red relay power pipe entering the relay top hole closest to the battery, and the relay output power bundle leaving the second top hole. It carries pickups for the existing MIDI Rev D hinged enclosure with fuse 4 input and enlarged far-side two-cable output grommet, side-mounted cutoff/kill-switch card, 80 mm cable gutter, central battery-to-far-side-cutoff input, near-side cutoff-to-MIDI feed, relay feed, and five heavy MIDI output cables.",
         },
         {
             "part_id": "BSTAND-PICKUP-001",
@@ -1607,7 +1616,7 @@ def write_inspection_checklist() -> None:
         {
             "check_id": "BPCC-CHECK-001A",
             "stage": "compact_cavity_cards",
-            "acceptance_check": "Compact holder cards prove the Rev F access-ladder stack: standard battery envelope 318 x 180 x 230 with central top terminals, removable hold-down and lift-out clearance, Relay Rev D flat base plus exact insulating sheet shifted outside the battery footprint to the outboard/front access edge with about 80 mm relay-to-battery service gap and no added red/black fabrication above the existing covered relay box, the existing MIDI Rev D hinged enclosure on a separated top-front shelf with fuse 4 power input, five output grommets and enlarged far-side two-cable output grommet, folded cutoff/kill-switch base/guard 170 x 110 finished face / 210 x 150 flat pattern with 20 mm upward lips beside the MIDI shelf and far-side battery input, adjustable offset-bar cards at 160 / 190 / 230 mm, near-side cutoff-to-relay/MIDI cable depth, and five heavy MIDI output cable bends clear of LHD steering/hose/fan/bonnet/battery service envelopes.",
+            "acceptance_check": "Compact holder cards prove the Rev F access-ladder stack: standard battery envelope 318 x 180 x 230 with central top terminals, removable hold-down and lift-out clearance, Relay Rev D flat base mounted vertically and directly to the main service sheet with exact insulating sheet and existing covered relay box shifted outside the battery footprint to the outboard/front access edge with about 80 mm relay-to-battery service gap, no added red/black fabrication above the covered relay box, red relay power pipe into the top hole closest to the battery, relay output power bundle from the second top hole, the existing MIDI Rev D hinged enclosure on a separated top-front shelf with fuse 4 power input, five output grommets and enlarged far-side two-cable output grommet, folded cutoff/kill-switch base/guard 170 x 110 finished face / 210 x 150 flat pattern with 20 mm upward lips beside the MIDI shelf and far-side battery input, adjustable offset-bar cards at 160 / 190 / 230 mm, near-side cutoff-to-relay/MIDI cable depth, and five heavy MIDI output cable bends clear of LHD steering/hose/fan/bonnet/battery service envelopes.",
             "required_evidence": "Battery-installed LHD bay photos from top, engine side, wing side, and front with cardboard cards and cable-lug depth marked.",
         },
         {
@@ -1619,7 +1628,7 @@ def write_inspection_checklist() -> None:
         {
             "check_id": "BPCC-CHECK-003",
             "stage": "electrical_fit",
-            "acceptance_check": "Relay Rev D flat base and exact insulating sheet, existing MIDI Rev D hinged enclosure, and master cutoff folded base/guard all mount to the widened raised front/radiator-side access ladder without forced cable bends, live-stud exposure, relay-cover obstruction, MIDI-lid obstruction, battery removal obstruction, or use of the inboard engine-side gap as a component face; cutoff far-side battery input, near-side switched split, MIDI fuse 4 input, MIDI output 5 two-cable grommet, existing relay-box cable exits, and cable routing are all mocked.",
+            "acceptance_check": "Relay Rev D flat base and exact insulating sheet, existing MIDI Rev D hinged enclosure, and master cutoff folded base/guard all mount to the widened raised front/radiator-side access ladder without forced cable bends, live-stud exposure, relay-cover obstruction, MIDI-lid obstruction, battery removal obstruction, or use of the inboard engine-side gap as a component face; cutoff far-side battery input, near-side switched split, MIDI fuse 4 input, MIDI output 5 two-cable grommet, red relay power pipe into the battery-side top relay hole, relay output bundle from the second top relay hole, and cable routing are all mocked.",
             "required_evidence": "Assembled bench photo and installed dry-fit photo with cable lugs mocked in.",
         },
         {
@@ -1668,8 +1677,8 @@ def write_layout_csv() -> None:
             "y_mm": "outboard/front access edge of raised ladder",
             "w_mm": "245",
             "h_mm": "360",
-            "z_height_mm": "rotated 360 x 245 x 3 mm aluminium base plus rotated 300 x 197 mm insulating sheet and existing covered relay box",
-            "notes": "Active candidate uses Relay Rev D, shifted outside the battery footprint to the outboard/front access edge and rotated 90 degrees so the covered relay box can be opened/reached with the battery installed and the inboard engine/LHD side stays clear. Transfer relay-box mounting holes from the actual enclosure; do not add separate cable-boot, output-cluster, or loom-card fabrication above the covered box.",
+            "z_height_mm": "Vertical 360 x 245 x 3 mm aluminium base attached flat to the main service sheet plus 300 x 197 mm insulating sheet and existing covered relay box",
+            "notes": "Active candidate uses Relay Rev D, shifted outside the battery footprint to the outboard/front access edge so the covered relay box can be opened/reached with the battery installed and the inboard engine/LHD side stays clear. Mount the aluminium base vertically and flat to the main sheet, transfer relay-box bottom-face mounting holes from the actual enclosure, route the red relay power pipe into the top hole closest to the battery, route the relay output bundle out of the second top hole, and do not add separate cable-boot, output-cluster, or loom-card fabrication above the covered box.",
         },
         {
             "zone": "midi_rev_d_top_front_enclosure_card",
@@ -1687,7 +1696,7 @@ def write_layout_csv() -> None:
             "w_mm": "170",
             "h_mm": "110",
             "z_height_mm": "210 x 150 mm flat pattern, 170 x 110 mm finished face, 20 mm upward guard lips, plus 100A breaker body/reset lever/stud height measurement hold",
-            "notes": "Folded aluminium base/guard at a side-by-side accessible position; lips bend upward around the 100A breaker/terminal side. Central battery positive enters the far-side cutoff stud first, then the near-side switched output splits to the existing relay box feed and MIDI fuse 4 input. Open final mounting holes after measuring the real breaker and lug sweep.",
+            "notes": "Folded aluminium base/guard at a side-by-side accessible position; lips bend upward around the 100A breaker/terminal side. Central battery positive enters the far-side cutoff stud first, then the near-side switched output splits to the red relay power pipe into the battery-side top relay hole and the MIDI fuse 4 input. Open final mounting holes after measuring the real breaker and lug sweep.",
         },
         {
             "zone": "front_radiator_service_ladder_spine",
@@ -1776,8 +1785,8 @@ def write_cavity_mapping_plan() -> None:
             "zone_or_task": "front_radiator_side_volume",
             "datum_basis": "Front edge of battery/tray to radiator/front-support obstruction.",
             "measurements_to_capture": "Clear width, height, depth, bolt access, radiator/fan clearance, hose sweep, and bonnet clearance.",
-            "template_or_tool": "Widened front access-ladder card set shifted toward the wing-side edge cavity: 660 x 310 ladder, Relay Rev D flat base card 360 x 245 installed rotated with exact 300 x 197 insulating sheet and covered relay-box removal clearance, existing MIDI Rev D hinged enclosure 210 x 165 x 65 with 230 x 185 lid-swing card and fuse 4 power input, five output grommet cards with output 5 enlarged for two cables, folded cutoff/kill-switch base/guard 170 x 110 finished face / 210 x 150 flat pattern / 20 mm upward lips beside the MIDI shelf, central battery-to-far-side-cutoff input lug, near-side cutoff-output split lugs to MIDI and relay, five MIDI output lugs with 40-80 mm depth blocks, and an 80 mm minimum wire gutter.",
-            "pass_rule": "Active candidate only if the outboard relay cover face, existing MIDI Rev D enclosure with fuse 4 input and output 5 double-cable grommet, side-mounted cutoff/kill switch, central battery-to-far-side-cutoff input cable, near-side cutoff-to-relay and cutoff-to-MIDI switched feeds, and five MIDI output cables fit with cable bends, no fan/radiator contact, bonnet clearance, battery lift-out clearance, and service access with battery installed.",
+            "template_or_tool": "Widened front access-ladder card set shifted toward the wing-side edge cavity: 660 x 310 ladder, Relay Rev D vertical flat base card 360 x 245 attached to the main sheet with exact 300 x 197 insulating sheet, covered relay-box removal clearance, battery-side top input-hole card for the red power pipe, second top output-hole bundle card, existing MIDI Rev D hinged enclosure 210 x 165 x 65 with 230 x 185 lid-swing card and fuse 4 power input, five output grommet cards with output 5 enlarged for two cables, folded cutoff/kill-switch base/guard 170 x 110 finished face / 210 x 150 flat pattern / 20 mm upward lips beside the MIDI shelf, central battery-to-far-side-cutoff input lug, near-side cutoff-output split lugs to MIDI and relay, five MIDI output lugs with 40-80 mm depth blocks, and an 80 mm minimum wire gutter.",
+            "pass_rule": "Active candidate only if the outboard relay cover face, red relay power pipe into the top hole closest to the battery, relay output bundle from the second top hole, existing MIDI Rev D enclosure with fuse 4 input and output 5 double-cable grommet, side-mounted cutoff/kill switch, central battery-to-far-side-cutoff input cable, near-side cutoff-to-relay and cutoff-to-MIDI switched feeds, and five MIDI output cables fit with cable bends, no fan/radiator contact, bonnet clearance, battery lift-out clearance, and service access with battery installed.",
             "notes": "The package now treats the relay as an already covered box on a flat base plus insulator, and makes the widened front access-ladder placement shifted into the edge cavity the active design.",
         },
         {
@@ -1829,10 +1838,10 @@ def write_cavity_mapping_plan() -> None:
             "step_id": "CAV-009",
             "zone_or_task": "split_layout_decision",
             "datum_basis": "Measured available rectangles from CAV-004 through CAV-008.",
-            "measurements_to_capture": "Serviceable front-ladder rectangle, relay cover removal path, existing relay-box cable exit sweep, top-front shelf height, MIDI Rev D lid swing and grommet exits, central battery-to-far-side-cutoff input cable length, near-side cutoff-to-MIDI and cutoff-to-relay switched-feed lengths, kill-switch service clearance, adjustable offset-bar setting, and five MIDI output bend radii.",
-            "template_or_tool": "Component cards in active stack order: Relay Rev D flat base 360 x 245 installed rotated with exact 300 x 197 insulating sheet and covered box clearance, existing MIDI Rev D top-front enclosure 210 x 165 started from the battery leading-edge datum with fuse 4 power input and output 5 enlarged two-cable grommet, folded cutoff/kill-switch base/guard 170 x 110 finished face / 210 x 150 flat pattern / 20 mm upward lips beside the MIDI shelf, adjustable offset-bar cards at 160 / 190 / 230 mm, plus depth/lug blocks and an 80 mm wire-gutter strip.",
+            "measurements_to_capture": "Serviceable front-ladder rectangle, relay cover removal path, vertical relay base attachment area, top relay input/output hole positions, top-front shelf height, MIDI Rev D lid swing and grommet exits, central battery-to-far-side-cutoff input cable length, near-side cutoff-to-MIDI switched-feed length, red relay power-pipe length to the battery-side top relay hole, relay output-bundle bend radius from the second top hole, kill-switch service clearance, adjustable offset-bar setting, and five MIDI output bend radii.",
+            "template_or_tool": "Component cards in active stack order: Relay Rev D vertical flat base 360 x 245 attached to the main sheet with exact 300 x 197 insulating sheet and covered box clearance, red relay power pipe into the battery-side top hole, relay output bundle from the second top hole, existing MIDI Rev D top-front enclosure 210 x 165 started from the battery leading-edge datum with fuse 4 power input and output 5 enlarged two-cable grommet, folded cutoff/kill-switch base/guard 170 x 110 finished face / 210 x 150 flat pattern / 20 mm upward lips beside the MIDI shelf, adjustable offset-bar cards at 160 / 190 / 230 mm, plus depth/lug blocks and an 80 mm wire-gutter strip.",
             "pass_rule": "Choose the widened front access-ladder layout unless measured front space fails. Reopen split side/lower placement only with evidence that it is smaller, serviceable, and clear.",
-            "notes": "Preferred order: central battery positive into the far-side cutoff stud first, near-side cutoff output split to the existing relay box feed and MIDI fuse 4 input, kill switch beside MIDI rather than after it, five MIDI output cables through the Rev D enclosure grommets with output 5 carrying the second power cable, and P-clips on stand/ladder.",
+            "notes": "Preferred order: central battery positive into the far-side cutoff stud first, near-side cutoff output split to the red relay power pipe into the relay top hole closest to the battery and the MIDI fuse 4 input, relay output power bundle out of the second top relay hole, kill switch beside MIDI rather than after it, five MIDI output cables through the Rev D enclosure grommets with output 5 carrying the second power cable, and P-clips on stand/ladder.",
         },
         {
             "step_id": "CAV-010",

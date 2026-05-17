@@ -19,7 +19,7 @@
   <polygon class="cut" points="342,148 342.1,147.02 342.38,146.09 342.84,145.22 343.46,144.46 344.22,143.84 345.09,143.38 346.02,143.1 347,143 347,143 347.98,143.1 348.91,143.38 349.78,143.84 350.54,144.46 351.16,145.22 351.62,146.09 351.9,147.02 352,148 352,172 351.9,172.98 351.62,173.91 351.16,174.78 350.54,175.54 349.78,176.16 348.91,176.62 347.98,176.9 347,177 347,177 346.02,176.9 345.09,176.62 344.22,176.16 343.46,175.54 342.84,174.78 342.38,173.91 342.1,172.98 342,172" />
   </g>
   <text x="25" y="315" class="note">Relay Rev D base plate: flat 3.0 mm 5052-H32 aluminium. No folded box or rear tray is required because the relay unit is already a covered plastic enclosure.</text>
-  <text x="25" y="327" class="note">Base plate is 360 x 245 mm, giving exposed mounting margins around the 300 x 197 mm relay-box footprint.</text>
-  <text x="25" y="339" class="note">The slotted holes are only for attaching this base plate to the battery stand / access ladder; final slot selection and bolt size are site-fit.</text>
-  <text x="25" y="351" class="note">Transfer any relay-box fixing holes from the actual relay box after placing the exact-size insulating sheet. Do not pre-drill relay housing holes from this drawing.</text>
+  <text x="25" y="327" class="note">Base plate is 360 x 245 mm, giving exposed mounting margins around the 300 x 197 mm large uncovered bottom face of the relay box.</text>
+  <text x="25" y="339" class="note">The slotted holes are only for attaching this base plate to the battery stand / access ladder; in the battery power carrier the base mounts vertically and directly flat to the main metal service sheet. Final slot selection and bolt size are site-fit.</text>
+  <text x="25" y="351" class="note">Transfer any relay-box bottom-face fixing holes from the actual relay box after placing the exact-size insulating sheet. Do not pre-drill relay housing holes from this drawing.</text>
 </svg>

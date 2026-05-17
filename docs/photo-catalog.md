@@ -1,7 +1,7 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-05-15 12:47:42
-- Total media files indexed: 672 (661 photos, 11 videos)
+- Generated: 2026-05-16 20:15:02
+- Total media files indexed: 687 (676 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
 
@@ -31,7 +31,7 @@
 | `rust_assessment` | 51 |
 | `steering_brakes_suspension` | 11 |
 | `stripdown_cataloguing` | 111 |
-| `underside_inspection` | 99 |
+| `underside_inspection` | 114 |
 
 ## Component Summary
 
@@ -55,7 +55,7 @@
 | `chassis_underside` | `brake_hard_line_flare_sample` | 1 | 2026-05-14 | `20260514_111300_user_brake_flare_side_view.png` |
 | `chassis_underside` | `engine_bay_chassis_interface` | 6 | 2026-04-22 | `20260422_004347_gp_WIy0j6zw.jpg` |
 | `chassis_underside` | `frame_and_mount_points` | 9 | 2026-04-05 to 2026-04-23 | `20260405_234542_gp_hucEa1CQ.jpg` |
-| `chassis_underside` | `frame_floor_underside_and_lines` | 43 | 2026-03-31 to 2026-05-14 | `20260331_030439_gp_Hm0ga9nQ.jpg` |
+| `chassis_underside` | `frame_floor_underside_and_lines` | 58 | 2026-03-31 to 2026-05-14 | `20260331_030439_gp_Hm0ga9nQ.jpg` |
 | `chassis_underside` | `frame_rail_body_mount_and_crossmember_detail` | 12 | 2026-05-01 | `20260501_193533_gp_sDErdvGw.jpg` |
 | `chassis_underside` | `frame_rail_body_mount_and_hard_line_detail` | 6 | 2026-04-22 | `20260422_004306_gp_vGlNr2UA.jpg` |
 | `chassis_underside` | `front_frame_horns_bumper_and_radiator_support` | 7 | 2026-04-22 to 2026-05-12 | `20260422_004423_gp_B1N5ThVw.jpg` |

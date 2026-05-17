@@ -10,8 +10,8 @@
   <g transform="translate(25,25)">
   <polygon class="cut" points="0,0 300,0 300,197 0,197" />
   </g>
-  <text x="25" y="267" class="note">Relay Rev D insulating sheet: exact 300 x 197 mm relay-box footprint in 3.0 mm ABS, HDPE, polypropylene, G10, or phenolic.</text>
-  <text x="25" y="279" class="note">This sheet sits directly between the already-covered relay box and the aluminium base plate.</text>
-  <text x="25" y="291" class="note">Use the actual relay box to mark any through-fixing holes after confirming orientation. Keep the sheet full-size under the relay box.</text>
+  <text x="25" y="267" class="note">Relay Rev D insulating sheet: exact 300 x 197 mm footprint for the relay box's large uncovered bottom face in 3.0 mm ABS, HDPE, polypropylene, G10, or phenolic.</text>
+  <text x="25" y="279" class="note">This sheet sits directly between the relay box's uncovered bottom face and the aluminium base plate.</text>
+  <text x="25" y="291" class="note">Use the actual relay box bottom to mark any through-fixing holes after confirming orientation. Keep the sheet full-size under the relay box's uncovered bottom face.</text>
   <text x="25" y="303" class="note">Deburr plastic edges and avoid a fully sealed water trap; the relay box remains the weather cover.</text>
 </svg>

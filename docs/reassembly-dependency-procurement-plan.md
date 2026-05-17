@@ -1,6 +1,6 @@
 # Reassembly, Dependency, and Procurement Plan
 
-- Generated: 2026-05-14 11:35:31
+- Generated: 2026-05-17 16:31:13
 - Work packages: `data/manual/reassembly_work_packages.csv`
 - Dependency edges: `data/manual/reassembly_dependency_edges.csv`
 - Component disposition: `data/manual/component_disposition_plan.csv`
@@ -34,7 +34,7 @@
 - `inspect_confirm_then_buy_standard`: 4
 - `research_compare_then_select`: 1
 - `review`: 2
-- `track_ordered_delivery`: 6
+- `track_ordered_delivery`: 5
 - `verify_stock_before_buy`: 3
 
 ## Component Reuse/Refurbish Decisions

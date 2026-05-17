@@ -1115,9 +1115,9 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                     "Use data/manual/fabrication/relay_mount_rev_d/ for the simplified current relay-box base and exact insulating sheet package.",
                     "Use data/manual/fabrication/midi5_enclosure_rev_d/ for the current 5-way MIDI holder hinged enclosure and insulated subplate package.",
                     "Mock the chassis pickup geometry from the May 14 no-battery image as a formed saddle over the rail: start tray underside 180 mm above chassis rail top, allow 150-210 mm vertical adjustment, set tray centre 190 mm wing-side/outboard from the more central pickup centreline into the edge cavity, and use the slotted body-side offset bars to retain 160-230 mm side-jog adjustment.",
-                    "Mock the widened front access-ladder cards from cardboard: 660 x 310 ladder, standard battery envelope 318 x 180 x 230 with central top terminals on a 340 x 265 tray with removable hold-down and lift-out path, adjustable offset bars at 160 / 190 / 230 mm, Relay Rev D flat 360 x 245 aluminium base with exact 300 x 197 insulating sheet outside the battery footprint on the outboard/access edge with about 80 mm relay-to-battery service gap and the existing covered relay box only, MIDI Rev D hinged enclosure 210 x 165 x 65 on a separated top-front shelf started from the battery leading-edge datum with fuse 4 grommeted power input, five grommeted output holes with the far-side output enlarged for two power cables, folded cutoff/kill-switch base/guard 170 x 110 finished face / 210 x 150 flat pattern / 20 mm upward lips beside the MIDI enclosure with far-side battery input, near-side cutoff-output split lugs to MIDI and relay, 80 mm cable gutter, and depth blocks before final metal cutting.",
+                    "Mock the widened front access-ladder cards from cardboard: 660 x 310 ladder, standard battery envelope 318 x 180 x 230 with central top terminals on a 340 x 265 tray with removable hold-down and lift-out path, adjustable offset bars at 160 / 190 / 230 mm, Relay Rev D vertical 360 x 245 aluminium base attached flat to the main service sheet with exact 300 x 197 insulating sheet and existing covered relay box outside the battery footprint on the outboard/access edge with about 80 mm relay-to-battery service gap, red relay power pipe into the relay top hole closest to the battery, relay output power bundle from the second top hole, MIDI Rev D hinged enclosure 210 x 165 x 65 on a separated top-front shelf started from the battery leading-edge datum with fuse 4 grommeted power input, five grommeted output holes with the far-side output enlarged for two power cables, folded cutoff/kill-switch base/guard 170 x 110 finished face / 210 x 150 flat pattern / 20 mm upward lips beside the MIDI enclosure with far-side battery input, near-side cutoff-output split lugs to MIDI and relay, 80 mm cable gutter, and depth blocks before final metal cutting.",
                     "Send the package PDFs for drawing review and the DXFs for cutting; keep SVGs with the job for visual checking.",
-                    "Trial-fit the formed chassis saddle, upright bridge, adjustable offset bars, compact tray, widened access-ladder spine/tabs shifted into the edge cavity, outboard Relay Rev D flat base/insulator with the existing covered relay box, central battery-datum MIDI Rev D enclosure with fuse 4 input grommet, side-mounted cutoff/kill switch beside the MIDI enclosure with far-side battery input, five MIDI output grommets, engine/LHD keep-clear envelope, near-side cutoff-to-relay and cutoff-to-MIDI switched cable exits, and five MIDI output cables before wrapping or tying down the under-bonnet loom.",
+                    "Trial-fit the formed chassis saddle, upright bridge, adjustable offset bars, compact tray, widened access-ladder spine/tabs shifted into the edge cavity, outboard Relay Rev D vertical base/insulator attached flat to the main sheet, red relay power pipe into the battery-side top relay hole, relay output power bundle from the second top hole, central battery-datum MIDI Rev D enclosure with fuse 4 input grommet, side-mounted cutoff/kill switch beside the MIDI enclosure with far-side battery input, five MIDI output grommets, engine/LHD keep-clear envelope, near-side cutoff-to-relay and cutoff-to-MIDI switched cable exits, and five MIDI output cables before wrapping or tying down the under-bonnet loom.",
                 ],
                 "tools": ["Drill", "Files", "Deburring tool", "Rivet nut tool or spanners", "Calipers"],
                 "supplies": ["Electrical fabrication DXF/PDF pack", "3.0 mm 5052-H32 aluminium", "HDPE/ABS/G10 sheet", "Spacers", "P-clips", "Fasteners"],
@@ -1196,7 +1196,7 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                     "Send each package PDF for review and its DXFs for cutting.",
                     "Keep SVGs with the job for visual checking.",
                     "Use the current chassis pickup mock-up estimate first as a formed saddle over the rail: tray underside 180 mm above chassis rail top, adjustable 150-210 mm; tray centre 190 mm wing-side/outboard from the more central pickup centreline into the edge cavity, set by the slotted offset bars with 160-230 mm adjustment.",
-                    "Trial-fit electrical parts with the formed chassis saddle, upright bridge, adjustable offset bars, spacers, central battery-to-far-side-cutoff input path, near-side cutoff-to-relay and cutoff-to-MIDI switched cable exits, outboard Relay Rev D flat base/exact insulator with the existing covered relay box only, battery-datum MIDI Rev D enclosure with fuse 4 input grommet, side-mounted cutoff/kill switch beside the MIDI enclosure, five MIDI output grommets, five MIDI output cables, and engine/LHD keep-clear envelope before tying down the loom.",
+                    "Trial-fit electrical parts with the formed chassis saddle, upright bridge, adjustable offset bars, spacers, central battery-to-far-side-cutoff input path, near-side cutoff-to-relay and cutoff-to-MIDI switched cable exits, outboard Relay Rev D vertical flat base/exact insulator attached directly to the main service sheet, red relay power pipe into the relay top hole closest to the battery, relay output power bundle from the second top hole, battery-datum MIDI Rev D enclosure with fuse 4 input grommet, side-mounted cutoff/kill switch beside the MIDI enclosure, five MIDI output grommets, five MIDI output cables, and engine/LHD keep-clear envelope before tying down the loom.",
                 ],
                 "tools": ["DXF viewer", "Drill", "Files", "Deburring tool", "Calipers"],
                 "supplies": ["Battery power carrier PDF/DXFs", "Relay Rev D PDF/DXFs", "MIDI enclosure PDF/DXFs", "Aluminium sheet", "Insulator sheet", "Spacers"],
@@ -1998,31 +1998,9 @@ FABRICATION_DESIGN_LINKS_BY_PACKAGE: dict[str, list[tuple[str, str]]] = {
         ("data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.svg", "Relay Rev D insulating sheet SVG"),
         ("data/manual/fabrication/relay_mount_rev_d/README.md", "Relay Rev D README"),
     ],
-    "electrical_device_models_rev_a": [
-        ("deliverables/fabrication_packages/electrical_device_models_rev_a.zip", "Electrical device model package ZIP"),
-        (
-            "data/manual/fabrication/electrical_device_models_rev_a/electrical_device_models_rev_a_3d_visualisation.html",
-            "Device model 3D visualisation HTML",
-        ),
-        (
-            "data/manual/fabrication/electrical_device_models_rev_a/electrical_device_models_rev_a_3d_visualisation.svg",
-            "Device model static visualisation SVG",
-        ),
-        ("data/manual/fabrication/electrical_device_models_rev_a/device_measurement_basis.csv", "Device measurement basis CSV"),
-        ("data/manual/fabrication/electrical_device_models_rev_a/inspection_checklist.csv", "Device model inspection checklist CSV"),
-        ("data/manual/fabrication/electrical_device_models_rev_a/README.md", "Electrical device models README"),
-    ],
     "battery_power_carrier_mount_rev_a": [
         ("deliverables/fabrication_packages/battery_power_carrier_mount_rev_a.zip", "Battery power carrier package ZIP"),
         ("data/manual/fabrication/battery_power_carrier_mount_rev_a/j40_battery_power_carrier_mount_rev_a_dimension_sheet.pdf", "Battery power carrier dimension sheet PDF"),
-        (
-            "data/manual/fabrication/electrical_device_models_rev_a/electrical_device_models_rev_a_3d_visualisation.html",
-            "Separate relay/breaker/MIDI device model HTML",
-        ),
-        (
-            "data/manual/fabrication/electrical_device_models_rev_a/device_measurement_basis.csv",
-            "Separate device measurement basis CSV",
-        ),
         ("data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_carrier_mount_rev_a_assembled_3d_visualisation.html", "Assembled 3D visualisation HTML"),
         ("data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_carrier_mount_rev_a_assembled_3d_visualisation.svg", "Assembled 3D visualisation SVG"),
         ("data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_power_carrier_mount_rev_a_3d_visualisation.html", "Interactive 3D visualisation HTML"),
@@ -2093,12 +2071,6 @@ FABRICATION_DESIGN_LINKS_BY_PACKAGE: dict[str, list[tuple[str, str]]] = {
         ("data/manual/fabrication/relay_mount_rev_c/relay_carrier_rev_c.dxf", "Superseded relay carrier DXF"),
         ("data/manual/fabrication/relay_mount_rev_c/relay_rear_guard_rev_c.dxf", "Superseded relay rear guard DXF"),
     ],
-    "electrical_modules_rev_a": [
-        ("deliverables/fabrication_packages/electrical_modules_rev_a.zip", "Electrical modules package ZIP"),
-        ("data/manual/fabrication/electrical_modules_rev_a/j40_electrical_modules_rev_a_dimension_sheet.pdf", "Electrical modules dimension sheet PDF"),
-        ("data/manual/fabrication/electrical_modules_rev_a/relay_module_tray_rev_a.dxf", "Relay module tray DXF"),
-        ("data/manual/fabrication/electrical_modules_rev_a/power_module_box_rev_a.dxf", "Power module box DXF"),
-    ],
 }
 
 
@@ -2107,9 +2079,9 @@ FABRICATION_DESIGN_ENTRY_PACKAGES: dict[str, tuple[str, ...]] = {
     "part_body_mount_hardware_kit": ("rubber_recreation_rev_a",),
     "part_body_mount_shim_pack": ("rubber_recreation_rev_a",),
     "part_suspension_wooden_cribbing_blocks": ("suspension_wood_cribbing_rev_a",),
-    "service_local_3d_printing_fabrication_prototypes": ("midi5_enclosure_rev_d", "relay_mount_rev_d", "electrical_device_models_rev_a"),
+    "service_local_3d_printing_fabrication_prototypes": ("midi5_enclosure_rev_d", "relay_mount_rev_d"),
     "front_radiator_two_side_retention_fabrication_20260508": ("front_radiator_two_side_retention_rev_a",),
-    "battery_power_carrier_mount_fabrication_20260508": ("battery_power_carrier_mount_rev_a", "relay_mount_rev_d", "electrical_device_models_rev_a"),
+    "battery_power_carrier_mount_fabrication_20260508": ("battery_power_carrier_mount_rev_a", "relay_mount_rev_d"),
 }
 
 
@@ -2122,16 +2094,6 @@ FABRICATION_PACKAGE_VISUAL_LINKS: dict[str, list[tuple[str, str]]] = {
         (
             "data/manual/fabrication/suspension_wood_cribbing_rev_a/suspension_wood_cribbing_rev_a_3d_visualisation.svg",
             "Static 3D visualisation",
-        ),
-    ],
-    "electrical_modules_rev_a": [
-        (
-            "data/manual/fabrication/electrical_modules_rev_a/electrical_modules_rev_a_3d_visualisation.html",
-            "Reference interactive 3D visualisation",
-        ),
-        (
-            "data/manual/fabrication/electrical_modules_rev_a/electrical_modules_rev_a_3d_visualisation.svg",
-            "Reference static 3D visualisation",
         ),
     ],
     "midi5_enclosure_rev_d": [
@@ -2162,16 +2124,6 @@ FABRICATION_PACKAGE_VISUAL_LINKS: dict[str, list[tuple[str, str]]] = {
         (
             "data/manual/fabrication/relay_mount_rev_d/relay_mount_rev_d_3d_visualisation.svg",
             "Static 3D visualisation",
-        ),
-    ],
-    "electrical_device_models_rev_a": [
-        (
-            "data/manual/fabrication/electrical_device_models_rev_a/electrical_device_models_rev_a_3d_visualisation.html",
-            "Interactive device model 3D visualisation",
-        ),
-        (
-            "data/manual/fabrication/electrical_device_models_rev_a/electrical_device_models_rev_a_3d_visualisation.svg",
-            "Static device model visualisation",
         ),
     ],
     "battery_power_carrier_mount_rev_a": [

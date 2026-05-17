@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-import generate_electrical_module_drawings as base
+import fabrication_drawing_base as base
 
 
 OUT_DIR = Path("/Users/davidpridmore/IdeaProjects/J40/data/manual/fabrication/midi5_module_rev_a")

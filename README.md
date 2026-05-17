@@ -94,7 +94,7 @@ Only chat content related to this build should be included. The importer treats 
 - `scripts/build_paint_refinish_whatsapp_media_queue.py`: extracts paint-refinish photos/videos from WhatsApp media index into send/return/in-progress queues
 - `scripts/auth_whatsapp_mcp.sh`: QR-auth helper for WhatsApp MCP profiles (`1` and `2`)
 - `tools/generate_rubber_recreation_fabrication_pack.py`: generates the rubber recreation DXF/SVG/PDF fabrication package
-- `tools/generate_electrical_module_drawings.py`, `tools/generate_midi5_plate_mount_rev_c.py`, `tools/generate_midi5_enclosure_rev_d.py`, `tools/generate_relay_mount_rev_c.py`: generate the electrical mounting DXF/SVG/PDF fabrication packages; Rev D is the current MIDI enclosure route
+- `tools/generate_midi5_plate_mount_rev_c.py`, `tools/generate_midi5_enclosure_rev_d.py`, `tools/generate_relay_mount_rev_c.py`, `tools/generate_relay_mount_rev_d.py`: generate the electrical mounting DXF/SVG/PDF fabrication packages; Rev D is the current MIDI and relay route
 
 ## How To Use
 

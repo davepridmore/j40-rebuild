@@ -23,7 +23,7 @@ These are already in procurement and were not duplicated:
 
 | Existing row | Material scope | Status |
 | --- | --- | --- |
-| `part_suspension_wooden_cribbing_blocks` | Seasoned hardwood cribbing blocks and wedge chocks | Ordered / pending delivery. |
+| `part_suspension_wooden_cribbing_blocks` | Seasoned hardwood cribbing blocks and wedge chocks | Received; price/payment, wood type, and received-condition photos still need capture. |
 | `part_body_mount_rubber_kit` | Body mount rubber kit | Spec ready / release hold. |
 | `part_body_mount_hardware_kit` | Body mount cups, sleeves, and related hardware | Spec ready / release hold. |
 | `part_body_mount_shim_pack` | Body mount shim and spacer steel | Spec ready / release hold. |
