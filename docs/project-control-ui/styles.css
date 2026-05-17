@@ -174,6 +174,47 @@ h1 {
   gap: 0.4rem;
 }
 
+.copy-link-btn {
+  align-items: center;
+  background: #f8f4ec;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent-2);
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-size: 0.74rem;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 1;
+  min-height: 1.45rem;
+  min-width: 1.45rem;
+  padding: 0.18rem 0.42rem;
+  vertical-align: middle;
+}
+
+.copy-link-btn:hover,
+.copy-link-btn:focus-visible {
+  border-color: #9ab8ae;
+  background: #e6efec;
+}
+
+.copy-link-btn.is-copied {
+  background: #e7f3e7;
+  border-color: #b8dbb8;
+  color: var(--good);
+  min-width: 4.4rem;
+}
+
+.deep-link-target {
+  scroll-margin-top: 1rem;
+}
+
+.deep-link-target.is-deep-linked {
+  outline: 2px solid rgba(191, 90, 49, 0.55);
+  outline-offset: 3px;
+}
+
 .overview-open-btn {
   background: var(--accent-2);
   border: 1px solid var(--accent-2);
@@ -240,6 +281,13 @@ h1 {
 
 .chip-button:hover {
   border-color: #b8ad9d;
+}
+
+.item-action-cell {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 0.35rem;
+  max-width: 100%;
 }
 
 .chip.good {

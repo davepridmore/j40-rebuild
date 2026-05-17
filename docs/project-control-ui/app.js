@@ -16,6 +16,8 @@
   const state = {
     activeView: "overview",
     activeWorkstreamId: data.workstreams && data.workstreams.length ? data.workstreams[0].id : "",
+    pendingSectionId: "",
+    pendingItemId: "",
     photoOverrides: loadPhotoOverrides(),
     lightboxImageBase: null,
     lightboxImageKey: "",
@@ -31,6 +33,7 @@
   const visualSequences = new Map();
   const visualSequenceByKey = new Map();
   const itemRegistry = new Map();
+  const itemRegistryByStableId = new Map();
   let imageKeyCounter = 0;
   let imageSequenceCounter = 0;
   let visualKeyCounter = 0;
@@ -65,6 +68,18 @@
   });
 
   root.addEventListener("click", (event) => {
+    const copyRouteTrigger = event.target.closest("[data-copy-link-route]");
+    if (copyRouteTrigger) {
+      const route = copyRouteTrigger.getAttribute("data-copy-link-route");
+      if (!route) {
+        return;
+      }
+      event.preventDefault();
+      event.stopPropagation();
+      copyDirectLink(route, copyRouteTrigger);
+      return;
+    }
+
     const visualTrigger = event.target.closest("[data-visual-key]");
     if (visualTrigger) {
       const visualKey = visualTrigger.getAttribute("data-visual-key");
@@ -114,6 +129,12 @@
       return;
     }
     const itemKey = itemTrigger.getAttribute("data-item-key");
+    const itemId = itemTrigger.getAttribute("data-item-id");
+    if (itemId) {
+      event.preventDefault();
+      navigateToRoute(itemRoute(itemId));
+      return;
+    }
     if (!itemKey) {
       return;
     }
@@ -238,40 +259,164 @@
   function applyRouteFromHash() {
     const rawHash = cleanString(decodeURIComponent(window.location.hash.replace(/^#/, "")));
     if (!rawHash) {
+      state.pendingSectionId = "";
+      state.pendingItemId = "";
       refreshTabButtons();
       return false;
     }
-    const [viewPart, workstreamPart] = rawHash.split("/");
+    const routeParts = rawHash.split("/").map(cleanString).filter(Boolean);
+    const [viewPart] = routeParts;
     const requestedView = cleanString(viewPart);
     const validViews = new Set(tabButtons.map((node) => cleanString(node.getAttribute("data-view"))).filter(Boolean));
     let changed = false;
+    let routeIndex = 1;
+    let nextSectionId = "";
+    let nextItemId = "";
 
     if (validViews.has(requestedView) && requestedView !== state.activeView) {
       state.activeView = requestedView;
       changed = true;
     }
 
-    if (requestedView === "workstreams" && workstreamPart) {
-      const requestedWorkstream = cleanString(workstreamPart);
+    if (requestedView === "workstreams" && routeParts[routeIndex] && !["section", "item"].includes(routeParts[routeIndex])) {
+      const requestedWorkstream = cleanString(routeParts[routeIndex]);
       const exists = (data.workstreams || []).some((workstream) => workstream.id === requestedWorkstream);
       if (exists && requestedWorkstream !== state.activeWorkstreamId) {
         state.activeWorkstreamId = requestedWorkstream;
         changed = true;
       }
+      routeIndex += 1;
+    }
+
+    while (routeIndex < routeParts.length) {
+      const key = routeParts[routeIndex];
+      const value = cleanString(routeParts[routeIndex + 1]);
+      if (key === "section" && value) {
+        nextSectionId = value;
+        routeIndex += 2;
+      } else if (key === "item" && value) {
+        nextItemId = value;
+        routeIndex += 2;
+      } else {
+        routeIndex += 1;
+      }
+    }
+
+    if (nextSectionId !== state.pendingSectionId) {
+      state.pendingSectionId = nextSectionId;
+      changed = true;
+    }
+    if (nextItemId !== state.pendingItemId) {
+      state.pendingItemId = nextItemId;
+      changed = true;
     }
 
     refreshTabButtons();
     return changed;
   }
 
-  function updateRouteHash() {
-    const route =
-      state.activeView === "workstreams" && state.activeWorkstreamId
-        ? `#workstreams/${encodeURIComponent(state.activeWorkstreamId)}`
-        : `#${encodeURIComponent(state.activeView)}`;
+  function routeBaseForView(view = state.activeView) {
+    if (view === "workstreams" && state.activeWorkstreamId) {
+      return `#workstreams/${encodeURIComponent(state.activeWorkstreamId)}`;
+    }
+    return `#${encodeURIComponent(view)}`;
+  }
+
+  function updateRouteHash(extraParts = []) {
+    const suffix = extraParts
+      .map((part) => encodeURIComponent(cleanString(part)))
+      .filter(Boolean)
+      .join("/");
+    const route = `${routeBaseForView()}${suffix ? `/${suffix}` : ""}`;
     if (window.location.hash !== route) {
       history.replaceState(null, "", route);
     }
+  }
+
+  function navigateToRoute(route) {
+    const normalizedRoute = cleanString(route);
+    if (!normalizedRoute) {
+      return;
+    }
+    if (window.location.hash === normalizedRoute) {
+      if (applyRouteFromHash()) {
+        render();
+      } else {
+        handlePendingRouteAfterRender();
+      }
+      return;
+    }
+    window.location.hash = normalizedRoute;
+  }
+
+  function workstreamRoute(workstreamId) {
+    return `#workstreams/${encodeURIComponent(cleanString(workstreamId))}`;
+  }
+
+  function itemRoute(itemId) {
+    return `#parts/item/${encodeURIComponent(cleanString(itemId))}`;
+  }
+
+  function sectionRoute(sectionId) {
+    const parts = ["section", cleanString(sectionId)];
+    return `${routeBaseForView()}/${parts.map(encodeURIComponent).join("/")}`;
+  }
+
+  function absoluteRoute(route) {
+    const basePath = `${window.location.origin}${window.location.pathname}`;
+    return `${basePath}${cleanString(route) || "#overview"}`;
+  }
+
+  function copyDirectLink(route, trigger) {
+    const link = absoluteRoute(route);
+    const applyCopiedState = () => {
+      if (!trigger) {
+        return;
+      }
+      const originalLabel = trigger.getAttribute("data-original-label") || trigger.textContent || "#";
+      if (!trigger.getAttribute("data-original-label")) {
+        trigger.setAttribute("data-original-label", originalLabel);
+      }
+      trigger.textContent = "Copied";
+      trigger.classList.add("is-copied");
+      window.setTimeout(() => {
+        trigger.textContent = trigger.getAttribute("data-original-label") || "#";
+        trigger.classList.remove("is-copied");
+      }, 1300);
+    };
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(link).then(applyCopiedState).catch(() => fallbackCopyText(link, applyCopiedState));
+      return;
+    }
+    fallbackCopyText(link, applyCopiedState);
+  }
+
+  function fallbackCopyText(text, onDone) {
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.setAttribute("readonly", "readonly");
+    textarea.style.position = "fixed";
+    textarea.style.left = "-9999px";
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+      document.execCommand("copy");
+    } catch (error) {
+      window.prompt("Copy direct link", text);
+    }
+    textarea.remove();
+    if (typeof onDone === "function") {
+      onDone();
+    }
+  }
+
+  function renderCopyLinkButton(route, label = "#", title = "Copy direct link") {
+    const safeRoute = cleanString(route);
+    if (!safeRoute) {
+      return "";
+    }
+    return `<button type="button" class="copy-link-btn" data-copy-link-route="${escapeHtml(safeRoute)}" title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}">${escapeHtml(label)}</button>`;
   }
 
   function formatToken(value) {
@@ -285,6 +430,16 @@
 
   function cleanString(value) {
     return String(value ?? "").trim();
+  }
+
+  function slugify(value, fallback = "section") {
+    const slug = cleanString(value)
+      .toLowerCase()
+      .replace(/&/g, " and ")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "")
+      .slice(0, 80);
+    return slug || fallback;
   }
 
   function isFormControl(node) {
@@ -977,7 +1132,26 @@
 
   function resetItemRegistry() {
     itemRegistry.clear();
+    itemRegistryByStableId.clear();
     itemKeyCounter = 0;
+  }
+
+  function stableItemId(row) {
+    const candidates = [
+      row && row.entry_id,
+      row && row.source_ref,
+      row && row.procurement_entry_id,
+      row && row.part_id,
+      row && row.order_id,
+      row && row.material_id,
+      row && row.package_id,
+      row && row.id,
+    ];
+    const explicit = candidates.map(cleanString).find(Boolean);
+    if (explicit) {
+      return explicit;
+    }
+    return slugify([row && row.source, row && row.workstream, row && row.item].filter(Boolean).join(" "), "item");
   }
 
   function createImageSequence() {
@@ -1019,16 +1193,25 @@
   function registerItem(row) {
     itemKeyCounter += 1;
     const itemKey = `item_${itemKeyCounter}`;
-    itemRegistry.set(itemKey, row);
-    return itemKey;
+    const stableId = stableItemId(row);
+    const registeredRow = { ...row, __item_stable_id: stableId };
+    itemRegistry.set(itemKey, registeredRow);
+    if (stableId && !itemRegistryByStableId.has(stableId)) {
+      itemRegistryByStableId.set(stableId, registeredRow);
+    }
+    return { itemKey, stableId };
   }
 
   function renderItemButton(row) {
-    const itemKey = registerItem(row);
+    const registered = registerItem(row);
+    const directRoute = itemRoute(registered.stableId);
     return `
-      <button type="button" class="item-detail-btn" data-item-key="${escapeHtml(itemKey)}">
-        ${escapeHtml(row.item || "-")}
-      </button>
+      <span class="item-action-cell">
+        <button type="button" class="item-detail-btn" data-item-key="${escapeHtml(registered.itemKey)}" data-item-id="${escapeHtml(registered.stableId)}">
+          ${escapeHtml(row.item || "-")}
+        </button>
+        ${renderCopyLinkButton(directRoute, "#", "Copy direct item link")}
+      </span>
     `;
   }
 
@@ -5687,6 +5870,7 @@
                   <h3>${escapeHtml(ws.title)}</h3>
                   <div class="overview-card-actions">
                     ${statusChip(ws.status)}
+                    ${renderCopyLinkButton(workstreamRoute(ws.id), "#", `Copy ${ws.title} workstream link`)}
                     <button class="overview-open-btn" data-open-workstream-id="${escapeHtml(ws.id)}" type="button" aria-label="Open ${escapeHtml(ws.title)} workstream">Open</button>
                   </div>
                 </div>
@@ -5807,6 +5991,7 @@
         }
         state.activeWorkstreamId = nextId;
         renderWorkstreams();
+        updateRouteHash();
       });
     });
 
@@ -5830,7 +6015,10 @@
       <article class="card">
         <div class="detail-header">
           <h2>${escapeHtml(active.title)}</h2>
-          ${statusChip(active.status)}
+          <div class="overview-card-actions">
+            ${renderCopyLinkButton(workstreamRoute(active.id), "#", `Copy ${active.title} workstream link`)}
+            ${statusChip(active.status)}
+          </div>
         </div>
         <div class="chip-row">
           ${chip(`Priority: ${formatToken(active.priority)}`)}
@@ -5893,7 +6081,7 @@
                               <tr>
                                 ${renderInventoryImageCell(row, row.item || "Part image")}
                                 <td>
-                                  <strong>${escapeHtml(row.item || "")}</strong>
+                                  ${renderItemButton(row)}
                                   <div class="small-muted">${escapeHtml(row.entry_id || "")}</div>
                                 </td>
                                 <td>${statusChip(row.status)}</td>
@@ -7333,6 +7521,26 @@
     if (!row) {
       return;
     }
+    openItemDetailRow(row, { updateRoute: true });
+  }
+
+  function closeItemDetail() {
+    state.itemDetailRow = null;
+    state.pendingItemId = "";
+    itemDetail.root.classList.add("is-hidden");
+    itemDetail.root.setAttribute("aria-hidden", "true");
+    itemDetail.media.innerHTML = "";
+    itemDetail.links.innerHTML = "";
+    document.body.classList.remove("lightbox-open");
+    if (window.location.hash.includes("/item/")) {
+      updateRouteHash();
+    }
+  }
+
+  function openItemDetailRow(row, options = {}) {
+    if (!row) {
+      return false;
+    }
     if (state.visualViewerKey) {
       closeVisualViewer();
     }
@@ -7344,15 +7552,79 @@
     itemDetail.root.classList.remove("is-hidden");
     itemDetail.root.setAttribute("aria-hidden", "false");
     document.body.classList.add("lightbox-open");
+    if (options.updateRoute) {
+      const itemId = row.__item_stable_id || stableItemId(row);
+      if (itemId) {
+        updateRouteHash(["item", itemId]);
+      }
+    }
+    return true;
   }
 
-  function closeItemDetail() {
-    state.itemDetailRow = null;
-    itemDetail.root.classList.add("is-hidden");
-    itemDetail.root.setAttribute("aria-hidden", "true");
-    itemDetail.media.innerHTML = "";
-    itemDetail.links.innerHTML = "";
-    document.body.classList.remove("lightbox-open");
+  function openItemDetailByStableId(itemId) {
+    const stableId = cleanString(itemId);
+    if (!stableId) {
+      return false;
+    }
+    return openItemDetailRow(itemRegistryByStableId.get(stableId), { updateRoute: false });
+  }
+
+  function enhanceDeepLinkTargets() {
+    const usedIds = new Set();
+    const headings = Array.from(root.querySelectorAll(".section-title, .card > h3, .card > h4, .detail-header > h2, .detail-header > h3, .detail-header > h4"));
+    headings.forEach((heading) => {
+      if (!heading || heading.closest(".lightbox") || heading.querySelector(".copy-link-btn")) {
+        return;
+      }
+      const target = heading.closest(".card, section, article") || heading;
+      let baseId = cleanString(target.id || heading.id);
+      if (!baseId) {
+        baseId = `section-${slugify(heading.textContent || "section")}`;
+      }
+      let sectionId = baseId;
+      let suffix = 2;
+      while (usedIds.has(sectionId)) {
+        sectionId = `${baseId}-${suffix}`;
+        suffix += 1;
+      }
+      usedIds.add(sectionId);
+      target.id = sectionId;
+      target.classList.add("deep-link-target");
+      heading.appendChild(document.createTextNode(" "));
+      const wrapper = document.createElement("span");
+      wrapper.innerHTML = renderCopyLinkButton(sectionRoute(sectionId), "#", "Copy direct section link");
+      const button = wrapper.firstElementChild;
+      if (button) {
+        heading.appendChild(button);
+      }
+    });
+  }
+
+  function focusDeepLinkTarget(node) {
+    if (!node) {
+      return;
+    }
+    node.scrollIntoView({ behavior: "smooth", block: "start" });
+    node.classList.add("is-deep-linked");
+    window.setTimeout(() => {
+      node.classList.remove("is-deep-linked");
+    }, 1800);
+  }
+
+  function handlePendingRouteAfterRender() {
+    enhanceDeepLinkTargets();
+    window.requestAnimationFrame(() => {
+      if (state.pendingSectionId) {
+        const target = document.getElementById(state.pendingSectionId);
+        if (target) {
+          focusDeepLinkTarget(target);
+          state.pendingSectionId = "";
+        }
+      }
+      if (state.pendingItemId && openItemDetailByStableId(state.pendingItemId)) {
+        state.pendingItemId = "";
+      }
+    });
   }
 
   function createLightbox() {
@@ -8161,35 +8433,24 @@
     resetImageRegistry();
     resetVisualRegistry();
     resetItemRegistry();
+    let renderer = renderOverview;
     if (state.activeView === "workstreams") {
-      renderWorkstreams();
-      return;
+      renderer = renderWorkstreams;
+    } else if (state.activeView === "parts") {
+      renderer = renderParts;
+    } else if (state.activeView === "scout") {
+      renderer = renderScout;
+    } else if (state.activeView === "tasks") {
+      renderer = renderCaptureTasks;
+    } else if (state.activeView === "photos-needed") {
+      renderer = renderPhotosNeeded;
+    } else if (state.activeView === "steps") {
+      renderer = renderProjectSteps;
+    } else if (state.activeView === "other-builds") {
+      renderer = renderOtherBuilds;
     }
-    if (state.activeView === "parts") {
-      renderParts();
-      return;
-    }
-    if (state.activeView === "scout") {
-      renderScout();
-      return;
-    }
-    if (state.activeView === "tasks") {
-      renderCaptureTasks();
-      return;
-    }
-    if (state.activeView === "photos-needed") {
-      renderPhotosNeeded();
-      return;
-    }
-    if (state.activeView === "steps") {
-      renderProjectSteps();
-      return;
-    }
-    if (state.activeView === "other-builds") {
-      renderOtherBuilds();
-      return;
-    }
-    renderOverview();
+    renderer();
+    handlePendingRouteAfterRender();
   }
 
   applyRouteFromHash();

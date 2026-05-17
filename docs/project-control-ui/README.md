@@ -22,6 +22,18 @@ Then open:
 The launcher serves the repo at `http://127.0.0.1:<port>/docs/project-control-ui/`
 so video controls and media loading behave like the deployed dashboard.
 
+## Direct Links
+
+The portal supports stable hash links:
+
+- `#overview`, `#parts`, `#scout`, `#tasks`, `#photos-needed`, `#steps`, `#other-builds`
+- `#workstreams/<workstream_id>` for a specific workstream
+- `#parts/item/<entry_id>` for a specific part or inventory row
+- `#<view>/section/<section_id>` and `#workstreams/<workstream_id>/section/<section_id>` for page sections
+
+Use the small `#` controls in the portal to copy direct links to workstreams,
+item rows, and rendered page sections.
+
 ## Deploy
 
 The GitHub Actions workflow at `.github/workflows/deploy-project-control-ui.yml`
