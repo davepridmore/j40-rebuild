@@ -127,11 +127,21 @@ h1 {
   margin: 0.75rem 0;
 }
 
+.reference-idea-list {
+  display: grid;
+  gap: 0.7rem;
+  margin: 0.75rem 0;
+}
+
 .reference-section-card,
 .reference-drop-card,
 .reference-focus-card {
   display: grid;
   gap: 0.55rem;
+}
+
+.reference-idea-card {
+  width: 100%;
 }
 
 .reference-focus-card h3 {

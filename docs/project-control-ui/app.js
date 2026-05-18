@@ -432,6 +432,17 @@
     return String(value ?? "").trim();
   }
 
+  function redactPhoneNumber(value) {
+    const raw = cleanString(value);
+    if (!raw) {
+      return "";
+    }
+    if (raw.toLowerCase() === "[redacted]" || raw.toLowerCase() === "redacted") {
+      return "Redacted";
+    }
+    return "Redacted";
+  }
+
   function slugify(value, fallback = "section") {
     const slug = cleanString(value)
       .toLowerCase()
@@ -7302,12 +7313,12 @@
     return `
       <section class="reference-section-list" aria-label="Reference ideas from messages">
         <h3 class="section-title">Reference Ideas</h3>
-        <div class="reference-focus-grid">
+        <div class="reference-idea-list">
           ${rows
             .map((idea) => {
               const contacts = splitMultiValue(idea.contact_refs);
               return `
-                <article class="card reference-focus-card">
+                <article class="card reference-focus-card reference-idea-card">
                   <div class="detail-header">
                     <h3>${escapeHtml(idea.title || "Reference Idea")}</h3>
                     ${statusChip(idea.status || "open")}
@@ -7339,13 +7350,14 @@
     return `
       <section class="reference-section-list" aria-label="Contact register">
         <h3 class="section-title">Contact Register</h3>
-        <div class="reference-focus-grid">
+        <div class="reference-idea-list">
           ${rows
             .map((contact) => {
               const url = contactChannelUrl(contact);
+              const phoneDisplay = redactPhoneNumber(contact.phone);
               const linkPayload = url ? { ...contact, url } : contact;
               return `
-                <article class="card reference-focus-card">
+                <article class="card reference-focus-card reference-idea-card">
                   <div class="detail-header">
                     <h3>${escapeHtml(contact.name || "Contact")}</h3>
                     ${statusChip(contact.status || "active")}
@@ -7357,7 +7369,7 @@
                     ${contact.confidence ? chip(`Confidence: ${formatToken(contact.confidence)}`) : ""}
                   </div>
                   <dl class="meta-grid">
-                    ${contact.phone ? `<dt>Phone</dt><dd>${escapeHtml(contact.phone)}</dd>` : ""}
+                    ${phoneDisplay ? `<dt>Phone</dt><dd>${escapeHtml(phoneDisplay)}</dd>` : ""}
                     ${contact.source ? `<dt>Source</dt><dd>${escapeHtml(contact.source)}</dd>` : ""}
                     ${contact.source_date ? `<dt>Date</dt><dd>${escapeHtml(contact.source_date)}</dd>` : ""}
                     ${contact.channel_or_url && !url ? `<dt>Channel</dt><dd>${escapeHtml(contact.channel_or_url)}</dd>` : ""}
@@ -7416,16 +7428,6 @@
       </section>
 
       ${renderOtherBuildFocusCards(sections)}
-      ${renderReferenceProjectIdeas(referenceIdeas)}
-      ${renderContactRegister(contacts)}
-
-      <section class="card reference-drop-card">
-        <div class="detail-header">
-          <h3>Reference Media Drop Zone</h3>
-          ${chip(dropZoneMedia ? `${dropZoneMedia} media` : "Empty")}
-        </div>
-        <p class="small-muted"><code>${escapeHtml(otherBuilds.drop_zone || "data/reference/other_j40_builds")}</code></p>
-      </section>
 
       <section class="reference-section-list">
         ${
@@ -7451,6 +7453,17 @@
             : '<article class="card">No other-build reference sections found.</article>'
         }
       </section>
+
+      <section class="card reference-drop-card">
+        <div class="detail-header">
+          <h3>Reference Media Drop Zone</h3>
+          ${chip(dropZoneMedia ? `${dropZoneMedia} media` : "Empty")}
+        </div>
+        <p class="small-muted"><code>${escapeHtml(otherBuilds.drop_zone || "data/reference/other_j40_builds")}</code></p>
+      </section>
+
+      ${renderReferenceProjectIdeas(referenceIdeas)}
+      ${renderContactRegister(contacts)}
     `;
   }
 

@@ -1958,6 +1958,19 @@ def norm(value: Any) -> str:
     return clean(value).lower()
 
 
+def redact_contact_phone(value: Any) -> str:
+    return "[redacted]" if clean(value) else ""
+
+
+def sanitize_contact_register_rows(rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    sanitized_rows: list[dict[str, str]] = []
+    for row in rows:
+        sanitized = dict(row)
+        sanitized["phone"] = redact_contact_phone(row.get("phone"))
+        sanitized_rows.append(sanitized)
+    return sanitized_rows
+
+
 def is_hidden_whatsapp_chat(row: dict[str, Any]) -> bool:
     chat_name = norm(row.get("chat_name") or row.get("source_name"))
     chat_id = clean(row.get("chat_id"))
@@ -9228,7 +9241,7 @@ def build_dashboard_data() -> dict[str, Any]:
     selling_site_manifest_rows = load_csv_optional(SELLING_SITE_MANIFEST_PATH)
     whatsapp_j40_chat_rows = load_csv_optional(WHATSAPP_J40_CHAT_CANDIDATES_PATH)
     whatsapp_j40_media_rows = load_csv_optional(WHATSAPP_J40_MEDIA_INDEX_PATH)
-    contact_register_rows = load_csv_optional(CONTACT_REGISTER_PATH)
+    contact_register_rows = sanitize_contact_register_rows(load_csv_optional(CONTACT_REGISTER_PATH))
     reference_project_idea_rows = load_csv_optional(REFERENCE_PROJECT_IDEAS_PATH)
     whatsapp_j40_chat_rows = [row for row in whatsapp_j40_chat_rows if not is_hidden_whatsapp_chat(row)]
     whatsapp_j40_media_rows = [row for row in whatsapp_j40_media_rows if not is_hidden_whatsapp_chat(row)]

@@ -41,6 +41,13 @@ if [[ "${USE_TMP_USER_DIR}" == "1" ]]; then
   TMP_ROOT="${PROJECT_ROOT}/.ai/mcp/tmp_userdir"
   mkdir -p "${TMP_ROOT}"
   TMP_AUTH_PATH="$(mktemp -d "${TMP_ROOT}/${SERVER_NAME}.XXXXXX")"
+  if [[ -d "${AUTH_PATH}" && -n "$(ls -A "${AUTH_PATH}" 2>/dev/null)" ]]; then
+    if command -v rsync >/dev/null 2>&1; then
+      rsync -a "${AUTH_PATH}/" "${TMP_AUTH_PATH}/"
+    else
+      cp -R "${AUTH_PATH}/." "${TMP_AUTH_PATH}/"
+    fi
+  fi
   AUTH_RUN_PATH="${TMP_AUTH_PATH}"
 fi
 
