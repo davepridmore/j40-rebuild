@@ -6272,8 +6272,6 @@
     const workstreamCards = parts.open_counts_by_workstream || [];
     const procurementEvidence = buildProcurementEvidenceImages(parts.procurement_evidence_images || []);
     const workbookSourceLinks = parts.workbook_source_links || [];
-    const supplySummary = supplies.summary_by_type || [];
-    const supplyRowsByStatus = supplies.rows_by_status || {};
     const allSupplyRows = supplies.all_rows || [];
     const inventoryGroupOrder = Array.isArray(supplies.inventory_groups) && supplies.inventory_groups.length
       ? supplies.inventory_groups
@@ -6285,11 +6283,63 @@
       parts: "Parts Inventory",
       substances: "Substances Inventory",
     };
+    const statusGroups = ["previously", "in_process", "still_required"];
+    const supplyTypes = ["tool", "substance", "part"];
+    const shouldHideFromOrderingInventory = (row) => {
+      const sourceRef = cleanString(row && row.source_ref).toLowerCase();
+      const item = cleanString(row && row.item).toLowerCase();
+      const workstream = cleanString(row && row.workstream).toLowerCase();
+      const notes = cleanString(row && row.notes).toLowerCase();
+      const supplyType = cleanString(row && row.supply_type).toLowerCase();
+      const blob = [sourceRef, item, workstream, notes].join(" ");
+      if (
+        sourceRef === "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514" ||
+        item === "full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in od, 12 m preferred"
+      ) {
+        return false;
+      }
+      if (workstream === "fabrication_handoff" || sourceRef.includes("fabrication")) {
+        return true;
+      }
+      if (
+        blob.includes("interior conversion") ||
+        sourceRef.startsWith("part_hvac_") ||
+        blob.includes("hvac") ||
+        blob.includes("a/c")
+      ) {
+        return true;
+      }
+      if (
+        sourceRef === "tool_large_bore_nitto_air_hose_impact_followup_20260517" ||
+        (workstream === "site_setup" && (blob.includes("air hose") || blob.includes("air compressor")))
+      ) {
+        return true;
+      }
+      if (supplyType !== "part") {
+        return false;
+      }
+      if (workstream === "replacement_pipes") {
+        return true;
+      }
+      return [
+        "hose",
+        "hard-line",
+        "hard line",
+        "brake-line",
+        "brake line",
+        "fuel line",
+        "pipe",
+        "tube stock",
+        "tubing",
+        "line support",
+      ].some((token) => blob.includes(token));
+    };
+    const orderingSupplyRows = allSupplyRows.filter((row) => !shouldHideFromOrderingInventory(row));
     const groupedSupplyRows = {};
     inventoryGroupOrder.forEach((group) => {
       groupedSupplyRows[group] = [];
     });
-    allSupplyRows.forEach((row) => {
+    orderingSupplyRows.forEach((row) => {
       const explicitGroup = cleanString(row && row.inventory_group).toLowerCase();
       const supplyType = cleanString(row && row.supply_type).toLowerCase();
       let group = explicitGroup;
@@ -6306,6 +6356,30 @@
         groupedSupplyRows[group] = [];
       }
       groupedSupplyRows[group].push(row);
+    });
+    const supplySummary = supplyTypes.map((supplyType) => {
+      const rows = orderingSupplyRows.filter((row) => cleanString(row && row.supply_type).toLowerCase() === supplyType);
+      const counts = { previously: 0, in_process: 0, still_required: 0 };
+      rows.forEach((row) => {
+        const statusGroup = cleanString(row && row.status_group).toLowerCase();
+        if (statusGroups.includes(statusGroup)) {
+          counts[statusGroup] += 1;
+        }
+      });
+      return {
+        supply_type: supplyType,
+        previously: counts.previously,
+        in_process: counts.in_process,
+        still_required: counts.still_required,
+        total: rows.length,
+      };
+    });
+    const supplyRowsByStatus = { previously: [], in_process: [], still_required: [] };
+    orderingSupplyRows.forEach((row) => {
+      const statusGroup = cleanString(row && row.status_group).toLowerCase();
+      if (statusGroups.includes(statusGroup)) {
+        supplyRowsByStatus[statusGroup].push(row);
+      }
     });
     const suppliesPreviously = supplyRowsByStatus.previously || [];
     const suppliesInProcess = supplyRowsByStatus.in_process || [];
@@ -6336,6 +6410,7 @@
           <h3>Still Required / Need To Order</h3>
           ${chip(`${suppliesStillRequired.length} rows`)}
         </div>
+        <p class="small-muted">Interior-conversion rows, fabrication rows, detailed hose/line rows, and workshop air-supply rows stay tracked elsewhere; this view keeps only the combined brake/clutch piping line.</p>
         <div class="chip-row">
           ${stillRequiredTypeChips || chip("No still-required rows")}
         </div>
