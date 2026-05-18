@@ -45,6 +45,7 @@ WORKBOOK_PARTS_PATH = MANUAL_DIR / "workbook_tabs" / "parts.csv"
 WORKBOOK_SUBSTANCES_PATH = MANUAL_DIR / "workbook_tabs" / "substances.csv"
 WORKBOOK_ELECTRICAL_MASTER_PATH = MANUAL_DIR / "workbook_tabs" / "electrical_master.csv"
 WORKBOOK_ELECTRICAL_TEMPLATES_PATH = MANUAL_DIR / "workbook_tabs" / "electrical_templates.csv"
+ENGINE_ELECTRICAL_INPUTS_RECONCILIATION_PATH = MANUAL_DIR / "engine_electrical_inputs_reconciliation_20260517.csv"
 ELECTRICAL_DIAGRAM_RECONCILIATION_PATH = MANUAL_DIR / "electrical_diagram_reconciliation_20260518.csv"
 WORKBOOK_RUBBERS_EXACT_ONLINE_PATH = MANUAL_DIR / "workbook_tabs" / "rubbers_exact_online.csv"
 WORKBOOK_RUBBERS_KIT_BUY_PATH = MANUAL_DIR / "workbook_tabs" / "rubbers_kit_buy.csv"
@@ -2589,11 +2590,60 @@ def load_electrical_layout_templates(template_rows: list[dict[str, str]]) -> lis
     return templates
 
 
-def load_electrical_spec_layout() -> dict[str, Any]:
+def engine_input_next_connected_to(input_id: str) -> str:
+    next_connections = {
+        "EEI-001": "Starter B+ cable, ignition/start trigger path, and engine-to-chassis ground return.",
+        "EEI-002": "Battery or main fuse point, charge warning/exciter circuit, regulator sense if fitted, and alternator ground.",
+        "EEI-003": "Fuel-stop or idle-up device to dash fuel-stop control and ignition RUN/OFF logic after the component is proven.",
+        "EEI-004": "Dash cluster gauge or warning-lamp input after the sender or switch type is identified.",
+        "EEI-005": "Unknown harness endpoint; trace both connector sides before any reconnection.",
+        "EEI-006": "Unknown harness endpoint or obsolete branch; trace before repair, delete, or retain decision.",
+        "EEI-007": "Harness support path only: clips, sleeve, grommets, and strain relief rather than a circuit endpoint.",
+        "EEI-008": "L3 rear loom sender branch to instrument-cluster fuel gauge plus sender/tank ground path.",
+    }
+    return next_connections.get(clean(input_id), "")
+
+
+def engine_electrical_input_payload(
+    rows: list[dict[str, str]],
+    photo_rows: list[dict[str, str]],
+) -> list[dict[str, Any]]:
+    rows_by_id = photo_rows_by_media_id(photo_rows)
+    reference_images = dedupe_payload_images(
+        [image_payload(row, []) for row in wiring_diagram_reference_rows(photo_rows)]
+    )
+    payload: list[dict[str, Any]] = []
+    for row in rows:
+        photo_refs = clean(row.get("photo_refs"))
+        row_images = dedupe_payload_images(
+            reference_images + evidence_images_from_refs(photo_refs, rows_by_id)
+        )
+        payload.append(
+            {
+                "input_id": clean(row.get("input_id")),
+                "input_name": clean(row.get("input_name")),
+                "photo_refs": photo_refs,
+                "location_visible": clean(row.get("location_visible")),
+                "identified_function_or_status": clean(row.get("identified_function_or_status")),
+                "confidence": clean(row.get("confidence")),
+                "next_connected_to": engine_input_next_connected_to(row.get("input_id")),
+                "existing_wiring_reconciliation": clean(row.get("existing_wiring_reconciliation")),
+                "refit_action": clean(row.get("refit_action")),
+                "verification_before_connection": clean(row.get("verification_before_connection")),
+                "closeout_evidence_required": clean(row.get("closeout_evidence_required")),
+                "notes": clean(row.get("notes")),
+                "evidence_images": row_images,
+            }
+        )
+    return payload
+
+
+def load_electrical_spec_layout(photo_rows: list[dict[str, str]]) -> dict[str, Any]:
     master_rows = load_csv_optional(WORKBOOK_ELECTRICAL_MASTER_PATH)
     template_rows = load_csv_optional(WORKBOOK_ELECTRICAL_TEMPLATES_PATH)
+    engine_input_rows = load_csv_optional(ENGINE_ELECTRICAL_INPUTS_RECONCILIATION_PATH)
     diagram_reconciliation_rows = load_csv_optional(ELECTRICAL_DIAGRAM_RECONCILIATION_PATH)
-    if not master_rows and not template_rows and not diagram_reconciliation_rows:
+    if not master_rows and not template_rows and not engine_input_rows and not diagram_reconciliation_rows:
         return {}
 
     metadata = parse_electrical_master_metadata(master_rows)
@@ -2605,6 +2655,8 @@ def load_electrical_spec_layout() -> dict[str, Any]:
         source_refs.append(repo_relative_path(WIRING_DIAGRAM_JPG_PATH))
     if WIRING_DIAGRAM_GRAFFLE_PATH.exists():
         source_refs.append(repo_relative_path(WIRING_DIAGRAM_GRAFFLE_PATH))
+    if engine_input_rows:
+        source_refs.append(repo_relative_path(ENGINE_ELECTRICAL_INPUTS_RECONCILIATION_PATH))
     if diagram_reconciliation_rows:
         source_refs.append(repo_relative_path(ELECTRICAL_DIAGRAM_RECONCILIATION_PATH))
 
@@ -2615,6 +2667,7 @@ def load_electrical_spec_layout() -> dict[str, Any]:
         "purpose": metadata["purpose"],
         "source_refs": source_refs,
         "layout_templates": load_electrical_layout_templates(template_rows),
+        "engine_input_reconciliation": engine_electrical_input_payload(engine_input_rows, photo_rows),
         "diagram_reconciliation": diagram_reconciliation_rows,
         "wiring_progress_tracker": workbook_section_rows(
             master_rows,
@@ -2704,6 +2757,7 @@ def build_dashboard_electrical_spec_layout(full_layout: dict[str, Any]) -> dict[
     gate_rows = list(full_layout.get("minimum_electrical_gate") or [])
     connector_rows = list(full_layout.get("connector_quick_lookup") or [])
     loom_rows = list(full_layout.get("loom_quick_lookup") or [])
+    engine_input_rows = list(full_layout.get("engine_input_reconciliation") or [])
     diagram_reconciliation_rows = list(full_layout.get("diagram_reconciliation") or [])
 
     dashboard_wiring_rows = [
@@ -2749,6 +2803,7 @@ def build_dashboard_electrical_spec_layout(full_layout: dict[str, Any]) -> dict[
         "purpose": full_layout.get("purpose", ""),
         "source_refs": full_layout.get("source_refs", []),
         "layout_templates": list(full_layout.get("layout_templates") or []),
+        "engine_input_reconciliation": engine_input_rows,
         "diagram_reconciliation": dashboard_diagram_reconciliation_rows or diagram_reconciliation_rows[:8],
         "wiring_progress_tracker": dashboard_wiring_rows or wiring_rows[:8],
         "locked_as_built_standards": list(full_layout.get("locked_as_built_standards") or [])[:4],
@@ -9197,7 +9252,7 @@ def build_dashboard_data() -> dict[str, Any]:
     buy_now_rows = load_csv(BUY_NOW_PATH)
     supplies_inventory = build_supplies_inventory(expense_rows, fastener_estimate_rows)
     workbook_source_links = build_workbook_source_links()
-    electrical_spec_layout = load_electrical_spec_layout()
+    electrical_spec_layout = load_electrical_spec_layout(photo_rows)
     electrical_spec_layout_by_workstream: dict[str, dict[str, Any]] = {}
     if electrical_spec_layout:
         electrical_spec_layout_by_workstream["electrical_reset"] = electrical_spec_layout
@@ -9835,6 +9890,7 @@ def build_dashboard_data() -> dict[str, Any]:
             "parts_buy_now_this_week": "data/manual/parts_buy_now_this_week.csv",
             "workbook_electrical_master": "data/manual/workbook_tabs/electrical_master.csv",
             "workbook_electrical_templates": "data/manual/workbook_tabs/electrical_templates.csv",
+            "engine_electrical_inputs_reconciliation": "data/manual/engine_electrical_inputs_reconciliation_20260517.csv",
             "electrical_diagram_reconciliation": "data/manual/electrical_diagram_reconciliation_20260518.csv",
             "workbook_rubbers_exact_online": "data/manual/workbook_tabs/rubbers_exact_online.csv",
             "workbook_rubbers_kit_buy": "data/manual/workbook_tabs/rubbers_kit_buy.csv",
