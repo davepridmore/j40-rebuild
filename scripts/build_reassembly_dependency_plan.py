@@ -391,6 +391,9 @@ def build_component_disposition(
         pre_reassembly_action = "confirm_state_and_tag"
         dependency_lane = "body_and_trim"
 
+        if row.get("component_group", "") in {"rear_axle", "brakes", "suspension_upgrade", "steering_procurement", "steering_column"}:
+            dependency_lane = "mechanical_safety"
+            pre_reassembly_action = "inspect_measure_and_close_before_road_validation"
         if status == "planned_send_out":
             disposition = "refurbish_send_out"
             reuse_decision = "reuse_after_refurbish"
@@ -554,14 +557,14 @@ def build_work_packages(
             work_package_id="WP04",
             title="Mechanical Service Baseline",
             lane="mechanical",
-            objective="Execute reliability service pack, merged brake refresh prep, and document defects before upgrades.",
+            objective="Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
             depends_on="stripdown_cataloguing_complete",
-            linked_workstreams="mechanical_baseline|steering_brakes_suspension|brake_system",
+            linked_workstreams="mechanical_baseline|steering_brakes_suspension|brake_system|suspension_upgrade",
             current_state="queued",
-            evidence_signal="engine_bay baseline evidence present; service pack and brake-system rows prepared",
-            blocker_summary=f"{mech_buy_now} mechanical/brake safety rows need pricing, measurement capture, or order.",
-            gate_to_close="Cooling/fuel/ignition/brake baseline complete with leak-free checks.",
-            key_procurement_actions="Batch-buy must-replace consumables; run brake spec capture before exact brake orders; keep inspect-then-replace items gated to measured findings.",
+            evidence_signal="engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared",
+            blocker_summary=f"{mech_buy_now} mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+            gate_to_close="Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
+            key_procurement_actions="Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
         ),
         WorkPackage(
             work_package_id="WP05",
@@ -658,6 +661,9 @@ def write_report(
     )
     lines.append(
         f"- Run `WP04` procurement now: {count_mechanical_buy_actions(procurement_rows)} mechanical rows still require buy execution."
+    )
+    lines.append(
+        "- Close `DIFF-CAPTURE-001` during the rear brake/suspension window before axle coating, alignment, or road validation."
     )
     lines.append(
         f"- Avoid duplicate buys: {decision_counts.get('verify_stock_before_buy', 0)} rows are flagged as likely already on hand and should be physically stock-checked first."

@@ -17,6 +17,41 @@ OUTPUT_CSV_PATH = MANUAL_DIR / "component_jobs_photo_reconciliation.csv"
 OUTPUT_MD_PATH = DOCS_DIR / "component-jobs-photo-reconciliation.md"
 NON_COMPONENT_EVIDENCE_STAGES: set[str] = {"procurement_reconciliation"}
 
+TUB_RUST_20260517_MEDIA_IDS: tuple[str, ...] = (
+    "20260517_195032_gp_lrASxesw",
+    "20260517_195057_gp_U6FxmsPQ",
+    "20260517_195108_gp_elCiXzKw",
+    "20260517_195123_gp_LxOfgsPA",
+    "20260517_195241_gp_RzJdcAZg",
+    "20260517_195321_gp_4zDAINsA",
+    "20260517_195330_gp_wrE9dLVw",
+    "20260517_195341_gp_ZTYnpWUA",
+    "20260517_195406_gp_req8G3Bg",
+    "20260517_195430_gp_VGGpRFOQ",
+    "20260517_195511_gp_iFvWFVNw",
+    "20260517_195628_gp_Wog59oFg",
+)
+
+ENGINE_ELECTRICAL_INPUTS_20260517_MEDIA_IDS: tuple[str, ...] = (
+    "20260517_204429_gp_yEAcUHBg",
+    "20260517_204445_gp_oaQKzDrA",
+    "20260517_204504_gp_46p1VNCg",
+    "20260517_204538_gp_9CERKvYA",
+    "20260517_204550_gp_kDsqLZQg",
+    "20260517_204615_gp_wsn4bN8g",
+    "20260517_204711_gp_jZ4tm3uQ",
+    "20260517_204725_gp_y7P6qvhQ",
+    "20260517_204740_gp_yI8f8DQw",
+    "20260517_204756_gp_xdOm3erw",
+)
+
+CABIN_ENGINE_FIREWALL_HOLES_20260517_MEDIA_IDS: tuple[str, ...] = (
+    "20260517_194754_gp_vXLV7rzA",
+    "20260517_194806_gp_eou5ctOQ",
+    "20260517_194841_gp_eXh30voQ",
+    "20260517_194911_gp_jCrFS5PA",
+)
+
 
 @dataclass(frozen=True)
 class EvidenceRule:
@@ -40,13 +75,13 @@ RULES: dict[str, EvidenceRule] = {
     ),
     "front_windows": EvidenceRule(
         direct_specific_components=("hood_and_front_windshield_overview",),
-        indirect_specific_components=("cabin_view_through_glass", "cabin_overview"),
-        notes="Front windshield is explicitly captured in dedicated front overview shots.",
+        indirect_specific_components=("cabin_view_through_glass", "cabin_overview", "side_window_glass_and_channels"),
+        notes="Front windshield is explicitly captured in dedicated front overview shots; May 17 side-window glass photos support the broader windows workstream.",
     ),
     "front_vent_window_assemblies": EvidenceRule(
         direct_specific_components=("front_vent_window_assemblies",),
-        indirect_specific_components=("window_rubber_seals_and_frames", "cabin_view_through_glass"),
-        notes="Detached paired vent/quarter window assemblies are directly documented and should close through the WP02 refurbishment gate.",
+        indirect_specific_components=("window_rubber_seals_and_frames", "cabin_view_through_glass", "side_window_glass_and_channels"),
+        notes="Detached paired vent/quarter window assemblies are directly documented and should close through the windows refurbishment gate.",
     ),
     "hood": EvidenceRule(
         direct_specific_components=("hood_and_front_windshield_overview",),
@@ -59,14 +94,19 @@ RULES: dict[str, EvidenceRule] = {
         notes="Rear cabin/body section is directly visible in multiple strip-down shots.",
     ),
     "window_mechanisms": EvidenceRule(
-        direct_specific_components=("rear_hatch_window_latch_mechanisms",),
-        indirect_specific_components=("wiper_arm_or_linkage_hardware",),
-        notes="Rear hatch window latch hardware is directly documented; wiper/linkage remains supporting evidence.",
+        direct_specific_components=("rear_hatch_window_latch_mechanisms", "front_vent_window_assemblies"),
+        indirect_specific_components=("wiper_arm_or_linkage_hardware", "side_window_glass_and_channels"),
+        notes="Rear hatch latch hardware and vent-window latch/pivot assemblies are directly documented; wiper/linkage remains supporting evidence.",
     ),
     "body_rubbers": EvidenceRule(
-        direct_specific_components=("window_rubber_seals_and_frames",),
+        direct_specific_components=("window_rubber_seals_and_frames", "front_vent_window_assemblies", "side_window_glass_and_channels"),
         indirect_specific_components=("roof_gutter_and_window_channel", "cabin_view_through_glass"),
-        notes="Detached window assemblies with rubber surrounds are directly documented.",
+        notes="Detached window assemblies, channels, and rubber surrounds are directly documented; non-window body-mount rubber remains controlled separately.",
+    ),
+    "window_rubbers_weatherstrips": EvidenceRule(
+        direct_specific_components=("window_rubber_seals_and_frames", "front_vent_window_assemblies", "side_window_glass_and_channels"),
+        indirect_specific_components=("roof_gutter_and_window_channel", "cabin_view_through_glass"),
+        notes="Window rubber/weatherstrip replacement is supported by May 17 removed window assembly measurements plus earlier window-seal context.",
     ),
     "interior": EvidenceRule(
         direct_specific_components=(
@@ -95,10 +135,46 @@ RULES: dict[str, EvidenceRule] = {
         indirect_specific_components=("electrical_reference_document", "electrical_wiring_diagram"),
         notes="Accessory/electrical removal and rebuild work has strong direct photo coverage.",
     ),
+    "engine_electrical_inputs_reconciliation_20260517": EvidenceRule(
+        direct_specific_components=(
+            "engine_starter_solenoid_and_ground_inputs",
+            "alternator_charge_regulator_wiring",
+            "injection_pump_throttle_linkage_electrical_input",
+            "engine_sender_branch",
+            "engine_unidentified_two_wire_connector",
+            "engine_loose_connector_unassigned",
+            "engine_input_loom_routing_context",
+        ),
+        indirect_specific_components=("engine_bay_overview", "engine_powertrain_cleaning_baseline"),
+        notes="May 17 selected photos are the active engine electrical input reconciliation set; starter, alternator, sender, injection-pump/throttle-linked, and unknown connector branches must be labelled and electrically proven before final wrap.",
+        direct_media_ids=ENGINE_ELECTRICAL_INPUTS_20260517_MEDIA_IDS,
+    ),
+    "cabin_engine_firewall_holes_survey_20260517": EvidenceRule(
+        direct_specific_components=("cabin_engine_firewall_pass_through_holes",),
+        indirect_specific_components=(
+            "driver_footwell_firewall_pass_through",
+            "driver_footwell_firewall_and_wiring",
+            "pedal_box_wiring",
+            "firewall_and_dash_wiring",
+        ),
+        notes="May 17 selected photos are the active cabin-to-engine firewall hole survey; size, edge condition, grommet availability, and routing assignment must be logged before reusing or closing any opening.",
+        direct_media_ids=CABIN_ENGINE_FIREWALL_HOLES_20260517_MEDIA_IDS,
+    ),
     "floor_pan": EvidenceRule(
         direct_specific_components=("floor_pan_and_firewall", "floor_pan_rust_zones", "floor_seam_and_body_mount_rust"),
         indirect_specific_components=("frame_floor_underside_and_lines", "rear_cargo_floor"),
-        notes="Floor pan rust/condition is directly evidenced with dedicated close-ups.",
+        notes="Floor pan rust/condition is directly evidenced with dedicated close-ups; May 17 adds tub floor, seam, and body-mount rust details.",
+    ),
+    "tub_rust_damage_survey_20260517": EvidenceRule(
+        direct_specific_components=(),
+        indirect_specific_components=("rear_cargo_floor", "body_shell_with_doors_removed", "rear_side_opening"),
+        notes="May 17 selected photos are the active tub rust-damage intake set; each still needs station labels, probe results, and repair release decisions.",
+        direct_media_ids=TUB_RUST_20260517_MEDIA_IDS,
+    ),
+    "tub_corner_hinge_pin_repair_20260517": EvidenceRule(
+        direct_specific_components=("tub_corner_hinge_pin_repair",),
+        indirect_specific_components=("floor_seam_and_body_mount_rust", "body_shell_with_doors_removed"),
+        notes="The May 17 re-selected close-ups isolate the corner/hinge repair issue where the hinge pin had to be cut off; release requires side/location labels, probe results, hinge hardware decision, and repair-method signoff.",
     ),
     "rear_fuel_tank": EvidenceRule(
         direct_specific_components=("fuel_filler_side_panel", "rear_cargo_floor"),
@@ -127,7 +203,8 @@ RULES: dict[str, EvidenceRule] = {
     "paint_returned_panels_refinished": EvidenceRule(
         direct_specific_components=("refinished_hinges_brackets_and_trim", "refinished_seat_or_mount_bracket", "wiper_arm_or_linkage_hardware"),
         indirect_specific_components=("panel_detail_and_markings", "front_panel_lighting_mount_area"),
-        notes="Off-vehicle refinished hardware/panel photos provide direct evidence of returned painted parts.",
+        notes="Off-vehicle refinished hardware/panel photos and the May 17 returned roof image provide direct evidence of returned painted parts.",
+        direct_media_ids=("20260517_193305_gp_o1a6StwA",),
     ),
     "paint_workshop_progress_media": EvidenceRule(
         direct_specific_components=("panel_detail_and_markings", "off_vehicle_workstation_reference_video"),
@@ -205,6 +282,12 @@ RULES: dict[str, EvidenceRule] = {
         direct_specific_components=("rear_axle_and_leaf_springs",),
         indirect_specific_components=("frame_floor_underside_and_lines", "rear_mid_frame_rail_and_hard_line_detail", "rear_axle_spring_hanger_and_crossmember"),
         notes="Rear axle/drum photos directly show the parking-brake cable/linkage and axle-end hard-line routing; release still needs labelled removal photos and old parts kept as templates.",
+    ),
+    "rear_differential_axle_inspection_20260517": EvidenceRule(
+        direct_specific_components=("rear_differential_carrier_and_axle_housing", "rear_axle_and_leaf_springs"),
+        indirect_specific_components=("rear_axle_spring_hanger_and_crossmember", "frame_floor_underside_and_lines", "rear_mid_frame_rail_and_hard_line_detail"),
+        notes="User-supplied May 17 differential carrier/pumpkin close-up triggers a rear differential/axle teardown inspection plan; existing rear axle, brake-line, and spring photos provide supporting route and access context. Closure needs DIFF-CAPTURE-001 with oil/debris, breather, carrier sealing, gear teeth, axle seal/bearing, fill, and leak-check evidence.",
+        direct_media_ids=("20260517_230500_user_rear_differential_carrier_cover",),
     ),
     "brake_hydraulic_refresh_and_bias_decision": EvidenceRule(
         direct_specific_components=("frame_floor_underside_and_lines",),
@@ -324,19 +407,35 @@ RULES: dict[str, EvidenceRule] = {
         notes="Radiator/front-support photos directly show the radiator support location and fan-clearance context; the May 12 view adds the visible upright and crossmember hole field, while final hole centres and bracket offsets still need ruler photos or dry-fit.",
     ),
     "battery_tray_holder_bracket_repair_20260508": EvidenceRule(
-        direct_specific_components=("battery_side_tray_structure_context",),
+        direct_specific_components=(
+            "battery_side_tray_structure_context",
+            "installed_battery_dimension_reference",
+            "existing_battery_mount_tray_measurements",
+        ),
         indirect_specific_components=("engine_bay_overview", "engine_bay_chassis_interface", "engine_powertrain_cleaning_baseline"),
-        notes="Engine-bay overview photos show the battery-side location, and the May 12 battery-side context starts the structural pickup/clearance read; underside tray feet, support legs, and ruler close-ups are still required before release.",
+        notes="Engine-bay overview photos show the battery-side location; May 17 adds actual installed-battery dimension and existing tray/mount ruler evidence, while underside foot condition and dry-fit pickup templates still need closure.",
     ),
     "battery_power_carrier_mount_fabrication_20260508": EvidenceRule(
-        direct_specific_components=("battery_side_tray_structure_context",),
+        direct_specific_components=(
+            "battery_side_tray_structure_context",
+            "installed_battery_dimension_reference",
+            "existing_battery_mount_tray_measurements",
+        ),
         indirect_specific_components=("engine_bay_overview", "engine_bay_chassis_interface"),
-        notes="Procurement photos document the MIDI/cutoff hardware separately; the May 12 battery-side context helps locate likely carrier constraints, but tray pickup-point close-ups and cardboard mock-up photos are still required before release.",
+        notes="Procurement photos document the MIDI/cutoff hardware separately; May 17 battery and existing tray measurements now provide the real carrier datum, but cardboard/flat-bar mock-up and final pickup release photos are still required before cutting.",
     ),
     "engine_bay_mounting_scouting_pass_20260508": EvidenceRule(
-        direct_specific_components=("front_support_radiator_pickups_context", "battery_side_tray_structure_context", "front_frame_horns_bumper_and_radiator_support", "cooling_hoses_fan_belt_and_radiator_support", "engine_bay_overview"),
+        direct_specific_components=(
+            "front_support_radiator_pickups_context",
+            "battery_side_tray_structure_context",
+            "installed_battery_dimension_reference",
+            "existing_battery_mount_tray_measurements",
+            "front_frame_horns_bumper_and_radiator_support",
+            "cooling_hoses_fan_belt_and_radiator_support",
+            "engine_bay_overview",
+        ),
         indirect_specific_components=("engine_bay_chassis_interface", "fuse_distribution_and_power_hardware", "hidden_diesel_cutoff_switch_hardware"),
-        notes="Current photos are enough to start the radiator/battery/power-carrier plan; May 12 images improve the structure read, and this row closes only when ruler photos and cardboard mock-up checks fill the remaining measurement gaps.",
+        notes="Current photos are enough to start the radiator/battery/power-carrier plan; May 17 imports actual battery and tray/mount measurements, while cardboard mock-up, cable sweep, and pickup release checks remain open.",
     ),
     "auxiliary_chassis_tabs_and_clip_brackets_20260508": EvidenceRule(
         direct_specific_components=("frame_rail_body_mount_and_hard_line_detail", "rear_mid_frame_rail_and_hard_line_detail"),
@@ -385,7 +484,7 @@ RULES: dict[str, EvidenceRule] = {
     "tub_refit_rubber_hardware_shim_stack": EvidenceRule(
         direct_specific_components=("body_mount_and_crossmember_detail", "floor_seam_and_body_mount_rust"),
         indirect_specific_components=("frame_and_mount_points", "frame_floor_underside_and_lines"),
-        notes="Current original-rubber evidence is limited to mount-detail and tub-side body-mount rust photos; these are enough for style/context but not for final sample dimensions.",
+        notes="Mount-detail and tub-side body-mount rust photos give refit context; May 17 adds current tub-side captive/mount corrosion details, but final rubber/sample dimensions still need physical measurement.",
     ),
 }
 

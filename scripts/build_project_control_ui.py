@@ -79,10 +79,12 @@ PRIMARY_WORKSTREAM_IDS: tuple[str, ...] = (
     "paint_refinish",
     "chassis_fixing",
     "chassis_rubbers",
+    "window_refurbishment",
     "electrical_reset",
     "fabrication_handoff",
     "interior_controls",
     "mechanical_baseline",
+    "gearbox_top_cover",
     "replacement_pipes",
     "brake_system",
     "eps_vitz_upgrade",
@@ -95,10 +97,12 @@ WORKSTREAM_TITLE_OVERRIDES: dict[str, str] = {
     "brake_system": "Brakes",
     "chassis_rubbers": "Chassis Rubbers",
     "fabrication_handoff": "Fabrication",
+    "gearbox_top_cover": "Gearbox",
     "interior_controls": "Dashboard",
     "interior_weatherproofing": "Interior",
     "paint_refinish": "Paint",
     "replacement_pipes": "Replacement Pipes",
+    "window_refurbishment": "Windows",
     "eps_vitz_upgrade": "Steering (EPS)",
     "suspension_upgrade": "Suspension",
 }
@@ -252,6 +256,32 @@ WORKSTREAM_IMAGE_PROFILES: dict[str, dict[str, set[str]]] = {
         "stages": {"underside_inspection", "rust_assessment", "procurement_reconciliation"},
         "keywords": {"body_mount", "rubber", "shim", "sleeve", "isolator"},
     },
+    "window_refurbishment": {
+        "component_groups": {"windows", "rubbers_and_seals", "window_hardware", "body_exterior", "roof_and_gutters"},
+        "stages": {
+            "removed_parts_cataloguing",
+            "window_refurbishment_intake",
+            "baseline_walkaround",
+            "rust_assessment",
+        },
+        "keywords": {
+            "window",
+            "glass",
+            "vent_window",
+            "quarter_window",
+            "side_window",
+            "seal",
+            "rubber",
+            "weatherstrip",
+            "channel",
+            "felt",
+            "latch",
+            "pivot",
+            "slider",
+            "rust",
+            "measurement",
+        },
+    },
     "electrical_reset": {
         "component_groups": {"electrical_system", "procurement_inventory"},
         "stages": {"electrical_rework", "procurement_reconciliation"},
@@ -272,8 +302,8 @@ WORKSTREAM_IMAGE_PROFILES: dict[str, dict[str, set[str]]] = {
         },
     },
     "fabrication_handoff": {
-        "component_groups": {"procurement_inventory"},
-        "stages": {"procurement_reconciliation"},
+        "component_groups": {"procurement_inventory", "engine_bay", "electrical_system"},
+        "stages": {"procurement_reconciliation", "fabrication_measurement"},
         "keywords": {"fabrication", "relay", "fuse", "midi", "wiring", "battery", "carrier", "mount", "cribbing"},
     },
     "mechanical_baseline": {
@@ -339,6 +369,7 @@ WORKSTREAM_MIN_IMAGE_SCORE: dict[str, int] = {
     "electrical_reset": 22,
     "chassis_fixing": 20,
     "chassis_rubbers": 18,
+    "window_refurbishment": 18,
     "fabrication_handoff": 24,
     "body_chassis": 18,
     "paint_refinish": 18,
@@ -359,6 +390,7 @@ WORKSTREAM_MIN_KEYWORD_HITS: dict[str, int] = {
     "paint_refinish": 1,
     "chassis_fixing": 2,
     "chassis_rubbers": 1,
+    "window_refurbishment": 1,
     "electrical_reset": 1,
     "fabrication_handoff": 1,
     "mechanical_baseline": 2,
@@ -375,6 +407,7 @@ WORKSTREAM_ALLOW_STAGE_COMPONENT_FALLBACK: dict[str, bool] = {
     "body_chassis": True,
     "chassis_fixing": True,
     "chassis_rubbers": False,
+    "window_refurbishment": False,
     "electrical_reset": True,
     "mechanical_baseline": True,
     "replacement_pipes": True,
@@ -577,6 +610,13 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
         ("Freeze rubber + sleeve + shim specification", "Define dimensions/material/hardness and exact quantity per mount position."),
         ("Lock sourcing path", "Decide local fabrication vs purchased kit and avoid duplicate/partial orders."),
         ("Complete dry-fit interface check", "Trial-fit the tub mount stack before final body fastening."),
+    ],
+    "window_refurbishment": [
+        ("Tag every window assembly", "Assign side/orientation labels to glass, frames, rubbers, latches, sliders, and fastener bags before teardown."),
+        ("Inspect glass, channels, and mechanisms", "Record cracks, rusted channels, latch/pivot wear, slider condition, and missing hardware by window location."),
+        ("Measure rubber and weatherstrip profiles", "Capture profile, length, cross-section, and compression fit before buying any replacement seal."),
+        ("Refinish and service reusable parts", "Clean/rust-treat/refinish metal channels and service latches or pivots before reassembly."),
+        ("Bench-fit and water-test", "Only release windows for final body refit after fit, movement, and controlled leak paths are recorded."),
     ],
     "electrical_reset": [
         ("Freeze baseline circuit scope", "Confirm exact baseline circuits before optional accessories are added."),
@@ -1061,6 +1101,62 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "supplies": ["New mount stack", "Temporary bolts", "Rubber grease", "Anti-seize"],
                 "hold_point": "Final body fastening waits until the body sits naturally on the mount stack.",
                 "image_tokens": ["body_mount", "chassis", "mount", "refit", "rubber"],
+            },
+        ],
+    },
+    "window_refurbishment": {
+        "title": "Window Refurbishment",
+        "summary": "Glass, frames, latches, sliders, channels, and window rubber/weatherstrip replacement control.",
+        "default_tools": ["Camera", "Calipers", "Measuring tape", "Trim tools", "Small screwdrivers"],
+        "default_supplies": ["Tie-on tags", "Zip bags", "Protective wrap", "Rubber-safe lubricant", "Rust treatment"],
+        "subtasks": [
+            {
+                "title": "Tag Assemblies And Hardware",
+                "priority": "P0",
+                "remaining": "all removed windows",
+                "instruction": "Keep side, orientation, and fasteners traceable before any glass or rubber is disturbed.",
+                "process_steps": [
+                    "Photograph each assembly from both faces with a ruler where possible.",
+                    "Label LH/RH, front/rear, top/bottom, and installed orientation.",
+                    "Bag latches, pivots, sliders, screws, clips, shims, and springs by assembly.",
+                    "Separate glass-only pieces from frame/channel assemblies so fragile parts stay protected.",
+                ],
+                "tools": ["Camera", "Marker", "Trim tools", "Small screwdrivers"],
+                "supplies": ["Tie-on tags", "Zip bags", "Protective wrap"],
+                "hold_point": "No disassembly starts until the assembly and hardware bag can be matched from photos.",
+                "image_tokens": ["window", "glass", "vent_window", "quarter_window", "tag"],
+            },
+            {
+                "title": "Inspect Channels, Latches, And Glass",
+                "priority": "P0",
+                "remaining": "before replacement buys",
+                "instruction": "Separate reusable parts from repair and replacement scope by actual condition.",
+                "process_steps": [
+                    "Check glass for chips, scratches, cracks, and edge damage.",
+                    "Inspect lower channels, tabs, pivots, latches, sliders, and screw points for rust or looseness.",
+                    "Mark parts that need rust treatment, repaint, lubrication, fabrication, or replacement.",
+                    "Record any missing hardware before sourcing rubbers so the full refit path is visible.",
+                ],
+                "tools": ["Inspection light", "Calipers", "Camera", "Small picks"],
+                "supplies": ["Rust treatment", "Light oil", "Labels"],
+                "hold_point": "Seal or glass purchases wait until repair scope is split by component.",
+                "image_tokens": ["window", "channel", "latch", "rust", "glass"],
+            },
+            {
+                "title": "Measure And Source Window Rubbers",
+                "priority": "P0",
+                "remaining": "all fixed, sliding, vent, and rear window seals",
+                "instruction": "Buy exact or sample-matched profiles only after profile, length, and compression fit are known.",
+                "process_steps": [
+                    "Measure seal cross-section, groove size, visible lip direction, and total length from removed samples.",
+                    "Photograph profile ends against a ruler and identify which window each sample belongs to.",
+                    "Compare reusable seals, supplier samples, and any generic weatherstrip before ordering a full set.",
+                    "Bench-fit the chosen profile on cleaned glass/channel before final body installation.",
+                ],
+                "tools": ["Calipers", "Measuring tape", "Camera", "Profile sketch sheet"],
+                "supplies": ["Seal samples", "Rubber-safe lubricant", "Protective tape"],
+                "hold_point": "No full replacement-rubber order until one sample/profile fit is proven for each window type.",
+                "image_tokens": ["rubber", "seal", "weatherstrip", "window", "measurement"],
             },
         ],
     },
@@ -3945,7 +4041,9 @@ def workstream_for_rubber_hose_audit(row: dict[str, str]) -> str:
         return "suspension_upgrade"
     if family in {"interior_controls"}:
         return "interior_controls"
-    if family in {"body_weatherstrip", "body_sealing", "hvac"}:
+    if family in {"body_weatherstrip", "body_sealing"}:
+        return "window_refurbishment"
+    if family in {"hvac"}:
         return "interior_weatherproofing"
     return "mechanical_baseline"
 
@@ -5079,9 +5177,9 @@ def build_workstream_evidence_sets(
             evidence_sets.insert(
                 0,
                 {
-                    "key": "rubber_recreation_candidates_20260502",
-                    "title": "Rubber Recreation Candidate Photos - May 2",
-                    "description": "Starter review collection for recreating body-mount/front-support rubbers, sleeves, shims, and sample stacks.",
+                    "key": "rubber_recreation_candidates",
+                    "title": "Rubber Recreation Candidate Photos",
+                    "description": "Selected review collection for recreating body-mount/front-support rubbers, sleeves, shims, long strips, and sample stacks.",
                     "images": rubber_recreation_images,
                 },
             )
@@ -5566,6 +5664,7 @@ def infer_inventory_group(
 
     mechanical_workstreams = {
         "mechanical_baseline",
+        "gearbox_top_cover",
         "replacement_pipes",
         "chassis_rubbers",
         "brake_system",
@@ -5584,6 +5683,8 @@ def infer_inventory_group(
         "body_mounts",
         "mounts",
         "clutch",
+        "gearbox",
+        "transmission",
     }
     mechanical_keywords = (
         "engine",
@@ -5601,6 +5702,10 @@ def infer_inventory_group(
         "bearing",
         "filter",
         "oil",
+        "gearbox",
+        "transmission",
+        "shift",
+        "shifter",
     )
     if (
         workstream_key in mechanical_workstreams
@@ -6404,9 +6509,9 @@ def rubber_recreation_candidate_rows(photo_rows: list[dict[str, str]]) -> list[d
             for row in photo_rows
             if is_photo_row(row)
             and norm(row.get("specific_component")) == "rubber_parts_recreation_samples"
-            and clean(row.get("captured_date")) == "2026-05-02"
         ],
         key=lambda row: (
+            clean(row.get("captured_date")),
             clean(row.get("captured_time")),
             clean(row.get("file_name")),
         ),

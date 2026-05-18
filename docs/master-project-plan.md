@@ -42,6 +42,7 @@
 | `02_stripdown_cataloguing` | `in_progress` | Strip the truck in a controlled way and produce a visible map of what is removable, damaged, missing, or outsourced. | Shell, loose parts, and outbound panels are catalogued with photos and labels. |
 | `03_body_chassis` | `in_progress` | Body-off and welding track: weld-zone mapping, structural rust cuts, patch fabrication, and corrosion stack sequencing. | Body is off and weld scope is signed off by zone with materials staged. |
 | `03b_chassis_fixing` | `in_progress` | Chassis track (active after tub separation): clean, inspect, repair/approve rails/crossmembers/mounts, then execute rust treatment, primer, seam/top protection, and cavity-wax closeout in order. | Chassis structural repairs are closed or explicitly approved and the coating/protection stack is documented with no unknowns remaining. |
+| `03c_window_refurbishment` | `in_progress` | Dedicated window track: glass, frames, channels, latches, sliders, and window rubbers/weatherstrips. | Windows are tagged, repaired/refinished, seal choices are measured/proven, and bench-fit/water checks are recorded before refit. |
 | `04_electrical_reset` | `in_progress` | Remove junk wiring, define final architecture, buy only the core electrical materials, and install a documented harness. | Starting, charging, lights, horn, wipers, gauges, and required accessories work from a clean, documented loom. |
 | `05_mechanical_baseline` | `in_progress` | Engine-while-stripped track: run service/inspection tasks while access is open (leaks, cooling, hoses, fluids, tune consumables). | Engine baseline maintenance is complete and post-service defects are logged. |
 | `06_steering_brakes_suspension` | `queued` | Resolve steering slack and brake baseline while receiving and installing the ordered Ironman Foam Cell suspension set under controlled gates. | Steering and braking are safe; Ironman suspension is contents-checked, installed, aligned, road-tested, and rechecked after settling. |
@@ -62,7 +63,7 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 
 - Remove only as fast as the tagging and storage process can keep up.
 - Treat roof, doors, hood, windows, trim, and interior components as separate sub-packages with outbound and return states.
-- Use `docs/window-parts-refurbishment-workflow-20260503.md` for the front vent/quarter window assemblies now tracked as `front_vent_window_assemblies` under `WP02`.
+- Use `docs/window-refurbishment-workstream.md` and `data/manual/window_parts_refurbishment_workflow.csv` for the dedicated windows workstream, including the front vent/quarter assemblies and replacement rubbers for the other windows.
 
 ### Body-Off Welding Track
 
@@ -90,6 +91,8 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 
 - Use stripped access to do high-value baseline maintenance first (hoses, leaks, cooling, service points, in-place mount inspection).
 - Current baseline keeps the engine installed. Do not buy an engine lift/hoist unless a later approved job actually requires engine support/removal.
+- Use [gearbox-top-cover-workstream.md](gearbox-top-cover-workstream.md) as the control sheet for the reported poor gearbox top cover / shift tower. Do not buy detents, bushes, shift-seat parts, or a replacement cover until the fitted gearbox and top-cover casting are identified and `GB-TOP-CAPTURE-001` is complete.
+- Use [rear-differential-axle-teardown-inspection-plan-20260517.md](rear-differential-axle-teardown-inspection-plan-20260517.md) as the control sheet for the rear differential/axle inspection during the current access window.
 - Keep a written fault list with measured findings; hold upgrades until baseline reliability is closed.
 
 ### Mechanical Replacement Pack (Full Restore)
@@ -107,6 +110,7 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 - Track the kit as two shipments: main Ironman set plus separate `24635FE x2` front damper pair.
 - Do not buy alternate local/OME/Bilstein spring, shock, bush, shackle, or U-bolt options unless the Ironman receipt check proves a missing or incorrect item.
 - Replace standard brake service parts as baseline work while preserving exact-part gates: front disc service parts by fitted conversion hardware, rear drum/cable parts by old samples and drum-open measurements, and hydraulic hoses/lines by fitting style, bracket retention, and old-sample/free length.
+- Do not final-close rear suspension/brakes until the rear differential/axle inspection has recorded oil/debris condition, breather condition, carrier sealing, axle seals/bearings, gear condition, and post-fill leak checks.
 - Resolve brake hose slack, parking-brake cable route, rear hard-line routing, breather slack, steering damper clearance, shackle angle, ride height, alignment, brake bleed/adjustment, and post-install torque checks before road use.
 - Current EPS route remains column-assist, not hydraulic, and does not require engine removal.
 
@@ -154,6 +158,8 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 7. Run the electrical reset track in parallel: baseline harness termination, grounding, and fuse/relay validation only.
 8. Run stripped-engine maintenance in parallel with chassis access and log post-service defects.
 9. Track Ironman suspension delivery and do only receipt/instruction prep until the complete kit and front damper pair are present; prepare the merged brake/suspension parts and tools checklist before the workshop window.
-10. Keep procurement gated by phase: immediate rust-control buys now, defer interior and optional upgrade buys.
-11. Record exact prices for already received tools and consumables that are still missing amounts.
-12. Re-run the story and summary scripts after each meaningful ledger or evidence update so the archive stays current.
+10. Run the gearbox top-cover capture pack before buying shift-tower service parts or closing the mechanical baseline.
+11. Run the rear differential/axle capture pack before coating or rear road-validation closeout.
+12. Keep procurement gated by phase: immediate rust-control buys now, defer interior and optional upgrade buys.
+13. Record exact prices for already received tools and consumables that are still missing amounts.
+14. Re-run the story and summary scripts after each meaningful ledger or evidence update so the archive stays current.

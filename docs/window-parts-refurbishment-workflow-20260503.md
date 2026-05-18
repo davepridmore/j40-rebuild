@@ -5,10 +5,11 @@
 - Component job: `front_vent_window_assemblies`
 - Evidence photo: `photos/20260503_234035_front_vent_window_assemblies.png`
 - Workflow table: `data/manual/window_parts_refurbishment_workflow.csv`
+- Parent workstream: `docs/window-refurbishment-workstream.md`
 
 ## Scope
 
-This covers the paired off-vehicle vent/quarter window assemblies shown in the May 3 intake photo. They are not a loose trim cleanup item; they belong in the body/weather-seal lane because they must be mechanically serviceable and water-controlled before final body refit.
+This covers the paired off-vehicle vent/quarter window assemblies shown in the May 3 intake photo. They are now a sub-job of the wider Windows workstream, which also controls side glass, mechanisms, and replacement rubbers/weatherstrips for the other windows.
 
 ## Workflow Position
 

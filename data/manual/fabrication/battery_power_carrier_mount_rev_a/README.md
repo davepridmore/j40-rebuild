@@ -5,7 +5,7 @@ This package defines the battery-side power carrier as a compact steel stand tha
 ## Design Intent
 
 - Mount the stand from the known chassis pickup with a formed saddle over the chassis rail, upright bridge plates, and body-side adjustable offset bars rather than a fixed one-piece sideways carrier.
-- Support a standard N70/27-class battery envelope up to `318 x 180 x 230 mm` on the `340 x 265 mm` tray with removable hold-down and vertical lift-out clearance.
+- Support the installed Daewoo DLS120 battery measured in the May 17 ruler photos on the `340 x 265 mm` tray with removable hold-down and vertical lift-out clearance. Keep the previous standard N70/27-class `318 x 180 x 230 mm` envelope only as a comparison until the final case and terminal dimensions are transcribed into `component_layout.csv`.
 - Use the simplified Relay Rev D fabrication on the outboard/access edge: mount the `360 x 245 x 3 mm` aluminium base vertically and flat to the main metal service sheet, then place the exact `300 x 197 mm` insulating sheet and existing covered relay box on that vertical base.
 - Use the MIDI Rev D hinged aluminium enclosure on the top/front shelf: `210 x 165 x 65 mm` enclosure floor, `230 x 185 mm` lid, `140 x 85 mm` insulating subplate, fuse 4 input grommet, five output grommets, and an enlarged far-side output grommet for two power cables.
 - Keep the 100A breaker/cutoff beside the MIDI enclosure, with the far-side cutoff stud fed from the battery and the near-side switched stud splitting to relay and MIDI.
@@ -36,7 +36,7 @@ This package defines the battery-side power carrier as a compact steel stand tha
 
 ## Mock-Up Hold
 
-- Make cardboard cards for the battery envelope, `340 x 265 mm` tray, formed saddle, adjustable offset bars at `160 / 190 / 230 mm`, Relay Rev D vertical base attached flat to the main sheet plus relay cover/removal volume, MIDI Rev D hinged enclosure with lid swing, cutoff base/guard, and cable-lug sweep blocks.
+- Make cardboard cards from the May 17 actual battery measurements, the `340 x 265 mm` tray, formed saddle, adjustable offset bars at `160 / 190 / 230 mm`, Relay Rev D vertical base attached flat to the main sheet plus relay cover/removal volume, MIDI Rev D hinged enclosure with lid swing, cutoff base/guard, and cable-lug sweep blocks.
 - Test the whole tray/access-ladder assembly shifted toward the wing-side edge cavity from the chassis saddle. Reject any placement that enters the engine/LHD steering shaft/box/service sweep, hydraulic line path, alternator service space, bonnet clearance, radiator/fan envelope, or safe battery terminal service area.
 - Do not final-drill the chassis saddle, offset bars, relay base, MIDI enclosure, or cutoff tab until the filled cavity map and installed dry-fit photos prove service access with the battery installed.
 

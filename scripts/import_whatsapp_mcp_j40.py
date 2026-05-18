@@ -49,6 +49,10 @@ SEED_CHAT_NAMES = {
     "fj 40 - advisory",
     "fj audio",
     "j40 parts",
+    "j50",
+    "fj50",
+    "j50 parts",
+    "j50 feedback",
     "akbar khan",
     "akber khan",
     "headlight connectors",
@@ -81,7 +85,9 @@ ARCHIVE_MEDIA_INDEX_PATH = GENERATED_DIR / "media_index.csv"
 
 CHAT_RELEVANCE_KEYWORDS = [
     "j40",
+    "j50",
     "fj40",
+    "fj50",
     "land cruiser",
     "landcruiser",
     "toyota",

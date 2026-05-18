@@ -68,6 +68,8 @@ This remains inspect-first, but the exact parts are now defined:
 
 Move gearbox top-cover service into its own workstream. The existing top cover is poor, so do not buy only detents/bushes/shift-seat parts blindly. First decide whether to source a replacement top cover or repair/weld the current one, then order the related service items.
 
+Control sheet now added: [gearbox-top-cover-workstream.md](gearbox-top-cover-workstream.md).
+
 ## A/C Compressor Rows
 
 `Sanden-type compressor` means the compact automotive A/C compressor style/family. The row is reuse/on-hand, not a current purchase. Before reuse, verify clutch voltage, pulley groove, ports, shaft seal/leaks, and oil/refrigerant compatibility.

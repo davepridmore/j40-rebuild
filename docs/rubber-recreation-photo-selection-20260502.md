@@ -1,8 +1,8 @@
-# Rubber Recreation Photo Selection - 2026-05-02
+# Rubber Recreation Photo Selection
 
-Purpose: selected collection driving local recreation of the body-mount/front-support rubber parts, sleeves, shims, and sample stacks.
+Purpose: selected collection driving local recreation of the body-mount/front-support rubber parts, long strip/channel pieces, sleeves, shims, and sample stacks.
 
-Source import: Google Photos picker run `20260502T013759`.
+Source imports: Google Photos picker runs `20260502T013759` and `20260517T213118`.
 
 Selection tracker: `data/manual/rubber_recreation_photo_selection.csv`.
 
@@ -39,7 +39,12 @@ Fabrication handoff: [rubber-recreation-fabrication-spec-20260502.md](rubber-rec
 | `RRB-20260502-012` | <img src="../photos/20260502_004429_gp_KJHxGcCA.jpg" width="220"> | selected | circular cushion side profile |
 | `RRB-20260502-013` | <img src="../photos/20260502_004437_gp_f1TySzww.jpg" width="220"> | selected | circular cushion clean top reference |
 | `RRB-20260502-014` | <img src="../photos/20260502_004442_gp_7WcFHjLQ.jpg" width="220"> | selected | circular cushion clean top reference |
+| `RRB-20260517-001` | <img src="../photos/20260517_193503_gp_N9nHjqXw.jpg" width="220"> | selected | long rubber strip full length reference |
+| `RRB-20260517-002` | <img src="../photos/20260517_193539_gp_E0cR9I0A.jpg" width="220"> | selected | long rubber strip end and width reference |
+| `RRB-20260517-003` | <img src="../photos/20260517_193559_gp_NEpk1hpg.jpg" width="220"> | selected | long rubber strip width closeup |
+| `RRB-20260517-004` | <img src="../photos/20260517_193612_gp_JmbfR0Tw.jpg" width="220"> | selected | long rubber strip curved end measurement reference |
+| `RRB-20260517-005` | <img src="../photos/20260517_193616_gp_1ye19BZA.jpg" width="220"> | selected | long rubber strip curved end closeup |
 
 ## Next Measurement Pass
 
-The selected image set now supports the May 2 fabrication handoff. Before production, close the hold dimensions in the handoff spec with calipers on the physical parts, especially sleeve OD/length, circular cushion bore, oval-pad hole spacing, and final strip templates.
+The selected image set supports the rubber fabrication handoff. Before production, close the hold dimensions in the handoff spec with calipers on the physical parts, especially sleeve OD/length, circular cushion bore, oval-pad hole spacing, long-strip location, handedness, hole centres, and final strip templates.

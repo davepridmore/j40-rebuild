@@ -72,6 +72,7 @@ Only chat content related to this build should be included. The importer treats 
 - `docs/procurement-pass2-tub-off.md`: second-pass procurement simplification for tub-off stage and local Pakistan sourcing assumptions
 - `docs/suspension-workstream.md`: start-here tracker and installation control sheet for the incoming Ironman Foam Cell suspension set
 - `docs/replacement-pipes-workstream.md`: start-here tracker for replacement pipes, hoses, hard lines, and made-to-order pipe samples
+- `docs/gearbox-top-cover-workstream.md`: controlled teardown, inspection, repair/replace, and validation workstream for the gearbox top cover and shift tower
 - `docs/fabrication-handoff-index.md`: send-out index for rubber and electrical fabrication packages
 - `photos/index/`: generated lookup folders by component group, specific component, and stage
 - `scripts/import_whatsapp.py`: parses chats, extracts media, filters relevance
@@ -379,6 +380,14 @@ This writes `data/manual/orders_receipts_audit_queue.csv` with:
 - audit priority (`high|medium|low`)
 - recommended audit status per row
 - Gmail/Drive search queries for order confirmation and receipt/invoice proof
+
+Import recent project-relevant Gmail messages:
+
+```bash
+python3 scripts/import_google_emails_mcp.py --date-tag 2026-05-18
+```
+
+The importer uses the same `j40-orders-receipts` MCP profile, searches recent project/order messages plus exact order references from `data/manual/orders_receipts_audit_queue.csv`, and writes dated `comms_ingest_*` CSV/JSON artifacts under `data/processed/generated/`.
 
 ## WhatsApp MCP (2 Numbers)
 

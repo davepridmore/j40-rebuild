@@ -1209,6 +1209,60 @@ RUBBER_RECREATION_20260502_FILES = (
     "20260502_004442_gp_7WcFHjLQ.jpg",
 )
 
+RUBBER_RECREATION_20260517_FILES = (
+    "20260517_193503_gp_N9nHjqXw.jpg",
+    "20260517_193539_gp_E0cR9I0A.jpg",
+    "20260517_193559_gp_NEpk1hpg.jpg",
+    "20260517_193612_gp_JmbfR0Tw.jpg",
+    "20260517_193616_gp_1ye19BZA.jpg",
+)
+
+WINDOW_REFURBISHMENT_20260517_FRONT_VENT_FILES = (
+    "20260517_193803_gp_1KhFjceQ.jpg",
+    "20260517_193837_gp_AERCJIrw.jpg",
+)
+
+WINDOW_REFURBISHMENT_20260517_SIDE_GLASS_FILES = (
+    "20260517_193956_gp_jvKqbrzA.jpg",
+    "20260517_194038_gp_WfGY4cSA.jpg",
+)
+
+BATTERY_POWER_CARRIER_20260517_BATTERY_FILES = (
+    "20260517_194303_gp_5yuaRoaA.jpg",
+    "20260517_194313_gp_HolDWYeQ.jpg",
+)
+
+BATTERY_POWER_CARRIER_20260517_MOUNT_FILES = (
+    "20260517_194431_gp_4XVycxAg.jpg",
+    "20260517_194439_gp_K63N2nJw.jpg",
+    "20260517_194452_gp_ow8njPsw.jpg",
+    "20260517_194511_gp_QI0Ua2yQ.jpg",
+)
+
+TUB_RUST_20260517_FLOOR_FILES = (
+    "20260517_195032_gp_lrASxesw.jpg",
+    "20260517_195057_gp_U6FxmsPQ.jpg",
+    "20260517_195321_gp_4zDAINsA.jpg",
+    "20260517_195330_gp_wrE9dLVw.jpg",
+    "20260517_195341_gp_ZTYnpWUA.jpg",
+)
+
+TUB_RUST_20260517_CORNER_HINGE_FILES = (
+    "20260517_195108_gp_elCiXzKw.jpg",
+    "20260517_195123_gp_LxOfgsPA.jpg",
+    "20260517_195241_gp_RzJdcAZg.jpg",
+)
+
+TUB_RUST_20260517_BODY_MOUNT_FILES = (
+    "20260517_195406_gp_req8G3Bg.jpg",
+    "20260517_195430_gp_VGGpRFOQ.jpg",
+)
+
+TUB_RUST_20260517_BODY_SHELL_FILES = (
+    "20260517_195511_gp_iFvWFVNw.jpg",
+    "20260517_195628_gp_Wog59oFg.jpg",
+)
+
 PIPE_FABRICATION_20260502_FILES = (
     "20260502_004044_gp_Hx4Yo0Qg.jpg",
     "20260502_004106_gp_wlYlUahA.jpg",
@@ -1336,6 +1390,201 @@ FILE_OVERRIDES.update(
 FILE_OVERRIDES.update(
     {
         file_name: c(
+            "windows",
+            "front_vent_window_assemblies",
+            "window_refurbishment_intake",
+            "measurement_reference_needs_refurbish",
+            "high",
+            (
+                "window",
+                "vent_window",
+                "quarter_window",
+                "glass",
+                "rubber",
+                "seal",
+                "channel",
+                "rust",
+                "measurement",
+                "refurbish",
+            ),
+            "May 17 user-selected window fix-up photo: paired vent/quarter assemblies with ruler context, aged rubbers, and rusted lower channels/tabs; use for the windows workstream intake and seal replacement decision.",
+        )
+        for file_name in WINDOW_REFURBISHMENT_20260517_FRONT_VENT_FILES
+    }
+)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "windows",
+            "side_window_glass_and_channels",
+            "window_refurbishment_intake",
+            "measurement_reference_needs_refurbish",
+            "high",
+            (
+                "window",
+                "side_window",
+                "glass",
+                "rubber",
+                "seal",
+                "weatherstrip",
+                "channel",
+                "felt",
+                "rust",
+                "measurement",
+                "refurbish",
+            ),
+            "May 17 user-selected side-window glass/channel measurement photo; visible old rubber/channel material and rusted metal strip make this direct intake evidence for window repair and replacement rubber sourcing.",
+        )
+        for file_name in WINDOW_REFURBISHMENT_20260517_SIDE_GLASS_FILES
+    }
+)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "engine_bay",
+            "installed_battery_dimension_reference",
+            "fabrication_measurement",
+            "battery_installed_ruler_reference",
+            "high",
+            (
+                "battery",
+                "daewoo",
+                "dls120",
+                "dimension",
+                "tape_reference",
+                "terminal",
+                "hold_down",
+                "battery_power_carrier",
+                "fabrication_reference",
+            ),
+            "May 17 user-selected installed battery measurement photo for the battery power carrier: Daewoo DLS120 case footprint, terminal orientation, and hold-down/clamp context must replace the provisional N70 envelope before final carrier cut release.",
+        )
+        for file_name in BATTERY_POWER_CARRIER_20260517_BATTERY_FILES
+    }
+)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "engine_bay",
+            "existing_battery_mount_tray_measurements",
+            "fabrication_measurement",
+            "existing_mount_ruler_reference",
+            "high",
+            (
+                "battery",
+                "battery_tray",
+                "battery_mount",
+                "tray_frame",
+                "ruler",
+                "dimension",
+                "pickup",
+                "support",
+                "fabrication_reference",
+                "battery_power_carrier",
+            ),
+            "May 17 user-selected existing battery mount measurement photo: tray opening, frame height, corrosion/edge condition, and candidate pickup constraints for the battery stand and power carrier mock-up.",
+        )
+        for file_name in BATTERY_POWER_CARRIER_20260517_MOUNT_FILES
+    }
+)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "body_floor",
+            "floor_pan_rust_zones",
+            "rust_assessment",
+            "corrosion_visible",
+            "high",
+            (
+                "tub",
+                "floor_pan",
+                "rust",
+                "corrosion",
+                "surface_rust",
+                "seam",
+                "weld_repair",
+                "body_chassis",
+            ),
+            "May 17 user-selected tub rust photo: floor pan and inner tub floor corrosion areas for body/chassis rust mapping before probing, cut/fab/weld release, primer, or seam sealer.",
+        )
+        for file_name in TUB_RUST_20260517_FLOOR_FILES
+    }
+)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "body_exterior",
+            "tub_corner_hinge_pin_repair",
+            "rust_assessment",
+            "cut_hinge_pin_and_corner_repair_required",
+            "high",
+            (
+                "tub",
+                "corner",
+                "hinge",
+                "hinge_pin",
+                "cut_pin",
+                "rust",
+                "perforation",
+                "corner_repair",
+                "weld_repair",
+                "body_chassis",
+            ),
+            "May 17 user-selected corner/hinge repair photo: hinge pin had to be cut off and the adjacent tub corner/hinge metal needs sorting, probing, backside access check, and repair-method release before primer or paint closure.",
+        )
+        for file_name in TUB_RUST_20260517_CORNER_HINGE_FILES
+    }
+)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "body_floor",
+            "floor_seam_and_body_mount_rust",
+            "rust_assessment",
+            "corrosion_visible",
+            "high",
+            (
+                "tub",
+                "body_mount",
+                "captive_nut",
+                "mount_plate",
+                "hinge_point",
+                "rust",
+                "perforation",
+                "weld_repair",
+                "body_chassis",
+            ),
+            "May 17 user-selected tub rust detail: body-mount/captive fastener, hinge-edge, and seam corrosion areas that need station labels, probing, and backside access checks before refit or paint closure.",
+        )
+        for file_name in TUB_RUST_20260517_BODY_MOUNT_FILES
+    }
+)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "body_exterior",
+            "body_shell_with_doors_removed",
+            "rust_assessment",
+            "corrosion_visible",
+            "high",
+            (
+                "tub",
+                "body_shell",
+                "door_opening",
+                "side_panel",
+                "aperture",
+                "rust",
+                "corrosion",
+                "body_chassis",
+            ),
+            "May 17 user-selected tub rust overview: body-side aperture and side-shell context tying the close-up floor, mount, and seam corrosion photos back to their vehicle location.",
+        )
+        for file_name in TUB_RUST_20260517_BODY_SHELL_FILES
+    }
+)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
             "procurement_inventory",
             "rubber_parts_recreation_samples",
             "procurement_reconciliation",
@@ -1345,6 +1594,28 @@ FILE_OVERRIDES.update(
             "May 2 starter collection for recreating body-mount/front-support rubber parts; user-selected candidate photo pending final selection and measurement tagging.",
         )
         for file_name in RUBBER_RECREATION_20260502_FILES
+    }
+)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "procurement_inventory",
+            "rubber_parts_recreation_samples",
+            "procurement_reconciliation",
+            "measurement_reference",
+            "high",
+            (
+                "rubber",
+                "strip",
+                "channel",
+                "measurement",
+                "tape_reference",
+                "recreation",
+                "fabrication",
+            ),
+            "May 17 user-selected long rubber strip/channel measurement reference for rubber fabrication; use as shape and scale evidence only until the physical part/location trace is confirmed.",
+        )
+        for file_name in RUBBER_RECREATION_20260517_FILES
     }
 )
 FILE_OVERRIDES.update(
@@ -2277,6 +2548,22 @@ FILE_OVERRIDES.update(
             ),
             "Google Photos May 15 MIDI bank reference: red linked fuse holders with one common feed side and five heavy output cables on the opposite side; drives the widened cable gutter and fanout clearance.",
         ),
+        "20260517_193305_gp_o1a6StwA.jpg": c(
+            "roof_and_gutters",
+            "roof_gutter_and_window_channel",
+            "hardware_refinish",
+            "refinished_off_vehicle",
+            "high",
+            (
+                "roof",
+                "gutter",
+                "painted",
+                "refinished",
+                "post_paint",
+                "returned",
+            ),
+            "Google Photos May 17 returned painted roof evidence selected by user; use to close the roof paint return against the earlier send-out roof image.",
+        ),
     }
 )
 
@@ -2315,6 +2602,295 @@ FILE_OVERRIDES.update(
             "20260514_131834_gp_V4LCu2hw.jpg",
             "20260514_131845_gp_ythUacVA.jpg",
         )
+    }
+)
+
+FILE_OVERRIDES.update(
+    {
+        "20260517_230500_user_rear_differential_carrier_cover.png": c(
+            "chassis_underside",
+            "rear_differential_carrier_and_axle_housing",
+            "mechanical_baseline",
+            "inspection_plan_trigger",
+            "high",
+            (
+                "rear_axle",
+                "differential",
+                "carrier",
+                "pumpkin",
+                "gear_oil",
+                "breather",
+                "brake_line",
+                "leaf_spring",
+                "inspection",
+            ),
+            "User-supplied May 17 differential carrier/pumpkin close-up; use as the trigger image for the rear differential/axle teardown inspection plan before axle coating, brake closeout, suspension alignment, or road validation.",
+        ),
+    }
+)
+
+FILE_OVERRIDES.update(
+    {
+        "20260517_204429_gp_yEAcUHBg.jpg": c(
+            "electrical_system",
+            "engine_starter_solenoid_and_ground_inputs",
+            "electrical_refit",
+            "existing_engine_input_identified_rework_required",
+            "high",
+            (
+                "engine",
+                "starter",
+                "starter_solenoid",
+                "battery_cable",
+                "solenoid_trigger",
+                "ground",
+                "wiring",
+                "electrical_refit",
+            ),
+            "Google Photos May 17 starter/solenoid area: heavy cable, solenoid trigger region, and nearby ground return need terminal cleanup, labels, and voltage-drop testing before final loom wrap.",
+        ),
+        "20260517_204445_gp_oaQKzDrA.jpg": c(
+            "electrical_system",
+            "engine_unidentified_two_wire_connector",
+            "electrical_refit",
+            "existing_engine_input_unverified",
+            "medium",
+            (
+                "engine",
+                "connector",
+                "two_wire",
+                "sensor",
+                "switch",
+                "unknown",
+                "continuity_required",
+                "electrical_refit",
+            ),
+            "Google Photos May 17 close-up of a two-wire inline engine/gearbox-area connector. Treat as unassigned until component end, key-state feed, and continuity path are proven.",
+        ),
+        "20260517_204504_gp_46p1VNCg.jpg": c(
+            "electrical_system",
+            "injection_pump_throttle_linkage_electrical_input",
+            "electrical_refit",
+            "existing_engine_input_identified_rework_required",
+            "medium",
+            (
+                "engine",
+                "injection_pump",
+                "throttle_linkage",
+                "fuel_stop",
+                "idle_up",
+                "edic",
+                "connector",
+                "verify_function",
+                "electrical_refit",
+            ),
+            "Google Photos May 17 injection-pump/throttle-linkage electrical item. It may relate to fuel-stop, idle-up, or engine control; verify the device and wire function before assigning it to WP03B.",
+        ),
+        "20260517_204538_gp_9CERKvYA.jpg": c(
+            "electrical_system",
+            "engine_loose_connector_unassigned",
+            "electrical_refit",
+            "existing_engine_input_unverified",
+            "medium",
+            (
+                "engine",
+                "loose_connector",
+                "connector",
+                "sensor",
+                "switch",
+                "unknown",
+                "continuity_required",
+                "electrical_refit",
+            ),
+            "Google Photos May 17 loose engine-side connector. Do not reconnect blindly; trace both ends and decide repair, delete, or retain before final wrapping.",
+        ),
+        "20260517_204550_gp_kDsqLZQg.jpg": c(
+            "electrical_system",
+            "injection_pump_throttle_linkage_electrical_input",
+            "electrical_refit",
+            "existing_engine_input_route_context",
+            "medium",
+            (
+                "engine",
+                "injection_pump",
+                "throttle_linkage",
+                "loose_connector",
+                "loom_route",
+                "verify_function",
+                "electrical_refit",
+            ),
+            "Google Photos May 17 wider context for the injection-pump/throttle-linkage connector branch and loose wiring route; use for routing, strain relief, and function reconciliation.",
+        ),
+        "20260517_204615_gp_wsn4bN8g.jpg": c(
+            "electrical_system",
+            "engine_sender_branch",
+            "electrical_refit",
+            "existing_engine_input_unverified",
+            "medium",
+            (
+                "engine",
+                "sender",
+                "temperature_sender",
+                "gauge",
+                "warning_lamp",
+                "green_red_wire",
+                "continuity_required",
+                "electrical_refit",
+            ),
+            "Google Photos May 17 engine-side sender branch with green/red wiring visible. Probable gauge or warning-lamp input, but sender type and dash endpoint must be verified electrically.",
+        ),
+        "20260517_204711_gp_jZ4tm3uQ.jpg": c(
+            "electrical_system",
+            "engine_sender_branch",
+            "electrical_refit",
+            "existing_engine_input_route_context",
+            "medium",
+            (
+                "engine",
+                "sender",
+                "injection_pump",
+                "loom_route",
+                "hard_lines",
+                "clearance",
+                "continuity_required",
+                "electrical_refit",
+            ),
+            "Google Photos May 17 wider engine-side view for the sender/injection-pump branch route near hard lines and linkage; use to prove clearance before final clipping.",
+        ),
+        "20260517_204725_gp_y7P6qvhQ.jpg": c(
+            "electrical_system",
+            "engine_input_loom_routing_context",
+            "electrical_refit",
+            "route_context_for_engine_inputs",
+            "medium",
+            (
+                "engine",
+                "injection_pump",
+                "hard_lines",
+                "loom_route",
+                "clearance",
+                "electrical_refit",
+            ),
+            "Google Photos May 17 injection-pump/injector-line top-side context. Use as route and clearance evidence for the engine input loom; no circuit assignment from this image alone.",
+        ),
+        "20260517_204740_gp_yI8f8DQw.jpg": c(
+            "electrical_system",
+            "alternator_charge_regulator_wiring",
+            "electrical_refit",
+            "existing_charge_wiring_rework_required",
+            "high",
+            (
+                "engine",
+                "alternator",
+                "charging",
+                "regulator",
+                "exciter",
+                "sense",
+                "output",
+                "wiring",
+                "electrical_refit",
+            ),
+            "Google Photos May 17 alternator body and wiring. Reconcile charge output, exciter/warning, sense, and ground paths to the existing loom after reading actual terminal markings.",
+        ),
+        "20260517_204756_gp_xdOm3erw.jpg": c(
+            "electrical_system",
+            "alternator_charge_regulator_wiring",
+            "electrical_refit",
+            "existing_charge_wiring_rework_required",
+            "high",
+            (
+                "engine",
+                "alternator",
+                "charging",
+                "regulator",
+                "exciter",
+                "sense",
+                "output",
+                "ring_terminal",
+                "electrical_refit",
+            ),
+            "Google Photos May 17 alternator rear/terminal-side evidence with aged taped terminations. Replace weak terminals and confirm charge, warning/excite, sense, and ground behavior before final protection.",
+        ),
+    }
+)
+
+FILE_OVERRIDES.update(
+    {
+        "20260517_194754_gp_vXLV7rzA.jpg": c(
+            "electrical_system",
+            "cabin_engine_firewall_pass_through_holes",
+            "electrical_refit",
+            "existing_hole_measurement_context",
+            "medium",
+            (
+                "firewall",
+                "cabin_to_engine",
+                "pass_through",
+                "hole",
+                "grommet",
+                "measurement",
+                "routing",
+                "electrical_refit",
+            ),
+            "Google Photos May 17 cabin/firewall pass-through context with tape reference; blurry image but useful with the sharper measurement photos for locating existing cabin-to-engine holes.",
+        ),
+        "20260517_194806_gp_eou5ctOQ.jpg": c(
+            "electrical_system",
+            "cabin_engine_firewall_pass_through_holes",
+            "electrical_refit",
+            "existing_hole_measurement_reference",
+            "high",
+            (
+                "firewall",
+                "cabin_to_engine",
+                "pass_through",
+                "hole",
+                "grommet",
+                "measurement",
+                "rust",
+                "routing",
+                "electrical_refit",
+            ),
+            "Google Photos May 17 close-up of existing firewall/cabin pass-through holes with tape reference, paint loss, and rust at surrounding sheet metal. Use to size grommets and decide which holes are safe to reuse.",
+        ),
+        "20260517_194841_gp_eXh30voQ.jpg": c(
+            "electrical_system",
+            "cabin_engine_firewall_pass_through_holes",
+            "electrical_refit",
+            "existing_hole_route_and_measurement_reference",
+            "high",
+            (
+                "firewall",
+                "cabin_to_engine",
+                "pass_through",
+                "hole",
+                "grommet",
+                "steering_column",
+                "measurement",
+                "routing",
+                "electrical_refit",
+            ),
+            "Google Photos May 17 wider cabin-side firewall pass-through view with tape reference, steering-column/boot context, and multiple existing openings. Use for route clearance before adding wiring or control-cable passes.",
+        ),
+        "20260517_194911_gp_jCrFS5PA.jpg": c(
+            "electrical_system",
+            "cabin_engine_firewall_pass_through_holes",
+            "electrical_refit",
+            "existing_hole_route_and_measurement_reference",
+            "high",
+            (
+                "firewall",
+                "cabin_to_engine",
+                "pass_through",
+                "hole",
+                "grommet",
+                "steering_column",
+                "measurement",
+                "routing",
+                "electrical_refit",
+            ),
+            "Google Photos May 17 wide measurement photo across existing cabin-to-engine firewall openings. Use to map hole positions against steering, pedals, and planned loom or control-cable routing.",
+        ),
     }
 )
 

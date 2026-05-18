@@ -1,6 +1,6 @@
 # Reassembly, Dependency, and Procurement Plan
 
-- Generated: 2026-05-17 16:31:13
+- Generated: 2026-05-17 23:10:43
 - Work packages: `data/manual/reassembly_work_packages.csv`
 - Dependency edges: `data/manual/reassembly_dependency_edges.csv`
 - Component disposition: `data/manual/component_disposition_plan.csv`
@@ -9,7 +9,7 @@
 ## Current Evidence Snapshot
 
 - `electrical_rework` photos: 18
-- `rust_assessment` photos: 51
+- `rust_assessment` photos: 63
 - `stripdown_cataloguing` photos: 111
 
 ## Bifurcated Dependency Lanes
@@ -41,15 +41,16 @@
 
 - `clean_store_for_reuse`: 1
 - `refurbish_send_out`: 4
-- `refurbish_service_subcomponents`: 3
+- `refurbish_service_subcomponents`: 2
 - `remove_nonbaseline_and_refit_clean`: 1
-- `repair_in_place`: 1
-- `review`: 49
+- `review`: 55
 
 ## Immediate Execution Focus
 
 - Close `WP01` + `WP03` in parallel: body rust closure and electrical baseline finalization are both active and should keep moving.
 - Hold final chassis primer/Raptor until the bracket work plan closes: analysis register, design release, radiator/battery/auxiliary/exhaust implementation, and validation photos.
 - Run `WP04` procurement now: 36 mechanical rows still require buy execution.
+- Run `GB-TOP-CAPTURE-001` before buying gearbox top-cover service parts; current top cover must be approved, repaired, or replaced as a matched assembly first.
+- Close `DIFF-CAPTURE-001` during the rear brake/suspension window before axle coating, alignment, or road validation.
 - Avoid duplicate buys: 3 rows are flagged as likely already on hand and should be physically stock-checked first.
 - Keep interior finish gated: bedliner application/sound/foam/carpet stay blocked until body sealing gate is formally closed, with no extra bed-lining purchase in the baseline.

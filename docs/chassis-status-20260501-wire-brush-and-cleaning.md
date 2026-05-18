@@ -141,7 +141,7 @@ Still requiring purchase or final check before coating:
 - The on-hand grommet pack can cover temporary open-hole masking if each grommet fits snugly, stays removable, and does not soften or leave residue after solvent contact; buy separate tapered plugs only if that fit check fails.
 - Extra brushes are on hand; flap/strip discs are angle-grinder consumables with existing recorded stock, so only rebuy if the physical count is short.
 
-Inventory note: the registered Toolsmart item is a `5L pressure sprayer`, mainly for degreaser application. If a separate powered high-pressure washer/cleaner was ordered, it should be added as a separate inventory row. For this chassis and engine work, use any powered pressure washer cautiously; it is a rinse tool, not a substitute for brushing, degreasing, drying, and inspection.
+Inventory note: the registered Toolsmart item is a `5L pressure sprayer`, mainly for degreaser application. The INGCO `HPWR12008` powered high-pressure washer is now ordered from Almiraj/almiratrading but is not yet received. For this chassis and engine work, use any powered pressure washer cautiously; it is a rinse tool, not a substitute for brushing, degreasing, drying, and inspection.
 
 ## Hold Points Before Primer
 

@@ -1,0 +1,4 @@
+media_item_id,create_time,mime_type,source_filename,target_file,status,notes
+AGpyBSYjqNHfo9wYyAe15DEWfwI3IO7qR7QlJAlRk1cIzXwEktGLLpaAAJ04QXM5VUa5dqujw76zUECBmRuuPHU6YZRzJdcAZg,2026-05-17T14:52:41.009Z,image/jpeg,20260517_195239.jpg,20260517_195241_gp_RzJdcAZg.jpg,skipped_already_imported,Media item ID already exists in import history and target file exists.
+AGpyBSYhau1be1Jtmg8J7CumbC_v-r_2X_c7pAFfjxdzW5VN70oSX4GUV9GWzFU2nhvYrEzbHjDsbl_psCTeAv_09velCiXzKw,2026-05-17T14:51:08Z,image/jpeg,20260517_195106.jpg,20260517_195108_gp_elCiXzKw.jpg,skipped_already_imported,Media item ID already exists in import history and target file exists.
+AGpyBSaHhAVwjRELlvg3m6Zx3mgfTxyDwZaO4YsNBkmktwqv462KRG5WOrSM-9rUe_cfbmxWB-Xc5mLMqIkq86-xtlLxOfgsPA,2026-05-17T14:51:23.073Z,image/jpeg,20260517_195121.jpg,20260517_195123_gp_LxOfgsPA.jpg,skipped_already_imported,Media item ID already exists in import history and target file exists.

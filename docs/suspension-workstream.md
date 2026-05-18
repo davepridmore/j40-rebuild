@@ -15,6 +15,8 @@ Do not start final installation until both shipments are physically present: the
 
 The brake baseline is now bundled into the same workshop window. Rear parking-brake cables, rear axle hard lines, rear center brake hose, and standard front/rear brake service items should be identified and replaced while the suspension is apart. The Ironman geometry is treated as effectively the same as the current setup, so there is no separate lift/geometry release action; exact brake parts still come from the fitted truck and old samples, not from catalog assumptions.
 
+The rear differential/axle inspection is also bundled into this access window. Use [rear-differential-axle-teardown-inspection-plan-20260517.md](rear-differential-axle-teardown-inspection-plan-20260517.md) before coating the axle or closing rear suspension/brake validation.
+
 ## Incoming Set
 
 | Part | Qty | Role | Receipt check |
@@ -64,11 +66,12 @@ No torque sheet means no installation.
 4. Confirm all chassis spring hangers, shackle mounts, steering-box mount area, axle spring pads, and U-bolt plates are clean and crack-free.
 5. Stop for repair if any spring hanger is cracked, ovalized, bent, deeply pitted, or has damaged captive hardware.
 6. Confirm brake flexible hoses, brake hard lines, parking-brake cables, breather hose, and wiring have slack at expected full droop.
-7. If the brake package is being done in the same window, confirm `BR-CAPTURE-001` photo tools, brake-line caps/plugs, bleed tools, brake cleaner/consumables, sealed fresh DOT 3 brake fluid, flare-nut wrenches, line fabrication tools or workshop line-fabrication capability, drum brake tools, and old-part sample storage.
-8. Confirm safe support gear is present: 3T trolley jack, four rated jack stands, hardwood cribbing blocks, wheel chocks, and a level working surface.
-9. Confirm tools: torque wrench in the required range, breaker bar, metric sockets/spanners, pry bars, hammer/mallet, punch/drift, grease gun, penetrating oil, paint marker, calipers/tape, and camera.
-10. Confirm consumables: supplied/suspension-compatible bush grease, chassis grease for nipples, anti-seize only where the supplier permits, thread cleaner/chaser, and new split pins/retainers where used.
-11. Confirm the separate `24635FE` front damper shipment has arrived before final assembly or road validation.
+7. If the rear differential/axle package is being done in the same window, confirm `DIFF-CAPTURE-001` photo tools, drain/fill access, drain pan, correct gear-oil basis, carrier gasket or approved sealant, breather check parts, dial indicator/gear marking compound, and axle-seal/bearing/pinion-seal contingency path.
+8. If the brake package is being done in the same window, confirm `BR-CAPTURE-001` photo tools, brake-line caps/plugs, bleed tools, brake cleaner/consumables, sealed fresh DOT 3 brake fluid, flare-nut wrenches, line fabrication tools or workshop line-fabrication capability, drum brake tools, and old-part sample storage.
+9. Confirm safe support gear is present: 3T trolley jack, four rated jack stands, hardwood cribbing blocks, wheel chocks, and a level working surface.
+10. Confirm tools: torque wrench in the required range, breaker bar, metric sockets/spanners, pry bars, hammer/mallet, punch/drift, grease gun, penetrating oil, paint marker, calipers/tape, and camera.
+11. Confirm consumables: supplied/suspension-compatible bush grease, chassis grease for nipples, anti-seize only where the supplier permits, thread cleaner/chaser, and new split pins/retainers where used.
+12. Confirm the separate `24635FE` front damper shipment has arrived before final assembly or road validation.
 
 ## Baseline Measurements
 
@@ -112,16 +115,17 @@ Use the same measurement points after installation, after first road test, and a
 1. Chock the front wheels, loosen rear wheel nuts, lift the chassis, and support the chassis on rated stands. Support the rear axle separately.
 2. Remove the rear wheels for access.
 3. Photograph the original rear spring, shackle, fixed pin, U-bolts, shock, brake hose, parking-brake cable, breather, and rear axle hard-line routing.
-4. Free any brake-line, parking-brake, or breather brackets that would be stretched during droop. If the merged brake package is active, complete `BR-CAPTURE-001`, then label and remove rear parking-brake cables and rear axle hard lines only after close photos; cap hydraulic openings immediately and keep old cables/lines as ordering templates.
-5. Remove rear shocks if they limit droop or access.
-6. Remove old U-bolts and nuts. Scrap the old U-bolts.
-7. Support the axle, separate it from the spring center pin, and remove the old rear spring pack.
-8. Clean rear hanger bores, shackle brackets, spring pads, and U-bolt plates. Stop for repair if any bracket is cracked, ovalized, or visibly distorted.
-9. Install Ironman bushes and sleeves into `TOY002B` springs using supplied or polyurethane-compatible grease only.
-10. Fit the `TOY002B` spring to the fixed hanger and shackle, leaving spring-eye and shackle fasteners finger tight.
-11. Seat the rear axle on the spring center pin and install new `415UBK` U-bolts. Tighten evenly in a cross pattern to the torque sheet.
-12. Install the `24636FE` rear dampers with supplied bushes/washers/spacers in the correct order. Leave final bushing crush and pivot torque until the vehicle is at ride height unless the Ironman sheet says otherwise.
-13. Check rear brake hose, rear hard lines, parking-brake cable, breather hose, propshaft slip travel, and exhaust clearance at static height and supported droop. Do not close rear suspension until the new brake hose/cable/line routing is clipped and protected.
+4. If the rear differential/axle inspection is active, complete the first `DIFF-CAPTURE-001` pass before disturbing axle hardware: exterior carrier/pumpkin photos, fill-plug check, drain oil, oil/debris evidence, breather check, leak-source photos, and rear brake contamination check.
+5. Free any brake-line, parking-brake, or breather brackets that would be stretched during droop. If the merged brake package is active, complete `BR-CAPTURE-001`, then label and remove rear parking-brake cables and rear axle hard lines only after close photos; cap hydraulic openings immediately and keep old cables/lines as ordering templates.
+6. Remove rear shocks if they limit droop or access.
+7. Remove old U-bolts and nuts. Scrap the old U-bolts.
+8. Support the axle, separate it from the spring center pin, and remove the old rear spring pack.
+9. Clean rear hanger bores, shackle brackets, spring pads, and U-bolt plates. Stop for repair if any bracket is cracked, ovalized, or visibly distorted.
+10. Install Ironman bushes and sleeves into `TOY002B` springs using supplied or polyurethane-compatible grease only.
+11. Fit the `TOY002B` spring to the fixed hanger and shackle, leaving spring-eye and shackle fasteners finger tight.
+12. Seat the rear axle on the spring center pin and install new `415UBK` U-bolts. Tighten evenly in a cross pattern to the torque sheet.
+13. Install the `24636FE` rear dampers with supplied bushes/washers/spacers in the correct order. Leave final bushing crush and pivot torque until the vehicle is at ride height unless the Ironman sheet says otherwise.
+14. Check rear brake hose, rear hard lines, parking-brake cable, breather hose, propshaft slip travel, and exhaust clearance at static height and supported droop. Do not close rear suspension until the new brake hose/cable/line routing is clipped and protected and the differential/axle leak check is clean.
 
 ## Final Settle And Torque
 
@@ -134,7 +138,8 @@ Use the same measurement points after installation, after first road test, and a
 7. Recheck steering lock-to-lock, brake hose slack, parking-brake cable slack, breather slack, tyre clearance, shock body clearance, and bump-stop alignment.
 8. Measure and record ride height, bump-stop clearance, shackle angle, and wheelbase again.
 9. If brake hydraulics were opened, pressure bleed the brake system, leak-test all opened joints, adjust rear drums evenly, and confirm parking-brake hold/release before any road movement.
-10. Align steering and suspension through a qualified alignment shop. Headlights must also be aimed again because ride height has changed.
+10. If the differential/axle was opened, confirm correct oil fill, breather route, static spin/noise check, and dry carrier/pinion/axle-seal leak check before road movement.
+11. Align steering and suspension through a qualified alignment shop. Headlights must also be aimed again because ride height has changed.
 
 ## Road Validation
 
@@ -152,6 +157,7 @@ Use the same measurement points after installation, after first road test, and a
 - Wrong spring pair, mixed left/right hardware, damaged bush sleeves, or incomplete U-bolt hardware.
 - Chassis spring hanger cracks, ovalized holes, broken welds, or distorted shackle brackets.
 - Brake hose, breather, parking-brake cable, or wiring tension at droop.
+- Rear differential/axle inspection opened but no oil/debris finding, fill confirmation, breather check, or leak check recorded.
 - Shock body contact, steering damper bind, tyre contact, or insufficient bump-stop engagement.
 - Unknown tyre date code, sidewall cracking/bulging, bead or rim damage, persistent pressure loss, unbalanced road wheel, wrong lug-seat/nut match, or visible tyre contact after the suspension install.
 - No torque sheet, no torque wrench, or no post-install torque record.
@@ -165,6 +171,7 @@ Store these before closing the workstream:
 - Baseline measurements.
 - Hanger/spring-pad inspection photos after cleaning.
 - Installed front and rear springs, shocks, U-bolts, shackles, pins, and steering damper.
+- `DIFF-CAPTURE-001` if the rear differential/axle was opened during this suspension window.
 - Torque sheet with final torque marks noted.
 - Alignment record.
 - 50 km and 500 km recheck records.
