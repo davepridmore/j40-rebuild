@@ -4,6 +4,7 @@ from __future__ import annotations
 import csv
 import json
 import os
+import re
 import subprocess
 import time
 import urllib.error
@@ -389,7 +390,7 @@ def keyword_hits(text: str, keywords: list[str]) -> list[str]:
     for keyword in keywords:
         if not keyword:
             continue
-        if keyword in lowered:
+        if re.search(rf"(?<![a-z0-9]){re.escape(keyword)}(?![a-z0-9])", lowered):
             hits.append(keyword)
     return sorted(set(hits))
 
@@ -480,13 +481,19 @@ def to_relative(path_value: str) -> str:
         return str(path)
 
 
+def csv_output_value(value: Any) -> str:
+    if value is None:
+        return ""
+    return "\n".join(line.replace("\t", " ").rstrip() for line in str(value).splitlines()).strip()
+
+
 def write_csv(path: Path, rows: list[dict[str, Any]], fieldnames: list[str]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
         writer.writeheader()
         for row in rows:
-            writer.writerow(row)
+            writer.writerow({field: csv_output_value(row.get(field)) for field in fieldnames})
 
 
 def dedupe_rows(rows: list[dict[str, Any]], key_field: str) -> list[dict[str, Any]]:

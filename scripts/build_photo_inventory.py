@@ -46,6 +46,24 @@ def c(
     return Classification(component_group, specific_component, stage, observed_state, confidence, tags, notes)
 
 
+RAW_IMPORT_REFERENCE_MEDIA: tuple[dict[str, str | Classification], ...] = (
+    {
+        "path": "data/raw/imports/J40.jpg",
+        "media_id": "j40_electrical_wiring_diagram",
+        "captured_date": "2026-05-18",
+        "classification": c(
+            "electrical_system",
+            "j40_electrical_wiring_diagram",
+            "electrical_reference",
+            "reference_only",
+            "high",
+            ("wiring", "diagram", "electrical", "graffle", "reference", "j40"),
+            "JPG export of the editable OmniGraffle wiring diagram at data/raw/imports/J40.graffle; show this JPG in the dashboard and use it as the electrical baseline reference.",
+        ),
+    },
+)
+
+
 DATE_DEFAULTS: dict[str, Classification] = {
     "20260314": c(
         "body_exterior",
@@ -2998,6 +3016,35 @@ def build_photo_inventory() -> list[dict[str, str]]:
             "notes": classification.notes,
         }
         rows.append(row)
+
+    for reference in RAW_IMPORT_REFERENCE_MEDIA:
+        relative_path = str(reference["path"])
+        path = ROOT / relative_path
+        if not path.is_file():
+            continue
+        extension = path.suffix.lower()
+        if extension not in SUPPORTED_EXTENSIONS:
+            continue
+        classification = reference["classification"]
+        if not isinstance(classification, Classification):
+            continue
+        rows.append(
+            {
+                "media_id": str(reference["media_id"]),
+                "file_name": path.name,
+                "relative_path": relative_path,
+                "captured_date": str(reference.get("captured_date", "")),
+                "captured_time": "",
+                "media_type": "video" if extension in {".mp4", ".mov", ".avi", ".mkv"} else "photo",
+                "component_group": classification.component_group,
+                "specific_component": classification.specific_component,
+                "stage": classification.stage,
+                "observed_state": classification.observed_state,
+                "confidence": classification.confidence,
+                "tags": "|".join(classification.tags),
+                "notes": classification.notes,
+            }
+        )
 
     return rows
 

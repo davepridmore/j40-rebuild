@@ -1,6 +1,6 @@
 # Reassembly, Dependency, and Procurement Plan
 
-- Generated: 2026-05-17 23:10:43
+- Generated: 2026-05-18 09:34:36
 - Work packages: `data/manual/reassembly_work_packages.csv`
 - Dependency edges: `data/manual/reassembly_dependency_edges.csv`
 - Component disposition: `data/manual/component_disposition_plan.csv`
@@ -9,6 +9,8 @@
 ## Current Evidence Snapshot
 
 - `electrical_rework` photos: 18
+- `electrical_reference` diagrams: 1
+- Electrical diagram reconciliation rows: 17
 - `rust_assessment` photos: 63
 - `stripdown_cataloguing` photos: 111
 
@@ -43,11 +45,13 @@
 - `refurbish_send_out`: 4
 - `refurbish_service_subcomponents`: 2
 - `remove_nonbaseline_and_refit_clean`: 1
-- `review`: 55
+- `review`: 58
 
 ## Immediate Execution Focus
 
 - Close `WP01` + `WP03` in parallel: body rust closure and electrical baseline finalization are both active and should keep moving.
+- Use `data/raw/imports/J40.jpg` as the WP03 viewable wiring diagram and keep `data/raw/imports/J40.graffle` as the editable source; export a fresh JPG after any diagram change.
+- Work WP03 from `data/manual/electrical_diagram_reconciliation_20260518.csv`: close the firewall/pass-through, connector/pinout, heavy-cable stock, HVAC, EPS, fuel-stop, and rear-camera holds before final wrap.
 - Hold final chassis primer/Raptor until the bracket work plan closes: analysis register, design release, radiator/battery/auxiliary/exhaust implementation, and validation photos.
 - Run `WP04` procurement now: 36 mechanical rows still require buy execution.
 - Run `GB-TOP-CAPTURE-001` before buying gearbox top-cover service parts; current top cover must be approved, repaired, or replaced as a matched assembly first.

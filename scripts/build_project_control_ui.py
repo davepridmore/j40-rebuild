@@ -45,6 +45,7 @@ WORKBOOK_PARTS_PATH = MANUAL_DIR / "workbook_tabs" / "parts.csv"
 WORKBOOK_SUBSTANCES_PATH = MANUAL_DIR / "workbook_tabs" / "substances.csv"
 WORKBOOK_ELECTRICAL_MASTER_PATH = MANUAL_DIR / "workbook_tabs" / "electrical_master.csv"
 WORKBOOK_ELECTRICAL_TEMPLATES_PATH = MANUAL_DIR / "workbook_tabs" / "electrical_templates.csv"
+ELECTRICAL_DIAGRAM_RECONCILIATION_PATH = MANUAL_DIR / "electrical_diagram_reconciliation_20260518.csv"
 WORKBOOK_RUBBERS_EXACT_ONLINE_PATH = MANUAL_DIR / "workbook_tabs" / "rubbers_exact_online.csv"
 WORKBOOK_RUBBERS_KIT_BUY_PATH = MANUAL_DIR / "workbook_tabs" / "rubbers_kit_buy.csv"
 WORKBOOK_RUBBERS_ALL_REPLACE_LINKS_PATH = MANUAL_DIR / "workbook_tabs" / "rubbers_all_replace_links.csv"
@@ -59,6 +60,8 @@ PAINT_REFINISH_MEDIA_QUEUE_PATH = MANUAL_DIR / "paint_refinish_media_queue.csv"
 PAINT_REFINISH_WHATSAPP_MEDIA_QUEUE_PATH = MANUAL_DIR / "paint_refinish_whatsapp_media_queue.csv"
 INVENTORY_IMAGE_OVERRIDES_PATH = MANUAL_DIR / "inventory_image_overrides.csv"
 OTHER_BUILD_REFERENCE_MEDIA_PATH = MANUAL_DIR / "other_build_reference_media.csv"
+CONTACT_REGISTER_PATH = MANUAL_DIR / "contact_register.csv"
+REFERENCE_PROJECT_IDEAS_PATH = MANUAL_DIR / "reference_projects_and_ideas.csv"
 OTHER_J40_BUILDS_DIR = ROOT / "data" / "reference" / "other_j40_builds"
 PAKWHEELS_DIR = ROOT / "data" / "pakwheels"
 OUTPUT_DATA_JS_PATH = UI_DIR / "data.js"
@@ -72,6 +75,9 @@ REFERENCE_PHOTO_EXTENSIONS: set[str] = {".jpg", ".jpeg", ".png", ".webp", ".gif"
 REFERENCE_VIDEO_EXTENSIONS: set[str] = {".mp4", ".mov", ".m4v", ".webm"}
 REFERENCE_MEDIA_EXTENSIONS: set[str] = REFERENCE_PHOTO_EXTENSIONS | REFERENCE_VIDEO_EXTENSIONS
 LOCAL_ORDER_IMAGE_INDEX: dict[str, Path] | None = None
+WIRING_DIAGRAM_JPG_PATH = ROOT / "data" / "raw" / "imports" / "J40.jpg"
+WIRING_DIAGRAM_GRAFFLE_PATH = ROOT / "data" / "raw" / "imports" / "J40.graffle"
+WIRING_DIAGRAM_MEDIA_IDS: tuple[str, ...] = ("j40_electrical_wiring_diagram",)
 
 PRIMARY_WORKSTREAM_IDS: tuple[str, ...] = (
     "stripdown_cataloguing",
@@ -284,9 +290,10 @@ WORKSTREAM_IMAGE_PROFILES: dict[str, dict[str, set[str]]] = {
     },
     "electrical_reset": {
         "component_groups": {"electrical_system", "procurement_inventory"},
-        "stages": {"electrical_rework", "procurement_reconciliation"},
+        "stages": {"electrical_rework", "electrical_reference", "procurement_reconciliation"},
         "keywords": {
             "wiring",
+            "diagram",
             "fuse",
             "relay",
             "harness",
@@ -2585,21 +2592,30 @@ def load_electrical_layout_templates(template_rows: list[dict[str, str]]) -> lis
 def load_electrical_spec_layout() -> dict[str, Any]:
     master_rows = load_csv_optional(WORKBOOK_ELECTRICAL_MASTER_PATH)
     template_rows = load_csv_optional(WORKBOOK_ELECTRICAL_TEMPLATES_PATH)
-    if not master_rows and not template_rows:
+    diagram_reconciliation_rows = load_csv_optional(ELECTRICAL_DIAGRAM_RECONCILIATION_PATH)
+    if not master_rows and not template_rows and not diagram_reconciliation_rows:
         return {}
 
     metadata = parse_electrical_master_metadata(master_rows)
+    source_refs = [
+        "data/manual/workbook_tabs/electrical_master.csv",
+        "data/manual/workbook_tabs/electrical_templates.csv",
+    ]
+    if WIRING_DIAGRAM_JPG_PATH.exists():
+        source_refs.append(repo_relative_path(WIRING_DIAGRAM_JPG_PATH))
+    if WIRING_DIAGRAM_GRAFFLE_PATH.exists():
+        source_refs.append(repo_relative_path(WIRING_DIAGRAM_GRAFFLE_PATH))
+    if diagram_reconciliation_rows:
+        source_refs.append(repo_relative_path(ELECTRICAL_DIAGRAM_RECONCILIATION_PATH))
 
     return {
         "scope": "full",
         "title": metadata["title"],
         "last_updated": metadata["last_updated"],
         "purpose": metadata["purpose"],
-        "source_refs": [
-            "data/manual/workbook_tabs/electrical_master.csv",
-            "data/manual/workbook_tabs/electrical_templates.csv",
-        ],
+        "source_refs": source_refs,
         "layout_templates": load_electrical_layout_templates(template_rows),
+        "diagram_reconciliation": diagram_reconciliation_rows,
         "wiring_progress_tracker": workbook_section_rows(
             master_rows,
             "1) Wiring Progress Tracker",
@@ -2688,6 +2704,7 @@ def build_dashboard_electrical_spec_layout(full_layout: dict[str, Any]) -> dict[
     gate_rows = list(full_layout.get("minimum_electrical_gate") or [])
     connector_rows = list(full_layout.get("connector_quick_lookup") or [])
     loom_rows = list(full_layout.get("loom_quick_lookup") or [])
+    diagram_reconciliation_rows = list(full_layout.get("diagram_reconciliation") or [])
 
     dashboard_wiring_rows = [
         row
@@ -2711,6 +2728,19 @@ def build_dashboard_electrical_spec_layout(full_layout: dict[str, Any]) -> dict[
         )
     ]
     dashboard_loom_rows = [row for row in loom_rows if norm(row.get("loom_id")) in {"l4", "l5a", "l5b"}]
+    dashboard_diagram_reconciliation_rows = [
+        row
+        for row in diagram_reconciliation_rows
+        if row_matches_keywords(
+            [
+                row.get("diagram_scope", ""),
+                row.get("diagram_evidence", ""),
+                row.get("workstream_alignment", ""),
+                row.get("action_required", ""),
+            ],
+            DASHBOARD_ELECTRICAL_FOCUS_KEYWORDS,
+        )
+    ]
 
     return {
         "scope": "dashboard_focus",
@@ -2719,6 +2749,7 @@ def build_dashboard_electrical_spec_layout(full_layout: dict[str, Any]) -> dict[
         "purpose": full_layout.get("purpose", ""),
         "source_refs": full_layout.get("source_refs", []),
         "layout_templates": list(full_layout.get("layout_templates") or []),
+        "diagram_reconciliation": dashboard_diagram_reconciliation_rows or diagram_reconciliation_rows[:8],
         "wiring_progress_tracker": dashboard_wiring_rows or wiring_rows[:8],
         "locked_as_built_standards": list(full_layout.get("locked_as_built_standards") or [])[:4],
         "relay_quick_lookup": list(full_layout.get("relay_quick_lookup") or [])[:4],
@@ -4874,6 +4905,26 @@ def build_paint_workstream_evidence_sets(
     }
 
 
+def wiring_diagram_reference_rows(photo_rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    return sorted(
+        [
+            row
+            for row in photo_rows
+            if is_photo_row(row)
+            and (
+                clean(row.get("media_id")) in WIRING_DIAGRAM_MEDIA_IDS
+                or norm(row.get("specific_component")) == "j40_electrical_wiring_diagram"
+            )
+        ],
+        key=lambda row: (
+            clean(row.get("captured_date")),
+            clean(row.get("captured_time")),
+            clean(row.get("file_name")),
+        ),
+        reverse=True,
+    )
+
+
 def build_workstream_evidence_sets(
     workstream_id: str,
     photo_rows: list[dict[str, str]],
@@ -5150,6 +5201,23 @@ def build_workstream_evidence_sets(
             "images": primary_images,
         },
     ]
+
+    if workstream_id == "electrical_reset":
+        wiring_diagram_images = dedupe_payload_images(
+            [image_payload(row, row_token_matches(row, reference_tokens)) for row in wiring_diagram_reference_rows(photo_rows)]
+        )
+        if wiring_diagram_images:
+            primary_images = dedupe_payload_images(wiring_diagram_images + primary_images)
+            evidence_sets[0]["images"] = primary_images
+            evidence_sets.insert(
+                0,
+                {
+                    "key": "wiring_diagram_reference",
+                    "title": "Wiring Diagram Reference",
+                    "description": "Browser-viewable JPG export from data/raw/imports/J40.jpg; keep data/raw/imports/J40.graffle as the editable source.",
+                    "images": wiring_diagram_images,
+                },
+            )
 
     if workstream_id == "chassis_fixing":
         may1_images = dedupe_payload_images(
@@ -9105,6 +9173,8 @@ def build_dashboard_data() -> dict[str, Any]:
     selling_site_manifest_rows = load_csv_optional(SELLING_SITE_MANIFEST_PATH)
     whatsapp_j40_chat_rows = load_csv_optional(WHATSAPP_J40_CHAT_CANDIDATES_PATH)
     whatsapp_j40_media_rows = load_csv_optional(WHATSAPP_J40_MEDIA_INDEX_PATH)
+    contact_register_rows = load_csv_optional(CONTACT_REGISTER_PATH)
+    reference_project_idea_rows = load_csv_optional(REFERENCE_PROJECT_IDEAS_PATH)
     whatsapp_j40_chat_rows = [row for row in whatsapp_j40_chat_rows if not is_hidden_whatsapp_chat(row)]
     whatsapp_j40_media_rows = [row for row in whatsapp_j40_media_rows if not is_hidden_whatsapp_chat(row)]
     inventory_image_overrides = load_inventory_image_overrides(INVENTORY_IMAGE_OVERRIDES_PATH)
@@ -9765,6 +9835,7 @@ def build_dashboard_data() -> dict[str, Any]:
             "parts_buy_now_this_week": "data/manual/parts_buy_now_this_week.csv",
             "workbook_electrical_master": "data/manual/workbook_tabs/electrical_master.csv",
             "workbook_electrical_templates": "data/manual/workbook_tabs/electrical_templates.csv",
+            "electrical_diagram_reconciliation": "data/manual/electrical_diagram_reconciliation_20260518.csv",
             "workbook_rubbers_exact_online": "data/manual/workbook_tabs/rubbers_exact_online.csv",
             "workbook_rubbers_kit_buy": "data/manual/workbook_tabs/rubbers_kit_buy.csv",
             "workbook_rubbers_all_replace_links": "data/manual/workbook_tabs/rubbers_all_replace_links.csv",
@@ -9774,12 +9845,17 @@ def build_dashboard_data() -> dict[str, Any]:
             "whatsapp_j40_chat_candidates": "data/manual/whatsapp_j40_chat_candidates.csv",
             "whatsapp_j40_media_index": "data/processed/generated/mcp_whatsapp_j40_media_index.csv",
             "other_build_reference_media": "data/manual/other_build_reference_media.csv",
+            "contact_register": "data/manual/contact_register.csv",
+            "reference_projects_and_ideas": "data/manual/reference_projects_and_ideas.csv",
             "other_j40_builds_drop_zone": "data/reference/other_j40_builds",
+            "j40_wiring_diagram_jpg": "data/raw/imports/J40.jpg",
+            "j40_wiring_diagram_graffle": "data/raw/imports/J40.graffle",
         },
         "summary": {
             "workstreams_in_scope": len(workstreams),
             "workstreams_active": sum(1 for row in workstreams if norm(row["status"]) == "in_progress"),
             "workstream_evidence_images": sum(int(row.get("image_count", 0)) for row in workstreams),
+            "wiring_diagram_reference_images": len(wiring_diagram_reference_rows(photo_rows)),
             "parts_open_rows": len(open_rows_for_table),
             "parts_ordered_pending_delivery": len(ordered_pending_table),
             "urgent_part_actions": len(urgent_actions),
@@ -9796,6 +9872,8 @@ def build_dashboard_data() -> dict[str, Any]:
             "other_build_reference_videos": other_builds_reference["summary"]["total_videos"],
             "other_build_drop_zone_images": other_builds_reference["summary"]["drop_zone_images"],
             "other_build_manual_reference_images": other_builds_reference["summary"]["manual_reference_images"],
+            "contact_register_entries": len(contact_register_rows),
+            "reference_project_ideas": len(reference_project_idea_rows),
         },
         "workstreams": workstreams,
         "fabrication_raw_material_estimates": [
@@ -9841,6 +9919,8 @@ def build_dashboard_data() -> dict[str, Any]:
         "capture_tasks": capture_tasks,
         "supplies": supplies_inventory,
         "other_builds": other_builds_reference,
+        "contact_register": contact_register_rows,
+        "reference_project_ideas": reference_project_idea_rows,
         "whatsapp_j40": {
             "selected_chats": sorted(
                 [

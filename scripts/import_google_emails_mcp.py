@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import html as html_lib
 import json
 import os
 import re
@@ -166,6 +167,30 @@ def clean(value: Any) -> str:
     if value is None:
         return ""
     return " ".join(str(value).replace("\u200e", " ").split())
+
+
+def html_to_text(value: Any) -> str:
+    raw = str(value or "")
+    if not raw:
+        return ""
+    raw = re.sub(r"(?is)<(script|style).*?>.*?</\1>", " ", raw)
+    raw = re.sub(r"(?i)<br\s*/?>", " ", raw)
+    raw = re.sub(r"(?i)</(p|div|tr|td|th|li|h[1-6])>", " ", raw)
+    raw = re.sub(r"<[^>]+>", " ", raw)
+    return html_lib.unescape(clean(raw))
+
+
+def redact_private_details(value: str) -> str:
+    redacted = re.sub(r"\bAddress:\s+.*?\s+\bPhone:", "Address: [redacted] Phone:", value, flags=re.IGNORECASE)
+    redacted = re.sub(r"\bPhone:\s*\+?\d[\d\s().-]{6,}", "Phone: [redacted]", redacted, flags=re.IGNORECASE)
+    redacted = re.sub(
+        r"\bEmail:\s*[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}",
+        "Email: [redacted]",
+        redacted,
+        flags=re.IGNORECASE,
+    )
+    redacted = redacted.replace("[redacted]Email:", "[redacted] Email:")
+    return redacted
 
 
 def norm(value: Any) -> str:
@@ -427,7 +452,7 @@ def source_name(headers: dict[str, Any], text: str) -> str:
 def classify_email(message: dict[str, Any], full_email: dict[str, Any]) -> tuple[dict[str, str] | None, dict[str, Any]]:
     headers = full_email.get("headers") or {}
     body = full_email.get("body") or {}
-    text = clean(body.get("text") or "")
+    text = clean(body.get("text") or html_to_text(body.get("html") or ""))
     subject = clean(headers.get("subject") or message.get("subject"))
     snippet = clean(full_email.get("snippet") or message.get("snippet"))
     haystack_raw = f"{headers.get('from', '')} {subject} {snippet} {text}"
@@ -466,7 +491,15 @@ def classify_email(message: dict[str, Any], full_email: dict[str, Any]) -> tuple
             "reason": reason or "no_project_signal",
         }
 
-    if any(term in haystack for term in ("delivered", "delivery confirmation", "has been delivered")):
+    delivered_signal = bool(
+        re.search(
+            r"\b(has been delivered|was delivered|delivered to|delivery confirmation|order delivered|parcel delivered)\b",
+            haystack,
+        )
+    )
+    delivery_window_signal = bool(re.search(r"\bdelivered on:\s*\d{1,2}\s+\w+\s*-\s*\d{1,2}\s+\w+\s+\d{4}", haystack))
+
+    if delivered_signal and not delivery_window_signal:
         status = "delivered_or_received_signal"
         subcategory = "delivery_update"
     elif any(term in haystack for term in ("shipped", "dispatch", "tracking", "out for delivery")):
@@ -490,6 +523,7 @@ def classify_email(message: dict[str, Any], full_email: dict[str, Any]) -> tuple
         category = "product"
 
     excerpt = text or snippet
+    excerpt_for_output = redact_private_details(excerpt)
     row = {
         "channel": "email",
         "message_id": clean(message.get("id")),
@@ -498,7 +532,7 @@ def classify_email(message: dict[str, Any], full_email: dict[str, Any]) -> tuple
         "subcategory": subcategory,
         "source": source_name(headers, haystack_raw),
         "subject_or_ref": subject,
-        "product_or_topic": excerpt[:260],
+        "product_or_topic": excerpt_for_output[:260],
         "part_number_or_code": "|".join(codes),
         "amount_pkr": amount,
         "status": status,
@@ -513,7 +547,7 @@ def classify_email(message: dict[str, Any], full_email: dict[str, Any]) -> tuple
         "to": clean(headers.get("to")),
         "subject": subject,
         "snippet": snippet,
-        "body_excerpt": excerpt[:4000],
+        "body_excerpt": excerpt_for_output[:4000],
         "classification": {
             "category": category,
             "subcategory": subcategory,
@@ -565,7 +599,7 @@ def main() -> None:
             try:
                 full_email = client.call_tool(
                     "read_email",
-                    {"id": message_id, "contentFormat": "text"},
+                    {"id": message_id, "contentFormat": "full"},
                     timeout=90,
                 )
             except Exception as error:

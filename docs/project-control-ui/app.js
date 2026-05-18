@@ -5569,6 +5569,7 @@
     const relayRows = Array.isArray(spec.relay_quick_lookup) ? spec.relay_quick_lookup : [];
     const connectorRows = Array.isArray(spec.connector_quick_lookup) ? spec.connector_quick_lookup : [];
     const loomRows = Array.isArray(spec.loom_quick_lookup) ? spec.loom_quick_lookup : [];
+    const diagramRows = Array.isArray(spec.diagram_reconciliation) ? spec.diagram_reconciliation : [];
 
     return `
       <article class="card">
@@ -5590,6 +5591,18 @@
             : '<p class="small-muted">No layout template labels found.</p>'
         }
       </article>
+
+      ${renderElectricalTable(
+        "Diagram Reconciliation",
+        [
+          { key: "reconciliation_id", label: "ID", kind: "token" },
+          { key: "diagram_scope", label: "Diagram Scope" },
+          { key: "reconciliation_status", label: "Status", kind: "status" },
+          { key: "workstream_alignment", label: "Workstream Alignment" },
+          { key: "action_required", label: "Action Required" },
+        ],
+        diagramRows
+      )}
 
       ${renderElectricalTable(
         "Wiring Progress Tracker",
@@ -7233,10 +7246,98 @@
     `;
   }
 
+  function contactChannelUrl(contact) {
+    const value = cleanString(contact && contact.channel_or_url);
+    return /^https?:\/\//i.test(value) ? value : "";
+  }
+
+  function renderReferenceProjectIdeas(ideas) {
+    const rows = Array.isArray(ideas) ? ideas : [];
+    if (!rows.length) {
+      return "";
+    }
+    return `
+      <section class="reference-section-list" aria-label="Reference ideas from messages">
+        <h3 class="section-title">Reference Ideas</h3>
+        <div class="reference-focus-grid">
+          ${rows
+            .map((idea) => {
+              const contacts = splitMultiValue(idea.contact_refs);
+              return `
+                <article class="card reference-focus-card">
+                  <div class="detail-header">
+                    <h3>${escapeHtml(idea.title || "Reference Idea")}</h3>
+                    ${statusChip(idea.status || "open")}
+                  </div>
+                  <p class="small-muted">${escapeHtml(idea.summary || "")}</p>
+                  <div class="chip-row">
+                    ${idea.workstream ? chip(formatToken(idea.workstream)) : ""}
+                    ${idea.category ? chip(formatToken(idea.category)) : ""}
+                    ${idea.source_chat ? chip(idea.source_chat) : ""}
+                    ${idea.source_date ? chip(idea.source_date) : ""}
+                  </div>
+                  ${contacts.length ? `<div class="chip-row">${contacts.map((contact) => chip(contact)).join("")}</div>` : ""}
+                  ${idea.next_action ? `<p class="small-muted"><strong>Next:</strong> ${escapeHtml(idea.next_action)}</p>` : ""}
+                  ${idea.evidence_ref ? `<p class="small-muted"><strong>Evidence:</strong> <code>${escapeHtml(idea.evidence_ref)}</code></p>` : ""}
+                </article>
+              `;
+            })
+            .join("")}
+        </div>
+      </section>
+    `;
+  }
+
+  function renderContactRegister(contacts) {
+    const rows = Array.isArray(contacts) ? contacts : [];
+    if (!rows.length) {
+      return "";
+    }
+    return `
+      <section class="reference-section-list" aria-label="Contact register">
+        <h3 class="section-title">Contact Register</h3>
+        <div class="reference-focus-grid">
+          ${rows
+            .map((contact) => {
+              const url = contactChannelUrl(contact);
+              const linkPayload = url ? { ...contact, url } : contact;
+              return `
+                <article class="card reference-focus-card">
+                  <div class="detail-header">
+                    <h3>${escapeHtml(contact.name || "Contact")}</h3>
+                    ${statusChip(contact.status || "active")}
+                  </div>
+                  <p class="small-muted">${escapeHtml(contact.role || "")}</p>
+                  <div class="chip-row">
+                    ${contact.category ? chip(formatToken(contact.category)) : ""}
+                    ${contact.location ? chip(contact.location) : ""}
+                    ${contact.confidence ? chip(`Confidence: ${formatToken(contact.confidence)}`) : ""}
+                  </div>
+                  <dl class="meta-grid">
+                    ${contact.phone ? `<dt>Phone</dt><dd>${escapeHtml(contact.phone)}</dd>` : ""}
+                    ${contact.source ? `<dt>Source</dt><dd>${escapeHtml(contact.source)}</dd>` : ""}
+                    ${contact.source_date ? `<dt>Date</dt><dd>${escapeHtml(contact.source_date)}</dd>` : ""}
+                    ${contact.channel_or_url && !url ? `<dt>Channel</dt><dd>${escapeHtml(contact.channel_or_url)}</dd>` : ""}
+                  </dl>
+                  ${renderLinksPanel(linkPayload)}
+                  ${contact.next_action ? `<p class="small-muted"><strong>Next:</strong> ${escapeHtml(contact.next_action)}</p>` : ""}
+                  ${contact.notes ? `<p class="small-muted">${escapeHtml(contact.notes)}</p>` : ""}
+                  ${contact.evidence_ref ? `<p class="small-muted"><strong>Evidence:</strong> <code>${escapeHtml(contact.evidence_ref)}</code></p>` : ""}
+                </article>
+              `;
+            })
+            .join("")}
+        </div>
+      </section>
+    `;
+  }
+
   function renderOtherBuilds() {
     const otherBuilds = data.other_builds || {};
     const summary = otherBuilds.summary || {};
     const sections = Array.isArray(otherBuilds.sections) ? otherBuilds.sections : [];
+    const referenceIdeas = Array.isArray(data.reference_project_ideas) ? data.reference_project_ideas : [];
+    const contacts = Array.isArray(data.contact_register) ? data.contact_register : [];
     const totalMedia = summary.total_media ?? summary.total_images ?? 0;
     const dropZoneMedia = summary.drop_zone_media ?? summary.drop_zone_images ?? 0;
     const manualReferenceMedia = summary.manual_reference_media ?? summary.manual_reference_images ?? 0;
@@ -7261,9 +7362,19 @@
           <p class="metric-value">${escapeHtml(manualReferenceMedia)}</p>
           <p class="metric-label">Curated WhatsApp Media</p>
         </article>
+        <article class="card">
+          <p class="metric-value">${escapeHtml(referenceIdeas.length)}</p>
+          <p class="metric-label">Reference Ideas</p>
+        </article>
+        <article class="card">
+          <p class="metric-value">${escapeHtml(contacts.length)}</p>
+          <p class="metric-label">Useful Contacts</p>
+        </article>
       </section>
 
       ${renderOtherBuildFocusCards(sections)}
+      ${renderReferenceProjectIdeas(referenceIdeas)}
+      ${renderContactRegister(contacts)}
 
       <section class="card reference-drop-card">
         <div class="detail-header">

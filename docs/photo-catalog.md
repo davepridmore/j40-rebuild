@@ -1,7 +1,7 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-05-17 23:57:09
-- Total media files indexed: 730 (719 photos, 11 videos)
+- Generated: 2026-05-18 09:14:33
+- Total media files indexed: 731 (720 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
 
@@ -18,6 +18,7 @@
 | `baseline_walkaround` | 34 |
 | `brake_system` | 13 |
 | `chassis_fixing` | 50 |
+| `electrical_reference` | 1 |
 | `electrical_refit` | 14 |
 | `electrical_reset` | 3 |
 | `electrical_rework` | 18 |
@@ -94,6 +95,7 @@
 | `electrical_system` | `engine_unidentified_two_wire_connector` | 1 | 2026-05-17 | `20260517_204445_gp_oaQKzDrA.jpg` |
 | `electrical_system` | `firewall_and_dash_wiring` | 10 | 2026-03-20 | `20260320_191834.jpg` |
 | `electrical_system` | `injection_pump_throttle_linkage_electrical_input` | 2 | 2026-05-17 | `20260517_204504_gp_46p1VNCg.jpg` |
+| `electrical_system` | `j40_electrical_wiring_diagram` | 1 | 2026-05-18 | `J40.jpg` |
 | `electrical_system` | `pedal_box_wiring` | 5 | 2026-03-28 | `20260328_053638_gp_t6Q3oCTA.jpg` |
 | `engine_bay` | `battery_side_tray_structure_context` | 1 | 2026-05-12 | `20260512_100100_user_battery_side_tray_structure_context.png` |
 | `engine_bay` | `bellhousing_clutch_linkage_and_gearbox_case` | 3 | 2026-04-30 | `20260430_215915_gp_ycQ395Gg.jpg` |

@@ -20,6 +20,7 @@ PARTS_WEEK_PATH = MANUAL_DIR / "parts_buy_now_this_week.csv"
 PARTS_OVERLAP_RESOLUTION_PATH = MANUAL_DIR / "parts_overlap_resolution.csv"
 WORKBOOK_TIDY_PATH = MANUAL_DIR / "j40_costs_cost_tabs_tidy.csv"
 PHOTO_INVENTORY_PATH = MANUAL_DIR / "photo_inventory.csv"
+ELECTRICAL_DIAGRAM_RECONCILIATION_PATH = MANUAL_DIR / "electrical_diagram_reconciliation_20260518.csv"
 
 REASSEMBLY_PACKAGES_PATH = MANUAL_DIR / "reassembly_work_packages.csv"
 DEPENDENCY_EDGES_PATH = MANUAL_DIR / "reassembly_dependency_edges.csv"
@@ -46,6 +47,12 @@ class WorkPackage:
 def load_csv(path: Path) -> list[dict[str, str]]:
     with path.open(newline="", encoding="utf-8") as handle:
         return list(csv.DictReader(handle))
+
+
+def load_csv_optional(path: Path) -> list[dict[str, str]]:
+    if not path.exists():
+        return []
+    return load_csv(path)
 
 
 def write_csv(path: Path, rows: list[dict[str, str]], fieldnames: list[str]) -> None:
@@ -472,8 +479,16 @@ def build_work_packages(
     stage_counts: Counter[str],
     decision_rows: list[dict[str, str]],
     component_disposition_rows: list[dict[str, str]],
+    diagram_reconciliation_rows: list[dict[str, str]],
 ) -> list[WorkPackage]:
     electrical_rework_photos = stage_counts.get("electrical_rework", 0)
+    electrical_reference_docs = stage_counts.get("electrical_reference", 0)
+    diagram_reconciliation_count = len(diagram_reconciliation_rows)
+    diagram_reconciliation_holds = sum(
+        1
+        for row in diagram_reconciliation_rows
+        if row.get("reconciliation_status") in {"partial_match", "diagram_gap", "procurement_hold"}
+    )
     rust_photos = stage_counts.get("rust_assessment", 0)
     stripdown_photos = stage_counts.get("stripdown_cataloguing", 0)
 
@@ -548,10 +563,10 @@ def build_work_packages(
             depends_on="stripdown_cataloguing_complete",
             linked_workstreams="electrical_reset",
             current_state="in_progress" if electrical_rework_photos >= 30 else "queued",
-            evidence_signal=f"electrical_rework_photos={electrical_rework_photos}",
-            blocker_summary=f"{electrical_buy_now} electrical buy rows still open; {electrical_verify_stock} rows should be stock-verified before re-buy.",
+            evidence_signal=f"electrical_rework_photos={electrical_rework_photos}, wiring_diagram_references={electrical_reference_docs}, diagram_reconciliation_rows={diagram_reconciliation_count}",
+            blocker_summary=f"{electrical_buy_now} electrical buy rows still open; {electrical_verify_stock} rows should be stock-verified before re-buy; {diagram_reconciliation_holds} diagram reconciliation holds remain.",
             gate_to_close="Start/charge/lights/horn/wipers/gauges baseline passes functional checks.",
-            key_procurement_actions="Order selected harness/sleeving path; verify on-hand connectors/relays before duplicate buys.",
+            key_procurement_actions="Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys.",
         ),
         WorkPackage(
             work_package_id="WP04",
@@ -616,6 +631,7 @@ def write_report(
     component_rows: list[dict[str, str]],
     procurement_rows: list[dict[str, str]],
     stage_counts: Counter[str],
+    diagram_reconciliation_rows: list[dict[str, str]],
 ) -> None:
     decision_counts = Counter(row.get("decision", "") for row in procurement_rows)
     component_counts = Counter(row.get("recommended_disposition", "") for row in component_rows)
@@ -633,6 +649,8 @@ def write_report(
     lines.append("## Current Evidence Snapshot")
     lines.append("")
     lines.append(f"- `electrical_rework` photos: {stage_counts.get('electrical_rework', 0)}")
+    lines.append(f"- `electrical_reference` diagrams: {stage_counts.get('electrical_reference', 0)}")
+    lines.append(f"- Electrical diagram reconciliation rows: {len(diagram_reconciliation_rows)}")
     lines.append(f"- `rust_assessment` photos: {stage_counts.get('rust_assessment', 0)}")
     lines.append(f"- `stripdown_cataloguing` photos: {stage_counts.get('stripdown_cataloguing', 0)}")
     lines.append("")
@@ -657,10 +675,19 @@ def write_report(
         f"- Close `WP01` + `WP03` in parallel: body rust closure and electrical baseline finalization are both active and should keep moving."
     )
     lines.append(
+        "- Use `data/raw/imports/J40.jpg` as the WP03 viewable wiring diagram and keep `data/raw/imports/J40.graffle` as the editable source; export a fresh JPG after any diagram change."
+    )
+    lines.append(
+        "- Work WP03 from `data/manual/electrical_diagram_reconciliation_20260518.csv`: close the firewall/pass-through, connector/pinout, heavy-cable stock, HVAC, EPS, fuel-stop, and rear-camera holds before final wrap."
+    )
+    lines.append(
         "- Hold final chassis primer/Raptor until the bracket work plan closes: analysis register, design release, radiator/battery/auxiliary/exhaust implementation, and validation photos."
     )
     lines.append(
         f"- Run `WP04` procurement now: {count_mechanical_buy_actions(procurement_rows)} mechanical rows still require buy execution."
+    )
+    lines.append(
+        "- Run `GB-TOP-CAPTURE-001` before buying gearbox top-cover service parts; current top cover must be approved, repaired, or replaced as a matched assembly first."
     )
     lines.append(
         "- Close `DIFF-CAPTURE-001` during the rear brake/suspension window before axle coating, alignment, or road validation."
@@ -683,11 +710,12 @@ def main() -> None:
     stock_rows = load_workbook_stock_rows()
     overlap_decisions = load_overlap_decisions()
     photo_rows = load_csv(PHOTO_INVENTORY_PATH)
+    diagram_reconciliation_rows = load_csv_optional(ELECTRICAL_DIAGRAM_RECONCILIATION_PATH)
 
     procurement_rows = build_procurement_decisions(expenses_rows, week_rows, stock_rows, overlap_decisions)
     component_disposition_rows = build_component_disposition(component_rows, recon_rows)
     stage_counts = summarize_photo_stage_counts(photo_rows)
-    work_packages = build_work_packages(stage_counts, procurement_rows, component_disposition_rows)
+    work_packages = build_work_packages(stage_counts, procurement_rows, component_disposition_rows, diagram_reconciliation_rows)
     dependency_rows = build_dependency_edges()
 
     write_csv(
@@ -755,7 +783,7 @@ def main() -> None:
         ],
     )
 
-    write_report(work_packages, dependency_rows, component_disposition_rows, procurement_rows, stage_counts)
+    write_report(work_packages, dependency_rows, component_disposition_rows, procurement_rows, stage_counts, diagram_reconciliation_rows)
 
     print(f"Wrote work packages: {REASSEMBLY_PACKAGES_PATH.relative_to(ROOT)}")
     print(f"Wrote dependencies: {DEPENDENCY_EDGES_PATH.relative_to(ROOT)}")
