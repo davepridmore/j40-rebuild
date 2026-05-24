@@ -1,6 +1,6 @@
 # Bilal Ganj Mechanic Checklist
 
-Date: 2026-04-15
+Date: 2026-05-22
 
 Use with detailed sizes: `bilal-ganj-detailed-size-specs.md`
 
@@ -56,13 +56,14 @@ Priority reminder:
 - Ask specifically for a complete 2005-2011 Toyota Vitz/Yaris 90-series column-assist EPS set, chassis code SCP90 or NCP90.
 - Do not accept Corolla/Axio/Prius EPS as a buy item, hydraulic power steering parts, loose motors, missing EPS ECUs/controllers, missing shafts, or cut-flush connectors.
 - The J40 has no vehicle ECU, but the donor EPS setup still needs its own matched EPS ECU/controller unless the column has seller-proven integrated control.
+- The new General EPS Adapter means donor brackets are reference geometry only. Do not tell the seller/fabricator the donor brackets are expected to bolt straight into the J40.
 - Mandatory in-person checks:
   - Donor year/chassis confirmation: 2005-2011 SCP90 or NCP90.
   - Complete matched kit presence (column motor unit, matching EPS ECU/control, shafts/U-joints, couplers, brackets, connectors, pigtails).
   - Bench assist smoothness (no jerks/grinding).
   - Input/output play check (no major backlash).
   - Confirm connector pigtails are present and at least 150mm long.
-  - Photograph labels, splines, connectors, brackets, and bench-test video.
+  - Photograph labels, splines, connectors, brackets, bracket hole spacing, motor clocking faces, shaft centerline offsets, and bench-test video.
 
 ### Heat Plugs / Glow Plugs (Row 29)
 
@@ -108,6 +109,7 @@ Priority reminder:
   - OME/EMU package items.
 - EPS:
   - Buy only as complete verified kit; reject incomplete bundles.
+  - Adapter fabrication is a separate release after measurement. Do not buy a loose universal adapter as a substitute for the J40-specific General EPS Adapter mock-up.
 
 ## 4) Data to Capture Before Leaving
 

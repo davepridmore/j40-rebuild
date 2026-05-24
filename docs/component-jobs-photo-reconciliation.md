@@ -1,15 +1,15 @@
 # Component Jobs vs Photo Inventory Reconciliation
 
-- Generated: 2026-05-17 23:57:09
+- Generated: 2026-05-24 16:29:49
 - Source component jobs: `data/manual/component_jobs.csv`
 - Source photo inventory: `data/manual/photo_inventory.csv`
 - Output CSV: `data/manual/component_jobs_photo_reconciliation.csv`
 
 ## Status Summary
 
-- `direct_photo_evidence`: 58
+- `direct_photo_evidence`: 59
 - `indirect_photo_evidence_only`: 2
-- `no_photo_evidence`: 5
+- `no_photo_evidence`: 6
 
 ## Per-Component Results
 
@@ -18,6 +18,7 @@
 | `eps_vitz_complete_kit_market_check` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `eps_vitz_connector_wire_id_check` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `eps_vitz_static_and_road_validation` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
+| `gearbox_top_cover_shift_tower_20260518` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `interior_dash_switch_fitup` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `interior_diesel_cutoff_ignition_security` | `no_photo_evidence` | 0 | 0 | `-` | No explicit rule configured. |
 | `exhaust_mockup_brackets_before_coating_20260508` | `indirect_photo_evidence_only` | 0 | 37 | `-` | Current photo inventory has no dedicated exhaust mock-up evidence; chassis and engine-bay photos only support routing context. |
@@ -44,10 +45,11 @@
 | `engine_cooling_pipe_fabrication_samples` | `direct_photo_evidence` | 6 | 24 | `cooling_pipe_fabrication_samples` | May 2 selected pipe photos directly document the made-to-order cooling pipe sample set; engine-bay routing photos provide supporting context. |
 | `engine_electrical_inputs_reconciliation_20260517` | `direct_photo_evidence` | 10 | 34 | `alternator_charge_regulator_wiring|engine_input_loom_routing_context|engine_loose_connector_unassigned|engine_sender_branch|engine_starter_solenoid_and_ground_inputs|engine_unidentified_two_wire_connector|injection_pump_throttle_linkage_electrical_input` | May 17 selected photos are the active engine electrical input reconciliation set; starter, alternator, sender, injection-pump/throttle-linked, and unknown connector branches must be labelled and electrically proven before final wrap. |
 | `engine_powertrain_cleaning_20260501` | `direct_photo_evidence` | 19 | 23 | `engine_powertrain_cleaning_baseline` | May 1 engine, gearbox, transfer, steering, and driveline photos directly document the cleaning baseline before degreasing and leak inspection. |
-| `eps_vitz_column_layout_measurement` | `direct_photo_evidence` | 25 | 44 | `driver_footwell_firewall_and_wiring|front_frame_horns_bumper_and_steering_area|j40_removed_steering_column_set|steering_and_suspension_linkages` | Existing cab/firewall, removed J40 column, and steering-box-side photos provide the vehicle-side EPS layout baseline; close this only with ruler photos, donor EPS mock-up, motor envelope, and column centerline checks. |
+| `eps_general_adapter_design_fabrication` | `direct_photo_evidence` | 38 | 14 | `dashboard_lower_structure|driver_footwell_firewall_and_wiring|floor_pan_rust_zones` | Cab/firewall and dash-structure photos support the General EPS Adapter design context, but final datum plate, firewall doubler, EPS saddle/clamp, clocking/spacer plates, shaft interfaces, and controller/fastener access need measured templates and dry-fit photos before fabrication. |
+| `eps_vitz_column_layout_measurement` | `direct_photo_evidence` | 25 | 44 | `driver_footwell_firewall_and_wiring|front_frame_horns_bumper_and_steering_area|j40_removed_steering_column_set|steering_and_suspension_linkages` | Existing cab/firewall, removed J40 column, and steering-box-side photos provide the vehicle-side EPS layout baseline; close this only with ruler photos, donor EPS mock-up, motor envelope, General EPS Adapter datum points, and column centerline checks. |
 | `eps_vitz_controller_mount_and_wiring` | `direct_photo_evidence` | 11 | 6 | `driver_footwell_firewall_and_wiring|firewall_and_dash_wiring` | Existing wiring and footwell photos support controller and power-route planning; close only after the matched ECU/controller, plugs, fuse feed, ground, and ignition-trigger wiring are photographed and labelled. |
-| `eps_vitz_shaft_u_joint_adaptation` | `direct_photo_evidence` | 23 | 1 | `front_frame_horns_bumper_and_steering_area|steering_and_suspension_linkages` | Steering-box/input and linkage photos provide direct vehicle-side shaft-routing context; release still needs donor shaft, U-joint, spline, engagement, and phasing evidence. |
-| `eps_vitz_support_bracket_design` | `direct_photo_evidence` | 38 | 14 | `dashboard_lower_structure|driver_footwell_firewall_and_wiring|floor_pan_rust_zones` | Cab/firewall and dash-structure photos support bracket design context, but final support plates need measured templates and dry-fit photos before fabrication. |
+| `eps_vitz_shaft_u_joint_adaptation` | `direct_photo_evidence` | 23 | 1 | `front_frame_horns_bumper_and_steering_area|steering_and_suspension_linkages` | Steering-box/input and linkage photos provide direct vehicle-side shaft-routing context; release still needs donor shaft, U-joint, spline, engagement, phasing, and replaceable General EPS Adapter shaft-interface evidence. |
+| `eps_vitz_support_bracket_design` | `direct_photo_evidence` | 38 | 14 | `dashboard_lower_structure|driver_footwell_firewall_and_wiring|floor_pan_rust_zones` | Cab/firewall and dash-structure photos support adapter support design context, but final support plates need measured templates and dry-fit photos before fabrication. |
 | `floor_pan` | `direct_photo_evidence` | 46 | 60 | `floor_pan_and_firewall|floor_pan_rust_zones|floor_seam_and_body_mount_rust` | Floor pan rust/condition is directly evidenced with dedicated close-ups; May 17 adds tub floor, seam, and body-mount rust details. |
 | `front_brake_disc_baseline` | `direct_photo_evidence` | 9 | 11 | `steering_and_suspension_linkages` | Steering-linkage underside photos are the closest grouped direct evidence, with frame/mount shots providing supporting context for the current front disc inference. |
 | `front_radiator_bracket_repair_20260508` | `direct_photo_evidence` | 17 | 21 | `cooling_hoses_fan_belt_and_radiator_support|front_frame_horns_bumper_and_radiator_support|front_support_radiator_pickups_context` | Front support and cooling-route photos are the baseline for the wire-held radiator support repair; the May 12 upright/crossmember view starts the pickup layout, but closure still needs ruler photos, trial-fit, and bracket close-ups. |
@@ -64,7 +66,7 @@
 | `issue_front_spring_hanger_crack_check` | `direct_photo_evidence` | 33 | 9 | `rear_axle_and_leaf_springs|rear_axle_spring_hanger_and_crossmember|suspension_or_linkage_mount` | Spring and hanger views provide direct evidence for crack/deformation checks around hanger brackets. |
 | `issue_steering_box_mount_crack_check` | `direct_photo_evidence` | 23 | 11 | `front_frame_horns_bumper_and_steering_area|steering_and_suspension_linkages` | Steering linkage and nearby mount photos are the baseline evidence set for steering-box mount crack checks. |
 | `old_accessory_wiring` | `direct_photo_evidence` | 17 | 4 | `driver_footwell_firewall_and_wiring|driver_footwell_firewall_pass_through|firewall_and_dash_wiring|pedal_box_wiring` | Accessory/electrical removal and rebuild work has strong direct photo coverage. |
-| `paint_returned_panels_refinished` | `direct_photo_evidence` | 19 | 4 | `refinished_hinges_brackets_and_trim|refinished_seat_or_mount_bracket|roof_gutter_and_window_channel|wiper_arm_or_linkage_hardware` | Off-vehicle refinished hardware/panel photos and the May 17 returned roof image provide direct evidence of returned painted parts. |
+| `paint_returned_panels_refinished` | `direct_photo_evidence` | 30 | 4 | `refinished_hinges_brackets_and_trim|refinished_seat_or_mount_bracket|returned_painted_body_trim|returned_painted_brackets_and_trim|returned_painted_front_panel_headlamp_surround|returned_painted_front_wings|returned_painted_inner_panels_or_splash_shields|roof_gutter_and_window_channel|wiper_arm_or_linkage_hardware` | Off-vehicle refinished hardware/panel photos, the May 17 returned roof image, and the May 23 picker batch provide direct evidence of returned painted parts. |
 | `paint_sendout_panels_manifest` | `direct_photo_evidence` | 21 | 4 | `detached_body_panels_and_doors|detached_doors_and_panels|rear_hatch_inner_panel|roof_gutter_and_window_channel` | Detached panel/door batches and the April 23 roof image provide direct send-out evidence for painting. |
 | `paint_workshop_progress_media` | `direct_photo_evidence` | 5 | 19 | `off_vehicle_workstation_reference_video|panel_detail_and_markings` | In-progress workshop videos and panel-handling shots track painting/bodywork activity between send-out and return; stripdown wing-removal photos are not direct paint evidence. |
 | `rear_brake_cable_line_refresh` | `direct_photo_evidence` | 24 | 74 | `rear_axle_and_leaf_springs` | Rear axle/drum photos directly show the parking-brake cable/linkage and axle-end hard-line routing; release still needs labelled removal photos and old parts kept as templates. |
@@ -75,7 +77,7 @@
 | `roof_shell` | `direct_photo_evidence` | 6 | 0 | `roof_gutter_and_window_channel` | Roof channel/rain gutter photos are direct evidence of roof shell condition. |
 | `suspension_upgrade_fitment_and_alignment` | `direct_photo_evidence` | 40 | 23 | `rear_axle_and_leaf_springs|rear_axle_spring_hanger_and_crossmember|steering_and_suspension_linkages` | Rear spring/U-bolt and front linkage photos provide direct fitment context; final alignment release still needs installed-kit and ride-height/alignment photos. |
 | `tub_corner_hinge_pin_repair_20260517` | `direct_photo_evidence` | 3 | 6 | `tub_corner_hinge_pin_repair` | The May 17 re-selected close-ups isolate the corner/hinge repair issue where the hinge pin had to be cut off; release requires side/location labels, probe results, hinge hardware decision, and repair-method signoff. |
-| `tub_refit_rubber_hardware_shim_stack` | `direct_photo_evidence` | 4 | 67 | `body_mount_and_crossmember_detail|floor_seam_and_body_mount_rust` | Mount-detail and tub-side body-mount rust photos give refit context; May 17 adds current tub-side captive/mount corrosion details, but final rubber/sample dimensions still need physical measurement. |
+| `tub_refit_rubber_hardware_shim_stack` | `direct_photo_evidence` | 7 | 67 | `body_mount_and_crossmember_detail|floor_seam_and_body_mount_rust|rubber_parts_recreation_samples` | Mount-detail, tub-side body-mount rust, and the additional flat-rubber footprint measurement photos now give refit and pad-sizing context; final rubber/sample dimensions still need side/station labels, sleeve checks, and dry-stack confirmation. |
 | `tub_rust_damage_survey_20260517` | `direct_photo_evidence` | 12 | 4 | `body_shell_with_doors_removed|floor_pan_rust_zones|floor_seam_and_body_mount_rust|tub_corner_hinge_pin_repair` | May 17 selected photos are the active tub rust-damage intake set; each still needs station labels, probe results, and repair release decisions. |
 | `wheel_tyre_condition_assessment_20260512` | `direct_photo_evidence` | 2 | 10 | `wheel_tire_neolin_mt_sidewall_rim_detail|wheel_tire_neolin_mt_tread_detail` | May 12 tyre/wheel photos show deep Neolin M/T tread and outer rim/sidewall condition, but roadworthy release still needs all-wheel DOT/date-code capture, inner sidewall inspection, bead/rim corrosion and runout check, pressure leak test, balance, and lug-seat/nut inspection. |
 | `window_mechanisms` | `direct_photo_evidence` | 4 | 3 | `front_vent_window_assemblies|rear_hatch_window_latch_mechanisms` | Rear hatch latch hardware and vent-window latch/pivot assemblies are directly documented; wiper/linkage remains supporting evidence. |

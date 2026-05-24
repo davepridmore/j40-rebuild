@@ -7,6 +7,9 @@
 - Current default direction: replace normal front and rear brake service parts as baseline work, keep the existing `front disc / rear drum` architecture, and treat rear-disc conversion as optional only if inspection or real use shows a clear measured need.
 - Merged execution sheet: [suspension-brake-merged-work-plan.md](suspension-brake-merged-work-plan.md).
 - Current hard-line tooling and parts selection: [brake-hard-line-tool-parts-selection-20260514.md](brake-hard-line-tool-parts-selection-20260514.md).
+- Cheap brake-line sourcing gate: [brake-line-cheap-sourcing-20260524.md](brake-line-cheap-sourcing-20260524.md).
+- Pakistan piping and handbrake source map: [pakistan-brake-piping-handbrake-sources-20260524.md](pakistan-brake-piping-handbrake-sources-20260524.md).
+- Current rear drum buy sheet: [rear-drum-brake-buy-sheet-20260524.md](rear-drum-brake-buy-sheet-20260524.md).
 
 ## Current Configuration Read
 
@@ -30,6 +33,9 @@
 - Brake flex hoses must be complete crimped hydraulic assemblies rated to `DOT/SAE J1401` or OEM-equivalent. Do not fabricate flex hoses from generic rubber hose.
 - Brake hard-line stock order is `3/16 in / 4.75 mm` brake tube. May 14 installed-fitting photos plus the user flare side-view point to Toyota-style `double / inverted` flares, not ISO bubble flares, but final fabrication still requires a removed old line or opened seat to confirm the straight-on sealing face, fitting thread, and seat at each connection.
 - The ordered PARD flaring kit is accepted only after receipt check proves a true `4.75 mm / 3/16 in` double/inverted flare die. If it is only a generic `4-16 mm` set without `4.75 mm / 3/16 in`, it does not release brake-line fabrication.
+- User sourcing rule from 2026-05-24: use local/catalog Pakistan supply, local machine work, and old-sample matching first. Imported Cruiser Corps/SOR/CruiserParts/Toyota overseas listings are reference data only unless the user explicitly approves an expensive import.
+- Buying order correction from 2026-05-24: price the brake hard-line tube, fittings, and local fabrication first, before buying more wheel cylinders, shoes/hardware, drums, or parking-brake cable parts.
+- Wheel-cylinder correction from 2026-05-24: the four-cylinder rear kit is not purchase-released by the drum photo. The loose-part catalog photo shows the mounting/port side, while the installed photo shows the drum-side barrel/boots, so a visual mismatch is not enough to reject it; however old-sample backside/port/mounting/bore confirmation controls final purchase.
 
 ## Brake Configuration Evidence Photos
 
@@ -106,10 +112,34 @@ Existing photos are enough for architecture and broad routing, but not enough fo
 
 Do not discard old parking-brake cables, hard lines, flex hoses, or representative clips until the replacement parts have been checked against them.
 
+### May 24 Comms And Rear Drum Procurement Status
+
+Fresh WhatsApp import on 2026-05-24 rebuilt the project extract, but did not add a verified brake-parts order confirmation. The Gmail import on 2026-05-24 found the Toolsmart order, but no current Cruiser Corps/SOR/imported brake-parts receipt or order email has been verified.
+
+Google Photos picker run `20260524T033527` added seven new rear-brake/suspension photos and skipped three already-imported photos. Rechecking those photos against Toyota GR Heritage, Toyota EPC, Cruiser Corps, and SOR references shows the 9/1971-7/1980 four-cylinder rear layout remains a plausible candidate, but the user correctly challenged the visual mismatch between the loose replacement-cylinder photo and the installed top cylinder. That mismatch is partly due to comparing different sides of the part, but the photo does not release a purchase.
+
+Current rear-brake buying status from the May 23 drum-open teardown chat plus the May 24 image/catalog check is therefore: replace worn/old hydraulics as baseline, but hold rear wheel-cylinder purchase until the installed cylinder backside/line port/bleeder/mounting pattern and any lower cylinder are photographed or the old cylinders are removed as samples. The imported catalog routes below are spec references, not approval to import. Before buying these rear drum parts, get the cheap brake-line quote in [brake-line-cheap-sourcing-20260524.md](brake-line-cheap-sourcing-20260524.md).
+
+| Item | Qty basis | Current status |
+| --- | ---: | --- |
+| Rear wheel cylinders | Actual count from teardown | Sample-match hold. Toyota part numbers `47550-69075`, `47560-69055`, `47570-69065`, `47580-69055`, Cruiser Corps `A28`, and SOR `081-02C-KIT` remain references only until the old cylinders confirm count, bore, mounting bolt spacing, port thread, bleed screw access, and pushrod/boot style. |
+| Rear brake shoes | 1 axle set | Use local shoe set first; the Pakistan PakWheels `K-2255-N/Y` lead and Cruiser Corps `549-163` are reference/search leads only. Verify shoe width before payment. If this is a non-USA 9/1975+ 3-inch drum setup, switch to a matching local 3-inch shoe route. |
+| Rear drum hardware | 1 axle kit | Source springs, hold-downs, adjusters, retainers, and parking-brake lever hardware locally by sample. Cruiser Corps `551-113`, `A16`, and SOR references are only to identify contents and compare layout. |
+| Rear center flex hose | 1 | Source locally first using old sample/free length/fittings/bracket groove; Cruiser Corps `553-103` is a reference only. Hose must still be a complete crimped brake hose assembly rated to `DOT/SAE J1401` or OEM-equivalent. |
+| Wheel-cylinder bolt kits | 4 x 8-piece kits | Source locally with the cylinders or by bolt/washer sample. Cruiser Corps `A16` qty `4` is a reference for count only. |
+| Rear brake drums | 2 | Do not import drums by default. Measure and machine locally if safely within limit, or replace locally if scored, cracked, stepped, near/over service limit, or unsafe to machine. Cruiser Corps `553-115` remains reference only. |
+
+Still source locally/by sample: rear axle hard brake lines in `4.75 mm / 3/16 in` brake tube, flare nuts/fittings, parking-brake cables, clips/retainers, line caps/plugs, brake cleaner, rags, catch tray, and any cable/equalizer hardware not proven in the old samples.
+
 ### Most Relevant Rear-Axle Photos
 
 | File | Use |
 | --- | --- |
+| [20260524_025547_gp_yCvA0bxA.jpg](../photos/20260524_025547_gp_yCvA0bxA.jpg) | Best current wheel-cylinder evidence; shows the long drum-side barrel/boot view of the visible top cylinder, but does not show the mounting/port side or release the catalog kit. |
+| [20260524_025532_gp_YlEZxOmQ.jpg](../photos/20260524_025532_gp_YlEZxOmQ.jpg) | Rear drum internal close-up supporting wheel-cylinder count and shoe/hardware layout verification. |
+| [20260524_025515_gp_zEaIZo5Q.jpg](../photos/20260524_025515_gp_zEaIZo5Q.jpg) | Rear drum internal close-up supporting shoe/hardware layout verification. |
+| [20260524_025414_gp_VsFMrBNQ.jpg](../photos/20260524_025414_gp_VsFMrBNQ.jpg) | Rear drum internal close-up supporting shoe/hardware layout verification. |
+| [20260523_225521_gp_0vea3W7Q.jpg](../photos/20260523_225521_gp_0vea3W7Q.jpg) | Wider rear drum context after opening. |
 | [20260501_194305_gp_EllBGvXA.jpg](../photos/20260501_194305_gp_EllBGvXA.jpg) | Best rear axle route view for hard lines, cable/linkage routing, and drum area. |
 | [20260501_194313_gp_lfUqLibA.jpg](../photos/20260501_194313_gp_lfUqLibA.jpg) | Best center/differential view for axle hard-line routing and center hose/T-union area. |
 | [20260501_194322_gp_XuRtjN4w.jpg](../photos/20260501_194322_gp_XuRtjN4w.jpg) | Close rear drum/backing-plate view with cable/linkage context. |
@@ -144,7 +174,7 @@ Do not discard old parking-brake cables, hard lines, flex hoses, or representati
 | P0 | New rear parking-brake cable set: left/right rear cables, equalizer/clevis hardware, return springs, clips, and adjuster parts matched to the backing plates. |
 | P0 | Rear axle hard brake lines recreated in 3/16 in / 4.75 mm brake tube, with the correct flare and fitting threads. |
 | P0 | Rear center flexible brake hose with correct chassis-side and axle-side fittings, retaining clip, and old-sample/free length. |
-| P0 | Rear wheel cylinders as a pair once bore/port/mounting pattern is confirmed. |
+| P0 | Rear wheel cylinders by actual teardown count once bore/port/mounting pattern is confirmed. |
 | P0 | Full brake flex hose set: front left, front right, and rear center after front caliper fitting style, rear center fittings, bracket retention, and free length are captured. |
 | P0 | Brake flex-hose retaining U-clips and bracket hardware for front left, front right, and rear center hose brackets. |
 | P0 | Full line-support pack: rubber-lined P-clips for `4.75 mm` hard line, clamp-on rubber-lined axle supports, pass-through grommets/edge trim, M5/M6 fasteners, and larger cable saddles where parking-brake cables rub. |
@@ -161,7 +191,7 @@ Do not discard old parking-brake cables, hard lines, flex hoses, or representati
 | Item | Why held |
 | --- | --- |
 | Rear brake shoes and spring kit | Baseline replace, but exact set is held until drum family, shoe width/diameter, adjuster style, and spring layout are known. |
-| Rear wheel cylinders | Baseline replace as a pair, but exact part is held until bore, port thread, mounting pattern, pushrod style, and bleed screw access are confirmed. |
+| Rear wheel cylinders | Baseline replace by actual teardown count, but exact part is held until bore, port thread, mounting pattern, pushrod style, and bleed screw access are confirmed. |
 | Front pads/caliper kits/rotors | Baseline service is approved, but the front disc conversion hardware family is not yet positively identified. |
 | Rear parking-brake cables | Baseline replace with new cable assemblies, but cable length, sheath length, end fittings, equalizer hardware, and clip positions must come from the old samples. |
 | Brake master cylinder | Master bore, booster/proportioning layout, reservoir condition, and fitting threads are not yet confirmed. |
@@ -178,7 +208,7 @@ Use this as the workshop handoff. The output should be photos plus measurements 
 | Rear axle hard lines | Photograph full route before removal; label left/right; cap open ports; keep old tubes as bend templates; record tube OD, line length by side, flare standard, union thread, fitting seat, bend pattern, clip locations, and clearances to axle, U-bolts, shocks, springs, and tyres. | Rear axle hard-line fabrication and fittings. |
 | Rear center flex hose | Photograph chassis-side and axle-side fittings, bracket slot, retaining clip, T/union, and route; measure hose free length, fitting/thread or banjo style, bracket retention, and fitted route clearance. | Rear center hose and full flex-hose set. |
 | Rear drums open | Photograph each side before removing springs; record drum inside diameter, shoe width, lining condition, adjuster style, spring layout, backing-plate condition, parking-brake lever condition, and drum scoring/step. | Rear shoes, hardware kit, adjusters, drum machine/replace decision. |
-| Rear wheel cylinders | Photograph installed cylinder and ports; after drum-open capture, record bore, mounting bolt spacing, port thread, pushrod/slot style, bleed screw size/access, and leak/seizure condition. | Wheel cylinder pair and bleed hardware. |
+| Rear wheel cylinders | Photograph installed cylinder and ports; after drum-open capture, record actual cylinder count, bore, mounting bolt spacing, port thread, pushrod/slot style, bleed screw size/access, and leak/seizure condition. | Wheel cylinders and bleed hardware. |
 | Front disc hardware | Photograph both front calipers, rotors, hose ends, brackets, bleed screws, and any visible casting/part numbers; record pad shape, rotor thickness/diameter if accessible, caliper fitting type, hose free length, and steering lock clearance. | Front pads, caliper rebuild kits, front hoses, rotor decision. |
 | Master/booster/proportioning | Photograph master cylinder, reservoir, booster/vacuum line, proportioning/bias valve if fitted, all ports, and hard-line routing; record fitting threads/flare seats and any leaks or seized fittings. | Master cylinder, reservoir seals/caps/hoses, brake balance decision. |
 | Clips and retainers | Count every brake-line clip, parking-brake cable retainer, rubber sleeve/grommet, and P-clip by position; keep one sample of each style; record hole size, bracket thickness, and line/cable OD. | Clip order, P-clip pack, permanent line/cable support. |

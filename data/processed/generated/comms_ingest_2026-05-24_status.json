@@ -1,0 +1,307 @@
+{
+  "run_date_utc": "2026-05-23",
+  "date_tag": "2026-05-24",
+  "email": {
+    "new_messages_query_after": "2026/05/18",
+    "queries_run": [
+      "after:2026/05/18 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (j40 OR fj40 OR j50 OR fj50 OR landcruiser OR \"land cruiser\" OR toyota)",
+      "after:2026/05/18 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (daraz OR autohub OR aliexpress OR toolsmart OR \"tools mart\" OR \"mtl parts\" OR millat OR powerhouse OR postex OR leopard OR blueex OR \"blue-ex\" OR coolsun OR longman OR happilac)",
+      "after:2026/05/18 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (chassis OR brake OR suspension OR primer OR epoxy OR paint OR welding OR hose OR rubber OR fastener OR grommet OR radiator OR evaporator OR blower OR relay OR fuse)",
+      "after:2026/05/18 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (shipped OR dispatch OR tracking OR delivered OR invoice OR receipt OR payment)",
+      "after:2026/05/18 \"38902\"",
+      "after:2026/05/18 \"38903\"",
+      "after:2026/05/18 \"TM25240\"",
+      "after:2026/05/18 \"TM25550\"",
+      "after:2026/05/18 \"242365766280938\"",
+      "after:2026/05/18 \"243331393680938\"",
+      "after:2026/05/18 \"243331393480938\"",
+      "after:2026/05/18 \"62074\"",
+      "after:2026/05/18 \"62192\"",
+      "after:2026/05/18 \"241938794080938\"",
+      "after:2026/05/18 \"242366749280938\"",
+      "after:2026/05/18 \"1761310\"",
+      "after:2026/05/18 \"242508745080938\"",
+      "after:2026/05/18 \"242508745280938\"",
+      "after:2026/05/18 \"62228\"",
+      "after:2026/05/18 \"553-115x2\"",
+      "after:2026/05/18 \"549-163\"",
+      "after:2026/05/18 \"551-113\"",
+      "after:2026/05/18 \"A16_IF_4CYL_CONFIRMED\"",
+      "after:2026/05/18 \"SOR_081-15P_or_081-16-B_if_3in\"",
+      "after:2026/05/18 \"553-103\"",
+      "after:2026/05/18 \"SAMPLE_MATCH_REQUIRED\"",
+      "after:2026/05/18 \"A28_IF_4CYL_CONFIRMED\"",
+      "after:2026/05/18 \"LONG_PAIR_IF_1CYL_PER_WHEEL\"",
+      "after:2026/05/18 \"242508744880938\"",
+      "after:2026/05/18 \"1762336\"",
+      "after:2026/05/18 \"80788\"",
+      "after:2026/05/18 \"3070231697837489\"",
+      "after:2026/05/18 \"3070231697777489\"",
+      "after:2026/05/18 \"3070027285627489\"",
+      "after:2026/05/18 \"1599\"",
+      "after:2026/05/18 \"3070231697877489\"",
+      "after:2026/05/18 \"242365766580938\"",
+      "after:2026/05/18 \"62191\"",
+      "after:2026/05/18 \"242365766980938\"",
+      "after:2026/05/18 \"242365766080938\"",
+      "after:2026/05/18 \"TM25493\"",
+      "after:2026/05/18 \"26242\"",
+      "after:2026/05/18 \"TM25430\""
+    ],
+    "query_stats": {
+      "after:2026/05/18 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (j40 OR fj40 OR j50 OR fj50 OR landcruiser OR \"land cruiser\" OR toyota)": {
+        "returned": 5,
+        "result_size_estimate": 5,
+        "has_next_page": false
+      },
+      "after:2026/05/18 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (daraz OR autohub OR aliexpress OR toolsmart OR \"tools mart\" OR \"mtl parts\" OR millat OR powerhouse OR postex OR leopard OR blueex OR \"blue-ex\" OR coolsun OR longman OR happilac)": {
+        "returned": 18,
+        "result_size_estimate": 18,
+        "has_next_page": false
+      },
+      "after:2026/05/18 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (chassis OR brake OR suspension OR primer OR epoxy OR paint OR welding OR hose OR rubber OR fastener OR grommet OR radiator OR evaporator OR blower OR relay OR fuse)": {
+        "returned": 5,
+        "result_size_estimate": 5,
+        "has_next_page": false
+      },
+      "after:2026/05/18 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (shipped OR dispatch OR tracking OR delivered OR invoice OR receipt OR payment)": {
+        "returned": 29,
+        "result_size_estimate": 29,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"38902\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"38903\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"TM25240\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"TM25550\"": {
+        "returned": 2,
+        "result_size_estimate": 2,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"242365766280938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"243331393680938\"": {
+        "returned": 2,
+        "result_size_estimate": 2,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"243331393480938\"": {
+        "returned": 2,
+        "result_size_estimate": 2,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"62074\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"62192\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"241938794080938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"242366749280938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"1761310\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"242508745080938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"242508745280938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"62228\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"553-115x2\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"549-163\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"551-113\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"A16_IF_4CYL_CONFIRMED\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"SOR_081-15P_or_081-16-B_if_3in\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"553-103\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"SAMPLE_MATCH_REQUIRED\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"A28_IF_4CYL_CONFIRMED\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"LONG_PAIR_IF_1CYL_PER_WHEEL\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"242508744880938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"1762336\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"80788\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"3070231697837489\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"3070231697777489\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"3070027285627489\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"1599\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"3070231697877489\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"242365766580938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"62191\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"242365766980938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"242365766080938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"TM25493\"": {
+        "returned": 2,
+        "result_size_estimate": 2,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"26242\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/18 \"TM25430\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      }
+    },
+    "unique_messages_read": 47,
+    "categorized_records_written": 20,
+    "excluded_non_project_records": 27,
+    "category_counts": {
+      "supplier_communication": 14,
+      "project_update": 5,
+      "product": 1
+    },
+    "top_sources": {
+      "Daraz": 9,
+      "Toolsmart.Pk": 5,
+      "Alibaba": 5,
+      "Toolsmart": 1
+    },
+    "output_csv": "data/processed/generated/comms_ingest_2026-05-24_categorized.csv",
+    "output_json": "data/processed/generated/gmail_project_messages_2026-05-24.json",
+    "high_signal_procurement_refs": [
+      "Yay, your Order 243331393680938 is confirmed!",
+      "Yay, your Order 243331393480938 is confirmed!",
+      "Thank You for Choosing Daraz 🛍️ How Was Your Experience? 😊",
+      "Hi David, share your thoughts about Harden 4'' Heavy Duty Table Vice 100mm / 9 Kg",
+      "Hi David, share your thoughts about Wadfow 7 Pcs Body And Fender Hammer Set WHZ1D07",
+      "Delivery of your Order 243331393680938",
+      "Thank You for Choosing Daraz 🛍️ How Was Your Experience? 😊",
+      "dodge charger front bumper: we notice that you viewed this last week",
+      "Thank You for Choosing Daraz 🛍️ How Was Your Experience? 😊",
+      "Hi David, your next sourcing find",
+      "dodge charger front bumper: start from low MOQs",
+      "Delivery of your Order 243331393480938",
+      "Hi David, share your thoughts about Harden Mini Tube Cutter 3-22mm",
+      "Hi David, share your thoughts about Total Jack stand 3Ton THJS0301",
+      "Thank You for Choosing Daraz 🛍️ How Was Your Experience? 😊",
+      "Fast price comparison",
+      "Thank You for Choosing Daraz 🛍️ How Was Your Experience? 😊",
+      "New Alibaba Guaranteed products available now",
+      "Standard Chartered: Transaction Alert",
+      "Order #TM25776 confirmed"
+    ]
+  }
+}

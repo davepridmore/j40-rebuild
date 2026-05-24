@@ -19,6 +19,11 @@ RETURNED_COMPONENTS = {
     "rear_hatch_window_latch_mechanisms",
     "refinished_hinges_brackets_and_trim",
     "refinished_seat_or_mount_bracket",
+    "returned_painted_body_trim",
+    "returned_painted_brackets_and_trim",
+    "returned_painted_front_panel_headlamp_surround",
+    "returned_painted_front_wings",
+    "returned_painted_inner_panels_or_splash_shields",
     "wiper_arm_or_linkage_hardware",
 }
 IN_PROGRESS_VIDEO_COMPONENTS = {

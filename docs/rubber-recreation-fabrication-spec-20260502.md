@@ -220,8 +220,8 @@ No fabricator should be asked to make the final batch from photos alone. The pho
 | `BM-SLV` | Main body-mount crush sleeve | `6` | `ID 10.8-11.0` for M10 bolt; OD and length held for caliper confirmation | Hold |
 | `BM-CUP` | Body-mount cup/seat washer | `12` | small cup `OD 64`, large cup `OD 78`, M10 clearance hole `11`, dish/register depth `2-3`, steel `2.5-3.0` thick | Prototype/quote |
 | `FS-OVAL` | Two-hole oval front-support isolator pad | `2` | length `96`, width `64`, thickness `15`, holes `12`, hole spacing `64`, relief `36 x 18 R3`, insert/boss `OD 29` | Prototype/quote |
-| `FS-STRIP-L` | Long front-support/bracket strip rubber - left | `1` | trace length `165`, width `38-42`, base thickness `8`, raised/load pad `14`, hole/slot `11` or `11 x 16` where shown | Template required |
-| `FS-STRIP-R` | Long front-support/bracket strip rubber - right | `1` | mirror `FS-STRIP-L` unless the physical sample proves asymmetry | Template required |
+| `FS-STRIP-L` | Underfloor body-support strip liner - left | `1` | flat strip `165 x 38 x 8`; no through-holes in rubber by default | First article / quote |
+| `FS-STRIP-R` | Underfloor body-support strip liner - right | `1` | same blank as left unless installed sample proves handed end trim | First article / quote |
 
 ## Circular Body-Mount Cushions
 
@@ -297,33 +297,47 @@ Hold before production:
 - Confirm the two hole centres with calipers.
 - Confirm whether the upper metal insert is bonded, loose, or part of the old washer stack.
 
-## Long Front-Support / Bracket Strip Rubbers
+## Flat Underfloor Body-Support Strip Pair
 
-Relevant images: `RRB-001`, `RRB-002`, `RRB-003`, `RRB-005`, `RRB-006`, `RRB-009`.
+Relevant images: `20260517_194143_gp_CO7MuMdA`, `20260517_194633_gp_rAjY3gjg`, `20260517_194706_gp_twKRWGFA`, `20260517_193503_gp_N9nHjqXw`, `20260517_193539_gp_E0cR9I0A`, `20260517_193559_gp_NEpk1hpg`, `20260517_193612_gp_JmbfR0Tw`, `20260517_193616_gp_1ye19BZA`.
 
 Part IDs: `FS-STRIP-L`, `FS-STRIP-R`.
 
+Legacy note: the `FS-STRIP-*` IDs are retained for project continuity, but the May 17 installed-location photos show these are actual underfloor body-support / anti-squeak strip liners on the tub-side crossmember landing, not unproven front-apron pieces and not bump-stop fragments.
+
 Quantity: `1` left, `1` right.
 
-Nominal section:
-- Overall trace length: `165`.
-- Working strip width: `38-42`.
-- Base sheet thickness: `8`.
-- Raised/load pad height: `14`.
-- Bolt holes: `11` for M10 clearance, or `11 x 16` slot where the old part shows an elongated hole.
+Released rubber geometry:
+- Free length: `165`.
+- Finished width: `38`.
+- Free thickness: `8`.
+- Edge break: `0.5-1.0` or light `R1-R2`.
+- Holes in rubber: none by default.
 
-Required fabrication method:
-1. Keep the physical old strip and any metal carrier.
-2. Clean the rubber enough to see edges, but do not sand or trim the sample before tracing.
-3. Trace the actual old part and the metal carrier on card or acetate.
-4. Mark hole centres from the metal carrier, not from torn rubber.
-5. Cut the new rubber from sheet or mould it against the carrier.
-6. Punch holes with a proper punch.
-7. If bonded to metal, blast the carrier, prime/bond, clamp flat, and cure before trimming.
+Material and finish:
+- Solid black `EPDM` or `NR/SBR` automotive mount-grade rubber.
+- Hardness: `Shore A 60 +/-5`.
+- Flat parallel faces; smooth cut edges; no torn knife finish, foam, sponge, tyre rubber, or crumb/recycled stock.
 
-Hold before production:
-- These two strip rubbers are not reliable as photo-only cut patterns because the old samples are curled, split, and torn.
-- Use the dimensions above to prepare stock and quote the job, then cut final pieces from a physical template.
+Release position:
+- This is now strong enough for quotation and first-article manufacture.
+- Make the rubber as a plain flat strip pair. Do not force the slotted metal retainer geometry into the rubber unless a direct install trial proves the original strip itself was pierced.
+
+Steel retainer / carrier rule:
+1. Reuse the original slotted steel retainers if they clean up and still clamp flat.
+2. If a retainer must be remade, trace it directly from the original steel piece.
+3. Do not derive steel slot length or pitch from torn rubber witness marks alone.
+
+Fabrication method:
+1. Cut two flat rubber strips to `165 x 38 x 8`.
+2. Dress the long edges clean and keep the faces parallel.
+3. Dry-fit one strip at the actual crossmember/body landing before making any side-specific trim.
+4. If one side proves a local corner relief or handed end trim is needed, trim from the installed sample and duplicate that side only after confirmation.
+
+First-article check before full batch:
+- Strip sits flat between the tub underside landing and the support bracket with no overhang onto weld lips or thin rust edges.
+- Clamp pressure is even and the strip does not buckle.
+- The reused or remade steel retainer covers the same load path as the original piece.
 
 ## Tools Needed At Fabricator
 
@@ -367,7 +381,7 @@ Before accepting the batch:
 | `BM-SM/BM-LG` centre bore | Must match sleeve/cup register | Calipers on old bore and cup boss |
 | `BM-SM` one-piece vs split-stack construction | External `8.4104` reference separates `4145` medium bushings from `4146` bushing seats | Disassemble/inspect old sample and measure pieces individually |
 | `FS-OVAL` hole spacing and insert OD | Off-plane top photo and corroded insert make image-only reading risky | Calipers on physical pad/insert |
-| `FS-STRIP-L/R` final outline and hole centres | Old strip is curled and torn | Physical template from sample and metal carrier |
+| `FS-STRIP-L/R` local handed trim and steel retainer remake | Rubber size is now released, but any side-specific end trim or replacement steel retainer still comes from the physical sample | Dry-fit on the actual landing and direct trace from the original steel if the retainer must be remade |
 | Station count and large-pair location | Pre-1/79 pattern is the working basis, but the car may have prior repairs | Mount map during tub dry-fit |
 | Toyota `NO.1` to `NO.5` OE station mapping | OE listing does not reduce cleanly to the current photo-only `BM-SM/BM-LG` family count | Label every body/chassis mount position and reconcile against `data/manual/rubber_recreation_toyota_oe_cross_reference.csv` |
 | OE shim/spacer thickness | Some Toyota spacer rows publish thickness, but most cushion spacers do not | Use Toyota thickness rows where available; measure original spacers and shims before copying |

@@ -8,8 +8,8 @@ Source data: [fabrication_raw_material_estimates.csv](../data/manual/fabrication
 
 | Procurement row | Workstream | Material | Estimate |
 | --- | --- | --- | --- |
-| `part_fabrication_raw_mild_steel_plate_3mm_20260513` | Fabrication | `3.0 mm` mild-steel sheet/plate plus `90-degree` angle/L-section stock | 1 sheet at least `600 x 600 mm`; `1000 x 500 mm` is acceptable/preferred if similarly priced. Add `25 x 25 x 3 mm` or `30 x 30 x 3 mm` mild-steel angle, `3 m` total, for tray/access-ladder rails and upstands. |
-| `part_fabrication_raw_mild_steel_plate_4mm_20260513` | Fabrication | `4.0 mm` mild-steel plate plus structural `90-degree` angle/L-section stock | 1 plate at least `700 x 450 mm`; nearest stock size `1000 x 500` is acceptable. Add `50 x 50 x 4 mm` angle, `1 m`, for the radiator post; `40 x 40 x 4 mm` angle, `2 m`, for battery stand/upright mock-up if available; final crush-tube sleeve stock waits for bolt-size confirmation. |
+| `part_fabrication_raw_mild_steel_plate_3mm_20260513` | Fabrication | `3.0 mm` mild-steel sheet/plate plus `90-degree` angle/L-section stock | 1 sheet at least `600 x 600 mm`; `1000 x 500 mm` is acceptable/preferred if similarly priced. Add `25 x 25 x 3 mm` or `30 x 30 x 3 mm` mild-steel angle, `3 m` total, for tray/access-ladder rails, upstands, and light EPS General Adapter tabs/templates. |
+| `part_fabrication_raw_mild_steel_plate_4mm_20260513` | Fabrication | `4.0 mm` mild-steel plate plus structural `90-degree` angle/L-section stock | 1 plate at least `700 x 450 mm`; nearest stock size `1000 x 500` is acceptable. Add `50 x 50 x 4 mm` angle, `1 m`, for the radiator post; `40 x 40 x 4 mm` angle, `2 m`, for battery stand/upright and EPS adapter cradle mock-up if available; final crush-tube sleeve stock waits for bolt-size confirmation. |
 | `part_fabrication_raw_aluminium_plate_3mm_20260513` | Fabrication | `3.0 mm` 5052-H32 aluminium sheet | `600 x 600 mm` minimum for the current MIDI Rev D enclosure body/lid, Relay Rev D `360 x 245` flat base, and folded cutoff base/guard with `20 mm` upward lips. |
 | `part_fabrication_raw_electrical_plastic_sheet_20260513` | Fabrication | Electrical insulating board/sheet | `5.0 mm` board at least `200 x 150 mm` for the MIDI subplate, plus `3.0 mm` sheet at least `350 x 250 mm` for the Relay Rev D insulating sheet. |
 | `part_fabrication_raw_epdm_sheet_small_isolators_20260513` | Fabrication / chassis fixing | `3-5 mm` EPDM/SBR sheet | 1 small sheet at least `300 x 300 mm`. |
@@ -30,8 +30,9 @@ These are already in procurement and were not duplicated:
 
 ## Guardrails
 
-- Do not consume the battery/radiator fabrication steel for tub repair patches; the tub has separate sheet and plate rows.
+- Do not consume the battery/radiator/EPS adapter fabrication steel for tub repair patches; the tub has separate sheet and plate rows.
 - Do not fabricate the battery stand from aluminium. The current route is steel for the compact tray, widened front/radiator access-ladder spine, top-front shelf/pickup tabs, formed chassis saddle, upright bridge, and adjustable offset bars; the aluminium stock covers the MIDI Rev D enclosure body/lid, Relay Rev D flat base, and folded cutoff base/guard only.
 - Use pre-formed `90-degree` steel angle/L-section wherever it simplifies tray edges, access-ladder rails, the radiator post, or stand bridge trials. Do not drop the flat sheet/plate requirement unless the deck, chassis saddle, and mounting faces are separately redesigned.
+- The EPS General Adapter is now allowed to draw from this steel stock for measured datum plates, firewall doubler/spreader plates, saddle/clamp trials, clocking/spacer plates, and gussets. If adapter mock-up consumes more than trial coupons and small released pieces, reopen the stock estimate before cutting battery/radiator parts.
 - Do not reopen chassis-rubber ordering under Fabrication. Chassis rubbers stay under the chassis-rubber/body-mount rows above.
 - Final tub patch shapes remain measurement controlled after cleaning and rust-map photos.

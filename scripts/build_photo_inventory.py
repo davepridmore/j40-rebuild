@@ -1235,6 +1235,12 @@ RUBBER_RECREATION_20260517_FILES = (
     "20260517_193616_gp_1ye19BZA.jpg",
 )
 
+RUBBER_RECREATION_20260517_FLAT_PAD_MEASUREMENT_FILES = (
+    "20260517_194143_gp_CO7MuMdA.jpg",
+    "20260517_194633_gp_rAjY3gjg.jpg",
+    "20260517_194706_gp_twKRWGFA.jpg",
+)
+
 WINDOW_REFURBISHMENT_20260517_FRONT_VENT_FILES = (
     "20260517_193803_gp_1KhFjceQ.jpg",
     "20260517_193837_gp_AERCJIrw.jpg",
@@ -1634,6 +1640,29 @@ FILE_OVERRIDES.update(
             "May 17 user-selected long rubber strip/channel measurement reference for rubber fabrication; use as shape and scale evidence only until the physical part/location trace is confirmed.",
         )
         for file_name in RUBBER_RECREATION_20260517_FILES
+    }
+)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "procurement_inventory",
+            "rubber_parts_recreation_samples",
+            "fabrication_measurement",
+            "vehicle_side_flat_rubber_measurement_reference",
+            "high",
+            (
+                "rubber",
+                "body_mount",
+                "flat_pad",
+                "measurement",
+                "tape_reference",
+                "vehicle_side",
+                "recreation",
+                "fabrication",
+            ),
+            "May 17 vehicle-side body-mount measurement photo for the additional flat rubber requirement; use for pad footprint and stack-height planning, but keep final side/station labels, sleeve checks, and dry-stack confirmation open.",
+        )
+        for file_name in RUBBER_RECREATION_20260517_FLAT_PAD_MEASUREMENT_FILES
     }
 )
 FILE_OVERRIDES.update(
@@ -2908,6 +2937,110 @@ FILE_OVERRIDES.update(
                 "electrical_refit",
             ),
             "Google Photos May 17 wide measurement photo across existing cabin-to-engine firewall openings. Use to map hole positions against steering, pedals, and planned loom or control-cable routing.",
+        ),
+    }
+)
+
+FILE_OVERRIDES.update(
+    {
+        "20260523_222923_gp_nZMVhWQg.jpg": c(
+            "removable_panels",
+            "returned_painted_inner_panels_or_splash_shields",
+            "hardware_refinish",
+            "refinished_off_vehicle_received",
+            "high",
+            ("painted", "returned", "received", "panel", "splash_shield", "black"),
+            "Google Photos May 23 returned painted parts receipt evidence; black refinished inner panel or splash-shield piece off vehicle.",
+        ),
+        "20260523_222939_gp_8284Aubw.jpg": c(
+            "removable_panels",
+            "returned_painted_inner_panels_or_splash_shields",
+            "hardware_refinish",
+            "refinished_off_vehicle_received",
+            "high",
+            ("painted", "returned", "received", "panel", "splash_shield", "black"),
+            "Google Photos May 23 returned painted parts receipt evidence; black refinished inner panel or splash-shield piece off vehicle.",
+        ),
+        "20260523_223012_gp_8OUV7efg.jpg": c(
+            "removable_panels",
+            "returned_painted_front_wings",
+            "hardware_refinish",
+            "refinished_off_vehicle_received",
+            "high",
+            ("painted", "returned", "received", "front_wing", "panel"),
+            "Google Photos May 23 returned painted parts receipt evidence; refinished front wing/panel shown off vehicle.",
+        ),
+        "20260523_223049_gp_fMBUKOUA.jpg": c(
+            "removable_panels",
+            "returned_painted_front_wings",
+            "hardware_refinish",
+            "refinished_off_vehicle_received",
+            "high",
+            ("painted", "returned", "received", "front_wing", "panel", "inner_face"),
+            "Google Photos May 23 returned painted parts receipt evidence; front wing/panel inner face shown after refinish.",
+        ),
+        "20260523_223504_gp_F0FomIPA.jpg": c(
+            "body_exterior",
+            "returned_painted_front_panel_headlamp_surround",
+            "hardware_refinish",
+            "refinished_off_vehicle_received",
+            "high",
+            ("painted", "returned", "received", "front_panel", "headlamp_surround"),
+            "Google Photos May 23 returned painted parts receipt evidence; refinished front/headlamp surround panel off vehicle.",
+        ),
+        "20260523_223518_gp_f6ReoLCg.jpg": c(
+            "body_exterior",
+            "returned_painted_front_panel_headlamp_surround",
+            "hardware_refinish",
+            "refinished_off_vehicle_received",
+            "high",
+            ("painted", "returned", "received", "front_panel", "headlamp_surround"),
+            "Google Photos May 23 returned painted parts receipt evidence; refinished front/headlamp surround panel off vehicle.",
+        ),
+        "20260523_223705_gp_JYXnfgoQ.jpg": c(
+            "removable_panels",
+            "returned_painted_front_wings",
+            "hardware_refinish",
+            "refinished_off_vehicle_received",
+            "high",
+            ("painted", "returned", "received", "front_wing", "panel"),
+            "Google Photos May 23 returned painted parts receipt evidence; refinished front wing/panel shown off vehicle.",
+        ),
+        "20260523_223717_gp_FfANRAeQ.jpg": c(
+            "removable_panels",
+            "returned_painted_front_wings",
+            "hardware_refinish",
+            "refinished_off_vehicle_received",
+            "high",
+            ("painted", "returned", "received", "front_wing", "panel", "inner_face"),
+            "Google Photos May 23 returned painted parts receipt evidence; front wing/panel inner face shown after refinish.",
+        ),
+        "20260523_223733_gp_MnEIyxVA.jpg": c(
+            "removable_panels",
+            "returned_painted_brackets_and_trim",
+            "hardware_refinish",
+            "refinished_off_vehicle_received",
+            "high",
+            ("painted", "returned", "received", "brackets", "trim", "black"),
+            "Google Photos May 23 returned painted parts receipt evidence; refinished black brackets/trim pieces off vehicle.",
+        ),
+        "20260523_224042_gp_J1g4JmyA.jpg": c(
+            "removable_panels",
+            "returned_painted_body_trim",
+            "hardware_refinish",
+            "refinished_off_vehicle_received",
+            "high",
+            ("painted", "returned", "received", "body_trim", "pillar_trim"),
+            "Google Photos May 23 returned painted parts receipt evidence; refinished body trim piece off vehicle.",
+        ),
+        "20260523_224101_gp_EpoF4CwQ.jpg": c(
+            "removable_panels",
+            "returned_painted_body_trim",
+            "hardware_refinish",
+            "refinished_off_vehicle_received",
+            "high",
+            ("painted", "returned", "received", "body_trim", "pillar_trim"),
+            "Google Photos May 23 returned painted parts receipt evidence; refinished body trim piece off vehicle.",
         ),
     }
 )

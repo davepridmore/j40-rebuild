@@ -17,7 +17,7 @@ High-signal contacts captured:
 - Usman Roof Poshish 3M: interior upholstery, carpets and roof work.
 - Coolsun / Cool Sun 2: A/C diagnosis and HVAC support.
 - Nadir via Hassan: mechanical/body rebuild advice and sourcing path.
-- Atif in J40 parts group: Vitz/Yaris EPS donor stack lead.
+- Atif in J40 parts group: Vitz/Yaris EPS donor stack lead; donor geometry now feeds the General EPS Adapter mock-up rather than a direct-bracket install.
 - Nazim at Cavalry Grounds: tyre removal, rim check/refinish and balancing.
 - Longman: candidate quote target for pipe/hose/rubber lines.
 - Brandreth Road and Umair/ex-partner lead: fabrication stock, industrial goods and workshop equipment.
@@ -26,7 +26,7 @@ Reference ideas captured:
 
 - Islamabad 1965/1973 original-spec FJ restorations as body/chassis finish benchmark.
 - Carnation Civic before/after engine-bay and wiring cleanup as workmanship benchmark.
-- 2005-2011 SCP90/NCP90 Vitz/Yaris EPS stack as the active EPS donor target.
+- 2005-2011 SCP90/NCP90 Vitz/Yaris EPS stack as the active EPS donor target, with J40 installation controlled by the General EPS Adapter fabrication plan.
 - Early-2000s Vitz manual A/C donor package for hidden HVAC planning.
 - FJ Audio 9 inch screen and switch layout constraints.
 - Longman chassis-rubber and replacement-pipe quote path.

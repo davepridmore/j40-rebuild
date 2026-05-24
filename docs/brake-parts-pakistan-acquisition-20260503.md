@@ -2,6 +2,10 @@
 
 Purpose: buying links and local-market order text for the J40 brake refresh. This is a purchasing companion to `docs/brake-parts-acquisition-spec-20260503.md`.
 
+Sourcing rule from 2026-05-24: prefer local/catalog Pakistan suppliers, local brake machine work, and old-sample matching. Overseas listings are part-number/spec references only; do not use expensive imports unless explicitly approved.
+
+Buying order correction from 2026-05-24: quote the cheaper brake-line route first using [brake-line-cheap-sourcing-20260524.md](brake-line-cheap-sourcing-20260524.md). Do not buy more rear brake wear parts before the hard-line tube/fittings/fabrication quote is known.
+
 ## Buy Online Now
 
 Use these for the hydraulic-opening prep package. Buy sealed, new stock only.
@@ -63,6 +67,8 @@ Retrofit fallback wording if no direct-fit unit is found:
 
 ## Local Market Order - Rear Parking Brake Cable Set
 
+Local/catalog first reference: Toyota `46410-60092` appears to be the candidate parking-brake cable family for 3/1976-12/1978 FJ40/FJ45, but do not pay until the old cables are removed and matched.
+
 > Need rear parking-brake / handbrake cable set for a 1978 Toyota Land Cruiser J40 with rear drum brakes.
 > Quote only until old cables are removed and measured.
 > Must match:
@@ -75,6 +81,8 @@ Retrofit fallback wording if no direct-fit unit is found:
 > Must be new cable assemblies with new/clean matching hardware. Old cables are length/end samples only; do not buy or reuse used, seized, frayed, or rusty cable assemblies.
 
 ## Local Market Order - Rear Drum Brake Parts
+
+Buy locally first. Use imported catalog numbers only as reference/search terms: rear wheel cylinders `47550-69075`, `47560-69055`, `47570-69065`, `47580-69055`; rear center hose `553-103`; shoe/hardware references `549-163`, `551-113`, `A16`, and SOR `081-02C-KIT`. Rear drums should be measured and machined/replaced locally before considering any import.
 
 > Need rear drum brake service parts for 1978 Toyota Land Cruiser J40.
 > Quote only until drums are opened and old samples are compared.

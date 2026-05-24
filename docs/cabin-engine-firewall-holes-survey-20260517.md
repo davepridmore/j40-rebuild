@@ -19,6 +19,15 @@ No new wire or control cable goes through bare sheet metal. Every reused hole ne
 
 Machine-readable sheet: `data/manual/cabin_engine_firewall_holes_survey_20260517.csv`.
 
+## Attachment / Routing Map
+
+| Hole | What It Does | Where It Attaches / Routes |
+| --- | --- | --- |
+| `FEH-001` | Main candidate protected cabin-to-engine pass-through for loom or control cable routing. | Reuse only after a correct grommet or bulkhead fitting is installed; secure the branch to cabin-side and engine-bay clips so the wire/cable never bears on the hole edge. |
+| `FEH-002` | Existing upper small/irregular opening with unclear original purpose. | Attach nothing here until the purpose is proven. If unused, fit a sealed blanking plug or weld-close it before final insulation and trim. |
+| `FEH-003` | Steering-column boot and movement-clearance zone. | No electrical attachment point. Keep looms and control cables clipped away from the boot, steering column, and pedal sweep. |
+| `FEH-004` | Secondary lower/side route candidate and location context. | Use only after square-on measurement, engine-side obstruction check, edge protection, seal choice, and strain relief plan are complete. |
+
 ## Refit Decisions
 
 - Prefer existing holes only if they are round, clean, measurable, and can take a proper grommet or bulkhead fitting.

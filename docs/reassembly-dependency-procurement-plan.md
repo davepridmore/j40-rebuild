@@ -1,6 +1,6 @@
 # Reassembly, Dependency, and Procurement Plan
 
-- Generated: 2026-05-18 09:34:36
+- Generated: 2026-05-24 05:47:15
 - Work packages: `data/manual/reassembly_work_packages.csv`
 - Dependency edges: `data/manual/reassembly_dependency_edges.csv`
 - Component disposition: `data/manual/component_disposition_plan.csv`
@@ -25,15 +25,15 @@
 
 ## Procurement Decisions
 
-- `buy_now`: 12
+- `buy_now`: 16
 - `buy_remaining_brake_bleed_consumables`: 1
 - `capture_body_hardware_samples_then_order`: 6
-- `capture_spec_then_buy`: 13
+- `capture_spec_then_buy`: 12
 - `confirm_price_then_buy`: 23
 - `defer_duplicate_overlap`: 4
 - `defer_optional`: 1
 - `hold_until_body_closed`: 1
-- `inspect_confirm_then_buy_standard`: 4
+- `inspect_confirm_then_buy_standard`: 2
 - `research_compare_then_select`: 1
 - `review`: 2
 - `track_ordered_delivery`: 5
@@ -45,7 +45,7 @@
 - `refurbish_send_out`: 4
 - `refurbish_service_subcomponents`: 2
 - `remove_nonbaseline_and_refit_clean`: 1
-- `review`: 58
+- `review`: 59
 
 ## Immediate Execution Focus
 
@@ -53,7 +53,7 @@
 - Use `data/raw/imports/J40.jpg` as the WP03 viewable wiring diagram and keep `data/raw/imports/J40.graffle` as the editable source; export a fresh JPG after any diagram change.
 - Work WP03 from `data/manual/electrical_diagram_reconciliation_20260518.csv`: close the firewall/pass-through, connector/pinout, heavy-cable stock, HVAC, EPS, fuel-stop, and rear-camera holds before final wrap.
 - Hold final chassis primer/Raptor until the bracket work plan closes: analysis register, design release, radiator/battery/auxiliary/exhaust implementation, and validation photos.
-- Run `WP04` procurement now: 36 mechanical rows still require buy execution.
+- Run `WP04` procurement now: 37 mechanical rows still require buy execution.
 - Run `GB-TOP-CAPTURE-001` before buying gearbox top-cover service parts; current top cover must be approved, repaired, or replaced as a matched assembly first.
 - Close `DIFF-CAPTURE-001` during the rear brake/suspension window before axle coating, alignment, or road validation.
 - Avoid duplicate buys: 3 rows are flagged as likely already on hand and should be physically stock-checked first.

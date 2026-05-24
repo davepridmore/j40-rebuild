@@ -32,8 +32,8 @@ Preferred custom shape for the main pads is square. Release trimming only if a l
 | `BM-ISO-SM` | Quote ready, drill after sleeve measurement | `10 + 2 spares` | Square pad `70 x 70 x 22 mm`, flat parallel faces, light edge radius/chamfer, Shore A `60 +/-5`. | Confirm each station has enough flat footprint; final hole = sleeve OD + `0.5-1.0 mm`. |
 | `BM-ISO-LG` | Quote ready, drill after sleeve measurement | `2 + 1 spare` | Square pad `80 x 80 x 24 mm`, flat parallel faces, light edge radius/chamfer, same compound batch as small pads if possible. | Confirm the large-pair station; final hole = sleeve OD + `0.5-1.0 mm`. |
 | `FS-OVAL` | Quote ready, caliper before production | `2` | Oval/capsule pad `96 x 64 x 15 mm`, two `12 mm` holes at `64 mm` centres; rectangular relief only if old sample confirms it is functional. | Confirm hole centres, thickness, insert/boss/relief construction. |
-| `FS-STRIP-L` | Hold, candidate only | Hold | Working quote envelope `165 x 40 mm`; base `8 mm`; raised/load pad `14 mm`. | Must be confirmed by physical front-support carrier or installed location trace before cutting. Current image evidence is mixed with bump-stop fragments. |
-| `FS-STRIP-R` | Hold, candidate only | Hold | Mirror of left only if the right-side carrier proves symmetric. | Same hold as left; mark handedness and hole centres from carrier, not torn rubber. |
+| `FS-STRIP-L` | Custom first article ready | `1` | Flat underfloor body-support strip `165 x 38 x 8 mm`; no through-holes in the rubber by default; Shore A `60 +/-5`. | Dry-fit on the actual landing, then apply any side-specific end trim; reuse or trace the slotted steel retainer separately if needed. |
+| `FS-STRIP-R` | Custom first article ready | `1` | Same flat strip spec as left. Use the same blank unless the right side proves a handed end trim. | Same first-article dry-fit and retainer rule as left. |
 | `BUMP-60010-LONG` | First article required | `3` | Toyota-style long bump stop, free height `70 +/-1 mm`, progressive tapered/radiused body, two-ear steel saddle/backing, flat rectangular strike face. | Vehicle bracket controls BL/BW/P/D/X-Y/G/F; make one first article before remaining long stops. |
 | `BUMP-60020-SHORT` | First article required | `1` | Toyota-style short right-front bump stop, free height `60 +/-1 mm`; do not make it `70 mm` unless a deliberate full-bump test releases trimming. | Right-front bracket and axle strike pad control base, hole pattern, and contact face. |
 | `BODY-LINER-FULL-WIDTH-HOLD` | Not captured yet | Hold | Possible long/full-width flat body or panel liner strips. | Do not order until the pieces are found or a vehicle station proves a continuous flat anti-squeak liner is required. |
@@ -46,21 +46,29 @@ Known current rubber pieces:
 - Main body isolator pads: required, but now specified as square flat custom pads instead of circular/register bushings.
 - Two-hole front-support oval pads: required by old sample/photo trail, subject to caliper confirmation.
 - Axle bump stops: required if missing/decayed; height split is externally controlled as `70 mm` long stops for front-left/rear pair and `60 mm` short stop for front-right.
+- `FS-STRIP-L/R` flat strip pair: now evidenced by the May 17 loose-part photos plus installed-location photos. Treat these as custom underfloor body-support / anti-squeak strips, not generic body-mount biscuits.
 
 Candidate or unproven pieces:
 
-- `FS-STRIP-L/R` front-support strip/liner pieces are not production-released. The loose-part photo trail suggests a possible strip or bonded liner, but the dashboard image currently used for the right strip is also the best evidence for broken bump stops. Treat the strip rows as a measurement hold until a physical carrier, installed location, or clean old strip proves them.
 - Possible longer full-body-width flat pieces are not yet captured as orderable parts. They may be anti-squeak liners, panel-to-panel strips, packing pieces, or body support rubbers, but there is not enough evidence to assign quantity or dimensions.
 
 ## Photo Correction
 
-The current dashboard page had the front-support strip/liner rows mixed up with bump-stop fragments:
+The old strip rows had been mixed up with bump-stop evidence. The May 17 photo set resolves that:
 
-- `20260502_004222_gp_PKRe5HSQ.jpg` should be treated as bump-stop fragment evidence first, not a released right strip/liner master.
-- `20260502_004201_gp_zfUSmKJg.jpg` supports the bump-stop vertical/scale view and should not release the left strip/liner shape on its own.
-- `FS-STRIP-L/R` should use the blank template/trace route until a clean physical trace exists.
+- `20260502_004222_gp_PKRe5HSQ.jpg` and `20260502_004201_gp_zfUSmKJg.jpg` remain bump-stop evidence first.
+- `20260517_194143_gp_CO7MuMdA`, `20260517_194633_gp_rAjY3gjg`, and `20260517_194706_gp_twKRWGFA` are the installed-location proof for the flat strip pair.
+- `20260517_193503_gp_N9nHjqXw`, `20260517_193539_gp_E0cR9I0A`, `20260517_193559_gp_NEpk1hpg`, `20260517_193612_gp_JmbfR0Tw`, and `20260517_193616_gp_1ye19BZA` are the loose-part measurement references.
 
-Use these bump-stop photos only as broken-shape evidence. They do not release the bolt pitch, base footprint, or strike-face offset.
+## External Control Notes
+
+Open-catalog checks support custom recreation of the strip pair rather than substitution from a standard body-mount kit:
+
+- ToyotaPartsDeal `Cab Mounting & Body Mounting` for a 1978 Land Cruiser exposes the normal cushion/spacer/shim/holder rows, but not an open-catalog equivalent to this short underfloor strip.
+- SOR `Body Mounts` likewise focuses on the standard large/small body-mount families and hardware.
+- Aqualu's early-frame note also reinforces that the common body-mount discussion is about separate mount pads, not this strip-retainer arrangement.
+
+Use those sources only as context. The actual released strip geometry is controlled by the May 17 loose-part and installed-location photos plus the original samples.
 
 ## Separated Hardware
 
@@ -97,14 +105,12 @@ For every station:
 - Photo/measurement of insert, boss, washer imprint, or relief.
 - Confirmation whether the rectangular relief is functional or old deformation.
 
-### Front-Support Strip/Liner Holds
+### Underfloor Body-Support Strip Pair
 
-- Photo of the physical carrier or installed location proving the strip exists.
-- Trace of left and right pieces on card or acetate.
-- Orientation marks: side, front/rear, up/down.
-- Total length, width at three points, base thickness, raised-pad height.
-- Hole centres from the steel carrier, not the torn rubber.
-- Bonded/loose/clipped status and cleaned carrier photos if bonded.
+- Released first-article rubber size is `165 x 38 x 8 mm`.
+- Confirm only the local handed end trim, if any, during dry-fit.
+- Hole or slot geometry belongs to the steel retainer, not automatically to the rubber.
+- Reuse or trace the original slotted steel retainers if they are not serviceable.
 
 ### Long / Full-Width Flat Liner Holds
 

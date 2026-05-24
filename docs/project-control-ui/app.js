@@ -4782,8 +4782,8 @@
       {
         id: "eps",
         title: "EPS",
-        description: "Only the 2005-2011 Vitz/Yaris SCP90/NCP90 complete EPS kit is a buy candidate.",
-        chips: ["SCP90/NCP90 only", "Bench-test before payment", "Complete matched kit"],
+        description: "Only the 2005-2011 Vitz/Yaris SCP90/NCP90 complete EPS kit is a buy candidate; J40 fitment is through the General EPS Adapter route.",
+        chips: ["SCP90/NCP90 only", "Bench-test before payment", "General adapter geometry"],
         parts: epsParts,
         marketSpecs: attachScoutImage(
           dedupeScoutRows(epsMarketSpecs),
@@ -5529,7 +5529,8 @@
       return `<span class="small-muted">${escapeHtml(cleanString(row && row.photo_refs) ? "photo not found" : "photo needed")}</span>`;
     }
     const sequenceId = createImageSequence();
-    const fallbackCaption = cleanString(row && row.input_name) || "Electrical input evidence";
+    const fallbackCaption =
+      cleanString(row && row.input_name) || cleanString(row && row.hole_id) || cleanString(row && row.visible_area) || "Electrical refit evidence";
     return `
       <div class="requirement-evidence-grid">
         ${images
@@ -5608,6 +5609,7 @@
     const connectorRows = Array.isArray(spec.connector_quick_lookup) ? spec.connector_quick_lookup : [];
     const loomRows = Array.isArray(spec.loom_quick_lookup) ? spec.loom_quick_lookup : [];
     const engineInputRows = Array.isArray(spec.engine_input_reconciliation) ? spec.engine_input_reconciliation : [];
+    const firewallPassThroughRows = Array.isArray(spec.firewall_pass_through_survey) ? spec.firewall_pass_through_survey : [];
     const diagramRows = Array.isArray(spec.diagram_reconciliation) ? spec.diagram_reconciliation : [];
 
     return `
@@ -5638,12 +5640,26 @@
           { key: "input_id", label: "ID", kind: "token" },
           { key: "input_name", label: "Input / Location" },
           { key: "identified_function_or_status", label: "Purpose / Status" },
-          { key: "next_connected_to", label: "Next Connected To" },
+          { key: "next_connected_to", label: "Attach / Terminate To" },
           { key: "confidence", label: "Confidence", kind: "token" },
           { key: "verification_before_connection", label: "How To Prove" },
           { key: "refit_action", label: "Refit Action" },
         ],
         engineInputRows
+      )}
+
+      ${renderElectricalTable(
+        "Firewall Pass-Through Attachment Plan",
+        [
+          { key: "evidence_images", label: "Image", kind: "images" },
+          { key: "hole_id", label: "ID", kind: "token" },
+          { key: "visible_area", label: "Location" },
+          { key: "what_it_does", label: "What It Does" },
+          { key: "attach_or_route_to", label: "Attach / Route To" },
+          { key: "refit_decision", label: "Refit Decision" },
+          { key: "verification_required", label: "How To Prove" },
+        ],
+        firewallPassThroughRows
       )}
 
       ${renderElectricalTable(

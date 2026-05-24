@@ -87,6 +87,18 @@ SEARCH_OR_COLLECTION_HINTS = (
 
 SOURCE_URL_OVERRIDES: dict[tuple[str, str], tuple[str, ...]] = {
     (
+        "workbook_tools",
+        "row_16",
+    ): (
+        "https://www.toolsmart.pk/products/harden-pro-grease-gunsize500cc",
+    ),
+    (
+        "workbook_tools",
+        "row_17",
+    ): (
+        "https://www.toolsmart.pk/products/ingco-heat-gun-2000w-hg200078",
+    ),
+    (
         "workbook_parts",
         "row_64",
     ): (
@@ -133,6 +145,30 @@ SOURCE_URL_OVERRIDES: dict[tuple[str, str], tuple[str, ...]] = {
         "tool_powerhouse_ingco_wb30501_wire_cup_brush_x3",
     ): (
         "https://cdn.shopify.com/s/files/1/0726/3541/6891/files/ingco-wb30501-wire-cup-brush_compact_cropped.webp?v=1746223167",
+    ),
+    (
+        "expenses",
+        "tool_grease_gun",
+    ): (
+        "https://www.toolsmart.pk/products/harden-pro-grease-gunsize500cc",
+    ),
+    (
+        "expenses",
+        "tool_metric_flare_nut_wrench_set_20260514",
+    ): (
+        "https://www.toolsmart.pk/products/licota-flare-nut-wrench-12-x-14",
+    ),
+    (
+        "expenses",
+        "tool_large_bore_nitto_air_hose_impact_followup_20260517",
+    ): (
+        "https://www.toolsmart.pk/products/licota-pu-hose-roll-8-12mm-9m-w-nitto-type-quick-coupler",
+    ),
+    (
+        "expenses",
+        "tool_toolsmart_ingco_heavy_duty_cable_cutter_250mm_hhccb0210_20260523",
+    ): (
+        "https://www.toolsmart.pk/products/ingco-heavy-duty-cable-cutter-250mm-hhccb0210",
     ),
     (
         "expenses",
@@ -628,6 +664,22 @@ def parse_meta_image_candidates(html_text: str) -> list[str]:
     return candidates
 
 
+def is_placeholder_image_url(url: str) -> bool:
+    lowered = url.lower()
+    return any(
+        token in lowered
+        for token in (
+            "no-image",
+            "no_image",
+            "placeholder",
+            "logo",
+            "icon",
+            "sprite",
+            "favicon",
+        )
+    )
+
+
 def score_image_url(url: str) -> tuple[int, int]:
     lowered = url.lower()
     score = 0
@@ -662,7 +714,7 @@ def resolve_listing_image_urls(listing_url: str) -> tuple[list[str], str]:
         return [cleaned_url], "direct_image_url"
 
     payload, content_type = fetch_bytes(cleaned_url)
-    if content_type.startswith("image/"):
+    if content_type.startswith("image/") and not is_placeholder_image_url(cleaned_url):
         return [cleaned_url], "direct_image_response"
 
     text = payload.decode("utf-8", errors="ignore")
@@ -674,6 +726,10 @@ def resolve_listing_image_urls(listing_url: str) -> tuple[list[str], str]:
         if absolute in seen:
             continue
         if not absolute.startswith("http"):
+            continue
+        if not IMAGE_URL_HINT.search(absolute):
+            continue
+        if is_placeholder_image_url(absolute):
             continue
         seen.add(absolute)
         candidates.append(absolute)

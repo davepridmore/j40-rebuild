@@ -1,6 +1,6 @@
 # EPS Kit Market Checklist (Bilal Ganj)
 
-Date: 2026-04-15  
+Date: 2026-05-22  
 Scope: Market scouting and pre-payment buy/no-buy decision only.
 
 ## What To Ask For
@@ -21,7 +21,9 @@ The set must be a matched donor set: column, controller/ECU, connectors, shafts,
 
 Electrical cable rule: donor pigtails are required for connector identification and bench testing only. Final EPS power, ground, ignition-trigger, protection, and loom wiring must use new automotive cable, terminals, sleeving, and fuse protection.
 
-Install planning note: after procurement, use `docs/eps-vitz-conversion-fabrication-plan.md` to control the J40-specific column layout, support bracket/cradle, shaft/U-joint adaptation, controller mounting, wiring protection, and validation checks. The donor brackets and support plates are reference/adaptation pieces, not assumed bolt-on J40 parts.
+Install planning note: after procurement, use `docs/eps-vitz-conversion-fabrication-plan.md` to control the J40-specific General EPS Adapter, column layout, shaft/U-joint adaptation, controller mounting, wiring protection, and validation checks. The donor brackets and support plates are reference pieces only; the J40 fit is released from the fabricated adapter mock-up, not from donor bracket geometry.
+
+General adapter clarification: do not pay extra for a generic "universal EPS adapter" unless it is only being bought as raw fabrication reference. The adapter for this truck is a measured J40-specific subassembly: vehicle-side datum plate, firewall doubler/spreader, EPS saddle/clamp, clocking/spacer plates, replaceable shaft interfaces, and serviceable controller/fastener access. It must be fabricated after the donor unit and J40 column/firewall/steering-box centerlines are measured.
 
 ## Accept/Reject Checklist (On-Site)
 
@@ -44,6 +46,7 @@ Use this as a hard gate before payment.
 | Seller can identify heavy power, ground, and ignition-trigger wires for bench check | Yes | ☐ |
 | Fasteners for brackets/couplers | Yes | ☐ |
 | Readable column and ECU part-number labels | Yes | ☐ |
+| Donor brackets photographed for adapter reference, not assumed J40 bolt-on fit | Yes | ☐ |
 
 ## Bench Test (Mandatory)
 
@@ -76,6 +79,8 @@ Use this as a hard gate before payment.
 - Overall column length, shaft end to shaft end: `________________`
 - Motor/gearbox widest clearance envelope: `________________`
 - Column body OD / bracket spacing: `________________`
+- Donor bracket hole spacing and saddle/clamp shape for General EPS Adapter reference: `________________`
+- Input/output shaft centerline offset relative to donor bracket faces: `________________`
 - Connector pin count (main + signal): `________________`
 - Warranty/return window (days): `________________`
 - Seller contact + stall location: `________________`
@@ -87,6 +92,7 @@ Use this as a hard gate before payment.
 - Every connector and pigtail.
 - Input and output spline ends.
 - Brackets/firewall support.
+- Bracket hole spacing, saddle/clamp area, and motor clocking faces for General EPS Adapter mock-up.
 - Short bench-test video showing assisted rotation both directions.
 
 ## Price Guidance
@@ -96,6 +102,7 @@ Use this as a hard gate before payment.
 - Total value range: `PKR 54,000 - 136,000`
 - Working midpoint / total target for negotiation: `PKR 90,000`
 - Reject partial kits for this build unless explicitly approved after quote; do not pay complete-kit price for missing shafts, brackets, ECU, or connectors.
+- General EPS Adapter fabrication labour/material top-up is separate from the donor-kit price and must wait for the measured mock-up.
 
 ## Pre-Payment Notes
 

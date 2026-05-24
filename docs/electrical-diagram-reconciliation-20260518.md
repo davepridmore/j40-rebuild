@@ -27,9 +27,9 @@ The Graffle file was parsed directly and yielded 140 diagram labels. The reconci
 - The diagram does not assign firewall hole IDs, grommet sizes, or reuse/closure decisions; the firewall survey remains controlling for pass-throughs.
 - The diagram does not replace X1-X10 connector and pin continuity records.
 - Heavy cable sizes shown in the diagram must be reconciled against physical stock and installed route lengths before buying more cable.
-- Rear-view camera, stereo, EPS, HVAC, and other convenience/upgrade circuits stay gated behind their specific workstream and procurement decisions.
+- Rear-view camera, stereo, EPS, HVAC, and other convenience/upgrade circuits stay gated behind their specific workstream and procurement decisions. EPS wiring also waits for the General EPS Adapter mock-up so controller access and protected pass-through routing are proven before final loom closure.
 - Fuel-stop and diesel shutdown behavior must be proven live with the manual cutoff retained as backup.
 
 ## Dashboard Impact
 
-The dashboard now exposes the reconciliation table inside the Electrical Specs and Layout section, and the workstream evidence still uses `J40.jpg` as the visible wiring diagram image.
+The dashboard now exposes the reconciliation table inside the Electrical Specs and Layout section, the engine input attachment/termination map, and the firewall pass-through attachment plan. The workstream evidence still uses `J40.jpg` as the visible wiring diagram image.

@@ -92,11 +92,11 @@ Proposed design hierarchy:
 1. steering rebuild and wear-item correction
 2. ordered Ironman Foamcell kit content check and suspension installation
 3. brake baseline
-4. power steering conversion if justified by packaging and budget
+4. column-assist EPS conversion through the General EPS Adapter route if packaging, fabrication, and safety gates close
 5. final ride-height, caster, and alignment validation
 
 Design interpretation:
-- power steering is a real design goal, not just a repair item
+- power steering is a real design goal, not just a repair item; the current route is column-assist EPS using a measured General EPS Adapter rather than hydraulic steering
 - the Ironman Foamcell kit is now the suspension baseline
 - front disc brakes fit the “usable classic” direction
 - full spring / 4-link conversion is explicitly outside the baseline design
@@ -192,7 +192,7 @@ In practical terms, that means:
 | Roof | Remove, correct channels/water issues, refinish properly | `proposed` |
 | Chassis/floor | Repair and protect before finish layers | `proposed` |
 | Engine | Keep current engine pending inspection evidence | `proposed` |
-| Steering | Rebuild baseline, likely pursue power steering path | `proposed` |
+| Steering | Rebuild baseline, pursue column-assist EPS through the General EPS Adapter route if packaging validates | `proposed` |
 | Brakes | Upgrade toward more confidence-inspiring road use | `proposed` |
 | Suspension | Ironman Foamcell kit ordered; track two shipments and validate fitment | `ordered` |
 | Full suspension conversion | Out of baseline scope | `deferred` |
@@ -229,7 +229,7 @@ In practical terms, that means:
 
 - What visual finish direction is intended for the exterior: preserve current palette, return to stock-adjacent color, or choose a new classic-appropriate finish?
 - Are bench seats actually wanted after packaging/ergonomics review, or just being considered?
-- Is the preferred steering solution hydraulic power steering, electric assist, or a rebuilt manual setup plus geometry cleanup?
+- Does the General EPS Adapter mock-up prove electric assist is safe/serviceable enough to proceed, or should the project fall back to rebuilt manual steering plus geometry cleanup?
 - Does the truck want a discreet hidden modern screen, or would a more period dashboard treatment be better?
 - What is the acceptable line between OE-adjacent and modernized in visible cabin elements?
 
@@ -240,4 +240,4 @@ In practical terms, that means:
 3. Decide whether the interior target is bench-seat based or current-seat based.
 4. Create a paint and finish brief once more body evidence is available.
 5. Create a wiring architecture sheet once the strip-down exposes the actual live circuits.
-6. Create a steering/brake decision memo after baseline inspection.
+6. Create a steering/brake decision memo after baseline inspection, including General EPS Adapter mock-up evidence before any irreversible steering fabrication.

@@ -43,7 +43,7 @@ Do not final-close suspension until brake hose, hard-line, parking-brake cable, 
 
 | Item | Qty | Status | Release rule |
 | --- | ---: | --- | --- |
-| Ironman Foam Cell main suspension kit | 1 kit | Ordered, pending delivery | Count against [suspension-workstream.md](suspension-workstream.md). |
+| Ironman Foam Cell main suspension kit | 1 kit | Received; contents check open | Count against [suspension-workstream.md](suspension-workstream.md). Main kit is on hand, but final install still waits for the separate `24635FE` front damper pair. |
 | Ironman `24635FE` front damper pair | 2 | Ordered as separate shipment | Must arrive before final suspension assembly or road validation. |
 | Hardwood cribbing and wedge chocks | 8 blocks + 4 wedges | Received | Inspect against [suspension-wood-cribbing-merchant-spec.md](suspension-wood-cribbing-merchant-spec.md); drawing pack is `data/manual/fabrication/suspension_wood_cribbing_rev_a/`. |
 | Front disc pads and retaining hardware | 1 axle set | Needs fitted-caliper identification | Buy by pad shape/caliper family from the truck, not by year alone. |
@@ -52,10 +52,10 @@ Do not final-close suspension until brake hose, hard-line, parking-brake cable, 
 | Front flexible brake hoses | 2 | Spec hold | Match caliper end, chassis bracket, free length, and full-lock clearance. |
 | Rear parking-brake cable set | 1 left/right set | Spec hold | Buy new assemblies only. Match both rear cable lengths, sheath lengths, backing-plate ends, equalizer ends, clips, return springs, and adjuster hardware from the old samples. |
 | Rear axle hard brake lines | 2 axle tubes plus fittings | Spec hold | Recreate in brake-rated `4.75 mm / 3/16 in` tube using old lines as bend templates. No bare copper. |
-| Rear center flexible brake hose | 1 | Spec hold | Match fitting style, old-sample/free length, and fitted route. |
-| Rear wheel cylinders | 2 | Drum-open identification | Buy as a pair after bore, port thread, bolt pattern, pushrod style, and side are confirmed. |
-| Rear shoes and spring/adjuster hardware | 1 axle set | Drum-open identification | Buy after drum ID, shoe width, adjuster style, and spring layout are recorded. |
-| Rear drums | 2 | Inspect/machine/replace | Machine or replace only if scored, cracked, stepped, or beyond service limit. |
+| Rear center flexible brake hose | 1 | Selected route; order proof pending | Cruiser Corps `553-103` is the selected online route, but match fitting style, old-sample/free length, and fitted route before final fit. |
+| Rear wheel cylinders | 1 four-cylinder rear set | Selected standard route | May 24 photos plus Toyota/SOR references support the standard 9/1971-7/1980 J40/BJ four-cylinder rear setup: RH front/upper `47550-69075`, RH rear/lower `47560-69055`, LH front/upper `47570-69065`, LH rear/lower `47580-69055`. City Racer sells this as a four-piece set; Cruiser Corps `A28` and SOR `081-02C-KIT` are comparable kit routes. |
+| Rear shoes and spring/adjuster hardware | 1 axle set | Selected route; dimensions/layout still to verify | Cruiser Corps `549-163` shoes plus `551-113` hardware remain plausible if shoe width/layout matches. Add Cruiser Corps `A16` qty `4` for wheel-cylinder bolts. Verify shoe width, drum ID, anchor/adjuster style, parking-brake lever fit, and spring layout; if this is a non-USA 3-inch drum setup, switch to a 3-inch shoe/hardware route. |
+| Rear drums | 2 | Optional best-route; order proof pending | Cruiser Corps `553-115` x2 if avoiding machining/rework risk; otherwise measure and machine/replace only if scored, cracked, stepped, or beyond service limit. |
 | Brake-line and parking-brake cable clips | As counted | Count hold | Replace corroded/missing clips and add rubber-lined P-clips where original support is missing. |
 | Brake master/reservoir/proportioning service parts | As fitted | Inspection hold | Replace only after current master, reservoir, booster, ports, and proportioning layout are photographed and checked. |
 | Rear differential/axle inspection consumables | As required | Inspection hold | Correct gear oil after open/LSD status is confirmed, carrier gasket or approved sealant, plug washers if fitted, breather parts, axle seals, pinion seal, wheel bearings, and carrier hardware only if inspection proves need. |

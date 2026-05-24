@@ -1,6 +1,6 @@
 # Bilal Ganj Master Shopping List (Specs, Prices, Photo References)
 
-Date: 2026-04-15  
+Date: 2026-05-22  
 Source workbook: `/Users/davidpridmore/Documents/J40_Costs.xlsx` (`Parts` tab)
 
 Detailed size matrix: `bilal-ganj-detailed-size-specs.md`
@@ -11,7 +11,7 @@ Important:
 - The 10-way relay/fuse block is already bought. Cabin/interior car fuse boxes are separate, still not ordered, and must be compact covered blade-fuse boxes.
 - Cabin fuse-box target is the compact internal/OEM-style form shown in the 2026-05-03 user reference image; use `docs/cabin-fuse-box-acquisition-20260503.md` for the supplier order text.
 - Glow plugs stay on the plan for price visibility, but they are no longer a Bilal Ganj/donor scouting item. Order them new only from a Toyota/diesel parts counter after old-plug/system confirmation.
-- The separate Local Market workstream was retired on 2026-05-13. Keep each local buy under its owning workstream: electrical reset for fuse/grommet work, EPS conversion for the Vitz kit, chassis/body/fabrication for hardware and sample-matched brackets, brake system for hydraulic prep, suspension for cribbing, and site setup for the toolbench.
+- The separate Local Market workstream was retired on 2026-05-13. Keep each local buy under its owning workstream: electrical reset for fuse/grommet work, EPS conversion for the Vitz kit and General EPS Adapter release, chassis/body/fabrication for hardware and sample-matched brackets, brake system for hydraulic prep, suspension for cribbing, and site setup for the toolbench.
 
 ## A) Buy / Book Now (Core)
 
@@ -21,13 +21,15 @@ Important:
 | 12 | Body-to-chassis mount rubber kit | 15,000-60,000 (avg 30,000) | New OEM-style mount biscuits/insulators, sleeves/cup washers, full mount-point set; old rubbers are samples only | `20260405_234546.jpg`, `20260405_234652.jpg` |
 | 39 | Ignition lock security fix | 4,000-25,000 (avg 12,000) | Re-key barrel + matched keys, or complete compatible lock/barrel set | `20260323_180218.jpg`, `20260323_190047.jpg` |
 | part_cabin_compact_fuse_boxes | Compact cabin fuse protection | 1,100-5,000 if reusing existing 12-way; 11,100-21,000 if buying all boxes | Need three isolated under-dash fuse groups: 6 constant-battery fuses, 6 ignition-on/RUN fuses, and 6 ignition part-way/ACC fuses minimum. Preferred current plan is to reuse the existing extracted blade-style donor block for two 6-fuse groups if rear-terminal continuity and condition checks pass, then buy one matching compact old-OEM fuse carrier for the third group. It may be 6/8/10/12-way if six positions can be wired cleanly; final wire/cable/terminals must be new. | `deliverables/selling_site_images/images/junction_block.png`, `deliverables/selling_site_images/images/junction_block_cover.png` |
-| 210 | EPS complete kit | 54,000-136,000 (avg 90,000) | Complete 2005-2011 Toyota Vitz/Yaris 90-series EPS set, SCP90 or NCP90 only: matched column + ECU/control + connectors/pigtails + shafts/U-joints + couplers + brackets; donor pigtails identify/bench-test only, final EPS cables are new | `20260321_235600.jpg`, `20260406_031010.jpg` |
+| 210 | EPS complete kit | 54,000-136,000 (avg 90,000) | Complete 2005-2011 Toyota Vitz/Yaris 90-series EPS set, SCP90 or NCP90 only: matched column + ECU/control + connectors/pigtails + shafts/U-joints + couplers + brackets. Also capture donor bracket geometry for the General EPS Adapter mock-up; donor brackets are references only, final J40 fit uses the fabricated adapter. Donor pigtails identify/bench-test only, final EPS cables are new | `20260321_235600.jpg`, `20260406_031010.jpg` |
 | 29 | Toyota OE glow plugs | 12,000-36,000 (avg 22,000) | New-parts counter/order item, not a donor scout buy. Buy exact Toyota-labelled plugs: primary `19850-68030` x6 for 2H 12V/8.5V; use `19850-68060` x6 only if the fitted system confirms 24V/superglow. Reject used/refurbished/PT-107/1C/2C listings. | `20260317_235150.jpg` |
 
 Core expected subtotal:
 - Low: `141,100 PKR`
 - Avg: `241,000 PKR`
 - High: `383,000 PKR`
+
+EPS note: the donor-kit row above does not include General EPS Adapter fabrication labour or any material top-up after mock-up. That release is controlled by the EPS fabrication plan and fabrication stock list.
 
 ## B) Suspension (Ordered - Do Not Source Alternatives)
 

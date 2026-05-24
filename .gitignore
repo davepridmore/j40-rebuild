@@ -5,6 +5,7 @@ __pycache__/
 # Local credentials, browser sessions, and machine caches.
 .ai/
 .playwright-mcp/
+.wwebjs_auth/
 .wwebjs_cache/
 .wwebjs_cache.backup_*/
 .idea/workspace.xml

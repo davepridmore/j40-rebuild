@@ -61,6 +61,7 @@ function createWhatsAppClient(config = {}) {
     const clientOptions = {
         puppeteer,
         authStrategy,
+        mediaStoragePath,
         restartOnAuthFail: true,
         takeoverOnConflict: true,
         takeoverTimeoutMs: 0,
@@ -69,6 +70,14 @@ function createWhatsAppClient(config = {}) {
     const client = new whatsapp_web_js_1.Client(clientOptions);
     // Generate QR code when needed
     client.on('qr', (qr) => {
+        const qrOutputPath = process.env.WWEB_QR_OUTPUT_PATH || path_1.default.join(authDataPath, 'latest_qr.txt');
+        try {
+            fs_1.default.writeFileSync(qrOutputPath, qr, 'utf8');
+            logger_1.default.info(`Wrote raw QR payload to ${qrOutputPath}`);
+        }
+        catch (error) {
+            logger_1.default.error(`Failed to write raw QR payload: ${error}`);
+        }
         // Display QR code in terminal
         qrcode_terminal_1.default.generate(qr, { small: true }, qrcode => {
             logger_1.default.info(`QR code generated. Scan it with your phone to log in.\n${qrcode}`);

@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-18T13:41:01+05:00",
+  "generated_at": "2026-05-24T07:24:44+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -28,6 +28,7 @@ window.J40_DASHBOARD_DATA = {
     "workbook_electrical_master": "data/manual/workbook_tabs/electrical_master.csv",
     "workbook_electrical_templates": "data/manual/workbook_tabs/electrical_templates.csv",
     "engine_electrical_inputs_reconciliation": "data/manual/engine_electrical_inputs_reconciliation_20260517.csv",
+    "cabin_engine_firewall_holes_survey": "data/manual/cabin_engine_firewall_holes_survey_20260517.csv",
     "electrical_diagram_reconciliation": "data/manual/electrical_diagram_reconciliation_20260518.csv",
     "workbook_rubbers_exact_online": "data/manual/workbook_tabs/rubbers_exact_online.csv",
     "workbook_rubbers_kit_buy": "data/manual/workbook_tabs/rubbers_kit_buy.csv",
@@ -47,25 +48,25 @@ window.J40_DASHBOARD_DATA = {
   "summary": {
     "workstreams_in_scope": 17,
     "workstreams_active": 13,
-    "workstream_evidence_images": 775,
+    "workstream_evidence_images": 786,
     "wiring_diagram_reference_images": 1,
-    "parts_open_rows": 76,
+    "parts_open_rows": 77,
     "parts_ordered_pending_delivery": 5,
     "urgent_part_actions": 15,
-    "capture_data_tasks": 109,
-    "capture_data_tasks_now": 97,
-    "supply_rows_tracked": 278,
-    "selling_site_images_loaded": 83,
-    "whatsapp_j40_selected_chats": 8,
-    "whatsapp_j40_media_items": 165,
-    "whatsapp_j40_media_images": 131,
-    "whatsapp_j40_media_videos": 19,
-    "other_build_reference_media": 76,
-    "other_build_reference_images": 68,
-    "other_build_reference_videos": 8,
+    "capture_data_tasks": 108,
+    "capture_data_tasks_now": 96,
+    "supply_rows_tracked": 280,
+    "selling_site_images_loaded": 88,
+    "whatsapp_j40_selected_chats": 10,
+    "whatsapp_j40_media_items": 255,
+    "whatsapp_j40_media_images": 205,
+    "whatsapp_j40_media_videos": 29,
+    "other_build_reference_media": 179,
+    "other_build_reference_images": 160,
+    "other_build_reference_videos": 19,
     "other_build_drop_zone_images": 0,
     "other_build_manual_reference_images": 61,
-    "contact_register_entries": 24,
+    "contact_register_entries": 29,
     "reference_project_ideas": 16
   },
   "workstreams": [
@@ -3748,8 +3749,8 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_2c3e3afb0459.webp",
-            "caption": "HB Body U900 cavity wax spray 400ml \u00b7 Autohub \u00b7 Selling Site Image",
+            "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_x2_2c3e3afb0459.webp",
+            "caption": "HB Body U900 cavity wax spray 400ml x2 \u00b7 Autohub \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -5047,6 +5048,138 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "20260517_193305_gp_o1a6stwa"
           ]
+        },
+        {
+          "path": "../../photos/20260523_222923_gp_nZMVhWQg.jpg",
+          "caption": "Returned Painted Inner Panels Or Splash Shields \u00b7 Hardware Refinish \u00b7 2026-05-23",
+          "captured_date": "2026-05-23",
+          "captured_time": "22:29:23",
+          "media_type": "photo",
+          "component_group": "removable_panels",
+          "specific_component": "returned_painted_inner_panels_or_splash_shields",
+          "stage": "hardware_refinish",
+          "media_id": "20260523_222923_gp_nZMVhWQg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260523_222939_gp_8284Aubw.jpg",
+          "caption": "Returned Painted Inner Panels Or Splash Shields \u00b7 Hardware Refinish \u00b7 2026-05-23",
+          "captured_date": "2026-05-23",
+          "captured_time": "22:29:39",
+          "media_type": "photo",
+          "component_group": "removable_panels",
+          "specific_component": "returned_painted_inner_panels_or_splash_shields",
+          "stage": "hardware_refinish",
+          "media_id": "20260523_222939_gp_8284Aubw",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260523_223012_gp_8OUV7efg.jpg",
+          "caption": "Returned Painted Front Wings \u00b7 Hardware Refinish \u00b7 2026-05-23",
+          "captured_date": "2026-05-23",
+          "captured_time": "22:30:12",
+          "media_type": "photo",
+          "component_group": "removable_panels",
+          "specific_component": "returned_painted_front_wings",
+          "stage": "hardware_refinish",
+          "media_id": "20260523_223012_gp_8OUV7efg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260523_223049_gp_fMBUKOUA.jpg",
+          "caption": "Returned Painted Front Wings \u00b7 Hardware Refinish \u00b7 2026-05-23",
+          "captured_date": "2026-05-23",
+          "captured_time": "22:30:49",
+          "media_type": "photo",
+          "component_group": "removable_panels",
+          "specific_component": "returned_painted_front_wings",
+          "stage": "hardware_refinish",
+          "media_id": "20260523_223049_gp_fMBUKOUA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260523_223504_gp_F0FomIPA.jpg",
+          "caption": "Returned Painted Front Panel Headlamp Surround \u00b7 Hardware Refinish \u00b7 2026-05-23",
+          "captured_date": "2026-05-23",
+          "captured_time": "22:35:04",
+          "media_type": "photo",
+          "component_group": "body_exterior",
+          "specific_component": "returned_painted_front_panel_headlamp_surround",
+          "stage": "hardware_refinish",
+          "media_id": "20260523_223504_gp_F0FomIPA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260523_223518_gp_f6ReoLCg.jpg",
+          "caption": "Returned Painted Front Panel Headlamp Surround \u00b7 Hardware Refinish \u00b7 2026-05-23",
+          "captured_date": "2026-05-23",
+          "captured_time": "22:35:18",
+          "media_type": "photo",
+          "component_group": "body_exterior",
+          "specific_component": "returned_painted_front_panel_headlamp_surround",
+          "stage": "hardware_refinish",
+          "media_id": "20260523_223518_gp_f6ReoLCg",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260523_223705_gp_JYXnfgoQ.jpg",
+          "caption": "Returned Painted Front Wings \u00b7 Hardware Refinish \u00b7 2026-05-23",
+          "captured_date": "2026-05-23",
+          "captured_time": "22:37:05",
+          "media_type": "photo",
+          "component_group": "removable_panels",
+          "specific_component": "returned_painted_front_wings",
+          "stage": "hardware_refinish",
+          "media_id": "20260523_223705_gp_JYXnfgoQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260523_223717_gp_FfANRAeQ.jpg",
+          "caption": "Returned Painted Front Wings \u00b7 Hardware Refinish \u00b7 2026-05-23",
+          "captured_date": "2026-05-23",
+          "captured_time": "22:37:17",
+          "media_type": "photo",
+          "component_group": "removable_panels",
+          "specific_component": "returned_painted_front_wings",
+          "stage": "hardware_refinish",
+          "media_id": "20260523_223717_gp_FfANRAeQ",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260523_223733_gp_MnEIyxVA.jpg",
+          "caption": "Returned Painted Brackets And Trim \u00b7 Hardware Refinish \u00b7 2026-05-23",
+          "captured_date": "2026-05-23",
+          "captured_time": "22:37:33",
+          "media_type": "photo",
+          "component_group": "removable_panels",
+          "specific_component": "returned_painted_brackets_and_trim",
+          "stage": "hardware_refinish",
+          "media_id": "20260523_223733_gp_MnEIyxVA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260523_224042_gp_J1g4JmyA.jpg",
+          "caption": "Returned Painted Body Trim \u00b7 Hardware Refinish \u00b7 2026-05-23",
+          "captured_date": "2026-05-23",
+          "captured_time": "22:40:42",
+          "media_type": "photo",
+          "component_group": "removable_panels",
+          "specific_component": "returned_painted_body_trim",
+          "stage": "hardware_refinish",
+          "media_id": "20260523_224042_gp_J1g4JmyA",
+          "matched_tokens": []
+        },
+        {
+          "path": "../../photos/20260523_224101_gp_EpoF4CwQ.jpg",
+          "caption": "Returned Painted Body Trim \u00b7 Hardware Refinish \u00b7 2026-05-23",
+          "captured_date": "2026-05-23",
+          "captured_time": "22:41:01",
+          "media_type": "photo",
+          "component_group": "removable_panels",
+          "specific_component": "returned_painted_body_trim",
+          "stage": "hardware_refinish",
+          "media_id": "20260523_224101_gp_EpoF4CwQ",
+          "matched_tokens": []
         }
       ],
       "evidence_sets": [
@@ -5563,12 +5696,144 @@ window.J40_DASHBOARD_DATA = {
               "matched_tokens": [
                 "20260517_193305_gp_o1a6stwa"
               ]
+            },
+            {
+              "path": "../../photos/20260523_222923_gp_nZMVhWQg.jpg",
+              "caption": "Returned Painted Inner Panels Or Splash Shields \u00b7 Hardware Refinish \u00b7 2026-05-23",
+              "captured_date": "2026-05-23",
+              "captured_time": "22:29:23",
+              "media_type": "photo",
+              "component_group": "removable_panels",
+              "specific_component": "returned_painted_inner_panels_or_splash_shields",
+              "stage": "hardware_refinish",
+              "media_id": "20260523_222923_gp_nZMVhWQg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260523_222939_gp_8284Aubw.jpg",
+              "caption": "Returned Painted Inner Panels Or Splash Shields \u00b7 Hardware Refinish \u00b7 2026-05-23",
+              "captured_date": "2026-05-23",
+              "captured_time": "22:29:39",
+              "media_type": "photo",
+              "component_group": "removable_panels",
+              "specific_component": "returned_painted_inner_panels_or_splash_shields",
+              "stage": "hardware_refinish",
+              "media_id": "20260523_222939_gp_8284Aubw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260523_223012_gp_8OUV7efg.jpg",
+              "caption": "Returned Painted Front Wings \u00b7 Hardware Refinish \u00b7 2026-05-23",
+              "captured_date": "2026-05-23",
+              "captured_time": "22:30:12",
+              "media_type": "photo",
+              "component_group": "removable_panels",
+              "specific_component": "returned_painted_front_wings",
+              "stage": "hardware_refinish",
+              "media_id": "20260523_223012_gp_8OUV7efg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260523_223049_gp_fMBUKOUA.jpg",
+              "caption": "Returned Painted Front Wings \u00b7 Hardware Refinish \u00b7 2026-05-23",
+              "captured_date": "2026-05-23",
+              "captured_time": "22:30:49",
+              "media_type": "photo",
+              "component_group": "removable_panels",
+              "specific_component": "returned_painted_front_wings",
+              "stage": "hardware_refinish",
+              "media_id": "20260523_223049_gp_fMBUKOUA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260523_223504_gp_F0FomIPA.jpg",
+              "caption": "Returned Painted Front Panel Headlamp Surround \u00b7 Hardware Refinish \u00b7 2026-05-23",
+              "captured_date": "2026-05-23",
+              "captured_time": "22:35:04",
+              "media_type": "photo",
+              "component_group": "body_exterior",
+              "specific_component": "returned_painted_front_panel_headlamp_surround",
+              "stage": "hardware_refinish",
+              "media_id": "20260523_223504_gp_F0FomIPA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260523_223518_gp_f6ReoLCg.jpg",
+              "caption": "Returned Painted Front Panel Headlamp Surround \u00b7 Hardware Refinish \u00b7 2026-05-23",
+              "captured_date": "2026-05-23",
+              "captured_time": "22:35:18",
+              "media_type": "photo",
+              "component_group": "body_exterior",
+              "specific_component": "returned_painted_front_panel_headlamp_surround",
+              "stage": "hardware_refinish",
+              "media_id": "20260523_223518_gp_f6ReoLCg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260523_223705_gp_JYXnfgoQ.jpg",
+              "caption": "Returned Painted Front Wings \u00b7 Hardware Refinish \u00b7 2026-05-23",
+              "captured_date": "2026-05-23",
+              "captured_time": "22:37:05",
+              "media_type": "photo",
+              "component_group": "removable_panels",
+              "specific_component": "returned_painted_front_wings",
+              "stage": "hardware_refinish",
+              "media_id": "20260523_223705_gp_JYXnfgoQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260523_223717_gp_FfANRAeQ.jpg",
+              "caption": "Returned Painted Front Wings \u00b7 Hardware Refinish \u00b7 2026-05-23",
+              "captured_date": "2026-05-23",
+              "captured_time": "22:37:17",
+              "media_type": "photo",
+              "component_group": "removable_panels",
+              "specific_component": "returned_painted_front_wings",
+              "stage": "hardware_refinish",
+              "media_id": "20260523_223717_gp_FfANRAeQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260523_223733_gp_MnEIyxVA.jpg",
+              "caption": "Returned Painted Brackets And Trim \u00b7 Hardware Refinish \u00b7 2026-05-23",
+              "captured_date": "2026-05-23",
+              "captured_time": "22:37:33",
+              "media_type": "photo",
+              "component_group": "removable_panels",
+              "specific_component": "returned_painted_brackets_and_trim",
+              "stage": "hardware_refinish",
+              "media_id": "20260523_223733_gp_MnEIyxVA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260523_224042_gp_J1g4JmyA.jpg",
+              "caption": "Returned Painted Body Trim \u00b7 Hardware Refinish \u00b7 2026-05-23",
+              "captured_date": "2026-05-23",
+              "captured_time": "22:40:42",
+              "media_type": "photo",
+              "component_group": "removable_panels",
+              "specific_component": "returned_painted_body_trim",
+              "stage": "hardware_refinish",
+              "media_id": "20260523_224042_gp_J1g4JmyA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260523_224101_gp_EpoF4CwQ.jpg",
+              "caption": "Returned Painted Body Trim \u00b7 Hardware Refinish \u00b7 2026-05-23",
+              "captured_date": "2026-05-23",
+              "captured_time": "22:41:01",
+              "media_type": "photo",
+              "component_group": "removable_panels",
+              "specific_component": "returned_painted_body_trim",
+              "stage": "hardware_refinish",
+              "media_id": "20260523_224101_gp_EpoF4CwQ",
+              "matched_tokens": []
             }
           ]
         }
       ],
-      "image_count": 40,
-      "reference_token_count": 17,
+      "image_count": 51,
+      "reference_token_count": 18,
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
@@ -5599,8 +5864,8 @@ window.J40_DASHBOARD_DATA = {
           "component_group": "paint_refinish",
           "current_status": "partially_returned",
           "planned_action": "Track returned painted/refinished hardware and panel pieces, then tag storage location and fitment-readiness status",
-          "evidence_ref": "20260412_010633|20260412_010646_gp_vrcJK3ow|20260412_215154_gp_hDRTkV1A|20260517_193305_gp_o1a6StwA",
-          "notes": "Returned painted/refinished parts are visible in photo evidence; May 17 adds the returned painted roof. Continue until all paint batch returns are reconciled."
+          "evidence_ref": "20260412_010633|20260412_010646_gp_vrcJK3ow|20260412_215154_gp_hDRTkV1A|20260517_193305_gp_o1a6StwA|photo_import_20260524T054300|user_update_2026-05-24_painted_parts_received",
+          "notes": "Returned painted/refinished parts are visible in photo evidence; May 17 adds the returned painted roof; May 23 picker batch acknowledges received painted panels/brackets. Continue until all paint batch returns are tagged inspected and fitment-checked."
         },
         {
           "component_job_id": "paint_sendout_panels_manifest",
@@ -5672,7 +5937,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Component Task \u00b7 Paint Returned Panels Refinished",
           "status": "partially_returned",
-          "detail": "Track returned painted/refinished hardware and panel pieces, then tag storage location and fitment-readiness status Notes: Returned painted/refinished parts are visible in photo evidence; May 17 adds the returned painted roof. Continue until all paint batch returns are reconciled."
+          "detail": "Track returned painted/refinished hardware and panel pieces, then tag storage location and fitment-readiness status Notes: Returned painted/refinished parts are visible in photo evidence; May 17 adds the returned painted roof; May 23 picker batch acknowledges received painted panels/brackets. Continue until all paint batch returns are tagged inspected and fitment-checked."
         },
         {
           "label": "Component Task \u00b7 Roof Shell",
@@ -5858,88 +6123,76 @@ window.J40_DASHBOARD_DATA = {
               "parts": [],
               "images": [
                 {
-                  "path": "../../photos/20260423_183648_gp_ltd3AKwg.jpg",
-                  "caption": "Roof Gutter And Window Channel \u00b7 Removed Parts Cataloguing \u00b7 2026-04-23",
-                  "captured_date": "2026-04-23",
-                  "captured_time": "18:36:48",
-                  "media_type": "photo",
-                  "component_group": "roof_and_gutters",
-                  "specific_component": "roof_gutter_and_window_channel",
-                  "stage": "removed_parts_cataloguing",
-                  "media_id": "20260423_183648_gp_ltd3AKwg",
-                  "matched_tokens": [
-                    "20260423_183648_gp_ltd3akwg"
-                  ]
-                },
-                {
-                  "path": "../../photos/20260423_183628_gp_SpWIfUnw.jpg",
-                  "caption": "Detached Body Panels And Doors \u00b7 Removed Parts Cataloguing \u00b7 2026-04-23",
-                  "captured_date": "2026-04-23",
-                  "captured_time": "18:36:28",
+                  "path": "../../photos/20260523_224101_gp_EpoF4CwQ.jpg",
+                  "caption": "Returned Painted Body Trim \u00b7 Hardware Refinish \u00b7 2026-05-23",
+                  "captured_date": "2026-05-23",
+                  "captured_time": "22:41:01",
                   "media_type": "photo",
                   "component_group": "removable_panels",
-                  "specific_component": "detached_body_panels_and_doors",
-                  "stage": "removed_parts_cataloguing",
-                  "media_id": "20260423_183628_gp_SpWIfUnw",
-                  "matched_tokens": [
-                    "20260423_183628_gp_spwifunw"
-                  ]
+                  "specific_component": "returned_painted_body_trim",
+                  "stage": "hardware_refinish",
+                  "media_id": "20260523_224101_gp_EpoF4CwQ",
+                  "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260423_183540_gp_bhRdLpMg.jpg",
-                  "caption": "Detached Doors And Panels \u00b7 Removed Parts Cataloguing \u00b7 2026-04-23",
-                  "captured_date": "2026-04-23",
-                  "captured_time": "18:35:40",
+                  "path": "../../photos/20260523_224042_gp_J1g4JmyA.jpg",
+                  "caption": "Returned Painted Body Trim \u00b7 Hardware Refinish \u00b7 2026-05-23",
+                  "captured_date": "2026-05-23",
+                  "captured_time": "22:40:42",
                   "media_type": "photo",
                   "component_group": "removable_panels",
-                  "specific_component": "detached_doors_and_panels",
-                  "stage": "removed_parts_cataloguing",
-                  "media_id": "20260423_183540_gp_bhRdLpMg",
-                  "matched_tokens": [
-                    "20260423_183540_gp_bhrdlpmg"
-                  ]
+                  "specific_component": "returned_painted_body_trim",
+                  "stage": "hardware_refinish",
+                  "media_id": "20260523_224042_gp_J1g4JmyA",
+                  "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260423_183521_gp_pjVN2Ujw.jpg",
-                  "caption": "Detached Body Panels And Doors \u00b7 Removed Parts Cataloguing \u00b7 2026-04-23",
-                  "captured_date": "2026-04-23",
-                  "captured_time": "18:35:21",
+                  "path": "../../photos/20260523_223733_gp_MnEIyxVA.jpg",
+                  "caption": "Returned Painted Brackets And Trim \u00b7 Hardware Refinish \u00b7 2026-05-23",
+                  "captured_date": "2026-05-23",
+                  "captured_time": "22:37:33",
                   "media_type": "photo",
                   "component_group": "removable_panels",
-                  "specific_component": "detached_body_panels_and_doors",
-                  "stage": "removed_parts_cataloguing",
-                  "media_id": "20260423_183521_gp_pjVN2Ujw",
-                  "matched_tokens": [
-                    "20260423_183521_gp_pjvn2ujw"
-                  ]
+                  "specific_component": "returned_painted_brackets_and_trim",
+                  "stage": "hardware_refinish",
+                  "media_id": "20260523_223733_gp_MnEIyxVA",
+                  "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260423_183514_gp_DyztXKcw.jpg",
-                  "caption": "Detached Body Panels And Doors \u00b7 Removed Parts Cataloguing \u00b7 2026-04-23",
-                  "captured_date": "2026-04-23",
-                  "captured_time": "18:35:14",
+                  "path": "../../photos/20260523_223717_gp_FfANRAeQ.jpg",
+                  "caption": "Returned Painted Front Wings \u00b7 Hardware Refinish \u00b7 2026-05-23",
+                  "captured_date": "2026-05-23",
+                  "captured_time": "22:37:17",
                   "media_type": "photo",
                   "component_group": "removable_panels",
-                  "specific_component": "detached_body_panels_and_doors",
-                  "stage": "removed_parts_cataloguing",
-                  "media_id": "20260423_183514_gp_DyztXKcw",
-                  "matched_tokens": [
-                    "20260423_183514_gp_dyztxkcw"
-                  ]
+                  "specific_component": "returned_painted_front_wings",
+                  "stage": "hardware_refinish",
+                  "media_id": "20260523_223717_gp_FfANRAeQ",
+                  "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260423_183448_gp_9MQfbmvQ.jpg",
-                  "caption": "Detached Body Panels And Doors \u00b7 Removed Parts Cataloguing \u00b7 2026-04-23",
-                  "captured_date": "2026-04-23",
-                  "captured_time": "18:34:48",
+                  "path": "../../photos/20260523_223705_gp_JYXnfgoQ.jpg",
+                  "caption": "Returned Painted Front Wings \u00b7 Hardware Refinish \u00b7 2026-05-23",
+                  "captured_date": "2026-05-23",
+                  "captured_time": "22:37:05",
                   "media_type": "photo",
                   "component_group": "removable_panels",
-                  "specific_component": "detached_body_panels_and_doors",
-                  "stage": "removed_parts_cataloguing",
-                  "media_id": "20260423_183448_gp_9MQfbmvQ",
-                  "matched_tokens": [
-                    "20260423_183448_gp_9mqfbmvq"
-                  ]
+                  "specific_component": "returned_painted_front_wings",
+                  "stage": "hardware_refinish",
+                  "media_id": "20260523_223705_gp_JYXnfgoQ",
+                  "matched_tokens": []
+                },
+                {
+                  "path": "../../photos/20260523_223518_gp_f6ReoLCg.jpg",
+                  "caption": "Returned Painted Front Panel Headlamp Surround \u00b7 Hardware Refinish \u00b7 2026-05-23",
+                  "captured_date": "2026-05-23",
+                  "captured_time": "22:35:18",
+                  "media_type": "photo",
+                  "component_group": "body_exterior",
+                  "specific_component": "returned_painted_front_panel_headlamp_surround",
+                  "stage": "hardware_refinish",
+                  "media_id": "20260523_223518_gp_f6ReoLCg",
+                  "matched_tokens": []
                 }
               ],
               "registered_items": []
@@ -6092,77 +6345,75 @@ window.J40_DASHBOARD_DATA = {
               "parts": [],
               "images": [
                 {
-                  "path": "../../photos/20260412_010623.jpg",
-                  "caption": "Refinished Seat Or Mount Bracket \u00b7 Hardware Refinish \u00b7 2026-04-12",
-                  "captured_date": "2026-04-12",
-                  "captured_time": "01:06:23",
+                  "path": "../../photos/20260523_223518_gp_f6ReoLCg.jpg",
+                  "caption": "Returned Painted Front Panel Headlamp Surround \u00b7 Hardware Refinish \u00b7 2026-05-23",
+                  "captured_date": "2026-05-23",
+                  "captured_time": "22:35:18",
                   "media_type": "photo",
-                  "component_group": "removable_panels",
-                  "specific_component": "refinished_seat_or_mount_bracket",
+                  "component_group": "body_exterior",
+                  "specific_component": "returned_painted_front_panel_headlamp_surround",
                   "stage": "hardware_refinish",
-                  "media_id": "20260412_010623",
+                  "media_id": "20260523_223518_gp_f6ReoLCg",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260412_223541_gp_QFRecOgQ.jpg",
-                  "caption": "Refinished Hinges Brackets And Trim \u00b7 Hardware Refinish \u00b7 2026-04-12",
-                  "captured_date": "2026-04-12",
-                  "captured_time": "22:35:41",
+                  "path": "../../photos/20260523_223504_gp_F0FomIPA.jpg",
+                  "caption": "Returned Painted Front Panel Headlamp Surround \u00b7 Hardware Refinish \u00b7 2026-05-23",
+                  "captured_date": "2026-05-23",
+                  "captured_time": "22:35:04",
                   "media_type": "photo",
-                  "component_group": "removable_panels",
-                  "specific_component": "refinished_hinges_brackets_and_trim",
+                  "component_group": "body_exterior",
+                  "specific_component": "returned_painted_front_panel_headlamp_surround",
                   "stage": "hardware_refinish",
-                  "media_id": "20260412_223541_gp_QFRecOgQ",
+                  "media_id": "20260523_223504_gp_F0FomIPA",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260412_223537_gp_kVu8OFJA.jpg",
-                  "caption": "Refinished Hinges Brackets And Trim \u00b7 Hardware Refinish \u00b7 2026-04-12",
-                  "captured_date": "2026-04-12",
-                  "captured_time": "22:35:37",
+                  "path": "../../photos/20260523_222939_gp_8284Aubw.jpg",
+                  "caption": "Returned Painted Inner Panels Or Splash Shields \u00b7 Hardware Refinish \u00b7 2026-05-23",
+                  "captured_date": "2026-05-23",
+                  "captured_time": "22:29:39",
                   "media_type": "photo",
                   "component_group": "removable_panels",
-                  "specific_component": "refinished_hinges_brackets_and_trim",
+                  "specific_component": "returned_painted_inner_panels_or_splash_shields",
                   "stage": "hardware_refinish",
-                  "media_id": "20260412_223537_gp_kVu8OFJA",
+                  "media_id": "20260523_222939_gp_8284Aubw",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260412_223218_gp_fqniQhNQ.jpg",
-                  "caption": "Refinished Hinges Brackets And Trim \u00b7 Hardware Refinish \u00b7 2026-04-12",
-                  "captured_date": "2026-04-12",
-                  "captured_time": "22:32:18",
+                  "path": "../../photos/20260523_222923_gp_nZMVhWQg.jpg",
+                  "caption": "Returned Painted Inner Panels Or Splash Shields \u00b7 Hardware Refinish \u00b7 2026-05-23",
+                  "captured_date": "2026-05-23",
+                  "captured_time": "22:29:23",
                   "media_type": "photo",
                   "component_group": "removable_panels",
-                  "specific_component": "refinished_hinges_brackets_and_trim",
+                  "specific_component": "returned_painted_inner_panels_or_splash_shields",
                   "stage": "hardware_refinish",
-                  "media_id": "20260412_223218_gp_fqniQhNQ",
+                  "media_id": "20260523_222923_gp_nZMVhWQg",
                   "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260412_215154_gp_hDRTkV1A.jpg",
-                  "caption": "Refinished Hinges Brackets And Trim \u00b7 Hardware Refinish \u00b7 2026-04-12",
-                  "captured_date": "2026-04-12",
-                  "captured_time": "21:51:54",
+                  "path": "../../photos/20260523_224101_gp_EpoF4CwQ.jpg",
+                  "caption": "Returned Painted Body Trim \u00b7 Hardware Refinish \u00b7 2026-05-23",
+                  "captured_date": "2026-05-23",
+                  "captured_time": "22:41:01",
                   "media_type": "photo",
                   "component_group": "removable_panels",
-                  "specific_component": "refinished_hinges_brackets_and_trim",
+                  "specific_component": "returned_painted_body_trim",
                   "stage": "hardware_refinish",
-                  "media_id": "20260412_215154_gp_hDRTkV1A",
-                  "matched_tokens": [
-                    "20260412_215154_gp_hdrtkv1a"
-                  ]
+                  "media_id": "20260523_224101_gp_EpoF4CwQ",
+                  "matched_tokens": []
                 },
                 {
-                  "path": "../../photos/20260412_215138_gp_F42aBJGg.jpg",
-                  "caption": "Refinished Hinges Brackets And Trim \u00b7 Hardware Refinish \u00b7 2026-04-12",
-                  "captured_date": "2026-04-12",
-                  "captured_time": "21:51:38",
+                  "path": "../../photos/20260523_224042_gp_J1g4JmyA.jpg",
+                  "caption": "Returned Painted Body Trim \u00b7 Hardware Refinish \u00b7 2026-05-23",
+                  "captured_date": "2026-05-23",
+                  "captured_time": "22:40:42",
                   "media_type": "photo",
                   "component_group": "removable_panels",
-                  "specific_component": "refinished_hinges_brackets_and_trim",
+                  "specific_component": "returned_painted_body_trim",
                   "stage": "hardware_refinish",
-                  "media_id": "20260412_215138_gp_F42aBJGg",
+                  "media_id": "20260523_224042_gp_J1g4JmyA",
                   "matched_tokens": []
                 }
               ],
@@ -15490,6 +15741,48 @@ window.J40_DASHBOARD_DATA = {
               "stage": "procurement_reconciliation",
               "media_id": "20260517_193616_gp_1ye19BZA",
               "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:41:43",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194143_gp_CO7MuMdA",
+              "matched_tokens": [
+                "20260517_194143_gp_co7mumda"
+              ]
+            },
+            {
+              "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:46:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194633_gp_rAjY3gjg",
+              "matched_tokens": [
+                "20260517_194633_gp_rajy3gjg"
+              ]
+            },
+            {
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": [
+                "20260517_194706_gp_twkrwgfa"
+              ]
             }
           ]
         },
@@ -15786,7 +16079,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 23,
-      "reference_token_count": 17,
+      "reference_token_count": 21,
       "requirements": [
         {
           "requirement_id": "CR-MAIN-001",
@@ -17166,62 +17459,162 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "order_id": "FS-STRIP-L",
-          "part": "Front-support left strip liner",
-          "required_qty": "hold",
-          "optional_spare_qty": "hold",
-          "spec": "Candidate strip only; quote from 165 x 40 mm stock envelope if physical front-support carrier confirms this piece exists; base 8 mm; raised/load pad 14 mm; final outline from physical trace",
-          "holes_or_inserts": "M10 11 mm holes or 11 x 16 mm slots only where carrier confirms",
+          "part": "Underfloor body-support strip liner left",
+          "required_qty": "1",
+          "optional_spare_qty": "0",
+          "spec": "Flat strip 165 x 38 x 8 mm; plain rubber strip only; smooth edges and flat parallel faces; no stepped section",
+          "holes_or_inserts": "No through-holes in the rubber by default; reuse or trace the slotted steel retainer separately if needed",
           "material": "Solid EPDM or NR/SBR strip, Shore A 60 +/-5",
-          "release_state": "hold_trace_required",
-          "photo_refs": "fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg",
-          "notes": "Current photo evidence is mixed with bump-stop fragments; do not release as known required until carrier/vehicle trace proves it.",
-          "evidence_images": [],
+          "release_state": "first_article_custom_recreate",
+          "photo_refs": "20260517_194143_gp_CO7MuMdA|20260517_194706_gp_twKRWGFA|20260517_193503_gp_N9nHjqXw|20260517_193539_gp_E0cR9I0A|20260517_193559_gp_NEpk1hpg",
+          "notes": "Installed-location photos now prove this is a real required strip. Make the rubber as a plain flat strip; steel slot geometry belongs to the retainer, not automatically to the rubber.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:41:43",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194143_gp_CO7MuMdA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:03",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193503_gp_N9nHjqXw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:39",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193539_gp_E0cR9I0A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:59",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193559_gp_NEpk1hpg",
+              "matched_tokens": []
+            }
+          ],
           "image": {
-            "path": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg",
-            "caption": "Front-support left strip liner \u00b7 left front-support strip template hold",
-            "captured_date": "",
-            "captured_time": "",
+            "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:41:43",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "local_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "fs_strip_left_template_blank_rev_a",
-            "matched_tokens": [
-              "fs-strip-l",
-              "template"
-            ],
-            "match_basis": "local_reference_image",
-            "match_score": 700
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194143_gp_CO7MuMdA",
+            "matched_tokens": []
           }
         },
         {
           "order_id": "FS-STRIP-R",
-          "part": "Front-support right strip liner",
-          "required_qty": "hold",
-          "optional_spare_qty": "hold",
-          "spec": "Candidate strip only; mirror FS-STRIP-L only if right carrier proves symmetric; same quote envelope and section dimensions after confirmation",
-          "holes_or_inserts": "Trace right carrier and mark handedness before cutting",
+          "part": "Underfloor body-support strip liner right",
+          "required_qty": "1",
+          "optional_spare_qty": "0",
+          "spec": "Same rubber spec as left: flat strip 165 x 38 x 8 mm; use the same blank unless the sample proves a handed end trim",
+          "holes_or_inserts": "Same retainer rule as left; do not invent slot geometry in the rubber",
           "material": "Same batch/type as FS-STRIP-L",
-          "release_state": "hold_trace_required",
-          "photo_refs": "fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg",
-          "notes": "Current photo evidence is mixed with bump-stop fragments; do not release as known required until carrier/vehicle trace proves it.",
-          "evidence_images": [],
+          "release_state": "first_article_custom_recreate",
+          "photo_refs": "20260517_194633_gp_rAjY3gjg|20260517_194706_gp_twKRWGFA|20260517_193612_gp_JmbfR0Tw|20260517_193616_gp_1ye19BZA",
+          "notes": "Treat right side as the same first-article rubber strip unless dry-fit proves a side-specific trim.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:46:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194633_gp_rAjY3gjg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:12",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193612_gp_JmbfR0Tw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:16",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193616_gp_1ye19BZA",
+              "matched_tokens": []
+            }
+          ],
           "image": {
-            "path": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg",
-            "caption": "Front-support right strip liner \u00b7 left front-support strip template hold",
-            "captured_date": "",
-            "captured_time": "",
+            "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:46:33",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "local_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "fs_strip_left_template_blank_rev_a",
-            "matched_tokens": [
-              "fs-strip-l",
-              "template"
-            ],
-            "match_basis": "local_reference_image",
-            "match_score": 700
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194633_gp_rAjY3gjg",
+            "matched_tokens": []
           }
         },
         {
@@ -20786,8 +21179,8 @@ window.J40_DASHBOARD_DATA = {
           "package_id": "longman_rubber_order_20260508",
           "title": "Longman rubber order 2026-05-08",
           "current_status": "current_release",
-          "release_position": "Longman quote pack uses square BM-ISO-SM/BM-ISO-LG body pads, FS-OVAL pads, first-article bump stops, and hold rows for FS-STRIP-L/R plus possible full-width liners.",
-          "notes": "Steel cup/seat washers, sleeves, shims, and bolts are separate hardware. FS-STRIP-L/R and full-width liners remain measurement holds until physical carrier/location evidence proves them.",
+          "release_position": "Longman quote pack uses square BM-ISO-SM/BM-ISO-LG body pads, FS-OVAL pads, first-article underfloor FS-STRIP-L/R flat strips, first-article bump stops, and hold rows only for any still-unidentified full-width liners.",
+          "notes": "Steel cup/seat washers, sleeves, shims, and bolts are separate hardware. The supplier-facing strip release is now the plain 165 x 38 x 8 mm rubber pair; the old DXF blanks remain template-only unless a new CAD release is generated.",
           "package_dir": "data/manual/fabrication/longman_rubber_order_20260508",
           "primary_links": [
             {
@@ -20827,7 +21220,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/longman_rubber_order_20260508.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 42465
+            "bytes": 42949
           },
           "file_count": 7
         }
@@ -20839,10 +21232,10 @@ window.J40_DASHBOARD_DATA = {
         {
           "component_job_id": "tub_refit_rubber_hardware_shim_stack",
           "component_group": "chassis_underside",
-          "current_status": "tub_side_mount_rust_photos_added",
+          "current_status": "flat_rubber_measurement_photos_added",
           "planned_action": "Use the reduced chassis-rubbers fabricator spec for quote/first article, then lock the main-tub rubber kit, separate front-support pair, hardware grade, sleeves, and shim stack by trial fit before final tub fastening",
-          "evidence_ref": "photo_inventory_2026-04-22|20260405_234546|20260405_234652|data_chassis_rubber_requirements|docs_chassis_rubbers_fabricator_spec_20260504|20260517_195032_gp_lrASxesw|20260517_195057_gp_U6FxmsPQ|20260517_195108_gp_elCiXzKw|20260517_195123_gp_LxOfgsPA|20260517_195241_gp_RzJdcAZg|20260517_195321_gp_4zDAINsA|20260517_195330_gp_wrE9dLVw|20260517_195341_gp_ZTYnpWUA|20260517_195406_gp_req8G3Bg|20260517_195430_gp_VGGpRFOQ|20260517_195511_gp_iFvWFVNw|20260517_195628_gp_Wog59oFg|photo_import_20260517T224430",
-          "notes": "May 17 tub-side body-mount/captive rust details are now linked for refit risk. Rubber and shim stack release still needs physical sample dimensions, sleeve checks, and station dry-fit height confirmation."
+          "evidence_ref": "photo_inventory_2026-04-22|20260405_234546|20260405_234652|data_chassis_rubber_requirements|docs_chassis_rubbers_fabricator_spec_20260504|20260517_195032_gp_lrASxesw|20260517_195057_gp_U6FxmsPQ|20260517_195108_gp_elCiXzKw|20260517_195123_gp_LxOfgsPA|20260517_195241_gp_RzJdcAZg|20260517_195321_gp_4zDAINsA|20260517_195330_gp_wrE9dLVw|20260517_195341_gp_ZTYnpWUA|20260517_195406_gp_req8G3Bg|20260517_195430_gp_VGGpRFOQ|20260517_195511_gp_iFvWFVNw|20260517_195628_gp_Wog59oFg|20260517_194143_gp_CO7MuMdA|20260517_194633_gp_rAjY3gjg|20260517_194706_gp_twKRWGFA|photo_import_20260517T224430|photo_import_20260518T155830",
+          "notes": "May 17 tub-side body-mount/captive rust details and the additional flat-rubber footprint measurement photos are now linked for refit risk and pad sizing. Final rubber and shim-stack release still needs physical sample dimensions, sleeve checks, side/station labels, and dry-fit height confirmation."
         }
       ],
       "issue_jobs": [],
@@ -20879,8 +21272,8 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Component Task \u00b7 Tub Refit Rubber Hardware Shim Stack",
-          "status": "tub_side_mount_rust_photos_added",
-          "detail": "Use the reduced chassis-rubbers fabricator spec for quote/first article, then lock the main-tub rubber kit, separate front-support pair, hardware grade, sleeves, and shim stack by trial fit before final tub fastening Notes: May 17 tub-side body-mount/captive rust details are now linked for refit risk. Rubber and shim stack release still needs physical sample dimensions, sleeve checks, and station dry-fit height confirmation."
+          "status": "flat_rubber_measurement_photos_added",
+          "detail": "Use the reduced chassis-rubbers fabricator spec for quote/first article, then lock the main-tub rubber kit, separate front-support pair, hardware grade, sleeves, and shim stack by trial fit before final tub fastening Notes: May 17 tub-side body-mount/captive rust details and the additional flat-rubber footprint measurement photos are now linked for refit risk and pad sizing. Final rubber and shim-stack release still needs physical sample dimensions, sleeve checks, side/station labels, and dry-fit height confirmation."
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
@@ -23109,7 +23502,7 @@ window.J40_DASHBOARD_DATA = {
       ],
       "next_action": "Freeze the baseline circuit list against the J40 wiring diagram reconciliation and close each partial/hold item before buying more optional items",
       "exit_gate": "Base electrical system is clean documented and functional",
-      "notes": "Optional audio and convenience add-ons stay deferred until baseline wiring works; J40.jpg is the dashboard-viewable diagram",
+      "notes": "Optional audio and convenience add-ons stay deferred until baseline wiring works; J40.jpg is the dashboard-viewable diagram, J40.graffle remains the editable source, and the reconciliation table controls the open diagram/workstream gaps.",
       "evidence_source": [
         "whatsapp_fj40",
         "fj40-00103",
@@ -27371,6 +27764,7 @@ window.J40_DASHBOARD_DATA = {
           "data/raw/imports/J40.jpg",
           "data/raw/imports/J40.graffle",
           "data/manual/engine_electrical_inputs_reconciliation_20260517.csv",
+          "data/manual/cabin_engine_firewall_holes_survey_20260517.csv",
           "data/manual/electrical_diagram_reconciliation_20260518.csv"
         ],
         "layout_templates": [
@@ -27825,6 +28219,188 @@ window.J40_DASHBOARD_DATA = {
             ]
           }
         ],
+        "firewall_pass_through_survey": [
+          {
+            "hole_id": "FEH-001",
+            "photo_refs": "20260517_194806_gp_eou5ctOQ|20260517_194841_gp_eXh30voQ|20260517_194911_gp_jCrFS5PA",
+            "visible_area": "Lower cabin-side firewall near steering column/pedal area",
+            "observed_opening": "Large existing round pass-through opening",
+            "what_it_does": "Large existing round pass-through opening",
+            "attach_or_route_to": "Candidate protected cabin-to-engine loom or control-cable pass-through after a correct grommet or bulkhead fitting is installed; secure the branch to cabin-side and engine-bay clips so it never bears on the hole edge.",
+            "condition_risk": "Open edge plus old sealant plus paint loss plus rust staining",
+            "refit_decision": "Reuse only if it receives correct split grommet or bulkhead fitting and clears steering/pedal movement; otherwise plug or close",
+            "verification_required": "Measure actual hole diameter with calipers; deburr edge; inspect both cabin and engine sides; confirm no water/fume path",
+            "closeout_evidence_required": "Labelled photo with final grommet or plug installed and route assignment",
+            "notes": "Primary candidate for protected loom or control-cable pass but not released from photo alone",
+            "evidence_images": [
+              {
+                "path": "../../photos/20260517_194806_gp_eou5ctOQ.jpg",
+                "caption": "Cabin Engine Firewall Pass Through Holes \u00b7 Electrical Refit \u00b7 2026-05-17",
+                "captured_date": "2026-05-17",
+                "captured_time": "19:48:06",
+                "media_type": "photo",
+                "component_group": "electrical_system",
+                "specific_component": "cabin_engine_firewall_pass_through_holes",
+                "stage": "electrical_refit",
+                "media_id": "20260517_194806_gp_eou5ctOQ",
+                "matched_tokens": []
+              },
+              {
+                "path": "../../photos/20260517_194841_gp_eXh30voQ.jpg",
+                "caption": "Cabin Engine Firewall Pass Through Holes \u00b7 Electrical Refit \u00b7 2026-05-17",
+                "captured_date": "2026-05-17",
+                "captured_time": "19:48:41",
+                "media_type": "photo",
+                "component_group": "electrical_system",
+                "specific_component": "cabin_engine_firewall_pass_through_holes",
+                "stage": "electrical_refit",
+                "media_id": "20260517_194841_gp_eXh30voQ",
+                "matched_tokens": []
+              },
+              {
+                "path": "../../photos/20260517_194911_gp_jCrFS5PA.jpg",
+                "caption": "Cabin Engine Firewall Pass Through Holes \u00b7 Electrical Refit \u00b7 2026-05-17",
+                "captured_date": "2026-05-17",
+                "captured_time": "19:49:11",
+                "media_type": "photo",
+                "component_group": "electrical_system",
+                "specific_component": "cabin_engine_firewall_pass_through_holes",
+                "stage": "electrical_refit",
+                "media_id": "20260517_194911_gp_jCrFS5PA",
+                "matched_tokens": []
+              }
+            ]
+          },
+          {
+            "hole_id": "FEH-002",
+            "photo_refs": "20260517_194806_gp_eou5ctOQ|20260517_194841_gp_eXh30voQ|20260517_194911_gp_jCrFS5PA",
+            "visible_area": "Upper cabin-side firewall above/near steering column boot",
+            "observed_opening": "Existing small or irregular opening beside rusted fastener/old sealant",
+            "what_it_does": "Existing small or irregular opening beside rusted fastener/old sealant",
+            "attach_or_route_to": "No circuit assigned yet; attach nothing here until the original purpose is proven, then either fit a sealed grommeted pass-through or plug/weld-close it.",
+            "condition_risk": "Rust around edge plus unclear original purpose",
+            "refit_decision": "Hold until endpoint and purpose are identified; plug or weld close if unused",
+            "verification_required": "Measure diameter/shape; inspect backside access; check if factory fitting or old accessory pass-through",
+            "closeout_evidence_required": "Close-up after repair or labelled reuse decision",
+            "notes": "Do not route new wiring through jagged or irregular sheet metal",
+            "evidence_images": [
+              {
+                "path": "../../photos/20260517_194806_gp_eou5ctOQ.jpg",
+                "caption": "Cabin Engine Firewall Pass Through Holes \u00b7 Electrical Refit \u00b7 2026-05-17",
+                "captured_date": "2026-05-17",
+                "captured_time": "19:48:06",
+                "media_type": "photo",
+                "component_group": "electrical_system",
+                "specific_component": "cabin_engine_firewall_pass_through_holes",
+                "stage": "electrical_refit",
+                "media_id": "20260517_194806_gp_eou5ctOQ",
+                "matched_tokens": []
+              },
+              {
+                "path": "../../photos/20260517_194841_gp_eXh30voQ.jpg",
+                "caption": "Cabin Engine Firewall Pass Through Holes \u00b7 Electrical Refit \u00b7 2026-05-17",
+                "captured_date": "2026-05-17",
+                "captured_time": "19:48:41",
+                "media_type": "photo",
+                "component_group": "electrical_system",
+                "specific_component": "cabin_engine_firewall_pass_through_holes",
+                "stage": "electrical_refit",
+                "media_id": "20260517_194841_gp_eXh30voQ",
+                "matched_tokens": []
+              },
+              {
+                "path": "../../photos/20260517_194911_gp_jCrFS5PA.jpg",
+                "caption": "Cabin Engine Firewall Pass Through Holes \u00b7 Electrical Refit \u00b7 2026-05-17",
+                "captured_date": "2026-05-17",
+                "captured_time": "19:49:11",
+                "media_type": "photo",
+                "component_group": "electrical_system",
+                "specific_component": "cabin_engine_firewall_pass_through_holes",
+                "stage": "electrical_refit",
+                "media_id": "20260517_194911_gp_jCrFS5PA",
+                "matched_tokens": []
+              }
+            ]
+          },
+          {
+            "hole_id": "FEH-003",
+            "photo_refs": "20260517_194841_gp_eXh30voQ|20260517_194911_gp_jCrFS5PA",
+            "visible_area": "Steering column/boot area on cabin-side firewall",
+            "observed_opening": "Existing steering column boot and adjacent clearance envelope",
+            "what_it_does": "Existing steering column boot and adjacent clearance envelope",
+            "attach_or_route_to": "No electrical attachment point; treat the steering-column boot area as a no-crowd zone and clip nearby looms away from column and pedal movement.",
+            "condition_risk": "Existing boot appears aged and surrounding holes/old sealant need sealing review",
+            "refit_decision": "Keep steering column boot separate from electrical pass-throughs and avoid crowding this movement zone",
+            "verification_required": "Check boot condition; verify full steering movement; confirm cable/loom clearance and no chafe path",
+            "closeout_evidence_required": "Final routed photo showing no loom or cable rubbing at steering boot",
+            "notes": "This is a no-crowd zone for new wiring unless protected clips and clearance are proven",
+            "evidence_images": [
+              {
+                "path": "../../photos/20260517_194841_gp_eXh30voQ.jpg",
+                "caption": "Cabin Engine Firewall Pass Through Holes \u00b7 Electrical Refit \u00b7 2026-05-17",
+                "captured_date": "2026-05-17",
+                "captured_time": "19:48:41",
+                "media_type": "photo",
+                "component_group": "electrical_system",
+                "specific_component": "cabin_engine_firewall_pass_through_holes",
+                "stage": "electrical_refit",
+                "media_id": "20260517_194841_gp_eXh30voQ",
+                "matched_tokens": []
+              },
+              {
+                "path": "../../photos/20260517_194911_gp_jCrFS5PA.jpg",
+                "caption": "Cabin Engine Firewall Pass Through Holes \u00b7 Electrical Refit \u00b7 2026-05-17",
+                "captured_date": "2026-05-17",
+                "captured_time": "19:49:11",
+                "media_type": "photo",
+                "component_group": "electrical_system",
+                "specific_component": "cabin_engine_firewall_pass_through_holes",
+                "stage": "electrical_refit",
+                "media_id": "20260517_194911_gp_jCrFS5PA",
+                "matched_tokens": []
+              }
+            ]
+          },
+          {
+            "hole_id": "FEH-004",
+            "photo_refs": "20260517_194754_gp_vXLV7rzA|20260517_194806_gp_eou5ctOQ",
+            "visible_area": "Lower/side cabin firewall opening context",
+            "observed_opening": "Secondary existing opening visible in context/close-up",
+            "what_it_does": "Secondary existing opening visible in context/close-up",
+            "attach_or_route_to": "Secondary lower/side route candidate only after square-on measurement and engine-side obstruction check; attach only with edge protection, seal, and strain relief.",
+            "condition_risk": "Photo set shows rust and old coating around holes but exact size needs direct measurement",
+            "refit_decision": "Use only as supporting context until measured; assign plug/grommet/closure after physical inspection",
+            "verification_required": "Take square-on photo and caliper measurement; inspect engine-side obstruction and drain/water exposure",
+            "closeout_evidence_required": "Labelled close-up plus decision recorded in Electrical Master",
+            "notes": "Blurry first photo is retained only as location context",
+            "evidence_images": [
+              {
+                "path": "../../photos/20260517_194754_gp_vXLV7rzA.jpg",
+                "caption": "Cabin Engine Firewall Pass Through Holes \u00b7 Electrical Refit \u00b7 2026-05-17",
+                "captured_date": "2026-05-17",
+                "captured_time": "19:47:54",
+                "media_type": "photo",
+                "component_group": "electrical_system",
+                "specific_component": "cabin_engine_firewall_pass_through_holes",
+                "stage": "electrical_refit",
+                "media_id": "20260517_194754_gp_vXLV7rzA",
+                "matched_tokens": []
+              },
+              {
+                "path": "../../photos/20260517_194806_gp_eou5ctOQ.jpg",
+                "caption": "Cabin Engine Firewall Pass Through Holes \u00b7 Electrical Refit \u00b7 2026-05-17",
+                "captured_date": "2026-05-17",
+                "captured_time": "19:48:06",
+                "media_type": "photo",
+                "component_group": "electrical_system",
+                "specific_component": "cabin_engine_firewall_pass_through_holes",
+                "stage": "electrical_refit",
+                "media_id": "20260517_194806_gp_eou5ctOQ",
+                "matched_tokens": []
+              }
+            ]
+          }
+        ],
         "diagram_reconciliation": [
           {
             "reconciliation_id": "EDR-001",
@@ -27950,11 +28526,11 @@ window.J40_DASHBOARD_DATA = {
             "reconciliation_id": "EDR-013",
             "diagram_scope": "EPS and glow plug high-current branches",
             "diagram_evidence": "EPS, Glow Plug System",
-            "workstream_alignment": "Partially matches the master fuse-plan note for EPS 60A and Glow 50A; EPS donor/controller procurement remains a separate steering workstream scout.",
+            "workstream_alignment": "Partially matches the master fuse-plan note for EPS 60A and Glow 50A; EPS donor/controller procurement remains a separate steering workstream scout and the General EPS Adapter now controls controller access and protected routing.",
             "reconciliation_status": "partial_match",
-            "action_required": "Keep EPS controller scouting separate, verify glow-plug system current draw, and confirm fuse sizing under load.",
+            "action_required": "Keep EPS controller scouting separate, verify glow-plug system current draw, confirm fuse sizing under load, and do not close EPS wiring until adapter mock-up proves controller connector access and pass-through protection.",
             "evidence_refs": "data/manual/workbook_tabs/electrical_master.csv#row_12|data/manual/procurement_queue.csv#part_power_steering_upgrade",
-            "notes": "EPS is present in the electrical topology but not yet a received/bench-proven donor stack."
+            "notes": "EPS is present in the electrical topology but not yet a received/bench-proven donor stack or General EPS Adapter mock-up."
           },
           {
             "reconciliation_id": "EDR-014",
@@ -31375,6 +31951,7 @@ window.J40_DASHBOARD_DATA = {
           "data/raw/imports/J40.jpg",
           "data/raw/imports/J40.graffle",
           "data/manual/engine_electrical_inputs_reconciliation_20260517.csv",
+          "data/manual/cabin_engine_firewall_holes_survey_20260517.csv",
           "data/manual/electrical_diagram_reconciliation_20260518.csv"
         ],
         "layout_templates": [
@@ -31824,6 +32401,188 @@ window.J40_DASHBOARD_DATA = {
                 "specific_component": "rear_cargo_floor",
                 "stage": "stripdown_cataloguing",
                 "media_id": "20260413_040659",
+                "matched_tokens": []
+              }
+            ]
+          }
+        ],
+        "firewall_pass_through_survey": [
+          {
+            "hole_id": "FEH-001",
+            "photo_refs": "20260517_194806_gp_eou5ctOQ|20260517_194841_gp_eXh30voQ|20260517_194911_gp_jCrFS5PA",
+            "visible_area": "Lower cabin-side firewall near steering column/pedal area",
+            "observed_opening": "Large existing round pass-through opening",
+            "what_it_does": "Large existing round pass-through opening",
+            "attach_or_route_to": "Candidate protected cabin-to-engine loom or control-cable pass-through after a correct grommet or bulkhead fitting is installed; secure the branch to cabin-side and engine-bay clips so it never bears on the hole edge.",
+            "condition_risk": "Open edge plus old sealant plus paint loss plus rust staining",
+            "refit_decision": "Reuse only if it receives correct split grommet or bulkhead fitting and clears steering/pedal movement; otherwise plug or close",
+            "verification_required": "Measure actual hole diameter with calipers; deburr edge; inspect both cabin and engine sides; confirm no water/fume path",
+            "closeout_evidence_required": "Labelled photo with final grommet or plug installed and route assignment",
+            "notes": "Primary candidate for protected loom or control-cable pass but not released from photo alone",
+            "evidence_images": [
+              {
+                "path": "../../photos/20260517_194806_gp_eou5ctOQ.jpg",
+                "caption": "Cabin Engine Firewall Pass Through Holes \u00b7 Electrical Refit \u00b7 2026-05-17",
+                "captured_date": "2026-05-17",
+                "captured_time": "19:48:06",
+                "media_type": "photo",
+                "component_group": "electrical_system",
+                "specific_component": "cabin_engine_firewall_pass_through_holes",
+                "stage": "electrical_refit",
+                "media_id": "20260517_194806_gp_eou5ctOQ",
+                "matched_tokens": []
+              },
+              {
+                "path": "../../photos/20260517_194841_gp_eXh30voQ.jpg",
+                "caption": "Cabin Engine Firewall Pass Through Holes \u00b7 Electrical Refit \u00b7 2026-05-17",
+                "captured_date": "2026-05-17",
+                "captured_time": "19:48:41",
+                "media_type": "photo",
+                "component_group": "electrical_system",
+                "specific_component": "cabin_engine_firewall_pass_through_holes",
+                "stage": "electrical_refit",
+                "media_id": "20260517_194841_gp_eXh30voQ",
+                "matched_tokens": []
+              },
+              {
+                "path": "../../photos/20260517_194911_gp_jCrFS5PA.jpg",
+                "caption": "Cabin Engine Firewall Pass Through Holes \u00b7 Electrical Refit \u00b7 2026-05-17",
+                "captured_date": "2026-05-17",
+                "captured_time": "19:49:11",
+                "media_type": "photo",
+                "component_group": "electrical_system",
+                "specific_component": "cabin_engine_firewall_pass_through_holes",
+                "stage": "electrical_refit",
+                "media_id": "20260517_194911_gp_jCrFS5PA",
+                "matched_tokens": []
+              }
+            ]
+          },
+          {
+            "hole_id": "FEH-002",
+            "photo_refs": "20260517_194806_gp_eou5ctOQ|20260517_194841_gp_eXh30voQ|20260517_194911_gp_jCrFS5PA",
+            "visible_area": "Upper cabin-side firewall above/near steering column boot",
+            "observed_opening": "Existing small or irregular opening beside rusted fastener/old sealant",
+            "what_it_does": "Existing small or irregular opening beside rusted fastener/old sealant",
+            "attach_or_route_to": "No circuit assigned yet; attach nothing here until the original purpose is proven, then either fit a sealed grommeted pass-through or plug/weld-close it.",
+            "condition_risk": "Rust around edge plus unclear original purpose",
+            "refit_decision": "Hold until endpoint and purpose are identified; plug or weld close if unused",
+            "verification_required": "Measure diameter/shape; inspect backside access; check if factory fitting or old accessory pass-through",
+            "closeout_evidence_required": "Close-up after repair or labelled reuse decision",
+            "notes": "Do not route new wiring through jagged or irregular sheet metal",
+            "evidence_images": [
+              {
+                "path": "../../photos/20260517_194806_gp_eou5ctOQ.jpg",
+                "caption": "Cabin Engine Firewall Pass Through Holes \u00b7 Electrical Refit \u00b7 2026-05-17",
+                "captured_date": "2026-05-17",
+                "captured_time": "19:48:06",
+                "media_type": "photo",
+                "component_group": "electrical_system",
+                "specific_component": "cabin_engine_firewall_pass_through_holes",
+                "stage": "electrical_refit",
+                "media_id": "20260517_194806_gp_eou5ctOQ",
+                "matched_tokens": []
+              },
+              {
+                "path": "../../photos/20260517_194841_gp_eXh30voQ.jpg",
+                "caption": "Cabin Engine Firewall Pass Through Holes \u00b7 Electrical Refit \u00b7 2026-05-17",
+                "captured_date": "2026-05-17",
+                "captured_time": "19:48:41",
+                "media_type": "photo",
+                "component_group": "electrical_system",
+                "specific_component": "cabin_engine_firewall_pass_through_holes",
+                "stage": "electrical_refit",
+                "media_id": "20260517_194841_gp_eXh30voQ",
+                "matched_tokens": []
+              },
+              {
+                "path": "../../photos/20260517_194911_gp_jCrFS5PA.jpg",
+                "caption": "Cabin Engine Firewall Pass Through Holes \u00b7 Electrical Refit \u00b7 2026-05-17",
+                "captured_date": "2026-05-17",
+                "captured_time": "19:49:11",
+                "media_type": "photo",
+                "component_group": "electrical_system",
+                "specific_component": "cabin_engine_firewall_pass_through_holes",
+                "stage": "electrical_refit",
+                "media_id": "20260517_194911_gp_jCrFS5PA",
+                "matched_tokens": []
+              }
+            ]
+          },
+          {
+            "hole_id": "FEH-003",
+            "photo_refs": "20260517_194841_gp_eXh30voQ|20260517_194911_gp_jCrFS5PA",
+            "visible_area": "Steering column/boot area on cabin-side firewall",
+            "observed_opening": "Existing steering column boot and adjacent clearance envelope",
+            "what_it_does": "Existing steering column boot and adjacent clearance envelope",
+            "attach_or_route_to": "No electrical attachment point; treat the steering-column boot area as a no-crowd zone and clip nearby looms away from column and pedal movement.",
+            "condition_risk": "Existing boot appears aged and surrounding holes/old sealant need sealing review",
+            "refit_decision": "Keep steering column boot separate from electrical pass-throughs and avoid crowding this movement zone",
+            "verification_required": "Check boot condition; verify full steering movement; confirm cable/loom clearance and no chafe path",
+            "closeout_evidence_required": "Final routed photo showing no loom or cable rubbing at steering boot",
+            "notes": "This is a no-crowd zone for new wiring unless protected clips and clearance are proven",
+            "evidence_images": [
+              {
+                "path": "../../photos/20260517_194841_gp_eXh30voQ.jpg",
+                "caption": "Cabin Engine Firewall Pass Through Holes \u00b7 Electrical Refit \u00b7 2026-05-17",
+                "captured_date": "2026-05-17",
+                "captured_time": "19:48:41",
+                "media_type": "photo",
+                "component_group": "electrical_system",
+                "specific_component": "cabin_engine_firewall_pass_through_holes",
+                "stage": "electrical_refit",
+                "media_id": "20260517_194841_gp_eXh30voQ",
+                "matched_tokens": []
+              },
+              {
+                "path": "../../photos/20260517_194911_gp_jCrFS5PA.jpg",
+                "caption": "Cabin Engine Firewall Pass Through Holes \u00b7 Electrical Refit \u00b7 2026-05-17",
+                "captured_date": "2026-05-17",
+                "captured_time": "19:49:11",
+                "media_type": "photo",
+                "component_group": "electrical_system",
+                "specific_component": "cabin_engine_firewall_pass_through_holes",
+                "stage": "electrical_refit",
+                "media_id": "20260517_194911_gp_jCrFS5PA",
+                "matched_tokens": []
+              }
+            ]
+          },
+          {
+            "hole_id": "FEH-004",
+            "photo_refs": "20260517_194754_gp_vXLV7rzA|20260517_194806_gp_eou5ctOQ",
+            "visible_area": "Lower/side cabin firewall opening context",
+            "observed_opening": "Secondary existing opening visible in context/close-up",
+            "what_it_does": "Secondary existing opening visible in context/close-up",
+            "attach_or_route_to": "Secondary lower/side route candidate only after square-on measurement and engine-side obstruction check; attach only with edge protection, seal, and strain relief.",
+            "condition_risk": "Photo set shows rust and old coating around holes but exact size needs direct measurement",
+            "refit_decision": "Use only as supporting context until measured; assign plug/grommet/closure after physical inspection",
+            "verification_required": "Take square-on photo and caliper measurement; inspect engine-side obstruction and drain/water exposure",
+            "closeout_evidence_required": "Labelled close-up plus decision recorded in Electrical Master",
+            "notes": "Blurry first photo is retained only as location context",
+            "evidence_images": [
+              {
+                "path": "../../photos/20260517_194754_gp_vXLV7rzA.jpg",
+                "caption": "Cabin Engine Firewall Pass Through Holes \u00b7 Electrical Refit \u00b7 2026-05-17",
+                "captured_date": "2026-05-17",
+                "captured_time": "19:47:54",
+                "media_type": "photo",
+                "component_group": "electrical_system",
+                "specific_component": "cabin_engine_firewall_pass_through_holes",
+                "stage": "electrical_refit",
+                "media_id": "20260517_194754_gp_vXLV7rzA",
+                "matched_tokens": []
+              },
+              {
+                "path": "../../photos/20260517_194806_gp_eou5ctOQ.jpg",
+                "caption": "Cabin Engine Firewall Pass Through Holes \u00b7 Electrical Refit \u00b7 2026-05-17",
+                "captured_date": "2026-05-17",
+                "captured_time": "19:48:06",
+                "media_type": "photo",
+                "component_group": "electrical_system",
+                "specific_component": "cabin_engine_firewall_pass_through_holes",
+                "stage": "electrical_refit",
+                "media_id": "20260517_194806_gp_eou5ctOQ",
                 "matched_tokens": []
               }
             ]
@@ -33156,7 +33915,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "36 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "37 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -33210,7 +33969,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 36 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 37 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -55640,27 +56399,28 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Left and right rear drum backing plates",
           "pipe_or_line": "",
-          "replace_scope": "replace_pair_after_identification",
-          "quantity": "2",
+          "replace_scope": "replace_after_sample_match",
+          "quantity": "actual_count_from_teardown",
           "photo_evidence": [
             "20260501_194322_gp_XuRtjN4w",
             "20260324_004852",
             "20260324_004906",
             "20260512_072723_gp_r9KEkOdg",
             "20260512_072742_gp_uSvGBUiA",
-            "20260512_072947_gp_bNB9GvHA"
+            "20260512_072947_gp_bNB9GvHA",
+            "20260524_025547_gp_yCvA0bxA"
           ],
-          "photo_status": "direct_location_plus_may12_context_photos",
-          "spec_status": "needs_drum_opening",
+          "photo_status": "direct_location_plus_drum_open_context_photos",
+          "spec_status": "sample_match_required_before_purchase",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
-          "current_action": "Do not remove the wheel cylinders until each drum/backing plate is photographed open. Once open, plan to replace both rear wheel cylinders unless they are confirmed fresh and leak-free.",
-          "exact_recreation_spec": "Match the fitted rear drum/backing-plate family, wheel-cylinder bore, mounting bolt pattern, port thread, pushrod end, and bleed-screw access; replace as left/right pair",
+          "current_action": "Do not buy from catalog images alone. The loose replacement cylinder image shows the mounting/port side, while the installed photo shows the drum-side barrel/boots. Photograph the backside/line-port/bleeder area and lower shoe area, then remove and keep old cylinders as samples before purchase.",
+          "exact_recreation_spec": "Match the fitted rear drum/backing-plate family, actual cylinder count, bore, mounting bolt pattern, port thread, pushrod end, boot shape, and bleed-screw access. Toyota 47550-69075 / 47560-69055 / 47570-69065 / 47580-69055 and A28-style four-cylinder kits are references only until the old samples match.",
           "material_spec": "Brake wheel cylinders with new bleed screws and dust boots; brake-fluid-compatible seals",
-          "critical_measurements": "Cylinder bore, mounting bolt spacing, port thread, pushrod/slot style, backing plate side, drum/shoe family, bleed screw size",
+          "critical_measurements": "Actual cylinder count per side, cylinder bore, mounting bolt spacing, port thread, pushrod/slot style, backing plate side, drum/shoe family, bleed screw size and access",
           "fit_and_test": "No fluid leak at boots or ports; bleed screws open cleanly; shoes sit square and return correctly after adjustment",
-          "source_ref": "docs_brake_workstream|rear_brake_drum_baseline",
-          "notes": "May 12 photos add outside drum/backing-plate context. Wheel cylinders are baseline age-replacement unless proven recently new and leak-free.",
+          "source_ref": "docs_brake_workstream|rear_brake_drum_baseline|user_image_2026-05-24_catalog_vs_installed_view_question",
+          "notes": "May 24 user challenged visual fit between loose cylinder kit and installed top cylinder. Treat catalog kit as candidate only; old removed cylinder controls final order.",
           "evidence_images": [
             {
               "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
@@ -55732,6 +56492,18 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rear_axle_and_leaf_springs",
               "stage": "steering_brakes_suspension",
               "media_id": "20260512_072947_gp_bNB9GvHA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-24",
+              "captured_date": "2026-05-24",
+              "captured_time": "02:55:47",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260524_025547_gp_yCvA0bxA",
               "matched_tokens": []
             }
           ]
@@ -56553,7 +57325,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "36 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "37 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -56636,7 +57408,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 36 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 37 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -56671,7 +57443,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
           "status": "in_progress",
-          "detail": "4 part rows still require price confirmation/order placement."
+          "detail": "3 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
@@ -56769,81 +57541,42 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_rear_brake_shoes_hardware",
+          "entry_id": "part_rear_brake_drums_pair_cruisercorps",
           "workstream": "brake_system",
-          "item": "Rear brake shoes and spring hardware set",
+          "item": "Rear brake drums pair - inspect/machine locally before any import",
           "status": "planned",
-          "procurement_stage": "inspect_then_buy",
+          "procurement_stage": "local_inspect_machine_or_replace_hold",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "",
+          "vendor": "local brake machine shop / local Toyota parts supplier",
           "supply_type": "part",
           "source": "expenses",
-          "source_ref": "part_rear_brake_shoes_hardware",
-          "evidence_ref": "BR-REAR-005|20260501_194322_gp_XuRtjN4w|20260324_004906",
-          "notes": "BASELINE MUST REPLACE: order shoes, return springs, hold-down springs, adjusters, and retainers after drum diameter, shoe width, and backing-plate family are confirmed.",
+          "source_ref": "part_rear_brake_drums_pair_cruisercorps",
+          "evidence_ref": "user_chat_2026-05-23_rear_drum_open|cruisercorps_553-115x2_reference_only|gmail_import_2026-05-24_no_brake_order|user_update_2026-05-24_local_only_no_expensive_imports",
+          "notes": "Do not order expensive imported drums by default. Inspect and measure the old drums first, machine locally only if safely within service limit, and replace locally only if scored, stepped, cracked, near/over limit, or machining quality is unsafe. Cruiser Corps 553-115 remains a reference only. Any import requires explicit approval.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-            "caption": "Rear brake shoes and spring hardware set \u00b7 local inventory photo",
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
+            "caption": "Rear brake drums pair - inspect/machine locally before any import \u00b7 automotive part reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
+            "specific_component": "semantic_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "20260501_194322_gp_XuRtjN4w",
+            "media_id": "generic_part",
             "matched_tokens": [
-              "photo_20260501_194322_gp_xurtjn4w"
+              "part"
             ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
-          }
-        },
-        {
-          "entry_id": "part_rear_wheel_cylinders_pair",
-          "workstream": "brake_system",
-          "item": "Rear wheel cylinders pair with bleed screws",
-          "status": "planned",
-          "procurement_stage": "inspect_then_buy",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_rear_wheel_cylinders_pair",
-          "evidence_ref": "BR-REAR-004|20260501_194322_gp_XuRtjN4w|20260324_004906",
-          "notes": "BASELINE MUST REPLACE as a left/right pair after drum opening confirms cylinder bore, port thread, mounting pattern, and pushrod style.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-            "caption": "Rear wheel cylinders pair with bleed screws \u00b7 local inventory photo",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260501_194322_gp_XuRtjN4w",
-            "matched_tokens": [
-              "photo_20260501_194322_gp_xurtjn4w"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
           }
         },
         {
@@ -56883,6 +57616,128 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "manual_override",
             "match_score": 999
+          }
+        },
+        {
+          "entry_id": "part_mech_brake_flex_hose_set",
+          "workstream": "brake_system",
+          "item": "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance",
+          "status": "spec_ready",
+          "procurement_stage": "price_check_first_before_other_brake_parts",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "SNA Industries / local brake pipe-hose specialist / Longman / Brandreth Road / Montgomery Road",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_mech_brake_flex_hose_set",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts",
+          "notes": "Spec ready via RPO-BRAKE-001A/B but do the brake-line price check first before buying more rear brake parts. First Pakistan-based FCP-style lead is SNA Industries because it lists steel brake pipes and brake hoses. Cheapest safe path is local 4.75 mm / 3/16 in brake-rated Bundy steel or CuNi/Cunifer hard-line fabrication copied from old samples, plus local complete crimped DOT/SAE J1401 or OEM-equivalent flex hose assemblies by sample. Imported FJ40 pre-bent kits are reference/price-ceiling only and are not approved. This package overlaps BR-FRONT-004 and BR-REAR-003; order as one hose/line package or as itemized lines, not both.",
+          "links": [
+            {
+              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+              "label": "Longman pipe and hose order CSV",
+              "download": true
+            },
+            {
+              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+              "label": "Longman pipe and hose order spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+              "label": "Pipe order release specs CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+              "label": "Pipe photo and measurement index CSV",
+              "download": true
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg",
+            "caption": "Brake hydraulic hose and line package - current car cropped front flex hose fitting context",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "part_mech_brake_flex_hose_set"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 999
+          }
+        },
+        {
+          "entry_id": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
+          "workstream": "brake_system",
+          "item": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred",
+          "status": "planned",
+          "procurement_stage": "price_check_priority_before_other_brake_parts",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "SNA Industries / local brake pipe specialist / Longman / Brandreth Road / Montgomery Road",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
+          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|gari_lahore_mild_steel_hydraulic_brake_pipe_reference|fedhill_25ft_cunifer_reference|fcp_euro_25ft_cunifer_reference|user_update_2026-05-24_price_brake_lines_before_other_parts",
+          "notes": "Quote this before buying more rear brake parts. First quote target is SNA Industries, because it is Pakistan-based and lists steel brake pipes and brake hoses. Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; quote both 25 ft minimum and a single 10000-12000 mm local coil for scrap flares, route corrections, and service loops. Use brake-rated Bundy steel or CuNi/Cunifer only; no bare copper, plumbing tube, compression fittings, or imported pre-bent FJ40 kit unless explicitly approved.",
+          "links": [
+            {
+              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+              "label": "Longman pipe and hose order CSV",
+              "download": true
+            },
+            {
+              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+              "label": "Longman pipe and hose order spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+              "label": "Pipe order release specs CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+              "label": "Pipe photo and measurement index CSV",
+              "download": true
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
+            "caption": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred \u00b7 hard-line bending and flaring reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "hard_line_bending_flaring_reference",
+            "matched_tokens": [
+              "hard",
+              "line",
+              "fabrication"
+            ],
+            "match_basis": "local_reference_image",
+            "match_score": 700
           }
         },
         {
@@ -56966,68 +57821,6 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
-          "workstream": "brake_system",
-          "item": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Longman / brake hydraulic pipe specialist",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
-          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001",
-          "notes": "Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; buy a single 10000 mm coil minimum if available, 12000 mm preferred for scrap flares, route corrections, and service loops. Use brake-rated bundy steel or CuNi/Cunifer only; no bare copper.",
-          "links": [
-            {
-              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-              "label": "Longman pipe and hose order CSV",
-              "download": true
-            },
-            {
-              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-              "label": "Longman pipe and hose order spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-              "label": "Pipe order release specs CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-              "label": "Pipe photo and measurement index CSV",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-            "caption": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred \u00b7 hard-line bending and flaring reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "hard_line_bending_flaring_reference",
-            "matched_tokens": [
-              "hard",
-              "line",
-              "fabrication"
-            ],
-            "match_basis": "local_reference_image",
-            "match_score": 700
-          }
-        },
-        {
           "entry_id": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
           "workstream": "brake_system",
           "item": "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection",
@@ -57086,6 +57879,84 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
+          }
+        },
+        {
+          "entry_id": "part_rear_brake_shoes_hardware",
+          "workstream": "brake_system",
+          "item": "Rear brake shoes, drum hardware, and wheel-cylinder bolt kit",
+          "status": "planned",
+          "procurement_stage": "purchase_ready_local_catalog_first_pending_measurement",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "local brake parts supplier / PakWheels-local lead / sample-match supplier",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_rear_brake_shoes_hardware",
+          "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports",
+          "notes": "BASELINE MUST REPLACE. Prefer local shoes, hardware, and wheel-cylinder fasteners; use the PakWheels K-2255-N/Y listing and imported catalog numbers only as search/reference leads. Before payment, measure shoe width and compare spring/adjuster layout; if this is a non-USA 9/1975+ 3-inch drum setup, use a matching local 3-inch shoe/hardware route. Keep old springs, adjusters, and anchors as samples until the new kit is dry-fitted. No expensive import unless explicitly approved.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+            "caption": "Rear brake shoes, drum hardware, and wheel-cylinder bolt kit \u00b7 local inventory photo \u00b7 local brake parts supplier / PakWheels-local lead / sample-match supplier",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260524_025547_gp_yCvA0bxA",
+            "matched_tokens": [
+              "photo_20260524_025547_gp_ycva0bxa"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "entry_id": "part_rear_center_brake_flex_hose",
+          "workstream": "brake_system",
+          "item": "Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference",
+          "status": "planned",
+          "procurement_stage": "purchase_ready_local_catalog_first_pending_sample_match",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "local brake hose/Toyota parts supplier",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_rear_center_brake_flex_hose",
+          "evidence_ref": "BR-REAR-003|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|user_chat_2026-05-23_rear_drum_open|cruisercorps_553-103_reference_only|gmail_import_2026-05-24_no_brake_order|user_update_2026-05-24_local_only_no_expensive_imports",
+          "notes": "BASELINE MUST REPLACE. Use Cruiser Corps 553-103 only as a dimension/spec reference for the pre-8/1980 rear drum axle context. Ask local brake-hose and Toyota suppliers first, then confirm old-sample/free-length, fitting style, crimp rating, retaining groove, and bracket retention before payment. No expensive import unless explicitly approved.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/rear_center_brake_flex_current_car_crop_20260501.jpg",
+            "caption": "Rear center brake flex hose - current car cropped rear axle and frame route context",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "part_rear_center_brake_flex_hose"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 999
           }
         },
         {
@@ -57195,8 +58066,8 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/expenses_lion_brake_fluid_dot_3_12oz_354ml_x6_0518a26e1a6c.webp",
-            "caption": "Lion Brake Fluid DOT-3 12oz/354ml x6 \u00b7 Autohub \u00b7 Selling Site Image",
+            "path": "../../deliverables/selling_site_images/images/expenses_dot_3_brake_fluid_x6_autohub_agreed_repl_0518a26e1a6c.webp",
+            "caption": "DOT 3 brake fluid x6 - Autohub agreed replacement/substitution received \u00b7 Autohub \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -57209,12 +58080,15 @@ window.J40_DASHBOARD_DATA = {
               "dot",
               "brake",
               "fluid",
-              "autohub"
+              "autohub",
+              "agreed",
+              "replacement",
+              "substitution"
             ],
             "match_basis": "selling_site_match",
             "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
             "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
-            "match_score": 224
+            "match_score": 236
           }
         },
         {
@@ -57257,65 +58131,42 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_brake_hydraulic_tees_unions_splitters_20260514",
+          "entry_id": "part_rear_wheel_cylinders_pair",
           "workstream": "brake_system",
-          "item": "Brake hydraulic splitter T-union and inline union replacement set",
+          "item": "Rear wheel cylinders - sample-match hold before any catalog kit",
           "status": "planned",
-          "procurement_stage": "spec_needed_before_order",
+          "procurement_stage": "sample_match_required_before_purchase",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "brake hydraulic pipe specialist",
+          "vendor": "local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
           "supply_type": "part",
           "source": "expenses",
-          "source_ref": "part_brake_hydraulic_tees_unions_splitters_20260514",
-          "evidence_ref": "user_update_2026-05-14_rear_axle_splitter_purchase_list|BR-REAR-002|BR-REAR-003|BR-SYS-001|BR-CAPTURE-001",
-          "notes": "Replace the rear axle T-union/splitter if corroded, damaged, seized, or mismatched, and replace any chassis inline unions/splitters disturbed during the full brake hard-line rebuild. Match thread, flare seat, port orientation, mounting hole/bracket style, and tube entry angles from old samples. Do not use plumbing brass or unknown hydraulic fittings.",
-          "links": [
-            {
-              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-              "label": "Longman pipe and hose order CSV",
-              "download": true
-            },
-            {
-              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-              "label": "Longman pipe and hose order spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-              "label": "Pipe order release specs CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-              "label": "Pipe photo and measurement index CSV",
-              "download": true
-            }
-          ],
+          "source_ref": "part_rear_wheel_cylinders_pair",
+          "evidence_ref": "BR-REAR-004|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|toyota_epc_upper_lower_rear_cylinders_reference|cruisercorps_A28_four_rear_cylinder_reference|fjparts_72_80_rear_set_reference|user_image_2026-05-24_catalog_vs_installed_view_question|user_update_2026-05-24_local_only_no_expensive_imports",
+          "notes": "BASELINE MUST REPLACE if old cylinders are leaking, seized, corroded, or unknown age, but do not buy the four-cylinder catalog kit from photo logic alone. The catalog image shows the loose cylinder mounting/port side, while the truck photo shows the drum-side barrel/boots, so the apparent mismatch is expected; however the purchase still requires backside photos or removed old cylinders to confirm count, mounting bolt spacing, bore, port thread, bleed screw access, pushrod/boot style, and whether a lower cylinder is fitted behind the hub/shoe area. Treat Toyota 47550-69075, 47560-69055, 47570-69065, 47580-69055 and Cruiser Corps A28/SOR 081-02C-KIT as references only until old samples match. No expensive import unless explicitly approved.",
+          "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-            "caption": "Brake hydraulic splitter T-union and inline union replacement set \u00b7 hard-line bending and flaring reference image",
+            "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+            "caption": "Rear wheel cylinders - sample-match hold before any catalog kit \u00b7 local inventory photo \u00b7 local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "local_reference_image",
+            "specific_component": "local_inventory_evidence",
             "stage": "procurement_reconciliation",
-            "media_id": "hard_line_bending_flaring_reference",
+            "media_id": "20260524_025547_gp_yCvA0bxA",
             "matched_tokens": [
-              "hard",
-              "line",
-              "fabrication"
+              "photo_20260524_025547_gp_ycva0bxa"
             ],
-            "match_basis": "local_reference_image",
-            "match_score": 700
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
           }
         },
         {
@@ -57352,66 +58203,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "20260331_224409",
             "matched_tokens": [
               "photo_20260331_224409"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
-          }
-        },
-        {
-          "entry_id": "part_brake_clutch_hard_line_fittings_20260514",
-          "workstream": "brake_system",
-          "item": "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats",
-          "status": "planned",
-          "procurement_stage": "spec_needed_before_order",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "brake hydraulic pipe specialist",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_brake_clutch_hard_line_fittings_20260514",
-          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-CAPTURE-001|20260514_111300_user_brake_flare_side_view",
-          "notes": "Order new brake-rated flare nuts and fittings only after the old fittings are identified. May 14 installed-fitting photos plus the user flare side-view point to Toyota-style double/inverted brake-line flares, but final payment still waits for removed-line straight-on sealing face, thread, and seat confirmation. Must cover master/proportioning ports, front hose chassis ends, rear center hose/T-union ends, rear wheel-cylinder ports, and clutch master/slave or clutch hose ends as fitted. Buy extras for practice/scrap flares; do not buy single-flare or ISO bubble fittings unless sample-proven.",
-          "links": [
-            {
-              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-              "label": "Longman pipe and hose order CSV",
-              "download": true
-            },
-            {
-              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-              "label": "Longman pipe and hose order spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-              "label": "Pipe order release specs CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-              "label": "Pipe photo and measurement index CSV",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../photos/20260514_111300_user_brake_flare_side_view.png",
-            "caption": "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats \u00b7 local inventory photo \u00b7 brake hydraulic pipe specialist",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260514_111300_user_brake_flare_side_view",
-            "matched_tokens": [
-              "photo_20260514_111300_user_brake_flare_side_view"
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 980
@@ -57697,61 +58488,22 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_rear_center_brake_flex_hose",
-          "workstream": "brake_system",
-          "item": "Rear center frame-to-axle brake flex hose - by end fittings and old-sample/free length",
-          "status": "planned",
-          "procurement_stage": "spec_needed_before_order",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_rear_center_brake_flex_hose",
-          "evidence_ref": "BR-REAR-003|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-          "notes": "BASELINE MUST REPLACE; order only after chassis-side and axle-side fitting thread/end style, bracket retention, and old-sample/free length are measured. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/rear_center_brake_flex_current_car_crop_20260501.jpg",
-            "caption": "Rear center brake flex hose - current car cropped rear axle and frame route context",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_rear_center_brake_flex_hose"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 999
-          }
-        },
-        {
           "entry_id": "part_rear_brake_line_cable_clips",
           "workstream": "brake_system",
           "item": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips",
           "status": "planned",
-          "procurement_stage": "spec_needed_before_order",
+          "procurement_stage": "spec_needed_before_order_local_hardware_first",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "",
+          "vendor": "local brake parts / hardware supplier",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_rear_brake_line_cable_clips",
-          "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA",
-          "notes": "BASELINE MUST REPLACE missing/corroded supports: May 12 photos add line/cable retainer context, but count and replace rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD. Use permanent supports, not cable ties, before final rear axle routing.",
+          "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA|user_update_2026-05-24_local_only_no_expensive_imports",
+          "notes": "BASELINE MUST REPLACE missing/corroded supports. Count and replace rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD using local/generic hardware matched to old samples. Use permanent supports, not cable ties, before final rear axle routing. No expensive imported clip kit unless explicitly approved.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -57759,7 +58511,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo",
+            "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo \u00b7 local brake parts / hardware supplier",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -57779,18 +58531,18 @@ window.J40_DASHBOARD_DATA = {
           "workstream": "brake_system",
           "item": "Rear parking brake cable set with clips and equalizer hardware",
           "status": "planned",
-          "procurement_stage": "spec_needed_before_order",
+          "procurement_stage": "spec_needed_before_order_pakistan_catalog_first",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "",
+          "vendor": "SNA Industries auto-control-cable lead / Fine Auto / NDE Store / Gari Parts / local Toyota-Land Cruiser supplier",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_rear_parking_brake_cable_set",
-          "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA",
-          "notes": "BASELINE MUST REPLACE during the suspension/brake access window; May 12 photos add rear cable/lever route context, but order only after cable end types, lengths, equalizer hardware, and backing-plate levers are confirmed from the removed samples.",
+          "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA|toyota_46410-60092_reference|cruiserparts_46410-60092_reference|web_mustakbil_sna_auto_control_cables|docs/pakistan-brake-piping-handbrake-sources-20260524.md|user_update_2026-05-24_local_only_no_expensive_imports",
+          "notes": "BASELINE MUST REPLACE during the suspension/brake access window. For a Pakistan-based FCP-style route, ask SNA first whether its auto-control-cable channel can supply or make this parking-brake cable, then ask Fine Auto, NDE Store, Gari Parts, and local Toyota/Land Cruiser suppliers using Toyota 46410-60092 as a candidate reference for 3/1976-12/1978 FJ40/FJ45. Final buy still requires old left/right cable samples for ends, lengths, sheath lengths, adjuster/equalizer hardware, and backing-plate levers. No expensive import or custom cable route unless explicitly approved.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -57798,7 +58550,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear parking brake cable set with clips and equalizer hardware \u00b7 local inventory photo",
+            "caption": "Rear parking brake cable set with clips and equalizer hardware \u00b7 local inventory photo \u00b7 SNA Industries auto-control-cable lead / Fine Auto / NDE Store / Gari Parts / local Toyota-Land Cruiser supplier",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -57814,22 +58566,22 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_mech_brake_flex_hose_set",
+          "entry_id": "part_brake_hydraulic_tees_unions_splitters_20260514",
           "workstream": "brake_system",
-          "item": "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance",
-          "status": "spec_ready",
-          "procurement_stage": "spec_ready_release_hold",
+          "item": "Brake hydraulic splitter T-union and inline union replacement set",
+          "status": "planned",
+          "procurement_stage": "spec_needed_before_order_quote_with_line_stock",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "",
+          "vendor": "local brake hydraulic pipe specialist",
           "supply_type": "part",
           "source": "expenses",
-          "source_ref": "part_mech_brake_flex_hose_set",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready via RPO-BRAKE-001A/B: buy new complete crimped brake hose assemblies, DOT/SAE J1401 or OEM-equivalent, not generic rubber hose. Online quote/purchase is acceptable after fitted end fittings, thread/banjo/seat, bracket retention, and old-sample/free length are measured. Ironman geometry is treated as effectively the same as the current setup, so no separate lift/geometry release action remains. Brake hard-line length basis remains new 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with new brake-rated fittings. This package overlaps BR-FRONT-004 and BR-REAR-003; order as one hose/line package or as itemized lines, not both.",
+          "source_ref": "part_brake_hydraulic_tees_unions_splitters_20260514",
+          "evidence_ref": "user_update_2026-05-14_rear_axle_splitter_purchase_list|BR-REAR-002|BR-REAR-003|BR-SYS-001|BR-CAPTURE-001|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts",
+          "notes": "Quote with the cheap brake-line package, but replace the rear axle T-union/splitter only if corroded, damaged, seized, or mismatched, and replace chassis inline unions/splitters only if disturbed during the full hard-line rebuild. Match thread, flare seat, port orientation, mounting hole/bracket style, and tube entry angles from old samples. Do not use plumbing brass or unknown hydraulic fittings.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -57857,20 +58609,82 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg",
-            "caption": "Brake hydraulic hose and line package - current car cropped front flex hose fitting context",
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
+            "caption": "Brake hydraulic splitter T-union and inline union replacement set \u00b7 hard-line bending and flaring reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
+            "specific_component": "local_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "",
+            "media_id": "hard_line_bending_flaring_reference",
             "matched_tokens": [
-              "part_mech_brake_flex_hose_set"
+              "hard",
+              "line",
+              "fabrication"
+            ],
+            "match_basis": "local_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "entry_id": "part_brake_clutch_hard_line_fittings_20260514",
+          "workstream": "brake_system",
+          "item": "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats",
+          "status": "planned",
+          "procurement_stage": "spec_needed_before_order_quote_with_line_stock",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "local brake hydraulic pipe specialist",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_brake_clutch_hard_line_fittings_20260514",
+          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-CAPTURE-001|20260514_111300_user_brake_flare_side_view|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts",
+          "notes": "Quote fittings with the cheap brake-line package, but order new brake-rated flare nuts and fittings only after the old fittings are identified. May 14 installed-fitting photos plus the user flare side-view point to Toyota-style double/inverted brake-line flares, but final payment still waits for removed-line straight-on sealing face, thread, and seat confirmation. Must cover master/proportioning ports, front hose chassis ends, rear center hose/T-union ends, rear wheel-cylinder ports, and clutch master/slave or clutch hose ends as fitted. Buy extras for practice/scrap flares; do not buy single-flare, ISO bubble, plumbing, or compression fittings unless sample-proven.",
+          "links": [
+            {
+              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+              "label": "Longman pipe and hose order CSV",
+              "download": true
+            },
+            {
+              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+              "label": "Longman pipe and hose order spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+              "label": "Pipe order release specs CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+              "label": "Pipe photo and measurement index CSV",
+              "download": true
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260514_111300_user_brake_flare_side_view.png",
+            "caption": "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats \u00b7 local inventory photo \u00b7 local brake hydraulic pipe specialist",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260514_111300_user_brake_flare_side_view",
+            "matched_tokens": [
+              "photo_20260514_111300_user_brake_flare_side_view"
             ],
             "match_basis": "local_inventory_evidence",
-            "match_score": 999
+            "match_score": 980
           }
         }
       ],
@@ -58002,12 +58816,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Front disc pads and retaining hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)",
-                "Clutch master and slave cylinder replace/rebuild pair - inspect then buy (inspect_then_buy; delivery not_ordered; amount missing)",
-                "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection (purchase_ready; delivery not_ordered; amount missing)"
+                "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
+                "Rear wheel cylinders - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
+                "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (price_check_priority_before_other_brake_parts; delivery not_ordered; amount missing)",
+                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price_check_first_before_other_brake_parts; delivery not_ordered; amount missing)",
+                "Rear brake shoes, drum hardware, and wheel-cylinder bolt kit (purchase_ready_local_catalog_first_pending_measurement; delivery not_ordered; amount missing)",
+                "Front disc pads and retaining hardware (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -58135,12 +58949,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
+                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order_pakistan_catalog_first; delivery not_ordered; amount missing)",
+                "Rear wheel cylinders - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
+                "Rear brake shoes, drum hardware, and wheel-cylinder bolt kit (purchase_ready_local_catalog_first_pending_measurement; delivery not_ordered; amount missing)",
                 "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)",
-                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection (purchase_ready; delivery not_ordered; amount missing)",
-                "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (spec_ready_release_hold; delivery not_ordered; amount missing)"
+                "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (price_check_priority_before_other_brake_parts; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -58269,9 +59083,9 @@ window.J40_DASHBOARD_DATA = {
                 "Clutch master and slave cylinder replace/rebuild pair - inspect then buy (inspect_then_buy; delivery not_ordered; amount missing)",
                 "Brake hydraulic opening prep remaining consumables - caps plugs bleed bottle cleaner rags catch tray (purchase_ready; delivery not_ordered; amount missing)",
                 "Brake master reservoir and proportioning service parts (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Clutch hard-line fitting set and route release - 4.75 mm hydraulic line (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)"
+                "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (price_check_priority_before_other_brake_parts; delivery not_ordered; amount missing)",
+                "Rear wheel cylinders - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
+                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price_check_first_before_other_brake_parts; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -58394,12 +59208,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (price_check_priority_before_other_brake_parts; delivery not_ordered; amount missing)",
+                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price_check_first_before_other_brake_parts; delivery not_ordered; amount missing)",
+                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order_pakistan_catalog_first; delivery not_ordered; amount missing)",
                 "Brake master reservoir and proportioning service parts (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Front disc pads and retaining hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)",
-                "Brake vacuum booster servo - dual diaphragm 44610-60050 market scout (local_market_quote_and_sample_match; delivery not_ordered; amount missing)",
-                "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
+                "Front disc pads and retaining hardware (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -58524,12 +59338,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear brake shoes and spring hardware set (inspect_then_buy; delivery not_ordered; amount missing)",
-                "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear wheel cylinders pair with bleed screws (inspect_then_buy; delivery not_ordered; amount missing)"
+                "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
+                "Rear wheel cylinders - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
+                "Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference (purchase_ready_local_catalog_first_pending_sample_match; delivery not_ordered; amount missing)",
+                "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips (spec_needed_before_order_local_hardware_first; delivery not_ordered; amount missing)",
+                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order_pakistan_catalog_first; delivery not_ordered; amount missing)",
+                "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             }
           ]
@@ -58547,11 +59361,12 @@ window.J40_DASHBOARD_DATA = {
       "owner_mode": "pro_led",
       "depends_on": [
         "chassis_fixing",
-        "electrical_reset"
+        "electrical_reset",
+        "fabrication_handoff"
       ],
-      "next_action": "Scout and quote a complete 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS kit, then control the J40 column layout, support-bracket fabrication, shaft/U-joint adaptation, EPS controller wiring, and steering validation before road use",
-      "exit_gate": "Complete matched donor kit is bench-tested and documented; column layout, fabricated support, shaft/coupler path, controller wiring, manual fallback, static checks, and staged road validation are all signed off",
-      "notes": "Expanded 2026-05-12 from market-scout-only into full EPS conversion workstream. The route remains column-assist EPS, not hydraulic steering. No engine removal is expected, but dashboard/firewall column support, shaft/U-joint/coupler adaptation, controller mounting, protected wiring, and steering validation are now explicit gates. May 12 removed J40 steering-column photo is the current vehicle-side upper-column/switch/wiring reference for EPS layout planning.",
+      "next_action": "Scout and quote a complete 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS kit, capture donor bracket/shaft geometry for the General EPS Adapter, then control the J40 column layout, adapter design/fabrication, shaft/U-joint adaptation, EPS controller wiring, and steering validation before road use",
+      "exit_gate": "Complete matched donor kit is bench-tested and documented; General EPS Adapter datum plate, firewall doubler, EPS saddle/clamp, clocking/spacer plates, replaceable shaft interfaces, controller access, manual fallback, static checks, and staged road validation are all signed off",
+      "notes": "Expanded 2026-05-12 from market-scout-only into full EPS conversion workstream. Updated 2026-05-22: the route remains column-assist EPS, not hydraulic steering, but J40 fitment now uses the General EPS Adapter as the controlling mechanical interface. No engine removal is expected. Donor brackets/support plates are references only; final release needs measured adapter mock-up, dashboard/firewall support, shaft/U-joint/coupler adaptation, controller mounting, protected wiring, and steering validation. May 12 removed J40 steering-column photo is the current vehicle-side upper-column/switch/wiring reference for EPS layout planning.",
       "evidence_source": [
         "whatsapp_fj40",
         "fj40-00263",
@@ -59017,7 +59832,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 20,
-      "reference_token_count": 9,
+      "reference_token_count": 10,
       "requirements": [],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
@@ -59039,7 +59854,7 @@ window.J40_DASHBOARD_DATA = {
           "scope": "Pre-purchase only",
           "quantity": "1 complete matched EPS kit",
           "plain_stall_request": "I need one complete 2005-2011 Toyota Vitz/Yaris 90-series electric EPS steering column set, chassis code SCP90 or NCP90, with matching computer/ECU, original plugs with wiring tails, shafts, U-joints, couplers, and brackets, tested working.",
-          "buy_target": "Buy candidate is only a 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 column-assist EPS set. Corolla, Axio, Prius, hydraulic steering parts, loose motors, loose ECUs, and mixed-family sets are quote/photo only. The J40 has no vehicle ECU, but this donor EPS route still needs the EPS system's own matched ECU/controller, or a seller-proven integrated controller on the column. Do not buy a bare column expecting it to run from J40 wiring alone. Donor pigtails are for connector identification and bench testing; final power, ground, trigger, and loom wiring must be new automotive cable and terminals.",
+          "buy_target": "Buy candidate is only a 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 column-assist EPS set. Corolla, Axio, Prius, hydraulic steering parts, loose motors, loose ECUs, and mixed-family sets are quote/photo only. The J40 has no vehicle ECU, but this donor EPS route still needs the EPS system's own matched ECU/controller, or a seller-proven integrated controller on the column. Do not buy a bare column expecting it to run from J40 wiring alone. Donor pigtails are for connector identification and bench testing; final power, ground, trigger, and loom wiring must be new automotive cable and terminals. J40 fitment now uses the measured General EPS Adapter route, so donor brackets are adapter-reference geometry rather than assumed bolt-on parts.",
           "must_include": [
             "Motorized EPS steering column with torque sensor and reduction housing.",
             "Matching EPS ECU/controller from the donor set, or a clearly verified integrated controller on the column.",
@@ -59047,7 +59862,8 @@ window.J40_DASHBOARD_DATA = {
             "Upper and lower intermediate shaft sections.",
             "U-joints, couplers, clamp brackets, support plates, and related donor fasteners.",
             "Readable column and ECU/controller labels or part numbers.",
-            "Seller can identify heavy power, ground, and ignition-trigger wires for the bench check."
+            "Seller can identify heavy power, ground, and ignition-trigger wires for the bench check.",
+            "Donor bracket hole spacing, saddle/clamp shape, motor clocking faces, and shaft centerline offsets photographed for the General EPS Adapter mock-up."
           ],
           "bench_test": [
             "Power the unit through the matched EPS ECU/controller before payment and rotate the input shaft both directions.",
@@ -59071,15 +59887,16 @@ window.J40_DASHBOARD_DATA = {
             "Column label and ECU/controller label.",
             "Input and output spline/shaft photos.",
             "All plugs and pigtails laid out clearly.",
-            "Full kit photo with column, EPS ECU/controller, plugs, pigtails, every included shaft, U-joint, coupler, bracket, support plate, and fastener visible."
+            "Full kit photo with column, EPS ECU/controller, plugs, pigtails, every included shaft, U-joint, coupler, bracket, support plate, and fastener visible.",
+            "Bracket hole spacing, saddle/clamp area, motor clocking faces, and shaft centerline offsets for the General EPS Adapter mock-up."
           ],
           "price_guidance": {
             "unit_price_range": "PKR 54,000-136,000",
             "total_value_range": "PKR 54,000-136,000",
             "negotiation_midpoint": "PKR 90,000",
-            "rule": "Do not pay complete-kit price for missing EPS ECU/controller, plugs, shafts, U-joints, couplers, or brackets."
+            "rule": "Do not pay complete-kit price for missing EPS ECU/controller, plugs, shafts, U-joints, couplers, or brackets. General EPS Adapter fabrication is separate from donor-kit price."
           },
-          "decision_rule": "Buy only if donor identity, complete matched kit contents, bench-test video, seller contact, return terms, and required photos are all captured before payment.",
+          "decision_rule": "Buy only if donor identity, complete matched kit contents, bench-test video, seller contact, return terms, required photos, and General EPS Adapter geometry are all captured before payment.",
           "image": {
             "path": "../../deliverables/selling_site_images/images/manual_overrides/eps_complete_column_set_reference.svg",
             "caption": "Complete Vitz/Yaris XP90 EPS column set checklist reference",
@@ -59317,20 +60134,28 @@ window.J40_DASHBOARD_DATA = {
       "linked_packages": [],
       "component_jobs": [
         {
+          "component_job_id": "eps_general_adapter_design_fabrication",
+          "component_group": "steering_column",
+          "current_status": "design_required",
+          "planned_action": "Design dry-fit and fabricate the removable General EPS Adapter with vehicle-side datum plate firewall doubler/spreader EPS saddle or clamp clocking/spacer plates replaceable upper/lower shaft interfaces and serviceable controller/fastener access",
+          "evidence_ref": "docs_eps_vitz_conversion_fabrication_plan|data_manual_fabrication_metal_stock_requirements",
+          "notes": "This is the new controlling mechanical interface for the EPS conversion. Release final metal only after cardboard/flat-bar/first-metal mock-up photos prove wheel position, motor clocking, shaft centerline, pedal/knee/dash/heater/wiring clearance, adapter rigidity, and manual EPS-off steering."
+        },
+        {
           "component_job_id": "eps_vitz_column_layout_measurement",
           "component_group": "steering_column",
           "current_status": "planning_required",
-          "planned_action": "Measure and photograph the J40 steering wheel position upper column angle dash support pedal clearance firewall pass-through steering-box input line donor EPS motor envelope shaft lengths and controller envelope before any cutting",
+          "planned_action": "Measure and photograph the J40 steering wheel position upper column angle dash support pedal clearance firewall pass-through steering-box input line donor EPS motor envelope shaft lengths controller envelope and General EPS Adapter datum points before any cutting",
           "evidence_ref": "docs_eps_vitz_conversion_fabrication_plan|eps_example_reference_images|20260512_211249_gp_MFXOIt2w",
-          "notes": "This is the first installation gate after procurement. May 12 removed J40 steering-column photo adds vehicle-side column/switch/wiring reference, but no irreversible column or shaft cuts until the EPS unit is mocked in place and the centerline/motor envelope are signed off."
+          "notes": "This is the first installation gate after procurement. May 12 removed J40 steering-column photo adds vehicle-side column/switch/wiring reference, but no irreversible column, shaft, firewall, drilling, or bracket cuts until the EPS unit and adapter datum are mocked in place and the centerline/motor envelope are signed off."
         },
         {
           "component_job_id": "eps_vitz_complete_kit_market_check",
           "component_group": "steering_procurement",
           "current_status": "planned_scope_lock",
-          "planned_action": "Capture 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 donor identity complete kit contents labels shafts U-joints couplers brackets bench-test evidence seller contact and return terms before payment",
+          "planned_action": "Capture 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 donor identity complete kit contents labels shafts U-joints couplers brackets donor bracket geometry for the General EPS Adapter bench-test evidence seller contact and return terms before payment",
           "evidence_ref": "whatsapp_fj40|fj40-00263|whatsapp_akber|akber_khan-00858",
-          "notes": "Pre-purchase market check only; close with buy reject or quote-only decision."
+          "notes": "Pre-purchase market check only; close with buy reject or quote-only decision. Donor brackets are reference geometry for the adapter and are not assumed bolt-on J40 parts."
         },
         {
           "component_job_id": "eps_vitz_connector_wire_id_check",
@@ -59352,7 +60177,7 @@ window.J40_DASHBOARD_DATA = {
           "component_job_id": "eps_vitz_shaft_u_joint_adaptation",
           "component_group": "steering_column",
           "current_status": "fabrication_required",
-          "planned_action": "Adapt the EPS output to the J40 steering-box input using controlled shaft sections U-joints couplers splines or machined adapters with correct phasing engagement and lock-to-lock clearance",
+          "planned_action": "Adapt the EPS output to the J40 steering-box input from the General EPS Adapter datum using controlled shaft sections U-joints couplers splines or machined adapters with replaceable upper/lower interfaces correct phasing engagement and lock-to-lock clearance",
           "evidence_ref": "docs_eps_vitz_conversion_fabrication_plan|eps_yaris_ii_lower_shaft_u_joint_allegro|eps_yaris_ii_intermediate_shaft_u_joint_allegro",
           "notes": "Safety-critical shaft work. Avoid casual welded steering-shaft joins; prove manual steering with EPS off and no bind/play before any road movement."
         },
@@ -59360,17 +60185,17 @@ window.J40_DASHBOARD_DATA = {
           "component_job_id": "eps_vitz_static_and_road_validation",
           "component_group": "steering_validation",
           "current_status": "validation_required",
-          "planned_action": "Validate EPS-off manual steering powered assist lock-to-lock shaft clearance bracket rigidity pedal/knee/dash clearance controller wiring security alignment low-speed yard turns and staged road checks",
+          "planned_action": "Validate EPS-off manual steering powered assist lock-to-lock shaft clearance General EPS Adapter rigidity bracket rigidity pedal/knee/dash clearance controller wiring security alignment low-speed yard turns and staged road checks",
           "evidence_ref": "docs_eps_vitz_conversion_fabrication_plan",
-          "notes": "Final release gate for the EPS conversion. Any binding shaft play bracket movement electrical fault or unclear manual fallback behavior blocks road use."
+          "notes": "Final release gate for the EPS conversion. Any binding shaft play adapter movement bracket movement electrical fault or unclear manual fallback behavior blocks road use."
         },
         {
           "component_job_id": "eps_vitz_support_bracket_design",
           "component_group": "steering_column",
           "current_status": "design_required",
-          "planned_action": "Design and dry-fit a triangulated dash/cowl/firewall EPS column support cradle with spreader or doubler plates where needed so motor torque is not carried by thin dash sheet metal",
+          "planned_action": "Design and dry-fit the General EPS Adapter support cradle as a triangulated dash/cowl/firewall structure with spreader or doubler plates where needed so motor torque is not carried by thin dash sheet metal",
           "evidence_ref": "docs_eps_vitz_conversion_fabrication_plan|eps_yaris_ii_support_bracket_area_allegro",
-          "notes": "Use donor brackets/support plates as references only. Release final metal only after cardboard/first metal mock-up photos prove rigidity and pedal/dash/wiring clearance."
+          "notes": "Use donor brackets/support plates as references only. Release final metal only after adapter mock-up photos prove rigidity and pedal/dash/wiring/controller clearance."
         }
       ],
       "issue_jobs": [],
@@ -59378,7 +60203,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Execute current workstream action",
           "status": "queued",
-          "detail": "Scout and quote a complete 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS kit, then control the J40 column layout, support-bracket fabrication, shaft/U-joint adaptation, EPS controller wiring, and steering validation before road use"
+          "detail": "Scout and quote a complete 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS kit, capture donor bracket/shaft geometry for the General EPS Adapter, then control the J40 column layout, adapter design/fabrication, shaft/U-joint adaptation, EPS controller wiring, and steering validation before road use"
         },
         {
           "label": "Confirm target donor only",
@@ -59398,22 +60223,22 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Capture seller evidence and decision",
           "status": "queued",
-          "detail": "Record seller contact, stall location, price, return window, donor claim, labels, full kit photos, bench-test video, and buy/no-buy decision."
+          "detail": "Record seller contact, stall location, price, return window, donor claim, labels, full kit photos, donor bracket/shaft geometry, bench-test video, and buy/no-buy decision."
         },
         {
           "label": "Map J40 column layout",
           "status": "queued",
-          "detail": "Measure steering-wheel position, dash/pedal/firewall clearance, steering-box input line, motor envelope, and controller location before any shaft is cut."
+          "detail": "Measure steering-wheel position, dash/pedal/firewall clearance, steering-box input line, motor envelope, controller location, and General EPS Adapter datum points before any shaft is cut."
         },
         {
-          "label": "Design column support structure",
+          "label": "Design General EPS Adapter",
           "status": "queued",
-          "detail": "Fabricate a triangulated dash/cowl/firewall support bracket or cradle that carries EPS motor torque without relying on thin dash sheet alone."
+          "detail": "Fabricate a removable datum plate, firewall doubler, EPS saddle/clamp, clocking/spacer plates, replaceable shaft interfaces, and triangulated support that carries EPS motor torque without relying on thin dash sheet alone."
         },
         {
           "label": "Adapt shafts and U-joints",
           "status": "queued",
-          "detail": "Build a phased intermediate shaft path with proper splined/DD couplers or machined adapters, no casual welded steering-shaft joins, and no bind lock-to-lock."
+          "detail": "Build a phased intermediate shaft path from the adapter datum with proper splined/DD couplers or machined adapters, no casual welded steering-shaft joins, and no bind lock-to-lock."
         },
         {
           "label": "Mount controller and protected wiring",
@@ -59431,6 +60256,11 @@ window.J40_DASHBOARD_DATA = {
           "detail": "No issue-specific checks are recorded for this workstream."
         },
         {
+          "label": "Component Task \u00b7 Eps General Adapter Design Fabrication",
+          "status": "design_required",
+          "detail": "Design dry-fit and fabricate the removable General EPS Adapter with vehicle-side datum plate firewall doubler/spreader EPS saddle or clamp clocking/spacer plates replaceable upper/lower shaft interfaces and serviceable controller/fastener access Notes: This is the new controlling mechanical interface for the EPS conversion. Release final metal only after cardboard/flat-bar/first-metal mock-up photos prove wheel position, motor clocking, shaft centerline, pedal/knee/dash/heater/wiring clearance, adapter rigidity, and manual EPS-off steering."
+        },
+        {
           "label": "Component Task \u00b7 Eps Vitz Controller Mount And Wiring",
           "status": "design_required",
           "detail": "Mount the matched EPS ECU/controller in a dry serviceable cabin position and build new fused power ground ignition-trigger terminals grommets labels and loom protection using donor pigtails only for identification Notes: Coordinate with electrical_reset and MIDI/fuse protection planning. No permanent loom tie-down until powered assist voltage drop ground quality and pass-through protection are checked."
@@ -59438,17 +60268,17 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Component Task \u00b7 Eps Vitz Support Bracket Design",
           "status": "design_required",
-          "detail": "Design and dry-fit a triangulated dash/cowl/firewall EPS column support cradle with spreader or doubler plates where needed so motor torque is not carried by thin dash sheet metal Notes: Use donor brackets/support plates as references only. Release final metal only after cardboard/first metal mock-up photos prove rigidity and pedal/dash/wiring clearance."
+          "detail": "Design and dry-fit the General EPS Adapter support cradle as a triangulated dash/cowl/firewall structure with spreader or doubler plates where needed so motor torque is not carried by thin dash sheet metal Notes: Use donor brackets/support plates as references only. Release final metal only after adapter mock-up photos prove rigidity and pedal/dash/wiring/controller clearance."
         },
         {
           "label": "Component Task \u00b7 Eps Vitz Shaft U Joint Adaptation",
           "status": "fabrication_required",
-          "detail": "Adapt the EPS output to the J40 steering-box input using controlled shaft sections U-joints couplers splines or machined adapters with correct phasing engagement and lock-to-lock clearance Notes: Safety-critical shaft work. Avoid casual welded steering-shaft joins; prove manual steering with EPS off and no bind/play before any road movement."
+          "detail": "Adapt the EPS output to the J40 steering-box input from the General EPS Adapter datum using controlled shaft sections U-joints couplers splines or machined adapters with replaceable upper/lower interfaces correct phasing engagement and lock-to-lock clearance Notes: Safety-critical shaft work. Avoid casual welded steering-shaft joins; prove manual steering with EPS off and no bind/play before any road movement."
         },
         {
           "label": "Component Task \u00b7 Eps Vitz Complete Kit Market Check",
           "status": "planned_scope_lock",
-          "detail": "Capture 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 donor identity complete kit contents labels shafts U-joints couplers brackets bench-test evidence seller contact and return terms before payment Notes: Pre-purchase market check only; close with buy reject or quote-only decision."
+          "detail": "Capture 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 donor identity complete kit contents labels shafts U-joints couplers brackets donor bracket geometry for the General EPS Adapter bench-test evidence seller contact and return terms before payment Notes: Pre-purchase market check only; close with buy reject or quote-only decision. Donor brackets are reference geometry for the adapter and are not assumed bolt-on J40 parts."
         },
         {
           "label": "Component Task \u00b7 Eps Vitz Connector Wire Id Check",
@@ -59458,12 +60288,12 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Component Task \u00b7 Eps Vitz Column Layout Measurement",
           "status": "planning_required",
-          "detail": "Measure and photograph the J40 steering wheel position upper column angle dash support pedal clearance firewall pass-through steering-box input line donor EPS motor envelope shaft lengths and controller envelope before any cutting Notes: This is the first installation gate after procurement. May 12 removed J40 steering-column photo adds vehicle-side column/switch/wiring reference, but no irreversible column or shaft cuts until the EPS unit is mocked in place and the centerline/motor envelope are signed off."
+          "detail": "Measure and photograph the J40 steering wheel position upper column angle dash support pedal clearance firewall pass-through steering-box input line donor EPS motor envelope shaft lengths controller envelope and General EPS Adapter datum points before any cutting Notes: This is the first installation gate after procurement. May 12 removed J40 steering-column photo adds vehicle-side column/switch/wiring reference, but no irreversible column, shaft, firewall, drilling, or bracket cuts until the EPS unit and adapter datum are mocked in place and the centerline/motor envelope are signed off."
         },
         {
           "label": "Component Task \u00b7 Eps Vitz Static And Road Validation",
           "status": "validation_required",
-          "detail": "Validate EPS-off manual steering powered assist lock-to-lock shaft clearance bracket rigidity pedal/knee/dash clearance controller wiring security alignment low-speed yard turns and staged road checks Notes: Final release gate for the EPS conversion. Any binding shaft play bracket movement electrical fault or unclear manual fallback behavior blocks road use."
+          "detail": "Validate EPS-off manual steering powered assist lock-to-lock shaft clearance General EPS Adapter rigidity bracket rigidity pedal/knee/dash clearance controller wiring security alignment low-speed yard turns and staged road checks Notes: Final release gate for the EPS conversion. Any binding shaft play adapter movement bracket movement electrical fault or unclear manual fallback behavior blocks road use."
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
@@ -59483,14 +60313,14 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Close workstream exit gate",
           "status": "queued",
-          "detail": "No linked package rows found. Exit gate: Complete matched donor kit is bench-tested and documented; column layout, fabricated support, shaft/coupler path, controller wiring, manual fallback, static checks, and staged road validation are all signed off"
+          "detail": "No linked package rows found. Exit gate: Complete matched donor kit is bench-tested and documented; General EPS Adapter datum plate, firewall doubler, EPS saddle/clamp, clocking/spacer plates, replaceable shaft interfaces, controller access, manual fallback, static checks, and staged road validation are all signed off"
         }
       ],
       "involved_parts": [
         {
           "entry_id": "part_power_steering_upgrade",
           "workstream": "eps_vitz_upgrade",
-          "item": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit",
+          "item": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit plus General EPS Adapter geometry",
           "status": "researching",
           "procurement_stage": "pre_payment_market_check",
           "payment_status": "not_paid",
@@ -59503,7 +60333,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_power_steering_upgrade",
           "evidence_ref": "user_seed|fj40-00006|fj40-00263|akber_khan-00346|akber_khan-00858",
-          "notes": "Market scout only: quote and buy/no-buy check for a complete matched 2005-2011 Vitz/Yaris SCP90/NCP90 EPS kit with its matched EPS ECU/controller or seller-proven integrated control, bench-test video, seller contact, return terms, and full kit photos before payment. The J40 has no vehicle ECU, but the donor EPS controller is still required for this route.",
+          "notes": "Market scout only: quote and buy/no-buy check for a complete matched 2005-2011 Vitz/Yaris SCP90/NCP90 EPS kit with its matched EPS ECU/controller or seller-proven integrated control, bench-test video, seller contact, return terms, full kit photos, and donor bracket/shaft geometry for the General EPS Adapter before payment. The J40 has no vehicle ECU, but the donor EPS controller is still required for this route. Adapter fabrication is a separate measured J40-specific release after the donor unit and vehicle-side datum points are mocked up.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -59511,7 +60341,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../deliverables/selling_site_images/images/manual_overrides/eps_complete_column_set_reference.svg",
-            "caption": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit \u00b7 complete Vitz/Yaris XP90 EPS column set checklist reference",
+            "caption": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit plus General EPS Adapter geometry \u00b7 complete Vitz/Yaris XP90 EPS column set checklist reference",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -59534,7 +60364,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "key": "eps_conversion_workstream",
           "title": "EPS Conversion Workstream",
-          "summary": "Procure one complete 2005-2011 SCP90/NCP90 Vitz/Yaris EPS donor set, then control the J40 column graft, support-bracket fabrication, shaft/U-joint adaptation, EPS controller wiring, and steering validation.",
+          "summary": "Procure one complete 2005-2011 SCP90/NCP90 Vitz/Yaris EPS donor set, then control the J40 column graft, General EPS Adapter fabrication, shaft/U-joint adaptation, EPS controller wiring, and steering validation.",
           "subtasks": [
             {
               "title": "Confirm Target Donor",
@@ -59704,7 +60534,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit (pre_payment_market_check; amount missing)"
+                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit plus General EPS Adapter geometry (pre_payment_market_check; amount missing)"
               ]
             },
             {
@@ -59878,7 +60708,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit (pre_payment_market_check; amount missing)"
+                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit plus General EPS Adapter geometry (pre_payment_market_check; amount missing)"
               ]
             },
             {
@@ -60049,7 +60879,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit (pre_payment_market_check; amount missing)"
+                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit plus General EPS Adapter geometry (pre_payment_market_check; amount missing)"
               ]
             },
             {
@@ -60223,20 +61053,20 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit (pre_payment_market_check; amount missing)"
+                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit plus General EPS Adapter geometry (pre_payment_market_check; amount missing)"
               ]
             },
             {
               "title": "Map J40 Column Layout",
               "priority": "P0",
               "remaining": "before any cutting or bracket drilling",
-              "instruction": "Freeze the steering-column packaging before committing to a cut, splice, or support bracket.",
+              "instruction": "Freeze the steering-column packaging and General EPS Adapter datum before committing to a cut, splice, firewall change, or support bracket.",
               "process_steps": [
                 "Photograph the J40 steering wheel, upper column, dash support, pedals, firewall pass-through, and steering-box input area before removal.",
                 "Measure steering-wheel height/reach, column angle, dash hole position, pedal clearance, firewall pass-through center, and steering-box input shaft line.",
-                "Measure the donor EPS motor/gearbox envelope, controller envelope, input/output shaft lengths, and bracket spacing.",
-                "Decide whether the preferred route keeps the J40 upper column and grafts the EPS lower down, or uses more donor column hardware.",
-                "Mock the EPS unit with cardboard/wood blocks and confirm motor clearance to pedals, knees, dash wiring, heater/ducting, and firewall."
+                "Measure the donor EPS motor/gearbox envelope, controller envelope, input/output shaft lengths, bracket spacing, saddle/clamp shape, and shaft centerline offsets.",
+                "Keep the preferred route on a J40-specific General EPS Adapter unless mock-up proves it is not safe or serviceable.",
+                "Mock the EPS unit and adapter with cardboard/wood blocks or flat bar and confirm motor clearance to pedals, knees, dash wiring, heater/ducting, and firewall."
               ],
               "tools": [
                 "Tape measure or calipers",
@@ -60396,7 +61226,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit (pre_payment_market_check; amount missing)"
+                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit plus General EPS Adapter geometry (pre_payment_market_check; amount missing)"
               ]
             },
             {
@@ -60573,7 +61403,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit (pre_payment_market_check; amount missing)"
+                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit plus General EPS Adapter geometry (pre_payment_market_check; amount missing)"
               ]
             },
             {
@@ -60747,7 +61577,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit (pre_payment_market_check; amount missing)"
+                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit plus General EPS Adapter geometry (pre_payment_market_check; amount missing)"
               ]
             },
             {
@@ -60926,7 +61756,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit (pre_payment_market_check; amount missing)"
+                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit plus General EPS Adapter geometry (pre_payment_market_check; amount missing)"
               ]
             },
             {
@@ -61101,7 +61931,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit (pre_payment_market_check; amount missing)"
+                "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit plus General EPS Adapter geometry (pre_payment_market_check; amount missing)"
               ]
             }
           ]
@@ -61500,7 +62330,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "36 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "37 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -61554,7 +62384,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 36 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 37 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -64327,26 +65157,26 @@ window.J40_DASHBOARD_DATA = {
     {
       "material_id": "fab_ms3_battery_stand_current",
       "workstream": "fabrication_handoff",
-      "package_or_scope": "battery_power_carrier_mount_rev_a",
+      "package_or_scope": "battery_power_carrier_mount_rev_a|eps_general_adapter",
       "procurement_entry_id": "part_fabrication_raw_mild_steel_plate_3mm_20260513",
       "raw_material": "3.0 mm mild-steel sheet/plate plus 90-degree angle/L-section stock",
       "estimate_to_buy": "1 sheet at least 600 x 600 mm; 1000 x 500 mm acceptable/preferred if similarly priced; plus 3.0 mm 90-degree mild-steel angle/L-section 25 x 25 x 3 mm or 30 x 30 x 3 mm, 3 m total",
-      "stock_basis": "Compact battery tray 340 x 265 deck, widened front/radiator access ladder flat face 660 x 310, hold-down 340 x 38, MIDI Rev D enclosure shelf pickups, side-mounted kill-switch shelf pickups, grommeted MIDI output side support, rotated relay top/front exit tabs, cutoff-output split support tabs, tray/access-ladder perimeter angle, small steel guards/rework, 20-25 percent cutting allowance",
-      "covered_fabrication": "Compact battery stand top tray/deck, widened front/radiator-side access ladder flat face, angle-stock tray/access-ladder perimeter and MIDI/kill-switch shelf pickup tabs for known component bases, battery hold-down crossbar, MIDI Rev D enclosure shelf/output support, rotated relay top/front exit support tabs, cutoff-output cable support tabs, small steel guard/bracket rework",
+      "stock_basis": "Compact battery tray 340 x 265 deck, widened front/radiator access ladder flat face 660 x 310, hold-down 340 x 38, MIDI Rev D enclosure shelf pickups, side-mounted kill-switch shelf pickups, grommeted MIDI output side support, rotated relay top/front exit tabs, cutoff-output split support tabs, tray/access-ladder perimeter angle, EPS General Adapter light tabs/templates, small steel guards/rework, 20-25 percent cutting allowance",
+      "covered_fabrication": "Compact battery stand top tray/deck, widened front/radiator-side access ladder flat face, angle-stock tray/access-ladder perimeter and MIDI/kill-switch shelf pickup tabs for known component bases, battery hold-down crossbar, MIDI Rev D enclosure shelf/output support, rotated relay top/front exit support tabs, cutoff-output cable support tabs, EPS General Adapter light tabs/templates, small steel guard/bracket rework",
       "release_status": "purchase_ready_estimate",
-      "notes": "Angle stock is the preferred way to make tray edges/upstands and raised access-ladder frame rails; keep sheet stock for the battery deck and flat component faces. Keep separate from tub repair steel so the battery stand stock is not consumed by body patches."
+      "notes": "Angle stock is the preferred way to make tray edges/upstands and raised access-ladder frame rails; keep sheet stock for the battery deck and flat component faces. EPS General Adapter use is limited to measured tabs/templates unless the stock estimate is reopened. Keep separate from tub repair steel so the battery stand stock is not consumed by body patches."
     },
     {
       "material_id": "fab_ms4_battery_radiator_current",
       "workstream": "fabrication_handoff",
-      "package_or_scope": "battery_power_carrier_mount_rev_a|front_radiator_two_side_retention_rev_a",
+      "package_or_scope": "battery_power_carrier_mount_rev_a|front_radiator_two_side_retention_rev_a|eps_general_adapter",
       "procurement_entry_id": "part_fabrication_raw_mild_steel_plate_4mm_20260513",
       "raw_material": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock",
-      "estimate_to_buy": "1 plate at least 700 x 450 mm; nearest stock size 1000 x 500 acceptable; plus 50 x 50 x 4 mm 90-degree mild-steel angle 1 m for radiator post and 40 x 40 x 4 mm 90-degree mild-steel angle 2 m for battery stand/upright mock-up if available; add short crush-tube/sleeve stock after final bolt size is chosen",
-      "stock_basis": "Battery compact formed chassis saddle nominal 220 x 230 flat pattern, adjustable offset bars 2x 360 x 60, compact upright bridge flat/gusset plates 2x 110 x 220 if angle route does not replace them, radiator saddle formed-angle post preferably from pre-formed 90-degree angle/L-section stock, structural angle for bridge/frame trials, trial allowance",
-      "covered_fabrication": "Chassis-bolted battery stand formed saddle/upright bridge/adjustable offset bars and bolt-through right-side radiator saddle/post bracket",
+      "estimate_to_buy": "1 plate at least 700 x 450 mm; nearest stock size 1000 x 500 acceptable; plus 50 x 50 x 4 mm 90-degree mild-steel angle 1 m for radiator post and 40 x 40 x 4 mm 90-degree mild-steel angle 2 m for battery stand/upright/EPS adapter cradle mock-up if available; add short crush-tube/sleeve stock after final bolt size is chosen",
+      "stock_basis": "Battery compact formed chassis saddle nominal 220 x 230 flat pattern, adjustable offset bars 2x 360 x 60, compact upright bridge flat/gusset plates 2x 110 x 220 if angle route does not replace them, radiator saddle formed-angle post preferably from pre-formed 90-degree angle/L-section stock, EPS General Adapter datum plate/firewall doubler/high-load tabs/cradle trials, structural angle for bridge/frame/adapter trials, trial allowance",
+      "covered_fabrication": "Chassis-bolted battery stand formed saddle/upright bridge/adjustable offset bars, bolt-through right-side radiator saddle/post bracket, and measured EPS General Adapter datum/doubler/saddle/cradle trial allowance",
       "release_status": "purchase_ready_estimate",
-      "notes": "Covers the current one-pickup compact battery carrier route with a formed chassis saddle plus adjustable body-side offset bars and simplified bolt-through formed-angle radiator saddle/post bracket trial allowance. Ask the steel stockholder first for pre-formed 90-degree L-section/angle stock for the radiator post and stand frame; keep the plate fallback for the chassis saddle, offset bars, and any flat upright/gusset plates."
+      "notes": "Covers the current one-pickup compact battery carrier route with a formed chassis saddle plus adjustable body-side offset bars, simplified bolt-through formed-angle radiator saddle/post bracket trial allowance, and measured EPS General Adapter trial/released pieces. Ask the steel stockholder first for pre-formed 90-degree L-section/angle stock for the radiator post, stand frame, and adapter cradle; keep the plate fallback for the chassis saddle, offset bars, EPS datum/doubler plates, and any flat upright/gusset plates."
     },
     {
       "material_id": "fab_al3_electrical_plates_current",
@@ -64557,7 +65387,7 @@ window.J40_DASHBOARD_DATA = {
         "suspension_upgrade"
       ],
       "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared",
-      "blocker_summary": "36 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+      "blocker_summary": "37 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
       "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
       "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
       "image": {
@@ -64631,12 +65461,12 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Close spec-ready release holds",
         "status": "in_progress",
-        "detail": "4 spec-ready rows still need release actions before purchase."
+        "detail": "3 spec-ready rows still need release actions before purchase."
       },
       {
         "label": "Confirm price and place purchase-ready orders",
         "status": "in_progress",
-        "detail": "27 rows still in purchase_ready."
+        "detail": "26 rows still in purchase_ready."
       },
       {
         "label": "Place selected quote orders",
@@ -64660,7 +65490,11 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "inspect_then_buy",
-        "count": 4
+        "count": 2
+      },
+      {
+        "stage": "local_inspect_machine_or_replace_hold",
+        "count": 1
       },
       {
         "stage": "local_market_quote_and_sample_match",
@@ -64675,12 +65509,28 @@ window.J40_DASHBOARD_DATA = {
         "count": 1
       },
       {
+        "stage": "price_check_first_before_other_brake_parts",
+        "count": 1
+      },
+      {
+        "stage": "price_check_priority_before_other_brake_parts",
+        "count": 1
+      },
+      {
         "stage": "purchase_ready",
-        "count": 27
+        "count": 26
       },
       {
         "stage": "purchase_ready_estimate",
         "count": 5
+      },
+      {
+        "stage": "purchase_ready_local_catalog_first_pending_measurement",
+        "count": 1
+      },
+      {
+        "stage": "purchase_ready_local_catalog_first_pending_sample_match",
+        "count": 1
       },
       {
         "stage": "purchase_ready_measured_stock",
@@ -64703,12 +65553,28 @@ window.J40_DASHBOARD_DATA = {
         "count": 1
       },
       {
+        "stage": "sample_match_required_before_purchase",
+        "count": 1
+      },
+      {
         "stage": "spec_needed_before_order",
-        "count": 15
+        "count": 10
+      },
+      {
+        "stage": "spec_needed_before_order_local_hardware_first",
+        "count": 1
+      },
+      {
+        "stage": "spec_needed_before_order_pakistan_catalog_first",
+        "count": 1
+      },
+      {
+        "stage": "spec_needed_before_order_quote_with_line_stock",
+        "count": 2
       },
       {
         "stage": "spec_ready_release_hold",
-        "count": 4
+        "count": 3
       }
     ],
     "counts_by_next_action": [
@@ -64961,7 +65827,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "Longman / brake hydraulic pipe specialist",
         "supply_type": "part",
         "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001",
-        "notes": "Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; buy a single 10000 mm coil minimum if available, 12000 mm preferred for scrap flares, route corrections, and service loops. Use brake-rated bundy steel or CuNi/Cunifer only; no bare copper.",
+        "notes": "Quote this before buying more rear brake parts. First quote target is SNA Industries, because it is Pakistan-based and lists steel brake pipes and brake hoses. Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; quote both 25 ft minimum and a single 10000-12000 mm local coil for scrap flares, route corrections, and service loops. Use brake-rated Bundy steel or CuNi/Cunifer only; no bare copper, plumbing tube, compression fittings, or imported pre-bent FJ40 kit unless explicitly approved.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -65820,77 +66686,40 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_rear_brake_shoes_hardware",
+        "entry_id": "part_rear_brake_drums_pair_cruisercorps",
         "workstream": "brake_system",
-        "item": "Rear brake shoes and spring hardware set",
+        "item": "Rear brake drums pair - inspect/machine locally before any import",
         "status": "planned",
-        "procurement_stage": "inspect_then_buy",
+        "procurement_stage": "local_inspect_machine_or_replace_hold",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "",
+        "vendor": "local brake machine shop / local Toyota parts supplier",
         "supply_type": "part",
-        "evidence_ref": "BR-REAR-005|20260501_194322_gp_XuRtjN4w|20260324_004906",
-        "notes": "BASELINE MUST REPLACE: order shoes, return springs, hold-down springs, adjusters, and retainers after drum diameter, shoe width, and backing-plate family are confirmed.",
+        "evidence_ref": "user_chat_2026-05-23_rear_drum_open|cruisercorps_553-115x2_reference_only|gmail_import_2026-05-24_no_brake_order|user_update_2026-05-24_local_only_no_expensive_imports",
+        "notes": "Do not order expensive imported drums by default. Inspect and measure the old drums first, machine locally only if safely within service limit, and replace locally only if scored, stepped, cracked, near/over limit, or machining quality is unsafe. Cruiser Corps 553-115 remains a reference only. Any import requires explicit approval.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-          "caption": "Rear brake shoes and spring hardware set \u00b7 local inventory photo",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
+          "caption": "Rear brake drums pair - inspect/machine locally before any import \u00b7 automotive part reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
+          "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "20260501_194322_gp_XuRtjN4w",
+          "media_id": "generic_part",
           "matched_tokens": [
-            "photo_20260501_194322_gp_xurtjn4w"
+            "part"
           ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
-        }
-      },
-      {
-        "entry_id": "part_rear_wheel_cylinders_pair",
-        "workstream": "brake_system",
-        "item": "Rear wheel cylinders pair with bleed screws",
-        "status": "planned",
-        "procurement_stage": "inspect_then_buy",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "BR-REAR-004|20260501_194322_gp_XuRtjN4w|20260324_004906",
-        "notes": "BASELINE MUST REPLACE as a left/right pair after drum opening confirms cylinder bore, port thread, mounting pattern, and pushrod style.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-          "caption": "Rear wheel cylinders pair with bleed screws \u00b7 local inventory photo",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260501_194322_gp_XuRtjN4w",
-          "matched_tokens": [
-            "photo_20260501_194322_gp_xurtjn4w"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
         }
       },
       {
@@ -65928,6 +66757,124 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "manual_override",
           "match_score": 999
+        }
+      },
+      {
+        "entry_id": "part_mech_brake_flex_hose_set",
+        "workstream": "brake_system",
+        "item": "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance",
+        "status": "spec_ready",
+        "procurement_stage": "price_check_first_before_other_brake_parts",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "SNA Industries / local brake pipe-hose specialist / Longman / Brandreth Road / Montgomery Road",
+        "supply_type": "part",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts",
+        "notes": "Spec ready via RPO-BRAKE-001A/B but do the brake-line price check first before buying more rear brake parts. First Pakistan-based FCP-style lead is SNA Industries because it lists steel brake pipes and brake hoses. Cheapest safe path is local 4.75 mm / 3/16 in brake-rated Bundy steel or CuNi/Cunifer hard-line fabrication copied from old samples, plus local complete crimped DOT/SAE J1401 or OEM-equivalent flex hose assemblies by sample. Imported FJ40 pre-bent kits are reference/price-ceiling only and are not approved. This package overlaps BR-FRONT-004 and BR-REAR-003; order as one hose/line package or as itemized lines, not both.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg",
+          "caption": "Brake hydraulic hose and line package - current car cropped front flex hose fitting context",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_mech_brake_flex_hose_set"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 999
+        }
+      },
+      {
+        "entry_id": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
+        "workstream": "brake_system",
+        "item": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred",
+        "status": "planned",
+        "procurement_stage": "price_check_priority_before_other_brake_parts",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "SNA Industries / local brake pipe specialist / Longman / Brandreth Road / Montgomery Road",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|gari_lahore_mild_steel_hydraulic_brake_pipe_reference|fedhill_25ft_cunifer_reference|fcp_euro_25ft_cunifer_reference|user_update_2026-05-24_price_brake_lines_before_other_parts",
+        "notes": "Quote this before buying more rear brake parts. First quote target is SNA Industries, because it is Pakistan-based and lists steel brake pipes and brake hoses. Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; quote both 25 ft minimum and a single 10000-12000 mm local coil for scrap flares, route corrections, and service loops. Use brake-rated Bundy steel or CuNi/Cunifer only; no bare copper, plumbing tube, compression fittings, or imported pre-bent FJ40 kit unless explicitly approved.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
+          "caption": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred \u00b7 hard-line bending and flaring reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "hard_line_bending_flaring_reference",
+          "matched_tokens": [
+            "hard",
+            "line",
+            "fabrication"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
         }
       },
       {
@@ -66007,66 +66954,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
-        "workstream": "brake_system",
-        "item": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Longman / brake hydraulic pipe specialist",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001",
-        "notes": "Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; buy a single 10000 mm coil minimum if available, 12000 mm preferred for scrap flares, route corrections, and service loops. Use brake-rated bundy steel or CuNi/Cunifer only; no bare copper.",
-        "links": [
-          {
-            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-            "label": "Longman pipe and hose order CSV",
-            "download": true
-          },
-          {
-            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-            "label": "Longman pipe and hose order spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-            "label": "Pipe order release specs CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Pipe photo and measurement index CSV",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-          "caption": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred \u00b7 hard-line bending and flaring reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "hard_line_bending_flaring_reference",
-          "matched_tokens": [
-            "hard",
-            "line",
-            "fabrication"
-          ],
-          "match_basis": "local_reference_image",
-          "match_score": 700
-        }
-      },
-      {
         "entry_id": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
         "workstream": "brake_system",
         "item": "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection",
@@ -66126,63 +67013,114 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_brake_hydraulic_tees_unions_splitters_20260514",
+        "entry_id": "part_rear_brake_shoes_hardware",
         "workstream": "brake_system",
-        "item": "Brake hydraulic splitter T-union and inline union replacement set",
+        "item": "Rear brake shoes, drum hardware, and wheel-cylinder bolt kit",
         "status": "planned",
-        "procurement_stage": "spec_needed_before_order",
+        "procurement_stage": "purchase_ready_local_catalog_first_pending_measurement",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "brake hydraulic pipe specialist",
+        "vendor": "local brake parts supplier / PakWheels-local lead / sample-match supplier",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_rear_axle_splitter_purchase_list|BR-REAR-002|BR-REAR-003|BR-SYS-001|BR-CAPTURE-001",
-        "notes": "Replace the rear axle T-union/splitter if corroded, damaged, seized, or mismatched, and replace any chassis inline unions/splitters disturbed during the full brake hard-line rebuild. Match thread, flare seat, port orientation, mounting hole/bracket style, and tube entry angles from old samples. Do not use plumbing brass or unknown hydraulic fittings.",
-        "links": [
-          {
-            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-            "label": "Longman pipe and hose order CSV",
-            "download": true
-          },
-          {
-            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-            "label": "Longman pipe and hose order spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-            "label": "Pipe order release specs CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Pipe photo and measurement index CSV",
-            "download": true
-          }
-        ],
+        "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports",
+        "notes": "BASELINE MUST REPLACE. Prefer local shoes, hardware, and wheel-cylinder fasteners; use the PakWheels K-2255-N/Y listing and imported catalog numbers only as search/reference leads. Before payment, measure shoe width and compare spring/adjuster layout; if this is a non-USA 9/1975+ 3-inch drum setup, use a matching local 3-inch shoe/hardware route. Keep old springs, adjusters, and anchors as samples until the new kit is dry-fitted. No expensive import unless explicitly approved.",
+        "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-          "caption": "Brake hydraulic splitter T-union and inline union replacement set \u00b7 hard-line bending and flaring reference image",
+          "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+          "caption": "Rear brake shoes, drum hardware, and wheel-cylinder bolt kit \u00b7 local inventory photo \u00b7 local brake parts supplier / PakWheels-local lead / sample-match supplier",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "local_reference_image",
+          "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
-          "media_id": "hard_line_bending_flaring_reference",
+          "media_id": "20260524_025547_gp_yCvA0bxA",
           "matched_tokens": [
-            "hard",
-            "line",
-            "fabrication"
+            "photo_20260524_025547_gp_ycva0bxa"
           ],
-          "match_basis": "local_reference_image",
-          "match_score": 700
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "entry_id": "part_rear_center_brake_flex_hose",
+        "workstream": "brake_system",
+        "item": "Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference",
+        "status": "planned",
+        "procurement_stage": "purchase_ready_local_catalog_first_pending_sample_match",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "local brake hose/Toyota parts supplier",
+        "supply_type": "part",
+        "evidence_ref": "BR-REAR-003|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|user_chat_2026-05-23_rear_drum_open|cruisercorps_553-103_reference_only|gmail_import_2026-05-24_no_brake_order|user_update_2026-05-24_local_only_no_expensive_imports",
+        "notes": "BASELINE MUST REPLACE. Use Cruiser Corps 553-103 only as a dimension/spec reference for the pre-8/1980 rear drum axle context. Ask local brake-hose and Toyota suppliers first, then confirm old-sample/free-length, fitting style, crimp rating, retaining groove, and bracket retention before payment. No expensive import unless explicitly approved.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/rear_center_brake_flex_current_car_crop_20260501.jpg",
+          "caption": "Rear center brake flex hose - current car cropped rear axle and frame route context",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_rear_center_brake_flex_hose"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 999
+        }
+      },
+      {
+        "entry_id": "part_rear_wheel_cylinders_pair",
+        "workstream": "brake_system",
+        "item": "Rear wheel cylinders - sample-match hold before any catalog kit",
+        "status": "planned",
+        "procurement_stage": "sample_match_required_before_purchase",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
+        "supply_type": "part",
+        "evidence_ref": "BR-REAR-004|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|toyota_epc_upper_lower_rear_cylinders_reference|cruisercorps_A28_four_rear_cylinder_reference|fjparts_72_80_rear_set_reference|user_image_2026-05-24_catalog_vs_installed_view_question|user_update_2026-05-24_local_only_no_expensive_imports",
+        "notes": "BASELINE MUST REPLACE if old cylinders are leaking, seized, corroded, or unknown age, but do not buy the four-cylinder catalog kit from photo logic alone. The catalog image shows the loose cylinder mounting/port side, while the truck photo shows the drum-side barrel/boots, so the apparent mismatch is expected; however the purchase still requires backside photos or removed old cylinders to confirm count, mounting bolt spacing, bore, port thread, bleed screw access, pushrod/boot style, and whether a lower cylinder is fitted behind the hub/shoe area. Treat Toyota 47550-69075, 47560-69055, 47570-69065, 47580-69055 and Cruiser Corps A28/SOR 081-02C-KIT as references only until old samples match. No expensive import unless explicitly approved.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+          "caption": "Rear wheel cylinders - sample-match hold before any catalog kit \u00b7 local inventory photo \u00b7 local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260524_025547_gp_yCvA0bxA",
+          "matched_tokens": [
+            "photo_20260524_025547_gp_ycva0bxa"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
         }
       },
       {
@@ -66217,64 +67155,6 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "20260331_224409",
           "matched_tokens": [
             "photo_20260331_224409"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
-        }
-      },
-      {
-        "entry_id": "part_brake_clutch_hard_line_fittings_20260514",
-        "workstream": "brake_system",
-        "item": "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats",
-        "status": "planned",
-        "procurement_stage": "spec_needed_before_order",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "brake hydraulic pipe specialist",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-CAPTURE-001|20260514_111300_user_brake_flare_side_view",
-        "notes": "Order new brake-rated flare nuts and fittings only after the old fittings are identified. May 14 installed-fitting photos plus the user flare side-view point to Toyota-style double/inverted brake-line flares, but final payment still waits for removed-line straight-on sealing face, thread, and seat confirmation. Must cover master/proportioning ports, front hose chassis ends, rear center hose/T-union ends, rear wheel-cylinder ports, and clutch master/slave or clutch hose ends as fitted. Buy extras for practice/scrap flares; do not buy single-flare or ISO bubble fittings unless sample-proven.",
-        "links": [
-          {
-            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-            "label": "Longman pipe and hose order CSV",
-            "download": true
-          },
-          {
-            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-            "label": "Longman pipe and hose order spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-            "label": "Pipe order release specs CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Pipe photo and measurement index CSV",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../photos/20260514_111300_user_brake_flare_side_view.png",
-          "caption": "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats \u00b7 local inventory photo \u00b7 brake hydraulic pipe specialist",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260514_111300_user_brake_flare_side_view",
-          "matched_tokens": [
-            "photo_20260514_111300_user_brake_flare_side_view"
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 980
@@ -66548,57 +67428,20 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_rear_center_brake_flex_hose",
-        "workstream": "brake_system",
-        "item": "Rear center frame-to-axle brake flex hose - by end fittings and old-sample/free length",
-        "status": "planned",
-        "procurement_stage": "spec_needed_before_order",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "BR-REAR-003|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-        "notes": "BASELINE MUST REPLACE; order only after chassis-side and axle-side fitting thread/end style, bracket retention, and old-sample/free length are measured. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/rear_center_brake_flex_current_car_crop_20260501.jpg",
-          "caption": "Rear center brake flex hose - current car cropped rear axle and frame route context",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_rear_center_brake_flex_hose"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 999
-        }
-      },
-      {
         "entry_id": "part_rear_brake_line_cable_clips",
         "workstream": "brake_system",
         "item": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips",
         "status": "planned",
-        "procurement_stage": "spec_needed_before_order",
+        "procurement_stage": "spec_needed_before_order_local_hardware_first",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "",
+        "vendor": "local brake parts / hardware supplier",
         "supply_type": "part",
-        "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA",
-        "notes": "BASELINE MUST REPLACE missing/corroded supports: May 12 photos add line/cable retainer context, but count and replace rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD. Use permanent supports, not cable ties, before final rear axle routing.",
+        "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA|user_update_2026-05-24_local_only_no_expensive_imports",
+        "notes": "BASELINE MUST REPLACE missing/corroded supports. Count and replace rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD using local/generic hardware matched to old samples. Use permanent supports, not cable ties, before final rear axle routing. No expensive imported clip kit unless explicitly approved.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -66606,7 +67449,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo",
+          "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo \u00b7 local brake parts / hardware supplier",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -66626,16 +67469,16 @@ window.J40_DASHBOARD_DATA = {
         "workstream": "brake_system",
         "item": "Rear parking brake cable set with clips and equalizer hardware",
         "status": "planned",
-        "procurement_stage": "spec_needed_before_order",
+        "procurement_stage": "spec_needed_before_order_pakistan_catalog_first",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "",
+        "vendor": "SNA Industries auto-control-cable lead / Fine Auto / NDE Store / Gari Parts / local Toyota-Land Cruiser supplier",
         "supply_type": "part",
-        "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA",
-        "notes": "BASELINE MUST REPLACE during the suspension/brake access window; May 12 photos add rear cable/lever route context, but order only after cable end types, lengths, equalizer hardware, and backing-plate levers are confirmed from the removed samples.",
+        "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA|toyota_46410-60092_reference|cruiserparts_46410-60092_reference|web_mustakbil_sna_auto_control_cables|docs/pakistan-brake-piping-handbrake-sources-20260524.md|user_update_2026-05-24_local_only_no_expensive_imports",
+        "notes": "BASELINE MUST REPLACE during the suspension/brake access window. For a Pakistan-based FCP-style route, ask SNA first whether its auto-control-cable channel can supply or make this parking-brake cable, then ask Fine Auto, NDE Store, Gari Parts, and local Toyota/Land Cruiser suppliers using Toyota 46410-60092 as a candidate reference for 3/1976-12/1978 FJ40/FJ45. Final buy still requires old left/right cable samples for ends, lengths, sheath lengths, adjuster/equalizer hardware, and backing-plate levers. No expensive import or custom cable route unless explicitly approved.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -66643,7 +67486,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear parking brake cable set with clips and equalizer hardware \u00b7 local inventory photo",
+          "caption": "Rear parking brake cable set with clips and equalizer hardware \u00b7 local inventory photo \u00b7 SNA Industries auto-control-cable lead / Fine Auto / NDE Store / Gari Parts / local Toyota-Land Cruiser supplier",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -66659,20 +67502,20 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_mech_brake_flex_hose_set",
+        "entry_id": "part_brake_hydraulic_tees_unions_splitters_20260514",
         "workstream": "brake_system",
-        "item": "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance",
-        "status": "spec_ready",
-        "procurement_stage": "spec_ready_release_hold",
+        "item": "Brake hydraulic splitter T-union and inline union replacement set",
+        "status": "planned",
+        "procurement_stage": "spec_needed_before_order_quote_with_line_stock",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "",
+        "vendor": "local brake hydraulic pipe specialist",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready via RPO-BRAKE-001A/B: buy new complete crimped brake hose assemblies, DOT/SAE J1401 or OEM-equivalent, not generic rubber hose. Online quote/purchase is acceptable after fitted end fittings, thread/banjo/seat, bracket retention, and old-sample/free length are measured. Ironman geometry is treated as effectively the same as the current setup, so no separate lift/geometry release action remains. Brake hard-line length basis remains new 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with new brake-rated fittings. This package overlaps BR-FRONT-004 and BR-REAR-003; order as one hose/line package or as itemized lines, not both.",
+        "evidence_ref": "user_update_2026-05-14_rear_axle_splitter_purchase_list|BR-REAR-002|BR-REAR-003|BR-SYS-001|BR-CAPTURE-001|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts",
+        "notes": "Quote with the cheap brake-line package, but replace the rear axle T-union/splitter only if corroded, damaged, seized, or mismatched, and replace chassis inline unions/splitters only if disturbed during the full hard-line rebuild. Match thread, flare seat, port orientation, mounting hole/bracket style, and tube entry angles from old samples. Do not use plumbing brass or unknown hydraulic fittings.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -66700,20 +67543,80 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg",
-          "caption": "Brake hydraulic hose and line package - current car cropped front flex hose fitting context",
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
+          "caption": "Brake hydraulic splitter T-union and inline union replacement set \u00b7 hard-line bending and flaring reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
+          "specific_component": "local_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "",
+          "media_id": "hard_line_bending_flaring_reference",
           "matched_tokens": [
-            "part_mech_brake_flex_hose_set"
+            "hard",
+            "line",
+            "fabrication"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_brake_clutch_hard_line_fittings_20260514",
+        "workstream": "brake_system",
+        "item": "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats",
+        "status": "planned",
+        "procurement_stage": "spec_needed_before_order_quote_with_line_stock",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "local brake hydraulic pipe specialist",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-CAPTURE-001|20260514_111300_user_brake_flare_side_view|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts",
+        "notes": "Quote fittings with the cheap brake-line package, but order new brake-rated flare nuts and fittings only after the old fittings are identified. May 14 installed-fitting photos plus the user flare side-view point to Toyota-style double/inverted brake-line flares, but final payment still waits for removed-line straight-on sealing face, thread, and seat confirmation. Must cover master/proportioning ports, front hose chassis ends, rear center hose/T-union ends, rear wheel-cylinder ports, and clutch master/slave or clutch hose ends as fitted. Buy extras for practice/scrap flares; do not buy single-flare, ISO bubble, plumbing, or compression fittings unless sample-proven.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260514_111300_user_brake_flare_side_view.png",
+          "caption": "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats \u00b7 local inventory photo \u00b7 local brake hydraulic pipe specialist",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260514_111300_user_brake_flare_side_view",
+          "matched_tokens": [
+            "photo_20260514_111300_user_brake_flare_side_view"
           ],
           "match_basis": "local_inventory_evidence",
-          "match_score": 999
+          "match_score": 980
         }
       },
       {
@@ -67541,7 +68444,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_power_steering_upgrade",
         "workstream": "eps_vitz_upgrade",
-        "item": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit",
+        "item": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit plus General EPS Adapter geometry",
         "status": "researching",
         "procurement_stage": "pre_payment_market_check",
         "payment_status": "not_paid",
@@ -67552,7 +68455,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_seed|fj40-00006|fj40-00263|akber_khan-00346|akber_khan-00858",
-        "notes": "Market scout only: quote and buy/no-buy check for a complete matched 2005-2011 Vitz/Yaris SCP90/NCP90 EPS kit with its matched EPS ECU/controller or seller-proven integrated control, bench-test video, seller contact, return terms, and full kit photos before payment. The J40 has no vehicle ECU, but the donor EPS controller is still required for this route.",
+        "notes": "Market scout only: quote and buy/no-buy check for a complete matched 2005-2011 Vitz/Yaris SCP90/NCP90 EPS kit with its matched EPS ECU/controller or seller-proven integrated control, bench-test video, seller contact, return terms, full kit photos, and donor bracket/shaft geometry for the General EPS Adapter before payment. The J40 has no vehicle ECU, but the donor EPS controller is still required for this route. Adapter fabrication is a separate measured J40-specific release after the donor unit and vehicle-side datum points are mocked up.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -67560,7 +68463,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../deliverables/selling_site_images/images/manual_overrides/eps_complete_column_set_reference.svg",
-          "caption": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit \u00b7 complete Vitz/Yaris XP90 EPS column set checklist reference",
+          "caption": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit plus General EPS Adapter geometry \u00b7 complete Vitz/Yaris XP90 EPS column set checklist reference",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -69084,7 +69987,7 @@ window.J40_DASHBOARD_DATA = {
     "open_counts_by_workstream": [
       {
         "workstream": "brake_system",
-        "open_count": 22,
+        "open_count": 23,
         "image": {
           "path": "../../photos/20260422_004356_gp_vTFgPfAQ_2.jpg",
           "caption": "Engine Bay Chassis Interface \u00b7 Underside Inspection \u00b7 2026-04-22",
@@ -70061,11 +70964,11 @@ window.J40_DASHBOARD_DATA = {
         "source_sheet": "PK_Quality_Path",
         "source_ref": "pk_quality_path#row_5",
         "system": "EPS",
-        "item": "Bracket/support fabrication + column alignment",
+        "item": "General EPS Adapter fabrication + column alignment",
         "stage": "",
         "decision": "FABRICATE_AFTER_TRIAL_FIT",
         "cost": "27500",
-        "notes": "Column axis alignment and weld quality inspection before final paint.",
+        "notes": "Column axis adapter rigidity fastener access and weld/bolt quality inspection before final paint.",
         "links": [
           {
             "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_fabrication+shop+lahore/",
@@ -70085,7 +70988,7 @@ window.J40_DASHBOARD_DATA = {
         "stage": "",
         "decision": "MEASURE_THEN_BUY",
         "cost": "30000",
-        "notes": "No binding through full steering sweep; proper phasing and lock-to-lock clearance.",
+        "notes": "No binding through full steering sweep; proper phasing lock-to-lock clearance and replaceable adapter interfaces.",
         "links": [
           {
             "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_steering+u+joint+toyota/",
@@ -70191,7 +71094,7 @@ window.J40_DASHBOARD_DATA = {
         "stage": "",
         "decision": "BUY_AFTER_PHYSICAL_TEST",
         "cost": "100000",
-        "notes": "Bench test under load; no play/noise; matching splines for shaft plan.",
+        "notes": "Bench test under load; no play/noise; capture bracket hole spacing motor clocking and matching splines for adapter/shaft plan.",
         "links": [
           {
             "url": "https://www.pakwheels.com/accessories-spare-parts/search/-/q_vitz+eps+column/",
@@ -71627,7 +72530,7 @@ window.J40_DASHBOARD_DATA = {
         "scope": "Pre-purchase only",
         "quantity": "1 complete matched EPS kit",
         "plain_stall_request": "I need one complete 2005-2011 Toyota Vitz/Yaris 90-series electric EPS steering column set, chassis code SCP90 or NCP90, with matching computer/ECU, original plugs with wiring tails, shafts, U-joints, couplers, and brackets, tested working.",
-        "buy_target": "Buy candidate is only a 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 column-assist EPS set. Corolla, Axio, Prius, hydraulic steering parts, loose motors, loose ECUs, and mixed-family sets are quote/photo only. The J40 has no vehicle ECU, but this donor EPS route still needs the EPS system's own matched ECU/controller, or a seller-proven integrated controller on the column. Do not buy a bare column expecting it to run from J40 wiring alone. Donor pigtails are for connector identification and bench testing; final power, ground, trigger, and loom wiring must be new automotive cable and terminals.",
+        "buy_target": "Buy candidate is only a 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 column-assist EPS set. Corolla, Axio, Prius, hydraulic steering parts, loose motors, loose ECUs, and mixed-family sets are quote/photo only. The J40 has no vehicle ECU, but this donor EPS route still needs the EPS system's own matched ECU/controller, or a seller-proven integrated controller on the column. Do not buy a bare column expecting it to run from J40 wiring alone. Donor pigtails are for connector identification and bench testing; final power, ground, trigger, and loom wiring must be new automotive cable and terminals. J40 fitment now uses the measured General EPS Adapter route, so donor brackets are adapter-reference geometry rather than assumed bolt-on parts.",
         "must_include": [
           "Motorized EPS steering column with torque sensor and reduction housing.",
           "Matching EPS ECU/controller from the donor set, or a clearly verified integrated controller on the column.",
@@ -71635,7 +72538,8 @@ window.J40_DASHBOARD_DATA = {
           "Upper and lower intermediate shaft sections.",
           "U-joints, couplers, clamp brackets, support plates, and related donor fasteners.",
           "Readable column and ECU/controller labels or part numbers.",
-          "Seller can identify heavy power, ground, and ignition-trigger wires for the bench check."
+          "Seller can identify heavy power, ground, and ignition-trigger wires for the bench check.",
+          "Donor bracket hole spacing, saddle/clamp shape, motor clocking faces, and shaft centerline offsets photographed for the General EPS Adapter mock-up."
         ],
         "bench_test": [
           "Power the unit through the matched EPS ECU/controller before payment and rotate the input shaft both directions.",
@@ -71659,15 +72563,16 @@ window.J40_DASHBOARD_DATA = {
           "Column label and ECU/controller label.",
           "Input and output spline/shaft photos.",
           "All plugs and pigtails laid out clearly.",
-          "Full kit photo with column, EPS ECU/controller, plugs, pigtails, every included shaft, U-joint, coupler, bracket, support plate, and fastener visible."
+          "Full kit photo with column, EPS ECU/controller, plugs, pigtails, every included shaft, U-joint, coupler, bracket, support plate, and fastener visible.",
+          "Bracket hole spacing, saddle/clamp area, motor clocking faces, and shaft centerline offsets for the General EPS Adapter mock-up."
         ],
         "price_guidance": {
           "unit_price_range": "PKR 54,000-136,000",
           "total_value_range": "PKR 54,000-136,000",
           "negotiation_midpoint": "PKR 90,000",
-          "rule": "Do not pay complete-kit price for missing EPS ECU/controller, plugs, shafts, U-joints, couplers, or brackets."
+          "rule": "Do not pay complete-kit price for missing EPS ECU/controller, plugs, shafts, U-joints, couplers, or brackets. General EPS Adapter fabrication is separate from donor-kit price."
         },
-        "decision_rule": "Buy only if donor identity, complete matched kit contents, bench-test video, seller contact, return terms, and required photos are all captured before payment.",
+        "decision_rule": "Buy only if donor identity, complete matched kit contents, bench-test video, seller contact, return terms, required photos, and General EPS Adapter geometry are all captured before payment.",
         "image": {
           "path": "../../deliverables/selling_site_images/images/manual_overrides/eps_complete_column_set_reference.svg",
           "caption": "Complete Vitz/Yaris XP90 EPS column set checklist reference",
@@ -74813,62 +75718,162 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "order_id": "FS-STRIP-L",
-        "part": "Front-support left strip liner",
-        "required_qty": "hold",
-        "optional_spare_qty": "hold",
-        "spec": "Candidate strip only; quote from 165 x 40 mm stock envelope if physical front-support carrier confirms this piece exists; base 8 mm; raised/load pad 14 mm; final outline from physical trace",
-        "holes_or_inserts": "M10 11 mm holes or 11 x 16 mm slots only where carrier confirms",
+        "part": "Underfloor body-support strip liner left",
+        "required_qty": "1",
+        "optional_spare_qty": "0",
+        "spec": "Flat strip 165 x 38 x 8 mm; plain rubber strip only; smooth edges and flat parallel faces; no stepped section",
+        "holes_or_inserts": "No through-holes in the rubber by default; reuse or trace the slotted steel retainer separately if needed",
         "material": "Solid EPDM or NR/SBR strip, Shore A 60 +/-5",
-        "release_state": "hold_trace_required",
-        "photo_refs": "fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg",
-        "notes": "Current photo evidence is mixed with bump-stop fragments; do not release as known required until carrier/vehicle trace proves it.",
-        "evidence_images": [],
+        "release_state": "first_article_custom_recreate",
+        "photo_refs": "20260517_194143_gp_CO7MuMdA|20260517_194706_gp_twKRWGFA|20260517_193503_gp_N9nHjqXw|20260517_193539_gp_E0cR9I0A|20260517_193559_gp_NEpk1hpg",
+        "notes": "Installed-location photos now prove this is a real required strip. Make the rubber as a plain flat strip; steel slot geometry belongs to the retainer, not automatically to the rubber.",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:41:43",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194143_gp_CO7MuMdA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:47:06",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194706_gp_twKRWGFA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:03",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193503_gp_N9nHjqXw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:39",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193539_gp_E0cR9I0A",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:59",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193559_gp_NEpk1hpg",
+            "matched_tokens": []
+          }
+        ],
         "image": {
-          "path": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg",
-          "caption": "Front-support left strip liner \u00b7 left front-support strip template hold",
-          "captured_date": "",
-          "captured_time": "",
+          "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+          "captured_date": "2026-05-17",
+          "captured_time": "19:41:43",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "local_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "fs_strip_left_template_blank_rev_a",
-          "matched_tokens": [
-            "fs-strip-l",
-            "template"
-          ],
-          "match_basis": "local_reference_image",
-          "match_score": 700
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "fabrication_measurement",
+          "media_id": "20260517_194143_gp_CO7MuMdA",
+          "matched_tokens": []
         }
       },
       {
         "order_id": "FS-STRIP-R",
-        "part": "Front-support right strip liner",
-        "required_qty": "hold",
-        "optional_spare_qty": "hold",
-        "spec": "Candidate strip only; mirror FS-STRIP-L only if right carrier proves symmetric; same quote envelope and section dimensions after confirmation",
-        "holes_or_inserts": "Trace right carrier and mark handedness before cutting",
+        "part": "Underfloor body-support strip liner right",
+        "required_qty": "1",
+        "optional_spare_qty": "0",
+        "spec": "Same rubber spec as left: flat strip 165 x 38 x 8 mm; use the same blank unless the sample proves a handed end trim",
+        "holes_or_inserts": "Same retainer rule as left; do not invent slot geometry in the rubber",
         "material": "Same batch/type as FS-STRIP-L",
-        "release_state": "hold_trace_required",
-        "photo_refs": "fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg",
-        "notes": "Current photo evidence is mixed with bump-stop fragments; do not release as known required until carrier/vehicle trace proves it.",
-        "evidence_images": [],
+        "release_state": "first_article_custom_recreate",
+        "photo_refs": "20260517_194633_gp_rAjY3gjg|20260517_194706_gp_twKRWGFA|20260517_193612_gp_JmbfR0Tw|20260517_193616_gp_1ye19BZA",
+        "notes": "Treat right side as the same first-article rubber strip unless dry-fit proves a side-specific trim.",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:46:33",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194633_gp_rAjY3gjg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:47:06",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194706_gp_twKRWGFA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:36:12",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193612_gp_JmbfR0Tw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:36:16",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193616_gp_1ye19BZA",
+            "matched_tokens": []
+          }
+        ],
         "image": {
-          "path": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg",
-          "caption": "Front-support right strip liner \u00b7 left front-support strip template hold",
-          "captured_date": "",
-          "captured_time": "",
+          "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+          "captured_date": "2026-05-17",
+          "captured_time": "19:46:33",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "local_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "fs_strip_left_template_blank_rev_a",
-          "matched_tokens": [
-            "fs-strip-l",
-            "template"
-          ],
-          "match_basis": "local_reference_image",
-          "match_score": 700
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "fabrication_measurement",
+          "media_id": "20260517_194633_gp_rAjY3gjg",
+          "matched_tokens": []
         }
       },
       {
@@ -75034,12 +76039,12 @@ window.J40_DASHBOARD_DATA = {
   },
   "capture_tasks": {
     "summary": {
-      "total_tasks": 109,
-      "now_tasks": 97,
+      "total_tasks": 108,
+      "now_tasks": 96,
       "later_tasks": 12,
       "p0_tasks": 37,
-      "photo_tasks": 43,
-      "measurement_tasks": 77
+      "photo_tasks": 42,
+      "measurement_tasks": 76
     },
     "counts_by_workstream": [
       {
@@ -75052,7 +76057,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "brake_system",
-        "count": 16
+        "count": 15
       },
       {
         "workstream": "chassis_fixing",
@@ -75114,7 +76119,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "task_type": "photo_measurement",
-        "count": 30
+        "count": 29
       },
       {
         "task_type": "template",
@@ -75144,7 +76149,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "priority": "P1",
-        "count": 63
+        "count": 62
       },
       {
         "priority": "P2",
@@ -77405,8 +78410,8 @@ window.J40_DASHBOARD_DATA = {
         "timing": "now",
         "status": "planned_scope_lock",
         "location": "market_scout",
-        "action": "Capture 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 donor identity complete kit contents labels shafts U-joints couplers brackets bench-test evidence seller contact and return terms before payment",
-        "data_needed": "Pre-purchase market check only; close with buy reject or quote-only decision.",
+        "action": "Capture 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 donor identity complete kit contents labels shafts U-joints couplers brackets donor bracket geometry for the General EPS Adapter bench-test evidence seller contact and return terms before payment",
+        "data_needed": "Pre-purchase market check only; close with buy reject or quote-only decision. Donor brackets are reference geometry for the adapter and are not assumed bolt-on J40 parts.",
         "blocks": "",
         "record_result_in": "",
         "source_label": "Component Jobs",
@@ -79910,105 +80915,6 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
-        "task_id": "brake_requirement:BR-REAR-004",
-        "title": "Rear wheel cylinders and bleed screws",
-        "workstream": "brake_system",
-        "task_type": "photo_measurement",
-        "priority": "P1",
-        "timing": "now",
-        "status": "needs_drum_opening",
-        "location": "Left and right rear drum backing plates",
-        "action": "Do not remove the wheel cylinders until each drum/backing plate is photographed open. Once open, plan to replace both rear wheel cylinders unless they are confirmed fresh and leak-free.",
-        "data_needed": "Cylinder bore, mounting bolt spacing, port thread, pushrod/slot style, backing plate side, drum/shoe family, bleed screw size",
-        "blocks": "BR-REAR-004",
-        "record_result_in": "",
-        "source_label": "Brake Requirements",
-        "source_path": "data/manual/brake_system_requirements.csv",
-        "source_row_id": "BR-REAR-004",
-        "notes": "May 12 photos add outside drum/backing-plate context. Wheel cylinders are baseline age-replacement unless proven recently new and leak-free.",
-        "evidence_ref": "20260501_194322_gp_XuRtjN4w|20260324_004852|20260324_004906|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA",
-        "evidence_images": [
-          {
-            "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
-            "captured_date": "2026-05-01",
-            "captured_time": "19:43:22",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_spring_hanger_and_crossmember",
-            "stage": "chassis_fixing",
-            "media_id": "20260501_194322_gp_XuRtjN4w",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260324_004852.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
-            "captured_date": "2026-03-24",
-            "captured_time": "00:48:52",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "underside_inspection",
-            "media_id": "20260324_004852",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260324_004906.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
-            "captured_date": "2026-03-24",
-            "captured_time": "00:49:06",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "underside_inspection",
-            "media_id": "20260324_004906",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_072723_gp_r9KEkOdg.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Steering Brakes Suspension \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:27:23",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "steering_brakes_suspension",
-            "media_id": "20260512_072723_gp_r9KEkOdg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_072742_gp_uSvGBUiA.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Steering Brakes Suspension \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:27:42",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "steering_brakes_suspension",
-            "media_id": "20260512_072742_gp_uSvGBUiA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_072947_gp_bNB9GvHA.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Steering Brakes Suspension \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:29:47",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "steering_brakes_suspension",
-            "media_id": "20260512_072947_gp_bNB9GvHA",
-            "matched_tokens": []
-          }
-        ],
-        "links": [
-          {
-            "url": "../../data/manual/brake_system_requirements.csv",
-            "label": "Brake Requirements"
-          }
-        ]
-      },
-      {
         "task_id": "component_job:chassis_frame_and_crossmembers",
         "title": "chassis_frame_and_crossmembers",
         "workstream": "chassis_fixing",
@@ -81995,17 +82901,17 @@ window.J40_DASHBOARD_DATA = {
         "task_type": "photo_measurement",
         "priority": "P1",
         "timing": "now",
-        "status": "tub_side_mount_rust_photos_added",
+        "status": "flat_rubber_measurement_photos_added",
         "location": "workshop",
         "action": "Use the reduced chassis-rubbers fabricator spec for quote/first article, then lock the main-tub rubber kit, separate front-support pair, hardware grade, sleeves, and shim stack by trial fit before final tub fastening",
-        "data_needed": "May 17 tub-side body-mount/captive rust details are now linked for refit risk. Rubber and shim stack release still needs physical sample dimensions, sleeve checks, and station dry-fit height confirmation.",
+        "data_needed": "May 17 tub-side body-mount/captive rust details and the additional flat-rubber footprint measurement photos are now linked for refit risk and pad sizing. Final rubber and shim-stack release still needs physical sample dimensions, sleeve checks, side/station labels, and dry-fit height confirmation.",
         "blocks": "",
         "record_result_in": "",
         "source_label": "Component Jobs",
         "source_path": "data/manual/component_jobs.csv",
         "source_row_id": "tub_refit_rubber_hardware_shim_stack",
         "notes": "",
-        "evidence_ref": "photo_inventory_2026-04-22|20260405_234546|20260405_234652|data_chassis_rubber_requirements|docs_chassis_rubbers_fabricator_spec_20260504|20260517_195032_gp_lrASxesw|20260517_195057_gp_U6FxmsPQ|20260517_195108_gp_elCiXzKw|20260517_195123_gp_LxOfgsPA|20260517_195241_gp_RzJdcAZg|20260517_195321_gp_4zDAINsA|20260517_195330_gp_wrE9dLVw|20260517_195341_gp_ZTYnpWUA|20260517_195406_gp_req8G3Bg|20260517_195430_gp_VGGpRFOQ|20260517_195511_gp_iFvWFVNw|20260517_195628_gp_Wog59oFg|photo_import_20260517T224430",
+        "evidence_ref": "photo_inventory_2026-04-22|20260405_234546|20260405_234652|data_chassis_rubber_requirements|docs_chassis_rubbers_fabricator_spec_20260504|20260517_195032_gp_lrASxesw|20260517_195057_gp_U6FxmsPQ|20260517_195108_gp_elCiXzKw|20260517_195123_gp_LxOfgsPA|20260517_195241_gp_RzJdcAZg|20260517_195321_gp_4zDAINsA|20260517_195330_gp_wrE9dLVw|20260517_195341_gp_ZTYnpWUA|20260517_195406_gp_req8G3Bg|20260517_195430_gp_VGGpRFOQ|20260517_195511_gp_iFvWFVNw|20260517_195628_gp_Wog59oFg|20260517_194143_gp_CO7MuMdA|20260517_194633_gp_rAjY3gjg|20260517_194706_gp_twKRWGFA|photo_import_20260517T224430|photo_import_20260518T155830",
         "evidence_images": [
           {
             "path": "../../photos/20260405_234546.jpg",
@@ -82173,6 +83079,42 @@ window.J40_DASHBOARD_DATA = {
             "specific_component": "body_shell_with_doors_removed",
             "stage": "rust_assessment",
             "media_id": "20260517_195628_gp_Wog59oFg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:41:43",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194143_gp_CO7MuMdA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:46:33",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194633_gp_rAjY3gjg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:47:06",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194706_gp_twKRWGFA",
             "matched_tokens": []
           }
         ],
@@ -82594,8 +83536,8 @@ window.J40_DASHBOARD_DATA = {
         "timing": "now",
         "status": "planning_required",
         "location": "workshop",
-        "action": "Measure and photograph the J40 steering wheel position upper column angle dash support pedal clearance firewall pass-through steering-box input line donor EPS motor envelope shaft lengths and controller envelope before any cutting",
-        "data_needed": "This is the first installation gate after procurement. May 12 removed J40 steering-column photo adds vehicle-side column/switch/wiring reference, but no irreversible column or shaft cuts until the EPS unit is mocked in place and the centerline/motor envelope are signed off.",
+        "action": "Measure and photograph the J40 steering wheel position upper column angle dash support pedal clearance firewall pass-through steering-box input line donor EPS motor envelope shaft lengths controller envelope and General EPS Adapter datum points before any cutting",
+        "data_needed": "This is the first installation gate after procurement. May 12 removed J40 steering-column photo adds vehicle-side column/switch/wiring reference, but no irreversible column, shaft, firewall, drilling, or bracket cuts until the EPS unit and adapter datum are mocked in place and the centerline/motor envelope are signed off.",
         "blocks": "",
         "record_result_in": "",
         "source_label": "Component Jobs",
@@ -83205,14 +84147,14 @@ window.J40_DASHBOARD_DATA = {
         "status": "partially_returned",
         "location": "home_storage_refinished_tagged",
         "action": "Track returned painted/refinished hardware and panel pieces, then tag storage location and fitment-readiness status",
-        "data_needed": "Returned painted/refinished parts are visible in photo evidence; May 17 adds the returned painted roof. Continue until all paint batch returns are reconciled.",
+        "data_needed": "Returned painted/refinished parts are visible in photo evidence; May 17 adds the returned painted roof; May 23 picker batch acknowledges received painted panels/brackets. Continue until all paint batch returns are tagged inspected and fitment-checked.",
         "blocks": "",
         "record_result_in": "",
         "source_label": "Component Jobs",
         "source_path": "data/manual/component_jobs.csv",
         "source_row_id": "paint_returned_panels_refinished",
         "notes": "",
-        "evidence_ref": "20260412_010633|20260412_010646_gp_vrcJK3ow|20260412_215154_gp_hDRTkV1A|20260517_193305_gp_o1a6StwA",
+        "evidence_ref": "20260412_010633|20260412_010646_gp_vrcJK3ow|20260412_215154_gp_hDRTkV1A|20260517_193305_gp_o1a6StwA|photo_import_20260524T054300|user_update_2026-05-24_painted_parts_received",
         "evidence_images": [
           {
             "path": "../../photos/20260412_010633.jpg",
@@ -84504,9 +85446,9 @@ window.J40_DASHBOARD_DATA = {
       {
         "supply_type": "tool",
         "previously": 59,
-        "in_process": 9,
-        "still_required": 10,
-        "total": 78
+        "in_process": 12,
+        "still_required": 8,
+        "total": 79
       },
       {
         "supply_type": "substance",
@@ -84519,8 +85461,8 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "previously": 95,
         "in_process": 7,
-        "still_required": 78,
-        "total": 180
+        "still_required": 79,
+        "total": 181
       }
     ],
     "rows_by_status": {
@@ -85823,7 +86765,7 @@ window.J40_DASHBOARD_DATA = {
             }
           ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_dashboard_fascia_auxiliary_switch_panel__a8e361b962f9.jpg",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_dashboard_fascia_auxiliary_switch_panel__8d1042b59630.jpg",
             "caption": "Dashboard fascia / auxiliary switch panel (if OEM holes are insufficient) \u00b7 Local sheet-metal/fabrication shop \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
@@ -87299,8 +88241,8 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/expenses_lion_brake_fluid_dot_3_12oz_354ml_x6_0518a26e1a6c.webp",
-            "caption": "Lion Brake Fluid DOT-3 12oz/354ml x6 \u00b7 Autohub \u00b7 Selling Site Image",
+            "path": "../../deliverables/selling_site_images/images/expenses_dot_3_brake_fluid_x6_autohub_agreed_repl_0518a26e1a6c.webp",
+            "caption": "DOT 3 brake fluid x6 - Autohub agreed replacement/substitution received \u00b7 Autohub \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -87313,12 +88255,15 @@ window.J40_DASHBOARD_DATA = {
               "dot",
               "brake",
               "fluid",
-              "autohub"
+              "autohub",
+              "agreed",
+              "replacement",
+              "substitution"
             ],
             "match_basis": "selling_site_match",
             "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
             "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
-            "match_score": 224
+            "match_score": 236
           }
         },
         {
@@ -88295,8 +89240,8 @@ window.J40_DASHBOARD_DATA = {
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_2c3e3afb0459.webp",
-            "caption": "HB Body U900 cavity wax spray 400ml \u00b7 Autohub \u00b7 Selling Site Image",
+            "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_x2_2c3e3afb0459.webp",
+            "caption": "HB Body U900 cavity wax spray 400ml x2 \u00b7 Autohub \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -89226,23 +90171,39 @@ window.J40_DASHBOARD_DATA = {
           "delivery_status": "Y",
           "evidence_ref": "",
           "notes": "Evidence indicates purchased/received.",
-          "links": [],
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/harden-pro-grease-gunsize500cc",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/670101_1.jpg?v=1714558707",
+              "label": "toolsmart.pk"
+            }
+          ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/grease_gun.jpg",
-            "caption": "Harden Pro Grease Gun 500CC \u00b7 grease gun reference image",
+            "path": "../../deliverables/selling_site_images/images/workbook_tools_harden_pro_grease_gun_500cc_8c76d0a477d8.webp",
+            "caption": "Harden Pro Grease Gun 500CC \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "grease_gun",
+            "media_id": "",
             "matched_tokens": [
+              "row_16",
+              "harden",
+              "pro",
               "grease",
-              "gun"
+              "gun",
+              "500cc",
+              "toolsmart"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/harden-pro-grease-gunsize500cc",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/670101_1.jpg?v=1714558707",
+            "match_score": 230
           }
         },
         {
@@ -89262,23 +90223,39 @@ window.J40_DASHBOARD_DATA = {
           "delivery_status": "Y",
           "evidence_ref": "",
           "notes": "Evidence indicates purchased/received.",
-          "links": [],
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/ingco-heat-gun-2000w-hg200078",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/HG200078.webp?v=1734351378",
+              "label": "toolsmart.pk"
+            }
+          ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/heat_gun.jpg",
-            "caption": "Ingco Heat gun 2000w HG200078 \u00b7 heat gun reference image",
+            "path": "../../deliverables/selling_site_images/images/workbook_tools_ingco_heat_gun_2000w_hg200078_222bef31d5de.webp",
+            "caption": "Ingco Heat gun 2000w HG200078 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "heat_gun",
+            "media_id": "",
             "matched_tokens": [
+              "row_17",
+              "ingco",
               "heat",
-              "gun"
+              "gun",
+              "2000w",
+              "hg200078",
+              "toolsmart"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/ingco-heat-gun-2000w-hg200078",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/HG200078.webp?v=1734351378",
+            "match_score": 230
           }
         },
         {
@@ -90283,27 +91260,43 @@ window.J40_DASHBOARD_DATA = {
           "delivery_status": "received",
           "evidence_ref": "user_seed|akber_khan-00395|akber_khan-00671|fj40-00286|akber_khan-00879",
           "notes": "Seeded as received; a later tool basket shows a Harden Pro Grease Gun 500CC at Rs.4,790 and tools later arrived, but the exact paid amount is still left open pending order proof",
-          "links": [],
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/harden-pro-grease-gunsize500cc",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/670101_1.jpg?v=1714558707",
+              "label": "toolsmart.pk"
+            }
+          ],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/grease_gun.jpg",
-            "caption": "Grease gun \u00b7 grease gun reference image",
+            "path": "../../deliverables/selling_site_images/images/workbook_tools_harden_pro_grease_gun_500cc_8c76d0a477d8.webp",
+            "caption": "Grease gun \u00b7 Toolsmart \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
+            "specific_component": "selling_site_listing_reference",
             "stage": "procurement_reconciliation",
-            "media_id": "grease_gun",
+            "media_id": "",
             "matched_tokens": [
+              "tool_grease_gun",
               "grease",
-              "gun"
+              "gun",
+              "toolsmart",
+              "tool",
+              "harden",
+              "pro"
             ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/harden-pro-grease-gunsize500cc",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/670101_1.jpg?v=1714558707",
+            "match_score": 203
           }
         },
         {
@@ -91289,7 +92282,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_power_steering_upgrade",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit",
+          "item": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit plus General EPS Adapter geometry",
           "vendor": "",
           "amount": "",
           "currency": "PKR",
@@ -91300,7 +92293,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "",
           "evidence_ref": "user_seed|fj40-00006|fj40-00263|akber_khan-00346|akber_khan-00858",
-          "notes": "Market scout only: quote and buy/no-buy check for a complete matched 2005-2011 Vitz/Yaris SCP90/NCP90 EPS kit with its matched EPS ECU/controller or seller-proven integrated control, bench-test video, seller contact, return terms, and full kit photos before payment. The J40 has no vehicle ECU, but the donor EPS controller is still required for this route.",
+          "notes": "Market scout only: quote and buy/no-buy check for a complete matched 2005-2011 Vitz/Yaris SCP90/NCP90 EPS kit with its matched EPS ECU/controller or seller-proven integrated control, bench-test video, seller contact, return terms, full kit photos, and donor bracket/shaft geometry for the General EPS Adapter before payment. The J40 has no vehicle ECU, but the donor EPS controller is still required for this route. Adapter fabrication is a separate measured J40-specific release after the donor unit and vehicle-side datum points are mocked up.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -91308,7 +92301,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../deliverables/selling_site_images/images/manual_overrides/eps_complete_column_set_reference.svg",
-            "caption": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit \u00b7 complete Vitz/Yaris XP90 EPS column set checklist reference",
+            "caption": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit plus General EPS Adapter geometry \u00b7 complete Vitz/Yaris XP90 EPS column set checklist reference",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -91579,6 +92572,63 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "tool_metric_flare_nut_wrench_set_20260514",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Metric flare-nut / brake-line wrench set",
+          "vendor": "ToolsMart.pk",
+          "amount": "1970",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_partial_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-005|web_toolsmart_licota_12x14|web_toolshub_10x12_search|gmail_msg_19e5622147cdd91a|gmail_order_TM25776|bank_alert_19e5622515169f29",
+          "notes": "ToolsMart order TM25776 confirmed on 2026-05-23 includes LICOTA MADE IN TAIWAN FLARE NUT WRENCH 12 X 14 x1 at PKR 1970. This partially covers the flare-nut/line-wrench requirement only; still check the actual J40 fitting hexes and whether 10, 11, 17, or 19 mm line wrenches remain needed before opening old hydraulic fittings.",
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/licota-flare-nut-wrench-12-x-14",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/licota-awt-fnm0810-nut-wrench-550x550_jpg_53b3e014-c262-4025-9de0-b818530af45b.webp?v=1761900068",
+              "label": "toolsmart.pk"
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/expenses_metric_flare_nut_brake_line_wrench_set_9b3134d651f7.webp",
+            "caption": "Metric flare-nut / brake-line wrench set \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "tool_metric_flare_nut_wrench_set_20260514",
+              "20260514",
+              "metric",
+              "flare",
+              "nut",
+              "brake",
+              "line",
+              "wrench"
+            ],
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/licota-flare-nut-wrench-12-x-14",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/licota-awt-fnm0810-nut-wrench-550x550_jpg_53b3e014-c262-4025-9de0-b818530af45b.webp?v=1761900068",
+            "match_score": 283
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "tool_toolsmart_pard_double_flaring_cutting_tool_set_4_16mm_20260504",
           "supply_type": "tool",
           "inventory_group": "tools",
@@ -91635,6 +92685,63 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_toolsmart_ingco_heavy_duty_cable_cutter_250mm_hhccb0210_20260523",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Ingco Heavy duty cable cutter 250mm HHCCB0210",
+          "vendor": "ToolsMart.pk",
+          "amount": "2130",
+          "currency": "PKR",
+          "workstream": "electrical_reset",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "gmail_msg_19e5622147cdd91a|gmail_order_TM25776|bank_alert_19e5622515169f29|web_toolsmart_hhccb0210",
+          "notes": "ToolsMart order TM25776 confirmed on 2026-05-23 includes Ingco Heavy duty cable cutter 250mm HHCCB0210 x1 at PKR 2130. Intended for electrical cable sizing and clean cable cuts during loom reset; receipt check jaw alignment, cutting edge condition, pivot/action, handle insulation/grip condition, and do not use it on hardened steel.",
+          "links": [
+            {
+              "url": "https://www.toolsmart.pk/products/ingco-heavy-duty-cable-cutter-250mm-hhccb0210",
+              "label": "toolsmart.pk"
+            },
+            {
+              "url": "http://www.toolsmart.pk/cdn/shop/files/HHCCB0210.webp?v=1759145163",
+              "label": "toolsmart.pk"
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/expenses_ingco_heavy_duty_cable_cutter_250mm_hhcc_50c99d72d4c8.webp",
+            "caption": "Ingco Heavy duty cable cutter 250mm HHCCB0210 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "selling_site_listing_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "tool_toolsmart_ingco_heavy_duty_cable_cutter_250mm_hhccb0210_20260523",
+              "hhccb0210",
+              "0210",
+              "ingco",
+              "heavy",
+              "duty",
+              "cable",
+              "cutter"
+            ],
+            "match_basis": "selling_site_match",
+            "listing_url": "https://www.toolsmart.pk/products/ingco-heavy-duty-cable-cutter-250mm-hhccb0210",
+            "image_url": "http://www.toolsmart.pk/cdn/shop/files/HHCCB0210.webp?v=1759145163",
+            "match_score": 330
           }
         },
         {
@@ -91755,6 +92862,46 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "generic_tool",
             "matched_tokens": [
               "tool"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_large_bore_nitto_air_hose_impact_followup_20260517",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Large-bore Nitto air hose for 1/2 inch impact wrench",
+          "vendor": "ToolsMart.pk",
+          "amount": "4720",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "user_update_2026-05-17_ingco_air_setup_purchase_intent|web_almiraj_ah1151|web_toolsmart_tat40122|web_toolsmart_licota_pu_hose_9m_nitto|gmail_msg_19e5622147cdd91a|gmail_order_TM25776|bank_alert_19e5622515169f29",
+          "notes": "ToolsMart order TM25776 confirmed on 2026-05-23 includes LICOTA MADE IN TAIWAN PU HOSE ROLL 9M W/ NITTO TYPE QUICK COUPLER x1 at PKR 4720. This should clear the impact-wrench airflow follow-up if the delivered hose is truly larger-bore and has compatible Nitto/Japanese quick couplers. Receipt check: confirm hose ID/OD if marked, coupler fit, no cuts or leaks, and actual impact performance on stubborn fasteners.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+            "caption": "Large-bore Nitto air hose for 1/2 inch impact wrench \u00b7 air hose reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "air_hose",
+            "matched_tokens": [
+              "air",
+              "hose"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -92005,7 +93152,7 @@ window.J40_DASHBOARD_DATA = {
             }
           ],
           "image": {
-            "path": "../../deliverables/selling_site_images/images/workbook_parts_ignition_lock_security_fix_new_barrel_ma_0c2b25595c0a.jpg",
+            "path": "../../deliverables/selling_site_images/images/workbook_parts_ignition_lock_security_fix_new_barrel_ma_ce87c02905f8.jpg",
             "caption": "Ignition lock security fix (new barrel + matched keys OR full locksmith re-key) \u00b7 Local locksmith + lockset supplier \u00b7 Selling Site Image",
             "captured_date": "",
             "captured_time": "",
@@ -92582,17 +93729,17 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Brake hydraulic splitter T-union and inline union replacement set",
-          "vendor": "brake hydraulic pipe specialist",
+          "vendor": "local brake hydraulic pipe specialist",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
           "status_detail": "planned",
-          "procurement_stage": "spec_needed_before_order",
+          "procurement_stage": "spec_needed_before_order_quote_with_line_stock",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_rear_axle_splitter_purchase_list|BR-REAR-002|BR-REAR-003|BR-SYS-001|BR-CAPTURE-001",
-          "notes": "Replace the rear axle T-union/splitter if corroded, damaged, seized, or mismatched, and replace any chassis inline unions/splitters disturbed during the full brake hard-line rebuild. Match thread, flare seat, port orientation, mounting hole/bracket style, and tube entry angles from old samples. Do not use plumbing brass or unknown hydraulic fittings.",
+          "evidence_ref": "user_update_2026-05-14_rear_axle_splitter_purchase_list|BR-REAR-002|BR-REAR-003|BR-SYS-001|BR-CAPTURE-001|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts",
+          "notes": "Quote with the cheap brake-line package, but replace the rear axle T-union/splitter only if corroded, damaged, seized, or mismatched, and replace chassis inline unions/splitters only if disturbed during the full hard-line rebuild. Match thread, flare seat, port orientation, mounting hole/bracket style, and tube entry angles from old samples. Do not use plumbing brass or unknown hydraulic fittings.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -92722,17 +93869,17 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats",
-          "vendor": "brake hydraulic pipe specialist",
+          "vendor": "local brake hydraulic pipe specialist",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
           "status_detail": "planned",
-          "procurement_stage": "spec_needed_before_order",
+          "procurement_stage": "spec_needed_before_order_quote_with_line_stock",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-CAPTURE-001|20260514_111300_user_brake_flare_side_view",
-          "notes": "Order new brake-rated flare nuts and fittings only after the old fittings are identified. May 14 installed-fitting photos plus the user flare side-view point to Toyota-style double/inverted brake-line flares, but final payment still waits for removed-line straight-on sealing face, thread, and seat confirmation. Must cover master/proportioning ports, front hose chassis ends, rear center hose/T-union ends, rear wheel-cylinder ports, and clutch master/slave or clutch hose ends as fitted. Buy extras for practice/scrap flares; do not buy single-flare or ISO bubble fittings unless sample-proven.",
+          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-CAPTURE-001|20260514_111300_user_brake_flare_side_view|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts",
+          "notes": "Quote fittings with the cheap brake-line package, but order new brake-rated flare nuts and fittings only after the old fittings are identified. May 14 installed-fitting photos plus the user flare side-view point to Toyota-style double/inverted brake-line flares, but final payment still waits for removed-line straight-on sealing face, thread, and seat confirmation. Must cover master/proportioning ports, front hose chassis ends, rear center hose/T-union ends, rear wheel-cylinder ports, and clutch master/slave or clutch hose ends as fitted. Buy extras for practice/scrap flares; do not buy single-flare, ISO bubble, plumbing, or compression fittings unless sample-proven.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -92761,7 +93908,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260514_111300_user_brake_flare_side_view.png",
-            "caption": "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats \u00b7 local inventory photo \u00b7 brake hydraulic pipe specialist",
+            "caption": "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats \u00b7 local inventory photo \u00b7 local brake hydraulic pipe specialist",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -93079,17 +94226,17 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred",
-          "vendor": "Longman / brake hydraulic pipe specialist",
+          "vendor": "SNA Industries / local brake pipe specialist / Longman / Brandreth Road / Montgomery Road",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
           "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
+          "procurement_stage": "price_check_priority_before_other_brake_parts",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001",
-          "notes": "Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; buy a single 10000 mm coil minimum if available, 12000 mm preferred for scrap flares, route corrections, and service loops. Use brake-rated bundy steel or CuNi/Cunifer only; no bare copper.",
+          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|gari_lahore_mild_steel_hydraulic_brake_pipe_reference|fedhill_25ft_cunifer_reference|fcp_euro_25ft_cunifer_reference|user_update_2026-05-24_price_brake_lines_before_other_parts",
+          "notes": "Quote this before buying more rear brake parts. First quote target is SNA Industries, because it is Pakistan-based and lists steel brake pipes and brake hoses. Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; quote both 25 ft minimum and a single 10000-12000 mm local coil for scrap flares, route corrections, and service loops. Use brake-rated Bundy steel or CuNi/Cunifer only; no bare copper, plumbing tube, compression fittings, or imported pre-bent FJ40 kit unless explicitly approved.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -93258,38 +94405,77 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_rear_brake_shoes_hardware",
+          "source_ref": "part_rear_brake_drums_pair_cruisercorps",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Rear brake shoes and spring hardware set",
-          "vendor": "",
+          "item": "Rear brake drums pair - inspect/machine locally before any import",
+          "vendor": "local brake machine shop / local Toyota parts supplier",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
           "status_detail": "planned",
-          "procurement_stage": "inspect_then_buy",
+          "procurement_stage": "local_inspect_machine_or_replace_hold",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-REAR-005|20260501_194322_gp_XuRtjN4w|20260324_004906",
-          "notes": "BASELINE MUST REPLACE: order shoes, return springs, hold-down springs, adjusters, and retainers after drum diameter, shoe width, and backing-plate family are confirmed.",
+          "evidence_ref": "user_chat_2026-05-23_rear_drum_open|cruisercorps_553-115x2_reference_only|gmail_import_2026-05-24_no_brake_order|user_update_2026-05-24_local_only_no_expensive_imports",
+          "notes": "Do not order expensive imported drums by default. Inspect and measure the old drums first, machine locally only if safely within service limit, and replace locally only if scored, stepped, cracked, near/over limit, or machining quality is unsafe. Cruiser Corps 553-115 remains a reference only. Any import requires explicit approval.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-            "caption": "Rear brake shoes and spring hardware set \u00b7 local inventory photo",
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
+            "caption": "Rear brake drums pair - inspect/machine locally before any import \u00b7 automotive part reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "generic_part",
+            "matched_tokens": [
+              "part"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_rear_brake_shoes_hardware",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Rear brake shoes, drum hardware, and wheel-cylinder bolt kit",
+          "vendor": "local brake parts supplier / PakWheels-local lead / sample-match supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready_local_catalog_first_pending_measurement",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports",
+          "notes": "BASELINE MUST REPLACE. Prefer local shoes, hardware, and wheel-cylinder fasteners; use the PakWheels K-2255-N/Y listing and imported catalog numbers only as search/reference leads. Before payment, measure shoe width and compare spring/adjuster layout; if this is a non-USA 9/1975+ 3-inch drum setup, use a matching local 3-inch shoe/hardware route. Keep old springs, adjusters, and anchors as samples until the new kit is dry-fitted. No expensive import unless explicitly approved.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+            "caption": "Rear brake shoes, drum hardware, and wheel-cylinder bolt kit \u00b7 local inventory photo \u00b7 local brake parts supplier / PakWheels-local lead / sample-match supplier",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "local_inventory_evidence",
             "stage": "procurement_reconciliation",
-            "media_id": "20260501_194322_gp_XuRtjN4w",
+            "media_id": "20260524_025547_gp_yCvA0bxA",
             "matched_tokens": [
-              "photo_20260501_194322_gp_xurtjn4w"
+              "photo_20260524_025547_gp_ycva0bxa"
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 980
@@ -93300,18 +94486,18 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_rear_center_brake_flex_hose",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Rear center frame-to-axle brake flex hose - by end fittings and old-sample/free length",
-          "vendor": "",
+          "item": "Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference",
+          "vendor": "local brake hose/Toyota parts supplier",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
           "status_detail": "planned",
-          "procurement_stage": "spec_needed_before_order",
+          "procurement_stage": "purchase_ready_local_catalog_first_pending_sample_match",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-REAR-003|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-          "notes": "BASELINE MUST REPLACE; order only after chassis-side and axle-side fitting thread/end style, bracket retention, and old-sample/free length are measured. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+          "evidence_ref": "BR-REAR-003|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|user_chat_2026-05-23_rear_drum_open|cruisercorps_553-103_reference_only|gmail_import_2026-05-24_no_brake_order|user_update_2026-05-24_local_only_no_expensive_imports",
+          "notes": "BASELINE MUST REPLACE. Use Cruiser Corps 553-103 only as a dimension/spec reference for the pre-8/1980 rear drum axle context. Ask local brake-hose and Toyota suppliers first, then confirm old-sample/free-length, fitting style, crimp rating, retaining groove, and bracket retention before payment. No expensive import unless explicitly approved.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -93340,17 +94526,17 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "electrical",
           "item": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips",
-          "vendor": "",
+          "vendor": "local brake parts / hardware supplier",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
           "status_detail": "planned",
-          "procurement_stage": "spec_needed_before_order",
+          "procurement_stage": "spec_needed_before_order_local_hardware_first",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA",
-          "notes": "BASELINE MUST REPLACE missing/corroded supports: May 12 photos add line/cable retainer context, but count and replace rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD. Use permanent supports, not cable ties, before final rear axle routing.",
+          "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA|user_update_2026-05-24_local_only_no_expensive_imports",
+          "notes": "BASELINE MUST REPLACE missing/corroded supports. Count and replace rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD using local/generic hardware matched to old samples. Use permanent supports, not cable ties, before final rear axle routing. No expensive imported clip kit unless explicitly approved.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -93358,7 +94544,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo",
+            "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo \u00b7 local brake parts / hardware supplier",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -93379,17 +94565,17 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Rear parking brake cable set with clips and equalizer hardware",
-          "vendor": "",
+          "vendor": "SNA Industries auto-control-cable lead / Fine Auto / NDE Store / Gari Parts / local Toyota-Land Cruiser supplier",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
           "status_detail": "planned",
-          "procurement_stage": "spec_needed_before_order",
+          "procurement_stage": "spec_needed_before_order_pakistan_catalog_first",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA",
-          "notes": "BASELINE MUST REPLACE during the suspension/brake access window; May 12 photos add rear cable/lever route context, but order only after cable end types, lengths, equalizer hardware, and backing-plate levers are confirmed from the removed samples.",
+          "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA|toyota_46410-60092_reference|cruiserparts_46410-60092_reference|web_mustakbil_sna_auto_control_cables|docs/pakistan-brake-piping-handbrake-sources-20260524.md|user_update_2026-05-24_local_only_no_expensive_imports",
+          "notes": "BASELINE MUST REPLACE during the suspension/brake access window. For a Pakistan-based FCP-style route, ask SNA first whether its auto-control-cable channel can supply or make this parking-brake cable, then ask Fine Auto, NDE Store, Gari Parts, and local Toyota/Land Cruiser suppliers using Toyota 46410-60092 as a candidate reference for 3/1976-12/1978 FJ40/FJ45. Final buy still requires old left/right cable samples for ends, lengths, sheath lengths, adjuster/equalizer hardware, and backing-plate levers. No expensive import or custom cable route unless explicitly approved.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -93397,7 +94583,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear parking brake cable set with clips and equalizer hardware \u00b7 local inventory photo",
+            "caption": "Rear parking brake cable set with clips and equalizer hardware \u00b7 local inventory photo \u00b7 SNA Industries auto-control-cable lead / Fine Auto / NDE Store / Gari Parts / local Toyota-Land Cruiser supplier",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -93417,35 +94603,35 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_rear_wheel_cylinders_pair",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Rear wheel cylinders pair with bleed screws",
-          "vendor": "",
+          "item": "Rear wheel cylinders - sample-match hold before any catalog kit",
+          "vendor": "local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
           "status_detail": "planned",
-          "procurement_stage": "inspect_then_buy",
+          "procurement_stage": "sample_match_required_before_purchase",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-REAR-004|20260501_194322_gp_XuRtjN4w|20260324_004906",
-          "notes": "BASELINE MUST REPLACE as a left/right pair after drum opening confirms cylinder bore, port thread, mounting pattern, and pushrod style.",
+          "evidence_ref": "BR-REAR-004|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|toyota_epc_upper_lower_rear_cylinders_reference|cruisercorps_A28_four_rear_cylinder_reference|fjparts_72_80_rear_set_reference|user_image_2026-05-24_catalog_vs_installed_view_question|user_update_2026-05-24_local_only_no_expensive_imports",
+          "notes": "BASELINE MUST REPLACE if old cylinders are leaking, seized, corroded, or unknown age, but do not buy the four-cylinder catalog kit from photo logic alone. The catalog image shows the loose cylinder mounting/port side, while the truck photo shows the drum-side barrel/boots, so the apparent mismatch is expected; however the purchase still requires backside photos or removed old cylinders to confirm count, mounting bolt spacing, bore, port thread, bleed screw access, pushrod/boot style, and whether a lower cylinder is fitted behind the hub/shoe area. Treat Toyota 47550-69075, 47560-69055, 47570-69065, 47580-69055 and Cruiser Corps A28/SOR 081-02C-KIT as references only until old samples match. No expensive import unless explicitly approved.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-            "caption": "Rear wheel cylinders pair with bleed screws \u00b7 local inventory photo",
+            "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+            "caption": "Rear wheel cylinders - sample-match hold before any catalog kit \u00b7 local inventory photo \u00b7 local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "local_inventory_evidence",
             "stage": "procurement_reconciliation",
-            "media_id": "20260501_194322_gp_XuRtjN4w",
+            "media_id": "20260524_025547_gp_yCvA0bxA",
             "matched_tokens": [
-              "photo_20260501_194322_gp_xurtjn4w"
+              "photo_20260524_025547_gp_ycva0bxa"
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 980
@@ -95523,17 +96709,17 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "substance",
           "inventory_group": "substances",
           "item": "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance",
-          "vendor": "",
+          "vendor": "SNA Industries / local brake pipe-hose specialist / Longman / Brandreth Road / Montgomery Road",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
           "status_detail": "spec_ready",
-          "procurement_stage": "spec_ready_release_hold",
+          "procurement_stage": "price_check_first_before_other_brake_parts",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-          "notes": "Spec ready via RPO-BRAKE-001A/B: buy new complete crimped brake hose assemblies, DOT/SAE J1401 or OEM-equivalent, not generic rubber hose. Online quote/purchase is acceptable after fitted end fittings, thread/banjo/seat, bracket retention, and old-sample/free length are measured. Ironman geometry is treated as effectively the same as the current setup, so no separate lift/geometry release action remains. Brake hard-line length basis remains new 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with new brake-rated fittings. This package overlaps BR-FRONT-004 and BR-REAR-003; order as one hose/line package or as itemized lines, not both.",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts",
+          "notes": "Spec ready via RPO-BRAKE-001A/B but do the brake-line price check first before buying more rear brake parts. First Pakistan-based FCP-style lead is SNA Industries because it lists steel brake pipes and brake hoses. Cheapest safe path is local 4.75 mm / 3/16 in brake-rated Bundy steel or CuNi/Cunifer hard-line fabrication copied from old samples, plus local complete crimped DOT/SAE J1401 or OEM-equivalent flex hose assemblies by sample. Imported FJ40 pre-bent kits are reference/price-ceiling only and are not approved. This package overlaps BR-FRONT-004 and BR-REAR-003; order as one hose/line package or as itemized lines, not both.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -96186,86 +97372,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "tool_metric_flare_nut_wrench_set_20260514",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "Metric flare-nut / brake-line wrench set",
-          "vendor": "Toolsmart / Tools Hub / local tool market",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "brake_system",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-005|web_toolsmart_licota_12x14|web_toolshub_10x12_search",
-          "notes": "Buy metric flare-nut/line wrenches before loosening old hydraulic fittings. Cover the actual nut hexes found on the vehicle; likely useful sizes are around 10, 11, 12, 14, and 17 mm. Reject using ordinary open-end spanners on seized brake tube nuts because rounded fittings will slow the brake-line rebuild.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
-            "caption": "Metric flare-nut / brake-line wrench set \u00b7 brake line/hose reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "brake_hose_line",
-            "matched_tokens": [
-              "brake",
-              "line"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "tool_large_bore_nitto_air_hose_impact_followup_20260517",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "Large-bore Nitto air hose for 1/2 inch impact wrench",
-          "vendor": "Almiraj / local pneumatic supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "site_setup",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-17_ingco_air_setup_purchase_intent|web_almiraj_ah1151|web_toolsmart_tat40122",
-          "notes": "Follow-up item to clear the air-impact performance risk. Buy a short 8-10 mm ID or 3/8 in air hose with Nitto/Japanese couplers for the Total TAT40122 1/2 in air impact wrench. Keep the AH1151 hose for blow gun, tire inflator, stapler, washing gun, and light-duty use if it proves too restrictive for the impact wrench.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-            "caption": "Large-bore Nitto air hose for 1/2 inch impact wrench \u00b7 air hose reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "air_hose",
-            "matched_tokens": [
-              "air",
-              "hose"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "tool_local_toolbench",
           "supply_type": "tool",
           "inventory_group": "tools",
@@ -96357,7 +97463,7 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_power_steering_upgrade",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit",
+        "item": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit plus General EPS Adapter geometry",
         "vendor": "",
         "amount": "",
         "currency": "PKR",
@@ -96368,7 +97474,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "",
         "evidence_ref": "user_seed|fj40-00006|fj40-00263|akber_khan-00346|akber_khan-00858",
-        "notes": "Market scout only: quote and buy/no-buy check for a complete matched 2005-2011 Vitz/Yaris SCP90/NCP90 EPS kit with its matched EPS ECU/controller or seller-proven integrated control, bench-test video, seller contact, return terms, and full kit photos before payment. The J40 has no vehicle ECU, but the donor EPS controller is still required for this route.",
+        "notes": "Market scout only: quote and buy/no-buy check for a complete matched 2005-2011 Vitz/Yaris SCP90/NCP90 EPS kit with its matched EPS ECU/controller or seller-proven integrated control, bench-test video, seller contact, return terms, full kit photos, and donor bracket/shaft geometry for the General EPS Adapter before payment. The J40 has no vehicle ECU, but the donor EPS controller is still required for this route. Adapter fabrication is a separate measured J40-specific release after the donor unit and vehicle-side datum points are mocked up.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -96376,7 +97482,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../deliverables/selling_site_images/images/manual_overrides/eps_complete_column_set_reference.svg",
-          "caption": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit \u00b7 complete Vitz/Yaris XP90 EPS column set checklist reference",
+          "caption": "EPS market scout check - 2005-2011 SCP90/NCP90 complete kit plus General EPS Adapter geometry \u00b7 complete Vitz/Yaris XP90 EPS column set checklist reference",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -96862,6 +97968,160 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "local_reference_image",
           "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_toolsmart_ingco_heavy_duty_cable_cutter_250mm_hhccb0210_20260523",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Ingco Heavy duty cable cutter 250mm HHCCB0210",
+        "vendor": "ToolsMart.pk",
+        "amount": "2130",
+        "currency": "PKR",
+        "workstream": "electrical_reset",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "gmail_msg_19e5622147cdd91a|gmail_order_TM25776|bank_alert_19e5622515169f29|web_toolsmart_hhccb0210",
+        "notes": "ToolsMart order TM25776 confirmed on 2026-05-23 includes Ingco Heavy duty cable cutter 250mm HHCCB0210 x1 at PKR 2130. Intended for electrical cable sizing and clean cable cuts during loom reset; receipt check jaw alignment, cutting edge condition, pivot/action, handle insulation/grip condition, and do not use it on hardened steel.",
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/ingco-heavy-duty-cable-cutter-250mm-hhccb0210",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/HHCCB0210.webp?v=1759145163",
+            "label": "toolsmart.pk"
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/expenses_ingco_heavy_duty_cable_cutter_250mm_hhcc_50c99d72d4c8.webp",
+          "caption": "Ingco Heavy duty cable cutter 250mm HHCCB0210 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "tool_toolsmart_ingco_heavy_duty_cable_cutter_250mm_hhccb0210_20260523",
+            "hhccb0210",
+            "0210",
+            "ingco",
+            "heavy",
+            "duty",
+            "cable",
+            "cutter"
+          ],
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/ingco-heavy-duty-cable-cutter-250mm-hhccb0210",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/HHCCB0210.webp?v=1759145163",
+          "match_score": 330
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_large_bore_nitto_air_hose_impact_followup_20260517",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Large-bore Nitto air hose for 1/2 inch impact wrench",
+        "vendor": "ToolsMart.pk",
+        "amount": "4720",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "user_update_2026-05-17_ingco_air_setup_purchase_intent|web_almiraj_ah1151|web_toolsmart_tat40122|web_toolsmart_licota_pu_hose_9m_nitto|gmail_msg_19e5622147cdd91a|gmail_order_TM25776|bank_alert_19e5622515169f29",
+        "notes": "ToolsMart order TM25776 confirmed on 2026-05-23 includes LICOTA MADE IN TAIWAN PU HOSE ROLL 9M W/ NITTO TYPE QUICK COUPLER x1 at PKR 4720. This should clear the impact-wrench airflow follow-up if the delivered hose is truly larger-bore and has compatible Nitto/Japanese quick couplers. Receipt check: confirm hose ID/OD if marked, coupler fit, no cuts or leaks, and actual impact performance on stubborn fasteners.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
+          "caption": "Large-bore Nitto air hose for 1/2 inch impact wrench \u00b7 air hose reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "air_hose",
+          "matched_tokens": [
+            "air",
+            "hose"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_metric_flare_nut_wrench_set_20260514",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Metric flare-nut / brake-line wrench set",
+        "vendor": "ToolsMart.pk",
+        "amount": "1970",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_partial_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-005|web_toolsmart_licota_12x14|web_toolshub_10x12_search|gmail_msg_19e5622147cdd91a|gmail_order_TM25776|bank_alert_19e5622515169f29",
+        "notes": "ToolsMart order TM25776 confirmed on 2026-05-23 includes LICOTA MADE IN TAIWAN FLARE NUT WRENCH 12 X 14 x1 at PKR 1970. This partially covers the flare-nut/line-wrench requirement only; still check the actual J40 fitting hexes and whether 10, 11, 17, or 19 mm line wrenches remain needed before opening old hydraulic fittings.",
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/licota-flare-nut-wrench-12-x-14",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/licota-awt-fnm0810-nut-wrench-550x550_jpg_53b3e014-c262-4025-9de0-b818530af45b.webp?v=1761900068",
+            "label": "toolsmart.pk"
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/expenses_metric_flare_nut_brake_line_wrench_set_9b3134d651f7.webp",
+          "caption": "Metric flare-nut / brake-line wrench set \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "selling_site_listing_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "tool_metric_flare_nut_wrench_set_20260514",
+            "20260514",
+            "metric",
+            "flare",
+            "nut",
+            "brake",
+            "line",
+            "wrench"
+          ],
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/licota-flare-nut-wrench-12-x-14",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/licota-awt-fnm0810-nut-wrench-550x550_jpg_53b3e014-c262-4025-9de0-b818530af45b.webp?v=1761900068",
+          "match_score": 283
         }
       },
       {
@@ -98323,7 +99583,7 @@ window.J40_DASHBOARD_DATA = {
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_dashboard_fascia_auxiliary_switch_panel__a8e361b962f9.jpg",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_dashboard_fascia_auxiliary_switch_panel__8d1042b59630.jpg",
           "caption": "Dashboard fascia / auxiliary switch panel (if OEM holes are insufficient) \u00b7 Local sheet-metal/fabrication shop \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
@@ -99457,8 +100717,8 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/expenses_lion_brake_fluid_dot_3_12oz_354ml_x6_0518a26e1a6c.webp",
-          "caption": "Lion Brake Fluid DOT-3 12oz/354ml x6 \u00b7 Autohub \u00b7 Selling Site Image",
+          "path": "../../deliverables/selling_site_images/images/expenses_dot_3_brake_fluid_x6_autohub_agreed_repl_0518a26e1a6c.webp",
+          "caption": "DOT 3 brake fluid x6 - Autohub agreed replacement/substitution received \u00b7 Autohub \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -99471,12 +100731,15 @@ window.J40_DASHBOARD_DATA = {
             "dot",
             "brake",
             "fluid",
-            "autohub"
+            "autohub",
+            "agreed",
+            "replacement",
+            "substitution"
           ],
           "match_basis": "selling_site_match",
           "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
           "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
-          "match_score": 224
+          "match_score": 236
         }
       },
       {
@@ -100908,8 +102171,8 @@ window.J40_DASHBOARD_DATA = {
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_2c3e3afb0459.webp",
-          "caption": "HB Body U900 cavity wax spray 400ml \u00b7 Autohub \u00b7 Selling Site Image",
+          "path": "../../deliverables/selling_site_images/images/expenses_hb_body_u900_cavity_wax_spray_400ml_x2_2c3e3afb0459.webp",
+          "caption": "HB Body U900 cavity wax spray 400ml x2 \u00b7 Autohub \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -101850,27 +103113,43 @@ window.J40_DASHBOARD_DATA = {
         "delivery_status": "received",
         "evidence_ref": "user_seed|akber_khan-00395|akber_khan-00671|fj40-00286|akber_khan-00879",
         "notes": "Seeded as received; a later tool basket shows a Harden Pro Grease Gun 500CC at Rs.4,790 and tools later arrived, but the exact paid amount is still left open pending order proof",
-        "links": [],
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/harden-pro-grease-gunsize500cc",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/670101_1.jpg?v=1714558707",
+            "label": "toolsmart.pk"
+          }
+        ],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/grease_gun.jpg",
-          "caption": "Grease gun \u00b7 grease gun reference image",
+          "path": "../../deliverables/selling_site_images/images/workbook_tools_harden_pro_grease_gun_500cc_8c76d0a477d8.webp",
+          "caption": "Grease gun \u00b7 Toolsmart \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "grease_gun",
+          "media_id": "",
           "matched_tokens": [
+            "tool_grease_gun",
             "grease",
-            "gun"
+            "gun",
+            "toolsmart",
+            "tool",
+            "harden",
+            "pro"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/harden-pro-grease-gunsize500cc",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/670101_1.jpg?v=1714558707",
+          "match_score": 203
         }
       },
       {
@@ -102235,23 +103514,39 @@ window.J40_DASHBOARD_DATA = {
         "delivery_status": "Y",
         "evidence_ref": "",
         "notes": "Evidence indicates purchased/received.",
-        "links": [],
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/harden-pro-grease-gunsize500cc",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/670101_1.jpg?v=1714558707",
+            "label": "toolsmart.pk"
+          }
+        ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/grease_gun.jpg",
-          "caption": "Harden Pro Grease Gun 500CC \u00b7 grease gun reference image",
+          "path": "../../deliverables/selling_site_images/images/workbook_tools_harden_pro_grease_gun_500cc_8c76d0a477d8.webp",
+          "caption": "Harden Pro Grease Gun 500CC \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "grease_gun",
+          "media_id": "",
           "matched_tokens": [
+            "row_16",
+            "harden",
+            "pro",
             "grease",
-            "gun"
+            "gun",
+            "500cc",
+            "toolsmart"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/harden-pro-grease-gunsize500cc",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/670101_1.jpg?v=1714558707",
+          "match_score": 230
         }
       },
       {
@@ -102385,23 +103680,39 @@ window.J40_DASHBOARD_DATA = {
         "delivery_status": "Y",
         "evidence_ref": "",
         "notes": "Evidence indicates purchased/received.",
-        "links": [],
+        "links": [
+          {
+            "url": "https://www.toolsmart.pk/products/ingco-heat-gun-2000w-hg200078",
+            "label": "toolsmart.pk"
+          },
+          {
+            "url": "http://www.toolsmart.pk/cdn/shop/files/HG200078.webp?v=1734351378",
+            "label": "toolsmart.pk"
+          }
+        ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/heat_gun.jpg",
-          "caption": "Ingco Heat gun 2000w HG200078 \u00b7 heat gun reference image",
+          "path": "../../deliverables/selling_site_images/images/workbook_tools_ingco_heat_gun_2000w_hg200078_222bef31d5de.webp",
+          "caption": "Ingco Heat gun 2000w HG200078 \u00b7 ToolsMart.pk \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
+          "specific_component": "selling_site_listing_reference",
           "stage": "procurement_reconciliation",
-          "media_id": "heat_gun",
+          "media_id": "",
           "matched_tokens": [
+            "row_17",
+            "ingco",
             "heat",
-            "gun"
+            "gun",
+            "2000w",
+            "hg200078",
+            "toolsmart"
           ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
+          "match_basis": "selling_site_match",
+          "listing_url": "https://www.toolsmart.pk/products/ingco-heat-gun-2000w-hg200078",
+          "image_url": "http://www.toolsmart.pk/cdn/shop/files/HG200078.webp?v=1734351378",
+          "match_score": 230
         }
       },
       {
@@ -104558,17 +105869,17 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "electrical",
         "item": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips",
-        "vendor": "",
+        "vendor": "local brake parts / hardware supplier",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
         "status_detail": "planned",
-        "procurement_stage": "spec_needed_before_order",
+        "procurement_stage": "spec_needed_before_order_local_hardware_first",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA",
-        "notes": "BASELINE MUST REPLACE missing/corroded supports: May 12 photos add line/cable retainer context, but count and replace rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD. Use permanent supports, not cable ties, before final rear axle routing.",
+        "evidence_ref": "BR-REAR-006|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA|user_update_2026-05-24_local_only_no_expensive_imports",
+        "notes": "BASELINE MUST REPLACE missing/corroded supports. Count and replace rear brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips by position and measured line/cable OD using local/generic hardware matched to old samples. Use permanent supports, not cable ties, before final rear axle routing. No expensive imported clip kit unless explicitly approved.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -104576,7 +105887,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo",
+          "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo \u00b7 local brake parts / hardware supplier",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -105369,17 +106680,17 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Brake hydraulic splitter T-union and inline union replacement set",
-        "vendor": "brake hydraulic pipe specialist",
+        "vendor": "local brake hydraulic pipe specialist",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
         "status_detail": "planned",
-        "procurement_stage": "spec_needed_before_order",
+        "procurement_stage": "spec_needed_before_order_quote_with_line_stock",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-14_rear_axle_splitter_purchase_list|BR-REAR-002|BR-REAR-003|BR-SYS-001|BR-CAPTURE-001",
-        "notes": "Replace the rear axle T-union/splitter if corroded, damaged, seized, or mismatched, and replace any chassis inline unions/splitters disturbed during the full brake hard-line rebuild. Match thread, flare seat, port orientation, mounting hole/bracket style, and tube entry angles from old samples. Do not use plumbing brass or unknown hydraulic fittings.",
+        "evidence_ref": "user_update_2026-05-14_rear_axle_splitter_purchase_list|BR-REAR-002|BR-REAR-003|BR-SYS-001|BR-CAPTURE-001|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts",
+        "notes": "Quote with the cheap brake-line package, but replace the rear axle T-union/splitter only if corroded, damaged, seized, or mismatched, and replace chassis inline unions/splitters only if disturbed during the full hard-line rebuild. Match thread, flare seat, port orientation, mounting hole/bracket style, and tube entry angles from old samples. Do not use plumbing brass or unknown hydraulic fittings.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -105509,17 +106820,17 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats",
-        "vendor": "brake hydraulic pipe specialist",
+        "vendor": "local brake hydraulic pipe specialist",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
         "status_detail": "planned",
-        "procurement_stage": "spec_needed_before_order",
+        "procurement_stage": "spec_needed_before_order_quote_with_line_stock",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-CAPTURE-001|20260514_111300_user_brake_flare_side_view",
-        "notes": "Order new brake-rated flare nuts and fittings only after the old fittings are identified. May 14 installed-fitting photos plus the user flare side-view point to Toyota-style double/inverted brake-line flares, but final payment still waits for removed-line straight-on sealing face, thread, and seat confirmation. Must cover master/proportioning ports, front hose chassis ends, rear center hose/T-union ends, rear wheel-cylinder ports, and clutch master/slave or clutch hose ends as fitted. Buy extras for practice/scrap flares; do not buy single-flare or ISO bubble fittings unless sample-proven.",
+        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-CAPTURE-001|20260514_111300_user_brake_flare_side_view|docs/brake-line-cheap-sourcing-20260524.md|user_update_2026-05-24_price_brake_lines_before_other_parts",
+        "notes": "Quote fittings with the cheap brake-line package, but order new brake-rated flare nuts and fittings only after the old fittings are identified. May 14 installed-fitting photos plus the user flare side-view point to Toyota-style double/inverted brake-line flares, but final payment still waits for removed-line straight-on sealing face, thread, and seat confirmation. Must cover master/proportioning ports, front hose chassis ends, rear center hose/T-union ends, rear wheel-cylinder ports, and clutch master/slave or clutch hose ends as fitted. Buy extras for practice/scrap flares; do not buy single-flare, ISO bubble, plumbing, or compression fittings unless sample-proven.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -105548,7 +106859,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260514_111300_user_brake_flare_side_view.png",
-          "caption": "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats \u00b7 local inventory photo \u00b7 brake hydraulic pipe specialist",
+          "caption": "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats \u00b7 local inventory photo \u00b7 local brake hydraulic pipe specialist",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -106001,17 +107312,17 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred",
-        "vendor": "Longman / brake hydraulic pipe specialist",
+        "vendor": "SNA Industries / local brake pipe specialist / Longman / Brandreth Road / Montgomery Road",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
         "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
+        "procurement_stage": "price_check_priority_before_other_brake_parts",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001",
-        "notes": "Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; buy a single 10000 mm coil minimum if available, 12000 mm preferred for scrap flares, route corrections, and service loops. Use brake-rated bundy steel or CuNi/Cunifer only; no bare copper.",
+        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|gari_lahore_mild_steel_hydraulic_brake_pipe_reference|fedhill_25ft_cunifer_reference|fcp_euro_25ft_cunifer_reference|user_update_2026-05-24_price_brake_lines_before_other_parts",
+        "notes": "Quote this before buying more rear brake parts. First quote target is SNA Industries, because it is Pakistan-based and lists steel brake pipes and brake hoses. Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; quote both 25 ft minimum and a single 10000-12000 mm local coil for scrap flares, route corrections, and service loops. Use brake-rated Bundy steel or CuNi/Cunifer only; no bare copper, plumbing tube, compression fittings, or imported pre-bent FJ40 kit unless explicitly approved.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -106307,38 +107618,77 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "part_rear_brake_shoes_hardware",
+        "source_ref": "part_rear_brake_drums_pair_cruisercorps",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Rear brake shoes and spring hardware set",
-        "vendor": "",
+        "item": "Rear brake drums pair - inspect/machine locally before any import",
+        "vendor": "local brake machine shop / local Toyota parts supplier",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
         "status_detail": "planned",
-        "procurement_stage": "inspect_then_buy",
+        "procurement_stage": "local_inspect_machine_or_replace_hold",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-REAR-005|20260501_194322_gp_XuRtjN4w|20260324_004906",
-        "notes": "BASELINE MUST REPLACE: order shoes, return springs, hold-down springs, adjusters, and retainers after drum diameter, shoe width, and backing-plate family are confirmed.",
+        "evidence_ref": "user_chat_2026-05-23_rear_drum_open|cruisercorps_553-115x2_reference_only|gmail_import_2026-05-24_no_brake_order|user_update_2026-05-24_local_only_no_expensive_imports",
+        "notes": "Do not order expensive imported drums by default. Inspect and measure the old drums first, machine locally only if safely within service limit, and replace locally only if scored, stepped, cracked, near/over limit, or machining quality is unsafe. Cruiser Corps 553-115 remains a reference only. Any import requires explicit approval.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-          "caption": "Rear brake shoes and spring hardware set \u00b7 local inventory photo",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
+          "caption": "Rear brake drums pair - inspect/machine locally before any import \u00b7 automotive part reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "generic_part",
+          "matched_tokens": [
+            "part"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_rear_brake_shoes_hardware",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Rear brake shoes, drum hardware, and wheel-cylinder bolt kit",
+        "vendor": "local brake parts supplier / PakWheels-local lead / sample-match supplier",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "purchase_ready_local_catalog_first_pending_measurement",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports",
+        "notes": "BASELINE MUST REPLACE. Prefer local shoes, hardware, and wheel-cylinder fasteners; use the PakWheels K-2255-N/Y listing and imported catalog numbers only as search/reference leads. Before payment, measure shoe width and compare spring/adjuster layout; if this is a non-USA 9/1975+ 3-inch drum setup, use a matching local 3-inch shoe/hardware route. Keep old springs, adjusters, and anchors as samples until the new kit is dry-fitted. No expensive import unless explicitly approved.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+          "caption": "Rear brake shoes, drum hardware, and wheel-cylinder bolt kit \u00b7 local inventory photo \u00b7 local brake parts supplier / PakWheels-local lead / sample-match supplier",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
-          "media_id": "20260501_194322_gp_XuRtjN4w",
+          "media_id": "20260524_025547_gp_yCvA0bxA",
           "matched_tokens": [
-            "photo_20260501_194322_gp_xurtjn4w"
+            "photo_20260524_025547_gp_ycva0bxa"
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 980
@@ -106349,18 +107699,18 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_rear_center_brake_flex_hose",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Rear center frame-to-axle brake flex hose - by end fittings and old-sample/free length",
-        "vendor": "",
+        "item": "Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference",
+        "vendor": "local brake hose/Toyota parts supplier",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
         "status_detail": "planned",
-        "procurement_stage": "spec_needed_before_order",
+        "procurement_stage": "purchase_ready_local_catalog_first_pending_sample_match",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-REAR-003|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA",
-        "notes": "BASELINE MUST REPLACE; order only after chassis-side and axle-side fitting thread/end style, bracket retention, and old-sample/free length are measured. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+        "evidence_ref": "BR-REAR-003|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|user_chat_2026-05-23_rear_drum_open|cruisercorps_553-103_reference_only|gmail_import_2026-05-24_no_brake_order|user_update_2026-05-24_local_only_no_expensive_imports",
+        "notes": "BASELINE MUST REPLACE. Use Cruiser Corps 553-103 only as a dimension/spec reference for the pre-8/1980 rear drum axle context. Ask local brake-hose and Toyota suppliers first, then confirm old-sample/free-length, fitting style, crimp rating, retaining groove, and bracket retention before payment. No expensive import unless explicitly approved.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -106389,17 +107739,17 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Rear parking brake cable set with clips and equalizer hardware",
-        "vendor": "",
+        "vendor": "SNA Industries auto-control-cable lead / Fine Auto / NDE Store / Gari Parts / local Toyota-Land Cruiser supplier",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
         "status_detail": "planned",
-        "procurement_stage": "spec_needed_before_order",
+        "procurement_stage": "spec_needed_before_order_pakistan_catalog_first",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA",
-        "notes": "BASELINE MUST REPLACE during the suspension/brake access window; May 12 photos add rear cable/lever route context, but order only after cable end types, lengths, equalizer hardware, and backing-plate levers are confirmed from the removed samples.",
+        "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA|toyota_46410-60092_reference|cruiserparts_46410-60092_reference|web_mustakbil_sna_auto_control_cables|docs/pakistan-brake-piping-handbrake-sources-20260524.md|user_update_2026-05-24_local_only_no_expensive_imports",
+        "notes": "BASELINE MUST REPLACE during the suspension/brake access window. For a Pakistan-based FCP-style route, ask SNA first whether its auto-control-cable channel can supply or make this parking-brake cable, then ask Fine Auto, NDE Store, Gari Parts, and local Toyota/Land Cruiser suppliers using Toyota 46410-60092 as a candidate reference for 3/1976-12/1978 FJ40/FJ45. Final buy still requires old left/right cable samples for ends, lengths, sheath lengths, adjuster/equalizer hardware, and backing-plate levers. No expensive import or custom cable route unless explicitly approved.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -106407,7 +107757,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear parking brake cable set with clips and equalizer hardware \u00b7 local inventory photo",
+          "caption": "Rear parking brake cable set with clips and equalizer hardware \u00b7 local inventory photo \u00b7 SNA Industries auto-control-cable lead / Fine Auto / NDE Store / Gari Parts / local Toyota-Land Cruiser supplier",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -106427,35 +107777,35 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_rear_wheel_cylinders_pair",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Rear wheel cylinders pair with bleed screws",
-        "vendor": "",
+        "item": "Rear wheel cylinders - sample-match hold before any catalog kit",
+        "vendor": "local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
         "status_detail": "planned",
-        "procurement_stage": "inspect_then_buy",
+        "procurement_stage": "sample_match_required_before_purchase",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-REAR-004|20260501_194322_gp_XuRtjN4w|20260324_004906",
-        "notes": "BASELINE MUST REPLACE as a left/right pair after drum opening confirms cylinder bore, port thread, mounting pattern, and pushrod style.",
+        "evidence_ref": "BR-REAR-004|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|toyota_epc_upper_lower_rear_cylinders_reference|cruisercorps_A28_four_rear_cylinder_reference|fjparts_72_80_rear_set_reference|user_image_2026-05-24_catalog_vs_installed_view_question|user_update_2026-05-24_local_only_no_expensive_imports",
+        "notes": "BASELINE MUST REPLACE if old cylinders are leaking, seized, corroded, or unknown age, but do not buy the four-cylinder catalog kit from photo logic alone. The catalog image shows the loose cylinder mounting/port side, while the truck photo shows the drum-side barrel/boots, so the apparent mismatch is expected; however the purchase still requires backside photos or removed old cylinders to confirm count, mounting bolt spacing, bore, port thread, bleed screw access, pushrod/boot style, and whether a lower cylinder is fitted behind the hub/shoe area. Treat Toyota 47550-69075, 47560-69055, 47570-69065, 47580-69055 and Cruiser Corps A28/SOR 081-02C-KIT as references only until old samples match. No expensive import unless explicitly approved.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-          "caption": "Rear wheel cylinders pair with bleed screws \u00b7 local inventory photo",
+          "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+          "caption": "Rear wheel cylinders - sample-match hold before any catalog kit \u00b7 local inventory photo \u00b7 local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "local_inventory_evidence",
           "stage": "procurement_reconciliation",
-          "media_id": "20260501_194322_gp_XuRtjN4w",
+          "media_id": "20260524_025547_gp_yCvA0bxA",
           "matched_tokens": [
-            "photo_20260501_194322_gp_xurtjn4w"
+            "photo_20260524_025547_gp_ycva0bxa"
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 980
@@ -106912,7 +108262,7 @@ window.J40_DASHBOARD_DATA = {
           }
         ],
         "image": {
-          "path": "../../deliverables/selling_site_images/images/workbook_parts_ignition_lock_security_fix_new_barrel_ma_0c2b25595c0a.jpg",
+          "path": "../../deliverables/selling_site_images/images/workbook_parts_ignition_lock_security_fix_new_barrel_ma_ce87c02905f8.jpg",
           "caption": "Ignition lock security fix (new barrel + matched keys OR full locksmith re-key) \u00b7 Local locksmith + lockset supplier \u00b7 Selling Site Image",
           "captured_date": "",
           "captured_time": "",
@@ -107307,17 +108657,17 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "substance",
         "inventory_group": "substances",
         "item": "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance",
-        "vendor": "",
+        "vendor": "SNA Industries / local brake pipe-hose specialist / Longman / Brandreth Road / Montgomery Road",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
         "status_detail": "spec_ready",
-        "procurement_stage": "spec_ready_release_hold",
+        "procurement_stage": "price_check_first_before_other_brake_parts",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv",
-        "notes": "Spec ready via RPO-BRAKE-001A/B: buy new complete crimped brake hose assemblies, DOT/SAE J1401 or OEM-equivalent, not generic rubber hose. Online quote/purchase is acceptable after fitted end fittings, thread/banjo/seat, bracket retention, and old-sample/free length are measured. Ironman geometry is treated as effectively the same as the current setup, so no separate lift/geometry release action remains. Brake hard-line length basis remains new 4.75 mm / 3/16 in OD x 7600 mm / 25 ft coil allowance with new brake-rated fittings. This package overlaps BR-FRONT-004 and BR-REAR-003; order as one hose/line package or as itemized lines, not both.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts",
+        "notes": "Spec ready via RPO-BRAKE-001A/B but do the brake-line price check first before buying more rear brake parts. First Pakistan-based FCP-style lead is SNA Industries because it lists steel brake pipes and brake hoses. Cheapest safe path is local 4.75 mm / 3/16 in brake-rated Bundy steel or CuNi/Cunifer hard-line fabrication copied from old samples, plus local complete crimped DOT/SAE J1401 or OEM-equivalent flex hose assemblies by sample. Imported FJ40 pre-bent kits are reference/price-ceiling only and are not approved. This package overlaps BR-FRONT-004 and BR-REAR-003; order as one hose/line package or as itemized lines, not both.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -107934,86 +109284,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "source": "expenses",
-        "source_ref": "tool_large_bore_nitto_air_hose_impact_followup_20260517",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "Large-bore Nitto air hose for 1/2 inch impact wrench",
-        "vendor": "Almiraj / local pneumatic supplier",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "site_setup",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-17_ingco_air_setup_purchase_intent|web_almiraj_ah1151|web_toolsmart_tat40122",
-        "notes": "Follow-up item to clear the air-impact performance risk. Buy a short 8-10 mm ID or 3/8 in air hose with Nitto/Japanese couplers for the Total TAT40122 1/2 in air impact wrench. Keep the AH1151 hose for blow gun, tire inflator, stapler, washing gun, and light-duty use if it proves too restrictive for the impact wrench.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-          "caption": "Large-bore Nitto air hose for 1/2 inch impact wrench \u00b7 air hose reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "air_hose",
-          "matched_tokens": [
-            "air",
-            "hose"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "tool_metric_flare_nut_wrench_set_20260514",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "Metric flare-nut / brake-line wrench set",
-        "vendor": "Toolsmart / Tools Hub / local tool market",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "brake_system",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-005|web_toolsmart_licota_12x14|web_toolshub_10x12_search",
-        "notes": "Buy metric flare-nut/line wrenches before loosening old hydraulic fittings. Cover the actual nut hexes found on the vehicle; likely useful sizes are around 10, 11, 12, 14, and 17 mm. Reject using ordinary open-end spanners on seized brake tube nuts because rounded fittings will slow the brake-line rebuild.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
-          "caption": "Metric flare-nut / brake-line wrench set \u00b7 brake line/hose reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "brake_hose_line",
-          "matched_tokens": [
-            "brake",
-            "line"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
         "source": "workbook_tools",
         "source_ref": "workbook_tools#row_24",
         "supply_type": "tool",
@@ -108092,10 +109362,10 @@ window.J40_DASHBOARD_DATA = {
   "other_builds": {
     "drop_zone": "data/reference/other_j40_builds",
     "summary": {
-      "section_count": 7,
-      "total_media": 76,
-      "total_images": 68,
-      "total_videos": 8,
+      "section_count": 9,
+      "total_media": 179,
+      "total_images": 160,
+      "total_videos": 19,
       "drop_zone_media": 0,
       "drop_zone_images": 0,
       "drop_zone_videos": 0,
@@ -109387,6 +110657,1672 @@ window.J40_DASHBOARD_DATA = {
             "notes": "Akbar said this was under the accelerator pedal."
           }
         ]
+      },
+      {
+        "key": "whatsapp_fj40_group_feed",
+        "title": "WhatsApp Fj40 Group Feed",
+        "description": "Imported Fj40 group photos and videos that are not already called out in the curated other-build reference sections.",
+        "source_path": "data/processed/generated/mcp_whatsapp_j40_media_index.csv",
+        "links": [],
+        "images": [
+          {
+            "path": "../../data/raw/imports/fj40/00003022-PHOTO-2026-03-12-12-21-52.jpg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-12 12:21:52",
+            "captured_date": "2026-03-12",
+            "captured_time": "12:21:52",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "00003022-PHOTO-2026-03-12-12-21-52",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003022-PHOTO-2026-03-12-12-21-52.jpg",
+            "notes": "Author: Uk David. Imported timestamp: 2026-03-12 12:21:52"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_AC5256D316FA7DC2613EE9D1E044B138_226083001659473_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-12 22:25:52.000Z",
+            "captured_date": "2026-03-12",
+            "captured_time": "22:25:52.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "true_120363408465558195_g_us_AC5256D316FA7DC2613EE9D1E044B138_226083001659473_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_AC5256D316FA7DC2613EE9D1E044B138_226083001659473_lid.jpeg",
+            "notes": "Author: +923099351940. Imported timestamp: 2026-03-12 22:25:52.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003049-PHOTO-2026-03-13-03-25-54.jpg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-13 03:25:54",
+            "captured_date": "2026-03-13",
+            "captured_time": "03:25:54",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "00003049-PHOTO-2026-03-13-03-25-54",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003049-PHOTO-2026-03-13-03-25-54.jpg",
+            "notes": "Author: Uk David. Imported timestamp: 2026-03-13 03:25:54"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_AC4B5F1572904174155A3D85F94A0574_226083001659473_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-14 12:22:33.000Z",
+            "captured_date": "2026-03-14",
+            "captured_time": "12:22:33.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "true_120363408465558195_g_us_AC4B5F1572904174155A3D85F94A0574_226083001659473_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_AC4B5F1572904174155A3D85F94A0574_226083001659473_lid.jpeg",
+            "notes": "Author: +923099351940. Imported timestamp: 2026-03-14 12:22:33.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_ACC6680AE3C9F93C835BD1764B8B0093_226083001659473_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-14 12:22:57.000Z",
+            "captured_date": "2026-03-14",
+            "captured_time": "12:22:57.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "true_120363408465558195_g_us_ACC6680AE3C9F93C835BD1764B8B0093_226083001659473_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_ACC6680AE3C9F93C835BD1764B8B0093_226083001659473_lid.jpeg",
+            "notes": "Author: +923099351940. Imported timestamp: 2026-03-14 12:22:57.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A5A11ECC78E667F26C2AB33B8565A62A_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-14 12:32:02.000Z",
+            "captured_date": "2026-03-14",
+            "captured_time": "12:32:02.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A5A11ECC78E667F26C2AB33B8565A62A_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A5A11ECC78E667F26C2AB33B8565A62A_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-14 12:32:02.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_AC09B3BF16AB5824D042F8B437FCBED9_226083001659473_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-14 12:33:06.000Z",
+            "captured_date": "2026-03-14",
+            "captured_time": "12:33:06.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "true_120363408465558195_g_us_AC09B3BF16AB5824D042F8B437FCBED9_226083001659473_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_AC09B3BF16AB5824D042F8B437FCBED9_226083001659473_lid.jpeg",
+            "notes": "Author: +923099351940. Imported timestamp: 2026-03-14 12:33:06.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_AC18800DC94ADCE38F6CAF8D9F384A0D_226083001659473_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-14 12:34:40.000Z",
+            "captured_date": "2026-03-14",
+            "captured_time": "12:34:40.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "true_120363408465558195_g_us_AC18800DC94ADCE38F6CAF8D9F384A0D_226083001659473_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_AC18800DC94ADCE38F6CAF8D9F384A0D_226083001659473_lid.jpeg",
+            "notes": "Author: +923099351940. Imported timestamp: 2026-03-14 12:34:40.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_ACCA2CC2256D121BD3B9ECC1BF78711E_226083001659473_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-14 12:38:37.000Z",
+            "captured_date": "2026-03-14",
+            "captured_time": "12:38:37.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "true_120363408465558195_g_us_ACCA2CC2256D121BD3B9ECC1BF78711E_226083001659473_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_ACCA2CC2256D121BD3B9ECC1BF78711E_226083001659473_lid.jpeg",
+            "notes": "Author: +923099351940. Imported timestamp: 2026-03-14 12:38:37.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_AC2281F98DFC563B11D5311C144B8118_226083001659473_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-14 12:42:53.000Z",
+            "captured_date": "2026-03-14",
+            "captured_time": "12:42:53.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "true_120363408465558195_g_us_AC2281F98DFC563B11D5311C144B8118_226083001659473_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_AC2281F98DFC563B11D5311C144B8118_226083001659473_lid.jpeg",
+            "notes": "Author: +923099351940. Imported timestamp: 2026-03-14 12:42:53.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_ACE55F523C0DA6A4C07640B2ABAA8BBD_226083001659473_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-14 13:03:32.000Z",
+            "captured_date": "2026-03-14",
+            "captured_time": "13:03:32.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "true_120363408465558195_g_us_ACE55F523C0DA6A4C07640B2ABAA8BBD_226083001659473_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_ACE55F523C0DA6A4C07640B2ABAA8BBD_226083001659473_lid.jpeg",
+            "notes": "Author: +923099351940. Imported timestamp: 2026-03-14 13:03:32.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003061-PHOTO-2026-03-14-17-22-34.jpg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-14 17:22:34",
+            "captured_date": "2026-03-14",
+            "captured_time": "17:22:34",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "00003061-PHOTO-2026-03-14-17-22-34",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003061-PHOTO-2026-03-14-17-22-34.jpg",
+            "notes": "Author: Uk David. Imported timestamp: 2026-03-14 17:22:34"
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003062-PHOTO-2026-03-14-17-23-04.jpg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-14 17:23:04",
+            "captured_date": "2026-03-14",
+            "captured_time": "17:23:04",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "00003062-PHOTO-2026-03-14-17-23-04",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003062-PHOTO-2026-03-14-17-23-04.jpg",
+            "notes": "Author: Uk David. Imported timestamp: 2026-03-14 17:23:04"
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003066-PHOTO-2026-03-14-17-32-02.jpg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-14 17:32:02",
+            "captured_date": "2026-03-14",
+            "captured_time": "17:32:02",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "00003066-PHOTO-2026-03-14-17-32-02",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003066-PHOTO-2026-03-14-17-32-02.jpg",
+            "notes": "Author: ~\u202fnuic. Imported timestamp: 2026-03-14 17:32:02"
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003068-PHOTO-2026-03-14-17-33-07.jpg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-14 17:33:07",
+            "captured_date": "2026-03-14",
+            "captured_time": "17:33:07",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "00003068-PHOTO-2026-03-14-17-33-07",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003068-PHOTO-2026-03-14-17-33-07.jpg",
+            "notes": "Author: Uk David. Imported timestamp: 2026-03-14 17:33:07"
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003070-PHOTO-2026-03-14-17-34-40.jpg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-14 17:34:40",
+            "captured_date": "2026-03-14",
+            "captured_time": "17:34:40",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "00003070-PHOTO-2026-03-14-17-34-40",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003070-PHOTO-2026-03-14-17-34-40.jpg",
+            "notes": "Author: Uk David. Imported timestamp: 2026-03-14 17:34:40"
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003072-PHOTO-2026-03-14-17-38-42.jpg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-14 17:38:42",
+            "captured_date": "2026-03-14",
+            "captured_time": "17:38:42",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "00003072-PHOTO-2026-03-14-17-38-42",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003072-PHOTO-2026-03-14-17-38-42.jpg",
+            "notes": "Author: Uk David. Imported timestamp: 2026-03-14 17:38:42"
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003076-PHOTO-2026-03-14-17-43-57.jpg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-14 17:43:57",
+            "captured_date": "2026-03-14",
+            "captured_time": "17:43:57",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "00003076-PHOTO-2026-03-14-17-43-57",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003076-PHOTO-2026-03-14-17-43-57.jpg",
+            "notes": "Author: Uk David. Imported timestamp: 2026-03-14 17:43:57"
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003079-PHOTO-2026-03-14-18-03-38.jpg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-14 18:03:38",
+            "captured_date": "2026-03-14",
+            "captured_time": "18:03:38",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "00003079-PHOTO-2026-03-14-18-03-38",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003079-PHOTO-2026-03-14-18-03-38.jpg",
+            "notes": "Author: Uk David. Imported timestamp: 2026-03-14 18:03:38"
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003080-VIDEO-2026-03-14-18-05-17.mp4",
+            "caption": "Fj40 WhatsApp Video \u00b7 2026-03-14 18:05:17",
+            "captured_date": "2026-03-14",
+            "captured_time": "18:05:17",
+            "media_type": "video",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "00003080-VIDEO-2026-03-14-18-05-17",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003080-VIDEO-2026-03-14-18-05-17.mp4",
+            "notes": "Author: Uk David. Imported timestamp: 2026-03-14 18:05:17"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_AC814594CC460139E3A16FF9916BC5AE_232877656666113_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-14 19:05:55.000Z",
+            "captured_date": "2026-03-14",
+            "captured_time": "19:05:55.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_AC814594CC460139E3A16FF9916BC5AE_232877656666113_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_AC814594CC460139E3A16FF9916BC5AE_232877656666113_lid.jpeg",
+            "notes": "Author: 232877656666113. Imported timestamp: 2026-03-14 19:05:55.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003083-PHOTO-2026-03-15-00-05-55.jpg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 00:05:55",
+            "captured_date": "2026-03-15",
+            "captured_time": "00:05:55",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "00003083-PHOTO-2026-03-15-00-05-55",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003083-PHOTO-2026-03-15-00-05-55.jpg",
+            "notes": "Author: ~\u202fHM. Imported timestamp: 2026-03-15 00:05:55"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_AC7822CA97D0A87996C5359159048490_226083001659473_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 08:36:04.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "08:36:04.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "true_120363408465558195_g_us_AC7822CA97D0A87996C5359159048490_226083001659473_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_AC7822CA97D0A87996C5359159048490_226083001659473_lid.jpeg",
+            "notes": "Author: +923099351940. Imported timestamp: 2026-03-15 08:36:04.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_AC2474C0D1106116670F1F4A8E190A7E_226083001659473_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 08:36:17.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "08:36:17.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "true_120363408465558195_g_us_AC2474C0D1106116670F1F4A8E190A7E_226083001659473_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_AC2474C0D1106116670F1F4A8E190A7E_226083001659473_lid.jpeg",
+            "notes": "Author: +923099351940. Imported timestamp: 2026-03-15 08:36:17.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003087-PHOTO-2026-03-15-13-36-37.jpg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 13:36:37",
+            "captured_date": "2026-03-15",
+            "captured_time": "13:36:37",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "00003087-PHOTO-2026-03-15-13-36-37",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003087-PHOTO-2026-03-15-13-36-37.jpg",
+            "notes": "Author: Uk David. Imported timestamp: 2026-03-15 13:36:37"
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003088-PHOTO-2026-03-15-13-36-37.jpg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 13:36:37",
+            "captured_date": "2026-03-15",
+            "captured_time": "13:36:37",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "00003088-PHOTO-2026-03-15-13-36-37",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003088-PHOTO-2026-03-15-13-36-37.jpg",
+            "notes": "Author: Uk David. Imported timestamp: 2026-03-15 13:36:37"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A513B422A22D211BF36ABC4631AEAB56_22192146358278_lid.mp4",
+            "caption": "Fj40 WhatsApp Video \u00b7 2026-03-15 14:34:05.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "14:34:05.000",
+            "media_type": "video",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A513B422A22D211BF36ABC4631AEAB56_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A513B422A22D211BF36ABC4631AEAB56_22192146358278_lid.mp4",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 14:34:05.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A5D119443C27639DF65E741EE7B97694_22192146358278_lid.mp4",
+            "caption": "Fj40 WhatsApp Video \u00b7 2026-03-15 14:34:05.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "14:34:05.000",
+            "media_type": "video",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A5D119443C27639DF65E741EE7B97694_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A5D119443C27639DF65E741EE7B97694_22192146358278_lid.mp4",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 14:34:05.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A559F937CE823B0185FFB6981E706524_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 14:34:06.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "14:34:06.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A559F937CE823B0185FFB6981E706524_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A559F937CE823B0185FFB6981E706524_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 14:34:06.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A56C5BDAD7D93893F52990D9CC2E2D07_22192146358278_lid.mp4",
+            "caption": "Fj40 WhatsApp Video \u00b7 2026-03-15 14:34:06.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "14:34:06.000",
+            "media_type": "video",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A56C5BDAD7D93893F52990D9CC2E2D07_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A56C5BDAD7D93893F52990D9CC2E2D07_22192146358278_lid.mp4",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 14:34:06.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A57EBC15E76D165E43A4EDD39B49AA93_22192146358278_lid.mp4",
+            "caption": "Fj40 WhatsApp Video \u00b7 2026-03-15 14:34:06.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "14:34:06.000",
+            "media_type": "video",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A57EBC15E76D165E43A4EDD39B49AA93_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A57EBC15E76D165E43A4EDD39B49AA93_22192146358278_lid.mp4",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 14:34:06.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_3B9472B607109D4C8197_190950068514824_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:28:26.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:28:26.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_3B9472B607109D4C8197_190950068514824_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_3B9472B607109D4C8197_190950068514824_lid.jpeg",
+            "notes": "Author: 190950068514824. Imported timestamp: 2026-03-15 15:28:26.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_3B9B6BEC4F0EEE954905_190950068514824_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:32:54.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:32:54.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_3B9B6BEC4F0EEE954905_190950068514824_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_3B9B6BEC4F0EEE954905_190950068514824_lid.jpeg",
+            "notes": "Author: 190950068514824. Imported timestamp: 2026-03-15 15:32:54.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A564A0FF69F977EA87828942BA714D76_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:00.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:00.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A564A0FF69F977EA87828942BA714D76_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A564A0FF69F977EA87828942BA714D76_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:00.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A59A6959D67D1D8429D240CD5EFABF6C_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:00.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:00.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A59A6959D67D1D8429D240CD5EFABF6C_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A59A6959D67D1D8429D240CD5EFABF6C_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:00.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A534E46D692023E6C04CCF54FC16746C_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:01.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:01.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A534E46D692023E6C04CCF54FC16746C_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A534E46D692023E6C04CCF54FC16746C_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:01.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A59263323D017D7BD4A996457862D05C_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:01.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:01.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A59263323D017D7BD4A996457862D05C_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A59263323D017D7BD4A996457862D05C_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:01.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A5AD4073842A3BB6FA73945208E20B58_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:01.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:01.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A5AD4073842A3BB6FA73945208E20B58_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A5AD4073842A3BB6FA73945208E20B58_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:01.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A5F20BF7312BC84A4A810A377EBC6C28_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:03.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:03.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A5F20BF7312BC84A4A810A377EBC6C28_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A5F20BF7312BC84A4A810A377EBC6C28_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:03.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A5B1BF6F785FD79546DD3BAC458B2CFD_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:04.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:04.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A5B1BF6F785FD79546DD3BAC458B2CFD_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A5B1BF6F785FD79546DD3BAC458B2CFD_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:04.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A5BF40C7A885B48EF1D5489364BED2F6_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:04.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:04.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A5BF40C7A885B48EF1D5489364BED2F6_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A5BF40C7A885B48EF1D5489364BED2F6_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:04.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A513E57E92AE92D328C04585AF8CE303_22192146358278_lid.mp4",
+            "caption": "Fj40 WhatsApp Video \u00b7 2026-03-15 15:38:07.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:07.000",
+            "media_type": "video",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A513E57E92AE92D328C04585AF8CE303_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A513E57E92AE92D328C04585AF8CE303_22192146358278_lid.mp4",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:07.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A51D81A9006FDF3E25B809A9827FC85A_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:07.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:07.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A51D81A9006FDF3E25B809A9827FC85A_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A51D81A9006FDF3E25B809A9827FC85A_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:07.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A51D1736913272DF109359CEC9CAE887_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:08.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:08.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A51D1736913272DF109359CEC9CAE887_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A51D1736913272DF109359CEC9CAE887_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:08.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A547DA2ED6C4887760D907958DC730F9_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:08.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:08.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A547DA2ED6C4887760D907958DC730F9_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A547DA2ED6C4887760D907958DC730F9_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:08.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A54CC6A017BE4E3336A6A35075014C5C_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:08.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:08.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A54CC6A017BE4E3336A6A35075014C5C_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A54CC6A017BE4E3336A6A35075014C5C_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:08.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A54F2700F252E625924A303BDF866FC8_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:09.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:09.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A54F2700F252E625924A303BDF866FC8_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A54F2700F252E625924A303BDF866FC8_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:09.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A5BBB537ECA57967A00C0C307D0669F7_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:09.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:09.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A5BBB537ECA57967A00C0C307D0669F7_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A5BBB537ECA57967A00C0C307D0669F7_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:09.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A570C75D628CF15F8541FD638E1E4365_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:10.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:10.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A570C75D628CF15F8541FD638E1E4365_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A570C75D628CF15F8541FD638E1E4365_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:10.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A5F94FBDB06FC5521F054265CE3631BC_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:10.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:10.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A5F94FBDB06FC5521F054265CE3631BC_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A5F94FBDB06FC5521F054265CE3631BC_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:10.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A5043F7C78B01558EE2109DEC3BD413F_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:11.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:11.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A5043F7C78B01558EE2109DEC3BD413F_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A5043F7C78B01558EE2109DEC3BD413F_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:11.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A599A76A2C1BCE078E0A8810A9D5EB56_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:12.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:12.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A599A76A2C1BCE078E0A8810A9D5EB56_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A599A76A2C1BCE078E0A8810A9D5EB56_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:12.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A5F5F78299B937614B4B48371A08ABA6_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:12.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:12.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A5F5F78299B937614B4B48371A08ABA6_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A5F5F78299B937614B4B48371A08ABA6_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:12.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A575207BEA5CE2A21A36C0A3DBD2741C_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:13.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:13.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A575207BEA5CE2A21A36C0A3DBD2741C_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A575207BEA5CE2A21A36C0A3DBD2741C_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:13.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A57FE23F78E78F5A629685A7801C7174_22192146358278_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 15:38:13.000Z",
+            "captured_date": "2026-03-15",
+            "captured_time": "15:38:13.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_A57FE23F78E78F5A629685A7801C7174_22192146358278_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_A57FE23F78E78F5A629685A7801C7174_22192146358278_lid.jpeg",
+            "notes": "Author: 22192146358278. Imported timestamp: 2026-03-15 15:38:13.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003178-PHOTO-2026-03-15-20-28-25.jpg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 20:28:25",
+            "captured_date": "2026-03-15",
+            "captured_time": "20:28:25",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "00003178-PHOTO-2026-03-15-20-28-25",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003178-PHOTO-2026-03-15-20-28-25.jpg",
+            "notes": "Author: David. Imported timestamp: 2026-03-15 20:28:25"
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003180-PHOTO-2026-03-15-20-32-53.jpg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-15 20:32:53",
+            "captured_date": "2026-03-15",
+            "captured_time": "20:32:53",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "00003180-PHOTO-2026-03-15-20-32-53",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003180-PHOTO-2026-03-15-20-32-53.jpg",
+            "notes": "Author: David. Imported timestamp: 2026-03-15 20:32:53"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_3BE747935A5E96993539_190950068514824_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-16 13:15:24.000Z",
+            "captured_date": "2026-03-16",
+            "captured_time": "13:15:24.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_3BE747935A5E96993539_190950068514824_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_3BE747935A5E96993539_190950068514824_lid.jpeg",
+            "notes": "Author: 190950068514824. Imported timestamp: 2026-03-16 13:15:24.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003241-PHOTO-2026-03-16-15-31-03.jpg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-16 15:31:03",
+            "captured_date": "2026-03-16",
+            "captured_time": "15:31:03",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "00003241-PHOTO-2026-03-16-15-31-03",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003241-PHOTO-2026-03-16-15-31-03.jpg",
+            "notes": "Author: ~\u202fHM. Imported timestamp: 2026-03-16 15:31:03"
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003242-PHOTO-2026-03-16-15-31-04.jpg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-16 15:31:04",
+            "captured_date": "2026-03-16",
+            "captured_time": "15:31:04",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "00003242-PHOTO-2026-03-16-15-31-04",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003242-PHOTO-2026-03-16-15-31-04.jpg",
+            "notes": "Author: ~\u202fHM. Imported timestamp: 2026-03-16 15:31:04"
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003263-PHOTO-2026-03-16-18-15-23.jpg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-16 18:15:23",
+            "captured_date": "2026-03-16",
+            "captured_time": "18:15:23",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "00003263-PHOTO-2026-03-16-18-15-23",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003263-PHOTO-2026-03-16-18-15-23.jpg",
+            "notes": "Author: David. Imported timestamp: 2026-03-16 18:15:23"
+          },
+          {
+            "path": "../../data/raw/imports/fj40/00003264-PHOTO-2026-03-16-18-15-24.jpg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-16 18:15:24",
+            "captured_date": "2026-03-16",
+            "captured_time": "18:15:24",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "00003264-PHOTO-2026-03-16-18-15-24",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/fj40/00003264-PHOTO-2026-03-16-18-15-24.jpg",
+            "notes": "Author: David. Imported timestamp: 2026-03-16 18:15:24"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_3B12610719F4F4F0EB33_190950068514824_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-27 00:48:44.000Z",
+            "captured_date": "2026-03-27",
+            "captured_time": "00:48:44.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_3B12610719F4F4F0EB33_190950068514824_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_3B12610719F4F4F0EB33_190950068514824_lid.jpeg",
+            "notes": "Author: 190950068514824. Imported timestamp: 2026-03-27 00:48:44.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_AC62E68D96B5A4781A26FE523FDBF86A_226083001659473_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-03-30 22:04:37.000Z",
+            "captured_date": "2026-03-30",
+            "captured_time": "22:04:37.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "true_120363408465558195_g_us_AC62E68D96B5A4781A26FE523FDBF86A_226083001659473_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_AC62E68D96B5A4781A26FE523FDBF86A_226083001659473_lid.jpeg",
+            "notes": "Author: +923099351940. Imported timestamp: 2026-03-30 22:04:37.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_AC5EC79A58741DD33B9CC084940925CD_226083001659473_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-04-20 04:23:31.000Z",
+            "captured_date": "2026-04-20",
+            "captured_time": "04:23:31.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "true_120363408465558195_g_us_AC5EC79A58741DD33B9CC084940925CD_226083001659473_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_AC5EC79A58741DD33B9CC084940925CD_226083001659473_lid.jpeg",
+            "notes": "Author: +923099351940. Imported timestamp: 2026-04-20 04:23:31.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_ACC80651958A1F19D2A629E4DC38E6DE_226083001659473_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-04-20 04:28:23.000Z",
+            "captured_date": "2026-04-20",
+            "captured_time": "04:28:23.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "true_120363408465558195_g_us_ACC80651958A1F19D2A629E4DC38E6DE_226083001659473_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_ACC80651958A1F19D2A629E4DC38E6DE_226083001659473_lid.jpeg",
+            "notes": "Author: +923099351940. Imported timestamp: 2026-04-20 04:28:23.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_ACA5AB8148103AE3E8D9D45827B3ECAC_226083001659473_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-04-22 00:37:43.000Z",
+            "captured_date": "2026-04-22",
+            "captured_time": "00:37:43.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "true_120363408465558195_g_us_ACA5AB8148103AE3E8D9D45827B3ECAC_226083001659473_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/true_120363408465558195_g_us_ACA5AB8148103AE3E8D9D45827B3ECAC_226083001659473_lid.jpeg",
+            "notes": "Author: +923099351940. Imported timestamp: 2026-04-22 00:37:43.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_3B996415919D77C0163D_190950068514824_lid.jpeg",
+            "caption": "Fj40 WhatsApp Photo \u00b7 2026-04-22 00:47:07.000Z",
+            "captured_date": "2026-04-22",
+            "captured_time": "00:47:07.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "fj40_whatsapp_group_reference",
+            "stage": "reference_material",
+            "media_id": "false_120363408465558195_g_us_3B996415919D77C0163D_190950068514824_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "Fj40 WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_120363408465558195_g_us_3B996415919D77C0163D_190950068514824_lid.jpeg",
+            "notes": "Author: 190950068514824. Imported timestamp: 2026-04-22 00:47:07.000Z"
+          }
+        ]
+      },
+      {
+        "key": "whatsapp_tlc_40_series_owners",
+        "title": "WhatsApp TLC 40 Series Owners",
+        "description": "Imported TLC 40 Series Owners group photos and videos used as other-build reference material.",
+        "source_path": "data/processed/generated/mcp_whatsapp_j40_media_index.csv",
+        "links": [],
+        "images": [
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC91D013A12858D4FA7661050C5930CB_104084774383678_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-17 10:30:59.000Z",
+            "captured_date": "2026-05-17",
+            "captured_time": "10:30:59.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_AC91D013A12858D4FA7661050C5930CB_104084774383678_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC91D013A12858D4FA7661050C5930CB_104084774383678_lid.jpeg",
+            "notes": "Author: 104084774383678. Imported timestamp: 2026-05-17 10:30:59.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A5AF258020529AD57404771D0C4D471F_98548125290539_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-17 10:41:18.000Z",
+            "captured_date": "2026-05-17",
+            "captured_time": "10:41:18.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_A5AF258020529AD57404771D0C4D471F_98548125290539_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A5AF258020529AD57404771D0C4D471F_98548125290539_lid.jpeg",
+            "notes": "Author: 98548125290539. Imported timestamp: 2026-05-17 10:41:18.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4A84F937DE6521319230_24790651924732_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-17 10:59:11.000Z",
+            "captured_date": "2026-05-17",
+            "captured_time": "10:59:11.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_4A84F937DE6521319230_24790651924732_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4A84F937DE6521319230_24790651924732_lid.jpeg",
+            "notes": "Author: 24790651924732. Imported timestamp: 2026-05-17 10:59:11.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4AA916782844DE383740_24790651924732_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-17 10:59:11.000Z",
+            "captured_date": "2026-05-17",
+            "captured_time": "10:59:11.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_4AA916782844DE383740_24790651924732_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4AA916782844DE383740_24790651924732_lid.jpeg",
+            "notes": "Author: 24790651924732. Imported timestamp: 2026-05-17 10:59:11.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4A6A06EC9E5E40B9A81D_24790651924732_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-17 10:59:13.000Z",
+            "captured_date": "2026-05-17",
+            "captured_time": "10:59:13.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_4A6A06EC9E5E40B9A81D_24790651924732_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4A6A06EC9E5E40B9A81D_24790651924732_lid.jpeg",
+            "notes": "Author: 24790651924732. Imported timestamp: 2026-05-17 10:59:13.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4AA528BB116F28026C92_24790651924732_lid.mp4",
+            "caption": "TLC 40 Series Owners WhatsApp Video \u00b7 2026-05-17 10:59:23.000Z",
+            "captured_date": "2026-05-17",
+            "captured_time": "10:59:23.000",
+            "media_type": "video",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_4AA528BB116F28026C92_24790651924732_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4AA528BB116F28026C92_24790651924732_lid.mp4",
+            "notes": "Author: 24790651924732. Imported timestamp: 2026-05-17 10:59:23.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_971527520120_1517397900_g_us_AC3FE3438DFE18FA3A39F09A07C1AB8B_226083001659473_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-17 11:05:12.000Z",
+            "captured_date": "2026-05-17",
+            "captured_time": "11:05:12.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "true_971527520120_1517397900_g_us_AC3FE3438DFE18FA3A39F09A07C1AB8B_226083001659473_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/true_971527520120_1517397900_g_us_AC3FE3438DFE18FA3A39F09A07C1AB8B_226083001659473_lid.jpeg",
+            "notes": "Author: +923099351940. Imported timestamp: 2026-05-17 11:05:12.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_971527520120_1517397900_g_us_AC49D3511FAE6C7D6137CC88E0A955E0_226083001659473_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-17 11:05:12.000Z",
+            "captured_date": "2026-05-17",
+            "captured_time": "11:05:12.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "true_971527520120_1517397900_g_us_AC49D3511FAE6C7D6137CC88E0A955E0_226083001659473_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/true_971527520120_1517397900_g_us_AC49D3511FAE6C7D6137CC88E0A955E0_226083001659473_lid.jpeg",
+            "notes": "Author: +923099351940. Imported timestamp: 2026-05-17 11:05:12.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_971527520120_1517397900_g_us_AC4E807AF739B9C5D18CE65826ED3BDC_226083001659473_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-17 11:05:12.000Z",
+            "captured_date": "2026-05-17",
+            "captured_time": "11:05:12.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "true_971527520120_1517397900_g_us_AC4E807AF739B9C5D18CE65826ED3BDC_226083001659473_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/true_971527520120_1517397900_g_us_AC4E807AF739B9C5D18CE65826ED3BDC_226083001659473_lid.jpeg",
+            "notes": "Author: +923099351940. Imported timestamp: 2026-05-17 11:05:12.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_971527520120_1517397900_g_us_ACE6E86271CA276FB10B1D3958279F55_226083001659473_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-17 11:05:12.000Z",
+            "captured_date": "2026-05-17",
+            "captured_time": "11:05:12.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "true_971527520120_1517397900_g_us_ACE6E86271CA276FB10B1D3958279F55_226083001659473_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/true_971527520120_1517397900_g_us_ACE6E86271CA276FB10B1D3958279F55_226083001659473_lid.jpeg",
+            "notes": "Author: +923099351940. Imported timestamp: 2026-05-17 11:05:12.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4A460230FB76283F00F2_160082188873865_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-17 11:08:31.000Z",
+            "captured_date": "2026-05-17",
+            "captured_time": "11:08:31.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_4A460230FB76283F00F2_160082188873865_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4A460230FB76283F00F2_160082188873865_lid.jpeg",
+            "notes": "Author: 160082188873865. Imported timestamp: 2026-05-17 11:08:31.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4A8EC6880E1C1990ED8B_160082188873865_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-17 11:08:31.000Z",
+            "captured_date": "2026-05-17",
+            "captured_time": "11:08:31.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_4A8EC6880E1C1990ED8B_160082188873865_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4A8EC6880E1C1990ED8B_160082188873865_lid.jpeg",
+            "notes": "Author: 160082188873865. Imported timestamp: 2026-05-17 11:08:31.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4A67B1697BB4525AD8FD_160082188873865_lid.mp4",
+            "caption": "TLC 40 Series Owners WhatsApp Video \u00b7 2026-05-17 11:08:32.000Z",
+            "captured_date": "2026-05-17",
+            "captured_time": "11:08:32.000",
+            "media_type": "video",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_4A67B1697BB4525AD8FD_160082188873865_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4A67B1697BB4525AD8FD_160082188873865_lid.mp4",
+            "notes": "Author: 160082188873865. Imported timestamp: 2026-05-17 11:08:32.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_2A7F1F8F2238A7BD3854_30369831203040_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-17 11:34:52.000Z",
+            "captured_date": "2026-05-17",
+            "captured_time": "11:34:52.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_2A7F1F8F2238A7BD3854_30369831203040_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_2A7F1F8F2238A7BD3854_30369831203040_lid.jpeg",
+            "notes": "Author: 30369831203040. Imported timestamp: 2026-05-17 11:34:52.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A568254EAB7CCDBAD637FE17E4393F0E_98548125290539_lid.mp4",
+            "caption": "TLC 40 Series Owners WhatsApp Video \u00b7 2026-05-17 11:48:23.000Z",
+            "captured_date": "2026-05-17",
+            "captured_time": "11:48:23.000",
+            "media_type": "video",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_A568254EAB7CCDBAD637FE17E4393F0E_98548125290539_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A568254EAB7CCDBAD637FE17E4393F0E_98548125290539_lid.mp4",
+            "notes": "Author: 98548125290539. Imported timestamp: 2026-05-17 11:48:23.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_971527520120_1517397900_g_us_AC6F30A5B810B78EE938B05E9490C947_226083001659473_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-17 11:52:29.000Z",
+            "captured_date": "2026-05-17",
+            "captured_time": "11:52:29.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "true_971527520120_1517397900_g_us_AC6F30A5B810B78EE938B05E9490C947_226083001659473_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/true_971527520120_1517397900_g_us_AC6F30A5B810B78EE938B05E9490C947_226083001659473_lid.jpeg",
+            "notes": "Author: +923099351940. Imported timestamp: 2026-05-17 11:52:29.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_971527520120_1517397900_g_us_ACD24CFAD665BA9DD28F515059C328A4_226083001659473_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-17 12:20:16.000Z",
+            "captured_date": "2026-05-17",
+            "captured_time": "12:20:16.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "true_971527520120_1517397900_g_us_ACD24CFAD665BA9DD28F515059C328A4_226083001659473_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/true_971527520120_1517397900_g_us_ACD24CFAD665BA9DD28F515059C328A4_226083001659473_lid.jpeg",
+            "notes": "Author: +923099351940. Imported timestamp: 2026-05-17 12:20:16.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC365F8F9774B5C0BE64D4FF1FC06483_73328060551171_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-17 12:23:20.000Z",
+            "captured_date": "2026-05-17",
+            "captured_time": "12:23:20.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_AC365F8F9774B5C0BE64D4FF1FC06483_73328060551171_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC365F8F9774B5C0BE64D4FF1FC06483_73328060551171_lid.jpeg",
+            "notes": "Author: 73328060551171. Imported timestamp: 2026-05-17 12:23:20.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A8E4145F2C3D94187F1_122410913292479_lid.mp4",
+            "caption": "TLC 40 Series Owners WhatsApp Video \u00b7 2026-05-17 15:59:22.000Z",
+            "captured_date": "2026-05-17",
+            "captured_time": "15:59:22.000",
+            "media_type": "video",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_3A8E4145F2C3D94187F1_122410913292479_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A8E4145F2C3D94187F1_122410913292479_lid.mp4",
+            "notes": "Author: 122410913292479. Imported timestamp: 2026-05-17 15:59:22.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A413A31EF810F477A87_201399707132034_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-17 17:39:00.000Z",
+            "captured_date": "2026-05-17",
+            "captured_time": "17:39:00.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_3A413A31EF810F477A87_201399707132034_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A413A31EF810F477A87_201399707132034_lid.jpeg",
+            "notes": "Author: 201399707132034. Imported timestamp: 2026-05-17 17:39:00.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A00547104FFBEF8CE78_158261005279468_lid.mp4",
+            "caption": "TLC 40 Series Owners WhatsApp Video \u00b7 2026-05-18 05:51:45.000Z",
+            "captured_date": "2026-05-18",
+            "captured_time": "05:51:45.000",
+            "media_type": "video",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_3A00547104FFBEF8CE78_158261005279468_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A00547104FFBEF8CE78_158261005279468_lid.mp4",
+            "notes": "Author: 158261005279468. Imported timestamp: 2026-05-18 05:51:45.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4AA11ADC7B773BC3437D_4359425396802_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-18 05:59:56.000Z",
+            "captured_date": "2026-05-18",
+            "captured_time": "05:59:56.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_4AA11ADC7B773BC3437D_4359425396802_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4AA11ADC7B773BC3437D_4359425396802_lid.jpeg",
+            "notes": "Author: 4359425396802. Imported timestamp: 2026-05-18 05:59:56.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4A8CB5035FA1DB9DC6D3_4359425396802_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-18 05:59:57.000Z",
+            "captured_date": "2026-05-18",
+            "captured_time": "05:59:57.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_4A8CB5035FA1DB9DC6D3_4359425396802_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4A8CB5035FA1DB9DC6D3_4359425396802_lid.jpeg",
+            "notes": "Author: 4359425396802. Imported timestamp: 2026-05-18 05:59:57.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4AD71C52C10899DCF25F_4359425396802_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-18 05:59:57.000Z",
+            "captured_date": "2026-05-18",
+            "captured_time": "05:59:57.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_4AD71C52C10899DCF25F_4359425396802_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4AD71C52C10899DCF25F_4359425396802_lid.jpeg",
+            "notes": "Author: 4359425396802. Imported timestamp: 2026-05-18 05:59:57.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4A0FC27C4C37B6B95A88_4359425396802_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-18 06:02:43.000Z",
+            "captured_date": "2026-05-18",
+            "captured_time": "06:02:43.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_4A0FC27C4C37B6B95A88_4359425396802_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4A0FC27C4C37B6B95A88_4359425396802_lid.jpeg",
+            "notes": "Author: 4359425396802. Imported timestamp: 2026-05-18 06:02:43.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4AD90A5D188D2A9C3960_4359425396802_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-18 06:02:43.000Z",
+            "captured_date": "2026-05-18",
+            "captured_time": "06:02:43.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_4AD90A5D188D2A9C3960_4359425396802_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4AD90A5D188D2A9C3960_4359425396802_lid.jpeg",
+            "notes": "Author: 4359425396802. Imported timestamp: 2026-05-18 06:02:43.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4AFFE980D4BF7164C050_4359425396802_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-18 06:02:43.000Z",
+            "captured_date": "2026-05-18",
+            "captured_time": "06:02:43.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_4AFFE980D4BF7164C050_4359425396802_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4AFFE980D4BF7164C050_4359425396802_lid.jpeg",
+            "notes": "Author: 4359425396802. Imported timestamp: 2026-05-18 06:02:43.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_2AD33B68A410D3131AA3_21685440872577_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-19 09:25:50.000Z",
+            "captured_date": "2026-05-19",
+            "captured_time": "09:25:50.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_2AD33B68A410D3131AA3_21685440872577_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_2AD33B68A410D3131AA3_21685440872577_lid.jpeg",
+            "notes": "Author: 21685440872577. Imported timestamp: 2026-05-19 09:25:50.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4ADC37EEEEA949CA8AA2_131761191297256_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-19 12:10:51.000Z",
+            "captured_date": "2026-05-19",
+            "captured_time": "12:10:51.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_4ADC37EEEEA949CA8AA2_131761191297256_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4ADC37EEEEA949CA8AA2_131761191297256_lid.jpeg",
+            "notes": "Author: 131761191297256. Imported timestamp: 2026-05-19 12:10:51.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3AC3EBB9C4643AA7905F_7177007808594_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-19 12:17:10.000Z",
+            "captured_date": "2026-05-19",
+            "captured_time": "12:17:10.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_3AC3EBB9C4643AA7905F_7177007808594_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3AC3EBB9C4643AA7905F_7177007808594_lid.jpeg",
+            "notes": "Author: 7177007808594. Imported timestamp: 2026-05-19 12:17:10.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC84F32B00F4DD06C453962574CA8C59_112803037855909_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-19 13:38:19.000Z",
+            "captured_date": "2026-05-19",
+            "captured_time": "13:38:19.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_AC84F32B00F4DD06C453962574CA8C59_112803037855909_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC84F32B00F4DD06C453962574CA8C59_112803037855909_lid.jpeg",
+            "notes": "Author: 112803037855909. Imported timestamp: 2026-05-19 13:38:19.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC2D66D5F2F8997BA3A5B900B65FE2FD_112803037855909_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-19 13:42:36.000Z",
+            "captured_date": "2026-05-19",
+            "captured_time": "13:42:36.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_AC2D66D5F2F8997BA3A5B900B65FE2FD_112803037855909_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC2D66D5F2F8997BA3A5B900B65FE2FD_112803037855909_lid.jpeg",
+            "notes": "Author: 112803037855909. Imported timestamp: 2026-05-19 13:42:36.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC4AF4A38F15DC2DA3EC871C53AC11DA_48408643563605_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-21 07:49:06.000Z",
+            "captured_date": "2026-05-21",
+            "captured_time": "07:49:06.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_AC4AF4A38F15DC2DA3EC871C53AC11DA_48408643563605_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC4AF4A38F15DC2DA3EC871C53AC11DA_48408643563605_lid.jpeg",
+            "notes": "Author: 48408643563605. Imported timestamp: 2026-05-21 07:49:06.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC53C5E04013AB87605281C86EB40E01_73328060551171_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-22 16:46:45.000Z",
+            "captured_date": "2026-05-22",
+            "captured_time": "16:46:45.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_AC53C5E04013AB87605281C86EB40E01_73328060551171_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC53C5E04013AB87605281C86EB40E01_73328060551171_lid.jpeg",
+            "notes": "Author: 73328060551171. Imported timestamp: 2026-05-22 16:46:45.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3AF901332D94051CC31E_122410913292479_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-23 15:54:50.000Z",
+            "captured_date": "2026-05-23",
+            "captured_time": "15:54:50.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_3AF901332D94051CC31E_122410913292479_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3AF901332D94051CC31E_122410913292479_lid.jpeg",
+            "notes": "Author: 122410913292479. Imported timestamp: 2026-05-23 15:54:50.000Z"
+          }
+        ]
       }
     ]
   },
@@ -109555,7 +112491,7 @@ window.J40_DASHBOARD_DATA = {
       "contact_id": "atif_eps_vitz",
       "name": "Atif",
       "category": "parts_scout",
-      "role": "Vitz/Yaris EPS steering column ECU and pigtails",
+      "role": "Vitz/Yaris EPS steering column ECU pigtails and adapter-reference geometry",
       "location": "J40 parts WhatsApp group",
       "phone": "",
       "channel_or_url": "WhatsApp group J40 parts",
@@ -109564,8 +112500,8 @@ window.J40_DASHBOARD_DATA = {
       "evidence_ref": "mcp_whatsapp_number_2_true_120363428021017660_g_us_ac524b3be32ae7c614a137b19418cc6d_190950068514824_lid|mcp_whatsapp_number_2_false_120363428021017660_g_us_ac657f3d5ae4187db81572147ff40f99_40265368764638_lid",
       "confidence": "medium",
       "status": "active",
-      "next_action": "Confirm exact donor years 2005-2011 SCP90/NCP90 and request photos before payment",
-      "notes": "Atif responded that he would advise on steering column and EPS."
+      "next_action": "Confirm exact donor years 2005-2011 SCP90/NCP90 and request label connector bracket hole spacing motor clocking and shaft centerline photos before payment",
+      "notes": "Atif responded that he would advise on steering column and EPS. Updated 2026-05-22: capture donor geometry for the J40-specific General EPS Adapter route."
     },
     {
       "contact_id": "karachi_suspension_contact",
@@ -109598,6 +112534,86 @@ window.J40_DASHBOARD_DATA = {
       "status": "quote_target",
       "next_action": "Send only quote-ready Longman pipe/hose and rubber lines",
       "notes": "Already built into the scout/procurement flow for pipe_hose and rubber order sheets."
+    },
+    {
+      "contact_id": "sna_industries_karachi",
+      "name": "SNA Industries",
+      "category": "manufacturer",
+      "role": "steel brake pipes brake hoses and possible auto-control-cable lead",
+      "location": "Karachi, Pakistan",
+      "phone": "[redacted]",
+      "channel_or_url": "https://snaindustries.com/|sales@snaindustries.com",
+      "source": "web_research",
+      "source_date": "2026-05-24",
+      "evidence_ref": "web_sna_industries_steel_brake_pipes_brake_hoses|web_mustakbil_sna_auto_control_cables",
+      "confidence": "high",
+      "status": "quote_target",
+      "next_action": "Ask for 4.75 mm / 3/16 in automotive steel brake pipe and crimped brake hoses by sample; ask whether their auto-control-cable channel can source or make the 1978 J40 parking-brake cable",
+      "notes": "Closest Pakistan-based FCP-style brake pipe/hose lead found. Site lists steel brake pipes and brake hoses; company profile also references auto control cables. Not confirmed for FJ40 parking cable yet; use 46410-60092 plus old sample."
+    },
+    {
+      "contact_id": "fine_auto_montgomery_road",
+      "name": "Fine Auto",
+      "category": "parts_supplier",
+      "role": "Toyota Land Cruiser parts catalogue/order desk",
+      "location": "Montgomery Road Lahore",
+      "phone": "[redacted]",
+      "channel_or_url": "https://fineauto.pk/landcruiser/",
+      "source": "web_research",
+      "source_date": "2026-05-24",
+      "evidence_ref": "web_fineauto_landcruiser_category",
+      "confidence": "medium",
+      "status": "quote_target",
+      "next_action": "Ask by Toyota reference 46410-60092 and ask for 4.75 mm brake pipe/fitting supplier lead",
+      "notes": "Pakistan online parts store with Landcruiser category and Montgomery Road address. Listed stock appears newer Land Cruiser wear parts, so use as quote lead rather than confirmed FJ40 stock."
+    },
+    {
+      "contact_id": "nde_store_lahore",
+      "name": "NDE Store",
+      "category": "parts_supplier",
+      "role": "parts-on-demand auto parts order desk",
+      "location": "Lahore",
+      "phone": "[redacted]",
+      "channel_or_url": "https://www.ndestore.com/",
+      "source": "web_research",
+      "source_date": "2026-05-24",
+      "evidence_ref": "web_ndestore_parts_on_demand_contacts",
+      "confidence": "medium",
+      "status": "quote_target",
+      "next_action": "Ask parts-on-demand for 46410-60092 / J40 handbrake cable and Pakistan brake pipe/hose suppliers",
+      "notes": "FCP-like Pakistan web store with broad catalogue and parts-on-demand/contact channel. No confirmed J40 piping/cable listing yet."
+    },
+    {
+      "contact_id": "pakwheels_gari_parts",
+      "name": "Gari Parts via PakWheels",
+      "category": "marketplace_supplier",
+      "role": "FJ40 brake shoe seller and Land Cruiser brake lead",
+      "location": "Pakistan online marketplace",
+      "phone": "",
+      "channel_or_url": "https://www.pakwheels.com/accessories-spare-parts/toyota-land-cruiser-fj40-mk-rear-brake-shoe-k-2255-n-y-5570294",
+      "source": "web_research",
+      "source_date": "2026-05-24",
+      "evidence_ref": "web_pakwheels_fj40_mk_rear_brake_shoe",
+      "confidence": "medium",
+      "status": "quote_target",
+      "next_action": "Message seller for FJ40 parking-brake cable 46410-60092 and brake pipe/hose source",
+      "notes": "Not a piping supplier, but actual FJ40 brake listing indicates seller may have a Land Cruiser brake channel; use for lead only."
+    },
+    {
+      "contact_id": "gari_lahore_brake_pipe_market",
+      "name": "Gari.pk Lahore brake listings",
+      "category": "marketplace_lead",
+      "role": "local hydraulic brake pipe listings",
+      "location": "Lahore",
+      "phone": "",
+      "channel_or_url": "https://www.gari.pk/accessories/c-Brakes/Lahore/",
+      "source": "web_research",
+      "source_date": "2026-05-24",
+      "evidence_ref": "web_gari_lahore_mild_steel_hydraulic_brake_pipe_reference",
+      "confidence": "low",
+      "status": "requote_only",
+      "next_action": "Re-quote exact 4.75 mm brake-rated pipe; reject if not automotive brake-rated or no flare/fitting support",
+      "notes": "Old listings show mild steel hydraulic brake pipe at Rs 256; likely stale but useful as a price-anchor lead."
     },
     {
       "contact_id": "autohub_montgomery_road",
@@ -109818,7 +112834,7 @@ window.J40_DASHBOARD_DATA = {
     },
     {
       "idea_id": "vitz_yaris_eps_stack",
-      "title": "2005-2011 Vitz/Yaris EPS donor stack",
+      "title": "2005-2011 Vitz/Yaris EPS donor stack for General EPS Adapter route",
       "category": "parts_idea",
       "workstream": "eps_vitz_upgrade",
       "status": "active",
@@ -109826,8 +112842,8 @@ window.J40_DASHBOARD_DATA = {
       "source_date": "2026-04-17",
       "evidence_ref": "mcp_whatsapp_number_2_true_120363428021017660_g_us_ac524b3be32ae7c614a137b19418cc6d_190950068514824_lid|mcp_whatsapp_number_2_false_120363428021017660_g_us_ac657f3d5ae4187db81572147ff40f99_40265368764638_lid",
       "contact_refs": "atif_eps_vitz",
-      "summary": "New J40 parts group captured the active request for a complete Vitz steering column, EPS ECU/controller and uncut pigtails/connectors. Later note says 2005-2011 SCP90/NCP90 is needed and 2018 is too hard.",
-      "next_action": "Keep EPS scout locked to complete donor stack with photos of ECU labels, pigtails, torque sensor and column mounts before payment."
+      "summary": "New J40 parts group captured the active request for a complete Vitz steering column, EPS ECU/controller and uncut pigtails/connectors. Later note says 2005-2011 SCP90/NCP90 is needed and 2018 is too hard. Updated 2026-05-22: donor bracket geometry feeds the fabricated General EPS Adapter; donor brackets are not assumed bolt-on J40 fit.",
+      "next_action": "Keep EPS scout locked to complete donor stack with photos of ECU labels, pigtails, torque sensor, column mounts, bracket hole spacing, motor clocking faces, and shaft centerline offsets before payment."
     },
     {
       "idea_id": "vitz_manual_ac_donor",
@@ -109990,6 +113006,39 @@ window.J40_DASHBOARD_DATA = {
     "selected_chats": [
       {
         "profile_server": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "chat_id": "971527520120-1517397900@g.us",
+        "chat_type": "group",
+        "relevance_score": "15",
+        "messages_fetched": "true",
+        "messages_count": "174",
+        "media_count": "38",
+        "messages_fetch_error": ""
+      },
+      {
+        "profile_server": "whatsapp-number-2",
+        "chat_name": "Oxy Welding",
+        "chat_id": "124176513941598@lid",
+        "chat_type": "direct_lid",
+        "relevance_score": "14",
+        "messages_fetched": "false",
+        "messages_count": "0",
+        "media_count": "0",
+        "messages_fetch_error": "messages_api_not_supported_for_lid"
+      },
+      {
+        "profile_server": "whatsapp-number-2",
+        "chat_name": "Walton Bodyshop",
+        "chat_id": "162822445105367@lid",
+        "chat_type": "direct_lid",
+        "relevance_score": "14",
+        "messages_fetched": "false",
+        "messages_count": "0",
+        "media_count": "0",
+        "messages_fetch_error": "messages_api_not_supported_for_lid"
+      },
+      {
+        "profile_server": "whatsapp-number-2",
         "chat_name": "Fj40",
         "chat_id": "120363408465558195@g.us",
         "chat_type": "group",
@@ -110001,58 +113050,47 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "profile_server": "whatsapp-number-2",
-        "chat_name": "J40 parts",
-        "chat_id": "120363428021017660@g.us",
+        "chat_name": "Headlight connectors",
+        "chat_id": "120363427035421010@g.us",
         "chat_type": "group",
         "relevance_score": "11",
         "messages_fetched": "true",
-        "messages_count": "46",
-        "media_count": "4",
+        "messages_count": "4",
+        "media_count": "1",
         "messages_fetch_error": ""
       },
       {
         "profile_server": "whatsapp-number-2",
-        "chat_name": "Akbar Khan",
-        "chat_id": "923334552030@c.us",
-        "chat_type": "direct_cus",
+        "chat_name": "Akram Suspension Auto",
+        "chat_id": "140888080683096@lid",
+        "chat_type": "direct_lid",
         "relevance_score": "10",
-        "messages_fetched": "true",
-        "messages_count": "350",
-        "media_count": "30",
-        "messages_fetch_error": ""
-      },
-      {
-        "profile_server": "whatsapp-number-2",
-        "chat_name": "Uk David",
-        "chat_id": "923099351940@c.us",
-        "chat_type": "direct_cus",
-        "relevance_score": "10",
-        "messages_fetched": "true",
-        "messages_count": "289",
-        "media_count": "112",
-        "messages_fetch_error": ""
-      },
-      {
-        "profile_server": "whatsapp-number-2",
-        "chat_name": "FJ 40 - Advisory",
-        "chat_id": "120363408569800952@g.us",
-        "chat_type": "group",
-        "relevance_score": "7",
-        "messages_fetched": "true",
-        "messages_count": "39",
+        "messages_fetched": "false",
+        "messages_count": "0",
         "media_count": "0",
-        "messages_fetch_error": ""
+        "messages_fetch_error": "messages_api_not_supported_for_lid"
       },
       {
         "profile_server": "whatsapp-number-2",
-        "chat_name": "FJ Audio",
-        "chat_id": "120363408981304188@g.us",
-        "chat_type": "group",
-        "relevance_score": "7",
-        "messages_fetched": "true",
-        "messages_count": "164",
-        "media_count": "48",
-        "messages_fetch_error": ""
+        "chat_name": "Auto Xpert",
+        "chat_id": "147107092648188@lid",
+        "chat_type": "direct_lid",
+        "relevance_score": "10",
+        "messages_fetched": "false",
+        "messages_count": "0",
+        "media_count": "0",
+        "messages_fetch_error": "messages_api_not_supported_for_lid"
+      },
+      {
+        "profile_server": "whatsapp-number-2",
+        "chat_name": "Hamza Carnation Car Mods",
+        "chat_id": "163157620326493@lid",
+        "chat_type": "direct_lid",
+        "relevance_score": "10",
+        "messages_fetched": "false",
+        "messages_count": "0",
+        "media_count": "0",
+        "messages_fetch_error": "messages_api_not_supported_for_lid"
       },
       {
         "profile_server": "whatsapp-number-1",
@@ -110080,247 +113118,251 @@ window.J40_DASHBOARD_DATA = {
     "media_counts_by_type": [
       {
         "media_type": "audio",
-        "count": 11
+        "count": 12
       },
       {
         "media_type": "document",
-        "count": 3
+        "count": 4
       },
       {
         "media_type": "photo",
-        "count": 131
+        "count": 205
       },
       {
         "media_type": "sticker",
-        "count": 1
+        "count": 5
       },
       {
         "media_type": "video",
-        "count": 19
+        "count": 29
       }
     ],
     "media_counts_by_profile": [
       {
         "source_profile": "whatsapp-number-1",
         "count": 165
+      },
+      {
+        "source_profile": "whatsapp-number-2",
+        "count": 90
       }
     ],
     "recent_media": [
       {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00867::00000567-AUDIO-2026-03-17-20-56-27.opus",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T20:56:27",
-        "media_type": "audio",
-        "file_name": "00000567-AUDIO-2026-03-17-20-56-27.opus",
-        "path": "../../data/raw/imports/akber_khan/00000567-AUDIO-2026-03-17-20-56-27.opus"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00866::00000566-AUDIO-2026-03-17-20-54-42.opus",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T20:54:42",
-        "media_type": "audio",
-        "file_name": "00000566-AUDIO-2026-03-17-20-54-42.opus",
-        "path": "../../data/raw/imports/akber_khan/00000566-AUDIO-2026-03-17-20-54-42.opus"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00865::00000565-AUDIO-2026-03-17-20-53-57.opus",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T20:53:57",
-        "media_type": "audio",
-        "file_name": "00000565-AUDIO-2026-03-17-20-53-57.opus",
-        "path": "../../data/raw/imports/akber_khan/00000565-AUDIO-2026-03-17-20-53-57.opus"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00853::00000553-PHOTO-2026-03-17-17-05-29.jpg",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T17:05:29",
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3af901332d94051cc31e_122410913292479_lid::false_971527520120_1517397900_g_us_3AF901332D94051CC31E_122410913292479_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-23T15:54:50.000Z",
         "media_type": "photo",
-        "file_name": "00000553-PHOTO-2026-03-17-17-05-29.jpg",
-        "path": "../../data/raw/imports/akber_khan/00000553-PHOTO-2026-03-17-17-05-29.jpg"
+        "file_name": "false_971527520120_1517397900_g_us_3AF901332D94051CC31E_122410913292479_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3AF901332D94051CC31E_122410913292479_lid.jpeg"
       },
       {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00852::00000552-PHOTO-2026-03-17-17-05-29.jpg",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T17:05:29",
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_a5ebce7e4647d0a3c66764e52610b47c_98548125290539_lid::false_971527520120_1517397900_g_us_A5EBCE7E4647D0A3C66764E52610B47C_98548125290539_lid.webp",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-22T16:48:44.000Z",
+        "media_type": "sticker",
+        "file_name": "false_971527520120_1517397900_g_us_A5EBCE7E4647D0A3C66764E52610B47C_98548125290539_lid.webp",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A5EBCE7E4647D0A3C66764E52610B47C_98548125290539_lid.webp"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac53c5e04013ab87605281c86eb40e01_73328060551171_lid::false_971527520120_1517397900_g_us_AC53C5E04013AB87605281C86EB40E01_73328060551171_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-22T16:46:45.000Z",
         "media_type": "photo",
-        "file_name": "00000552-PHOTO-2026-03-17-17-05-29.jpg",
-        "path": "../../data/raw/imports/akber_khan/00000552-PHOTO-2026-03-17-17-05-29.jpg"
+        "file_name": "false_971527520120_1517397900_g_us_AC53C5E04013AB87605281C86EB40E01_73328060551171_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC53C5E04013AB87605281C86EB40E01_73328060551171_lid.jpeg"
       },
       {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00847::00000547-VIDEO-2026-03-17-17-00-25.mp4",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T17:00:25",
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac643fce16204c8360c5d0a7380c4f91_19825619382401_lid::false_971527520120_1517397900_g_us_AC643FCE16204C8360C5D0A7380C4F91_19825619382401_lid.webp",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-22T11:10:43.000Z",
+        "media_type": "sticker",
+        "file_name": "false_971527520120_1517397900_g_us_AC643FCE16204C8360C5D0A7380C4F91_19825619382401_lid.webp",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC643FCE16204C8360C5D0A7380C4F91_19825619382401_lid.webp"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac4af4a38f15dc2da3ec871c53ac11da_48408643563605_lid::false_971527520120_1517397900_g_us_AC4AF4A38F15DC2DA3EC871C53AC11DA_48408643563605_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-21T07:49:06.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_AC4AF4A38F15DC2DA3EC871C53AC11DA_48408643563605_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC4AF4A38F15DC2DA3EC871C53AC11DA_48408643563605_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac2d66d5f2f8997ba3a5b900b65fe2fd_112803037855909_lid::false_971527520120_1517397900_g_us_AC2D66D5F2F8997BA3A5B900B65FE2FD_112803037855909_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-19T13:42:36.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_AC2D66D5F2F8997BA3A5B900B65FE2FD_112803037855909_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC2D66D5F2F8997BA3A5B900B65FE2FD_112803037855909_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac84f32b00f4dd06c453962574ca8c59_112803037855909_lid::false_971527520120_1517397900_g_us_AC84F32B00F4DD06C453962574CA8C59_112803037855909_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-19T13:38:19.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_AC84F32B00F4DD06C453962574CA8C59_112803037855909_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC84F32B00F4DD06C453962574CA8C59_112803037855909_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3ac3ebb9c4643aa7905f_7177007808594_lid::false_971527520120_1517397900_g_us_3AC3EBB9C4643AA7905F_7177007808594_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-19T12:17:10.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_3AC3EBB9C4643AA7905F_7177007808594_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3AC3EBB9C4643AA7905F_7177007808594_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_4adc37eeeea949ca8aa2_131761191297256_lid::false_971527520120_1517397900_g_us_4ADC37EEEEA949CA8AA2_131761191297256_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-19T12:10:51.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_4ADC37EEEEA949CA8AA2_131761191297256_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4ADC37EEEEA949CA8AA2_131761191297256_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_2ad33b68a410d3131aa3_21685440872577_lid::false_971527520120_1517397900_g_us_2AD33B68A410D3131AA3_21685440872577_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-19T09:25:50.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_2AD33B68A410D3131AA3_21685440872577_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_2AD33B68A410D3131AA3_21685440872577_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_4affe980d4bf7164c050_4359425396802_lid::false_971527520120_1517397900_g_us_4AFFE980D4BF7164C050_4359425396802_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-18T06:02:43.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_4AFFE980D4BF7164C050_4359425396802_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4AFFE980D4BF7164C050_4359425396802_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_4ad90a5d188d2a9c3960_4359425396802_lid::false_971527520120_1517397900_g_us_4AD90A5D188D2A9C3960_4359425396802_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-18T06:02:43.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_4AD90A5D188D2A9C3960_4359425396802_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4AD90A5D188D2A9C3960_4359425396802_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_4a0fc27c4c37b6b95a88_4359425396802_lid::false_971527520120_1517397900_g_us_4A0FC27C4C37B6B95A88_4359425396802_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-18T06:02:43.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_4A0FC27C4C37B6B95A88_4359425396802_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4A0FC27C4C37B6B95A88_4359425396802_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_4ad71c52c10899dcf25f_4359425396802_lid::false_971527520120_1517397900_g_us_4AD71C52C10899DCF25F_4359425396802_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-18T05:59:57.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_4AD71C52C10899DCF25F_4359425396802_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4AD71C52C10899DCF25F_4359425396802_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_4a8cb5035fa1db9dc6d3_4359425396802_lid::false_971527520120_1517397900_g_us_4A8CB5035FA1DB9DC6D3_4359425396802_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-18T05:59:57.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_4A8CB5035FA1DB9DC6D3_4359425396802_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4A8CB5035FA1DB9DC6D3_4359425396802_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_4aa11adc7b773bc3437d_4359425396802_lid::false_971527520120_1517397900_g_us_4AA11ADC7B773BC3437D_4359425396802_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-18T05:59:56.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_4AA11ADC7B773BC3437D_4359425396802_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4AA11ADC7B773BC3437D_4359425396802_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3a00547104ffbef8ce78_158261005279468_lid::false_971527520120_1517397900_g_us_3A00547104FFBEF8CE78_158261005279468_lid.mp4",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-18T05:51:45.000Z",
         "media_type": "video",
-        "file_name": "00000547-VIDEO-2026-03-17-17-00-25.mp4",
-        "path": "../../data/raw/imports/akber_khan/00000547-VIDEO-2026-03-17-17-00-25.mp4"
+        "file_name": "false_971527520120_1517397900_g_us_3A00547104FFBEF8CE78_158261005279468_lid.mp4",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A00547104FFBEF8CE78_158261005279468_lid.mp4"
       },
       {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00846::00000546-VIDEO-2026-03-17-17-00-25.mp4",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T17:00:25",
-        "media_type": "video",
-        "file_name": "00000546-VIDEO-2026-03-17-17-00-25.mp4",
-        "path": "../../data/raw/imports/akber_khan/00000546-VIDEO-2026-03-17-17-00-25.mp4"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00845::00000545-VIDEO-2026-03-17-17-00-25.mp4",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T17:00:25",
-        "media_type": "video",
-        "file_name": "00000545-VIDEO-2026-03-17-17-00-25.mp4",
-        "path": "../../data/raw/imports/akber_khan/00000545-VIDEO-2026-03-17-17-00-25.mp4"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00844::00000544-VIDEO-2026-03-17-17-00-25.mp4",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T17:00:25",
-        "media_type": "video",
-        "file_name": "00000544-VIDEO-2026-03-17-17-00-25.mp4",
-        "path": "../../data/raw/imports/akber_khan/00000544-VIDEO-2026-03-17-17-00-25.mp4"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00843::00000543-VIDEO-2026-03-17-17-00-24.mp4",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T17:00:24",
-        "media_type": "video",
-        "file_name": "00000543-VIDEO-2026-03-17-17-00-24.mp4",
-        "path": "../../data/raw/imports/akber_khan/00000543-VIDEO-2026-03-17-17-00-24.mp4"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00842::00000542-VIDEO-2026-03-17-17-00-24.mp4",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T17:00:24",
-        "media_type": "video",
-        "file_name": "00000542-VIDEO-2026-03-17-17-00-24.mp4",
-        "path": "../../data/raw/imports/akber_khan/00000542-VIDEO-2026-03-17-17-00-24.mp4"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00841::00000541-VIDEO-2026-03-17-17-00-24.mp4",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T17:00:24",
-        "media_type": "video",
-        "file_name": "00000541-VIDEO-2026-03-17-17-00-24.mp4",
-        "path": "../../data/raw/imports/akber_khan/00000541-VIDEO-2026-03-17-17-00-24.mp4"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00839::00000539-VIDEO-2026-03-17-17-00-15.mp4",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T17:00:15",
-        "media_type": "video",
-        "file_name": "00000539-VIDEO-2026-03-17-17-00-15.mp4",
-        "path": "../../data/raw/imports/akber_khan/00000539-VIDEO-2026-03-17-17-00-15.mp4"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00838::00000538-VIDEO-2026-03-17-17-00-14.mp4",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T17:00:14",
-        "media_type": "video",
-        "file_name": "00000538-VIDEO-2026-03-17-17-00-14.mp4",
-        "path": "../../data/raw/imports/akber_khan/00000538-VIDEO-2026-03-17-17-00-14.mp4"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00837::00000537-PHOTO-2026-03-17-17-00-14.jpg",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T17:00:14",
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3a413a31ef810f477a87_201399707132034_lid::false_971527520120_1517397900_g_us_3A413A31EF810F477A87_201399707132034_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-17T17:39:00.000Z",
         "media_type": "photo",
-        "file_name": "00000537-PHOTO-2026-03-17-17-00-14.jpg",
-        "path": "../../data/raw/imports/akber_khan/00000537-PHOTO-2026-03-17-17-00-14.jpg"
+        "file_name": "false_971527520120_1517397900_g_us_3A413A31EF810F477A87_201399707132034_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A413A31EF810F477A87_201399707132034_lid.jpeg"
       },
       {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00836::00000536-PHOTO-2026-03-17-17-00-13.jpg",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T17:00:13",
-        "media_type": "photo",
-        "file_name": "00000536-PHOTO-2026-03-17-17-00-13.jpg",
-        "path": "../../data/raw/imports/akber_khan/00000536-PHOTO-2026-03-17-17-00-13.jpg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00835::00000535-PHOTO-2026-03-17-17-00-13.jpg",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T17:00:13",
-        "media_type": "photo",
-        "file_name": "00000535-PHOTO-2026-03-17-17-00-13.jpg",
-        "path": "../../data/raw/imports/akber_khan/00000535-PHOTO-2026-03-17-17-00-13.jpg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00834::00000534-PHOTO-2026-03-17-17-00-13.jpg",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T17:00:13",
-        "media_type": "photo",
-        "file_name": "00000534-PHOTO-2026-03-17-17-00-13.jpg",
-        "path": "../../data/raw/imports/akber_khan/00000534-PHOTO-2026-03-17-17-00-13.jpg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00833::00000533-PHOTO-2026-03-17-17-00-12.jpg",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T17:00:12",
-        "media_type": "photo",
-        "file_name": "00000533-PHOTO-2026-03-17-17-00-12.jpg",
-        "path": "../../data/raw/imports/akber_khan/00000533-PHOTO-2026-03-17-17-00-12.jpg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00832::00000532-PHOTO-2026-03-17-17-00-12.jpg",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T17:00:12",
-        "media_type": "photo",
-        "file_name": "00000532-PHOTO-2026-03-17-17-00-12.jpg",
-        "path": "../../data/raw/imports/akber_khan/00000532-PHOTO-2026-03-17-17-00-12.jpg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00831::00000531-PHOTO-2026-03-17-17-00-12.jpg",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T17:00:12",
-        "media_type": "photo",
-        "file_name": "00000531-PHOTO-2026-03-17-17-00-12.jpg",
-        "path": "../../data/raw/imports/akber_khan/00000531-PHOTO-2026-03-17-17-00-12.jpg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00830::00000530-PHOTO-2026-03-17-17-00-12.jpg",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T17:00:12",
-        "media_type": "photo",
-        "file_name": "00000530-PHOTO-2026-03-17-17-00-12.jpg",
-        "path": "../../data/raw/imports/akber_khan/00000530-PHOTO-2026-03-17-17-00-12.jpg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00829::00000529-PHOTO-2026-03-17-17-00-11.jpg",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T17:00:11",
-        "media_type": "photo",
-        "file_name": "00000529-PHOTO-2026-03-17-17-00-11.jpg",
-        "path": "../../data/raw/imports/akber_khan/00000529-PHOTO-2026-03-17-17-00-11.jpg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_1_archive_akber_khan_00825::00000524-VIDEO-2026-03-17-16-55-19.mp4",
-        "source_profile": "whatsapp-number-1",
-        "chat_name": "Akbar Khan",
-        "timestamp": "2026-03-17T16:55:19",
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3a8e4145f2c3d94187f1_122410913292479_lid::false_971527520120_1517397900_g_us_3A8E4145F2C3D94187F1_122410913292479_lid.mp4",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-17T15:59:22.000Z",
         "media_type": "video",
-        "file_name": "00000524-VIDEO-2026-03-17-16-55-19.mp4",
-        "path": "../../data/raw/imports/akber_khan/00000524-VIDEO-2026-03-17-16-55-19.mp4"
+        "file_name": "false_971527520120_1517397900_g_us_3A8E4145F2C3D94187F1_122410913292479_lid.mp4",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A8E4145F2C3D94187F1_122410913292479_lid.mp4"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac365f8f9774b5c0be64d4ff1fc06483_73328060551171_lid::false_971527520120_1517397900_g_us_AC365F8F9774B5C0BE64D4FF1FC06483_73328060551171_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-17T12:23:20.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_AC365F8F9774B5C0BE64D4FF1FC06483_73328060551171_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC365F8F9774B5C0BE64D4FF1FC06483_73328060551171_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_true_971527520120_1517397900_g_us_acd24cfad665ba9dd28f515059c328a4_226083001659473_lid::true_971527520120_1517397900_g_us_ACD24CFAD665BA9DD28F515059C328A4_226083001659473_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-17T12:20:16.000Z",
+        "media_type": "photo",
+        "file_name": "true_971527520120_1517397900_g_us_ACD24CFAD665BA9DD28F515059C328A4_226083001659473_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_971527520120_1517397900_g_us_ACD24CFAD665BA9DD28F515059C328A4_226083001659473_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_true_971527520120_1517397900_g_us_ac6f30a5b810b78ee938b05e9490c947_226083001659473_lid::true_971527520120_1517397900_g_us_AC6F30A5B810B78EE938B05E9490C947_226083001659473_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-17T11:52:29.000Z",
+        "media_type": "photo",
+        "file_name": "true_971527520120_1517397900_g_us_AC6F30A5B810B78EE938B05E9490C947_226083001659473_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/true_971527520120_1517397900_g_us_AC6F30A5B810B78EE938B05E9490C947_226083001659473_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_a568254eab7ccdbad637fe17e4393f0e_98548125290539_lid::false_971527520120_1517397900_g_us_A568254EAB7CCDBAD637FE17E4393F0E_98548125290539_lid.mp4",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-17T11:48:23.000Z",
+        "media_type": "video",
+        "file_name": "false_971527520120_1517397900_g_us_A568254EAB7CCDBAD637FE17E4393F0E_98548125290539_lid.mp4",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A568254EAB7CCDBAD637FE17E4393F0E_98548125290539_lid.mp4"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_2a7f1f8f2238a7bd3854_30369831203040_lid::false_971527520120_1517397900_g_us_2A7F1F8F2238A7BD3854_30369831203040_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-17T11:34:52.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_2A7F1F8F2238A7BD3854_30369831203040_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_2A7F1F8F2238A7BD3854_30369831203040_lid.jpeg"
       }
     ]
   },
@@ -110425,6 +113467,11 @@ window.J40_DASHBOARD_DATA = {
       "refinished_hinges_brackets_and_trim",
       "refinished_seat_or_mount_bracket",
       "replacement_pipe_hose_sample_sorting",
+      "returned_painted_body_trim",
+      "returned_painted_brackets_and_trim",
+      "returned_painted_front_panel_headlamp_surround",
+      "returned_painted_front_wings",
+      "returned_painted_inner_panels_or_splash_shields",
       "roof_gutter_and_window_channel",
       "rubber_grommet_assortment",
       "rubber_parts_recreation_samples",
@@ -110530,6 +113577,7 @@ window.J40_DASHBOARD_DATA = {
       "received_or_on_hand",
       "reference_only",
       "refinished_off_vehicle",
+      "refinished_off_vehicle_received",
       "removed_column_reference",
       "removed_from_vehicle",
       "removed_from_vehicle_needs_refurbish",
@@ -110543,6 +113591,7 @@ window.J40_DASHBOARD_DATA = {
       "tyre_wheel_condition_assessment",
       "under_rework",
       "underside_assessment_input",
+      "vehicle_side_flat_rubber_measurement_reference",
       "wire_brushed_partial_cleaning_in_progress"
     ],
     "confidence_values": [
@@ -120797,6 +123846,21 @@ window.J40_DASHBOARD_DATA = {
       "tags": "window|side_window|glass|rubber|seal|weatherstrip|channel|felt|rust|measurement|refurbish",
       "notes": "May 17 user-selected side-window glass/channel measurement photo; visible old rubber/channel material and rusted metal strip make this direct intake evidence for window repair and replacement rubber sourcing."
     },
+    "20260517_194143_gp_CO7MuMdA": {
+      "media_id": "20260517_194143_gp_CO7MuMdA",
+      "file_name": "20260517_194143_gp_CO7MuMdA.jpg",
+      "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+      "captured_date": "2026-05-17",
+      "captured_time": "19:41:43",
+      "media_type": "photo",
+      "component_group": "procurement_inventory",
+      "specific_component": "rubber_parts_recreation_samples",
+      "stage": "fabrication_measurement",
+      "observed_state": "vehicle_side_flat_rubber_measurement_reference",
+      "confidence": "high",
+      "tags": "rubber|body_mount|flat_pad|measurement|tape_reference|vehicle_side|recreation|fabrication",
+      "notes": "May 17 vehicle-side body-mount measurement photo for the additional flat rubber requirement; use for pad footprint and stack-height planning, but keep final side/station labels, sleeve checks, and dry-stack confirmation open."
+    },
     "20260517_194303_gp_5yuaRoaA": {
       "media_id": "20260517_194303_gp_5yuaRoaA",
       "file_name": "20260517_194303_gp_5yuaRoaA.jpg",
@@ -120886,6 +123950,36 @@ window.J40_DASHBOARD_DATA = {
       "confidence": "high",
       "tags": "battery|battery_tray|battery_mount|tray_frame|ruler|dimension|pickup|support|fabrication_reference|battery_power_carrier",
       "notes": "May 17 user-selected existing battery mount measurement photo: tray opening, frame height, corrosion/edge condition, and candidate pickup constraints for the battery stand and power carrier mock-up."
+    },
+    "20260517_194633_gp_rAjY3gjg": {
+      "media_id": "20260517_194633_gp_rAjY3gjg",
+      "file_name": "20260517_194633_gp_rAjY3gjg.jpg",
+      "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+      "captured_date": "2026-05-17",
+      "captured_time": "19:46:33",
+      "media_type": "photo",
+      "component_group": "procurement_inventory",
+      "specific_component": "rubber_parts_recreation_samples",
+      "stage": "fabrication_measurement",
+      "observed_state": "vehicle_side_flat_rubber_measurement_reference",
+      "confidence": "high",
+      "tags": "rubber|body_mount|flat_pad|measurement|tape_reference|vehicle_side|recreation|fabrication",
+      "notes": "May 17 vehicle-side body-mount measurement photo for the additional flat rubber requirement; use for pad footprint and stack-height planning, but keep final side/station labels, sleeve checks, and dry-stack confirmation open."
+    },
+    "20260517_194706_gp_twKRWGFA": {
+      "media_id": "20260517_194706_gp_twKRWGFA",
+      "file_name": "20260517_194706_gp_twKRWGFA.jpg",
+      "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+      "captured_date": "2026-05-17",
+      "captured_time": "19:47:06",
+      "media_type": "photo",
+      "component_group": "procurement_inventory",
+      "specific_component": "rubber_parts_recreation_samples",
+      "stage": "fabrication_measurement",
+      "observed_state": "vehicle_side_flat_rubber_measurement_reference",
+      "confidence": "high",
+      "tags": "rubber|body_mount|flat_pad|measurement|tape_reference|vehicle_side|recreation|fabrication",
+      "notes": "May 17 vehicle-side body-mount measurement photo for the additional flat rubber requirement; use for pad footprint and stack-height planning, but keep final side/station labels, sleeve checks, and dry-stack confirmation open."
     },
     "20260517_194754_gp_vXLV7rzA": {
       "media_id": "20260517_194754_gp_vXLV7rzA",
@@ -121291,6 +124385,336 @@ window.J40_DASHBOARD_DATA = {
       "confidence": "high",
       "tags": "rear_axle|differential|carrier|pumpkin|gear_oil|breather|brake_line|leaf_spring|inspection",
       "notes": "User-supplied May 17 differential carrier/pumpkin close-up; use as the trigger image for the rear differential/axle teardown inspection plan before axle coating, brake closeout, suspension alignment, or road validation."
+    },
+    "20260523_215742_gp_k5JUobdg": {
+      "media_id": "20260523_215742_gp_k5JUobdg",
+      "file_name": "20260523_215742_gp_k5JUobdg.jpg",
+      "path": "../../photos/20260523_215742_gp_k5JUobdg.jpg",
+      "captured_date": "2026-05-23",
+      "captured_time": "21:57:42",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260523_222923_gp_nZMVhWQg": {
+      "media_id": "20260523_222923_gp_nZMVhWQg",
+      "file_name": "20260523_222923_gp_nZMVhWQg.jpg",
+      "path": "../../photos/20260523_222923_gp_nZMVhWQg.jpg",
+      "captured_date": "2026-05-23",
+      "captured_time": "22:29:23",
+      "media_type": "photo",
+      "component_group": "removable_panels",
+      "specific_component": "returned_painted_inner_panels_or_splash_shields",
+      "stage": "hardware_refinish",
+      "observed_state": "refinished_off_vehicle_received",
+      "confidence": "high",
+      "tags": "painted|returned|received|panel|splash_shield|black",
+      "notes": "Google Photos May 23 returned painted parts receipt evidence; black refinished inner panel or splash-shield piece off vehicle."
+    },
+    "20260523_222939_gp_8284Aubw": {
+      "media_id": "20260523_222939_gp_8284Aubw",
+      "file_name": "20260523_222939_gp_8284Aubw.jpg",
+      "path": "../../photos/20260523_222939_gp_8284Aubw.jpg",
+      "captured_date": "2026-05-23",
+      "captured_time": "22:29:39",
+      "media_type": "photo",
+      "component_group": "removable_panels",
+      "specific_component": "returned_painted_inner_panels_or_splash_shields",
+      "stage": "hardware_refinish",
+      "observed_state": "refinished_off_vehicle_received",
+      "confidence": "high",
+      "tags": "painted|returned|received|panel|splash_shield|black",
+      "notes": "Google Photos May 23 returned painted parts receipt evidence; black refinished inner panel or splash-shield piece off vehicle."
+    },
+    "20260523_223012_gp_8OUV7efg": {
+      "media_id": "20260523_223012_gp_8OUV7efg",
+      "file_name": "20260523_223012_gp_8OUV7efg.jpg",
+      "path": "../../photos/20260523_223012_gp_8OUV7efg.jpg",
+      "captured_date": "2026-05-23",
+      "captured_time": "22:30:12",
+      "media_type": "photo",
+      "component_group": "removable_panels",
+      "specific_component": "returned_painted_front_wings",
+      "stage": "hardware_refinish",
+      "observed_state": "refinished_off_vehicle_received",
+      "confidence": "high",
+      "tags": "painted|returned|received|front_wing|panel",
+      "notes": "Google Photos May 23 returned painted parts receipt evidence; refinished front wing/panel shown off vehicle."
+    },
+    "20260523_223049_gp_fMBUKOUA": {
+      "media_id": "20260523_223049_gp_fMBUKOUA",
+      "file_name": "20260523_223049_gp_fMBUKOUA.jpg",
+      "path": "../../photos/20260523_223049_gp_fMBUKOUA.jpg",
+      "captured_date": "2026-05-23",
+      "captured_time": "22:30:49",
+      "media_type": "photo",
+      "component_group": "removable_panels",
+      "specific_component": "returned_painted_front_wings",
+      "stage": "hardware_refinish",
+      "observed_state": "refinished_off_vehicle_received",
+      "confidence": "high",
+      "tags": "painted|returned|received|front_wing|panel|inner_face",
+      "notes": "Google Photos May 23 returned painted parts receipt evidence; front wing/panel inner face shown after refinish."
+    },
+    "20260523_223504_gp_F0FomIPA": {
+      "media_id": "20260523_223504_gp_F0FomIPA",
+      "file_name": "20260523_223504_gp_F0FomIPA.jpg",
+      "path": "../../photos/20260523_223504_gp_F0FomIPA.jpg",
+      "captured_date": "2026-05-23",
+      "captured_time": "22:35:04",
+      "media_type": "photo",
+      "component_group": "body_exterior",
+      "specific_component": "returned_painted_front_panel_headlamp_surround",
+      "stage": "hardware_refinish",
+      "observed_state": "refinished_off_vehicle_received",
+      "confidence": "high",
+      "tags": "painted|returned|received|front_panel|headlamp_surround",
+      "notes": "Google Photos May 23 returned painted parts receipt evidence; refinished front/headlamp surround panel off vehicle."
+    },
+    "20260523_223518_gp_f6ReoLCg": {
+      "media_id": "20260523_223518_gp_f6ReoLCg",
+      "file_name": "20260523_223518_gp_f6ReoLCg.jpg",
+      "path": "../../photos/20260523_223518_gp_f6ReoLCg.jpg",
+      "captured_date": "2026-05-23",
+      "captured_time": "22:35:18",
+      "media_type": "photo",
+      "component_group": "body_exterior",
+      "specific_component": "returned_painted_front_panel_headlamp_surround",
+      "stage": "hardware_refinish",
+      "observed_state": "refinished_off_vehicle_received",
+      "confidence": "high",
+      "tags": "painted|returned|received|front_panel|headlamp_surround",
+      "notes": "Google Photos May 23 returned painted parts receipt evidence; refinished front/headlamp surround panel off vehicle."
+    },
+    "20260523_223705_gp_JYXnfgoQ": {
+      "media_id": "20260523_223705_gp_JYXnfgoQ",
+      "file_name": "20260523_223705_gp_JYXnfgoQ.jpg",
+      "path": "../../photos/20260523_223705_gp_JYXnfgoQ.jpg",
+      "captured_date": "2026-05-23",
+      "captured_time": "22:37:05",
+      "media_type": "photo",
+      "component_group": "removable_panels",
+      "specific_component": "returned_painted_front_wings",
+      "stage": "hardware_refinish",
+      "observed_state": "refinished_off_vehicle_received",
+      "confidence": "high",
+      "tags": "painted|returned|received|front_wing|panel",
+      "notes": "Google Photos May 23 returned painted parts receipt evidence; refinished front wing/panel shown off vehicle."
+    },
+    "20260523_223717_gp_FfANRAeQ": {
+      "media_id": "20260523_223717_gp_FfANRAeQ",
+      "file_name": "20260523_223717_gp_FfANRAeQ.jpg",
+      "path": "../../photos/20260523_223717_gp_FfANRAeQ.jpg",
+      "captured_date": "2026-05-23",
+      "captured_time": "22:37:17",
+      "media_type": "photo",
+      "component_group": "removable_panels",
+      "specific_component": "returned_painted_front_wings",
+      "stage": "hardware_refinish",
+      "observed_state": "refinished_off_vehicle_received",
+      "confidence": "high",
+      "tags": "painted|returned|received|front_wing|panel|inner_face",
+      "notes": "Google Photos May 23 returned painted parts receipt evidence; front wing/panel inner face shown after refinish."
+    },
+    "20260523_223733_gp_MnEIyxVA": {
+      "media_id": "20260523_223733_gp_MnEIyxVA",
+      "file_name": "20260523_223733_gp_MnEIyxVA.jpg",
+      "path": "../../photos/20260523_223733_gp_MnEIyxVA.jpg",
+      "captured_date": "2026-05-23",
+      "captured_time": "22:37:33",
+      "media_type": "photo",
+      "component_group": "removable_panels",
+      "specific_component": "returned_painted_brackets_and_trim",
+      "stage": "hardware_refinish",
+      "observed_state": "refinished_off_vehicle_received",
+      "confidence": "high",
+      "tags": "painted|returned|received|brackets|trim|black",
+      "notes": "Google Photos May 23 returned painted parts receipt evidence; refinished black brackets/trim pieces off vehicle."
+    },
+    "20260523_224042_gp_J1g4JmyA": {
+      "media_id": "20260523_224042_gp_J1g4JmyA",
+      "file_name": "20260523_224042_gp_J1g4JmyA.jpg",
+      "path": "../../photos/20260523_224042_gp_J1g4JmyA.jpg",
+      "captured_date": "2026-05-23",
+      "captured_time": "22:40:42",
+      "media_type": "photo",
+      "component_group": "removable_panels",
+      "specific_component": "returned_painted_body_trim",
+      "stage": "hardware_refinish",
+      "observed_state": "refinished_off_vehicle_received",
+      "confidence": "high",
+      "tags": "painted|returned|received|body_trim|pillar_trim",
+      "notes": "Google Photos May 23 returned painted parts receipt evidence; refinished body trim piece off vehicle."
+    },
+    "20260523_224101_gp_EpoF4CwQ": {
+      "media_id": "20260523_224101_gp_EpoF4CwQ",
+      "file_name": "20260523_224101_gp_EpoF4CwQ.jpg",
+      "path": "../../photos/20260523_224101_gp_EpoF4CwQ.jpg",
+      "captured_date": "2026-05-23",
+      "captured_time": "22:41:01",
+      "media_type": "photo",
+      "component_group": "removable_panels",
+      "specific_component": "returned_painted_body_trim",
+      "stage": "hardware_refinish",
+      "observed_state": "refinished_off_vehicle_received",
+      "confidence": "high",
+      "tags": "painted|returned|received|body_trim|pillar_trim",
+      "notes": "Google Photos May 23 returned painted parts receipt evidence; refinished body trim piece off vehicle."
+    },
+    "20260523_225521_gp_0vea3W7Q": {
+      "media_id": "20260523_225521_gp_0vea3W7Q",
+      "file_name": "20260523_225521_gp_0vea3W7Q.jpg",
+      "path": "../../photos/20260523_225521_gp_0vea3W7Q.jpg",
+      "captured_date": "2026-05-23",
+      "captured_time": "22:55:21",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260523_231704_gp_oHCgzsQQ": {
+      "media_id": "20260523_231704_gp_oHCgzsQQ",
+      "file_name": "20260523_231704_gp_oHCgzsQQ.jpg",
+      "path": "../../photos/20260523_231704_gp_oHCgzsQQ.jpg",
+      "captured_date": "2026-05-23",
+      "captured_time": "23:17:04",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260524_000546_gp_EsEc5iEQ": {
+      "media_id": "20260524_000546_gp_EsEc5iEQ",
+      "file_name": "20260524_000546_gp_EsEc5iEQ.jpg",
+      "path": "../../photos/20260524_000546_gp_EsEc5iEQ.jpg",
+      "captured_date": "2026-05-24",
+      "captured_time": "00:05:46",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260524_000600_gp_m5AYFTCg": {
+      "media_id": "20260524_000600_gp_m5AYFTCg",
+      "file_name": "20260524_000600_gp_m5AYFTCg.jpg",
+      "path": "../../photos/20260524_000600_gp_m5AYFTCg.jpg",
+      "captured_date": "2026-05-24",
+      "captured_time": "00:06:00",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260524_001132_gp_9KpCkOZw": {
+      "media_id": "20260524_001132_gp_9KpCkOZw",
+      "file_name": "20260524_001132_gp_9KpCkOZw.jpg",
+      "path": "../../photos/20260524_001132_gp_9KpCkOZw.jpg",
+      "captured_date": "2026-05-24",
+      "captured_time": "00:11:32",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260524_001141_gp_2dkgEuvQ": {
+      "media_id": "20260524_001141_gp_2dkgEuvQ",
+      "file_name": "20260524_001141_gp_2dkgEuvQ.jpg",
+      "path": "../../photos/20260524_001141_gp_2dkgEuvQ.jpg",
+      "captured_date": "2026-05-24",
+      "captured_time": "00:11:41",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260524_025414_gp_VsFMrBNQ": {
+      "media_id": "20260524_025414_gp_VsFMrBNQ",
+      "file_name": "20260524_025414_gp_VsFMrBNQ.jpg",
+      "path": "../../photos/20260524_025414_gp_VsFMrBNQ.jpg",
+      "captured_date": "2026-05-24",
+      "captured_time": "02:54:14",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260524_025515_gp_zEaIZo5Q": {
+      "media_id": "20260524_025515_gp_zEaIZo5Q",
+      "file_name": "20260524_025515_gp_zEaIZo5Q.jpg",
+      "path": "../../photos/20260524_025515_gp_zEaIZo5Q.jpg",
+      "captured_date": "2026-05-24",
+      "captured_time": "02:55:15",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260524_025532_gp_YlEZxOmQ": {
+      "media_id": "20260524_025532_gp_YlEZxOmQ",
+      "file_name": "20260524_025532_gp_YlEZxOmQ.jpg",
+      "path": "../../photos/20260524_025532_gp_YlEZxOmQ.jpg",
+      "captured_date": "2026-05-24",
+      "captured_time": "02:55:32",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
+    },
+    "20260524_025547_gp_yCvA0bxA": {
+      "media_id": "20260524_025547_gp_yCvA0bxA",
+      "file_name": "20260524_025547_gp_yCvA0bxA.jpg",
+      "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+      "captured_date": "2026-05-24",
+      "captured_time": "02:55:47",
+      "media_type": "photo",
+      "component_group": "documentation_reference",
+      "specific_component": "reference_media",
+      "stage": "reference_material",
+      "observed_state": "reference_only",
+      "confidence": "low",
+      "tags": "reference",
+      "notes": ""
     },
     "IMG-20260328-WA0017": {
       "media_id": "IMG-20260328-WA0017",

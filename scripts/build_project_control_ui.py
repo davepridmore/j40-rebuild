@@ -46,6 +46,7 @@ WORKBOOK_SUBSTANCES_PATH = MANUAL_DIR / "workbook_tabs" / "substances.csv"
 WORKBOOK_ELECTRICAL_MASTER_PATH = MANUAL_DIR / "workbook_tabs" / "electrical_master.csv"
 WORKBOOK_ELECTRICAL_TEMPLATES_PATH = MANUAL_DIR / "workbook_tabs" / "electrical_templates.csv"
 ENGINE_ELECTRICAL_INPUTS_RECONCILIATION_PATH = MANUAL_DIR / "engine_electrical_inputs_reconciliation_20260517.csv"
+CABIN_ENGINE_FIREWALL_HOLES_SURVEY_PATH = MANUAL_DIR / "cabin_engine_firewall_holes_survey_20260517.csv"
 ELECTRICAL_DIAGRAM_RECONCILIATION_PATH = MANUAL_DIR / "electrical_diagram_reconciliation_20260518.csv"
 WORKBOOK_RUBBERS_EXACT_ONLINE_PATH = MANUAL_DIR / "workbook_tabs" / "rubbers_exact_online.csv"
 WORKBOOK_RUBBERS_KIT_BUY_PATH = MANUAL_DIR / "workbook_tabs" / "rubbers_kit_buy.csv"
@@ -57,6 +58,24 @@ WHATSAPP_J40_CHAT_CANDIDATES_PATH = MANUAL_DIR / "whatsapp_j40_chat_candidates.c
 WHATSAPP_J40_MEDIA_INDEX_PATH = ROOT / "data" / "processed" / "generated" / "mcp_whatsapp_j40_media_index.csv"
 WHATSAPP_HIDDEN_CHAT_NAMES = {"support engineer placement"}
 WHATSAPP_HIDDEN_CHAT_IDS = {"120363406007289586@g.us"}
+WHATSAPP_OTHER_BUILD_REFERENCE_CHATS: tuple[dict[str, str], ...] = (
+    {
+        "chat_name": "Fj40",
+        "key": "whatsapp_fj40_group_feed",
+        "title": "WhatsApp Fj40 Group Feed",
+        "description": "Imported Fj40 group photos and videos that are not already called out in the curated other-build reference sections.",
+        "specific_component": "fj40_whatsapp_group_reference",
+        "source_label": "Fj40 WhatsApp",
+    },
+    {
+        "chat_name": "TLC 40 Series Owners",
+        "key": "whatsapp_tlc_40_series_owners",
+        "title": "WhatsApp TLC 40 Series Owners",
+        "description": "Imported TLC 40 Series Owners group photos and videos used as other-build reference material.",
+        "specific_component": "tlc_40_series_owners_reference",
+        "source_label": "TLC 40 Series Owners WhatsApp",
+    },
+)
 PAINT_REFINISH_MEDIA_QUEUE_PATH = MANUAL_DIR / "paint_refinish_media_queue.csv"
 PAINT_REFINISH_WHATSAPP_MEDIA_QUEUE_PATH = MANUAL_DIR / "paint_refinish_whatsapp_media_queue.csv"
 INVENTORY_IMAGE_OVERRIDES_PATH = MANUAL_DIR / "inventory_image_overrides.csv"
@@ -129,7 +148,8 @@ EPS_MARKET_SCOUT_SPEC: dict[str, Any] = {
         "Corolla, Axio, Prius, hydraulic steering parts, loose motors, loose ECUs, and mixed-family sets are quote/photo only. "
         "The J40 has no vehicle ECU, but this donor EPS route still needs the EPS system's own matched ECU/controller, "
         "or a seller-proven integrated controller on the column. Do not buy a bare column expecting it to run from J40 wiring alone. "
-        "Donor pigtails are for connector identification and bench testing; final power, ground, trigger, and loom wiring must be new automotive cable and terminals."
+        "Donor pigtails are for connector identification and bench testing; final power, ground, trigger, and loom wiring must be new automotive cable and terminals. "
+        "J40 fitment now uses the measured General EPS Adapter route, so donor brackets are adapter-reference geometry rather than assumed bolt-on parts."
     ),
     "must_include": [
         "Motorized EPS steering column with torque sensor and reduction housing.",
@@ -139,6 +159,7 @@ EPS_MARKET_SCOUT_SPEC: dict[str, Any] = {
         "U-joints, couplers, clamp brackets, support plates, and related donor fasteners.",
         "Readable column and ECU/controller labels or part numbers.",
         "Seller can identify heavy power, ground, and ignition-trigger wires for the bench check.",
+        "Donor bracket hole spacing, saddle/clamp shape, motor clocking faces, and shaft centerline offsets photographed for the General EPS Adapter mock-up.",
     ],
     "bench_test": [
         "Power the unit through the matched EPS ECU/controller before payment and rotate the input shaft both directions.",
@@ -163,16 +184,17 @@ EPS_MARKET_SCOUT_SPEC: dict[str, Any] = {
         "Input and output spline/shaft photos.",
         "All plugs and pigtails laid out clearly.",
         "Full kit photo with column, EPS ECU/controller, plugs, pigtails, every included shaft, U-joint, coupler, bracket, support plate, and fastener visible.",
+        "Bracket hole spacing, saddle/clamp area, motor clocking faces, and shaft centerline offsets for the General EPS Adapter mock-up.",
     ],
     "price_guidance": {
         "unit_price_range": "PKR 54,000-136,000",
         "total_value_range": "PKR 54,000-136,000",
         "negotiation_midpoint": "PKR 90,000",
-        "rule": "Do not pay complete-kit price for missing EPS ECU/controller, plugs, shafts, U-joints, couplers, or brackets.",
+        "rule": "Do not pay complete-kit price for missing EPS ECU/controller, plugs, shafts, U-joints, couplers, or brackets. General EPS Adapter fabrication is separate from donor-kit price.",
     },
     "decision_rule": (
         "Buy only if donor identity, complete matched kit contents, bench-test video, seller contact, return terms, "
-        "and required photos are all captured before payment."
+        "required photos, and General EPS Adapter geometry are all captured before payment."
     ),
 }
 
@@ -663,10 +685,10 @@ WORKSTREAM_REQUIRED_SEQUENCE: dict[str, list[tuple[str, str]]] = {
         ("Confirm target donor only", "Accept only 2005-2011 Toyota Vitz/Yaris 90-series SCP90/NCP90 EPS sets; treat Corolla, Axio, Prius, and mixed-family sets as quote/photo only."),
         ("Verify complete matched kit", "Check column, matched EPS ECU/controller or proven integrated control, original plugs with pigtails, shafts, U-joints, couplers, brackets, labels, and donor hardware before payment."),
         ("Bench-test before payment", "Require smooth powered assist both directions, no lash/noise, and manual shaft rotation with assist disabled."),
-        ("Capture seller evidence and decision", "Record seller contact, stall location, price, return window, donor claim, labels, full kit photos, bench-test video, and buy/no-buy decision."),
-        ("Map J40 column layout", "Measure steering-wheel position, dash/pedal/firewall clearance, steering-box input line, motor envelope, and controller location before any shaft is cut."),
-        ("Design column support structure", "Fabricate a triangulated dash/cowl/firewall support bracket or cradle that carries EPS motor torque without relying on thin dash sheet alone."),
-        ("Adapt shafts and U-joints", "Build a phased intermediate shaft path with proper splined/DD couplers or machined adapters, no casual welded steering-shaft joins, and no bind lock-to-lock."),
+        ("Capture seller evidence and decision", "Record seller contact, stall location, price, return window, donor claim, labels, full kit photos, donor bracket/shaft geometry, bench-test video, and buy/no-buy decision."),
+        ("Map J40 column layout", "Measure steering-wheel position, dash/pedal/firewall clearance, steering-box input line, motor envelope, controller location, and General EPS Adapter datum points before any shaft is cut."),
+        ("Design General EPS Adapter", "Fabricate a removable datum plate, firewall doubler, EPS saddle/clamp, clocking/spacer plates, replaceable shaft interfaces, and triangulated support that carries EPS motor torque without relying on thin dash sheet alone."),
+        ("Adapt shafts and U-joints", "Build a phased intermediate shaft path from the adapter datum with proper splined/DD couplers or machined adapters, no casual welded steering-shaft joins, and no bind lock-to-lock."),
         ("Mount controller and protected wiring", "Install the EPS ECU/controller dry and serviceable, then run new fused power, ground, ignition trigger, terminals, and loom protection."),
         ("Validate steering before road use", "Confirm manual steering with EPS off, powered assist consistency, shaft clearances, fastener locking, alignment, and staged road checks before signoff."),
     ],
@@ -1518,7 +1540,7 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
         "title": "EPS Conversion Workstream",
         "summary": (
             "Procure one complete 2005-2011 SCP90/NCP90 Vitz/Yaris EPS donor set, then control the J40 column graft, "
-            "support-bracket fabrication, shaft/U-joint adaptation, EPS controller wiring, and steering validation."
+            "General EPS Adapter fabrication, shaft/U-joint adaptation, EPS controller wiring, and steering validation."
         ),
         "default_tools": [
             "Phone/camera",
@@ -1604,13 +1626,13 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "title": "Map J40 Column Layout",
                 "priority": "P0",
                 "remaining": "before any cutting or bracket drilling",
-                "instruction": "Freeze the steering-column packaging before committing to a cut, splice, or support bracket.",
+                "instruction": "Freeze the steering-column packaging and General EPS Adapter datum before committing to a cut, splice, firewall change, or support bracket.",
                 "process_steps": [
                     "Photograph the J40 steering wheel, upper column, dash support, pedals, firewall pass-through, and steering-box input area before removal.",
                     "Measure steering-wheel height/reach, column angle, dash hole position, pedal clearance, firewall pass-through center, and steering-box input shaft line.",
-                    "Measure the donor EPS motor/gearbox envelope, controller envelope, input/output shaft lengths, and bracket spacing.",
-                    "Decide whether the preferred route keeps the J40 upper column and grafts the EPS lower down, or uses more donor column hardware.",
-                    "Mock the EPS unit with cardboard/wood blocks and confirm motor clearance to pedals, knees, dash wiring, heater/ducting, and firewall.",
+                    "Measure the donor EPS motor/gearbox envelope, controller envelope, input/output shaft lengths, bracket spacing, saddle/clamp shape, and shaft centerline offsets.",
+                    "Keep the preferred route on a J40-specific General EPS Adapter unless mock-up proves it is not safe or serviceable.",
+                    "Mock the EPS unit and adapter with cardboard/wood blocks or flat bar and confirm motor clearance to pedals, knees, dash wiring, heater/ducting, and firewall.",
                 ],
                 "tools": ["Tape measure or calipers", "Angle finder", "Straight edge", "Phone/camera", "Marker"],
                 "supplies": ["Cardboard", "Marker tape", "Paint marker"],
@@ -2651,12 +2673,62 @@ def engine_electrical_input_payload(
     return payload
 
 
+def firewall_pass_through_attach_to(hole_id: str) -> str:
+    attach_points = {
+        "FEH-001": (
+            "Candidate protected cabin-to-engine loom or control-cable pass-through after a correct grommet or bulkhead "
+            "fitting is installed; secure the branch to cabin-side and engine-bay clips so it never bears on the hole edge."
+        ),
+        "FEH-002": (
+            "No circuit assigned yet; attach nothing here until the original purpose is proven, then either fit a sealed "
+            "grommeted pass-through or plug/weld-close it."
+        ),
+        "FEH-003": (
+            "No electrical attachment point; treat the steering-column boot area as a no-crowd zone and clip nearby looms "
+            "away from column and pedal movement."
+        ),
+        "FEH-004": (
+            "Secondary lower/side route candidate only after square-on measurement and engine-side obstruction check; "
+            "attach only with edge protection, seal, and strain relief."
+        ),
+    }
+    return attach_points.get(clean(hole_id), "")
+
+
+def firewall_pass_through_payload(
+    rows: list[dict[str, str]],
+    photo_rows: list[dict[str, str]],
+) -> list[dict[str, Any]]:
+    rows_by_id = photo_rows_by_media_id(photo_rows)
+    payload: list[dict[str, Any]] = []
+    for row in rows:
+        photo_refs = clean(row.get("photo_refs"))
+        payload.append(
+            {
+                "hole_id": clean(row.get("hole_id")),
+                "photo_refs": photo_refs,
+                "visible_area": clean(row.get("visible_area")),
+                "observed_opening": clean(row.get("observed_opening")),
+                "what_it_does": clean(row.get("observed_opening")),
+                "attach_or_route_to": firewall_pass_through_attach_to(row.get("hole_id")),
+                "condition_risk": clean(row.get("condition_risk")),
+                "refit_decision": clean(row.get("refit_decision")),
+                "verification_required": clean(row.get("verification_required")),
+                "closeout_evidence_required": clean(row.get("closeout_evidence_required")),
+                "notes": clean(row.get("notes")),
+                "evidence_images": dedupe_payload_images(evidence_images_from_refs(photo_refs, rows_by_id)),
+            }
+        )
+    return payload
+
+
 def load_electrical_spec_layout(photo_rows: list[dict[str, str]]) -> dict[str, Any]:
     master_rows = load_csv_optional(WORKBOOK_ELECTRICAL_MASTER_PATH)
     template_rows = load_csv_optional(WORKBOOK_ELECTRICAL_TEMPLATES_PATH)
     engine_input_rows = load_csv_optional(ENGINE_ELECTRICAL_INPUTS_RECONCILIATION_PATH)
+    firewall_hole_rows = load_csv_optional(CABIN_ENGINE_FIREWALL_HOLES_SURVEY_PATH)
     diagram_reconciliation_rows = load_csv_optional(ELECTRICAL_DIAGRAM_RECONCILIATION_PATH)
-    if not master_rows and not template_rows and not engine_input_rows and not diagram_reconciliation_rows:
+    if not master_rows and not template_rows and not engine_input_rows and not firewall_hole_rows and not diagram_reconciliation_rows:
         return {}
 
     metadata = parse_electrical_master_metadata(master_rows)
@@ -2670,6 +2742,8 @@ def load_electrical_spec_layout(photo_rows: list[dict[str, str]]) -> dict[str, A
         source_refs.append(repo_relative_path(WIRING_DIAGRAM_GRAFFLE_PATH))
     if engine_input_rows:
         source_refs.append(repo_relative_path(ENGINE_ELECTRICAL_INPUTS_RECONCILIATION_PATH))
+    if firewall_hole_rows:
+        source_refs.append(repo_relative_path(CABIN_ENGINE_FIREWALL_HOLES_SURVEY_PATH))
     if diagram_reconciliation_rows:
         source_refs.append(repo_relative_path(ELECTRICAL_DIAGRAM_RECONCILIATION_PATH))
 
@@ -2681,6 +2755,7 @@ def load_electrical_spec_layout(photo_rows: list[dict[str, str]]) -> dict[str, A
         "source_refs": source_refs,
         "layout_templates": load_electrical_layout_templates(template_rows),
         "engine_input_reconciliation": engine_electrical_input_payload(engine_input_rows, photo_rows),
+        "firewall_pass_through_survey": firewall_pass_through_payload(firewall_hole_rows, photo_rows),
         "diagram_reconciliation": diagram_reconciliation_rows,
         "wiring_progress_tracker": workbook_section_rows(
             master_rows,
@@ -2771,6 +2846,7 @@ def build_dashboard_electrical_spec_layout(full_layout: dict[str, Any]) -> dict[
     connector_rows = list(full_layout.get("connector_quick_lookup") or [])
     loom_rows = list(full_layout.get("loom_quick_lookup") or [])
     engine_input_rows = list(full_layout.get("engine_input_reconciliation") or [])
+    firewall_hole_rows = list(full_layout.get("firewall_pass_through_survey") or [])
     diagram_reconciliation_rows = list(full_layout.get("diagram_reconciliation") or [])
 
     dashboard_wiring_rows = [
@@ -2817,6 +2893,7 @@ def build_dashboard_electrical_spec_layout(full_layout: dict[str, Any]) -> dict[
         "source_refs": full_layout.get("source_refs", []),
         "layout_templates": list(full_layout.get("layout_templates") or []),
         "engine_input_reconciliation": engine_input_rows,
+        "firewall_pass_through_survey": firewall_hole_rows,
         "diagram_reconciliation": dashboard_diagram_reconciliation_rows or diagram_reconciliation_rows[:8],
         "wiring_progress_tracker": dashboard_wiring_rows or wiring_rows[:8],
         "locked_as_built_standards": list(full_layout.get("locked_as_built_standards") or [])[:4],
@@ -4730,13 +4807,90 @@ def build_manual_other_build_reference_sections() -> list[dict[str, Any]]:
     return sections
 
 
+def build_whatsapp_other_build_reference_sections(
+    whatsapp_media_rows: list[dict[str, str]],
+    excluded_paths: set[str],
+) -> list[dict[str, Any]]:
+    sections: list[dict[str, Any]] = []
+    for chat_spec in WHATSAPP_OTHER_BUILD_REFERENCE_CHATS:
+        chat_name = clean(chat_spec.get("chat_name"))
+        matching_rows = sorted(
+            [
+                row
+                for row in whatsapp_media_rows
+                if norm(row.get("chat_name") or row.get("source_name")) == norm(chat_name)
+                and norm(row.get("media_type")) in {"photo", "video"}
+            ],
+            key=lambda row: (clean(row.get("timestamp")), clean(row.get("relative_path"))),
+        )
+        if not matching_rows:
+            continue
+
+        images: list[dict[str, Any]] = []
+        for row in matching_rows:
+            relative_path = clean(row.get("relative_path"))
+            if not relative_path or relative_path in excluded_paths:
+                continue
+
+            path = ROOT / relative_path
+            if not path.exists() or path.suffix.lower() not in REFERENCE_MEDIA_EXTENSIONS:
+                continue
+
+            media_type = norm(row.get("media_type")) or "photo"
+            timestamp = clean(row.get("timestamp")).replace("T", " ")
+            author = clean(row.get("author"))
+            note_parts = []
+            if author:
+                note_parts.append(f"Author: {author}")
+            if timestamp:
+                note_parts.append(f"Imported timestamp: {timestamp}")
+            image = reference_image_file_payload(
+                path,
+                caption=f"{chat_name} WhatsApp {humanize_token(media_type)} · {timestamp or path.stem}",
+                specific_component=clean(chat_spec.get("specific_component")) or "whatsapp_group_reference",
+                source_label=clean(chat_spec.get("source_label")) or f"{chat_name} WhatsApp",
+                source_path=relative_path,
+                notes=". ".join(note_parts),
+            )
+            date_part, time_part = parse_timestamp_parts(clean(row.get("timestamp")))
+            image["captured_date"] = date_part
+            image["captured_time"] = time_part
+            images.append(image)
+            excluded_paths.add(relative_path)
+
+        if not images:
+            continue
+
+        sections.append(
+            {
+                "key": clean(chat_spec.get("key")) or f"whatsapp_{norm(chat_name)}_group_feed",
+                "title": clean(chat_spec.get("title")) or f"{chat_name} WhatsApp Group Feed",
+                "description": clean(chat_spec.get("description")),
+                "source_path": repo_relative_path(WHATSAPP_J40_MEDIA_INDEX_PATH),
+                "links": [],
+                "images": dedupe_payload_images(images),
+            }
+        )
+    return sections
+
+
 def reference_video_count(images: list[dict[str, Any]]) -> int:
     return sum(1 for image in images if norm(image.get("media_type")) == "video")
 
 
-def build_other_builds_reference(_photo_rows: list[dict[str, str]]) -> dict[str, Any]:
+def build_other_builds_reference(whatsapp_media_rows: list[dict[str, str]]) -> dict[str, Any]:
     drop_zone_images = build_drop_zone_reference_images()
     manual_reference_sections = build_manual_other_build_reference_sections()
+    existing_reference_paths = {
+        clean(image.get("source_path"))
+        for section in manual_reference_sections
+        for image in section.get("images") or []
+        if clean(image.get("source_path"))
+    }
+    whatsapp_reference_sections = build_whatsapp_other_build_reference_sections(
+        whatsapp_media_rows,
+        existing_reference_paths,
+    )
 
     sections: list[dict[str, Any]] = [
         {
@@ -4750,6 +4904,7 @@ def build_other_builds_reference(_photo_rows: list[dict[str, str]]) -> dict[str,
     ]
     sections.extend(build_pakwheels_reference_sections())
     sections.extend(manual_reference_sections)
+    sections.extend(whatsapp_reference_sections)
 
     total_media = sum(len(section.get("images") or []) for section in sections)
     total_videos = sum(reference_video_count(section.get("images") or []) for section in sections)
@@ -9828,7 +9983,7 @@ def build_dashboard_data() -> dict[str, Any]:
             }
         )
     procurement_evidence_images = build_procurement_evidence_images(photo_rows)
-    other_builds_reference = build_other_builds_reference(photo_rows)
+    other_builds_reference = build_other_builds_reference(whatsapp_j40_media_rows)
 
     whatsapp_selected_chats = [
         row
@@ -9904,6 +10059,7 @@ def build_dashboard_data() -> dict[str, Any]:
             "workbook_electrical_master": "data/manual/workbook_tabs/electrical_master.csv",
             "workbook_electrical_templates": "data/manual/workbook_tabs/electrical_templates.csv",
             "engine_electrical_inputs_reconciliation": "data/manual/engine_electrical_inputs_reconciliation_20260517.csv",
+            "cabin_engine_firewall_holes_survey": "data/manual/cabin_engine_firewall_holes_survey_20260517.csv",
             "electrical_diagram_reconciliation": "data/manual/electrical_diagram_reconciliation_20260518.csv",
             "workbook_rubbers_exact_online": "data/manual/workbook_tabs/rubbers_exact_online.csv",
             "workbook_rubbers_kit_buy": "data/manual/workbook_tabs/rubbers_kit_buy.csv",

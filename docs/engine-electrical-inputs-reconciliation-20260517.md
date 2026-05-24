@@ -22,6 +22,18 @@ No unknown connector gets reconnected by color or memory. Every engine-side wire
 
 The machine-readable reconciliation sheet is `data/manual/engine_electrical_inputs_reconciliation_20260517.csv`.
 
+## Attachment / Termination Map
+
+| Input | What It Does | Where It Attaches / Terminates |
+| --- | --- | --- |
+| `EEI-001` | Starter feed, solenoid trigger, and ground-return evidence. | Starter B+ lug, solenoid trigger terminal, ignition/start control path, starter-interrupt path, and engine-to-chassis ground return. |
+| `EEI-002` | Alternator charge, warning/exciter, sense/regulator, and ground evidence. | Alternator terminal block/plug to the main charge lead, battery or main fuse point, warning/exciter circuit, voltage sense if fitted, and alternator ground. |
+| `EEI-003` | Injection-pump or throttle-linked electrical input; possible fuel-stop, idle-up, or engine-control device. | Do not attach yet. If proven as fuel-stop/idle-up, terminate to the dash fuel-stop control and ignition RUN/OFF logic while retaining the manual stop cable. |
+| `EEI-004` | Probable engine sender or warning-switch branch. | Dash cluster gauge or warning-lamp input after sender/switch type is proven by resistance, ground-switch, and continuity tests. |
+| `EEI-005` | Unidentified two-wire inline engine connector. | No blind reconnection. Tag as `U-01` and trace both sides before repair, delete, or retain decision. |
+| `EEI-006` | Loose unassigned engine-side connector. | No blind reconnection. Tag as `U-02`, trace loom direction and endpoint, then decide whether it is retained, repaired, or removed. |
+| `EEI-007` | Route/protection control for the engine input branch. | Clips, abrasion sleeve, grommets, heat/oil protection, and strain relief only; this is a harness support gate, not a circuit endpoint. |
+
 ## Refit Decisions
 
 - Starter: keep as a controlled high-current circuit. Clean the B+ lug path, label the solenoid trigger, prove the starter-interrupt path, and voltage-drop-test both feed and ground during cranking.

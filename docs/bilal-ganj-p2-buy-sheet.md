@@ -1,6 +1,6 @@
 # Bilal Ganj P2 Buy Sheet (Specs + Images + Prices)
 
-Date: 2026-04-15  
+Date: 2026-05-22  
 Source of truth: `J40_Costs.xlsx` (`Parts` tab, P2 rows)
 
 Note: the 10-way relay/fuse block is already bought and remains valid as specified. The separate cabin/interior car fuse boxes are not ordered; buy compact covered blade-fuse boxes separately.
@@ -60,15 +60,18 @@ Note: the 10-way relay/fuse block is already bought and remains valid as specifi
      - Upper + lower intermediate shafts with U-joints
      - Steering coupler/spline adapters for FJ40 side fitment
      - Column mount/clamp bracket set + firewall support bracket
+     - Donor bracket hole spacing, saddle/clamp shape, motor clocking faces, and shaft centerline offsets photographed for the General EPS Adapter mock-up
      - New 60A fused feed path wiring/hardware + new ignition trigger lead
      - Fail-safe manual steering operation when assist is off
      - Column-assist conversion only; engine stays installed, with no engine lift or hydraulic pump hardware in this scope.
      - J40 no-ECU clarification: the vehicle does not need an engine/body ECU for this route, but the EPS system still needs its own matched controller.
+     - J40 fitment clarification: final mounting uses a fabricated General EPS Adapter with vehicle-side datum plate, firewall doubler/spreader, EPS saddle/clamp, clocking/spacer plates, and replaceable shaft interfaces. Donor brackets are references only.
    - **Bench test before payment**:
      - No motor grinding noise
      - No jerky or delayed assist on smooth wheel rotation
      - Minimal free play/backlash at input-output hand check
    - **Estimated price (PKR)**: `54,000 - 136,000` (avg `90,000`)
+   - **Not included in this donor-kit price**: General EPS Adapter fabrication labour/material top-up after mock-up. Use the fabrication stock list and EPS fabrication plan for that release.
 
 ## Estimated Total
 

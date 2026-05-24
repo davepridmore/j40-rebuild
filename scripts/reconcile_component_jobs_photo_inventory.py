@@ -52,6 +52,12 @@ CABIN_ENGINE_FIREWALL_HOLES_20260517_MEDIA_IDS: tuple[str, ...] = (
     "20260517_194911_gp_jCrFS5PA",
 )
 
+RUBBER_FLAT_MEASUREMENT_20260517_MEDIA_IDS: tuple[str, ...] = (
+    "20260517_194143_gp_CO7MuMdA",
+    "20260517_194633_gp_rAjY3gjg",
+    "20260517_194706_gp_twKRWGFA",
+)
+
 
 @dataclass(frozen=True)
 class EvidenceRule:
@@ -201,9 +207,18 @@ RULES: dict[str, EvidenceRule] = {
         direct_media_ids=("20260423_183648_gp_ltd3AKwg",),
     ),
     "paint_returned_panels_refinished": EvidenceRule(
-        direct_specific_components=("refinished_hinges_brackets_and_trim", "refinished_seat_or_mount_bracket", "wiper_arm_or_linkage_hardware"),
+        direct_specific_components=(
+            "refinished_hinges_brackets_and_trim",
+            "refinished_seat_or_mount_bracket",
+            "returned_painted_body_trim",
+            "returned_painted_brackets_and_trim",
+            "returned_painted_front_panel_headlamp_surround",
+            "returned_painted_front_wings",
+            "returned_painted_inner_panels_or_splash_shields",
+            "wiper_arm_or_linkage_hardware",
+        ),
         indirect_specific_components=("panel_detail_and_markings", "front_panel_lighting_mount_area"),
-        notes="Off-vehicle refinished hardware/panel photos and the May 17 returned roof image provide direct evidence of returned painted parts.",
+        notes="Off-vehicle refinished hardware/panel photos, the May 17 returned roof image, and the May 23 picker batch provide direct evidence of returned painted parts.",
         direct_media_ids=("20260517_193305_gp_o1a6StwA",),
     ),
     "paint_workshop_progress_media": EvidenceRule(
@@ -307,17 +322,22 @@ RULES: dict[str, EvidenceRule] = {
     "eps_vitz_column_layout_measurement": EvidenceRule(
         direct_specific_components=("j40_removed_steering_column_set", "driver_footwell_firewall_and_wiring", "front_frame_horns_bumper_and_steering_area", "steering_and_suspension_linkages"),
         indirect_specific_components=("dashboard_lower_structure", "floor_pan_and_firewall", "floor_pan_rust_zones"),
-        notes="Existing cab/firewall, removed J40 column, and steering-box-side photos provide the vehicle-side EPS layout baseline; close this only with ruler photos, donor EPS mock-up, motor envelope, and column centerline checks.",
+        notes="Existing cab/firewall, removed J40 column, and steering-box-side photos provide the vehicle-side EPS layout baseline; close this only with ruler photos, donor EPS mock-up, motor envelope, General EPS Adapter datum points, and column centerline checks.",
+    ),
+    "eps_general_adapter_design_fabrication": EvidenceRule(
+        direct_specific_components=("driver_footwell_firewall_and_wiring", "dashboard_lower_structure", "floor_pan_rust_zones"),
+        indirect_specific_components=("front_frame_horns_bumper_and_steering_area",),
+        notes="Cab/firewall and dash-structure photos support the General EPS Adapter design context, but final datum plate, firewall doubler, EPS saddle/clamp, clocking/spacer plates, shaft interfaces, and controller/fastener access need measured templates and dry-fit photos before fabrication.",
     ),
     "eps_vitz_support_bracket_design": EvidenceRule(
         direct_specific_components=("driver_footwell_firewall_and_wiring", "dashboard_lower_structure", "floor_pan_rust_zones"),
         indirect_specific_components=("front_frame_horns_bumper_and_steering_area",),
-        notes="Cab/firewall and dash-structure photos support bracket design context, but final support plates need measured templates and dry-fit photos before fabrication.",
+        notes="Cab/firewall and dash-structure photos support adapter support design context, but final support plates need measured templates and dry-fit photos before fabrication.",
     ),
     "eps_vitz_shaft_u_joint_adaptation": EvidenceRule(
         direct_specific_components=("front_frame_horns_bumper_and_steering_area", "steering_and_suspension_linkages"),
         indirect_specific_components=("driver_footwell_firewall_and_wiring",),
-        notes="Steering-box/input and linkage photos provide direct vehicle-side shaft-routing context; release still needs donor shaft, U-joint, spline, engagement, and phasing evidence.",
+        notes="Steering-box/input and linkage photos provide direct vehicle-side shaft-routing context; release still needs donor shaft, U-joint, spline, engagement, phasing, and replaceable General EPS Adapter shaft-interface evidence.",
     ),
     "eps_vitz_controller_mount_and_wiring": EvidenceRule(
         direct_specific_components=("fuse_distribution_and_power_hardware", "driver_footwell_firewall_and_wiring", "firewall_and_dash_wiring"),
@@ -484,7 +504,8 @@ RULES: dict[str, EvidenceRule] = {
     "tub_refit_rubber_hardware_shim_stack": EvidenceRule(
         direct_specific_components=("body_mount_and_crossmember_detail", "floor_seam_and_body_mount_rust"),
         indirect_specific_components=("frame_and_mount_points", "frame_floor_underside_and_lines"),
-        notes="Mount-detail and tub-side body-mount rust photos give refit context; May 17 adds current tub-side captive/mount corrosion details, but final rubber/sample dimensions still need physical measurement.",
+        notes="Mount-detail, tub-side body-mount rust, and the additional flat-rubber footprint measurement photos now give refit and pad-sizing context; final rubber/sample dimensions still need side/station labels, sleeve checks, and dry-stack confirmation.",
+        direct_media_ids=RUBBER_FLAT_MEASUREMENT_20260517_MEDIA_IDS,
     ),
 }
 

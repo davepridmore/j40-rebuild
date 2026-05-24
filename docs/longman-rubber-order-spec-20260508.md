@@ -28,8 +28,8 @@ Steel body-mount washers/cups, sleeves, shims, bolts, and fasteners are not part
 | `BM-ISO-SM` | Main body isolator pad, small stations | `10` | `2` | Square pad `70 x 70 x 22 mm`. Flat parallel faces; light edge radius/chamfer. | Leave undrilled for quote, or mark centre only. Final hole = measured crush-sleeve OD + `0.5-1.0 mm`. | Solid EPDM or NR/SBR, Shore A `60 +/-5`. |
 | `BM-ISO-LG` | Main body isolator pad, large stations | `2` | `1` | Square pad `80 x 80 x 24 mm`. Flat parallel faces; light edge radius/chamfer. | Leave undrilled for quote, or mark centre only. Final hole = measured crush-sleeve OD + `0.5-1.0 mm`. | Same batch/type as `BM-ISO-SM` where possible. |
 | `FS-OVAL` | Two-hole front-support isolator pad | `2` | `0` | Oval/capsule pad `96 x 64 x 15 mm`, two `12 mm` through holes at `64 mm` centres, clean hole edges. Rectangular relief `36 x 18 mm` with `R3` corners only if physical sample confirms it is needed. | Confirm whether old insert/boss is bonded, loose, or just washer imprint before production. | Solid EPDM or NR/SBR, Shore A `60 +/-5`. |
-| `FS-STRIP-L` | Front-support left strip / liner | Hold | Hold | Candidate strip only. Quote from stock envelope `165 x 40 mm` if the physical front-support carrier confirms this piece exists. Base thickness `8 mm`; raised/load pad height `14 mm`. Final outline and holes come from physical trace, not photo. | M10 clearance holes `11 mm` or slots `11 x 16 mm` only where carrier confirms. | Solid EPDM or NR/SBR strip, Shore A `60 +/-5`. |
-| `FS-STRIP-R` | Front-support right strip / liner | Hold | Hold | Candidate strip only. Mirror `FS-STRIP-L` only if the right carrier proves symmetric. Same stock envelope and section dimensions for quote after physical confirmation. | Trace right carrier and mark handedness before cutting. | Same batch/type as left strip. |
+| `FS-STRIP-L` | Underfloor body-support strip liner, left | `1` | `0` | Flat strip `165 x 38 x 8 mm`. Plain rubber strip only: smooth edges, flat parallel faces, no stepped section. | No through-holes in rubber by default. Reuse or trace the slotted steel retainer separately if needed. | Solid EPDM or NR/SBR strip, Shore A `60 +/-5`. |
+| `FS-STRIP-R` | Underfloor body-support strip liner, right | `1` | `0` | Same rubber spec as left: flat strip `165 x 38 x 8 mm`. Use the same blank unless the install sample proves a handed end trim. | Same retainer rule as left; do not invent slot geometry in the rubber. | Same batch/type as left strip. |
 | `BUMP-60010-LONG` | Long axle-to-chassis bump stop: front-left and both rear | `3` | `0` | Toyota-style progressive bump stop, free height `70 +/-1 mm`. Use two-ear steel saddle/backing plate, tapered/radiused rubber body, and flat rectangular strike face. Quote one first article before the other two. | Hole pitch, hole size/thread, base footprint, and strike-face offset come from vehicle bracket measurements. | NR/SBR bump-stop rubber Shore A `70 +/-5`, bonded/captive to new coated steel saddle. |
 | `BUMP-60020-SHORT` | Short right-front axle-to-chassis bump stop | `1` | `0` | Same style as long stop, but free height `60 +/-1 mm`. Do not make this at `70 mm` unless a vehicle full-bump test deliberately releases trimming. | Same vehicle-controlled hole/base/contact rules as long stop. | Same compound family as long stops. |
 | `BODY-LINER-FULL-WIDTH-HOLD` | Long/full-width flat body or panel liner strips | Hold | Hold | Not yet captured as orderable pieces. Quote only after the actual strips are found or the body/chassis station proves a continuous flat anti-squeak liner is required. | Needs full-length trace, holes/slots, side/orientation labels, and installed location photos. | EPDM or NR/SBR flat strip, hardness by function after location is confirmed. |
@@ -114,14 +114,12 @@ For every body-mount station:
 - Photo/measurement of any metal insert, boss, or relief.
 - Confirmation whether the rectangular relief is functional or only deformation from the old stack.
 
-### Front Strip/Liner Pair
+### Underfloor Body-Support Strip Pair
 
-- Trace left and right old rubber/carrier on card or acetate.
-- Mark orientation, side, front/rear, up/down.
-- Measure total trace length, width at three points, base thickness, raised-pad height.
-- Mark hole centres from the steel carrier, not from torn rubber.
-- Confirm if rubber was bonded to steel; if bonded, send cleaned carrier photos.
-- Confirm these are real front-support liner pieces, not bump-stop fragments or loose packing pieces.
+- Use the released rubber size `165 x 38 x 8 mm` as the first-article basis.
+- Mark orientation, side, and any local end trim only after the first dry-fit on the actual crossmember landing.
+- Reuse the original slotted steel retainers if they are serviceable; if not, trace them directly before remaking steel.
+- Do not punch holes or slots through the rubber unless the installed sample proves the original rubber itself was pierced.
 
 ### Long / Full-Width Flat Liners
 

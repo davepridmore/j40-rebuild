@@ -1,6 +1,6 @@
 # Bilal Ganj Detailed Size Specs
 
-Date: 2026-04-15  
+Date: 2026-05-22  
 Use with: `bilal-ganj-master-shopping-list.md` + `bilal-ganj-mechanic-checklist.md`
 
 ## 0) Age / Condition Acceptance Matrix
@@ -14,7 +14,7 @@ Use with: `bilal-ganj-master-shopping-list.md` + `bilal-ganj-mechanic-checklist.
 | 33, 44, 45, 46, 47 | OME/EMU quote items | `NEW_GENUINE_ONLY` |
 | 39 | Ignition lock security | `SERVICE_OR_NEW` (no worn loose used lock) |
 | part_cabin_compact_fuse_boxes | Compact cabin fuse boxes | `NEW_ONLY` or clean donor OEM-style only if terminals/lid are perfect |
-| 210 | EPS kit | `USED_TESTED_2005_2011_SCP90_NCP90_ONLY` (bench test mandatory) |
+| 210 | EPS kit | `USED_TESTED_2005_2011_SCP90_NCP90_ONLY` (bench test and General EPS Adapter geometry photos mandatory) |
 | 211 | Steering bushings | `NEW_ONLY` |
 
 Relay/fuse hardware already bought remains valid for the relay block only. Cabin/interior car fuse boxes are a separate open buy item.
@@ -137,7 +137,7 @@ Quantity: **1 complete matched EPS kit**. Do not split the column, EPS ECU/contr
 
 ECU/controller clarification: the J40 has no engine/body ECU and does not need one for this route, but the donor EPS system still needs its own matched EPS ECU/controller unless the column has seller-proven integrated control. Buy only a matched set from one donor vehicle. Do not mix a column from one car with an ECU/controller from another car unless the seller can prove the pair works together on the bench. Donor pigtails are for connector identification and bench testing only; final EPS power, ground, ignition-trigger, protection, and loom wiring must use new automotive cable, terminals, sleeving, and fuse protection.
 
-Installation planning is now tracked separately in `docs/eps-vitz-conversion-fabrication-plan.md`: J40 column layout, EPS support bracket/cradle, shaft/U-joint adaptation, controller mounting, protected wiring, and validation must all close before road use.
+Installation planning is now tracked separately in `docs/eps-vitz-conversion-fabrication-plan.md`: J40 column layout, the new General EPS Adapter, shaft/U-joint adaptation, controller mounting, protected wiring, and validation must all close before road use. Donor brackets/support plates are measured references only; the final J40 installation is released from a fabricated adapter mock-up with a vehicle-side datum plate, firewall doubler/spreader, EPS saddle/clamp, clocking/spacer plates, replaceable shaft interfaces, and serviceable fastener/controller access.
 
 | Must Be Included In The Kit | Scout Check |
 | --- | --- |
@@ -154,6 +154,7 @@ Installation planning is now tracked separately in `docs/eps-vitz-conversion-fab
 | Firewall support bracket/plate | Included if donor setup has one; photograph if missing |
 | Fasteners/clamps supplied with donor column | Keep with kit if available |
 | Part-number labels | Column and ECU labels readable enough to photograph |
+| Donor bracket geometry for adapter reference | Photograph hole spacing, saddle/clamp shape, motor clocking, and shaft centerline offsets; not assumed bolt-on J40 fit |
 
 Mandatory bench test before payment:
 - Power the unit and rotate lock-to-lock both directions.
@@ -182,6 +183,8 @@ Market capture at stall:
 - Overall column length, shaft end to shaft end: `________`
 - Motor/gearbox widest clearance envelope: `________`
 - Column body OD / mount bracket spacing: `________`
+- Donor bracket hole spacing and saddle/clamp shape for General EPS Adapter reference: `________`
+- Input/output shaft centerline offset relative to donor bracket faces: `________`
 - Connector count and pin count: `________`
 - Seller stall/contact and return window: `________`
 
@@ -191,6 +194,7 @@ Photos/video required before buying:
 - Every connector/pigtail
 - Input and output spline ends
 - Brackets/firewall support
+- Bracket hole spacing, saddle/clamp area, motor clocking faces, and shaft centerline offsets for the General EPS Adapter mock-up
 - Short bench-test video showing assisted rotation both directions
 
 Price guidance:
@@ -199,6 +203,7 @@ Price guidance:
 - Total value range: `PKR 54,000-136,000`
 - Working negotiation midpoint / total target: `PKR 90,000`
 - Missing brackets/shafts/connectors reduce value sharply; do not pay complete-kit price for a partial bundle.
+- General EPS Adapter fabrication labour/material top-up is not included in this donor-kit price; release it after the adapter mock-up and stock check.
 
 ## 5) Ironman Foamcell Suspension Kit - Receipt Check
 

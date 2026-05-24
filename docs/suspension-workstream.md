@@ -1,11 +1,12 @@
 # Suspension Workstream - Ironman Foam Cell Kit
 
-- Updated: 2026-05-08
+- Updated: 2026-05-24
 - Workstreams: `steering_brakes_suspension`, `suspension_upgrade`
 - Current state: main Ironman kit received; separate front damper pair pending
 - Active path: Ironman Foam Cell medium suspension kit for Toyota Land Cruiser 40 Series
 - Order evidence: `data/manual/procurement_queue.csv`, `data/manual/orders_receipts_audit_queue.csv`, `data/manual/workstream_status.csv`
 - Merged brake execution sheet: [suspension-brake-merged-work-plan.md](suspension-brake-merged-work-plan.md)
+- Comms refresh: 2026-05-24 WhatsApp import found no new verified `24635FE` delivery signal; Gmail verification is blocked until Google OAuth is re-authorized. The same day Google Photos picker plus catalog follow-up moved rear wheel cylinders back to the standard four-cylinder J40/BJ40 route, with sample/count verification still required before payment.
 
 ## Decision
 

@@ -9,7 +9,7 @@ This is no longer an active workstream. The old Local Market lane was removed be
 | Former local-market item | Current owner | Control reference |
 | --- | --- | --- |
 | Compact cabin fuse add-on | `electrical_reset` | [cabin-fuse-box-acquisition-20260503.md](cabin-fuse-box-acquisition-20260503.md) |
-| EPS donor kit quote | `eps_vitz_upgrade` | [eps-bilal-ganj-kit-checklist.md](eps-bilal-ganj-kit-checklist.md) |
+| EPS donor kit quote and General EPS Adapter release | `eps_vitz_upgrade` / `fabrication_handoff` | [eps-bilal-ganj-kit-checklist.md](eps-bilal-ganj-kit-checklist.md) and [eps-vitz-conversion-fabrication-plan.md](eps-vitz-conversion-fabrication-plan.md) |
 | Captive/clip/rivnut hardware | `body_chassis` / `chassis_rubbers` | `data/manual/procurement_queue.csv` rows for Kit C and body-mount hardware |
 | Retaining clips and cotters | `body_chassis` | `part_body_retaining_clips_cotter_pin_pack` |
 | Firewall and wiring grommets | `electrical_reset` | `part_firewall_grommet_set_small_medium`, `part_firewall_grommet_set_large_power` |

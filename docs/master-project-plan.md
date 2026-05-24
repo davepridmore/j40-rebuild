@@ -112,7 +112,7 @@ Retired 2026-05-13: `04c_local_market_procurement` has been removed as a separat
 - Replace standard brake service parts as baseline work while preserving exact-part gates: front disc service parts by fitted conversion hardware, rear drum/cable parts by old samples and drum-open measurements, and hydraulic hoses/lines by fitting style, bracket retention, and old-sample/free length.
 - Do not final-close rear suspension/brakes until the rear differential/axle inspection has recorded oil/debris condition, breather condition, carrier sealing, axle seals/bearings, gear condition, and post-fill leak checks.
 - Resolve brake hose slack, parking-brake cable route, rear hard-line routing, breather slack, steering damper clearance, shackle angle, ride height, alignment, brake bleed/adjustment, and post-install torque checks before road use.
-- Current EPS route remains column-assist, not hydraulic, and does not require engine removal.
+- Current EPS route remains column-assist, not hydraulic, and does not require engine removal. The J40 fitment now uses the General EPS Adapter route: a fabricated datum plate/firewall doubler/EPS saddle/clocking-spacer/replaceable shaft-interface package, with donor brackets treated as reference geometry rather than assumed bolt-on parts.
 
 ### Interior and Weatherproofing
 
