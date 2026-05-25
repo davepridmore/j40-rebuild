@@ -1,6 +1,6 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-05-24 17:34:39
+- Generated: 2026-05-25 01:45:57
 - Total media files indexed: 756 (745 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
