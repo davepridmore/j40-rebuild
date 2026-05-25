@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T22:21:49+00:00",
+  "generated_at": "2026-05-25T08:52:57+00:00",
   "profiles": [
     {
       "profile_server": "whatsapp-number-1",
@@ -19,20 +19,20 @@
       "target_number": "+923099351940",
       "status": "disconnected",
       "total_chats": 378,
-      "selected_chats": 8,
-      "messages_imported": 528,
-      "media_imported": 90,
-      "images_imported": 74,
-      "videos_imported": 10
+      "selected_chats": 9,
+      "messages_imported": 547,
+      "media_imported": 100,
+      "images_imported": 81,
+      "videos_imported": 11
     }
   ],
   "totals": {
     "chat_candidates": 380,
-    "selected_chats": 10,
-    "messages_imported": 1700,
-    "media_imported": 255,
-    "images_imported": 205,
-    "videos_imported": 29
+    "selected_chats": 11,
+    "messages_imported": 1719,
+    "media_imported": 265,
+    "images_imported": 212,
+    "videos_imported": 30
   },
   "outputs": {
     "chat_candidates_csv": "data/manual/whatsapp_j40_chat_candidates.csv",

@@ -1,0 +1,186 @@
+[
+  {
+    "message_id": "19e5e241f244eee6",
+    "thread_id": "19e5e241f244eee6",
+    "date_utc": "2026-05-25T07:58:04Z",
+    "from": "DARAZ Pakistan <noreply@support.daraz.pk>",
+    "to": "pridmoredave@gmail.com",
+    "subject": "Yay, your Order 243701549680938 is confirmed!",
+    "snippet": "Yay, your order is confirmed! Yay, your order is confirmed! Dear pridmoredave, Thank you for shopping with Daraz. We have received your Order 243701549680938 on 25 May 2026 15:57. We&#39;re excited for",
+    "body_excerpt": "Yay, your Order #243701549680938 is confirmed! Yay, your order is confirmed! --> Yay, your order is confirmed! Dear pridmoredave, Thank you for shopping with Daraz. We have received your Order 243701549680938 on 25 May 2026 15:57. We're excited for you to receive your order and will notify you once it is on its way! However, you can still amend your order by clicking the ' Manage My Order ' button below. Please stay active in the app messages section, as the seller may contact you about your order. We hope you had a pleasant experience. Stay safe! Yours sincerely, Daraz Delivery Details Name: pridmoredave Address: [redacted] Phone: [redacted] Email: [redacted] Parcel 1 Sold by:Vintage Jeep Parts. Delivered on: 28 May - 05 June 2026 FJ40 BJ-40 TOYOTA LAND CRUISER HAND BRAKE CABLE Rs 5,600.00 Quantity: 1 Subtotal: Rs 5,600.00 Shipping fee: Rs 195.00 Total Saving: Rs (0.00) Total (inclusive of tax, if any): Rs 5,795.00 Shipping option: STANDARD Paid by: Credit or Debit Card Note: If you have selected Cash on Delivery as your payment method at checkout, an additional handling fee has been added to your total payment amount. Learn More NEED HELP? WE ARE HERE FOR YOU. HELP CENTER Download The App Help Center | Contact Us Prices and stock availability on Daraz are provided for information only and do not form legally binding offers by Daraz or its third-party sellers. Daraz does not guarantee the accuracy or timeliness of this information, which is subject to change without notice. For more information, please see our Terms & Conditions of Sale . This is an automatically generated email from our subscription list. Please do not reply to this email. unsubscribe ./-->",
+    "classification": {
+      "category": "supplier_communication",
+      "subcategory": "receipt_payment",
+      "status": "payment_or_receipt_signal",
+      "project_hits": [
+        "brake",
+        "fj40",
+        "land cruiser",
+        "toyota"
+      ],
+      "supplier_hits": [
+        "daraz"
+      ],
+      "order_hits": [
+        "confirmed",
+        "delivered",
+        "delivery",
+        "order",
+        "paid",
+        "payment"
+      ],
+      "exclude_hits": [],
+      "amount_pkr": "5795",
+      "codes": [
+        "243701549680938"
+      ],
+      "reason": "supplier_order_signal"
+    }
+  },
+  {
+    "message_id": "19e5e217925bd4c7",
+    "thread_id": "19e5e217925bd4c7",
+    "date_utc": "2026-05-25T07:55:11Z",
+    "from": "PakWheels <store@pakwheels.com>",
+    "to": "pridmoredave@gmail.com",
+    "subject": "PakWheels AUTOSTORE Order # 1075298 is Confirmed!",
+    "snippet": "Post an Ad for FREE Sell Your Car Dear David Pridmore, Thank you for your recent purchase from PakWheels.com! We have received your Order #1075298 on 25 May 2026 01:53. We&#39;re getting your order",
+    "body_excerpt": "Post an Ad for FREE Sell Your Car Dear David Pridmore, Thank you for your recent purchase from PakWheels.com! We have received your Order #1075298 on 25 May 2026 01:53 . We’re getting your order ready and will let you know once it’s on the way. We hope you enjoy shopping with us and hope to see you again real soon! 📌 All orders placed until 22nd May will be delivered before Eid. Orders placed after this cut-off date will be delivered after the Eid holidays. Order Summary: Product Image Product Name Unit Price Quantity Total Toyota Land Cruiser FJ40 MK Rear Brake Shoe - K-2255-N/Y PKR 6400.0 3 PKR 19200 Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM PKR 3520.0 1 PKR 3520 ULTIMA Master Brake Cylinder For Toyota FJ40 1975-1990 - UFM-1041 PKR 6000.0 1 PKR 6000 Items Total PKR 28720.0 Shipping Charges PKR 878.0 Sales tax 2% PKR 592.0 Grand Total PKR 30190.0 *If your order is Cash On Delivery , please make sure to have an exact amount of cash ready. 🔁 RETURNS & EXCHANGES To return or exchange an item, please review our policy: https://www.pakwheels.com/accessories-spare-parts/refunds-returns-policy/ 📦 MULTIPLE SHIPMENTS NOTICE If your order contains multiple items from different sellers, they may be shipped separately. You could receive more than one package for this order. ⏳ DELIVERY TIME Your order is expected to be delivered within 5 – 7 working days. Please note, delays may occur in case of weather disruptions or natural events. 🤝 WE'RE HERE TO HELP If you have any questions or concerns, feel free to reach out to us: UAN: 042-111-943-357 Email: [redacted] Warm regards, PakWheels AutoStore Team Search Your Next Car | Post an Ad for FREE! This is an automatically generated email, please do not reply to this email. If you need any help, please Contact Us PakWheels Head Office, 3rd Floor, Saeed Alam Tower, 37-Commercial Zone, Liberty Market, Lahore, Pakistan",
+    "classification": {
+      "category": "project_update",
+      "subcategory": "shipment_update",
+      "status": "shipment_tracking_signal",
+      "project_hits": [
+        "brake",
+        "clutch",
+        "fj40",
+        "land cruiser",
+        "toyota"
+      ],
+      "supplier_hits": [],
+      "order_hits": [
+        "confirmed",
+        "delivered",
+        "delivery",
+        "order",
+        "review",
+        "shipped"
+      ],
+      "exclude_hits": [],
+      "amount_pkr": "30190",
+      "codes": [
+        "FM-1246",
+        "UFM-1041"
+      ],
+      "reason": "project_order_signal"
+    }
+  },
+  {
+    "message_id": "19e5e24ab832b0b7",
+    "thread_id": "19e5d46b4dcdcdd1",
+    "date_utc": "2026-05-25T07:58:15Z",
+    "from": "<alerts.pk@sc.com>",
+    "to": "<pridmoredave@gmail.com>",
+    "subject": "Standard Chartered: Transaction Alert",
+    "snippet": "Dear Client, Alerts May 25 2026, 12:58 PM Your Standard Chartered Debit Card no. 52903xxxxxxxx8509 has been used to make the following transaction : Amount : PKR 5795.00 Date : 25-05-26 at : Daraz. Don",
+    "body_excerpt": "Alerts CASA Dear Client, Alerts May 25 2026, 12:58 PM Your Standard Chartered Debit Card no. 52903xxxxxxxx8509 has been used to make the following transaction : Amount : PKR 5,795.00 Date : 25-05-26 at : Daraz. Don't miss out on the latest Standard Chartered promotions & benefits. Visit www.sc.com/pk to find out more! Thank you Standard Chartered Bank (Pakistan) Limited To unsubscribe or modify these alerts, please login to your Online Banking account and select Alerts and SMS Banking. This is a system-generated e-mail and does not require an authorised signature. Please do not reply to the sender of this email. Please note Standard Chartered Bank will never ask you for your account details. To learn more on important legal notices data protection , our privacy policy and how you can avoid online fraud please visit our website on online security tips at www.sc.com/pk",
+    "classification": {
+      "category": "product",
+      "subcategory": "order_quote_tracking",
+      "status": "order_or_project_signal",
+      "project_hits": [],
+      "supplier_hits": [
+        "daraz"
+      ],
+      "order_hits": [],
+      "exclude_hits": [],
+      "amount_pkr": "5795",
+      "codes": [],
+      "reason": "supplier_order_signal"
+    }
+  },
+  {
+    "message_id": "19e5e12944ac7b38",
+    "thread_id": "19e5e12944ac7b38",
+    "date_utc": "2026-05-25T07:38:54Z",
+    "from": "DARAZ Pakistan <noreply@support.daraz.pk>",
+    "to": "pridmoredave@gmail.com",
+    "subject": "Thank You for Choosing Daraz 🛍️ How Was Your Experience? 😊",
+    "snippet": "Dear David Pridmore, Thank you for choosing Daraz as your preferred platform! We would love to hear about your recent shopping experience with Daraz. Share with us what went well or could have been",
+    "body_excerpt": "96 Dear David Pridmore, Thank you for choosing Daraz as your preferred platform! We would love to hear about your recent shopping experience with Daraz. Share with us what went well or could have been done better in this 2-minute survey.Simply click on the rating on the question below to begin. How likely are you to recommend DARAZ to a friend or colleague? Kindly select a rating on a scale of 0 (Highly unlikely) to 10 (Highly likely) Start Survey Thank you for your feedback. Sincerely, Daraz team Download The App Help Center | Contact Us | Cancel Subscription Prices and stock availability on Daraz are provided for information only and do not form legally binding offers by Daraz or its third-party sellers. Daraz does not guarantee the accuracy or timeliness of this information, which is subject to change without notice. For more information, please see our Terms & Conditions of Sale . This is an automatically generated email from our subscription list. Please do not reply to this email.",
+    "classification": {
+      "category": "supplier_communication",
+      "subcategory": "post_purchase_feedback",
+      "status": "feedback_requested",
+      "project_hits": [],
+      "supplier_hits": [
+        "daraz"
+      ],
+      "order_hits": [
+        "feedback"
+      ],
+      "exclude_hits": [],
+      "amount_pkr": "0",
+      "codes": [],
+      "reason": "supplier_order_signal"
+    }
+  },
+  {
+    "message_id": "19e5dc7a17419c72",
+    "thread_id": "19e5dc7a17419c72",
+    "date_utc": "2026-05-25T06:17:02Z",
+    "from": "AliExpress <ae-best-wishes-notify26@selections.aliexpress.com>",
+    "to": "pridmoredave@gmail.com",
+    "subject": "Wait for it... 5% off tech gadgets!",
+    "snippet": "Don&#39;t miss out on these hot tech deals ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
+    "body_excerpt": "96 Don't miss out on these hot tech deals ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ . -42% PKR2,689 PKR1,558 . . -46% PKR27,283 PKR14,731 . . -42% PKR2,130 PKR1,237 View more . . -5% PKR14,418 . . -42% PKR2,142 . . -27% PKR409 . . -57% PKR2,978 . . -35% PKR1,234 . . -50% PKR1,675 . . -50% PKR782 . . -30% PKR431 . . . PKR1,155 . . -19% PKR5,495 . . . PKR6,446 . . . PKR4,931 . . -27% PKR668 . . . PKR8,704 . . -5% PKR1,374 . . -40% PKR8,233 . . -50% PKR9,366 . . . PKR4,188 . . -30% PKR1,025 . . . PKR4,026 . . -52% PKR564 . View more . Popular categories . Home . Electronics . Phones Beauty . Sports . Toys Prices, deals and availability shown in this email reflect offers at send time and are subject to change. Please note that shipping fees are not included. Visit the product page for the latest info. Download to get app-only deals This email was sent to pridmore****@gmail.com You are receiving this email because you are a registered member of www.AliExpress.com. If you don't want to receive marketing emails in the future, please unsubscribe Read our Privacy Policy and Terms of Use if you have any questions. AliExpress Service Center Alibaba.com Singapore E-Commerce Private Limited, c/o 26/F Tower One, Times Square, 1 Matheson Street, Causeway Bay, Hong Kong",
+    "classification": {
+      "category": "product",
+      "subcategory": "order_quote_tracking",
+      "status": "order_or_project_signal",
+      "project_hits": [],
+      "supplier_hits": [
+        "aliexpress"
+      ],
+      "order_hits": [],
+      "exclude_hits": [
+        "ba.com"
+      ],
+      "amount_pkr": "27283",
+      "codes": [
+        "PKR409",
+        "PKR782",
+        "PKR431",
+        "PKR668",
+        "PKR564"
+      ],
+      "reason": "supplier_order_signal"
+    }
+  },
+  {
+    "message_id": "19e58ebad8349a2b",
+    "thread_id": "19e58ebad8349a2b",
+    "date_utc": "2026-05-24T07:38:19Z",
+    "from": "DARAZ Pakistan <noreply@support.daraz.pk>",
+    "to": "pridmoredave@gmail.com",
+    "subject": "Thank You for Choosing Daraz 🛍️ How Was Your Experience? 😊",
+    "snippet": "Dear David Pridmore, Thank you for choosing Daraz as your preferred platform! We would love to hear about your recent shopping experience with Daraz. Share with us what went well or could have been",
+    "body_excerpt": "96 Dear David Pridmore, Thank you for choosing Daraz as your preferred platform! We would love to hear about your recent shopping experience with Daraz. Share with us what went well or could have been done better in this 2-minute survey.Simply click on the rating on the question below to begin. How likely are you to recommend DARAZ to a friend or colleague? Kindly select a rating on a scale of 0 (Highly unlikely) to 10 (Highly likely) Start Survey Thank you for your feedback. Sincerely, Daraz team Download The App Help Center | Contact Us | Cancel Subscription Prices and stock availability on Daraz are provided for information only and do not form legally binding offers by Daraz or its third-party sellers. Daraz does not guarantee the accuracy or timeliness of this information, which is subject to change without notice. For more information, please see our Terms & Conditions of Sale . This is an automatically generated email from our subscription list. Please do not reply to this email.",
+    "classification": {
+      "category": "supplier_communication",
+      "subcategory": "post_purchase_feedback",
+      "status": "feedback_requested",
+      "project_hits": [],
+      "supplier_hits": [
+        "daraz"
+      ],
+      "order_hits": [
+        "feedback"
+      ],
+      "exclude_hits": [],
+      "amount_pkr": "0",
+      "codes": [],
+      "reason": "supplier_order_signal"
+    }
+  }
+]

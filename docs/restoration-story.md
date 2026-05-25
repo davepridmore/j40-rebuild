@@ -6,10 +6,10 @@
 - Relevant chat messages indexed: 590
 - Relevant media items indexed: 79
 - Evidence sources in use: Akbar Khan (383), Fj40 (207)
-- Confirmed restoration spend so far: PKR 969,213
+- Confirmed restoration spend so far: PKR 1,078,692
 - Confirmed admin spend tracked separately: PKR 16,365
 - Quoted but not confirmed as purchased: PKR 7,860
-- Purchased / planned items still missing prices: 52
+- Purchased / planned items still missing prices: 78
 
 ## Main Workstreams
 
@@ -100,13 +100,21 @@
 - 2026-05-02 `tools` 3 pc mini wire brush set - brass, nylon, stainless steel bristles x2: PKR 561
 - 2026-05-02 `tools` Safety goggles / protective glasses for grinding and cleaning: PKR 764
 - 2026-05-02 `parts` Jubilee hose clip assortment - 10 pc fuel line/diesel/petrol/coolant clamp packs x3: PKR 2,390
-- 2026-05-02 `parts` HB Body U900 cavity wax spray 400ml: PKR 4,998
+- 2026-05-02 `parts` HB Body U900 cavity wax spray 400ml x2: PKR 4,998
 - 2026-05-04 `tools` Pipe Bender 180 tube bender - 3/8 in, 1/4 in, 5/16 in: PKR 4,499
 - 2026-05-04 `parts` 2meter Clear PVC Hose Tube pipe ID7mm OD10mm transparent vinyl tubing: PKR 227
 - 2026-05-04 `parts` Safety Black Disposable Nitrile gloves 100 PCs Box - black large: PKR 2,333
 - 2026-05-04 `tools` Harden Mini Tube Cutter 3-22mm: PKR 1,380
 - 2026-05-04 `tools` PARD Double Flaring and Cutting Tool Set - 4-16mm: PKR 18,210
+- 2026-05-23 `tools` Metric flare-nut / brake-line wrench set: PKR 1,970
 - 2026-05-08 `tools` Ar-CO2 Canister: PKR 42,362
+- 2026-05-08 `parts` Chassis coating masking pack - Ultra-cloth solvent-safe wipes and masking tape: PKR 7,099
+- 2026-05-11 `parts` Waterproof 5-pin 40A automotive relay pack - 5PIN 40A DC12V x6: PKR 8,196
+- 2026-05-18 `tools` Almiraj INGCO air and cleaning setup - ACS112501 compressor, AH1151 hose, ABG081-3 blow gun, ATG0601 tire inflator, AWG1001 washing gun, HGVC02 gloves, HPWR12008 pressure washer: PKR 83,549
+- 2026-05-18 `tools` Epoxy Resin Mask Respirator Industrial Safety Mask for Epoxy Resin Art Workers Safety Chemical Anti-Dust Anti-Allergy double Filter: PKR 946
+- 2026-05-18 `tools` Safety Goggle Safety Protective Glasses Goggles Anti Splash Dust Proof Work Lab Eyewear Eye Protection Industrial Research Safety Glasses Clear Lens Multi-function Anti-Fog Antisand Windproof Dust Resistant: PKR 869
+- 2026-05-23 `tools` Large-bore Nitto air hose for 1/2 inch impact wrench: PKR 4,720
+- 2026-05-23 `tools` Ingco Heavy duty cable cutter 250mm HHCCB0210: PKR 2,130
 
 ## Quote Watchlist
 
@@ -129,12 +137,12 @@
 - `planned` Carpet
 - `received` 1/2 inch 24 inch breaker bar, heavy duty
 - `planned` Toolbench / workbench
-- `researching` EPS market scout check - 2005-2011 SCP90/NCP90 complete kit
-- `planned` Fastener Kit C: Captive/clip/speed nut and weld/rivnut assortment - M6/M8
-- `planned` Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers
-- `planned` Body retaining clip pack - R-clips hairpins split pins circlips and small cotters
-- `planned` Body rubber/plastic bumpers isolators knobs and small spacers
-- Plus 32 more items in `data/manual/expenses.csv`
+- `received` Total TDP133501 Drill Press - 350W - 13mm
+- `received` Seasoned hardwood cribbing cut set - 8 blocks + 4 wedge chocks
+- `researching` EPS market scout check - 2005-2011 SCP90/NCP90 complete kit plus General EPS Adapter geometry
+- `planned` Fastener Kit C remaining: Captive/clip/speed nut and weld-nut assortment - M6/M8
+- `received` M6 and M8 threaded rivet nuts / rivnuts / nutserts - received
+- Plus 58 more items in `data/manual/expenses.csv`
 
 ## Notes
 
