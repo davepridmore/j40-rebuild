@@ -438,6 +438,10 @@ h1 {
   margin-top: 0.28rem;
 }
 
+.scout-file-field .item-links {
+  margin-top: 0.2rem;
+}
+
 .workstream-layout {
   display: grid;
   gap: 0.8rem;
@@ -1315,6 +1319,10 @@ th {
   min-width: 0;
 }
 
+.fabrication-package-row-no-visual {
+  grid-template-columns: 1fr;
+}
+
 .fabrication-visual-grid {
   display: grid;
   gap: 0.65rem;
@@ -1436,6 +1444,86 @@ th {
   margin: 0;
   min-width: 0;
   overflow-wrap: anywhere;
+}
+
+.fabrication-drawing-section {
+  display: grid;
+  gap: 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fffdf8;
+  padding: 0.55rem;
+  min-width: 0;
+}
+
+.fabrication-drawing-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.fabrication-drawing-heading strong {
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.fabrication-drawing-heading span {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.fabrication-drawing-grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  min-width: 0;
+}
+
+.fabrication-drawing-item {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8f6f1;
+  min-width: 0;
+}
+
+.fabrication-drawing-preview-link {
+  display: block;
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+.fabrication-drawing-image {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  padding: 0.35rem;
+}
+
+.fabrication-drawing-meta {
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.42rem 0.5rem;
+  min-width: 0;
+}
+
+.fabrication-drawing-title {
+  font-size: 0.78rem;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.fabrication-drawing-meta .item-link {
+  max-width: 100%;
 }
 
 .fabrication-file-rows {

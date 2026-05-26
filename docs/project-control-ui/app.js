@@ -1665,12 +1665,14 @@
     return `
       <article class="card pipe-requirements-card">
         <div class="detail-header">
-          <h3>Rubber / Shim Spec</h3>
+          <h3>Chassis Rubber Checklist</h3>
           <div class="chip-row">
+            ${chip("One rubber set")}
             ${chip("All dimensions mm")}
             ${chip("Shore A 60 +/-5")}
           </div>
         </div>
+        <p class="small-muted">This is the canonical rubber checklist. The Longman supplier sheet below repeats these same rubber IDs in quote/send-out format; it is not a second set to buy.</p>
         <p class="small-muted">Body/front-support rubbers: new black solid EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5. Main body isolators are now function-first custom square pads, not circular/register bushings, because the chassis/tub photos do not prove a shaped rubber socket. Steel cup/seat washers, sleeves, shims, bolts, and captive-thread repairs are separate from the Longman rubber order. Bump stops: public OEM/catalog sources confirm the Toyota part numbers, applications, and 70 mm / 60 mm height split, but not the Toyota mould drawing. Use a Toyota-style two-ear steel saddle/backing plate, tapered/radiused progressive rubber body, flat rectangular strike face, and vehicle bracket/contact measurements. Reject tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, washer stacks, simple cut blocks, or universal bump stops that do not match the axle contact point.</p>
         <p class="small-muted">Current supplier pack: <a href="../../docs/longman-rubber-order-spec-20260508.md">Longman rubber order spec</a>, <a href="../../data/manual/longman_rubber_order_specs.csv">Longman order CSV</a>, <a href="../../docs/chassis-rubbers-workstream.md">chassis rubbers workstream</a>.</p>
         <div class="table-wrap requirement-table-wrap">
@@ -2550,6 +2552,81 @@
     `;
   }
 
+  function fileLeafFromLink(link) {
+    const raw = cleanString((link && (link.url || link.label)) || "");
+    if (!raw) {
+      return "";
+    }
+    return raw.split("?")[0].split("#")[0].split("/").pop() || raw;
+  }
+
+  function drawingTitleFromLink(link, fallbackIndex) {
+    const leaf = fileLeafFromLink(link).replace(/\.(svg|dxf)$/i, "");
+    if (!leaf) {
+      return `Drawing ${fallbackIndex + 1}`;
+    }
+    return leaf.replace(/[_-]+/g, " ");
+  }
+
+  function packageDrawingItems(row) {
+    const svgLinks = Array.isArray(row && row.svg_links) ? row.svg_links.filter((link) => cleanString(link && link.url)) : [];
+    const dxfLinks = Array.isArray(row && row.dxf_links) ? row.dxf_links.filter((link) => cleanString(link && link.url)) : [];
+    const dxfByStem = new Map();
+    dxfLinks.forEach((link) => {
+      const stem = canonicalMediaStem(link.url || link.label);
+      if (stem && !dxfByStem.has(stem)) {
+        dxfByStem.set(stem, link);
+      }
+    });
+
+    return svgLinks.map((svgLink, index) => {
+      const stem = canonicalMediaStem(svgLink.url || svgLink.label);
+      return {
+        title: drawingTitleFromLink(svgLink, index),
+        svg: svgLink,
+        dxf: stem ? dxfByStem.get(stem) : null,
+      };
+    });
+  }
+
+  function renderPackageDrawingPreviews(row) {
+    const drawings = packageDrawingItems(row);
+    if (!drawings.length) {
+      return "";
+    }
+    return `
+      <div class="fabrication-drawing-section">
+        <div class="fabrication-drawing-heading">
+          <strong>SVG Drawing Previews</strong>
+          <span>${escapeHtml(`${drawings.length} SVG${drawings.length === 1 ? "" : "s"}`)}${row.dxf_links && row.dxf_links.length ? escapeHtml(` / ${row.dxf_links.length} DXF`) : ""}</span>
+        </div>
+        <div class="fabrication-drawing-grid">
+          ${drawings
+            .map((drawing, index) => {
+              const svgUrl = cleanString(drawing.svg && drawing.svg.url);
+              const dxfUrl = cleanString(drawing.dxf && drawing.dxf.url);
+              const title = cleanString(drawing.title) || `Drawing ${index + 1}`;
+              return `
+                <div class="fabrication-drawing-item">
+                  <a class="fabrication-drawing-preview-link" href="${escapeHtml(svgUrl)}" target="_blank" rel="noopener noreferrer">
+                    <img class="fabrication-drawing-image" loading="lazy" decoding="async" src="${escapeHtml(svgUrl)}" alt="${escapeHtml(title)} SVG drawing">
+                  </a>
+                  <div class="fabrication-drawing-meta">
+                    <strong class="fabrication-drawing-title">${escapeHtml(title)}</strong>
+                    <div class="item-links">
+                      ${renderItemLink({ url: svgUrl, label: "SVG" }, 0)}
+                      ${dxfUrl ? renderItemLink({ url: dxfUrl, label: "DXF", download: true }, 1) : ""}
+                    </div>
+                  </div>
+                </div>
+              `;
+            })
+            .join("")}
+        </div>
+      </div>
+    `;
+  }
+
   function visualUrlWithEmbed(url) {
     const cleaned = cleanString(url);
     if (!cleaned) {
@@ -2647,11 +2724,16 @@
   }
 
   function renderPackageDefinitionRows(row) {
+    const primaryCount = Array.isArray(row.primary_links) ? row.primary_links.length : 0;
+    const visualCount = Array.isArray(row.visual_links) ? row.visual_links.length : 0;
+    const dxfCount = Array.isArray(row.dxf_links) ? row.dxf_links.length : 0;
+    const svgCount = Array.isArray(row.svg_links) ? row.svg_links.length : 0;
     const definitions = [
       ["Requirement", `${cleanString(row.requirement_id) || "-"} · ${cleanString(row.title) || "-"}`],
       ["Package", cleanString(row.package_id) || "-"],
       ["System", formatToken(row.system || "") || "-"],
-      ["Linked files", `${cleanString(row.file_count) || 0}`],
+      ["Drawings", `${svgCount} SVG / ${dxfCount} DXF`],
+      ["Other files", `${primaryCount} docs/data${visualCount ? ` / ${visualCount} visual` : ""}`],
     ];
     return `
       <dl class="fabrication-definition-rows">
@@ -2689,10 +2771,11 @@
         <p class="small-muted">Use the embedded 3D view for assembly orientation, then download the package archive or individual PDF/DXF/SVG files for fabrication.</p>
         <div class="fabrication-package-list">
           ${rows
-            .map(
-              (row) => `
-                <section class="fabrication-package-row">
-                  ${renderPackageVisualPreviews(row)}
+            .map((row) => {
+              const visualPreviews = renderPackageVisualPreviews(row);
+              return `
+                <section class="fabrication-package-row ${visualPreviews ? "" : "fabrication-package-row-no-visual"}">
+                  ${visualPreviews}
                   <div class="fabrication-package-body">
                     <div class="fabrication-package-heading">
                       <div>
@@ -2711,17 +2794,18 @@
                         ? `<div class="fabrication-release-row"><strong>Notes</strong><span>${escapeHtml(row.notes || "")}</span></div>`
                         : ""
                     }
+                    ${renderPackageDrawingPreviews(row)}
                     <div class="fabrication-file-rows">
                       ${renderPackageDownload(row.archive_link)}
                       ${renderPackageLinks("3D Visual", row.visual_links)}
-                      ${renderPackageLinks("Primary", row.primary_links)}
-                      ${renderPackageLinks("DXF", row.dxf_links)}
-                      ${renderPackageLinks("SVG", row.svg_links)}
+                      ${renderPackageLinks("Docs + Data", row.primary_links)}
+                      ${renderPackageLinks("Cut DXF", row.dxf_links)}
+                      ${renderPackageLinks("SVG Drawings", row.svg_links)}
                     </div>
                   </div>
                 </section>
-              `
-            )
+              `;
+            })
             .join("")}
         </div>
       </article>
@@ -5110,6 +5194,51 @@
     return `<div><strong>${escapeHtml(label)}:</strong> ${escapeHtml(text)}</div>`;
   }
 
+  function fabricationDrawingFileSet(row) {
+    const partNumber = cleanString(row && (row.partNumber || row.part_number_or_code));
+    const route = cleanString(row && row.route);
+    if (!partNumber || !route || !partNumber.toLowerCase().endsWith(".dxf")) {
+      return null;
+    }
+    const svgName = partNumber.replace(/\.dxf$/i, ".svg");
+    const basePath = `../../data/manual/fabrication/${route}`;
+    return {
+      dxfName: partNumber,
+      svgName,
+      dxfUrl: `${basePath}/${partNumber}`,
+      svgUrl: `${basePath}/${svgName}`,
+    };
+  }
+
+  function fabricationDrawingPreviewImage(row) {
+    const files = fabricationDrawingFileSet(row);
+    if (!files) {
+      return null;
+    }
+    const subject = cleanString(row && row.item) || cleanString(row && row.id) || files.svgName;
+    return scoutReferenceImage(
+      files.svgUrl,
+      `${subject} drawing`,
+      cleanString(row && row.id).toLowerCase().replace(/[^a-z0-9_-]+/g, "_") || files.svgName.replace(/\.[^.]+$/, "")
+    );
+  }
+
+  function renderScoutFileField(row) {
+    const files = fabricationDrawingFileSet(row);
+    if (!files) {
+      return renderScoutField("File", row && row.partNumber);
+    }
+    return `
+      <div class="scout-file-field">
+        <strong>Files:</strong>
+        <div class="item-links">
+          ${renderItemLink({ url: files.svgUrl, label: "SVG" }, 0)}
+          ${renderItemLink({ url: files.dxfUrl, label: "DXF", download: true }, 1)}
+        </div>
+      </div>
+    `;
+  }
+
   function renderLongmanPipeHoseOrderTable(rows) {
     const sourceRows = Array.isArray(rows) ? rows : [];
     if (!sourceRows.length) {
@@ -5192,13 +5321,14 @@
     return `
       <article class="card">
         <div class="detail-header">
-          <h3>Longman Rubber Order Sheet</h3>
+          <h3>Longman Supplier Format</h3>
           <div class="chip-row">
             ${chip(`${sourceRows.length} lines`)}
-            ${chip("Custom order")}
+            ${chip("Same rubber IDs")}
+            ${chip("Custom quote")}
           </div>
         </div>
-        <p class="small-muted">Supplier-facing rubber rows only. Steel cup/seat washers, sleeves, shims, bolts, and washer inspection remain separate from this Longman order.</p>
+        <p class="small-muted">Supplier-facing version of the checklist above. Use these rows when sending the rubber quote pack to Longman; do not add these quantities on top of the checklist. Steel cup/seat washers, sleeves, shims, bolts, and washer inspection remain separate from this rubber order.</p>
         <div class="table-wrap">
           <table class="scout-market-order-table">
             <thead>
@@ -5329,7 +5459,7 @@
                   ${group.rows
                     .map(
                       (row) => {
-                        const rowImage = bestScoutOriginalImage(row) || scoutComponentImage(row);
+                        const rowImage = fabricationDrawingPreviewImage(row) || bestScoutOriginalImage(row) || scoutComponentImage(row);
                         const connectorText = groupMode === "pipes" ? scoutConnectorOrFittingText(row) : "";
                         return `
                           <tr>
@@ -5349,7 +5479,7 @@
                               ${renderScoutField("Connectors/fittings", connectorText)}
                             </td>
                             <td class="scout-notes-cell">
-                              ${renderScoutField("File", row.partNumber)}
+                              ${renderScoutFileField(row)}
                               ${renderScoutField("Route", row.route ? formatToken(row.route) : "")}
                               ${renderScoutField("Source", row.sourceBasis)}
                               ${renderScoutField("Check", row.action)}
@@ -5398,7 +5528,7 @@
                 .map(
                   (row) => `
                     <tr>
-                      ${renderInventoryImageCell({ item: row.item, image: row.image || scoutComponentImage(row) }, row.item || "Underlay image")}
+                      ${renderInventoryImageCell({ item: row.item, image: fabricationDrawingPreviewImage(row) || row.image || scoutComponentImage(row) }, row.item || "Underlay image")}
                       <td>
                         <strong>${escapeHtml(row.item || row.id || "-")}</strong>
                         <div class="small-muted">${escapeHtml(row.id || "")}</div>
@@ -5410,7 +5540,7 @@
                         ${renderScoutField("Material", row.material)}
                       </td>
                       <td class="scout-notes-cell">
-                        ${renderScoutField("File", row.partNumber)}
+                        ${renderScoutFileField(row)}
                         ${renderScoutField("Route", row.route ? formatToken(row.route) : "")}
                         ${renderScoutField("Action", row.action)}
                       </td>
