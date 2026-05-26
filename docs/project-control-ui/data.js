@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-25T13:53:37+05:00",
+  "generated_at": "2026-05-27T02:53:39+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -50,19 +50,19 @@ window.J40_DASHBOARD_DATA = {
     "workstreams_active": 13,
     "workstream_evidence_images": 786,
     "wiring_diagram_reference_images": 1,
-    "parts_open_rows": 77,
-    "parts_ordered_pending_delivery": 5,
-    "urgent_part_actions": 15,
-    "capture_data_tasks": 108,
-    "capture_data_tasks_now": 96,
-    "supply_rows_tracked": 280,
+    "parts_open_rows": 78,
+    "parts_ordered_pending_delivery": 9,
+    "urgent_part_actions": 19,
+    "capture_data_tasks": 106,
+    "capture_data_tasks_now": 94,
+    "supply_rows_tracked": 284,
     "selling_site_images_loaded": 88,
-    "whatsapp_j40_selected_chats": 11,
-    "whatsapp_j40_media_items": 265,
-    "whatsapp_j40_media_images": 212,
+    "whatsapp_j40_selected_chats": 12,
+    "whatsapp_j40_media_items": 267,
+    "whatsapp_j40_media_images": 214,
     "whatsapp_j40_media_videos": 30,
-    "other_build_reference_media": 187,
-    "other_build_reference_images": 167,
+    "other_build_reference_media": 189,
+    "other_build_reference_images": 169,
     "other_build_reference_videos": 20,
     "other_build_drop_zone_images": 0,
     "other_build_manual_reference_images": 61,
@@ -3323,8 +3323,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_fastener_kit_b_millat",
-          "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af",
-          "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the Millat M6/M8 bolt, nut, and washer portion of the body-panel/bracket hardware set. Receipt check still needs to verify exact lengths, quantities, and any local top-up for sizes that were not clean Millat matches. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
+          "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+          "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the Millat M6/M8 bolt, nut, and washer portion of the body-panel/bracket hardware set. Receipt check still needs to verify exact lengths, quantities, and any local top-up for sizes that were not clean Millat matches. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
           "links": [],
           "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
           "estimated_visible_count": "150-220 visible, likely 180 | 35-60 visible, likely 45 | 70-125 visible, likely 95",
@@ -4118,10 +4118,10 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "1.6 mm cold-rolled mild-steel sheet for heavier tub patch plates (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)",
                 "Fastener Kit C remaining: Captive/clip/speed nut and weld-nut assortment - M6/M8 (purchase_ready; delivery not_ordered; amount missing)",
+                "Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers (ordered_pending_delivery; delivery pending_delivery; amount missing)",
                 "Seam sealer (received; delivery received; amount confirmed)",
                 "Body specialty bracket and retainer plate repair/replacement pack (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Evapo-Rust 5 Litre Heavy Duty Rust Remover (received; delivery received; amount missing)",
-                "Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers (ordered_pending_delivery; delivery pending_delivery; amount missing)"
+                "Evapo-Rust 5 Litre Heavy Duty Rust Remover (received; delivery received; amount missing)"
               ]
             },
             {
@@ -21312,8 +21312,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_fastener_kit_a_millat",
-          "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af",
-          "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Gmail evidence shows both MTL order-received emails plus user payment follow-ups on 2026-04-22 and 2026-04-24. Covers the Millat M10/M12 bolt, nut, flat-washer, and lock-washer stock; sleeve/spacer cutting still waits for body-mount dry-stack measurements before final installation. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
+          "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+          "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Gmail evidence shows both MTL order-received emails plus user payment follow-ups on 2026-04-22 and 2026-04-24. Covers the Millat M10/M12 bolt, nut, flat-washer, and lock-washer stock; sleeve/spacer cutting still waits for body-mount dry-stack measurements before final installation. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
           "links": [],
           "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
           "estimated_visible_count": "150-220 visible, likely 180 | 35-60 visible, likely 45 | 70-125 visible, likely 95",
@@ -22169,8 +22169,8 @@ window.J40_DASHBOARD_DATA = {
                 "Body mount hardware kit bolts sleeves washers (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)",
                 "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "1.2 mm cold-rolled mild-steel sheet for tub skin/floor patch plates (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)",
-                "Body rubber/plastic bumpers isolators knobs and small spacers (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves (ordered_pending_delivery; delivery pending_delivery; amount missing)",
+                "1.2 mm cold-rolled mild-steel sheet for tub skin/floor patch plates (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)"
               ]
             },
             {
@@ -26393,7 +26393,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "electrical",
           "current_state": "queued",
           "objective": "Complete baseline harness termination, grounding, and fuse/relay validation.",
-          "blocker_summary": "2 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain.",
+          "blocker_summary": "4 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain.",
           "gate_to_close": "Start/charge/lights/horn/wipers/gauges baseline passes functional checks.",
           "key_procurement_actions": "Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys.",
           "evidence_signal": "electrical_rework_photos=18, wiring_diagram_references=1, diagram_reconciliation_rows=17"
@@ -26460,7 +26460,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP03 \u00b7 Electrical Baseline Finalization",
           "status": "queued",
-          "detail": "Complete baseline harness termination, grounding, and fuse/relay validation. Blocker: 2 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain. Procurement: Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys. Gate: Start/charge/lights/horn/wipers/gauges baseline passes functional checks."
+          "detail": "Complete baseline harness termination, grounding, and fuse/relay validation. Blocker: 4 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain. Procurement: Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys. Gate: Start/charge/lights/horn/wipers/gauges baseline passes functional checks."
         },
         {
           "label": "Issue checks",
@@ -26485,12 +26485,12 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
           "status": "in_progress",
-          "detail": "4 part rows still require price confirmation/order placement."
+          "detail": "5 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
           "status": "in_progress",
-          "detail": "1 part rows are ordered and awaiting delivery."
+          "detail": "2 part rows are ordered and awaiting delivery."
         },
         {
           "label": "Procurement \u00b7 resolve ambiguous stock/receipt rows",
@@ -26544,6 +26544,46 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
+          "entry_id": "part_daraz_cable_clip_clamp_assortment_20260527",
+          "workstream": "electrical_reset",
+          "item": "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10",
+          "status": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "amount": "2216",
+          "amount_status": "confirmed_prorated",
+          "currency": "PKR",
+          "vendor": "Daraz / Buy More Save More Store",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_daraz_cable_clip_clamp_assortment_20260527",
+          "evidence_ref": "gmail_msg_19e6616c326fb4d4|gmail_order_242670698380938|bank_alert_19e6618015d8106b",
+          "notes": "Daraz order 242670698380938 confirmed 2026-05-27 from Buy More Save More Store. Hardware lines: 10pcs 2/3mm wire rope clamp / cable clip fastener adjustable screw copper metal fixture x1 at PKR 1055, and 10pcs 304 stainless solar PV cable clips/clamps x1 at PKR 1154. Allocated amount PKR 2216 equals line subtotal PKR 2209 plus prorated share of net shipping/saving from the mixed order. Paid by card as part of combined Daraz PKR 8387 bank alert. Candidate supplemental cable/wire support only: do not treat as final brake/clutch hydraulic line support, fuel-line support, or permanent harness support until physical fit, edge/chafe behavior, material/plating, screw quality, cable OD grip, and corrosion risk are checked.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_retaining_clips_cotter_pack_reference.svg",
+            "caption": "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 \u00b7 retaining clip and cotter reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "body_retaining_clips_cotter_pack_reference",
+            "matched_tokens": [
+              "retaining",
+              "clip"
+            ],
+            "match_basis": "local_reference_image",
+            "match_score": 700
+          }
+        },
+        {
           "entry_id": "part_fastener_kit_d_millat",
           "workstream": "electrical_reset",
           "item": "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points",
@@ -26558,8 +26598,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_fastener_kit_d_millat",
-          "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af",
-          "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the ordered Millat washer/lock-washer stock used for grounding and vibration-resistant joints. Conductive paste and any non-Millat grounding top-up remain separate until physically confirmed. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
+          "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+          "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the ordered Millat washer/lock-washer stock used for grounding and vibration-resistant joints. Conductive paste and any non-Millat grounding top-up remain separate until physically confirmed. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
           "links": [],
           "estimated_hardware_type": "Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
           "estimated_visible_count": "70-125 visible, likely 95",
@@ -26733,6 +26773,45 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "relay",
             "matched_tokens": [
               "relay"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "entry_id": "part_star_washers",
+          "workstream": "electrical_reset",
+          "item": "Star washers (bite into metal)",
+          "status": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "local fastener / electrical hardware supplier",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_star_washers",
+          "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered",
+          "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
+            "caption": "Star washers (bite into metal) \u00b7 grounding washer hardware reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "graded_fasteners",
+            "matched_tokens": [
+              "washers"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -27378,11 +27457,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points (ordered_pending_delivery; delivery pending_delivery; amount missing)",
+                "Star washers (bite into metal) (purchase_ready; delivery not_ordered; amount missing)",
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
                 "Additional firewall grommet set IDs 16/20/25 mm (purchase_ready; delivery not_ordered; amount missing)",
                 "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)",
-                "Additional firewall grommet set IDs 6/8/10/12 mm (purchase_ready; delivery not_ordered; amount missing)",
-                "Split conduit / braided sleeve inventory - 8/10 mm, 5m lengths received; no extra 8mm order (received; delivery received; amount missing)"
+                "Additional firewall grommet set IDs 6/8/10/12 mm (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -27506,11 +27585,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
+                "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 (ordered_pending_delivery; delivery pending_delivery; amount confirmed_prorated)",
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
                 "Braided sleeve inventory - 8/10/14/16/20 mm sleeves, 5m lengths received (received; delivery received; amount missing)",
-                "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)",
-                "Additional firewall grommet set IDs 6/8/10/12 mm (purchase_ready; delivery not_ordered; amount missing)",
-                "Waterproof 5-pin 40A automotive relay pack - 5PIN 40A DC12V x6 (received; delivery received; amount confirmed)"
+                "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points (ordered_pending_delivery; delivery pending_delivery; amount missing)",
+                "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -27625,10 +27704,10 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)",
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
+                "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 (ordered_pending_delivery; delivery pending_delivery; amount confirmed_prorated)",
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
                 "Additional firewall grommet set IDs 16/20/25 mm (purchase_ready; delivery not_ordered; amount missing)",
-                "Waterproof 5-pin 40A automotive relay pack - 5PIN 40A DC12V x6 (received; delivery received; amount confirmed)",
-                "Electric wire inventory - 4 AWG red/black silicone cable, 1m each (approx 21 mm2) (received; delivery received; amount confirmed)"
+                "Waterproof 5-pin 40A automotive relay pack - 5PIN 40A DC12V x6 (received; delivery received; amount confirmed)"
               ]
             },
             {
@@ -27747,7 +27826,7 @@ window.J40_DASHBOARD_DATA = {
                 "Additional firewall grommet set IDs 16/20/25 mm (purchase_ready; delivery not_ordered; amount missing)",
                 "Additional firewall grommet set IDs 6/8/10/12 mm (purchase_ready; delivery not_ordered; amount missing)",
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
-                "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)"
+                "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 (ordered_pending_delivery; delivery pending_delivery; amount confirmed_prorated)"
               ]
             }
           ]
@@ -30990,7 +31069,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "electrical",
           "current_state": "queued",
           "objective": "Complete baseline harness termination, grounding, and fuse/relay validation.",
-          "blocker_summary": "2 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain.",
+          "blocker_summary": "4 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain.",
           "gate_to_close": "Start/charge/lights/horn/wipers/gauges baseline passes functional checks.",
           "key_procurement_actions": "Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys.",
           "evidence_signal": "electrical_rework_photos=18, wiring_diagram_references=1, diagram_reconciliation_rows=17"
@@ -31095,7 +31174,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP03 \u00b7 Electrical Baseline Finalization",
           "status": "queued",
-          "detail": "Complete baseline harness termination, grounding, and fuse/relay validation. Blocker: 2 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain. Procurement: Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys. Gate: Start/charge/lights/horn/wipers/gauges baseline passes functional checks."
+          "detail": "Complete baseline harness termination, grounding, and fuse/relay validation. Blocker: 4 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain. Procurement: Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys. Gate: Start/charge/lights/horn/wipers/gauges baseline passes functional checks."
         },
         {
           "label": "WP05 \u00b7 Interior Weatherproofing Stack",
@@ -33915,7 +33994,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "37 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -33969,7 +34048,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 37 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -55924,15 +56003,15 @@ window.J40_DASHBOARD_DATA = {
           ],
           "photo_status": "direct_location_plus_may12_context_photos",
           "spec_status": "needs_cable_end_identification",
-          "acquisition_status": "not_acquired",
+          "acquisition_status": "acquired",
           "installation_status": "not_installed",
-          "current_action": "Can remove now after photos and labels; disconnect at equalizer/intermediate link and at both rear backing plates, then keep the old cables as length/end samples. Do not cut unless a cable is seized and already marked for replacement.",
+          "current_action": "Received Daraz hand-brake cable; before installation compare the received cable against the old left/right samples and confirm whether it covers the complete rear cable set. Keep old cables intact until fit is proven.",
           "exact_recreation_spec": "Replace the complete rear parking-brake cable system with new assemblies that run to the rear drum backing plates, including left/right rear cables, outer sheaths, clevises, equalizer hardware, return springs, clips, and adjuster hardware as fitted; match the existing backing plate levers and chassis equalizer before purchase",
           "material_spec": "New automotive parking-brake cable assemblies with corrosion-protected outer sheath; new clevis pins/clips/springs; no used cable reuse",
           "critical_measurements": "Overall cable length, sheath length, end fitting type at backing plate, end fitting type at equalizer/intermediate cable, bracket/clip positions, adjuster thread size and travel",
           "fit_and_test": "Parking brake must hold both rear wheels evenly, release fully without dragging, and retain adjustment after repeated pulls",
-          "source_ref": "docs_brake_workstream|rear_brake_drum_baseline",
-          "notes": "May 12 photos add rear cable/lever route context. Treat as baseline new replacement; old cables remain samples only.",
+          "source_ref": "docs_brake_workstream|rear_brake_drum_baseline|part_rear_parking_brake_cable_set|gmail_order_243701549680938|user_update_2026-05-26_hand_brake_cable_received",
+          "notes": "Daraz/Vintage Jeep Parts hand-brake cable received 2026-05-26. Sample-match remains required before installation; verify complete set versus single cable, end fittings, sheath length, adjuster/clevis/clip hardware, and route fit against the old cables. May 12 photos add rear cable/lever route context. Old cables remain samples only.",
           "evidence_images": [
             {
               "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -56525,16 +56604,16 @@ window.J40_DASHBOARD_DATA = {
             "20260512_072947_gp_bNB9GvHA"
           ],
           "photo_status": "direct_location_plus_may12_context_photos",
-          "spec_status": "needs_drum_opening",
-          "acquisition_status": "not_acquired",
+          "spec_status": "ordered_local_candidate_fit_pending",
+          "acquisition_status": "ordered_partial_pending_delivery",
           "installation_status": "not_installed",
-          "current_action": "Do not order exact shoes or spring kit until the drums are opened and the shoe width/diameter and adjuster style are confirmed. Remove drums now only if the truck is safely supported and will not need parking-brake holding force.",
+          "current_action": "PakWheels orders #1075298 and #1075421 placed for five K-2255-N/Y rear brake shoe units. On delivery, verify quantity coverage, shoe width, arc, lining, adjuster/spring compatibility, and drum condition against opened drums before installation. Spring/adjuster hardware and wheel-cylinder fasteners remain unproven unless included in the package.",
           "exact_recreation_spec": "Order rear brake shoes, hold-down springs, return springs, adjuster hardware, and retaining clips matched to the actual drum/backing-plate family; drums only if worn, scored, cracked, or over maximum diameter",
           "material_spec": "Brake friction shoes and new spring hardware; drums machined/replaced only within service limits",
           "critical_measurements": "Drum inside diameter, shoe width, shoe arc/length, adjuster style, spring layout, backing plate condition, shoe lining condition, drum scoring/step",
           "fit_and_test": "Rear drums adjusted evenly; no drag after release; parking brake holds evenly after bedding and adjustment",
-          "source_ref": "docs_brake_workstream|rear_brake_drum_baseline",
-          "notes": "May 12 photos add rear drum outside context. Rear shoes and hardware are baseline replacement items; keep rear drums as the default unless inspection gives a real reason to convert.",
+          "source_ref": "docs_brake_workstream|rear_brake_drum_baseline|part_rear_brake_shoes_hardware|gmail_order_1075298|gmail_order_1075421",
+          "notes": "May 12 photos add rear drum outside context. Rear shoes and hardware are baseline replacement items; keep rear drums as the default unless inspection gives a real reason to convert. | PakWheels K-2255-N/Y shoe candidate order placed 2026-05-25; status is pending delivery and fit/coverage verification, not installed or validated.",
           "evidence_images": [
             {
               "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
@@ -57047,16 +57126,16 @@ window.J40_DASHBOARD_DATA = {
             "20260514_100647_gp_foDr3ymA"
           ],
           "photo_status": "supporting_hydraulic_plus_may14_fitting_photos",
-          "spec_status": "needs_master_layout_and_thread_capture",
-          "acquisition_status": "not_acquired",
+          "spec_status": "candidate_master_ordered_thread_bore_confirm_pending",
+          "acquisition_status": "ordered_partial_pending_delivery",
           "installation_status": "not_installed",
-          "current_action": "Photograph and inspect the installed master, reservoir, booster, vacuum hose, and proportioning/bias hardware before buying system-level parts. May 14 photos add installed flare-nut/fitting context; still measure port threads and seats if any master/proportioning line is opened.",
+          "current_action": "PakWheels orders #1075298 and #1075421 placed for two ULTIMA UFM-1041 brake master cylinders. Treat as candidate stock only until installed master bore/markings, port threads, flare seats, reservoir layout, booster pushrod depth, and proportioning/bias plumbing are confirmed.",
           "exact_recreation_spec": "Replace master cylinder, reservoir seals/caps/hoses, or proportioning hardware only after installed bore, port threads, flare seats, and leak condition are confirmed.",
           "material_spec": "Brake master/reservoir components and brake-fluid-compatible seals matched to the installed system",
           "critical_measurements": "Master bore/markings, reservoir condition, port threads, flare seats, booster/vacuum layout, proportioning valve ports",
           "fit_and_test": "Firm pedal, no external leaks, no internal bypass symptoms, correct front/rear brake balance in road validation",
-          "source_ref": "docs_brake_workstream|brake_hydraulic_refresh_and_bias_decision|photo_import_20260514T104551",
-          "notes": "System-level parts are safety-critical but must match the installed conversion and plumbing. May 14 fitting photos support a double/inverted flare working basis but do not replace direct thread/seat measurement.",
+          "source_ref": "docs_brake_workstream|brake_hydraulic_refresh_and_bias_decision|photo_import_20260514T104551|part_brake_master_reservoir_refresh|gmail_order_1075298|gmail_order_1075421",
+          "notes": "System-level parts are safety-critical but must match the installed conversion and plumbing. May 14 fitting photos support a double/inverted flare working basis but do not replace direct thread/seat measurement. | Two UFM-1041 brake master cylinder candidates ordered via PakWheels on 2026-05-25; still pending delivery and sample/layout verification before installation.",
           "evidence_images": [
             {
               "path": "../../photos/20260331_224409.jpg",
@@ -57325,7 +57404,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "37 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -57408,7 +57487,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 37 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -57447,8 +57526,8 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
-          "status": "completed",
-          "detail": "0 part rows are ordered and awaiting delivery."
+          "status": "in_progress",
+          "detail": "2 part rows are ordered and awaiting delivery."
         },
         {
           "label": "Procurement \u00b7 resolve ambiguous stock/receipt rows",
@@ -57462,45 +57541,6 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "involved_parts": [
-        {
-          "entry_id": "part_clutch_master_slave_cylinders_20260514",
-          "workstream": "brake_system",
-          "item": "Clutch master and slave cylinder replace/rebuild pair - inspect then buy",
-          "status": "planned",
-          "procurement_stage": "inspect_then_buy",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "brake/clutch parts supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_clutch_master_slave_cylinders_20260514",
-          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001",
-          "notes": "Inspect clutch master and slave during the hydraulic-line refresh. Replace or rebuild if leaking, pitted, seized, bypassing, missing dust boots, or if port/thread condition is unknown. Match bore, mounting pattern, pushrod, reservoir/port layout, and bleed screw access before payment.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_master.jpg",
-            "caption": "Clutch master and slave cylinder replace/rebuild pair - inspect then buy \u00b7 clutch/brake cylinder reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "brake_master",
-            "matched_tokens": [
-              "clutch"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
         {
           "entry_id": "part_front_rotor_service_pair",
           "workstream": "brake_system",
@@ -57616,6 +57656,146 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "manual_override",
             "match_score": 999
+          }
+        },
+        {
+          "entry_id": "part_clutch_master_slave_cylinders_20260514",
+          "workstream": "brake_system",
+          "item": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect",
+          "status": "ordered",
+          "procurement_stage": "ordered_partial_pending_delivery",
+          "payment_status": "unknown",
+          "delivery_status": "pending_delivery",
+          "amount": "3700",
+          "amount_status": "confirmed",
+          "currency": "PKR",
+          "vendor": "PakWheels AUTOSTORE",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_clutch_master_slave_cylinders_20260514",
+          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298",
+          "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation.",
+          "links": [
+            {
+              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+              "label": "Longman pipe and hose order CSV",
+              "download": true
+            },
+            {
+              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+              "label": "Longman pipe and hose order spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+              "label": "Pipe order release specs CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+              "label": "Pipe photo and measurement index CSV",
+              "download": true
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
+            "caption": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect \u00b7 hard-line bending and flaring reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "hard_line_bending_flaring_reference",
+            "matched_tokens": [
+              "hard",
+              "line",
+              "fabrication"
+            ],
+            "match_basis": "local_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "entry_id": "part_brake_master_reservoir_refresh",
+          "workstream": "brake_system",
+          "item": "Brake master cylinder candidate order - ULTIMA UFM-1041 x2; reservoir/proportioning still inspect",
+          "status": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "unknown",
+          "delivery_status": "pending_delivery",
+          "amount": "12596",
+          "amount_status": "confirmed",
+          "currency": "PKR",
+          "vendor": "PakWheels AUTOSTORE",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_brake_master_reservoir_refresh",
+          "evidence_ref": "BR-SYS-001|20260331_224409|20260331_224423|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
+          "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: ULTIMA Master Brake Cylinder For Toyota FJ40 1975-1990, UFM-1041, qty 2 at PKR 6000 each. Allocated ledger amount PKR 12596 equals PKR 12000 line subtotal plus PKR 596 prorated shipping/tax from the two mixed orders. Treat these as candidate stock only: final use still requires installed master bore/markings, port threads, flare seats, reservoir layout, booster pushrod depth, and proportioning/bias plumbing confirmation before installation.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260331_224409.jpg",
+            "caption": "Brake master cylinder candidate order - ULTIMA UFM-1041 x2; reservoir/proportioning still inspect \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "exact_order_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260331_224409",
+            "matched_tokens": [
+              "photo_20260331_224409"
+            ],
+            "match_basis": "exact_order_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "entry_id": "part_rear_brake_shoes_hardware",
+          "workstream": "brake_system",
+          "item": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match",
+          "status": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "unknown",
+          "delivery_status": "pending_delivery",
+          "amount": "33600",
+          "amount_status": "confirmed",
+          "currency": "PKR",
+          "vendor": "PakWheels AUTOSTORE",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_rear_brake_shoes_hardware",
+          "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
+          "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster/spring layout, and drum condition. Spring/hardware kit and wheel-cylinder fasteners are not proven included.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+            "caption": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "exact_order_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260524_025547_gp_yCvA0bxA",
+            "matched_tokens": [
+              "photo_20260524_025547_gp_ycva0bxa"
+            ],
+            "match_basis": "exact_order_evidence",
+            "match_score": 980
           }
         },
         {
@@ -57882,45 +58062,6 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_rear_brake_shoes_hardware",
-          "workstream": "brake_system",
-          "item": "Rear brake shoes, drum hardware, and wheel-cylinder bolt kit",
-          "status": "planned",
-          "procurement_stage": "purchase_ready_local_catalog_first_pending_measurement",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "local brake parts supplier / PakWheels-local lead / sample-match supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_rear_brake_shoes_hardware",
-          "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports",
-          "notes": "BASELINE MUST REPLACE. Prefer local shoes, hardware, and wheel-cylinder fasteners; use the PakWheels K-2255-N/Y listing and imported catalog numbers only as search/reference leads. Before payment, measure shoe width and compare spring/adjuster layout; if this is a non-USA 9/1975+ 3-inch drum setup, use a matching local 3-inch shoe/hardware route. Keep old springs, adjusters, and anchors as samples until the new kit is dry-fitted. No expensive import unless explicitly approved.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-            "caption": "Rear brake shoes, drum hardware, and wheel-cylinder bolt kit \u00b7 local inventory photo \u00b7 local brake parts supplier / PakWheels-local lead / sample-match supplier",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260524_025547_gp_yCvA0bxA",
-            "matched_tokens": [
-              "photo_20260524_025547_gp_ycva0bxa"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
-          }
-        },
-        {
           "entry_id": "part_rear_center_brake_flex_hose",
           "workstream": "brake_system",
           "item": "Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference",
@@ -58092,6 +58233,45 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
+          "entry_id": "part_rear_parking_brake_cable_set",
+          "workstream": "brake_system",
+          "item": "FJ40 BJ-40 Toyota Land Cruiser hand brake cable",
+          "status": "received",
+          "procurement_stage": "received",
+          "payment_status": "paid",
+          "delivery_status": "received",
+          "amount": "5795",
+          "amount_status": "confirmed",
+          "currency": "PKR",
+          "vendor": "Daraz / Vintage Jeep Parts",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_rear_parking_brake_cable_set",
+          "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA|toyota_46410-60092_reference|cruiserparts_46410-60092_reference|web_mustakbil_sna_auto_control_cables|docs/pakistan-brake-piping-handbrake-sources-20260524.md|gmail_msg_19e5e241f244eee6|gmail_order_243701549680938|bank_alert_19e5e24ab832b0b7|user_update_2026-05-26_hand_brake_cable_received|gmail_msg_19e6365b0b6ff3b2|gmail_delivery_243701549680938",
+          "notes": "Daraz order 243701549680938 confirmed 2026-05-25 from Vintage Jeep Parts: FJ40 BJ-40 TOYOTA LAND CRUISER HAND BRAKE CABLE x1, item PKR 5600 plus PKR 195 shipping, total PKR 5795, paid by card. User confirmed physical receipt on 2026-05-26. Receipt/fit check before installation: confirm whether the received cable is a complete left/right rear set or a single cable, check sheath length, overall length, backing-plate end, equalizer/intermediate end, adjuster/clevis/clip hardware, and match old samples before use. Old cables remain samples until replacement fit is proven. | Gmail delivery confirmation 2026-05-26 says Daraz order 243701549680938 was successfully delivered; keep receipt/packaging and still sample-match before installation.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
+            "caption": "FJ40 BJ-40 Toyota Land Cruiser hand brake cable \u00b7 exact order evidence \u00b7 Daraz / Vintage Jeep Parts",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "exact_order_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260501_194305_gp_EllBGvXA",
+            "matched_tokens": [
+              "photo_20260501_194305_gp_ellbgvxa"
+            ],
+            "match_basis": "exact_order_evidence",
+            "match_score": 980
+          }
+        },
+        {
           "entry_id": "part_daraz_nitrile_gloves_black_l_100pc_20260504",
           "workstream": "brake_system",
           "item": "Safety Black Disposable Nitrile gloves 100 PCs Box - black large",
@@ -58164,45 +58344,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "20260524_025547_gp_yCvA0bxA",
             "matched_tokens": [
               "photo_20260524_025547_gp_ycva0bxa"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
-          }
-        },
-        {
-          "entry_id": "part_brake_master_reservoir_refresh",
-          "workstream": "brake_system",
-          "item": "Brake master reservoir and proportioning service parts",
-          "status": "planned",
-          "procurement_stage": "spec_needed_before_order",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_brake_master_reservoir_refresh",
-          "evidence_ref": "BR-SYS-001|20260331_224409|20260331_224423",
-          "notes": "Inspect installed master, reservoir, booster, vacuum line, and proportioning/bias hardware; replace only after bore, port threads, flare seats, leak condition, and installed layout are confirmed.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../photos/20260331_224409.jpg",
-            "caption": "Brake master reservoir and proportioning service parts \u00b7 local inventory photo",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260331_224409",
-            "matched_tokens": [
-              "photo_20260331_224409"
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 980
@@ -58527,45 +58668,6 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_rear_parking_brake_cable_set",
-          "workstream": "brake_system",
-          "item": "Rear parking brake cable set with clips and equalizer hardware",
-          "status": "planned",
-          "procurement_stage": "spec_needed_before_order_pakistan_catalog_first",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "SNA Industries auto-control-cable lead / Fine Auto / NDE Store / Gari Parts / local Toyota-Land Cruiser supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_rear_parking_brake_cable_set",
-          "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA|toyota_46410-60092_reference|cruiserparts_46410-60092_reference|web_mustakbil_sna_auto_control_cables|docs/pakistan-brake-piping-handbrake-sources-20260524.md|user_update_2026-05-24_local_only_no_expensive_imports",
-          "notes": "BASELINE MUST REPLACE during the suspension/brake access window. For a Pakistan-based FCP-style route, ask SNA first whether its auto-control-cable channel can supply or make this parking-brake cable, then ask Fine Auto, NDE Store, Gari Parts, and local Toyota/Land Cruiser suppliers using Toyota 46410-60092 as a candidate reference for 3/1976-12/1978 FJ40/FJ45. Final buy still requires old left/right cable samples for ends, lengths, sheath lengths, adjuster/equalizer hardware, and backing-plate levers. No expensive import or custom cable route unless explicitly approved.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear parking brake cable set with clips and equalizer hardware \u00b7 local inventory photo \u00b7 SNA Industries auto-control-cable lead / Fine Auto / NDE Store / Gari Parts / local Toyota-Land Cruiser supplier",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260501_194305_gp_EllBGvXA",
-            "matched_tokens": [
-              "photo_20260501_194305_gp_ellbgvxa"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
-          }
-        },
-        {
           "entry_id": "part_brake_hydraulic_tees_unions_splitters_20260514",
           "workstream": "brake_system",
           "item": "Brake hydraulic splitter T-union and inline union replacement set",
@@ -58817,11 +58919,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
+                "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Rear wheel cylinders - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (price_check_priority_before_other_brake_parts; delivery not_ordered; amount missing)",
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price_check_first_before_other_brake_parts; delivery not_ordered; amount missing)",
-                "Rear brake shoes, drum hardware, and wheel-cylinder bolt kit (purchase_ready_local_catalog_first_pending_measurement; delivery not_ordered; amount missing)",
-                "Front disc pads and retaining hardware (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect (ordered_partial_pending_delivery; delivery pending_delivery; amount confirmed)"
               ]
             },
             {
@@ -58950,11 +59052,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
-                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order_pakistan_catalog_first; delivery not_ordered; amount missing)",
                 "Rear wheel cylinders - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
-                "Rear brake shoes, drum hardware, and wheel-cylinder bolt kit (purchase_ready_local_catalog_first_pending_measurement; delivery not_ordered; amount missing)",
                 "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)",
-                "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (price_check_priority_before_other_brake_parts; delivery not_ordered; amount missing)"
+                "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (price_check_priority_before_other_brake_parts; delivery not_ordered; amount missing)",
+                "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection (purchase_ready; delivery not_ordered; amount missing)",
+                "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -59080,10 +59182,10 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Clutch master and slave cylinder replace/rebuild pair - inspect then buy (inspect_then_buy; delivery not_ordered; amount missing)",
+                "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect (ordered_partial_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Brake hydraulic opening prep remaining consumables - caps plugs bleed bottle cleaner rags catch tray (purchase_ready; delivery not_ordered; amount missing)",
-                "Brake master reservoir and proportioning service parts (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (price_check_priority_before_other_brake_parts; delivery not_ordered; amount missing)",
+                "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Rear wheel cylinders - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price_check_first_before_other_brake_parts; delivery not_ordered; amount missing)"
               ]
@@ -59210,10 +59312,10 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (price_check_priority_before_other_brake_parts; delivery not_ordered; amount missing)",
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price_check_first_before_other_brake_parts; delivery not_ordered; amount missing)",
-                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order_pakistan_catalog_first; delivery not_ordered; amount missing)",
-                "Brake master reservoir and proportioning service parts (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
-                "Front disc pads and retaining hardware (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Front disc pads and retaining hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)",
+                "Brake hydraulic splitter T-union and inline union replacement set (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -59338,12 +59440,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
                 "Rear wheel cylinders - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
                 "Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference (purchase_ready_local_catalog_first_pending_sample_match; delivery not_ordered; amount missing)",
                 "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips (spec_needed_before_order_local_hardware_first; delivery not_ordered; amount missing)",
-                "Rear parking brake cable set with clips and equalizer hardware (spec_needed_before_order_pakistan_catalog_first; delivery not_ordered; amount missing)",
-                "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "FJ40 BJ-40 Toyota Land Cruiser hand brake cable (received; delivery received; amount confirmed)"
               ]
             }
           ]
@@ -62330,7 +62432,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "37 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -62384,7 +62486,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 37 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -65351,7 +65453,7 @@ window.J40_DASHBOARD_DATA = {
         "electrical_reset"
       ],
       "evidence_signal": "electrical_rework_photos=18, wiring_diagram_references=1, diagram_reconciliation_rows=17",
-      "blocker_summary": "2 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain.",
+      "blocker_summary": "4 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain.",
       "gate_to_close": "Start/charge/lights/horn/wipers/gauges baseline passes functional checks.",
       "key_procurement_actions": "Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys.",
       "image": {
@@ -65387,7 +65489,7 @@ window.J40_DASHBOARD_DATA = {
         "suspension_upgrade"
       ],
       "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared",
-      "blocker_summary": "37 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+      "blocker_summary": "29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
       "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
       "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
       "image": {
@@ -65466,7 +65568,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Confirm price and place purchase-ready orders",
         "status": "in_progress",
-        "detail": "26 rows still in purchase_ready."
+        "detail": "27 rows still in purchase_ready."
       },
       {
         "label": "Place selected quote orders",
@@ -65476,7 +65578,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Track paid / in-flight deliveries",
         "status": "in_progress",
-        "detail": "5 rows ordered and waiting to arrive."
+        "detail": "9 rows ordered and waiting to arrive."
       }
     ],
     "counts_by_procurement_stage": [
@@ -65490,7 +65592,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "inspect_then_buy",
-        "count": 2
+        "count": 1
       },
       {
         "stage": "local_inspect_machine_or_replace_hold",
@@ -65501,8 +65603,12 @@ window.J40_DASHBOARD_DATA = {
         "count": 1
       },
       {
+        "stage": "ordered_partial_pending_delivery",
+        "count": 1
+      },
+      {
         "stage": "ordered_pending_delivery",
-        "count": 5
+        "count": 8
       },
       {
         "stage": "pre_payment_market_check",
@@ -65518,15 +65624,11 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "purchase_ready",
-        "count": 26
+        "count": 27
       },
       {
         "stage": "purchase_ready_estimate",
         "count": 5
-      },
-      {
-        "stage": "purchase_ready_local_catalog_first_pending_measurement",
-        "count": 1
       },
       {
         "stage": "purchase_ready_local_catalog_first_pending_sample_match",
@@ -65558,14 +65660,10 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "spec_needed_before_order",
-        "count": 10
+        "count": 9
       },
       {
         "stage": "spec_needed_before_order_local_hardware_first",
-        "count": 1
-      },
-      {
-        "stage": "spec_needed_before_order_pakistan_catalog_first",
         "count": 1
       },
       {
@@ -65584,7 +65682,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "next_action": "track_delivery",
-        "count": 5
+        "count": 9
       }
     ],
     "urgent_actions": [
@@ -65638,8 +65736,8 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "MTL Parts",
         "supply_type": "part",
-        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af",
-        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the Millat M6/M8 bolt, nut, and washer portion of the body-panel/bracket hardware set. Receipt check still needs to verify exact lengths, quantities, and any local top-up for sizes that were not clean Millat matches. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
+        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the Millat M6/M8 bolt, nut, and washer portion of the body-panel/bracket hardware set. Receipt check still needs to verify exact lengths, quantities, and any local top-up for sizes that were not clean Millat matches. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
         "estimated_visible_count": "150-220 visible, likely 180 | 35-60 visible, likely 45 | 70-125 visible, likely 95",
@@ -65815,19 +65913,56 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "priority": "P0",
-        "entry_id": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
+        "entry_id": "part_brake_master_reservoir_refresh",
         "workstream": "brake_system",
-        "item": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "next_action": "confirm_price_then_order",
-        "amount": "",
-        "amount_status": "missing",
+        "item": "Brake master cylinder candidate order - ULTIMA UFM-1041 x2; reservoir/proportioning still inspect",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "next_action": "track_delivery",
+        "amount": "12596",
+        "amount_status": "confirmed",
         "currency": "PKR",
-        "vendor": "Longman / brake hydraulic pipe specialist",
+        "vendor": "PakWheels AUTOSTORE",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001",
-        "notes": "Quote this before buying more rear brake parts. First quote target is SNA Industries, because it is Pakistan-based and lists steel brake pipes and brake hoses. Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; quote both 25 ft minimum and a single 10000-12000 mm local coil for scrap flares, route corrections, and service loops. Use brake-rated Bundy steel or CuNi/Cunifer only; no bare copper, plumbing tube, compression fittings, or imported pre-bent FJ40 kit unless explicitly approved.",
+        "evidence_ref": "BR-SYS-001|20260331_224409|20260331_224423|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
+        "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: ULTIMA Master Brake Cylinder For Toyota FJ40 1975-1990, UFM-1041, qty 2 at PKR 6000 each. Allocated ledger amount PKR 12596 equals PKR 12000 line subtotal plus PKR 596 prorated shipping/tax from the two mixed orders. Treat these as candidate stock only: final use still requires installed master bore/markings, port threads, flare seats, reservoir layout, booster pushrod depth, and proportioning/bias plumbing confirmation before installation.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260331_224409.jpg",
+          "caption": "Brake master cylinder candidate order - ULTIMA UFM-1041 x2; reservoir/proportioning still inspect \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "exact_order_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260331_224409",
+          "matched_tokens": [
+            "photo_20260331_224409"
+          ],
+          "match_basis": "exact_order_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "priority": "P0",
+        "entry_id": "part_clutch_master_slave_cylinders_20260514",
+        "workstream": "brake_system",
+        "item": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect",
+        "status": "ordered",
+        "procurement_stage": "ordered_partial_pending_delivery",
+        "next_action": "track_delivery",
+        "amount": "3700",
+        "amount_status": "confirmed",
+        "currency": "PKR",
+        "vendor": "PakWheels AUTOSTORE",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298",
+        "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -65856,7 +65991,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-          "caption": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred \u00b7 hard-line bending and flaring reference image",
+          "caption": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect \u00b7 hard-line bending and flaring reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -65934,6 +66069,43 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "priority": "P0",
+        "entry_id": "part_rear_brake_shoes_hardware",
+        "workstream": "brake_system",
+        "item": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "next_action": "track_delivery",
+        "amount": "33600",
+        "amount_status": "confirmed",
+        "currency": "PKR",
+        "vendor": "PakWheels AUTOSTORE",
+        "supply_type": "part",
+        "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
+        "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster/spring layout, and drum condition. Spring/hardware kit and wheel-cylinder fasteners are not proven included.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+          "caption": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "exact_order_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260524_025547_gp_yCvA0bxA",
+          "matched_tokens": [
+            "photo_20260524_025547_gp_ycva0bxa"
+          ],
+          "match_basis": "exact_order_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "priority": "P0",
         "entry_id": "part_fastener_kit_a_millat",
         "workstream": "chassis_rubbers",
         "item": "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves",
@@ -65945,8 +66117,8 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "MTL Parts",
         "supply_type": "part",
-        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af",
-        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Gmail evidence shows both MTL order-received emails plus user payment follow-ups on 2026-04-22 and 2026-04-24. Covers the Millat M10/M12 bolt, nut, flat-washer, and lock-washer stock; sleeve/spacer cutting still waits for body-mount dry-stack measurements before final installation. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
+        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Gmail evidence shows both MTL order-received emails plus user payment follow-ups on 2026-04-22 and 2026-04-24. Covers the Millat M10/M12 bolt, nut, flat-washer, and lock-washer stock; sleeve/spacer cutting still waits for body-mount dry-stack measurements before final installation. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
         "estimated_visible_count": "150-220 visible, likely 180 | 35-60 visible, likely 45 | 70-125 visible, likely 95",
@@ -66082,6 +66254,44 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "priority": "P0",
+        "entry_id": "part_daraz_cable_clip_clamp_assortment_20260527",
+        "workstream": "electrical_reset",
+        "item": "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "next_action": "track_delivery",
+        "amount": "2216",
+        "amount_status": "confirmed_prorated",
+        "currency": "PKR",
+        "vendor": "Daraz / Buy More Save More Store",
+        "supply_type": "part",
+        "evidence_ref": "gmail_msg_19e6616c326fb4d4|gmail_order_242670698380938|bank_alert_19e6618015d8106b",
+        "notes": "Daraz order 242670698380938 confirmed 2026-05-27 from Buy More Save More Store. Hardware lines: 10pcs 2/3mm wire rope clamp / cable clip fastener adjustable screw copper metal fixture x1 at PKR 1055, and 10pcs 304 stainless solar PV cable clips/clamps x1 at PKR 1154. Allocated amount PKR 2216 equals line subtotal PKR 2209 plus prorated share of net shipping/saving from the mixed order. Paid by card as part of combined Daraz PKR 8387 bank alert. Candidate supplemental cable/wire support only: do not treat as final brake/clutch hydraulic line support, fuel-line support, or permanent harness support until physical fit, edge/chafe behavior, material/plating, screw quality, cable OD grip, and corrosion risk are checked.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_retaining_clips_cotter_pack_reference.svg",
+          "caption": "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 \u00b7 retaining clip and cotter reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "body_retaining_clips_cotter_pack_reference",
+          "matched_tokens": [
+            "retaining",
+            "clip"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "priority": "P0",
         "entry_id": "part_fastener_kit_d_millat",
         "workstream": "electrical_reset",
         "item": "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points",
@@ -66093,8 +66303,8 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "MTL Parts",
         "supply_type": "part",
-        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af",
-        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the ordered Millat washer/lock-washer stock used for grounding and vibration-resistant joints. Conductive paste and any non-Millat grounding top-up remain separate until physically confirmed. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
+        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the ordered Millat washer/lock-washer stock used for grounding and vibration-resistant joints. Conductive paste and any non-Millat grounding top-up remain separate until physically confirmed. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
         "estimated_visible_count": "70-125 visible, likely 95",
@@ -66155,6 +66365,43 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "priority": "P0",
+        "entry_id": "part_star_washers",
+        "workstream": "electrical_reset",
+        "item": "Star washers (bite into metal)",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "next_action": "confirm_price_then_order",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "local fastener / electrical hardware supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered",
+        "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
+          "caption": "Star washers (bite into metal) \u00b7 grounding washer hardware reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "graded_fasteners",
+          "matched_tokens": [
+            "washers"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
         "priority": "P1",
         "entry_id": "part_ironman_front_dampers_separate_shipment",
         "workstream": "suspension_upgrade",
@@ -66208,8 +66455,8 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "MTL Parts",
         "supply_type": "part",
-        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af",
-        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the Millat M6/M8 bolt, nut, and washer portion of the body-panel/bracket hardware set. Receipt check still needs to verify exact lengths, quantities, and any local top-up for sizes that were not clean Millat matches. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
+        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the Millat M6/M8 bolt, nut, and washer portion of the body-panel/bracket hardware set. Receipt check still needs to verify exact lengths, quantities, and any local top-up for sizes that were not clean Millat matches. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
         "estimated_visible_count": "150-220 visible, likely 180 | 35-60 visible, likely 45 | 70-125 visible, likely 95",
@@ -66272,6 +66519,143 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "part_brake_master_reservoir_refresh",
+        "workstream": "brake_system",
+        "item": "Brake master cylinder candidate order - ULTIMA UFM-1041 x2; reservoir/proportioning still inspect",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "expected_delivery_date": "after_eid_vendor_note_no_exact_date",
+        "amount": "12596",
+        "amount_status": "confirmed",
+        "currency": "PKR",
+        "vendor": "PakWheels AUTOSTORE",
+        "supply_type": "part",
+        "evidence_ref": "BR-SYS-001|20260331_224409|20260331_224423|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
+        "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: ULTIMA Master Brake Cylinder For Toyota FJ40 1975-1990, UFM-1041, qty 2 at PKR 6000 each. Allocated ledger amount PKR 12596 equals PKR 12000 line subtotal plus PKR 596 prorated shipping/tax from the two mixed orders. Treat these as candidate stock only: final use still requires installed master bore/markings, port threads, flare seats, reservoir layout, booster pushrod depth, and proportioning/bias plumbing confirmation before installation.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260331_224409.jpg",
+          "caption": "Brake master cylinder candidate order - ULTIMA UFM-1041 x2; reservoir/proportioning still inspect \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "exact_order_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260331_224409",
+          "matched_tokens": [
+            "photo_20260331_224409"
+          ],
+          "match_basis": "exact_order_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "entry_id": "part_clutch_master_slave_cylinders_20260514",
+        "workstream": "brake_system",
+        "item": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect",
+        "status": "ordered",
+        "procurement_stage": "ordered_partial_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "expected_delivery_date": "after_eid_vendor_note_no_exact_date",
+        "amount": "3700",
+        "amount_status": "confirmed",
+        "currency": "PKR",
+        "vendor": "PakWheels AUTOSTORE",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298",
+        "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
+          "caption": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect \u00b7 hard-line bending and flaring reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "hard_line_bending_flaring_reference",
+          "matched_tokens": [
+            "hard",
+            "line",
+            "fabrication"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_rear_brake_shoes_hardware",
+        "workstream": "brake_system",
+        "item": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "expected_delivery_date": "after_eid_vendor_note_no_exact_date",
+        "amount": "33600",
+        "amount_status": "confirmed",
+        "currency": "PKR",
+        "vendor": "PakWheels AUTOSTORE",
+        "supply_type": "part",
+        "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
+        "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster/spring layout, and drum condition. Spring/hardware kit and wheel-cylinder fasteners are not proven included.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+          "caption": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "exact_order_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260524_025547_gp_yCvA0bxA",
+          "matched_tokens": [
+            "photo_20260524_025547_gp_ycva0bxa"
+          ],
+          "match_basis": "exact_order_evidence",
+          "match_score": 980
+        }
+      },
+      {
         "entry_id": "part_fastener_kit_a_millat",
         "workstream": "chassis_rubbers",
         "item": "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves",
@@ -66285,8 +66669,8 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "MTL Parts",
         "supply_type": "part",
-        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af",
-        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Gmail evidence shows both MTL order-received emails plus user payment follow-ups on 2026-04-22 and 2026-04-24. Covers the Millat M10/M12 bolt, nut, flat-washer, and lock-washer stock; sleeve/spacer cutting still waits for body-mount dry-stack measurements before final installation. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
+        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Gmail evidence shows both MTL order-received emails plus user payment follow-ups on 2026-04-22 and 2026-04-24. Covers the Millat M10/M12 bolt, nut, flat-washer, and lock-washer stock; sleeve/spacer cutting still waits for body-mount dry-stack measurements before final installation. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
         "estimated_visible_count": "150-220 visible, likely 180 | 35-60 visible, likely 45 | 70-125 visible, likely 95",
@@ -66310,6 +66694,45 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "part_daraz_cable_clip_clamp_assortment_20260527",
+        "workstream": "electrical_reset",
+        "item": "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "expected_delivery_date": "2026-06-04_to_2026-06-10",
+        "amount": "2216",
+        "amount_status": "confirmed_prorated",
+        "currency": "PKR",
+        "vendor": "Daraz / Buy More Save More Store",
+        "supply_type": "part",
+        "evidence_ref": "gmail_msg_19e6616c326fb4d4|gmail_order_242670698380938|bank_alert_19e6618015d8106b",
+        "notes": "Daraz order 242670698380938 confirmed 2026-05-27 from Buy More Save More Store. Hardware lines: 10pcs 2/3mm wire rope clamp / cable clip fastener adjustable screw copper metal fixture x1 at PKR 1055, and 10pcs 304 stainless solar PV cable clips/clamps x1 at PKR 1154. Allocated amount PKR 2216 equals line subtotal PKR 2209 plus prorated share of net shipping/saving from the mixed order. Paid by card as part of combined Daraz PKR 8387 bank alert. Candidate supplemental cable/wire support only: do not treat as final brake/clutch hydraulic line support, fuel-line support, or permanent harness support until physical fit, edge/chafe behavior, material/plating, screw quality, cable OD grip, and corrosion risk are checked.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_retaining_clips_cotter_pack_reference.svg",
+          "caption": "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 \u00b7 retaining clip and cotter reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "body_retaining_clips_cotter_pack_reference",
+          "matched_tokens": [
+            "retaining",
+            "clip"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
+      },
+      {
         "entry_id": "part_fastener_kit_d_millat",
         "workstream": "electrical_reset",
         "item": "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points",
@@ -66323,8 +66746,8 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "MTL Parts",
         "supply_type": "part",
-        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af",
-        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the ordered Millat washer/lock-washer stock used for grounding and vibration-resistant joints. Conductive paste and any non-Millat grounding top-up remain separate until physically confirmed. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
+        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the ordered Millat washer/lock-washer stock used for grounding and vibration-resistant joints. Conductive paste and any non-Millat grounding top-up remain separate until physically confirmed. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
         "estimated_visible_count": "70-125 visible, likely 95",
@@ -66401,8 +66824,8 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "MTL Parts",
         "supply_type": "part",
-        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af",
-        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the Millat M6/M8 bolt, nut, and washer portion of the body-panel/bracket hardware set. Receipt check still needs to verify exact lengths, quantities, and any local top-up for sizes that were not clean Millat matches. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
+        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the Millat M6/M8 bolt, nut, and washer portion of the body-panel/bracket hardware set. Receipt check still needs to verify exact lengths, quantities, and any local top-up for sizes that were not clean Millat matches. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
         "estimated_visible_count": "150-220 visible, likely 180 | 35-60 visible, likely 45 | 70-125 visible, likely 95",
@@ -66612,43 +67035,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_clutch_master_slave_cylinders_20260514",
-        "workstream": "brake_system",
-        "item": "Clutch master and slave cylinder replace/rebuild pair - inspect then buy",
-        "status": "planned",
-        "procurement_stage": "inspect_then_buy",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "brake/clutch parts supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001",
-        "notes": "Inspect clutch master and slave during the hydraulic-line refresh. Replace or rebuild if leaking, pitted, seized, bypassing, missing dust boots, or if port/thread condition is unknown. Match bore, mounting pattern, pushrod, reservoir/port layout, and bleed screw access before payment.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_master.jpg",
-          "caption": "Clutch master and slave cylinder replace/rebuild pair - inspect then buy \u00b7 clutch/brake cylinder reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "brake_master",
-          "matched_tokens": [
-            "clutch"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
         "entry_id": "part_front_rotor_service_pair",
         "workstream": "brake_system",
         "item": "Front rotor machine or replacement pair",
@@ -66757,6 +67143,140 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "manual_override",
           "match_score": 999
+        }
+      },
+      {
+        "entry_id": "part_clutch_master_slave_cylinders_20260514",
+        "workstream": "brake_system",
+        "item": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect",
+        "status": "ordered",
+        "procurement_stage": "ordered_partial_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "amount": "3700",
+        "amount_status": "confirmed",
+        "currency": "PKR",
+        "vendor": "PakWheels AUTOSTORE",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298",
+        "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
+          "caption": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect \u00b7 hard-line bending and flaring reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "hard_line_bending_flaring_reference",
+          "matched_tokens": [
+            "hard",
+            "line",
+            "fabrication"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_brake_master_reservoir_refresh",
+        "workstream": "brake_system",
+        "item": "Brake master cylinder candidate order - ULTIMA UFM-1041 x2; reservoir/proportioning still inspect",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "amount": "12596",
+        "amount_status": "confirmed",
+        "currency": "PKR",
+        "vendor": "PakWheels AUTOSTORE",
+        "supply_type": "part",
+        "evidence_ref": "BR-SYS-001|20260331_224409|20260331_224423|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
+        "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: ULTIMA Master Brake Cylinder For Toyota FJ40 1975-1990, UFM-1041, qty 2 at PKR 6000 each. Allocated ledger amount PKR 12596 equals PKR 12000 line subtotal plus PKR 596 prorated shipping/tax from the two mixed orders. Treat these as candidate stock only: final use still requires installed master bore/markings, port threads, flare seats, reservoir layout, booster pushrod depth, and proportioning/bias plumbing confirmation before installation.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260331_224409.jpg",
+          "caption": "Brake master cylinder candidate order - ULTIMA UFM-1041 x2; reservoir/proportioning still inspect \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "exact_order_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260331_224409",
+          "matched_tokens": [
+            "photo_20260331_224409"
+          ],
+          "match_basis": "exact_order_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "entry_id": "part_rear_brake_shoes_hardware",
+        "workstream": "brake_system",
+        "item": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "amount": "33600",
+        "amount_status": "confirmed",
+        "currency": "PKR",
+        "vendor": "PakWheels AUTOSTORE",
+        "supply_type": "part",
+        "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
+        "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster/spring layout, and drum condition. Spring/hardware kit and wheel-cylinder fasteners are not proven included.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+          "caption": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "exact_order_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260524_025547_gp_yCvA0bxA",
+          "matched_tokens": [
+            "photo_20260524_025547_gp_ycva0bxa"
+          ],
+          "match_basis": "exact_order_evidence",
+          "match_score": 980
         }
       },
       {
@@ -67013,43 +67533,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_rear_brake_shoes_hardware",
-        "workstream": "brake_system",
-        "item": "Rear brake shoes, drum hardware, and wheel-cylinder bolt kit",
-        "status": "planned",
-        "procurement_stage": "purchase_ready_local_catalog_first_pending_measurement",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "local brake parts supplier / PakWheels-local lead / sample-match supplier",
-        "supply_type": "part",
-        "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports",
-        "notes": "BASELINE MUST REPLACE. Prefer local shoes, hardware, and wheel-cylinder fasteners; use the PakWheels K-2255-N/Y listing and imported catalog numbers only as search/reference leads. Before payment, measure shoe width and compare spring/adjuster layout; if this is a non-USA 9/1975+ 3-inch drum setup, use a matching local 3-inch shoe/hardware route. Keep old springs, adjusters, and anchors as samples until the new kit is dry-fitted. No expensive import unless explicitly approved.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-          "caption": "Rear brake shoes, drum hardware, and wheel-cylinder bolt kit \u00b7 local inventory photo \u00b7 local brake parts supplier / PakWheels-local lead / sample-match supplier",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260524_025547_gp_yCvA0bxA",
-          "matched_tokens": [
-            "photo_20260524_025547_gp_ycva0bxa"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
-        }
-      },
-      {
         "entry_id": "part_rear_center_brake_flex_hose",
         "workstream": "brake_system",
         "item": "Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference",
@@ -67118,43 +67601,6 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "20260524_025547_gp_yCvA0bxA",
           "matched_tokens": [
             "photo_20260524_025547_gp_ycva0bxa"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
-        }
-      },
-      {
-        "entry_id": "part_brake_master_reservoir_refresh",
-        "workstream": "brake_system",
-        "item": "Brake master reservoir and proportioning service parts",
-        "status": "planned",
-        "procurement_stage": "spec_needed_before_order",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "BR-SYS-001|20260331_224409|20260331_224423",
-        "notes": "Inspect installed master, reservoir, booster, vacuum line, and proportioning/bias hardware; replace only after bore, port threads, flare seats, leak condition, and installed layout are confirmed.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../photos/20260331_224409.jpg",
-          "caption": "Brake master reservoir and proportioning service parts \u00b7 local inventory photo",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260331_224409",
-          "matched_tokens": [
-            "photo_20260331_224409"
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 980
@@ -67465,43 +67911,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_rear_parking_brake_cable_set",
-        "workstream": "brake_system",
-        "item": "Rear parking brake cable set with clips and equalizer hardware",
-        "status": "planned",
-        "procurement_stage": "spec_needed_before_order_pakistan_catalog_first",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "SNA Industries auto-control-cable lead / Fine Auto / NDE Store / Gari Parts / local Toyota-Land Cruiser supplier",
-        "supply_type": "part",
-        "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA|toyota_46410-60092_reference|cruiserparts_46410-60092_reference|web_mustakbil_sna_auto_control_cables|docs/pakistan-brake-piping-handbrake-sources-20260524.md|user_update_2026-05-24_local_only_no_expensive_imports",
-        "notes": "BASELINE MUST REPLACE during the suspension/brake access window. For a Pakistan-based FCP-style route, ask SNA first whether its auto-control-cable channel can supply or make this parking-brake cable, then ask Fine Auto, NDE Store, Gari Parts, and local Toyota/Land Cruiser suppliers using Toyota 46410-60092 as a candidate reference for 3/1976-12/1978 FJ40/FJ45. Final buy still requires old left/right cable samples for ends, lengths, sheath lengths, adjuster/equalizer hardware, and backing-plate levers. No expensive import or custom cable route unless explicitly approved.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear parking brake cable set with clips and equalizer hardware \u00b7 local inventory photo \u00b7 SNA Industries auto-control-cable lead / Fine Auto / NDE Store / Gari Parts / local Toyota-Land Cruiser supplier",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260501_194305_gp_EllBGvXA",
-          "matched_tokens": [
-            "photo_20260501_194305_gp_ellbgvxa"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
-        }
-      },
-      {
         "entry_id": "part_brake_hydraulic_tees_unions_splitters_20260514",
         "workstream": "brake_system",
         "item": "Brake hydraulic splitter T-union and inline union replacement set",
@@ -67632,8 +68041,8 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "MTL Parts",
         "supply_type": "part",
-        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af",
-        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Gmail evidence shows both MTL order-received emails plus user payment follow-ups on 2026-04-22 and 2026-04-24. Covers the Millat M10/M12 bolt, nut, flat-washer, and lock-washer stock; sleeve/spacer cutting still waits for body-mount dry-stack measurements before final installation. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
+        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Gmail evidence shows both MTL order-received emails plus user payment follow-ups on 2026-04-22 and 2026-04-24. Covers the Millat M10/M12 bolt, nut, flat-washer, and lock-washer stock; sleeve/spacer cutting still waits for body-mount dry-stack measurements before final installation. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
         "estimated_visible_count": "150-220 visible, likely 180 | 35-60 visible, likely 45 | 70-125 visible, likely 95",
@@ -68257,6 +68666,44 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "part_daraz_cable_clip_clamp_assortment_20260527",
+        "workstream": "electrical_reset",
+        "item": "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "amount": "2216",
+        "amount_status": "confirmed_prorated",
+        "currency": "PKR",
+        "vendor": "Daraz / Buy More Save More Store",
+        "supply_type": "part",
+        "evidence_ref": "gmail_msg_19e6616c326fb4d4|gmail_order_242670698380938|bank_alert_19e6618015d8106b",
+        "notes": "Daraz order 242670698380938 confirmed 2026-05-27 from Buy More Save More Store. Hardware lines: 10pcs 2/3mm wire rope clamp / cable clip fastener adjustable screw copper metal fixture x1 at PKR 1055, and 10pcs 304 stainless solar PV cable clips/clamps x1 at PKR 1154. Allocated amount PKR 2216 equals line subtotal PKR 2209 plus prorated share of net shipping/saving from the mixed order. Paid by card as part of combined Daraz PKR 8387 bank alert. Candidate supplemental cable/wire support only: do not treat as final brake/clutch hydraulic line support, fuel-line support, or permanent harness support until physical fit, edge/chafe behavior, material/plating, screw quality, cable OD grip, and corrosion risk are checked.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_retaining_clips_cotter_pack_reference.svg",
+          "caption": "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 \u00b7 retaining clip and cotter reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "body_retaining_clips_cotter_pack_reference",
+          "matched_tokens": [
+            "retaining",
+            "clip"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
+      },
+      {
         "entry_id": "part_fastener_kit_d_millat",
         "workstream": "electrical_reset",
         "item": "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points",
@@ -68269,8 +68716,8 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "MTL Parts",
         "supply_type": "part",
-        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af",
-        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the ordered Millat washer/lock-washer stock used for grounding and vibration-resistant joints. Conductive paste and any non-Millat grounding top-up remain separate until physically confirmed. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
+        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the ordered Millat washer/lock-washer stock used for grounding and vibration-resistant joints. Conductive paste and any non-Millat grounding top-up remain separate until physically confirmed. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
         "estimated_visible_count": "70-125 visible, likely 95",
@@ -68436,6 +68883,43 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "relay",
           "matched_tokens": [
             "relay"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_star_washers",
+        "workstream": "electrical_reset",
+        "item": "Star washers (bite into metal)",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "local fastener / electrical hardware supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered",
+        "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
+          "caption": "Star washers (bite into metal) \u00b7 grounding washer hardware reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "graded_fasteners",
+          "matched_tokens": [
+            "washers"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -69987,7 +70471,7 @@ window.J40_DASHBOARD_DATA = {
     "open_counts_by_workstream": [
       {
         "workstream": "brake_system",
-        "open_count": 23,
+        "open_count": 22,
         "image": {
           "path": "../../photos/20260422_004356_gp_vTFgPfAQ_2.jpg",
           "caption": "Engine Bay Chassis Interface \u00b7 Underside Inspection \u00b7 2026-04-22",
@@ -70045,26 +70529,8 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "workstream": "body_chassis",
-        "open_count": 6,
-        "image": {
-          "path": "../../photos/20260517_195628_gp_Wog59oFg.jpg",
-          "caption": "Body Shell With Doors Removed \u00b7 Rust Assessment \u00b7 2026-05-17",
-          "captured_date": "2026-05-17",
-          "captured_time": "19:56:28",
-          "media_type": "photo",
-          "component_group": "body_exterior",
-          "specific_component": "body_shell_with_doors_removed",
-          "stage": "rust_assessment",
-          "media_id": "20260517_195628_gp_Wog59oFg",
-          "matched_tokens": [
-            "20260517_195628_gp_wog59ofg"
-          ]
-        }
-      },
-      {
         "workstream": "electrical_reset",
-        "open_count": 6,
+        "open_count": 8,
         "image": {
           "path": "../../data/raw/imports/J40.jpg",
           "caption": "J40 Electrical Wiring Diagram \u00b7 Electrical Reference \u00b7 2026-05-18",
@@ -70079,6 +70545,24 @@ window.J40_DASHBOARD_DATA = {
             "j40_electrical_wiring_diagram",
             "data/raw/imports/j40.graffle",
             "data/raw/imports/j40"
+          ]
+        }
+      },
+      {
+        "workstream": "body_chassis",
+        "open_count": 6,
+        "image": {
+          "path": "../../photos/20260517_195628_gp_Wog59oFg.jpg",
+          "caption": "Body Shell With Doors Removed \u00b7 Rust Assessment \u00b7 2026-05-17",
+          "captured_date": "2026-05-17",
+          "captured_time": "19:56:28",
+          "media_type": "photo",
+          "component_group": "body_exterior",
+          "specific_component": "body_shell_with_doors_removed",
+          "stage": "rust_assessment",
+          "media_id": "20260517_195628_gp_Wog59oFg",
+          "matched_tokens": [
+            "20260517_195628_gp_wog59ofg"
           ]
         }
       },
@@ -76039,12 +76523,12 @@ window.J40_DASHBOARD_DATA = {
   },
   "capture_tasks": {
     "summary": {
-      "total_tasks": 108,
-      "now_tasks": 96,
+      "total_tasks": 106,
+      "now_tasks": 94,
       "later_tasks": 12,
-      "p0_tasks": 37,
-      "photo_tasks": 42,
-      "measurement_tasks": 76
+      "p0_tasks": 35,
+      "photo_tasks": 40,
+      "measurement_tasks": 74
     },
     "counts_by_workstream": [
       {
@@ -76057,7 +76541,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "brake_system",
-        "count": 15
+        "count": 13
       },
       {
         "workstream": "chassis_fixing",
@@ -76119,7 +76603,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "task_type": "photo_measurement",
-        "count": 29
+        "count": 27
       },
       {
         "task_type": "template",
@@ -76145,7 +76629,7 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_priority": [
       {
         "priority": "P0",
-        "count": 37
+        "count": 35
       },
       {
         "priority": "P1",
@@ -76706,216 +77190,6 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
-        "task_id": "brake_requirement:BR-SYS-001",
-        "title": "Master cylinder reservoir and brake-balance service decision",
-        "workstream": "brake_system",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "needs_master_layout_and_thread_capture",
-        "location": "Master cylinder reservoir booster and proportioning area",
-        "action": "Photograph and inspect the installed master, reservoir, booster, vacuum hose, and proportioning/bias hardware before buying system-level parts. May 14 photos add installed flare-nut/fitting context; still measure port threads and seats if any master/proportioning line is opened.",
-        "data_needed": "Master bore/markings, reservoir condition, port threads, flare seats, booster/vacuum layout, proportioning valve ports",
-        "blocks": "BR-SYS-001",
-        "record_result_in": "",
-        "source_label": "Brake Requirements",
-        "source_path": "data/manual/brake_system_requirements.csv",
-        "source_row_id": "BR-SYS-001",
-        "notes": "System-level parts are safety-critical but must match the installed conversion and plumbing. May 14 fitting photos support a double/inverted flare working basis but do not replace direct thread/seat measurement.",
-        "evidence_ref": "20260331_224409|20260331_224423|20260324_004852|20260423_232220_gp_ezwEcH2g|20260514_095907_gp_Ni1EUf4A|20260514_095926_gp_YBNOqh9A|20260514_100647_gp_foDr3ymA",
-        "evidence_images": [
-          {
-            "path": "../../photos/20260331_224409.jpg",
-            "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
-            "captured_date": "2026-03-31",
-            "captured_time": "22:44:09",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_floor_underside_and_lines",
-            "stage": "underside_inspection",
-            "media_id": "20260331_224409",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260331_224423.jpg",
-            "caption": "Frame Floor Underside And Lines \u00b7 Underside Inspection \u00b7 2026-03-31",
-            "captured_date": "2026-03-31",
-            "captured_time": "22:44:23",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_floor_underside_and_lines",
-            "stage": "underside_inspection",
-            "media_id": "20260331_224423",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260324_004852.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
-            "captured_date": "2026-03-24",
-            "captured_time": "00:48:52",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "underside_inspection",
-            "media_id": "20260324_004852",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260423_232220_gp_ezwEcH2g.jpg",
-            "caption": "Steering And Suspension Linkages \u00b7 Underside Inspection \u00b7 2026-04-23",
-            "captured_date": "2026-04-23",
-            "captured_time": "23:22:20",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "steering_and_suspension_linkages",
-            "stage": "underside_inspection",
-            "media_id": "20260423_232220_gp_ezwEcH2g",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260514_095907_gp_Ni1EUf4A.jpg",
-            "caption": "Frame Floor Underside And Lines \u00b7 Brake System \u00b7 2026-05-14",
-            "captured_date": "2026-05-14",
-            "captured_time": "09:59:07",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_floor_underside_and_lines",
-            "stage": "brake_system",
-            "media_id": "20260514_095907_gp_Ni1EUf4A",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260514_095926_gp_YBNOqh9A.jpg",
-            "caption": "Frame Floor Underside And Lines \u00b7 Brake System \u00b7 2026-05-14",
-            "captured_date": "2026-05-14",
-            "captured_time": "09:59:26",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_floor_underside_and_lines",
-            "stage": "brake_system",
-            "media_id": "20260514_095926_gp_YBNOqh9A",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260514_100647_gp_foDr3ymA.jpg",
-            "caption": "Frame Floor Underside And Lines \u00b7 Brake System \u00b7 2026-05-14",
-            "captured_date": "2026-05-14",
-            "captured_time": "10:06:47",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_floor_underside_and_lines",
-            "stage": "brake_system",
-            "media_id": "20260514_100647_gp_foDr3ymA",
-            "matched_tokens": []
-          }
-        ],
-        "links": [
-          {
-            "url": "../../data/manual/brake_system_requirements.csv",
-            "label": "Brake Requirements"
-          }
-        ]
-      },
-      {
-        "task_id": "brake_requirement:BR-REAR-005",
-        "title": "Rear brake shoes and spring/adjuster hardware",
-        "workstream": "brake_system",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "needs_drum_opening",
-        "location": "Left and right rear drums and internal shoe hardware",
-        "action": "Do not order exact shoes or spring kit until the drums are opened and the shoe width/diameter and adjuster style are confirmed. Remove drums now only if the truck is safely supported and will not need parking-brake holding force.",
-        "data_needed": "Drum inside diameter, shoe width, shoe arc/length, adjuster style, spring layout, backing plate condition, shoe lining condition, drum scoring/step",
-        "blocks": "BR-REAR-005",
-        "record_result_in": "",
-        "source_label": "Brake Requirements",
-        "source_path": "data/manual/brake_system_requirements.csv",
-        "source_row_id": "BR-REAR-005",
-        "notes": "May 12 photos add rear drum outside context. Rear shoes and hardware are baseline replacement items; keep rear drums as the default unless inspection gives a real reason to convert.",
-        "evidence_ref": "20260501_194322_gp_XuRtjN4w|20260324_004852|20260324_004906|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA",
-        "evidence_images": [
-          {
-            "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
-            "captured_date": "2026-05-01",
-            "captured_time": "19:43:22",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_spring_hanger_and_crossmember",
-            "stage": "chassis_fixing",
-            "media_id": "20260501_194322_gp_XuRtjN4w",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260324_004852.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
-            "captured_date": "2026-03-24",
-            "captured_time": "00:48:52",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "underside_inspection",
-            "media_id": "20260324_004852",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260324_004906.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
-            "captured_date": "2026-03-24",
-            "captured_time": "00:49:06",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "underside_inspection",
-            "media_id": "20260324_004906",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_072723_gp_r9KEkOdg.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Steering Brakes Suspension \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:27:23",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "steering_brakes_suspension",
-            "media_id": "20260512_072723_gp_r9KEkOdg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_072742_gp_uSvGBUiA.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Steering Brakes Suspension \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:27:42",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "steering_brakes_suspension",
-            "media_id": "20260512_072742_gp_uSvGBUiA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_072947_gp_bNB9GvHA.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Steering Brakes Suspension \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:29:47",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "steering_brakes_suspension",
-            "media_id": "20260512_072947_gp_bNB9GvHA",
-            "matched_tokens": []
-          }
-        ],
-        "links": [
-          {
-            "url": "../../data/manual/brake_system_requirements.csv",
-            "label": "Brake Requirements"
-          }
-        ]
-      },
-      {
         "task_id": "brake_requirement:BR-REAR-003",
         "title": "Rear center flexible brake hose",
         "workstream": "brake_system",
@@ -77071,14 +77345,14 @@ window.J40_DASHBOARD_DATA = {
         "timing": "now",
         "status": "needs_cable_end_identification",
         "location": "Rear axle to rear drum backing plates",
-        "action": "Can remove now after photos and labels; disconnect at equalizer/intermediate link and at both rear backing plates, then keep the old cables as length/end samples. Do not cut unless a cable is seized and already marked for replacement.",
+        "action": "Received Daraz hand-brake cable; before installation compare the received cable against the old left/right samples and confirm whether it covers the complete rear cable set. Keep old cables intact until fit is proven.",
         "data_needed": "Overall cable length, sheath length, end fitting type at backing plate, end fitting type at equalizer/intermediate cable, bracket/clip positions, adjuster thread size and travel",
         "blocks": "BR-REAR-001",
         "record_result_in": "",
         "source_label": "Brake Requirements",
         "source_path": "data/manual/brake_system_requirements.csv",
         "source_row_id": "BR-REAR-001",
-        "notes": "May 12 photos add rear cable/lever route context. Treat as baseline new replacement; old cables remain samples only.",
+        "notes": "Daraz/Vintage Jeep Parts hand-brake cable received 2026-05-26. Sample-match remains required before installation; verify complete set versus single cable, end fittings, sheath length, adjuster/clevis/clip hardware, and route fit against the old cables. May 12 photos add rear cable/lever route context. Old cables remain samples only.",
         "evidence_ref": "20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260324_004852|20260324_004906|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA",
         "evidence_images": [
           {
@@ -85446,9 +85720,9 @@ window.J40_DASHBOARD_DATA = {
       {
         "supply_type": "tool",
         "previously": 59,
-        "in_process": 12,
+        "in_process": 14,
         "still_required": 8,
-        "total": 79
+        "total": 81
       },
       {
         "supply_type": "substance",
@@ -85459,10 +85733,10 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "supply_type": "part",
-        "previously": 95,
-        "in_process": 7,
-        "still_required": 79,
-        "total": 181
+        "previously": 96,
+        "in_process": 11,
+        "still_required": 76,
+        "total": 183
       }
     ],
     "rows_by_status": {
@@ -88264,6 +88538,45 @@ window.J40_DASHBOARD_DATA = {
             "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
             "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
             "match_score": 236
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_rear_parking_brake_cable_set",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "FJ40 BJ-40 Toyota Land Cruiser hand brake cable",
+          "vendor": "Daraz / Vintage Jeep Parts",
+          "amount": "5795",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "previously",
+          "status_detail": "received",
+          "procurement_stage": "received",
+          "payment_status": "paid",
+          "delivery_status": "received",
+          "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA|toyota_46410-60092_reference|cruiserparts_46410-60092_reference|web_mustakbil_sna_auto_control_cables|docs/pakistan-brake-piping-handbrake-sources-20260524.md|gmail_msg_19e5e241f244eee6|gmail_order_243701549680938|bank_alert_19e5e24ab832b0b7|user_update_2026-05-26_hand_brake_cable_received|gmail_msg_19e6365b0b6ff3b2|gmail_delivery_243701549680938",
+          "notes": "Daraz order 243701549680938 confirmed 2026-05-25 from Vintage Jeep Parts: FJ40 BJ-40 TOYOTA LAND CRUISER HAND BRAKE CABLE x1, item PKR 5600 plus PKR 195 shipping, total PKR 5795, paid by card. User confirmed physical receipt on 2026-05-26. Receipt/fit check before installation: confirm whether the received cable is a complete left/right rear set or a single cable, check sheath length, overall length, backing-plate end, equalizer/intermediate end, adjuster/clevis/clip hardware, and match old samples before use. Old cables remain samples until replacement fit is proven. | Gmail delivery confirmation 2026-05-26 says Daraz order 243701549680938 was successfully delivered; keep receipt/packaging and still sample-match before installation.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
+            "caption": "FJ40 BJ-40 Toyota Land Cruiser hand brake cable \u00b7 exact order evidence \u00b7 Daraz / Vintage Jeep Parts",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "exact_order_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260501_194305_gp_EllBGvXA",
+            "matched_tokens": [
+              "photo_20260501_194305_gp_ellbgvxa"
+            ],
+            "match_basis": "exact_order_evidence",
+            "match_score": 980
           }
         },
         {
@@ -92135,8 +92448,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "ordered_pending_delivery",
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
-          "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af",
-          "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the Millat M6/M8 bolt, nut, and washer portion of the body-panel/bracket hardware set. Receipt check still needs to verify exact lengths, quantities, and any local top-up for sizes that were not clean Millat matches. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
+          "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+          "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the Millat M6/M8 bolt, nut, and washer portion of the body-panel/bracket hardware set. Receipt check still needs to verify exact lengths, quantities, and any local top-up for sizes that were not clean Millat matches. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
           "links": [],
           "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
           "estimated_visible_count": "150-220 visible, likely 180 | 35-60 visible, likely 45 | 70-125 visible, likely 95",
@@ -92201,6 +92514,146 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "part_brake_master_reservoir_refresh",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Brake master cylinder candidate order - ULTIMA UFM-1041 x2; reservoir/proportioning still inspect",
+          "vendor": "PakWheels AUTOSTORE",
+          "amount": "12596",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "unknown",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "BR-SYS-001|20260331_224409|20260331_224423|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
+          "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: ULTIMA Master Brake Cylinder For Toyota FJ40 1975-1990, UFM-1041, qty 2 at PKR 6000 each. Allocated ledger amount PKR 12596 equals PKR 12000 line subtotal plus PKR 596 prorated shipping/tax from the two mixed orders. Treat these as candidate stock only: final use still requires installed master bore/markings, port threads, flare seats, reservoir layout, booster pushrod depth, and proportioning/bias plumbing confirmation before installation.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260331_224409.jpg",
+            "caption": "Brake master cylinder candidate order - ULTIMA UFM-1041 x2; reservoir/proportioning still inspect \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "exact_order_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260331_224409",
+            "matched_tokens": [
+              "photo_20260331_224409"
+            ],
+            "match_basis": "exact_order_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_clutch_master_slave_cylinders_20260514",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect",
+          "vendor": "PakWheels AUTOSTORE",
+          "amount": "3700",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_partial_pending_delivery",
+          "payment_status": "unknown",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298",
+          "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation.",
+          "links": [
+            {
+              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+              "label": "Longman pipe and hose order CSV",
+              "download": true
+            },
+            {
+              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+              "label": "Longman pipe and hose order spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+              "label": "Pipe order release specs CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+              "label": "Pipe photo and measurement index CSV",
+              "download": true
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
+            "caption": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect \u00b7 hard-line bending and flaring reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "hard_line_bending_flaring_reference",
+            "matched_tokens": [
+              "hard",
+              "line",
+              "fabrication"
+            ],
+            "match_basis": "local_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_rear_brake_shoes_hardware",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match",
+          "vendor": "PakWheels AUTOSTORE",
+          "amount": "33600",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "unknown",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
+          "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster/spring layout, and drum condition. Spring/hardware kit and wheel-cylinder fasteners are not proven included.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+            "caption": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "exact_order_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260524_025547_gp_yCvA0bxA",
+            "matched_tokens": [
+              "photo_20260524_025547_gp_ycva0bxa"
+            ],
+            "match_basis": "exact_order_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "part_fastener_kit_a_millat",
           "supply_type": "part",
           "inventory_group": "mechanical",
@@ -92214,8 +92667,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "ordered_pending_delivery",
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
-          "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af",
-          "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Gmail evidence shows both MTL order-received emails plus user payment follow-ups on 2026-04-22 and 2026-04-24. Covers the Millat M10/M12 bolt, nut, flat-washer, and lock-washer stock; sleeve/spacer cutting still waits for body-mount dry-stack measurements before final installation. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
+          "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+          "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Gmail evidence shows both MTL order-received emails plus user payment follow-ups on 2026-04-22 and 2026-04-24. Covers the Millat M10/M12 bolt, nut, flat-washer, and lock-washer stock; sleeve/spacer cutting still waits for body-mount dry-stack measurements before final installation. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
           "links": [],
           "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
           "estimated_visible_count": "150-220 visible, likely 180 | 35-60 visible, likely 45 | 70-125 visible, likely 95",
@@ -92240,6 +92693,46 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "part_daraz_cable_clip_clamp_assortment_20260527",
+          "supply_type": "part",
+          "inventory_group": "electrical",
+          "item": "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10",
+          "vendor": "Daraz / Buy More Save More Store",
+          "amount": "2216",
+          "currency": "PKR",
+          "workstream": "electrical_reset",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "gmail_msg_19e6616c326fb4d4|gmail_order_242670698380938|bank_alert_19e6618015d8106b",
+          "notes": "Daraz order 242670698380938 confirmed 2026-05-27 from Buy More Save More Store. Hardware lines: 10pcs 2/3mm wire rope clamp / cable clip fastener adjustable screw copper metal fixture x1 at PKR 1055, and 10pcs 304 stainless solar PV cable clips/clamps x1 at PKR 1154. Allocated amount PKR 2216 equals line subtotal PKR 2209 plus prorated share of net shipping/saving from the mixed order. Paid by card as part of combined Daraz PKR 8387 bank alert. Candidate supplemental cable/wire support only: do not treat as final brake/clutch hydraulic line support, fuel-line support, or permanent harness support until physical fit, edge/chafe behavior, material/plating, screw quality, cable OD grip, and corrosion risk are checked.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_retaining_clips_cotter_pack_reference.svg",
+            "caption": "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 \u00b7 retaining clip and cotter reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "body_retaining_clips_cotter_pack_reference",
+            "matched_tokens": [
+              "retaining",
+              "clip"
+            ],
+            "match_basis": "local_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "part_fastener_kit_d_millat",
           "supply_type": "part",
           "inventory_group": "electrical",
@@ -92253,8 +92746,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "ordered_pending_delivery",
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
-          "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af",
-          "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the ordered Millat washer/lock-washer stock used for grounding and vibration-resistant joints. Conductive paste and any non-Millat grounding top-up remain separate until physically confirmed. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
+          "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+          "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the ordered Millat washer/lock-washer stock used for grounding and vibration-resistant joints. Conductive paste and any non-Millat grounding top-up remain separate until physically confirmed. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
           "links": [],
           "estimated_hardware_type": "Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
           "estimated_visible_count": "70-125 visible, likely 95",
@@ -92823,6 +93316,84 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "air",
               "compressor"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_daraz_led_flood_light_100w_ip66_20260527",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Daraz 100W IP66 LED flood light - workshop/site lighting",
+          "vendor": "Daraz / Tz electronic",
+          "amount": "5169",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "gmail_msg_19e6616c37064cd5|gmail_order_242670698180938|bank_alert_19e6618015d8106b",
+          "notes": "Daraz order 242670698180938 confirmed 2026-05-27 from Tz electronic: Led Flood Light 100W IP66 Water proof x1, item PKR 4999 plus PKR 170 shipping, total PKR 5169, paid by card. Standard Chartered alert at 2026-05-27 02:00 PKT shows combined Daraz charge PKR 8387 for this order plus order 242670698380938. Delivery window 2026-05-30 to 2026-06-07. Workshop/site lighting only; this does not change vehicle exterior lighting requirements. Receipt check: confirm 100W marking, IP66-style housing/gland, intact lens, plug/lead condition, safe 220-240 V operation, and useful work-area beam before relying on it for night/paint inspection work.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/roof_door_window.jpg",
+            "caption": "Daraz 100W IP66 LED flood light - workshop/site lighting \u00b7 body/glass hardware reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "roof_door_window",
+            "matched_tokens": [
+              "body"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_daraz_angle_grinder_side_handle_20260527",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Daraz angle-grinder auxiliary side handle - 8mm/10mm thread candidate",
+          "vendor": "Daraz / Buy More Save More Store",
+          "amount": "1002",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "gmail_msg_19e6616c326fb4d4|gmail_order_242670698380938|bank_alert_19e6618015d8106b",
+          "notes": "Daraz order 242670698380938 confirmed 2026-05-27 includes NEW SALE 8mm 10mm Thread Auxiliary Side Handle For Angle Grinder Grinding Machine Tools x1 at PKR 999. Allocated amount PKR 1002 equals line subtotal plus prorated net shipping/saving from the mixed order. Candidate replacement/accessory only: on receipt, verify M8/M10 thread compatibility with the actual grinder, thread engagement, handle stiffness, heat resistance, and secure fit before using during grinding or wire-brush work.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/heavy_battery_cable.jpg",
+            "caption": "Daraz angle-grinder auxiliary side handle - 8mm/10mm thread candidate \u00b7 automotive cable reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "heavy_battery_cable",
+            "matched_tokens": [
+              "cable"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -93787,45 +94358,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_brake_master_reservoir_refresh",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Brake master reservoir and proportioning service parts",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "brake_system",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "spec_needed_before_order",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "BR-SYS-001|20260331_224409|20260331_224423",
-          "notes": "Inspect installed master, reservoir, booster, vacuum line, and proportioning/bias hardware; replace only after bore, port threads, flare seats, leak condition, and installed layout are confirmed.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../photos/20260331_224409.jpg",
-            "caption": "Brake master reservoir and proportioning service parts \u00b7 local inventory photo",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260331_224409",
-            "matched_tokens": [
-              "photo_20260331_224409"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_brake_booster_servo_44610_60050",
           "supply_type": "part",
           "inventory_group": "mechanical",
@@ -94020,45 +94552,6 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "clutch",
               "line"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_clutch_master_slave_cylinders_20260514",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Clutch master and slave cylinder replace/rebuild pair - inspect then buy",
-          "vendor": "brake/clutch parts supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "brake_system",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "inspect_then_buy",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001",
-          "notes": "Inspect clutch master and slave during the hydraulic-line refresh. Replace or rebuild if leaking, pitted, seized, bypassing, missing dust boots, or if port/thread condition is unknown. Match bore, mounting pattern, pushrod, reservoir/port layout, and bleed screw access before payment.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_master.jpg",
-            "caption": "Clutch master and slave cylinder replace/rebuild pair - inspect then buy \u00b7 clutch/brake cylinder reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "brake_master",
-            "matched_tokens": [
-              "clutch"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -94444,45 +94937,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_rear_brake_shoes_hardware",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Rear brake shoes, drum hardware, and wheel-cylinder bolt kit",
-          "vendor": "local brake parts supplier / PakWheels-local lead / sample-match supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "brake_system",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready_local_catalog_first_pending_measurement",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports",
-          "notes": "BASELINE MUST REPLACE. Prefer local shoes, hardware, and wheel-cylinder fasteners; use the PakWheels K-2255-N/Y listing and imported catalog numbers only as search/reference leads. Before payment, measure shoe width and compare spring/adjuster layout; if this is a non-USA 9/1975+ 3-inch drum setup, use a matching local 3-inch shoe/hardware route. Keep old springs, adjusters, and anchors as samples until the new kit is dry-fitted. No expensive import unless explicitly approved.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-            "caption": "Rear brake shoes, drum hardware, and wheel-cylinder bolt kit \u00b7 local inventory photo \u00b7 local brake parts supplier / PakWheels-local lead / sample-match supplier",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260524_025547_gp_yCvA0bxA",
-            "matched_tokens": [
-              "photo_20260524_025547_gp_ycva0bxa"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_rear_center_brake_flex_hose",
           "supply_type": "part",
           "inventory_group": "mechanical",
@@ -94545,45 +94999,6 @@ window.J40_DASHBOARD_DATA = {
           "image": {
             "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
             "caption": "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips \u00b7 local inventory photo \u00b7 local brake parts / hardware supplier",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260501_194305_gp_EllBGvXA",
-            "matched_tokens": [
-              "photo_20260501_194305_gp_ellbgvxa"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_rear_parking_brake_cable_set",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Rear parking brake cable set with clips and equalizer hardware",
-          "vendor": "SNA Industries auto-control-cable lead / Fine Auto / NDE Store / Gari Parts / local Toyota-Land Cruiser supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "brake_system",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "spec_needed_before_order_pakistan_catalog_first",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA|toyota_46410-60092_reference|cruiserparts_46410-60092_reference|web_mustakbil_sna_auto_control_cables|docs/pakistan-brake-piping-handbrake-sources-20260524.md|user_update_2026-05-24_local_only_no_expensive_imports",
-          "notes": "BASELINE MUST REPLACE during the suspension/brake access window. For a Pakistan-based FCP-style route, ask SNA first whether its auto-control-cable channel can supply or make this parking-brake cable, then ask Fine Auto, NDE Store, Gari Parts, and local Toyota/Land Cruiser suppliers using Toyota 46410-60092 as a candidate reference for 3/1976-12/1978 FJ40/FJ45. Final buy still requires old left/right cable samples for ends, lengths, sheath lengths, adjuster/equalizer hardware, and backing-plate levers. No expensive import or custom cable route unless explicitly approved.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear parking brake cable set with clips and equalizer hardware \u00b7 local inventory photo \u00b7 SNA Industries auto-control-cable lead / Fine Auto / NDE Store / Gari Parts / local Toyota-Land Cruiser supplier",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -95404,6 +95819,45 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "relay",
             "matched_tokens": [
               "relay"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_star_washers",
+          "supply_type": "part",
+          "inventory_group": "electrical",
+          "item": "Star washers (bite into metal)",
+          "vendor": "local fastener / electrical hardware supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "electrical_reset",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered",
+          "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
+            "caption": "Star washers (bite into metal) \u00b7 grounding washer hardware reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "graded_fasteners",
+            "matched_tokens": [
+              "washers"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -97421,6 +97875,46 @@ window.J40_DASHBOARD_DATA = {
     "all_rows": [
       {
         "source": "expenses",
+        "source_ref": "part_daraz_cable_clip_clamp_assortment_20260527",
+        "supply_type": "part",
+        "inventory_group": "electrical",
+        "item": "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10",
+        "vendor": "Daraz / Buy More Save More Store",
+        "amount": "2216",
+        "currency": "PKR",
+        "workstream": "electrical_reset",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "gmail_msg_19e6616c326fb4d4|gmail_order_242670698380938|bank_alert_19e6618015d8106b",
+        "notes": "Daraz order 242670698380938 confirmed 2026-05-27 from Buy More Save More Store. Hardware lines: 10pcs 2/3mm wire rope clamp / cable clip fastener adjustable screw copper metal fixture x1 at PKR 1055, and 10pcs 304 stainless solar PV cable clips/clamps x1 at PKR 1154. Allocated amount PKR 2216 equals line subtotal PKR 2209 plus prorated share of net shipping/saving from the mixed order. Paid by card as part of combined Daraz PKR 8387 bank alert. Candidate supplemental cable/wire support only: do not treat as final brake/clutch hydraulic line support, fuel-line support, or permanent harness support until physical fit, edge/chafe behavior, material/plating, screw quality, cable OD grip, and corrosion risk are checked.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_retaining_clips_cotter_pack_reference.svg",
+          "caption": "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 \u00b7 retaining clip and cotter reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "body_retaining_clips_cotter_pack_reference",
+          "matched_tokens": [
+            "retaining",
+            "clip"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_fastener_kit_d_millat",
         "supply_type": "part",
         "inventory_group": "electrical",
@@ -97434,8 +97928,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "ordered_pending_delivery",
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
-        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af",
-        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the ordered Millat washer/lock-washer stock used for grounding and vibration-resistant joints. Conductive paste and any non-Millat grounding top-up remain separate until physically confirmed. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
+        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the ordered Millat washer/lock-washer stock used for grounding and vibration-resistant joints. Conductive paste and any non-Millat grounding top-up remain separate until physically confirmed. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
         "estimated_visible_count": "70-125 visible, likely 95",
@@ -97455,6 +97949,107 @@ window.J40_DASHBOARD_DATA = {
             "fastener"
           ],
           "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_brake_master_reservoir_refresh",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Brake master cylinder candidate order - ULTIMA UFM-1041 x2; reservoir/proportioning still inspect",
+        "vendor": "PakWheels AUTOSTORE",
+        "amount": "12596",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "BR-SYS-001|20260331_224409|20260331_224423|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
+        "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: ULTIMA Master Brake Cylinder For Toyota FJ40 1975-1990, UFM-1041, qty 2 at PKR 6000 each. Allocated ledger amount PKR 12596 equals PKR 12000 line subtotal plus PKR 596 prorated shipping/tax from the two mixed orders. Treat these as candidate stock only: final use still requires installed master bore/markings, port threads, flare seats, reservoir layout, booster pushrod depth, and proportioning/bias plumbing confirmation before installation.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260331_224409.jpg",
+          "caption": "Brake master cylinder candidate order - ULTIMA UFM-1041 x2; reservoir/proportioning still inspect \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "exact_order_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260331_224409",
+          "matched_tokens": [
+            "photo_20260331_224409"
+          ],
+          "match_basis": "exact_order_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_clutch_master_slave_cylinders_20260514",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect",
+        "vendor": "PakWheels AUTOSTORE",
+        "amount": "3700",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_partial_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001|gmail_msg_19e5e217925bd4c7|gmail_order_1075298",
+        "notes": "PakWheels order #1075298 confirmed 2026-05-25: Trupart Clutch Master Cylinder For Toyota BJ40+BJ60+HJ60 FM-1246 OEM, qty 1 at PKR 3520. Allocated ledger amount PKR 3700 equals line subtotal plus PKR 180 prorated shipping/tax from the mixed order. This only covers the clutch master candidate; slave cylinder, flex hose, hard-line fittings, bore/port/thread/pushrod match, and leak inspection remain open before installation.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
+          "caption": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect \u00b7 hard-line bending and flaring reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "hard_line_bending_flaring_reference",
+          "matched_tokens": [
+            "hard",
+            "line",
+            "fabrication"
+          ],
+          "match_basis": "local_reference_image",
           "match_score": 700
         }
       },
@@ -97514,8 +98109,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "ordered_pending_delivery",
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
-        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af",
-        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Gmail evidence shows both MTL order-received emails plus user payment follow-ups on 2026-04-22 and 2026-04-24. Covers the Millat M10/M12 bolt, nut, flat-washer, and lock-washer stock; sleeve/spacer cutting still waits for body-mount dry-stack measurements before final installation. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
+        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Gmail evidence shows both MTL order-received emails plus user payment follow-ups on 2026-04-22 and 2026-04-24. Covers the Millat M10/M12 bolt, nut, flat-washer, and lock-washer stock; sleeve/spacer cutting still waits for body-mount dry-stack measurements before final installation. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
         "estimated_visible_count": "150-220 visible, likely 180 | 35-60 visible, likely 45 | 70-125 visible, likely 95",
@@ -97580,6 +98175,45 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "part_rear_brake_shoes_hardware",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match",
+        "vendor": "PakWheels AUTOSTORE",
+        "amount": "33600",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
+        "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster/spring layout, and drum condition. Spring/hardware kit and wheel-cylinder fasteners are not proven included.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+          "caption": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "exact_order_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260524_025547_gp_yCvA0bxA",
+          "matched_tokens": [
+            "photo_20260524_025547_gp_ycva0bxa"
+          ],
+          "match_basis": "exact_order_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_fastener_kit_b_millat",
         "supply_type": "part",
         "inventory_group": "parts",
@@ -97593,8 +98227,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "ordered_pending_delivery",
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
-        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af",
-        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the Millat M6/M8 bolt, nut, and washer portion of the body-panel/bracket hardware set. Receipt check still needs to verify exact lengths, quantities, and any local top-up for sizes that were not clean Millat matches. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up.",
+        "evidence_ref": "gmail_msg_19d9d26f415b48fa|gmail_msg_19d9cd91c8d55038|gmail_msg_19d9ce99ff7c3bab|gmail_msg_19db2d73afb4876e|gmail_msg_19db2d7aa7027a2c|gmail_msg_19dbc4673054004c|gmail_msg_19dbc462741aef46|gmail_msg_19e0722af30bb1af|gmail_msg_19e63d37bef39526|gmail_order_38903_processing_20260526",
+        "notes": "Registered under paid MTL/Millat orders 38902 and 38903 from 2026-04-18. Covers the Millat M6/M8 bolt, nut, and washer portion of the body-panel/bracket hardware set. Receipt check still needs to verify exact lengths, quantities, and any local top-up for sizes that were not clean Millat matches. | Gmail recheck 2026-05-12 found user follow-up sent 2026-05-08 asking MTL to dispatch paid orders #38902 and #38903 because they were still marked on hold; no dispatch or delivery response was found, so keep pending delivery/on-hold follow-up. | Gmail recheck 2026-05-26 found a fresh MTL Parts order-received/processing email for order #38903: M12 flat washers x40, M8 flat washers x20, and plate-spacers x4, total PKR 1038. No dispatch, tracking, or delivery proof yet, so keep pending delivery; #38902 still needs delivery confirmation.",
         "links": [],
         "estimated_hardware_type": "Metric machine screws/bolts/hex-flange bolts (150-220 visible, likely 180) | Loose standard hex/flange nuts (35-60 visible, likely 45) | Flat/spring/star washers and standard body washers (70-125 visible, likely 95)",
         "estimated_visible_count": "150-220 visible, likely 180 | 35-60 visible, likely 45 | 70-125 visible, likely 95",
@@ -97771,6 +98405,84 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "air",
             "compressor"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_daraz_led_flood_light_100w_ip66_20260527",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Daraz 100W IP66 LED flood light - workshop/site lighting",
+        "vendor": "Daraz / Tz electronic",
+        "amount": "5169",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "gmail_msg_19e6616c37064cd5|gmail_order_242670698180938|bank_alert_19e6618015d8106b",
+        "notes": "Daraz order 242670698180938 confirmed 2026-05-27 from Tz electronic: Led Flood Light 100W IP66 Water proof x1, item PKR 4999 plus PKR 170 shipping, total PKR 5169, paid by card. Standard Chartered alert at 2026-05-27 02:00 PKT shows combined Daraz charge PKR 8387 for this order plus order 242670698380938. Delivery window 2026-05-30 to 2026-06-07. Workshop/site lighting only; this does not change vehicle exterior lighting requirements. Receipt check: confirm 100W marking, IP66-style housing/gland, intact lens, plug/lead condition, safe 220-240 V operation, and useful work-area beam before relying on it for night/paint inspection work.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/roof_door_window.jpg",
+          "caption": "Daraz 100W IP66 LED flood light - workshop/site lighting \u00b7 body/glass hardware reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "roof_door_window",
+          "matched_tokens": [
+            "body"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_daraz_angle_grinder_side_handle_20260527",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Daraz angle-grinder auxiliary side handle - 8mm/10mm thread candidate",
+        "vendor": "Daraz / Buy More Save More Store",
+        "amount": "1002",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "gmail_msg_19e6616c326fb4d4|gmail_order_242670698380938|bank_alert_19e6618015d8106b",
+        "notes": "Daraz order 242670698380938 confirmed 2026-05-27 includes NEW SALE 8mm 10mm Thread Auxiliary Side Handle For Angle Grinder Grinding Machine Tools x1 at PKR 999. Allocated amount PKR 1002 equals line subtotal plus prorated net shipping/saving from the mixed order. Candidate replacement/accessory only: on receipt, verify M8/M10 thread compatibility with the actual grinder, thread engagement, handle stiffness, heat resistance, and secure fit before using during grinding or wire-brush work.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/heavy_battery_cable.jpg",
+          "caption": "Daraz angle-grinder auxiliary side handle - 8mm/10mm thread candidate \u00b7 automotive cable reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "heavy_battery_cable",
+          "matched_tokens": [
+            "cable"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -100740,6 +101452,45 @@ window.J40_DASHBOARD_DATA = {
           "listing_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
           "image_url": "https://cdn.shopify.com/s/files/1/0424/5433/files/BF-354_DOT_3_Brake_Fluid_12_Oz_medium.jpg?v=1700503745",
           "match_score": 236
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_rear_parking_brake_cable_set",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "FJ40 BJ-40 Toyota Land Cruiser hand brake cable",
+        "vendor": "Daraz / Vintage Jeep Parts",
+        "amount": "5795",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "previously",
+        "status_detail": "received",
+        "procurement_stage": "received",
+        "payment_status": "paid",
+        "delivery_status": "received",
+        "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA|toyota_46410-60092_reference|cruiserparts_46410-60092_reference|web_mustakbil_sna_auto_control_cables|docs/pakistan-brake-piping-handbrake-sources-20260524.md|gmail_msg_19e5e241f244eee6|gmail_order_243701549680938|bank_alert_19e5e24ab832b0b7|user_update_2026-05-26_hand_brake_cable_received|gmail_msg_19e6365b0b6ff3b2|gmail_delivery_243701549680938",
+        "notes": "Daraz order 243701549680938 confirmed 2026-05-25 from Vintage Jeep Parts: FJ40 BJ-40 TOYOTA LAND CRUISER HAND BRAKE CABLE x1, item PKR 5600 plus PKR 195 shipping, total PKR 5795, paid by card. User confirmed physical receipt on 2026-05-26. Receipt/fit check before installation: confirm whether the received cable is a complete left/right rear set or a single cable, check sheath length, overall length, backing-plate end, equalizer/intermediate end, adjuster/clevis/clip hardware, and match old samples before use. Old cables remain samples until replacement fit is proven. | Gmail delivery confirmation 2026-05-26 says Daraz order 243701549680938 was successfully delivered; keep receipt/packaging and still sample-match before installation.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
+          "caption": "FJ40 BJ-40 Toyota Land Cruiser hand brake cable \u00b7 exact order evidence \u00b7 Daraz / Vintage Jeep Parts",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "exact_order_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260501_194305_gp_EllBGvXA",
+          "matched_tokens": [
+            "photo_20260501_194305_gp_ellbgvxa"
+          ],
+          "match_basis": "exact_order_evidence",
+          "match_score": 980
         }
       },
       {
@@ -106021,6 +106772,45 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "part_star_washers",
+        "supply_type": "part",
+        "inventory_group": "electrical",
+        "item": "Star washers (bite into metal)",
+        "vendor": "local fastener / electrical hardware supplier",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "electrical_reset",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered",
+        "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
+          "caption": "Star washers (bite into metal) \u00b7 grounding washer hardware reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "graded_fasteners",
+          "matched_tokens": [
+            "washers"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_hvac_trinary_switch_20260514",
         "supply_type": "part",
         "inventory_group": "electrical",
@@ -106738,45 +107528,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "part_brake_master_reservoir_refresh",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Brake master reservoir and proportioning service parts",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "brake_system",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "spec_needed_before_order",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "BR-SYS-001|20260331_224409|20260331_224423",
-        "notes": "Inspect installed master, reservoir, booster, vacuum line, and proportioning/bias hardware; replace only after bore, port threads, flare seats, leak condition, and installed layout are confirmed.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../photos/20260331_224409.jpg",
-          "caption": "Brake master reservoir and proportioning service parts \u00b7 local inventory photo",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260331_224409",
-          "matched_tokens": [
-            "photo_20260331_224409"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
-        }
-      },
-      {
-        "source": "expenses",
         "source_ref": "part_brake_booster_servo_44610_60050",
         "supply_type": "part",
         "inventory_group": "mechanical",
@@ -106971,45 +107722,6 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "clutch",
             "line"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_clutch_master_slave_cylinders_20260514",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Clutch master and slave cylinder replace/rebuild pair - inspect then buy",
-        "vendor": "brake/clutch parts supplier",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "brake_system",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "inspect_then_buy",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|RP-CLUTCH-001",
-        "notes": "Inspect clutch master and slave during the hydraulic-line refresh. Replace or rebuild if leaking, pitted, seized, bypassing, missing dust boots, or if port/thread condition is unknown. Match bore, mounting pattern, pushrod, reservoir/port layout, and bleed screw access before payment.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_master.jpg",
-          "caption": "Clutch master and slave cylinder replace/rebuild pair - inspect then buy \u00b7 clutch/brake cylinder reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "brake_master",
-          "matched_tokens": [
-            "clutch"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -107657,45 +108369,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "part_rear_brake_shoes_hardware",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Rear brake shoes, drum hardware, and wheel-cylinder bolt kit",
-        "vendor": "local brake parts supplier / PakWheels-local lead / sample-match supplier",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "brake_system",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready_local_catalog_first_pending_measurement",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports",
-        "notes": "BASELINE MUST REPLACE. Prefer local shoes, hardware, and wheel-cylinder fasteners; use the PakWheels K-2255-N/Y listing and imported catalog numbers only as search/reference leads. Before payment, measure shoe width and compare spring/adjuster layout; if this is a non-USA 9/1975+ 3-inch drum setup, use a matching local 3-inch shoe/hardware route. Keep old springs, adjusters, and anchors as samples until the new kit is dry-fitted. No expensive import unless explicitly approved.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-          "caption": "Rear brake shoes, drum hardware, and wheel-cylinder bolt kit \u00b7 local inventory photo \u00b7 local brake parts supplier / PakWheels-local lead / sample-match supplier",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260524_025547_gp_yCvA0bxA",
-          "matched_tokens": [
-            "photo_20260524_025547_gp_ycva0bxa"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
-        }
-      },
-      {
-        "source": "expenses",
         "source_ref": "part_rear_center_brake_flex_hose",
         "supply_type": "part",
         "inventory_group": "mechanical",
@@ -107731,45 +108404,6 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 999
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_rear_parking_brake_cable_set",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Rear parking brake cable set with clips and equalizer hardware",
-        "vendor": "SNA Industries auto-control-cable lead / Fine Auto / NDE Store / Gari Parts / local Toyota-Land Cruiser supplier",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "brake_system",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "spec_needed_before_order_pakistan_catalog_first",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "BR-REAR-001|20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA|toyota_46410-60092_reference|cruiserparts_46410-60092_reference|web_mustakbil_sna_auto_control_cables|docs/pakistan-brake-piping-handbrake-sources-20260524.md|user_update_2026-05-24_local_only_no_expensive_imports",
-        "notes": "BASELINE MUST REPLACE during the suspension/brake access window. For a Pakistan-based FCP-style route, ask SNA first whether its auto-control-cable channel can supply or make this parking-brake cable, then ask Fine Auto, NDE Store, Gari Parts, and local Toyota/Land Cruiser suppliers using Toyota 46410-60092 as a candidate reference for 3/1976-12/1978 FJ40/FJ45. Final buy still requires old left/right cable samples for ends, lengths, sheath lengths, adjuster/equalizer hardware, and backing-plate levers. No expensive import or custom cable route unless explicitly approved.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-          "caption": "Rear parking brake cable set with clips and equalizer hardware \u00b7 local inventory photo \u00b7 SNA Industries auto-control-cable lead / Fine Auto / NDE Store / Gari Parts / local Toyota-Land Cruiser supplier",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260501_194305_gp_EllBGvXA",
-          "matched_tokens": [
-            "photo_20260501_194305_gp_ellbgvxa"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
         }
       },
       {
@@ -109363,8 +109997,8 @@ window.J40_DASHBOARD_DATA = {
     "drop_zone": "data/reference/other_j40_builds",
     "summary": {
       "section_count": 9,
-      "total_media": 187,
-      "total_images": 167,
+      "total_media": 189,
+      "total_images": 169,
       "total_videos": 20,
       "drop_zone_media": 0,
       "drop_zone_images": 0,
@@ -112449,6 +113083,38 @@ window.J40_DASHBOARD_DATA = {
             "source_label": "TLC 40 Series Owners WhatsApp",
             "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACB1185595D9D46C265AAACD0EAFD238_153450709049471_lid.mp4",
             "notes": "Author: 153450709049471. Imported timestamp: 2026-05-24 21:43:28.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACEE77DB63F348B4C87145B1936442FF_172245385244826_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-26 14:36:40.000Z",
+            "captured_date": "2026-05-26",
+            "captured_time": "14:36:40.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_ACEE77DB63F348B4C87145B1936442FF_172245385244826_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACEE77DB63F348B4C87145B1936442FF_172245385244826_lid.jpeg",
+            "notes": "Author: 172245385244826. Imported timestamp: 2026-05-26 14:36:40.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACC00A4E7024750BB9CD9AB9AC7F1D67_172245385244826_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-26 14:36:41.000Z",
+            "captured_date": "2026-05-26",
+            "captured_time": "14:36:41.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_ACC00A4E7024750BB9CD9AB9AC7F1D67_172245385244826_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACC00A4E7024750BB9CD9AB9AC7F1D67_172245385244826_lid.jpeg",
+            "notes": "Author: 172245385244826. Imported timestamp: 2026-05-26 14:36:41.000Z"
           }
         ]
       }
@@ -113150,8 +113816,8 @@ window.J40_DASHBOARD_DATA = {
         "chat_type": "group",
         "relevance_score": "15",
         "messages_fetched": "true",
-        "messages_count": "193",
-        "media_count": "47",
+        "messages_count": "205",
+        "media_count": "49",
         "messages_fetch_error": ""
       },
       {
@@ -113181,7 +113847,7 @@ window.J40_DASHBOARD_DATA = {
         "chat_name": "Headlight connectors",
         "chat_id": "120363427035421010@g.us",
         "chat_type": "group",
-        "relevance_score": "11",
+        "relevance_score": "13",
         "messages_fetched": "true",
         "messages_count": "4",
         "media_count": "1",
@@ -113232,6 +113898,17 @@ window.J40_DASHBOARD_DATA = {
         "messages_fetch_error": "messages_api_not_supported_for_lid"
       },
       {
+        "profile_server": "whatsapp-number-2",
+        "chat_name": "+92 300 1105253",
+        "chat_id": "233521834672379@lid",
+        "chat_type": "direct_lid",
+        "relevance_score": "8",
+        "messages_fetched": "false",
+        "messages_count": "0",
+        "media_count": "0",
+        "messages_fetch_error": "messages_api_not_supported_for_lid"
+      },
+      {
         "profile_server": "whatsapp-number-1",
         "chat_name": "Akbar Khan",
         "chat_id": "archive::akbar_khan",
@@ -113265,7 +113942,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "media_type": "photo",
-        "count": 212
+        "count": 214
       },
       {
         "media_type": "sticker",
@@ -113283,10 +113960,28 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source_profile": "whatsapp-number-2",
-        "count": 100
+        "count": 102
       }
     ],
     "recent_media": [
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_acc00a4e7024750bb9cd9ab9ac7f1d67_172245385244826_lid::false_971527520120_1517397900_g_us_ACC00A4E7024750BB9CD9AB9AC7F1D67_172245385244826_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-26T14:36:41.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_ACC00A4E7024750BB9CD9AB9AC7F1D67_172245385244826_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACC00A4E7024750BB9CD9AB9AC7F1D67_172245385244826_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_acee77db63f348b4c87145b1936442ff_172245385244826_lid::false_971527520120_1517397900_g_us_ACEE77DB63F348B4C87145B1936442FF_172245385244826_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-26T14:36:40.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_ACEE77DB63F348B4C87145B1936442FF_172245385244826_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACEE77DB63F348B4C87145B1936442FF_172245385244826_lid.jpeg"
+      },
       {
         "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_acb1185595d9d46c265aaacd0eafd238_153450709049471_lid::false_971527520120_1517397900_g_us_ACB1185595D9D46C265AAACD0EAFD238_153450709049471_lid.mp4",
         "source_profile": "whatsapp-number-2",
@@ -113484,24 +114179,6 @@ window.J40_DASHBOARD_DATA = {
         "media_type": "photo",
         "file_name": "false_971527520120_1517397900_g_us_4A0FC27C4C37B6B95A88_4359425396802_lid.jpeg",
         "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4A0FC27C4C37B6B95A88_4359425396802_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_4ad71c52c10899dcf25f_4359425396802_lid::false_971527520120_1517397900_g_us_4AD71C52C10899DCF25F_4359425396802_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-18T05:59:57.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_4AD71C52C10899DCF25F_4359425396802_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4AD71C52C10899DCF25F_4359425396802_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_4a8cb5035fa1db9dc6d3_4359425396802_lid::false_971527520120_1517397900_g_us_4A8CB5035FA1DB9DC6D3_4359425396802_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-18T05:59:57.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_4A8CB5035FA1DB9DC6D3_4359425396802_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4A8CB5035FA1DB9DC6D3_4359425396802_lid.jpeg"
       }
     ]
   },

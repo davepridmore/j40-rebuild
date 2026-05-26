@@ -1,6 +1,6 @@
 # Procurement Pass 2 (Tub-Off, Pakistan Cost Reality)
 
-- Generated: 2026-05-17 16:31:17
+- Generated: 2026-05-27 02:53:31
 - Input matrix: `data/manual/procurement_decision_matrix.csv`
 - Pass-2 matrix: `data/manual/procurement_decision_matrix_pass2.csv`
 - Basket plan: `data/manual/procurement_local_baskets_pass2.csv`
@@ -16,20 +16,21 @@
 - `bundle_local_toyota_buy_after_inspection`: 10
 - `buy_body_fastener_hardware_from_samples`: 3
 - `buy_compact_cabin_fuse_boxes`: 1
-- `buy_now`: 7
+- `buy_for_baseline`: 2
+- `buy_now`: 8
 - `buy_remaining_brake_bleed_consumables`: 1
 - `capture_body_hardware_samples_then_order`: 6
-- `capture_brake_specs_then_order`: 13
-- `confirm_price_then_buy`: 9
+- `capture_brake_specs_then_order`: 7
+- `confirm_price_then_buy`: 8
 - `defer_as_non_baseline`: 5
 - `defer_until_baseline_closure`: 1
 - `hold_until_body_closed`: 1
 - `longman_hose_pipe_order_ready`: 4
-- `open_inspect_then_order_standard_brake_parts`: 4
-- `review`: 2
+- `open_inspect_then_order_standard_brake_parts`: 1
+- `review`: 7
 - `source_toyota_oe_glow_plugs_by_part_number`: 1
-- `stock_audit_then_local_topup`: 3
-- `track_in_flight_order`: 5
+- `stock_audit_then_local_topup`: 4
+- `track_in_flight_order`: 8
 
 ## Timing Windows
 
@@ -37,14 +38,14 @@
 - `body_hardware_sample_sort`: 6
 - `body_sealed`: 1
 - `electrical_closeout`: 1
-- `in_flight_now`: 5
+- `in_flight_now`: 8
 - `longman_mills_quote_pack`: 4
-- `merged_suspension_brake_window`: 17
+- `merged_suspension_brake_window`: 8
 - `post_baseline_only`: 6
 - `post_tub_off_inspection`: 11
 - `pre_brake_hydraulic_opening`: 1
-- `pre_order_audit`: 3
-- `review`: 18
+- `pre_order_audit`: 4
+- `review`: 25
 
 ## Immediate Actions (Now)
 
@@ -52,6 +53,9 @@
 - `part_fastener_kit_b_millat` Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers -> track_in_flight_order
 - `part_fastener_kit_e_millat` Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60 -> track_in_flight_order
 - `part_brake_fluid_bleed_consumables` Brake hydraulic opening prep remaining consumables - caps plugs bleed bottle cleaner rags catch tray -> buy_remaining_brake_bleed_consumables
+- `part_brake_master_reservoir_refresh` Brake master cylinder candidate order - ULTIMA UFM-1041 x2; reservoir/proportioning still inspect -> track_in_flight_order
+- `part_rear_brake_shoes_hardware` Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match -> track_in_flight_order
+- `part_daraz_cable_clip_clamp_assortment_20260527` Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 -> track_in_flight_order
 - `part_fastener_kit_d_millat` Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points -> track_in_flight_order
 - `part_ironman_front_dampers_separate_shipment` Ironman Foamcell front damper pair - separate shipment (24635FE x2) -> track_in_flight_order
 

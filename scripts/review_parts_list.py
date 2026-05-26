@@ -99,7 +99,7 @@ def build_review_rows(parts_rows: list[dict[str, str]]) -> list[dict[str, str]]:
                 "amount": row.get("amount", ""),
                 "amount_status": row.get("amount_status", ""),
                 "has_confirmed_amount": "yes" if (row.get("amount_status", "").strip().lower() == "confirmed") else "no",
-                "vendor": row.get("vendor", ""),
+                "vendor": row.get("vendor", "") or row.get("company", ""),
                 "evidence_ref": row.get("evidence_ref", ""),
                 "overlap_group_id": overlap_group_id,
                 "overlap_group_label": overlap_group_label,

@@ -6,10 +6,10 @@
 - Relevant chat messages indexed: 590
 - Relevant media items indexed: 79
 - Evidence sources in use: Akbar Khan (383), Fj40 (207)
-- Confirmed restoration spend so far: PKR 1,078,692
+- Confirmed restoration spend so far: PKR 1,139,552
 - Confirmed admin spend tracked separately: PKR 16,365
 - Quoted but not confirmed as purchased: PKR 7,860
-- Purchased / planned items still missing prices: 78
+- Purchased / planned items still missing prices: 75
 
 ## Main Workstreams
 
@@ -74,7 +74,11 @@
 - 2026-05-01 `parts` Ironman Foamcell suspension kit - main shipment (front dampers separate): PKR 575,000
 - 2026-04-18 `parts` Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60: PKR 1,880
 - 2026-03-21 `parts` H4 ceramic headlight connectors - x4 received: PKR 1,350
+- 2026-05-25 `parts` Brake master cylinder candidate order - ULTIMA UFM-1041 x2; reservoir/proportioning still inspect: PKR 12,596
 - 2026-05-03 `parts` DOT 3 brake fluid x6 - Autohub agreed replacement/substitution received: PKR 5,349
+- 2026-05-25 `parts` Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect: PKR 3,700
+- 2026-05-25 `parts` FJ40 BJ-40 Toyota Land Cruiser hand brake cable: PKR 5,795
+- 2026-05-25 `parts` Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match: PKR 33,600
 - 2026-04-24 `parts` Nylon fiber polishing disc and wool buffing polishing disc set (3pcs) plus drill adapter and grinder nut for metals x2: PKR 2,188
 - 2026-04-27 `parts` GREZ OFF HD DEGREASER - Spray Nine (32 oz.): PKR 3,250
 - 2026-04-27 `parts` DISS (APC) All Purpose Cleaner 5L: PKR 4,999
@@ -115,6 +119,7 @@
 - 2026-05-18 `tools` Safety Goggle Safety Protective Glasses Goggles Anti Splash Dust Proof Work Lab Eyewear Eye Protection Industrial Research Safety Glasses Clear Lens Multi-function Anti-Fog Antisand Windproof Dust Resistant: PKR 869
 - 2026-05-23 `tools` Large-bore Nitto air hose for 1/2 inch impact wrench: PKR 4,720
 - 2026-05-23 `tools` Ingco Heavy duty cable cutter 250mm HHCCB0210: PKR 2,130
+- 2026-05-27 `tools` Daraz 100W IP66 LED flood light - workshop/site lighting: PKR 5,169
 
 ## Quote Watchlist
 
@@ -142,7 +147,7 @@
 - `researching` EPS market scout check - 2005-2011 SCP90/NCP90 complete kit plus General EPS Adapter geometry
 - `planned` Fastener Kit C remaining: Captive/clip/speed nut and weld-nut assortment - M6/M8
 - `received` M6 and M8 threaded rivet nuts / rivnuts / nutserts - received
-- Plus 58 more items in `data/manual/expenses.csv`
+- Plus 55 more items in `data/manual/expenses.csv`
 
 ## Notes
 

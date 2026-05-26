@@ -1,27 +1,27 @@
 # Parts List Review
 
-- Generated: 2026-05-17 16:31:08
-- Source: `data/manual/expenses.csv` (`bucket=parts`) -> 120 rows
+- Generated: 2026-05-27 02:53:25
+- Source: `data/manual/expenses.csv` (`bucket=parts`) -> 122 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
 
 ## Action Buckets
 
-- `buy_now`: 39
-- `cancelled_or_not_required`: 12
-- `completed_or_received`: 32
+- `buy_now`: 40
+- `cancelled_or_not_required`: 11
+- `completed_or_received`: 33
 - `deferred`: 6
-- `needs_spec_before_order`: 15
-- `ordered_waiting_arrival`: 5
-- `spec_ready_release_hold`: 4
-- `unclear`: 7
+- `needs_spec_before_order`: 9
+- `ordered_waiting_arrival`: 9
+- `spec_ready_release_hold`: 3
+- `unclear`: 11
 
 ## Workstream Split
 
 - `body_chassis`: 27
-- `brake_system`: 24
+- `brake_system`: 25
 - `mechanical_baseline`: 23
-- `electrical_reset`: 20
+- `electrical_reset`: 21
 - `interior_weatherproofing`: 11
 - `steering_brakes_suspension`: 6
 - `fabrication_handoff`: 6
@@ -30,8 +30,8 @@
 
 ## Price Coverage
 
-- `has_confirmed_amount=yes`: 20
-- `has_confirmed_amount=no`: 100
+- `has_confirmed_amount=yes`: 24
+- `has_confirmed_amount=no`: 98
 
 ## Buy-Now / Quote-Ready Missing Price
 
@@ -40,14 +40,15 @@
 - `part_tub_mount_reinforcement_plate_3mm_20260513` [body_chassis] 3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs
 - `part_tub_repair_steel_sheet_1_2mm_20260513` [body_chassis] 1.2 mm cold-rolled mild-steel sheet for tub skin/floor patch plates
 - `part_tub_repair_steel_sheet_1_6mm_20260513` [body_chassis] 1.6 mm cold-rolled mild-steel sheet for heavier tub patch plates
-- `part_brake_clutch_475_hard_line_stock_full_vehicle_20260514` [brake_system] Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred
 - `part_brake_clutch_line_support_clamps_full_vehicle_20260514` [brake_system] Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection
 - `part_brake_flex_hose_retaining_clip_pack_20260514` [brake_system] Brake flex-hose retaining U-clips and bracket hardware pack
 - `part_brake_fluid_bleed_consumables` [brake_system] Brake hydraulic opening prep remaining consumables - caps plugs bleed bottle cleaner rags catch tray
+- `part_rear_center_brake_flex_hose` [brake_system] Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference
 - `part_cabin_compact_fuse_boxes` [electrical_reset] Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on
 - `part_firewall_grommet_set_large_power` [electrical_reset] Additional firewall grommet set IDs 16/20/25 mm
 - `part_firewall_grommet_set_small_medium` [electrical_reset] Additional firewall grommet set IDs 6/8/10/12 mm
 - `part_hvac_blower_clutch_fan_wiring_20260514` [electrical_reset] Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request
+- `part_star_washers` [electrical_reset] Star washers (bite into metal)
 - `part_fabrication_raw_aluminium_plate_3mm_20260513` [fabrication_handoff] 3.0 mm 5052-H32 aluminium sheet for MIDI enclosure, Relay Rev D base, and cutoff electrical plates
 - `part_fabrication_raw_electrical_plastic_sheet_20260513` [fabrication_handoff] Electrical insulating plastic/G10 sheet - MIDI 5.0 mm board and relay 3.0 mm sheet
 - `part_fabrication_raw_epdm_sheet_small_isolators_20260513` [fabrication_handoff] 3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads
