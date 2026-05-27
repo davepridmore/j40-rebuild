@@ -128,6 +128,22 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
             "Already ordered; do not rebuy.",
         )
 
+    if procurement_stage == "runner_quote_photo_only" or prior == "runner_quote_photo_only":
+        return (
+            "runner_quote_photo_only",
+            "runner_quote_photo_only",
+            "no_payment_without_mechanic_approval",
+            "Office/runner can collect prices, shop cards, and photos or carry labelled samples; mechanic/user must approve safety-critical fit and final payment.",
+        )
+
+    if procurement_stage == "runner_spec_controlled" or prior == "runner_spec_controlled":
+        return (
+            "runner_spec_controlled",
+            "runner_spec_controlled",
+            "no_payment_without_spec_release",
+            "Office/runner can buy only against a written spec, mechanic-labelled sample, or explicit mechanic/user approval; otherwise collect prices/photos only.",
+        )
+
     if entry_id == "part_mech_engine_mount_set" or prior == "defer_until_mount_failure_or_engine_lift_scope":
         return (
             "defer_until_mount_failure_or_engine_lift_scope",
@@ -275,10 +291,10 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
 
     if entry_id == "part_mech_brake_flex_hose_set":
         return (
-            "aamir_local_sample_match_quote_then_buy",
-            "aamir_montgomery_road",
-            "local_brake_hose_line_buy",
-            "User update marks this package as gettable with Aamir/Montgomery Road. Confirm price and buy/quote complete crimped DOT/SAE J1401 or OEM-equivalent brake hose assemblies by old sample; reconcile any hard-line coil/fitting buy against the separate Aamir tube-stock row.",
+            "runner_spec_controlled",
+            "runner_spec_controlled",
+            "no_payment_without_spec_release",
+            "Aamir is office/runner support, not a mechanic, but he can buy against a written hose spec or mechanic-labelled sample. If free length, end fittings, bracket groove, thread/seat, hose rating, or route clearance are uncertain, collect photos and price only.",
         )
 
     if workstream == "brake_system" and prior == "capture_spec_then_buy":
@@ -373,8 +389,10 @@ def supplier_hint(mode: str, decision: str) -> str:
         "open_inspect_then_order_standard_brake_parts",
     }:
         return "Use a brake/Toyota parts shop or the workshop's brake supplier after physical sample and fitting confirmation."
-    if decision == "aamir_local_sample_match_quote_then_buy":
-        return "Use Aamir/Montgomery Road brake pipe-hose suppliers; buy/quote complete crimped brake hose assemblies by old sample and avoid duplicate hard-line coil stock."
+    if decision == "runner_quote_photo_only":
+        return "Runner task only: collect prices, shop cards, and photos; do not pay or approve safety-critical fit without mechanic/user approval."
+    if decision == "runner_spec_controlled":
+        return "Runner task: collect quote/photos now; pay only for an exact written-spec or mechanic-labelled-sample match."
     if decision in {"stock_audit_then_local_topup", "local_topup_buy"}:
         return "Use Montgomery Road / local electrical markets for small top-ups after stock count."
     if decision == "source_toyota_oe_glow_plugs_by_part_number":
@@ -417,8 +435,10 @@ def basket_id_for_row(decision: str, mode: str, workstream: str) -> str:
         return "basket_mechanical_local_bundle"
     if decision in {"capture_brake_specs_then_order", "open_inspect_then_order_standard_brake_parts"}:
         return "basket_merged_brake_suspension_window"
-    if decision == "aamir_local_sample_match_quote_then_buy":
-        return "basket_aamir_brake_hose_line"
+    if decision == "runner_quote_photo_only":
+        return "basket_runner_quote_photo_only"
+    if decision == "runner_spec_controlled":
+        return "basket_runner_spec_controlled"
     if decision == "buy_chassis_masking_consumables":
         return "basket_chassis_coating_consumables"
     if decision in {"hose_rubber_release_hold", "longman_hose_pipe_order_ready"}:
@@ -480,7 +500,8 @@ def build_baskets(rows: list[dict[str, str]]) -> list[dict[str, str]]:
         "basket_engine_mounts_later_if_failed": ("Engine Mounts Later If Failed", "No engine lift in baseline; inspect in place before any purchase."),
         "basket_suspension_setup": ("Suspension Setup Support", "Buy support/cribbing items before suspension disassembly."),
         "basket_merged_brake_suspension_window": ("Merged Brake/Suspension Window", "Capture fitted hardware and old samples, then order exact brake parts for the Ironman install window."),
-        "basket_aamir_brake_hose_line": ("Aamir Brake Hose/Line Buy", "Confirm price locally, buy/quote complete crimped brake hose assemblies by old sample, and reconcile hard-line stock against the separate Aamir tube row."),
+        "basket_runner_quote_photo_only": ("Runner Quote/Photo Only", "Office-runner scope only: collect prices, shop cards, packet photos, and availability; mechanic/user approval required before payment or fit decisions."),
+        "basket_runner_spec_controlled": ("Runner Spec-Controlled", "Office-runner scope: collect prices/photos now, and buy only when a written spec, mechanic-labelled sample, or explicit mechanic/user approval removes the fit decision from the runner."),
         "basket_brake_hydraulic_opening_prep": ("Brake Hydraulic Opening Prep", "Buy the remaining caps/plugs, brake cleaner, catch bottle or bleeder kit, rags, and catch tray before opening hydraulic lines; DOT 3 fluid, clear bleed hose, and nitrile gloves are already received."),
         "basket_chassis_coating_consumables": ("Chassis Coating Consumables", "Ultra-cloth solvent-safe wipes and masking tape are received; only buy separate tapered plugs if the on-hand grommet pack fails fit/solvent checks."),
         "basket_longman_hose_pipe_order_ready": ("Longman Hose/Pipe Order Ready", "Fuel, coolant, heater, vacuum, and breather stock rows have explicit Longman quote/order lengths; final trim, clamp, chafe, and leak checks remain install tasks."),

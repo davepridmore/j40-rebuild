@@ -1,18 +1,19 @@
 # Parts List Review
 
-- Generated: 2026-05-27 23:26:53
+- Generated: 2026-05-28 01:23:37
 - Source: `data/manual/expenses.csv` (`bucket=parts`) -> 121 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
 
 ## Action Buckets
 
-- `buy_now`: 41
+- `buy_now`: 38
 - `cancelled_or_not_required`: 12
 - `completed_or_received`: 33
 - `deferred`: 6
 - `needs_spec_before_order`: 9
 - `ordered_waiting_arrival`: 10
+- `runner_spec_controlled`: 3
 - `spec_ready_release_hold`: 3
 - `unclear`: 7
 
@@ -44,8 +45,6 @@
 - `part_brake_clutch_line_support_clamps_full_vehicle_20260514` [brake_system] Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection
 - `part_brake_flex_hose_retaining_clip_pack_20260514` [brake_system] Brake flex-hose retaining U-clips and bracket hardware pack
 - `part_rear_center_brake_flex_hose` [brake_system] Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference
-- `part_rear_drum_spring_hold_down_hardware_20260527` [brake_system] Rear drum spring / hold-down / adjuster hardware kit
-- `part_rear_parking_brake_attachment_hardware_20260527` [brake_system] Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips
 - `part_cabin_compact_fuse_boxes` [electrical_reset] Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on
 - `part_firewall_grommet_set_large_power` [electrical_reset] Additional firewall grommet set IDs 16/20/25 mm
 - `part_firewall_grommet_set_small_medium` [electrical_reset] Additional firewall grommet set IDs 6/8/10/12 mm
@@ -76,7 +75,6 @@
 - `part_mech_radiator_cap` [mechanical_baseline] Radiator cap
 - `part_mech_radiator_hose_set` [mechanical_baseline] Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe
 - `part_mech_vacuum_hose_refresh` [mechanical_baseline] Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather
-- `part_mech_brake_flex_hose_set` [steering_brakes_suspension] Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance
 
 ## Buy-Now / Quote-Ready With Confirmed Price
 

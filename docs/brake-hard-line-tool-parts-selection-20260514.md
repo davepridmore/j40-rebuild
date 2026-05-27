@@ -8,13 +8,15 @@ Use `4.75 mm / 3/16 in` brake-rated tube with Toyota-style `double / inverted` f
 
 Final fabrication still waits for one old line removed intact, a straight-on view of the flare sealing face, and thread/seat confirmation at the matching port.
 
+Runner-controlled brake hose and rear hardware purchases use the capture checklist in [brake-runner-spec-capture-20260528.md](brake-runner-spec-capture-20260528.md). If the capture card is incomplete, Aamir gets quote/photos only.
+
 ## Tool Selection
 
 | Priority | Tool | Selection |
 | --- | --- | --- |
 | P0 | Double/inverted flaring tool | Use an ordered PARD kit only if receipt check proves it includes a true `4.75 mm / 3/16 in` die and makes `45-degree double / inverted` flares. TM25805 added a second PARD `3/16 in` to `5/8 in` candidate, but it still does not release brake-line fabrication until it makes clean practice flares on scrap tube. |
 | P0 | Tube cutter | Use the ordered Harden mini cutter if it cuts `4.75 mm` tube squarely without crushing. |
-| P0 | Deburrer / reamer | Gettable local tool item. Buy a dedicated internal/external tube deburrer with Aamir/Montgomery Road unless the delivered flaring kit includes a good one. Every cut must be deburred before flaring. |
+| P0 | Deburrer / reamer | Simple runner purchase only. Amir can buy a labelled internal/external tube deburrer for `4.75 mm / 3/16 in` tube or send photos/price; mechanic/user still controls brake-line fabrication approval. Every cut must be deburred before flaring. |
 | P0 | Brake-line bender | Do not buy a duplicate bender now. The received Daraz bender covers `1/4, 5/16, 3/8 in`; use it for those sizes, hand-form broad CuNi/Cunifer bends where suitable, and use the brake/hydraulic shop or reopen a dedicated `4.75 mm / 3/16 in` bender only if practice bends on the selected tube kink or flatten. |
 | P0 | Flare-nut wrenches | Buy metric line wrenches before loosening old hydraulic fittings. Cover the actual nut hexes found on the vehicle; likely useful sizes are around `10, 11, 12, 14, 17 mm`. |
 | P1 | Thread pitch gauge / calipers | Confirm on hand or buy before fitting purchase. Do not buy flare nuts by year/catalog alone. |
@@ -26,7 +28,7 @@ Final fabrication still waits for one old line removed intact, a straight-on vie
 | P0 | Tube stock | Prefer brake-rated CuNi/Cunifer `4.75 mm / 3/16 in`; fallback is brake-rated bundy steel if the shop can form and flare it cleanly. Buy `10000 mm` minimum if combining brake + clutch; `12000 mm` preferred for practice flares and route corrections. |
 | P0 | Flare nuts | Buy new brake-rated `double / inverted` flare nuts only after thread and seat are confirmed from the removed old line and port. Buy extras for practice/scrap flares. |
 | P0 | Tee/unions | Replace corroded or seized rear axle tees/inline unions only with brake-rated fittings that match thread, seat, mounting, port orientation, and tube entry angle. No compression/plumbing fittings. |
-| P0 | Flex hoses | Buy complete crimped front-left, front-right, and rear-center brake flex hose assemblies by old sample/fitted ends. No roll hose. |
+| P0 | Flex hoses | Define a written hose spec or use mechanic-labelled old samples, then buy complete crimped front-left, front-right, and rear-center brake flex hose assemblies only as an exact match. Aamir can do the counter purchase; mechanic/user controls the spec. No roll hose. |
 | P0 | Supports | Buy `4.75 mm` rubber-lined P-clips, brake hose U-clips, axle line supports, grommets/edge trim, and plated fasteners. Support hard lines every `300-400 mm` and near unions/bends. |
 | P0 | Opening prep | No separate purchase line. Before opening hydraulics, verify on-hand/workshop line caps/plugs, brake cleaner, catch bottle/bleeder kit, rags, and catch tray are ready. DOT 3 fluid, clear bleed hose, and nitrile gloves are already received. |
 

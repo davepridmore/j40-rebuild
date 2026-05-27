@@ -1,6 +1,6 @@
 # Reassembly, Dependency, and Procurement Plan
 
-- Generated: 2026-05-27 23:27:38
+- Generated: 2026-05-28 01:24:03
 - Work packages: `data/manual/reassembly_work_packages.csv`
 - Dependency edges: `data/manual/reassembly_dependency_edges.csv`
 - Component disposition: `data/manual/component_disposition_plan.csv`
@@ -29,7 +29,7 @@
 - `buy_now`: 13
 - `capture_body_hardware_samples_then_order`: 5
 - `capture_spec_then_buy`: 6
-- `confirm_price_then_buy`: 25
+- `confirm_price_then_buy`: 22
 - `defer_duplicate_overlap`: 4
 - `defer_optional`: 1
 - `hold_until_body_closed`: 1
@@ -37,6 +37,7 @@
 - `release_hold_measure_then_order`: 1
 - `research_compare_then_select`: 1
 - `review`: 5
+- `runner_spec_controlled`: 3
 - `track_ordered_delivery`: 9
 - `verify_stock_before_buy`: 3
 
@@ -54,7 +55,7 @@
 - Use `data/raw/imports/J40.jpg` as the WP03 viewable wiring diagram and keep `data/raw/imports/J40.graffle` as the editable source; export a fresh JPG after any diagram change.
 - Work WP03 from `data/manual/electrical_diagram_reconciliation_20260518.csv`: close the firewall/pass-through, connector/pinout, heavy-cable stock, HVAC, EPS, fuel-stop, and rear-camera holds before final wrap.
 - Hold final chassis primer/Raptor until the bracket work plan closes: analysis register, design release, radiator/battery/auxiliary/exhaust implementation, and validation photos.
-- Run `WP04` procurement now: 29 mechanical rows still require buy execution.
+- Run `WP04` procurement now: 26 mechanical rows still require buy execution.
 - Run `GB-TOP-CAPTURE-001` before buying gearbox top-cover service parts; current top cover must be approved, repaired, or replaced as a matched assembly first.
 - Close `DIFF-CAPTURE-001` during the rear brake/suspension window before axle coating, alignment, or road validation.
 - Avoid duplicate buys: 3 rows are flagged as likely already on hand and should be physically stock-checked first.

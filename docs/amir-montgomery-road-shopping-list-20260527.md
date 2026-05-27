@@ -1,8 +1,8 @@
 # Amir Montgomery Road Market List - 2026-05-27
 
-Purpose: buy or quote the J40 brake-line, support-clip, and workshop items while Amir is on Montgomery Road.
+Purpose: give Amir simple runner tasks while he is on Montgomery Road: collect prices, shop cards, packet photos, simple counter items, and exact-spec purchases. He is office support, not a mechanic, so he must not approve brake fit or sample-match parts himself; payment for safety-critical brake parts is allowed only when the mechanic/user has already provided a written spec, a labelled old sample, or explicit approval for the exact item.
 
-Safety rule: brake hydraulic parts must be automotive brake-rated. If the seller cannot confirm the spec, Amir should send a photo and price before paying.
+Safety rule: brake hydraulic parts must be automotive brake-rated. If the item affects braking and the mechanic/user has not already approved the exact sample/spec, Amir should send photos and price only. Once a written spec card or labelled sample exists, his job is only to buy that exact match or call before paying. Spec capture guide: [brake-runner-spec-capture-20260528.md](brake-runner-spec-capture-20260528.md).
 
 ## Photo Reference
 
@@ -28,9 +28,6 @@ Millat/MTL order update: do not buy local M6/M8/M10 star or serrated grounding w
 | --- | ---: | ---: | --- | --- | --- |
 | P0 | 3 lb sledge / club hammer | 1 | 3 lb short-handle sledge hammer | Tight head, solid fiberglass/steel/wood handle | Loose head, cracked handle, toy/light hammer |
 | P0 | Brake hard-line tube | 25 ft minimum; 10-12 m if cheap | `4.75 mm / 3/16 in` automotive brake pipe, double-wall Bundy steel, zinc/PVF/galvanized coated | Brake-rated steel Bundy tube; CuNi/Cunifer if good and brake-rated | Bare copper, plumbing tube, unknown tube, stainless if shop cannot flare it |
-| P0 | Brake hydraulic hose/line package | Quote/buy by old samples | Complete crimped front-left, front-right, and rear-center brake flex hose assemblies, plus any missing brake-rated `4.75 mm / 3/16 in` tube/fittings not already covered by the separate tube-stock buy | DOT/SAE J1401 or OEM-equivalent marked hose assemblies, matched fittings/bracket grooves/free length; brake-rated tube/fittings | Generic rubber hose, reused hose, compression fittings, bare copper, or a second hard-line coil if the separate tube-stock row is already covered |
-| P0 | Rear drum spring / hold-down / adjuster hardware | 1 axle set or by sample | Upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, parking-brake lever clips | New plated brake hardware matching opened-drum layout or old samples | Mixed/unmatched springs, rusty used hardware, or duplicate if PakWheels shoe delivery proves a complete matching hardware kit |
-| P0 | Rear parking-brake cable attachment hardware | By sample / mixed pack | Clevis pins, equalizer/intermediate cable pieces, adjuster nut, cable-end clips, return springs, retaining clips | Plated parts matching old samples and received cable ends | Wrong clevis size, weak spring clips, or duplicate pieces already included with the received cable |
 | P0 | Tube deburrer / reamer | 1 | Compact internal/external deburrer or reamer for `4.75 mm / 3/16 in` brake tube | Tool deburrs inside and outside of small tube cleanly | File/knife-only workaround; tool too large for 3/16 tube |
 
 ## Buy If Available At Sensible Price
@@ -85,12 +82,19 @@ Photos Amir should send:
 - Air inlet on the blow gun / tire inflator / impact wrench.
 - Any fitting packets with `1/4`, `BSP`, `NPT`, `Nitto`, `Japan`, `Euro`, or `USA` label visible.
 
-## Quote Only Unless Sample-Matched
+## Quote Now / Buy Only Against Written Spec Or Sample
 
-Do not pay for these unless Amir has the old sample in hand or the seller agrees it can be returned after thread/seat mismatch.
+Do not pay for these unless Amir has the old sample in hand, a written spec card, explicit mechanic/user approval, or the seller agrees it can be returned after thread/seat mismatch.
+
+If the written spec is missing, capture it first using [Brake Runner Spec Capture](brake-runner-spec-capture-20260528.md): installed photo, labelled old sample, ruler/caliper measurements, close-ups of ends/clips/threads/seats, and bagged parts by position.
+
+Rear parking-brake/back-section note: the existing photo set already covers route and installed layout for the rear cable, backing-plate lever, return spring/clip area, axle hard-line route, and rear center hose/T area. Do not ask Amir to judge from photos alone; finish the spec with measured/labelled old parts or received-cable comparison before payment.
 
 | Item | What to ask | What Amir should send back |
 | --- | --- | --- |
+| Brake hydraulic hose/line package | Ask whether the shop can make complete crimped front-left, front-right, and rear-center automotive brake flex hose assemblies from written spec or old samples; ask about brake-rated `4.75 mm / 3/16 in` tube/fittings only if the separate tube-stock row is not already covered | Shop card, hose marking, fitting examples, price, whether DOT/SAE J1401 or OEM-equivalent; buy only exact written-spec/sample match |
+| Rear drum spring / hold-down / adjuster hardware | Ask for upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum sample/layout/spec | Photos, price, whether kit matches old samples/spec; buy only after opened-drum spec and PakWheels shoe delivery check |
+| Rear parking-brake cable attachment hardware | Ask for clevis pins, equalizer/intermediate cable pieces, adjuster nut, cable-end clips, return springs, and retaining clips by received cable/old sample/spec | Photos, price, dimensions; buy only after received-cable/old-sample spec and cable package check |
 | Brake flare nuts / tube nuts | Brake-rated `3/16 / 4.75 mm` double/inverted flare tube nuts, likely Toyota metric | Close photo of thread, seat side, hex size, packet/label, price |
 | Inline unions | Brake-rated double/inverted flare unions for 3/16 tube | Photo of both ends and label; no plumbing/compression union |
 | Rear axle T / tee fitting | Brake-rated T fitting matching rear axle union style | Photo of port arrangement, mounting hole/bracket, label, price |
@@ -106,7 +110,16 @@ Brake pipe shop:
 
 Brake hose shop:
 
-> Need quote only for complete crimped automotive brake hose assemblies by old sample: front left, front right, and rear center. Hose must be brake-fluid rated, DOT/SAE J1401 or OEM-equivalent. No generic rubber hose cut from roll.
+> Need quote for complete crimped automotive brake hose assemblies for old Toyota Land Cruiser: front left, front right, and rear center. Hose must be brake-fluid rated, DOT/SAE J1401 or OEM-equivalent. If we give a labelled sample or written spec card, make/order that exact match only. No generic rubber hose cut from roll.
+
+Brake hose spec card fields we can define before payment:
+
+- Position: front left, front right, or rear center.
+- Free length and fitted route clearance.
+- End fitting type at each end, including male/female, banjo if applicable, thread, seat/flare, and hex.
+- Bracket groove/retaining-clip width and any locating flats, spring guards, sleeves, or grommets.
+- Hose marking/rating: DOT/SAE J1401 or OEM-equivalent brake hydraulic hose.
+- Old sample or labelled photo reference controlling the match.
 
 Fastener shop:
 

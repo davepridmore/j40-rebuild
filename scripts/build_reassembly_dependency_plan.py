@@ -223,6 +223,16 @@ def build_procurement_decisions(
             dependency_gate = "after_current_phase_exit"
             action = "keep_visible_but_not_now"
             reason = "Planned for later phase once current gate closes."
+        elif procurement_stage == "runner_quote_photo_only":
+            decision = "runner_quote_photo_only"
+            dependency_gate = "mechanic_or_user_approval_required"
+            action = "collect_quote_photos_no_payment"
+            reason = "Runner can collect prices/photos or carry labelled samples, but cannot approve safety-critical fit or final payment."
+        elif procurement_stage == "runner_spec_controlled":
+            decision = "runner_spec_controlled"
+            dependency_gate = "written_spec_or_labelled_sample_release"
+            action = "quote_photo_or_buy_exact_spec"
+            reason = "Runner can buy only against a written spec, mechanic-labelled sample, or explicit mechanic/user approval; otherwise collect photos and price only."
         elif procurement_stage.startswith("purchase_ready"):
             if week_action == "order_from_selected_quote":
                 decision = "buy_now_from_quote"
@@ -316,13 +326,13 @@ def build_procurement_decisions(
                 "or 19850-68060 x6 only if old plug/system confirms 24V/superglow."
             )
         elif entry_id == "part_mech_brake_flex_hose_set":
-            decision = "confirm_price_then_buy"
-            dependency_gate = "baseline_execution"
-            action = "aamir_local_sample_match_quote_then_order"
+            decision = "runner_spec_controlled"
+            dependency_gate = "written_spec_or_labelled_sample_release"
+            action = "define_hose_specs_then_quote_or_buy_exact_spec"
             reason = (
-                "User update marks the brake hose/line package as gettable with Aamir/Montgomery Road. "
-                "Confirm price and buy/quote complete crimped brake hose assemblies by old sample, and reconcile "
-                "any hard-line coil/fitting buy against the separate Aamir tube-stock row."
+                "Aamir is office/runner support, not a mechanic, but he can buy against a written hose spec "
+                "or mechanic-labelled sample. If free length, end fittings, bracket groove, thread/seat, hose rating, "
+                "or route clearance are uncertain, collect photos and price only."
             )
         elif workstream == "brake_system" and procurement_stage == "spec_needed_before_order":
             decision = "capture_spec_then_buy"

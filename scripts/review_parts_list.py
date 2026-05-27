@@ -67,6 +67,8 @@ def action_bucket(row: dict[str, str]) -> str:
         return "spec_ready_release_hold"
     if procurement_stage == "spec_needed_before_order":
         return "needs_spec_before_order"
+    if procurement_stage == "runner_spec_controlled":
+        return "runner_spec_controlled"
     if procurement_stage == "next_phase_purchase":
         return "next_phase"
     if procurement_stage.startswith("deferred") or procurement_stage in {"deferred_until_body_closed", "deferred_optional"}:

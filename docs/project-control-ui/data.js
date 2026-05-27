@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-27T23:28:11+05:00",
+  "generated_at": "2026-05-28T01:24:28+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -52,9 +52,9 @@ window.J40_DASHBOARD_DATA = {
     "wiring_diagram_reference_images": 1,
     "parts_open_rows": 76,
     "parts_ordered_pending_delivery": 10,
-    "urgent_part_actions": 20,
-    "capture_data_tasks": 107,
-    "capture_data_tasks_now": 95,
+    "urgent_part_actions": 18,
+    "capture_data_tasks": 110,
+    "capture_data_tasks_now": 94,
     "supply_rows_tracked": 283,
     "selling_site_images_loaded": 88,
     "whatsapp_j40_selected_chats": 11,
@@ -16095,13 +16095,13 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004231_gp_CfosvPIg"
           ],
           "photo_status": "context_and_loose_stack_photos",
-          "spec_status": "quote_ready_measurement_before_drill",
+          "spec_status": "first_article_ready_oem_spacer_bore",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Square flat pad 70 x 70 x 22 mm; flat parallel faces; light edge radius/chamfer; leave undrilled or centre-marked until crush-sleeve OD is known",
+          "exact_recreation_spec": "3D envelope 70 L x 70 W x 22 H mm; square flat pad; flat parallel faces; plan corners R1.5; top/bottom perimeter edge break or chamfer 1.0 max; 18.0 mm through bore for Toyota 90560-12009 style sleeve",
           "material_spec": "New black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5; no tyre rubber, crumb rubber, mixed offcuts, used rubber, or salvage rubber",
-          "critical_measurements": "Confirm station count, flat footprint, desired free height, sleeve OD, and final installed stack height; final rubber hole = sleeve OD + 0.5-1.0 mm",
+          "critical_measurements": "Confirm station count, flat footprint, desired free height, and installed stack height; sleeve basis is Toyota 90560-12009 style spacer",
           "fit_and_test": "Dry-fit with separate washers/cups and sleeves; body height must return without over-crushing rubber or forcing tub alignment",
           "source_ref": "docs_chassis_rubbers_workstream|docs_longman_rubber_order_spec_20260508|data_longman_rubber_order_specs",
           "notes": "Current tub/chassis evidence does not prove a shaped rubber socket; preferred custom shape is square.",
@@ -16158,13 +16158,13 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004231_gp_CfosvPIg"
           ],
           "photo_status": "context_and_loose_stack_photos",
-          "spec_status": "quote_ready_measurement_before_drill",
+          "spec_status": "first_article_ready_oem_spacer_bore",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Square flat pad 80 x 80 x 24 mm; flat parallel faces; light edge radius/chamfer; leave undrilled or centre-marked until crush-sleeve OD is known",
+          "exact_recreation_spec": "3D envelope 80 L x 80 W x 24 H mm; square flat pad; flat parallel faces; plan corners R1.5; top/bottom perimeter edge break or chamfer 1.0 max; 18.0 mm through bore for Toyota 90560-12009 style sleeve",
           "material_spec": "New black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5; same batch/hardness as small pads where possible; no used or salvage rubber",
-          "critical_measurements": "Confirm the large-pair station, flat footprint, desired free height, sleeve OD, and final installed stack height; final rubber hole = sleeve OD + 0.5-1.0 mm",
+          "critical_measurements": "Confirm the large-pair station, flat footprint, desired free height, and installed stack height; sleeve basis is Toyota 90560-12009 style spacer",
           "fit_and_test": "Dry-fit as a pair on the correct stations; no side-to-side height mismatch after tub alignment",
           "source_ref": "docs_chassis_rubbers_workstream|docs_longman_rubber_order_spec_20260508|data_longman_rubber_order_specs",
           "notes": "Large pair height remains 24 mm; final shape is square unless station photos release a specific trim.",
@@ -16221,16 +16221,16 @@ window.J40_DASHBOARD_DATA = {
             "20260405_234652"
           ],
           "photo_status": "direct_and_context_photos",
-          "spec_status": "spec_ready",
+          "spec_status": "spec_ready_oem_spacer_basis",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Steel sleeve ID 10.8-11.0 mm for M10 bolt; OD must suit final rubber bore/cup register; length equals completed free rubber stack minus 3-4 mm target compression; order 8 blanks before final cut",
+          "exact_recreation_spec": "Toyota 90560-12009 style body-mount spacer/crush tube x6; length 48.1 mm; M10 clearance ID 10.8-11.0 mm if locally made; copy old/OE sleeve OD rather than choosing arbitrary tube stock",
           "material_spec": "Steel tube, zinc plated or painted after cutting; square-cut and deburred",
-          "critical_measurements": "Measure old sleeve OD and length with calipers; confirm bolt diameter/thread; confirm cup/rubber stack height by station",
+          "critical_measurements": "Source genuine 90560-12009 if possible; otherwise caliper old/OE sleeve OD/ID/length and machine one sample before the other five",
           "fit_and_test": "Sleeve must prevent over-crush at final torque; M10 bolt must pass freely; no loose sleeve rattle after assembly",
-          "source_ref": "data_body_mount_order_release_specs|data_body_mount_release_actions|data_rubber_recreation_fabrication_specs|docs_chassis_rubbers_fabricator_spec_20260504",
-          "notes": "Spec is ready for blank/tube order; BMA-006 dry-stack measurement controls final cut length.",
+          "source_ref": "data_body_mount_order_release_specs|data_body_mount_release_actions|data_rubber_recreation_fabrication_specs|docs_chassis_rubbers_workstream",
+          "notes": "Spec basis is OE spacer 90560-12009; no 8-blank arbitrary sleeve order.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
@@ -16363,7 +16363,7 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Overall length 96 mm; max width 64 mm; free thickness 15 mm; two 12 mm holes; hole centre spacing 64 mm; rectangular relief 36 x 18 mm with R3 corners; top metal insert/boss OD 29 mm",
+          "exact_recreation_spec": "3D envelope 96 L x 64 W x 15 T mm; capsule ends R32; outer edge break 0.5-1.0; two 12 mm holes; hole centre spacing 64 mm; rectangular relief 36 x 18 mm with R3 corners only if sample confirms; top metal insert/boss OD 29 mm",
           "material_spec": "New black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5; reproduce or reuse steel insert if the original design uses one; no used or salvage rubber",
           "critical_measurements": "Confirm hole centre spacing, thickness, and insert OD directly from sample; confirm whether insert is bonded, loose, or part of washer stack",
           "fit_and_test": "Dry-fit front support with both pads as matched pair; front clip height must align without forcing tub or nose extension",
@@ -16417,7 +16417,7 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "consolidated_longman_order_line",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Flat strip 165 x 38 x 8 mm; plain rubber strip only; smooth edges and flat parallel faces; no stepped section and no through-holes by default",
+          "exact_recreation_spec": "3D envelope 165 L x 38 W x 8 T mm; plain flat rubber strip only; plan corners R1.5; top/bottom edge break 0.5-1.0; smooth cut edges and flat parallel faces; no stepped section and no through-holes by default",
           "material_spec": "New black solid EPDM or NR/SBR strip, Shore A 60 +/-5; same family as body/front-support isolators where possible",
           "critical_measurements": "Dry-fit first article on actual landing; confirm only local end trim/side orientation; trace slotted steel retainer separately if remake is needed",
           "fit_and_test": "Order as part of the single Longman rubber bundle; do not punch holes or bond to steel unless the installed sample proves that construction",
@@ -16506,7 +16506,7 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "consolidated_longman_order_line",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Same as left: flat strip 165 x 38 x 8 mm; plain rubber strip only; smooth edges and flat parallel faces; use same blank unless sample proves a handed end trim",
+          "exact_recreation_spec": "Same as left: 3D envelope 165 L x 38 W x 8 T mm; plain flat rubber strip only; plan corners R1.5; top/bottom edge break 0.5-1.0; smooth cut edges and flat parallel faces; use same blank unless sample proves a handed end trim",
           "material_spec": "New black solid EPDM or NR/SBR strip, Shore A 60 +/-5; same batch/type as left strip where possible",
           "critical_measurements": "Dry-fit right-side first article on actual landing; confirm only local handed trim; trace slotted steel retainer separately if remake is needed",
           "fit_and_test": "Order as part of the single Longman rubber bundle; do not punch holes or bond to steel unless the installed sample proves that construction",
@@ -16818,13 +16818,13 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004231_gp_CfosvPIg"
           ],
           "photo_status": "context_and_loose_stack_photos",
-          "spec_status": "quote_ready_measurement_before_drill",
+          "spec_status": "first_article_ready_oem_spacer_bore",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Square flat pad 70 x 70 x 22 mm; flat parallel faces; light edge radius/chamfer; leave undrilled or centre-marked until crush-sleeve OD is known",
+          "exact_recreation_spec": "3D envelope 70 L x 70 W x 22 H mm; square flat pad; flat parallel faces; plan corners R1.5; top/bottom perimeter edge break or chamfer 1.0 max; 18.0 mm through bore for Toyota 90560-12009 style sleeve",
           "material_spec": "New black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5; no tyre rubber, crumb rubber, mixed offcuts, used rubber, or salvage rubber",
-          "critical_measurements": "Confirm station count, flat footprint, desired free height, sleeve OD, and final installed stack height; final rubber hole = sleeve OD + 0.5-1.0 mm",
+          "critical_measurements": "Confirm station count, flat footprint, desired free height, and installed stack height; sleeve basis is Toyota 90560-12009 style spacer",
           "fit_and_test": "Dry-fit with separate washers/cups and sleeves; body height must return without over-crushing rubber or forcing tub alignment",
           "source_ref": "docs_chassis_rubbers_workstream|docs_longman_rubber_order_spec_20260508|data_longman_rubber_order_specs",
           "notes": "Current tub/chassis evidence does not prove a shaped rubber socket; preferred custom shape is square.",
@@ -16881,13 +16881,13 @@ window.J40_DASHBOARD_DATA = {
             "20260502_004231_gp_CfosvPIg"
           ],
           "photo_status": "context_and_loose_stack_photos",
-          "spec_status": "quote_ready_measurement_before_drill",
+          "spec_status": "first_article_ready_oem_spacer_bore",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Square flat pad 80 x 80 x 24 mm; flat parallel faces; light edge radius/chamfer; leave undrilled or centre-marked until crush-sleeve OD is known",
+          "exact_recreation_spec": "3D envelope 80 L x 80 W x 24 H mm; square flat pad; flat parallel faces; plan corners R1.5; top/bottom perimeter edge break or chamfer 1.0 max; 18.0 mm through bore for Toyota 90560-12009 style sleeve",
           "material_spec": "New black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5; same batch/hardness as small pads where possible; no used or salvage rubber",
-          "critical_measurements": "Confirm the large-pair station, flat footprint, desired free height, sleeve OD, and final installed stack height; final rubber hole = sleeve OD + 0.5-1.0 mm",
+          "critical_measurements": "Confirm the large-pair station, flat footprint, desired free height, and installed stack height; sleeve basis is Toyota 90560-12009 style spacer",
           "fit_and_test": "Dry-fit as a pair on the correct stations; no side-to-side height mismatch after tub alignment",
           "source_ref": "docs_chassis_rubbers_workstream|docs_longman_rubber_order_spec_20260508|data_longman_rubber_order_specs",
           "notes": "Large pair height remains 24 mm; final shape is square unless station photos release a specific trim.",
@@ -16944,16 +16944,16 @@ window.J40_DASHBOARD_DATA = {
             "20260405_234652"
           ],
           "photo_status": "direct_and_context_photos",
-          "spec_status": "spec_ready",
+          "spec_status": "spec_ready_oem_spacer_basis",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Steel sleeve ID 10.8-11.0 mm for M10 bolt; OD must suit final rubber bore/cup register; length equals completed free rubber stack minus 3-4 mm target compression; order 8 blanks before final cut",
+          "exact_recreation_spec": "Toyota 90560-12009 style body-mount spacer/crush tube x6; length 48.1 mm; M10 clearance ID 10.8-11.0 mm if locally made; copy old/OE sleeve OD rather than choosing arbitrary tube stock",
           "material_spec": "Steel tube, zinc plated or painted after cutting; square-cut and deburred",
-          "critical_measurements": "Measure old sleeve OD and length with calipers; confirm bolt diameter/thread; confirm cup/rubber stack height by station",
+          "critical_measurements": "Source genuine 90560-12009 if possible; otherwise caliper old/OE sleeve OD/ID/length and machine one sample before the other five",
           "fit_and_test": "Sleeve must prevent over-crush at final torque; M10 bolt must pass freely; no loose sleeve rattle after assembly",
-          "source_ref": "data_body_mount_order_release_specs|data_body_mount_release_actions|data_rubber_recreation_fabrication_specs|docs_chassis_rubbers_fabricator_spec_20260504",
-          "notes": "Spec is ready for blank/tube order; BMA-006 dry-stack measurement controls final cut length.",
+          "source_ref": "data_body_mount_order_release_specs|data_body_mount_release_actions|data_rubber_recreation_fabrication_specs|docs_chassis_rubbers_workstream",
+          "notes": "Spec basis is OE spacer 90560-12009; no 8-blank arbitrary sleeve order.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
@@ -17086,7 +17086,7 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Overall length 96 mm; max width 64 mm; free thickness 15 mm; two 12 mm holes; hole centre spacing 64 mm; rectangular relief 36 x 18 mm with R3 corners; top metal insert/boss OD 29 mm",
+          "exact_recreation_spec": "3D envelope 96 L x 64 W x 15 T mm; capsule ends R32; outer edge break 0.5-1.0; two 12 mm holes; hole centre spacing 64 mm; rectangular relief 36 x 18 mm with R3 corners only if sample confirms; top metal insert/boss OD 29 mm",
           "material_spec": "New black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5; reproduce or reuse steel insert if the original design uses one; no used or salvage rubber",
           "critical_measurements": "Confirm hole centre spacing, thickness, and insert OD directly from sample; confirm whether insert is bonded, loose, or part of washer stack",
           "fit_and_test": "Dry-fit front support with both pads as matched pair; front clip height must align without forcing tub or nose extension",
@@ -17140,7 +17140,7 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "consolidated_longman_order_line",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Flat strip 165 x 38 x 8 mm; plain rubber strip only; smooth edges and flat parallel faces; no stepped section and no through-holes by default",
+          "exact_recreation_spec": "3D envelope 165 L x 38 W x 8 T mm; plain flat rubber strip only; plan corners R1.5; top/bottom edge break 0.5-1.0; smooth cut edges and flat parallel faces; no stepped section and no through-holes by default",
           "material_spec": "New black solid EPDM or NR/SBR strip, Shore A 60 +/-5; same family as body/front-support isolators where possible",
           "critical_measurements": "Dry-fit first article on actual landing; confirm only local end trim/side orientation; trace slotted steel retainer separately if remake is needed",
           "fit_and_test": "Order as part of the single Longman rubber bundle; do not punch holes or bond to steel unless the installed sample proves that construction",
@@ -17229,7 +17229,7 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "consolidated_longman_order_line",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Same as left: flat strip 165 x 38 x 8 mm; plain rubber strip only; smooth edges and flat parallel faces; use same blank unless sample proves a handed end trim",
+          "exact_recreation_spec": "Same as left: 3D envelope 165 L x 38 W x 8 T mm; plain flat rubber strip only; plan corners R1.5; top/bottom edge break 0.5-1.0; smooth cut edges and flat parallel faces; use same blank unless sample proves a handed end trim",
           "material_spec": "New black solid EPDM or NR/SBR strip, Shore A 60 +/-5; same batch/type as left strip where possible",
           "critical_measurements": "Dry-fit right-side first article on actual landing; confirm only local handed trim; trace slotted steel retainer separately if remake is needed",
           "fit_and_test": "Order as part of the single Longman rubber bundle; do not punch holes or bond to steel unless the installed sample proves that construction",
@@ -17526,10 +17526,12 @@ window.J40_DASHBOARD_DATA = {
           "part": "Main body isolator pad small stations",
           "required_qty": "10",
           "optional_spare_qty": "2",
-          "spec": "Square 70 x 70 x 22 mm; flat parallel faces; light edge radius/chamfer",
-          "holes_or_inserts": "Leave undrilled or mark centre; final hole = measured crush-sleeve OD + 0.5-1.0 mm",
+          "spec": "Square flat body isolator pad; flat parallel top and bottom bearing faces",
+          "envelope_3d_mm": "70 L x 70 W x 22 H; production 18.0 bore on centre",
+          "edge_profile": "Plan corners R1.5; top/bottom perimeter edge break or chamfer 1.0 max; no ragged cut edges",
+          "holes_or_inserts": "Production 18.0 mm through bore for Toyota 90560-12009 style body-mount spacer",
           "material": "Solid EPDM or NR/SBR, Shore A 60 +/-5",
-          "release_state": "quote_ready_measurement_before_drill",
+          "release_state": "first_article_ready_oem_spacer_bore",
           "photo_refs": "20260405_234652|20260405_234546|20260502_004231_gp_CfosvPIg",
           "notes": "Function-first square flat pad; final trim only if a station photo proves a corner or edge clash.",
           "evidence_images": [
@@ -17588,10 +17590,12 @@ window.J40_DASHBOARD_DATA = {
           "part": "Main body isolator pad large stations",
           "required_qty": "2",
           "optional_spare_qty": "1",
-          "spec": "Square 80 x 80 x 24 mm; flat parallel faces; light edge radius/chamfer",
-          "holes_or_inserts": "Leave undrilled or mark centre; final hole = measured crush-sleeve OD + 0.5-1.0 mm",
+          "spec": "Square flat body isolator pad; flat parallel top and bottom bearing faces",
+          "envelope_3d_mm": "80 L x 80 W x 24 H; production 18.0 bore on centre",
+          "edge_profile": "Plan corners R1.5; top/bottom perimeter edge break or chamfer 1.0 max; no ragged cut edges",
+          "holes_or_inserts": "Production 18.0 mm through bore for Toyota 90560-12009 style body-mount spacer",
           "material": "Same batch/type as BM-ISO-SM where possible",
-          "release_state": "quote_ready_measurement_before_drill",
+          "release_state": "first_article_ready_oem_spacer_bore",
           "photo_refs": "20260405_234652|20260405_234546|20260502_004231_gp_CfosvPIg",
           "notes": "Large pair height remains 24 mm; final trim only if a station photo proves a corner or edge clash.",
           "evidence_images": [
@@ -17650,7 +17654,9 @@ window.J40_DASHBOARD_DATA = {
           "part": "Two-hole front-support isolator pad",
           "required_qty": "2",
           "optional_spare_qty": "0",
-          "spec": "Oval/capsule 96 x 64 x 15 mm; two 12 mm holes at 64 mm centres; relief 36 x 18 mm R3 only if physical sample confirms it",
+          "spec": "Oval/capsule front-support isolator pad",
+          "envelope_3d_mm": "96 L x 64 W x 15 T; capsule ends R32; two 12 holes at 64 centres; optional 36 x 18 R3 relief only if sample confirms",
+          "edge_profile": "Outer perimeter edge break 0.5-1.0; clean punched hole edges; relief edges R3 if relief is released",
           "holes_or_inserts": "Confirm insert/boss/relief construction before production",
           "material": "Solid EPDM or NR/SBR, Shore A 60 +/-5",
           "release_state": "quote_ready_caliper_before_production",
@@ -17700,7 +17706,9 @@ window.J40_DASHBOARD_DATA = {
           "part": "Underfloor body-support strip liner left",
           "required_qty": "1",
           "optional_spare_qty": "0",
-          "spec": "Flat strip 165 x 38 x 8 mm; plain rubber strip only; smooth edges and flat parallel faces; no stepped section",
+          "spec": "Plain flat underfloor body-support strip; no stepped section",
+          "envelope_3d_mm": "165 L x 38 W x 8 T",
+          "edge_profile": "Plan corners R1.5; top/bottom perimeter edge break 0.5-1.0; smooth cut edges; flat parallel faces",
           "holes_or_inserts": "No through-holes in the rubber by default; reuse or trace the slotted steel retainer separately if needed",
           "material": "Solid EPDM or NR/SBR strip, Shore A 60 +/-5",
           "release_state": "first_article_custom_recreate",
@@ -17786,7 +17794,9 @@ window.J40_DASHBOARD_DATA = {
           "part": "Underfloor body-support strip liner right",
           "required_qty": "1",
           "optional_spare_qty": "0",
-          "spec": "Same rubber spec as left: flat strip 165 x 38 x 8 mm; use the same blank unless the sample proves a handed end trim",
+          "spec": "Plain flat underfloor body-support strip; same blank as left unless dry-fit proves handed trim",
+          "envelope_3d_mm": "165 L x 38 W x 8 T",
+          "edge_profile": "Plan corners R1.5; top/bottom perimeter edge break 0.5-1.0; smooth cut edges; flat parallel faces",
           "holes_or_inserts": "Same retainer rule as left; do not invent slot geometry in the rubber",
           "material": "Same batch/type as FS-STRIP-L",
           "release_state": "first_article_custom_recreate",
@@ -17860,7 +17870,9 @@ window.J40_DASHBOARD_DATA = {
           "part": "Long axle-to-chassis bump stop front-left and both rear",
           "required_qty": "3",
           "optional_spare_qty": "0",
-          "spec": "Toyota-style progressive stop with new two-ear steel saddle; free height 70 +/-1 mm; tapered/radiused rubber body; flat rectangular strike face",
+          "spec": "Toyota-style progressive stop with new two-ear steel saddle and flat rectangular strike face",
+          "envelope_3d_mm": "70 H released; saddle/base L x W, bolt pitch, and strike-face X/Y are vehicle-measured before mould release",
+          "edge_profile": "Tapered/radiused rubber body; no sharp rectangular block edges; saddle edges deburred/coated",
           "holes_or_inserts": "Hole pitch, hole/thread, base footprint, and strike offset from vehicle measurements",
           "material": "NR/SBR bump-stop rubber Shore A 70 +/-5 bonded/captive to coated steel",
           "release_state": "first_article_required",
@@ -17910,7 +17922,9 @@ window.J40_DASHBOARD_DATA = {
           "part": "Short right-front axle-to-chassis bump stop",
           "required_qty": "1",
           "optional_spare_qty": "0",
-          "spec": "Same Toyota-style progressive stop as long version but free height 60 +/-1 mm; do not make 70 mm unless vehicle full-bump test releases trimming",
+          "spec": "Toyota-style progressive stop with new two-ear steel saddle and flat rectangular strike face",
+          "envelope_3d_mm": "60 H released; saddle/base L x W, bolt pitch, and strike-face X/Y are vehicle-measured before mould release",
+          "edge_profile": "Tapered/radiused rubber body; no sharp rectangular block edges; saddle edges deburred/coated",
           "holes_or_inserts": "Hole pitch, hole/thread, base footprint, and strike offset from right-front vehicle measurements",
           "material": "Same compound family as BUMP-60010-LONG",
           "release_state": "first_article_required",
@@ -17961,6 +17975,8 @@ window.J40_DASHBOARD_DATA = {
           "required_qty": "hold",
           "optional_spare_qty": "hold",
           "spec": "Not yet captured as orderable pieces; quote only after the actual strips are found or the body/chassis station proves a continuous flat anti-squeak liner is required",
+          "envelope_3d_mm": "Hold: needs measured L x W x T and any holes/slots from actual piece or installed path",
+          "edge_profile": "Hold: edge radius/chamfer, end trim, and slot edges must come from actual trace",
           "holes_or_inserts": "Needs full-length trace, holes/slots, side/orientation labels, and installed location photos",
           "material": "EPDM or NR/SBR flat strip; hardness by function after location is confirmed",
           "release_state": "hold_identify_and_measure",
@@ -17989,12 +18005,14 @@ window.J40_DASHBOARD_DATA = {
           "part": "Exhaust teardrop hanger cushion",
           "required_qty": "hold",
           "optional_spare_qty": "hold",
-          "spec": "Optional later; target outline 48 x 86 mm, top hole 9 mm, hanger slot 16 x 22 mm, thickness target 22 mm unless sample proves otherwise",
-          "holes_or_inserts": "Needs old/genuine sample or proper tracing before quote",
+          "spec": "Optional later teardrop rubber-metal exhaust cushion only if sample or installed geometry releases final shape",
+          "envelope_3d_mm": "Hold target 48 W x 86 H x 22 T; top hole 9; lower hanger slot 16 x 22 unless sample proves otherwise",
+          "edge_profile": "Radiused teardrop perimeter; clean radiused hole/slot edges; reinforcement/insert detail sample-controlled",
+          "holes_or_inserts": "Needs old/genuine sample, installed support-point measurements, or proper tracing before quote; final route must confirm pin OD, hole/slot spacing, bracket offset, and exhaust clearance.",
           "material": "Heat/vibration-resistant exhaust-hanger rubber, Shore A 60 +/-5",
           "release_state": "hold_for_sample",
           "photo_refs": "fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg",
-          "notes": "Not part of first Longman quote unless sample is available.",
+          "notes": "Not part of first Longman quote unless sample or installed hanger geometry is available. Prefer direct-buy exhaust hanger/cushion by fitted dimensions if an exact market part is available.",
           "evidence_images": [],
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/body_mount_kit.jpg",
@@ -18601,19 +18619,43 @@ window.J40_DASHBOARD_DATA = {
         {
           "order_line_id": "BM-OE-008",
           "route": "OE_PURCHASE_CANDIDATE",
-          "item": "Washer or seat",
+          "item": "Body mount spacer / crush tube",
           "part_number_or_code": "90560-12009",
           "qty_required": "6",
           "qty_to_order": "6",
           "spec_status": "spec_ready",
-          "order_release_state": "reference_only_not_active_with_longman_route",
-          "exact_order_spec": "Order washer/seat 90560-12009, quantity 6, if OE/repro route is selected and sample shape matches.",
-          "material_spec": "OE-style washer/seat",
-          "source_basis": "WhatsApp quote candidate 2026-04-17",
-          "user_action_required": "Measure current washer/seat OD, ID, dish depth, and steel/rubber thickness.",
-          "do_not_order_if": "Do not order while the consolidated Longman custom rubber route is active.",
-          "notes": "Supplier must confirm this is the correct seat/washer for the exact body-mount kit being supplied. | Current active custom rubber procurement is the consolidated Longman order; OE rows are reference only unless the route is deliberately changed.",
+          "order_release_state": "reference_and_local_hardware_basis",
+          "exact_order_spec": "Order Toyota 90560-12009 spacer, quantity 6, if available; otherwise use as the local-copy pattern for the main body-mount crush tubes.",
+          "material_spec": "OE-style steel spacer/crush tube",
+          "source_basis": "WhatsApp quote candidate 2026-04-17 plus Toyota spacer listing",
+          "user_action_required": "Confirm current sleeve OD, ID, and 48.1 mm length against old/OE sample before local fabrication.",
+          "do_not_order_if": "Do not substitute arbitrary local tube stock; do not use 16 mm OD tube unless dry-fit proves no stack wander.",
+          "notes": "This is the released sleeve basis for the Longman square-pad route as well as the OE/repro route; rubber bore target is 18.0 mm.",
           "evidence_images": [
+            {
+              "path": "../../photos/20260405_234652.jpg",
+              "caption": "Floor Seam And Body Mount Rust \u00b7 Rust Assessment \u00b7 2026-04-05",
+              "captured_date": "2026-04-05",
+              "captured_time": "23:46:52",
+              "media_type": "photo",
+              "component_group": "body_floor",
+              "specific_component": "floor_seam_and_body_mount_rust",
+              "stage": "rust_assessment",
+              "media_id": "20260405_234652",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260405_234546.jpg",
+              "caption": "Body Mount And Crossmember Detail \u00b7 Underside Inspection \u00b7 2026-04-05",
+              "captured_date": "2026-04-05",
+              "captured_time": "23:45:46",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "body_mount_and_crossmember_detail",
+              "stage": "underside_inspection",
+              "media_id": "20260405_234546",
+              "matched_tokens": []
+            },
             {
               "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
               "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
@@ -18627,6 +18669,18 @@ window.J40_DASHBOARD_DATA = {
               "matched_tokens": []
             },
             {
+              "path": "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:29",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004429_gp_KJHxGcCA",
+              "matched_tokens": []
+            },
+            {
               "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
               "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
               "captured_date": "2026-05-02",
@@ -18636,30 +18690,6 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rubber_parts_recreation_samples",
               "stage": "procurement_reconciliation",
               "media_id": "20260502_004413_gp_Qno8OVRg",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:44:37",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004437_gp_f1TySzww",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:44:42",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004442_gp_7WcFHjLQ",
               "matched_tokens": []
             }
           ]
@@ -19068,11 +19098,11 @@ window.J40_DASHBOARD_DATA = {
           "qty_required": "2",
           "qty_to_order": "3",
           "spec_status": "spec_ready",
-          "order_release_state": "quote_ready_measurement_before_drill",
-          "exact_order_spec": "Square flat pad 80 x 80 x 24 mm; flat parallel faces; light edge radius/chamfer; leave undrilled or centre-marked until crush-sleeve OD is known.",
+          "order_release_state": "first_article_ready_oem_spacer_bore",
+          "exact_order_spec": "3D envelope 80 L x 80 W x 24 H mm; square flat pad; flat parallel faces; plan corners R1.5; top/bottom edge break or chamfer 1.0 max; 18.0 mm through bore for Toyota 90560-12009 style body-mount spacer.",
           "material_spec": "Black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5",
           "source_basis": "20260405_234652 tub-side landing context; docs/longman-rubber-order-spec-20260508.md",
-          "user_action_required": "Confirm large-pair station, flat footprint, sleeve OD, and installed stack height before drilling/punching centre hole.",
+          "user_action_required": "Confirm large-pair station, flat footprint, Toyota 90560-12009 style sleeve fit, and installed stack height.",
           "do_not_order_if": "Do not order if a complete OE/reproduction rubber route is deliberately selected.",
           "notes": "Primary custom shape is square; trim only if station photos prove a clash. | Line belongs to the single consolidated Longman rubber order, not a separate custom order.",
           "evidence_images": [
@@ -19146,11 +19176,11 @@ window.J40_DASHBOARD_DATA = {
           "qty_required": "10",
           "qty_to_order": "12",
           "spec_status": "spec_ready",
-          "order_release_state": "quote_ready_measurement_before_drill",
-          "exact_order_spec": "Square flat pad 70 x 70 x 22 mm; flat parallel faces; light edge radius/chamfer; leave undrilled or centre-marked until crush-sleeve OD is known.",
+          "order_release_state": "first_article_ready_oem_spacer_bore",
+          "exact_order_spec": "3D envelope 70 L x 70 W x 22 H mm; square flat pad; flat parallel faces; plan corners R1.5; top/bottom edge break or chamfer 1.0 max; 18.0 mm through bore for Toyota 90560-12009 style body-mount spacer.",
           "material_spec": "Black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5",
           "source_basis": "20260405_234652 tub-side landing context; docs/longman-rubber-order-spec-20260508.md",
-          "user_action_required": "Confirm station count, flat footprint, sleeve OD, and installed stack height before drilling/punching centre hole.",
+          "user_action_required": "Confirm station count, flat footprint, Toyota 90560-12009 style sleeve fit, and installed stack height.",
           "do_not_order_if": "Do not order if a complete OE/reproduction rubber route is deliberately selected.",
           "notes": "Primary custom shape is square; trim only if station photos prove a clash. | Line belongs to the single consolidated Longman rubber order, not a separate custom order.",
           "evidence_images": [
@@ -19225,7 +19255,7 @@ window.J40_DASHBOARD_DATA = {
           "qty_to_order": "2",
           "spec_status": "spec_ready",
           "order_release_state": "spec_ready_final_caliper_hold",
-          "exact_order_spec": "Overall length 96 mm; max width 64 mm; free thickness 15 mm; two 12 mm holes; hole centre spacing 64 mm; rectangular relief 36 x 18 mm with R3 corners; top metal insert/boss OD 29 mm.",
+          "exact_order_spec": "3D envelope 96 L x 64 W x 15 T mm; capsule ends R32; outer edge break 0.5-1.0; two 12 mm holes; hole centre spacing 64 mm; rectangular relief 36 x 18 mm with R3 corners only if sample confirms; top metal insert/boss OD 29 mm.",
           "material_spec": "Black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5; reuse/bond insert if original design uses one",
           "source_basis": "May 2 tape-measure photos; docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv",
           "user_action_required": "Caliper-confirm hole spacing, insert OD, thickness, and whether insert is bonded or loose.",
@@ -19363,7 +19393,7 @@ window.J40_DASHBOARD_DATA = {
           "qty_to_order": "1",
           "spec_status": "spec_ready",
           "order_release_state": "first_article_custom_recreate",
-          "exact_order_spec": "Flat strip 165 x 38 x 8 mm; plain rubber strip only; smooth edges and flat parallel faces; no stepped section and no through-holes by default.",
+          "exact_order_spec": "3D envelope 165 L x 38 W x 8 T mm; plain rubber strip only; plan corners R1.5; top/bottom edge break 0.5-1.0; smooth edges and flat parallel faces; no stepped section and no through-holes by default.",
           "material_spec": "Black EPDM or NR/SBR strip rubber, Shore A 60 +/-5; same family as the front/body isolator batch where possible",
           "source_basis": "May 17 installed-location and loose-part photos; docs/chassis-rubbers-workstream.md; docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv",
           "user_action_required": "Order one first article inside the single Longman bundle, then dry-fit on the actual landing and apply only any proven local end trim. Trace/reuse the slotted steel retainer separately if needed.",
@@ -19477,7 +19507,7 @@ window.J40_DASHBOARD_DATA = {
           "qty_to_order": "1",
           "spec_status": "spec_ready",
           "order_release_state": "first_article_custom_recreate",
-          "exact_order_spec": "Same rubber spec as left: flat strip 165 x 38 x 8 mm; plain rubber strip only; use the same blank unless the right-side sample proves a handed end trim.",
+          "exact_order_spec": "Same rubber spec as left: 3D envelope 165 L x 38 W x 8 T mm; plan corners R1.5; top/bottom edge break 0.5-1.0; plain rubber strip only; use the same blank unless the right-side sample proves a handed end trim.",
           "material_spec": "Black EPDM or NR/SBR strip rubber, Shore A 60 +/-5; same batch/type as left where possible",
           "source_basis": "May 17 installed-location and loose-part photos; docs/chassis-rubbers-workstream.md; docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv",
           "user_action_required": "Order one first article inside the single Longman bundle, then dry-fit on the right landing and confirm only any local handed trim. Trace/reuse the slotted steel retainer separately if needed.",
@@ -19588,15 +19618,15 @@ window.J40_DASHBOARD_DATA = {
           "item": "Main body mount steel sleeve or crush tube",
           "part_number_or_code": "BM-SLV",
           "qty_required": "6",
-          "qty_to_order": "8",
+          "qty_to_order": "6",
           "spec_status": "spec_ready",
-          "order_release_state": "spec_ready_measurement_before_cut",
-          "exact_order_spec": "Sleeve ID 10.8-11.0 mm for M10 bolt; sleeve OD to set final BM-ISO centre hole; sleeve length equals completed free rubber/cup stack minus 3-4 mm target compression.",
+          "order_release_state": "spec_ready_oem_spacer_basis",
+          "exact_order_spec": "Toyota 90560-12009 style body-mount spacer/crush tube x6; length 48.1 mm; M10 clearance ID 10.8-11.0 mm if locally fabricated; copy old/OE spacer OD rather than choosing arbitrary tube stock.",
           "material_spec": "Steel tube, square cut, deburred, zinc plated or painted after cutting",
-          "source_basis": "Derived from mount-stack clamp rule and existing chassis_rubber_requirements",
-          "user_action_required": "Measure old sleeve OD and length; dry-stack final rubber/cup pieces before cutting length.",
-          "do_not_order_if": "Do not cut final sleeves until square pad height and washer/cup reuse are dry-stacked.",
-          "notes": "Order 8 blanks or enough tube for 8 sleeves, but cut final length only after stack release.",
+          "source_basis": "Toyota 90560-12009 spacer listing plus original-stack field measurement",
+          "user_action_required": "Source genuine 90560-12009 if available; otherwise caliper old/OE sleeve OD/ID/length and machine one sample before the other five.",
+          "do_not_order_if": "Do not substitute arbitrary tube stock; reject 16 mm OD tube unless dry-fit proves no stack wander.",
+          "notes": "Rubber bore target is 18.0 mm for BM-ISO-SM/LG.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
@@ -19635,42 +19665,6 @@ window.J40_DASHBOARD_DATA = {
               "matched_tokens": []
             },
             {
-              "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:44:13",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004413_gp_Qno8OVRg",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:44:37",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004437_gp_f1TySzww",
-              "matched_tokens": []
-            },
-            {
-              "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:44:42",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004442_gp_7WcFHjLQ",
-              "matched_tokens": []
-            },
-            {
               "path": "../../photos/20260502_004429_gp_KJHxGcCA.jpg",
               "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
               "captured_date": "2026-05-02",
@@ -19680,6 +19674,18 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rubber_parts_recreation_samples",
               "stage": "procurement_reconciliation",
               "media_id": "20260502_004429_gp_KJHxGcCA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004413_gp_Qno8OVRg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:13",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004413_gp_Qno8OVRg",
               "matched_tokens": []
             }
           ]
@@ -21771,18 +21777,6 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Label physical parts before mapping to Toyota NO.1-NO.5; square pad station footprint controls final trim.",
           "evidence_images": [
             {
-              "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:42:31",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004231_gp_CfosvPIg",
-              "matched_tokens": []
-            },
-            {
               "path": "../../photos/20260405_234546.jpg",
               "caption": "Body Mount And Crossmember Detail \u00b7 Underside Inspection \u00b7 2026-04-05",
               "captured_date": "2026-04-05",
@@ -21816,6 +21810,18 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rubber_parts_recreation_samples",
               "stage": "procurement_reconciliation",
               "media_id": "20260502_004429_gp_KJHxGcCA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:31",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004231_gp_CfosvPIg",
               "matched_tokens": []
             },
             {
@@ -21853,18 +21859,6 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Keep left/right stacks separate; square pad station footprint controls final trim.",
           "evidence_images": [
             {
-              "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:42:31",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004231_gp_CfosvPIg",
-              "matched_tokens": []
-            },
-            {
               "path": "../../photos/20260405_234546.jpg",
               "caption": "Body Mount And Crossmember Detail \u00b7 Underside Inspection \u00b7 2026-04-05",
               "captured_date": "2026-04-05",
@@ -21898,6 +21892,18 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rubber_parts_recreation_samples",
               "stage": "procurement_reconciliation",
               "media_id": "20260502_004429_gp_KJHxGcCA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:31",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004231_gp_CfosvPIg",
               "matched_tokens": []
             },
             {
@@ -21935,18 +21941,6 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Confirm square pad footprint and stack height.",
           "evidence_images": [
             {
-              "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:42:31",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004231_gp_CfosvPIg",
-              "matched_tokens": []
-            },
-            {
               "path": "../../photos/20260405_234546.jpg",
               "caption": "Body Mount And Crossmember Detail \u00b7 Underside Inspection \u00b7 2026-04-05",
               "captured_date": "2026-04-05",
@@ -21980,6 +21974,18 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rubber_parts_recreation_samples",
               "stage": "procurement_reconciliation",
               "media_id": "20260502_004429_gp_KJHxGcCA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:31",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004231_gp_CfosvPIg",
               "matched_tokens": []
             },
             {
@@ -22017,18 +22023,6 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Confirm square pad footprint and stack height.",
           "evidence_images": [
             {
-              "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:42:31",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004231_gp_CfosvPIg",
-              "matched_tokens": []
-            },
-            {
               "path": "../../photos/20260405_234546.jpg",
               "caption": "Body Mount And Crossmember Detail \u00b7 Underside Inspection \u00b7 2026-04-05",
               "captured_date": "2026-04-05",
@@ -22062,6 +22056,18 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rubber_parts_recreation_samples",
               "stage": "procurement_reconciliation",
               "media_id": "20260502_004429_gp_KJHxGcCA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:31",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004231_gp_CfosvPIg",
               "matched_tokens": []
             },
             {
@@ -22099,18 +22105,6 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Confirm square pad footprint and whether rear/cowl OE shim rows apply.",
           "evidence_images": [
             {
-              "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:42:31",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004231_gp_CfosvPIg",
-              "matched_tokens": []
-            },
-            {
               "path": "../../photos/20260405_234546.jpg",
               "caption": "Body Mount And Crossmember Detail \u00b7 Underside Inspection \u00b7 2026-04-05",
               "captured_date": "2026-04-05",
@@ -22144,6 +22138,18 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rubber_parts_recreation_samples",
               "stage": "procurement_reconciliation",
               "media_id": "20260502_004429_gp_KJHxGcCA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:31",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004231_gp_CfosvPIg",
               "matched_tokens": []
             },
             {
@@ -22181,18 +22187,6 @@ window.J40_DASHBOARD_DATA = {
           "notes": "Confirm square pad footprint and whether rear/cowl OE shim rows apply.",
           "evidence_images": [
             {
-              "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:42:31",
-              "media_type": "photo",
-              "component_group": "procurement_inventory",
-              "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004231_gp_CfosvPIg",
-              "matched_tokens": []
-            },
-            {
               "path": "../../photos/20260405_234546.jpg",
               "caption": "Body Mount And Crossmember Detail \u00b7 Underside Inspection \u00b7 2026-04-05",
               "captured_date": "2026-04-05",
@@ -22226,6 +22220,18 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rubber_parts_recreation_samples",
               "stage": "procurement_reconciliation",
               "media_id": "20260502_004429_gp_KJHxGcCA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:42:31",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004231_gp_CfosvPIg",
               "matched_tokens": []
             },
             {
@@ -22659,7 +22665,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/longman_rubber_order_20260508.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 42949
+            "bytes": 49051
           },
           "file_count": 7
         }
@@ -23138,7 +23144,7 @@ window.J40_DASHBOARD_DATA = {
           "source": "expenses",
           "source_ref": "part_body_mount_hardware_kit",
           "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
-          "notes": "Spec ready via body_mount_order_release_specs.csv: sleeves 8 blanks ID 10.8-11.0mm for M10; cup/seat washers 14; M10x1.25 class 8.8 minimum trial bolts 70/80/90/100mm x4 each; nuts/washers repair pack with all-metal nuts x12, nyloc x12, flat washers x40, spring washers x20, M10x1.25 weld nuts x4, and 3mm repair tabs x4. M12 front-support pack remains hold until measured. Millat orders cover generic M10/M12 bolt/nut/washer stock only; final body-mount sleeve/cup/length selection remains release-held.",
+          "notes": "Spec ready via body_mount_order_release_specs.csv: Toyota 90560-12009 style body-mount sleeves x6, length 48.1mm, local-copy ID 10.8-11.0mm for M10, OD copied from old/OE sleeve; cup/seat washers 14; M10x1.25 class 8.8 minimum trial bolts 70/80/90/100mm x4 each; nuts/washers repair pack with all-metal nuts x12, nyloc x12, flat washers x40, spring washers x20, M10x1.25 weld nuts x4, and 3mm repair tabs x4. M12 front-support pack remains hold until measured. Millat orders cover generic M10/M12 bolt/nut/washer stock only; final body-mount sleeve/cup/length selection remains release-held.",
           "links": [
             {
               "url": "../../deliverables/fabrication_packages/rubber_recreation_rev_a.zip",
@@ -23605,8 +23611,8 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Consolidated Longman chassis/body custom rubber order (consolidated_longman_quote_ready_measurement_release_hold; delivery not_ordered; amount missing)",
-                "Body mount shim and spacer pack (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Body mount hardware kit bolts sleeves washers (spec_ready_release_hold; delivery not_ordered; amount missing)",
+                "Body mount shim and spacer pack (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)",
                 "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves (ordered_pending_delivery; delivery pending_delivery; amount missing)"
@@ -23726,9 +23732,9 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Consolidated Longman chassis/body custom rubber order (consolidated_longman_quote_ready_measurement_release_hold; delivery not_ordered; amount missing)",
                 "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves (ordered_pending_delivery; delivery pending_delivery; amount missing)",
+                "Body mount hardware kit bolts sleeves washers (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Body mount shim and spacer pack (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)",
-                "Body mount hardware kit bolts sleeves washers (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "1.2 mm cold-rolled mild-steel sheet for tub skin/floor patch plates (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)"
               ]
             },
@@ -35394,7 +35400,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "26 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -35448,7 +35454,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 26 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -57401,8 +57407,8 @@ window.J40_DASHBOARD_DATA = {
             "20260512_072742_gp_uSvGBUiA",
             "20260512_072947_gp_bNB9GvHA"
           ],
-          "photo_status": "direct_location_plus_may12_context_photos",
-          "spec_status": "needs_cable_end_identification",
+          "photo_status": "installed_route_back_section_photos_satisfied",
+          "spec_status": "installed_route_captured_measure_samples_pending",
           "acquisition_status": "acquired",
           "installation_status": "not_installed",
           "current_action": "Received Daraz hand-brake cable; before installation compare the received cable against the old left/right samples and confirm whether it covers the complete rear cable set. Keep old cables intact until fit is proven.",
@@ -57410,8 +57416,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "New automotive parking-brake cable assemblies with corrosion-protected outer sheath; new clevis pins/clips/springs; no used cable reuse",
           "critical_measurements": "Overall cable length, sheath length, end fitting type at backing plate, end fitting type at equalizer/intermediate cable, bracket/clip positions, adjuster thread size and travel",
           "fit_and_test": "Parking brake must hold both rear wheels evenly, release fully without dragging, and retain adjustment after repeated pulls",
-          "source_ref": "docs_brake_workstream|rear_brake_drum_baseline|part_rear_parking_brake_cable_set|gmail_order_243701549680938|user_update_2026-05-26_hand_brake_cable_received",
-          "notes": "Daraz/Vintage Jeep Parts hand-brake cable received 2026-05-26. Sample-match remains required before installation; verify complete set versus single cable, end fittings, sheath length, adjuster/clevis/clip hardware, and route fit against the old cables. May 12 photos add rear cable/lever route context. Old cables remain samples only.",
+          "source_ref": "docs_brake_workstream|rear_brake_drum_baseline|part_rear_parking_brake_cable_set|gmail_order_243701549680938|user_update_2026-05-26_hand_brake_cable_received|user_update_2026-05-28_rear_parking_brake_back_section_photos|docs/brake-runner-spec-capture-20260528.md",
+          "notes": "Daraz/Vintage Jeep Parts hand-brake cable received 2026-05-26. Sample-match remains required before installation; verify complete set versus single cable, end fittings, sheath length, adjuster/clevis/clip hardware, and route fit against the old cables. May 12 photos add rear cable/lever route context. Old cables remain samples only. | User update 2026-05-28 rear back-section photos cover cable route, backing-plate lever entry, return spring, clip/bracket area, and axle/chassis routing. Remaining release is received-cable comparison plus measured/labelled clevis/equalizer/pin/clip/adjuster/spring samples.",
           "evidence_images": [
             {
               "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -57524,7 +57530,7 @@ window.J40_DASHBOARD_DATA = {
             "20260514_100008_gp_bq1VQUXQ",
             "20260514_100647_gp_foDr3ymA"
           ],
-          "photo_status": "direct_location_plus_may12_may14_fitting_photos",
+          "photo_status": "installed_route_back_section_photos_satisfied",
           "spec_status": "working_double_inverted_flare_likely_thread_seat_confirm_pending",
           "acquisition_status": "local_tube_purchase_requested_pending_receipt",
           "installation_status": "not_installed",
@@ -57533,8 +57539,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Brake-rated 3/16 in / 4.75 mm bundy steel or CuNi/Cunifer tube with brake-rated double/inverted flare fittings after thread/seat confirmation; no bare copper",
           "critical_measurements": "Tube OD, line length by side, flare standard, union thread, wheel-cylinder port thread, bend pattern, clip locations, clearance to axle housing, U-bolts, shocks, leaf springs, and tyres",
           "fit_and_test": "Pressure bleed and leak-test; lines must have no rub points, no unsupported spans, and no contact through suspension travel",
-          "source_ref": "docs_brake_workstream|issue_brake_fuel_line_clip_corrosion|photo_import_20260514T104551|user_update_2026-05-27_amir_brake_tube_purchase_run",
-          "notes": "May 12 photos add axle-end line and bracket context. May 14 close-ups add installed flare-nut and wheel-cylinder entry context. Replace/recreate before chassis coating if corrosion or weak clips are present. | Amir local purchase run 2026-05-27 covers tube stock only; fittings, flare nuts, unions, and final bends remain sample/seat controlled.",
+          "source_ref": "docs_brake_workstream|issue_brake_fuel_line_clip_corrosion|photo_import_20260514T104551|user_update_2026-05-27_amir_brake_tube_purchase_run|user_update_2026-05-28_rear_parking_brake_back_section_photos|docs/brake-runner-spec-capture-20260528.md",
+          "notes": "May 12 photos add axle-end line and bracket context. May 14 close-ups add installed flare-nut and wheel-cylinder entry context. Replace/recreate before chassis coating if corrosion or weak clips are present. | Amir local purchase run 2026-05-27 covers tube stock only; fittings, flare nuts, unions, and final bends remain sample/seat controlled. | User update 2026-05-28 rear back-section photos also cover axle hard-line route and wheel-cylinder entry context; final fabrication still needs old-line flare/thread/seat and route template measurements.",
           "evidence_images": [
             {
               "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -57738,8 +57744,8 @@ window.J40_DASHBOARD_DATA = {
             "20260514_095836_gp_tmRy9fqg",
             "20260514_100647_gp_foDr3ymA"
           ],
-          "photo_status": "direct_location_plus_may12_may14_fitting_photos",
-          "spec_status": "needs_fitting_identification",
+          "photo_status": "installed_route_back_section_photos_satisfied",
+          "spec_status": "rear_route_captured_old_sample_measure_pending",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "Can remove now once hydraulic lines are drained/capped and both hose ends are photographed. If the axle will be moved, keep the hose or temporarily secure the axle line until replacement is ready.",
@@ -57747,8 +57753,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "Brake-fluid-rated flexible hose, new copper/crush washers only if the fitted end style uses them, new retaining clips where applicable",
           "critical_measurements": "Chassis-side fitting thread, axle-side fitting/thread or banjo style, hose free length, bracket slot size, retaining clip shape, fitted route clearance",
           "fit_and_test": "Bleed system and check hose is not stretched through normal axle movement, clear of tyre/exhaust/shock/leaf spring, and leak-free under pedal pressure",
-          "source_ref": "docs_brake_workstream|part_mech_brake_flex_hose_set|photo_import_20260514T104551",
-          "notes": "May 12 photos add rear axle hose/line context. May 14 photos add installed fitting detail. Order with the brake flex hose set once fittings and old-sample/free length are confirmed.",
+          "source_ref": "docs_brake_workstream|part_mech_brake_flex_hose_set|photo_import_20260514T104551|user_update_2026-05-28_rear_parking_brake_back_section_photos|docs/brake-runner-spec-capture-20260528.md",
+          "notes": "May 12 photos add rear axle hose/line context. May 14 photos add installed fitting detail. Order with the brake flex hose set once fittings and old-sample/free length are confirmed. | User update 2026-05-28 rear back-section photos cover rear-center hose/T-union route context; final order still needs old hose/free length/end thread and bracket/retaining-clip measurements.",
           "evidence_images": [
             {
               "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -58182,8 +58188,8 @@ window.J40_DASHBOARD_DATA = {
             "20260324_004852",
             "20260324_004906"
           ],
-          "photo_status": "direct_drum_open_layout_photos",
-          "spec_status": "purchase_ready_sample_match",
+          "photo_status": "direct_drum_and_back_section_layout_photos",
+          "spec_status": "layout_photos_present_sample_measure_pending",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "Buy new spring/hold-down/adjuster hardware by old-spring layout unless the PakWheels delivery proves a complete hardware kit is included. Do not reuse tired or rusty return springs.",
@@ -58191,8 +58197,8 @@ window.J40_DASHBOARD_DATA = {
           "material_spec": "New brake-rated plated spring steel and plated adjuster/retaining hardware; no reused stretched springs, rusty clips, or mixed unmatched side-to-side hardware.",
           "critical_measurements": "Shoe width and web hole positions, spring length/wire diameter/hook style, hold-down pin length and backing-plate hole size, adjuster handedness/thread movement, parking-brake lever clip style",
           "fit_and_test": "Shoes must return fully after pedal and handbrake release; adjusters move smoothly; springs do not rub hub or drum; both sides mirror correctly and hold adjustment after bedding.",
-          "source_ref": "docs_brake_workstream|rear_brake_drum_baseline|part_rear_drum_spring_hold_down_hardware_20260527|user_update_2026-05-27_rear_drum_parts_extrapolated",
-          "notes": "User update 2026-05-27: rear drum photo can be extrapolated into separate parts. Shoes/friction set appear already ordered; this row keeps the springs/hold-down/adjuster hardware visible as still required.",
+          "source_ref": "docs_brake_workstream|rear_brake_drum_baseline|part_rear_drum_spring_hold_down_hardware_20260527|user_update_2026-05-27_rear_drum_parts_extrapolated|user_update_2026-05-28_rear_parking_brake_back_section_photos|docs/brake-runner-spec-capture-20260528.md",
+          "notes": "User update 2026-05-27: rear drum photo can be extrapolated into separate parts. Shoes/friction set appear already ordered; this row keeps the springs/hold-down/adjuster hardware visible as still required. | User update 2026-05-28 rear back-section photos add external backing-plate lever, cable spring/clip, wheel-cylinder hard-line entry, and route context; final hardware buy still needs PakWheels inclusion check or labelled/measured old spring/hold-down/adjuster samples.",
           "evidence_images": [
             {
               "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
@@ -58995,7 +59001,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "26 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -59078,7 +59084,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 26 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -59113,7 +59119,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
           "status": "in_progress",
-          "detail": "5 part rows still require price confirmation/order placement."
+          "detail": "2 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
@@ -59453,66 +59459,6 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_mech_brake_flex_hose_set",
-          "workstream": "brake_system",
-          "item": "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Aamir / Montgomery Road brake pipe-hose supplier / SNA Industries / Longman / Brandreth Road",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_mech_brake_flex_hose_set",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md",
-          "notes": "Gettable local brake hose/line package with Aamir/Montgomery Road. Confirm price and buy/quote complete crimped DOT/SAE J1401 or OEM-equivalent flex hose assemblies by old sample, plus any remaining brake-rated 4.75 mm / 3/16 in hard-line stock or fittings not already covered by the separate Aamir tube-stock row. Do not double-buy the 25 ft hard-line coil if part_brake_clutch_475_hard_line_stock_full_vehicle_20260514 is received and passes the brake-rated tube check. No bare copper, plumbing tube, compression fittings, generic rubber hose, or imported pre-bent kit unless explicitly approved.",
-          "links": [
-            {
-              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-              "label": "Longman pipe and hose order CSV",
-              "download": true
-            },
-            {
-              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-              "label": "Longman pipe and hose order spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-              "label": "Pipe order release specs CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-              "label": "Pipe photo and measurement index CSV",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg",
-            "caption": "Brake hydraulic hose and line package - current car cropped front flex hose fitting context",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_mech_brake_flex_hose_set"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 999
-          }
-        },
-        {
           "entry_id": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
           "workstream": "brake_system",
           "item": "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection",
@@ -59570,85 +59516,6 @@ window.J40_DASHBOARD_DATA = {
               "ties"
             ],
             "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_rear_drum_spring_hold_down_hardware_20260527",
-          "workstream": "brake_system",
-          "item": "Rear drum spring / hold-down / adjuster hardware kit",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Aamir / local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_rear_drum_spring_hold_down_hardware_20260527",
-          "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated|user_update_2026-05-27_gettable_local_brake_items",
-          "notes": "BASELINE MUST REPLACE the rear drum spring and small hardware set separately from the ordered shoe/friction pieces. Buy upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum layout or old samples. If the PakWheels shoe delivery includes a complete matching hardware kit, reconcile this row rather than buying duplicates. Do not reuse stretched, rusty, or mismatched brake springs. | User update 2026-05-27: keep this as a gettable local purchase item; confirm price and buy by opened-drum layout or old samples, then reconcile only if the PakWheels shoe delivery includes a complete matching hardware kit.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-            "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 Aamir / local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260524_025547_gp_yCvA0bxA",
-            "matched_tokens": [
-              "photo_20260524_025547_gp_ycva0bxa"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
-          }
-        },
-        {
-          "entry_id": "part_rear_parking_brake_attachment_hardware_20260527",
-          "workstream": "brake_system",
-          "item": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Aamir / local brake parts / hardware supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_rear_parking_brake_attachment_hardware_20260527",
-          "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items",
-          "notes": "Required purchase line for the small attachment pieces around the received hand-brake cable: clevis pins, equalizer/intermediate cable hardware, adjuster nut, cable-end clips, parking-brake return springs, and retaining clips as fitted. Buy locally by old samples unless the received cable package already includes each matching piece; do not reuse rusty, stretched, or mismatched brake-cable attachment hardware. | User update 2026-05-27: keep this as a gettable local purchase item; confirm price and buy clevis/equalizer/return-spring/clip hardware by old samples unless the received cable package proves each matching piece is included.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_retaining_clips_cotter_pack_reference.svg",
-            "caption": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips \u00b7 retaining clip and cotter reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "body_retaining_clips_cotter_pack_reference",
-            "matched_tokens": [
-              "retaining",
-              "clip"
-            ],
-            "match_basis": "local_reference_image",
             "match_score": 700
           }
         },
@@ -59896,6 +59763,166 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "generic_part",
             "matched_tokens": [
               "part"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "entry_id": "part_mech_brake_flex_hose_set",
+          "workstream": "brake_system",
+          "item": "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance",
+          "status": "planned",
+          "procurement_stage": "runner_spec_controlled",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Aamir runner / Montgomery Road brake pipe-hose supplier / written spec or mechanic-labelled sample required",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_mech_brake_flex_hose_set",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+          "notes": "Spec-controlled runner brake hose/line task. Aamir may collect prices, shop cards, package/marking photos, and availability from Montgomery Road suppliers. He may buy only against a written hose spec or mechanic-labelled old sample: complete crimped automotive brake hose assemblies, DOT/SAE J1401 or OEM-equivalent, matching free length, bracket groove, end fittings/thread/seat/banjo as applicable, hose rating, and fitted route clearance. Any hard-line coil/fitting purchase must be reconciled against the separate Aamir tube-stock row. No generic rubber hose, compression fittings, bare copper, duplicate hard-line coil, imported pre-bent kit, substitute fitting, or seller-led fit decision without mechanic/user approval. If any spec point is uncertain, collect photos/price only and ask before payment. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos cover the rear-center hose/T-union and axle route context, but do not release the hose order by themselves. Rear-center hose still needs old-sample/free-length/end-thread confirmation; front hoses still need their own fitted-end/free-length capture.",
+          "links": [
+            {
+              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+              "label": "Longman pipe and hose order CSV",
+              "download": true
+            },
+            {
+              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+              "label": "Longman pipe and hose order spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+              "label": "Pipe order release specs CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+              "label": "Pipe photo and measurement index CSV",
+              "download": true
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg",
+            "caption": "Brake hydraulic hose and line package - current car cropped front flex hose fitting context",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "part_mech_brake_flex_hose_set"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 999
+          }
+        },
+        {
+          "entry_id": "part_rear_drum_spring_hold_down_hardware_20260527",
+          "workstream": "brake_system",
+          "item": "Rear drum spring / hold-down / adjuster hardware kit",
+          "status": "planned",
+          "procurement_stage": "runner_spec_controlled",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Aamir runner / local brake parts supplier / written spec or mechanic-labelled sample required",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_rear_drum_spring_hold_down_hardware_20260527",
+          "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+          "notes": "Spec-controlled runner task. Rear drum spring and small hardware remains gettable locally, but Aamir may buy only after opened-drum inspection gives a written/sample spec for spring layout, hold-down pin/cup/spring dimensions, adjuster style, and clip types. Reconcile against the PakWheels shoe delivery before buying duplicates. Until the spec/sample is released, collect shop photos/prices only; mechanic/user approval controls payment and any substitute fit decision. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear drum/back-section photos provide layout context for the backing plate, cable lever area, wheel-cylinder/hard-line entry, and external parking-brake hardware. Final buy still waits for PakWheels shoe-package hardware check plus labelled/measured spring, hold-down, adjuster, and clip samples if the kit is not included.",
+          "links": [
+            {
+              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+              "label": "Longman pipe and hose order CSV",
+              "download": true
+            },
+            {
+              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+              "label": "Longman pipe and hose order spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+              "label": "Pipe order release specs CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+              "label": "Pipe photo and measurement index CSV",
+              "download": true
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+            "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 Aamir runner / local brake parts supplier / written spec or mechanic-labelled sample required",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260524_025547_gp_yCvA0bxA",
+            "matched_tokens": [
+              "photo_20260524_025547_gp_ycva0bxa"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "entry_id": "part_rear_parking_brake_attachment_hardware_20260527",
+          "workstream": "brake_system",
+          "item": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips",
+          "status": "planned",
+          "procurement_stage": "runner_spec_controlled",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Aamir runner / local brake parts or hardware supplier / written spec or mechanic-labelled sample required",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_rear_parking_brake_attachment_hardware_20260527",
+          "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+          "notes": "Spec-controlled runner task. Rear parking-brake attachment hardware remains gettable locally, but Aamir may buy only after the received cable/old hardware gives a written/sample spec for clevis/equalizer pieces, pins, clips, adjuster nut, cable-end clips, and return springs. Do not buy duplicates if the cable package includes matching pieces. Until the spec/sample is released, collect shop photos/prices only; mechanic/user approval controls payment and any substitute fit decision. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos satisfy installed-route/layout evidence for the parking-brake cable path, backing-plate lever entry, external return spring, clip/bracket area, and axle/chassis routing. Remaining release gap is measured/labelled small hardware and received-cable comparison: clevis/equalizer pieces, pin diameters, clip types, adjuster thread, return-spring dimensions, and cable-end dimensions.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/parking_brake_cable.jpg",
+            "caption": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips \u00b7 parking brake cable reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "parking_brake_cable",
+            "matched_tokens": [
+              "parking",
+              "brake"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -60470,12 +60497,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Rear drum spring / hold-down / adjuster hardware kit (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
                 "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
+                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
-                "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect (ordered_partial_pending_delivery; delivery pending_delivery; amount confirmed)",
-                "Front disc pads and retaining hardware (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -60603,12 +60630,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Rear drum spring / hold-down / adjuster hardware kit (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
-                "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
                 "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)",
-                "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection (purchase_ready; delivery not_ordered; amount missing)",
-                "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (ordered_pending_delivery; delivery pending_delivery; amount missing)"
               ]
             },
             {
@@ -60734,12 +60761,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
+                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Rear drum spring / hold-down / adjuster hardware kit (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect (ordered_partial_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
-                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (purchase_ready; delivery not_ordered; amount missing)",
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "Brake hydraulic splitter T-union and inline union replacement set (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)"
+                "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -60862,12 +60889,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (ordered_pending_delivery; delivery pending_delivery; amount missing)",
+                "Rear drum spring / hold-down / adjuster hardware kit (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
-                "Front disc pads and retaining hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
-                "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)",
-                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (purchase_ready; delivery not_ordered; amount missing)"
+                "Front disc pads and retaining hardware (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -60992,12 +61019,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
-                "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
+                "Rear drum spring / hold-down / adjuster hardware kit (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
-                "Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference (purchase_ready_local_catalog_first_pending_sample_match; delivery not_ordered; amount missing)",
-                "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips (spec_needed_before_order_local_hardware_first; delivery not_ordered; amount missing)",
-                "FJ40 BJ-40 Toyota Land Cruiser hand brake cable (received; delivery received; amount confirmed)"
+                "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference (purchase_ready_local_catalog_first_pending_sample_match; delivery not_ordered; amount missing)"
               ]
             }
           ]
@@ -63984,7 +64011,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "26 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -64038,7 +64065,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 26 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -67041,7 +67068,7 @@ window.J40_DASHBOARD_DATA = {
         "suspension_upgrade"
       ],
       "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared",
-      "blocker_summary": "29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+      "blocker_summary": "26 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
       "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
       "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
       "image": {
@@ -67120,7 +67147,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Confirm price and place purchase-ready orders",
         "status": "in_progress",
-        "detail": "28 rows still in purchase_ready."
+        "detail": "25 rows still in purchase_ready."
       },
       {
         "label": "Place selected quote orders",
@@ -67168,7 +67195,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "purchase_ready",
-        "count": 28
+        "count": 25
       },
       {
         "stage": "purchase_ready_estimate",
@@ -67199,6 +67226,10 @@ window.J40_DASHBOARD_DATA = {
         "count": 1
       },
       {
+        "stage": "runner_spec_controlled",
+        "count": 3
+      },
+      {
         "stage": "spec_needed_before_order",
         "count": 9
       },
@@ -67218,7 +67249,7 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_next_action": [
       {
         "next_action": "confirm_price_then_order",
-        "count": 28
+        "count": 25
       },
       {
         "next_action": "track_delivery",
@@ -67664,81 +67695,6 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "exact_order_evidence",
           "match_score": 980
-        }
-      },
-      {
-        "priority": "P0",
-        "entry_id": "part_rear_drum_spring_hold_down_hardware_20260527",
-        "workstream": "brake_system",
-        "item": "Rear drum spring / hold-down / adjuster hardware kit",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "next_action": "confirm_price_then_order",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Aamir / local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
-        "supply_type": "part",
-        "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated|user_update_2026-05-27_gettable_local_brake_items",
-        "notes": "BASELINE MUST REPLACE the rear drum spring and small hardware set separately from the ordered shoe/friction pieces. Buy upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum layout or old samples. If the PakWheels shoe delivery includes a complete matching hardware kit, reconcile this row rather than buying duplicates. Do not reuse stretched, rusty, or mismatched brake springs. | User update 2026-05-27: keep this as a gettable local purchase item; confirm price and buy by opened-drum layout or old samples, then reconcile only if the PakWheels shoe delivery includes a complete matching hardware kit.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-          "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 Aamir / local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260524_025547_gp_yCvA0bxA",
-          "matched_tokens": [
-            "photo_20260524_025547_gp_ycva0bxa"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
-        }
-      },
-      {
-        "priority": "P0",
-        "entry_id": "part_rear_parking_brake_attachment_hardware_20260527",
-        "workstream": "brake_system",
-        "item": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "next_action": "confirm_price_then_order",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Aamir / local brake parts / hardware supplier",
-        "supply_type": "part",
-        "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items",
-        "notes": "Required purchase line for the small attachment pieces around the received hand-brake cable: clevis pins, equalizer/intermediate cable hardware, adjuster nut, cable-end clips, parking-brake return springs, and retaining clips as fitted. Buy locally by old samples unless the received cable package already includes each matching piece; do not reuse rusty, stretched, or mismatched brake-cable attachment hardware. | User update 2026-05-27: keep this as a gettable local purchase item; confirm price and buy clevis/equalizer/return-spring/clip hardware by old samples unless the received cable package proves each matching piece is included.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_retaining_clips_cotter_pack_reference.svg",
-          "caption": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips \u00b7 retaining clip and cotter reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "body_retaining_clips_cotter_pack_reference",
-          "matched_tokens": [
-            "retaining",
-            "clip"
-          ],
-          "match_basis": "local_reference_image",
-          "match_score": 700
         }
       },
       {
@@ -69002,64 +68958,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_mech_brake_flex_hose_set",
-        "workstream": "brake_system",
-        "item": "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Aamir / Montgomery Road brake pipe-hose supplier / SNA Industries / Longman / Brandreth Road",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md",
-        "notes": "Gettable local brake hose/line package with Aamir/Montgomery Road. Confirm price and buy/quote complete crimped DOT/SAE J1401 or OEM-equivalent flex hose assemblies by old sample, plus any remaining brake-rated 4.75 mm / 3/16 in hard-line stock or fittings not already covered by the separate Aamir tube-stock row. Do not double-buy the 25 ft hard-line coil if part_brake_clutch_475_hard_line_stock_full_vehicle_20260514 is received and passes the brake-rated tube check. No bare copper, plumbing tube, compression fittings, generic rubber hose, or imported pre-bent kit unless explicitly approved.",
-        "links": [
-          {
-            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-            "label": "Longman pipe and hose order CSV",
-            "download": true
-          },
-          {
-            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-            "label": "Longman pipe and hose order spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-            "label": "Pipe order release specs CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Pipe photo and measurement index CSV",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg",
-          "caption": "Brake hydraulic hose and line package - current car cropped front flex hose fitting context",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_mech_brake_flex_hose_set"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 999
-        }
-      },
-      {
         "entry_id": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
         "workstream": "brake_system",
         "item": "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection",
@@ -69119,81 +69017,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_rear_drum_spring_hold_down_hardware_20260527",
-        "workstream": "brake_system",
-        "item": "Rear drum spring / hold-down / adjuster hardware kit",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Aamir / local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
-        "supply_type": "part",
-        "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated|user_update_2026-05-27_gettable_local_brake_items",
-        "notes": "BASELINE MUST REPLACE the rear drum spring and small hardware set separately from the ordered shoe/friction pieces. Buy upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum layout or old samples. If the PakWheels shoe delivery includes a complete matching hardware kit, reconcile this row rather than buying duplicates. Do not reuse stretched, rusty, or mismatched brake springs. | User update 2026-05-27: keep this as a gettable local purchase item; confirm price and buy by opened-drum layout or old samples, then reconcile only if the PakWheels shoe delivery includes a complete matching hardware kit.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-          "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 Aamir / local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260524_025547_gp_yCvA0bxA",
-          "matched_tokens": [
-            "photo_20260524_025547_gp_ycva0bxa"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
-        }
-      },
-      {
-        "entry_id": "part_rear_parking_brake_attachment_hardware_20260527",
-        "workstream": "brake_system",
-        "item": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Aamir / local brake parts / hardware supplier",
-        "supply_type": "part",
-        "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items",
-        "notes": "Required purchase line for the small attachment pieces around the received hand-brake cable: clevis pins, equalizer/intermediate cable hardware, adjuster nut, cable-end clips, parking-brake return springs, and retaining clips as fitted. Buy locally by old samples unless the received cable package already includes each matching piece; do not reuse rusty, stretched, or mismatched brake-cable attachment hardware. | User update 2026-05-27: keep this as a gettable local purchase item; confirm price and buy clevis/equalizer/return-spring/clip hardware by old samples unless the received cable package proves each matching piece is included.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_retaining_clips_cotter_pack_reference.svg",
-          "caption": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips \u00b7 retaining clip and cotter reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "body_retaining_clips_cotter_pack_reference",
-          "matched_tokens": [
-            "retaining",
-            "clip"
-          ],
-          "match_basis": "local_reference_image",
-          "match_score": 700
-        }
-      },
-      {
         "entry_id": "part_rear_center_brake_flex_hose",
         "workstream": "brake_system",
         "item": "Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference",
@@ -69228,6 +69051,160 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 999
+        }
+      },
+      {
+        "entry_id": "part_mech_brake_flex_hose_set",
+        "workstream": "brake_system",
+        "item": "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance",
+        "status": "planned",
+        "procurement_stage": "runner_spec_controlled",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Aamir runner / Montgomery Road brake pipe-hose supplier / written spec or mechanic-labelled sample required",
+        "supply_type": "part",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+        "notes": "Spec-controlled runner brake hose/line task. Aamir may collect prices, shop cards, package/marking photos, and availability from Montgomery Road suppliers. He may buy only against a written hose spec or mechanic-labelled old sample: complete crimped automotive brake hose assemblies, DOT/SAE J1401 or OEM-equivalent, matching free length, bracket groove, end fittings/thread/seat/banjo as applicable, hose rating, and fitted route clearance. Any hard-line coil/fitting purchase must be reconciled against the separate Aamir tube-stock row. No generic rubber hose, compression fittings, bare copper, duplicate hard-line coil, imported pre-bent kit, substitute fitting, or seller-led fit decision without mechanic/user approval. If any spec point is uncertain, collect photos/price only and ask before payment. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos cover the rear-center hose/T-union and axle route context, but do not release the hose order by themselves. Rear-center hose still needs old-sample/free-length/end-thread confirmation; front hoses still need their own fitted-end/free-length capture.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg",
+          "caption": "Brake hydraulic hose and line package - current car cropped front flex hose fitting context",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_mech_brake_flex_hose_set"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 999
+        }
+      },
+      {
+        "entry_id": "part_rear_drum_spring_hold_down_hardware_20260527",
+        "workstream": "brake_system",
+        "item": "Rear drum spring / hold-down / adjuster hardware kit",
+        "status": "planned",
+        "procurement_stage": "runner_spec_controlled",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Aamir runner / local brake parts supplier / written spec or mechanic-labelled sample required",
+        "supply_type": "part",
+        "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+        "notes": "Spec-controlled runner task. Rear drum spring and small hardware remains gettable locally, but Aamir may buy only after opened-drum inspection gives a written/sample spec for spring layout, hold-down pin/cup/spring dimensions, adjuster style, and clip types. Reconcile against the PakWheels shoe delivery before buying duplicates. Until the spec/sample is released, collect shop photos/prices only; mechanic/user approval controls payment and any substitute fit decision. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear drum/back-section photos provide layout context for the backing plate, cable lever area, wheel-cylinder/hard-line entry, and external parking-brake hardware. Final buy still waits for PakWheels shoe-package hardware check plus labelled/measured spring, hold-down, adjuster, and clip samples if the kit is not included.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+          "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 Aamir runner / local brake parts supplier / written spec or mechanic-labelled sample required",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260524_025547_gp_yCvA0bxA",
+          "matched_tokens": [
+            "photo_20260524_025547_gp_ycva0bxa"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "entry_id": "part_rear_parking_brake_attachment_hardware_20260527",
+        "workstream": "brake_system",
+        "item": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips",
+        "status": "planned",
+        "procurement_stage": "runner_spec_controlled",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Aamir runner / local brake parts or hardware supplier / written spec or mechanic-labelled sample required",
+        "supply_type": "part",
+        "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+        "notes": "Spec-controlled runner task. Rear parking-brake attachment hardware remains gettable locally, but Aamir may buy only after the received cable/old hardware gives a written/sample spec for clevis/equalizer pieces, pins, clips, adjuster nut, cable-end clips, and return springs. Do not buy duplicates if the cable package includes matching pieces. Until the spec/sample is released, collect shop photos/prices only; mechanic/user approval controls payment and any substitute fit decision. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos satisfy installed-route/layout evidence for the parking-brake cable path, backing-plate lever entry, external return spring, clip/bracket area, and axle/chassis routing. Remaining release gap is measured/labelled small hardware and received-cable comparison: clevis/equalizer pieces, pin diameters, clip types, adjuster thread, return-spring dimensions, and cable-end dimensions.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/parking_brake_cable.jpg",
+          "caption": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips \u00b7 parking brake cable reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "parking_brake_cable",
+          "matched_tokens": [
+            "parking",
+            "brake"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
         }
       },
       {
@@ -70040,7 +70017,7 @@ window.J40_DASHBOARD_DATA = {
         "vendor": "",
         "supply_type": "part",
         "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
-        "notes": "Spec ready via body_mount_order_release_specs.csv: sleeves 8 blanks ID 10.8-11.0mm for M10; cup/seat washers 14; M10x1.25 class 8.8 minimum trial bolts 70/80/90/100mm x4 each; nuts/washers repair pack with all-metal nuts x12, nyloc x12, flat washers x40, spring washers x20, M10x1.25 weld nuts x4, and 3mm repair tabs x4. M12 front-support pack remains hold until measured. Millat orders cover generic M10/M12 bolt/nut/washer stock only; final body-mount sleeve/cup/length selection remains release-held.",
+        "notes": "Spec ready via body_mount_order_release_specs.csv: Toyota 90560-12009 style body-mount sleeves x6, length 48.1mm, local-copy ID 10.8-11.0mm for M10, OD copied from old/OE sleeve; cup/seat washers 14; M10x1.25 class 8.8 minimum trial bolts 70/80/90/100mm x4 each; nuts/washers repair pack with all-metal nuts x12, nyloc x12, flat washers x40, spring washers x20, M10x1.25 weld nuts x4, and 3mm repair tabs x4. M12 front-support pack remains hold until measured. Millat orders cover generic M10/M12 bolt/nut/washer stock only; final body-mount sleeve/cup/length selection remains release-held.",
         "links": [
           {
             "url": "../../deliverables/fabrication_packages/rubber_recreation_rev_a.zip",
@@ -77618,10 +77595,12 @@ window.J40_DASHBOARD_DATA = {
         "part": "Main body isolator pad small stations",
         "required_qty": "10",
         "optional_spare_qty": "2",
-        "spec": "Square 70 x 70 x 22 mm; flat parallel faces; light edge radius/chamfer",
-        "holes_or_inserts": "Leave undrilled or mark centre; final hole = measured crush-sleeve OD + 0.5-1.0 mm",
+        "spec": "Square flat body isolator pad; flat parallel top and bottom bearing faces",
+        "envelope_3d_mm": "70 L x 70 W x 22 H; production 18.0 bore on centre",
+        "edge_profile": "Plan corners R1.5; top/bottom perimeter edge break or chamfer 1.0 max; no ragged cut edges",
+        "holes_or_inserts": "Production 18.0 mm through bore for Toyota 90560-12009 style body-mount spacer",
         "material": "Solid EPDM or NR/SBR, Shore A 60 +/-5",
-        "release_state": "quote_ready_measurement_before_drill",
+        "release_state": "first_article_ready_oem_spacer_bore",
         "photo_refs": "20260405_234652|20260405_234546|20260502_004231_gp_CfosvPIg",
         "notes": "Function-first square flat pad; final trim only if a station photo proves a corner or edge clash.",
         "evidence_images": [
@@ -77680,10 +77659,12 @@ window.J40_DASHBOARD_DATA = {
         "part": "Main body isolator pad large stations",
         "required_qty": "2",
         "optional_spare_qty": "1",
-        "spec": "Square 80 x 80 x 24 mm; flat parallel faces; light edge radius/chamfer",
-        "holes_or_inserts": "Leave undrilled or mark centre; final hole = measured crush-sleeve OD + 0.5-1.0 mm",
+        "spec": "Square flat body isolator pad; flat parallel top and bottom bearing faces",
+        "envelope_3d_mm": "80 L x 80 W x 24 H; production 18.0 bore on centre",
+        "edge_profile": "Plan corners R1.5; top/bottom perimeter edge break or chamfer 1.0 max; no ragged cut edges",
+        "holes_or_inserts": "Production 18.0 mm through bore for Toyota 90560-12009 style body-mount spacer",
         "material": "Same batch/type as BM-ISO-SM where possible",
-        "release_state": "quote_ready_measurement_before_drill",
+        "release_state": "first_article_ready_oem_spacer_bore",
         "photo_refs": "20260405_234652|20260405_234546|20260502_004231_gp_CfosvPIg",
         "notes": "Large pair height remains 24 mm; final trim only if a station photo proves a corner or edge clash.",
         "evidence_images": [
@@ -77742,7 +77723,9 @@ window.J40_DASHBOARD_DATA = {
         "part": "Two-hole front-support isolator pad",
         "required_qty": "2",
         "optional_spare_qty": "0",
-        "spec": "Oval/capsule 96 x 64 x 15 mm; two 12 mm holes at 64 mm centres; relief 36 x 18 mm R3 only if physical sample confirms it",
+        "spec": "Oval/capsule front-support isolator pad",
+        "envelope_3d_mm": "96 L x 64 W x 15 T; capsule ends R32; two 12 holes at 64 centres; optional 36 x 18 R3 relief only if sample confirms",
+        "edge_profile": "Outer perimeter edge break 0.5-1.0; clean punched hole edges; relief edges R3 if relief is released",
         "holes_or_inserts": "Confirm insert/boss/relief construction before production",
         "material": "Solid EPDM or NR/SBR, Shore A 60 +/-5",
         "release_state": "quote_ready_caliper_before_production",
@@ -77792,7 +77775,9 @@ window.J40_DASHBOARD_DATA = {
         "part": "Underfloor body-support strip liner left",
         "required_qty": "1",
         "optional_spare_qty": "0",
-        "spec": "Flat strip 165 x 38 x 8 mm; plain rubber strip only; smooth edges and flat parallel faces; no stepped section",
+        "spec": "Plain flat underfloor body-support strip; no stepped section",
+        "envelope_3d_mm": "165 L x 38 W x 8 T",
+        "edge_profile": "Plan corners R1.5; top/bottom perimeter edge break 0.5-1.0; smooth cut edges; flat parallel faces",
         "holes_or_inserts": "No through-holes in the rubber by default; reuse or trace the slotted steel retainer separately if needed",
         "material": "Solid EPDM or NR/SBR strip, Shore A 60 +/-5",
         "release_state": "first_article_custom_recreate",
@@ -77878,7 +77863,9 @@ window.J40_DASHBOARD_DATA = {
         "part": "Underfloor body-support strip liner right",
         "required_qty": "1",
         "optional_spare_qty": "0",
-        "spec": "Same rubber spec as left: flat strip 165 x 38 x 8 mm; use the same blank unless the sample proves a handed end trim",
+        "spec": "Plain flat underfloor body-support strip; same blank as left unless dry-fit proves handed trim",
+        "envelope_3d_mm": "165 L x 38 W x 8 T",
+        "edge_profile": "Plan corners R1.5; top/bottom perimeter edge break 0.5-1.0; smooth cut edges; flat parallel faces",
         "holes_or_inserts": "Same retainer rule as left; do not invent slot geometry in the rubber",
         "material": "Same batch/type as FS-STRIP-L",
         "release_state": "first_article_custom_recreate",
@@ -77952,7 +77939,9 @@ window.J40_DASHBOARD_DATA = {
         "part": "Long axle-to-chassis bump stop front-left and both rear",
         "required_qty": "3",
         "optional_spare_qty": "0",
-        "spec": "Toyota-style progressive stop with new two-ear steel saddle; free height 70 +/-1 mm; tapered/radiused rubber body; flat rectangular strike face",
+        "spec": "Toyota-style progressive stop with new two-ear steel saddle and flat rectangular strike face",
+        "envelope_3d_mm": "70 H released; saddle/base L x W, bolt pitch, and strike-face X/Y are vehicle-measured before mould release",
+        "edge_profile": "Tapered/radiused rubber body; no sharp rectangular block edges; saddle edges deburred/coated",
         "holes_or_inserts": "Hole pitch, hole/thread, base footprint, and strike offset from vehicle measurements",
         "material": "NR/SBR bump-stop rubber Shore A 70 +/-5 bonded/captive to coated steel",
         "release_state": "first_article_required",
@@ -78002,7 +77991,9 @@ window.J40_DASHBOARD_DATA = {
         "part": "Short right-front axle-to-chassis bump stop",
         "required_qty": "1",
         "optional_spare_qty": "0",
-        "spec": "Same Toyota-style progressive stop as long version but free height 60 +/-1 mm; do not make 70 mm unless vehicle full-bump test releases trimming",
+        "spec": "Toyota-style progressive stop with new two-ear steel saddle and flat rectangular strike face",
+        "envelope_3d_mm": "60 H released; saddle/base L x W, bolt pitch, and strike-face X/Y are vehicle-measured before mould release",
+        "edge_profile": "Tapered/radiused rubber body; no sharp rectangular block edges; saddle edges deburred/coated",
         "holes_or_inserts": "Hole pitch, hole/thread, base footprint, and strike offset from right-front vehicle measurements",
         "material": "Same compound family as BUMP-60010-LONG",
         "release_state": "first_article_required",
@@ -78053,6 +78044,8 @@ window.J40_DASHBOARD_DATA = {
         "required_qty": "hold",
         "optional_spare_qty": "hold",
         "spec": "Not yet captured as orderable pieces; quote only after the actual strips are found or the body/chassis station proves a continuous flat anti-squeak liner is required",
+        "envelope_3d_mm": "Hold: needs measured L x W x T and any holes/slots from actual piece or installed path",
+        "edge_profile": "Hold: edge radius/chamfer, end trim, and slot edges must come from actual trace",
         "holes_or_inserts": "Needs full-length trace, holes/slots, side/orientation labels, and installed location photos",
         "material": "EPDM or NR/SBR flat strip; hardness by function after location is confirmed",
         "release_state": "hold_identify_and_measure",
@@ -78081,12 +78074,14 @@ window.J40_DASHBOARD_DATA = {
         "part": "Exhaust teardrop hanger cushion",
         "required_qty": "hold",
         "optional_spare_qty": "hold",
-        "spec": "Optional later; target outline 48 x 86 mm, top hole 9 mm, hanger slot 16 x 22 mm, thickness target 22 mm unless sample proves otherwise",
-        "holes_or_inserts": "Needs old/genuine sample or proper tracing before quote",
+        "spec": "Optional later teardrop rubber-metal exhaust cushion only if sample or installed geometry releases final shape",
+        "envelope_3d_mm": "Hold target 48 W x 86 H x 22 T; top hole 9; lower hanger slot 16 x 22 unless sample proves otherwise",
+        "edge_profile": "Radiused teardrop perimeter; clean radiused hole/slot edges; reinforcement/insert detail sample-controlled",
+        "holes_or_inserts": "Needs old/genuine sample, installed support-point measurements, or proper tracing before quote; final route must confirm pin OD, hole/slot spacing, bracket offset, and exhaust clearance.",
         "material": "Heat/vibration-resistant exhaust-hanger rubber, Shore A 60 +/-5",
         "release_state": "hold_for_sample",
         "photo_refs": "fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg",
-        "notes": "Not part of first Longman quote unless sample is available.",
+        "notes": "Not part of first Longman quote unless sample or installed hanger geometry is available. Prefer direct-buy exhaust hanger/cushion by fitted dimensions if an exact market part is available.",
         "evidence_images": [],
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/body_mount_kit.jpg",
@@ -78110,12 +78105,12 @@ window.J40_DASHBOARD_DATA = {
   },
   "capture_tasks": {
     "summary": {
-      "total_tasks": 107,
-      "now_tasks": 95,
-      "later_tasks": 12,
-      "p0_tasks": 35,
-      "photo_tasks": 40,
-      "measurement_tasks": 73
+      "total_tasks": 110,
+      "now_tasks": 94,
+      "later_tasks": 16,
+      "p0_tasks": 33,
+      "photo_tasks": 39,
+      "measurement_tasks": 75
     },
     "counts_by_workstream": [
       {
@@ -78127,16 +78122,20 @@ window.J40_DASHBOARD_DATA = {
         "count": 18
       },
       {
-        "workstream": "brake_system",
-        "count": 13
-      },
-      {
         "workstream": "chassis_fixing",
         "count": 13
       },
       {
         "workstream": "window_refurbishment",
-        "count": 9
+        "count": 13
+      },
+      {
+        "workstream": "brake_system",
+        "count": 11
+      },
+      {
+        "workstream": "mechanical_baseline",
+        "count": 5
       },
       {
         "workstream": "body_chassis",
@@ -78144,10 +78143,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "eps_vitz_upgrade",
-        "count": 4
-      },
-      {
-        "workstream": "mechanical_baseline",
         "count": 4
       },
       {
@@ -78186,11 +78181,11 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_task_type": [
       {
         "task_type": "measurement",
-        "count": 33
+        "count": 36
       },
       {
         "task_type": "photo_measurement",
-        "count": 27
+        "count": 26
       },
       {
         "task_type": "photo",
@@ -78206,7 +78201,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "task_type": "decision",
-        "count": 6
+        "count": 7
       },
       {
         "task_type": "inspection",
@@ -78216,15 +78211,15 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_priority": [
       {
         "priority": "P0",
-        "count": 35
+        "count": 33
       },
       {
         "priority": "P1",
-        "count": 63
+        "count": 64
       },
       {
         "priority": "P2",
-        "count": 9
+        "count": 13
       }
     ],
     "tasks": [
@@ -78766,264 +78761,6 @@ window.J40_DASHBOARD_DATA = {
             "specific_component": "steering_and_suspension_linkages",
             "stage": "underside_inspection",
             "media_id": "20260406_031010",
-            "matched_tokens": []
-          }
-        ],
-        "links": [
-          {
-            "url": "../../data/manual/brake_system_requirements.csv",
-            "label": "Brake Requirements"
-          }
-        ]
-      },
-      {
-        "task_id": "brake_requirement:BR-REAR-003",
-        "title": "Rear center flexible brake hose",
-        "workstream": "brake_system",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "needs_fitting_identification",
-        "location": "Rear frame-to-axle hydraulic drop at axle center",
-        "action": "Can remove now once hydraulic lines are drained/capped and both hose ends are photographed. If the axle will be moved, keep the hose or temporarily secure the axle line until replacement is ready.",
-        "data_needed": "Chassis-side fitting thread, axle-side fitting/thread or banjo style, hose free length, bracket slot size, retaining clip shape, fitted route clearance",
-        "blocks": "BR-REAR-003",
-        "record_result_in": "",
-        "source_label": "Brake Requirements",
-        "source_path": "data/manual/brake_system_requirements.csv",
-        "source_row_id": "BR-REAR-003",
-        "notes": "May 12 photos add rear axle hose/line context. May 14 photos add installed fitting detail. Order with the brake flex hose set once fittings and old-sample/free length are confirmed.",
-        "evidence_ref": "20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260324_004852|20260324_004906|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA|20260514_095856_gp_vjZG4NtQ|20260514_095846_gp_a9olRp5g|20260514_095836_gp_tmRy9fqg|20260514_100647_gp_foDr3ymA",
-        "evidence_images": [
-          {
-            "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
-            "captured_date": "2026-05-01",
-            "captured_time": "19:43:05",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_spring_hanger_and_crossmember",
-            "stage": "chassis_fixing",
-            "media_id": "20260501_194305_gp_EllBGvXA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260501_194313_gp_lfUqLibA.jpg",
-            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
-            "captured_date": "2026-05-01",
-            "captured_time": "19:43:13",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_spring_hanger_and_crossmember",
-            "stage": "chassis_fixing",
-            "media_id": "20260501_194313_gp_lfUqLibA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260324_004852.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
-            "captured_date": "2026-03-24",
-            "captured_time": "00:48:52",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "underside_inspection",
-            "media_id": "20260324_004852",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260324_004906.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
-            "captured_date": "2026-03-24",
-            "captured_time": "00:49:06",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "underside_inspection",
-            "media_id": "20260324_004906",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_072929_gp_bpHkNO2Q.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Steering Brakes Suspension \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:29:29",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "steering_brakes_suspension",
-            "media_id": "20260512_072929_gp_bpHkNO2Q",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_072947_gp_bNB9GvHA.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Steering Brakes Suspension \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:29:47",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "steering_brakes_suspension",
-            "media_id": "20260512_072947_gp_bNB9GvHA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260514_095856_gp_vjZG4NtQ.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Brake System \u00b7 2026-05-14",
-            "captured_date": "2026-05-14",
-            "captured_time": "09:58:56",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "brake_system",
-            "media_id": "20260514_095856_gp_vjZG4NtQ",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260514_095846_gp_a9olRp5g.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Brake System \u00b7 2026-05-14",
-            "captured_date": "2026-05-14",
-            "captured_time": "09:58:46",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "brake_system",
-            "media_id": "20260514_095846_gp_a9olRp5g",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260514_095836_gp_tmRy9fqg.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Brake System \u00b7 2026-05-14",
-            "captured_date": "2026-05-14",
-            "captured_time": "09:58:36",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "brake_system",
-            "media_id": "20260514_095836_gp_tmRy9fqg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260514_100647_gp_foDr3ymA.jpg",
-            "caption": "Frame Floor Underside And Lines \u00b7 Brake System \u00b7 2026-05-14",
-            "captured_date": "2026-05-14",
-            "captured_time": "10:06:47",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "frame_floor_underside_and_lines",
-            "stage": "brake_system",
-            "media_id": "20260514_100647_gp_foDr3ymA",
-            "matched_tokens": []
-          }
-        ],
-        "links": [
-          {
-            "url": "../../data/manual/brake_system_requirements.csv",
-            "label": "Brake Requirements"
-          }
-        ]
-      },
-      {
-        "task_id": "brake_requirement:BR-REAR-001",
-        "title": "Rear parking brake / handbrake cable set",
-        "workstream": "brake_system",
-        "task_type": "photo_measurement",
-        "priority": "P0",
-        "timing": "now",
-        "status": "needs_cable_end_identification",
-        "location": "Rear axle to rear drum backing plates",
-        "action": "Received Daraz hand-brake cable; before installation compare the received cable against the old left/right samples and confirm whether it covers the complete rear cable set. Keep old cables intact until fit is proven.",
-        "data_needed": "Overall cable length, sheath length, end fitting type at backing plate, end fitting type at equalizer/intermediate cable, bracket/clip positions, adjuster thread size and travel",
-        "blocks": "BR-REAR-001",
-        "record_result_in": "",
-        "source_label": "Brake Requirements",
-        "source_path": "data/manual/brake_system_requirements.csv",
-        "source_row_id": "BR-REAR-001",
-        "notes": "Daraz/Vintage Jeep Parts hand-brake cable received 2026-05-26. Sample-match remains required before installation; verify complete set versus single cable, end fittings, sheath length, adjuster/clevis/clip hardware, and route fit against the old cables. May 12 photos add rear cable/lever route context. Old cables remain samples only.",
-        "evidence_ref": "20260501_194305_gp_EllBGvXA|20260501_194322_gp_XuRtjN4w|20260324_004852|20260324_004906|20260512_072723_gp_r9KEkOdg|20260512_072742_gp_uSvGBUiA|20260512_072947_gp_bNB9GvHA",
-        "evidence_images": [
-          {
-            "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
-            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
-            "captured_date": "2026-05-01",
-            "captured_time": "19:43:05",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_spring_hanger_and_crossmember",
-            "stage": "chassis_fixing",
-            "media_id": "20260501_194305_gp_EllBGvXA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
-            "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
-            "captured_date": "2026-05-01",
-            "captured_time": "19:43:22",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_spring_hanger_and_crossmember",
-            "stage": "chassis_fixing",
-            "media_id": "20260501_194322_gp_XuRtjN4w",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260324_004852.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
-            "captured_date": "2026-03-24",
-            "captured_time": "00:48:52",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "underside_inspection",
-            "media_id": "20260324_004852",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260324_004906.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
-            "captured_date": "2026-03-24",
-            "captured_time": "00:49:06",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "underside_inspection",
-            "media_id": "20260324_004906",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_072723_gp_r9KEkOdg.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Steering Brakes Suspension \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:27:23",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "steering_brakes_suspension",
-            "media_id": "20260512_072723_gp_r9KEkOdg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_072742_gp_uSvGBUiA.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Steering Brakes Suspension \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:27:42",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "steering_brakes_suspension",
-            "media_id": "20260512_072742_gp_uSvGBUiA",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260512_072947_gp_bNB9GvHA.jpg",
-            "caption": "Rear Axle And Leaf Springs \u00b7 Steering Brakes Suspension \u00b7 2026-05-12",
-            "captured_date": "2026-05-12",
-            "captured_time": "07:29:47",
-            "media_type": "photo",
-            "component_group": "chassis_underside",
-            "specific_component": "rear_axle_and_leaf_springs",
-            "stage": "steering_brakes_suspension",
-            "media_id": "20260512_072947_gp_bNB9GvHA",
             "matched_tokens": []
           }
         ],
@@ -84259,20 +83996,8 @@ window.J40_DASHBOARD_DATA = {
         "source_path": "data/manual/body_mount_station_closure_sheet.csv",
         "source_row_id": "MAIN-FL",
         "notes": "Label physical parts before mapping to Toyota NO.1-NO.5; square pad station footprint controls final trim.",
-        "evidence_ref": "20260502_004231_gp_CfosvPIg|20260405_234546|20260405_234652|20260502_004429_gp_KJHxGcCA|20260502_004413_gp_Qno8OVRg",
+        "evidence_ref": "20260405_234546|20260405_234652|20260502_004429_gp_KJHxGcCA|20260502_004231_gp_CfosvPIg|20260502_004413_gp_Qno8OVRg",
         "evidence_images": [
-          {
-            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-            "captured_date": "2026-05-02",
-            "captured_time": "00:42:31",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "rubber_parts_recreation_samples",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260502_004231_gp_CfosvPIg",
-            "matched_tokens": []
-          },
           {
             "path": "../../photos/20260405_234546.jpg",
             "caption": "Body Mount And Crossmember Detail \u00b7 Underside Inspection \u00b7 2026-04-05",
@@ -84307,6 +84032,18 @@ window.J40_DASHBOARD_DATA = {
             "specific_component": "rubber_parts_recreation_samples",
             "stage": "procurement_reconciliation",
             "media_id": "20260502_004429_gp_KJHxGcCA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:42:31",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004231_gp_CfosvPIg",
             "matched_tokens": []
           },
           {
@@ -84346,20 +84083,8 @@ window.J40_DASHBOARD_DATA = {
         "source_path": "data/manual/body_mount_station_closure_sheet.csv",
         "source_row_id": "MAIN-FR",
         "notes": "Keep left/right stacks separate; square pad station footprint controls final trim.",
-        "evidence_ref": "20260502_004231_gp_CfosvPIg|20260405_234546|20260405_234652|20260502_004429_gp_KJHxGcCA|20260502_004413_gp_Qno8OVRg",
+        "evidence_ref": "20260405_234546|20260405_234652|20260502_004429_gp_KJHxGcCA|20260502_004231_gp_CfosvPIg|20260502_004413_gp_Qno8OVRg",
         "evidence_images": [
-          {
-            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-            "captured_date": "2026-05-02",
-            "captured_time": "00:42:31",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "rubber_parts_recreation_samples",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260502_004231_gp_CfosvPIg",
-            "matched_tokens": []
-          },
           {
             "path": "../../photos/20260405_234546.jpg",
             "caption": "Body Mount And Crossmember Detail \u00b7 Underside Inspection \u00b7 2026-04-05",
@@ -84394,6 +84119,18 @@ window.J40_DASHBOARD_DATA = {
             "specific_component": "rubber_parts_recreation_samples",
             "stage": "procurement_reconciliation",
             "media_id": "20260502_004429_gp_KJHxGcCA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:42:31",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004231_gp_CfosvPIg",
             "matched_tokens": []
           },
           {
@@ -84727,20 +84464,8 @@ window.J40_DASHBOARD_DATA = {
         "source_path": "data/manual/body_mount_station_closure_sheet.csv",
         "source_row_id": "MAIN-RL",
         "notes": "Confirm square pad footprint and whether rear/cowl OE shim rows apply.",
-        "evidence_ref": "20260502_004231_gp_CfosvPIg|20260405_234546|20260405_234652|20260502_004429_gp_KJHxGcCA|20260502_004413_gp_Qno8OVRg",
+        "evidence_ref": "20260405_234546|20260405_234652|20260502_004429_gp_KJHxGcCA|20260502_004231_gp_CfosvPIg|20260502_004413_gp_Qno8OVRg",
         "evidence_images": [
-          {
-            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-            "captured_date": "2026-05-02",
-            "captured_time": "00:42:31",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "rubber_parts_recreation_samples",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260502_004231_gp_CfosvPIg",
-            "matched_tokens": []
-          },
           {
             "path": "../../photos/20260405_234546.jpg",
             "caption": "Body Mount And Crossmember Detail \u00b7 Underside Inspection \u00b7 2026-04-05",
@@ -84775,6 +84500,18 @@ window.J40_DASHBOARD_DATA = {
             "specific_component": "rubber_parts_recreation_samples",
             "stage": "procurement_reconciliation",
             "media_id": "20260502_004429_gp_KJHxGcCA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:42:31",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004231_gp_CfosvPIg",
             "matched_tokens": []
           },
           {
@@ -84814,20 +84551,8 @@ window.J40_DASHBOARD_DATA = {
         "source_path": "data/manual/body_mount_station_closure_sheet.csv",
         "source_row_id": "MAIN-RR",
         "notes": "Confirm square pad footprint and whether rear/cowl OE shim rows apply.",
-        "evidence_ref": "20260502_004231_gp_CfosvPIg|20260405_234546|20260405_234652|20260502_004429_gp_KJHxGcCA|20260502_004413_gp_Qno8OVRg",
+        "evidence_ref": "20260405_234546|20260405_234652|20260502_004429_gp_KJHxGcCA|20260502_004231_gp_CfosvPIg|20260502_004413_gp_Qno8OVRg",
         "evidence_images": [
-          {
-            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-            "captured_date": "2026-05-02",
-            "captured_time": "00:42:31",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "rubber_parts_recreation_samples",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260502_004231_gp_CfosvPIg",
-            "matched_tokens": []
-          },
           {
             "path": "../../photos/20260405_234546.jpg",
             "caption": "Body Mount And Crossmember Detail \u00b7 Underside Inspection \u00b7 2026-04-05",
@@ -84862,6 +84587,18 @@ window.J40_DASHBOARD_DATA = {
             "specific_component": "rubber_parts_recreation_samples",
             "stage": "procurement_reconciliation",
             "media_id": "20260502_004429_gp_KJHxGcCA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:42:31",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004231_gp_CfosvPIg",
             "matched_tokens": []
           },
           {
@@ -85185,10 +84922,10 @@ window.J40_DASHBOARD_DATA = {
         "task_type": "measurement",
         "priority": "P1",
         "timing": "now",
-        "status": "quote_ready_measurement_before_drill / quote_ready_not_final_drill",
+        "status": "first_article_ready_oem_spacer_bore / first_article_ready",
         "location": "main tub-to-chassis large pair",
         "action": "Complete BMA-004 and dry-stack",
-        "data_needed": "Confirm large-pair station, flat footprint, sleeve OD, and installed stack height",
+        "data_needed": "Confirm large-pair station, flat footprint, Toyota 90560-12009 style sleeve fit, and installed stack height",
         "blocks": "CR-MAIN-002|BM-FAB-001|BM-ISO-LG|RUB-001",
         "record_result_in": "",
         "source_label": "Rubber Hose Component Audit",
@@ -85248,10 +84985,10 @@ window.J40_DASHBOARD_DATA = {
         "task_type": "measurement",
         "priority": "P1",
         "timing": "now",
-        "status": "quote_ready_measurement_before_drill / quote_ready_not_final_drill",
+        "status": "first_article_ready_oem_spacer_bore / first_article_ready",
         "location": "main tub-to-chassis mount stack",
         "action": "Complete BMA-005 dry-stack",
-        "data_needed": "Confirm flat footprint, sleeve OD, final installed stack height, and station count",
+        "data_needed": "Confirm flat footprint, Toyota 90560-12009 style sleeve fit, final installed stack height, and station count",
         "blocks": "CR-MAIN-001|BM-FAB-002|BM-ISO-SM|RUB-001",
         "record_result_in": "",
         "source_label": "Rubber Hose Component Audit",
@@ -85372,20 +85109,8 @@ window.J40_DASHBOARD_DATA = {
         "source_path": "data/manual/body_mount_station_closure_sheet.csv",
         "source_row_id": "MAIN-ML",
         "notes": "Confirm square pad footprint and stack height.",
-        "evidence_ref": "20260502_004231_gp_CfosvPIg|20260405_234546|20260405_234652|20260502_004429_gp_KJHxGcCA|20260502_004413_gp_Qno8OVRg",
+        "evidence_ref": "20260405_234546|20260405_234652|20260502_004429_gp_KJHxGcCA|20260502_004231_gp_CfosvPIg|20260502_004413_gp_Qno8OVRg",
         "evidence_images": [
-          {
-            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-            "captured_date": "2026-05-02",
-            "captured_time": "00:42:31",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "rubber_parts_recreation_samples",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260502_004231_gp_CfosvPIg",
-            "matched_tokens": []
-          },
           {
             "path": "../../photos/20260405_234546.jpg",
             "caption": "Body Mount And Crossmember Detail \u00b7 Underside Inspection \u00b7 2026-04-05",
@@ -85420,6 +85145,18 @@ window.J40_DASHBOARD_DATA = {
             "specific_component": "rubber_parts_recreation_samples",
             "stage": "procurement_reconciliation",
             "media_id": "20260502_004429_gp_KJHxGcCA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:42:31",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004231_gp_CfosvPIg",
             "matched_tokens": []
           },
           {
@@ -85459,20 +85196,8 @@ window.J40_DASHBOARD_DATA = {
         "source_path": "data/manual/body_mount_station_closure_sheet.csv",
         "source_row_id": "MAIN-MR",
         "notes": "Confirm square pad footprint and stack height.",
-        "evidence_ref": "20260502_004231_gp_CfosvPIg|20260405_234546|20260405_234652|20260502_004429_gp_KJHxGcCA|20260502_004413_gp_Qno8OVRg",
+        "evidence_ref": "20260405_234546|20260405_234652|20260502_004429_gp_KJHxGcCA|20260502_004231_gp_CfosvPIg|20260502_004413_gp_Qno8OVRg",
         "evidence_images": [
-          {
-            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-            "captured_date": "2026-05-02",
-            "captured_time": "00:42:31",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "rubber_parts_recreation_samples",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260502_004231_gp_CfosvPIg",
-            "matched_tokens": []
-          },
           {
             "path": "../../photos/20260405_234546.jpg",
             "caption": "Body Mount And Crossmember Detail \u00b7 Underside Inspection \u00b7 2026-04-05",
@@ -85507,6 +85232,18 @@ window.J40_DASHBOARD_DATA = {
             "specific_component": "rubber_parts_recreation_samples",
             "stage": "procurement_reconciliation",
             "media_id": "20260502_004429_gp_KJHxGcCA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:42:31",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004231_gp_CfosvPIg",
             "matched_tokens": []
           },
           {
@@ -86783,6 +86520,32 @@ window.J40_DASHBOARD_DATA = {
         "source_row_id": "RHA-014",
         "notes": "No appropriate fitted air-cleaner/intake-duct photo is currently assigned; do not reuse radiator/cooling photos for this row.",
         "evidence_ref": "",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-034",
+        "title": "Exhaust hanger rubbers and exhaust cushion cross-check",
+        "workstream": "mechanical_baseline",
+        "task_type": "photo_measurement",
+        "priority": "P1",
+        "timing": "now",
+        "status": "inspection_hold / not_direct_send",
+        "location": "front pipe muffler and tail-pipe support points",
+        "action": "Inspect during final exhaust alignment; do not order universal hangers or fabricate Longman teardrop cushion without sample/tracing.",
+        "data_needed": "Measure every hanger pin OD, hole or slot spacing, rubber thickness, bracket offset, exhaust-to-body/frame clearance, heat shield clearance, and movement at idle/torque. Photograph support points before purchase.",
+        "blocks": "RUB-022|EXH-HGR-90917",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-034",
+        "notes": "Open item clarified after exhaust rubber comparison; exhaust rubbers are legitimate but final-fit and sample-controlled.",
+        "evidence_ref": "not_confirmed_in_current_contact_sheets",
         "evidence_images": [],
         "links": [
           {
@@ -88115,6 +87878,84 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
+        "task_id": "rubber_hose_audit:RHA-032",
+        "title": "Rear ambulance barn door weatherstrips glass seals and spacers",
+        "workstream": "window_refurbishment",
+        "task_type": "decision",
+        "priority": "P2",
+        "timing": "later",
+        "status": "rear_body_fit_hold / deferred_not_direct_send",
+        "location": "rear body aperture rear doors rear door glass",
+        "action": "Defer until rear doors and rear aperture are aligned.",
+        "data_needed": "Confirm rear closure type and year split, 3-side vs full-surround seals, hinge/latch fit, glass thickness, channel profile, spacer pocket/clip details, aperture repairs, and paint stage.",
+        "blocks": "RUB-031",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-032",
+        "notes": "Open item added so rear barn/ambulance door glass seals and spacers do not hide under generic door weatherstrip rows.",
+        "evidence_ref": "not_confirmed_in_current_contact_sheets",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-031",
+        "title": "Bonnet front bib apron and hood cushion rubber set",
+        "workstream": "window_refurbishment",
+        "task_type": "measurement",
+        "priority": "P2",
+        "timing": "later",
+        "status": "front_clip_fit_hold / deferred_not_direct_send",
+        "location": "front bib upper apron bonnet/hood contact points",
+        "action": "Defer until front clip and bonnet gaps are set.",
+        "data_needed": "Trial-align bonnet/front bib/upper apron/cowl; measure provision holes, post diameter, free height, installed height, compression gap, footprint, and contact marks. Check pre-1974 panels before drilling any late-style upper apron seal holes.",
+        "blocks": "RUB-030",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-031",
+        "notes": "Open item added from Mr Landcruiser/Terrain Tamer bonnet bush kit reference and City Racer hood cushion reference.",
+        "evidence_ref": "not_confirmed_in_current_contact_sheets",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-033",
+        "title": "Detailed door window channel belt quarter side and sliding-window rubber checklist",
+        "workstream": "window_refurbishment",
+        "task_type": "measurement",
+        "priority": "P2",
+        "timing": "later",
+        "status": "window_hardware_audit_hold / deferred_not_direct_send",
+        "location": "front doors side glass corner glass sliding windows packings and spacers",
+        "action": "Defer until body alignment paint plan and window hardware inventory are stable.",
+        "data_needed": "Audit door/window hardware, vent or full-glass style, sliding or fixed side windows, glass thickness, channel width/depth, regulator condition, belt strip clip pattern, corner-window style, rear closure type, and final painted aperture dimensions.",
+        "blocks": "RUB-018|RUB-021|RUB-032",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-033",
+        "notes": "Open item added as detailed sub-checklist behind broad RUB-018/RUB-021 body weatherstrip rows.",
+        "evidence_ref": "not_confirmed_in_current_contact_sheets",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
         "task_id": "rubber_hose_audit:RHA-023",
         "title": "Door and window rubbers channels sliding-window seals",
         "workstream": "window_refurbishment",
@@ -88132,6 +87973,32 @@ window.J40_DASHBOARD_DATA = {
         "source_row_id": "RHA-023",
         "notes": "Open deferred items exist.",
         "evidence_ref": "body_chassis_rubber_photo_set",
+        "evidence_images": [],
+        "links": [
+          {
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
+          }
+        ]
+      },
+      {
+        "task_id": "rubber_hose_audit:RHA-030",
+        "title": "Hardtop-to-tub roof and upper side panel weatherstrip package",
+        "workstream": "window_refurbishment",
+        "task_type": "measurement",
+        "priority": "P2",
+        "timing": "later",
+        "status": "body_fit_hold / deferred_not_direct_send",
+        "location": "hardtop roof tub rails windshield top and roof drip mouldings",
+        "action": "Defer until hardtop and body apertures are repaired aligned and trial-fitted.",
+        "data_needed": "Confirm hardtop/tub/windscreen fit, SWB vs long body, seal channels, clip holes, roof drip moulding condition, required cut length, and whether 1973-1984 hardtop-to-tub weatherstrip is factory-correct or retrofit.",
+        "blocks": "RUB-029",
+        "record_result_in": "",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-030",
+        "notes": "Open item added after external weatherstrip comparison. City Racer references: hardtop-to-tub 61688-90308 LH / 61687-90308 RH, upper side panel packing 61534-60011, front roof weatherstrip 63161-60011, roof packing 63168-90307, roof drip spacer pair 63167-90302 / 63168-90302.",
+        "evidence_ref": "not_confirmed_in_current_contact_sheets",
         "evidence_images": [],
         "links": [
           {
@@ -97645,25 +97512,46 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Rear drum spring / hold-down / adjuster hardware kit",
-          "vendor": "Aamir / local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+          "vendor": "Aamir runner / local brake parts supplier / written spec or mechanic-labelled sample required",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
           "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
+          "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated|user_update_2026-05-27_gettable_local_brake_items",
-          "notes": "BASELINE MUST REPLACE the rear drum spring and small hardware set separately from the ordered shoe/friction pieces. Buy upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum layout or old samples. If the PakWheels shoe delivery includes a complete matching hardware kit, reconcile this row rather than buying duplicates. Do not reuse stretched, rusty, or mismatched brake springs. | User update 2026-05-27: keep this as a gettable local purchase item; confirm price and buy by opened-drum layout or old samples, then reconcile only if the PakWheels shoe delivery includes a complete matching hardware kit.",
-          "links": [],
+          "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+          "notes": "Spec-controlled runner task. Rear drum spring and small hardware remains gettable locally, but Aamir may buy only after opened-drum inspection gives a written/sample spec for spring layout, hold-down pin/cup/spring dimensions, adjuster style, and clip types. Reconcile against the PakWheels shoe delivery before buying duplicates. Until the spec/sample is released, collect shop photos/prices only; mechanic/user approval controls payment and any substitute fit decision. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear drum/back-section photos provide layout context for the backing plate, cable lever area, wheel-cylinder/hard-line entry, and external parking-brake hardware. Final buy still waits for PakWheels shoe-package hardware check plus labelled/measured spring, hold-down, adjuster, and clip samples if the kit is not included.",
+          "links": [
+            {
+              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+              "label": "Longman pipe and hose order CSV",
+              "download": true
+            },
+            {
+              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+              "label": "Longman pipe and hose order spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+              "label": "Pipe order release specs CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+              "label": "Pipe photo and measurement index CSV",
+              "download": true
+            }
+          ],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-            "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 Aamir / local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+            "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 Aamir runner / local brake parts supplier / written spec or mechanic-labelled sample required",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -97723,37 +97611,37 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips",
-          "vendor": "Aamir / local brake parts / hardware supplier",
+          "vendor": "Aamir runner / local brake parts or hardware supplier / written spec or mechanic-labelled sample required",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
           "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
+          "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items",
-          "notes": "Required purchase line for the small attachment pieces around the received hand-brake cable: clevis pins, equalizer/intermediate cable hardware, adjuster nut, cable-end clips, parking-brake return springs, and retaining clips as fitted. Buy locally by old samples unless the received cable package already includes each matching piece; do not reuse rusty, stretched, or mismatched brake-cable attachment hardware. | User update 2026-05-27: keep this as a gettable local purchase item; confirm price and buy clevis/equalizer/return-spring/clip hardware by old samples unless the received cable package proves each matching piece is included.",
+          "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+          "notes": "Spec-controlled runner task. Rear parking-brake attachment hardware remains gettable locally, but Aamir may buy only after the received cable/old hardware gives a written/sample spec for clevis/equalizer pieces, pins, clips, adjuster nut, cable-end clips, and return springs. Do not buy duplicates if the cable package includes matching pieces. Until the spec/sample is released, collect shop photos/prices only; mechanic/user approval controls payment and any substitute fit decision. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos satisfy installed-route/layout evidence for the parking-brake cable path, backing-plate lever entry, external return spring, clip/bracket area, and axle/chassis routing. Remaining release gap is measured/labelled small hardware and received-cable comparison: clevis/equalizer pieces, pin diameters, clip types, adjuster thread, return-spring dimensions, and cable-end dimensions.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_retaining_clips_cotter_pack_reference.svg",
-            "caption": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips \u00b7 retaining clip and cotter reference image",
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/parking_brake_cable.jpg",
+            "caption": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips \u00b7 parking brake cable reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
-            "specific_component": "local_reference_image",
+            "specific_component": "semantic_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "body_retaining_clips_cotter_pack_reference",
+            "media_id": "parking_brake_cable",
             "matched_tokens": [
-              "retaining",
-              "clip"
+              "parking",
+              "brake"
             ],
-            "match_basis": "local_reference_image",
+            "match_basis": "semantic_reference_image",
             "match_score": 700
           }
         },
@@ -97927,7 +97815,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
-          "notes": "Spec ready via body_mount_order_release_specs.csv: sleeves 8 blanks ID 10.8-11.0mm for M10; cup/seat washers 14; M10x1.25 class 8.8 minimum trial bolts 70/80/90/100mm x4 each; nuts/washers repair pack with all-metal nuts x12, nyloc x12, flat washers x40, spring washers x20, M10x1.25 weld nuts x4, and 3mm repair tabs x4. M12 front-support pack remains hold until measured. Millat orders cover generic M10/M12 bolt/nut/washer stock only; final body-mount sleeve/cup/length selection remains release-held.",
+          "notes": "Spec ready via body_mount_order_release_specs.csv: Toyota 90560-12009 style body-mount sleeves x6, length 48.1mm, local-copy ID 10.8-11.0mm for M10, OD copied from old/OE sleeve; cup/seat washers 14; M10x1.25 class 8.8 minimum trial bolts 70/80/90/100mm x4 each; nuts/washers repair pack with all-metal nuts x12, nyloc x12, flat washers x40, spring washers x20, M10x1.25 weld nuts x4, and 3mm repair tabs x4. M12 front-support pack remains hold until measured. Millat orders cover generic M10/M12 bolt/nut/washer stock only; final body-mount sleeve/cup/length selection remains release-held.",
           "links": [
             {
               "url": "../../deliverables/fabrication_packages/rubber_recreation_rev_a.zip",
@@ -99829,17 +99717,17 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "substance",
           "inventory_group": "substances",
           "item": "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance",
-          "vendor": "Aamir / Montgomery Road brake pipe-hose supplier / SNA Industries / Longman / Brandreth Road",
+          "vendor": "Aamir runner / Montgomery Road brake pipe-hose supplier / written spec or mechanic-labelled sample required",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
           "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
+          "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md",
-          "notes": "Gettable local brake hose/line package with Aamir/Montgomery Road. Confirm price and buy/quote complete crimped DOT/SAE J1401 or OEM-equivalent flex hose assemblies by old sample, plus any remaining brake-rated 4.75 mm / 3/16 in hard-line stock or fittings not already covered by the separate Aamir tube-stock row. Do not double-buy the 25 ft hard-line coil if part_brake_clutch_475_hard_line_stock_full_vehicle_20260514 is received and passes the brake-rated tube check. No bare copper, plumbing tube, compression fittings, generic rubber hose, or imported pre-bent kit unless explicitly approved.",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+          "notes": "Spec-controlled runner brake hose/line task. Aamir may collect prices, shop cards, package/marking photos, and availability from Montgomery Road suppliers. He may buy only against a written hose spec or mechanic-labelled old sample: complete crimped automotive brake hose assemblies, DOT/SAE J1401 or OEM-equivalent, matching free length, bracket groove, end fittings/thread/seat/banjo as applicable, hose rating, and fitted route clearance. Any hard-line coil/fitting purchase must be reconciled against the separate Aamir tube-stock row. No generic rubber hose, compression fittings, bare copper, duplicate hard-line coil, imported pre-bent kit, substitute fitting, or seller-led fit decision without mechanic/user approval. If any spec point is uncertain, collect photos/price only and ask before payment. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos cover the rear-center hose/T-union and axle route context, but do not release the hose order by themselves. Rear-center hose still needs old-sample/free-length/end-thread confirmation; front hoses still need their own fitted-end/free-length capture.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -100194,7 +100082,7 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "tool",
           "inventory_group": "tools",
           "item": "Brake hard-line internal/external deburrer or reamer for 4.75 mm tube",
-          "vendor": "Aamir / Montgomery Road local tool market / Toolsmart / brake hydraulic pipe specialist",
+          "vendor": "Aamir runner / Montgomery Road local tool market / Toolsmart / brake hydraulic pipe specialist",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
@@ -100203,8 +100091,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-003|web_4lifetimelines_master_flaring_set|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md",
-          "notes": "Buy a compact internal/external tube deburrer or reamer unless the delivered flaring kit includes a good one. Every 4.75 mm / 3/16 in brake-line cut must be deburred inside and outside before double/inverted flaring. Reject a workflow that leaves burrs inside the hydraulic tube. | Purchase remains open after TM25550 review: order evidence confirms the Harden cutter and PARD flaring/cutting set only. No captured order line or ToolsMart product text proves a separate internal/external deburrer/reamer was included. | User update 2026-05-27: this is a gettable local tool item; buy a dedicated internal/external deburrer or reamer if Aamir finds one at sensible price, unless the delivered flaring kit is physically confirmed to include a proper deburring tool.",
+          "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-003|web_4lifetimelines_master_flaring_set|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-27_aamir_runner_not_mechanic",
+          "notes": "Buy a compact internal/external tube deburrer or reamer unless the delivered flaring kit includes a good one. Every 4.75 mm / 3/16 in brake-line cut must be deburred inside and outside before double/inverted flaring. Reject a workflow that leaves burrs inside the hydraulic tube. | Purchase remains open after TM25550 review: order evidence confirms the Harden cutter and PARD flaring/cutting set only. No captured order line or ToolsMart product text proves a separate internal/external deburrer/reamer was included. | User update 2026-05-27: this is a gettable local tool item; buy a dedicated internal/external deburrer or reamer if Aamir finds one at sensible price, unless the delivered flaring kit is physically confirmed to include a proper deburring tool. | User update 2026-05-27: appropriate office-runner task only if it is a simple labelled internal/external deburrer or reamer for small tube; no brake fitment judgement required.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -109732,7 +109620,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
-        "notes": "Spec ready via body_mount_order_release_specs.csv: sleeves 8 blanks ID 10.8-11.0mm for M10; cup/seat washers 14; M10x1.25 class 8.8 minimum trial bolts 70/80/90/100mm x4 each; nuts/washers repair pack with all-metal nuts x12, nyloc x12, flat washers x40, spring washers x20, M10x1.25 weld nuts x4, and 3mm repair tabs x4. M12 front-support pack remains hold until measured. Millat orders cover generic M10/M12 bolt/nut/washer stock only; final body-mount sleeve/cup/length selection remains release-held.",
+        "notes": "Spec ready via body_mount_order_release_specs.csv: Toyota 90560-12009 style body-mount sleeves x6, length 48.1mm, local-copy ID 10.8-11.0mm for M10, OD copied from old/OE sleeve; cup/seat washers 14; M10x1.25 class 8.8 minimum trial bolts 70/80/90/100mm x4 each; nuts/washers repair pack with all-metal nuts x12, nyloc x12, flat washers x40, spring washers x20, M10x1.25 weld nuts x4, and 3mm repair tabs x4. M12 front-support pack remains hold until measured. Millat orders cover generic M10/M12 bolt/nut/washer stock only; final body-mount sleeve/cup/length selection remains release-held.",
         "links": [
           {
             "url": "../../deliverables/fabrication_packages/rubber_recreation_rev_a.zip",
@@ -110986,25 +110874,46 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Rear drum spring / hold-down / adjuster hardware kit",
-        "vendor": "Aamir / local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+        "vendor": "Aamir runner / local brake parts supplier / written spec or mechanic-labelled sample required",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
         "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
+        "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated|user_update_2026-05-27_gettable_local_brake_items",
-        "notes": "BASELINE MUST REPLACE the rear drum spring and small hardware set separately from the ordered shoe/friction pieces. Buy upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum layout or old samples. If the PakWheels shoe delivery includes a complete matching hardware kit, reconcile this row rather than buying duplicates. Do not reuse stretched, rusty, or mismatched brake springs. | User update 2026-05-27: keep this as a gettable local purchase item; confirm price and buy by opened-drum layout or old samples, then reconcile only if the PakWheels shoe delivery includes a complete matching hardware kit.",
-        "links": [],
+        "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+        "notes": "Spec-controlled runner task. Rear drum spring and small hardware remains gettable locally, but Aamir may buy only after opened-drum inspection gives a written/sample spec for spring layout, hold-down pin/cup/spring dimensions, adjuster style, and clip types. Reconcile against the PakWheels shoe delivery before buying duplicates. Until the spec/sample is released, collect shop photos/prices only; mechanic/user approval controls payment and any substitute fit decision. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear drum/back-section photos provide layout context for the backing plate, cable lever area, wheel-cylinder/hard-line entry, and external parking-brake hardware. Final buy still waits for PakWheels shoe-package hardware check plus labelled/measured spring, hold-down, adjuster, and clip samples if the kit is not included.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-          "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 Aamir / local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+          "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 Aamir runner / local brake parts supplier / written spec or mechanic-labelled sample required",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -111025,37 +110934,37 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips",
-        "vendor": "Aamir / local brake parts / hardware supplier",
+        "vendor": "Aamir runner / local brake parts or hardware supplier / written spec or mechanic-labelled sample required",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
         "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
+        "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items",
-        "notes": "Required purchase line for the small attachment pieces around the received hand-brake cable: clevis pins, equalizer/intermediate cable hardware, adjuster nut, cable-end clips, parking-brake return springs, and retaining clips as fitted. Buy locally by old samples unless the received cable package already includes each matching piece; do not reuse rusty, stretched, or mismatched brake-cable attachment hardware. | User update 2026-05-27: keep this as a gettable local purchase item; confirm price and buy clevis/equalizer/return-spring/clip hardware by old samples unless the received cable package proves each matching piece is included.",
+        "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+        "notes": "Spec-controlled runner task. Rear parking-brake attachment hardware remains gettable locally, but Aamir may buy only after the received cable/old hardware gives a written/sample spec for clevis/equalizer pieces, pins, clips, adjuster nut, cable-end clips, and return springs. Do not buy duplicates if the cable package includes matching pieces. Until the spec/sample is released, collect shop photos/prices only; mechanic/user approval controls payment and any substitute fit decision. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos satisfy installed-route/layout evidence for the parking-brake cable path, backing-plate lever entry, external return spring, clip/bracket area, and axle/chassis routing. Remaining release gap is measured/labelled small hardware and received-cable comparison: clevis/equalizer pieces, pin diameters, clip types, adjuster thread, return-spring dimensions, and cable-end dimensions.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_retaining_clips_cotter_pack_reference.svg",
-          "caption": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips \u00b7 retaining clip and cotter reference image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/parking_brake_cable.jpg",
+          "caption": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips \u00b7 parking brake cable reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
-          "specific_component": "local_reference_image",
+          "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "body_retaining_clips_cotter_pack_reference",
+          "media_id": "parking_brake_cable",
           "matched_tokens": [
-            "retaining",
-            "clip"
+            "parking",
+            "brake"
           ],
-          "match_basis": "local_reference_image",
+          "match_basis": "semantic_reference_image",
           "match_score": 700
         }
       },
@@ -111905,17 +111814,17 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "substance",
         "inventory_group": "substances",
         "item": "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance",
-        "vendor": "Aamir / Montgomery Road brake pipe-hose supplier / SNA Industries / Longman / Brandreth Road",
+        "vendor": "Aamir runner / Montgomery Road brake pipe-hose supplier / written spec or mechanic-labelled sample required",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
         "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
+        "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md",
-        "notes": "Gettable local brake hose/line package with Aamir/Montgomery Road. Confirm price and buy/quote complete crimped DOT/SAE J1401 or OEM-equivalent flex hose assemblies by old sample, plus any remaining brake-rated 4.75 mm / 3/16 in hard-line stock or fittings not already covered by the separate Aamir tube-stock row. Do not double-buy the 25 ft hard-line coil if part_brake_clutch_475_hard_line_stock_full_vehicle_20260514 is received and passes the brake-rated tube check. No bare copper, plumbing tube, compression fittings, generic rubber hose, or imported pre-bent kit unless explicitly approved.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+        "notes": "Spec-controlled runner brake hose/line task. Aamir may collect prices, shop cards, package/marking photos, and availability from Montgomery Road suppliers. He may buy only against a written hose spec or mechanic-labelled old sample: complete crimped automotive brake hose assemblies, DOT/SAE J1401 or OEM-equivalent, matching free length, bracket groove, end fittings/thread/seat/banjo as applicable, hose rating, and fitted route clearance. Any hard-line coil/fitting purchase must be reconciled against the separate Aamir tube-stock row. No generic rubber hose, compression fittings, bare copper, duplicate hard-line coil, imported pre-bent kit, substitute fitting, or seller-led fit decision without mechanic/user approval. If any spec point is uncertain, collect photos/price only and ask before payment. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos cover the rear-center hose/T-union and axle route context, but do not release the hose order by themselves. Rear-center hose still needs old-sample/free-length/end-thread confirmation; front hoses still need their own fitted-end/free-length capture.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -112200,7 +112109,7 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "tool",
         "inventory_group": "tools",
         "item": "Brake hard-line internal/external deburrer or reamer for 4.75 mm tube",
-        "vendor": "Aamir / Montgomery Road local tool market / Toolsmart / brake hydraulic pipe specialist",
+        "vendor": "Aamir runner / Montgomery Road local tool market / Toolsmart / brake hydraulic pipe specialist",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
@@ -112209,8 +112118,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-003|web_4lifetimelines_master_flaring_set|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md",
-        "notes": "Buy a compact internal/external tube deburrer or reamer unless the delivered flaring kit includes a good one. Every 4.75 mm / 3/16 in brake-line cut must be deburred inside and outside before double/inverted flaring. Reject a workflow that leaves burrs inside the hydraulic tube. | Purchase remains open after TM25550 review: order evidence confirms the Harden cutter and PARD flaring/cutting set only. No captured order line or ToolsMart product text proves a separate internal/external deburrer/reamer was included. | User update 2026-05-27: this is a gettable local tool item; buy a dedicated internal/external deburrer or reamer if Aamir finds one at sensible price, unless the delivered flaring kit is physically confirmed to include a proper deburring tool.",
+        "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-003|web_4lifetimelines_master_flaring_set|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md|user_update_2026-05-27_aamir_runner_not_mechanic",
+        "notes": "Buy a compact internal/external tube deburrer or reamer unless the delivered flaring kit includes a good one. Every 4.75 mm / 3/16 in brake-line cut must be deburred inside and outside before double/inverted flaring. Reject a workflow that leaves burrs inside the hydraulic tube. | Purchase remains open after TM25550 review: order evidence confirms the Harden cutter and PARD flaring/cutting set only. No captured order line or ToolsMart product text proves a separate internal/external deburrer/reamer was included. | User update 2026-05-27: this is a gettable local tool item; buy a dedicated internal/external deburrer or reamer if Aamir finds one at sensible price, unless the delivered flaring kit is physically confirmed to include a proper deburring tool. | User update 2026-05-27: appropriate office-runner task only if it is a simple labelled internal/external deburrer or reamer for small tube; no brake fitment judgement required.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",

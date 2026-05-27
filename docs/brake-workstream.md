@@ -239,7 +239,9 @@ Use this as the workshop handoff. The output should be photos plus measurements 
 ## Parts And Procurement Signals Already In Repo
 
 - `part_copper_grease`: already received
-- `part_mech_brake_flex_hose_set`: purchase-ready and should stay in the baseline safety bucket
+- `part_mech_brake_flex_hose_set`: baseline safety item, but procurement is spec-controlled. Define hose positions, free lengths, end fittings/thread/seat, bracket groove, rating, and route clearance first; Aamir may buy only the exact written-spec or mechanic-labelled-sample match.
+- `runner_spec_controlled` rows use [brake-runner-spec-capture-20260528.md](brake-runner-spec-capture-20260528.md): capture installed photos, labelled old samples, ruler/caliper measurements, close-ups of ends/clips/threads/seats, and bagged samples by position before releasing payment.
+- User update 2026-05-28: the existing rear back-section photos already satisfy much of the installed parking-brake/backing-plate capture: rear cable route, backing-plate lever entry, external spring/clip/bracket area, axle hard-line route, and rear center hose/T-union context. Remaining runner-release gap is measurements and labelled samples, not more generic route photos.
 - `part_dot3_brake_fluid_autohub_6x354ml`: received from Autohub as 6 x 354 ml sealed DOT 3 brake fluid, 2124 ml total, order `62228`; reject opened/damaged bottles before use.
 - `BR-SYS-002`: hydraulic-opening prep is a workstream safety gate, not a purchase line. Verify on-hand/workshop line caps/plugs, catch bottle or bleeder kit, brake cleaner, rags, and catch tray before opening any hydraulic fitting. Clear bleed hose and nitrile gloves are received. Do not use DOT 5 or mix unknown old fluid.
 - Existing estimate rows in `data/manual/workbook_tabs/parts.csv`:
