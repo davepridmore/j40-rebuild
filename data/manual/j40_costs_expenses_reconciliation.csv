@@ -23,10 +23,10 @@ Tools,22,Electric Clamp Meter Multimeter Tester Pen Kit ANENG ST170+B15 600V AC/
 Tools,23,YTH -803 AUTOMATIC WIRE STRIPPER & CRIPMER,1650,fiaz.com.pk,Y,Y,line_item,no_match,,,,,,,,
 Tools,24,Side Cutter Bosi Black in Pakistan,650,fiaz.com.pk,No,No,line_item,no_match,,,,,,,,
 Tools,25,Bosi Nose Plier 6'' Black A+ Quality in Pakistan,650,fiaz.com.pk,Y,Y,line_item,no_match,,,,,,,,
-Tools,26,INGCO Air compressor - ACS112501 × 1,57000,almirajtrading.com.pk,,N,line_item,no_match,,,,,,,,
+Tools,26,INGCO Air compressor - ACS112501 × 1,57000,almirajtrading.com.pk,Y,Y,line_item,no_match,,,,,,,,
 Tools,27,Total Abrasive metal Cutting Disc Set 50 Pcs,3999,ngcotool.pk,Y,Y,line_item,no_match,,,,,,,,
 Tools,28,Tolsen 79646 Heavy Duty Bench Grinder 6,13999,ngcotool.pk,No,No,line_item,no_match,,,,,,,,
-Tools,29,10 meter hose for ar compressINGCO Air hose - AH1151 × 1or,2850,almirajtrading.com.pk,M,N,line_item,no_match,,,,,,,,
+Tools,29,10 meter hose for ar compressINGCO Air hose - AH1151 × 1or,2850,almirajtrading.com.pk,N,Y,line_item,matched_contained_in_bundle,1.0,tool_almiraj_ingco_air_setup_bundle_20260517,"Almiraj INGCO air and cleaning setup - ACS112501 compressor, AH1151 hose, ABG081-3 blow gun, ATG0601 tire inflator, AWG1001 washing gun, HGVC02 gloves, HPWR12008 pressure washer",almirajtrading.com.pk,tools,00_site_setup,site_setup,ordered_partial_pending_delivery
 Tools,30,Jumnp Leads,,,Y,Y,line_item,no_match,,,,,,,,
 Tools,31,Jacks and stands,,,,,section_header,not_applicable,,,,,,,,
 Tools,41,Ar-CO2 Canister,42362,pakoxygen,Y,Y,line_item,matched_exact_item,1.0,tool_pakoxygen_ar_co2_canister,Ar-CO2 Canister,pakoxygen,tools,03_body_chassis,body_chassis,received

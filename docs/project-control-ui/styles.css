@@ -293,6 +293,19 @@ h1 {
   border-color: #b8ad9d;
 }
 
+.need-to-order-component-group {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.85rem;
+  padding-top: 0.75rem;
+}
+
+.need-to-order-component-group h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
 .item-action-cell {
   align-items: flex-start;
   display: inline-flex;

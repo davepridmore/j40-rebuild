@@ -6607,6 +6607,137 @@
     const suppliesPreviously = supplyRowsByStatus.previously || [];
     const suppliesInProcess = supplyRowsByStatus.in_process || [];
     const suppliesStillRequired = supplyRowsByStatus.still_required || [];
+    const needToOrderComponentOrder = [
+      "brake_hydraulic",
+      "electrical_wiring",
+      "body_chassis",
+      "mechanical_driveline",
+      "interior_weatherproofing",
+      "workshop_tools",
+      "materials_consumables",
+      "other",
+    ];
+    const needToOrderComponentLabels = {
+      brake_hydraulic: "Brake / Hydraulic",
+      electrical_wiring: "Electrical / Wiring",
+      body_chassis: "Body / Chassis / Rubbers",
+      mechanical_driveline: "Mechanical / Driveline",
+      interior_weatherproofing: "Interior / Weatherproofing",
+      workshop_tools: "Workshop Tools",
+      materials_consumables: "Materials / Consumables",
+      other: "Other / Unsorted",
+    };
+    const inferNeedToOrderComponent = (row) => {
+      const supplyType = cleanString(row && row.supply_type).toLowerCase();
+      const inventoryGroup = cleanString(row && row.inventory_group).toLowerCase();
+      const workstream = cleanString(row && row.workstream).toLowerCase();
+      const blob = [
+        row && row.source_ref,
+        row && row.item,
+        row && row.workstream,
+        row && row.inventory_group,
+        row && row.procurement_stage,
+        row && row.notes,
+      ]
+        .map((value) => cleanString(value).toLowerCase())
+        .join(" ");
+
+      if (workstream === "brake_system") {
+        return "brake_hydraulic";
+      }
+      if (workstream === "body_chassis" || workstream === "chassis_rubbers") {
+        return "body_chassis";
+      }
+      if (workstream === "interior_weatherproofing") {
+        return "interior_weatherproofing";
+      }
+      if (workstream === "mechanical_baseline") {
+        return "mechanical_driveline";
+      }
+      if (workstream === "electrical_reset") {
+        return "electrical_wiring";
+      }
+      if (workstream === "site_setup") {
+        return "workshop_tools";
+      }
+      if (
+        ["brake", "clutch", "caliper", "rotor", "drum", "wheel cylinder", "booster", "hydraulic"].some((token) => blob.includes(token))
+      ) {
+        return "brake_hydraulic";
+      }
+      if (
+        ["interior", "carpet", "foam", "sound", "damping", "trim", "weatherproof"].some((token) => blob.includes(token))
+      ) {
+        return "interior_weatherproofing";
+      }
+      if (
+        [
+          "body mount",
+          "body retaining",
+          "body specialty",
+          "body shoulder",
+          "chassis",
+          "tub",
+          "rubber/plastic",
+          "rubbers",
+          "bumper",
+          "isolator",
+          "floor",
+          "retainer plate",
+          "clip nut",
+          "captive",
+          "cotter",
+          "r-clip",
+          "patch plate",
+          "mild-steel sheet",
+        ].some((token) => blob.includes(token))
+      ) {
+        return "body_chassis";
+      }
+      if (
+        ["engine", "gearbox", "fuel", "glow", "belt", "compressor bracket", "vacuum", "breather", "oil filter"].some((token) => blob.includes(token))
+      ) {
+        return "mechanical_driveline";
+      }
+      if (
+        inventoryGroup === "electrical" ||
+        ["electrical", "wire", "wiring", "grommet", "fuse", "relay", "speaker", "android", "ignition lock"].some((token) => blob.includes(token))
+      ) {
+        return "electrical_wiring";
+      }
+      if (supplyType === "tool" || inventoryGroup === "tools" || workstream === "site_setup") {
+        return "workshop_tools";
+      }
+      if (supplyType === "substance" || inventoryGroup === "substances") {
+        return "materials_consumables";
+      }
+      return "other";
+    };
+    const compareSupplyRows = (left, right) =>
+      [
+        cleanString(left && left.supply_type).localeCompare(cleanString(right && right.supply_type)),
+        cleanString(left && left.workstream).localeCompare(cleanString(right && right.workstream)),
+        cleanString(left && left.item).localeCompare(cleanString(right && right.item)),
+      ].find((value) => value !== 0) || 0;
+    const stillRequiredRowsByComponent = suppliesStillRequired.reduce((groups, row) => {
+      const component = inferNeedToOrderComponent(row);
+      if (!groups[component]) {
+        groups[component] = [];
+      }
+      groups[component].push(row);
+      return groups;
+    }, {});
+    Object.values(stillRequiredRowsByComponent).forEach((rows) => rows.sort(compareSupplyRows));
+    const stillRequiredComponentGroups = [
+      ...needToOrderComponentOrder.filter((component) => stillRequiredRowsByComponent[component] && stillRequiredRowsByComponent[component].length),
+      ...Object.keys(stillRequiredRowsByComponent)
+        .filter((component) => !needToOrderComponentOrder.includes(component))
+        .sort(),
+    ].map((component) => ({
+      component,
+      label: needToOrderComponentLabels[component] || formatToken(component),
+      rows: stillRequiredRowsByComponent[component] || [],
+    }));
 
     const renderEstimateTypeCell = (row) => {
       const value = cleanString(row.estimated_hardware_type || "");
@@ -6623,10 +6754,55 @@
         ${confidence ? `<div class="small-muted">Confidence: ${escapeHtml(formatToken(confidence))}</div>` : ""}
       `;
     };
-    const stillRequiredTypeChips = supplySummary
-      .filter((row) => toNumber(row.still_required) > 0)
-      .map((row) => chip(`${formatToken(row.supply_type)}: ${row.still_required}`))
+    const stillRequiredComponentChips = stillRequiredComponentGroups
+      .map((group) => chip(`${group.label}: ${group.rows.length}`))
       .join("");
+    const renderStillRequiredRowsTable = (rows) => `
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Type</th>
+              <th>Item</th>
+              <th>Anticipated Type</th>
+              <th>Est. Count</th>
+              <th>Source</th>
+              <th>Workstream</th>
+              <th>Procurement Stage</th>
+              <th>Supplier</th>
+              <th>Cost</th>
+              <th>Links</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${
+              rows.length
+                ? rows
+                    .map(
+                      (row) => `
+                        <tr>
+                          ${renderInventoryImageCell(row, row.item || "Inventory image")}
+                          <td>${escapeHtml(formatToken(row.supply_type))}</td>
+                          <td>${renderItemButton(row)}</td>
+                          <td>${renderEstimateTypeCell(row)}</td>
+                          <td>${renderEstimateCountCell(row)}</td>
+                          <td>${escapeHtml(formatToken(row.source))}</td>
+                          <td>${escapeHtml(formatToken(row.workstream || "-"))}</td>
+                          <td>${escapeHtml(formatToken(row.procurement_stage || row.status_detail || "-"))}</td>
+                          <td>${tableSupplierCell(row)}</td>
+                          <td>${tableCostCell(row)}</td>
+                          <td>${renderLinksCell(row)}</td>
+                        </tr>
+                      `
+                    )
+                    .join("")
+                : '<tr><td colspan="11">No still-required supply rows.</td></tr>'
+            }
+          </tbody>
+        </table>
+      </div>
+    `;
     const renderStillRequiredSuppliesSection = () => `
       <section class="card">
         <div class="detail-header">
@@ -6635,52 +6811,35 @@
         </div>
         <p class="small-muted">Body panel/window marker rows, interior-conversion rows, fabrication rows, detailed hose/line rows, and workshop air-supply rows stay tracked elsewhere; this view keeps only the combined brake/clutch piping line.</p>
         <div class="chip-row">
-          ${stillRequiredTypeChips || chip("No still-required rows")}
+          ${stillRequiredComponentChips || chip("No still-required rows")}
         </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Image</th>
-                <th>Type</th>
-                <th>Item</th>
-                <th>Anticipated Type</th>
-                <th>Est. Count</th>
-                <th>Source</th>
-                <th>Workstream</th>
-                <th>Procurement Stage</th>
-                <th>Supplier</th>
-                <th>Cost</th>
-                <th>Links</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${
-                suppliesStillRequired.length
-                  ? suppliesStillRequired
-                      .map(
-                        (row) => `
-                          <tr>
-                            ${renderInventoryImageCell(row, row.item || "Inventory image")}
-                            <td>${escapeHtml(formatToken(row.supply_type))}</td>
-                            <td>${renderItemButton(row)}</td>
-                            <td>${renderEstimateTypeCell(row)}</td>
-                            <td>${renderEstimateCountCell(row)}</td>
-                            <td>${escapeHtml(formatToken(row.source))}</td>
-                            <td>${escapeHtml(formatToken(row.workstream || "-"))}</td>
-                            <td>${escapeHtml(formatToken(row.procurement_stage || row.status_detail || "-"))}</td>
-                            <td>${tableSupplierCell(row)}</td>
-                            <td>${tableCostCell(row)}</td>
-                            <td>${renderLinksCell(row)}</td>
-                          </tr>
-                        `
-                      )
-                      .join("")
-                  : '<tr><td colspan="11">No still-required supply rows.</td></tr>'
-              }
-            </tbody>
-          </table>
-        </div>
+        ${
+          stillRequiredComponentGroups.length
+            ? stillRequiredComponentGroups
+                .map((group) => {
+                  const typeCounts = group.rows.reduce((counts, row) => {
+                    const type = cleanString(row && row.supply_type).toLowerCase() || "unknown";
+                    counts[type] = (counts[type] || 0) + 1;
+                    return counts;
+                  }, {});
+                  const typeChips = Object.entries(typeCounts)
+                    .sort((left, right) => left[0].localeCompare(right[0]))
+                    .map(([type, count]) => chip(`${formatToken(type)}: ${count}`))
+                    .join("");
+                  return `
+                    <div class="need-to-order-component-group">
+                      <div class="detail-header">
+                        <h4>${escapeHtml(group.label)}</h4>
+                        ${chip(`${group.rows.length} rows`)}
+                      </div>
+                      <div class="chip-row">${typeChips}</div>
+                      ${renderStillRequiredRowsTable(group.rows)}
+                    </div>
+                  `;
+                })
+                .join("")
+            : renderStillRequiredRowsTable([])
+        }
       </section>
     `;
 

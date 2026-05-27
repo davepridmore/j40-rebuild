@@ -1,6 +1,6 @@
 # Parts List Review
 
-- Generated: 2026-05-27 19:02:11
+- Generated: 2026-05-27 20:41:07
 - Source: `data/manual/expenses.csv` (`bucket=parts`) -> 122 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`

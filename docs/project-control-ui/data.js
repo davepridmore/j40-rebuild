@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-27T19:03:55+05:00",
+  "generated_at": "2026-05-27T20:41:25+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -55,7 +55,7 @@ window.J40_DASHBOARD_DATA = {
     "urgent_part_actions": 19,
     "capture_data_tasks": 107,
     "capture_data_tasks_now": 95,
-    "supply_rows_tracked": 282,
+    "supply_rows_tracked": 284,
     "selling_site_images_loaded": 88,
     "whatsapp_j40_selected_chats": 11,
     "whatsapp_j40_media_items": 282,
@@ -88058,10 +88058,10 @@ window.J40_DASHBOARD_DATA = {
     "summary_by_type": [
       {
         "supply_type": "tool",
-        "previously": 61,
-        "in_process": 13,
-        "still_required": 8,
-        "total": 82
+        "previously": 62,
+        "in_process": 18,
+        "still_required": 4,
+        "total": 84
       },
       {
         "supply_type": "substance",
@@ -92860,6 +92860,42 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_tools",
+          "source_ref": "workbook_tools#row_26",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "INGCO Air compressor - ACS112501 \u00d7 1",
+          "vendor": "almirajtrading.com.pk",
+          "amount": "57000",
+          "currency": "PKR",
+          "workstream": "",
+          "status_group": "previously",
+          "status_detail": "received",
+          "procurement_stage": "",
+          "payment_status": "Y",
+          "delivery_status": "Y",
+          "evidence_ref": "",
+          "notes": "User update 2026-05-27 confirms the ACS112501 air compressor is physically on hand; keep the wider Almiraj bundle open only for the remaining accessory line-count checks.",
+          "links": [],
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_compressor.jpg",
+            "caption": "INGCO Air compressor - ACS112501 \u00d7 1 \u00b7 air compressor reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "air_compressor",
+            "matched_tokens": [
+              "air",
+              "compressor"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "workbook_tools",
           "source_ref": "workbook_tools#row_17",
           "supply_type": "tool",
           "inventory_group": "tools",
@@ -95601,6 +95637,68 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "tool_toolsmart_pard_double_flaring_cutting_tool_set_tm25805_20260527",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "PARD Double Flaring and Cutting Tool Set - 3/16 in to 5/8 in",
+          "vendor": "ToolsMart.pk",
+          "amount": "18210",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "gmail_msg_19e6a00106af752c|gmail_order_TM25805|bank_alert_19e6a0072d6b41d7",
+          "notes": "ToolsMart order TM25805 confirmed 2026-05-27 includes PARD Double Flaring and Cutting Tool Set - 3/16 inch to 5/8 inch x1 at PKR 18210. This is a second/replacement PARD flaring-kit candidate relative to the older TM25550 received-candidate row. Do not release brake/clutch hard-line fabrication until the delivered kit is physically checked on scrap 4.75 mm / 3/16 in brake tube and proves a proper 45-degree double/inverted flare without slipping, cracking, or making only ISO bubble/single flares. If the earlier TM25550 kit is already on hand and usable, treat this new order as duplicate stock/return candidate after receipt.",
+          "links": [
+            {
+              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+              "label": "Longman pipe and hose order CSV",
+              "download": true
+            },
+            {
+              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+              "label": "Longman pipe and hose order spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+              "label": "Pipe order release specs CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+              "label": "Pipe photo and measurement index CSV",
+              "download": true
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
+            "caption": "PARD Double Flaring and Cutting Tool Set - 3/16 in to 5/8 in \u00b7 hard-line bending and flaring reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "hard_line_bending_flaring_reference",
+            "matched_tokens": [
+              "hard",
+              "line",
+              "fabrication"
+            ],
+            "match_basis": "local_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "tool_toolsmart_pard_double_flaring_cutting_tool_set_4_16mm_20260504",
           "supply_type": "tool",
           "inventory_group": "tools",
@@ -95801,6 +95899,46 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "tool_aliexpress_nitto_male_coupling_air_fittings_5pc_20260527",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "AliExpress 5PCS NITTO male coupling air fittings",
+          "vendor": "AliExpress",
+          "amount": "3072",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "gmail_msg_19e69fea16f42834|gmail_order_3073111533377489",
+          "notes": "AliExpress order 3073111533377489 confirmed 2026-05-27: email line shows 5PCS NITTO Male Coupling Air ... x1 with order total PKR 3072. Product title is truncated in the email, so receipt/order-page check must confirm exact Nitto/Japanese profile, thread type such as 1/4 BSP or NPT, male/female style, quantity 5, seal method, and leak-free fit with the compressor hose, hand gun, and air tools before treating these as final adapters.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_compressor.jpg",
+            "caption": "AliExpress 5PCS NITTO male coupling air fittings \u00b7 air compressor reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "air_compressor",
+            "matched_tokens": [
+              "air",
+              "compressor"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "tool_almiraj_ingco_air_setup_bundle_20260517",
           "supply_type": "tool",
           "inventory_group": "tools",
@@ -95919,6 +96057,85 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "tool_toolsmart_licota_pu_hose_9m_nitto_tm25805_20260527",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "LICOTA MADE IN TAIWAN PU HOSE ROLL 9M W/ NITTO TYPE QUICK COUPLER",
+          "vendor": "ToolsMart.pk",
+          "amount": "4720",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "gmail_msg_19e6a00106af752c|gmail_order_TM25805|bank_alert_19e6a0072d6b41d7",
+          "notes": "ToolsMart order TM25805 confirmed 2026-05-27 includes a second LICOTA MADE IN TAIWAN PU HOSE ROLL 9M W/ NITTO TYPE QUICK COUPLER x1 at PKR 4720. Together with TM25776 this means two Licota Nitto hose rolls are pending if both orders are fulfilled. Receipt check: confirm hose ID/OD if marked, Nitto coupler compatibility, no cuts/leaks, and actual 1/2 inch impact-wrench performance against the compressor.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
+            "caption": "LICOTA MADE IN TAIWAN PU HOSE ROLL 9M W/ NITTO TYPE QUICK COUPLER \u00b7 AC compressor reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "ac_compressor",
+            "matched_tokens": [
+              "compressor"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_toolsmart_licota_quick_coupler_1_4_iron_20260527",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "LICOTA MADE IN TAIWAN QUICK COUPLER - ONE TOUCH 1/4 in IRON",
+          "vendor": "ToolsMart.pk",
+          "amount": "1390",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "gmail_msg_19e6a00106af752c|gmail_order_TM25805|bank_alert_19e6a0072d6b41d7",
+          "notes": "ToolsMart order TM25805 confirmed 2026-05-27 includes LICOTA MADE IN TAIWAN QUICK COUPLER - ONE TOUCH 1/4 inch IRON x1 at PKR 1390. Standard Chartered alert at 2026-05-27 20:13 PKT shows ToolsMart charge PKR 24320 for the full TM25805 order. Receipt check: confirm Nitto/Japanese quick-coupler profile, 1/4 thread type, fit to the compressor hose/tools, no air leaks, and do not treat this adapter alone as solving small-bore hose airflow.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_compressor.jpg",
+            "caption": "LICOTA MADE IN TAIWAN QUICK COUPLER - ONE TOUCH 1/4 in IRON \u00b7 air compressor reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "air_compressor",
+            "matched_tokens": [
+              "air",
+              "compressor"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "tool_large_bore_nitto_air_hose_impact_followup_20260517",
           "supply_type": "tool",
           "inventory_group": "tools",
@@ -95952,6 +96169,45 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "air",
               "compressor"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_daraz_angle_grinder_m8_antivibration_side_handle_20260527",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "M8 Thread Angle Grinder Handle thickened anti-vibration side handle for 100 type angle grinder",
+          "vendor": "Daraz / Buy More Save More Store",
+          "amount": "1354",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "paid",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "gmail_msg_19e69fe615478540|gmail_order_243775543180938|bank_alert_19e69febe5ca7e55",
+          "notes": "Daraz order 243775543180938 confirmed 2026-05-27 23:11 from Buy More Save More Store: M8 Thread Angle Grinder Handle Thickened Anti-Vibration Reduce Damping Side Handle For 100 Type Angle Grinder Accessories x1, item PKR 1184 plus PKR 170 shipping, total PKR 1354, paid by card. Delivery window 2026-06-05 to 2026-06-11. This is a separate M8-only handle candidate from the earlier 8/10 mm Daraz handle row; on receipt verify M8 thread, 100-type grinder compatibility, thread engagement, handle stiffness, and secure fit before grinding.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_tool.jpg",
+            "caption": "M8 Thread Angle Grinder Handle thickened anti-vibration side handle for 100 type angle grinder \u00b7 tool reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "generic_tool",
+            "matched_tokens": [
+              "tool"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -99763,42 +100019,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "workbook_tools",
-          "source_ref": "workbook_tools#row_29",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "10 meter hose for ar compressINGCO Air hose - AH1151 \u00d7 1or",
-          "vendor": "almirajtrading.com.pk",
-          "amount": "2850",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "N",
-          "delivery_status": "M",
-          "evidence_ref": "",
-          "notes": "Explicitly not purchased/received yet.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-            "caption": "10 meter hose for ar compressINGCO Air hose - AH1151 \u00d7 1or \u00b7 air hose reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "air_hose",
-            "matched_tokens": [
-              "air",
-              "hose"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "workbook_tools",
           "source_ref": "workbook_tools#row_57",
           "supply_type": "tool",
           "inventory_group": "tools",
@@ -99827,42 +100047,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "digital_caliper",
             "matched_tokens": [
               "caliper"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "workbook_tools",
-          "source_ref": "workbook_tools#row_26",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "INGCO Air compressor - ACS112501 \u00d7 1",
-          "vendor": "almirajtrading.com.pk",
-          "amount": "57000",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "N",
-          "delivery_status": "",
-          "evidence_ref": "",
-          "notes": "Explicitly not purchased/received yet.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_compressor.jpg",
-            "caption": "INGCO Air compressor - ACS112501 \u00d7 1 \u00b7 air compressor reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "air_compressor",
-            "matched_tokens": [
-              "air",
-              "compressor"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -99964,133 +100148,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "local_reference_image",
             "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "tool_brake_line_bender_475_3_16_20260514",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "Brake-line bender with 4.75 mm / 3/16 in groove",
-          "vendor": "local tool market / Toolsmart / brake hydraulic pipe specialist",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "brake_system",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "conditional_purchase",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-004|web_bgs_1270|web_daraz_pipe_bender",
-          "notes": "Buy or borrow a dedicated 4.75 mm / 3/16 in brake-line bender if using bundy steel or making tight bends. Existing received Daraz bender covers 1/4, 5/16, and 3/8 in only; do not treat it as the primary brake-line bender unless test bends on the chosen tube prove no flattening or kinking.",
-          "links": [
-            {
-              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-              "label": "Longman pipe and hose order CSV",
-              "download": true
-            },
-            {
-              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-              "label": "Longman pipe and hose order spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-              "label": "Pipe order release specs CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-              "label": "Pipe photo and measurement index CSV",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_tool_reference.svg",
-            "caption": "Brake-line bender with 4.75 mm / 3/16 in groove \u00b7 hard-line shaping tool kit reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "hard_line_bending_flaring_tool_reference",
-            "matched_tokens": [
-              "line",
-              "bender",
-              "flaring",
-              "tool"
-            ],
-            "match_basis": "local_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "tool_brake_fuel_line_cutter_bender_flaring_kit",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "Brake/fuel hard-line cutter, hand bender, deburrer, and flaring kit",
-          "vendor": "local tool market / Daraz / Toolsmart",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "brake_system",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "conditional_quote_needed",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-04_line_shaping_tool_needed|user_update_2026-05-04_daraz_pipe_bender_order|https://4lifetimelines.com/products/master-flaring-tool-set-sae-double-iso-bubble-flares|docs/brake-suspension-order-links-20260503.md|gmail_msg_19df40dbc5116bb3|gmail_order_TM25550",
-          "notes": "Conditional aggregate remains open only for final tool-fit validation. Separate evidence now covers Daraz pipe bender order 242508744880938 received, plus ToolsMart order TM25550 for Harden Mini Tube Cutter 3-22mm and PARD Double Flaring and Cutting Tool Set - 4-16mm pending delivery. Do not buy a duplicate all-in-one kit unless receipt checks show the cutter/flaring dies do not cover the old brake/fuel fittings or required flare type; still confirm a deburrer/reamer is available if the kit does not include one. | Pending-item audit 2026-05-27: TM25550 cutter and PARD flaring kit are now received-candidates from ToolsMart post-fulfillment Gmail review requests, so keep this aggregate only as a no-duplicate/fit-validation hold. Rebuy only a missing deburrer, 4.75 mm bender, or replacement flare tool after physical inspection proves the delivered tools do not cover the required work.",
-          "links": [
-            {
-              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-              "label": "Longman pipe and hose order CSV",
-              "download": true
-            },
-            {
-              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-              "label": "Longman pipe and hose order spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-              "label": "Pipe order release specs CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-              "label": "Pipe photo and measurement index CSV",
-              "download": true
-            },
-            {
-              "url": "https://4lifetimelines.com/products/master-flaring-tool-set-sae-double-iso-bubble-flares|docs/brake-suspension-order-links-20260503.md|gmail_msg_19df40dbc5116bb3|gmail_order_TM25550",
-              "label": "4lifetimelines.com"
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_tool_reference.svg",
-            "caption": "Hard-line cutter bender deburrer and flaring tool kit reference",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "tool_brake_fuel_line_cutter_bender_flaring_kit"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
           }
         },
         {
@@ -100742,6 +100799,46 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "tool_aliexpress_nitto_male_coupling_air_fittings_5pc_20260527",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "AliExpress 5PCS NITTO male coupling air fittings",
+        "vendor": "AliExpress",
+        "amount": "3072",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "gmail_msg_19e69fea16f42834|gmail_order_3073111533377489",
+        "notes": "AliExpress order 3073111533377489 confirmed 2026-05-27: email line shows 5PCS NITTO Male Coupling Air ... x1 with order total PKR 3072. Product title is truncated in the email, so receipt/order-page check must confirm exact Nitto/Japanese profile, thread type such as 1/4 BSP or NPT, male/female style, quantity 5, seal method, and leak-free fit with the compressor hose, hand gun, and air tools before treating these as final adapters.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_compressor.jpg",
+          "caption": "AliExpress 5PCS NITTO male coupling air fittings \u00b7 air compressor reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "air_compressor",
+          "matched_tokens": [
+            "air",
+            "compressor"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "tool_almiraj_ingco_air_setup_bundle_20260517",
         "supply_type": "tool",
         "inventory_group": "tools",
@@ -101072,6 +101169,85 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "tool_toolsmart_licota_pu_hose_9m_nitto_tm25805_20260527",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "LICOTA MADE IN TAIWAN PU HOSE ROLL 9M W/ NITTO TYPE QUICK COUPLER",
+        "vendor": "ToolsMart.pk",
+        "amount": "4720",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "gmail_msg_19e6a00106af752c|gmail_order_TM25805|bank_alert_19e6a0072d6b41d7",
+        "notes": "ToolsMart order TM25805 confirmed 2026-05-27 includes a second LICOTA MADE IN TAIWAN PU HOSE ROLL 9M W/ NITTO TYPE QUICK COUPLER x1 at PKR 4720. Together with TM25776 this means two Licota Nitto hose rolls are pending if both orders are fulfilled. Receipt check: confirm hose ID/OD if marked, Nitto coupler compatibility, no cuts/leaks, and actual 1/2 inch impact-wrench performance against the compressor.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/ac_compressor.jpg",
+          "caption": "LICOTA MADE IN TAIWAN PU HOSE ROLL 9M W/ NITTO TYPE QUICK COUPLER \u00b7 AC compressor reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "ac_compressor",
+          "matched_tokens": [
+            "compressor"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_toolsmart_licota_quick_coupler_1_4_iron_20260527",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "LICOTA MADE IN TAIWAN QUICK COUPLER - ONE TOUCH 1/4 in IRON",
+        "vendor": "ToolsMart.pk",
+        "amount": "1390",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "gmail_msg_19e6a00106af752c|gmail_order_TM25805|bank_alert_19e6a0072d6b41d7",
+        "notes": "ToolsMart order TM25805 confirmed 2026-05-27 includes LICOTA MADE IN TAIWAN QUICK COUPLER - ONE TOUCH 1/4 inch IRON x1 at PKR 1390. Standard Chartered alert at 2026-05-27 20:13 PKT shows ToolsMart charge PKR 24320 for the full TM25805 order. Receipt check: confirm Nitto/Japanese quick-coupler profile, 1/4 thread type, fit to the compressor hose/tools, no air leaks, and do not treat this adapter alone as solving small-bore hose airflow.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_compressor.jpg",
+          "caption": "LICOTA MADE IN TAIWAN QUICK COUPLER - ONE TOUCH 1/4 in IRON \u00b7 air compressor reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "air_compressor",
+          "matched_tokens": [
+            "air",
+            "compressor"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "tool_large_bore_nitto_air_hose_impact_followup_20260517",
         "supply_type": "tool",
         "inventory_group": "tools",
@@ -101105,6 +101281,45 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "air",
             "compressor"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_daraz_angle_grinder_m8_antivibration_side_handle_20260527",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "M8 Thread Angle Grinder Handle thickened anti-vibration side handle for 100 type angle grinder",
+        "vendor": "Daraz / Buy More Save More Store",
+        "amount": "1354",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "gmail_msg_19e69fe615478540|gmail_order_243775543180938|bank_alert_19e69febe5ca7e55",
+        "notes": "Daraz order 243775543180938 confirmed 2026-05-27 23:11 from Buy More Save More Store: M8 Thread Angle Grinder Handle Thickened Anti-Vibration Reduce Damping Side Handle For 100 Type Angle Grinder Accessories x1, item PKR 1184 plus PKR 170 shipping, total PKR 1354, paid by card. Delivery window 2026-06-05 to 2026-06-11. This is a separate M8-only handle candidate from the earlier 8/10 mm Daraz handle row; on receipt verify M8 thread, 100-type grinder compatibility, thread engagement, handle stiffness, and secure fit before grinding.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_tool.jpg",
+          "caption": "M8 Thread Angle Grinder Handle thickened anti-vibration side handle for 100 type angle grinder \u00b7 tool reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "generic_tool",
+          "matched_tokens": [
+            "tool"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -101165,6 +101380,68 @@ window.J40_DASHBOARD_DATA = {
           "listing_url": "https://www.toolsmart.pk/products/licota-flare-nut-wrench-12-x-14",
           "image_url": "http://www.toolsmart.pk/cdn/shop/files/licota-awt-fnm0810-nut-wrench-550x550_jpg_53b3e014-c262-4025-9de0-b818530af45b.webp?v=1761900068",
           "match_score": 283
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_toolsmart_pard_double_flaring_cutting_tool_set_tm25805_20260527",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "PARD Double Flaring and Cutting Tool Set - 3/16 in to 5/8 in",
+        "vendor": "ToolsMart.pk",
+        "amount": "18210",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "paid",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "gmail_msg_19e6a00106af752c|gmail_order_TM25805|bank_alert_19e6a0072d6b41d7",
+        "notes": "ToolsMart order TM25805 confirmed 2026-05-27 includes PARD Double Flaring and Cutting Tool Set - 3/16 inch to 5/8 inch x1 at PKR 18210. This is a second/replacement PARD flaring-kit candidate relative to the older TM25550 received-candidate row. Do not release brake/clutch hard-line fabrication until the delivered kit is physically checked on scrap 4.75 mm / 3/16 in brake tube and proves a proper 45-degree double/inverted flare without slipping, cracking, or making only ISO bubble/single flares. If the earlier TM25550 kit is already on hand and usable, treat this new order as duplicate stock/return candidate after receipt.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
+          "caption": "PARD Double Flaring and Cutting Tool Set - 3/16 in to 5/8 in \u00b7 hard-line bending and flaring reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "hard_line_bending_flaring_reference",
+          "matched_tokens": [
+            "hard",
+            "line",
+            "fabrication"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
         }
       },
       {
@@ -106689,6 +106966,42 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "source": "workbook_tools",
+        "source_ref": "workbook_tools#row_26",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "INGCO Air compressor - ACS112501 \u00d7 1",
+        "vendor": "almirajtrading.com.pk",
+        "amount": "57000",
+        "currency": "PKR",
+        "workstream": "",
+        "status_group": "previously",
+        "status_detail": "received",
+        "procurement_stage": "",
+        "payment_status": "Y",
+        "delivery_status": "Y",
+        "evidence_ref": "",
+        "notes": "User update 2026-05-27 confirms the ACS112501 air compressor is physically on hand; keep the wider Almiraj bundle open only for the remaining accessory line-count checks.",
+        "links": [],
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_compressor.jpg",
+          "caption": "INGCO Air compressor - ACS112501 \u00d7 1 \u00b7 air compressor reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "air_compressor",
+          "matched_tokens": [
+            "air",
+            "compressor"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
         "source": "expenses",
         "source_ref": "tool_ingco_dead_blow_mallet_2lb_hdbm08028",
         "supply_type": "tool",
@@ -111820,42 +112133,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "source": "workbook_tools",
-        "source_ref": "workbook_tools#row_29",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "10 meter hose for ar compressINGCO Air hose - AH1151 \u00d7 1or",
-        "vendor": "almirajtrading.com.pk",
-        "amount": "2850",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "N",
-        "delivery_status": "M",
-        "evidence_ref": "",
-        "notes": "Explicitly not purchased/received yet.",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-          "caption": "10 meter hose for ar compressINGCO Air hose - AH1151 \u00d7 1or \u00b7 air hose reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "air_hose",
-          "matched_tokens": [
-            "air",
-            "hose"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
         "source": "expenses",
         "source_ref": "tool_brake_line_deburrer_reamer_20260514",
         "supply_type": "tool",
@@ -111919,133 +112196,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "source": "expenses",
-        "source_ref": "tool_brake_line_bender_475_3_16_20260514",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "Brake-line bender with 4.75 mm / 3/16 in groove",
-        "vendor": "local tool market / Toolsmart / brake hydraulic pipe specialist",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "brake_system",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "conditional_purchase",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-004|web_bgs_1270|web_daraz_pipe_bender",
-        "notes": "Buy or borrow a dedicated 4.75 mm / 3/16 in brake-line bender if using bundy steel or making tight bends. Existing received Daraz bender covers 1/4, 5/16, and 3/8 in only; do not treat it as the primary brake-line bender unless test bends on the chosen tube prove no flattening or kinking.",
-        "links": [
-          {
-            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-            "label": "Longman pipe and hose order CSV",
-            "download": true
-          },
-          {
-            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-            "label": "Longman pipe and hose order spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-            "label": "Pipe order release specs CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Pipe photo and measurement index CSV",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_tool_reference.svg",
-          "caption": "Brake-line bender with 4.75 mm / 3/16 in groove \u00b7 hard-line shaping tool kit reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "hard_line_bending_flaring_tool_reference",
-          "matched_tokens": [
-            "line",
-            "bender",
-            "flaring",
-            "tool"
-          ],
-          "match_basis": "local_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "tool_brake_fuel_line_cutter_bender_flaring_kit",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "Brake/fuel hard-line cutter, hand bender, deburrer, and flaring kit",
-        "vendor": "local tool market / Daraz / Toolsmart",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "brake_system",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "conditional_quote_needed",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-04_line_shaping_tool_needed|user_update_2026-05-04_daraz_pipe_bender_order|https://4lifetimelines.com/products/master-flaring-tool-set-sae-double-iso-bubble-flares|docs/brake-suspension-order-links-20260503.md|gmail_msg_19df40dbc5116bb3|gmail_order_TM25550",
-        "notes": "Conditional aggregate remains open only for final tool-fit validation. Separate evidence now covers Daraz pipe bender order 242508744880938 received, plus ToolsMart order TM25550 for Harden Mini Tube Cutter 3-22mm and PARD Double Flaring and Cutting Tool Set - 4-16mm pending delivery. Do not buy a duplicate all-in-one kit unless receipt checks show the cutter/flaring dies do not cover the old brake/fuel fittings or required flare type; still confirm a deburrer/reamer is available if the kit does not include one. | Pending-item audit 2026-05-27: TM25550 cutter and PARD flaring kit are now received-candidates from ToolsMart post-fulfillment Gmail review requests, so keep this aggregate only as a no-duplicate/fit-validation hold. Rebuy only a missing deburrer, 4.75 mm bender, or replacement flare tool after physical inspection proves the delivered tools do not cover the required work.",
-        "links": [
-          {
-            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-            "label": "Longman pipe and hose order CSV",
-            "download": true
-          },
-          {
-            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-            "label": "Longman pipe and hose order spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-            "label": "Pipe order release specs CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Pipe photo and measurement index CSV",
-            "download": true
-          },
-          {
-            "url": "https://4lifetimelines.com/products/master-flaring-tool-set-sae-double-iso-bubble-flares|docs/brake-suspension-order-links-20260503.md|gmail_msg_19df40dbc5116bb3|gmail_order_TM25550",
-            "label": "4lifetimelines.com"
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_tool_reference.svg",
-          "caption": "Hard-line cutter bender deburrer and flaring tool kit reference",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "tool_brake_fuel_line_cutter_bender_flaring_kit"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
-        }
-      },
-      {
         "source": "workbook_tools",
         "source_ref": "workbook_tools#row_57",
         "supply_type": "tool",
@@ -112075,42 +112225,6 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "digital_caliper",
           "matched_tokens": [
             "caliper"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "workbook_tools",
-        "source_ref": "workbook_tools#row_26",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "INGCO Air compressor - ACS112501 \u00d7 1",
-        "vendor": "almirajtrading.com.pk",
-        "amount": "57000",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "N",
-        "delivery_status": "",
-        "evidence_ref": "",
-        "notes": "Explicitly not purchased/received yet.",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_compressor.jpg",
-          "caption": "INGCO Air compressor - ACS112501 \u00d7 1 \u00b7 air compressor reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "air_compressor",
-          "matched_tokens": [
-            "air",
-            "compressor"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700

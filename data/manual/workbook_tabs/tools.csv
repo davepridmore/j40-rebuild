@@ -24,10 +24,10 @@ excel_row,col_1,col_2,col_3,col_4,col_5,col_6,col_7
 23,YTH -803 AUTOMATIC WIRE STRIPPER & CRIPMER,1650,fiaz.com.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
 24,Side Cutter Bosi Black in Pakistan,650,fiaz.com.pk,No,No,not_procured,No clear order/receipt evidence and user reports not received.
 25,Bosi Nose Plier 6'' Black A+ Quality in Pakistan,650,fiaz.com.pk,Y,Y,procured_or_on_hand,Evidence indicates purchased/received.
-26,INGCO Air compressor - ACS112501 × 1,57000,almirajtrading.com.pk,,N,not_procured,Explicitly not purchased/received yet.
+26,INGCO Air compressor - ACS112501 × 1,57000,almirajtrading.com.pk,Y,Y,procured_or_on_hand,User update 2026-05-27 confirms the ACS112501 air compressor is physically on hand; keep the wider Almiraj bundle open only for the remaining accessory line-count checks.
 27,Total Abrasive metal Cutting Disc Set 50 Pcs,3999,ngcotool.pk,Y,Y,planned_or_open,Open item with no procurement evidence yet.
 28,Tolsen 79646 Heavy Duty Bench Grinder 6,13999,ngcotool.pk,No,No,not_required,Currently considered not required for this project.
-29,10 meter hose for ar compressINGCO Air hose - AH1151 × 1or,2850,almirajtrading.com.pk,M,N,not_procured,Explicitly not purchased/received yet.
+29,10 meter hose for ar compressINGCO Air hose - AH1151 × 1or,2850,almirajtrading.com.pk,N,Y,ordered_pending_delivery,Almiraj bundle order includes AH1151 hose; paid and pending physical receipt/count/fit check under the aggregate air setup order.
 30,Jumnp Leads,,,Y,Y,section_header,Label/group row.
 31,Jacks and stands,,,,,section_header,Label/group row.
 41,Ar-CO2 Canister,42362,pakoxygen,Y,Y,procured_or_on_hand,Received; user confirmed Ar-CO2 canister arrived on 2026-05-08.

@@ -12,10 +12,10 @@ Final fabrication still waits for one old line removed intact, a straight-on vie
 
 | Priority | Tool | Selection |
 | --- | --- | --- |
-| P0 | Double/inverted flaring tool | Use the ordered PARD kit only if receipt check proves it includes a true `4.75 mm / 3/16 in` die and makes `45-degree double / inverted` flares. If the delivered kit has only generic metric dies such as `4, 6, 8, 10, 12, 14, 16 mm`, it does not release brake-line fabrication. |
+| P0 | Double/inverted flaring tool | Use an ordered PARD kit only if receipt check proves it includes a true `4.75 mm / 3/16 in` die and makes `45-degree double / inverted` flares. TM25805 added a second PARD `3/16 in` to `5/8 in` candidate, but it still does not release brake-line fabrication until it makes clean practice flares on scrap tube. |
 | P0 | Tube cutter | Use the ordered Harden mini cutter if it cuts `4.75 mm` tube squarely without crushing. |
 | P0 | Deburrer / reamer | Buy a dedicated internal/external tube deburrer unless the delivered flaring kit includes a good one. Every cut must be deburred before flaring. |
-| P0 | Brake-line bender | Existing Daraz bender is for `1/4, 5/16, 3/8 in`; it is not the primary `3/16 in` brake-line bender. Buy/borrow a `4.75 mm / 3/16 in` bender if using bundy steel or making tight bends. CuNi/Cunifer can be hand-formed for broad bends but still benefits from the proper bender near fittings. |
+| P0 | Brake-line bender | Do not buy a duplicate bender now. The received Daraz bender covers `1/4, 5/16, 3/8 in`; use it for those sizes, hand-form broad CuNi/Cunifer bends where suitable, and use the brake/hydraulic shop or reopen a dedicated `4.75 mm / 3/16 in` bender only if practice bends on the selected tube kink or flatten. |
 | P0 | Flare-nut wrenches | Buy metric line wrenches before loosening old hydraulic fittings. Cover the actual nut hexes found on the vehicle; likely useful sizes are around `10, 11, 12, 14, 17 mm`. |
 | P1 | Thread pitch gauge / calipers | Confirm on hand or buy before fitting purchase. Do not buy flare nuts by year/catalog alone. |
 
