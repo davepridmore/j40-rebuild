@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-27T23:01:24+05:00",
+  "generated_at": "2026-05-27T23:12:06+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -50,12 +50,12 @@ window.J40_DASHBOARD_DATA = {
     "workstreams_active": 13,
     "workstream_evidence_images": 786,
     "wiring_diagram_reference_images": 1,
-    "parts_open_rows": 77,
+    "parts_open_rows": 76,
     "parts_ordered_pending_delivery": 10,
     "urgent_part_actions": 20,
     "capture_data_tasks": 107,
     "capture_data_tasks_now": 95,
-    "supply_rows_tracked": 284,
+    "supply_rows_tracked": 283,
     "selling_site_images_loaded": 88,
     "whatsapp_j40_selected_chats": 11,
     "whatsapp_j40_media_items": 282,
@@ -35394,7 +35394,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "30 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -35448,7 +35448,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 30 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -57890,16 +57890,16 @@ window.J40_DASHBOARD_DATA = {
             "20260524_025547_gp_yCvA0bxA"
           ],
           "photo_status": "direct_location_plus_drum_open_context_photos",
-          "spec_status": "sample_match_required_before_purchase",
-          "acquisition_status": "not_acquired",
+          "spec_status": "teardown_split_or_redundant_decision_required",
+          "acquisition_status": "no_active_purchase",
           "installation_status": "not_installed",
-          "current_action": "Treat the visible drum-side cylinder as the main hydraulic entry-point part. Photograph the backside/line-port/bleeder/mounting area, then buy new cylinders by old sample; no catalog blind-order.",
-          "exact_recreation_spec": "Replace the rear drum hydraulic entry-point cylinders matched to the fitted backing-plate family, actual cylinder count, bore, mounting bolt pattern, port thread, pushrod end, boot shape, and bleed-screw access. Toyota 47550-69075 / 47560-69055 / 47570-69065 / 47580-69055 and A28-style four-cylinder kits remain references only until old samples match.",
+          "current_action": "Do not keep a generic rear wheel-cylinder procurement row. Photograph and/or remove the old cylinders, then either split into exact order lines by fitted position/count (for example LH/RH and upper/lower if present) or mark the purchase redundant if the existing assemblies are proven serviceable/rebuildable and explicitly retained.",
+          "exact_recreation_spec": "Rear drum hydraulic entry-point assemblies are a workstream teardown gate, not a catalog-kit order. After teardown, split into the exact fitted cylinder positions and buy by old sample only if replacement is required; match backing-plate family, actual cylinder count, bore, mounting bolt pattern, port thread, pushrod end, boot shape, and bleed-screw access. Toyota 47550-69075 / 47560-69055 / 47570-69065 / 47580-69055 and A28-style four-cylinder kits remain references only until old samples match.",
           "material_spec": "Brake wheel cylinders with new bleed screws and dust boots; brake-fluid-compatible seals",
           "critical_measurements": "Actual cylinder count per side, cylinder bore, mounting bolt spacing, line-entry port thread/seat, pushrod/slot style, backing plate side, drum/shoe family, bleed screw size and access",
           "fit_and_test": "No fluid leak at boots or ports; bleed screws open cleanly; shoes sit square and return correctly after adjustment",
-          "source_ref": "docs_brake_workstream|rear_brake_drum_baseline|user_image_2026-05-24_catalog_vs_installed_view_question",
-          "notes": "May 24 user challenged visual fit between loose cylinder kit and installed top cylinder. Treat catalog kit as candidate only; old removed cylinder controls final order. User update 2026-05-27: rear drum photo is now decomposed into separate shoes/friction set, spring hardware, and this hydraulic entry-point cylinder requirement.",
+          "source_ref": "docs_brake_workstream|rear_brake_drum_baseline|user_image_2026-05-24_catalog_vs_installed_view_question|user_update_2026-05-27_wheel_cylinder_generic_hold_split_or_redundant",
+          "notes": "May 24 user challenged visual fit between loose cylinder kit and installed top cylinder. Treat catalog kit as candidate only; old removed cylinder controls final order. User update 2026-05-27: rear drum photo is now decomposed into separate shoes/friction set, spring hardware, and this hydraulic entry-point cylinder requirement. User update 2026-05-27: the generic rear wheel-cylinder sample-match hold is removed from ordering/inventory because it is either a split-after-teardown purchase or redundant with this workstream gate.",
           "evidence_images": [
             {
               "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
@@ -58104,16 +58104,16 @@ window.J40_DASHBOARD_DATA = {
             "20260524_025414_gp_VsFMrBNQ"
           ],
           "photo_status": "direct_drum_open_context_photos",
-          "spec_status": "inspection_measurement_required",
+          "spec_status": "inspection_split_or_redundant_decision_required",
           "acquisition_status": "no_active_purchase",
           "installation_status": "not_installed",
-          "current_action": "Do not create or keep a procurement row for drums unless inspection proves the old drums fail. Measure ID/out-of-round, inspect scoring, cracks, step, and machine-shop capability.",
-          "exact_recreation_spec": "Inspect both rear drums and machine locally only if safely within service limit; replace locally only if scored, cracked, stepped, near/over service limit, out-of-round, or unsafe to machine. Cruiser Corps 553-115 remains a reference only and any import requires explicit approval.",
-          "material_spec": "Existing drums are inspection samples; no replacement material spec until failure is confirmed.",
-          "critical_measurements": "Inside diameter, service limit, scoring depth, step, cracks, heat checking, out-of-round, hub/register fit, and machining allowance",
-          "fit_and_test": "Drums pass service-limit inspection or are safely machined; replacement is locally sourced only after failure is documented; no import without explicit approval",
-          "source_ref": "docs_brake_workstream|rear_brake_drum_baseline|user_update_2026-05-27_no_current_rear_drum_order_reason",
-          "notes": "Moved from ordering/inventory to brake workstream on 2026-05-27 because there is no current reason to order drums after required rear-drum parts were split out.",
+          "current_action": "Do not create or keep a pair procurement row for drums. Measure each drum ID/out-of-round, inspect scoring, cracks, step, and machine-shop capability, then split into side-specific machine/replace work only if inspection fails; otherwise mark the purchase redundant.",
+          "exact_recreation_spec": "Rear drums are a workstream inspection gate, not a pair order. Machine each side locally only if needed and safely within service limit; replace a side locally only if scored, cracked, stepped, near/over service limit, out-of-round, or unsafe to machine. Cruiser Corps 553-115 remains a reference only and any import requires explicit approval.",
+          "material_spec": "Existing drums are inspection samples; no replacement material spec until side-specific failure is confirmed.",
+          "critical_measurements": "Inside diameter per side, service limit, scoring depth, step, cracks, heat checking, out-of-round, hub/register fit, and machining allowance",
+          "fit_and_test": "Each drum either passes service-limit inspection, is safely machined, or is split into a documented local replacement decision after failure; no import without explicit approval",
+          "source_ref": "docs_brake_workstream|rear_brake_drum_baseline|user_update_2026-05-27_no_current_rear_drum_order_reason|user_update_2026-05-27_rear_drum_pair_split_or_redundant",
+          "notes": "Moved from ordering/inventory to brake workstream on 2026-05-27 because there is no current reason to order drums after required rear-drum parts were split out. User update 2026-05-27: do not keep this as a pair order; split by side only if inspection fails, otherwise mark redundant.",
           "evidence_images": [
             {
               "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
@@ -58995,7 +58995,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "30 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -59078,7 +59078,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 30 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -59902,45 +59902,6 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_rear_wheel_cylinders_pair",
-          "workstream": "brake_system",
-          "item": "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit",
-          "status": "planned",
-          "procurement_stage": "sample_match_required_before_purchase",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_rear_wheel_cylinders_pair",
-          "evidence_ref": "BR-REAR-004|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|toyota_epc_upper_lower_rear_cylinders_reference|cruisercorps_A28_four_rear_cylinder_reference|fjparts_72_80_rear_set_reference|user_image_2026-05-24_catalog_vs_installed_view_question|user_update_2026-05-24_local_only_no_expensive_imports|user_update_2026-05-27_rear_drum_parts_extrapolated",
-          "notes": "User update 2026-05-27 identifies the visible rear drum line-entry cylinder as the main hydraulic entry-point part, so keep this as a required new/sample-match item. BASELINE MUST REPLACE if old cylinders are leaking, seized, corroded, or unknown age, but do not buy the four-cylinder catalog kit from photo logic alone. The catalog image shows the loose cylinder mounting/port side, while the truck photo shows the drum-side barrel/boots, so the apparent mismatch is expected; however the purchase still requires backside photos or removed old cylinders to confirm count, mounting bolt spacing, bore, port thread, bleed screw access, pushrod/boot style, and whether a lower cylinder is fitted behind the hub/shoe area. Treat Toyota 47550-69075, 47560-69055, 47570-69065, 47580-69055 and Cruiser Corps A28/SOR 081-02C-KIT as references only until old samples match. No expensive import unless explicitly approved.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-            "caption": "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit \u00b7 local inventory photo \u00b7 local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260524_025547_gp_yCvA0bxA",
-            "matched_tokens": [
-              "photo_20260524_025547_gp_ycva0bxa"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
-          }
-        },
-        {
           "entry_id": "part_clutch_hard_line_fittings_20260514",
           "workstream": "brake_system",
           "item": "Clutch hard-line fitting set and route release - 4.75 mm hydraulic line",
@@ -60511,10 +60472,10 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
                 "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
-                "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (ordered_pending_delivery; delivery pending_delivery; amount missing)",
                 "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
-                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price_check_first_before_other_brake_parts; delivery not_ordered; amount missing)"
+                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price_check_first_before_other_brake_parts; delivery not_ordered; amount missing)",
+                "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect (ordered_partial_pending_delivery; delivery pending_delivery; amount confirmed)"
               ]
             },
             {
@@ -60643,11 +60604,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
-                "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
                 "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
                 "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)",
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection (purchase_ready; delivery not_ordered; amount missing)"
+                "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection (purchase_ready; delivery not_ordered; amount missing)",
+                "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -60777,8 +60738,8 @@ window.J40_DASHBOARD_DATA = {
                 "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
-                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price_check_first_before_other_brake_parts; delivery not_ordered; amount missing)"
+                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price_check_first_before_other_brake_parts; delivery not_ordered; amount missing)",
+                "Brake hydraulic splitter T-union and inline union replacement set (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -60906,7 +60867,7 @@ window.J40_DASHBOARD_DATA = {
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
                 "Front disc pads and retaining hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
-                "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)"
+                "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -61032,11 +60993,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
-                "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
                 "Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference (purchase_ready_local_catalog_first_pending_sample_match; delivery not_ordered; amount missing)",
                 "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
-                "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips (spec_needed_before_order_local_hardware_first; delivery not_ordered; amount missing)"
+                "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips (spec_needed_before_order_local_hardware_first; delivery not_ordered; amount missing)",
+                "FJ40 BJ-40 Toyota Land Cruiser hand brake cable (received; delivery received; amount confirmed)"
               ]
             }
           ]
@@ -64023,7 +63984,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "30 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -64077,7 +64038,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 30 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -67080,7 +67041,7 @@ window.J40_DASHBOARD_DATA = {
         "suspension_upgrade"
       ],
       "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared",
-      "blocker_summary": "30 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+      "blocker_summary": "29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
       "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
       "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
       "image": {
@@ -67239,10 +67200,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "quote_needed",
-        "count": 1
-      },
-      {
-        "stage": "sample_match_required_before_purchase",
         "count": 1
       },
       {
@@ -69275,43 +69232,6 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 999
-        }
-      },
-      {
-        "entry_id": "part_rear_wheel_cylinders_pair",
-        "workstream": "brake_system",
-        "item": "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit",
-        "status": "planned",
-        "procurement_stage": "sample_match_required_before_purchase",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
-        "supply_type": "part",
-        "evidence_ref": "BR-REAR-004|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|toyota_epc_upper_lower_rear_cylinders_reference|cruisercorps_A28_four_rear_cylinder_reference|fjparts_72_80_rear_set_reference|user_image_2026-05-24_catalog_vs_installed_view_question|user_update_2026-05-24_local_only_no_expensive_imports|user_update_2026-05-27_rear_drum_parts_extrapolated",
-        "notes": "User update 2026-05-27 identifies the visible rear drum line-entry cylinder as the main hydraulic entry-point part, so keep this as a required new/sample-match item. BASELINE MUST REPLACE if old cylinders are leaking, seized, corroded, or unknown age, but do not buy the four-cylinder catalog kit from photo logic alone. The catalog image shows the loose cylinder mounting/port side, while the truck photo shows the drum-side barrel/boots, so the apparent mismatch is expected; however the purchase still requires backside photos or removed old cylinders to confirm count, mounting bolt spacing, bore, port thread, bleed screw access, pushrod/boot style, and whether a lower cylinder is fitted behind the hub/shoe area. Treat Toyota 47550-69075, 47560-69055, 47570-69065, 47580-69055 and Cruiser Corps A28/SOR 081-02C-KIT as references only until old samples match. No expensive import unless explicitly approved.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-          "caption": "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit \u00b7 local inventory photo \u00b7 local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260524_025547_gp_yCvA0bxA",
-          "matched_tokens": [
-            "photo_20260524_025547_gp_ycva0bxa"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
         }
       },
       {
@@ -72142,7 +72062,7 @@ window.J40_DASHBOARD_DATA = {
     "open_counts_by_workstream": [
       {
         "workstream": "brake_system",
-        "open_count": 22,
+        "open_count": 21,
         "image": {
           "path": "../../photos/20260422_004356_gp_vTFgPfAQ_2.jpg",
           "caption": "Engine Bay Chassis Interface \u00b7 Underside Inspection \u00b7 2026-04-22",
@@ -88298,8 +88218,8 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "previously": 96,
         "in_process": 12,
-        "still_required": 73,
-        "total": 181
+        "still_required": 72,
+        "total": 180
       }
     ],
     "rows_by_status": {
@@ -97839,45 +97759,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "local_reference_image",
             "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_rear_wheel_cylinders_pair",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit",
-          "vendor": "local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "brake_system",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "sample_match_required_before_purchase",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "BR-REAR-004|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|toyota_epc_upper_lower_rear_cylinders_reference|cruisercorps_A28_four_rear_cylinder_reference|fjparts_72_80_rear_set_reference|user_image_2026-05-24_catalog_vs_installed_view_question|user_update_2026-05-24_local_only_no_expensive_imports|user_update_2026-05-27_rear_drum_parts_extrapolated",
-          "notes": "User update 2026-05-27 identifies the visible rear drum line-entry cylinder as the main hydraulic entry-point part, so keep this as a required new/sample-match item. BASELINE MUST REPLACE if old cylinders are leaking, seized, corroded, or unknown age, but do not buy the four-cylinder catalog kit from photo logic alone. The catalog image shows the loose cylinder mounting/port side, while the truck photo shows the drum-side barrel/boots, so the apparent mismatch is expected; however the purchase still requires backside photos or removed old cylinders to confirm count, mounting bolt spacing, bore, port thread, bleed screw access, pushrod/boot style, and whether a lower cylinder is fitted behind the hub/shoe area. Treat Toyota 47550-69075, 47560-69055, 47570-69065, 47580-69055 and Cruiser Corps A28/SOR 081-02C-KIT as references only until old samples match. No expensive import unless explicitly approved.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-            "caption": "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit \u00b7 local inventory photo \u00b7 local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260524_025547_gp_yCvA0bxA",
-            "matched_tokens": [
-              "photo_20260524_025547_gp_ycva0bxa"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
           }
         },
         {
@@ -111180,45 +111061,6 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "local_reference_image",
           "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_rear_wheel_cylinders_pair",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit",
-        "vendor": "local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "brake_system",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "sample_match_required_before_purchase",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "BR-REAR-004|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|toyota_epc_upper_lower_rear_cylinders_reference|cruisercorps_A28_four_rear_cylinder_reference|fjparts_72_80_rear_set_reference|user_image_2026-05-24_catalog_vs_installed_view_question|user_update_2026-05-24_local_only_no_expensive_imports|user_update_2026-05-27_rear_drum_parts_extrapolated",
-        "notes": "User update 2026-05-27 identifies the visible rear drum line-entry cylinder as the main hydraulic entry-point part, so keep this as a required new/sample-match item. BASELINE MUST REPLACE if old cylinders are leaking, seized, corroded, or unknown age, but do not buy the four-cylinder catalog kit from photo logic alone. The catalog image shows the loose cylinder mounting/port side, while the truck photo shows the drum-side barrel/boots, so the apparent mismatch is expected; however the purchase still requires backside photos or removed old cylinders to confirm count, mounting bolt spacing, bore, port thread, bleed screw access, pushrod/boot style, and whether a lower cylinder is fitted behind the hub/shoe area. Treat Toyota 47550-69075, 47560-69055, 47570-69065, 47580-69055 and Cruiser Corps A28/SOR 081-02C-KIT as references only until old samples match. No expensive import unless explicitly approved.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-          "caption": "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit \u00b7 local inventory photo \u00b7 local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260524_025547_gp_yCvA0bxA",
-          "matched_tokens": [
-            "photo_20260524_025547_gp_ycva0bxa"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
         }
       },
       {

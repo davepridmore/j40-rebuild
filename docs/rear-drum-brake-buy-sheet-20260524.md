@@ -24,12 +24,12 @@ Before paying for shoes or 3-inch/non-USA alternatives, still confirm shoe width
 
 ## Local Catalog Basket - Candidate Only
 
-Use this section only as candidate reference material. Buy locally where available, but only after the fitted old cylinders match.
+Use this section only as candidate reference material. Rear wheel cylinders are not an active generic order; split them into exact fitted lines after teardown, or mark the purchase redundant if the existing assemblies are retained/rebuilt.
 
 | Priority | Item | Qty | Buy/spec | Status |
 | --- | --- | ---: | --- | --- |
-| P0 | Rear wheel cylinders / hydraulic entry-point assemblies | Actual count from teardown | Local Toyota/sample-match cylinders only after the old parts confirm count, bore, mounting bolt spacing, line-entry port thread, bleed screw access, and pushrod/boot style. Toyota `47550-69075`, `47560-69055`, `47570-69065`, `47580-69055` and Cruiser Corps `A28` are reference only. | Do not buy until old sample or backside photos match. |
-| P0 | Wheel-cylinder bolt kits | 4 kits | Local bolt/washer sets matched to the old hardware; Cruiser Corps `A16` is an 8-piece reference kit and one kit is required per wheel cylinder. | Buy locally with cylinders if old bolts are rusty. |
+| P0 | Rear wheel-cylinder teardown decision | Actual count from teardown | Photograph/remove the old cylinders and record count, side/position, bore, mounting bolt spacing, line-entry port thread, bleed screw access, and pushrod/boot style. Toyota `47550-69075`, `47560-69055`, `47570-69065`, `47580-69055` and Cruiser Corps `A28` are reference only. | Split into exact purchase lines only after sample-match, or mark redundant if existing assemblies are retained/rebuilt. |
+| P0 | Wheel-cylinder bolt kits | As fitted | Local bolt/washer sets matched to the old hardware; Cruiser Corps `A16` is an 8-piece reference kit and one kit is required per wheel cylinder only if the matching cylinder route needs new hardware. | Buy locally with split cylinder lines only if old bolts are rusty or replacement cylinders require them. |
 | P0 | Rear brake shoes / friction pieces | 1 axle set | PakWheels `K-2255-N/Y` candidate order is already placed under orders `1075298` and `1075421`; verify delivered unit count, shoe width, arc, and drum fit before installation. | Ordered candidate; fit/coverage check pending. |
 | P0 | Rear drum hardware kit | 1 axle kit | Local spring/hold-down/adjuster kit by sample; Cruiser Corps `551-113` is reference only. | Still required unless the shoe delivery proves a complete matching kit is included. |
 | P0 | Rear center flexible brake hose | 1 | Local crimped brake hose assembly by old sample; Cruiser Corps `553-103` is reference only. | Local sample-match first. |
@@ -40,8 +40,8 @@ Use this if a removed part or backing-plate teardown proves the catalog referenc
 
 | Priority | Item | Qty | Buy/spec | Status |
 | --- | --- | ---: | --- | --- |
-| P0 | Rear wheel cylinders | 2 | Complete left/right cylinders matching the removed sample exactly: bore, port thread, mounting bolt spacing, pushrod/boot ends, bleed screw position, and casting shape. | Buy by old sample only. |
-| P0 | Cylinder seals/rebuild kits | 2 kits | Only if complete cylinders are unavailable and the bores are clean enough to rebuild. | Backup only; complete cylinders preferred. |
+| P0 | Rear wheel cylinders | Split after teardown | Complete cylinders matching each removed sample exactly: side/position, bore, port thread, mounting bolt spacing, pushrod/boot ends, bleed screw position, and casting shape. | Create purchase lines only after actual count and position are confirmed. |
+| P0 | Cylinder seals/rebuild kits | Split after teardown | Only if complete cylinders are unavailable and the bores are clean enough to rebuild. | Backup route only; mark cylinder purchase redundant if retained/rebuilt assemblies are approved. |
 | P0 | Cylinder mounting bolts/washers | As fitted | Match thread, length, washer size, and grade from old hardware. | Buy locally if possible. |
 
 If teardown proves there are two cylinders per side, revise this basket to four cylinders and keep the same sample-match checks.
@@ -90,7 +90,7 @@ Import reference only if your truck matches the catalog routing and the user lat
 
 | Item | Decision |
 | --- | --- |
-| Rear drums | Do not import by default. Measure inside diameter and inspect scoring, cracks, heavy step, and out-of-round first. Replace both only if oversize, cracked, deeply scored, or machining quality is not trusted. |
+| Rear drums | Do not import by default and do not keep a pair order. Measure inside diameter and inspect scoring, cracks, heavy step, and out-of-round per side first. Split into side-specific machine/replace work only if inspection fails; otherwise mark the purchase redundant. |
 | Adjusters | Clean and test first. Replace only if seized, rounded, badly pitted, or thread movement is rough. |
 | Backing plates | Reuse unless cracked, bent, deeply grooved at shoe pads, or badly corroded. |
 | Hubs/axle parts | Not part of the brake buy sheet unless bearing/seal inspection proves a fault. |

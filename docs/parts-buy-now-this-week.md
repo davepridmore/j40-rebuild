@@ -1,6 +1,6 @@
 # Parts Buy-Now Plan (This Week)
 
-- Generated: 2026-05-27 23:00:02
+- Generated: 2026-05-27 23:10:16
 - Source ledger: `data/manual/expenses.csv` (`bucket=parts`)
 - Overlap resolution table: `data/manual/parts_overlap_resolution.csv`
 - This-week list: `data/manual/parts_buy_now_this_week.csv`

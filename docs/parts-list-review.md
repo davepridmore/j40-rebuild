@@ -1,7 +1,7 @@
 # Parts List Review
 
-- Generated: 2026-05-27 22:59:57
-- Source: `data/manual/expenses.csv` (`bucket=parts`) -> 122 rows
+- Generated: 2026-05-27 23:10:12
+- Source: `data/manual/expenses.csv` (`bucket=parts`) -> 121 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
 
@@ -14,12 +14,12 @@
 - `needs_spec_before_order`: 9
 - `ordered_waiting_arrival`: 10
 - `spec_ready_release_hold`: 3
-- `unclear`: 9
+- `unclear`: 8
 
 ## Workstream Split
 
 - `body_chassis`: 26
-- `brake_system`: 25
+- `brake_system`: 24
 - `mechanical_baseline`: 23
 - `electrical_reset`: 21
 - `interior_weatherproofing`: 11
@@ -32,7 +32,7 @@
 ## Price Coverage
 
 - `has_confirmed_amount=yes`: 24
-- `has_confirmed_amount=no`: 98
+- `has_confirmed_amount=no`: 97
 
 ## Buy-Now / Quote-Ready Missing Price
 

@@ -1,6 +1,6 @@
 # Procurement Pass 2 (Tub-Off, Pakistan Cost Reality)
 
-- Generated: 2026-05-27 23:01:21
+- Generated: 2026-05-27 23:10:22
 - Input matrix: `data/manual/procurement_decision_matrix.csv`
 - Pass-2 matrix: `data/manual/procurement_decision_matrix_pass2.csv`
 - Basket plan: `data/manual/procurement_local_baskets_pass2.csv`
@@ -16,7 +16,7 @@
 - `bundle_local_toyota_buy_after_inspection`: 10
 - `buy_body_fastener_hardware_from_samples`: 3
 - `buy_compact_cabin_fuse_boxes`: 1
-- `buy_for_baseline`: 2
+- `buy_for_baseline`: 1
 - `buy_now`: 8
 - `capture_body_hardware_samples_then_order`: 5
 - `capture_brake_specs_then_order`: 7
@@ -44,7 +44,7 @@
 - `post_baseline_only`: 6
 - `post_tub_off_inspection`: 11
 - `pre_order_audit`: 3
-- `review`: 26
+- `review`: 25
 
 ## Immediate Actions (Now)
 
