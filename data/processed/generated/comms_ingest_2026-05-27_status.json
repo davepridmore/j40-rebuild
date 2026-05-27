@@ -1,335 +1,337 @@
 {
-  "run_date_utc": "2026-05-26",
+  "run_date_utc": "2026-05-27",
   "date_tag": "2026-05-27",
   "email": {
-    "new_messages_query_after": "2026/05/26",
+    "new_messages_query_after": "2026/05/27",
     "queries_run": [
-      "after:2026/05/26 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (j40 OR fj40 OR j50 OR fj50 OR landcruiser OR \"land cruiser\" OR toyota)",
-      "after:2026/05/26 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (daraz OR autohub OR aliexpress OR toolsmart OR \"tools mart\" OR \"mtl parts\" OR millat OR powerhouse OR postex OR leopard OR blueex OR \"blue-ex\" OR coolsun OR longman OR happilac)",
-      "after:2026/05/26 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (chassis OR brake OR suspension OR primer OR epoxy OR paint OR welding OR hose OR rubber OR fastener OR grommet OR radiator OR evaporator OR blower OR relay OR fuse)",
-      "after:2026/05/26 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (shipped OR dispatch OR tracking OR delivered OR invoice OR receipt OR payment)",
-      "after:2026/05/26 \"38902\"",
-      "after:2026/05/26 \"38903\"",
-      "after:2026/05/26 \"TM25240\"",
-      "after:2026/05/26 \"1075298\"",
-      "after:2026/05/26 \"1075421\"",
-      "after:2026/05/26 \"TM25776\"",
-      "after:2026/05/26 \"TM25550\"",
-      "after:2026/05/26 \"242365766280938\"",
-      "after:2026/05/26 \"243331393680938\"",
-      "after:2026/05/26 \"243331393480938\"",
-      "after:2026/05/26 \"62074\"",
-      "after:2026/05/26 \"62192\"",
-      "after:2026/05/26 \"241938794080938\"",
-      "after:2026/05/26 \"242366749280938\"",
-      "after:2026/05/26 \"1761310\"",
-      "after:2026/05/26 \"SNA_quote_25ft_or_10-12m_4.75mm_brake_tube\"",
-      "after:2026/05/26 \"quote_with_4.75mm_line_stock\"",
-      "after:2026/05/26 \"quote_after_old_sample_thread_seat_check\"",
-      "after:2026/05/26 \"242508745080938\"",
-      "after:2026/05/26 \"242508745280938\"",
-      "after:2026/05/26 \"62228\"",
-      "after:2026/05/26 \"553-115x2_reference_only\"",
-      "after:2026/05/26 \"553-103_reference_only\"",
-      "after:2026/05/26 \"243701549680938\"",
-      "after:2026/05/26 \"old_sample_required\"",
-      "after:2026/05/26 \"47550-69075_candidate\"",
-      "after:2026/05/26 \"47560-69055_candidate\"",
-      "after:2026/05/26 \"47570-69065_candidate\"",
-      "after:2026/05/26 \"47580-69055_candidate\"",
-      "after:2026/05/26 \"A28_reference_only\"",
-      "after:2026/05/26 \"081-02C-KIT_reference_only\"",
-      "after:2026/05/26 \"242508744880938\"",
-      "after:2026/05/26 \"1762336\"",
-      "after:2026/05/26 \"80788\"",
-      "after:2026/05/26 \"3070231697837489\"",
-      "after:2026/05/26 \"3070231697777489\"",
-      "after:2026/05/26 \"3070027285627489\"",
-      "after:2026/05/26 \"1599\"",
-      "after:2026/05/26 \"3070231697877489\"",
-      "after:2026/05/26 \"242365766580938\"",
-      "after:2026/05/26 \"62191\"",
-      "after:2026/05/26 \"242365766980938\"",
-      "after:2026/05/26 \"242365766080938\"",
-      "after:2026/05/26 \"TM25493\"",
-      "after:2026/05/26 \"26242\"",
-      "after:2026/05/26 \"TM25430\""
+      "after:2026/05/27 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (j40 OR fj40 OR j50 OR fj50 OR landcruiser OR \"land cruiser\" OR toyota)",
+      "after:2026/05/27 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (daraz OR autohub OR aliexpress OR toolsmart OR \"tools mart\" OR \"mtl parts\" OR millat OR powerhouse OR postex OR leopard OR blueex OR \"blue-ex\" OR coolsun OR longman OR happilac)",
+      "after:2026/05/27 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (chassis OR brake OR suspension OR primer OR epoxy OR paint OR welding OR hose OR rubber OR fastener OR grommet OR radiator OR evaporator OR blower OR relay OR fuse)",
+      "after:2026/05/27 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (shipped OR dispatch OR tracking OR delivered OR invoice OR receipt OR payment)",
+      "after:2026/05/27 \"38902\"",
+      "after:2026/05/27 \"38903\"",
+      "after:2026/05/27 \"TM25240\"",
+      "after:2026/05/27 \"1075298\"",
+      "after:2026/05/27 \"1075421\"",
+      "after:2026/05/27 \"TM25776\"",
+      "after:2026/05/27 \"TM25550\"",
+      "after:2026/05/27 \"242670698380938\"",
+      "after:2026/05/27 \"242365766280938\"",
+      "after:2026/05/27 \"242670698180938\"",
+      "after:2026/05/27 \"243331393680938\"",
+      "after:2026/05/27 \"243331393480938\"",
+      "after:2026/05/27 \"62074\"",
+      "after:2026/05/27 \"62192\"",
+      "after:2026/05/27 \"241938794080938\"",
+      "after:2026/05/27 \"242366749280938\"",
+      "after:2026/05/27 \"1761310\"",
+      "after:2026/05/27 \"SNA_quote_25ft_or_10-12m_4.75mm_brake_tube\"",
+      "after:2026/05/27 \"quote_with_4.75mm_line_stock\"",
+      "after:2026/05/27 \"quote_after_old_sample_thread_seat_check\"",
+      "after:2026/05/27 \"242508745080938\"",
+      "after:2026/05/27 \"242508745280938\"",
+      "after:2026/05/27 \"62228\"",
+      "after:2026/05/27 \"553-115x2_reference_only\"",
+      "after:2026/05/27 \"553-103_reference_only\"",
+      "after:2026/05/27 \"243701549680938\"",
+      "after:2026/05/27 \"old_sample_required\"",
+      "after:2026/05/27 \"47550-69075_candidate\"",
+      "after:2026/05/27 \"47560-69055_candidate\"",
+      "after:2026/05/27 \"47570-69065_candidate\"",
+      "after:2026/05/27 \"47580-69055_candidate\"",
+      "after:2026/05/27 \"A28_reference_only\"",
+      "after:2026/05/27 \"081-02C-KIT_reference_only\"",
+      "after:2026/05/27 \"242508744880938\"",
+      "after:2026/05/27 \"1762336\"",
+      "after:2026/05/27 \"80788\"",
+      "after:2026/05/27 \"3070231697837489\"",
+      "after:2026/05/27 \"3070231697777489\"",
+      "after:2026/05/27 \"3070027285627489\"",
+      "after:2026/05/27 \"1599\"",
+      "after:2026/05/27 \"3070231697877489\"",
+      "after:2026/05/27 \"242365766580938\"",
+      "after:2026/05/27 \"62191\"",
+      "after:2026/05/27 \"242365766980938\"",
+      "after:2026/05/27 \"242365766080938\"",
+      "after:2026/05/27 \"TM25493\"",
+      "after:2026/05/27 \"26242\"",
+      "after:2026/05/27 \"TM25430\""
     ],
     "query_stats": {
-      "after:2026/05/26 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (j40 OR fj40 OR j50 OR fj50 OR landcruiser OR \"land cruiser\" OR toyota)": {
-        "returned": 2,
-        "result_size_estimate": 2,
+      "after:2026/05/27 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (j40 OR fj40 OR j50 OR fj50 OR landcruiser OR \"land cruiser\" OR toyota)": {
+        "returned": 0,
+        "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (daraz OR autohub OR aliexpress OR toolsmart OR \"tools mart\" OR \"mtl parts\" OR millat OR powerhouse OR postex OR leopard OR blueex OR \"blue-ex\" OR coolsun OR longman OR happilac)": {
-        "returned": 8,
-        "result_size_estimate": 8,
+      "after:2026/05/27 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (daraz OR autohub OR aliexpress OR toolsmart OR \"tools mart\" OR \"mtl parts\" OR millat OR powerhouse OR postex OR leopard OR blueex OR \"blue-ex\" OR coolsun OR longman OR happilac)": {
+        "returned": 4,
+        "result_size_estimate": 4,
         "has_next_page": false
       },
-      "after:2026/05/26 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (chassis OR brake OR suspension OR primer OR epoxy OR paint OR welding OR hose OR rubber OR fastener OR grommet OR radiator OR evaporator OR blower OR relay OR fuse)": {
+      "after:2026/05/27 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (chassis OR brake OR suspension OR primer OR epoxy OR paint OR welding OR hose OR rubber OR fastener OR grommet OR radiator OR evaporator OR blower OR relay OR fuse)": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/27 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (shipped OR dispatch OR tracking OR delivered OR invoice OR receipt OR payment)": {
         "returned": 3,
         "result_size_estimate": 3,
         "has_next_page": false
       },
-      "after:2026/05/26 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (shipped OR dispatch OR tracking OR delivered OR invoice OR receipt OR payment)": {
-        "returned": 8,
-        "result_size_estimate": 8,
-        "has_next_page": false
-      },
-      "after:2026/05/26 \"38902\"": {
+      "after:2026/05/27 \"38902\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"38903\"": {
-        "returned": 1,
-        "result_size_estimate": 1,
-        "has_next_page": false
-      },
-      "after:2026/05/26 \"TM25240\"": {
+      "after:2026/05/27 \"38903\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"1075298\"": {
+      "after:2026/05/27 \"TM25240\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"1075421\"": {
+      "after:2026/05/27 \"1075298\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"TM25776\"": {
+      "after:2026/05/27 \"1075421\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"TM25550\"": {
+      "after:2026/05/27 \"TM25776\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"242365766280938\"": {
+      "after:2026/05/27 \"TM25550\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"243331393680938\"": {
+      "after:2026/05/27 \"242670698380938\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"243331393480938\"": {
+      "after:2026/05/27 \"242365766280938\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"62074\"": {
+      "after:2026/05/27 \"242670698180938\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"62192\"": {
+      "after:2026/05/27 \"243331393680938\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"241938794080938\"": {
+      "after:2026/05/27 \"243331393480938\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"242366749280938\"": {
+      "after:2026/05/27 \"62074\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"1761310\"": {
+      "after:2026/05/27 \"62192\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"SNA_quote_25ft_or_10-12m_4.75mm_brake_tube\"": {
+      "after:2026/05/27 \"241938794080938\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"quote_with_4.75mm_line_stock\"": {
+      "after:2026/05/27 \"242366749280938\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"quote_after_old_sample_thread_seat_check\"": {
+      "after:2026/05/27 \"1761310\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"242508745080938\"": {
+      "after:2026/05/27 \"SNA_quote_25ft_or_10-12m_4.75mm_brake_tube\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"242508745280938\"": {
+      "after:2026/05/27 \"quote_with_4.75mm_line_stock\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"62228\"": {
+      "after:2026/05/27 \"quote_after_old_sample_thread_seat_check\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"553-115x2_reference_only\"": {
+      "after:2026/05/27 \"242508745080938\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"553-103_reference_only\"": {
+      "after:2026/05/27 \"242508745280938\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"243701549680938\"": {
-        "returned": 1,
-        "result_size_estimate": 1,
-        "has_next_page": false
-      },
-      "after:2026/05/26 \"old_sample_required\"": {
+      "after:2026/05/27 \"62228\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"47550-69075_candidate\"": {
+      "after:2026/05/27 \"553-115x2_reference_only\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"47560-69055_candidate\"": {
+      "after:2026/05/27 \"553-103_reference_only\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"47570-69065_candidate\"": {
+      "after:2026/05/27 \"243701549680938\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"47580-69055_candidate\"": {
+      "after:2026/05/27 \"old_sample_required\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"A28_reference_only\"": {
+      "after:2026/05/27 \"47550-69075_candidate\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"081-02C-KIT_reference_only\"": {
+      "after:2026/05/27 \"47560-69055_candidate\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"242508744880938\"": {
+      "after:2026/05/27 \"47570-69065_candidate\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"1762336\"": {
+      "after:2026/05/27 \"47580-69055_candidate\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"80788\"": {
+      "after:2026/05/27 \"A28_reference_only\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"3070231697837489\"": {
+      "after:2026/05/27 \"081-02C-KIT_reference_only\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"3070231697777489\"": {
+      "after:2026/05/27 \"242508744880938\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"3070027285627489\"": {
+      "after:2026/05/27 \"1762336\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"1599\"": {
+      "after:2026/05/27 \"80788\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"3070231697877489\"": {
+      "after:2026/05/27 \"3070231697837489\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"242365766580938\"": {
+      "after:2026/05/27 \"3070231697777489\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"62191\"": {
+      "after:2026/05/27 \"3070027285627489\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"242365766980938\"": {
+      "after:2026/05/27 \"1599\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"242365766080938\"": {
+      "after:2026/05/27 \"3070231697877489\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"TM25493\"": {
+      "after:2026/05/27 \"242365766580938\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"26242\"": {
+      "after:2026/05/27 \"62191\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       },
-      "after:2026/05/26 \"TM25430\"": {
+      "after:2026/05/27 \"242365766980938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/27 \"242365766080938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/27 \"TM25493\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/27 \"26242\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/27 \"TM25430\"": {
         "returned": 0,
         "result_size_estimate": 0,
         "has_next_page": false
       }
     },
-    "unique_messages_read": 13,
-    "categorized_records_written": 7,
+    "unique_messages_read": 7,
+    "categorized_records_written": 1,
     "excluded_non_project_records": 6,
     "category_counts": {
-      "project_update": 1,
-      "supplier_communication": 5,
-      "product": 1
+      "supplier_communication": 1
     },
     "top_sources": {
-      "Daraz": 5,
-      "Alibaba": 1,
-      "Mtl Parts": 1
+      "Daraz": 1
     },
     "output_csv": "data/processed/generated/comms_ingest_2026-05-27_categorized.csv",
     "output_json": "data/processed/generated/gmail_project_messages_2026-05-27.json",
     "high_signal_procurement_refs": [
-      "bmw f30 headlights: we notice that you viewed this last week",
-      "Thank You for Choosing Daraz 🛍️ How Was Your Experience? 😊",
-      "Delivery of your Order 243701549680938",
-      "Your MTL PARTS order has been received!",
-      "Standard Chartered: Transaction Alert",
-      "Yay, your Order 242670698380938 is confirmed!",
-      "Yay, your Order 242670698180938 is confirmed!"
+      "Thank You for Choosing Daraz 🛍️ How Was Your Experience? 😊"
     ]
   }
 }

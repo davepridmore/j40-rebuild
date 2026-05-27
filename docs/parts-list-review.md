@@ -1,20 +1,20 @@
 # Parts List Review
 
-- Generated: 2026-05-27 02:53:25
+- Generated: 2026-05-27 18:11:26
 - Source: `data/manual/expenses.csv` (`bucket=parts`) -> 122 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
 
 ## Action Buckets
 
-- `buy_now`: 40
+- `buy_now`: 39
 - `cancelled_or_not_required`: 11
 - `completed_or_received`: 33
 - `deferred`: 6
 - `needs_spec_before_order`: 9
-- `ordered_waiting_arrival`: 9
+- `ordered_waiting_arrival`: 11
 - `spec_ready_release_hold`: 3
-- `unclear`: 11
+- `unclear`: 10
 
 ## Workstream Split
 
@@ -48,7 +48,6 @@
 - `part_firewall_grommet_set_large_power` [electrical_reset] Additional firewall grommet set IDs 16/20/25 mm
 - `part_firewall_grommet_set_small_medium` [electrical_reset] Additional firewall grommet set IDs 6/8/10/12 mm
 - `part_hvac_blower_clutch_fan_wiring_20260514` [electrical_reset] Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request
-- `part_star_washers` [electrical_reset] Star washers (bite into metal)
 - `part_fabrication_raw_aluminium_plate_3mm_20260513` [fabrication_handoff] 3.0 mm 5052-H32 aluminium sheet for MIDI enclosure, Relay Rev D base, and cutoff electrical plates
 - `part_fabrication_raw_electrical_plastic_sheet_20260513` [fabrication_handoff] Electrical insulating plastic/G10 sheet - MIDI 5.0 mm board and relay 3.0 mm sheet
 - `part_fabrication_raw_epdm_sheet_small_isolators_20260513` [fabrication_handoff] 3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads

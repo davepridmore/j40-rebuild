@@ -1633,6 +1633,45 @@
     ["../../photos/20260501_193811_gp_uv8kwbxw.jpg", "Tailpipe bracket and holder location reference"],
   ];
 
+  const CHASSIS_RUBBER_DRAWING_FILE_MAP = {
+    "BM-ISO-SM": {
+      svg: "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.svg",
+      dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf",
+    },
+    "BM-ISO-LG": {
+      svg: "../../data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.svg",
+      dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.dxf",
+    },
+    "FS-OVAL": {
+      svg: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.svg",
+      dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf",
+    },
+    "FS-STRIP-L": {
+      svg: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg",
+      dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf",
+    },
+    "FS-STRIP-R": {
+      svg: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg",
+      dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf",
+    },
+    "BUMP-60010-LONG": {
+      svg: "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
+      dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+    },
+    "BUMP-60020-SHORT": {
+      svg: "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
+      dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+    },
+    "BODY-LINER-FULL-WIDTH-HOLD": {
+      svg: "../../data/manual/fabrication/rubber_recreation_rev_a/body_liner_full_width_hold_control.svg",
+      dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/body_liner_full_width_hold_control.dxf",
+    },
+    "EXH-HGR-90917": {
+      svg: "../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg",
+      dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.dxf",
+    },
+  };
+
   function renderChassisRubberSpecImage(row) {
     const image = {
       path: row.image,
@@ -1661,48 +1700,125 @@
     `;
   }
 
-  function renderChassisRubberSimpleSpec() {
+  function chassisRubberDrawingFiles(rowOrId) {
+    const orderId = cleanString(typeof rowOrId === "string" ? rowOrId : rowOrId && (rowOrId.order_id || rowOrId.id)).toUpperCase();
+    return CHASSIS_RUBBER_DRAWING_FILE_MAP[orderId] || null;
+  }
+
+  function renderChassisRubberOrderImage(row) {
+    const drawingFiles = chassisRubberDrawingFiles(row);
+    const svgPath = cleanString(drawingFiles && drawingFiles.svg);
+    const image = svgPath
+      ? {
+          path: svgPath,
+          caption: `${cleanString(row.order_id) || "Rubber"} SVG control drawing`,
+          media_id: `${cleanString(row.order_id).toLowerCase()}_svg`,
+          media_type: "photo",
+        }
+      : row && row.image
+        ? row.image
+        : {};
+    const prepared = prepareImage(image, row.part || row.order_id || "Rubber order line");
+    const mediaClass = svgPath ? "table-image table-image-contain" : "table-image";
+    return `
+      <td class="table-image-cell">
+        ${renderPreparedMedia(prepared, "table-image-btn", mediaClass)}
+        <span class="table-image-note">${escapeHtml(svgPath ? "SVG control" : "Reference")}</span>
+      </td>
+    `;
+  }
+
+  function renderChassisRubberDrawingLinks(row) {
+    const files = chassisRubberDrawingFiles(row);
+    if (!files) {
+      return "";
+    }
+    return `
+      <div class="item-links chassis-rubber-drawing-links">
+        ${renderItemLink({ url: files.svg, label: "SVG" }, 0)}
+        ${renderItemLink({ url: files.dxf, label: "DXF", download: true }, 1)}
+      </div>
+    `;
+  }
+
+  function fallbackChassisRubberOrderRows() {
+    return CHASSIS_RUBBER_SPEC_ROWS.map((row) => ({
+      order_id: row.id,
+      part: row.part,
+      required_qty: row.qty,
+      optional_spare_qty: "",
+      spec: row.spec,
+      holes_or_inserts: "",
+      material: "New black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5",
+      release_state: row.route,
+      photo_refs: "",
+      notes: row.notes,
+      image: {
+        path: row.image,
+        caption: row.imageCaption || row.part,
+        media_id: row.id,
+        media_type: "photo",
+      },
+    }));
+  }
+
+  function renderChassisRubberConsolidatedSpec(rows) {
+    const sourceRows = Array.isArray(rows) && rows.length ? rows : fallbackChassisRubberOrderRows();
     return `
       <article class="card pipe-requirements-card">
         <div class="detail-header">
-          <h3>Chassis Rubber Checklist</h3>
+          <h3>Chassis Rubber Order</h3>
           <div class="chip-row">
-            ${chip("One rubber set")}
+            ${chip(`${sourceRows.length} lines`)}
+            ${chip("Single Longman list")}
+            ${chip("SVG + DXF attached")}
             ${chip("All dimensions mm")}
             ${chip("Shore A 60 +/-5")}
           </div>
         </div>
-        <p class="small-muted">This is the canonical rubber checklist. The Longman supplier sheet below repeats these same rubber IDs in quote/send-out format; it is not a second set to buy.</p>
+        <p class="small-muted">This is the single chassis-rubber list to use for the Longman quote/send-out pack. Quantities here are the rubber order quantities; there is no second duplicate Longman table below it.</p>
         <p class="small-muted">Body/front-support rubbers: new black solid EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5. Main body isolators are now function-first custom square pads, not circular/register bushings, because the chassis/tub photos do not prove a shaped rubber socket. Steel cup/seat washers, sleeves, shims, bolts, and captive-thread repairs are separate from the Longman rubber order. Bump stops: public OEM/catalog sources confirm the Toyota part numbers, applications, and 70 mm / 60 mm height split, but not the Toyota mould drawing. Use a Toyota-style two-ear steel saddle/backing plate, tapered/radiused progressive rubber body, flat rectangular strike face, and vehicle bracket/contact measurements. Reject tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, washer stacks, simple cut blocks, or universal bump stops that do not match the axle contact point.</p>
         <p class="small-muted">Current supplier pack: <a href="../../docs/longman-rubber-order-spec-20260508.md">Longman rubber order spec</a>, <a href="../../data/manual/longman_rubber_order_specs.csv">Longman order CSV</a>, <a href="../../docs/chassis-rubbers-workstream.md">chassis rubbers workstream</a>.</p>
         <div class="table-wrap requirement-table-wrap">
           <table class="requirement-table chassis-rubber-spec-table">
             <thead>
               <tr>
-                <th>Image</th>
-                <th>ID</th>
-                <th>Part</th>
+                <th>SVG</th>
+                <th>Line</th>
                 <th>Qty</th>
-                <th>Machine / Purchase Definition</th>
-                <th>CAD / Route</th>
-                <th>Notes</th>
+                <th>Rubber Definition</th>
+                <th>Holes / Inserts</th>
+                <th>Material</th>
+                <th>Files / Release</th>
               </tr>
             </thead>
             <tbody>
-              ${CHASSIS_RUBBER_SPEC_ROWS
-                .map(
-                  (row) => `
+              ${sourceRows
+                .map((row) => {
+                  const qtyBits = [
+                    row.required_qty ? `Required: ${row.required_qty}` : "",
+                    row.optional_spare_qty ? `Spare: ${row.optional_spare_qty}` : "",
+                  ].filter(Boolean);
+                  return `
                     <tr>
-                      ${renderChassisRubberSpecImage(row)}
-                      <td><strong>${escapeHtml(row.id)}</strong></td>
-                      <td>${escapeHtml(row.part)}</td>
-                      <td>${escapeHtml(row.qty)}</td>
+                      ${renderChassisRubberOrderImage(row)}
+                      <td class="scout-line-cell">
+                        <strong>${escapeHtml(row.order_id || "-")}</strong>
+                        <div class="small-muted">${escapeHtml(row.part || "")}</div>
+                      </td>
+                      <td>${escapeHtml(qtyBits.join(" / ") || "-")}</td>
                       <td>${escapeHtml(row.spec)}</td>
-                      <td>${renderChassisRubberCadRoute(row)}</td>
-                      <td>${escapeHtml(row.notes)}</td>
+                      <td>${escapeHtml(row.holes_or_inserts || "-")}</td>
+                      <td>${escapeHtml(row.material || "-")}</td>
+                      <td class="scout-notes-cell">
+                        ${renderChassisRubberDrawingLinks(row)}
+                        ${statusChip(row.release_state || "open")}
+                        ${renderScoutField("Basis", row.photo_refs)}
+                        ${renderScoutField("Notes", row.notes)}
+                      </td>
                     </tr>
-                  `
-                )
+                  `;
+                })
                 .join("")}
             </tbody>
           </table>
@@ -2392,8 +2508,7 @@
       : active.pipe_requirements;
     if (active.id === "chassis_rubbers") {
       return [
-        renderChassisRubberSimpleSpec(),
-        renderLongmanRubberOrderTable(active.longman_rubber_order_specs),
+        renderChassisRubberConsolidatedSpec(active.longman_rubber_order_specs),
         renderChassisRubberReferenceImages(),
       ].join("");
     }
@@ -5311,70 +5426,6 @@
 
   function renderScoutLocalMarketOrderTable(rows) {
     return renderLongmanPipeHoseOrderTable(rows);
-  }
-
-  function renderLongmanRubberOrderTable(rows) {
-    const sourceRows = Array.isArray(rows) ? rows : [];
-    if (!sourceRows.length) {
-      return "";
-    }
-    return `
-      <article class="card">
-        <div class="detail-header">
-          <h3>Longman Supplier Format</h3>
-          <div class="chip-row">
-            ${chip(`${sourceRows.length} lines`)}
-            ${chip("Same rubber IDs")}
-            ${chip("Custom quote")}
-          </div>
-        </div>
-        <p class="small-muted">Supplier-facing version of the checklist above. Use these rows when sending the rubber quote pack to Longman; do not add these quantities on top of the checklist. Steel cup/seat washers, sleeves, shims, bolts, and washer inspection remain separate from this rubber order.</p>
-        <div class="table-wrap">
-          <table class="scout-market-order-table">
-            <thead>
-              <tr>
-                <th>Image</th>
-                <th>Line</th>
-                <th>Qty</th>
-                <th>Rubber Definition</th>
-                <th>Holes / Inserts</th>
-                <th>Material</th>
-                <th>Release / Notes</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${sourceRows
-                .map((row) => {
-                  const rowImage = bestScoutOriginalImage(row) || scoutComponentImage(row);
-                  const qtyBits = [
-                    row.required_qty ? `Required: ${row.required_qty}` : "",
-                    row.optional_spare_qty ? `Spare: ${row.optional_spare_qty}` : "",
-                  ].filter(Boolean);
-                  return `
-                    <tr>
-                      ${renderInventoryImageCell({ item: row.part, image: rowImage }, row.part || "Rubber order line image")}
-                      <td class="scout-line-cell">
-                        <strong>${escapeHtml(row.order_id || "-")}</strong>
-                        <div class="small-muted">${escapeHtml(row.part || "")}</div>
-                        ${statusChip(row.release_state || "open")}
-                      </td>
-                      <td>${escapeHtml(qtyBits.join(" / ") || "-")}</td>
-                      <td class="scout-spec-cell">${escapeHtml(row.spec || "-")}</td>
-                      <td>${escapeHtml(row.holes_or_inserts || "-")}</td>
-                      <td>${escapeHtml(row.material || "-")}</td>
-                      <td class="scout-notes-cell">
-                        ${renderScoutField("Basis", row.photo_refs)}
-                        ${renderScoutField("Notes", row.notes)}
-                      </td>
-                    </tr>
-                  `;
-                })
-                .join("")}
-            </tbody>
-          </table>
-        </div>
-      </article>
-    `;
   }
 
   function renderScoutPartsTable(rows) {

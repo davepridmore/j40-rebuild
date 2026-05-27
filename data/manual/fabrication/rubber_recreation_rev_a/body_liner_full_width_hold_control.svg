@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+  <title id="title">J40 full-width body liner hold measurement control</title>
+  <desc id="desc">Control diagram for identifying and measuring any long or full-width body/panel liner strips before ordering.</desc>
+  <rect width="900" height="360" fill="#f7f7f4"/>
+  <style>
+    .title { font: 700 22px Arial, sans-serif; fill: #111; }
+    .label { font: 15px Arial, sans-serif; fill: #222; }
+    .small { font: 12px Arial, sans-serif; fill: #333; }
+    .rubber { fill: #111; stroke: #000; stroke-width: 2; }
+    .guide { stroke: #666; stroke-width: 1.5; stroke-dasharray: 6 5; fill: none; }
+    .dim { stroke: #c43a31; stroke-width: 2; fill: none; marker-start: url(#arrow); marker-end: url(#arrow); }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c43a31"/>
+    </marker>
+  </defs>
+  <text x="34" y="42" class="title">Full-Width Body / Panel Liner Hold - Identify Before Quote</text>
+  <rect x="96" y="120" width="690" height="46" rx="6" class="rubber"/>
+  <path d="M96 92 L786 92" class="dim"/>
+  <text x="425" y="82" class="label">L full measured length</text>
+  <path d="M820 120 L820 166" class="dim"/>
+  <text x="836" y="148" class="label">W</text>
+  <line x1="96" y1="190" x2="786" y2="190" class="guide"/>
+  <circle cx="200" cy="143" r="8" fill="#f7f7f4" stroke="#c43a31" stroke-width="2"/>
+  <circle cx="420" cy="143" r="8" fill="#f7f7f4" stroke="#c43a31" stroke-width="2"/>
+  <circle cx="640" cy="143" r="8" fill="#f7f7f4" stroke="#c43a31" stroke-width="2"/>
+  <text x="112" y="218" class="small">Capture both ends, all holes/slots/notches, side/orientation labels, thickness, witness marks, and installed function.</text>
+  <text x="112" y="238" class="small">This is a hold/control sheet only. Do not cut or order unless an actual strip or vehicle station proves the requirement.</text>
+  <text x="112" y="258" class="small">If released, convert the measured strip to a separate production drawing with final L/W/T and hole/slot coordinates.</text>
+</svg>

@@ -121,6 +121,9 @@ EXCLUDE_TERMS = {
     "ba.com",
     "medium newsletter",
     "medium.com",
+    "quora",
+    "quora digest",
+    "quora.com",
     "reading books",
     "facebook",
     "instagram",
@@ -462,6 +465,7 @@ def classify_email(message: dict[str, Any], full_email: dict[str, Any]) -> tuple
     supplier_hits = term_hits(haystack, SUPPLIER_TERMS)
     order_hits = term_hits(haystack, ORDER_TERMS)
     exclude_hits = term_hits(haystack, EXCLUDE_TERMS)
+    hard_exclude_hits = [hit for hit in exclude_hits if hit in {"quora", "quora digest", "quora.com"}]
     codes = extract_codes(haystack_raw)
     amount = extract_amount(haystack_raw)
 
@@ -476,6 +480,9 @@ def classify_email(message: dict[str, Any], full_email: dict[str, Any]) -> tuple
     if codes and (supplier_hits or project_hits):
         is_relevant = True
         reason = reason or "reference_code_signal"
+    if hard_exclude_hits:
+        is_relevant = False
+        reason = "excluded_digest"
     if exclude_hits and not (project_hits or supplier_hits):
         is_relevant = False
         reason = "excluded_non_project"

@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-27T02:53:39+05:00",
+  "generated_at": "2026-05-27T18:11:32+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -51,19 +51,19 @@ window.J40_DASHBOARD_DATA = {
     "workstream_evidence_images": 786,
     "wiring_diagram_reference_images": 1,
     "parts_open_rows": 78,
-    "parts_ordered_pending_delivery": 9,
-    "urgent_part_actions": 19,
+    "parts_ordered_pending_delivery": 11,
+    "urgent_part_actions": 20,
     "capture_data_tasks": 106,
     "capture_data_tasks_now": 94,
-    "supply_rows_tracked": 284,
+    "supply_rows_tracked": 285,
     "selling_site_images_loaded": 88,
-    "whatsapp_j40_selected_chats": 12,
-    "whatsapp_j40_media_items": 267,
-    "whatsapp_j40_media_images": 214,
-    "whatsapp_j40_media_videos": 30,
-    "other_build_reference_media": 189,
-    "other_build_reference_images": 169,
-    "other_build_reference_videos": 20,
+    "whatsapp_j40_selected_chats": 11,
+    "whatsapp_j40_media_items": 282,
+    "whatsapp_j40_media_images": 228,
+    "whatsapp_j40_media_videos": 31,
+    "other_build_reference_media": 204,
+    "other_build_reference_images": 183,
+    "other_build_reference_videos": 21,
     "other_build_drop_zone_images": 0,
     "other_build_manual_reference_images": 61,
     "contact_register_entries": 29,
@@ -26485,12 +26485,12 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
           "status": "in_progress",
-          "detail": "5 part rows still require price confirmation/order placement."
+          "detail": "4 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
           "status": "in_progress",
-          "detail": "2 part rows are ordered and awaiting delivery."
+          "detail": "3 part rows are ordered and awaiting delivery."
         },
         {
           "label": "Procurement \u00b7 resolve ambiguous stock/receipt rows",
@@ -26608,6 +26608,45 @@ window.J40_DASHBOARD_DATA = {
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
             "caption": "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points \u00b7 fastener kit reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "graded_fasteners",
+            "matched_tokens": [
+              "fastener"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "entry_id": "part_star_washers",
+          "workstream": "electrical_reset",
+          "item": "Star washers (bite into metal)",
+          "status": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "unknown",
+          "delivery_status": "pending_delivery",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Amir / Montgomery Road local fastener supplier",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_star_washers",
+          "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered|duplicate_hold_part_fastener_kit_d_millat_20260527|user_update_2026-05-27_amir_star_washer_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing. | Pending-item audit 2026-05-27: remove standalone star washers from buy-now list as a duplicate/top-up hold against pending Millat Fastener Kit D. Reopen only if physical receipt of Kit D proves the M6/M8/M10 star or serrated washer count/style is short. | User update 2026-05-27: Amir sent to buy M6 star/lock washers x120, M8 star/lock washers x60, and M10 star/lock washers x30. User typed M2- in the chat, but the active Montgomery Road sheet/spec uses M10 x30; reject M2 unless reconfirmed. This standalone row is now the active local top-up run; do not buy more star/serrated washers until Amir purchase and pending Millat Fastener Kit D stock are counted together.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
+            "caption": "Star washers (bite into metal) \u00b7 fastener kit reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -26773,45 +26812,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "relay",
             "matched_tokens": [
               "relay"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_star_washers",
-          "workstream": "electrical_reset",
-          "item": "Star washers (bite into metal)",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "local fastener / electrical hardware supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_star_washers",
-          "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered",
-          "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
-            "caption": "Star washers (bite into metal) \u00b7 grounding washer hardware reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "graded_fasteners",
-            "matched_tokens": [
-              "washers"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -27457,7 +27457,7 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "Star washers (bite into metal) (purchase_ready; delivery not_ordered; amount missing)",
+                "Star washers (bite into metal) (ordered_pending_delivery; delivery pending_delivery; amount missing)",
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
                 "Additional firewall grommet set IDs 16/20/25 mm (purchase_ready; delivery not_ordered; amount missing)",
                 "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)",
@@ -27585,11 +27585,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
+                "Star washers (bite into metal) (ordered_pending_delivery; delivery pending_delivery; amount missing)",
                 "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 (ordered_pending_delivery; delivery pending_delivery; amount confirmed_prorated)",
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
                 "Braided sleeve inventory - 8/10/14/16/20 mm sleeves, 5m lengths received (received; delivery received; amount missing)",
-                "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)"
+                "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points (ordered_pending_delivery; delivery pending_delivery; amount missing)"
               ]
             },
             {
@@ -56126,15 +56126,15 @@ window.J40_DASHBOARD_DATA = {
           ],
           "photo_status": "direct_location_plus_may12_may14_fitting_photos",
           "spec_status": "working_double_inverted_flare_likely_thread_seat_confirm_pending",
-          "acquisition_status": "not_acquired",
+          "acquisition_status": "local_tube_purchase_requested_pending_receipt",
           "installation_status": "not_installed",
-          "current_action": "Can remove now only after full-route photos, side labels, and union/fitting close-ups; cap or plug every open hydraulic port immediately and keep the old tubes as bend templates. May 14 installed-fitting photos point to double/inverted flares; confirm by photographing a removed bare line end before flaring new tube.",
+          "current_action": "Amir sent to buy 25 ft of zinc-coated/galvanised 3/16 in brake tube on 2026-05-27. Do not fabricate until receipt/photo confirms automotive brake-rated 4.75 mm / 3/16 in tube, old-line flare/thread/seat are verified, and route templates are preserved.",
           "exact_recreation_spec": "Recreate both rear axle hard lines from the center rear flex-hose/T-union to the wheel cylinders; match the original tube route, clip positions, bend pattern, working Toyota-style double/inverted flare type, union thread, and wheel-cylinder thread after old-line confirmation",
           "material_spec": "Brake-rated 3/16 in / 4.75 mm bundy steel or CuNi/Cunifer tube with brake-rated double/inverted flare fittings after thread/seat confirmation; no bare copper",
           "critical_measurements": "Tube OD, line length by side, flare standard, union thread, wheel-cylinder port thread, bend pattern, clip locations, clearance to axle housing, U-bolts, shocks, leaf springs, and tyres",
           "fit_and_test": "Pressure bleed and leak-test; lines must have no rub points, no unsupported spans, and no contact through suspension travel",
-          "source_ref": "docs_brake_workstream|issue_brake_fuel_line_clip_corrosion|photo_import_20260514T104551",
-          "notes": "May 12 photos add axle-end line and bracket context. May 14 close-ups add installed flare-nut and wheel-cylinder entry context. Replace/recreate before chassis coating if corrosion or weak clips are present.",
+          "source_ref": "docs_brake_workstream|issue_brake_fuel_line_clip_corrosion|photo_import_20260514T104551|user_update_2026-05-27_amir_brake_tube_purchase_run",
+          "notes": "May 12 photos add axle-end line and bracket context. May 14 close-ups add installed flare-nut and wheel-cylinder entry context. Replace/recreate before chassis coating if corrosion or weak clips are present. | Amir local purchase run 2026-05-27 covers tube stock only; fittings, flare nuts, unions, and final bends remain sample/seat controlled.",
           "evidence_images": [
             {
               "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -57527,7 +57527,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
           "status": "in_progress",
-          "detail": "2 part rows are ordered and awaiting delivery."
+          "detail": "3 part rows are ordered and awaiting delivery."
         },
         {
           "label": "Procurement \u00b7 resolve ambiguous stock/receipt rows",
@@ -57760,6 +57760,68 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
+          "entry_id": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
+          "workstream": "brake_system",
+          "item": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred",
+          "status": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "unknown",
+          "delivery_status": "pending_delivery",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Amir / Montgomery Road brake pipe supplier",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
+          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|gari_lahore_mild_steel_hydraulic_brake_pipe_reference|fedhill_25ft_cunifer_reference|fcp_euro_25ft_cunifer_reference|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_amir_brake_tube_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "Quote this before buying more rear brake parts. First quote target is SNA Industries, because it is Pakistan-based and lists steel brake pipes and brake hoses. Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; quote both 25 ft minimum and a single 10000-12000 mm local coil for scrap flares, route corrections, and service loops. Use brake-rated Bundy steel or CuNi/Cunifer only; no bare copper, plumbing tube, compression fittings, or imported pre-bent FJ40 kit unless explicitly approved. | User update 2026-05-27: Amir sent to buy 25 ft of 3/16 in brake tube with zinc-coated/galvanised steel finish. Treat as pending local purchase only until receipt/photo confirms automotive brake-rated 4.75 mm / 3/16 in double-wall Bundy or equivalent coated steel tube, 25 ft minimum length, and no bare copper/plumbing/compression tube.",
+          "links": [
+            {
+              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+              "label": "Longman pipe and hose order CSV",
+              "download": true
+            },
+            {
+              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+              "label": "Longman pipe and hose order spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+              "label": "Pipe order release specs CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+              "label": "Pipe photo and measurement index CSV",
+              "download": true
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
+            "caption": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred \u00b7 hard-line bending and flaring reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "hard_line_bending_flaring_reference",
+            "matched_tokens": [
+              "hard",
+              "line",
+              "fabrication"
+            ],
+            "match_basis": "local_reference_image",
+            "match_score": 700
+          }
+        },
+        {
           "entry_id": "part_rear_brake_shoes_hardware",
           "workstream": "brake_system",
           "item": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match",
@@ -57856,68 +57918,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 999
-          }
-        },
-        {
-          "entry_id": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
-          "workstream": "brake_system",
-          "item": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred",
-          "status": "planned",
-          "procurement_stage": "price_check_priority_before_other_brake_parts",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "SNA Industries / local brake pipe specialist / Longman / Brandreth Road / Montgomery Road",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
-          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|gari_lahore_mild_steel_hydraulic_brake_pipe_reference|fedhill_25ft_cunifer_reference|fcp_euro_25ft_cunifer_reference|user_update_2026-05-24_price_brake_lines_before_other_parts",
-          "notes": "Quote this before buying more rear brake parts. First quote target is SNA Industries, because it is Pakistan-based and lists steel brake pipes and brake hoses. Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; quote both 25 ft minimum and a single 10000-12000 mm local coil for scrap flares, route corrections, and service loops. Use brake-rated Bundy steel or CuNi/Cunifer only; no bare copper, plumbing tube, compression fittings, or imported pre-bent FJ40 kit unless explicitly approved.",
-          "links": [
-            {
-              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-              "label": "Longman pipe and hose order CSV",
-              "download": true
-            },
-            {
-              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-              "label": "Longman pipe and hose order spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-              "label": "Pipe order release specs CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-              "label": "Pipe photo and measurement index CSV",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-            "caption": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred \u00b7 hard-line bending and flaring reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "hard_line_bending_flaring_reference",
-            "matched_tokens": [
-              "hard",
-              "line",
-              "fabrication"
-            ],
-            "match_basis": "local_reference_image",
-            "match_score": 700
           }
         },
         {
@@ -58921,7 +58921,7 @@ window.J40_DASHBOARD_DATA = {
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
                 "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Rear wheel cylinders - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
-                "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (price_check_priority_before_other_brake_parts; delivery not_ordered; amount missing)",
+                "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (ordered_pending_delivery; delivery pending_delivery; amount missing)",
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price_check_first_before_other_brake_parts; delivery not_ordered; amount missing)",
                 "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect (ordered_partial_pending_delivery; delivery pending_delivery; amount confirmed)"
               ]
@@ -59054,7 +59054,7 @@ window.J40_DASHBOARD_DATA = {
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
                 "Rear wheel cylinders - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
                 "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)",
-                "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (price_check_priority_before_other_brake_parts; delivery not_ordered; amount missing)",
+                "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (ordered_pending_delivery; delivery pending_delivery; amount missing)",
                 "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection (purchase_ready; delivery not_ordered; amount missing)",
                 "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
@@ -59184,7 +59184,7 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect (ordered_partial_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Brake hydraulic opening prep remaining consumables - caps plugs bleed bottle cleaner rags catch tray (purchase_ready; delivery not_ordered; amount missing)",
-                "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (price_check_priority_before_other_brake_parts; delivery not_ordered; amount missing)",
+                "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (ordered_pending_delivery; delivery pending_delivery; amount missing)",
                 "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Rear wheel cylinders - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price_check_first_before_other_brake_parts; delivery not_ordered; amount missing)"
@@ -59310,7 +59310,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (price_check_priority_before_other_brake_parts; delivery not_ordered; amount missing)",
+                "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (ordered_pending_delivery; delivery pending_delivery; amount missing)",
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price_check_first_before_other_brake_parts; delivery not_ordered; amount missing)",
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
                 "Front disc pads and retaining hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
@@ -65568,7 +65568,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Confirm price and place purchase-ready orders",
         "status": "in_progress",
-        "detail": "27 rows still in purchase_ready."
+        "detail": "26 rows still in purchase_ready."
       },
       {
         "label": "Place selected quote orders",
@@ -65578,7 +65578,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Track paid / in-flight deliveries",
         "status": "in_progress",
-        "detail": "9 rows ordered and waiting to arrive."
+        "detail": "11 rows ordered and waiting to arrive."
       }
     ],
     "counts_by_procurement_stage": [
@@ -65608,7 +65608,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "ordered_pending_delivery",
-        "count": 8
+        "count": 10
       },
       {
         "stage": "pre_payment_market_check",
@@ -65619,12 +65619,8 @@ window.J40_DASHBOARD_DATA = {
         "count": 1
       },
       {
-        "stage": "price_check_priority_before_other_brake_parts",
-        "count": 1
-      },
-      {
         "stage": "purchase_ready",
-        "count": 27
+        "count": 26
       },
       {
         "stage": "purchase_ready_estimate",
@@ -65678,11 +65674,11 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_next_action": [
       {
         "next_action": "confirm_price_then_order",
-        "count": 27
+        "count": 26
       },
       {
         "next_action": "track_delivery",
-        "count": 9
+        "count": 11
       }
     ],
     "urgent_actions": [
@@ -65992,6 +65988,66 @@ window.J40_DASHBOARD_DATA = {
         "image": {
           "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
           "caption": "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect \u00b7 hard-line bending and flaring reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "hard_line_bending_flaring_reference",
+          "matched_tokens": [
+            "hard",
+            "line",
+            "fabrication"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "priority": "P0",
+        "entry_id": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
+        "workstream": "brake_system",
+        "item": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "next_action": "track_delivery",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Amir / Montgomery Road brake pipe supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|gari_lahore_mild_steel_hydraulic_brake_pipe_reference|fedhill_25ft_cunifer_reference|fcp_euro_25ft_cunifer_reference|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_amir_brake_tube_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "Quote this before buying more rear brake parts. First quote target is SNA Industries, because it is Pakistan-based and lists steel brake pipes and brake hoses. Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; quote both 25 ft minimum and a single 10000-12000 mm local coil for scrap flares, route corrections, and service loops. Use brake-rated Bundy steel or CuNi/Cunifer only; no bare copper, plumbing tube, compression fittings, or imported pre-bent FJ40 kit unless explicitly approved. | User update 2026-05-27: Amir sent to buy 25 ft of 3/16 in brake tube with zinc-coated/galvanised steel finish. Treat as pending local purchase only until receipt/photo confirms automotive brake-rated 4.75 mm / 3/16 in double-wall Bundy or equivalent coated steel tube, 25 ft minimum length, and no bare copper/plumbing/compression tube.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
+          "caption": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred \u00b7 hard-line bending and flaring reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -66369,16 +66425,16 @@ window.J40_DASHBOARD_DATA = {
         "entry_id": "part_star_washers",
         "workstream": "electrical_reset",
         "item": "Star washers (bite into metal)",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "next_action": "confirm_price_then_order",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "next_action": "track_delivery",
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "local fastener / electrical hardware supplier",
+        "vendor": "Amir / Montgomery Road local fastener supplier",
         "supply_type": "part",
-        "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered",
-        "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing.",
+        "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered|duplicate_hold_part_fastener_kit_d_millat_20260527|user_update_2026-05-27_amir_star_washer_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing. | Pending-item audit 2026-05-27: remove standalone star washers from buy-now list as a duplicate/top-up hold against pending Millat Fastener Kit D. Reopen only if physical receipt of Kit D proves the M6/M8/M10 star or serrated washer count/style is short. | User update 2026-05-27: Amir sent to buy M6 star/lock washers x120, M8 star/lock washers x60, and M10 star/lock washers x30. User typed M2- in the chat, but the active Montgomery Road sheet/spec uses M10 x30; reject M2 unless reconfirmed. This standalone row is now the active local top-up run; do not buy more star/serrated washers until Amir purchase and pending Millat Fastener Kit D stock are counted together.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -66386,7 +66442,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
-          "caption": "Star washers (bite into metal) \u00b7 grounding washer hardware reference image",
+          "caption": "Star washers (bite into metal) \u00b7 fastener kit reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -66395,7 +66451,7 @@ window.J40_DASHBOARD_DATA = {
           "stage": "procurement_reconciliation",
           "media_id": "graded_fasteners",
           "matched_tokens": [
-            "washers"
+            "fastener"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -66618,6 +66674,67 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
+        "workstream": "brake_system",
+        "item": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "expected_delivery_date": "",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Amir / Montgomery Road brake pipe supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|gari_lahore_mild_steel_hydraulic_brake_pipe_reference|fedhill_25ft_cunifer_reference|fcp_euro_25ft_cunifer_reference|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_amir_brake_tube_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "Quote this before buying more rear brake parts. First quote target is SNA Industries, because it is Pakistan-based and lists steel brake pipes and brake hoses. Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; quote both 25 ft minimum and a single 10000-12000 mm local coil for scrap flares, route corrections, and service loops. Use brake-rated Bundy steel or CuNi/Cunifer only; no bare copper, plumbing tube, compression fittings, or imported pre-bent FJ40 kit unless explicitly approved. | User update 2026-05-27: Amir sent to buy 25 ft of 3/16 in brake tube with zinc-coated/galvanised steel finish. Treat as pending local purchase only until receipt/photo confirms automotive brake-rated 4.75 mm / 3/16 in double-wall Bundy or equivalent coated steel tube, 25 ft minimum length, and no bare copper/plumbing/compression tube.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
+          "caption": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred \u00b7 hard-line bending and flaring reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "hard_line_bending_flaring_reference",
+          "matched_tokens": [
+            "hard",
+            "line",
+            "fabrication"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
+      },
+      {
         "entry_id": "part_rear_brake_shoes_hardware",
         "workstream": "brake_system",
         "item": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match",
@@ -66756,6 +66873,44 @@ window.J40_DASHBOARD_DATA = {
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
           "caption": "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points \u00b7 fastener kit reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "graded_fasteners",
+          "matched_tokens": [
+            "fastener"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_star_washers",
+        "workstream": "electrical_reset",
+        "item": "Star washers (bite into metal)",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "expected_delivery_date": "",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Amir / Montgomery Road local fastener supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered|duplicate_hold_part_fastener_kit_d_millat_20260527|user_update_2026-05-27_amir_star_washer_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing. | Pending-item audit 2026-05-27: remove standalone star washers from buy-now list as a duplicate/top-up hold against pending Millat Fastener Kit D. Reopen only if physical receipt of Kit D proves the M6/M8/M10 star or serrated washer count/style is short. | User update 2026-05-27: Amir sent to buy M6 star/lock washers x120, M8 star/lock washers x60, and M10 star/lock washers x30. User typed M2- in the chat, but the active Montgomery Road sheet/spec uses M10 x30; reject M2 unless reconfirmed. This standalone row is now the active local top-up run; do not buy more star/serrated washers until Amir purchase and pending Millat Fastener Kit D stock are counted together.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
+          "caption": "Star washers (bite into metal) \u00b7 fastener kit reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -67243,6 +67398,66 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
+        "workstream": "brake_system",
+        "item": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Amir / Montgomery Road brake pipe supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|gari_lahore_mild_steel_hydraulic_brake_pipe_reference|fedhill_25ft_cunifer_reference|fcp_euro_25ft_cunifer_reference|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_amir_brake_tube_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "Quote this before buying more rear brake parts. First quote target is SNA Industries, because it is Pakistan-based and lists steel brake pipes and brake hoses. Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; quote both 25 ft minimum and a single 10000-12000 mm local coil for scrap flares, route corrections, and service loops. Use brake-rated Bundy steel or CuNi/Cunifer only; no bare copper, plumbing tube, compression fittings, or imported pre-bent FJ40 kit unless explicitly approved. | User update 2026-05-27: Amir sent to buy 25 ft of 3/16 in brake tube with zinc-coated/galvanised steel finish. Treat as pending local purchase only until receipt/photo confirms automotive brake-rated 4.75 mm / 3/16 in double-wall Bundy or equivalent coated steel tube, 25 ft minimum length, and no bare copper/plumbing/compression tube.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
+          "caption": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred \u00b7 hard-line bending and flaring reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "hard_line_bending_flaring_reference",
+          "matched_tokens": [
+            "hard",
+            "line",
+            "fabrication"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
+      },
+      {
         "entry_id": "part_rear_brake_shoes_hardware",
         "workstream": "brake_system",
         "item": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match",
@@ -67335,66 +67550,6 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 999
-        }
-      },
-      {
-        "entry_id": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
-        "workstream": "brake_system",
-        "item": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred",
-        "status": "planned",
-        "procurement_stage": "price_check_priority_before_other_brake_parts",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "SNA Industries / local brake pipe specialist / Longman / Brandreth Road / Montgomery Road",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|gari_lahore_mild_steel_hydraulic_brake_pipe_reference|fedhill_25ft_cunifer_reference|fcp_euro_25ft_cunifer_reference|user_update_2026-05-24_price_brake_lines_before_other_parts",
-        "notes": "Quote this before buying more rear brake parts. First quote target is SNA Industries, because it is Pakistan-based and lists steel brake pipes and brake hoses. Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; quote both 25 ft minimum and a single 10000-12000 mm local coil for scrap flares, route corrections, and service loops. Use brake-rated Bundy steel or CuNi/Cunifer only; no bare copper, plumbing tube, compression fittings, or imported pre-bent FJ40 kit unless explicitly approved.",
-        "links": [
-          {
-            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-            "label": "Longman pipe and hose order CSV",
-            "download": true
-          },
-          {
-            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-            "label": "Longman pipe and hose order spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-            "label": "Pipe order release specs CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Pipe photo and measurement index CSV",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-          "caption": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred \u00b7 hard-line bending and flaring reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "hard_line_bending_flaring_reference",
-          "matched_tokens": [
-            "hard",
-            "line",
-            "fabrication"
-          ],
-          "match_basis": "local_reference_image",
-          "match_score": 700
         }
       },
       {
@@ -68741,6 +68896,43 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "part_star_washers",
+        "workstream": "electrical_reset",
+        "item": "Star washers (bite into metal)",
+        "status": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Amir / Montgomery Road local fastener supplier",
+        "supply_type": "part",
+        "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered|duplicate_hold_part_fastener_kit_d_millat_20260527|user_update_2026-05-27_amir_star_washer_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing. | Pending-item audit 2026-05-27: remove standalone star washers from buy-now list as a duplicate/top-up hold against pending Millat Fastener Kit D. Reopen only if physical receipt of Kit D proves the M6/M8/M10 star or serrated washer count/style is short. | User update 2026-05-27: Amir sent to buy M6 star/lock washers x120, M8 star/lock washers x60, and M10 star/lock washers x30. User typed M2- in the chat, but the active Montgomery Road sheet/spec uses M10 x30; reject M2 unless reconfirmed. This standalone row is now the active local top-up run; do not buy more star/serrated washers until Amir purchase and pending Millat Fastener Kit D stock are counted together.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
+          "caption": "Star washers (bite into metal) \u00b7 fastener kit reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "graded_fasteners",
+          "matched_tokens": [
+            "fastener"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
         "entry_id": "part_firewall_grommet_set_large_power",
         "workstream": "electrical_reset",
         "item": "Additional firewall grommet set IDs 16/20/25 mm",
@@ -68883,43 +69075,6 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "relay",
           "matched_tokens": [
             "relay"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_star_washers",
-        "workstream": "electrical_reset",
-        "item": "Star washers (bite into metal)",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "local fastener / electrical hardware supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered",
-        "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
-          "caption": "Star washers (bite into metal) \u00b7 grounding washer hardware reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "graded_fasteners",
-          "matched_tokens": [
-            "washers"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -85719,10 +85874,10 @@ window.J40_DASHBOARD_DATA = {
     "summary_by_type": [
       {
         "supply_type": "tool",
-        "previously": 59,
-        "in_process": 14,
+        "previously": 61,
+        "in_process": 13,
         "still_required": 8,
-        "total": 81
+        "total": 82
       },
       {
         "supply_type": "substance",
@@ -85734,8 +85889,8 @@ window.J40_DASHBOARD_DATA = {
       {
         "supply_type": "part",
         "previously": 96,
-        "in_process": 11,
-        "still_required": 76,
+        "in_process": 13,
+        "still_required": 74,
         "total": 183
       }
     ],
@@ -91558,6 +91713,45 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "tool_daraz_respirator_mask_20260518",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Epoxy Resin Mask Respirator Industrial Safety Mask for Epoxy Resin Art Workers Safety Chemical Anti-Dust Anti-Allergy double Filter",
+          "vendor": "Daraz / H&Z baby products",
+          "amount": "946",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "previously",
+          "status_detail": "received",
+          "procurement_stage": "received",
+          "payment_status": "paid",
+          "delivery_status": "received",
+          "evidence_ref": "gmail_msg_19e392e32e93eddd|gmail_order_243331393680938|gmail_delivery_243331393680938|gmail_msg_19e3fbe04164503a",
+          "notes": "Daraz order confirmed 2026-05-18 11:42; paid by JazzCash. Item PKR 801 plus shipping PKR 145, total PKR 946. Expected delivery window 2026-05-21 to 2026-05-23. Keep pending until the mask is received and checked against paint/epoxy PPE needs. | Gmail delivery email 2026-05-19 (message 19e3fbe04164503a) says Daraz order 243331393680938 was successfully delivered; close delivery tracking, with only normal PPE fit/use check remaining.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_tool.jpg",
+            "caption": "Epoxy Resin Mask Respirator Industrial Safety Mask for Epoxy Resin Art Workers Safety Chemical Anti-Dust Anti-Allergy double Filter \u00b7 tool reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "generic_tool",
+            "matched_tokens": [
+              "tool"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "tool_grease_gun",
           "supply_type": "tool",
           "inventory_group": "tools",
@@ -91836,6 +92030,45 @@ window.J40_DASHBOARD_DATA = {
             "listing_url": "https://www.toolsmart.pk/products/ingco-dead-blow-mallet-2lb-hdbm08028",
             "image_url": "http://www.toolsmart.pk/cdn/shop/files/HDBM08028.webp?v=1758958119",
             "match_score": 242
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "tool_daraz_safety_goggles_20260518",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "Safety Goggle Safety Protective Glasses Goggles Anti Splash Dust Proof Work Lab Eyewear Eye Protection Industrial Research Safety Glasses Clear Lens Multi-function Anti-Fog Antisand Windproof Dust Resistant",
+          "vendor": "Daraz / Reliable_Shop",
+          "amount": "869",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "previously",
+          "status_detail": "received",
+          "procurement_stage": "received",
+          "payment_status": "paid",
+          "delivery_status": "received",
+          "evidence_ref": "gmail_msg_19e392e35701144b|gmail_order_243331393480938|gmail_delivery_243331393480938|gmail_msg_19e4a66145e96435",
+          "notes": "Daraz order confirmed 2026-05-18 11:42; paid by JazzCash. Item PKR 699 plus shipping PKR 170, total PKR 869. Expected delivery window 2026-05-21 to 2026-05-23. Keep pending until goggles are received and checked for usable seal/fit before grinding/paint-prep work. | Gmail delivery email 2026-05-21 (message 19e4a66145e96435) says Daraz order 243331393480938 was successfully delivered; close delivery tracking, with only normal goggles fit/seal check remaining.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/roof_door_window.jpg",
+            "caption": "Safety Goggle Safety Protective Glasses Goggles Anti Splash Dust Proof Work Lab Eyewear Eye Protection Industrial Research Safety Glasses Clear Lens Multi-function Anti-Fog Antisand Windproof Dust Resistant \u00b7 body/glass hardware reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "roof_door_window",
+            "matched_tokens": [
+              "body"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
           }
         },
         {
@@ -92615,6 +92848,68 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred",
+          "vendor": "Amir / Montgomery Road brake pipe supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "unknown",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|gari_lahore_mild_steel_hydraulic_brake_pipe_reference|fedhill_25ft_cunifer_reference|fcp_euro_25ft_cunifer_reference|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_amir_brake_tube_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "Quote this before buying more rear brake parts. First quote target is SNA Industries, because it is Pakistan-based and lists steel brake pipes and brake hoses. Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; quote both 25 ft minimum and a single 10000-12000 mm local coil for scrap flares, route corrections, and service loops. Use brake-rated Bundy steel or CuNi/Cunifer only; no bare copper, plumbing tube, compression fittings, or imported pre-bent FJ40 kit unless explicitly approved. | User update 2026-05-27: Amir sent to buy 25 ft of 3/16 in brake tube with zinc-coated/galvanised steel finish. Treat as pending local purchase only until receipt/photo confirms automotive brake-rated 4.75 mm / 3/16 in double-wall Bundy or equivalent coated steel tube, 25 ft minimum length, and no bare copper/plumbing/compression tube.",
+          "links": [
+            {
+              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+              "label": "Longman pipe and hose order CSV",
+              "download": true
+            },
+            {
+              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+              "label": "Longman pipe and hose order spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+              "label": "Pipe order release specs CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+              "label": "Pipe photo and measurement index CSV",
+              "download": true
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
+            "caption": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred \u00b7 hard-line bending and flaring reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "hard_line_bending_flaring_reference",
+            "matched_tokens": [
+              "hard",
+              "line",
+              "fabrication"
+            ],
+            "match_basis": "local_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "part_rear_brake_shoes_hardware",
           "supply_type": "part",
           "inventory_group": "mechanical",
@@ -92756,6 +93051,45 @@ window.J40_DASHBOARD_DATA = {
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
             "caption": "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points \u00b7 fastener kit reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "graded_fasteners",
+            "matched_tokens": [
+              "fastener"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_star_washers",
+          "supply_type": "part",
+          "inventory_group": "electrical",
+          "item": "Star washers (bite into metal)",
+          "vendor": "Amir / Montgomery Road local fastener supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "electrical_reset",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "unknown",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered|duplicate_hold_part_fastener_kit_d_millat_20260527|user_update_2026-05-27_amir_star_washer_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing. | Pending-item audit 2026-05-27: remove standalone star washers from buy-now list as a duplicate/top-up hold against pending Millat Fastener Kit D. Reopen only if physical receipt of Kit D proves the M6/M8/M10 star or serrated washer count/style is short. | User update 2026-05-27: Amir sent to buy M6 star/lock washers x120, M8 star/lock washers x60, and M10 star/lock washers x30. User typed M2- in the chat, but the active Montgomery Road sheet/spec uses M10 x30; reject M2 unless reconfirmed. This standalone row is now the active local top-up run; do not buy more star/serrated washers until Amir purchase and pending Millat Fastener Kit D stock are counted together.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
+            "caption": "Star washers (bite into metal) \u00b7 fastener kit reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -93011,12 +93345,12 @@ window.J40_DASHBOARD_DATA = {
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "in_process",
-          "status_detail": "ordered",
-          "procurement_stage": "ordered_pending_delivery",
+          "status_detail": "received_candidate",
+          "procurement_stage": "received_candidate",
           "payment_status": "unknown",
-          "delivery_status": "pending_delivery",
-          "evidence_ref": "gmail_msg_19df40dbc5116bb3|gmail_order_TM25550",
-          "notes": "ToolsMart order TM25550 confirmed on 2026-05-04: Harden Mini Tube Cutter 3-22mm x1 at PKR 1380, part of the brake/fuel hard-line fabrication tool set. Receipt check must confirm smooth cutting wheel action and practical fit on 4.75 mm, 6 mm, and 8 mm tube stock before line fabrication. | Gmail recheck on 2026-05-08 found only the ToolsMart TM25550 confirmation and no shipment or delivery email; keep pending. Payment is still not proven by Gmail alone. | Gmail recheck 2026-05-12 found only ToolsMart order TM25550 confirmation and no shipment or delivery email; keep pending delivery.",
+          "delivery_status": "needs_confirmation",
+          "evidence_ref": "gmail_msg_19df40dbc5116bb3|gmail_order_TM25550|gmail_fulfillment_review_TM25550|gmail_msg_19e4ba9b39b2d734",
+          "notes": "ToolsMart order TM25550 confirmed on 2026-05-04: Harden Mini Tube Cutter 3-22mm x1 at PKR 1380, part of the brake/fuel hard-line fabrication tool set. Receipt check must confirm smooth cutting wheel action and practical fit on 4.75 mm, 6 mm, and 8 mm tube stock before line fabrication. | Gmail recheck on 2026-05-08 found only the ToolsMart TM25550 confirmation and no shipment or delivery email; keep pending. Payment is still not proven by Gmail alone. | Gmail recheck 2026-05-12 found only ToolsMart order TM25550 confirmation and no shipment or delivery email; keep pending delivery. | Gmail review request 2026-05-21 (message 19e4ba9b39b2d734) says ToolsMart fulfilled order TM25550 16 days earlier. Treat as received-candidate and physically verify the cutter is on shelf and fits 4.75/6/8 mm tube before use.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -93131,12 +93465,12 @@ window.J40_DASHBOARD_DATA = {
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "in_process",
-          "status_detail": "ordered",
-          "procurement_stage": "ordered_pending_delivery",
+          "status_detail": "received_candidate",
+          "procurement_stage": "received_candidate",
           "payment_status": "unknown",
-          "delivery_status": "pending_delivery",
-          "evidence_ref": "gmail_msg_19df40dbc5116bb3|gmail_order_TM25550",
-          "notes": "ToolsMart order TM25550 confirmed on 2026-05-04: PARD Double Flaring and Cutting Tool Set - 4-16mm x1 at PKR 18210. Receipt check must verify die sizes cover a true 4.75 mm / 3/16 in brake line and can make the required 45-degree double/inverted flare before any brake/clutch/fuel hard line is made. If the delivered kit only includes generic metric dies such as 4/6/8/10/12/14/16 mm and no 4.75 mm or 3/16 in die, it does not release J40 brake-line fabrication. | Gmail recheck on 2026-05-08 found only the ToolsMart TM25550 confirmation and no shipment or delivery email; keep pending. Payment is still not proven by Gmail alone. | Gmail recheck on 2026-05-12 found only ToolsMart order TM25550 confirmation and no shipment or delivery email; keep pending delivery.",
+          "delivery_status": "needs_confirmation",
+          "evidence_ref": "gmail_msg_19df40dbc5116bb3|gmail_order_TM25550|gmail_fulfillment_review_TM25550|gmail_msg_19e4ba9b39b2d734|gmail_fulfillment_review_TM25550_pard|gmail_msg_19e2cb8173b05a0e",
+          "notes": "ToolsMart order TM25550 confirmed on 2026-05-04: PARD Double Flaring and Cutting Tool Set - 4-16mm x1 at PKR 18210. Receipt check must verify die sizes cover a true 4.75 mm / 3/16 in brake line and can make the required 45-degree double/inverted flare before any brake/clutch/fuel hard line is made. If the delivered kit only includes generic metric dies such as 4/6/8/10/12/14/16 mm and no 4.75 mm or 3/16 in die, it does not release J40 brake-line fabrication. | Gmail recheck on 2026-05-08 found only the ToolsMart TM25550 confirmation and no shipment or delivery email; keep pending. Payment is still not proven by Gmail alone. | Gmail recheck on 2026-05-12 found only ToolsMart order TM25550 confirmation and no shipment or delivery email; keep pending delivery. | Same TM25550 post-fulfillment Gmail evidence now makes this a received-candidate, not a delivery-tracking item. Physically verify the PARD kit is present and that its dies can make the required 4.75 mm / 3/16 in double/inverted flare before releasing brake-line fabrication. | Gmail review request 2026-05-15 (message 19e2cb8173b05a0e) is item-specific to the PARD Double Flaring and Cutting Tool Set and says ToolsMart fulfilled order TM25550 10 days earlier.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -93239,6 +93573,45 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "tool_sledge_hammer_3lb_20260527",
+          "supply_type": "tool",
+          "inventory_group": "tools",
+          "item": "3 lb sledge / club hammer",
+          "vendor": "Amir / Montgomery Road local tool supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "site_setup",
+          "status_group": "in_process",
+          "status_detail": "ordered",
+          "procurement_stage": "ordered_pending_delivery",
+          "payment_status": "unknown",
+          "delivery_status": "pending_delivery",
+          "evidence_ref": "user_update_2026-05-27_amir_sledge_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "User update 2026-05-27: Amir sent to buy one 3 lb sledge / club hammer. Keep pending until Amir confirms purchase/receipt. Receipt check: tight head, solid handle, no cracks, and not a light/toy hammer.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_tool.jpg",
+            "caption": "3 lb sledge / club hammer \u00b7 tool reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "generic_tool",
+            "matched_tokens": [
+              "tool"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "tool_daraz_75mm_knotted_cup_wire_brush_x2",
           "supply_type": "tool",
           "inventory_group": "tools",
@@ -93293,11 +93666,11 @@ window.J40_DASHBOARD_DATA = {
           "workstream": "site_setup",
           "status_group": "in_process",
           "status_detail": "ordered",
-          "procurement_stage": "ordered_pending_delivery",
+          "procurement_stage": "ordered_partial_pending_delivery",
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
-          "evidence_ref": "user_update_2026-05-17_ingco_air_setup_purchase_intent|user_update_2026-05-18_almiratrading_ingco_order|web_almiraj_acs112501|web_almiraj_ah1151|web_almiraj_abg0813|web_almiraj_atg0601|web_toolsmart_tat40122",
-          "notes": "User update 2026-05-18: purchased from almiratrading / Almiraj Trading and not yet received. Order lines: INGCO Air compressor ACS112501 x1 PKR 57000; INGCO Air hose AH1151 x1 PKR 2850; INGCO Air blow gun ABG081-3 x1 PKR 930; INGCO Air tire inflating gun ATG0601 x1 PKR 2880; INGCO Air washing gun AWG1001 x1 PKR 2230; INGCO Leather Gloves 10 in HGVC02 x1 PKR 1660; INGCO High pressure washer HPWR12008 x1 PKR 15999. Total PKR 83549. Keep delivery pending until all seven items are physically received and item-count checked. Risk flagged 2026-05-17: AH1151 should physically fit the Total TAT40122 air impact because both support Nitto/Japanese connectors, but the listed 5/8 mm hose is likely small-bore and may choke airflow. Expect the setup to run blow gun, tire inflator, stapler, washing gun, and light air tools well, and the 1/2 in impact only to some degree; it may feel weak on stubborn fasteners until a larger-bore 8-10 mm ID / 3/8 in Nitto hose is purchased. Use the powered pressure washer cautiously around seals, breathers, bearings, electrical connectors, and open ports.",
+          "evidence_ref": "user_update_2026-05-17_ingco_air_setup_purchase_intent|user_update_2026-05-18_almiratrading_ingco_order|web_almiraj_acs112501|web_almiraj_ah1151|web_almiraj_abg0813|web_almiraj_atg0601|web_toolsmart_tat40122|user_update_2026-05-27_air_compressor_received",
+          "notes": "User update 2026-05-18: purchased from almiratrading / Almiraj Trading and not yet received. Order lines: INGCO Air compressor ACS112501 x1 PKR 57000; INGCO Air hose AH1151 x1 PKR 2850; INGCO Air blow gun ABG081-3 x1 PKR 930; INGCO Air tire inflating gun ATG0601 x1 PKR 2880; INGCO Air washing gun AWG1001 x1 PKR 2230; INGCO Leather Gloves 10 in HGVC02 x1 PKR 1660; INGCO High pressure washer HPWR12008 x1 PKR 15999. Total PKR 83549. Keep delivery pending until all seven items are physically received and item-count checked. Risk flagged 2026-05-17: AH1151 should physically fit the Total TAT40122 air impact because both support Nitto/Japanese connectors, but the listed 5/8 mm hose is likely small-bore and may choke airflow. Expect the setup to run blow gun, tire inflator, stapler, washing gun, and light air tools well, and the 1/2 in impact only to some degree; it may feel weak on stubborn fasteners until a larger-bore 8-10 mm ID / 3/8 in Nitto hose is purchased. Use the powered pressure washer cautiously around seals, breathers, bearings, electrical connectors, and open ports. | User update 2026-05-27: air compressor is now on hand. Keep this aggregate order partially open until the remaining Almiraj bundle lines are counted/confirmed: AH1151 hose, ABG081-3 blow gun, ATG0601 tire inflator, AWG1001 washing gun, HGVC02 gloves, and HPWR12008 pressure washer. Original AH1151 hose may be small-bore/type-limited; separate ToolsMart TM25776 Licota Nitto-type hose remains the impact-hose follow-up.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -93401,45 +93774,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "tool_daraz_respirator_mask_20260518",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "Epoxy Resin Mask Respirator Industrial Safety Mask for Epoxy Resin Art Workers Safety Chemical Anti-Dust Anti-Allergy double Filter",
-          "vendor": "Daraz / H&Z baby products",
-          "amount": "946",
-          "currency": "PKR",
-          "workstream": "site_setup",
-          "status_group": "in_process",
-          "status_detail": "ordered",
-          "procurement_stage": "ordered_pending_delivery",
-          "payment_status": "paid",
-          "delivery_status": "pending_delivery",
-          "evidence_ref": "gmail_msg_19e392e32e93eddd|gmail_order_243331393680938",
-          "notes": "Daraz order confirmed 2026-05-18 11:42; paid by JazzCash. Item PKR 801 plus shipping PKR 145, total PKR 946. Expected delivery window 2026-05-21 to 2026-05-23. Keep pending until the mask is received and checked against paint/epoxy PPE needs.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_tool.jpg",
-            "caption": "Epoxy Resin Mask Respirator Industrial Safety Mask for Epoxy Resin Art Workers Safety Chemical Anti-Dust Anti-Allergy double Filter \u00b7 tool reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "generic_tool",
-            "matched_tokens": [
-              "tool"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "tool_large_bore_nitto_air_hose_impact_followup_20260517",
           "supply_type": "tool",
           "inventory_group": "tools",
@@ -93454,64 +93788,25 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "paid",
           "delivery_status": "pending_delivery",
           "evidence_ref": "user_update_2026-05-17_ingco_air_setup_purchase_intent|web_almiraj_ah1151|web_toolsmart_tat40122|web_toolsmart_licota_pu_hose_9m_nitto|gmail_msg_19e5622147cdd91a|gmail_order_TM25776|bank_alert_19e5622515169f29",
-          "notes": "ToolsMart order TM25776 confirmed on 2026-05-23 includes LICOTA MADE IN TAIWAN PU HOSE ROLL 9M W/ NITTO TYPE QUICK COUPLER x1 at PKR 4720. This should clear the impact-wrench airflow follow-up if the delivered hose is truly larger-bore and has compatible Nitto/Japanese quick couplers. Receipt check: confirm hose ID/OD if marked, coupler fit, no cuts or leaks, and actual impact performance on stubborn fasteners.",
+          "notes": "ToolsMart order TM25776 confirmed on 2026-05-23 includes LICOTA MADE IN TAIWAN PU HOSE ROLL 9M W/ NITTO TYPE QUICK COUPLER x1 at PKR 4720. This should clear the impact-wrench airflow follow-up if the delivered hose is truly larger-bore and has compatible Nitto/Japanese quick couplers. Receipt check: confirm hose ID/OD if marked, coupler fit, no cuts or leaks, and actual impact performance on stubborn fasteners. | Air compressor is now on hand per user update 2026-05-27, but this replacement hose stays pending until ToolsMart order TM25776 is received and the Nitto-type couplers, hose bore, leaks, and actual impact-wrench performance are checked against the compressor and tools.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
           "estimated_purchase_basis": "",
           "estimate_confidence": "",
           "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-            "caption": "Large-bore Nitto air hose for 1/2 inch impact wrench \u00b7 air hose reference image",
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/air_compressor.jpg",
+            "caption": "Large-bore Nitto air hose for 1/2 inch impact wrench \u00b7 air compressor reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "semantic_reference_image",
             "stage": "procurement_reconciliation",
-            "media_id": "air_hose",
+            "media_id": "air_compressor",
             "matched_tokens": [
               "air",
-              "hose"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "tool_daraz_safety_goggles_20260518",
-          "supply_type": "tool",
-          "inventory_group": "tools",
-          "item": "Safety Goggle Safety Protective Glasses Goggles Anti Splash Dust Proof Work Lab Eyewear Eye Protection Industrial Research Safety Glasses Clear Lens Multi-function Anti-Fog Antisand Windproof Dust Resistant",
-          "vendor": "Daraz / Reliable_Shop",
-          "amount": "869",
-          "currency": "PKR",
-          "workstream": "site_setup",
-          "status_group": "in_process",
-          "status_detail": "ordered",
-          "procurement_stage": "ordered_pending_delivery",
-          "payment_status": "paid",
-          "delivery_status": "pending_delivery",
-          "evidence_ref": "gmail_msg_19e392e35701144b|gmail_order_243331393480938",
-          "notes": "Daraz order confirmed 2026-05-18 11:42; paid by JazzCash. Item PKR 699 plus shipping PKR 170, total PKR 869. Expected delivery window 2026-05-21 to 2026-05-23. Keep pending until goggles are received and checked for usable seal/fit before grinding/paint-prep work.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/roof_door_window.jpg",
-            "caption": "Safety Goggle Safety Protective Glasses Goggles Anti Splash Dust Proof Work Lab Eyewear Eye Protection Industrial Research Safety Glasses Clear Lens Multi-function Anti-Fog Antisand Windproof Dust Resistant \u00b7 body/glass hardware reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "roof_door_window",
-            "matched_tokens": [
-              "body"
+              "compressor"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -94715,68 +95010,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred",
-          "vendor": "SNA Industries / local brake pipe specialist / Longman / Brandreth Road / Montgomery Road",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "brake_system",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "price_check_priority_before_other_brake_parts",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|gari_lahore_mild_steel_hydraulic_brake_pipe_reference|fedhill_25ft_cunifer_reference|fcp_euro_25ft_cunifer_reference|user_update_2026-05-24_price_brake_lines_before_other_parts",
-          "notes": "Quote this before buying more rear brake parts. First quote target is SNA Industries, because it is Pakistan-based and lists steel brake pipes and brake hoses. Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; quote both 25 ft minimum and a single 10000-12000 mm local coil for scrap flares, route corrections, and service loops. Use brake-rated Bundy steel or CuNi/Cunifer only; no bare copper, plumbing tube, compression fittings, or imported pre-bent FJ40 kit unless explicitly approved.",
-          "links": [
-            {
-              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-              "label": "Longman pipe and hose order CSV",
-              "download": true
-            },
-            {
-              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-              "label": "Longman pipe and hose order spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-              "label": "Pipe order release specs CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-              "label": "Pipe photo and measurement index CSV",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-            "caption": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred \u00b7 hard-line bending and flaring reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "hard_line_bending_flaring_reference",
-            "matched_tokens": [
-              "hard",
-              "line",
-              "fabrication"
-            ],
-            "match_basis": "local_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
           "supply_type": "part",
           "inventory_group": "electrical",
@@ -95819,45 +96052,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "relay",
             "matched_tokens": [
               "relay"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_star_washers",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Star washers (bite into metal)",
-          "vendor": "local fastener / electrical hardware supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "electrical_reset",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered",
-          "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
-            "caption": "Star washers (bite into metal) \u00b7 grounding washer hardware reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "graded_fasteners",
-            "matched_tokens": [
-              "washers"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -97650,7 +97844,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-003|web_4lifetimelines_master_flaring_set",
-          "notes": "Buy a compact internal/external tube deburrer or reamer unless the delivered flaring kit includes a good one. Every 4.75 mm / 3/16 in brake-line cut must be deburred inside and outside before double/inverted flaring. Reject a workflow that leaves burrs inside the hydraulic tube.",
+          "notes": "Buy a compact internal/external tube deburrer or reamer unless the delivered flaring kit includes a good one. Every 4.75 mm / 3/16 in brake-line cut must be deburred inside and outside before double/inverted flaring. Reject a workflow that leaves burrs inside the hydraulic tube. | Purchase remains open after TM25550 review: order evidence confirms the Harden cutter and PARD flaring/cutting set only. No captured order line or ToolsMart product text proves a separate internal/external deburrer/reamer was included.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -97776,7 +97970,7 @@ window.J40_DASHBOARD_DATA = {
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "evidence_ref": "user_update_2026-05-04_line_shaping_tool_needed|user_update_2026-05-04_daraz_pipe_bender_order|https://4lifetimelines.com/products/master-flaring-tool-set-sae-double-iso-bubble-flares|docs/brake-suspension-order-links-20260503.md|gmail_msg_19df40dbc5116bb3|gmail_order_TM25550",
-          "notes": "Conditional aggregate remains open only for final tool-fit validation. Separate evidence now covers Daraz pipe bender order 242508744880938 received, plus ToolsMart order TM25550 for Harden Mini Tube Cutter 3-22mm and PARD Double Flaring and Cutting Tool Set - 4-16mm pending delivery. Do not buy a duplicate all-in-one kit unless receipt checks show the cutter/flaring dies do not cover the old brake/fuel fittings or required flare type; still confirm a deburrer/reamer is available if the kit does not include one.",
+          "notes": "Conditional aggregate remains open only for final tool-fit validation. Separate evidence now covers Daraz pipe bender order 242508744880938 received, plus ToolsMart order TM25550 for Harden Mini Tube Cutter 3-22mm and PARD Double Flaring and Cutting Tool Set - 4-16mm pending delivery. Do not buy a duplicate all-in-one kit unless receipt checks show the cutter/flaring dies do not cover the old brake/fuel fittings or required flare type; still confirm a deburrer/reamer is available if the kit does not include one. | Pending-item audit 2026-05-27: TM25550 cutter and PARD flaring kit are now received-candidates from ToolsMart post-fulfillment Gmail review requests, so keep this aggregate only as a no-duplicate/fit-validation hold. Rebuy only a missing deburrer, 4.75 mm bender, or replacement flare tool after physical inspection proves the delivered tools do not cover the required work.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -97938,6 +98132,45 @@ window.J40_DASHBOARD_DATA = {
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
           "caption": "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points \u00b7 fastener kit reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "graded_fasteners",
+          "matched_tokens": [
+            "fastener"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_star_washers",
+        "supply_type": "part",
+        "inventory_group": "electrical",
+        "item": "Star washers (bite into metal)",
+        "vendor": "Amir / Montgomery Road local fastener supplier",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "electrical_reset",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered|duplicate_hold_part_fastener_kit_d_millat_20260527|user_update_2026-05-27_amir_star_washer_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing. | Pending-item audit 2026-05-27: remove standalone star washers from buy-now list as a duplicate/top-up hold against pending Millat Fastener Kit D. Reopen only if physical receipt of Kit D proves the M6/M8/M10 star or serrated washer count/style is short. | User update 2026-05-27: Amir sent to buy M6 star/lock washers x120, M8 star/lock washers x60, and M10 star/lock washers x30. User typed M2- in the chat, but the active Montgomery Road sheet/spec uses M10 x30; reject M2 unless reconfirmed. This standalone row is now the active local top-up run; do not buy more star/serrated washers until Amir purchase and pending Millat Fastener Kit D stock are counted together.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
+          "caption": "Star washers (bite into metal) \u00b7 fastener kit reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -98130,6 +98363,68 @@ window.J40_DASHBOARD_DATA = {
             "fastener"
           ],
           "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred",
+        "vendor": "Amir / Montgomery Road brake pipe supplier",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|gari_lahore_mild_steel_hydraulic_brake_pipe_reference|fedhill_25ft_cunifer_reference|fcp_euro_25ft_cunifer_reference|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_amir_brake_tube_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "Quote this before buying more rear brake parts. First quote target is SNA Industries, because it is Pakistan-based and lists steel brake pipes and brake hoses. Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; quote both 25 ft minimum and a single 10000-12000 mm local coil for scrap flares, route corrections, and service loops. Use brake-rated Bundy steel or CuNi/Cunifer only; no bare copper, plumbing tube, compression fittings, or imported pre-bent FJ40 kit unless explicitly approved. | User update 2026-05-27: Amir sent to buy 25 ft of 3/16 in brake tube with zinc-coated/galvanised steel finish. Treat as pending local purchase only until receipt/photo confirms automotive brake-rated 4.75 mm / 3/16 in double-wall Bundy or equivalent coated steel tube, 25 ft minimum length, and no bare copper/plumbing/compression tube.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
+          "caption": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred \u00b7 hard-line bending and flaring reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "hard_line_bending_flaring_reference",
+          "matched_tokens": [
+            "hard",
+            "line",
+            "fabrication"
+          ],
+          "match_basis": "local_reference_image",
           "match_score": 700
         }
       },
@@ -98328,6 +98623,45 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "tool_sledge_hammer_3lb_20260527",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "3 lb sledge / club hammer",
+        "vendor": "Amir / Montgomery Road local tool supplier",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "in_process",
+        "status_detail": "ordered",
+        "procurement_stage": "ordered_pending_delivery",
+        "payment_status": "unknown",
+        "delivery_status": "pending_delivery",
+        "evidence_ref": "user_update_2026-05-27_amir_sledge_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "User update 2026-05-27: Amir sent to buy one 3 lb sledge / club hammer. Keep pending until Amir confirms purchase/receipt. Receipt check: tight head, solid handle, no cracks, and not a light/toy hammer.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_tool.jpg",
+          "caption": "3 lb sledge / club hammer \u00b7 tool reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "generic_tool",
+          "matched_tokens": [
+            "tool"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "tool_daraz_75mm_knotted_cup_wire_brush_x2",
         "supply_type": "tool",
         "inventory_group": "tools",
@@ -98382,11 +98716,11 @@ window.J40_DASHBOARD_DATA = {
         "workstream": "site_setup",
         "status_group": "in_process",
         "status_detail": "ordered",
-        "procurement_stage": "ordered_pending_delivery",
+        "procurement_stage": "ordered_partial_pending_delivery",
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
-        "evidence_ref": "user_update_2026-05-17_ingco_air_setup_purchase_intent|user_update_2026-05-18_almiratrading_ingco_order|web_almiraj_acs112501|web_almiraj_ah1151|web_almiraj_abg0813|web_almiraj_atg0601|web_toolsmart_tat40122",
-        "notes": "User update 2026-05-18: purchased from almiratrading / Almiraj Trading and not yet received. Order lines: INGCO Air compressor ACS112501 x1 PKR 57000; INGCO Air hose AH1151 x1 PKR 2850; INGCO Air blow gun ABG081-3 x1 PKR 930; INGCO Air tire inflating gun ATG0601 x1 PKR 2880; INGCO Air washing gun AWG1001 x1 PKR 2230; INGCO Leather Gloves 10 in HGVC02 x1 PKR 1660; INGCO High pressure washer HPWR12008 x1 PKR 15999. Total PKR 83549. Keep delivery pending until all seven items are physically received and item-count checked. Risk flagged 2026-05-17: AH1151 should physically fit the Total TAT40122 air impact because both support Nitto/Japanese connectors, but the listed 5/8 mm hose is likely small-bore and may choke airflow. Expect the setup to run blow gun, tire inflator, stapler, washing gun, and light air tools well, and the 1/2 in impact only to some degree; it may feel weak on stubborn fasteners until a larger-bore 8-10 mm ID / 3/8 in Nitto hose is purchased. Use the powered pressure washer cautiously around seals, breathers, bearings, electrical connectors, and open ports.",
+        "evidence_ref": "user_update_2026-05-17_ingco_air_setup_purchase_intent|user_update_2026-05-18_almiratrading_ingco_order|web_almiraj_acs112501|web_almiraj_ah1151|web_almiraj_abg0813|web_almiraj_atg0601|web_toolsmart_tat40122|user_update_2026-05-27_air_compressor_received",
+        "notes": "User update 2026-05-18: purchased from almiratrading / Almiraj Trading and not yet received. Order lines: INGCO Air compressor ACS112501 x1 PKR 57000; INGCO Air hose AH1151 x1 PKR 2850; INGCO Air blow gun ABG081-3 x1 PKR 930; INGCO Air tire inflating gun ATG0601 x1 PKR 2880; INGCO Air washing gun AWG1001 x1 PKR 2230; INGCO Leather Gloves 10 in HGVC02 x1 PKR 1660; INGCO High pressure washer HPWR12008 x1 PKR 15999. Total PKR 83549. Keep delivery pending until all seven items are physically received and item-count checked. Risk flagged 2026-05-17: AH1151 should physically fit the Total TAT40122 air impact because both support Nitto/Japanese connectors, but the listed 5/8 mm hose is likely small-bore and may choke airflow. Expect the setup to run blow gun, tire inflator, stapler, washing gun, and light air tools well, and the 1/2 in impact only to some degree; it may feel weak on stubborn fasteners until a larger-bore 8-10 mm ID / 3/8 in Nitto hose is purchased. Use the powered pressure washer cautiously around seals, breathers, bearings, electrical connectors, and open ports. | User update 2026-05-27: air compressor is now on hand. Keep this aggregate order partially open until the remaining Almiraj bundle lines are counted/confirmed: AH1151 hose, ABG081-3 blow gun, ATG0601 tire inflator, AWG1001 washing gun, HGVC02 gloves, and HPWR12008 pressure washer. Original AH1151 hose may be small-bore/type-limited; separate ToolsMart TM25776 Licota Nitto-type hose remains the impact-hose follow-up.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -98525,45 +98859,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "tool_daraz_respirator_mask_20260518",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "Epoxy Resin Mask Respirator Industrial Safety Mask for Epoxy Resin Art Workers Safety Chemical Anti-Dust Anti-Allergy double Filter",
-        "vendor": "Daraz / H&Z baby products",
-        "amount": "946",
-        "currency": "PKR",
-        "workstream": "site_setup",
-        "status_group": "in_process",
-        "status_detail": "ordered",
-        "procurement_stage": "ordered_pending_delivery",
-        "payment_status": "paid",
-        "delivery_status": "pending_delivery",
-        "evidence_ref": "gmail_msg_19e392e32e93eddd|gmail_order_243331393680938",
-        "notes": "Daraz order confirmed 2026-05-18 11:42; paid by JazzCash. Item PKR 801 plus shipping PKR 145, total PKR 946. Expected delivery window 2026-05-21 to 2026-05-23. Keep pending until the mask is received and checked against paint/epoxy PPE needs.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_tool.jpg",
-          "caption": "Epoxy Resin Mask Respirator Industrial Safety Mask for Epoxy Resin Art Workers Safety Chemical Anti-Dust Anti-Allergy double Filter \u00b7 tool reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "generic_tool",
-          "matched_tokens": [
-            "tool"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
         "source_ref": "tool_harden_cup_wire_brush_100mm_m14",
         "supply_type": "tool",
         "inventory_group": "tools",
@@ -98630,12 +98925,12 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "in_process",
-        "status_detail": "ordered",
-        "procurement_stage": "ordered_pending_delivery",
+        "status_detail": "received_candidate",
+        "procurement_stage": "received_candidate",
         "payment_status": "unknown",
-        "delivery_status": "pending_delivery",
-        "evidence_ref": "gmail_msg_19df40dbc5116bb3|gmail_order_TM25550",
-        "notes": "ToolsMart order TM25550 confirmed on 2026-05-04: Harden Mini Tube Cutter 3-22mm x1 at PKR 1380, part of the brake/fuel hard-line fabrication tool set. Receipt check must confirm smooth cutting wheel action and practical fit on 4.75 mm, 6 mm, and 8 mm tube stock before line fabrication. | Gmail recheck on 2026-05-08 found only the ToolsMart TM25550 confirmation and no shipment or delivery email; keep pending. Payment is still not proven by Gmail alone. | Gmail recheck 2026-05-12 found only ToolsMart order TM25550 confirmation and no shipment or delivery email; keep pending delivery.",
+        "delivery_status": "needs_confirmation",
+        "evidence_ref": "gmail_msg_19df40dbc5116bb3|gmail_order_TM25550|gmail_fulfillment_review_TM25550|gmail_msg_19e4ba9b39b2d734",
+        "notes": "ToolsMart order TM25550 confirmed on 2026-05-04: Harden Mini Tube Cutter 3-22mm x1 at PKR 1380, part of the brake/fuel hard-line fabrication tool set. Receipt check must confirm smooth cutting wheel action and practical fit on 4.75 mm, 6 mm, and 8 mm tube stock before line fabrication. | Gmail recheck on 2026-05-08 found only the ToolsMart TM25550 confirmation and no shipment or delivery email; keep pending. Payment is still not proven by Gmail alone. | Gmail recheck 2026-05-12 found only ToolsMart order TM25550 confirmation and no shipment or delivery email; keep pending delivery. | Gmail review request 2026-05-21 (message 19e4ba9b39b2d734) says ToolsMart fulfilled order TM25550 16 days earlier. Treat as received-candidate and physically verify the cutter is on shelf and fits 4.75/6/8 mm tube before use.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -98755,25 +99050,25 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "paid",
         "delivery_status": "pending_delivery",
         "evidence_ref": "user_update_2026-05-17_ingco_air_setup_purchase_intent|web_almiraj_ah1151|web_toolsmart_tat40122|web_toolsmart_licota_pu_hose_9m_nitto|gmail_msg_19e5622147cdd91a|gmail_order_TM25776|bank_alert_19e5622515169f29",
-        "notes": "ToolsMart order TM25776 confirmed on 2026-05-23 includes LICOTA MADE IN TAIWAN PU HOSE ROLL 9M W/ NITTO TYPE QUICK COUPLER x1 at PKR 4720. This should clear the impact-wrench airflow follow-up if the delivered hose is truly larger-bore and has compatible Nitto/Japanese quick couplers. Receipt check: confirm hose ID/OD if marked, coupler fit, no cuts or leaks, and actual impact performance on stubborn fasteners.",
+        "notes": "ToolsMart order TM25776 confirmed on 2026-05-23 includes LICOTA MADE IN TAIWAN PU HOSE ROLL 9M W/ NITTO TYPE QUICK COUPLER x1 at PKR 4720. This should clear the impact-wrench airflow follow-up if the delivered hose is truly larger-bore and has compatible Nitto/Japanese quick couplers. Receipt check: confirm hose ID/OD if marked, coupler fit, no cuts or leaks, and actual impact performance on stubborn fasteners. | Air compressor is now on hand per user update 2026-05-27, but this replacement hose stays pending until ToolsMart order TM25776 is received and the Nitto-type couplers, hose bore, leaks, and actual impact-wrench performance are checked against the compressor and tools.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
         "estimated_purchase_basis": "",
         "estimate_confidence": "",
         "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_hose.jpg",
-          "caption": "Large-bore Nitto air hose for 1/2 inch impact wrench \u00b7 air hose reference image",
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/air_compressor.jpg",
+          "caption": "Large-bore Nitto air hose for 1/2 inch impact wrench \u00b7 air compressor reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
           "component_group": "procurement_inventory",
           "specific_component": "semantic_reference_image",
           "stage": "procurement_reconciliation",
-          "media_id": "air_hose",
+          "media_id": "air_compressor",
           "matched_tokens": [
             "air",
-            "hose"
+            "compressor"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -98847,12 +99142,12 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "in_process",
-        "status_detail": "ordered",
-        "procurement_stage": "ordered_pending_delivery",
+        "status_detail": "received_candidate",
+        "procurement_stage": "received_candidate",
         "payment_status": "unknown",
-        "delivery_status": "pending_delivery",
-        "evidence_ref": "gmail_msg_19df40dbc5116bb3|gmail_order_TM25550",
-        "notes": "ToolsMart order TM25550 confirmed on 2026-05-04: PARD Double Flaring and Cutting Tool Set - 4-16mm x1 at PKR 18210. Receipt check must verify die sizes cover a true 4.75 mm / 3/16 in brake line and can make the required 45-degree double/inverted flare before any brake/clutch/fuel hard line is made. If the delivered kit only includes generic metric dies such as 4/6/8/10/12/14/16 mm and no 4.75 mm or 3/16 in die, it does not release J40 brake-line fabrication. | Gmail recheck on 2026-05-08 found only the ToolsMart TM25550 confirmation and no shipment or delivery email; keep pending. Payment is still not proven by Gmail alone. | Gmail recheck on 2026-05-12 found only ToolsMart order TM25550 confirmation and no shipment or delivery email; keep pending delivery.",
+        "delivery_status": "needs_confirmation",
+        "evidence_ref": "gmail_msg_19df40dbc5116bb3|gmail_order_TM25550|gmail_fulfillment_review_TM25550|gmail_msg_19e4ba9b39b2d734|gmail_fulfillment_review_TM25550_pard|gmail_msg_19e2cb8173b05a0e",
+        "notes": "ToolsMart order TM25550 confirmed on 2026-05-04: PARD Double Flaring and Cutting Tool Set - 4-16mm x1 at PKR 18210. Receipt check must verify die sizes cover a true 4.75 mm / 3/16 in brake line and can make the required 45-degree double/inverted flare before any brake/clutch/fuel hard line is made. If the delivered kit only includes generic metric dies such as 4/6/8/10/12/14/16 mm and no 4.75 mm or 3/16 in die, it does not release J40 brake-line fabrication. | Gmail recheck on 2026-05-08 found only the ToolsMart TM25550 confirmation and no shipment or delivery email; keep pending. Payment is still not proven by Gmail alone. | Gmail recheck on 2026-05-12 found only ToolsMart order TM25550 confirmation and no shipment or delivery email; keep pending delivery. | Same TM25550 post-fulfillment Gmail evidence now makes this a received-candidate, not a delivery-tracking item. Physically verify the PARD kit is present and that its dies can make the required 4.75 mm / 3/16 in double/inverted flare before releasing brake-line fabrication. | Gmail review request 2026-05-15 (message 19e2cb8173b05a0e) is item-specific to the PARD Double Flaring and Cutting Tool Set and says ToolsMart fulfilled order TM25550 10 days earlier.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -98891,45 +99186,6 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "heavy_battery_cable",
           "matched_tokens": [
             "cable"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "tool_daraz_safety_goggles_20260518",
-        "supply_type": "tool",
-        "inventory_group": "tools",
-        "item": "Safety Goggle Safety Protective Glasses Goggles Anti Splash Dust Proof Work Lab Eyewear Eye Protection Industrial Research Safety Glasses Clear Lens Multi-function Anti-Fog Antisand Windproof Dust Resistant",
-        "vendor": "Daraz / Reliable_Shop",
-        "amount": "869",
-        "currency": "PKR",
-        "workstream": "site_setup",
-        "status_group": "in_process",
-        "status_detail": "ordered",
-        "procurement_stage": "ordered_pending_delivery",
-        "payment_status": "paid",
-        "delivery_status": "pending_delivery",
-        "evidence_ref": "gmail_msg_19e392e35701144b|gmail_order_243331393480938",
-        "notes": "Daraz order confirmed 2026-05-18 11:42; paid by JazzCash. Item PKR 699 plus shipping PKR 170, total PKR 869. Expected delivery window 2026-05-21 to 2026-05-23. Keep pending until goggles are received and checked for usable seal/fit before grinding/paint-prep work.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/roof_door_window.jpg",
-          "caption": "Safety Goggle Safety Protective Glasses Goggles Anti Splash Dust Proof Work Lab Eyewear Eye Protection Industrial Research Safety Glasses Clear Lens Multi-function Anti-Fog Antisand Windproof Dust Resistant \u00b7 body/glass hardware reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "roof_door_window",
-          "matched_tokens": [
-            "body"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -103743,6 +103999,45 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "source": "expenses",
+        "source_ref": "tool_daraz_respirator_mask_20260518",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Epoxy Resin Mask Respirator Industrial Safety Mask for Epoxy Resin Art Workers Safety Chemical Anti-Dust Anti-Allergy double Filter",
+        "vendor": "Daraz / H&Z baby products",
+        "amount": "946",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "previously",
+        "status_detail": "received",
+        "procurement_stage": "received",
+        "payment_status": "paid",
+        "delivery_status": "received",
+        "evidence_ref": "gmail_msg_19e392e32e93eddd|gmail_order_243331393680938|gmail_delivery_243331393680938|gmail_msg_19e3fbe04164503a",
+        "notes": "Daraz order confirmed 2026-05-18 11:42; paid by JazzCash. Item PKR 801 plus shipping PKR 145, total PKR 946. Expected delivery window 2026-05-21 to 2026-05-23. Keep pending until the mask is received and checked against paint/epoxy PPE needs. | Gmail delivery email 2026-05-19 (message 19e3fbe04164503a) says Daraz order 243331393680938 was successfully delivered; close delivery tracking, with only normal PPE fit/use check remaining.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_tool.jpg",
+          "caption": "Epoxy Resin Mask Respirator Industrial Safety Mask for Epoxy Resin Art Workers Safety Chemical Anti-Dust Anti-Allergy double Filter \u00b7 tool reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "generic_tool",
+          "matched_tokens": [
+            "tool"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
         "source": "workbook_tools",
         "source_ref": "workbook_tools#row_7",
         "supply_type": "tool",
@@ -104736,6 +105031,45 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "pliers",
           "matched_tokens": [
             "pliers"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "tool_daraz_safety_goggles_20260518",
+        "supply_type": "tool",
+        "inventory_group": "tools",
+        "item": "Safety Goggle Safety Protective Glasses Goggles Anti Splash Dust Proof Work Lab Eyewear Eye Protection Industrial Research Safety Glasses Clear Lens Multi-function Anti-Fog Antisand Windproof Dust Resistant",
+        "vendor": "Daraz / Reliable_Shop",
+        "amount": "869",
+        "currency": "PKR",
+        "workstream": "site_setup",
+        "status_group": "previously",
+        "status_detail": "received",
+        "procurement_stage": "received",
+        "payment_status": "paid",
+        "delivery_status": "received",
+        "evidence_ref": "gmail_msg_19e392e35701144b|gmail_order_243331393480938|gmail_delivery_243331393480938|gmail_msg_19e4a66145e96435",
+        "notes": "Daraz order confirmed 2026-05-18 11:42; paid by JazzCash. Item PKR 699 plus shipping PKR 170, total PKR 869. Expected delivery window 2026-05-21 to 2026-05-23. Keep pending until goggles are received and checked for usable seal/fit before grinding/paint-prep work. | Gmail delivery email 2026-05-21 (message 19e4a66145e96435) says Daraz order 243331393480938 was successfully delivered; close delivery tracking, with only normal goggles fit/seal check remaining.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/roof_door_window.jpg",
+          "caption": "Safety Goggle Safety Protective Glasses Goggles Anti Splash Dust Proof Work Lab Eyewear Eye Protection Industrial Research Safety Glasses Clear Lens Multi-function Anti-Fog Antisand Windproof Dust Resistant \u00b7 body/glass hardware reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "roof_door_window",
+          "matched_tokens": [
+            "body"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -106772,45 +107106,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "part_star_washers",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "Star washers (bite into metal)",
-        "vendor": "local fastener / electrical hardware supplier",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "electrical_reset",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered",
-        "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
-          "caption": "Star washers (bite into metal) \u00b7 grounding washer hardware reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "graded_fasteners",
-          "matched_tokens": [
-            "washers"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
         "source_ref": "part_hvac_trinary_switch_20260514",
         "supply_type": "part",
         "inventory_group": "electrical",
@@ -108015,68 +108310,6 @@ window.J40_DASHBOARD_DATA = {
             "filter"
           ],
           "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred",
-        "vendor": "SNA Industries / local brake pipe specialist / Longman / Brandreth Road / Montgomery Road",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "brake_system",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "price_check_priority_before_other_brake_parts",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-15|HLS-19|BR-REAR-002|RP-BRAKE-001|RP-CLUTCH-001|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|gari_lahore_mild_steel_hydraulic_brake_pipe_reference|fedhill_25ft_cunifer_reference|fcp_euro_25ft_cunifer_reference|user_update_2026-05-24_price_brake_lines_before_other_parts",
-        "notes": "Quote this before buying more rear brake parts. First quote target is SNA Industries, because it is Pakistan-based and lists steel brake pipes and brake hoses. Buy enough new brake/clutch-rated tube stock to replace all chassis brake hard lines, both rear axle hard lines, and the clutch hard line. Existing controlled basis is 7600 mm / 25 ft brake line plus 1500 mm clutch blank; quote both 25 ft minimum and a single 10000-12000 mm local coil for scrap flares, route corrections, and service loops. Use brake-rated Bundy steel or CuNi/Cunifer only; no bare copper, plumbing tube, compression fittings, or imported pre-bent FJ40 kit unless explicitly approved.",
-        "links": [
-          {
-            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-            "label": "Longman pipe and hose order CSV",
-            "download": true
-          },
-          {
-            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-            "label": "Longman pipe and hose order spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-            "label": "Pipe order release specs CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Pipe photo and measurement index CSV",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/hard_line_bending_flaring_reference.svg",
-          "caption": "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred \u00b7 hard-line bending and flaring reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "hard_line_bending_flaring_reference",
-          "matched_tokens": [
-            "hard",
-            "line",
-            "fabrication"
-          ],
-          "match_basis": "local_reference_image",
           "match_score": 700
         }
       },
@@ -109672,7 +109905,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-003|web_4lifetimelines_master_flaring_set",
-        "notes": "Buy a compact internal/external tube deburrer or reamer unless the delivered flaring kit includes a good one. Every 4.75 mm / 3/16 in brake-line cut must be deburred inside and outside before double/inverted flaring. Reject a workflow that leaves burrs inside the hydraulic tube.",
+        "notes": "Buy a compact internal/external tube deburrer or reamer unless the delivered flaring kit includes a good one. Every 4.75 mm / 3/16 in brake-line cut must be deburred inside and outside before double/inverted flaring. Reject a workflow that leaves burrs inside the hydraulic tube. | Purchase remains open after TM25550 review: order evidence confirms the Harden cutter and PARD flaring/cutting set only. No captured order line or ToolsMart product text proves a separate internal/external deburrer/reamer was included.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -109798,7 +110031,7 @@ window.J40_DASHBOARD_DATA = {
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "evidence_ref": "user_update_2026-05-04_line_shaping_tool_needed|user_update_2026-05-04_daraz_pipe_bender_order|https://4lifetimelines.com/products/master-flaring-tool-set-sae-double-iso-bubble-flares|docs/brake-suspension-order-links-20260503.md|gmail_msg_19df40dbc5116bb3|gmail_order_TM25550",
-        "notes": "Conditional aggregate remains open only for final tool-fit validation. Separate evidence now covers Daraz pipe bender order 242508744880938 received, plus ToolsMart order TM25550 for Harden Mini Tube Cutter 3-22mm and PARD Double Flaring and Cutting Tool Set - 4-16mm pending delivery. Do not buy a duplicate all-in-one kit unless receipt checks show the cutter/flaring dies do not cover the old brake/fuel fittings or required flare type; still confirm a deburrer/reamer is available if the kit does not include one.",
+        "notes": "Conditional aggregate remains open only for final tool-fit validation. Separate evidence now covers Daraz pipe bender order 242508744880938 received, plus ToolsMart order TM25550 for Harden Mini Tube Cutter 3-22mm and PARD Double Flaring and Cutting Tool Set - 4-16mm pending delivery. Do not buy a duplicate all-in-one kit unless receipt checks show the cutter/flaring dies do not cover the old brake/fuel fittings or required flare type; still confirm a deburrer/reamer is available if the kit does not include one. | Pending-item audit 2026-05-27: TM25550 cutter and PARD flaring kit are now received-candidates from ToolsMart post-fulfillment Gmail review requests, so keep this aggregate only as a no-duplicate/fit-validation hold. Rebuy only a missing deburrer, 4.75 mm bender, or replacement flare tool after physical inspection proves the delivered tools do not cover the required work.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -109997,9 +110230,9 @@ window.J40_DASHBOARD_DATA = {
     "drop_zone": "data/reference/other_j40_builds",
     "summary": {
       "section_count": 9,
-      "total_media": 189,
-      "total_images": 169,
-      "total_videos": 20,
+      "total_media": 204,
+      "total_images": 183,
+      "total_videos": 21,
       "drop_zone_media": 0,
       "drop_zone_images": 0,
       "drop_zone_videos": 0,
@@ -113115,6 +113348,246 @@ window.J40_DASHBOARD_DATA = {
             "source_label": "TLC 40 Series Owners WhatsApp",
             "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACC00A4E7024750BB9CD9AB9AC7F1D67_172245385244826_lid.jpeg",
             "notes": "Author: 172245385244826. Imported timestamp: 2026-05-26 14:36:41.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A6F50B8E07DDF15A996_187861886328909_lid.mp4",
+            "caption": "TLC 40 Series Owners WhatsApp Video \u00b7 2026-05-27 01:26:15.000Z",
+            "captured_date": "2026-05-27",
+            "captured_time": "01:26:15.000",
+            "media_type": "video",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_3A6F50B8E07DDF15A996_187861886328909_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A6F50B8E07DDF15A996_187861886328909_lid.mp4",
+            "notes": "Author: 187861886328909. Imported timestamp: 2026-05-27 01:26:15.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC87F8D85AB791F61A3A5A0A3BAEC832_145874403492093_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-27 03:15:54.000Z",
+            "captured_date": "2026-05-27",
+            "captured_time": "03:15:54.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_AC87F8D85AB791F61A3A5A0A3BAEC832_145874403492093_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC87F8D85AB791F61A3A5A0A3BAEC832_145874403492093_lid.jpeg",
+            "notes": "Author: 145874403492093. Imported timestamp: 2026-05-27 03:15:54.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC89C96D44FF7FA8FFDCFAFC13ECED3B_48408643563605_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-27 03:44:18.000Z",
+            "captured_date": "2026-05-27",
+            "captured_time": "03:44:18.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_AC89C96D44FF7FA8FFDCFAFC13ECED3B_48408643563605_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC89C96D44FF7FA8FFDCFAFC13ECED3B_48408643563605_lid.jpeg",
+            "notes": "Author: 48408643563605. Imported timestamp: 2026-05-27 03:44:18.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A44568FDCFBAAC803E5_79744859140123_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-27 04:19:07.000Z",
+            "captured_date": "2026-05-27",
+            "captured_time": "04:19:07.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_3A44568FDCFBAAC803E5_79744859140123_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A44568FDCFBAAC803E5_79744859140123_lid.jpeg",
+            "notes": "Author: 79744859140123. Imported timestamp: 2026-05-27 04:19:07.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC52DA71D533B9F0E8B017804AB580B7_236519688282206_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-27 05:08:54.000Z",
+            "captured_date": "2026-05-27",
+            "captured_time": "05:08:54.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_AC52DA71D533B9F0E8B017804AB580B7_236519688282206_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC52DA71D533B9F0E8B017804AB580B7_236519688282206_lid.jpeg",
+            "notes": "Author: 236519688282206. Imported timestamp: 2026-05-27 05:08:54.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A859612FD0524444787_113159520133224_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-27 05:09:54.000Z",
+            "captured_date": "2026-05-27",
+            "captured_time": "05:09:54.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_3A859612FD0524444787_113159520133224_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A859612FD0524444787_113159520133224_lid.jpeg",
+            "notes": "Author: 113159520133224. Imported timestamp: 2026-05-27 05:09:54.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACE82F53DADDF72AE3336F971D06E16B_184718171590789_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-27 05:10:58.000Z",
+            "captured_date": "2026-05-27",
+            "captured_time": "05:10:58.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_ACE82F53DADDF72AE3336F971D06E16B_184718171590789_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACE82F53DADDF72AE3336F971D06E16B_184718171590789_lid.jpeg",
+            "notes": "Author: 184718171590789. Imported timestamp: 2026-05-27 05:10:58.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A35AD55AB3BD3532E9B_189541403115641_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-27 06:55:16.000Z",
+            "captured_date": "2026-05-27",
+            "captured_time": "06:55:16.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_3A35AD55AB3BD3532E9B_189541403115641_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A35AD55AB3BD3532E9B_189541403115641_lid.jpeg",
+            "notes": "Author: 189541403115641. Imported timestamp: 2026-05-27 06:55:16.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC370605E0C152A405E3E6E7A68E307C_73328060551171_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-27 07:02:43.000Z",
+            "captured_date": "2026-05-27",
+            "captured_time": "07:02:43.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_AC370605E0C152A405E3E6E7A68E307C_73328060551171_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC370605E0C152A405E3E6E7A68E307C_73328060551171_lid.jpeg",
+            "notes": "Author: 73328060551171. Imported timestamp: 2026-05-27 07:02:43.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A5FDE1C855AC79C3A10_71807675711525_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-27 07:08:44.000Z",
+            "captured_date": "2026-05-27",
+            "captured_time": "07:08:44.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_3A5FDE1C855AC79C3A10_71807675711525_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A5FDE1C855AC79C3A10_71807675711525_lid.jpeg",
+            "notes": "Author: 71807675711525. Imported timestamp: 2026-05-27 07:08:44.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A769F5D79B5CCA746A0_4359425396802_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-27 09:09:24.000Z",
+            "captured_date": "2026-05-27",
+            "captured_time": "09:09:24.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_3A769F5D79B5CCA746A0_4359425396802_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A769F5D79B5CCA746A0_4359425396802_lid.jpeg",
+            "notes": "Author: 4359425396802. Imported timestamp: 2026-05-27 09:09:24.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3AE113CED749D89A8E97_160082188873865_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-27 09:26:41.000Z",
+            "captured_date": "2026-05-27",
+            "captured_time": "09:26:41.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_3AE113CED749D89A8E97_160082188873865_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3AE113CED749D89A8E97_160082188873865_lid.jpeg",
+            "notes": "Author: 160082188873865. Imported timestamp: 2026-05-27 09:26:41.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACC241AFF9A222F37BDA5B65E2E79BBF_112803037855909_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-27 09:41:34.000Z",
+            "captured_date": "2026-05-27",
+            "captured_time": "09:41:34.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_ACC241AFF9A222F37BDA5B65E2E79BBF_112803037855909_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACC241AFF9A222F37BDA5B65E2E79BBF_112803037855909_lid.jpeg",
+            "notes": "Author: 112803037855909. Imported timestamp: 2026-05-27 09:41:34.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3AA33A59BC8CB53C1CB4_66812544823506_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-27 10:51:54.000Z",
+            "captured_date": "2026-05-27",
+            "captured_time": "10:51:54.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_3AA33A59BC8CB53C1CB4_66812544823506_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3AA33A59BC8CB53C1CB4_66812544823506_lid.jpeg",
+            "notes": "Author: 66812544823506. Imported timestamp: 2026-05-27 10:51:54.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A78FB0A72F5AA83E204_121577739915469_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-27 10:52:29.000Z",
+            "captured_date": "2026-05-27",
+            "captured_time": "10:52:29.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_3A78FB0A72F5AA83E204_121577739915469_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A78FB0A72F5AA83E204_121577739915469_lid.jpeg",
+            "notes": "Author: 121577739915469. Imported timestamp: 2026-05-27 10:52:29.000Z"
           }
         ]
       }
@@ -113800,24 +114273,13 @@ window.J40_DASHBOARD_DATA = {
     "selected_chats": [
       {
         "profile_server": "whatsapp-number-2",
-        "chat_name": "Fj40",
-        "chat_id": "120363408465558195@g.us",
-        "chat_type": "group",
-        "relevance_score": "15",
-        "messages_fetched": "true",
-        "messages_count": "350",
-        "media_count": "53",
-        "messages_fetch_error": ""
-      },
-      {
-        "profile_server": "whatsapp-number-2",
         "chat_name": "TLC 40 Series Owners",
         "chat_id": "971527520120-1517397900@g.us",
         "chat_type": "group",
         "relevance_score": "15",
         "messages_fetched": "true",
-        "messages_count": "205",
-        "media_count": "49",
+        "messages_count": "232",
+        "media_count": "64",
         "messages_fetch_error": ""
       },
       {
@@ -113844,10 +114306,21 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "profile_server": "whatsapp-number-2",
+        "chat_name": "Fj40",
+        "chat_id": "120363408465558195@g.us",
+        "chat_type": "group",
+        "relevance_score": "11",
+        "messages_fetched": "true",
+        "messages_count": "350",
+        "media_count": "53",
+        "messages_fetch_error": ""
+      },
+      {
+        "profile_server": "whatsapp-number-2",
         "chat_name": "Headlight connectors",
         "chat_id": "120363427035421010@g.us",
         "chat_type": "group",
-        "relevance_score": "13",
+        "relevance_score": "11",
         "messages_fetched": "true",
         "messages_count": "4",
         "media_count": "1",
@@ -113898,17 +114371,6 @@ window.J40_DASHBOARD_DATA = {
         "messages_fetch_error": "messages_api_not_supported_for_lid"
       },
       {
-        "profile_server": "whatsapp-number-2",
-        "chat_name": "+92 300 1105253",
-        "chat_id": "233521834672379@lid",
-        "chat_type": "direct_lid",
-        "relevance_score": "8",
-        "messages_fetched": "false",
-        "messages_count": "0",
-        "media_count": "0",
-        "messages_fetch_error": "messages_api_not_supported_for_lid"
-      },
-      {
         "profile_server": "whatsapp-number-1",
         "chat_name": "Akbar Khan",
         "chat_id": "archive::akbar_khan",
@@ -113942,7 +114404,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "media_type": "photo",
-        "count": 214
+        "count": 228
       },
       {
         "media_type": "sticker",
@@ -113950,7 +114412,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "media_type": "video",
-        "count": 30
+        "count": 31
       }
     ],
     "media_counts_by_profile": [
@@ -113960,10 +114422,145 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source_profile": "whatsapp-number-2",
-        "count": 102
+        "count": 117
       }
     ],
     "recent_media": [
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3a78fb0a72f5aa83e204_121577739915469_lid::false_971527520120_1517397900_g_us_3A78FB0A72F5AA83E204_121577739915469_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-27T10:52:29.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_3A78FB0A72F5AA83E204_121577739915469_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A78FB0A72F5AA83E204_121577739915469_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3aa33a59bc8cb53c1cb4_66812544823506_lid::false_971527520120_1517397900_g_us_3AA33A59BC8CB53C1CB4_66812544823506_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-27T10:51:54.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_3AA33A59BC8CB53C1CB4_66812544823506_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3AA33A59BC8CB53C1CB4_66812544823506_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_acc241aff9a222f37bda5b65e2e79bbf_112803037855909_lid::false_971527520120_1517397900_g_us_ACC241AFF9A222F37BDA5B65E2E79BBF_112803037855909_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-27T09:41:34.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_ACC241AFF9A222F37BDA5B65E2E79BBF_112803037855909_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACC241AFF9A222F37BDA5B65E2E79BBF_112803037855909_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3ae113ced749d89a8e97_160082188873865_lid::false_971527520120_1517397900_g_us_3AE113CED749D89A8E97_160082188873865_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-27T09:26:41.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_3AE113CED749D89A8E97_160082188873865_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3AE113CED749D89A8E97_160082188873865_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3a769f5d79b5cca746a0_4359425396802_lid::false_971527520120_1517397900_g_us_3A769F5D79B5CCA746A0_4359425396802_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-27T09:09:24.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_3A769F5D79B5CCA746A0_4359425396802_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A769F5D79B5CCA746A0_4359425396802_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3a5fde1c855ac79c3a10_71807675711525_lid::false_971527520120_1517397900_g_us_3A5FDE1C855AC79C3A10_71807675711525_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-27T07:08:44.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_3A5FDE1C855AC79C3A10_71807675711525_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A5FDE1C855AC79C3A10_71807675711525_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac370605e0c152a405e3e6e7a68e307c_73328060551171_lid::false_971527520120_1517397900_g_us_AC370605E0C152A405E3E6E7A68E307C_73328060551171_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-27T07:02:43.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_AC370605E0C152A405E3E6E7A68E307C_73328060551171_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC370605E0C152A405E3E6E7A68E307C_73328060551171_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3a35ad55ab3bd3532e9b_189541403115641_lid::false_971527520120_1517397900_g_us_3A35AD55AB3BD3532E9B_189541403115641_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-27T06:55:16.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_3A35AD55AB3BD3532E9B_189541403115641_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A35AD55AB3BD3532E9B_189541403115641_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ace82f53daddf72ae3336f971d06e16b_184718171590789_lid::false_971527520120_1517397900_g_us_ACE82F53DADDF72AE3336F971D06E16B_184718171590789_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-27T05:10:58.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_ACE82F53DADDF72AE3336F971D06E16B_184718171590789_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACE82F53DADDF72AE3336F971D06E16B_184718171590789_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3a859612fd0524444787_113159520133224_lid::false_971527520120_1517397900_g_us_3A859612FD0524444787_113159520133224_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-27T05:09:54.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_3A859612FD0524444787_113159520133224_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A859612FD0524444787_113159520133224_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac52da71d533b9f0e8b017804ab580b7_236519688282206_lid::false_971527520120_1517397900_g_us_AC52DA71D533B9F0E8B017804AB580B7_236519688282206_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-27T05:08:54.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_AC52DA71D533B9F0E8B017804AB580B7_236519688282206_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC52DA71D533B9F0E8B017804AB580B7_236519688282206_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3a44568fdcfbaac803e5_79744859140123_lid::false_971527520120_1517397900_g_us_3A44568FDCFBAAC803E5_79744859140123_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-27T04:19:07.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_3A44568FDCFBAAC803E5_79744859140123_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A44568FDCFBAAC803E5_79744859140123_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac89c96d44ff7fa8ffdcfafc13eced3b_48408643563605_lid::false_971527520120_1517397900_g_us_AC89C96D44FF7FA8FFDCFAFC13ECED3B_48408643563605_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-27T03:44:18.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_AC89C96D44FF7FA8FFDCFAFC13ECED3B_48408643563605_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC89C96D44FF7FA8FFDCFAFC13ECED3B_48408643563605_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac87f8d85ab791f61a3a5a0a3baec832_145874403492093_lid::false_971527520120_1517397900_g_us_AC87F8D85AB791F61A3A5A0A3BAEC832_145874403492093_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-27T03:15:54.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_AC87F8D85AB791F61A3A5A0A3BAEC832_145874403492093_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC87F8D85AB791F61A3A5A0A3BAEC832_145874403492093_lid.jpeg"
+      },
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3a6f50b8e07ddf15a996_187861886328909_lid::false_971527520120_1517397900_g_us_3A6F50B8E07DDF15A996_187861886328909_lid.mp4",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-27T01:26:15.000Z",
+        "media_type": "video",
+        "file_name": "false_971527520120_1517397900_g_us_3A6F50B8E07DDF15A996_187861886328909_lid.mp4",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A6F50B8E07DDF15A996_187861886328909_lid.mp4"
+      },
       {
         "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_acc00a4e7024750bb9cd9ab9ac7f1d67_172245385244826_lid::false_971527520120_1517397900_g_us_ACC00A4E7024750BB9CD9AB9AC7F1D67_172245385244826_lid.jpeg",
         "source_profile": "whatsapp-number-2",
@@ -114044,141 +114641,6 @@ window.J40_DASHBOARD_DATA = {
         "media_type": "photo",
         "file_name": "false_971527520120_1517397900_g_us_3ABF0973D4DD28CF4061_42507291328542_lid.jpeg",
         "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3ABF0973D4DD28CF4061_42507291328542_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3a02f6aa6bc7d0f2a0aa_121577739915469_lid::false_971527520120_1517397900_g_us_3A02F6AA6BC7D0F2A0AA_121577739915469_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-24T05:46:14.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_3A02F6AA6BC7D0F2A0AA_121577739915469_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A02F6AA6BC7D0F2A0AA_121577739915469_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3eb05cc8d443067bb6d29a_262787741827282_lid::false_971527520120_1517397900_g_us_3EB05CC8D443067BB6D29A_262787741827282_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-24T05:09:52.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_3EB05CC8D443067BB6D29A_262787741827282_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3EB05CC8D443067BB6D29A_262787741827282_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3af901332d94051cc31e_122410913292479_lid::false_971527520120_1517397900_g_us_3AF901332D94051CC31E_122410913292479_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-23T15:54:50.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_3AF901332D94051CC31E_122410913292479_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3AF901332D94051CC31E_122410913292479_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_a5ebce7e4647d0a3c66764e52610b47c_98548125290539_lid::false_971527520120_1517397900_g_us_A5EBCE7E4647D0A3C66764E52610B47C_98548125290539_lid.webp",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-22T16:48:44.000Z",
-        "media_type": "sticker",
-        "file_name": "false_971527520120_1517397900_g_us_A5EBCE7E4647D0A3C66764E52610B47C_98548125290539_lid.webp",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A5EBCE7E4647D0A3C66764E52610B47C_98548125290539_lid.webp"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac53c5e04013ab87605281c86eb40e01_73328060551171_lid::false_971527520120_1517397900_g_us_AC53C5E04013AB87605281C86EB40E01_73328060551171_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-22T16:46:45.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_AC53C5E04013AB87605281C86EB40E01_73328060551171_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC53C5E04013AB87605281C86EB40E01_73328060551171_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac643fce16204c8360c5d0a7380c4f91_19825619382401_lid::false_971527520120_1517397900_g_us_AC643FCE16204C8360C5D0A7380C4F91_19825619382401_lid.webp",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-22T11:10:43.000Z",
-        "media_type": "sticker",
-        "file_name": "false_971527520120_1517397900_g_us_AC643FCE16204C8360C5D0A7380C4F91_19825619382401_lid.webp",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC643FCE16204C8360C5D0A7380C4F91_19825619382401_lid.webp"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac4af4a38f15dc2da3ec871c53ac11da_48408643563605_lid::false_971527520120_1517397900_g_us_AC4AF4A38F15DC2DA3EC871C53AC11DA_48408643563605_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-21T07:49:06.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_AC4AF4A38F15DC2DA3EC871C53AC11DA_48408643563605_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC4AF4A38F15DC2DA3EC871C53AC11DA_48408643563605_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac2d66d5f2f8997ba3a5b900b65fe2fd_112803037855909_lid::false_971527520120_1517397900_g_us_AC2D66D5F2F8997BA3A5B900B65FE2FD_112803037855909_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-19T13:42:36.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_AC2D66D5F2F8997BA3A5B900B65FE2FD_112803037855909_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC2D66D5F2F8997BA3A5B900B65FE2FD_112803037855909_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_ac84f32b00f4dd06c453962574ca8c59_112803037855909_lid::false_971527520120_1517397900_g_us_AC84F32B00F4DD06C453962574CA8C59_112803037855909_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-19T13:38:19.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_AC84F32B00F4DD06C453962574CA8C59_112803037855909_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_AC84F32B00F4DD06C453962574CA8C59_112803037855909_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3ac3ebb9c4643aa7905f_7177007808594_lid::false_971527520120_1517397900_g_us_3AC3EBB9C4643AA7905F_7177007808594_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-19T12:17:10.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_3AC3EBB9C4643AA7905F_7177007808594_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3AC3EBB9C4643AA7905F_7177007808594_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_4adc37eeeea949ca8aa2_131761191297256_lid::false_971527520120_1517397900_g_us_4ADC37EEEEA949CA8AA2_131761191297256_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-19T12:10:51.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_4ADC37EEEEA949CA8AA2_131761191297256_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4ADC37EEEEA949CA8AA2_131761191297256_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_2ad33b68a410d3131aa3_21685440872577_lid::false_971527520120_1517397900_g_us_2AD33B68A410D3131AA3_21685440872577_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-19T09:25:50.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_2AD33B68A410D3131AA3_21685440872577_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_2AD33B68A410D3131AA3_21685440872577_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_4affe980d4bf7164c050_4359425396802_lid::false_971527520120_1517397900_g_us_4AFFE980D4BF7164C050_4359425396802_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-18T06:02:43.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_4AFFE980D4BF7164C050_4359425396802_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4AFFE980D4BF7164C050_4359425396802_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_4ad90a5d188d2a9c3960_4359425396802_lid::false_971527520120_1517397900_g_us_4AD90A5D188D2A9C3960_4359425396802_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-18T06:02:43.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_4AD90A5D188D2A9C3960_4359425396802_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4AD90A5D188D2A9C3960_4359425396802_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_4a0fc27c4c37b6b95a88_4359425396802_lid::false_971527520120_1517397900_g_us_4A0FC27C4C37B6B95A88_4359425396802_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-18T06:02:43.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_4A0FC27C4C37B6B95A88_4359425396802_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_4A0FC27C4C37B6B95A88_4359425396802_lid.jpeg"
       }
     ]
   },
