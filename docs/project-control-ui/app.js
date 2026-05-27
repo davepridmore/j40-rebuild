@@ -6499,11 +6499,24 @@
       const notes = cleanString(row && row.notes).toLowerCase();
       const supplyType = cleanString(row && row.supply_type).toLowerCase();
       const blob = [sourceRef, item, workstream, notes].join(" ");
+      const bodyPanelInventoryMarkers = new Set([
+        "body_floor",
+        "body_sections",
+        "doors",
+        "hood",
+        "interior",
+        "roof",
+        "window_hardware",
+        "windows",
+      ]);
       if (
         sourceRef === "part_brake_clutch_475_hard_line_stock_full_vehicle_20260514" ||
         item === "full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in od, 12 m preferred"
       ) {
         return false;
+      }
+      if (bodyPanelInventoryMarkers.has(item)) {
+        return true;
       }
       if (workstream === "fabrication_handoff" || sourceRef.includes("fabrication")) {
         return true;
@@ -6620,7 +6633,7 @@
           <h3>Still Required / Need To Order</h3>
           ${chip(`${suppliesStillRequired.length} rows`)}
         </div>
-        <p class="small-muted">Interior-conversion rows, fabrication rows, detailed hose/line rows, and workshop air-supply rows stay tracked elsewhere; this view keeps only the combined brake/clutch piping line.</p>
+        <p class="small-muted">Body panel/window marker rows, interior-conversion rows, fabrication rows, detailed hose/line rows, and workshop air-supply rows stay tracked elsewhere; this view keeps only the combined brake/clutch piping line.</p>
         <div class="chip-row">
           ${stillRequiredTypeChips || chip("No still-required rows")}
         </div>
