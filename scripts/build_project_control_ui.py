@@ -3451,6 +3451,8 @@ def longman_rubber_order_payload(
                 "required_qty": clean(row.get("required_qty")),
                 "optional_spare_qty": clean(row.get("optional_spare_qty")),
                 "spec": clean(row.get("spec")),
+                "envelope_3d_mm": clean(row.get("envelope_3d_mm")),
+                "edge_profile": clean(row.get("edge_profile")),
                 "holes_or_inserts": clean(row.get("holes_or_inserts")),
                 "material": clean(row.get("material")),
                 "release_state": clean(row.get("release_state")),
@@ -3466,6 +3468,8 @@ def longman_rubber_order_payload(
                         for key in (
                             "order_id",
                             "spec",
+                            "envelope_3d_mm",
+                            "edge_profile",
                             "holes_or_inserts",
                             "material",
                             "notes",

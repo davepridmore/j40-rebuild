@@ -1806,6 +1806,7 @@
                 <th>Line</th>
                 <th>Qty</th>
                 <th>Rubber Definition</th>
+                <th>3D / Edges</th>
                 <th>Holes / Inserts</th>
                 <th>Material</th>
                 <th>Files / Release</th>
@@ -1819,6 +1820,10 @@
                     row.optional_spare_qty ? `Spare: ${row.optional_spare_qty}` : "",
                   ].filter(Boolean);
                   const isHold = holdRows.includes(row);
+                  const geometryCell = [
+                    renderScoutField("Envelope", row.envelope_3d_mm),
+                    renderScoutField("Edges", row.edge_profile),
+                  ].join("") || "-";
                   return `
                     <tr>
                       ${renderChassisRubberOrderImage(row)}
@@ -1829,6 +1834,7 @@
                       </td>
                       <td>${escapeHtml(qtyBits.join(" / ") || "-")}</td>
                       <td>${escapeHtml(row.spec)}</td>
+                      <td>${geometryCell}</td>
                       <td>${escapeHtml(row.holes_or_inserts || "-")}</td>
                       <td>${escapeHtml(row.material || "-")}</td>
                       <td class="scout-notes-cell">
@@ -4623,7 +4629,7 @@
         image: scoutReferenceImage("../../photos/20260405_234652.jpg", "Tub-side body-mount landing context", "20260405_234652"),
         spec: "Longman custom square pad with 18.0 mm through bore for Toyota 90560-12009 style body-mount spacer/crush tube.",
         qty: "10 + 2 spares",
-        dimension: "70 x 70 x 22; 18.0 through bore +0.5/-0.0; faces parallel <=0.5",
+        dimension: "3D envelope 70 L x 70 W x 22 H; 18.0 through bore +0.5/-0.0; plan corners R1.5; top/bottom edge break/chamfer 1.0 max; faces parallel <=0.5",
         material: "Black EPDM or NR/SBR, Shore A 60 +/-5",
         sourceBasis: "docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv",
         action: "Quote/drill/punch as 18.0 mm bore; dry-fit with Toyota 90560-12009 style sleeve.",
@@ -4638,7 +4644,7 @@
         image: scoutReferenceImage("../../photos/20260405_234652.jpg", "Tub-side body-mount landing context", "20260405_234652"),
         spec: "Longman custom square pad. Same compound batch as the small pads where possible; 18.0 mm through bore for Toyota 90560-12009 style spacer.",
         qty: "2 + 1 spare",
-        dimension: "80 x 80 x 24; 18.0 through bore +0.5/-0.0; faces parallel <=0.5",
+        dimension: "3D envelope 80 L x 80 W x 24 H; 18.0 through bore +0.5/-0.0; plan corners R1.5; top/bottom edge break/chamfer 1.0 max; faces parallel <=0.5",
         material: "Black EPDM or NR/SBR, Shore A 60 +/-5",
         sourceBasis: "docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv",
         action: "Quote/drill/punch as 18.0 mm bore; dry-fit with Toyota 90560-12009 style sleeve.",
@@ -4681,7 +4687,7 @@
         image: scoutPreviousPartImage("../../photos/20260502_004345_gp_yK8VYzMQ.jpg", "Two-hole oval front-support pad · separate previous-part sample", "20260502_004345_gp_yK8VYzMQ", ["fs-oval", "rubber"]),
         spec: "CNC-ready first article for two-hole oval front-support pad. Use the FS-OVAL row in machine_definitions.csv/json and the DXF/SVG package.",
         qty: "2 matched pieces",
-        dimension: "Origin 64 x 96; capsule 64 x 96 R32; thickness 15; holes 12 at X32 Y16 and X32 Y80; relief 36 x 18 R3 at X14 Y39; insert/boss mark 29 at X32 Y16",
+        dimension: "3D envelope 96 L x 64 W x 15 T; capsule ends R32; edge break 0.5-1.0; holes 12 at X32 Y16 and X32 Y80; relief 36 x 18 R3 at X14 Y39; insert/boss mark 29 at X32 Y16",
         material: "Black EPDM or NR/SBR, Shore A 60 +/-5; reuse/bond steel insert if present",
         sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
         action: "Make matched pair; confirm holes, thickness, and insert/boss before batch. INSERT_MARK is not a through cut.",
@@ -4695,7 +4701,7 @@
         image: scoutReferenceImage("../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg", "Left underfloor strip first-article control", "fs_strip_left_template_blank_rev_a"),
         spec: "Released first article as a plain flat underfloor body-support / anti-squeak strip. Do not add holes, slots, bonding, or stepped geometry unless dry-fit proves it.",
         qty: "1",
-        dimension: "165 x 38 x 8 mm; smooth edges; flat parallel faces; local end trim only after dry-fit",
+        dimension: "3D envelope 165 L x 38 W x 8 T mm; plan corners R1.5; top/bottom edge break 0.5-1.0; smooth cut edges; flat parallel faces; local end trim only after dry-fit",
         material: "Black EPDM or NR/SBR strip, Shore A 60 +/-5",
         sourceBasis: "docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv; data/manual/rubber_recreation_measurement_closure.csv",
         reject: "Slots/holes through the rubber, raised-load pad, bonding, or handed trim without installed-sample proof.",
@@ -4710,7 +4716,7 @@
         image: scoutReferenceImage("../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg", "Right underfloor strip first-article control", "fs_strip_right_template_blank_rev_a"),
         spec: "Released first article as the right-side mate to the left strip. Use the same plain blank unless dry-fit proves a handed end trim.",
         qty: "1",
-        dimension: "165 x 38 x 8 mm; smooth edges; flat parallel faces; local handed trim only after dry-fit",
+        dimension: "3D envelope 165 L x 38 W x 8 T mm; plan corners R1.5; top/bottom edge break 0.5-1.0; smooth cut edges; flat parallel faces; local handed trim only after dry-fit",
         material: "Black EPDM or NR/SBR strip, Shore A 60 +/-5; same batch/type as left where possible",
         sourceBasis: "docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv; data/manual/rubber_recreation_measurement_closure.csv",
         reject: "Slots/holes through the rubber, raised-load pad, bonding, or handed trim without installed-sample proof.",

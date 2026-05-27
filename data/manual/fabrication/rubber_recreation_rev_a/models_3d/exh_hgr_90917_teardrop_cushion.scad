@@ -21,6 +21,40 @@ module capsule_2d(length, width) {
   }
 }
 
+module chamfered_extrude(height, edge_chamfer = 0) {
+  eps = 0.01;
+  if (edge_chamfer <= 0) {
+    linear_extrude(height = height, center = false)
+      children();
+  } else {
+    union() {
+      translate([0, 0, edge_chamfer])
+        linear_extrude(height = height - (2 * edge_chamfer), center = false)
+          children();
+
+      hull() {
+        translate([0, 0, 0])
+          linear_extrude(height = eps, center = false)
+            offset(delta = -edge_chamfer)
+              children();
+        translate([0, 0, edge_chamfer])
+          linear_extrude(height = eps, center = false)
+            children();
+      }
+
+      hull() {
+        translate([0, 0, height - edge_chamfer])
+          linear_extrude(height = eps, center = false)
+            children();
+        translate([0, 0, height - eps])
+          linear_extrude(height = eps, center = false)
+            offset(delta = -edge_chamfer)
+              children();
+      }
+    }
+  }
+}
+
 // Hold-only model:
 // - Toyota 90917-08004 is a part-family lead, not final geometry release.
 // - Use this only as a conversation model until an intact sample or installed

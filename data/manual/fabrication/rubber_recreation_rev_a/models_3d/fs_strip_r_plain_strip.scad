@@ -21,8 +21,44 @@ module capsule_2d(length, width) {
   }
 }
 
+module chamfered_extrude(height, edge_chamfer = 0) {
+  eps = 0.01;
+  if (edge_chamfer <= 0) {
+    linear_extrude(height = height, center = false)
+      children();
+  } else {
+    union() {
+      translate([0, 0, edge_chamfer])
+        linear_extrude(height = height - (2 * edge_chamfer), center = false)
+          children();
+
+      hull() {
+        translate([0, 0, 0])
+          linear_extrude(height = eps, center = false)
+            offset(delta = -edge_chamfer)
+              children();
+        translate([0, 0, edge_chamfer])
+          linear_extrude(height = eps, center = false)
+            children();
+      }
+
+      hull() {
+        translate([0, 0, height - edge_chamfer])
+          linear_extrude(height = eps, center = false)
+            children();
+        translate([0, 0, height - eps])
+          linear_extrude(height = eps, center = false)
+            offset(delta = -edge_chamfer)
+              children();
+      }
+    }
+  }
+}
+
 // Current order basis:
 // - Plain rubber strip 165 x 38 x 8.
+// - 3D envelope is length x width x thickness; plan corner radius is 1.5 mm.
+// - Top and bottom perimeter edge break/chamfer is modelled at 0.75 mm by default.
 // - No holes by default; steel retainer slots belong to the separate retainer
 //   unless the actual old rubber proves the rubber itself was pierced.
 
@@ -31,11 +67,12 @@ module fs_strip_r_plain_strip(
   strip_width = 38,
   strip_thickness = 8,
   corner_r = 1.5,
+  edge_chamfer = 0.75,
   hole_d = 0,
   hole_centres = [-62.5, 62.5]
 ) {
   difference() {
-    linear_extrude(height = strip_thickness, center = false)
+    chamfered_extrude(height = strip_thickness, edge_chamfer = edge_chamfer)
       rounded_rect_2d([strip_length, strip_width], corner_r);
 
     if (hole_d > 0)

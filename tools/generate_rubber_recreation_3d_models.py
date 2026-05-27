@@ -49,6 +49,40 @@ module capsule_2d(length, width) {{
     translate([ (length - width) / 2, 0]) circle(d = width);
   }}
 }}
+
+module chamfered_extrude(height, edge_chamfer = 0) {{
+  eps = 0.01;
+  if (edge_chamfer <= 0) {{
+    linear_extrude(height = height, center = false)
+      children();
+  }} else {{
+    union() {{
+      translate([0, 0, edge_chamfer])
+        linear_extrude(height = height - (2 * edge_chamfer), center = false)
+          children();
+
+      hull() {{
+        translate([0, 0, 0])
+          linear_extrude(height = eps, center = false)
+            offset(delta = -edge_chamfer)
+              children();
+        translate([0, 0, edge_chamfer])
+          linear_extrude(height = eps, center = false)
+            children();
+      }}
+
+      hull() {{
+        translate([0, 0, height - edge_chamfer])
+          linear_extrude(height = eps, center = false)
+            children();
+        translate([0, 0, height - eps])
+          linear_extrude(height = eps, center = false)
+            offset(delta = -edge_chamfer)
+              children();
+      }}
+    }}
+  }}
+}}
 """
 
 
@@ -59,6 +93,8 @@ def body_pad_scad(part_id: str, title: str, size: float, height: float, qty: str
         + f"""
 // Current order basis:
 // - Square solid pad {size:g} x {size:g} x {height:g}.
+// - 3D envelope is length x width x height; plan corner radius 1.5 mm.
+// - Top and bottom perimeter edge break/chamfer is modelled at 1.0 mm by default.
 // - Production bore is 18.0 mm for the Toyota 90560-12009 style body-mount spacer.
 // - Toyota 90560-12009 is the best release basis: 48.1 mm spacer length, six sleeves.
 // - Production release uses hole_d = 18.0; hole_d = 0 is a non-release CAD override.
@@ -67,12 +103,12 @@ module {part_id.lower().replace('-', '_')}_square_pad(
   pad_size = {size:g},
   pad_height = {height:g},
   corner_r = 1.5,
-  edge_chamfer = 0.0,
+  edge_chamfer = 1.0,
   hole_d = 18.0,
   center_mark = true
 ) {{
   difference() {{
-    linear_extrude(height = pad_height, center = false)
+    chamfered_extrude(height = pad_height, edge_chamfer = edge_chamfer)
       rounded_rect_2d([pad_size, pad_size], corner_r);
 
     if (hole_d > 0)
@@ -94,7 +130,10 @@ module {part_id.lower().replace('-', '_')}_square_pad(
         title=title,
         quantity=qty,
         release_status="first-article model with 18.0 mm bore for Toyota 90560-12009 style spacer",
-        controls=f"{size:g} x {size:g} x {height:g} mm square pad; 18.0 mm through bore; production release bore",
+        controls=(
+            f"3D envelope {size:g} L x {size:g} W x {height:g} H mm; plan corner R1.5; "
+            "top/bottom perimeter edge break/chamfer 1.0; 18.0 mm through bore; production release bore"
+        ),
         old_part_questions=(
             "Local-fit check only: confirm Toyota 90560-12009 style spacer or old sleeve is present; "
             "caliper-check old/OE sleeve OD/ID only if a local machinist must copy it; measure top/bottom washer "
@@ -111,6 +150,8 @@ def fs_oval_scad() -> tuple[ModelFile, str]:
         + """
 // Current order basis:
 // - Overall capsule 96 x 64 x 15.
+// - 3D envelope is length x width x thickness; capsule end radius is 32 mm.
+// - Top and bottom perimeter edge break/chamfer is modelled at 1.0 mm by default.
 // - Two 12 mm holes on 64 mm centres.
 // - relief_depth is a model option because the old part must prove whether the
 //   rectangular relief is functional, blind, through-cut, or only washer imprint.
@@ -124,11 +165,12 @@ module fs_oval_front_support_pad(
   relief_size = [36, 18],
   relief_r = 3,
   relief_depth = 0,
+  edge_chamfer = 1.0,
   insert_mark_d = 29,
   insert_mark_depth = 0.5
 ) {
   difference() {
-    linear_extrude(height = thickness, center = false)
+    chamfered_extrude(height = thickness, edge_chamfer = edge_chamfer)
       capsule_2d(length, width);
 
     for (x = [-hole_spacing / 2, hole_spacing / 2])
@@ -155,7 +197,7 @@ fs_oval_front_support_pad();
         title="FS-OVAL front support two-hole isolator pad",
         quantity="2",
         release_status="first-article model; relief/insert construction still sample-controlled",
-        controls="96 x 64 x 15 mm capsule; two 12 mm holes at 64 mm centres; optional 36 x 18 x relief_depth pocket",
+        controls="3D envelope 96 L x 64 W x 15 T mm capsule; R32 ends; edge break/chamfer 1.0; two 12 mm holes at 64 mm centres; optional 36 x 18 x relief_depth pocket",
         old_part_questions=(
             "Confirm hole centre spacing, hole diameter, thickness, insert/boss OD, whether insert is bonded or loose, "
             "and whether the 36 x 18 relief is real or just deformation."
@@ -172,6 +214,8 @@ def strip_scad(part_id: str, side: str) -> tuple[ModelFile, str]:
         + f"""
 // Current order basis:
 // - Plain rubber strip 165 x 38 x 8.
+// - 3D envelope is length x width x thickness; plan corner radius is 1.5 mm.
+// - Top and bottom perimeter edge break/chamfer is modelled at 0.75 mm by default.
 // - No holes by default; steel retainer slots belong to the separate retainer
 //   unless the actual old rubber proves the rubber itself was pierced.
 
@@ -180,11 +224,12 @@ module {module_name}(
   strip_width = 38,
   strip_thickness = 8,
   corner_r = 1.5,
+  edge_chamfer = 0.75,
   hole_d = 0,
   hole_centres = [-62.5, 62.5]
 ) {{
   difference() {{
-    linear_extrude(height = strip_thickness, center = false)
+    chamfered_extrude(height = strip_thickness, edge_chamfer = edge_chamfer)
       rounded_rect_2d([strip_length, strip_width], corner_r);
 
     if (hole_d > 0)
@@ -203,7 +248,7 @@ module {module_name}(
         title=f"{part_id} underfloor body-support strip liner {side}",
         quantity="1",
         release_status="first-article plain strip; local trim/holes only after dry-fit proves them",
-        controls="165 x 38 x 8 mm plain strip; optional hole_d parameter held at 0 by default",
+        controls="3D envelope 165 L x 38 W x 8 T mm plain strip; plan corner R1.5; top/bottom edge break/chamfer 0.75; optional hole_d parameter held at 0 by default",
         old_part_questions=(
             "Check whether old rubber has any real pierced holes or only retainer marks, whether ends are square or trimmed, "
             "actual thickness, and whether left/right are identical."
@@ -381,6 +426,7 @@ def write_manifest(files: list[ModelFile]) -> None:
     with (OUT_DIR / "model_manifest.csv").open("w", newline="", encoding="ascii") as handle:
         writer = csv.DictWriter(
             handle,
+            lineterminator="\n",
             fieldnames=[
                 "part_id",
                 "filename",

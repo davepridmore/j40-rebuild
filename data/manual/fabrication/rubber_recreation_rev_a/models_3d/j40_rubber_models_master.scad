@@ -20,6 +20,40 @@ module capsule_2d(length, width) {
     translate([ (length - width) / 2, 0]) circle(d = width);
   }
 }
+
+module chamfered_extrude(height, edge_chamfer = 0) {
+  eps = 0.01;
+  if (edge_chamfer <= 0) {
+    linear_extrude(height = height, center = false)
+      children();
+  } else {
+    union() {
+      translate([0, 0, edge_chamfer])
+        linear_extrude(height = height - (2 * edge_chamfer), center = false)
+          children();
+
+      hull() {
+        translate([0, 0, 0])
+          linear_extrude(height = eps, center = false)
+            offset(delta = -edge_chamfer)
+              children();
+        translate([0, 0, edge_chamfer])
+          linear_extrude(height = eps, center = false)
+            children();
+      }
+
+      hull() {
+        translate([0, 0, height - edge_chamfer])
+          linear_extrude(height = eps, center = false)
+            children();
+        translate([0, 0, height - eps])
+          linear_extrude(height = eps, center = false)
+            offset(delta = -edge_chamfer)
+              children();
+      }
+    }
+  }
+}
 use <bm_iso_sm_square_pad.scad>;
 use <bm_iso_lg_square_pad.scad>;
 use <fs_oval_front_support_pad.scad>;

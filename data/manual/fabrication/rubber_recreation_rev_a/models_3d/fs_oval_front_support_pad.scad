@@ -21,8 +21,44 @@ module capsule_2d(length, width) {
   }
 }
 
+module chamfered_extrude(height, edge_chamfer = 0) {
+  eps = 0.01;
+  if (edge_chamfer <= 0) {
+    linear_extrude(height = height, center = false)
+      children();
+  } else {
+    union() {
+      translate([0, 0, edge_chamfer])
+        linear_extrude(height = height - (2 * edge_chamfer), center = false)
+          children();
+
+      hull() {
+        translate([0, 0, 0])
+          linear_extrude(height = eps, center = false)
+            offset(delta = -edge_chamfer)
+              children();
+        translate([0, 0, edge_chamfer])
+          linear_extrude(height = eps, center = false)
+            children();
+      }
+
+      hull() {
+        translate([0, 0, height - edge_chamfer])
+          linear_extrude(height = eps, center = false)
+            children();
+        translate([0, 0, height - eps])
+          linear_extrude(height = eps, center = false)
+            offset(delta = -edge_chamfer)
+              children();
+      }
+    }
+  }
+}
+
 // Current order basis:
 // - Overall capsule 96 x 64 x 15.
+// - 3D envelope is length x width x thickness; capsule end radius is 32 mm.
+// - Top and bottom perimeter edge break/chamfer is modelled at 1.0 mm by default.
 // - Two 12 mm holes on 64 mm centres.
 // - relief_depth is a model option because the old part must prove whether the
 //   rectangular relief is functional, blind, through-cut, or only washer imprint.
@@ -36,11 +72,12 @@ module fs_oval_front_support_pad(
   relief_size = [36, 18],
   relief_r = 3,
   relief_depth = 0,
+  edge_chamfer = 1.0,
   insert_mark_d = 29,
   insert_mark_depth = 0.5
 ) {
   difference() {
-    linear_extrude(height = thickness, center = false)
+    chamfered_extrude(height = thickness, edge_chamfer = edge_chamfer)
       capsule_2d(length, width);
 
     for (x = [-hole_spacing / 2, hole_spacing / 2])

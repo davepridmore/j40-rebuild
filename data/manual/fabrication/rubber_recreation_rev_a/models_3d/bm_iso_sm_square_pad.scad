@@ -21,8 +21,44 @@ module capsule_2d(length, width) {
   }
 }
 
+module chamfered_extrude(height, edge_chamfer = 0) {
+  eps = 0.01;
+  if (edge_chamfer <= 0) {
+    linear_extrude(height = height, center = false)
+      children();
+  } else {
+    union() {
+      translate([0, 0, edge_chamfer])
+        linear_extrude(height = height - (2 * edge_chamfer), center = false)
+          children();
+
+      hull() {
+        translate([0, 0, 0])
+          linear_extrude(height = eps, center = false)
+            offset(delta = -edge_chamfer)
+              children();
+        translate([0, 0, edge_chamfer])
+          linear_extrude(height = eps, center = false)
+            children();
+      }
+
+      hull() {
+        translate([0, 0, height - edge_chamfer])
+          linear_extrude(height = eps, center = false)
+            children();
+        translate([0, 0, height - eps])
+          linear_extrude(height = eps, center = false)
+            offset(delta = -edge_chamfer)
+              children();
+      }
+    }
+  }
+}
+
 // Current order basis:
 // - Square solid pad 70 x 70 x 22.
+// - 3D envelope is length x width x height; plan corner radius 1.5 mm.
+// - Top and bottom perimeter edge break/chamfer is modelled at 1.0 mm by default.
 // - Production bore is 18.0 mm for the Toyota 90560-12009 style body-mount spacer.
 // - Toyota 90560-12009 is the best release basis: 48.1 mm spacer length, six sleeves.
 // - Production release uses hole_d = 18.0; hole_d = 0 is a non-release CAD override.
@@ -31,12 +67,12 @@ module bm_iso_sm_square_pad(
   pad_size = 70,
   pad_height = 22,
   corner_r = 1.5,
-  edge_chamfer = 0.0,
+  edge_chamfer = 1.0,
   hole_d = 18.0,
   center_mark = true
 ) {
   difference() {
-    linear_extrude(height = pad_height, center = false)
+    chamfered_extrude(height = pad_height, edge_chamfer = edge_chamfer)
       rounded_rect_2d([pad_size, pad_size], corner_r);
 
     if (hole_d > 0)
