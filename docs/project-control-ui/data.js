@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-28T01:40:27+05:00",
+  "generated_at": "2026-05-28T01:53:46+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -22745,7 +22745,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/longman_rubber_order_20260508.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 110163
+            "bytes": 113149
           },
           "file_count": 23
         }
@@ -28206,7 +28206,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/relay_mount_rev_d.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 46195
+            "bytes": 46610
           },
           "file_count": 9
         }
@@ -31067,7 +31067,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/suspension_wood_cribbing_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 32241
+            "bytes": 32656
           },
           "file_count": 11
         },
@@ -31137,7 +31137,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/midi5_enclosure_rev_d.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 65069
+            "bytes": 65484
           },
           "file_count": 11
         },
@@ -31411,7 +31411,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/relay_mount_rev_d.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 46195
+            "bytes": 46610
           },
           "file_count": 9
         }
@@ -64385,7 +64385,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/suspension_wood_cribbing_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 32241
+            "bytes": 32656
           },
           "file_count": 11
         }

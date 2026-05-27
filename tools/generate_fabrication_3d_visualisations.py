@@ -332,16 +332,16 @@ def breaker_cylinders(x: float, y: float, z: float, prefix: str) -> list[dict[st
 
 def rubber_order_boxes(prefix: str = "Longman rubber") -> list[dict[str, object]]:
     return [
-        {"name": f"{prefix} BM-ISO-SM 70 x 70 x 22 square pad", "x": -170, "y": 11, "z": -100, "w": 70, "h": 22, "d": 70, "color": "rubber"},
-        {"name": f"{prefix} BM-ISO-LG 80 x 80 x 24 square pad", "x": -65, "y": 12, "z": -100, "w": 80, "h": 24, "d": 80, "color": "rubber"},
-        {"name": f"{prefix} FS-OVAL centre span 32 x 64 x 15", "x": 80, "y": 7.5, "z": -100, "w": 32, "h": 15, "d": 64, "color": "rubber"},
-        {"name": f"{prefix} FS-STRIP-L plain strip 165 x 38 x 8", "x": -110, "y": 4, "z": 45, "w": 165, "h": 8, "d": 38, "color": "rubber"},
-        {"name": f"{prefix} FS-STRIP-R plain strip 165 x 38 x 8", "x": 100, "y": 4, "z": 45, "w": 165, "h": 8, "d": 38, "color": "rubber"},
+        {"name": f"{prefix} BM-ISO-SM 70 x 70 x 22 square pad", "x": -170, "y": 11, "z": -100, "w": 70, "h": 22, "d": 70, "color": "rubber", "label": "BM-ISO-SM H22", "label_dx": -18, "label_dy": 20},
+        {"name": f"{prefix} BM-ISO-LG 80 x 80 x 24 square pad", "x": -65, "y": 12, "z": -100, "w": 80, "h": 24, "d": 80, "color": "rubber", "label": "BM-ISO-LG H24", "label_dx": 34, "label_dy": 10},
+        {"name": f"{prefix} FS-OVAL centre span 32 x 64 x 15", "x": 80, "y": 7.5, "z": -100, "w": 32, "h": 15, "d": 64, "color": "rubber", "label": "FS-OVAL T15", "label_dx": 52, "label_dy": -6},
+        {"name": f"{prefix} FS-STRIP-L plain strip 165 x 38 x 8", "x": -110, "y": 4, "z": 45, "w": 165, "h": 8, "d": 38, "color": "rubber", "label": "FS-STRIP-L T8", "label_dx": -42, "label_dy": -12},
+        {"name": f"{prefix} FS-STRIP-R plain strip 165 x 38 x 8", "x": 100, "y": 4, "z": 45, "w": 165, "h": 8, "d": 38, "color": "rubber", "label": "FS-STRIP-R T8", "label_dx": 36, "label_dy": -10},
         {"name": f"{prefix} long bump-stop steel saddle placeholder", "x": -170, "y": 4, "z": 150, "w": 90, "h": 8, "d": 44, "color": "steel"},
-        {"name": f"{prefix} long bump-stop progressive body placeholder 70 H", "x": -170, "y": 43, "z": 150, "w": 70, "h": 70, "d": 40, "color": "rubber"},
+        {"name": f"{prefix} long bump-stop progressive body placeholder 70 H", "x": -170, "y": 43, "z": 150, "w": 70, "h": 70, "d": 40, "color": "rubber", "label": "BUMP long H70", "label_dx": -64, "label_dy": -8},
         {"name": f"{prefix} short right-front bump-stop steel saddle placeholder", "x": -45, "y": 4, "z": 150, "w": 90, "h": 8, "d": 44, "color": "steel"},
-        {"name": f"{prefix} short right-front progressive body placeholder 60 H", "x": -45, "y": 38, "z": 150, "w": 66, "h": 60, "d": 38, "color": "rubber"},
-        {"name": f"{prefix} exhaust hanger hold-only teardrop envelope 48 x 86 x 22", "x": 105, "y": 11, "z": 150, "w": 48, "h": 22, "d": 86, "color": "rubber"},
+        {"name": f"{prefix} short right-front progressive body placeholder 60 H", "x": -45, "y": 38, "z": 150, "w": 66, "h": 60, "d": 38, "color": "rubber", "label": "BUMP short H60", "label_dx": 42, "label_dy": -8},
+        {"name": f"{prefix} exhaust hanger hold-only teardrop envelope 48 x 86 x 22", "x": 105, "y": 11, "z": 150, "w": 48, "h": 22, "d": 86, "color": "rubber", "label": "EXH hold T22", "label_dx": 44, "label_dy": -12},
     ]
 
 
@@ -364,6 +364,14 @@ SCENES = {
         "camera": [430, 290, 470],
         "target": [-25, 32, 25],
         "size": "BM pads 70/80 square with 18 mm bores; FS-OVAL 96 x 64 x 15; FS-STRIP 165 x 38 x 8",
+        "height_callouts": [
+            "BM-ISO-SM: 70 L x 70 W x 22 H",
+            "BM-ISO-LG: 80 L x 80 W x 24 H",
+            "FS-OVAL: 96 L x 64 W x 15 T",
+            "FS-STRIP-L/R: 165 L x 38 W x 8 T",
+            "BUMP long: 70 H; BUMP short: 60 H",
+            "EXH hold target: 48 W x 86 H x 22 T",
+        ],
         "load_path": "Rubber pads isolate body/front-support loads through flat parallel bearing faces; bump-stop geometry remains vehicle-measurement controlled.",
         "service_intent": "Use the visual for package orientation, then use the OpenSCAD files for exact 3D envelope, edge break, hole, and release-state controls.",
         "boxes": rubber_order_boxes("Longman order"),
@@ -375,6 +383,14 @@ SCENES = {
         "camera": [430, 290, 470],
         "target": [-25, 32, 25],
         "size": "OpenSCAD source models in models_3d carry exact envelopes, bores, relief options, and measurement placeholders",
+        "height_callouts": [
+            "BM-ISO-SM: 70 L x 70 W x 22 H",
+            "BM-ISO-LG: 80 L x 80 W x 24 H",
+            "FS-OVAL: 96 L x 64 W x 15 T",
+            "FS-STRIP-L/R: 165 L x 38 W x 8 T",
+            "BUMP long: 70 H; BUMP short: 60 H",
+            "EXH hold target: 48 W x 86 H x 22 T",
+        ],
         "load_path": "Body/front-support pads are released as solid automotive rubber first articles; hardware, sleeves, cups, and bump-stop saddle geometry are separately controlled.",
         "service_intent": "Use this dashboard visual for orientation only; OpenSCAD and CSV controls remain the fabrication source of truth.",
         "boxes": rubber_order_boxes("Rubber recreation"),
@@ -519,6 +535,10 @@ def polygon(points: list[tuple[float, float, float]], css_class: str) -> str:
     return f'<polygon class="{css_class}" points="{points_attr([iso_point(*point) for point in points])}" />'
 
 
+def clamp(value: float, lower: float, upper: float) -> float:
+    return max(lower, min(upper, value))
+
+
 def prism(box: dict[str, object], index: int) -> list[str]:
     x = float(box["x"]) - float(box["w"]) / 2
     z = float(box["z"]) - float(box["d"]) / 2
@@ -539,22 +559,62 @@ def prism(box: dict[str, object], index: int) -> list[str]:
     ]
 
 
+def box_static_label(box: dict[str, object]) -> str:
+    label = str(box.get("label", "")).strip()
+    if not label:
+        return ""
+    px, py = iso_point(float(box["x"]), float(box["z"]), float(box["y"]) + float(box["h"]))
+    lx = clamp(px + float(box.get("label_dx", 0)), 44, 850)
+    ly = clamp(py + float(box.get("label_dy", -18)), 96, 520)
+    return (
+        f'<line class="callout" x1="{px:.1f}" y1="{py:.1f}" x2="{lx:.1f}" y2="{ly - 12:.1f}" />'
+        f'<text class="part-label" x="{lx:.1f}" y="{ly:.1f}">{escape(label)}</text>'
+    )
+
+
+def height_callout_legend(scene: dict[str, object]) -> str:
+    rows = [str(row).strip() for row in scene.get("height_callouts", []) if str(row).strip()]
+    if not rows:
+        return ""
+    x = 610
+    y = 102
+    width = 276
+    height = 34 + len(rows) * 22
+    text_rows = [
+        f'<text class="legend-title" x="{x + 16}" y="{y + 24}">Height / Thickness</text>'
+    ]
+    for index, row in enumerate(rows):
+        text_rows.append(
+            f'<text class="legend-text" x="{x + 16}" y="{y + 50 + index * 22}">{escape(row)}</text>'
+        )
+    return (
+        f'<rect class="legend-box" x="{x}" y="{y}" width="{width}" height="{height}" rx="6" />'
+        + "".join(text_rows)
+    )
+
+
 def write_svg(package_id: str, scene: dict[str, object]) -> None:
     css: list[str] = []
     elems: list[str] = [
         '<rect class="background" width="920" height="620" />',
         '<ellipse class="shadow" cx="455" cy="430" rx="330" ry="74" />',
     ]
+    part_labels: list[str] = []
     for index, box in enumerate(scene.get("boxes", [])):
         parts = prism(box, index)
         css.extend(parts[:3])
         elems.extend(parts[3:])
+        label = box_static_label(box)
+        if label:
+            part_labels.append(label)
     title = escape(str(scene["title"]))
     subtitle = escape(str(scene["subtitle"]))
     labels = [
         f'<text class="title" x="34" y="46">{title}</text>',
         f'<text class="subtitle" x="34" y="74">{subtitle}</text>',
         '<text class="label" x="34" y="556">Static assembly visual. Open the HTML file for rotate/zoom interaction.</text>',
+        *part_labels,
+        height_callout_legend(scene),
     ]
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="920" height="620" viewBox="0 0 920 620" role="img">
   <style>
@@ -562,10 +622,15 @@ def write_svg(package_id: str, scene: dict[str, object]) -> None:
     .shadow {{ fill: #d8dde2; opacity: 0.7; }}
     .title {{ font: 700 26px Arial, sans-serif; fill: #202a33; }}
     .subtitle, .label {{ font: 16px Arial, sans-serif; fill: #4f5d68; }}
+    .part-label {{ font: 700 13px Arial, sans-serif; fill: #111820; stroke: #ffffff; stroke-width: 4px; paint-order: stroke; }}
+    .callout {{ stroke: #111820; stroke-width: 1.1; opacity: 0.78; }}
+    .legend-box {{ fill: #ffffff; stroke: #c8d0d8; stroke-width: 1; opacity: 0.96; }}
+    .legend-title {{ font: 700 15px Arial, sans-serif; fill: #202a33; }}
+    .legend-text {{ font: 13px Arial, sans-serif; fill: #27323a; }}
     {''.join(css)}
   </style>
-  {''.join(labels)}
   {''.join(elems)}
+  {''.join(labels)}
 </svg>
 """
     out_dir = FAB_DIR / package_id
@@ -574,6 +639,14 @@ def write_svg(package_id: str, scene: dict[str, object]) -> None:
 
 def write_html(package_id: str, scene: dict[str, object]) -> None:
     scene_json = json.dumps(scene, separators=(",", ":"))
+    height_rows = [str(row).strip() for row in scene.get("height_callouts", []) if str(row).strip()]
+    height_detail = ""
+    if height_rows:
+        height_detail = (
+            "        <div><dt>Height / thickness</dt><dd>"
+            + "<br>".join(escape(row) for row in height_rows)
+            + "</dd></div>\n"
+        )
     html = f"""<!doctype html>
 <html lang="en">
 <head>
@@ -631,7 +704,7 @@ def write_html(package_id: str, scene: dict[str, object]) -> None:
       <dl>
         <div><dt>Package role</dt><dd>{escape(str(scene["subtitle"]))}</dd></div>
         <div><dt>Load path</dt><dd>{escape(str(scene["load_path"]))}</dd></div>
-        <div><dt>Service intent</dt><dd>{escape(str(scene["service_intent"]))}</dd></div>
+{height_detail}        <div><dt>Service intent</dt><dd>{escape(str(scene["service_intent"]))}</dd></div>
       </dl>
     </aside>
   </main>
