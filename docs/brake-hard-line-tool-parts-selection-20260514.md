@@ -28,7 +28,7 @@ Final fabrication still waits for one old line removed intact, a straight-on vie
 | P0 | Tee/unions | Replace corroded or seized rear axle tees/inline unions only with brake-rated fittings that match thread, seat, mounting, port orientation, and tube entry angle. No compression/plumbing fittings. |
 | P0 | Flex hoses | Buy complete crimped front-left, front-right, and rear-center brake flex hose assemblies by old sample/fitted ends. No roll hose. |
 | P0 | Supports | Buy `4.75 mm` rubber-lined P-clips, brake hose U-clips, axle line supports, grommets/edge trim, and plated fasteners. Support hard lines every `300-400 mm` and near unions/bends. |
-| P0 | Opening prep | Before opening hydraulics, have line caps/plugs, brake cleaner, catch bottle/bleeder kit, rags, and catch tray on hand. DOT 3 fluid, clear bleed hose, and nitrile gloves are already received. |
+| P0 | Opening prep | No separate purchase line. Before opening hydraulics, verify on-hand/workshop line caps/plugs, brake cleaner, catch bottle/bleeder kit, rags, and catch tray are ready. DOT 3 fluid, clear bleed hose, and nitrile gloves are already received. |
 
 ## Reject Rules
 

@@ -36,6 +36,7 @@
 - User sourcing rule from 2026-05-24: use local/catalog Pakistan supply, local machine work, and old-sample matching first. Imported Cruiser Corps/SOR/CruiserParts/Toyota overseas listings are reference data only unless the user explicitly approves an expensive import.
 - Buying order correction from 2026-05-24: price the brake hard-line tube, fittings, and local fabrication first, before buying more wheel cylinders, shoes/hardware, drums, or parking-brake cable parts.
 - Wheel-cylinder correction from 2026-05-24: the four-cylinder rear kit is not purchase-released by the drum photo. The loose-part catalog photo shows the mounting/port side, while the installed photo shows the drum-side barrel/boots, so a visual mismatch is not enough to reject it; however old-sample backside/port/mounting/bore confirmation controls final purchase.
+- Rear drum decomposition from 2026-05-27: treat the opened drum as separate order lines, not one vague brake row. Shoes/friction pieces are the PakWheels `K-2255-N/Y` candidate order pending delivery/fit check; spring, hold-down, adjuster, and retainer hardware is still required unless that delivery proves it includes a complete matching kit; the visible wheel cylinder is the hydraulic entry-point part and remains a new/sample-match requirement.
 
 ## Brake Configuration Evidence Photos
 
@@ -122,14 +123,14 @@ Current rear-brake buying status from the May 23 drum-open teardown chat plus th
 
 | Item | Qty basis | Current status |
 | --- | ---: | --- |
-| Rear wheel cylinders | Actual count from teardown | Sample-match hold. Toyota part numbers `47550-69075`, `47560-69055`, `47570-69065`, `47580-69055`, Cruiser Corps `A28`, and SOR `081-02C-KIT` remain references only until the old cylinders confirm count, bore, mounting bolt spacing, port thread, bleed screw access, and pushrod/boot style. |
-| Rear brake shoes | 1 axle set | Use local shoe set first; the Pakistan PakWheels `K-2255-N/Y` lead and Cruiser Corps `549-163` are reference/search leads only. Verify shoe width before payment. If this is a non-USA 9/1975+ 3-inch drum setup, switch to a matching local 3-inch shoe route. |
-| Rear drum hardware | 1 axle kit | Source springs, hold-downs, adjusters, retainers, and parking-brake lever hardware locally by sample. Cruiser Corps `551-113`, `A16`, and SOR references are only to identify contents and compare layout. |
+| Rear wheel cylinders / hydraulic entry-point assemblies | Actual count from teardown | Sample-match hold. Toyota part numbers `47550-69075`, `47560-69055`, `47570-69065`, `47580-69055`, Cruiser Corps `A28`, and SOR `081-02C-KIT` remain references only until the old cylinders confirm count, bore, mounting bolt spacing, port thread, bleed screw access, and pushrod/boot style. |
+| Rear brake shoes / friction pieces | 1 axle set | PakWheels `K-2255-N/Y` candidate order is already placed under orders `1075298` and `1075421`; verify delivered unit count, shoe width, arc, and drum fit before installation. If this is a non-USA 9/1975+ 3-inch drum setup, switch to a matching local 3-inch shoe route. |
+| Rear drum hardware | 1 axle kit | Still source springs, hold-downs, adjusters, retainers, and parking-brake lever hardware locally by sample unless the PakWheels delivery proves a complete matching kit is included. Cruiser Corps `551-113`, `A16`, and SOR references are only to identify contents and compare layout. |
 | Rear center flex hose | 1 | Source locally first using old sample/free length/fittings/bracket groove; Cruiser Corps `553-103` is a reference only. Hose must still be a complete crimped brake hose assembly rated to `DOT/SAE J1401` or OEM-equivalent. |
 | Wheel-cylinder bolt kits | 4 x 8-piece kits | Source locally with the cylinders or by bolt/washer sample. Cruiser Corps `A16` qty `4` is a reference for count only. |
-| Rear brake drums | 2 | Do not import drums by default. Measure and machine locally if safely within limit, or replace locally if scored, cracked, stepped, near/over service limit, or unsafe to machine. Cruiser Corps `553-115` remains reference only. |
+| Rear brake drums | 2 | No active order. Inspect and measure first; machine locally only if needed and safely within limit, or replace locally only if scored, cracked, stepped, near/over service limit, or unsafe to machine. Cruiser Corps `553-115` remains reference only. |
 
-Still source locally/by sample: rear axle hard brake lines in `4.75 mm / 3/16 in` brake tube, flare nuts/fittings, parking-brake cables, clips/retainers, line caps/plugs, brake cleaner, rags, catch tray, and any cable/equalizer hardware not proven in the old samples.
+Still source locally/by sample: rear axle hard brake lines in `4.75 mm / 3/16 in` brake tube, flare nuts/fittings, parking-brake cables, clips/retainers, and any cable/equalizer hardware not proven in the old samples. Hydraulic-opening consumables are managed from on-hand/workshop supplies, not a separate order line; verify caps/plugs, cleaner, rags, and catch tray are ready before opening lines.
 
 ### Most Relevant Rear-Axle Photos
 
@@ -174,7 +175,8 @@ Still source locally/by sample: rear axle hard brake lines in `4.75 mm / 3/16 in
 | P0 | New rear parking-brake cable set: left/right rear cables, equalizer/clevis hardware, return springs, clips, and adjuster parts matched to the backing plates. |
 | P0 | Rear axle hard brake lines recreated in 3/16 in / 4.75 mm brake tube, with the correct flare and fitting threads. |
 | P0 | Rear center flexible brake hose with correct chassis-side and axle-side fittings, retaining clip, and old-sample/free length. |
-| P0 | Rear wheel cylinders by actual teardown count once bore/port/mounting pattern is confirmed. |
+| P0 | Rear wheel cylinders / hydraulic entry-point assemblies by actual teardown count once bore/port/mounting pattern is confirmed. |
+| P0 | Rear drum spring, hold-down, adjuster, and retaining hardware by opened-drum layout or old samples, unless the ordered shoe delivery proves a complete matching hardware kit is included. |
 | P0 | Full brake flex hose set: front left, front right, and rear center after front caliper fitting style, rear center fittings, bracket retention, and free length are captured. |
 | P0 | Brake flex-hose retaining U-clips and bracket hardware for front left, front right, and rear center hose brackets. |
 | P0 | Full line-support pack: rubber-lined P-clips for `4.75 mm` hard line, clamp-on rubber-lined axle supports, pass-through grommets/edge trim, M5/M6 fasteners, and larger cable saddles where parking-brake cables rub. |
@@ -184,14 +186,15 @@ Still source locally/by sample: rear axle hard brake lines in `4.75 mm / 3/16 in
 | P1 | Brake-line clips, parking-brake cable retainers, rubber sleeves/grommets, and rubber-lined P-clips where originals are missing or corroded. |
 | P1 | Front rotors: machine or replace after measured rotor thickness, scoring, runout, and service limit check. |
 | P1 | Brake master cylinder, reservoir hoses/caps/seals, and proportioning/bias hardware only after the installed master/booster/proportioning layout is photographed and inspected. |
-| P1 | Brake fluid, bleed hose/bottle, line caps/plugs, and brake cleaner/consumables for the full hydraulic closeout. |
+| P1 | Brake fluid and hydraulic closeout setup. DOT 3 fluid and clear bleed hose are received; caps/plugs, cleaner, rags, and catch tray are on-hand/workshop-managed and must be verified before opening lines. |
 
 ### Parts Not To Blind-Order
 
 | Item | Why held |
 | --- | --- |
-| Rear brake shoes and spring kit | Baseline replace, but exact set is held until drum family, shoe width/diameter, adjuster style, and spring layout are known. |
-| Rear wheel cylinders | Baseline replace by actual teardown count, but exact part is held until bore, port thread, mounting pattern, pushrod style, and bleed screw access are confirmed. |
+| Rear brake shoes / friction pieces | Candidate PakWheels order exists, but fit is not closed until delivered units are counted and matched for shoe width, arc, lining, and drum fit. |
+| Rear drum spring and adjuster hardware | Still required as its own line unless the shoe delivery proves the complete matching kit is included; spring layout and hold-down dimensions come from the opened drum. |
+| Rear wheel cylinders / hydraulic entry-point assemblies | Baseline replace by actual teardown count, but exact part is held until bore, line-entry port thread, mounting pattern, pushrod style, and bleed screw access are confirmed. |
 | Front pads/caliper kits/rotors | Baseline service is approved, but the front disc conversion hardware family is not yet positively identified. |
 | Rear parking-brake cables | Baseline replace with new cable assemblies, but cable length, sheath length, end fittings, equalizer hardware, and clip positions must come from the old samples. |
 | Brake master cylinder | Master bore, booster/proportioning layout, reservoir condition, and fitting threads are not yet confirmed. |
@@ -238,7 +241,7 @@ Use this as the workshop handoff. The output should be photos plus measurements 
 - `part_copper_grease`: already received
 - `part_mech_brake_flex_hose_set`: purchase-ready and should stay in the baseline safety bucket
 - `part_dot3_brake_fluid_autohub_6x354ml`: received from Autohub as 6 x 354 ml sealed DOT 3 brake fluid, 2124 ml total, order `62228`; reject opened/damaged bottles before use.
-- `part_brake_fluid_bleed_consumables`: still purchase-ready for the remaining non-fitment hydraulic-opening consumables: line caps/plugs, catch bottle or bleeder kit, brake cleaner, rags, and catch tray. Clear bleed hose and nitrile gloves are received. Do not use DOT 5 or mix unknown old fluid.
+- `BR-SYS-002`: hydraulic-opening prep is a workstream safety gate, not a purchase line. Verify on-hand/workshop line caps/plugs, catch bottle or bleeder kit, brake cleaner, rags, and catch tray before opening any hydraulic fitting. Clear bleed hose and nitrile gloves are received. Do not use DOT 5 or mix unknown old fluid.
 - Existing estimate rows in `data/manual/workbook_tabs/parts.csv`:
   - `Brake master cylinder`: PKR `8,000-30,000`
   - `Wheel cylinders / caliper rebuild parts`: PKR `8,000-40,000`

@@ -1,20 +1,20 @@
 # Parts List Review
 
-- Generated: 2026-05-27 20:41:07
+- Generated: 2026-05-27 22:59:57
 - Source: `data/manual/expenses.csv` (`bucket=parts`) -> 122 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
 
 ## Action Buckets
 
-- `buy_now`: 39
+- `buy_now`: 40
 - `cancelled_or_not_required`: 12
 - `completed_or_received`: 33
 - `deferred`: 6
 - `needs_spec_before_order`: 9
 - `ordered_waiting_arrival`: 10
 - `spec_ready_release_hold`: 3
-- `unclear`: 10
+- `unclear`: 9
 
 ## Workstream Split
 
@@ -43,8 +43,9 @@
 - `part_tub_repair_steel_sheet_1_6mm_20260513` [body_chassis] 1.6 mm cold-rolled mild-steel sheet for heavier tub patch plates
 - `part_brake_clutch_line_support_clamps_full_vehicle_20260514` [brake_system] Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection
 - `part_brake_flex_hose_retaining_clip_pack_20260514` [brake_system] Brake flex-hose retaining U-clips and bracket hardware pack
-- `part_brake_fluid_bleed_consumables` [brake_system] Brake hydraulic opening prep remaining consumables - caps plugs bleed bottle cleaner rags catch tray
 - `part_rear_center_brake_flex_hose` [brake_system] Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference
+- `part_rear_drum_spring_hold_down_hardware_20260527` [brake_system] Rear drum spring / hold-down / adjuster hardware kit
+- `part_rear_parking_brake_attachment_hardware_20260527` [brake_system] Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips
 - `part_cabin_compact_fuse_boxes` [electrical_reset] Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on
 - `part_firewall_grommet_set_large_power` [electrical_reset] Additional firewall grommet set IDs 16/20/25 mm
 - `part_firewall_grommet_set_small_medium` [electrical_reset] Additional firewall grommet set IDs 6/8/10/12 mm
@@ -59,7 +60,7 @@
 - `part_hvac_evaporator_drain_mount_kit_20260514` [interior_weatherproofing] Evaporator drain hose and mounting/sealing kit
 - `part_hvac_hidden_evaporator_blower_unit_20260514` [interior_weatherproofing] Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment
 - `part_hvac_return_air_grille_filter_20260514` [interior_weatherproofing] Hidden return-air grille and washable filter for evaporator intake
-- `part_hvac_slim_louver_outlet_panel_20260514` [interior_weatherproofing] Slim under-dash louver outlet panel and adjustable vents
+- `part_hvac_slim_louver_outlet_panel_20260514` [interior_weatherproofing] Slim under-dash louver outlet panel / matched air-directing vent pieces
 - `part_hvac_barrier_hose_fittings_20260514` [mechanical_baseline] A/C barrier hose and refrigerant-compatible fittings
 - `part_hvac_firewall_bulkhead_fittings_20260514` [mechanical_baseline] A/C firewall bulkhead fittings and sealing grommets
 - `part_hvac_parallel_flow_condenser_20260514` [mechanical_baseline] Parallel-flow A/C condenser sized to core support

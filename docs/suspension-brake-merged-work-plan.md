@@ -55,11 +55,11 @@ Do not final-close suspension until brake hose, hard-line, parking-brake cable, 
 | Rear center flexible brake hose | 1 | Selected route; order proof pending | Cruiser Corps `553-103` is the selected online route, but match fitting style, old-sample/free length, and fitted route before final fit. |
 | Rear wheel cylinders | 1 four-cylinder rear set | Selected standard route | May 24 photos plus Toyota/SOR references support the standard 9/1971-7/1980 J40/BJ four-cylinder rear setup: RH front/upper `47550-69075`, RH rear/lower `47560-69055`, LH front/upper `47570-69065`, LH rear/lower `47580-69055`. City Racer sells this as a four-piece set; Cruiser Corps `A28` and SOR `081-02C-KIT` are comparable kit routes. |
 | Rear shoes and spring/adjuster hardware | 1 axle set | Selected route; dimensions/layout still to verify | Cruiser Corps `549-163` shoes plus `551-113` hardware remain plausible if shoe width/layout matches. Add Cruiser Corps `A16` qty `4` for wheel-cylinder bolts. Verify shoe width, drum ID, anchor/adjuster style, parking-brake lever fit, and spring layout; if this is a non-USA 3-inch drum setup, switch to a 3-inch shoe/hardware route. |
-| Rear drums | 2 | Optional best-route; order proof pending | Cruiser Corps `553-115` x2 if avoiding machining/rework risk; otherwise measure and machine/replace only if scored, cracked, stepped, or beyond service limit. |
+| Rear drums | 2 | No active order | Do not order now. Inspect and measure first; machine locally only if needed and safely within service limit, or replace locally only if scored, cracked, stepped, near/over limit, or unsafe to machine. Cruiser Corps `553-115` remains reference only. |
 | Brake-line and parking-brake cable clips | As counted | Count hold | Replace corroded/missing clips and add rubber-lined P-clips where original support is missing. |
 | Brake master/reservoir/proportioning service parts | As fitted | Inspection hold | Replace only after current master, reservoir, booster, ports, and proportioning layout are photographed and checked. |
 | Rear differential/axle inspection consumables | As required | Inspection hold | Correct gear oil after open/LSD status is confirmed, carrier gasket or approved sealant, plug washers if fitted, breather parts, axle seals, pinion seal, wheel bearings, and carrier hardware only if inspection proves need. |
-| Hydraulic-opening prep consumables | Enough for full bleed/line opening | Purchase-ready | Buy line caps/plugs, catch bottle or bleeder kit, brake cleaner, rags, and catch tray before any hydraulic line is opened. Clear bleed hose and nitrile gloves are received. |
+| Hydraulic-opening prep consumables | Enough for full bleed/line opening | On-hand/workshop-managed | No separate order line. Verify line caps/plugs, catch bottle or bleeder kit, brake cleaner, rags, and catch tray are physically ready before any hydraulic line is opened. Clear bleed hose and nitrile gloves are received. |
 | Brake fluid | 2 L sealed total unless workshop specifies more | Received | Use sealed fresh DOT 3 brake fluid meeting SAE J1703 / FMVSS No. 116 DOT 3; do not use DOT 5 or mix unknown old fluid. |
 | Copper grease | On hand | Received | Use sparingly on appropriate brake contact points only, never on friction surfaces. |
 
@@ -76,14 +76,14 @@ Do not final-close suspension until brake hose, hard-line, parking-brake cable, 
 | Metric socket/spanner set | Received tool set | Confirm sizes for spring, shackle, shock, wheel, and brake fittings. |
 | Flare-nut/line wrenches | Not clearly tracked | Required for brake hard lines and flex hose fittings. |
 | Brake line cutter, bender, and flaring tool | Planned as `tool_brake_fuel_line_cutter_bender_flaring_kit` | Required only if fabricating lines at home; otherwise confirm the brake shop provides cutter, bender, deburrer, flaring dies, and fittings. |
-| Brake bleeder bottle/vacuum bleeder and clear hose | Clear hose received; bleeder bottle/vacuum bleeder still open | Required for hydraulic closeout. |
+| Brake bleeder bottle/vacuum bleeder and clear hose | Clear hose received; bottle/bleeder covered by on-hand/workshop setup | Verify before hydraulic closeout. |
 | Brake spring pliers/hold-down tool | Not clearly tracked | Required for rear drum spring/hardware work unless workshop provides them. |
 | Caliper piston tool or C-clamp | Not clearly tracked | Required for front pad/caliper service. |
 | Digital caliper/tape | Digital caliper planned/open | Needed for cable lengths, shoe width, drum ID, rotor thickness, hose/fitting checks, and bracket dimensions. |
 | Dial indicator with magnetic base and gear marking compound | Not clearly tracked | Required if backlash/contact-pattern indication is being recorded or if the carrier is removed. |
 | Seal puller/installer and bearing support/press access | Workshop capability hold | Required before committing to axle seal, pinion seal, or bearing replacement. |
-| Line caps/plugs | Not clearly tracked | Required before any hydraulic line is opened. |
-| Brake cleaner, rags, catch tray, nitrile gloves, eye protection | Nitrile gloves received; cleaner, rags, catch tray, and eye protection still need confirmation | Must be ready before opening drums or hydraulic lines. |
+| Line caps/plugs | On-hand/workshop-managed | Verify before any hydraulic line is opened. |
+| Brake cleaner, rags, catch tray, nitrile gloves, eye protection | Nitrile gloves received; remaining items covered by on-hand/workshop setup | Verify they are ready before opening drums or hydraulic lines. |
 | Camera/phone, labels/paint marker, ruler/tape, and clean background board | Available by workflow | Required for `BR-CAPTURE-001` before removal so old parts remain usable as samples and order evidence. |
 
 ## No-Go Conditions

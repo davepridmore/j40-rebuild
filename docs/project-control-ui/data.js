@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-27T20:41:25+05:00",
+  "generated_at": "2026-05-27T23:01:24+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -52,7 +52,7 @@ window.J40_DASHBOARD_DATA = {
     "wiring_diagram_reference_images": 1,
     "parts_open_rows": 77,
     "parts_ordered_pending_delivery": 10,
-    "urgent_part_actions": 19,
+    "urgent_part_actions": 20,
     "capture_data_tasks": 107,
     "capture_data_tasks_now": 95,
     "supply_rows_tracked": 284,
@@ -32842,7 +32842,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_hvac_slim_louver_outlet_panel_20260514",
           "workstream": "interior_weatherproofing",
-          "item": "Slim under-dash louver outlet panel and adjustable vents",
+          "item": "Slim under-dash louver outlet panel / matched air-directing vent pieces",
           "status": "planned",
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
@@ -32854,8 +32854,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_hvac_slim_louver_outlet_panel_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213",
-          "notes": "Required to route cold air out cleanly from the hidden evaporator. Prefer a slim metal/plastic louver panel with adjustable vents that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213|user_update_2026-05-27_required_purchase_line_cleanup",
+          "notes": "Required to route cold air out cleanly from the hidden evaporator. One side/one piece has been identified, so the purchase line must cover the matching mate or a complete matched left-right outlet set with adjustable louvers. Prefer a slim metal/plastic louver panel or pair that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -32863,7 +32863,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-            "caption": "Slim under-dash louver outlet panel and adjustable vents \u00b7 rust/metal treatment reference image",
+            "caption": "Slim under-dash louver outlet panel / matched air-directing vent pieces \u00b7 rust/metal treatment reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -33165,7 +33165,7 @@ window.J40_DASHBOARD_DATA = {
                 "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment (purchase_ready; delivery not_ordered; amount missing)",
                 "Compact A/C control panel or integrated controls (purchase_ready; delivery not_ordered; amount missing)",
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
-                "Slim under-dash louver outlet panel and adjustable vents (purchase_ready; delivery not_ordered; amount missing)"
+                "Slim under-dash louver outlet panel / matched air-directing vent pieces (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -33283,7 +33283,7 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Slim under-dash louver outlet panel and adjustable vents (purchase_ready; delivery not_ordered; amount missing)",
+                "Slim under-dash louver outlet panel / matched air-directing vent pieces (purchase_ready; delivery not_ordered; amount missing)",
                 "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment (purchase_ready; delivery not_ordered; amount missing)",
                 "Compact A/C control panel or integrated controls (purchase_ready; delivery not_ordered; amount missing)",
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
@@ -33412,7 +33412,7 @@ window.J40_DASHBOARD_DATA = {
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
                 "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment (purchase_ready; delivery not_ordered; amount missing)",
                 "Compact A/C control panel or integrated controls (purchase_ready; delivery not_ordered; amount missing)",
-                "Slim under-dash louver outlet panel and adjustable vents (purchase_ready; delivery not_ordered; amount missing)",
+                "Slim under-dash louver outlet panel / matched air-directing vent pieces (purchase_ready; delivery not_ordered; amount missing)",
                 "2.5 inch duct hose, vent adapters, and defrost/demist hose kit (purchase_ready; delivery not_ordered; amount missing)"
               ]
             }
@@ -35394,7 +35394,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "30 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -35448,7 +35448,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 30 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -57874,7 +57874,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "requirement_id": "BR-REAR-004",
-          "requirement_name": "Rear wheel cylinders and bleed screws",
+          "requirement_name": "Rear wheel cylinders / hydraulic entry-point assemblies",
           "pipe_id": "",
           "vehicle_location": "Left and right rear drum backing plates",
           "pipe_or_line": "",
@@ -57893,13 +57893,13 @@ window.J40_DASHBOARD_DATA = {
           "spec_status": "sample_match_required_before_purchase",
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
-          "current_action": "Do not buy from catalog images alone. The loose replacement cylinder image shows the mounting/port side, while the installed photo shows the drum-side barrel/boots. Photograph the backside/line-port/bleeder area and lower shoe area, then remove and keep old cylinders as samples before purchase.",
-          "exact_recreation_spec": "Match the fitted rear drum/backing-plate family, actual cylinder count, bore, mounting bolt pattern, port thread, pushrod end, boot shape, and bleed-screw access. Toyota 47550-69075 / 47560-69055 / 47570-69065 / 47580-69055 and A28-style four-cylinder kits are references only until the old samples match.",
+          "current_action": "Treat the visible drum-side cylinder as the main hydraulic entry-point part. Photograph the backside/line-port/bleeder/mounting area, then buy new cylinders by old sample; no catalog blind-order.",
+          "exact_recreation_spec": "Replace the rear drum hydraulic entry-point cylinders matched to the fitted backing-plate family, actual cylinder count, bore, mounting bolt pattern, port thread, pushrod end, boot shape, and bleed-screw access. Toyota 47550-69075 / 47560-69055 / 47570-69065 / 47580-69055 and A28-style four-cylinder kits remain references only until old samples match.",
           "material_spec": "Brake wheel cylinders with new bleed screws and dust boots; brake-fluid-compatible seals",
-          "critical_measurements": "Actual cylinder count per side, cylinder bore, mounting bolt spacing, port thread, pushrod/slot style, backing plate side, drum/shoe family, bleed screw size and access",
+          "critical_measurements": "Actual cylinder count per side, cylinder bore, mounting bolt spacing, line-entry port thread/seat, pushrod/slot style, backing plate side, drum/shoe family, bleed screw size and access",
           "fit_and_test": "No fluid leak at boots or ports; bleed screws open cleanly; shoes sit square and return correctly after adjustment",
           "source_ref": "docs_brake_workstream|rear_brake_drum_baseline|user_image_2026-05-24_catalog_vs_installed_view_question",
-          "notes": "May 24 user challenged visual fit between loose cylinder kit and installed top cylinder. Treat catalog kit as candidate only; old removed cylinder controls final order.",
+          "notes": "May 24 user challenged visual fit between loose cylinder kit and installed top cylinder. Treat catalog kit as candidate only; old removed cylinder controls final order. User update 2026-05-27: rear drum photo is now decomposed into separate shoes/friction set, spring hardware, and this hydraulic entry-point cylinder requirement.",
           "evidence_images": [
             {
               "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
@@ -57989,12 +57989,12 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "requirement_id": "BR-REAR-005",
-          "requirement_name": "Rear brake shoes and spring/adjuster hardware",
+          "requirement_name": "Rear brake shoes / friction lining set",
           "pipe_id": "",
           "vehicle_location": "Left and right rear drums and internal shoe hardware",
           "pipe_or_line": "",
-          "replace_scope": "replace_after_drum_identification",
-          "quantity": "1_axle_set",
+          "replace_scope": "replace",
+          "quantity": "1_axle_set_or_ordered_units_to_verify",
           "photo_evidence": [
             "20260501_194322_gp_XuRtjN4w",
             "20260324_004852",
@@ -58005,15 +58005,15 @@ window.J40_DASHBOARD_DATA = {
           ],
           "photo_status": "direct_location_plus_may12_context_photos",
           "spec_status": "ordered_local_candidate_fit_pending",
-          "acquisition_status": "ordered_partial_pending_delivery",
+          "acquisition_status": "ordered_pending_delivery",
           "installation_status": "not_installed",
-          "current_action": "PakWheels orders #1075298 and #1075421 placed for five K-2255-N/Y rear brake shoe units. On delivery, verify quantity coverage, shoe width, arc, lining, adjuster/spring compatibility, and drum condition against opened drums before installation. Spring/adjuster hardware and wheel-cylinder fasteners remain unproven unless included in the package.",
-          "exact_recreation_spec": "Order rear brake shoes, hold-down springs, return springs, adjuster hardware, and retaining clips matched to the actual drum/backing-plate family; drums only if worn, scored, cracked, or over maximum diameter",
-          "material_spec": "Brake friction shoes and new spring hardware; drums machined/replaced only within service limits",
-          "critical_measurements": "Drum inside diameter, shoe width, shoe arc/length, adjuster style, spring layout, backing plate condition, shoe lining condition, drum scoring/step",
-          "fit_and_test": "Rear drums adjusted evenly; no drag after release; parking brake holds evenly after bedding and adjustment",
+          "current_action": "PakWheels orders #1075298 and #1075421 are the likely ordered friction set. On delivery, verify whether the five K-2255-N/Y units make the required axle set, then sample-match shoe width, arc, lining, and drum fit before installation.",
+          "exact_recreation_spec": "Fit new rear brake shoes/friction linings matched to the actual drum/backing-plate family. Do not reuse old linings; do not assume the shoe order includes springs, adjusters, hold-down pins, clips, or wheel-cylinder fasteners.",
+          "material_spec": "New brake friction shoes/linings matched to drum diameter and shoe width; no used shoes or relined unknown cores unless the brake shop explicitly certifies the work and fit.",
+          "critical_measurements": "Drum inside diameter, shoe width, shoe arc/length, lining thickness, adjuster contact points, backing plate condition, drum scoring/step",
+          "fit_and_test": "Rear drums adjusted evenly; full shoe contact after bedding; no drag after release; parking brake holds evenly after bedding and adjustment",
           "source_ref": "docs_brake_workstream|rear_brake_drum_baseline|part_rear_brake_shoes_hardware|gmail_order_1075298|gmail_order_1075421",
-          "notes": "May 12 photos add rear drum outside context. Rear shoes and hardware are baseline replacement items; keep rear drums as the default unless inspection gives a real reason to convert. | PakWheels K-2255-N/Y shoe candidate order placed 2026-05-25; status is pending delivery and fit/coverage verification, not installed or validated.",
+          "notes": "May 12 photos add rear drum outside context. PakWheels K-2255-N/Y shoe candidate order placed 2026-05-25; status is pending delivery and fit/coverage verification, not installed or validated. User update 2026-05-27: treat the shoes/friction pieces as the already-ordered part; spring/adjuster hardware is split to BR-REAR-007 and wheel cylinders remain BR-REAR-004.",
           "evidence_images": [
             {
               "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
@@ -58085,6 +58085,197 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rear_axle_and_leaf_springs",
               "stage": "steering_brakes_suspension",
               "media_id": "20260512_072947_gp_bNB9GvHA",
+              "matched_tokens": []
+            }
+          ]
+        },
+        {
+          "requirement_id": "BR-REAR-008",
+          "requirement_name": "Rear brake drum inspection / local machine decision",
+          "pipe_id": "",
+          "vehicle_location": "Left and right rear brake drums",
+          "pipe_or_line": "",
+          "replace_scope": "inspect_then_machine_or_replace_if_failed",
+          "quantity": "2",
+          "photo_evidence": [
+            "20260524_025547_gp_yCvA0bxA",
+            "20260524_025532_gp_YlEZxOmQ",
+            "20260524_025515_gp_zEaIZo5Q",
+            "20260524_025414_gp_VsFMrBNQ"
+          ],
+          "photo_status": "direct_drum_open_context_photos",
+          "spec_status": "inspection_measurement_required",
+          "acquisition_status": "no_active_purchase",
+          "installation_status": "not_installed",
+          "current_action": "Do not create or keep a procurement row for drums unless inspection proves the old drums fail. Measure ID/out-of-round, inspect scoring, cracks, step, and machine-shop capability.",
+          "exact_recreation_spec": "Inspect both rear drums and machine locally only if safely within service limit; replace locally only if scored, cracked, stepped, near/over service limit, out-of-round, or unsafe to machine. Cruiser Corps 553-115 remains a reference only and any import requires explicit approval.",
+          "material_spec": "Existing drums are inspection samples; no replacement material spec until failure is confirmed.",
+          "critical_measurements": "Inside diameter, service limit, scoring depth, step, cracks, heat checking, out-of-round, hub/register fit, and machining allowance",
+          "fit_and_test": "Drums pass service-limit inspection or are safely machined; replacement is locally sourced only after failure is documented; no import without explicit approval",
+          "source_ref": "docs_brake_workstream|rear_brake_drum_baseline|user_update_2026-05-27_no_current_rear_drum_order_reason",
+          "notes": "Moved from ordering/inventory to brake workstream on 2026-05-27 because there is no current reason to order drums after required rear-drum parts were split out.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-24",
+              "captured_date": "2026-05-24",
+              "captured_time": "02:55:47",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260524_025547_gp_yCvA0bxA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260524_025532_gp_YlEZxOmQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-24",
+              "captured_date": "2026-05-24",
+              "captured_time": "02:55:32",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260524_025532_gp_YlEZxOmQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260524_025515_gp_zEaIZo5Q.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-24",
+              "captured_date": "2026-05-24",
+              "captured_time": "02:55:15",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260524_025515_gp_zEaIZo5Q",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260524_025414_gp_VsFMrBNQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-24",
+              "captured_date": "2026-05-24",
+              "captured_time": "02:54:14",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260524_025414_gp_VsFMrBNQ",
+              "matched_tokens": []
+            }
+          ]
+        },
+        {
+          "requirement_id": "BR-REAR-007",
+          "requirement_name": "Rear drum spring, hold-down, adjuster, and retaining hardware",
+          "pipe_id": "",
+          "vehicle_location": "Left and right rear drum backing plates",
+          "pipe_or_line": "",
+          "replace_scope": "replace",
+          "quantity": "1_axle_hardware_kit_or_by_sample",
+          "photo_evidence": [
+            "20260524_025547_gp_yCvA0bxA",
+            "20260524_025532_gp_YlEZxOmQ",
+            "20260524_025515_gp_zEaIZo5Q",
+            "20260524_025414_gp_VsFMrBNQ",
+            "20260501_194322_gp_XuRtjN4w",
+            "20260324_004852",
+            "20260324_004906"
+          ],
+          "photo_status": "direct_drum_open_layout_photos",
+          "spec_status": "purchase_ready_sample_match",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "Buy new spring/hold-down/adjuster hardware by old-spring layout unless the PakWheels delivery proves a complete hardware kit is included. Do not reuse tired or rusty return springs.",
+          "exact_recreation_spec": "Rear drum hardware kit covering upper/lower return springs, hold-down springs/pins/cups, adjuster hardware, retaining clips, parking-brake lever clips, and any small shoe hardware matched to the opened drum layout.",
+          "material_spec": "New brake-rated plated spring steel and plated adjuster/retaining hardware; no reused stretched springs, rusty clips, or mixed unmatched side-to-side hardware.",
+          "critical_measurements": "Shoe width and web hole positions, spring length/wire diameter/hook style, hold-down pin length and backing-plate hole size, adjuster handedness/thread movement, parking-brake lever clip style",
+          "fit_and_test": "Shoes must return fully after pedal and handbrake release; adjusters move smoothly; springs do not rub hub or drum; both sides mirror correctly and hold adjustment after bedding.",
+          "source_ref": "docs_brake_workstream|rear_brake_drum_baseline|part_rear_drum_spring_hold_down_hardware_20260527|user_update_2026-05-27_rear_drum_parts_extrapolated",
+          "notes": "User update 2026-05-27: rear drum photo can be extrapolated into separate parts. Shoes/friction set appear already ordered; this row keeps the springs/hold-down/adjuster hardware visible as still required.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-24",
+              "captured_date": "2026-05-24",
+              "captured_time": "02:55:47",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260524_025547_gp_yCvA0bxA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260524_025532_gp_YlEZxOmQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-24",
+              "captured_date": "2026-05-24",
+              "captured_time": "02:55:32",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260524_025532_gp_YlEZxOmQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260524_025515_gp_zEaIZo5Q.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-24",
+              "captured_date": "2026-05-24",
+              "captured_time": "02:55:15",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260524_025515_gp_zEaIZo5Q",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260524_025414_gp_VsFMrBNQ.jpg",
+              "caption": "Reference Media \u00b7 Reference Material \u00b7 2026-05-24",
+              "captured_date": "2026-05-24",
+              "captured_time": "02:54:14",
+              "media_type": "photo",
+              "component_group": "documentation_reference",
+              "specific_component": "reference_media",
+              "stage": "reference_material",
+              "media_id": "20260524_025414_gp_VsFMrBNQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260501_194322_gp_XuRtjN4w.jpg",
+              "caption": "Rear Axle Spring Hanger And Crossmember \u00b7 Chassis Fixing \u00b7 2026-05-01",
+              "captured_date": "2026-05-01",
+              "captured_time": "19:43:22",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_axle_spring_hanger_and_crossmember",
+              "stage": "chassis_fixing",
+              "media_id": "20260501_194322_gp_XuRtjN4w",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260324_004852.jpg",
+              "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+              "captured_date": "2026-03-24",
+              "captured_time": "00:48:52",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_axle_and_leaf_springs",
+              "stage": "underside_inspection",
+              "media_id": "20260324_004852",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260324_004906.jpg",
+              "caption": "Rear Axle And Leaf Springs \u00b7 Underside Inspection \u00b7 2026-03-24",
+              "captured_date": "2026-03-24",
+              "captured_time": "00:49:06",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_axle_and_leaf_springs",
+              "stage": "underside_inspection",
+              "media_id": "20260324_004906",
               "matched_tokens": []
             }
           ]
@@ -58663,15 +58854,15 @@ window.J40_DASHBOARD_DATA = {
           ],
           "photo_status": "supporting_hydraulic_photos",
           "spec_status": "spec_ready_dot3",
-          "acquisition_status": "partial_received_remaining_purchase_ready",
+          "acquisition_status": "covered_on_hand_verify_before_opening",
           "installation_status": "not_installed",
-          "current_action": "Track Autohub order 62228 / 25050600072003 DOT 3 brake fluid as received, Daraz order 242508745080938 clear bleed hose as received, and Daraz order 242508745280938 nitrile gloves as received. Buy remaining line caps/plugs, catch bottle or bleeder kit, brake cleaner, rags, and catch tray before any hydraulic line is opened.",
+          "current_action": "Track Autohub order 62228 / 25050600072003 DOT 3 brake fluid as received, Daraz order 242508745080938 clear bleed hose as received, and Daraz order 242508745280938 nitrile gloves as received. User update 2026-05-27: no separate order line for remaining opening consumables; manage caps/plugs, catch bottle or bleeder kit, brake cleaner, rags, and catch tray from on-hand/workshop supplies, and verify before any hydraulic line is opened.",
           "exact_recreation_spec": "Flush and bleed the full system with DOT 3 after any hose, hard-line, wheel-cylinder, caliper, or master work. Do not top up unknown old fluid.",
-          "material_spec": "Sealed fresh DOT 3 brake fluid received under part_dot3_brake_fluid_autohub_6x354ml; clear bleed hose received under part_daraz_clear_pvc_bleed_hose_2m_20260504; nitrile gloves received under part_daraz_nitrile_gloves_black_l_100pc_20260504; still requires brake cleaner, line caps/plugs, rags, catch bottle or bleeder kit, and catch tray",
+          "material_spec": "Sealed fresh DOT 3 brake fluid received under part_dot3_brake_fluid_autohub_6x354ml; clear bleed hose received under part_daraz_clear_pvc_bleed_hose_2m_20260504; nitrile gloves received under part_daraz_nitrile_gloves_black_l_100pc_20260504; remaining setup is on-hand/workshop-managed: caps/plugs, cleaner, rags, catch bottle or bleeder kit, and catch tray must be present before opening hydraulics",
           "critical_measurements": "Ordered DOT 3 quantity is 2124 ml sealed total; confirm bottles arrive sealed and add more only if workshop specifies extra, bleed screw sizes, bleed order from manual/workshop",
           "fit_and_test": "Firm pedal, clean fluid at bleeders, no leaks, no air return, recheck after bedding and short road test",
-          "source_ref": "docs_brake_workstream|suspension_brake_merged_work_plan|docs_brake_parts_acquisition_spec_20260503|part_dot3_brake_fluid_autohub_6x354ml|user_update_2026-05-14_nitrile_gloves_received",
-          "notes": "User direction 2026-05-03 closes the brake-fluid DOT hold as DOT 3. Autohub order 62228 / Gmail order 1762228 covers 2124 ml sealed DOT 3. User confirmed replacement DOT 3 fluid received on 2026-05-08, clear bleed hose received via Daraz order 242508745080938, and nitrile gloves received on 2026-05-14. Do not use DOT 5, and do not mix unknown old fluid.",
+          "source_ref": "docs_brake_workstream|suspension_brake_merged_work_plan|docs_brake_parts_acquisition_spec_20260503|part_dot3_brake_fluid_autohub_6x354ml|user_update_2026-05-14_nitrile_gloves_received|user_update_2026-05-27_manage_brake_opening_consumables_with_on_hand_supplies",
+          "notes": "User direction 2026-05-03 closes the brake-fluid DOT hold as DOT 3. Autohub order 62228 / Gmail order 1762228 covers 2124 ml sealed DOT 3. User confirmed replacement DOT 3 fluid received on 2026-05-08, clear bleed hose received via Daraz order 242508745080938, and nitrile gloves received on 2026-05-14. User update 2026-05-27 closes the remaining consumables as on-hand/workshop-managed rather than a separate purchase line. Do not use DOT 5, and do not mix unknown old fluid.",
           "evidence_images": [
             {
               "path": "../../photos/20260331_224409.jpg",
@@ -58804,7 +58995,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "30 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -58887,7 +59078,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 30 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -58922,7 +59113,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
           "status": "in_progress",
-          "detail": "3 part rows still require price confirmation/order placement."
+          "detail": "4 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
@@ -58978,45 +59169,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 980
-          }
-        },
-        {
-          "entry_id": "part_rear_brake_drums_pair_cruisercorps",
-          "workstream": "brake_system",
-          "item": "Rear brake drums pair - inspect/machine locally before any import",
-          "status": "planned",
-          "procurement_stage": "local_inspect_machine_or_replace_hold",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "local brake machine shop / local Toyota parts supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_rear_brake_drums_pair_cruisercorps",
-          "evidence_ref": "user_chat_2026-05-23_rear_drum_open|cruisercorps_553-115x2_reference_only|gmail_import_2026-05-24_no_brake_order|user_update_2026-05-24_local_only_no_expensive_imports",
-          "notes": "Do not order expensive imported drums by default. Inspect and measure the old drums first, machine locally only if safely within service limit, and replace locally only if scored, stepped, cracked, near/over limit, or machining quality is unsafe. Cruiser Corps 553-115 remains a reference only. Any import requires explicit approval.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
-            "caption": "Rear brake drums pair - inspect/machine locally before any import \u00b7 automotive part reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "generic_part",
-            "matched_tokens": [
-              "part"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
           }
         },
         {
@@ -59224,7 +59376,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_rear_brake_shoes_hardware",
           "workstream": "brake_system",
-          "item": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match",
+          "item": "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate",
           "status": "ordered",
           "procurement_stage": "ordered_pending_delivery",
           "payment_status": "unknown",
@@ -59236,8 +59388,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_rear_brake_shoes_hardware",
-          "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
-          "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster/spring layout, and drum condition. Spring/hardware kit and wheel-cylinder fasteners are not proven included.",
+          "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421|BR-REAR-007|user_update_2026-05-27_rear_drum_parts_extrapolated",
+          "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster contact points, and drum condition. Spring/hold-down/adjuster hardware is split to part_rear_drum_spring_hold_down_hardware_20260527 unless the package proves a complete hardware kit is included; wheel-cylinder fasteners are not proven included.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -59245,7 +59397,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-            "caption": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
+            "caption": "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -59361,46 +59513,6 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_brake_fluid_bleed_consumables",
-          "workstream": "brake_system",
-          "item": "Brake hydraulic opening prep remaining consumables - caps plugs bleed bottle cleaner rags catch tray",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Autohub/Daraz/local brake supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_brake_fluid_bleed_consumables",
-          "evidence_ref": "data_brake_system_requirements|BR-SYS-002|BR-CAPTURE-001|part_dot3_brake_fluid_autohub_6x354ml|user_update_2026-05-04_clear_bleed_hose_order|user_update_2026-05-04_nitrile_gloves_order|part_daraz_clear_pvc_bleed_hose_2m_20260504|part_daraz_nitrile_gloves_black_l_100pc_20260504|gmail_delivery_242508745080938|gmail_order_242508745280938|blueex_tracking_AhubRider|user_update_2026-05-08_brake_fluid_replacement_arrived|user_update_2026-05-14_nitrile_gloves_received",
-          "notes": "DOT 3 brake fluid is now received under Autohub order 25050600072003. Clear PVC bleed hose is received under Daraz order 242508745080938. Nitrile gloves are physically received under Daraz order 242508745280938 as of 2026-05-14. Still purchase-ready before opening hydraulics: line caps/plugs, catch bottle or bleeder kit, brake cleaner, rags, and catch tray. Do not open lines until the remaining consumables are physically on hand.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
-            "caption": "Brake hydraulic opening prep remaining consumables - caps plugs bleed bottle cleaner rags catch tray \u00b7 brake line/hose reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "brake_hose_line",
-            "matched_tokens": [
-              "brake",
-              "line"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
           "entry_id": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
           "workstream": "brake_system",
           "item": "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection",
@@ -59458,6 +59570,85 @@ window.J40_DASHBOARD_DATA = {
               "ties"
             ],
             "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "entry_id": "part_rear_drum_spring_hold_down_hardware_20260527",
+          "workstream": "brake_system",
+          "item": "Rear drum spring / hold-down / adjuster hardware kit",
+          "status": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_rear_drum_spring_hold_down_hardware_20260527",
+          "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated",
+          "notes": "BASELINE MUST REPLACE the rear drum spring and small hardware set separately from the ordered shoe/friction pieces. Buy upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum layout or old samples. If the PakWheels shoe delivery includes a complete matching hardware kit, reconcile this row rather than buying duplicates. Do not reuse stretched, rusty, or mismatched brake springs.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+            "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260524_025547_gp_yCvA0bxA",
+            "matched_tokens": [
+              "photo_20260524_025547_gp_ycva0bxa"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "entry_id": "part_rear_parking_brake_attachment_hardware_20260527",
+          "workstream": "brake_system",
+          "item": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips",
+          "status": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "local brake parts / hardware supplier",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_rear_parking_brake_attachment_hardware_20260527",
+          "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup",
+          "notes": "Required purchase line for the small attachment pieces around the received hand-brake cable: clevis pins, equalizer/intermediate cable hardware, adjuster nut, cable-end clips, parking-brake return springs, and retaining clips as fitted. Buy locally by old samples unless the received cable package already includes each matching piece; do not reuse rusty, stretched, or mismatched brake-cable attachment hardware.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_retaining_clips_cotter_pack_reference.svg",
+            "caption": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips \u00b7 retaining clip and cotter reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "body_retaining_clips_cotter_pack_reference",
+            "matched_tokens": [
+              "retaining",
+              "clip"
+            ],
+            "match_basis": "local_reference_image",
             "match_score": 700
           }
         },
@@ -59713,7 +59904,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_rear_wheel_cylinders_pair",
           "workstream": "brake_system",
-          "item": "Rear wheel cylinders - sample-match hold before any catalog kit",
+          "item": "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit",
           "status": "planned",
           "procurement_stage": "sample_match_required_before_purchase",
           "payment_status": "not_paid",
@@ -59725,8 +59916,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_rear_wheel_cylinders_pair",
-          "evidence_ref": "BR-REAR-004|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|toyota_epc_upper_lower_rear_cylinders_reference|cruisercorps_A28_four_rear_cylinder_reference|fjparts_72_80_rear_set_reference|user_image_2026-05-24_catalog_vs_installed_view_question|user_update_2026-05-24_local_only_no_expensive_imports",
-          "notes": "BASELINE MUST REPLACE if old cylinders are leaking, seized, corroded, or unknown age, but do not buy the four-cylinder catalog kit from photo logic alone. The catalog image shows the loose cylinder mounting/port side, while the truck photo shows the drum-side barrel/boots, so the apparent mismatch is expected; however the purchase still requires backside photos or removed old cylinders to confirm count, mounting bolt spacing, bore, port thread, bleed screw access, pushrod/boot style, and whether a lower cylinder is fitted behind the hub/shoe area. Treat Toyota 47550-69075, 47560-69055, 47570-69065, 47580-69055 and Cruiser Corps A28/SOR 081-02C-KIT as references only until old samples match. No expensive import unless explicitly approved.",
+          "evidence_ref": "BR-REAR-004|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|toyota_epc_upper_lower_rear_cylinders_reference|cruisercorps_A28_four_rear_cylinder_reference|fjparts_72_80_rear_set_reference|user_image_2026-05-24_catalog_vs_installed_view_question|user_update_2026-05-24_local_only_no_expensive_imports|user_update_2026-05-27_rear_drum_parts_extrapolated",
+          "notes": "User update 2026-05-27 identifies the visible rear drum line-entry cylinder as the main hydraulic entry-point part, so keep this as a required new/sample-match item. BASELINE MUST REPLACE if old cylinders are leaking, seized, corroded, or unknown age, but do not buy the four-cylinder catalog kit from photo logic alone. The catalog image shows the loose cylinder mounting/port side, while the truck photo shows the drum-side barrel/boots, so the apparent mismatch is expected; however the purchase still requires backside photos or removed old cylinders to confirm count, mounting bolt spacing, bore, port thread, bleed screw access, pushrod/boot style, and whether a lower cylinder is fitted behind the hub/shoe area. Treat Toyota 47550-69075, 47560-69055, 47570-69065, 47580-69055 and Cruiser Corps A28/SOR 081-02C-KIT as references only until old samples match. No expensive import unless explicitly approved.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -59734,7 +59925,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-            "caption": "Rear wheel cylinders - sample-match hold before any catalog kit \u00b7 local inventory photo \u00b7 local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
+            "caption": "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit \u00b7 local inventory photo \u00b7 local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -60319,11 +60510,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
-                "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
-                "Rear wheel cylinders - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
+                "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
+                "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price_check_first_before_other_brake_parts; delivery not_ordered; amount missing)",
-                "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect (ordered_partial_pending_delivery; delivery pending_delivery; amount confirmed)"
+                "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
+                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price_check_first_before_other_brake_parts; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -60452,11 +60643,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
-                "Rear wheel cylinders - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
+                "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
+                "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
                 "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)",
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection (purchase_ready; delivery not_ordered; amount missing)",
-                "Rear axle brake hard-line pair - 4.75 mm / 3/16 in tube with fittings by flare/thread (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -60583,10 +60774,10 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect (ordered_partial_pending_delivery; delivery pending_delivery; amount confirmed)",
-                "Brake hydraulic opening prep remaining consumables - caps plugs bleed bottle cleaner rags catch tray (purchase_ready; delivery not_ordered; amount missing)",
+                "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
+                "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
-                "Rear wheel cylinders - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
+                "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price_check_first_before_other_brake_parts; delivery not_ordered; amount missing)"
               ]
             },
@@ -60714,8 +60905,8 @@ window.J40_DASHBOARD_DATA = {
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price_check_first_before_other_brake_parts; delivery not_ordered; amount missing)",
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
                 "Front disc pads and retaining hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)",
-                "Brake hydraulic splitter T-union and inline union replacement set (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)"
+                "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
+                "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -60840,12 +61031,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
+                "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
+                "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
-                "Rear wheel cylinders - sample-match hold before any catalog kit (sample_match_required_before_purchase; delivery not_ordered; amount missing)",
                 "Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference (purchase_ready_local_catalog_first_pending_sample_match; delivery not_ordered; amount missing)",
-                "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips (spec_needed_before_order_local_hardware_first; delivery not_ordered; amount missing)",
-                "FJ40 BJ-40 Toyota Land Cruiser hand brake cable (received; delivery received; amount confirmed)"
+                "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
+                "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips (spec_needed_before_order_local_hardware_first; delivery not_ordered; amount missing)"
               ]
             }
           ]
@@ -63832,7 +64023,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "mechanical",
           "current_state": "queued",
           "objective": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades.",
-          "blocker_summary": "29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+          "blocker_summary": "30 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
           "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
           "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
           "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared"
@@ -63886,7 +64077,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP04 \u00b7 Mechanical Service Baseline",
           "status": "queued",
-          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
+          "detail": "Execute reliability service pack, merged brake refresh prep, rear differential/axle inspection, and defect documentation before upgrades. Blocker: 30 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout. Procurement: Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings. Gate: Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks."
         },
         {
           "label": "Issue checks",
@@ -65023,7 +65214,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "entry_id": "part_hvac_slim_louver_outlet_panel_20260514",
           "workstream": "interior_weatherproofing",
-          "item": "Slim under-dash louver outlet panel and adjustable vents",
+          "item": "Slim under-dash louver outlet panel / matched air-directing vent pieces",
           "status": "planned",
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
@@ -65035,8 +65226,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_hvac_slim_louver_outlet_panel_20260514",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213",
-          "notes": "Required to route cold air out cleanly from the hidden evaporator. Prefer a slim metal/plastic louver panel with adjustable vents that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213|user_update_2026-05-27_required_purchase_line_cleanup",
+          "notes": "Required to route cold air out cleanly from the hidden evaporator. One side/one piece has been identified, so the purchase line must cover the matching mate or a complete matched left-right outlet set with adjustable louvers. Prefer a slim metal/plastic louver panel or pair that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -65044,7 +65235,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-            "caption": "Slim under-dash louver outlet panel and adjustable vents \u00b7 rust/metal treatment reference image",
+            "caption": "Slim under-dash louver outlet panel / matched air-directing vent pieces \u00b7 rust/metal treatment reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -65180,8 +65371,8 @@ window.J40_DASHBOARD_DATA = {
                 "Hidden return-air grille and washable filter for evaporator intake (purchase_ready; delivery not_ordered; amount missing)",
                 "Evaporator drain hose and mounting/sealing kit (purchase_ready; delivery not_ordered; amount missing)",
                 "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment (purchase_ready; delivery not_ordered; amount missing)",
-                "Sound dampening sheets (deferred_until_body_closed; delivery not_ordered; amount missing)",
-                "Compact A/C control panel or integrated controls (purchase_ready; delivery not_ordered; amount missing)"
+                "Slim under-dash louver outlet panel / matched air-directing vent pieces (purchase_ready; delivery not_ordered; amount missing)",
+                "Sound dampening sheets (deferred_until_body_closed; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -65299,7 +65490,7 @@ window.J40_DASHBOARD_DATA = {
                 "Evaporator drain hose and mounting/sealing kit (purchase_ready; delivery not_ordered; amount missing)",
                 "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Foam (deferred_until_body_closed; delivery not_ordered; amount missing)",
-                "Slim under-dash louver outlet panel and adjustable vents (purchase_ready; delivery not_ordered; amount missing)"
+                "Slim under-dash louver outlet panel / matched air-directing vent pieces (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -65414,10 +65605,10 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Sound dampening sheets (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Hidden return-air grille and washable filter for evaporator intake (purchase_ready; delivery not_ordered; amount missing)",
+                "Slim under-dash louver outlet panel / matched air-directing vent pieces (purchase_ready; delivery not_ordered; amount missing)",
                 "Carpet (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers (deferred_until_body_closed; delivery not_ordered; amount missing)",
-                "Foam (deferred_until_body_closed; delivery not_ordered; amount missing)",
-                "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment (purchase_ready; delivery not_ordered; amount missing)"
+                "Foam (deferred_until_body_closed; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -65533,7 +65724,7 @@ window.J40_DASHBOARD_DATA = {
                 "Fastener Kit E: Stainless/non-structural trim screws plus cup/finishing washers (deferred_until_body_closed; delivery not_ordered; amount missing)",
                 "2.5 inch duct hose, vent adapters, and defrost/demist hose kit (purchase_ready; delivery not_ordered; amount missing)",
                 "Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment (purchase_ready; delivery not_ordered; amount missing)",
-                "Slim under-dash louver outlet panel and adjustable vents (purchase_ready; delivery not_ordered; amount missing)"
+                "Slim under-dash louver outlet panel / matched air-directing vent pieces (purchase_ready; delivery not_ordered; amount missing)"
               ]
             }
           ]
@@ -66889,7 +67080,7 @@ window.J40_DASHBOARD_DATA = {
         "suspension_upgrade"
       ],
       "evidence_signal": "engine_bay baseline evidence present; service pack brake-system and differential/axle rows prepared",
-      "blocker_summary": "29 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
+      "blocker_summary": "30 mechanical/brake/axle safety rows need pricing, measurement capture, order, or inspection closeout.",
       "gate_to_close": "Cooling/fuel/ignition/brake baseline plus rear differential/axle inspection complete with leak-free checks.",
       "key_procurement_actions": "Batch-buy must-replace consumables; run brake and differential capture before exact orders; keep inspect-then-replace items gated to measured findings.",
       "image": {
@@ -66968,7 +67159,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Confirm price and place purchase-ready orders",
         "status": "in_progress",
-        "detail": "26 rows still in purchase_ready."
+        "detail": "27 rows still in purchase_ready."
       },
       {
         "label": "Place selected quote orders",
@@ -66999,10 +67190,6 @@ window.J40_DASHBOARD_DATA = {
         "count": 1
       },
       {
-        "stage": "local_inspect_machine_or_replace_hold",
-        "count": 1
-      },
-      {
         "stage": "local_market_quote_and_sample_match",
         "count": 1
       },
@@ -67024,7 +67211,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "purchase_ready",
-        "count": 26
+        "count": 27
       },
       {
         "stage": "purchase_ready_estimate",
@@ -67078,7 +67265,7 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_next_action": [
       {
         "next_action": "confirm_price_then_order",
-        "count": 26
+        "count": 27
       },
       {
         "next_action": "track_delivery",
@@ -67268,44 +67455,6 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "cable",
             "ties"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "priority": "P0",
-        "entry_id": "part_brake_fluid_bleed_consumables",
-        "workstream": "brake_system",
-        "item": "Brake hydraulic opening prep remaining consumables - caps plugs bleed bottle cleaner rags catch tray",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "next_action": "confirm_price_then_order",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Autohub/Daraz/local brake supplier",
-        "supply_type": "part",
-        "evidence_ref": "data_brake_system_requirements|BR-SYS-002|BR-CAPTURE-001|part_dot3_brake_fluid_autohub_6x354ml|user_update_2026-05-04_clear_bleed_hose_order|user_update_2026-05-04_nitrile_gloves_order|part_daraz_clear_pvc_bleed_hose_2m_20260504|part_daraz_nitrile_gloves_black_l_100pc_20260504|gmail_delivery_242508745080938|gmail_order_242508745280938|blueex_tracking_AhubRider|user_update_2026-05-08_brake_fluid_replacement_arrived|user_update_2026-05-14_nitrile_gloves_received",
-        "notes": "DOT 3 brake fluid is now received under Autohub order 25050600072003. Clear PVC bleed hose is received under Daraz order 242508745080938. Nitrile gloves are physically received under Daraz order 242508745280938 as of 2026-05-14. Still purchase-ready before opening hydraulics: line caps/plugs, catch bottle or bleeder kit, brake cleaner, rags, and catch tray. Do not open lines until the remaining consumables are physically on hand.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
-          "caption": "Brake hydraulic opening prep remaining consumables - caps plugs bleed bottle cleaner rags catch tray \u00b7 brake line/hose reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "brake_hose_line",
-          "matched_tokens": [
-            "brake",
-            "line"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -67531,7 +67680,7 @@ window.J40_DASHBOARD_DATA = {
         "priority": "P0",
         "entry_id": "part_rear_brake_shoes_hardware",
         "workstream": "brake_system",
-        "item": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match",
+        "item": "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate",
         "status": "ordered",
         "procurement_stage": "ordered_pending_delivery",
         "next_action": "track_delivery",
@@ -67540,8 +67689,8 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "PakWheels AUTOSTORE",
         "supply_type": "part",
-        "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
-        "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster/spring layout, and drum condition. Spring/hardware kit and wheel-cylinder fasteners are not proven included.",
+        "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421|BR-REAR-007|user_update_2026-05-27_rear_drum_parts_extrapolated",
+        "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster contact points, and drum condition. Spring/hold-down/adjuster hardware is split to part_rear_drum_spring_hold_down_hardware_20260527 unless the package proves a complete hardware kit is included; wheel-cylinder fasteners are not proven included.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -67549,7 +67698,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-          "caption": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
+          "caption": "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -67562,6 +67711,81 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "exact_order_evidence",
           "match_score": 980
+        }
+      },
+      {
+        "priority": "P0",
+        "entry_id": "part_rear_drum_spring_hold_down_hardware_20260527",
+        "workstream": "brake_system",
+        "item": "Rear drum spring / hold-down / adjuster hardware kit",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "next_action": "confirm_price_then_order",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+        "supply_type": "part",
+        "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated",
+        "notes": "BASELINE MUST REPLACE the rear drum spring and small hardware set separately from the ordered shoe/friction pieces. Buy upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum layout or old samples. If the PakWheels shoe delivery includes a complete matching hardware kit, reconcile this row rather than buying duplicates. Do not reuse stretched, rusty, or mismatched brake springs.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+          "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260524_025547_gp_yCvA0bxA",
+          "matched_tokens": [
+            "photo_20260524_025547_gp_ycva0bxa"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "priority": "P0",
+        "entry_id": "part_rear_parking_brake_attachment_hardware_20260527",
+        "workstream": "brake_system",
+        "item": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "next_action": "confirm_price_then_order",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "local brake parts / hardware supplier",
+        "supply_type": "part",
+        "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup",
+        "notes": "Required purchase line for the small attachment pieces around the received hand-brake cable: clevis pins, equalizer/intermediate cable hardware, adjuster nut, cable-end clips, parking-brake return springs, and retaining clips as fitted. Buy locally by old samples unless the received cable package already includes each matching piece; do not reuse rusty, stretched, or mismatched brake-cable attachment hardware.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_retaining_clips_cotter_pack_reference.svg",
+          "caption": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips \u00b7 retaining clip and cotter reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "body_retaining_clips_cotter_pack_reference",
+          "matched_tokens": [
+            "retaining",
+            "clip"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
         }
       },
       {
@@ -68104,7 +68328,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_rear_brake_shoes_hardware",
         "workstream": "brake_system",
-        "item": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match",
+        "item": "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate",
         "status": "ordered",
         "procurement_stage": "ordered_pending_delivery",
         "payment_status": "unknown",
@@ -68115,8 +68339,8 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "PakWheels AUTOSTORE",
         "supply_type": "part",
-        "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
-        "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster/spring layout, and drum condition. Spring/hardware kit and wheel-cylinder fasteners are not proven included.",
+        "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421|BR-REAR-007|user_update_2026-05-27_rear_drum_parts_extrapolated",
+        "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster contact points, and drum condition. Spring/hold-down/adjuster hardware is split to part_rear_drum_spring_hold_down_hardware_20260527 unless the package proves a complete hardware kit is included; wheel-cylinder fasteners are not proven included.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -68124,7 +68348,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-          "caption": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
+          "caption": "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -68556,43 +68780,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_rear_brake_drums_pair_cruisercorps",
-        "workstream": "brake_system",
-        "item": "Rear brake drums pair - inspect/machine locally before any import",
-        "status": "planned",
-        "procurement_stage": "local_inspect_machine_or_replace_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "local brake machine shop / local Toyota parts supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_chat_2026-05-23_rear_drum_open|cruisercorps_553-115x2_reference_only|gmail_import_2026-05-24_no_brake_order|user_update_2026-05-24_local_only_no_expensive_imports",
-        "notes": "Do not order expensive imported drums by default. Inspect and measure the old drums first, machine locally only if safely within service limit, and replace locally only if scored, stepped, cracked, near/over limit, or machining quality is unsafe. Cruiser Corps 553-115 remains a reference only. Any import requires explicit approval.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
-          "caption": "Rear brake drums pair - inspect/machine locally before any import \u00b7 automotive part reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "generic_part",
-          "matched_tokens": [
-            "part"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
         "entry_id": "part_brake_booster_servo_44610_60050",
         "workstream": "brake_system",
         "item": "Brake vacuum booster servo - dual diaphragm 44610-60050 market scout",
@@ -68789,7 +68976,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_rear_brake_shoes_hardware",
         "workstream": "brake_system",
-        "item": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match",
+        "item": "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate",
         "status": "ordered",
         "procurement_stage": "ordered_pending_delivery",
         "payment_status": "unknown",
@@ -68799,8 +68986,8 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "PakWheels AUTOSTORE",
         "supply_type": "part",
-        "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
-        "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster/spring layout, and drum condition. Spring/hardware kit and wheel-cylinder fasteners are not proven included.",
+        "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421|BR-REAR-007|user_update_2026-05-27_rear_drum_parts_extrapolated",
+        "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster contact points, and drum condition. Spring/hold-down/adjuster hardware is split to part_rear_drum_spring_hold_down_hardware_20260527 unless the package proves a complete hardware kit is included; wheel-cylinder fasteners are not proven included.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -68808,7 +68995,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-          "caption": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
+          "caption": "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -68920,44 +69107,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_brake_fluid_bleed_consumables",
-        "workstream": "brake_system",
-        "item": "Brake hydraulic opening prep remaining consumables - caps plugs bleed bottle cleaner rags catch tray",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Autohub/Daraz/local brake supplier",
-        "supply_type": "part",
-        "evidence_ref": "data_brake_system_requirements|BR-SYS-002|BR-CAPTURE-001|part_dot3_brake_fluid_autohub_6x354ml|user_update_2026-05-04_clear_bleed_hose_order|user_update_2026-05-04_nitrile_gloves_order|part_daraz_clear_pvc_bleed_hose_2m_20260504|part_daraz_nitrile_gloves_black_l_100pc_20260504|gmail_delivery_242508745080938|gmail_order_242508745280938|blueex_tracking_AhubRider|user_update_2026-05-08_brake_fluid_replacement_arrived|user_update_2026-05-14_nitrile_gloves_received",
-        "notes": "DOT 3 brake fluid is now received under Autohub order 25050600072003. Clear PVC bleed hose is received under Daraz order 242508745080938. Nitrile gloves are physically received under Daraz order 242508745280938 as of 2026-05-14. Still purchase-ready before opening hydraulics: line caps/plugs, catch bottle or bleeder kit, brake cleaner, rags, and catch tray. Do not open lines until the remaining consumables are physically on hand.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
-          "caption": "Brake hydraulic opening prep remaining consumables - caps plugs bleed bottle cleaner rags catch tray \u00b7 brake line/hose reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "brake_hose_line",
-          "matched_tokens": [
-            "brake",
-            "line"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
         "entry_id": "part_brake_clutch_line_support_clamps_full_vehicle_20260514",
         "workstream": "brake_system",
         "item": "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection",
@@ -69017,6 +69166,81 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "part_rear_drum_spring_hold_down_hardware_20260527",
+        "workstream": "brake_system",
+        "item": "Rear drum spring / hold-down / adjuster hardware kit",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+        "supply_type": "part",
+        "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated",
+        "notes": "BASELINE MUST REPLACE the rear drum spring and small hardware set separately from the ordered shoe/friction pieces. Buy upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum layout or old samples. If the PakWheels shoe delivery includes a complete matching hardware kit, reconcile this row rather than buying duplicates. Do not reuse stretched, rusty, or mismatched brake springs.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+          "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260524_025547_gp_yCvA0bxA",
+          "matched_tokens": [
+            "photo_20260524_025547_gp_ycva0bxa"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "entry_id": "part_rear_parking_brake_attachment_hardware_20260527",
+        "workstream": "brake_system",
+        "item": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "local brake parts / hardware supplier",
+        "supply_type": "part",
+        "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup",
+        "notes": "Required purchase line for the small attachment pieces around the received hand-brake cable: clevis pins, equalizer/intermediate cable hardware, adjuster nut, cable-end clips, parking-brake return springs, and retaining clips as fitted. Buy locally by old samples unless the received cable package already includes each matching piece; do not reuse rusty, stretched, or mismatched brake-cable attachment hardware.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_retaining_clips_cotter_pack_reference.svg",
+          "caption": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips \u00b7 retaining clip and cotter reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "body_retaining_clips_cotter_pack_reference",
+          "matched_tokens": [
+            "retaining",
+            "clip"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
+      },
+      {
         "entry_id": "part_rear_center_brake_flex_hose",
         "workstream": "brake_system",
         "item": "Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference",
@@ -69056,7 +69280,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_rear_wheel_cylinders_pair",
         "workstream": "brake_system",
-        "item": "Rear wheel cylinders - sample-match hold before any catalog kit",
+        "item": "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit",
         "status": "planned",
         "procurement_stage": "sample_match_required_before_purchase",
         "payment_status": "not_paid",
@@ -69066,8 +69290,8 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
         "supply_type": "part",
-        "evidence_ref": "BR-REAR-004|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|toyota_epc_upper_lower_rear_cylinders_reference|cruisercorps_A28_four_rear_cylinder_reference|fjparts_72_80_rear_set_reference|user_image_2026-05-24_catalog_vs_installed_view_question|user_update_2026-05-24_local_only_no_expensive_imports",
-        "notes": "BASELINE MUST REPLACE if old cylinders are leaking, seized, corroded, or unknown age, but do not buy the four-cylinder catalog kit from photo logic alone. The catalog image shows the loose cylinder mounting/port side, while the truck photo shows the drum-side barrel/boots, so the apparent mismatch is expected; however the purchase still requires backside photos or removed old cylinders to confirm count, mounting bolt spacing, bore, port thread, bleed screw access, pushrod/boot style, and whether a lower cylinder is fitted behind the hub/shoe area. Treat Toyota 47550-69075, 47560-69055, 47570-69065, 47580-69055 and Cruiser Corps A28/SOR 081-02C-KIT as references only until old samples match. No expensive import unless explicitly approved.",
+        "evidence_ref": "BR-REAR-004|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|toyota_epc_upper_lower_rear_cylinders_reference|cruisercorps_A28_four_rear_cylinder_reference|fjparts_72_80_rear_set_reference|user_image_2026-05-24_catalog_vs_installed_view_question|user_update_2026-05-24_local_only_no_expensive_imports|user_update_2026-05-27_rear_drum_parts_extrapolated",
+        "notes": "User update 2026-05-27 identifies the visible rear drum line-entry cylinder as the main hydraulic entry-point part, so keep this as a required new/sample-match item. BASELINE MUST REPLACE if old cylinders are leaking, seized, corroded, or unknown age, but do not buy the four-cylinder catalog kit from photo logic alone. The catalog image shows the loose cylinder mounting/port side, while the truck photo shows the drum-side barrel/boots, so the apparent mismatch is expected; however the purchase still requires backside photos or removed old cylinders to confirm count, mounting bolt spacing, bore, port thread, bleed screw access, pushrod/boot style, and whether a lower cylinder is fitted behind the hub/shoe area. Treat Toyota 47550-69075, 47560-69055, 47570-69065, 47580-69055 and Cruiser Corps A28/SOR 081-02C-KIT as references only until old samples match. No expensive import unless explicitly approved.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -69075,7 +69299,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-          "caption": "Rear wheel cylinders - sample-match hold before any catalog kit \u00b7 local inventory photo \u00b7 local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
+          "caption": "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit \u00b7 local inventory photo \u00b7 local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -71201,7 +71425,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "entry_id": "part_hvac_slim_louver_outlet_panel_20260514",
         "workstream": "interior_weatherproofing",
-        "item": "Slim under-dash louver outlet panel and adjustable vents",
+        "item": "Slim under-dash louver outlet panel / matched air-directing vent pieces",
         "status": "planned",
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
@@ -71211,8 +71435,8 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "Coolsun / local automotive A/C supplier",
         "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213",
-        "notes": "Required to route cold air out cleanly from the hidden evaporator. Prefer a slim metal/plastic louver panel with adjustable vents that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213|user_update_2026-05-27_required_purchase_line_cleanup",
+        "notes": "Required to route cold air out cleanly from the hidden evaporator. One side/one piece has been identified, so the purchase line must cover the matching mate or a complete matched left-right outlet set with adjustable louvers. Prefer a slim metal/plastic louver panel or pair that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -71220,7 +71444,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-          "caption": "Slim under-dash louver outlet panel and adjustable vents \u00b7 rust/metal treatment reference image",
+          "caption": "Slim under-dash louver outlet panel / matched air-directing vent pieces \u00b7 rust/metal treatment reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -88067,15 +88291,15 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "substance",
         "previously": 12,
         "in_process": 0,
-        "still_required": 8,
-        "total": 20
+        "still_required": 7,
+        "total": 19
       },
       {
         "supply_type": "part",
         "previously": 96,
         "in_process": 12,
-        "still_required": 72,
-        "total": 180
+        "still_required": 73,
+        "total": 181
       }
     ],
     "rows_by_status": {
@@ -95133,7 +95357,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_rear_brake_shoes_hardware",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match",
+          "item": "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate",
           "vendor": "PakWheels AUTOSTORE",
           "amount": "33600",
           "currency": "PKR",
@@ -95143,8 +95367,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "ordered_pending_delivery",
           "payment_status": "unknown",
           "delivery_status": "pending_delivery",
-          "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
-          "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster/spring layout, and drum condition. Spring/hardware kit and wheel-cylinder fasteners are not proven included.",
+          "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421|BR-REAR-007|user_update_2026-05-27_rear_drum_parts_extrapolated",
+          "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster contact points, and drum condition. Spring/hold-down/adjuster hardware is split to part_rear_drum_spring_hold_down_hardware_20260527 unless the package proves a complete hardware kit is included; wheel-cylinder fasteners are not proven included.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -95152,7 +95376,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-            "caption": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
+            "caption": "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -97462,45 +97686,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_rear_brake_drums_pair_cruisercorps",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Rear brake drums pair - inspect/machine locally before any import",
-          "vendor": "local brake machine shop / local Toyota parts supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "brake_system",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "local_inspect_machine_or_replace_hold",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_chat_2026-05-23_rear_drum_open|cruisercorps_553-115x2_reference_only|gmail_import_2026-05-24_no_brake_order|user_update_2026-05-24_local_only_no_expensive_imports",
-          "notes": "Do not order expensive imported drums by default. Inspect and measure the old drums first, machine locally only if safely within service limit, and replace locally only if scored, stepped, cracked, near/over limit, or machining quality is unsafe. Cruiser Corps 553-115 remains a reference only. Any import requires explicit approval.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
-            "caption": "Rear brake drums pair - inspect/machine locally before any import \u00b7 automotive part reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "generic_part",
-            "matched_tokens": [
-              "part"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_rear_center_brake_flex_hose",
           "supply_type": "part",
           "inventory_group": "mechanical",
@@ -97536,6 +97721,45 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 999
+          }
+        },
+        {
+          "source": "expenses",
+          "source_ref": "part_rear_drum_spring_hold_down_hardware_20260527",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Rear drum spring / hold-down / adjuster hardware kit",
+          "vendor": "local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated",
+          "notes": "BASELINE MUST REPLACE the rear drum spring and small hardware set separately from the ordered shoe/friction pieces. Buy upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum layout or old samples. If the PakWheels shoe delivery includes a complete matching hardware kit, reconcile this row rather than buying duplicates. Do not reuse stretched, rusty, or mismatched brake springs.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+            "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260524_025547_gp_yCvA0bxA",
+            "matched_tokens": [
+              "photo_20260524_025547_gp_ycva0bxa"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
           }
         },
         {
@@ -97579,10 +97803,50 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
+          "source_ref": "part_rear_parking_brake_attachment_hardware_20260527",
+          "supply_type": "part",
+          "inventory_group": "mechanical",
+          "item": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips",
+          "vendor": "local brake parts / hardware supplier",
+          "amount": "",
+          "currency": "PKR",
+          "workstream": "brake_system",
+          "status_group": "still_required",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup",
+          "notes": "Required purchase line for the small attachment pieces around the received hand-brake cable: clevis pins, equalizer/intermediate cable hardware, adjuster nut, cable-end clips, parking-brake return springs, and retaining clips as fitted. Buy locally by old samples unless the received cable package already includes each matching piece; do not reuse rusty, stretched, or mismatched brake-cable attachment hardware.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_retaining_clips_cotter_pack_reference.svg",
+            "caption": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips \u00b7 retaining clip and cotter reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "body_retaining_clips_cotter_pack_reference",
+            "matched_tokens": [
+              "retaining",
+              "clip"
+            ],
+            "match_basis": "local_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "source": "expenses",
           "source_ref": "part_rear_wheel_cylinders_pair",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Rear wheel cylinders - sample-match hold before any catalog kit",
+          "item": "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit",
           "vendor": "local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
           "amount": "",
           "currency": "PKR",
@@ -97592,8 +97856,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "sample_match_required_before_purchase",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-REAR-004|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|toyota_epc_upper_lower_rear_cylinders_reference|cruisercorps_A28_four_rear_cylinder_reference|fjparts_72_80_rear_set_reference|user_image_2026-05-24_catalog_vs_installed_view_question|user_update_2026-05-24_local_only_no_expensive_imports",
-          "notes": "BASELINE MUST REPLACE if old cylinders are leaking, seized, corroded, or unknown age, but do not buy the four-cylinder catalog kit from photo logic alone. The catalog image shows the loose cylinder mounting/port side, while the truck photo shows the drum-side barrel/boots, so the apparent mismatch is expected; however the purchase still requires backside photos or removed old cylinders to confirm count, mounting bolt spacing, bore, port thread, bleed screw access, pushrod/boot style, and whether a lower cylinder is fitted behind the hub/shoe area. Treat Toyota 47550-69075, 47560-69055, 47570-69065, 47580-69055 and Cruiser Corps A28/SOR 081-02C-KIT as references only until old samples match. No expensive import unless explicitly approved.",
+          "evidence_ref": "BR-REAR-004|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|toyota_epc_upper_lower_rear_cylinders_reference|cruisercorps_A28_four_rear_cylinder_reference|fjparts_72_80_rear_set_reference|user_image_2026-05-24_catalog_vs_installed_view_question|user_update_2026-05-24_local_only_no_expensive_imports|user_update_2026-05-27_rear_drum_parts_extrapolated",
+          "notes": "User update 2026-05-27 identifies the visible rear drum line-entry cylinder as the main hydraulic entry-point part, so keep this as a required new/sample-match item. BASELINE MUST REPLACE if old cylinders are leaking, seized, corroded, or unknown age, but do not buy the four-cylinder catalog kit from photo logic alone. The catalog image shows the loose cylinder mounting/port side, while the truck photo shows the drum-side barrel/boots, so the apparent mismatch is expected; however the purchase still requires backside photos or removed old cylinders to confirm count, mounting bolt spacing, bore, port thread, bleed screw access, pushrod/boot style, and whether a lower cylinder is fitted behind the hub/shoe area. Treat Toyota 47550-69075, 47560-69055, 47570-69065, 47580-69055 and Cruiser Corps A28/SOR 081-02C-KIT as references only until old samples match. No expensive import unless explicitly approved.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -97601,7 +97865,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-            "caption": "Rear wheel cylinders - sample-match hold before any catalog kit \u00b7 local inventory photo \u00b7 local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
+            "caption": "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit \u00b7 local inventory photo \u00b7 local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -99053,7 +99317,7 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_hvac_slim_louver_outlet_panel_20260514",
           "supply_type": "part",
           "inventory_group": "electrical",
-          "item": "Slim under-dash louver outlet panel and adjustable vents",
+          "item": "Slim under-dash louver outlet panel / matched air-directing vent pieces",
           "vendor": "Coolsun / local automotive A/C supplier",
           "amount": "",
           "currency": "PKR",
@@ -99063,8 +99327,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213",
-          "notes": "Required to route cold air out cleanly from the hidden evaporator. Prefer a slim metal/plastic louver panel with adjustable vents that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
+          "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213|user_update_2026-05-27_required_purchase_line_cleanup",
+          "notes": "Required to route cold air out cleanly from the hidden evaporator. One side/one piece has been identified, so the purchase line must cover the matching mate or a complete matched left-right outlet set with adjustable louvers. Prefer a slim metal/plastic louver panel or pair that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -99072,7 +99336,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-            "caption": "Slim under-dash louver outlet panel and adjustable vents \u00b7 rust/metal treatment reference image",
+            "caption": "Slim under-dash louver outlet panel / matched air-directing vent pieces \u00b7 rust/metal treatment reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -99740,46 +100004,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 999
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_brake_fluid_bleed_consumables",
-          "supply_type": "substance",
-          "inventory_group": "substances",
-          "item": "Brake hydraulic opening prep remaining consumables - caps plugs bleed bottle cleaner rags catch tray",
-          "vendor": "Autohub/Daraz/local brake supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "brake_system",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "data_brake_system_requirements|BR-SYS-002|BR-CAPTURE-001|part_dot3_brake_fluid_autohub_6x354ml|user_update_2026-05-04_clear_bleed_hose_order|user_update_2026-05-04_nitrile_gloves_order|part_daraz_clear_pvc_bleed_hose_2m_20260504|part_daraz_nitrile_gloves_black_l_100pc_20260504|gmail_delivery_242508745080938|gmail_order_242508745280938|blueex_tracking_AhubRider|user_update_2026-05-08_brake_fluid_replacement_arrived|user_update_2026-05-14_nitrile_gloves_received",
-          "notes": "DOT 3 brake fluid is now received under Autohub order 25050600072003. Clear PVC bleed hose is received under Daraz order 242508745080938. Nitrile gloves are physically received under Daraz order 242508745280938 as of 2026-05-14. Still purchase-ready before opening hydraulics: line caps/plugs, catch bottle or bleeder kit, brake cleaner, rags, and catch tray. Do not open lines until the remaining consumables are physically on hand.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
-            "caption": "Brake hydraulic opening prep remaining consumables - caps plugs bleed bottle cleaner rags catch tray \u00b7 brake line/hose reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "brake_hose_line",
-            "matched_tokens": [
-              "brake",
-              "line"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
           }
         },
         {
@@ -100566,7 +100790,7 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_rear_brake_shoes_hardware",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match",
+        "item": "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate",
         "vendor": "PakWheels AUTOSTORE",
         "amount": "33600",
         "currency": "PKR",
@@ -100576,8 +100800,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "ordered_pending_delivery",
         "payment_status": "unknown",
         "delivery_status": "pending_delivery",
-        "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421",
-        "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster/spring layout, and drum condition. Spring/hardware kit and wheel-cylinder fasteners are not proven included.",
+        "evidence_ref": "BR-REAR-005|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|pakwheels_K-2255-N-Y_local_lead|cruisercorps_549-163_reference_only|cruisercorps_551-113_reference_only|cruisercorps_A16x4_reference_only|sor_3in_non_usa_check_reference_only|user_update_2026-05-24_local_only_no_expensive_imports|gmail_msg_19e5e217925bd4c7|gmail_msg_19e5ea23342cd9ed|gmail_order_1075298|gmail_order_1075421|BR-REAR-007|user_update_2026-05-27_rear_drum_parts_extrapolated",
+        "notes": "PakWheels orders #1075298 and #1075421 confirmed 2026-05-25: Toyota Land Cruiser FJ40 MK Rear Brake Shoe K-2255-N/Y, qty 3 plus qty 2 at PKR 6400 each. Allocated ledger amount PKR 33600 equals PKR 32000 shoe line subtotal plus PKR 1600 prorated shipping/tax from the two mixed orders. Vendor says orders placed after 2026-05-22 will deliver after Eid, with no exact delivery date. Before installation, verify whether each unit is one shoe, a pair, or an axle set, then sample-match shoe width, arc, lining, adjuster contact points, and drum condition. Spring/hold-down/adjuster hardware is split to part_rear_drum_spring_hold_down_hardware_20260527 unless the package proves a complete hardware kit is included; wheel-cylinder fasteners are not proven included.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -100585,7 +100809,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-          "caption": "Rear brake shoes - PakWheels K-2255-N/Y local candidate order; hardware still sample-match \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
+          "caption": "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate \u00b7 exact order evidence \u00b7 PakWheels AUTOSTORE",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -109349,7 +109573,7 @@ window.J40_DASHBOARD_DATA = {
         "source_ref": "part_hvac_slim_louver_outlet_panel_20260514",
         "supply_type": "part",
         "inventory_group": "electrical",
-        "item": "Slim under-dash louver outlet panel and adjustable vents",
+        "item": "Slim under-dash louver outlet panel / matched air-directing vent pieces",
         "vendor": "Coolsun / local automotive A/C supplier",
         "amount": "",
         "currency": "PKR",
@@ -109359,8 +109583,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213",
-        "notes": "Required to route cold air out cleanly from the hidden evaporator. Prefer a slim metal/plastic louver panel with adjustable vents that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
+        "evidence_ref": "user_update_2026-05-14_aftermarket_ac_removed_hidden_evaporator_plan|workbook_parts_row_213|user_update_2026-05-27_required_purchase_line_cleanup",
+        "notes": "Required to route cold air out cleanly from the hidden evaporator. One side/one piece has been identified, so the purchase line must cover the matching mate or a complete matched left-right outlet set with adjustable louvers. Prefer a slim metal/plastic louver panel or pair that can be mounted without blocking knees, pedals, glovebox, wiring, or service access.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -109368,7 +109592,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-          "caption": "Slim under-dash louver outlet panel and adjustable vents \u00b7 rust/metal treatment reference image",
+          "caption": "Slim under-dash louver outlet panel / matched air-directing vent pieces \u00b7 rust/metal treatment reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -110842,45 +111066,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "part_rear_brake_drums_pair_cruisercorps",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Rear brake drums pair - inspect/machine locally before any import",
-        "vendor": "local brake machine shop / local Toyota parts supplier",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "brake_system",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "local_inspect_machine_or_replace_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_chat_2026-05-23_rear_drum_open|cruisercorps_553-115x2_reference_only|gmail_import_2026-05-24_no_brake_order|user_update_2026-05-24_local_only_no_expensive_imports",
-        "notes": "Do not order expensive imported drums by default. Inspect and measure the old drums first, machine locally only if safely within service limit, and replace locally only if scored, stepped, cracked, near/over limit, or machining quality is unsafe. Cruiser Corps 553-115 remains a reference only. Any import requires explicit approval.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/generic_part.jpg",
-          "caption": "Rear brake drums pair - inspect/machine locally before any import \u00b7 automotive part reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "generic_part",
-          "matched_tokens": [
-            "part"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
         "source_ref": "part_rear_center_brake_flex_hose",
         "supply_type": "part",
         "inventory_group": "mechanical",
@@ -110920,10 +111105,89 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
+        "source_ref": "part_rear_drum_spring_hold_down_hardware_20260527",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Rear drum spring / hold-down / adjuster hardware kit",
+        "vendor": "local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated",
+        "notes": "BASELINE MUST REPLACE the rear drum spring and small hardware set separately from the ordered shoe/friction pieces. Buy upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum layout or old samples. If the PakWheels shoe delivery includes a complete matching hardware kit, reconcile this row rather than buying duplicates. Do not reuse stretched, rusty, or mismatched brake springs.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
+          "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260524_025547_gp_yCvA0bxA",
+          "matched_tokens": [
+            "photo_20260524_025547_gp_ycva0bxa"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_rear_parking_brake_attachment_hardware_20260527",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips",
+        "vendor": "local brake parts / hardware supplier",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "brake_system",
+        "status_group": "still_required",
+        "status_detail": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup",
+        "notes": "Required purchase line for the small attachment pieces around the received hand-brake cable: clevis pins, equalizer/intermediate cable hardware, adjuster nut, cable-end clips, parking-brake return springs, and retaining clips as fitted. Buy locally by old samples unless the received cable package already includes each matching piece; do not reuse rusty, stretched, or mismatched brake-cable attachment hardware.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_retaining_clips_cotter_pack_reference.svg",
+          "caption": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips \u00b7 retaining clip and cotter reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "body_retaining_clips_cotter_pack_reference",
+          "matched_tokens": [
+            "retaining",
+            "clip"
+          ],
+          "match_basis": "local_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
         "source_ref": "part_rear_wheel_cylinders_pair",
         "supply_type": "part",
         "inventory_group": "mechanical",
-        "item": "Rear wheel cylinders - sample-match hold before any catalog kit",
+        "item": "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit",
         "vendor": "local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
         "amount": "",
         "currency": "PKR",
@@ -110933,8 +111197,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "sample_match_required_before_purchase",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-REAR-004|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|toyota_epc_upper_lower_rear_cylinders_reference|cruisercorps_A28_four_rear_cylinder_reference|fjparts_72_80_rear_set_reference|user_image_2026-05-24_catalog_vs_installed_view_question|user_update_2026-05-24_local_only_no_expensive_imports",
-        "notes": "BASELINE MUST REPLACE if old cylinders are leaking, seized, corroded, or unknown age, but do not buy the four-cylinder catalog kit from photo logic alone. The catalog image shows the loose cylinder mounting/port side, while the truck photo shows the drum-side barrel/boots, so the apparent mismatch is expected; however the purchase still requires backside photos or removed old cylinders to confirm count, mounting bolt spacing, bore, port thread, bleed screw access, pushrod/boot style, and whether a lower cylinder is fitted behind the hub/shoe area. Treat Toyota 47550-69075, 47560-69055, 47570-69065, 47580-69055 and Cruiser Corps A28/SOR 081-02C-KIT as references only until old samples match. No expensive import unless explicitly approved.",
+        "evidence_ref": "BR-REAR-004|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|toyota_epc_upper_lower_rear_cylinders_reference|cruisercorps_A28_four_rear_cylinder_reference|fjparts_72_80_rear_set_reference|user_image_2026-05-24_catalog_vs_installed_view_question|user_update_2026-05-24_local_only_no_expensive_imports|user_update_2026-05-27_rear_drum_parts_extrapolated",
+        "notes": "User update 2026-05-27 identifies the visible rear drum line-entry cylinder as the main hydraulic entry-point part, so keep this as a required new/sample-match item. BASELINE MUST REPLACE if old cylinders are leaking, seized, corroded, or unknown age, but do not buy the four-cylinder catalog kit from photo logic alone. The catalog image shows the loose cylinder mounting/port side, while the truck photo shows the drum-side barrel/boots, so the apparent mismatch is expected; however the purchase still requires backside photos or removed old cylinders to confirm count, mounting bolt spacing, bore, port thread, bleed screw access, pushrod/boot style, and whether a lower cylinder is fitted behind the hub/shoe area. Treat Toyota 47550-69075, 47560-69055, 47570-69065, 47580-69055 and Cruiser Corps A28/SOR 081-02C-KIT as references only until old samples match. No expensive import unless explicitly approved.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -110942,7 +111206,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-          "caption": "Rear wheel cylinders - sample-match hold before any catalog kit \u00b7 local inventory photo \u00b7 local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
+          "caption": "Rear wheel cylinders / hydraulic entry-point assemblies - sample-match hold before any catalog kit \u00b7 local inventory photo \u00b7 local Toyota brake parts supplier / SNA brake lead / sample-match supplier",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -111855,46 +112119,6 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 999
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_brake_fluid_bleed_consumables",
-        "supply_type": "substance",
-        "inventory_group": "substances",
-        "item": "Brake hydraulic opening prep remaining consumables - caps plugs bleed bottle cleaner rags catch tray",
-        "vendor": "Autohub/Daraz/local brake supplier",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "brake_system",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "data_brake_system_requirements|BR-SYS-002|BR-CAPTURE-001|part_dot3_brake_fluid_autohub_6x354ml|user_update_2026-05-04_clear_bleed_hose_order|user_update_2026-05-04_nitrile_gloves_order|part_daraz_clear_pvc_bleed_hose_2m_20260504|part_daraz_nitrile_gloves_black_l_100pc_20260504|gmail_delivery_242508745080938|gmail_order_242508745280938|blueex_tracking_AhubRider|user_update_2026-05-08_brake_fluid_replacement_arrived|user_update_2026-05-14_nitrile_gloves_received",
-        "notes": "DOT 3 brake fluid is now received under Autohub order 25050600072003. Clear PVC bleed hose is received under Daraz order 242508745080938. Nitrile gloves are physically received under Daraz order 242508745280938 as of 2026-05-14. Still purchase-ready before opening hydraulics: line caps/plugs, catch bottle or bleeder kit, brake cleaner, rags, and catch tray. Do not open lines until the remaining consumables are physically on hand.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/brake_hose_line.jpg",
-          "caption": "Brake hydraulic opening prep remaining consumables - caps plugs bleed bottle cleaner rags catch tray \u00b7 brake line/hose reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "brake_hose_line",
-          "matched_tokens": [
-            "brake",
-            "line"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
         }
       },
       {

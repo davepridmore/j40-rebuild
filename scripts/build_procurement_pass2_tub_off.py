@@ -244,17 +244,6 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
             "Buy exact Toyota-labelled plugs: 19850-68030 x6 for HJ47-style 2H 12V/8.5V, or 19850-68060 x6 only if old plug/system confirms 24V/superglow.",
         )
 
-    if entry_id == "part_brake_fluid_bleed_consumables" or prior in {
-        "buy_dot3_fluid_and_bleed_consumables",
-        "buy_remaining_brake_bleed_consumables",
-    }:
-        return (
-            "buy_remaining_brake_bleed_consumables",
-            "pre_brake_hydraulic_opening",
-            "safety_consumables_buy",
-            "DOT 3 brake fluid, clear bleed hose, and nitrile gloves are already received; hydraulics must not be opened until the remaining caps/plugs, cleaner, rags, catch bottle or bleeder kit, and catch tray are available.",
-        )
-
     if entry_id == "part_chassis_masking_plugs_tape_solvent_wipes":
         return (
             "buy_chassis_masking_consumables",
@@ -373,8 +362,6 @@ def supplier_hint(mode: str, decision: str) -> str:
         return "Use local fastener/body hardware suppliers; match old samples and buy plated or stainless replacements."
     if decision == "buy_compact_cabin_fuse_boxes":
         return "Use local electrical markets; require compact covered ATO/ATC blade-fuse boxes with secure lids."
-    if decision in {"buy_bleed_consumables_before_opening_hydraulics", "buy_remaining_brake_bleed_consumables"}:
-        return "Use a local brake supplier, Daraz/Autohub, or the workshop for caps/plugs, brake cleaner, catch bottle or bleeder kit, rags, and catch tray; do not rebuy DOT 3 fluid, clear bleed hose, or nitrile gloves."
     if decision == "buy_chassis_masking_consumables":
         return "Use a local paint/bodywork supplier, hardware shop, or Daraz for automotive masking tape, assorted tapered plugs/caps, and solvent-safe lint-free wipes."
     if decision in {"hose_rubber_release_hold", "longman_hose_pipe_order_ready"}:
@@ -428,8 +415,6 @@ def basket_id_for_row(decision: str, mode: str, workstream: str) -> str:
         return "basket_mechanical_local_bundle"
     if decision in {"capture_brake_specs_then_order", "open_inspect_then_order_standard_brake_parts"}:
         return "basket_merged_brake_suspension_window"
-    if decision in {"buy_bleed_consumables_before_opening_hydraulics", "buy_remaining_brake_bleed_consumables"}:
-        return "basket_brake_hydraulic_opening_prep"
     if decision == "buy_chassis_masking_consumables":
         return "basket_chassis_coating_consumables"
     if decision in {"hose_rubber_release_hold", "longman_hose_pipe_order_ready"}:
@@ -531,7 +516,6 @@ def write_report(pass2_rows: list[dict[str, str]], basket_rows: list[dict[str, s
             row["timing_window"] in {"tub_off_immediate", "in_flight_now"}
             and row["pass2_decision"] in {"buy_minimum_qty_now", "track_in_flight_order"}
         )
-        or row["pass2_decision"] == "buy_remaining_brake_bleed_consumables"
         or row["pass2_decision"] == "buy_chassis_masking_consumables"
     ]
 

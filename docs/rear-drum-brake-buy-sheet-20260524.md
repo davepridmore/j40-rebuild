@@ -28,10 +28,10 @@ Use this section only as candidate reference material. Buy locally where availab
 
 | Priority | Item | Qty | Buy/spec | Status |
 | --- | --- | ---: | --- | --- |
-| P0 | Rear wheel cylinders | Actual count from teardown | Local Toyota/sample-match cylinders only after the old parts confirm count, bore, mounting bolt spacing, port thread, bleed screw access, and pushrod/boot style. Toyota `47550-69075`, `47560-69055`, `47570-69065`, `47580-69055` and Cruiser Corps `A28` are reference only. | Do not buy until old sample or backside photos match. |
+| P0 | Rear wheel cylinders / hydraulic entry-point assemblies | Actual count from teardown | Local Toyota/sample-match cylinders only after the old parts confirm count, bore, mounting bolt spacing, line-entry port thread, bleed screw access, and pushrod/boot style. Toyota `47550-69075`, `47560-69055`, `47570-69065`, `47580-69055` and Cruiser Corps `A28` are reference only. | Do not buy until old sample or backside photos match. |
 | P0 | Wheel-cylinder bolt kits | 4 kits | Local bolt/washer sets matched to the old hardware; Cruiser Corps `A16` is an 8-piece reference kit and one kit is required per wheel cylinder. | Buy locally with cylinders if old bolts are rusty. |
-| P0 | Rear brake shoes | 1 axle set | Local shoe set; PakWheels `K-2255-N/Y` and Cruiser Corps `549-163` are reference/search leads only. | Buy locally after shoe-width check. |
-| P0 | Rear drum hardware kit | 1 axle kit | Local spring/hold-down/adjuster kit by sample; Cruiser Corps `551-113` is reference only. | Buy locally with shoes. |
+| P0 | Rear brake shoes / friction pieces | 1 axle set | PakWheels `K-2255-N/Y` candidate order is already placed under orders `1075298` and `1075421`; verify delivered unit count, shoe width, arc, and drum fit before installation. | Ordered candidate; fit/coverage check pending. |
+| P0 | Rear drum hardware kit | 1 axle kit | Local spring/hold-down/adjuster kit by sample; Cruiser Corps `551-113` is reference only. | Still required unless the shoe delivery proves a complete matching kit is included. |
 | P0 | Rear center flexible brake hose | 1 | Local crimped brake hose assembly by old sample; Cruiser Corps `553-103` is reference only. | Local sample-match first. |
 
 ## Sample-Match Basket - Only If A Removed Part Proves The Standard Route Is Wrong

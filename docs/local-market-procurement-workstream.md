@@ -15,7 +15,7 @@ This is no longer an active workstream. The old Local Market lane was removed be
 | Firewall and wiring grommets | `electrical_reset` | `part_firewall_grommet_set_small_medium`, `part_firewall_grommet_set_large_power` |
 | Body-mount leftovers, sleeves, shims, washers | `chassis_rubbers` / `chassis_fixing` | [chassis-rubbers-workstream.md](chassis-rubbers-workstream.md) |
 | Sample-matched pins, spacers, brackets | `body_chassis` / `fabrication_handoff` | `part_body_specialty_brackets_retainer_plates` and fabrication handoff rows |
-| Brake-opening consumables | `brake_system` | `part_brake_fluid_bleed_consumables` |
+| Brake-opening consumables | `brake_system` | `BR-SYS-002` workstream safety gate; no active local-market buy. |
 | Mechanical service parts | `mechanical_baseline` | service rows in `data/manual/procurement_queue.csv` |
 | Hose and pipe pack | `replacement_pipes` / `mechanical_baseline` | [longman-pipe-hose-order-spec-20260512.md](longman-pipe-hose-order-spec-20260512.md) |
 | Brake booster / servo reman quote | `brake_system` | brake booster scout rows and brake workstream |

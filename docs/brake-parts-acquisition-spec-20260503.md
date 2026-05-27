@@ -61,6 +61,6 @@ Measurements before payment or adaptation:
 
 ## Vendor Message
 
-Please quote the purchase-ready brake hydraulic opening prep now: 2 L sealed fresh DOT 3 brake fluid meeting SAE J1703 / FMVSS No. 116 DOT 3, brake cleaner, clear bleed hose/catch bottle or bleeder kit, hydraulic line caps/plugs, rags, nitrile gloves, and catch tray.
+Superseded for hydraulic-opening prep as of 2026-05-27: do not quote this as a separate consumables order. DOT 3 fluid, clear bleed hose, and nitrile gloves are received; line caps/plugs, brake cleaner, catch bottle/bleeder, rags, and catch tray are managed from on-hand/workshop supplies and must be verified before any hydraulic line is opened.
 
 For the remaining brake parts and brake booster, prepare sourcing but do not take payment for exact parts until the fitted calipers, rear drums, hoses, hard-line fittings, parking-brake cables, booster/master interface, and old samples are measured and photographed. Final-install brake hoses, hard lines, parking-brake cables, fittings, clips, rubbers, and seals are new-only.

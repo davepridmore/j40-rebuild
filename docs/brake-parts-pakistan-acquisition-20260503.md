@@ -6,9 +6,9 @@ Sourcing rule from 2026-05-24: prefer local/catalog Pakistan suppliers, local br
 
 Buying order correction from 2026-05-24: quote the cheaper brake-line route first using [brake-line-cheap-sourcing-20260524.md](brake-line-cheap-sourcing-20260524.md). Do not buy more rear brake wear parts before the hard-line tube/fittings/fabrication quote is known.
 
-## Buy Online Now
+## Hydraulic Opening Prep Reference
 
-Use these for the hydraulic-opening prep package. Buy sealed, new stock only.
+Superseded as an active buy list on 2026-05-27. DOT 3 fluid, clear bleed hose, and nitrile gloves are received; the remaining opening-prep setup is managed from on-hand/workshop supplies. Use this section only as reference if the on-hand setup fails inspection.
 
 | Item | Quantity | Preferred link | Backup / notes |
 | --- | ---: | --- | --- |
@@ -21,7 +21,7 @@ Use these for the hydraulic-opening prep package. Buy sealed, new stock only.
 
 ## Local Market Order - Hydraulic Opening Prep
 
-Copy/paste this to Autohub, Daraz seller chat, workshop, or Montgomery Road/Bilal Ganj supplier:
+Do not send this as a current order. Keep it only as fallback text if the on-hand/workshop setup is missing caps/plugs, cleaner, bottle/bleeder, rags, or catch tray.
 
 > Need brake hydraulic service consumables for a 1978 Toyota Land Cruiser J40 brake refresh. Please supply:
 > - 2 litres total sealed fresh DOT 3 brake fluid meeting SAE J1703 / FMVSS No. 116 DOT 3. No DOT 5. No opened bottles.

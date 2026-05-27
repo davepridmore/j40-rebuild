@@ -315,11 +315,6 @@ def build_procurement_decisions(
                 "Buy exact Toyota-labelled glow plugs: 19850-68030 x6 for HJ47-style 2H 12V/8.5V, "
                 "or 19850-68060 x6 only if old plug/system confirms 24V/superglow."
             )
-        elif entry_id == "part_brake_fluid_bleed_consumables":
-            decision = "buy_remaining_brake_bleed_consumables"
-            dependency_gate = "hydraulic_opening_prep"
-            action = "confirm_price_for_caps_bleed_cleaning_consumables"
-            reason = "DOT 3 brake fluid is already ordered separately; hydraulics must not be opened until that sealed fluid and the remaining caps/plugs, cleaner, and bleed tools are physically on hand."
         elif entry_id == "part_mech_brake_flex_hose_set":
             decision = "capture_spec_then_buy"
             dependency_gate = "brake_identification_and_samples"
@@ -464,7 +459,6 @@ def count_mechanical_buy_actions(decision_rows: list[dict[str, str]]) -> int:
         "buy_now",
         "buy_for_baseline",
         "buy_now_from_quote",
-        "buy_remaining_brake_bleed_consumables",
         "capture_spec_then_buy",
         "inspect_confirm_then_buy_standard",
     }
@@ -516,7 +510,6 @@ def build_work_packages(
             "confirm_price_then_buy",
             "buy_now",
             "buy_for_baseline",
-            "buy_remaining_brake_bleed_consumables",
             "capture_spec_then_buy",
             "inspect_confirm_then_buy_standard",
         }
