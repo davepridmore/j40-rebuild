@@ -1,6 +1,6 @@
 # Parts List Review
 
-- Generated: 2026-05-27 18:11:26
+- Generated: 2026-05-27 19:02:11
 - Source: `data/manual/expenses.csv` (`bucket=parts`) -> 122 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
@@ -8,17 +8,17 @@
 ## Action Buckets
 
 - `buy_now`: 39
-- `cancelled_or_not_required`: 11
+- `cancelled_or_not_required`: 12
 - `completed_or_received`: 33
 - `deferred`: 6
 - `needs_spec_before_order`: 9
-- `ordered_waiting_arrival`: 11
+- `ordered_waiting_arrival`: 10
 - `spec_ready_release_hold`: 3
 - `unclear`: 10
 
 ## Workstream Split
 
-- `body_chassis`: 27
+- `body_chassis`: 26
 - `brake_system`: 25
 - `mechanical_baseline`: 23
 - `electrical_reset`: 21
@@ -26,6 +26,7 @@
 - `steering_brakes_suspension`: 6
 - `fabrication_handoff`: 6
 - `optional_upgrades`: 2
+- `chassis_rubbers`: 1
 - `chassis_fixing`: 1
 
 ## Price Coverage

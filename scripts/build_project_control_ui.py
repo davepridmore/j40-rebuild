@@ -1075,8 +1075,8 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "process_steps": [
                     "Build a position-by-position table for rubbers, sleeves, cup washers, bolts, and shims.",
                     "Use docs/chassis-rubbers-workstream.md as the top-level fabricator handoff spec.",
-                    "Use docs/longman-rubber-order-spec-20260508.md as the current Longman quote pack for square body pads, FS-OVAL pads, and bump-stop first articles.",
-                    "Use data/manual/fabrication/rubber_recreation_rev_a/ only for FS-OVAL drawings, strip hold templates, exhaust-hanger reference, and bump-stop measurement controls.",
+                    "Use docs/longman-rubber-order-spec-20260508.md as the current single Longman quote pack for square body pads, FS-OVAL pads, FS-STRIP-L/R first articles, and bump-stop first articles.",
+                    "Use data/manual/fabrication/rubber_recreation_rev_a/ for FS-OVAL drawings, FS-STRIP first-article controls, hold/reference liner controls, exhaust-hanger reference, and bump-stop measurement controls.",
                     "Use docs/fabrication-handoff-index.md as the shared send-out index for rubber and electrical fabrication packages.",
                     "Use data/manual/rubber_ordering_specs.csv as the cross-category rubber ordering matrix so body mounts, hoses, suspension bushes, weatherstrip, and HVAC rubber stay in the correct buy gates.",
                     "Use data/manual/body_mount_order_release_specs.csv for exact body-mount order lines, quantities, OE/reproduction candidates, local fabrication specs, shim packs, sleeves, and bolt packs.",
@@ -1102,7 +1102,7 @@ WORKSTREAM_SUBTASK_GUIDES: dict[str, dict[str, Any]] = {
                 "instruction": "Choose purchased kit, local fabrication, or mixed route before spending more.",
                 "process_steps": [
                     "Check data/manual/rubber_ordering_specs.csv before any rubber purchase to confirm whether the item is buy-now, inspect-first, or deferred.",
-                    "For body mounts, choose exactly one route in data/manual/body_mount_order_release_specs.csv: OE/reproduction purchase or local fabrication.",
+                    "For body mounts, keep exactly one active route in data/manual/body_mount_order_release_specs.csv: the consolidated Longman custom rubber bundle unless the route is deliberately changed to a complete OE/reproduction package.",
                     "Check whether an available kit covers all required positions and sleeves.",
                     "Price any missing sleeves, washers, and shims separately.",
                     "Reject used/salvage rubber for structural body mounts.",
@@ -8220,18 +8220,18 @@ def order_component_reference_image(item: str, context: str = "") -> dict[str, A
     if has_any("fs-strip-l", "fs_strip_left") or (has_any("front-support strip", "front support strip", "strip rubber") and has_any("left", "left-side", "left side")):
         return local(
             "data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg",
-            "left front-support strip template hold",
+            "left underfloor strip first-article control",
             "fs_strip_left_template_blank_rev_a",
             "fs-strip-l",
-            "template",
+            "first_article_control",
         )
     if has_any("fs-strip-r", "fs_strip_right") or (has_any("front-support strip", "front support strip", "strip rubber") and has_any("right", "right-side", "right side")):
         return local(
             "data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg",
-            "right front-support strip template hold",
+            "right underfloor strip first-article control",
             "fs_strip_right_template_blank_rev_a",
             "fs-strip-r",
-            "template",
+            "first_article_control",
         )
     if has_any("midi5-plate-001", "midi5-subplate-001", "midi5_mount_plate", "midi5_holder_subplate", "midi 5-way structural", "midi 5-way non-conductive"):
         return previous(

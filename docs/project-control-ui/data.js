@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-27T18:11:32+05:00",
+  "generated_at": "2026-05-27T19:03:55+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -50,12 +50,12 @@ window.J40_DASHBOARD_DATA = {
     "workstreams_active": 13,
     "workstream_evidence_images": 786,
     "wiring_diagram_reference_images": 1,
-    "parts_open_rows": 78,
-    "parts_ordered_pending_delivery": 11,
-    "urgent_part_actions": 20,
-    "capture_data_tasks": 106,
-    "capture_data_tasks_now": 94,
-    "supply_rows_tracked": 285,
+    "parts_open_rows": 77,
+    "parts_ordered_pending_delivery": 10,
+    "urgent_part_actions": 19,
+    "capture_data_tasks": 107,
+    "capture_data_tasks_now": 95,
+    "supply_rows_tracked": 282,
     "selling_site_images_loaded": 88,
     "whatsapp_j40_selected_chats": 11,
     "whatsapp_j40_media_items": 282,
@@ -3124,7 +3124,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "body_structure",
           "current_state": "in_progress",
           "objective": "Close floor/rust repairs, chassis prep, and the required bracket analysis/design/implementation/validation hold before sealing products.",
-          "blocker_summary": "11 body material rows still need buy execution.",
+          "blocker_summary": "10 body material rows still need buy execution.",
           "gate_to_close": "Rust map signed off, required chassis brackets analyzed/released/installed/validated, and repaired zones primed.",
           "key_procurement_actions": "Use received primer/prep/seam-sealer/cavity-wax stock and on-hand Raptor; Ultra-cloth solvent-safe wipes and masking tape are received; use on-hand grommets for temporary open-hole masking after fit/solvent check; no generic chassis-black or bed-lining duplicate buy.",
           "evidence_signal": "rust_assessment_photos=63, stripdown_photos=111"
@@ -3239,7 +3239,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP01 \u00b7 Body + Chassis Rust/Bracket Closure",
           "status": "in_progress",
-          "detail": "Close floor/rust repairs, chassis prep, and the required bracket analysis/design/implementation/validation hold before sealing products. Blocker: 11 body material rows still need buy execution. Procurement: Use received primer/prep/seam-sealer/cavity-wax stock and on-hand Raptor; Ultra-cloth solvent-safe wipes and masking tape are received; use on-hand grommets for temporary open-hole masking after fit/solvent check; no generic chassis-black or bed-lining duplicate buy. Gate: Rust map signed off, required chassis brackets analyzed/released/installed/validated, and repaired zones primed."
+          "detail": "Close floor/rust repairs, chassis prep, and the required bracket analysis/design/implementation/validation hold before sealing products. Blocker: 10 body material rows still need buy execution. Procurement: Use received primer/prep/seam-sealer/cavity-wax stock and on-hand Raptor; Ultra-cloth solvent-safe wipes and masking tape are received; use on-hand grommets for temporary open-hole masking after fit/solvent check; no generic chassis-black or bed-lining duplicate buy. Gate: Rust map signed off, required chassis brackets analyzed/released/installed/validated, and repaired zones primed."
         },
         {
           "label": "WP02 \u00b7 Panel + Seals Refurbishment Returns",
@@ -11712,7 +11712,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "body_structure",
           "current_state": "in_progress",
           "objective": "Close floor/rust repairs, chassis prep, and the required bracket analysis/design/implementation/validation hold before sealing products.",
-          "blocker_summary": "11 body material rows still need buy execution.",
+          "blocker_summary": "10 body material rows still need buy execution.",
           "gate_to_close": "Rust map signed off, required chassis brackets analyzed/released/installed/validated, and repaired zones primed.",
           "key_procurement_actions": "Use received primer/prep/seam-sealer/cavity-wax stock and on-hand Raptor; Ultra-cloth solvent-safe wipes and masking tape are received; use on-hand grommets for temporary open-hole masking after fit/solvent check; no generic chassis-black or bed-lining duplicate buy.",
           "evidence_signal": "rust_assessment_photos=63, stripdown_photos=111"
@@ -11939,7 +11939,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP01 \u00b7 Body + Chassis Rust/Bracket Closure",
           "status": "in_progress",
-          "detail": "Close floor/rust repairs, chassis prep, and the required bracket analysis/design/implementation/validation hold before sealing products. Blocker: 11 body material rows still need buy execution. Procurement: Use received primer/prep/seam-sealer/cavity-wax stock and on-hand Raptor; Ultra-cloth solvent-safe wipes and masking tape are received; use on-hand grommets for temporary open-hole masking after fit/solvent check; no generic chassis-black or bed-lining duplicate buy. Gate: Rust map signed off, required chassis brackets analyzed/released/installed/validated, and repaired zones primed."
+          "detail": "Close floor/rust repairs, chassis prep, and the required bracket analysis/design/implementation/validation hold before sealing products. Blocker: 10 body material rows still need buy execution. Procurement: Use received primer/prep/seam-sealer/cavity-wax stock and on-hand Raptor; Ultra-cloth solvent-safe wipes and masking tape are received; use on-hand grommets for temporary open-hole masking after fit/solvent check; no generic chassis-black or bed-lining duplicate buy. Gate: Rust map signed off, required chassis brackets analyzed/released/installed/validated, and repaired zones primed."
         },
         {
           "label": "Issue Check \u00b7 Issue Body Mount Captive Thread Repair",
@@ -16398,51 +16398,170 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "requirement_id": "CR-FRONT-002",
-          "requirement_name": "Front-support left strip liner candidate",
+          "requirement_name": "Underfloor body-support strip liner left",
           "pipe_id": "",
-          "vehicle_location": "Left separate front support / nose-extension strip or bonded liner",
+          "vehicle_location": "Left underfloor body-support / anti-squeak strip liner",
           "pipe_or_line": "",
-          "replace_scope": "hold_trace_required",
-          "quantity": "hold",
+          "replace_scope": "recreate_custom_rubber_first_article",
+          "quantity": "1",
           "photo_evidence": [
+            "20260517_194143_gp_CO7MuMdA",
+            "20260517_194706_gp_twKRWGFA",
+            "20260517_193503_gp_N9nHjqXw",
+            "20260517_193539_gp_E0cR9I0A",
+            "20260517_193559_gp_NEpk1hpg",
             "fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg"
           ],
-          "photo_status": "template_hold_only",
-          "spec_status": "hold_trace_required",
-          "acquisition_status": "not_acquired",
+          "photo_status": "installed_and_loose_part_photos",
+          "spec_status": "first_article_custom_recreate",
+          "acquisition_status": "consolidated_longman_order_line",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Candidate only; working quote envelope 165 x 40 mm; base 8 mm; raised/load pad 14 mm; final outline and holes must come from a physical carrier or installed-location trace",
-          "material_spec": "New black EPDM or NR/SBR sheet rubber, Shore A 60 +/-5 if confirmed required; rubber-to-metal bond adhesive only if carrier proves bonded",
-          "critical_measurements": "Prove the piece exists on the left carrier/location; trace physical part/carrier; mark hole centres from carrier, not distorted rubber; confirm slot shape and handedness",
-          "fit_and_test": "Do not cut or order from current mixed photos; dry-fit only after physical trace confirms the part",
-          "source_ref": "docs_chassis_rubbers_workstream|docs_longman_rubber_order_spec_20260508|data_longman_rubber_order_specs",
-          "notes": "Current loose-part images are mixed with bump-stop fragments; this is not a known released piece yet.",
-          "evidence_images": []
+          "exact_recreation_spec": "Flat strip 165 x 38 x 8 mm; plain rubber strip only; smooth edges and flat parallel faces; no stepped section and no through-holes by default",
+          "material_spec": "New black solid EPDM or NR/SBR strip, Shore A 60 +/-5; same family as body/front-support isolators where possible",
+          "critical_measurements": "Dry-fit first article on actual landing; confirm only local end trim/side orientation; trace slotted steel retainer separately if remake is needed",
+          "fit_and_test": "Order as part of the single Longman rubber bundle; do not punch holes or bond to steel unless the installed sample proves that construction",
+          "source_ref": "docs_chassis_rubbers_workstream|docs_longman_rubber_order_spec_20260508|data_longman_rubber_order_specs|data_rubber_recreation_measurement_closure",
+          "notes": "May 17 installed-location and loose-part photos release this as a real underfloor body-support / anti-squeak strip first article; it is no longer a candidate-only hold.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:41:43",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194143_gp_CO7MuMdA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:03",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193503_gp_N9nHjqXw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:39",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193539_gp_E0cR9I0A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:59",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193559_gp_NEpk1hpg",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "requirement_id": "CR-FRONT-003",
-          "requirement_name": "Front-support right strip liner candidate",
+          "requirement_name": "Underfloor body-support strip liner right",
           "pipe_id": "",
-          "vehicle_location": "Right separate front support / nose-extension strip or bonded liner",
+          "vehicle_location": "Right underfloor body-support / anti-squeak strip liner",
           "pipe_or_line": "",
-          "replace_scope": "hold_trace_required",
-          "quantity": "hold",
+          "replace_scope": "recreate_custom_rubber_first_article",
+          "quantity": "1",
           "photo_evidence": [
+            "20260517_194633_gp_rAjY3gjg",
+            "20260517_194706_gp_twKRWGFA",
+            "20260517_193612_gp_JmbfR0Tw",
+            "20260517_193616_gp_1ye19BZA",
             "fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg"
           ],
-          "photo_status": "template_hold_only",
-          "spec_status": "hold_trace_required",
-          "acquisition_status": "not_acquired",
+          "photo_status": "installed_and_loose_part_photos",
+          "spec_status": "first_article_custom_recreate",
+          "acquisition_status": "consolidated_longman_order_line",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Candidate only; mirror CR-FRONT-002 only if the physical right-side carrier proves symmetric; same working section dimensions after confirmation",
-          "material_spec": "New black EPDM or NR/SBR sheet rubber, Shore A 60 +/-5 if confirmed required; same material batch as left strip",
-          "critical_measurements": "Prove the piece exists on the right carrier/location; trace physical part/carrier; confirm left/right handedness; mark hole centres from carrier",
-          "fit_and_test": "Do not cut or order from current mixed photos; make both sides only after physical trace confirms the parts",
-          "source_ref": "docs_chassis_rubbers_workstream|docs_longman_rubber_order_spec_20260508|data_longman_rubber_order_specs",
-          "notes": "The old right-strip dashboard image is now treated as bump-stop evidence first, not a strip master.",
-          "evidence_images": []
+          "exact_recreation_spec": "Same as left: flat strip 165 x 38 x 8 mm; plain rubber strip only; smooth edges and flat parallel faces; use same blank unless sample proves a handed end trim",
+          "material_spec": "New black solid EPDM or NR/SBR strip, Shore A 60 +/-5; same batch/type as left strip where possible",
+          "critical_measurements": "Dry-fit right-side first article on actual landing; confirm only local handed trim; trace slotted steel retainer separately if remake is needed",
+          "fit_and_test": "Order as part of the single Longman rubber bundle; do not punch holes or bond to steel unless the installed sample proves that construction",
+          "source_ref": "docs_chassis_rubbers_workstream|docs_longman_rubber_order_spec_20260508|data_longman_rubber_order_specs|data_rubber_recreation_measurement_closure",
+          "notes": "May 17 installed-location and loose-part photos release this as the right-side mate to the left underfloor strip first article; it is no longer a candidate-only hold.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:46:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194633_gp_rAjY3gjg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:12",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193612_gp_JmbfR0Tw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:16",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193616_gp_1ye19BZA",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "requirement_id": "CR-FRONT-004",
@@ -17002,51 +17121,170 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "requirement_id": "CR-FRONT-002",
-          "requirement_name": "Front-support left strip liner candidate",
+          "requirement_name": "Underfloor body-support strip liner left",
           "pipe_id": "",
-          "vehicle_location": "Left separate front support / nose-extension strip or bonded liner",
+          "vehicle_location": "Left underfloor body-support / anti-squeak strip liner",
           "pipe_or_line": "",
-          "replace_scope": "hold_trace_required",
-          "quantity": "hold",
+          "replace_scope": "recreate_custom_rubber_first_article",
+          "quantity": "1",
           "photo_evidence": [
+            "20260517_194143_gp_CO7MuMdA",
+            "20260517_194706_gp_twKRWGFA",
+            "20260517_193503_gp_N9nHjqXw",
+            "20260517_193539_gp_E0cR9I0A",
+            "20260517_193559_gp_NEpk1hpg",
             "fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg"
           ],
-          "photo_status": "template_hold_only",
-          "spec_status": "hold_trace_required",
-          "acquisition_status": "not_acquired",
+          "photo_status": "installed_and_loose_part_photos",
+          "spec_status": "first_article_custom_recreate",
+          "acquisition_status": "consolidated_longman_order_line",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Candidate only; working quote envelope 165 x 40 mm; base 8 mm; raised/load pad 14 mm; final outline and holes must come from a physical carrier or installed-location trace",
-          "material_spec": "New black EPDM or NR/SBR sheet rubber, Shore A 60 +/-5 if confirmed required; rubber-to-metal bond adhesive only if carrier proves bonded",
-          "critical_measurements": "Prove the piece exists on the left carrier/location; trace physical part/carrier; mark hole centres from carrier, not distorted rubber; confirm slot shape and handedness",
-          "fit_and_test": "Do not cut or order from current mixed photos; dry-fit only after physical trace confirms the part",
-          "source_ref": "docs_chassis_rubbers_workstream|docs_longman_rubber_order_spec_20260508|data_longman_rubber_order_specs",
-          "notes": "Current loose-part images are mixed with bump-stop fragments; this is not a known released piece yet.",
-          "evidence_images": []
+          "exact_recreation_spec": "Flat strip 165 x 38 x 8 mm; plain rubber strip only; smooth edges and flat parallel faces; no stepped section and no through-holes by default",
+          "material_spec": "New black solid EPDM or NR/SBR strip, Shore A 60 +/-5; same family as body/front-support isolators where possible",
+          "critical_measurements": "Dry-fit first article on actual landing; confirm only local end trim/side orientation; trace slotted steel retainer separately if remake is needed",
+          "fit_and_test": "Order as part of the single Longman rubber bundle; do not punch holes or bond to steel unless the installed sample proves that construction",
+          "source_ref": "docs_chassis_rubbers_workstream|docs_longman_rubber_order_spec_20260508|data_longman_rubber_order_specs|data_rubber_recreation_measurement_closure",
+          "notes": "May 17 installed-location and loose-part photos release this as a real underfloor body-support / anti-squeak strip first article; it is no longer a candidate-only hold.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:41:43",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194143_gp_CO7MuMdA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:03",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193503_gp_N9nHjqXw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:39",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193539_gp_E0cR9I0A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:59",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193559_gp_NEpk1hpg",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "requirement_id": "CR-FRONT-003",
-          "requirement_name": "Front-support right strip liner candidate",
+          "requirement_name": "Underfloor body-support strip liner right",
           "pipe_id": "",
-          "vehicle_location": "Right separate front support / nose-extension strip or bonded liner",
+          "vehicle_location": "Right underfloor body-support / anti-squeak strip liner",
           "pipe_or_line": "",
-          "replace_scope": "hold_trace_required",
-          "quantity": "hold",
+          "replace_scope": "recreate_custom_rubber_first_article",
+          "quantity": "1",
           "photo_evidence": [
+            "20260517_194633_gp_rAjY3gjg",
+            "20260517_194706_gp_twKRWGFA",
+            "20260517_193612_gp_JmbfR0Tw",
+            "20260517_193616_gp_1ye19BZA",
             "fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg"
           ],
-          "photo_status": "template_hold_only",
-          "spec_status": "hold_trace_required",
-          "acquisition_status": "not_acquired",
+          "photo_status": "installed_and_loose_part_photos",
+          "spec_status": "first_article_custom_recreate",
+          "acquisition_status": "consolidated_longman_order_line",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Candidate only; mirror CR-FRONT-002 only if the physical right-side carrier proves symmetric; same working section dimensions after confirmation",
-          "material_spec": "New black EPDM or NR/SBR sheet rubber, Shore A 60 +/-5 if confirmed required; same material batch as left strip",
-          "critical_measurements": "Prove the piece exists on the right carrier/location; trace physical part/carrier; confirm left/right handedness; mark hole centres from carrier",
-          "fit_and_test": "Do not cut or order from current mixed photos; make both sides only after physical trace confirms the parts",
-          "source_ref": "docs_chassis_rubbers_workstream|docs_longman_rubber_order_spec_20260508|data_longman_rubber_order_specs",
-          "notes": "The old right-strip dashboard image is now treated as bump-stop evidence first, not a strip master.",
-          "evidence_images": []
+          "exact_recreation_spec": "Same as left: flat strip 165 x 38 x 8 mm; plain rubber strip only; smooth edges and flat parallel faces; use same blank unless sample proves a handed end trim",
+          "material_spec": "New black solid EPDM or NR/SBR strip, Shore A 60 +/-5; same batch/type as left strip where possible",
+          "critical_measurements": "Dry-fit right-side first article on actual landing; confirm only local handed trim; trace slotted steel retainer separately if remake is needed",
+          "fit_and_test": "Order as part of the single Longman rubber bundle; do not punch holes or bond to steel unless the installed sample proves that construction",
+          "source_ref": "docs_chassis_rubbers_workstream|docs_longman_rubber_order_spec_20260508|data_longman_rubber_order_specs|data_rubber_recreation_measurement_closure",
+          "notes": "May 17 installed-location and loose-part photos release this as the right-side mate to the left underfloor strip first article; it is no longer a candidate-only hold.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:46:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194633_gp_rAjY3gjg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:12",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193612_gp_JmbfR0Tw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:16",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193616_gp_1ye19BZA",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "requirement_id": "CR-FRONT-004",
@@ -17786,13 +18024,13 @@ window.J40_DASHBOARD_DATA = {
           "qty_required": "4",
           "qty_to_order": "4",
           "spec_status": "spec_ready",
-          "order_release_state": "spec_ready_verify_station_count",
+          "order_release_state": "reference_only_not_active_with_longman_route",
           "exact_order_spec": "Order Toyota/OE-style cushion 52201-90300, quantity 4, only as part of the complete matched OE/reproduction body mount package.",
           "material_spec": "OE-style automotive body-mount rubber",
           "source_basis": "WhatsApp quote candidate 2026-04-17; cross-check against Toyota body-mount station references",
           "user_action_required": "Confirm the vehicle actually uses this OE package before purchase by laying out old parts by station.",
-          "do_not_order_if": "Do not order if choosing local fabrication route from BM-FAB lines.",
-          "notes": "Candidate list has 16 cushion/seat rubber pieces; current custom package uses Longman square BM-ISO pads plus front support pieces, so route choice must be explicit.",
+          "do_not_order_if": "Do not order while the consolidated Longman custom rubber route is active.",
+          "notes": "Candidate list has 16 cushion/seat rubber pieces; current custom package uses Longman square BM-ISO pads plus front support pieces, so route choice must be explicit. | Current active custom rubber procurement is the consolidated Longman order; OE rows are reference only unless the route is deliberately changed.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234652.jpg",
@@ -17877,6 +18115,102 @@ window.J40_DASHBOARD_DATA = {
               "stage": "procurement_reconciliation",
               "media_id": "20260502_004345_gp_yK8VYzMQ",
               "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:41:43",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194143_gp_CO7MuMdA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:03",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193503_gp_N9nHjqXw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:39",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193539_gp_E0cR9I0A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:59",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193559_gp_NEpk1hpg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:46:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194633_gp_rAjY3gjg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:12",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193612_gp_JmbfR0Tw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:16",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193616_gp_1ye19BZA",
+              "matched_tokens": []
             }
           ]
         },
@@ -17888,13 +18222,13 @@ window.J40_DASHBOARD_DATA = {
           "qty_required": "4",
           "qty_to_order": "4",
           "spec_status": "spec_ready",
-          "order_release_state": "spec_ready_verify_station_count",
+          "order_release_state": "reference_only_not_active_with_longman_route",
           "exact_order_spec": "Order Toyota/OE-style cushion 52202-90300, quantity 4, only as part of the complete matched OE/reproduction body mount package.",
           "material_spec": "OE-style automotive body-mount rubber",
           "source_basis": "WhatsApp quote candidate 2026-04-17",
           "user_action_required": "Confirm part count against old upper/lower stacks.",
-          "do_not_order_if": "Do not order if choosing local fabrication route from BM-FAB lines.",
-          "notes": "Do not mix OE/repro cushions with locally fabricated cushions in the same mount family.",
+          "do_not_order_if": "Do not order while the consolidated Longman custom rubber route is active.",
+          "notes": "Do not mix OE/repro cushions with locally fabricated cushions in the same mount family. | Current active custom rubber procurement is the consolidated Longman order; OE rows are reference only unless the route is deliberately changed.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234652.jpg",
@@ -17942,13 +18276,13 @@ window.J40_DASHBOARD_DATA = {
           "qty_required": "2",
           "qty_to_order": "2",
           "spec_status": "spec_ready",
-          "order_release_state": "spec_ready_verify_station_count",
+          "order_release_state": "reference_only_not_active_with_longman_route",
           "exact_order_spec": "Order Toyota/OE-style cushion 52203-90300, quantity 2, only as part of the complete matched OE/reproduction body mount package.",
           "material_spec": "OE-style automotive body-mount rubber",
           "source_basis": "WhatsApp quote candidate 2026-04-17",
           "user_action_required": "Confirm whether this station exists on the current early tub layout.",
-          "do_not_order_if": "Do not order if choosing local fabrication route from BM-FAB lines.",
-          "notes": "Verify against current body station map before spending.",
+          "do_not_order_if": "Do not order while the consolidated Longman custom rubber route is active.",
+          "notes": "Verify against current body station map before spending. | Current active custom rubber procurement is the consolidated Longman order; OE rows are reference only unless the route is deliberately changed.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234652.jpg",
@@ -17996,13 +18330,13 @@ window.J40_DASHBOARD_DATA = {
           "qty_required": "2",
           "qty_to_order": "2",
           "spec_status": "spec_ready",
-          "order_release_state": "spec_ready_verify_station_count",
+          "order_release_state": "reference_only_not_active_with_longman_route",
           "exact_order_spec": "Order Toyota/OE-style cushion 52204-90300, quantity 2, only as part of the complete matched OE/reproduction body mount package.",
           "material_spec": "OE-style automotive body-mount rubber",
           "source_basis": "WhatsApp quote candidate 2026-04-17",
           "user_action_required": "Confirm whether this station exists on the current early tub layout.",
-          "do_not_order_if": "Do not order if choosing local fabrication route from BM-FAB lines.",
-          "notes": "ToyotaPartsDeal also shows 52204-35010 as a NO.1 lower reference on a 1978 listing; verify by station, not only name.",
+          "do_not_order_if": "Do not order while the consolidated Longman custom rubber route is active.",
+          "notes": "ToyotaPartsDeal also shows 52204-35010 as a NO.1 lower reference on a 1978 listing; verify by station, not only name. | Current active custom rubber procurement is the consolidated Longman order; OE rows are reference only unless the route is deliberately changed.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234652.jpg",
@@ -18050,13 +18384,13 @@ window.J40_DASHBOARD_DATA = {
           "qty_required": "4",
           "qty_to_order": "4",
           "spec_status": "spec_ready",
-          "order_release_state": "spec_ready_verify_station_count",
+          "order_release_state": "reference_only_not_active_with_longman_route",
           "exact_order_spec": "Order Toyota/OE-style cushion 52208-90300, quantity 4, only as part of the complete matched OE/reproduction body mount package.",
           "material_spec": "OE-style automotive body-mount rubber",
           "source_basis": "WhatsApp quote candidate 2026-04-17",
           "user_action_required": "Confirm actual rear/cowl station count before purchase.",
-          "do_not_order_if": "Do not order if choosing local fabrication route from BM-FAB lines.",
-          "notes": "Candidate list describes this as NO.5; older cleaned chat text also mentions NO.3 upper, so verify with supplier diagram.",
+          "do_not_order_if": "Do not order while the consolidated Longman custom rubber route is active.",
+          "notes": "Candidate list describes this as NO.5; older cleaned chat text also mentions NO.3 upper, so verify with supplier diagram. | Current active custom rubber procurement is the consolidated Longman order; OE rows are reference only unless the route is deliberately changed.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234652.jpg",
@@ -18104,13 +18438,13 @@ window.J40_DASHBOARD_DATA = {
           "qty_required": "2",
           "qty_to_order": "2",
           "spec_status": "spec_ready",
-          "order_release_state": "spec_ready_verify_station_count",
+          "order_release_state": "reference_only_not_active_with_longman_route",
           "exact_order_spec": "Order collar 90540-17045, quantity 2, if OE/repro route is selected and station map confirms it.",
           "material_spec": "OE-style collar/spacer interface piece",
           "source_basis": "WhatsApp quote candidate; ToyotaPartsDeal 1978 body-mount listing includes 90540-17045 as a cushion reference",
           "user_action_required": "Match old part before buying because the same number appears as a cushion/collar reference in different source wording.",
-          "do_not_order_if": "Do not order if existing collars are reusable and local fabrication route supplies correct sleeves.",
-          "notes": "Keep old collars until dry fit closes.",
+          "do_not_order_if": "Do not order while the consolidated Longman custom rubber route is active.",
+          "notes": "Keep old collars until dry fit closes. | Current active custom rubber procurement is the consolidated Longman order; OE rows are reference only unless the route is deliberately changed.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234652.jpg",
@@ -18182,13 +18516,13 @@ window.J40_DASHBOARD_DATA = {
           "qty_required": "4",
           "qty_to_order": "4",
           "spec_status": "spec_ready",
-          "order_release_state": "spec_ready_verify_station_count",
+          "order_release_state": "reference_only_not_active_with_longman_route",
           "exact_order_spec": "Order stopper/seat 52023-60010, quantity 4, if OE/repro route is selected and physical pieces match.",
           "material_spec": "OE-style rubber stopper/seat",
           "source_basis": "WhatsApp quote candidate; ToyotaPartsDeal 1978 listing references 52023-60010 as body mount lower cushion at NO.3/NO.4",
           "user_action_required": "Measure current stopper/seat OD, ID, height, and dish before purchase.",
-          "do_not_order_if": "Do not order blindly if these are actually included in a complete body mount kit.",
-          "notes": "This is probably what the current measured stops should be matched against.",
+          "do_not_order_if": "Do not order while the consolidated Longman custom rubber route is active.",
+          "notes": "This is probably what the current measured stops should be matched against. | Current active custom rubber procurement is the consolidated Longman order; OE rows are reference only unless the route is deliberately changed.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234652.jpg",
@@ -18272,13 +18606,13 @@ window.J40_DASHBOARD_DATA = {
           "qty_required": "6",
           "qty_to_order": "6",
           "spec_status": "spec_ready",
-          "order_release_state": "spec_ready_verify_station_count",
+          "order_release_state": "reference_only_not_active_with_longman_route",
           "exact_order_spec": "Order washer/seat 90560-12009, quantity 6, if OE/repro route is selected and sample shape matches.",
           "material_spec": "OE-style washer/seat",
           "source_basis": "WhatsApp quote candidate 2026-04-17",
           "user_action_required": "Measure current washer/seat OD, ID, dish depth, and steel/rubber thickness.",
-          "do_not_order_if": "Do not order if local cups are being fabricated to BM-HW-002 spec.",
-          "notes": "Supplier must confirm this is the correct seat/washer for the exact body-mount kit being supplied.",
+          "do_not_order_if": "Do not order while the consolidated Longman custom rubber route is active.",
+          "notes": "Supplier must confirm this is the correct seat/washer for the exact body-mount kit being supplied. | Current active custom rubber procurement is the consolidated Longman order; OE rows are reference only unless the route is deliberately changed.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
@@ -18338,13 +18672,13 @@ window.J40_DASHBOARD_DATA = {
           "qty_required": "4",
           "qty_to_order": "4",
           "spec_status": "spec_ready",
-          "order_release_state": "spec_ready_verify_station_count",
+          "order_release_state": "reference_only_not_active_with_longman_route",
           "exact_order_spec": "Order washer/seat 90560-12233, quantity 4, if OE/repro route is selected and sample shape matches.",
           "material_spec": "OE-style washer/seat",
           "source_basis": "WhatsApp quote candidate; ToyotaPartsDeal 1978 listing references 90560-12233 as spacer for body mount NO.3/NO.4",
           "user_action_required": "Measure current washer/seat OD, ID, dish depth, and steel/rubber thickness.",
-          "do_not_order_if": "Do not order if local cups are being fabricated to BM-HW-002 spec.",
-          "notes": "Part-number wording varies between spacer and washer/seat; physical shape controls.",
+          "do_not_order_if": "Do not order while the consolidated Longman custom rubber route is active.",
+          "notes": "Part-number wording varies between spacer and washer/seat; physical shape controls. | Current active custom rubber procurement is the consolidated Longman order; OE rows are reference only unless the route is deliberately changed.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234652.jpg",
@@ -18440,13 +18774,13 @@ window.J40_DASHBOARD_DATA = {
           "qty_required": "6",
           "qty_to_order": "6",
           "spec_status": "spec_ready",
-          "order_release_state": "spec_ready_verify_station_count",
+          "order_release_state": "reference_only_not_active_with_longman_route",
           "exact_order_spec": "Order body mount spacer 52228-22010, quantity 6, if OE/repro route is selected and the old spacer/holder profile matches.",
           "material_spec": "OE-style spacer/holder",
           "source_basis": "WhatsApp quote candidate; ToyotaPartsDeal shows 52228-30010 replaced by 52228-22010 for holder rows",
           "user_action_required": "Measure old spacer/holder thickness, hole size, OD/profile, and station location.",
-          "do_not_order_if": "Do not order if sleeves/spacers will be fabricated locally after stack measurement.",
-          "notes": "This may correspond to the holder/spacer rows, not a simple tube sleeve.",
+          "do_not_order_if": "Do not order while the consolidated Longman custom rubber route is active.",
+          "notes": "This may correspond to the holder/spacer rows, not a simple tube sleeve. | Current active custom rubber procurement is the consolidated Longman order; OE rows are reference only unless the route is deliberately changed.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234652.jpg",
@@ -18518,13 +18852,13 @@ window.J40_DASHBOARD_DATA = {
           "qty_required": "2",
           "qty_to_order": "2",
           "spec_status": "spec_ready",
-          "order_release_state": "spec_ready_verify_thread_length",
+          "order_release_state": "reference_only_not_active_with_longman_route",
           "exact_order_spec": "Order bolt 90109-10039, quantity 2, only if OE/repro route and station map confirm this bolt family.",
           "material_spec": "Toyota OE-style structural bolt; class/grade to be confirmed by supplier",
           "source_basis": "WhatsApp quote candidate 2026-04-17",
           "user_action_required": "Confirm pitch and length against old bolt/captive nut before ordering expensive OE bolts.",
-          "do_not_order_if": "Do not order if using local graded hardware pack BM-HW-003.",
-          "notes": "Bolt dimensions were not found in open OE listings; do not rely on part number alone for local substitute length.",
+          "do_not_order_if": "Do not order while the consolidated Longman custom rubber route is active.",
+          "notes": "Bolt dimensions were not found in open OE listings; do not rely on part number alone for local substitute length. | Current active custom rubber procurement is the consolidated Longman order; OE rows are reference only unless the route is deliberately changed.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234652.jpg",
@@ -18572,13 +18906,13 @@ window.J40_DASHBOARD_DATA = {
           "qty_required": "2",
           "qty_to_order": "2",
           "spec_status": "spec_ready",
-          "order_release_state": "spec_ready_verify_thread_length",
+          "order_release_state": "reference_only_not_active_with_longman_route",
           "exact_order_spec": "Order bolt 90105-10053, quantity 2, only if OE/repro route and station map confirm this bolt family.",
           "material_spec": "Toyota OE-style structural bolt; class/grade to be confirmed by supplier",
           "source_basis": "WhatsApp quote candidate; ToyotaPartsDeal 1978 listing also references 90105-10053 on NO.1-NO.3 body-mount bolt rows",
           "user_action_required": "Confirm pitch and length against old bolt/captive nut before ordering expensive OE bolts.",
-          "do_not_order_if": "Do not order if using local graded hardware pack BM-HW-003.",
-          "notes": "ToyotaPartsDeal station quantity differs from the quote candidate, so station map controls.",
+          "do_not_order_if": "Do not order while the consolidated Longman custom rubber route is active.",
+          "notes": "ToyotaPartsDeal station quantity differs from the quote candidate, so station map controls. | Current active custom rubber procurement is the consolidated Longman order; OE rows are reference only unless the route is deliberately changed.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234652.jpg",
@@ -18626,13 +18960,13 @@ window.J40_DASHBOARD_DATA = {
           "qty_required": "4",
           "qty_to_order": "4",
           "spec_status": "spec_ready",
-          "order_release_state": "spec_ready_verify_thread_length",
+          "order_release_state": "reference_only_not_active_with_longman_route",
           "exact_order_spec": "Order bolt 90119-10123, quantity 4, only if OE/repro route and station map confirm this bolt family.",
           "material_spec": "Toyota OE-style structural bolt; class/grade to be confirmed by supplier",
           "source_basis": "WhatsApp quote candidate 2026-04-17",
           "user_action_required": "Confirm pitch and length against old bolt/captive nut before ordering expensive OE bolts.",
-          "do_not_order_if": "Do not order if using local graded hardware pack BM-HW-003.",
-          "notes": "Likely needed for one station family in the candidate kit; verify on supplier diagram.",
+          "do_not_order_if": "Do not order while the consolidated Longman custom rubber route is active.",
+          "notes": "Likely needed for one station family in the candidate kit; verify on supplier diagram. | Current active custom rubber procurement is the consolidated Longman order; OE rows are reference only unless the route is deliberately changed.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234652.jpg",
@@ -18680,13 +19014,13 @@ window.J40_DASHBOARD_DATA = {
           "qty_required": "2",
           "qty_to_order": "2",
           "spec_status": "spec_ready",
-          "order_release_state": "spec_ready_verify_thread_length",
+          "order_release_state": "reference_only_not_active_with_longman_route",
           "exact_order_spec": "Order bolt 90101-10463, quantity 2, only if OE/repro route and station map confirm this bolt family.",
           "material_spec": "Toyota OE-style structural bolt; class/grade to be confirmed by supplier",
           "source_basis": "WhatsApp quote candidate; ToyotaPartsDeal 1978 listing references 90101-10463 on NO.4-NO.5 body-mount bolt rows",
           "user_action_required": "Confirm pitch and length against old bolt/captive nut before ordering expensive OE bolts.",
-          "do_not_order_if": "Do not order if using local graded hardware pack BM-HW-003.",
-          "notes": "Open listing confirms identity use but not length.",
+          "do_not_order_if": "Do not order while the consolidated Longman custom rubber route is active.",
+          "notes": "Open listing confirms identity use but not length. | Current active custom rubber procurement is the consolidated Longman order; OE rows are reference only unless the route is deliberately changed.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234652.jpg",
@@ -18728,7 +19062,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "order_line_id": "BM-FAB-001",
-          "route": "LONGMAN_CUSTOM_RUBBER",
+          "route": "LONGMAN_CONSOLIDATED_RUBBER_ORDER",
           "item": "Large station square body isolator pad",
           "part_number_or_code": "BM-ISO-LG",
           "qty_required": "2",
@@ -18740,7 +19074,7 @@ window.J40_DASHBOARD_DATA = {
           "source_basis": "20260405_234652 tub-side landing context; docs/longman-rubber-order-spec-20260508.md",
           "user_action_required": "Confirm large-pair station, flat footprint, sleeve OD, and installed stack height before drilling/punching centre hole.",
           "do_not_order_if": "Do not order if a complete OE/reproduction rubber route is deliberately selected.",
-          "notes": "Primary custom shape is square; trim only if station photos prove a clash.",
+          "notes": "Primary custom shape is square; trim only if station photos prove a clash. | Line belongs to the single consolidated Longman rubber order, not a separate custom order.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234652.jpg",
@@ -18806,7 +19140,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "order_line_id": "BM-FAB-002",
-          "route": "LONGMAN_CUSTOM_RUBBER",
+          "route": "LONGMAN_CONSOLIDATED_RUBBER_ORDER",
           "item": "Small station square body isolator pad",
           "part_number_or_code": "BM-ISO-SM",
           "qty_required": "10",
@@ -18818,7 +19152,7 @@ window.J40_DASHBOARD_DATA = {
           "source_basis": "20260405_234652 tub-side landing context; docs/longman-rubber-order-spec-20260508.md",
           "user_action_required": "Confirm station count, flat footprint, sleeve OD, and installed stack height before drilling/punching centre hole.",
           "do_not_order_if": "Do not order if a complete OE/reproduction rubber route is deliberately selected.",
-          "notes": "Primary custom shape is square; trim only if station photos prove a clash.",
+          "notes": "Primary custom shape is square; trim only if station photos prove a clash. | Line belongs to the single consolidated Longman rubber order, not a separate custom order.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234652.jpg",
@@ -18884,7 +19218,7 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "order_line_id": "BM-FAB-003",
-          "route": "LOCAL_FABRICATION",
+          "route": "LONGMAN_CONSOLIDATED_RUBBER_ORDER",
           "item": "Front support two-hole oval isolator pad",
           "part_number_or_code": "FS-OVAL",
           "qty_required": "2",
@@ -18893,10 +19227,10 @@ window.J40_DASHBOARD_DATA = {
           "order_release_state": "spec_ready_final_caliper_hold",
           "exact_order_spec": "Overall length 96 mm; max width 64 mm; free thickness 15 mm; two 12 mm holes; hole centre spacing 64 mm; rectangular relief 36 x 18 mm with R3 corners; top metal insert/boss OD 29 mm.",
           "material_spec": "Black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5; reuse/bond insert if original design uses one",
-          "source_basis": "May 2 tape-measure photos",
+          "source_basis": "May 2 tape-measure photos; docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv",
           "user_action_required": "Caliper-confirm hole spacing, insert OD, thickness, and whether insert is bonded or loose.",
-          "do_not_order_if": "Do not substitute main tub body pads for front support pads.",
-          "notes": "Front support pads are separate from the six main tub stations.",
+          "do_not_order_if": "Do not substitute main tub body pads for front support pads; keep this inside the single Longman rubber bundle.",
+          "notes": "Front support pads are separate from the six main tub stations. | Line belongs to the single consolidated Longman rubber order, not a separate custom order.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
@@ -18920,90 +19254,330 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rubber_parts_recreation_samples",
               "stage": "procurement_reconciliation",
               "media_id": "20260502_004345_gp_yK8VYzMQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:41:43",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194143_gp_CO7MuMdA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:03",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193503_gp_N9nHjqXw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:39",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193539_gp_E0cR9I0A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:59",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193559_gp_NEpk1hpg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:46:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194633_gp_rAjY3gjg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:12",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193612_gp_JmbfR0Tw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:16",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193616_gp_1ye19BZA",
               "matched_tokens": []
             }
           ]
         },
         {
           "order_line_id": "BM-FAB-004",
-          "route": "LONGMAN_HOLD",
-          "item": "Front support left strip or bonded liner candidate",
+          "route": "LONGMAN_CONSOLIDATED_RUBBER_ORDER",
+          "item": "Underfloor body-support strip liner left",
           "part_number_or_code": "FS-STRIP-L",
-          "qty_required": "hold",
-          "qty_to_order": "hold",
+          "qty_required": "1",
+          "qty_to_order": "1",
           "spec_status": "spec_ready",
-          "order_release_state": "hold_trace_required",
-          "exact_order_spec": "Candidate only; working quote envelope 165 x 40 mm; base sheet thickness 8 mm; raised/load pad height 14 mm; final outline and holes must come from physical carrier or installed-location trace.",
-          "material_spec": "Black EPDM or NR/SBR sheet rubber, Shore A 60 +/-5 if confirmed required; rubber-to-metal bond adhesive only if carrier proves bonded",
-          "source_basis": "docs/chassis-rubbers-workstream.md; data/manual/longman_rubber_order_specs.csv",
-          "user_action_required": "Prove the left strip exists on the carrier/location; trace physical part/carrier and mark hole centres from carrier, not distorted rubber.",
-          "do_not_order_if": "Do not order or final-cut from the current mixed loose-part photos.",
-          "notes": "Current photo evidence is mixed with bump-stop fragments; not a known released piece yet.",
+          "order_release_state": "first_article_custom_recreate",
+          "exact_order_spec": "Flat strip 165 x 38 x 8 mm; plain rubber strip only; smooth edges and flat parallel faces; no stepped section and no through-holes by default.",
+          "material_spec": "Black EPDM or NR/SBR strip rubber, Shore A 60 +/-5; same family as the front/body isolator batch where possible",
+          "source_basis": "May 17 installed-location and loose-part photos; docs/chassis-rubbers-workstream.md; docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv",
+          "user_action_required": "Order one first article inside the single Longman bundle, then dry-fit on the actual landing and apply only any proven local end trim. Trace/reuse the slotted steel retainer separately if needed.",
+          "do_not_order_if": "Do not punch holes/slots through the rubber or bond to steel unless the installed sample proves that construction.",
+          "notes": "Released as plain underfloor body-support / anti-squeak strip first article; legacy FS-STRIP-L name retained for continuity.",
           "evidence_images": [
             {
-              "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:42:31",
+              "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:41:43",
               "media_type": "photo",
               "component_group": "procurement_inventory",
               "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004231_gp_CfosvPIg",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194143_gp_CO7MuMdA",
               "matched_tokens": []
             },
             {
-              "path": "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:43:45",
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:03",
               "media_type": "photo",
               "component_group": "procurement_inventory",
               "specific_component": "rubber_parts_recreation_samples",
               "stage": "procurement_reconciliation",
-              "media_id": "20260502_004345_gp_yK8VYzMQ",
+              "media_id": "20260517_193503_gp_N9nHjqXw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:39",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193539_gp_E0cR9I0A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:59",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193559_gp_NEpk1hpg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:46:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194633_gp_rAjY3gjg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:12",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193612_gp_JmbfR0Tw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:16",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193616_gp_1ye19BZA",
               "matched_tokens": []
             }
           ]
         },
         {
           "order_line_id": "BM-FAB-005",
-          "route": "LONGMAN_HOLD",
-          "item": "Front support right strip or bonded liner candidate",
+          "route": "LONGMAN_CONSOLIDATED_RUBBER_ORDER",
+          "item": "Underfloor body-support strip liner right",
           "part_number_or_code": "FS-STRIP-R",
-          "qty_required": "hold",
-          "qty_to_order": "hold",
+          "qty_required": "1",
+          "qty_to_order": "1",
           "spec_status": "spec_ready",
-          "order_release_state": "hold_trace_required",
-          "exact_order_spec": "Candidate only; mirror FS-STRIP-L only if the physical right-side carrier proves symmetric; final outline and holes must come from physical carrier or installed-location trace.",
-          "material_spec": "Black EPDM or NR/SBR sheet rubber, Shore A 60 +/-5 if confirmed required; same material batch as left if released",
-          "source_basis": "docs/chassis-rubbers-workstream.md; data/manual/longman_rubber_order_specs.csv",
-          "user_action_required": "Prove the right strip exists on the carrier/location; trace physical part/carrier and confirm handedness.",
-          "do_not_order_if": "Do not order or final-cut from the current mixed loose-part photos.",
-          "notes": "The old right-strip photo is treated as bump-stop evidence first, not a strip master.",
+          "order_release_state": "first_article_custom_recreate",
+          "exact_order_spec": "Same rubber spec as left: flat strip 165 x 38 x 8 mm; plain rubber strip only; use the same blank unless the right-side sample proves a handed end trim.",
+          "material_spec": "Black EPDM or NR/SBR strip rubber, Shore A 60 +/-5; same batch/type as left where possible",
+          "source_basis": "May 17 installed-location and loose-part photos; docs/chassis-rubbers-workstream.md; docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv",
+          "user_action_required": "Order one first article inside the single Longman bundle, then dry-fit on the right landing and confirm only any local handed trim. Trace/reuse the slotted steel retainer separately if needed.",
+          "do_not_order_if": "Do not punch holes/slots through the rubber or bond to steel unless the installed sample proves that construction.",
+          "notes": "Released as the right-side mate to FS-STRIP-L; legacy FS-STRIP-R name retained for continuity.",
           "evidence_images": [
             {
-              "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:42:31",
+              "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:46:33",
               "media_type": "photo",
               "component_group": "procurement_inventory",
               "specific_component": "rubber_parts_recreation_samples",
-              "stage": "procurement_reconciliation",
-              "media_id": "20260502_004231_gp_CfosvPIg",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194633_gp_rAjY3gjg",
               "matched_tokens": []
             },
             {
-              "path": "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
-              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-              "captured_date": "2026-05-02",
-              "captured_time": "00:43:45",
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:12",
               "media_type": "photo",
               "component_group": "procurement_inventory",
               "specific_component": "rubber_parts_recreation_samples",
               "stage": "procurement_reconciliation",
-              "media_id": "20260502_004345_gp_yK8VYzMQ",
+              "media_id": "20260517_193612_gp_JmbfR0Tw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:16",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193616_gp_1ye19BZA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:41:43",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194143_gp_CO7MuMdA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:03",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193503_gp_N9nHjqXw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:39",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193539_gp_E0cR9I0A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:59",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193559_gp_NEpk1hpg",
               "matched_tokens": []
             }
           ]
@@ -19455,6 +20029,102 @@ window.J40_DASHBOARD_DATA = {
               "stage": "procurement_reconciliation",
               "media_id": "20260502_004345_gp_yK8VYzMQ",
               "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:41:43",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194143_gp_CO7MuMdA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:03",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193503_gp_N9nHjqXw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:39",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193539_gp_E0cR9I0A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:59",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193559_gp_NEpk1hpg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:46:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194633_gp_rAjY3gjg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:12",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193612_gp_JmbfR0Tw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:16",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193616_gp_1ye19BZA",
+              "matched_tokens": []
             }
           ]
         },
@@ -19682,7 +20352,7 @@ window.J40_DASHBOARD_DATA = {
           "status": "open",
           "blocks_order_lines": "BM-OE-001 to BM-OE-014; BM-FAB-001 to BM-FAB-005; BM-HW-001 to BM-HW-005; BM-SHIM-001 to BM-SHIM-002",
           "record_result_in": "data/manual/body_mount_station_closure_sheet.csv; photos; data/manual/rubber_recreation_measurement_closure.csv",
-          "why_it_matters": "Main body rubber route is now Longman square BM-ISO pads unless layout proves a different station trim. Front-support strip rows stay on hold until the actual carrier/location proves them.",
+          "why_it_matters": "Main body rubber, FS-OVAL, FS-STRIP-L/R, and bump-stop rubber pieces are now one consolidated Longman custom order; sample layout still controls station labels, sleeve/cup hardware, and final trim.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234652.jpg",
@@ -19718,6 +20388,102 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rubber_parts_recreation_samples",
               "stage": "procurement_reconciliation",
               "media_id": "20260502_004231_gp_CfosvPIg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:46:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194633_gp_rAjY3gjg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:12",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193612_gp_JmbfR0Tw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:16",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193616_gp_1ye19BZA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:41:43",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194143_gp_CO7MuMdA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:03",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193503_gp_N9nHjqXw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:39",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193539_gp_E0cR9I0A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:59",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193559_gp_NEpk1hpg",
               "matched_tokens": []
             },
             {
@@ -19786,11 +20552,11 @@ window.J40_DASHBOARD_DATA = {
           "action_id": "BMA-002",
           "priority": "P0",
           "owner": "David_or_mechanic",
-          "action": "Decide the route after the layout: current Longman custom square-pad route, or a complete OE/reproduction package. Mark the rejected route as do-not-order.",
+          "action": "Confirm the active route remains the consolidated Longman custom rubber bundle, or deliberately switch to a complete OE/reproduction package and mark the rejected route as do-not-order.",
           "status": "open",
           "blocks_order_lines": "BM-OE-001 to BM-OE-014; BM-FAB-001 to BM-FAB-005",
           "record_result_in": "data/manual/body_mount_order_release_specs.csv notes or data/manual/body_mount_station_closure_sheet.csv",
-          "why_it_matters": "Buying both routes duplicates expensive rubber and can create mixed hardness/height problems.",
+          "why_it_matters": "Buying both routes duplicates expensive rubber and can create mixed hardness/height problems; the default active route is now one Longman bundle.",
           "evidence_images": [
             {
               "path": "../../photos/20260405_234652.jpg",
@@ -19826,6 +20592,102 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rubber_parts_recreation_samples",
               "stage": "procurement_reconciliation",
               "media_id": "20260502_004231_gp_CfosvPIg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:46:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194633_gp_rAjY3gjg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:12",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193612_gp_JmbfR0Tw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:16",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193616_gp_1ye19BZA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:41:43",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194143_gp_CO7MuMdA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:03",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193503_gp_N9nHjqXw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:39",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193539_gp_E0cR9I0A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:59",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193559_gp_NEpk1hpg",
               "matched_tokens": []
             },
             {
@@ -20093,6 +20955,102 @@ window.J40_DASHBOARD_DATA = {
               "matched_tokens": []
             },
             {
+              "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:41:43",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194143_gp_CO7MuMdA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:03",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193503_gp_N9nHjqXw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:39",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193539_gp_E0cR9I0A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:59",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193559_gp_NEpk1hpg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:46:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194633_gp_rAjY3gjg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:12",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193612_gp_JmbfR0Tw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:16",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193616_gp_1ye19BZA",
+              "matched_tokens": []
+            },
+            {
               "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
               "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
               "captured_date": "2026-05-02",
@@ -20174,6 +21132,102 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rubber_parts_recreation_samples",
               "stage": "procurement_reconciliation",
               "media_id": "20260502_004345_gp_yK8VYzMQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:41:43",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194143_gp_CO7MuMdA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:03",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193503_gp_N9nHjqXw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:39",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193539_gp_E0cR9I0A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:59",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193559_gp_NEpk1hpg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:46:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194633_gp_rAjY3gjg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:12",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193612_gp_JmbfR0Tw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:16",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193616_gp_1ye19BZA",
               "matched_tokens": []
             },
             {
@@ -20326,12 +21380,109 @@ window.J40_DASHBOARD_DATA = {
           "action_id": "BMA-009",
           "priority": "P1",
           "owner": "David_or_mechanic",
-          "action": "First prove whether left/right front-support strip rubbers or bonded liners are real required pieces. If yes, trace the carriers on card or acetate and mark hole centres from the metal carrier, not from torn rubber.",
+          "action": "Dry-fit the released left/right underfloor strip first articles on the actual landings. Confirm any local end trim and trace/reuse the slotted steel retainers separately if needed.",
           "status": "open",
           "blocks_order_lines": "BM-FAB-004; BM-FAB-005",
-          "record_result_in": "template_trace_photos; data/manual/rubber_recreation_measurement_closure.csv",
-          "why_it_matters": "The current strip photos are mixed with bump-stop fragments, so final cut patterns must come from a proven carrier/location trace.",
-          "evidence_images": []
+          "record_result_in": "dry_fit_photos; data/manual/rubber_recreation_measurement_closure.csv",
+          "why_it_matters": "The strip rubber geometry is released at 165 x 38 x 8 mm; remaining work is trim/retainer validation, not proof that the pieces exist.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:41:43",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194143_gp_CO7MuMdA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:03",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193503_gp_N9nHjqXw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:39",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193539_gp_E0cR9I0A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:59",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193559_gp_NEpk1hpg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:46:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194633_gp_rAjY3gjg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:12",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193612_gp_JmbfR0Tw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:16",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193616_gp_1ye19BZA",
+              "matched_tokens": []
+            }
+          ]
         },
         {
           "action_id": "BMA-010",
@@ -20473,6 +21624,102 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rubber_parts_recreation_samples",
               "stage": "procurement_reconciliation",
               "media_id": "20260502_004345_gp_yK8VYzMQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:41:43",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194143_gp_CO7MuMdA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:03",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193503_gp_N9nHjqXw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:39",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193539_gp_E0cR9I0A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:59",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193559_gp_NEpk1hpg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:46:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194633_gp_rAjY3gjg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:12",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193612_gp_JmbfR0Tw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:16",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193616_gp_1ye19BZA",
               "matched_tokens": []
             },
             {
@@ -21000,8 +22247,8 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_position": "left_front_support_or_nose_extension",
           "working_position_type": "front_support_station",
           "candidate_toyota_station": "not_main_tub_station",
-          "expected_rubber_family": "FS-OVAL_plus_candidate_FS-STRIP-L_hold",
-          "expected_rubber_qty_at_position": "1_oval_pad_plus_strip_if_proven",
+          "expected_rubber_family": "FS-OVAL_plus_released_FS-STRIP-L_first_article",
+          "expected_rubber_qty_at_position": "1_oval_pad_plus_1_strip_first_article",
           "old_parts_present": "TBD",
           "shim_or_spacer_thickness_mm": "TBD",
           "sleeve_id_mm": "TBD",
@@ -21011,9 +22258,9 @@ window.J40_DASHBOARD_DATA = {
           "bolt_under_head_length_mm": "TBD",
           "captive_nut_depth_mm": "TBD",
           "final_bolt_length_mm": "TBD",
-          "release_status": "open_trace_required",
+          "release_status": "open_dry_fit_required",
           "action_required": "BMA-001 BMA-009 BMA-010 BMA-011",
-          "notes": "Do not substitute main body pad here; strip/liner is not known required until carrier/location proves it.",
+          "notes": "Do not substitute main body pad here; FS-STRIP-L is released as a 165 x 38 x 8 mm first article, with only dry-fit trim/retainer validation remaining.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
@@ -21037,6 +22284,102 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rubber_parts_recreation_samples",
               "stage": "procurement_reconciliation",
               "media_id": "20260502_004345_gp_yK8VYzMQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:41:43",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194143_gp_CO7MuMdA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:03",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193503_gp_N9nHjqXw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:39",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193539_gp_E0cR9I0A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:59",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193559_gp_NEpk1hpg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:46:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194633_gp_rAjY3gjg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:12",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193612_gp_JmbfR0Tw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:16",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193616_gp_1ye19BZA",
               "matched_tokens": []
             }
           ]
@@ -21046,8 +22389,8 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_position": "right_front_support_or_nose_extension",
           "working_position_type": "front_support_station",
           "candidate_toyota_station": "not_main_tub_station",
-          "expected_rubber_family": "FS-OVAL_plus_candidate_FS-STRIP-R_hold",
-          "expected_rubber_qty_at_position": "1_oval_pad_plus_strip_if_proven",
+          "expected_rubber_family": "FS-OVAL_plus_released_FS-STRIP-R_first_article",
+          "expected_rubber_qty_at_position": "1_oval_pad_plus_1_strip_first_article",
           "old_parts_present": "TBD",
           "shim_or_spacer_thickness_mm": "TBD",
           "sleeve_id_mm": "TBD",
@@ -21057,9 +22400,9 @@ window.J40_DASHBOARD_DATA = {
           "bolt_under_head_length_mm": "TBD",
           "captive_nut_depth_mm": "TBD",
           "final_bolt_length_mm": "TBD",
-          "release_status": "open_trace_required",
+          "release_status": "open_dry_fit_required",
           "action_required": "BMA-001 BMA-009 BMA-010 BMA-011",
-          "notes": "Do not assume strip symmetry; right strip/liner is not known required until carrier/location proves it.",
+          "notes": "Do not substitute main body pad here; FS-STRIP-R is released as a 165 x 38 x 8 mm first article, with only dry-fit trim/retainer validation remaining.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
@@ -21083,6 +22426,102 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rubber_parts_recreation_samples",
               "stage": "procurement_reconciliation",
               "media_id": "20260502_004345_gp_yK8VYzMQ",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:46:33",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194633_gp_rAjY3gjg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:47:06",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194706_gp_twKRWGFA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:12",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193612_gp_JmbfR0Tw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:36:16",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193616_gp_1ye19BZA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:41:43",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "fabrication_measurement",
+              "media_id": "20260517_194143_gp_CO7MuMdA",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:03",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193503_gp_N9nHjqXw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:39",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193539_gp_E0cR9I0A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+              "captured_date": "2026-05-17",
+              "captured_time": "19:35:59",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260517_193559_gp_NEpk1hpg",
               "matched_tokens": []
             }
           ]
@@ -21297,6 +22736,121 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "involved_parts": [
+        {
+          "entry_id": "part_body_mount_rubber_kit",
+          "workstream": "chassis_rubbers",
+          "item": "Consolidated Longman chassis/body custom rubber order",
+          "status": "spec_ready",
+          "procurement_stage": "consolidated_longman_quote_ready_measurement_release_hold",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_body_mount_rubber_kit",
+          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|docs/longman-rubber-order-spec-20260508.md|data/manual/longman_rubber_order_specs.csv|docs/chassis-rubbers-workstream.md|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+          "notes": "Single consolidated Longman custom rubber order. Quote/order as one supplier bundle: BM-ISO-SM 10 + 2 spares, BM-ISO-LG 2 + 1 spare, FS-OVAL x2, FS-STRIP-L x1, FS-STRIP-R x1, BUMP-60010-LONG x3, and BUMP-60020-SHORT x1. Steel cup/seat washers, sleeves, shims, bolts, and captive-thread repairs remain separate local hardware rows; BODY-LINER-FULL-WIDTH-HOLD and EXH-HGR-90917 are hold/reference lines only, not current order quantities.",
+          "links": [
+            {
+              "url": "../../deliverables/fabrication_packages/rubber_recreation_rev_a.zip",
+              "label": "Rubber fabrication package ZIP",
+              "download": true
+            },
+            {
+              "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
+              "label": "Bump-stop fabrication spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
+              "label": "Rubber dimension sheet PDF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
+              "label": "Bump-stop measurement control SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf",
+              "label": "Small body-mount cushion DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.dxf",
+              "label": "Large body-mount cushion DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf",
+              "label": "Small cup washer DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf",
+              "label": "Large cup washer DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf",
+              "label": "Oval front-support pad DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf",
+              "label": "Left strip template DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf",
+              "label": "Right strip template DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
+              "label": "Rubber cut list CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/inspection_checklist.csv",
+              "label": "Rubber inspection checklist CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
+              "label": "Rubber machine definitions CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json",
+              "label": "Rubber machine definitions JSON",
+              "download": true
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
+            "caption": "Body mount rubber cushion and front-support rubber kit reference",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "part_body_mount_rubber_kit"
+            ],
+            "match_basis": "manual_override",
+            "match_score": 999
+          }
+        },
         {
           "entry_id": "part_fastener_kit_a_millat",
           "workstream": "chassis_rubbers",
@@ -21797,121 +23351,6 @@ window.J40_DASHBOARD_DATA = {
             "match_basis": "manual_override",
             "match_score": 999
           }
-        },
-        {
-          "entry_id": "part_body_mount_rubber_kit",
-          "workstream": "chassis_rubbers",
-          "item": "Body-to-chassis mount rubber kit",
-          "status": "spec_ready",
-          "procurement_stage": "spec_ready_release_hold",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_body_mount_rubber_kit",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
-          "notes": "Spec ready with quantities in body_mount_order_release_specs.csv; complete BMA-001/BMA-002 route decision before committing purchase.",
-          "links": [
-            {
-              "url": "../../deliverables/fabrication_packages/rubber_recreation_rev_a.zip",
-              "label": "Rubber fabrication package ZIP",
-              "download": true
-            },
-            {
-              "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
-              "label": "Bump-stop fabrication spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
-              "label": "Rubber dimension sheet PDF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
-              "label": "Bump-stop measurement control SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf",
-              "label": "Small body-mount cushion DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.dxf",
-              "label": "Large body-mount cushion DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf",
-              "label": "Small cup washer DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf",
-              "label": "Large cup washer DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf",
-              "label": "Oval front-support pad DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf",
-              "label": "Left strip template DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf",
-              "label": "Right strip template DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
-              "label": "Rubber cut list CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/inspection_checklist.csv",
-              "label": "Rubber inspection checklist CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
-              "label": "Rubber machine definitions CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json",
-              "label": "Rubber machine definitions JSON",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
-            "caption": "Body mount rubber cushion and front-support rubber kit reference",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_body_mount_rubber_kit"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
-          }
         }
       ],
       "operation_panels": [],
@@ -22031,11 +23470,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves (ordered_pending_delivery; delivery pending_delivery; amount missing)",
+                "Consolidated Longman chassis/body custom rubber order (consolidated_longman_quote_ready_measurement_release_hold; delivery not_ordered; amount missing)",
                 "Body rubber/plastic bumpers isolators knobs and small spacers (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Body mount shim and spacer pack (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Body mount hardware kit bolts sleeves washers (spec_ready_release_hold; delivery not_ordered; amount missing)",
-                "3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)"
+                "Body mount hardware kit bolts sleeves washers (spec_ready_release_hold; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -22046,8 +23485,8 @@ window.J40_DASHBOARD_DATA = {
               "process_steps": [
                 "Build a position-by-position table for rubbers, sleeves, cup washers, bolts, and shims.",
                 "Use docs/chassis-rubbers-workstream.md as the top-level fabricator handoff spec.",
-                "Use docs/longman-rubber-order-spec-20260508.md as the current Longman quote pack for square body pads, FS-OVAL pads, and bump-stop first articles.",
-                "Use data/manual/fabrication/rubber_recreation_rev_a/ only for FS-OVAL drawings, strip hold templates, exhaust-hanger reference, and bump-stop measurement controls.",
+                "Use docs/longman-rubber-order-spec-20260508.md as the current single Longman quote pack for square body pads, FS-OVAL pads, FS-STRIP-L/R first articles, and bump-stop first articles.",
+                "Use data/manual/fabrication/rubber_recreation_rev_a/ for FS-OVAL drawings, FS-STRIP first-article controls, hold/reference liner controls, exhaust-hanger reference, and bump-stop measurement controls.",
                 "Use docs/fabrication-handoff-index.md as the shared send-out index for rubber and electrical fabrication packages.",
                 "Use data/manual/rubber_ordering_specs.csv as the cross-category rubber ordering matrix so body mounts, hoses, suspension bushes, weatherstrip, and HVAC rubber stay in the correct buy gates.",
                 "Use data/manual/body_mount_order_release_specs.csv for exact body-mount order lines, quantities, OE/reproduction candidates, local fabrication specs, shim packs, sleeves, and bolt packs.",
@@ -22165,12 +23604,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Consolidated Longman chassis/body custom rubber order (consolidated_longman_quote_ready_measurement_release_hold; delivery not_ordered; amount missing)",
                 "Body mount shim and spacer pack (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Body mount hardware kit bolts sleeves washers (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)",
                 "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "1.2 mm cold-rolled mild-steel sheet for tub skin/floor patch plates (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)"
+                "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves (ordered_pending_delivery; delivery pending_delivery; amount missing)"
               ]
             },
             {
@@ -22180,7 +23619,7 @@ window.J40_DASHBOARD_DATA = {
               "instruction": "Choose purchased kit, local fabrication, or mixed route before spending more.",
               "process_steps": [
                 "Check data/manual/rubber_ordering_specs.csv before any rubber purchase to confirm whether the item is buy-now, inspect-first, or deferred.",
-                "For body mounts, choose exactly one route in data/manual/body_mount_order_release_specs.csv: OE/reproduction purchase or local fabrication.",
+                "For body mounts, keep exactly one active route in data/manual/body_mount_order_release_specs.csv: the consolidated Longman custom rubber bundle unless the route is deliberately changed to a complete OE/reproduction package.",
                 "Check whether an available kit covers all required positions and sleeves.",
                 "Price any missing sleeves, washers, and shims separately.",
                 "Reject used/salvage rubber for structural body mounts.",
@@ -22285,12 +23724,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Consolidated Longman chassis/body custom rubber order (consolidated_longman_quote_ready_measurement_release_hold; delivery not_ordered; amount missing)",
                 "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves (ordered_pending_delivery; delivery pending_delivery; amount missing)",
                 "Body mount shim and spacer pack (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)",
                 "Body mount hardware kit bolts sleeves washers (spec_ready_release_hold; delivery not_ordered; amount missing)",
-                "1.2 mm cold-rolled mild-steel sheet for tub skin/floor patch plates (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)",
-                "Body-to-chassis mount rubber kit (spec_ready_release_hold; delivery not_ordered; amount missing)"
+                "1.2 mm cold-rolled mild-steel sheet for tub skin/floor patch plates (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)"
               ]
             },
             {
@@ -22408,11 +23847,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves (ordered_pending_delivery; delivery pending_delivery; amount missing)",
+                "Consolidated Longman chassis/body custom rubber order (consolidated_longman_quote_ready_measurement_release_hold; delivery not_ordered; amount missing)",
                 "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Body mount hardware kit bolts sleeves washers (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Body mount shim and spacer pack (spec_ready_release_hold; delivery not_ordered; amount missing)",
-                "3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)",
-                "1.2 mm cold-rolled mild-steel sheet for tub skin/floor patch plates (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)"
+                "3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)"
               ]
             }
           ]
@@ -26393,7 +27832,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "electrical",
           "current_state": "queued",
           "objective": "Complete baseline harness termination, grounding, and fuse/relay validation.",
-          "blocker_summary": "4 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain.",
+          "blocker_summary": "3 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain.",
           "gate_to_close": "Start/charge/lights/horn/wipers/gauges baseline passes functional checks.",
           "key_procurement_actions": "Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys.",
           "evidence_signal": "electrical_rework_photos=18, wiring_diagram_references=1, diagram_reconciliation_rows=17"
@@ -26460,7 +27899,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP03 \u00b7 Electrical Baseline Finalization",
           "status": "queued",
-          "detail": "Complete baseline harness termination, grounding, and fuse/relay validation. Blocker: 4 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain. Procurement: Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys. Gate: Start/charge/lights/horn/wipers/gauges baseline passes functional checks."
+          "detail": "Complete baseline harness termination, grounding, and fuse/relay validation. Blocker: 3 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain. Procurement: Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys. Gate: Start/charge/lights/horn/wipers/gauges baseline passes functional checks."
         },
         {
           "label": "Issue checks",
@@ -26490,7 +27929,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
           "status": "in_progress",
-          "detail": "3 part rows are ordered and awaiting delivery."
+          "detail": "2 part rows are ordered and awaiting delivery."
         },
         {
           "label": "Procurement \u00b7 resolve ambiguous stock/receipt rows",
@@ -26608,45 +28047,6 @@ window.J40_DASHBOARD_DATA = {
           "image": {
             "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
             "caption": "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points \u00b7 fastener kit reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "graded_fasteners",
-            "matched_tokens": [
-              "fastener"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_star_washers",
-          "workstream": "electrical_reset",
-          "item": "Star washers (bite into metal)",
-          "status": "ordered",
-          "procurement_stage": "ordered_pending_delivery",
-          "payment_status": "unknown",
-          "delivery_status": "pending_delivery",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "Amir / Montgomery Road local fastener supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_star_washers",
-          "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered|duplicate_hold_part_fastener_kit_d_millat_20260527|user_update_2026-05-27_amir_star_washer_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md",
-          "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing. | Pending-item audit 2026-05-27: remove standalone star washers from buy-now list as a duplicate/top-up hold against pending Millat Fastener Kit D. Reopen only if physical receipt of Kit D proves the M6/M8/M10 star or serrated washer count/style is short. | User update 2026-05-27: Amir sent to buy M6 star/lock washers x120, M8 star/lock washers x60, and M10 star/lock washers x30. User typed M2- in the chat, but the active Montgomery Road sheet/spec uses M10 x30; reject M2 unless reconfirmed. This standalone row is now the active local top-up run; do not buy more star/serrated washers until Amir purchase and pending Millat Fastener Kit D stock are counted together.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
-            "caption": "Star washers (bite into metal) \u00b7 fastener kit reference image",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -27457,11 +28857,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "Star washers (bite into metal) (ordered_pending_delivery; delivery pending_delivery; amount missing)",
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
                 "Additional firewall grommet set IDs 16/20/25 mm (purchase_ready; delivery not_ordered; amount missing)",
                 "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)",
-                "Additional firewall grommet set IDs 6/8/10/12 mm (purchase_ready; delivery not_ordered; amount missing)"
+                "Additional firewall grommet set IDs 6/8/10/12 mm (purchase_ready; delivery not_ordered; amount missing)",
+                "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 (ordered_pending_delivery; delivery pending_delivery; amount confirmed_prorated)"
               ]
             },
             {
@@ -27585,11 +28985,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Compact cabin fuse protection - reuse 12-way plus buy one compact OEM add-on (purchase_ready; delivery not_ordered; amount missing)",
-                "Star washers (bite into metal) (ordered_pending_delivery; delivery pending_delivery; amount missing)",
                 "Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 (ordered_pending_delivery; delivery pending_delivery; amount confirmed_prorated)",
                 "Fuel stop switch / hidden diesel cutoff (needle-type switch) (received; delivery received; amount missing)",
                 "Braided sleeve inventory - 8/10/14/16/20 mm sleeves, 5m lengths received (received; delivery received; amount missing)",
-                "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points (ordered_pending_delivery; delivery pending_delivery; amount missing)"
+                "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points (ordered_pending_delivery; delivery pending_delivery; amount missing)",
+                "Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -31069,7 +32469,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "electrical",
           "current_state": "queued",
           "objective": "Complete baseline harness termination, grounding, and fuse/relay validation.",
-          "blocker_summary": "4 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain.",
+          "blocker_summary": "3 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain.",
           "gate_to_close": "Start/charge/lights/horn/wipers/gauges baseline passes functional checks.",
           "key_procurement_actions": "Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys.",
           "evidence_signal": "electrical_rework_photos=18, wiring_diagram_references=1, diagram_reconciliation_rows=17"
@@ -31174,7 +32574,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP03 \u00b7 Electrical Baseline Finalization",
           "status": "queued",
-          "detail": "Complete baseline harness termination, grounding, and fuse/relay validation. Blocker: 4 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain. Procurement: Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys. Gate: Start/charge/lights/horn/wipers/gauges baseline passes functional checks."
+          "detail": "Complete baseline harness termination, grounding, and fuse/relay validation. Blocker: 3 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain. Procurement: Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys. Gate: Start/charge/lights/horn/wipers/gauges baseline passes functional checks."
         },
         {
           "label": "WP05 \u00b7 Interior Weatherproofing Stack",
@@ -65392,7 +66792,7 @@ window.J40_DASHBOARD_DATA = {
         "chassis_fixing"
       ],
       "evidence_signal": "rust_assessment_photos=63, stripdown_photos=111",
-      "blocker_summary": "11 body material rows still need buy execution.",
+      "blocker_summary": "10 body material rows still need buy execution.",
       "gate_to_close": "Rust map signed off, required chassis brackets analyzed/released/installed/validated, and repaired zones primed.",
       "key_procurement_actions": "Use received primer/prep/seam-sealer/cavity-wax stock and on-hand Raptor; Ultra-cloth solvent-safe wipes and masking tape are received; use on-hand grommets for temporary open-hole masking after fit/solvent check; no generic chassis-black or bed-lining duplicate buy.",
       "image": {
@@ -65453,7 +66853,7 @@ window.J40_DASHBOARD_DATA = {
         "electrical_reset"
       ],
       "evidence_signal": "electrical_rework_photos=18, wiring_diagram_references=1, diagram_reconciliation_rows=17",
-      "blocker_summary": "4 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain.",
+      "blocker_summary": "3 electrical buy rows still open; 3 rows should be stock-verified before re-buy; 12 diagram reconciliation holds remain.",
       "gate_to_close": "Start/charge/lights/horn/wipers/gauges baseline passes functional checks.",
       "key_procurement_actions": "Use data/raw/imports/J40.jpg as the viewable wiring diagram reference, keep data/raw/imports/J40.graffle as the editable source, work from data/manual/electrical_diagram_reconciliation_20260518.csv, and verify on-hand connectors/relays before duplicate buys.",
       "image": {
@@ -65563,7 +66963,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Close spec-ready release holds",
         "status": "in_progress",
-        "detail": "3 spec-ready rows still need release actions before purchase."
+        "detail": "2 spec-ready rows still need release actions before purchase."
       },
       {
         "label": "Confirm price and place purchase-ready orders",
@@ -65578,10 +66978,14 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Track paid / in-flight deliveries",
         "status": "in_progress",
-        "detail": "11 rows ordered and waiting to arrive."
+        "detail": "10 rows ordered and waiting to arrive."
       }
     ],
     "counts_by_procurement_stage": [
+      {
+        "stage": "consolidated_longman_quote_ready_measurement_release_hold",
+        "count": 1
+      },
       {
         "stage": "deferred_optional",
         "count": 2
@@ -65608,7 +67012,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "ordered_pending_delivery",
-        "count": 10
+        "count": 9
       },
       {
         "stage": "pre_payment_market_check",
@@ -65668,7 +67072,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "spec_ready_release_hold",
-        "count": 3
+        "count": 2
       }
     ],
     "counts_by_next_action": [
@@ -65678,7 +67082,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "next_action": "track_delivery",
-        "count": 11
+        "count": 10
       }
     ],
     "urgent_actions": [
@@ -66421,43 +67825,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "priority": "P0",
-        "entry_id": "part_star_washers",
-        "workstream": "electrical_reset",
-        "item": "Star washers (bite into metal)",
-        "status": "ordered",
-        "procurement_stage": "ordered_pending_delivery",
-        "next_action": "track_delivery",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Amir / Montgomery Road local fastener supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered|duplicate_hold_part_fastener_kit_d_millat_20260527|user_update_2026-05-27_amir_star_washer_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md",
-        "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing. | Pending-item audit 2026-05-27: remove standalone star washers from buy-now list as a duplicate/top-up hold against pending Millat Fastener Kit D. Reopen only if physical receipt of Kit D proves the M6/M8/M10 star or serrated washer count/style is short. | User update 2026-05-27: Amir sent to buy M6 star/lock washers x120, M8 star/lock washers x60, and M10 star/lock washers x30. User typed M2- in the chat, but the active Montgomery Road sheet/spec uses M10 x30; reject M2 unless reconfirmed. This standalone row is now the active local top-up run; do not buy more star/serrated washers until Amir purchase and pending Millat Fastener Kit D stock are counted together.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
-          "caption": "Star washers (bite into metal) \u00b7 fastener kit reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "graded_fasteners",
-          "matched_tokens": [
-            "fastener"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
         "priority": "P1",
         "entry_id": "part_ironman_front_dampers_separate_shipment",
         "workstream": "suspension_upgrade",
@@ -66873,44 +68240,6 @@ window.J40_DASHBOARD_DATA = {
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
           "caption": "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points \u00b7 fastener kit reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "graded_fasteners",
-          "matched_tokens": [
-            "fastener"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_star_washers",
-        "workstream": "electrical_reset",
-        "item": "Star washers (bite into metal)",
-        "status": "ordered",
-        "procurement_stage": "ordered_pending_delivery",
-        "payment_status": "unknown",
-        "delivery_status": "pending_delivery",
-        "expected_delivery_date": "",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Amir / Montgomery Road local fastener supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered|duplicate_hold_part_fastener_kit_d_millat_20260527|user_update_2026-05-27_amir_star_washer_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md",
-        "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing. | Pending-item audit 2026-05-27: remove standalone star washers from buy-now list as a duplicate/top-up hold against pending Millat Fastener Kit D. Reopen only if physical receipt of Kit D proves the M6/M8/M10 star or serrated washer count/style is short. | User update 2026-05-27: Amir sent to buy M6 star/lock washers x120, M8 star/lock washers x60, and M10 star/lock washers x30. User typed M2- in the chat, but the active Montgomery Road sheet/spec uses M10 x30; reject M2 unless reconfirmed. This standalone row is now the active local top-up run; do not buy more star/serrated washers until Amir purchase and pending Millat Fastener Kit D stock are counted together.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
-          "caption": "Star washers (bite into metal) \u00b7 fastener kit reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -68184,6 +69513,119 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "part_body_mount_rubber_kit",
+        "workstream": "chassis_rubbers",
+        "item": "Consolidated Longman chassis/body custom rubber order",
+        "status": "spec_ready",
+        "procurement_stage": "consolidated_longman_quote_ready_measurement_release_hold",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "",
+        "supply_type": "part",
+        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|docs/longman-rubber-order-spec-20260508.md|data/manual/longman_rubber_order_specs.csv|docs/chassis-rubbers-workstream.md|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+        "notes": "Single consolidated Longman custom rubber order. Quote/order as one supplier bundle: BM-ISO-SM 10 + 2 spares, BM-ISO-LG 2 + 1 spare, FS-OVAL x2, FS-STRIP-L x1, FS-STRIP-R x1, BUMP-60010-LONG x3, and BUMP-60020-SHORT x1. Steel cup/seat washers, sleeves, shims, bolts, and captive-thread repairs remain separate local hardware rows; BODY-LINER-FULL-WIDTH-HOLD and EXH-HGR-90917 are hold/reference lines only, not current order quantities.",
+        "links": [
+          {
+            "url": "../../deliverables/fabrication_packages/rubber_recreation_rev_a.zip",
+            "label": "Rubber fabrication package ZIP",
+            "download": true
+          },
+          {
+            "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
+            "label": "Bump-stop fabrication spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
+            "label": "Rubber dimension sheet PDF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
+            "label": "Bump-stop measurement control SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf",
+            "label": "Small body-mount cushion DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.dxf",
+            "label": "Large body-mount cushion DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf",
+            "label": "Small cup washer DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf",
+            "label": "Large cup washer DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf",
+            "label": "Oval front-support pad DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf",
+            "label": "Left strip template DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf",
+            "label": "Right strip template DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
+            "label": "Rubber cut list CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/inspection_checklist.csv",
+            "label": "Rubber inspection checklist CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
+            "label": "Rubber machine definitions CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json",
+            "label": "Rubber machine definitions JSON",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
+          "caption": "Body mount rubber cushion and front-support rubber kit reference",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_body_mount_rubber_kit"
+          ],
+          "match_basis": "manual_override",
+          "match_score": 999
+        }
+      },
+      {
         "entry_id": "part_fastener_kit_a_millat",
         "workstream": "chassis_rubbers",
         "item": "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves",
@@ -68671,119 +70113,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_body_mount_rubber_kit",
-        "workstream": "chassis_rubbers",
-        "item": "Body-to-chassis mount rubber kit",
-        "status": "spec_ready",
-        "procurement_stage": "spec_ready_release_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
-        "notes": "Spec ready with quantities in body_mount_order_release_specs.csv; complete BMA-001/BMA-002 route decision before committing purchase.",
-        "links": [
-          {
-            "url": "../../deliverables/fabrication_packages/rubber_recreation_rev_a.zip",
-            "label": "Rubber fabrication package ZIP",
-            "download": true
-          },
-          {
-            "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
-            "label": "Bump-stop fabrication spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
-            "label": "Rubber dimension sheet PDF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
-            "label": "Bump-stop measurement control SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf",
-            "label": "Small body-mount cushion DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.dxf",
-            "label": "Large body-mount cushion DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf",
-            "label": "Small cup washer DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf",
-            "label": "Large cup washer DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf",
-            "label": "Oval front-support pad DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf",
-            "label": "Left strip template DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf",
-            "label": "Right strip template DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
-            "label": "Rubber cut list CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/inspection_checklist.csv",
-            "label": "Rubber inspection checklist CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
-            "label": "Rubber machine definitions CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json",
-            "label": "Rubber machine definitions JSON",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
-          "caption": "Body mount rubber cushion and front-support rubber kit reference",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_body_mount_rubber_kit"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
-        }
-      },
-      {
         "entry_id": "quote_rubber_grommet_set_chat",
         "workstream": "electrical_reset",
         "item": "Electrical wire grommet set (200pcs)",
@@ -68881,43 +70210,6 @@ window.J40_DASHBOARD_DATA = {
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
           "caption": "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points \u00b7 fastener kit reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "graded_fasteners",
-          "matched_tokens": [
-            "fastener"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_star_washers",
-        "workstream": "electrical_reset",
-        "item": "Star washers (bite into metal)",
-        "status": "ordered",
-        "procurement_stage": "ordered_pending_delivery",
-        "payment_status": "unknown",
-        "delivery_status": "pending_delivery",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "Amir / Montgomery Road local fastener supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered|duplicate_hold_part_fastener_kit_d_millat_20260527|user_update_2026-05-27_amir_star_washer_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md",
-        "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing. | Pending-item audit 2026-05-27: remove standalone star washers from buy-now list as a duplicate/top-up hold against pending Millat Fastener Kit D. Reopen only if physical receipt of Kit D proves the M6/M8/M10 star or serrated washer count/style is short. | User update 2026-05-27: Amir sent to buy M6 star/lock washers x120, M8 star/lock washers x60, and M10 star/lock washers x30. User typed M2- in the chat, but the active Montgomery Road sheet/spec uses M10 x30; reject M2 unless reconfirmed. This standalone row is now the active local top-up run; do not buy more star/serrated washers until Amir purchase and pending Millat Fastener Kit D stock are counted together.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
-          "caption": "Star washers (bite into metal) \u00b7 fastener kit reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -70685,7 +71977,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "electrical_reset",
-        "open_count": 8,
+        "open_count": 7,
         "image": {
           "path": "../../data/raw/imports/J40.jpg",
           "caption": "J40 Electrical Wiring Diagram \u00b7 Electrical Reference \u00b7 2026-05-18",
@@ -76678,17 +77970,17 @@ window.J40_DASHBOARD_DATA = {
   },
   "capture_tasks": {
     "summary": {
-      "total_tasks": 106,
-      "now_tasks": 94,
+      "total_tasks": 107,
+      "now_tasks": 95,
       "later_tasks": 12,
       "p0_tasks": 35,
       "photo_tasks": 40,
-      "measurement_tasks": 74
+      "measurement_tasks": 73
     },
     "counts_by_workstream": [
       {
         "workstream": "chassis_rubbers",
-        "count": 27
+        "count": 28
       },
       {
         "workstream": "replacement_pipes",
@@ -76761,16 +78053,16 @@ window.J40_DASHBOARD_DATA = {
         "count": 27
       },
       {
-        "task_type": "template",
-        "count": 14
-      },
-      {
         "task_type": "photo",
         "count": 13
       },
       {
+        "task_type": "template",
+        "count": 13
+      },
+      {
         "task_type": "data",
-        "count": 7
+        "count": 9
       },
       {
         "task_type": "decision",
@@ -76788,7 +78080,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "priority": "P1",
-        "count": 62
+        "count": 63
       },
       {
         "priority": "P2",
@@ -78078,8 +79370,8 @@ window.J40_DASHBOARD_DATA = {
         "source_label": "Body Mount Release Actions",
         "source_path": "data/manual/body_mount_release_actions.csv",
         "source_row_id": "BMA-001",
-        "notes": "Main body rubber route is now Longman square BM-ISO pads unless layout proves a different station trim. Front-support strip rows stay on hold until the actual carrier/location proves them.",
-        "evidence_ref": "20260405_234652|20260405_234546|20260502_004231_gp_CfosvPIg|20260502_004429_gp_KJHxGcCA|20260502_004413_gp_Qno8OVRg|20260502_004345_gp_yK8VYzMQ|20260502_004437_gp_f1TySzww|20260502_004442_gp_7WcFHjLQ",
+        "notes": "Main body rubber, FS-OVAL, FS-STRIP-L/R, and bump-stop rubber pieces are now one consolidated Longman custom order; sample layout still controls station labels, sleeve/cup hardware, and final trim.",
+        "evidence_ref": "20260405_234652|20260405_234546|20260502_004231_gp_CfosvPIg|20260517_194633_gp_rAjY3gjg|20260517_194706_gp_twKRWGFA|20260517_193612_gp_JmbfR0Tw|20260517_193616_gp_1ye19BZA|20260517_194143_gp_CO7MuMdA|20260517_193503_gp_N9nHjqXw|20260517_193539_gp_E0cR9I0A|20260517_193559_gp_NEpk1hpg|20260502_004429_gp_KJHxGcCA|20260502_004413_gp_Qno8OVRg|20260502_004345_gp_yK8VYzMQ|20260502_004437_gp_f1TySzww|20260502_004442_gp_7WcFHjLQ",
         "evidence_images": [
           {
             "path": "../../photos/20260405_234652.jpg",
@@ -78115,6 +79407,102 @@ window.J40_DASHBOARD_DATA = {
             "specific_component": "rubber_parts_recreation_samples",
             "stage": "procurement_reconciliation",
             "media_id": "20260502_004231_gp_CfosvPIg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:46:33",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194633_gp_rAjY3gjg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:47:06",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194706_gp_twKRWGFA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:36:12",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193612_gp_JmbfR0Tw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:36:16",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193616_gp_1ye19BZA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:41:43",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194143_gp_CO7MuMdA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:03",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193503_gp_N9nHjqXw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:39",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193539_gp_E0cR9I0A",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:59",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193559_gp_NEpk1hpg",
             "matched_tokens": []
           },
           {
@@ -78194,15 +79582,15 @@ window.J40_DASHBOARD_DATA = {
         "timing": "now",
         "status": "open",
         "location": "",
-        "action": "Decide the route after the layout: current Longman custom square-pad route, or a complete OE/reproduction package. Mark the rejected route as do-not-order.",
+        "action": "Confirm the active route remains the consolidated Longman custom rubber bundle, or deliberately switch to a complete OE/reproduction package and mark the rejected route as do-not-order.",
         "data_needed": "",
         "blocks": "BM-OE-001 to BM-OE-014; BM-FAB-001 to BM-FAB-005",
         "record_result_in": "data/manual/body_mount_order_release_specs.csv notes or data/manual/body_mount_station_closure_sheet.csv",
         "source_label": "Body Mount Release Actions",
         "source_path": "data/manual/body_mount_release_actions.csv",
         "source_row_id": "BMA-002",
-        "notes": "Buying both routes duplicates expensive rubber and can create mixed hardness/height problems.",
-        "evidence_ref": "20260405_234652|20260405_234546|20260502_004231_gp_CfosvPIg|20260502_004345_gp_yK8VYzMQ",
+        "notes": "Buying both routes duplicates expensive rubber and can create mixed hardness/height problems; the default active route is now one Longman bundle.",
+        "evidence_ref": "20260405_234652|20260405_234546|20260502_004231_gp_CfosvPIg|20260517_194633_gp_rAjY3gjg|20260517_194706_gp_twKRWGFA|20260517_193612_gp_JmbfR0Tw|20260517_193616_gp_1ye19BZA|20260517_194143_gp_CO7MuMdA|20260517_193503_gp_N9nHjqXw|20260517_193539_gp_E0cR9I0A|20260517_193559_gp_NEpk1hpg|20260502_004345_gp_yK8VYzMQ",
         "evidence_images": [
           {
             "path": "../../photos/20260405_234652.jpg",
@@ -78238,6 +79626,102 @@ window.J40_DASHBOARD_DATA = {
             "specific_component": "rubber_parts_recreation_samples",
             "stage": "procurement_reconciliation",
             "media_id": "20260502_004231_gp_CfosvPIg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:46:33",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194633_gp_rAjY3gjg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:47:06",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194706_gp_twKRWGFA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:36:12",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193612_gp_JmbfR0Tw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:36:16",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193616_gp_1ye19BZA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:41:43",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194143_gp_CO7MuMdA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:03",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193503_gp_N9nHjqXw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:39",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193539_gp_E0cR9I0A",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:59",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193559_gp_NEpk1hpg",
             "matched_tokens": []
           },
           {
@@ -78376,7 +79860,7 @@ window.J40_DASHBOARD_DATA = {
         "source_path": "data/manual/body_mount_release_actions.csv",
         "source_row_id": "BMA-005",
         "notes": "This controls small rubber height, sleeve length, and installed body height.",
-        "evidence_ref": "20260405_234652|20260405_234546|20260502_004231_gp_CfosvPIg|20260502_004429_gp_KJHxGcCA|20260502_004413_gp_Qno8OVRg|20260502_004345_gp_yK8VYzMQ|20260502_004437_gp_f1TySzww|20260502_004442_gp_7WcFHjLQ",
+        "evidence_ref": "20260405_234652|20260405_234546|20260502_004231_gp_CfosvPIg|20260502_004429_gp_KJHxGcCA|20260502_004413_gp_Qno8OVRg|20260502_004345_gp_yK8VYzMQ|20260517_194143_gp_CO7MuMdA|20260517_194706_gp_twKRWGFA|20260517_193503_gp_N9nHjqXw|20260517_193539_gp_E0cR9I0A|20260517_193559_gp_NEpk1hpg|20260517_194633_gp_rAjY3gjg|20260517_193612_gp_JmbfR0Tw|20260517_193616_gp_1ye19BZA|20260502_004437_gp_f1TySzww|20260502_004442_gp_7WcFHjLQ",
         "evidence_images": [
           {
             "path": "../../photos/20260405_234652.jpg",
@@ -78451,6 +79935,102 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": []
           },
           {
+            "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:41:43",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194143_gp_CO7MuMdA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:47:06",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194706_gp_twKRWGFA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:03",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193503_gp_N9nHjqXw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:39",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193539_gp_E0cR9I0A",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:59",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193559_gp_NEpk1hpg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:46:33",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194633_gp_rAjY3gjg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:36:12",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193612_gp_JmbfR0Tw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:36:16",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193616_gp_1ye19BZA",
+            "matched_tokens": []
+          },
+          {
             "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
             "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
             "captured_date": "2026-05-02",
@@ -78499,7 +80079,7 @@ window.J40_DASHBOARD_DATA = {
         "source_path": "data/manual/body_mount_release_actions.csv",
         "source_row_id": "BMA-006",
         "notes": "Sleeve length prevents over-crushing the rubber and determines the bolt clamped stack.",
-        "evidence_ref": "20260502_004231_gp_CfosvPIg|20260405_234546|20260405_234652|20260502_004345_gp_yK8VYzMQ|20260502_004413_gp_Qno8OVRg|20260502_004437_gp_f1TySzww|20260502_004442_gp_7WcFHjLQ",
+        "evidence_ref": "20260502_004231_gp_CfosvPIg|20260405_234546|20260405_234652|20260502_004345_gp_yK8VYzMQ|20260517_194143_gp_CO7MuMdA|20260517_194706_gp_twKRWGFA|20260517_193503_gp_N9nHjqXw|20260517_193539_gp_E0cR9I0A|20260517_193559_gp_NEpk1hpg|20260517_194633_gp_rAjY3gjg|20260517_193612_gp_JmbfR0Tw|20260517_193616_gp_1ye19BZA|20260502_004413_gp_Qno8OVRg|20260502_004437_gp_f1TySzww|20260502_004442_gp_7WcFHjLQ",
         "evidence_images": [
           {
             "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
@@ -78547,6 +80127,102 @@ window.J40_DASHBOARD_DATA = {
             "specific_component": "rubber_parts_recreation_samples",
             "stage": "procurement_reconciliation",
             "media_id": "20260502_004345_gp_yK8VYzMQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:41:43",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194143_gp_CO7MuMdA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:47:06",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194706_gp_twKRWGFA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:03",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193503_gp_N9nHjqXw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:39",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193539_gp_E0cR9I0A",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:59",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193559_gp_NEpk1hpg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:46:33",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194633_gp_rAjY3gjg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:36:12",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193612_gp_JmbfR0Tw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:36:16",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193616_gp_1ye19BZA",
             "matched_tokens": []
           },
           {
@@ -82601,6 +84277,300 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
+        "task_id": "body_mount_station_closure:FRONT-SUPPORT-L",
+        "title": "left_front_support_or_nose_extension",
+        "workstream": "chassis_rubbers",
+        "task_type": "data",
+        "priority": "P1",
+        "timing": "now",
+        "status": "open_dry_fit_required",
+        "location": "front_support_station",
+        "action": "BMA-001 BMA-009 BMA-010 BMA-011",
+        "data_needed": "",
+        "blocks": "BMA-001 BMA-009 BMA-010 BMA-011",
+        "record_result_in": "",
+        "source_label": "Body Mount Station Closure",
+        "source_path": "data/manual/body_mount_station_closure_sheet.csv",
+        "source_row_id": "FRONT-SUPPORT-L",
+        "notes": "Do not substitute main body pad here; FS-STRIP-L is released as a 165 x 38 x 8 mm first article, with only dry-fit trim/retainer validation remaining.",
+        "evidence_ref": "20260502_004231_gp_CfosvPIg|20260502_004345_gp_yK8VYzMQ|20260517_194143_gp_CO7MuMdA|20260517_194706_gp_twKRWGFA|20260517_193503_gp_N9nHjqXw|20260517_193539_gp_E0cR9I0A|20260517_193559_gp_NEpk1hpg|20260517_194633_gp_rAjY3gjg|20260517_193612_gp_JmbfR0Tw|20260517_193616_gp_1ye19BZA",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:42:31",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004231_gp_CfosvPIg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:43:45",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004345_gp_yK8VYzMQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:41:43",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194143_gp_CO7MuMdA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:47:06",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194706_gp_twKRWGFA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:03",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193503_gp_N9nHjqXw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:39",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193539_gp_E0cR9I0A",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:59",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193559_gp_NEpk1hpg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:46:33",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194633_gp_rAjY3gjg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:36:12",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193612_gp_JmbfR0Tw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:36:16",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193616_gp_1ye19BZA",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_station_closure_sheet.csv",
+            "label": "Body Mount Station Closure"
+          }
+        ]
+      },
+      {
+        "task_id": "body_mount_station_closure:FRONT-SUPPORT-R",
+        "title": "right_front_support_or_nose_extension",
+        "workstream": "chassis_rubbers",
+        "task_type": "data",
+        "priority": "P1",
+        "timing": "now",
+        "status": "open_dry_fit_required",
+        "location": "front_support_station",
+        "action": "BMA-001 BMA-009 BMA-010 BMA-011",
+        "data_needed": "",
+        "blocks": "BMA-001 BMA-009 BMA-010 BMA-011",
+        "record_result_in": "",
+        "source_label": "Body Mount Station Closure",
+        "source_path": "data/manual/body_mount_station_closure_sheet.csv",
+        "source_row_id": "FRONT-SUPPORT-R",
+        "notes": "Do not substitute main body pad here; FS-STRIP-R is released as a 165 x 38 x 8 mm first article, with only dry-fit trim/retainer validation remaining.",
+        "evidence_ref": "20260502_004231_gp_CfosvPIg|20260502_004345_gp_yK8VYzMQ|20260517_194633_gp_rAjY3gjg|20260517_194706_gp_twKRWGFA|20260517_193612_gp_JmbfR0Tw|20260517_193616_gp_1ye19BZA|20260517_194143_gp_CO7MuMdA|20260517_193503_gp_N9nHjqXw|20260517_193539_gp_E0cR9I0A|20260517_193559_gp_NEpk1hpg",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:42:31",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004231_gp_CfosvPIg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+            "captured_date": "2026-05-02",
+            "captured_time": "00:43:45",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260502_004345_gp_yK8VYzMQ",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:46:33",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194633_gp_rAjY3gjg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:47:06",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194706_gp_twKRWGFA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:36:12",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193612_gp_JmbfR0Tw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:36:16",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193616_gp_1ye19BZA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:41:43",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194143_gp_CO7MuMdA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:03",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193503_gp_N9nHjqXw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:39",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193539_gp_E0cR9I0A",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:59",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193559_gp_NEpk1hpg",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/body_mount_station_closure_sheet.csv",
+            "label": "Body Mount Station Closure"
+          }
+        ]
+      },
+      {
         "task_id": "body_mount_station_closure:MAIN-RL",
         "title": "rear_left_main_body_mount",
         "workstream": "chassis_rubbers",
@@ -82866,7 +84836,7 @@ window.J40_DASHBOARD_DATA = {
         "source_path": "data/manual/body_mount_release_actions.csv",
         "source_row_id": "BMA-011",
         "notes": "This is the final check before cutting sleeves or choosing final bolt lengths.",
-        "evidence_ref": "20260502_004231_gp_CfosvPIg|20260405_234546|20260405_234652|20260502_004429_gp_KJHxGcCA|20260502_004413_gp_Qno8OVRg|20260502_004345_gp_yK8VYzMQ|20260502_004437_gp_f1TySzww|20260502_004442_gp_7WcFHjLQ",
+        "evidence_ref": "20260502_004231_gp_CfosvPIg|20260405_234546|20260405_234652|20260502_004429_gp_KJHxGcCA|20260502_004413_gp_Qno8OVRg|20260502_004345_gp_yK8VYzMQ|20260517_194143_gp_CO7MuMdA|20260517_194706_gp_twKRWGFA|20260517_193503_gp_N9nHjqXw|20260517_193539_gp_E0cR9I0A|20260517_193559_gp_NEpk1hpg|20260517_194633_gp_rAjY3gjg|20260517_193612_gp_JmbfR0Tw|20260517_193616_gp_1ye19BZA|20260502_004437_gp_f1TySzww|20260502_004442_gp_7WcFHjLQ",
         "evidence_images": [
           {
             "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
@@ -82941,6 +84911,102 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": []
           },
           {
+            "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:41:43",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194143_gp_CO7MuMdA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:47:06",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194706_gp_twKRWGFA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:03",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193503_gp_N9nHjqXw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:39",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193539_gp_E0cR9I0A",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:59",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193559_gp_NEpk1hpg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:46:33",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194633_gp_rAjY3gjg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:36:12",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193612_gp_JmbfR0Tw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:36:16",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193616_gp_1ye19BZA",
+            "matched_tokens": []
+          },
+          {
             "path": "../../photos/20260502_004437_gp_f1TySzww.jpg",
             "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
             "captured_date": "2026-05-02",
@@ -82988,7 +85054,7 @@ window.J40_DASHBOARD_DATA = {
         "source_label": "Rubber Hose Component Audit",
         "source_path": "data/manual/rubber_hose_component_audit.csv",
         "source_row_id": "RHA-018",
-        "notes": "Open item now uses Longman square custom pad route; no circular outside-profile release.",
+        "notes": "Open item belongs to the single consolidated Longman custom rubber order; no circular outside-profile release.",
         "evidence_ref": "20260405_234652|20260405_234546|20260502_004231_gp_CfosvPIg",
         "evidence_images": [
           {
@@ -83051,7 +85117,7 @@ window.J40_DASHBOARD_DATA = {
         "source_label": "Rubber Hose Component Audit",
         "source_path": "data/manual/rubber_hose_component_audit.csv",
         "source_row_id": "RHA-017",
-        "notes": "Open item now uses Longman square custom pad route; no circular outside-profile release.",
+        "notes": "Open item belongs to the single consolidated Longman custom rubber order; no circular outside-profile release.",
         "evidence_ref": "20260405_234652|20260405_234546|20260502_004231_gp_CfosvPIg",
         "evidence_images": [
           {
@@ -83563,16 +85629,113 @@ window.J40_DASHBOARD_DATA = {
         "timing": "now",
         "status": "open",
         "location": "",
-        "action": "First prove whether left/right front-support strip rubbers or bonded liners are real required pieces. If yes, trace the carriers on card or acetate and mark hole centres from the metal carrier, not from torn rubber.",
+        "action": "Dry-fit the released left/right underfloor strip first articles on the actual landings. Confirm any local end trim and trace/reuse the slotted steel retainers separately if needed.",
         "data_needed": "",
         "blocks": "BM-FAB-004; BM-FAB-005",
-        "record_result_in": "template_trace_photos; data/manual/rubber_recreation_measurement_closure.csv",
+        "record_result_in": "dry_fit_photos; data/manual/rubber_recreation_measurement_closure.csv",
         "source_label": "Body Mount Release Actions",
         "source_path": "data/manual/body_mount_release_actions.csv",
         "source_row_id": "BMA-009",
-        "notes": "The current strip photos are mixed with bump-stop fragments, so final cut patterns must come from a proven carrier/location trace.",
-        "evidence_ref": "",
-        "evidence_images": [],
+        "notes": "The strip rubber geometry is released at 165 x 38 x 8 mm; remaining work is trim/retainer validation, not proof that the pieces exist.",
+        "evidence_ref": "20260517_194143_gp_CO7MuMdA|20260517_194706_gp_twKRWGFA|20260517_193503_gp_N9nHjqXw|20260517_193539_gp_E0cR9I0A|20260517_193559_gp_NEpk1hpg|20260517_194633_gp_rAjY3gjg|20260517_193612_gp_JmbfR0Tw|20260517_193616_gp_1ye19BZA",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:41:43",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194143_gp_CO7MuMdA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:47:06",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194706_gp_twKRWGFA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:03",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193503_gp_N9nHjqXw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:39",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193539_gp_E0cR9I0A",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:59",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193559_gp_NEpk1hpg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:46:33",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194633_gp_rAjY3gjg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:36:12",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193612_gp_JmbfR0Tw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:36:16",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193616_gp_1ye19BZA",
+            "matched_tokens": []
+          }
+        ],
         "links": [
           {
             "url": "../../data/manual/body_mount_release_actions.csv",
@@ -83581,104 +85744,125 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
-        "task_id": "body_mount_station_closure:FRONT-SUPPORT-L",
-        "title": "left_front_support_or_nose_extension",
+        "task_id": "rubber_hose_audit:RHA-020",
+        "title": "Underfloor body-support strip liner pair",
         "workstream": "chassis_rubbers",
         "task_type": "template",
         "priority": "P1",
         "timing": "now",
-        "status": "open_trace_required",
-        "location": "front_support_station",
-        "action": "BMA-001 BMA-009 BMA-010 BMA-011",
-        "data_needed": "",
-        "blocks": "BMA-001 BMA-009 BMA-010 BMA-011",
+        "status": "first_article_custom_recreate / consolidated_longman_order_line",
+        "location": "underfloor tub-to-support anti-squeak / body-support strips",
+        "action": "Order inside the consolidated Longman rubber bundle; complete BMA-009 dry-fit before final trimming",
+        "data_needed": "Dry-fit first articles on actual landings; confirm only local end trim and trace/reuse separate steel retainers if needed",
+        "blocks": "CR-FRONT-002|CR-FRONT-003|BM-FAB-004|BM-FAB-005|RUB-001",
         "record_result_in": "",
-        "source_label": "Body Mount Station Closure",
-        "source_path": "data/manual/body_mount_station_closure_sheet.csv",
-        "source_row_id": "FRONT-SUPPORT-L",
-        "notes": "Do not substitute main body pad here; strip/liner is not known required until carrier/location proves it.",
-        "evidence_ref": "20260502_004231_gp_CfosvPIg|20260502_004345_gp_yK8VYzMQ",
+        "source_label": "Rubber Hose Component Audit",
+        "source_path": "data/manual/rubber_hose_component_audit.csv",
+        "source_row_id": "RHA-020",
+        "notes": "May 17 photos resolve the earlier candidate/fragment confusion; FS-STRIP-L/R are active Longman order lines, while longer full-width liners remain hold-only.",
+        "evidence_ref": "20260517_194143_gp_CO7MuMdA|20260517_194633_gp_rAjY3gjg|20260517_194706_gp_twKRWGFA|20260517_193503_gp_N9nHjqXw|20260517_193539_gp_E0cR9I0A|20260517_193559_gp_NEpk1hpg|20260517_193612_gp_JmbfR0Tw|20260517_193616_gp_1ye19BZA",
         "evidence_images": [
           {
-            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-            "captured_date": "2026-05-02",
-            "captured_time": "00:42:31",
+            "path": "../../photos/20260517_194143_gp_CO7MuMdA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:41:43",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "rubber_parts_recreation_samples",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260502_004231_gp_CfosvPIg",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194143_gp_CO7MuMdA",
             "matched_tokens": []
           },
           {
-            "path": "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
-            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-            "captured_date": "2026-05-02",
-            "captured_time": "00:43:45",
+            "path": "../../photos/20260517_194633_gp_rAjY3gjg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:46:33",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194633_gp_rAjY3gjg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_194706_gp_twKRWGFA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Fabrication Measurement \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:47:06",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "fabrication_measurement",
+            "media_id": "20260517_194706_gp_twKRWGFA",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:03",
             "media_type": "photo",
             "component_group": "procurement_inventory",
             "specific_component": "rubber_parts_recreation_samples",
             "stage": "procurement_reconciliation",
-            "media_id": "20260502_004345_gp_yK8VYzMQ",
+            "media_id": "20260517_193503_gp_N9nHjqXw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193539_gp_E0cR9I0A.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:39",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193539_gp_E0cR9I0A",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193559_gp_NEpk1hpg.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:35:59",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193559_gp_NEpk1hpg",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193612_gp_JmbfR0Tw.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:36:12",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193612_gp_JmbfR0Tw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260517_193616_gp_1ye19BZA.jpg",
+            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
+            "captured_date": "2026-05-17",
+            "captured_time": "19:36:16",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "rubber_parts_recreation_samples",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260517_193616_gp_1ye19BZA",
             "matched_tokens": []
           }
         ],
         "links": [
           {
-            "url": "../../data/manual/body_mount_station_closure_sheet.csv",
-            "label": "Body Mount Station Closure"
-          }
-        ]
-      },
-      {
-        "task_id": "body_mount_station_closure:FRONT-SUPPORT-R",
-        "title": "right_front_support_or_nose_extension",
-        "workstream": "chassis_rubbers",
-        "task_type": "template",
-        "priority": "P1",
-        "timing": "now",
-        "status": "open_trace_required",
-        "location": "front_support_station",
-        "action": "BMA-001 BMA-009 BMA-010 BMA-011",
-        "data_needed": "",
-        "blocks": "BMA-001 BMA-009 BMA-010 BMA-011",
-        "record_result_in": "",
-        "source_label": "Body Mount Station Closure",
-        "source_path": "data/manual/body_mount_station_closure_sheet.csv",
-        "source_row_id": "FRONT-SUPPORT-R",
-        "notes": "Do not assume strip symmetry; right strip/liner is not known required until carrier/location proves it.",
-        "evidence_ref": "20260502_004231_gp_CfosvPIg|20260502_004345_gp_yK8VYzMQ",
-        "evidence_images": [
-          {
-            "path": "../../photos/20260502_004231_gp_CfosvPIg.jpg",
-            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-            "captured_date": "2026-05-02",
-            "captured_time": "00:42:31",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "rubber_parts_recreation_samples",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260502_004231_gp_CfosvPIg",
-            "matched_tokens": []
-          },
-          {
-            "path": "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
-            "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-            "captured_date": "2026-05-02",
-            "captured_time": "00:43:45",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "rubber_parts_recreation_samples",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260502_004345_gp_yK8VYzMQ",
-            "matched_tokens": []
-          }
-        ],
-        "links": [
-          {
-            "url": "../../data/manual/body_mount_station_closure_sheet.csv",
-            "label": "Body Mount Station Closure"
+            "url": "../../data/manual/rubber_hose_component_audit.csv",
+            "label": "Rubber Hose Component Audit"
           }
         ]
       },
@@ -85889,9 +88073,9 @@ window.J40_DASHBOARD_DATA = {
       {
         "supply_type": "part",
         "previously": 96,
-        "in_process": 13,
-        "still_required": 74,
-        "total": 183
+        "in_process": 12,
+        "still_required": 72,
+        "total": 180
       }
     ],
     "rows_by_status": {
@@ -93067,45 +95251,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_star_washers",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Star washers (bite into metal)",
-          "vendor": "Amir / Montgomery Road local fastener supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "electrical_reset",
-          "status_group": "in_process",
-          "status_detail": "ordered",
-          "procurement_stage": "ordered_pending_delivery",
-          "payment_status": "unknown",
-          "delivery_status": "pending_delivery",
-          "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered|duplicate_hold_part_fastener_kit_d_millat_20260527|user_update_2026-05-27_amir_star_washer_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md",
-          "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing. | Pending-item audit 2026-05-27: remove standalone star washers from buy-now list as a duplicate/top-up hold against pending Millat Fastener Kit D. Reopen only if physical receipt of Kit D proves the M6/M8/M10 star or serrated washer count/style is short. | User update 2026-05-27: Amir sent to buy M6 star/lock washers x120, M8 star/lock washers x60, and M10 star/lock washers x30. User typed M2- in the chat, but the active Montgomery Road sheet/spec uses M10 x30; reject M2 unless reconfirmed. This standalone row is now the active local top-up run; do not buy more star/serrated washers until Amir purchase and pending Millat Fastener Kit D stock are counted together.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
-            "caption": "Star washers (bite into metal) \u00b7 fastener kit reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "graded_fasteners",
-            "matched_tokens": [
-              "fastener"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_power_steering_upgrade",
           "supply_type": "part",
           "inventory_group": "mechanical",
@@ -94248,76 +96393,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "car_speaker",
             "matched_tokens": [
               "speaker"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_34",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "M6 star / lock washer",
-          "vendor": "Montgomery Road (Lahore)",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "",
-          "evidence_ref": "",
-          "notes": "Moved from Wiring tab; fastener item belongs in Parts purchase tracking.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/lockset.jpg",
-            "caption": "M6 star / lock washer \u00b7 lock set reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "lockset",
-            "matched_tokens": [
-              "lock"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "workbook_parts",
-          "source_ref": "workbook_parts#row_35",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "M8 star / lock washer",
-          "vendor": "Montgomery Road (Lahore)",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "",
-          "status_group": "still_required",
-          "status_detail": "needs_buy_or_check",
-          "procurement_stage": "",
-          "payment_status": "",
-          "delivery_status": "",
-          "evidence_ref": "",
-          "notes": "Moved from Wiring tab; fastener item belongs in Parts purchase tracking.",
-          "links": [],
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/lockset.jpg",
-            "caption": "M8 star / lock washer \u00b7 lock set reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "lockset",
-            "matched_tokens": [
-              "lock"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -95752,18 +97827,18 @@ window.J40_DASHBOARD_DATA = {
           "source_ref": "part_body_mount_rubber_kit",
           "supply_type": "part",
           "inventory_group": "mechanical",
-          "item": "Body-to-chassis mount rubber kit",
+          "item": "Consolidated Longman chassis/body custom rubber order",
           "vendor": "",
           "amount": "",
           "currency": "PKR",
           "workstream": "chassis_rubbers",
           "status_group": "still_required",
           "status_detail": "spec_ready",
-          "procurement_stage": "spec_ready_release_hold",
+          "procurement_stage": "consolidated_longman_quote_ready_measurement_release_hold",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
-          "notes": "Spec ready with quantities in body_mount_order_release_specs.csv; complete BMA-001/BMA-002 route decision before committing purchase.",
+          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|docs/longman-rubber-order-spec-20260508.md|data/manual/longman_rubber_order_specs.csv|docs/chassis-rubbers-workstream.md|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+          "notes": "Single consolidated Longman custom rubber order. Quote/order as one supplier bundle: BM-ISO-SM 10 + 2 spares, BM-ISO-LG 2 + 1 spare, FS-OVAL x2, FS-STRIP-L x1, FS-STRIP-R x1, BUMP-60010-LONG x3, and BUMP-60020-SHORT x1. Steel cup/seat washers, sleeves, shims, bolts, and captive-thread repairs remain separate local hardware rows; BODY-LINER-FULL-WIDTH-HOLD and EXH-HGR-90917 are hold/reference lines only, not current order quantities.",
           "links": [
             {
               "url": "../../deliverables/fabrication_packages/rubber_recreation_rev_a.zip",
@@ -98132,45 +100207,6 @@ window.J40_DASHBOARD_DATA = {
         "image": {
           "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
           "caption": "Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points \u00b7 fastener kit reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "graded_fasteners",
-          "matched_tokens": [
-            "fastener"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_star_washers",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "Star washers (bite into metal)",
-        "vendor": "Amir / Montgomery Road local fastener supplier",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "electrical_reset",
-        "status_group": "in_process",
-        "status_detail": "ordered",
-        "procurement_stage": "ordered_pending_delivery",
-        "payment_status": "unknown",
-        "delivery_status": "pending_delivery",
-        "evidence_ref": "user_image_2026-03-21_electrical_leftovers|part_fastener_kit_d_millat|user_correction_2026-05-26_star_washers_not_ordered|duplicate_hold_part_fastener_kit_d_millat_20260527|user_update_2026-05-27_amir_star_washer_purchase_run|docs/amir-montgomery-road-shopping-list-20260527.md",
-        "notes": "Added from the user-provided remaining electrical-items screenshot; grounding hardware for reliable metal-biting earth points. User correction 2026-05-26: the standalone star washers were not actually ordered. Do not treat the prior user-update/order assumption as proof. Keep open for local purchase/top-up unless physical receipt of the MTL fastener orders proves enough true star/serrated grounding washers are already on hand. Baseline spec remains M6/M8/M10 star or serrated washers for earths and vibration-prone joints; verify internal/external tooth style, ID/OD, plating, and count before closing. | Pending-item audit 2026-05-27: remove standalone star washers from buy-now list as a duplicate/top-up hold against pending Millat Fastener Kit D. Reopen only if physical receipt of Kit D proves the M6/M8/M10 star or serrated washer count/style is short. | User update 2026-05-27: Amir sent to buy M6 star/lock washers x120, M8 star/lock washers x60, and M10 star/lock washers x30. User typed M2- in the chat, but the active Montgomery Road sheet/spec uses M10 x30; reject M2 unless reconfirmed. This standalone row is now the active local top-up run; do not buy more star/serrated washers until Amir purchase and pending Millat Fastener Kit D stock are counted together.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/graded_fasteners.jpg",
-          "caption": "Star washers (bite into metal) \u00b7 fastener kit reference image",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -106879,76 +108915,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_34",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "M6 star / lock washer",
-        "vendor": "Montgomery Road (Lahore)",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "",
-        "evidence_ref": "",
-        "notes": "Moved from Wiring tab; fastener item belongs in Parts purchase tracking.",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/lockset.jpg",
-          "caption": "M6 star / lock washer \u00b7 lock set reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "lockset",
-          "matched_tokens": [
-            "lock"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "workbook_parts",
-        "source_ref": "workbook_parts#row_35",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "M8 star / lock washer",
-        "vendor": "Montgomery Road (Lahore)",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "",
-        "status_group": "still_required",
-        "status_detail": "needs_buy_or_check",
-        "procurement_stage": "",
-        "payment_status": "",
-        "delivery_status": "",
-        "evidence_ref": "",
-        "notes": "Moved from Wiring tab; fastener item belongs in Parts purchase tracking.",
-        "links": [],
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/lockset.jpg",
-          "caption": "M8 star / lock washer \u00b7 lock set reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "lockset",
-          "matched_tokens": [
-            "lock"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
         "source": "expenses",
         "source_ref": "part_rear_brake_line_cable_clips",
         "supply_type": "part",
@@ -107646,121 +109612,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "part_body_mount_rubber_kit",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Body-to-chassis mount rubber kit",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "chassis_rubbers",
-        "status_group": "still_required",
-        "status_detail": "spec_ready",
-        "procurement_stage": "spec_ready_release_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
-        "notes": "Spec ready with quantities in body_mount_order_release_specs.csv; complete BMA-001/BMA-002 route decision before committing purchase.",
-        "links": [
-          {
-            "url": "../../deliverables/fabrication_packages/rubber_recreation_rev_a.zip",
-            "label": "Rubber fabrication package ZIP",
-            "download": true
-          },
-          {
-            "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
-            "label": "Bump-stop fabrication spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
-            "label": "Rubber dimension sheet PDF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
-            "label": "Bump-stop measurement control SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf",
-            "label": "Small body-mount cushion DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.dxf",
-            "label": "Large body-mount cushion DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf",
-            "label": "Small cup washer DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf",
-            "label": "Large cup washer DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf",
-            "label": "Oval front-support pad DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf",
-            "label": "Left strip template DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf",
-            "label": "Right strip template DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
-            "label": "Rubber cut list CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/inspection_checklist.csv",
-            "label": "Rubber inspection checklist CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
-            "label": "Rubber machine definitions CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json",
-            "label": "Rubber machine definitions JSON",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
-          "caption": "Body mount rubber cushion and front-support rubber kit reference",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_body_mount_rubber_kit"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
-        }
-      },
-      {
-        "source": "expenses",
         "source_ref": "part_brake_hydraulic_tees_unions_splitters_20260514",
         "supply_type": "part",
         "inventory_group": "mechanical",
@@ -108020,6 +109871,121 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
+        }
+      },
+      {
+        "source": "expenses",
+        "source_ref": "part_body_mount_rubber_kit",
+        "supply_type": "part",
+        "inventory_group": "mechanical",
+        "item": "Consolidated Longman chassis/body custom rubber order",
+        "vendor": "",
+        "amount": "",
+        "currency": "PKR",
+        "workstream": "chassis_rubbers",
+        "status_group": "still_required",
+        "status_detail": "spec_ready",
+        "procurement_stage": "consolidated_longman_quote_ready_measurement_release_hold",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|docs/longman-rubber-order-spec-20260508.md|data/manual/longman_rubber_order_specs.csv|docs/chassis-rubbers-workstream.md|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
+        "notes": "Single consolidated Longman custom rubber order. Quote/order as one supplier bundle: BM-ISO-SM 10 + 2 spares, BM-ISO-LG 2 + 1 spare, FS-OVAL x2, FS-STRIP-L x1, FS-STRIP-R x1, BUMP-60010-LONG x3, and BUMP-60020-SHORT x1. Steel cup/seat washers, sleeves, shims, bolts, and captive-thread repairs remain separate local hardware rows; BODY-LINER-FULL-WIDTH-HOLD and EXH-HGR-90917 are hold/reference lines only, not current order quantities.",
+        "links": [
+          {
+            "url": "../../deliverables/fabrication_packages/rubber_recreation_rev_a.zip",
+            "label": "Rubber fabrication package ZIP",
+            "download": true
+          },
+          {
+            "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
+            "label": "Bump-stop fabrication spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
+            "label": "Rubber dimension sheet PDF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
+            "label": "Bump-stop measurement control SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf",
+            "label": "Small body-mount cushion DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.dxf",
+            "label": "Large body-mount cushion DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf",
+            "label": "Small cup washer DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf",
+            "label": "Large cup washer DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf",
+            "label": "Oval front-support pad DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf",
+            "label": "Left strip template DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf",
+            "label": "Right strip template DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
+            "label": "Rubber cut list CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/inspection_checklist.csv",
+            "label": "Rubber inspection checklist CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
+            "label": "Rubber machine definitions CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json",
+            "label": "Rubber machine definitions JSON",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
+          "caption": "Body mount rubber cushion and front-support rubber kit reference",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_body_mount_rubber_kit"
+          ],
+          "match_basis": "manual_override",
+          "match_score": 999
         }
       },
       {

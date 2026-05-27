@@ -208,7 +208,7 @@ def build_procurement_decisions(
             dependency_gate = "body_sealed"
             action = "do_not_buy_yet"
             reason = "Material should be purchased only after floor/body sealing gate."
-        elif procurement_stage == "spec_ready_release_hold":
+        elif procurement_stage == "spec_ready_release_hold" or procurement_stage.startswith("consolidated_longman_quote_ready"):
             decision = "release_hold_measure_then_order"
             dependency_gate = "measurement_release_hold"
             action = "use_exact_spec_after_measurement_gate"

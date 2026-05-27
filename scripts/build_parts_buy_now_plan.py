@@ -62,6 +62,12 @@ OVERLAP_DECISIONS: tuple[OverlapDecision, ...] = (
         rationale="No standalone switch/relay buy now: spot lamps already have a switch allocation, winch control is identified on the 3rd lever, and horn relay is duplicated by the as-built relay plan.",
     ),
     OverlapDecision(
+        group_id="millat_fastener_order_duplicates",
+        chosen_entries=("part_fastener_kit_d_millat",),
+        deferred_entries=("part_star_washers",),
+        rationale="Incoming Millat Fastener Kit D covers the M6/M8/M10 star/serrated grounding washers; suppress the separate Amir/local star-washer top-up unless the physical Millat receipt count proves short.",
+    ),
+    OverlapDecision(
         group_id="floor_finish_stack",
         chosen_entries=("part_bedliner_sprays",),
         deferred_entries=("part_bed_lining", "part_sound_dampening_sheets", "part_foam", "part_carpet"),
@@ -79,6 +85,7 @@ OVERLAP_DECISIONS: tuple[OverlapDecision, ...] = (
 WORKSTREAM_PRIORITY = {
     "body_chassis": "P0",
     "chassis_fixing": "P0",
+    "chassis_rubbers": "P0",
     "electrical_reset": "P0",
     "mechanical_baseline": "P1",
     "brake_system": "P0",

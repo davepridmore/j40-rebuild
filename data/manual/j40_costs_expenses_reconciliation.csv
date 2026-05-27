@@ -78,8 +78,8 @@ Parts,30,Thermostat plus gasket,,Use local Toyota/common parts markets; buy as o
 Parts,31,Vacuum hose refresh kit,,Use local Toyota/common parts markets; buy as one batch after inspection.,,,line_item,no_match,,,,,,,,
 Parts,32,Metal protection and restoration products,,"Prefer local sourcing first, then online if unavailable.",,,line_item,matched_exact_item,1.0,part_metal_protection,Metal protection and restoration products,Daraz,parts,03_body_chassis,body_chassis,not_required_covered_by_epoxy_wax
 Parts,33,Primer,,"Prefer local sourcing first, then online if unavailable.",,,line_item,no_match,,,,,,,,
-Parts,34,M6 star / lock washer,,Montgomery Road (Lahore),,,line_item,no_match,,,,,,,,
-Parts,35,M8 star / lock washer,,Montgomery Road (Lahore),,,line_item,no_match,,,,,,,,
+Parts,34,M6 star / lock washer,,Montgomery Road (Lahore),,,line_item,matched_duplicate_suppressed,1.0,part_fastener_kit_d_millat,Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points,MTL Parts,parts,04_electrical_reset,electrical_reset,ordered_pending_delivery
+Parts,35,M8 star / lock washer,,Montgomery Road (Lahore),,,line_item,matched_duplicate_suppressed,1.0,part_fastener_kit_d_millat,Fastener Kit D: Grounding hardware - star/serrated washers M6/M8/M10 + cleaned contact points,MTL Parts,parts,04_electrical_reset,electrical_reset,ordered_pending_delivery
 Parts,36,"Schneider Harmony 22mm 2-position maintained selector switch (1NO, black) x 4",31900,purchaser.com.pk | https://purchaser.com.pk/schneider-harmony-22mm-push-button-2-position-selector-switch-black-maintained-1-no-600-v/,Y,Y,line_item,no_match,,,,,,,,
 Parts,37,"Schneider Harmony XB4 22mm 3-position maintained selector switch (2NO, long handle) x 3",,purchaser.com.pk | https://purchaser.com.pk/schneider-selector-switch-harmony-xb4-metal-black-22mm-long-handle-3positions-stay-put-2no/,Y,Y,line_item,no_match,,,,,,,,
 Parts,38,Dashboard fascia / auxiliary switch panel (if OEM holes are insufficient),,Local sheet-metal/fabrication shop,No,,line_item,no_match,,,,,,,,

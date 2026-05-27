@@ -1,6 +1,6 @@
 # Amir Montgomery Road Market List - 2026-05-27
 
-Purpose: buy or quote the J40 brake-line, grounding-fastener, support-clip, and workshop items while Amir is on Montgomery Road.
+Purpose: buy or quote the J40 brake-line, support-clip, and workshop items while Amir is on Montgomery Road.
 
 Safety rule: brake hydraulic parts must be automotive brake-rated. If the seller cannot confirm the spec, Amir should send a photo and price before paying.
 
@@ -22,11 +22,10 @@ Actual J40 brake fitting references:
 
 ## Buy Now
 
+Millat/MTL order update: do not buy local M6/M8/M10 star or serrated grounding washers now. Incoming Fastener Kit D covers that stock. Reopen only if the physical Millat receipt count is short.
+
 | Priority | Item | Quantity | Exact ask | Accept | Reject / call first |
 | --- | ---: | ---: | --- | --- | --- |
-| P0 | M6 star / serrated lock washer | 120 | Zinc plated star/serrated lock washer for M6 bolts | Internal-tooth or external-tooth star washer | Plain washer only; split spring washer unless no star washer exists |
-| P0 | M8 star / serrated lock washer | 60 | Zinc plated star/serrated lock washer for M8 bolts | Internal-tooth or external-tooth star washer | Plain washer only |
-| P0 | M10 star / serrated lock washer | 30 | Zinc plated star/serrated lock washer for M10 bolts | Internal-tooth or external-tooth star washer | If shop hears `M2`, do not buy; confirm by phone |
 | P0 | 3 lb sledge / club hammer | 1 | 3 lb short-handle sledge hammer | Tight head, solid fiberglass/steel/wood handle | Loose head, cracked handle, toy/light hammer |
 | P0 | Brake hard-line tube | 25 ft minimum; 10-12 m if cheap | `4.75 mm / 3/16 in` automotive brake pipe, double-wall Bundy steel, zinc/PVF/galvanized coated | Brake-rated steel Bundy tube; CuNi/Cunifer if good and brake-rated | Bare copper, plumbing tube, unknown tube, stainless if shop cannot flare it |
 
@@ -54,6 +53,35 @@ Actual J40 brake fitting references:
 | P1 | Punch/drift set | 1 set | Useful with the sledge for stuck pins and brackets. |
 | P1 | Safety glasses | 1 pair | For hammering, cutting, and wire brushing. |
 
+## Air Compressor Hose / Adapter Fix
+
+Current issue: the compressor hose/fittings do not fit either side. Do not buy a random small hose; standardize the compressor, hose, and tools to one quick-coupler family.
+
+Already ordered:
+
+- Almiraj bundle included INGCO `AH1151` / `AH1151-3` air hose. This is a small-bore hose: `15 m`, `5 mm ID x 8 mm OD`, usually Nitto-type on `AH1151-3`.
+- ToolsMart order `TM25776` includes a Licota `9 m` PU hose roll with Nitto-type quick couplers. This is the intended larger-bore follow-up, but it is still pending delivery.
+
+If Amir is buying locally now, ask for:
+
+| Item | Exact ask | Quantity | Notes |
+| --- | --- | ---: | --- |
+| Nitto/Japanese air quick-coupler matched set | `1/4 inch` air-line quick coupler set, Nitto/Japanese industrial type | 1 full set | Must include male plugs and female sockets/couplers so compressor, hose, blow gun, tire inflator, and impact wrench all use the same standard. |
+| Thread adapters | `1/4 inch BSP` male/female adapters, plus `1/4 inch NPT` only if the tool thread proves NPT | mixed set | Pakistan/INGCO/TOTAL stock is often BSP-style, but the actual tool/compressor threads control. Take parts to shop if possible. |
+| Larger air hose if the ToolsMart hose is not arriving soon | `8-10 mm ID` / `3/8 inch` air hose, `9-15 m`, Nitto/Japanese quick couplers, minimum `12 bar` working pressure | 1 | Needed for 1/2 inch impact wrench airflow. The `5 mm ID x 8 mm OD` hose is fine for blow gun/tire inflator/light tools but may choke the impact. |
+| PTFE tape or air-thread sealant | For threaded air fittings | 1 roll/tube | Use on threaded joints only; do not tape quick-coupler noses. |
+
+Market instruction:
+
+> Make the compressor outlet, hose ends, blow gun, tire inflator, and 1/2 inch impact wrench all fit one Nitto/Japanese quick-coupler standard. Use `1/4 inch` threaded air fittings/adapters. If the thread does not start by hand, stop and send photos; do not force BSP into NPT or NPT into BSP.
+
+Photos Amir should send:
+
+- Compressor outlet close-up.
+- Both ends of the current air hose.
+- Air inlet on the blow gun / tire inflator / impact wrench.
+- Any fitting packets with `1/4`, `BSP`, `NPT`, `Nitto`, `Japan`, `Euro`, or `USA` label visible.
+
 ## Quote Only Unless Sample-Matched
 
 Do not pay for these unless Amir has the old sample in hand or the seller agrees it can be returned after thread/seat mismatch.
@@ -79,7 +107,7 @@ Brake hose shop:
 
 Fastener shop:
 
-> Need zinc plated star/serrated lock washers: M6 x120, M8 x60, M10 x30. Also quote M6/M8 captive nuts, speed clips, clip nuts, R-clips, hairpins, cotter pins, and circlips.
+> Do not buy M6/M8/M10 star or serrated grounding washers; Millat/MTL Fastener Kit D is now coming. Only quote M6/M8 captive nuts, speed clips, clip nuts, R-clips, hairpins, cotter pins, and circlips.
 
 ## Photos Amir Must Send Before Paying If Uncertain
 
@@ -101,7 +129,6 @@ Fastener shop:
 
 ## Photo Sources
 
-- Star washers: ASMC M6 DIN 6798A zinc plated external tooth serrated lock washer.
 - Brake pipe: Bundy Tubes 4.75 mm PVF coated brake line tube.
 - Brake fittings: The Stop Shop 3/16 inverted flare tee.
 - Brake hose U-clips: Russell brake hydraulic hose clip via PerformanceParts.

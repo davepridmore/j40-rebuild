@@ -1496,7 +1496,7 @@
       image: "../../photos/20260405_234652.jpg",
       imageCaption: "Tub-side body-mount landing context",
       spec: "Custom square flat pad 70 x 70 x 22; flat parallel faces; light edge radius/chamfer; leave undrilled or centre-marked until the crush-sleeve OD is known. Final hole = sleeve OD + 0.5-1.0.",
-      route: "Longman custom rubber order",
+      route: "Longman consolidated rubber order",
       files: [
         ["Longman Spec", "../../docs/longman-rubber-order-spec-20260508.md"],
         ["Order CSV", "../../data/manual/longman_rubber_order_specs.csv"],
@@ -1510,7 +1510,7 @@
       image: "../../photos/20260405_234652.jpg",
       imageCaption: "Tub-side body-mount landing context",
       spec: "Custom square flat pad 80 x 80 x 24; flat parallel faces; light edge radius/chamfer; same compound batch as BM-ISO-SM where possible. Final hole = sleeve OD + 0.5-1.0.",
-      route: "Longman custom rubber order",
+      route: "Longman consolidated rubber order",
       files: [
         ["Longman Spec", "../../docs/longman-rubber-order-spec-20260508.md"],
         ["Order CSV", "../../data/manual/longman_rubber_order_specs.csv"],
@@ -1524,7 +1524,7 @@
       image: "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
       imageCaption: "Front-support two-hole oval pad",
       spec: "Origin lower-left of 64 x 96 plan; outer capsule 64 wide x 96 long with R32 ends; thickness 15; through holes 12 at X32 Y16 and X32 Y80; relief pocket 36 x 18 R3 at X14 Y39; insert/boss mark 29 at X32 Y16.",
-      route: "waterjet/knife/punch/moulded 2.5D rubber pad",
+      route: "Longman consolidated rubber order; waterjet/knife/punch/moulded 2.5D pad",
       files: [
         ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf"],
         ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.svg"],
@@ -1533,31 +1533,31 @@
     },
     {
       id: "FS-STRIP-L",
-      part: "Front-support left strip / liner hold",
-      qty: "Hold",
+      part: "Underfloor body-support strip liner left",
+      qty: "1",
       image: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg",
-      imageCaption: "Left strip template hold; not photo-released",
-      spec: "Candidate strip only. Quote envelope 165 x 40 if the physical carrier confirms the piece exists; base thickness 8; raised/load pad 14. Final outline, holes, and handedness must come from carrier trace.",
-      route: "hold for physical trace; supplied DXF/SVG is a blank only",
+      imageCaption: "Left strip SVG control; first article released",
+      spec: "Flat strip 165 x 38 x 8; plain rubber strip only; smooth edges and flat parallel faces; no stepped section and no through-holes by default.",
+      route: "Longman consolidated rubber order; first article then dry-fit",
       files: [
         ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf"],
         ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg"],
       ],
-      notes: "Current loose-part images are mixed with bump-stop fragments; do not cut from photo.",
+      notes: "May 17 installed-location photos release the first article. Dry-fit controls only local end trim and any separate steel retainer trace.",
     },
     {
       id: "FS-STRIP-R",
-      part: "Front-support right strip / liner hold",
-      qty: "Hold",
+      part: "Underfloor body-support strip liner right",
+      qty: "1",
       image: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg",
-      imageCaption: "Right strip template hold; not photo-released",
-      spec: "Candidate strip only. Mirror FS-STRIP-L only if the right carrier proves symmetric; use the same quote envelope after confirmation. Final outline, holes, and handedness must come from carrier trace.",
-      route: "hold for physical trace; supplied DXF/SVG is a blank only",
+      imageCaption: "Right strip SVG control; first article released",
+      spec: "Same as left: flat strip 165 x 38 x 8; plain rubber strip only; use the same blank unless the right-side sample proves a handed end trim.",
+      route: "Longman consolidated rubber order; first article then dry-fit",
       files: [
         ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf"],
         ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg"],
       ],
-      notes: "The old right-strip image is now treated as bump-stop evidence first; do not cut from photo.",
+      notes: "May 17 installed-location photos release the right-side first article. Dry-fit controls only local handed trim and any separate steel retainer trace.",
     },
     {
       id: "BUMP-60010-LONG",
@@ -1623,8 +1623,8 @@
     ["../../photos/20260405_234652.jpg", "Original tub-side body-mount landing context"],
     ["../../photos/20260405_234546.jpg", "Original underbody mount context"],
     ["../../photos/20260502_004345_gp_yK8VYzMQ.jpg", "Front-support two-hole oval pad"],
-    ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg", "Left front-support strip template hold"],
-    ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg", "Right front-support strip template hold"],
+    ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg", "Left underfloor strip first-article control"],
+    ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg", "Right underfloor strip first-article control"],
     ["../../photos/20260502_004222_gp_PKRe5HSQ.jpg", "Bump-stop fragment reference"],
     ["../../photos/20260502_004201_gp_zfUSmKJg.jpg", "Bump-stop vertical/scale reference"],
     ["../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg", "Bump-stop vehicle measurement control"],
@@ -1764,19 +1764,27 @@
 
   function renderChassisRubberConsolidatedSpec(rows) {
     const sourceRows = Array.isArray(rows) && rows.length ? rows : fallbackChassisRubberOrderRows();
+    const holdRows = sourceRows.filter((row) => {
+      const qty = cleanString(row.required_qty).toLowerCase();
+      const state = cleanString(row.release_state).toLowerCase();
+      return qty === "hold" || state.includes("hold");
+    });
+    const currentRows = sourceRows.filter((row) => !holdRows.includes(row));
+    const orderedRows = [...currentRows, ...holdRows];
     return `
       <article class="card pipe-requirements-card">
         <div class="detail-header">
-          <h3>Chassis Rubber Order</h3>
+          <h3>Consolidated Longman Rubber Order</h3>
           <div class="chip-row">
-            ${chip(`${sourceRows.length} lines`)}
-            ${chip("Single Longman list")}
+            ${chip("1 supplier request")}
+            ${chip(`${currentRows.length} quote lines`)}
+            ${holdRows.length ? chip(`${holdRows.length} holds`) : ""}
             ${chip("SVG + DXF attached")}
             ${chip("All dimensions mm")}
             ${chip("Shore A 60 +/-5")}
           </div>
         </div>
-        <p class="small-muted">This is the single chassis-rubber list to use for the Longman quote/send-out pack. Quantities here are the rubber order quantities; there is no second duplicate Longman table below it.</p>
+        <p class="small-muted">Send this as one Longman quote/order bundle. The rows below are line items inside that single supplier request, not separate custom rubber orders. Hold rows stay in the pack only as reference controls and are not current production quantities.</p>
         <p class="small-muted">Body/front-support rubbers: new black solid EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5. Main body isolators are now function-first custom square pads, not circular/register bushings, because the chassis/tub photos do not prove a shaped rubber socket. Steel cup/seat washers, sleeves, shims, bolts, and captive-thread repairs are separate from the Longman rubber order. Bump stops: public OEM/catalog sources confirm the Toyota part numbers, applications, and 70 mm / 60 mm height split, but not the Toyota mould drawing. Use a Toyota-style two-ear steel saddle/backing plate, tapered/radiused progressive rubber body, flat rectangular strike face, and vehicle bracket/contact measurements. Reject tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, washer stacks, simple cut blocks, or universal bump stops that do not match the axle contact point.</p>
         <p class="small-muted">Current supplier pack: <a href="../../docs/longman-rubber-order-spec-20260508.md">Longman rubber order spec</a>, <a href="../../data/manual/longman_rubber_order_specs.csv">Longman order CSV</a>, <a href="../../docs/chassis-rubbers-workstream.md">chassis rubbers workstream</a>.</p>
         <div class="table-wrap requirement-table-wrap">
@@ -1793,18 +1801,20 @@
               </tr>
             </thead>
             <tbody>
-              ${sourceRows
+              ${orderedRows
                 .map((row) => {
                   const qtyBits = [
                     row.required_qty ? `Required: ${row.required_qty}` : "",
                     row.optional_spare_qty ? `Spare: ${row.optional_spare_qty}` : "",
                   ].filter(Boolean);
+                  const isHold = holdRows.includes(row);
                   return `
                     <tr>
                       ${renderChassisRubberOrderImage(row)}
                       <td class="scout-line-cell">
                         <strong>${escapeHtml(row.order_id || "-")}</strong>
                         <div class="small-muted">${escapeHtml(row.part || "")}</div>
+                        ${statusChip(isHold ? "hold/reference only" : "current order line")}
                       </td>
                       <td>${escapeHtml(qtyBits.join(" / ") || "-")}</td>
                       <td>${escapeHtml(row.spec)}</td>
@@ -1823,8 +1833,8 @@
             </tbody>
           </table>
         </div>
-        <p class="small-muted">Tolerances: square body pad length/width +/-1.0, height +/-0.5, faces parallel <=0.5; final rubber hole = measured sleeve OD + 0.5-1.0. FS-OVAL outside +/-1.0, hole position +/-0.5, thickness +/-0.5. Candidate strip/liner rows are hold items until traced. Bump stops: height +/-1, base/hole position +/-0.5 after vehicle measurement release, contact centre +/-5; steel saddle must not bend; rubber/steel bond or captive joint must survive compression.</p>
-        <p class="small-muted">Lower holds: FS-STRIP-L/R need physical carrier or installed-location proof before final cutting; possible full-width flat liners need full-length photos/traces before any quote; EXH-HGR-90917 needs a genuine sample or intact original to confirm side profile, insert depth, exact thickness, and reinforcement before local moulding; bump stops need BL/BW/P/D/X-Y/G/F values, fabricator side/profile sketch, saddle hole layout, material declaration, and first-article compression recovery check before mould release.</p>
+        <p class="small-muted">Tolerances: square body pad length/width +/-1.0, height +/-0.5, faces parallel <=0.5; final rubber hole = measured sleeve OD + 0.5-1.0. FS-OVAL outside +/-1.0, hole position +/-0.5, thickness +/-0.5. FS-STRIP-L/R first articles are 165 x 38 x 8 mm with only dry-fit trim pending. Bump stops: height +/-1, base/hole position +/-0.5 after vehicle measurement release, contact centre +/-5; steel saddle must not bend; rubber/steel bond or captive joint must survive compression.</p>
+        <p class="small-muted">Remaining holds: possible full-width flat liners need full-length photos/traces before any quote; EXH-HGR-90917 needs a genuine sample or intact original to confirm side profile, insert depth, exact thickness, and reinforcement before local moulding. FS-STRIP-L/R are current first-article order lines at 165 x 38 x 8 mm; dry-fit controls only local end trim and any separate steel retainer trace. Bump stops need BL/BW/P/D/X-Y/G/F values, fabricator side/profile sketch, saddle hole layout, material declaration, and first-article compression recovery check before mould release.</p>
       </article>
     `;
   }
@@ -3664,11 +3674,11 @@
     if (id === "CR-FRONT-001" || id === "FS-OVAL" || text.includes("two-hole oval")) {
       return ["20260502_004345_gp_yK8VYzMQ"];
     }
-    if (id === "CR-FRONT-002" || id === "FS-STRIP-L" || text.includes("left front-support strip")) {
-      return [];
+    if (id === "CR-FRONT-002" || id === "FS-STRIP-L" || text.includes("left front-support strip") || text.includes("left underfloor")) {
+      return ["20260517_194143_gp_CO7MuMdA", "20260517_194706_gp_twKRWGFA", "20260517_193503_gp_N9nHjqXw"];
     }
-    if (id === "CR-FRONT-003" || id === "FS-STRIP-R" || text.includes("right front-support strip")) {
-      return [];
+    if (id === "CR-FRONT-003" || id === "FS-STRIP-R" || text.includes("right front-support strip") || text.includes("right underfloor")) {
+      return ["20260517_194633_gp_rAjY3gjg", "20260517_194706_gp_twKRWGFA", "20260517_193612_gp_JmbfR0Tw"];
     }
     if (id === "RPO-COOL-001" || id === "HLS-01" || id === "RP-COOL-001" || text.includes("upper radiator hose")) {
       return ["20260430_220004_gp_C9oYiYmA", "20260503_160327_gp_sFtQuWNQ", "20260503_153249_gp_Lg6JX6Gg"];
@@ -3961,10 +3971,10 @@
       return previous("../../photos/20260502_004201_gp_zfUSmKJg.jpg", "previous bump-stop vertical scale reference", "20260502_004201_gp_zfUSmKJg", ["bump-stop", "previous"]);
     }
     if (rowId === "FS-STRIP-L" || partNumber.includes("fs_strip_left") || (hasAny("front-support strip", "front support strip", "strip rubber") && hasAny("left", "left-side", "left side"))) {
-      return scoutReferenceImage("../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg", "left front-support strip template hold", "fs_strip_left_template_blank_rev_a");
+      return scoutReferenceImage("../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg", "left underfloor strip first-article control", "fs_strip_left_template_blank_rev_a");
     }
     if (rowId === "FS-STRIP-R" || partNumber.includes("fs_strip_right") || (hasAny("front-support strip", "front support strip", "strip rubber") && hasAny("right", "right-side", "right side"))) {
-      return scoutReferenceImage("../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg", "right front-support strip template hold", "fs_strip_right_template_blank_rev_a");
+      return scoutReferenceImage("../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg", "right underfloor strip first-article control", "fs_strip_right_template_blank_rev_a");
     }
     if (rowId === "MIDI5-ENC-BODY-001" || rowId === "MIDI5-LID-001" || rowId === "MIDI5-SUBPLATE-001" || hasAny("midi5_enclosure", "midi5_mount_plate", "midi5_holder_subplate", "midi 5-way structural", "midi 5-way non-conductive")) {
       return previous("../../photos/20260411_143135.jpg", "received MIDI holder bank to mount", "20260411_143135", ["midi5", "previous"]);
@@ -4300,17 +4310,17 @@
     };
     const rubberMarketSpec = {
       id: "body_mount_rubbers_market_scout",
-      title: "Body Mount Rubbers Market Scout",
-      scope: "Exact requirement sheet",
-      quantity: "9 rubber requirements plus controlled hardware/order-release lines",
+      title: "Consolidated Longman Rubber Market Scout",
+      scope: "Single quote bundle",
+      quantity: "1 Longman rubber bundle plus separate controlled hardware rows",
       plain_stall_request:
-        "I need the exact new-only J40 body/front-support rubber requirements listed in the spec sheet, plus sleeves, cup washers, shims, spacers, bolts, nuts, and washers as separate controlled lines. Toyota/OE part numbers are reference shapes only; quote local fabrication from the measured spec if exact new stock is not in hand. Old rubbers/photos are samples only. No used or salvage rubber.",
+        "I need one consolidated quote for the exact new-only J40 body/front-support/chassis custom rubber bundle listed in the Longman spec. Quote the rubber lines together; sleeves, cup washers, shims, spacers, bolts, nuts, and washers are separate controlled hardware lines. Toyota/OE part numbers are reference shapes only. Old rubbers/photos are samples only. No used or salvage rubber.",
       buy_target:
-        "Use the exact requirement list below and the linked rubber-ordering pages. Do not rely on Toyota availability. Main body pads are custom square BM-ISO-SM/BM-ISO-LG pieces unless a station trace releases a specific trim. FS-STRIP-L/R and any full-width flat liners are holds until the physical carrier/location proves them. For bump stops, old rubber is not the master: use the 70 mm long / 60 mm right-front height controls, Toyota-style steel-saddle/tapered-body construction, and vehicle bracket measurements.",
+        "Use the exact Longman order list below. Main body pads are custom square BM-ISO-SM/BM-ISO-LG pieces unless a station trace releases a specific trim. FS-STRIP-L/R are included as first-article flat strips at 165 x 38 x 8 mm. Full-width flat liners and the exhaust hanger remain hold/reference lines only. For bump stops, old rubber is not the master: use the 70 mm long / 60 mm right-front height controls, Toyota-style steel-saddle/tapered-body construction, and vehicle bracket measurements.",
       must_include: [
         "Upper and lower body mount rubber cushions for the required body stations.",
         "Steel sleeves, cup or seat washers, shims, spacers, bolts, nuts, and washers quoted separately.",
-        "Rubber dimensions shown clearly: outside diameter, inside hole, thickness, and sleeve length.",
+        "Rubber dimensions shown clearly: outside size, thickness, hole/insert status, and any sleeve-controlled final hole.",
         "Fabrication quote basis for every non-stock rubber: drawing/profile, old sample, 3D scan, or vehicle-bracket measurement requirement, material/hardness, first article, and dry-fit check.",
         "New rubber only for every fitted rubber, grommet, pad, cushion, boot, sleeve cover, isolator, bump stop, and hanger.",
       ],
@@ -4332,9 +4342,9 @@
         "Seller name, phone number, shop location, material claim, price, and return terms.",
       ],
       price_guidance: {
-        rule: "Keep rubber, sleeves, shims, and bolts as separate quote lines so a wrong line can be rejected without losing the whole package.",
+        rule: "Keep the rubber as one Longman bundle with itemized line prices; keep sleeves, cup/seat washers, shims, and bolts outside that rubber quote.",
       },
-      decision_rule: "Buy or fabricate only new rubber after the old samples or measurement sheet prove the rubber shape, sleeve size, moulded profile, and hardware stack.",
+      decision_rule: "Buy or fabricate only the consolidated new-rubber bundle after the old samples or measurement sheet prove rubber shape, sleeve size, moulded profile, and hardware stack.",
       links: [
         scoutDocLink("docs/longman-rubber-order-spec-20260508.md", "Longman rubber order spec"),
         scoutDocLink("docs/rubber-ordering-spec-20260502.md", "Rubber ordering spec"),
@@ -4664,33 +4674,33 @@
       },
       {
         id: "FS-STRIP-L",
-        item: "Left front-support strip template hold",
+        item: "Left underfloor body-support strip liner",
         partNumber: "fs_strip_left_template_blank_rev_a.dxf",
         route: "rubber_recreation_rev_a",
-        state: "template_required",
-        image: scoutReferenceImage("../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg", "Left front-support strip template hold", "fs_strip_left_template_blank_rev_a"),
-        spec: "Candidate/template only. Use the FS-STRIP-L row as a stock envelope only if the physical left carrier or installed location proves this piece exists.",
-        qty: "Hold",
-        dimension: "Stock envelope 165 x 40 R4; base thickness 8; raised/load pad 14; provisional slots 16 x 11 at X20 Y20 and X145 Y20 only if carrier confirms",
-        material: "8 mm base / 14 mm raised-load EPDM or NR/SBR strip, Shore A 60 +/-5",
-        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
-        reject: "Do not cut final production from this blank or the mixed loose-part photos.",
-        notes: "Not production-CNC until the left carrier trace updates the DXF and confirms the part is required.",
+        state: "first_article_custom_recreate",
+        image: scoutReferenceImage("../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg", "Left underfloor strip first-article control", "fs_strip_left_template_blank_rev_a"),
+        spec: "Released first article as a plain flat underfloor body-support / anti-squeak strip. Do not add holes, slots, bonding, or stepped geometry unless dry-fit proves it.",
+        qty: "1",
+        dimension: "165 x 38 x 8 mm; smooth edges; flat parallel faces; local end trim only after dry-fit",
+        material: "Black EPDM or NR/SBR strip, Shore A 60 +/-5",
+        sourceBasis: "docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv; data/manual/rubber_recreation_measurement_closure.csv",
+        reject: "Slots/holes through the rubber, raised-load pad, bonding, or handed trim without installed-sample proof.",
+        notes: "Order inside the single consolidated Longman rubber bundle; trace or reuse the steel retainer separately if needed.",
       },
       {
         id: "FS-STRIP-R",
-        item: "Right front-support strip template hold",
+        item: "Right underfloor body-support strip liner",
         partNumber: "fs_strip_right_template_blank_rev_a.dxf",
         route: "rubber_recreation_rev_a",
-        state: "template_required",
-        image: scoutReferenceImage("../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg", "Right front-support strip template hold", "fs_strip_right_template_blank_rev_a"),
-        spec: "Candidate/template only. Mirror the left only if the physical right carrier proves symmetry and confirms this piece exists.",
-        qty: "Hold",
-        dimension: "Stock envelope 165 x 40 R4; base thickness 8; raised/load pad 14; provisional slots 16 x 11 at X20 Y20 and X145 Y20 only if carrier confirms",
-        material: "8 mm base / 14 mm raised-load EPDM or NR/SBR strip, Shore A 60 +/-5",
-        sourceBasis: "data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
-        reject: "Do not cut final production from this blank or the mixed loose-part photos.",
-        notes: "Not production-CNC until the right carrier trace updates the DXF and confirms the part is required.",
+        state: "first_article_custom_recreate",
+        image: scoutReferenceImage("../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg", "Right underfloor strip first-article control", "fs_strip_right_template_blank_rev_a"),
+        spec: "Released first article as the right-side mate to the left strip. Use the same plain blank unless dry-fit proves a handed end trim.",
+        qty: "1",
+        dimension: "165 x 38 x 8 mm; smooth edges; flat parallel faces; local handed trim only after dry-fit",
+        material: "Black EPDM or NR/SBR strip, Shore A 60 +/-5; same batch/type as left where possible",
+        sourceBasis: "docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv; data/manual/rubber_recreation_measurement_closure.csv",
+        reject: "Slots/holes through the rubber, raised-load pad, bonding, or handed trim without installed-sample proof.",
+        notes: "Order inside the single consolidated Longman rubber bundle; trace or reuse the steel retainer separately if needed.",
       },
       {
         id: "MIDI5-ENC-BODY-001",
@@ -6532,11 +6542,14 @@
       ].some((token) => blob.includes(token));
     };
     const orderingSupplyRows = allSupplyRows.filter((row) => !shouldHideFromOrderingInventory(row));
+    const inventorySupplyRows = orderingSupplyRows.filter(
+      (row) => cleanString(row && row.status_group).toLowerCase() !== "still_required"
+    );
     const groupedSupplyRows = {};
     inventoryGroupOrder.forEach((group) => {
       groupedSupplyRows[group] = [];
     });
-    orderingSupplyRows.forEach((row) => {
+    inventorySupplyRows.forEach((row) => {
       const explicitGroup = cleanString(row && row.inventory_group).toLowerCase();
       const supplyType = cleanString(row && row.supply_type).toLowerCase();
       let group = explicitGroup;

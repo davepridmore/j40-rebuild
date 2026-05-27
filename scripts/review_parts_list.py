@@ -63,7 +63,7 @@ def action_bucket(row: dict[str, str]) -> str:
         return "buy_now"
     if procurement_stage == "researching":
         return "researching"
-    if procurement_stage == "spec_ready_release_hold":
+    if procurement_stage == "spec_ready_release_hold" or procurement_stage.startswith("consolidated_longman_quote_ready"):
         return "spec_ready_release_hold"
     if procurement_stage == "spec_needed_before_order":
         return "needs_spec_before_order"
