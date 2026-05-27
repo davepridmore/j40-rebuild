@@ -7,19 +7,23 @@ import fs from 'fs';
 import path from 'path';
 
 // Mock whatsapp-web.js to prevent Puppeteer dependency issues
-jest.mock('whatsapp-web.js', () => {
-  const mockClient = jest.fn().mockImplementation(() => ({
-    initialize: jest.fn().mockResolvedValue(undefined),
-    on: jest.fn(),
-    getState: jest.fn().mockReturnValue('CONNECTED'),
-  }));
+jest.mock(
+  'whatsapp-web.js',
+  () => {
+    const mockClient = jest.fn().mockImplementation(() => ({
+      initialize: jest.fn().mockResolvedValue(undefined),
+      on: jest.fn(),
+      getState: jest.fn().mockReturnValue('CONNECTED'),
+    }));
 
-  return {
-    Client: mockClient,
-    LocalAuth: jest.fn(),
-    NoAuth: jest.fn(),
-  };
-}, { virtual: true });
+    return {
+      Client: mockClient,
+      LocalAuth: jest.fn(),
+      NoAuth: jest.fn(),
+    };
+  },
+  { virtual: true },
+);
 
 // Mock dependencies
 jest.mock('../../src/whatsapp-service');
@@ -60,9 +64,11 @@ jest.mock('../../src/mcp-server', () => {
   };
 });
 
-// Mock fs module
+// Mock fs helpers used by this module while preserving Node fs APIs used by dependencies.
 jest.mock('fs', () => ({
+  ...jest.requireActual('fs'),
   promises: {
+    ...jest.requireActual('fs').promises,
     mkdir: jest.fn().mockResolvedValue(undefined),
     writeFile: jest.fn().mockResolvedValue(undefined),
     stat: jest.fn().mockResolvedValue({ size: 12345 }),
@@ -75,8 +81,9 @@ jest.mock('fs', () => ({
   rmSync: jest.fn(),
 }));
 
-// Mock path module
+// Mock path helpers used by this module while preserving Node path APIs used by dependencies.
 jest.mock('path', () => ({
+  ...jest.requireActual('path'),
   join: jest.fn((...args) => args.join('/')),
   resolve: jest.fn(path => `/absolute${path}`),
 }));
@@ -140,26 +147,27 @@ describe('MCP Server', () => {
   it('should register the download_media_from_message tool', () => {
     // Create a mock server with tool method
     const mockToolMethod = jest.fn();
-    const mockServer = { 
+    const mockServer = {
       resource: jest.fn(),
-      tool: mockToolMethod 
+      tool: mockToolMethod,
     };
-    
+
     // Override the McpServer mock for this test
-    (require('@modelcontextprotocol/sdk/server/mcp.js').McpServer as jest.Mock)
-      .mockImplementationOnce(() => mockServer);
-      
+    (
+      require('@modelcontextprotocol/sdk/server/mcp.js').McpServer as jest.Mock
+    ).mockImplementationOnce(() => mockServer);
+
     // Create a mock client
     const mockClient = { initialize: jest.fn() };
-    
+
     // Call createMcpServer
     const realCreateMcpServer = jest.requireActual('../../src/mcp-server').createMcpServer;
     realCreateMcpServer({}, mockClient);
-    
+
     // Verify the tool was registered
     const calls = mockToolMethod.mock.calls;
     const downloadMediaToolCall = calls.find(call => call[0] === 'download_media_from_message');
-    
+
     expect(downloadMediaToolCall).toBeDefined();
     expect(downloadMediaToolCall[1]).toHaveProperty('messageId');
   });

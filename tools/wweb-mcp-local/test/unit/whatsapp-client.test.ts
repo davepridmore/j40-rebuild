@@ -3,9 +3,11 @@ import { Client, LocalAuth, NoAuth } from 'whatsapp-web.js';
 import fs from 'fs';
 import path from 'path';
 
-// Mock fs module
+// Mock fs helpers used by this module while preserving Node fs APIs used by dependencies.
 jest.mock('fs', () => ({
+  ...jest.requireActual('fs'),
   promises: {
+    ...jest.requireActual('fs').promises,
     mkdir: jest.fn().mockResolvedValue(undefined),
     writeFile: jest.fn().mockResolvedValue(undefined),
     stat: jest.fn().mockResolvedValue({ size: 12345 }),
@@ -18,8 +20,9 @@ jest.mock('fs', () => ({
   rmSync: jest.fn(),
 }));
 
-// Mock path module
+// Mock path helpers used by this module while preserving Node path APIs used by dependencies.
 jest.mock('path', () => ({
+  ...jest.requireActual('path'),
   join: jest.fn((...args) => args.join('/')),
   resolve: jest.fn(path => `/absolute${path}`),
 }));

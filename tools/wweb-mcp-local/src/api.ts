@@ -151,7 +151,7 @@ export function routerFactory(client: Client): Router {
    *       500:
    *         description: Server error
    */
-  router.get('/messages/:number', async (req: Request, res: Response) => {
+  router.get('/messages/:number', async (req: Request<{ number: string }>, res: Response) => {
     try {
       const number = req.params.number;
       const limit = parseInt(req.query.limit as string) || 10;
@@ -382,7 +382,7 @@ export function routerFactory(client: Client): Router {
    *       500:
    *         description: Server error
    */
-  router.get('/groups/:groupId', async (req: Request, res: Response) => {
+  router.get('/groups/:groupId', async (req: Request<{ groupId: string }>, res: Response) => {
     try {
       const groupId = req.params.groupId;
       const group = await whatsappService.getGroupById(groupId);
@@ -433,33 +433,39 @@ export function routerFactory(client: Client): Router {
    *       500:
    *         description: Server error
    */
-  router.get('/groups/:groupId/messages', async (req: Request, res: Response) => {
-    try {
-      const groupId = req.params.groupId;
-      const limit = parseInt(req.query.limit as string) || 10;
+  router.get(
+    '/groups/:groupId/messages',
+    async (req: Request<{ groupId: string }>, res: Response) => {
+      try {
+        const groupId = req.params.groupId;
+        const limit = parseInt(req.query.limit as string) || 10;
 
-      const messages = await whatsappService.getGroupMessages(groupId, limit);
-      res.json(messages);
-    } catch (error) {
-      if (error instanceof Error) {
-        if (error.message.includes('not ready')) {
-          res.status(503).json({ error: error.message });
-        } else if (error.message.includes('not found') || error.message.includes('invalid chat')) {
-          res.status(404).json({ error: error.message });
+        const messages = await whatsappService.getGroupMessages(groupId, limit);
+        res.json(messages);
+      } catch (error) {
+        if (error instanceof Error) {
+          if (error.message.includes('not ready')) {
+            res.status(503).json({ error: error.message });
+          } else if (
+            error.message.includes('not found') ||
+            error.message.includes('invalid chat')
+          ) {
+            res.status(404).json({ error: error.message });
+          } else {
+            res.status(500).json({
+              error: 'Failed to fetch group messages',
+              details: error.message,
+            });
+          }
         } else {
           res.status(500).json({
             error: 'Failed to fetch group messages',
-            details: error.message,
+            details: String(error),
           });
         }
-      } else {
-        res.status(500).json({
-          error: 'Failed to fetch group messages',
-          details: String(error),
-        });
       }
-    }
-  });
+    },
+  );
 
   /**
    * @swagger
@@ -497,43 +503,46 @@ export function routerFactory(client: Client): Router {
    *       500:
    *         description: Server error
    */
-  router.post('/groups/:groupId/participants/add', async (req: Request, res: Response) => {
-    try {
-      const groupId = req.params.groupId;
-      const { participants } = req.body;
+  router.post(
+    '/groups/:groupId/participants/add',
+    async (req: Request<{ groupId: string }>, res: Response) => {
+      try {
+        const groupId = req.params.groupId;
+        const { participants } = req.body;
 
-      if (!participants || !Array.isArray(participants)) {
-        res.status(400).json({ error: 'Array of participants is required' });
-        return;
-      }
+        if (!participants || !Array.isArray(participants)) {
+          res.status(400).json({ error: 'Array of participants is required' });
+          return;
+        }
 
-      const result = await whatsappService.addParticipantsToGroup(groupId, participants);
-      res.json(result);
-    } catch (error) {
-      if (error instanceof Error) {
-        if (error.message.includes('not ready')) {
-          res.status(503).json({ error: error.message });
-        } else if (
-          error.message.includes('not found') ||
-          error.message.includes('not a group chat')
-        ) {
-          res.status(404).json({ error: error.message });
-        } else if (error.message.includes('not supported')) {
-          res.status(501).json({ error: error.message });
+        const result = await whatsappService.addParticipantsToGroup(groupId, participants);
+        res.json(result);
+      } catch (error) {
+        if (error instanceof Error) {
+          if (error.message.includes('not ready')) {
+            res.status(503).json({ error: error.message });
+          } else if (
+            error.message.includes('not found') ||
+            error.message.includes('not a group chat')
+          ) {
+            res.status(404).json({ error: error.message });
+          } else if (error.message.includes('not supported')) {
+            res.status(501).json({ error: error.message });
+          } else {
+            res.status(500).json({
+              error: 'Failed to add participants to group',
+              details: error.message,
+            });
+          }
         } else {
           res.status(500).json({
             error: 'Failed to add participants to group',
-            details: error.message,
+            details: String(error),
           });
         }
-      } else {
-        res.status(500).json({
-          error: 'Failed to add participants to group',
-          details: String(error),
-        });
       }
-    }
-  });
+    },
+  );
 
   /**
    * @swagger
@@ -567,7 +576,7 @@ export function routerFactory(client: Client): Router {
    *       500:
    *         description: Server error
    */
-  router.post('/groups/:groupId/send', async (req: Request, res: Response) => {
+  router.post('/groups/:groupId/send', async (req: Request<{ groupId: string }>, res: Response) => {
     try {
       const groupId = req.params.groupId;
       const { message } = req.body;
@@ -620,42 +629,48 @@ export function routerFactory(client: Client): Router {
    *       500:
    *         description: Server error
    */
-  router.post('/messages/:messageId/media/download', async (req: Request, res: Response) => {
-    try {
-      const { messageId } = req.params;
+  router.post(
+    '/messages/:messageId/media/download',
+    async (req: Request<{ messageId: string }>, res: Response) => {
+      try {
+        const { messageId } = req.params;
 
-      if (!messageId) {
-        res.status(400).json({ error: 'Message ID is required' });
-        return;
-      }
+        if (!messageId) {
+          res.status(400).json({ error: 'Message ID is required' });
+          return;
+        }
 
-      const mediaInfo = await whatsappService.downloadMediaFromMessage(messageId, mediaStoragePath);
-      res.json(mediaInfo);
-    } catch (error) {
-      if (error instanceof Error) {
-        if (error.message.includes('not ready')) {
-          res.status(503).json({ error: error.message });
-        } else if (
-          error.message.includes('not found') ||
-          error.message.includes('does not contain media')
-        ) {
-          res.status(404).json({ error: error.message });
+        const mediaInfo = await whatsappService.downloadMediaFromMessage(
+          messageId,
+          mediaStoragePath,
+        );
+        res.json(mediaInfo);
+      } catch (error) {
+        if (error instanceof Error) {
+          if (error.message.includes('not ready')) {
+            res.status(503).json({ error: error.message });
+          } else if (
+            error.message.includes('not found') ||
+            error.message.includes('does not contain media')
+          ) {
+            res.status(404).json({ error: error.message });
+          } else {
+            logger.error('Failed to download media', { error });
+            res.status(500).json({
+              error: 'Failed to download media',
+              details: error.message,
+            });
+          }
         } else {
           logger.error('Failed to download media', { error });
           res.status(500).json({
             error: 'Failed to download media',
-            details: error.message,
+            details: String(error),
           });
         }
-      } else {
-        logger.error('Failed to download media', { error });
-        res.status(500).json({
-          error: 'Failed to download media',
-          details: String(error),
-        });
       }
-    }
-  });
+    },
+  );
 
   return router;
 }

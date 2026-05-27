@@ -94,7 +94,8 @@ export function createWhatsAppClient(config: WhatsAppConfig = {}): Client {
 
   // Generate QR code when needed
   client.on('qr', (qr: string) => {
-    const qrOutputPath = process.env.WWEB_QR_OUTPUT_PATH || path.join(authDataPath, 'latest_qr.txt');
+    const qrOutputPath =
+      process.env.WWEB_QR_OUTPUT_PATH || path.join(authDataPath, 'latest_qr.txt');
     try {
       fs.writeFileSync(qrOutputPath, qr, 'utf8');
       logger.info(`Wrote raw QR payload to ${qrOutputPath}`);

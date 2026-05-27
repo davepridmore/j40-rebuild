@@ -454,7 +454,8 @@ function routerFactory(client) {
                 if (error.message.includes('not ready')) {
                     res.status(503).json({ error: error.message });
                 }
-                else if (error.message.includes('not found') || error.message.includes('invalid chat')) {
+                else if (error.message.includes('not found') ||
+                    error.message.includes('invalid chat')) {
                     res.status(404).json({ error: error.message });
                 }
                 else {
