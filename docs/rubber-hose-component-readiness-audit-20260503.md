@@ -14,14 +14,19 @@ The body/front-support rubber recreation parts now have a separate Longman order
 
 - Main body isolator pads: `10` small square quote pads `70 x 70 x 22 mm`, plus `2` large square quote pads `80 x 80 x 24 mm`; final hole is measured sleeve OD + `0.5-1.0 mm`.
 - Front two-hole oval isolators: `2` pieces, `96 mm x 64 mm x 15 mm`, two `12 mm` holes at `64 mm` centers, with relief only if the physical sample confirms it is functional.
-- Front support strip rubbers: left/right held until the physical carrier proves these are real liner pieces and not bump-stop fragments or loose packing pieces.
+- Front support strip rubbers: left/right are now released as plain first-article underfloor support strips, `165 x 38 x 8 mm`, with final end trim controlled by dry-fit.
 
 ## Gaps Closed
 
-The image review found two items that were visible but not explicit enough in the order controls:
+The image/external-reference review found items that were visible or implied but not explicit enough in the order controls:
 
 - Formed coolant pipe rubber connector/coupler hoses: now tracked as `RP-COOL-006`, `RPO-COOL-006A`, `RPO-COOL-006B`, and `RUB-028`.
 - Engine air-cleaner intake duct/couplers: now tracked as `RUB-027` so it is inspected separately from coolant, fuel, vacuum, and HVAC hose.
+- Hardtop/roof/tub weatherstrips: now tracked as `RUB-029`, including hardtop-to-tub weatherstrip, upper side panel packing, roof weatherstrip, front roof weatherstrip, and roof drip spacers/clips.
+- Bonnet/front bib/apron rubbers: now tracked as `RUB-030`.
+- Rear ambulance/barn door weatherstrips, rear door glass seals, and back door spacers: now tracked as `RUB-031`.
+- Detailed door/window channels, belts/felts, quarter/side/sliding-window rubbers, and packings/spacers: now tracked as `RUB-032`.
+- Exhaust hanger/cushion rubber: `RUB-022` now records Toyota/EPC reference leads but remains a final-fit measurement hold.
 
 ## Longman Acquisition Gate
 
@@ -48,10 +53,18 @@ All visible/current rubber families are now mapped:
 - Brake/clutch hydraulics: `RP-BRAKE-001`, `RP-CLUTCH-001`, `RUB-009`, `RUB-010`.
 - Engine intake: `RUB-027`.
 - Body/front support rubber recreation: `CR-MAIN-001` through `CR-FRONT-003`, `RUB-001`, `RUB-002`.
-- Grommets/weatherstrip/body sealing: `RUB-003`, `RUB-004`, `RUB-017` through `RUB-021`.
+- Grommets/weatherstrip/body sealing: `RUB-003`, `RUB-004`, `RUB-017` through `RUB-021`, and `RUB-029` through `RUB-032`.
 - HVAC/A/C rubber: `RUB-024`, `RUB-025` are now required for the hidden HVAC refit, with final hose/duct dimensions held until evaporator, condenser, receiver-drier, bulkhead, dash, and vent positions are locked.
-- Suspension/exhaust/interior rubber: `RUB-007`, `RUB-022`, `RUB-023`, `RUB-026`.
+- Suspension/exhaust/interior rubber: `RUB-007`, `RUB-022`, `RUB-023`, `RUB-026`. Exhaust rubber is real but not purchase-ready until final support-point geometry is measured.
 
 ## Next Measurement Pass
 
-Use [replacement_pipe_photo_intake.csv](../data/manual/replacement_pipe_photo_intake.csv) for hose/pipe close-ups and [rubber_hose_component_audit.csv](../data/manual/rubber_hose_component_audit.csv) for the cross-category checklist. The key new shots are `RPI-COOL-006-A`, `RPI-COOL-006-B`, and `RPI-COOL-006-C` for the formed-pipe connector hoses.
+Use [replacement_pipe_photo_intake.csv](../data/manual/replacement_pipe_photo_intake.csv) for hose/pipe close-ups and [rubber_hose_component_audit.csv](../data/manual/rubber_hose_component_audit.csv) for the cross-category checklist. The key hose shots are `RPI-COOL-006-A`, `RPI-COOL-006-B`, and `RPI-COOL-006-C` for the formed-pipe connector hoses.
+
+For the newly explicit body weatherstrip rows, capture:
+
+- Hardtop-to-tub and roof package: hardtop fitted on tub, tub rail profile, upper side panel packing path, roof drip moulding, front roof/windscreen contact, clip holes, and any length trimming.
+- Bonnet/front bib/apron rubbers: bonnet closed gaps, front bib contact points, upper apron provisions, hole/post size, and compression marks.
+- Rear ambulance/barn doors: rear closure type, 3-side vs full-surround seal path, glass seal channel, spacer locations, latch/hinge alignment, and year/body variant.
+- Door/window detail: glass thickness, channel width/depth, vent or full-glass style, sliding/fixed side-window configuration, belt/felt clip pattern, and all packings/spacers before ordering.
+- Exhaust hangers: front pipe, muffler, and tail-pipe support points with pin OD, spacing, rubber thickness, bracket offset, and heat clearance.

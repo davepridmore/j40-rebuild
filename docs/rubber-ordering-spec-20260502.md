@@ -46,7 +46,7 @@ Any rubber, hose, boot, grommet, pad, hanger, isolator, bump stop, cable seal, o
 | `RUB-010` | Clutch flex hose | Buy if aged, cracked, leaking, or unknown | Match hydraulic end fittings and length |
 | `RUB-012` | Tank strap pads, sender seal, tank rubbers | Buy if tank is dropped or rubbers fail | Measure sender flange, strap width, and filler/vent sizes |
 | `RUB-013` to `RUB-016` | Heater/coolant/reservoir/vacuum hoses | Buy by condition, routing, and diameter | Confirm engine, radiator, heater, and vacuum routing |
-| `RUB-022` | Exhaust hanger rubbers | Buy by dimension if failed | Measure pin diameter and hole spacing |
+| `RUB-022` | Exhaust hanger rubbers and exhaust cushion cross-check | Buy by dimension if failed or missing | Final exhaust alignment controls quantity, pin diameter, hole/slot spacing, bracket offset, and heat clearance |
 | `RUB-026` | Bump stops | Inspect during Ironman work | Confirm loaded ride height and axle travel |
 | `RUB-027` | Engine air-cleaner intake duct/couplers | Inspect and sample-match only if failed | Measure air-cleaner outlet OD, intake inlet OD, free length, offset, accordion travel, branch OD, and clamp OD |
 | `RUB-024` | A/C barrier hoses, drain hoses, O-rings | Required for hidden HVAC refit | Final hose lengths/crimps wait for compressor, condenser, receiver-drier, bulkhead, and evaporator layout |
@@ -62,6 +62,20 @@ Any rubber, hose, boot, grommet, pad, hanger, isolator, bump stop, cable seal, o
 | `RUB-020` | Vent/flap/cowl seals | Variant risk is high before body hardware mock-up |
 | `RUB-021` | Window rubbers/channels/sliding-window seals | Requires window hardware and glass audit |
 | `RUB-023` | Pedal rubbers | Low urgency; confirm pedal plate profile later |
+| `RUB-029` | Hardtop-to-tub roof and upper side panel weatherstrip package | Hardtop, tub rail, roof, and windshield-frame fit control the correct profiles |
+| `RUB-030` | Bonnet/front bib/apron and hood cushion rubbers | Bonnet and front clip gaps must be set before selecting rubbers or drilling any late-style provisions |
+| `RUB-031` | Rear ambulance/barn door weatherstrips, glass seals, and spacers | Rear closure type, year split, glass, and door alignment control fit |
+| `RUB-032` | Detailed door/window channel, belt, quarter, side, and sliding-window rubber checklist | Requires complete window hardware inventory, glass thicknesses, and final painted apertures |
+
+## Body Weatherstrip Additions - 2026-05-27
+
+The external weatherstrip comparison found several families that were only implied by the older broad rows. They are now explicit rows in `rubber_ordering_specs.csv`.
+
+- `RUB-029`: hardtop-to-tub weatherstrip, upper side panel packing, roof weatherstrip/roof drip moulding packing, front roof weatherstrip, roof drip moulding spacers, and spacer clips. Reference leads include hardtop-to-tub `61688-90308` / `61687-90308`, upper side panel packing `61534-60011`, front roof weatherstrip `63161-60011`, roof packing `63168-90307`, and roof drip spacer pair `63167-90302` / `63168-90302`.
+- `RUB-030`: bonnet/front bib/apron rubbers. Reference lead: a 40 Series bonnet bush kit with `4` front bib-to-bonnet seals and `2` upper apron-to-bonnet seals. Treat upper-apron seals carefully on pre-1974 panels because the factory provisions may not exist.
+- `RUB-031`: rear ambulance/barn door rubbers. Reference leads include rear ambulance door weatherstrips, rear door glass seals, and back door spacers `68296-90300` LH / `68295-90300` RH, with earlier `68294-90301` substitution noted by City Racer.
+- `RUB-032`: the detailed door/window checklist behind `RUB-018` and `RUB-021`: bailey/glass run channels, lower runs, inner/outer felts or belts, vent/quarter/kick-out seals, side and corner glass seals, sliding-window inner/run/center/outer pieces, door top bow packings, front door packings, and front pillar spacers.
+- `RUB-022`: exhaust rubber is legitimate but final-fit. Toyota EPC-style exhaust pipe references show exhaust/muffler cushion and hanger hardware, and `90917-08004` is a real Toyota exhaust/tail-pipe cushion lead. It is still not quote-ready for Longman or universal purchase until the installed support points are measured.
 
 ## Non-Negotiable Material Rules
 
@@ -100,3 +114,8 @@ For body mounts specifically, take the fabrication sheet and closure table:
 - Toyota GR Heritage Parts programme for Land Cruiser 40: confirms official heritage support, but no open body-mount rubber dimensions were found.
 - Toyota EPC-style cab/body mounting listings: useful for station labels, part numbers, bolt families, and shim/spacer references, but not rubber OD/ID/free-height.
 - Energy Suspension `8.4104`/`8.18105` data: useful aftermarket thickness sanity check only; it is not a Toyota rubber specification and must not override physical sample measurement.
+- City Racer FJ40 weatherstripping guide and product listings: useful for body-weatherstrip family coverage, year splits, and OEM-equivalent references including hardtop-to-tub, upper side panel packing, roof/front roof weatherstrip, roof drip spacers, door/window channels, rear ambulance seals, and sliding-window sub-pieces.
+- Mr Landcruiser SWB 75-80 seal kit: useful checklist for short-wheelbase body/glass kit contents such as bailey channels, sliding dual bailey channels, door belts, door seals, barn door seals, quarter-window seals, front screen seal, rear barn door glass seals, and side glass seals.
+- Mr Landcruiser/Terrain Tamer bonnet bush kit: confirms the bonnet/front bib/apron rubber family and late-style provision caution.
+- JTOutfitters 75-84 front and ambulance door weatherstrip kit: useful rear ambulance door weatherstrip part-number lead and confirms closed-cell foam adhesive weatherstrip construction for that kit.
+- Toyota EPC-style exhaust pipe group and Toyota `90917-08004` listings: confirm exhaust cushion/hanger rubber is a real family, but final dimensions remain vehicle-controlled.
