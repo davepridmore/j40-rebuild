@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-27T17:46:22",
+  "generated_at": "2026-05-27T23:17:12",
   "source_messages_csv": "data/processed/generated/mcp_whatsapp_j40_messages.csv",
   "source_media_csv": "data/processed/generated/mcp_whatsapp_j40_media_index.csv",
   "baseline_messages_csv": "data/processed/generated/mcp_whatsapp_j40_messages.before_rerun_20260427.csv",
   "messages": {
-    "project_rows_total": 405,
-    "project_rows_new_since_rerun": 115,
+    "project_rows_total": 406,
+    "project_rows_new_since_rerun": 116,
     "categories": {
       "product_purchase": 15,
       "payment_detail": 35,
@@ -13,7 +13,7 @@
       "additional_task": 66,
       "parts_specification": 39,
       "project_update": 147,
-      "supplier_communication": 41
+      "supplier_communication": 42
     }
   },
   "examples_media": {

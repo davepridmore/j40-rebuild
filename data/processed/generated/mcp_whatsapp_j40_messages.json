@@ -6432,22 +6432,6 @@
     "is_relevant": "true"
   },
   {
-    "message_id": "mcp_whatsapp_number_2_false_120363408465558195_g_us_ac6719d84dee145c1e3f1a5ed177abdd_232877656666113_lid",
-    "raw_message_id": "false_120363408465558195@g.us_AC6719D84DEE145C1E3F1A5ED177ABDD_232877656666113@lid",
-    "source_name": "Fj40",
-    "source_profile": "whatsapp-number-2",
-    "chat_id": "120363408465558195@g.us",
-    "chat_name": "Fj40",
-    "timestamp": "2026-03-12T21:50:51.000Z",
-    "author": "232877656666113",
-    "from_me": "false",
-    "type": "chat",
-    "body": "Maybe a leakage or something.",
-    "clean_text": "Maybe a leakage or something.",
-    "keyword_hits": "",
-    "is_relevant": "true"
-  },
-  {
     "message_id": "mcp_whatsapp_number_2_true_120363408465558195_g_us_ac8c5fec8cf864049e6b2184b6a6d1b9_226083001659473_lid",
     "raw_message_id": "true_120363408465558195@g.us_AC8C5FEC8CF864049E6B2184B6A6D1B9_226083001659473@lid",
     "source_name": "Fj40",
@@ -24432,6 +24416,22 @@
     "is_relevant": "true"
   },
   {
+    "message_id": "mcp_whatsapp_number_2_false_120363408465558195_g_us_3b2866f7ee67e988abfe_190950068514824_lid",
+    "raw_message_id": "false_120363408465558195@g.us_3B2866F7EE67E988ABFE_190950068514824@lid",
+    "source_name": "Fj40",
+    "source_profile": "whatsapp-number-2",
+    "chat_id": "120363408465558195@g.us",
+    "chat_name": "Fj40",
+    "timestamp": "2026-04-24T23:06:22.000Z",
+    "author": "190950068514824",
+    "from_me": "false",
+    "type": "chat",
+    "body": "they are.  quoted me 600,000 for the Ironman full foam cell kit, but 4-6 weeks lead time, nitrogen gas set for 500,000 available now.  This is already downgrading tom the OME I wanted.  So thinking to wait and go foam cell - any opinions?  is the price right?  3 year warrantee",
+    "clean_text": "they are. quoted me 600,000 for the Ironman full foam cell kit, but 4-6 weeks lead time, nitrogen gas set for 500,000 available now. This is already downgrading tom the OME I wanted. So thinking to wait and go foam cell - any opinions? is the price right? 3 year warrantee",
+    "keyword_hits": "foam|ome",
+    "is_relevant": "true"
+  },
+  {
     "message_id": "mcp_whatsapp_number_2_true_971527520120_1517397900_g_us_ac0d3f62fd19393c5ad48cc69f4d8631_923099351940_c_us",
     "raw_message_id": "true_971527520120-1517397900@g.us_AC0D3F62FD19393C5AD48CC69F4D8631_923099351940@c.us",
     "source_name": "TLC 40 Series Owners",
@@ -28124,6 +28124,38 @@
     "type": "image",
     "body": "",
     "clean_text": "",
+    "keyword_hits": "",
+    "is_relevant": "true"
+  },
+  {
+    "message_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_acb3722f0b7d4c0c2932d22409a029aa_37911810572503_lid",
+    "raw_message_id": "false_971527520120-1517397900@g.us_ACB3722F0B7D4C0C2932D22409A029AA_37911810572503@lid",
+    "source_name": "TLC 40 Series Owners",
+    "source_profile": "whatsapp-number-2",
+    "chat_id": "971527520120-1517397900@g.us",
+    "chat_name": "TLC 40 Series Owners",
+    "timestamp": "2026-05-27T15:55:46.000Z",
+    "author": "37911810572503",
+    "from_me": "false",
+    "type": "image",
+    "body": "",
+    "clean_text": "",
+    "keyword_hits": "",
+    "is_relevant": "true"
+  },
+  {
+    "message_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3a01d6524e6a041e6952_160082188873865_lid",
+    "raw_message_id": "false_971527520120-1517397900@g.us_3A01D6524E6A041E6952_160082188873865@lid",
+    "source_name": "TLC 40 Series Owners",
+    "source_profile": "whatsapp-number-2",
+    "chat_id": "971527520120-1517397900@g.us",
+    "chat_name": "TLC 40 Series Owners",
+    "timestamp": "2026-05-27T17:52:06.000Z",
+    "author": "160082188873865",
+    "from_me": "false",
+    "type": "chat",
+    "body": "https://youtu.be/I4ZKtnCJCak?si=fwWcU-3WhRrmOfCm",
+    "clean_text": "https://youtu.be/I4ZKtnCJCak?si=fwWcU-3WhRrmOfCm",
     "keyword_hits": "",
     "is_relevant": "true"
   }

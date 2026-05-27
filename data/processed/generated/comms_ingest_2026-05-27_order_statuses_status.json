@@ -1,0 +1,336 @@
+{
+  "run_date_utc": "2026-05-27",
+  "date_tag": "2026-05-27_order_statuses",
+  "email": {
+    "new_messages_query_after": "2026/05/24",
+    "queries_run": [
+      "after:2026/05/24 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (j40 OR fj40 OR j50 OR fj50 OR landcruiser OR \"land cruiser\" OR toyota)",
+      "after:2026/05/24 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (daraz OR autohub OR aliexpress OR toolsmart OR \"tools mart\" OR \"mtl parts\" OR millat OR powerhouse OR postex OR leopard OR blueex OR \"blue-ex\" OR coolsun OR longman OR happilac)",
+      "after:2026/05/24 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (chassis OR brake OR suspension OR primer OR epoxy OR paint OR welding OR hose OR rubber OR fastener OR grommet OR radiator OR evaporator OR blower OR relay OR fuse)",
+      "after:2026/05/24 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (shipped OR dispatch OR tracking OR delivered OR invoice OR receipt OR payment)",
+      "after:2026/05/24 \"38902\"",
+      "after:2026/05/24 \"38903\"",
+      "after:2026/05/24 \"TM25240\"",
+      "after:2026/05/24 \"amir_local_run_20260527\"",
+      "after:2026/05/24 \"1075298\"",
+      "after:2026/05/24 \"1075421\"",
+      "after:2026/05/24 \"TM25776\"",
+      "after:2026/05/24 \"TM25550\"",
+      "after:2026/05/24 \"TM25805\"",
+      "after:2026/05/24 \"242670698380938\"",
+      "after:2026/05/24 \"3073111533377489\"",
+      "after:2026/05/24 \"242365766280938\"",
+      "after:2026/05/24 \"243775543180938\"",
+      "after:2026/05/24 \"242670698180938\"",
+      "after:2026/05/24 \"62074\"",
+      "after:2026/05/24 \"62192\"",
+      "after:2026/05/24 \"241938794080938\"",
+      "after:2026/05/24 \"242366749280938\"",
+      "after:2026/05/24 \"1761310\"",
+      "after:2026/05/24 \"quote_with_4.75mm_line_stock\"",
+      "after:2026/05/24 \"quote_after_old_sample_thread_seat_check\"",
+      "after:2026/05/24 \"242508745080938\"",
+      "after:2026/05/24 \"242508745280938\"",
+      "after:2026/05/24 \"62228\"",
+      "after:2026/05/24 \"553-103_reference_only\"",
+      "after:2026/05/24 \"243701549680938\"",
+      "after:2026/05/24 \"242508744880938\"",
+      "after:2026/05/24 \"1762336\"",
+      "after:2026/05/24 \"80788\"",
+      "after:2026/05/24 \"3070231697837489\"",
+      "after:2026/05/24 \"3070231697777489\"",
+      "after:2026/05/24 \"3070027285627489\"",
+      "after:2026/05/24 \"1599\"",
+      "after:2026/05/24 \"3070231697877489\"",
+      "after:2026/05/24 \"242365766580938\"",
+      "after:2026/05/24 \"62191\"",
+      "after:2026/05/24 \"242365766980938\"",
+      "after:2026/05/24 \"243331393680938\"",
+      "after:2026/05/24 \"243331393480938\"",
+      "after:2026/05/24 \"242365766080938\"",
+      "after:2026/05/24 \"TM25493\"",
+      "after:2026/05/24 \"26242\"",
+      "after:2026/05/24 \"TM25430\""
+    ],
+    "query_stats": {
+      "after:2026/05/24 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (j40 OR fj40 OR j50 OR fj50 OR landcruiser OR \"land cruiser\" OR toyota)": {
+        "returned": 8,
+        "result_size_estimate": 8,
+        "has_next_page": false
+      },
+      "after:2026/05/24 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (daraz OR autohub OR aliexpress OR toolsmart OR \"tools mart\" OR \"mtl parts\" OR millat OR powerhouse OR postex OR leopard OR blueex OR \"blue-ex\" OR coolsun OR longman OR happilac)": {
+        "returned": 25,
+        "result_size_estimate": 25,
+        "has_next_page": false
+      },
+      "after:2026/05/24 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (chassis OR brake OR suspension OR primer OR epoxy OR paint OR welding OR hose OR rubber OR fastener OR grommet OR radiator OR evaporator OR blower OR relay OR fuse)": {
+        "returned": 10,
+        "result_size_estimate": 10,
+        "has_next_page": false
+      },
+      "after:2026/05/24 -from:foodpanda -subject:foodpanda -from:linkedin -from:facebook (shipped OR dispatch OR tracking OR delivered OR invoice OR receipt OR payment)": {
+        "returned": 24,
+        "result_size_estimate": 24,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"38902\"": {
+        "returned": 1,
+        "result_size_estimate": 1,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"38903\"": {
+        "returned": 2,
+        "result_size_estimate": 2,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"TM25240\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"amir_local_run_20260527\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"1075298\"": {
+        "returned": 2,
+        "result_size_estimate": 2,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"1075421\"": {
+        "returned": 2,
+        "result_size_estimate": 2,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"TM25776\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"TM25550\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"TM25805\"": {
+        "returned": 1,
+        "result_size_estimate": 1,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"242670698380938\"": {
+        "returned": 1,
+        "result_size_estimate": 1,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"3073111533377489\"": {
+        "returned": 1,
+        "result_size_estimate": 1,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"242365766280938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"243775543180938\"": {
+        "returned": 1,
+        "result_size_estimate": 1,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"242670698180938\"": {
+        "returned": 1,
+        "result_size_estimate": 1,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"62074\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"62192\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"241938794080938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"242366749280938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"1761310\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"quote_with_4.75mm_line_stock\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"quote_after_old_sample_thread_seat_check\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"242508745080938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"242508745280938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"62228\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"553-103_reference_only\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"243701549680938\"": {
+        "returned": 2,
+        "result_size_estimate": 2,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"242508744880938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"1762336\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"80788\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"3070231697837489\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"3070231697777489\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"3070027285627489\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"1599\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"3070231697877489\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"242365766580938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"62191\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"242365766980938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"243331393680938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"243331393480938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"242365766080938\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"TM25493\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"26242\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      },
+      "after:2026/05/24 \"TM25430\"": {
+        "returned": 0,
+        "result_size_estimate": 0,
+        "has_next_page": false
+      }
+    },
+    "unique_messages_read": 44,
+    "categorized_records_written": 24,
+    "excluded_non_project_records": 20,
+    "category_counts": {
+      "supplier_communication": 13,
+      "product": 6,
+      "project_update": 5
+    },
+    "top_sources": {
+      "Daraz": 12,
+      "Aliexpress": 3,
+      "PakWheels": 2,
+      "Mtl Parts": 2,
+      "Alibaba": 1,
+      "Brighto Paints | Pakistan's 1st Multinational Paint Company": 1,
+      "Toolsmart": 1,
+      "Toolsmart.Pk": 1,
+      "Alibaba Remind": 1
+    },
+    "output_csv": "data/processed/generated/comms_ingest_2026-05-27_order_statuses_categorized.csv",
+    "output_json": "data/processed/generated/gmail_project_messages_2026-05-27_order_statuses.json",
+    "high_signal_procurement_refs": [
+      "Thank You for Choosing Daraz 🛍️ How Was Your Experience? 😊",
+      "Wait for it... 5% off tech gadgets!",
+      "Thank You for Choosing Daraz 🛍️ How Was Your Experience? 😊",
+      "PakWheels AUTOSTORE Order # 1075298 is Confirmed!",
+      "Yay, your Order 243701549680938 is confirmed!",
+      "Standard Chartered: Transaction Alert",
+      "Fwd: Your MTL PARTS order has been received!",
+      "PakWheels AUTOSTORE Order # 1075421 is Confirmed!",
+      "bmw f30 headlights: we notice that you viewed this last week",
+      "Thank You for Choosing Daraz 🛍️ How Was Your Experience? 😊",
+      "Delivery of your Order 243701549680938",
+      "Your MTL PARTS order has been received!",
+      "Standard Chartered: Transaction Alert",
+      "Yay, your Order 242670698380938 is confirmed!",
+      "Yay, your Order 242670698180938 is confirmed!",
+      "Thank You for Choosing Daraz 🛍️ How Was Your Experience? 😊",
+      "Complete your Purchase",
+      "Standard Chartered: Transaction Alert",
+      "Standard Chartered: Transaction Alert",
+      "Yay, your Order 243775543180938 is confirmed!"
+    ]
+  }
+}

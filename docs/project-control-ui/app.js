@@ -1622,6 +1622,17 @@
   const CHASSIS_RUBBER_REFERENCE_IMAGES = [
     ["../../photos/20260405_234652.jpg", "Original tub-side body-mount landing context"],
     ["../../photos/20260405_234546.jpg", "Original underbody mount context"],
+    ["../../photos/20260422_004306_gp_vGlNr2UA.jpg", "Body-off chassis rail body-mount and hard-line context"],
+    ["../../photos/20260422_004323_gp_JD88KuWQ.jpg", "Body-off chassis body-mount pedestal close-up"],
+    ["../../photos/20260422_004332_gp_7d5uYWQQ.jpg", "Body-off central frame rail and mount context"],
+    ["../../photos/20260517_194143_gp_CO7MuMdA.jpg", "May 17 installed flat rubber/body-mount location proof"],
+    ["../../photos/20260517_194633_gp_rAjY3gjg.jpg", "May 17 opposite-side flat rubber/body-mount location proof"],
+    ["../../photos/20260517_194706_gp_twKRWGFA.jpg", "May 17 tape measurement at flat rubber/body-mount location"],
+    ["../../photos/20260517_193503_gp_N9nHjqXw.jpg", "Loose long rubber strip full-length measurement reference"],
+    ["../../photos/20260517_193539_gp_E0cR9I0A.jpg", "Loose long rubber strip end and width reference"],
+    ["../../photos/20260517_193559_gp_NEpk1hpg.jpg", "Loose long rubber strip width close-up"],
+    ["../../photos/20260517_193612_gp_JmbfR0Tw.jpg", "Loose long rubber strip curved-end measurement reference"],
+    ["../../photos/20260517_193616_gp_1ye19BZA.jpg", "Loose long rubber strip curved-end close-up"],
     ["../../photos/20260502_004345_gp_yK8VYzMQ.jpg", "Front-support two-hole oval pad"],
     ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg", "Left underfloor strip first-article control"],
     ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg", "Right underfloor strip first-article control"],
@@ -1847,7 +1858,7 @@
           <h3>Extra Context Images</h3>
           <div class="chip-row">${chip(`${CHASSIS_RUBBER_REFERENCE_IMAGES.length} Images`)}</div>
         </div>
-        <div class="requirement-evidence-grid">
+        <div class="requirement-evidence-grid chassis-rubber-context-grid">
           ${CHASSIS_RUBBER_REFERENCE_IMAGES
             .map(([path, caption]) => {
               const image = {
@@ -1857,9 +1868,12 @@
                 media_type: "photo",
               };
               const prepared = prepareImage(image, caption, { sequenceId });
+              const mediaClass = path.endsWith(".svg")
+                ? "table-image table-image-contain chassis-rubber-context-image"
+                : "table-image chassis-rubber-context-image";
               return `
                 <div class="requirement-evidence-item">
-                  ${renderPreparedMedia(prepared, "table-image-btn", "table-image")}
+                  ${renderPreparedMedia(prepared, "table-image-btn chassis-rubber-context-btn", mediaClass)}
                   <span class="table-image-note">${escapeHtml(caption)}</span>
                 </div>
               `;

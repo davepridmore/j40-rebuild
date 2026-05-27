@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-27T23:12:06+05:00",
+  "generated_at": "2026-05-27T23:18:08+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -58,11 +58,11 @@ window.J40_DASHBOARD_DATA = {
     "supply_rows_tracked": 283,
     "selling_site_images_loaded": 88,
     "whatsapp_j40_selected_chats": 11,
-    "whatsapp_j40_media_items": 282,
-    "whatsapp_j40_media_images": 228,
+    "whatsapp_j40_media_items": 283,
+    "whatsapp_j40_media_images": 229,
     "whatsapp_j40_media_videos": 31,
-    "other_build_reference_media": 204,
-    "other_build_reference_images": 183,
+    "other_build_reference_media": 205,
+    "other_build_reference_images": 184,
     "other_build_reference_videos": 21,
     "other_build_drop_zone_images": 0,
     "other_build_manual_reference_images": 61,
@@ -112376,8 +112376,8 @@ window.J40_DASHBOARD_DATA = {
     "drop_zone": "data/reference/other_j40_builds",
     "summary": {
       "section_count": 9,
-      "total_media": 204,
-      "total_images": 183,
+      "total_media": 205,
+      "total_images": 184,
       "total_videos": 21,
       "drop_zone_media": 0,
       "drop_zone_images": 0,
@@ -115734,6 +115734,22 @@ window.J40_DASHBOARD_DATA = {
             "source_label": "TLC 40 Series Owners WhatsApp",
             "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3A78FB0A72F5AA83E204_121577739915469_lid.jpeg",
             "notes": "Author: 121577739915469. Imported timestamp: 2026-05-27 10:52:29.000Z"
+          },
+          {
+            "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACB3722F0B7D4C0C2932D22409A029AA_37911810572503_lid.jpeg",
+            "caption": "TLC 40 Series Owners WhatsApp Photo \u00b7 2026-05-27 15:55:46.000Z",
+            "captured_date": "2026-05-27",
+            "captured_time": "15:55:46.000",
+            "media_type": "photo",
+            "component_group": "documentation_reference",
+            "specific_component": "tlc_40_series_owners_reference",
+            "stage": "reference_material",
+            "media_id": "false_971527520120_1517397900_g_us_ACB3722F0B7D4C0C2932D22409A029AA_37911810572503_lid",
+            "matched_tokens": [],
+            "match_basis": "other_build_reference",
+            "source_label": "TLC 40 Series Owners WhatsApp",
+            "source_path": "data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACB3722F0B7D4C0C2932D22409A029AA_37911810572503_lid.jpeg",
+            "notes": "Author: 37911810572503. Imported timestamp: 2026-05-27 15:55:46.000Z"
           }
         ]
       }
@@ -116424,8 +116440,8 @@ window.J40_DASHBOARD_DATA = {
         "chat_type": "group",
         "relevance_score": "15",
         "messages_fetched": "true",
-        "messages_count": "232",
-        "media_count": "64",
+        "messages_count": "234",
+        "media_count": "65",
         "messages_fetch_error": ""
       },
       {
@@ -116550,7 +116566,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "media_type": "photo",
-        "count": 228
+        "count": 229
       },
       {
         "media_type": "sticker",
@@ -116568,10 +116584,19 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source_profile": "whatsapp-number-2",
-        "count": 117
+        "count": 118
       }
     ],
     "recent_media": [
+      {
+        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_acb3722f0b7d4c0c2932d22409a029aa_37911810572503_lid::false_971527520120_1517397900_g_us_ACB3722F0B7D4C0C2932D22409A029AA_37911810572503_lid.jpeg",
+        "source_profile": "whatsapp-number-2",
+        "chat_name": "TLC 40 Series Owners",
+        "timestamp": "2026-05-27T15:55:46.000Z",
+        "media_type": "photo",
+        "file_name": "false_971527520120_1517397900_g_us_ACB3722F0B7D4C0C2932D22409A029AA_37911810572503_lid.jpeg",
+        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_ACB3722F0B7D4C0C2932D22409A029AA_37911810572503_lid.jpeg"
+      },
       {
         "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3a78fb0a72f5aa83e204_121577739915469_lid::false_971527520120_1517397900_g_us_3A78FB0A72F5AA83E204_121577739915469_lid.jpeg",
         "source_profile": "whatsapp-number-2",
@@ -116778,15 +116803,6 @@ window.J40_DASHBOARD_DATA = {
         "media_type": "photo",
         "file_name": "false_971527520120_1517397900_g_us_A500897EBC7E0FD2F6A2FA503D036F84_128350903398508_lid.jpeg",
         "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_A500897EBC7E0FD2F6A2FA503D036F84_128350903398508_lid.jpeg"
-      },
-      {
-        "media_id": "mcp_whatsapp_number_2_false_971527520120_1517397900_g_us_3abf0973d4dd28cf4061_42507291328542_lid::false_971527520120_1517397900_g_us_3ABF0973D4DD28CF4061_42507291328542_lid.jpeg",
-        "source_profile": "whatsapp-number-2",
-        "chat_name": "TLC 40 Series Owners",
-        "timestamp": "2026-05-24T06:28:59.000Z",
-        "media_type": "photo",
-        "file_name": "false_971527520120_1517397900_g_us_3ABF0973D4DD28CF4061_42507291328542_lid.jpeg",
-        "path": "../../data/raw/imports/mcp_whatsapp_number_2/false_971527520120_1517397900_g_us_3ABF0973D4DD28CF4061_42507291328542_lid.jpeg"
       }
     ]
   },

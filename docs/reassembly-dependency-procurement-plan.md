@@ -1,6 +1,6 @@
 # Reassembly, Dependency, and Procurement Plan
 
-- Generated: 2026-05-27 23:10:20
+- Generated: 2026-05-27 23:18:02
 - Work packages: `data/manual/reassembly_work_packages.csv`
 - Dependency edges: `data/manual/reassembly_dependency_edges.csv`
 - Component disposition: `data/manual/component_disposition_plan.csv`
