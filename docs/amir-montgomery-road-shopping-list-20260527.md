@@ -28,6 +28,10 @@ Millat/MTL order update: do not buy local M6/M8/M10 star or serrated grounding w
 | --- | ---: | ---: | --- | --- | --- |
 | P0 | 3 lb sledge / club hammer | 1 | 3 lb short-handle sledge hammer | Tight head, solid fiberglass/steel/wood handle | Loose head, cracked handle, toy/light hammer |
 | P0 | Brake hard-line tube | 25 ft minimum; 10-12 m if cheap | `4.75 mm / 3/16 in` automotive brake pipe, double-wall Bundy steel, zinc/PVF/galvanized coated | Brake-rated steel Bundy tube; CuNi/Cunifer if good and brake-rated | Bare copper, plumbing tube, unknown tube, stainless if shop cannot flare it |
+| P0 | Brake hydraulic hose/line package | Quote/buy by old samples | Complete crimped front-left, front-right, and rear-center brake flex hose assemblies, plus any missing brake-rated `4.75 mm / 3/16 in` tube/fittings not already covered by the separate tube-stock buy | DOT/SAE J1401 or OEM-equivalent marked hose assemblies, matched fittings/bracket grooves/free length; brake-rated tube/fittings | Generic rubber hose, reused hose, compression fittings, bare copper, or a second hard-line coil if the separate tube-stock row is already covered |
+| P0 | Rear drum spring / hold-down / adjuster hardware | 1 axle set or by sample | Upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, parking-brake lever clips | New plated brake hardware matching opened-drum layout or old samples | Mixed/unmatched springs, rusty used hardware, or duplicate if PakWheels shoe delivery proves a complete matching hardware kit |
+| P0 | Rear parking-brake cable attachment hardware | By sample / mixed pack | Clevis pins, equalizer/intermediate cable pieces, adjuster nut, cable-end clips, return springs, retaining clips | Plated parts matching old samples and received cable ends | Wrong clevis size, weak spring clips, or duplicate pieces already included with the received cable |
+| P0 | Tube deburrer / reamer | 1 | Compact internal/external deburrer or reamer for `4.75 mm / 3/16 in` brake tube | Tool deburrs inside and outside of small tube cleanly | File/knife-only workaround; tool too large for 3/16 tube |
 
 ## Buy If Available At Sensible Price
 
@@ -44,7 +48,6 @@ Millat/MTL order update: do not buy local M6/M8/M10 star or serrated grounding w
 | P0 | Catch bottle/tray and clean rags | 1 set | Brake-fluid catch setup and lint-free rags. |
 | P0 | Metric flare-nut wrench set | 1 set | Must cover likely sizes around 10, 11, 12, 14, 17 mm. |
 | P0 | 3/16 brake pipe bender | 1 | Must explicitly fit `3/16 in / 4.75 mm`. |
-| P0 | Tube deburrer / reamer | 1 | For internal/external deburring after every brake-pipe cut. |
 | P1 | Small tube cutter | 1 | Only if cheap and rated down to 3/16 or 4.75 mm. We may already have one, so not urgent. |
 | P1 | Thread pitch gauge | 1 | Metric pitch gauge for M10x1.0, M10x1.25, M12x1.0 checking. |
 | P1 | M6/M8 captive nuts, speed clips, clip nuts | Mixed pack | Body panel and bracket fastening. |
@@ -91,7 +94,7 @@ Do not pay for these unless Amir has the old sample in hand or the seller agrees
 | Brake flare nuts / tube nuts | Brake-rated `3/16 / 4.75 mm` double/inverted flare tube nuts, likely Toyota metric | Close photo of thread, seat side, hex size, packet/label, price |
 | Inline unions | Brake-rated double/inverted flare unions for 3/16 tube | Photo of both ends and label; no plumbing/compression union |
 | Rear axle T / tee fitting | Brake-rated T fitting matching rear axle union style | Photo of port arrangement, mounting hole/bracket, label, price |
-| Front and rear flex brake hoses | Ask if shop can make complete crimped automotive brake hose assemblies from old samples | Shop card, hose marking, fitting examples, whether DOT/SAE J1401 or OEM-equivalent |
+| Front and rear flex brake hoses | Covered by the buy-now hose/line package above; do not pay unless the shop can make complete crimped automotive brake hose assemblies from old samples | Shop card, hose marking, fitting examples, whether DOT/SAE J1401 or OEM-equivalent |
 | Rear parking brake cable set | Ask by 1978 Toyota Land Cruiser J40 rear drum brake cable; Toyota reference candidate `46410-60092` | Photos, price, whether left/right complete set, hardware included |
 | Compact covered fuse/relay box | Small OEM-style cabin fuse box with cover and pigtails | Photo, number of fuse ways, cover, wire tails, price |
 

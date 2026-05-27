@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-27T23:18:08+05:00",
+  "generated_at": "2026-05-27T23:28:11+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -59113,7 +59113,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
           "status": "in_progress",
-          "detail": "4 part rows still require price confirmation/order placement."
+          "detail": "5 part rows still require price confirmation/order placement."
         },
         {
           "label": "Procurement \u00b7 track in-flight deliveries",
@@ -59413,22 +59413,62 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
-          "entry_id": "part_mech_brake_flex_hose_set",
+          "entry_id": "part_brake_flex_hose_retaining_clip_pack_20260514",
           "workstream": "brake_system",
-          "item": "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance",
-          "status": "spec_ready",
-          "procurement_stage": "price_check_first_before_other_brake_parts",
+          "item": "Brake flex-hose retaining U-clips and bracket hardware pack",
+          "status": "planned",
+          "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "SNA Industries / local brake pipe-hose specialist / Longman / Brandreth Road / Montgomery Road",
+          "vendor": "brake hydraulic pipe specialist / local brake parts supplier",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_brake_flex_hose_retaining_clip_pack_20260514",
+          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-17|BR-FRONT-004|BR-REAR-003",
+          "notes": "Buy new brake flex-hose retaining U-clips and small bracket hardware for front left, front right, and rear center hose brackets. Match clip thickness and groove width to the selected hose assemblies. Replace loose, bent, or rusty clips; do not rely on wire, cable ties, or unsupported hose fittings.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/reference_catalog/cable_ties.jpg",
+            "caption": "Brake flex-hose retaining U-clips and bracket hardware pack \u00b7 cable tie reference image",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "semantic_reference_image",
+            "stage": "procurement_reconciliation",
+            "media_id": "cable_ties",
+            "matched_tokens": [
+              "cable",
+              "ties"
+            ],
+            "match_basis": "semantic_reference_image",
+            "match_score": 700
+          }
+        },
+        {
+          "entry_id": "part_mech_brake_flex_hose_set",
+          "workstream": "brake_system",
+          "item": "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance",
+          "status": "planned",
+          "procurement_stage": "purchase_ready",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Aamir / Montgomery Road brake pipe-hose supplier / SNA Industries / Longman / Brandreth Road",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_mech_brake_flex_hose_set",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts",
-          "notes": "Spec ready via RPO-BRAKE-001A/B but do the brake-line price check first before buying more rear brake parts. First Pakistan-based FCP-style lead is SNA Industries because it lists steel brake pipes and brake hoses. Cheapest safe path is local 4.75 mm / 3/16 in brake-rated Bundy steel or CuNi/Cunifer hard-line fabrication copied from old samples, plus local complete crimped DOT/SAE J1401 or OEM-equivalent flex hose assemblies by sample. Imported FJ40 pre-bent kits are reference/price-ceiling only and are not approved. This package overlaps BR-FRONT-004 and BR-REAR-003; order as one hose/line package or as itemized lines, not both.",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "Gettable local brake hose/line package with Aamir/Montgomery Road. Confirm price and buy/quote complete crimped DOT/SAE J1401 or OEM-equivalent flex hose assemblies by old sample, plus any remaining brake-rated 4.75 mm / 3/16 in hard-line stock or fittings not already covered by the separate Aamir tube-stock row. Do not double-buy the 25 ft hard-line coil if part_brake_clutch_475_hard_line_stock_full_vehicle_20260514 is received and passes the brake-rated tube check. No bare copper, plumbing tube, compression fittings, generic rubber hose, or imported pre-bent kit unless explicitly approved.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -59470,46 +59510,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "local_inventory_evidence",
             "match_score": 999
-          }
-        },
-        {
-          "entry_id": "part_brake_flex_hose_retaining_clip_pack_20260514",
-          "workstream": "brake_system",
-          "item": "Brake flex-hose retaining U-clips and bracket hardware pack",
-          "status": "planned",
-          "procurement_stage": "purchase_ready",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "brake hydraulic pipe specialist / local brake parts supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_brake_flex_hose_retaining_clip_pack_20260514",
-          "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-17|BR-FRONT-004|BR-REAR-003",
-          "notes": "Buy new brake flex-hose retaining U-clips and small bracket hardware for front left, front right, and rear center hose brackets. Match clip thickness and groove width to the selected hose assemblies. Replace loose, bent, or rusty clips; do not rely on wire, cable ties, or unsupported hose fittings.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/cable_ties.jpg",
-            "caption": "Brake flex-hose retaining U-clips and bracket hardware pack \u00b7 cable tie reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "cable_ties",
-            "matched_tokens": [
-              "cable",
-              "ties"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
           }
         },
         {
@@ -59584,12 +59584,12 @@ window.J40_DASHBOARD_DATA = {
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+          "vendor": "Aamir / local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_rear_drum_spring_hold_down_hardware_20260527",
-          "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated",
-          "notes": "BASELINE MUST REPLACE the rear drum spring and small hardware set separately from the ordered shoe/friction pieces. Buy upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum layout or old samples. If the PakWheels shoe delivery includes a complete matching hardware kit, reconcile this row rather than buying duplicates. Do not reuse stretched, rusty, or mismatched brake springs.",
+          "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated|user_update_2026-05-27_gettable_local_brake_items",
+          "notes": "BASELINE MUST REPLACE the rear drum spring and small hardware set separately from the ordered shoe/friction pieces. Buy upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum layout or old samples. If the PakWheels shoe delivery includes a complete matching hardware kit, reconcile this row rather than buying duplicates. Do not reuse stretched, rusty, or mismatched brake springs. | User update 2026-05-27: keep this as a gettable local purchase item; confirm price and buy by opened-drum layout or old samples, then reconcile only if the PakWheels shoe delivery includes a complete matching hardware kit.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -59597,7 +59597,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-            "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+            "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 Aamir / local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -59623,12 +59623,12 @@ window.J40_DASHBOARD_DATA = {
           "amount": "",
           "amount_status": "missing",
           "currency": "PKR",
-          "vendor": "local brake parts / hardware supplier",
+          "vendor": "Aamir / local brake parts / hardware supplier",
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_rear_parking_brake_attachment_hardware_20260527",
-          "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup",
-          "notes": "Required purchase line for the small attachment pieces around the received hand-brake cable: clevis pins, equalizer/intermediate cable hardware, adjuster nut, cable-end clips, parking-brake return springs, and retaining clips as fitted. Buy locally by old samples unless the received cable package already includes each matching piece; do not reuse rusty, stretched, or mismatched brake-cable attachment hardware.",
+          "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items",
+          "notes": "Required purchase line for the small attachment pieces around the received hand-brake cable: clevis pins, equalizer/intermediate cable hardware, adjuster nut, cable-end clips, parking-brake return springs, and retaining clips as fitted. Buy locally by old samples unless the received cable package already includes each matching piece; do not reuse rusty, stretched, or mismatched brake-cable attachment hardware. | User update 2026-05-27: keep this as a gettable local purchase item; confirm price and buy clevis/equalizer/return-spring/clip hardware by old samples unless the received cable package proves each matching piece is included.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -60474,8 +60474,8 @@ window.J40_DASHBOARD_DATA = {
                 "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (ordered_pending_delivery; delivery pending_delivery; amount missing)",
                 "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
-                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price_check_first_before_other_brake_parts; delivery not_ordered; amount missing)",
-                "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect (ordered_partial_pending_delivery; delivery pending_delivery; amount confirmed)"
+                "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect (ordered_partial_pending_delivery; delivery pending_delivery; amount confirmed)",
+                "Front disc pads and retaining hardware (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -60734,11 +60734,11 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
+                "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
                 "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect (ordered_partial_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
-                "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
+                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (purchase_ready; delivery not_ordered; amount missing)",
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price_check_first_before_other_brake_parts; delivery not_ordered; amount missing)",
                 "Brake hydraulic splitter T-union and inline union replacement set (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)"
               ]
             },
@@ -60863,11 +60863,11 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price_check_first_before_other_brake_parts; delivery not_ordered; amount missing)",
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
                 "Front disc pads and retaining hardware (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
-                "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)"
+                "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)",
+                "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -60993,9 +60993,9 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
+                "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
                 "Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference (purchase_ready_local_catalog_first_pending_sample_match; delivery not_ordered; amount missing)",
-                "Rear drum spring / hold-down / adjuster hardware kit (purchase_ready; delivery not_ordered; amount missing)",
                 "Rear line/cable support pack - brake-line clips cable retainers and rubber-lined P-clips (spec_needed_before_order_local_hardware_first; delivery not_ordered; amount missing)",
                 "FJ40 BJ-40 Toyota Land Cruiser hand brake cable (received; delivery received; amount confirmed)"
               ]
@@ -67120,7 +67120,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "label": "Confirm price and place purchase-ready orders",
         "status": "in_progress",
-        "detail": "27 rows still in purchase_ready."
+        "detail": "28 rows still in purchase_ready."
       },
       {
         "label": "Place selected quote orders",
@@ -67167,12 +67167,8 @@ window.J40_DASHBOARD_DATA = {
         "count": 1
       },
       {
-        "stage": "price_check_first_before_other_brake_parts",
-        "count": 1
-      },
-      {
         "stage": "purchase_ready",
-        "count": 27
+        "count": 28
       },
       {
         "stage": "purchase_ready_estimate",
@@ -67222,7 +67218,7 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_next_action": [
       {
         "next_action": "confirm_price_then_order",
-        "count": 27
+        "count": 28
       },
       {
         "next_action": "track_delivery",
@@ -67681,10 +67677,10 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+        "vendor": "Aamir / local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
         "supply_type": "part",
-        "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated",
-        "notes": "BASELINE MUST REPLACE the rear drum spring and small hardware set separately from the ordered shoe/friction pieces. Buy upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum layout or old samples. If the PakWheels shoe delivery includes a complete matching hardware kit, reconcile this row rather than buying duplicates. Do not reuse stretched, rusty, or mismatched brake springs.",
+        "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated|user_update_2026-05-27_gettable_local_brake_items",
+        "notes": "BASELINE MUST REPLACE the rear drum spring and small hardware set separately from the ordered shoe/friction pieces. Buy upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum layout or old samples. If the PakWheels shoe delivery includes a complete matching hardware kit, reconcile this row rather than buying duplicates. Do not reuse stretched, rusty, or mismatched brake springs. | User update 2026-05-27: keep this as a gettable local purchase item; confirm price and buy by opened-drum layout or old samples, then reconcile only if the PakWheels shoe delivery includes a complete matching hardware kit.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -67692,7 +67688,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-          "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+          "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 Aamir / local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -67718,10 +67714,10 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "local brake parts / hardware supplier",
+        "vendor": "Aamir / local brake parts / hardware supplier",
         "supply_type": "part",
-        "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup",
-        "notes": "Required purchase line for the small attachment pieces around the received hand-brake cable: clevis pins, equalizer/intermediate cable hardware, adjuster nut, cable-end clips, parking-brake return springs, and retaining clips as fitted. Buy locally by old samples unless the received cable package already includes each matching piece; do not reuse rusty, stretched, or mismatched brake-cable attachment hardware.",
+        "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items",
+        "notes": "Required purchase line for the small attachment pieces around the received hand-brake cable: clevis pins, equalizer/intermediate cable hardware, adjuster nut, cable-end clips, parking-brake return springs, and retaining clips as fitted. Buy locally by old samples unless the received cable package already includes each matching piece; do not reuse rusty, stretched, or mismatched brake-cable attachment hardware. | User update 2026-05-27: keep this as a gettable local purchase item; confirm price and buy clevis/equalizer/return-spring/clip hardware by old samples unless the received cable package proves each matching piece is included.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -68968,20 +68964,58 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_mech_brake_flex_hose_set",
+        "entry_id": "part_brake_flex_hose_retaining_clip_pack_20260514",
         "workstream": "brake_system",
-        "item": "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance",
-        "status": "spec_ready",
-        "procurement_stage": "price_check_first_before_other_brake_parts",
+        "item": "Brake flex-hose retaining U-clips and bracket hardware pack",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "SNA Industries / local brake pipe-hose specialist / Longman / Brandreth Road / Montgomery Road",
+        "vendor": "brake hydraulic pipe specialist / local brake parts supplier",
         "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts",
-        "notes": "Spec ready via RPO-BRAKE-001A/B but do the brake-line price check first before buying more rear brake parts. First Pakistan-based FCP-style lead is SNA Industries because it lists steel brake pipes and brake hoses. Cheapest safe path is local 4.75 mm / 3/16 in brake-rated Bundy steel or CuNi/Cunifer hard-line fabrication copied from old samples, plus local complete crimped DOT/SAE J1401 or OEM-equivalent flex hose assemblies by sample. Imported FJ40 pre-bent kits are reference/price-ceiling only and are not approved. This package overlaps BR-FRONT-004 and BR-REAR-003; order as one hose/line package or as itemized lines, not both.",
+        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-17|BR-FRONT-004|BR-REAR-003",
+        "notes": "Buy new brake flex-hose retaining U-clips and small bracket hardware for front left, front right, and rear center hose brackets. Match clip thickness and groove width to the selected hose assemblies. Replace loose, bent, or rusty clips; do not rely on wire, cable ties, or unsupported hose fittings.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/reference_catalog/cable_ties.jpg",
+          "caption": "Brake flex-hose retaining U-clips and bracket hardware pack \u00b7 cable tie reference image",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "semantic_reference_image",
+          "stage": "procurement_reconciliation",
+          "media_id": "cable_ties",
+          "matched_tokens": [
+            "cable",
+            "ties"
+          ],
+          "match_basis": "semantic_reference_image",
+          "match_score": 700
+        }
+      },
+      {
+        "entry_id": "part_mech_brake_flex_hose_set",
+        "workstream": "brake_system",
+        "item": "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance",
+        "status": "planned",
+        "procurement_stage": "purchase_ready",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Aamir / Montgomery Road brake pipe-hose supplier / SNA Industries / Longman / Brandreth Road",
+        "supply_type": "part",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "Gettable local brake hose/line package with Aamir/Montgomery Road. Confirm price and buy/quote complete crimped DOT/SAE J1401 or OEM-equivalent flex hose assemblies by old sample, plus any remaining brake-rated 4.75 mm / 3/16 in hard-line stock or fittings not already covered by the separate Aamir tube-stock row. Do not double-buy the 25 ft hard-line coil if part_brake_clutch_475_hard_line_stock_full_vehicle_20260514 is received and passes the brake-rated tube check. No bare copper, plumbing tube, compression fittings, generic rubber hose, or imported pre-bent kit unless explicitly approved.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -69023,44 +69057,6 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "local_inventory_evidence",
           "match_score": 999
-        }
-      },
-      {
-        "entry_id": "part_brake_flex_hose_retaining_clip_pack_20260514",
-        "workstream": "brake_system",
-        "item": "Brake flex-hose retaining U-clips and bracket hardware pack",
-        "status": "planned",
-        "procurement_stage": "purchase_ready",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "brake hydraulic pipe specialist / local brake parts supplier",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-14_full_vehicle_brake_clutch_line_purchase_list|HLS-17|BR-FRONT-004|BR-REAR-003",
-        "notes": "Buy new brake flex-hose retaining U-clips and small bracket hardware for front left, front right, and rear center hose brackets. Match clip thickness and groove width to the selected hose assemblies. Replace loose, bent, or rusty clips; do not rely on wire, cable ties, or unsupported hose fittings.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/cable_ties.jpg",
-          "caption": "Brake flex-hose retaining U-clips and bracket hardware pack \u00b7 cable tie reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "cable_ties",
-          "matched_tokens": [
-            "cable",
-            "ties"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
         }
       },
       {
@@ -69133,10 +69129,10 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+        "vendor": "Aamir / local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
         "supply_type": "part",
-        "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated",
-        "notes": "BASELINE MUST REPLACE the rear drum spring and small hardware set separately from the ordered shoe/friction pieces. Buy upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum layout or old samples. If the PakWheels shoe delivery includes a complete matching hardware kit, reconcile this row rather than buying duplicates. Do not reuse stretched, rusty, or mismatched brake springs.",
+        "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated|user_update_2026-05-27_gettable_local_brake_items",
+        "notes": "BASELINE MUST REPLACE the rear drum spring and small hardware set separately from the ordered shoe/friction pieces. Buy upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum layout or old samples. If the PakWheels shoe delivery includes a complete matching hardware kit, reconcile this row rather than buying duplicates. Do not reuse stretched, rusty, or mismatched brake springs. | User update 2026-05-27: keep this as a gettable local purchase item; confirm price and buy by opened-drum layout or old samples, then reconcile only if the PakWheels shoe delivery includes a complete matching hardware kit.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -69144,7 +69140,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-          "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+          "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 Aamir / local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -69170,10 +69166,10 @@ window.J40_DASHBOARD_DATA = {
         "amount": "",
         "amount_status": "missing",
         "currency": "PKR",
-        "vendor": "local brake parts / hardware supplier",
+        "vendor": "Aamir / local brake parts / hardware supplier",
         "supply_type": "part",
-        "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup",
-        "notes": "Required purchase line for the small attachment pieces around the received hand-brake cable: clevis pins, equalizer/intermediate cable hardware, adjuster nut, cable-end clips, parking-brake return springs, and retaining clips as fitted. Buy locally by old samples unless the received cable package already includes each matching piece; do not reuse rusty, stretched, or mismatched brake-cable attachment hardware.",
+        "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items",
+        "notes": "Required purchase line for the small attachment pieces around the received hand-brake cable: clevis pins, equalizer/intermediate cable hardware, adjuster nut, cable-end clips, parking-brake return springs, and retaining clips as fitted. Buy locally by old samples unless the received cable package already includes each matching piece; do not reuse rusty, stretched, or mismatched brake-cable attachment hardware. | User update 2026-05-27: keep this as a gettable local purchase item; confirm price and buy clevis/equalizer/return-spring/clip hardware by old samples unless the received cable package proves each matching piece is included.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -97649,7 +97645,7 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Rear drum spring / hold-down / adjuster hardware kit",
-          "vendor": "local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+          "vendor": "Aamir / local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
@@ -97658,8 +97654,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated",
-          "notes": "BASELINE MUST REPLACE the rear drum spring and small hardware set separately from the ordered shoe/friction pieces. Buy upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum layout or old samples. If the PakWheels shoe delivery includes a complete matching hardware kit, reconcile this row rather than buying duplicates. Do not reuse stretched, rusty, or mismatched brake springs.",
+          "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated|user_update_2026-05-27_gettable_local_brake_items",
+          "notes": "BASELINE MUST REPLACE the rear drum spring and small hardware set separately from the ordered shoe/friction pieces. Buy upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum layout or old samples. If the PakWheels shoe delivery includes a complete matching hardware kit, reconcile this row rather than buying duplicates. Do not reuse stretched, rusty, or mismatched brake springs. | User update 2026-05-27: keep this as a gettable local purchase item; confirm price and buy by opened-drum layout or old samples, then reconcile only if the PakWheels shoe delivery includes a complete matching hardware kit.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -97667,7 +97663,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-            "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+            "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 Aamir / local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -97727,7 +97723,7 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips",
-          "vendor": "local brake parts / hardware supplier",
+          "vendor": "Aamir / local brake parts / hardware supplier",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
@@ -97736,8 +97732,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup",
-          "notes": "Required purchase line for the small attachment pieces around the received hand-brake cable: clevis pins, equalizer/intermediate cable hardware, adjuster nut, cable-end clips, parking-brake return springs, and retaining clips as fitted. Buy locally by old samples unless the received cable package already includes each matching piece; do not reuse rusty, stretched, or mismatched brake-cable attachment hardware.",
+          "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items",
+          "notes": "Required purchase line for the small attachment pieces around the received hand-brake cable: clevis pins, equalizer/intermediate cable hardware, adjuster nut, cable-end clips, parking-brake return springs, and retaining clips as fitted. Buy locally by old samples unless the received cable package already includes each matching piece; do not reuse rusty, stretched, or mismatched brake-cable attachment hardware. | User update 2026-05-27: keep this as a gettable local purchase item; confirm price and buy clevis/equalizer/return-spring/clip hardware by old samples unless the received cable package proves each matching piece is included.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -99833,17 +99829,17 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "substance",
           "inventory_group": "substances",
           "item": "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance",
-          "vendor": "SNA Industries / local brake pipe-hose specialist / Longman / Brandreth Road / Montgomery Road",
+          "vendor": "Aamir / Montgomery Road brake pipe-hose supplier / SNA Industries / Longman / Brandreth Road",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
-          "status_detail": "spec_ready",
-          "procurement_stage": "price_check_first_before_other_brake_parts",
+          "status_detail": "planned",
+          "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts",
-          "notes": "Spec ready via RPO-BRAKE-001A/B but do the brake-line price check first before buying more rear brake parts. First Pakistan-based FCP-style lead is SNA Industries because it lists steel brake pipes and brake hoses. Cheapest safe path is local 4.75 mm / 3/16 in brake-rated Bundy steel or CuNi/Cunifer hard-line fabrication copied from old samples, plus local complete crimped DOT/SAE J1401 or OEM-equivalent flex hose assemblies by sample. Imported FJ40 pre-bent kits are reference/price-ceiling only and are not approved. This package overlaps BR-FRONT-004 and BR-REAR-003; order as one hose/line package or as itemized lines, not both.",
+          "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "Gettable local brake hose/line package with Aamir/Montgomery Road. Confirm price and buy/quote complete crimped DOT/SAE J1401 or OEM-equivalent flex hose assemblies by old sample, plus any remaining brake-rated 4.75 mm / 3/16 in hard-line stock or fittings not already covered by the separate Aamir tube-stock row. Do not double-buy the 25 ft hard-line coil if part_brake_clutch_475_hard_line_stock_full_vehicle_20260514 is received and passes the brake-rated tube check. No bare copper, plumbing tube, compression fittings, generic rubber hose, or imported pre-bent kit unless explicitly approved.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -100198,7 +100194,7 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "tool",
           "inventory_group": "tools",
           "item": "Brake hard-line internal/external deburrer or reamer for 4.75 mm tube",
-          "vendor": "local tool market / Toolsmart / brake hydraulic pipe specialist",
+          "vendor": "Aamir / Montgomery Road local tool market / Toolsmart / brake hydraulic pipe specialist",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
@@ -100207,8 +100203,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "purchase_ready",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-003|web_4lifetimelines_master_flaring_set",
-          "notes": "Buy a compact internal/external tube deburrer or reamer unless the delivered flaring kit includes a good one. Every 4.75 mm / 3/16 in brake-line cut must be deburred inside and outside before double/inverted flaring. Reject a workflow that leaves burrs inside the hydraulic tube. | Purchase remains open after TM25550 review: order evidence confirms the Harden cutter and PARD flaring/cutting set only. No captured order line or ToolsMart product text proves a separate internal/external deburrer/reamer was included.",
+          "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-003|web_4lifetimelines_master_flaring_set|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "Buy a compact internal/external tube deburrer or reamer unless the delivered flaring kit includes a good one. Every 4.75 mm / 3/16 in brake-line cut must be deburred inside and outside before double/inverted flaring. Reject a workflow that leaves burrs inside the hydraulic tube. | Purchase remains open after TM25550 review: order evidence confirms the Harden cutter and PARD flaring/cutting set only. No captured order line or ToolsMart product text proves a separate internal/external deburrer/reamer was included. | User update 2026-05-27: this is a gettable local tool item; buy a dedicated internal/external deburrer or reamer if Aamir finds one at sensible price, unless the delivered flaring kit is physically confirmed to include a proper deburring tool.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -110990,7 +110986,7 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Rear drum spring / hold-down / adjuster hardware kit",
-        "vendor": "local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+        "vendor": "Aamir / local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
@@ -110999,8 +110995,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated",
-        "notes": "BASELINE MUST REPLACE the rear drum spring and small hardware set separately from the ordered shoe/friction pieces. Buy upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum layout or old samples. If the PakWheels shoe delivery includes a complete matching hardware kit, reconcile this row rather than buying duplicates. Do not reuse stretched, rusty, or mismatched brake springs.",
+        "evidence_ref": "BR-REAR-007|20260524_025547_gp_yCvA0bxA|20260524_025532_gp_YlEZxOmQ|20260524_025515_gp_zEaIZo5Q|20260524_025414_gp_VsFMrBNQ|part_rear_brake_shoes_hardware|user_update_2026-05-27_rear_drum_parts_extrapolated|user_update_2026-05-27_gettable_local_brake_items",
+        "notes": "BASELINE MUST REPLACE the rear drum spring and small hardware set separately from the ordered shoe/friction pieces. Buy upper/lower return springs, hold-down pins/cups/springs, adjuster hardware, retaining clips, and parking-brake lever clips by opened-drum layout or old samples. If the PakWheels shoe delivery includes a complete matching hardware kit, reconcile this row rather than buying duplicates. Do not reuse stretched, rusty, or mismatched brake springs. | User update 2026-05-27: keep this as a gettable local purchase item; confirm price and buy by opened-drum layout or old samples, then reconcile only if the PakWheels shoe delivery includes a complete matching hardware kit.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -111008,7 +111004,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260524_025547_gp_yCvA0bxA.jpg",
-          "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
+          "caption": "Rear drum spring / hold-down / adjuster hardware kit \u00b7 local inventory photo \u00b7 Aamir / local brake parts supplier / PakWheels AUTOSTORE / brake shop sample-match",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -111029,7 +111025,7 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips",
-        "vendor": "local brake parts / hardware supplier",
+        "vendor": "Aamir / local brake parts / hardware supplier",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
@@ -111038,8 +111034,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup",
-        "notes": "Required purchase line for the small attachment pieces around the received hand-brake cable: clevis pins, equalizer/intermediate cable hardware, adjuster nut, cable-end clips, parking-brake return springs, and retaining clips as fitted. Buy locally by old samples unless the received cable package already includes each matching piece; do not reuse rusty, stretched, or mismatched brake-cable attachment hardware.",
+        "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items",
+        "notes": "Required purchase line for the small attachment pieces around the received hand-brake cable: clevis pins, equalizer/intermediate cable hardware, adjuster nut, cable-end clips, parking-brake return springs, and retaining clips as fitted. Buy locally by old samples unless the received cable package already includes each matching piece; do not reuse rusty, stretched, or mismatched brake-cable attachment hardware. | User update 2026-05-27: keep this as a gettable local purchase item; confirm price and buy clevis/equalizer/return-spring/clip hardware by old samples unless the received cable package proves each matching piece is included.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -111909,17 +111905,17 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "substance",
         "inventory_group": "substances",
         "item": "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance",
-        "vendor": "SNA Industries / local brake pipe-hose specialist / Longman / Brandreth Road / Montgomery Road",
+        "vendor": "Aamir / Montgomery Road brake pipe-hose supplier / SNA Industries / Longman / Brandreth Road",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
-        "status_detail": "spec_ready",
-        "procurement_stage": "price_check_first_before_other_brake_parts",
+        "status_detail": "planned",
+        "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts",
-        "notes": "Spec ready via RPO-BRAKE-001A/B but do the brake-line price check first before buying more rear brake parts. First Pakistan-based FCP-style lead is SNA Industries because it lists steel brake pipes and brake hoses. Cheapest safe path is local 4.75 mm / 3/16 in brake-rated Bundy steel or CuNi/Cunifer hard-line fabrication copied from old samples, plus local complete crimped DOT/SAE J1401 or OEM-equivalent flex hose assemblies by sample. Imported FJ40 pre-bent kits are reference/price-ceiling only and are not approved. This package overlaps BR-FRONT-004 and BR-REAR-003; order as one hose/line package or as itemized lines, not both.",
+        "evidence_ref": "user_plan_2026-04-12_engine_bay_review|data/manual/replacement_pipe_order_release_specs.csv|data/manual/replacement_pipe_release_actions.csv|docs/brake-line-cheap-sourcing-20260524.md|docs/pakistan-brake-piping-handbrake-sources-20260524.md|web_sna_industries_steel_brake_pipes_brake_hoses|user_update_2026-05-24_price_brake_lines_before_other_parts|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "Gettable local brake hose/line package with Aamir/Montgomery Road. Confirm price and buy/quote complete crimped DOT/SAE J1401 or OEM-equivalent flex hose assemblies by old sample, plus any remaining brake-rated 4.75 mm / 3/16 in hard-line stock or fittings not already covered by the separate Aamir tube-stock row. Do not double-buy the 25 ft hard-line coil if part_brake_clutch_475_hard_line_stock_full_vehicle_20260514 is received and passes the brake-rated tube check. No bare copper, plumbing tube, compression fittings, generic rubber hose, or imported pre-bent kit unless explicitly approved.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -112204,7 +112200,7 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "tool",
         "inventory_group": "tools",
         "item": "Brake hard-line internal/external deburrer or reamer for 4.75 mm tube",
-        "vendor": "local tool market / Toolsmart / brake hydraulic pipe specialist",
+        "vendor": "Aamir / Montgomery Road local tool market / Toolsmart / brake hydraulic pipe specialist",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
@@ -112213,8 +112209,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "purchase_ready",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-003|web_4lifetimelines_master_flaring_set",
-        "notes": "Buy a compact internal/external tube deburrer or reamer unless the delivered flaring kit includes a good one. Every 4.75 mm / 3/16 in brake-line cut must be deburred inside and outside before double/inverted flaring. Reject a workflow that leaves burrs inside the hydraulic tube. | Purchase remains open after TM25550 review: order evidence confirms the Harden cutter and PARD flaring/cutting set only. No captured order line or ToolsMart product text proves a separate internal/external deburrer/reamer was included.",
+        "evidence_ref": "docs/brake-hard-line-tool-parts-selection-20260514.md|BHL-TOOL-003|web_4lifetimelines_master_flaring_set|user_update_2026-05-27_gettable_local_brake_items|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "Buy a compact internal/external tube deburrer or reamer unless the delivered flaring kit includes a good one. Every 4.75 mm / 3/16 in brake-line cut must be deburred inside and outside before double/inverted flaring. Reject a workflow that leaves burrs inside the hydraulic tube. | Purchase remains open after TM25550 review: order evidence confirms the Harden cutter and PARD flaring/cutting set only. No captured order line or ToolsMart product text proves a separate internal/external deburrer/reamer was included. | User update 2026-05-27: this is a gettable local tool item; buy a dedicated internal/external deburrer or reamer if Aamir finds one at sensible price, unless the delivered flaring kit is physically confirmed to include a proper deburring tool.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",

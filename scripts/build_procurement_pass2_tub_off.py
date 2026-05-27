@@ -275,10 +275,10 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
 
     if entry_id == "part_mech_brake_flex_hose_set":
         return (
-            "capture_brake_specs_then_order",
-            "merged_suspension_brake_window",
-            "brake_baseline_release_hold",
-            "Complete crimped brake hose assemblies can be sourced online/local, but exact release waits for fitted end fittings, old samples, bracket retention, free length, and Ironman full-droop slack.",
+            "aamir_local_sample_match_quote_then_buy",
+            "aamir_montgomery_road",
+            "local_brake_hose_line_buy",
+            "User update marks this package as gettable with Aamir/Montgomery Road. Confirm price and buy/quote complete crimped DOT/SAE J1401 or OEM-equivalent brake hose assemblies by old sample; reconcile any hard-line coil/fitting buy against the separate Aamir tube-stock row.",
         )
 
     if workstream == "brake_system" and prior == "capture_spec_then_buy":
@@ -373,6 +373,8 @@ def supplier_hint(mode: str, decision: str) -> str:
         "open_inspect_then_order_standard_brake_parts",
     }:
         return "Use a brake/Toyota parts shop or the workshop's brake supplier after physical sample and fitting confirmation."
+    if decision == "aamir_local_sample_match_quote_then_buy":
+        return "Use Aamir/Montgomery Road brake pipe-hose suppliers; buy/quote complete crimped brake hose assemblies by old sample and avoid duplicate hard-line coil stock."
     if decision in {"stock_audit_then_local_topup", "local_topup_buy"}:
         return "Use Montgomery Road / local electrical markets for small top-ups after stock count."
     if decision == "source_toyota_oe_glow_plugs_by_part_number":
@@ -415,6 +417,8 @@ def basket_id_for_row(decision: str, mode: str, workstream: str) -> str:
         return "basket_mechanical_local_bundle"
     if decision in {"capture_brake_specs_then_order", "open_inspect_then_order_standard_brake_parts"}:
         return "basket_merged_brake_suspension_window"
+    if decision == "aamir_local_sample_match_quote_then_buy":
+        return "basket_aamir_brake_hose_line"
     if decision == "buy_chassis_masking_consumables":
         return "basket_chassis_coating_consumables"
     if decision in {"hose_rubber_release_hold", "longman_hose_pipe_order_ready"}:
@@ -476,6 +480,7 @@ def build_baskets(rows: list[dict[str, str]]) -> list[dict[str, str]]:
         "basket_engine_mounts_later_if_failed": ("Engine Mounts Later If Failed", "No engine lift in baseline; inspect in place before any purchase."),
         "basket_suspension_setup": ("Suspension Setup Support", "Buy support/cribbing items before suspension disassembly."),
         "basket_merged_brake_suspension_window": ("Merged Brake/Suspension Window", "Capture fitted hardware and old samples, then order exact brake parts for the Ironman install window."),
+        "basket_aamir_brake_hose_line": ("Aamir Brake Hose/Line Buy", "Confirm price locally, buy/quote complete crimped brake hose assemblies by old sample, and reconcile hard-line stock against the separate Aamir tube row."),
         "basket_brake_hydraulic_opening_prep": ("Brake Hydraulic Opening Prep", "Buy the remaining caps/plugs, brake cleaner, catch bottle or bleeder kit, rags, and catch tray before opening hydraulic lines; DOT 3 fluid, clear bleed hose, and nitrile gloves are already received."),
         "basket_chassis_coating_consumables": ("Chassis Coating Consumables", "Ultra-cloth solvent-safe wipes and masking tape are received; only buy separate tapered plugs if the on-hand grommet pack fails fit/solvent checks."),
         "basket_longman_hose_pipe_order_ready": ("Longman Hose/Pipe Order Ready", "Fuel, coolant, heater, vacuum, and breather stock rows have explicit Longman quote/order lengths; final trim, clamp, chafe, and leak checks remain install tasks."),

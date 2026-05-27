@@ -1,20 +1,20 @@
 # Parts Buy-Now Plan (This Week)
 
-- Generated: 2026-05-27 23:18:02
+- Generated: 2026-05-27 23:26:59
 - Source ledger: `data/manual/expenses.csv` (`bucket=parts`)
 - Overlap resolution table: `data/manual/parts_overlap_resolution.csv`
 - This-week list: `data/manual/parts_buy_now_this_week.csv`
 
 ## This-Week Counts
 
-- Rows in this-week list: 37
-- `confirm_price_then_order`: 27
+- Rows in this-week list: 38
+- `confirm_price_then_order`: 28
 - `track_delivery`: 10
 
 ## Priority Split
 
 - `P0`: 19
-- `P1`: 12
+- `P1`: 13
 - `P2`: 6
 
 ## Overlap Decisions Applied
@@ -29,7 +29,7 @@
 
 ## Immediate Actions
 
-- `confirm_price_then_order` (27):
+- `confirm_price_then_order` (28):
   - `part_body_retaining_clips_cotter_pin_pack` [P0] Body retaining clip pack - R-clips hairpins split pins circlips and small cotters (price: price_tbd; order_date: 2026-05-04; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_fastener_kit_c_captive_clip_nuts` [P0] Fastener Kit C remaining: Captive/clip/speed nut and weld-nut assortment - M6/M8 (price: price_tbd; order_date: 2026-05-03; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_brake_clutch_line_support_clamps_full_vehicle_20260514` [P0] Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
@@ -51,6 +51,7 @@
   - `part_mech_fuel_filter` [P1] Fuel filter (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_heat_glow_plugs_set` [P1] Toyota OE glow plugs 19850-68030 x6 - diesel 2H (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_mech_radiator_cap` [P1] Radiator cap (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
+  - `part_mech_brake_flex_hose_set` [P1] Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (price: price_tbd; order_date: order_date_tbd; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_hvac_control_panel_20260514` [P2] Compact A/C control panel or integrated controls (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_hvac_duct_defrost_hose_kit_20260514` [P2] 2.5 inch duct hose, vent adapters, and defrost/demist hose kit (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_hvac_evaporator_drain_mount_kit_20260514` [P2] Evaporator drain hose and mounting/sealing kit (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)

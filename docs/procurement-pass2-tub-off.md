@@ -1,6 +1,6 @@
 # Procurement Pass 2 (Tub-Off, Pakistan Cost Reality)
 
-- Generated: 2026-05-27 23:10:22
+- Generated: 2026-05-27 23:28:08
 - Input matrix: `data/manual/procurement_decision_matrix.csv`
 - Pass-2 matrix: `data/manual/procurement_decision_matrix_pass2.csv`
 - Basket plan: `data/manual/procurement_local_baskets_pass2.csv`
@@ -13,13 +13,14 @@
 
 ## Decision Counts
 
+- `aamir_local_sample_match_quote_then_buy`: 1
 - `bundle_local_toyota_buy_after_inspection`: 10
 - `buy_body_fastener_hardware_from_samples`: 3
 - `buy_compact_cabin_fuse_boxes`: 1
 - `buy_for_baseline`: 1
 - `buy_now`: 8
 - `capture_body_hardware_samples_then_order`: 5
-- `capture_brake_specs_then_order`: 7
+- `capture_brake_specs_then_order`: 6
 - `confirm_price_then_buy`: 10
 - `defer_as_non_baseline`: 5
 - `defer_until_baseline_closure`: 1
@@ -34,13 +35,14 @@
 
 ## Timing Windows
 
+- `aamir_montgomery_road`: 1
 - `body_fastener_topup`: 3
 - `body_hardware_sample_sort`: 5
 - `body_sealed`: 1
 - `electrical_closeout`: 1
 - `in_flight_now`: 9
 - `longman_mills_quote_pack`: 4
-- `merged_suspension_brake_window`: 8
+- `merged_suspension_brake_window`: 7
 - `post_baseline_only`: 6
 - `post_tub_off_inspection`: 11
 - `pre_order_audit`: 3

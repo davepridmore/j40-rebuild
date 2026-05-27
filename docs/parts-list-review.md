@@ -1,20 +1,20 @@
 # Parts List Review
 
-- Generated: 2026-05-27 23:18:02
+- Generated: 2026-05-27 23:26:53
 - Source: `data/manual/expenses.csv` (`bucket=parts`) -> 121 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
 
 ## Action Buckets
 
-- `buy_now`: 40
+- `buy_now`: 41
 - `cancelled_or_not_required`: 12
 - `completed_or_received`: 33
 - `deferred`: 6
 - `needs_spec_before_order`: 9
 - `ordered_waiting_arrival`: 10
 - `spec_ready_release_hold`: 3
-- `unclear`: 8
+- `unclear`: 7
 
 ## Workstream Split
 
@@ -76,6 +76,7 @@
 - `part_mech_radiator_cap` [mechanical_baseline] Radiator cap
 - `part_mech_radiator_hose_set` [mechanical_baseline] Cooling hose/pipe package - upper/lower radiator hoses, overflow hose, formed coolant pipe
 - `part_mech_vacuum_hose_refresh` [mechanical_baseline] Vacuum/breather hose kit - 10-12 mm vacuum + 16-19 mm oil-resistant breather
+- `part_mech_brake_flex_hose_set` [steering_brakes_suspension] Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance
 
 ## Buy-Now / Quote-Ready With Confirmed Price
 

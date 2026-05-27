@@ -316,12 +316,13 @@ def build_procurement_decisions(
                 "or 19850-68060 x6 only if old plug/system confirms 24V/superglow."
             )
         elif entry_id == "part_mech_brake_flex_hose_set":
-            decision = "capture_spec_then_buy"
-            dependency_gate = "brake_identification_and_samples"
-            action = "measure_label_keep_samples_then_order"
+            decision = "confirm_price_then_buy"
+            dependency_gate = "baseline_execution"
+            action = "aamir_local_sample_match_quote_then_order"
             reason = (
-                "Complete crimped brake hose assemblies are baseline scope and can be quoted online/local, "
-                "but final order waits for fitted end fittings, brackets, free length, and Ironman full-droop slack."
+                "User update marks the brake hose/line package as gettable with Aamir/Montgomery Road. "
+                "Confirm price and buy/quote complete crimped brake hose assemblies by old sample, and reconcile "
+                "any hard-line coil/fitting buy against the separate Aamir tube-stock row."
             )
         elif workstream == "brake_system" and procurement_stage == "spec_needed_before_order":
             decision = "capture_spec_then_buy"
