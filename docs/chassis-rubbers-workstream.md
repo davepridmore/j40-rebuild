@@ -8,6 +8,7 @@ Current supplier pack:
 
 - [Longman rubber order spec](longman-rubber-order-spec-20260508.md)
 - [Longman rubber order CSV](../data/manual/longman_rubber_order_specs.csv)
+- [Parametric 3D rubber models](../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md)
 - [Bump-stop fabrication spec](bump-stop-fabrication-spec-20260504.md)
 
 ## Current Order Basis

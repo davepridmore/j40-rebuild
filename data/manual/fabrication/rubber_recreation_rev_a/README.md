@@ -15,6 +15,7 @@ Use it with:
 - `machine_definitions.csv` / `machine_definitions.json` - CNC/shop geometry, shim-pack controls, and controlled non-CNC purchase definitions
 - `fabricator_cut_list.csv` - file-by-file cut/form list
 - `inspection_checklist.csv` - receiving and first-article inspection checks
+- `models_3d/` - parametric OpenSCAD 3D models and old-part closure questions
 
 ## DXF / SVG Parts
 
@@ -37,6 +38,8 @@ Use it with:
 ## Release Limits
 
 The circular cushions, cup blanks, and oval pad are ready for quote and first article from these files. Full production still requires the hold dimensions in `data/manual/rubber_recreation_measurement_closure.csv`.
+
+The current Longman rubber-order basis for the main body pads is square flat isolator pads, not the earlier circular placeholder. Use `models_3d/bm_iso_sm_square_pad.scad` and `models_3d/bm_iso_lg_square_pad.scad` for the current 3D envelope. They default to `hole_d = 0` because the final bore must be set from the measured steel crush-sleeve OD plus `0.5-1.0 mm` clearance. A centre mark is acceptable for quote/first article; final drilling waits for sleeve measurement and stack dry-fit.
 
 The shim packs are controlled in `machine_definitions.csv` / `machine_definitions.json` as new flat steel thickness packs. They are not released as fixed DXF outlines until the original shim or mount-station footprint is traced in millimeters; do not substitute washer stacks.
 

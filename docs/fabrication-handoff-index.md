@@ -12,7 +12,7 @@ Raw material procurement: use [fabrication-raw-materials-procurement-estimate-20
 
 Chassis/body rubber order control is not owned here. Use [chassis-rubbers-workstream.md](chassis-rubbers-workstream.md) and [longman-rubber-order-spec-20260508.md](longman-rubber-order-spec-20260508.md) for body-mount pads, front-support isolators, bump stops, sleeves, shims, cup washers, and related Longman/first-article release holds.
 
-The old rubber package files remain in the repository as supporting reference material, but the active Fabrication workstream should not send or close chassis-rubber orders independently.
+The old rubber package files remain in the repository as supporting reference material, but the active Fabrication workstream should not send or close chassis-rubber orders independently. The current square-pad 3D quote models live in [data/manual/fabrication/rubber_recreation_rev_a/models_3d](../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md); use those rather than the older circular body-pad placeholders when discussing the May 8 Longman rubber order.
 
 ## Battery Stand Power Carrier - Rev A
 

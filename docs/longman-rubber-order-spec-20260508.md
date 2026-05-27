@@ -48,6 +48,8 @@ The body pads are not shape-matched to a molded chassis socket. The important co
 
 For initial quote, use the square dimensions in the table. If any station needs corner trimming or a relieved edge, release that exact trimmed shape after the landing-face photos are checked.
 
+3D model files for the current quote geometry are in `data/manual/fabrication/rubber_recreation_rev_a/models_3d/`. The body-pad models default to `hole_d = 0` with a centre mark only; set `hole_d` only after the crush-sleeve OD is measured. The intended final rule is sleeve OD plus `0.5-1.0 mm` clearance, not a guessed drilled hole.
+
 ## Bump Stop Shape
 
 The current best local photo for the old bump-stop fragments is the image that was previously attached to the dashboard item `Front-support right strip / liner`:
