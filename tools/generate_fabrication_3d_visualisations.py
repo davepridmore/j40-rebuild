@@ -330,7 +330,56 @@ def breaker_cylinders(x: float, y: float, z: float, prefix: str) -> list[dict[st
     ]
 
 
+def rubber_order_boxes(prefix: str = "Longman rubber") -> list[dict[str, object]]:
+    return [
+        {"name": f"{prefix} BM-ISO-SM 70 x 70 x 22 square pad", "x": -170, "y": 11, "z": -100, "w": 70, "h": 22, "d": 70, "color": "rubber"},
+        {"name": f"{prefix} BM-ISO-LG 80 x 80 x 24 square pad", "x": -65, "y": 12, "z": -100, "w": 80, "h": 24, "d": 80, "color": "rubber"},
+        {"name": f"{prefix} FS-OVAL centre span 32 x 64 x 15", "x": 80, "y": 7.5, "z": -100, "w": 32, "h": 15, "d": 64, "color": "rubber"},
+        {"name": f"{prefix} FS-STRIP-L plain strip 165 x 38 x 8", "x": -110, "y": 4, "z": 45, "w": 165, "h": 8, "d": 38, "color": "rubber"},
+        {"name": f"{prefix} FS-STRIP-R plain strip 165 x 38 x 8", "x": 100, "y": 4, "z": 45, "w": 165, "h": 8, "d": 38, "color": "rubber"},
+        {"name": f"{prefix} long bump-stop steel saddle placeholder", "x": -170, "y": 4, "z": 150, "w": 90, "h": 8, "d": 44, "color": "steel"},
+        {"name": f"{prefix} long bump-stop progressive body placeholder 70 H", "x": -170, "y": 43, "z": 150, "w": 70, "h": 70, "d": 40, "color": "rubber"},
+        {"name": f"{prefix} short right-front bump-stop steel saddle placeholder", "x": -45, "y": 4, "z": 150, "w": 90, "h": 8, "d": 44, "color": "steel"},
+        {"name": f"{prefix} short right-front progressive body placeholder 60 H", "x": -45, "y": 38, "z": 150, "w": 66, "h": 60, "d": 38, "color": "rubber"},
+        {"name": f"{prefix} exhaust hanger hold-only teardrop envelope 48 x 86 x 22", "x": 105, "y": 11, "z": 150, "w": 48, "h": 22, "d": 86, "color": "rubber"},
+    ]
+
+
+def rubber_order_cylinders(prefix: str = "Longman rubber") -> list[dict[str, object]]:
+    return [
+        {"name": f"{prefix} BM-ISO-SM 18 mm sleeve-clearance bore", "x": -170, "y": 13, "z": -100, "r": 9, "h": 28, "color": "silver"},
+        {"name": f"{prefix} BM-ISO-LG 18 mm sleeve-clearance bore", "x": -65, "y": 14, "z": -100, "r": 9, "h": 30, "color": "silver"},
+        {"name": f"{prefix} FS-OVAL left capsule end R32", "x": 64, "y": 7.5, "z": -100, "r": 32, "h": 15, "color": "rubber"},
+        {"name": f"{prefix} FS-OVAL right capsule end R32", "x": 96, "y": 7.5, "z": -100, "r": 32, "h": 15, "color": "rubber"},
+        {"name": f"{prefix} FS-OVAL hole 1, 12 mm", "x": 48, "y": 10, "z": -100, "r": 6, "h": 20, "color": "silver"},
+        {"name": f"{prefix} FS-OVAL hole 2, 12 mm", "x": 112, "y": 10, "z": -100, "r": 6, "h": 20, "color": "silver"},
+        {"name": f"{prefix} exhaust top hole hold target 9 mm", "x": 105, "y": 24, "z": 178, "r": 4.5, "h": 14, "color": "silver"},
+    ]
+
+
 SCENES = {
+    "longman_rubber_order_20260508": {
+        "title": "Longman Rubber Order 2026-05-08",
+        "subtitle": "Current supplier bundle: square body pads, two-hole front-support pad, underfloor strips, bump-stop placeholders, and exhaust hold reference.",
+        "camera": [430, 290, 470],
+        "target": [-25, 32, 25],
+        "size": "BM pads 70/80 square with 18 mm bores; FS-OVAL 96 x 64 x 15; FS-STRIP 165 x 38 x 8",
+        "load_path": "Rubber pads isolate body/front-support loads through flat parallel bearing faces; bump-stop geometry remains vehicle-measurement controlled.",
+        "service_intent": "Use the visual for package orientation, then use the OpenSCAD files for exact 3D envelope, edge break, hole, and release-state controls.",
+        "boxes": rubber_order_boxes("Longman order"),
+        "cylinders": rubber_order_cylinders("Longman order"),
+    },
+    "rubber_recreation_rev_a": {
+        "title": "Rubber Recreation Rev A",
+        "subtitle": "3D fabrication model set for the current rubber recreation and Longman supplier controls.",
+        "camera": [430, 290, 470],
+        "target": [-25, 32, 25],
+        "size": "OpenSCAD source models in models_3d carry exact envelopes, bores, relief options, and measurement placeholders",
+        "load_path": "Body/front-support pads are released as solid automotive rubber first articles; hardware, sleeves, cups, and bump-stop saddle geometry are separately controlled.",
+        "service_intent": "Use this dashboard visual for orientation only; OpenSCAD and CSV controls remain the fabrication source of truth.",
+        "boxes": rubber_order_boxes("Rubber recreation"),
+        "cylinders": rubber_order_cylinders("Rubber recreation"),
+    },
     "suspension_wood_cribbing_rev_a": {
         "title": "Suspension Wood Cribbing Rev A",
         "subtitle": "Eight hardwood cribbing blocks and four wedge chocks for suspension support setup.",

@@ -2085,11 +2085,31 @@ def merge_link_payloads(*link_groups: Iterable[dict[str, Any]] | None) -> list[d
     return merged
 
 
+RUBBER_3D_MODEL_LINKS: list[tuple[str, str]] = [
+    ("data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md", "3D model README"),
+    ("data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv", "3D model manifest CSV"),
+    ("data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad", "OpenSCAD model master"),
+    ("data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad", "BM-ISO-SM OpenSCAD"),
+    ("data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad", "BM-ISO-LG OpenSCAD"),
+    ("data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad", "FS-OVAL OpenSCAD"),
+    ("data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad", "FS-STRIP-L OpenSCAD"),
+    ("data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad", "FS-STRIP-R OpenSCAD"),
+    ("data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad", "BUMP-60010 long OpenSCAD"),
+    ("data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad", "BUMP-60020 short OpenSCAD"),
+    ("data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad", "BUMP-60010 rear pair OpenSCAD"),
+    ("data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad", "EXH-HGR-90917 OpenSCAD"),
+    ("data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md", "Old-rubber 3D closure checks"),
+]
+
+
 FABRICATION_DESIGN_LINKS_BY_PACKAGE: dict[str, list[tuple[str, str]]] = {
     "rubber_recreation_rev_a": [
         ("deliverables/fabrication_packages/rubber_recreation_rev_a.zip", "Rubber fabrication package ZIP"),
+        ("data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html", "Interactive 3D visualisation"),
+        ("data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg", "Static 3D visualisation"),
         ("docs/bump-stop-fabrication-spec-20260504.md", "Bump-stop fabrication spec"),
         ("data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf", "Rubber dimension sheet PDF"),
+        *RUBBER_3D_MODEL_LINKS,
         ("data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg", "Bump-stop measurement control SVG"),
         ("data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf", "Small body-mount cushion DXF"),
         ("data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.dxf", "Large body-mount cushion DXF"),
@@ -2225,6 +2245,26 @@ FABRICATION_DESIGN_ENTRY_PACKAGES: dict[str, tuple[str, ...]] = {
 
 
 FABRICATION_PACKAGE_VISUAL_LINKS: dict[str, list[tuple[str, str]]] = {
+    "longman_rubber_order_20260508": [
+        (
+            "data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html",
+            "Interactive 3D visualisation",
+        ),
+        (
+            "data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.svg",
+            "Static 3D visualisation",
+        ),
+    ],
+    "rubber_recreation_rev_a": [
+        (
+            "data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
+            "Interactive 3D visualisation",
+        ),
+        (
+            "data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
+            "Static 3D visualisation",
+        ),
+    ],
     "suspension_wood_cribbing_rev_a": [
         (
             "data/manual/fabrication/suspension_wood_cribbing_rev_a/suspension_wood_cribbing_rev_a_3d_visualisation.html",
@@ -2469,6 +2509,20 @@ def package_relative_file_link(package_dir: str, filename: str) -> dict[str, Any
     if not name:
         return None
     return file_link(f"{package_dir.rstrip('/')}/{name}", name)
+
+
+def package_repo_paths(package_dir: str, value: str) -> list[str]:
+    paths: list[str] = []
+    base = clean(package_dir).rstrip("/")
+    for raw in split_pipe(value):
+        path = clean(raw).replace("\\", "/").lstrip("/")
+        if not path:
+            continue
+        if "/" in path:
+            paths.append(path)
+        elif base:
+            paths.append(f"{base}/{path}")
+    return paths
 
 
 def resolve_repo_path(repo_path: str) -> Path:
@@ -3265,13 +3319,24 @@ def fabrication_package_payload(row: dict[str, str]) -> dict[str, Any]:
             visual_links.append(link)
             visual_repo_paths.append(repo_path)
 
-    dxf_repo_paths = [f"{package_dir.rstrip('/')}/{filename}" for filename in split_pipe(row.get("dxf_files", ""))]
+    model_repo_paths = package_repo_paths(package_dir, row.get("model_files", ""))
+    if package_id in {"longman_rubber_order_20260508", "rubber_recreation_rev_a"}:
+        for repo_path, _label in RUBBER_3D_MODEL_LINKS:
+            if repo_path not in model_repo_paths:
+                model_repo_paths.append(repo_path)
+    model_links = [
+        link
+        for link in (downloadable_file_link(path, Path(path).name) for path in model_repo_paths)
+        if link is not None
+    ]
+
+    dxf_repo_paths = package_repo_paths(package_dir, row.get("dxf_files", ""))
     dxf_links = [
         link
         for link in (file_link(path, Path(path).name) for path in dxf_repo_paths)
         if link is not None
     ]
-    svg_repo_paths = [f"{package_dir.rstrip('/')}/{filename}" for filename in split_pipe(row.get("svg_files", ""))]
+    svg_repo_paths = package_repo_paths(package_dir, row.get("svg_files", ""))
     svg_links = [
         link
         for link in (file_link(path, Path(path).name) for path in svg_repo_paths)
@@ -3280,7 +3345,7 @@ def fabrication_package_payload(row: dict[str, str]) -> dict[str, Any]:
     archive_link = package_archive_link(
         package_id,
         package_dir,
-        [*primary_repo_paths, *visual_repo_paths, *dxf_repo_paths, *svg_repo_paths],
+        [*primary_repo_paths, *visual_repo_paths, *model_repo_paths, *dxf_repo_paths, *svg_repo_paths],
     )
 
     return {
@@ -3294,10 +3359,11 @@ def fabrication_package_payload(row: dict[str, str]) -> dict[str, Any]:
         "package_dir": package_dir,
         "primary_links": primary_links,
         "visual_links": visual_links,
+        "model_links": model_links,
         "dxf_links": dxf_links,
         "svg_links": svg_links,
         "archive_link": archive_link,
-        "file_count": len(primary_links) + len(dxf_links) + len(svg_links),
+        "file_count": len(primary_links) + len(visual_links) + len(model_links) + len(dxf_links) + len(svg_links),
     }
 
 

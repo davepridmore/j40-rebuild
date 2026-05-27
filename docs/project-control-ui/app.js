@@ -1646,32 +1646,44 @@
 
   const CHASSIS_RUBBER_DRAWING_FILE_MAP = {
     "BM-ISO-SM": {
-      svg: "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.svg",
-      dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf",
+      preview: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.svg",
+      scad: "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
+      visual: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html",
     },
     "BM-ISO-LG": {
-      svg: "../../data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.svg",
-      dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.dxf",
+      preview: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.svg",
+      scad: "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
+      visual: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html",
     },
     "FS-OVAL": {
       svg: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.svg",
       dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf",
+      scad: "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
+      visual: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html",
     },
     "FS-STRIP-L": {
       svg: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg",
       dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf",
+      scad: "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
+      visual: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html",
     },
     "FS-STRIP-R": {
       svg: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg",
       dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf",
+      scad: "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
+      visual: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html",
     },
     "BUMP-60010-LONG": {
       svg: "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
       dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+      scad: "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
+      visual: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html",
     },
     "BUMP-60020-SHORT": {
       svg: "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
       dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+      scad: "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
+      visual: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html",
     },
     "BODY-LINER-FULL-WIDTH-HOLD": {
       svg: "../../data/manual/fabrication/rubber_recreation_rev_a/body_liner_full_width_hold_control.svg",
@@ -1680,6 +1692,8 @@
     "EXH-HGR-90917": {
       svg: "../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg",
       dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.dxf",
+      scad: "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
+      visual: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html",
     },
   };
 
@@ -1718,11 +1732,12 @@
 
   function renderChassisRubberOrderImage(row) {
     const drawingFiles = chassisRubberDrawingFiles(row);
-    const svgPath = cleanString(drawingFiles && drawingFiles.svg);
-    const image = svgPath
+    const previewPath = cleanString(drawingFiles && (drawingFiles.preview || drawingFiles.svg));
+    const previewLabel = cleanString(drawingFiles && drawingFiles.preview) ? "3D visual" : "SVG control";
+    const image = previewPath
       ? {
-          path: svgPath,
-          caption: `${cleanString(row.order_id) || "Rubber"} SVG control drawing`,
+          path: previewPath,
+          caption: `${cleanString(row.order_id) || "Rubber"} ${previewLabel}`,
           media_id: `${cleanString(row.order_id).toLowerCase()}_svg`,
           media_type: "photo",
         }
@@ -1730,11 +1745,11 @@
         ? row.image
         : {};
     const prepared = prepareImage(image, row.part || row.order_id || "Rubber order line");
-    const mediaClass = svgPath ? "table-image table-image-contain" : "table-image";
+    const mediaClass = previewPath ? "table-image table-image-contain" : "table-image";
     return `
       <td class="table-image-cell">
         ${renderPreparedMedia(prepared, "table-image-btn", mediaClass)}
-        <span class="table-image-note">${escapeHtml(svgPath ? "SVG control" : "Reference")}</span>
+        <span class="table-image-note">${escapeHtml(previewPath ? previewLabel : "Reference")}</span>
       </td>
     `;
   }
@@ -1746,8 +1761,10 @@
     }
     return `
       <div class="item-links chassis-rubber-drawing-links">
-        ${renderItemLink({ url: files.svg, label: "SVG" }, 0)}
-        ${renderItemLink({ url: files.dxf, label: "DXF", download: true }, 1)}
+        ${files.visual ? renderItemLink({ url: files.visual, label: "3D Visual" }, 0) : ""}
+        ${files.scad ? renderItemLink({ url: files.scad, label: "SCAD", download: true }, 1) : ""}
+        ${files.svg ? renderItemLink({ url: files.svg, label: "SVG" }, 2) : ""}
+        ${files.dxf ? renderItemLink({ url: files.dxf, label: "DXF", download: true }, 3) : ""}
       </div>
     `;
   }
@@ -1790,19 +1807,19 @@
             ${chip("1 supplier request")}
             ${chip(`${currentRows.length} quote lines`)}
             ${holdRows.length ? chip(`${holdRows.length} holds`) : ""}
-            ${chip("SVG + DXF attached")}
+            ${chip("3D + 2D assets attached")}
             ${chip("All dimensions mm")}
             ${chip("Shore A 60 +/-5")}
           </div>
         </div>
         <p class="small-muted">Send this as one Longman quote/order bundle. The rows below are line items inside that single supplier request, not separate custom rubber orders. Hold rows stay in the pack only as reference controls and are not current production quantities.</p>
         <p class="small-muted">Body/front-support rubbers: new black solid EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5. Main body isolators are now function-first custom square pads, not circular/register bushings, because the chassis/tub photos do not prove a shaped rubber socket. Steel cup/seat washers, sleeves, shims, bolts, and captive-thread repairs are separate from the Longman rubber order. Bump stops: public OEM/catalog sources confirm the Toyota part numbers, applications, and 70 mm / 60 mm height split, but not the Toyota mould drawing. Use a Toyota-style two-ear steel saddle/backing plate, tapered/radiused progressive rubber body, flat rectangular strike face, and vehicle bracket/contact measurements. Reject tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, washer stacks, simple cut blocks, or universal bump stops that do not match the axle contact point.</p>
-        <p class="small-muted">Current supplier pack: <a href="../../docs/longman-rubber-order-spec-20260508.md">Longman rubber order spec</a>, <a href="../../data/manual/longman_rubber_order_specs.csv">Longman order CSV</a>, <a href="../../docs/chassis-rubbers-workstream.md">chassis rubbers workstream</a>.</p>
+        <p class="small-muted">Current supplier pack: <a href="../../docs/longman-rubber-order-spec-20260508.md">Longman rubber order spec</a>, <a href="../../data/manual/longman_rubber_order_specs.csv">Longman order CSV</a>, <a href="../../docs/chassis-rubbers-workstream.md">chassis rubbers workstream</a>, <a href="../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html">3D visualisation</a>, and <a href="../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad">OpenSCAD master model</a>.</p>
         <div class="table-wrap requirement-table-wrap">
           <table class="requirement-table chassis-rubber-spec-table">
             <thead>
               <tr>
-                <th>SVG</th>
+                <th>Preview</th>
                 <th>Line</th>
                 <th>Qty</th>
                 <th>Rubber Definition</th>
@@ -2943,6 +2960,7 @@
                     <div class="fabrication-file-rows">
                       ${renderPackageDownload(row.archive_link)}
                       ${renderPackageLinks("3D Visual", row.visual_links)}
+                      ${renderPackageLinks("3D Models", row.model_links)}
                       ${renderPackageLinks("Docs + Data", row.primary_links)}
                       ${renderPackageLinks("Cut DXF", row.dxf_links)}
                       ${renderPackageLinks("SVG Drawings", row.svg_links)}

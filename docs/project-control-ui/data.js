@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-28T01:24:28+05:00",
+  "generated_at": "2026-05-28T01:40:27+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -22625,9 +22625,13 @@ window.J40_DASHBOARD_DATA = {
           "title": "Longman rubber order 2026-05-08",
           "current_status": "current_release",
           "release_position": "Longman quote pack uses square BM-ISO-SM/BM-ISO-LG body pads, FS-OVAL pads, first-article underfloor FS-STRIP-L/R flat strips, first-article bump stops, and hold rows only for any still-unidentified full-width liners.",
-          "notes": "Steel cup/seat washers, sleeves, shims, and bolts are separate hardware. The supplier-facing strip release is now the plain 165 x 38 x 8 mm rubber pair; the old DXF blanks remain template-only unless a new CAD release is generated.",
+          "notes": "Steel cup/seat washers, sleeves, shims, and bolts are separate hardware. The supplier-facing strip release is now the plain 165 x 38 x 8 mm rubber pair; the old DXF blanks remain template-only unless a new CAD release is generated. 3D fabrication assets are now included: interactive/static visualisation plus OpenSCAD source models from rubber_recreation_rev_a/models_3d.",
           "package_dir": "data/manual/fabrication/longman_rubber_order_20260508",
           "primary_links": [
+            {
+              "url": "../../data/manual/fabrication/longman_rubber_order_20260508/README.md",
+              "label": "README"
+            },
             {
               "url": "../../docs/longman-rubber-order-spec-20260508.md",
               "label": "PDF"
@@ -22641,7 +22645,83 @@ window.J40_DASHBOARD_DATA = {
               "label": "Source spec"
             }
           ],
-          "visual_links": [],
+          "visual_links": [
+            {
+              "url": "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html",
+              "label": "Interactive 3D visualisation"
+            },
+            {
+              "url": "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.svg",
+              "label": "Static 3D visualisation"
+            }
+          ],
+          "model_links": [
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
+              "label": "README.md",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
+              "label": "model_manifest.csv",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
+              "label": "j40_rubber_models_master.scad",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
+              "label": "bm_iso_sm_square_pad.scad",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
+              "label": "bm_iso_lg_square_pad.scad",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
+              "label": "fs_oval_front_support_pad.scad",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
+              "label": "fs_strip_l_plain_strip.scad",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
+              "label": "fs_strip_r_plain_strip.scad",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
+              "label": "b_60010_long_measurement_model.scad",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
+              "label": "b_60020_short_measurement_model.scad",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
+              "label": "b_60010_rear_pair_measurement_model.scad",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
+              "label": "exh_hgr_90917_teardrop_cushion.scad",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
+              "label": "old_rubber_checks.md",
+              "download": true
+            }
+          ],
           "dxf_links": [],
           "svg_links": [
             {
@@ -22665,9 +22745,9 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/longman_rubber_order_20260508.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 49051
+            "bytes": 110163
           },
-          "file_count": 7
+          "file_count": 23
         }
       ],
       "chassis_bracket_analysis_register": [],
@@ -22766,6 +22846,16 @@ window.J40_DASHBOARD_DATA = {
               "download": true
             },
             {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
+              "label": "Interactive 3D visualisation",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
+              "label": "Static 3D visualisation",
+              "download": true
+            },
+            {
               "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
               "label": "Bump-stop fabrication spec",
               "download": true
@@ -22773,6 +22863,71 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
               "label": "Rubber dimension sheet PDF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
+              "label": "3D model README",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
+              "label": "3D model manifest CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
+              "label": "OpenSCAD model master",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
+              "label": "BM-ISO-SM OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
+              "label": "BM-ISO-LG OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
+              "label": "FS-OVAL OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
+              "label": "FS-STRIP-L OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
+              "label": "FS-STRIP-R OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
+              "label": "BUMP-60010 long OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
+              "label": "BUMP-60020 short OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
+              "label": "BUMP-60010 rear pair OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
+              "label": "EXH-HGR-90917 OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
+              "label": "Old-rubber 3D closure checks",
               "download": true
             },
             {
@@ -22920,6 +23075,16 @@ window.J40_DASHBOARD_DATA = {
               "download": true
             },
             {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
+              "label": "Interactive 3D visualisation",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
+              "label": "Static 3D visualisation",
+              "download": true
+            },
+            {
               "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
               "label": "Bump-stop fabrication spec",
               "download": true
@@ -22927,6 +23092,71 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
               "label": "Rubber dimension sheet PDF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
+              "label": "3D model README",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
+              "label": "3D model manifest CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
+              "label": "OpenSCAD model master",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
+              "label": "BM-ISO-SM OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
+              "label": "BM-ISO-LG OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
+              "label": "FS-OVAL OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
+              "label": "FS-STRIP-L OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
+              "label": "FS-STRIP-R OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
+              "label": "BUMP-60010 long OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
+              "label": "BUMP-60020 short OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
+              "label": "BUMP-60010 rear pair OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
+              "label": "EXH-HGR-90917 OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
+              "label": "Old-rubber 3D closure checks",
               "download": true
             },
             {
@@ -23152,6 +23382,16 @@ window.J40_DASHBOARD_DATA = {
               "download": true
             },
             {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
+              "label": "Interactive 3D visualisation",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
+              "label": "Static 3D visualisation",
+              "download": true
+            },
+            {
               "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
               "label": "Bump-stop fabrication spec",
               "download": true
@@ -23159,6 +23399,71 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
               "label": "Rubber dimension sheet PDF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
+              "label": "3D model README",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
+              "label": "3D model manifest CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
+              "label": "OpenSCAD model master",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
+              "label": "BM-ISO-SM OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
+              "label": "BM-ISO-LG OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
+              "label": "FS-OVAL OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
+              "label": "FS-STRIP-L OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
+              "label": "FS-STRIP-R OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
+              "label": "BUMP-60010 long OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
+              "label": "BUMP-60020 short OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
+              "label": "BUMP-60010 rear pair OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
+              "label": "EXH-HGR-90917 OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
+              "label": "Old-rubber 3D closure checks",
               "download": true
             },
             {
@@ -23267,6 +23572,16 @@ window.J40_DASHBOARD_DATA = {
               "download": true
             },
             {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
+              "label": "Interactive 3D visualisation",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
+              "label": "Static 3D visualisation",
+              "download": true
+            },
+            {
               "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
               "label": "Bump-stop fabrication spec",
               "download": true
@@ -23274,6 +23589,71 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
               "label": "Rubber dimension sheet PDF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
+              "label": "3D model README",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
+              "label": "3D model manifest CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
+              "label": "OpenSCAD model master",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
+              "label": "BM-ISO-SM OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
+              "label": "BM-ISO-LG OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
+              "label": "FS-OVAL OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
+              "label": "FS-STRIP-L OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
+              "label": "FS-STRIP-R OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
+              "label": "BUMP-60010 long OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
+              "label": "BUMP-60020 short OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
+              "label": "BUMP-60010 rear pair OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
+              "label": "EXH-HGR-90917 OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
+              "label": "Old-rubber 3D closure checks",
               "download": true
             },
             {
@@ -27699,6 +28079,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Fabrication-read static 3D visualisation"
             }
           ],
+          "model_links": [],
           "dxf_links": [
             {
               "url": "../../data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_stand_compact_top_tray_rev_b.dxf",
@@ -27765,7 +28146,7 @@ window.J40_DASHBOARD_DATA = {
             "download": true,
             "bytes": 280913
           },
-          "file_count": 23
+          "file_count": 27
         },
         {
           "requirement_id": "FAB-ELEC-003",
@@ -27800,6 +28181,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Static 3D visualisation"
             }
           ],
+          "model_links": [],
           "dxf_links": [
             {
               "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.dxf",
@@ -27826,7 +28208,7 @@ window.J40_DASHBOARD_DATA = {
             "download": true,
             "bytes": 46195
           },
-          "file_count": 7
+          "file_count": 9
         }
       ],
       "chassis_bracket_analysis_register": [],
@@ -30660,6 +31042,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Static 3D visualisation"
             }
           ],
+          "model_links": [],
           "dxf_links": [
             {
               "url": "../../data/manual/fabrication/suspension_wood_cribbing_rev_a/swc_rectangular_cribbing_block_rev_a.dxf",
@@ -30686,7 +31069,7 @@ window.J40_DASHBOARD_DATA = {
             "download": true,
             "bytes": 32241
           },
-          "file_count": 9
+          "file_count": 11
         },
         {
           "requirement_id": "FAB-ELEC-002",
@@ -30721,6 +31104,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Static 3D visualisation"
             }
           ],
+          "model_links": [],
           "dxf_links": [
             {
               "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.dxf",
@@ -30755,7 +31139,7 @@ window.J40_DASHBOARD_DATA = {
             "download": true,
             "bytes": 65069
           },
-          "file_count": 9
+          "file_count": 11
         },
         {
           "requirement_id": "FAB-ELEC-004",
@@ -30822,6 +31206,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Fabrication-read static 3D visualisation"
             }
           ],
+          "model_links": [],
           "dxf_links": [
             {
               "url": "../../data/manual/fabrication/battery_power_carrier_mount_rev_a/battery_stand_compact_top_tray_rev_b.dxf",
@@ -30888,7 +31273,7 @@ window.J40_DASHBOARD_DATA = {
             "download": true,
             "bytes": 280913
           },
-          "file_count": 23
+          "file_count": 27
         },
         {
           "requirement_id": "FAB-RAD-001",
@@ -30947,6 +31332,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Fabrication-read static 3D visualisation"
             }
           ],
+          "model_links": [],
           "dxf_links": [
             {
               "url": "../../data/manual/fabrication/front_radiator_two_side_retention_rev_a/front_radiator_saddle_right_angle_post_rev_a.dxf",
@@ -30965,7 +31351,7 @@ window.J40_DASHBOARD_DATA = {
             "download": true,
             "bytes": 85349
           },
-          "file_count": 9
+          "file_count": 13
         },
         {
           "requirement_id": "FAB-ELEC-003",
@@ -31000,6 +31386,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Static 3D visualisation"
             }
           ],
+          "model_links": [],
           "dxf_links": [
             {
               "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.dxf",
@@ -31026,7 +31413,7 @@ window.J40_DASHBOARD_DATA = {
             "download": true,
             "bytes": 46195
           },
-          "file_count": 7
+          "file_count": 9
         }
       ],
       "chassis_bracket_analysis_register": [],
@@ -63973,6 +64360,7 @@ window.J40_DASHBOARD_DATA = {
               "label": "Static 3D visualisation"
             }
           ],
+          "model_links": [],
           "dxf_links": [
             {
               "url": "../../data/manual/fabrication/suspension_wood_cribbing_rev_a/swc_rectangular_cribbing_block_rev_a.dxf",
@@ -63999,7 +64387,7 @@ window.J40_DASHBOARD_DATA = {
             "download": true,
             "bytes": 32241
           },
-          "file_count": 9
+          "file_count": 11
         }
       ],
       "chassis_bracket_analysis_register": [],
@@ -69651,6 +70039,16 @@ window.J40_DASHBOARD_DATA = {
             "download": true
           },
           {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
+            "label": "Interactive 3D visualisation",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
+            "label": "Static 3D visualisation",
+            "download": true
+          },
+          {
             "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
             "label": "Bump-stop fabrication spec",
             "download": true
@@ -69658,6 +70056,71 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
             "label": "Rubber dimension sheet PDF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
+            "label": "3D model README",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
+            "label": "3D model manifest CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
+            "label": "OpenSCAD model master",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
+            "label": "BM-ISO-SM OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
+            "label": "BM-ISO-LG OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
+            "label": "FS-OVAL OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
+            "label": "FS-STRIP-L OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
+            "label": "FS-STRIP-R OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
+            "label": "BUMP-60010 long OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
+            "label": "BUMP-60020 short OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
+            "label": "BUMP-60010 rear pair OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
+            "label": "EXH-HGR-90917 OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
+            "label": "Old-rubber 3D closure checks",
             "download": true
           },
           {
@@ -69801,6 +70264,16 @@ window.J40_DASHBOARD_DATA = {
             "download": true
           },
           {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
+            "label": "Interactive 3D visualisation",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
+            "label": "Static 3D visualisation",
+            "download": true
+          },
+          {
             "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
             "label": "Bump-stop fabrication spec",
             "download": true
@@ -69808,6 +70281,71 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
             "label": "Rubber dimension sheet PDF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
+            "label": "3D model README",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
+            "label": "3D model manifest CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
+            "label": "OpenSCAD model master",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
+            "label": "BM-ISO-SM OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
+            "label": "BM-ISO-LG OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
+            "label": "FS-OVAL OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
+            "label": "FS-STRIP-L OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
+            "label": "FS-STRIP-R OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
+            "label": "BUMP-60010 long OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
+            "label": "BUMP-60020 short OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
+            "label": "BUMP-60010 rear pair OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
+            "label": "EXH-HGR-90917 OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
+            "label": "Old-rubber 3D closure checks",
             "download": true
           },
           {
@@ -70025,6 +70563,16 @@ window.J40_DASHBOARD_DATA = {
             "download": true
           },
           {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
+            "label": "Interactive 3D visualisation",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
+            "label": "Static 3D visualisation",
+            "download": true
+          },
+          {
             "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
             "label": "Bump-stop fabrication spec",
             "download": true
@@ -70032,6 +70580,71 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
             "label": "Rubber dimension sheet PDF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
+            "label": "3D model README",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
+            "label": "3D model manifest CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
+            "label": "OpenSCAD model master",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
+            "label": "BM-ISO-SM OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
+            "label": "BM-ISO-LG OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
+            "label": "FS-OVAL OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
+            "label": "FS-STRIP-L OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
+            "label": "FS-STRIP-R OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
+            "label": "BUMP-60010 long OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
+            "label": "BUMP-60020 short OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
+            "label": "BUMP-60010 rear pair OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
+            "label": "EXH-HGR-90917 OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
+            "label": "Old-rubber 3D closure checks",
             "download": true
           },
           {
@@ -70138,6 +70751,16 @@ window.J40_DASHBOARD_DATA = {
             "download": true
           },
           {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
+            "label": "Interactive 3D visualisation",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
+            "label": "Static 3D visualisation",
+            "download": true
+          },
+          {
             "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
             "label": "Bump-stop fabrication spec",
             "download": true
@@ -70145,6 +70768,71 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
             "label": "Rubber dimension sheet PDF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
+            "label": "3D model README",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
+            "label": "3D model manifest CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
+            "label": "OpenSCAD model master",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
+            "label": "BM-ISO-SM OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
+            "label": "BM-ISO-LG OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
+            "label": "FS-OVAL OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
+            "label": "FS-STRIP-L OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
+            "label": "FS-STRIP-R OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
+            "label": "BUMP-60010 long OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
+            "label": "BUMP-60020 short OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
+            "label": "BUMP-60010 rear pair OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
+            "label": "EXH-HGR-90917 OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
+            "label": "Old-rubber 3D closure checks",
             "download": true
           },
           {
@@ -97669,6 +98357,16 @@ window.J40_DASHBOARD_DATA = {
               "download": true
             },
             {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
+              "label": "Interactive 3D visualisation",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
+              "label": "Static 3D visualisation",
+              "download": true
+            },
+            {
               "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
               "label": "Bump-stop fabrication spec",
               "download": true
@@ -97676,6 +98374,71 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
               "label": "Rubber dimension sheet PDF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
+              "label": "3D model README",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
+              "label": "3D model manifest CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
+              "label": "OpenSCAD model master",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
+              "label": "BM-ISO-SM OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
+              "label": "BM-ISO-LG OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
+              "label": "FS-OVAL OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
+              "label": "FS-STRIP-L OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
+              "label": "FS-STRIP-R OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
+              "label": "BUMP-60010 long OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
+              "label": "BUMP-60020 short OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
+              "label": "BUMP-60010 rear pair OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
+              "label": "EXH-HGR-90917 OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
+              "label": "Old-rubber 3D closure checks",
               "download": true
             },
             {
@@ -97823,6 +98586,16 @@ window.J40_DASHBOARD_DATA = {
               "download": true
             },
             {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
+              "label": "Interactive 3D visualisation",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
+              "label": "Static 3D visualisation",
+              "download": true
+            },
+            {
               "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
               "label": "Bump-stop fabrication spec",
               "download": true
@@ -97830,6 +98603,71 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
               "label": "Rubber dimension sheet PDF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
+              "label": "3D model README",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
+              "label": "3D model manifest CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
+              "label": "OpenSCAD model master",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
+              "label": "BM-ISO-SM OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
+              "label": "BM-ISO-LG OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
+              "label": "FS-OVAL OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
+              "label": "FS-STRIP-L OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
+              "label": "FS-STRIP-R OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
+              "label": "BUMP-60010 long OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
+              "label": "BUMP-60020 short OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
+              "label": "BUMP-60010 rear pair OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
+              "label": "EXH-HGR-90917 OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
+              "label": "Old-rubber 3D closure checks",
               "download": true
             },
             {
@@ -97938,6 +98776,16 @@ window.J40_DASHBOARD_DATA = {
               "download": true
             },
             {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
+              "label": "Interactive 3D visualisation",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
+              "label": "Static 3D visualisation",
+              "download": true
+            },
+            {
               "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
               "label": "Bump-stop fabrication spec",
               "download": true
@@ -97945,6 +98793,71 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
               "label": "Rubber dimension sheet PDF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
+              "label": "3D model README",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
+              "label": "3D model manifest CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
+              "label": "OpenSCAD model master",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
+              "label": "BM-ISO-SM OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
+              "label": "BM-ISO-LG OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
+              "label": "FS-OVAL OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
+              "label": "FS-STRIP-L OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
+              "label": "FS-STRIP-R OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
+              "label": "BUMP-60010 long OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
+              "label": "BUMP-60020 short OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
+              "label": "BUMP-60010 rear pair OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
+              "label": "EXH-HGR-90917 OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
+              "label": "Old-rubber 3D closure checks",
               "download": true
             },
             {
@@ -98131,6 +99044,16 @@ window.J40_DASHBOARD_DATA = {
               "download": true
             },
             {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
+              "label": "Interactive 3D visualisation",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
+              "label": "Static 3D visualisation",
+              "download": true
+            },
+            {
               "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
               "label": "Bump-stop fabrication spec",
               "download": true
@@ -98138,6 +99061,71 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
               "label": "Rubber dimension sheet PDF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
+              "label": "3D model README",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
+              "label": "3D model manifest CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
+              "label": "OpenSCAD model master",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
+              "label": "BM-ISO-SM OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
+              "label": "BM-ISO-LG OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
+              "label": "FS-OVAL OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
+              "label": "FS-STRIP-L OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
+              "label": "FS-STRIP-R OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
+              "label": "BUMP-60010 long OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
+              "label": "BUMP-60020 short OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
+              "label": "BUMP-60010 rear pair OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
+              "label": "EXH-HGR-90917 OpenSCAD",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
+              "label": "Old-rubber 3D closure checks",
               "download": true
             },
             {
@@ -109435,6 +110423,16 @@ window.J40_DASHBOARD_DATA = {
             "download": true
           },
           {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
+            "label": "Interactive 3D visualisation",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
+            "label": "Static 3D visualisation",
+            "download": true
+          },
+          {
             "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
             "label": "Bump-stop fabrication spec",
             "download": true
@@ -109442,6 +110440,71 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
             "label": "Rubber dimension sheet PDF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
+            "label": "3D model README",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
+            "label": "3D model manifest CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
+            "label": "OpenSCAD model master",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
+            "label": "BM-ISO-SM OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
+            "label": "BM-ISO-LG OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
+            "label": "FS-OVAL OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
+            "label": "FS-STRIP-L OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
+            "label": "FS-STRIP-R OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
+            "label": "BUMP-60010 long OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
+            "label": "BUMP-60020 short OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
+            "label": "BUMP-60010 rear pair OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
+            "label": "EXH-HGR-90917 OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
+            "label": "Old-rubber 3D closure checks",
             "download": true
           },
           {
@@ -109628,6 +110691,16 @@ window.J40_DASHBOARD_DATA = {
             "download": true
           },
           {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
+            "label": "Interactive 3D visualisation",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
+            "label": "Static 3D visualisation",
+            "download": true
+          },
+          {
             "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
             "label": "Bump-stop fabrication spec",
             "download": true
@@ -109635,6 +110708,71 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
             "label": "Rubber dimension sheet PDF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
+            "label": "3D model README",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
+            "label": "3D model manifest CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
+            "label": "OpenSCAD model master",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
+            "label": "BM-ISO-SM OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
+            "label": "BM-ISO-LG OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
+            "label": "FS-OVAL OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
+            "label": "FS-STRIP-L OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
+            "label": "FS-STRIP-R OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
+            "label": "BUMP-60010 long OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
+            "label": "BUMP-60020 short OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
+            "label": "BUMP-60010 rear pair OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
+            "label": "EXH-HGR-90917 OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
+            "label": "Old-rubber 3D closure checks",
             "download": true
           },
           {
@@ -109743,6 +110881,16 @@ window.J40_DASHBOARD_DATA = {
             "download": true
           },
           {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
+            "label": "Interactive 3D visualisation",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
+            "label": "Static 3D visualisation",
+            "download": true
+          },
+          {
             "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
             "label": "Bump-stop fabrication spec",
             "download": true
@@ -109750,6 +110898,71 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
             "label": "Rubber dimension sheet PDF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
+            "label": "3D model README",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
+            "label": "3D model manifest CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
+            "label": "OpenSCAD model master",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
+            "label": "BM-ISO-SM OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
+            "label": "BM-ISO-LG OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
+            "label": "FS-OVAL OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
+            "label": "FS-STRIP-L OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
+            "label": "FS-STRIP-R OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
+            "label": "BUMP-60010 long OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
+            "label": "BUMP-60020 short OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
+            "label": "BUMP-60010 rear pair OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
+            "label": "EXH-HGR-90917 OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
+            "label": "Old-rubber 3D closure checks",
             "download": true
           },
           {
@@ -110199,6 +111412,16 @@ window.J40_DASHBOARD_DATA = {
             "download": true
           },
           {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
+            "label": "Interactive 3D visualisation",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
+            "label": "Static 3D visualisation",
+            "download": true
+          },
+          {
             "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
             "label": "Bump-stop fabrication spec",
             "download": true
@@ -110206,6 +111429,71 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
             "label": "Rubber dimension sheet PDF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
+            "label": "3D model README",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
+            "label": "3D model manifest CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
+            "label": "OpenSCAD model master",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
+            "label": "BM-ISO-SM OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
+            "label": "BM-ISO-LG OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
+            "label": "FS-OVAL OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
+            "label": "FS-STRIP-L OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
+            "label": "FS-STRIP-R OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
+            "label": "BUMP-60010 long OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
+            "label": "BUMP-60020 short OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
+            "label": "BUMP-60010 rear pair OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
+            "label": "EXH-HGR-90917 OpenSCAD",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
+            "label": "Old-rubber 3D closure checks",
             "download": true
           },
           {
