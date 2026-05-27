@@ -1495,7 +1495,7 @@
       qty: "10 + 2 spares",
       image: "../../photos/20260405_234652.jpg",
       imageCaption: "Tub-side body-mount landing context",
-      spec: "Custom square flat pad 70 x 70 x 22; flat parallel faces; light edge radius/chamfer; leave undrilled or centre-marked until the crush-sleeve OD is known. Final hole = sleeve OD + 0.5-1.0.",
+      spec: "Custom square flat pad 70 x 70 x 22; flat parallel faces; light edge radius/chamfer; 18.0 mm through bore for Toyota 90560-12009 style body-mount spacer/crush tube.",
       route: "Longman consolidated rubber order",
       files: [
         ["Longman Spec", "../../docs/longman-rubber-order-spec-20260508.md"],
@@ -1509,7 +1509,7 @@
       qty: "2 + 1 spare",
       image: "../../photos/20260405_234652.jpg",
       imageCaption: "Tub-side body-mount landing context",
-      spec: "Custom square flat pad 80 x 80 x 24; flat parallel faces; light edge radius/chamfer; same compound batch as BM-ISO-SM where possible. Final hole = sleeve OD + 0.5-1.0.",
+      spec: "Custom square flat pad 80 x 80 x 24; flat parallel faces; light edge radius/chamfer; same compound batch as BM-ISO-SM where possible; 18.0 mm through bore for Toyota 90560-12009 style spacer.",
       route: "Longman consolidated rubber order",
       files: [
         ["Longman Spec", "../../docs/longman-rubber-order-spec-20260508.md"],
@@ -1844,7 +1844,7 @@
             </tbody>
           </table>
         </div>
-        <p class="small-muted">Tolerances: square body pad length/width +/-1.0, height +/-0.5, faces parallel <=0.5; final rubber hole = measured sleeve OD + 0.5-1.0. FS-OVAL outside +/-1.0, hole position +/-0.5, thickness +/-0.5. FS-STRIP-L/R first articles are 165 x 38 x 8 mm with only dry-fit trim pending. Bump stops: height +/-1, base/hole position +/-0.5 after vehicle measurement release, contact centre +/-5; steel saddle must not bend; rubber/steel bond or captive joint must survive compression.</p>
+        <p class="small-muted">Tolerances: square body pad length/width +/-1.0, height +/-0.5, faces parallel <=0.5; body-pad bore 18.0 +0.5/-0.0 for Toyota 90560-12009 style spacer. Sleeve set is qty 6, 48.1 mm length, M10 clearance ID 10.8-11.0 if locally fabricated, with OD copied from old/OE spacer. FS-OVAL outside +/-1.0, hole position +/-0.5, thickness +/-0.5. FS-STRIP-L/R first articles are 165 x 38 x 8 mm with only dry-fit trim pending. Bump stops: height +/-1, base/hole position +/-0.5 after vehicle measurement release, contact centre +/-5; steel saddle must not bend; rubber/steel bond or captive joint must survive compression.</p>
         <p class="small-muted">Remaining holds: possible full-width flat liners need full-length photos/traces before any quote; EXH-HGR-90917 needs a genuine sample or intact original to confirm side profile, insert depth, exact thickness, and reinforcement before local moulding. FS-STRIP-L/R are current first-article order lines at 165 x 38 x 8 mm; dry-fit controls only local end trim and any separate steel retainer trace. Bump stops need BL/BW/P/D/X-Y/G/F values, fabricator side/profile sketch, saddle hole layout, material declaration, and first-article compression recovery check before mould release.</p>
       </article>
     `;
@@ -4619,14 +4619,14 @@
         item: "Small station square body isolator pad",
         partNumber: "longman_rubber_order_specs.csv",
         route: "longman_custom_rubber_order",
-        state: "quote_ready_measurement_before_drill",
+        state: "first_article_ready_oem_spacer_bore",
         image: scoutReferenceImage("../../photos/20260405_234652.jpg", "Tub-side body-mount landing context", "20260405_234652"),
-        spec: "Longman custom square pad. Leave undrilled or centre-marked until the crush-sleeve OD is known.",
+        spec: "Longman custom square pad with 18.0 mm through bore for Toyota 90560-12009 style body-mount spacer/crush tube.",
         qty: "10 + 2 spares",
-        dimension: "70 x 70 x 22; final hole = sleeve OD + 0.5-1.0; faces parallel <=0.5",
+        dimension: "70 x 70 x 22; 18.0 through bore +0.5/-0.0; faces parallel <=0.5",
         material: "Black EPDM or NR/SBR, Shore A 60 +/-5",
         sourceBasis: "docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv",
-        action: "Quote square pads first; drill/punch after sleeve measurement and station dry-fit.",
+        action: "Quote/drill/punch as 18.0 mm bore; dry-fit with Toyota 90560-12009 style sleeve.",
         notes: "Primary custom shape is square; trim only if station photos prove a clash.",
       },
       {
@@ -4634,14 +4634,14 @@
         item: "Large station square body isolator pad",
         partNumber: "longman_rubber_order_specs.csv",
         route: "longman_custom_rubber_order",
-        state: "quote_ready_measurement_before_drill",
+        state: "first_article_ready_oem_spacer_bore",
         image: scoutReferenceImage("../../photos/20260405_234652.jpg", "Tub-side body-mount landing context", "20260405_234652"),
-        spec: "Longman custom square pad. Same compound batch as the small pads where possible; leave undrilled or centre-marked until sleeve OD is known.",
+        spec: "Longman custom square pad. Same compound batch as the small pads where possible; 18.0 mm through bore for Toyota 90560-12009 style spacer.",
         qty: "2 + 1 spare",
-        dimension: "80 x 80 x 24; final hole = sleeve OD + 0.5-1.0; faces parallel <=0.5",
+        dimension: "80 x 80 x 24; 18.0 through bore +0.5/-0.0; faces parallel <=0.5",
         material: "Black EPDM or NR/SBR, Shore A 60 +/-5",
         sourceBasis: "docs/longman-rubber-order-spec-20260508.md; data/manual/longman_rubber_order_specs.csv",
-        action: "Quote square pads first; drill/punch after sleeve measurement and station dry-fit.",
+        action: "Quote/drill/punch as 18.0 mm bore; dry-fit with Toyota 90560-12009 style sleeve.",
         notes: "Primary custom shape is square; trim only if station photos prove a clash.",
       },
       {

@@ -59,16 +59,16 @@ def body_pad_scad(part_id: str, title: str, size: float, height: float, qty: str
         + f"""
 // Current order basis:
 // - Square solid pad {size:g} x {size:g} x {height:g}.
-// - hole_d defaults to 0 because the steel crush-sleeve OD is not released yet.
-// - After sleeve measurement, set hole_d = sleeve_od + 0.5 to 1.0 mm.
-// - Set center_mark = true for an undrilled pad with a shallow centre mark.
+// - Production bore is 18.0 mm for the Toyota 90560-12009 style body-mount spacer.
+// - Toyota 90560-12009 is the best release basis: 48.1 mm spacer length, six sleeves.
+// - Production release uses hole_d = 18.0; hole_d = 0 is a non-release CAD override.
 
 module {part_id.lower().replace('-', '_')}_square_pad(
   pad_size = {size:g},
   pad_height = {height:g},
   corner_r = 1.5,
   edge_chamfer = 0.0,
-  hole_d = 0,
+  hole_d = 18.0,
   center_mark = true
 ) {{
   difference() {{
@@ -93,11 +93,12 @@ module {part_id.lower().replace('-', '_')}_square_pad(
         filename=filename,
         title=title,
         quantity=qty,
-        release_status="quote-ready envelope; final bore held until sleeve OD is measured",
-        controls=f"{size:g} x {size:g} x {height:g} mm square pad; optional hole_d parameter",
+        release_status="first-article model with 18.0 mm bore for Toyota 90560-12009 style spacer",
+        controls=f"{size:g} x {size:g} x {height:g} mm square pad; 18.0 mm through bore; production release bore",
         old_part_questions=(
-            "Measure old sleeve OD/ID/length, old rubber centre-hole diameter, whether the hole is centred or offset, "
-            "top/bottom washer imprint diameter, and whether the old stack was one-piece or split."
+            "Local-fit check only: confirm Toyota 90560-12009 style spacer or old sleeve is present; "
+            "caliper-check old/OE sleeve OD/ID only if a local machinist must copy it; measure top/bottom washer "
+            "imprint diameter and whether the old stack was one-piece or split."
         ),
     )
     return model, text
@@ -361,10 +362,10 @@ def write_master_scad(files: list[ModelFile]) -> None:
     includes = "\n".join(f'use <{model.filename}>;' for model in files)
     body = """
 // Render one part by uncommenting a call below.
-// Keep body pads with hole_d = 0 until sleeve OD is known.
+// Body pads now default to the released 18.0 mm bore for Toyota 90560-12009 style spacers.
 
-// bm_iso_sm_square_pad(hole_d = 0);
-// bm_iso_lg_square_pad(hole_d = 0);
+// bm_iso_sm_square_pad();
+// bm_iso_lg_square_pad();
 // fs_oval_front_support_pad(relief_depth = 0);
 // fs_strip_l_plain_strip(hole_d = 0);
 // fs_strip_r_plain_strip(hole_d = 0);
@@ -404,19 +405,31 @@ def write_questions(files: list[ModelFile]) -> None:
 
 These checks are only needed when we are ready to release drilled holes, trim,
 or mould details. The OpenSCAD files keep uncertain features as parameters.
+For the main body pads, the remaining uncertainty is local vehicle fit only; it
+does not reopen the released Toyota spacer basis, sleeve length, or 18.0 mm bore.
 
-## Why The Main Body Pads Are Undrilled
+## Main Body Pad Bore Spec
 
-The main body pads are undrilled in the quote model because the rubber hole is
-not the clamping feature. The bolt should clamp through a steel crush sleeve,
-and the rubber hole only needs to clear that sleeve cleanly. The final bore is:
+The main body pads now have a released first-article bore. The rubber hole is
+not the clamping feature; the bolt clamps through a steel crush sleeve, and the
+rubber hole only clears that sleeve cleanly. The release bore is:
 
-`final rubber hole = measured sleeve OD + 0.5 to 1.0 mm`
+`final rubber hole = Toyota 90560-12009 style sleeve clearance, 18.0 mm nominal`
 
-If the pad is drilled before the sleeve OD is known, a too-small hole can tear or
-grab the sleeve, and a too-large hole can let the stack wander. A centre mark is
-safe for quote/first article; final drilling is safe after the sleeve OD and
-stack height are confirmed.
+The best current release basis is Toyota `90560-12009`, the body-mount spacer
+listed at `L=48.1 mm`. Field evidence from an original Toyota mount stack reports
+the OE tube as slightly over `17 mm` OD and the matching lower cushion centre
+hole as `18 mm`; aftermarket `16 mm` tube is specifically smaller/sloppier.
+
+Use `18.0 mm` as the first-article rubber bore for the main body pads. Source
+genuine Toyota `90560-12009` spacers if possible. If fabricated locally, copy an
+old/OE spacer, not arbitrary tube stock, and reject `16 mm` OD tube unless a
+dry-fit proves it does not let the stack wander.
+
+The measurements to collect on the vehicle side are the ones only the old parts
+can answer: whether this truck has the expected six-sleeve mount family, the
+old/OE sleeve OD to copy if genuine spacers cannot be sourced, washer/cup imprints,
+landing footprint, and one dry-fit stack check.
 
 ## Checks
 
@@ -448,8 +461,9 @@ replace the 2D DXF/SVG/PDF pack or the CSV release gates.
 
 ## Critical Release Rules
 
-- `BM-ISO-SM` and `BM-ISO-LG` default to `hole_d = 0`; set `hole_d` only after
-  the crush-sleeve OD is measured.
+- `BM-ISO-SM` and `BM-ISO-LG` default to `hole_d = 18.0`, matching the Toyota
+  `90560-12009` spacer basis. Production release uses the 18.0 mm bore; `hole_d = 0`
+  is a non-release CAD override only.
 - `FS-OVAL` has optional `relief_depth`; the old part must prove whether the
   relief is real, blind, through-cut, or only deformation.
 - `FS-STRIP-L/R` default to no holes; retainer slots are separate steel detail

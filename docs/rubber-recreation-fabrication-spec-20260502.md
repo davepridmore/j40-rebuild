@@ -38,7 +38,7 @@ Send these files to the rubber/steel fabricator:
 6. Matching `*.svg` files - visual reference copies.
 7. `models_3d/*.scad` - parametric 3D models for current square-pad quote geometry and hold-only bump-stop/exhaust reference shapes.
 
-Note: the May 8 Longman order supersedes the earlier circular body-pad placeholder for the main body isolators. The active quote basis is square `BM-ISO-SM` and `BM-ISO-LG` pads. Use `models_3d/bm_iso_sm_square_pad.scad` and `models_3d/bm_iso_lg_square_pad.scad` for the current 3D envelopes. They are intentionally undrilled until the steel crush-sleeve OD is measured; final bore is sleeve OD plus `0.5-1.0 mm`.
+Note: the May 8 Longman order supersedes the earlier circular body-pad placeholder for the main body isolators. The active quote basis is square `BM-ISO-SM` and `BM-ISO-LG` pads. Use `models_3d/bm_iso_sm_square_pad.scad` and `bm_iso_lg_square_pad.scad` for the current 3D envelopes. They default to the production `18.0 mm` bore for the Toyota `90560-12009` style body-mount sleeve.
 
 Package contents:
 

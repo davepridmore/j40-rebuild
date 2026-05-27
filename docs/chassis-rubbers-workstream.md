@@ -18,7 +18,7 @@ The old release specs assumed cup/seat washers and a controlled crush sleeve. Th
 Critical controls:
 
 - Installed rubber height and final compression.
-- Central hole/sleeve fit once the sleeve OD is known.
+- Central `18.0 mm` bore for Toyota `90560-12009` style sleeve.
 - Bolt clamps through the steel sleeve, not by crushing rubber until metal contact.
 - Bearing area covers the landing faces without running onto bends, seams, weld lips, repairs, or rust-thinned edges.
 - Similar hardness across the set, target Shore A `60 +/-5`.
@@ -30,8 +30,8 @@ Preferred custom shape for the main pads is square. Release trimming only if a l
 
 | ID | Status | Qty | Current spec | Release gate |
 | --- | --- | ---: | --- | --- |
-| `BM-ISO-SM` | Quote ready, drill after sleeve measurement | `10 + 2 spares` | Square pad `70 x 70 x 22 mm`, flat parallel faces, light edge radius/chamfer, Shore A `60 +/-5`. | Confirm each station has enough flat footprint; final hole = sleeve OD + `0.5-1.0 mm`. |
-| `BM-ISO-LG` | Quote ready, drill after sleeve measurement | `2 + 1 spare` | Square pad `80 x 80 x 24 mm`, flat parallel faces, light edge radius/chamfer, same compound batch as small pads if possible. | Confirm the large-pair station; final hole = sleeve OD + `0.5-1.0 mm`. |
+| `BM-ISO-SM` | First-article ready with OE spacer bore | `10 + 2 spares` | Square pad `70 x 70 x 22 mm`, flat parallel faces, light edge radius/chamfer, `18.0 mm` through bore, Shore A `60 +/-5`. | Confirm each station has enough flat footprint; sleeve basis is Toyota `90560-12009` style spacer. |
+| `BM-ISO-LG` | First-article ready with OE spacer bore | `2 + 1 spare` | Square pad `80 x 80 x 24 mm`, flat parallel faces, light edge radius/chamfer, `18.0 mm` through bore, same compound batch as small pads if possible. | Confirm the large-pair station; sleeve basis is Toyota `90560-12009` style spacer. |
 | `FS-OVAL` | Quote ready, caliper before production | `2` | Oval/capsule pad `96 x 64 x 15 mm`, two `12 mm` holes at `64 mm` centres; rectangular relief only if old sample confirms it is functional. | Confirm hole centres, thickness, insert/boss/relief construction. |
 | `FS-STRIP-L` | Custom first article ready | `1` | Flat underfloor body-support strip `165 x 38 x 8 mm`; no through-holes in the rubber by default; Shore A `60 +/-5`. | Dry-fit on the actual landing, then apply any side-specific end trim; reuse or trace the slotted steel retainer separately if needed. |
 | `FS-STRIP-R` | Custom first article ready | `1` | Same flat strip spec as left. Use the same blank unless the right side proves a handed end trim. | Same first-article dry-fit and retainer rule as left. |
@@ -82,6 +82,27 @@ The following remain required for body-mount stack control but are excluded from
 
 Inspect the existing washers/cups separately. Reuse only if they are flat where required, not thinned, not cracked, and still fit the rubber/sleeve stack. If new ones are needed, order them as steel hardware, not as rubber.
 
+### Body-Mount Sleeve Spec
+
+The sleeve release is Toyota `90560-12009`, listed in Toyota Heritage/parts data as the body-mount spacer with `L=48.1 mm` on late 40-series body mounts. Open kit instructions also show the standard body-mount pack uses six steel tubes.
+
+The only direct OD evidence found so far is a physical field measurement on IH8MUD: all six original crush tubes were identified as Toyota `90560-12009`; the Toyota tube was described as a bit over `17 mm` OD, the lower Toyota bushing centre hole as `18 mm`, and a `16 mm` aftermarket tube as smaller/sloppier.
+
+Use this as the exact best spec:
+
+- Sleeve part: Toyota `90560-12009` style body-mount spacer, qty `6`.
+- Sleeve length: `48.1 mm`.
+- Sleeve ID: M10 clearance, `10.8-11.0 mm` if locally fabricated.
+- Sleeve OD: copy a genuine/old `90560-12009`; do not choose arbitrary tube stock.
+- Rubber bore: `18.0 mm` through for `BM-ISO-SM` and `BM-ISO-LG`.
+- Reject: `16 mm` OD tube unless a dry-fit proves the stack cannot wander.
+- Local fabrication route: machine one sample tube from old/OE dimensions, dry-fit with the `18.0 mm` rubber bore and cup/washer stack, then release the other five.
+
+The open checks are local-fit checks only. They do not ask Longman or the machinist
+to invent a dimension: the released spec remains Toyota `90560-12009`, `48.1 mm`
+long, `18.0 mm` rubber bore, and OE/old-sleeve OD copied if a local sleeve has to
+be made.
+
 ## Measurements To Collect
 
 ### Main Body Isolator Stations
@@ -94,8 +115,8 @@ For every station:
 - Maximum flat footprint before bends, seams, weld lips, repairs, or rust-thinned edges.
 - Desired free height or best old-sample free height.
 - Bolt size and captive nut or through-bolt arrangement.
-- Old crush-sleeve ID, OD, and length if available.
-- Final sleeve OD; rubber hole should be sleeve OD + `0.5-1.0 mm`.
+- Old crush-sleeve OD/ID if available, only to confirm it matches the Toyota `90560-12009` family or to give a local machinist the OD to copy.
+- Confirm the released `18.0 mm` rubber bore clears the sleeve without allowing the stack to wander.
 - Whether the square `70 x 70` or `80 x 80` pad fits, or which exact corners/edges need trimming.
 
 ### Front-Support Oval Pads

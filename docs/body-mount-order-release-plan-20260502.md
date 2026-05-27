@@ -34,7 +34,7 @@ Use this as the quote list only after the station count is confirmed. Source: Wh
 | Body mount cushion NO.5 | `52208-90300` | `4` |
 | Body mount collar | `90540-17045` | `2` |
 | Body mount stopper/seat | `52023-60010` | `4` |
-| Washer/seat | `90560-12009` | `6` |
+| Spacer/crush tube | `90560-12009` | `6` |
 | Washer/seat | `90560-12233` | `4` |
 | Body mount spacer | `52228-22010` | `6` |
 | Bolt | `90109-10039` | `2` |
@@ -71,7 +71,7 @@ These are the local order packs unless the OE/reproduction package includes matc
 
 | Line | Item | Qty To Order | Spec |
 | --- | --- | ---: | --- |
-| `BM-HW-001` | Main body mount sleeves/crush tubes | `8 blanks` | ID `10.8-11.0 mm` for M10 bolt; OD and cut length held until old sleeve/dry-stack measurement |
+| `BM-HW-001` | Main body mount sleeves/crush tubes | `6` | Toyota `90560-12009` style body-mount spacer/crush tube; length `48.1 mm`; M10 clearance ID `10.8-11.0 mm` if locally fabricated; copy old/OE spacer OD, not arbitrary tube stock |
 | `BM-HW-002` | Cup/seat washers | `14` | `10` small at `64 mm` OD, `2` large at `78 mm` OD, plus `2` spare; `11 mm` hole, `2-3 mm` dish/register depth, `2.5-3.0 mm` steel |
 | `BM-HW-003` | M10 bolt length trial pack | `16` | M10 x `1.25`, class `8.8` minimum: `70 mm x4`, `80 mm x4`, `90 mm x4`, `100 mm x4` |
 | `BM-HW-004` | M10 nuts/washers/repair pack | `1 pack` | all-metal nuts x`12`, nyloc nuts x`12`, flat washers x`40`, spring washers x`20`, M10 x `1.25` weld nuts x`4`, `3 mm` repair tabs x`4` |
@@ -85,7 +85,7 @@ These are the open actions that still block final release:
 
 1. `BMA-001`: lay out every old body-mount part by station and photograph it.
 2. `BMA-002`: choose OE/reproduction package or local fabrication; mark the other route do-not-order.
-3. `BMA-003`: measure the current stopper/seat pieces and match them to `52023-60010`, `90560-12009`, or `90560-12233` if using OE route.
+3. `BMA-003`: measure the current stopper/seat pieces and match them to `52023-60010` or `90560-12233` if using OE route; keep `90560-12009` as the six-piece spacer/crush-tube reference.
 4. `BMA-004`: caliper-measure the best large and small circular cushions.
 5. `BMA-005`: prove whether the small mount is a one-piece `22 mm` cushion or a split stack.
 6. `BMA-006`: measure sleeve ID, OD, and length, or dry-stack and derive sleeve length.

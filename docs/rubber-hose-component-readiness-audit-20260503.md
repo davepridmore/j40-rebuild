@@ -12,7 +12,7 @@ The remaining holds are no longer generic "measure every pipe" holds. They are i
 
 The body/front-support rubber recreation parts now have a separate Longman order spec in [Longman Rubber Order Spec](longman-rubber-order-spec-20260508.md). The current preferred body-pad quote shape is square flat isolator pads because the vehicle photos do not prove molded sockets on either side; final hole/sleeve and station trim still come from removed samples and station measurements.
 
-- Main body isolator pads: `10` small square quote pads `70 x 70 x 22 mm`, plus `2` large square quote pads `80 x 80 x 24 mm`; final hole is measured sleeve OD + `0.5-1.0 mm`.
+- Main body isolator pads: `10` small square quote pads `70 x 70 x 22 mm`, plus `2` large square quote pads `80 x 80 x 24 mm`; current first-article bore is `18.0 mm` for Toyota `90560-12009` style body-mount sleeves.
 - Front two-hole oval isolators: `2` pieces, `96 mm x 64 mm x 15 mm`, two `12 mm` holes at `64 mm` centers, with relief only if the physical sample confirms it is functional.
 - Front support strip rubbers: left/right are now released as plain first-article underfloor support strips, `165 x 38 x 8 mm`, with final end trim controlled by dry-fit.
 

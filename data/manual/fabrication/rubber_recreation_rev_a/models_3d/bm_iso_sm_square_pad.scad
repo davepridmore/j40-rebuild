@@ -23,16 +23,16 @@ module capsule_2d(length, width) {
 
 // Current order basis:
 // - Square solid pad 70 x 70 x 22.
-// - hole_d defaults to 0 because the steel crush-sleeve OD is not released yet.
-// - After sleeve measurement, set hole_d = sleeve_od + 0.5 to 1.0 mm.
-// - Set center_mark = true for an undrilled pad with a shallow centre mark.
+// - Production bore is 18.0 mm for the Toyota 90560-12009 style body-mount spacer.
+// - Toyota 90560-12009 is the best release basis: 48.1 mm spacer length, six sleeves.
+// - Production release uses hole_d = 18.0; hole_d = 0 is a non-release CAD override.
 
 module bm_iso_sm_square_pad(
   pad_size = 70,
   pad_height = 22,
   corner_r = 1.5,
   edge_chamfer = 0.0,
-  hole_d = 0,
+  hole_d = 18.0,
   center_mark = true
 ) {
   difference() {

@@ -2,24 +2,36 @@
 
 These checks are only needed when we are ready to release drilled holes, trim,
 or mould details. The OpenSCAD files keep uncertain features as parameters.
+For the main body pads, the remaining uncertainty is local vehicle fit only; it
+does not reopen the released Toyota spacer basis, sleeve length, or 18.0 mm bore.
 
-## Why The Main Body Pads Are Undrilled
+## Main Body Pad Bore Spec
 
-The main body pads are undrilled in the quote model because the rubber hole is
-not the clamping feature. The bolt should clamp through a steel crush sleeve,
-and the rubber hole only needs to clear that sleeve cleanly. The final bore is:
+The main body pads now have a released first-article bore. The rubber hole is
+not the clamping feature; the bolt clamps through a steel crush sleeve, and the
+rubber hole only clears that sleeve cleanly. The release bore is:
 
-`final rubber hole = measured sleeve OD + 0.5 to 1.0 mm`
+`final rubber hole = Toyota 90560-12009 style sleeve clearance, 18.0 mm nominal`
 
-If the pad is drilled before the sleeve OD is known, a too-small hole can tear or
-grab the sleeve, and a too-large hole can let the stack wander. A centre mark is
-safe for quote/first article; final drilling is safe after the sleeve OD and
-stack height are confirmed.
+The best current release basis is Toyota `90560-12009`, the body-mount spacer
+listed at `L=48.1 mm`. Field evidence from an original Toyota mount stack reports
+the OE tube as slightly over `17 mm` OD and the matching lower cushion centre
+hole as `18 mm`; aftermarket `16 mm` tube is specifically smaller/sloppier.
+
+Use `18.0 mm` as the first-article rubber bore for the main body pads. Source
+genuine Toyota `90560-12009` spacers if possible. If fabricated locally, copy an
+old/OE spacer, not arbitrary tube stock, and reject `16 mm` OD tube unless a
+dry-fit proves it does not let the stack wander.
+
+The measurements to collect on the vehicle side are the ones only the old parts
+can answer: whether this truck has the expected six-sleeve mount family, the
+old/OE sleeve OD to copy if genuine spacers cannot be sourced, washer/cup imprints,
+landing footprint, and one dry-fit stack check.
 
 ## Checks
 
-- `BM-ISO-SM`: Measure old sleeve OD/ID/length, old rubber centre-hole diameter, whether the hole is centred or offset, top/bottom washer imprint diameter, and whether the old stack was one-piece or split.
-- `BM-ISO-LG`: Measure old sleeve OD/ID/length, old rubber centre-hole diameter, whether the hole is centred or offset, top/bottom washer imprint diameter, and whether the old stack was one-piece or split.
+- `BM-ISO-SM`: Local-fit check only: confirm Toyota 90560-12009 style spacer or old sleeve is present; caliper-check old/OE sleeve OD/ID only if a local machinist must copy it; measure top/bottom washer imprint diameter and whether the old stack was one-piece or split.
+- `BM-ISO-LG`: Local-fit check only: confirm Toyota 90560-12009 style spacer or old sleeve is present; caliper-check old/OE sleeve OD/ID only if a local machinist must copy it; measure top/bottom washer imprint diameter and whether the old stack was one-piece or split.
 - `FS-OVAL`: Confirm hole centre spacing, hole diameter, thickness, insert/boss OD, whether insert is bonded or loose, and whether the 36 x 18 relief is real or just deformation.
 - `FS-STRIP-L`: Check whether old rubber has any real pierced holes or only retainer marks, whether ends are square or trimmed, actual thickness, and whether left/right are identical.
 - `FS-STRIP-R`: Check whether old rubber has any real pierced holes or only retainer marks, whether ends are square or trimmed, actual thickness, and whether left/right are identical.

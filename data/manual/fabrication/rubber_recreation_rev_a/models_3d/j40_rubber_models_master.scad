@@ -30,10 +30,10 @@ use <b_60020_short_measurement_model.scad>;
 use <b_60010_rear_pair_measurement_model.scad>;
 use <exh_hgr_90917_teardrop_cushion.scad>;
 // Render one part by uncommenting a call below.
-// Keep body pads with hole_d = 0 until sleeve OD is known.
+// Body pads now default to the released 18.0 mm bore for Toyota 90560-12009 style spacers.
 
-// bm_iso_sm_square_pad(hole_d = 0);
-// bm_iso_lg_square_pad(hole_d = 0);
+// bm_iso_sm_square_pad();
+// bm_iso_lg_square_pad();
 // fs_oval_front_support_pad(relief_depth = 0);
 // fs_strip_l_plain_strip(hole_d = 0);
 // fs_strip_r_plain_strip(hole_d = 0);

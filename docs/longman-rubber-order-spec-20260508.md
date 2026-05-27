@@ -25,8 +25,8 @@ Steel body-mount washers/cups, sleeves, shims, bolts, and fasteners are not part
 
 | ID | Part | Required Qty | Optional Spare Qty | Longman quote spec | Hole / insert status | Material |
 | --- | --- | ---: | ---: | --- | --- | --- |
-| `BM-ISO-SM` | Main body isolator pad, small stations | `10` | `2` | Square pad `70 x 70 x 22 mm`. Flat parallel faces; light edge radius/chamfer. | Leave undrilled for quote, or mark centre only. Final hole = measured crush-sleeve OD + `0.5-1.0 mm`. | Solid EPDM or NR/SBR, Shore A `60 +/-5`. |
-| `BM-ISO-LG` | Main body isolator pad, large stations | `2` | `1` | Square pad `80 x 80 x 24 mm`. Flat parallel faces; light edge radius/chamfer. | Leave undrilled for quote, or mark centre only. Final hole = measured crush-sleeve OD + `0.5-1.0 mm`. | Same batch/type as `BM-ISO-SM` where possible. |
+| `BM-ISO-SM` | Main body isolator pad, small stations | `10` | `2` | Square pad `70 x 70 x 22 mm`. Flat parallel faces; light edge radius/chamfer. | Production `18.0 mm` through bore for Toyota `90560-12009` style body-mount spacer. | Solid EPDM or NR/SBR, Shore A `60 +/-5`. |
+| `BM-ISO-LG` | Main body isolator pad, large stations | `2` | `1` | Square pad `80 x 80 x 24 mm`. Flat parallel faces; light edge radius/chamfer. | Production `18.0 mm` through bore for Toyota `90560-12009` style body-mount spacer. | Same batch/type as `BM-ISO-SM` where possible. |
 | `FS-OVAL` | Two-hole front-support isolator pad | `2` | `0` | Oval/capsule pad `96 x 64 x 15 mm`, two `12 mm` through holes at `64 mm` centres, clean hole edges. Rectangular relief `36 x 18 mm` with `R3` corners only if physical sample confirms it is needed. | Confirm whether old insert/boss is bonded, loose, or just washer imprint before production. | Solid EPDM or NR/SBR, Shore A `60 +/-5`. |
 | `FS-STRIP-L` | Underfloor body-support strip liner, left | `1` | `0` | Flat strip `165 x 38 x 8 mm`. Plain rubber strip only: smooth edges, flat parallel faces, no stepped section. | No through-holes in rubber by default. Reuse or trace the slotted steel retainer separately if needed. | Solid EPDM or NR/SBR strip, Shore A `60 +/-5`. |
 | `FS-STRIP-R` | Underfloor body-support strip liner, right | `1` | `0` | Same rubber spec as left: flat strip `165 x 38 x 8 mm`. Use the same blank unless the install sample proves a handed end trim. | Same retainer rule as left; do not invent slot geometry in the rubber. | Same batch/type as left strip. |
@@ -41,14 +41,14 @@ The body pads are not shape-matched to a molded chassis socket. The important co
 
 - Free height and installed compression.
 - Matching hardness across the set.
-- Central hole after the steel crush sleeve is known.
+- Central `18.0 mm` bore for Toyota `90560-12009` style body-mount spacer.
 - Enough footprint to cover the tub/chassis landing faces.
 - No overhang onto bends, seams, weld lips, captive nut repairs, or rust-thinned edges.
 - Bolt clamps through the steel sleeve, not by crushing rubber until metal contact.
 
 For initial quote, use the square dimensions in the table. If any station needs corner trimming or a relieved edge, release that exact trimmed shape after the landing-face photos are checked.
 
-3D model files for the current quote geometry are in `data/manual/fabrication/rubber_recreation_rev_a/models_3d/`. The body-pad models default to `hole_d = 0` with a centre mark only; set `hole_d` only after the crush-sleeve OD is measured. The intended final rule is sleeve OD plus `0.5-1.0 mm` clearance, not a guessed drilled hole.
+3D model files for the current quote geometry are in `data/manual/fabrication/rubber_recreation_rev_a/models_3d/`. The body-pad models default to `hole_d = 18.0`, based on Toyota `90560-12009` spacer evidence. Production release uses the 18.0 mm bore; `hole_d = 0` is a non-release CAD override only.
 
 ## Bump Stop Shape
 
@@ -103,9 +103,13 @@ For every body-mount station:
 - Maximum flat footprint available before bends, seams, weld lips, captive-nut repairs, or rust-thinned edges.
 - Desired rubber free height at that station, or old rubber height if a best sample survives.
 - Bolt size and whether the station uses captive nut or through-bolt.
-- Old crush-sleeve ID, OD, and length if available.
-- Final chosen sleeve OD; Longman hole should be sleeve OD + `0.5-1.0 mm`.
+- Old crush-sleeve OD/ID if available, only to confirm the Toyota `90560-12009` family or give a local machinist the OD to copy.
+- Confirm the released `18.0 mm` Longman bore clears the sleeve without allowing stack wander.
 - Note whether square `70 x 70` or `80 x 80` pad fits, or which exact corners/edges need trimming.
+
+These are local vehicle checks only. They do not reopen the body-pad bore or sleeve
+length spec: quote production pads with an `18.0 mm` bore for Toyota `90560-12009`
+style spacers, and use `48.1 mm` sleeves.
 
 ### Front Oval Pads
 
