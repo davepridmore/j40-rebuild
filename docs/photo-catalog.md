@@ -1,6 +1,6 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-05-29 01:22:15
+- Generated: 2026-05-29 01:24:43
 - Total media files indexed: 795 (784 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
@@ -23,13 +23,13 @@
 | `electrical_reset` | 3 |
 | `electrical_rework` | 18 |
 | `eps_vitz_upgrade` | 1 |
-| `fabrication_measurement` | 16 |
+| `fabrication_measurement` | 39 |
 | `hardware_refinish` | 44 |
 | `mechanical_baseline` | 22 |
 | `mechanical_cleaning` | 14 |
 | `mechanical_inspection` | 5 |
 | `procurement_reconciliation` | 140 |
-| `reference_material` | 101 |
+| `reference_material` | 78 |
 | `removed_parts_cataloguing` | 16 |
 | `rust_assessment` | 63 |
 | `steering_brakes_suspension` | 11 |
@@ -82,7 +82,7 @@
 | `documentation_reference` | `handwritten_notes` | 3 | 2026-04-01 | `20260401_111029_gp_6ebGjXdw.jpg` |
 | `documentation_reference` | `off_vehicle_workstation_reference_video` | 2 | 2026-03-29 to 2026-04-23 | `20260329_095138.mp4` |
 | `documentation_reference` | `pakwheels_listing_screenshot` | 1 | 2026-03-13 | `Screenshot_20260313_054936_PakWheels.jpg` |
-| `documentation_reference` | `reference_media` | 90 | 2026-04-14 to 2026-05-29 | `20260414_000833_gp_7PzMcRKw.jpg` |
+| `documentation_reference` | `reference_media` | 67 | 2026-04-14 to 2026-05-28 | `20260414_000833_gp_7PzMcRKw.jpg` |
 | `electrical_system` | `alternator_charge_regulator_wiring` | 2 | 2026-05-17 | `20260517_204740_gp_yI8f8DQw.jpg` |
 | `electrical_system` | `battery_power_carrier_100a_cutoff_breaker` | 1 | 2026-05-15 | `20260515_112836_gp_sFdn9AyA.jpg` |
 | `electrical_system` | `battery_power_carrier_midi_fuse_bank` | 1 | 2026-05-15 | `20260515_112907_gp_wtj4G8tQ.jpg` |
@@ -101,7 +101,7 @@
 | `engine_bay` | `battery_side_tray_structure_context` | 1 | 2026-05-12 | `20260512_100100_user_battery_side_tray_structure_context.png` |
 | `engine_bay` | `bellhousing_clutch_linkage_and_gearbox_case` | 3 | 2026-04-30 | `20260430_215915_gp_ycQ395Gg.jpg` |
 | `engine_bay` | `cooling_hoses_fan_belt_and_radiator_support` | 5 | 2026-04-30 to 2026-05-12 | `20260430_215957_gp_2iBbUagw.jpg` |
-| `engine_bay` | `cooling_pipe_fabrication_samples` | 6 | 2026-05-02 | `20260502_004044_gp_Hx4Yo0Qg.jpg` |
+| `engine_bay` | `cooling_pipe_fabrication_samples` | 29 | 2026-05-02 to 2026-05-29 | `20260502_004044_gp_Hx4Yo0Qg.jpg` |
 | `engine_bay` | `engine_bay_overview` | 15 | 2026-03-17 to 2026-04-23 | `20260317_235150.jpg` |
 | `engine_bay` | `engine_interior_and_stripdown_detail` | 32 | 2026-04-20 | `20260420_005132_gp_MgOMVKpQ.jpeg` |
 | `engine_bay` | `engine_powertrain_cleaning_baseline` | 19 | 2026-05-01 to 2026-05-12 | `20260501_194330_gp_CogcrEXA.jpg` |

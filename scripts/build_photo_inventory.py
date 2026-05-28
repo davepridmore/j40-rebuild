@@ -1326,6 +1326,32 @@ PIPE_SAMPLE_SORTING_20260502_LENGTH_FILES = (
     "20260502_161214_gp_zc3zwXlg.jpg",
 )
 
+PIPE_FABRICATION_20260529_LARGE_PIPE_FILES = (
+    "20260528_194853_gp_SiEb7xTg.jpg",
+    "20260528_235330_gp_8pOmnEbg.jpg",
+    "20260529_000622_gp_aczV4kWw.jpg",
+    "20260529_000631_gp_7jTtagVw.jpg",
+    "20260529_000708_gp_v6oy8EoQ.jpg",
+    "20260529_000819_gp_5K6MappA.jpg",
+    "20260529_000845_gp_rCMaZnuQ.jpg",
+    "20260529_000900_gp_l80pweOg.jpg",
+    "20260529_000927_gp_FglexncA.jpg",
+    "20260529_000937_gp_tOgeiKMA.jpg",
+    "20260529_001147_gp_xgjmTrKA.jpg",
+    "20260529_001202_gp_gUOaC2CQ.jpg",
+    "20260529_001210_gp_K0lLPuiQ.jpg",
+    "20260529_001216_gp_cUgYf9LQ.jpg",
+    "20260529_001228_gp_8P9UMIyw.jpg",
+    "20260529_001235_gp_cxaEgJjQ.jpg",
+    "20260529_001240_gp_26AghY0A.jpg",
+    "20260529_001559_gp_V5ZiapwQ.jpg",
+    "20260529_001729_gp_F6cQxjvA.jpg",
+    "20260529_001836_gp_uC5iIpCg.jpg",
+    "20260529_001935_gp_LwIHTzsw.jpg",
+    "20260529_002027_gp_cnAzdBgw.jpg",
+    "20260529_002130_gp_4oyuazFg.jpg",
+)
+
 CHASSIS_20260501_OVERRIDES: dict[str, Classification] = {
     **{
         file_name: c(
@@ -1792,6 +1818,33 @@ FILE_OVERRIDES.update(
             "May 2 loose red/black pipe-hose sample length set; attach to replacement-pipes intake but keep release held until vehicle placement, ID/OD, and rating markings are confirmed.",
         )
         for file_name in PIPE_SAMPLE_SORTING_20260502_LENGTH_FILES
+    }
+)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "engine_bay",
+            "cooling_pipe_fabrication_samples",
+            "fabrication_measurement",
+            "large_pipe_sample_measurement_reference",
+            "high",
+            (
+                "cooling",
+                "pipe",
+                "radiator_hose",
+                "metal_pipe",
+                "connector_hose",
+                "clamp",
+                "clip",
+                "sample",
+                "replacement_pipe",
+                "fabrication",
+                "measurement",
+                "tape_reference",
+            ),
+            "May 29 user-selected larger pipe detail batch: loose formed metal coolant pipe, connector hoses, clamps, clips, and tape references for replacement-pipe fabrication. Owner confirmed the metal pipe, pipes/hoses, and clips can be replaced; use old parts as patterns only.",
+        )
+        for file_name in PIPE_FABRICATION_20260529_LARGE_PIPE_FILES
     }
 )
 FILE_OVERRIDES.update(
