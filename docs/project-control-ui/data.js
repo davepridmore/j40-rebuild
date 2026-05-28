@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-28T17:40:10+05:00",
+  "generated_at": "2026-05-28T18:10:00+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -48,7 +48,7 @@ window.J40_DASHBOARD_DATA = {
   "summary": {
     "workstreams_in_scope": 17,
     "workstreams_active": 13,
-    "workstream_evidence_images": 786,
+    "workstream_evidence_images": 787,
     "wiring_diagram_reference_images": 1,
     "parts_open_rows": 79,
     "parts_ordered_pending_delivery": 9,
@@ -15358,6 +15358,18 @@ window.J40_DASHBOARD_DATA = {
           ]
         },
         {
+          "path": "../../photos/20260502_004454_gp_4EoNuEVA.jpg",
+          "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+          "captured_date": "2026-05-02",
+          "captured_time": "00:44:54",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "rubber_parts_recreation_samples",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260502_004454_gp_4EoNuEVA",
+          "matched_tokens": []
+        },
+        {
           "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
           "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
           "captured_date": "2026-05-02",
@@ -15761,6 +15773,18 @@ window.J40_DASHBOARD_DATA = {
               "matched_tokens": []
             },
             {
+              "path": "../../photos/20260502_004454_gp_4EoNuEVA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:54",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004454_gp_4EoNuEVA",
+              "matched_tokens": []
+            },
+            {
               "path": "../../photos/20260517_193503_gp_N9nHjqXw.jpg",
               "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-17",
               "captured_date": "2026-05-17",
@@ -15924,6 +15948,18 @@ window.J40_DASHBOARD_DATA = {
               "matched_tokens": [
                 "20260405_234546"
               ]
+            },
+            {
+              "path": "../../photos/20260502_004454_gp_4EoNuEVA.jpg",
+              "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+              "captured_date": "2026-05-02",
+              "captured_time": "00:44:54",
+              "media_type": "photo",
+              "component_group": "procurement_inventory",
+              "specific_component": "rubber_parts_recreation_samples",
+              "stage": "procurement_reconciliation",
+              "media_id": "20260502_004454_gp_4EoNuEVA",
+              "matched_tokens": []
             },
             {
               "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
@@ -16156,7 +16192,7 @@ window.J40_DASHBOARD_DATA = {
           ]
         }
       ],
-      "image_count": 23,
+      "image_count": 24,
       "reference_token_count": 21,
       "requirements": [
         {
@@ -24058,6 +24094,18 @@ window.J40_DASHBOARD_DATA = {
               "parts": [],
               "images": [
                 {
+                  "path": "../../photos/20260502_004454_gp_4EoNuEVA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:54",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004454_gp_4EoNuEVA",
+                  "matched_tokens": []
+                },
+                {
                   "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
                   "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
                   "captured_date": "2026-05-02",
@@ -24115,18 +24163,6 @@ window.J40_DASHBOARD_DATA = {
                   "specific_component": "rubber_parts_recreation_samples",
                   "stage": "procurement_reconciliation",
                   "media_id": "20260502_004413_gp_Qno8OVRg",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260502_004401_gp_otUSjgGA.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:01",
-                  "media_type": "photo",
-                  "component_group": "procurement_inventory",
-                  "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004401_gp_otUSjgGA",
                   "matched_tokens": []
                 }
               ],
@@ -24193,6 +24229,18 @@ window.J40_DASHBOARD_DATA = {
               "parts": [],
               "images": [
                 {
+                  "path": "../../photos/20260502_004454_gp_4EoNuEVA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:54",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004454_gp_4EoNuEVA",
+                  "matched_tokens": []
+                },
+                {
                   "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
                   "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
                   "captured_date": "2026-05-02",
@@ -24250,18 +24298,6 @@ window.J40_DASHBOARD_DATA = {
                   "specific_component": "rubber_parts_recreation_samples",
                   "stage": "procurement_reconciliation",
                   "media_id": "20260502_004413_gp_Qno8OVRg",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260502_004401_gp_otUSjgGA.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:01",
-                  "media_type": "photo",
-                  "component_group": "procurement_inventory",
-                  "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004401_gp_otUSjgGA",
                   "matched_tokens": []
                 }
               ],
@@ -24313,6 +24349,18 @@ window.J40_DASHBOARD_DATA = {
               "parts": [],
               "images": [
                 {
+                  "path": "../../photos/20260502_004454_gp_4EoNuEVA.jpg",
+                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+                  "captured_date": "2026-05-02",
+                  "captured_time": "00:44:54",
+                  "media_type": "photo",
+                  "component_group": "procurement_inventory",
+                  "specific_component": "rubber_parts_recreation_samples",
+                  "stage": "procurement_reconciliation",
+                  "media_id": "20260502_004454_gp_4EoNuEVA",
+                  "matched_tokens": []
+                },
+                {
                   "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
                   "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
                   "captured_date": "2026-05-02",
@@ -24370,18 +24418,6 @@ window.J40_DASHBOARD_DATA = {
                   "specific_component": "rubber_parts_recreation_samples",
                   "stage": "procurement_reconciliation",
                   "media_id": "20260502_004413_gp_Qno8OVRg",
-                  "matched_tokens": []
-                },
-                {
-                  "path": "../../photos/20260502_004401_gp_otUSjgGA.jpg",
-                  "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
-                  "captured_date": "2026-05-02",
-                  "captured_time": "00:44:01",
-                  "media_type": "photo",
-                  "component_group": "procurement_inventory",
-                  "specific_component": "rubber_parts_recreation_samples",
-                  "stage": "procurement_reconciliation",
-                  "media_id": "20260502_004401_gp_otUSjgGA",
                   "matched_tokens": []
                 }
               ],
@@ -73366,6 +73402,19 @@ window.J40_DASHBOARD_DATA = {
         "match_basis": "procurement_reconciliation"
       },
       {
+        "path": "../../photos/20260502_004454_gp_4EoNuEVA.jpg",
+        "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
+        "captured_date": "2026-05-02",
+        "captured_time": "00:44:54",
+        "media_type": "photo",
+        "component_group": "procurement_inventory",
+        "specific_component": "rubber_parts_recreation_samples",
+        "stage": "procurement_reconciliation",
+        "media_id": "20260502_004454_gp_4EoNuEVA",
+        "matched_tokens": [],
+        "match_basis": "procurement_reconciliation"
+      },
+      {
         "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
         "caption": "Rubber Parts Recreation Samples \u00b7 Procurement Reconciliation \u00b7 2026-05-02",
         "captured_date": "2026-05-02",
@@ -74103,19 +74152,6 @@ window.J40_DASHBOARD_DATA = {
         "specific_component": "wiring_harness_and_connectors",
         "stage": "procurement_reconciliation",
         "media_id": "20260410_182733_gp_53YGQ88w",
-        "matched_tokens": [],
-        "match_basis": "procurement_reconciliation"
-      },
-      {
-        "path": "../../photos/20260410_182424_gp_48iqI43w.jpg",
-        "caption": "Wiring Harness And Connectors \u00b7 Procurement Reconciliation \u00b7 2026-04-10",
-        "captured_date": "2026-04-10",
-        "captured_time": "18:24:24",
-        "media_type": "photo",
-        "component_group": "procurement_inventory",
-        "specific_component": "wiring_harness_and_connectors",
-        "stage": "procurement_reconciliation",
-        "media_id": "20260410_182424_gp_48iqI43w",
         "matched_tokens": [],
         "match_basis": "procurement_reconciliation"
       }
@@ -127371,6 +127407,21 @@ window.J40_DASHBOARD_DATA = {
       "path": "../../photos/20260502_004442_gp_7WcFHjLQ.jpg",
       "captured_date": "2026-05-02",
       "captured_time": "00:44:42",
+      "media_type": "photo",
+      "component_group": "procurement_inventory",
+      "specific_component": "rubber_parts_recreation_samples",
+      "stage": "procurement_reconciliation",
+      "observed_state": "candidate_selection",
+      "confidence": "high",
+      "tags": "rubber|body_mount|sample|sleeve|shim|recreation|fabrication",
+      "notes": "May 2 starter collection for recreating body-mount/front-support rubber parts; user-selected candidate photo pending final selection and measurement tagging."
+    },
+    "20260502_004454_gp_4EoNuEVA": {
+      "media_id": "20260502_004454_gp_4EoNuEVA",
+      "file_name": "20260502_004454_gp_4EoNuEVA.jpg",
+      "path": "../../photos/20260502_004454_gp_4EoNuEVA.jpg",
+      "captured_date": "2026-05-02",
+      "captured_time": "00:44:54",
       "media_type": "photo",
       "component_group": "procurement_inventory",
       "specific_component": "rubber_parts_recreation_samples",

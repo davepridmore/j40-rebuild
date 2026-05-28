@@ -1707,6 +1707,37 @@
     },
   ];
 
+  function chassisRubberAutoReferenceImages() {
+    const lookup = data.photo_lookup || {};
+    return Object.values(lookup)
+      .filter((row) => {
+        const component = cleanString(row && row.specific_component).toLowerCase();
+        const tags = cleanString(row && row.tags).toLowerCase();
+        return component === "rubber_parts_recreation_samples" || (tags.includes("rubber") && tags.includes("body_mount"));
+      })
+      .sort((left, right) => {
+        const leftKey = `${cleanString(left.captured_date)} ${cleanString(left.captured_time)} ${cleanString(left.file_name)}`;
+        const rightKey = `${cleanString(right.captured_date)} ${cleanString(right.captured_time)} ${cleanString(right.file_name)}`;
+        return leftKey.localeCompare(rightKey);
+      })
+      .map((row) => [
+        cleanString(row.path),
+        cleanString(row.notes) || `Rubber recreation sample: ${cleanString(row.file_name)}`,
+      ]);
+  }
+
+  function chassisRubberReferenceImages() {
+    const seen = new Set();
+    return [...CHASSIS_RUBBER_REFERENCE_IMAGES, ...chassisRubberAutoReferenceImages()].filter(([path]) => {
+      const key = cleanString(path);
+      if (!key || seen.has(key)) {
+        return false;
+      }
+      seen.add(key);
+      return true;
+    });
+  }
+
   const LONGMAN_RUBBER_3D_VISUAL_PATH = "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html";
   function longmanRubber3dVisual(partId) {
     return `${LONGMAN_RUBBER_3D_VISUAL_PATH}?focus=${encodeURIComponent(partId)}`;
@@ -2014,15 +2045,16 @@
 
   function renderChassisRubberReferenceImages() {
     const sequenceId = createImageSequence();
+    const referenceImages = chassisRubberReferenceImages();
     return `
       <article class="card pipe-requirements-card">
         <div class="detail-header">
           <h3>Curated Context Images</h3>
-          <div class="chip-row">${chip(`${CHASSIS_RUBBER_REFERENCE_IMAGES.length} Images`)}</div>
+          <div class="chip-row">${chip(`${referenceImages.length} Images`)}</div>
         </div>
         <p class="small-muted">Trimmed to drawings, location proof, and measurement photos that support the chassis-rubber order. Weak exhaust/frame context photos are kept out unless they directly prove a held part.</p>
         <div class="requirement-evidence-grid chassis-rubber-context-grid">
-          ${CHASSIS_RUBBER_REFERENCE_IMAGES
+          ${referenceImages
             .map(([path, caption]) => {
               const image = {
                 path,
