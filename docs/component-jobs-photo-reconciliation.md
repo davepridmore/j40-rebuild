@@ -1,13 +1,13 @@
 # Component Jobs vs Photo Inventory Reconciliation
 
-- Generated: 2026-05-28 21:40:55
+- Generated: 2026-05-29 01:22:15
 - Source component jobs: `data/manual/component_jobs.csv`
 - Source photo inventory: `data/manual/photo_inventory.csv`
 - Output CSV: `data/manual/component_jobs_photo_reconciliation.csv`
 
 ## Status Summary
 
-- `direct_photo_evidence`: 59
+- `direct_photo_evidence`: 60
 - `indirect_photo_evidence_only`: 2
 - `no_photo_evidence`: 6
 
@@ -69,10 +69,11 @@
 | `paint_returned_panels_refinished` | `direct_photo_evidence` | 30 | 4 | `refinished_hinges_brackets_and_trim|refinished_seat_or_mount_bracket|returned_painted_body_trim|returned_painted_brackets_and_trim|returned_painted_front_panel_headlamp_surround|returned_painted_front_wings|returned_painted_inner_panels_or_splash_shields|roof_gutter_and_window_channel|wiper_arm_or_linkage_hardware` | Off-vehicle refinished hardware/panel photos, the May 17 returned roof image, and the May 23 picker batch provide direct evidence of returned painted parts. |
 | `paint_sendout_panels_manifest` | `direct_photo_evidence` | 21 | 4 | `detached_body_panels_and_doors|detached_doors_and_panels|rear_hatch_inner_panel|roof_gutter_and_window_channel` | Detached panel/door batches and the April 23 roof image provide direct send-out evidence for painting. |
 | `paint_workshop_progress_media` | `direct_photo_evidence` | 5 | 19 | `off_vehicle_workstation_reference_video|panel_detail_and_markings` | In-progress workshop videos and panel-handling shots track painting/bodywork activity between send-out and return; stripdown wing-removal photos are not direct paint evidence. |
-| `rear_brake_cable_line_refresh` | `direct_photo_evidence` | 24 | 74 | `rear_axle_and_leaf_springs` | Rear axle/drum photos directly show the parking-brake cable/linkage and axle-end hard-line routing; release still needs labelled removal photos and old parts kept as templates. |
+| `rear_brake_cable_line_refresh` | `direct_photo_evidence` | 24 | 74 | `rear_axle_and_leaf_springs` | Rear axle/drum photos directly show the parking-brake cable/linkage and axle-end hard-line routing; small clevis/equalizer/spring/clip hardware is controlled separately. |
 | `rear_brake_drum_baseline` | `direct_photo_evidence` | 24 | 58 | `rear_axle_and_leaf_springs` | Rear axle underside shots are the main evidence set for drum hardware and parking-brake linkage condition. |
 | `rear_differential_axle_inspection_20260517` | `direct_photo_evidence` | 25 | 74 | `rear_axle_and_leaf_springs|rear_differential_carrier_and_axle_housing` | User-supplied May 17 differential carrier/pumpkin close-up triggers a rear differential/axle teardown inspection plan; existing rear axle, brake-line, and spring photos provide supporting route and access context. Closure needs DIFF-CAPTURE-001 with oil/debris, breather, carrier sealing, gear teeth, axle seal/bearing, fill, and leak-check evidence. |
 | `rear_fuel_tank` | `direct_photo_evidence` | 4 | 58 | `fuel_filler_side_panel|rear_cargo_floor` | Fuel tank-out context and tank-area access are documented in filler-side and rear-floor images. |
+| `rear_parking_brake_attachment_hardware_20260527` | `direct_photo_evidence` | 2 | 29 | `rear_axle_and_leaf_springs` | Dedicated control row for parking-brake cable attachment hardware: clevis, equalizer, pins, return springs, cable-end clips, and bracket retainers. Route photos are present; release still needs labelled removed hardware and received-cable contents comparison. |
 | `replacement_pipe_ordering_matrix` | `direct_photo_evidence` | 12 | 0 | `bellhousing_clutch_linkage_and_gearbox_case|cooling_hoses_fan_belt_and_radiator_support|cooling_pipe_fabrication_samples|frame_rail_body_mount_and_hard_line_detail|replacement_pipe_hose_sample_sorting` | Replacement pipe ordering is limited to selected pipe sample photos and close pipe/hose/line location evidence; body rubbers and broad chassis/mechanical context are excluded. |
 | `roof_shell` | `direct_photo_evidence` | 6 | 0 | `roof_gutter_and_window_channel` | Roof channel/rain gutter photos are direct evidence of roof shell condition. |
 | `suspension_upgrade_fitment_and_alignment` | `direct_photo_evidence` | 40 | 23 | `rear_axle_and_leaf_springs|rear_axle_spring_hanger_and_crossmember|steering_and_suspension_linkages` | Rear spring/U-bolt and front linkage photos provide direct fitment context; final alignment release still needs installed-kit and ride-height/alignment photos. |

@@ -15,6 +15,7 @@ Use it with:
 - `machine_definitions.csv` / `machine_definitions.json` - CNC/shop geometry, shim-pack controls, and controlled non-CNC purchase definitions
 - `fabricator_cut_list.csv` - file-by-file cut/form list
 - `inspection_checklist.csv` - receiving and first-article inspection checks
+- `chassis_rubber_current_order_preview_rev_a.svg` - current Longman order preview; active quote/first-article lines only
 - `models_3d/` - parametric OpenSCAD 3D models and old-part closure questions
 
 ## DXF / SVG Parts
@@ -47,10 +48,10 @@ The strip files are released plain first-article cut patterns at `420 x 38 x 8 m
 
 The exhaust holder is controlled as a teardrop cushion style using Toyota `90917-08004` / `17572-92000` only as a reference shape. Source exact new molded stock if it is in hand; otherwise the CAD file is a local-copy control and needs a genuine sample or intact original before a production mould is cut.
 
-Bump stops cannot rely on Toyota/manufacturer supply and the old rubbers are too decayed to copy. Public OEM/catalog sources checked confirm the Toyota numbers, application, and `70 mm`/`60 mm` height split, but not the Toyota mould drawing, compound recipe, or load/deflection curve. Use `docs/bump-stop-fabrication-spec-20260504.md`: long `48304-60010` positions are `70 mm` free height, the right-front `48304-60020` is `60 mm` free height, and the rubber base footprint, bolt/stud pitch, relaxed stretch-fit hole or slot size, and contact offsets are released from the actual cleaned vehicle brackets and axle strike pads. A NOS/genuine sample is the preferred master if found; otherwise reproduce the Toyota-style tapered/radiused progressive rubber body and flat rectangular strike face as a rubber-only stretch-fit bolt-on part. Do not make bump stops from simple cut rubber blocks, and do not include a steel saddle/backing plate.
+Bump stops cannot rely on Toyota/manufacturer supply and the old rubbers are too decayed to copy. Public OEM/catalog sources checked confirm the Toyota numbers, application, and `70 mm`/`60 mm` height split, but not the Toyota mould drawing, compound recipe, or load/deflection curve. Use `docs/bump-stop-fabrication-spec-20260504.md`: long `48304-60010` positions are `70 mm` free height, the right-front `48304-60020` is `60 mm` free height, and the flat backing-plate outline, thickness, hole pattern, bond face, and contact offsets are released from the user-supplied one-piece flat metal backing/saddle and the cleaned vehicle brackets and axle strike pads. A NOS/genuine sample is the preferred master if found; otherwise reproduce the Toyota-style tapered/radiused progressive rubber body and flat rectangular strike face bonded/captive to the supplied-pattern flat steel backing plate. Do not make bump stops from simple cut rubber blocks, and do not invent rubber mounting holes.
 
 ## Material
 
-Use new black automotive mount-grade solid rubber only: EPDM or NR/SBR, Shore A `60 +/-5`, for body/front-support rubbers. Bump stops use the separate higher-duty target in the bump-stop spec: NR/SBR automotive bump-stop rubber Shore A `70 +/-5` as rubber-only stretch-fit bolt-on parts, or cast PU Shore A `80 +/-5` only if the progressive geometry, stretch-fit installation, and rebound recovery are proven. Reject tyre rubber, crumb rubber, sponge foam, mixed offcuts, used rubber, salvage rubber, and unmarked compound.
+Use new black automotive mount-grade solid rubber only: EPDM or NR/SBR, Shore A `60 +/-5`, for body/front-support rubbers. Bump stops use the separate higher-duty target in the bump-stop spec: NR/SBR automotive bump-stop rubber Shore A `70 +/-5` bonded/captive to supplied-pattern coated flat steel backing plates, or cast PU Shore A `80 +/-5` only if the progressive geometry, flat-plate bond/captive construction, and rebound recovery are proven. Reject tyre rubber, crumb rubber, sponge foam, mixed offcuts, used rubber, salvage rubber, and unmarked compound.
 
 Steel cups must be `2.5-3.0 mm` steel, deburred and zinc plated or epoxy primed after forming. Sleeves are still controlled by stack dry-fit and are not released as a cut DXF.

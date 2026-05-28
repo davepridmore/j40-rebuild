@@ -1575,14 +1575,14 @@
       location: "Axle-to-chassis bump-stop brackets: front-left plus rear-left and rear-right stations.",
       image: "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
       imageCaption: "Broken old bump-stop fragments with tape reference",
-      spec: "Rubber-only Toyota-style progressive bump-stop rubber, free height 70 +/-1; stretch-fit bolt-on holes or slots; tapered/radiused rubber body; flat rectangular strike face. Use the old fragments as shape evidence only.",
-      route: "Longman first article, then rubber stretch-fit vehicle-measurement release",
+      spec: "Toyota-style progressive bump-stop rubber bonded/captive to the supplied one-piece flat steel backing/saddle plate, free height 70 +/-1; tapered/radiused rubber body; flat rectangular strike face. Use the old fragments as shape evidence only.",
+      route: "Longman first article, then supplied flat-plate and vehicle-measurement release",
       files: [
         ["Bump Spec", "../../docs/bump-stop-fabrication-spec-20260504.md"],
         ["Longman Spec", "../../docs/longman-rubber-order-spec-20260508.md"],
         ["Order CSV", "../../data/manual/longman_rubber_order_specs.csv"],
       ],
-      notes: "Vehicle measurements release rubber base footprint, stretch-fit hole/slot pattern and relaxed size, and strike-face offset.",
+      notes: "User will provide the one flat metal backing/saddle piece with the request; it releases plate outline, hole pattern, bond face, and strike-face offset with vehicle measurements.",
     },
     {
       id: "BUMP-60020-SHORT",
@@ -1592,7 +1592,7 @@
       image: "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
       imageCaption: "Broken old bump-stop vertical/scale reference",
       spec: "Same Toyota-style progressive rubber construction as the long stop, but free height 60 +/-1 for the right-front station. Do not make this at 70 unless a deliberate vehicle full-bump test releases trimming.",
-      route: "Longman first article, then rubber stretch-fit vehicle-measurement release",
+      route: "Longman first article, then supplied flat-plate and vehicle-measurement release",
       files: [
         ["Bump Spec", "../../docs/bump-stop-fabrication-spec-20260504.md"],
         ["Longman Spec", "../../docs/longman-rubber-order-spec-20260508.md"],
@@ -1633,17 +1633,19 @@
   ];
 
   const CHASSIS_RUBBER_LOCATION_MAP_PATH = "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg";
+  const CHASSIS_RUBBER_CURRENT_ORDER_PREVIEW_PATH = "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_current_order_preview_rev_a.svg";
   const CHASSIS_RUBBER_COMPLETE_DRAWING_PREVIEW_PATH = "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg";
 
   const CHASSIS_RUBBER_REFERENCE_IMAGES = [
     [CHASSIS_RUBBER_LOCATION_MAP_PATH, "Vehicle location map: main body pads, front support pads/strips, bump stops, and hold-only references"],
+    [CHASSIS_RUBBER_CURRENT_ORDER_PREVIEW_PATH, "Current Longman order preview: active quote and first-article rubber lines only"],
     [CHASSIS_RUBBER_COMPLETE_DRAWING_PREVIEW_PATH, "Complete SVG preview sheet for every current and hold chassis-rubber control"],
     ["../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg", "BM-ISO-SM square pad SVG control"],
     ["../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg", "BM-ISO-LG square pad SVG control"],
     ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.svg", "FS-OVAL two-hole front-support SVG control"],
     ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg", "FS-STRIP-L left plain-strip SVG control"],
     ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg", "FS-STRIP-R right plain-strip SVG control"],
-    ["../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg", "Bump-stop rubber-only stretch-fit measurement control with bracket bolt/stud pitch callouts"],
+    ["../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg", "Bump-stop supplied flat-plate measurement control with bracket bolt/stud pitch callouts"],
     ["../../data/manual/fabrication/rubber_recreation_rev_a/body_liner_full_width_hold_control.svg", "Full-width liner hold measurement control"],
     ["../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg", "Exhaust hanger hold reference SVG"],
     ["../../photos/20260422_004323_gp_JD88KuWQ.jpg", "Body-off chassis body-mount pedestal close-up"],
@@ -1910,20 +1912,34 @@
   }
 
   function renderChassisRubberCompleteDrawingPreview() {
-    const image = {
+    const currentImage = {
+      path: CHASSIS_RUBBER_CURRENT_ORDER_PREVIEW_PATH,
+      caption: "Current Longman order SVG preview",
+      media_id: "chassis_rubber_current_order_preview_rev_a",
+      media_type: "photo",
+    };
+    const completeImage = {
       path: CHASSIS_RUBBER_COMPLETE_DRAWING_PREVIEW_PATH,
       caption: "Complete chassis-rubber SVG drawing preview",
       media_id: "chassis_rubber_all_drawings_preview_rev_a",
       media_type: "photo",
     };
-    const prepared = prepareImage(image, image.caption);
+    const preparedCurrent = prepareImage(currentImage, currentImage.caption);
+    const preparedComplete = prepareImage(completeImage, completeImage.caption);
     return `
+      <div class="chassis-rubber-preview-block">
+        <div class="chassis-rubber-preview-copy">
+          <strong>Current Order Preview</strong>
+          <span>Shows only the active Longman quote and first-article lines: square body pads, front-support oval, left/right strips, and long/short bump stops bonded/captive to the supplied flat backing plate.</span>
+        </div>
+        ${renderPreparedMedia(preparedCurrent, "table-image-btn chassis-rubber-preview-btn", "table-image table-image-contain chassis-rubber-preview-image")}
+      </div>
       <div class="chassis-rubber-preview-block">
         <div class="chassis-rubber-preview-copy">
           <strong>Complete SVG Preview</strong>
           <span>Shows every current order line and hold/reference control together: square body pads, front-support oval, left/right strips, long/short bump stops with mounting-hole controls, full-width liner hold, and exhaust hanger hold.</span>
         </div>
-        ${renderPreparedMedia(prepared, "table-image-btn chassis-rubber-preview-btn", "table-image table-image-contain chassis-rubber-preview-image")}
+        ${renderPreparedMedia(preparedComplete, "table-image-btn chassis-rubber-preview-btn", "table-image table-image-contain chassis-rubber-preview-image")}
       </div>
     `;
   }
@@ -1984,8 +2000,8 @@
           </div>
         </div>
         <p class="small-muted">Send this as one Longman quote/order bundle. The rows below are line items inside that single supplier request, not separate custom rubber orders. Hold rows stay in the pack only as reference controls and are not current production quantities.</p>
-        <p class="small-muted">Body/front-support rubbers: new black solid EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5. Main body isolators are now function-first custom square pads, not circular/register bushings, because the chassis/tub photos do not prove a shaped rubber socket. Steel cup/seat washers, sleeves, shims, bolts, and captive-thread repairs are separate from the Longman rubber order. Bump stops: public OEM/catalog sources confirm the Toyota part numbers, applications, and 70 mm / 60 mm height split, but not the Toyota mould drawing. Use a rubber-only Toyota-style tapered/radiused progressive rubber body with stretch-fit holes or slots, flat rectangular strike face, vehicle bracket measurements, and axle contact measurements. Reject tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, washer stacks, simple cut blocks, metal saddle/backing plates, or universal bump stops that do not match the axle contact point.</p>
-        <p class="small-muted">Current supplier pack: <a href="../../docs/longman-rubber-order-spec-20260508.md">Longman rubber order spec</a>, <a href="../../data/manual/longman_rubber_order_specs.csv">Longman order CSV</a>, <a href="../../docs/chassis-rubbers-workstream.md">chassis rubbers workstream</a>, <a href="${CHASSIS_RUBBER_LOCATION_MAP_PATH}">vehicle location map</a>, <a href="${CHASSIS_RUBBER_COMPLETE_DRAWING_PREVIEW_PATH}">complete SVG preview</a>, <a href="../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html">3D visualisation</a>, and <a href="../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad">OpenSCAD master model</a>.</p>
+        <p class="small-muted">Body/front-support rubbers: new black solid EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5. Main body isolators are now function-first custom square pads, not circular/register bushings, because the chassis/tub photos do not prove a shaped rubber socket. Steel cup/seat washers, sleeves, shims, bolts, and captive-thread repairs are separate from the Longman rubber order. Bump stops: public OEM/catalog sources confirm the Toyota part numbers, applications, and 70 mm / 60 mm height split, but not the Toyota mould drawing. Use a Toyota-style tapered/radiused progressive rubber body bonded/captive to the supplied one-piece flat steel backing/saddle plate, flat rectangular strike face, vehicle bracket measurements, and axle contact measurements. Reject tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, washer stacks, simple cut blocks, rubber replacements that omit the supplied flat backing plate, or universal bump stops that do not match the axle contact point.</p>
+        <p class="small-muted">Current supplier pack: <a href="../../docs/longman-rubber-order-spec-20260508.md">Longman rubber order spec</a>, <a href="../../data/manual/longman_rubber_order_specs.csv">Longman order CSV</a>, <a href="../../docs/chassis-rubbers-workstream.md">chassis rubbers workstream</a>, <a href="${CHASSIS_RUBBER_CURRENT_ORDER_PREVIEW_PATH}">current order preview</a>, <a href="${CHASSIS_RUBBER_LOCATION_MAP_PATH}">vehicle location map</a>, <a href="${CHASSIS_RUBBER_COMPLETE_DRAWING_PREVIEW_PATH}">complete SVG preview</a>, <a href="../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html">3D visualisation</a>, and <a href="../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad">OpenSCAD master model</a>.</p>
         ${renderChassisRubberCoverageCheck()}
         ${renderChassisRubberCompleteDrawingPreview()}
         <div class="table-wrap requirement-table-wrap">
@@ -2043,8 +2059,8 @@
             </tbody>
           </table>
         </div>
-        <p class="small-muted">Tolerances: square body pad length/width +/-1.0, height +/-0.5, faces parallel <=0.5; body-pad bore 18.0 +0.5/-0.0 for Toyota 90560-12009 style spacer. Sleeve set is qty 6, 48.1 mm length, M10 clearance ID 10.8-11.0 if locally fabricated, with OD copied from old/OE spacer. FS-OVAL outside +/-1.0, hole position +/-0.5, thickness +/-0.5. FS-STRIP-L/R first articles are 420 x 38 x 8 mm with only dry-fit trim pending. Bump stops: height +/-1, rubber base and relaxed hole/slot features +/-0.5 after vehicle measurement release, contact centre +/-5; stretch-fit holes must install without tearing and recover after compression.</p>
-        <p class="small-muted">Remaining holds: possible full-width flat liners need full-length photos/traces before any quote; EXH-HGR-90917 needs a genuine sample or intact original to confirm side profile, insert depth, exact thickness, and reinforcement before local moulding. FS-STRIP-L/R are current first-article order lines at 420 x 38 x 8 mm; dry-fit controls only local end trim and any separate steel retainer trace. Bump stops need BL/BW/P/D/X-Y/G/F values, fabricator side/profile sketch, rubber stretch-fit hole/slot layout, material declaration, and first-article compression recovery check before mould release.</p>
+        <p class="small-muted">Tolerances: square body pad length/width +/-1.0, height +/-0.5, faces parallel <=0.5; body-pad bore 18.0 +0.5/-0.0 for Toyota 90560-12009 style spacer. Sleeve set is qty 6, 48.1 mm length, M10 clearance ID 10.8-11.0 if locally fabricated, with OD copied from old/OE spacer. FS-OVAL outside +/-1.0, hole position +/-0.5, thickness +/-0.5. FS-STRIP-L/R first articles are 420 x 38 x 8 mm with only dry-fit trim pending. Bump stops: height +/-1, flat backing-plate outline/hole features +/-0.5 after supplied sample and vehicle measurement release, contact centre +/-5; rubber/steel bond or captive joint must survive compression.</p>
+        <p class="small-muted">Remaining holds: possible full-width flat liners need full-length photos/traces before any quote; EXH-HGR-90917 needs a genuine sample or intact original to confirm side profile, insert depth, exact thickness, and reinforcement before local moulding. FS-STRIP-L/R are current first-article order lines at 420 x 38 x 8 mm; dry-fit controls only local end trim and any separate steel retainer trace. Bump stops need the supplied one-piece flat metal backing/saddle piece, BL/BW/P/D/X-Y/G/F values, fabricator side/profile sketch, flat-plate hole layout, material declaration, and first-article compression recovery check before mould release.</p>
       </article>
     `;
   }
@@ -4061,7 +4077,7 @@
           : isShim
             ? "New flat steel, deburred and zinc plated or epoxy primed."
             : isBump
-              ? "NR/SBR automotive bump-stop rubber Shore A 70 +/-5 as rubber-only stretch-fit bolt-on parts; no used or universal mismatch."
+              ? "NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to supplied-pattern coated flat steel backing plate; no used or universal mismatch."
               : isExhaust
                 ? "New heat/vibration-resistant molded exhaust rubber, Shore A 60 +/-5."
                 : "New black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5.",
@@ -4073,7 +4089,7 @@
           : isShim
           ? "Trace preserved station footprint before CNC/laser cutting final outline."
           : isBump
-            ? "Measure cleaned vehicle bracket BL/BW, bolt/stud pitch P, fitted fastener D, strike-pad X/Y, loaded gap G, and full-bump clearance F; make rubber-only Toyota-style tapered stretch-fit 70 mm long and 60 mm right-front first articles before full set."
+            ? "Measure supplied one-piece flat backing plate, cleaned vehicle bracket BL/BW, bolt/stud pitch P, hole/thread D, strike-pad X/Y, loaded gap G, and full-bump clearance F; make Toyota-style tapered rubber bonded/captive to flat-plate 70 mm long and 60 mm right-front first articles before full set."
             : "Send DXF/SVG/PDF package in millimeters; quote one first article before batch.",
         reject: isBump
           ? "Used, cracked, oil-softened, simple cut block, universal height/profile, or wrong bracket/contact fit."
@@ -4533,7 +4549,7 @@
       plain_stall_request:
         "I need one consolidated quote for the exact new-only J40 body/front-support/chassis custom rubber bundle listed in the Longman spec. Quote the rubber lines together; sleeves, cup washers, shims, spacers, bolts, nuts, and washers are separate controlled hardware lines. Toyota/OE part numbers are reference shapes only. Old rubbers/photos are samples only. No used or salvage rubber.",
       buy_target:
-        "Use the exact Longman order list below. Main body pads are custom square BM-ISO-SM/BM-ISO-LG pieces unless a station trace releases a specific trim. FS-STRIP-L/R are included as first-article flat strips at 420 x 38 x 8 mm. Full-width flat liners and the exhaust hanger remain hold/reference lines only. For bump stops, old rubber is not the master: use the 70 mm long / 60 mm right-front height controls, rubber-only Toyota-style tapered body with stretch-fit holes or slots, and vehicle bracket measurements.",
+        "Use the exact Longman order list below. Main body pads are custom square BM-ISO-SM/BM-ISO-LG pieces unless a station trace releases a specific trim. FS-STRIP-L/R are included as first-article flat strips at 420 x 38 x 8 mm. Full-width flat liners and the exhaust hanger remain hold/reference lines only. For bump stops, old rubber is not the master: use the supplied one-piece flat metal backing/saddle as the bonding and hole-pattern pattern, plus the 70 mm long / 60 mm right-front height controls and vehicle bracket measurements.",
       must_include: [
         "Upper and lower body mount rubber cushions for the required body stations.",
         "Steel sleeves, cup or seat washers, shims, spacers, bolts, nuts, and washers quoted separately.",

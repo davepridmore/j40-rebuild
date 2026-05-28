@@ -1,22 +1,22 @@
 # Parts List Review
 
-- Generated: 2026-05-28 16:51:41
+- Generated: 2026-05-29 01:18:56
 - Source: `data/manual/expenses.csv` (`bucket=parts`) -> 123 rows
 - Review CSV: `data/manual/parts_list_review.csv`
 - Overlap CSV: `data/manual/parts_overlap_candidates.csv`
 
 ## Action Buckets
 
-- `buy_now`: 38
-- `cancelled_or_not_required`: 11
+- `buy_now`: 30
+- `cancelled_or_not_required`: 21
 - `completed_or_received`: 33
 - `deferred`: 6
 - `needs_confirmation`: 5
 - `needs_spec_before_order`: 9
 - `ordered_waiting_arrival`: 9
 - `runner_spec_controlled`: 2
-- `spec_ready_release_hold`: 3
-- `unclear`: 7
+- `spec_ready_release_hold`: 2
+- `unclear`: 6
 
 ## Workstream Split
 
@@ -40,9 +40,6 @@
 
 - `part_body_retaining_clips_cotter_pin_pack` [body_chassis] Body retaining clip pack - R-clips hairpins split pins circlips and small cotters
 - `part_fastener_kit_c_captive_clip_nuts` [body_chassis] Fastener Kit C remaining: Captive/clip/speed nut and weld-nut assortment - M6/M8
-- `part_tub_mount_reinforcement_plate_3mm_20260513` [body_chassis] 3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs
-- `part_tub_repair_steel_sheet_1_2mm_20260513` [body_chassis] 1.2 mm cold-rolled mild-steel sheet for tub skin/floor patch plates
-- `part_tub_repair_steel_sheet_1_6mm_20260513` [body_chassis] 1.6 mm cold-rolled mild-steel sheet for heavier tub patch plates
 - `part_brake_clutch_line_support_clamps_full_vehicle_20260514` [brake_system] Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection
 - `part_brake_flex_hose_retaining_clip_pack_20260514` [brake_system] Brake flex-hose retaining U-clips and bracket hardware pack
 - `part_rear_center_brake_flex_hose` [brake_system] Rear center frame-to-axle brake flex hose - local/catalog first using 553-103 reference
@@ -50,11 +47,6 @@
 - `part_firewall_grommet_set_large_power` [electrical_reset] Additional firewall grommet set IDs 16/20/25 mm
 - `part_firewall_grommet_set_small_medium` [electrical_reset] Additional firewall grommet set IDs 6/8/10/12 mm
 - `part_hvac_blower_clutch_fan_wiring_20260514` [electrical_reset] Relay, fuse, switch, and wiring pack for blower, compressor clutch, and condenser fan request
-- `part_fabrication_raw_aluminium_plate_3mm_20260513` [fabrication_handoff] 3.0 mm 5052-H32 aluminium sheet for MIDI enclosure, Relay Rev D base, and cutoff electrical plates
-- `part_fabrication_raw_electrical_plastic_sheet_20260513` [fabrication_handoff] Electrical insulating plastic/G10 sheet - MIDI 5.0 mm board and relay 3.0 mm sheet
-- `part_fabrication_raw_epdm_sheet_small_isolators_20260513` [fabrication_handoff] 3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads
-- `part_fabrication_raw_mild_steel_plate_3mm_20260513` [fabrication_handoff] 3.0 mm mild-steel sheet plus 90-degree angle/L-section stock for compact battery tray/access ladder
-- `part_fabrication_raw_mild_steel_plate_4mm_20260513` [fabrication_handoff] 4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post
 - `part_hvac_control_panel_20260514` [interior_weatherproofing] Compact A/C control panel or integrated controls
 - `part_hvac_duct_defrost_hose_kit_20260514` [interior_weatherproofing] 2.5 inch duct hose, vent adapters, and defrost/demist hose kit
 - `part_hvac_evaporator_drain_mount_kit_20260514` [interior_weatherproofing] Evaporator drain hose and mounting/sealing kit
@@ -85,4 +77,4 @@
 
 - `floor_finish_stack` (3 rows): Floor/interior finish stack [action buckets: deferred]
 - `grommet_options` (4 rows): Grommet options [action buckets: buy_now|deferred]
-- `switch_options` (4 rows): Switch inventory [action buckets: buy_now]
+- `switch_options` (2 rows): Switch inventory [action buckets: buy_now]

@@ -18,7 +18,8 @@ Use it with:
 - `../rubber_recreation_rev_a/models_3d/old_rubber_checks.md` - old-part checks needed before closing uncertain features.
 - `../rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf` / `.svg` - BM-ISO-SM square pad 2D control.
 - `../rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf` / `.svg` - BM-ISO-LG square pad 2D control.
-- `../rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf` / `.svg` - bump-stop rubber-only stretch-fit hole pitch/size, height, and vehicle-measurement control.
+- `../rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf` / `.svg` - bump-stop supplied flat backing-plate hole pitch/size, height, bond-face, and vehicle-measurement control.
+- `chassis_rubber_current_order_preview_rev_a.svg` - active Longman order preview sheet; current quote/first-article lines only.
 - `../rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg` - vehicle-location map for the rubber families in this order.
 - `../rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg` - complete SVG preview showing the active and hold/reference chassis-rubber controls together.
 
@@ -32,7 +33,7 @@ The measured old-rubber photos are the quote and first-article basis for the cur
 - `BM-ISO-LG`: 80 L x 80 W x 24 H square pad, 18.0 mm through bore, same edge controls.
 - `FS-OVAL`: 96 L x 64 W x 15 T capsule, R32 ends, two 12 mm holes, relief/insert details sample-controlled.
 - `FS-STRIP-L/R`: 420 L x 38 W x 8 T plain strips, no rubber holes by default.
-- Bump stops: height and Toyota-style rubber construction are controlled; rubber base footprint, bracket bolt/stud pattern, relaxed stretch-fit holes or slots, and strike geometry are vehicle-measurement controlled. The rubber should stretch over/around the fitted bolts or studs so it can bolt on without a metal saddle/backing plate.
+- Bump stops: height and Toyota-style rubber construction are controlled. The user will provide one flat metal backing/saddle piece with the request; copy or reuse that supplied piece for the plate footprint, thickness, hole/slot pattern, and rubber bond face, then confirm strike geometry on the vehicle. The rubber is bonded/captive to the flat plate, and mounting holes belong in the plate unless the supplied original sample proves rubber clearance holes.
 
 Steel sleeves, cup/seat washers, bolts, shims, and retainers are separate hardware controls, not Longman rubber mould geometry.
 

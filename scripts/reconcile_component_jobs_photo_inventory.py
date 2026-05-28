@@ -296,7 +296,13 @@ RULES: dict[str, EvidenceRule] = {
     "rear_brake_cable_line_refresh": EvidenceRule(
         direct_specific_components=("rear_axle_and_leaf_springs",),
         indirect_specific_components=("frame_floor_underside_and_lines", "rear_mid_frame_rail_and_hard_line_detail", "rear_axle_spring_hanger_and_crossmember"),
-        notes="Rear axle/drum photos directly show the parking-brake cable/linkage and axle-end hard-line routing; release still needs labelled removal photos and old parts kept as templates.",
+        notes="Rear axle/drum photos directly show the parking-brake cable/linkage and axle-end hard-line routing; small clevis/equalizer/spring/clip hardware is controlled separately.",
+    ),
+    "rear_parking_brake_attachment_hardware_20260527": EvidenceRule(
+        direct_specific_components=(),
+        indirect_specific_components=("rear_axle_and_leaf_springs", "rear_axle_spring_hanger_and_crossmember"),
+        notes="Dedicated control row for parking-brake cable attachment hardware: clevis, equalizer, pins, return springs, cable-end clips, and bracket retainers. Route photos are present; release still needs labelled removed hardware and received-cable contents comparison.",
+        direct_media_ids=("20260514_095953_gp_BXoQkXnw", "20260514_100003_gp_Vr2QI7ig"),
     ),
     "rear_differential_axle_inspection_20260517": EvidenceRule(
         direct_specific_components=("rear_differential_carrier_and_axle_housing", "rear_axle_and_leaf_springs"),

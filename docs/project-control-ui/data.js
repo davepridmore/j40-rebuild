@@ -1,11 +1,12 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-28T22:02:52+05:00",
+  "generated_at": "2026-05-29T01:19:17+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
     "component_jobs": "data/manual/component_jobs.csv",
     "photo_inventory": "data/manual/photo_inventory.csv",
     "brake_system_requirements": "data/manual/brake_system_requirements.csv",
+    "hvac_system_requirements": "data/manual/hvac_system_requirements.csv",
     "fabrication_handoff_requirements": "data/manual/fabrication_handoff_requirements.csv",
     "fabrication_raw_material_estimates": "data/manual/fabrication_raw_material_estimates.csv",
     "chassis_bracket_analysis_register": "data/manual/chassis_bracket_analysis_register_20260508.csv",
@@ -50,12 +51,12 @@ window.J40_DASHBOARD_DATA = {
     "workstreams_active": 13,
     "workstream_evidence_images": 787,
     "wiring_diagram_reference_images": 1,
-    "parts_open_rows": 79,
+    "parts_open_rows": 69,
     "parts_ordered_pending_delivery": 9,
     "urgent_part_actions": 17,
-    "capture_data_tasks": 106,
-    "capture_data_tasks_now": 90,
-    "supply_rows_tracked": 287,
+    "capture_data_tasks": 107,
+    "capture_data_tasks_now": 91,
+    "supply_rows_tracked": 277,
     "selling_site_images_loaded": 88,
     "whatsapp_j40_selected_chats": 11,
     "whatsapp_j40_media_items": 283,
@@ -3124,7 +3125,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "body_structure",
           "current_state": "in_progress",
           "objective": "Close floor/rust repairs, chassis prep, and the required bracket analysis/design/implementation/validation hold before sealing products.",
-          "blocker_summary": "10 body material rows still need buy execution.",
+          "blocker_summary": "7 body material rows still need buy execution.",
           "gate_to_close": "Rust map signed off, required chassis brackets analyzed/released/installed/validated, and repaired zones primed.",
           "key_procurement_actions": "Use received primer/prep/seam-sealer/cavity-wax stock and on-hand Raptor; Ultra-cloth solvent-safe wipes and masking tape are received; use on-hand grommets for temporary open-hole masking after fit/solvent check; no generic chassis-black or bed-lining duplicate buy.",
           "evidence_signal": "rust_assessment_photos=63, stripdown_photos=111"
@@ -3239,7 +3240,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP01 \u00b7 Body + Chassis Rust/Bracket Closure",
           "status": "in_progress",
-          "detail": "Close floor/rust repairs, chassis prep, and the required bracket analysis/design/implementation/validation hold before sealing products. Blocker: 10 body material rows still need buy execution. Procurement: Use received primer/prep/seam-sealer/cavity-wax stock and on-hand Raptor; Ultra-cloth solvent-safe wipes and masking tape are received; use on-hand grommets for temporary open-hole masking after fit/solvent check; no generic chassis-black or bed-lining duplicate buy. Gate: Rust map signed off, required chassis brackets analyzed/released/installed/validated, and repaired zones primed."
+          "detail": "Close floor/rust repairs, chassis prep, and the required bracket analysis/design/implementation/validation hold before sealing products. Blocker: 7 body material rows still need buy execution. Procurement: Use received primer/prep/seam-sealer/cavity-wax stock and on-hand Raptor; Ultra-cloth solvent-safe wipes and masking tape are received; use on-hand grommets for temporary open-hole masking after fit/solvent check; no generic chassis-black or bed-lining duplicate buy. Gate: Rust map signed off, required chassis brackets analyzed/released/installed/validated, and repaired zones primed."
         },
         {
           "label": "WP02 \u00b7 Panel + Seals Refurbishment Returns",
@@ -3463,45 +3464,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "manual_override",
             "match_score": 999
-          }
-        },
-        {
-          "entry_id": "part_tub_repair_steel_sheet_1_6mm_20260513",
-          "workstream": "body_chassis",
-          "item": "1.6 mm cold-rolled mild-steel sheet for heavier tub patch plates",
-          "status": "planned",
-          "procurement_stage": "purchase_ready_measurement_hold",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "estimate",
-          "currency": "PKR",
-          "vendor": "local steel stockholder / body-panel sheet supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_tub_repair_steel_sheet_1_6mm_20260513",
-          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/tub-off-refit-execution-plan.md|docs/j40_welding_execution_plan_20260419.md",
-          "notes": "Buy one 1.6 mm cold-rolled mild-steel sheet about 1000 x 500 mm, or nearest manageable sheet. Use for heavier tub floor sections, flange returns, seat-box edges, local patch plates, and spots where the exposed original sheet is heavier than skin panels. Final size remains controlled by cleaned metal and rust-map photos.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/heavy_battery_cable.jpg",
-            "caption": "1.6 mm cold-rolled mild-steel sheet for heavier tub patch plates \u00b7 automotive cable reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "heavy_battery_cable",
-            "matched_tokens": [
-              "cable"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
           }
         },
         {
@@ -4116,12 +4078,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "1.6 mm cold-rolled mild-steel sheet for heavier tub patch plates (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)",
                 "Fastener Kit C remaining: Captive/clip/speed nut and weld-nut assortment - M6/M8 (purchase_ready; delivery not_ordered; amount missing)",
                 "Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers (ordered_pending_delivery; delivery pending_delivery; amount missing)",
                 "Seam sealer (received; delivery received; amount confirmed)",
                 "Body specialty bracket and retainer plate repair/replacement pack (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Evapo-Rust 5 Litre Heavy Duty Rust Remover (received; delivery received; amount missing)"
+                "Evapo-Rust 5 Litre Heavy Duty Rust Remover (received; delivery received; amount missing)",
+                "M6 and M8 threaded rivet nuts / rivnuts / nutserts - received (received; delivery received; amount missing)"
               ]
             },
             {
@@ -4247,12 +4209,12 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "1.6 mm cold-rolled mild-steel sheet for heavier tub patch plates (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)",
                 "Body specialty bracket and retainer plate repair/replacement pack (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Bedliner sprays (received; delivery received; amount missing)",
                 "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set (received; delivery received; amount confirmed)",
                 "Nylon fiber polishing disc and wool buffing polishing disc set (3pcs) plus drill adapter and grinder nut for metals x2 (received; delivery received; amount confirmed)",
-                "Fastener Kit C remaining: Captive/clip/speed nut and weld-nut assortment - M6/M8 (purchase_ready; delivery not_ordered; amount missing)"
+                "Fastener Kit C remaining: Captive/clip/speed nut and weld-nut assortment - M6/M8 (purchase_ready; delivery not_ordered; amount missing)",
+                "Body retaining clip pack - R-clips hairpins split pins circlips and small cotters (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -4391,10 +4353,10 @@ window.J40_DASHBOARD_DATA = {
               "registered_items": [
                 "Hi-Build Zinc Rich Epoxy Primer EC 11 two-pack set (received; delivery received; amount confirmed)",
                 "Fastener Kit C remaining: Captive/clip/speed nut and weld-nut assortment - M6/M8 (purchase_ready; delivery not_ordered; amount missing)",
-                "1.6 mm cold-rolled mild-steel sheet for heavier tub patch plates (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)",
                 "Seam sealer (received; delivery received; amount confirmed)",
                 "3M Prep Solvent-70 1 gallon / wax and grease remover (received; delivery received; amount confirmed)",
-                "Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers (ordered_pending_delivery; delivery pending_delivery; amount missing)"
+                "Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers (ordered_pending_delivery; delivery pending_delivery; amount missing)",
+                "HB Body U900 cavity wax spray 400ml x2 (received; delivery received; amount confirmed)"
               ]
             },
             {
@@ -4515,8 +4477,8 @@ window.J40_DASHBOARD_DATA = {
                 "Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers (ordered_pending_delivery; delivery pending_delivery; amount missing)",
                 "M6 and M8 threaded rivet nuts / rivnuts / nutserts - received (received; delivery received; amount missing)",
                 "Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60 (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
-                "1.6 mm cold-rolled mild-steel sheet for heavier tub patch plates (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)",
-                "Body specialty bracket and retainer plate repair/replacement pack (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Body specialty bracket and retainer plate repair/replacement pack (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Body retaining clip pack - R-clips hairpins split pins circlips and small cotters (purchase_ready; delivery not_ordered; amount missing)"
               ]
             }
           ]
@@ -11712,7 +11674,7 @@ window.J40_DASHBOARD_DATA = {
           "lane": "body_structure",
           "current_state": "in_progress",
           "objective": "Close floor/rust repairs, chassis prep, and the required bracket analysis/design/implementation/validation hold before sealing products.",
-          "blocker_summary": "10 body material rows still need buy execution.",
+          "blocker_summary": "7 body material rows still need buy execution.",
           "gate_to_close": "Rust map signed off, required chassis brackets analyzed/released/installed/validated, and repaired zones primed.",
           "key_procurement_actions": "Use received primer/prep/seam-sealer/cavity-wax stock and on-hand Raptor; Ultra-cloth solvent-safe wipes and masking tape are received; use on-hand grommets for temporary open-hole masking after fit/solvent check; no generic chassis-black or bed-lining duplicate buy.",
           "evidence_signal": "rust_assessment_photos=63, stripdown_photos=111"
@@ -11939,7 +11901,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "label": "WP01 \u00b7 Body + Chassis Rust/Bracket Closure",
           "status": "in_progress",
-          "detail": "Close floor/rust repairs, chassis prep, and the required bracket analysis/design/implementation/validation hold before sealing products. Blocker: 10 body material rows still need buy execution. Procurement: Use received primer/prep/seam-sealer/cavity-wax stock and on-hand Raptor; Ultra-cloth solvent-safe wipes and masking tape are received; use on-hand grommets for temporary open-hole masking after fit/solvent check; no generic chassis-black or bed-lining duplicate buy. Gate: Rust map signed off, required chassis brackets analyzed/released/installed/validated, and repaired zones primed."
+          "detail": "Close floor/rust repairs, chassis prep, and the required bracket analysis/design/implementation/validation hold before sealing products. Blocker: 7 body material rows still need buy execution. Procurement: Use received primer/prep/seam-sealer/cavity-wax stock and on-hand Raptor; Ultra-cloth solvent-safe wipes and masking tape are received; use on-hand grommets for temporary open-hole masking after fit/solvent check; no generic chassis-black or bed-lining duplicate buy. Gate: Rust map signed off, required chassis brackets analyzed/released/installed/validated, and repaired zones primed."
         },
         {
           "label": "Issue Check \u00b7 Issue Body Mount Captive Thread Repair",
@@ -17010,7 +16972,7 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Front left axle-to-chassis bump-stop station",
           "pipe_or_line": "",
-          "replace_scope": "fabricate_rubber_only_stretch_fit",
+          "replace_scope": "fabricate_with_supplied_flat_steel_backing_plate",
           "quantity": "1",
           "photo_evidence": [
             "bump_stop_vehicle_measurement_control"
@@ -17020,12 +16982,12 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm; reproduce Toyota-style tapered/radiused progressive rubber body and flat rectangular strike face as a rubber-only stretch-fit bolt-on stop; rubber base footprint BL x BW, bolt/stud pitch P, relaxed hole/slot size D, and contact offset X/Y released from the cleaned left-front bracket and axle strike pad",
-          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5; no tyre rubber or simple cut block; no metal saddle/backing plate",
-          "critical_measurements": "Measure BL/BW/P/D/X-Y/G/F on the current vehicle bracket and axle strike pad; old bump-stop rubber is too decayed to copy; public sources do not expose the Toyota mould drawing",
-          "fit_and_test": "First article rubber base seats flat on the bracket, stretches over/around bolts/studs by hand without tearing, contacts strike pad within +/-5 mm, engages before shock/tyre/spring/brake-hose or metal hard limit, and recovers after 50 percent compression",
+          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm; reproduce Toyota-style tapered/radiused progressive rubber body and flat rectangular strike face bonded/captive to the supplied one-piece flat steel backing/saddle plate; plate outline, thickness, hole pitch P, hole/thread D, and contact offset X/Y released from the supplied plate, cleaned left-front bracket, and axle strike pad",
+          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to coated one-piece flat steel backing plate; no tyre rubber or simple cut block",
+          "critical_measurements": "Measure supplied flat metal backing piece plus BL/BW/P/D/X-Y/G/F on the current vehicle bracket and axle strike pad; old decayed rubber is shape evidence only; public sources do not expose the Toyota mould drawing",
+          "fit_and_test": "First article flat steel backing plate seats flat on the bracket, bolts/studs pass by hand, rubber remains bonded/captive, contacts strike pad within +/-5 mm, engages before shock/tyre/spring/brake-hose or metal hard limit, and recovers after 50 percent compression",
           "source_ref": "docs_bump_stop_fabrication_spec_20260504|data_bump_stop_fabrication_specs|rubber_recreation_rev_a_machine_definitions",
-          "notes": "Exact external height known; vehicle measurement releases the rubber base",
+          "notes": "User will provide the one flat metal backing/saddle piece with the fabrication request; use it as the bonding and hole-pattern pattern.",
           "evidence_images": []
         },
         {
@@ -17034,7 +16996,7 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Front right axle-to-chassis bump-stop station",
           "pipe_or_line": "",
-          "replace_scope": "fabricate_rubber_only_stretch_fit",
+          "replace_scope": "fabricate_with_supplied_flat_steel_backing_plate",
           "quantity": "1",
           "photo_evidence": [
             "bump_stop_vehicle_measurement_control"
@@ -17044,12 +17006,12 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Toyota 48304-60020 short right-front family; free height 60 +/-1 mm; reproduce Toyota-style tapered/radiused progressive rubber body and flat rectangular strike face as a rubber-only stretch-fit bolt-on stop; rubber base footprint BL x BW, bolt/stud pitch P, relaxed hole/slot size D, and contact offset X/Y released from the cleaned right-front bracket and axle strike pad",
-          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5; no tyre rubber or simple cut block; no metal saddle/backing plate",
-          "critical_measurements": "Measure BL/BW/P/D/X-Y/G/F on the current vehicle bracket and axle strike pad; do not use a 70 mm long-stop height here unless full-bump test releases trimming",
-          "fit_and_test": "First article rubber base seats flat on the bracket, stretches over/around bolts/studs by hand without tearing, contacts strike pad within +/-5 mm, engages before shock/tyre/spring/brake-hose or metal hard limit, and recovers after 50 percent compression",
+          "exact_recreation_spec": "Toyota 48304-60020 short right-front family; free height 60 +/-1 mm; reproduce Toyota-style tapered/radiused progressive rubber body and flat rectangular strike face bonded/captive to the supplied one-piece flat steel backing/saddle plate; plate outline, thickness, hole pitch P, hole/thread D, and contact offset X/Y released from the supplied plate, cleaned right-front bracket, and axle strike pad",
+          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to coated one-piece flat steel backing plate; no tyre rubber or simple cut block",
+          "critical_measurements": "Measure supplied flat metal backing piece plus BL/BW/P/D/X-Y/G/F on the current vehicle bracket and axle strike pad; do not use a 70 mm long-stop height here unless full-bump test releases trimming",
+          "fit_and_test": "First article flat steel backing plate seats flat on the bracket, bolts/studs pass by hand, rubber remains bonded/captive, contacts strike pad within +/-5 mm, engages before shock/tyre/spring/brake-hose or metal hard limit, and recovers after 50 percent compression",
           "source_ref": "docs_bump_stop_fabrication_spec_20260504|data_bump_stop_fabrication_specs|rubber_recreation_rev_a_machine_definitions",
-          "notes": "Reject aftermarket right-front stops made at 70 mm unless deliberately trimmed and released by vehicle test.",
+          "notes": "User will provide the one flat metal backing/saddle piece with the fabrication request; right-front height remains 60 mm.",
           "evidence_images": []
         },
         {
@@ -17058,7 +17020,7 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Rear axle-to-chassis bump-stop stations",
           "pipe_or_line": "",
-          "replace_scope": "fabricate_rubber_only_stretch_fit",
+          "replace_scope": "fabricate_with_supplied_flat_steel_backing_plates",
           "quantity": "2",
           "photo_evidence": [
             "bump_stop_vehicle_measurement_control"
@@ -17068,12 +17030,12 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm each; rear pair height match <=1 mm; reproduce Toyota-style tapered/radiused progressive rubber bodies and flat rectangular strike faces as rubber-only stretch-fit bolt-on stops; rubber base footprints, bolt/stud patterns, relaxed hole/slot sizes, and contact offsets released from cleaned rear brackets and axle strike pads",
-          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5; matched rear pair; no tyre rubber or simple cut blocks; no metal saddle/backing plate",
-          "critical_measurements": "Measure BL/BW/P/D/X-Y/G/F at both rear stations after Ironman ride-height plan; old bump-stop rubber is too decayed to copy",
-          "fit_and_test": "Both rear first-article rubber bases seat flat on brackets, stretch over/around bolts/studs by hand without tearing, contact strike pads within +/-5 mm, engage before hard limits, recover after 50 percent compression; hardness spread <=5 Shore A",
+          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm each; rear pair height match <=1 mm; reproduce Toyota-style tapered/radiused progressive rubber bodies and flat rectangular strike faces bonded/captive to supplied one-piece flat steel backing/saddle plates; plate outlines, bolt/stud patterns, hole/thread controls, and contact offsets released from supplied plates, cleaned rear brackets, and axle strike pads",
+          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to coated one-piece flat steel backing plates; matched rear pair; no tyre rubber or simple cut blocks",
+          "critical_measurements": "Measure supplied flat metal backing pieces plus BL/BW/P/D/X-Y/G/F at both rear stations after Ironman ride-height plan; old decayed rubber is shape evidence only",
+          "fit_and_test": "Both rear first-article flat backing plates seat on brackets, bolts/studs pass by hand, rubber remains bonded/captive, contact strike pads within +/-5 mm, engage before hard limits, recover after 50 percent compression; hardness spread <=5 Shore A",
           "source_ref": "docs_bump_stop_fabrication_spec_20260504|data_bump_stop_fabrication_specs|rubber_recreation_rev_a_machine_definitions",
-          "notes": "Make as matched rear pair after final ride height and axle travel checks.",
+          "notes": "Make as matched rear pair after final ride height and axle travel checks; user will provide the flat metal backing/saddle piece with the fabrication request.",
           "evidence_images": []
         },
         {
@@ -17954,7 +17916,7 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Front left axle-to-chassis bump-stop station",
           "pipe_or_line": "",
-          "replace_scope": "fabricate_rubber_only_stretch_fit",
+          "replace_scope": "fabricate_with_supplied_flat_steel_backing_plate",
           "quantity": "1",
           "photo_evidence": [
             "bump_stop_vehicle_measurement_control"
@@ -17964,12 +17926,12 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm; reproduce Toyota-style tapered/radiused progressive rubber body and flat rectangular strike face as a rubber-only stretch-fit bolt-on stop; rubber base footprint BL x BW, bolt/stud pitch P, relaxed hole/slot size D, and contact offset X/Y released from the cleaned left-front bracket and axle strike pad",
-          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5; no tyre rubber or simple cut block; no metal saddle/backing plate",
-          "critical_measurements": "Measure BL/BW/P/D/X-Y/G/F on the current vehicle bracket and axle strike pad; old bump-stop rubber is too decayed to copy; public sources do not expose the Toyota mould drawing",
-          "fit_and_test": "First article rubber base seats flat on the bracket, stretches over/around bolts/studs by hand without tearing, contacts strike pad within +/-5 mm, engages before shock/tyre/spring/brake-hose or metal hard limit, and recovers after 50 percent compression",
+          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm; reproduce Toyota-style tapered/radiused progressive rubber body and flat rectangular strike face bonded/captive to the supplied one-piece flat steel backing/saddle plate; plate outline, thickness, hole pitch P, hole/thread D, and contact offset X/Y released from the supplied plate, cleaned left-front bracket, and axle strike pad",
+          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to coated one-piece flat steel backing plate; no tyre rubber or simple cut block",
+          "critical_measurements": "Measure supplied flat metal backing piece plus BL/BW/P/D/X-Y/G/F on the current vehicle bracket and axle strike pad; old decayed rubber is shape evidence only; public sources do not expose the Toyota mould drawing",
+          "fit_and_test": "First article flat steel backing plate seats flat on the bracket, bolts/studs pass by hand, rubber remains bonded/captive, contacts strike pad within +/-5 mm, engages before shock/tyre/spring/brake-hose or metal hard limit, and recovers after 50 percent compression",
           "source_ref": "docs_bump_stop_fabrication_spec_20260504|data_bump_stop_fabrication_specs|rubber_recreation_rev_a_machine_definitions",
-          "notes": "Exact external height known; vehicle measurement releases the rubber base",
+          "notes": "User will provide the one flat metal backing/saddle piece with the fabrication request; use it as the bonding and hole-pattern pattern.",
           "evidence_images": []
         },
         {
@@ -17978,7 +17940,7 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Front right axle-to-chassis bump-stop station",
           "pipe_or_line": "",
-          "replace_scope": "fabricate_rubber_only_stretch_fit",
+          "replace_scope": "fabricate_with_supplied_flat_steel_backing_plate",
           "quantity": "1",
           "photo_evidence": [
             "bump_stop_vehicle_measurement_control"
@@ -17988,12 +17950,12 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Toyota 48304-60020 short right-front family; free height 60 +/-1 mm; reproduce Toyota-style tapered/radiused progressive rubber body and flat rectangular strike face as a rubber-only stretch-fit bolt-on stop; rubber base footprint BL x BW, bolt/stud pitch P, relaxed hole/slot size D, and contact offset X/Y released from the cleaned right-front bracket and axle strike pad",
-          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5; no tyre rubber or simple cut block; no metal saddle/backing plate",
-          "critical_measurements": "Measure BL/BW/P/D/X-Y/G/F on the current vehicle bracket and axle strike pad; do not use a 70 mm long-stop height here unless full-bump test releases trimming",
-          "fit_and_test": "First article rubber base seats flat on the bracket, stretches over/around bolts/studs by hand without tearing, contacts strike pad within +/-5 mm, engages before shock/tyre/spring/brake-hose or metal hard limit, and recovers after 50 percent compression",
+          "exact_recreation_spec": "Toyota 48304-60020 short right-front family; free height 60 +/-1 mm; reproduce Toyota-style tapered/radiused progressive rubber body and flat rectangular strike face bonded/captive to the supplied one-piece flat steel backing/saddle plate; plate outline, thickness, hole pitch P, hole/thread D, and contact offset X/Y released from the supplied plate, cleaned right-front bracket, and axle strike pad",
+          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to coated one-piece flat steel backing plate; no tyre rubber or simple cut block",
+          "critical_measurements": "Measure supplied flat metal backing piece plus BL/BW/P/D/X-Y/G/F on the current vehicle bracket and axle strike pad; do not use a 70 mm long-stop height here unless full-bump test releases trimming",
+          "fit_and_test": "First article flat steel backing plate seats flat on the bracket, bolts/studs pass by hand, rubber remains bonded/captive, contacts strike pad within +/-5 mm, engages before shock/tyre/spring/brake-hose or metal hard limit, and recovers after 50 percent compression",
           "source_ref": "docs_bump_stop_fabrication_spec_20260504|data_bump_stop_fabrication_specs|rubber_recreation_rev_a_machine_definitions",
-          "notes": "Reject aftermarket right-front stops made at 70 mm unless deliberately trimmed and released by vehicle test.",
+          "notes": "User will provide the one flat metal backing/saddle piece with the fabrication request; right-front height remains 60 mm.",
           "evidence_images": []
         },
         {
@@ -18002,7 +17964,7 @@ window.J40_DASHBOARD_DATA = {
           "pipe_id": "",
           "vehicle_location": "Rear axle-to-chassis bump-stop stations",
           "pipe_or_line": "",
-          "replace_scope": "fabricate_rubber_only_stretch_fit",
+          "replace_scope": "fabricate_with_supplied_flat_steel_backing_plates",
           "quantity": "2",
           "photo_evidence": [
             "bump_stop_vehicle_measurement_control"
@@ -18012,12 +17974,12 @@ window.J40_DASHBOARD_DATA = {
           "acquisition_status": "not_acquired",
           "installation_status": "not_installed",
           "current_action": "",
-          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm each; rear pair height match <=1 mm; reproduce Toyota-style tapered/radiused progressive rubber bodies and flat rectangular strike faces as rubber-only stretch-fit bolt-on stops; rubber base footprints, bolt/stud patterns, relaxed hole/slot sizes, and contact offsets released from cleaned rear brackets and axle strike pads",
-          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5; matched rear pair; no tyre rubber or simple cut blocks; no metal saddle/backing plate",
-          "critical_measurements": "Measure BL/BW/P/D/X-Y/G/F at both rear stations after Ironman ride-height plan; old bump-stop rubber is too decayed to copy",
-          "fit_and_test": "Both rear first-article rubber bases seat flat on brackets, stretch over/around bolts/studs by hand without tearing, contact strike pads within +/-5 mm, engage before hard limits, recover after 50 percent compression; hardness spread <=5 Shore A",
+          "exact_recreation_spec": "Toyota 48304-60010 long-stop family; free height 70 +/-1 mm each; rear pair height match <=1 mm; reproduce Toyota-style tapered/radiused progressive rubber bodies and flat rectangular strike faces bonded/captive to supplied one-piece flat steel backing/saddle plates; plate outlines, bolt/stud patterns, hole/thread controls, and contact offsets released from supplied plates, cleaned rear brackets, and axle strike pads",
+          "material_spec": "New NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to coated one-piece flat steel backing plates; matched rear pair; no tyre rubber or simple cut blocks",
+          "critical_measurements": "Measure supplied flat metal backing pieces plus BL/BW/P/D/X-Y/G/F at both rear stations after Ironman ride-height plan; old decayed rubber is shape evidence only",
+          "fit_and_test": "Both rear first-article flat backing plates seat on brackets, bolts/studs pass by hand, rubber remains bonded/captive, contact strike pads within +/-5 mm, engage before hard limits, recover after 50 percent compression; hardness spread <=5 Shore A",
           "source_ref": "docs_bump_stop_fabrication_spec_20260504|data_bump_stop_fabrication_specs|rubber_recreation_rev_a_machine_definitions",
-          "notes": "Make as matched rear pair after final ride height and axle travel checks.",
+          "notes": "Make as matched rear pair after final ride height and axle travel checks; user will provide the flat metal backing/saddle piece with the fabrication request.",
           "evidence_images": []
         },
         {
@@ -18684,14 +18646,14 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Axle-to-chassis bump-stop brackets: front-left plus rear-left and rear-right stations.",
           "required_qty": "3",
           "optional_spare_qty": "0",
-          "spec": "Rubber-only Toyota-style progressive stop with stretch-fit bolt-on holes or slots and flat rectangular strike face",
-          "envelope_3d_mm": "70 H released; rubber base L x W, bolt/stud pitch, relaxed hole/slot size, and strike-face X/Y are vehicle-measured before mould release",
-          "edge_profile": "Tapered/radiused rubber body; no sharp rectangular block edges; no metal saddle/backing plate",
-          "holes_or_inserts": "Rubber hole/slot pitch, relaxed hole/slot size, base footprint, and strike offset from vehicle measurements; rubber stretches over/around fitted bolts or studs",
-          "material": "NR/SBR bump-stop rubber Shore A 70 +/-5",
+          "spec": "Toyota-style progressive stop bonded/captive to supplied one-piece flat steel backing/saddle plate with flat rectangular strike face",
+          "envelope_3d_mm": "70 H released; flat plate L x W, thickness, bolt/stud pitch, hole/thread size, bond face, and strike-face X/Y are sample/vehicle-measured before mould release",
+          "edge_profile": "Tapered/radiused rubber body; no sharp rectangular block edges; one-piece flat steel backing plate copied from supplied sample",
+          "holes_or_inserts": "Flat plate hole pitch, hole/thread, base footprint, and strike offset from supplied flat metal sample plus vehicle measurements; holes belong in the flat plate unless sample proves rubber clearance holes",
+          "material": "NR/SBR bump-stop rubber Shore A 70 +/-5 bonded/captive to coated flat steel plate",
           "release_state": "first_article_required",
           "photo_refs": "20260502_004222_gp_PKRe5HSQ|20260502_004201_gp_zfUSmKJg|reference_catalog/bump_stop.jpg",
-          "notes": "Make one 70 mm first article before remaining long stops.",
+          "notes": "User will provide the one flat metal backing/saddle piece with the request. Make one 70 mm first article before remaining long stops.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
@@ -18737,14 +18699,14 @@ window.J40_DASHBOARD_DATA = {
           "vehicle_location": "Axle-to-chassis bump-stop bracket: right-front station only.",
           "required_qty": "1",
           "optional_spare_qty": "0",
-          "spec": "Rubber-only Toyota-style progressive stop with stretch-fit bolt-on holes or slots and flat rectangular strike face",
-          "envelope_3d_mm": "60 H released; rubber base L x W, bolt/stud pitch, relaxed hole/slot size, and strike-face X/Y are vehicle-measured before mould release",
-          "edge_profile": "Tapered/radiused rubber body; no sharp rectangular block edges; no metal saddle/backing plate",
-          "holes_or_inserts": "Rubber hole/slot pitch, relaxed hole/slot size, base footprint, and strike offset from right-front vehicle measurements; rubber stretches over/around fitted bolts or studs",
-          "material": "Same compound family as BUMP-60010-LONG",
+          "spec": "Toyota-style progressive stop bonded/captive to supplied one-piece flat steel backing/saddle plate with flat rectangular strike face",
+          "envelope_3d_mm": "60 H released; flat plate L x W, thickness, bolt/stud pitch, hole/thread size, bond face, and strike-face X/Y are sample/vehicle-measured before mould release",
+          "edge_profile": "Tapered/radiused rubber body; no sharp rectangular block edges; one-piece flat steel backing plate copied from supplied sample",
+          "holes_or_inserts": "Same flat-plate/base/contact rules as long stop; right-front vehicle measurements control final contact offset",
+          "material": "Same compound family as BUMP-60010-LONG bonded/captive to coated flat steel plate",
           "release_state": "first_article_required",
           "photo_refs": "20260502_004222_gp_PKRe5HSQ|20260502_004201_gp_zfUSmKJg|reference_catalog/bump_stop.jpg",
-          "notes": "Right-front short height is externally controlled by 48304-60020 references.",
+          "notes": "User will provide the one flat metal backing/saddle piece with the request. Right-front short height is externally controlled by 48304-60020 references.",
           "evidence_images": [
             {
               "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
@@ -25326,7 +25288,7 @@ window.J40_DASHBOARD_DATA = {
           "title": "Longman rubber order 2026-05-08",
           "current_status": "current_release",
           "release_position": "Longman quote pack uses square BM-ISO-SM/BM-ISO-LG body pads, FS-OVAL pads, first-article underfloor FS-STRIP-L/R flat strips, first-article bump stops, and hold rows only for any still-unidentified full-width liners.",
-          "notes": "Steel cup/seat washers, sleeves, shims, and bolts are separate hardware. The supplier-facing strip release is now the plain 420 x 38 x 8 mm rubber pair. The Longman handoff now includes paired SVG/DXF controls for BM-ISO-SM, BM-ISO-LG, FS-OVAL, FS-STRIP-L/R, and the bump-stop vehicle measurement drawing, plus the chassis location map, complete all-drawings SVG preview, interactive/static 3D visualisation, and OpenSCAD source models.",
+          "notes": "Steel cup/seat washers, sleeves, shims, and bolts are separate hardware. The supplier-facing strip release is now the plain 420 x 38 x 8 mm rubber pair. The Longman handoff now includes paired SVG/DXF controls for BM-ISO-SM, BM-ISO-LG, FS-OVAL, FS-STRIP-L/R, and the bump-stop vehicle measurement drawing, plus the current-order preview, chassis location map, complete all-drawings SVG preview, interactive/static 3D visualisation, and OpenSCAD source models.",
           "package_dir": "data/manual/fabrication/longman_rubber_order_20260508",
           "primary_links": [
             {
@@ -25358,6 +25320,10 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
               "label": "Chassis rubber location map"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_current_order_preview_rev_a.svg",
+              "label": "Current chassis rubber order preview"
             },
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
@@ -25483,6 +25449,10 @@ window.J40_DASHBOARD_DATA = {
               "label": "bump_stop_vehicle_measurement_control.svg"
             },
             {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_current_order_preview_rev_a.svg",
+              "label": "chassis_rubber_current_order_preview_rev_a.svg"
+            },
+            {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
               "label": "chassis_rubber_location_map_rev_a.svg"
             },
@@ -25495,9 +25465,9 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/longman_rubber_order_20260508.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 185182
+            "bytes": 205185
           },
-          "file_count": 35
+          "file_count": 37
         }
       ],
       "chassis_bracket_analysis_register": [],
@@ -25573,221 +25543,6 @@ window.J40_DASHBOARD_DATA = {
       ],
       "involved_parts": [
         {
-          "entry_id": "part_body_mount_rubber_kit",
-          "workstream": "chassis_rubbers",
-          "item": "Consolidated Longman chassis/body custom rubber order",
-          "status": "spec_ready",
-          "procurement_stage": "consolidated_longman_quote_ready_measurement_release_hold",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_body_mount_rubber_kit",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|docs/longman-rubber-order-spec-20260508.md|data/manual/longman_rubber_order_specs.csv|docs/chassis-rubbers-workstream.md|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
-          "notes": "Single consolidated Longman custom rubber order. Quote/order as one supplier bundle: BM-ISO-SM 10 + 2 spares, BM-ISO-LG 2 + 1 spare, FS-OVAL x2, FS-STRIP-L x1, FS-STRIP-R x1, BUMP-60010-LONG x3, and BUMP-60020-SHORT x1. Steel cup/seat washers, sleeves, shims, bolts, and captive-thread repairs remain separate local hardware rows; BODY-LINER-FULL-WIDTH-HOLD and EXH-HGR-90917 are hold/reference lines only, not current order quantities.",
-          "links": [
-            {
-              "url": "../../deliverables/fabrication_packages/rubber_recreation_rev_a.zip",
-              "label": "Rubber fabrication package ZIP",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
-              "label": "Interactive 3D visualisation",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
-              "label": "Static 3D visualisation",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
-              "label": "Chassis rubber location map SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
-              "label": "Complete chassis rubber drawing preview SVG",
-              "download": true
-            },
-            {
-              "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
-              "label": "Bump-stop fabrication spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
-              "label": "Rubber dimension sheet PDF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
-              "label": "3D model README",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
-              "label": "3D model manifest CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
-              "label": "OpenSCAD model master",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
-              "label": "BM-ISO-SM OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
-              "label": "BM-ISO-LG OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
-              "label": "FS-OVAL OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
-              "label": "FS-STRIP-L OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
-              "label": "FS-STRIP-R OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
-              "label": "BUMP-60010 long OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
-              "label": "BUMP-60020 short OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
-              "label": "BUMP-60010 rear pair OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
-              "label": "EXH-HGR-90917 OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
-              "label": "Old-rubber 3D closure checks",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
-              "label": "Bump-stop measurement control SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
-              "label": "Bump-stop measurement control DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
-              "label": "BM-ISO-SM square pad DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
-              "label": "BM-ISO-SM square pad SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
-              "label": "BM-ISO-LG square pad DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
-              "label": "BM-ISO-LG square pad SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf",
-              "label": "Small cup washer DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf",
-              "label": "Large cup washer DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf",
-              "label": "Oval front-support pad DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf",
-              "label": "Left strip template DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf",
-              "label": "Right strip template DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
-              "label": "Rubber cut list CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/inspection_checklist.csv",
-              "label": "Rubber inspection checklist CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
-              "label": "Rubber machine definitions CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json",
-              "label": "Rubber machine definitions JSON",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
-            "caption": "Body mount rubber cushion and front-support rubber kit reference",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_body_mount_rubber_kit"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
-          }
-        },
-        {
           "entry_id": "part_fastener_kit_a_millat",
           "workstream": "chassis_rubbers",
           "item": "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves",
@@ -25821,260 +25576,6 @@ window.J40_DASHBOARD_DATA = {
             "media_id": "graded_fasteners",
             "matched_tokens": [
               "fastener"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_tub_repair_steel_sheet_1_2mm_20260513",
-          "workstream": "chassis_rubbers",
-          "item": "1.2 mm cold-rolled mild-steel sheet for tub skin/floor patch plates",
-          "status": "planned",
-          "procurement_stage": "purchase_ready_measurement_hold",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "estimate",
-          "currency": "PKR",
-          "vendor": "local steel stockholder / body-panel sheet supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_tub_repair_steel_sheet_1_2mm_20260513",
-          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/tub-off-refit-execution-plan.md|docs/j40_welding_execution_plan_20260419.md",
-          "notes": "Buy one 1.2 mm cold-rolled mild-steel sheet about 1000 x 1000 mm, or nearest manageable sheet. Intended for non-structural tub skin, floor-pan, firewall lip, and small closure patches after the rust map is exposed. Final patch shapes remain measurement controlled; do not use where body mounts or seat belt/seat loads need thicker reinforcement.",
-          "links": [
-            {
-              "url": "../../deliverables/fabrication_packages/rubber_recreation_rev_a.zip",
-              "label": "Rubber fabrication package ZIP",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
-              "label": "Interactive 3D visualisation",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
-              "label": "Static 3D visualisation",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
-              "label": "Chassis rubber location map SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
-              "label": "Complete chassis rubber drawing preview SVG",
-              "download": true
-            },
-            {
-              "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
-              "label": "Bump-stop fabrication spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
-              "label": "Rubber dimension sheet PDF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
-              "label": "3D model README",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
-              "label": "3D model manifest CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
-              "label": "OpenSCAD model master",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
-              "label": "BM-ISO-SM OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
-              "label": "BM-ISO-LG OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
-              "label": "FS-OVAL OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
-              "label": "FS-STRIP-L OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
-              "label": "FS-STRIP-R OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
-              "label": "BUMP-60010 long OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
-              "label": "BUMP-60020 short OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
-              "label": "BUMP-60010 rear pair OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
-              "label": "EXH-HGR-90917 OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
-              "label": "Old-rubber 3D closure checks",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
-              "label": "Bump-stop measurement control SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
-              "label": "Bump-stop measurement control DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
-              "label": "BM-ISO-SM square pad DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
-              "label": "BM-ISO-SM square pad SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
-              "label": "BM-ISO-LG square pad DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
-              "label": "BM-ISO-LG square pad SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf",
-              "label": "Small cup washer DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf",
-              "label": "Large cup washer DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf",
-              "label": "Oval front-support pad DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf",
-              "label": "Left strip template DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf",
-              "label": "Right strip template DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
-              "label": "Rubber cut list CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/inspection_checklist.csv",
-              "label": "Rubber inspection checklist CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
-              "label": "Rubber machine definitions CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json",
-              "label": "Rubber machine definitions JSON",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-            "caption": "1.2 mm cold-rolled mild-steel sheet for tub skin/floor patch plates \u00b7 rust/metal treatment reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "wax_grease_remover",
-            "matched_tokens": [
-              "rust"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_tub_mount_reinforcement_plate_3mm_20260513",
-          "workstream": "chassis_rubbers",
-          "item": "3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs",
-          "status": "planned",
-          "procurement_stage": "purchase_ready_measurement_hold",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "estimate",
-          "currency": "PKR",
-          "vendor": "local steel stockholder / sheet-metal shop",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_tub_mount_reinforcement_plate_3mm_20260513",
-          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/tub-off-refit-execution-plan.md|data/manual/body_mount_order_release_specs.csv",
-          "notes": "Buy one 3.0 mm mild-steel plate about 500 x 500 mm or 300 x 600 mm for tub body-mount backing plates, captive-nut/weld-nut repair plates, local reinforcement coupons, and test pieces. Keep separate from chassis/battery stand fabrication steel; release final shapes only after each mount station is cleaned and measured.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/battery.jpg",
-            "caption": "3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs \u00b7 battery reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "battery",
-            "matched_tokens": [
-              "battery"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -26194,6 +25695,11 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
               "label": "Chassis rubber location map SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_current_order_preview_rev_a.svg",
+              "label": "Current chassis rubber order preview SVG",
               "download": true
             },
             {
@@ -26409,6 +25915,11 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
               "label": "Chassis rubber location map SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_current_order_preview_rev_a.svg",
+              "label": "Current chassis rubber order preview SVG",
               "download": true
             },
             {
@@ -26706,7 +26217,6 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "Consolidated Longman chassis/body custom rubber order (consolidated_longman_quote_ready_measurement_release_hold; delivery not_ordered; amount missing)",
                 "Body rubber/plastic bumpers isolators knobs and small spacers (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Body mount shim and spacer pack (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched (spec_needed_before_order; delivery not_ordered; amount missing)",
@@ -26840,12 +26350,11 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Consolidated Longman chassis/body custom rubber order (consolidated_longman_quote_ready_measurement_release_hold; delivery not_ordered; amount missing)",
                 "Body mount hardware kit bolts sleeves washers (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Body mount shim and spacer pack (spec_ready_release_hold; delivery not_ordered; amount missing)",
-                "3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)",
                 "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves (ordered_pending_delivery; delivery pending_delivery; amount missing)"
+                "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves (ordered_pending_delivery; delivery pending_delivery; amount missing)",
+                "Body rubber/plastic bumpers isolators knobs and small spacers (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -26960,12 +26469,11 @@ window.J40_DASHBOARD_DATA = {
                 }
               ],
               "registered_items": [
-                "Consolidated Longman chassis/body custom rubber order (consolidated_longman_quote_ready_measurement_release_hold; delivery not_ordered; amount missing)",
                 "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves (ordered_pending_delivery; delivery pending_delivery; amount missing)",
                 "Body mount hardware kit bolts sleeves washers (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Body mount shim and spacer pack (spec_ready_release_hold; delivery not_ordered; amount missing)",
-                "3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)",
-                "1.2 mm cold-rolled mild-steel sheet for tub skin/floor patch plates (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)"
+                "Body rubber/plastic bumpers isolators knobs and small spacers (spec_needed_before_order; delivery not_ordered; amount missing)",
+                "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -27083,11 +26591,10 @@ window.J40_DASHBOARD_DATA = {
               ],
               "registered_items": [
                 "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves (ordered_pending_delivery; delivery pending_delivery; amount missing)",
-                "Consolidated Longman chassis/body custom rubber order (consolidated_longman_quote_ready_measurement_release_hold; delivery not_ordered; amount missing)",
                 "Body shoulder bolts pivot pins sleeves and stand-off spacers - sample matched (spec_needed_before_order; delivery not_ordered; amount missing)",
                 "Body mount hardware kit bolts sleeves washers (spec_ready_release_hold; delivery not_ordered; amount missing)",
                 "Body mount shim and spacer pack (spec_ready_release_hold; delivery not_ordered; amount missing)",
-                "3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs (purchase_ready_measurement_hold; delivery not_ordered; amount estimate)"
+                "Body rubber/plastic bumpers isolators knobs and small spacers (spec_needed_before_order; delivery not_ordered; amount missing)"
               ]
             }
           ]
@@ -30851,7 +30358,30 @@ window.J40_DASHBOARD_DATA = {
       ],
       "image_count": 109,
       "reference_token_count": 30,
-      "requirements": [],
+      "requirements": [
+        {
+          "requirement_id": "HVAC-ELEC-001",
+          "requirement_name": "Relay fuse switch and wiring pack for HVAC blower clutch and condenser fan",
+          "pipe_id": "",
+          "vehicle_location": "Front loom plus dash feed for HVAC",
+          "pipe_or_line": "",
+          "replace_scope": "buy_after_loads_and_switching_are_fixed",
+          "quantity": "1_wiring_pack",
+          "photo_evidence": [],
+          "photo_status": "wiring_layout_required",
+          "spec_status": "purchase_ready_measurement_hold",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "Size fuses relays wire and connectors from selected blower clutch and fan loads before buying extras",
+          "exact_recreation_spec": "Protected 12V wiring for blower speeds thermostat/clutch request pressure switch logic condenser fan request grounds and serviceable connectors",
+          "material_spec": "Automotive wire/relay/fuse/connector materials rated above measured loads with heat and moisture protection",
+          "critical_measurements": "Blower current; clutch current; fan current if fitted; fuse sizes; relay ratings; ground locations; connector pinout; grommet locations; harness length",
+          "fit_and_test": "Continuity-test before power; live-test blower speeds clutch request pressure-switch cutout and fan request with fused feeds",
+          "source_ref": "part_hvac_blower_clutch_fan_wiring_20260514|data/manual/electrical_diagram_reconciliation_20260518.csv",
+          "notes": "This row makes the A/C electrical dependency visible in the Electrical Reset requirements list.",
+          "evidence_images": []
+        }
+      ],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
       "replacement_pipe_order_release_specs": [],
@@ -31056,7 +30586,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/relay_mount_rev_d.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 49983
+            "bytes": 50471
           },
           "file_count": 9
         }
@@ -33956,7 +33486,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/suspension_wood_cribbing_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 36029
+            "bytes": 36517
           },
           "file_count": 11
         },
@@ -34026,7 +33556,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/midi5_enclosure_rev_d.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 68857
+            "bytes": 69345
           },
           "file_count": 11
         },
@@ -34300,7 +33830,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/relay_mount_rev_d.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 49983
+            "bytes": 50471
           },
           "file_count": 9
         }
@@ -34356,492 +33886,12 @@ window.J40_DASHBOARD_DATA = {
           "detail": "Fabricate/mock up the compact chassis-mounted battery power carrier Rev F only after mapping the battery cavity: use the May 17 actual installed Daewoo DLS120 battery measurement photos as the fixed exclusion block, keep the standard N70/27-class 318 x 180 x 230 envelope as fallback comparison until the final numbers are transcribed, measure front/radiator-side, inboard engine/LHD-steering-side, lower-under-tray, outboard-wing-side, bonnet/terminal-height volumes, battery lift-out path, formed chassis saddle geometry, and adjustable body-side offset-bar setting. Trial the widened front access-ladder stack: 660 x 310 spine, 340 x 265 battery tray with removable hold-down, adjustable offset bars at 160 / 190 / 230 mm, Relay Rev D vertical 360 x 245 aluminium base attached flat to the main metal service sheet with exact 300 x 197 insulating sheet and the existing covered relay box outside the battery footprint on the outboard/access edge with about 80 mm relay-to-battery service gap, red relay power pipe entering the relay top hole closest to the battery, relay output power bundle leaving the second top relay hole, MIDI Rev D hinged enclosure 210 x 165 x 65 on a separated top-front shelf started from the battery leading-edge datum with fuse 4 grommeted power input, five grommeted output holes, and the far-side output enlarged for two power cables, folded cutoff/kill-switch base/guard 170 x 110 finished face / 210 x 150 flat pattern / 20 mm upward lips beside the MIDI enclosure, central battery-to-far-side-cutoff input route, near-side cutoff-to-relay and cutoff-to-MIDI fuse 4 switched branch routes, 80 mm cable gutter, and cable-lug depth templates. May 14 image-based chassis estimate: start with tray underside 180 mm above chassis rail top, adjustable 150-210 mm; tray centre 190 mm wing-side/outboard from the more central chassis pickup centreline into the edge cavity, adjustable 160-230 mm via offset bars. The active design keeps relay/MIDI/cutoff off the inboard engine/LHD side unless the widened access-ladder mock-up fails by measurement. Notes: User update 2026-05-16 relay/battery carrier correction: use Relay Rev D in the battery stand power carrier with the flat aluminium base mounted vertically and directly flat to the main metal service sheet; keep the exact insulating sheet and existing covered relay box only. May 17 photos add actual installed Daewoo DLS120 battery ruler views, terminal/hold-down context, and existing tray/mount opening and height measurements; transcribe final case and mount values into the cavity map before cutting. The red relay power pipe enters the relay top hole closest to the battery, and the relay output power bundle exits the second top relay hole. Remove the separate red/black relay cable-boot/output-cluster/loom-card fabrication. Keep MIDI Rev D hinged enclosure from midi5_enclosure_rev_d and slotted body-side offset bars so the battery stand power carrier can be adjusted on the chassis saddle. Keep the widened access ladder at 660 x 310, the 340 x 265 tray around the actual battery datum with the previous 318 x 180 x 230 envelope only as comparison, battery removal after hold-down removal, relay outside the battery footprint on the outboard/access edge, kill switch beside the MIDI enclosure, central battery positive to the far-side cutoff stud first, near-side cutoff output to relay and MIDI fuse 4, 80 mm cable gutter, five grommeted MIDI outputs, and far-side enlarged double-cable output clearance. Chassis fixing is a formed saddle over both rail sides, through-bolted at the one pickup location, with configurable 160-230 mm body-side offset bars."
         },
         {
-          "label": "Procurement \u00b7 release purchase-ready rows",
-          "status": "completed",
-          "detail": "0 part rows still require price confirmation/order placement."
-        },
-        {
-          "label": "Procurement \u00b7 track in-flight deliveries",
-          "status": "completed",
-          "detail": "0 part rows are ordered and awaiting delivery."
-        },
-        {
-          "label": "Procurement \u00b7 resolve ambiguous stock/receipt rows",
-          "status": "completed",
-          "detail": "0 rows still need confirmation before closeout."
-        },
-        {
           "label": "Close workstream exit gate",
           "status": "queued",
           "detail": "No linked package rows found. Exit gate: Non-rubber fabrication packages are visible in the UI, sent out with PDF/DXF/SVG files, first articles are tracked, and superseded routes are not accidentally fabricated"
         }
       ],
-      "involved_parts": [
-        {
-          "entry_id": "part_fabrication_raw_epdm_sheet_small_isolators_20260513",
-          "workstream": "fabrication_handoff",
-          "item": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads",
-          "status": "planned",
-          "procurement_stage": "purchase_ready_estimate",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "estimate",
-          "currency": "PKR",
-          "vendor": "local rubber sheet supplier / Longman fallback",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_fabrication_raw_epdm_sheet_small_isolators_20260513",
-          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
-          "notes": "Buy a small 3-5 mm EPDM/SBR sheet at least 300 x 300 mm for the radiator isolator pad, battery carrier anti-chafe pads, and first-article trimming. This is small sheet stock only and does not replace the chassis-rubber Longman/body-mount order route.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
-            "caption": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads \u00b7 body mount rubber kit reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "body_mount_rubber_kit_reference",
-            "matched_tokens": [
-              "body",
-              "mount"
-            ],
-            "match_basis": "local_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_fabrication_raw_aluminium_plate_3mm_20260513",
-          "workstream": "fabrication_handoff",
-          "item": "3.0 mm 5052-H32 aluminium sheet for MIDI enclosure, Relay Rev D base, and cutoff electrical plates",
-          "status": "planned",
-          "procurement_stage": "purchase_ready_estimate",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "estimate",
-          "currency": "PKR",
-          "vendor": "local aluminium stockholder / sheet-metal shop",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_fabrication_raw_aluminium_plate_3mm_20260513",
-          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/midi5_enclosure_rev_d/README.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/README.md|data/manual/fabrication/relay_mount_rev_d/README.md",
-          "notes": "Buy 3.0 mm 5052-H32 aluminium sheet: minimum 600 x 600 mm, or 1000 x 500 if cheaper/similarly priced, for the current MIDI Rev D enclosure body/lid, Relay Rev D 360 x 245 flat base, and folded cutoff base/guard with 20 mm upward lips. Current battery stand route remains steel; this aluminium is for electrical component carriers/guards, not the main carrier.",
-          "links": [
-            {
-              "url": "../../deliverables/fabrication_packages/midi5_enclosure_rev_d.zip",
-              "label": "MIDI enclosure package ZIP",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/j40_midi5_enclosure_rev_d_dimension_sheet.pdf",
-              "label": "MIDI enclosure dimension sheet PDF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.dxf",
-              "label": "MIDI enclosure body DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.svg",
-              "label": "MIDI enclosure body SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.dxf",
-              "label": "MIDI holder subplate DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.svg",
-              "label": "MIDI holder subplate SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.dxf",
-              "label": "MIDI enclosure lid DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.svg",
-              "label": "MIDI enclosure lid SVG",
-              "download": true
-            },
-            {
-              "url": "../../deliverables/fabrication_packages/relay_mount_rev_d.zip",
-              "label": "Relay Rev D package ZIP",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/j40_relay_mount_rev_d_dimension_sheet.pdf",
-              "label": "Relay Rev D dimension sheet PDF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.dxf",
-              "label": "Relay Rev D flat base plate DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.svg",
-              "label": "Relay Rev D flat base plate SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.dxf",
-              "label": "Relay Rev D insulating sheet DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.svg",
-              "label": "Relay Rev D insulating sheet SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/README.md",
-              "label": "Relay Rev D README",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/relay.jpg",
-            "caption": "3.0 mm 5052-H32 aluminium sheet for MIDI enclosure, Relay Rev D base, and cutoff electrical plates \u00b7 automotive relay reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "relay",
-            "matched_tokens": [
-              "relay"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_fabrication_raw_mild_steel_plate_3mm_20260513",
-          "workstream": "fabrication_handoff",
-          "item": "3.0 mm mild-steel sheet plus 90-degree angle/L-section stock for compact battery tray/access ladder",
-          "status": "planned",
-          "procurement_stage": "purchase_ready_estimate",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "estimate",
-          "currency": "PKR",
-          "vendor": "local steel stockholder / sheet-metal shop",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_fabrication_raw_mild_steel_plate_3mm_20260513",
-          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv",
-          "notes": "Buy one 3.0 mm mild-steel sheet/plate at least 600 x 600 mm, or 1000 x 500 if cheaper/similarly priced. Also buy 3.0 mm 90-degree mild-steel angle/L-section, 25 x 25 x 3 mm or 30 x 30 x 3 mm, 3 m total, for tray perimeter/upstands, widened access-ladder frame, shallow shelf rails, and cable/P-clip tabs. Keep sheet stock for the battery deck, widened access-ladder flat face, hold-down crossbar, and flat component tabs. Do not spend this stock on tub repairs; keep tub plate stock separate.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/battery.jpg",
-            "caption": "3.0 mm mild-steel sheet plus 90-degree angle/L-section stock for compact battery tray/access ladder \u00b7 battery reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "battery",
-            "matched_tokens": [
-              "battery"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_fabrication_raw_mild_steel_plate_4mm_20260513",
-          "workstream": "fabrication_handoff",
-          "item": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post",
-          "status": "planned",
-          "procurement_stage": "purchase_ready_estimate",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "estimate",
-          "currency": "PKR",
-          "vendor": "local steel stockholder / sheet-metal shop",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_fabrication_raw_mild_steel_plate_4mm_20260513",
-          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
-          "notes": "Buy one 4.0 mm mild-steel plate at least 700 x 450 mm, or nearest sheet size such as 1000 x 500. Also ask for 50 x 50 x 4 mm 90-degree mild-steel angle, 1 m, for the radiator post; 40 x 40 x 4 mm 90-degree mild-steel angle, 2 m, for battery stand/upright bridge trials; and short mild-steel tube/sleeve stock only after final M8/M10 through-bolt size is chosen. Keep plate stock for the formed chassis saddle, adjustable offset bars, flat bolt tabs, and any upright/gusset plates that angle stock cannot replace. Deburr and prime after cutting.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
-            "caption": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post \u00b7 current car radiator/heater hose crop",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "radiator_heater_hose_current_car_crop_20260503",
-            "matched_tokens": [
-              "radiator",
-              "hose"
-            ],
-            "match_basis": "local_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_fabrication_raw_electrical_plastic_sheet_20260513",
-          "workstream": "fabrication_handoff",
-          "item": "Electrical insulating plastic/G10 sheet - MIDI 5.0 mm board and relay 3.0 mm sheet",
-          "status": "planned",
-          "procurement_stage": "purchase_ready_estimate",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "estimate",
-          "currency": "PKR",
-          "vendor": "local plastic CNC/router or sheet supplier",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_fabrication_raw_electrical_plastic_sheet_20260513",
-          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/midi5_enclosure_rev_d/README.md|data/manual/fabrication/relay_mount_rev_d/README.md",
-          "notes": "Buy/quote 5.0 mm HDPE/ABS/G10/phenolic board at least 200 x 150 mm for the MIDI subplate, plus 3.0 mm ABS/HDPE/polypropylene/G10/phenolic sheet at least 350 x 250 mm for the Relay Rev D exact 300 x 197 insulating sheet.",
-          "links": [
-            {
-              "url": "../../deliverables/fabrication_packages/midi5_enclosure_rev_d.zip",
-              "label": "MIDI enclosure package ZIP",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/j40_midi5_enclosure_rev_d_dimension_sheet.pdf",
-              "label": "MIDI enclosure dimension sheet PDF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.dxf",
-              "label": "MIDI enclosure body DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.svg",
-              "label": "MIDI enclosure body SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.dxf",
-              "label": "MIDI holder subplate DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.svg",
-              "label": "MIDI holder subplate SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.dxf",
-              "label": "MIDI enclosure lid DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.svg",
-              "label": "MIDI enclosure lid SVG",
-              "download": true
-            },
-            {
-              "url": "../../deliverables/fabrication_packages/relay_mount_rev_d.zip",
-              "label": "Relay Rev D package ZIP",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/j40_relay_mount_rev_d_dimension_sheet.pdf",
-              "label": "Relay Rev D dimension sheet PDF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.dxf",
-              "label": "Relay Rev D flat base plate DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.svg",
-              "label": "Relay Rev D flat base plate SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.dxf",
-              "label": "Relay Rev D insulating sheet DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.svg",
-              "label": "Relay Rev D insulating sheet SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/README.md",
-              "label": "Relay Rev D README",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/relay.jpg",
-            "caption": "Electrical insulating plastic/G10 sheet - MIDI 5.0 mm board and relay 3.0 mm sheet \u00b7 automotive relay reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "relay",
-            "matched_tokens": [
-              "relay"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "entry_id": "service_local_3d_printing_fabrication_prototypes",
-          "workstream": "fabrication_handoff",
-          "item": "MIDI holder plastic underlay / subplate quote",
-          "status": "planned",
-          "procurement_stage": "quote_needed",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "local plastic CNC/router or 3D printing service",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "service_local_3d_printing_fabrication_prototypes",
-          "evidence_ref": "user_update_2026-05-04_scouting_3d_print_fabricated_items|docs/fabrication-handoff-index.md|data/manual/fabrication_handoff_requirements.csv",
-          "notes": "Scout only the MIDI holder non-conductive underlay/subplate: 140 x 85 x 5 mm from midi5_holder_subplate_rev_d DXF/PDF. Metal plate/bracket fabrication remains owner-managed and is intentionally excluded from this scout row.",
-          "links": [
-            {
-              "url": "../../deliverables/fabrication_packages/midi5_enclosure_rev_d.zip",
-              "label": "MIDI enclosure package ZIP",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/j40_midi5_enclosure_rev_d_dimension_sheet.pdf",
-              "label": "MIDI enclosure dimension sheet PDF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.dxf",
-              "label": "MIDI enclosure body DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.svg",
-              "label": "MIDI enclosure body SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.dxf",
-              "label": "MIDI holder subplate DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.svg",
-              "label": "MIDI holder subplate SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.dxf",
-              "label": "MIDI enclosure lid DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.svg",
-              "label": "MIDI enclosure lid SVG",
-              "download": true
-            },
-            {
-              "url": "../../deliverables/fabrication_packages/relay_mount_rev_d.zip",
-              "label": "Relay Rev D package ZIP",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/j40_relay_mount_rev_d_dimension_sheet.pdf",
-              "label": "Relay Rev D dimension sheet PDF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.dxf",
-              "label": "Relay Rev D flat base plate DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.svg",
-              "label": "Relay Rev D flat base plate SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.dxf",
-              "label": "Relay Rev D insulating sheet DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.svg",
-              "label": "Relay Rev D insulating sheet SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/README.md",
-              "label": "Relay Rev D README",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.svg",
-            "caption": "MIDI holder non-conductive subplate fabrication drawing",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "service_local_3d_printing_fabrication_prototypes"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
-          }
-        }
-      ],
+      "involved_parts": [],
       "operation_panels": [],
       "subtask_groups": [
         {
@@ -34882,14 +33932,7 @@ window.J40_DASHBOARD_DATA = {
               "status": "in_progress",
               "parts": [],
               "images": [],
-              "registered_items": [
-                "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post (purchase_ready_estimate; delivery not_ordered; amount estimate)",
-                "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads (purchase_ready_estimate; delivery not_ordered; amount estimate)",
-                "3.0 mm mild-steel sheet plus 90-degree angle/L-section stock for compact battery tray/access ladder (purchase_ready_estimate; delivery not_ordered; amount estimate)",
-                "MIDI holder plastic underlay / subplate quote (quote_needed; delivery not_ordered; amount missing)",
-                "3.0 mm 5052-H32 aluminium sheet for MIDI enclosure, Relay Rev D base, and cutoff electrical plates (purchase_ready_estimate; delivery not_ordered; amount estimate)",
-                "Electrical insulating plastic/G10 sheet - MIDI 5.0 mm board and relay 3.0 mm sheet (purchase_ready_estimate; delivery not_ordered; amount estimate)"
-              ]
+              "registered_items": []
             },
             {
               "title": "Release Electrical Fabrication Packages",
@@ -34932,14 +33975,7 @@ window.J40_DASHBOARD_DATA = {
               "status": "queued",
               "parts": [],
               "images": [],
-              "registered_items": [
-                "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post (purchase_ready_estimate; delivery not_ordered; amount estimate)",
-                "3.0 mm mild-steel sheet plus 90-degree angle/L-section stock for compact battery tray/access ladder (purchase_ready_estimate; delivery not_ordered; amount estimate)",
-                "3.0 mm 5052-H32 aluminium sheet for MIDI enclosure, Relay Rev D base, and cutoff electrical plates (purchase_ready_estimate; delivery not_ordered; amount estimate)",
-                "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads (purchase_ready_estimate; delivery not_ordered; amount estimate)",
-                "Electrical insulating plastic/G10 sheet - MIDI 5.0 mm board and relay 3.0 mm sheet (purchase_ready_estimate; delivery not_ordered; amount estimate)",
-                "MIDI holder plastic underlay / subplate quote (quote_needed; delivery not_ordered; amount missing)"
-              ]
+              "registered_items": []
             },
             {
               "title": "Inspect First Articles",
@@ -34977,14 +34013,7 @@ window.J40_DASHBOARD_DATA = {
               "status": "queued",
               "parts": [],
               "images": [],
-              "registered_items": [
-                "3.0 mm 5052-H32 aluminium sheet for MIDI enclosure, Relay Rev D base, and cutoff electrical plates (purchase_ready_estimate; delivery not_ordered; amount estimate)",
-                "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post (purchase_ready_estimate; delivery not_ordered; amount estimate)",
-                "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads (purchase_ready_estimate; delivery not_ordered; amount estimate)",
-                "3.0 mm mild-steel sheet plus 90-degree angle/L-section stock for compact battery tray/access ladder (purchase_ready_estimate; delivery not_ordered; amount estimate)",
-                "Electrical insulating plastic/G10 sheet - MIDI 5.0 mm board and relay 3.0 mm sheet (purchase_ready_estimate; delivery not_ordered; amount estimate)",
-                "MIDI holder plastic underlay / subplate quote (quote_needed; delivery not_ordered; amount missing)"
-              ]
+              "registered_items": []
             }
           ]
         }
@@ -38654,7 +37683,118 @@ window.J40_DASHBOARD_DATA = {
       ],
       "image_count": 27,
       "reference_token_count": 10,
-      "requirements": [],
+      "requirements": [
+        {
+          "requirement_id": "HVAC-ENGINE-001",
+          "requirement_name": "Parallel-flow A/C condenser sized to core support",
+          "pipe_id": "",
+          "vehicle_location": "Front core support ahead of radiator",
+          "pipe_or_line": "",
+          "replace_scope": "buy_after_front_pack_measurement",
+          "quantity": "1_condenser",
+          "photo_evidence": [],
+          "photo_status": "core_support_measurement_required",
+          "spec_status": "purchase_ready_measurement_hold",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "Measure the radiator/core-support opening and fan clearance before ordering",
+          "exact_recreation_spec": "Parallel-flow condenser sized for the J40 front pack with fittings positioned for clean hose routing to drier and compressor",
+          "material_spec": "New R134a-compatible parallel-flow condenser with protected fins and mount tabs",
+          "critical_measurements": "Core width/height/thickness; fitting thread/type/location; fan/radiator clearance; mount tab spacing; grille clearance; hose exit direction",
+          "fit_and_test": "Pressure/leak test before charge; verify no radiator/grille/fan contact and no unsupported condenser load",
+          "source_ref": "part_hvac_parallel_flow_condenser_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md",
+          "notes": "Visible front-pack dimensions control the final condenser choice.",
+          "evidence_images": []
+        },
+        {
+          "requirement_id": "HVAC-ENGINE-002",
+          "requirement_name": "Receiver-drier matched to R134a layout",
+          "pipe_id": "",
+          "vehicle_location": "Front engine bay A/C liquid line position",
+          "pipe_or_line": "",
+          "replace_scope": "buy_with_condenser_and_hose_layout",
+          "quantity": "1_drier",
+          "photo_evidence": [],
+          "photo_status": "layout_photos_required",
+          "spec_status": "purchase_ready_measurement_hold",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "Choose drier after condenser fitting orientation and service-port layout are fixed",
+          "exact_recreation_spec": "Receiver-drier compatible with R134a and the selected condenser/expansion-valve layout; sight glass optional only if supplier recommends it",
+          "material_spec": "New sealed receiver-drier; do not reuse an opened or unknown drier",
+          "critical_measurements": "Fitting thread/type; inlet/outlet orientation; body diameter/height; bracket size; service-port access; trinary/switch port if integrated",
+          "fit_and_test": "Install new sealed drier last; leak test and evacuate before charging",
+          "source_ref": "part_hvac_receiver_drier_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md",
+          "notes": "Drier is a consumable and should not be opened until final assembly.",
+          "evidence_images": []
+        },
+        {
+          "requirement_id": "HVAC-ENGINE-003",
+          "requirement_name": "Trinary pressure switch for compressor and condenser fan control",
+          "pipe_id": "",
+          "vehicle_location": "Receiver-drier or high-pressure liquid line",
+          "pipe_or_line": "",
+          "replace_scope": "buy_with_drier_or_line_port",
+          "quantity": "1_switch",
+          "photo_evidence": [],
+          "photo_status": "layout_photos_required",
+          "spec_status": "purchase_ready_measurement_hold",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "Match switch thread and pressure logic to the drier/line port before purchase",
+          "exact_recreation_spec": "Trinary pressure switch to protect compressor low/high pressure and request condenser fan operation when required",
+          "material_spec": "New R134a-compatible automotive pressure switch with matching connector or service pigtail",
+          "critical_measurements": "Thread size; sealing style; cut-in/cut-out pressures; connector type; wire count; mounting/service access",
+          "fit_and_test": "Bench-continuity check switch logic if possible; confirm compressor clutch and fan relays respond correctly after charge",
+          "source_ref": "part_hvac_trinary_switch_20260514|data/manual/electrical_diagram_reconciliation_20260518.csv",
+          "notes": "Electrical function depends on the final pressure-switch logic.",
+          "evidence_images": []
+        },
+        {
+          "requirement_id": "HVAC-ENGINE-004",
+          "requirement_name": "A/C compressor plus bracket and belt alignment",
+          "pipe_id": "",
+          "vehicle_location": "2H engine accessory drive and compressor mount",
+          "pipe_or_line": "",
+          "replace_scope": "inspect_existing_then_restore_or_replace",
+          "quantity": "1_compressor_mount_package",
+          "photo_evidence": [],
+          "photo_status": "engine_bay_photos_required",
+          "spec_status": "inspect_before_buy",
+          "acquisition_status": "inspect_existing_before_buy",
+          "installation_status": "not_installed",
+          "current_action": "Inspect existing Sanden-type compressor and engine-specific bracket before buying replacement",
+          "exact_recreation_spec": "Compact Sanden-type automotive compressor or proven on-hand unit plus 2H-specific bracket/spacers/adjuster/idler and final belt solution",
+          "material_spec": "Reuse only if clutch voltage plus pulley plus ports plus shaft seal plus oil/refrigerant compatibility pass inspection; otherwise buy rebuilt/new compatible compressor",
+          "critical_measurements": "Pulley groove type; belt section and final belt length; bracket hole spacing; pulley alignment; compressor ear spacing; port style; clutch voltage/current; service clearance",
+          "fit_and_test": "Spin and clutch-test compressor; verify pulley alignment with straightedge; pressure/leak check system after hose fabrication",
+          "source_ref": "docs/parts-list-cleanup-decisions-20260504.md|data/manual/j40_costs_cost_tabs_tidy.csv:Parts8-9|data/manual/j40_costs_cost_tabs_tidy.csv:Parts163",
+          "notes": "Workbook rows said reuse/inspect but the dashboard requirements had no HVAC compressor gate.",
+          "evidence_images": []
+        },
+        {
+          "requirement_id": "HVAC-HOSE-001",
+          "requirement_name": "A/C barrier hose fittings bulkheads and service consumables",
+          "pipe_id": "",
+          "vehicle_location": "Compressor/condenser/drier/bulkhead/evaporator circuit",
+          "pipe_or_line": "",
+          "replace_scope": "buy_or_crimp_after_all_component_positions_are_locked",
+          "quantity": "1_complete_circuit_set",
+          "photo_evidence": [],
+          "photo_status": "layout_photos_required",
+          "spec_status": "layout_measurement_hold",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "Do not crimp final hoses until compressor condenser drier bulkhead and evaporator positions are fixed",
+          "exact_recreation_spec": "R134a-compatible barrier hose set with fittings/bulkhead pass-throughs/HNBR O-rings/oil/service ports made to the final installed layout",
+          "material_spec": "New automotive A/C barrier hose and refrigerant-compatible fittings; no generic rubber hose or used unknown hose",
+          "critical_measurements": "Hose ID/OD; fitting angles; crimp style; bulkhead hole size; service port position; O-ring sizes; oil type; charge amount after system volume is known",
+          "fit_and_test": "Vacuum hold and leak test before charge; verify hoses clear heat sharp edges and engine movement",
+          "source_ref": "part_hvac_barrier_hose_fittings_20260514|part_hvac_firewall_bulkhead_fittings_20260514|part_hvac_r134a_oil_oring_charge_kit_20260514|HLS-22|RUB-024",
+          "notes": "This ties the existing hose/rubber rows to the full HVAC requirement chain.",
+          "evidence_images": []
+        }
+      ],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
       "replacement_pipe_order_release_specs": [],
@@ -60471,7 +59611,7 @@ window.J40_DASHBOARD_DATA = {
         }
       ],
       "image_count": 11,
-      "reference_token_count": 26,
+      "reference_token_count": 32,
       "requirements": [
         {
           "requirement_id": "BR-CAPTURE-001",
@@ -60687,13 +59827,13 @@ window.J40_DASHBOARD_DATA = {
           "spec_status": "installed_route_captured_measure_samples_pending",
           "acquisition_status": "acquired",
           "installation_status": "not_installed",
-          "current_action": "Received Daraz hand-brake cable; before installation compare the received cable against the old left/right samples and confirm whether it covers the complete rear cable set. Keep old cables intact until fit is proven.",
-          "exact_recreation_spec": "Replace the complete rear parking-brake cable system with new assemblies that run to the rear drum backing plates, including left/right rear cables, outer sheaths, clevises, equalizer hardware, return springs, clips, and adjuster hardware as fitted; match the existing backing plate levers and chassis equalizer before purchase",
-          "material_spec": "New automotive parking-brake cable assemblies with corrosion-protected outer sheath; new clevis pins/clips/springs; no used cable reuse",
+          "current_action": "Received Daraz hand-brake cable; before installation compare the received cable against the old left/right samples and confirm whether it covers the complete rear cable set. Keep old cables intact until fit is proven. Small attachment hardware is controlled under BR-REAR-009.",
+          "exact_recreation_spec": "Replace the rear parking-brake cable assemblies that run to the rear drum backing plates, including left/right rear cables and outer sheaths; clevis/equalizer/return-spring/clip/adjuster hardware is checked for package inclusion but controlled under BR-REAR-009",
+          "material_spec": "New automotive parking-brake cable assemblies with corrosion-protected outer sheath; no used cable reuse; attachment hardware handled under BR-REAR-009",
           "critical_measurements": "Overall cable length, sheath length, end fitting type at backing plate, end fitting type at equalizer/intermediate cable, bracket/clip positions, adjuster thread size and travel",
           "fit_and_test": "Parking brake must hold both rear wheels evenly, release fully without dragging, and retain adjustment after repeated pulls",
-          "source_ref": "docs_brake_workstream|rear_brake_drum_baseline|part_rear_parking_brake_cable_set|gmail_order_243701549680938|user_update_2026-05-26_hand_brake_cable_received|user_update_2026-05-28_rear_parking_brake_back_section_photos|docs/brake-runner-spec-capture-20260528.md",
-          "notes": "Daraz/Vintage Jeep Parts hand-brake cable received 2026-05-26. Sample-match remains required before installation; verify complete set versus single cable, end fittings, sheath length, adjuster/clevis/clip hardware, and route fit against the old cables. May 12 photos add rear cable/lever route context. Old cables remain samples only. | User update 2026-05-28 rear back-section photos cover cable route, backing-plate lever entry, return spring, clip/bracket area, and axle/chassis routing. Remaining release is received-cable comparison plus measured/labelled clevis/equalizer/pin/clip/adjuster/spring samples.",
+          "source_ref": "docs_brake_workstream|rear_brake_drum_baseline|part_rear_parking_brake_cable_set|BR-REAR-009|gmail_order_243701549680938|user_update_2026-05-26_hand_brake_cable_received|user_update_2026-05-28_rear_parking_brake_back_section_photos|docs/brake-runner-spec-capture-20260528.md",
+          "notes": "Daraz/Vintage Jeep Parts hand-brake cable received 2026-05-26. Sample-match remains required before installation; verify complete set versus single cable, end fittings, sheath length, and route fit against the old cables. May 12 photos add rear cable/lever route context. Old cables remain samples only. | User update 2026-05-28 rear back-section photos cover cable route, backing-plate lever entry, return spring, clip/bracket area, and axle/chassis routing. Remaining cable release is received-cable comparison; clevis/equalizer/pin/clip/adjuster/spring samples now close under BR-REAR-009.",
           "evidence_images": [
             {
               "path": "../../photos/20260501_194305_gp_EllBGvXA.jpg",
@@ -60777,6 +59917,95 @@ window.J40_DASHBOARD_DATA = {
               "specific_component": "rear_axle_and_leaf_springs",
               "stage": "steering_brakes_suspension",
               "media_id": "20260512_072947_gp_bNB9GvHA",
+              "matched_tokens": []
+            }
+          ]
+        },
+        {
+          "requirement_id": "BR-REAR-009",
+          "requirement_name": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips",
+          "pipe_id": "",
+          "vehicle_location": "Rear parking-brake cable junctions and backing-plate attachment points",
+          "pipe_or_line": "",
+          "replace_scope": "replace_after_received_cable_and_old_sample_match",
+          "quantity": "as_counted_on_vehicle",
+          "photo_evidence": [
+            "20260514_095953_gp_BXoQkXnw",
+            "20260514_100003_gp_Vr2QI7ig",
+            "20260514_095820_gp_nuP5s76A",
+            "20260514_095836_gp_tmRy9fqg",
+            "20260514_095856_gp_vjZG4NtQ"
+          ],
+          "photo_status": "direct_route_and_attachment_context_photos",
+          "spec_status": "layout_photos_present_sample_measure_pending",
+          "acquisition_status": "spec_controlled_runner_purchase",
+          "installation_status": "not_installed",
+          "current_action": "Bag and label old parking-brake cable attachment hardware by side/position, compare it with the received Daraz cable and the Centric drum hardware kit, then buy only missing or mismatched pieces by written/sample spec.",
+          "exact_recreation_spec": "Supply new or verified matching attachment hardware for the rear parking-brake cable system: clevis and equalizer pieces, clevis pins, split pins/R-clips, adjuster nut/rod pieces, cable-end retaining clips, external return springs, and bracket clips as fitted. Do not substitute generic pieces without sample/ruler/thread match.",
+          "material_spec": "New plated clevis pins, clips, spring steel return springs, adjuster hardware, and cable retainers matched to old samples; no reused weak springs, missing safety clips, wire substitutes, or unproven generic fasteners.",
+          "critical_measurements": "Clevis jaw width, pin diameter/length, clip type, equalizer hole spacing, adjuster thread size/travel, return-spring free length/wire diameter/hook style, bracket slot/clip style, cable-end dimensions, LH/RH position",
+          "fit_and_test": "Parking brake applies both rear wheels evenly, releases fully, return springs pull cable/levers off without drag, clips retain through suspension movement, and adjustment remains stable after repeated pulls.",
+          "source_ref": "docs_brake_workstream|BR-REAR-001|BR-REAR-007|part_rear_parking_brake_attachment_hardware_20260527|part_rear_parking_brake_cable_set|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+          "notes": "Dedicated row created so clevis/equalizer/return-spring/clip hardware does not stay buried inside the cable or drum-hardware rows. Aamir may collect shop photos/prices, but payment and installation release require labelled removed samples or written mechanic spec plus a received-cable contents check. Avoid duplicate buys if the Daraz cable or Centric hardware kit already includes matching pieces.",
+          "evidence_images": [
+            {
+              "path": "../../photos/20260514_095953_gp_BXoQkXnw.jpg",
+              "caption": "Rear Axle And Leaf Springs \u00b7 Brake System \u00b7 2026-05-14",
+              "captured_date": "2026-05-14",
+              "captured_time": "09:59:53",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_axle_and_leaf_springs",
+              "stage": "brake_system",
+              "media_id": "20260514_095953_gp_BXoQkXnw",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260514_100003_gp_Vr2QI7ig.jpg",
+              "caption": "Rear Axle And Leaf Springs \u00b7 Brake System \u00b7 2026-05-14",
+              "captured_date": "2026-05-14",
+              "captured_time": "10:00:03",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_axle_and_leaf_springs",
+              "stage": "brake_system",
+              "media_id": "20260514_100003_gp_Vr2QI7ig",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260514_095820_gp_nuP5s76A.jpg",
+              "caption": "Rear Axle And Leaf Springs \u00b7 Brake System \u00b7 2026-05-14",
+              "captured_date": "2026-05-14",
+              "captured_time": "09:58:20",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_axle_and_leaf_springs",
+              "stage": "brake_system",
+              "media_id": "20260514_095820_gp_nuP5s76A",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260514_095836_gp_tmRy9fqg.jpg",
+              "caption": "Rear Axle And Leaf Springs \u00b7 Brake System \u00b7 2026-05-14",
+              "captured_date": "2026-05-14",
+              "captured_time": "09:58:36",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_axle_and_leaf_springs",
+              "stage": "brake_system",
+              "media_id": "20260514_095836_gp_tmRy9fqg",
+              "matched_tokens": []
+            },
+            {
+              "path": "../../photos/20260514_095856_gp_vjZG4NtQ.jpg",
+              "caption": "Rear Axle And Leaf Springs \u00b7 Brake System \u00b7 2026-05-14",
+              "captured_date": "2026-05-14",
+              "captured_time": "09:58:56",
+              "media_type": "photo",
+              "component_group": "chassis_underside",
+              "specific_component": "rear_axle_and_leaf_springs",
+              "stage": "brake_system",
+              "media_id": "20260514_095856_gp_vjZG4NtQ",
               "matched_tokens": []
             }
           ]
@@ -62312,9 +61541,9 @@ window.J40_DASHBOARD_DATA = {
           "component_job_id": "rear_brake_cable_line_refresh",
           "component_group": "brakes",
           "current_status": "spec_population",
-          "planned_action": "Replace rear parking-brake cables, rear axle hard lines, center flex hose, and retaining clips during the suspension/brake access window after photographing/removing the old parts as templates",
+          "planned_action": "Replace rear parking-brake cable assemblies, rear axle hard lines, center flex hose, and line/cable retainers during the suspension/brake access window after photographing/removing the old parts as templates; keep small parking-brake attachment hardware under rear_parking_brake_attachment_hardware_20260527",
           "evidence_ref": "data_brake_system_requirements|20260501_194305_gp_EllBGvXA|20260501_194313_gp_lfUqLibA|20260501_194322_gp_XuRtjN4w|20260324_004852|20260324_004906|20260512_072723_gp_r9KEkOdg|20260512_072730_gp_jSK3r3bg|20260512_072929_gp_bpHkNO2Q|20260512_072947_gp_bNB9GvHA|20260514_095856_gp_vjZG4NtQ|20260514_095846_gp_a9olRp5g|20260514_095836_gp_tmRy9fqg|20260514_100647_gp_foDr3ymA",
-          "notes": "The visible rear axle wires are brake hard lines and parking-brake cable/linkage. May 12 photos add route/clip/bracket context. May 14 photos add rear installed flare-nut/fitting context, but removal still requires side labels, bare flare-face confirmation, capping hydraulic ports, and preserving old parts as templates."
+          "notes": "The visible rear axle wires are brake hard lines and parking-brake cable/linkage. May 12 photos add route/clip/bracket context. May 14 photos add rear installed flare-nut/fitting context, but removal still requires side labels, bare flare-face confirmation, capping hydraulic ports, and preserving old parts as templates. Clevis/equalizer/return-spring/clip hardware is now split to the dedicated attachment-hardware job."
         },
         {
           "component_job_id": "rear_brake_drum_baseline",
@@ -62323,6 +61552,14 @@ window.J40_DASHBOARD_DATA = {
           "planned_action": "Open and identify rear drum hardware, then replace shoes, wheel cylinders, springs, adjusters, and hold-down hardware while keeping rear drums unless a measured need for rear discs appears",
           "evidence_ref": "20260324_004852|20260324_004906",
           "notes": "Photo evidence points to rear drums; this row now captures baseline service replacement, not a rear-disc conversion."
+        },
+        {
+          "component_job_id": "rear_parking_brake_attachment_hardware_20260527",
+          "component_group": "brakes",
+          "current_status": "spec_controlled_purchase",
+          "planned_action": "Handle rear parking-brake cable attachment hardware as its own spec-controlled item: clevis and equalizer pieces, clevis pins, split pins/R-clips, adjuster hardware, cable-end retaining clips, external return springs, and bracket clips. Compare the received cable package and old removed hardware before buying or fitting anything.",
+          "evidence_ref": "data_brake_system_requirements|BR-REAR-009|part_rear_parking_brake_attachment_hardware_20260527|part_rear_parking_brake_cable_set|20260514_095953_gp_BXoQkXnw|20260514_100003_gp_Vr2QI7ig|user_update_2026-05-28_rear_parking_brake_back_section_photos|docs/brake-runner-spec-capture-20260528.md",
+          "notes": "Specific line item for clevis/equalizer/return-spring/clip hardware. Aamir may collect shop photos/prices, but payment and installation release require written/sample spec, measured old hardware, and received-cable contents check so duplicates are avoided."
         }
       ],
       "issue_jobs": [],
@@ -62388,9 +61625,14 @@ window.J40_DASHBOARD_DATA = {
           "detail": "Open and identify rear drum hardware, then replace shoes, wheel cylinders, springs, adjusters, and hold-down hardware while keeping rear drums unless a measured need for rear discs appears Notes: Photo evidence points to rear drums; this row now captures baseline service replacement, not a rear-disc conversion."
         },
         {
+          "label": "Component Task \u00b7 Rear Parking Brake Attachment Hardware 20260527",
+          "status": "spec_controlled_purchase",
+          "detail": "Handle rear parking-brake cable attachment hardware as its own spec-controlled item: clevis and equalizer pieces, clevis pins, split pins/R-clips, adjuster hardware, cable-end retaining clips, external return springs, and bracket clips. Compare the received cable package and old removed hardware before buying or fitting anything. Notes: Specific line item for clevis/equalizer/return-spring/clip hardware. Aamir may collect shop photos/prices, but payment and installation release require written/sample spec, measured old hardware, and received-cable contents check so duplicates are avoided."
+        },
+        {
           "label": "Component Task \u00b7 Rear Brake Cable Line Refresh",
           "status": "spec_population",
-          "detail": "Replace rear parking-brake cables, rear axle hard lines, center flex hose, and retaining clips during the suspension/brake access window after photographing/removing the old parts as templates Notes: The visible rear axle wires are brake hard lines and parking-brake cable/linkage. May 12 photos add route/clip/bracket context. May 14 photos add rear installed flare-nut/fitting context, but removal still requires side labels, bare flare-face confirmation, capping hydraulic ports, and preserving old parts as templates."
+          "detail": "Replace rear parking-brake cable assemblies, rear axle hard lines, center flex hose, and line/cable retainers during the suspension/brake access window after photographing/removing the old parts as templates; keep small parking-brake attachment hardware under rear_parking_brake_attachment_hardware_20260527 Notes: The visible rear axle wires are brake hard lines and parking-brake cable/linkage. May 12 photos add route/clip/bracket context. May 14 photos add rear installed flare-nut/fitting context, but removal still requires side labels, bare flare-face confirmation, capping hydraulic ports, and preserving old parts as templates. Clevis/equalizer/return-spring/clip hardware is now split to the dedicated attachment-hardware job."
         },
         {
           "label": "Procurement \u00b7 release purchase-ready rows",
@@ -63158,8 +62400,8 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "source": "expenses",
           "source_ref": "part_rear_parking_brake_attachment_hardware_20260527",
-          "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
-          "notes": "Spec-controlled runner task. Rear parking-brake attachment hardware remains gettable locally, but Aamir may buy only after the received cable/old hardware gives a written/sample spec for clevis/equalizer pieces, pins, clips, adjuster nut, cable-end clips, and return springs. Do not buy duplicates if the cable package includes matching pieces. Until the spec/sample is released, collect shop photos/prices only; mechanic/user approval controls payment and any substitute fit decision. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos satisfy installed-route/layout evidence for the parking-brake cable path, backing-plate lever entry, external return spring, clip/bracket area, and axle/chassis routing. Remaining release gap is measured/labelled small hardware and received-cable comparison: clevis/equalizer pieces, pin diameters, clip types, adjuster thread, return-spring dimensions, and cable-end dimensions.",
+          "evidence_ref": "BR-REAR-009|BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+          "notes": "Spec-controlled runner task now controlled by dedicated requirement BR-REAR-009. Rear parking-brake attachment hardware remains gettable locally, but Aamir may buy only after the received cable/old hardware gives a written/sample spec for clevis/equalizer pieces, pins, clips, adjuster nut, cable-end clips, and return springs. Do not buy duplicates if the cable package or Centric drum hardware kit includes matching pieces. Until the spec/sample is released, collect shop photos/prices only; mechanic/user approval controls payment and any substitute fit decision. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos satisfy installed-route/layout evidence for the parking-brake cable path, backing-plate lever entry, external return spring, clip/bracket area, and axle/chassis routing. Remaining release gap is measured/labelled small hardware and received-cable comparison: clevis/equalizer pieces, pin diameters, clip types, adjuster thread, return-spring dimensions, and cable-end dimensions.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -64020,8 +63262,8 @@ window.J40_DASHBOARD_DATA = {
                 "Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect (ordered_partial_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (received_candidate; delivery needs_confirmation; amount missing)",
-                "Rear drum hardware kit - Centric 116971-05110530 1960-1980 Toyota Land Cruiser (received_candidate; delivery needs_confirmation; amount missing)",
-                "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)"
+                "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Rear drum hardware kit - Centric 116971-05110530 1960-1980 Toyota Land Cruiser (received_candidate; delivery needs_confirmation; amount missing)"
               ]
             },
             {
@@ -67253,7 +66495,7 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/suspension_wood_cribbing_rev_a.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 36029
+            "bytes": 36517
           },
           "file_count": 11
         }
@@ -68014,7 +67256,140 @@ window.J40_DASHBOARD_DATA = {
       ],
       "image_count": 0,
       "reference_token_count": 2,
-      "requirements": [],
+      "requirements": [
+        {
+          "requirement_id": "HVAC-UNIT-001",
+          "requirement_name": "Hidden compact evaporator/blower/heater/defrost unit",
+          "pipe_id": "",
+          "vehicle_location": "Hidden cabin HVAC package behind/under dash",
+          "pipe_or_line": "",
+          "replace_scope": "replace_or_buy_complete_hidden_unit",
+          "quantity": "1_complete_unit",
+          "photo_evidence": [],
+          "photo_status": "package_photos_required",
+          "spec_status": "purchase_ready_measurement_hold",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "Ask supplier for all-side tape photos and bench/leak test before payment",
+          "exact_recreation_spec": "Complete 12V compact evaporator/blower case with evaporator core plus blower/fan cage plus TXV/expansion valve plus drain outlet plus outlet spigots; heater core included only if selected unit supports heat/defrost",
+          "material_spec": "New or tested clean automotive HVAC unit compatible with R134a; intact plastic case; working 12V blower and controls",
+          "critical_measurements": "Case LxWxH; blower protrusion; inlet/return area; outlet count/OD/direction; drain OD/location; refrigerant fitting sizes; heater hose sizes if present; mounting tab spacing; service cover clearance; glovebox/dash/pedal/EPS clearance",
+          "fit_and_test": "Bench-run blower on all speeds; pressure/vacuum leak test evaporator; water-test drain; cardboard-mock fit under dash before purchase",
+          "source_ref": "part_hvac_hidden_evaporator_blower_unit_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md|reference_projects_and_ideas:vitz_manual_ac_donor",
+          "notes": "This was present in the parts/buy-now data but missing from the requirements feed.",
+          "evidence_images": []
+        },
+        {
+          "requirement_id": "HVAC-UNIT-002",
+          "requirement_name": "Slim under-dash louver outlet panel and matched vent pieces",
+          "pipe_id": "",
+          "vehicle_location": "Lower dash outlet face and cabin vents",
+          "pipe_or_line": "",
+          "replace_scope": "buy_or_fabricate_to_selected_unit",
+          "quantity": "1_matched_set",
+          "photo_evidence": [],
+          "photo_status": "supplier_photos_required",
+          "spec_status": "purchase_ready_measurement_hold",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "Select only after the hidden evaporator outlet count and mock-up position are fixed",
+          "exact_recreation_spec": "Slim outlet panel or louver set that connects to the selected HVAC box and supports cabin airflow plus defrost routing without a bulky visible hang-on unit",
+          "material_spec": "New automotive plastic or aluminium louver pieces with secure shutters and hose adapters",
+          "critical_measurements": "Panel width/height/depth; outlet count and OD; louver throw direction; screw spacing; adapter length; clearance to knees and dash controls",
+          "fit_and_test": "Mock panel under dash; confirm air can reach driver/passenger and defrost ducts without fouling pedals or steering",
+          "source_ref": "part_hvac_slim_louver_outlet_panel_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md",
+          "notes": "Do not buy random vents before the evaporator outlet geometry is known.",
+          "evidence_images": []
+        },
+        {
+          "requirement_id": "HVAC-UNIT-003",
+          "requirement_name": "Return-air grille and washable filter",
+          "pipe_id": "",
+          "vehicle_location": "Hidden return-air intake below dash",
+          "pipe_or_line": "",
+          "replace_scope": "buy_or_fabricate_serviceable_filter_intake",
+          "quantity": "1_assembly",
+          "photo_evidence": [],
+          "photo_status": "supplier_photos_required",
+          "spec_status": "purchase_ready_measurement_hold",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "Match the grille/filter to the selected evaporator intake and keep it reachable for cleaning",
+          "exact_recreation_spec": "Hidden return-air grille with serviceable washable filter and sealed path to evaporator intake",
+          "material_spec": "Automotive grille/filter material that will not collapse into blower suction",
+          "critical_measurements": "Grille face size; filter media size; intake opening area; service access; mount screw spacing; clearance to passenger feet and wiring",
+          "fit_and_test": "Verify blower does not pull loose trim or insulation; filter can be removed without dropping the HVAC box",
+          "source_ref": "part_hvac_return_air_grille_filter_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md",
+          "notes": "Required so the hidden unit does not ingest dust or loose cabin insulation.",
+          "evidence_images": []
+        },
+        {
+          "requirement_id": "HVAC-UNIT-004",
+          "requirement_name": "Compact A/C control panel or integrated controls",
+          "pipe_id": "",
+          "vehicle_location": "Dash or concealed HVAC control position",
+          "pipe_or_line": "",
+          "replace_scope": "buy_with_selected_unit_or_separate_panel",
+          "quantity": "1_control_set",
+          "photo_evidence": [],
+          "photo_status": "supplier_photos_required",
+          "spec_status": "purchase_ready_measurement_hold",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "Confirm whether the selected evaporator includes controls before buying a separate panel",
+          "exact_recreation_spec": "Control set for blower speeds plus thermostat/temperature control plus A/C clutch request; illumination optional only if it integrates cleanly",
+          "material_spec": "12V automotive switches/resistor/thermostat matched to the selected blower and clutch relay current",
+          "critical_measurements": "Panel size; knob/button depth; harness plug style; resistor rating; blower speed count; thermostat probe routing; dash hole/cable clearance",
+          "fit_and_test": "Bench-test blower speeds and clutch-request output through a relay; confirm labels/functions before dash closeout",
+          "source_ref": "part_hvac_control_panel_20260514|docs/hvac-evaporator-blower-sourcing-20260514.md",
+          "notes": "Separate row keeps controls from being hidden inside the evaporator unit line.",
+          "evidence_images": []
+        },
+        {
+          "requirement_id": "HVAC-UNIT-005",
+          "requirement_name": "HVAC duct and defrost/demist hose kit",
+          "pipe_id": "",
+          "vehicle_location": "Dash outlet and windscreen demist routing",
+          "pipe_or_line": "",
+          "replace_scope": "buy_after_unit_and_outlets_are_fixed",
+          "quantity": "1_route_set",
+          "photo_evidence": [],
+          "photo_status": "layout_photos_required",
+          "spec_status": "layout_measurement_hold",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "Wait for evaporator position and vent layout before cutting or ordering duct lengths",
+          "exact_recreation_spec": "2.5 inch or selected-size flexible duct plus vent adapters and defrost/demist hose pieces routed from the HVAC box to cabin vents and windscreen outlets",
+          "material_spec": "Automotive HVAC duct hose and adapters that tolerate cabin heat and vibration",
+          "critical_measurements": "Final duct OD/ID; route lengths; bend radius; clamp sizes; defrost outlet dimensions; clearance to wiring and pedal/steering movement",
+          "fit_and_test": "Airflow-test each outlet and demist path; no collapsed hose or chafe points after dash fit-up",
+          "source_ref": "part_hvac_duct_defrost_hose_kit_20260514|RUB-025|docs/rubber-ordering-spec-20260502.md",
+          "notes": "This remains dependent on the selected hidden unit and outlet panel.",
+          "evidence_images": []
+        },
+        {
+          "requirement_id": "HVAC-DRAIN-001",
+          "requirement_name": "Evaporator drain hose plus mounting/sealing kit",
+          "pipe_id": "",
+          "vehicle_location": "Evaporator drain and under-dash mounting points",
+          "pipe_or_line": "",
+          "replace_scope": "buy_after_unit_mockup",
+          "quantity": "1_mount_and_drain_set",
+          "photo_evidence": [],
+          "photo_status": "layout_photos_required",
+          "spec_status": "layout_measurement_hold",
+          "acquisition_status": "not_acquired",
+          "installation_status": "not_installed",
+          "current_action": "Confirm drain nipple side and mounting feet before buying hose/grommet/seal pieces",
+          "exact_recreation_spec": "Drain hose plus grommet plus mounting/sealing hardware to route condensate outside the cabin and isolate the HVAC case",
+          "material_spec": "EPDM drain hose; sealed firewall/floor grommet; corrosion-protected brackets or tabs",
+          "critical_measurements": "Drain nipple OD; fall angle; exit hole size; firewall/floor thickness; bracket spacing; case isolation thickness; service access",
+          "fit_and_test": "Water-test drain with vehicle level and nose-up; no cabin drip; no sharp hole edge; case remains secure under vibration",
+          "source_ref": "part_hvac_evaporator_drain_mount_kit_20260514|RUB-024|docs/rubber-ordering-spec-20260502.md",
+          "notes": "Do not trap condensate inside the tub or behind insulation.",
+          "evidence_images": []
+        }
+      ],
       "pipe_requirements": [],
       "replacement_pipe_photo_intake": [],
       "replacement_pipe_order_release_specs": [],
@@ -70227,7 +69602,7 @@ window.J40_DASHBOARD_DATA = {
         "chassis_fixing"
       ],
       "evidence_signal": "rust_assessment_photos=63, stripdown_photos=111",
-      "blocker_summary": "10 body material rows still need buy execution.",
+      "blocker_summary": "7 body material rows still need buy execution.",
       "gate_to_close": "Rust map signed off, required chassis brackets analyzed/released/installed/validated, and repaired zones primed.",
       "key_procurement_actions": "Use received primer/prep/seam-sealer/cavity-wax stock and on-hand Raptor; Ultra-cloth solvent-safe wipes and masking tape are received; use on-hand grommets for temporary open-hole masking after fit/solvent check; no generic chassis-black or bed-lining duplicate buy.",
       "image": {
@@ -70418,10 +69793,6 @@ window.J40_DASHBOARD_DATA = {
     ],
     "counts_by_procurement_stage": [
       {
-        "stage": "consolidated_longman_quote_ready_measurement_release_hold",
-        "count": 1
-      },
-      {
         "stage": "deferred_optional",
         "count": 2
       },
@@ -70454,10 +69825,6 @@ window.J40_DASHBOARD_DATA = {
         "count": 25
       },
       {
-        "stage": "purchase_ready_estimate",
-        "count": 5
-      },
-      {
         "stage": "purchase_ready_local_catalog_first_pending_sample_match",
         "count": 1
       },
@@ -70466,20 +69833,12 @@ window.J40_DASHBOARD_DATA = {
         "count": 1
       },
       {
-        "stage": "purchase_ready_measurement_hold",
-        "count": 3
-      },
-      {
         "stage": "purchase_ready_standard_and_template_quote",
         "count": 1
       },
       {
         "stage": "purchase_ready_standard_stock",
         "count": 2
-      },
-      {
-        "stage": "quote_needed",
-        "count": 1
       },
       {
         "stage": "received_candidate",
@@ -71717,43 +71076,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_tub_repair_steel_sheet_1_6mm_20260513",
-        "workstream": "body_chassis",
-        "item": "1.6 mm cold-rolled mild-steel sheet for heavier tub patch plates",
-        "status": "planned",
-        "procurement_stage": "purchase_ready_measurement_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "estimate",
-        "currency": "PKR",
-        "vendor": "local steel stockholder / body-panel sheet supplier",
-        "supply_type": "part",
-        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/tub-off-refit-execution-plan.md|docs/j40_welding_execution_plan_20260419.md",
-        "notes": "Buy one 1.6 mm cold-rolled mild-steel sheet about 1000 x 500 mm, or nearest manageable sheet. Use for heavier tub floor sections, flange returns, seat-box edges, local patch plates, and spots where the exposed original sheet is heavier than skin panels. Final size remains controlled by cleaned metal and rust-map photos.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/heavy_battery_cable.jpg",
-          "caption": "1.6 mm cold-rolled mild-steel sheet for heavier tub patch plates \u00b7 automotive cable reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "heavy_battery_cable",
-          "matched_tokens": [
-            "cable"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
         "entry_id": "part_body_specialty_brackets_retainer_plates",
         "workstream": "body_chassis",
         "item": "Body specialty bracket and retainer plate repair/replacement pack",
@@ -72300,8 +71622,8 @@ window.J40_DASHBOARD_DATA = {
         "currency": "PKR",
         "vendor": "Aamir runner / local brake parts or hardware supplier / written spec or mechanic-labelled sample required",
         "supply_type": "part",
-        "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
-        "notes": "Spec-controlled runner task. Rear parking-brake attachment hardware remains gettable locally, but Aamir may buy only after the received cable/old hardware gives a written/sample spec for clevis/equalizer pieces, pins, clips, adjuster nut, cable-end clips, and return springs. Do not buy duplicates if the cable package includes matching pieces. Until the spec/sample is released, collect shop photos/prices only; mechanic/user approval controls payment and any substitute fit decision. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos satisfy installed-route/layout evidence for the parking-brake cable path, backing-plate lever entry, external return spring, clip/bracket area, and axle/chassis routing. Remaining release gap is measured/labelled small hardware and received-cable comparison: clevis/equalizer pieces, pin diameters, clip types, adjuster thread, return-spring dimensions, and cable-end dimensions.",
+        "evidence_ref": "BR-REAR-009|BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+        "notes": "Spec-controlled runner task now controlled by dedicated requirement BR-REAR-009. Rear parking-brake attachment hardware remains gettable locally, but Aamir may buy only after the received cable/old hardware gives a written/sample spec for clevis/equalizer pieces, pins, clips, adjuster nut, cable-end clips, and return springs. Do not buy duplicates if the cable package or Centric drum hardware kit includes matching pieces. Until the spec/sample is released, collect shop photos/prices only; mechanic/user approval controls payment and any substitute fit decision. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos satisfy installed-route/layout evidence for the parking-brake cable path, backing-plate lever entry, external return spring, clip/bracket area, and axle/chassis routing. Remaining release gap is measured/labelled small hardware and received-cable comparison: clevis/equalizer pieces, pin diameters, clip types, adjuster thread, return-spring dimensions, and cable-end dimensions.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -72822,219 +72144,6 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "entry_id": "part_body_mount_rubber_kit",
-        "workstream": "chassis_rubbers",
-        "item": "Consolidated Longman chassis/body custom rubber order",
-        "status": "spec_ready",
-        "procurement_stage": "consolidated_longman_quote_ready_measurement_release_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|docs/longman-rubber-order-spec-20260508.md|data/manual/longman_rubber_order_specs.csv|docs/chassis-rubbers-workstream.md|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
-        "notes": "Single consolidated Longman custom rubber order. Quote/order as one supplier bundle: BM-ISO-SM 10 + 2 spares, BM-ISO-LG 2 + 1 spare, FS-OVAL x2, FS-STRIP-L x1, FS-STRIP-R x1, BUMP-60010-LONG x3, and BUMP-60020-SHORT x1. Steel cup/seat washers, sleeves, shims, bolts, and captive-thread repairs remain separate local hardware rows; BODY-LINER-FULL-WIDTH-HOLD and EXH-HGR-90917 are hold/reference lines only, not current order quantities.",
-        "links": [
-          {
-            "url": "../../deliverables/fabrication_packages/rubber_recreation_rev_a.zip",
-            "label": "Rubber fabrication package ZIP",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
-            "label": "Interactive 3D visualisation",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
-            "label": "Static 3D visualisation",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
-            "label": "Chassis rubber location map SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
-            "label": "Complete chassis rubber drawing preview SVG",
-            "download": true
-          },
-          {
-            "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
-            "label": "Bump-stop fabrication spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
-            "label": "Rubber dimension sheet PDF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
-            "label": "3D model README",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
-            "label": "3D model manifest CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
-            "label": "OpenSCAD model master",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
-            "label": "BM-ISO-SM OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
-            "label": "BM-ISO-LG OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
-            "label": "FS-OVAL OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
-            "label": "FS-STRIP-L OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
-            "label": "FS-STRIP-R OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
-            "label": "BUMP-60010 long OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
-            "label": "BUMP-60020 short OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
-            "label": "BUMP-60010 rear pair OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
-            "label": "EXH-HGR-90917 OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
-            "label": "Old-rubber 3D closure checks",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
-            "label": "Bump-stop measurement control SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
-            "label": "Bump-stop measurement control DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
-            "label": "BM-ISO-SM square pad DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
-            "label": "BM-ISO-SM square pad SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
-            "label": "BM-ISO-LG square pad DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
-            "label": "BM-ISO-LG square pad SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf",
-            "label": "Small cup washer DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf",
-            "label": "Large cup washer DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf",
-            "label": "Oval front-support pad DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf",
-            "label": "Left strip template DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf",
-            "label": "Right strip template DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
-            "label": "Rubber cut list CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/inspection_checklist.csv",
-            "label": "Rubber inspection checklist CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
-            "label": "Rubber machine definitions CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json",
-            "label": "Rubber machine definitions JSON",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
-          "caption": "Body mount rubber cushion and front-support rubber kit reference",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_body_mount_rubber_kit"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
-        }
-      },
-      {
         "entry_id": "part_fastener_kit_a_millat",
         "workstream": "chassis_rubbers",
         "item": "Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves",
@@ -73066,256 +72175,6 @@ window.J40_DASHBOARD_DATA = {
           "media_id": "graded_fasteners",
           "matched_tokens": [
             "fastener"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_tub_repair_steel_sheet_1_2mm_20260513",
-        "workstream": "chassis_rubbers",
-        "item": "1.2 mm cold-rolled mild-steel sheet for tub skin/floor patch plates",
-        "status": "planned",
-        "procurement_stage": "purchase_ready_measurement_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "estimate",
-        "currency": "PKR",
-        "vendor": "local steel stockholder / body-panel sheet supplier",
-        "supply_type": "part",
-        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/tub-off-refit-execution-plan.md|docs/j40_welding_execution_plan_20260419.md",
-        "notes": "Buy one 1.2 mm cold-rolled mild-steel sheet about 1000 x 1000 mm, or nearest manageable sheet. Intended for non-structural tub skin, floor-pan, firewall lip, and small closure patches after the rust map is exposed. Final patch shapes remain measurement controlled; do not use where body mounts or seat belt/seat loads need thicker reinforcement.",
-        "links": [
-          {
-            "url": "../../deliverables/fabrication_packages/rubber_recreation_rev_a.zip",
-            "label": "Rubber fabrication package ZIP",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
-            "label": "Interactive 3D visualisation",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
-            "label": "Static 3D visualisation",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
-            "label": "Chassis rubber location map SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
-            "label": "Complete chassis rubber drawing preview SVG",
-            "download": true
-          },
-          {
-            "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
-            "label": "Bump-stop fabrication spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
-            "label": "Rubber dimension sheet PDF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
-            "label": "3D model README",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
-            "label": "3D model manifest CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
-            "label": "OpenSCAD model master",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
-            "label": "BM-ISO-SM OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
-            "label": "BM-ISO-LG OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
-            "label": "FS-OVAL OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
-            "label": "FS-STRIP-L OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
-            "label": "FS-STRIP-R OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
-            "label": "BUMP-60010 long OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
-            "label": "BUMP-60020 short OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
-            "label": "BUMP-60010 rear pair OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
-            "label": "EXH-HGR-90917 OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
-            "label": "Old-rubber 3D closure checks",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
-            "label": "Bump-stop measurement control SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
-            "label": "Bump-stop measurement control DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
-            "label": "BM-ISO-SM square pad DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
-            "label": "BM-ISO-SM square pad SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
-            "label": "BM-ISO-LG square pad DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
-            "label": "BM-ISO-LG square pad SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf",
-            "label": "Small cup washer DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf",
-            "label": "Large cup washer DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf",
-            "label": "Oval front-support pad DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf",
-            "label": "Left strip template DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf",
-            "label": "Right strip template DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
-            "label": "Rubber cut list CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/inspection_checklist.csv",
-            "label": "Rubber inspection checklist CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
-            "label": "Rubber machine definitions CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json",
-            "label": "Rubber machine definitions JSON",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-          "caption": "1.2 mm cold-rolled mild-steel sheet for tub skin/floor patch plates \u00b7 rust/metal treatment reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "wax_grease_remover",
-          "matched_tokens": [
-            "rust"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_tub_mount_reinforcement_plate_3mm_20260513",
-        "workstream": "chassis_rubbers",
-        "item": "3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs",
-        "status": "planned",
-        "procurement_stage": "purchase_ready_measurement_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "estimate",
-        "currency": "PKR",
-        "vendor": "local steel stockholder / sheet-metal shop",
-        "supply_type": "part",
-        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/tub-off-refit-execution-plan.md|data/manual/body_mount_order_release_specs.csv",
-        "notes": "Buy one 3.0 mm mild-steel plate about 500 x 500 mm or 300 x 600 mm for tub body-mount backing plates, captive-nut/weld-nut repair plates, local reinforcement coupons, and test pieces. Keep separate from chassis/battery stand fabrication steel; release final shapes only after each mount station is cleaned and measured.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/battery.jpg",
-          "caption": "3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs \u00b7 battery reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "battery",
-          "matched_tokens": [
-            "battery"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -73429,6 +72288,11 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
             "label": "Chassis rubber location map SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_current_order_preview_rev_a.svg",
+            "label": "Current chassis rubber order preview SVG",
             "download": true
           },
           {
@@ -73642,6 +72506,11 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
             "label": "Chassis rubber location map SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_current_order_preview_rev_a.svg",
+            "label": "Current chassis rubber order preview SVG",
             "download": true
           },
           {
@@ -74155,458 +73024,6 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "local_reference_image",
           "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_fabrication_raw_epdm_sheet_small_isolators_20260513",
-        "workstream": "fabrication_handoff",
-        "item": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads",
-        "status": "planned",
-        "procurement_stage": "purchase_ready_estimate",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "estimate",
-        "currency": "PKR",
-        "vendor": "local rubber sheet supplier / Longman fallback",
-        "supply_type": "part",
-        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
-        "notes": "Buy a small 3-5 mm EPDM/SBR sheet at least 300 x 300 mm for the radiator isolator pad, battery carrier anti-chafe pads, and first-article trimming. This is small sheet stock only and does not replace the chassis-rubber Longman/body-mount order route.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
-          "caption": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads \u00b7 body mount rubber kit reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "body_mount_rubber_kit_reference",
-          "matched_tokens": [
-            "body",
-            "mount"
-          ],
-          "match_basis": "local_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_fabrication_raw_aluminium_plate_3mm_20260513",
-        "workstream": "fabrication_handoff",
-        "item": "3.0 mm 5052-H32 aluminium sheet for MIDI enclosure, Relay Rev D base, and cutoff electrical plates",
-        "status": "planned",
-        "procurement_stage": "purchase_ready_estimate",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "estimate",
-        "currency": "PKR",
-        "vendor": "local aluminium stockholder / sheet-metal shop",
-        "supply_type": "part",
-        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/midi5_enclosure_rev_d/README.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/README.md|data/manual/fabrication/relay_mount_rev_d/README.md",
-        "notes": "Buy 3.0 mm 5052-H32 aluminium sheet: minimum 600 x 600 mm, or 1000 x 500 if cheaper/similarly priced, for the current MIDI Rev D enclosure body/lid, Relay Rev D 360 x 245 flat base, and folded cutoff base/guard with 20 mm upward lips. Current battery stand route remains steel; this aluminium is for electrical component carriers/guards, not the main carrier.",
-        "links": [
-          {
-            "url": "../../deliverables/fabrication_packages/midi5_enclosure_rev_d.zip",
-            "label": "MIDI enclosure package ZIP",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/j40_midi5_enclosure_rev_d_dimension_sheet.pdf",
-            "label": "MIDI enclosure dimension sheet PDF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.dxf",
-            "label": "MIDI enclosure body DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.svg",
-            "label": "MIDI enclosure body SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.dxf",
-            "label": "MIDI holder subplate DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.svg",
-            "label": "MIDI holder subplate SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.dxf",
-            "label": "MIDI enclosure lid DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.svg",
-            "label": "MIDI enclosure lid SVG",
-            "download": true
-          },
-          {
-            "url": "../../deliverables/fabrication_packages/relay_mount_rev_d.zip",
-            "label": "Relay Rev D package ZIP",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/j40_relay_mount_rev_d_dimension_sheet.pdf",
-            "label": "Relay Rev D dimension sheet PDF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.dxf",
-            "label": "Relay Rev D flat base plate DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.svg",
-            "label": "Relay Rev D flat base plate SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.dxf",
-            "label": "Relay Rev D insulating sheet DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.svg",
-            "label": "Relay Rev D insulating sheet SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/README.md",
-            "label": "Relay Rev D README",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/relay.jpg",
-          "caption": "3.0 mm 5052-H32 aluminium sheet for MIDI enclosure, Relay Rev D base, and cutoff electrical plates \u00b7 automotive relay reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "relay",
-          "matched_tokens": [
-            "relay"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_fabrication_raw_mild_steel_plate_3mm_20260513",
-        "workstream": "fabrication_handoff",
-        "item": "3.0 mm mild-steel sheet plus 90-degree angle/L-section stock for compact battery tray/access ladder",
-        "status": "planned",
-        "procurement_stage": "purchase_ready_estimate",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "estimate",
-        "currency": "PKR",
-        "vendor": "local steel stockholder / sheet-metal shop",
-        "supply_type": "part",
-        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv",
-        "notes": "Buy one 3.0 mm mild-steel sheet/plate at least 600 x 600 mm, or 1000 x 500 if cheaper/similarly priced. Also buy 3.0 mm 90-degree mild-steel angle/L-section, 25 x 25 x 3 mm or 30 x 30 x 3 mm, 3 m total, for tray perimeter/upstands, widened access-ladder frame, shallow shelf rails, and cable/P-clip tabs. Keep sheet stock for the battery deck, widened access-ladder flat face, hold-down crossbar, and flat component tabs. Do not spend this stock on tub repairs; keep tub plate stock separate.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/battery.jpg",
-          "caption": "3.0 mm mild-steel sheet plus 90-degree angle/L-section stock for compact battery tray/access ladder \u00b7 battery reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "battery",
-          "matched_tokens": [
-            "battery"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_fabrication_raw_mild_steel_plate_4mm_20260513",
-        "workstream": "fabrication_handoff",
-        "item": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post",
-        "status": "planned",
-        "procurement_stage": "purchase_ready_estimate",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "estimate",
-        "currency": "PKR",
-        "vendor": "local steel stockholder / sheet-metal shop",
-        "supply_type": "part",
-        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
-        "notes": "Buy one 4.0 mm mild-steel plate at least 700 x 450 mm, or nearest sheet size such as 1000 x 500. Also ask for 50 x 50 x 4 mm 90-degree mild-steel angle, 1 m, for the radiator post; 40 x 40 x 4 mm 90-degree mild-steel angle, 2 m, for battery stand/upright bridge trials; and short mild-steel tube/sleeve stock only after final M8/M10 through-bolt size is chosen. Keep plate stock for the formed chassis saddle, adjustable offset bars, flat bolt tabs, and any upright/gusset plates that angle stock cannot replace. Deburr and prime after cutting.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
-          "caption": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post \u00b7 current car radiator/heater hose crop",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "radiator_heater_hose_current_car_crop_20260503",
-          "matched_tokens": [
-            "radiator",
-            "hose"
-          ],
-          "match_basis": "local_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_fabrication_raw_electrical_plastic_sheet_20260513",
-        "workstream": "fabrication_handoff",
-        "item": "Electrical insulating plastic/G10 sheet - MIDI 5.0 mm board and relay 3.0 mm sheet",
-        "status": "planned",
-        "procurement_stage": "purchase_ready_estimate",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "estimate",
-        "currency": "PKR",
-        "vendor": "local plastic CNC/router or sheet supplier",
-        "supply_type": "part",
-        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/midi5_enclosure_rev_d/README.md|data/manual/fabrication/relay_mount_rev_d/README.md",
-        "notes": "Buy/quote 5.0 mm HDPE/ABS/G10/phenolic board at least 200 x 150 mm for the MIDI subplate, plus 3.0 mm ABS/HDPE/polypropylene/G10/phenolic sheet at least 350 x 250 mm for the Relay Rev D exact 300 x 197 insulating sheet.",
-        "links": [
-          {
-            "url": "../../deliverables/fabrication_packages/midi5_enclosure_rev_d.zip",
-            "label": "MIDI enclosure package ZIP",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/j40_midi5_enclosure_rev_d_dimension_sheet.pdf",
-            "label": "MIDI enclosure dimension sheet PDF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.dxf",
-            "label": "MIDI enclosure body DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.svg",
-            "label": "MIDI enclosure body SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.dxf",
-            "label": "MIDI holder subplate DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.svg",
-            "label": "MIDI holder subplate SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.dxf",
-            "label": "MIDI enclosure lid DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.svg",
-            "label": "MIDI enclosure lid SVG",
-            "download": true
-          },
-          {
-            "url": "../../deliverables/fabrication_packages/relay_mount_rev_d.zip",
-            "label": "Relay Rev D package ZIP",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/j40_relay_mount_rev_d_dimension_sheet.pdf",
-            "label": "Relay Rev D dimension sheet PDF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.dxf",
-            "label": "Relay Rev D flat base plate DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.svg",
-            "label": "Relay Rev D flat base plate SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.dxf",
-            "label": "Relay Rev D insulating sheet DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.svg",
-            "label": "Relay Rev D insulating sheet SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/README.md",
-            "label": "Relay Rev D README",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/relay.jpg",
-          "caption": "Electrical insulating plastic/G10 sheet - MIDI 5.0 mm board and relay 3.0 mm sheet \u00b7 automotive relay reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "relay",
-          "matched_tokens": [
-            "relay"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "entry_id": "service_local_3d_printing_fabrication_prototypes",
-        "workstream": "fabrication_handoff",
-        "item": "MIDI holder plastic underlay / subplate quote",
-        "status": "planned",
-        "procurement_stage": "quote_needed",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "local plastic CNC/router or 3D printing service",
-        "supply_type": "part",
-        "evidence_ref": "user_update_2026-05-04_scouting_3d_print_fabricated_items|docs/fabrication-handoff-index.md|data/manual/fabrication_handoff_requirements.csv",
-        "notes": "Scout only the MIDI holder non-conductive underlay/subplate: 140 x 85 x 5 mm from midi5_holder_subplate_rev_d DXF/PDF. Metal plate/bracket fabrication remains owner-managed and is intentionally excluded from this scout row.",
-        "links": [
-          {
-            "url": "../../deliverables/fabrication_packages/midi5_enclosure_rev_d.zip",
-            "label": "MIDI enclosure package ZIP",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/j40_midi5_enclosure_rev_d_dimension_sheet.pdf",
-            "label": "MIDI enclosure dimension sheet PDF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.dxf",
-            "label": "MIDI enclosure body DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.svg",
-            "label": "MIDI enclosure body SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.dxf",
-            "label": "MIDI holder subplate DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.svg",
-            "label": "MIDI holder subplate SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.dxf",
-            "label": "MIDI enclosure lid DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.svg",
-            "label": "MIDI enclosure lid SVG",
-            "download": true
-          },
-          {
-            "url": "../../deliverables/fabrication_packages/relay_mount_rev_d.zip",
-            "label": "Relay Rev D package ZIP",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/j40_relay_mount_rev_d_dimension_sheet.pdf",
-            "label": "Relay Rev D dimension sheet PDF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.dxf",
-            "label": "Relay Rev D flat base plate DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.svg",
-            "label": "Relay Rev D flat base plate SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.dxf",
-            "label": "Relay Rev D insulating sheet DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.svg",
-            "label": "Relay Rev D insulating sheet SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/README.md",
-            "label": "Relay Rev D README",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.svg",
-          "caption": "MIDI holder non-conductive subplate fabrication drawing",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "service_local_3d_printing_fabrication_prototypes"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
         }
       },
       {
@@ -75704,24 +74121,6 @@ window.J40_DASHBOARD_DATA = {
         "image": null
       },
       {
-        "workstream": "chassis_rubbers",
-        "open_count": 8,
-        "image": {
-          "path": "../../photos/20260517_195430_gp_VGGpRFOQ.jpg",
-          "caption": "Floor Seam And Body Mount Rust \u00b7 Rust Assessment \u00b7 2026-05-17",
-          "captured_date": "2026-05-17",
-          "captured_time": "19:54:30",
-          "media_type": "photo",
-          "component_group": "body_floor",
-          "specific_component": "floor_seam_and_body_mount_rust",
-          "stage": "rust_assessment",
-          "media_id": "20260517_195430_gp_VGGpRFOQ",
-          "matched_tokens": [
-            "20260517_195430_gp_vggprfoq"
-          ]
-        }
-      },
-      {
         "workstream": "electrical_reset",
         "open_count": 8,
         "image": {
@@ -75743,7 +74142,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "body_chassis",
-        "open_count": 6,
+        "open_count": 5,
         "image": {
           "path": "../../photos/20260517_195628_gp_Wog59oFg.jpg",
           "caption": "Body Shell With Doors Removed \u00b7 Rust Assessment \u00b7 2026-05-17",
@@ -75760,9 +74159,22 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
-        "workstream": "fabrication_handoff",
-        "open_count": 6,
-        "image": null
+        "workstream": "chassis_rubbers",
+        "open_count": 5,
+        "image": {
+          "path": "../../photos/20260517_195430_gp_VGGpRFOQ.jpg",
+          "caption": "Floor Seam And Body Mount Rust \u00b7 Rust Assessment \u00b7 2026-05-17",
+          "captured_date": "2026-05-17",
+          "captured_time": "19:54:30",
+          "media_type": "photo",
+          "component_group": "body_floor",
+          "specific_component": "floor_seam_and_body_mount_rust",
+          "stage": "rust_assessment",
+          "media_id": "20260517_195430_gp_VGGpRFOQ",
+          "matched_tokens": [
+            "20260517_195430_gp_vggprfoq"
+          ]
+        }
       },
       {
         "workstream": "chassis_fixing",
@@ -81760,14 +80172,14 @@ window.J40_DASHBOARD_DATA = {
         "vehicle_location": "Axle-to-chassis bump-stop brackets: front-left plus rear-left and rear-right stations.",
         "required_qty": "3",
         "optional_spare_qty": "0",
-        "spec": "Rubber-only Toyota-style progressive stop with stretch-fit bolt-on holes or slots and flat rectangular strike face",
-        "envelope_3d_mm": "70 H released; rubber base L x W, bolt/stud pitch, relaxed hole/slot size, and strike-face X/Y are vehicle-measured before mould release",
-        "edge_profile": "Tapered/radiused rubber body; no sharp rectangular block edges; no metal saddle/backing plate",
-        "holes_or_inserts": "Rubber hole/slot pitch, relaxed hole/slot size, base footprint, and strike offset from vehicle measurements; rubber stretches over/around fitted bolts or studs",
-        "material": "NR/SBR bump-stop rubber Shore A 70 +/-5",
+        "spec": "Toyota-style progressive stop bonded/captive to supplied one-piece flat steel backing/saddle plate with flat rectangular strike face",
+        "envelope_3d_mm": "70 H released; flat plate L x W, thickness, bolt/stud pitch, hole/thread size, bond face, and strike-face X/Y are sample/vehicle-measured before mould release",
+        "edge_profile": "Tapered/radiused rubber body; no sharp rectangular block edges; one-piece flat steel backing plate copied from supplied sample",
+        "holes_or_inserts": "Flat plate hole pitch, hole/thread, base footprint, and strike offset from supplied flat metal sample plus vehicle measurements; holes belong in the flat plate unless sample proves rubber clearance holes",
+        "material": "NR/SBR bump-stop rubber Shore A 70 +/-5 bonded/captive to coated flat steel plate",
         "release_state": "first_article_required",
         "photo_refs": "20260502_004222_gp_PKRe5HSQ|20260502_004201_gp_zfUSmKJg|reference_catalog/bump_stop.jpg",
-        "notes": "Make one 70 mm first article before remaining long stops.",
+        "notes": "User will provide the one flat metal backing/saddle piece with the request. Make one 70 mm first article before remaining long stops.",
         "evidence_images": [
           {
             "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
@@ -81813,14 +80225,14 @@ window.J40_DASHBOARD_DATA = {
         "vehicle_location": "Axle-to-chassis bump-stop bracket: right-front station only.",
         "required_qty": "1",
         "optional_spare_qty": "0",
-        "spec": "Rubber-only Toyota-style progressive stop with stretch-fit bolt-on holes or slots and flat rectangular strike face",
-        "envelope_3d_mm": "60 H released; rubber base L x W, bolt/stud pitch, relaxed hole/slot size, and strike-face X/Y are vehicle-measured before mould release",
-        "edge_profile": "Tapered/radiused rubber body; no sharp rectangular block edges; no metal saddle/backing plate",
-        "holes_or_inserts": "Rubber hole/slot pitch, relaxed hole/slot size, base footprint, and strike offset from right-front vehicle measurements; rubber stretches over/around fitted bolts or studs",
-        "material": "Same compound family as BUMP-60010-LONG",
+        "spec": "Toyota-style progressive stop bonded/captive to supplied one-piece flat steel backing/saddle plate with flat rectangular strike face",
+        "envelope_3d_mm": "60 H released; flat plate L x W, thickness, bolt/stud pitch, hole/thread size, bond face, and strike-face X/Y are sample/vehicle-measured before mould release",
+        "edge_profile": "Tapered/radiused rubber body; no sharp rectangular block edges; one-piece flat steel backing plate copied from supplied sample",
+        "holes_or_inserts": "Same flat-plate/base/contact rules as long stop; right-front vehicle measurements control final contact offset",
+        "material": "Same compound family as BUMP-60010-LONG bonded/captive to coated flat steel plate",
         "release_state": "first_article_required",
         "photo_refs": "20260502_004222_gp_PKRe5HSQ|20260502_004201_gp_zfUSmKJg|reference_catalog/bump_stop.jpg",
-        "notes": "Right-front short height is externally controlled by 48304-60020 references.",
+        "notes": "User will provide the one flat metal backing/saddle piece with the request. Right-front short height is externally controlled by 48304-60020 references.",
         "evidence_images": [
           {
             "path": "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
@@ -81929,12 +80341,12 @@ window.J40_DASHBOARD_DATA = {
   },
   "capture_tasks": {
     "summary": {
-      "total_tasks": 106,
-      "now_tasks": 90,
+      "total_tasks": 107,
+      "now_tasks": 91,
       "later_tasks": 16,
-      "p0_tasks": 33,
-      "photo_tasks": 39,
-      "measurement_tasks": 71
+      "p0_tasks": 34,
+      "photo_tasks": 40,
+      "measurement_tasks": 72
     },
     "counts_by_workstream": [
       {
@@ -81955,7 +80367,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "workstream": "brake_system",
-        "count": 11
+        "count": 12
       },
       {
         "workstream": "mechanical_baseline",
@@ -82009,7 +80421,7 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "task_type": "photo_measurement",
-        "count": 26
+        "count": 27
       },
       {
         "task_type": "photo",
@@ -82035,7 +80447,7 @@ window.J40_DASHBOARD_DATA = {
     "counts_by_priority": [
       {
         "priority": "P0",
-        "count": 33
+        "count": 34
       },
       {
         "priority": "P1",
@@ -82770,6 +81182,57 @@ window.J40_DASHBOARD_DATA = {
         ]
       },
       {
+        "task_id": "component_job:rear_parking_brake_attachment_hardware_20260527",
+        "title": "rear_parking_brake_attachment_hardware_20260527",
+        "workstream": "brake_system",
+        "task_type": "photo_measurement",
+        "priority": "P0",
+        "timing": "now",
+        "status": "spec_controlled_purchase",
+        "location": "workshop_to_runner",
+        "action": "Handle rear parking-brake cable attachment hardware as its own spec-controlled item: clevis and equalizer pieces, clevis pins, split pins/R-clips, adjuster hardware, cable-end retaining clips, external return springs, and bracket clips. Compare the received cable package and old removed hardware before buying or fitting anything.",
+        "data_needed": "Specific line item for clevis/equalizer/return-spring/clip hardware. Aamir may collect shop photos/prices, but payment and installation release require written/sample spec, measured old hardware, and received-cable contents check so duplicates are avoided.",
+        "blocks": "",
+        "record_result_in": "",
+        "source_label": "Component Jobs",
+        "source_path": "data/manual/component_jobs.csv",
+        "source_row_id": "rear_parking_brake_attachment_hardware_20260527",
+        "notes": "",
+        "evidence_ref": "data_brake_system_requirements|BR-REAR-009|part_rear_parking_brake_attachment_hardware_20260527|part_rear_parking_brake_cable_set|20260514_095953_gp_BXoQkXnw|20260514_100003_gp_Vr2QI7ig|user_update_2026-05-28_rear_parking_brake_back_section_photos|docs/brake-runner-spec-capture-20260528.md",
+        "evidence_images": [
+          {
+            "path": "../../photos/20260514_095953_gp_BXoQkXnw.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Brake System \u00b7 2026-05-14",
+            "captured_date": "2026-05-14",
+            "captured_time": "09:59:53",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "brake_system",
+            "media_id": "20260514_095953_gp_BXoQkXnw",
+            "matched_tokens": []
+          },
+          {
+            "path": "../../photos/20260514_100003_gp_Vr2QI7ig.jpg",
+            "caption": "Rear Axle And Leaf Springs \u00b7 Brake System \u00b7 2026-05-14",
+            "captured_date": "2026-05-14",
+            "captured_time": "10:00:03",
+            "media_type": "photo",
+            "component_group": "chassis_underside",
+            "specific_component": "rear_axle_and_leaf_springs",
+            "stage": "brake_system",
+            "media_id": "20260514_100003_gp_Vr2QI7ig",
+            "matched_tokens": []
+          }
+        ],
+        "links": [
+          {
+            "url": "../../data/manual/component_jobs.csv",
+            "label": "Component Jobs"
+          }
+        ]
+      },
+      {
         "task_id": "component_job:rear_brake_cable_line_refresh",
         "title": "rear_brake_cable_line_refresh",
         "workstream": "brake_system",
@@ -82778,8 +81241,8 @@ window.J40_DASHBOARD_DATA = {
         "timing": "now",
         "status": "spec_population",
         "location": "workshop",
-        "action": "Replace rear parking-brake cables, rear axle hard lines, center flex hose, and retaining clips during the suspension/brake access window after photographing/removing the old parts as templates",
-        "data_needed": "The visible rear axle wires are brake hard lines and parking-brake cable/linkage. May 12 photos add route/clip/bracket context. May 14 photos add rear installed flare-nut/fitting context, but removal still requires side labels, bare flare-face confirmation, capping hydraulic ports, and preserving old parts as templates.",
+        "action": "Replace rear parking-brake cable assemblies, rear axle hard lines, center flex hose, and line/cable retainers during the suspension/brake access window after photographing/removing the old parts as templates; keep small parking-brake attachment hardware under rear_parking_brake_attachment_hardware_20260527",
+        "data_needed": "The visible rear axle wires are brake hard lines and parking-brake cable/linkage. May 12 photos add route/clip/bracket context. May 14 photos add rear installed flare-nut/fitting context, but removal still requires side labels, bare flare-face confirmation, capping hydraulic ports, and preserving old parts as templates. Clevis/equalizer/return-spring/clip hardware is now split to the dedicated attachment-hardware job.",
         "blocks": "",
         "record_result_in": "",
         "source_label": "Component Jobs",
@@ -92457,8 +90920,8 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "previously": 96,
         "in_process": 16,
-        "still_required": 71,
-        "total": 183
+        "still_required": 61,
+        "total": 173
       }
     ],
     "rows_by_status": {
@@ -101305,45 +99768,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_tub_repair_steel_sheet_1_6mm_20260513",
-          "supply_type": "part",
-          "inventory_group": "parts",
-          "item": "1.6 mm cold-rolled mild-steel sheet for heavier tub patch plates",
-          "vendor": "local steel stockholder / body-panel sheet supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "body_chassis",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready_measurement_hold",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/tub-off-refit-execution-plan.md|docs/j40_welding_execution_plan_20260419.md",
-          "notes": "Buy one 1.6 mm cold-rolled mild-steel sheet about 1000 x 500 mm, or nearest manageable sheet. Use for heavier tub floor sections, flange returns, seat-box edges, local patch plates, and spots where the exposed original sheet is heavier than skin panels. Final size remains controlled by cleaned metal and rust-map photos.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/heavy_battery_cable.jpg",
-            "caption": "1.6 mm cold-rolled mild-steel sheet for heavier tub patch plates \u00b7 automotive cable reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "heavy_battery_cable",
-            "matched_tokens": [
-              "cable"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_body_retaining_clips_cotter_pin_pack",
           "supply_type": "part",
           "inventory_group": "electrical",
@@ -102132,8 +100556,8 @@ window.J40_DASHBOARD_DATA = {
           "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
-          "notes": "Spec-controlled runner task. Rear parking-brake attachment hardware remains gettable locally, but Aamir may buy only after the received cable/old hardware gives a written/sample spec for clevis/equalizer pieces, pins, clips, adjuster nut, cable-end clips, and return springs. Do not buy duplicates if the cable package includes matching pieces. Until the spec/sample is released, collect shop photos/prices only; mechanic/user approval controls payment and any substitute fit decision. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos satisfy installed-route/layout evidence for the parking-brake cable path, backing-plate lever entry, external return spring, clip/bracket area, and axle/chassis routing. Remaining release gap is measured/labelled small hardware and received-cable comparison: clevis/equalizer pieces, pin diameters, clip types, adjuster thread, return-spring dimensions, and cable-end dimensions.",
+          "evidence_ref": "BR-REAR-009|BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+          "notes": "Spec-controlled runner task now controlled by dedicated requirement BR-REAR-009. Rear parking-brake attachment hardware remains gettable locally, but Aamir may buy only after the received cable/old hardware gives a written/sample spec for clevis/equalizer pieces, pins, clips, adjuster nut, cable-end clips, and return springs. Do not buy duplicates if the cable package or Centric drum hardware kit includes matching pieces. Until the spec/sample is released, collect shop photos/prices only; mechanic/user approval controls payment and any substitute fit decision. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos satisfy installed-route/layout evidence for the parking-brake cable path, backing-plate lever entry, external return spring, clip/bracket area, and axle/chassis routing. Remaining release gap is measured/labelled small hardware and received-cable comparison: clevis/equalizer pieces, pin diameters, clip types, adjuster thread, return-spring dimensions, and cable-end dimensions.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -102152,260 +100576,6 @@ window.J40_DASHBOARD_DATA = {
             "matched_tokens": [
               "parking",
               "brake"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_tub_repair_steel_sheet_1_2mm_20260513",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "1.2 mm cold-rolled mild-steel sheet for tub skin/floor patch plates",
-          "vendor": "local steel stockholder / body-panel sheet supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "chassis_rubbers",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready_measurement_hold",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/tub-off-refit-execution-plan.md|docs/j40_welding_execution_plan_20260419.md",
-          "notes": "Buy one 1.2 mm cold-rolled mild-steel sheet about 1000 x 1000 mm, or nearest manageable sheet. Intended for non-structural tub skin, floor-pan, firewall lip, and small closure patches after the rust map is exposed. Final patch shapes remain measurement controlled; do not use where body mounts or seat belt/seat loads need thicker reinforcement.",
-          "links": [
-            {
-              "url": "../../deliverables/fabrication_packages/rubber_recreation_rev_a.zip",
-              "label": "Rubber fabrication package ZIP",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
-              "label": "Interactive 3D visualisation",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
-              "label": "Static 3D visualisation",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
-              "label": "Chassis rubber location map SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
-              "label": "Complete chassis rubber drawing preview SVG",
-              "download": true
-            },
-            {
-              "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
-              "label": "Bump-stop fabrication spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
-              "label": "Rubber dimension sheet PDF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
-              "label": "3D model README",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
-              "label": "3D model manifest CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
-              "label": "OpenSCAD model master",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
-              "label": "BM-ISO-SM OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
-              "label": "BM-ISO-LG OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
-              "label": "FS-OVAL OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
-              "label": "FS-STRIP-L OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
-              "label": "FS-STRIP-R OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
-              "label": "BUMP-60010 long OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
-              "label": "BUMP-60020 short OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
-              "label": "BUMP-60010 rear pair OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
-              "label": "EXH-HGR-90917 OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
-              "label": "Old-rubber 3D closure checks",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
-              "label": "Bump-stop measurement control SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
-              "label": "Bump-stop measurement control DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
-              "label": "BM-ISO-SM square pad DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
-              "label": "BM-ISO-SM square pad SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
-              "label": "BM-ISO-LG square pad DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
-              "label": "BM-ISO-LG square pad SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf",
-              "label": "Small cup washer DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf",
-              "label": "Large cup washer DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf",
-              "label": "Oval front-support pad DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf",
-              "label": "Left strip template DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf",
-              "label": "Right strip template DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
-              "label": "Rubber cut list CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/inspection_checklist.csv",
-              "label": "Rubber inspection checklist CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
-              "label": "Rubber machine definitions CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json",
-              "label": "Rubber machine definitions JSON",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-            "caption": "1.2 mm cold-rolled mild-steel sheet for tub skin/floor patch plates \u00b7 rust/metal treatment reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "wax_grease_remover",
-            "matched_tokens": [
-              "rust"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_tub_mount_reinforcement_plate_3mm_20260513",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs",
-          "vendor": "local steel stockholder / sheet-metal shop",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "chassis_rubbers",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready_measurement_hold",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/tub-off-refit-execution-plan.md|data/manual/body_mount_order_release_specs.csv",
-          "notes": "Buy one 3.0 mm mild-steel plate about 500 x 500 mm or 300 x 600 mm for tub body-mount backing plates, captive-nut/weld-nut repair plates, local reinforcement coupons, and test pieces. Keep separate from chassis/battery stand fabrication steel; release final shapes only after each mount station is cleaned and measured.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/battery.jpg",
-            "caption": "3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs \u00b7 battery reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "battery",
-            "matched_tokens": [
-              "battery"
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
@@ -102447,6 +100617,11 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
               "label": "Chassis rubber location map SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_current_order_preview_rev_a.svg",
+              "label": "Current chassis rubber order preview SVG",
               "download": true
             },
             {
@@ -102662,6 +100837,11 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
               "label": "Chassis rubber location map SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_current_order_preview_rev_a.svg",
+              "label": "Current chassis rubber order preview SVG",
               "download": true
             },
             {
@@ -102921,221 +101101,6 @@ window.J40_DASHBOARD_DATA = {
         },
         {
           "source": "expenses",
-          "source_ref": "part_body_mount_rubber_kit",
-          "supply_type": "part",
-          "inventory_group": "mechanical",
-          "item": "Consolidated Longman chassis/body custom rubber order",
-          "vendor": "",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "chassis_rubbers",
-          "status_group": "still_required",
-          "status_detail": "spec_ready",
-          "procurement_stage": "consolidated_longman_quote_ready_measurement_release_hold",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|docs/longman-rubber-order-spec-20260508.md|data/manual/longman_rubber_order_specs.csv|docs/chassis-rubbers-workstream.md|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
-          "notes": "Single consolidated Longman custom rubber order. Quote/order as one supplier bundle: BM-ISO-SM 10 + 2 spares, BM-ISO-LG 2 + 1 spare, FS-OVAL x2, FS-STRIP-L x1, FS-STRIP-R x1, BUMP-60010-LONG x3, and BUMP-60020-SHORT x1. Steel cup/seat washers, sleeves, shims, bolts, and captive-thread repairs remain separate local hardware rows; BODY-LINER-FULL-WIDTH-HOLD and EXH-HGR-90917 are hold/reference lines only, not current order quantities.",
-          "links": [
-            {
-              "url": "../../deliverables/fabrication_packages/rubber_recreation_rev_a.zip",
-              "label": "Rubber fabrication package ZIP",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
-              "label": "Interactive 3D visualisation",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
-              "label": "Static 3D visualisation",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
-              "label": "Chassis rubber location map SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
-              "label": "Complete chassis rubber drawing preview SVG",
-              "download": true
-            },
-            {
-              "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
-              "label": "Bump-stop fabrication spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
-              "label": "Rubber dimension sheet PDF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
-              "label": "3D model README",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
-              "label": "3D model manifest CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
-              "label": "OpenSCAD model master",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
-              "label": "BM-ISO-SM OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
-              "label": "BM-ISO-LG OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
-              "label": "FS-OVAL OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
-              "label": "FS-STRIP-L OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
-              "label": "FS-STRIP-R OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
-              "label": "BUMP-60010 long OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
-              "label": "BUMP-60020 short OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
-              "label": "BUMP-60010 rear pair OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
-              "label": "EXH-HGR-90917 OpenSCAD",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
-              "label": "Old-rubber 3D closure checks",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
-              "label": "Bump-stop measurement control SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
-              "label": "Bump-stop measurement control DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
-              "label": "BM-ISO-SM square pad DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
-              "label": "BM-ISO-SM square pad SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
-              "label": "BM-ISO-LG square pad DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
-              "label": "BM-ISO-LG square pad SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf",
-              "label": "Small cup washer DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf",
-              "label": "Large cup washer DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf",
-              "label": "Oval front-support pad DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf",
-              "label": "Left strip template DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf",
-              "label": "Right strip template DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
-              "label": "Rubber cut list CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/inspection_checklist.csv",
-              "label": "Rubber inspection checklist CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
-              "label": "Rubber machine definitions CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json",
-              "label": "Rubber machine definitions JSON",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
-            "caption": "Body mount rubber cushion and front-support rubber kit reference",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_body_mount_rubber_kit"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
-          }
-        },
-        {
-          "source": "expenses",
           "source_ref": "part_firewall_grommet_set_large_power",
           "supply_type": "part",
           "inventory_group": "electrical",
@@ -103327,470 +101292,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_fabrication_raw_epdm_sheet_small_isolators_20260513",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads",
-          "vendor": "local rubber sheet supplier / Longman fallback",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "fabrication_handoff",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready_estimate",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
-          "notes": "Buy a small 3-5 mm EPDM/SBR sheet at least 300 x 300 mm for the radiator isolator pad, battery carrier anti-chafe pads, and first-article trimming. This is small sheet stock only and does not replace the chassis-rubber Longman/body-mount order route.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
-            "caption": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads \u00b7 body mount rubber kit reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "body_mount_rubber_kit_reference",
-            "matched_tokens": [
-              "body",
-              "mount"
-            ],
-            "match_basis": "local_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_fabrication_raw_aluminium_plate_3mm_20260513",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "3.0 mm 5052-H32 aluminium sheet for MIDI enclosure, Relay Rev D base, and cutoff electrical plates",
-          "vendor": "local aluminium stockholder / sheet-metal shop",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "fabrication_handoff",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready_estimate",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/midi5_enclosure_rev_d/README.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/README.md|data/manual/fabrication/relay_mount_rev_d/README.md",
-          "notes": "Buy 3.0 mm 5052-H32 aluminium sheet: minimum 600 x 600 mm, or 1000 x 500 if cheaper/similarly priced, for the current MIDI Rev D enclosure body/lid, Relay Rev D 360 x 245 flat base, and folded cutoff base/guard with 20 mm upward lips. Current battery stand route remains steel; this aluminium is for electrical component carriers/guards, not the main carrier.",
-          "links": [
-            {
-              "url": "../../deliverables/fabrication_packages/midi5_enclosure_rev_d.zip",
-              "label": "MIDI enclosure package ZIP",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/j40_midi5_enclosure_rev_d_dimension_sheet.pdf",
-              "label": "MIDI enclosure dimension sheet PDF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.dxf",
-              "label": "MIDI enclosure body DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.svg",
-              "label": "MIDI enclosure body SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.dxf",
-              "label": "MIDI holder subplate DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.svg",
-              "label": "MIDI holder subplate SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.dxf",
-              "label": "MIDI enclosure lid DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.svg",
-              "label": "MIDI enclosure lid SVG",
-              "download": true
-            },
-            {
-              "url": "../../deliverables/fabrication_packages/relay_mount_rev_d.zip",
-              "label": "Relay Rev D package ZIP",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/j40_relay_mount_rev_d_dimension_sheet.pdf",
-              "label": "Relay Rev D dimension sheet PDF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.dxf",
-              "label": "Relay Rev D flat base plate DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.svg",
-              "label": "Relay Rev D flat base plate SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.dxf",
-              "label": "Relay Rev D insulating sheet DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.svg",
-              "label": "Relay Rev D insulating sheet SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/README.md",
-              "label": "Relay Rev D README",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/relay.jpg",
-            "caption": "3.0 mm 5052-H32 aluminium sheet for MIDI enclosure, Relay Rev D base, and cutoff electrical plates \u00b7 automotive relay reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "relay",
-            "matched_tokens": [
-              "relay"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_fabrication_raw_mild_steel_plate_3mm_20260513",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "3.0 mm mild-steel sheet plus 90-degree angle/L-section stock for compact battery tray/access ladder",
-          "vendor": "local steel stockholder / sheet-metal shop",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "fabrication_handoff",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready_estimate",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv",
-          "notes": "Buy one 3.0 mm mild-steel sheet/plate at least 600 x 600 mm, or 1000 x 500 if cheaper/similarly priced. Also buy 3.0 mm 90-degree mild-steel angle/L-section, 25 x 25 x 3 mm or 30 x 30 x 3 mm, 3 m total, for tray perimeter/upstands, widened access-ladder frame, shallow shelf rails, and cable/P-clip tabs. Keep sheet stock for the battery deck, widened access-ladder flat face, hold-down crossbar, and flat component tabs. Do not spend this stock on tub repairs; keep tub plate stock separate.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/battery.jpg",
-            "caption": "3.0 mm mild-steel sheet plus 90-degree angle/L-section stock for compact battery tray/access ladder \u00b7 battery reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "battery",
-            "matched_tokens": [
-              "battery"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_fabrication_raw_mild_steel_plate_4mm_20260513",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post",
-          "vendor": "local steel stockholder / sheet-metal shop",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "fabrication_handoff",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready_estimate",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
-          "notes": "Buy one 4.0 mm mild-steel plate at least 700 x 450 mm, or nearest sheet size such as 1000 x 500. Also ask for 50 x 50 x 4 mm 90-degree mild-steel angle, 1 m, for the radiator post; 40 x 40 x 4 mm 90-degree mild-steel angle, 2 m, for battery stand/upright bridge trials; and short mild-steel tube/sleeve stock only after final M8/M10 through-bolt size is chosen. Keep plate stock for the formed chassis saddle, adjustable offset bars, flat bolt tabs, and any upright/gusset plates that angle stock cannot replace. Deburr and prime after cutting.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
-            "caption": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post \u00b7 current car radiator/heater hose crop",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "radiator_heater_hose_current_car_crop_20260503",
-            "matched_tokens": [
-              "radiator",
-              "hose"
-            ],
-            "match_basis": "local_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "part_fabrication_raw_electrical_plastic_sheet_20260513",
-          "supply_type": "part",
-          "inventory_group": "electrical",
-          "item": "Electrical insulating plastic/G10 sheet - MIDI 5.0 mm board and relay 3.0 mm sheet",
-          "vendor": "local plastic CNC/router or sheet supplier",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "fabrication_handoff",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "purchase_ready_estimate",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/midi5_enclosure_rev_d/README.md|data/manual/fabrication/relay_mount_rev_d/README.md",
-          "notes": "Buy/quote 5.0 mm HDPE/ABS/G10/phenolic board at least 200 x 150 mm for the MIDI subplate, plus 3.0 mm ABS/HDPE/polypropylene/G10/phenolic sheet at least 350 x 250 mm for the Relay Rev D exact 300 x 197 insulating sheet.",
-          "links": [
-            {
-              "url": "../../deliverables/fabrication_packages/midi5_enclosure_rev_d.zip",
-              "label": "MIDI enclosure package ZIP",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/j40_midi5_enclosure_rev_d_dimension_sheet.pdf",
-              "label": "MIDI enclosure dimension sheet PDF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.dxf",
-              "label": "MIDI enclosure body DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.svg",
-              "label": "MIDI enclosure body SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.dxf",
-              "label": "MIDI holder subplate DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.svg",
-              "label": "MIDI holder subplate SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.dxf",
-              "label": "MIDI enclosure lid DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.svg",
-              "label": "MIDI enclosure lid SVG",
-              "download": true
-            },
-            {
-              "url": "../../deliverables/fabrication_packages/relay_mount_rev_d.zip",
-              "label": "Relay Rev D package ZIP",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/j40_relay_mount_rev_d_dimension_sheet.pdf",
-              "label": "Relay Rev D dimension sheet PDF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.dxf",
-              "label": "Relay Rev D flat base plate DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.svg",
-              "label": "Relay Rev D flat base plate SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.dxf",
-              "label": "Relay Rev D insulating sheet DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.svg",
-              "label": "Relay Rev D insulating sheet SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/README.md",
-              "label": "Relay Rev D README",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/reference_catalog/relay.jpg",
-            "caption": "Electrical insulating plastic/G10 sheet - MIDI 5.0 mm board and relay 3.0 mm sheet \u00b7 automotive relay reference image",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "semantic_reference_image",
-            "stage": "procurement_reconciliation",
-            "media_id": "relay",
-            "matched_tokens": [
-              "relay"
-            ],
-            "match_basis": "semantic_reference_image",
-            "match_score": 700
-          }
-        },
-        {
-          "source": "expenses",
-          "source_ref": "service_local_3d_printing_fabrication_prototypes",
-          "supply_type": "part",
-          "inventory_group": "parts",
-          "item": "MIDI holder plastic underlay / subplate quote",
-          "vendor": "local plastic CNC/router or 3D printing service",
-          "amount": "",
-          "currency": "PKR",
-          "workstream": "fabrication_handoff",
-          "status_group": "still_required",
-          "status_detail": "planned",
-          "procurement_stage": "quote_needed",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "evidence_ref": "user_update_2026-05-04_scouting_3d_print_fabricated_items|docs/fabrication-handoff-index.md|data/manual/fabrication_handoff_requirements.csv",
-          "notes": "Scout only the MIDI holder non-conductive underlay/subplate: 140 x 85 x 5 mm from midi5_holder_subplate_rev_d DXF/PDF. Metal plate/bracket fabrication remains owner-managed and is intentionally excluded from this scout row.",
-          "links": [
-            {
-              "url": "../../deliverables/fabrication_packages/midi5_enclosure_rev_d.zip",
-              "label": "MIDI enclosure package ZIP",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/j40_midi5_enclosure_rev_d_dimension_sheet.pdf",
-              "label": "MIDI enclosure dimension sheet PDF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.dxf",
-              "label": "MIDI enclosure body DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.svg",
-              "label": "MIDI enclosure body SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.dxf",
-              "label": "MIDI holder subplate DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.svg",
-              "label": "MIDI holder subplate SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.dxf",
-              "label": "MIDI enclosure lid DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.svg",
-              "label": "MIDI enclosure lid SVG",
-              "download": true
-            },
-            {
-              "url": "../../deliverables/fabrication_packages/relay_mount_rev_d.zip",
-              "label": "Relay Rev D package ZIP",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/j40_relay_mount_rev_d_dimension_sheet.pdf",
-              "label": "Relay Rev D dimension sheet PDF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.dxf",
-              "label": "Relay Rev D flat base plate DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.svg",
-              "label": "Relay Rev D flat base plate SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.dxf",
-              "label": "Relay Rev D insulating sheet DXF",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.svg",
-              "label": "Relay Rev D insulating sheet SVG",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/fabrication/relay_mount_rev_d/README.md",
-              "label": "Relay Rev D README",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.svg",
-            "caption": "MIDI holder non-conductive subplate fabrication drawing",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "service_local_3d_printing_fabrication_prototypes"
-            ],
-            "match_basis": "manual_override",
-            "match_score": 999
           }
         },
         {
@@ -113499,279 +111000,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "part_fabrication_raw_epdm_sheet_small_isolators_20260513",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads",
-        "vendor": "local rubber sheet supplier / Longman fallback",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "fabrication_handoff",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready_estimate",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
-        "notes": "Buy a small 3-5 mm EPDM/SBR sheet at least 300 x 300 mm for the radiator isolator pad, battery carrier anti-chafe pads, and first-article trimming. This is small sheet stock only and does not replace the chassis-rubber Longman/body-mount order route.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
-          "caption": "3-5 mm EPDM/SBR sheet for radiator isolator and small anti-chafe pads \u00b7 body mount rubber kit reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "body_mount_rubber_kit_reference",
-          "matched_tokens": [
-            "body",
-            "mount"
-          ],
-          "match_basis": "local_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_fabrication_raw_aluminium_plate_3mm_20260513",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "3.0 mm 5052-H32 aluminium sheet for MIDI enclosure, Relay Rev D base, and cutoff electrical plates",
-        "vendor": "local aluminium stockholder / sheet-metal shop",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "fabrication_handoff",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready_estimate",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/midi5_enclosure_rev_d/README.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/README.md|data/manual/fabrication/relay_mount_rev_d/README.md",
-        "notes": "Buy 3.0 mm 5052-H32 aluminium sheet: minimum 600 x 600 mm, or 1000 x 500 if cheaper/similarly priced, for the current MIDI Rev D enclosure body/lid, Relay Rev D 360 x 245 flat base, and folded cutoff base/guard with 20 mm upward lips. Current battery stand route remains steel; this aluminium is for electrical component carriers/guards, not the main carrier.",
-        "links": [
-          {
-            "url": "../../deliverables/fabrication_packages/midi5_enclosure_rev_d.zip",
-            "label": "MIDI enclosure package ZIP",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/j40_midi5_enclosure_rev_d_dimension_sheet.pdf",
-            "label": "MIDI enclosure dimension sheet PDF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.dxf",
-            "label": "MIDI enclosure body DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.svg",
-            "label": "MIDI enclosure body SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.dxf",
-            "label": "MIDI holder subplate DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.svg",
-            "label": "MIDI holder subplate SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.dxf",
-            "label": "MIDI enclosure lid DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.svg",
-            "label": "MIDI enclosure lid SVG",
-            "download": true
-          },
-          {
-            "url": "../../deliverables/fabrication_packages/relay_mount_rev_d.zip",
-            "label": "Relay Rev D package ZIP",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/j40_relay_mount_rev_d_dimension_sheet.pdf",
-            "label": "Relay Rev D dimension sheet PDF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.dxf",
-            "label": "Relay Rev D flat base plate DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.svg",
-            "label": "Relay Rev D flat base plate SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.dxf",
-            "label": "Relay Rev D insulating sheet DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.svg",
-            "label": "Relay Rev D insulating sheet SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/README.md",
-            "label": "Relay Rev D README",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/relay.jpg",
-          "caption": "3.0 mm 5052-H32 aluminium sheet for MIDI enclosure, Relay Rev D base, and cutoff electrical plates \u00b7 automotive relay reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "relay",
-          "matched_tokens": [
-            "relay"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_tub_mount_reinforcement_plate_3mm_20260513",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs",
-        "vendor": "local steel stockholder / sheet-metal shop",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "chassis_rubbers",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready_measurement_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/tub-off-refit-execution-plan.md|data/manual/body_mount_order_release_specs.csv",
-        "notes": "Buy one 3.0 mm mild-steel plate about 500 x 500 mm or 300 x 600 mm for tub body-mount backing plates, captive-nut/weld-nut repair plates, local reinforcement coupons, and test pieces. Keep separate from chassis/battery stand fabrication steel; release final shapes only after each mount station is cleaned and measured.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/battery.jpg",
-          "caption": "3.0 mm mild-steel plate for tub body-mount backing and captive-nut repairs \u00b7 battery reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "battery",
-          "matched_tokens": [
-            "battery"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_fabrication_raw_mild_steel_plate_3mm_20260513",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "3.0 mm mild-steel sheet plus 90-degree angle/L-section stock for compact battery tray/access ladder",
-        "vendor": "local steel stockholder / sheet-metal shop",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "fabrication_handoff",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready_estimate",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv",
-        "notes": "Buy one 3.0 mm mild-steel sheet/plate at least 600 x 600 mm, or 1000 x 500 if cheaper/similarly priced. Also buy 3.0 mm 90-degree mild-steel angle/L-section, 25 x 25 x 3 mm or 30 x 30 x 3 mm, 3 m total, for tray perimeter/upstands, widened access-ladder frame, shallow shelf rails, and cable/P-clip tabs. Keep sheet stock for the battery deck, widened access-ladder flat face, hold-down crossbar, and flat component tabs. Do not spend this stock on tub repairs; keep tub plate stock separate.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/battery.jpg",
-          "caption": "3.0 mm mild-steel sheet plus 90-degree angle/L-section stock for compact battery tray/access ladder \u00b7 battery reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "battery",
-          "matched_tokens": [
-            "battery"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_fabrication_raw_mild_steel_plate_4mm_20260513",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post",
-        "vendor": "local steel stockholder / sheet-metal shop",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "fabrication_handoff",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready_estimate",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|data/manual/fabrication_metal_stock_requirements.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/fabrication-metal-stock-list-20260514.md|data/manual/fabrication/battery_power_carrier_mount_rev_a/fabricator_cut_list.csv|data/manual/fabrication/front_radiator_two_side_retention_rev_a/fabricator_cut_list.csv",
-        "notes": "Buy one 4.0 mm mild-steel plate at least 700 x 450 mm, or nearest sheet size such as 1000 x 500. Also ask for 50 x 50 x 4 mm 90-degree mild-steel angle, 1 m, for the radiator post; 40 x 40 x 4 mm 90-degree mild-steel angle, 2 m, for battery stand/upright bridge trials; and short mild-steel tube/sleeve stock only after final M8/M10 through-bolt size is chosen. Keep plate stock for the formed chassis saddle, adjustable offset bars, flat bolt tabs, and any upright/gusset plates that angle stock cannot replace. Deburr and prime after cutting.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/radiator_heater_hose_current_car_crop_20260503.jpg",
-          "caption": "4.0 mm mild-steel plate plus structural 90-degree angle/L-section stock for compact battery saddle/upright/offset bars and radiator post \u00b7 current car radiator/heater hose crop",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "radiator_heater_hose_current_car_crop_20260503",
-          "matched_tokens": [
-            "radiator",
-            "hose"
-          ],
-          "match_basis": "local_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
         "source_ref": "part_hvac_firewall_bulkhead_fittings_20260514",
         "supply_type": "part",
         "inventory_group": "electrical",
@@ -114111,121 +111339,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "part_fabrication_raw_electrical_plastic_sheet_20260513",
-        "supply_type": "part",
-        "inventory_group": "electrical",
-        "item": "Electrical insulating plastic/G10 sheet - MIDI 5.0 mm board and relay 3.0 mm sheet",
-        "vendor": "local plastic CNC/router or sheet supplier",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "fabrication_handoff",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready_estimate",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|data/manual/fabrication/midi5_enclosure_rev_d/README.md|data/manual/fabrication/relay_mount_rev_d/README.md",
-        "notes": "Buy/quote 5.0 mm HDPE/ABS/G10/phenolic board at least 200 x 150 mm for the MIDI subplate, plus 3.0 mm ABS/HDPE/polypropylene/G10/phenolic sheet at least 350 x 250 mm for the Relay Rev D exact 300 x 197 insulating sheet.",
-        "links": [
-          {
-            "url": "../../deliverables/fabrication_packages/midi5_enclosure_rev_d.zip",
-            "label": "MIDI enclosure package ZIP",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/j40_midi5_enclosure_rev_d_dimension_sheet.pdf",
-            "label": "MIDI enclosure dimension sheet PDF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.dxf",
-            "label": "MIDI enclosure body DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.svg",
-            "label": "MIDI enclosure body SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.dxf",
-            "label": "MIDI holder subplate DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.svg",
-            "label": "MIDI holder subplate SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.dxf",
-            "label": "MIDI enclosure lid DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.svg",
-            "label": "MIDI enclosure lid SVG",
-            "download": true
-          },
-          {
-            "url": "../../deliverables/fabrication_packages/relay_mount_rev_d.zip",
-            "label": "Relay Rev D package ZIP",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/j40_relay_mount_rev_d_dimension_sheet.pdf",
-            "label": "Relay Rev D dimension sheet PDF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.dxf",
-            "label": "Relay Rev D flat base plate DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.svg",
-            "label": "Relay Rev D flat base plate SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.dxf",
-            "label": "Relay Rev D insulating sheet DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.svg",
-            "label": "Relay Rev D insulating sheet SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/README.md",
-            "label": "Relay Rev D README",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/relay.jpg",
-          "caption": "Electrical insulating plastic/G10 sheet - MIDI 5.0 mm board and relay 3.0 mm sheet \u00b7 automotive relay reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "relay",
-          "matched_tokens": [
-            "relay"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
         "source_ref": "quote_rubber_grommet_set_chat",
         "supply_type": "part",
         "inventory_group": "electrical",
@@ -114521,221 +111634,6 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "source": "expenses",
-        "source_ref": "part_tub_repair_steel_sheet_1_2mm_20260513",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "1.2 mm cold-rolled mild-steel sheet for tub skin/floor patch plates",
-        "vendor": "local steel stockholder / body-panel sheet supplier",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "chassis_rubbers",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready_measurement_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/tub-off-refit-execution-plan.md|docs/j40_welding_execution_plan_20260419.md",
-        "notes": "Buy one 1.2 mm cold-rolled mild-steel sheet about 1000 x 1000 mm, or nearest manageable sheet. Intended for non-structural tub skin, floor-pan, firewall lip, and small closure patches after the rust map is exposed. Final patch shapes remain measurement controlled; do not use where body mounts or seat belt/seat loads need thicker reinforcement.",
-        "links": [
-          {
-            "url": "../../deliverables/fabrication_packages/rubber_recreation_rev_a.zip",
-            "label": "Rubber fabrication package ZIP",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
-            "label": "Interactive 3D visualisation",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
-            "label": "Static 3D visualisation",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
-            "label": "Chassis rubber location map SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
-            "label": "Complete chassis rubber drawing preview SVG",
-            "download": true
-          },
-          {
-            "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
-            "label": "Bump-stop fabrication spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
-            "label": "Rubber dimension sheet PDF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
-            "label": "3D model README",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
-            "label": "3D model manifest CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
-            "label": "OpenSCAD model master",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
-            "label": "BM-ISO-SM OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
-            "label": "BM-ISO-LG OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
-            "label": "FS-OVAL OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
-            "label": "FS-STRIP-L OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
-            "label": "FS-STRIP-R OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
-            "label": "BUMP-60010 long OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
-            "label": "BUMP-60020 short OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
-            "label": "BUMP-60010 rear pair OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
-            "label": "EXH-HGR-90917 OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
-            "label": "Old-rubber 3D closure checks",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
-            "label": "Bump-stop measurement control SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
-            "label": "Bump-stop measurement control DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
-            "label": "BM-ISO-SM square pad DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
-            "label": "BM-ISO-SM square pad SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
-            "label": "BM-ISO-LG square pad DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
-            "label": "BM-ISO-LG square pad SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf",
-            "label": "Small cup washer DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf",
-            "label": "Large cup washer DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf",
-            "label": "Oval front-support pad DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf",
-            "label": "Left strip template DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf",
-            "label": "Right strip template DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
-            "label": "Rubber cut list CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/inspection_checklist.csv",
-            "label": "Rubber inspection checklist CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
-            "label": "Rubber machine definitions CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json",
-            "label": "Rubber machine definitions JSON",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/wax_grease_remover.jpg",
-          "caption": "1.2 mm cold-rolled mild-steel sheet for tub skin/floor patch plates \u00b7 rust/metal treatment reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "wax_grease_remover",
-          "matched_tokens": [
-            "rust"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
         "source_ref": "part_hvac_barrier_hose_fittings_20260514",
         "supply_type": "part",
         "inventory_group": "mechanical",
@@ -114848,6 +111746,11 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
             "label": "Chassis rubber location map SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_current_order_preview_rev_a.svg",
+            "label": "Current chassis rubber order preview SVG",
             "download": true
           },
           {
@@ -115063,6 +111966,11 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
             "label": "Chassis rubber location map SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_current_order_preview_rev_a.svg",
+            "label": "Current chassis rubber order preview SVG",
             "download": true
           },
           {
@@ -115581,221 +112489,6 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_body_mount_rubber_kit",
-        "supply_type": "part",
-        "inventory_group": "mechanical",
-        "item": "Consolidated Longman chassis/body custom rubber order",
-        "vendor": "",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "chassis_rubbers",
-        "status_group": "still_required",
-        "status_detail": "spec_ready",
-        "procurement_stage": "consolidated_longman_quote_ready_measurement_release_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_plan_2026-04-22_tub_off_update|docs_tub-off-refit-execution-plan|docs/longman-rubber-order-spec-20260508.md|data/manual/longman_rubber_order_specs.csv|docs/chassis-rubbers-workstream.md|data/manual/body_mount_order_release_specs.csv|data/manual/body_mount_release_actions.csv",
-        "notes": "Single consolidated Longman custom rubber order. Quote/order as one supplier bundle: BM-ISO-SM 10 + 2 spares, BM-ISO-LG 2 + 1 spare, FS-OVAL x2, FS-STRIP-L x1, FS-STRIP-R x1, BUMP-60010-LONG x3, and BUMP-60020-SHORT x1. Steel cup/seat washers, sleeves, shims, bolts, and captive-thread repairs remain separate local hardware rows; BODY-LINER-FULL-WIDTH-HOLD and EXH-HGR-90917 are hold/reference lines only, not current order quantities.",
-        "links": [
-          {
-            "url": "../../deliverables/fabrication_packages/rubber_recreation_rev_a.zip",
-            "label": "Rubber fabrication package ZIP",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html",
-            "label": "Interactive 3D visualisation",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
-            "label": "Static 3D visualisation",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
-            "label": "Chassis rubber location map SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
-            "label": "Complete chassis rubber drawing preview SVG",
-            "download": true
-          },
-          {
-            "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
-            "label": "Bump-stop fabrication spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf",
-            "label": "Rubber dimension sheet PDF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md",
-            "label": "3D model README",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/model_manifest.csv",
-            "label": "3D model manifest CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad",
-            "label": "OpenSCAD model master",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
-            "label": "BM-ISO-SM OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
-            "label": "BM-ISO-LG OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
-            "label": "FS-OVAL OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
-            "label": "FS-STRIP-L OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
-            "label": "FS-STRIP-R OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
-            "label": "BUMP-60010 long OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
-            "label": "BUMP-60020 short OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_rear_pair_measurement_model.scad",
-            "label": "BUMP-60010 rear pair OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
-            "label": "EXH-HGR-90917 OpenSCAD",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/old_rubber_checks.md",
-            "label": "Old-rubber 3D closure checks",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
-            "label": "Bump-stop measurement control SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
-            "label": "Bump-stop measurement control DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
-            "label": "BM-ISO-SM square pad DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
-            "label": "BM-ISO-SM square pad SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
-            "label": "BM-ISO-LG square pad DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
-            "label": "BM-ISO-LG square pad SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf",
-            "label": "Small cup washer DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf",
-            "label": "Large cup washer DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf",
-            "label": "Oval front-support pad DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf",
-            "label": "Left strip template DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf",
-            "label": "Right strip template DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fabricator_cut_list.csv",
-            "label": "Rubber cut list CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/inspection_checklist.csv",
-            "label": "Rubber inspection checklist CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.csv",
-            "label": "Rubber machine definitions CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/machine_definitions.json",
-            "label": "Rubber machine definitions JSON",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/body_mount_rubber_kit_reference.svg",
-          "caption": "Body mount rubber cushion and front-support rubber kit reference",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_body_mount_rubber_kit"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
         }
       },
       {
@@ -116391,8 +113084,8 @@ window.J40_DASHBOARD_DATA = {
         "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
-        "notes": "Spec-controlled runner task. Rear parking-brake attachment hardware remains gettable locally, but Aamir may buy only after the received cable/old hardware gives a written/sample spec for clevis/equalizer pieces, pins, clips, adjuster nut, cable-end clips, and return springs. Do not buy duplicates if the cable package includes matching pieces. Until the spec/sample is released, collect shop photos/prices only; mechanic/user approval controls payment and any substitute fit decision. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos satisfy installed-route/layout evidence for the parking-brake cable path, backing-plate lever entry, external return spring, clip/bracket area, and axle/chassis routing. Remaining release gap is measured/labelled small hardware and received-cable comparison: clevis/equalizer pieces, pin diameters, clip types, adjuster thread, return-spring dimensions, and cable-end dimensions.",
+        "evidence_ref": "BR-REAR-009|BR-REAR-001|BR-REAR-007|part_rear_parking_brake_cable_set|user_update_2026-05-27_required_purchase_line_cleanup|user_update_2026-05-27_gettable_local_brake_items|user_update_2026-05-27_aamir_runner_not_mechanic|user_update_2026-05-27_spec_controlled_runner_purchase|docs/brake-runner-spec-capture-20260528.md|user_update_2026-05-28_rear_parking_brake_back_section_photos",
+        "notes": "Spec-controlled runner task now controlled by dedicated requirement BR-REAR-009. Rear parking-brake attachment hardware remains gettable locally, but Aamir may buy only after the received cable/old hardware gives a written/sample spec for clevis/equalizer pieces, pins, clips, adjuster nut, cable-end clips, and return springs. Do not buy duplicates if the cable package or Centric drum hardware kit includes matching pieces. Until the spec/sample is released, collect shop photos/prices only; mechanic/user approval controls payment and any substitute fit decision. User corrections 2026-05-27: Aamir is office/runner support, not a mechanic; project/mechanic can define the specs he buys against. Spec capture guide 2026-05-28: use docs/brake-runner-spec-capture-20260528.md to capture installed photos, labelled old samples, ruler/caliper measurements, end/clip/thread/seat close-ups, and bagged parts by position before releasing any exact-spec runner purchase. User update 2026-05-28: existing rear back-section photos satisfy installed-route/layout evidence for the parking-brake cable path, backing-plate lever entry, external return spring, clip/bracket area, and axle/chassis routing. Remaining release gap is measured/labelled small hardware and received-cable comparison: clevis/equalizer pieces, pin diameters, clip types, adjuster thread, return-spring dimensions, and cable-end dimensions.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -116486,45 +113179,6 @@ window.J40_DASHBOARD_DATA = {
           "matched_tokens": [
             "glow",
             "plugs"
-          ],
-          "match_basis": "semantic_reference_image",
-          "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "part_tub_repair_steel_sheet_1_6mm_20260513",
-        "supply_type": "part",
-        "inventory_group": "parts",
-        "item": "1.6 mm cold-rolled mild-steel sheet for heavier tub patch plates",
-        "vendor": "local steel stockholder / body-panel sheet supplier",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "body_chassis",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "purchase_ready_measurement_hold",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "data/manual/fabrication_raw_material_estimates.csv|docs/fabrication-raw-materials-procurement-estimate-20260513.md|docs/tub-off-refit-execution-plan.md|docs/j40_welding_execution_plan_20260419.md",
-        "notes": "Buy one 1.6 mm cold-rolled mild-steel sheet about 1000 x 500 mm, or nearest manageable sheet. Use for heavier tub floor sections, flange returns, seat-box edges, local patch plates, and spots where the exposed original sheet is heavier than skin panels. Final size remains controlled by cleaned metal and rust-map photos.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/reference_catalog/heavy_battery_cable.jpg",
-          "caption": "1.6 mm cold-rolled mild-steel sheet for heavier tub patch plates \u00b7 automotive cable reference image",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "semantic_reference_image",
-          "stage": "procurement_reconciliation",
-          "media_id": "heavy_battery_cable",
-          "matched_tokens": [
-            "cable"
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
@@ -117100,121 +113754,6 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
-        }
-      },
-      {
-        "source": "expenses",
-        "source_ref": "service_local_3d_printing_fabrication_prototypes",
-        "supply_type": "part",
-        "inventory_group": "parts",
-        "item": "MIDI holder plastic underlay / subplate quote",
-        "vendor": "local plastic CNC/router or 3D printing service",
-        "amount": "",
-        "currency": "PKR",
-        "workstream": "fabrication_handoff",
-        "status_group": "still_required",
-        "status_detail": "planned",
-        "procurement_stage": "quote_needed",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "evidence_ref": "user_update_2026-05-04_scouting_3d_print_fabricated_items|docs/fabrication-handoff-index.md|data/manual/fabrication_handoff_requirements.csv",
-        "notes": "Scout only the MIDI holder non-conductive underlay/subplate: 140 x 85 x 5 mm from midi5_holder_subplate_rev_d DXF/PDF. Metal plate/bracket fabrication remains owner-managed and is intentionally excluded from this scout row.",
-        "links": [
-          {
-            "url": "../../deliverables/fabrication_packages/midi5_enclosure_rev_d.zip",
-            "label": "MIDI enclosure package ZIP",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/j40_midi5_enclosure_rev_d_dimension_sheet.pdf",
-            "label": "MIDI enclosure dimension sheet PDF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.dxf",
-            "label": "MIDI enclosure body DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_body_rev_d.svg",
-            "label": "MIDI enclosure body SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.dxf",
-            "label": "MIDI holder subplate DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.svg",
-            "label": "MIDI holder subplate SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.dxf",
-            "label": "MIDI enclosure lid DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_enclosure_lid_rev_d.svg",
-            "label": "MIDI enclosure lid SVG",
-            "download": true
-          },
-          {
-            "url": "../../deliverables/fabrication_packages/relay_mount_rev_d.zip",
-            "label": "Relay Rev D package ZIP",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/j40_relay_mount_rev_d_dimension_sheet.pdf",
-            "label": "Relay Rev D dimension sheet PDF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.dxf",
-            "label": "Relay Rev D flat base plate DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_base_plate_rev_d.svg",
-            "label": "Relay Rev D flat base plate SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.dxf",
-            "label": "Relay Rev D insulating sheet DXF",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/relay_insulating_sheet_rev_d.svg",
-            "label": "Relay Rev D insulating sheet SVG",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/fabrication/relay_mount_rev_d/README.md",
-            "label": "Relay Rev D README",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../data/manual/fabrication/midi5_enclosure_rev_d/midi5_holder_subplate_rev_d.svg",
-          "caption": "MIDI holder non-conductive subplate fabrication drawing",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "service_local_3d_printing_fabrication_prototypes"
-          ],
-          "match_basis": "manual_override",
-          "match_score": 999
         }
       },
       {

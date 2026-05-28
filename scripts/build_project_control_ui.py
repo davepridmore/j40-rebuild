@@ -33,6 +33,7 @@ BODY_MOUNT_ORDER_RELEASE_SPECS_PATH = MANUAL_DIR / "body_mount_order_release_spe
 BODY_MOUNT_RELEASE_ACTIONS_PATH = MANUAL_DIR / "body_mount_release_actions.csv"
 BODY_MOUNT_STATION_CLOSURE_PATH = MANUAL_DIR / "body_mount_station_closure_sheet.csv"
 BRAKE_SYSTEM_REQUIREMENTS_PATH = MANUAL_DIR / "brake_system_requirements.csv"
+HVAC_SYSTEM_REQUIREMENTS_PATH = MANUAL_DIR / "hvac_system_requirements.csv"
 FABRICATION_HANDOFF_REQUIREMENTS_PATH = MANUAL_DIR / "fabrication_handoff_requirements.csv"
 FABRICATION_RAW_MATERIAL_ESTIMATES_PATH = MANUAL_DIR / "fabrication_raw_material_estimates.csv"
 CHASSIS_BRACKET_ANALYSIS_REGISTER_PATH = MANUAL_DIR / "chassis_bracket_analysis_register_20260508.csv"
@@ -2108,6 +2109,7 @@ FABRICATION_DESIGN_LINKS_BY_PACKAGE: dict[str, list[tuple[str, str]]] = {
         ("data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html", "Interactive 3D visualisation"),
         ("data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg", "Static 3D visualisation"),
         ("data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg", "Chassis rubber location map SVG"),
+        ("data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_current_order_preview_rev_a.svg", "Current chassis rubber order preview SVG"),
         ("data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg", "Complete chassis rubber drawing preview SVG"),
         ("docs/bump-stop-fabrication-spec-20260504.md", "Bump-stop fabrication spec"),
         ("data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf", "Rubber dimension sheet PDF"),
@@ -2274,6 +2276,10 @@ FABRICATION_PACKAGE_VISUAL_LINKS: dict[str, list[tuple[str, str]]] = {
             "Chassis rubber location map",
         ),
         (
+            "data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_current_order_preview_rev_a.svg",
+            "Current chassis rubber order preview",
+        ),
+        (
             "data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
             "Complete chassis rubber drawing preview",
         ),
@@ -2290,6 +2296,10 @@ FABRICATION_PACKAGE_VISUAL_LINKS: dict[str, list[tuple[str, str]]] = {
         (
             "data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
             "Chassis rubber location map",
+        ),
+        (
+            "data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_current_order_preview_rev_a.svg",
+            "Current chassis rubber order preview",
         ),
         (
             "data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
@@ -9497,6 +9507,7 @@ def build_dashboard_data() -> dict[str, Any]:
     body_mount_release_action_rows = load_csv_optional(BODY_MOUNT_RELEASE_ACTIONS_PATH)
     body_mount_station_closure_rows = load_csv_optional(BODY_MOUNT_STATION_CLOSURE_PATH)
     brake_system_requirement_rows = load_csv_optional(BRAKE_SYSTEM_REQUIREMENTS_PATH)
+    hvac_system_requirement_rows = load_csv_optional(HVAC_SYSTEM_REQUIREMENTS_PATH)
     fabrication_requirement_rows = load_csv_optional(FABRICATION_HANDOFF_REQUIREMENTS_PATH)
     fabrication_raw_material_rows = load_csv_optional(FABRICATION_RAW_MATERIAL_ESTIMATES_PATH)
     chassis_bracket_register_rows = load_csv_optional(CHASSIS_BRACKET_ANALYSIS_REGISTER_PATH)
@@ -9658,6 +9669,13 @@ def build_dashboard_data() -> dict[str, Any]:
             requirements = build_workstream_requirements(chassis_rubber_requirement_rows, photo_rows)
         elif ws_id == "brake_system":
             requirements = build_workstream_requirements(brake_system_requirement_rows, photo_rows)
+        elif ws_id in {"interior_weatherproofing", "mechanical_baseline", "electrical_reset"}:
+            hvac_rows_for_workstream = [
+                requirement_row
+                for requirement_row in hvac_system_requirement_rows
+                if clean(requirement_row.get("workstream")) in {"", ws_id}
+            ]
+            requirements = build_workstream_requirements(hvac_rows_for_workstream, photo_rows)
         pipe_requirements = requirements if ws_id == "replacement_pipes" else []
         replacement_pipe_photo_intake = (
             replacement_pipe_photo_intake_payload(replacement_pipe_photo_intake_rows, photo_rows)
@@ -10146,6 +10164,7 @@ def build_dashboard_data() -> dict[str, Any]:
             "component_jobs": "data/manual/component_jobs.csv",
             "photo_inventory": "data/manual/photo_inventory.csv",
             "brake_system_requirements": "data/manual/brake_system_requirements.csv",
+            "hvac_system_requirements": "data/manual/hvac_system_requirements.csv",
             "fabrication_handoff_requirements": "data/manual/fabrication_handoff_requirements.csv",
             "fabrication_raw_material_estimates": "data/manual/fabrication_raw_material_estimates.csv",
             "chassis_bracket_analysis_register": "data/manual/chassis_bracket_analysis_register_20260508.csv",

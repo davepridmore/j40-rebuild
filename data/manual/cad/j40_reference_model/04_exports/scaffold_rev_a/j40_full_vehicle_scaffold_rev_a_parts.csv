@@ -1,0 +1,127 @@
+group,name,kind,x_mm,y_center_mm,z_mm,length_or_diameter_mm,width_mm,height_mm,confidence,notes
+chassis,left_frame_rail,box,360,-390,430,3140,85,120,L0 envelope,straight ladder-frame reference rail
+chassis,right_frame_rail,box,360,390,430,3140,85,120,L0 envelope,straight ladder-frame reference rail
+chassis,crossmember_1,box,450,0,455,85,880,95,L0 envelope,crossmember station placeholder
+chassis,crossmember_2,box,980,0,455,85,880,95,L0 envelope,crossmember station placeholder
+chassis,crossmember_3,box,1660,0,455,85,880,95,L0 envelope,crossmember station placeholder
+chassis,crossmember_4,box,2420,0,455,85,880,95,L0 envelope,crossmember station placeholder
+chassis,crossmember_5,box,3230,0,455,85,880,95,L0 envelope,crossmember station placeholder
+chassis,front_bumper,box,20,0,525,165,1620,120,L0 envelope,front bumper and tow-eye envelope
+chassis,rear_bumper,box,3665,0,530,145,1550,110,L0 envelope,rear bumper envelope
+chassis,front_left_tow_ring,cylinder_x,75,-430,450,115,28,,L1 visible-detail primitive,front bumper tow ring reference
+chassis,front_right_tow_ring,cylinder_x,75,430,450,115,28,,L1 visible-detail primitive,front bumper tow ring reference
+running_gear,front_axle_tube,box,735,0,395,90,1560,90,L0 envelope,front live axle tube envelope
+running_gear,rear_axle_tube,box,3020,0,395,90,1560,90,L0 envelope,rear live axle tube envelope
+running_gear,front_left_leaf_spring,box,215,-430,335,1050,65,55,L0 envelope,leaf spring pack envelope
+running_gear,front_right_leaf_spring,box,215,430,335,1050,65,55,L0 envelope,leaf spring pack envelope
+running_gear,rear_left_leaf_spring,box,2500,-430,335,1050,65,55,L0 envelope,leaf spring pack envelope
+running_gear,rear_right_leaf_spring,box,2500,430,335,1050,65,55,L0 envelope,leaf spring pack envelope
+running_gear,front_left_tire,wheel_cylinder,735,-705,395,790,250,,L0 envelope,"tire/wheel cylinder, nominal 31 inch class"
+running_gear,front_right_tire,wheel_cylinder,735,705,395,790,250,,L0 envelope,"tire/wheel cylinder, nominal 31 inch class"
+running_gear,rear_left_tire,wheel_cylinder,3020,-705,395,790,250,,L0 envelope,"tire/wheel cylinder, nominal 31 inch class"
+running_gear,rear_right_tire,wheel_cylinder,3020,705,395,790,250,,L0 envelope,"tire/wheel cylinder, nominal 31 inch class"
+running_gear,front_left_shock_body,cylinder_z,920,-520,620,58,460,,L1 visible-detail primitive,shock absorber body reference
+running_gear,front_right_shock_body,cylinder_z,920,520,620,58,460,,L1 visible-detail primitive,shock absorber body reference
+running_gear,front_left_hub_cap,cylinder_y,735,-840,395,220,80,,L1 visible-detail primitive,wheel hub cap detail
+running_gear,front_right_hub_cap,cylinder_y,735,840,395,220,80,,L1 visible-detail primitive,wheel hub cap detail
+running_gear,rear_left_shock_body,cylinder_z,3205,-520,620,58,460,,L1 visible-detail primitive,shock absorber body reference
+running_gear,rear_right_shock_body,cylinder_z,3205,520,620,58,460,,L1 visible-detail primitive,shock absorber body reference
+running_gear,rear_left_hub_cap,cylinder_y,3020,-840,395,220,80,,L1 visible-detail primitive,wheel hub cap detail
+running_gear,rear_right_hub_cap,cylinder_y,3020,840,395,220,80,,L1 visible-detail primitive,wheel hub cap detail
+body,floor_pan,box,890,0,615,2550,1330,55,L0 envelope,main floor and rear tub floor envelope
+body,left_rocker_sill,box,1000,-720,665,2050,95,155,L0 envelope,left rocker/sill envelope
+body,right_rocker_sill,box,1000,720,665,2050,95,155,L0 envelope,right rocker/sill envelope
+body,left_rear_quarter_panel,box,2140,-760,725,1270,70,610,L0 envelope,rear tub side panel below soft top
+body,right_rear_quarter_panel,box,2140,760,725,1270,70,610,L0 envelope,rear tub side panel below soft top
+body,tailgate_panel,box,3400,0,720,70,1430,650,L0 envelope,tailgate/rear body closing panel
+body,firewall,box,1135,0,690,80,1420,780,L0 envelope,firewall plane and cowl station
+body,cowl_top,box,1085,0,1260,190,1460,110,L0 envelope,scuttle/cowl top envelope
+body,grille_panel,box,170,0,790,80,1410,520,L0 envelope,front grille plane
+front_detail,white_grille_surround,box,125,0,795,35,1120,365,L0 envelope,white front grille surround visible in reference
+front_detail,black_grille_mesh,box,105,0,910,30,640,155,L0 envelope,black mesh grille area
+front_detail,left_headlamp,cylinder_x,92,-445,985,225,38,,L1 visible-detail primitive,round front headlamp
+front_detail,right_headlamp,cylinder_x,92,445,985,225,38,,L1 visible-detail primitive,round front headlamp
+front_detail,left_indicator_lamp,cylinder_x,84,-720,845,105,30,,L1 visible-detail primitive,front amber indicator
+front_detail,right_indicator_lamp,cylinder_x,84,720,845,105,30,,L1 visible-detail primitive,front amber indicator
+front_detail,left_fog_lamp,cylinder_x,25,-360,620,165,36,,L1 visible-detail primitive,bumper-mounted round fog lamp
+front_detail,right_fog_lamp,cylinder_x,25,360,620,165,36,,L1 visible-detail primitive,bumper-mounted round fog lamp
+body,hood_closed_reference,box,230,0,1215,920,1390,55,L0 envelope,closed hood reference envelope
+body,hood_open_visual_reference,box,420,0,1420,1180,1390,35,visual only,viewer shows hood open; this is a non-kinematic slab reference
+body,hood_left_hinge_axis,cylinder_y,1030,-540,1288,28,230,,L1 visible-detail primitive,hood hinge axis placeholder
+body,hood_right_hinge_axis,cylinder_y,1030,540,1288,28,230,,L1 visible-detail primitive,hood hinge axis placeholder
+body,left_front_fender,box,270,-720,760,860,270,260,L0 envelope,front wing/fender envelope
+body,right_front_fender,box,270,720,760,860,270,260,L0 envelope,front wing/fender envelope
+body,left_inner_fender,box,290,-520,800,800,70,420,L0 envelope,engine-bay inner fender placeholder
+body,right_inner_fender,box,290,520,800,800,70,420,L0 envelope,engine-bay inner fender placeholder
+body,windshield_frame,box,1155,0,1315,80,1480,520,L0 envelope,upright windshield frame envelope
+body,windshield_glass,box,1160,0,1380,35,1300,410,L0 envelope,transparent windshield opening reference
+body,windshield_left_wiper,cylinder_y,1110,-250,1370,24,430,,L1 visible-detail primitive,windshield wiper reference
+body,windshield_right_wiper,cylinder_y,1110,250,1370,24,430,,L1 visible-detail primitive,windshield wiper reference
+soft_top,canvas_roof,box,1210,0,1845,2290,1540,100,L0 envelope,soft-top roof envelope
+soft_top,left_canvas_side,box,1240,-790,1320,2200,55,590,L0 envelope,left soft-top side skin with window openings to be cut later
+soft_top,right_canvas_side,box,1240,790,1320,2200,55,590,L0 envelope,right soft-top side skin with window openings to be cut later
+soft_top,left_front_canvas_window,box,1370,-823,1430,500,18,320,L0 envelope,front side soft-top window aperture/glass reference
+soft_top,left_rear_canvas_window,box,2120,-823,1430,610,18,320,L0 envelope,rear side soft-top window aperture/glass reference
+soft_top,right_front_canvas_window,box,1370,823,1430,500,18,320,L0 envelope,front side soft-top window aperture/glass reference
+soft_top,right_rear_canvas_window,box,2120,823,1430,610,18,320,L0 envelope,rear side soft-top window aperture/glass reference
+soft_top,rear_canvas_panel,box,3440,0,1320,55,1540,590,L0 envelope,rear soft-top panel
+soft_top,front_soft_top_bow,box,1290,0,1740,45,1510,75,L0 envelope,soft-top bow/tube station
+soft_top,middle_soft_top_bow,box,1960,0,1740,45,1510,75,L0 envelope,soft-top bow/tube station
+soft_top,rear_soft_top_bow,box,2640,0,1740,45,1510,75,L0 envelope,soft-top bow/tube station
+soft_top,left_canvas_tie_down_1,box,1460,-835,1180,35,26,105,L0 envelope,soft-top tie-down strap visible on side
+soft_top,right_canvas_tie_down_1,box,1460,835,1180,35,26,105,L0 envelope,soft-top tie-down strap visible on side
+soft_top,left_canvas_tie_down_2,box,1740,-835,1180,35,26,105,L0 envelope,soft-top tie-down strap visible on side
+soft_top,right_canvas_tie_down_2,box,1740,835,1180,35,26,105,L0 envelope,soft-top tie-down strap visible on side
+soft_top,left_canvas_tie_down_3,box,2020,-835,1180,35,26,105,L0 envelope,soft-top tie-down strap visible on side
+soft_top,right_canvas_tie_down_3,box,2020,835,1180,35,26,105,L0 envelope,soft-top tie-down strap visible on side
+soft_top,left_canvas_tie_down_4,box,2300,-835,1180,35,26,105,L0 envelope,soft-top tie-down strap visible on side
+soft_top,right_canvas_tie_down_4,box,2300,835,1180,35,26,105,L0 envelope,soft-top tie-down strap visible on side
+soft_top,left_canvas_tie_down_5,box,2580,-835,1180,35,26,105,L0 envelope,soft-top tie-down strap visible on side
+soft_top,right_canvas_tie_down_5,box,2580,835,1180,35,26,105,L0 envelope,soft-top tie-down strap visible on side
+soft_top,left_canvas_tie_down_6,box,2860,-835,1180,35,26,105,L0 envelope,soft-top tie-down strap visible on side
+soft_top,right_canvas_tie_down_6,box,2860,835,1180,35,26,105,L0 envelope,soft-top tie-down strap visible on side
+soft_top,left_canvas_tie_down_7,box,3140,-835,1180,35,26,105,L0 envelope,soft-top tie-down strap visible on side
+soft_top,right_canvas_tie_down_7,box,3140,835,1180,35,26,105,L0 envelope,soft-top tie-down strap visible on side
+body,left_door_open_reference,box,1180,-910,760,800,70,850,visual only,viewer shows door open; final hinge arc requires real model/measurements
+body,right_door_closed_reference,box,1180,760,760,800,70,850,L0 envelope,right door closed envelope
+body,left_door_window_glass,box,1280,-948,1210,520,22,345,L0 envelope,open door window glass/reference aperture
+body,right_door_window_glass,box,1280,798,1210,520,22,345,L0 envelope,closed door window glass/reference aperture
+body,left_upper_door_hinge,cylinder_z,1135,-955,1180,38,145,,L1 visible-detail primitive,door hinge barrel reference
+body,left_lower_door_hinge,cylinder_z,1135,-955,850,38,145,,L1 visible-detail primitive,door hinge barrel reference
+body,right_upper_door_hinge,cylinder_z,1135,805,1180,38,145,,L1 visible-detail primitive,door hinge barrel reference
+body,right_lower_door_hinge,cylinder_z,1135,805,850,38,145,,L1 visible-detail primitive,door hinge barrel reference
+body,left_door_handle,box,1575,-955,1045,160,30,40,L0 envelope,door handle reference
+body,right_door_handle,box,1575,805,1045,160,30,40,L0 envelope,door handle reference
+engine_bay,engine_block,box,460,0,720,520,420,430,L0 envelope,inline-six engine block envelope
+engine_bay,valve_cover,box,510,0,1080,460,180,70,L0 envelope,visible valve cover reference
+engine_bay,radiator,box,235,0,820,75,980,520,L0 envelope,radiator support package
+engine_bay,air_filter,box,760,-235,1120,210,210,150,L0 envelope,air-filter canister envelope
+engine_bay,battery_tray_reference,box,600,430,760,330,220,220,L0 envelope,"battery/package reference, placement to verify"
+engine_bay,inline_six_intake_stack_1,cylinder_z,470,-165,1160,46,180,,L1 visible-detail primitive,inline-six visible engine top detail
+engine_bay,inline_six_intake_stack_2,cylinder_z,470,-99,1160,46,180,,L1 visible-detail primitive,inline-six visible engine top detail
+engine_bay,inline_six_intake_stack_3,cylinder_z,470,-33,1160,46,180,,L1 visible-detail primitive,inline-six visible engine top detail
+engine_bay,inline_six_intake_stack_4,cylinder_z,470,33,1160,46,180,,L1 visible-detail primitive,inline-six visible engine top detail
+engine_bay,inline_six_intake_stack_5,cylinder_z,470,99,1160,46,180,,L1 visible-detail primitive,inline-six visible engine top detail
+engine_bay,inline_six_intake_stack_6,cylinder_z,470,165,1160,46,180,,L1 visible-detail primitive,inline-six visible engine top detail
+engine_bay,upper_radiator_hose,cylinder_x,330,-185,1110,72,430,,L1 visible-detail primitive,upper radiator hose placeholder
+engine_bay,exhaust_downpipe_reference,cylinder_z,615,255,845,82,460,,L1 visible-detail primitive,engine bay pipe reference
+interior,dashboard,box,1235,0,1080,120,1320,220,L0 envelope,dashboard envelope from visible interior
+interior,steering_column,box,1315,-360,935,520,60,60,L0 envelope,"steering column envelope, left-hand-drive visual"
+interior,steering_wheel,cylinder_x,1240,-420,1210,380,32,,L1 visible-detail primitive,steering wheel disk placeholder
+interior,steering_wheel_hub,cylinder_x,1230,-420,1210,135,55,,L1 visible-detail primitive,steering wheel hub
+interior,dashboard_gauge_1,cylinder_x,1222,-560,1175,72,24,,L1 visible-detail primitive,round dashboard gauge
+interior,dashboard_gauge_2,cylinder_x,1222,-470,1175,72,24,,L1 visible-detail primitive,round dashboard gauge
+interior,dashboard_gauge_3,cylinder_x,1222,-380,1175,72,24,,L1 visible-detail primitive,round dashboard gauge
+interior,dashboard_gauge_4,cylinder_x,1222,-290,1175,72,24,,L1 visible-detail primitive,round dashboard gauge
+interior,transfer_case_lever,cylinder_z,1580,-120,820,36,285,,L1 visible-detail primitive,transfer-case lever
+interior,gearshift_lever,cylinder_z,1500,-35,820,38,330,,L1 visible-detail primitive,gearshift lever
+interior,front_left_seat_base,box,1660,-310,700,420,410,130,L0 envelope,front seat base
+interior,front_left_seat_back,box,1850,-310,820,95,410,620,L0 envelope,front seat back
+interior,front_left_headrest,cylinder_y,1905,-310,1435,150,300,,L1 visible-detail primitive,front headrest
+interior,front_right_seat_base,box,1660,310,700,420,410,130,L0 envelope,front seat base
+interior,front_right_seat_back,box,1850,310,820,95,410,620,L0 envelope,front seat back
+interior,front_right_headrest,cylinder_y,1905,310,1435,150,300,,L1 visible-detail primitive,front headrest
+interior,rear_bench_base,box,2510,0,720,610,1080,135,L0 envelope,rear bench lower cushion
+interior,rear_bench_back,box,2920,0,840,105,1080,560,L0 envelope,rear bench back
+interior,rear_bench_left_headrest,cylinder_y,2975,-350,1390,140,270,,L1 visible-detail primitive,rear headrest
+interior,rear_bench_right_headrest,cylinder_y,2975,350,1390,140,270,,L1 visible-detail primitive,rear headrest

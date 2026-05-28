@@ -1,0 +1,114 @@
+# J40 reference model auto-update loader for FreeCAD GUI.
+# Run this macro from FreeCAD to refresh repo-generated CAD files and load the view model.
+
+from pathlib import Path
+import subprocess
+
+import FreeCAD as App
+
+try:
+    import FreeCADGui as Gui
+except Exception:
+    Gui = None
+
+
+ROOT = Path("/Users/davidpridmore/IdeaProjects/J40")
+PYTHON = Path("/opt/homebrew/anaconda3/bin/python3")
+if not PYTHON.exists():
+    PYTHON = "python3"
+
+UPDATE_SCRIPT = ROOT / "scripts" / "update_j40_cad_reference.py"
+GENERATED_MACRO = (
+    ROOT
+    / "data"
+    / "manual"
+    / "cad"
+    / "j40_reference_model"
+    / "04_exports"
+    / "scaffold_rev_a"
+    / "j40_full_vehicle_scaffold_rev_a.FCMacro"
+)
+SOURCE_MESH_MACRO = (
+    ROOT
+    / "data"
+    / "manual"
+    / "cad"
+    / "j40_reference_model"
+    / "04_exports"
+    / "source_mesh_reference"
+    / "j40_source_mesh_reference.FCMacro"
+)
+STAMP_PATH = ROOT / "data" / "manual" / "cad" / "j40_reference_model" / "05_reports" / "j40_cad_reference_update_stamp.json"
+DOCUMENT_PREFIX = "j40_full_vehicle_scaffold_rev_a"
+AUTO_UPDATE_SECONDS = 30
+
+
+def stamp_text():
+    if not STAMP_PATH.exists():
+        return ""
+    return STAMP_PATH.read_text(encoding="utf-8")
+
+
+def close_existing_document():
+    for name in list(App.listDocuments().keys()):
+        if name.startswith(DOCUMENT_PREFIX):
+            App.closeDocument(name)
+
+
+def run_repo_update():
+    subprocess.run(
+        [str(PYTHON), str(UPDATE_SCRIPT), "--skip-if-unchanged"],
+        cwd=str(ROOT),
+        check=True,
+    )
+
+
+def load_generated_model():
+    if not GENERATED_MACRO.exists():
+        raise FileNotFoundError(f"Generated FreeCAD macro not found: {GENERATED_MACRO}")
+    close_existing_document()
+    code = GENERATED_MACRO.read_text(encoding="ascii")
+    exec(compile(code, str(GENERATED_MACRO), "exec"), globals(), globals())
+    if SOURCE_MESH_MACRO.exists():
+        mesh_code = SOURCE_MESH_MACRO.read_text(encoding="ascii")
+        exec(compile(mesh_code, str(SOURCE_MESH_MACRO), "exec"), globals(), globals())
+    if Gui is not None:
+        Gui.SendMsgToActiveView("ViewFit")
+
+
+def refresh_model(force=False):
+    before = stamp_text()
+    run_repo_update()
+    after = stamp_text()
+    if force or before != after:
+        load_generated_model()
+    App.Console.PrintMessage("J40 reference model is current.\\n")
+
+
+refresh_model(force=True)
+
+
+try:
+    from PySide6 import QtCore
+except Exception:
+    try:
+        from PySide2 import QtCore
+    except Exception:
+        QtCore = None
+
+
+if QtCore is not None:
+    timer = getattr(App, "J40ReferenceAutoUpdateTimer", None)
+    if timer is None:
+        timer = QtCore.QTimer()
+        App.J40ReferenceAutoUpdateTimer = timer
+    timer.stop()
+    try:
+        timer.timeout.disconnect()
+    except Exception:
+        pass
+    timer.timeout.connect(lambda: refresh_model(force=False))
+    timer.start(int(AUTO_UPDATE_SECONDS * 1000))
+    App.Console.PrintMessage(f"J40 auto-update timer running every {AUTO_UPDATE_SECONDS} seconds.\\n")
+else:
+    App.Console.PrintWarning("Qt timer unavailable; rerun the macro to refresh manually.\\n")

@@ -1,0 +1,15 @@
+00_inbox/*
+01_source_mesh/*
+02_mesh_clean/*
+03_freecad/*
+04_exports/*
+
+!00_inbox/.gitkeep
+!01_source_mesh/.gitkeep
+!02_mesh_clean/.gitkeep
+!03_freecad/.gitkeep
+!04_exports/.gitkeep
+!04_exports/scaffold_rev_a/
+!04_exports/scaffold_rev_a/*
+!04_exports/source_mesh_reference/
+!04_exports/source_mesh_reference/*

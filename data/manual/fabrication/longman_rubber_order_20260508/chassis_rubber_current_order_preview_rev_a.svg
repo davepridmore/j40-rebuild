@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Current chassis rubber order preview</title>
+  <desc id="desc">Preview sheet for the current Longman chassis rubber order: active quote and first-article lines only.</desc>
+  <rect width="1200" height="1200" fill="#f6f5f0"/>
+  <style>
+    .title { font: 700 28px Arial, sans-serif; fill: #111; }
+    .subtitle { font: 14px Arial, sans-serif; fill: #333; }
+    .panel { fill: #fff; stroke: #cfcac0; stroke-width: 1.4; rx: 8; }
+    .panel-title { font: 700 17px Arial, sans-serif; fill: #111; }
+    .label { font: 13px Arial, sans-serif; fill: #222; }
+    .small { font: 12px Arial, sans-serif; fill: #333; }
+    .tiny { font: 11px Arial, sans-serif; fill: #555; }
+    .rubber { fill: #17191d; stroke: #050505; stroke-width: 2; }
+    .rubber2 { fill: #2f3338; stroke: #050505; stroke-width: 1.5; }
+    .steel { fill: #a7adb2; stroke: #555; stroke-width: 1.5; }
+    .hole { fill: #fff; stroke: #c43a31; stroke-width: 3; }
+    .dim { stroke: #c43a31; stroke-width: 1.7; fill: none; marker-start: url(#arrow); marker-end: url(#arrow); }
+    .guide { stroke: #777; stroke-width: 1; stroke-dasharray: 4 4; }
+    .note-box { fill: #fff9e8; stroke: #d8c37c; stroke-width: 1.2; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse">
+      <path d="M0,0 L8,4 L0,8 z" fill="#c43a31"/>
+    </marker>
+  </defs>
+
+  <text x="34" y="44" class="title">Current Chassis Rubber Preview - Longman Order</text>
+  <text x="34" y="70" class="subtitle">Active quote / first-article lines only. Hold/reference items and separate steel hardware are excluded from this preview.</text>
+
+  <g transform="translate(34,100)">
+    <rect class="panel" x="0" y="0" width="348" height="190"/>
+    <text class="panel-title" x="18" y="30">BM-ISO-SM</text>
+    <text class="small" x="18" y="50">Main body isolator pad | qty 10 + 2 spares</text>
+    <rect class="rubber" x="66" y="74" width="88" height="88" rx="4"/>
+    <circle class="hole" cx="110" cy="118" r="13"/>
+    <line class="guide" x1="110" y1="74" x2="110" y2="162"/>
+    <line class="guide" x1="66" y1="118" x2="154" y2="118"/>
+    <rect class="rubber2" x="214" y="108" width="86" height="27" rx="3"/>
+    <line class="dim" x1="214" y1="146" x2="300" y2="146"/>
+    <text class="tiny" x="238" y="164">70 x 70 x 22</text>
+    <text class="tiny" x="76" y="178">18.0 mm bore</text>
+  </g>
+
+  <g transform="translate(426,100)">
+    <rect class="panel" x="0" y="0" width="348" height="190"/>
+    <text class="panel-title" x="18" y="30">BM-ISO-LG</text>
+    <text class="small" x="18" y="50">Main body isolator pad | qty 2 + 1 spare</text>
+    <rect class="rubber" x="60" y="68" width="100" height="100" rx="4"/>
+    <circle class="hole" cx="110" cy="118" r="13"/>
+    <line class="guide" x1="110" y1="68" x2="110" y2="168"/>
+    <line class="guide" x1="60" y1="118" x2="160" y2="118"/>
+    <rect class="rubber2" x="212" y="106" width="96" height="30" rx="3"/>
+    <line class="dim" x1="212" y1="148" x2="308" y2="148"/>
+    <text class="tiny" x="236" y="166">80 x 80 x 24</text>
+    <text class="tiny" x="76" y="180">18.0 mm bore</text>
+  </g>
+
+  <g transform="translate(818,100)">
+    <rect class="panel" x="0" y="0" width="348" height="190"/>
+    <text class="panel-title" x="18" y="30">FS-OVAL</text>
+    <text class="small" x="18" y="50">Front-support two-hole isolator pad | qty 2</text>
+    <rect class="rubber" x="72" y="70" width="150" height="82" rx="41"/>
+    <circle class="hole" cx="122" cy="111" r="11"/>
+    <circle class="hole" cx="172" cy="111" r="11"/>
+    <rect x="128" y="101" width="40" height="20" rx="4" fill="none" stroke="#8a5a00" stroke-width="2" stroke-dasharray="4 3"/>
+    <line class="dim" x1="122" y1="162" x2="172" y2="162"/>
+    <text class="tiny" x="119" y="178">96 x 64 x 15, holes at 64 mm centres</text>
+  </g>
+
+  <g transform="translate(34,328)">
+    <rect class="panel" x="0" y="0" width="740" height="190"/>
+    <text class="panel-title" x="18" y="30">FS-STRIP-L / FS-STRIP-R</text>
+    <text class="small" x="18" y="50">Underfloor body-support strip liners | qty 1 left + 1 right</text>
+    <rect class="rubber" x="48" y="92" width="604" height="54" rx="7"/>
+    <line class="guide" x1="48" y1="119" x2="652" y2="119"/>
+    <line class="dim" x1="48" y1="164" x2="652" y2="164"/>
+    <text class="label" x="294" y="184">420 L x 38 W x 8 T</text>
+    <text class="small" x="428" y="70">Plain first-article strips: no rubber holes or slots by default.</text>
+  </g>
+
+  <g transform="translate(818,328)">
+    <rect class="panel" x="0" y="0" width="348" height="190"/>
+    <text class="panel-title" x="18" y="30">BUMP-60010-LONG</text>
+    <text class="small" x="18" y="50">Front-left and both rear bump stops | qty 3</text>
+    <rect class="steel" x="72" y="76" width="170" height="18" rx="3"/>
+    <circle class="hole" cx="106" cy="85" r="8"/>
+    <circle class="hole" cx="208" cy="85" r="8"/>
+    <path class="rubber" d="M106 94 L208 94 L188 158 L126 158 Z"/>
+    <rect class="rubber2" x="134" y="158" width="46" height="14" rx="3"/>
+    <line class="dim" x1="262" y1="94" x2="262" y2="172"/>
+    <text class="label" x="276" y="137">70 H</text>
+    <text class="tiny" x="72" y="184">Rubber bonded/captive to supplied flat backing plate</text>
+  </g>
+
+  <g transform="translate(34,556)">
+    <rect class="panel" x="0" y="0" width="348" height="190"/>
+    <text class="panel-title" x="18" y="30">BUMP-60020-SHORT</text>
+    <text class="small" x="18" y="50">Right-front bump stop only | qty 1</text>
+    <rect class="steel" x="72" y="82" width="170" height="18" rx="3"/>
+    <circle class="hole" cx="108" cy="91" r="8"/>
+    <circle class="hole" cx="206" cy="91" r="8"/>
+    <path class="rubber" d="M110 100 L206 100 L188 154 L128 154 Z"/>
+    <rect class="rubber2" x="136" y="154" width="44" height="14" rx="3"/>
+    <line class="dim" x1="262" y1="100" x2="262" y2="168"/>
+    <text class="label" x="276" y="137">60 H</text>
+    <text class="tiny" x="68" y="184">Do not substitute a 70 mm long stop here</text>
+  </g>
+
+  <g transform="translate(426,556)">
+    <rect class="note-box" x="0" y="0" width="740" height="190" rx="8"/>
+    <text class="panel-title" x="18" y="32">Bump-stop flat backing piece rule</text>
+    <text class="small" x="18" y="60">The user will provide one flat metal backing/saddle piece with the request.</text>
+    <text class="small" x="18" y="82">Copy or reuse that piece for plate outline, thickness, hole/slot pattern,</text>
+    <text class="small" x="18" y="104">and rubber bond face.</text>
+    <text class="small" x="18" y="126">Rubber is bonded or mechanically captive to the flat plate. Mounting holes</text>
+    <text class="small" x="18" y="148">belong in the plate unless the supplied sample proves rubber clearance holes.</text>
+    <text class="tiny" x="18" y="170">Current active lines: BM-ISO-SM, BM-ISO-LG, FS-OVAL, FS-STRIP-L/R, BUMP-60010-LONG, BUMP-60020-SHORT.</text>
+  </g>
+</svg>

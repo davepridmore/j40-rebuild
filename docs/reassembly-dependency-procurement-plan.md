@@ -1,6 +1,6 @@
 # Reassembly, Dependency, and Procurement Plan
 
-- Generated: 2026-05-28 16:51:42
+- Generated: 2026-05-29 01:18:24
 - Work packages: `data/manual/reassembly_work_packages.csv`
 - Dependency edges: `data/manual/reassembly_dependency_edges.csv`
 - Component disposition: `data/manual/component_disposition_plan.csv`
@@ -26,7 +26,7 @@
 ## Procurement Decisions
 
 - `buy_for_baseline`: 1
-- `buy_now`: 13
+- `buy_now`: 5
 - `capture_body_hardware_samples_then_order`: 5
 - `capture_spec_then_buy`: 6
 - `confirm_order_state`: 5
@@ -35,9 +35,8 @@
 - `defer_optional`: 1
 - `hold_until_body_closed`: 1
 - `inspect_confirm_then_buy_standard`: 1
-- `release_hold_measure_then_order`: 1
 - `research_compare_then_select`: 1
-- `review`: 5
+- `review`: 4
 - `runner_spec_controlled`: 2
 - `track_ordered_delivery`: 8
 - `verify_stock_before_buy`: 3
@@ -48,7 +47,7 @@
 - `refurbish_send_out`: 4
 - `refurbish_service_subcomponents`: 2
 - `remove_nonbaseline_and_refit_clean`: 1
-- `review`: 59
+- `review`: 60
 
 ## Immediate Execution Focus
 

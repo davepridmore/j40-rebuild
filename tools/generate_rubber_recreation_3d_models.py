@@ -348,25 +348,40 @@ def bump_stop_scad(part_id: str, title: str, height: float, qty: str) -> tuple[M
         + f"""
 // Vehicle-measurement model:
 // - Height is the known Toyota-family control.
-// - This is a rubber-only stretch-fit bolt-on stop. There is no steel saddle
-//   or backing plate in the part.
-// - Rubber base footprint, bolt/stud pitch, relaxed hole or slot size, and
-//   strike offset must come from the cleaned vehicle bracket and axle strike pad.
-// - Default holes are relaxed undersize visual placeholders so the rubber can
-//   stretch over/around the bolts or studs during installation.
+// - The user will provide the one-piece flat metal backing/saddle with the
+//   fabrication request. Use it as the plate outline, hole pattern, and bond
+//   face pattern.
+// - Flat plate footprint, bolt/stud pitch, hole/thread size, and strike offset
+//   must be confirmed against the cleaned vehicle bracket and axle strike pad.
+// - Default holes are visual placeholders in the flat steel plate, not through
+//   the rubber.
 // - This model is a first-article conversation shape, not a released mould.
 
 module {module_name}(
   free_height = {height:g},
   top_length = 46,
   top_width = 30,
-  rubber_base_length = 82,
-  rubber_base_width = 48,
-  bolt_hole_pitch = 64,
-  relaxed_hole_d = 8.5,
-  stretch_slot_extra = 0
+  rubber_base_length = 70,
+  rubber_base_width = 40,
+  flat_plate_length = 82,
+  flat_plate_width = 48,
+  flat_plate_thickness = 4,
+  plate_hole_pitch = 64,
+  plate_hole_d = 10
 ) {{
-  difference() {{
+  union() {{
+    color("silver")
+      difference() {{
+        translate([0, 0, -flat_plate_thickness])
+          linear_extrude(height = flat_plate_thickness, center = false)
+            rounded_rect_2d([flat_plate_length, flat_plate_width], 3);
+
+        if (plate_hole_d > 0 && plate_hole_pitch > 0)
+          for (x = [-plate_hole_pitch / 2, plate_hole_pitch / 2])
+            translate([x, 0, -flat_plate_thickness - 1])
+              cylinder(h = flat_plate_thickness + 2, d = plate_hole_d);
+      }}
+
     color("black")
       hull() {{
         translate([0, 0, 0.5])
@@ -376,15 +391,6 @@ module {module_name}(
           linear_extrude(height = 1, center = false)
             rounded_rect_2d([top_length, top_width], 4);
       }}
-
-    if (relaxed_hole_d > 0 && bolt_hole_pitch > 0)
-      for (x = [-bolt_hole_pitch / 2, bolt_hole_pitch / 2])
-        translate([x, 0, -1])
-          if (stretch_slot_extra > 0)
-            linear_extrude(height = free_height + 2, center = false)
-              capsule_2d(relaxed_hole_d + stretch_slot_extra, relaxed_hole_d);
-          else
-            cylinder(h = free_height + 2, d = relaxed_hole_d);
   }}
 }}
 
@@ -396,11 +402,11 @@ module {module_name}(
         filename=filename,
         title=title,
         quantity=qty,
-        release_status="rubber-only stretch-fit measurement model; bracket dimensions, relaxed hole/slot size, and strike offset required before mould release",
-        controls=f"{height:g} mm free height known; rubber-only base footprint, stretch-fit through-hole/slot pitch, relaxed hole size, and strike geometry vehicle-controlled",
+        release_status="supplied-flat-plate measurement model; plate dimensions, bracket fit, and strike offset required before mould release",
+        controls=f"{height:g} mm free height known; supplied flat-plate outline/hole pattern, bond face, and strike geometry vehicle-controlled",
         old_part_questions=(
-            "Do not use decayed rubber as the master. Measure vehicle bracket landing length/width, bolt/stud pitch, bolt/stud diameter or head clearance, "
-            "relaxed rubber hole/slot size needed for stretch-fit installation, strike-pad offset, loaded gap, and safe near-full-bump clearance."
+            "Do not use decayed rubber as the master. Measure the supplied one-piece flat metal backing/saddle plate outline, thickness, hole pitch, hole/thread size, bond face, "
+            "vehicle bracket fit, strike-pad offset, loaded gap, and safe near-full-bump clearance."
         ),
     )
     return model, text
@@ -517,10 +523,10 @@ replace the 2D DXF/SVG/PDF pack or the CSV release gates.
   relief is real, blind, through-cut, or only deformation.
 - `FS-STRIP-L/R` default to no holes; retainer slots are separate steel detail
   unless the old rubber proves the rubber itself was pierced.
-- Bump-stop models are rubber-only stretch-fit measurement placeholders. Free
-  height is known, but rubber base footprint, bolt/stud pitch, relaxed
-  through-hole or slot size, and strike geometry must come from the cleaned
-  vehicle brackets and axle strike pads.
+- Bump-stop models are supplied-flat-plate measurement placeholders. Free
+  height is known, but the backing-plate outline, thickness, hole pattern, bond
+  face, and strike geometry must come from the supplied flat metal sample,
+  cleaned vehicle brackets, and axle strike pads.
 - The exhaust hanger model is hold-only until a sample or installed support
   measurements release thickness, side profile, and reinforcement detail.
 """

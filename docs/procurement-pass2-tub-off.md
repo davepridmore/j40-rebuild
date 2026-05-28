@@ -1,6 +1,6 @@
 # Procurement Pass 2 (Tub-Off, Pakistan Cost Reality)
 
-- Generated: 2026-05-28 16:51:42
+- Generated: 2026-05-29 01:18:28
 - Input matrix: `data/manual/procurement_decision_matrix.csv`
 - Pass-2 matrix: `data/manual/procurement_decision_matrix_pass2.csv`
 - Basket plan: `data/manual/procurement_local_baskets_pass2.csv`
@@ -14,10 +14,10 @@
 ## Decision Counts
 
 - `bundle_local_toyota_buy_after_inspection`: 10
-- `buy_body_fastener_hardware_from_samples`: 3
+- `buy_body_fastener_hardware_from_samples`: 2
 - `buy_compact_cabin_fuse_boxes`: 1
 - `buy_for_baseline`: 1
-- `buy_now`: 8
+- `buy_now`: 1
 - `capture_body_hardware_samples_then_order`: 5
 - `capture_brake_specs_then_order`: 6
 - `confirm_price_then_buy`: 8
@@ -27,8 +27,7 @@
 - `hold_until_body_closed`: 1
 - `longman_hose_pipe_order_ready`: 4
 - `open_inspect_then_order_standard_brake_parts`: 1
-- `release_hold_measure_then_order`: 1
-- `review`: 5
+- `review`: 4
 - `runner_spec_controlled`: 2
 - `source_toyota_oe_glow_plugs_by_part_number`: 1
 - `stock_audit_then_local_topup`: 3
@@ -36,7 +35,7 @@
 
 ## Timing Windows
 
-- `body_fastener_topup`: 3
+- `body_fastener_topup`: 2
 - `body_hardware_sample_sort`: 5
 - `body_sealed`: 1
 - `electrical_closeout`: 1
@@ -46,7 +45,7 @@
 - `post_baseline_only`: 6
 - `post_tub_off_inspection`: 11
 - `pre_order_audit`: 3
-- `review`: 23
+- `review`: 14
 - `runner_spec_controlled`: 2
 
 ## Immediate Actions (Now)

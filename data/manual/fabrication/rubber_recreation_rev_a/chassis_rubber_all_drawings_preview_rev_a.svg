@@ -117,10 +117,10 @@
       <text class="small" x="260" y="104">70 H</text>
       <path class="dim" d="M50 -18 L180 -18"/>
       <text class="small" x="88" y="-28">P measure</text>
-      <text class="tiny" x="20" y="-4">rubber stretch-fit holes/studs</text>
+      <text class="tiny" x="20" y="-4">flat backing-plate holes/studs</text>
     </g>
-    <text class="tiny" x="18" y="248">Red holes are relaxed rubber through-holes/slots that stretch over bolts/studs</text>
-    <text class="tiny" x="18" y="266">Saddle footprint, hole pitch, and strike offset release from cleaned brackets</text>
+    <text class="tiny" x="18" y="248">Red holes belong in the supplied flat backing plate, not the rubber</text>
+    <text class="tiny" x="18" y="266">Plate footprint, hole pitch, bond face, and strike offset release from supplied piece plus brackets</text>
   </g>
 
   <g transform="translate(464,388)">
@@ -137,9 +137,9 @@
       <text class="small" x="260" y="94">60 H</text>
       <path class="dim" d="M50 -18 L180 -18"/>
       <text class="small" x="88" y="-28">P measure</text>
-      <text class="tiny" x="20" y="-4">rubber stretch-fit holes/studs</text>
+      <text class="tiny" x="20" y="-4">flat backing-plate holes/studs</text>
     </g>
-    <text class="tiny" x="18" y="248">Red holes are relaxed rubber through-holes/slots that stretch over bolts/studs</text>
+    <text class="tiny" x="18" y="248">Red holes belong in the supplied flat backing plate, not the rubber</text>
     <text class="tiny" x="18" y="266">Do not substitute the 70 mm long-stop height here</text>
   </g>
 

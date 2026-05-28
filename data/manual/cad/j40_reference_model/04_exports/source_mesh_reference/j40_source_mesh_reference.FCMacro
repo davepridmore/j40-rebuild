@@ -1,0 +1,32 @@
+# Generated J40 source-mesh reference loader.
+# Run after the scaffold macro; it adds licensed source meshes to the active FreeCAD document.
+from pathlib import Path
+import FreeCAD as App
+import Mesh
+
+try:
+    import FreeCADGui as Gui
+except Exception:
+    Gui = None
+
+doc = App.ActiveDocument or App.newDocument('j40_source_mesh_reference')
+group = doc.getObject('licensed_source_mesh_reference')
+if group is None:
+    group = doc.addObject('App::DocumentObjectGroup', 'licensed_source_mesh_reference')
+
+def add_mesh(name, path):
+    if doc.getObject(name) is not None:
+        doc.removeObject(name)
+    obj = doc.addObject('Mesh::Feature', name)
+    obj.Mesh = Mesh.Mesh(str(path))
+    group.addObject(obj)
+    if hasattr(obj, 'ViewObject'):
+        obj.ViewObject.ShapeColor = (1.0, 0.72, 0.18)
+        obj.ViewObject.Transparency = 45
+    return obj
+
+App.Console.PrintMessage('No loadable J40 source mesh files found yet.\n')
+
+doc.recompute()
+if Gui is not None:
+    Gui.SendMsgToActiveView('ViewFit')

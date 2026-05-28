@@ -99,6 +99,7 @@ UI requirements table source: [brake_system_requirements.csv](../data/manual/bra
 
 The visible "wires" running to the rear brakes should be handled as brake safety hardware:
 - parking-brake / handbrake cables and linkage to the rear drum backing plates
+- parking-brake cable attachment hardware: clevis/equalizer pieces, return springs, pins, and clips
 - rear axle hydraulic hard brake lines
 - rear center frame-to-axle flexible brake hose
 - line clips, cable retainers, and protective sleeves/grommets

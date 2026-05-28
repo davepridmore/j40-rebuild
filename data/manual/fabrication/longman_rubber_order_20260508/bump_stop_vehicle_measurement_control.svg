@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540" role="img" aria-labelledby="title desc">
   <title id="title">J40 bump stop vehicle measurement control</title>
-  <desc id="desc">Measurement diagram for fabricating J40 rubber-only stretch-fit bump-stop rubbers from vehicle bracket and axle strike pad measurements.</desc>
+  <desc id="desc">Measurement diagram for fabricating J40 bump-stop rubber bonded or captive to the supplied one-piece flat steel backing plate.</desc>
   <rect width="900" height="540" fill="#f7f7f4"/>
   <style>
     .label { font: 15px Arial, sans-serif; fill: #222; }
@@ -47,8 +47,8 @@
   <line x1="190" y1="295" x2="190" y2="380" class="axis"/>
   <text x="203" y="350" class="small">strike-pad centreline</text>
 
-  <text x="496" y="88" class="label">Plan view at rubber base / vehicle bracket</text>
-  <text x="496" y="108" class="small">Red holes are relaxed rubber through-holes/slots; outer shape is rubber base footprint</text>
+  <text x="496" y="88" class="label">Plan view at supplied flat backing plate / vehicle bracket</text>
+  <text x="496" y="108" class="small">Red holes are flat-plate/bracket controls; black shape is rubber bond footprint</text>
   <rect x="500" y="130" width="282" height="136" rx="8" class="rubber"/>
   <rect x="585" y="160" width="112" height="76" rx="9" class="part"/>
   <text x="590" y="154" class="tiny">strike-face projection</text>
@@ -59,15 +59,15 @@
   <line x1="555" y1="181" x2="555" y2="215" class="hole-axis"/>
   <line x1="710" y1="198" x2="744" y2="198" class="hole-axis"/>
   <line x1="727" y1="181" x2="727" y2="215" class="hole-axis"/>
-  <text x="525" y="239" class="tiny">stretch-fit hole / stud 1</text>
-  <text x="685" y="239" class="tiny">stretch-fit hole / stud 2</text>
+  <text x="525" y="239" class="tiny">flat-plate hole / stud 1</text>
+  <text x="685" y="239" class="tiny">flat-plate hole / stud 2</text>
 
   <path d="M555 105 L727 105" class="dim"/>
   <text x="620" y="96" class="label">P</text>
   <text x="586" y="119" class="small">hole pitch, centre to centre</text>
   <path d="M555 284 L585 284" class="dim"/>
   <text x="563" y="307" class="label">D</text>
-  <text x="500" y="326" class="small">D = relaxed rubber hole/slot size released from the fitted bolt/stud</text>
+  <text x="500" y="326" class="small">D = flat-plate hole or fitted bolt/stud thread size</text>
   <path d="M588 279 C596 248 578 217 560 203" class="callout"/>
 
   <path d="M500 352 L782 352" class="dim"/>
@@ -76,8 +76,8 @@
   <text x="819" y="204" class="label">BW</text>
 
   <rect x="54" y="440" width="792" height="82" rx="6" class="callout-box"/>
-  <text x="72" y="462" class="small">The two red circles are relaxed rubber holes/slots that stretch over/around vehicle bolts or studs. Measure P and D from the bracket and fastener.</text>
-  <text x="72" y="480" class="small">The black plan shape is the rubber base footprint; no steel saddle or backing plate is part of the bump stop.</text>
-  <text x="72" y="498" class="small">Do not copy torn rubber or rusted remnants. Release BL/BW/P/D/X-Y/G/F from cleaned brackets and axle strike pads.</text>
+  <text x="72" y="462" class="small">The user will provide one flat metal backing/saddle piece with the request; copy or reuse it for plate outline, holes, and bond face.</text>
+  <text x="72" y="480" class="small">The rubber is bonded/captive to that flat plate. Do not put mounting holes through the rubber unless the supplied sample proves them.</text>
+  <text x="72" y="498" class="small">Do not copy torn rubber or rusted remnants. Release BL/BW/P/D/X-Y/G/F from the supplied flat plate, cleaned brackets, and axle strike pads.</text>
   <text x="72" y="516" class="small">Height H: 70 +/-1 mm for BUMP-60010 long stops, 60 +/-1 mm for BUMP-60020 right front.</text>
 </svg>
