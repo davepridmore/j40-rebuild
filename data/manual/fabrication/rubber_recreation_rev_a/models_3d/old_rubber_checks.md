@@ -35,7 +35,7 @@ landing footprint, and one dry-fit stack check.
 - `FS-OVAL`: Confirm hole centre spacing, hole diameter, thickness, insert/boss OD, whether insert is bonded or loose, and whether the 36 x 18 relief is real or just deformation.
 - `FS-STRIP-L`: Check whether old rubber has any real pierced holes or only retainer marks, whether ends are square or trimmed, actual thickness, and whether left/right are identical.
 - `FS-STRIP-R`: Check whether old rubber has any real pierced holes or only retainer marks, whether ends are square or trimmed, actual thickness, and whether left/right are identical.
-- `B-60010-LONG`: Do not use decayed rubber as the master. Measure bracket landing length/width, bolt pitch, bolt/hole size, strike-pad offset, loaded gap, and safe near-full-bump clearance.
-- `B-60020-SHORT`: Do not use decayed rubber as the master. Measure bracket landing length/width, bolt pitch, bolt/hole size, strike-pad offset, loaded gap, and safe near-full-bump clearance.
-- `B-60010-REAR-PAIR`: Do not use decayed rubber as the master. Measure bracket landing length/width, bolt pitch, bolt/hole size, strike-pad offset, loaded gap, and safe near-full-bump clearance.
+- `B-60010-LONG`: Do not use decayed rubber as the master. Measure bracket landing length/width, steel-saddle bolt pitch, bolt/hole size, strike-pad offset, loaded gap, and safe near-full-bump clearance.
+- `B-60020-SHORT`: Do not use decayed rubber as the master. Measure bracket landing length/width, steel-saddle bolt pitch, bolt/hole size, strike-pad offset, loaded gap, and safe near-full-bump clearance.
+- `B-60010-REAR-PAIR`: Do not use decayed rubber as the master. Measure bracket landing length/width, steel-saddle bolt pitch, bolt/hole size, strike-pad offset, loaded gap, and safe near-full-bump clearance.
 - `EXH-HGR-90917`: If an old hanger exists, measure thickness, top hole, lower slot, side profile, reinforcement/insert, and installed pin/bracket spacing.

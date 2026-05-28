@@ -34,7 +34,7 @@ Use it with:
 - `fs_oval_front_support_pad_rev_a.dxf` / `fs_oval_front_support_pad_rev_a.svg` - FS-OVAL front support two-hole isolator pad, qty 2 matched pieces
 - `fs_strip_left_template_blank_rev_a.dxf` / `fs_strip_left_template_blank_rev_a.svg` - FS-STRIP-L underfloor body-support strip first-article blank, qty 1
 - `fs_strip_right_template_blank_rev_a.dxf` / `fs_strip_right_template_blank_rev_a.svg` - FS-STRIP-R underfloor body-support strip first-article blank, qty 1
-- `bump_stop_vehicle_measurement_control.dxf` / `bump_stop_vehicle_measurement_control.svg` - BUMP-F-L/F-R/R vehicle-measurement control drawing for saddle holes, pitch, and height; not a final mould/cut profile
+- `bump_stop_vehicle_measurement_control.dxf` / `bump_stop_vehicle_measurement_control.svg` - BUMP-F-L/F-R/R vehicle-measurement control drawing for steel-saddle holes, pitch, and height; not a final mould/cut profile
 - `exh_hgr_90917_08004_teardrop_rev_a.dxf` / `exh_hgr_90917_08004_teardrop_rev_a.svg` - EXH-HGR-90917 teardrop exhaust cushion, qty as fitted
 
 ## Layer Rules
@@ -56,7 +56,7 @@ The strip rubber geometry is released as plain `165 x 38 x 8 mm` left/right firs
 
 The exhaust holder is controlled as a teardrop cushion style using Toyota `90917-08004` / `17572-92000` only as a reference shape. Source exact new molded stock if it is in hand; otherwise the CAD file is a local-copy control and needs a genuine sample or intact original before a production mould is cut.
 
-Bump stops cannot rely on Toyota/manufacturer supply and the old rubbers are too decayed to copy. Public OEM/catalog sources checked confirm the Toyota numbers, application, and `70 mm`/`60 mm` height split, but not the Toyota mould drawing, compound recipe, or load/deflection curve. Use `docs/bump-stop-fabrication-spec-20260504.md`: long `48304-60010` positions are `70 mm` free height, the right-front `48304-60020` is `60 mm` free height, and all base footprints, bolt/stud patterns, and contact offsets are released from the actual cleaned vehicle brackets and axle strike pads. A NOS/genuine sample is the preferred master if found; otherwise reproduce the Toyota-style two-ear steel saddle/backing plate, tapered/radiused progressive rubber body, and flat rectangular strike face. Do not make bump stops from simple cut rubber blocks.
+Bump stops cannot rely on Toyota/manufacturer supply and the old rubbers are too decayed to copy. Public OEM/catalog sources checked confirm the Toyota numbers, application, and `70 mm`/`60 mm` height split, but not the Toyota mould drawing, compound recipe, or load/deflection curve. Use `docs/bump-stop-fabrication-spec-20260504.md`: long `48304-60010` positions are `70 mm` free height, the right-front `48304-60020` is `60 mm` free height, and all base footprints, steel-saddle bolt/stud patterns, and contact offsets are released from the actual cleaned vehicle brackets and axle strike pads. A NOS/genuine sample is the preferred master if found; otherwise reproduce the Toyota-style two-ear steel saddle/backing plate, tapered/radiused progressive rubber body, and flat rectangular strike face. Do not make bump stops from simple cut rubber blocks, and do not add rubber through-holes unless a genuine sample proves them.
 
 ## Material
 

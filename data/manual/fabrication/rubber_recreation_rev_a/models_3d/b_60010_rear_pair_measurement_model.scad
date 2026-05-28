@@ -59,6 +59,8 @@ module chamfered_extrude(height, edge_chamfer = 0) {
 // - Height is the known Toyota-family control.
 // - Saddle length/width, bolt pitch, bolt diameter, and strike offset must come
 //   from the cleaned vehicle bracket and axle strike pad.
+// - Mounting holes are only in the steel saddle; do not add rubber through-holes
+//   unless a genuine sample proves molded clearance holes.
 // - This model is a first-article conversation shape, not a released mould.
 
 module b_60010_rear_pair_measurement_model(

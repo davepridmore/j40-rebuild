@@ -83,9 +83,9 @@ The decayed old rubber is not the master. Release these values from the actual b
 
 Geometry release rules:
 
-- The two saddle mounting holes are controlled by `P` and `D` on `data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg` / `.dxf`. These drawings are measurement controls only; they are not a released final cut profile until the actual bracket values are recorded.
+- The two saddle mounting holes are controlled by `P` and `D` on `data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg` / `.dxf`. These are steel saddle/backing-plate holes, not released holes through the rubber body. These drawings are measurement controls only; they are not a released final cut profile until the actual bracket values are recorded.
 - Base footprint: `BL x BW` from the vehicle bracket, with `0.5-1.0 mm` edge clearance so the part fits without grinding the bracket.
-- Mounting holes/studs: use vehicle `P` and `D`; hole location tolerance `+/-0.5 mm`; hole diameter `+0.5/-0.0 mm` for clearance holes.
+- Mounting holes/studs: use vehicle `P` and `D` on the steel saddle ears; hole location tolerance `+/-0.5 mm`; hole diameter `+0.5/-0.0 mm` for clearance holes. Do not drill or punch matching through-holes in the rubber unless a genuine sample proves molded clearance holes are part of the construction.
 - Rubber height: `70 +/-1 mm` for `BUMP-60010-FL` and both `BUMP-60010-R`; `60 +/-1 mm` for `BUMP-60020-FR`.
 - Matched rear pair: rear left and rear right free height must match within `1 mm`, and hardness readings must be within `5 Shore A`.
 - Contact face: centred on the axle strike pad within `+/-5 mm`; face must be radiused/tapered, not a sharp-edged block.

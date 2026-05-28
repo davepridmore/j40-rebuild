@@ -117,7 +117,9 @@
       <text class="small" x="260" y="104">70 H</text>
       <path class="dim" d="M50 -18 L180 -18"/>
       <text class="small" x="88" y="-28">P measure</text>
+      <text class="tiny" x="20" y="-4">holes in steel saddle ears</text>
     </g>
+    <text class="tiny" x="18" y="248">Red holes are steel saddle holes, not released rubber through-holes</text>
     <text class="tiny" x="18" y="266">Base, hole pitch, and strike offset release from cleaned brackets</text>
   </g>
 
@@ -135,7 +137,9 @@
       <text class="small" x="260" y="94">60 H</text>
       <path class="dim" d="M50 -18 L180 -18"/>
       <text class="small" x="88" y="-28">P measure</text>
+      <text class="tiny" x="20" y="-4">holes in steel saddle ears</text>
     </g>
+    <text class="tiny" x="18" y="248">Red holes are steel saddle holes, not released rubber through-holes</text>
     <text class="tiny" x="18" y="266">Do not substitute the 70 mm long-stop height here</text>
   </g>
 

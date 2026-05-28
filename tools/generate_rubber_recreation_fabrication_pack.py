@@ -705,7 +705,7 @@ def write_cut_list(drawings: Sequence[Drawing]) -> None:
                 "none",
                 "bump_stop_vehicle_measurement_control.svg",
                 "vehicle measurement release required before mould; 70 mm external height known",
-                "Use vehicle BL/BW/P/D/X-Y/G/F values; reproduce Toyota-style two-ear steel saddle, tapered/radiused progressive body, and flat strike face; make one first article before full set; no simple cut block.",
+                "Use vehicle BL/BW/P/D/X-Y/G/F values; reproduce Toyota-style two-ear steel saddle, tapered/radiused progressive body, and flat strike face; make one first article before full set; no simple cut block. The DXF is a steel-saddle measurement/control drawing only, not a final rubber cut profile.",
             ],
             [
                 "BUMP-F-R",
@@ -716,7 +716,7 @@ def write_cut_list(drawings: Sequence[Drawing]) -> None:
                 "none",
                 "bump_stop_vehicle_measurement_control.svg",
                 "vehicle measurement release required before mould; 60 mm external height known",
-                "Right front is the short 60 mm Toyota-style stop with steel saddle. Reject 70 mm right-front substitutes unless full-bump test releases trimming.",
+                "Right front is the short 60 mm Toyota-style stop with steel saddle. Reject 70 mm right-front substitutes unless full-bump test releases trimming. The DXF is a steel-saddle measurement/control drawing only, not a final rubber cut profile.",
             ],
             [
                 "BUMP-R",
@@ -727,7 +727,7 @@ def write_cut_list(drawings: Sequence[Drawing]) -> None:
                 "none",
                 "bump_stop_vehicle_measurement_control.svg",
                 "vehicle measurement release required before mould; 70 mm external height known",
-                "Make as matched Toyota-style rear pair with steel saddles, tapered/radiused progressive bodies, height match <=1 mm, and hardness spread <=5 Shore A.",
+                "Make as matched Toyota-style rear pair with steel saddles, tapered/radiused progressive bodies, height match <=1 mm, and hardness spread <=5 Shore A. The DXF is a steel-saddle measurement/control drawing only, not a final rubber cut profile.",
             ],
         ]
     )
@@ -750,18 +750,18 @@ def write_inspection_sheet() -> None:
         ("BM-SHIM-THICK", "thickness labels, hole/slot match, station map need, deburred edges, coating", "cut/buy only if station map proves need; no washer towers"),
         (
             "BUMP-F-L",
-            "70 mm free height, Toyota-style steel saddle/two-ear holes, tapered progressive body, flat strike face, vehicle bracket footprint, bolt/stud pitch, contact face offset, hardness, full-bump engagement, 50 percent compression recovery",
-            "height 70 +/-1; holes +/-0.5; contact centred +/-5; seats flat; saddle does not bend; rubber/steel bond or captive joint stays intact; engages before shock/tyre/spring/brake-hose or metal hard limit",
+            "70 mm free height, Toyota-style steel saddle/two-ear saddle holes, tapered progressive body, flat strike face, vehicle bracket footprint, bolt/stud pitch, contact face offset, hardness, full-bump engagement, 50 percent compression recovery",
+            "height 70 +/-1; steel saddle holes +/-0.5; no rubber through-holes unless sample-proven; contact centred +/-5; seats flat; saddle does not bend; rubber/steel bond or captive joint stays intact; engages before shock/tyre/spring/brake-hose or metal hard limit",
         ),
         (
             "BUMP-F-R",
-            "60 mm free height, Toyota-style steel saddle/two-ear holes, tapered progressive body, flat strike face, right-front bracket footprint, bolt/stud pitch, contact face offset, hardness, full-bump engagement, 50 percent compression recovery",
-            "height 60 +/-1; holes +/-0.5; contact centred +/-5; saddle does not bend; rubber/steel bond or captive joint stays intact; reject 70 mm right-front substitute unless vehicle test releases trimming",
+            "60 mm free height, Toyota-style steel saddle/two-ear saddle holes, tapered progressive body, flat strike face, right-front bracket footprint, bolt/stud pitch, contact face offset, hardness, full-bump engagement, 50 percent compression recovery",
+            "height 60 +/-1; steel saddle holes +/-0.5; no rubber through-holes unless sample-proven; contact centred +/-5; saddle does not bend; rubber/steel bond or captive joint stays intact; reject 70 mm right-front substitute unless vehicle test releases trimming",
         ),
         (
             "BUMP-R",
-            "70 mm free height pair, Toyota-style steel saddles/two-ear holes, tapered progressive bodies, flat strike faces, rear bracket footprints, bolt/stud pitch, contact face offsets, hardness match, full-bump engagement, 50 percent compression recovery",
-            "height 70 +/-1; rear pair height match <=1; hardness spread <=5 Shore A; saddles do not bend; rubber/steel bonds or captive joints stay intact; contacts before hard limits; no universal unmatched pair",
+            "70 mm free height pair, Toyota-style steel saddles/two-ear saddle holes, tapered progressive bodies, flat strike faces, rear bracket footprints, bolt/stud pitch, contact face offsets, hardness match, full-bump engagement, 50 percent compression recovery",
+            "height 70 +/-1; rear pair height match <=1; hardness spread <=5 Shore A; steel saddle holes +/-0.5; no rubber through-holes unless sample-proven; saddles do not bend; rubber/steel bonds or captive joints stay intact; contacts before hard limits; no universal unmatched pair",
         ),
     ]
     header = "part_id,inspect_features,acceptance\n"
@@ -898,9 +898,9 @@ def machine_definition_rows() -> list[dict[str, str]]:
             "machine_route": "vehicle-bracket-controlled mould/cast Toyota-style progressive bump stop with steel saddle; not CNC-cut",
             "machine_files": "bump_stop_vehicle_measurement_control.svg",
             "coordinate_system": "vehicle bracket and axle strike pad in mm; old rubber is not the master; NOS/genuine part preferred if obtainable",
-            "exact_definition_mm": "Toyota reference 48304-60010 long stop; target free height 70 +/-1; reproduce Toyota-style two-ear steel saddle/backing plate and tapered/radiused rubber body from reference image or NOS sample; release base footprint from vehicle BL x BW with 0.5-1.0 edge clearance; release bolt/stud pitch P and hole/thread D from bracket; flat rectangular contact face centred on axle strike pad within +/-5; no square block",
+            "exact_definition_mm": "Toyota reference 48304-60010 long stop; target free height 70 +/-1; reproduce Toyota-style two-ear steel saddle/backing plate and tapered/radiused rubber body from reference image or NOS sample; release base footprint from vehicle BL x BW with 0.5-1.0 edge clearance; release steel-saddle bolt/stud pitch P and hole/thread D from bracket; do not add rubber through-holes unless sample-proven; flat rectangular contact face centred on axle strike pad within +/-5; no square block",
             "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5 bonded or captive to new deburred coated steel saddle preferred; cast automotive PU Shore A 80 +/-5 acceptable only with same progressive shape and captive steel mounting",
-            "tolerance": "height +/-1; base and hole location +/-0.5 after vehicle release; clearance holes +0.5/-0.0; contact centre +/-5; steel saddle must not bend; rubber/steel bond or captive joint must survive compression",
+            "tolerance": "height +/-1; steel-saddle base and hole location +/-0.5 after vehicle release; clearance holes +0.5/-0.0; contact centre +/-5; steel saddle must not bend; rubber/steel bond or captive joint must survive compression",
             "release_status": "vehicle-measurement release required before mould; exact external height known",
             "shop_note": "Fabricator must supply side/profile sketch, saddle hole layout, material declaration, and one first article; verify flat bracket seating, hand bolt fit, loaded/full-bump contact, and 50 percent compression recovery before full set.",
         },
@@ -910,9 +910,9 @@ def machine_definition_rows() -> list[dict[str, str]]:
             "machine_route": "vehicle-bracket-controlled mould/cast Toyota-style short right-front bump stop with steel saddle; not CNC-cut",
             "machine_files": "bump_stop_vehicle_measurement_control.svg",
             "coordinate_system": "vehicle right-front bracket and axle strike pad in mm; old rubber is not the master; NOS/genuine part preferred if obtainable",
-            "exact_definition_mm": "Toyota reference 48304-60020 short right-front stop; target free height 60 +/-1; reproduce Toyota-style two-ear steel saddle/backing plate and tapered/radiused rubber body from reference image or NOS sample; do not use 70 mm long-stop height here; release base footprint from right-front vehicle BL x BW with 0.5-1.0 edge clearance; release bolt/stud pitch P and hole/thread D from bracket; flat rectangular contact face centred on axle strike pad within +/-5",
+            "exact_definition_mm": "Toyota reference 48304-60020 short right-front stop; target free height 60 +/-1; reproduce Toyota-style two-ear steel saddle/backing plate and tapered/radiused rubber body from reference image or NOS sample; do not use 70 mm long-stop height here; release base footprint from right-front vehicle BL x BW with 0.5-1.0 edge clearance; release steel-saddle bolt/stud pitch P and hole/thread D from bracket; do not add rubber through-holes unless sample-proven; flat rectangular contact face centred on axle strike pad within +/-5",
             "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5 bonded or captive to new deburred coated steel saddle preferred; cast automotive PU Shore A 80 +/-5 acceptable only with same progressive shape and captive steel mounting",
-            "tolerance": "height +/-1; base and hole location +/-0.5 after vehicle release; clearance holes +0.5/-0.0; contact centre +/-5; steel saddle must not bend; rubber/steel bond or captive joint must survive compression",
+            "tolerance": "height +/-1; steel-saddle base and hole location +/-0.5 after vehicle release; clearance holes +0.5/-0.0; contact centre +/-5; steel saddle must not bend; rubber/steel bond or captive joint must survive compression",
             "release_status": "vehicle-measurement release required before mould; exact external height known",
             "shop_note": "Reject aftermarket or locally made right-front stops at 70 mm unless deliberately trimmed and released by a full-bump clearance test.",
         },
@@ -922,9 +922,9 @@ def machine_definition_rows() -> list[dict[str, str]]:
             "machine_route": "vehicle-bracket-controlled mould/cast Toyota-style progressive matched rear bump-stop pair with steel saddles; not CNC-cut",
             "machine_files": "bump_stop_vehicle_measurement_control.svg",
             "coordinate_system": "vehicle rear brackets and axle strike pads in mm; old rubber is not the master; NOS/genuine part preferred if obtainable",
-            "exact_definition_mm": "Toyota reference 48304-60010 long stop; target free height 70 +/-1 for both rear stops; reproduce Toyota-style two-ear steel saddle/backing plate and tapered/radiused rubber body from reference image or NOS sample; release each rear base footprint from vehicle BL x BW with 0.5-1.0 edge clearance; release bolt/stud pitch P and hole/thread D from brackets; flat rectangular contact faces centred on rear axle strike pads within +/-5; matched progressive pair",
+            "exact_definition_mm": "Toyota reference 48304-60010 long stop; target free height 70 +/-1 for both rear stops; reproduce Toyota-style two-ear steel saddle/backing plate and tapered/radiused rubber body from reference image or NOS sample; release each rear base footprint from vehicle BL x BW with 0.5-1.0 edge clearance; release steel-saddle bolt/stud pitch P and hole/thread D from brackets; do not add rubber through-holes unless sample-proven; flat rectangular contact faces centred on rear axle strike pads within +/-5; matched progressive pair",
             "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5 bonded or captive to new deburred coated steel saddles preferred; cast automotive PU Shore A 80 +/-5 acceptable only with same progressive shape and captive steel mounting",
-            "tolerance": "height +/-1; rear pair height match <=1; hardness spread <=5 Shore A; base and hole location +/-0.5 after vehicle release; contact centre +/-5; steel saddles must not bend; rubber/steel bonds or captive joints must survive compression",
+            "tolerance": "height +/-1; rear pair height match <=1; hardness spread <=5 Shore A; steel-saddle base and hole location +/-0.5 after vehicle release; contact centre +/-5; steel saddles must not bend; rubber/steel bonds or captive joints must survive compression",
             "release_status": "vehicle-measurement release required before mould; exact external height known",
             "shop_note": "Make as matched rear pair after final ride height and axle travel checks; reject universal unmatched rear stops and simple cut blocks.",
         },
@@ -1008,7 +1008,7 @@ The strip files are not final production cut patterns. They define stock envelop
 
 The exhaust holder is controlled as a teardrop cushion style using Toyota `90917-08004` / `17572-92000` only as a reference shape. Source exact new molded stock if it is in hand; otherwise the CAD file is a local-copy control and needs a genuine sample or intact original before a production mould is cut.
 
-Bump stops cannot rely on Toyota/manufacturer supply and the old rubbers are too decayed to copy. Public OEM/catalog sources checked confirm the Toyota numbers, application, and `70 mm`/`60 mm` height split, but not the Toyota mould drawing, compound recipe, or load/deflection curve. Use `docs/bump-stop-fabrication-spec-20260504.md`: long `48304-60010` positions are `70 mm` free height, the right-front `48304-60020` is `60 mm` free height, and all base footprints, bolt/stud patterns, and contact offsets are released from the actual cleaned vehicle brackets and axle strike pads. A NOS/genuine sample is the preferred master if found; otherwise reproduce the Toyota-style two-ear steel saddle/backing plate, tapered/radiused progressive rubber body, and flat rectangular strike face. Do not make bump stops from simple cut rubber blocks.
+Bump stops cannot rely on Toyota/manufacturer supply and the old rubbers are too decayed to copy. Public OEM/catalog sources checked confirm the Toyota numbers, application, and `70 mm`/`60 mm` height split, but not the Toyota mould drawing, compound recipe, or load/deflection curve. Use `docs/bump-stop-fabrication-spec-20260504.md`: long `48304-60010` positions are `70 mm` free height, the right-front `48304-60020` is `60 mm` free height, and all base footprints, steel-saddle bolt/stud patterns, and contact offsets are released from the actual cleaned vehicle brackets and axle strike pads. A NOS/genuine sample is the preferred master if found; otherwise reproduce the Toyota-style two-ear steel saddle/backing plate, tapered/radiused progressive rubber body, and flat rectangular strike face. Do not make bump stops from simple cut rubber blocks, and do not add rubber through-holes unless a genuine sample proves them.
 
 ## Material
 

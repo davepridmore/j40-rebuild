@@ -350,6 +350,8 @@ def bump_stop_scad(part_id: str, title: str, height: float, qty: str) -> tuple[M
 // - Height is the known Toyota-family control.
 // - Saddle length/width, bolt pitch, bolt diameter, and strike offset must come
 //   from the cleaned vehicle bracket and axle strike pad.
+// - Mounting holes are only in the steel saddle; do not add rubber through-holes
+//   unless a genuine sample proves molded clearance holes.
 // - This model is a first-article conversation shape, not a released mould.
 
 module {module_name}(
@@ -394,9 +396,9 @@ module {module_name}(
         title=title,
         quantity=qty,
         release_status="measurement model only; bracket dimensions and strike offset required before mould release",
-        controls=f"{height:g} mm free height known; saddle/base/bolt/strike geometry vehicle-controlled",
+        controls=f"{height:g} mm free height known; steel-saddle/base/bolt/strike geometry vehicle-controlled",
         old_part_questions=(
-            "Do not use decayed rubber as the master. Measure bracket landing length/width, bolt pitch, bolt/hole size, strike-pad offset, "
+            "Do not use decayed rubber as the master. Measure bracket landing length/width, steel-saddle bolt pitch, bolt/hole size, strike-pad offset, "
             "loaded gap, and safe near-full-bump clearance."
         ),
     )
