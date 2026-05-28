@@ -6,7 +6,7 @@ For the sendable Longman Mills quote/manufacturing request, use [Longman Pipe An
 
 For the next actual-photo pass, use [Hose And Pipe Photo Capture Guide](hose-pipe-photo-capture-guide-20260504.md).
 
-Current release position: standard HJ47/2H and diesel-service sizes are accepted as the Longman quote basis for new molded coolant hoses, overflow hose, heater hose stock, diesel feed/return/leak-off hose stock, vacuum hose stock, breather hose stock, 8 mm / 6 mm low-pressure fuel hard-line stock, brake hydraulic lines, and clutch hydraulic line/hose stock. The May 2 tape-reference photos plus the physical sample are accepted for new formed-coolant-pipe quote/template release.
+Current release position: standard HJ47/2H and diesel-service sizes are accepted as the Longman quote basis for new molded coolant hoses, overflow hose, heater hose stock, diesel feed/return/leak-off hose stock, vacuum hose stock, breather hose stock, 8 mm / 6 mm low-pressure fuel hard-line stock, brake hydraulic lines, and clutch hydraulic line/hose stock. The May 2 tape-reference photos plus the physical sample are accepted for new formed-coolant-pipe quote/template release; the May 29 larger-pipe detail photos add supplemental tape, OD/end, connector-hose, clamp, and clip evidence.
 
 Hydraulic safety and final installation checks stay separate: brake/clutch flex fittings, flare/thread identification, route clearance, pressure/bleed tests, fuel prime leak test, coolant pressure test, vacuum assist check, and chafe checks still close at dry-fit/install.
 
@@ -24,8 +24,8 @@ Keep tool purchases outside the hose order. Rubber hose is cut to length, molded
 | `RPO-COOL-002` | Molded EPDM lower radiator hose for HJ47/2H route. Toyota `16572-68020` and Dayco `DMH1343` / `CH1343` are shape references only. Published molded free length is `480 mm`; do not substitute straight hose by length alone. | `1` molded hose, `480 mm` | Radiator lower outlet OD, engine/water-pump inlet OD, hose OD for clamps, old-hose free length if available, lower bend clearance. | `COOL-A` |
 | `RPO-COOL-003` | Small EPDM coolant overflow hose from radiator neck to reserve bottle. | `1000 mm` hose, cut to route; OE reference length `600 mm` | Radiator overflow nipple OD, bottle nipple OD, finished route length, clip/clamp size. | `COOL-B` |
 | `RPO-COOL-004A/B` | EPDM heater hose, SAE J20R3 or better. Use `16 mm / 5/8 in` ID exact order basis. | `400 mm` inlet + `280 mm` outlet, or `1000 mm` stock to cut | Engine heater nipple OD, heater-core nipple OD, route lengths, clamp OD, rear-heater presence. | `COOL-C` |
-| `RPO-COOL-005` | Fabricate formed metal coolant/radiator pipe from the physical sample. Use coolant-compatible mild steel/aluminized steel or 304 stainless tube. Match OD, wall, bends, clocking, offsets, beaded ends, clamp lands, and hose overlap. | `750 mm` minimum tube blank; quote `1000 mm` stock if sold by meter/foot | Final centerline length from sample, tube OD, hose ID, wall thickness target `1.2-1.6 mm`, bend centerlines/radii/clocking, bead height target `1.5-2.0 mm` unless sample differs, clamp land length, fan/belt/radiator/body clearance. | `COOL-D` |
-| `RPO-COOL-006A/B` | Two new EPDM coolant/radiator connector hoses for the formed pipe. Use `28-30 mm` ID exact order basis. Use straight hose only if it does not kink; otherwise match new molded EPDM connector shape. | `2 x 500 mm` connector blanks, or `1000 mm` total stock | Pipe-end OD and bead, mating spigot OD, connector free/cut length, hose ID/OD, overlap, clamp band width, bend/kink clearance. | `COOL-D` |
+| `RPO-COOL-005` | Fabricate formed metal coolant/radiator pipe from the physical sample. Use coolant-compatible mild steel/aluminized steel or 304 stainless tube. Match OD, wall, bends, clocking, offsets, beaded ends, clamp lands, and hose overlap. The old metal pipe is a replaceable pattern part. | `750 mm` minimum tube blank; quote `1000 mm` stock if sold by meter/foot | Final centerline length from sample, tube OD, hose ID, wall thickness target `1.2-1.6 mm`, bend centerlines/radii/clocking, bead height target `1.5-2.0 mm` unless sample differs, clamp land length, fan/belt/radiator/body clearance. | `COOL-D` |
+| `RPO-COOL-006A/B` | Two new EPDM coolant/radiator connector hoses for the formed pipe. Use `28-30 mm` ID exact order basis. Use straight hose only if it does not kink; otherwise match new molded EPDM connector shape. Old connector hoses are pattern parts only. | `2 x 500 mm` connector blanks, or `1000 mm` total stock | Pipe-end OD and bead, mating spigot OD, connector free/cut length, hose ID/OD, overlap, clamp band width, bend/kink clearance. | `COOL-D` |
 | `RPO-FUEL-001A` | Diesel-rated feed hose for the measured tank/chassis-to-engine feed route, SAE J30R9 / J30R14T2 / DIN 73379-3E or equivalent. | `8 mm ID x 1500 mm` buy length; measured fitted route about `1200 mm` | Tank/line end OD, fuel-filter barb OD, injection-pump feed barb OD, cut length, hose OD for rolled-edge fuel-injection clamps, and chassis chafe/support. | `FUEL-A` |
 | `RPO-FUEL-001B` | Diesel-rated return/bleed hose, same rating family as above. | `6 mm ID x 2000 mm` | Pump/filter return barb ODs, cut lengths, hose OD for clamps. | `FUEL-A` |
 | `RPO-FUEL-001C` | Braided diesel injector leak-off hose. | `3.2-3.5 mm ID x 1000 mm` | Injector nipple OD, cap/end arrangement, sample hose markings. | `FUEL-A` |
@@ -47,6 +47,7 @@ Keep tool purchases outside the hose order. Rubber hose is cut to length, molded
 - Do not buy generic brake or clutch hose; hydraulic flex hoses must be complete crimped assemblies copied from the old sample or matched to the fitted vehicle.
 - Do not coat the fabricated coolant pipe until it passes bench pressure test and vehicle dry-fit.
 - Replace the formed-pipe rubber connector hoses with new hose.
+- Treat the old formed pipe, connector hoses, clamps, and clips as patterns only; final installation uses new parts.
 - Use smooth-band or constant-tension clamps on coolant hoses and rolled-edge fuel-injection clamps on diesel hoses.
 - Use rubber-lined P-clips for permanent hard-line support; do not use cable ties as permanent fuel/brake/clutch line supports.
 
@@ -89,6 +90,29 @@ Additional reference media from the May 3 intake has been added below. Use these
 - `photos/20260503_155928_gp_ZQtxQutA.jpg`
 - `photos/20260503_160207_gp_43b3TblQ.jpg`
 - `photos/20260503_160327_gp_sFtQuWNQ.jpg`
+- `photos/20260528_194853_gp_SiEb7xTg.jpg`
+- `photos/20260528_235330_gp_8pOmnEbg.jpg`
+- `photos/20260529_000622_gp_aczV4kWw.jpg`
+- `photos/20260529_000631_gp_7jTtagVw.jpg`
+- `photos/20260529_000708_gp_v6oy8EoQ.jpg`
+- `photos/20260529_000819_gp_5K6MappA.jpg`
+- `photos/20260529_000845_gp_rCMaZnuQ.jpg`
+- `photos/20260529_000900_gp_l80pweOg.jpg`
+- `photos/20260529_000927_gp_FglexncA.jpg`
+- `photos/20260529_000937_gp_tOgeiKMA.jpg`
+- `photos/20260529_001147_gp_xgjmTrKA.jpg`
+- `photos/20260529_001202_gp_gUOaC2CQ.jpg`
+- `photos/20260529_001210_gp_K0lLPuiQ.jpg`
+- `photos/20260529_001216_gp_cUgYf9LQ.jpg`
+- `photos/20260529_001228_gp_8P9UMIyw.jpg`
+- `photos/20260529_001235_gp_cxaEgJjQ.jpg`
+- `photos/20260529_001240_gp_26AghY0A.jpg`
+- `photos/20260529_001559_gp_V5ZiapwQ.jpg`
+- `photos/20260529_001729_gp_F6cQxjvA.jpg`
+- `photos/20260529_001836_gp_uC5iIpCg.jpg`
+- `photos/20260529_001935_gp_LwIHTzsw.jpg`
+- `photos/20260529_002027_gp_cnAzdBgw.jpg`
+- `photos/20260529_002130_gp_4oyuazFg.jpg`
 
 ### `FUEL-A` Diesel Feed, Return, Leak-Off, And Measurement Context
 
