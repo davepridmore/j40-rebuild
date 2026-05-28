@@ -11,11 +11,23 @@ Longman site references:
 - https://www.longman.com.pk/about-us/
 - https://www.longman.com.pk/automobile-parts/
 
+## Release Position - 2026-05-28
+
+The old-rubber photos and ruler measurements are accepted as the dimensional basis for quote and first articles. The remaining open items are station fit and stack-release checks, not missing rubber dimensions.
+
+Use this distinction:
+
+- `Released for quote / first article`: Longman can quote and make the part from the dimensions in this spec.
+- `Station fit pending`: before full production or final trimming, the mechanic must map the part to its vehicle position and confirm footprint, sleeve/cup/shim stack, and dry-fit compression.
+- `Hold`: do not quote or fabricate until a real sample, installed position, or full-length trace is identified.
+
+For this Longman order, `BM-ISO-SM`, `BM-ISO-LG`, `FS-OVAL`, `FS-STRIP-L`, and `FS-STRIP-R` are released for quote and first article. The two bump-stop families are released for first-article discussion on height and Toyota-style construction, but their base, bolt pattern, and strike-face offsets remain vehicle-measured before mould release. `BODY-LINER-FULL-WIDTH-HOLD` and `EXH-HGR-90917` remain hold-only.
+
 ## Copy/Paste Request
 
 Need quote and manufacturing advice for custom new rubber parts for an older Toyota Land Cruiser J40 restoration. The body-to-chassis pieces are simple flat isolator pads, not precision socket-matched bushings. For the custom order, use square flat pads as the preferred shape because there is no visible molded chassis/tub socket that needs a round outside profile. The important controls are installed height, sleeve/hole fit, rubber firmness, flat bearing area, and no overhang onto bends, seams, weld lips, or thin/rusted edges.
 
-Please quote the required installed parts below, plus optional spares where listed. Rubber must be new black solid automotive mount-grade compound. No tyre rubber, crumb rubber, sponge/foam, EVA, recycled offcuts, used rubber, or unknown old stock.
+Please quote the required rubber parts below, plus optional spares where listed. The measured old-rubber dimensions are the quote and first-article basis. Rubber must be new black solid automotive mount-grade compound. No tyre rubber, crumb rubber, sponge/foam, EVA, recycled offcuts, used rubber, or unknown old stock.
 
 For the body/front-support isolators, target hardness is Shore A 60 +/-5. For axle bump stops, target hardness is Shore A 70 +/-5 rubber with the same progressive shape and captive/bonded steel mounting.
 
@@ -34,6 +46,19 @@ Steel body-mount washers/cups, sleeves, shims, bolts, and fasteners are not part
 | `BUMP-60020-SHORT` | Short right-front axle-to-chassis bump stop | `1` | `0` | Toyota-style progressive stop with new two-ear steel saddle/backing plate and flat rectangular strike face. | `60 H mm` released; saddle/base `L x W`, bolt pitch, and strike-face `X/Y` are vehicle-measured before mould release. | Tapered/radiused rubber body; no sharp rectangular block edges; saddle edges deburred/coated. | Same vehicle-controlled hole/base/contact rules as long stop. | Same compound family as long stops. |
 | `BODY-LINER-FULL-WIDTH-HOLD` | Long/full-width flat body or panel liner strips | Hold | Hold | Not yet captured as orderable pieces. Quote only after the actual strips are found or the body/chassis station proves a continuous flat anti-squeak liner is required. | Hold: needs measured `L x W x T` and any holes/slots from actual piece or installed path. | Hold: edge radius/chamfer, end trim, and slot edges must come from actual trace. | Needs full-length trace, holes/slots, side/orientation labels, and installed location photos. | EPDM or NR/SBR flat strip, hardness by function after location is confirmed. |
 | `EXH-HGR-90917` | Exhaust teardrop hanger cushion | Hold | Hold | Optional later teardrop rubber-metal exhaust cushion only if sample or installed geometry releases final shape. | Hold target `48 W x 86 H x 22 T mm`; top hole `9 mm`; lower hanger slot `16 x 22 mm` unless sample proves otherwise. | Radiused teardrop perimeter; clean radiused hole/slot edges; reinforcement/insert detail sample-controlled. | Needs old/genuine sample, installed support-point measurements, or a proper tracing before quoting production. | Heat/vibration-resistant exhaust-hanger rubber, Shore A `60 +/-5`. |
+
+## Release Status Summary
+
+| ID | Dimensional status | What can happen now | What must close before final production/install |
+| --- | --- | --- | --- |
+| `BM-ISO-SM` | Released from measured sample/photo basis and current square-pad envelope. | Quote and make one first article or the quoted batch with first-article signoff. | Confirm station count, landing footprint, sleeve/cup/shim stack, and dry-fit compression. |
+| `BM-ISO-LG` | Released from measured sample/photo basis and current square-pad envelope. | Quote and make one first article or the quoted pair/spare with first-article signoff. | Confirm which station uses the large pair, landing footprint, sleeve/cup/shim stack, and dry-fit compression. |
+| `FS-OVAL` | Released for quote/first article from the measured old front-support pad dimensions. | Quote and make one first article. | Caliper-check physical sample for hole centres, thickness, insert/boss, and whether the relief is real before making final pair. |
+| `FS-STRIP-L/R` | Released for first article from May 17 measured old strips and installed-location photos. | Quote and make plain `165 x 38 x 8 mm` first articles. | Dry-fit on actual landings; apply only proven end trim; trace/reuse steel retainers separately. |
+| `BUMP-60010-LONG` | Height and Toyota-style construction released; base/holes/contact are not released. | Quote/advice and one `70 mm` first article after vehicle bracket measurements. | Measure BL/BW/P/D/X-Y/G/F on vehicle and pass compression/fit tests. |
+| `BUMP-60020-SHORT` | Height and Toyota-style construction released; base/holes/contact are not released. | Quote/advice and one `60 mm` first article after vehicle bracket measurements. | Measure right-front BL/BW/P/D/X-Y/G/F and pass compression/fit tests. |
+| `BODY-LINER-FULL-WIDTH-HOLD` | Not released. | No supplier action. | Find the actual long/full-width strip or prove the installed path and dimensions. |
+| `EXH-HGR-90917` | Reference shape only. | No Longman production unless a sample or installed support geometry is available. | Sample/trace thickness, insert/reinforcement, pin/slot geometry, and exhaust support alignment. |
 
 ## Body Isolator Rules
 

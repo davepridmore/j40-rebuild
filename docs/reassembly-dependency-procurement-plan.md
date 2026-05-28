@@ -1,6 +1,6 @@
 # Reassembly, Dependency, and Procurement Plan
 
-- Generated: 2026-05-28 01:24:03
+- Generated: 2026-05-28 16:51:42
 - Work packages: `data/manual/reassembly_work_packages.csv`
 - Dependency edges: `data/manual/reassembly_dependency_edges.csv`
 - Component disposition: `data/manual/component_disposition_plan.csv`
@@ -29,6 +29,7 @@
 - `buy_now`: 13
 - `capture_body_hardware_samples_then_order`: 5
 - `capture_spec_then_buy`: 6
+- `confirm_order_state`: 5
 - `confirm_price_then_buy`: 22
 - `defer_duplicate_overlap`: 4
 - `defer_optional`: 1
@@ -37,8 +38,8 @@
 - `release_hold_measure_then_order`: 1
 - `research_compare_then_select`: 1
 - `review`: 5
-- `runner_spec_controlled`: 3
-- `track_ordered_delivery`: 9
+- `runner_spec_controlled`: 2
+- `track_ordered_delivery`: 8
 - `verify_stock_before_buy`: 3
 
 ## Component Reuse/Refurbish Decisions

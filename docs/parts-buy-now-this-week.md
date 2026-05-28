@@ -1,19 +1,19 @@
 # Parts Buy-Now Plan (This Week)
 
-- Generated: 2026-05-28 01:23:37
+- Generated: 2026-05-28 16:51:41
 - Source ledger: `data/manual/expenses.csv` (`bucket=parts`)
 - Overlap resolution table: `data/manual/parts_overlap_resolution.csv`
 - This-week list: `data/manual/parts_buy_now_this_week.csv`
 
 ## This-Week Counts
 
-- Rows in this-week list: 35
+- Rows in this-week list: 34
 - `confirm_price_then_order`: 25
-- `track_delivery`: 10
+- `track_delivery`: 9
 
 ## Priority Split
 
-- `P0`: 17
+- `P0`: 16
 - `P1`: 12
 - `P2`: 6
 
@@ -23,7 +23,7 @@
 - `grommet_options`: keep `part_rubber_grommet_set|part_firewall_grommet_set_small_medium|part_firewall_grommet_set_large_power`; defer/suppress `quote_rubber_grommet_set_chat`
 - `wire_sleeving_options`: keep `part_cable_sleeve_protection|part_split_conduit_braided_sleeve_small|part_split_conduit_braided_sleeve_medium|part_split_conduit_braided_sleeve_large`; defer/suppress `none`
 - `switch_options`: keep `none`; defer/suppress `part_horn_relay|part_spotlight_switch|part_winch_switch`
-- `millat_fastener_order_duplicates`: keep `part_fastener_kit_d_millat`; defer/suppress `part_star_washers`
+- `millat_fastener_order_duplicates`: keep `part_fastener_kit_d_millat|part_star_washers`; defer/suppress `none`
 - `floor_finish_stack`: keep `part_bedliner_sprays`; defer/suppress `part_bed_lining|part_sound_dampening_sheets|part_foam|part_carpet`
 - `primer_system_stack`: keep `part_primer|part_seam_sealer|part_wax_and_grease_remover`; defer/suppress `part_self_etching_primer|part_epoxy_primer`
 
@@ -55,11 +55,10 @@
   - `part_hvac_hidden_evaporator_blower_unit_20260514` [P2] Hidden compact evaporator/blower/heater/defrost unit for under-dash fitment (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_hvac_return_air_grille_filter_20260514` [P2] Hidden return-air grille and washable filter for evaporator intake (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
   - `part_hvac_slim_louver_outlet_panel_20260514` [P2] Slim under-dash louver outlet panel / matched air-directing vent pieces (price: price_tbd; order_date: 2026-05-14; delivery_eta: delivery_date_tbd; delivery_status: not_ordered; payment_status: not_paid)
-- `track_delivery` (10):
+- `track_delivery` (9):
   - `part_fastener_kit_a_millat` [P0] Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves (price: price_tbd; order_date: 2026-04-18; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: paid)
   - `part_fastener_kit_b_millat` [P0] Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers (price: price_tbd; order_date: 2026-04-18; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: paid)
   - `part_fastener_kit_e_millat` [P0] Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60 (price: 1880 PKR; order_date: 2026-04-18; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: paid)
-  - `part_brake_clutch_475_hard_line_stock_full_vehicle_20260514` [P0] Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (price: price_tbd; order_date: 2026-05-27; delivery_eta: delivery_date_tbd; delivery_status: pending_delivery; payment_status: unknown)
   - `part_brake_master_reservoir_refresh` [P0] Brake master cylinder candidate order - ULTIMA UFM-1041 x2; reservoir/proportioning still inspect (price: 12596 PKR; order_date: 2026-05-25; delivery_eta: after_eid_vendor_note_no_exact_date; delivery_status: pending_delivery; payment_status: unknown)
   - `part_clutch_master_slave_cylinders_20260514` [P0] Clutch master cylinder candidate order - Trupart FM-1246; slave cylinder still inspect (price: 3700 PKR; order_date: 2026-05-25; delivery_eta: after_eid_vendor_note_no_exact_date; delivery_status: pending_delivery; payment_status: unknown)
   - `part_rear_brake_shoes_hardware` [P0] Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (price: 33600 PKR; order_date: 2026-05-25; delivery_eta: after_eid_vendor_note_no_exact_date; delivery_status: pending_delivery; payment_status: unknown)

@@ -128,6 +128,14 @@ def pass2_decision(row: dict[str, str], wiring_stock_count: int, wiring_connecto
             "Already ordered; do not rebuy.",
         )
 
+    if prior == "confirm_order_state" or procurement_stage in {"needs_confirmation", "received_candidate"}:
+        return (
+            "confirm_procured_receipt",
+            "in_flight_now",
+            "receipt_quality_check",
+            "Procured or received-candidate item; verify receipt, quantity, and spec/fit before using or closing the row.",
+        )
+
     if procurement_stage == "runner_quote_photo_only" or prior == "runner_quote_photo_only":
         return (
             "runner_quote_photo_only",
@@ -372,6 +380,8 @@ def supplier_hint(mode: str, decision: str) -> str:
         return "No supplier action now."
     if decision == "track_in_flight_order":
         return "Already ordered; track delivery, receipt condition, and quantity/spec match before use."
+    if decision == "confirm_procured_receipt":
+        return "Procured/received-candidate item; check receipt, quantity, condition, and fit/spec before use."
     if decision == "capture_body_hardware_samples_then_order":
         return "Use Bilal Ganj/body hardware, rubber trim, fastener, or machine-shop suppliers after old samples are sorted and measured."
     if decision == "buy_body_fastener_hardware_from_samples":
@@ -426,6 +436,8 @@ def basket_id_for_row(decision: str, mode: str, workstream: str) -> str:
     if decision == "defer_until_mount_failure_or_engine_lift_scope":
         return "basket_engine_mounts_later_if_failed"
     if decision == "track_in_flight_order":
+        return "basket_in_flight_tracking"
+    if decision == "confirm_procured_receipt":
         return "basket_in_flight_tracking"
     if decision == "completed_or_received":
         return "basket_completed_receipts"

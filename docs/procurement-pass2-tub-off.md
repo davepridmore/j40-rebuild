@@ -1,6 +1,6 @@
 # Procurement Pass 2 (Tub-Off, Pakistan Cost Reality)
 
-- Generated: 2026-05-28 01:24:03
+- Generated: 2026-05-28 16:51:42
 - Input matrix: `data/manual/procurement_decision_matrix.csv`
 - Pass-2 matrix: `data/manual/procurement_decision_matrix_pass2.csv`
 - Basket plan: `data/manual/procurement_local_baskets_pass2.csv`
@@ -21,6 +21,7 @@
 - `capture_body_hardware_samples_then_order`: 5
 - `capture_brake_specs_then_order`: 6
 - `confirm_price_then_buy`: 8
+- `confirm_procured_receipt`: 5
 - `defer_as_non_baseline`: 5
 - `defer_until_baseline_closure`: 1
 - `hold_until_body_closed`: 1
@@ -28,10 +29,10 @@
 - `open_inspect_then_order_standard_brake_parts`: 1
 - `release_hold_measure_then_order`: 1
 - `review`: 5
-- `runner_spec_controlled`: 3
+- `runner_spec_controlled`: 2
 - `source_toyota_oe_glow_plugs_by_part_number`: 1
 - `stock_audit_then_local_topup`: 3
-- `track_in_flight_order`: 9
+- `track_in_flight_order`: 8
 
 ## Timing Windows
 
@@ -39,21 +40,20 @@
 - `body_hardware_sample_sort`: 5
 - `body_sealed`: 1
 - `electrical_closeout`: 1
-- `in_flight_now`: 9
+- `in_flight_now`: 13
 - `longman_mills_quote_pack`: 4
 - `merged_suspension_brake_window`: 7
 - `post_baseline_only`: 6
 - `post_tub_off_inspection`: 11
 - `pre_order_audit`: 3
 - `review`: 23
-- `runner_spec_controlled`: 3
+- `runner_spec_controlled`: 2
 
 ## Immediate Actions (Now)
 
 - `part_fastener_kit_a_millat` Fastener Kit A: Tub-to-chassis mounts (OEM positions) - M10/M12 class 8.8 bolts, matching nuts, flat+spring washers, sleeves -> track_in_flight_order
 - `part_fastener_kit_b_millat` Fastener Kit B: Body panel/bracket hardware - M6/M8 class 8.8 flange bolts, nyloc nuts, washers -> track_in_flight_order
 - `part_fastener_kit_e_millat` Millat order #38902 metric screw pack - M10x20 x20, M6x16 x60, M6x12 x120, M8x16 x60 -> track_in_flight_order
-- `part_brake_clutch_475_hard_line_stock_full_vehicle_20260514` Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred -> track_in_flight_order
 - `part_brake_master_reservoir_refresh` Brake master cylinder candidate order - ULTIMA UFM-1041 x2; reservoir/proportioning still inspect -> track_in_flight_order
 - `part_rear_brake_shoes_hardware` Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate -> track_in_flight_order
 - `part_daraz_cable_clip_clamp_assortment_20260527` Daraz cable support clamp assortment - 2/3mm wire-rope clamps x10 and 304 stainless PV cable clips x10 -> track_in_flight_order

@@ -63,9 +63,9 @@ OVERLAP_DECISIONS: tuple[OverlapDecision, ...] = (
     ),
     OverlapDecision(
         group_id="millat_fastener_order_duplicates",
-        chosen_entries=("part_fastener_kit_d_millat",),
-        deferred_entries=("part_star_washers",),
-        rationale="Incoming Millat Fastener Kit D covers the M6/M8/M10 star/serrated grounding washers; suppress the separate Amir/local star-washer top-up unless the physical Millat receipt count proves short.",
+        chosen_entries=("part_fastener_kit_d_millat", "part_star_washers"),
+        deferred_entries=(),
+        rationale="Track both sources: Millat Fastener Kit D remains in flight, and the user confirmed Amir procured the standalone M6/M8/M10 star-washer pack. Reconcile physical counts after receipt instead of suppressing the Amir pack.",
     ),
     OverlapDecision(
         group_id="floor_finish_stack",

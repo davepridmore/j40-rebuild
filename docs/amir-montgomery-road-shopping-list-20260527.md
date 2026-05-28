@@ -20,14 +20,26 @@ Actual J40 brake fitting references:
 
 ![Metric flare-nut wrench reference](../deliverables/selling_site_images/images/expenses_metric_flare_nut_brake_line_wrench_set_9b3134d651f7.webp)
 
-## Buy Now
+## Procured By Amir - Receipt Check
 
-Millat/MTL order update: do not buy local M6/M8/M10 star or serrated grounding washers now. Incoming Fastener Kit D covers that stock. Reopen only if the physical Millat receipt count is short.
+User clarification 2026-05-28: mark these items as procured by Amir. They are no longer open shopping-list buys, but they still need receipt/spec checks before use.
 
 | Priority | Item | Quantity | Exact ask | Accept | Reject / call first |
 | --- | ---: | ---: | --- | --- | --- |
+| P0 | M6 star / lock washers | 120 | M6 serrated/star lock washer pack | Plated or stainless, sharp/clean bite teeth | Flat washers, split spring washers sold as star washers, rusty stock |
+| P0 | M8 star / lock washers | 60 | M8 serrated/star lock washer pack | Plated or stainless, sharp/clean bite teeth | Flat washers, split spring washers sold as star washers, rusty stock |
+| P0 | M10 star / lock washers | 30 | Treat the user's `M2-` entry as the existing M10 grounding-washer line | Plated or stainless, sharp/clean bite teeth | M2 hardware unless explicitly re-confirmed; rusty stock |
 | P0 | 3 lb sledge / club hammer | 1 | 3 lb short-handle sledge hammer | Tight head, solid fiberglass/steel/wood handle | Loose head, cracked handle, toy/light hammer |
-| P0 | Brake hard-line tube | 25 ft minimum; 10-12 m if cheap | `4.75 mm / 3/16 in` automotive brake pipe, double-wall Bundy steel, zinc/PVF/galvanized coated | Brake-rated steel Bundy tube; CuNi/Cunifer if good and brake-rated | Bare copper, plumbing tube, unknown tube, stainless if shop cannot flare it |
+| P0 | Brake hard-line tube | 25 ft | `4.75 mm / 3/16 in` automotive brake pipe, double-wall Bundy steel, zinc/PVF/galvanized coated | Brake-rated steel Bundy tube; CuNi/Cunifer if good and brake-rated | Bare copper, plumbing tube, unknown tube, stainless if shop cannot flare it |
+| P0 | Raptor hardener / activator | 1 L | Genuine/compatible U-POL Raptor hardener for the on-hand Raptor coating | Sealed, in-date, correct product family and mix ratio | Generic 2K hardener for a different product |
+| P0 | Rear drum hardware kit | 1 axle kit | Centric `116971-05110530`, 1960-1980 Toyota Land Cruiser drum brake hardware kit | Contents match opened-drum layout, spring hooks, hold-down pins/cups, adjuster hardware, clips | Incomplete kit, wrong spring layout, wrong hold-down pin length, mismatched side-to-side hardware |
+| P0 | Brighto Extreme Paint Remover | 3 L | Brighto Extreme Paint Remover, sealed 3 L container | Correct product, no leaks, label intact | Unknown stripper, leaking/open container, product for a different coating system |
+| P0 | Blow torch | 1 | Blow torch suitable for heating seized suspension pins; gas canister included or compatible | Sound valve/trigger/hose if fitted, correct canister fit, no leaks | Kitchen-only low-output torch if pin is heavily seized, leaking valve/hose, unknown canister fit |
+
+## Still Buy If Missing
+
+| Priority | Item | Quantity | Exact ask | Accept | Reject / call first |
+| --- | ---: | ---: | --- | --- | --- |
 | P0 | Tube deburrer / reamer | 1 | Compact internal/external deburrer or reamer for `4.75 mm / 3/16 in` brake tube | Tool deburrs inside and outside of small tube cleanly | File/knife-only workaround; tool too large for 3/16 tube |
 
 ## Buy If Available At Sensible Price
@@ -123,7 +135,7 @@ Brake hose spec card fields we can define before payment:
 
 Fastener shop:
 
-> Do not buy M6/M8/M10 star or serrated grounding washers; Millat/MTL Fastener Kit D is now coming. Only quote M6/M8 captive nuts, speed clips, clip nuts, R-clips, hairpins, cotter pins, and circlips.
+> M6/M8/M10 star or serrated grounding washers are now procured by Amir; Millat/MTL Fastener Kit D remains a separate in-flight stock row. Reconcile counts after both are physically checked. Only quote M6/M8 captive nuts, speed clips, clip nuts, R-clips, hairpins, cotter pins, and circlips.
 
 ## Photos Amir Must Send Before Paying If Uncertain
 

@@ -2,6 +2,8 @@
 
 Purpose: make the body-mount rubber, stop/seat, shim, sleeve, and bolt order executable while marking the few items that still need direct physical confirmation.
 
+Supersession note 2026-05-28: the active custom-rubber route is the Longman square-pad order in [longman-rubber-order-spec-20260508.md](longman-rubber-order-spec-20260508.md). The old circular `BM-SM` / `BM-LG` cushion route is no longer the active rubber geometry. Remaining checks are station mapping, sleeve/cup/shim dry-stack, compression, and local trim before final install.
+
 Order-line sheet: [body_mount_order_release_specs.csv](../data/manual/body_mount_order_release_specs.csv)
 
 Action sheet: [body_mount_release_actions.csv](../data/manual/body_mount_release_actions.csv)
@@ -49,21 +51,21 @@ Hold before buying:
 
 ## Exact Local Fabrication Specs
 
-These are ready for quote/prototype. Production release still needs the marked physical checks.
+These are released for Longman quote and first article where marked. Final installation still needs the station-fit and stack checks listed below.
 
 | Code | Item | Qty | Spec |
 | --- | --- | ---: | --- |
-| `BM-LG` | Large circular body-mount cushion | `2` | `78 mm` OD, `24 mm` free height, `32 mm` bore/register, `46 mm` centre register OD x `2 mm` depth, outside radius `R2-R3`, Shore A `60 +/-5` |
-| `BM-SM` | Small circular body-mount cushion | `10` | `64 mm` OD, working `22 mm` free height if one-piece, `32 mm` bore/register, `46 mm` centre register OD x `2 mm` depth, outside radius `R2-R3`, Shore A `60 +/-5` |
+| `BM-ISO-LG` | Large square body isolator pad | `2 + 1 spare` | `80 L x 80 W x 24 H`, square flat pad, `18.0 mm` bore for Toyota `90560-12009` style sleeve, plan corners `R1.5`, top/bottom edge break or chamfer `1.0 mm` max, Shore A `60 +/-5` |
+| `BM-ISO-SM` | Small square body isolator pad | `10 + 2 spares` | `70 L x 70 W x 22 H`, square flat pad, `18.0 mm` bore for Toyota `90560-12009` style sleeve, plan corners `R1.5`, top/bottom edge break or chamfer `1.0 mm` max, Shore A `60 +/-5` |
 | `FS-OVAL` | Front support oval isolator pad | `2` | `96 mm` length, `64 mm` max width, `15 mm` thickness, two `12 mm` holes, `64 mm` hole centres, `36 x 18 mm` rectangular relief with `R3` corners, `29 mm` top boss/insert OD |
-| `FS-STRIP-L` | Front support left strip/liner | `1` | working trace length `165 mm`, width `38-42 mm`, base thickness `8 mm`, raised/load pad height `14 mm`, M10 clearance hole `11 mm` or slot `11 x 16 mm` where shown |
-| `FS-STRIP-R` | Front support right strip/liner | `1` | mirror `FS-STRIP-L` unless physical carrier proves asymmetry |
+| `FS-STRIP-L` | Underfloor body-support strip liner, left | `1` | plain flat strip `165 L x 38 W x 8 T mm`, plan corners `R1.5`, top/bottom edge break `0.5-1.0 mm`, no rubber holes by default |
+| `FS-STRIP-R` | Underfloor body-support strip liner, right | `1` | same blank as left unless dry-fit proves handed end trim |
 
 Material for all local rubber pieces: new black automotive mount-grade `EPDM` or `NR/SBR`, Shore A `60 +/-5`, no tyre rubber, crumb rubber, mixed offcuts, used rubber, or old salvage rubber.
 
 Local fabrication also requires the first-article, material, process, inspection, rejection, and packaging controls in [rubber_recreation_manufacturing_requirements.csv](../data/manual/rubber_recreation_manufacturing_requirements.csv). The fabricator must provide a material declaration and a one-page inspection report before the batch is accepted.
 
-Main production hold: `BM-SM` must be confirmed as either one `22 mm` piece or a split bushing plus seat stack.
+Main production hold: `BM-ISO-SM` and `BM-ISO-LG` are released for quote/first article; final installation still needs station mapping, sleeve/cup/shim dry-stack, and compression check.
 
 ## Exact Hardware And Shim Order
 
@@ -86,12 +88,12 @@ These are the open actions that still block final release:
 1. `BMA-001`: lay out every old body-mount part by station and photograph it.
 2. `BMA-002`: choose OE/reproduction package or local fabrication; mark the other route do-not-order.
 3. `BMA-003`: measure the current stopper/seat pieces and match them to `52023-60010` or `90560-12233` if using OE route; keep `90560-12009` as the six-piece spacer/crush-tube reference.
-4. `BMA-004`: caliper-measure the best large and small circular cushions.
-5. `BMA-005`: prove whether the small mount is a one-piece `22 mm` cushion or a split stack.
+4. `BMA-004`: confirm the large-pair station and square-pad footprint.
+5. `BMA-005`: dry-stack the small square pad with sleeve/cup/shim hardware and confirm installed compression.
 6. `BMA-006`: measure sleeve ID, OD, and length, or dry-stack and derive sleeve length.
 7. `BMA-007`: thread-gauge body-mount bolts and captive nuts; measure usable captive nut depth.
 8. `BMA-008`: preserve and measure original shim/spacer packs by station.
-9. `BMA-009`: trace front-support left/right strips from physical pieces.
+9. `BMA-009`: dry-fit the left/right underfloor strips; apply only proven local end trim and trace the separate steel retainer if it must be remade.
 10. `BMA-010`: confirm front-support fastener diameter and pitch before any M12 order.
 11. `BMA-011`: dry-stack one large station, one small station, and one front-support station before final sleeve cutting and bolt-length selection.
 

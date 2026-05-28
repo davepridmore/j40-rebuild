@@ -15,6 +15,13 @@ Current supplier pack:
 
 The old release specs assumed cup/seat washers and a controlled crush sleeve. That remains true for stack control, but the tub/chassis photos do not prove a shaped rubber socket. Treat the main body mounts as function-first isolator pads.
 
+The measured old-rubber photos are no longer being treated as an unknown-dimension problem. They are the quote and first-article basis for the current Longman rubber pieces. The remaining open work is station mapping and dry-fit release:
+
+- Which measured part belongs at which vehicle station.
+- Whether the square pad footprint clears the actual landing face at that station.
+- Whether the sleeve/cup/shim/bolt stack clamps through the sleeve without over-crushing the rubber.
+- Whether any first article needs local corner/end trimming after it is placed on the vehicle.
+
 Critical controls:
 
 - Installed rubber height and final compression.
@@ -30,11 +37,11 @@ Preferred custom shape for the main pads is square. Release trimming only if a l
 
 | ID | Status | Qty | Current spec | Release gate |
 | --- | --- | ---: | --- | --- |
-| `BM-ISO-SM` | First-article ready with OE spacer bore | `10 + 2 spares` | 3D envelope `70 L x 70 W x 22 H mm`; square flat pad; flat parallel faces; plan corners `R1.5`; top/bottom edge break or chamfer `1.0 mm` max; `18.0 mm` through bore; Shore A `60 +/-5`. | Confirm each station has enough flat footprint; sleeve basis is Toyota `90560-12009` style spacer. |
-| `BM-ISO-LG` | First-article ready with OE spacer bore | `2 + 1 spare` | 3D envelope `80 L x 80 W x 24 H mm`; square flat pad; flat parallel faces; plan corners `R1.5`; top/bottom edge break or chamfer `1.0 mm` max; `18.0 mm` through bore; same compound batch as small pads if possible. | Confirm the large-pair station; sleeve basis is Toyota `90560-12009` style spacer. |
-| `FS-OVAL` | Quote ready, caliper before production | `2` | 3D envelope `96 L x 64 W x 15 T mm`; capsule ends `R32`; outer edge break `0.5-1.0 mm`; two `12 mm` holes at `64 mm` centres; rectangular relief only if old sample confirms it is functional. | Confirm hole centres, thickness, insert/boss/relief construction. |
-| `FS-STRIP-L` | Custom first article ready | `1` | 3D envelope `165 L x 38 W x 8 T mm`; plan corners `R1.5`; top/bottom edge break `0.5-1.0 mm`; no through-holes in the rubber by default; Shore A `60 +/-5`. | Dry-fit on the actual landing, then apply any side-specific end trim; reuse or trace the slotted steel retainer separately if needed. |
-| `FS-STRIP-R` | Custom first article ready | `1` | Same flat strip spec as left: `165 L x 38 W x 8 T mm`, plan corners `R1.5`, top/bottom edge break `0.5-1.0 mm`. Use the same blank unless the right side proves a handed end trim. | Same first-article dry-fit and retainer rule as left. |
+| `BM-ISO-SM` | Released for quote / first article | `10 + 2 spares` | 3D envelope `70 L x 70 W x 22 H mm`; square flat pad; flat parallel faces; plan corners `R1.5`; top/bottom edge break or chamfer `1.0 mm` max; `18.0 mm` through bore; Shore A `60 +/-5`. | Station mapping, footprint check, sleeve/cup/shim dry-stack, and compression check before final install. |
+| `BM-ISO-LG` | Released for quote / first article | `2 + 1 spare` | 3D envelope `80 L x 80 W x 24 H mm`; square flat pad; flat parallel faces; plan corners `R1.5`; top/bottom edge break or chamfer `1.0 mm` max; `18.0 mm` through bore; same compound batch as small pads if possible. | Confirm the large-pair station, footprint, sleeve/cup/shim dry-stack, and compression check before final install. |
+| `FS-OVAL` | Released for quote / first article | `2` | 3D envelope `96 L x 64 W x 15 T mm`; capsule ends `R32`; outer edge break `0.5-1.0 mm`; two `12 mm` holes at `64 mm` centres; rectangular relief only if old sample confirms it is functional. | Caliper-confirm hole centres, thickness, insert/boss/relief construction before final pair. |
+| `FS-STRIP-L` | Released for quote / first article | `1` | 3D envelope `165 L x 38 W x 8 T mm`; plan corners `R1.5`; top/bottom edge break `0.5-1.0 mm`; no through-holes in the rubber by default; Shore A `60 +/-5`. | Dry-fit on the actual landing, then apply only proven end trim; reuse or trace the slotted steel retainer separately if needed. |
+| `FS-STRIP-R` | Released for quote / first article | `1` | Same flat strip spec as left: `165 L x 38 W x 8 T mm`, plan corners `R1.5`, top/bottom edge break `0.5-1.0 mm`. Use the same blank unless the right side proves a handed end trim. | Same first-article dry-fit and retainer rule as left. |
 | `BUMP-60010-LONG` | First article required | `3` | Toyota-style long bump stop, free height `70 +/-1 mm`, progressive tapered/radiused body, two-ear steel saddle/backing, flat rectangular strike face. | Vehicle bracket controls BL/BW/P/D/X-Y/G/F; make one first article before remaining long stops. |
 | `BUMP-60020-SHORT` | First article required | `1` | Toyota-style short right-front bump stop, free height `60 +/-1 mm`; do not make it `70 mm` unless a deliberate full-bump test releases trimming. | Right-front bracket and axle strike pad control base, hole pattern, and contact face. |
 | `BODY-LINER-FULL-WIDTH-HOLD` | Not captured yet | Hold | Possible long/full-width flat body or panel liner strips. | Do not order until the pieces are found or a vehicle station proves a continuous flat anti-squeak liner is required. |
@@ -105,6 +112,8 @@ long, `18.0 mm` rubber bore, and OE/old-sleeve OD copied if a local sleeve has t
 be made.
 
 ## Measurements To Collect
+
+These measurements are not asking for the rubber dimensions again; those are already in the spec above. They are the vehicle-fit checks needed to prevent a correct rubber part being installed in the wrong station or wrong stack.
 
 ### Main Body Isolator Stations
 

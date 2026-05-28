@@ -21,6 +21,8 @@ The OpenSCAD files are the source 3D controls. The HTML/SVG visual is for orient
 
 ## Current Release
 
+The measured old-rubber photos are the quote and first-article basis for the current Longman order. Remaining checks are station fit, dry-stack compression, final caliper confirmation for `FS-OVAL`, and local strip trim after dry-fit.
+
 - `BM-ISO-SM`: 70 L x 70 W x 22 H square pad, 18.0 mm through bore, R1.5 plan corners, top/bottom edge break or chamfer.
 - `BM-ISO-LG`: 80 L x 80 W x 24 H square pad, 18.0 mm through bore, same edge controls.
 - `FS-OVAL`: 96 L x 64 W x 15 T capsule, R32 ends, two 12 mm holes, relief/insert details sample-controlled.
@@ -28,3 +30,5 @@ The OpenSCAD files are the source 3D controls. The HTML/SVG visual is for orient
 - Bump stops: height and Toyota-style construction are controlled; base, saddle, bolt, and strike geometry are vehicle-measurement controlled.
 
 Steel sleeves, cup/seat washers, bolts, shims, and retainers are separate hardware controls, not Longman rubber mould geometry.
+
+Hold-only items remain separate from the quote-ready rubber: full-width/body liner strips and exhaust hanger cushion production need an actual sample, installed path, or tracing before ordering.

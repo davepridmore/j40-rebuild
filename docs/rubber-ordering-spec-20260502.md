@@ -27,7 +27,7 @@ Any rubber, hose, boot, grommet, pad, hanger, isolator, bump stop, cable seal, o
 
 | Order ID | Item | Action | Gate |
 | --- | --- | --- | --- |
-| `RUB-001` | Body-to-chassis mount rubber package | Quote/prototype now; final fabricate/buy only after caliper closure | Resolve small-mount one-piece vs split-stack construction and map every station |
+| `RUB-001` | Body-to-chassis mount rubber package | Quote and first article now from the Longman rubber spec | Map stations, dry-stack sleeves/cups/shims, confirm compression, and apply only proven local trim before final install |
 | `RUB-002` | Body mount sleeves, cups, shims, and hardware | Prepare local steel/fastener order | Confirm thread pitch, bolt length, sleeve length, cup geometry, and original shim positions |
 | `RUB-003` | Firewall/column/wiper/rear wiring grommet top-up | Audit existing grommet kit, then top up by measured hole sizes | Do not buy another bulk kit until existing inventory is matched |
 | `RUB-009` | Brake flexible hose set | Buy new safety assemblies | Confirm end fittings, old-sample/free length, bracket retention, and fitted route |

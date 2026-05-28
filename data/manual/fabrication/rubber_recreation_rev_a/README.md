@@ -2,6 +2,8 @@
 
 This is the fabrication-output package for the body-mount and front-support rubber recreation workstream.
 
+Current release basis: the Longman order uses the square `BM-ISO-SM` and `BM-ISO-LG` body pads in `models_3d/`. The older circular `BM-SM` / `BM-LG` DXF files are retained as legacy photo-derived references only; do not use them as the active body-pad cut patterns unless the project deliberately reopens the circular profile.
+
 Use it with:
 
 - `docs/rubber-recreation-fabrication-spec-20260502.md`
@@ -19,31 +21,31 @@ Use it with:
 
 ## DXF / SVG Parts
 
-- `bm_sm_body_mount_cushion_rev_a.dxf` / `bm_sm_body_mount_cushion_rev_a.svg` - BM-SM small circular body-mount cushion, qty 10
-- `bm_lg_body_mount_cushion_rev_a.dxf` / `bm_lg_body_mount_cushion_rev_a.svg` - BM-LG large circular body-mount cushion, qty 2
+- `bm_sm_body_mount_cushion_rev_a.dxf` / `bm_sm_body_mount_cushion_rev_a.svg` - legacy BM-SM small circular body-mount reference, superseded for the current Longman order by `models_3d/bm_iso_sm_square_pad.scad`
+- `bm_lg_body_mount_cushion_rev_a.dxf` / `bm_lg_body_mount_cushion_rev_a.svg` - legacy BM-LG large circular body-mount reference, superseded for the current Longman order by `models_3d/bm_iso_lg_square_pad.scad`
 - `bm_cup_small_seat_washer_rev_a.dxf` / `bm_cup_small_seat_washer_rev_a.svg` - BM-CUP small body-mount cup washer, qty 10 working basis
 - `bm_cup_large_seat_washer_rev_a.dxf` / `bm_cup_large_seat_washer_rev_a.svg` - BM-CUP large body-mount cup washer, qty 2 working basis
 - `fs_oval_front_support_pad_rev_a.dxf` / `fs_oval_front_support_pad_rev_a.svg` - FS-OVAL front support two-hole isolator pad, qty 2 matched pieces
-- `fs_strip_left_template_blank_rev_a.dxf` / `fs_strip_left_template_blank_rev_a.svg` - FS-STRIP-L front support strip quote/template blank, qty 1
-- `fs_strip_right_template_blank_rev_a.dxf` / `fs_strip_right_template_blank_rev_a.svg` - FS-STRIP-R front support strip quote/template blank, qty 1
+- `fs_strip_left_template_blank_rev_a.dxf` / `fs_strip_left_template_blank_rev_a.svg` - FS-STRIP-L underfloor body-support strip first-article blank, qty 1
+- `fs_strip_right_template_blank_rev_a.dxf` / `fs_strip_right_template_blank_rev_a.svg` - FS-STRIP-R underfloor body-support strip first-article blank, qty 1
 - `exh_hgr_90917_08004_teardrop_rev_a.dxf` / `exh_hgr_90917_08004_teardrop_rev_a.svg` - EXH-HGR-90917 teardrop exhaust cushion, qty as fitted
 
 ## Layer Rules
 
 - `CUT`, `CUT_BORE`, `CUT_RELIEF`, and `DRILL` are through-cut or through-hole geometry.
 - `RECESS`, `FORM`, and `INSERT_MARK` are register, forming, boss, or pocket controls. Do not through-cut them unless the physical sample proves that construction.
-- `TEMPLATE` is a trace/quote guide only. The strip rubbers still require physical template tracing before production cutting.
+- `TEMPLATE` is a trace/quote guide only. The plain strip rubber dimensions are released; only local end trim and separate steel retainer geometry remain dry-fit or trace controlled.
 - `CENTER` is construction geometry only.
 
 ## Release Limits
 
-The circular cushions, cup blanks, and oval pad are ready for quote and first article from these files. Full production still requires the hold dimensions in `data/manual/rubber_recreation_measurement_closure.csv`.
+The active Longman rubber lines are released for quote and first article from the current CSV/spec data: `BM-ISO-SM`, `BM-ISO-LG`, `FS-OVAL`, `FS-STRIP-L`, and `FS-STRIP-R`. The remaining closure rows in `data/manual/rubber_recreation_measurement_closure.csv` are station-fit, stack, caliper, and dry-fit gates before final production/install, not missing quote dimensions.
 
 The current Longman rubber-order basis for the main body pads is square flat isolator pads, not the earlier circular placeholder. Use `models_3d/bm_iso_sm_square_pad.scad` and `models_3d/bm_iso_lg_square_pad.scad` for the current 3D envelope. They default to `hole_d = 18.0`, matching the Toyota `90560-12009` style body-mount sleeve basis. Production release uses the 18.0 mm bore; `hole_d = 0` is a non-release CAD override only.
 
 The shim packs are controlled in `machine_definitions.csv` / `machine_definitions.json` as new flat steel thickness packs. They are not released as fixed DXF outlines until the original shim or mount-station footprint is traced in millimeters; do not substitute washer stacks.
 
-The strip files are not final production cut patterns. They define stock envelope, section, and hole/slot working basis, but the actual left/right strip outline and hole centres must be traced from the physical rubber and metal carrier.
+The strip rubber geometry is released as plain `165 x 38 x 8 mm` left/right first articles with no rubber holes by default. Dry-fit controls only local end trim and side orientation. Any slotted steel retainer is a separate steel part and must be reused or traced directly from the original retainer if remade.
 
 The exhaust holder is controlled as a teardrop cushion style using Toyota `90917-08004` / `17572-92000` only as a reference shape. Source exact new molded stock if it is in hand; otherwise the CAD file is a local-copy control and needs a genuine sample or intact original before a production mould is cut.
 
@@ -53,4 +55,4 @@ Bump stops cannot rely on Toyota/manufacturer supply and the old rubbers are too
 
 Use new black automotive mount-grade solid rubber only: EPDM or NR/SBR, Shore A `60 +/-5`, for body/front-support rubbers. Bump stops use the separate higher-duty target in the bump-stop spec: NR/SBR automotive bump-stop rubber Shore A `70 +/-5` bonded/captive to a new coated steel saddle, or cast PU Shore A `80 +/-5` only if the progressive geometry and captive steel mounting are held. Reject tyre rubber, crumb rubber, sponge foam, mixed offcuts, used rubber, salvage rubber, and unmarked compound.
 
-Steel cups must be `2.5-3.0 mm` steel, deburred and zinc plated or epoxy primed after forming. Sleeves are still controlled by stack dry-fit and are not released as a cut DXF.
+Steel cups must be `2.5-3.0 mm` steel, deburred and zinc plated or epoxy primed after forming. Sleeves are controlled by the Toyota `90560-12009` style spacer basis and stack dry-fit, and are not released as a DXF rubber-shop cut pattern.

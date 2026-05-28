@@ -260,11 +260,11 @@ def build_procurement_decisions(
                 dependency_gate = "baseline_execution"
                 action = "order_now"
                 reason = "Marked purchase-ready with no deferral flags."
-        elif procurement_stage == "needs_confirmation":
+        elif procurement_stage in {"needs_confirmation", "received_candidate"}:
             decision = "confirm_order_state"
             dependency_gate = "evidence_reconciliation"
             action = "verify_invoice_or_delivery_proof"
-            reason = "State is explicitly uncertain and needs evidence reconciliation."
+            reason = "Item has been procured or received as a candidate, but needs receipt/spec evidence before it is treated as usable stock."
 
         if "inspect then replace" in notes.lower():
             decision = "inspect_then_buy"

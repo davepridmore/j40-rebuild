@@ -16,9 +16,9 @@ Manufacturing requirements table: `data/manual/rubber_recreation_manufacturing_r
 
 ## Release Position
 
-This is the fabricator handoff spec for quotation, prototype cutting, and sample preparation.
+This is the supporting fabricator handoff spec for quotation, first-article cutting, and sample preparation. For the current supplier order, `docs/longman-rubber-order-spec-20260508.md` is the primary order document.
 
-Because several samples are crushed, split, curled, or photographed off-plane, do not approve full production until the hold dimensions in this sheet are checked with calipers on the physical parts. The dimensions below are the image-derived nominal targets to the nearest millimetre.
+The old-rubber photos and ruler measurements are accepted as the dimensional basis for quote and first articles. Do not treat the remaining gates as missing rubber dimensions: they are station mapping, dry-stack, caliper, and final install checks before full production or final trimming.
 
 Toyota-style catalog data has been checked and added as a control reference. It confirms OE part numbers, station codes, left/right required quantities, bolt families, and several shim/spacer thicknesses. It does not publish rubber cushion OD, ID, free height, durometer, or cup geometry, so the rubber fabrication dimensions remain image-derived and must be closed from the physical samples.
 
@@ -44,13 +44,15 @@ Package contents:
 
 | Part | DXF | Release Use |
 | --- | --- | --- |
-| `BM-SM` small circular cushion | `bm_sm_body_mount_cushion_rev_a.dxf` | Quote/first article; final production waits for one-piece vs split-stack closure |
-| `BM-LG` large circular cushion | `bm_lg_body_mount_cushion_rev_a.dxf` | Quote/first article; caliper-confirm station and final stack |
+| `BM-ISO-SM` small square body pad | `models_3d/bm_iso_sm_square_pad.scad` | Active Longman quote/first article: `70 x 70 x 22`, `18.0` bore |
+| `BM-ISO-LG` large square body pad | `models_3d/bm_iso_lg_square_pad.scad` | Active Longman quote/first article: `80 x 80 x 24`, `18.0` bore |
+| `BM-SM` small circular cushion | `bm_sm_body_mount_cushion_rev_a.dxf` | Legacy reference only; superseded by square `BM-ISO-SM` unless circular profile is deliberately reopened |
+| `BM-LG` large circular cushion | `bm_lg_body_mount_cushion_rev_a.dxf` | Legacy reference only; superseded by square `BM-ISO-LG` unless circular profile is deliberately reopened |
 | `BM-CUP` small cup washer blank | `bm_cup_small_seat_washer_rev_a.dxf` | Quote/first article; confirm cup reuse and dish depth |
 | `BM-CUP` large cup washer blank | `bm_cup_large_seat_washer_rev_a.dxf` | Quote/first article; confirm cup reuse and dish depth |
 | `FS-OVAL` front-support pad | `fs_oval_front_support_pad_rev_a.dxf` | Quote/first article; confirm holes, thickness, and insert/boss |
-| `FS-STRIP-L` strip blank | `fs_strip_left_template_blank_rev_a.dxf` | Quote/template blank only; physical trace required |
-| `FS-STRIP-R` strip blank | `fs_strip_right_template_blank_rev_a.dxf` | Quote/template blank only; physical trace required |
+| `FS-STRIP-L` strip blank | `fs_strip_left_template_blank_rev_a.dxf` | Released plain first-article strip: `165 x 38 x 8`; local end trim only after dry-fit |
+| `FS-STRIP-R` strip blank | `fs_strip_right_template_blank_rev_a.dxf` | Released plain first-article strip: `165 x 38 x 8`; local end trim only after dry-fit |
 | `EXH-HGR-90917` exhaust teardrop cushion | `exh_hgr_90917_08004_teardrop_rev_a.dxf` | Toyota `90917-08004` / `17572-92000` is a reference shape only; source exact new stock or locally mould from a genuine sample/intact original with side profile, insert depth, thickness, and reinforcement confirmed |
 | `BUMP-F-L`, `BUMP-F-R`, `BUMP-R` bump stops | `bump_stop_vehicle_measurement_control.svg` | Vehicle-bracket-controlled mould release. Long `48304-60010` positions are `70 mm`; right-front `48304-60020` is `60 mm`; reproduce Toyota-style two-ear steel saddle/backing plate, tapered/radiused progressive rubber body, and flat rectangular strike face. Base footprint, bolt pattern, and contact offset come from the vehicle. See `docs/bump-stop-fabrication-spec-20260504.md`. |
 
@@ -65,7 +67,7 @@ Use this section as the fabrication purchase-order language. The dimension table
 Before full production, the fabricator must provide:
 
 1. A written quote listing each part ID, quantity, material, hardness, process route, and whether the part is cut, moulded, bonded, or formed.
-2. A first-article set: one `BM-SM`, one `BM-LG`, one `FS-OVAL`, and one left/right strip trial if the strip route is used.
+2. A first-article set: one `BM-ISO-SM`, one `BM-ISO-LG`, one `FS-OVAL`, and one left/right strip trial.
 3. A material declaration or supplier datasheet for the rubber compound, including base polymer family and Shore A hardness.
 4. A one-page inspection report with part ID, quantity, key dimensions, durometer readings, visual result, date, and fabricator contact.
 5. Labeled bags for every part family and side/station where applicable.
@@ -94,9 +96,9 @@ If the fabricator cannot perform the laboratory tests, require a compound suppli
 
 ### Process Controls
 
-- Keep each matched family from one compound batch and one cure/cutting setup: `BM-SM` set, `BM-LG` pair, `FS-OVAL` pair, and `FS-STRIP-L/R` pair.
+- Keep each matched family from one compound batch and one cure/cutting setup: `BM-ISO-SM` set, `BM-ISO-LG` pair, `FS-OVAL` pair, and `FS-STRIP-L/R` pair.
 - Measure finished rubber after curing, trimming, drilling/punching, and at least `24 h` relaxation at room temperature.
-- Circular cushions must have flat, parallel faces; face parallelism must be `<=0.5`, and bore/register concentricity must be `<=1.0`.
+- Square body pads and flat strip liners must have flat, parallel faces; face parallelism must be `<=0.5`, and body-pad bore position must be within `+/-0.5`.
 - Functional holes and slots must be punched, bored, or waterjet cut. Do not burn, tear, or rough hand-knife the holes.
 - External load edges must be smooth. Circular cushion outer edges stay `R2-R3`; `FS-OVAL` relief corners stay `R3`; seating-face flash must be `<=0.5`.
 - Steel sleeves, cups, shims, and inserts must be deburred and corrosion protected after cutting/forming.
@@ -128,7 +130,7 @@ Reject any piece with:
 - Mixed hardness across a matched family.
 - Wrong material, wrong side/hand, wrong thickness, or unapproved substitution.
 
-The fabricator may not substitute material, hardness, split-stack construction, sleeve length, hole pattern, or bonding method without written approval before manufacture.
+The fabricator may not substitute material, hardness, pad construction, sleeve length, hole pattern, or bonding method without written approval before manufacture.
 
 ## Toyota OE / EPC Controls
 
@@ -145,7 +147,7 @@ Usable OE controls:
 | --- | --- | --- |
 | Cushion station IDs | `NO.1` to `NO.5`, upper/lower rows, with left/right quantities | Do not release production until every old cushion is mapped to a Toyota station and vehicle side. |
 | Cushion part numbers | `90540-16043`, `52204-35010`, `52202-30010`, `52022-60010`, `90540-17045`, `52023-60010`, `52209-60010` | Use these to label bags and verify which physical samples belong to which station. |
-| Rubber dimensions | No OE OD/ID/free-height dimensions found in open official/OEM listing sources | Keep `BM-SM`, `BM-LG`, `FS-OVAL`, and `FS-STRIP` dimensions as image-derived until caliper confirmation. |
+| Rubber dimensions | No OE OD/ID/free-height dimensions found in open official/OEM listing sources | Use the measured old-rubber/photo dimensions as the quote and first-article basis for `BM-ISO-SM`, `BM-ISO-LG`, `FS-OVAL`, and `FS-STRIP`; station fit and final caliper checks close before final install/production. |
 | Body-mount bolts | `90105-10053` for `NO.1` to `NO.3`; `90101-10463` for `NO.4` to `NO.5` | Confirms bolt families, but final length and pitch still need direct vehicle confirmation. |
 | Cushion spacers | `90560-12232`, `90560-12231`, `90560-12233`, `90560-12234` | Reuse/measure original spacers before reproducing because listing does not publish dimensions. |
 | Shim/spacer thicknesses | `52212-90310 T=10`, `52216-90310 T=5.0`, `52217-90310 T=15`, `52033-90301 T=22.8`, `52033-90304 T=27.8` | Use these as legitimate Toyota thickness references. Do not improvise with washer stacks. |
@@ -156,15 +158,15 @@ Energy Suspension `8.4104` data is useful because it publishes exact thicknesses
 
 | Reference Component | Published Thickness | Metric | Count | Use |
 | --- | ---: | ---: | ---: | --- |
-| `4144` tall bushing | `0.950 in` | `24.13 mm` | `2` | Supports `BM-LG` height target of `24 mm`. |
+| `4144` tall bushing | `0.950 in` | `24.13 mm` | `2` | Supports `BM-ISO-LG` height target of `24 mm`. |
 | `4145` medium bushing | `0.450 in` | `11.43 mm` | `10` | Cross-check for small/medium stations if old pieces separate into spacer bushings. |
 | `4146` bushing seat | `0.340 in` | `8.64 mm` | `12` | Cross-check for separate seat/bushing construction. |
 | `4143` short bushing | `0.237 in` | `6.02 mm` | `2` | Conditional: identify only if matching short-position rubbers exist on this vehicle. |
 | `4147` body mount bushing | `0.240 in` | `6.10 mm` | `2` | Conditional: identify only if matching physical samples/positions exist. |
 
 Impact on this spec:
-- `BM-LG` is strong enough for quote/prototype at `24 mm` height, because the photo-derived target and the published `4144` thickness agree.
-- `BM-SM` must not be blindly released as a one-piece `22 mm` part. The external reference suggests a common split stack of `11.43 + 8.64 = 20.07 mm`, so the physical old part must prove whether the custom piece is one moulded cushion or a separate seat plus spacer bushing.
+- `BM-ISO-LG` is released for quote/first article at `24 mm` height, because the photo-derived target and the published `4144` thickness agree.
+- `BM-ISO-SM` is released for quote/first article as a square `22 mm` pad. The Energy split-stack reference remains useful only as a dry-stack/compression check before final install.
 - Any short/extra mount pieces must be added only after they are found in the actual removed samples or on the vehicle. Do not add Energy kit pieces just because they appear in an aftermarket kit.
 
 Reconciliation risk:
@@ -174,17 +176,17 @@ Reconciliation risk:
 
 ## Exact Spec Closure Rule
 
-We can produce the exact fabricator release spec, but the final release values must be written from direct measurement of the physical samples. Use `data/manual/rubber_recreation_measurement_closure.csv` as the closure sheet.
+The current fabricator release spec exists in `docs/longman-rubber-order-spec-20260508.md`, `data/manual/longman_rubber_order_specs.csv`, and `data/manual/rubber_recreation_fabrication_specs.csv`. Use `data/manual/rubber_recreation_measurement_closure.csv` as the closure sheet for station-fit and final-production checks.
 
 Release order:
 1. Sort the old rubbers by vehicle station and side.
 2. Split each stack into rubber, seat/cup, sleeve, shim, washer, and bolt.
 3. Measure each feature with calipers, recording three readings for diameters and four readings for heights.
-4. Decide whether `BM-SM` is a single one-piece cushion or a split seat-plus-spacer stack.
-5. Update the `release_value_mm` column in the closure table.
-6. Only then approve production quantity and final cut/mould dimensions.
+4. Dry-stack the square body pad, sleeve, cup/washer, shim, and bolt so the sleeve controls clamp load.
+5. Update the closure table if dry-fit proves a station trim or a different final-production correction.
+6. Approve full production only after first articles pass dimension, material, and vehicle-fit checks.
 
-No fabricator should be asked to make the final batch from photos alone. The photos are strong enough for quote and prototype, but not for final release of sleeve length, centre register fit, or split-stack construction.
+Longman can quote and make first articles from the measured old-rubber dimensions. Full production/final install still depends on sleeve length, station placement, cup/washer support, and compression checks.
 
 ## Evidence Map
 
@@ -193,7 +195,7 @@ No fabricator should be asked to make the final batch from photos alone. The pho
 | `RRB-20260502-001` | <img src="../photos/20260502_004201_gp_zfUSmKJg.jpg" width="180"> | Long strip/bracket rubber overview with vertical tape. |
 | `RRB-20260502-002` | <img src="../photos/20260502_004215_gp_evgCLjSw.jpg" width="180"> | Long strip/bracket rubber length reference. |
 | `RRB-20260502-003` | <img src="../photos/20260502_004222_gp_PKRe5HSQ.jpg" width="180"> | Long strip/bracket profile reference. |
-| `RRB-20260502-004` | <img src="../photos/20260502_004231_gp_CfosvPIg.jpg" width="180"> | Best tape-scale reference for circular cushions/cups and oval pad. |
+| `RRB-20260502-004` | <img src="../photos/20260502_004231_gp_CfosvPIg.jpg" width="180"> | Best tape-scale reference for old body cushions/cups and oval pad. |
 | `RRB-20260502-005` | <img src="../photos/20260502_004254_gp_Hm9RR5DQ.jpg" width="180"> | Long strip/bracket height reference. |
 | `RRB-20260502-006` | <img src="../photos/20260502_004314_gp_wuzpgNrA.jpg" width="180"> | Strip/bracket side thickness reference. |
 | `RRB-20260502-007` | <img src="../photos/20260502_004337_gp_m2OagYpg.jpg" width="180"> | Circular cushion edge/thickness reference. |
@@ -202,8 +204,8 @@ No fabricator should be asked to make the final batch from photos alone. The pho
 | `RRB-20260502-010` | <img src="../photos/20260502_004413_gp_Qno8OVRg.jpg" width="180"> | Circular cushion top profile. |
 | `RRB-20260502-011` | <img src="../photos/20260502_004419_gp_ZPXJRBzg.jpg" width="180"> | Circular cushion top profile. |
 | `RRB-20260502-012` | <img src="../photos/20260502_004429_gp_KJHxGcCA.jpg" width="180"> | Circular cushion side profile. |
-| `RRB-20260502-013` | <img src="../photos/20260502_004437_gp_f1TySzww.jpg" width="180"> | Cleaner circular annular cushion top reference. |
-| `RRB-20260502-014` | <img src="../photos/20260502_004442_gp_7WcFHjLQ.jpg" width="180"> | Cleaner circular annular cushion top reference. |
+| `RRB-20260502-013` | <img src="../photos/20260502_004437_gp_f1TySzww.jpg" width="180"> | Cleaner old cushion/cup top reference. |
+| `RRB-20260502-014` | <img src="../photos/20260502_004442_gp_7WcFHjLQ.jpg" width="180"> | Cleaner old cushion/cup top reference. |
 
 ## Material Standard
 
@@ -218,37 +220,36 @@ No fabricator should be asked to make the final batch from photos alone. The pho
 
 | Part ID | Part | Qty | Nominal Dimensions | Status |
 | --- | --- | ---: | --- | --- |
-| `BM-SM` | Small circular body-mount cushion / stack-equivalent | `10` | `OD 64`, photo stack height `22`, bore `32`, centre register `OD 46 x depth 2`, edge radius `R2-R3`; split-stack check required | Prototype/quote |
-| `BM-LG` | Large circular body-mount cushion | `2` | `OD 78`, height `24`, bore `32`, centre register `OD 46 x depth 2`, edge radius `R2-R3` | Prototype/quote |
+| `BM-ISO-SM` | Small station square body isolator pad | `10` | `70 L x 70 W x 22 H`, square flat pad, `18.0` centre bore for Toyota `90560-12009` style sleeve, plan corners `R1.5`, edge break/chamfer `1.0` max | Released for quote / first article |
+| `BM-ISO-LG` | Large station square body isolator pad | `2` | `80 L x 80 W x 24 H`, square flat pad, `18.0` centre bore for Toyota `90560-12009` style sleeve, plan corners `R1.5`, edge break/chamfer `1.0` max | Released for quote / first article |
 | `BM-SLV` | Main body-mount crush sleeve | `6` | `ID 10.8-11.0` for M10 bolt; OD and length held for caliper confirmation | Hold |
-| `BM-CUP` | Body-mount cup/seat washer | `12` | small cup `OD 64`, large cup `OD 78`, M10 clearance hole `11`, dish/register depth `2-3`, steel `2.5-3.0` thick | Prototype/quote |
-| `FS-OVAL` | Two-hole oval front-support isolator pad | `2` | length `96`, width `64`, thickness `15`, holes `12`, hole spacing `64`, relief `36 x 18 R3`, insert/boss `OD 29` | Prototype/quote |
+| `BM-CUP` | Body-mount cup/seat washer | `12` | small cup `OD 64`, large cup `OD 78`, M10 clearance hole `11`, dish/register depth `2-3`, steel `2.5-3.0` thick | Separate hardware inspect / quote if needed |
+| `FS-OVAL` | Two-hole oval front-support isolator pad | `2` | length `96`, width `64`, thickness `15`, holes `12`, hole spacing `64`, relief `36 x 18 R3` if functional, insert/boss `OD 29` | Released for quote / first article |
 | `FS-STRIP-L` | Underfloor body-support strip liner - left | `1` | flat strip `165 x 38 x 8`; no through-holes in rubber by default | First article / quote |
 | `FS-STRIP-R` | Underfloor body-support strip liner - right | `1` | same blank as left unless installed sample proves handed end trim | First article / quote |
 
-## Circular Body-Mount Cushions
+## Main Body Isolator Pads
 
 Relevant images: `RRB-004`, `RRB-010`, `RRB-011`, `RRB-013`, `RRB-014`.
 
-Fabricate two circular families:
+Fabricate two square flat body-pad families for the current Longman order:
 
-| Dimension | `BM-SM` | `BM-LG` |
+| Dimension | `BM-ISO-SM` | `BM-ISO-LG` |
 | --- | ---: | ---: |
 | Quantity | `10` | `2` |
-| Outside diameter | `64` | `78` |
-| Free height / stack height | `22` photo stack-equivalent; verify one-piece vs split `11.43 + 8.64` construction | `24`; cross-check `24.13` |
-| Central bore | `32` | `32` |
-| Centre register / raised lip OD | `46` | `46` |
-| Centre register depth | `2` | `2` |
-| Outer edge radius | `R2-R3` | `R2-R3` |
+| Plan size | `70 x 70` | `80 x 80` |
+| Free height | `22` | `24` |
+| Through bore | `18.0` | `18.0` |
+| Plan corner radius | `R1.5` | `R1.5` |
+| Top/bottom edge break or chamfer | `1.0` max | `1.0` max |
 
 Fabrication notes:
 - Make the faces flat and parallel.
-- Keep the bore concentric within `1 mm`.
-- The central bore is a rubber/cup register, not the M10 bolt hole itself. The bolt must pass through a steel sleeve.
+- Keep the bore centred within `+/-0.5`.
+- The `18.0` bore is for the Toyota `90560-12009` style body-mount sleeve. The M10 bolt must pass through the steel sleeve, not clamp directly through raw rubber.
 - The sleeve controls crush. Do not clamp the body mount by crushing raw rubber around the bolt.
-- Before production, prove whether the small mount is one moulded cushion or a split seat plus spacer. If split, fabricate the two pieces separately rather than making a single `22 mm` block.
-- Tolerance: OD/ID `+/-1.0`; height `+/-0.5`; concentricity `<=1.0`.
+- Station photos/dry-fit may release local corner trim, but the first article starts as a square pad.
+- Tolerance: length/width `+/-1.0`; height `+/-0.5`; bore `+0.5/-0.0`; bore position `+/-0.5`.
 
 ## Sleeve And Cup Washer Interface
 
@@ -258,7 +259,7 @@ Sleeves:
 - Quantity: `6`.
 - Bolt: M10 body-mount hardware, working basis `M10 x 1.25`.
 - Sleeve ID: `10.8-11.0`.
-- Sleeve OD: match the final rubber bore/cup register after caliper confirmation.
+- Sleeve OD: genuine Toyota `90560-12009` style spacer basis, or copy old/OE spacer if locally made.
 - Sleeve length: set from the completed stack; target is free rubber stack height minus `3-4` of intended rubber compression.
 - Material: steel tube, deburred, zinc plated or painted after cutting.
 
@@ -266,8 +267,8 @@ Cup/seat washers:
 - Quantity: `12`.
 - Steel thickness: `2.5-3.0`.
 - Clearance hole: `11` for M10.
-- Small station OD: `64`, or matched to `BM-SM`.
-- Large station OD: `78`, or matched to `BM-LG`.
+- Small station support footprint: must support the `70 x 70` square pad without rocking or cutting into the edge.
+- Large station support footprint: must support the `80 x 80` square pad without rocking or cutting into the edge.
 - Register/dish depth: `2-3`.
 - Reuse original cups only if flat, not thinned, and not cracked. Otherwise press/form new cups.
 
@@ -349,7 +350,7 @@ First-article check before full batch:
 - Radius gauge or round templates for edge radii.
 - Hole punches: `11`, `12`, and `32`.
 - Drill press or punch press for steel cups/inserts.
-- Lathe, boring tool, waterjet, die cutter, or clean band-knife setup for circular rubber.
+- Waterjet, punch, die cutter, mill, or clean band-knife setup for square/flat rubber.
 - Clamps and flat plates for bonded strip parts.
 - Durometer tester, Shore A.
 
@@ -369,7 +370,7 @@ Before accepting the batch:
 - Confirm the fabricator supplied the material declaration and inspection report.
 - Confirm every bag is labeled by part ID, quantity, batch/date, and side/station where applicable.
 - Confirm the first-article set passed before full production was released.
-- Check every OD, ID, and height against the table.
+- Check every length, width, thickness, bore, hole, and height against the table.
 - Check hardness on at least one piece from each rubber family.
 - Test each sleeve through the rubber and cup with an M10 bolt.
 - Confirm the sleeve prevents over-crush before final body fastening.
@@ -381,10 +382,10 @@ Before accepting the batch:
 | Hold | Why | Must Be Confirmed With |
 | --- | --- | --- |
 | `BM-SLV` sleeve OD and length | Controls compression and final body height | Calipers on old sleeve or complete stack dry-fit |
-| `BM-SM/BM-LG` centre bore | Must match sleeve/cup register | Calipers on old bore and cup boss |
-| `BM-SM` one-piece vs split-stack construction | External `8.4104` reference separates `4145` medium bushings from `4146` bushing seats | Disassemble/inspect old sample and measure pieces individually |
+| `BM-ISO-SM/BM-ISO-LG` station footprint | Square pad must sit on flat bearing area without rocking, edge overhang, or contact with weld/rust lips | Station photo and dry-fit |
+| `BM-ISO-SM/BM-ISO-LG` sleeve/cup/shim stack | Sleeve must control clamp load without over-crushing the pad | Bench dry-stack and vehicle dry-fit |
 | `FS-OVAL` hole spacing and insert OD | Off-plane top photo and corroded insert make image-only reading risky | Calipers on physical pad/insert |
 | `FS-STRIP-L/R` local handed trim and steel retainer remake | Rubber size is now released, but any side-specific end trim or replacement steel retainer still comes from the physical sample | Dry-fit on the actual landing and direct trace from the original steel if the retainer must be remade |
 | Station count and large-pair location | Pre-1/79 pattern is the working basis, but the car may have prior repairs | Mount map during tub dry-fit |
-| Toyota `NO.1` to `NO.5` OE station mapping | OE listing does not reduce cleanly to the current photo-only `BM-SM/BM-LG` family count | Label every body/chassis mount position and reconcile against `data/manual/rubber_recreation_toyota_oe_cross_reference.csv` |
+| Toyota `NO.1` to `NO.5` OE station mapping | OE listing does not reduce cleanly to the current `BM-ISO-SM/BM-ISO-LG` family count | Label every body/chassis mount position and reconcile against `data/manual/rubber_recreation_toyota_oe_cross_reference.csv` |
 | OE shim/spacer thickness | Some Toyota spacer rows publish thickness, but most cushion spacers do not | Use Toyota thickness rows where available; measure original spacers and shims before copying |
