@@ -19,6 +19,8 @@ Use it with:
 - `../rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf` / `.svg` - BM-ISO-SM square pad 2D control.
 - `../rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf` / `.svg` - BM-ISO-LG square pad 2D control.
 - `../rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf` / `.svg` - bump-stop saddle hole, pitch, height, and vehicle-measurement control.
+- `../rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg` - vehicle-location map for the rubber families in this order.
+- `../rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg` - complete SVG preview showing the active and hold/reference chassis-rubber controls together.
 
 The OpenSCAD files are the source 3D controls. The SVG/DXF files are the 2D shop controls. The HTML/SVG bundle visual is for orientation and communication.
 
@@ -33,5 +35,7 @@ The measured old-rubber photos are the quote and first-article basis for the cur
 - Bump stops: height and Toyota-style construction are controlled; base, saddle, bolt, and strike geometry are vehicle-measurement controlled.
 
 Steel sleeves, cup/seat washers, bolts, shims, and retainers are separate hardware controls, not Longman rubber mould geometry.
+
+Vehicle location is controlled by `../rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg`: main body pads sit in the tub-to-chassis mount stack, `FS-OVAL` and `FS-STRIP-L/R` sit at the separate front-support/body-support landings, long bump stops cover front-left and both rear axle stations, and the short bump stop is right-front only.
 
 Hold-only items remain separate from the quote-ready rubber: full-width/body liner strips and exhaust hanger cushion production need an actual sample, installed path, or tracing before ordering.

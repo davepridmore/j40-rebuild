@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-28T17:25:30+05:00",
+  "generated_at": "2026-05-28T17:40:10+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -17602,6 +17602,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "order_id": "BM-ISO-SM",
           "part": "Main body isolator pad small stations",
+          "vehicle_location": "Main tub-to-chassis mount stack: middle/rear small stations plus any small front/cowl stations after station layout.",
           "required_qty": "10",
           "optional_spare_qty": "2",
           "spec": "Square flat body isolator pad; flat parallel top and bottom bearing faces",
@@ -17666,6 +17667,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "order_id": "BM-ISO-LG",
           "part": "Main body isolator pad large stations",
+          "vehicle_location": "Main tub-to-chassis mount stack: larger front or primary load stations, final side/station confirmed during layout.",
           "required_qty": "2",
           "optional_spare_qty": "1",
           "spec": "Square flat body isolator pad; flat parallel top and bottom bearing faces",
@@ -17730,6 +17732,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "order_id": "FS-OVAL",
           "part": "Two-hole front-support isolator pad",
+          "vehicle_location": "Separate front support / nose-extension isolator positions, left and right, not the main tub body-mount stack.",
           "required_qty": "2",
           "optional_spare_qty": "0",
           "spec": "Oval/capsule front-support isolator pad",
@@ -17782,6 +17785,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "order_id": "FS-STRIP-L",
           "part": "Underfloor body-support strip liner left",
+          "vehicle_location": "Left underfloor front-support/body-support landing; anti-squeak or body-support strip beside the front support pickup.",
           "required_qty": "1",
           "optional_spare_qty": "0",
           "spec": "Plain flat underfloor body-support strip; no stepped section",
@@ -17870,6 +17874,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "order_id": "FS-STRIP-R",
           "part": "Underfloor body-support strip liner right",
+          "vehicle_location": "Right underfloor front-support/body-support landing; mate to the left plain strip unless dry-fit proves handed trim.",
           "required_qty": "1",
           "optional_spare_qty": "0",
           "spec": "Plain flat underfloor body-support strip; same blank as left unless dry-fit proves handed trim",
@@ -17946,6 +17951,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "order_id": "BUMP-60010-LONG",
           "part": "Long axle-to-chassis bump stop front-left and both rear",
+          "vehicle_location": "Axle-to-chassis bump-stop brackets: front-left plus rear-left and rear-right stations.",
           "required_qty": "3",
           "optional_spare_qty": "0",
           "spec": "Toyota-style progressive stop with new two-ear steel saddle and flat rectangular strike face",
@@ -17998,6 +18004,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "order_id": "BUMP-60020-SHORT",
           "part": "Short right-front axle-to-chassis bump stop",
+          "vehicle_location": "Axle-to-chassis bump-stop bracket: right-front station only.",
           "required_qty": "1",
           "optional_spare_qty": "0",
           "spec": "Toyota-style progressive stop with new two-ear steel saddle and flat rectangular strike face",
@@ -18050,6 +18057,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "order_id": "BODY-LINER-FULL-WIDTH-HOLD",
           "part": "Long or full-width flat body/panel liner strips",
+          "vehicle_location": "Unknown continuous body/panel liner path; possible tub-to-chassis, apron, floor crossmember, sill, or panel joint only after proof.",
           "required_qty": "hold",
           "optional_spare_qty": "hold",
           "spec": "Not yet captured as orderable pieces; quote only after the actual strips are found or the body/chassis station proves a continuous flat anti-squeak liner is required",
@@ -18081,6 +18089,7 @@ window.J40_DASHBOARD_DATA = {
         {
           "order_id": "EXH-HGR-90917",
           "part": "Exhaust teardrop hanger cushion",
+          "vehicle_location": "Exhaust tailpipe/rear support hanger location; hold until real fitted support geometry or sample proves it belongs in this batch.",
           "required_qty": "hold",
           "optional_spare_qty": "hold",
           "spec": "Optional later teardrop rubber-metal exhaust cushion only if sample or installed geometry releases final shape",
@@ -22703,7 +22712,7 @@ window.J40_DASHBOARD_DATA = {
           "title": "Longman rubber order 2026-05-08",
           "current_status": "current_release",
           "release_position": "Longman quote pack uses square BM-ISO-SM/BM-ISO-LG body pads, FS-OVAL pads, first-article underfloor FS-STRIP-L/R flat strips, first-article bump stops, and hold rows only for any still-unidentified full-width liners.",
-          "notes": "Steel cup/seat washers, sleeves, shims, and bolts are separate hardware. The supplier-facing strip release is now the plain 165 x 38 x 8 mm rubber pair. The Longman handoff now includes paired SVG/DXF controls for BM-ISO-SM, BM-ISO-LG, FS-OVAL, FS-STRIP-L/R, and the bump-stop vehicle measurement drawing, plus interactive/static 3D visualisation and OpenSCAD source models.",
+          "notes": "Steel cup/seat washers, sleeves, shims, and bolts are separate hardware. The supplier-facing strip release is now the plain 165 x 38 x 8 mm rubber pair. The Longman handoff now includes paired SVG/DXF controls for BM-ISO-SM, BM-ISO-LG, FS-OVAL, FS-STRIP-L/R, and the bump-stop vehicle measurement drawing, plus the chassis location map, complete all-drawings SVG preview, interactive/static 3D visualisation, and OpenSCAD source models.",
           "package_dir": "data/manual/fabrication/longman_rubber_order_20260508",
           "primary_links": [
             {
@@ -22731,6 +22740,14 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.svg",
               "label": "Static 3D visualisation"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
+              "label": "Chassis rubber location map"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
+              "label": "Complete chassis rubber drawing preview"
             }
           ],
           "model_links": [
@@ -22850,15 +22867,23 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
               "label": "bump_stop_vehicle_measurement_control.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
+              "label": "chassis_rubber_location_map_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
+              "label": "chassis_rubber_all_drawings_preview_rev_a.svg"
             }
           ],
           "archive_link": {
             "url": "../../deliverables/fabrication_packages/longman_rubber_order_20260508.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 147740
+            "bytes": 171970
           },
-          "file_count": 31
+          "file_count": 35
         }
       ],
       "chassis_bracket_analysis_register": [],
@@ -22964,6 +22989,16 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
               "label": "Static 3D visualisation",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
+              "label": "Chassis rubber location map SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
+              "label": "Complete chassis rubber drawing preview SVG",
               "download": true
             },
             {
@@ -23218,6 +23253,16 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
               "label": "Static 3D visualisation",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
+              "label": "Chassis rubber location map SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
+              "label": "Complete chassis rubber drawing preview SVG",
               "download": true
             },
             {
@@ -23553,6 +23598,16 @@ window.J40_DASHBOARD_DATA = {
               "download": true
             },
             {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
+              "label": "Chassis rubber location map SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
+              "label": "Complete chassis rubber drawing preview SVG",
+              "download": true
+            },
+            {
               "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
               "label": "Bump-stop fabrication spec",
               "download": true
@@ -23765,6 +23820,16 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
               "label": "Static 3D visualisation",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
+              "label": "Chassis rubber location map SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
+              "label": "Complete chassis rubber drawing preview SVG",
               "download": true
             },
             {
@@ -70214,6 +70279,16 @@ window.J40_DASHBOARD_DATA = {
             "download": true
           },
           {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
+            "label": "Chassis rubber location map SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
+            "label": "Complete chassis rubber drawing preview SVG",
+            "download": true
+          },
+          {
             "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
             "label": "Bump-stop fabrication spec",
             "download": true
@@ -70461,6 +70536,16 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
             "label": "Static 3D visualisation",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
+            "label": "Chassis rubber location map SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
+            "label": "Complete chassis rubber drawing preview SVG",
             "download": true
           },
           {
@@ -70788,6 +70873,16 @@ window.J40_DASHBOARD_DATA = {
             "download": true
           },
           {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
+            "label": "Chassis rubber location map SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
+            "label": "Complete chassis rubber drawing preview SVG",
+            "download": true
+          },
+          {
             "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
             "label": "Bump-stop fabrication spec",
             "download": true
@@ -70998,6 +71093,16 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
             "label": "Static 3D visualisation",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
+            "label": "Chassis rubber location map SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
+            "label": "Complete chassis rubber drawing preview SVG",
             "download": true
           },
           {
@@ -78601,6 +78706,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "order_id": "BM-ISO-SM",
         "part": "Main body isolator pad small stations",
+        "vehicle_location": "Main tub-to-chassis mount stack: middle/rear small stations plus any small front/cowl stations after station layout.",
         "required_qty": "10",
         "optional_spare_qty": "2",
         "spec": "Square flat body isolator pad; flat parallel top and bottom bearing faces",
@@ -78665,6 +78771,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "order_id": "BM-ISO-LG",
         "part": "Main body isolator pad large stations",
+        "vehicle_location": "Main tub-to-chassis mount stack: larger front or primary load stations, final side/station confirmed during layout.",
         "required_qty": "2",
         "optional_spare_qty": "1",
         "spec": "Square flat body isolator pad; flat parallel top and bottom bearing faces",
@@ -78729,6 +78836,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "order_id": "FS-OVAL",
         "part": "Two-hole front-support isolator pad",
+        "vehicle_location": "Separate front support / nose-extension isolator positions, left and right, not the main tub body-mount stack.",
         "required_qty": "2",
         "optional_spare_qty": "0",
         "spec": "Oval/capsule front-support isolator pad",
@@ -78781,6 +78889,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "order_id": "FS-STRIP-L",
         "part": "Underfloor body-support strip liner left",
+        "vehicle_location": "Left underfloor front-support/body-support landing; anti-squeak or body-support strip beside the front support pickup.",
         "required_qty": "1",
         "optional_spare_qty": "0",
         "spec": "Plain flat underfloor body-support strip; no stepped section",
@@ -78869,6 +78978,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "order_id": "FS-STRIP-R",
         "part": "Underfloor body-support strip liner right",
+        "vehicle_location": "Right underfloor front-support/body-support landing; mate to the left plain strip unless dry-fit proves handed trim.",
         "required_qty": "1",
         "optional_spare_qty": "0",
         "spec": "Plain flat underfloor body-support strip; same blank as left unless dry-fit proves handed trim",
@@ -78945,6 +79055,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "order_id": "BUMP-60010-LONG",
         "part": "Long axle-to-chassis bump stop front-left and both rear",
+        "vehicle_location": "Axle-to-chassis bump-stop brackets: front-left plus rear-left and rear-right stations.",
         "required_qty": "3",
         "optional_spare_qty": "0",
         "spec": "Toyota-style progressive stop with new two-ear steel saddle and flat rectangular strike face",
@@ -78997,6 +79108,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "order_id": "BUMP-60020-SHORT",
         "part": "Short right-front axle-to-chassis bump stop",
+        "vehicle_location": "Axle-to-chassis bump-stop bracket: right-front station only.",
         "required_qty": "1",
         "optional_spare_qty": "0",
         "spec": "Toyota-style progressive stop with new two-ear steel saddle and flat rectangular strike face",
@@ -79049,6 +79161,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "order_id": "BODY-LINER-FULL-WIDTH-HOLD",
         "part": "Long or full-width flat body/panel liner strips",
+        "vehicle_location": "Unknown continuous body/panel liner path; possible tub-to-chassis, apron, floor crossmember, sill, or panel joint only after proof.",
         "required_qty": "hold",
         "optional_spare_qty": "hold",
         "spec": "Not yet captured as orderable pieces; quote only after the actual strips are found or the body/chassis station proves a continuous flat anti-squeak liner is required",
@@ -79080,6 +79193,7 @@ window.J40_DASHBOARD_DATA = {
       {
         "order_id": "EXH-HGR-90917",
         "part": "Exhaust teardrop hanger cushion",
+        "vehicle_location": "Exhaust tailpipe/rear support hanger location; hold until real fitted support geometry or sample proves it belongs in this batch.",
         "required_qty": "hold",
         "optional_spare_qty": "hold",
         "spec": "Optional later teardrop rubber-metal exhaust cushion only if sample or installed geometry releases final shape",
@@ -98523,6 +98637,16 @@ window.J40_DASHBOARD_DATA = {
               "download": true
             },
             {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
+              "label": "Chassis rubber location map SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
+              "label": "Complete chassis rubber drawing preview SVG",
+              "download": true
+            },
+            {
               "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
               "label": "Bump-stop fabrication spec",
               "download": true
@@ -98777,6 +98901,16 @@ window.J40_DASHBOARD_DATA = {
               "download": true
             },
             {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
+              "label": "Chassis rubber location map SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
+              "label": "Complete chassis rubber drawing preview SVG",
+              "download": true
+            },
+            {
               "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
               "label": "Bump-stop fabrication spec",
               "download": true
@@ -98989,6 +99123,16 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
               "label": "Static 3D visualisation",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
+              "label": "Chassis rubber location map SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
+              "label": "Complete chassis rubber drawing preview SVG",
               "download": true
             },
             {
@@ -99282,6 +99426,16 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
               "label": "Static 3D visualisation",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
+              "label": "Chassis rubber location map SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
+              "label": "Complete chassis rubber drawing preview SVG",
               "download": true
             },
             {
@@ -110885,6 +111039,16 @@ window.J40_DASHBOARD_DATA = {
             "download": true
           },
           {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
+            "label": "Chassis rubber location map SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
+            "label": "Complete chassis rubber drawing preview SVG",
+            "download": true
+          },
+          {
             "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
             "label": "Bump-stop fabrication spec",
             "download": true
@@ -111178,6 +111342,16 @@ window.J40_DASHBOARD_DATA = {
             "download": true
           },
           {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
+            "label": "Chassis rubber location map SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
+            "label": "Complete chassis rubber drawing preview SVG",
+            "download": true
+          },
+          {
             "url": "../../docs/bump-stop-fabrication-spec-20260504.md",
             "label": "Bump-stop fabrication spec",
             "download": true
@@ -111390,6 +111564,16 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
             "label": "Static 3D visualisation",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
+            "label": "Chassis rubber location map SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
+            "label": "Complete chassis rubber drawing preview SVG",
             "download": true
           },
           {
@@ -111946,6 +112130,16 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
             "label": "Static 3D visualisation",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
+            "label": "Chassis rubber location map SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
+            "label": "Complete chassis rubber drawing preview SVG",
             "download": true
           },
           {

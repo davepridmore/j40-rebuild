@@ -8,6 +8,8 @@ Current supplier pack:
 
 - [Longman rubber order spec](longman-rubber-order-spec-20260508.md)
 - [Longman rubber order CSV](../data/manual/longman_rubber_order_specs.csv)
+- [Chassis rubber location map](../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg)
+- [Complete chassis rubber SVG preview](../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg)
 - [Parametric 3D rubber models](../data/manual/fabrication/rubber_recreation_rev_a/models_3d/README.md)
 - [Bump-stop fabrication spec](bump-stop-fabrication-spec-20260504.md)
 
@@ -32,6 +34,19 @@ Critical controls:
 - Solid new automotive rubber only: no tyre rubber, crumb rubber, sponge, foam, mixed offcuts, salvage rubber, or unmarked old stock.
 
 Preferred custom shape for the main pads is square. Release trimming only if a later station photo proves a specific corner or edge needs relief.
+
+## Location And Coverage Check
+
+The current Toyota GR Heritage 40-series list checked on 2026-05-28 does not expose a complete body/chassis rubber kit for this scope. EPC-style Toyota listings and aftermarket suppliers do confirm the usual body-mount cushion/spacer/shim families and early/late 40-series kit splits. That confirms the required families exist, but it does not replace this vehicle's station map, dry-stack checks, or the current Longman square-pad route. The source links are recorded in [Longman rubber order spec](longman-rubber-order-spec-20260508.md).
+
+Use `../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg` as the dashboard/install location guide:
+
+- `BM-ISO-SM` and `BM-ISO-LG`: main tub-to-chassis mount stack.
+- `FS-OVAL`: separate left/right front support / nose-extension isolators.
+- `FS-STRIP-L/R`: left/right underfloor front-support/body-support strip landings.
+- `BUMP-60010-LONG`: front-left and both rear axle-to-chassis bump-stop stations.
+- `BUMP-60020-SHORT`: right-front axle-to-chassis bump-stop station only.
+- `BODY-LINER-FULL-WIDTH-HOLD` and `EXH-HGR-90917`: visible in the preview only as hold/reference controls.
 
 ## Rubber Order Lines
 

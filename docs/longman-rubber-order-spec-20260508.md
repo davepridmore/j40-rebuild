@@ -23,6 +23,33 @@ Use this distinction:
 
 For this Longman order, `BM-ISO-SM`, `BM-ISO-LG`, `FS-OVAL`, `FS-STRIP-L`, and `FS-STRIP-R` are released for quote and first article. The two bump-stop families are released for first-article discussion on height and Toyota-style construction, but their base, bolt pattern, and strike-face offsets remain vehicle-measured before mould release. `BODY-LINER-FULL-WIDTH-HOLD` and `EXH-HGR-90917` remain hold-only.
 
+## Vehicle Location And Kit Check
+
+The current Toyota GR Heritage 40-series list checked on 2026-05-28 does not expose a complete body/chassis rubber kit for this area. Toyota EPC-style body-mount rows and aftermarket suppliers do show normal NO.1-NO.5 body-mount cushion/spacer/shim families and early/late 40-series kit splits, but no checked source replaces the need to map this vehicle's stations, sleeves, cups, shims, and dry-stack height. Therefore the active route remains the single Longman custom rubber bundle unless the project deliberately switches to a complete matched OE/reproduction package.
+
+Checked sources:
+
+- Toyota GR Heritage Land Cruiser 40 parts list: https://toyotagazooracing.com/-/media/TMC/tgr/global/contents/gr/heritage/pdf/2024/Landcruiser40_en.pdf
+- Toyota EPC-style BJ40 cab/body mounting row: https://toyota-general.epc-data.com/land_cruiser/bj40/8406/body/5251/52254/
+- Toyota 90560-12009 body-mount spacer listing: https://www.toyotapartsdeal.com/oem/toyota~spacer~for~body~mount~no~2~cushion~90560-12009.html
+- Example late-40 aftermarket body mount kit split: https://shop.cruiserparts.net/index.php?main_page=product_info&products_id=1821
+
+Vehicle location controls:
+
+- `BM-ISO-SM`: main tub-to-chassis small stations, currently expected at middle/rear small stations and any small front/cowl station after layout.
+- `BM-ISO-LG`: main tub-to-chassis larger front or primary load stations; final side/station confirmed during layout.
+- `FS-OVAL`: separate front support / nose-extension isolator positions, left and right, not the main tub body-mount stack.
+- `FS-STRIP-L/R`: left and right underfloor front-support/body-support strip landings beside the front support pickups.
+- `BUMP-60010-LONG`: front-left plus rear-left and rear-right axle-to-chassis bump-stop stations.
+- `BUMP-60020-SHORT`: right-front axle-to-chassis bump-stop station only.
+- `BODY-LINER-FULL-WIDTH-HOLD`: unknown full-width body/panel liner path; hold until a real strip or installed path proves it.
+- `EXH-HGR-90917`: exhaust tailpipe/rear support hanger reference; hold until sample or fitted support geometry proves it.
+
+Location and complete drawing previews are included in the handoff:
+
+- `data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg`
+- `data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg`
+
 ## Copy/Paste Request
 
 Need quote and manufacturing advice for custom new rubber parts for an older Toyota Land Cruiser J40 restoration. The body-to-chassis pieces are simple flat isolator pads, not precision socket-matched bushings. For the custom order, use square flat pads as the preferred shape because there is no visible molded chassis/tub socket that needs a round outside profile. The important controls are installed height, sleeve/hole fit, rubber firmness, flat bearing area, and no overhang onto bends, seams, weld lips, or thin/rusted edges.
@@ -74,7 +101,7 @@ The body pads are not shape-matched to a molded chassis socket. The important co
 
 For initial quote, use the square dimensions in the table. If any station needs corner trimming or a relieved edge, release that exact trimmed shape after the landing-face photos are checked.
 
-2D SVG/DXF controls for the current square body pads are `data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.*` and `data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.*`. 3D model files for the current quote geometry are in `data/manual/fabrication/rubber_recreation_rev_a/models_3d/`. The body-pad models default to `hole_d = 18.0`, based on Toyota `90560-12009` spacer evidence. Production release uses the 18.0 mm bore; `hole_d = 0` is a non-release CAD override only.
+2D SVG/DXF controls for the current square body pads are `data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.*` and `data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.*`. The complete dashboard preview is `data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg`, and the vehicle-use map is `data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg`. 3D model files for the current quote geometry are in `data/manual/fabrication/rubber_recreation_rev_a/models_3d/`. The body-pad models default to `hole_d = 18.0`, based on Toyota `90560-12009` spacer evidence. Production release uses the 18.0 mm bore; `hole_d = 0` is a non-release CAD override only.
 
 ## Bump Stop Shape
 

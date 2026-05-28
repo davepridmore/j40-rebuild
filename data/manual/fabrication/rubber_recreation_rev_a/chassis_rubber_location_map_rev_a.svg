@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="760" viewBox="0 0 1180 760" role="img" aria-labelledby="title desc">
+  <title id="title">J40 chassis rubber vehicle location map</title>
+  <desc id="desc">Top and side location map showing where the body isolator pads, front support pads, underfloor strips, bump stops, and hold-only rubber references sit on the vehicle.</desc>
+  <rect width="1180" height="760" fill="#f7f7f4"/>
+  <style>
+    .title { font: 700 25px Arial, sans-serif; fill: #111; }
+    .subtitle { font: 14px Arial, sans-serif; fill: #333; }
+    .label { font: 13px Arial, sans-serif; fill: #222; }
+    .small { font: 11px Arial, sans-serif; fill: #333; }
+    .tiny { font: 10px Arial, sans-serif; fill: #333; }
+    .frame { fill: none; stroke: #263238; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+    .cross { stroke: #6d7478; stroke-width: 4; stroke-linecap: round; }
+    .body { fill: #e9e2d4; stroke: #7d7568; stroke-width: 2.2; }
+    .axle { stroke: #24272b; stroke-width: 6; stroke-linecap: round; }
+    .wheel { fill: #3e4247; stroke: #111; stroke-width: 2; }
+    .body-pad { fill: #2e7d32; stroke: #0f3d16; stroke-width: 2; }
+    .large-pad { fill: #66a061; stroke: #0f3d16; stroke-width: 2; }
+    .front-support { fill: #1565c0; stroke: #0b355f; stroke-width: 2; }
+    .strip { fill: #8e24aa; stroke: #42104e; stroke-width: 2; }
+    .bump { fill: #c43a31; stroke: #6f1c17; stroke-width: 2; }
+    .hold { fill: #f0c14b; stroke: #8a6500; stroke-width: 2; stroke-dasharray: 5 4; }
+    .exh { fill: #ef7d22; stroke: #7a3300; stroke-width: 2; stroke-dasharray: 5 4; }
+    .callout { stroke: #2364aa; stroke-width: 1.8; fill: none; marker-end: url(#arrowBlue); }
+    .legend-box { fill: #fff; stroke: #d6d0c4; stroke-width: 1.2; }
+    .station-line { stroke: #9a9a9a; stroke-width: 1.2; stroke-dasharray: 4 4; }
+  </style>
+  <defs>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2364aa"/>
+    </marker>
+  </defs>
+
+  <text x="36" y="44" class="title">J40 Chassis Rubber Location Map - Rev A</text>
+  <text x="36" y="70" class="subtitle">Location view for the consolidated Longman rubber bundle. Hardware, sleeves, cups, shims, and bolts remain separate stack controls.</text>
+
+  <text x="72" y="124" class="label">Top view - front at left</text>
+  <g transform="translate(78,148)">
+    <path class="frame" d="M70 86 C170 40 720 40 820 86 M70 248 C170 294 720 294 820 248"/>
+    <line class="cross" x1="112" y1="86" x2="112" y2="248"/>
+    <line class="cross" x1="286" y1="66" x2="286" y2="268"/>
+    <line class="cross" x1="466" y1="58" x2="466" y2="276"/>
+    <line class="cross" x1="646" y1="66" x2="646" y2="268"/>
+    <line class="cross" x1="790" y1="98" x2="790" y2="236"/>
+    <rect x="210" y="72" width="520" height="190" rx="34" class="body"/>
+    <rect x="92" y="116" width="92" height="102" rx="14" class="body"/>
+    <line class="axle" x1="110" y1="38" x2="110" y2="296"/>
+    <line class="axle" x1="740" y1="48" x2="740" y2="286"/>
+    <circle class="wheel" cx="110" cy="30" r="30"/>
+    <circle class="wheel" cx="110" cy="304" r="30"/>
+    <circle class="wheel" cx="740" cy="40" r="30"/>
+    <circle class="wheel" cx="740" cy="294" r="30"/>
+
+    <rect class="large-pad" x="252" y="84" width="30" height="30" rx="4"/>
+    <rect class="large-pad" x="252" y="220" width="30" height="30" rx="4"/>
+    <rect class="body-pad" x="398" y="76" width="27" height="27" rx="4"/>
+    <rect class="body-pad" x="398" y="231" width="27" height="27" rx="4"/>
+    <rect class="body-pad" x="556" y="84" width="27" height="27" rx="4"/>
+    <rect class="body-pad" x="556" y="222" width="27" height="27" rx="4"/>
+    <rect class="front-support" x="130" y="114" width="26" height="48" rx="13"/>
+    <rect class="front-support" x="130" y="172" width="26" height="48" rx="13"/>
+    <rect class="strip" x="194" y="106" width="78" height="18" rx="4"/>
+    <rect class="strip" x="194" y="210" width="78" height="18" rx="4"/>
+    <rect class="bump" x="84" y="58" width="44" height="26" rx="5"/>
+    <rect class="bump" x="84" y="250" width="44" height="26" rx="5"/>
+    <rect class="bump" x="714" y="68" width="44" height="26" rx="5"/>
+    <rect class="bump" x="714" y="238" width="44" height="26" rx="5"/>
+    <rect class="hold" x="354" y="156" width="210" height="20" rx="5"/>
+    <path class="exh" d="M686 198 C720 206 748 226 766 256 L745 268 C728 244 704 230 676 224 Z"/>
+
+    <line class="station-line" x1="267" y1="72" x2="267" y2="262"/>
+    <line class="station-line" x1="412" y1="72" x2="412" y2="262"/>
+    <line class="station-line" x1="570" y1="72" x2="570" y2="262"/>
+
+    <text class="tiny" x="244" y="66">main front pair</text>
+    <text class="tiny" x="386" y="66">main middle pair</text>
+    <text class="tiny" x="544" y="66">main rear pair</text>
+    <text class="tiny" x="74" y="330">FL/RF bump stops on front axle-to-chassis brackets</text>
+    <text class="tiny" x="652" y="330">rear bump stops on rear axle-to-chassis brackets</text>
+  </g>
+
+  <text x="72" y="538" class="label">Side view - stack relationship</text>
+  <g transform="translate(80,560)">
+    <path class="frame" d="M80 78 C220 42 590 42 730 78"/>
+    <rect x="210" y="18" width="455" height="48" rx="12" class="body"/>
+    <rect class="body-pad" x="260" y="66" width="36" height="26" rx="4"/>
+    <rect class="body-pad" x="412" y="66" width="36" height="26" rx="4"/>
+    <rect class="body-pad" x="566" y="66" width="36" height="26" rx="4"/>
+    <rect class="front-support" x="128" y="48" width="26" height="44" rx="13"/>
+    <rect class="strip" x="174" y="58" width="76" height="15" rx="3"/>
+    <rect class="bump" x="92" y="104" width="48" height="36" rx="6"/>
+    <rect class="bump" x="640" y="104" width="48" height="36" rx="6"/>
+    <line class="axle" x1="78" y1="150" x2="164" y2="150"/>
+    <line class="axle" x1="626" y1="150" x2="712" y2="150"/>
+    <text class="tiny" x="244" y="110">main tub pads sit between tub and chassis landings</text>
+    <text class="tiny" x="104" y="30">front support pads/strips</text>
+    <text class="tiny" x="56" y="174">front bump stop</text>
+    <text class="tiny" x="616" y="174">rear bump stop</text>
+  </g>
+
+  <g transform="translate(894,118)">
+    <rect class="legend-box" x="0" y="0" width="244" height="470" rx="8"/>
+    <text class="label" x="18" y="30">Legend and coverage</text>
+    <rect class="body-pad" x="18" y="52" width="20" height="20" rx="3"/>
+    <text class="small" x="48" y="67">BM-ISO-SM, main small pads</text>
+    <rect class="large-pad" x="18" y="84" width="20" height="20" rx="3"/>
+    <text class="small" x="48" y="99">BM-ISO-LG, main large pair</text>
+    <rect class="front-support" x="18" y="116" width="20" height="28" rx="10"/>
+    <text class="small" x="48" y="134">FS-OVAL, front support</text>
+    <rect class="strip" x="18" y="156" width="44" height="12" rx="3"/>
+    <text class="small" x="72" y="167">FS-STRIP-L/R</text>
+    <rect class="bump" x="18" y="190" width="34" height="18" rx="4"/>
+    <text class="small" x="62" y="204">BUMP-60010/60020</text>
+    <rect class="hold" x="18" y="226" width="48" height="16" rx="4"/>
+    <text class="small" x="76" y="238">full-width liner hold</text>
+    <path class="exh" d="M18 270 C38 272 54 284 64 302 L50 310 C41 295 30 288 14 284 Z"/>
+    <text class="small" x="76" y="296">exhaust hanger hold</text>
+    <text class="small" x="18" y="342">Main pads are location-mapped</text>
+    <text class="small" x="18" y="360">by station; final Toyota NO.1-</text>
+    <text class="small" x="18" y="378">NO.5 identity remains layout</text>
+    <text class="small" x="18" y="396">and dry-stack controlled.</text>
+    <text class="small" x="18" y="430">This map is an install guide,</text>
+    <text class="small" x="18" y="448">not a cutting profile.</text>
+  </g>
+
+  <path class="callout" d="M940 238 C858 222 824 216 760 218"/>
+  <path class="callout" d="M936 316 C834 326 748 342 704 402"/>
+</svg>

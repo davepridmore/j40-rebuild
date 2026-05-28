@@ -18,9 +18,13 @@ Use it with:
 - `fabricator_cut_list.csv` - file-by-file cut/form list
 - `inspection_checklist.csv` - receiving and first-article inspection checks
 - `models_3d/` - parametric OpenSCAD 3D models and old-part closure questions
+- `chassis_rubber_location_map_rev_a.svg` - vehicle-location map for body pads, front-support rubbers, strips, bump stops, and hold-only references
+- `chassis_rubber_all_drawings_preview_rev_a.svg` - complete SVG preview sheet showing every current and hold chassis-rubber drawing control
 
 ## DXF / SVG Parts
 
+- `chassis_rubber_location_map_rev_a.svg` - dashboard/location guide only; not a manufacturing cut profile
+- `chassis_rubber_all_drawings_preview_rev_a.svg` - combined preview only; individual SVG/DXF files remain the manufacturing controls
 - `bm_iso_sm_square_pad_rev_a.dxf` / `bm_iso_sm_square_pad_rev_a.svg` - active BM-ISO-SM square body isolator pad, `70 x 70 x 22`, `18.0 mm` centre bore, qty `10 + 2 spares`
 - `bm_iso_lg_square_pad_rev_a.dxf` / `bm_iso_lg_square_pad_rev_a.svg` - active BM-ISO-LG square body isolator pad, `80 x 80 x 24`, `18.0 mm` centre bore, qty `2 + 1 spare`
 - `bm_sm_body_mount_cushion_rev_a.dxf` / `bm_sm_body_mount_cushion_rev_a.svg` - legacy BM-SM small circular body-mount reference, superseded for the current Longman order by `bm_iso_sm_square_pad_rev_a.*` and `models_3d/bm_iso_sm_square_pad.scad`

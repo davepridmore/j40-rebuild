@@ -1493,6 +1493,7 @@
       id: "BM-ISO-SM",
       part: "Main body isolator pad, small stations",
       qty: "10 + 2 spares",
+      location: "Main tub-to-chassis mount stack: middle/rear small stations plus any small front/cowl stations after station layout.",
       image: "../../photos/20260405_234652.jpg",
       imageCaption: "Tub-side body-mount landing context",
       spec: "Custom square flat pad 70 x 70 x 22; flat parallel faces; light edge radius/chamfer; 18.0 mm through bore for Toyota 90560-12009 style body-mount spacer/crush tube.",
@@ -1509,6 +1510,7 @@
       id: "BM-ISO-LG",
       part: "Main body isolator pad, large stations",
       qty: "2 + 1 spare",
+      location: "Main tub-to-chassis mount stack: larger front or primary load stations, final side/station confirmed during layout.",
       image: "../../photos/20260405_234652.jpg",
       imageCaption: "Tub-side body-mount landing context",
       spec: "Custom square flat pad 80 x 80 x 24; flat parallel faces; light edge radius/chamfer; same compound batch as BM-ISO-SM where possible; 18.0 mm through bore for Toyota 90560-12009 style spacer.",
@@ -1525,6 +1527,7 @@
       id: "FS-OVAL",
       part: "Front-support two-hole oval pad",
       qty: "2",
+      location: "Separate front support / nose-extension isolator positions, left and right, not the main tub body-mount stack.",
       image: "../../photos/20260502_004345_gp_yK8VYzMQ.jpg",
       imageCaption: "Front-support two-hole oval pad",
       spec: "Origin lower-left of 64 x 96 plan; outer capsule 64 wide x 96 long with R32 ends; thickness 15; through holes 12 at X32 Y16 and X32 Y80; relief pocket 36 x 18 R3 at X14 Y39; insert/boss mark 29 at X32 Y16.",
@@ -1539,6 +1542,7 @@
       id: "FS-STRIP-L",
       part: "Underfloor body-support strip liner left",
       qty: "1",
+      location: "Left underfloor front-support/body-support landing; anti-squeak or body-support strip beside the front support pickup.",
       image: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg",
       imageCaption: "Left strip SVG control; first article released",
       spec: "Flat strip 165 x 38 x 8; plain rubber strip only; smooth edges and flat parallel faces; no stepped section and no through-holes by default.",
@@ -1553,6 +1557,7 @@
       id: "FS-STRIP-R",
       part: "Underfloor body-support strip liner right",
       qty: "1",
+      location: "Right underfloor front-support/body-support landing; mate to the left plain strip unless dry-fit proves handed trim.",
       image: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg",
       imageCaption: "Right strip SVG control; first article released",
       spec: "Same as left: flat strip 165 x 38 x 8; plain rubber strip only; use the same blank unless the right-side sample proves a handed end trim.",
@@ -1567,6 +1572,7 @@
       id: "BUMP-60010-LONG",
       part: "Long axle-to-chassis bump stop: front-left and both rear",
       qty: "3",
+      location: "Axle-to-chassis bump-stop brackets: front-left plus rear-left and rear-right stations.",
       image: "../../photos/20260502_004222_gp_PKRe5HSQ.jpg",
       imageCaption: "Broken old bump-stop fragments with tape reference",
       spec: "Toyota-style progressive bump stop, free height 70 +/-1; two-ear steel saddle/backing plate; tapered/radiused rubber body; flat rectangular strike face. Use the old fragments as shape evidence only.",
@@ -1582,6 +1588,7 @@
       id: "BUMP-60020-SHORT",
       part: "Short right-front axle-to-chassis bump stop",
       qty: "1",
+      location: "Axle-to-chassis bump-stop bracket: right-front station only.",
       image: "../../photos/20260502_004201_gp_zfUSmKJg.jpg",
       imageCaption: "Broken old bump-stop vertical/scale reference",
       spec: "Same Toyota-style progressive construction as the long stop, but free height 60 +/-1 for the right-front station. Do not make this at 70 unless a deliberate vehicle full-bump test releases trimming.",
@@ -1597,6 +1604,7 @@
       id: "BODY-LINER-FULL-WIDTH-HOLD",
       part: "Long/full-width flat body or panel liner strips",
       qty: "Hold",
+      location: "Unknown continuous body/panel liner path; possible tub-to-chassis, apron, floor crossmember, sill, or panel joint only after proof.",
       image: "../../photos/20260405_234652.jpg",
       imageCaption: "Hold item; needs real full-length liner photos",
       spec: "Possible longer flat strips are not yet captured as orderable pieces. They need full-length photos, traces, holes/slots, thickness, quantity, side/orientation, and installed function before Longman quotes them.",
@@ -1611,6 +1619,7 @@
       id: "EXH-HGR-90917",
       part: "Exhaust pipe teardrop cushion",
       qty: "Hold",
+      location: "Exhaust tailpipe/rear support hanger location; hold until real fitted support geometry or sample proves it belongs in this batch.",
       image: "../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg",
       imageCaption: "Teardrop exhaust cushion CAD; Toyota 90917-08004 is a shape reference",
       spec: "Optional later item only. Target outline 48 x 86, top hole 9, hanger slot 16 x 22, thickness target 22 unless a real sample proves otherwise.",
@@ -1623,29 +1632,67 @@
     },
   ];
 
+  const CHASSIS_RUBBER_LOCATION_MAP_PATH = "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg";
+  const CHASSIS_RUBBER_COMPLETE_DRAWING_PREVIEW_PATH = "../../data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg";
+
   const CHASSIS_RUBBER_REFERENCE_IMAGES = [
-    ["../../photos/20260405_234652.jpg", "Original tub-side body-mount landing context"],
-    ["../../photos/20260405_234546.jpg", "Original underbody mount context"],
-    ["../../photos/20260422_004306_gp_vGlNr2UA.jpg", "Body-off chassis rail body-mount and hard-line context"],
+    [CHASSIS_RUBBER_LOCATION_MAP_PATH, "Vehicle location map: main body pads, front support pads/strips, bump stops, and hold-only references"],
+    [CHASSIS_RUBBER_COMPLETE_DRAWING_PREVIEW_PATH, "Complete SVG preview sheet for every current and hold chassis-rubber control"],
+    ["../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg", "BM-ISO-SM square pad SVG control"],
+    ["../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg", "BM-ISO-LG square pad SVG control"],
+    ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.svg", "FS-OVAL two-hole front-support SVG control"],
+    ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg", "FS-STRIP-L left plain-strip SVG control"],
+    ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg", "FS-STRIP-R right plain-strip SVG control"],
+    ["../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg", "Bump-stop vehicle measurement control with hole/pitch callouts"],
+    ["../../data/manual/fabrication/rubber_recreation_rev_a/body_liner_full_width_hold_control.svg", "Full-width liner hold measurement control"],
+    ["../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg", "Exhaust hanger hold reference SVG"],
     ["../../photos/20260422_004323_gp_JD88KuWQ.jpg", "Body-off chassis body-mount pedestal close-up"],
-    ["../../photos/20260422_004332_gp_7d5uYWQQ.jpg", "Body-off central frame rail and mount context"],
-    ["../../photos/20260517_194143_gp_CO7MuMdA.jpg", "May 17 installed flat rubber/body-mount location proof"],
-    ["../../photos/20260517_194633_gp_rAjY3gjg.jpg", "May 17 opposite-side flat rubber/body-mount location proof"],
-    ["../../photos/20260517_194706_gp_twKRWGFA.jpg", "May 17 tape measurement at flat rubber/body-mount location"],
-    ["../../photos/20260517_193503_gp_N9nHjqXw.jpg", "Loose long rubber strip full-length measurement reference"],
-    ["../../photos/20260517_193539_gp_E0cR9I0A.jpg", "Loose long rubber strip end and width reference"],
-    ["../../photos/20260517_193559_gp_NEpk1hpg.jpg", "Loose long rubber strip width close-up"],
-    ["../../photos/20260517_193612_gp_JmbfR0Tw.jpg", "Loose long rubber strip curved-end measurement reference"],
-    ["../../photos/20260517_193616_gp_1ye19BZA.jpg", "Loose long rubber strip curved-end close-up"],
-    ["../../photos/20260502_004345_gp_yK8VYzMQ.jpg", "Front-support two-hole oval pad"],
-    ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg", "Left underfloor strip first-article control"],
-    ["../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg", "Right underfloor strip first-article control"],
-    ["../../photos/20260502_004222_gp_PKRe5HSQ.jpg", "Bump-stop fragment reference"],
-    ["../../photos/20260502_004201_gp_zfUSmKJg.jpg", "Bump-stop vertical/scale reference"],
-    ["../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg", "Bump-stop vehicle measurement control"],
-    ["../../photos/20260501_193755_gp_cuaY6sgg.jpg", "Rear exhaust and bracket context"],
-    ["../../photos/20260501_193805_gp_VgTc8wYQ.jpg", "Exhaust bracket close reference"],
-    ["../../photos/20260501_193811_gp_uv8kwbxw.jpg", "Tailpipe bracket and holder location reference"],
+    ["../../photos/20260422_004332_gp_7d5uYWQQ.jpg", "Central frame rail and body-mount/crossmember context"],
+    ["../../photos/20260517_194143_gp_CO7MuMdA.jpg", "Left underfloor strip installed-location proof"],
+    ["../../photos/20260517_194633_gp_rAjY3gjg.jpg", "Right underfloor strip installed-location proof"],
+    ["../../photos/20260517_194706_gp_twKRWGFA.jpg", "Installed strip/body-support tape measurement"],
+    ["../../photos/20260517_193503_gp_N9nHjqXw.jpg", "Loose strip full-length measurement"],
+    ["../../photos/20260517_193559_gp_NEpk1hpg.jpg", "Loose strip width close-up"],
+    ["../../photos/20260517_193616_gp_1ye19BZA.jpg", "Loose strip curved-end close-up"],
+    ["../../photos/20260502_004345_gp_yK8VYzMQ.jpg", "Front-support two-hole oval pad measurement photo"],
+    ["../../photos/20260512_100000_user_front_support_radiator_pickups_context.png", "Front support / radiator pickup location context"],
+    ["../../photos/20260502_004222_gp_PKRe5HSQ.jpg", "Bump-stop fragment shape evidence"],
+    ["../../photos/20260502_004201_gp_zfUSmKJg.jpg", "Bump-stop vertical/scale evidence"],
+    ["../../photos/20260422_004254_gp_SplHLSYA.jpg", "Rear axle/chassis bump-stop station context"],
+    ["../../photos/20260501_193841_gp_ZwpHFiMA.jpg", "Front axle/chassis bump-stop station context"],
+  ];
+
+  const CHASSIS_RUBBER_COVERAGE_ROWS = [
+    {
+      family: "Main tub-to-chassis body pads",
+      current: "BM-ISO-SM 10 + 2 spares, BM-ISO-LG 2 + 1 spare",
+      basis: "Toyota EPC-style rows list NO.1-NO.5 body-mount cushions, spacers, shims, and hardware; aftermarket kits are split by early/late 40-series year ranges.",
+      decision: "Covered in the Longman bundle as function-first square pads because the vehicle photos do not prove shaped rubber sockets. Keep OE/reproduction kit rows reference-only unless the route is deliberately changed.",
+    },
+    {
+      family: "Front support / nose extension isolators",
+      current: "FS-OVAL x2 plus FS-STRIP-L/R first articles",
+      basis: "May 2 and May 17 measured photos identify the two-hole oval pads and the left/right 165 x 38 x 8 plain strip pair.",
+      decision: "Covered. Do not substitute the main body pads here; dry-fit only controls end trim, retainer reuse, and caliper confirmation.",
+    },
+    {
+      family: "Axle-to-chassis bump stops",
+      current: "BUMP-60010-LONG x3, BUMP-60020-SHORT x1",
+      basis: "Existing bump-stop spec tracks the Toyota-style 70 mm long / 60 mm right-front split and the vehicle-measured saddle/hole release.",
+      decision: "Covered as first articles. The preview now keeps the two screw/mounting holes visible and calls out pitch/diameter measurement.",
+    },
+    {
+      family: "Full-width flat body/panel liners",
+      current: "BODY-LINER-FULL-WIDTH-HOLD",
+      basis: "No complete installed path or actual strip trace exists yet.",
+      decision: "Not required for the current order until an actual liner/path proves quantity, dimensions, holes/slots, and function.",
+    },
+    {
+      family: "Exhaust hanger cushion",
+      current: "EXH-HGR-90917 hold/reference only",
+      basis: "Teardrop drawing is a Toyota-style shape reference, not a measured fitted part.",
+      decision: "Not part of the chassis/body Longman quote unless sample or installed support geometry is captured.",
+    },
   ];
 
   const LONGMAN_RUBBER_3D_VISUAL_PATH = "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html";
@@ -1707,6 +1754,17 @@
       visual: longmanRubber3dVisual("EXH-HGR-90917"),
     },
   };
+
+  const CHASSIS_RUBBER_SPEC_ROW_BY_ID = Object.fromEntries(CHASSIS_RUBBER_SPEC_ROWS.map((row) => [row.id, row]));
+
+  function chassisRubberStaticSpec(rowOrId) {
+    const orderId = cleanString(typeof rowOrId === "string" ? rowOrId : rowOrId && (rowOrId.order_id || rowOrId.id)).toUpperCase();
+    return CHASSIS_RUBBER_SPEC_ROW_BY_ID[orderId] || null;
+  }
+
+  function chassisRubberVehicleLocation(row) {
+    return cleanString(row && (row.vehicle_location || row.location)) || cleanString(chassisRubberStaticSpec(row)?.location);
+  }
 
   function renderChassisRubberSpecImage(row) {
     const image = {
@@ -1784,6 +1842,7 @@
     return CHASSIS_RUBBER_SPEC_ROWS.map((row) => ({
       order_id: row.id,
       part: row.part,
+      vehicle_location: row.location,
       required_qty: row.qty,
       optional_spare_qty: "",
       spec: row.spec,
@@ -1799,6 +1858,58 @@
         media_type: "photo",
       },
     }));
+  }
+
+  function renderChassisRubberCompleteDrawingPreview() {
+    const image = {
+      path: CHASSIS_RUBBER_COMPLETE_DRAWING_PREVIEW_PATH,
+      caption: "Complete chassis-rubber SVG drawing preview",
+      media_id: "chassis_rubber_all_drawings_preview_rev_a",
+      media_type: "photo",
+    };
+    const prepared = prepareImage(image, image.caption);
+    return `
+      <div class="chassis-rubber-preview-block">
+        <div class="chassis-rubber-preview-copy">
+          <strong>Complete SVG Preview</strong>
+          <span>Shows every current order line and hold/reference control together: square body pads, front-support oval, left/right strips, long/short bump stops with mounting-hole controls, full-width liner hold, and exhaust hanger hold.</span>
+        </div>
+        ${renderPreparedMedia(prepared, "table-image-btn chassis-rubber-preview-btn", "table-image table-image-contain chassis-rubber-preview-image")}
+      </div>
+    `;
+  }
+
+  function renderChassisRubberCoverageCheck() {
+    return `
+      <div class="chassis-rubber-coverage-block">
+        <div class="chassis-rubber-coverage-copy">
+          <strong>Coverage / Kit Check</strong>
+          <span>Toyota current GR Heritage parts list does not expose a complete chassis-rubber kit in this area. EPC-style Toyota listings and aftermarket kits confirm the normal body-mount families exist, but the active route stays as one Longman rubber bundle until a complete matched kit is deliberately selected.</span>
+        </div>
+        <div class="table-wrap requirement-table-wrap chassis-rubber-coverage-table-wrap">
+          <table class="requirement-table chassis-rubber-coverage-table">
+            <thead>
+              <tr>
+                <th>Family</th>
+                <th>Current Coverage</th>
+                <th>Basis</th>
+                <th>Decision</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${CHASSIS_RUBBER_COVERAGE_ROWS.map((row) => `
+                <tr>
+                  <td><strong>${escapeHtml(row.family)}</strong></td>
+                  <td>${escapeHtml(row.current)}</td>
+                  <td>${escapeHtml(row.basis)}</td>
+                  <td>${escapeHtml(row.decision)}</td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `;
   }
 
   function renderChassisRubberConsolidatedSpec(rows) {
@@ -1818,14 +1929,16 @@
             ${chip("1 supplier request")}
             ${chip(`${currentRows.length} quote lines`)}
             ${holdRows.length ? chip(`${holdRows.length} holds`) : ""}
-            ${chip("3D + 2D assets attached")}
+            ${chip("3D + 2D + location assets")}
             ${chip("All dimensions mm")}
             ${chip("Shore A 60 +/-5")}
           </div>
         </div>
         <p class="small-muted">Send this as one Longman quote/order bundle. The rows below are line items inside that single supplier request, not separate custom rubber orders. Hold rows stay in the pack only as reference controls and are not current production quantities.</p>
         <p class="small-muted">Body/front-support rubbers: new black solid EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5. Main body isolators are now function-first custom square pads, not circular/register bushings, because the chassis/tub photos do not prove a shaped rubber socket. Steel cup/seat washers, sleeves, shims, bolts, and captive-thread repairs are separate from the Longman rubber order. Bump stops: public OEM/catalog sources confirm the Toyota part numbers, applications, and 70 mm / 60 mm height split, but not the Toyota mould drawing. Use a Toyota-style two-ear steel saddle/backing plate, tapered/radiused progressive rubber body, flat rectangular strike face, and vehicle bracket/contact measurements. Reject tyre rubber, crumb rubber, sponge, mixed offcuts, salvage rubber, unmarked compound, washer stacks, simple cut blocks, or universal bump stops that do not match the axle contact point.</p>
-        <p class="small-muted">Current supplier pack: <a href="../../docs/longman-rubber-order-spec-20260508.md">Longman rubber order spec</a>, <a href="../../data/manual/longman_rubber_order_specs.csv">Longman order CSV</a>, <a href="../../docs/chassis-rubbers-workstream.md">chassis rubbers workstream</a>, <a href="../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html">3D visualisation</a>, and <a href="../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad">OpenSCAD master model</a>.</p>
+        <p class="small-muted">Current supplier pack: <a href="../../docs/longman-rubber-order-spec-20260508.md">Longman rubber order spec</a>, <a href="../../data/manual/longman_rubber_order_specs.csv">Longman order CSV</a>, <a href="../../docs/chassis-rubbers-workstream.md">chassis rubbers workstream</a>, <a href="${CHASSIS_RUBBER_LOCATION_MAP_PATH}">vehicle location map</a>, <a href="${CHASSIS_RUBBER_COMPLETE_DRAWING_PREVIEW_PATH}">complete SVG preview</a>, <a href="../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html">3D visualisation</a>, and <a href="../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad">OpenSCAD master model</a>.</p>
+        ${renderChassisRubberCoverageCheck()}
+        ${renderChassisRubberCompleteDrawingPreview()}
         <div class="table-wrap requirement-table-wrap">
           <table class="requirement-table chassis-rubber-spec-table">
             <thead>
@@ -1833,6 +1946,7 @@
                 <th>Preview</th>
                 <th>Line</th>
                 <th>Qty</th>
+                <th>Location</th>
                 <th>Rubber Definition</th>
                 <th>3D / Edges</th>
                 <th>Holes / Inserts</th>
@@ -1852,6 +1966,7 @@
                     renderScoutField("Envelope", row.envelope_3d_mm),
                     renderScoutField("Edges", row.edge_profile),
                   ].join("") || "-";
+                  const location = chassisRubberVehicleLocation(row);
                   return `
                     <tr>
                       ${renderChassisRubberOrderImage(row)}
@@ -1861,6 +1976,7 @@
                         ${statusChip(isHold ? "hold/reference only" : "current order line")}
                       </td>
                       <td>${escapeHtml(qtyBits.join(" / ") || "-")}</td>
+                      <td>${escapeHtml(location || "-")}</td>
                       <td>${escapeHtml(row.spec)}</td>
                       <td>${geometryCell}</td>
                       <td>${escapeHtml(row.holes_or_inserts || "-")}</td>
@@ -1889,9 +2005,10 @@
     return `
       <article class="card pipe-requirements-card">
         <div class="detail-header">
-          <h3>Extra Context Images</h3>
+          <h3>Curated Context Images</h3>
           <div class="chip-row">${chip(`${CHASSIS_RUBBER_REFERENCE_IMAGES.length} Images`)}</div>
         </div>
+        <p class="small-muted">Trimmed to drawings, location proof, and measurement photos that support the chassis-rubber order. Weak exhaust/frame context photos are kept out unless they directly prove a held part.</p>
         <div class="requirement-evidence-grid chassis-rubber-context-grid">
           ${CHASSIS_RUBBER_REFERENCE_IMAGES
             .map(([path, caption]) => {
@@ -3887,6 +4004,7 @@
         route: row.route,
         state: isHold ? "hold_measurement_required" : isBump ? "vehicle_measurement_mould_release" : isShim ? "trace_then_cut" : "quote_first_article_ready",
         spec: row.spec,
+        dimension: row.location,
         qty: row.qty,
         material: isCup
           ? "New 2.5-3.0 mm steel, zinc plated or epoxy primed after forming."

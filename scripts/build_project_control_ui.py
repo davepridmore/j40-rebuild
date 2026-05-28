@@ -2107,6 +2107,8 @@ FABRICATION_DESIGN_LINKS_BY_PACKAGE: dict[str, list[tuple[str, str]]] = {
         ("deliverables/fabrication_packages/rubber_recreation_rev_a.zip", "Rubber fabrication package ZIP"),
         ("data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.html", "Interactive 3D visualisation"),
         ("data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg", "Static 3D visualisation"),
+        ("data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg", "Chassis rubber location map SVG"),
+        ("data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg", "Complete chassis rubber drawing preview SVG"),
         ("docs/bump-stop-fabrication-spec-20260504.md", "Bump-stop fabrication spec"),
         ("data/manual/fabrication/rubber_recreation_rev_a/j40_rubber_recreation_rev_a_dimension_sheet.pdf", "Rubber dimension sheet PDF"),
         *RUBBER_3D_MODEL_LINKS,
@@ -2259,6 +2261,14 @@ FABRICATION_PACKAGE_VISUAL_LINKS: dict[str, list[tuple[str, str]]] = {
             "data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.svg",
             "Static 3D visualisation",
         ),
+        (
+            "data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
+            "Chassis rubber location map",
+        ),
+        (
+            "data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
+            "Complete chassis rubber drawing preview",
+        ),
     ],
     "rubber_recreation_rev_a": [
         (
@@ -2268,6 +2278,14 @@ FABRICATION_PACKAGE_VISUAL_LINKS: dict[str, list[tuple[str, str]]] = {
         (
             "data/manual/fabrication/rubber_recreation_rev_a/rubber_recreation_rev_a_3d_visualisation.svg",
             "Static 3D visualisation",
+        ),
+        (
+            "data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_location_map_rev_a.svg",
+            "Chassis rubber location map",
+        ),
+        (
+            "data/manual/fabrication/rubber_recreation_rev_a/chassis_rubber_all_drawings_preview_rev_a.svg",
+            "Complete chassis rubber drawing preview",
         ),
     ],
     "suspension_wood_cribbing_rev_a": [
@@ -3519,6 +3537,7 @@ def longman_rubber_order_payload(
             {
                 "order_id": order_id,
                 "part": part,
+                "vehicle_location": clean(row.get("vehicle_location")),
                 "required_qty": clean(row.get("required_qty")),
                 "optional_spare_qty": clean(row.get("optional_spare_qty")),
                 "spec": clean(row.get("spec")),

@@ -1010,7 +1010,7 @@ th {
 }
 
 .chassis-rubber-spec-table {
-  min-width: 1640px;
+  min-width: 1880px;
 }
 
 .requirement-table.chassis-rubber-spec-table th:nth-child(1),
@@ -1025,17 +1025,17 @@ th {
 
 .requirement-table.chassis-rubber-spec-table th:nth-child(3),
 .requirement-table.chassis-rubber-spec-table td:nth-child(3) {
-  width: 210px;
+  width: 120px;
 }
 
 .requirement-table.chassis-rubber-spec-table th:nth-child(4),
 .requirement-table.chassis-rubber-spec-table td:nth-child(4) {
-  width: 120px;
+  width: 250px;
 }
 
 .requirement-table.chassis-rubber-spec-table th:nth-child(5),
 .requirement-table.chassis-rubber-spec-table td:nth-child(5) {
-  width: 470px;
+  width: 430px;
 }
 
 .requirement-table.chassis-rubber-spec-table th:nth-child(6),
@@ -1048,8 +1048,76 @@ th {
   width: 230px;
 }
 
+.requirement-table.chassis-rubber-spec-table th:nth-child(8),
+.requirement-table.chassis-rubber-spec-table td:nth-child(8) {
+  width: 230px;
+}
+
+.requirement-table.chassis-rubber-spec-table th:nth-child(9),
+.requirement-table.chassis-rubber-spec-table td:nth-child(9) {
+  width: 250px;
+}
+
 .chassis-rubber-file-links {
   margin-top: 0.25rem;
+}
+
+.chassis-rubber-coverage-block,
+.chassis-rubber-preview-block {
+  display: grid;
+  gap: 0.7rem;
+  margin: 0.9rem 0;
+}
+
+.chassis-rubber-coverage-copy,
+.chassis-rubber-preview-copy {
+  display: grid;
+  gap: 0.25rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.4;
+}
+
+.chassis-rubber-coverage-copy strong,
+.chassis-rubber-preview-copy strong {
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.chassis-rubber-coverage-table {
+  min-width: 1120px;
+}
+
+.requirement-table.chassis-rubber-coverage-table th:nth-child(1),
+.requirement-table.chassis-rubber-coverage-table td:nth-child(1) {
+  width: 230px;
+}
+
+.requirement-table.chassis-rubber-coverage-table th:nth-child(2),
+.requirement-table.chassis-rubber-coverage-table td:nth-child(2) {
+  width: 260px;
+}
+
+.requirement-table.chassis-rubber-coverage-table th:nth-child(3),
+.requirement-table.chassis-rubber-coverage-table td:nth-child(3) {
+  width: 310px;
+}
+
+.requirement-table.chassis-rubber-coverage-table th:nth-child(4),
+.requirement-table.chassis-rubber-coverage-table td:nth-child(4) {
+  width: 320px;
+}
+
+.chassis-rubber-preview-btn {
+  width: min(100%, 980px);
+  justify-self: start;
+}
+
+.chassis-rubber-preview-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: #f7f7f4;
 }
 
 .requirement-table th:nth-child(1),

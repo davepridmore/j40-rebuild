@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="900" viewBox="0 0 1280 900" role="img" aria-labelledby="title desc">
+  <title id="title">J40 chassis rubber complete drawing preview</title>
+  <desc id="desc">Composite preview sheet showing every chassis rubber SVG control in the Longman bundle: body pads, front support pads, underfloor strips, bump stops, full-width liner hold, and exhaust hanger hold.</desc>
+  <rect width="1280" height="900" fill="#f7f7f4"/>
+  <style>
+    .title { font: 700 26px Arial, sans-serif; fill: #111; }
+    .subtitle { font: 14px Arial, sans-serif; fill: #333; }
+    .panel { fill: #fff; stroke: #d7d0c3; stroke-width: 1.4; }
+    .panel-title { font: 700 16px Arial, sans-serif; fill: #111; }
+    .label { font: 13px Arial, sans-serif; fill: #222; }
+    .small { font: 11px Arial, sans-serif; fill: #333; }
+    .tiny { font: 10px Arial, sans-serif; fill: #333; }
+    .rubber { fill: #141414; stroke: #000; stroke-width: 2; }
+    .rubber2 { fill: #272727; stroke: #000; stroke-width: 2; }
+    .steel { fill: #8e9498; stroke: #333; stroke-width: 2; }
+    .cut { fill: none; stroke: #111; stroke-width: 2; }
+    .hole { fill: #fff; stroke: #c43a31; stroke-width: 2; }
+    .bore { fill: #f7f7f4; stroke: #111; stroke-width: 2; }
+    .center { stroke: #777; stroke-width: 1; stroke-dasharray: 5 4; }
+    .dim { stroke: #c43a31; stroke-width: 1.8; fill: none; marker-start: url(#arrow); marker-end: url(#arrow); }
+    .guide { stroke: #666; stroke-width: 1.3; stroke-dasharray: 6 5; fill: none; }
+    .hold { fill: #f0c14b; stroke: #8a6500; stroke-width: 2; stroke-dasharray: 6 4; }
+    .mark { fill: none; stroke: #8a5a00; stroke-width: 1.8; stroke-dasharray: 5 4; }
+    .relief { fill: none; stroke: #2364aa; stroke-width: 1.8; stroke-dasharray: 5 4; }
+    .strip { fill: #202020; stroke: #000; stroke-width: 2; }
+    .callout { stroke: #2364aa; stroke-width: 1.6; fill: none; marker-end: url(#arrowBlue); }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c43a31"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2364aa"/>
+    </marker>
+  </defs>
+
+  <text x="36" y="44" class="title">Chassis Rubber Complete SVG Drawing Preview - Rev A</text>
+  <text x="36" y="70" class="subtitle">One visual sheet for all current Longman rubber controls. Individual SVG/DXF files remain the manufacturing source of truth.</text>
+
+  <g transform="translate(36,102)">
+    <rect class="panel" x="0" y="0" width="280" height="250" rx="8"/>
+    <text class="panel-title" x="18" y="30">BM-ISO-SM</text>
+    <text class="small" x="18" y="50">Small main body isolator pad</text>
+    <g transform="translate(84,78)">
+      <rect class="cut" x="0" y="0" width="112" height="112" rx="4"/>
+      <circle class="bore" cx="56" cy="56" r="14.4"/>
+      <line class="center" x1="56" y1="-12" x2="56" y2="124"/>
+      <line class="center" x1="-12" y1="56" x2="124" y2="56"/>
+      <path class="dim" d="M0 138 L112 138"/>
+      <text class="small" x="40" y="158">70 x 70</text>
+      <path class="dim" d="M134 0 L134 112"/>
+      <text class="small" x="146" y="62">22 H</text>
+    </g>
+    <text class="tiny" x="18" y="224">18.0 mm centre bore, R1.5 plan corners</text>
+  </g>
+
+  <g transform="translate(348,102)">
+    <rect class="panel" x="0" y="0" width="280" height="250" rx="8"/>
+    <text class="panel-title" x="18" y="30">BM-ISO-LG</text>
+    <text class="small" x="18" y="50">Large main body isolator pair</text>
+    <g transform="translate(72,68)">
+      <rect class="cut" x="0" y="0" width="128" height="128" rx="4"/>
+      <circle class="bore" cx="64" cy="64" r="14.4"/>
+      <line class="center" x1="64" y1="-12" x2="64" y2="140"/>
+      <line class="center" x1="-12" y1="64" x2="140" y2="64"/>
+      <path class="dim" d="M0 154 L128 154"/>
+      <text class="small" x="48" y="174">80 x 80</text>
+      <path class="dim" d="M150 0 L150 128"/>
+      <text class="small" x="162" y="70">24 H</text>
+    </g>
+    <text class="tiny" x="18" y="224">18.0 mm centre bore, same compound batch preferred</text>
+  </g>
+
+  <g transform="translate(660,102)">
+    <rect class="panel" x="0" y="0" width="280" height="250" rx="8"/>
+    <text class="panel-title" x="18" y="30">FS-OVAL</text>
+    <text class="small" x="18" y="50">Front support two-hole isolator pad</text>
+    <g transform="translate(104,66)">
+      <path class="cut" d="M0 44 A44 44 0 0 1 44 0 L44 0 A44 44 0 0 1 88 44 L88 88 A44 44 0 0 1 44 132 A44 44 0 0 1 0 88 Z"/>
+      <circle class="hole" cx="44" cy="22" r="8.25"/>
+      <circle class="hole" cx="44" cy="110" r="8.25"/>
+      <circle class="mark" cx="44" cy="22" r="20"/>
+      <rect class="relief" x="19" y="53" width="50" height="25" rx="4"/>
+      <line class="center" x1="44" y1="0" x2="44" y2="132"/>
+      <path class="dim" d="M-24 0 L-24 132"/>
+      <text class="small" x="-54" y="72">96 L</text>
+      <path class="dim" d="M0 150 L88 150"/>
+      <text class="small" x="31" y="170">64 W</text>
+    </g>
+    <text class="tiny" x="18" y="224">Two 12 mm holes at 64 mm centres; relief/boss sample checked</text>
+  </g>
+
+  <g transform="translate(972,102)">
+    <rect class="panel" x="0" y="0" width="272" height="250" rx="8"/>
+    <text class="panel-title" x="18" y="30">FS-STRIP-L/R</text>
+    <text class="small" x="18" y="50">Underfloor body-support strips</text>
+    <rect class="strip" x="38" y="86" width="198" height="46" rx="5"/>
+    <rect class="strip" x="38" y="154" width="198" height="46" rx="5"/>
+    <path class="dim" d="M38 68 L236 68"/>
+    <text class="small" x="118" y="62">165 L</text>
+    <path class="dim" d="M252 86 L252 132"/>
+    <text class="small" x="218" y="117">38 W</text>
+    <text class="tiny" x="18" y="224">Plain 165 x 38 x 8 strips; no rubber holes by default</text>
+  </g>
+
+  <g transform="translate(36,388)">
+    <rect class="panel" x="0" y="0" width="396" height="298" rx="8"/>
+    <text class="panel-title" x="18" y="30">BUMP-60010-LONG</text>
+    <text class="small" x="18" y="50">Front-left and both rear axle-to-chassis bump stops</text>
+    <g transform="translate(42,80)">
+      <rect class="steel" x="10" y="0" width="210" height="28" rx="4"/>
+      <path class="rubber" d="M52 28 L178 28 L150 168 L80 168 Z"/>
+      <rect class="rubber2" x="72" y="168" width="88" height="28" rx="4"/>
+      <circle class="hole" cx="50" cy="14" r="10"/>
+      <circle class="hole" cx="180" cy="14" r="10"/>
+      <path class="dim" d="M244 28 L244 168"/>
+      <text class="small" x="260" y="104">70 H</text>
+      <path class="dim" d="M50 -18 L180 -18"/>
+      <text class="small" x="88" y="-28">P measure</text>
+    </g>
+    <text class="tiny" x="18" y="266">Base, hole pitch, and strike offset release from cleaned brackets</text>
+  </g>
+
+  <g transform="translate(464,388)">
+    <rect class="panel" x="0" y="0" width="360" height="298" rx="8"/>
+    <text class="panel-title" x="18" y="30">BUMP-60020-SHORT</text>
+    <text class="small" x="18" y="50">Right-front axle-to-chassis bump stop</text>
+    <g transform="translate(42,94)">
+      <rect class="steel" x="10" y="0" width="210" height="28" rx="4"/>
+      <path class="rubber" d="M56 28 L174 28 L150 148 L80 148 Z"/>
+      <rect class="rubber2" x="74" y="148" width="84" height="28" rx="4"/>
+      <circle class="hole" cx="50" cy="14" r="10"/>
+      <circle class="hole" cx="180" cy="14" r="10"/>
+      <path class="dim" d="M244 28 L244 148"/>
+      <text class="small" x="260" y="94">60 H</text>
+      <path class="dim" d="M50 -18 L180 -18"/>
+      <text class="small" x="88" y="-28">P measure</text>
+    </g>
+    <text class="tiny" x="18" y="266">Do not substitute the 70 mm long-stop height here</text>
+  </g>
+
+  <g transform="translate(856,388)">
+    <rect class="panel" x="0" y="0" width="388" height="130" rx="8"/>
+    <text class="panel-title" x="18" y="30">BODY-LINER-FULL-WIDTH-HOLD</text>
+    <text class="small" x="18" y="50">Hold-only full-width flat liner control</text>
+    <rect class="hold" x="36" y="76" width="304" height="28" rx="5"/>
+    <path class="dim" d="M36 62 L340 62"/>
+    <text class="tiny" x="142" y="58">measure actual L</text>
+    <text class="tiny" x="18" y="118">Needs actual strip/path before quote or cutting</text>
+  </g>
+
+  <g transform="translate(856,556)">
+    <rect class="panel" x="0" y="0" width="388" height="130" rx="8"/>
+    <text class="panel-title" x="18" y="30">EXH-HGR-90917</text>
+    <text class="small" x="18" y="50">Hold-only exhaust teardrop cushion reference</text>
+    <g transform="translate(166,24)">
+      <path class="rubber" d="M46 8 C80 8 108 42 108 78 C108 110 84 126 46 126 C8 126 -16 110 -16 78 C-16 42 12 8 46 8 Z"/>
+      <circle class="bore" cx="46" cy="38" r="7"/>
+      <rect class="bore" x="29" y="76" width="34" height="28" rx="8"/>
+      <path class="dim" d="M-34 8 L-34 126"/>
+      <text class="small" x="-68" y="72">86 H</text>
+      <path class="dim" d="M-16 140 L108 140"/>
+      <text class="small" x="28" y="160">48 W</text>
+    </g>
+  </g>
+
+  <g transform="translate(36,724)">
+    <rect class="panel" x="0" y="0" width="1208" height="124" rx="8"/>
+    <text class="panel-title" x="18" y="30">Release boundary</text>
+    <text class="small" x="18" y="58">Current quote lines: BM-ISO-SM, BM-ISO-LG, FS-OVAL, FS-STRIP-L, FS-STRIP-R, BUMP-60010-LONG, and BUMP-60020-SHORT.</text>
+    <text class="small" x="18" y="82">Hold/reference only: BODY-LINER-FULL-WIDTH-HOLD and EXH-HGR-90917. They stay visible so the preview is complete, but they are not current Longman production quantities.</text>
+    <text class="small" x="18" y="106">Use the individual SVG/DXF files for manufacturing dimensions. This sheet is a dashboard and package preview that shows everything together.</text>
+  </g>
+</svg>
