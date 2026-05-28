@@ -1727,13 +1727,19 @@
   }
 
   function chassisRubberReferenceImages() {
-    const seen = new Set();
-    return [...CHASSIS_RUBBER_REFERENCE_IMAGES, ...chassisRubberAutoReferenceImages()].filter(([path]) => {
-      const key = cleanString(path);
-      if (!key || seen.has(key)) {
+    const seenMedia = new Set();
+    const seenCaptions = new Set();
+    return [...CHASSIS_RUBBER_REFERENCE_IMAGES, ...chassisRubberAutoReferenceImages()].filter(([path, caption]) => {
+      const cleanPath = cleanString(path);
+      const mediaKey = cleanPath.split(/[?#]/)[0].split("/").pop().toLowerCase();
+      const captionKey = cleanString(caption).toLowerCase().replace(/\s+/g, " ");
+      if (!mediaKey || seenMedia.has(mediaKey) || (captionKey && seenCaptions.has(captionKey))) {
         return false;
       }
-      seen.add(key);
+      seenMedia.add(mediaKey);
+      if (captionKey) {
+        seenCaptions.add(captionKey);
+      }
       return true;
     });
   }
