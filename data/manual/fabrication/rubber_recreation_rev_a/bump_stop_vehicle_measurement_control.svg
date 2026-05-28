@@ -1,18 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540" role="img" aria-labelledby="title desc">
   <title id="title">J40 bump stop vehicle measurement control</title>
-  <desc id="desc">Measurement diagram for fabricating J40 bump stops from vehicle bracket and axle strike pad measurements.</desc>
-  <rect width="900" height="520" fill="#f7f7f4"/>
+  <desc id="desc">Measurement diagram for fabricating J40 bump stops from vehicle bracket and axle strike pad measurements, with clear saddle mounting hole controls.</desc>
+  <rect width="900" height="540" fill="#f7f7f4"/>
   <style>
     .label { font: 15px Arial, sans-serif; fill: #222; }
     .small { font: 12px Arial, sans-serif; fill: #333; }
+    .tiny { font: 11px Arial, sans-serif; fill: #333; }
     .title { font: 700 22px Arial, sans-serif; fill: #111; }
     .part { fill: #2f3136; stroke: #111; stroke-width: 2; }
     .rubber { fill: #111; stroke: #000; stroke-width: 2; }
     .steel { fill: #8d9297; stroke: #333; stroke-width: 2; }
+    .hole { fill: #fff; stroke: #c43a31; stroke-width: 4; }
     .pad { fill: #b9c4ca; stroke: #333; stroke-width: 2; }
     .dim { stroke: #c43a31; stroke-width: 2; fill: none; marker-start: url(#arrow); marker-end: url(#arrow); }
     .guide { stroke: #666; stroke-width: 1.5; stroke-dasharray: 6 5; fill: none; }
     .axis { stroke: #2364aa; stroke-width: 2; fill: none; marker-end: url(#arrowBlue); }
+    .hole-axis { stroke: #2364aa; stroke-width: 1.4; stroke-dasharray: 4 3; fill: none; }
+    .callout { stroke: #2364aa; stroke-width: 1.7; fill: none; marker-end: url(#arrowBlue); }
+    .callout-box { fill: #fff; stroke: #d5d2ca; stroke-width: 1.2; }
   </style>
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
@@ -42,20 +47,35 @@
   <line x1="190" y1="295" x2="190" y2="380" class="axis"/>
   <text x="203" y="350" class="small">strike-pad centreline</text>
 
-  <text x="496" y="88" class="label">Plan view at bracket</text>
+  <text x="496" y="88" class="label">Plan view at steel saddle / bracket</text>
   <rect x="500" y="130" width="282" height="136" rx="8" class="steel"/>
   <rect x="535" y="160" width="212" height="76" rx="9" class="rubber"/>
-  <circle cx="555" cy="198" r="13" fill="#f7f7f4" stroke="#333" stroke-width="2"/>
-  <circle cx="727" cy="198" r="13" fill="#f7f7f4" stroke="#333" stroke-width="2"/>
+
+  <circle cx="555" cy="198" r="15" class="hole"/>
+  <circle cx="727" cy="198" r="15" class="hole"/>
+  <line x1="538" y1="198" x2="572" y2="198" class="hole-axis"/>
+  <line x1="555" y1="181" x2="555" y2="215" class="hole-axis"/>
+  <line x1="710" y1="198" x2="744" y2="198" class="hole-axis"/>
+  <line x1="727" y1="181" x2="727" y2="215" class="hole-axis"/>
+  <text x="525" y="239" class="tiny">mounting hole / stud 1</text>
+  <text x="685" y="239" class="tiny">mounting hole / stud 2</text>
+
   <path d="M555 105 L727 105" class="dim"/>
   <text x="620" y="96" class="label">P</text>
-  <text x="592" y="286" class="small">P = bolt/stud pitch from bracket</text>
-  <path d="M500 288 L782 288" class="dim"/>
-  <text x="633" y="313" class="label">BL</text>
+  <text x="586" y="119" class="small">hole pitch, centre to centre</text>
+  <path d="M555 284 L585 284" class="dim"/>
+  <text x="563" y="307" class="label">D</text>
+  <text x="500" y="326" class="small">D = hole diameter or stud/thread size from the cleaned vehicle bracket</text>
+  <path d="M588 279 C596 248 578 217 560 203" class="callout"/>
+
+  <path d="M500 352 L782 352" class="dim"/>
+  <text x="633" y="377" class="label">BL</text>
   <path d="M805 130 L805 266" class="dim"/>
   <text x="819" y="204" class="label">BW</text>
 
-  <rect x="54" y="440" width="792" height="48" rx="6" fill="#ffffff" stroke="#d5d2ca"/>
-  <text x="72" y="463" class="small">Release values: BL/BW/P/D/X-Y/G/F come from cleaned brackets and axle strike pads. Height H: 70 +/-1 mm for BUMP-60010 long stops, 60 +/-1 mm for BUMP-60020 right front.</text>
-  <text x="72" y="481" class="small">First article must seat flat, contact the strike pad within +/-5 mm, and engage before shock, tyre, spring, brake hose, or metal-to-metal limits.</text>
+  <rect x="54" y="440" width="792" height="82" rx="6" class="callout-box"/>
+  <text x="72" y="462" class="small">The two red circles are the saddle mounting holes or studs. Measure P and D from the cleaned bracket.</text>
+  <text x="72" y="480" class="small">Do not copy torn rubber or rusted remnants.</text>
+  <text x="72" y="498" class="small">Release BL/BW/P/D/X-Y/G/F from cleaned brackets and axle strike pads.</text>
+  <text x="72" y="516" class="small">Height H: 70 +/-1 mm for BUMP-60010 long stops, 60 +/-1 mm for BUMP-60020 right front.</text>
 </svg>

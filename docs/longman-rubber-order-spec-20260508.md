@@ -74,7 +74,7 @@ The body pads are not shape-matched to a molded chassis socket. The important co
 
 For initial quote, use the square dimensions in the table. If any station needs corner trimming or a relieved edge, release that exact trimmed shape after the landing-face photos are checked.
 
-3D model files for the current quote geometry are in `data/manual/fabrication/rubber_recreation_rev_a/models_3d/`. The body-pad models default to `hole_d = 18.0`, based on Toyota `90560-12009` spacer evidence. Production release uses the 18.0 mm bore; `hole_d = 0` is a non-release CAD override only.
+2D SVG/DXF controls for the current square body pads are `data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.*` and `data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.*`. 3D model files for the current quote geometry are in `data/manual/fabrication/rubber_recreation_rev_a/models_3d/`. The body-pad models default to `hole_d = 18.0`, based on Toyota `90560-12009` spacer evidence. Production release uses the 18.0 mm bore; `hole_d = 0` is a non-release CAD override only.
 
 ## Bump Stop Shape
 

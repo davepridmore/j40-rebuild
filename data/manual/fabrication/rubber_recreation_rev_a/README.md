@@ -2,7 +2,7 @@
 
 This is the fabrication-output package for the body-mount and front-support rubber recreation workstream.
 
-Current release basis: the Longman order uses the square `BM-ISO-SM` and `BM-ISO-LG` body pads in `models_3d/`. The older circular `BM-SM` / `BM-LG` DXF files are retained as legacy photo-derived references only; do not use them as the active body-pad cut patterns unless the project deliberately reopens the circular profile.
+Current release basis: the Longman order uses the square `BM-ISO-SM` and `BM-ISO-LG` body pads. Use the `bm_iso_*_square_pad_rev_a` SVG/DXF files for the 2D profile and the matching OpenSCAD files in `models_3d/` for the 3D envelope. The older circular `BM-SM` / `BM-LG` DXF files are retained as legacy photo-derived references only; do not use them as the active body-pad cut patterns unless the project deliberately reopens the circular profile.
 
 Use it with:
 
@@ -21,13 +21,16 @@ Use it with:
 
 ## DXF / SVG Parts
 
-- `bm_sm_body_mount_cushion_rev_a.dxf` / `bm_sm_body_mount_cushion_rev_a.svg` - legacy BM-SM small circular body-mount reference, superseded for the current Longman order by `models_3d/bm_iso_sm_square_pad.scad`
-- `bm_lg_body_mount_cushion_rev_a.dxf` / `bm_lg_body_mount_cushion_rev_a.svg` - legacy BM-LG large circular body-mount reference, superseded for the current Longman order by `models_3d/bm_iso_lg_square_pad.scad`
+- `bm_iso_sm_square_pad_rev_a.dxf` / `bm_iso_sm_square_pad_rev_a.svg` - active BM-ISO-SM square body isolator pad, `70 x 70 x 22`, `18.0 mm` centre bore, qty `10 + 2 spares`
+- `bm_iso_lg_square_pad_rev_a.dxf` / `bm_iso_lg_square_pad_rev_a.svg` - active BM-ISO-LG square body isolator pad, `80 x 80 x 24`, `18.0 mm` centre bore, qty `2 + 1 spare`
+- `bm_sm_body_mount_cushion_rev_a.dxf` / `bm_sm_body_mount_cushion_rev_a.svg` - legacy BM-SM small circular body-mount reference, superseded for the current Longman order by `bm_iso_sm_square_pad_rev_a.*` and `models_3d/bm_iso_sm_square_pad.scad`
+- `bm_lg_body_mount_cushion_rev_a.dxf` / `bm_lg_body_mount_cushion_rev_a.svg` - legacy BM-LG large circular body-mount reference, superseded for the current Longman order by `bm_iso_lg_square_pad_rev_a.*` and `models_3d/bm_iso_lg_square_pad.scad`
 - `bm_cup_small_seat_washer_rev_a.dxf` / `bm_cup_small_seat_washer_rev_a.svg` - BM-CUP small body-mount cup washer, qty 10 working basis
 - `bm_cup_large_seat_washer_rev_a.dxf` / `bm_cup_large_seat_washer_rev_a.svg` - BM-CUP large body-mount cup washer, qty 2 working basis
 - `fs_oval_front_support_pad_rev_a.dxf` / `fs_oval_front_support_pad_rev_a.svg` - FS-OVAL front support two-hole isolator pad, qty 2 matched pieces
 - `fs_strip_left_template_blank_rev_a.dxf` / `fs_strip_left_template_blank_rev_a.svg` - FS-STRIP-L underfloor body-support strip first-article blank, qty 1
 - `fs_strip_right_template_blank_rev_a.dxf` / `fs_strip_right_template_blank_rev_a.svg` - FS-STRIP-R underfloor body-support strip first-article blank, qty 1
+- `bump_stop_vehicle_measurement_control.dxf` / `bump_stop_vehicle_measurement_control.svg` - BUMP-F-L/F-R/R vehicle-measurement control drawing for saddle holes, pitch, and height; not a final mould/cut profile
 - `exh_hgr_90917_08004_teardrop_rev_a.dxf` / `exh_hgr_90917_08004_teardrop_rev_a.svg` - EXH-HGR-90917 teardrop exhaust cushion, qty as fitted
 
 ## Layer Rules
@@ -41,7 +44,7 @@ Use it with:
 
 The active Longman rubber lines are released for quote and first article from the current CSV/spec data: `BM-ISO-SM`, `BM-ISO-LG`, `FS-OVAL`, `FS-STRIP-L`, and `FS-STRIP-R`. The remaining closure rows in `data/manual/rubber_recreation_measurement_closure.csv` are station-fit, stack, caliper, and dry-fit gates before final production/install, not missing quote dimensions.
 
-The current Longman rubber-order basis for the main body pads is square flat isolator pads, not the earlier circular placeholder. Use `models_3d/bm_iso_sm_square_pad.scad` and `models_3d/bm_iso_lg_square_pad.scad` for the current 3D envelope. They default to `hole_d = 18.0`, matching the Toyota `90560-12009` style body-mount sleeve basis. Production release uses the 18.0 mm bore; `hole_d = 0` is a non-release CAD override only.
+The current Longman rubber-order basis for the main body pads is square flat isolator pads, not the earlier circular placeholder. Use `bm_iso_sm_square_pad_rev_a.dxf` / `.svg` and `bm_iso_lg_square_pad_rev_a.dxf` / `.svg` for the current 2D profile, and use `models_3d/bm_iso_sm_square_pad.scad` / `models_3d/bm_iso_lg_square_pad.scad` for the 3D envelope. They default to `hole_d = 18.0`, matching the Toyota `90560-12009` style body-mount sleeve basis. Production release uses the 18.0 mm bore; `hole_d = 0` is a non-release CAD override only.
 
 The shim packs are controlled in `machine_definitions.csv` / `machine_definitions.json` as new flat steel thickness packs. They are not released as fixed DXF outlines until the original shim or mount-station footprint is traced in millimeters; do not substitute washer stacks.
 

@@ -16,8 +16,11 @@ Use it with:
 - `../rubber_recreation_rev_a/models_3d/j40_rubber_models_master.scad` - OpenSCAD master that includes all rubber models.
 - `../rubber_recreation_rev_a/models_3d/model_manifest.csv` - part-by-part 3D model index and release status.
 - `../rubber_recreation_rev_a/models_3d/old_rubber_checks.md` - old-part checks needed before closing uncertain features.
+- `../rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf` / `.svg` - BM-ISO-SM square pad 2D control.
+- `../rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf` / `.svg` - BM-ISO-LG square pad 2D control.
+- `../rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf` / `.svg` - bump-stop saddle hole, pitch, height, and vehicle-measurement control.
 
-The OpenSCAD files are the source 3D controls. The HTML/SVG visual is for orientation and communication.
+The OpenSCAD files are the source 3D controls. The SVG/DXF files are the 2D shop controls. The HTML/SVG bundle visual is for orientation and communication.
 
 ## Current Release
 

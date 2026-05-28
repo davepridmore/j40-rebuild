@@ -1498,6 +1498,8 @@
       spec: "Custom square flat pad 70 x 70 x 22; flat parallel faces; light edge radius/chamfer; 18.0 mm through bore for Toyota 90560-12009 style body-mount spacer/crush tube.",
       route: "Longman consolidated rubber order",
       files: [
+        ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf"],
+        ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg"],
         ["Longman Spec", "../../docs/longman-rubber-order-spec-20260508.md"],
         ["Order CSV", "../../data/manual/longman_rubber_order_specs.csv"],
       ],
@@ -1512,6 +1514,8 @@
       spec: "Custom square flat pad 80 x 80 x 24; flat parallel faces; light edge radius/chamfer; same compound batch as BM-ISO-SM where possible; 18.0 mm through bore for Toyota 90560-12009 style spacer.",
       route: "Longman consolidated rubber order",
       files: [
+        ["DXF", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf"],
+        ["SVG", "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg"],
         ["Longman Spec", "../../docs/longman-rubber-order-spec-20260508.md"],
         ["Order CSV", "../../data/manual/longman_rubber_order_specs.csv"],
       ],
@@ -1651,12 +1655,14 @@
 
   const CHASSIS_RUBBER_DRAWING_FILE_MAP = {
     "BM-ISO-SM": {
-      preview: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.svg",
+      svg: "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
+      dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
       scad: "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
       visual: longmanRubber3dVisual("BM-ISO-SM"),
     },
     "BM-ISO-LG": {
-      preview: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.svg",
+      svg: "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
+      dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
       scad: "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
       visual: longmanRubber3dVisual("BM-ISO-LG"),
     },

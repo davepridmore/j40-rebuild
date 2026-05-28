@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-28T16:51:43+05:00",
+  "generated_at": "2026-05-28T17:25:30+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -22703,7 +22703,7 @@ window.J40_DASHBOARD_DATA = {
           "title": "Longman rubber order 2026-05-08",
           "current_status": "current_release",
           "release_position": "Longman quote pack uses square BM-ISO-SM/BM-ISO-LG body pads, FS-OVAL pads, first-article underfloor FS-STRIP-L/R flat strips, first-article bump stops, and hold rows only for any still-unidentified full-width liners.",
-          "notes": "Steel cup/seat washers, sleeves, shims, and bolts are separate hardware. The supplier-facing strip release is now the plain 165 x 38 x 8 mm rubber pair, and the DXF/SVG strip drawings match that first-article geometry with no rubber holes by default. 3D fabrication assets are now included: interactive/static visualisation plus OpenSCAD source models from rubber_recreation_rev_a/models_3d.",
+          "notes": "Steel cup/seat washers, sleeves, shims, and bolts are separate hardware. The supplier-facing strip release is now the plain 165 x 38 x 8 mm rubber pair. The Longman handoff now includes paired SVG/DXF controls for BM-ISO-SM, BM-ISO-LG, FS-OVAL, FS-STRIP-L/R, and the bump-stop vehicle measurement drawing, plus interactive/static 3D visualisation and OpenSCAD source models.",
           "package_dir": "data/manual/fabrication/longman_rubber_order_20260508",
           "primary_links": [
             {
@@ -22800,22 +22800,55 @@ window.J40_DASHBOARD_DATA = {
               "download": true
             }
           ],
-          "dxf_links": [],
+          "dxf_links": [
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
+              "label": "bm_iso_sm_square_pad_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
+              "label": "bm_iso_lg_square_pad_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf",
+              "label": "fs_oval_front_support_pad_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf",
+              "label": "fs_strip_left_template_blank_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf",
+              "label": "fs_strip_right_template_blank_rev_a.dxf"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+              "label": "bump_stop_vehicle_measurement_control.dxf"
+            }
+          ],
           "svg_links": [
             {
-              "url": "../../data/manual/fabrication/longman_rubber_order_20260508/fs_oval_front_support_pad_rev_a.svg",
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
+              "label": "bm_iso_sm_square_pad_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
+              "label": "bm_iso_lg_square_pad_rev_a.svg"
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.svg",
               "label": "fs_oval_front_support_pad_rev_a.svg"
             },
             {
-              "url": "../../data/manual/fabrication/longman_rubber_order_20260508/fs_strip_left_template_blank_rev_a.svg",
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg",
               "label": "fs_strip_left_template_blank_rev_a.svg"
             },
             {
-              "url": "../../data/manual/fabrication/longman_rubber_order_20260508/fs_strip_right_template_blank_rev_a.svg",
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg",
               "label": "fs_strip_right_template_blank_rev_a.svg"
             },
             {
-              "url": "../../data/manual/fabrication/longman_rubber_order_20260508/bump_stop_vehicle_measurement_control.svg",
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
               "label": "bump_stop_vehicle_measurement_control.svg"
             }
           ],
@@ -22823,9 +22856,9 @@ window.J40_DASHBOARD_DATA = {
             "url": "../../deliverables/fabrication_packages/longman_rubber_order_20260508.zip",
             "label": "Download package (.zip)",
             "download": true,
-            "bytes": 113942
+            "bytes": 147740
           },
-          "file_count": 23
+          "file_count": 31
         }
       ],
       "chassis_bracket_analysis_register": [],
@@ -23011,6 +23044,31 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
               "label": "Bump-stop measurement control SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+              "label": "Bump-stop measurement control DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
+              "label": "BM-ISO-SM square pad DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
+              "label": "BM-ISO-SM square pad SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
+              "label": "BM-ISO-LG square pad DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
+              "label": "BM-ISO-LG square pad SVG",
               "download": true
             },
             {
@@ -23240,6 +23298,31 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
               "label": "Bump-stop measurement control SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+              "label": "Bump-stop measurement control DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
+              "label": "BM-ISO-SM square pad DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
+              "label": "BM-ISO-SM square pad SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
+              "label": "BM-ISO-LG square pad DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
+              "label": "BM-ISO-LG square pad SVG",
               "download": true
             },
             {
@@ -23550,6 +23633,31 @@ window.J40_DASHBOARD_DATA = {
               "download": true
             },
             {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+              "label": "Bump-stop measurement control DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
+              "label": "BM-ISO-SM square pad DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
+              "label": "BM-ISO-SM square pad SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
+              "label": "BM-ISO-LG square pad DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
+              "label": "BM-ISO-LG square pad SVG",
+              "download": true
+            },
+            {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf",
               "label": "Small body-mount cushion DXF",
               "download": true
@@ -23737,6 +23845,31 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
               "label": "Bump-stop measurement control SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+              "label": "Bump-stop measurement control DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
+              "label": "BM-ISO-SM square pad DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
+              "label": "BM-ISO-SM square pad SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
+              "label": "BM-ISO-LG square pad DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
+              "label": "BM-ISO-LG square pad SVG",
               "download": true
             },
             {
@@ -70161,6 +70294,31 @@ window.J40_DASHBOARD_DATA = {
             "download": true
           },
           {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+            "label": "Bump-stop measurement control DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
+            "label": "BM-ISO-SM square pad DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
+            "label": "BM-ISO-SM square pad SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
+            "label": "BM-ISO-LG square pad DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
+            "label": "BM-ISO-LG square pad SVG",
+            "download": true
+          },
+          {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf",
             "label": "Small body-mount cushion DXF",
             "download": true
@@ -70383,6 +70541,31 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
             "label": "Bump-stop measurement control SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+            "label": "Bump-stop measurement control DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
+            "label": "BM-ISO-SM square pad DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
+            "label": "BM-ISO-SM square pad SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
+            "label": "BM-ISO-LG square pad DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
+            "label": "BM-ISO-LG square pad SVG",
             "download": true
           },
           {
@@ -70685,6 +70868,31 @@ window.J40_DASHBOARD_DATA = {
             "download": true
           },
           {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+            "label": "Bump-stop measurement control DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
+            "label": "BM-ISO-SM square pad DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
+            "label": "BM-ISO-SM square pad SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
+            "label": "BM-ISO-LG square pad DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
+            "label": "BM-ISO-LG square pad SVG",
+            "download": true
+          },
+          {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf",
             "label": "Small body-mount cushion DXF",
             "download": true
@@ -70870,6 +71078,31 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
             "label": "Bump-stop measurement control SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+            "label": "Bump-stop measurement control DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
+            "label": "BM-ISO-SM square pad DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
+            "label": "BM-ISO-SM square pad SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
+            "label": "BM-ISO-LG square pad DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
+            "label": "BM-ISO-LG square pad SVG",
             "download": true
           },
           {
@@ -98370,6 +98603,31 @@ window.J40_DASHBOARD_DATA = {
               "download": true
             },
             {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+              "label": "Bump-stop measurement control DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
+              "label": "BM-ISO-SM square pad DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
+              "label": "BM-ISO-SM square pad SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
+              "label": "BM-ISO-LG square pad DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
+              "label": "BM-ISO-LG square pad SVG",
+              "download": true
+            },
+            {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf",
               "label": "Small body-mount cushion DXF",
               "download": true
@@ -98599,6 +98857,31 @@ window.J40_DASHBOARD_DATA = {
               "download": true
             },
             {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+              "label": "Bump-stop measurement control DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
+              "label": "BM-ISO-SM square pad DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
+              "label": "BM-ISO-SM square pad SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
+              "label": "BM-ISO-LG square pad DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
+              "label": "BM-ISO-LG square pad SVG",
+              "download": true
+            },
+            {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf",
               "label": "Small body-mount cushion DXF",
               "download": true
@@ -98786,6 +99069,31 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
               "label": "Bump-stop measurement control SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+              "label": "Bump-stop measurement control DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
+              "label": "BM-ISO-SM square pad DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
+              "label": "BM-ISO-SM square pad SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
+              "label": "BM-ISO-LG square pad DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
+              "label": "BM-ISO-LG square pad SVG",
               "download": true
             },
             {
@@ -99054,6 +99362,31 @@ window.J40_DASHBOARD_DATA = {
             {
               "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
               "label": "Bump-stop measurement control SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+              "label": "Bump-stop measurement control DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
+              "label": "BM-ISO-SM square pad DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
+              "label": "BM-ISO-SM square pad SVG",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
+              "label": "BM-ISO-LG square pad DXF",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
+              "label": "BM-ISO-LG square pad SVG",
               "download": true
             },
             {
@@ -110632,6 +110965,31 @@ window.J40_DASHBOARD_DATA = {
             "download": true
           },
           {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+            "label": "Bump-stop measurement control DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
+            "label": "BM-ISO-SM square pad DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
+            "label": "BM-ISO-SM square pad SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
+            "label": "BM-ISO-LG square pad DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
+            "label": "BM-ISO-LG square pad SVG",
+            "download": true
+          },
+          {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf",
             "label": "Small body-mount cushion DXF",
             "download": true
@@ -110900,6 +111258,31 @@ window.J40_DASHBOARD_DATA = {
             "download": true
           },
           {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+            "label": "Bump-stop measurement control DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
+            "label": "BM-ISO-SM square pad DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
+            "label": "BM-ISO-SM square pad SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
+            "label": "BM-ISO-LG square pad DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
+            "label": "BM-ISO-LG square pad SVG",
+            "download": true
+          },
+          {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf",
             "label": "Small body-mount cushion DXF",
             "download": true
@@ -111087,6 +111470,31 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
             "label": "Bump-stop measurement control SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+            "label": "Bump-stop measurement control DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
+            "label": "BM-ISO-SM square pad DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
+            "label": "BM-ISO-SM square pad SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
+            "label": "BM-ISO-LG square pad DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
+            "label": "BM-ISO-LG square pad SVG",
             "download": true
           },
           {
@@ -111618,6 +112026,31 @@ window.J40_DASHBOARD_DATA = {
           {
             "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
             "label": "Bump-stop measurement control SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
+            "label": "Bump-stop measurement control DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.dxf",
+            "label": "BM-ISO-SM square pad DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg",
+            "label": "BM-ISO-SM square pad SVG",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf",
+            "label": "BM-ISO-LG square pad DXF",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg",
+            "label": "BM-ISO-LG square pad SVG",
             "download": true
           },
           {

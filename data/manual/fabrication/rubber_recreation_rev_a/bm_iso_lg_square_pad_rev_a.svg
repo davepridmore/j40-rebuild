@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240mm" height="178mm" viewBox="0 0 240 178" role="img" aria-labelledby="title desc">
+  <title id="title">BM-ISO-LG square body isolator pad</title>
+  <desc id="desc">Released square flat body isolator pad control: 80 by 80 by 24 millimetres with an 18 millimetre centre bore.</desc>
+  <style>
+    .cut { fill: none; stroke: #111; stroke-width: 0.5; }
+    .bore { fill: none; stroke: #111; stroke-width: 0.5; }
+    .center { stroke: #777; stroke-width: 0.25; stroke-dasharray: 2 2; }
+    .dim { stroke: #c43a31; stroke-width: 0.35; fill: none; marker-start: url(#arrow); marker-end: url(#arrow); }
+    .title { font: 700 7px monospace; fill: #111; }
+    .label { font: 5px monospace; fill: #111; }
+    .note { font: 4.6px monospace; fill: #111; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="5" markerHeight="5" refX="2.5" refY="2.5" orient="auto-start-reverse">
+      <path d="M0,0 L5,2.5 L0,5 z" fill="#c43a31"/>
+    </marker>
+  </defs>
+  <text x="24" y="14" class="title">BM-ISO-LG square body isolator pad | qty 2 + 1 spare | units: mm</text>
+  <g transform="translate(24,28)">
+    <rect x="0" y="0" width="80" height="80" rx="1.5" ry="1.5" class="cut"/>
+    <circle cx="40" cy="40" r="9" class="bore"/>
+    <line x1="40" y1="-6" x2="40" y2="86" class="center"/>
+    <line x1="-6" y1="40" x2="86" y2="40" class="center"/>
+    <path d="M0 94 L80 94" class="dim"/>
+    <text x="33" y="102" class="label">80 L</text>
+    <path d="M94 0 L94 80" class="dim"/>
+    <text x="99" y="42" class="label">80 W</text>
+    <text x="9" y="118" class="note">Plan corners R1.5; top/bottom edge break or chamfer 1.0 max.</text>
+    <text x="9" y="128" class="note">Through bore: 18.0 mm on centre for Toyota 90560-12009 style sleeve.</text>
+    <text x="9" y="138" class="note">Finished free height: 24 mm; faces flat and parallel within 0.5 mm.</text>
+  </g>
+</svg>

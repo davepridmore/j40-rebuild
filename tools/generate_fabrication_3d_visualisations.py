@@ -353,6 +353,10 @@ def rubber_order_cylinders(prefix: str = "Longman rubber") -> list[dict[str, obj
         {"name": f"{prefix} FS-OVAL right capsule end R32", "x": 96, "y": 7.5, "z": -100, "r": 32, "h": 15, "color": "rubber"},
         {"name": f"{prefix} FS-OVAL hole 1, 12 mm", "x": 48, "y": 10, "z": -100, "r": 6, "h": 20, "color": "silver"},
         {"name": f"{prefix} FS-OVAL hole 2, 12 mm", "x": 112, "y": 10, "z": -100, "r": 6, "h": 20, "color": "silver"},
+        {"name": f"{prefix} long bump-stop saddle mounting hole D left", "x": -202, "y": 8, "z": 150, "r": 5.5, "h": 14, "color": "white"},
+        {"name": f"{prefix} long bump-stop saddle mounting hole D right", "x": -138, "y": 8, "z": 150, "r": 5.5, "h": 14, "color": "white"},
+        {"name": f"{prefix} short right-front bump-stop saddle mounting hole D left", "x": -77, "y": 8, "z": 150, "r": 5.5, "h": 14, "color": "white"},
+        {"name": f"{prefix} short right-front bump-stop saddle mounting hole D right", "x": -13, "y": 8, "z": 150, "r": 5.5, "h": 14, "color": "white"},
         {"name": f"{prefix} exhaust top hole hold target 9 mm", "x": 105, "y": 24, "z": 178, "r": 4.5, "h": 14, "color": "silver"},
     ]
 
