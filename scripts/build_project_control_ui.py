@@ -2118,8 +2118,6 @@ FABRICATION_DESIGN_LINKS_BY_PACKAGE: dict[str, list[tuple[str, str]]] = {
         ("data/manual/fabrication/rubber_recreation_rev_a/bm_iso_sm_square_pad_rev_a.svg", "BM-ISO-SM square pad SVG"),
         ("data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.dxf", "BM-ISO-LG square pad DXF"),
         ("data/manual/fabrication/rubber_recreation_rev_a/bm_iso_lg_square_pad_rev_a.svg", "BM-ISO-LG square pad SVG"),
-        ("data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf", "Small body-mount cushion DXF"),
-        ("data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.dxf", "Large body-mount cushion DXF"),
         ("data/manual/fabrication/rubber_recreation_rev_a/bm_cup_small_seat_washer_rev_a.dxf", "Small cup washer DXF"),
         ("data/manual/fabrication/rubber_recreation_rev_a/bm_cup_large_seat_washer_rev_a.dxf", "Large cup washer DXF"),
         ("data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf", "Oval front-support pad DXF"),
@@ -2248,6 +2246,16 @@ FABRICATION_DESIGN_ENTRY_PACKAGES: dict[str, tuple[str, ...]] = {
     "service_local_3d_printing_fabrication_prototypes": ("midi5_enclosure_rev_d", "relay_mount_rev_d"),
     "front_radiator_two_side_retention_fabrication_20260508": ("front_radiator_two_side_retention_rev_a",),
     "battery_power_carrier_mount_fabrication_20260508": ("battery_power_carrier_mount_rev_a", "relay_mount_rev_d"),
+}
+
+
+FABRICATION_PACKAGE_ARCHIVE_EXCLUDES: dict[str, set[str]] = {
+    "rubber_recreation_rev_a": {
+        "data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.dxf",
+        "data/manual/fabrication/rubber_recreation_rev_a/bm_sm_body_mount_cushion_rev_a.svg",
+        "data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.dxf",
+        "data/manual/fabrication/rubber_recreation_rev_a/bm_lg_body_mount_cushion_rev_a.svg",
+    },
 }
 
 
@@ -2560,14 +2568,21 @@ def package_archive_link(package_id: str, package_dir: str, extra_repo_paths: It
         return None
 
     archive_sources: dict[str, Path] = {}
+    excluded_repo_paths = FABRICATION_PACKAGE_ARCHIVE_EXCLUDES.get(package, set())
     package_path = resolve_repo_path(directory)
     if package_path.exists() and package_path.is_dir():
         for path in sorted(item for item in package_path.rglob("*") if item.is_file()):
-            archive_sources[repo_relative_path(path)] = path
+            repo_path = repo_relative_path(path)
+            if repo_path in excluded_repo_paths:
+                continue
+            archive_sources[repo_path] = path
     for repo_path in extra_repo_paths:
         source_path = resolve_repo_path(repo_path)
         if source_path.exists() and source_path.is_file():
-            archive_sources[repo_relative_path(source_path)] = source_path
+            source_repo_path = repo_relative_path(source_path)
+            if source_repo_path in excluded_repo_paths:
+                continue
+            archive_sources[source_repo_path] = source_path
     if not archive_sources:
         return None
 

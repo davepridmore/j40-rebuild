@@ -51,10 +51,10 @@ Package contents:
 | `BM-CUP` small cup washer blank | `bm_cup_small_seat_washer_rev_a.dxf` | Quote/first article; confirm cup reuse and dish depth |
 | `BM-CUP` large cup washer blank | `bm_cup_large_seat_washer_rev_a.dxf` | Quote/first article; confirm cup reuse and dish depth |
 | `FS-OVAL` front-support pad | `fs_oval_front_support_pad_rev_a.dxf` | Quote/first article; confirm holes, thickness, and insert/boss |
-| `FS-STRIP-L` strip blank | `fs_strip_left_template_blank_rev_a.dxf` | Released plain first-article strip: `165 x 38 x 8`; local end trim only after dry-fit |
-| `FS-STRIP-R` strip blank | `fs_strip_right_template_blank_rev_a.dxf` | Released plain first-article strip: `165 x 38 x 8`; local end trim only after dry-fit |
+| `FS-STRIP-L` strip blank | `fs_strip_left_template_blank_rev_a.dxf` | Released plain first-article strip: `420 x 38 x 8`; local end trim only after dry-fit |
+| `FS-STRIP-R` strip blank | `fs_strip_right_template_blank_rev_a.dxf` | Released plain first-article strip: `420 x 38 x 8`; local end trim only after dry-fit |
 | `EXH-HGR-90917` exhaust teardrop cushion | `exh_hgr_90917_08004_teardrop_rev_a.dxf` | Toyota `90917-08004` / `17572-92000` is a reference shape only; source exact new stock or locally mould from a genuine sample/intact original with side profile, insert depth, thickness, and reinforcement confirmed |
-| `BUMP-F-L`, `BUMP-F-R`, `BUMP-R` bump stops | `bump_stop_vehicle_measurement_control.svg` | Vehicle-bracket-controlled mould release. Long `48304-60010` positions are `70 mm`; right-front `48304-60020` is `60 mm`; reproduce Toyota-style two-ear steel saddle/backing plate, tapered/radiused progressive rubber body, and flat rectangular strike face. Base footprint, bolt pattern, and contact offset come from the vehicle. See `docs/bump-stop-fabrication-spec-20260504.md`. |
+| `BUMP-F-L`, `BUMP-F-R`, `BUMP-R` bump stops | `bump_stop_vehicle_measurement_control.svg` | Rubber-only stretch-fit mould release. Long `48304-60010` positions are `70 mm`; right-front `48304-60020` is `60 mm`; reproduce Toyota-style tapered/radiused progressive rubber body with relaxed through-holes or slots that stretch over the vehicle bolts/studs, plus a flat rectangular strike face. Rubber base footprint, bolt/stud pattern, relaxed hole/slot size, and contact offset come from the vehicle. See `docs/bump-stop-fabrication-spec-20260504.md`. |
 
 Common handoff index: `docs/fabrication-handoff-index.md`.
 
@@ -79,7 +79,7 @@ Do not approve the final batch until the first articles pass dimensional check, 
 
 Rubber pieces must be new black solid automotive mount-grade rubber. The acceptable base compound is `EPDM` or `NR/SBR` unless a measured original sample proves a different compound. Do not use tyre rubber, crumb/recycled rubber, sponge foam, mixed offcuts, used rubber, old salvage rubber, or unidentified compound.
 
-Bump stops are the exception to the body/front-support hardness target. Use the separate bump-stop material control: `NR/SBR` automotive bump-stop rubber Shore A `70 +/-5` bonded or captive to a new coated steel saddle, or cast automotive PU Shore A `80 +/-5` only if the progressive mould shape and captive steel mounting are held. The decayed old bump-stop rubber is not the production master.
+Bump stops are the exception to the body/front-support hardness target. Use the separate bump-stop material control: `NR/SBR` automotive bump-stop rubber Shore A `70 +/-5`, or cast automotive PU Shore A `80 +/-5` only if the progressive mould shape, rubber-only stretch-fit installation, and rebound recovery are held. The decayed old bump-stop rubber is not the production master.
 
 Required material targets:
 
@@ -225,7 +225,7 @@ Longman can quote and make first articles from the measured old-rubber dimension
 | `BM-SLV` | Main body-mount crush sleeve | `6` | `ID 10.8-11.0` for M10 bolt; OD and length held for caliper confirmation | Hold |
 | `BM-CUP` | Body-mount cup/seat washer | `12` | small cup `OD 64`, large cup `OD 78`, M10 clearance hole `11`, dish/register depth `2-3`, steel `2.5-3.0` thick | Separate hardware inspect / quote if needed |
 | `FS-OVAL` | Two-hole oval front-support isolator pad | `2` | length `96`, width `64`, thickness `15`, holes `12`, hole spacing `64`, relief `36 x 18 R3` if functional, insert/boss `OD 29` | Released for quote / first article |
-| `FS-STRIP-L` | Underfloor body-support strip liner - left | `1` | flat strip `165 x 38 x 8`; no through-holes in rubber by default | First article / quote |
+| `FS-STRIP-L` | Underfloor body-support strip liner - left | `1` | flat strip `420 x 38 x 8`; no through-holes in rubber by default | First article / quote |
 | `FS-STRIP-R` | Underfloor body-support strip liner - right | `1` | same blank as left unless installed sample proves handed end trim | First article / quote |
 
 ## Main Body Isolator Pads
@@ -333,7 +333,7 @@ Steel retainer / carrier rule:
 3. Do not derive steel slot length or pitch from torn rubber witness marks alone.
 
 Fabrication method:
-1. Cut two flat rubber strips to `165 x 38 x 8`.
+1. Cut two flat rubber strips to `420 x 38 x 8`.
 2. Dress the long edges clean and keep the faces parallel.
 3. Dry-fit one strip at the actual crossmember/body landing before making any side-specific trim.
 4. If one side proves a local corner relief or handed end trim is needed, trim from the installed sample and duplicate that side only after confirmation.

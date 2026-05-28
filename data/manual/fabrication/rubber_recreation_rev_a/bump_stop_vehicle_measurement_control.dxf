@@ -223,7 +223,7 @@ TEXT
 40
 4
 1
-J40 bump stop saddle hole measurement control - not a final cut profile
+J40 bump stop rubber-only stretch-fit measurement control - not a final cut profile
 0
 TEXT
 8
@@ -235,7 +235,7 @@ TEXT
 40
 3
 1
-2X MOUNTING HOLES OR STUDS IN STEEL SADDLE: measure from cleaned vehicle bracket
+2X RELAXED RUBBER STRETCH-FIT HOLES/SLOTS: measure from cleaned vehicle bracket
 0
 TEXT
 8
@@ -247,7 +247,7 @@ TEXT
 40
 3
 1
-P = centre-to-centre pitch between holes/studs; D = hole diameter or stud/thread size
+P = centre-to-centre pitch between bolts/studs; D = relaxed rubber hole/slot size
 0
 TEXT
 8
@@ -259,7 +259,7 @@ TEXT
 40
 3
 1
-BL/BW/P/D/X-Y/G/F are vehicle release values. Do not copy torn rubber or rusted remnants.
+BL/BW/P/D/X-Y/G/F are vehicle release values. No steel saddle/backing plate.
 0
 TEXT
 8

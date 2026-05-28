@@ -1242,6 +1242,22 @@ RUBBER_RECREATION_20260517_FLAT_PAD_MEASUREMENT_FILES = (
     "20260517_194706_gp_twKRWGFA.jpg",
 )
 
+RUBBER_RECREATION_20260528_STRIP_RETAINER_FILES = (
+    "20260528_185826_gp_FoyeBPUg.jpg",
+    "20260528_185833_gp_gZBjUjPg.jpg",
+)
+
+RUBBER_RECREATION_20260528_BODY_CUP_MEASUREMENT_FILES = (
+    "20260528_193054_gp_UFyTb44w.jpg",
+    "20260528_193143_gp_Cn3OWzZQ.jpg",
+    "20260528_193228_gp_PLATNsFQ.jpg",
+)
+
+RUBBER_RECREATION_20260528_STRIP_SECTION_FILES = (
+    "20260528_193200_gp_HICSdovA.jpg",
+    "20260528_193253_gp_f0eQuSFA.jpg",
+)
+
 WINDOW_REFURBISHMENT_20260517_FRONT_VENT_FILES = (
     "20260517_193803_gp_1KhFjceQ.jpg",
     "20260517_193837_gp_AERCJIrw.jpg",
@@ -1638,7 +1654,7 @@ FILE_OVERRIDES.update(
                 "recreation",
                 "fabrication",
             ),
-            "May 17 user-selected long rubber strip/channel measurement reference for rubber fabrication; use as shape and scale evidence only until the physical part/location trace is confirmed.",
+            "May 17 user-selected long rubber strip/channel measurement reference for rubber fabrication; tape views show the released underfloor strip is about 16.5 in / 419 mm long, rounded to a 420 x 38 x 8 mm first article while trim and retainer details remain dry-fit controlled.",
         )
         for file_name in RUBBER_RECREATION_20260517_FILES
     }
@@ -1664,6 +1680,76 @@ FILE_OVERRIDES.update(
             "May 17 vehicle-side body-mount measurement photo for the additional flat rubber requirement; use for pad footprint and stack-height planning, but keep final side/station labels, sleeve checks, and dry-stack confirmation open.",
         )
         for file_name in RUBBER_RECREATION_20260517_FLAT_PAD_MEASUREMENT_FILES
+    }
+)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "procurement_inventory",
+            "rubber_parts_recreation_samples",
+            "fabrication_measurement",
+            "strip_retainer_landing_measurement_reference",
+            "high",
+            (
+                "rubber",
+                "strip",
+                "retainer",
+                "landing",
+                "measurement",
+                "tape_reference",
+                "vehicle_side",
+                "recreation",
+                "fabrication",
+            ),
+            "May 28 user-selected strip/retainer close-up with tape; use for local retainer/landing trace and dry-fit context only. It does not release rubber holes, slots, bonding, or handed trim beyond the plain 420 x 38 x 8 mm first article.",
+        )
+        for file_name in RUBBER_RECREATION_20260528_STRIP_RETAINER_FILES
+    }
+)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "procurement_inventory",
+            "rubber_parts_recreation_samples",
+            "fabrication_measurement",
+            "body_mount_cup_stack_measurement_context",
+            "high",
+            (
+                "rubber",
+                "body_mount",
+                "cup",
+                "washer",
+                "round_pad",
+                "measurement",
+                "tape_reference",
+                "recreation",
+                "fabrication",
+            ),
+            "May 28 user-selected loose body-mount rubber/cup measurement photo. It supports stack/cup inspection context only; the active Longman body-pad design remains square BM-ISO-SM/LG unless station dry-fit deliberately reopens a round profile.",
+        )
+        for file_name in RUBBER_RECREATION_20260528_BODY_CUP_MEASUREMENT_FILES
+    }
+)
+FILE_OVERRIDES.update(
+    {
+        file_name: c(
+            "procurement_inventory",
+            "rubber_parts_recreation_samples",
+            "fabrication_measurement",
+            "strip_section_measurement_context",
+            "high",
+            (
+                "rubber",
+                "strip",
+                "section",
+                "measurement",
+                "tape_reference",
+                "recreation",
+                "fabrication",
+            ),
+            "May 28 user-selected loose rectangular rubber strip/block close-up with tape. It supports section context only; it does not release new length, holes, slots, bonding, or handed trim beyond the plain 420 x 38 x 8 mm first article.",
+        )
+        for file_name in RUBBER_RECREATION_20260528_STRIP_SECTION_FILES
     }
 )
 FILE_OVERRIDES.update(
@@ -3045,7 +3131,6 @@ FILE_OVERRIDES.update(
         ),
     }
 )
-
 
 TIMESTAMP_RE = re.compile(r"^(?P<date>\d{8})_(?P<time>\d{6})")
 IMG_DATE_RE = re.compile(r"^IMG-(?P<date>\d{8})-")

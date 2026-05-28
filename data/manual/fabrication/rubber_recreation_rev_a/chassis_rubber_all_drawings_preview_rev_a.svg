@@ -94,13 +94,13 @@
     <rect class="panel" x="0" y="0" width="272" height="250" rx="8"/>
     <text class="panel-title" x="18" y="30">FS-STRIP-L/R</text>
     <text class="small" x="18" y="50">Underfloor body-support strips</text>
-    <rect class="strip" x="38" y="86" width="198" height="46" rx="5"/>
-    <rect class="strip" x="38" y="154" width="198" height="46" rx="5"/>
-    <path class="dim" d="M38 68 L236 68"/>
-    <text class="small" x="118" y="62">165 L</text>
-    <path class="dim" d="M252 86 L252 132"/>
-    <text class="small" x="218" y="117">38 W</text>
-    <text class="tiny" x="18" y="224">Plain 165 x 38 x 8 strips; no rubber holes by default</text>
+    <rect class="strip" x="28" y="94" width="216" height="20" rx="3"/>
+    <rect class="strip" x="28" y="154" width="216" height="20" rx="3"/>
+    <path class="dim" d="M28 76 L244 76"/>
+    <text class="small" x="112" y="70">420 L</text>
+    <path class="dim" d="M258 94 L258 114"/>
+    <text class="small" x="218" y="109">38 W</text>
+    <text class="tiny" x="18" y="224">Plain 420 x 38 x 8 strips shown scaled; no rubber holes</text>
   </g>
 
   <g transform="translate(36,388)">
@@ -117,10 +117,10 @@
       <text class="small" x="260" y="104">70 H</text>
       <path class="dim" d="M50 -18 L180 -18"/>
       <text class="small" x="88" y="-28">P measure</text>
-      <text class="tiny" x="20" y="-4">holes in steel saddle ears</text>
+      <text class="tiny" x="20" y="-4">rubber stretch-fit holes/studs</text>
     </g>
-    <text class="tiny" x="18" y="248">Red holes are steel saddle holes, not released rubber through-holes</text>
-    <text class="tiny" x="18" y="266">Base, hole pitch, and strike offset release from cleaned brackets</text>
+    <text class="tiny" x="18" y="248">Red holes are relaxed rubber through-holes/slots that stretch over bolts/studs</text>
+    <text class="tiny" x="18" y="266">Saddle footprint, hole pitch, and strike offset release from cleaned brackets</text>
   </g>
 
   <g transform="translate(464,388)">
@@ -137,9 +137,9 @@
       <text class="small" x="260" y="94">60 H</text>
       <path class="dim" d="M50 -18 L180 -18"/>
       <text class="small" x="88" y="-28">P measure</text>
-      <text class="tiny" x="20" y="-4">holes in steel saddle ears</text>
+      <text class="tiny" x="20" y="-4">rubber stretch-fit holes/studs</text>
     </g>
-    <text class="tiny" x="18" y="248">Red holes are steel saddle holes, not released rubber through-holes</text>
+    <text class="tiny" x="18" y="248">Red holes are relaxed rubber through-holes/slots that stretch over bolts/studs</text>
     <text class="tiny" x="18" y="266">Do not substitute the 70 mm long-stop height here</text>
   </g>
 

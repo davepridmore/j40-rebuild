@@ -483,6 +483,35 @@ def circular_mount(name: str, title: str, od: float, height: str, qty: str, stat
     )
 
 
+def square_body_pad(name: str, title: str, size: float, height: str, qty: str, status: str) -> Drawing:
+    centre = size / 2
+    return Drawing(
+        name=name,
+        title=title,
+        width=size,
+        height=size,
+        qty=qty,
+        material="Black EPDM or NR/SBR, Shore A 60 +/-5",
+        release_status=status,
+        circles=[
+            Circle(centre, centre, 9, "CUT_BORE"),
+        ],
+        polys=[
+            rounded_rect_poly(0, 0, size, size, 1.5, "CUT"),
+        ],
+        lines=[
+            Line(centre, 0, centre, size, "CENTER"),
+            Line(0, centre, size, centre, "CENTER"),
+        ],
+        notes=[
+            f"Finished free height: {height}. The DXF is the top cut profile only; height is controlled by the PDF and cut list.",
+            "Central through bore is 18.0 mm for Toyota 90560-12009 style sleeve clearance; this is a through cut.",
+            "Plan corner radius target R1.5. Top/bottom perimeter edge break or chamfer target 1.0 mm max. Faces flat and parallel within 0.5 mm.",
+            "This replaces the older circular BM-SM/BM-LG placeholder for the active Longman rubber order.",
+        ],
+    )
+
+
 def cup_washer(name: str, title: str, od: float, qty: str) -> Drawing:
     centre = od / 2
     return Drawing(
@@ -548,27 +577,23 @@ def strip_template(name: str, title: str) -> Drawing:
     return Drawing(
         name=name,
         title=title,
-        width=165,
-        height=40,
+        width=420,
+        height=38,
         qty="1",
-        material="8 mm base / 14 mm raised-load EPDM or NR/SBR strip, Shore A 60 +/-5",
-        release_status="template required; this file is a quote blank, not final production geometry",
+        material="8 mm EPDM or NR/SBR plain strip, Shore A 60 +/-5",
+        release_status="released plain 420 x 38 x 8 first article; local end trim only after dry-fit",
         polys=[
-            rounded_rect_poly(0, 0, 165, 40, 4, "TEMPLATE"),
-            rounded_rect_poly(12, 14.5, 16, 11, 5.5, "TEMPLATE"),
-            rounded_rect_poly(137, 14.5, 16, 11, 5.5, "TEMPLATE"),
+            rounded_rect_poly(0, 0, 420, 38, 1.5, "CUT"),
         ],
         circles=[],
         lines=[
-            Line(0, 20, 165, 20, "CENTER"),
-            Line(20, 0, 20, 40, "CENTER"),
-            Line(145, 0, 145, 40, "CENTER"),
+            Line(0, 19, 420, 19, "CENTER"),
         ],
         notes=[
-            "This is a stock and quote blank using 165 mm trace length and 38-42 mm working width.",
-            "Final strip outline and hole centres must be traced from the physical rubber and metal carrier before cutting.",
-            "Punch M10 clearance holes or 11 x 16 slots only where the carrier confirms them. Do not copy torn rubber holes.",
-            "If bonded to metal, blast/degrease/prime the carrier and clamp flat through cure.",
+            "May 17 ruler photos show about 16.5 in old-strip length; release first article at 420 L x 38 W x 8 T mm.",
+            "No rubber holes or slots by default. Do not copy steel-retainer slots into the rubber.",
+            "Dry-fit controls only local end trim and side orientation.",
+            "Reuse or trace the slotted steel retainer separately if it must be remade.",
         ],
     )
 
@@ -607,35 +632,35 @@ def exhaust_90917_teardrop_holder() -> Drawing:
 
 def drawings() -> list[Drawing]:
     return [
-        circular_mount(
-            "bm_sm_body_mount_cushion_rev_a",
-            "BM-SM small circular body-mount cushion",
-            64,
-            "22 mm stack-equivalent; split-stack hold remains open",
-            "10",
-            "prototype/quote; production waits for one-piece vs split-stack decision",
+        square_body_pad(
+            "bm_iso_sm_square_pad_rev_a",
+            "BM-ISO-SM small square body isolator pad",
+            70,
+            "22 mm",
+            "10 plus 2 spares",
+            "released for quote and first article; station fit and compression check pending",
         ),
-        circular_mount(
-            "bm_lg_body_mount_cushion_rev_a",
-            "BM-LG large circular body-mount cushion",
-            78,
+        square_body_pad(
+            "bm_iso_lg_square_pad_rev_a",
+            "BM-ISO-LG large square body isolator pad",
+            80,
             "24 mm",
-            "2",
-            "prototype/quote; caliper-confirm station and final stack before batch",
+            "2 plus 1 spare",
+            "released for quote and first article; large-station fit and compression check pending",
         ),
         cup_washer("bm_cup_small_seat_washer_rev_a", "BM-CUP small body-mount cup washer", 64, "10 working basis"),
         cup_washer("bm_cup_large_seat_washer_rev_a", "BM-CUP large body-mount cup washer", 78, "2 working basis"),
         fs_oval(),
-        strip_template("fs_strip_left_template_blank_rev_a", "FS-STRIP-L front support strip quote/template blank"),
-        strip_template("fs_strip_right_template_blank_rev_a", "FS-STRIP-R front support strip quote/template blank"),
+        strip_template("fs_strip_left_template_blank_rev_a", "FS-STRIP-L underfloor body-support strip first-article blank"),
+        strip_template("fs_strip_right_template_blank_rev_a", "FS-STRIP-R underfloor body-support strip first-article blank"),
         exhaust_90917_teardrop_holder(),
     ]
 
 
 def drawing_part_id(drawing: Drawing) -> str:
     part_ids = {
-        "bm_sm_body_mount_cushion_rev_a": "BM-SM",
-        "bm_lg_body_mount_cushion_rev_a": "BM-LG",
+        "bm_iso_sm_square_pad_rev_a": "BM-ISO-SM",
+        "bm_iso_lg_square_pad_rev_a": "BM-ISO-LG",
         "bm_cup_small_seat_washer_rev_a": "BM-CUP-SM",
         "bm_cup_large_seat_washer_rev_a": "BM-CUP-LG",
         "fs_oval_front_support_pad_rev_a": "FS-OVAL",
@@ -700,34 +725,34 @@ def write_cut_list(drawings: Sequence[Drawing]) -> None:
                 "BUMP-F-L",
                 "bump_stop_vehicle_measurement_control",
                 "1",
-                "NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to coated steel saddle preferred; cast PU Shore A 80 +/-5 fallback only with captive steel mounting",
+                "NR/SBR automotive bump-stop rubber Shore A 70 +/-5; rubber-only stretch-fit bolt-on construction; cast PU Shore A 80 +/-5 fallback only if stretch-fit installation and rebound are proven",
                 "docs/bump-stop-fabrication-spec-20260504.md",
                 "none",
                 "bump_stop_vehicle_measurement_control.svg",
                 "vehicle measurement release required before mould; 70 mm external height known",
-                "Use vehicle BL/BW/P/D/X-Y/G/F values; reproduce Toyota-style two-ear steel saddle, tapered/radiused progressive body, and flat strike face; make one first article before full set; no simple cut block. The DXF is a steel-saddle measurement/control drawing only, not a final rubber cut profile.",
+                "Use vehicle bracket BL/BW/P/D/X-Y/G/F values and axle strike pad offset to release the rubber base, relaxed stretch-fit through-holes or slots, and mould; no steel saddle/backing plate. Rubber must stretch over/around bolts or studs and seat flat; make one first article before full set; no simple cut block.",
             ],
             [
                 "BUMP-F-R",
                 "bump_stop_vehicle_measurement_control",
                 "1",
-                "NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to coated steel saddle preferred; cast PU Shore A 80 +/-5 fallback only with captive steel mounting",
+                "NR/SBR automotive bump-stop rubber Shore A 70 +/-5; rubber-only stretch-fit bolt-on construction; cast PU Shore A 80 +/-5 fallback only if stretch-fit installation and rebound are proven",
                 "docs/bump-stop-fabrication-spec-20260504.md",
                 "none",
                 "bump_stop_vehicle_measurement_control.svg",
                 "vehicle measurement release required before mould; 60 mm external height known",
-                "Right front is the short 60 mm Toyota-style stop with steel saddle. Reject 70 mm right-front substitutes unless full-bump test releases trimming. The DXF is a steel-saddle measurement/control drawing only, not a final rubber cut profile.",
+                "Right front is the short 60 mm rubber-only stretch-fit Toyota-style stop. Reject 70 mm right-front substitutes unless full-bump test releases trimming. Release relaxed through-holes or slots from the actual bolts/studs so the rubber can stretch on without tearing.",
             ],
             [
                 "BUMP-R",
                 "bump_stop_vehicle_measurement_control",
                 "2",
-                "NR/SBR automotive bump-stop rubber Shore A 70 +/-5 bonded/captive to coated steel saddles preferred; cast PU Shore A 80 +/-5 fallback only with captive steel mounting",
+                "NR/SBR automotive bump-stop rubber Shore A 70 +/-5; rubber-only stretch-fit bolt-on construction; cast PU Shore A 80 +/-5 fallback only if stretch-fit installation and rebound are proven",
                 "docs/bump-stop-fabrication-spec-20260504.md",
                 "none",
                 "bump_stop_vehicle_measurement_control.svg",
                 "vehicle measurement release required before mould; 70 mm external height known",
-                "Make as matched Toyota-style rear pair with steel saddles, tapered/radiused progressive bodies, height match <=1 mm, and hardness spread <=5 Shore A. The DXF is a steel-saddle measurement/control drawing only, not a final rubber cut profile.",
+                "Make as matched Toyota-style rear rubber-only stretch-fit pair, with tapered/radiused progressive bodies, relaxed through-holes or slots, height match <=1 mm, and hardness spread <=5 Shore A. No steel saddle/backing plate.",
             ],
         ]
     )
@@ -739,29 +764,29 @@ def write_cut_list(drawings: Sequence[Drawing]) -> None:
 
 def write_inspection_sheet() -> None:
     rows = [
-        ("BM-SM", "OD, height, bore, register OD/depth, hardness", "OD/ID +/-1.0; height +/-0.5; Shore A 55-65"),
-        ("BM-LG", "OD, height, bore, register OD/depth, hardness", "OD/ID +/-1.0; height +/-0.5; Shore A 55-65"),
+        ("BM-ISO-SM", "length, width, height, 18 mm bore, flat parallel faces, edge break, hardness", "70 x 70 x 22; length/width +/-1.0; height +/-0.5; bore +0.5/-0.0; Shore A 55-65"),
+        ("BM-ISO-LG", "length, width, height, 18 mm bore, flat parallel faces, edge break, hardness", "80 x 80 x 24; length/width +/-1.0; height +/-0.5; bore +0.5/-0.0; Shore A 55-65"),
         ("BM-CUP-SM", "OD, 11 mm hole, dish/register depth, steel thickness", "OD +/-1.0; hole +0.3/-0.0; dish 2-3"),
         ("BM-CUP-LG", "OD, 11 mm hole, dish/register depth, steel thickness", "OD +/-1.0; hole +0.3/-0.0; dish 2-3"),
         ("FS-OVAL", "overall length/width, thickness, hole spacing, insert OD, hardness", "outer +/-1.0; holes +/-0.5; thickness +/-0.5"),
-        ("FS-STRIP-L/R", "template match, thickness, hole/slot centres, bond quality", "physical template controls final cut"),
+        ("FS-STRIP-L/R", "length, width, thickness, flatness, edge break, local end trim if released", "420 x 38 x 8 first article; no rubber holes by default; dry-fit controls local trim"),
         ("EXH-HGR-90917", "top hole, hanger slot, rubber body thickness, reinforcement, insert depth, bracket fit", "exact new stock or sample/scan-verified mould; Toyota number is reference only"),
         ("BM-SHIM-THIN", "thickness labels, slot width, footprint trace, deburred edges, coating", "thickness +/-0.1; slot 11-12; footprint supports original pedestal/contact patch"),
         ("BM-SHIM-THICK", "thickness labels, hole/slot match, station map need, deburred edges, coating", "cut/buy only if station map proves need; no washer towers"),
         (
             "BUMP-F-L",
-            "70 mm free height, Toyota-style steel saddle/two-ear saddle holes, tapered progressive body, flat strike face, vehicle bracket footprint, bolt/stud pitch, contact face offset, hardness, full-bump engagement, 50 percent compression recovery",
-            "height 70 +/-1; steel saddle holes +/-0.5; no rubber through-holes unless sample-proven; contact centred +/-5; seats flat; saddle does not bend; rubber/steel bond or captive joint stays intact; engages before shock/tyre/spring/brake-hose or metal hard limit",
+            "70 mm free height, rubber-only stretch-fit bolt-on holes or slots, tapered progressive rubber body, flat strike face, vehicle bracket footprint, bolt/stud pitch, contact face offset, hardness, full-bump engagement, 50 percent compression recovery",
+            "height 70 +/-1; relaxed rubber holes/slots and pitch +/-0.5 after vehicle release; stretches over/around bolts or studs without tearing; contact centred +/-5; seats flat with no metal saddle/backing plate; engages before shock/tyre/spring/brake-hose or metal hard limit",
         ),
         (
             "BUMP-F-R",
-            "60 mm free height, Toyota-style steel saddle/two-ear saddle holes, tapered progressive body, flat strike face, right-front bracket footprint, bolt/stud pitch, contact face offset, hardness, full-bump engagement, 50 percent compression recovery",
-            "height 60 +/-1; steel saddle holes +/-0.5; no rubber through-holes unless sample-proven; contact centred +/-5; saddle does not bend; rubber/steel bond or captive joint stays intact; reject 70 mm right-front substitute unless vehicle test releases trimming",
+            "60 mm free height, rubber-only stretch-fit bolt-on holes or slots, tapered progressive rubber body, flat strike face, right-front bracket footprint, bolt/stud pitch, contact face offset, hardness, full-bump engagement, 50 percent compression recovery",
+            "height 60 +/-1; relaxed rubber holes/slots and pitch +/-0.5 after vehicle release; stretches over/around bolts or studs without tearing; contact centred +/-5; seats flat with no metal saddle/backing plate; reject 70 mm right-front substitute unless vehicle test releases trimming",
         ),
         (
             "BUMP-R",
-            "70 mm free height pair, Toyota-style steel saddles/two-ear saddle holes, tapered progressive bodies, flat strike faces, rear bracket footprints, bolt/stud pitch, contact face offsets, hardness match, full-bump engagement, 50 percent compression recovery",
-            "height 70 +/-1; rear pair height match <=1; hardness spread <=5 Shore A; steel saddle holes +/-0.5; no rubber through-holes unless sample-proven; saddles do not bend; rubber/steel bonds or captive joints stay intact; contacts before hard limits; no universal unmatched pair",
+            "70 mm free height pair, rubber-only stretch-fit bolt-on holes or slots, tapered progressive rubber bodies, flat strike faces, rear bracket footprints, bolt/stud pitch, contact face offsets, hardness match, full-bump engagement, 50 percent compression recovery",
+            "height 70 +/-1; rear pair height match <=1; hardness spread <=5 Shore A; relaxed rubber holes/slots and pitch +/-0.5 after vehicle release; stretch-fit without tearing; seats flat with no metal saddle/backing plate; contacts before hard limits; no universal unmatched pair",
         ),
     ]
     header = "part_id,inspect_features,acceptance\n"
@@ -773,28 +798,28 @@ def machine_definition_rows() -> list[dict[str, str]]:
     material_mount = "Black EPDM or NR/SBR automotive mount rubber, Shore A 60 +/-5"
     return [
         {
-            "part_id": "BM-SM",
-            "qty": "10",
-            "machine_route": "rubber lathe/CNC mill/mould; DXF is top profile",
-            "machine_files": "bm_sm_body_mount_cushion_rev_a.dxf|bm_sm_body_mount_cushion_rev_a.svg",
-            "coordinate_system": "2D top profile in mm; origin lower-left of 64 x 64 bounding square; centre at X32 Y32",
-            "exact_definition_mm": "OD 64; finished height 22; through bore diameter 32 at X32 Y32; face A concentric register/recess diameter 46 x depth 2; face B flat; outside load edge R2-R3; faces parallel <=0.5; bore/register concentricity <=1.0",
+            "part_id": "BM-ISO-SM",
+            "qty": "10 plus 2 spares",
+            "machine_route": "waterjet/knife/punch/moulded square body isolator pad; DXF is top profile",
+            "machine_files": "bm_iso_sm_square_pad_rev_a.dxf|bm_iso_sm_square_pad_rev_a.svg",
+            "coordinate_system": "2D top profile in mm; origin lower-left of 70 x 70 bounding square; centre at X35 Y35",
+            "exact_definition_mm": "Square flat pad 70 L x 70 W x 22 H; plan corners R1.5; through bore diameter 18.0 at X35 Y35 for Toyota 90560-12009 style sleeve; top/bottom perimeter edge break or chamfer 1.0 max; flat parallel faces",
             "material": material_mount,
-            "tolerance": "OD/ID +/-1.0; height +/-0.5; register depth +/-0.3",
-            "release_status": "machine-defined for first article; production hold only if old sample proves split-stack construction",
-            "shop_note": "Make as a one-piece cushion unless the physical old sample is split into separate seat/spacer pieces before production signoff.",
+            "tolerance": "length/width +/-1.0; height +/-0.5; bore +0.5/-0.0; edge break 0.5-1.0; faces parallel <=0.5",
+            "release_status": "released for quote and first article; station fit and compression check pending",
+            "shop_note": "Use this square BM-ISO-SM control for the active Longman body-pad order. Do not use the older circular BM-SM placeholder unless deliberately re-released.",
         },
         {
-            "part_id": "BM-LG",
-            "qty": "2",
-            "machine_route": "rubber lathe/CNC mill/mould; DXF is top profile",
-            "machine_files": "bm_lg_body_mount_cushion_rev_a.dxf|bm_lg_body_mount_cushion_rev_a.svg",
-            "coordinate_system": "2D top profile in mm; origin lower-left of 78 x 78 bounding square; centre at X39 Y39",
-            "exact_definition_mm": "OD 78; finished height 24; through bore diameter 32 at X39 Y39; face A concentric register/recess diameter 46 x depth 2; face B flat; outside load edge R2-R3; faces parallel <=0.5; bore/register concentricity <=1.0",
+            "part_id": "BM-ISO-LG",
+            "qty": "2 plus 1 spare",
+            "machine_route": "waterjet/knife/punch/moulded square body isolator pad; DXF is top profile",
+            "machine_files": "bm_iso_lg_square_pad_rev_a.dxf|bm_iso_lg_square_pad_rev_a.svg",
+            "coordinate_system": "2D top profile in mm; origin lower-left of 80 x 80 bounding square; centre at X40 Y40",
+            "exact_definition_mm": "Square flat pad 80 L x 80 W x 24 H; plan corners R1.5; through bore diameter 18.0 at X40 Y40 for Toyota 90560-12009 style sleeve; top/bottom perimeter edge break or chamfer 1.0 max; flat parallel faces",
             "material": material_mount,
-            "tolerance": "OD/ID +/-1.0; height +/-0.5; register depth +/-0.3",
-            "release_status": "machine-defined for first article and matched pair",
-            "shop_note": "Make both pieces from one compound batch and one setup.",
+            "tolerance": "length/width +/-1.0; height +/-0.5; bore +0.5/-0.0; edge break 0.5-1.0; faces parallel <=0.5",
+            "release_status": "released for quote and first article; large-station fit and compression check pending",
+            "shop_note": "Make the large pair and spare from the same compound batch where possible. Do not use the older circular BM-LG placeholder unless deliberately re-released.",
         },
         {
             "part_id": "BM-CUP-SM",
@@ -835,26 +860,26 @@ def machine_definition_rows() -> list[dict[str, str]]:
         {
             "part_id": "FS-STRIP-L",
             "qty": "1",
-            "machine_route": "template trace, then waterjet/knife/punch; supplied DXF is stock blank only",
+            "machine_route": "waterjet/knife/die cut plain strip; dry-fit controls local trim",
             "machine_files": "fs_strip_left_template_blank_rev_a.dxf|fs_strip_left_template_blank_rev_a.svg",
-            "coordinate_system": "template blank in mm; origin lower-left of 165 x 40 stock envelope",
-            "exact_definition_mm": "Stock envelope 165 trace length x 40 width with R4 ends; base thickness 8; raised/load pad height 14; provisional slots 16 x 11 at centres X20 Y20 and X145 Y20 only if carrier confirms",
+            "coordinate_system": "plain strip in mm; origin lower-left of 420 x 38 envelope",
+            "exact_definition_mm": "Plain flat strip 420 L x 38 W x 8 T; plan corners R1.5; top/bottom edge break 0.5-1.0; no holes or slots in rubber by default",
             "material": "Black EPDM or NR/SBR sheet/strip rubber, Shore A 60 +/-5",
-            "tolerance": "final traced outline +/-1.0; holes/slots +/-0.5; thickness +/-0.5",
-            "release_status": "not production-CNC until physical left carrier is traced",
-            "shop_note": "Do not cut final outline from photo. Trace the left metal carrier and old rubber, then update the DXF before cutting.",
+            "tolerance": "length/width +/-1.0; thickness +/-0.5; edge break 0.5-1.0",
+            "release_status": "released plain first article; dry-fit controls local end trim and separate steel retainer",
+            "shop_note": "Do not punch holes or slots unless vehicle dry-fit proves the rubber itself was pierced.",
         },
         {
             "part_id": "FS-STRIP-R",
             "qty": "1",
-            "machine_route": "template trace, then waterjet/knife/punch; supplied DXF is stock blank only",
+            "machine_route": "waterjet/knife/die cut plain strip; dry-fit controls local trim",
             "machine_files": "fs_strip_right_template_blank_rev_a.dxf|fs_strip_right_template_blank_rev_a.svg",
-            "coordinate_system": "template blank in mm; origin lower-left of 165 x 40 stock envelope",
-            "exact_definition_mm": "Stock envelope 165 trace length x 40 width with R4 ends; base thickness 8; raised/load pad height 14; provisional slots 16 x 11 at centres X20 Y20 and X145 Y20 only if carrier confirms",
+            "coordinate_system": "plain strip in mm; origin lower-left of 420 x 38 envelope",
+            "exact_definition_mm": "Plain flat strip 420 L x 38 W x 8 T; plan corners R1.5; top/bottom edge break 0.5-1.0; no holes or slots in rubber by default",
             "material": "Black EPDM or NR/SBR sheet/strip rubber, Shore A 60 +/-5",
-            "tolerance": "final traced outline +/-1.0; holes/slots +/-0.5; thickness +/-0.5",
-            "release_status": "not production-CNC until physical right carrier is traced",
-            "shop_note": "Do not assume it is a mirror of the left side until the right carrier is traced.",
+            "tolerance": "length/width +/-1.0; thickness +/-0.5; edge break 0.5-1.0",
+            "release_status": "released plain first article; dry-fit controls local end trim and separate steel retainer",
+            "shop_note": "Treat as same blank as left unless vehicle dry-fit proves handed trim.",
         },
         {
             "part_id": "EXH-HGR-90917",
@@ -895,36 +920,36 @@ def machine_definition_rows() -> list[dict[str, str]]:
         {
             "part_id": "BUMP-F-L",
             "qty": "1",
-            "machine_route": "vehicle-bracket-controlled mould/cast Toyota-style progressive bump stop with steel saddle; not CNC-cut",
+            "machine_route": "rubber-only mould/cast Toyota-style progressive stretch-fit bump-stop; rubber body includes bolt-on holes or slots",
             "machine_files": "bump_stop_vehicle_measurement_control.svg",
-            "coordinate_system": "vehicle bracket and axle strike pad in mm; old rubber is not the master; NOS/genuine part preferred if obtainable",
-            "exact_definition_mm": "Toyota reference 48304-60010 long stop; target free height 70 +/-1; reproduce Toyota-style two-ear steel saddle/backing plate and tapered/radiused rubber body from reference image or NOS sample; release base footprint from vehicle BL x BW with 0.5-1.0 edge clearance; release steel-saddle bolt/stud pitch P and hole/thread D from bracket; do not add rubber through-holes unless sample-proven; flat rectangular contact face centred on axle strike pad within +/-5; no square block",
-            "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5 bonded or captive to new deburred coated steel saddle preferred; cast automotive PU Shore A 80 +/-5 acceptable only with same progressive shape and captive steel mounting",
-            "tolerance": "height +/-1; steel-saddle base and hole location +/-0.5 after vehicle release; clearance holes +0.5/-0.0; contact centre +/-5; steel saddle must not bend; rubber/steel bond or captive joint must survive compression",
+            "coordinate_system": "cleaned vehicle bracket and axle strike pad in mm; rubber-only body, base, and stretch-fit holes/slots; old rubber is not the master; NOS/genuine part preferred if obtainable",
+            "exact_definition_mm": "Toyota reference 48304-60010 long stop; target free height 70 +/-1; reproduce Toyota-style tapered/radiused progressive rubber body from reference image or NOS sample; release rubber base footprint from vehicle bracket BL x BW with 0.5-1.0 edge clearance; release bolt/stud pitch P and relaxed rubber hole/slot size D from bracket and fitted fastener; rubber must stretch over/around the bolts or studs and seat flat; flat rectangular contact face centred on axle strike pad within +/-5; no square block; no metal saddle/backing plate",
+            "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5; cast automotive PU Shore A 80 +/-5 acceptable only with same progressive shape and proven stretch-fit installation/rebound",
+            "tolerance": "height +/-1; rubber base footprint and relaxed hole/slot features +/-0.5 after vehicle release; contact centre +/-5; holes/slots must stretch-fit without tearing and recover after compression",
             "release_status": "vehicle-measurement release required before mould; exact external height known",
-            "shop_note": "Fabricator must supply side/profile sketch, saddle hole layout, material declaration, and one first article; verify flat bracket seating, hand bolt fit, loaded/full-bump contact, and 50 percent compression recovery before full set.",
+            "shop_note": "Fabricator must supply side/profile sketch, rubber hole/slot layout, material declaration, and one first article; verify stretch-fit hand installation, flat bracket seating, loaded/full-bump contact, and 50 percent compression recovery before full set.",
         },
         {
             "part_id": "BUMP-F-R",
             "qty": "1",
-            "machine_route": "vehicle-bracket-controlled mould/cast Toyota-style short right-front bump stop with steel saddle; not CNC-cut",
+            "machine_route": "rubber-only mould/cast Toyota-style short right-front stretch-fit bump-stop; rubber body includes bolt-on holes or slots",
             "machine_files": "bump_stop_vehicle_measurement_control.svg",
-            "coordinate_system": "vehicle right-front bracket and axle strike pad in mm; old rubber is not the master; NOS/genuine part preferred if obtainable",
-            "exact_definition_mm": "Toyota reference 48304-60020 short right-front stop; target free height 60 +/-1; reproduce Toyota-style two-ear steel saddle/backing plate and tapered/radiused rubber body from reference image or NOS sample; do not use 70 mm long-stop height here; release base footprint from right-front vehicle BL x BW with 0.5-1.0 edge clearance; release steel-saddle bolt/stud pitch P and hole/thread D from bracket; do not add rubber through-holes unless sample-proven; flat rectangular contact face centred on axle strike pad within +/-5",
-            "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5 bonded or captive to new deburred coated steel saddle preferred; cast automotive PU Shore A 80 +/-5 acceptable only with same progressive shape and captive steel mounting",
-            "tolerance": "height +/-1; steel-saddle base and hole location +/-0.5 after vehicle release; clearance holes +0.5/-0.0; contact centre +/-5; steel saddle must not bend; rubber/steel bond or captive joint must survive compression",
+            "coordinate_system": "cleaned right-front vehicle bracket and axle strike pad in mm; rubber-only body, base, and stretch-fit holes/slots; old rubber is not the master; NOS/genuine part preferred if obtainable",
+            "exact_definition_mm": "Toyota reference 48304-60020 short right-front stop; target free height 60 +/-1; reproduce Toyota-style tapered/radiused progressive rubber body from reference image or NOS sample; do not use 70 mm long-stop height here; release rubber base footprint from right-front bracket BL x BW with 0.5-1.0 edge clearance; release bolt/stud pitch P and relaxed rubber hole/slot size D from bracket and fitted fastener; rubber must stretch over/around the bolts or studs and seat flat; flat rectangular contact face centred on axle strike pad within +/-5; no metal saddle/backing plate",
+            "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5; cast automotive PU Shore A 80 +/-5 acceptable only with same progressive shape and proven stretch-fit installation/rebound",
+            "tolerance": "height +/-1; rubber base footprint and relaxed hole/slot features +/-0.5 after vehicle release; contact centre +/-5; holes/slots must stretch-fit without tearing and recover after compression",
             "release_status": "vehicle-measurement release required before mould; exact external height known",
             "shop_note": "Reject aftermarket or locally made right-front stops at 70 mm unless deliberately trimmed and released by a full-bump clearance test.",
         },
         {
             "part_id": "BUMP-R",
             "qty": "2",
-            "machine_route": "vehicle-bracket-controlled mould/cast Toyota-style progressive matched rear bump-stop pair with steel saddles; not CNC-cut",
+            "machine_route": "rubber-only mould/cast Toyota-style progressive matched rear stretch-fit bump-stops; rubber bodies include bolt-on holes or slots",
             "machine_files": "bump_stop_vehicle_measurement_control.svg",
-            "coordinate_system": "vehicle rear brackets and axle strike pads in mm; old rubber is not the master; NOS/genuine part preferred if obtainable",
-            "exact_definition_mm": "Toyota reference 48304-60010 long stop; target free height 70 +/-1 for both rear stops; reproduce Toyota-style two-ear steel saddle/backing plate and tapered/radiused rubber body from reference image or NOS sample; release each rear base footprint from vehicle BL x BW with 0.5-1.0 edge clearance; release steel-saddle bolt/stud pitch P and hole/thread D from brackets; do not add rubber through-holes unless sample-proven; flat rectangular contact faces centred on rear axle strike pads within +/-5; matched progressive pair",
-            "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5 bonded or captive to new deburred coated steel saddles preferred; cast automotive PU Shore A 80 +/-5 acceptable only with same progressive shape and captive steel mounting",
-            "tolerance": "height +/-1; rear pair height match <=1; hardness spread <=5 Shore A; steel-saddle base and hole location +/-0.5 after vehicle release; contact centre +/-5; steel saddles must not bend; rubber/steel bonds or captive joints must survive compression",
+            "coordinate_system": "cleaned rear vehicle brackets and axle strike pads in mm; rubber-only bodies, bases, and stretch-fit holes/slots; old rubber is not the master; NOS/genuine part preferred if obtainable",
+            "exact_definition_mm": "Toyota reference 48304-60010 long stop; target free height 70 +/-1 for both rear stops; reproduce Toyota-style tapered/radiused progressive rubber body from reference image or NOS sample; release each rear rubber base footprint from bracket BL x BW with 0.5-1.0 edge clearance; release bolt/stud pitch P and relaxed rubber hole/slot size D from rear brackets and fitted fasteners; rubber must stretch over/around bolts or studs and seat flat; flat rectangular contact faces centred on rear axle strike pads within +/-5; matched progressive pair; no metal saddle/backing plate",
+            "material": "New automotive NR/SBR bump-stop rubber Shore A 70 +/-5; cast automotive PU Shore A 80 +/-5 acceptable only with same progressive shape and proven stretch-fit installation/rebound",
+            "tolerance": "height +/-1; rear pair height match <=1; hardness spread <=5 Shore A; rubber base footprint and relaxed hole/slot features +/-0.5 after vehicle release; contact centre +/-5; holes/slots must stretch-fit without tearing and recover after compression",
             "release_status": "vehicle-measurement release required before mould; exact external height known",
             "shop_note": "Make as matched rear pair after final ride height and axle travel checks; reject universal unmatched rear stops and simple cut blocks.",
         },
@@ -993,26 +1018,26 @@ Use it with:
 
 - `CUT`, `CUT_BORE`, `CUT_RELIEF`, and `DRILL` are through-cut or through-hole geometry.
 - `RECESS`, `FORM`, and `INSERT_MARK` are register, forming, boss, or pocket controls. Do not through-cut them unless the physical sample proves that construction.
-- `TEMPLATE` is a trace/quote guide only. The strip rubbers still require physical template tracing before production cutting.
+- `TEMPLATE` is a trace/quote guide only when present. The current strip rubbers are released as plain `CUT` blanks.
 - `CENTER` is construction geometry only.
 
 ## Release Limits
 
-The circular cushions, cup blanks, and oval pad are ready for quote and first article from these files. Full production still requires the hold dimensions in `data/manual/rubber_recreation_measurement_closure.csv`.
+The square BM-ISO body pads, cup blanks, and oval pad are ready for quote and first article from these files. Full production still requires the hold dimensions in `data/manual/rubber_recreation_measurement_closure.csv`.
 
-The current Longman rubber-order basis for the main body pads is square flat isolator pads, not the earlier circular placeholder. Use `models_3d/bm_iso_sm_square_pad.scad` and `models_3d/bm_iso_lg_square_pad.scad` for the current 3D envelope. They default to `hole_d = 18.0`, matching the Toyota `90560-12009` style body-mount sleeve basis. Production release uses the 18.0 mm bore; `hole_d = 0` is a non-release CAD override only.
+The current Longman rubber-order basis for the main body pads is square flat isolator pads, not the earlier circular placeholder. Use `bm_iso_sm_square_pad_rev_a.dxf` / `.svg`, `bm_iso_lg_square_pad_rev_a.dxf` / `.svg`, and the matching `models_3d/bm_iso_sm_square_pad.scad` / `models_3d/bm_iso_lg_square_pad.scad` files for the current envelope. They default to an `18.0 mm` bore, matching the Toyota `90560-12009` style body-mount sleeve basis. Production release uses the 18.0 mm bore; `hole_d = 0` is a non-release CAD override only. The old circular `BM-SM` / `BM-LG` drawings are legacy placeholders and are not active Longman body-pad controls.
 
 The shim packs are controlled in `machine_definitions.csv` / `machine_definitions.json` as new flat steel thickness packs. They are not released as fixed DXF outlines until the original shim or mount-station footprint is traced in millimeters; do not substitute washer stacks.
 
-The strip files are not final production cut patterns. They define stock envelope, section, and hole/slot working basis, but the actual left/right strip outline and hole centres must be traced from the physical rubber and metal carrier.
+The strip files are released plain first-article cut patterns at `420 x 38 x 8 mm`. The May 17 ruler photos show about `16.5 in` old-strip length, converted to `419 mm` and rounded to `420 mm`. Do not add holes, slots, bonding, raised-load pads, or handed trim unless the dry-fit and physical retainer prove them; trace/reuse the steel retainer separately if it must be remade.
 
 The exhaust holder is controlled as a teardrop cushion style using Toyota `90917-08004` / `17572-92000` only as a reference shape. Source exact new molded stock if it is in hand; otherwise the CAD file is a local-copy control and needs a genuine sample or intact original before a production mould is cut.
 
-Bump stops cannot rely on Toyota/manufacturer supply and the old rubbers are too decayed to copy. Public OEM/catalog sources checked confirm the Toyota numbers, application, and `70 mm`/`60 mm` height split, but not the Toyota mould drawing, compound recipe, or load/deflection curve. Use `docs/bump-stop-fabrication-spec-20260504.md`: long `48304-60010` positions are `70 mm` free height, the right-front `48304-60020` is `60 mm` free height, and all base footprints, steel-saddle bolt/stud patterns, and contact offsets are released from the actual cleaned vehicle brackets and axle strike pads. A NOS/genuine sample is the preferred master if found; otherwise reproduce the Toyota-style two-ear steel saddle/backing plate, tapered/radiused progressive rubber body, and flat rectangular strike face. Do not make bump stops from simple cut rubber blocks, and do not add rubber through-holes unless a genuine sample proves them.
+Bump stops cannot rely on Toyota/manufacturer supply and the old rubbers are too decayed to copy. Public OEM/catalog sources checked confirm the Toyota numbers, application, and `70 mm`/`60 mm` height split, but not the Toyota mould drawing, compound recipe, or load/deflection curve. Use `docs/bump-stop-fabrication-spec-20260504.md`: long `48304-60010` positions are `70 mm` free height, the right-front `48304-60020` is `60 mm` free height, and the rubber base footprint, bolt/stud pitch, relaxed stretch-fit hole or slot size, and contact offsets are released from the actual cleaned vehicle brackets and axle strike pads. A NOS/genuine sample is the preferred master if found; otherwise reproduce the Toyota-style tapered/radiused progressive rubber body and flat rectangular strike face as a rubber-only stretch-fit bolt-on part. Do not make bump stops from simple cut rubber blocks, and do not include a steel saddle/backing plate.
 
 ## Material
 
-Use new black automotive mount-grade solid rubber only: EPDM or NR/SBR, Shore A `60 +/-5`, for body/front-support rubbers. Bump stops use the separate higher-duty target in the bump-stop spec: NR/SBR automotive bump-stop rubber Shore A `70 +/-5` bonded/captive to a new coated steel saddle, or cast PU Shore A `80 +/-5` only if the progressive geometry and captive steel mounting are held. Reject tyre rubber, crumb rubber, sponge foam, mixed offcuts, used rubber, salvage rubber, and unmarked compound.
+Use new black automotive mount-grade solid rubber only: EPDM or NR/SBR, Shore A `60 +/-5`, for body/front-support rubbers. Bump stops use the separate higher-duty target in the bump-stop spec: NR/SBR automotive bump-stop rubber Shore A `70 +/-5` as rubber-only stretch-fit bolt-on parts, or cast PU Shore A `80 +/-5` only if the progressive geometry, stretch-fit installation, and rebound recovery are proven. Reject tyre rubber, crumb rubber, sponge foam, mixed offcuts, used rubber, salvage rubber, and unmarked compound.
 
 Steel cups must be `2.5-3.0 mm` steel, deburred and zinc plated or epoxy primed after forming. Sleeves are still controlled by stack dry-fit and are not released as a cut DXF.
 """

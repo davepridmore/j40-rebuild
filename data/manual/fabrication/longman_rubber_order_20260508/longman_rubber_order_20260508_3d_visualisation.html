@@ -21,6 +21,12 @@
     dl { margin: 0; display: grid; gap: 12px; }
     dt { font-weight: 700; }
     dd { margin: 3px 0 0; color: #54616c; font-size: 14px; line-height: 1.45; }
+    .photos-heading { margin-top: 22px; }
+    .photo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .item-photo { margin: 0; min-width: 0; }
+    .item-photo img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border: 1px solid #d8dde2; border-radius: 6px; background: #f5f6f7; }
+    .item-photo figcaption { margin-top: 4px; color: #54616c; font-size: 12px; line-height: 1.25; }
+    .item-photo strong { color: #1d252c; }
     #fallback { position: absolute; inset: 0; display: grid; place-items: center; padding: 20px; background: #f5f6f7; }
     #fallback img { width: min(94vw, 920px); max-height: 82vh; object-fit: contain; }
     body.is-three-ready #fallback { display: none; }
@@ -39,10 +45,10 @@
     }
   </script>
   <header>
-    <h1 id="scene-title">Longman Rubber Order 2026-05-08</h1>
+    <h1>Longman Rubber Order 2026-05-08</h1>
     <div class="meta">
-      <span class="chip" id="scene-size-chip">BM pads 70/80 square with 18 mm bores; FS-OVAL 96 x 64 x 15; FS-STRIP 165 x 38 x 8</span>
-      <span class="chip" id="scene-mode-chip">Interactive rotate/zoom</span>
+      <span class="chip">BM pads 70/80 square with 18 mm bores; FS-OVAL 96 x 64 x 15; FS-STRIP 420 x 38 x 8</span>
+      <span class="chip">Interactive rotate/zoom</span>
       <span class="chip">Fabrication package visual</span>
     </div>
   </header>
@@ -53,161 +59,30 @@
     <aside>
       <h2>Assembly Read</h2>
       <dl>
-        <div><dt>Package role</dt><dd id="scene-subtitle">Current supplier bundle: square body pads, two-hole front-support pad, underfloor strips, bump-stop placeholders, and exhaust hold reference.</dd></div>
-        <div><dt>Load path</dt><dd id="scene-load-path">Rubber pads isolate body/front-support loads through flat parallel bearing faces; bump-stop geometry remains vehicle-measurement controlled.</dd></div>
-        <div><dt>Height / thickness</dt><dd id="scene-height-callouts">BM-ISO-SM: 70 L x 70 W x 22 H<br>BM-ISO-LG: 80 L x 80 W x 24 H<br>FS-OVAL: 96 L x 64 W x 15 T<br>FS-STRIP-L/R: 165 L x 38 W x 8 T<br>BUMP long: 70 H; BUMP short: 60 H<br>EXH hold target: 48 W x 86 H x 22 T</dd></div>
-        <div><dt>Service intent</dt><dd id="scene-service-intent">Use the visual for package orientation, then use the OpenSCAD files for exact 3D envelope, edge break, hole, and release-state controls.</dd></div>
+        <div><dt>Package role</dt><dd>Current supplier bundle: square body pads, two-hole front-support pad, underfloor strips, rubber-only stretch-fit bump-stop placeholders, and exhaust hold reference.</dd></div>
+        <div><dt>Load path</dt><dd>Rubber pads isolate body/front-support loads through flat parallel bearing faces; bump stops are rubber-only stretch-fit bolt-on parts with vehicle-measured hole pitch and strike geometry.</dd></div>
+        <div><dt>Height / thickness</dt><dd>BM-ISO-SM: 70 L x 70 W x 22 H<br>BM-ISO-LG: 80 L x 80 W x 24 H<br>FS-OVAL: 96 L x 64 W x 15 T<br>FS-STRIP-L/R: 420 L x 38 W x 8 T<br>BUMP long: 70 H stretch-fit; BUMP short: 60 H stretch-fit<br>EXH hold target: 48 W x 86 H x 22 T</dd></div>
+        <div><dt>Service intent</dt><dd>Use the visual for package orientation, then use the OpenSCAD files for exact 3D envelope, edge break, hole, and release-state controls.</dd></div>
       </dl>
+      <h2 class="photos-heading">Item Photos</h2>
+      <div class="photo-grid">
+        <figure class="item-photo"><img src="../../../../photos/20260528_193054_gp_UFyTb44w.jpg" alt="BM-ISO-SM" loading="lazy"><figcaption><strong>BM-ISO-SM</strong><br>Small body-pad stack reference</figcaption></figure>
+        <figure class="item-photo"><img src="../../../../photos/20260405_234652.jpg" alt="BM-ISO-LG" loading="lazy"><figcaption><strong>BM-ISO-LG</strong><br>Large body-pad reference</figcaption></figure>
+        <figure class="item-photo"><img src="../../../../photos/20260502_004231_gp_CfosvPIg.jpg" alt="FS-OVAL" loading="lazy"><figcaption><strong>FS-OVAL</strong><br>Two-hole front-support pad</figcaption></figure>
+        <figure class="item-photo"><img src="../../../../photos/20260517_194143_gp_CO7MuMdA.jpg" alt="FS-STRIP-L" loading="lazy"><figcaption><strong>FS-STRIP-L</strong><br>Left strip ruler reference</figcaption></figure>
+        <figure class="item-photo"><img src="../../../../photos/20260517_194633_gp_rAjY3gjg.jpg" alt="FS-STRIP-R" loading="lazy"><figcaption><strong>FS-STRIP-R</strong><br>Right strip ruler reference</figcaption></figure>
+        <figure class="item-photo"><img src="../../../../photos/20260502_004222_gp_PKRe5HSQ.jpg" alt="BUMP long" loading="lazy"><figcaption><strong>BUMP long</strong><br>Old bump-stop fragments</figcaption></figure>
+        <figure class="item-photo"><img src="../../../../deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg" alt="BUMP reference" loading="lazy"><figcaption><strong>BUMP reference</strong><br>Catalog shape reference</figcaption></figure>
+        <figure class="item-photo"><img src="../rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg" alt="EXH hold" loading="lazy"><figcaption><strong>EXH hold</strong><br>Teardrop hanger hold shape</figcaption></figure>
+      </div>
+
     </aside>
   </main>
   <script type="module">
     import * as THREE from "three";
     import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
-    const sceneData = {"title":"Longman Rubber Order 2026-05-08","subtitle":"Current supplier bundle: square body pads, two-hole front-support pad, underfloor strips, bump-stop placeholders, and exhaust hold reference.","camera":[430,290,470],"target":[-25,32,25],"size":"BM pads 70/80 square with 18 mm bores; FS-OVAL 96 x 64 x 15; FS-STRIP 165 x 38 x 8","height_callouts":["BM-ISO-SM: 70 L x 70 W x 22 H","BM-ISO-LG: 80 L x 80 W x 24 H","FS-OVAL: 96 L x 64 W x 15 T","FS-STRIP-L/R: 165 L x 38 W x 8 T","BUMP long: 70 H; BUMP short: 60 H","EXH hold target: 48 W x 86 H x 22 T"],"load_path":"Rubber pads isolate body/front-support loads through flat parallel bearing faces; bump-stop geometry remains vehicle-measurement controlled.","service_intent":"Use the visual for package orientation, then use the OpenSCAD files for exact 3D envelope, edge break, hole, and release-state controls.","boxes":[{"name":"Longman order BM-ISO-SM 70 x 70 x 22 square pad","x":-170,"y":11,"z":-100,"w":70,"h":22,"d":70,"color":"rubber","label":"BM-ISO-SM H22","label_dx":-18,"label_dy":20},{"name":"Longman order BM-ISO-LG 80 x 80 x 24 square pad","x":-65,"y":12,"z":-100,"w":80,"h":24,"d":80,"color":"rubber","label":"BM-ISO-LG H24","label_dx":34,"label_dy":10},{"name":"Longman order FS-OVAL centre span 32 x 64 x 15","x":80,"y":7.5,"z":-100,"w":32,"h":15,"d":64,"color":"rubber","label":"FS-OVAL T15","label_dx":52,"label_dy":-6},{"name":"Longman order FS-STRIP-L plain strip 165 x 38 x 8","x":-110,"y":4,"z":45,"w":165,"h":8,"d":38,"color":"rubber","label":"FS-STRIP-L T8","label_dx":-42,"label_dy":-12},{"name":"Longman order FS-STRIP-R plain strip 165 x 38 x 8","x":100,"y":4,"z":45,"w":165,"h":8,"d":38,"color":"rubber","label":"FS-STRIP-R T8","label_dx":36,"label_dy":-10},{"name":"Longman order long bump-stop steel saddle placeholder","x":-170,"y":4,"z":150,"w":90,"h":8,"d":44,"color":"steel"},{"name":"Longman order long bump-stop progressive body placeholder 70 H","x":-170,"y":43,"z":150,"w":70,"h":70,"d":40,"color":"rubber","label":"BUMP long H70","label_dx":-64,"label_dy":-8},{"name":"Longman order short right-front bump-stop steel saddle placeholder","x":-45,"y":4,"z":150,"w":90,"h":8,"d":44,"color":"steel"},{"name":"Longman order short right-front progressive body placeholder 60 H","x":-45,"y":38,"z":150,"w":66,"h":60,"d":38,"color":"rubber","label":"BUMP short H60","label_dx":42,"label_dy":-8},{"name":"Longman order exhaust hanger hold-only teardrop envelope 48 x 86 x 22","x":105,"y":11,"z":150,"w":48,"h":22,"d":86,"color":"rubber","label":"EXH hold T22","label_dx":44,"label_dy":-12}],"cylinders":[{"name":"Longman order BM-ISO-SM 18 mm sleeve-clearance bore","x":-170,"y":13,"z":-100,"r":9,"h":28,"color":"silver"},{"name":"Longman order BM-ISO-LG 18 mm sleeve-clearance bore","x":-65,"y":14,"z":-100,"r":9,"h":30,"color":"silver"},{"name":"Longman order FS-OVAL left capsule end R32","x":64,"y":7.5,"z":-100,"r":32,"h":15,"color":"rubber"},{"name":"Longman order FS-OVAL right capsule end R32","x":96,"y":7.5,"z":-100,"r":32,"h":15,"color":"rubber"},{"name":"Longman order FS-OVAL hole 1, 12 mm","x":48,"y":10,"z":-100,"r":6,"h":20,"color":"silver"},{"name":"Longman order FS-OVAL hole 2, 12 mm","x":112,"y":10,"z":-100,"r":6,"h":20,"color":"silver"},{"name":"Longman order long bump-stop saddle mounting hole D left","x":-202,"y":8,"z":150,"r":5.5,"h":14,"color":"white"},{"name":"Longman order long bump-stop saddle mounting hole D right","x":-138,"y":8,"z":150,"r":5.5,"h":14,"color":"white"},{"name":"Longman order short right-front bump-stop saddle mounting hole D left","x":-77,"y":8,"z":150,"r":5.5,"h":14,"color":"white"},{"name":"Longman order short right-front bump-stop saddle mounting hole D right","x":-13,"y":8,"z":150,"r":5.5,"h":14,"color":"white"},{"name":"Longman order exhaust top hole hold target 9 mm","x":105,"y":24,"z":178,"r":4.5,"h":14,"color":"silver"}]};
-    const searchParams = new URLSearchParams(window.location.search);
-    const requestedFocusId = (searchParams.get("focus") || searchParams.get("part") || "").trim().toUpperCase();
-    const focusParts = {
-      "BM-ISO-SM": {
-        tokens: ["BM-ISO-SM"],
-        title: "BM-ISO-SM - 3D Visual",
-        subtitle: "Small square body-mount isolation pad from the Longman order.",
-        size: "70 L x 70 W x 22 H; 18 mm sleeve-clearance bore",
-        height_callouts: ["BM-ISO-SM: 70 L x 70 W x 22 H", "Centre bore: 18 mm sleeve clearance"],
-        load_path: "Flat rubber isolation pad for body-mount load through parallel bearing faces.",
-        service_intent: "Use this focused view with the BM-ISO-SM OpenSCAD and supplier drawing controls.",
-        camera: [70, 165, 105],
-        target: [-170, 12, -100],
-      },
-      "BM-ISO-LG": {
-        tokens: ["BM-ISO-LG"],
-        title: "BM-ISO-LG - 3D Visual",
-        subtitle: "Large square body-mount isolation pad from the Longman order.",
-        size: "80 L x 80 W x 24 H; 18 mm sleeve-clearance bore",
-        height_callouts: ["BM-ISO-LG: 80 L x 80 W x 24 H", "Centre bore: 18 mm sleeve clearance"],
-        load_path: "Flat rubber isolation pad for body-mount load through parallel bearing faces.",
-        service_intent: "Use this focused view with the BM-ISO-LG OpenSCAD and supplier drawing controls.",
-        camera: [185, 175, 90],
-        target: [-65, 14, -100],
-      },
-      "FS-OVAL": {
-        tokens: ["FS-OVAL"],
-        title: "FS-OVAL - 3D Visual",
-        subtitle: "Two-hole oval front-support pad.",
-        size: "96 L x 64 W x 15 T; two 12 mm holes",
-        height_callouts: ["FS-OVAL: 96 L x 64 W x 15 T", "Two 12 mm holes on 64 mm centres"],
-        load_path: "Front-support rubber pad with oval bearing footprint and two bolt holes.",
-        service_intent: "Use this focused view with the FS-OVAL SVG, DXF, and OpenSCAD controls.",
-        camera: [320, 160, 90],
-        target: [80, 9, -100],
-      },
-      "FS-STRIP-L": {
-        tokens: ["FS-STRIP-L"],
-        title: "FS-STRIP-L - 3D Visual",
-        subtitle: "Left underfloor plain strip for the front-support area.",
-        size: "165 L x 38 W x 8 T",
-        height_callouts: ["FS-STRIP-L: 165 L x 38 W x 8 T"],
-        load_path: "Plain strip rubber control for underfloor/front-support isolation.",
-        service_intent: "Use this focused view with the FS-STRIP-L SVG, DXF, and OpenSCAD controls.",
-        camera: [145, 130, 230],
-        target: [-110, 4, 45],
-      },
-      "FS-STRIP-R": {
-        tokens: ["FS-STRIP-R"],
-        title: "FS-STRIP-R - 3D Visual",
-        subtitle: "Right underfloor plain strip for the front-support area.",
-        size: "165 L x 38 W x 8 T",
-        height_callouts: ["FS-STRIP-R: 165 L x 38 W x 8 T"],
-        load_path: "Plain strip rubber control for underfloor/front-support isolation.",
-        service_intent: "Use this focused view with the FS-STRIP-R SVG, DXF, and OpenSCAD controls.",
-        camera: [355, 130, 230],
-        target: [100, 4, 45],
-      },
-      "BUMP-60010-LONG": {
-        tokens: ["LONG BUMP-STOP", "BUMP LONG"],
-        title: "BUMP-60010-LONG - 3D Visual",
-        subtitle: "Long bump-stop measurement-control placeholder.",
-        size: "Rubber body 70 H over steel saddle placeholder",
-        height_callouts: ["BUMP long: 70 H", "Vehicle-measurement controlled envelope"],
-        load_path: "Bump-stop compression path through steel saddle and rubber body.",
-        service_intent: "Use this focused view with the bump-stop measurement-control SVG, DXF, and OpenSCAD model.",
-        camera: [90, 190, 340],
-        target: [-170, 40, 150],
-      },
-      "BUMP-60020-SHORT": {
-        tokens: ["SHORT RIGHT-FRONT", "BUMP SHORT"],
-        title: "BUMP-60020-SHORT - 3D Visual",
-        subtitle: "Short right-front bump-stop measurement-control placeholder.",
-        size: "Rubber body 60 H over steel saddle placeholder",
-        height_callouts: ["BUMP short: 60 H", "Vehicle-measurement controlled envelope"],
-        load_path: "Bump-stop compression path through steel saddle and rubber body.",
-        service_intent: "Use this focused view with the bump-stop measurement-control SVG, DXF, and OpenSCAD model.",
-        camera: [215, 180, 340],
-        target: [-45, 35, 150],
-      },
-      "EXH-HGR-90917": {
-        tokens: ["EXHAUST"],
-        title: "EXH-HGR-90917 - 3D Visual",
-        subtitle: "Exhaust hanger hold-only teardrop cushion envelope.",
-        size: "48 W x 86 H x 22 T; 9 mm top-hole target",
-        height_callouts: ["EXH hold target: 48 W x 86 H x 22 T", "Top hole hold target: 9 mm"],
-        load_path: "Exhaust support cushion envelope for hanger location and clearance checks.",
-        service_intent: "Use this focused view with the EXH-HGR-90917 SVG, DXF, and OpenSCAD controls.",
-        camera: [345, 140, 350],
-        target: [105, 18, 150],
-      },
-    };
-    const activeFocus = focusParts[requestedFocusId];
-
-    function sceneItemText(item) {
-      return [item.name, item.label].filter(Boolean).join(" ").toUpperCase();
-    }
-
-    function matchesFocus(item, focus) {
-      return focus.tokens.some((token) => sceneItemText(item).includes(token.toUpperCase()));
-    }
-
-    function escapeHtml(value) {
-      const escapeMap = { "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;" };
-      return String(value).replace(/[&<>"']/g, (char) => escapeMap[char]);
-    }
-
-    function setText(id, value) {
-      const element = document.getElementById(id);
-      if (element) element.textContent = value;
-    }
-
-    function applyFocusedScene() {
-      if (!activeFocus) return;
-      sceneData.title = activeFocus.title;
-      sceneData.subtitle = activeFocus.subtitle;
-      sceneData.size = activeFocus.size;
-      sceneData.height_callouts = activeFocus.height_callouts;
-      sceneData.load_path = activeFocus.load_path;
-      sceneData.service_intent = activeFocus.service_intent;
-      sceneData.camera = activeFocus.camera;
-      sceneData.target = activeFocus.target;
-      sceneData.boxes = sceneData.boxes.filter((item) => matchesFocus(item, activeFocus));
-      sceneData.cylinders = (sceneData.cylinders || []).filter((item) => matchesFocus(item, activeFocus));
-    }
-
-    function updateSceneText() {
-      document.title = `${sceneData.title} - 3D Visualisation`;
-      setText("scene-title", sceneData.title);
-      setText("scene-size-chip", sceneData.size);
-      setText("scene-mode-chip", activeFocus ? `Focused item: ${requestedFocusId}` : "Interactive rotate/zoom");
-      setText("scene-subtitle", sceneData.subtitle);
-      setText("scene-load-path", sceneData.load_path);
-      setText("scene-service-intent", sceneData.service_intent);
-      const heightCallouts = document.getElementById("scene-height-callouts");
-      if (heightCallouts) {
-        heightCallouts.innerHTML = sceneData.height_callouts.map(escapeHtml).join("<br>");
-      }
-    }
-
-    applyFocusedScene();
-    updateSceneText();
-
+    const sceneData = {"title":"Longman Rubber Order 2026-05-08","subtitle":"Current supplier bundle: square body pads, two-hole front-support pad, underfloor strips, rubber-only stretch-fit bump-stop placeholders, and exhaust hold reference.","camera":[430,290,470],"target":[-25,32,25],"size":"BM pads 70/80 square with 18 mm bores; FS-OVAL 96 x 64 x 15; FS-STRIP 420 x 38 x 8","height_callouts":["BM-ISO-SM: 70 L x 70 W x 22 H","BM-ISO-LG: 80 L x 80 W x 24 H","FS-OVAL: 96 L x 64 W x 15 T","FS-STRIP-L/R: 420 L x 38 W x 8 T","BUMP long: 70 H stretch-fit; BUMP short: 60 H stretch-fit","EXH hold target: 48 W x 86 H x 22 T"],"load_path":"Rubber pads isolate body/front-support loads through flat parallel bearing faces; bump stops are rubber-only stretch-fit bolt-on parts with vehicle-measured hole pitch and strike geometry.","service_intent":"Use the visual for package orientation, then use the OpenSCAD files for exact 3D envelope, edge break, hole, and release-state controls.","item_images":[{"label":"BM-ISO-SM","src":"photos/20260528_193054_gp_UFyTb44w.jpg","caption":"Small body-pad stack reference"},{"label":"BM-ISO-LG","src":"photos/20260405_234652.jpg","caption":"Large body-pad reference"},{"label":"FS-OVAL","src":"photos/20260502_004231_gp_CfosvPIg.jpg","caption":"Two-hole front-support pad"},{"label":"FS-STRIP-L","src":"photos/20260517_194143_gp_CO7MuMdA.jpg","caption":"Left strip ruler reference"},{"label":"FS-STRIP-R","src":"photos/20260517_194633_gp_rAjY3gjg.jpg","caption":"Right strip ruler reference"},{"label":"BUMP long","src":"photos/20260502_004222_gp_PKRe5HSQ.jpg","caption":"Old bump-stop fragments"},{"label":"BUMP reference","src":"deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg","caption":"Catalog shape reference"},{"label":"EXH hold","src":"data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg","caption":"Teardrop hanger hold shape"}],"boxes":[{"name":"Longman order BM-ISO-SM 70 x 70 x 22 square pad","x":-170,"y":11,"z":-100,"w":70,"h":22,"d":70,"color":"rubber","shape":"rounded_rect","corner_r":1.5,"holes":[{"x":0,"z":0,"r":9}],"label":"BM-ISO-SM H22","label_dx":-18,"label_dy":20},{"name":"Longman order BM-ISO-LG 80 x 80 x 24 square pad","x":-65,"y":12,"z":-100,"w":80,"h":24,"d":80,"color":"rubber","shape":"rounded_rect","corner_r":1.5,"holes":[{"x":0,"z":0,"r":9}],"label":"BM-ISO-LG H24","label_dx":34,"label_dy":10},{"name":"Longman order FS-OVAL 96 x 64 x 15 capsule with two through bores","x":80,"y":7.5,"z":-100,"w":96,"h":15,"d":64,"color":"rubber","shape":"capsule","holes":[{"x":-32,"z":0,"r":6},{"x":32,"z":0,"r":6}],"label":"FS-OVAL T15","label_dx":52,"label_dy":-6},{"name":"Longman order FS-STRIP-L plain strip 420 x 38 x 8","x":0,"y":4,"z":30,"w":420,"h":8,"d":38,"color":"rubber","label":"FS-STRIP-L T8","label_dx":-152,"label_dy":-12},{"name":"Longman order FS-STRIP-R plain strip 420 x 38 x 8","x":0,"y":4,"z":85,"w":420,"h":8,"d":38,"color":"rubber","label":"FS-STRIP-R T8","label_dx":118,"label_dy":-10},{"name":"Longman order long bump-stop rubber-only stretch-fit bolt-on stop 70 H","x":-170,"y":35,"z":150,"w":82,"h":70,"d":48,"color":"rubber","shape":"rounded_rect","corner_r":5,"holes":[{"x":-32,"z":0,"r":4.25},{"x":32,"z":0,"r":4.25}],"label":"BUMP long H70","label_dx":-64,"label_dy":-8},{"name":"Longman order short right-front rubber-only stretch-fit bolt-on stop 60 H","x":-45,"y":30,"z":150,"w":78,"h":60,"d":46,"color":"rubber","shape":"rounded_rect","corner_r":5,"holes":[{"x":-30,"z":0,"r":4.25},{"x":30,"z":0,"r":4.25}],"label":"BUMP short H60","label_dx":42,"label_dy":-8},{"name":"Longman order exhaust hanger hold-only teardrop envelope 48 x 86 x 22","x":105,"y":11,"z":150,"w":48,"h":22,"d":86,"color":"rubber","shape":"teardrop","holes":[{"x":0,"z":31,"r":4.5}],"label":"EXH hold T22","label_dx":44,"label_dy":-12}],"cylinders":[]};
     const materialDefs = {
       aluminium: [0xc1cbd3, 0.35, 0.38],
       steel: [0x59636c, 0.45, 0.5],
@@ -225,6 +100,7 @@
       brass: [0xc4a35a, 0.4, 0.36],
       rubber: [0x161a1d, 0.02, 0.65],
       silver: [0xd4d8dc, 0.35, 0.32],
+      void: [0xf5f6f7, 0.0, 0.85],
       white: [0xf4f6f8, 0.02, 0.3],
       bendline: [0x2f3942, 0.05, 0.58],
     };
@@ -233,6 +109,7 @@
       new THREE.MeshStandardMaterial({ color: value[0], metalness: value[1], roughness: value[2] })
     ]));
     const edgeMaterial = new THREE.LineBasicMaterial({ color: 0x25313a, transparent: true, opacity: 0.48 });
+    const holeEdgeMaterial = new THREE.LineBasicMaterial({ color: 0x8a949d, transparent: true, opacity: 0.92 });
 
     const mount = document.getElementById("viewport");
     const threeScene = new THREE.Scene();
@@ -256,9 +133,93 @@
     const root = new THREE.Group();
     threeScene.add(root);
 
+    function roundedRectShape(width, depth, radius = 0) {
+      const halfW = width / 2;
+      const halfD = depth / 2;
+      const r = Math.min(radius, halfW, halfD);
+      const shape = new THREE.Shape();
+      shape.moveTo(-halfW + r, -halfD);
+      shape.lineTo(halfW - r, -halfD);
+      shape.quadraticCurveTo(halfW, -halfD, halfW, -halfD + r);
+      shape.lineTo(halfW, halfD - r);
+      shape.quadraticCurveTo(halfW, halfD, halfW - r, halfD);
+      shape.lineTo(-halfW + r, halfD);
+      shape.quadraticCurveTo(-halfW, halfD, -halfW, halfD - r);
+      shape.lineTo(-halfW, -halfD + r);
+      shape.quadraticCurveTo(-halfW, -halfD, -halfW + r, -halfD);
+      return shape;
+    }
+
+    function capsuleShape(length, width) {
+      const r = width / 2;
+      const endOffset = Math.max(0, (length - width) / 2);
+      const shape = new THREE.Shape();
+      shape.moveTo(-endOffset, -r);
+      shape.lineTo(endOffset, -r);
+      shape.absarc(endOffset, 0, r, -Math.PI / 2, Math.PI / 2, false);
+      shape.lineTo(-endOffset, r);
+      shape.absarc(-endOffset, 0, r, Math.PI / 2, Math.PI * 1.5, false);
+      return shape;
+    }
+
+    function teardropShape() {
+      const points = [
+        [24.0, 0.0], [31.5, 1.2], [38.1, 4.8], [43.2, 10.0],
+        [46.8, 16.5], [48.0, 24.0], [44.8, 38.4], [38.0, 50.0],
+        [38.0, 70.0], [32.0, 84.0], [16.0, 84.0], [10.0, 70.0],
+        [10.0, 50.0], [3.2, 38.4], [0.0, 24.0], [1.2, 16.5],
+        [4.8, 10.0], [9.9, 4.8], [16.5, 1.2],
+      ];
+      return new THREE.Shape(points.map(([x, z]) => new THREE.Vector2(x - 24, z - 42)));
+    }
+
+    function planShape(item) {
+      if (item.shape === "capsule") return capsuleShape(item.w, item.d);
+      if (item.shape === "teardrop") return teardropShape();
+      return roundedRectShape(item.w, item.d, item.corner_r || 0);
+    }
+
+    function extrudedPlanGeometry(item) {
+      const shape = planShape(item);
+      (item.holes || []).forEach((hole) => {
+        const path = new THREE.Path();
+        path.absarc(hole.x || 0, hole.z || 0, hole.r || 1, 0, Math.PI * 2, true);
+        shape.holes.push(path);
+      });
+      const geometry = new THREE.ExtrudeGeometry(shape, {
+        depth: item.h,
+        bevelEnabled: false,
+        curveSegments: 48,
+        steps: 1,
+      });
+      geometry.rotateX(Math.PI / 2);
+      geometry.translate(0, item.h / 2, 0);
+      geometry.computeVertexNormals();
+      return geometry;
+    }
+
+    function addHoleVisuals(item) {
+      (item.holes || []).forEach((hole) => {
+        const geometry = new THREE.CylinderGeometry(hole.r * 0.96, hole.r * 0.96, item.h + 0.08, 48);
+        const cutout = new THREE.Mesh(geometry, materials.void);
+        cutout.name = `${item.name} visible through-bore`;
+        cutout.position.set(item.x + (hole.x || 0), item.y, item.z + (hole.z || 0));
+        cutout.castShadow = false;
+        cutout.receiveShadow = false;
+        root.add(cutout);
+
+        const edges = new THREE.LineSegments(new THREE.EdgesGeometry(geometry), holeEdgeMaterial);
+        edges.position.copy(cutout.position);
+        root.add(edges);
+      });
+    }
+
     function box(item) {
+      const geometry = item.shape
+        ? extrudedPlanGeometry(item)
+        : new THREE.BoxGeometry(item.w, item.h, item.d);
       const mesh = new THREE.Mesh(
-        new THREE.BoxGeometry(item.w, item.h, item.d),
+        geometry,
         materials[item.color] || materials.aluminium
       );
       mesh.name = item.name;
@@ -273,6 +234,7 @@
         edges.scale.copy(mesh.scale);
         root.add(edges);
       }
+      addHoleVisuals(item);
     }
 
     function cylinder(item) {

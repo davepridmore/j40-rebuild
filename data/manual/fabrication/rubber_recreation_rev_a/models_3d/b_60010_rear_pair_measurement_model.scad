@@ -57,43 +57,44 @@ module chamfered_extrude(height, edge_chamfer = 0) {
 
 // Vehicle-measurement model:
 // - Height is the known Toyota-family control.
-// - Saddle length/width, bolt pitch, bolt diameter, and strike offset must come
-//   from the cleaned vehicle bracket and axle strike pad.
-// - Mounting holes are only in the steel saddle; do not add rubber through-holes
-//   unless a genuine sample proves molded clearance holes.
+// - This is a rubber-only stretch-fit bolt-on stop. There is no steel saddle
+//   or backing plate in the part.
+// - Rubber base footprint, bolt/stud pitch, relaxed hole or slot size, and
+//   strike offset must come from the cleaned vehicle bracket and axle strike pad.
+// - Default holes are relaxed undersize visual placeholders so the rubber can
+//   stretch over/around the bolts or studs during installation.
 // - This model is a first-article conversation shape, not a released mould.
 
 module b_60010_rear_pair_measurement_model(
   free_height = 70,
-  saddle_length = 90,
-  saddle_width = 44,
-  saddle_thickness = 4,
-  bolt_pitch = 64,
-  bolt_d = 10,
   top_length = 46,
   top_width = 30,
-  rubber_base_length = 70,
-  rubber_base_width = 40
+  rubber_base_length = 82,
+  rubber_base_width = 48,
+  bolt_hole_pitch = 64,
+  relaxed_hole_d = 8.5,
+  stretch_slot_extra = 0
 ) {
-  color("silver")
-    difference() {
-      translate([0, 0, saddle_thickness / 2])
-        cube([saddle_length, saddle_width, saddle_thickness], center = true);
-      for (x = [-bolt_pitch / 2, bolt_pitch / 2])
-        translate([x, 0, -1])
-          cylinder(h = saddle_thickness + 2, d = bolt_d);
-    }
-
-  color("black")
-    translate([0, 0, saddle_thickness])
+  difference() {
+    color("black")
       hull() {
         translate([0, 0, 0.5])
           linear_extrude(height = 1, center = false)
             rounded_rect_2d([rubber_base_length, rubber_base_width], 5);
-        translate([0, 0, free_height - saddle_thickness - 1])
+        translate([0, 0, free_height - 1])
           linear_extrude(height = 1, center = false)
             rounded_rect_2d([top_length, top_width], 4);
       }
+
+    if (relaxed_hole_d > 0 && bolt_hole_pitch > 0)
+      for (x = [-bolt_hole_pitch / 2, bolt_hole_pitch / 2])
+        translate([x, 0, -1])
+          if (stretch_slot_extra > 0)
+            linear_extrude(height = free_height + 2, center = false)
+              capsule_2d(relaxed_hole_d + stretch_slot_extra, relaxed_hole_d);
+          else
+            cylinder(h = free_height + 2, d = relaxed_hole_d);
+  }
 }
 
 b_60010_rear_pair_measurement_model();

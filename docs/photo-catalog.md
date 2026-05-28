@@ -1,7 +1,7 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-05-28 17:59:12
-- Total media files indexed: 760 (749 photos, 11 videos)
+- Generated: 2026-05-28 21:40:55
+- Total media files indexed: 772 (761 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
 
@@ -23,13 +23,13 @@
 | `electrical_reset` | 3 |
 | `electrical_rework` | 18 |
 | `eps_vitz_upgrade` | 1 |
-| `fabrication_measurement` | 9 |
+| `fabrication_measurement` | 16 |
 | `hardware_refinish` | 44 |
 | `mechanical_baseline` | 22 |
 | `mechanical_cleaning` | 14 |
 | `mechanical_inspection` | 5 |
 | `procurement_reconciliation` | 140 |
-| `reference_material` | 73 |
+| `reference_material` | 78 |
 | `removed_parts_cataloguing` | 16 |
 | `rust_assessment` | 63 |
 | `steering_brakes_suspension` | 11 |
@@ -82,7 +82,7 @@
 | `documentation_reference` | `handwritten_notes` | 3 | 2026-04-01 | `20260401_111029_gp_6ebGjXdw.jpg` |
 | `documentation_reference` | `off_vehicle_workstation_reference_video` | 2 | 2026-03-29 to 2026-04-23 | `20260329_095138.mp4` |
 | `documentation_reference` | `pakwheels_listing_screenshot` | 1 | 2026-03-13 | `Screenshot_20260313_054936_PakWheels.jpg` |
-| `documentation_reference` | `reference_media` | 62 | 2026-04-14 to 2026-05-24 | `20260414_000833_gp_7PzMcRKw.jpg` |
+| `documentation_reference` | `reference_media` | 67 | 2026-04-14 to 2026-05-28 | `20260414_000833_gp_7PzMcRKw.jpg` |
 | `electrical_system` | `alternator_charge_regulator_wiring` | 2 | 2026-05-17 | `20260517_204740_gp_yI8f8DQw.jpg` |
 | `electrical_system` | `battery_power_carrier_100a_cutoff_breaker` | 1 | 2026-05-15 | `20260515_112836_gp_sFdn9AyA.jpg` |
 | `electrical_system` | `battery_power_carrier_midi_fuse_bank` | 1 | 2026-05-15 | `20260515_112907_gp_wtj4G8tQ.jpg` |
@@ -127,7 +127,7 @@
 | `procurement_inventory` | `hidden_diesel_cutoff_switch_hardware` | 2 | 2026-04-20 | `20260420_221819_gp_YV69fbvA.jpg` |
 | `procurement_inventory` | `mixed_fastener_hardware` | 1 | 2026-05-03 | `20260503_153832_gp_0FJJiLHg.jpg` |
 | `procurement_inventory` | `rubber_grommet_assortment` | 1 | 2026-04-22 | `20260422_034358_gp_Bg6nSlPw.jpg` |
-| `procurement_inventory` | `rubber_parts_recreation_samples` | 23 | 2026-05-02 to 2026-05-17 | `20260502_004201_gp_zfUSmKJg.jpg` |
+| `procurement_inventory` | `rubber_parts_recreation_samples` | 30 | 2026-05-02 to 2026-05-28 | `20260502_004201_gp_zfUSmKJg.jpg` |
 | `procurement_inventory` | `rust_remover_container` | 1 | 2026-04-22 | `20260422_003700_gp_gFb0LBcw.jpg` |
 | `procurement_inventory` | `service_parts_and_order_confirmations` | 2 | 2026-04-20 | `20260420_201801_gp_NvXIaGBw.jpg` |
 | `procurement_inventory` | `wiring_harness_and_connectors` | 62 | 2026-04-10 | `20260410_013927.jpg` |

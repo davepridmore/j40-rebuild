@@ -56,20 +56,20 @@ module chamfered_extrude(height, edge_chamfer = 0) {
 }
 
 // Current order basis:
-// - Plain rubber strip 165 x 38 x 8.
+// - Plain rubber strip 420 x 38 x 8.
 // - 3D envelope is length x width x thickness; plan corner radius is 1.5 mm.
 // - Top and bottom perimeter edge break/chamfer is modelled at 0.75 mm by default.
 // - No holes by default; steel retainer slots belong to the separate retainer
 //   unless the actual old rubber proves the rubber itself was pierced.
 
 module fs_strip_r_plain_strip(
-  strip_length = 165,
+  strip_length = 420,
   strip_width = 38,
   strip_thickness = 8,
   corner_r = 1.5,
   edge_chamfer = 0.75,
   hole_d = 0,
-  hole_centres = [-62.5, 62.5]
+  hole_centres = [-190, 190]
 ) {
   difference() {
     chamfered_extrude(height = strip_thickness, edge_chamfer = edge_chamfer)

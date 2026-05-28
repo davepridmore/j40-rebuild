@@ -1,17 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="213mm" height="130mm" viewBox="0 0 213 130">
+<svg xmlns="http://www.w3.org/2000/svg" width="468mm" height="158mm" viewBox="0 0 468 158">
   <style>
     .cut { fill: none; stroke: #111; stroke-width: 0.5; }
+    .drill { fill: none; stroke: #111; stroke-width: 0.5; }
+    .relief { fill: none; stroke: #111; stroke-width: 0.5; }
+    .form { fill: none; stroke: #0b5fff; stroke-width: 0.4; stroke-dasharray: 4 3; }
+    .mark { fill: none; stroke: #8a5a00; stroke-width: 0.4; stroke-dasharray: 3 2; }
+    .template { fill: none; stroke: #7a1f8a; stroke-width: 0.45; stroke-dasharray: 5 3; }
     .center { stroke: #777; stroke-width: 0.25; stroke-dasharray: 2 2; }
     .title { font: 700 7px monospace; fill: #111; }
     .note { font: 4.8px monospace; fill: #111; }
   </style>
-  <text x="24" y="14" class="title">FS-STRIP-L underfloor body-support strip | qty 1 | units: mm</text>
+  <text x="24" y="14" class="title">FS-STRIP-L underfloor body-support strip first-article blank | qty 1 | units: mm</text>
   <g transform="translate(24,24)">
-    <rect class="cut" x="0" y="0" width="165" height="38" rx="1.5" ry="1.5" />
-    <line class="center" x1="0" y1="19" x2="165" y2="19" />
+  <polygon class="cut" points="0,1.5 0.029,1.207 0.114,0.926 0.253,0.667 0.439,0.439 0.667,0.253 0.926,0.114 1.207,0.029 1.5,0 418.5,0 418.793,0.029 419.074,0.114 419.333,0.253 419.561,0.439 419.747,0.667 419.886,0.926 419.971,1.207 420,1.5 420,36.5 419.971,36.793 419.886,37.074 419.747,37.333 419.561,37.561 419.333,37.747 419.074,37.886 418.793,37.971 418.5,38 1.5,38 1.207,37.971 0.926,37.886 0.667,37.747 0.439,37.561 0.253,37.333 0.114,37.074 0.029,36.793 0,36.5" /><line class="center" x1="0" y1="19" x2="420" y2="19" />
   </g>
-  <text x="24" y="82" class="note">Released plain first article: 165 L x 38 W x 8 T mm.</text>
-  <text x="24" y="92" class="note">No rubber holes or slots by default. Do not copy retainer slots into rubber.</text>
-  <text x="24" y="102" class="note">Dry-fit controls only local end trim and side orientation.</text>
-  <text x="24" y="112" class="note">Reuse or trace the slotted steel retainer separately if it must be remade.</text>
+  <text x="24" y="104" class="note">May 17 ruler photos show about 16.5 in old-strip length; release first article at 420 L x 38 W x 8 T mm.</text><text x="24" y="114" class="note">No rubber holes or slots by default. Do not copy steel-retainer slots into the rubber.</text><text x="24" y="124" class="note">Dry-fit controls only local end trim and side orientation.</text><text x="24" y="134" class="note">Reuse or trace the slotted steel retainer separately if it must be remade.</text>
 </svg>

@@ -14,7 +14,7 @@ The body/front-support rubber recreation parts now have a separate Longman order
 
 - Main body isolator pads: `10` small square quote pads `70 x 70 x 22 mm`, plus `2` large square quote pads `80 x 80 x 24 mm`; current first-article bore is `18.0 mm` for Toyota `90560-12009` style body-mount sleeves.
 - Front two-hole oval isolators: `2` pieces, `96 mm x 64 mm x 15 mm`, two `12 mm` holes at `64 mm` centers, with relief only if the physical sample confirms it is functional.
-- Front support strip rubbers: left/right are now released as plain first-article underfloor support strips, `165 x 38 x 8 mm`, with final end trim controlled by dry-fit.
+- Front support strip rubbers: left/right are now released as plain first-article underfloor support strips, `420 x 38 x 8 mm`, with final end trim controlled by dry-fit.
 
 ## Gaps Closed
 

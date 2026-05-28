@@ -213,20 +213,20 @@ def strip_scad(part_id: str, side: str) -> tuple[ModelFile, str]:
         header(f"{part_id} underfloor body-support strip liner")
         + f"""
 // Current order basis:
-// - Plain rubber strip 165 x 38 x 8.
+// - Plain rubber strip 420 x 38 x 8.
 // - 3D envelope is length x width x thickness; plan corner radius is 1.5 mm.
 // - Top and bottom perimeter edge break/chamfer is modelled at 0.75 mm by default.
 // - No holes by default; steel retainer slots belong to the separate retainer
 //   unless the actual old rubber proves the rubber itself was pierced.
 
 module {module_name}(
-  strip_length = 165,
+  strip_length = 420,
   strip_width = 38,
   strip_thickness = 8,
   corner_r = 1.5,
   edge_chamfer = 0.75,
   hole_d = 0,
-  hole_centres = [-62.5, 62.5]
+  hole_centres = [-190, 190]
 ) {{
   difference() {{
     chamfered_extrude(height = strip_thickness, edge_chamfer = edge_chamfer)
@@ -248,7 +248,7 @@ module {module_name}(
         title=f"{part_id} underfloor body-support strip liner {side}",
         quantity="1",
         release_status="first-article plain strip; local trim/holes only after dry-fit proves them",
-        controls="3D envelope 165 L x 38 W x 8 T mm plain strip; plan corner R1.5; top/bottom edge break/chamfer 0.75; optional hole_d parameter held at 0 by default",
+        controls="3D envelope 420 L x 38 W x 8 T mm plain strip; plan corner R1.5; top/bottom edge break/chamfer 0.75; optional hole_d parameter held at 0 by default",
         old_part_questions=(
             "Check whether old rubber has any real pierced holes or only retainer marks, whether ends are square or trimmed, "
             "actual thickness, and whether left/right are identical."
@@ -348,43 +348,44 @@ def bump_stop_scad(part_id: str, title: str, height: float, qty: str) -> tuple[M
         + f"""
 // Vehicle-measurement model:
 // - Height is the known Toyota-family control.
-// - Saddle length/width, bolt pitch, bolt diameter, and strike offset must come
-//   from the cleaned vehicle bracket and axle strike pad.
-// - Mounting holes are only in the steel saddle; do not add rubber through-holes
-//   unless a genuine sample proves molded clearance holes.
+// - This is a rubber-only stretch-fit bolt-on stop. There is no steel saddle
+//   or backing plate in the part.
+// - Rubber base footprint, bolt/stud pitch, relaxed hole or slot size, and
+//   strike offset must come from the cleaned vehicle bracket and axle strike pad.
+// - Default holes are relaxed undersize visual placeholders so the rubber can
+//   stretch over/around the bolts or studs during installation.
 // - This model is a first-article conversation shape, not a released mould.
 
 module {module_name}(
   free_height = {height:g},
-  saddle_length = 90,
-  saddle_width = 44,
-  saddle_thickness = 4,
-  bolt_pitch = 64,
-  bolt_d = 10,
   top_length = 46,
   top_width = 30,
-  rubber_base_length = 70,
-  rubber_base_width = 40
+  rubber_base_length = 82,
+  rubber_base_width = 48,
+  bolt_hole_pitch = 64,
+  relaxed_hole_d = 8.5,
+  stretch_slot_extra = 0
 ) {{
-  color("silver")
-    difference() {{
-      translate([0, 0, saddle_thickness / 2])
-        cube([saddle_length, saddle_width, saddle_thickness], center = true);
-      for (x = [-bolt_pitch / 2, bolt_pitch / 2])
-        translate([x, 0, -1])
-          cylinder(h = saddle_thickness + 2, d = bolt_d);
-    }}
-
-  color("black")
-    translate([0, 0, saddle_thickness])
+  difference() {{
+    color("black")
       hull() {{
         translate([0, 0, 0.5])
           linear_extrude(height = 1, center = false)
             rounded_rect_2d([rubber_base_length, rubber_base_width], 5);
-        translate([0, 0, free_height - saddle_thickness - 1])
+        translate([0, 0, free_height - 1])
           linear_extrude(height = 1, center = false)
             rounded_rect_2d([top_length, top_width], 4);
       }}
+
+    if (relaxed_hole_d > 0 && bolt_hole_pitch > 0)
+      for (x = [-bolt_hole_pitch / 2, bolt_hole_pitch / 2])
+        translate([x, 0, -1])
+          if (stretch_slot_extra > 0)
+            linear_extrude(height = free_height + 2, center = false)
+              capsule_2d(relaxed_hole_d + stretch_slot_extra, relaxed_hole_d);
+          else
+            cylinder(h = free_height + 2, d = relaxed_hole_d);
+  }}
 }}
 
 {module_name}();
@@ -395,11 +396,11 @@ module {module_name}(
         filename=filename,
         title=title,
         quantity=qty,
-        release_status="measurement model only; bracket dimensions and strike offset required before mould release",
-        controls=f"{height:g} mm free height known; steel-saddle/base/bolt/strike geometry vehicle-controlled",
+        release_status="rubber-only stretch-fit measurement model; bracket dimensions, relaxed hole/slot size, and strike offset required before mould release",
+        controls=f"{height:g} mm free height known; rubber-only base footprint, stretch-fit through-hole/slot pitch, relaxed hole size, and strike geometry vehicle-controlled",
         old_part_questions=(
-            "Do not use decayed rubber as the master. Measure bracket landing length/width, steel-saddle bolt pitch, bolt/hole size, strike-pad offset, "
-            "loaded gap, and safe near-full-bump clearance."
+            "Do not use decayed rubber as the master. Measure vehicle bracket landing length/width, bolt/stud pitch, bolt/stud diameter or head clearance, "
+            "relaxed rubber hole/slot size needed for stretch-fit installation, strike-pad offset, loaded gap, and safe near-full-bump clearance."
         ),
     )
     return model, text
@@ -516,8 +517,10 @@ replace the 2D DXF/SVG/PDF pack or the CSV release gates.
   relief is real, blind, through-cut, or only deformation.
 - `FS-STRIP-L/R` default to no holes; retainer slots are separate steel detail
   unless the old rubber proves the rubber itself was pierced.
-- Bump-stop models are measurement placeholders. Free height is known, but base,
-  bolt, saddle, and strike geometry must come from the vehicle.
+- Bump-stop models are rubber-only stretch-fit measurement placeholders. Free
+  height is known, but rubber base footprint, bolt/stud pitch, relaxed
+  through-hole or slot size, and strike geometry must come from the cleaned
+  vehicle brackets and axle strike pads.
 - The exhaust hanger model is hold-only until a sample or installed support
   measurements release thickness, side profile, and reinforcement detail.
 """

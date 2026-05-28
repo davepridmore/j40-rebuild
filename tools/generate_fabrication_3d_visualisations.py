@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 import json
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -332,52 +333,84 @@ def breaker_cylinders(x: float, y: float, z: float, prefix: str) -> list[dict[st
 
 def rubber_order_boxes(prefix: str = "Longman rubber") -> list[dict[str, object]]:
     return [
-        {"name": f"{prefix} BM-ISO-SM 70 x 70 x 22 square pad", "x": -170, "y": 11, "z": -100, "w": 70, "h": 22, "d": 70, "color": "rubber", "label": "BM-ISO-SM H22", "label_dx": -18, "label_dy": 20},
-        {"name": f"{prefix} BM-ISO-LG 80 x 80 x 24 square pad", "x": -65, "y": 12, "z": -100, "w": 80, "h": 24, "d": 80, "color": "rubber", "label": "BM-ISO-LG H24", "label_dx": 34, "label_dy": 10},
-        {"name": f"{prefix} FS-OVAL centre span 32 x 64 x 15", "x": 80, "y": 7.5, "z": -100, "w": 32, "h": 15, "d": 64, "color": "rubber", "label": "FS-OVAL T15", "label_dx": 52, "label_dy": -6},
-        {"name": f"{prefix} FS-STRIP-L plain strip 165 x 38 x 8", "x": -110, "y": 4, "z": 45, "w": 165, "h": 8, "d": 38, "color": "rubber", "label": "FS-STRIP-L T8", "label_dx": -42, "label_dy": -12},
-        {"name": f"{prefix} FS-STRIP-R plain strip 165 x 38 x 8", "x": 100, "y": 4, "z": 45, "w": 165, "h": 8, "d": 38, "color": "rubber", "label": "FS-STRIP-R T8", "label_dx": 36, "label_dy": -10},
-        {"name": f"{prefix} long bump-stop steel saddle placeholder", "x": -170, "y": 4, "z": 150, "w": 90, "h": 8, "d": 44, "color": "steel"},
-        {"name": f"{prefix} long bump-stop progressive body placeholder 70 H", "x": -170, "y": 43, "z": 150, "w": 70, "h": 70, "d": 40, "color": "rubber", "label": "BUMP long H70", "label_dx": -64, "label_dy": -8},
-        {"name": f"{prefix} short right-front bump-stop steel saddle placeholder", "x": -45, "y": 4, "z": 150, "w": 90, "h": 8, "d": 44, "color": "steel"},
-        {"name": f"{prefix} short right-front progressive body placeholder 60 H", "x": -45, "y": 38, "z": 150, "w": 66, "h": 60, "d": 38, "color": "rubber", "label": "BUMP short H60", "label_dx": 42, "label_dy": -8},
-        {"name": f"{prefix} exhaust hanger hold-only teardrop envelope 48 x 86 x 22", "x": 105, "y": 11, "z": 150, "w": 48, "h": 22, "d": 86, "color": "rubber", "label": "EXH hold T22", "label_dx": 44, "label_dy": -12},
+        {"name": f"{prefix} BM-ISO-SM 70 x 70 x 22 square pad", "x": -170, "y": 11, "z": -100, "w": 70, "h": 22, "d": 70, "color": "rubber", "shape": "rounded_rect", "corner_r": 1.5, "holes": [{"x": 0, "z": 0, "r": 9}], "label": "BM-ISO-SM H22", "label_dx": -18, "label_dy": 20},
+        {"name": f"{prefix} BM-ISO-LG 80 x 80 x 24 square pad", "x": -65, "y": 12, "z": -100, "w": 80, "h": 24, "d": 80, "color": "rubber", "shape": "rounded_rect", "corner_r": 1.5, "holes": [{"x": 0, "z": 0, "r": 9}], "label": "BM-ISO-LG H24", "label_dx": 34, "label_dy": 10},
+        {"name": f"{prefix} FS-OVAL 96 x 64 x 15 capsule with two through bores", "x": 80, "y": 7.5, "z": -100, "w": 96, "h": 15, "d": 64, "color": "rubber", "shape": "capsule", "holes": [{"x": -32, "z": 0, "r": 6}, {"x": 32, "z": 0, "r": 6}], "label": "FS-OVAL T15", "label_dx": 52, "label_dy": -6},
+        {"name": f"{prefix} FS-STRIP-L plain strip 420 x 38 x 8", "x": 0, "y": 4, "z": 30, "w": 420, "h": 8, "d": 38, "color": "rubber", "label": "FS-STRIP-L T8", "label_dx": -152, "label_dy": -12},
+        {"name": f"{prefix} FS-STRIP-R plain strip 420 x 38 x 8", "x": 0, "y": 4, "z": 85, "w": 420, "h": 8, "d": 38, "color": "rubber", "label": "FS-STRIP-R T8", "label_dx": 118, "label_dy": -10},
+        {"name": f"{prefix} long bump-stop rubber-only stretch-fit bolt-on stop 70 H", "x": -170, "y": 35, "z": 150, "w": 82, "h": 70, "d": 48, "color": "rubber", "shape": "rounded_rect", "corner_r": 5, "holes": [{"x": -32, "z": 0, "r": 4.25}, {"x": 32, "z": 0, "r": 4.25}], "label": "BUMP long H70", "label_dx": -64, "label_dy": -8},
+        {"name": f"{prefix} short right-front rubber-only stretch-fit bolt-on stop 60 H", "x": -45, "y": 30, "z": 150, "w": 78, "h": 60, "d": 46, "color": "rubber", "shape": "rounded_rect", "corner_r": 5, "holes": [{"x": -30, "z": 0, "r": 4.25}, {"x": 30, "z": 0, "r": 4.25}], "label": "BUMP short H60", "label_dx": 42, "label_dy": -8},
+        {"name": f"{prefix} exhaust hanger hold-only teardrop envelope 48 x 86 x 22", "x": 105, "y": 11, "z": 150, "w": 48, "h": 22, "d": 86, "color": "rubber", "shape": "teardrop", "holes": [{"x": 0, "z": 31, "r": 4.5}], "label": "EXH hold T22", "label_dx": 44, "label_dy": -12},
     ]
 
 
 def rubber_order_cylinders(prefix: str = "Longman rubber") -> list[dict[str, object]]:
+    return []
+
+
+def rubber_order_item_images() -> list[dict[str, str]]:
     return [
-        {"name": f"{prefix} BM-ISO-SM 18 mm sleeve-clearance bore", "x": -170, "y": 13, "z": -100, "r": 9, "h": 28, "color": "silver"},
-        {"name": f"{prefix} BM-ISO-LG 18 mm sleeve-clearance bore", "x": -65, "y": 14, "z": -100, "r": 9, "h": 30, "color": "silver"},
-        {"name": f"{prefix} FS-OVAL left capsule end R32", "x": 64, "y": 7.5, "z": -100, "r": 32, "h": 15, "color": "rubber"},
-        {"name": f"{prefix} FS-OVAL right capsule end R32", "x": 96, "y": 7.5, "z": -100, "r": 32, "h": 15, "color": "rubber"},
-        {"name": f"{prefix} FS-OVAL hole 1, 12 mm", "x": 48, "y": 10, "z": -100, "r": 6, "h": 20, "color": "silver"},
-        {"name": f"{prefix} FS-OVAL hole 2, 12 mm", "x": 112, "y": 10, "z": -100, "r": 6, "h": 20, "color": "silver"},
-        {"name": f"{prefix} long bump-stop saddle mounting hole D left", "x": -202, "y": 8, "z": 150, "r": 5.5, "h": 14, "color": "white"},
-        {"name": f"{prefix} long bump-stop saddle mounting hole D right", "x": -138, "y": 8, "z": 150, "r": 5.5, "h": 14, "color": "white"},
-        {"name": f"{prefix} short right-front bump-stop saddle mounting hole D left", "x": -77, "y": 8, "z": 150, "r": 5.5, "h": 14, "color": "white"},
-        {"name": f"{prefix} short right-front bump-stop saddle mounting hole D right", "x": -13, "y": 8, "z": 150, "r": 5.5, "h": 14, "color": "white"},
-        {"name": f"{prefix} exhaust top hole hold target 9 mm", "x": 105, "y": 24, "z": 178, "r": 4.5, "h": 14, "color": "silver"},
+        {
+            "label": "BM-ISO-SM",
+            "src": "photos/20260528_193054_gp_UFyTb44w.jpg",
+            "caption": "Small body-pad stack reference",
+        },
+        {
+            "label": "BM-ISO-LG",
+            "src": "photos/20260405_234652.jpg",
+            "caption": "Large body-pad reference",
+        },
+        {
+            "label": "FS-OVAL",
+            "src": "photos/20260502_004231_gp_CfosvPIg.jpg",
+            "caption": "Two-hole front-support pad",
+        },
+        {
+            "label": "FS-STRIP-L",
+            "src": "photos/20260517_194143_gp_CO7MuMdA.jpg",
+            "caption": "Left strip ruler reference",
+        },
+        {
+            "label": "FS-STRIP-R",
+            "src": "photos/20260517_194633_gp_rAjY3gjg.jpg",
+            "caption": "Right strip ruler reference",
+        },
+        {
+            "label": "BUMP long",
+            "src": "photos/20260502_004222_gp_PKRe5HSQ.jpg",
+            "caption": "Old bump-stop fragments",
+        },
+        {
+            "label": "BUMP reference",
+            "src": "deliverables/selling_site_images/images/reference_catalog/bump_stop.jpg",
+            "caption": "Catalog shape reference",
+        },
+        {
+            "label": "EXH hold",
+            "src": "data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg",
+            "caption": "Teardrop hanger hold shape",
+        },
     ]
 
 
 SCENES = {
     "longman_rubber_order_20260508": {
         "title": "Longman Rubber Order 2026-05-08",
-        "subtitle": "Current supplier bundle: square body pads, two-hole front-support pad, underfloor strips, bump-stop placeholders, and exhaust hold reference.",
+        "subtitle": "Current supplier bundle: square body pads, two-hole front-support pad, underfloor strips, rubber-only stretch-fit bump-stop placeholders, and exhaust hold reference.",
         "camera": [430, 290, 470],
         "target": [-25, 32, 25],
-        "size": "BM pads 70/80 square with 18 mm bores; FS-OVAL 96 x 64 x 15; FS-STRIP 165 x 38 x 8",
+        "size": "BM pads 70/80 square with 18 mm bores; FS-OVAL 96 x 64 x 15; FS-STRIP 420 x 38 x 8",
         "height_callouts": [
             "BM-ISO-SM: 70 L x 70 W x 22 H",
             "BM-ISO-LG: 80 L x 80 W x 24 H",
             "FS-OVAL: 96 L x 64 W x 15 T",
-            "FS-STRIP-L/R: 165 L x 38 W x 8 T",
-            "BUMP long: 70 H; BUMP short: 60 H",
+            "FS-STRIP-L/R: 420 L x 38 W x 8 T",
+            "BUMP long: 70 H stretch-fit; BUMP short: 60 H stretch-fit",
             "EXH hold target: 48 W x 86 H x 22 T",
         ],
-        "load_path": "Rubber pads isolate body/front-support loads through flat parallel bearing faces; bump-stop geometry remains vehicle-measurement controlled.",
+        "load_path": "Rubber pads isolate body/front-support loads through flat parallel bearing faces; bump stops are rubber-only stretch-fit bolt-on parts with vehicle-measured hole pitch and strike geometry.",
         "service_intent": "Use the visual for package orientation, then use the OpenSCAD files for exact 3D envelope, edge break, hole, and release-state controls.",
+        "item_images": rubber_order_item_images(),
         "boxes": rubber_order_boxes("Longman order"),
         "cylinders": rubber_order_cylinders("Longman order"),
     },
@@ -391,12 +424,13 @@ SCENES = {
             "BM-ISO-SM: 70 L x 70 W x 22 H",
             "BM-ISO-LG: 80 L x 80 W x 24 H",
             "FS-OVAL: 96 L x 64 W x 15 T",
-            "FS-STRIP-L/R: 165 L x 38 W x 8 T",
-            "BUMP long: 70 H; BUMP short: 60 H",
+            "FS-STRIP-L/R: 420 L x 38 W x 8 T",
+            "BUMP long: 70 H stretch-fit; BUMP short: 60 H stretch-fit",
             "EXH hold target: 48 W x 86 H x 22 T",
         ],
-        "load_path": "Body/front-support pads are released as solid automotive rubber first articles; hardware, sleeves, cups, and bump-stop saddle geometry are separately controlled.",
+        "load_path": "Body/front-support pads are released as solid automotive rubber first articles; hardware, sleeves, and cups are separate, while bump stops are rubber-only stretch-fit bolt-on parts with vehicle-measured holes and strike geometry.",
         "service_intent": "Use this dashboard visual for orientation only; OpenSCAD and CSV controls remain the fabrication source of truth.",
+        "item_images": rubber_order_item_images(),
         "boxes": rubber_order_boxes("Rubber recreation"),
         "cylinders": rubber_order_cylinders("Rubber recreation"),
     },
@@ -606,8 +640,8 @@ def write_svg(package_id: str, scene: dict[str, object]) -> None:
     part_labels: list[str] = []
     for index, box in enumerate(scene.get("boxes", [])):
         parts = prism(box, index)
-        css.extend(parts[:3])
-        elems.extend(parts[3:])
+        css.extend(parts[:2])
+        elems.extend(parts[2:])
         label = box_static_label(box)
         if label:
             part_labels.append(label)
@@ -651,6 +685,32 @@ def write_html(package_id: str, scene: dict[str, object]) -> None:
             + "<br>".join(escape(row) for row in height_rows)
             + "</dd></div>\n"
         )
+    out_dir = FAB_DIR / package_id
+    item_images = [
+        image
+        for image in scene.get("item_images", [])
+        if isinstance(image, dict) and str(image.get("src", "")).strip()
+    ]
+    item_image_detail = ""
+    if item_images:
+        image_rows = []
+        for image in item_images:
+            source = str(image.get("src", "")).strip()
+            source_path = Path(source)
+            absolute_source = source_path if source_path.is_absolute() else ROOT / source_path
+            relative_source = os.path.relpath(absolute_source, out_dir).replace(os.sep, "/")
+            label = escape(str(image.get("label", "")).strip() or Path(source).stem)
+            caption = escape(str(image.get("caption", "")).strip())
+            image_rows.append(
+                f'<figure class="item-photo"><img src="{escape(relative_source)}" alt="{label}" loading="lazy">'
+                f'<figcaption><strong>{label}</strong>{("<br>" + caption) if caption else ""}</figcaption></figure>'
+            )
+        item_image_detail = (
+            '      <h2 class="photos-heading">Item Photos</h2>\n'
+            '      <div class="photo-grid">\n'
+            + "\n".join(f"        {row}" for row in image_rows)
+            + "\n      </div>\n"
+        )
     html = f"""<!doctype html>
 <html lang="en">
 <head>
@@ -674,6 +734,12 @@ def write_html(package_id: str, scene: dict[str, object]) -> None:
     dl {{ margin: 0; display: grid; gap: 12px; }}
     dt {{ font-weight: 700; }}
     dd {{ margin: 3px 0 0; color: #54616c; font-size: 14px; line-height: 1.45; }}
+    .photos-heading {{ margin-top: 22px; }}
+    .photo-grid {{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }}
+    .item-photo {{ margin: 0; min-width: 0; }}
+    .item-photo img {{ display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border: 1px solid #d8dde2; border-radius: 6px; background: #f5f6f7; }}
+    .item-photo figcaption {{ margin-top: 4px; color: #54616c; font-size: 12px; line-height: 1.25; }}
+    .item-photo strong {{ color: #1d252c; }}
     #fallback {{ position: absolute; inset: 0; display: grid; place-items: center; padding: 20px; background: #f5f6f7; }}
     #fallback img {{ width: min(94vw, 920px); max-height: 82vh; object-fit: contain; }}
     body.is-three-ready #fallback {{ display: none; }}
@@ -710,6 +776,7 @@ def write_html(package_id: str, scene: dict[str, object]) -> None:
         <div><dt>Load path</dt><dd>{escape(str(scene["load_path"]))}</dd></div>
 {height_detail}        <div><dt>Service intent</dt><dd>{escape(str(scene["service_intent"]))}</dd></div>
       </dl>
+{item_image_detail}
     </aside>
   </main>
   <script type="module">
@@ -734,6 +801,7 @@ def write_html(package_id: str, scene: dict[str, object]) -> None:
       brass: [0xc4a35a, 0.4, 0.36],
       rubber: [0x161a1d, 0.02, 0.65],
       silver: [0xd4d8dc, 0.35, 0.32],
+      void: [0xf5f6f7, 0.0, 0.85],
       white: [0xf4f6f8, 0.02, 0.3],
       bendline: [0x2f3942, 0.05, 0.58],
     }};
@@ -742,6 +810,7 @@ def write_html(package_id: str, scene: dict[str, object]) -> None:
       new THREE.MeshStandardMaterial({{ color: value[0], metalness: value[1], roughness: value[2] }})
     ]));
     const edgeMaterial = new THREE.LineBasicMaterial({{ color: 0x25313a, transparent: true, opacity: 0.48 }});
+    const holeEdgeMaterial = new THREE.LineBasicMaterial({{ color: 0x8a949d, transparent: true, opacity: 0.92 }});
 
     const mount = document.getElementById("viewport");
     const threeScene = new THREE.Scene();
@@ -765,9 +834,93 @@ def write_html(package_id: str, scene: dict[str, object]) -> None:
     const root = new THREE.Group();
     threeScene.add(root);
 
+    function roundedRectShape(width, depth, radius = 0) {{
+      const halfW = width / 2;
+      const halfD = depth / 2;
+      const r = Math.min(radius, halfW, halfD);
+      const shape = new THREE.Shape();
+      shape.moveTo(-halfW + r, -halfD);
+      shape.lineTo(halfW - r, -halfD);
+      shape.quadraticCurveTo(halfW, -halfD, halfW, -halfD + r);
+      shape.lineTo(halfW, halfD - r);
+      shape.quadraticCurveTo(halfW, halfD, halfW - r, halfD);
+      shape.lineTo(-halfW + r, halfD);
+      shape.quadraticCurveTo(-halfW, halfD, -halfW, halfD - r);
+      shape.lineTo(-halfW, -halfD + r);
+      shape.quadraticCurveTo(-halfW, -halfD, -halfW + r, -halfD);
+      return shape;
+    }}
+
+    function capsuleShape(length, width) {{
+      const r = width / 2;
+      const endOffset = Math.max(0, (length - width) / 2);
+      const shape = new THREE.Shape();
+      shape.moveTo(-endOffset, -r);
+      shape.lineTo(endOffset, -r);
+      shape.absarc(endOffset, 0, r, -Math.PI / 2, Math.PI / 2, false);
+      shape.lineTo(-endOffset, r);
+      shape.absarc(-endOffset, 0, r, Math.PI / 2, Math.PI * 1.5, false);
+      return shape;
+    }}
+
+    function teardropShape() {{
+      const points = [
+        [24.0, 0.0], [31.5, 1.2], [38.1, 4.8], [43.2, 10.0],
+        [46.8, 16.5], [48.0, 24.0], [44.8, 38.4], [38.0, 50.0],
+        [38.0, 70.0], [32.0, 84.0], [16.0, 84.0], [10.0, 70.0],
+        [10.0, 50.0], [3.2, 38.4], [0.0, 24.0], [1.2, 16.5],
+        [4.8, 10.0], [9.9, 4.8], [16.5, 1.2],
+      ];
+      return new THREE.Shape(points.map(([x, z]) => new THREE.Vector2(x - 24, z - 42)));
+    }}
+
+    function planShape(item) {{
+      if (item.shape === "capsule") return capsuleShape(item.w, item.d);
+      if (item.shape === "teardrop") return teardropShape();
+      return roundedRectShape(item.w, item.d, item.corner_r || 0);
+    }}
+
+    function extrudedPlanGeometry(item) {{
+      const shape = planShape(item);
+      (item.holes || []).forEach((hole) => {{
+        const path = new THREE.Path();
+        path.absarc(hole.x || 0, hole.z || 0, hole.r || 1, 0, Math.PI * 2, true);
+        shape.holes.push(path);
+      }});
+      const geometry = new THREE.ExtrudeGeometry(shape, {{
+        depth: item.h,
+        bevelEnabled: false,
+        curveSegments: 48,
+        steps: 1,
+      }});
+      geometry.rotateX(Math.PI / 2);
+      geometry.translate(0, item.h / 2, 0);
+      geometry.computeVertexNormals();
+      return geometry;
+    }}
+
+    function addHoleVisuals(item) {{
+      (item.holes || []).forEach((hole) => {{
+        const geometry = new THREE.CylinderGeometry(hole.r * 0.96, hole.r * 0.96, item.h + 0.08, 48);
+        const cutout = new THREE.Mesh(geometry, materials.void);
+        cutout.name = `${{item.name}} visible through-bore`;
+        cutout.position.set(item.x + (hole.x || 0), item.y, item.z + (hole.z || 0));
+        cutout.castShadow = false;
+        cutout.receiveShadow = false;
+        root.add(cutout);
+
+        const edges = new THREE.LineSegments(new THREE.EdgesGeometry(geometry), holeEdgeMaterial);
+        edges.position.copy(cutout.position);
+        root.add(edges);
+      }});
+    }}
+
     function box(item) {{
+      const geometry = item.shape
+        ? extrudedPlanGeometry(item)
+        : new THREE.BoxGeometry(item.w, item.h, item.d);
       const mesh = new THREE.Mesh(
-        new THREE.BoxGeometry(item.w, item.h, item.d),
+        geometry,
         materials[item.color] || materials.aluminium
       );
       mesh.name = item.name;
@@ -782,6 +935,7 @@ def write_html(package_id: str, scene: dict[str, object]) -> None:
         edges.scale.copy(mesh.scale);
         root.add(edges);
       }}
+      addHoleVisuals(item);
     }}
 
     function cylinder(item) {{
@@ -846,7 +1000,6 @@ def write_html(package_id: str, scene: dict[str, object]) -> None:
 </body>
 </html>
 """
-    out_dir = FAB_DIR / package_id
     (out_dir / f"{package_id}_3d_visualisation.html").write_text(html, encoding="utf-8")
 
 

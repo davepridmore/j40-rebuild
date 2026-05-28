@@ -16,9 +16,9 @@ replace the 2D DXF/SVG/PDF pack or the CSV release gates.
 - `fs_oval_front_support_pad.scad` - `FS-OVAL` FS-OVAL front support two-hole isolator pad; first-article model; relief/insert construction still sample-controlled
 - `fs_strip_l_plain_strip.scad` - `FS-STRIP-L` FS-STRIP-L underfloor body-support strip liner left; first-article plain strip; local trim/holes only after dry-fit proves them
 - `fs_strip_r_plain_strip.scad` - `FS-STRIP-R` FS-STRIP-R underfloor body-support strip liner right; first-article plain strip; local trim/holes only after dry-fit proves them
-- `b_60010_long_measurement_model.scad` - `B-60010-LONG` BUMP-60010 long bump stop model, front-left and rear; measurement model only; bracket dimensions and strike offset required before mould release
-- `b_60020_short_measurement_model.scad` - `B-60020-SHORT` BUMP-60020 short right-front bump stop model; measurement model only; bracket dimensions and strike offset required before mould release
-- `b_60010_rear_pair_measurement_model.scad` - `B-60010-REAR-PAIR` BUMP-60010 rear pair bump stop model; measurement model only; bracket dimensions and strike offset required before mould release
+- `b_60010_long_measurement_model.scad` - `B-60010-LONG` BUMP-60010 long bump stop model, front-left and rear; rubber-only stretch-fit measurement model; bracket dimensions, relaxed hole/slot size, and strike offset required before mould release
+- `b_60020_short_measurement_model.scad` - `B-60020-SHORT` BUMP-60020 short right-front bump stop model; rubber-only stretch-fit measurement model; bracket dimensions, relaxed hole/slot size, and strike offset required before mould release
+- `b_60010_rear_pair_measurement_model.scad` - `B-60010-REAR-PAIR` BUMP-60010 rear pair bump stop model; rubber-only stretch-fit measurement model; bracket dimensions, relaxed hole/slot size, and strike offset required before mould release
 - `exh_hgr_90917_teardrop_cushion.scad` - `EXH-HGR-90917` EXH-HGR-90917 teardrop exhaust cushion; hold-only; sample or installed support-point geometry required
 
 ## Critical Release Rules
@@ -30,7 +30,9 @@ replace the 2D DXF/SVG/PDF pack or the CSV release gates.
   relief is real, blind, through-cut, or only deformation.
 - `FS-STRIP-L/R` default to no holes; retainer slots are separate steel detail
   unless the old rubber proves the rubber itself was pierced.
-- Bump-stop models are measurement placeholders. Free height is known, but base,
-  bolt, saddle, and strike geometry must come from the vehicle.
+- Bump-stop models are rubber-only stretch-fit measurement placeholders. Free
+  height is known, but rubber base footprint, bolt/stud pitch, relaxed
+  through-hole or slot size, and strike geometry must come from the cleaned
+  vehicle brackets and axle strike pads.
 - The exhaust hanger model is hold-only until a sample or installed support
   measurements release thickness, side profile, and reinforcement detail.

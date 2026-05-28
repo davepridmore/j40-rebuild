@@ -58,7 +58,7 @@ These are released for Longman quote and first article where marked. Final insta
 | `BM-ISO-LG` | Large square body isolator pad | `2 + 1 spare` | `80 L x 80 W x 24 H`, square flat pad, `18.0 mm` bore for Toyota `90560-12009` style sleeve, plan corners `R1.5`, top/bottom edge break or chamfer `1.0 mm` max, Shore A `60 +/-5` |
 | `BM-ISO-SM` | Small square body isolator pad | `10 + 2 spares` | `70 L x 70 W x 22 H`, square flat pad, `18.0 mm` bore for Toyota `90560-12009` style sleeve, plan corners `R1.5`, top/bottom edge break or chamfer `1.0 mm` max, Shore A `60 +/-5` |
 | `FS-OVAL` | Front support oval isolator pad | `2` | `96 mm` length, `64 mm` max width, `15 mm` thickness, two `12 mm` holes, `64 mm` hole centres, `36 x 18 mm` rectangular relief with `R3` corners, `29 mm` top boss/insert OD |
-| `FS-STRIP-L` | Underfloor body-support strip liner, left | `1` | plain flat strip `165 L x 38 W x 8 T mm`, plan corners `R1.5`, top/bottom edge break `0.5-1.0 mm`, no rubber holes by default |
+| `FS-STRIP-L` | Underfloor body-support strip liner, left | `1` | plain flat strip `420 L x 38 W x 8 T mm`, plan corners `R1.5`, top/bottom edge break `0.5-1.0 mm`, no rubber holes by default |
 | `FS-STRIP-R` | Underfloor body-support strip liner, right | `1` | same blank as left unless dry-fit proves handed end trim |
 
 Material for all local rubber pieces: new black automotive mount-grade `EPDM` or `NR/SBR`, Shore A `60 +/-5`, no tyre rubber, crumb rubber, mixed offcuts, used rubber, or old salvage rubber.
