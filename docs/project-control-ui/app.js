@@ -1644,46 +1644,51 @@
     ["../../photos/20260501_193811_gp_uv8kwbxw.jpg", "Tailpipe bracket and holder location reference"],
   ];
 
+  const LONGMAN_RUBBER_3D_VISUAL_PATH = "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html";
+  function longmanRubber3dVisual(partId) {
+    return `${LONGMAN_RUBBER_3D_VISUAL_PATH}?focus=${encodeURIComponent(partId)}`;
+  }
+
   const CHASSIS_RUBBER_DRAWING_FILE_MAP = {
     "BM-ISO-SM": {
       preview: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.svg",
       scad: "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_sm_square_pad.scad",
-      visual: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html",
+      visual: longmanRubber3dVisual("BM-ISO-SM"),
     },
     "BM-ISO-LG": {
       preview: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.svg",
       scad: "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/bm_iso_lg_square_pad.scad",
-      visual: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html",
+      visual: longmanRubber3dVisual("BM-ISO-LG"),
     },
     "FS-OVAL": {
       svg: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.svg",
       dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_oval_front_support_pad_rev_a.dxf",
       scad: "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_oval_front_support_pad.scad",
-      visual: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html",
+      visual: longmanRubber3dVisual("FS-OVAL"),
     },
     "FS-STRIP-L": {
       svg: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.svg",
       dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_left_template_blank_rev_a.dxf",
       scad: "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_l_plain_strip.scad",
-      visual: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html",
+      visual: longmanRubber3dVisual("FS-STRIP-L"),
     },
     "FS-STRIP-R": {
       svg: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.svg",
       dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/fs_strip_right_template_blank_rev_a.dxf",
       scad: "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/fs_strip_r_plain_strip.scad",
-      visual: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html",
+      visual: longmanRubber3dVisual("FS-STRIP-R"),
     },
     "BUMP-60010-LONG": {
       svg: "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
       dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
       scad: "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60010_long_measurement_model.scad",
-      visual: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html",
+      visual: longmanRubber3dVisual("BUMP-60010-LONG"),
     },
     "BUMP-60020-SHORT": {
       svg: "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.svg",
       dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/bump_stop_vehicle_measurement_control.dxf",
       scad: "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/b_60020_short_measurement_model.scad",
-      visual: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html",
+      visual: longmanRubber3dVisual("BUMP-60020-SHORT"),
     },
     "BODY-LINER-FULL-WIDTH-HOLD": {
       svg: "../../data/manual/fabrication/rubber_recreation_rev_a/body_liner_full_width_hold_control.svg",
@@ -1693,7 +1698,7 @@
       svg: "../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.svg",
       dxf: "../../data/manual/fabrication/rubber_recreation_rev_a/exh_hgr_90917_08004_teardrop_rev_a.dxf",
       scad: "../../data/manual/fabrication/rubber_recreation_rev_a/models_3d/exh_hgr_90917_teardrop_cushion.scad",
-      visual: "../../data/manual/fabrication/longman_rubber_order_20260508/longman_rubber_order_20260508_3d_visualisation.html",
+      visual: longmanRubber3dVisual("EXH-HGR-90917"),
     },
   };
 

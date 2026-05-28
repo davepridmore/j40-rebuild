@@ -39,10 +39,10 @@
     }
   </script>
   <header>
-    <h1>Longman Rubber Order 2026-05-08</h1>
+    <h1 id="scene-title">Longman Rubber Order 2026-05-08</h1>
     <div class="meta">
-      <span class="chip">BM pads 70/80 square with 18 mm bores; FS-OVAL 96 x 64 x 15; FS-STRIP 165 x 38 x 8</span>
-      <span class="chip">Interactive rotate/zoom</span>
+      <span class="chip" id="scene-size-chip">BM pads 70/80 square with 18 mm bores; FS-OVAL 96 x 64 x 15; FS-STRIP 165 x 38 x 8</span>
+      <span class="chip" id="scene-mode-chip">Interactive rotate/zoom</span>
       <span class="chip">Fabrication package visual</span>
     </div>
   </header>
@@ -53,10 +53,10 @@
     <aside>
       <h2>Assembly Read</h2>
       <dl>
-        <div><dt>Package role</dt><dd>Current supplier bundle: square body pads, two-hole front-support pad, underfloor strips, bump-stop placeholders, and exhaust hold reference.</dd></div>
-        <div><dt>Load path</dt><dd>Rubber pads isolate body/front-support loads through flat parallel bearing faces; bump-stop geometry remains vehicle-measurement controlled.</dd></div>
-        <div><dt>Height / thickness</dt><dd>BM-ISO-SM: 70 L x 70 W x 22 H<br>BM-ISO-LG: 80 L x 80 W x 24 H<br>FS-OVAL: 96 L x 64 W x 15 T<br>FS-STRIP-L/R: 165 L x 38 W x 8 T<br>BUMP long: 70 H; BUMP short: 60 H<br>EXH hold target: 48 W x 86 H x 22 T</dd></div>
-        <div><dt>Service intent</dt><dd>Use the visual for package orientation, then use the OpenSCAD files for exact 3D envelope, edge break, hole, and release-state controls.</dd></div>
+        <div><dt>Package role</dt><dd id="scene-subtitle">Current supplier bundle: square body pads, two-hole front-support pad, underfloor strips, bump-stop placeholders, and exhaust hold reference.</dd></div>
+        <div><dt>Load path</dt><dd id="scene-load-path">Rubber pads isolate body/front-support loads through flat parallel bearing faces; bump-stop geometry remains vehicle-measurement controlled.</dd></div>
+        <div><dt>Height / thickness</dt><dd id="scene-height-callouts">BM-ISO-SM: 70 L x 70 W x 22 H<br>BM-ISO-LG: 80 L x 80 W x 24 H<br>FS-OVAL: 96 L x 64 W x 15 T<br>FS-STRIP-L/R: 165 L x 38 W x 8 T<br>BUMP long: 70 H; BUMP short: 60 H<br>EXH hold target: 48 W x 86 H x 22 T</dd></div>
+        <div><dt>Service intent</dt><dd id="scene-service-intent">Use the visual for package orientation, then use the OpenSCAD files for exact 3D envelope, edge break, hole, and release-state controls.</dd></div>
       </dl>
     </aside>
   </main>
@@ -65,6 +65,149 @@
     import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
     const sceneData = {"title":"Longman Rubber Order 2026-05-08","subtitle":"Current supplier bundle: square body pads, two-hole front-support pad, underfloor strips, bump-stop placeholders, and exhaust hold reference.","camera":[430,290,470],"target":[-25,32,25],"size":"BM pads 70/80 square with 18 mm bores; FS-OVAL 96 x 64 x 15; FS-STRIP 165 x 38 x 8","height_callouts":["BM-ISO-SM: 70 L x 70 W x 22 H","BM-ISO-LG: 80 L x 80 W x 24 H","FS-OVAL: 96 L x 64 W x 15 T","FS-STRIP-L/R: 165 L x 38 W x 8 T","BUMP long: 70 H; BUMP short: 60 H","EXH hold target: 48 W x 86 H x 22 T"],"load_path":"Rubber pads isolate body/front-support loads through flat parallel bearing faces; bump-stop geometry remains vehicle-measurement controlled.","service_intent":"Use the visual for package orientation, then use the OpenSCAD files for exact 3D envelope, edge break, hole, and release-state controls.","boxes":[{"name":"Longman order BM-ISO-SM 70 x 70 x 22 square pad","x":-170,"y":11,"z":-100,"w":70,"h":22,"d":70,"color":"rubber","label":"BM-ISO-SM H22","label_dx":-18,"label_dy":20},{"name":"Longman order BM-ISO-LG 80 x 80 x 24 square pad","x":-65,"y":12,"z":-100,"w":80,"h":24,"d":80,"color":"rubber","label":"BM-ISO-LG H24","label_dx":34,"label_dy":10},{"name":"Longman order FS-OVAL centre span 32 x 64 x 15","x":80,"y":7.5,"z":-100,"w":32,"h":15,"d":64,"color":"rubber","label":"FS-OVAL T15","label_dx":52,"label_dy":-6},{"name":"Longman order FS-STRIP-L plain strip 165 x 38 x 8","x":-110,"y":4,"z":45,"w":165,"h":8,"d":38,"color":"rubber","label":"FS-STRIP-L T8","label_dx":-42,"label_dy":-12},{"name":"Longman order FS-STRIP-R plain strip 165 x 38 x 8","x":100,"y":4,"z":45,"w":165,"h":8,"d":38,"color":"rubber","label":"FS-STRIP-R T8","label_dx":36,"label_dy":-10},{"name":"Longman order long bump-stop steel saddle placeholder","x":-170,"y":4,"z":150,"w":90,"h":8,"d":44,"color":"steel"},{"name":"Longman order long bump-stop progressive body placeholder 70 H","x":-170,"y":43,"z":150,"w":70,"h":70,"d":40,"color":"rubber","label":"BUMP long H70","label_dx":-64,"label_dy":-8},{"name":"Longman order short right-front bump-stop steel saddle placeholder","x":-45,"y":4,"z":150,"w":90,"h":8,"d":44,"color":"steel"},{"name":"Longman order short right-front progressive body placeholder 60 H","x":-45,"y":38,"z":150,"w":66,"h":60,"d":38,"color":"rubber","label":"BUMP short H60","label_dx":42,"label_dy":-8},{"name":"Longman order exhaust hanger hold-only teardrop envelope 48 x 86 x 22","x":105,"y":11,"z":150,"w":48,"h":22,"d":86,"color":"rubber","label":"EXH hold T22","label_dx":44,"label_dy":-12}],"cylinders":[{"name":"Longman order BM-ISO-SM 18 mm sleeve-clearance bore","x":-170,"y":13,"z":-100,"r":9,"h":28,"color":"silver"},{"name":"Longman order BM-ISO-LG 18 mm sleeve-clearance bore","x":-65,"y":14,"z":-100,"r":9,"h":30,"color":"silver"},{"name":"Longman order FS-OVAL left capsule end R32","x":64,"y":7.5,"z":-100,"r":32,"h":15,"color":"rubber"},{"name":"Longman order FS-OVAL right capsule end R32","x":96,"y":7.5,"z":-100,"r":32,"h":15,"color":"rubber"},{"name":"Longman order FS-OVAL hole 1, 12 mm","x":48,"y":10,"z":-100,"r":6,"h":20,"color":"silver"},{"name":"Longman order FS-OVAL hole 2, 12 mm","x":112,"y":10,"z":-100,"r":6,"h":20,"color":"silver"},{"name":"Longman order exhaust top hole hold target 9 mm","x":105,"y":24,"z":178,"r":4.5,"h":14,"color":"silver"}]};
+    const searchParams = new URLSearchParams(window.location.search);
+    const requestedFocusId = (searchParams.get("focus") || searchParams.get("part") || "").trim().toUpperCase();
+    const focusParts = {
+      "BM-ISO-SM": {
+        tokens: ["BM-ISO-SM"],
+        title: "BM-ISO-SM - 3D Visual",
+        subtitle: "Small square body-mount isolation pad from the Longman order.",
+        size: "70 L x 70 W x 22 H; 18 mm sleeve-clearance bore",
+        height_callouts: ["BM-ISO-SM: 70 L x 70 W x 22 H", "Centre bore: 18 mm sleeve clearance"],
+        load_path: "Flat rubber isolation pad for body-mount load through parallel bearing faces.",
+        service_intent: "Use this focused view with the BM-ISO-SM OpenSCAD and supplier drawing controls.",
+        camera: [70, 165, 105],
+        target: [-170, 12, -100],
+      },
+      "BM-ISO-LG": {
+        tokens: ["BM-ISO-LG"],
+        title: "BM-ISO-LG - 3D Visual",
+        subtitle: "Large square body-mount isolation pad from the Longman order.",
+        size: "80 L x 80 W x 24 H; 18 mm sleeve-clearance bore",
+        height_callouts: ["BM-ISO-LG: 80 L x 80 W x 24 H", "Centre bore: 18 mm sleeve clearance"],
+        load_path: "Flat rubber isolation pad for body-mount load through parallel bearing faces.",
+        service_intent: "Use this focused view with the BM-ISO-LG OpenSCAD and supplier drawing controls.",
+        camera: [185, 175, 90],
+        target: [-65, 14, -100],
+      },
+      "FS-OVAL": {
+        tokens: ["FS-OVAL"],
+        title: "FS-OVAL - 3D Visual",
+        subtitle: "Two-hole oval front-support pad.",
+        size: "96 L x 64 W x 15 T; two 12 mm holes",
+        height_callouts: ["FS-OVAL: 96 L x 64 W x 15 T", "Two 12 mm holes on 64 mm centres"],
+        load_path: "Front-support rubber pad with oval bearing footprint and two bolt holes.",
+        service_intent: "Use this focused view with the FS-OVAL SVG, DXF, and OpenSCAD controls.",
+        camera: [320, 160, 90],
+        target: [80, 9, -100],
+      },
+      "FS-STRIP-L": {
+        tokens: ["FS-STRIP-L"],
+        title: "FS-STRIP-L - 3D Visual",
+        subtitle: "Left underfloor plain strip for the front-support area.",
+        size: "165 L x 38 W x 8 T",
+        height_callouts: ["FS-STRIP-L: 165 L x 38 W x 8 T"],
+        load_path: "Plain strip rubber control for underfloor/front-support isolation.",
+        service_intent: "Use this focused view with the FS-STRIP-L SVG, DXF, and OpenSCAD controls.",
+        camera: [145, 130, 230],
+        target: [-110, 4, 45],
+      },
+      "FS-STRIP-R": {
+        tokens: ["FS-STRIP-R"],
+        title: "FS-STRIP-R - 3D Visual",
+        subtitle: "Right underfloor plain strip for the front-support area.",
+        size: "165 L x 38 W x 8 T",
+        height_callouts: ["FS-STRIP-R: 165 L x 38 W x 8 T"],
+        load_path: "Plain strip rubber control for underfloor/front-support isolation.",
+        service_intent: "Use this focused view with the FS-STRIP-R SVG, DXF, and OpenSCAD controls.",
+        camera: [355, 130, 230],
+        target: [100, 4, 45],
+      },
+      "BUMP-60010-LONG": {
+        tokens: ["LONG BUMP-STOP", "BUMP LONG"],
+        title: "BUMP-60010-LONG - 3D Visual",
+        subtitle: "Long bump-stop measurement-control placeholder.",
+        size: "Rubber body 70 H over steel saddle placeholder",
+        height_callouts: ["BUMP long: 70 H", "Vehicle-measurement controlled envelope"],
+        load_path: "Bump-stop compression path through steel saddle and rubber body.",
+        service_intent: "Use this focused view with the bump-stop measurement-control SVG, DXF, and OpenSCAD model.",
+        camera: [90, 190, 340],
+        target: [-170, 40, 150],
+      },
+      "BUMP-60020-SHORT": {
+        tokens: ["SHORT RIGHT-FRONT", "BUMP SHORT"],
+        title: "BUMP-60020-SHORT - 3D Visual",
+        subtitle: "Short right-front bump-stop measurement-control placeholder.",
+        size: "Rubber body 60 H over steel saddle placeholder",
+        height_callouts: ["BUMP short: 60 H", "Vehicle-measurement controlled envelope"],
+        load_path: "Bump-stop compression path through steel saddle and rubber body.",
+        service_intent: "Use this focused view with the bump-stop measurement-control SVG, DXF, and OpenSCAD model.",
+        camera: [215, 180, 340],
+        target: [-45, 35, 150],
+      },
+      "EXH-HGR-90917": {
+        tokens: ["EXHAUST"],
+        title: "EXH-HGR-90917 - 3D Visual",
+        subtitle: "Exhaust hanger hold-only teardrop cushion envelope.",
+        size: "48 W x 86 H x 22 T; 9 mm top-hole target",
+        height_callouts: ["EXH hold target: 48 W x 86 H x 22 T", "Top hole hold target: 9 mm"],
+        load_path: "Exhaust support cushion envelope for hanger location and clearance checks.",
+        service_intent: "Use this focused view with the EXH-HGR-90917 SVG, DXF, and OpenSCAD controls.",
+        camera: [345, 140, 350],
+        target: [105, 18, 150],
+      },
+    };
+    const activeFocus = focusParts[requestedFocusId];
+
+    function sceneItemText(item) {
+      return [item.name, item.label].filter(Boolean).join(" ").toUpperCase();
+    }
+
+    function matchesFocus(item, focus) {
+      return focus.tokens.some((token) => sceneItemText(item).includes(token.toUpperCase()));
+    }
+
+    function escapeHtml(value) {
+      const escapeMap = { "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;" };
+      return String(value).replace(/[&<>"']/g, (char) => escapeMap[char]);
+    }
+
+    function setText(id, value) {
+      const element = document.getElementById(id);
+      if (element) element.textContent = value;
+    }
+
+    function applyFocusedScene() {
+      if (!activeFocus) return;
+      sceneData.title = activeFocus.title;
+      sceneData.subtitle = activeFocus.subtitle;
+      sceneData.size = activeFocus.size;
+      sceneData.height_callouts = activeFocus.height_callouts;
+      sceneData.load_path = activeFocus.load_path;
+      sceneData.service_intent = activeFocus.service_intent;
+      sceneData.camera = activeFocus.camera;
+      sceneData.target = activeFocus.target;
+      sceneData.boxes = sceneData.boxes.filter((item) => matchesFocus(item, activeFocus));
+      sceneData.cylinders = (sceneData.cylinders || []).filter((item) => matchesFocus(item, activeFocus));
+    }
+
+    function updateSceneText() {
+      document.title = `${sceneData.title} - 3D Visualisation`;
+      setText("scene-title", sceneData.title);
+      setText("scene-size-chip", sceneData.size);
+      setText("scene-mode-chip", activeFocus ? `Focused item: ${requestedFocusId}` : "Interactive rotate/zoom");
+      setText("scene-subtitle", sceneData.subtitle);
+      setText("scene-load-path", sceneData.load_path);
+      setText("scene-service-intent", sceneData.service_intent);
+      const heightCallouts = document.getElementById("scene-height-callouts");
+      if (heightCallouts) {
+        heightCallouts.innerHTML = sceneData.height_callouts.map(escapeHtml).join("<br>");
+      }
+    }
+
+    applyFocusedScene();
+    updateSceneText();
+
     const materialDefs = {
       aluminium: [0xc1cbd3, 0.35, 0.38],
       steel: [0x59636c, 0.45, 0.5],
