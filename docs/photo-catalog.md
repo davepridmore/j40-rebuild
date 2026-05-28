@@ -1,7 +1,7 @@
 # Photo Catalog and Component Inventory
 
-- Generated: 2026-05-26 19:56:18
-- Total media files indexed: 759 (748 photos, 11 videos)
+- Generated: 2026-05-28 17:59:12
+- Total media files indexed: 760 (749 photos, 11 videos)
 - Inventory CSV: `data/manual/photo_inventory.csv`
 - Component summary CSV: `data/manual/photo_component_summary.csv`
 
@@ -28,7 +28,7 @@
 | `mechanical_baseline` | 22 |
 | `mechanical_cleaning` | 14 |
 | `mechanical_inspection` | 5 |
-| `procurement_reconciliation` | 139 |
+| `procurement_reconciliation` | 140 |
 | `reference_material` | 73 |
 | `removed_parts_cataloguing` | 16 |
 | `rust_assessment` | 63 |
@@ -127,7 +127,7 @@
 | `procurement_inventory` | `hidden_diesel_cutoff_switch_hardware` | 2 | 2026-04-20 | `20260420_221819_gp_YV69fbvA.jpg` |
 | `procurement_inventory` | `mixed_fastener_hardware` | 1 | 2026-05-03 | `20260503_153832_gp_0FJJiLHg.jpg` |
 | `procurement_inventory` | `rubber_grommet_assortment` | 1 | 2026-04-22 | `20260422_034358_gp_Bg6nSlPw.jpg` |
-| `procurement_inventory` | `rubber_parts_recreation_samples` | 22 | 2026-05-02 to 2026-05-17 | `20260502_004201_gp_zfUSmKJg.jpg` |
+| `procurement_inventory` | `rubber_parts_recreation_samples` | 23 | 2026-05-02 to 2026-05-17 | `20260502_004201_gp_zfUSmKJg.jpg` |
 | `procurement_inventory` | `rust_remover_container` | 1 | 2026-04-22 | `20260422_003700_gp_gFb0LBcw.jpg` |
 | `procurement_inventory` | `service_parts_and_order_confirmations` | 2 | 2026-04-20 | `20260420_201801_gp_NvXIaGBw.jpg` |
 | `procurement_inventory` | `wiring_harness_and_connectors` | 62 | 2026-04-10 | `20260410_013927.jpg` |
