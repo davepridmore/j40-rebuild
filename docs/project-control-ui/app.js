@@ -24,6 +24,44 @@
       label: "Manifest",
     },
   ];
+  const AMIR_FRONT_DISC_ENTRY_IDS = new Set([
+    "part_front_disc_pads_hardware",
+    "part_front_brake_hose_pair",
+    "part_front_caliper_rebuild_or_replace_pair",
+    "part_front_rotor_service_pair",
+  ]);
+  const AMIR_FRONT_DISC_TASKS = [
+    {
+      priority: "P0",
+      item: "Front disc pads + retaining hardware",
+      action: "Ask Toyota/Land Cruiser parts counters for pads, pad pins, anti-rattle springs, and clips for the visible Sumitomo fixed-caliper front disc setup. Use the removed pad/backing plate as the sample when available; otherwise collect box/part-number photos and price only.",
+      gate: "Buy only if the removed pad outline, backing ears, thickness, retaining-pin/spring/clip style, and rotor thickness match. Reject Prado/J200/Fortuner/V8 pads and seller-led catalog guesses.",
+    },
+    {
+      priority: "P0",
+      item: "Front flexible brake hoses",
+      action: "Take labelled old front hoses or a written hose spec to a brake hydraulic hose shop. Quote two lower wheel hoses plus the front frame/upper hose only if that hose is actually fitted. Collect end-fitting, thread/seat, bracket-groove, hose-marking, and free-length photos.",
+      gate: "Buy only complete crimped automotive brake hose assemblies, DOT/SAE J1401 or OEM-equivalent, with matching end fittings, bracket groove, free length, and lock-to-lock/droop clearance. No generic rubber hose or substitute fittings.",
+    },
+    {
+      priority: "P0",
+      item: "Front Sumitomo calipers",
+      action: "Take both old calipers as cores/samples to a Land Cruiser or brake-caliper specialist. Quote professional rebuild of the originals and quote matched rebuilt/new Sumitomo-family replacements if available. Collect casting marks, side orientation, inlet/bridge-pipe/bleeder photos, and shop test terms.",
+      gate: "Pay only after mechanic/user approves side-by-side match or rebuild proof: clean bores, usable/new pistons, new seals and dust boots, free bleed screws, sound bridge pipes, correct mounting ears, and bench leak/function test. Raw used calipers are cores only.",
+    },
+    {
+      priority: "P0",
+      item: "Front rotors",
+      action: "Ask Land Cruiser/Toyota parts shops for a new rotor pair using old rotor measurements/sample. Collect rotor diameter, nominal thickness, minimum thickness marking, hub/register dimensions, stud pattern, box label, and return terms.",
+      gate: "Buy two only after old rotor diameter/thickness, hub/register fit, stud pattern, dust-shield clearance, Sumitomo caliper clearance, and wheel clearance match. Old rotors are measurement samples only, not reuse candidates.",
+    },
+    {
+      priority: "P1",
+      item: "Front disc quote packet",
+      action: "For every quote, send shop card/location, price, brand/box label, part-number photos, close-ups of the matching feature, and whether return/exchange is allowed after sample comparison.",
+      gate: "No payment if any safety-critical match point is uncertain; collect quote/photos and call.",
+    },
+  ];
 
   if (!data || !root) {
     if (root) {
@@ -7694,6 +7732,182 @@
     `;
   }
 
+  function amirRowText(row) {
+    return [
+      row && row.entry_id,
+      row && row.source_ref,
+      row && row.item,
+      row && row.vendor,
+      row && row.company,
+      row && row.supplier,
+      row && row.procurement_stage,
+      row && row.status_detail,
+      row && row.notes,
+      row && row.evidence_ref,
+      row && row.source,
+      row && row.workstream,
+    ]
+      .map((value) => cleanString(value).toLowerCase())
+      .join(" ");
+  }
+
+  function amirRowId(row) {
+    return cleanString(row && (row.entry_id || row.source_ref || row.procurement_entry_id || row.id));
+  }
+
+  function isAmirRunnerRow(row) {
+    const text = amirRowText(row);
+    return text.includes("amir") || text.includes("aamir") || text.includes("runner_spec_controlled");
+  }
+
+  function isAmirFrontDiscRow(row) {
+    return AMIR_FRONT_DISC_ENTRY_IDS.has(amirRowId(row));
+  }
+
+  function collectAmirRows() {
+    const parts = data.parts || {};
+    const supplies = data.supplies || {};
+    const sourceRows = [
+      ...(parts.urgent_actions || []),
+      ...(parts.open_rows || []),
+      ...(parts.ordered_pending_delivery || []),
+      ...(supplies.all_rows || []),
+    ];
+    const byId = new Map();
+    sourceRows.filter(isAmirRunnerRow).forEach((row) => {
+      const id = stableItemId(row);
+      if (!id || byId.has(id)) {
+        return;
+      }
+      byId.set(id, row);
+    });
+    return Array.from(byId.values()).sort((left, right) => {
+      const leftFront = isAmirFrontDiscRow(left) ? 0 : 1;
+      const rightFront = isAmirFrontDiscRow(right) ? 0 : 1;
+      return (
+        leftFront - rightFront ||
+        cleanString(left.workstream).localeCompare(cleanString(right.workstream)) ||
+        cleanString(left.procurement_stage).localeCompare(cleanString(right.procurement_stage)) ||
+        cleanString(left.item).localeCompare(cleanString(right.item))
+      );
+    });
+  }
+
+  function renderAmirRowsTable(rows, emptyMessage) {
+    return `
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Item</th>
+              <th>Workstream</th>
+              <th>Stage</th>
+              <th>Supplier / Route</th>
+              <th>Cost</th>
+              <th>Instruction</th>
+              <th>Links</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${
+              rows.length
+                ? rows
+                    .map(
+                      (row) => `
+                        <tr>
+                          ${renderInventoryImageCell(row, row.item || "Amir runner item")}
+                          <td>${renderItemButton(row)}</td>
+                          <td>${escapeHtml(formatToken(row.workstream || "-"))}</td>
+                          <td>${escapeHtml(formatToken(row.procurement_stage || row.status_detail || row.status || "-"))}</td>
+                          <td>${tableSupplierCell(row)}</td>
+                          <td>${tableCostCell(row)}</td>
+                          <td>${escapeHtml(truncateText(row.notes || "", 220) || "-")}</td>
+                          <td>${renderLinksCell(row)}</td>
+                        </tr>
+                      `
+                    )
+                    .join("")
+                : `<tr><td colspan="8">${escapeHtml(emptyMessage || "No Amir rows found.")}</td></tr>`
+            }
+          </tbody>
+        </table>
+      </div>
+    `;
+  }
+
+  function renderAmir() {
+    const amirRows = collectAmirRows();
+    const frontDiscRows = amirRows.filter(isAmirFrontDiscRow);
+    const runnerSpecRows = amirRows.filter((row) => cleanString(row.procurement_stage).toLowerCase() === "runner_spec_controlled");
+    const paymentHeldRows = amirRows.filter((row) => {
+      const text = amirRowText(row);
+      return text.includes("payment waits") || text.includes("pay only") || text.includes("buy only") || text.includes("no payment");
+    });
+
+    root.innerHTML = `
+      <h2 class="section-title">Amir Runner</h2>
+      <p class="section-subtitle">Local collection, quote, and sample-match tasks. Amir can collect prices/photos and buy only where the written spec or labelled old sample removes fit judgement from him.</p>
+
+      <section class="metrics-grid">
+        <article class="card">
+          <p class="metric-value">${escapeHtml(amirRows.length)}</p>
+          <p class="metric-label">Open Amir Rows</p>
+        </article>
+        <article class="card">
+          <p class="metric-value">${escapeHtml(frontDiscRows.length)}</p>
+          <p class="metric-label">Front Disc Rows</p>
+        </article>
+        <article class="card">
+          <p class="metric-value">${escapeHtml(runnerSpecRows.length)}</p>
+          <p class="metric-label">Runner Spec-Controlled</p>
+        </article>
+        <article class="card">
+          <p class="metric-value">${escapeHtml(paymentHeldRows.length)}</p>
+          <p class="metric-label">Payment-Gated Rows</p>
+        </article>
+      </section>
+
+      <section class="card">
+        <div class="detail-header">
+          <h3>Front Disc Collection List</h3>
+          ${renderCopyLinkButton(sectionRoute("amir-front-disc"), "#", "Copy Amir front disc list link")}
+        </div>
+        <p id="amir-front-disc" class="small-muted">Safety-critical quote work only. No payment unless labelled old samples, written mechanic specs, or explicit mechanic/user approval confirm the exact item.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Priority</th>
+                <th>Item</th>
+                <th>Amir action</th>
+                <th>Buy / payment gate</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${AMIR_FRONT_DISC_TASKS.map(
+                (task) => `
+                  <tr>
+                    <td>${escapeHtml(task.priority)}</td>
+                    <td>${escapeHtml(task.item)}</td>
+                    <td>${escapeHtml(task.action)}</td>
+                    <td>${escapeHtml(task.gate)}</td>
+                  </tr>
+                `
+              ).join("")}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <h3 class="section-title">Front Disc Rows</h3>
+      ${renderAmirRowsTable(frontDiscRows, "No front disc Amir rows found in the current dashboard data.")}
+
+      <h3 class="section-title">All Amir Runner Rows</h3>
+      ${renderAmirRowsTable(amirRows, "No Amir runner rows found in the current dashboard data.")}
+    `;
+  }
+
   function priorityChip(priority) {
     const normalized = cleanString(priority || "P1").toUpperCase();
     let tone = "info";
@@ -9486,6 +9700,8 @@
       renderer = renderScout;
     } else if (state.activeView === "tasks") {
       renderer = renderCaptureTasks;
+    } else if (state.activeView === "amir") {
+      renderer = renderAmir;
     } else if (state.activeView === "photos-needed") {
       renderer = renderPhotosNeeded;
     } else if (state.activeView === "steps") {
