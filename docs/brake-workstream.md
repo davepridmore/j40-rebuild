@@ -183,10 +183,10 @@ Still source locally/by sample: brake flare nuts/fittings, parking-brake cable a
 
 | Priority | Replacement |
 | --- | --- |
-| P0 | Front disc pad and retaining hardware set for the visible Sumitomo fixed-caliper setup after pad outline and retaining pin/spring/clip style are captured. |
-| P0 | Front flex hoses after the visible bracket/short-hard-line route is matched for caliper end, chassis bracket, free length, and lock-to-lock clearance. |
-| P0 | Front Sumitomo fixed calipers renewed as a matched pair: professional rebuild with seal kits only if bodies, pistons, bores, bleed screws, and bridge pipes pass inspection; otherwise matched rebuilt/new Sumitomo-family calipers. |
-| P0 | Front rotor replacement pair behind the visible Sumitomo fixed calipers after old rotor diameter/thickness, hub/register fit, dust-shield/caliper clearance, and wheel clearance are measured for exact matching. |
+| P0 | Amir local quote task: front disc pad and retaining hardware set for the visible Sumitomo fixed-caliper setup after pad outline and retaining pin/spring/clip style are captured. |
+| P0 | Amir local quote task: front flex hoses after the visible bracket/short-hard-line route is matched for caliper end, chassis bracket, free length, and lock-to-lock clearance. |
+| P0 | Amir local quote task: front Sumitomo fixed calipers renewed as a matched pair: professional rebuild with seal kits only if bodies, pistons, bores, bleed screws, and bridge pipes pass inspection; otherwise matched rebuilt/new Sumitomo-family calipers. |
+| P0 | Amir local quote task: front rotor replacement pair behind the visible Sumitomo fixed calipers after old rotor diameter/thickness, hub/register fit, dust-shield/caliper clearance, and wheel clearance are measured for exact matching. |
 | P0 | Full brake/clutch hard-line stock: receipt-check Amir-procured `25 ft` zinc-coated/galvanised `3/16 in` brake tube. Existing controlled basis is `7600 mm / 25 ft` brake line plus `1500 mm` clutch blank; `10000-12000 mm` remains preferred only if the procured stock is not enough for brake + clutch plus practice flares. |
 | P0 | New brake/clutch flare nuts and fittings after old fittings identify flare type, threads, and seats at master/proportioning, front hose brackets, rear hose/T-union, wheel cylinders, and clutch master/slave or clutch hose ends. Brake-line working basis after the May 14 installed-fitting and flare side-view photos is Toyota-style `double / inverted` flare; final release still comes from a straight-on removed sample and opened seat. |
 | P0 | Rear axle brake T-union/splitter and any disturbed inline unions/splitters if corroded, seized, damaged, or mismatched; match thread, flare seat, port orientation, and mounting style from old samples. |

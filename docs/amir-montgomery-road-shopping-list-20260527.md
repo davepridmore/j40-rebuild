@@ -6,6 +6,8 @@ Safety rule: brake hydraulic parts must be automotive brake-rated. If the item a
 
 Refurbishment rule added 2026-05-29: radiator and brake booster refurbishment can go through Amir, but payment is blocked until the video gates in [amir-refurbishment-video-gates-20260529.md](amir-refurbishment-video-gates-20260529.md) are complete and approved. Amir can collect quotes freely; he must not approve the technical repair himself.
 
+Front disc rule added 2026-05-29: Amir can collect local quotes/photos for the visible Sumitomo front disc setup, but this is runner work only. Pads, calipers, rotors, and front hoses are safety-critical parts; payment is allowed only against labelled old samples, written mechanic specs, or explicit user/mechanic approval for the exact item.
+
 Evidence refresh, 2026-05-29:
 
 - Gmail MCP import `data/processed/generated/comms_ingest_2026-05-29_categorized.csv`: `32` messages read, `18` categorized after `2026/05/27`.
@@ -50,6 +52,18 @@ Use this card sheet on Amir's phone before the longer tables below.
 | --- | --- | --- |
 | Engine radiator | Take the old radiator as the sample; quote recore if tanks/brackets are sound, otherwise new copper/brass build by sample. If the bought aluminium radiator is used, quote only a removable rubber-isolated adapter/cradle if the radiator is otherwise correct. The extra fabricated support leg is evidence of the bad previous installation, not a feature to copy blindly. | Old sample identity, measurements, shop decision, pressure/leak test, core/build proof, proof it mounts on proper lower pads/side/top mounts without the extra leg, adapter/cradle proof if the aluminium radiator is used, final acceptance video. |
 | Brake booster / servo | Take the old booster as the sample; quote professional rebuild or direct-match refurbished exchange unit. | Old sample identity, side-by-side match, interface close-ups, vacuum hold test, assist movement test, contamination check, final acceptance video. |
+
+## Front Disc Brake Quote Pack Assigned To Amir - 2026-05-29
+
+Use this for Montgomery Road, Land Cruiser parts counters, Bilal Ganj sample-match shops, or a brake hydraulic specialist. Amir may collect shop cards, prices, packet photos, casting/part-number photos, and return/exchange terms. He must not approve fit, rebuild quality, or payment unless the exact old sample or written spec is already in hand.
+
+| Priority | Item | Amir action | Buy / payment gate |
+| --- | --- | --- | --- |
+| P0 | Front disc pads and retaining hardware | Ask Toyota/Land Cruiser parts counters for pads, pad pins, anti-rattle springs, and clips for the visible Sumitomo fixed-caliper front disc setup. Use the removed pad/backing plate as the sample when available; otherwise collect box/part-number photos and price only. | Buy only if the removed pad outline, backing ears, thickness, retaining-pin/spring/clip style, and rotor thickness match. Reject Prado/J200/Fortuner/V8 pads and seller-led catalog guesses. |
+| P0 | Front flexible brake hoses | Take labelled old front hoses or a written hose spec to a brake hydraulic hose shop. Quote two lower wheel hoses plus the front frame/upper hose only if that hose is actually fitted. Collect end-fitting, thread/seat, bracket-groove, hose-marking, and free-length photos. | Buy only complete crimped automotive brake hose assemblies, DOT/SAE J1401 or OEM-equivalent, with matching end fittings, bracket groove, free length, and lock-to-lock/droop clearance. No generic rubber hose or substitute fittings. |
+| P0 | Front Sumitomo calipers | Take both old calipers as cores/samples to a Land Cruiser or brake-caliper specialist. Quote professional rebuild of the originals and quote matched rebuilt/new Sumitomo-family replacements if available. Collect casting marks, side orientation, inlet/bridge-pipe/bleeder photos, and shop test terms. | Pay only after mechanic/user approves side-by-side match or rebuild proof: clean bores, usable/new pistons, new seals and dust boots, free bleed screws, sound bridge pipes, correct mounting ears, and bench leak/function test. Raw used calipers are cores only. |
+| P0 | Front rotors | Ask Land Cruiser/Toyota parts shops for a new rotor pair using old rotor measurements/sample. Collect rotor diameter, nominal thickness, minimum thickness marking, hub/register dimensions, stud pattern, box label, and return terms. | Buy two only after old rotor diameter/thickness, hub/register fit, stud pattern, dust-shield clearance, Sumitomo caliper clearance, and wheel clearance match. Old rotors are measurement samples only, not reuse candidates. |
+| P1 | Front disc quote packet | For every quote, send shop card/location, price, brand/box label, part-number photos, close-ups of the matching feature, and whether return/exchange is allowed after sample comparison. | No payment if any safety-critical match point is uncertain; collect quote/photos and call. |
 
 ## Mechanical Baseline Shopping Split - 2026-05-29
 

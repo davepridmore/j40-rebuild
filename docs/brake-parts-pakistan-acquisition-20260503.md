@@ -109,6 +109,8 @@ Pakistan quote lead only: [Pakwheels FJ40 rear brake shoe listing](https://www.p
 > - front rotors replaced as a pair after measuring old rotor diameter/thickness, hub/register, and dust-shield/caliper clearance for exact matching
 > Must match cleaned caliper casting marks, piston count/diameter, inlet and bridge-pipe fittings, bleed screw, pad outline, retaining pins/springs/clips, rotor diameter/thickness, hub/register, dust-shield/caliper clearance, and wheel clearance.
 
+Local runner assignment: the local pads/hardware, front hose, caliper rebuild/replacement quote, and rotor quote tasks are now under Amir's Montgomery Road / Land Cruiser parts runner sheet: [amir-montgomery-road-shopping-list-20260527.md](amir-montgomery-road-shopping-list-20260527.md). Amir may collect prices/photos and buy only after labelled old samples, written mechanic specs, or explicit user/mechanic approval remove the fit decision from him.
+
 ### Current Front Disc Sourcing Links - 2026-05-29
 
 Use these as quote and availability links, not blind-buy approvals. The May 29 truck photos identify the front as a Sumitomo fixed-caliper disc setup, but the removed pad outline, cleaned casting marks, piston count/diameter, rotor dimensions, and hose end/free-length still control final payment.

@@ -22,7 +22,7 @@ Purpose: vendor/workshop handoff for the brake refresh package. Use this with `d
 
 ## Baseline Brake Parts To Source After Identification
 
-These are approved replacement/renewal scope, but exact part numbers must be matched to fitted hardware, close photos, measurements, and old samples. The May 29 removed booster/servo photos confirm the old brake parts should be treated as samples or rebuild cores, not reuse candidates.
+These are approved replacement/renewal scope, but exact part numbers must be matched to fitted hardware, close photos, measurements, and old samples. The May 29 removed booster/servo photos confirm the old brake parts should be treated as samples or rebuild cores, not reuse candidates. The front disc local quote path is assigned to Amir in [amir-montgomery-road-shopping-list-20260527.md](amir-montgomery-road-shopping-list-20260527.md); he may collect prices/photos but cannot approve safety-critical fit or payment without labelled samples, written specs, or explicit mechanic/user approval.
 
 | Component | Required scope | Release gate |
 | --- | --- | --- |

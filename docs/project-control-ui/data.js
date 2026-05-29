@@ -1,5 +1,5 @@
 window.J40_DASHBOARD_DATA = {
-  "generated_at": "2026-05-29T21:36:14+05:00",
+  "generated_at": "2026-05-29T21:55:38+05:00",
   "source_files": {
     "workstream_status": "data/manual/workstream_status.csv",
     "reassembly_work_packages": "data/manual/reassembly_work_packages.csv",
@@ -66419,6 +66419,183 @@ window.J40_DASHBOARD_DATA = {
           }
         },
         {
+          "entry_id": "part_front_disc_pads_hardware",
+          "workstream": "brake_system",
+          "item": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper",
+          "status": "planned",
+          "procurement_stage": "runner_spec_controlled",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Amir runner / Montgomery Road / local Toyota-Land Cruiser parts counter",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_front_disc_pads_hardware",
+          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/local runner. BASELINE MUST REPLACE. User confirmed replace all front disc service parts. Amir may collect prices, packet photos, and shop cards for Sumitomo-family front pads and retaining hardware, but payment waits for removed pad outline, backing ears, retaining-pin/spring/clip style, rotor thickness, and explicit mechanic/user approval. Do not buy by 1978 catalog alone.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+            "caption": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper \u00b7 local inventory photo \u00b7 Amir runner / Montgomery Road / local Toyota-Land Cruiser parts counter",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260529_183947_gp_lSYuESVg",
+            "matched_tokens": [
+              "photo_20260529_183947_gp_lsyuesvg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "entry_id": "part_front_brake_hose_pair",
+          "workstream": "brake_system",
+          "item": "Front flexible brake hose pair - visible bracket and short hard-line route",
+          "status": "planned",
+          "procurement_stage": "runner_spec_controlled",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Amir runner / Montgomery Road brake hydraulic hose shop / written spec or labelled sample required",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_front_brake_hose_pair",
+          "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/local runner. BASELINE MUST REPLACE. Amir may quote the front hose assemblies, but purchase is allowed only against labelled old hoses or a written spec. Order complete crimped DOT/SAE J1401 or OEM-equivalent hoses matching old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock/droop clearance. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+          "links": [
+            {
+              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+              "label": "Longman pipe and hose order CSV",
+              "download": true
+            },
+            {
+              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+              "label": "Longman pipe and hose order spec",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+              "label": "Pipe order release specs CSV",
+              "download": true
+            },
+            {
+              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+              "label": "Pipe photo and measurement index CSV",
+              "download": true
+            }
+          ],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg",
+            "caption": "Front flexible brake hose pair - current car cropped caliper-side flex hose fitting context",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "manual_override_reference",
+            "stage": "procurement_reconciliation",
+            "media_id": "",
+            "matched_tokens": [
+              "part_front_brake_hose_pair"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 999
+          }
+        },
+        {
+          "entry_id": "part_front_rotor_service_pair",
+          "workstream": "brake_system",
+          "item": "Front rotor replacement pair - measure old rotors for exact match",
+          "status": "planned",
+          "procurement_stage": "runner_spec_controlled",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Amir runner / local Toyota-Land Cruiser parts counter / brake parts shop",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_front_rotor_service_pair",
+          "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/local runner. Replace both front rotors; old rotors are measurement samples only. Amir may collect quotes/box-label photos for a new pair, but payment waits for old rotor diameter, nominal/current thickness, hub/register, stud pattern, dust-shield clearance, Sumitomo caliper clearance, wheel clearance, and return terms.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+            "caption": "Front rotor replacement pair - measure old rotors for exact match \u00b7 local inventory photo \u00b7 Amir runner / local Toyota-Land Cruiser parts counter / brake parts shop",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260529_183947_gp_lSYuESVg",
+            "matched_tokens": [
+              "photo_20260529_183947_gp_lsyuesvg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
+          "entry_id": "part_front_caliper_rebuild_or_replace_pair",
+          "workstream": "brake_system",
+          "item": "Front Sumitomo fixed-caliper replacement or professional rebuild pair",
+          "status": "planned",
+          "procurement_stage": "runner_spec_controlled",
+          "payment_status": "not_paid",
+          "delivery_status": "not_ordered",
+          "amount": "",
+          "amount_status": "missing",
+          "currency": "PKR",
+          "vendor": "Amir runner / Land Cruiser parts shop / brake caliper rebuilder",
+          "supply_type": "part",
+          "source": "expenses",
+          "source_ref": "part_front_caliper_rebuild_or_replace_pair",
+          "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/local runner. Visible front calipers are Sumitomo fixed type. Amir may quote professional rebuild of both originals or matched rebuilt/new Sumitomo-family calipers, but payment waits for side-by-side sample match or rebuild proof: bodies, pistons, bores, bleed screws, bridge pipes, inlet fittings, mounting ears, pad hardware, and bench leak/function test must pass mechanic/user approval.",
+          "links": [],
+          "estimated_hardware_type": "",
+          "estimated_visible_count": "",
+          "estimated_purchase_basis": "",
+          "estimate_confidence": "",
+          "image": {
+            "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+            "caption": "Front Sumitomo fixed-caliper replacement or professional rebuild pair \u00b7 local inventory photo \u00b7 Amir runner / Land Cruiser parts shop / brake caliper rebuilder",
+            "captured_date": "",
+            "captured_time": "",
+            "media_type": "photo",
+            "component_group": "procurement_inventory",
+            "specific_component": "local_inventory_evidence",
+            "stage": "procurement_reconciliation",
+            "media_id": "20260529_183947_gp_lSYuESVg",
+            "matched_tokens": [
+              "photo_20260529_183947_gp_lsyuesvg"
+            ],
+            "match_basis": "local_inventory_evidence",
+            "match_score": 980
+          }
+        },
+        {
           "entry_id": "part_rear_parking_brake_attachment_hardware_20260527",
           "workstream": "brake_system",
           "item": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips",
@@ -66558,183 +66735,6 @@ window.J40_DASHBOARD_DATA = {
             ],
             "match_basis": "semantic_reference_image",
             "match_score": 700
-          }
-        },
-        {
-          "entry_id": "part_front_disc_pads_hardware",
-          "workstream": "brake_system",
-          "item": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper",
-          "status": "planned",
-          "procurement_stage": "spec_needed_before_order",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_front_disc_pads_hardware",
-          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
-          "notes": "BASELINE MUST REPLACE. User confirmed replace all front disc service parts. May 29 front wheel closeups show a fixed Sumitomo caliper with external bridge/transfer pipe and dust shield; buy pads/hardware only after pad outline, retaining-pin/spring/clip style, and rotor thickness are captured from the truck. Do not buy by 1978 catalog alone.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-            "caption": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper \u00b7 local inventory photo",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260529_183947_gp_lSYuESVg",
-            "matched_tokens": [
-              "photo_20260529_183947_gp_lsyuesvg"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
-          }
-        },
-        {
-          "entry_id": "part_front_brake_hose_pair",
-          "workstream": "brake_system",
-          "item": "Front flexible brake hose pair - visible bracket and short hard-line route",
-          "status": "planned",
-          "procurement_stage": "spec_needed_before_order",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_front_brake_hose_pair",
-          "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
-          "notes": "BASELINE MUST REPLACE. User confirmed replace all front disc service parts. May 29 photos show chassis/bracket-to-short-hard-line routing at the front caliper; order complete crimped DOT/SAE J1401 or OEM-equivalent hoses only after old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock clearance are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
-          "links": [
-            {
-              "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-              "label": "Longman pipe and hose order CSV",
-              "download": true
-            },
-            {
-              "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-              "label": "Longman pipe and hose order spec",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-              "label": "Pipe order release specs CSV",
-              "download": true
-            },
-            {
-              "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-              "label": "Pipe photo and measurement index CSV",
-              "download": true
-            }
-          ],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg",
-            "caption": "Front flexible brake hose pair - current car cropped caliper-side flex hose fitting context",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "manual_override_reference",
-            "stage": "procurement_reconciliation",
-            "media_id": "",
-            "matched_tokens": [
-              "part_front_brake_hose_pair"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 999
-          }
-        },
-        {
-          "entry_id": "part_front_rotor_service_pair",
-          "workstream": "brake_system",
-          "item": "Front rotor replacement pair - measure old rotors for exact match",
-          "status": "planned",
-          "procurement_stage": "spec_needed_before_order",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_front_rotor_service_pair",
-          "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
-          "notes": "May 29 photos show the fitted front rotor/dust-shield area behind the Sumitomo caliper. Replace both rotors; measure the old rotors only to identify the correct diameter, thickness, hub/register fit, service limit family, dust-shield clearance, and Sumitomo caliper/wheel clearance.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-            "caption": "Front rotor replacement pair - measure old rotors for exact match \u00b7 local inventory photo",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260529_183947_gp_lSYuESVg",
-            "matched_tokens": [
-              "photo_20260529_183947_gp_lsyuesvg"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
-          }
-        },
-        {
-          "entry_id": "part_front_caliper_rebuild_or_replace_pair",
-          "workstream": "brake_system",
-          "item": "Front Sumitomo fixed-caliper replacement or professional rebuild pair",
-          "status": "planned",
-          "procurement_stage": "spec_needed_before_order",
-          "payment_status": "not_paid",
-          "delivery_status": "not_ordered",
-          "amount": "",
-          "amount_status": "missing",
-          "currency": "PKR",
-          "vendor": "",
-          "supply_type": "part",
-          "source": "expenses",
-          "source_ref": "part_front_caliper_rebuild_or_replace_pair",
-          "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
-          "notes": "Visible front calipers are Sumitomo fixed type. Renew both front calipers as a matched pair, using professional rebuild only if the bodies, pistons, bores, bleed screws, bridge pipes, inlet fittings, mounting ears, and pad hardware all sample-match and pass inspection.",
-          "links": [],
-          "estimated_hardware_type": "",
-          "estimated_visible_count": "",
-          "estimated_purchase_basis": "",
-          "estimate_confidence": "",
-          "image": {
-            "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-            "caption": "Front Sumitomo fixed-caliper replacement or professional rebuild pair \u00b7 local inventory photo",
-            "captured_date": "",
-            "captured_time": "",
-            "media_type": "photo",
-            "component_group": "procurement_inventory",
-            "specific_component": "local_inventory_evidence",
-            "stage": "procurement_reconciliation",
-            "media_id": "20260529_183947_gp_lSYuESVg",
-            "matched_tokens": [
-              "photo_20260529_183947_gp_lsyuesvg"
-            ],
-            "match_basis": "local_inventory_evidence",
-            "match_score": 980
           }
         },
         {
@@ -67091,8 +67091,8 @@ window.J40_DASHBOARD_DATA = {
                 "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Front Sumitomo fixed-caliper replacement or professional rebuild pair (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)"
+                "Front Sumitomo fixed-caliper replacement or professional rebuild pair (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Front disc pads and retaining hardware - visible Sumitomo fixed caliper (runner_spec_controlled; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -67223,8 +67223,8 @@ window.J40_DASHBOARD_DATA = {
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
                 "Brake flex-hose retaining U-clips and bracket hardware pack (purchase_ready; delivery not_ordered; amount missing)",
-                "Front flexible brake hose pair - visible bracket and short hard-line route (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Rear drum hardware kit - Centric 116971-05110530 1960-1980 Toyota Land Cruiser (received_candidate; delivery needs_confirmation; amount missing)"
+                "Rear drum hardware kit - Centric 116971-05110530 1960-1980 Toyota Land Cruiser (received_candidate; delivery needs_confirmation; amount missing)",
+                "Full vehicle brake/clutch line support pack - P-clips, clamp-on axle supports, edge protection (purchase_ready; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -67355,7 +67355,7 @@ window.J40_DASHBOARD_DATA = {
                 "Rear brake shoes/friction set - PakWheels K-2255-N/Y local candidate order; spring hardware separate (ordered_pending_delivery; delivery pending_delivery; amount confirmed)",
                 "Full vehicle brake/clutch hard-line tube stock - 4.75 mm / 3/16 in OD, 12 m preferred (received_candidate; delivery needs_confirmation; amount missing)",
                 "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Front Sumitomo fixed-caliper replacement or professional rebuild pair (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Rear drum hardware kit - Centric 116971-05110530 1960-1980 Toyota Land Cruiser (received_candidate; delivery needs_confirmation; amount missing)"
               ]
             },
             {
@@ -67481,9 +67481,9 @@ window.J40_DASHBOARD_DATA = {
                 "Brake hydraulic hose/line package - new flex hoses + 4.75 mm hard-line coil allowance (runner_spec_controlled; delivery not_ordered; amount missing)",
                 "Brake vacuum booster servo - refurbish or direct-match exchange by old sample (amir_refurb_quote_video_gate; delivery not_ordered; amount missing)",
                 "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips (runner_spec_controlled; delivery not_ordered; amount missing)",
-                "Brake/clutch hard-line flare nuts and fitting assortment - match old threads and seats (spec_needed_before_order_quote_with_line_stock; delivery not_ordered; amount missing)",
-                "Front Sumitomo fixed-caliper replacement or professional rebuild pair (spec_needed_before_order; delivery not_ordered; amount missing)",
-                "Front disc pads and retaining hardware - visible Sumitomo fixed caliper (spec_needed_before_order; delivery not_ordered; amount missing)"
+                "Front Sumitomo fixed-caliper replacement or professional rebuild pair (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Front disc pads and retaining hardware - visible Sumitomo fixed caliper (runner_spec_controlled; delivery not_ordered; amount missing)",
+                "Front flexible brake hose pair - visible bracket and short hard-line route (runner_spec_controlled; delivery not_ordered; amount missing)"
               ]
             },
             {
@@ -73939,11 +73939,11 @@ window.J40_DASHBOARD_DATA = {
       },
       {
         "stage": "runner_spec_controlled",
-        "count": 5
+        "count": 9
       },
       {
         "stage": "spec_needed_before_order",
-        "count": 11
+        "count": 7
       },
       {
         "stage": "spec_needed_before_order_local_hardware_first",
@@ -75592,6 +75592,175 @@ window.J40_DASHBOARD_DATA = {
         }
       },
       {
+        "entry_id": "part_front_caliper_rebuild_or_replace_pair",
+        "workstream": "brake_system",
+        "item": "Front Sumitomo fixed-caliper replacement or professional rebuild pair",
+        "status": "planned",
+        "procurement_stage": "runner_spec_controlled",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Amir runner / Land Cruiser parts shop / brake caliper rebuilder",
+        "supply_type": "part",
+        "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/local runner. Visible front calipers are Sumitomo fixed type. Amir may quote professional rebuild of both originals or matched rebuilt/new Sumitomo-family calipers, but payment waits for side-by-side sample match or rebuild proof: bodies, pistons, bores, bleed screws, bridge pipes, inlet fittings, mounting ears, pad hardware, and bench leak/function test must pass mechanic/user approval.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+          "caption": "Front Sumitomo fixed-caliper replacement or professional rebuild pair \u00b7 local inventory photo \u00b7 Amir runner / Land Cruiser parts shop / brake caliper rebuilder",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260529_183947_gp_lSYuESVg",
+          "matched_tokens": [
+            "photo_20260529_183947_gp_lsyuesvg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "entry_id": "part_front_disc_pads_hardware",
+        "workstream": "brake_system",
+        "item": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper",
+        "status": "planned",
+        "procurement_stage": "runner_spec_controlled",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Amir runner / Montgomery Road / local Toyota-Land Cruiser parts counter",
+        "supply_type": "part",
+        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/local runner. BASELINE MUST REPLACE. User confirmed replace all front disc service parts. Amir may collect prices, packet photos, and shop cards for Sumitomo-family front pads and retaining hardware, but payment waits for removed pad outline, backing ears, retaining-pin/spring/clip style, rotor thickness, and explicit mechanic/user approval. Do not buy by 1978 catalog alone.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+          "caption": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper \u00b7 local inventory photo \u00b7 Amir runner / Montgomery Road / local Toyota-Land Cruiser parts counter",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260529_183947_gp_lSYuESVg",
+          "matched_tokens": [
+            "photo_20260529_183947_gp_lsyuesvg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
+        "entry_id": "part_front_brake_hose_pair",
+        "workstream": "brake_system",
+        "item": "Front flexible brake hose pair - visible bracket and short hard-line route",
+        "status": "planned",
+        "procurement_stage": "runner_spec_controlled",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Amir runner / Montgomery Road brake hydraulic hose shop / written spec or labelled sample required",
+        "supply_type": "part",
+        "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/local runner. BASELINE MUST REPLACE. Amir may quote the front hose assemblies, but purchase is allowed only against labelled old hoses or a written spec. Order complete crimped DOT/SAE J1401 or OEM-equivalent hoses matching old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock/droop clearance. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+        "links": [
+          {
+            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
+            "label": "Longman pipe and hose order CSV",
+            "download": true
+          },
+          {
+            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
+            "label": "Longman pipe and hose order spec",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
+            "label": "Pipe order release specs CSV",
+            "download": true
+          },
+          {
+            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
+            "label": "Pipe photo and measurement index CSV",
+            "download": true
+          }
+        ],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg",
+          "caption": "Front flexible brake hose pair - current car cropped caliper-side flex hose fitting context",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "manual_override_reference",
+          "stage": "procurement_reconciliation",
+          "media_id": "",
+          "matched_tokens": [
+            "part_front_brake_hose_pair"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 999
+        }
+      },
+      {
+        "entry_id": "part_front_rotor_service_pair",
+        "workstream": "brake_system",
+        "item": "Front rotor replacement pair - measure old rotors for exact match",
+        "status": "planned",
+        "procurement_stage": "runner_spec_controlled",
+        "payment_status": "not_paid",
+        "delivery_status": "not_ordered",
+        "amount": "",
+        "amount_status": "missing",
+        "currency": "PKR",
+        "vendor": "Amir runner / local Toyota-Land Cruiser parts counter / brake parts shop",
+        "supply_type": "part",
+        "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/local runner. Replace both front rotors; old rotors are measurement samples only. Amir may collect quotes/box-label photos for a new pair, but payment waits for old rotor diameter, nominal/current thickness, hub/register, stud pattern, dust-shield clearance, Sumitomo caliper clearance, wheel clearance, and return terms.",
+        "links": [],
+        "estimated_hardware_type": "",
+        "estimated_visible_count": "",
+        "estimated_purchase_basis": "",
+        "estimate_confidence": "",
+        "image": {
+          "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
+          "caption": "Front rotor replacement pair - measure old rotors for exact match \u00b7 local inventory photo \u00b7 Amir runner / local Toyota-Land Cruiser parts counter / brake parts shop",
+          "captured_date": "",
+          "captured_time": "",
+          "media_type": "photo",
+          "component_group": "procurement_inventory",
+          "specific_component": "local_inventory_evidence",
+          "stage": "procurement_reconciliation",
+          "media_id": "20260529_183947_gp_lSYuESVg",
+          "matched_tokens": [
+            "photo_20260529_183947_gp_lsyuesvg"
+          ],
+          "match_basis": "local_inventory_evidence",
+          "match_score": 980
+        }
+      },
+      {
         "entry_id": "part_rear_parking_brake_attachment_hardware_20260527",
         "workstream": "brake_system",
         "item": "Rear parking-brake cable attachment hardware - clevis/equalizer/return springs/clips",
@@ -75725,175 +75894,6 @@ window.J40_DASHBOARD_DATA = {
           ],
           "match_basis": "semantic_reference_image",
           "match_score": 700
-        }
-      },
-      {
-        "entry_id": "part_front_caliper_rebuild_or_replace_pair",
-        "workstream": "brake_system",
-        "item": "Front Sumitomo fixed-caliper replacement or professional rebuild pair",
-        "status": "planned",
-        "procurement_stage": "spec_needed_before_order",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
-        "notes": "Visible front calipers are Sumitomo fixed type. Renew both front calipers as a matched pair, using professional rebuild only if the bodies, pistons, bores, bleed screws, bridge pipes, inlet fittings, mounting ears, and pad hardware all sample-match and pass inspection.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-          "caption": "Front Sumitomo fixed-caliper replacement or professional rebuild pair \u00b7 local inventory photo",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260529_183947_gp_lSYuESVg",
-          "matched_tokens": [
-            "photo_20260529_183947_gp_lsyuesvg"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
-        }
-      },
-      {
-        "entry_id": "part_front_disc_pads_hardware",
-        "workstream": "brake_system",
-        "item": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper",
-        "status": "planned",
-        "procurement_stage": "spec_needed_before_order",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
-        "notes": "BASELINE MUST REPLACE. User confirmed replace all front disc service parts. May 29 front wheel closeups show a fixed Sumitomo caliper with external bridge/transfer pipe and dust shield; buy pads/hardware only after pad outline, retaining-pin/spring/clip style, and rotor thickness are captured from the truck. Do not buy by 1978 catalog alone.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-          "caption": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper \u00b7 local inventory photo",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260529_183947_gp_lSYuESVg",
-          "matched_tokens": [
-            "photo_20260529_183947_gp_lsyuesvg"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
-        }
-      },
-      {
-        "entry_id": "part_front_brake_hose_pair",
-        "workstream": "brake_system",
-        "item": "Front flexible brake hose pair - visible bracket and short hard-line route",
-        "status": "planned",
-        "procurement_stage": "spec_needed_before_order",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
-        "notes": "BASELINE MUST REPLACE. User confirmed replace all front disc service parts. May 29 photos show chassis/bracket-to-short-hard-line routing at the front caliper; order complete crimped DOT/SAE J1401 or OEM-equivalent hoses only after old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock clearance are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
-        "links": [
-          {
-            "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
-            "label": "Longman pipe and hose order CSV",
-            "download": true
-          },
-          {
-            "url": "../../docs/longman-pipe-hose-order-spec-20260512.md",
-            "label": "Longman pipe and hose order spec",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_order_release_specs.csv",
-            "label": "Pipe order release specs CSV",
-            "download": true
-          },
-          {
-            "url": "../../data/manual/replacement_pipe_photo_intake.csv",
-            "label": "Pipe photo and measurement index CSV",
-            "download": true
-          }
-        ],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../deliverables/selling_site_images/images/manual_overrides/front_brake_hose_fitting_current_car_crop_20260503.jpg",
-          "caption": "Front flexible brake hose pair - current car cropped caliper-side flex hose fitting context",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "manual_override_reference",
-          "stage": "procurement_reconciliation",
-          "media_id": "",
-          "matched_tokens": [
-            "part_front_brake_hose_pair"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 999
-        }
-      },
-      {
-        "entry_id": "part_front_rotor_service_pair",
-        "workstream": "brake_system",
-        "item": "Front rotor replacement pair - measure old rotors for exact match",
-        "status": "planned",
-        "procurement_stage": "spec_needed_before_order",
-        "payment_status": "not_paid",
-        "delivery_status": "not_ordered",
-        "amount": "",
-        "amount_status": "missing",
-        "currency": "PKR",
-        "vendor": "",
-        "supply_type": "part",
-        "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
-        "notes": "May 29 photos show the fitted front rotor/dust-shield area behind the Sumitomo caliper. Replace both rotors; measure the old rotors only to identify the correct diameter, thickness, hub/register fit, service limit family, dust-shield clearance, and Sumitomo caliper/wheel clearance.",
-        "links": [],
-        "estimated_hardware_type": "",
-        "estimated_visible_count": "",
-        "estimated_purchase_basis": "",
-        "estimate_confidence": "",
-        "image": {
-          "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-          "caption": "Front rotor replacement pair - measure old rotors for exact match \u00b7 local inventory photo",
-          "captured_date": "",
-          "captured_time": "",
-          "media_type": "photo",
-          "component_group": "procurement_inventory",
-          "specific_component": "local_inventory_evidence",
-          "stage": "procurement_reconciliation",
-          "media_id": "20260529_183947_gp_lSYuESVg",
-          "matched_tokens": [
-            "photo_20260529_183947_gp_lsyuesvg"
-          ],
-          "match_basis": "local_inventory_evidence",
-          "match_score": 980
         }
       },
       {
@@ -105926,17 +105926,17 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Front Sumitomo fixed-caliper replacement or professional rebuild pair",
-          "vendor": "",
+          "vendor": "Amir runner / Land Cruiser parts shop / brake caliper rebuilder",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
           "status_detail": "planned",
-          "procurement_stage": "spec_needed_before_order",
+          "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
-          "notes": "Visible front calipers are Sumitomo fixed type. Renew both front calipers as a matched pair, using professional rebuild only if the bodies, pistons, bores, bleed screws, bridge pipes, inlet fittings, mounting ears, and pad hardware all sample-match and pass inspection.",
+          "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/local runner. Visible front calipers are Sumitomo fixed type. Amir may quote professional rebuild of both originals or matched rebuilt/new Sumitomo-family calipers, but payment waits for side-by-side sample match or rebuild proof: bodies, pistons, bores, bleed screws, bridge pipes, inlet fittings, mounting ears, pad hardware, and bench leak/function test must pass mechanic/user approval.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -105944,7 +105944,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-            "caption": "Front Sumitomo fixed-caliper replacement or professional rebuild pair \u00b7 local inventory photo",
+            "caption": "Front Sumitomo fixed-caliper replacement or professional rebuild pair \u00b7 local inventory photo \u00b7 Amir runner / Land Cruiser parts shop / brake caliper rebuilder",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -105965,17 +105965,17 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper",
-          "vendor": "",
+          "vendor": "Amir runner / Montgomery Road / local Toyota-Land Cruiser parts counter",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
           "status_detail": "planned",
-          "procurement_stage": "spec_needed_before_order",
+          "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
-          "notes": "BASELINE MUST REPLACE. User confirmed replace all front disc service parts. May 29 front wheel closeups show a fixed Sumitomo caliper with external bridge/transfer pipe and dust shield; buy pads/hardware only after pad outline, retaining-pin/spring/clip style, and rotor thickness are captured from the truck. Do not buy by 1978 catalog alone.",
+          "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/local runner. BASELINE MUST REPLACE. User confirmed replace all front disc service parts. Amir may collect prices, packet photos, and shop cards for Sumitomo-family front pads and retaining hardware, but payment waits for removed pad outline, backing ears, retaining-pin/spring/clip style, rotor thickness, and explicit mechanic/user approval. Do not buy by 1978 catalog alone.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -105983,7 +105983,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-            "caption": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper \u00b7 local inventory photo",
+            "caption": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper \u00b7 local inventory photo \u00b7 Amir runner / Montgomery Road / local Toyota-Land Cruiser parts counter",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -106004,17 +106004,17 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Front flexible brake hose pair - visible bracket and short hard-line route",
-          "vendor": "",
+          "vendor": "Amir runner / Montgomery Road brake hydraulic hose shop / written spec or labelled sample required",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
           "status_detail": "planned",
-          "procurement_stage": "spec_needed_before_order",
+          "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
-          "notes": "BASELINE MUST REPLACE. User confirmed replace all front disc service parts. May 29 photos show chassis/bracket-to-short-hard-line routing at the front caliper; order complete crimped DOT/SAE J1401 or OEM-equivalent hoses only after old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock clearance are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+          "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/local runner. BASELINE MUST REPLACE. Amir may quote the front hose assemblies, but purchase is allowed only against labelled old hoses or a written spec. Order complete crimped DOT/SAE J1401 or OEM-equivalent hoses matching old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock/droop clearance. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
           "links": [
             {
               "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -106064,17 +106064,17 @@ window.J40_DASHBOARD_DATA = {
           "supply_type": "part",
           "inventory_group": "mechanical",
           "item": "Front rotor replacement pair - measure old rotors for exact match",
-          "vendor": "",
+          "vendor": "Amir runner / local Toyota-Land Cruiser parts counter / brake parts shop",
           "amount": "",
           "currency": "PKR",
           "workstream": "brake_system",
           "status_group": "still_required",
           "status_detail": "planned",
-          "procurement_stage": "spec_needed_before_order",
+          "procurement_stage": "runner_spec_controlled",
           "payment_status": "not_paid",
           "delivery_status": "not_ordered",
-          "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
-          "notes": "May 29 photos show the fitted front rotor/dust-shield area behind the Sumitomo caliper. Replace both rotors; measure the old rotors only to identify the correct diameter, thickness, hub/register fit, service limit family, dust-shield clearance, and Sumitomo caliper/wheel clearance.",
+          "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+          "notes": "List under Amir/local runner. Replace both front rotors; old rotors are measurement samples only. Amir may collect quotes/box-label photos for a new pair, but payment waits for old rotor diameter, nominal/current thickness, hub/register, stud pattern, dust-shield clearance, Sumitomo caliper clearance, wheel clearance, and return terms.",
           "links": [],
           "estimated_hardware_type": "",
           "estimated_visible_count": "",
@@ -106082,7 +106082,7 @@ window.J40_DASHBOARD_DATA = {
           "estimate_confidence": "",
           "image": {
             "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-            "caption": "Front rotor replacement pair - measure old rotors for exact match \u00b7 local inventory photo",
+            "caption": "Front rotor replacement pair - measure old rotors for exact match \u00b7 local inventory photo \u00b7 Amir runner / local Toyota-Land Cruiser parts counter / brake parts shop",
             "captured_date": "",
             "captured_time": "",
             "media_type": "photo",
@@ -118253,17 +118253,17 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Front Sumitomo fixed-caliper replacement or professional rebuild pair",
-        "vendor": "",
+        "vendor": "Amir runner / Land Cruiser parts shop / brake caliper rebuilder",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
         "status_detail": "planned",
-        "procurement_stage": "spec_needed_before_order",
+        "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
-        "notes": "Visible front calipers are Sumitomo fixed type. Renew both front calipers as a matched pair, using professional rebuild only if the bodies, pistons, bores, bleed screws, bridge pipes, inlet fittings, mounting ears, and pad hardware all sample-match and pass inspection.",
+        "evidence_ref": "BR-FRONT-002|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/local runner. Visible front calipers are Sumitomo fixed type. Amir may quote professional rebuild of both originals or matched rebuilt/new Sumitomo-family calipers, but payment waits for side-by-side sample match or rebuild proof: bodies, pistons, bores, bleed screws, bridge pipes, inlet fittings, mounting ears, pad hardware, and bench leak/function test must pass mechanic/user approval.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -118271,7 +118271,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-          "caption": "Front Sumitomo fixed-caliper replacement or professional rebuild pair \u00b7 local inventory photo",
+          "caption": "Front Sumitomo fixed-caliper replacement or professional rebuild pair \u00b7 local inventory photo \u00b7 Amir runner / Land Cruiser parts shop / brake caliper rebuilder",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -118292,17 +118292,17 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper",
-        "vendor": "",
+        "vendor": "Amir runner / Montgomery Road / local Toyota-Land Cruiser parts counter",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
         "status_detail": "planned",
-        "procurement_stage": "spec_needed_before_order",
+        "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
-        "notes": "BASELINE MUST REPLACE. User confirmed replace all front disc service parts. May 29 front wheel closeups show a fixed Sumitomo caliper with external bridge/transfer pipe and dust shield; buy pads/hardware only after pad outline, retaining-pin/spring/clip style, and rotor thickness are captured from the truck. Do not buy by 1978 catalog alone.",
+        "evidence_ref": "BR-FRONT-001|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/local runner. BASELINE MUST REPLACE. User confirmed replace all front disc service parts. Amir may collect prices, packet photos, and shop cards for Sumitomo-family front pads and retaining hardware, but payment waits for removed pad outline, backing ears, retaining-pin/spring/clip style, rotor thickness, and explicit mechanic/user approval. Do not buy by 1978 catalog alone.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -118310,7 +118310,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-          "caption": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper \u00b7 local inventory photo",
+          "caption": "Front disc pads and retaining hardware - visible Sumitomo fixed caliper \u00b7 local inventory photo \u00b7 Amir runner / Montgomery Road / local Toyota-Land Cruiser parts counter",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
@@ -118331,17 +118331,17 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Front flexible brake hose pair - visible bracket and short hard-line route",
-        "vendor": "",
+        "vendor": "Amir runner / Montgomery Road brake hydraulic hose shop / written spec or labelled sample required",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
         "status_detail": "planned",
-        "procurement_stage": "spec_needed_before_order",
+        "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
-        "notes": "BASELINE MUST REPLACE. User confirmed replace all front disc service parts. May 29 photos show chassis/bracket-to-short-hard-line routing at the front caliper; order complete crimped DOT/SAE J1401 or OEM-equivalent hoses only after old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock clearance are confirmed. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
+        "evidence_ref": "BR-FRONT-004|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/local runner. BASELINE MUST REPLACE. Amir may quote the front hose assemblies, but purchase is allowed only against labelled old hoses or a written spec. Order complete crimped DOT/SAE J1401 or OEM-equivalent hoses matching old-sample free length, chassis-side thread/seat, caliper-side fitting, bracket groove/clip, and full-lock/droop clearance. Child line of part_mech_brake_flex_hose_set; do not double-buy.",
         "links": [
           {
             "url": "../../data/manual/longman_pipe_hose_order_specs.csv",
@@ -118391,17 +118391,17 @@ window.J40_DASHBOARD_DATA = {
         "supply_type": "part",
         "inventory_group": "mechanical",
         "item": "Front rotor replacement pair - measure old rotors for exact match",
-        "vendor": "",
+        "vendor": "Amir runner / local Toyota-Land Cruiser parts counter / brake parts shop",
         "amount": "",
         "currency": "PKR",
         "workstream": "brake_system",
         "status_group": "still_required",
         "status_detail": "planned",
-        "procurement_stage": "spec_needed_before_order",
+        "procurement_stage": "runner_spec_controlled",
         "payment_status": "not_paid",
         "delivery_status": "not_ordered",
-        "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts",
-        "notes": "May 29 photos show the fitted front rotor/dust-shield area behind the Sumitomo caliper. Replace both rotors; measure the old rotors only to identify the correct diameter, thickness, hub/register fit, service limit family, dust-shield clearance, and Sumitomo caliper/wheel clearance.",
+        "evidence_ref": "BR-FRONT-003|20260529_183947_gp_lSYuESVg|20260529_183959_gp_MlRssDVA|20260529_184010_gp_3htpDpPQ|20260529_184012_gp_Q01c08NA|user_update_2026-05-29_replace_all_front_disc_parts|docs/amir-montgomery-road-shopping-list-20260527.md",
+        "notes": "List under Amir/local runner. Replace both front rotors; old rotors are measurement samples only. Amir may collect quotes/box-label photos for a new pair, but payment waits for old rotor diameter, nominal/current thickness, hub/register, stud pattern, dust-shield clearance, Sumitomo caliper clearance, wheel clearance, and return terms.",
         "links": [],
         "estimated_hardware_type": "",
         "estimated_visible_count": "",
@@ -118409,7 +118409,7 @@ window.J40_DASHBOARD_DATA = {
         "estimate_confidence": "",
         "image": {
           "path": "../../photos/20260529_183947_gp_lSYuESVg.jpg",
-          "caption": "Front rotor replacement pair - measure old rotors for exact match \u00b7 local inventory photo",
+          "caption": "Front rotor replacement pair - measure old rotors for exact match \u00b7 local inventory photo \u00b7 Amir runner / local Toyota-Land Cruiser parts counter / brake parts shop",
           "captured_date": "",
           "captured_time": "",
           "media_type": "photo",
